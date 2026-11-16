@@ -81,6 +81,26 @@ If a translation sounds wrong or misses the meaning, help me make it better. Sha
 the original text, and your suggested correction. Improvements are welcome, whether it's one word
 or a whole quest.
 
+See the [translation contribution guide](https://github.com/rphlmr/forever-rosetta-stone/blob/main/CONTRIBUTING.md)
+to submit a community translation or edit a catalog in a pull request.
+
+### Capture text to report or translate
+
+You do not need to know the item's, spell's or quest's ID:
+
+1. Open the relevant game panel and run `/frs pick`.
+2. Hover the element, or focus it with a controller, and let its tooltip or quest text appear.
+3. Choose **Stop picking**, or run `/frs stop`, then select the captured entry.
+4. Choose **Select output** and press **Ctrl+C / Cmd+C**. Paste the full report into a
+   [GitHub issue](https://github.com/rphlmr/forever-rosetta-stone/issues/new), with your target
+   language and suggested translation or correction. Add a screenshot if useful.
+
+Button names follow your game's language. Reports include the element's identity, available
+native text and client/addon details. Nothing is uploaded or added to the translation database
+automatically. Copy your reports before starting another Pick session, which clears the list.
+For controller-only report export, NPC dialogue and quest-specific reports, see the
+[reporting guide](https://github.com/rphlmr/forever-rosetta-stone/blob/main/docs/troubleshooting.md#debug-console-and-reporting).
+
 For missing text or addon problems, see [how to prepare a report](https://github.com/rphlmr/forever-rosetta-stone/blob/main/docs/troubleshooting.md).
 
 ## Sources and thanks

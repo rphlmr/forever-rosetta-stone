@@ -255,6 +255,7 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
     local modernRadio = C_Texture and C_Texture.GetAtlasInfo and C_Texture.GetAtlasInfo(RADIO_ATLAS) ~= nil
     for index, choice in ipairs(choices) do
         local button = CreateFrame("Button", nil, list)
+        SmartNavigation_MarkFrameIgnored(button)
         button.value = choice.value
         button.radio = button:CreateTexture(nil, "ARTWORK")
         button.radio:SetPoint("LEFT", -3, 0)
@@ -315,6 +316,9 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
         self:QueueRadioListLayout(list)
     end)
     list:SetScript("OnShow", function() self:QueueRadioListLayout(list) end)
+    list:SetScript("OnHide", function()
+        for _, button in ipairs(list.buttons) do SmartNavigation_MarkFrameIgnored(button) end
+    end)
     self.radioLists = self.radioLists or {}
     self.radioLists[id] = list
     return list
@@ -331,7 +335,10 @@ end
 
 function Addon:LayoutRadioList(list, listWidth)
     listWidth = listWidth or list:GetWidth()
-    if listWidth <= 0 then return end
+    if listWidth <= 0 then
+        for _, button in ipairs(list.buttons) do SmartNavigation_MarkFrameIgnored(button) end
+        return
+    end
     local left = listWidth / 2 - RADIO_CONTROL_OFFSET
     local width = (listWidth - left - 20) / list.columns
     if width <= 0 then return end
@@ -341,6 +348,12 @@ function Addon:LayoutRadioList(list, listWidth)
         button:ClearAllPoints()
         button:SetSize(width, RADIO_ROW_HEIGHT)
         button:SetPoint("TOPLEFT", list, "TOPLEFT", left + column * width, -RADIO_TOP - row * RADIO_ROW_HEIGHT)
+        -- Native settings sorts focusable children by GetTop before deferred anchors resolve.
+        if list:IsVisible() and button:GetLeft() and button:GetTop() then
+            SmartNavigation_ClearIgnoreStatus(button)
+        else
+            SmartNavigation_MarkFrameIgnored(button)
+        end
     end
 end
 
@@ -606,7 +619,7 @@ function Addon:ShowSettingsResetDialog()
                     local manager = GamepadMode.FrameControlsManager
                     manager:FrameHidden(SettingsPanel)
                     manager:FrameShown(SettingsPanel)
-                    Settings.OpenToCategory(categoryID)
+                    securecallfunction(Settings.OpenToCategory, categoryID)
                 end)
             end)
         end)
@@ -619,5 +632,5 @@ end
 
 function Addon:OpenSettings()
     if self.errorDialog and self.errorDialog.console then self.errorDialog.frame:Hide() end
-    Settings.OpenToCategory(self.settingsCategory:GetID())
+    securecallfunction(Settings.OpenToCategory, self.settingsCategory:GetID())
 end

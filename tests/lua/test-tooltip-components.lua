@@ -753,11 +753,11 @@ Addon.nameTooltips[native].kind = "item"
 native.GetOwner = function() return UIParent end
 native.GetAnchorType = function() return "ANCHOR_RIGHT" end
 stacked = Addon:PlaceCompanionTooltip(tip, native)
-equal(stacked ~= nil, true, "protected native tooltips support the right-edge exception outside combat")
-equal(stacked.left, 800, "right-edge exception gives the translation the original native position")
-equal(native:GetLeft(), 598, "right-edge exception moves native to the left of its translation")
+equal(stacked ~= nil, true, "right-edge fallback supports protected native tooltips")
+equal(stacked.left, 618, "right-edge fallback places the translation on the available left side")
+equal(native:GetLeft(), 800, "right-edge fallback never moves the native tooltip")
 Addon:PlaceCompanionTooltip(tip, native)
-equal(native:GetLeft(), 598, "repeated exception layout does not accumulate horizontal movement")
+equal(native:GetLeft(), 800, "repeated fallback layout preserves native placement")
 tip:Hide()
 equal(native:GetLeft(), 800, "closing the exception restores the native position")
 Addon.nameTooltips[native].kind = "item"
@@ -765,10 +765,14 @@ native.GetOwner = function() return UIParent end
 native.GetAnchorType = function() return "ANCHOR_LEFT" end
 native.left = 100
 stacked = Addon:PlaceCompanionTooltip(tip, native)
-equal(stacked.left, 100, "left-edge exception gives the translation the original native position")
-equal(native:GetLeft(), 282, "left-edge exception moves native right while preserving FRS | Native order")
+equal(stacked.left, 302, "left-edge fallback places the translation on the available right side")
+equal(native:GetLeft(), 100, "left-edge fallback never moves the native tooltip")
 Addon:PlaceCompanionTooltip(tip, native)
-equal(native:GetLeft(), 282, "repeated left-edge layout does not accumulate movement")
+equal(native:GetLeft(), 100, "repeated left-edge fallback preserves native placement")
+equal(tip.sourcePlacements, nil, "automatic companions do not retain native placement snapshots")
+equal(Addon:TransitionTooltipSources(tip, "sources.place", {
+    { source = native, left = 282, top = native:GetTop() },
+}), true, "explicit group placement retains its restoration contract")
 local combatBeforeRestore = InCombatLockdown
 InCombatLockdown = function() return true end
 tip:Hide()
@@ -791,8 +795,8 @@ native.left = 950
 Addon.nameTooltips[native].kind = "item"
 native.GetAnchorType = function() return "ANCHOR_RIGHT" end
 stacked = Addon:PlaceCompanionTooltip(tip, native)
-equal(stacked.left, 748, "wider translations keep the entire exception pair inside the screen")
-equal(native:GetRight() + 2, stacked.left, "right-edge exception retains Native | FRS order")
+equal(stacked.left, 698, "wider translations use the available left side")
+equal(stacked.right + 2, native:GetLeft(), "right-edge fallback retains the gap beside the unmoved native tooltip")
 tip:Hide()
 equal(native:GetLeft(), 950, "closing an edge pair restores the original native position")
 Addon.nameTooltips[native].kind = nil
@@ -1227,5 +1231,34 @@ equal(Addon.stackedTooltips[GameTooltip], nil, "leaving a map pin clears the emb
 GameTooltip.accurateLines, Addon.tooltip.accurateLines = accurateNativeLines, accurateQuestLines
 WorldMapFrame:Hide()
 Addon:SetTooltipMode("separate")
+
+do
+    local oldWidth, oldHeight = UIParent:GetSize()
+    local oldScale = UIParent:GetScale()
+    UIParent:SetSize(1920, 1080)
+    UIParent:SetScale(0.711111)
+    local source = CreateFrame("Frame", nil, UIParent)
+    source:SetSize(300, 90)
+    local companion = Addon:CreateCompanionTooltip(nil)
+    companion:SetOwner(source, "ANCHOR_NONE")
+    local policy = { GetSide = function() return "left" end }
+    for _, scale in ipairs({ 0.64, 0.711111, 0.8, 0.85, 0.9, 1 }) do
+        source:SetScale(scale / UIParent:GetEffectiveScale())
+        companion:SetScale(scale / UIParent:GetEffectiveScale())
+        source.left, source.top = 1000 / scale, 100 / scale
+        for height = 80, 240 do
+            companion:SetSize(280, height)
+            local bounds = Addon:PlaceCompanionTooltip(companion, source, nil, false, nil, policy)
+            equal(bounds ~= nil, true, "fractional-scale companion fits near the bottom: " .. scale .. "/" .. height)
+            equal(companion:IsShown(), true, "fitting companion remains visible at fractional coordinates")
+        end
+    end
+    local obstacle = { left = 700, right = 1000, bottom = 0, top = 300 }
+    equal(Addon:PlaceCompanionTooltip(companion, source, { obstacle }, false, nil, policy), nil,
+        "placement tolerance does not permit a real overlap")
+    companion:Hide()
+    UIParent:SetScale(oldScale)
+    UIParent:SetSize(oldWidth, oldHeight)
+end
 
 return checks

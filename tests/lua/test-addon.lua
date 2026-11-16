@@ -1002,7 +1002,9 @@ SMART_NAV_INPUT_DIRECTION = {
     UP = {dirKey = "up"}, DOWN = {dirKey = "down"}, LEFT = {dirKey = "left"}, RIGHT = {dirKey = "right"},
 }
 function SmartNavigation_MarkFrameIgnored(frame) frame.smartNavigationIgnored = true end
+function SmartNavigation_ClearIgnoreStatus(frame) frame.smartNavigationIgnored = nil end
 function SmartNavigation_MarkFrameFocusable(frame) frame.smartNavigationCanFocus = true end
+function securecallfunction(callback, ...) return callback(...) end
 function CreateAnchor(point, relativeTo, relativePoint, x, y)
     return { point = point, relativeTo = relativeTo, relativePoint = relativePoint, x = x, y = y }
 end

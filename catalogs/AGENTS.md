@@ -193,11 +193,11 @@ authoring. For targeted reuse, search the relevant catalog kind; do not print th
 Verify that an upstream locale contains an actual translation rather than English fallback.
 
 Edit the text and its `translationMetadata.fields` entry together with `apply_patch`.
-For example, this is a locale object under `locales.frFR` for an AI-authored item name:
+For example, this is a locale object under `locales.itIT` for an eligible AI-authored item name:
 
 ```json
 {
-  "name": "Vieille épée courte",
+  "name": "Vecchia spada corta",
   "translationMetadata": {
     "fields": {
       "name": {

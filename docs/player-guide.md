@@ -81,9 +81,10 @@ Name companions copy their source tooltip's effective title font, shadow, line s
 and border colors, and opacity. Title colors use the
 native tooltip data when supplied, otherwise the rendered source title.
 
-The following placement rules describe Separate tooltip mode. Native tooltips normally retain their original position. When there is insufficient room on the
-chosen side, the translation takes the native position and the native tooltip moves inward, preserving
-their order. NPC translations match the native tooltip's width and follow it when it moves.
+The following placement rules describe Separate tooltip mode. Single item, spell, talent and stat
+tooltips retain their native position. When an automatic companion cannot fit on its preferred side,
+it tries the opposite side without moving the original. NPC translations match the native tooltip's
+width, keep their selected top/left/right/bottom position, and follow it when it moves.
 The tracker uses the same placement beside its native tooltip when present, or beside the quest block otherwise.
 Completed tracker quests show the same turn-in status as quest-list tooltips. Completed map pins
 show only the translated title, without level brackets or completed objectives.

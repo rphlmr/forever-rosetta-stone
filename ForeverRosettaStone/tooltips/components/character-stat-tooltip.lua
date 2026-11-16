@@ -48,8 +48,8 @@ Addon:RegisterNameTooltipComponent({
     alwaysFull = true,
     placementProfiles = Addon:CreateTooltipPlacementProfiles({
         name = "characterStat", contexts = { default = {} },
-        mouse = { allowNativeShift = true, sideRules = { Addon.TooltipSideRules.right, Addon.TooltipSideRules.screen } },
-        gamepad = { allowNativeShift = true, sideRules = { Addon.TooltipSideRules.right, Addon.TooltipSideRules.screen } },
+        mouse = { allowSideFallback = true, sideRules = { Addon.TooltipSideRules.right, Addon.TooltipSideRules.screen } },
+        gamepad = { allowSideFallback = true, sideRules = { Addon.TooltipSideRules.right, Addon.TooltipSideRules.screen } },
     }),
     GetName = function(id, locale)
         local record = records[id]

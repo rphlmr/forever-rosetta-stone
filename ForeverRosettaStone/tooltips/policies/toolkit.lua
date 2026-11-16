@@ -29,7 +29,7 @@ function Addon:CreateTooltipPlacementPolicy(options)
         name = options.name,
         context = options.context,
         inputMode = options.inputMode,
-        allowNativeShift = options.allowNativeShift,
+        allowSideFallback = options.allowSideFallback,
         Prepare = options.Prepare,
         LayoutGroup = options.LayoutGroup,
         GetSide = function(source)
