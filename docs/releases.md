@@ -25,7 +25,7 @@ from a catalog count or an automated check. Include an upgrade instruction only 
 The first entry describes the initial release. Later entries contain only changes since the previous
 release, plus limitations that affect that update. Keep technical maintenance details in commits.
 
-GitHub **CI** runs on branch pushes and pull requests. It builds the production database, runs the
+GitHub **CI** runs on pushes to `main` and pull requests. It builds the production database, runs the
 addon harness and packaging tests, and provides an `addon-preview` artifact containing a ZIP and
 Markdown notes. Preview ZIPs use **Unreleased** notes and are not published to CurseForge.
 The ZIP includes the main addon, its declared data packs, artwork, and license notices.
