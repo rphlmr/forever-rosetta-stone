@@ -1,0 +1,833 @@
+{
+  "areaId": 406,
+  "clientObjectiveTargets": [
+    {
+      "id": 16581,
+      "index": 1,
+      "kind": "item"
+    }
+  ],
+  "clientObjectiveTargetsMetadata": {
+    "source": "clientCapture",
+    "sourceBuild": "70938",
+    "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
+    "sourceLocale": "enUS"
+  },
+  "locales": {
+    "csCZ": {
+      "description": "Něco je tady ve Stonetalonu v nepořádku. Cítíš to napětí ve vzduchu, {name}?\n\nJihovýchodně odsud leží hluboká jeskyně v rokli Boulderslide. Koboldi tam horečně těží vzácný krystal zvaný Resonite. Přines mi vzorky rudy, ať pochopím, co se v té jeskyni děje. Prozkoumej také hloubku té jeskyně.\n\n{class}, jdi, mladá duše. Je nezbytné, abych věděl, jaké zlo číhá pod těmito horami.",
+      "eventObjectiveLabel": "Prozkoumej jeskyni v Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Prozkoumej jeskyni v Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Prozkoumej hlubiny jeskyně v Boulderslide Ravine a přines zpět 10× Resonite Crystals k prozkoumání pro Mor'rogala v Sun Rock Retreat.",
+      "title": "Rokle Boulderslide",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "4eaf4c19f61a1d7f0420bcbbb6f5432893eb3328ef5e937832cd500b9ed14512"
+          },
+          "objectiveLines.2": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "b1710ff6646bf78fb5e0b6af354486f2177101caeb1877a0f790a3126583bf5e"
+          },
+          "title": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "9e320c1165d6f88e343a9570218b7288b2d6c43ac4ce7dfed1a3988fbadb9ad3"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Noget er galt her i Stonetalon. Kan du mærke spændingen i luften, {name}?\n\nSydøst herfra ligger en dyb hule i Boulderslide Ravine. Kobolderne dér udvinder febrilsk en sjælden krystal kaldet Resonite. Jeg har brug for, at du bringer nogle malmprøver tilbage, så jeg kan forstå, hvad der sker i hulen. Jeg har også brug for, at du undersøger hulens dyb.\n\nGå, unge {class}, det er afgørende, at jeg ved, hvilken ondskab der lurer under disse bjerge.",
+      "eventObjectiveLabel": "Undersøg hulen i Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Undersøg hulen i Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Udforsk hulen dybt inde i Boulderslide Ravine, og bring 10 Resonite Crystals tilbage til Mor'rogal ved Sun Rock Retreat til undersøgelse.",
+      "title": "Boulderslide-kløften",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf4c19f61a1d7f0420bcbbb6f5432893eb3328ef5e937832cd500b9ed14512"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "b1710ff6646bf78fb5e0b6af354486f2177101caeb1877a0f790a3126583bf5e"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9e320c1165d6f88e343a9570218b7288b2d6c43ac4ce7dfed1a3988fbadb9ad3"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Irgendetwas stimmt hier im Steinkrallengebirge nicht. Spürt Ihr die Spannung, die in der Luft liegt, {name}?\n\nSüdlich von hier liegt eine tiefe Höhle in der Steinschlagklamm. Die Kobolde dort schürfen wie wild nach einem seltenen Kristall, dem so genannten Resonit. Ich möchte, dass Ihr mir ein paar Erzproben bringt, damit ich herausfinden kann, was in dieser Höhle vor sich geht. Ich hätte auch gern, dass Ihr die Tiefen dieser Höhle untersucht.\n\nGeht nun, {class}, es ist von größter Bedeutung, dass ich in Erfahrung bringe, welche Bösartigkeiten unter diesen Bergen lauern.",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Erkundet die Tiefen der Höhle in der Steinschlagklamm und bringt Mor'rogal in Sonnenfels 10 Resonitkristalle, damit er sie untersuchen kann.",
+      "title": "Steinschlagklamm",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "deDE"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "Something is amiss here in Stonetalon. Can you feel the tension in the air, {name}?\n\nSoutheast of here lies a deep cave in Boulderslide Ravine. The kobolds there are frantically mining a rare crystal called Resonite. I need you to bring back some ore samples so that I can understand what's happening in that cave.  I also need you to investigate the depth of that cave.\n\nGo young {class}, it's imperative I know what evil lurks under these mountains.",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Explore deep into the cave at Boulderslide Ravine and bring back 10 Resonite Crystals for Mor'rogal at Sun Rock Retreat to investigate.",
+      "title": "Boulderslide Ravine",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS",
+            "sourceRevision": "a444a6418113ae0fce5d30c897674132e756ba1d"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "Aquí en el Espolón pasa algo. ¿Sientes la tensión en el aire, {name}?\n\nAl sureste de aquí existe una profunda caverna en el Barranco del Alud. Los kobolds de allí están extrayendo un extraño mineral llamado resonita. Necesito que me traigas algunas muestras para poder entender lo que sucede allí. También necesito que investigues las profundidades de la cueva.\n\nVe allí, joven {class}. Tenemos que saber lo que se oculta bajo esas montañas.",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Explora las profundidades de la cueva del Barranco del Alud y lleva 10 cristales de resonita Mor'rogal en el Refugio Roca del Sol para que los investigue.",
+      "title": "Barranco del Alud",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esES"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "Aquí en el Espolón pasa algo. ¿Sientes la tensión en el aire, {name}?\n\nAl sureste de aquí existe una profunda caverna en el Barranco del Alud. Los kóbolds de allí están extrayendo un extraño mineral llamado resonita. Necesito que me traigas algunas muestras para poder entender lo que sucede allí. También necesito que investigues las profundidades de la cueva.\n\nVe allí, joven {class}. Tenemos que saber lo que se oculta bajo esas montañas.",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Explora las profundidades de la cueva del Barranco del Alud y lleva 10 cristales de resonita al Refugio Roca del Sol para que Mor'rogal las estudie.",
+      "title": "Barranco del Alud",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esMX"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Quelque chose ne va pas dans les Serres-Rocheuses. Vous sentez cette tension dans l'air, {name} ?\n\nAu sud-est d'ici, dans le Ravin des éboulis, se trouve une profonde caverne. Les kobolds sont là-bas et passent tout leur temps à extraire un cristal rare, la résonite. J'ai besoin de vous pour m’en rapporter quelques échantillons afin de comprendre ce qui se passe dans cette caverne. J'ai aussi besoin de connaître sa profondeur.\n\nAllez, jeune {class}, il est impératif que je sache quel mal se cache sous ces montagnes.",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Explorer la grotte du ravin des Eboulis, et apporter 10 Cristaux de résonite à Mor'rogal, dans la Retraite de Roche-Soleil.",
+      "title": "Le ravin des Eboulis",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "frFR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Nešto nije u redu ovdje u Stonetalonu. Osjećaš li napetost u zraku, {name}?\n\nJugoistočno odavde nalazi se duboka špilja u Boulderslide Ravineu. Tamošnji koboldi mahnito iskopavaju rijedak kristal zvan rezonit. Trebam da doneseš uzorke rude kako bih mogao razumjeti što se događa u toj špilji. Također trebam da istražiš njezine dubine.\n\nIdi, mladi {class}, nužno je da znam kakvo zlo vreba pod ovim planinama.",
+      "eventObjectiveLabel": "Istraži špilju u Boulderslide Ravineu",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Istraži špilju u Boulderslide Ravineu",
+          "type": "event"
+        }
+      ],
+      "summary": "Istraži dubine špilje u Boulderslide Ravineu i donesi 10 Resonite Crystala Mor'rogalu u Sun Rock Retreat na proučavanje.",
+      "title": "Klanac Boulderslide",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf4c19f61a1d7f0420bcbbb6f5432893eb3328ef5e937832cd500b9ed14512"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "b1710ff6646bf78fb5e0b6af354486f2177101caeb1877a0f790a3126583bf5e"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9e320c1165d6f88e343a9570218b7288b2d6c43ac4ce7dfed1a3988fbadb9ad3"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Qualcosa non va qui a Petrartiglio. Riesci a sentire la tensione nell'aria, {name}?\n\nA sudest di qui si trova una caverna profonda nella Gola di Boulderslide. I coboldi laggiù stanno estraendo freneticamente un raro cristallo chiamato resonite. Ho bisogno che tu riporti dei campioni di minerale, così potrò capire cosa sta succedendo in quella caverna. Ho anche bisogno che tu ne esplori le profondità.\n\nVa', giovane {class}, è imperativo che io sappia quale male si cela sotto queste montagne.",
+      "eventObjectiveLabel": "Esplora la caverna nel Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Esplora la caverna nel Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Esplora le profondità della caverna nella Boulderslide Ravine e riporta 10 cristalli di resonite a Mor'rogal a Sun Rock Retreat perché li studi.",
+      "title": "Gola di Boulderslide",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf4c19f61a1d7f0420bcbbb6f5432893eb3328ef5e937832cd500b9ed14512"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "b1710ff6646bf78fb5e0b6af354486f2177101caeb1877a0f790a3126583bf5e"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9e320c1165d6f88e343a9570218b7288b2d6c43ac4ce7dfed1a3988fbadb9ad3"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "이곳 돌발톱 산맥에 뭔가 수상한 일이 벌어지고 있는 것 같아. 바람에 실려 전해져 오는 이 긴장을 자네도 느낄 수 있나?\n\n여기서 남동쪽으로 구릉바위 협곡에는 깊은 동굴이 하나 있네. 그곳에선 코볼트들이 리조나이트라는 희귀한 수정을 미친 듯이 캐고 있지. 그 표본이 좀 필요하네. 그리고, 동굴 깊숙한 곳까지 들어가서 뭐가 있는지 좀 조사해 주게.\n\n어서 떠나게. 난 이 산맥 깊은 곳에 어떤 악의 무리가 숨어 있는지 반드시 알아내야만 해.",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "구릉바위 협곡에 있는 동굴을 탐사한 다음 해바위 야영지에 있는 모르로갈에게 리조나이트 수정 10개를 가져가야 합니다.",
+      "title": "구릉바위 협곡",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "koKR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "Coś jest nie tak w Stonetalon. Czujesz napięcie w powietrzu, {name}?\n\nNa południowy wschód stąd leży głęboka jaskinia w Boulderslide Ravine. Koboldy gorączkowo wydobywają tam rzadki kryształ zwany rezonitem. Potrzebuję próbek rudy, by zrozumieć, co dzieje się w jaskini. Musisz też zbadać jej głębię.\n\nIdź, młody {class}, muszę wiedzieć, jakie zło czai się pod górami.",
+      "eventObjectiveLabel": "Zbadaj jaskinię w wąwozie Boulderslide",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Zbadaj jaskinię w wąwozie Boulderslide",
+          "type": "event"
+        }
+      ],
+      "summary": "Zbadaj głębię jaskini w Boulderslide Ravine i przynieś 10 kryształów rezonitu Mor'rogalowi w Sun Rock Retreat do zbadania.",
+      "title": "Wąwóz Boulderslide",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf4c19f61a1d7f0420bcbbb6f5432893eb3328ef5e937832cd500b9ed14512"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "b1710ff6646bf78fb5e0b6af354486f2177101caeb1877a0f790a3126583bf5e"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9e320c1165d6f88e343a9570218b7288b2d6c43ac4ce7dfed1a3988fbadb9ad3"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "Algo está errado aqui nas Torres de Pedra. Você sente a tensão no ar, {name}?\n\nA sudeste daqui, na Ravina da Avalanche, fica uma profunda caverna. Os kobolds de lá estão minerando freneticamente um cristal raro chamado ressonita. Preciso que você colete algumas amostras do minério para que eu possa entender o que está acontecendo na caverna. Também preciso que você investigue as áreas mais profundas de lá.\n\nVá, jovem {class}. É imperativo que eu saiba que mal espreita sob estas montanhas.",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Explore as profundezas da caverna na Ravina da Avalanche e colete 10 Cristais de Ressonita para que Mor'rogal, no Retiro Rocha do Sol, os analise.",
+      "title": "Ravina da Avalanche",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ptBR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Что-то не так здесь, в Каменном Когте. Чувствуешь ли ты непокой, витающий в воздухе, {name}?\n\nК юго-востоку отсюда, в ущелье Камнепадов, есть пещера. Там кобольды отчаянно ищут редкие кристаллы резонита. Я прошу тебя принести оттуда образцы руды, чтобы я мог понять, что происходит в этой пещере. Помимо того, неплохо бы тебе обследовать глубины этой пещеры.\n\nИди же, юный {class}, мне очень важно знать, что за зло таится под этими горами.",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Обследуйте глубины пещеры в ущелье Камнепадов и принесите 10 кристаллов резонита для исследования Мор'рогалу в Приют у Солнечного Камня.",
+      "title": "Ущелье Камнепадов",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ruRU"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Något är på tok här i Stenklobergen. Känner du spänningen i luften, {name}?\n\nSydost om här ligger en djup grotta i Stenrasravinen. Kobolderna där bryter frenetiskt en sällsynt kristall som kallas resonit. Jag behöver att du tar med några malmprover så att jag kan förstå vad som händer i den grottan. Jag behöver också att du undersöker hur djup grottan är.\n\nGå, unge {class}, det är avgörande att jag får veta vilken ondska som lurar under de här bergen.",
+      "eventObjectiveLabel": "Undersök grottan i Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Undersök grottan i Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "Utforska djupt in i grottan i Stenrasravinen och ta med 10 resonitkristaller till Mor'rogal vid Solklippans tillflykt så att han kan undersöka dem.",
+      "title": "Stenrasravinen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRevision": "0.10.1"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf4c19f61a1d7f0420bcbbb6f5432893eb3328ef5e937832cd500b9ed14512"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "b1710ff6646bf78fb5e0b6af354486f2177101caeb1877a0f790a3126583bf5e"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "9e320c1165d6f88e343a9570218b7288b2d6c43ac4ce7dfed1a3988fbadb9ad3"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Stonetalon'da bir şeyler ters gidiyor. Havadaki gerginliği hissedebiliyor musun, {name}?\n\nBuranın güneydoğusunda, Boulderslide Kanyonu'nda derin bir mağara var. Oradaki kobold'lar Resonite denen nadir bir kristali çılgınca çıkarıyor. O mağarada neler olduğunu anlayabilmem için bana birkaç cevher örneği getirmeni istiyorum. Mağaranın derinliğini de araştırmanı istiyorum.\n\nGit genç {class}, bu dağların altında hangi kötülüğün gizlendiğini bilmem şart.",
+      "eventObjectiveLabel": "Boulderslide Vadisi'ndeki mağarayı araştır",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Boulderslide Vadisi'ndeki mağarayı araştır",
+          "type": "event"
+        }
+      ],
+      "summary": "Boulderslide Kanyonu'ndaki mağaranın derinliklerini keşfet ve Sun Rock Sığınağı'ndaki Mor'rogal'a incelemesi için 10 Resonite Crystal getir.",
+      "title": "Boulderslide Kanyonu",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "foreverTR",
+            "sourceLocale": "trTR",
+            "sourceRevision": "0.1.0-beta.1"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf4c19f61a1d7f0420bcbbb6f5432893eb3328ef5e937832cd500b9ed14512"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "b1710ff6646bf78fb5e0b6af354486f2177101caeb1877a0f790a3126583bf5e"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9e320c1165d6f88e343a9570218b7288b2d6c43ac4ce7dfed1a3988fbadb9ad3"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Щось негаразд у Каміннопазуристих горах. Відчуваєш напругу в повітрі, {name}?\n\nНа південний схід звідси, в ущелині Крутих валунів, є глибока печера. Тамтешні кобольди несамовито видобувають рідкісний кристал, званий резонітом. Принеси мені зразки руди, щоб я зрозумів, що відбувається в печері. Також досліди її глибини.\n\nІди, юний {class}, мені вкрай необхідно знати, яке зло ховається під цими горами.",
+      "eventObjectiveLabel": "Дослідіть печеру в ущелині Крутих валунів",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Дослідіть печеру в ущелині Крутих валунів",
+          "type": "event"
+        }
+      ],
+      "summary": "Дослідіть глибини печери в ущелині Крутих валунів і принесіть 10 кристалів резоніту Мор'роґалу в Сонцескельну криївку.",
+      "title": "Ущелина Крутих валунів",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf4c19f61a1d7f0420bcbbb6f5432893eb3328ef5e937832cd500b9ed14512"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "b1710ff6646bf78fb5e0b6af354486f2177101caeb1877a0f790a3126583bf5e"
+          },
+          "title": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "9e320c1165d6f88e343a9570218b7288b2d6c43ac4ce7dfed1a3988fbadb9ad3"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "石爪山脉有些事不大对劲。你能感觉到空气中的紧张气氛吗，{name}？在此地以南的滚岩峡谷中有一处很深的洞穴，狗头人正在那儿疯狂地开采一种被称作共鸣水晶的稀有矿石。我需要你去取回一些矿石样本，那样我就能了解洞穴中究竟发生了什么事儿。另外，你还得去勘查一下洞穴的深度。\n\n去吧，年轻的{class}，我必须知道这里的山脉中潜伏着什么样的邪恶力量。",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "深入滚岩峡谷的洞穴中，为烈日石居的摩罗加尔取回10块共鸣水晶以供研究。",
+      "title": "滚岩峡谷",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhCN"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "石爪山脈有些事不大對勁。你能感覺到空氣中的緊張氣氛嗎，{name}？在東南方的滾岩峽谷中有一處很深的洞穴。狗頭人正在那兒瘋狂地開採一種被稱作共鳴水晶的稀有礦石。我需要你去取回一些礦石樣本，那麼我就能瞭解洞穴中究竟發生了什麼事。另外，你還得去勘查一下洞穴的深度。\n\n去吧年輕的{class}，我必須知道這裡的山脈中潛伏著什麼樣的邪惡力量。",
+      "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Investigate Cave in Boulderslide Ravine",
+          "type": "event"
+        }
+      ],
+      "summary": "深入滾岩峽谷的洞穴中，為烈日石居的摩羅加爾取回10塊共鳴水晶以供研究。",
+      "title": "滾岩峽谷",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4dbb82440a27856f8dccf57094a5d792cdc7cc9b"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "objectiveTargets": {
+    "item": [
+      {
+        "id": 16581
+      }
+    ]
+  }
+}

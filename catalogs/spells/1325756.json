@@ -1,0 +1,626 @@
+{
+  "locales": {
+    "csCZ": {
+      "auraDescription": "Označen k smrti. Po $d utrpí $w1 bodů poškození.",
+      "description": "Ukončovací úder označí cíl a uloží část poškození tvých útoků za každý kombinovaný bod. Poškození schopností «Škrcení» a «Prasknutí» se ukládá dvojnásobnou rychlostí. Po $d se uložené poškození způsobí cíli až do maxima zvýšeného útočnou silou a šancí na kritický zásah:\r\n   1 bodů  : ${1*$<ratio>}% uloženo, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit poškození\r\n   2 bodů: ${2*$<ratio>}% uloženo, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit poškození\r\n   3 bodů: ${3*$<ratio>}% uloženo, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit poškození\r\n   4 bodů: ${4*$<ratio>}% uloženo, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit poškození\r\n   5 bodů: ${5*$<ratio>}% uloženo, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit poškození",
+      "name": "Znamení smrti",
+      "rank": "Hodnost 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.7.3"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "auraDescription": "Mærket til døden. Modtager $w1 skade efter $d.",
+      "description": "Afsluttende angreb, der mærker målet og lagrer en del af dine angrebs skade pr. kombinationspoint. Skade fra Kvælning og Brud lagres dobbelt så hurtigt. Efter $d gives den lagrede skade, op til et maksimum øget af angrebskraft og kritisk chance:\r\n   1 point  : ${1*$<ratio>}% lagret, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimal skade\r\n   2 point: ${2*$<ratio>}% lagret, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimal skade\r\n   3 point: ${3*$<ratio>}% lagret, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimal skade\r\n   4 point: ${4*$<ratio>}% lagret, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimal skade\r\n   5 point: ${5*$<ratio>}% lagret, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimal skade",
+      "name": "Dødsmærke",
+      "rank": "Rang 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "auraDescription": "Todesurteil. Erleidet nach $d $w1 Schaden.",
+      "description": "Ein Finishing-Move, der das Ziel markiert und pro Combopunkt einen Teil des von Euren Angriffen verursachten Schadens${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} speichert. Schaden durch 'Blutung' und 'Erdrosseln' wird doppelt gespeichert. Nach $d wird dem Ziel der gespeicherte Schaden zugefügt, wobei der maximale Schadenswert von Eurer Angriffskraft und kritischen Trefferchance abhängt:\r\n   1 Punkt  : Speichert ${1*$<ratio>}%, maximal  Schaden.\r\n   2 Punkte: Speichert ${2*$<ratio>}%, maximal ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} Schaden.\r\n   3 Punkte: Speichert ${3*$<ratio>}%, maximal ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} Schaden.\r\n   4 Punkte: Speichert ${4*$<ratio>}%, maximal ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} Schaden.\r\n   5 Punkte: Speichert ${5*$<ratio>}%, maximal ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} Schaden.",
+      "name": "Todesmal",
+      "rank": "Rang 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "deDE"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "deDE"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "deDE"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "deDE"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "auraDescription": "Marked for Death. Taking $w1 damage after $d.",
+      "description": "Finishing move that marks the target, storing a portion of the damage dealt by your attacks per Combo Point. Garrote and Rupture damage is stored at twice the rate. After $d, the stored damage is dealt, up to a maximum increased by Attack Power and Critical Strike chance:\r\n   1 point  : ${1*$<ratio>}% stored, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   2 points: ${2*$<ratio>}% stored, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   3 points: ${3*$<ratio>}% stored, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   4 points: ${4*$<ratio>}% stored, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap\r\n   5 points: ${5*$<ratio>}% stored, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} damage cap",
+      "name": "Death Mark",
+      "rank": "Rank 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "auraDescription": "Marcado para morir. Recibirá $w1 p. de daño al cabo de $d.",
+      "description": "Remate que marca al objetivo y almacena una parte del daño infligido por tus ataques por cada punto de combo. El daño de Ruptura y de Garrote se almacena a una tasa dos veces mayor. Al cabo de $d, se inflige el daño almacenado, hasta un máximo que aumenta en función del poder de ataque y la probabilidad de golpe crítico:\r\n   1 punto: ${1*$<ratio>}% almacenado, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} de límite de daño.\r\n   2 puntos: ${2*$<ratio>}% almacenado, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} de límite de daño.\r\n   3 puntos: ${3*$<ratio>}% almacenado, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} de límite de daño.\r\n   4 puntos: ${4*$<ratio>}% almacenado, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} de límite de daño.\r\n   5 puntos: ${5*$<ratio>}% almacenado, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} de límite de daño.",
+      "name": "Marca de la muerte",
+      "rank": "Rango 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "esES"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "esES"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "esES"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "auraDescription": "Marcado para morir. Recibes $w1 de daño después de $d.",
+      "description": "Remate que marca al objetivo y acumula una parte del daño infligido por tus ataques por cada punto de combo. El daño de Garrote y Ruptura se acumula al doble. Después de $d, se inflige el daño acumulado hasta un máximo que aumenta según el poder de ataque y la probabilidad de golpe crítico:\r\n   1 punto: ${1*$<ratio>}% acumulado, límite de daño de ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}.\r\n   2 puntos: ${2*$<ratio>}% acumulado, límite de daño de ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}.\r\n   3 puntos: ${3*$<ratio>}% acumulado, límite de daño de ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}.\r\n   4 puntos: ${4*$<ratio>}% acumulado, límite de daño de ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}.\r\n   5 puntos: ${5*$<ratio>}% acumulado, límite de daño de ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}.",
+      "name": "Marca mortal",
+      "rank": "Rango 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "esMX"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "esMX"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "esMX"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "auraDescription": "Cible désignée pour mourir. Subit $w1 $lpoint:points; de dégâts au bout de $d.",
+      "description": "Un coup de grâce qui marque la cible et accumule une partie des dégâts infligés par vos attaques par point de combo. Les dégâts de Garrot et de Rupture sont accumulés deux fois plus vite. Au bout de $d, ces dégâts accumulés sont infligés, jusqu’à une valeur maximale augmentée par la puissance d’attaque et les chances de coup critique :\r\n   1 point : ${1*$<ratio>} % des dégâts accumulés, limite de dégâts de ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}.\r\n   2 points : ${2*$<ratio>} % des dégâts accumulés, limite de dégâts de ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   3 points : ${3*$<ratio>} % des dégâts accumulés, limite de dégâts de ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}.\r\n   4 points : ${4*$<ratio>} % des dégâts accumulés, limite de dégâts de ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}.\r\n   5 points : ${5*$<ratio>} % des dégâts accumulés, limite de dégâts de ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} .",
+      "name": "Marque de mort",
+      "rank": "Rang 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "frFR"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "frFR"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "frFR"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "auraDescription": "Označen za smrt. Prima $w1 štete nakon $d.",
+      "description": "Završni potez koji označava metu i pohranjuje dio štete tvojih napada po kombinacijskom bodu. Šteta Davljenja i Puknuća pohranjuje se dvostruko brže. Nakon $d nanosi se pohranjena šteta, do maksimuma koji povećavaju snaga napada i šansa za kritični pogodak:\r\n   1 bod  : ${1*$<ratio>}% pohranjeno, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimalne štete\r\n   2 boda: ${2*$<ratio>}% pohranjeno, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimalne štete\r\n   3 boda: ${3*$<ratio>}% pohranjeno, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimalne štete\r\n   4 boda: ${4*$<ratio>}% pohranjeno, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimalne štete\r\n   5 bodova: ${5*$<ratio>}% pohranjeno, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maksimalne štete",
+      "name": "Oznaka smrti",
+      "rank": "Rang 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "auraDescription": "Marchiato a morte. Subisce $w1 danni dopo $d.",
+      "description": "Mossa finale che marca il bersaglio e accumula una parte dei danni dei tuoi attacchi per ogni punto combo. I danni di «Garrota» e «Rottura» si accumulano al doppio della velocità. Dopo $d, i danni accumulati vengono inflitti fino a un massimo aumentato dalla potenza d'attacco e dalla probabilità di colpo critico:\r\n   1 punti  : ${1*$<ratio>}% accumulato, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limite danni\r\n   2 punti: ${2*$<ratio>}% accumulato, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limite danni\r\n   3 punti: ${3*$<ratio>}% accumulato, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limite danni\r\n   4 punti: ${4*$<ratio>}% accumulato, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limite danni\r\n   5 punti: ${5*$<ratio>}% accumulato, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limite danni",
+      "name": "Marchio della morte",
+      "rank": "Grado 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "auraDescription": "죽음의 징표가 찍힘\r\n$d 후 $w1의 피해",
+      "description": "적에게 마무리 일격을 날려 연계 점수에 따라 공격으로 입히는 피해의 일부를 저장합니다. 목조르기와 파열로 입히는 피해는 2배만큼 저장됩니다. 대상은 $d 후 저장된 피해를 입고, 피해량은 전투력과 치명타 및 극대화율에 따라 상한선까지 증가합니다.\r\n   연계 점수 1점: ${1*$<ratio>}%의 피해 저장, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}의 피해 상한\r\n   연계 점수 2점: ${2*$<ratio>}%의 피해 저장, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}의 피해 상한\r\n   연계 점수 3점: ${3*$<ratio>}%의 피해 저장, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}의 피해 상한\r\n   연계 점수 4점: ${4*$<ratio>}%의 피해 저장, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}의 피해 상한\r\n   연계 점수 5점: ${5*$<ratio>}%의 피해 저장, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}의 피해 상한",
+      "name": "죽음의 징표",
+      "rank": "2 레벨",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "koKR"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "koKR"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "koKR"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "auraDescription": "Naznaczony śmiercią. Otrzymuje $w1 obrażeń po $d.",
+      "description": "Cios kończący oznacza cel i gromadzi część obrażeń twoich ataków za każdy punkt kombinacji. Obrażenia «Duszenie» i «Pęknięcie» gromadzą się dwa razy szybciej. Po $d zgromadzone obrażenia zostają zadane do maksimum zwiększanego przez siłę ataku i szansę trafienia krytycznego:\r\n   1 punktów  : ${1*$<ratio>}% zgromadzono, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń\r\n   2 punktów: ${2*$<ratio>}% zgromadzono, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń\r\n   3 punktów: ${3*$<ratio>}% zgromadzono, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń\r\n   4 punktów: ${4*$<ratio>}% zgromadzono, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń\r\n   5 punktów: ${5*$<ratio>}% zgromadzono, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń",
+      "name": "Znak śmierci",
+      "rank": "Ranga 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "auraDescription": "Marcado para Morrer. Recebendo $w1 de dano após $d.",
+      "description": "Golpe final que marca o alvo, acumulando uma parte do dano causado pelos seus ataques por Ponto de Combo. O dano de Garrote e Ruptura é acumulado em dobro. Após $d, o dano acumulado é causado, até o máximo aumentado pelo Poder de Ataque e pela chance de acerto crítico:\r\n   1 ponto  : ${1*$<ratio>}% do acumulado, limite de dano de ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   2 pontos: ${2*$<ratio>}% do acumulado, limite de dano de ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   3 pontos: ${3*$<ratio>}% do acumulado, limite de dano de ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   4 pontos: ${4*$<ratio>}% do acumulado, limite de dano de ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   5 pontos: ${5*$<ratio>}% do acumulado, limite de dano de ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}",
+      "name": "Marca da Morte",
+      "rank": "Grau 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "ptBR"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "ptBR"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "ptBR"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "auraDescription": "Метка смерти. Нанесет $w1 ед. урона через $d.",
+      "description": "Завершающий прием, отмечающий цель на $d. Метка накапливает часть урона от ваших атак за каждый прием в серии, а по окончании времени действия наносит накопленный урон. Накапливает урон от \"Гарроты\" и \"Рваной раны\" в два раза эффективнее. Максимальный урон с бонусом за силу атаки и вероятность критического удара:\r\n   1 очко: накапливает ${1*$<ratio>}%, максимум ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} ед. урона.\r\n   2 очка: накапливает ${2*$<ratio>}%, максимум ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} ед. урона.\r\n   3 очка: накапливает ${3*$<ratio>}%, максимум ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} ед. урона.\r\n   4 очка: накапливает ${4*$<ratio>}%, максимум ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} ед. урона.\r\n   5 очков: накапливает ${5*$<ratio>}%, максимум ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} ед. урона.",
+      "name": "Метка смерти",
+      "rank": "2-й уровень",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "ruRU"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "ruRU"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "ruRU"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "auraDescription": "Märkt för döden. Tar $w1 skada efter $d.",
+      "description": "Avslutande attack som märker målet och lagrar en del av dina attackskador per kombinationspoäng. Skada från Strypning och Bristning lagras dubbelt så snabbt. Efter $d orsakas den lagrade skadan, upp till ett maximum som ökas av attackkraft och kritisk chans:\r\n   1 poäng  : ${1*$<ratio>}% lagrat, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maximal skada\r\n   2 poäng: ${2*$<ratio>}% lagrat, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maximal skada\r\n   3 poäng: ${3*$<ratio>}% lagrat, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maximal skada\r\n   4 poäng: ${4*$<ratio>}% lagrat, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maximal skada\r\n   5 poäng: ${5*$<ratio>}% lagrat, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} maximal skada",
+      "name": "Dödsmärke",
+      "rank": "Rang 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "auraDescription": "Ölüm için işaretlendi. $d sonra $w1 hasar alır.",
+      "description": "Hedefi işaretleyen ve kombo puanı başına saldırılarının hasarının bir kısmını biriktiren bitirici hamle. «Boğma» ve «Yırtılma» hasarı iki kat hızla birikir. $d sonra biriken hasar, saldırı gücü ve kritik vuruş olasılığıyla artan bir üst sınıra kadar verilir:\r\n   1 puan  : ${1*$<ratio>}% biriken, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} hasar sınırı\r\n   2 puan: ${2*$<ratio>}% biriken, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} hasar sınırı\r\n   3 puan: ${3*$<ratio>}% biriken, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} hasar sınırı\r\n   4 puan: ${4*$<ratio>}% biriken, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} hasar sınırı\r\n   5 puan: ${5*$<ratio>}% biriken, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} hasar sınırı",
+      "name": "Ölüm İşareti",
+      "rank": "Derece 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "auraDescription": "Позначено на смерть. Отримує $w1 одиниць шкоди через $d.",
+      "description": "Завершальний прийом позначає ціль і накопичує частину шкоди ваших атак за кожне очко серії. Шкода від «Удушення» та «Розрив» накопичується вдвічі швидше. Через $d накопичена шкода завдається цілі, але не більше межі, що зростає із силою атаки та шансом критичного удару:\r\n   1 очок  : ${1*$<ratio>}% накопичено, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} межа шкоди\r\n   2 очок: ${2*$<ratio>}% накопичено, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} межа шкоди\r\n   3 очок: ${3*$<ratio>}% накопичено, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} межа шкоди\r\n   4 очок: ${4*$<ratio>}% накопичено, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} межа шкоди\r\n   5 очок: ${5*$<ratio>}% накопичено, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} межа шкоди",
+      "name": "Мітка смерті",
+      "rank": "Ранг 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "auraDescription": "被死亡标记。$d后受到$w1点伤害。",
+      "description": "终结技，标记目标，每有一个连击点数，储存一部分你的攻击对该目标造成的伤害。绞喉和割裂伤害的储存比例翻倍。$d后，对目标造成储存的伤害，但伤害不超过由攻击强度和爆击几率决定的上限：\r\n   1点：储存${1*$<ratio>}%伤害，伤害上限为${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}点。\r\n   2点：储存${2*$<ratio>}%伤害，伤害上限为${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}点。\r\n   3点：储存${3*$<ratio>}%伤害，伤害上限为${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}点。\r\n   4点：储存${4*$<ratio>}%伤害，伤害上限为${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}点。\r\n   5点：储存${5*$<ratio>}%伤害，伤害上限为${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}点。",
+      "name": "死亡印记",
+      "rank": "等级 2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "zhCN"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "zhCN"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "zhCN"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "auraDescription": "死亡的印記，在$d後受到$w1點傷害。",
+      "description": "終結技，對目標進行標記，並根據連擊點數儲存你的攻擊所造成的部分傷害。絞喉和割裂的傷害會以兩倍的速率儲存。在$d後，對目標造成儲存的傷害。可儲存的傷害上限會隨攻擊強度與致命一擊機率提高：\r\n   1點：儲存${1*$<ratio>}%的傷害，${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}點傷害上限\r\n   2點：儲存${2*$<ratio>}%的傷害，${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}點傷害上限\r\n   3點：儲存${3*$<ratio>}%的傷害，${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}點傷害上限\r\n   4點：儲存${4*$<ratio>}%的傷害，${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}點傷害上限\r\n   5點：儲存${5*$<ratio>}%的傷害，${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}點傷害上限",
+      "name": "死亡印記",
+      "rank": "等級2",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "zhTW"
+          },
+          "description": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "zhTW"
+          },
+          "name": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70862",
+            "sourceLocale": "zhTW"
+          },
+          "rank": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70938",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "tooltipData": {
+    "baseLevel": 48,
+    "durationMs": 6000,
+    "effects": [
+      {
+        "apCoefficient": 0,
+        "auraType": 3,
+        "basePoints": 0,
+        "bonusCoefficient": 0,
+        "effectType": 6,
+        "index": 0,
+        "periodMs": 6000,
+        "scalingClass": 0
+      },
+      {
+        "apCoefficient": 0,
+        "auraType": 4,
+        "basePoints": 0,
+        "bonusCoefficient": 0,
+        "effectType": 6,
+        "index": 1,
+        "scalingClass": 0
+      }
+    ],
+    "maxLevel": 0,
+    "procChance": 100,
+    "rangeMax": 20,
+    "rangeMaxByTarget": [
+      20,
+      20
+    ],
+    "rangeMin": 0,
+    "rangeMinByTarget": [
+      0,
+      0
+    ],
+    "spellLevel": 48,
+    "variables": [
+      "$ratio=${12}\r\n$maxAP=${0.04}\r\n$attackP=${((($MW+$mw)-($MWB+$mwb))*7)/$MWS}\r\n$coup=$?s14162[${$14162s1/100+1}][${1}]"
+    ]
+  }
+}

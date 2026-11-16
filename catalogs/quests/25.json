@@ -1,0 +1,831 @@
+{
+  "areaId": 331,
+  "clientObjectiveTargets": [
+    {
+      "id": 3917,
+      "index": 1,
+      "kind": "npc",
+      "type": "monster"
+    }
+  ],
+  "clientObjectiveTargetsMetadata": {
+    "source": "clientCapture",
+    "sourceBuild": "70938",
+    "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
+    "sourceLocale": "enUS"
+  },
+  "locales": {
+    "csCZ": {
+      "description": "Jestli chceš být k užitku, co kdybys něco udělal se situací u Talondeep Path?\n\nDoprava mezi Ashenvale a Stonetalon se zastavila, protože jezero ožilo a útočí na všechno, co se přiblíží... tedy na každého na té cestě. Ještě užitečnější než pořádně praštit tamní vodní elementály by bylo prozkoumat altán na Mystral Lake. Je z něj dobrý výhled na tamní alianční základnu.\n\nTak co, chceš být k užitku?",
+      "eventObjectiveLabel": "Prozkoumej altán u Mystral Lake s výhledem na nedalekou předsunutou hlídku Aliance.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Prozkoumej altán u Mystral Lake s výhledem na nedalekou předsunutou hlídku Aliance.",
+          "type": "event"
+        }
+      ],
+      "summary": "Zlikviduj 12× Befouled Water Elementals u Mystral Lake, přímo na východ od Talondeep Path a jihozápadně od Splintertree Post.\n\nProzkoumej altán u Mystral Lake s výhledem na nedalekou předsunutou hlídku Aliance.\n\nVrať se k Mastoku Wrilehissovi do Splintertree Post v Ashenvale.",
+      "title": "Patová situace ve Stonetalon",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "52d90f9bcf1b6c3f232e104f5727870361a3322f4018ae1a15ac410fa063156d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "eb0eae0bc82015388fe5b3d555e9a2522bd973e805177c3389520d25d89f58ab"
+          },
+          "objectiveLines.2": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.7.3"
+          },
+          "title": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "81e6c111a2162bf13dcd1a9800f52998867394fe01dafad8050df15fa8be75ac"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Hvis du vil gøre nytte, hvorfor gør du så ikke noget ved situationen nær Talondeep Path?\n\nTransporterne mellem Ashenvale og Stonetalon står stille, fordi søen er blevet levende og angriber alt, der kommer tæt på... og det vil sige alle på stien. Endnu mere nyttigt end blot at gøre kål på vandelementarerne ville det være, hvis nogen undersøgte pavillonen på Mystral Lake, den med godt udsyn til Alliancens forpost derovre.\n\nHar du tænkt dig at gøre nytte?",
+      "eventObjectiveLabel": "Undersøg lysthuset ved Mystral Lake med udsigt over den nærliggende Alliance-forpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Undersøg lysthuset ved Mystral Lake med udsigt over den nærliggende Alliance-forpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Dræb 12 Befouled Water Elementals ved Mystral Lake, stik øst for Talondeep Path og sydvest for Splintertree Post.\n\nUndersøg pavillonen på Mystral Lake, hvorfra man kan se den nærliggende forpost tilhørende Alliancen.\n\nVend tilbage til Mastok Wrilehiss ved Splintertree Post i Ashenvale.",
+      "title": "Stilstand i Stonetalon",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "52d90f9bcf1b6c3f232e104f5727870361a3322f4018ae1a15ac410fa063156d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "eb0eae0bc82015388fe5b3d555e9a2522bd973e805177c3389520d25d89f58ab"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5e6a598263f2fcd0acc6f6d11e8482eea0370bf79e8681fa45e78f1ac5672a2c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81e6c111a2162bf13dcd1a9800f52998867394fe01dafad8050df15fa8be75ac"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Wenn Ihr Euch nützlich machen wollt, warum unternehmt Ihr dann nicht etwas wegen der Situation am Steinkrallenpfad?\n\nDer Güterverkehr zwischen Ashenvale und dem Steinkrallengebirge steht still, weil der See zum Leben erwacht ist und alles angreift, was ihm zu nahe kommt... und das bedeutet, jeden auf dem Pfad. Noch weitaus nützlicher als einfach nur die Wasserelementare zu unterjochen, wäre es, wenn jemand den Pavillon auf dem Mystralsee auskundschaften würde... der, von dem aus man einen guten Blick auf den dortigen Außenposten der Allianz hat.\n\nNa, wollt Ihr Euch nützlich machen?",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Erledigt 12 beschmutzte Wasserelementare am Mystralsee östlich vom Steinkrallenpfad und südwestlich vom Splintertreeposten.\n\nErkundet den Pavillon am Mystralsee, der den nahen Außenposten der Allianz überblickt.\n\nKehrt zu Mastok Wrilehiss im Splintertreeposten in Ashenvale zurück.",
+      "title": "Stillstand am Steinkrallenpfad",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "deDE"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "If you want to be useful, then why don't you do something about the situation near Talondeep Path?\n\nThe transports between Ashenvale and Stonetalon are at a standstill because of the lake coming alive and attacking anything that gets close... which means anyone on the path.  What'd be even more useful than just putting the hammer down on the water elementals there is someone scouting the gazebo on Mystral Lake - the one that has a solid view of the Alliance outpost there.\n\nYou up for being useful?",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Dispatch 12 Befouled Water Elementals at Mystral Lake, due east of the Talondeep Path and southwest of Splintertree Post.\n\nScout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.\n\nReturn to Mastok Wrilehiss at Splintertree Post, Ashenvale.",
+      "title": "Stonetalon Standstill",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "Si quieres ser de utilidad, ¿por qué no haces algo para remediar la situación cerca de El Paso del Espolón?\n\nEl transporte entre Vallefresno y El Espolón está paralizado porque el lago está cobrando vida y ataca a cualquiera que se acerque... lo que significa a cualquiera que utilice el paso. Lo que sería aún más útil que poner firmes a los elementales de agua allí sería tener a alguien rastreando la glorieta del Lago Mystral, la que tiene una vista ininterrumpida de la avanzada de la Alianza en ese lugar.\n\n¿Te apetece ser útil?",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Envía 12 elementales de agua podrida al Lago Mystral que esperan al este de El Paso del Espolón y al suroeste del Puesto del Hachazo.\n\nExplora la glorieta que está en el Lago Mystral y que domina la cercana avanzada de la Alianza.\n\nVuelve junto a Mastok Sibilante en el Puesto del Hachazo, Vallefresno.",
+      "title": "Paso del Espolón bloqueado",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esES"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "Si quieres ser de utilidad, ¿por qué no haces algo para solucionar la situación cerca de Paso del Espolón?\n\nLos transportes entre Vallefresno y Espolón no están en funcionamiento porque el lago cobra vida y ataca a todo lo que se acerca... personas incluidas. Lo que sería más práctico que simplemente aporrear a esos elementales de agua sería que alguien explore la glorieta del Lago Mystral, la que tiene una buena vista de la avanzada de la Alianza allí.\n\n¿Quieres hacer algo útil?",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Elimina a 12 elementales de agua podrida en el Lago Mystral, hacia el este del Paso del Espolón y al sudoeste de Puesto del Hachazo.\n\nExplora la glorieta del Lago Mystral por encima de la avanzada de la Alianza cercana.\n\nVuelve con Mastok Bufido en Puesto Hachazo, Vallefresno.",
+      "title": "Paralización en Espolón",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esMX"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Si vous voulez vous rendre utile, pourquoi n'iriez-vous pas essayer de régler le problème près de la Perce des Serres ?\n\nLes convois entre Ashenvale et les Serres-Rocheuses sont au point mort. En effet, c'est comme si le lac avait pris vie et attaquait tout ce qui s'approche à proximité... c'est à dire quiconque s'aventure sur la Perce. Au lieu de simplement massacrer ces élémentaires d'eau, il serait vraiment utile que quelqu'un aille reconnaître le kiosque du lac Mystral ; celui qui offre une si belle vue sur l'avant-poste de l'Alliance à cet endroit.\n\nAlors, voulez-vous vous rendre utile ?",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Tuer 12 Elémentaires d’eau corrompus au lac Mystral, à l’est de la Perce des Serres, et au sud-ouest du poste de Bois-brisé.\n\nFaire une reconnaissance sur le kiosque du lac Mystral ; celui qui a vue sur l’avant-poste de l’Alliance.\n\nRetourner voir Mastok Wrilehiss, au poste de Bois-brisé, dans Ashenvale.",
+      "title": "Impasse aux Serres-Rocheuses",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "frFR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Ako želiš biti koristan, zašto ne učiniš nešto u vezi sa situacijom blizu Talondeep Patha?\n\nPrijevoz između Ashenvalea i Stonetalona stoji jer je jezero oživjelo i napada sve što mu se približi... što znači svakoga na stazi. Još korisnije od samog udaranja vodenih elementala bilo bi da netko izvidi sjenicu na jezeru Mystral, onu s dobrim pogledom na tamošnju ispostavu Saveza.\n\nJesi li spreman biti koristan?",
+      "eventObjectiveLabel": "Izvidi sjenicu na jezeru Mystral koja gleda na obližnju ispostavu Saveza.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Izvidi sjenicu na jezeru Mystral koja gleda na obližnju ispostavu Saveza.",
+          "type": "event"
+        }
+      ],
+      "summary": "Ubij 12 onečišćenih vodenih elementala na jezeru Mystral, točno istočno od Talondeep Patha i jugozapadno od Splintertree Posta.\n\nIzvidi sjenicu na jezeru Mystral koja gleda na obližnju ispostavu Saveza.\n\nVrati se Mastoku Wrilehissu u Splintertree Post u Ashenvaleu.",
+      "title": "Zastoj prema Stonetalonu",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "52d90f9bcf1b6c3f232e104f5727870361a3322f4018ae1a15ac410fa063156d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "eb0eae0bc82015388fe5b3d555e9a2522bd973e805177c3389520d25d89f58ab"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5e6a598263f2fcd0acc6f6d11e8482eea0370bf79e8681fa45e78f1ac5672a2c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81e6c111a2162bf13dcd1a9800f52998867394fe01dafad8050df15fa8be75ac"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Se vuoi renderti utile, perché non fai qualcosa per la situazione vicino al Talondeep Path?\n\nI trasporti tra Ashenvale e Stonetalon sono fermi perché il lago ha preso vita e attacca qualsiasi cosa si avvicini... il che significa chiunque passi sul sentiero. Ancora più utile che dare una bella lezione agli elementali dell'acqua sarebbe trovare qualcuno che esplori il gazebo sul Mystral Lake, quello da cui si vede bene l'avamposto dell'Alleanza.\n\nTe la senti di renderti utile?",
+      "eventObjectiveLabel": "Esplora il gazebo su Mystral Lake che si affaccia sul vicino avamposto dell'Alleanza.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Esplora il gazebo su Mystral Lake che si affaccia sul vicino avamposto dell'Alleanza.",
+          "type": "event"
+        }
+      ],
+      "summary": "Elimina 12 elementali dell'acqua contaminati presso Mystral Lake, a est del Talondeep Path e a sud-ovest di Splintertree Post.\n\nEsplora il gazebo su Mystral Lake che si affaccia sul vicino avamposto dell'Alleanza.\n\nTorna da Mastok Wrilehiss a Splintertree Post, ad Ashenvale.",
+      "title": "Stallo a Stonetalon",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "52d90f9bcf1b6c3f232e104f5727870361a3322f4018ae1a15ac410fa063156d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "eb0eae0bc82015388fe5b3d555e9a2522bd973e805177c3389520d25d89f58ab"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5e6a598263f2fcd0acc6f6d11e8482eea0370bf79e8681fa45e78f1ac5672a2c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81e6c111a2162bf13dcd1a9800f52998867394fe01dafad8050df15fa8be75ac"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "무슨 일이라도 시작해보고 싶은 모양이군?! 그렇다면, 나와 함께 돌발톱 토굴길 근처에서 벌어지고 있는 일에 대한 대책을 세워 보세...\n\n현재 잿빛 골짜기와 돌발톱 산맥을 오가는 운송 행렬이 정체되어 있네. 호수에서 사는 정령들이 지나가는 이들을 무차별적으로 공격하기 때문이지. 흠, 그냥 물의 정령들을 망치로 내려치고 오는 일은 누구나 할 수 있는 일이지... 거기다 미스트랄 호수에 있는 전망대까지 정찰하고 온다면 금상첨화일 게야. 거기서는 얼라이언스 전초기지가 아주 또렷하게 보이거든.\n\n어때? 자네도 호드에 뭔가 도움이 될 만한 일을 하고 싶지 않나?",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "돌발톱 토굴길에서 동쪽으로, 그리고 토막나무 주둔지에서 남서쪽으로 있는 미스트랄 호수에서 타락한 물의 정령 12마리를 처치해야 합니다.\n\n미스트랄 호수에 있는 전망대로 가서 얼라이언스 전초기지를 살펴봐야 합니다.\n\n그런 다음 잿빛 골짜기 토막나무 주둔지에 있는 마스토크 윌리히스에게 돌아가십시오.",
+      "title": "돌발톱 산맥의 정체 해결",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "koKR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "Jeśli chcesz się przydać, to może zrobisz coś z sytuacją w pobliżu Talondeep Path?\n\nTransport między Ashenvale a Stonetalon stanął w miejscu, bo jezioro ożyło i atakuje wszystko, co się zbliży... czyli każdego na ścieżce. Jeszcze bardziej niż rozprawienie się z tamtejszymi żywiołakami wody przydałoby się zbadanie altany nad jeziorem Mystral. Tej, z której dobrze widać tamtejszy posterunek Przymierza.\n\nChcesz się na coś przydać?",
+      "eventObjectiveLabel": "Zbadaj altanę nad jeziorem Mystral, z widokiem na pobliską placówkę Przymierza.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Zbadaj altanę nad jeziorem Mystral, z widokiem na pobliską placówkę Przymierza.",
+          "type": "event"
+        }
+      ],
+      "summary": "Zgładź 12 skażonych żywiołaków wody nad jeziorem Mystral, dokładnie na wschód od Talondeep Path i na południowy zachód od Splintertree Post.\n\nZbadaj altanę nad jeziorem Mystral, z której widać pobliski posterunek Przymierza.\n\nWróć do Mastoka Wrilehissa w Splintertree Post w Ashenvale.",
+      "title": "Zastój w Stonetalon",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "52d90f9bcf1b6c3f232e104f5727870361a3322f4018ae1a15ac410fa063156d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "eb0eae0bc82015388fe5b3d555e9a2522bd973e805177c3389520d25d89f58ab"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5e6a598263f2fcd0acc6f6d11e8482eea0370bf79e8681fa45e78f1ac5672a2c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81e6c111a2162bf13dcd1a9800f52998867394fe01dafad8050df15fa8be75ac"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "Se quer ajudar, então por que não faz alguma coisa sobre a situação para os lados do Túnel Garracava?\n\nOs transportes entre Vale Gris e Torres de Pedra estão parados porque o lago ganhou vida e está atacando qualquer coisa que se aproxime... ou seja, qualquer um no caminho. Ainda mais útil do que simplesmente atacar os elementais da água por lá seria alguém fazer o reconhecimento do gazebo do Lago Mistral... aquele de onde dá pra ver bem o Entreposto da Aliança.\n\nPronto para fazer alguma coisa de útil?",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Liquide 12 Elementais da Água Contaminados no Lago Mistral, a leste do Túnel Garracava e a sudoeste de Posto Machadada.\n\nFaça o reconhecimento do gazebo do Lago Mistral, que fica de frente para o Entreposto da Aliança mais próximo.\n\nFale novamente com Mastok Wrilehiss em Posto Machadada, no Vale Gris.",
+      "title": "Paralisação nas Torres de Pedra",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ptBR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Если хочешь принести пользу, то почему бы тебе не разобраться с ситуацией у Туннеля Когтя?\n\nСообщение между Ясеневым лесом и Каменным Когтем замерло из-за того, что из озера лезет всякая дрянь и нападает на все, что только подойдет поближе... то есть, на все, что на дороге. Но куда лучше простой разборки с элементалями воды будет вот что – разведай-ка беседку на озере Мистраль – ту, с которой открывается отличный вид на соседний форт Альянса.\n\nНу, готов принести пользу?",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Истребите 12 злобных элементалей воды на озере Мистраль, что к востоку от Туннеля Когтя и к юго-западу от заставы Расщепленного Древа.\n\nИсследуйте беседку на озере Мистраль, из которой открывается вид на соседний форт Альянса.\n\nВернитесь к Мастоку Райльшипу на заставу Расщепленного Древа в Ясеневом лесу.",
+      "title": "Остановка у Каменного Когтя",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ruRU"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Om du vill göra nytta, varför gör du inte något åt läget nära Klodjupsstigen?\n\nTransporterna mellan Askdalen och Stenklobergen står stilla eftersom sjön har vaknat till liv och anfaller allt som kommer nära ... vilket betyder alla som går på stigen. Ännu nyttigare än att bara slå ned vattenelementarerna där vore om någon spanade från lusthuset vid Mystralsjön, det som har fri utsikt över Alliansens utpost där.\n\nÄr du redo att göra nytta?",
+      "eventObjectiveLabel": "Spana på lusthuset i Mystralsjön som vetter mot Alliansens närliggande utpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Spana på lusthuset i Mystralsjön som vetter mot Alliansens närliggande utpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "Gör dig av med 12 besudlade vattenelementarer vid Mystralsjön, rakt öster om Klodjupsstigen och sydväst om Splitterträdsposten.\n\nSpana från lusthuset vid Mystralsjön som har utsikt över Alliansens utpost i närheten.\n\nÅtervänd till Mastok Wrilehiss vid Splitterträdsposten i Askdalen.",
+      "title": "Stillastående vid Stenklobergen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRevision": "0.10.1"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "eb0eae0bc82015388fe5b3d555e9a2522bd973e805177c3389520d25d89f58ab"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "5e6a598263f2fcd0acc6f6d11e8482eea0370bf79e8681fa45e78f1ac5672a2c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "81e6c111a2162bf13dcd1a9800f52998867394fe01dafad8050df15fa8be75ac"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Faydalı olmak istiyorsan Talondeep Yolu'ndaki duruma bir çare bulsana?\n\nGölün canlanıp yaklaşan her şeye saldırması yüzünden Ashenvale ile Stonetalon arasındaki nakliyat durma noktasında... yani yoldaki herkes hedef. Oradaki su elemental'lerinin hakkından gelmekten bile daha faydalı olacak şey, Mystral Gölü'ndeki köşkü gözetleyecek biri; oradaki Alliance karakolunu sağlam bir açıyla gören köşkü.\n\nFaydalı olmaya var mısın?",
+      "eventObjectiveLabel": "Mystral Gölü'nde yakındaki Alliance karakoluna bakan kameriye çevresinde keşif yap.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Mystral Gölü'nde yakındaki Alliance karakoluna bakan kameriye çevresinde keşif yap.",
+          "type": "event"
+        }
+      ],
+      "summary": "Talondeep Yolu'nun tam doğusunda ve Splintertree Karakolu'nun güneybatısındaki Mystral Gölü'nde 12 Befouled Water Elemental etkisiz hale getir.\n\nMystral Gölü'ndeki, yakındaki Alliance karakoluna bakan köşkü gözetle.\n\nAshenvale'deki Splintertree Karakolu'nda Mastok Wrilehiss'e dön.",
+      "title": "Stonetalon Tıkanıklığı",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "foreverTR",
+            "sourceLocale": "trTR",
+            "sourceRevision": "0.1.0-beta.1"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "eb0eae0bc82015388fe5b3d555e9a2522bd973e805177c3389520d25d89f58ab"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5e6a598263f2fcd0acc6f6d11e8482eea0370bf79e8681fa45e78f1ac5672a2c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81e6c111a2162bf13dcd1a9800f52998867394fe01dafad8050df15fa8be75ac"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Якщо хочеш бути корисним, то чому б тобі не розібратися із ситуацією біля Пазуродертого тунелю?\n\nПеревезення між Ясенедолом і Каміннопазуристими горами зупинилися, бо озеро ожило й нападає на все, що наближається... тобто на всіх, хто йде шляхом. Та ще корисніше, ніж просто розтрощити тамтешніх елементалів води, було б розвідати альтанку на озері Містраль — ту, з якої добре видно заставу Альянсу.\n\nТо як, готовий бути корисним?",
+      "eventObjectiveLabel": "Розвідайте альтанку на озері Містраль, з якої видно сусідню заставу Альянсу.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Розвідайте альтанку на озері Містраль, з якої видно сусідню заставу Альянсу.",
+          "type": "event"
+        }
+      ],
+      "summary": "Вбийте 12 забруднених елементалів води біля озера Містраль на схід від Пазуродертого тунелю та південний захід від застави при Тріснутому Дереві.\n\nРозвідайте альтанку на озері Містраль, з якої видно заставу Альянсу.\n\nПоверніться до Мастока Хитрошипа на заставу при Тріснутому Дереві, що в Ясенедолі.",
+      "title": "Перешкода в Каміннопазуристих горах",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "52d90f9bcf1b6c3f232e104f5727870361a3322f4018ae1a15ac410fa063156d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "eb0eae0bc82015388fe5b3d555e9a2522bd973e805177c3389520d25d89f58ab"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "5e6a598263f2fcd0acc6f6d11e8482eea0370bf79e8681fa45e78f1ac5672a2c"
+          },
+          "title": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "81e6c111a2162bf13dcd1a9800f52998867394fe01dafad8050df15fa8be75ac"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "如果你想做个有用的{class}，那为什么不帮我们解决石爪山那边的困境呢？\n\n灰谷和石爪山脉之间的交通中断了，因为湖水中的生物突然开始攻击任何过路的旅行者……一个都不放过。你要做的并不仅仅是杀死那些水元素，你还要到密斯特拉湖中的眺望台上去一趟——在那里可以看到联盟前哨站的情况。\n\n你准备好了吗？",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "清除位于碎木哨岗西南和石爪小径正东的密斯特拉湖一带的12个污浊的水元素。\n\n在密斯特拉湖上的眺望台中侦查联盟的前哨站。\n\n返回灰谷慰藉之林的碎木哨岗，向马斯托克·维尔西斯报告。",
+      "title": "石爪山的困境",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhCN"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "如果你想做個有用的{class}，那為什麼不幫我們解決石爪山那邊的困境呢？\n\n梣谷和石爪山脈之間的交通中斷了，因為湖水中的生物突然開始攻擊任何過路的旅行者……一個都不放過。你要做的並不僅僅是殺死那些水元素，你還要到密斯特拉湖中的眺望臺上去一趟——在那裡可以看到聯盟前哨站的情況。\n\n你準備好了嗎？",
+      "eventObjectiveLabel": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",
+          "type": "event"
+        }
+      ],
+      "summary": "清除位於碎木哨崗西南和石爪小徑正東的密斯特拉湖壹帶的12個汙濁的水元素。\n\n在密斯特拉湖上的眺望臺中偵查聯盟的前哨站。\n\n返回灰谷慰藉之林的碎木哨崗，向馬斯托克·維爾西斯報告。",
+      "title": "石爪山的困境",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhTW"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "objectiveTargets": {
+    "npc": [
+      {
+        "id": 3917
+      }
+    ]
+  }
+}

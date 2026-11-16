@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FRS Gallery</title>
+<style>
+  :root {
+    --gold: #f4c85a;
+    --gold-soft: #d9b25a;
+    --text: #e9e1d2;
+    --muted: #a59a88;
+    --teal: #4fe3e6;
+    --frame: rgba(244, 200, 90, 0.28);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: #0b0a09; }
+  body { font-family: Optima, "Optima Nova", "Palatino", serif; color: var(--text); }
+
+  .slide {
+    display: none;
+    position: relative;
+    width: 1920px; height: 1080px;
+    padding: 64px 80px;
+    background:
+      radial-gradient(900px 520px at 8% 6%, rgba(79, 227, 230, 0.10), transparent 70%),
+      radial-gradient(1200px 800px at 70% 60%, rgba(150, 105, 40, 0.20), transparent 70%),
+      linear-gradient(180deg, #1b1611 0%, #120f0c 55%, #0b0a09 100%);
+    overflow: hidden;
+  }
+  .slide.on { display: block; }
+  .slide::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    box-shadow: inset 0 0 220px rgba(0,0,0,0.65);
+  }
+
+  /* Header used on feature slides */
+  .head { display: flex; align-items: center; gap: 28px; }
+  .icon { width: 112px; height: 112px; flex: none; filter: drop-shadow(0 0 22px rgba(79,227,230,0.35)) drop-shadow(0 8px 18px rgba(0,0,0,0.6)); }
+  .kicker { font-size: 22px; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; }
+  .title { font-size: 60px; font-weight: 600; color: var(--gold); line-height: 1.08; text-shadow: 0 2px 0 rgba(0,0,0,0.6); }
+  .sub { font-size: 26px; color: var(--text); opacity: 0.88; margin-top: 8px; max-width: 1500px; line-height: 1.35; }
+
+  .stage { position: absolute; left: 80px; right: 80px; top: 268px; bottom: 56px; display: flex; align-items: center; justify-content: center; gap: 28px; }
+  .col { display: flex; flex-direction: column; gap: 28px; align-items: center; }
+  .shot {
+    display: block; border-radius: 12px;
+    border: 1.5px solid var(--frame);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.75), 0 0 0 6px rgba(0,0,0,0.35);
+  }
+  .float { position: absolute; z-index: 2; box-shadow: 0 30px 70px rgba(0,0,0,0.85), 0 0 0 6px rgba(0,0,0,0.45), 0 0 40px rgba(79,227,230,0.15); }
+
+  .tag {
+    position: absolute; z-index: 3;
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 22px; border-radius: 10px;
+    background: rgba(14, 12, 10, 0.92);
+    border: 1.5px solid rgba(244, 200, 90, 0.55);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.7);
+    font-size: 24px; color: var(--gold);
+  }
+  .tag small { display: block; font-size: 18px; color: var(--text); opacity: 0.85; }
+  .tag .dot { width: 12px; height: 12px; transform: rotate(45deg); background: var(--gold); flex: none; }
+
+  /* Hero */
+  .hero-left { position: absolute; left: 80px; top: 84px; width: 690px; }
+  .hero-brand { display: flex; align-items: center; gap: 26px; }
+  .hero-brand .icon { width: 150px; height: 150px; }
+  .hero-name { font-size: 64px; font-weight: 600; color: var(--gold); line-height: 1.02; }
+  .hero-tag { font-size: 28px; line-height: 1.38; margin-top: 30px; }
+  .label { font-size: 18px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; margin: 34px 0 12px; }
+  .feat { margin-bottom: 14px; }
+  .feat b { display: block; font-size: 28px; color: var(--gold); font-weight: 600; }
+  .feat span { font-size: 20px; opacity: 0.85; }
+  .bul { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; font-size: 21px; }
+  .bul div::before { content: ""; display: inline-block; width: 8px; height: 8px; background: var(--gold); transform: rotate(45deg); margin: 0 12px 3px 2px; }
+  .foot { position: absolute; left: 80px; bottom: 56px; font-size: 21px; color: var(--muted); }
+  .foot b { color: var(--text); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- 1. Hero -->
+<section class="slide" id="s1">
+  <div class="hero-left">
+    <div class="hero-brand">
+      <img class="icon" src="img/logo.png">
+      <div class="hero-name">Forever<br>Rosetta Stone</div>
+    </div>
+    <p class="hero-tag">Read quests, tooltips and places in another language, right beside the original WoW: Forever UI.</p>
+    <div class="label">What gets translated</div>
+    <div class="feat"><b>Quests</b><span>Titles, descriptions, objectives and rewards in a companion panel.</span></div>
+    <div class="feat"><b>Items &amp; comparisons</b><span>Names, stats, effects and equipment comparisons.</span></div>
+    <div class="feat"><b>Spells, talents &amp; buffs</b><span>Descriptions keep the live values from your tooltip.</span></div>
+    <div class="feat"><b>Professions</b><span>Recipes, sections and reagents on hover.</span></div>
+    <div class="label">Also</div>
+    <div class="bul">
+      <div>Zones and subzones</div><div>Mounts and companions</div>
+      <div>Character stats</div><div>Group finder</div>
+      <div>Quest tracker</div><div>Mouse and controller</div>
+    </div>
+  </div>
+  <img class="shot" src="img/06.png" style="position:absolute; left:830px; top:96px; width:1010px;">
+  <img class="shot float" src="img/07.png" style="left:850px; top:566px; width:430px;">
+  <img class="shot float" src="img/18.png" style="left:1320px; top:556px; width:480px;">
+  <div class="tag" style="left:1110px; top:470px;"><span class="dot"></span><div>Side by side<small>The original text stays visible</small></div></div>
+  <div class="foot">17 languages &nbsp;·&nbsp; Made for WoW: Forever &nbsp;·&nbsp; Coverage varies by language</div>
+</section>
+
+<!-- 2. Quest companion -->
+<section class="slide" id="s2">
+  <div class="head">
+    <img class="icon" src="img/logo.png">
+    <div>
+      <div class="kicker">Forever Rosetta Stone</div>
+      <div class="title">Quests in your language</div>
+      <div class="sub">A companion panel beside the quest details: title, description, objectives and rewards.</div>
+    </div>
+  </div>
+  <div class="stage" style="top:250px;">
+    <img class="shot" src="img/06.png" style="width:1760px;">
+  </div>
+  <img class="shot float" src="img/03.png" style="left:110px; bottom:44px; width:640px;">
+</section>
+
+<!-- 3. Quest list & tracker -->
+<section class="slide" id="s3">
+  <div class="head">
+    <img class="icon" src="img/logo.png">
+    <div>
+      <div class="kicker">Forever Rosetta Stone</div>
+      <div class="title">Quest list and tracker</div>
+      <div class="sub">Hover or focus a quest to read it, with live objective progress. Tracked recipes too.</div>
+    </div>
+  </div>
+  <div class="stage">
+    <img class="shot" src="img/04.png" style="height:620px;">
+    <div class="col">
+      <img class="shot" src="img/03.png" style="width:600px;">
+      <img class="shot" src="img/17.png" style="width:600px;">
+    </div>
+  </div>
+</section>
+
+<!-- 4. Items -->
+<section class="slide" id="s4">
+  <div class="head">
+    <img class="icon" src="img/logo.png">
+    <div>
+      <div class="kicker">Forever Rosetta Stone</div>
+      <div class="title">Items and comparisons</div>
+      <div class="sub">Names, stats, use effects and flavor text. Equipment comparisons are translated too.</div>
+    </div>
+  </div>
+  <div class="stage">
+    <img class="shot" src="img/08.png" style="height:760px;">
+    <img class="shot" src="img/07.png" style="height:760px;">
+  </div>
+</section>
+
+<!-- 5. Spells & talents -->
+<section class="slide" id="s5">
+  <div class="head">
+    <img class="icon" src="img/logo.png">
+    <div>
+      <div class="kicker">Forever Rosetta Stone</div>
+      <div class="title">Spells, talents and buffs</div>
+      <div class="sub">Descriptions follow your rank and keep the live numbers from the game's tooltip.</div>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="col">
+      <img class="shot" src="img/19.png" style="height:410px;">
+      <img class="shot" src="img/20.png" style="height:330px;">
+    </div>
+    <div class="col">
+      <img class="shot" src="img/11.png" style="height:410px;">
+      <img class="shot" src="img/01.png" style="height:330px;">
+    </div>
+  </div>
+</section>
+
+<!-- 6. Professions -->
+<section class="slide" id="s6">
+  <div class="head">
+    <img class="icon" src="img/logo.png">
+    <div>
+      <div class="kicker">Forever Rosetta Stone</div>
+      <div class="title">Professions</div>
+      <div class="sub">Skills, recipes, sections and reagents on hover, in every profession window.</div>
+    </div>
+  </div>
+  <div class="stage">
+    <img class="shot" src="img/12.png" style="height:740px;">
+    <img class="shot" src="img/15.png" style="height:740px;">
+  </div>
+  <img class="shot float" src="img/16.png" style="right:96px; bottom:40px; width:400px;">
+</section>
+
+<!-- 7. Character & collections -->
+<section class="slide" id="s7">
+  <div class="head">
+    <img class="icon" src="img/logo.png">
+    <div>
+      <div class="kicker">Forever Rosetta Stone</div>
+      <div class="title">Character and collections</div>
+      <div class="sub">Stat explanations with your real values, plus mount and companion tooltips.</div>
+    </div>
+  </div>
+  <div class="stage">
+    <img class="shot" src="img/09.png" style="height:760px;">
+    <img class="shot" src="img/18.png" style="height:760px;">
+  </div>
+</section>
+
+<!-- 8. World -->
+<section class="slide" id="s8">
+  <div class="head">
+    <img class="icon" src="img/logo.png">
+    <div>
+      <div class="kicker">Forever Rosetta Stone</div>
+      <div class="title">The world around you</div>
+      <div class="sub">Zone and subzone names on the minimap, and the auras around your character.</div>
+    </div>
+  </div>
+  <div class="stage">
+    <img class="shot" src="img/10.png" style="height:480px;">
+    <img class="shot" src="img/02.png" style="height:480px;">
+  </div>
+</section>
+
+<script>
+  const n = new URLSearchParams(location.search).get("s") || "1";
+  document.getElementById("s" + n).classList.add("on");
+</script>
+</body>
+</html>

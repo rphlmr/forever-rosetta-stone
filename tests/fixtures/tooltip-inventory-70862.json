@@ -1,0 +1,44 @@
+{
+  "build": "1.60.1.70862",
+  "commit": "9dc84f0d3bbae1768ac3405b3716000bd93eda06",
+  "repository": "https://github.com/Gethe/wow-ui-source",
+  "sources": {
+    "enum": "Interface/AddOns/Blizzard_APIDocumentationGenerated/TooltipInfoSharedDocumentation.lua",
+    "rules": "Interface/AddOns/Blizzard_SharedXMLGame/Tooltip/TooltipDataRules.lua",
+    "ui": "Interface/AddOns/Blizzard_GameTooltip/Mainline/GameTooltip.lua"
+  },
+  "line_types": [
+    "None", "Blank", "UnitName", "GemSocket", "AzeriteEssenceSlot", "AzeriteEssencePower", "LearnableSpell",
+    "UnitThreat", "QuestObjective", "AzeriteItemPowerDescription", "RuneforgeLegendaryPowerDescription", "SellPrice",
+    "ProfessionCraftingQuality", "SpellName", "CurrencyTotal", "ItemEnchantmentPermanent", "UnitOwner", "QuestTitle",
+    "QuestPlayer", "NestedBlock", "ItemBinding", "EquipSlot", "ItemName", "Separator", "ToyName", "ToyText",
+    "ToyEffect", "ToyDuration", "ToyDescription", "ToySource", "GemSocketEnchantment", "ItemLevel", "ItemUpgradeLevel",
+    "SpellPassive", "SpellDescription", "ItemQuality", "TradeTimeRemaining", "FlavorText", "ItemSpellTriggerLearn",
+    "LearnTransmogSet", "LearnTransmogIllusion", "ErrorLine", "DisabledLine", "UsageRequirement", "ItemSpellTriggerOnUse",
+    "ItemSpellTriggerOnEquip", "ItemSpellTriggerOnProc", "UnitLevel", "UnitType", "UnitDead", "UnitCriteriaProgress",
+    "AuraCaster"
+  ],
+  "direct_globals": [
+    {"key": "REPAIR_COST", "source": "rules", "line": 155, "family": "repair"},
+    {"key": "SELL_PRICE", "source": "ui", "line": 327, "family": "price"},
+    {"key": "MINIMUM", "source": "ui", "line": 331, "family": "price-range"},
+    {"key": "MAXIMUM", "source": "ui", "line": 332, "family": "price-range"},
+    {"key": "RETRIEVING_DATA", "source": "ui", "line": 214, "family": "loading"},
+    {"key": "MAP_TOOLTIP_TIME_LEFT", "source": "ui", "line": 232, "family": "quest-timer"},
+    {"key": "ACCOUNT_QUEST_LABEL", "source": "ui", "line": 669, "family": "quest"},
+    {"key": "AVAILABLE_FOLLOWER_QUEST", "source": "ui", "line": 694, "family": "quest"},
+    {"key": "GRANTS_FOLLOWER_XP", "source": "ui", "line": 695, "family": "quest"},
+    {"key": "AVAILABLE_QUEST", "source": "ui", "line": 697, "family": "quest"},
+    {"key": "QUEST_DASH", "source": "ui", "line": 705, "family": "quest", "text_kind": "structural"}
+  ],
+  "dynamic_families": [
+    {"name": "repair cost", "evidence": "rules:152-157", "status": "fixture-tested", "note": "Appends tooltipData.repairCost only in repair mode; all 19 target labels tested. In-game appearance unverified."},
+    {"name": "minimum and maximum sale prices", "evidence": "rules:143-149; ui:324-333", "status": "fixture-tested", "note": "Renders lineData.price and positive maxPrice as separate minimum/maximum rows; all 19 targets tested. In-game appearance unverified."},
+    {"name": "item enchantments", "evidence": "enum:ItemEnchantmentPermanent; enum:GemSocketEnchantment", "status": "unverified", "note": "Enum presence does not establish localized instance-enchantment coverage."},
+    {"name": "appearance and transmog", "evidence": "enum:LearnTransmogSet; enum:LearnTransmogIllusion", "status": "partial", "note": "Known appearance labels are mapped; the enum and labels do not establish complete appearance coverage."},
+    {"name": "learnable and known spells", "evidence": "enum:LearnableSpell; enum:ItemSpellTriggerLearn; enum:UsageRequirement", "status": "unverified", "note": "Known labels alone do not establish live recipe and spell coverage."},
+    {"name": "item and spell cooldowns", "evidence": "enum:ItemSpellTriggerOnUse; enum:SpellDescription", "status": "partial", "note": "Template handling is conditional on available source and target formats and live values."},
+    {"name": "quest objectives and rewards", "evidence": "enum:QuestObjective; ui:182-223; ui:705-723", "status": "partial", "note": "Client also appends quest reward and objective rows outside ordinary item line types."},
+    {"name": "textures and nested content", "evidence": "rules:18-33; rules:102-113; rules:192-202; enum:NestedBlock", "status": "unverified", "note": "Client can append textures and nested content; row text alone is not a visual inventory."}
+  ]
+}

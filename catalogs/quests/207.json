@@ -1,0 +1,925 @@
+{
+  "areaId": 33,
+  "clientObjectiveTargets": [
+    {
+      "id": 2005,
+      "kind": "item"
+    },
+    {
+      "id": 2006,
+      "kind": "item"
+    },
+    {
+      "id": 2007,
+      "kind": "item"
+    },
+    {
+      "id": 2008,
+      "kind": "item"
+    }
+  ],
+  "clientObjectiveTargetsMetadata": {
+    "source": "clientCapture",
+    "sourceBuild": "70938",
+    "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
+    "sourceLocale": "enUS"
+  },
+  "locales": {
+    "csCZ": {
+      "description": "Plukovník Kurzen býval velký, ušlechtilý muž - musím zjistit, co způsobilo jeho pád do zvrhlosti! Může být pod vlivem trolí magie. Abych to potvrdil, musím prostudovat některé jejich legendy.\n\nV trolích ruinách Stranglethornu jsou ukryty čtyři desky! Musím vidět, co je na nich napsáno! Opiš jejich znaky a přines mi opisy zpět.\n\nPrvní deska je v ruinách Bal'lal, druhá je na útesu Vile a třetí a čtvrtá jsou v ruinách Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Druhá trolí legenda: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Čtvrtá trolí legenda: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Najdi 4 tabulky a dones jejich legendy zpět bratru Nimetzovi.",
+      "title": "Kurzenovo tajemství",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.7.3"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "31825d1ca6bad5fdc02b71891f12c6e809197b6812353a1de8072de820651d40"
+          },
+          "title": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "18a3115696e0408be94018fd388941f0143ce0339704812d9061ec1f2c3eaecb"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Colonel Kurzen var engang en stor, ædel mand; jeg må finde ud af, hvad der fik ham til at falde i fordærv! Han kan være under indflydelse af troldemagi. For at bekræfte dette må jeg studere nogle af deres legender.\n\nDer er 4 tavler skjult i Stranglethorns trolderuiner. Jeg må se, hvad der står skrevet på disse tavler! Afskriv deres tegn, og bring afskrifterne tilbage til mig.\n\nDen første tavle er i Bal'lal Ruins, den anden er i Vile Reef, og den tredje og fjerde er i Ruins of Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Den anden troldelegende: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Den fjerde troldelegende: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Find de 4 tavler, og bring deres legender tilbage til broder Nimetz.",
+      "title": "Kurzens mysterium",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "28cb478c21ea46de52ea6994a23d8e59c33feaa8ae8e69e67e2de960925cc4e0"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "31825d1ca6bad5fdc02b71891f12c6e809197b6812353a1de8072de820651d40"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "18a3115696e0408be94018fd388941f0143ce0339704812d9061ec1f2c3eaecb"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Colonel Kurzen war einst ein großer, ein edler Mann - ich muss herausfinden, wie es zu seiner Entartung kommen konnte! Es ist möglich, dass er dem Einfluss von Trollmagie unterliegt. Um diesen Verdacht zu bestätigen, muss ich einige ihrer Legenden studieren.\n\nIn den Trollruinen des Schlingendorntals liegen 4 Schrifttafeln versteckt. Ich muss wissen, was auf diesen Tafeln geschrieben steht! Schreibt die Zeichen ab, die Ihr auf den Tafeln findet, und bringt mir die Abschriften.\n\nDie erste Schrifttafel befindet sich in den Ruinen von Bal'lal, die zweite im finsteren Riff und die dritte und vierte Schrifttafel findet Ihr in den Ruinen von Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Die zweite Troll-Legende: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Die vierte Troll-Legende: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Findet die 4 Schrifttafeln und bringt ihre Legenden zu Bruder Nimetz zurück.",
+      "title": "Das Geheimnis um Kurzen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "deDE"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "deDE"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "deDE"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "Colonel Kurzen was once a great, noble man - I must find what caused his fall into depravity!  He may be under the sway of troll magic.  To confirm this, I must study some of their legends.\n\nThere are 4 tablets hidden within the troll ruins of Stranglethorn.  I must see what is written on these tablets!  Transcribe their markings and bring the transcriptions back to me.\n\nThe first tablet is in the Bal'lal Ruins, the second is in the Vile Reef, and the third and fourth are in the Ruins of Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "The Second Troll Legend: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "The Fourth Troll Legend: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Find the 4 tablets and bring their legends back to Brother Nimetz.",
+      "title": "Kurzen's Mystery",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS",
+            "sourceRevision": "a444a6418113ae0fce5d30c897674132e756ba1d"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "El coronel Kurzen fue un gran hombre de gran nobleza, ¡debo descubrir qué hizo que cayese en la depravación! Quizás está bajo el influjo de alguna magia trol. Para confirmarlo, debo estudiar algunas de sus leyendas.\n\nHay 4 tablillas escondidas en las ruinas trol de Tuercespina. ¡Necesito leer esas tablillas! Transcribe las tablillas y tráeme las transcripciones.\n\nLa primera tablilla está en las Ruinas de Bal'lal, la segunda en El Arrecife Mortal, y la tercera y cuarta en las Ruinas de Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "La segunda leyenda trol: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "La cuarta leyenda trol: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Encuentra las 4 tablillas y lleva las leyendas al hermano Nimetz.",
+      "title": "El misterio de Kurzen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "esES"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "esES"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esES"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "El coronel Kurzen fue un gran hombre de gran nobleza, ¡debo descubrir qué hizo que cayese en la depravación! Quizás está bajo el influjo de alguna magia trol. Para confirmarlo, debo estudiar algunas de sus leyendas.\n\nHay 4 tablillas escondidas en las ruinas trol de Tuercespina. ¡Necesito leer esas tablillas! Transcribe las tablillas y tráeme las transcripciones.\n\nLa primera tablilla está en las Ruinas de Bal'lal, la segunda en El Arrecife Mortal, y la tercera y cuarta en las Ruinas de Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "La segunda leyenda trol: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "La cuarta leyenda trol: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Encuentra las 4 tablillas y lleva las leyendas al hermano Nimetz.",
+      "title": "El misterio de Kurzen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "esMX"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "esMX"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esMX"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Le colonel Kurzen était jadis un homme grand et noble. Je dois découvrir la cause de sa déchéance ! Il est peut-être sous l'emprise de la magie des trolls. Pour étayer cette hypothèse, il me faut étudier certaines de leurs légendes. \n\nQuatre tablettes sont cachées dans les ruines des trolls de Strangleronce. Je dois en prendre connaissance ! Recopiez-les et ramenez vos transcriptions.\n\nLa première tablette est dans les Ruines de Bal'lal, la deuxième dans le Récif infâme, et vous trouverez les troisième et quatrième dans les ruines de Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "La deuxième légende des trolls: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "La quatrième légende des trolls: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Trouver les 4 tablettes et rapporter ces légendes au frère Nimetz.",
+      "title": "Le mystère de Kurzen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "frFR"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "frFR"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "frFR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Pukovnik Kurzen nekoć je bio velik i plemenit čovjek. Moram otkriti što je uzrokovalo njegov pad u izopačenost! Možda je pod utjecajem trolske magije. Da to potvrdim, moram proučiti neke njihove legende.\n\nČetiri ploče skrivene su u trolskim ruševinama Stranglethorna. Moram vidjeti što je napisano na njima! Prepiši njihove oznake i donesi mi prijepise.\n\nPrva ploča nalazi se u ruševinama Bal'lal, druga u Vile Reefu, a treća i četvrta u ruševinama Zul'Kunde.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Druga trolska legenda: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Četvrta trolska legenda: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Pronađi 4 ploče i vrati njihove legende bratu Nimetzu.",
+      "title": "Kurzenova tajna",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "28cb478c21ea46de52ea6994a23d8e59c33feaa8ae8e69e67e2de960925cc4e0"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "31825d1ca6bad5fdc02b71891f12c6e809197b6812353a1de8072de820651d40"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "18a3115696e0408be94018fd388941f0143ce0339704812d9061ec1f2c3eaecb"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Un tempo il colonnello Kurzen era un uomo grande e nobile. Devo scoprire cosa l'ha fatto precipitare nella depravazione! Potrebbe essere sotto l'influsso della magia dei troll. Per averne conferma devo studiare alcune delle loro leggende.\n\nNelle rovine dei troll di Stranglethorn sono nascoste 4 tavolette. Devo vedere cosa vi è scritto! Trascrivi le iscrizioni e portami le trascrizioni.\n\nLa prima tavoletta si trova nelle Rovine di Bal'lal, la seconda nel Vile Reef, la terza e la quarta nelle Rovine di Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "La seconda leggenda dei troll: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "La quarta leggenda dei troll: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Trova le 4 tavolette e riporta le loro leggende a fratello Nimetz.",
+      "title": "Il mistero di Kurzen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "28cb478c21ea46de52ea6994a23d8e59c33feaa8ae8e69e67e2de960925cc4e0"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "31825d1ca6bad5fdc02b71891f12c6e809197b6812353a1de8072de820651d40"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "18a3115696e0408be94018fd388941f0143ce0339704812d9061ec1f2c3eaecb"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "대령 쿠르젠은 한때 훌륭하고 고귀한 존재였습니다. 그랬던 그가 왜 타락해 버렸는지 반드시 알아내야 합니다! 어쩌면 트롤의 마법에 조종 당하고 있는지도 모르겠습니다. 그걸 확인하려면 그들의 전설에 대해 연구해 볼 필요가 있습이다.\n\n가시덤불 골짜기의 트롤 폐허에는 서판이 네개 숨겨져 있습니다. 그 서판에 쓰인 내용을 확인해야 하니 서판의 내용을 필사하여 가져오시기 바랍니다.\n\n첫 번째 서판은 발랄 폐허에 있고, 두 번째는 썩은내 산호초에 그리고 세 번째와 네 번째 서판은 줄쿤다의 폐허에 있습니다.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "트롤의 전설 2부: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "트롤의 전설 4부: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "4개의 서판을 찾아 거기에 기록된 전설을 수사 니메츠에게 가져가야 합니다.",
+      "title": "쿠르젠의 비밀",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "koKR"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "koKR"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "koKR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "Pułkownik Kurzen był kiedyś wielkim i szlachetnym człowiekiem. Muszę odkryć, co doprowadziło go do upadku! Może znajdować się pod wpływem magii trolli. Aby to potwierdzić, muszę przestudiować niektóre z ich legend.\n\nW ruinach trolli w Stranglethorn ukryte są 4 tablice. Muszę poznać zapisane na nich słowa! Przepisz ich inskrypcje i przynieś mi odpisy.\n\nPierwsza tablica znajduje się w ruinach Bal'lal, druga na Vile Reef, a trzecia i czwarta w ruinach Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Druga legenda trolli: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Czwarta legenda trolli: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Znajdź 4 tablice i przynieś zapisane na nich legendy bratu Nimetzowi.",
+      "title": "Tajemnica Kurzena",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "28cb478c21ea46de52ea6994a23d8e59c33feaa8ae8e69e67e2de960925cc4e0"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "31825d1ca6bad5fdc02b71891f12c6e809197b6812353a1de8072de820651d40"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "18a3115696e0408be94018fd388941f0143ce0339704812d9061ec1f2c3eaecb"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "O Coronel Kurzen era um grande e nobre homem, preciso descobrir o que o levou à depravação! Talvez ele esteja sob o domínio de magia trólica. Para confirmar isso, preciso estudar algumas lendas.\n\nExistem quatro tabuletas escondidas nas ruínas trólicas da Selva do Espinhaço. Preciso ver o que está escrito nessas tabuletas! Transcreva as marcas e traga as transcrições para mim.\n\nA primeira tabuleta está nas Ruínas de Bal'lal, a segunda, no Arrecife Torpe, a terceira e a quarta estão nas Ruínas de Zul'Kanda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "A Segunda Lenda Troll: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "A Quarta Lenda Troll: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Encontre as 4 tabuletas e leve as lendas para o Irmão Nimetz.",
+      "title": "O mistério de Kurzen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "ptBR"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "ptBR"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ptBR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Когда-то полковник Курцен был великим и благородным человеком – я хочу выяснить, что заставило его свернуть с пути истинного! Должно быть, он находится под воздействием магии троллей. Надо изучить древние легенды, чтобы убедиться в этом.\n\nВ руинах тролльских городов в Тернистой долине спрятаны 4 таблички. Мне необходимо их добыть и прочесть! Перерисуй с них все отметки и принеси рисунки мне.\n\nПервая табличка находится в Руинах Бал'лал, вторая – на Коварном рифе, а третья и четвертая – в Руинах Зул'Кунды.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Второе предание троллей: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Четвертое предание троллей: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Найдите 4 таблички, перерисуйте их и принесите их брату Нимезу.",
+      "title": "Тайна Курцена",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "ruRU"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "ruRU"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ruRU"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Överste Kurzen var en gång en stor och ädel man. Jag måste veta vad som drev honom till fördärv! Han kanske styrs av trollmagi. För att bekräfta det måste jag studera deras legender.\n\nDet finns 4 tavlor gömda i Stranglethorns trollruiner. Jag måste se vad som står! Skriv av tecknen och ge mig avskrifterna.\n\nDen första finns i Bal'lal Ruins, den andra i Vile Reef och den tredje och fjärde i Ruins of Zul'Kunda.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Den andra trollsägnen: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Den fjärde trollsägnen: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Hitta de 4 tavlorna och ta deras legender till broder Nimetz.",
+      "title": "Kurzens mysterium",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "28cb478c21ea46de52ea6994a23d8e59c33feaa8ae8e69e67e2de960925cc4e0"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRevision": "0.10.1"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRevision": "0.10.1"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "31825d1ca6bad5fdc02b71891f12c6e809197b6812353a1de8072de820651d40"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "18a3115696e0408be94018fd388941f0143ce0339704812d9061ec1f2c3eaecb"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Albay Kurzen bir zamanlar büyük ve asil biriydi. Onu ahlaksızlığa sürükleyenin ne olduğunu bulmalıyım! Troll büyüsünün etkisi altında olabilir. Bunu doğrulamak için onların efsanelerinden bazılarını incelemeliyim.\n\nStranglethorn'un troll harabelerinde gizlenmiş 4 tablet var. Bu tabletlerde neler yazdığını görmeliyim! Üzerlerindeki işaretleri kopyala ve kopyaları bana getir.\n\nİlk tablet Bal'lal Harabeleri'nde, ikincisi Vile Reef'te, üçüncü ve dördüncüyse Zul'Kunda Harabeleri'nde.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "İkinci Trol Efsanesi: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Dördüncü Trol Efsanesi: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "4 tableti bul ve üzerlerindeki efsaneleri Birader Nimetz'e getir.",
+      "title": "Kurzen'in Gizemi",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "28cb478c21ea46de52ea6994a23d8e59c33feaa8ae8e69e67e2de960925cc4e0"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "31825d1ca6bad5fdc02b71891f12c6e809197b6812353a1de8072de820651d40"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "18a3115696e0408be94018fd388941f0143ce0339704812d9061ec1f2c3eaecb"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Полковник Курцен колись був великою, благородною людиною — я повинен з'ясувати, що змусило його звернути з праведного шляху! Можливо, він перебуває під впливом магії тролів. Щоб підтвердити цю теорію, мені потрібно вивчити кілька їхніх легенд.\n\nУ руїнах Тернистої долини заховано 4 скрижалі. Я маю побачити, що написано на них! Перепиши їхні легенди й принеси їх мені.\n\nПерша скрижаль знаходиться в руїнах Бал'лал, друга — на Підступному рифі, а третя і четверта — в руїнах Зул'Кунда.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Друга легенда тролів: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "Четверта легенда тролів: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Знайдіть 4 скрижалі та принесіть легенди брату Німіцу.",
+      "title": "Таємниця Курцена",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "28cb478c21ea46de52ea6994a23d8e59c33feaa8ae8e69e67e2de960925cc4e0"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "31825d1ca6bad5fdc02b71891f12c6e809197b6812353a1de8072de820651d40"
+          },
+          "title": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "18a3115696e0408be94018fd388941f0143ce0339704812d9061ec1f2c3eaecb"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "库尔森上校曾是个伟大而高贵的人，我必须得找到让他堕落至此的原因！他一定是被巨魔的魔法给控制了。要想搞清楚这一点的话，我们就得先研究一下巨魔的传说故事。\n\n据说荆棘谷中的巨魔遗迹中隐藏着四块石板，我必须得看看这些石板上到底记述了些什么东西！你去给我拓一份这些石板上的文字来，把拓片都交给我。\n\n第一块石板在巴拉尔废墟里，第二块石板在暗礁海的海底，第三块和第四块应该都在祖昆达废墟里。",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "巨魔传说第二章: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "巨魔传说第四章: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "找到4块石板并将上面的内容带回去交给尼麦兹修士。",
+      "title": "库尔森的秘密",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "zhCN"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "zhCN"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhCN"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "庫爾森上校曾是個偉大而高貴的人，我必須得找到讓他墮落至此的原因！他一定是被食人妖的魔法給控制了。要想搞清楚這一點的話，我們就得先研究一下食人妖的傳說故事。\n\n據說荊棘谷中的食人妖遺跡中隱藏著四塊石板，我必須得看看這些石板上到底記述了些什麼東西！你去給我拓一份這些石板上的文字來，把拓片都交給我。\n\n第一塊石板在巴拉爾廢墟裡，第二塊石板在暗礁海的海底，第三塊和第四塊應該都在祖昆達廢墟裡。",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "食人妖傳說第二章: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 4,
+          "text": "食人妖傳說第四章: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "找到4塊石板並將上面的內容帶回去交給尼麥茲修士。",
+      "title": "庫爾森的秘密",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "zhTW"
+          },
+          "objectiveLines.4": {
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "zhTW"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhTW"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "objectiveTargets": {
+    "item": [
+      {
+        "id": 2005
+      },
+      {
+        "id": 2006
+      },
+      {
+        "id": 2007
+      },
+      {
+        "id": 2008
+      }
+    ]
+  }
+}

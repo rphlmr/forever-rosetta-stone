@@ -1,0 +1,32 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <Frame name="ForeverRosettaStoneQuestPanelTemplate" inherits="PortraitFrameTemplateNoCloseButton" virtual="true">
+        <KeyValues>
+            <KeyValue key="layoutType" value="ButtonFrameTemplateNoPortrait" type="string"/>
+        </KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneSettingsPreviewTemplate" virtual="true">
+        <Size y="260"/>
+        <Scripts>
+            <OnShow>
+                ForeverRosettaStone:AttachSettingsPreview(self);
+            </OnShow>
+        </Scripts>
+    </Frame>
+    <!-- Radio list height: 4 top + 22 per row + 4; the language list fits 18 choices in 2 columns. -->
+    <Frame name="ForeverRosettaStoneSettingsLanguageListTemplate" virtual="true">
+        <Size y="206"/>
+        <Scripts>
+            <OnShow>
+                ForeverRosettaStone:AttachRadioList(self, "locale");
+            </OnShow>
+        </Scripts>
+    </Frame>
+    <Frame name="ForeverRosettaStoneSettingsPositionListTemplate" virtual="true">
+        <Size y="30"/>
+        <Scripts>
+            <OnShow>
+                ForeverRosettaStone:AttachRadioList(self, "npcTooltipPosition");
+            </OnShow>
+        </Scripts>
+    </Frame>
+</Ui>

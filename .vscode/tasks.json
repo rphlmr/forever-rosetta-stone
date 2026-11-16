@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Catalogs: check format",
+      "type": "process",
+      "command": "python3",
+      "args": ["tools/catalogs/format-catalogs.py", "--check"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Catalogs: format current file",
+      "type": "process",
+      "command": "python3",
+      "args": ["tools/catalogs/format-catalogs.py", "--write", "${file}"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"""WoWLang community datasource."""

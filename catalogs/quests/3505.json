@@ -1,0 +1,629 @@
+{
+  "areaId": 16,
+  "clientObjectiveTargets": [
+    {
+      "id": 6199,
+      "kind": "npc",
+      "type": "monster"
+    },
+    {
+      "id": 6198,
+      "kind": "npc",
+      "type": "monster"
+    }
+  ],
+  "clientObjectiveTargetsMetadata": {
+    "source": "clientCapture",
+    "sourceBuild": "70938",
+    "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
+    "sourceLocale": "enUS"
+  },
+  "locales": {
+    "csCZ": {
+      "description": "Tenhle tábor míval tucet bojovníků, {name}. Teď jsou všichni mrtví.\n\nTa mágyně Rimtori je všechny pozabíjela. Hrála na Belgroma jako na loutnu. Tvrdila, že Azshara skrývá veliké bohatství... mocné předměty.\n\nBelgrom nás poslal, abychom ji chránili, a říkal, že dostaneme odměnu. No, podívej, kdo byl za hlupáka: zmasakrovali nás.\n\nKrvaví elfové táboří podél jižních útesů na severním poloostrově. Zabij každého, koho uvidíš. Pak najdi zdroj Rimtoriny moci, abychom mohli vykonat pomstu.",
+      "eventObjectiveLabel": "Najdi tábor Magus Rimtori",
+      "summary": "Zabij $1oa obnovitelů krvavých elfů a $2oa zeměměřičů krvavých elfů, pak najdi zdroj Rimtořiny moci.",
+      "title": "Zrada",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "c551432bc9471934e67de52b50373903d98bb1f1ebe6a2c2d8d0aaa306d73016"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "2286fcb43a74ce4439821d995df62d23676b16ff68f361ee013d7ea412fe0cf3"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fa9ed05eaf75ad6d454db989951f2a243b6efb5fcaf4bfa4c9132dd4205b6e67"
+          },
+          "title": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "48f6a44aa1b74f18f4d2cbdc6fc904aa7a6e43b034b6eb29677903381f7c9d8a"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Denne lejr plejede at have et dusin krigere, {name}. Nu er de alle døde.\r\n\r\nDen magiker, Rimtori, har dræbt dem alle. Hun spillede på Belgrom som på en lut og påstod, at Azshara rummede store rigdomme ... magtfulde genstande.\r\n\r\nBelgrom sendte os for at beskytte hende og sagde, at vi ville blive belønnet. Nå, se, hvem der er tåben; vi blev slagtet.\r\n\r\nBlodelverne har slået lejr langs de sydlige skrænter på den nordlige halvø. Dræb hver eneste, du ser. Find så kilden til Rimtoris magt, så vi kan få vores hævn.",
+      "eventObjectiveLabel": "Find Magus Rimtoris lejr",
+      "summary": "Dræb $1oa blodelver-genvindere og $2oa blodelver-landmålere, og find derefter kilden til Rimtoris magt.",
+      "title": "Forrådt",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "c551432bc9471934e67de52b50373903d98bb1f1ebe6a2c2d8d0aaa306d73016"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "2286fcb43a74ce4439821d995df62d23676b16ff68f361ee013d7ea412fe0cf3"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fa9ed05eaf75ad6d454db989951f2a243b6efb5fcaf4bfa4c9132dd4205b6e67"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "48f6a44aa1b74f18f4d2cbdc6fc904aa7a6e43b034b6eb29677903381f7c9d8a"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Dieses Lager bestand einst aus einem dutzend Kriegern, {name}. Jetzt sind sie alle tot.\r\n\r\nDiese Magierin, Rimtori, hat sie alle getötet. Sie hat Belgrom nach Strich und Faden manipuliert. Hat behauptet, Azshara berge reiche Schätze... mächtige Artefakte.\r\n\r\nBelgrom hat uns entsandt, sie zu schützen, und gesagt, dass wir dafür belohnt werden. Und was war unsere tolle Belohnung...? Wir wurden abgeschlachtet.\r\n\r\nDie Blutelfen lagern entlang der südlichen Klippen der nördlichen Halbinsel. Tötet jeden von ihnen, dem Ihr begegnet. Findet anschließend den Quell von Rimtoris Macht, damit wir Rache üben können.",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "Verraten",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "This camp used to be a dozen warriors strong, {name}. Now, they are all dead.\r\n\r\nThat mage, Rimtori, has slain them all. She played Belgrom like a lute; claiming Azshara would hold great riches... powerful items.\r\n\r\nBelgrom sent us to protect her, and said we would be rewarded. Well, look who's the fool--we were slaughtered.\r\n\r\nThe blood elves are camped along the southern bluffs on the northern peninsula. Kill every one you see. Then, find the source of Rimtori's power so we can exact our revenge.",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "Betrayed",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "Este campamento contaba con doce guerreros admirables, {name}. Ahora están todos muertos.\r\n\r\nLos mató esa maga, Rimtori. Manipuló a Belgrom, le dijo que en Azshara había grandes riquezas y poderosos artefactos...\r\n\r\nBelgrom nos ordenó acompañarla y protegerla, y nos dijo que a cambio nos recompensarían. Al final, lo único que recibimos fue la muerte.\r\n\r\nLos elfos de sangre han acampado en los riscos meridionales de la península norteña. Mata a todos los que te encuentres. Después, localiza la fuente del poder de Rimtori para ejecutar nuestra venganza.",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "Traición",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "Solía haber una docena de soldados en este campamento, {name}. Ahora están todos muertos.\r\n\r\nEsa maga, Rimtori, los ha matado a todos. Dijo que Azshara escondería grandes riquezas y... objetos poderosos.\r\n\r\nBelgrom nos envió para protegerla y nos dijo que seríamos recompensados. Hablando de engaños... solo conseguimos que nos masacraran.\r\n\r\nLos elfos de sangre están acampados en los riscos del sur de la península del norte. Mátalos a todos. Luego, encuentra la fuente del poder de Rimtori para que podamos vengarnos.",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "Traición",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Ce camp comptait à l’origine une douzaine de membres, {name}. Aujourd’hui, il ne reste personne.\r\n\r\nLa mage Rimtori les a tués jusqu’au dernier. Elle s’est jouée de Belgrom en prétendant qu’Azshara contenait des trésors inestimables… des artéfacts puissants.\r\n\r\nBelgrum nous a envoyés la protéger en promettant qu’il y aurait une récompense. Nous avons marché droit dans le panneau, et voilà le résultat : un massacre.\r\n\r\nLes Elfes de sang ont leur camp le long des falaises au sud de la péninsule septentrionale. Tuez tous ceux que vous verrez. Ensuite, trouvez la source du pouvoir de Rimtori, afin que nous puissions nous venger.",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "Trahison",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Ovaj je logor nekoć imao dvanaest ratnika, {name}. Sada su svi mrtvi.\n\nTa maginja Rimtori sve ih je pobila. Svirala je Belgromu kao na lutnji, tvrdeći da Azshara krije veliko bogatstvo... moćne predmete.\n\nBelgrom nas je poslao da je zaštitimo i rekao da ćemo biti nagrađeni. Pa, pogledaj tko je ispao budala, poklani smo.\n\nKrvni vilenjaci utaboreni su duž južnih litica na sjevernom poluotoku. Ubij svakoga koga vidiš. Zatim pronađi izvor Rimtorine moći kako bismo se mogli osvetiti.",
+      "eventObjectiveLabel": "Pronađi logor maga Rimtorija",
+      "summary": "Ubij $1oa povratnika krvavih vilenjaka i $2oa zemljomjera krvavih vilenjaka, a zatim pronađi izvor Rimtorine moći.",
+      "title": "Izdani",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "c551432bc9471934e67de52b50373903d98bb1f1ebe6a2c2d8d0aaa306d73016"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "2286fcb43a74ce4439821d995df62d23676b16ff68f361ee013d7ea412fe0cf3"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fa9ed05eaf75ad6d454db989951f2a243b6efb5fcaf4bfa4c9132dd4205b6e67"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "48f6a44aa1b74f18f4d2cbdc6fc904aa7a6e43b034b6eb29677903381f7c9d8a"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Questo campo contava una dozzina di guerrieri, {name}. Ora sono tutti morti.\n\nQuella maga, Rimtori, li ha uccisi tutti. Ha raggirato Belgrom come voleva, sostenendo che Azshara custodisse grandi ricchezze... oggetti potenti.\n\nBelgrom ci ha mandati a proteggerla, dicendo che saremmo stati ricompensati. Be', guarda chi è stato lo sciocco: ci hanno massacrati.\n\nGli elfi del sangue sono accampati lungo le alture meridionali della penisola settentrionale. Uccidi tutti quelli che vedi. Poi trova la fonte del potere di Rimtori, così potremo vendicarci.",
+      "eventObjectiveLabel": "Trova l'accampamento della maga Rimtori",
+      "summary": "Uccidi $1oa recuperatori e $2oa topografi elfi del sangue, poi trova la fonte del potere di Rimtori.",
+      "title": "Tradimento",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "c551432bc9471934e67de52b50373903d98bb1f1ebe6a2c2d8d0aaa306d73016"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "2286fcb43a74ce4439821d995df62d23676b16ff68f361ee013d7ea412fe0cf3"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fa9ed05eaf75ad6d454db989951f2a243b6efb5fcaf4bfa4c9132dd4205b6e67"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "48f6a44aa1b74f18f4d2cbdc6fc904aa7a6e43b034b6eb29677903381f7c9d8a"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "이 야영지는 열두 전사가 지키던 곳이오, {name}. 모두 죽었지만.\r\n\r\n림토리라는 마법사가 모두를 살해했소. 아즈샤라에 엄청난 부와 강력한 물건이 있다고 벨그롬을 감쪽같이 속였지.\r\n\r\n벨그롬은 보상을 약속하며 우리를 림토리의 호위로 보냈소. 그런데 보시오. 어리석었던 건 결국 우리였소. 놈들에게 그대로 몰살당했으니.\r\n\r\n블러드 엘프는 북쪽 반도의 남쪽 절벽에 진을 치고 있소. 눈에 보이는 대로 모조리 처치하시오. 그리고 림토리가 어디서 힘을 얻는지 알아내시오. 그래야 우리도 복수할 수 있소.",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "배신",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "W tym obozie było kiedyś tuzin wojowników, {name}. Teraz wszyscy nie żyją.\n\nTa magini, Rimtori, zabiła ich wszystkich. Grała na Belgromie jak na lutni, twierdząc, że Azshara skrywa wielkie bogactwa... potężne przedmioty.\n\nBelgrom wysłał nas, by ją chronić, i obiecał nagrodę. Cóż, patrz, kto okazał się głupcem: wymordowano nas.\n\nKrwawe elfy obozują na południowych urwiskach północnego półwyspu. Zabijaj każdego, kogo zobaczysz. Potem znajdź źródło mocy Rimtori, żebyśmy mogli się zemścić.",
+      "eventObjectiveLabel": "Znajdź obóz magusa Rimtori",
+      "summary": "Zabij $1oa rekultywatorów krwawych elfów i $2oa geodetów krwawych elfów, a następnie znajdź źródło mocy Rimtori.",
+      "title": "Zdradzeni",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "c551432bc9471934e67de52b50373903d98bb1f1ebe6a2c2d8d0aaa306d73016"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "2286fcb43a74ce4439821d995df62d23676b16ff68f361ee013d7ea412fe0cf3"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fa9ed05eaf75ad6d454db989951f2a243b6efb5fcaf4bfa4c9132dd4205b6e67"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "48f6a44aa1b74f18f4d2cbdc6fc904aa7a6e43b034b6eb29677903381f7c9d8a"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "Este acampamento tinha a força de doze guerreiros, {name}. Agora, todos eles morreram.\r\n\r\nAquela maga, a Rimtori, matou todos eles. Ela manipulou Belgrom como um fantoche, afirmando que Azshara teria grandes riquezas... e objetos poderosos. \r\n\r\nBelgrom nos mandou protegê-la e disse que seríamos recompensados. Veja só quem caiu no golpe: nós fomos massacrados.\r\n\r\nOs elfos sangrentos estão acampados nos penhascos ao sul da península setentrional. Mate todos que encontrar. Depois, encontre a fonte do poder de Rimtori para termos nossa desforra.",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "Traição",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Раньше в этом лагере было двенадцать воинов, {name}, но теперь они все мертвы!\r\n\r\nМаг Римтори их всех погубила! Белгрома обвела вокруг пальца, наплела про несметные богатства в Азшаре... про наделенные огромной силой предметы. \r\n\r\nБелгром послал нас защитить ее и пообещал вознаграждение. А мы, олухи, поверили – и поплатились жизнью.\r\n\r\nЭльфы крови разбили лагеря на южных утесах северного полуострова. Если кто из них тебе попадется, тотчас же убей. Затем найди источник силы Римтори, чтобы мы смогли отомстить.",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "Предательница",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Det trodde jag väl.\n\nVi inleder vårt fälttåg mot hennes arbetare längs de södra klipporna på Azsharas norra halvö. Döda dem i blodigt raseri, låt dem förstå att de har förrått fel bundsförvanter.\n\nBekymra dig inte om henne ännu; hon tillbringar mest tid med att leta igenom Azshara tillsammans med sina livvakter. När du har dräpt hennes arbetare vore det klokt att leta reda på hennes eget läger. Det vore klokt att speja ut var vi kan anfalla henne. Kanske finns det något där som vi kan använda för att reta henne.",
+      "eventObjectiveLabel": "Hitta magus Rimtoris läger",
+      "summary": "Döda 10 blodsalvsåtervinnare och 10 blodsalvslantmätare innan du letar reda på magus Rimtoris läger. När du har hittat det letar du efter något som kan vara viktigt för henne och som kan användas för att locka in henne i strid.",
+      "title": "Förrådd",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRevision": "0.10.1"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "2286fcb43a74ce4439821d995df62d23676b16ff68f361ee013d7ea412fe0cf3"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRevision": "0.10.1"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "48f6a44aa1b74f18f4d2cbdc6fc904aa7a6e43b034b6eb29677903381f7c9d8a"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Bu kampta bir zamanlar bir düzine savaşçı vardı, {name}. Şimdi hepsi öldü.\r\n\r\nO büyücü Rimtori hepsini öldürdü. Azshara'nın büyük zenginlikler... güçlü eşyalar barındırdığını söyleyerek Belgrom'u bir lavta gibi çaldı.\r\n\r\nBelgrom bizi onu korumaya gönderdi ve ödüllendirileceğimizi söyledi. Bak şimdi aptal kimmiş; katledildik.\r\n\r\nBlood elf'ler kuzey yarımadasının güney yamaçlarında kamp kurdu. Gördüğün her birini öldür. Sonra Rimtori'nin gücünün kaynağını bul ki intikamımızı alabilelim.",
+      "eventObjectiveLabel": "Büyücü Rimtori'nin kampını bul",
+      "summary": "$1oa Kan Elfi Geri Kazanıcısı ve $2oa Kan Elfi Araştırmacısı öldür, ardından Rimtori'nin gücünün kaynağını bul.",
+      "title": "İhanete Uğradık",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "c551432bc9471934e67de52b50373903d98bb1f1ebe6a2c2d8d0aaa306d73016"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "2286fcb43a74ce4439821d995df62d23676b16ff68f361ee013d7ea412fe0cf3"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fa9ed05eaf75ad6d454db989951f2a243b6efb5fcaf4bfa4c9132dd4205b6e67"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "48f6a44aa1b74f18f4d2cbdc6fc904aa7a6e43b034b6eb29677903381f7c9d8a"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Раніше в цьому таборі було з дюжину воїнів, {name}. Тепер усі вони мертві.\n\nТа магиня, Рімторі, вбила їх усіх. Вона грала на Белґромі, мов на лютні, запевняючи, що в Азшарі є великі багатства... могутні речі.\n\nБелґром послав нас охороняти її й пообіцяв винагороду. Що ж, поглянь, хто виявився дурнем: нас вирізали.\n\nЕльфи крові отаборилися вздовж південних круч північного півострова. Убивай кожного, кого побачиш. Тоді знайди джерело сили Рімторі, щоб ми могли помститися.",
+      "eventObjectiveLabel": "Знайдіть табір чаклунки Рімторі",
+      "summary": "Убийте $1oa відновлювачів ельфів крові та $2oa геодезистів ельфів крові, а тоді знайдіть джерело сили Рімторі.",
+      "title": "Зрадниця",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "c551432bc9471934e67de52b50373903d98bb1f1ebe6a2c2d8d0aaa306d73016"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "2286fcb43a74ce4439821d995df62d23676b16ff68f361ee013d7ea412fe0cf3"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fa9ed05eaf75ad6d454db989951f2a243b6efb5fcaf4bfa4c9132dd4205b6e67"
+          },
+          "title": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "48f6a44aa1b74f18f4d2cbdc6fc904aa7a6e43b034b6eb29677903381f7c9d8a"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "这营地以前有十几个战士，{name}。现在，全死了。\r\n\r\n那个叫雷姆托里的法师把他们杀了个干净。她把贝尔戈洛姆耍得团团转，谎称艾萨拉藏着无尽的财富……强大的神器。\r\n\r\n贝尔戈洛姆派我们来保护她，还许诺了丰厚的奖赏。哼，看看谁才是被耍的蠢货——弟兄们连命都没了。\r\n\r\n那些血精灵在北部半岛南侧的悬崖上扎了营。杀光你见到的每一个血精灵，然后去找出雷姆托里力量的源泉，我们必须复仇。",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "叛徒",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "{name}，這個營地原本有十幾名強大的戰士。現在，他們全都死了。\r\n\r\n那個法師雷姆托里把他們全殺了。她把貝爾戈洛姆玩弄於股掌之間，聲稱艾薩拉藏有巨大的財富…強大的物品。\r\n\r\n貝爾戈洛姆派我們去保護她，說我們會得到回報。哼，看看誰才是傻瓜…我們被屠殺殆盡。\r\n\r\n血精靈在北部半島沿著南邊的懸崖紮營。殺光你看到的每一個人。然後，找出雷姆托里的力量來源，讓我們能報仇雪恨。",
+      "eventObjectiveLabel": "Find Magus Rimtori's camp",
+      "summary": "Kill $1oa Blood Elf Reclaimers and $2oa Blood Elf Surveyors, then find the source of Rimtori's power.",
+      "title": "叛徒",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "egLink",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS",
+            "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "objectiveTargets": {
+    "npc": [
+      {
+        "id": 6199
+      },
+      {
+        "id": 6198
+      }
+    ]
+  }
+}

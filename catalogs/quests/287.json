@@ -1,0 +1,829 @@
+{
+  "areaId": 1,
+  "clientObjectiveTargets": [
+    {
+      "id": 1123,
+      "index": 1,
+      "kind": "npc",
+      "type": "monster"
+    }
+  ],
+  "clientObjectiveTargetsMetadata": {
+    "source": "clientCapture",
+    "sourceBuild": "70938",
+    "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
+    "sourceLocale": "enUS"
+  },
+  "locales": {
+    "csCZ": {
+      "description": "Jsem pozadu se svým hlášením a tvoje pomoc by se hodila, {name}. Právě se mi podařilo najít, kde se troli zašili, ale viděl jsem tolik trolů, že jsem se bál jít dovnitř.\n\nTady je, co potřebuju... Jdi dolů k jeskyni, rozhlédni se uvnitř, zabij pár trolů a pak se vrať sem.\n\nVyraž po cestě na sever z Kharanosu, když dojdeš k mostu, pokračuj podél zamrzlé řeky na západ, až dojdeš k jezeru Iceflow. Na západním břehu najdeš vesnici Brewnall. Pevnost Frostmane leží na jihozápad od vesnice.",
+      "eventObjectiveLabel": "Důkladně prozkoumej Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Důkladně prozkoumej Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Prozkoumej Frostmane Hold a zabij 5× Frostmane Headhunters pro Senira Whitebearda v Kharanosu.",
+      "title": "Pevnost mrazohřívých",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "827fa1f0483743477a1e06ae71216d53d488fcaa067700d7eba583db71d6d2bb"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "4eaf9f17e67ba0a3711b96c6f9a9563b529a92d4ebf3a42c8fde8b2c68f1e9e2"
+          },
+          "objectiveLines.2": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "66a73b7b9d674f2170c3e35858dbc2d3e1a6bcf3dd13cdf40dbf79aa365cdebd"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Jeg er bagud med min rapport og kunne bruge din hjælp, {name}. Det lykkedes mig netop at finde ud af, hvor troldene har forskanset sig, men jeg så så mange trolde, at jeg var bange for at gå ind.\n\nHer er, hvad jeg har brug for ... Gå ned til hulen, undersøg den, dræb nogle af troldene og kom så tilbage hertil.\n\nTag vejen nordpå ud af Kharanos. Når du når broen, skal du følge den frosne flod mod vest, indtil du når Iceflow Lake. Du finder Brewnall Village på vestbredden. Hold ligger sydvest for landsbyen.",
+      "eventObjectiveLabel": "Udforsk Frostmane Hold fuldstændigt",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Udforsk Frostmane Hold fuldstændigt",
+          "type": "event"
+        }
+      ],
+      "summary": "Udforsk Frostmane Hold, og dræb 5 Frostmane Headhunters for Senir Whitebeard i Kharanos.",
+      "title": "Frostmanefæstningen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "827fa1f0483743477a1e06ae71216d53d488fcaa067700d7eba583db71d6d2bb"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf9f17e67ba0a3711b96c6f9a9563b529a92d4ebf3a42c8fde8b2c68f1e9e2"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "66a73b7b9d674f2170c3e35858dbc2d3e1a6bcf3dd13cdf40dbf79aa365cdebd"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Ich bin mit meinem Bericht etwas im Rückstand und könnte Eure Hilfe brauchen, {name}. Ich habe gerade herausgefunden, wo sich die Trolle verschanzt haben, aber ich habe so viele Trolle gesehen, dass ich mich nicht getraut habe, hineinzugehen.\n\nWas ich von Euch möchte, ist Folgendes: Geht runter zur Höhle, schaut Euch ein wenig darin um, tötet ein paar Trolle und kommt dann wieder hierher zurück.\n\nNehmt die Straße nach Norden, raus aus Kharanos. Sobald Ihr an der Brücke ankommt, folgt dem zugefrorenen Fluss westwärts, bis Ihr den Iceflowsee erreicht. Am linken Ufer werdet Ihr Brewnall vorfinden. Die Höhle liegt südwestlich des Dorfes.",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Erforscht die Höhle der Frostmane und tötet 5 Kopfjäger der Frostmane für Senir Whitebeard in Kharanos.",
+      "title": "Höhle der Frostmane",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "deDE"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "I'm behind on my report, and could use your help, {name}. I just managed to find where the trolls are holed up, but I saw so many trolls, I was afraid to go in.\n\nHere's what I need... Go down to the cave, poke around inside, kill a few of the trolls, then come back here.\n\nTake the road north out of Kharanos, when you get to the bridge, follow the frozen river west until you reach Iceflow Lake. You'll find Brewnall Village on the west bank. The Hold is southwest of the village.",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Explore Frostmane Hold, and kill 5 Frostmane Headhunters for Senir Whitebeard in Kharanos.",
+      "title": "Frostmane Hold",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS",
+            "sourceRevision": "a444a6418113ae0fce5d30c897674132e756ba1d"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "Llevo mucho retraso con mi informe y me vendría bien tu ayuda, {name}. Conseguí averiguar dónde se esconden los trols, pero vi tantos de ellos que me dio miedo entrar.\n\nPor eso... necesito que entres en la cueva, eches un vistazo y mates a algunos de los trols. Luego vuelves aquí.\n\nSigue la carretera norte que sale de Kharanos, cuando llegues al puente, sigue el río helado hacia el oeste hasta que llegues al Lago Glacial. En la orilla oeste encontrarás Las Birras. La cueva está al suroeste del poblado.",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Explora el Poblado Peloescarcha y mata a 5 rebanacabezas Peloescarcha para Senir Barbablanca de Kharanos.",
+      "title": "Poblado Peloescarcha",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esES"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "Llevo mucho retraso con mi informe y me vendría bien tu ayuda, {name}. Conseguí averiguar dónde se esconden los trols, pero vi tantos de ellos que me dio miedo entrar.\n\nPor eso... necesito que entres en la cueva, eches un vistazo y mates a algunos de los trols. Luego vuelves aquí.\n\nSigue la carretera norte que sale de Kharanos, cuando llegues al puente, sigue el río helado hacia el oeste hasta que llegues al Lago Glacial. En la orilla oeste encontrarás Las Birras. La cueva está al suroeste del poblado.",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Explora el Poblado Peloescarcha y mata a 5 rebanacabezas Peloescarcha para Senir Barbablanca de Kharanos.",
+      "title": "Poblado Peloescarcha",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esMX"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Je suis sur mon rapport et j'ai besoin de votre aide, {name}. Je viens juste de trouver où se cachent les trolls, mais ils sont si nombreux que j'ai peur d'y aller.\n\nVoici ce que j'attends de vous... Allez à la grotte, entrez, tuez quelques trolls et revenez ici.\n\nPrenez la route au nord de Kharanos, puis quand vous arriverez au pont, longez la rivière gelée par l'ouest jusqu'au Lac glacial. Vous trouverez le village de Brassetout sur la rive ouest. Leur repaire est au sud-ouest du village.",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Explorer le repaire des Frostmane et tuer 5 Chasseurs de tête Frostmane pour Senir Whitebeard à Kharanos.",
+      "title": "Le repaire des Frostmane",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "frFR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Kasnim s izvješćem i dobro bi mi došla pomoć, {name}. Upravo sam uspio pronaći gdje su se trolovi sklonili, ali vidio sam ih toliko da sam se bojao ući.\n\nEvo što trebam... Idi dolje do špilje, malo istraži unutra, ubij nekoliko trolova i vrati se ovamo.\n\nKreni cestom sjeverno iz Kharanosa; kad stigneš do mosta, slijedi zaleđenu rijeku na zapad dok ne stigneš do jezera Iceflow. Na zapadnoj obali pronaći ćeš selo Brewnall. Utvrda je jugozapadno od sela.",
+      "eventObjectiveLabel": "U cijelosti istraži Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "U cijelosti istraži Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Istraži Frostmane Hold i ubij 5 lovaca na glave Frostmanea za Senira Whitebearda u Kharanosu.",
+      "title": "Utvrda mrazogrivih",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "827fa1f0483743477a1e06ae71216d53d488fcaa067700d7eba583db71d6d2bb"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf9f17e67ba0a3711b96c6f9a9563b529a92d4ebf3a42c8fde8b2c68f1e9e2"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "66a73b7b9d674f2170c3e35858dbc2d3e1a6bcf3dd13cdf40dbf79aa365cdebd"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Sono indietro con il mio rapporto, {name}, e mi serve il tuo aiuto. Ho appena scoperto dove sono rintanati i Troll, ma sono talmente tanti che ho paura ad affrontarli.\n\nEcco quello che devi fare... vai nella caverna, dai un'occhiata in giro, uccidi qualche Troll e poi torna da me.\n\nPrendi la strada a nord fuori da Kharanos. Una volta raggiunto il ponte, segui il fiume gelato a ovest fino ad arrivare al Lago di Ghiacciospesso. Sull'argine a ovest c'è Borgo Luppolo. Il covo si trova a sud-ovest del villaggio.",
+      "eventObjectiveLabel": "Esplora interamente il Covo dei Mantogelido",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Esplora interamente il Covo dei Mantogelido",
+          "type": "event"
+        }
+      ],
+      "summary": "Esplora Frostmane Hold e uccidi 5 cacciatori di teste Frostmane per Senir Whitebeard a Kharanos.",
+      "title": "Covo dei Mantogelido",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "itIT"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf9f17e67ba0a3711b96c6f9a9563b529a92d4ebf3a42c8fde8b2c68f1e9e2"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "66a73b7b9d674f2170c3e35858dbc2d3e1a6bcf3dd13cdf40dbf79aa365cdebd"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "itIT"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "내가 아직 보고서를 완성하지 못한 상황이라서 말인데 자네 도움이 좀 필요하다네. 트롤들이 숨어 있는 곳을 발견했지만 너무 많아서 들어갈 수가 있어야지. 자네가 동굴로 들어가서 트롤을 찾아 몇 놈 처치한 다음에 이곳으로 돌아와 주게.\n\n우선 카라노스 북쪽 외곽 길을 따라 다리가 있는 곳까지 가게. 그리고 거기서 서쪽으로 얼어붙은 강을 따라 얼음 호수가 나올 때까지 계속 가게. 그러면 서쪽 강둑에 브루날 마을이 보일 거야. 서리갈기부족 소굴은 그 마을 남서쪽에 있네.",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "서리갈기 소굴을 찾아 서리갈기부족 인간사냥꾼 5마리를 처치한 후 카라노스에 있는 세니르 화이트비어드에게 돌아와야 합니다.",
+      "title": "서리갈기 소굴",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "koKR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "Mam zaległości z raportem i przydałaby mi się twoja pomoc, {name}. Dopiero co ustaliłem, gdzie ukrywają się trolle, ale było ich tak wiele, że bałem się wejść.\n\nOto, czego potrzebuję... Zejdź do jaskini, rozejrzyj się w środku, zabij kilka trolli i wróć tutaj.\n\nIdź drogą na północ od Kharanos. Gdy dotrzesz do mostu, podążaj zamarzniętą rzeką na zachód, aż dojdziesz do jeziora Iceflow. Na zachodnim brzegu znajdziesz wioskę Brewnall. Warownia leży na południowy zachód od wioski.",
+      "eventObjectiveLabel": "Dokładnie zbadaj twierdzę Frostmane",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Dokładnie zbadaj twierdzę Frostmane",
+          "type": "event"
+        }
+      ],
+      "summary": "Zbadaj warownię Frostmane i zabij 5 łowców głów Frostmane dla Senira Whitebeard w Kharanos.",
+      "title": "Warownia Frostmane",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "827fa1f0483743477a1e06ae71216d53d488fcaa067700d7eba583db71d6d2bb"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf9f17e67ba0a3711b96c6f9a9563b529a92d4ebf3a42c8fde8b2c68f1e9e2"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "66a73b7b9d674f2170c3e35858dbc2d3e1a6bcf3dd13cdf40dbf79aa365cdebd"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9ced2501486f90f3d6b89cf167f39c487c2fc1de35f9238be44f159dfa9da730"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "Estou atrasado com meu relatório, {name}. Bem que você poderia me ajudar. Consegui descobrir onde os trolls estão entocados, mas eram tantos que fiquei com medo de entrar.\n\nEu preciso que você faça o seguinte: desça na caverna, dê uma fuçada no ambiente, mate alguns trolls e volte para cá.\n\nPegue a estrada que sai de Kharanos em direção ao norte. Ao chegar à ponte, siga a oeste ao longo do rio congelado até chegar ao Lago Nevado. A Aldeia da Cevada fica na margem oeste do lago, e a fortaleza fica a sudoeste da aldeia.",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Percorra a Fortaleza Jubafria e mate 5 Caçadores de Cabeças Jubafria a pedido de Senir Barbabranca em Kharanos.",
+      "title": "A Fortaleza Jubafria",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ptBR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Я не успеваю с донесением, и твоя помощь, {name}, мне бы пригодилась. Я сумел узнать, где засели тролли, но их там было столько, что я побоялся лезть туда.\n\nВот что мне нужно... Спустись в пещеру, порыскай там, прибей пару-другую троллей и возвращайся ко мне.\n\nОтправляйся из Караноса по северной дороге. Когда перейдешь через мост, следуй на запад по замерзшей реке, пока не доберешься до Заледеневшего озера. На западном берегу обнаружишь Поселок Пивоваров. Форт Мерзлогривов находится к юго-западу от него.",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Обследуйте форт Мерзлогривов и убейте 5 охотников за головами из племени Мерзлогривов по просьбе Сенира Белоборода из Караноса.",
+      "title": "Форт Мерзлогривов",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ruRU"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Jag ligger efter med min rapport och skulle behöva din hjälp, {name}. Jag lyckades just hitta var trollen har sitt näste, men jag såg så många troll att jag inte vågade gå in.\n\nSå här vill jag ha det ... Gå ner till grottan, snoka runt därinne, döda ett par av trollen och kom sedan tillbaka hit.\n\nFölj vägen norrut ut från Kharanos, och när du kommer till bron följer du den frusna floden västerut tills du når Isflodssjön. Du hittar Bryggarbyn på västra stranden. Fästet ligger sydväst om byn.",
+      "eventObjectiveLabel": "Utforska hela Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Utforska hela Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "Utforska Frostmansfästet och döda 5 frostmanshuvudjägare åt Senir Whitebeard i Kharanos.",
+      "title": "Frostmansfästet",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRevision": "0.10.1"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf9f17e67ba0a3711b96c6f9a9563b529a92d4ebf3a42c8fde8b2c68f1e9e2"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "66a73b7b9d674f2170c3e35858dbc2d3e1a6bcf3dd13cdf40dbf79aa365cdebd"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "9ced2501486f90f3d6b89cf167f39c487c2fc1de35f9238be44f159dfa9da730"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Raporum geç kaldı ve yardımına ihtiyacım var, {name}. Troll'ların nereye sığındığını yeni buldum ama o kadar çok Troll gördüm ki içeri girmeye korktum.\n\nBenim istediğim şu... Mağaraya in, içeride bir bak, birkaç Troll öldür, sonra buraya dön.\n\nKharanos'tan kuzeye giden yolu tut, köprüye geldiğinde donmuş nehri batıya doğru Iceflow Gölü'ne varana dek takip et. Brewnall Köyü'nü batı kıyısında bulacaksın. Hisar, köyün güneybatısında.",
+      "eventObjectiveLabel": "Frostmane Hold'u tamamen keşfet",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Frostmane Hold'u tamamen keşfet",
+          "type": "event"
+        }
+      ],
+      "summary": "Kharanos'taki Senir Whitebeard için Frostmane Hisarı'nı keşfet ve 5 @(Frostmane Headhunter) öldür.",
+      "title": "Frostmane Hisarı",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "827fa1f0483743477a1e06ae71216d53d488fcaa067700d7eba583db71d6d2bb"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf9f17e67ba0a3711b96c6f9a9563b529a92d4ebf3a42c8fde8b2c68f1e9e2"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "foreverTR",
+            "sourceLocale": "trTR",
+            "sourceRevision": "0.1.0-beta.1"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9ced2501486f90f3d6b89cf167f39c487c2fc1de35f9238be44f159dfa9da730"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Я не встигаю зі звітом і мені б не завадила твоя допомога, {name}. Мені вдалося дізнатись, де засіли тролі, але там їх було стільки, що я побоявся туди лізти.\n\nОсь що мені потрібно... Іди в печеру, понишпор там, прибий кілька тролів і повертайся до мене.\n\nВирушай з Хараноса по дорозі на північ, коли дістанешся до мосту, йди на захід по замерзлій річці, поки не дістанешся озера Кригохвиля. На західному березі стоїть селище Всезвар. Поселення тролів знаходиться на південний захід від нього.",
+      "eventObjectiveLabel": "Повністю дослідіть поселення Морозогривих",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Повністю дослідіть поселення Морозогривих",
+          "type": "event"
+        }
+      ],
+      "summary": "Обстежте поселення Морозогривих і вбийте 5 мисливців за головами Морозогривих на прохання Сеніра Білоборода з Хараноса.",
+      "title": "Поселення Морозогривих",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "827fa1f0483743477a1e06ae71216d53d488fcaa067700d7eba583db71d6d2bb"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "4eaf9f17e67ba0a3711b96c6f9a9563b529a92d4ebf3a42c8fde8b2c68f1e9e2"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "66a73b7b9d674f2170c3e35858dbc2d3e1a6bcf3dd13cdf40dbf79aa365cdebd"
+          },
+          "title": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "9ced2501486f90f3d6b89cf167f39c487c2fc1de35f9238be44f159dfa9da730"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "我快要来不及提交报告了，你能帮我一下吗，{name}？我只想知道这些巨魔躲在什么地方，不过我看见这么多的巨魔就怕得不敢进去了。\n\n你要做的是……进到山洞里，在里面到处走走，干掉一些巨魔，然后再回来。\n\n顺着向北的路离开卡拉诺斯，当你走到一座桥前的时候，再沿着冰冻的河流向西一直走到涌冰湖。你会发现烈酒村就在湖的西岸，而巨魔要塞就在村庄的西南边。",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "侦查霜鬃巨魔要塞，替卡拉诺斯的森内尔·白须杀掉5个霜鬃猎头者。",
+      "title": "霜鬃巨魔要塞",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhCN"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "我快要來不及提交報告了，你能幫我一下嗎，{name}？我只想知道這些食人妖躲在什麼地方，不過我看見這麼多的食人妖就怕得不敢進去了。\n\n你要做的是……進到山洞裡，在裡面到處走走，幹掉一些食人妖，然後再回來。\n\n順著向北的路離開卡拉諾斯，當你走到一座橋前的時候，再沿著冰凍的河流向西一直走到湧冰湖。你會發現烈酒村就在湖的西岸，而食人妖要塞就在村莊的西南邊。",
+      "eventObjectiveLabel": "Fully explore Frostmane Hold",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Fully explore Frostmane Hold",
+          "type": "event"
+        }
+      ],
+      "summary": "偵查霜鬃要塞，替卡拉諾斯的森內爾·白鬚殺掉5個霜鬃獵頭者。",
+      "title": "霜鬃要塞",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4dbb82440a27856f8dccf57094a5d792cdc7cc9b"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "objectiveTargets": {
+    "npc": [
+      {
+        "id": 1123
+      }
+    ]
+  }
+}

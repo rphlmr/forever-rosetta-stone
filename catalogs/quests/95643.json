@@ -1,0 +1,923 @@
+{
+  "areaId": 16591,
+  "locales": {
+    "csCZ": {
+      "description": "V temných uměních se učím u Lady Amberhall, a i když to tak možná nevypadá, obvykle si poradím bez cizí pomoci. S celou jeskyní zlobrů prosycených Prázdnotou se ale nepočítalo.\n\nJestli se ti podařilo dostat až sem dolů, aniž by tě chytili, musíš mít moc i ty. Mně takové štěstí nepřálo, když se tu potulují ti zlobři a jejich páni. Udělej světu laskavost a zabij ty ohavné bestie. Z fanatika s posláním nikdy nic dobrého nevzejde, ať už je posílený, nebo ne.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Surovec zabit",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Ritualista Twilight |4zabit:zabiti;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Zabij $1oa× Twilight Ritualists a $1oa× Empowered Brutes v jeskyních pod Sunnyglade.",
+      "title": "Nevybíravá čistka",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "community",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "014b91891d6b08317204037e5ade8aeaafb934c38a9ca51e76ae6b2808ea10df"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "8a0bf4d5e3b44689aea6a31e3e3922c9b8b7a2ef94d49a9c21d6b8cc42c1d918"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "343b5612c233f67bb448b56a66d671a7bf6cb0a8c30da9063a2976a6fffcc33e"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "3c9c4e4e632fa96ab5bd93e9e25394ce6f1f6e3ccdb59070e83ebc275fd73e22"
+          },
+          "title": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "9b78f7db5827a3da61012441eece433156a6c30d7a0b9143a9fd29764481c2fb"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Som Lady Amberhalls lærling i de mørke kunster ser jeg måske ikke sådan ud, men jeg kan som regel sagtens klare mig selv. Jeg havde dog ikke forudset en hel hule fuld af ogrer gennemsyret af tomrummet.\n\nHvis du kom hele vejen herned uden at blive fanget, må du selv være mægtig. Jeg var ikke så heldig med de ogrer og deres herrer, der strejfer omkring. Gør verden en tjeneste og dræb de hæslige bæster. Intet godt kommer af en fanatiker med et formål, uanset om vedkommende er styrket af magi eller ej.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute dræbt",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight-ritualist |4dræbt:dræbt;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Dræb $1oa Twilight Ritualists og $1oa Empowered Brutes i hulerne under Sunnyglade.",
+      "title": "Uvilkårlig udrensning",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "014b91891d6b08317204037e5ade8aeaafb934c38a9ca51e76ae6b2808ea10df"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "8a0bf4d5e3b44689aea6a31e3e3922c9b8b7a2ef94d49a9c21d6b8cc42c1d918"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "3c9c4e4e632fa96ab5bd93e9e25394ce6f1f6e3ccdb59070e83ebc275fd73e22"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9b78f7db5827a3da61012441eece433156a6c30d7a0b9143a9fd29764481c2fb"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Als Lady Amberhalls Lehrling der dunklen Künste sehe ich vielleicht nicht danach aus, doch ich bin durchaus in der Lage, die Dinge selbst in die Hand zu nehmen. Ich habe allerdings nicht mit einer ganzen Höhle voller leerenerfüllter Oger gerechnet.\r\n\r\nWenn Ihr es bis hierher geschafft habt, ohne gefangen genommen zu werden, müsst Ihr ziemlich stark sein. Ich hatte nicht so viel Glück mit den Ogern und ihren Meistern, die hier herumstreifen. Tut der Welt einen Gefallen und tötet diese hässlichen Biester. Von einem überzeugten Fanatiker kann nichts Gutes kommen, ermächtigt oder nicht.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "Willkürliche Säuberung",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "sourceRevision": "static-1.60.1_70399-forever-eu"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "As Lady Amberhall's apprentice in the dark arts, I may not look it but I'm usually quite capable of handling things on my own. I did not, however, anticipate an entire cave of void-infused ogres.\r\n\r\nIf you managed to get all the way down here without being captured, you must be powerful yourself. I was not so lucky with those ogres and their masters roaming about. Do the world a favor and kill the hideous beasts. Nothing good comes from a fanatic with a purpose, empowered or otherwise.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "Indiscriminate Purge",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "Puede que no lo parezca, pero como aprendiza de la señorita Salámbar en las artes oscuras, normalmente soy bastante capaz de arreglármelas por mi cuenta. Sin embargo, no contaba con verme en una cueva repleta de ogros imbuidos de Vacío.\r\n\r\nSi has conseguido llegar hasta aquí sin que te capturen, debes de ser alguien formidable. Yo no tuve tanta suerte con esos ogros y sus amos merodeando por ahí. Hazle un favor al mundo y mátalos. Nada bueno puede salir de un fanático con un objetivo, tenga poderes o no.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "Purga indiscriminada",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "sourceRevision": "static-1.60.1_70399-forever-eu"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "Como aprendiza de Lady Salámbar en las artes oscuras, aunque no parezca, tengo la capacidad para encargarme de las cosas por mi cuenta. Sin embargo, no había imaginado una cueva entera repleta de ogros infundidos por el Vacío.\r\n\r\nSi lograste llegar hasta aquí abajo sin que te capturaran, debes tener mucho poder. Yo no tuve la misma suerte con esos ogros y sus amos al acecho. Hazle un favor al mundo y mata a esas bestias inmundas. Un fanático con un propósito, potenciado o no, no tiene nada bueno para aportarle al universo.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "Purga indiscriminada",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Je suis l’apprentie de dame Ambrehall dans les arts obscurs. Je n’en ai peut-être pas l’air, mais, d’ordinaire, je suis tout à fait capable de me débrouiller toute seule. Cependant, je n’avais pas anticipé la présence d’Ogres imprégnés de Vide dans cette grotte.\r\n\r\nSi vous avez réussi à descendre jusqu’ici sans vous faire capturer, vous devez vous-même être redoutable. Je n’ai pas eu cette chance avec ces Ogres et leurs maîtres qui patrouillent dans les parages. Rendez service au monde et tuez ces bêtes hideuses. Rien de bon ne peut sortir de fanatiques investis d’une mission, qu’ils possèdent ou non des pouvoirs.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "Brute tuée : {current}/{required}",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "Ritualiste du Crépuscule : {current}/{required} |4personnage tué:personnages tués;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "Purge indifférenciée",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "objectiveLines.1": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "frFR"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "frFR"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "sourceRevision": "static-1.60.1_70399-forever-eu"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Kao učenica Lady Amberhall u mračnim umjetnostima, možda ne izgledam tako, ali obično sam sasvim sposobna sama riješiti stvari. Međutim, nisam očekivala cijelu špilju ogra prožetih prazninom.\r\n\r\nAko si uspio doći skroz dovde bez zarobljavanja, i sam moraš biti moćan. Ja nisam imala toliko sreće s tim ogrima i njihovim gospodarima koji lutaju uokolo. Učini svijetu uslugu i ubij odvratne zvijeri. Ništa dobro ne dolazi od fanatika sa svrhom, osnaženog ili ne.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Grubijan ubijen",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Obrednik Twilighta |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Ubij $1oa ritualista Twilighta i $1oa Empowered Bruteova u špiljama ispod Sunnygladea.",
+      "title": "Neselektivno čišćenje",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "014b91891d6b08317204037e5ade8aeaafb934c38a9ca51e76ae6b2808ea10df"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "8a0bf4d5e3b44689aea6a31e3e3922c9b8b7a2ef94d49a9c21d6b8cc42c1d918"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "343b5612c233f67bb448b56a66d671a7bf6cb0a8c30da9063a2976a6fffcc33e"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "3c9c4e4e632fa96ab5bd93e9e25394ce6f1f6e3ccdb59070e83ebc275fd73e22"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9b78f7db5827a3da61012441eece433156a6c30d7a0b9143a9fd29764481c2fb"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Come apprendista di Dama Amberhall nelle arti oscure, forse non lo do a vedere, ma di solito sono perfettamente capace di cavarmela da sola. Non avevo però previsto un'intera grotta di ogre infusi di Vuoto.\r\n\r\nSe sei riuscito ad arrivare fin quaggiù senza essere catturato, devi essere potente anche tu. Io non ho avuto la stessa fortuna, con quegli ogre e i loro padroni che si aggirano qui. Fa' un favore al mondo e uccidi quelle bestie orrende. Non viene niente di buono da un fanatico con uno scopo, potenziato o meno.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Bruto ucciso",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Ritualista del Crepuscolo |4ucciso:uccisi;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Uccidi $1oa Ritualisti del Crepuscolo e $1oa Bruti Potenziati nelle caverne sotto Sunnyglade.",
+      "title": "Epurazione indiscriminata",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "014b91891d6b08317204037e5ade8aeaafb934c38a9ca51e76ae6b2808ea10df"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "8a0bf4d5e3b44689aea6a31e3e3922c9b8b7a2ef94d49a9c21d6b8cc42c1d918"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "343b5612c233f67bb448b56a66d671a7bf6cb0a8c30da9063a2976a6fffcc33e"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "3c9c4e4e632fa96ab5bd93e9e25394ce6f1f6e3ccdb59070e83ebc275fd73e22"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9b78f7db5827a3da61012441eece433156a6c30d7a0b9143a9fd29764481c2fb"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "암흑 마법을 배우는 앰버홀 님의 수습생으로서, 겉보기와 달리 전 보통 제 일은 직접 처리해요. 다만 공허가 주입된 오우거들이 동굴 하나를 통째로 점령하고 있을 줄은 예상 못 했습니다.\r\n\r\n붙잡히지 않고 여기까지 내려오셨다면 상당한 힘을 지닌 분이겠지요. 저는 돌아다니는 오우거들과 그 주인들을 상대로 운이 썩 좋지 않았습니다. 세상에 이로운 일을 한다 생각하고 저 흉측한 야수들을 퇴치해 주세요. 힘을 얻었든 아니든, 목적이 있는 광신도는 백해무익한 존재입니다.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "무차별 소탕",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "Jako uczennica lady Amberhall w mrocznych sztukach może nie wyglądam, ale zwykle potrafię radzić sobie sama. Nie spodziewałam się jednak całej jaskini ogrów nasyconych Pustką.\r\n\r\nJeśli udaje ci się zejść aż tutaj bez pojmania, musisz mieć wielką moc. Ja nie miałam tyle szczęścia wobec krążących ogrów i ich panów. Wyświadcz światu przysługę i zabij te ohydne bestie. Z fanatyka mającego cel nie wyniknie nic dobrego, wzmocnionego czy nie.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Zabito Brutala",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Rytualista Zmierzchu |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Zabij $1oa rytualistów Zmierzchu i $1oa wzmocnionych osiłków w jaskiniach pod Sunnyglade.",
+      "title": "Bezrozróżne oczyszczenie",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "014b91891d6b08317204037e5ade8aeaafb934c38a9ca51e76ae6b2808ea10df"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "8a0bf4d5e3b44689aea6a31e3e3922c9b8b7a2ef94d49a9c21d6b8cc42c1d918"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "343b5612c233f67bb448b56a66d671a7bf6cb0a8c30da9063a2976a6fffcc33e"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "3c9c4e4e632fa96ab5bd93e9e25394ce6f1f6e3ccdb59070e83ebc275fd73e22"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9b78f7db5827a3da61012441eece433156a6c30d7a0b9143a9fd29764481c2fb"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "Como aprendiz de Lady Larambar nas artes sombrias, costumo ser bem capaz de resolver as coisas sozinha, apesar de não parecer. Mas eu não esperava uma caverna inteira de ogros infundidos pelo Caos.\r\n\r\nSe você conseguiu chegar até aqui embaixo sem ser capturado, deve ter muito poder. Eu não tive a mesma sorte com aqueles ogros e seus mestres vagando por aí. Faça um favor ao mundo e mate essas feras hediondas. Nada de bom vem de um fanático com propósito, seja potencializado ou não.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "Expurgo indiscriminado",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Может, взглянув на меня, так и не скажешь, но, как ученица госпожи Амберхолл в темных искусствах, я вполне могу постоять за себя. Однако я никак не ожидала столкнуться с целой пещерой огров, усиленных магией Бездны.\r\n\r\nЕсли тебе удалось спуститься сюда, не попав в плен, значит, ты и сам очень силен. Боюсь, я не преуспела в сражениях с местными ограми и их владыками. Сделай благое дело и убей этих отвратительных тварей. От целеустремленных фанатиков нельзя ждать ничего хорошего, особенно, когда они усилены магией.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "Тотальное очищение",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "sourceRevision": "static-1.60.1_70399-forever-eu"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Som Lady Amberhalls lärling i de mörka konsterna kanske jag inte ser ut så, men jag brukar vara fullt kapabel att klara mig själv. Jag hade dock inte räknat med en hel grotta med tomhetsfyllda ogrer.\r\n\r\nOm du lyckades ta dig ända hit ner utan att bli tillfångatagen måste du själv vara mäktig. Jag hade inte samma tur med ogrerna och deras herrar som strövar omkring. Gör världen en tjänst och döda de vedervärdiga bestarna. Inget gott kommer av en fanatiker med ett syfte, vare sig denne fått krafter eller inte.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Slagskämpe dödad",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilightritualist |4dödad:dödade;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Döda $1oa Twilight Ritualists och $1oa Empowered Brutes inne i grottorna under Sunnyglade.",
+      "title": "Urskillningslös utrensning",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "014b91891d6b08317204037e5ade8aeaafb934c38a9ca51e76ae6b2808ea10df"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "8a0bf4d5e3b44689aea6a31e3e3922c9b8b7a2ef94d49a9c21d6b8cc42c1d918"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "343b5612c233f67bb448b56a66d671a7bf6cb0a8c30da9063a2976a6fffcc33e"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "3c9c4e4e632fa96ab5bd93e9e25394ce6f1f6e3ccdb59070e83ebc275fd73e22"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9b78f7db5827a3da61012441eece433156a6c30d7a0b9143a9fd29764481c2fb"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Lady Amberhall'ın karanlık sanatlar çırağı olarak öyle görünmeyebilirim ama genellikle işleri tek başıma halledebilirim. Ama boşlukla aşılanmış ogrelerle dolu bütün bir mağarayı beklemiyordum.\n\nYakalanmadan buraya kadar gelebildiysen sen de güçlü olmalısın. Dolaşan ogreler ve efendileriyle ben o kadar şanslı değildim. Dünyaya iyilik yapıp çirkin yaratıkları öldür. Güçlendirilmiş olsun olmasın, amacı olan bağnazdan iyi bir şey çıkmaz.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Zorba öldürüldü",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritüelcisi |4öldürüldü:öldürüldü;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Sunnyglade'in altındaki mağaralarda $1oa Twilight Ritüelcisi ve $1oa Güçlendirilmiş Zorba öldür.",
+      "title": "Ayrım Gözetmeyen Arındırma",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "014b91891d6b08317204037e5ade8aeaafb934c38a9ca51e76ae6b2808ea10df"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "8a0bf4d5e3b44689aea6a31e3e3922c9b8b7a2ef94d49a9c21d6b8cc42c1d918"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "343b5612c233f67bb448b56a66d671a7bf6cb0a8c30da9063a2976a6fffcc33e"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "3c9c4e4e632fa96ab5bd93e9e25394ce6f1f6e3ccdb59070e83ebc275fd73e22"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9b78f7db5827a3da61012441eece433156a6c30d7a0b9143a9fd29764481c2fb"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Як учень леді Емберголл у темних мистецтвах, я, хоч і не схожий на те, зазвичай добре даю собі раду. Однак не очікував цілої печери огрів, просочених Порожнечею.\r\n\r\nЯкщо ти зміг дістатися аж сюди й не потрапити в полон, то й сам могутній. Мені з тими ограми та їхніми господарями поблизу пощастило менше. Зроби світові послугу: вбий потворних звірів. Від цілеспрямованого фанатика добра не буде, посиленого чи ні.",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Вбийте здорованя",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Сутінковий ритуаліст |4вбитий:вбиті;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Вбийте $1oa сутінкових ритуалістів і $1oa посилених здорованів у печерах під Сонячною галявиною.",
+      "title": "Невибіркове очищення",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "014b91891d6b08317204037e5ade8aeaafb934c38a9ca51e76ae6b2808ea10df"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "8a0bf4d5e3b44689aea6a31e3e3922c9b8b7a2ef94d49a9c21d6b8cc42c1d918"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "343b5612c233f67bb448b56a66d671a7bf6cb0a8c30da9063a2976a6fffcc33e"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "3c9c4e4e632fa96ab5bd93e9e25394ce6f1f6e3ccdb59070e83ebc275fd73e22"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "9b78f7db5827a3da61012441eece433156a6c30d7a0b9143a9fd29764481c2fb"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "作为安伯霍尔女士钻研黑魔法的学徒，我虽然其貌不扬，但平时完全能独当一面。可是，我怎么也没料到，这整个洞穴里竟然塞满了被虚空能量灌注的食人魔。\r\n\r\n你能神不知鬼不觉地潜入到这里，身手肯定不凡。我可没那么走运，到处都是游荡的食人魔和他们的主子。替天行道，宰了那些丑陋的怪物吧。一个满脑子狂热念头的疯子，管他有没有被强化，都绝对是个祸害。",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "无差别的清洗",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "sourceRevision": "static-1.60.1_70399-forever-eu"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "我身為安珀荷女士的黑暗魔法學徒，雖然外表看不出來，但其實算挺有本事的。不過，我可沒料到整個洞穴都充滿被灌注虛無能量的巨魔。\r\n\r\n如果你能自己跑到這來，都沒被抓住，你一定也挺有本事。因為那些巨魔和他們的主人到處遊蕩著，我就沒那麼走運了。為世界做件好事，殺死那些可恨的怪物吧。身負使命的狂熱者絕對不會帶來什麼好結果，無論有沒有受到強化都一樣。",
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Brute slain",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Twilight Ritualist |4slain:slain;",
+          "type": "monster"
+        }
+      ],
+      "summary": "Kill $1oa Twilight Ritualists and $1oa Empowered Brutes within the caves underneath Sunnyglade.",
+      "title": "無差別淨化",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "0fa6c59088572588a2073d75bbbddc8a824080456644a279a1cd8dcb96e293e8"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "b3184854185b6e97b0bb3c4dd402c1a838e51efd2d12932a6b476edb8b9552ca"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70888",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "objectiveTargets": {
+    "npc": [
+      {
+        "id": 261711
+      },
+      {
+        "id": 262169
+      }
+    ]
+  }
+}

@@ -1,0 +1,841 @@
+{
+  "areaId": 11,
+  "clientObjectiveTargets": [
+    {
+      "id": 2103,
+      "index": 1,
+      "kind": "npc",
+      "type": "monster"
+    },
+    {
+      "id": 2102,
+      "index": 2,
+      "kind": "npc",
+      "type": "monster"
+    }
+  ],
+  "clientObjectiveTargetsMetadata": {
+    "source": "clientCapture",
+    "sourceBuild": "70938",
+    "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
+    "sourceLocale": "enUS"
+  },
+  "locales": {
+    "csCZ": {
+      "description": "Orkové z klanu Dragonmaw mají útočiště ve Wetlands. A teď se rozšířili do Dun Algaz! Nemůžeme jim dovolit udržet si tu oporu, jinak bude Loch Modan odříznut od přístavu Menethil, našeho přístavu a pevnosti ve Wetlands.\n\nProraz se přes Dun Algaz do Wetlands za ním a k tomu ještě zabij pár orků! Hlas se u Valstaga Ironjawa v přístavu Menethil.\n\nMenethil leží za Dun Algaz, pak na sever po cestě a na rozcestí na západ.\n\nSpoléháme na tebe, {name}. Nezklam.",
+      "eventObjectiveLabel": "Projdi Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Projdi Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Projdi Dun Algaz.\n\nZabij 8× Dragonmaw Scouts a 6× Dragonmaw Grunts.\n\nHlas se u Valstaga Ironjawa v Menethil Harbor.",
+      "title": "Průchod Dun Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "f5c660df5035b7b7c05e925c668e6e55bf6d079381b356f9aba881b8f249cb01"
+          },
+          "objectiveLines.3": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.7.3"
+          },
+          "title": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "fbfde974a19030abe0fd6c825f4554c8d501f441c719b69e1fd382e06cd017a0"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Orker fra Dragonmaw-klanen har et tilholdssted i Wetlands. Og nu har de bredt sig ind i Dun Algaz! Vi kan ikke lade dem beholde deres fodfæste her, ellers bliver Loch Modan afskåret fra Menethil Harbor, vores havn og fæstning i Wetlands.\n\nBryd gennem Dun Algaz til Wetlands på den anden side, og dræb nogle orker for en sikkerheds skyld! Meld dig hos Valstag Ironjaw i Menethil Harbor.\n\nMenethil ligger gennem Dun Algaz, derefter nordpå langs vejen og så vestpå ved forgreningen.\n\nVi regner med dig, {name}. Du må ikke fejle.",
+      "eventObjectiveLabel": "Kryds Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Kryds Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Kryds Dun Algaz.\n\nDræb 8 Dragonmaw Scouts og 6 Dragonmaw Grunts.\n\nMeld dig hos Valstag Ironjaw i Menethil Harbor.",
+      "title": "Spidsrod gennem Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "f5c660df5035b7b7c05e925c668e6e55bf6d079381b356f9aba881b8f249cb01"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7726c8b22418f11bc0947a6d0f27bbdbf032af1f8b72e5410ef0be8d15a46a0c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fbfde974a19030abe0fd6c825f4554c8d501f441c719b69e1fd382e06cd017a0"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Orcs vom Dragonmawklan haben im Sumpfland eine Zufluchtstätte. Und jetzt haben sie sich nach Dun Algaz ausgebreitet. Wir können nicht zulassen, dass sie ihren Einfluss auf dieses Gebiet behalten, sonst wird der Loch Modan vom Hafen von Menethil, unserer Hafenfestung im Sumpfland, abgeschnitten.\n\nBrecht durch Dun Algaz in das dahinterliegende Sumpfland durch und tötet dabei ein paar Orcs. Meldet Euch bei Valstag Ironjaw im Hafen von Menethil.\n\nNach Menethil kommt Ihr, indem Ihr Dun Algaz durchquert, anschließend nordwärts der Straße folgt und Euch dann an der Biegung westwärts haltet.\n\nWir verlassen uns auf Euch, {name}. Ihr dürft nicht scheitern.",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Durchquert Dun Algaz.\n\nTötet 8 Späher der Dragonmaw und 6 Grunzer der Dragonmaw.\n\nMeldet Euch bei Valstag Ironjaw im Hafen von Menethil.",
+      "title": "Der Algaz-Spießrutenlauf",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "deDE"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "Orcs of the Dragonmaw clan have a haven in the Wetlands.  And now they have expanded into Dun Algaz!  We can't let them keep their foothold here or Loch Modan will be cut off from Menethil Harbor, our port and stronghold in the Wetlands.\n\nBreak through Dun Algaz to the Wetlands beyond, and kill some orcs for good measure!  Report to Valstag Ironjaw in Menethil Harbor.\n\nMenethil is through Dun Algaz, then north along the road, then west at the fork.\n\nWe're counting on you, {name}.  Do not fail.",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Traverse Dun Algaz.\n\nKill 8 Dragonmaw Scouts and 6 Dragonmaw Grunts.\n\nReport to Valstag Ironjaw in Menethil Harbor.",
+      "title": "The Algaz Gauntlet",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "Los orcos del clan Faucedraco tienen un refugio en Los Humedales ¡y ahora se han adentrado en Dun Algaz! No podemos permitir que continúen afianzándose aquí o Loch Modan perderá el contacto con el Puerto de Menethil, nuestro puerto y bastión en Los Humedales.\n\nAtraviesa Dun Algaz y dirígete a Los Humedales, ¡cuando estés allí mata a tantos orcos como puedas! Informa a Valstag Quijahierro en Puerto de Menethil.\n\nMenethil está pasado Dun Algaz, siguiendo el camino hacia el Norte y al Oeste en el cruce.\n\nContamos contigo, {name}. No nos falles.",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Atraviesa Dun Algaz.\n\nMata 8 exploradores Faucedraco y 6 brutos Faucedraco.\n\nInforma a Valstag Quijahierro de Puerto de Menethil.",
+      "title": "El asedio de Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esES"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "Los orcos del clan Faucedraco tienen un refugio en Los Humedales ¡y ahora se han adentrado en Dun Algaz! No podemos permitir que continúen afianzándose aquí o Loch Modan perderá el contacto con el Puerto de Menethil, nuestro puerto y bastión en Los Humedales.\n\nAtraviesa Dun Algaz y dirígete a Los Humedales, ¡cuando estés allí mata a tantos orcos como puedas! Informa a Valstag Quijahierro en Puerto de Menethil.\n\nMenethil está pasado Dun Algaz, siguiendo el camino hacia el Norte y al Oeste en el cruce.\n\nContamos contigo, {name}. No nos falles.",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Atraviesa Dun Algaz.\n\nMata 8 exploradores Faucedraco y 6 brutos Faucedraco.\n\nInforma a Valstag Quijahierro de Puerto de Menethil.",
+      "title": "El asedio de Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esMX"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Les orcs du clan Dragonmaw ont un refuge dans les Paluns. Mais voilà : ils se répandent maintenant dans Dun Algaz ! Nous ne pouvons les laisser s'installer là, sinon le Loch Modan sera coupé du port de Menethil, notre port et bastion dans les Paluns.\n\nTraversez Dun Algaz jusqu'aux Paluns et tuez quelques orcs pour faire bonne mesure! Faites un rapport à Valstag Ironjaw au port de Menethil.\n\nPour rejoindre Menethil, passez par Dun Algaz, puis allez au nord en longeant la route, et enfin prenez à l'ouest à l'embranchement.\n\nNous comptons sur vous, {name}. Vous ne pouvez échouer.",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Traverser Dun Algaz.\n\nTuer 8 Eclaireurs Dragonmaw et 6 Grunts Dragonmaw.\n\nFaites votre rapport à Valstag Ironjaw au port de Menethil.",
+      "title": "Le défi d'Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "frFR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Orci klana Dragonmaw imaju utočište u Wetlandsu. A sada su se proširili u Dun Algaz! Ne možemo im dopustiti da ovdje zadrže uporište ili će Loch Modan biti odsječen od Menethil Harbora, naše luke i utvrde u Wetlandsu.\n\nProbij se kroz Dun Algaz do Wetlandsa s druge strane i usput ubij nekoliko orka! Javi se Valstagu Ironjawu u Menethil Harboru.\n\nDo Menethila se stiže kroz Dun Algaz, zatim na sjever cestom i na zapad na račvanju.\n\nRačunamo na tebe, {name}. Nemoj podbaciti.",
+      "eventObjectiveLabel": "Prođi kroz Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Prođi kroz Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Prijeđi Dun Algaz.\n\nUbij 8 Dragonmaw Scouta i 6 Dragonmaw Grunta.\n\nJavi se Valstagu Ironjawu u Menethil Harboru.",
+      "title": "Proboj kroz Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "f5c660df5035b7b7c05e925c668e6e55bf6d079381b356f9aba881b8f249cb01"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7726c8b22418f11bc0947a6d0f27bbdbf032af1f8b72e5410ef0be8d15a46a0c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fbfde974a19030abe0fd6c825f4554c8d501f441c719b69e1fd382e06cd017a0"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Gli orchi del clan Dragonmaw hanno una base nelle Paludi Grigie. E ora si sono spinti fino a Dun Algaz! Non possiamo lasciare che restino qui, altrimenti Loch Modan sarà tagliato fuori dal Porto di Menethil, il nostro porto e caposaldo nelle paludi.\n\nApriti un varco attraverso Dun Algaz fino alle Paludi Grigie e, già che ci sei, uccidi un po' di orchi! Fai rapporto a Valstag Ironjaw al Porto di Menethil.\n\nPer Menethil attraversa Dun Algaz, poi segui la strada verso nord e al bivio gira a ovest.\n\nContiamo su di te, {name}. Non fallire.",
+      "eventObjectiveLabel": "Attraversa Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Attraversa Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Attraversa Dun Algaz.\n\nUccidi 8 esploratori e 6 grugnitori Dragonmaw.\n\nFai rapporto a Valstag Ironjaw a Menethil Harbor.",
+      "title": "Il passaggio di Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "f5c660df5035b7b7c05e925c668e6e55bf6d079381b356f9aba881b8f249cb01"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7726c8b22418f11bc0947a6d0f27bbdbf032af1f8b72e5410ef0be8d15a46a0c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fbfde974a19030abe0fd6c825f4554c8d501f441c719b69e1fd382e06cd017a0"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "용아귀부족 오크들이 저습지를 차지한 것도 모자라, 이제 던 알가즈에까지 손을 뻗어오고 있소! 이곳에 있는 놈들의 거점을 제거하지 않으면 저습지에 있는 우리의 항만 시설과 요새인, 메네실 항구에서 모단 호수에 이르는 길목을 차단당하게 되오.\n\n던 알가즈를 가로질러 저습지 너머로 이동하시오. 그리고 가는 길에 오크 녀석들도 좀 처치해 주시오. 그런 다음 메네실 항구에 있는 발스탁 아이언조에게 보고하도록 하시오.\n\n메네실은 던 알가즈를 지나 길을 따라 북쪽으로 간 다음 갈림길에서 서쪽으로 가면 되오.\n\n우린 당신만 믿겠으니 우릴 실망시키지 마시오.",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "던 알가즈를 가로질러 가야 합니다.\n\n용아귀부족 정찰병 8명과 용아귀부족 그런트 6명을 처치해야 합니다.\n\n메네실 항구에 있는 발스탁 아이언조에게 보고하십시오.",
+      "title": "알가즈의 위기",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "koKR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "Orkowie z klanu Dragonmaw mają ostoję w Wetlands. A teraz wkroczyli do Dun Algaz! Nie możemy pozwolić im utrzymać tu przyczółka, bo Loch Modan zostanie odcięte od Menethil Harbor, naszego portu i twierdzy w Wetlands.\n\nPrzebij się przez Dun Algaz do Wetlands po drugiej stronie, a przy okazji zabij kilku orków! Złóż raport Valstagowi Ironjawowi w Menethil Harbor.\n\nDo Menethil dotrzesz przez Dun Algaz, potem drogą na północ, a na rozwidleniu na zachód.\n\nLiczymy na ciebie, {name}. Nie zawiedź nas.",
+      "eventObjectiveLabel": "Przemierz Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Przemierz Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Przejdź przez Dun Algaz.\n\nZabij 8 Dragonmaw Scouts i 6 Dragonmaw Grunts.\n\nZłóż raport Valstagowi Ironjawowi w Menethil Harbor.",
+      "title": "Przeprawa przez Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "f5c660df5035b7b7c05e925c668e6e55bf6d079381b356f9aba881b8f249cb01"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7726c8b22418f11bc0947a6d0f27bbdbf032af1f8b72e5410ef0be8d15a46a0c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "fbfde974a19030abe0fd6c825f4554c8d501f441c719b69e1fd382e06cd017a0"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "Orcs do clã Presa do Dragão têm um refúgio no Pantanal, tchê. E agora eles se espraiaram para Dun Algaz! Não podemos deixar que se estabeleçam aqui ou Loch Modan ficará isolado do Porto de Menethil, nosso porto e baluarte no Pantanal.\n\nCruze Dun Algaz até o Pantanal além, e mate alguns orcs por via das dúvidas! Apresente-se a Valstag Ferroqueixo no Porto de Menethil.\n\nVocê chega a Menethil passando por Dun Algaz, depois seguindo ao norte ao longo da estrada, e a oeste na bifurcação.\n\nEstamos contando com você, {name}. Não falhe, guri.",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Atravesse Dun Algaz.\n\nMate 8 Batedores Presa do Dragão e 6 Brutos Presa do Dragão.\n\nApresente-se a Valstag Ferroqueixo no Porto de Menethil.",
+      "title": "Sufoco em Algaz",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ptBR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Орки из клана Драконьей Пасти бесчинствуют по всей Болотине. А сейчас они двинулись на Дун Альгаз! Нельзя допустить, чтобы они здесь закрепились, иначе Лок Модан будет отрезан от Гавани Менетилов, нашего порта и крепости в Болотине.\n\nПопытайся прорваться сквозь Дун Альгаз в Болотине и убей столько орков, сколько сумеешь! Чем больше, тем лучше! Об исполнении доложишь Валстагу Сталезубу в Гавани Менетилов.\n\nНайти Менетилов несложно: пройдешь через Дун Альгаз, потом – по дороге на север, а на развилке свернешь на запад.\n\nМы очень надеемся на тебя, {name}. Не подведи нас.",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Пройдите через Дун Альгаз.\n\nУбейте 8 разведчиков из клана Драконьей Пасти и 6 рубак из клана Драконьей Пасти.\n\nОб исполнении доложите Валстагу Сталезубу в Гавани Менетилов.",
+      "title": "Альгазская битва",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ruRU"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Orcher från drakgapsklanen har en tillflykt i Våtmarkerna. Och nu har de brett ut sig till Dun Algaz! Vi kan inte låta dem behålla sitt fotfäste här, annars blir Loch Modan avskuret från Menethils hamn, vår hamn och vårt fäste i Våtmarkerna.\n\nTa dig igenom Dun Algaz till Våtmarkerna på andra sidan, och döda några orcher på köpet! Rapportera till Valstag Ironjaw i Menethils hamn.\n\nTill Menethil kommer du genom Dun Algaz, sedan norrut längs vägen och västerut vid vägskälet.\n\nVi räknar med dig, {name}. Svik oss inte.",
+      "eventObjectiveLabel": "Ta dig genom Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Ta dig genom Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "Ta dig igenom Dun Algaz.\n\nDöda 8 drakgapsspejare och 6 drakgapsknektar.\n\nRapportera till Valstag Ironjaw i Menethils hamn.",
+      "title": "Algazprövningen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRevision": "0.10.1"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "f5c660df5035b7b7c05e925c668e6e55bf6d079381b356f9aba881b8f249cb01"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "7726c8b22418f11bc0947a6d0f27bbdbf032af1f8b72e5410ef0be8d15a46a0c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "fbfde974a19030abe0fd6c825f4554c8d501f441c719b69e1fd382e06cd017a0"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Dragonmaw klanından Orc'lar Wetlands'te bir sığınak kurdu. Şimdi de Dun Algaz'a yayıldılar! Buradaki mevzilerini korumalarına izin veremeyiz yoksa Loch Modan, Wetlands'teki limanımız ve kalemiz Menethil Limanı'ndan kopar.\n\nDun Algaz'ı geçip ötedeki Wetlands'e ulaş ve ek olarak birkaç Orc öldür! Menethil Limanı'ndaki Valstag Ironjaw'a rapor ver.\n\nMenethil'e ulaşmak için Dun Algaz'dan geç, sonra yolu kuzeye doğru izle ve yol ayrımında batıya dön.\n\nSana güveniyoruz, {name}. Bizi hayal kırıklığına uğratma.",
+      "eventObjectiveLabel": "Dun Algaz'dan geç",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Dun Algaz'dan geç",
+          "type": "event"
+        }
+      ],
+      "summary": "Dun Algaz'ı geç.\n\n8 Dragonmaw Scout ve 6 Dragonmaw Grunt öldür.\n\nMenethil Limanı'ndaki Valstag Ironjaw'a rapor ver.",
+      "title": "Algaz Gauntlet",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "f5c660df5035b7b7c05e925c668e6e55bf6d079381b356f9aba881b8f249cb01"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "7726c8b22418f11bc0947a6d0f27bbdbf032af1f8b72e5410ef0be8d15a46a0c"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "foreverTR",
+            "sourceLocale": "trTR",
+            "sourceRevision": "0.1.0-beta.1"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Орки з клану Драконової Пащі оселились у Заболотті. А тепер вони полізли в Дун-Альґаз! Ми не можемо дозволити їм цього, інакше Лох-Модан буде відрізаний від гавані Менетілів - нашого порту та твердині у Заболотті.\n\nПрорвись через Дун-Альґаз до Заболоття та вбий стільки орків, скільки зможеш! Доповіси про виконання Вальстаґу Залізогубу в гавані Менетілів.\n\nЩоб дістатись гавані - пройди через Дун-Альґаз, потім йди на північ по дорозі, на роздоріжжі йди на захід.\n\nМи розраховуємо на тебе, {name}. Не підведи.",
+      "eventObjectiveLabel": "Пройдіть через Дун-Альґаз",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Пройдіть через Дун-Альґаз",
+          "type": "event"
+        }
+      ],
+      "summary": "Пройдіть через Дун-Альґаз.\n\nВбийте 8 розвідників та 6 рубайл Драконової Пащі.\n\nЗвітуйте Вальстаґу Залізогубу в гавань Менетілів.",
+      "title": "Альґазька битва",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "f5c660df5035b7b7c05e925c668e6e55bf6d079381b356f9aba881b8f249cb01"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "7726c8b22418f11bc0947a6d0f27bbdbf032af1f8b72e5410ef0be8d15a46a0c"
+          },
+          "title": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "fbfde974a19030abe0fd6c825f4554c8d501f441c719b69e1fd382e06cd017a0"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "龙喉氏族的兽人在湿地有了一处巢穴，现在他们的势力已经快扩展到丹奥加斯了！我们可绝不能让他们在这里立足，不然，我们在湿地唯一的港口与要塞——米奈希尔港与洛克莫丹的联系将会被切断。\n\n穿越丹奥加兹到湿地那边去，向米奈希尔港的瓦斯塔格·铁腭报到，路上顺便杀它几个兽人玩玩！\n\n米奈希尔就在丹奥加兹的另一边，只要先顺着路向北，然后在岔路口转向西边就是。\n\n我们寄希望于你，{name}。可别让我们失望。",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "翻越丹奥加兹。\n\n杀死8个龙喉斥候和6个龙喉步兵。\n\n向米奈希尔港的瓦斯塔格·铁腭报到。",
+      "title": "丹奥加兹告急",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhCN"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "龍喉氏族的獸人在濕地有了一處巢穴，現在他們的勢力已經快擴展到丹奧加斯了！我們可絕不能讓他們在這裡立足，不然，我們在濕地唯一的港口與要塞——米奈希爾港與洛克莫丹的聯繫將會被切斷。\n\n穿越丹奧加茲到濕地那邊去，向米奈希爾港的瓦斯塔格·鐵齶報到，路上順便殺它幾個獸人玩玩！\n\n米奈希爾就在丹奧加茲的另一邊，只要先順著路向北，然後在岔路口轉向西邊就是。\n\n我們寄希望於你，{name}。可別讓我們失望。",
+      "eventObjectiveLabel": "Traverse Dun Algaz",
+      "objectiveLines": [
+        {
+          "index": 3,
+          "text": "Traverse Dun Algaz",
+          "type": "event"
+        }
+      ],
+      "summary": "翻越丹奧加茲。\n\n殺死8個龍喉斥候和6個龍喉步兵。\n\n向米奈希爾港的瓦斯塔格·鐵腭報到。",
+      "title": "丹奧加茲告急",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhTW"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "objectiveTargets": {
+    "npc": [
+      {
+        "id": 2103
+      },
+      {
+        "id": 2102
+      }
+    ]
+  }
+}

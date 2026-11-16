@@ -1,0 +1,911 @@
+{
+  "areaId": 16651,
+  "locales": {
+    "csCZ": {
+      "description": "Po celém Shen'dralas se vznášejí jiskry many, možná ti už padly do oka. Je to nový jev, nejspíš důsledek poškození, které pylony utrpěly.\n\nPotřebujeme tu manu zpátky v polokrystalické podobě. Dosáhneme toho pomocí Mana Sieve z chrámu. Vypůjč si to síto a posbírej všechny poletující koule many, které najdeš.\n\nObyvatelům chrámu se nebude líbit, že si někdo bez jejich svolení půjčil jejich drahocenný artefakt, ale časem to pochopí.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Západní pylon opraven",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Východní pylon opraven",
+          "type": "monster"
+        }
+      ],
+      "summary": "Získej Mana Sieve z chrámu v Shen'dralas a nasbírej s ním Ancient Mana Crystals. Až budeš mít dost many, dobij pylony a vrať se k Mordentu Evenshadeovi.",
+      "title": "Napájení pylonů",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "community",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df3e9584776b49da00011dd3ec53c635757b39eb032f0063ce08be4131222b30"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5402e0be2c49568b9807af2a941d1165fb287cb489d7adb89091edf4edf4fc25"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "d107a9aed7238478607e35a2f425479602c6f6606d2307b5c94edcf45019a5b7"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "ffd6f2c515068e2242365ceb07515056b210605b8b693024fee5da5bf08df43a"
+          },
+          "title": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "45e331620a1b5e4c50f43d3c4096b69c6635762d3c2be2fef96705b058a3e6d5"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Du har måske set de svævende managnister spredt over hele Shen'dralas. Det er et nyt fænomen, sandsynligvis resultatet af den skade, pylonerne har lidt.\r\n\r\nVi behøver denne mana tilbage i halvkrystalliseret form. Det kan vi opnå ved at bruge Mana Sieve i templet. Lån sien og saml alle svævende manakugler, du finder.\r\n\r\nTemplets beboere vil ikke sætte pris på, at deres dyrebare artefakt lånes uden deres samtykke, men med tiden vil de forstå.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Vestlig pylon repareret",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Østlig pylon repareret",
+          "type": "monster"
+        }
+      ],
+      "summary": "Skaf Mana Sieve inde fra templet i Shen'dralas, og brug den til at samle Ancient Mana Crystals. Når du har skaffet nok mana, skal du styrke pylonerne og vende tilbage til Mordent Evenshade.",
+      "title": "Strøm til pylonerne",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df3e9584776b49da00011dd3ec53c635757b39eb032f0063ce08be4131222b30"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5402e0be2c49568b9807af2a941d1165fb287cb489d7adb89091edf4edf4fc25"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "d107a9aed7238478607e35a2f425479602c6f6606d2307b5c94edcf45019a5b7"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "ffd6f2c515068e2242365ceb07515056b210605b8b693024fee5da5bf08df43a"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "45e331620a1b5e4c50f43d3c4096b69c6635762d3c2be2fef96705b058a3e6d5"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Ihr habt vielleicht die schwebenden Manafunken gesehen, die in Shen'dralas verteilt sind. Es handelt sich dabei um ein neues Phänomen, das vermutlich eine Reaktion auf den Schaden ist, den die Pylonen erlitten haben.\r\n\r\nWir müssen dafür sorgen, dass dieses Mana wieder eine semikristalline Form annimmt. Und das können wir mit dem Manasieb im Tempel erreichen. Borgt Euch das Sieb und sammelt alle schwebenden Manakugeln ein, die Ihr findet.\r\n\r\nDie Einwohner des Tempels werden nicht erfreut darüber sein, dass sich jemand ohne Erlaubnis Ihr geschätztes Artefakt ausleiht... doch sie werden es schon noch verstehen.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "Holt das Manasieb aus dem Tempel in Shen'dralas und verwendet es, um uralte Manakristalle zu sammeln. Ladet die Pylonen auf, sobald Ihr genug Mana gesammelt habt, und kehrt anschließend zu Mordent Evenshade zurück.",
+      "title": "Energie für die Pylonen",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "deDE",
+            "sourceRevision": "c6745129ef9ea5e6dd1cdcd77224090f71bda880"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "sourceRevision": "static-1.60.1_70399-forever-eu"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "You may have seen the floating sparks of mana scattered throughout Shen'dralas. This is a new phenomenon, likely the result of the damage the pylons have endured.\r\n\r\nWe need this mana back in a semicrystallized form. We can accomplish this by using the Mana Sieve found within the temple. Borrow the sieve and collect any floating mana orbs you find.\r\n\r\nThe temple's denizens will not appreciate their precious artifact being borrowed without their consent, but they will understand in time.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "Acquire the Mana Sieve from within the temple in Shen'dralas and use it to collect Ancient Mana Crystals. Once you have acquired enough mana, empower the pylons and return to Mordent Evenshade.",
+      "title": "Powering the Pylons",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS",
+            "sourceRevision": "c6745129ef9ea5e6dd1cdcd77224090f71bda880"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "sourceRevision": "static-1.60.1_70399-forever-eu"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "Puede que hayas visto las chispas de maná flotantes que hay por Shen'dralas. Se trata de un nuevo fenómeno, causado probablemente por el daño que han sufrido los pilones.\r\n\r\nTenemos que recuperar ese maná en forma semicristalizada. Esto es algo que podemos conseguir utilizando el tamiz de maná que se encuentra dentro del templo. Cógelo y recoge los orbes de maná flotantes que te encuentres.\r\n\r\nA los habitantes del templo no les hará gracia que se lleven su preciado artefacto sin su consentimiento, pero, con el tiempo, lo entenderán.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "Adquiere el tamiz de maná del interior del templo en Shen'dralas y utilízalo para reunir cristales de maná antiguos. Cuando tengas suficiente maná, potencia los pilones y vuelve con Mordent Sombrapar.",
+      "title": "Activar los pilones",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esES",
+            "sourceRevision": "4dbb82440a27856f8dccf57094a5d792cdc7cc9b"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "Quizá hayas visto las partículas flotantes de maná por todo Shen'dralas. Este es un nuevo fenómeno, probablemente el resultado del daño que los pilares han aguantado.\r\n\r\nNecesitamos recuperar este maná en forma semicristalizada. Podemos lograrlo, podemos usar la criba de maná que se ubica dentro del templo. Toma prestada la criba y recoge todas las orbes de maná que encuentres.\r\n\r\nA los habitantes del templo no les gustará que tomes su precioso artefacto sin permiso, pero con el tiempo lo entenderán.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "Consigue la criba de maná del templo en Shen'dralas y úsalo para recoger cristales de maná ancestrales. Una vez que hayas obtenido suficiente maná, fortalece los pilares y regresa con Mordent Sombrapar.",
+      "title": "Potenciación de pilares",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esMX",
+            "sourceRevision": "a444a6418113ae0fce5d30c897674132e756ba1d"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Vous avez peut-être remarqué ces étincelles de mana qui flottent à travers Shen’dralas. C’est un phénomène nouveau, une probable conséquence des dégâts qu’ont subis les pylônes.\r\n\r\nNous devons faire en sorte que ce mana retrouve une forme semi-cristallisée. Pour ce faire, nous allons utiliser le tamis de mana que vous avons trouvé dans le temple. Empruntez le tamis et collectez tous les orbes de mana flottants que vous trouverez.\r\n\r\nLes habitants du temps risquent de ne pas apprécier que nous prenions leur précieux artéfact sans leur accord, mais un jour, ils comprendront.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Pylône ouest réparé : {current}/{required}",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "Pylône est réparé : {current}/{required}",
+          "type": "monster"
+        }
+      ],
+      "summary": "Obtenez le tamis de mana à l’intérieur du temple de Shen’dralas et utilisez-le pour collecter des cristaux de mana ancestral. Quand vous avez suffisamment de mana, renforcez les pylônes et retournez voir Mordent Ombrégale.",
+      "title": "Alimenter les pylônes",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "frFR"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "frFR"
+          },
+          "summary": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "frFR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Možda si vidio plutajuće iskre mane rasute po Shen'dralasu. To je nova pojava, vjerojatno posljedica štete koju su piloni pretrpjeli.\r\n\r\nTrebamo tu manu natrag u polukristaliziranom obliku. To možemo postići pomoću Mana Sievea koji se nalazi u hramu. Posudi sito i prikupi sve plutajuće kugle mane koje pronađeš.\r\n\r\nStanovnici hrama neće cijeniti što je njihova dragocjena artefakt posuđena bez pristanka, ali s vremenom će razumjeti.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Zapadni pilon popravljen",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Istočni pilon popravljen",
+          "type": "monster"
+        }
+      ],
+      "summary": "Pribavi Mana Sieve iz hrama u Shen'dralasu i njime skupi drevne kristale mane. Kad prikupiš dovoljno mane, osnaži pilone i vrati se Mordentu Evenshadeu.",
+      "title": "Napajanje pilona",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df3e9584776b49da00011dd3ec53c635757b39eb032f0063ce08be4131222b30"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5402e0be2c49568b9807af2a941d1165fb287cb489d7adb89091edf4edf4fc25"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "d107a9aed7238478607e35a2f425479602c6f6606d2307b5c94edcf45019a5b7"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "ffd6f2c515068e2242365ceb07515056b210605b8b693024fee5da5bf08df43a"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "45e331620a1b5e4c50f43d3c4096b69c6635762d3c2be2fef96705b058a3e6d5"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Potresti aver visto le scintille fluttuanti di mana sparse per Shen'dralas. È un fenomeno nuovo, probabilmente dovuto ai danni subiti dai piloni.\r\n\r\nDobbiamo recuperare questo mana in forma semicristallizzata. Possiamo farlo usando il Setaccio di Mana che si trova nel tempio. Prendi in prestito il setaccio e raccogli tutte le sfere di mana fluttuanti che trovi.\r\n\r\nGli abitanti del tempio non apprezzeranno che il loro prezioso manufatto venga preso in prestito senza il loro consenso, ma col tempo capiranno.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Pilone occidentale riparato",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Pilone orientale riparato",
+          "type": "monster"
+        }
+      ],
+      "summary": "Ottieni il Setaccio di Mana dal tempio di Shen'dralas e usalo per raccogliere Cristalli di Mana Antichi. Quando avrai raccolto abbastanza mana, potenzia i piloni e torna da Mordent Evenshade.",
+      "title": "Alimentare i piloni",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df3e9584776b49da00011dd3ec53c635757b39eb032f0063ce08be4131222b30"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5402e0be2c49568b9807af2a941d1165fb287cb489d7adb89091edf4edf4fc25"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "d107a9aed7238478607e35a2f425479602c6f6606d2307b5c94edcf45019a5b7"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "ffd6f2c515068e2242365ceb07515056b210605b8b693024fee5da5bf08df43a"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "45e331620a1b5e4c50f43d3c4096b69c6635762d3c2be2fef96705b058a3e6d5"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "셴드랄라스 곳곳에 떠다니는 마나의 불꽃을 보셨을 겁니다. 최근 수정탑이 입은 손상 때문에 생겨난 현상일 가능성이 크죠.\r\n\r\n이 마나를 반쯤 결정화된 형태로 되돌려야 합니다. 사원 안에 있는 마나 여과기를 쓰면 가능합니다. 여과기를 빌려 떠다니는 마나 구슬을 모아주십시오.\r\n\r\n사원의 주민들은 허락도 없이 귀중한 유물을 빌려 가는 걸 달가워하지 않겠지만, 시간이 지나면 이해할 겁니다.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "셴드랄라스 사원 안에서 마나 여과기를 입수하여 고대 마나 결정을 수집해야 합니다. 마나를 충분히 모으면 수정탑에 힘을 불어넣은 뒤, 모덴트 이븐셰이드에게 가야 합니다.",
+      "title": "수정탑 동력 공급",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "koKR",
+            "sourceRevision": "c6745129ef9ea5e6dd1cdcd77224090f71bda880"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "sourceRevision": "static-1.60.1_70399-forever-eu"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "Może widzisz unoszące się iskry many rozsiane po Shen'dralas. To nowe zjawisko, zapewne wynik uszkodzeń pylonów.\r\n\r\nPotrzebujemy tej many w częściowo skrystalizowanej postaci. Możemy to osiągnąć za pomocą sita many w świątyni. Pożycz sito i zbierz napotkane unoszące się kule many.\r\n\r\nMieszkańcy świątyni nie docenią pożyczenia cennego artefaktu bez zgody, ale z czasem zrozumieją.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Naprawiono zachodni pylon",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Naprawiono wschodni pylon",
+          "type": "monster"
+        }
+      ],
+      "summary": "Zdobądź sito many ze świątyni w Shen'dralas i użyj go do zbierania pradawnych kryształów many. Gdy zdobędziesz dość many, zasil pylony i wróć do Mordenta Evenshade'a.",
+      "title": "Zasilanie pylonów",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df3e9584776b49da00011dd3ec53c635757b39eb032f0063ce08be4131222b30"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5402e0be2c49568b9807af2a941d1165fb287cb489d7adb89091edf4edf4fc25"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "d107a9aed7238478607e35a2f425479602c6f6606d2307b5c94edcf45019a5b7"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "ffd6f2c515068e2242365ceb07515056b210605b8b693024fee5da5bf08df43a"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "45e331620a1b5e4c50f43d3c4096b69c6635762d3c2be2fef96705b058a3e6d5"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "Você deve ter visto as faíscas de mana flutuando por Shen'dralas. É um fenômeno novo, provável resultado do dano que os pilares sofreram.\r\n\r\nPrecisamos que esse mana volte a uma forma semicristalizada. Podemos conseguir isso usando o filtro de mana que se encontra no interior do templo. Pegue o filtro emprestado e colete os orbes de mana flutuantes que encontrar.\r\n\r\nOs moradores do tempo não vão gostar de ver seu estimado artefato sendo pego emprestado sem seu consentimento, mas com o tempo hão de entender.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "Acquire the Mana Sieve from within the temple in Shen'dralas and use it to collect Ancient Mana Crystals. Once you have acquired enough mana, empower the pylons and return to Mordent Evenshade.",
+      "title": "Potencializando os pilares",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS",
+            "sourceRevision": "c6745129ef9ea5e6dd1cdcd77224090f71bda880"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Видел парящие искры маны, рассыпанные по Шен'драласу? Это новое явление – скорее всего, результат повреждений столпов.\r\n\r\nНам нужно вернуть эту ману в полукристаллизованном виде. Храмовый фильтр маны подойдет для этих целей. Возьми его ненадолго и собери блуждающие сферы маны вокруг.\r\n\r\nОбитатели храма не одобрят, что мы забираем артефакт без их согласия, но со временем они нас поймут.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "Добудьте фильтр маны в храме Шен'драласа и соберите кристаллы древней маны. Затем усильте маной столпы и вернитесь к Морденту Вечерней Тени.",
+      "title": "Насыщение столпов силой",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ruRU",
+            "sourceRevision": "a444a6418113ae0fce5d30c897674132e756ba1d"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Du kanske har sett de svävande managnistorna som är utspridda över Shen'dralas. Det är ett nytt fenomen, sannolikt en följd av skadorna som pylonerna har utsatts för.\r\n\r\nVi behöver få tillbaka detta mana i halvkristalliserad form. Det kan vi åstadkomma med manasållaren i templet. Låna sållaren och samla alla svävande manaklot du hittar.\r\n\r\nTemplets invånare kommer inte att uppskatta att deras dyrbara artefakt lånas utan deras medgivande, men med tiden kommer de att förstå.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Västra pylonen reparerad",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Östra pylonen reparerad",
+          "type": "monster"
+        }
+      ],
+      "summary": "Skaffa manasilen inne i templet i Shen'dralas och använd den för att samla uråldriga manakristaller. När du har tillräckligt med mana, ge pylonerna kraft och återvänd till Mordent Evenshade.",
+      "title": "Ge pylonerna kraft",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df3e9584776b49da00011dd3ec53c635757b39eb032f0063ce08be4131222b30"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5402e0be2c49568b9807af2a941d1165fb287cb489d7adb89091edf4edf4fc25"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "d107a9aed7238478607e35a2f425479602c6f6606d2307b5c94edcf45019a5b7"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "ffd6f2c515068e2242365ceb07515056b210605b8b693024fee5da5bf08df43a"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "45e331620a1b5e4c50f43d3c4096b69c6635762d3c2be2fef96705b058a3e6d5"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Shen'dralas boyunca dağılmış, havada süzülen mana kıvılcımlarını görmüş olabilirsin. Yeni bir olay, muhtemelen pilonların aldığı hasarın sonucu.\n\nBu manayı yarı kristalleşmiş halde geri almalıyız. Tapınağın içindeki Mana Sieve'i kullanarak yapabiliriz. Eleği ödünç al ve bulduğun süzülen mana kürelerini topla.\n\nTapınağın sakinleri kıymetli eserlerinin izinsiz ödünç alınmasını takdir etmeyecek ama zamanla anlayacaklar.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Batı pilonu onarıldı",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Doğu pilonu onarıldı",
+          "type": "monster"
+        }
+      ],
+      "summary": "Shen'dralas tapınağından Mana Eleği'ni al ve Kadim Mana Kristalleri toplamak için kullan. Yeterince mana edindiğinde pilonlara güç ver ve Mordent Evenshade'e dön.",
+      "title": "Pilonlara Güç Sağlamak",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df3e9584776b49da00011dd3ec53c635757b39eb032f0063ce08be4131222b30"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5402e0be2c49568b9807af2a941d1165fb287cb489d7adb89091edf4edf4fc25"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "d107a9aed7238478607e35a2f425479602c6f6606d2307b5c94edcf45019a5b7"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "ffd6f2c515068e2242365ceb07515056b210605b8b693024fee5da5bf08df43a"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "45e331620a1b5e4c50f43d3c4096b69c6635762d3c2be2fef96705b058a3e6d5"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Можливо, ти бачив плавучі іскри мани по всьому Шен'драласу. Це нове явище, імовірно, наслідок пошкодження пілонів.\r\n\r\nНам треба повернути цю ману в напівкристалізованій формі. Для цього можна використати сито мани в храмі. Позич сито й збери всі плавучі кулі мани, які знайдеш.\r\n\r\nМешканці храму не зрадіють позичанню дорогоцінного артефакту без згоди, але з часом зрозуміють.",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Полагодьте західний пілон",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Полагодьте східний пілон",
+          "type": "monster"
+        }
+      ],
+      "summary": "Дістаньте сито мани всередині храму Шен'драласа й скористайтеся ним, щоб збирати давні кристали мани. Зібравши достатньо мани, підсильте пілони й поверніться до Mordent Evenshade.",
+      "title": "Живлення пілонів",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df3e9584776b49da00011dd3ec53c635757b39eb032f0063ce08be4131222b30"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "5402e0be2c49568b9807af2a941d1165fb287cb489d7adb89091edf4edf4fc25"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "d107a9aed7238478607e35a2f425479602c6f6606d2307b5c94edcf45019a5b7"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "ffd6f2c515068e2242365ceb07515056b210605b8b693024fee5da5bf08df43a"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "45e331620a1b5e4c50f43d3c4096b69c6635762d3c2be2fef96705b058a3e6d5"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "你或许已经留意到散布在辛德拉各处漂浮的法力火花。这是一种全新现象，极有可能是水晶塔受损所致。\r\n\r\n我们需要将这些法力收集并转化为半结晶状态。神殿里的法力过滤网正好能派上用场。借用过滤网，去收集你发现的所有漂浮的法力宝珠。\r\n\r\n神殿居民肯定不乐意别人未经许可就借用他们的珍贵神器，但他们迟早会理解的。",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "从辛德拉神殿内取得法力过滤网，并用它来收集远古魔力水晶。收集到足够的法力后，即刻为水晶塔充能，然后向莫丹特·永影复命。",
+      "title": "为晶塔供能",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhCN",
+            "sourceRevision": "a444a6418113ae0fce5d30c897674132e756ba1d"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "你應該有看到申德拉斯各處飄著法力的火光。這個現象從未發生過，我想應該是水晶塔被毀時造成的。\r\n\r\n我們必須把法力恢復成半水晶化的狀態。我們可以利用神殿裡的法力過濾器。借用過濾器，然後收集任何漂浮的法力球體。\r\n\r\n神殿的居民雖然不會喜歡有人借用他們珍貴的神器，但之後他們一定能理解的。",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} Western pylon repaired",
+          "type": "monster"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Eastern pylon repaired",
+          "type": "monster"
+        }
+      ],
+      "summary": "取得申德拉斯神殿裡的法力過濾器，然後用它來收集上古法力水晶。收集足夠的數量後，啟用水晶塔，然後再回去找摩丹特‧平影。",
+      "title": "為水晶塔充能",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70862",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4dbb82440a27856f8dccf57094a5d792cdc7cc9b"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  }
+}

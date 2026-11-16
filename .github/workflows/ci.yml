@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          python-version: '3.12'
+      - name: Test release packaging
+        run: uv run --no-project python tests/python/test-release.py
+      - name: Check catalog JSON format
+        run: uv run --no-project python tools/catalogs/format-catalogs.py --check
+      - name: Build production database
+        run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
+      - name: Test addon
+        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py
+      - name: Test database contracts
+        run: uv run --no-project --with lupa==2.8 python tests/python/test-lua-database.py
+      - name: Build preview ZIP
+        run: uv run --no-project python tools/release/build-release.py
+      - uses: actions/upload-artifact@v7
+        with:
+          name: addon-preview
+          path: |
+            dist/*.zip
+            dist/release-notes.md
+          if-no-files-found: error
+

@@ -1,0 +1,55 @@
+{
+  "wago": [
+    "datasources/imports/wago"
+  ],
+  "talents": [
+    "datasources/imports/wago"
+  ],
+  "blizzard": [
+    {
+      "path": "datasources/imports/blizzard"
+    }
+  ],
+  "egLink": [
+    {
+      "path": "datasources/imports/eg-link/creature_details.enUS.json"
+    },
+    {
+      "path": "datasources/imports/eg-link/item_hotfixes.enUS.json"
+    }
+  ],
+  "questie": [
+    {
+      "path": "datasources/imports/questie"
+    }
+  ],
+  "limitations": [
+    "This file is the refresh layout template; datasources/refresh.py generates a pinned sources.json for each imports run.",
+    "Catalog original/community metadata is a retained claim, not independent verification.",
+    "GitHub and CurseForge community sources include Ukrainian, Czech, Polish, Swedish, Italian and Turkish datasets; see datasources/README.md for the active registry. CurseForge sources discover the latest approved public Forever release without API credentials.",
+    "Locally authored AI text is excluded from the reference index and retained in complete entity packets.",
+    "Questie English text uses composed static exports; quest fields and NPC names compose base and per-field traces. Item names retain base lookups; differing or trace-only observations are flagged unverifiedItemNameTrace.",
+    "Blizzard supplies quest titles and descriptions; Questie supplies summaries and missing titles. EG Link is used only for NPC and item text.",
+    "Blizzard's resolved API namespace is independent of the current client build; Italian and English fallbacks are not accepted as native translations.",
+    "Wago exports may contain English or other-language fallback; flagged rows require inspection.",
+    "Language collision heuristics do not establish linguistic correctness or completeness.",
+    "Danish/Croatian and AI-only community fields may have no reference candidates; no translations are generated.",
+    "No in-game scan is imported by this configuration.",
+    "Classic and other-server translations are context candidates, not proof of Forever applicability.",
+    "Italian QuestIT data retains its separate translation licence; unidentified or conflicting licence grants are flagged context-only."
+  ],
+  "classicUA": [],
+  "czechForever": [],
+  "foreverTranslatedPolish": [],
+  "varldenAvKrigskraft": [],
+  "foreverTR": [],
+  "polishForever": [],
+  "wowitaQuests": [],
+  "wowForeverIT": [],
+  "wowForverItaliano": [],
+  "wowLang": [],
+  "questTranslatorTR": [],
+  "vmangos": [],
+  "egBooks": [],
+  "egBookTexts": []
+}

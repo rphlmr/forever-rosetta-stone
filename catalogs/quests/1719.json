@@ -1,0 +1,833 @@
+{
+  "clientObjectiveTargets": [
+    {
+      "id": 6238,
+      "index": 1,
+      "kind": "npc",
+      "type": "monster"
+    }
+  ],
+  "clientObjectiveTargetsMetadata": {
+    "source": "clientCapture",
+    "sourceBuild": "70938",
+    "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
+    "sourceLocale": "enUS"
+  },
+  "locales": {
+    "csCZ": {
+      "description": "Pokud se chceš učit ode mě, musíš nejprve projít zkouškou Affray. Je to výzva, kterou my na Fray Islandu nabízíme začínajícím válečníkům, co si o sobě myslí, jak jsou tvrdí. A pokud tou zkouškou projdeš, poznám, že na to máš.\n\nZačni tím, že vejdeš doprostřed tamtoho davu a stoupneš si na mříž. Tím Twiggymu Flatheadovi ukážeš, že můžeš začít, a on proti tobě pošle vyzyvatele.\n\nPoraz všechny vyzyvatele a on vyvolá Big Willa. Zabij Big Willa a vrať se ke mně ve stanoveném čase.",
+      "eventObjectiveLabel": "Stoupni na mříž a zahaj šarvátku",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Stoupni na mříž a zahaj šarvátku",
+          "type": "event"
+        }
+      ],
+      "summary": "Zabij Big Willa a pak si promluv s Klannocem Macleodem na Fray Island.",
+      "title": "Šarvátka",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bdae25031c057af2600bb10e7a48fd470cb505b6307dd36522633c46abf2adb7"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "df82edf8f5032aeaf79dd87377b9fd30027c473a0547ec4fef85d7b7abc5151a"
+          },
+          "objectiveLines.2": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "a9ee6f5edfa4ee94f1d2b85f8ea7e8a0844893eafbf654af1fcba2fc2c3f4fe9"
+          },
+          "title": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "enUS",
+            "sourceRevision": "v0.7.1",
+            "sourceTextSha256": "dba7061c26effe317cd991cd0946396ebe41bcf9b7140d29d119747c338b53dd"
+          }
+        }
+      }
+    },
+    "daDK": {
+      "description": "Hvis du vil lære af mig, må du først bestå The Affray. Det er en udfordring, vi på Fray Island gerne tilbyder fremadstormende krigere, som tror, de er hårde, og hvis du kan bestå denne prøve, ved jeg, at du er det.\n\nFor at begynde skal du gå ind midt i menneskemængden derovre og træde på risten. Det fortæller Twiggy Flathead, at du er klar, og han vil sende udfordrere mod dig.\n\nBesejr alle udfordrerne, så kalder han Big Will frem. Dræb Big Will, og vend tilbage til mig inden for den tid, vi giver.",
+      "eventObjectiveLabel": "Træd på risten for at begynde Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Træd på risten for at begynde Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "Dræb Big Will, og tal derefter med Klannoc Macleod på Fray Island.",
+      "title": "Slagsmålet",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bdae25031c057af2600bb10e7a48fd470cb505b6307dd36522633c46abf2adb7"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df82edf8f5032aeaf79dd87377b9fd30027c473a0547ec4fef85d7b7abc5151a"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a9ee6f5edfa4ee94f1d2b85f8ea7e8a0844893eafbf654af1fcba2fc2c3f4fe9"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "dba7061c26effe317cd991cd0946396ebe41bcf9b7140d29d119747c338b53dd"
+          }
+        }
+      }
+    },
+    "deDE": {
+      "description": "Wenn Ihr von mir lernen wollt, müsst Ihr zuerst den Ringkampf absolvieren. Das ist eine Herausforderung hier auf dem Prügel-Eiland, an der wir aufstrebende Krieger teilnehmen lassen, die sich für gut genug halten. Wenn Ihr gewinnt, dann weiß ich, dass Ihr es tatsächlich seid.\n\nGeht als Erstes mitten in diese Menge dort und stellt Euch auf den Rost. Dadurch weiß Twiggy Flathead, dass Ihr bereit seid, und er schickt Euch Herausforderer.\n\nWenn Ihr alle Herausforderer besiegt habt, ruft er Big Will. Tötet Big Will und kehrt innerhalb der von uns gesetzten Frist zu mir zurück.",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "Tötet Big Will und sprecht mit Klannoc Macleod auf dem Prügel-Eiland.",
+      "title": "Der Ringkampf",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "deDE"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "deDE"
+          }
+        }
+      }
+    },
+    "enUS": {
+      "description": "If you want to learn from me, then you must first pass The Affray.  It is a challenge we on Fray Island like to offer rising warriors who think they're tough, and if you can pass this test then I'll know you are.\n\nTo begin, walk into the middle of that crowd yonder and step on the grate.  That'll tell Twiggy Flathead you're ready, and he'll send challengers against you.\n\nBeat all the challengers and he'll call out Big Will.  Kill Big Will, and return to me in the time we allow.",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "Kill Big Will, then speak to Klannoc Macleod on Fray Island.",
+      "title": "The Affray",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS",
+            "sourceRevision": "a444a6418113ae0fce5d30c897674132e756ba1d"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "esES": {
+      "description": "Si quieres instruirte conmigo tendrás que superar La Reyerta. Es un desafío que ofrecemos aquí, en Isla de Batalla, a los guerreros que se creen fuertes, si superas la prueba sabremos que lo eres.\n\nPara empezar dirígete al centro de esa multitud y ponte en la rejilla. Así indicarás a Twiggy Cabezaplana que estás preparado y enviará a tus contrincantes.\n\nDerrótalos y llamará a Will el Grande. Mata a Will el Grande y vuelve a verme dentro del tiempo permitido.",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "Mata a Will el Grande y habla con Klannoc Macleod en Isla de Batalla.",
+      "title": "La Reyerta",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esES"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          }
+        }
+      }
+    },
+    "esMX": {
+      "description": "Si quieres instruirte conmigo tendrás que superar La Reyerta. Es un desafío que ofrecemos aquí, en Isla de Batalla, a los guerreros que se creen fuertes, si superas la prueba sabremos que lo eres.\n\nPara empezar dirígete al centro de esa multitud y ponte en la rejilla. Así indicarás a Twiggy Cabezaplana que estás preparado y enviará a tus contrincantes.\n\nDerrótalos y llamará a Will el Grande. Mata a Will el Grande y vuelve a verme dentro del tiempo permitido.",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "Mata a Will el Grande y habla con Klannoc Macleod en Isla de Batalla.",
+      "title": "La Reyerta",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "esMX"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          }
+        }
+      }
+    },
+    "frFR": {
+      "description": "Si vous voulez que je sois votre Maître, vous devez d'abord passer la Dispute. C'est une épreuve que nous, sur l'île de la Dispute, aimons faire passer aux guerriers qui pensent être forts, et si vous réussissez ce test alors nous saurons que vous l'êtes.\n\nPour commencer, marchez à travers cette foule là-bas, et allez jusqu'à l'âtre. Dites à Twiggy Flathead que vous êtes prêt, il vous enverra des partenaires de combat.\n\nBattez-les tous, et il appellera le Grand Will. Tuez le Grand Will, et revenez me voir.",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "Tuer le Grand Will et parler à Klannoc Macleod sur l'île de la Dispute.",
+      "title": "La Dispute",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "frFR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "frFR"
+          }
+        }
+      }
+    },
+    "hrHR": {
+      "description": "Ako želiš učiti od mene, najprije moraš proći Borbu. To je izazov koji mi na Fray Islandu volimo ponuditi ratnicima u usponu koji misle da su žilavi, a ako prođeš ovu kušnju, znat ću da jesi.\n\nZa početak uđi usred one gomile i stani na rešetku. Tako će Twiggy Flathead znati da si spreman i poslati izazivače protiv tebe.\n\nPobijedi sve izazivače i pozvat će Velikog Willa. Ubij Velikog Willa i vrati mi se u vremenu koje ti dopustimo.",
+      "eventObjectiveLabel": "Stani na rešetku kako bi započeo borbu",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Stani na rešetku kako bi započeo borbu",
+          "type": "event"
+        }
+      ],
+      "summary": "Ubij Velikog Willa, a zatim razgovaraj s Klannocom Macleodom na Fray Islandu.",
+      "title": "Borba",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bdae25031c057af2600bb10e7a48fd470cb505b6307dd36522633c46abf2adb7"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df82edf8f5032aeaf79dd87377b9fd30027c473a0547ec4fef85d7b7abc5151a"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a9ee6f5edfa4ee94f1d2b85f8ea7e8a0844893eafbf654af1fcba2fc2c3f4fe9"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "dba7061c26effe317cd991cd0946396ebe41bcf9b7140d29d119747c338b53dd"
+          }
+        }
+      }
+    },
+    "itIT": {
+      "description": "Se vuoi imparare da me, prima devi superare la Mischia. È una sfida che noi di Fray Island amiamo proporre ai guerrieri emergenti che si credono duri, e se la superi saprò che lo sei davvero.\n\nPer cominciare, entra in mezzo a quella folla laggiù e sali sulla grata. Così Twiggy Flathead saprà che sei pronto e ti manderà contro degli sfidanti.\n\nBatti tutti gli sfidanti e chiamerà Big Will. Uccidi Big Will e torna da me entro il tempo concesso.",
+      "eventObjectiveLabel": "Sali sulla grata per dare inizio alla Zuffa",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Sali sulla grata per dare inizio alla Zuffa",
+          "type": "event"
+        }
+      ],
+      "summary": "Uccidi Big Will, poi parla con Klannoc Macleod su Fray Island.",
+      "title": "La zuffa",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bdae25031c057af2600bb10e7a48fd470cb505b6307dd36522633c46abf2adb7"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df82edf8f5032aeaf79dd87377b9fd30027c473a0547ec4fef85d7b7abc5151a"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a9ee6f5edfa4ee94f1d2b85f8ea7e8a0844893eafbf654af1fcba2fc2c3f4fe9"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "dba7061c26effe317cd991cd0946396ebe41bcf9b7140d29d119747c338b53dd"
+          }
+        }
+      }
+    },
+    "koKR": {
+      "description": "나에게서 광전사로서의 자세를 배우고 싶다면 먼저 격투에서 이겨야만 하오. 이곳 격투의 섬은 자신이 강하다고 생각하는 유망한 전사들이 모여 있는 곳이오. 격투에서 승리하게 되면 만천하에 자신의 강함을 증명해 보이게 되는 것이지.\n\n격투를 시작하려면 저기 모인 관중 중앙의 격투장 위에 서시오. 그러면 트위기 플랫헤드가 당신이 준비된 것으로 알고 도전자들을 내보낼 거요.\n\n도전자들을 모두 이기면 싸움꾼 윌이 나올 테니 그를 꺾고, 주어진 시간 안에 내게 돌아오시오.",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "싸움꾼 윌을 꺾고 격투의 섬에 있는 클라녹 맥클라우드과 대화하십시오.",
+      "title": "격투장",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "koKR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "description": "Jeśli chcesz się ode mnie uczyć, musisz najpierw przejść Bójkę. To wyzwanie, które na Fray Island lubimy stawiać rozwijającym się wojownikom uważającym się za twardzieli. Jeśli przejdziesz tę próbę, będę wiedział, że nim jesteś.\n\nNa początek wejdź w środek tamtego tłumu i stań na kracie. W ten sposób pokażesz Twiggy'emu Flatheadowi swoją gotowość, a on wyśle przeciw tobie pretendentów.\n\nPokonaj wszystkich, a wezwie Wielkiego Willa. Zabij go i wróć do mnie w wyznaczonym czasie.",
+      "eventObjectiveLabel": "Stań na kracie, aby rozpocząć bójkę",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Stań na kracie, aby rozpocząć bójkę",
+          "type": "event"
+        }
+      ],
+      "summary": "Zabij Wielkiego Willa, a następnie porozmawiaj z Klannokiem Macleodem na Fray Island.",
+      "title": "Bójka",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bdae25031c057af2600bb10e7a48fd470cb505b6307dd36522633c46abf2adb7"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df82edf8f5032aeaf79dd87377b9fd30027c473a0547ec4fef85d7b7abc5151a"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a9ee6f5edfa4ee94f1d2b85f8ea7e8a0844893eafbf654af1fcba2fc2c3f4fe9"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "dba7061c26effe317cd991cd0946396ebe41bcf9b7140d29d119747c338b53dd"
+          }
+        }
+      }
+    },
+    "ptBR": {
+      "description": "Se quiser aprender comigo, primeiro tem que passar pela Contenda. É um desafio que nós da Ilha da Peleja gostamos de apresentar a guerreiros em ascensão que se acham durões. Se você passar no teste, eu saberei que você é durão mesmo.\n\nPara começar, vá até aquele pessoal ali e pise na grade. Isso vai sinalizar para o Kabe Sashata que você está pronto, e ele vai mandar os desafiantes contra você.\n\nDerrote todos os desafiantes e o Kabe chamará o Grande Gui. Mate o Grande Gui, e então fale novamente comigo logo depois.",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "Mate o Grande Gui. Em seguida, fale com Klannoc Macleod na Ilha da Peleja.",
+      "title": "A contenda",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ptBR"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          }
+        }
+      }
+    },
+    "ruRU": {
+      "description": "Если ты хочешь учиться у меня, тебе придется пройти испытание, Побоище. Через него проходят все молодые воины, вообразившие себя великими. А величие надо доказывать.\n\nДля начала пройди сквозь ту толпу и встань на решетку. Это будет знак Пруттику Плоскоголову, что ты готов. Он сразу пошлет тебе поединщика.\n\nКогда ты одолеешь всех, он позовет Большого Билла. Убей его и вернись ко мне за отведенное время.",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "Убейте Большого Билла и поговорите с Кланноком Маклеодом на Острове Битв.",
+      "title": "Побоище",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "ruRU"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          }
+        }
+      }
+    },
+    "svSE": {
+      "description": "Om du vill lära av mig måste du först klara Handgemänget. Det är en utmaning som vi på Slagsmålsön gärna erbjuder krigare på uppåtgående som tror att de är tuffa, och om du klarar det här provet vet jag att du är det.\n\nFör att börja, gå in mitt i folksamlingen där borta och ställ dig på gallret. Då vet Twiggy Flathead att du är redo, och han skickar utmanare mot dig.\n\nBesegra alla utmanarna så kallar han fram Stora Wille. Döda Stora Wille och återvänd till mig inom den tid vi tillåter.",
+      "eventObjectiveLabel": "Ställ dig på gallret för att inleda slagsmålet",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Ställ dig på gallret för att inleda slagsmålet",
+          "type": "event"
+        }
+      ],
+      "summary": "Döda Stora Wille och tala sedan med Klannoc Macleod på Slagsmålsön.",
+      "title": "Handgemänget",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bdae25031c057af2600bb10e7a48fd470cb505b6307dd36522633c46abf2adb7"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df82edf8f5032aeaf79dd87377b9fd30027c473a0547ec4fef85d7b7abc5151a"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "a9ee6f5edfa4ee94f1d2b85f8ea7e8a0844893eafbf654af1fcba2fc2c3f4fe9"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "enUS",
+            "sourceRevision": "0.10.1",
+            "sourceTextSha256": "dba7061c26effe317cd991cd0946396ebe41bcf9b7140d29d119747c338b53dd"
+          }
+        }
+      }
+    },
+    "trTR": {
+      "description": "Benden öğrenmek istiyorsan önce Arbede'yi geçmelisin. Fray Adası'nda kendini sert sanan yükselen Warrior'lara sunmaktan hoşlandığımız bir meydan okuma bu; sen de bu sınavı geçersen gerçekten sert olduğunu anlarım.\n\nBaşlamak için şuradaki kalabalığın ortasına yürü ve ızgaraya bas. Böylece Twiggy Flathead hazır olduğunu anlar ve üzerine rakipler salar.\n\nTüm rakipleri yenersen Big Will'i çağırır. Big Will'i öldür ve bizim tanıdığımız süre içinde bana dön.",
+      "eventObjectiveLabel": "Mücadeleyi başlatmak için ızgaranın üstüne bas",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Mücadeleyi başlatmak için ızgaranın üstüne bas",
+          "type": "event"
+        }
+      ],
+      "summary": "Big Will'i öldür, sonra Fray Adası'ndaki Klannoc Macleod ile konuş.",
+      "title": "Arbede",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bdae25031c057af2600bb10e7a48fd470cb505b6307dd36522633c46abf2adb7"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df82edf8f5032aeaf79dd87377b9fd30027c473a0547ec4fef85d7b7abc5151a"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "a9ee6f5edfa4ee94f1d2b85f8ea7e8a0844893eafbf654af1fcba2fc2c3f4fe9"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "dba7061c26effe317cd991cd0946396ebe41bcf9b7140d29d119747c338b53dd"
+          }
+        }
+      }
+    },
+    "ukUA": {
+      "description": "Якщо хочеш навчатися в мене, спершу мусиш пройти Побоїще. На острові Битв ми любимо пропонувати це випробування воїнам-початківцям, які вважають себе міцними. Якщо пройдеш його, я знатиму, що так воно і є.\n\nДля початку підійди до середини того натовпу й стань на ґрати. Так Twiggy Flathead зрозуміє, що ти готовий, і виставить проти тебе суперників.\n\nЗдолай їх усіх, і він покличе здорованя Вілла. Убий Вілла й повернися до мене за відведений час.",
+      "eventObjectiveLabel": "Станьте на ґрати, щоб розпочати Побоїще",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Станьте на ґрати, щоб розпочати Побоїще",
+          "type": "event"
+        }
+      ],
+      "summary": "Вбийте здорованя Вілла та поговоріть з Кланноком Маклеодом на острові Битв.",
+      "title": "Побоїще",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bdae25031c057af2600bb10e7a48fd470cb505b6307dd36522633c46abf2adb7"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "df82edf8f5032aeaf79dd87377b9fd30027c473a0547ec4fef85d7b7abc5151a"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "a9ee6f5edfa4ee94f1d2b85f8ea7e8a0844893eafbf654af1fcba2fc2c3f4fe9"
+          },
+          "title": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "dba7061c26effe317cd991cd0946396ebe41bcf9b7140d29d119747c338b53dd"
+          }
+        }
+      }
+    },
+    "zhCN": {
+      "description": "如果你想从我这儿学到什么，你必须首先通过格斗考验。对于我们勇士岛上的自认为勇猛而又跃跃欲试的战士们来说，这是他们必须通过的挑战，如果你能通过这个考验，那么你就证明了自己的价值。\n\n要开始接受考验的话，就走到那边人群中的斗阵中央。图维基·弗拉海德会知道你已经准备好了，然后他就会派出挑战者来对你进行考验。\n\n在战胜了所有挑战者之后，他会叫出比格维尔。杀了比格维尔，在限定的时间内回到我这里来复命。",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "杀掉比格维尔，然后向勇士岛的克兰诺克·马克雷德回复。",
+      "title": "格斗考验",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhCN"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhCN"
+          }
+        }
+      }
+    },
+    "zhTW": {
+      "description": "如果你想從我這兒學到什麼，你必須首先通過格鬥考驗。對於我們勇士島上的自認為勇猛而又躍躍欲試的戰士們來說，這是他們必須通過的挑戰，如果你能通過這個考驗，那麼你就證明了自己的價值。\n\n要開始接受考驗的話，就走到那邊人群中的鬥陣中央。圖維琪·弗拉海德會知道你已經準備好了，然後他就會派出挑戰者來對你進行考驗。\n\n在戰勝了所有挑戰者之後，他會叫出比格維爾。殺了比格維爾，在限定的時間內回到我這裡來覆命。",
+      "eventObjectiveLabel": "Step on the grate to begin the Affray",
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Step on the grate to begin the Affray",
+          "type": "event"
+        }
+      ],
+      "summary": "殺掉比格維爾，然後向勇士島的克蘭諾克·馬克雷德回覆。",
+      "title": "格鬥考驗",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "eventObjectiveLabel": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "70938",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "community",
+            "source": "questie",
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4dbb82440a27856f8dccf57094a5d792cdc7cc9b"
+          },
+          "title": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          }
+        }
+      }
+    }
+  },
+  "objectiveTargets": {
+    "npc": [
+      {
+        "id": 6238
+      }
+    ]
+  }
+}

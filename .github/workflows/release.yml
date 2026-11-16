@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag, e.g. v1.0.0
+        required: true
+        type: string
+      publish:
+        description: Upload to CurseForge (only after initial project approval)
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+    steps:
+      - name: Validate tag format
+        run: |
+          python3 -c 'import os, re; assert re.fullmatch(r"v(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)", os.environ["RELEASE_TAG"]), "Expected vMAJOR.MINOR.PATCH"'
+      - uses: actions/checkout@v7
+        with:
+          ref: refs/tags/${{ env.RELEASE_TAG }}
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          python-version: '3.12'
+      - name: Test release packaging
+        run: uv run --no-project python tests/python/test-release.py
+      - name: Build production database
+        run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
+      - name: Test addon
+        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py
+      - name: Test database contracts
+        run: uv run --no-project --with lupa==2.8 python tests/python/test-lua-database.py
+      - name: Build release ZIP and notes
+        run: uv run --no-project python tools/release/build-release.py --tag "$RELEASE_TAG"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: addon-${{ env.RELEASE_TAG }}
+          path: |
+            dist/*.zip
+            dist/release-notes.md
+          if-no-files-found: error
+      - name: Upload to CurseForge
+        if: vars.CURSEFORGE_ENABLED == 'true' && (github.event_name == 'push' || inputs.publish)
+        env:
+          CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
+          CURSEFORGE_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
+          CURSEFORGE_GAME_VERSION_IDS: ${{ vars.CURSEFORGE_GAME_VERSION_IDS }}
+        run: uv run --no-project python tools/release/upload-curseforge.py
