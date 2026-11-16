@@ -81,6 +81,9 @@ If a translation sounds wrong or misses the meaning, help me make it better. Sha
 the original text, and your suggested correction. Improvements are welcome, whether it's one word
 or a whole quest.
 
+See the [translation contribution guide](https://github.com/rphlmr/forever-rosetta-stone/blob/main/CONTRIBUTING.md)
+to submit a community translation or edit a catalog in a pull request.
+
 For missing text or addon problems, see [how to prepare a report](https://github.com/rphlmr/forever-rosetta-stone/blob/main/docs/troubleshooting.md).
 
 ## Sources and thanks
