@@ -20,9 +20,11 @@ python3 tools/build/build-character-stat-formats.py --help
 
 ## Release
 
-`release/` owns ZIP packaging and version-specific release notes. CI and release
-workflows call the packager directly; the release workflow publishes the result on GitHub. Generated data addons are flattened beside the main
-addon in release archives.
+`release/` owns ZIP packaging and version-specific release notes. CI builds the preview;
+Release waits for successful main CI on the exact tagged commit and promotes that artifact
+without rebuilding or rerunning tests. `build-release.py --tag vVERSION --from-preview ZIP`
+validates and copies the existing ZIP bytes, with notes from the matching changelog section.
+Generated data addons are flattened beside the main addon in release archives.
 
 ```sh
 python3 tools/release/build-release.py

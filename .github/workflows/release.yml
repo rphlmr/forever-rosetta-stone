@@ -22,9 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 30
+      actions: read
+      checks: read
+    timeout-minutes: 40
     env:
       RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
     steps:
       - name: Validate tag format
         run: |
@@ -34,23 +38,30 @@ jobs:
           ref: refs/tags/${{ env.RELEASE_TAG }}
           persist-credentials: false
           fetch-depth: 0
-      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
-        with:
-          python-version: '3.12'
       - name: Require a merged release commit
         run: git merge-base --is-ancestor HEAD origin/main
-      - name: Check catalog JSON format
-        run: uv run --no-project python tools/catalogs/format-catalogs.py --check
-      - name: Test release packaging
-        run: uv run --no-project python tests/python/test-release.py
-      - name: Build production database
-        run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
-      - name: Test addon
-        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py --unit-only
-      - name: Test database contracts
-        run: uv run --no-project --with lupa==2.8 python tests/python/test-lua-database.py
-      - name: Build release ZIP and notes
-        run: uv run --no-project python tools/release/build-release.py --tag "$RELEASE_TAG"
+      - name: Wait for the tagged commit's CI and download its preview
+        run: |
+          commit=$(git rev-parse HEAD)
+          run_id=""
+          for attempt in $(seq 1 12); do
+            run_id=$(gh run list --workflow ci.yml --event push --branch main --commit "$commit" \
+              --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+            if [ -n "$run_id" ]; then break; fi
+            sleep 5
+          done
+          if [ -z "$run_id" ]; then
+            echo "::error::No main CI run found for tagged commit $commit. Run CI on this commit before releasing."
+            exit 1
+          fi
+          gh run watch "$run_id" --exit-status --interval 15
+          test "$(gh run view "$run_id" --json conclusion --jq .conclusion)" = success
+          test "$(gh run view "$run_id" --json headSha --jq .headSha)" = "$commit"
+          gh run download "$run_id" --name addon-preview --dir ci-artifact
+      - name: Promote the validated ZIP and extract release notes
+        run: |
+          python3 tools/release/build-release.py --tag "$RELEASE_TAG" \
+            --from-preview "ci-artifact/ForeverRosettaStone-${RELEASE_TAG#v}-preview.zip"
       - uses: actions/upload-artifact@v7
         with:
           name: addon-${{ env.RELEASE_TAG }}
@@ -59,9 +70,6 @@ jobs:
             dist/release-notes.md
           if-no-files-found: error
       - name: Publish GitHub Release
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
         run: |
           gh release create "$RELEASE_TAG" dist/*.zip dist/release-notes.md \
             --verify-tag --title "Forever Rosetta Stone $RELEASE_TAG" \

@@ -6,7 +6,8 @@ import unittest
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from zipfile import ZipFile
+from zipfile import ZipFile, BadZipFile, ZipInfo
+import stat
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -50,6 +51,65 @@ def create_fixture(root):
 
 
 class ReleaseTests(unittest.TestCase):
+    def test_promoting_preview_preserves_bytes_and_uses_release_notes_without_rebuilding(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            create_fixture(root)
+            preview = release['build_release'](root, root / 'preview')
+            original = preview.read_bytes()
+            (root / 'ForeverRosettaStone_Data/enUS/data.lua').write_text('Unbuilt checkout data must not replace CI data')
+            archive = release['build_release'](root, root / 'release', 'v0.7.0', preview)
+            self.assertEqual(archive.name, 'ForeverRosettaStone-0.7.0.zip')
+            self.assertEqual(archive.read_bytes(), original)
+            self.assertEqual((root / 'release/release-notes.md').read_text(),
+                             '## 0.7.0\n\n### Fixed\n\n- Fixed hover text.\n')
+
+    def test_preview_promotion_requires_a_matching_tag(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            create_fixture(root)
+            preview = release['build_release'](root, root / 'preview')
+            for tag in (None, 'v0.8.0'):
+                with self.subTest(tag=tag), self.assertRaisesRegex(ValueError, 'matching the TOC version'):
+                    release['build_release'](root, root / 'release', tag, preview)
+
+    def test_preview_promotion_rejects_mismatched_incomplete_and_unsafe_payloads(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            create_fixture(root)
+            preview = release['build_release'](root, root / 'preview')
+            with ZipFile(preview) as bundle:
+                original = {name: bundle.read(name) for name in bundle.namelist()}
+            toc = 'ForeverRosettaStone/ForeverRosettaStone.toc'
+            pack_toc = f'{PACK}/{PACK}.toc'
+            mutations = {
+                'wrong version': {toc: original[toc].replace(b'0.7.0', b'0.8.0')},
+                'wrong catalog': {pack_toc: b'## X-Rosetta-Catalog: wrong\n'},
+                'missing TOC': {toc: None},
+                'missing runtime': {'ForeverRosettaStone/core.lua': None},
+                'extra developer file': {'ForeverRosettaStone/diagnostics/dev-debug.lua': b'local dev = true'},
+                'traversal': {'../escape.lua': b'unsafe'},
+                'other addon': {'OtherAddon/core.lua': b'unsafe'},
+            }
+            for label, changes in mutations.items():
+                with self.subTest(payload=label):
+                    contents = {**original, **changes}
+                    with ZipFile(preview, 'w') as bundle:
+                        for name, data in contents.items():
+                            if data is not None:
+                                bundle.writestr(name, data)
+                    with self.assertRaises(ValueError):
+                        release['build_release'](root, root / 'release', 'v0.7.0', preview)
+            with ZipFile(preview, 'w') as bundle:
+                info = ZipInfo('ForeverRosettaStone/core.lua')
+                info.external_attr = (stat.S_IFLNK | 0o777) << 16
+                bundle.writestr(info, '../outside')
+            with self.assertRaisesRegex(ValueError, 'Unsafe preview entry'):
+                release['build_release'](root, root / 'release', 'v0.7.0', preview)
+            preview.write_bytes(b'not a ZIP')
+            with self.assertRaises(BadZipFile):
+                release['build_release'](root, root / 'release', 'v0.7.0', preview)
+
     def test_notes_contain_only_selected_release(self):
         self.assertEqual(release['extract_notes'](NOTES, '0.7.0'),
                          '## 0.7.0\n\n### Fixed\n\n- Fixed hover text.\n')

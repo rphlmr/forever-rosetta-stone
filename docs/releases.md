@@ -31,7 +31,9 @@ Markdown notes. Preview ZIPs use **Unreleased** notes and are not published to C
 The ZIP includes the main addon, its declared data packs, artwork, and license notices.
 Developer tracing files, local collectors, catalogs, and reference captures are excluded.
 
-CI and Release gate unit/integration regressions, database contracts and packaging.
+CI gates unit/integration regressions, database contracts and packaging. Release requires a
+successful push-to-main CI run for the exact tagged commit, then reuses that run's ZIP bytes.
+It waits if CI is still running; it does not rebuild the database or rerun the tests.
 The manual **Translation coverage** workflow runs the full strict matrices and retains reports
 even on failure. Missing translations and unavailable source evidence fail that audit; they do
 not require the product to claim complete coverage of every language before shipping.
@@ -64,13 +66,28 @@ until they are included in a new player release.
 5. Commit the template, changelog and generated shipping files. Merge the tested candidate
    into `main`. If review changes runtime code or data, rebuild and retest before merging.
 6. Tag the merged commit `vVERSION` and push that tag. The Release workflow requires the tagged
-   commit to belong to `main`, repeats the checks, and publishes the GitHub Release with the
-   ZIP and `release-notes.md` attached.
+   commit to belong to `main` and have a successful main CI run. It downloads that run's
+   `addon-preview` artifact, validates its version and archive inventory, renames the ZIP
+   without changing its bytes, and publishes the GitHub Release with version-specific notes
+   and `release-notes.md` attached. You can push the tag while main CI is running; Release waits.
 
 The tag, main addon TOC, template version and changelog section must agree. For example,
 `v1.0.0` requires version `1.0.0` and a `[1.0.0]` changelog section. All language packs stay
 in the same ZIP. Preview artifacts use Unreleased notes; use `--tag vVERSION` locally to
 inspect the final version-specific notes before tagging.
+
+Failed, cancelled or missing main CI runs block publication. Rerun CI for the tagged commit
+if needed, then retry Release. Expired or missing artifacts require another CI run; Release
+never silently substitutes an artifact from a different commit or rebuilds it itself.
+For local promotion of an already downloaded, validated preview, use:
+
+```sh
+python3 tools/release/build-release.py --tag vVERSION \
+  --from-preview /path/to/ForeverRosettaStone-VERSION-preview.zip
+```
+
+The workflow establishes CI provenance by repository, workflow, event, branch and exact commit.
+The local command validates the ZIP and version; only pass a preview whose provenance you trust.
 
 ## Submit to CurseForge manually
 
