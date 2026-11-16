@@ -119,12 +119,10 @@ GameTooltip:SetOwner(hovered, "ANCHOR_NONE")
 GameTooltip.left = 20
 Addon:LayoutNameTooltipGroup(Addon.nameTooltips[GameTooltip].group)
 equal(tip:IsShown(), true, "left-edge companion remains visible")
-equal(GameTooltip:GetLeft(), 20 + tip:GetWidth() + Addon.TOOLTIP_GAP,
-    "left-edge native tooltip moves inward to make room for its companion")
-equal(tip.points[1][1], "TOPRIGHT", "left-edge companion stays outside the native tooltip")
+equal(GameTooltip:GetLeft(), 20, "left-edge fallback preserves the native tooltip position")
+equal(tip.points[1][1], "TOPLEFT", "left-edge companion falls back to the available right side")
 Addon:LayoutNameTooltipGroup(Addon.nameTooltips[GameTooltip].group)
-equal(GameTooltip:GetLeft(), 20 + tip:GetWidth() + Addon.TOOLTIP_GAP,
-    "left-edge placement does not accumulate movement")
+equal(GameTooltip:GetLeft(), 20, "left-edge refresh never moves the native tooltip")
 prepare(GameTooltip)
 tooltipData(GameTooltip, Enum.TooltipDataType.Item, 5626)
 tip = show(GameTooltip)
@@ -364,6 +362,15 @@ GameTooltip:SetSize(200, 100)
 tooltipData(GameTooltip, Enum.TooltipDataType.Spell, 2973)
 tip = show(GameTooltip)
 local placedLeft = GameTooltip:GetLeft()
+equal(placedLeft, 1700, "right-edge action-bar translation preserves the native position")
+equal(tip.points[1][1], "TOPRIGHT", "right-edge action-bar translation uses the available left side")
+local savedNpcPosition = Addon.preferences.npcTooltipPosition
+for _, position in ipairs({ "top", "left", "right", "bottom" }) do
+    Addon:SetNpcTooltipPosition(position)
+    equal(GameTooltip:GetLeft(), 1700, "NPC position does not move a spell tooltip: " .. position)
+    equal(tip.points[1][1], "TOPRIGHT", "NPC position does not change spell placement: " .. position)
+end
+Addon:SetNpcTooltipPosition(savedNpcPosition)
 local nativeSetInsets = GameTooltip.SetClampRectInsets
 local clampWrites = 0
 function GameTooltip:SetClampRectInsets(...)
@@ -380,7 +387,7 @@ end
 equal(clampWrites, 0, "unchanged refreshes do not restore or reapply native placement")
 GameTooltip:Hide()
 equal(GameTooltip:GetLeft(), 1700, "source hide restores the native anchor once")
-equal(clampWrites, 1, "source hide owns the single placement restoration")
+equal(clampWrites, 0, "source hide needs no placement restoration for a single companion")
 GameTooltip.SetClampRectInsets = nativeSetInsets
 
 prepare(GameTooltip)

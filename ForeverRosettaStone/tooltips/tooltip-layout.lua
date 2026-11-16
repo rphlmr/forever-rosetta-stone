@@ -412,7 +412,7 @@ function Addon:GetTooltipRect(frame)
         top = top * scale, bottom = (top - frame:GetHeight()) * scale }
 end
 
--- At an edge, the translation takes the native position while retaining the chosen pair order.
+-- Automatic companions try the opposite side at an edge without moving the native tooltip.
 function Addon:PlaceCompanionTooltip(tip, source, occupied, centerVertically, alignmentFrame, placementPolicy)
     if not tip then return end
     local original = self:GetTooltipRect(source)
@@ -435,52 +435,43 @@ function Addon:PlaceCompanionTooltip(tip, source, occupied, centerVertically, al
         or alignment.top + titleInset
     local alignedTop = math.max(height + gap, math.min(desiredTop, screenHeight - gap))
     local side = policy and policy.GetSide(source) or "right"
-    local vertical = side == "top" or side == "bottom"
-    local left = side == "left" and original.left - gap - width or original.right + gap
-    if vertical then left = math.max(gap, math.min(original.left, screenWidth - width - gap)) end
-    local top = side == "top" and original.top + gap + height
-        or side == "bottom" and original.bottom - gap or alignedTop
-    if policy and policy.allowNativeShift and (left < gap or left + width > screenWidth - gap) then
-        local nativeWidth = original.right - original.left
-        local translatedLeft = side == "left" and math.max(gap, original.left)
-            or math.min(original.left, screenWidth - width - gap)
-        local nativeLeft = side == "left" and translatedLeft + width + gap or translatedLeft - gap - nativeWidth
-        if nativeLeft >= gap and nativeLeft + nativeWidth <= screenWidth - gap
-            and self:TransitionTooltipSources(tip, "sources.place", {
-            { source = source, left = nativeLeft, top = original.top },
-        }) then
-            original = self:GetTooltipRect(source)
-            left = side == "left" and original.left - gap - width or original.right + gap
-        end
-    end
-    local bounds = { left = left, right = left + width, top = top, bottom = top - height }
-    -- Scaled anchors can differ by floating-point roundoff at an exact gap or screen edge.
-    local epsilon = 0.01
-    local fits = bounds.left >= gap - epsilon and bounds.right <= screenWidth - gap + epsilon
-        and bounds.bottom >= gap - epsilon and bounds.top <= screenHeight - gap + epsilon
-    if fits then
-        for _, other in ipairs(occupied or { original }) do
-            local current = other.frame and self:GetTooltipRect(other.frame) or other
-            if bounds.left < current.right + gap - epsilon and bounds.right + gap > current.left + epsilon
-                and bounds.bottom < current.top + gap - epsilon and bounds.top + gap > current.bottom + epsilon then
-                fits = false
-                break
+    local attempts = policy and policy.allowSideFallback and (side == "left" or side == "right") and 2 or 1
+    for attempt = 1, attempts do
+        if attempt == 2 then side = side == "left" and "right" or "left" end
+        local vertical = side == "top" or side == "bottom"
+        local left = side == "left" and original.left - gap - width or original.right + gap
+        if vertical then left = math.max(gap, math.min(original.left, screenWidth - width - gap)) end
+        local top = side == "top" and original.top + gap + height
+            or side == "bottom" and original.bottom - gap or alignedTop
+        local bounds = { left = left, right = left + width, top = top, bottom = top - height }
+        -- Scaled anchors can differ by floating-point roundoff at an exact gap or screen edge.
+        local epsilon = 0.01
+        local fits = bounds.left >= gap - epsilon and bounds.right <= screenWidth - gap + epsilon
+            and bounds.bottom >= gap - epsilon and bounds.top <= screenHeight - gap + epsilon
+        if fits then
+            for _, other in ipairs(occupied or { original }) do
+                local current = other.frame and self:GetTooltipRect(other.frame) or other
+                if bounds.left < current.right + gap - epsilon and bounds.right + gap > current.left + epsilon
+                    and bounds.bottom < current.top + gap - epsilon and bounds.top + gap > current.bottom + epsilon then
+                    fits = false
+                    break
+                end
             end
         end
-    end
-    if fits then
-        tip:ClearAllPoints()
-        if side == "top" then
-            tip:SetPoint("BOTTOMLEFT", source, "TOPLEFT", (left - original.left) / scale, gap / scale)
-        elseif side == "bottom" then
-            tip:SetPoint("TOPLEFT", source, "BOTTOMLEFT", (left - original.left) / scale, -gap / scale)
-        elseif side == "left" then
-            tip:SetPoint("TOPRIGHT", source, "TOPLEFT", -gap / scale, (top - original.top) / scale)
-        else
-            tip:SetPoint("TOPLEFT", source, "TOPRIGHT", gap / scale, (top - original.top) / scale)
+        if fits then
+            tip:ClearAllPoints()
+            if side == "top" then
+                tip:SetPoint("BOTTOMLEFT", source, "TOPLEFT", (left - original.left) / scale, gap / scale)
+            elseif side == "bottom" then
+                tip:SetPoint("TOPLEFT", source, "BOTTOMLEFT", (left - original.left) / scale, -gap / scale)
+            elseif side == "left" then
+                tip:SetPoint("TOPRIGHT", source, "TOPLEFT", -gap / scale, (top - original.top) / scale)
+            else
+                tip:SetPoint("TOPLEFT", source, "TOPRIGHT", gap / scale, (top - original.top) / scale)
+            end
+            tip:Show()
+            if tip:IsShown() then return bounds end
         end
-        tip:Show()
-        if tip:IsShown() then return bounds end
     end
 
     self:TransitionTooltipSources(tip, "sources.restore")
