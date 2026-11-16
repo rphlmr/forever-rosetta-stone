@@ -2,7 +2,9 @@
 
 import argparse
 import re
-from pathlib import Path
+import shutil
+import stat
+from pathlib import Path, PurePosixPath
 
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
@@ -46,11 +48,7 @@ def extract_notes(changelog, heading):
     return f'## {heading}\n\n{body}\n'
 
 
-def collect_files(root):
-    """Package only manifest entries, implicit bindings, artwork, notices, and declared data packs."""
-    addon = root / 'ForeverRosettaStone'
-    toc = addon / 'ForeverRosettaStone.toc'
-    manifest = toc.read_text(encoding='utf-8')
+def pack_inventory(manifest):
     packs = re.findall(r'^## X-Rosetta-Packs(?:-\d+)?: (.+)$', manifest, re.MULTILINE)
     inventory = ''.join(packs[1:]) if packs and packs[0].startswith('~') else ''.join(packs)
     pack_names = inventory.split(',')
@@ -61,6 +59,15 @@ def collect_files(root):
     if not catalog or not pack_names or not all(re.fullmatch(pack_pattern, name) for name in pack_names):
         raise ValueError('Missing or invalid generated catalog/pack inventory; build the database first')
 
+    return catalog[1], pack_names
+
+
+def collect_files(root):
+    """Package only manifest entries, implicit bindings, artwork, notices, and declared data packs."""
+    addon = root / 'ForeverRosettaStone'
+    toc = addon / 'ForeverRosettaStone.toc'
+    manifest = toc.read_text(encoding='utf-8')
+    catalog, pack_names = pack_inventory(manifest)
     files = {toc, addon / 'Bindings.xml', addon / 'THIRD-PARTY.md', root / 'LICENSE.md'}
 
     for entry in manifest.splitlines():
@@ -82,7 +89,7 @@ def collect_files(root):
         pack = pack_directory(root / 'ForeverRosettaStone_Data', name)
         pack_toc = pack / f'{name}.toc'
 
-        if f'## X-Rosetta-Catalog: {catalog[1]}\n' not in pack_toc.read_text(encoding='utf-8'):
+        if f'## X-Rosetta-Catalog: {catalog}\n' not in pack_toc.read_text(encoding='utf-8'):
             raise ValueError(f'Catalog version mismatch in {name}')
 
         files.update((pack_toc, pack / 'data.lua'))
@@ -95,7 +102,59 @@ def collect_files(root):
     return sorted(files)
 
 
-def build_release(root, output, tag=None):
+def promote_preview(root, output, tag, preview):
+    """Publish the bytes of a successful same-commit CI artifact; never rebuild its payload."""
+    version = read_version(root)
+    if tag != f'v{version}':
+        raise ValueError('Promoting a preview requires a tag matching the TOC version')
+    notes = extract_notes((root / 'CHANGELOG.md').read_text(encoding='utf-8'), version)
+    with ZipFile(preview) as bundle:
+        names = bundle.namelist()
+        if len(names) != len(set(names)):
+            raise ValueError('Duplicate file in preview archive')
+        for info in bundle.infolist():
+            path = PurePosixPath(info.filename)
+            if path.is_absolute() or '..' in path.parts or '\\' in info.filename \
+                    or str(path) != info.filename or info.is_dir() or stat.S_ISLNK(info.external_attr >> 16):
+                raise ValueError('Unsafe preview entry: ' + info.filename)
+        toc = 'ForeverRosettaStone/ForeverRosettaStone.toc'
+        if toc not in names:
+            raise ValueError('Missing main addon TOC in preview archive')
+        manifest = bundle.read(toc).decode('utf-8')
+        if f'## Version: {version}\n' not in manifest:
+            raise ValueError('Preview TOC version differs from the release tag')
+        catalog, packs = pack_inventory(manifest)
+        required = {toc, 'ForeverRosettaStone/Bindings.xml', 'ForeverRosettaStone/THIRD-PARTY.md',
+                    'ForeverRosettaStone/LICENSE.md'}
+        for entry in manifest.splitlines():
+            if not entry or entry.startswith('#'):
+                continue
+            path = PurePosixPath(entry.replace('\\', '/'))
+            if path.is_absolute() or '..' in path.parts or path.name.startswith('dev-'):
+                raise ValueError('Non-release manifest entry: ' + entry)
+            required.add('ForeverRosettaStone/' + str(path))
+        for pack in packs:
+            pack_toc = f'{pack}/{pack}.toc'
+            required.update((pack_toc, f'{pack}/data.lua'))
+            if pack_toc not in names or f'## X-Rosetta-Catalog: {catalog}\n' not in bundle.read(pack_toc).decode('utf-8'):
+                raise ValueError('Catalog version mismatch in ' + pack)
+        extras = set(names) - required
+        if required - set(names) or any(not name.startswith(('ForeverRosettaStone/media/',
+                                                            'ForeverRosettaStone/notices/')) for name in extras):
+            raise ValueError('Preview archive differs from its shipping manifest')
+        if bundle.testzip() is not None:
+            raise ValueError('Corrupt preview archive')
+    output.mkdir(parents=True, exist_ok=True)
+    archive = output / f'ForeverRosettaStone-{version}.zip'
+    shutil.copyfile(preview, archive)
+    (output / 'release-notes.md').write_text(notes, encoding='utf-8')
+    print(f'Promoted {archive} from validated CI preview with {len(names)} files')
+    return archive
+
+
+def build_release(root, output, tag=None, preview=None):
+    if preview is not None:
+        return promote_preview(root, output, tag, preview)
     version = read_version(root)
     manifest = (root / 'ForeverRosettaStone/ForeverRosettaStone.toc').read_text(encoding='utf-8')
 
@@ -136,8 +195,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--tag', help='Exact release tag, e.g. v1.0.0; omitted for an Unreleased preview')
     parser.add_argument('--output', type=Path, default=ROOT / 'dist')
+    parser.add_argument('--from-preview', type=Path, help='Promote an existing CI ZIP unchanged; requires --tag')
     args = parser.parse_args()
-    build_release(ROOT, args.output, args.tag)
+    build_release(ROOT, args.output, args.tag, args.from_preview)
 
 
 if __name__ == '__main__':
