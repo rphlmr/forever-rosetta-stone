@@ -11,6 +11,46 @@ suggested translation, and where it appears in WoW Forever. A screenshot or an F
 report helps identify the exact field; see [reporting problems](docs/troubleshooting.md).
 Explain whether you wrote the text yourself, copied an existing translation, or used AI.
 
+## Capture an element in game
+
+You do not need to know the element's ID or use a developer build. The shipped addon includes
+the picker and report console. Button names below are in English; the console follows your
+game's language, independently of the selected translation language.
+
+1. Open the native screen containing the element: bags, spellbook, talents, quests, map,
+   collections, or character stats, for example.
+2. Run `/frs` and choose **Inspect something**, or run `/frs pick` directly.
+3. Hover the element, or focus it with the native gamepad controls. Let its tooltip or quest
+   text appear. The console becomes transparent and click-through while picking.
+4. Choose **Stop picking**, or run `/frs stop`. Select the relevant entry in the captured list.
+5. Choose **Select output**, then press **Ctrl+C / Cmd+C**. Paste the entire report into a
+   [translation issue](https://github.com/rphlmr/forever-rosetta-stone/issues/new), or include it
+   with your PR. Add your target language, suggested wording and where the text appears.
+
+The report identifies the captured element and surface, the client build and language, the
+selected translation language, readable native data and available catalog details. Use the
+entity type and ID to find the corresponding catalog file. The native text is in your game's
+language; selecting English as the FRS translation language does not make it English source
+evidence. Missing or restricted data is reported explicitly, not reconstructed.
+
+The picker keeps up to 30 distinct entries. Starting another Pick session clears that list,
+so copy the reports you need first. Nothing is uploaded or added to the catalogs automatically.
+If an element produces no captured entry, include a screenshot, the exact text and the screen
+where it appears; do not guess its identity.
+
+Without a keyboard, select **Save report**, then log out so WoW writes
+`World of Warcraft/_forever_/WTF/Account/<account>/SavedVariables/ForeverRosettaStone.lua`.
+Copy that file as `FRS-debug.txt` and attach the copy to the issue. Keep the original file
+unchanged. It also contains addon settings; saving another report replaces the saved report.
+
+For NPC dialogue, keep the menu open and run `/frs gossip`; repeat for each submenu you need.
+For a quest panel, use **Options → This quest is bugged**, or **Prepare quest report** on a
+missing-translation page. See [quest reports](docs/troubleshooting.md#quest-bug-reports).
+If you already know an ID, `/frs item 25`, `/frs spell 133`, or `/frs questid 783` opens its
+entity report, but cannot substitute for hovering when the missing information is live
+tooltip data. See [debug console and reporting](docs/troubleshooting.md#debug-console-and-reporting)
+for the full capture workflow and controller navigation.
+
 ## Find the catalog record
 
 Each entity has one JSON file under `catalogs/<kind>/<decimalID>.json`. The filename owns the
