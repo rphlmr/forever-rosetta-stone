@@ -1228,4 +1228,33 @@ GameTooltip.accurateLines, Addon.tooltip.accurateLines = accurateNativeLines, ac
 WorldMapFrame:Hide()
 Addon:SetTooltipMode("separate")
 
+do
+    local oldWidth, oldHeight = UIParent:GetSize()
+    local oldScale = UIParent:GetScale()
+    UIParent:SetSize(1920, 1080)
+    UIParent:SetScale(0.711111)
+    local source = CreateFrame("Frame", nil, UIParent)
+    source:SetSize(300, 90)
+    local companion = Addon:CreateCompanionTooltip(nil)
+    companion:SetOwner(source, "ANCHOR_NONE")
+    local policy = { GetSide = function() return "left" end }
+    for _, scale in ipairs({ 0.64, 0.711111, 0.8, 0.85, 0.9, 1 }) do
+        source:SetScale(scale / UIParent:GetEffectiveScale())
+        companion:SetScale(scale / UIParent:GetEffectiveScale())
+        source.left, source.top = 1000 / scale, 100 / scale
+        for height = 80, 240 do
+            companion:SetSize(280, height)
+            local bounds = Addon:PlaceCompanionTooltip(companion, source, nil, false, nil, policy)
+            equal(bounds ~= nil, true, "fractional-scale companion fits near the bottom: " .. scale .. "/" .. height)
+            equal(companion:IsShown(), true, "fitting companion remains visible at fractional coordinates")
+        end
+    end
+    local obstacle = { left = 700, right = 1000, bottom = 0, top = 300 }
+    equal(Addon:PlaceCompanionTooltip(companion, source, { obstacle }, false, nil, policy), nil,
+        "placement tolerance does not permit a real overlap")
+    companion:Hide()
+    UIParent:SetScale(oldScale)
+    UIParent:SetSize(oldWidth, oldHeight)
+end
+
 return checks

@@ -141,6 +141,31 @@ for _, button in ipairs(languageList.buttons) do
 end
 equal(languageList.buttons[1].OnSmartNavClick ~= nil, true, "language radios accept controller selection")
 do
+    local pending = Addon:CreateRadioList("navigation-regression", "Language", "Choose a language",
+        { { value = "a", label = "A" }, { value = "b", label = "B" } },
+        function() return "a" end, function() end, nil, 2)
+    for _, choice in ipairs(pending.buttons) do
+        equal(choice.smartNavigationIgnored, true, "unattached radios cannot enter native settings focus")
+        choice.GetTop, choice.GetLeft = function() return nil end, function() return nil end
+    end
+    pending:Show()
+    Addon:LayoutRadioList(pending, 635)
+    for _, choice in ipairs(pending.buttons) do
+        equal(choice.smartNavigationIgnored, true, "anchored radios with unresolved coordinates stay ignored")
+        choice.GetTop, choice.GetLeft = function() return 200 end, function() return 100 end
+    end
+    Addon:LayoutRadioList(pending, 635)
+    for _, choice in ipairs(pending.buttons) do
+        equal(choice.smartNavigationIgnored, nil, "resolved radios participate in native settings focus")
+        equal(type(choice:GetTop() * 1), "number", "native vertical focus sorting has a numeric coordinate")
+    end
+    pending:Hide()
+    for _, choice in ipairs(pending.buttons) do
+        equal(choice.smartNavigationIgnored, true, "hidden pooled radios cannot enter native settings focus")
+    end
+    Addon.radioLists["navigation-regression"] = nil
+end
+do
     local getWidth = languageList.GetWidth
     local resolvedWidth = 0
     languageList.GetWidth = function() return resolvedWidth end

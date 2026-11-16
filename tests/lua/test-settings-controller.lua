@@ -6,6 +6,24 @@ local function equal(actual, expected, label)
 end
 
 local manager = GamepadMode.FrameControlsManager
+do
+    local open, call = Settings.OpenToCategory, securecallfunction
+    local secureEntry = false
+    Settings.OpenToCategory = function(...)
+        assert(secureEntry, "native settings focus must enter through a secure call barrier")
+        return open(...)
+    end
+    securecallfunction = function(callback, ...)
+        secureEntry = true
+        local result = callback(...)
+        secureEntry = false
+        return result
+    end
+    Addon:OpenSettings()
+    equal(SettingsPanel:IsShown(), true, "opening settings uses the native secure entry")
+    SettingsPanel:Hide()
+    Settings.OpenToCategory, securecallfunction = open, call
+end
 local categoryButton = CreateFrame("Button", nil, SettingsPanel)
 local nativeControl = CreateFrame("Button", nil, SettingsPanel)
 SettingsPanel.categoryButton, SettingsPanel.nativeDefaultButton = categoryButton, nativeControl

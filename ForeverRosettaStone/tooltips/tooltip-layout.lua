@@ -454,13 +454,15 @@ function Addon:PlaceCompanionTooltip(tip, source, occupied, centerVertically, al
         end
     end
     local bounds = { left = left, right = left + width, top = top, bottom = top - height }
-    local fits = bounds.left >= gap and bounds.right <= screenWidth - gap
-        and bounds.bottom >= gap and bounds.top <= screenHeight - gap
+    -- Scaled anchors can differ by floating-point roundoff at an exact gap or screen edge.
+    local epsilon = 0.01
+    local fits = bounds.left >= gap - epsilon and bounds.right <= screenWidth - gap + epsilon
+        and bounds.bottom >= gap - epsilon and bounds.top <= screenHeight - gap + epsilon
     if fits then
         for _, other in ipairs(occupied or { original }) do
             local current = other.frame and self:GetTooltipRect(other.frame) or other
-            if bounds.left < current.right + gap and bounds.right + gap > current.left
-                and bounds.bottom < current.top + gap and bounds.top + gap > current.bottom then
+            if bounds.left < current.right + gap - epsilon and bounds.right + gap > current.left + epsilon
+                and bounds.bottom < current.top + gap - epsilon and bounds.top + gap > current.bottom + epsilon then
                 fits = false
                 break
             end
