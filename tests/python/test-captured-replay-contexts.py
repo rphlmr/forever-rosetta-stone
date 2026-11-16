@@ -34,7 +34,11 @@ class CapturedReplayContextTests(unittest.TestCase):
                                                           ('spell', 20925)):
                 cls.cases.setdefault(key, observation)
             if observation['kind'] == 'player':
-                cls.player = observation
+                apis = (observation.get('unit') or {}).get('apis', {})
+                if (apis.get('UnitRace', {}).get('values', {}).get(3) == 1
+                        and apis.get('UnitLevel', {}).get('values', {}).get(1) == 7
+                        and 'UnitSex' not in apis):
+                    cls.player = observation
             if observation['kind'] == 'spell' and observation['locale'] == 'frFR' \
                     and observation['id'] in (10138, 10140, 1225906) and 'UnitSex' not in observation['calls']:
                 cls.without_sex.setdefault(observation['id'], observation)
@@ -310,7 +314,10 @@ class CapturedReplayContextTests(unittest.TestCase):
             rows, error, _ = replay.run('spell', entity, data, target,
                 gaps.clean(observation.get('processing')), observation.get('visible'))
             self.assertIsNone(error)
-            self.assertTrue(rows)
+            self.assertEqual(bool(rows), required)
+            rendered, render_error = matrix.read_rendered(replay)
+            self.assertIsNone(render_error)
+            self.assertTrue(rendered)
             context = gaps.missing_player_context(replay, 'spell', entity, data, observation['calls'], target, rows)
             self.assertEqual(bool(context), required)
             if required:

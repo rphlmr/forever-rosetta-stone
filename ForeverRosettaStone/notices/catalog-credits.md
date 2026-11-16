@@ -16,7 +16,8 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
 - [QuestieDB](https://github.com/Questie/QuestieDB) supplied Forever names and relationships,
   including revisions `3a621efafce6aef99b0f106d22aa71ca980ee552`,
   `e19dfdf8528334ea63da0ecc4e291c134c0fc266` and
-  `4dbb82440a27856f8dccf57094a5d792cdc7cc9b`. See `questiedb-license.md` and `gpl-3.0.md`.
+  `4dbb82440a27856f8dccf57094a5d792cdc7cc9b` and
+  `e1652ce62113c152da682baf2d6fb85f1396bcfb`. See `questiedb-license.md` and `gpl-3.0.md`.
   NPC faction-template relationships also use the composed Forever static data from revision
   `48514e5119804c8b88cde800a1d99a8de1f28aef`, joined to Wago's build `1.60.1.70888` FactionTemplate table.
 - [Wowhead Forever](https://www.wowhead.com/forever) and
@@ -27,12 +28,13 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
 
 ## Community translations
 
-- [ClassicUA](https://github.com/greenya/ClassicUA/tree/d9bf29572a85957fd69085be0cec28262cba0c87),
-  revision `d9bf29572a85957fd69085be0cec28262cba0c87`: Ukrainian text and translation references.
+- [ClassicUA](https://github.com/greenya/ClassicUA/tree/1770d208ad853d23d61105cf510d53804770d916),
+  revisions `d9bf29572a85957fd69085be0cec28262cba0c87` and
+  `1770d208ad853d23d61105cf510d53804770d916`: Ukrainian text and translation references.
   Retained upstream markings distinguish declared AI text from community text; the upstream
   model was unspecified. See `classicua-copying.txt`.
-- [Czech Forever](https://www.curseforge.com/wow/addons/czechforever/files/9595441),
-  Marek Lušovský, release `0.7.3`, alongside retained text from `v0.7.1`: CC BY-NC 3.0.
+- [Czech Forever](https://www.curseforge.com/wow/addons/czechforever/files/9648816),
+  Marek Lušovský, release `0.8.2`, alongside retained text from `0.7.3` and `v0.7.1`: CC BY-NC 3.0.
   Text AI usage is unspecified; the AI narration declaration does not establish text authorship.
   See `czechforever-license.txt`.
 - [Forever Translated Polish](https://www.curseforge.com/wow/addons/forever-translated/files/9434472),

@@ -191,13 +191,3 @@ function Addon:GetDevTraceStatus()
         sequence = sequence, dropped = session and session.droppedEvents or 0,
         failure = session and session.failure, traceError = session and session.traceError }
 end
-
-function Addon:PrintDevTraceStatus()
-    if state == "waitingForAddon" then
-        print("Forever Rosetta Stone local debug: " .. REVISION .. "; waiting for SavedVariables to finish loading.")
-        return
-    end
-    print("Forever Rosetta Stone local debug: " .. session.revision .. "; " .. #session.events .. "/" .. sequence
-        .. " tooltip events saved in memory. /reload writes them to disk.")
-    if session.truncated then print("Trace limit reached; " .. session.droppedEvents .. " later events were omitted.") end
-end

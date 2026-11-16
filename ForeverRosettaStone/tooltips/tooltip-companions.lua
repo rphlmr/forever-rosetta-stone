@@ -437,21 +437,6 @@ function Addon:UpdateNameTooltip(source, kind, id, color, deferLayout)
     self:EndBenchmarkSample(kind .. ".tooltip", id, started, name ~= nil, source)
 end
 
-function Addon:ClearNameTooltip(source, nativeCleared)
-    if self.tooltipRendering == source then return end
-    local spec = self.nameTooltips and self.nameTooltips[source]
-
-    if not spec then return end
-
-    if nativeCleared then
-        self:SendTooltipEvent(spec.group, { type = "native.clear", source = source })
-    else
-        self:ClearStackedTooltip(source)
-        spec.kind, spec.id, spec.name, spec.data = nil, nil, nil, nil
-        self:LayoutNameTooltipGroup(spec.group)
-    end
-end
-
 function Addon:RefreshNameTooltips()
     if not self.nameTooltips then return end
 

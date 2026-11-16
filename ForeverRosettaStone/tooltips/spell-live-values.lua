@@ -65,7 +65,7 @@ local function Separators(locale)
     local decimal = formats.DECIMAL_SEPERATOR or (commaLocales[locale] and "," or ".")
     local grouping = formats.LARGE_NUMBER_SEPERATOR
         or (spaceLocales[locale] and " " or decimal == "," and "." or ",")
-    return decimal, (grouping:gsub("\194\160", " "):gsub("\226\128\175", " "))
+    return decimal, grouping
 end
 
 local function Number(text, locale)
@@ -74,6 +74,7 @@ local function Number(text, locale)
     -- grammatical number, not an entity name or a spell-specific effect value.
     if locale=="frFR" and (text=="un" or text=="une") then text="1" end
     local decimal, grouping = Separators(locale)
+    grouping = grouping:gsub("\194\160", " "):gsub("\226\128\175", " ")
     local sign = text:match("^[+-]") or ""
     text = text:sub(#sign + 1)
     local integer, fraction = text:match("^(.-)" .. Escape(decimal) .. "(%d+)$")

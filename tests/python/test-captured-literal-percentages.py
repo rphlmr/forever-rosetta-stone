@@ -18,6 +18,7 @@ class CapturedLiteralPercentageTests(LiveValueHarness, unittest.TestCase):
         cls.observations = [o for o in matrix.observations(ROOT / 'tests/fixtures/tooltip-campaign')
                             if o['kind'] == 'spell' and o['id'] == 451439]
         keys = {matrix.fingerprint(o) for o in cls.observations}
+        (ROOT / 'datasources/imports').mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT / 'datasources/imports') as directory:
             with contextlib.redirect_stdout(io.StringIO()):
                 cls.report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report', case_keys=keys)

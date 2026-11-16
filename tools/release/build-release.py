@@ -2,13 +2,13 @@
 
 import argparse
 import re
-import runpy
 from pathlib import Path
 
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from zipfile import ZIP_DEFLATED, ZipFile
 from tools.build.database_packs import pack_directory
+from tools.release.distribution import check_distribution
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -61,7 +61,7 @@ def collect_files(root):
     if not catalog or not pack_names or not all(re.fullmatch(pack_pattern, name) for name in pack_names):
         raise ValueError('Missing or invalid generated catalog/pack inventory; build the database first')
 
-    files = {toc, addon / 'Bindings.xml', addon / 'THIRD-PARTY.md'}
+    files = {toc, addon / 'Bindings.xml', addon / 'THIRD-PARTY.md', root / 'LICENSE.md'}
 
     for entry in manifest.splitlines():
 
@@ -106,7 +106,6 @@ def build_release(root, output, tag=None):
         raise ValueError(f'Release tag {tag!r} must match TOC version v{version}')
 
     notes = extract_notes((root / 'CHANGELOG.md').read_text(encoding='utf-8'), version if tag else 'Unreleased')
-    check_distribution = runpy.run_path(str(ROOT / 'tests/python/test-local-scan-boundary.py'))['check_distribution']
     check_distribution(root)
     files = collect_files(root)
     output.mkdir(parents=True, exist_ok=True)
@@ -118,7 +117,9 @@ def build_release(root, output, tag=None):
         for path in files:
             relative = path.relative_to(root)
 
-            if relative.parts[0] == 'ForeverRosettaStone_Data':
+            if relative == Path('LICENSE.md'):
+                relative = Path('ForeverRosettaStone/LICENSE.md')
+            elif relative.parts[0] == 'ForeverRosettaStone_Data':
                 locale = relative.parts[1]
                 name = 'ForeverRosettaStone_Rules' if locale == 'Rules' else 'ForeverRosettaStone_Data_' + locale
                 relative = Path(name, *relative.parts[2:])

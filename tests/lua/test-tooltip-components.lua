@@ -870,7 +870,6 @@ GameTooltip.IsForbidden = function() return true end
 GameTooltip.GetOwner = function() error("forbidden tooltip owner must not be read") end
 Addon:ShowTranslationTooltip()
 Addon:UpdateNameTooltip(GameTooltip, "spell", 133)
-Addon:ClearNameTooltip(GameTooltip)
 equal(Addon:GetTooltipRect(GameTooltip), nil, "forbidden tooltip geometry is not read")
 GameTooltip.IsForbidden, GameTooltip.GetOwner = isForbidden, getOwner
 context.setMouseFoci({})

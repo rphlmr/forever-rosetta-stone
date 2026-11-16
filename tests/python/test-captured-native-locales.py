@@ -19,6 +19,7 @@ class CapturedNativeLocaleTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.captures = []
+        (ROOT / 'datasources/imports').mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT / 'datasources/imports') as directory:
             directory = Path(directory)
             fixtures = directory / 'fixtures'

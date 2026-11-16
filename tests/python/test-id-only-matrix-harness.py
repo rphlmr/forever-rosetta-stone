@@ -35,6 +35,14 @@ class IdOnlyHarnessTests(unittest.TestCase):
     def setUp(self):
         self.harness.set_context('frFR', 744, 'baseline')
 
+    def test_player_level_is_context_while_stat_recalculation_stays_forbidden(self):
+        actual, error, forbidden = self.harness.attempt(lambda: self.harness.lua.globals().UnitLevel(b'player'))
+        self.assertEqual(actual, 1)
+        self.assertIsNone(error)
+        self.assertFalse(forbidden)
+        _, _, forbidden = self.harness.attempt(lambda: self.harness.lua.globals().UnitStat(b'player', 1))
+        self.assertEqual(forbidden, ['recalculation:UnitStat'])
+
     def test_matching_fields_are_removed_but_numeric_data_is_retained(self):
         record = self.harness.db.GetSpellDetails(self.harness.db, 744, b'enUS')
         self.assertIsNone(record[b'sourceDescriptions'])

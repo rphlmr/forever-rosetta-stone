@@ -26,6 +26,19 @@ def create_item(name='Sword $s1'):
 
 
 class CatalogBatchTests(unittest.TestCase):
+    def test_numeric_grouping_accepts_space_without_allowing_empty_ui_prose(self):
+        before = {'key': 'LARGE_NUMBER_SEPERATOR', 'locales': {
+            'enUS': {'name': ',', 'translationMetadata': {'fields': {'name': {
+                'origin': 'original', 'source': 'fixture', 'sourceLocale': 'enUS'}}}},
+        }}
+        after = copy.deepcopy(before)
+        after['locales']['csCZ'] = {'name': '\u00a0', 'translationMetadata': {'fields': {'name': {
+            'origin': 'ai', 'source': 'ForeverRosettaStoneAI', 'sourceLocale': 'enUS'}}}}
+        work['validate_record']('globalstrings', '1', before, after, ['enUS', 'csCZ'])
+        before['key'] = after['key'] = 'QUEST_HEADING'
+        with self.assertRaisesRegex(ValueError, 'nonempty text'):
+            work['validate_record']('globalstrings', '1', before, after, ['enUS', 'csCZ'])
+
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
         self.addCleanup(self.temporary.cleanup)

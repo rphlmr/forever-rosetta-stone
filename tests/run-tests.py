@@ -24,6 +24,10 @@ if options.unit_only and matrix_arguments:
     parser.error('--unit-only cannot be combined with translation matrix arguments')
 sys.argv = [sys.argv[0]]
 for filename, class_name in (
+    ('test-clean.py', 'CleanTests'),
+    ('test-release.py', 'ReleaseTests'),
+    ('test-wago-download.py', 'DownloadTests'),
+    ('test-wago-updates.py', 'UpdateTests'),
     ('test-catalog-format.py', 'CatalogFormatTests'),
     ('test-book-codex.py', 'BookCodexTests'),
     ('test-book-texts.py', 'BookTextTests'),
@@ -93,6 +97,8 @@ for filename, class_name in (
     checks = runpy.run_path(str(root / 'tests/python' / filename))
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(checks[class_name])
     assert unittest.TextTestRunner().run(suite).wasSuccessful(), filename + ' failed'
+quest_fallbacks = runpy.run_path(str(root / 'tests/python/test-quest-ui-fallback-matrix.py'))
+assert not quest_fallbacks['run_matrix']()['failures'], 'Quest text fallback regressions failed'
 spell_refresh = runpy.run_path(str(root / 'tests/python/test-spell-value-refresh.py'))
 spell_refresh_suite = unittest.defaultTestLoader.loadTestsFromTestCase(spell_refresh['SpellValueRefreshTests'])
 assert unittest.TextTestRunner().run(spell_refresh_suite).wasSuccessful(), "Spell numeric refresh failed"

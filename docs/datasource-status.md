@@ -11,10 +11,12 @@ building it does not replace catalogs or prove translation coverage.
 - **Wago:** build-pinned client tables for item/spell text and structured dependencies, areas,
   maps, factions, classes and creature types.
 - **EG Link:** NPC and item text only. Quest data is excluded.
-- **GitHub community sources:** Ukrainian, Czech, Polish, Italian and Turkish datasets remain
+- **GitHub community sources:** Ukrainian, Polish, Italian and Turkish datasets remain
   active; see the datasource registry for raw snapshots, origins and licence restrictions.
-- **CurseForge-only projects:** Forever Translated Polish, Världen av Krigskraft and ForeverTR
-  supplied one-time seed text. Accepted text and attribution remain in catalogs; no refetchers exist (no sources available on GitHub).
+- **CurseForge community sources:** Czech Forever, Forever Translated Polish, Världen av
+  Krigskraft and ForeverTR discover and fetch their latest approved public Forever releases.
+- **VMaNGOS:** Vanilla book identities, page chains and explicitly requested source text;
+  reference scope is retained separately from verified Forever evidence.
 
 Use [`datasources/README.md`](../datasources/README.md) for selective refreshes and reuse.
 Use the selected run's `sources.json` to build SQLite from already collected inputs.

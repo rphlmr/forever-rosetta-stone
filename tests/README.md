@@ -36,6 +36,10 @@ APIs or hidden engine state were available. Extra linked lookups are bounded wit
 truncating the native tooltip payload. Failure tests inject faults into recorded inputs;
 those injected states are not presented as native game captures.
 
+GitHub CI and Release run `--unit-only` plus database and packaging checks. The manual
+**Translation coverage** workflow runs the strict matrices and uploads its reports even when
+coverage is incomplete. Missing text remains a failed coverage case.
+
 ## Bounded template pilot
 
 The pilot runs one selected entry per surface, independently of the full matrices:
@@ -114,12 +118,6 @@ uv run --no-project --with lupa==2.8 python tests/python/test-template-pilot-que
 uv run --no-project --with lupa==2.8 python tests/python/test-item-cooldown-delimiters.py
 ```
 
-For parallel implementation, each surface module is a separate ownership boundary. A
-coordinator owns `template_pilot_common.py`, the runner, shared test infrastructure and final
-reports. Agents can run their modules without writing shared reports; the coordinator runs
-the combined pilot once. Catalogs, runtime files and generated database packs are outside
-these implementation assignments.
-
 Spell, talent, aura and item-effect rendering uses only the shipping live capture engine.
 `live_spell_fixture.py` independently creates synthetic displayed values from maintained source templates
 and target wording; it never evaluates spell formulas. Numeric profiles vary the displayed values,
@@ -156,17 +154,14 @@ this boundary; indexed quest progress labels retain their structured client-data
 
 Shared labels are checked in every configured language. The speed-label check requires
 both `SPEED` and `WEAPON_SPEED`, instead of asserting that an unidentified speed row stays
-untranslated. Synthetic missing-objective offer cases, mismatched active quest IDs, and the
-literal plural case without a quantity were removed from the reviewed checks because they
-did not establish a concrete in-game scenario. Live quantity substitution remains covered.
+untranslated. Fixtures require a concrete client scenario and sufficient structured context.
+Live quantity substitution is covered separately.
 
 Captured tooltips must render without a missing-translation warning. Preserving a native
 line is safe runtime behavior, but it is not a passing translation-completeness result.
 Shared GlobalStrings labels and formats are translated through the whole-tooltip renderer;
 entity descriptions and names still require owned IDs. The shared-label matrices expect
-actual target wording rather than accepting a nil translation. Existing integration
-expectations for untranslated known labels were updated to require the translated rows
-and the absence of an incomplete footer when every row is supported.
+actual target wording rather than accepting a nil translation. Integration checks require translated rows and no incomplete footer when every row is supported.
 
 Read `datasources/imports/translation-matrix/classification.md` for the human summary, or
 `classification.json` for the reconciled machine-readable breakdown:

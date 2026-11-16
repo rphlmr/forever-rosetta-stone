@@ -1271,8 +1271,6 @@ equal(Addon:Transition({mode = "collapsed", questID = 399}, "focus.enter").mode,
     "native focus cannot reopen collapsed panel")
 equal(Addon:Transition({mode = "reading", questID = 399}, "quest.select", 943).mode, "reading",
     "changing supported quest preserves native focus")
-equal(Addon:ResolveTitle("|cff00ff00[15] Débuts modestes|r"), nil, "Quest titles do not identify quests")
-equal(Addon:ResolveTitle("Another quest"), nil)
 
 local events
 for _, frame in ipairs(frames) do
@@ -1726,7 +1724,6 @@ equal(Addon.current.mode, "reading", "native focus enters reopened panel")
 equal(press("PADLTRIGGER"), false)
 
 -- These real DB quests share a title but represent different quest stages.
-equal(Addon:ResolveTitle("Les absences du Prospecteur"), nil, "ambiguous title requires quest ID")
 QuestMapFrame.DetailsFrame.questID = 731
 nativeXP.Name:SetText("500")
 hooks.QuestMapFrame_ShowQuestDetails()
@@ -2467,8 +2464,6 @@ mapMenu.elements[1]:Enter(menuRow)
 WorldMapFrame:Hide()
 equal(Addon.mapMenuTooltip:IsShown(), false, "closing map also clears an open dropdown translation")
 WorldMapFrame:Show()
-equal(Addon:GetLocationName("Forêt d’Elwynn"), nil, "Location names do not identify areas")
-equal(Addon:GetLocationName("Maleterres de l’ouest"), nil, "Location names do not identify areas")
 
 SpokenPlacesPanel = CreateFrame("Frame", "SpokenPlacesPanel", UIParent)
 SpokenPlacesPanel.top = 850

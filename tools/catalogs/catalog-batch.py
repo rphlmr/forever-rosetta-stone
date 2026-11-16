@@ -13,13 +13,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from tools.catalogs.catalog_storage import (KINDS, canonical_locales, dump_json, get_catalog_name,
                              get_entity_path, load_catalog, read_json)
 from tools.build.runtime_catalog import get_has_ai_translation, get_tooltip_source_text
-from tools.catalogs.official_text import OFFICIAL_LOCALES
+from tools.catalogs.official_text import OFFICIAL_LOCALES, TEXT_FIELDS
 from tools.catalogs.english_scope import has_english_text
 
 
 ROOT = Path(__file__).resolve().parents[2]
-TEXT_FIELDS = ('name', 'title', 'summary', 'description', 'eventObjectiveLabel', 'auraDescription',
-               'rank', 'nameDescription', 'setName', 'subName')
 TOKEN_TOOLS = runpy.run_path(str(Path(__file__).with_name('translation-work.py')))
 GET_TOKENS = TOKEN_TOOLS['get_tokens']
 GET_QUEST_TOKENS = TOKEN_TOOLS['get_quest_tokens']
@@ -146,7 +144,10 @@ def validate_record(kind, entity_id, before, after, locales):
         for field, text in after_fields[locale].items():
             unchanged = text == before_fields.get(locale, {}).get(field)
 
-            if not isinstance(text, str) or (not text.strip() and not unchanged):
+            blank_separator = (kind == 'globalstrings' and field == 'name'
+                               and after.get('key') == 'LARGE_NUMBER_SEPERATOR'
+                               and text in ('', ' ', '\u00a0', '\u202f'))
+            if not isinstance(text, str) or (not text.strip() and not unchanged and not blank_separator):
                 raise ValueError('Expected nonempty text: ' + kind + '/' + entity_id + '/' + locale + '/' + field)
 
             origin = metadata.get(field, {}).get('origin')

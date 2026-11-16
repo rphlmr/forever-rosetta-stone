@@ -9,10 +9,6 @@ on:
         description: Existing version tag, e.g. v1.0.0
         required: true
         type: string
-      publish:
-        description: Upload to CurseForge (only after initial project approval)
-        default: false
-        type: boolean
 
 permissions:
   contents: read
@@ -24,6 +20,8 @@ concurrency:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     timeout-minutes: 30
     env:
       RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
@@ -35,15 +33,20 @@ jobs:
         with:
           ref: refs/tags/${{ env.RELEASE_TAG }}
           persist-credentials: false
+          fetch-depth: 0
       - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
         with:
           python-version: '3.12'
+      - name: Require a merged release commit
+        run: git merge-base --is-ancestor HEAD origin/main
+      - name: Check catalog JSON format
+        run: uv run --no-project python tools/catalogs/format-catalogs.py --check
       - name: Test release packaging
         run: uv run --no-project python tests/python/test-release.py
       - name: Build production database
         run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
       - name: Test addon
-        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py
+        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py --unit-only
       - name: Test database contracts
         run: uv run --no-project --with lupa==2.8 python tests/python/test-lua-database.py
       - name: Build release ZIP and notes
@@ -55,10 +58,11 @@ jobs:
             dist/*.zip
             dist/release-notes.md
           if-no-files-found: error
-      - name: Upload to CurseForge
-        if: vars.CURSEFORGE_ENABLED == 'true' && (github.event_name == 'push' || inputs.publish)
+      - name: Publish GitHub Release
         env:
-          CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_API_TOKEN }}
-          CURSEFORGE_PROJECT_ID: ${{ vars.CURSEFORGE_PROJECT_ID }}
-          CURSEFORGE_GAME_VERSION_IDS: ${{ vars.CURSEFORGE_GAME_VERSION_IDS }}
-        run: uv run --no-project python tools/release/upload-curseforge.py
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release create "$RELEASE_TAG" dist/*.zip dist/release-notes.md \
+            --verify-tag --title "Forever Rosetta Stone $RELEASE_TAG" \
+            --notes-file dist/release-notes.md

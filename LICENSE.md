@@ -27,12 +27,12 @@ documentation. It does not relicense third-party code, translation data, or game
 
 Each third-party component retains its original license, attribution requirements, and
 applicable restrictions. See the bundled
-[THIRD-PARTY.md](ForeverRosettaStone/THIRD-PARTY.md) and
-[notices directory](ForeverRosettaStone/notices/) for full terms.
+[THIRD-PARTY.md](https://github.com/rphlmr/forever-rosetta-stone/blob/main/ForeverRosettaStone/THIRD-PARTY.md) and
+[notices directory](https://github.com/rphlmr/forever-rosetta-stone/tree/main/ForeverRosettaStone/notices/) for full terms.
 World of Warcraft game content remains the property of Blizzard Entertainment and its
 respective owners.
 
 For permissions covering Raphaël (rphlmr)'s own database contributions, see
-[Use the database in your own project](README.md#use-the-database-in-your-own-project).
+[Use the database in your own project](https://github.com/rphlmr/forever-rosetta-stone/blob/main/README.md#use-the-database-in-your-own-project).
 Third-party data retains its original terms, including any noncommercial or share-alike
 requirements. Keep the relevant credits and license notices with redistributed content.

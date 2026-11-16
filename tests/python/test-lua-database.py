@@ -868,7 +868,7 @@ class DatabaseTests(unittest.TestCase):
         self.assertEqual(list(api.GetSpellRules(api, 7418)[b'requiredToolCategories'].values()), [373])
         self.assertEqual(api.GetTotemCategoryName(api, 373, b'enUS').decode(), 'Runed Copper Rod')
         self.assertEqual(api.GetTotemCategoryName(api, 373, b'frFR').decode(), 'Bâtonnet runique en cuivre')
-        self.assertIsNone(api.GetTotemCategoryName(api, 373, b'plPL'))
+        self.assertEqual(api.GetTotemCategoryName(api, 373, b'plPL').decode(), 'Runiczna miedziana różdżka')
         self.assertIsNone(api.GetTotemCategoryName(api, 6218, b'enUS'))
         self.assertEqual(list(api.GetSpellRules(api, 3955)[b'requiredToolCategories'].values()), [162, 14])
         self.assertEqual(api.GetTotemCategoryName(api, 162, b'deDE').decode(), 'Schmiedehammer')

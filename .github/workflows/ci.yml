@@ -31,7 +31,7 @@ jobs:
       - name: Build production database
         run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
       - name: Test addon
-        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py
+        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py --unit-only
       - name: Test database contracts
         run: uv run --no-project --with lupa==2.8 python tests/python/test-lua-database.py
       - name: Build preview ZIP

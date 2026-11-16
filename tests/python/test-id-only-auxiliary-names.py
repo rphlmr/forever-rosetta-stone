@@ -13,7 +13,6 @@ class AuxiliaryNamesTests(unittest.TestCase):
             Addon = {
                 RegisterNameTooltipComponent = function(_, component) components[component.kind] = component end,
                 IsReadableEntityID = function(_, id) return type(id) == "number" and id > 0 end,
-                ResolveTitle = function() error("native title lookup") end,
                 GetTargetLocale = function() return "enUS" end,
                 GetIncompleteTranslationNotice = function() return "Some lines are not translated yet." end,
                 npcTooltipSourceLocales = {},

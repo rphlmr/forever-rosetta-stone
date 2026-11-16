@@ -74,6 +74,7 @@ class DatasourceTests(unittest.TestCase):
         build='1.60.1.70938'
         index={'products':{'wowf':{build:['creature_details.enUS','item_hotfixes.enUS']}}}
         payload={'meta':{'clientBuild':build,'locale':'enUS'},'data':[]}
+        (ROOT / 'datasources/imports').mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT/'datasources/imports') as temporary:
             output=Path(temporary)/'eg-link'
             with patch.object(eg_link,'latest_revision',return_value='a'*40), \

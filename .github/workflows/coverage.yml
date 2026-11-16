@@ -1,0 +1,37 @@
+name: Translation coverage
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: coverage-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          python-version: '3.12'
+      - name: Build production database
+        run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
+      - name: Audit translation coverage
+        run: uv run --no-project --with lupa==2.8 python tests/python/test-translation-matrix.py --strict-coverage
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: translation-coverage
+          path: |
+            datasources/imports/translation-matrix/
+            datasources/imports/id-only-matrix/
+            datasources/imports/quest-matrix/
+            datasources/imports/tooltip-matrix/
+          if-no-files-found: warn

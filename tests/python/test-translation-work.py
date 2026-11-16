@@ -146,6 +146,27 @@ class TranslationWorkTests(unittest.TestCase):
         self.assertTrue(any(pointer['kind'] == 'quests' and pointer['field'] == 'title'
                             for pointer in complete['excludedWithoutEnglish']))
 
+    def test_race_inventory_includes_owned_female_names(self):
+        entity = {'locales': {'enUS': {'name': 'Human', 'nameFemale': 'Human'}}}
+        self.assertEqual(list(work['iter_fields']('races', entity)),
+                         [('name', 'Human', None), ('nameFemale', 'Human', None)])
+
+    def test_book_pages_inventory_the_body_without_requiring_an_invented_name(self):
+        documents = {
+            'quests': {'locales': ['enUS', 'frFR'], 'catalogs': {'quests': {}}},
+            'bookpages': {'catalogs': {'bookpages': {
+                '1': {'locales': {'enUS': {'description': 'A page body.'}, 'frFR': {}}},
+            }}},
+        }
+        queue = work['collect_translation_candidates'](documents)
+        self.assertEqual(queue['missingSource'], [])
+        self.assertEqual([job['context'] for job in queue['jobs']], ['bookpages.description'])
+        page = documents['bookpages']['catalogs']['bookpages']['1']
+        page['locales'] = {'enUS': {}, 'frFR': {'description': 'Un texte de page.'}}
+        queue = work['collect_translation_candidates'](documents)
+        self.assertEqual([row['field'] for row in queue['missingSource']], ['description'])
+        self.assertFalse(queue['jobs'])
+
     def test_aura_details_keep_native_target_and_provenance_separate(self):
         native_metadata = {'origin': 'original', 'source': 'wago', 'sourceLocale': 'frFR'}
         entity = {'locales': {

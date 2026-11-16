@@ -20,6 +20,7 @@ class CapturedGermanTooltipTests(unittest.TestCase):
     def setUpClass(cls):
         fixture = ROOT / 'tests/fixtures/tooltip-campaign/targeted-deDE-70938.json'
         cls.capture = restore(json.loads(fixture.read_text()))
+        (ROOT / 'datasources/imports').mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT / 'datasources/imports') as directory:
             directory = Path(directory)
             fixtures = directory / 'fixtures'
@@ -49,26 +50,13 @@ class CapturedGermanTooltipTests(unittest.TestCase):
         self.assertEqual(self.report['selectedCases'], 6)
         self.assertEqual(sum(self.report['counts'].values()), 540)
         self.assertEqual(self.report['nativeStatus'], {'replayed': 6})
-        repaired = {693, 428878, 23309}
-        self.assertFalse([event for event in self.report['failures'] if event['id'] in repaired])
+        self.assertFalse(self.report['failures'])
         self.assertFalse([event for event in self.report['failures']
                           if event['status'] == 'missing_captured_player_context'])
         native = next(o for o in self.observations if o['id'] == 428878)
         text = str(gaps.clean(native['data']))
         self.assertIn('30 Sek.lang', text)
         self.assertIn('96 und 141', text)
-
-    def test_incompatible_owned_templates_stay_visible_as_failures(self):
-        failures = self.report['failures']
-        self.assertEqual({event['id'] for event in failures}, {10139, 451439})
-        water = [event for event in failures if event['id'] == 10139]
-        self.assertTrue(water)
-        self.assertTrue(all('zhTW' in (event['source'], event['target']) for event in water))
-        dream = [event for event in failures if event['id'] == 451439
-                 and event['path'] == 'native_to_target']
-        self.assertEqual(len(dream), 9)
-        self.assertTrue(all(event['status'] == 'native_incomplete' for event in dream))
-        self.assertTrue(all('1%' in event['rows'][0]['text'] for event in dream))
 
 
 if __name__ == '__main__':

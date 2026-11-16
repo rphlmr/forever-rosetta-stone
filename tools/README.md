@@ -2,6 +2,12 @@
 
 These tools are not shipped in the addon. Run commands from the repository root.
 
+## Cleanup
+
+`python3 tools/clean.py --dry-run` lists disposable outputs; omit `--dry-run` to remove
+them after validation. Tracked files and local credentials are preserved. See
+[the release guide](../docs/releases.md#clean-local-build-outputs) for the cache lifecycle.
+
 ## Build
 
 `build/` contains the database builder, format generator, manifest template, runtime
@@ -14,8 +20,8 @@ python3 tools/build/build-character-stat-formats.py --help
 
 ## Release
 
-`release/` owns ZIP packaging and the gated CurseForge publishing command. CI and release
-workflows call these commands directly. Generated data addons are flattened beside the main
+`release/` owns ZIP packaging and version-specific release notes. CI and release
+workflows call the packager directly; the release workflow publishes the result on GitHub. Generated data addons are flattened beside the main
 addon in release archives.
 
 ```sh
@@ -56,9 +62,10 @@ scoped authoring tools or read-only diagnostics. Source collection never writes 
 
 `tools/build/client_label_scope.py` derives GlobalString scope from the owned tooltip adapters,
 direct runtime consumers, dynamically constructed key families, appearance slots and profession
-aliases. Import/resync, translation queues, completeness diagnostics and production database
-builds share this boundary. Unused catalog entries remain readable but are not imported or
-shipped; no fixed key count is used. Empty localized separators are valid source values.
+aliases. Import/resync, translation queues and completeness diagnostics share this
+maintenance boundary; unused labels are not backfilled. Production builds ship every
+owned GlobalString so dynamic native tooltip lines can resolve their labels. No fixed
+key count is used. Empty localized separators are valid source values.
 
 Maintained JSON files remain under the repository's top-level `catalogs/`. These tools do
 not make downloaded sources authoritative or authorize an automatic catalog merge.

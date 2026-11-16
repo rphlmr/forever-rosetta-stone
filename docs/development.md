@@ -57,7 +57,9 @@ uv run --no-project --with lupa==2.8 python tests/python/test-id-only-matrix.py
 This matrix checks every maintained item and spell, and every quest exported by the product,
 in all supported target locales. Product-excluded quest IDs and their reasons are recorded.
 The two deterministic profiles exercise different character levels, spell power, known-spell
-conditions, player sex, and objective counts. They do not cover every possible live state.
+conditions, player sex, and objective counts. Player level is available as branch-selection
+context; character-stat and spell-power recalculation APIs remain blocked. Independent spell
+fixtures preserve owned paragraphs and decode literal percent escapes. They do not cover every possible live state.
 
 Before rendering, the isolated Lua runtime removes matching fields from returned records and
 blocks source getters, reverse-name lookup, native-description APIs, and private matching
@@ -180,7 +182,7 @@ previous translation language when stopped. Profiling is manual and disabled dur
    talents, NPCs, collections and minimap companions also record their own categories.
 4. Open quest details to exercise Forever Rosetta Stone's panel. Change quests and reopen one you already read.
 5. Run `/frs bench stop`. The copyable report opens after chat finishes. Click its text and
-   press Ctrl+C / Cmd+C. Paste it into this chat for analysis.
+   press Ctrl+C / Cmd+C to save the report for analysis.
 
 Capture stops automatically after 90 seconds. Use `/frs bench report` to reopen the latest
 report. A new capture replaces it, and `/reload` discards it. Reset, logout/reload, addon errors,
@@ -267,9 +269,9 @@ tooltip quests show no companion. Duplicate titles never select an arbitrary que
 The native quest list and objectives remain in the client's language.
 
 Captured objective templates retain their verified client index and type, and receive live
-counts at render time. The original integrations for quests 399 and 943 retain their verified
-item-to-client-index mappings. Other Questie target positions are not assumed to be client
-indices: unmapped objectives retain the client's own text. Progress and rewards are never baked
+counts at render time. Verified item-to-client-index mappings are compiled from owned
+catalog records. Questie target positions are not assumed to be client indices:
+unmapped objectives retain the client's own text. Progress and rewards are never baked
 from a character's saved values. Returned quest records expose an aggregate AI flag;
 field origins remain inline in the catalogs.
 
@@ -285,16 +287,11 @@ The translated text copies effective fonts, colors, shadows, and spacing from th
 text, including per-element font overrides. Its full-height viewport and rewards spacer follow
 the native layout. Blizzard's rewards adjustment uses the English scroll offset to reveal reward
 rows. French scrolling cannot change the English scroll offset or reward area height. Reward
-cards mirror native values and usability tints; the three quest 943 item names
-use localized names keyed by item ID. Items without a selected-language name retain their native name.
+cards mirror native values and usability tints; localized item names are keyed by item ID. Items without a selected-language name retain their native name.
 Rewards are a display, without reward selection or quest-changing actions. No native frames are
 reparented, and rendering English does not change the selected quest. The shared `QuestInfo_Display`
 renderer is not called for the English panel because it would move the French text frames.
 The bundled provider supplies the wider translation source without a runtime external database dependency.
-
-The reference MultiLanguage repository stores translations by locale and quest ID. Its README
-reports that Wowhead blocks its database scraper. Its code is all rights reserved; this addon
-does not copy it. References and artwork ownership are recorded in the addon's `THIRD-PARTY.md`.
 
 ## Validation
 
@@ -348,9 +345,8 @@ the standalone manifest. Controller overrides and raw gamepad capture are forbid
 Native API references were checked against Gethe's `forever` UI source at
 `9dc84f0d3bbae1768ac3405b3716000bd93eda06` (client `1.60.1.70862`).
 
-**In-game visual, controller, and taint validation is still required.** No game window has been
-opened or manipulated during implementation. Mocks cannot establish native focus routing,
-visual alignment, or freedom from taint.
+**In-game visual, controller, and taint validation is required for runtime releases.**
+Mocks cannot establish native focus routing, visual alignment, or freedom from taint.
 
 The live acceptance check is: focus each supported quest with a controller, compare both tooltips,
 open its details, use RT to select English, scroll to the last paragraph with the right stick,

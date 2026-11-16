@@ -89,8 +89,9 @@ Without a corpus it cannot classify missing additional text as an authorized pol
 Existing rendered translations are tested regardless of new-job eligibility.
 
 Item-set eligibility uses the owned item-set ID and matching English set name, backed by
-hash-verified Wago `ItemSet` locale exports. GlobalStrings import and queues use the same
-tooltip-key scope as the production builder. Unused labels are not coverage backfills.
+hash-verified Wago `ItemSet` locale exports. GlobalStrings import and queues use the
+owned tooltip-key maintenance scope. Unused labels are not coverage backfills; production
+builds still ship every owned GlobalString for dynamic native tooltip lookup.
 
 ## Quest text and captured objectives
 

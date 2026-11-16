@@ -108,7 +108,7 @@ sample; entering an ID or matching link is optional. Choose
 crafting spell IDs; recipe scrolls and crafted items use Item. Showing a tooltip closes the
 console so it cannot obscure the tooltip or its translation. **Back to debug tools**, **Escape**,
 or gamepad **Back** closes the preview and returns to the same component type and ID/link.
-Gamepad **Select** can also activate the return button. The old gallery commands were removed.
+Gamepad **Select** can also activate the return button.
 Choose **Compare equipped** for WoW's native equipment comparisons. Choose **Side by side**
 for separate original and translated tooltips, or **Stacked** to combine them. These preview
 choices do not change your saved settings. Equipment comparisons depend on the character's equipped items.

@@ -419,8 +419,9 @@ The builder validates these origins and exports a `hasAITranslation` boolean per
 Quest records contain only `title`, `summary`, `description`, `eventObjectiveLabel`, `objectiveLines`,
 and that boolean. Item/spell records also export available target-language `details`; their normalized
 tooltip dependencies and retained source templates remain in English detail records. ID-only rendering
-loads numeric rules through `GetItemRules` and `GetSpellRules`. Other entity records
-contain only `name` and that boolean.
+loads numeric rules through `GetItemRules` and `GetSpellRules`. Book-page records
+expose `description` and that boolean; other named entity records expose `name` and
+that boolean.
 Detailed origins and quest relationships stay in these full catalogs. Runtime capture may use
 a maintained template of any origin when it matches visible client text unambiguously; origin
 must not block a usable source template or establish entity identity through text matching.

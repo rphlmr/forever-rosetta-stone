@@ -50,33 +50,18 @@ def make_runtime():
     lua.execute("""
         function addon:Layout() end
         function addon:GetQuest() return quest end
-        local function frame()
-            return setmetatable({}, { __index = function(_, name)
-                if name == 'PortraitContainer' then return frame() end
-                if name == 'CreateTexture' then return function() return frame() end end
-                if name == 'IsShown' then return function() return false end end
-                return function() end
-            end })
-        end
-        UIParent = frame()
-        GamepadSharedUtility = { CreatePromptedBindingFooter = function() return frame() end }
-        function addon:NewFrame() return frame() end
-        function addon:CreateNativeQuestBody()
-            return { frame = frame(), SetSections = function(_, sections) captured = sections end,
-                     ScrollTo = function() end }
-        end
-        function addon:SetScript() end
-        function addon:HookScript() end
-        function addon:Wrap(_, callback) return callback end
-        function addon:GetLanguageName() return 'French' end
-        function addon:GetQuestPageSections(entry) return entry end
+        function addon:GetClientLabel() return nil end
+        function addon:CreateTooltipPlacementProfiles(spec) return spec end
+        function addon:RegisterNameTooltipComponent() end
+        addon.TooltipSideRules = { screen = function() end }
+        QuestInfoTitleHeader, QuestInfoDescriptionText = {}, {}
+        QuestInfoObjectivesHeader, QuestInfoObjectivesText = {}, {}
+        QUEST_OBJECTIVES = 'Objectives'
         function GetQuestID() return activeQuestID end
         function GetObjectiveText() nativeCalls = nativeCalls + 1; return 'Native objectives' end
         function GetQuestText() nativeCalls = nativeCalls + 1; return 'Native description' end
-        InputUtil = { IsGamepadUIEnabled = function() return false end }
     """)
-    load('ForeverRosettaStone/quests/quest-interaction-reader.lua')
-    lua.execute('reader = addon:CreateQuestInteractionReader()')
+    load('ForeverRosettaStone/quests/components/quest-interaction-panel.lua')
     return lua
 
 
@@ -92,16 +77,22 @@ def run_matrix():
         ('blank_summary', ' \t\n', 'Texte traduit', 42, 'Native objectives', 'Texte traduit'),
         ('translated', 'Objectifs traduits', 'Texte traduit', 42, 'Objectifs traduits', 'Texte traduit'),
     ]
-    for surface in ('panel', 'interaction_reader'):
+    for surface in ('panel', 'interaction_sections'):
         for name, summary, description, active_id, expected_summary, expected_description in scenarios:
             lua.globals().quest = lua.table_from({'title': 'Titre', 'summary': summary, 'description': description})
             lua.globals().logQuestID = active_id
             lua.globals().activeQuestID = active_id
-            lua.execute('addon.contentKey = nil; reader.contentKey = nil; nativeCalls = 0')
+            lua.execute('addon.contentKey = nil; nativeCalls = 0')
             if surface == 'panel':
                 lua.execute('addon:Render()')
             else:
-                lua.execute("reader:ShowQuest(42, quest, '')")
+                lua.execute("""
+                    captured = { objectives = '', description = '' }
+                    for _, section in ipairs(addon:GetQuestInteractionSections(42, quest)) do
+                        if section.source == QuestInfoObjectivesText then captured.objectives = section.text end
+                        if section.source == QuestInfoDescriptionText then captured.description = section.text end
+                    end
+                """)
             entry = lua.globals().captured
             for field, actual, expected in (('summary', entry.objectives, expected_summary),
                                             ('description', entry.description, expected_description)):

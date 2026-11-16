@@ -231,8 +231,8 @@ class IdOnlyHarness:
             UnitClass = function() return 'Warrior', 'WARRIOR' end
             UnitRace = function() return 'Human', 'Human' end
             UnitSex = function() return HarnessProfile.sex end
-            UnitLevel = function()
-                if HarnessEntityKind ~= 'quests' then return HarnessForbidden('recalculation:UnitLevel') end
+            UnitLevel = function(unit)
+                if unit ~= 'player' then return HarnessForbidden('unsupportedContext:UnitLevel') end
                 return HarnessProfile.level
             end
             UnitStat = Blocked('recalculation:UnitStat')
@@ -323,7 +323,6 @@ class IdOnlyHarness:
         self.set_source_locale('enUS')
         state.HarnessTargetLocale = locale.encode()
         state.HarnessEntityID = int(entity_id)
-        state.HarnessEntityKind = entity_kind.encode() if entity_kind else None
         state.HarnessProfile = lua_profile
         state.HarnessOffer = False
         state.HarnessObjectives = self.lua.table()

@@ -1,20 +1,16 @@
-"""Check release-note isolation, archive boundaries, version checks, and upload metadata."""
+"""Check release-note isolation, archive boundaries, version checks, and release workflow."""
 
-import json
-import os
 import runpy
 import tempfile
 import unittest
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from unittest.mock import patch
 from zipfile import ZipFile
 
 
 ROOT = Path(__file__).resolve().parents[2]
 release = runpy.run_path(str(ROOT / 'tools/release/build-release.py'))
-upload = runpy.run_path(str(ROOT / 'tools/release/upload-curseforge.py'))
 CATALOG = 'fixture-catalog'
 PACK = 'ForeverRosettaStone_Data_enUS'
 NOTES = (
@@ -27,6 +23,7 @@ def create_fixture(root):
     files = {
         'tools/build/addon-manifest.toc': '## Version: 0.7.0\n',
         'CHANGELOG.md': NOTES,
+        'LICENSE.md': 'Original project license',
         'ForeverRosettaStone/ForeverRosettaStone.toc': (
             f'## Version: 0.7.0\n## X-Rosetta-Catalog: {CATALOG}\n'
             f'## X-Rosetta-Packs: ~2~\n## X-Rosetta-Packs-1: {PACK[:20]}\n'
@@ -81,7 +78,8 @@ class ReleaseTests(unittest.TestCase):
                 self.assertIn('ForeverRosettaStone/Bindings.xml', names)
                 self.assertIn('ForeverRosettaStone/media/icon.tga', names)
                 self.assertIn('ForeverRosettaStone/notices/license.md', names)
-                self.assertEqual(len(names), 8)
+                self.assertEqual(bundle.read('ForeverRosettaStone/LICENSE.md'), b'Original project license')
+                self.assertEqual(len(names), 9)
 
             self.assertNotIn('Future change', (root / 'dist/release-notes.md').read_text())
 
@@ -101,7 +99,7 @@ class ReleaseTests(unittest.TestCase):
                 self.assertIn('ForeverRosettaStone_Rules/data.lua', names)
                 self.assertIn(PACK + '/data.lua', names)
                 self.assertFalse(any(name.startswith('ForeverRosettaStone_Data/') for name in names))
-                self.assertEqual(len(names), 10)
+                self.assertEqual(len(names), 11)
 
     def test_wrong_tag_and_mismatched_catalog_are_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -133,29 +131,6 @@ class ReleaseTests(unittest.TestCase):
 
             with self.assertRaisesRegex(ValueError, 'Missing or unsafe'):
                 release['collect_files'](root)
-
-    def test_curseforge_metadata_preserves_markdown(self):
-        metadata = upload['create_metadata']('0.7.0', '- Fixed "quotes".\n', '123,456')
-        self.assertEqual(metadata['gameVersions'], [123, 456])
-        self.assertEqual(metadata['changelogType'], 'markdown')
-        self.assertEqual(json.loads(json.dumps(metadata))['changelog'], '- Fixed "quotes".\n')
-
-        with self.assertRaises(ValueError):
-            upload['create_metadata']('0.7.0', '- Fixed.', '16001,not-an-id')
-
-    def test_upload_uses_prepared_archive_and_token_via_stdin(self):
-        environment = {
-            'CURSEFORGE_PROJECT_ID': '123', 'CURSEFORGE_API_TOKEN': 'secret-test-token',
-            'CURSEFORGE_GAME_VERSION_IDS': '456', 'RELEASE_TAG': 'v0.7.0',
-        }
-
-        with patch.dict(os.environ, environment), patch.object(Path, 'read_text', return_value='- Fixed.\n'), \
-                patch('subprocess.run') as run:
-            upload['main']()
-            arguments = run.call_args.args[0]
-            self.assertIn('file=@dist/ForeverRosettaStone-0.7.0.zip', arguments)
-            self.assertNotIn('secret-test-token', ' '.join(arguments))
-            self.assertEqual(run.call_args.kwargs['input'], 'X-Api-Token: secret-test-token\n')
 
 
 if __name__ == '__main__':

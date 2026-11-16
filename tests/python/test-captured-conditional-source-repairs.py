@@ -23,6 +23,7 @@ class CapturedConditionalSourceRepairTests(LiveValueHarness, unittest.TestCase):
         ids = {case['id'] for case in cls.evidence['cases']}
         observations = list(matrix.observations(ROOT / 'tests/fixtures/tooltip-campaign'))
         keys = {matrix.fingerprint(o) for o in observations if o['kind'] == 'spell' and o['id'] in ids}
+        (ROOT / 'datasources/imports').mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT / 'datasources/imports') as directory:
             with contextlib.redirect_stdout(io.StringIO()):
                 cls.report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report', case_keys=keys)

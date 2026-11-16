@@ -230,7 +230,9 @@ def render(nodes, values, locale, duration_key='INT_SPELL_DURATION_SEC'):
 
 
 def normalize(text):
-    return re.sub(r'[ \t\r\n]+', ' ', text.replace('\\r\\n', ' ').replace('\\n', ' ')).strip()
+    text = text.replace('\\r\\n', '\n').replace('\\n', '\n').replace('\r\n', '\n').replace('\r', '\n')
+    return '\n'.join(re.sub(r'[ \t]+', ' ', line).strip()
+                     for line in text.replace('%%', '%').split('\n')).strip()
 
 
 def make_fixture(spells, spell_id, target, profile='baseline', field='description', source=None):

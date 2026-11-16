@@ -308,10 +308,3 @@ function Addon:NewFrame(kind, name, parent, template)
 
     return frame
 end
-
-function Addon:PrintStatus()
-    pcall(print, "Forever Rosetta Stone: " .. self.lifecycle)
-    if self.PrintDevTraceStatus then pcall(self.PrintDevTraceStatus, self) end
-
-    if self.errors[#self.errors] then pcall(print, self.errors[#self.errors]) end
-end

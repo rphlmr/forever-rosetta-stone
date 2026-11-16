@@ -31,7 +31,6 @@ Choose a translation language and enable the features you want:
 | **NPCs** | Creature names and supported tooltip details. Player names and custom pet names stay as they are. |
 | **Locations** | Zone and subzone names, quest-list location headers, map hover labels, map navigation menus, and location labels beside the map. |
 | **Minimap tracking** | Supported tracking-option labels. Service labels currently support English; tracking spells use your selected language. |
-| **Collections** | Mount names and companion-pet species names with a database match. |
 | **Character stats** | Supported stat and resistance explanations, keeping the game's displayed values. |
 
 ![Translated item tooltips and equipment comparisons alongside the original French text.](https://raw.githubusercontent.com/rphlmr/forever-rosetta-stone/main/docs/media/readme/item-comparisons.jpg)
@@ -41,7 +40,7 @@ item, or description is translated. Missing translations can remain in the game'
 show as incomplete, or have no translated companion.
 
 **Known limitation:** buff tooltips on native unit frames currently remain in the game's language,
-even when the buff's translation exists. See [unit-frame buff tooltips](docs/troubleshooting.md#unit-frame-buff-tooltips-remain-untranslated)
+even when the buff's translation exists. See [unit-frame buff tooltips](https://github.com/rphlmr/forever-rosetta-stone/blob/main/docs/troubleshooting.md#unit-frame-buff-tooltips-remain-untranslated)
 for the confirmed scope and client limitation.
 
 ## A companion to the original UI

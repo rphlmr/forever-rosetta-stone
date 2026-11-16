@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from tools.catalogs.catalog_storage import (CATALOGS, canonical_locales, dump_json, get_entity_path, load_catalog,
                              load_catalogs, parse_json, read_json)
 from tools.build.runtime_catalog import EXCLUDED_QUEST_STATUSES, get_tooltip_source_text
+from tools.catalogs.english_scope import identity_field
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -498,7 +499,10 @@ def iter_fields(kind, entity):
 
         return
 
-    yield 'name', english.get('name'), None
+    identity = identity_field(kind)
+    yield identity, english.get(identity), None
+    if kind == 'races' and any(record.get('nameFemale') for record in entity['locales'].values()):
+        yield 'nameFemale', english.get('nameFemale'), None
 
     if kind in ('items', 'spells'):
         tooltip = entity.get('tooltipData', {})
@@ -683,7 +687,7 @@ def collect_translation_candidates(documents, include_excluded_quests=False):
                     if not english:
                         if kind == 'globalstrings' and isinstance(english, str):
                             continue
-                        if field in ('name', 'title') or any(
+                        if field == identity_field(kind) or any(
                             get_target(entity, locale, field, index) for locale in locales if locale != 'enUS'
                         ):
                             missing_source.append(pointer)

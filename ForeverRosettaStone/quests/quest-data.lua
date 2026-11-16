@@ -7,10 +7,6 @@ function Addon:GetQuest(questID)
     return quest and quest.title and quest or nil
 end
 
-function Addon:GetLocationName()
-    return nil
-end
-
 local function MatchesLocationHeader(title, nativeName, kind, id)
     if not nativeName then return false end
     if title == nativeName then return true end
@@ -117,10 +113,6 @@ function Addon:GetHoveredMapLocationName(nativeName)
     return ForeverRosettaStoneDB:GetMapName(info.mapID, self:GetTargetLocale())
 end
 
-function Addon:ResolveTitle()
-    return nil
-end
-
 -- Target-language labels authored for the nine playable classes and eight races.
 -- Female forms are supplied where they differ; linguistic review is pending.
 local playerLabels = {
@@ -222,16 +214,6 @@ function Addon:FormatQuestText(text, questID, targetLocale)
     return formatted
 end
 
-function Addon:GetProgress(questID, objectiveIndex)
-    local objectives = C_QuestLog.GetQuestObjectives(questID)
-    local objective = objectives and objectives[objectiveIndex or 1]
-
-    if objective and objective.numFulfilled and objective.numRequired then
-        return objective.numFulfilled, objective.numRequired
-    end
-
-    return 0, 1
-end
 
 local function GetStructuredStanding(addon, factionID)
     local ok, value = pcall(function()

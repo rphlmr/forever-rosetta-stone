@@ -22,6 +22,17 @@ class LiveSpellFixtureTests(unittest.TestCase):
         self.assertEqual(first,make_fixture(spells,1,'frFR',source='enUS'))
         self.assertEqual(first['fixture'],'synthetic displayed values')
 
+    def test_owned_paragraphs_and_escaped_percent_signs_match_client_formatting(self):
+        spells = {'1': record('Hit $s1%%. \n\n  Keep this paragraph.',
+                              'Frappe $s1%%. \n\n  Conserver ce paragraphe.')}
+        fixture = make_fixture(spells, 1, 'frFR', source='enUS')
+        self.assertIn('\n\n', fixture['native'])
+        self.assertIn('\n\n', fixture['expected'])
+        self.assertIn('%.', fixture['expected'])
+        self.assertNotIn('%%', fixture['expected'])
+        self.assertNotIn(' \n', fixture['expected'])
+        self.assertNotIn('\n ', fixture['expected'])
+
     def test_numeric_formulas_are_opaque_even_without_operands(self):
         spells={'1':record('Gain ${$AP/0+$unknown} for $d.','Gain ${$AP/0+$unknown} pendant $d.')}
         fixture=make_fixture(spells,1,'frFR',source='enUS')

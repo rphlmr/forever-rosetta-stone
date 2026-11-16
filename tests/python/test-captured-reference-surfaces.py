@@ -20,6 +20,7 @@ class CapturedReferenceSurfaceTests(unittest.TestCase):
         cls.observations = [o for o in matrix.observations(ROOT / 'tests/fixtures/tooltip-campaign')
                             if o['kind'] == 'item' and o['id'] in (2683, 4594)]
         keys = {matrix.fingerprint(o) for o in cls.observations}
+        (ROOT / 'datasources/imports').mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT / 'datasources/imports') as directory:
             with contextlib.redirect_stdout(io.StringIO()):
                 cls.report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign',

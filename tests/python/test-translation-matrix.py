@@ -1,4 +1,4 @@
-"""Assert translation regressions and report incomplete coverage; use --strict-coverage to fail on gaps."""
+"""Check translation rendering and completeness; strict mode also enforces supplemental review groups."""
 
 import argparse
 import json
