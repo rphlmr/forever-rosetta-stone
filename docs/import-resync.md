@@ -128,6 +128,13 @@ source fields against the maintained catalogs. No old download or prepared resul
 5. After accepted catalog changes, check formatting, build once and run relevant tests and
    matrices. Install only the validated generated packs and intended runtime files.
 
+After accepted catalog updates, check the
+[versioned tooltip regression corpus](../tests/fixtures/tooltip-regressions/README.md).
+Its source hashes identify stale selected scenarios. Prepare a new ignored proposal, review
+the independent expected-text diff, replay it against the rebuilt database, then explicitly
+apply the fixture update. Unrelated catalog changes do not require regenerating the corpus;
+raw provider downloads never rewrite expectations or historical client captures.
+
 ```sh
 uv run --no-project --with lupa==2.8 python datasources/refresh.py \
   --output datasources/imports/NEXT

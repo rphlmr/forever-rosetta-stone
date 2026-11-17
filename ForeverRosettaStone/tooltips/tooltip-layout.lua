@@ -195,6 +195,8 @@ function Addon:FillStackedTooltip(source, tip, key)
     self.stackedTooltips[source] = saved
     self.tooltipRendering = source
     local function Append(left, right, originalLeft, originalRight)
+        -- Companion FontStrings may retain restricted client text. Leave those rows native.
+        if not canaccessallvalues(left) or not canaccessallvalues(right) then return end
         local hasRight = right and right ~= ""
         local index = source:NumLines() + 1
         if cursor and cursor <= blank.last and not hasRight then

@@ -57,4 +57,39 @@ nativeLine.GetText = originalGetText
 Addon:ClearStackedTooltip(source)
 source:Hide()
 translated:Hide()
+
+-- FontString getters can return restricted text even on an addon-owned companion.
+-- Lua 5.1 cannot model secret strings, so verify that neither column reaches the target.
+local restricted = { secret = true }
+for index, columns in ipairs({
+    { "Restricted amount", restricted },
+    { restricted, "Readable amount" },
+    { restricted, restricted },
+}) do
+    local native = Addon:CreateCompanionTooltip(nil, UIParent)
+    native.accurateLines = true
+    native:SetText("Native title")
+    translated:ClearLines()
+    translated:AddLine("Translated title")
+    translated:AddDoubleLine("Temporary label", "Temporary amount")
+    translated:GetLeftLine(2).GetText = function() return columns[1] end
+    translated:GetRightLine(2).GetText = function() return columns[2] end
+    translated:AddDoubleLine("Damage", "4 - 7")
+    translated:Show()
+    local ok = Addon:Run("stack restricted companion text", function()
+        Addon:FillStackedTooltip(native, translated, "restricted-companion-" .. index)
+    end)
+    equal(ok, true, "restricted companion text does not fail the safety wrapper")
+    equal(Addon.lifecycle, "ready", "restricted companion text keeps the addon running")
+    equal(native:NumLines(), 5, "restricted rows are omitted without leaving partial columns")
+    equal(native:GetLeftLine(1):GetText(), "Native title", "restricted rows leave native content intact")
+    equal(native:GetLeftLine(4):GetText(), "Translated title", "readable translated rows are retained")
+    equal(native:GetRightLine(5):GetText(), "4 - 7", "readable double-column rows are retained")
+    equal(translated:IsShown(), false, "restricted companion text still hides the companion")
+    equal(Addon.tooltipRendering, nil, "restricted companion text leaves rendering state clear")
+    translated:GetLeftLine(2).GetText = originalGetText
+    translated:GetRightLine(2).GetText = originalGetText
+    Addon:ClearStackedTooltip(native)
+    native:Hide()
+end
 return checks

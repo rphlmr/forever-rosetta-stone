@@ -187,7 +187,7 @@ class IdOnlyHarness:
             fixture = json.loads((self.root / 'tests/fixtures' / name).read_text())
             self.spell_icons.update({int(spell_id): icon for spell_id, icon in fixture['icons'].items()})
         self.lua_icons = self.to_lua(self.spell_icons)
-        install_metadata(self.lua, read_metadata(self.root / 'ForeverRosettaStone/ForeverRosettaStone.toc'))
+        install_metadata(self.lua, read_metadata(self.root / 'ForeverRosettaStone/ForeverRosettaStone.toc', include_pages=False))
         codec = self.lua.globals().C_EncodingUtil
 
         for key in (b'DecodeBase64', b'DecompressString', b'DeserializeCBOR'):

@@ -6,7 +6,7 @@ from database_harness import ROOT, install_metadata, load_database, read_metadat
 class LiveValueHarness:
     def setUp(self):
         self.lua = LuaRuntime(encoding=None)
-        install_metadata(self.lua, read_metadata(ROOT / 'ForeverRosettaStone/ForeverRosettaStone.toc'))
+        install_metadata(self.lua, read_metadata(ROOT / 'ForeverRosettaStone/ForeverRosettaStone.toc', include_pages=False))
         load_database(self.lua)
         self.lua.execute(b'''
             canaccessallvalues = function(...)

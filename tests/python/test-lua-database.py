@@ -231,6 +231,19 @@ class DatabaseTests(unittest.TestCase):
         self.assertEqual(api.GetQuest(api, 943, b'enUS')[b'title'], english[b'title'])
         self.assertEqual(counts['packs'], [b'ForeverRosettaStone_Data_enUS', b'ForeverRosettaStone_Data_deDE'])
 
+    def test_runtime_replays_load_real_packs_without_a_preparsed_page_inventory(self):
+        metadata = read_metadata(ROOT / 'ForeverRosettaStone/ForeverRosettaStone.toc', include_pages=False)
+        _, expected, _ = self.create_runtime()
+        _, actual, counts = self.create_runtime(metadata)
+        self.assertEqual(counts['packs'], [])
+        for locale in (b'enUS', b'frFR'):
+            self.assertEqual(actual.GetQuest(actual, 943, locale)[b'title'],
+                             expected.GetQuest(expected, 943, locale)[b'title'])
+            self.assertEqual(actual.GetSpellDetails(actual, 133, locale)[b'description'],
+                             expected.GetSpellDetails(expected, 133, locale)[b'description'])
+        self.assertEqual(set(counts['packs']), {b'ForeverRosettaStone_Data_enUS',
+                                              b'ForeverRosettaStone_Data_frFR', b'ForeverRosettaStone_Rules'})
+
     def test_source_packs_and_legacy_source_apis_are_absent(self):
         _, api, _ = self.create_runtime()
         self.assertFalse(list(ROOT.glob('ForeverRosettaStone_Source_*')))

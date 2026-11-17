@@ -110,6 +110,12 @@ values as replacement templates; captured cache inputs stay under `datasources/i
 
 See [`tests/README.md`](../tests/README.md) for validation commands.
 
+`source-scan/tooltip_regression_corpus.py` maintains the bounded, versioned multilingual
+regression cases. `check` replays fixed expectations without regenerating them; `status`
+detects catalog/generator drift. `prepare` writes independent synthetic inputs/expectations
+and a review diff under ignored imports, and `apply` preflights hashes before updating fixtures.
+See the [corpus workflow](../tests/fixtures/tooltip-regressions/README.md) for scope and source-update commands.
+
 `source-scan/roundtrip_tooltip_campaign.py` derives reverse spell test inputs from bounded
 native captures. It reports untranslated rows, changed quantities and text differences
 separately; generated reverse inputs never count as native target-client captures.

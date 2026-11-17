@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-17
+
+### Fixed
+
+- Fixed stacked tooltip translations pausing the addon when a tooltip contains restricted client text.
+
+### Changed
+
+- The minimap icon turns red while translations are paused; click it to open the error report.
+
 ## [1.0.0] - 2026-11-16
 
 ### Added

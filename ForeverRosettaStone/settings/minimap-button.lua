@@ -1,5 +1,15 @@
 local _, Addon = ...
 
+function Addon:UpdateMinimapStatus()
+    local button = self.minimapButton
+    if not button then return end
+    if self.lifecycle == "suspended" then
+        button.icon:SetVertexColor(1, 0.2, 0.2)
+    else
+        button.icon:SetVertexColor(1, 1, 1)
+    end
+end
+
 function Addon:PositionMinimapButton(angle)
     local button = self.minimapButton
     button.angle = angle
@@ -59,6 +69,7 @@ function Addon:CreateMinimapButton()
     background:SetTexture([[Interface\Minimap\UI-Minimap-Background]])
     background:SetAllPoints(button)
     local icon = button:CreateTexture(nil, "ARTWORK")
+    button.icon = icon
     icon:SetTexture([[Interface\AddOns\ForeverRosettaStone\media\icon]])
     icon:SetSize(22, 22)
     icon:SetPoint("CENTER", 0, 0)
@@ -70,13 +81,19 @@ function Addon:CreateMinimapButton()
     button:SetScript("OnClick", function(_, mouseButton)
         if button.dragState ~= "idle" then return end
         if Addon:GetWidgetTooltip():IsOwned(button) then Addon:GetWidgetTooltip():Hide() end
-        if mouseButton == "RightButton" and IsShiftKeyDown() then self:MoveDebugPicker("start")
+        if self.lifecycle == "suspended" then self:ShowErrorDialog()
+        elseif mouseButton == "RightButton" and IsShiftKeyDown() then self:MoveDebugPicker("start")
         else self:OpenSettings() end
     end)
     button:SetScript("OnEnter", function()
         if button.dragState == "dragging" then return end
         Addon:GetWidgetTooltip():SetOwner(button, "ANCHOR_LEFT")
         Addon:GetWidgetTooltip():SetText("Forever Rosetta Stone")
+        if self.lifecycle == "suspended" then
+            Addon:GetWidgetTooltip():AddLine(self:GetPauseMessage(), 1, 0.2, 0.2, true)
+            Addon:GetWidgetTooltip():Show()
+            return
+        end
         Addon:GetWidgetTooltip():AddLine(self:SettingsText("minimapClick"), 1, 1, 1)
         Addon:GetWidgetTooltip():AddLine(self:SettingsText("minimapInspect"), 1, 1, 1)
         Addon:GetWidgetTooltip():AddLine(self:SettingsText("minimapDrag"), 1, 1, 1)
@@ -86,6 +103,7 @@ function Addon:CreateMinimapButton()
         if Addon:GetWidgetTooltip():IsOwned(button) then Addon:GetWidgetTooltip():Hide() end
     end)
     self.minimapButton = button
+    self:UpdateMinimapStatus()
     self:PositionMinimapButton(self.preferences.minimapAngle)
     Minimap:HookScript("OnSizeChanged", function() self:PositionMinimapButton(button.angle) end)
     button:Show()
