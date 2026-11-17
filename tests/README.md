@@ -26,6 +26,12 @@ Running the entry point without `--unit-only` also runs translation matrices. On
 when requested. Generated packs live in `ForeverRosettaStone_Data/`; fixtures and release tests preserve
 the flat installed addon layout.
 
+The [versioned tooltip regression corpus](fixtures/tooltip-regressions/README.md) provides
+1,800 fixed source/target/profile/rank cases for three template surfaces. CI replays those
+expectations directly. `tooltip_regression_corpus.py status` detects source drift;
+`prepare` writes a proposed update and diff under ignored imports, and `apply` promotes the
+reviewed files after hash preflight. Historical capture replays and their matrices remain separate.
+
 `python/test-debug-pick-context.py` exercises the manual picker against recorded French
 unit/item and English aura captures. Picks retain readable native payloads plus a
 `tooltipEvidence.replayContext` snapshot: player/unit state, typed item/spell lookups,

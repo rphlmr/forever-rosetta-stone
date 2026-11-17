@@ -188,6 +188,7 @@ function Addon:MoveLifecycle(event)
     if not nextState then return false end
 
     self.lifecycle = nextState
+    if self.UpdateMinimapStatus then self:UpdateMinimapStatus() end
 
     return true
 end
@@ -207,6 +208,13 @@ function Addon:HideFrames()
     end)
 end
 
+function Addon:GetPauseMessage()
+    if GetLocale() == "frFR" then
+        return "Forever Rosetta Stone : traductions en pause après une erreur. Cliquez sur l’icône de la mini-carte ou utilisez /frs error pour le rapport, /frs reset pour réessayer."
+    end
+    return "Forever Rosetta Stone: translations paused after an error. Click the minimap icon or use /frs error for the report, /frs reset to retry."
+end
+
 function Addon:Suspend(label, reason)
     if self.TraceFailure then self:TraceFailure(label, reason) end
     local alreadySuspended = self.lifecycle == "suspended"
@@ -222,7 +230,7 @@ function Addon:Suspend(label, reason)
 
     if #self.errors > 5 then table.remove(self.errors, 1) end
 
-    pcall(print, "Forever Rosetta Stone paused after an error. Use /frs error to copy the report or /frs reset to retry.")
+    pcall(print, self:GetPauseMessage())
 end
 
 -- Keep failures inside our callbacks; never replace WoW's or another addon's error handler.

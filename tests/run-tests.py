@@ -24,6 +24,7 @@ if options.unit_only and matrix_arguments:
     parser.error('--unit-only cannot be combined with translation matrix arguments')
 sys.argv = [sys.argv[0]]
 for filename, class_name in (
+    ('test-tooltip-regression-corpus.py', 'TooltipRegressionCorpusTests'),
     ('test-clean.py', 'CleanTests'),
     ('test-release.py', 'ReleaseTests'),
     ('test-wago-download.py', 'DownloadTests'),

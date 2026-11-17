@@ -2560,6 +2560,13 @@ end
 local ok = pcall(Addon.input:GetScript("OnUpdate"), Addon.input, 0.2)
 equal(ok, true, "update callback does not throw")
 equal(Addon.lifecycle, "suspended", "failure suspends addon")
+equal(select(2, Addon.minimapButton.icon:GetVertexColor()), 0.2, "paused minimap icon stays red")
+local widgetAccurateLines = Addon:GetWidgetTooltip().accurateLines
+Addon:GetWidgetTooltip().accurateLines = true
+Addon.minimapButton:Fire("OnEnter")
+equal(Addon:GetWidgetTooltip().lines[2], Addon:GetPauseMessage(), "minimap hover explains the paused state")
+Addon.minimapButton:Fire("OnLeave")
+Addon:GetWidgetTooltip().accurateLines = widgetAccurateLines
 equal(Addon.registeredPanel, nil, "failure releases English focus registration")
 equal(Addon:MoveLifecycle("initialize.ready"), false, "late initialization cannot revive suspended addon")
 equal(Addon.panel:IsShown(), false, "failure hides panel")
@@ -2571,6 +2578,9 @@ equal(attempts, 1, "suspended callback does not retry")
 equal(#Addon.errors, failures, "no error flood")
 equal(press("PADRSTICK"), true, "failed controller callback releases input")
 SlashCmdList.FOREVERROSETTASTONE("status")
+Addon.minimapButton:Fire("OnClick", "LeftButton")
+equal(dialog.frame:IsShown(), true, "paused minimap launcher opens the failure report")
+dialog.close:Fire("OnClick")
 equal(pcall(SlashCmdList.FOREVERROSETTASTONE, "error"), true, "diagnostics open while suspended")
 flushTimers()
 equal(dialog.frame:IsShown(), true)
@@ -2608,6 +2618,7 @@ local oldInput = Addon.input
 local oldHook = hooks.QuestMapFrame_ShowQuestDetails
 SlashCmdList.FOREVERROSETTASTONE("reset")
 equal(Addon.lifecycle, "ready", "reset recovers without reloading")
+equal(select(2, Addon.minimapButton.icon:GetVertexColor()), 1, "successful reset restores the minimap icon")
 equal(dialog.frame:IsShown(), false, "reset dismisses old error report")
 equal(Addon.panel:IsShown(), true)
 equal(oldInput:IsShown(), false, "old frames remain inactive")

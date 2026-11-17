@@ -21,7 +21,7 @@ class DatabaseMetadata(dict):
         self.pack_root = pack_root
 
 
-def read_metadata(path):
+def read_metadata(path, *, include_pages=True):
     metadata = DatabaseMetadata(path.parent.parent / 'ForeverRosettaStone_Data')
 
     for line in path.read_bytes().splitlines():
@@ -32,6 +32,11 @@ def read_metadata(path):
         assert len(line) <= 1023, f'TOC metadata line too long: {key!r}'
         assert key.lower() not in metadata, f'Duplicate metadata key: {key!r}'
         metadata[key.lower()] = value.strip()
+
+    # Runtime replays load pack files through LoadAddOn. Only database contract tests
+    # need a second, decoded inventory of their stored pages for direct inspection.
+    if not include_pages:
+        return metadata
 
     pack_names = metadata.get(b'x-rosetta-packs', b'')
 
