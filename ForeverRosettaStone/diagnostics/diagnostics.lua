@@ -1,6 +1,8 @@
 local addonName, Addon = ...
 
 local PICK_LIMIT = 30
+local QUEST_QUERY_LIMIT = 20
+local QUEST_QUERY_TIMEOUT = 5
 local unitEvents = {
     PLAYER_TARGET_CHANGED = "target", PLAYER_SOFT_INTERACT_CHANGED = "softinteract",
     PLAYER_SOFT_ENEMY_CHANGED = "softenemy", PLAYER_SOFT_FRIEND_CHANGED = "softfriend",
@@ -719,7 +721,8 @@ end
 function Addon:GetCommandHelp()
     local groups = {
         { "home", { "/frs", "/frs help", "/frs report" } },
-        { "inspect", { "/frs item 25", "/frs spell 133", "/frs npc 8956", "/frs questid 783", "/frs map 27",
+        { "inspect", { "/frs item 25", "/frs spell 133", "/frs npc 8956", "/frs questid 783",
+            "/frs questdata 783 7", "/frs map 27",
             "/frs debug item 25" } },
         { "captures", { "/frs pick", "/frs stop", "/frs list", "/frs clear", "/frs gossip" } },
         { "display", { "/frs display", "/frs display item 117", "/frs display spell 133",
@@ -747,6 +750,75 @@ function Addon:GetCommandHelp()
     return table.concat(lines, "\n")
 end
 
+function Addon:QueryDebugQuestData(argument)
+    local quests, pending = {}, {}
+    for word in argument:gmatch("%S+") do
+        local id = tonumber(word:match("^%d+$"))
+        if not self:IsReadableEntityID(id) or id > 2147483647 then return false end
+        if not pending[id] then
+            if #quests == QUEST_QUERY_LIMIT then return false end
+            local quest = { questID = id, apiErrors = {} }
+            quests[#quests + 1], pending[id] = quest, quest
+        end
+    end
+    if #quests == 0 then return false end
+
+    local frame = self.debugQuestDataEvents
+    if not frame or frame.generation ~= self.generation then
+        frame = self:NewFrame("Frame")
+        frame.generation = self.generation
+        self.debugQuestDataEvents = frame
+    end
+
+    local version, build = GetBuildInfo()
+    local report = { schemaVersion = 1, version = version, build = build, locale = GetLocale(), quests = quests }
+    local heading = "Forever Rosetta Stone · Native quest data"
+    local loading = heading .. "\n\n"
+        .. ("Loading %d quest(s) · Build %s · %s"):format(#quests, report.build, report.locale)
+    self:ShowDebugConsole(loading)
+
+    local remaining = #quests
+    local function Complete(id, status, requestError)
+        local quest = pending[id]
+        if not quest then return end
+        pending[id] = nil
+        quest.status, quest.requestError = status, requestError
+        self:CaptureQuestReport(quest)
+        local title = quest.title
+        if not canaccessallvalues(title) then
+            quest.titleStatus = "restricted"
+        elseif type(title) == "string" and title ~= "" then
+            quest.titleStatus = "available"
+        else
+            quest.titleStatus = "unavailable"
+        end
+        remaining = remaining - 1
+        if remaining > 0 then return end
+
+        frame:UnregisterAllEvents()
+        if self.errorDialog and self.errorDialog.frame:IsShown() and self.errorDialog.report == loading then
+            self:ShowDebugConsole(heading .. "\n\n" .. Format(Snapshot(report)))
+        end
+    end
+    self:SetScript(frame, "OnEvent", function(_, _, id, success)
+        if canaccessallvalues(id, success) then Complete(id, success and "loaded" or "load failed") end
+    end)
+    frame:RegisterEvent("QUEST_DATA_LOAD_RESULT")
+
+    for _, quest in ipairs(quests) do
+        local ok, reason = pcall(function() C_QuestLog.RequestLoadQuestByID(quest.questID) end)
+        if not ok then Complete(quest.questID, "request error", tostring(reason)) end
+    end
+    local onEvent = frame:GetScript("OnEvent")
+    if remaining > 0 then
+        C_Timer.After(QUEST_QUERY_TIMEOUT, self:Wrap("debug quest data timeout", function()
+            if frame:GetScript("OnEvent") ~= onEvent then return end
+            for _, quest in ipairs(quests) do Complete(quest.questID, "timed out") end
+        end))
+    end
+    return true
+end
+
 function Addon:RunDebugCommand(command)
     local action, argument = (command or ""):match("^%s*(%S*)%s*(.-)%s*$")
     action = action:lower()
@@ -766,7 +838,9 @@ function Addon:RunDebugCommand(command)
         return
     end
     argument = argument:lower()
-    if action == "item" or action == "spell" or action == "npc" or action == "map" or action == "questid" then
+    if action == "questdata" or action == "questtitle" then
+        if self:QueryDebugQuestData(argument) then return end
+    elseif action == "item" or action == "spell" or action == "npc" or action == "map" or action == "questid" then
         local id = tonumber(argument:match("^(%d+)$") or argument:match("|h" .. action .. ":(%d+)"))
         if id and id > 0 then
             self:ShowDebugConsole(self:GetEntityDebugReport(action == "questid" and "quest" or action, id)); return

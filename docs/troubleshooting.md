@@ -160,6 +160,12 @@ The optional command field accepts `status`, `item ID`, `spell ID`, `npc ID`, `q
 Examples can be pasted with or without the `/frs` prefix. Direct queries such as
 `/frs item 25` and `/frs spell 133` open the same report.
 
+Run `questdata 98914 98915` in the console or `/frs questdata 98914 98915` in chat to
+request native quest data by ID. The output includes the client build, locale, load status,
+title, objectives, quest tag, link, and tooltip data when available. The journal supplies
+the full description and summary when the quest is in the log. Use **Select output**,
+then Ctrl+C or Cmd+C to copy the full result.
+
 The command field also accepts `dump <Lua expression>` and pasted `/dump` expressions, including
 function calls and immediately invoked function expressions. These execute as addon Lua when
 Run or Enter is pressed; they are not restricted to read-only API queries. This requires a local development

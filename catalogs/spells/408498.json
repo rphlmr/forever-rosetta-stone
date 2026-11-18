@@ -1,7 +1,7 @@
 {
   "locales": {
     "csCZ": {
-      "description": "Když způsobíš poškození útokem zblízka, máš šanci zkrátit dobu seslání a snížit cenu many svého dalšího kouzla Blesk o $m1 %. Sčítá se až $s3 krát. Trvá $408505d.",
+      "description": "Když způsobíš poškození útokem zblízka, máš ${($mws*$s2/60)*100}% šanci (podle rychlosti zbraně) zkrátit dobu seslání a snížit cenu many svého dalšího kouzla Blesk o $m1 %. Sčítá se až $s3 krát. Trvá $408505d.",
       "name": "Zbraň víru",
       "translationMetadata": {
         "fields": {
@@ -20,7 +20,7 @@
       }
     },
     "daDK": {
-      "description": "Når du gør skade med et nærkampsangreb, har du en chance for at reducere kastetiden og manaomkostningen for din næste Lyn-besværgelse med $m1%. Stables op til $s3 gange. Varer $408505d.",
+      "description": "Når du gør skade med et nærkampsangreb, har du ${($mws*$s2/60)*100}% chance (afhængigt af våbnets hastighed) for at reducere kastetiden og manaomkostningen for din næste Lyn-besværgelse med $m1%. Stables op til $s3 gange. Varer $408505d.",
       "name": "Malstrømsvåben",
       "translationMetadata": {
         "fields": {
@@ -178,7 +178,7 @@
       }
     },
     "hrHR": {
-      "description": "Kad naneseš štetu napadom iz blizine, imaš priliku smanjiti vrijeme bacanja i cijenu mane sljedeće čarolije Munja za $m1%. Može se složiti do $s3 puta. Traje $408505d.",
+      "description": "Kad naneseš štetu napadom iz blizine, imaš ${($mws*$s2/60)*100}% šanse (ovisno o brzini oružja) smanjiti vrijeme bacanja i cijenu mane sljedeće čarolije Munja za $m1%. Može se složiti do $s3 puta. Traje $408505d.",
       "name": "Oružje vrtloga",
       "translationMetadata": {
         "fields": {
@@ -196,7 +196,7 @@
       }
     },
     "itIT": {
-      "description": "Quando infliggi danni con un attacco in mischia, hai una probabilità di ridurre il tempo di lancio e il costo in mana del prossimo Dardo Fulminante del $m1%. Si accumula fino a $s3 volte. Dura $408505d.",
+      "description": "Quando infliggi danni con un attacco in mischia, hai una probabilità del ${($mws*$s2/60)*100}% (in base alla velocità dell'arma) di ridurre il tempo di lancio e il costo in mana del prossimo Dardo Fulminante del $m1%. Si accumula fino a $s3 volte. Dura $408505d.",
       "name": "Arma del Maelstrom",
       "translationMetadata": {
         "fields": {
@@ -220,22 +220,9 @@
         "fields": {
           "description": {
             "origin": "original",
-            "renderedResponseSha256": "993bcbaec95a74ec523ddd65187db00a96219e76a7f5887c721964874fbe0b2f",
-            "source": "blizzard",
-            "sourceField": "description",
-            "sourceLocale": "koKR",
-            "sourceNamespace": "static-1.60.1_70399-forever-eu",
-            "sourceRecordID": 408498,
-            "tokenDerivation": "unanimousNativeTemplateAlignment",
-            "tokenEvidenceFixture": "tests/fixtures/blizzard-maelstrom-rendered-evidence.json",
-            "tokenTemplateLocales": [
-              "deDE",
-              "enUS",
-              "esES",
-              "esMX",
-              "frFR",
-              "ruRU"
-            ]
+            "source": "wago",
+            "sourceBuild": "1.60.1.70959",
+            "sourceLocale": "koKR"
           },
           "name": {
             "origin": "original",
@@ -247,15 +234,14 @@
       }
     },
     "plPL": {
-      "description": "Gdy zadajesz obrażenia atakiem wręcz, masz szans zmniejszenia czasu rzucania i kosztu Many następnego zaklęcia Lightning Bolt o $m1%. Nakłada się do $s3 razy. Trwa $408505d.",
+      "description": "Gdy zadajesz obrażenia atakiem wręcz, masz ${($mws*$s2/60)*100}% szans (zależnie od szybkości broni) na skrócenie czasu rzucania i zmniejszenie kosztu many następnej Błyskawicy o $m1%. Kumuluje się do $s3 razy. Trwa $408505d.",
       "name": "Broń wiru",
       "translationMetadata": {
         "fields": {
           "description": {
             "origin": "ai",
-            "source": "polishForever",
-            "sourceLocale": "plPL",
-            "sourceRevision": "9b7f35499cdc8c52ebf4de88f315c18092c16ac8"
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "name": {
             "origin": "ai",
@@ -272,22 +258,9 @@
         "fields": {
           "description": {
             "origin": "original",
-            "renderedResponseSha256": "53704dc459a1284937f084520fc6074d3a651f8ac9cba99dd656f914f625c980",
-            "source": "blizzard",
-            "sourceField": "description",
-            "sourceLocale": "ptBR",
-            "sourceNamespace": "static-1.60.1_70399-forever-eu",
-            "sourceRecordID": 408498,
-            "tokenDerivation": "unanimousNativeTemplateAlignment",
-            "tokenEvidenceFixture": "tests/fixtures/blizzard-maelstrom-rendered-evidence.json",
-            "tokenTemplateLocales": [
-              "deDE",
-              "enUS",
-              "esES",
-              "esMX",
-              "frFR",
-              "ruRU"
-            ]
+            "source": "wago",
+            "sourceBuild": "1.60.1.70959",
+            "sourceLocale": "ptBR"
           },
           "name": {
             "origin": "original",
@@ -327,7 +300,7 @@
       }
     },
     "svSE": {
-      "description": "När du orsakar skada med en närstridsattack har du en chans att minska besvärjelsetiden och manakostnaden för ditt nästa Blixtnedslag med $m1%. Staplas upp till $s3 gånger. Varar i $408505d.",
+      "description": "När du orsakar skada med en närstridsattack har du ${($mws*$s2/60)*100}% chans (beroende på vapnets hastighet) att minska besvärjelsetiden och manakostnaden för ditt nästa Blixtnedslag med $m1%. Staplas upp till $s3 gånger. Varar i $408505d.",
       "name": "Malströmsvapen",
       "translationMetadata": {
         "fields": {
@@ -345,7 +318,7 @@
       }
     },
     "trTR": {
-      "description": "Yakın dövüş saldırısıyla hasar verdiğinde, sonraki Yıldırım büyünün kullanım süresini ve mana bedelini %$m1 azaltma şansın vardır. En fazla $s3 kez birikir. $408505d sürer.",
+      "description": "Yakın dövüş saldırısıyla hasar verdiğinde, silah hızına bağlı olarak %${($mws*$s2/60)*100} ihtimalle bir sonraki Yıldırım büyüsünün kullanım süresi ve mana bedeli %$m1 azalır. En fazla $s3 kez birikir. $408505d sürer.",
       "name": "Maelstrom Silahı",
       "translationMetadata": {
         "fields": {
@@ -364,7 +337,7 @@
       }
     },
     "ukUA": {
-      "description": "Коли ти завдаєш шкоди атакою ближнього бою, є шанс зменшити час застосування та витрати мани наступного закляття «Блискавка» на $m1%. Складається до $s3 разів. Триває $408505d.",
+      "description": "Коли ти завдаєш шкоди атакою ближнього бою, є шанс ${($mws*$s2/60)*100}% (залежно від швидкості зброї) зменшити час застосування та витрати мани наступного закляття «Блискавка» на $m1%. Складається до $s3 разів. Триває $408505d.",
       "name": "Зброя вируючого потоку",
       "translationMetadata": {
         "fields": {
@@ -388,22 +361,9 @@
         "fields": {
           "description": {
             "origin": "original",
-            "renderedResponseSha256": "e255d1cfd7ded7c60f546f2c33a039f633116215c8f95a059396bad864365fde",
-            "source": "blizzard",
-            "sourceField": "description",
-            "sourceLocale": "zhCN",
-            "sourceNamespace": "static-1.60.1_70399-forever-eu",
-            "sourceRecordID": 408498,
-            "tokenDerivation": "unanimousNativeTemplateAlignment",
-            "tokenEvidenceFixture": "tests/fixtures/blizzard-maelstrom-rendered-evidence.json",
-            "tokenTemplateLocales": [
-              "deDE",
-              "enUS",
-              "esES",
-              "esMX",
-              "frFR",
-              "ruRU"
-            ]
+            "source": "wago",
+            "sourceBuild": "1.60.1.70959",
+            "sourceLocale": "zhCN"
           },
           "name": {
             "origin": "original",
@@ -421,22 +381,9 @@
         "fields": {
           "description": {
             "origin": "original",
-            "renderedResponseSha256": "45bc8b670a55b542f6be9a2fc14c56b2753318e02695824ec8e5ef12714ddcd6",
-            "source": "blizzard",
-            "sourceField": "description",
-            "sourceLocale": "zhTW",
-            "sourceNamespace": "static-1.60.1_70399-forever-eu",
-            "sourceRecordID": 408498,
-            "tokenDerivation": "unanimousNativeTemplateAlignment",
-            "tokenEvidenceFixture": "tests/fixtures/blizzard-maelstrom-rendered-evidence.json",
-            "tokenTemplateLocales": [
-              "deDE",
-              "enUS",
-              "esES",
-              "esMX",
-              "frFR",
-              "ruRU"
-            ]
+            "source": "wago",
+            "sourceBuild": "1.60.1.70959",
+            "sourceLocale": "zhTW"
           },
           "name": {
             "origin": "original",
@@ -464,19 +411,19 @@
           "curvePoints": [
             {
               "rank": 1,
-              "value": -4
+              "value": -20
             },
             {
               "rank": 2,
-              "value": -8
+              "value": -20
             },
             {
               "rank": 3,
-              "value": -12
+              "value": -20
             },
             {
               "rank": 4,
-              "value": -16
+              "value": -20
             },
             {
               "rank": 5,
@@ -487,17 +434,47 @@
           "entryID": 129401,
           "nodeID": 104741,
           "operationType": 0,
-          "sourceBuild": "1.60.1.70888"
+          "sourceBuild": "1.60.1.70959"
         }
       },
       {
         "apCoefficient": 0,
         "auraType": 4,
-        "basePoints": 50,
+        "basePoints": 2,
         "bonusCoefficient": 0,
         "effectType": 6,
         "index": 1,
-        "scalingClass": 0
+        "scalingClass": 0,
+        "traitModifier": {
+          "curveID": 128299,
+          "curvePoints": [
+            {
+              "rank": 1,
+              "value": 6
+            },
+            {
+              "rank": 2,
+              "value": 7
+            },
+            {
+              "rank": 3,
+              "value": 8
+            },
+            {
+              "rank": 4,
+              "value": 9
+            },
+            {
+              "rank": 5,
+              "value": 10
+            }
+          ],
+          "definitionID": 134202,
+          "entryID": 129401,
+          "nodeID": 104741,
+          "operationType": 0,
+          "sourceBuild": "1.60.1.70959"
+        }
       },
       {
         "apCoefficient": 0,

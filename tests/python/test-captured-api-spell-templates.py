@@ -44,17 +44,13 @@ class CapturedApiSpellTemplateTests(LiveValueHarness, unittest.TestCase):
         self.assertTrue(any('9%' in text for text in bodies))
         self.assertTrue(any('28%' in text for text in bodies))
 
-    def test_reconstructed_fields_have_explicit_inferred_token_provenance(self):
+    def test_native_templates_confirm_reconstructed_fields(self):
         owner = json.loads((ROOT / 'catalogs/spells/408498.json').read_text())['locales']
         for locale, template in self.recovered.items():
             self.assertEqual(owner[locale]['description'], template)
             meta = owner[locale]['translationMetadata']['fields']['description']
-            self.assertEqual(meta['source'], 'blizzard')
-            self.assertEqual(meta['tokenDerivation'], 'unanimousNativeTemplateAlignment')
-            self.assertEqual(set(meta['tokenTemplateLocales']), set(self.known))
-            self.assertEqual(meta['sourceNamespace'], self.evidence['source']['namespace'])
-            self.assertEqual(meta['renderedResponseSha256'], self.evidence['responses'][locale]['sha256'])
-            self.assertNotIn('sourceBuild', meta)
+            self.assertEqual(meta, {'origin': 'original', 'source': 'wago',
+                                    'sourceBuild': '1.60.1.70959', 'sourceLocale': locale})
         for locale, original in self.known.items():
             self.assertEqual(owner[locale]['description'], original)
 

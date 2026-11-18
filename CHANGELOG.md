@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-11-18
+
+### Added
+
+- Use `/frs questdata <quest IDs>` to collect a copyable report with native quest titles, objectives, journal text, and load status when available.
+
+### Changed
+
+- Updated tooltips for Flametongue Weapon, Windfury Weapon, Windfury Totem, Maelstrom Weapon, and Gloves of Holy Might for WoW Forever build 70959.
+
+### Translations
+
+- Added Ward of the Dead and updated two Darkspear care package titles across the 18 bundled languages.
+- Korean clients use English fallback text for six Flametongue Weapon descriptions whose Korean source contains an invalid token.
+
 ## [1.0.1] - 2026-11-17
 
 ### Fixed
