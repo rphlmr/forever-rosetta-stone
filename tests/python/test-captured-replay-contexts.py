@@ -177,17 +177,16 @@ class CapturedReplayContextTests(unittest.TestCase):
                     self.render(observation, target, source, data, visible)
         self.assertEqual(original, observation)
 
-    def test_actual_word_digit_warning_requires_whole_owned_template_equivalence(self):
+    def test_actual_windfury_capture_round_trips_with_the_fixed_extra_attack(self):
         with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
             report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report',
                                 case_keys={matrix.fingerprint(self.windfury)})
             classified = triage(report, ROOT / 'tests/fixtures/tooltip-campaign')
-        proofs = [event for event in classified['events'] if event['category'] == 'numeric_template_equivalent']
-        self.assertTrue(proofs)
-        for event in proofs:
-            self.assertTrue(event['templateEquivalence'])
-            self.assertTrue(all(proof['owner'] == 'spells/10614' for proof in event['templateEquivalence']))
-        self.assertFalse(any(event['category'] == 'numeric_review_required' for event in classified['events']))
+        # The current French template spells out the fixed extra attack. The original
+        # capture should round-trip without a word/digit difference to classify.
+        self.assertEqual(report['selectedCases'], 1)
+        self.assertEqual(report['counts'], {'passed': 90})
+        self.assertEqual(classified['events'], [])
 
     def test_actual_rank_preview_repeated_passive_row_keeps_its_captured_origin(self):
         observation = self.preview

@@ -69,7 +69,7 @@ function Addon:MoveQuestReport(event)
     return true
 end
 
-function Addon:CaptureQuestReport(record)
+function Addon:CaptureQuestReport(record, tooltip)
     local questID, api = record.questID, C_QuestLog
     record.title = Read(record, "GetTitleForQuestID", api.GetTitleForQuestID, questID)
     record.objectives = Read(record, "GetQuestObjectives", api.GetQuestObjectives, questID)
@@ -84,7 +84,13 @@ function Addon:CaptureQuestReport(record)
     record.isComplete = Read(record, "IsComplete", api.IsComplete, questID)
     record.isFailed = Read(record, "IsFailed", api.IsFailed, questID)
 
-    local tooltip = self.questReport.tooltip
+    if not tooltip then
+        record.questTagInfo = Read(record, "GetQuestTagInfo", api.GetQuestTagInfo, questID)
+        record.questLink = Read(record, "GetQuestLink", api.GetQuestLink, questID)
+        record.tooltipData = Read(record, "C_TooltipInfo.GetHyperlink",
+            C_TooltipInfo and C_TooltipInfo.GetHyperlink, "quest:" .. questID)
+        return
+    end
     tooltip:ClearLines()
     tooltip:SetOwner(UIParent, "ANCHOR_NONE")
     Read(record, "GameTooltip.SetHyperlink", tooltip.SetHyperlink, tooltip, "quest:" .. questID)
@@ -109,7 +115,7 @@ function Addon:FinishQuestReport(outcome, message)
     local dialog = self.questReport
     local record = dialog.record
     record.requestOutcome, record.requestError = outcome, message
-    self:CaptureQuestReport(record)
+    self:CaptureQuestReport(record, dialog.tooltip)
     dialog.text = "## Quest report: " .. record.questID
         .. "\n\nWhat is wrong?\n[Describe the problem and what you expected.]"
         .. "\n\nClient text is included exactly as returned; its language has not been verified."

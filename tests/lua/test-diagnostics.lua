@@ -58,7 +58,7 @@ local help = dialog.report
 for _, example in ipairs({ "/frs help", "/frs status", "/frs settings", "/frs language frFR",
     "/frs quest", "/frs reset", "/frs item 25", "/frs spell 133", "/frs pick", "/frs stop",
     "/frs list", "/frs clear", "/frs error", "/frs gossip",
-    "/frs debug item 25" }) do
+    "/frs debug item 25", "/frs questdata 783 7" }) do
     equal(help:find(example, 1, true) ~= nil, true, "help includes a runnable example: " .. example)
 end
 equal(help:find(Addon:DebugText("recovery"), 1, true) ~= nil, true, "help groups commands by purpose")
@@ -201,6 +201,47 @@ Addon:RunDebugCommand("item 0")
 equal(dialog.report:find(Addon:DebugText("invalid"), 1, true) ~= nil, true, "invalid IDs stay in the console")
 Addon:RunDebugCommand("print('arbitrary Lua')")
 equal(dialog.report:find(Addon:DebugText("invalid"), 1, true) ~= nil, true, "console does not evaluate Lua")
+
+local oldLoad, oldTitle = C_QuestLog.RequestLoadQuestByID, C_QuestLog.GetTitleForQuestID
+local oldLogIndex, oldLogID = C_QuestLog.GetLogIndexForQuestID, C_QuestLog.GetQuestIDForLogIndex
+local oldQuestText, oldTooltipInfo = GetQuestLogQuestText, C_TooltipInfo
+local requested = {}
+C_QuestLog.RequestLoadQuestByID = function(id) requested[#requested + 1] = id end
+C_QuestLog.GetTitleForQuestID = function(id)
+    if id == 98914 then return "Theramore Standard Care Package" end
+end
+C_QuestLog.GetLogIndexForQuestID = function(id) if id == 98914 then return 1 end end
+C_QuestLog.GetQuestIDForLogIndex = function() return 98914 end
+GetQuestLogQuestText = function() return "Native journal description", "Native journal summary" end
+C_TooltipInfo = {
+    GetHyperlink = function(link) return { lines = {{ leftText = link }} } end,
+}
+dialog.commandBox:SetText("questdata 98914 98915 98914")
+dialog.run:Fire("OnClick")
+local questEvents = Addon.debugQuestDataEvents
+equal(table.concat(requested, ","), "98914,98915", "quest titles request each native quest once")
+equal(dialog.report:find("Loading 2 quest(s)", 1, true) ~= nil, true, "console waits for both load results")
+questEvents:Fire("OnEvent", "QUEST_DATA_LOAD_RESULT", 98915, false)
+questEvents:Fire("OnEvent", "QUEST_DATA_LOAD_RESULT", 98914, true)
+for _, evidence in ipairs({ "build = ", "locale = ", "98914", "98915", "Theramore Standard Care Package",
+    "objectives", "Native journal description", "Native journal summary", "quest:98915",
+    'status = "load failed"', 'titleStatus = "unavailable"' }) do
+    equal(dialog.report:find(evidence, 1, true) ~= nil, true, "quest title report includes " .. evidence)
+end
+dialog.selectOutput:Fire("OnClick")
+equal(dialog.editBox.highlighted, true, "quest titles are copyable from the console")
+Addon:RunDebugCommand("questtitle 98915")
+flushTimers()
+equal(dialog.report:find('status = "timed out"', 1, true) ~= nil, true, "missing load events time out")
+Addon:RunDebugCommand("questdata 98914")
+Addon:RunDebugCommand("help")
+questEvents:Fire("OnEvent", "QUEST_DATA_LOAD_RESULT", 98914, true)
+equal(dialog.report, help, "late native results do not replace the current console output")
+Addon:RunDebugCommand("questdata 98914 invalid")
+equal(#requested, 4, "invalid quest-title commands do not load any quests")
+C_QuestLog.RequestLoadQuestByID, C_QuestLog.GetTitleForQuestID = oldLoad, oldTitle
+C_QuestLog.GetLogIndexForQuestID, C_QuestLog.GetQuestIDForLogIndex = oldLogIndex, oldLogID
+GetQuestLogQuestText, C_TooltipInfo = oldQuestText, oldTooltipInfo
 
 Addon:MoveDebugPicker("start")
 for id = 1, 31 do
