@@ -327,14 +327,16 @@ translation work merely because saved drafts exist.
   assignments, completed results, validation outcomes, and unresolved work so resuming does
   not repeat accepted jobs or redo searches whose inputs have not changed.
 
-### 3. One entity per worker, coordinator-owned integration
+### 3. One snapshot per entity, coordinator-owned integration
 
-When delegation is explicitly authorized, use the repository's agent limits and
-`tools/catalogs/catalog-batch.py` with `--batch-size 1`. Each worker owns one entity at a time across
-all requested languages. It edits only its assigned results file and returns the result plus
-unresolved evidence/conflicts before receiving another assignment. Keep requests bounded;
-do not start an unattended worker loop. Reuse a worker while its context remains relevant;
-handoff a fresh bounded assignment when accumulated context would obscure the task.
+When delegation is explicitly authorized, prepare waves of up to 100 entities with
+`tools/catalogs/catalog-batch.py` and `--batch-size 1`. Distribute the disjoint snapshots among
+six GPT-6.1-Tera workers at medium effort. Each worker can take several entities in a wave
+and completes every missing target language per entity. Start fresh workers for each wave
+with the assignment and relevant terminology, without inheriting previous conversations.
+Keep one result file per entity and save it before moving on to the next. Workers edit their
+assigned result files and report unresolved cases. Keep assignments bounded and validate
+results before applying them.
 
 For each field, applicable trusted source updates win over existing text, especially AI drafts.
 Prefer verified official text for official languages, or applicable community text for community
@@ -447,10 +449,11 @@ Include new IDs explicitly. Prepare disjoint assignments:
 python3 tools/catalogs/catalog-batch.py prepare --scope datasources/imports/update/scope.json --output-dir datasources/imports/update/batches --batch-size 1
 ```
 
-Assign each agent one `NNNNN.results.json`, the supported languages, and the pinned upstream
-evidence. Results contain all languages with inline field metadata. The coordinator retains
-`NNNNN.batch.json`, which contains complete original records, locale configuration, and fingerprints.
-Agents edit only their results file with the dedicated `apply_patch` tool. Preserve unchanged
+Assign each agent a disjoint group of `NNNNN.results.json` files, the supported languages, and
+the pinned upstream evidence. Each file contains all languages with inline field metadata. The
+coordinator retains the matching `NNNNN.batch.json`, which contains complete original records,
+locale configuration, and fingerprints. Agents edit only their assigned results files with
+the dedicated `apply_patch` tool. Preserve unchanged
 metadata. Changed metadata records the correct origin, source, and source language inline.
 New records start as `null` and must be supplied in the results.
 Do not run builders or modify maintained catalogs or shared metadata from individual agents.
