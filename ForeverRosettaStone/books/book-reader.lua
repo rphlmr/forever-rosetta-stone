@@ -58,18 +58,27 @@ local function GetClientItemName(itemID)
     return GetItemInfo and GetItemInfo(itemID)
 end
 
+-- Match the build's object-name index using ASCII whitespace and ASCII case folding.
+local function FindBookByObjectName(text, locale)
+    if not Readable(text, "string") then return end
+    local name = text:gsub("|[cC]%x%x%x%x%x%x%x%x", ""):gsub("|[rR]", ""):gsub("|T.-|t", ""):gsub("|n", "\n")
+        :gsub("\194\160", " "):gsub("\226\128\175", " "):gsub("[ \t\n\r\v\f]+", " "):gsub("^ +", ""):gsub(" +$", "")
+        :gsub("[A-Z]", function(letter) return string.char(letter:byte() + 32) end)
+    return ForeverRosettaStoneDB:GetBookFirstPageByObjectName(name, locale)
+end
+
 -- Returns the first page ID of the open book, or nil when its owner is not a catalog book.
-function Addon:ResolveBookFirstPage()
-    local ok, guid = pcall(UnitGUID, "npc")
-    local objectID = ok and self:GetGameObjectID(guid)
+function Addon:ResolveBookFirstPage(guid, title)
+    local objectID = self:GetGameObjectID(guid)
     local firstPage = objectID and ForeverRosettaStoneDB:GetBookFirstPage("object", objectID)
     if firstPage then return firstPage end
 
     local itemID = self.bookItemCandidate
-    local title = ItemTextGetItem and ItemTextGetItem()
     if itemID and Readable(title, "string") and GetClientItemName(itemID) == title then
         return ForeverRosettaStoneDB:GetBookFirstPage("item", itemID)
     end
+    -- The interaction GUID can go away while the native book remains open.
+    if not guid then return FindBookByObjectName(title, GetLocale()) end
 end
 
 -- The displayed page is the catalog page whose client-language text matches the native text,
@@ -105,15 +114,16 @@ function Addon:GetOpenBook()
     local nativeText = ItemTextGetText and ItemTextGetText()
     if not Readable(pageNumber, "number") or not Readable(nativeText, "string") then return end
     local ok, guid = pcall(UnitGUID, "npc")
+    guid = ok and Readable(guid, "string") and guid or nil
     local title = ItemTextGetItem and ItemTextGetItem()
-    local key = table.concat({ tostring(ok and Readable(guid, "string") and guid or ""),
+    local key = table.concat({ guid or "",
         tostring(self.bookItemCandidate), Readable(title, "string") and title or "", pageNumber, nativeText,
         self:GetTargetLocale() }, "\031")
     local cache = self.openBookCache
     if cache and cache.key == key then return cache.book end
 
     local book
-    local firstPage = self:ResolveBookFirstPage()
+    local firstPage = self:ResolveBookFirstPage(guid, title)
     local pageID = firstPage and self:ResolveBookPage(firstPage, pageNumber, nativeText)
     if pageID then
         local title, body = self:GetBookTranslation(firstPage, pageID)
@@ -346,13 +356,6 @@ Addon:RegisterNameTooltipComponent({
     Hide = function() Addon:SendBookReader({ type = "reset" }) end,
 })
 
--- Same as the build's normalize_client_literal. ASCII whitespace only: %s can match UTF-8 bytes such as
--- the second byte of "à" in some C locales.
-local function NormalizeTitle(text)
-    return (text:gsub("|[cC]%x%x%x%x%x%x%x%x", ""):gsub("|[rR]", ""):gsub("|T.-|t", ""):gsub("|n", "\n")
-        :gsub("\194\160", " "):gsub("\226\128\175", " "):gsub("[ \t\n\r\v\f]+", " "):gsub("^ +", ""):gsub(" +$", ""))
-end
-
 -- World objects: an entry ID in the GUID names the book. Object tooltips usually carry no GUID, only
 -- the native name, which resolves when it names exactly one catalog book.
 Addon:RegisterNameTooltipComponent({
@@ -366,8 +369,6 @@ Addon:RegisterNameTooltipComponent({
             and data.type == Enum.TooltipDataType.Object) then return end
         local line = Readable(data.lines, "table") and data.lines[1]
         local name = Readable(line, "table") and line.leftText
-        if not Readable(name, "string") then return end
-        name = NormalizeTitle(name):gsub("[A-Z]", function(letter) return string.char(letter:byte() + 32) end)
-        return name ~= "" and ForeverRosettaStoneDB:GetBookFirstPageByObjectName(name, GetLocale()) or nil
+        return FindBookByObjectName(name, GetLocale())
     end,
 })

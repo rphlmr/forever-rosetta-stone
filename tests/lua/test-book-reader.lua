@@ -98,6 +98,15 @@ check(#reader.parchments == 0, "a book without native material keeps the quest p
 check(not Addon.bookBookmark:IsShown(), "an open reader hides its bookmark")
 Addon:UpdateBookReader()
 check(reader.body.lastSections == sections, "stable polling does not rebuild the page")
+local objectGUID = npcGUID
+npcGUID = nil
+pageNumber, nativeText = 2, DB:GetBookPage(2098, "frFR")
+Addon:UpdateBookReader()
+check(reader.frame:IsShown() and reader.body.lastSections[2].text == DB:GetBookPage(2098, "enUS"),
+    "turning the page without an interaction GUID keeps the matching translation open")
+npcGUID = objectGUID
+pageNumber, nativeText = 1, DB:GetBookPage(2097, "frFR")
+Addon:UpdateBookReader()
 controls.setGamepad(true)
 reader:SyncController(true)
 check(SmartNavigation:GetActiveFrame() == reader.frame and SmartNavigation:GetCurrentButton() == nil,
