@@ -63,8 +63,9 @@ sets in [`official_text.py`](../tools/catalogs/official_text.py); configured tar
 
 Earlier AI translations in official languages yield to available source text, including
 English fallback. Existing additional-language translations are **not retroactively removed**
-because a new-job eligibility check fails. A genuine source update can still supply preferred
-localized wording. A changed English meaning is a review issue, not permission to erase text.
+because a new-job eligibility check fails. A changed English meaning requires review.
+On a later resync, applicable non-AI source wording for the same locale and field replaces
+an AI translation when its English context and placeholders match.
 When English itself retains AI authorship, copying it must retain that provenance honestly.
 Never invent English, labels or objective bindings to fill missing source data.
 
@@ -74,13 +75,20 @@ For the same ID and field, require **at least one verified non-English translati
 official client language** from Blizzard, Wago, Questie or EG Link. Its English context must
 match the maintained source. Require nonempty wording, normalized inequality with English,
 accepted flags and non-AI source authorship. A catalog claim alone is not independent evidence.
+
+For `quests.summary`, a verified Blizzard Forever quest response can instead confirm the
+quest ID. The composed QuestieDB snapshot must provide an unflagged, unambiguous English
+summary for that ID at a pinned revision, and its wording must match the maintained English
+summary. Blizzard confirms the quest identity. QuestieDB remains the source of the summary.
+This exception applies only to additional-language summaries, including when the Blizzard
+web API exposes only the full description.
+
 For `books.name` and `bookpages.description` only, the user-approved book policy also accepts
 VMaNGOS non-English evidence with a verified asset, the same owned page identity (for bodies),
 nonempty translated wording and a matching English SHA-256. It remains Vanilla-reference
-evidence with its real community authorship. This exception never applies to quests, items,
-spells or other kinds and never permits authoring official-language AI text.
+evidence with its real community authorship. The book exception is restricted to those two fields.
 
-This is deterministic: no model decides whether a source is translated.
+Eligibility is determined from the verified corpus.
 
 [`import_policy.py`](../tools/catalogs/import_policy.py) shares this check between ordinary,
 foreign and fallback queues, batch validation and label tooling. The template pilot uses the
