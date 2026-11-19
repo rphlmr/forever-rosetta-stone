@@ -1,8 +1,6 @@
 local _, Addon = ...
 
--- Books are identified by their owner (a bag item or a world object) and the displayed page is
--- verified against the client's own text before a translation is shown. Page order in the catalog
--- is a Vanilla reference, so the native text, not the page number alone, selects the page.
+-- Books are identified by their owner, and the native page number indexes the catalog's page list.
 
 local profiles = Addon:CreateTooltipPlacementProfiles({
     name = "bookReader",
@@ -20,15 +18,6 @@ function Addon:GetGameObjectID(guid)
     if not Readable(guid, "string") then return end
     local id = guid:match("^GameObject%-[^-]+%-[^-]+%-[^-]+%-[^-]+%-(%d+)%-")
     return id and tonumber(id)
-end
-
--- Comparable form of a page: placeholders resolved for the player, markup and spacing removed.
-local function Comparable(text)
-    if not Readable(text, "string") then return end
-    text = Addon:FormatQuestText(text, nil, GetLocale()) or text
-    text = text:gsub("<[^<>]*>", " "):gsub("|[cC]%x%x%x%x%x%x%x%x", ""):gsub("|[rR]", "")
-        :gsub("\194\160", " "):gsub("\226\128\175", " "):gsub("%s+", " "):gsub("^ ", ""):gsub(" $", "")
-    return text ~= "" and text or nil
 end
 
 -- Readable text for a FontString: HTML pages keep their paragraph breaks, other tags are dropped.
@@ -81,21 +70,11 @@ function Addon:ResolveBookFirstPage(guid, title)
     if not guid then return FindBookByObjectName(title, GetLocale()) end
 end
 
--- The displayed page is the catalog page whose client-language text matches the native text,
--- trying the native page number first. Without a match the page stays native.
-function Addon:ResolveBookPage(firstPage, pageNumber, nativeText)
+function Addon:ResolveBookPage(firstPage, pageNumber)
     local rules = ForeverRosettaStoneDB:GetBookRules(firstPage)
     local pages = rules and rules.pages
-    local native = Comparable(nativeText)
-    if type(pages) ~= "table" or not native then return end
-    local locale = GetLocale()
-    local function Matches(pageID)
-        return type(pageID) == "number" and Comparable(ForeverRosettaStoneDB:GetBookPage(pageID, locale)) == native
-    end
-    if Matches(pages[pageNumber]) then return pages[pageNumber] end
-    for _, pageID in ipairs(pages) do
-        if Matches(pageID) then return pageID end
-    end
+    local pageID = type(pages) == "table" and pages[pageNumber]
+    if type(pageID) == "number" then return pageID end
 end
 
 -- Title and body of the open page in the target language; either may be absent.
@@ -107,24 +86,23 @@ function Addon:GetBookTranslation(firstPage, pageID)
     return title, body and PlainText(body) or nil
 end
 
--- Resolution reads every catalog page of the book, so it is cached per displayed page.
+-- Cache the resolved translation for the displayed page and target language.
 function Addon:GetOpenBook()
     if not (ItemTextFrame and ItemTextFrame:IsVisible()) then return end
     local pageNumber = ItemTextGetPage and ItemTextGetPage()
-    local nativeText = ItemTextGetText and ItemTextGetText()
-    if not Readable(pageNumber, "number") or not Readable(nativeText, "string") then return end
+    if not Readable(pageNumber, "number") then return end
     local ok, guid = pcall(UnitGUID, "npc")
     guid = ok and Readable(guid, "string") and guid or nil
     local title = ItemTextGetItem and ItemTextGetItem()
     local key = table.concat({ guid or "",
-        tostring(self.bookItemCandidate), Readable(title, "string") and title or "", pageNumber, nativeText,
+        tostring(self.bookItemCandidate), Readable(title, "string") and title or "", pageNumber,
         self:GetTargetLocale() }, "\031")
     local cache = self.openBookCache
     if cache and cache.key == key then return cache.book end
 
     local book
     local firstPage = self:ResolveBookFirstPage(guid, title)
-    local pageID = firstPage and self:ResolveBookPage(firstPage, pageNumber, nativeText)
+    local pageID = firstPage and self:ResolveBookPage(firstPage, pageNumber)
     if pageID then
         local title, body = self:GetBookTranslation(firstPage, pageID)
         if body then
