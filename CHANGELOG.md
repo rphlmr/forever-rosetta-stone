@@ -8,7 +8,7 @@
 
 ### Translations
 
-- Expanded book and letter translations across the bundled languages.
+- Added 2 book titles and 61 book and letter pages, and expanded translations across all 18 bundled languages.
 
 ## [1.1.0] - 2026-11-19
 
