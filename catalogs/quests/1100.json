@@ -1,8 +1,28 @@
 {
   "areaId": 400,
+  "dialogueContexts": {
+    "023927d6f7f7a0c80c52": {
+      "lineId": "q:1100:progress",
+      "npcId": 4048,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "66e5fa6763e688f98331": {
+      "lineId": "q:1100:complete",
+      "npcId": 4048,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Pomalu otevíráš ošoupaný deník Henriga Lonebrowa...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "Podle tvého ustaraného výrazu poznávám, že něco není v pořádku...",
+        "66e5fa6763e688f98331": "Říkáš, že jsi ten deník našel u mrtvého trpaslíka? Dej mi chvilku, abych si prohlédl jeho stránky..."
+      },
       "summary": "Přečti si Henrig Lonebrow's Journal.",
       "title": "Lonebrowův deník",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Du åbner langsomt Henrig Lonebrows vejrslidte dagbog....",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "Dit bekymrede udtryk fortæller mig, at noget er galt...",
+        "66e5fa6763e688f98331": "Du siger, du fandt denne dagbog på en død dværg? Giv mig et øjeblik til at læse siderne..."
+      },
       "summary": "Læs Henrig Lonebrows dagbog.",
       "title": "Lonebrows dagbog",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "122f45a18da7cea22b90e0b77cbe5f6da4b283e16bfb174df4bf4c1a4ccb79b2"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Ihr öffnet langsam das verwitterte Tagebuch des Henrig Lonebrow...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "So bekümmert, wie Ihr ausseht, würde ich sagen, dass etwas nicht stimmt. . . ",
+        "66e5fa6763e688f98331": "Ihr sagt, Ihr habt das Tagebuch bei einem verstorbenen Zwerg gefunden? Gebt mir einen Moment Zeit, um durch die Seiten zu stöbern. . . "
+      },
       "summary": "Lest Henrig Lonebrows Tagebuch.",
       "title": "Lonebrows Tagebuch",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "You slowly open the weathered journal of Henrig Lonebrow....",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "From your look of concern, I can tell that something is amiss....",
+        "66e5fa6763e688f98331": "You say you found this journal on a deceased dwarf? Give me but a moment to peruse the pages..."
+      },
       "summary": "Read Henrig Lonebrow's Journal.",
       "title": "Lonebrow's Journal",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Abres lentamente el desgastado diario de Henrig Soliceja...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "De tu cara de preocupación se deduce que algo no marcha bien...",
+        "66e5fa6763e688f98331": "¿Y dices que este diario lo tenía un enano muerto? Dame un momento para leerlo..."
+      },
       "summary": "Lee el diario de Henrig Soliceja.",
       "title": "El diario de Henrig Soliceja",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Abres lentamente el desgastado diario de Henrig Soliceja...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "De tu cara de preocupación se deduce que algo no marcha bien...",
+        "66e5fa6763e688f98331": "¿Y dices que este diario lo tenía un enano muerto? Dame un momento para leerlo..."
+      },
       "summary": "Lee el diario de Henrig Soliceja.",
       "title": "El diario de Soliceja",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "Vous ouvrez lentement le journal décoloré de Henrig Lonebrow…",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "D'après votre mine inquiète, je peux dire que quelque chose va mal…",
+        "66e5fa6763e688f98331": "Vous dites que vous avez trouvé ce journal sur un nain mort ? Donnez-moi juste un moment pour lire attentivement ces pages…"
+      },
       "summary": "Lire le Journal de Henrig Lonebrow.",
       "title": "Journal de Lonebrow",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +304,10 @@
     },
     "hrHR": {
       "description": "Polako otvaraš pohabani dnevnik Henriga Lonebrowa....",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "Po tvom zabrinutom izrazu vidim da nešto nije u redu...",
+        "66e5fa6763e688f98331": "Kažeš da si ovaj dnevnik pronašao kod mrtvog patuljka? Daj mi samo trenutak da pregledam stranice..."
+      },
       "summary": "Pročitaj dnevnik Henriga Lonebrowa.",
       "title": "Lonebrowov dnevnik",
       "translationMetadata": {
@@ -189,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "122f45a18da7cea22b90e0b77cbe5f6da4b283e16bfb174df4bf4c1a4ccb79b2"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +345,10 @@
     },
     "itIT": {
       "description": "Apri lentamente il diario logorato dalle intemperie di Henrig Lonebrow...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "Dalla tua aria preoccupata capisco che qualcosa non va....",
+        "66e5fa6763e688f98331": "Dici di aver trovato questo diario addosso a un nano morto? Dammi solo un momento per scorrere le pagine..."
+      },
       "summary": "Leggi il diario di Henrig Lonebrow.",
       "title": "Il diario di Lonebrow",
       "translationMetadata": {
@@ -216,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "122f45a18da7cea22b90e0b77cbe5f6da4b283e16bfb174df4bf4c1a4ccb79b2"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +388,10 @@
     },
     "koKR": {
       "description": "헨리그 론브로우의 빛 바랜 일지를 천천히 열어 봅니다.",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "당신의 걱정스러운 눈빛을 보아하니 뭔가 잘못된 모양인데...",
+        "66e5fa6763e688f98331": "죽은 드워프에게서 이 일지를 발견했단 말이오? 잠시 읽어 볼 시간을 좀 주시오."
+      },
       "summary": "헨리그 론브로우의 일지를 읽으십시오.",
       "title": "론브로우의 일지",
       "translationMetadata": {
@@ -242,6 +400,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +428,10 @@
     },
     "plPL": {
       "description": "Powoli otwierasz zniszczony przez pogodę dziennik Henriga Lonebrowa....",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "Po twojej zatroskanej minie widzę, że coś jest nie tak...",
+        "66e5fa6763e688f98331": "Mówisz, że ten dziennik był przy martwym krasnoludzie? Daj mi chwilę, żebym przejrzał strony..."
+      },
       "summary": "Przeczytaj dziennik Henriga Lonebrowa.",
       "title": "Dziennik Lonebrowa",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "122f45a18da7cea22b90e0b77cbe5f6da4b283e16bfb174df4bf4c1a4ccb79b2"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "Você abre, com cuidado, o diário desgastado de Henrig Monocelha...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "Pelo seu aspecto de consternação, vejo que tem alguma coisa errada...",
+        "66e5fa6763e688f98331": "Quer dizer que você encontrou esse diário no corpo de um anão? Dê-me um instante para folheá-lo..."
+      },
       "summary": "Leia o Diário de Henrig Monocelha.",
       "title": "Diário do Monocelha",
       "translationMetadata": {
@@ -293,6 +481,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +509,10 @@
     },
     "ruRU": {
       "description": "Вы медленно открываете потрепанный дневник Хенрига Хмурня...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "Тревожно выглядишь.",
+        "66e5fa6763e688f98331": "Говоришь, что нашел этот дневник у умершего дворфа? Дай мне немного времени, чтобы ознакомиться со страницами..."
+      },
       "summary": "Прочитайте дневник Хенрига Хмурня.",
       "title": "Дневник Хмурня",
       "translationMetadata": {
@@ -317,6 +521,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +549,10 @@
     },
     "svSE": {
       "description": "Du öppnar långsamt Henrig Lonebrows väderbitna dagbok....",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "På din bekymrade blick ser jag att något är fel...",
+        "66e5fa6763e688f98331": "Säger du att du fann dagboken på en död dvärg? Ge mig ett ögonblick att läsa igenom sidorna..."
+      },
       "summary": "Läs Henrig Lonebrows dagbok.",
       "title": "Lonebrows dagbok",
       "translationMetadata": {
@@ -342,6 +562,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "122f45a18da7cea22b90e0b77cbe5f6da4b283e16bfb174df4bf4c1a4ccb79b2"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +590,10 @@
     },
     "trTR": {
       "description": "Henrig Lonebrow'un yıpranmış günlüğünü yavaşça açıyorsun...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "Endişeli görünüşünden bir şeylerin ters gittiğini anlayabiliyorum...",
+        "66e5fa6763e688f98331": "Bu günlüğü ölü bir cücenin üzerinde bulduğunu mu söylüyorsun? Sayfaları incelemem için bana bir an ver..."
+      },
       "summary": "Henrig Lonebrow'un Günlüğü'nü oku.",
       "title": "Lonebrow'un Günlüğü",
       "translationMetadata": {
@@ -369,6 +603,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "122f45a18da7cea22b90e0b77cbe5f6da4b283e16bfb174df4bf4c1a4ccb79b2"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +631,10 @@
     },
     "ukUA": {
       "description": "Ви повільно розгортаєте пошарпаний щоденник Генріґа Однобрового...",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "З твого стурбованого вигляду бачу, що щось негаразд...",
+        "66e5fa6763e688f98331": "Кажеш, ти знайшов цей щоденник у загиблого дворфа? Дай мені хвилину переглянути сторінки..."
+      },
       "summary": "Прочитайте щоденник Генріґа Однобрового.",
       "title": "Журнал Однобрового",
       "translationMetadata": {
@@ -397,6 +645,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "122f45a18da7cea22b90e0b77cbe5f6da4b283e16bfb174df4bf4c1a4ccb79b2"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +675,10 @@
     },
     "zhCN": {
       "description": "你慢慢打开亨里格·独眉的这本破旧的日记……",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "从你凝重的脸色中，我看出……有什麽东西出了问题……",
+        "66e5fa6763e688f98331": "你说你在一个死去的矮人身上找到了这本日记?给我点时间仔细读一下……\n"
+      },
       "summary": "阅读亨里格·独眉的日记。",
       "title": "亨里格的日记",
       "translationMetadata": {
@@ -425,6 +687,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +715,10 @@
     },
     "zhTW": {
       "description": "你慢慢打開亨里格·獨眉的這本破舊的日記……",
+      "dialogue": {
+        "023927d6f7f7a0c80c52": "從你凝重的臉色中，我看出……有什麼東西出了問題……",
+        "66e5fa6763e688f98331": "你說你在一個死去的矮人身上找到了這本日記?給我點時間仔細讀一下……"
+      },
       "summary": "閱讀亨里格·獨眉的日記。",
       "title": "亨里格的日記",
       "translationMetadata": {
@@ -449,6 +727,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.023927d6f7f7a0c80c52": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.66e5fa6763e688f98331": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

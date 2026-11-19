@@ -45,6 +45,27 @@ class QuestFormattingTests(unittest.TestCase):
                 self.assertIsNone(self.format(text))
         self.assertEqual(self.format('  Available text.  '), '  Available text.  ')
 
+    def test_dialogue_matches_full_sentence_gender_branches(self):
+        self.lua.execute("""
+            addon.locale = 'frFR'
+            function GetLocale() return 'enUS' end
+            ForeverRosettaStoneDB = {
+                GetQuestDialogue = function(_, _, _, locale)
+                    local text = locale == 'enUS'
+                        and '$gWelcome, sir. Need help?:Hello! Need help?;$b$bFollow me.'
+                        or '$gBonjour, monsieur. Besoin d’aide ?:Bonjour ! Besoin d’aide ?;$b$bSuivez-moi.'
+                    return {{key = 'greeting', stage = 'gossip', text = text}}
+                end,
+            }
+        """)
+        source = (ROOT / 'ForeverRosettaStone/quests/quest-dialogue.lua').read_text()
+        self.lua.execute("assert(loadstring(...))('addon', addon)", source)
+        self.assertEqual(self.addon.MatchQuestDialogue(self.addon, 32, None, 'gossip', 'Hello! Need help?\n\nFollow me.'),
+                         'Bonjour ! Besoin d’aide ?\n\nSuivez-moi.')
+        self.lua.execute("function UnitSex() return 2 end")
+        self.assertEqual(self.addon.MatchQuestDialogue(self.addon, 32, None, 'gossip', 'Welcome, sir. Need help?\n\nFollow me.'),
+                         'Bonjour, monsieur. Besoin d’aide ?\n\nSuivez-moi.')
+
     def test_unmapped_summary_objective_stays_native(self):
         self.lua.execute("""
             addon.locale = 'frFR'

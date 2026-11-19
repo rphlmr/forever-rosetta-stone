@@ -1,8 +1,28 @@
 {
   "areaId": 15,
+  "dialogueContexts": {
+    "b00b9c233e45d08f2287": {
+      "lineId": "q:1323:accept",
+      "npcId": 5087,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "f534ddac32377ffa8c6a": {
+      "lineId": "q:1323:complete",
+      "npcId": 4926,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Ó, já asi nalít moc kyseliny na štít. Já trošku otřít...\n\nHm, trochu těžký číst, ale vypadá jako jméno Mosarn. Já neznat. Možná Krog znát. Krog znát hodně lidí.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Ach, myslím, že jsem na štít kápl příliš mnoho kyseliny. Jen to trochu otřu...$b$bHm, těžko se to čte, ale vypadá to na jméno Mosarn. Nikdy jsem o něm neslyšel. Možná ho zná Krog. Krog zná spoustu lidí.",
+        "f534ddac32377ffa8c6a": "Mosarn? To jméno mi něco říká... Nemůžu si vzpomenout. Třeba mi to dojde později.$b$bAsi to není důležité. Štít může pocházet odkudkoli a nic neznamenat..."
+      },
       "summary": "Promluv si s Krogem v Brackenwall Village.",
       "title": "Černý štít",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Åh, jeg tror, jeg måske kom for meget syre på skjoldet. Lad mig bare gnide lidt...\n\nHm, lidt svært at læse, men det ligner navnet Mosarn. Har aldrig hørt om ham. Måske kender Krog ham. Krog kender mange mennesker.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Åh, jeg tror, jeg kom til at dryppe for meget syre på skjoldet. Lad mig lige gnide lidt...$b$bHm, det er svært at læse, men det ligner navnet Mosarn. Har aldrig hørt om ham. Måske kender Krog ham. Krog kender mange mennesker.",
+        "f534ddac32377ffa8c6a": "Mosarn? Det lyder bekendt... Jeg kan ikke lige komme i tanke om det. Måske husker jeg det senere.$b$bDet er nok ikke vigtigt. Et skjold kan komme hvor som helst fra uden at betyde noget..."
+      },
       "summary": "Tal med Krog i Brackenwall Village.",
       "title": "Det sorte skjold",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "189d6044e98f89fcce713c723e1b3bf5db18692fb3ac882e698bf99b479963f3"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Oh, ich glaube, ich habe zu viel Säure auf den Schild geschüttet. Lasst mich ein wenig rubbeln...\n\nHm, schwer zu lesen, sieht aber wie der Name Mosarn aus. Nie von ihm gehört. Vielleicht weiß Krog etwas. Krog kennt viele Leute.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Oh, ich glaube, ich habe zu viel Säure auf den Schild geschüttet. Lasst mich ein wenig rubbeln...\n\nHm, schwer zu lesen, sieht aber wie der Name Mosarn aus. Nie von ihm gehört. Vielleicht weiß Krog etwas. Krog kennt viele Leute.",
+        "f534ddac32377ffa8c6a": "Mosarn? Kommt mir bekannt vor. . . Ich komm nicht drauf. Vielleicht fällt es mir später wieder ein. \n \n Wahrscheinlich ist es nicht wichtig. Ein Schild kann von überall stammen und keine Bedeutung haben. . . "
+      },
       "summary": "Sprecht mit Krog in Brackenwall.",
       "title": "Der Schwarze Schild",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "Oh, I think I might have dropped too much acid onto the shield. Let me just rub a little...\n\nHm, kind of hard to read, but it looks like the name Mosarn. Never heard of him. Maybe Krog knows. Krog knows many people.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Oh, I think I might have dropped too much acid onto the shield. Let me just rub a little...$b$bHm, kind of hard to read, but it looks like the name Mosarn. Never heard of him. Maybe Krog knows. Krog knows many people.",
+        "f534ddac32377ffa8c6a": "Mosarn? Sounds familiar... I can't put my finger on it. Maybe it'll come to me later.$b$bIt probably isn't important. A shield can come from anywhere and not mean anything..."
+      },
       "summary": "Talk with Krog in Brackenwall Village.",
       "title": "The Black Shield",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Ay, creo que he vertido demasiado ácido sobre el escudo. No importa. Froto un poco y...\n\nMm, es difícil de leer, pero parece ser un nombre... Mosarn. No he oído hablar de él. Quizás Krog lo conozca. Krog conoce a mucha gente.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Ay, creo que he vertido demasiado ácido sobre el escudo. No importa. Froto un poco y...\n\nMm, es difícil de leer, pero parece ser un nombre... Mosarn. No he oído hablar de él. Quizás Krog lo conozca. Krog conoce a mucha gente.",
+        "f534ddac32377ffa8c6a": "¿Mosarn? Me suena de algo... Pero no sé de qué. Quizás me venga más tarde.\n\nProbablemente no es importante. Un escudo puede venir de cualquier parte y no significar nada..."
+      },
       "summary": "Ve al Poblado Murohelecho y habla con Krog.",
       "title": "El escudo negro",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Ay, creo que he vertido demasiado ácido sobre el escudo. No importa. Froto un poco y...\n\nMm, es difícil de leer, pero parece ser un nombre... Mosarn. No he oído hablar de él. Quizás Krog lo conozca. Krog conoce a mucha gente.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Oh, creo que dejé caer demasiado ácido sobre el escudo. Déjame frotar un poco...$b$bMmm, es difícil de leer, pero parece decir Mosarn. Nunca oí hablar de él. Tal vez Krog lo conozca. Krog conoce a mucha gente.",
+        "f534ddac32377ffa8c6a": "¿Mosarn? Me suena de algo... Pero no sé de qué. Quizás me venga más tarde.\n\nProbablemente no es importante. Un escudo puede venir de cualquier parte y no significar nada..."
+      },
       "summary": "Ve al Poblado Murohelecho y habla con Krog.",
       "title": "El escudo negro",
       "translationMetadata": {
@@ -140,6 +236,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +263,10 @@
     },
     "frFR": {
       "description": "Oh ! Je crois que j'ai mis trop d'acide sur le bouclier. Frottons un peu pour voir…\n\nHmm, difficile à lire, mais il me semble qu'il s'agit d'un nom : Mosarn. Jamais entendu parler de lui. Peut-être Krog le sait. Krog connaît tellement de monde.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Oh ! Je crois que j'ai mis trop d'acide sur le bouclier. Frottons un peu pour voir…\n\nHmm, difficile à lire, mais il me semble qu'il s'agit d'un nom : Mosarn. Jamais entendu parler de lui. Peut-être Krog le sait. Krog connaît tellement de monde.",
+        "f534ddac32377ffa8c6a": "Mosarn ? Cela sonne familier… Je n'arrive pas à me souvenir. Cela me reviendra. \n \n Cela ne doit pas être important. Un bouclier peut venir de n'importe où et ne rien vouloir dire…"
+      },
       "summary": "Parler à Krog au village de Mur-de-Fougères.",
       "title": "Le Bouclier noir",
       "translationMetadata": {
@@ -164,6 +275,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +303,10 @@
     },
     "hrHR": {
       "description": "O, mislim da sam možda nakapao previše kiseline na štit. Samo da malo protrljam...\n\nHm, teško se čita, ali izgleda kao ime Mosarn. Nikad čuo za njega. Možda Krog zna. Krog poznaje mnogo ljudi.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Oh, mislim da sam kapnuo previše kiseline na štit. Dopusti da malo protrljam...$b$bHm, teško je pročitati, ali izgleda kao ime Mosarn. Nikad nisam čuo za njega. Možda ga Krog poznaje. Krog poznaje mnogo ljudi.",
+        "f534ddac32377ffa8c6a": "Mosarn? Zvuči poznato... Ne mogu se sjetiti. Možda mi kasnije padne na pamet.$b$bVjerojatno nije važno. Štit može doći bilo odakle i ne mora ništa značiti..."
+      },
       "summary": "Razgovaraj s Krogom u selu Brackenwall.",
       "title": "Crni štit",
       "translationMetadata": {
@@ -189,6 +316,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "189d6044e98f89fcce713c723e1b3bf5db18692fb3ac882e698bf99b479963f3"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +344,10 @@
     },
     "itIT": {
       "description": "Oh, credo di aver versato troppo acido sullo scudo. Lascia che strofini un po'...\n\nMmh, è difficile da leggere, ma sembra il nome Mosarn. Mai sentito. Forse Krog lo conosce. Krog conosce molta gente.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Oh, credo di aver versato troppo acido sullo scudo. Fammi solo strofinare un po'...\n\nHm, si legge a fatica, ma sembra il nome Mosarn. Mai sentito nominare. Forse Krog lo sa. Krog conosce tanta gente.",
+        "f534ddac32377ffa8c6a": "Mosarn? Mi dice qualcosa... ma non riesco a ricordare cosa. Forse mi verrà in mente più tardi.\n\nProbabilmente non è importante. Uno scudo può venire da qualsiasi parte e non significare niente..."
+      },
       "summary": "Parla con Krog a Brackenwall Village.",
       "title": "Lo scudo nero",
       "translationMetadata": {
@@ -216,6 +357,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "189d6044e98f89fcce713c723e1b3bf5db18692fb3ac882e698bf99b479963f3"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +387,10 @@
     },
     "koKR": {
       "description": "오, 방패에 산성 독액을 너무 많이 떨어뜨린 것 같은데... 조금 닦아내 봐야겠다...\n\n흠, 읽기 어렵긴 하지만, 모사른이라는 이름 같군. 그런 이름은 들어 본 적이 없는데... 아마 크로그가 알 거다. 크로그는 아는 사람이 많으니까.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "이런, 방패에 산을 너무 많이 떨어뜨린 것 같군. 조금만 문질러 보겠네...$b$b흠, 읽기 어렵지만 모사른이라는 이름 같군. 들어 본 적 없네. 크로그라면 알지도 모르지. 크로그는 아는 사람이 많거든.",
+        "f534ddac32377ffa8c6a": "모사른? 많이 들어 본 이름 같은데... 지금은 잘 기억이 나질 않는군. 나중에 생각날지도 모르지.\n\n아마 별로 중요한 이름은 아닐 것이오. 방패야 어딜 가나 흔하고 별로 중요하지 않은 물건이니까..."
+      },
       "summary": "담쟁이 마을에 있는 크로그와 대화해야 합니다.",
       "title": "검은 방패",
       "translationMetadata": {
@@ -242,6 +399,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +426,10 @@
     },
     "plPL": {
       "description": "Och, chyba nalałem na tarczę za dużo kwasu. Tylko trochę potrę...\n\nHm, trudno odczytać, lecz wygląda na imię Mosarn. Nigdy nie słyszałem. Może Krog zna. Krog zna wielu.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Och, chyba wylałem za dużo kwasu na tarczę. Pozwól, że trochę potrę...$b$bHm, trudno odczytać, ale wygląda na imię Mosarn. Nigdy o nim nie słyszałem. Może Krog go zna. Krog zna wielu ludzi.",
+        "f534ddac32377ffa8c6a": "Mosarn? Brzmi znajomo... Nie mogę sobie przypomnieć. Może później mi się uda.$b$bPewnie to nic ważnego. Tarcza może pochodzić skądkolwiek i nic nie znaczyć..."
+      },
       "summary": "Porozmawiaj z Krogiem w wiosce Brackenwall.",
       "title": "Czarna tarcza",
       "translationMetadata": {
@@ -267,6 +439,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "189d6044e98f89fcce713c723e1b3bf5db18692fb3ac882e698bf99b479963f3"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +467,10 @@
     },
     "ptBR": {
       "description": "Opa, acho que eu derramar ácido demais no escudo. Deixa Do'gol esfregar um pouco...\n\nHum, difícil ler, mas parece ser o nome de Mosarn. Nunca ouvir falar de Mosarn. Quem sabe Krog conhecer? Krog conhecer muita gente.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Ah, acho que derramei ácido demais no escudo. Deixe-me esfregar um pouco...$b$bHum, é difícil ler, mas parece ser o nome Mosarn. Nunca ouvi falar dele. Talvez Krog conheça. Krog conhece muita gente.",
+        "f534ddac32377ffa8c6a": "Mosarn? Não me é estranho... Talvez me lembre mais tarde.\n\nNão deve ser nada importante. O escudo pode ter vindo de qualquer parte e esse detalhe pode não ter importância..."
+      },
       "summary": "Fale com Krog na Aldeia Muralha Verde.",
       "title": "O escudo negro",
       "translationMetadata": {
@@ -293,6 +479,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +506,10 @@
     },
     "ruRU": {
       "description": "Сдается мне, что с кислотой я переборщил. Теперь осторожно потрем щит…\n\nХмм. Прочесть сложновато, но, похоже, тут написано имя: Мозарн. Никогда о таком не слышал. Надо спросить Крога, он знаком с кучей народу.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Ох, кажется, я капнул на щит слишком много кислоты. Дай немного потереть...$b$bХм, трудно разобрать, но похоже на имя Мосарн. Никогда о нём не слышал. Может, Крог знает. Крог многих знает.",
+        "f534ddac32377ffa8c6a": "Мозарн? Звучит знакомо... Но поручиться не могу. Может быть вспомню попозже.\n\nСкорее всего, это имя не имеет значения. Щит мог попасть туда откуда угодно и с какой угодно целью."
+      },
       "summary": "Поговорите с Крогом в Деревне Гиблотопь.",
       "title": "Черный Щит",
       "translationMetadata": {
@@ -317,6 +518,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +545,10 @@
     },
     "svSE": {
       "description": "Åh, jag tror att jag hällde för mycket syra på skölden. Låt mig bara gnugga lite...\n\nHm, lite svårt att läsa, men det ser ut som namnet Mosarn. Aldrig hört talas om honom. Kanske Krog vet. Krog känner många.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Åh, jag tror att jag kan ha droppat för mycket syra på skölden. Låt mig gnugga lite...$b$bHm, svårt att läsa, men det ser ut som namnet Mosarn. Aldrig hört talas om honom. Kanske känner Krog honom. Krog känner många människor.",
+        "f534ddac32377ffa8c6a": "Mosarn? Det låter bekant... Jag kan inte riktigt placera det. Kanske kommer jag på det senare.$b$bDet är nog inte viktigt. En sköld kan komma varifrån som helst utan att betyda något..."
+      },
       "summary": "Tala med Krog i Brackenwall Village.",
       "title": "Den svarta skölden",
       "translationMetadata": {
@@ -342,6 +558,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "189d6044e98f89fcce713c723e1b3bf5db18692fb3ac882e698bf99b479963f3"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +586,10 @@
     },
     "trTR": {
       "description": "Ah, sanırım kalkanın üzerine fazla asit damlatmış olabilirim. Biraz ovalayayım...\n\nHm, okumak biraz zor, ama Mosarn ismine benziyor. Onu hiç duymadım. Belki Krog bilir. Krog pek çok kişiyi tanır.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Ah, sanırım kalkanın üzerine biraz fazla asit damlattım. Biraz ovalayayım...$b$bHmm, okuması zor ama Mosarn adına benziyor. Onu hiç duymadım. Belki Krog biliyordur. Krog pek çok kişi tanır.",
+        "f534ddac32377ffa8c6a": "Mosarn mı? Tanıdık geliyor... Bir türlü çıkaramıyorum. Belki sonra hatırlarım.$b$bMuhtemelen önemli değildir. Bir kalkan herhangi bir yerden gelebilir ve hiçbir anlam taşımayabilir..."
+      },
       "summary": "Brackenwall Köyü'ndeki Krog ile konuş.",
       "title": "Kara Kalkan",
       "translationMetadata": {
@@ -369,6 +599,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "189d6044e98f89fcce713c723e1b3bf5db18692fb3ac882e698bf99b479963f3"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +627,10 @@
     },
     "ukUA": {
       "description": "Йой, мабуть, я налив на щит надто багато кислоти. Дай я трішки протру...\n\nГм, важко прочитати, але здається, що тут написано ім'я Мосарн. Я ніколи не чув про нього. Може Кроґ знає. Кроґ знає багато народу.",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "Ой, здається, я капнув на щит забагато кислоти. Дай трохи потерти...$b$bХм, важко прочитати, але схоже на ім’я Мосарн. Ніколи про нього не чув. Може, Крог знає. Крог знає багатьох людей.",
+        "f534ddac32377ffa8c6a": "Мосарн? Звучить знайомо... Не можу пригадати. Може, згодом згадаю.$b$bМабуть, це неважливо. Щит міг потрапити звідки завгодно й нічого не означати..."
+      },
       "summary": "Поговоріть з Кроґом в селищі Папорохащі.",
       "title": "Чорний щит",
       "translationMetadata": {
@@ -397,6 +641,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "189d6044e98f89fcce713c723e1b3bf5db18692fb3ac882e698bf99b479963f3"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +671,10 @@
     },
     "zhCN": {
       "description": "呃，我想我大概倒了太多酸液在盾牌上，得擦掉点儿……\n\n嗯……有点难辨认，不过好象是一个叫“莫萨恩”的名字。从来没听过这个名字。克罗格认识不少人，他也许知道这个莫萨恩是谁。",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "呃，我想我大概倒了太多酸液在盾牌上，得擦掉点儿……\n\n嗯……有点难辨认，不过好象是一个叫“莫萨恩”的名字。从来没听过这个名字。克罗格认识不少人，他也许知道这个莫萨恩是谁。",
+        "f534ddac32377ffa8c6a": "莫萨恩?很耳熟……不过一时之间……也许过会儿我能想起来。\n\n可能不是什麽重要的东西。这面盾牌没什麽代表性，不一定有什麽特殊的意义……\n"
+      },
       "summary": "和蕨墙村的克罗格谈一谈。",
       "title": "黑色盾牌",
       "translationMetadata": {
@@ -425,6 +683,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +711,10 @@
     },
     "zhTW": {
       "description": "呃，我想我大概倒了太多酸液在盾牌上，得擦掉點兒……\n\n嗯……有點難辨認，不過好像是一個叫「莫薩恩」的名字。從來沒聽過這個名字。克羅格認識不少人，他也許知道這個莫薩恩是誰。",
+      "dialogue": {
+        "b00b9c233e45d08f2287": "噢，我想我可能在盾牌上滴了太多酸液。讓我稍微擦一擦……$b$b嗯，不太容易辨認，但看起來像是莫薩恩這個名字。我從沒聽過他。也許克羅格知道，克羅格認識很多人。",
+        "f534ddac32377ffa8c6a": "莫薩恩?很耳熟……不過一時之間……也許過會兒我能想起來。\n\n可能不是什麼重要的東西。這面盾牌沒什麼代表性，不一定有什麼特殊的意義……"
+      },
       "summary": "和蕨牆村的克羅格談話。",
       "title": "黑色盾牌",
       "translationMetadata": {
@@ -449,6 +723,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.b00b9c233e45d08f2287": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f534ddac32377ffa8c6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

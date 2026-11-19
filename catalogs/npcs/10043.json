@@ -1,4 +1,86 @@
 {
+  "dialogueContexts": {
+    "16ad1a48097996be4e84": {
+      "lineId": "g:74fec410f05cdc4e4f0a9e7100a7ad5d:f",
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "1965b5502184e7b2538c": {
+      "lineId": "g:be9d61d931560a93f3074abf148cd50d~troll-male-standard",
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "19c07dbbfb5e6a7ecbf0": {
+      "lineId": "g:e52f59e5f53cbdeeadfe575ab9f95b1a:m~troll-male-standard",
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "2eec700ce7bb16c7f3f7": {
+      "lineId": "g:74fec410f05cdc4e4f0a9e7100a7ad5d:m~troll-male-standard",
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "3e250805e339da1e76df": {
+      "lineId": "g:e52f59e5f53cbdeeadfe575ab9f95b1a:m",
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "4db9ad25c94e401fa988": {
+      "lineId": "g:e52f59e5f53cbdeeadfe575ab9f95b1a:f",
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "9db906edc688a53f9ab8": {
+      "lineId": "g:e52f59e5f53cbdeeadfe575ab9f95b1a:f~troll-male-standard",
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "a3bfb95bc7ee531db6c7": {
+      "lineId": "g:74fec410f05cdc4e4f0a9e7100a7ad5d:f~troll-male-standard",
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "bcffb313119d7cbd9b20": {
+      "lineId": "g:f85bd951c3aa0755cff0ab158e1d261b~troll-male-standard",
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "c2e2875efd3a90f6e443": {
+      "lineId": "g:be9d61d931560a93f3074abf148cd50d",
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "def8f58d2cdce23f1907": {
+      "lineId": "g:f85bd951c3aa0755cff0ab158e1d261b",
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "e9904c84285a2137f040": {
+      "lineId": "g:74fec410f05cdc4e4f0a9e7100a7ad5d:m",
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    }
+  },
   "factionId": 489,
   "factionMetadata": {
     "npcSource": "questie",
@@ -9,9 +91,83 @@
   "factionTemplateId": 735,
   "locales": {
     "csCZ": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Díváš se na mě, $gchlapče:děvče;?",
+        "1965b5502184e7b2538c": "Neruš mě, když se bavím...",
+        "19c07dbbfb5e6a7ecbf0": "Dám si půllitr piva Temného železa. Aha, ty nejsi $gčíšník:servírka;?",
+        "2eec700ce7bb16c7f3f7": "Díváš se na mě, $gchlapče:děvče;?",
+        "3e250805e339da1e76df": "Dám si půllitr piva Temného železa. Aha, ty nejsi $gčíšník:servírka;?",
+        "4db9ad25c94e401fa988": "Dám si půllitr piva Temného železa. Aha, ty nejsi $gčíšník:servírka;?",
+        "9db906edc688a53f9ab8": "Dám si půllitr piva Temného železa. Aha, ty nejsi $gčíšník:servírka;?",
+        "a3bfb95bc7ee531db6c7": "Díváš se na mě, $gchlapče:děvče;?",
+        "bcffb313119d7cbd9b20": "Myslím, že Plugger přeplnil jeden sud. Vypadá to, že každou chvíli bouchne!",
+        "c2e2875efd3a90f6e443": "Neruš mě, když se bavím...",
+        "def8f58d2cdce23f1907": "Myslím, že Plugger přeplnil jeden sud. Vypadá to, že každou chvíli bouchne!",
+        "e9904c84285a2137f040": "Díváš se na mě, $gchlapče:děvče;?"
+      },
       "name": "Ribblyho kumpán",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -21,9 +177,83 @@
       }
     },
     "daDK": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Kigger du på mig, $gknægt:pige;?",
+        "1965b5502184e7b2538c": "Forstyr mig ikke, mens jeg fester...",
+        "19c07dbbfb5e6a7ecbf0": "Jeg tager en pint Dark Iron-øl. Nå, du er ikke $gtjeneren:servitricen;?",
+        "2eec700ce7bb16c7f3f7": "Kigger du på mig, $gknægt:pige;?",
+        "3e250805e339da1e76df": "Jeg tager en pint Dark Iron-øl. Nå, du er ikke $gtjeneren:servitricen;?",
+        "4db9ad25c94e401fa988": "Jeg tager en pint Dark Iron-øl. Nå, du er ikke $gtjeneren:servitricen;?",
+        "9db906edc688a53f9ab8": "Jeg tager en pint Dark Iron-øl. Nå, du er ikke $gtjeneren:servitricen;?",
+        "a3bfb95bc7ee531db6c7": "Kigger du på mig, $gknægt:pige;?",
+        "bcffb313119d7cbd9b20": "Jeg tror, Plugger har fyldt en af sine tønder for meget. Den ser ud til at sprænge!",
+        "c2e2875efd3a90f6e443": "Forstyr mig ikke, mens jeg fester...",
+        "def8f58d2cdce23f1907": "Jeg tror, Plugger har fyldt en af sine tønder for meget. Den ser ud til at sprænge!",
+        "e9904c84285a2137f040": "Kigger du på mig, $gknægt:pige;?"
+      },
       "name": "Ribblys håndlanger",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -33,9 +263,95 @@
       }
     },
     "deDE": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Seht Ihr mich an, Mädchen?",
+        "1965b5502184e7b2538c": "Stört mich nicht beim Abfeiern...",
+        "19c07dbbfb5e6a7ecbf0": "Ich nehme einen Becher Dunkeleisenbier. Oh, seid Ihr nicht der Kellner?",
+        "2eec700ce7bb16c7f3f7": "Seht Ihr mich an, Jüngelchen?",
+        "3e250805e339da1e76df": "Ich nehme einen Becher Dunkeleisenbier. Oh, seid Ihr nicht der Kellner?",
+        "4db9ad25c94e401fa988": "Ich nehme einen Becher Dunkeleisenbier. Oh, seid Ihr nicht die Kellnerin?",
+        "9db906edc688a53f9ab8": "Ich nehme einen Becher Dunkeleisenbier. Oh, seid Ihr nicht die Kellnerin?",
+        "a3bfb95bc7ee531db6c7": "Seht Ihr mich an, Mädchen?",
+        "bcffb313119d7cbd9b20": "Ich glaube, Plugger hat eines seiner Fässchen zu voll gemacht. Sieht aus, als würde es gleich explodieren!",
+        "c2e2875efd3a90f6e443": "Stört mich nicht beim Abfeiern...",
+        "def8f58d2cdce23f1907": "Ich glaube, Plugger hat eines seiner Fässchen zu voll gemacht. Sieht aus, als würde es gleich explodieren!",
+        "e9904c84285a2137f040": "Seht Ihr mich an, Jüngelchen?"
+      },
       "name": "Ribblys Spießgeselle",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -46,9 +362,95 @@
       }
     },
     "enUS": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "You looking at me, $gladdy:lassy;?",
+        "1965b5502184e7b2538c": "Don't bother me while I'm partying...",
+        "19c07dbbfb5e6a7ecbf0": "I'll take a pint of Dark Iron ale.  Oh, you're not the $gwaiter:waitress;?",
+        "2eec700ce7bb16c7f3f7": "You looking at me, $gladdy:lassy;?",
+        "3e250805e339da1e76df": "I'll take a pint of Dark Iron ale.  Oh, you're not the $gwaiter:waitress;?",
+        "4db9ad25c94e401fa988": "I'll take a pint of Dark Iron ale.  Oh, you're not the $gwaiter:waitress;?",
+        "9db906edc688a53f9ab8": "I'll take a pint of Dark Iron ale.  Oh, you're not the $gwaiter:waitress;?",
+        "a3bfb95bc7ee531db6c7": "You looking at me, $gladdy:lassy;?",
+        "bcffb313119d7cbd9b20": "I think Plugger filled one of his kegs too much.  It looks like it's about to blow!",
+        "c2e2875efd3a90f6e443": "Don't bother me while I'm partying...",
+        "def8f58d2cdce23f1907": "I think Plugger filled one of his kegs too much.  It looks like it's about to blow!",
+        "e9904c84285a2137f040": "You looking at me, $gladdy:lassy;?"
+      },
       "name": "Ribbly's Crony",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -59,9 +461,95 @@
       }
     },
     "esES": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "¿Me estás mirando, jovencita?",
+        "1965b5502184e7b2538c": "No me molestes mientras estoy de fiesta...",
+        "19c07dbbfb5e6a7ecbf0": "Yo quiero una caña de Hierro Negro. ¿Ah, no eres camarero?",
+        "2eec700ce7bb16c7f3f7": "¿Me estás mirando, jovencito?",
+        "3e250805e339da1e76df": "Yo quiero una caña de Hierro Negro. ¿Ah, no eres camarero?",
+        "4db9ad25c94e401fa988": "Yo quiero una caña de Hierro Negro. ¿Ah, no eres camarera?",
+        "9db906edc688a53f9ab8": "Yo quiero una caña de Hierro Negro. ¿Ah, no eres camarera?",
+        "a3bfb95bc7ee531db6c7": "¿Me estás mirando, jovencita?",
+        "bcffb313119d7cbd9b20": "Creo que Plugger llenó demasiado uno de estos barriles. ¡Parece que va a explotar!",
+        "c2e2875efd3a90f6e443": "No me molestes mientras estoy de fiesta...",
+        "def8f58d2cdce23f1907": "Creo que Plugger llenó demasiado uno de estos barriles. ¡Parece que va a explotar!",
+        "e9904c84285a2137f040": "¿Me estás mirando, jovencito?"
+      },
       "name": "Compinche de Ribbly",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -72,9 +560,95 @@
       }
     },
     "esMX": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "¿Me estás mirando, jovencita?",
+        "1965b5502184e7b2538c": "No me molestes mientras estoy de fiesta...",
+        "19c07dbbfb5e6a7ecbf0": "Yo quiero una caña de Hierro Negro. ¿Ah, no eres camarero?",
+        "2eec700ce7bb16c7f3f7": "¿Me estás mirando, jovencito?",
+        "3e250805e339da1e76df": "Yo quiero una caña de Hierro Negro. ¿Ah, no eres camarero?",
+        "4db9ad25c94e401fa988": "Yo quiero una caña de Hierro Negro. ¿Ah, no eres camarera?",
+        "9db906edc688a53f9ab8": "Yo quiero una caña de Hierro Negro. ¿Ah, no eres camarera?",
+        "a3bfb95bc7ee531db6c7": "¿Me estás mirando, jovencita?",
+        "bcffb313119d7cbd9b20": "Creo que Plugger llenó demasiado uno de estos barriles. ¡Parece que va a explotar!",
+        "c2e2875efd3a90f6e443": "No me molestes mientras estoy de fiesta...",
+        "def8f58d2cdce23f1907": "Creo que Plugger llenó demasiado uno de estos barriles. ¡Parece que va a explotar!",
+        "e9904c84285a2137f040": "¿Me estás mirando, jovencito?"
+      },
       "name": "Compinche de Ribbly",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -85,9 +659,95 @@
       }
     },
     "frFR": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "C'est moi que vous regardez ?",
+        "1965b5502184e7b2538c": "Ne m'embêtez pas pendant que je fais la fête...",
+        "19c07dbbfb5e6a7ecbf0": "Je prendrai une pinte de bière sombrefer. Oh, vous ne travaillez pas ici ?",
+        "2eec700ce7bb16c7f3f7": "C'est moi que vous regardez ?",
+        "3e250805e339da1e76df": "Je prendrai une pinte de bière sombrefer. Oh, vous ne travaillez pas ici ?",
+        "4db9ad25c94e401fa988": "Je prendrai une pinte de bière sombrefer. Oh, vous ne travaillez pas ici ?",
+        "9db906edc688a53f9ab8": "Je prendrai une pinte de bière sombrefer. Oh, vous ne travaillez pas ici ?",
+        "a3bfb95bc7ee531db6c7": "C'est moi que vous regardez ?",
+        "bcffb313119d7cbd9b20": "Je crois que Plugger a trop rempli un de ses barils. On dirait qu'il va sauter !",
+        "c2e2875efd3a90f6e443": "Ne m'embêtez pas pendant que je fais la fête...",
+        "def8f58d2cdce23f1907": "Je crois que Plugger a trop rempli un de ses barils. On dirait qu'il va sauter !",
+        "e9904c84285a2137f040": "C'est moi que vous regardez ?"
+      },
       "name": "Compère de Ribbly",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -98,9 +758,83 @@
       }
     },
     "hrHR": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Gledaš li ti mene, $gdečko:djevojko;?",
+        "1965b5502184e7b2538c": "Ne gnjavi me dok se zabavljam...",
+        "19c07dbbfb5e6a7ecbf0": "Uzet ću kriglu piva Dark Iron. Oh, nisi $gkonobar:konobarica;?",
+        "2eec700ce7bb16c7f3f7": "Gledaš li ti mene, $gdečko:djevojko;?",
+        "3e250805e339da1e76df": "Uzet ću kriglu piva Dark Iron. Oh, nisi $gkonobar:konobarica;?",
+        "4db9ad25c94e401fa988": "Uzet ću kriglu piva Dark Iron. Oh, nisi $gkonobar:konobarica;?",
+        "9db906edc688a53f9ab8": "Uzet ću kriglu piva Dark Iron. Oh, nisi $gkonobar:konobarica;?",
+        "a3bfb95bc7ee531db6c7": "Gledaš li ti mene, $gdečko:djevojko;?",
+        "bcffb313119d7cbd9b20": "Mislim da je Plugger prepunio jednu bačvu. Izgleda kao da će eksplodirati!",
+        "c2e2875efd3a90f6e443": "Ne gnjavi me dok se zabavljam...",
+        "def8f58d2cdce23f1907": "Mislim da je Plugger prepunio jednu bačvu. Izgleda kao da će eksplodirati!",
+        "e9904c84285a2137f040": "Gledaš li ti mene, $gdečko:djevojko;?"
+      },
       "name": "Ribblyjev pajdaš",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -110,9 +844,95 @@
       }
     },
     "itIT": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Stai guardando me, ragazzina?",
+        "1965b5502184e7b2538c": "Non disturbarmi mentre faccio festa...",
+        "19c07dbbfb5e6a7ecbf0": "Per me una pinta di birra Dark Iron. Oh, non sei il cameriere?",
+        "2eec700ce7bb16c7f3f7": "Stai guardando me, ragazzino?",
+        "3e250805e339da1e76df": "Per me una pinta di birra Dark Iron. Oh, non sei il cameriere?",
+        "4db9ad25c94e401fa988": "Per me una pinta di birra Dark Iron. Oh, non sei la cameriera?",
+        "9db906edc688a53f9ab8": "Per me una pinta di birra Dark Iron. Oh, non sei la cameriera?",
+        "a3bfb95bc7ee531db6c7": "Stai guardando me, ragazzina?",
+        "bcffb313119d7cbd9b20": "Secondo me Plugger ha riempito troppo uno dei suoi barili. Sembra che stia per scoppiare!",
+        "c2e2875efd3a90f6e443": "Non disturbarmi mentre faccio festa...",
+        "def8f58d2cdce23f1907": "Secondo me Plugger ha riempito troppo uno dei suoi barili. Sembra che stia per scoppiare!",
+        "e9904c84285a2137f040": "Stai guardando me, ragazzino?"
+      },
       "name": "Compare di Ribbly",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -122,9 +942,95 @@
       }
     },
     "koKR": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "이봐, 지금 날 보고 있나?",
+        "1965b5502184e7b2538c": "한참 즐기는 중인데 귀찮게 하지 마시오...",
+        "19c07dbbfb5e6a7ecbf0": "여기, 검은무쇠단 맥주 한잔이요. 아, 이런. 당신은 종업원이 아니군.",
+        "2eec700ce7bb16c7f3f7": "이봐, 지금 날 보고 있나?",
+        "3e250805e339da1e76df": "여기, 검은무쇠단 맥주 한잔이요. 아, 이런. 당신은 종업원이 아니군.",
+        "4db9ad25c94e401fa988": "여기, 검은무쇠단 맥주 한잔이요. 아, 이런. 당신은 종업원이 아니군.",
+        "9db906edc688a53f9ab8": "여기, 검은무쇠단 맥주 한잔이요. 아, 이런. 당신은 종업원이 아니군.",
+        "a3bfb95bc7ee531db6c7": "이봐, 지금 날 보고 있나?",
+        "bcffb313119d7cbd9b20": "플러거 그 친구가 맥주통 하나를 너무 채운 모양이야. 곧 터질 것 같아!",
+        "c2e2875efd3a90f6e443": "한참 즐기는 중인데 귀찮게 하지 마시오...",
+        "def8f58d2cdce23f1907": "플러거 그 친구가 맥주통 하나를 너무 채운 모양이야. 곧 터질 것 같아!",
+        "e9904c84285a2137f040": "이봐, 지금 날 보고 있나?"
+      },
       "name": "리블리의 친구",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -135,9 +1041,83 @@
       }
     },
     "plPL": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Patrzysz na mnie, $gchłopcze:dziewczyno;?",
+        "1965b5502184e7b2538c": "Nie przeszkadzaj mi, kiedy się bawię...",
+        "19c07dbbfb5e6a7ecbf0": "Poproszę kufel piwa Dark Iron. Och, nie jesteś $gkelnerem:kelnerką;?",
+        "2eec700ce7bb16c7f3f7": "Patrzysz na mnie, $gchłopcze:dziewczyno;?",
+        "3e250805e339da1e76df": "Poproszę kufel piwa Dark Iron. Och, nie jesteś $gkelnerem:kelnerką;?",
+        "4db9ad25c94e401fa988": "Poproszę kufel piwa Dark Iron. Och, nie jesteś $gkelnerem:kelnerką;?",
+        "9db906edc688a53f9ab8": "Poproszę kufel piwa Dark Iron. Och, nie jesteś $gkelnerem:kelnerką;?",
+        "a3bfb95bc7ee531db6c7": "Patrzysz na mnie, $gchłopcze:dziewczyno;?",
+        "bcffb313119d7cbd9b20": "Chyba Plugger przepełnił jedną z beczek. Wygląda, jakby miała wybuchnąć!",
+        "c2e2875efd3a90f6e443": "Nie przeszkadzaj mi, kiedy się bawię...",
+        "def8f58d2cdce23f1907": "Chyba Plugger przepełnił jedną z beczek. Wygląda, jakby miała wybuchnąć!",
+        "e9904c84285a2137f040": "Patrzysz na mnie, $gchłopcze:dziewczyno;?"
+      },
       "name": "Poplecznik Ribbly'ego",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -147,9 +1127,95 @@
       }
     },
     "ptBR": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Tá olhando pra mim, moça?",
+        "1965b5502184e7b2538c": "Não me perturbe quando eu estiver curtindo...",
+        "19c07dbbfb5e6a7ecbf0": "Eu quero uma cerveja Ferro Negro. Ah, você não é o garçom?",
+        "2eec700ce7bb16c7f3f7": "Tá olhando pra mim, rapaz?",
+        "3e250805e339da1e76df": "Eu quero uma cerveja Ferro Negro. Ah, você não é o garçom?",
+        "4db9ad25c94e401fa988": "Eu quero uma cerveja Ferro Negro. Ah, você não é a garçonete?",
+        "9db906edc688a53f9ab8": "Eu quero uma cerveja Ferro Negro. Ah, você não é a garçonete?",
+        "a3bfb95bc7ee531db6c7": "Tá olhando pra mim, moça?",
+        "bcffb313119d7cbd9b20": "Acho que Birra encheu demais um desses barris. Parece que ele vai explodir!",
+        "c2e2875efd3a90f6e443": "Não me perturbe quando eu estiver curtindo...",
+        "def8f58d2cdce23f1907": "Acho que Birra encheu demais um desses barris. Parece que ele vai explodir!",
+        "e9904c84285a2137f040": "Tá olhando pra mim, rapaz?"
+      },
       "name": "Capanga do Ribas",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -160,9 +1226,95 @@
       }
     },
     "ruRU": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Чего уставились, уважаемая?",
+        "1965b5502184e7b2538c": "Не мешай мне веселиться…",
+        "19c07dbbfb5e6a7ecbf0": "Мне кружку эля Черного Железа. Ох, ты не официант?",
+        "2eec700ce7bb16c7f3f7": "Чего уставились, уважаемый?",
+        "3e250805e339da1e76df": "Мне кружку эля Черного Железа. Ох, ты не официант?",
+        "4db9ad25c94e401fa988": "Мне кружку эля Черного Железа. Ох, ты не официантка?",
+        "9db906edc688a53f9ab8": "Мне кружку эля Черного Железа. Ох, ты не официантка?",
+        "a3bfb95bc7ee531db6c7": "Чего уставились, уважаемая?",
+        "bcffb313119d7cbd9b20": "Кажется, Стукарь налил в одну бочку слишком много! Сейчас рванет!!!",
+        "c2e2875efd3a90f6e443": "Не мешай мне веселиться…",
+        "def8f58d2cdce23f1907": "Кажется, Стукарь налил в одну бочку слишком много! Сейчас рванет!!!",
+        "e9904c84285a2137f040": "Чего уставились, уважаемый?"
+      },
       "name": "Друг Риббли",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -173,9 +1325,83 @@
       }
     },
     "svSE": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Tittar du på mig, $gpojke:flicka;?",
+        "1965b5502184e7b2538c": "Stör mig inte när jag festar...",
+        "19c07dbbfb5e6a7ecbf0": "Jag tar en sejdel Dark Iron-öl. Jaså, är du inte $gservitören:servitrisen;?",
+        "2eec700ce7bb16c7f3f7": "Tittar du på mig, $gpojke:flicka;?",
+        "3e250805e339da1e76df": "Jag tar en sejdel Dark Iron-öl. Jaså, är du inte $gservitören:servitrisen;?",
+        "4db9ad25c94e401fa988": "Jag tar en sejdel Dark Iron-öl. Jaså, är du inte $gservitören:servitrisen;?",
+        "9db906edc688a53f9ab8": "Jag tar en sejdel Dark Iron-öl. Jaså, är du inte $gservitören:servitrisen;?",
+        "a3bfb95bc7ee531db6c7": "Tittar du på mig, $gpojke:flicka;?",
+        "bcffb313119d7cbd9b20": "Jag tror att Plugger fyllde en av sina tunnor för mycket. Den ser ut att explodera!",
+        "c2e2875efd3a90f6e443": "Stör mig inte när jag festar...",
+        "def8f58d2cdce23f1907": "Jag tror att Plugger fyllde en av sina tunnor för mycket. Den ser ut att explodera!",
+        "e9904c84285a2137f040": "Tittar du på mig, $gpojke:flicka;?"
+      },
       "name": "Ribblys kumpan",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -185,9 +1411,83 @@
       }
     },
     "trTR": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Bana mı bakıyorsun, $goğlan:kız;?",
+        "1965b5502184e7b2538c": "Eğlenirken beni rahatsız etme...",
+        "19c07dbbfb5e6a7ecbf0": "Bir bardak Dark Iron birası alayım. Aa, sen $ggarson:garson; değil misin?",
+        "2eec700ce7bb16c7f3f7": "Bana mı bakıyorsun, $goğlan:kız;?",
+        "3e250805e339da1e76df": "Bir bardak Dark Iron birası alayım. Aa, sen $ggarson:garson; değil misin?",
+        "4db9ad25c94e401fa988": "Bir bardak Dark Iron birası alayım. Aa, sen $ggarson:garson; değil misin?",
+        "9db906edc688a53f9ab8": "Bir bardak Dark Iron birası alayım. Aa, sen $ggarson:garson; değil misin?",
+        "a3bfb95bc7ee531db6c7": "Bana mı bakıyorsun, $goğlan:kız;?",
+        "bcffb313119d7cbd9b20": "Sanırım Plugger fıçılarından birini fazla doldurmuş. Patlamak üzere görünüyor!",
+        "c2e2875efd3a90f6e443": "Eğlenirken beni rahatsız etme...",
+        "def8f58d2cdce23f1907": "Sanırım Plugger fıçılarından birini fazla doldurmuş. Patlamak üzere görünüyor!",
+        "e9904c84285a2137f040": "Bana mı bakıyorsun, $goğlan:kız;?"
+      },
       "name": "Ribbly'nin Yandaşı",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -197,9 +1497,83 @@
       }
     },
     "ukUA": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "Це ти на мене дивишся, $gхлопче:дівчино;?",
+        "1965b5502184e7b2538c": "Не заважай мені розважатися...",
+        "19c07dbbfb5e6a7ecbf0": "Мені кухоль елю Темного Заліза. О, ти не $gофіціант:офіціантка;?",
+        "2eec700ce7bb16c7f3f7": "Це ти на мене дивишся, $gхлопче:дівчино;?",
+        "3e250805e339da1e76df": "Мені кухоль елю Темного Заліза. О, ти не $gофіціант:офіціантка;?",
+        "4db9ad25c94e401fa988": "Мені кухоль елю Темного Заліза. О, ти не $gофіціант:офіціантка;?",
+        "9db906edc688a53f9ab8": "Мені кухоль елю Темного Заліза. О, ти не $gофіціант:офіціантка;?",
+        "a3bfb95bc7ee531db6c7": "Це ти на мене дивишся, $gхлопче:дівчино;?",
+        "bcffb313119d7cbd9b20": "Здається, Плаґґер переповнив одну зі своїх бочок. Вона от-от вибухне!",
+        "c2e2875efd3a90f6e443": "Не заважай мені розважатися...",
+        "def8f58d2cdce23f1907": "Здається, Плаґґер переповнив одну зі своїх бочок. Вона от-от вибухне!",
+        "e9904c84285a2137f040": "Це ти на мене дивишся, $gхлопче:дівчино;?"
+      },
       "name": "приятель Рібблі",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "community",
             "source": "classicUA",
@@ -210,9 +1584,95 @@
       }
     },
     "zhCN": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "你在看我吗，姑娘？",
+        "1965b5502184e7b2538c": "在我参加聚会时别骚扰我……",
+        "19c07dbbfb5e6a7ecbf0": "我要来一杯黑铁啤酒。哦，你不是侍者？",
+        "2eec700ce7bb16c7f3f7": "你在看我吗，小伙子？",
+        "3e250805e339da1e76df": "我要来一杯黑铁啤酒。哦，你不是侍者？",
+        "4db9ad25c94e401fa988": "我要来一杯黑铁啤酒。哦，你不是侍者？",
+        "9db906edc688a53f9ab8": "我要来一杯黑铁啤酒。哦，你不是侍者？",
+        "a3bfb95bc7ee531db6c7": "你在看我吗，姑娘？",
+        "bcffb313119d7cbd9b20": "我认为普拉格把桶装得太满了。你瞧，简直都要炸开了！",
+        "c2e2875efd3a90f6e443": "在我参加聚会时别骚扰我……",
+        "def8f58d2cdce23f1907": "我认为普拉格把桶装得太满了。你瞧，简直都要炸开了！",
+        "e9904c84285a2137f040": "你在看我吗，小伙子？"
+      },
       "name": "雷布里的亲信",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -223,9 +1683,95 @@
       }
     },
     "zhTW": {
+      "dialogue": {
+        "16ad1a48097996be4e84": "你在看我嗎，姑娘？",
+        "1965b5502184e7b2538c": "在我參加聚會時別騷擾我……",
+        "19c07dbbfb5e6a7ecbf0": "我要來一杯黑鐵啤酒。哦，你不是侍者？",
+        "2eec700ce7bb16c7f3f7": "你在看我嗎，小夥子？",
+        "3e250805e339da1e76df": "我要來一杯黑鐵啤酒。哦，你不是侍者？",
+        "4db9ad25c94e401fa988": "我要來一杯黑鐵啤酒。哦，你不是侍者？",
+        "9db906edc688a53f9ab8": "我要來一杯黑鐵啤酒。哦，你不是侍者？",
+        "a3bfb95bc7ee531db6c7": "你在看我嗎，姑娘？",
+        "bcffb313119d7cbd9b20": "我認為普拉格把桶裝得太滿了。你瞧，簡直都要炸開了！",
+        "c2e2875efd3a90f6e443": "在我參加聚會時別騷擾我……",
+        "def8f58d2cdce23f1907": "我認為普拉格把桶裝得太滿了。你瞧，簡直都要炸開了！",
+        "e9904c84285a2137f040": "你在看我嗎，小夥子？"
+      },
       "name": "雷布里的親信",
       "translationMetadata": {
         "fields": {
+          "dialogue.16ad1a48097996be4e84": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.1965b5502184e7b2538c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.19c07dbbfb5e6a7ecbf0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.2eec700ce7bb16c7f3f7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.3e250805e339da1e76df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.4db9ad25c94e401fa988": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.9db906edc688a53f9ab8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a3bfb95bc7ee531db6c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.bcffb313119d7cbd9b20": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c2e2875efd3a90f6e443": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.def8f58d2cdce23f1907": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e9904c84285a2137f040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
           "name": {
             "origin": "community",
             "source": "questie",

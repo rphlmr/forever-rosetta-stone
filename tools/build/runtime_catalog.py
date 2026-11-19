@@ -5,6 +5,8 @@ import re
 from tools.catalogs.english_scope import has_english_text, identity_field
 
 QUEST_FIELDS = ('title', 'summary', 'description', 'eventObjectiveLabel', 'objectiveLines')
+QUEST_DIALOGUE_STAGES = frozenset(('accept', 'progress', 'complete'))
+NPC_DIALOGUE_STAGES = frozenset(('gossip', 'option'))
 EXCLUDED_QUEST_STATUSES = frozenset(('test', 'notImplemented', 'placeholder', 'unused'))
 TOOLTIP_RULE_FIELDS = frozenset((
     'effects', 'rangeMaxByTarget', 'rangeMin', 'rangeMinByTarget', 'rangeMax', 'durationMs',
@@ -234,6 +236,36 @@ def project_localized_record(kind, entity_id, entity, locale, items, npcs=None):
         return None
 
     return {**localized, 'hasAITranslation': has_ai_translation}
+
+
+def project_dialogue(kind, entity_id, entity, locale):
+    original = entity['locales'][locale]
+    lines = original.get('dialogue', {})
+    english = entity['locales']['enUS'].get('dialogue', {})
+    contexts = entity.get('dialogueContexts', {})
+    metadata = original.get('translationMetadata', {}).get('fields', {})
+    stages = QUEST_DIALOGUE_STAGES if kind == 'quests' else NPC_DIALOGUE_STAGES
+    dialogue, has_ai = [], False
+    for key, text in sorted(lines.items()):
+        origin = metadata.get('dialogue.' + key, {}).get('origin')
+        context = contexts.get(key, {})
+        if (key not in english or context.get('stage') not in stages or not isinstance(text, str)
+                or not text.strip() or origin not in ('original', 'community', 'ai')):
+            raise ValueError(f'Invalid dialogue: {kind}/{entity_id}/{locale}/{key}')
+        npc_id, sex = context.get('npcId'), context.get('playerSex')
+        if kind == 'quests' and (type(npc_id) is not int or npc_id <= 0):
+            raise ValueError(f'Invalid dialogue NPC: quests/{entity_id}/{key}')
+        if sex not in (None, 2, 3):
+            raise ValueError(f'Invalid dialogue player sex: {kind}/{entity_id}/{key}')
+        row = {'key': key, 'stage': context['stage'], 'text': text}
+        if npc_id is not None:
+            row['npcID'] = npc_id
+        if sex is not None:
+            row['playerSex'] = sex
+        dialogue.append(row)
+        has_ai |= origin == 'ai'
+    if dialogue:
+        return {'dialogue': dialogue, 'hasAITranslation': has_ai}
 
 
 def project_tooltip_rules(entity):

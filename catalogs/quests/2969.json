@@ -1,8 +1,36 @@
 {
   "areaId": 357,
+  "dialogueContexts": {
+    "097e48b161f84fda25ca": {
+      "lineId": "q:2969:complete",
+      "npcId": 7956,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "2b57990f0688daccd829": {
+      "lineId": "q:2969:progress",
+      "npcId": 7956,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "794f11da50d34c7c5cc0": {
+      "lineId": "q:2969:accept",
+      "npcId": 7956,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Špinavý klan Grimtotem chytá vílí draky, {name}. Jer'kai a já netušíme, co s nimi hodlají dělat, ale evidentně chystají něco zlého.\n\nNejsme dost silné na to, abychom se probojovaly do tábora a osvobodily zajaté draky, ale snad s tvou pomocí...\n\nJestli chceš pomoct a máš nějaké silné přátele, vypusť ta stvoření z klece tímto klíčem a postarej se, aby unikla živá. Budu po tvém boku po celou dobu. Jer'kai zůstane tady.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Díky Eluně, $N! Jsi požehnáním pro nás i pro dráčky, které jsi zachránil. Jer’kai a já bychom jim sami nikdy nedokázali pomoci. Na tvůj zásah proti Grimtotemům nezapomeneme.$B$BPromluv si teď s Jer’kaiem... Musím připravit naši odvetu. To, že jsou vílí draci volní, neznamená, že jimi zůstanou. Jer’kai a já teď přejdeme do útoku.",
+        "2b57990f0688daccd829": "Nesmíme dovolit klanu Grimtotem zničit tyto krásné tvory. Musíme je osvobodit ze zajetí!",
+        "794f11da50d34c7c5cc0": "Špinavý klan Grimtotem chytá vílí draky, $N. Jer’kai a já netušíme, co s nimi plánují, ale určitě nic dobrého.$B$BNejsme dost silní, abychom se probojovali do tábora a zajaté draky osvobodili, ale možná s tvou pomocí...$B$BPokud chceš a máš silné přátele, otevři tímto klíčem klec a zajisti, aby tvorové unikli živí. Budu po celou dobu po tvém boku. Jer’kai zůstane tady."
+      },
       "eventObjectiveLabel": "Zachraň před zajetím alespoň 6× Sprite Darters",
       "summary": "Použij Bamboo Cage Key a osvoboď Sprite Darters z ohrady v táboře Grimtotem. Nejméně 6× Sprite Darters a Kindal Moonweaver musí přežít.\n\nMáš 6 minut, než Kindal usoudí, že je čas ustoupit, a úkol selže.",
       "title": "Svoboda pro všechny tvory",
@@ -13,6 +41,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bb18ca6b3d8dd0f2dfa6a82642b0e7f363dbd0ae2fe98bf5cb07e061f141e177"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -39,6 +82,11 @@
     },
     "daDK": {
       "description": "Den beskidte Grimtotem-klan fanger fe-drager, {name}. Jer'kai og jeg aner ikke, hvad de har tænkt sig at gøre med dem, men de har tydeligvis onde hensigter.\n\nVi er ikke stærke nok til at kæmpe os ind i lejren og befri de fangne drager, men måske med din hjælp ...\n\nHvis du er villig og har nogle stærke venner, så befri væsnerne fra deres bur med denne nøgle, og sørg for, at de slipper levende væk. Jeg vil være ved din side hele tiden. Jer'kai bliver her.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Tak Elune, $N! Du er en stor velsignelse for os og de drager, du reddede. Jer’kai og jeg kunne aldrig have hjulpet dem selv; din indgriben mod Grimtotem vil blive husket.$B$BTal med Jer’kai nu... Jeg må forberede vores gengældelse. Bare fordi feydragerne er frie, betyder det ikke, at de forbliver det. Jer’kai og jeg går nu til angreb.",
+        "2b57990f0688daccd829": "Vi kan ikke lade Grimtotem-klanen ødelægge disse smukke væsner. De skal befries fra fangenskab!",
+        "794f11da50d34c7c5cc0": "Den beskidte Grimtotem-klan indfanger feydrager, $N. Jer’kai og jeg ved ikke, hvad de vil gøre med dem, men de har tydeligvis onde planer.$B$BVi er ikke stærke nok til at kæmpe os ind i lejren og befri dragerne, men måske med din hjælp...$B$BHvis du vil, og du har nogle stærke venner, så befri dem fra buret med denne nøgle og sørg for, at de slipper levende væk. Jeg bliver ved din side hele tiden. Jer’kai bliver her."
+      },
       "eventObjectiveLabel": "Red mindst 6 Sprite Darters fra tilfangetagelse",
       "summary": "Brug Bamboo Cage Key til at befri Sprite Darters fra indhegningen i Grimtotem-lejren. Mindst 6 Sprite Darters og Kindal Moonweaver skal overleve.\n\nDu har 6 minutter, før Kindal beslutter, at det er tid til at trække sig tilbage, og du fejler opgaven.",
       "title": "Frihed for alle skabninger",
@@ -49,6 +97,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bb18ca6b3d8dd0f2dfa6a82642b0e7f363dbd0ae2fe98bf5cb07e061f141e177"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -73,6 +136,11 @@
     },
     "deDE": {
       "description": "Der dreckige Grimmtotemklan fängt Feendrachen ein, {name}. Jer’kai und ich haben keine Ahnung, was sie mit ihnen vorhaben, aber es ist bestimmt nichts Gutes.\n\nWir sind nicht stark genug, um uns durch das Lager zu kämpfen und die gefangenen Drachen zu befreien, aber mit Eurer Hilfe...\n\nWenn Ihr willens seid und ein paar starke Freunde habt, dann befreit mit diesem Schlüssel die Kreaturen aus ihrem Käfig und stellt sicher, dass sie mit ihrem Leben davonkommen. Ich werde die ganze Zeit an Eurer Seite sein. Jer'kai wird hier bleiben.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Dank sei Elune, $N! Ihr seid ein großer Segen für uns und für die Flitzer, die Ihr gerettet habt. Jer’kai und ich hätten allein den Drachen nicht helfen können - Eure Einmischung in die Angelegenheiten der Grimmtotem wird nicht vergessen werden. \n \n Sprecht jetzt mit Jer’kai. . . Ich muss unseren Vergeltungsschlag vorbereiten. Dass die Feendrachen frei sind, bedeutet nicht, dass es so bleibt. Jer’kai und ich werden jetzt in die Offensive gehen. ",
+        "2b57990f0688daccd829": "Wir können nicht zulassen, dass der Grimtotem-Clan diese wunderschönen Kreaturen vernichtet. Sie müssen aus der Gefangenschaft befreit werden!",
+        "794f11da50d34c7c5cc0": "Der dreckige Grimmtotemklan fängt Feendrachen ein, $N. Jer’kai und ich haben keine Ahnung, was sie mit ihnen vorhaben, aber es ist bestimmt nichts Gutes.\n\nWir sind nicht stark genug, um uns durch das Lager zu kämpfen und die gefangenen Drachen zu befreien, aber mit Eurer Hilfe...\n\nWenn Ihr willens seid und ein paar starke Freunde habt, dann befreit mit diesem Schlüssel die Kreaturen aus ihrem Käfig und stellt sicher, dass sie mit ihrem Leben davonkommen. Ich werde die ganze Zeit an Eurer Seite sein. Jer'kai wird hier bleiben."
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "Befreit mit dem Bambuskäfigschlüssel die Grimmlingflitzer aus dem Pferch im Grimmtotemlager. Kindal Moonweaver sowie mindestens 6 Grimmlingflitzer müssen überleben.\n\nIhr habt 6 Minuten, bis Kindal beschließt, dass es Zeit zum Rückzug und Eure Aufgabe gescheitert ist.",
       "title": "Freiheit für alle Kreaturen",
@@ -82,6 +150,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -103,6 +189,11 @@
     },
     "enUS": {
       "description": "The filthy Grimtotem clan are capturing faerie dragons, {name}. Jer'kai and I have no idea what they plan on doing with them, but they're obviously up to no good.\n\nWe're not powerful enough to fight our way into the camp and free the captured dragons, but perhaps with your help...\n\nIf you're willing, and you have some strong friends, release the creatures from their cage with this key and make sure they escape with their lives. I'll be by your side the entire time. Jer'kai will remain here.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Thank Elune, $N! You are a great blessing to us and to the darters you saved. Jer'kai and I would never have been able to help the dragons ourselves--your intervention in the Grimtotem's affairs will be remembered.$B$BSpeak to Jer'kai now... I have to prepare for our retribution. Just because the faerie dragons are free, it doesn't mean they will remain so. Jer'kai and I will now go on the offensive.",
+        "2b57990f0688daccd829": "We cannot allow the Grimtotem clan to destroy these beautiful creatures. They must be released from captivity!",
+        "794f11da50d34c7c5cc0": "The filthy Grimtotem clan are capturing faerie dragons, $N. Jer'kai and I have no idea what they plan on doing with them, but they're obviously up to no good.$B$BWe're not powerful enough to fight our way into the camp and free the captured dragons, but perhaps with your help...$B$BIf you're willing, and you have some strong friends, release the creatures from their cage with this key and make sure they escape with their lives. I'll be by your side the entire time. Jer'kai will remain here."
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "Using the Bamboo Cage Key, free the Sprite Darters from the pen in the Grimtotem camp. At least 6 Sprite Darters and Kindal Moonweaver must survive.\n\nYou have 6 minutes before Kindal decides it is time to retreat and you fail the quest.",
       "title": "Freedom for All Creatures",
@@ -112,6 +203,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -133,6 +242,11 @@
     },
     "esES": {
       "description": "Esos asquerosos del clan Tótem Siniestro están capturando dragones feéricos, {name} Jer'kai y yo no sabemos qué están planeando hacer con ellos, pero está claro que no es nada bueno.\n\nY no podemos entrar en el campamento a liberar a los dragones a brazo partido, pero quizás, con tu ayuda...\n\nSi quieres ayudar y tienes amigos fuertes, libera a las criaturas de sus jaulas con esta llave y asegúrate de que logran escapar. Yo estaré a tu lado todo el tiempo. Jer'kai se quedará aquí.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "¡Gracias a Elune, $n! Eres una bendición para todos nosotros y también para los dragones que salvaste. Jer'kai y yo jamás habríamos podido ayudarlos. Tu intervención en los asuntos de los Tótem Siniestro será recordada.\n\nAhora habla con Jer'kai... Tengo que preparar nuestra retribución. Que los dragones feéricos estén libres ahora, no quiere decir que vayan a seguir así. Jer'kai y yo seguiremos adelante con la ofensiva.",
+        "2b57990f0688daccd829": "No podemos permitir que el clan Tótem Siniestro destruya a estas hermosas criaturas.  ¡Deben ser liberados del cautiverio!",
+        "794f11da50d34c7c5cc0": "Esos asquerosos del clan Tótem Siniestro están capturando dragones feéricos, $n Jer'kai y yo no sabemos qué están planeando hacer con ellos, pero está claro que no es nada bueno.\n\nY no podemos entrar en el campamento a liberar a los dragones a brazo partido, pero quizás, con tu ayuda...\n\nSi quieres ayudar y tienes amigos fuertes, libera a las criaturas de sus jaulas con esta llave y asegúrate de que logran escapar. Yo estaré a tu lado todo el tiempo. Jer'kai se quedará aquí."
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "Utiliza la llave de jaula de bambú para liberar a los duendes dardo del campamento Tótem Siniestro. Deben sobrevivir al menos 6 duendes dardo y Kindal Tejeluna.\n\nTienes 6 minutos antes de que Kindal decida que es hora de retirarse, entonces tu misión fracasará.",
       "title": "Libertad para todas las criaturas",
@@ -142,6 +256,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -163,6 +295,11 @@
     },
     "esMX": {
       "description": "Esos asquerosos del clan Tótem Siniestro están capturando dragones feéricos, {name} Jer'kai y yo no sabemos qué están planeando hacer con ellos, pero está claro que no es nada bueno.\n\nY no podemos entrar en el campamento a liberar a los dragones a brazo partido, pero quizás, con tu ayuda...\n\nSi quieres ayudar y tienes amigos fuertes, libera a las criaturas de sus jaulas con esta llave y asegúrate de que logran escapar. Yo estaré a tu lado todo el tiempo. Jer'kai se quedará aquí.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "¡Gracias a Elune, $n! Eres una bendición para todos nosotros y también para los dragones que salvaste. Jer'kai y yo jamás habríamos podido ayudarlos. Tu intervención en los asuntos de los Tótem Siniestro será recordada.\n\nAhora habla con Jer'kai... Tengo que preparar nuestra retribución. Que los dragones feéricos estén libres ahora, no quiere decir que vayan a seguir así. Jer'kai y yo seguiremos adelante con la ofensiva.",
+        "2b57990f0688daccd829": "No podemos permitir que el clan Tótem Siniestro destruya a estas hermosas criaturas. ¡Hay que liberarlas del cautiverio!",
+        "794f11da50d34c7c5cc0": "Esos asquerosos del clan Tótem Siniestro están capturando dragones feéricos, $n Jer'kai y yo no sabemos qué están planeando hacer con ellos, pero está claro que no es nada bueno.\n\nY no podemos entrar en el campamento a liberar a los dragones a brazo partido, pero quizás, con tu ayuda...\n\nSi quieres ayudar y tienes amigos fuertes, libera a las criaturas de sus jaulas con esta llave y asegúrate de que logran escapar. Yo estaré a tu lado todo el tiempo. Jer'kai se quedará aquí."
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "Utiliza la llave de jaula de bambú para liberar a los duendes dardo del campamento Tótem Siniestro. Deben sobrevivir al menos 6 duendes dardo y Kindal Tejeluna.\n\nTienes 6 minutos antes de que Kindal decida que es hora de retirarse, entonces tu misión fracasará.",
       "title": "Libertad para todas las criaturas",
@@ -172,6 +309,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -193,6 +347,11 @@
     },
     "frFR": {
       "description": "L'odieux clan du Totem sinistre capture des créatures féeriques, {name}. Jer'kai et moi ne savons pas quels desseins ils poursuivent en faisant cela, mais ce n'est certainement rien de bon.\n\nNous ne sommes pas assez puissants pour combattre le Totem sinistre dans son camp et libérer les créatures, mais peut-être qu'avec votre aide...\n\nSi vous êtes d'accord et avez quelques amis robustes qui voudraient se joindre à vous, allez libérer les créatures de leurs cages grâce à cette clé et assurez-vous qu'elles restent en vie. Je serai à vos côtés tout le temps ; Jer'kai, pour sa part, restera ici, au cas où...",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Elune soit louée, $N ! Vous êtes une bénédiction pour nous et les Fées fléchetteuses que vous avez sauvées. Jer'kai et moi, nous n'avons jamais été capables d'aider les dragons. Nous n'oublierons jamais votre intervention dans les affaires du Totem sinistre. \n \n Parlez à Jer'kai. . . Je dois préparer notre vengeance. Ce n'est pas parce que les dragons féeriques sont libres qu'ils le resteront. Jer'kai et moi-même devons passer à l'offensive. ",
+        "2b57990f0688daccd829": "Nous ne pouvons pas laisser le clan Grimtotem détruire ces magnifiques créatures. Elles doivent être libérées de leur captivité !",
+        "794f11da50d34c7c5cc0": "L'odieux clan du Totem sinistre capture des créatures féeriques, $N. Jer'kai et moi ne savons pas quels desseins ils poursuivent en faisant cela, mais ce n'est certainement rien de bon.\n\nNous ne sommes pas assez puissants pour combattre le Totem sinistre dans son camp et libérer les créatures, mais peut-être qu'avec votre aide...\n\nSi vous êtes d'accord et avez quelques amis robustes qui voudraient se joindre à vous, allez libérer les créatures de leurs cages grâce à cette clé et assurez-vous qu'elles restent en vie. Je serai à vos côtés tout le temps ; Jer'kai, pour sa part, restera ici, au cas où..."
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "A l’aide de la Clé de la cage en bambou, libérer les Fées fléchetteuses de l’enclos dans le Camp du Totem sinistre. Au moins 6 Fées fléchetteuses et Kindal Moonweaver doivent survivre.\n\nVous avez 6 minutes avant que Kindal décide qu’il est temps de battre en retraite et que vous échouiez dans votre quête.",
       "title": "Liberté pour toutes les créatures",
@@ -202,6 +361,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -223,6 +400,11 @@
     },
     "hrHR": {
       "description": "Prljavi klan Grimtotem hvata vilinske zmajeve, {name}. Jer'kai i ja nemamo pojma što planiraju učiniti s njima, ali očito ne smjeraju ništa dobro.\n\nNismo dovoljno moćni probiti se u logor i osloboditi zarobljene zmajeve, ali možda uz tvoju pomoć...\n\nAko si spreman i imaš snažne prijatelje, oslobodi stvorenja iz kaveza ovim ključem i pobrini se da pobjegnu živa. Cijelo ću vrijeme biti uz tebe. Jer'kai će ostati ovdje.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Hvala Eluni, $N! Velik si blagoslov nama i zmajevima koje si spasio. Jer’kai i ja nikada im ne bismo mogli sami pomoći; tvoja intervencija protiv Grimtotema ostat će zapamćena.$B$BSada razgovaraj s Jer’kaiem... Moram pripremiti našu osvetu. Samo zato što su vilinski zmajevi slobodni ne znači da će takvi i ostati. Jer’kai i ja sada prelazimo u napad.",
+        "2b57990f0688daccd829": "Ne smijemo dopustiti klanu Grimtotem da uništi ova prekrasna stvorenja. Moramo ih osloboditi!",
+        "794f11da50d34c7c5cc0": "Prljavi klan Grimtotem hvata vilinske zmajeve, $N. Jer’kai i ja ne znamo što namjeravaju s njima, ali očito ništa dobro.$B$BNismo dovoljno snažni da se probijemo u logor i oslobodimo zarobljene zmajeve, ali možda uz tvoju pomoć...$B$BAko želiš i imaš snažne prijatelje, oslobodi stvorenja iz kaveza ovim ključem i pobrini se da pobjegnu živa. Bit ću uz tebe cijelo vrijeme. Jer’kai ostaje ovdje."
+      },
       "eventObjectiveLabel": "Spasi najmanje 6 Sprite Dartera od zarobljavanja",
       "summary": "Pomoću ključa bambusovog kaveza oslobodi Sprite Dartere iz ograde u logoru Grimtotema. Najmanje 6 Sprite Dartera i Kindal Moonweaver moraju preživjeti.\n\nImaš 6 minuta prije nego što Kindal odluči da je vrijeme za povlačenje i zadatak ne uspije.",
       "title": "Sloboda za sva stvorenja",
@@ -233,6 +415,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bb18ca6b3d8dd0f2dfa6a82642b0e7f363dbd0ae2fe98bf5cb07e061f141e177"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -257,6 +454,11 @@
     },
     "itIT": {
       "description": "I luridi membri del clan Totem Truce stanno catturando i Draghi Fatati, {name}. Jer'kai e io non abbiamo idea di cosa vogliano farne, ma è evidente che non stanno tramando nulla di buono.\n\nNon siamo abbastanza forti da farci strada combattendo nell'accampamento e liberare i draghi catturati, ma forse con il tuo aiuto...\n\nSe sei disposto e hai qualche amico forte, libera le creature dalla gabbia con questa chiave e assicurati che fuggano vive. Sarò al tuo fianco per tutto il tempo. Jer'kai resterà qui.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Sia lodata Elune, $N! Sei una grande benedizione per noi e per i draghi fatati che hai salvato. Jer'kai e io non saremmo mai riuscite ad aiutare i draghi da sole — il tuo intervento negli affari dei Grimtotem non sarà dimenticato.\n\nOra parla con Jer'kai... io devo prepararmi per la nostra rappresaglia. Il fatto che i draghi fatati siano liberi non vuol dire che lo resteranno. Jer'kai e io adesso passeremo all'attacco.",
+        "2b57990f0688daccd829": "Non possiamo permettere che il clan Grimtotem distrugga queste splendide creature. Devono essere liberate!",
+        "794f11da50d34c7c5cc0": "Quei luridi del clan Grimtotem stanno catturando i draghi fatati, $N. Jer'kai e io non abbiamo idea di cosa vogliano farne, ma di certo non hanno buone intenzioni.\n\nNon siamo abbastanza forti per aprirci la strada nell'accampamento e liberare i draghi prigionieri, ma forse con il tuo aiuto...\n\nSe te la senti e hai qualche amico forte, libera le creature dalla gabbia con questa chiave e fa' in modo che ne escano vive. Sarò al tuo fianco per tutto il tempo. Jer'kai resterà qui."
+      },
       "eventObjectiveLabel": "Salva almeno 6 draghetti fatati dalla cattura",
       "summary": "Usa la chiave della gabbia di bambù per liberare i draghetti fatati dal recinto nell'accampamento dei Grimtotem. Devono sopravvivere almeno 6 draghetti e Kindal Moonweaver.\n\nHai 6 minuti prima che Kindal decida di ritirarsi e la missione fallisca.",
       "title": "Libertà per tutte le creature",
@@ -267,6 +469,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bb18ca6b3d8dd0f2dfa6a82642b0e7f363dbd0ae2fe98bf5cb07e061f141e177"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -291,6 +511,11 @@
     },
     "koKR": {
       "description": "쉿, 조용히 하고 저 밑을 좀 보세요. 저 더러운 그림토템부족 녀석이 요정용을 잡아들이고 있어요. 저들이 무슨 일을 저지르려는 건지 정확히는 모르겠지만 분명 못된 짓을 벌이려는 속셈일 겁니다.\n\n우리 힘만으로는 야영지로 쳐들어가 붙잡힌 용들을 풀어줄 수가 없지만 그대가 도와준다면 혹시...\n\n친구들 몇 명과 함께 이 일을 맡아볼 생각이 있다면, 이 열쇠로 우리에 갇힌 용들을 풀어주고 살아서 도망칠 수 있도록 도와주세요. 제가 옆에서 지원하죠. 그리고 만약에 대비해 제르카이는 여기 남을 겁니다.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "엘룬께 영광을! 그대는 화살요정용들과 우리에게 위대한 축복과 같은 존재예요. 제르카이와 저만으로는 결코 성공할 수 없었을 겁니다. 그림토템부족에게 맞서 절 도와준 일은 결코 잊지 않겠어요.\n\n전 복수할 준비를 해야 하니까 제르카이와 얘기해 보세요. 요정용들이 풀려났다고 해서 계속 안전하리라는 보장은 없거든요. 이제 제르카이와 나는 공격을 할 겁니다.",
+        "2b57990f0688daccd829": "우리는 그림토템 부족이 이 아름다운 생명체를 파괴하도록 놔둘 수 없습니다.  그들은 포로 상태에서 풀려나야 합니다!",
+        "794f11da50d34c7c5cc0": "쉿, 조용히 하고 저 밑을 좀 보세요. 저 더러운 그림토템부족 녀석이 요정용을 잡아들이고 있어요. 저들이 무슨 일을 저지르려는 건지 정확히는 모르겠지만 분명 못된 짓을 벌이려는 속셈일 겁니다.\n\n우리 힘만으로는 야영지로 쳐들어가 붙잡힌 용들을 풀어줄 수가 없지만 그대가 도와준다면 혹시...\n\n친구들 몇 명과 함께 이 일을 맡아볼 생각이 있다면, 이 열쇠로 우리에 갇힌 용들을 풀어주고 살아서 도망칠 수 있도록 도와주세요. 제가 옆에서 지원하죠. 그리고 만약에 대비해 제르카이는 여기 남을 겁니다."
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "대나무 우리 열쇠를 사용하여 그림토템부족 야영지의 우리에 갇힌 화살요정용들을 풀어 줘야 합니다. 최소 6마리의 화살요정용과 킨달 문위버가 살아남아야 합니다.\n\n6분이 지나면 킨달이 후퇴할 때가 되었다고 할 것이며 임무에 실패하게 됩니다.",
       "title": "모든 생명에 자유를",
@@ -300,6 +525,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -321,6 +564,11 @@
     },
     "plPL": {
       "description": "Plugawy klan Grimtotem chwyta baśniowe smoki, {name}. Ja i Jer'kai nie mamy pojęcia, co planują z nimi zrobić, ale najwyraźniej nic dobrego.\n\nNie jesteśmy dość silne, by przebić się do obozu i uwolnić pojmane smoki, lecz może z twoją pomocą...\n\nJeśli zechcesz i masz silnych przyjaciół, uwolnij stworzenia tym kluczem i dopilnuj, by uszły z życiem. Będę u twego boku przez cały czas. Jer'kai zostanie tutaj.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Dzięki Elune, $N! Jesteś błogosławieństwem dla nas i uratowanych smoczków. Jer’kai i ja nigdy nie zdołalibyśmy pomóc im sami; twoja interwencja przeciw Grimtotem zostanie zapamiętana.$B$BPorozmawiaj teraz z Jer’kaiem... Muszę przygotować nasz odwet. To, że smoki wróżkowe są wolne, nie znaczy, że takie pozostaną. Jer’kai i ja przejdziemy teraz do ataku.",
+        "2b57990f0688daccd829": "Nie możemy pozwolić klanowi Grimtotem zniszczyć tych pięknych stworzeń. Musimy je uwolnić!",
+        "794f11da50d34c7c5cc0": "Plugawy klan Grimtotem łapie smoki wróżkowe, $N. Jer’kai i ja nie wiemy, co z nimi planują, ale z pewnością nic dobrego.$B$BNie jesteśmy dość silni, by przebić się do obozu i uwolnić smoki, ale może z twoją pomocą...$B$BJeśli zechcesz i masz silnych przyjaciół, uwolnij stworzenia z klatki tym kluczem i dopilnuj, by uszły z życiem. Cały czas będę przy tobie. Jer’kai zostanie tutaj."
+      },
       "eventObjectiveLabel": "Uratuj przed schwytaniem co najmniej 6 Sprite Darterów",
       "summary": "Używając klucza do bambusowej klatki, uwolnij smoki Sprite Darter z zagrody w obozie Grimtotemów. Co najmniej 6 smoków Sprite Darter i Kindal Moonweaver muszą przeżyć.\n\nMasz 6 minut, zanim Kindal uzna, że pora się wycofać, i zadanie zakończy się porażką.",
       "title": "Wolność dla wszystkich stworzeń",
@@ -331,6 +579,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bb18ca6b3d8dd0f2dfa6a82642b0e7f363dbd0ae2fe98bf5cb07e061f141e177"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -355,6 +618,11 @@
     },
     "ptBR": {
       "description": "Aquele imundo clã Temível Totem está capturando as dragoletas, {name}. Eu e Jer'kai não fazemos ideia do que planejam fazer com as bichinhas, mas com certeza não é coisa que preste.\n\nNão temos força bastante para adentrar o acampamento e libertar as dragoletas, mas, com sua ajuda, talvez...\n\nSe estiver disposto, e tiver uns amigos bem fortes, solte as criaturas da jaula com esta chave e certifique-se de que escaparão com vida. Eu estarei do seu lado o tempo todo. Jer'kai ficará aqui.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Graças a Eluna, $N! Você é uma bênção para nós e para os dardejantes salvos. Jer'kai e eu nunca teríamos conseguido ajudar os dragões sozinhos — sua intervenção nos negócios dos Temível Totem será lembrada.\n\nFale com Jer'kai agora... Tenho que preparar a nossa retaliação. Só porque as dragoletas estão livres, não significa que elas continuarão assim. Jer'kai e eu partiremos para a ofensiva agora.",
+        "2b57990f0688daccd829": "Não podemos permitir que o clã Totem Sinistro destrua essas belas criaturas. Elas precisam ser libertadas!",
+        "794f11da50d34c7c5cc0": "Aquele imundo clã Temível Totem está capturando as dragoletas, $N. Eu e Jer'kai não fazemos ideia do que planejam fazer com as bichinhas, mas com certeza não é coisa que preste.\n\nNão temos força bastante para adentrar o acampamento e libertar as dragoletas, mas, com sua ajuda, talvez...\n\nSe estiver disposto, e tiver uns amigos bem fortes, solte as criaturas da jaula com esta chave e certifique-se de que escaparão com vida. Eu estarei do seu lado o tempo todo. Jer'kai ficará aqui."
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "Com a Chave da Gaiola de Bambu, liberte os Dardejantes do cercado no acampamento dos Temível Totem. Pelo menos 6 Dardejantes e Kindal Teceluna devem sobreviver.\n\nVocê tem 6 minutos antes que Kindal resolva recuar e você fracasse na missão.",
       "title": "Liberdade para todas as criaturas",
@@ -364,6 +632,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -385,6 +670,11 @@
     },
     "ruRU": {
       "description": "Гнусные таурены из клана Зловещего Тотема ловят лесных дракончиков, {name}! Мы с Джер'Кай понятия не имеем, что они собираются с ними делать, но явно ничего хорошего!\n\nУ нас просто не хватит сил, чтобы прорваться в лагерь и освободить пленных дракончиков, но, может быть, с твоей помощью...\n\nЕсли ты согласишься помочь, и у тебя есть надежные товарищи, отопри клетку вот этим ключом и выпусти бедных зверушек на волю! Только постарайся, чтобы все сумели улететь живыми... Конечно, я тоже буду с тобой! А Джер'Кай останется здесь.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Спасибо Элуне, $N! Ты – великое счастье для нас и тех хамелеонов которых ты спас. Джер'Кай и я никогда не смогли бы помочь драконам как это сделал ты, так что твои деяния для Зловещего Тотема будут увековечены.\n\nПоговори теперь с Джер'Кай... Я же подготовлюсь к воздаянию. Теперь, когда лесные дракончики свободны, мы перейдем в наступление...",
+        "2b57990f0688daccd829": "Мы не можем позволить клану Зловещего Тотема уничтожить этих прекрасных созданий. Их нужно освободить из плена!",
+        "794f11da50d34c7c5cc0": "Гнусные таурены из клана Зловещего Тотема ловят лесных дракончиков, $n! Мы с Джер'Кай понятия не имеем, что они собираются с ними делать, но явно ничего хорошего!\n\nУ нас просто не хватит сил, чтобы прорваться в лагерь и освободить пленных дракончиков, но, может быть, с твоей помощью...\n\nЕсли ты согласишься помочь, и у тебя есть надежные товарищи, отопри клетку вот этим ключом и выпусти бедных зверушек на волю! Только постарайся, чтобы все сумели улететь живыми... Конечно, я тоже буду с тобой! А Джер'Кай останется здесь."
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "Освободите летучих хамелеонов из вольера в лагере Зловещего Тотема с помощью ключа от бамбуковой клетки. Необходимо, чтобы Кайдел Лунный Ткач и как минимум 6 хамелеонов остались живы.\n\nУ вас в запасе 6 минут. После этого Кайдел решит, что пора отступать, и задание останется невыполненным.",
       "title": "Свободу всем живым существам!",
@@ -394,6 +684,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -415,6 +722,11 @@
     },
     "svSE": {
       "description": "Den smutsiga Grimtotem-klanen fångar älvdrakar, {name}. Jer'kai och jag vet inte vad de tänker göra med dem, men det är uppenbart inget gott.\n\nVi är inte starka nog att slå oss in i lägret och befria drakarna, men kanske med din hjälp...\n\nOm du vill och har starka vänner ska du släppa ut varelserna med den här nyckeln och se till att de flyr levande. Jag finns vid din sida hela tiden. Jer'kai stannar här.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Tacka Elune, $N! Du är en stor välsignelse för oss och drakarna du räddade. Jer’kai och jag hade aldrig kunnat hjälpa dem själva; ditt ingripande mot Grimtotem kommer att bli ihågkommet.$B$BTala med Jer’kai nu... Jag måste förbereda vår vedergällning. Bara för att älvdrakarna är fria betyder det inte att de förblir det. Jer’kai och jag går nu till anfall.",
+        "2b57990f0688daccd829": "Vi kan inte låta Grimtotem-klanen förgöra dessa vackra varelser. De måste befrias ur fångenskapen!",
+        "794f11da50d34c7c5cc0": "Den smutsiga Grimtotem-klanen fångar älvdrakar, $N. Jer’kai och jag vet inte vad de tänker göra med dem, men de har uppenbart onda avsikter.$B$BVi är inte starka nog att slå oss in i lägret och befria drakarna, men kanske med din hjälp...$B$BOm du vill och har några starka vänner, släpp ut varelserna ur buren med den här nyckeln och se till att de kommer undan levande. Jag står vid din sida hela tiden. Jer’kai stannar här."
+      },
       "eventObjectiveLabel": "Rädda minst 6 älvdrakar från fångenskap",
       "summary": "Använd bambuburens nyckel för att befria Sprite Darters ur inhägnaden i Grimtotem-lägret. Minst 6 Sprite Darters och Kindal Moonweaver måste överleva.\n\nDu har 6 minuter innan Kindal beslutar att dra sig tillbaka och uppdraget misslyckas.",
       "title": "Frihet åt alla varelser",
@@ -425,6 +737,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bb18ca6b3d8dd0f2dfa6a82642b0e7f363dbd0ae2fe98bf5cb07e061f141e177"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -449,6 +776,11 @@
     },
     "trTR": {
       "description": "Pis Grimtotem klanı peri ejderhalarını yakalıyor, {name}. Jer'kai'yle ne yapmayı planladıklarını bilmiyoruz ama açıkça iyi bir şey peşinde değiller.\n\nKampa savaşarak girip esir ejderhaları kurtaracak kadar güçlü değiliz ama belki yardımınla...\n\nİstekliysen, güçlü dostların varsa yaratıkları bu anahtarla kafesten çıkar ve sağ kaçtıklarından emin ol. Bütün zaman yanında olacağım. Jer'kai burada kalacak.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Elune’ye şükür, $N! Hem bizim hem de kurtardığın ejderhalar için büyük bir nimetsin. Jer’kai ve ben onlara kendi başımıza asla yardım edemezdik; Grimtotem’in işlerine müdahalen hatırlanacak.$B$BŞimdi Jer’kai ile konuş... Ben karşılığımızı vermeye hazırlanmalıyım. Peri ejderhalarının özgür olması, öyle kalacakları anlamına gelmez. Jer’kai ve ben artık saldırıya geçeceğiz.",
+        "2b57990f0688daccd829": "Grimtotem klanının bu güzel yaratıkları yok etmesine izin veremeyiz. Esaretten kurtarılmalılar!",
+        "794f11da50d34c7c5cc0": "Pis Grimtotem klanı peri ejderhalarını yakalıyor, $N. Jer’kai ve ben onlarla ne yapmayı planladıklarını bilmiyoruz ama belli ki niyetleri kötü.$B$BKampa savaşarak girip tutsak ejderhaları kurtaracak kadar güçlü değiliz, ama belki senin yardımınla...$B$Bİstersen ve güçlü dostların varsa bu anahtarla yaratıkları kafeslerinden çıkar ve sağ salim kaçmalarını sağla. Bütün süre boyunca yanında olacağım. Jer’kai burada kalacak."
+      },
       "eventObjectiveLabel": "En az 6 Sprite Darter'ı esaretten kurtar",
       "summary": "Bambu Kafes Anahtarı'nı kullanarak Grimtotem kampındaki Sprite Darter'ları ağıldan kurtar. En az 6 Sprite Darter ve Kindal Moonweaver hayatta kalmalı.\n\nKindal geri çekilme zamanının geldiğine karar verip görevi başarısız kılmadan önce 6 dakikan var.",
       "title": "Tüm Canlılara Özgürlük",
@@ -459,6 +791,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bb18ca6b3d8dd0f2dfa6a82642b0e7f363dbd0ae2fe98bf5cb07e061f141e177"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -483,6 +830,11 @@
     },
     "ukUA": {
       "description": "Мерзенний клан Зловісного Тотема ловить чарівних драконів, {name}. Ми з Джер'кай не знаємо, що вони планують із ними робити, та очевидно, нічого доброго.\n\nНам бракує сили, щоб пробитися до табору й звільнити полонених драконів, але, можливо, з твоєю допомогою...\n\nЯкщо погодишся й маєш сильних друзів, випусти істот із клітки цим ключем і переконайся, що вони втечуть живими. Я весь час буду поруч. Джер'кай залишиться тут.",
+      "dialogue": {
+        "097e48b161f84fda25ca": "Дякувати Елуна, $N! Ти велике благословення для нас і дракончиків, яких урятував. Ми з Джер’каєм ніколи не змогли б допомогти їм самі; твоє втручання у справи Зловісного Тотема запам’ятають.$B$BТепер поговори з Джер’каєм... Я маю підготувати нашу відплату. Те, що чарівні дракони вільні, не означає, що вони залишаться вільними. Ми з Джер’каєм переходимо в наступ.",
+        "2b57990f0688daccd829": "Ми не можемо дозволити клану Зловісного Тотема знищити цих прекрасних створінь. Їх треба звільнити з полону!",
+        "794f11da50d34c7c5cc0": "Брудний клан Зловісного Тотема ловить чарівних драконів, $N. Ми з Джер’каєм не знаємо, що вони задумали, але явно нічого доброго.$B$BМи недостатньо сильні, щоб пробитися до табору й звільнити драконів, але, можливо, з твоєю допомогою...$B$BЯкщо погодишся і маєш сильних друзів, цим ключем звільни створінь із клітки й подбай, щоб вони втекли живими. Я весь час буду поруч. Джер’кай залишиться тут."
+      },
       "eventObjectiveLabel": "Урятуйте від полону щонайменше 6 райдужних хамелеонів",
       "summary": "За допомогою ключа від бамбукової клітки випустіть райдужних хамелеонів із загону в таборі Зловісного Тотема. Щонайменше 6 райдужних хамелеонів і Кіндал Місяцеткач повинні вижити.\n\nУ вас є 6 хвилин, перш ніж Кіндал вирішить, що настав час відступати, і ви провалите завдання.",
       "title": "Свободу звірятам",
@@ -493,6 +845,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bb18ca6b3d8dd0f2dfa6a82642b0e7f363dbd0ae2fe98bf5cb07e061f141e177"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -519,6 +886,11 @@
     },
     "zhCN": {
       "description": "可恶的恐怖图腾部族正在捕捉精灵龙，{name}。耶尔卡和我不知道他们打算对这些精灵龙做什么，但那总不会是什么好事。\n\n我们还没有强悍到可以杀进营地去解救那些精灵龙，但也许有了你的帮助……如果你能找到一些得力的帮手的话，就从笼中释放那些精灵龙吧，另外你要保证它们都活着逃出去。我也会帮你的。耶尔卡会留在这里继续戒备。",
+      "dialogue": {
+        "097e48b161f84fda25ca": "感谢伊露恩，$N!你真是我们和精龙的福星。仅凭耶尔卡和我是绝不可能救出它们的 - 我们将永远记得你在恐怖图腾中的帮助。\n\n现在去和耶尔卡谈谈吧……我要开始准备我们的报复行动。精龙是被释放了，但这并不意味它们会一直保持自由。耶尔卡和我要以进攻夺取主动!\n",
+        "2b57990f0688daccd829": "我们不能让恐怖图腾氏族毁灭这些美丽的精灵龙!",
+        "794f11da50d34c7c5cc0": "可恶的恐怖图腾部族正在捕捉精灵龙，$N。耶尔卡和我不知道他们打算对这些精灵龙做什么，但那总不会是什么好事。\n\n我们还没有强悍到可以杀进营地去解救那些精灵龙，但也许有了你的帮助……如果你能找到一些得力的帮手的话，就从笼中释放那些精灵龙吧，另外你要保证它们都活着逃出去。我也会帮你的。耶尔卡会留在这里继续戒备。"
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "从恐怖图腾营地的围栏里释放被俘获的小精龙。至少6个小精龙和辛达尔·月纹必须活着。\n\n如果6分钟之内你还没能达成这个目标，辛达尔就会决定撤退，任务也会随即失败。",
       "title": "精灵龙的自由",
@@ -528,6 +900,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -549,6 +939,11 @@
     },
     "zhTW": {
       "description": "可惡的恐怖圖騰氏族正在捕捉精靈龍，{name}。耶爾卡和我不知道他們打算對這些精靈龍做什麼，但那總不會是什麼好事。\n\n我們還沒有強悍到可以殺進營地去解救那些精靈龍，但也許有了你的幫助……如果你能找到一些得力的幫手的話，就從籠中釋放那些精靈龍吧，另外你要保證它們都活著逃出去。我也會幫你的。耶爾卡會留在這裡繼續戒備。",
+      "dialogue": {
+        "097e48b161f84fda25ca": "感謝艾露恩，$N!你真是我們和精龍的福星。僅憑耶爾卡和我是絕不可能救出它們的 - 我們將永遠記得你在恐怖圖騰中的幫助。\n\n現在去和耶爾卡談談吧……我要開始準備我們的報復行動。精龍是被釋放了，但這並不意味它們會一直保持自由。耶爾卡和我要以進攻奪取主動!",
+        "2b57990f0688daccd829": "我們不能讓恐怖圖騰氏族摧毀這些美麗的生物。必須把牠們從囚籠中解放出來！",
+        "794f11da50d34c7c5cc0": "可惡的恐怖圖騰部族正在捕捉精靈龍，$N。耶爾卡和我不知道他們打算對這些精靈龍做什麼，但那總不會是什麼好事。\n\n我們還沒有強悍到可以殺進營地去解救那些精靈龍，但也許有了你的幫助……如果你能找到一些得力的幫手的話，就從籠中釋放那些精靈龍吧，另外你要保證它們都活著逃出去。我也會幫你的。耶爾卡會留在這裡繼續戒備。"
+      },
       "eventObjectiveLabel": "Save at least 6 Sprite Darters from capture",
       "summary": "從恐怖圖騰營地的圍欄裏釋放被俘獲的小精龍。至少6個小精龍和辛達爾·月紋必須活著。\n\n如果6分鐘之內妳還沒能達成這個目標，辛達爾就會決定撤退，任務也會隨即失敗。",
       "title": "所有生物的自由",
@@ -558,6 +953,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.097e48b161f84fda25ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.2b57990f0688daccd829": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.794f11da50d34c7c5cc0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

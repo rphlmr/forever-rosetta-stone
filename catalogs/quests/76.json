@@ -1,8 +1,36 @@
 {
   "areaId": 12,
+  "dialogueContexts": {
+    "426aa87a5743889de830": {
+      "lineId": "q:76:accept",
+      "npcId": 240,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "81a8be8144b617b6db4f": {
+      "lineId": "q:76:progress",
+      "npcId": 240,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "8c95ebee095434845328": {
+      "lineId": "q:76:complete",
+      "npcId": 240,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Díky tobě víme, že důl Fargodeep je zamořen koboldy. Teď potřebujeme zvěda, který prozkoumá vzdálenější důl Jasperlode.\n\nProzkoumej Jasperlode a potvrď případnou přítomnost koboldů. K dolu se dostaneš tak, že pojedeš po cestě na východ, až dojdeš k věži Azora. Od věže zamiř na sever a najdeš důl v podhůří.",
+      "dialogue": {
+        "426aa87a5743889de830": "Díky tobě víme, že důl Fargodeep je zamořen koboldy. Teď potřebujeme zvěda, který prozkoumá vzdálenější důl Jasperlode.$B$BProzkoumej Jasperlode a potvrď případnou přítomnost koboldů. K dolu se dostaneš tak, že pojedeš po cestě na východ, až dojdeš k věži Azora. Od věže zamiř na sever a najdeš důl v podhůří.",
+        "81a8be8144b617b6db4f": "Zdravím, $N. Co mi hlásíš? Prozkoumal jsi důl Jasperlode?",
+        "8c95ebee095434845328": "Koboldi v dole Jasperlode, říkáš? K čertu! Situace se každou chvílí zhoršuje!$B$BDěkuji za hlášení, $N. Kéž bys ale přinesl dobré zprávy."
+      },
       "eventObjectiveLabel": "Prozkoumej Jasperlode Mine",
       "summary": "Prozkoumej Jasperlode Mine a pak se přihlas u maršála Dughana v Goldshire.",
       "title": "Důl Jasperlode",
@@ -13,6 +41,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "74582a03f666e85682700465c9abfa78338c894ea322d0d401757d218001d1b3"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +83,11 @@
     },
     "daDK": {
       "description": "Takket være dig ved vi, at Fargodeep Mine er fuld af kobolder. Nu har vi brug for en spejder til at undersøge den fjernere Jasperlode Mine.\n\nUndersøg Jasperlode og bekræft, om der findes kobolder. For at nå minen skal du følge vejen mod øst, indtil du når Tower of Azora. Fra tårnet skal du gå mod nord, så finder du minen ved bakkernes fod.",
+      "dialogue": {
+        "426aa87a5743889de830": "Takket være dig ved vi, at Fargodeep Mine er fuld af kobolder. Nu har vi brug for en spejder til at undersøge den fjernere Jasperlode Mine.$B$BUndersøg Jasperlode og bekræft, om der findes kobolder. For at nå minen skal du følge vejen mod øst, indtil du når Tower of Azora. Fra tårnet skal du gå mod nord, så finder du minen ved bakkernes fod.",
+        "81a8be8144b617b6db4f": "Vær hilset, $N. Hvad har du at berette? Har du undersøgt Jasperlode Mine?",
+        "8c95ebee095434845328": "Kobolder i Jasperlode Mine, siger du? Forbandet! Situationen bliver værre for hvert øjeblik!$B$BTak for din rapport, $N. Jeg ville ønske, at du havde bragt gode nyheder."
+      },
       "eventObjectiveLabel": "Undersøg Jasperlode Mine",
       "summary": "Udforsk Jasperlode Mine, og meld derefter tilbage til marskal Dughan i Goldshire.",
       "title": "Jasperlode-minen",
@@ -50,6 +98,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "74582a03f666e85682700465c9abfa78338c894ea322d0d401757d218001d1b3"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +137,11 @@
     },
     "deDE": {
       "description": "Dank Euch wissen wir jetzt, dass Kobolde sich in der Tiefenschachtmine eingenistet haben. Jetzt brauchen wir noch einen Späher, der die weiter entfernte Jaspismine untersucht.\n\nErforscht die Jaspismine und bestätigt mir, ob sich dort tatsächlich Kobolde aufhalten. Die Mine erreicht Ihr, indem Ihr der Straße nach Osten folgt, bis Ihr zum Turm von Azora kommt. Wenn Ihr Euch am Turm nach Norden wendet, dann findet Ihr die Mine im Vorgebirge.",
+      "dialogue": {
+        "426aa87a5743889de830": "Dank Euch wissen wir jetzt, dass Kobolde sich in der Tiefenschachtmine eingenistet haben. Jetzt brauchen wir noch einen Späher, der die weiter entfernte Jaspismine untersucht.\n\nErforscht die Jaspismine und bestätigt mir, ob sich dort tatsächlich Kobolde aufhalten. Die Mine erreicht Ihr, indem Ihr der Straße nach Osten folgt, bis Ihr zum Turm von Azora kommt. Wenn Ihr Euch am Turm nach Norden wendet, dann findet Ihr die Mine im Vorgebirge.",
+        "81a8be8144b617b6db4f": "Seid gegrüßt, $N. Was habt Ihr zu berichten? Habt Ihr die Jaspismine ausgekundschaftet?",
+        "8c95ebee095434845328": "Kobolde in der Jaspismine, sagt Ihr? Verflucht noch eins! Die Lage wird von Minute zu Minute schlimmer!\n \n Vielen Dank für Euren Bericht, $N. Aber ich wünschte mir, Ihr hättet bessere Nachrichten gebracht. "
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "Erforscht die Jaspismine und kehrt dann nach Goldhain zu Marshal Dughan zurück, um ihm Bericht zu erstatten.",
       "title": "Die Jaspismine",
@@ -83,6 +151,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +190,11 @@
     },
     "enUS": {
       "description": "Thanks to you we know the Fargodeep Mine is infested with kobolds.  Now we need a scout to investigate the more distant Jasperlode Mine.\n\nExplore Jasperlode and confirm any kobold presence.  To reach the mine, travel east along the road until you reach the Tower of Azora.  From the tower, head north and you'll find the mine in the foothills.",
+      "dialogue": {
+        "426aa87a5743889de830": "Thanks to you we know the Fargodeep Mine is infested with kobolds.  Now we need a scout to investigate the more distant Jasperlode Mine.$B$BExplore Jasperlode and confirm any kobold presence.  To reach the mine, travel east along the road until you reach the Tower of Azora.  From the tower, head north and you'll find the mine in the foothills.",
+        "81a8be8144b617b6db4f": "Hail, $N.  What do you have to report? Have you scouted the Jasperlode Mine?",
+        "8c95ebee095434845328": "Kobolds at the Jasperlode Mine, you say?  Curses!  The situation is worsening by the minute!$B$BThank you for the report, $N.  But I wish that the news you brought was good news."
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "Explore the Jasperlode Mine, then report back to Marshal Dughan in Goldshire.",
       "title": "The Jasperlode Mine",
@@ -113,6 +204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +244,11 @@
     },
     "esES": {
       "description": "Gracias a ti, ahora sabemos que la Mina Abisal está infestada de kobolds. Ahora necesitamos un rastreador que investigue la Cantera de Jaspe, que está más lejos.\n\nExplora la Cantera de Jaspe e infórmame si ves algún kóbold. Para llegar a la mina, viaja hacia el este por el camino hasta que llegues a la Torre de Azora. Cuando llegues allí, dirígete hacia el norte. Encontrarás la mina al pie de las colinas.",
+      "dialogue": {
+        "426aa87a5743889de830": "Gracias a ti, ahora sabemos que la Mina Abisal está infestada de kobolds. Ahora necesitamos un rastreador que investigue la Cantera de Jaspe, que está más lejos.\n\nExplora la Cantera de Jaspe e infórmame si ves algún kóbold. Para llegar a la mina, viaja hacia el este por el camino hasta que llegues a la Torre de Azora. Cuando llegues allí, dirígete hacia el norte. Encontrarás la mina al pie de las colinas.",
+        "81a8be8144b617b6db4f": "Saludos, $N. ¿Qué informes me traes? ¿Has explorado la Cantera de Jaspe?",
+        "8c95ebee095434845328": "¿Dices que hay kóbolds en la Cantera de Jaspe? ¡Maldita sea! ¡La situación empeora cada minuto!\n\nGracias por el informe, $N. Aunque habría preferido que trajeras buenas noticias, claro."
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "Explora la Cantera de Jaspe y vuelve a informar al alguacil Dughan a Villadorada.",
       "title": "La Cantera de Jaspe",
@@ -144,6 +258,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +297,11 @@
     },
     "esMX": {
       "description": "Gracias a ti, ahora sabemos que la Mina Abisal está infestada de kóbolds. Ahora necesitamos un explorador que investigue la Cantera de Jaspe, que está más lejos.\n\nExplora la Cantera de Jaspe e infórmame si ves algún kóbold. Para llegar a la mina, viaja hacia el este por el camino hasta que llegues a la Torre de Azora. Cuando llegues allí, dirígete hacia el norte. Encontrarás la mina al pie de las colinas.",
+      "dialogue": {
+        "426aa87a5743889de830": "Gracias a ti, ahora sabemos que la Mina Abisal está infestada de kóbolds. Ahora necesitamos un explorador que investigue la Cantera de Jaspe, que está más lejos.\n\nExplora la Cantera de Jaspe e infórmame si ves algún kóbold. Para llegar a la mina, viaja hacia el este por el camino hasta que llegues a la Torre de Azora. Cuando llegues allí, dirígete hacia el norte. Encontrarás la mina al pie de las colinas.",
+        "81a8be8144b617b6db4f": "Saludos, $N. ¿Qué informes me traes? ¿Has explorado la Cantera de Jaspe?",
+        "8c95ebee095434845328": "¿Dices que hay kóbolds en la Cantera de Jaspe? ¡Maldita sea! ¡La situación empeora cada minuto! \n\nGracias por el informe, $N. Aunque habría preferido que trajeras buenas noticias, claro."
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "Explora la Cantera de Jaspe y vuelve a informar al alguacil Dughan a Villadorada.",
       "title": "La Cantera de Jaspe",
@@ -174,6 +311,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +350,11 @@
     },
     "frFR": {
       "description": "Merci, nous savons désormais que la mine de Fargodeep est infestée de kobolds. Nous avons besoin maintenant d'un éclaireur pour explorer la mine la plus éloignée, celle de Veine-de-jaspe.\n\nExplorez-la et confirmez la présence de kobolds. Pour parvenir à la mine, allez vers l'est le long de la route, jusqu'à la tour d'Azora. De là prenez vers le nord et vous tomberez sur la mine dans les collines.",
+      "dialogue": {
+        "426aa87a5743889de830": "Merci, nous savons désormais que la mine de Fargodeep est infestée de kobolds. Nous avons besoin maintenant d'un éclaireur pour explorer la mine la plus éloignée, celle de Jasperlode.\n\nExplorez-la et confirmez la présence de kobolds. Pour parvenir à la mine, allez vers l'est le long de la route, jusqu'à la tour d'Azora. De là prenez vers le nord et vous tomberez sur la mine dans les collines.",
+        "81a8be8144b617b6db4f": "Salut, $N. Quel est votre compte rendu ? Avez-vous exploré la Mine Veine-de-jaspe ?",
+        "8c95ebee095434845328": "Des kobolds à la mine Veine-de-jaspe, dites-vous ? Malédiction ! La situation se dégrade de minute en minute !\n\nMerci de votre rapport, $N. Mais j'aurais préféré que vous apportiez de meilleures nouvelles."
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "Explorer la mine Veine-de-jaspe, puis faites votre rapport au maréchal Dughan de Comté-de-l’Or.",
       "title": "La mine Veine-de-jaspe",
@@ -204,6 +364,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -226,6 +404,11 @@
     },
     "hrHR": {
       "description": "Zahvaljujući tebi znamo da je rudnik Fargodeep prepun kobolda. Sada trebamo izviđača da istraži udaljeniji rudnik Jasperlode.\n\nIstraži Jasperlode i potvrdi prisutnost kobolda. Da dođeš do rudnika, putuj cestom na istok dok ne stigneš do Tower of Azore. Od tornja kreni na sjever i pronaći ćeš rudnik u podnožju brda.",
+      "dialogue": {
+        "426aa87a5743889de830": "Zahvaljujući tebi znamo da je rudnik Fargodeep prepun kobolda. Sada trebamo izviđača da istraži udaljeniji rudnik Jasperlode.$B$BIstraži Jasperlode i potvrdi prisutnost kobolda. Da dođeš do rudnika, putuj cestom na istok dok ne stigneš do Tower of Azore. Od tornja kreni na sjever i pronaći ćeš rudnik u podnožju brda.",
+        "81a8be8144b617b6db4f": "Pozdrav, $N. Što imaš za prijaviti? Jesi li izviđao rudnik Jasperlode?",
+        "8c95ebee095434845328": "Kažeš da su koboldi u rudniku Jasperlode? K vragu! Situacija je svakog trena sve gora!$B$BHvala ti na izvješću, $N. Ali volio bih da donosiš dobre vijesti."
+      },
       "eventObjectiveLabel": "Izvidi rudnik Jasperlode",
       "summary": "Istraži rudnik Jasperlode, a zatim se javi maršalu Dughanu u Goldshireu.",
       "title": "Rudnik Jasperlode",
@@ -236,6 +419,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "74582a03f666e85682700465c9abfa78338c894ea322d0d401757d218001d1b3"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -260,6 +458,11 @@
     },
     "itIT": {
       "description": "Grazie a te ora sappiamo che la Miniera Antrocupo è infestata dai Coboldi. Vorrei che esplorassi la Miniera Venarossa per verificare la presenza di quelle creature anche lì.\n\nPer raggiungere la miniera, segui la strada a est fino alla Torre di Azora e da lì dirigiti a nord. La miniera si trova ai piedi delle colline.",
+      "dialogue": {
+        "426aa87a5743889de830": "Grazie a te sappiamo che la Miniera di Fargodeep è infestata dai coboldi. Ora ci serve un esploratore che vada a indagare nella Miniera di Jasperlode, più lontana.\n\nEsplora Jasperlode e conferma se ci sono coboldi. Per raggiungere la miniera, va' a est lungo la strada fino alla Torre di Azora. Dalla torre, prosegui verso nord e troverai la miniera ai piedi delle colline.",
+        "81a8be8144b617b6db4f": "Salve, $N. Cos'hai da riferire? Hai perlustrato la Miniera di Jasperlode?",
+        "8c95ebee095434845328": "Coboldi alla Miniera di Jasperlode, dici? Maledizione! La situazione peggiora di minuto in minuto!\n\nGrazie del rapporto, $N. Avrei voluto, però, che mi portassi buone notizie."
+      },
       "eventObjectiveLabel": "Esplora la Miniera Venarossa",
       "summary": "Esplora la Jasperlode Mine, poi fai rapporto al maresciallo Dughan a Goldshire.",
       "title": "La Miniera Venarossa",
@@ -269,6 +472,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -292,6 +513,11 @@
     },
     "koKR": {
       "description": "당신 덕분에 개미굴 광산에 코볼트들이 우글거린다는 사실을 확인했으니, 이번에는 좀 더 멀리 있는 석영 광산을 조사해 봐야겠소.\n\n석영 광산을 탐색하여 코볼트가 있는지 확인해 주시오. 석영 광산에 가려면 일단 길을 따라 동쪽으로 가다가 아조라의 탑이 나오면 거기서 북쪽으로 가시오. 그러면 구릉에 있는 광산을 발견할 수 있을 것이오.",
+      "dialogue": {
+        "426aa87a5743889de830": "당신 덕분에 개미굴 광산에 코볼트들이 우글거린다는 사실을 확인했으니, 이번에는 좀 더 멀리 있는 석영 광산을 조사해 봐야겠소.\n\n석영 광산을 탐색하여 코볼트가 있는지 확인해 주시오. 석영 광산에 가려면 일단 길을 따라 동쪽으로 가다가 아조라의 탑이 나오면 거기서 북쪽으로 가시오. 그러면 구릉에 있는 광산을 발견할 수 있을 것이오.",
+        "81a8be8144b617b6db4f": "안녕, $N.  무엇을 신고해야 합니까?  벽옥 광산을 정찰했습니까?",
+        "8c95ebee095434845328": "석영 광산에 코볼트들이 있다고? 이런 세상에! 점점 상황이 악화되고 있군!\n\n알려주어 고맙소. 당신이 좋은 소식을 가져오길 바랬는데..."
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "석영 광산을 탐색한 후 골드샤이어에 있는 치안대장 더그한에게 보고해야 합니다.",
       "title": "석영 광산",
@@ -301,6 +527,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -322,6 +566,11 @@
     },
     "plPL": {
       "description": "Dzięki tobie wiemy, że w kopalni Fargodeep roi się od koboldów. Teraz potrzebujemy zwiadowcy, który zbada położoną dalej kopalnię Jasperlode.\n\nZbadaj Jasperlode i sprawdź, czy są tam koboldy. Żeby dotrzeć do kopalni, idź drogą na wschód, aż dojdziesz do Tower of Azora. Od wieży skręć na północ, a znajdziesz kopalnię u podnóża gór.",
+      "dialogue": {
+        "426aa87a5743889de830": "Dzięki tobie wiemy, że w kopalni Fargodeep roi się od koboldów. Teraz potrzebujemy zwiadowcy, który zbada położoną dalej kopalnię Jasperlode.$B$BZbadaj Jasperlode i sprawdź, czy są tam koboldy. Żeby dotrzeć do kopalni, idź drogą na wschód, aż dojdziesz do Tower of Azora. Od wieży skręć na północ, a znajdziesz kopalnię u podnóża gór.",
+        "81a8be8144b617b6db4f": "Witaj, $N. Co masz do zameldowania? Czy udało ci się zbadać kopalnię Jasperlode?",
+        "8c95ebee095434845328": "Koboldy w kopalni Jasperlode, powiadasz? Do licha! Sytuacja pogarsza się z każdą chwilą!$B$BDziękuję za meldunek, $N. Szkoda, że nie przynosisz dobrych wieści."
+      },
       "eventObjectiveLabel": "Zbadaj kopalnię Jasperlode",
       "summary": "Zbadaj kopalnię Jasperlode, a potem wróć z meldunkiem do marszałka Dughana w Goldshire.",
       "title": "Kopalnia Jasperlode",
@@ -333,6 +582,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "1.1.1",
             "sourceTextSha256": "74582a03f666e85682700465c9abfa78338c894ea322d0d401757d218001d1b3"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -359,6 +623,11 @@
     },
     "ptBR": {
       "description": "Graças a você sabemos que a Mina Vailafundo está infestada de kobolds. Agora, precisamos de um batedor para investigar a Mina de Jaspe, que fica mais longe.\n\nExplore a Mina de Jaspe e confirme se há presença de kobolds. Para chegar à mina, vá para leste seguindo a estrada até que você chegue à Torre de Azora. Da torre, siga para o norte e você chegará à mina, ao pé das montanhas.",
+      "dialogue": {
+        "426aa87a5743889de830": "Graças a você sabemos que a Mina Vailafundo está infestada de kobolds. Agora, precisamos de um batedor para investigar a Mina de Jaspe, que fica mais longe.\n\nExplore a Mina de Jaspe e confirme se há presença de kobolds. Para chegar à mina, vá para leste seguindo a estrada até que você chegue à Torre de Azora. Da torre, siga para o norte e você chegará à mina, ao pé das montanhas.",
+        "81a8be8144b617b6db4f": "Saudações, $N. O que você tem a relatar? Você explorou a Mina de Jaspe?",
+        "8c95ebee095434845328": "Kobolds na Mina de Jaspe? Praga! A situação piora a cada minuto!\n\nObrigado pelo relatório, $n. Eu só queria que você me trouxesse boas notícias de vez em quando."
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "Explore a Mina de Jaspe e, depois, fale com o Delegado Durão em Vila d'Ouro.",
       "title": "A Mina de Jaspe",
@@ -368,6 +637,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -389,6 +676,11 @@
     },
     "ruRU": {
       "description": "Благодаря тебе мы знаем, что рудник Подземных глубин заполонили кобольды. Но нам нужен разведчик, чтобы выяснить, что творится в Яшмовой шахте.\n\nОтправляйся туда и доложи мне, если обнаружишь кобольдов. Иди на восток по дороге, пока не доберешься до Башни Азоры, оттуда поверни на север, и у подножия гор отыщешь шахту.",
+      "dialogue": {
+        "426aa87a5743889de830": "Благодаря тебе мы знаем, что рудник Подземных глубин заполонили кобольды. Но нам нужен разведчик, чтобы выяснить, что творится в Яшмовой шахте.\n\nОтправляйся туда и доложи мне, если обнаружишь кобольдов. Иди на восток по дороге, пока не доберешься до Башни Азоры, оттуда поверни на север, и у подножия гор отыщешь шахту.",
+        "81a8be8144b617b6db4f": "Приветствую, $N. Что насчет отчета? Тебе удалось провести разведку в Яшмовой шахте?",
+        "8c95ebee095434845328": "Кобольды в Яшмовой шахте? Так это правда? Проклятье! Дела идут все хуже и хуже!\n\nКонечно, я благодарен тебе за информацию, $N, но лучше бы мы ошибались..."
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "Обследуйте Яшмовую шахту и вернитесь с докладом в Златоземье к маршалу Дугхану.",
       "title": "Яшмовая шахта",
@@ -398,6 +690,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -419,6 +729,11 @@
     },
     "svSE": {
       "description": "Tack vare dig vet vi att Fjärrdjupsgruvan kryllar av kobolder. Nu behöver vi en spanare som undersöker den mer avlägsna Jaspisådergruvan.\n\nUtforska Jaspisådergruvan och bekräfta om det finns kobolder där. För att nå gruvan följer du vägen österut tills du kommer till Azoras torn. Gå norrut från tornet, så hittar du gruvan i foten av bergen.",
+      "dialogue": {
+        "426aa87a5743889de830": "Tack vare dig vet vi att Fjärrdjupsgruvan kryllar av kobolder. Nu behöver vi en spanare som undersöker den mer avlägsna Jaspisådergruvan.$B$BUtforska Jaspisådergruvan och bekräfta om det finns kobolder där. För att nå gruvan följer du vägen österut tills du kommer till Azoras torn. Gå norrut från tornet, så hittar du gruvan i foten av bergen.",
+        "81a8be8144b617b6db4f": "Var hälsad, $N. Vad har du att rapportera? Har du spanat vid Jaspisådergruvan?",
+        "8c95ebee095434845328": "Kobolder vid Jaspisådergruvan, säger du? Förbannat! Situationen blir värre för varje minut!$B$BTack för rapporten, $N. Jag önskar bara att du hade kommit med goda nyheter."
+      },
       "eventObjectiveLabel": "Spana igenom Jasperlodegruvan",
       "summary": "Utforska Jaspisådergruvan och rapportera sedan tillbaka till marskalk Dughan i Guldby.",
       "title": "Jaspisådergruvan",
@@ -429,6 +744,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "74582a03f666e85682700465c9abfa78338c894ea322d0d401757d218001d1b3"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -455,6 +785,11 @@
     },
     "trTR": {
       "description": "Senin sayende Fargodeep Madeni'nin koboldlarla dolu olduğunu biliyoruz. Şimdi daha uzaktaki Jasperlode Madeni'ni araştıracak bir gözcüye ihtiyacımız var.\n\nJasperlode'u keşfet ve kobold varlığı olup olmadığını doğrula. Madene ulaşmak için yol boyunca doğuya, Azora Kulesi'ne varana dek ilerle. Kuleden kuzeye yönel, madeni dağ eteklerinde bulacaksın.",
+      "dialogue": {
+        "426aa87a5743889de830": "Senin sayende Fargodeep Madeni'nin koboldlarla dolu olduğunu biliyoruz. Şimdi daha uzaktaki Jasperlode Madeni'ni araştıracak bir gözcüye ihtiyacımız var.$B$BJasperlode'u keşfet ve kobold varlığı olup olmadığını doğrula. Madene ulaşmak için yol boyunca doğuya, Azora Kulesi'ne varana dek ilerle. Kuleden kuzeye yönel, madeni dağ eteklerinde bulacaksın.",
+        "81a8be8144b617b6db4f": "Selam, $N. Ne haber getirdin? Jasperlode Madeni’ni araştırdın mı?",
+        "8c95ebee095434845328": "Jasperlode Madeni’nde koboldlar olduğunu mu söylüyorsun? Lanet olsun! Durum her geçen dakika kötüleşiyor!$B$BRaporun için teşekkürler, $N. Keşke getirdiğin haberler iyi olsaydı."
+      },
       "eventObjectiveLabel": "Jasperlode Madeni'nde keşif yap",
       "summary": "Jasperlode Madeni'ni keşfet, sonra Goldshire'daki Şerif Dughan'a rapor ver.",
       "title": "Jasperlode Madeni",
@@ -465,6 +800,21 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -489,6 +839,11 @@
     },
     "ukUA": {
       "description": "Завдяки тобі ми знаємо, що Бездонна копальня кишить кобольдами. Тепер треба розвідати більш віддалену шахту — Яшмову.\n\nОглянь її на наявність кобольдів. Рухайся на схід по дорозі, поки не дістанешся вежі Азори. Від вежі поверни на північ, і в передгір'ї знайдеш Яшмову шахту.",
+      "dialogue": {
+        "426aa87a5743889de830": "Завдяки тобі ми знаємо, що Бездонна копальня кишить кобольдами. Тепер треба розвідати більш віддалену шахту — Яшмову.$B$BОглянь її на наявність кобольдів. Рухайся на схід по дорозі, поки не дістанешся вежі Азори. Від вежі поверни на північ, і в передгір'ї знайдеш Яшмову шахту.",
+        "81a8be8144b617b6db4f": "Вітаю, $N. Що доповіси? Ти розвідав Яшмову шахту?",
+        "8c95ebee095434845328": "Кажеш, у Яшмовій шахті кобольди? Хай йому грець! Становище щохвилини погіршується!$B$BДякую за доповідь, $N. Шкода тільки, що ти приніс недобрі новини."
+      },
       "eventObjectiveLabel": "Розвідайте Яшмову шахту",
       "summary": "Дослідіть Яшмову шахту, а потім поверніться з доповіддю до маршала Дугана у Злотохрестя.",
       "title": "Яшмова шахта",
@@ -500,6 +855,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "74582a03f666e85682700465c9abfa78338c894ea322d0d401757d218001d1b3"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -526,6 +896,11 @@
     },
     "zhCN": {
       "description": "多亏了你，我们才知道法戈第矿洞里出现了很多狗头人。现在我们还需要一个人去更远处的玉石矿洞侦察。\n\n去查看一下玉石矿洞，确定那里是否有狗头人。向东沿着大路走，一直走到阿祖拉之塔，然后往北走就会看到山脚下的矿洞。",
+      "dialogue": {
+        "426aa87a5743889de830": "多亏了你，我们才知道法戈第矿洞里出现了很多狗头人。现在我们还需要一个人去更远处的玉石矿洞侦察。\n\n去查看一下玉石矿洞，确定那里是否有狗头人。向东沿着大路走，一直走到阿祖拉之塔，然后往北走就会看到山脚下的矿洞。",
+        "81a8be8144b617b6db4f": "你好，$N。你有什麽要报告的吗?去玉石矿坑察看过了吗?",
+        "8c95ebee095434845328": "你是说玉石矿坑也有狗头人?该死!情况越来越糟了!\n\n谢谢你的报告，$N。不过我真希望你带来的是个好消息。\n"
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "查看玉石矿洞，然后回到闪金镇去向治安官杜汉报告。",
       "title": "玉石矿洞",
@@ -535,6 +910,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -556,6 +949,11 @@
     },
     "zhTW": {
       "description": "感謝你，我們現在可以知道法戈第礦坑確實被狗頭人佔據了。現在我們還需要一個人去更遠處的玉石礦坑偵察。\n\n去查看一下玉石礦坑，確定那裡是否有狗頭人。向東沿著大路走，一直走到阿祖拉之塔，然後往北走就會看到山腳下的礦坑。",
+      "dialogue": {
+        "426aa87a5743889de830": "感謝你，我們現在可以知道法戈第礦坑確實被狗頭人佔據了。現在我們還需要一個人去更遠處的玉石礦坑偵察。\n\n去查看一下玉石礦坑，確定那裡是否有狗頭人。向東沿著大路走，一直走到阿祖拉之塔，然後往北走就會看到山腳下的礦坑。",
+        "81a8be8144b617b6db4f": "你好，$N。你有什麼要報告的嗎?去玉石礦坑顯示過了嗎?",
+        "8c95ebee095434845328": "你是說玉石礦坑也有狗頭人?該死!情況越來越糟了!\n\n謝謝你的報告，$N。不過我真希望你帶來的是個好消息。"
+      },
       "eventObjectiveLabel": "Scout through the Jasperlode Mine",
       "summary": "查看玉石礦坑，然後回到閃金鎮去向治安官杜漢報告。",
       "title": "玉石礦坑",
@@ -565,6 +963,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

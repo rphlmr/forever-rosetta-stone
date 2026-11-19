@@ -1,6 +1,8 @@
 """Prepare isolated catalog assignments and validate agent results before generating patches."""
 
 import argparse
+from difflib import unified_diff
+from functools import partial
 import hashlib
 import json
 import re
@@ -21,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 TOKEN_TOOLS = runpy.run_path(str(Path(__file__).with_name('translation-work.py')))
 GET_TOKENS = TOKEN_TOOLS['get_tokens']
 GET_QUEST_TOKENS = TOKEN_TOOLS['get_quest_tokens']
+GET_DIALOGUE_TOKENS = partial(GET_QUEST_TOKENS, allow_sentence_selectors=True)
 GET_BOOK_TOKENS = TOKEN_TOOLS['get_book_tokens']
 
 
@@ -178,7 +181,8 @@ def validate_record(kind, entity_id, before, after, locales):
             if source is None:
                 raise ValueError('Changed AI text requires its source field and locale: ' + field)
 
-            getter = (GET_BOOK_TOKENS if kind in ('books', 'bookpages') else
+            getter = (GET_DIALOGUE_TOKENS if field.startswith('dialogue.') else
+                      GET_BOOK_TOKENS if kind in ('books', 'bookpages') else
                       GET_QUEST_TOKENS if kind == 'quests' else GET_TOKENS)
             if getter(text) != getter(source):
                 raise ValueError('Placeholder mismatch: ' + kind + '/' + entity_id + '/' + locale + '/' + field)
@@ -233,7 +237,7 @@ def validate_batch(root, batch, results):
     return pairs
 
 
-def create_patch(root, batch, results):
+def create_patch(root, batch, results, *, compact=False):
     """Generate dedicated apply_patch input without writing to maintained catalog files."""
     pairs = validate_batch(root, batch, results)
     blocks = ['*** Begin Patch\n']
@@ -252,7 +256,12 @@ def create_patch(root, batch, results):
             if get_digest(current) != batch['snapshots'][kind][entity_id]:
                 raise ValueError('Catalog record changed during patch generation: ' + kind + '/' + entity_id)
 
-            blocks.append('*** Update File: ' + str(path) + '\n@@\n')
+            blocks.append('*** Update File: ' + str(path) + '\n')
+            if compact:
+                diff = list(unified_diff(original.splitlines(keepends=True), replacement.splitlines(keepends=True)))
+                blocks.extend('@@\n' if line.startswith('@@') else line for line in diff[2:])
+                continue
+            blocks.append('@@\n')
             blocks.extend('-' + line + '\n' for line in original.splitlines())
         else:
             if batch['records'][kind][entity_id] is not None:
@@ -285,12 +294,12 @@ def main():
         command.add_argument('--results', type=Path, required=True)
         if label_command == 'patch-labels': command.add_argument('--output', type=Path, required=True)
 
-    for name in ('check', 'patch'):
+    for name in ('check', 'patch', 'patch-dialogue'):
         command = commands.add_parser(name)
         command.add_argument('--batch', type=Path, required=True)
         command.add_argument('--results', type=Path, required=True)
 
-        if name == 'patch':
+        if name in ('patch', 'patch-dialogue'):
             command.add_argument('--output', type=Path, required=True)
 
     args = parser.parse_args()
@@ -348,6 +357,13 @@ def main():
 
     batch = read_json(args.batch)
     results = read_json(args.results)
+    if args.command == 'patch-dialogue':
+        from tools.catalogs.dialogue_jobs import merge_translations
+        results = merge_translations(batch, results, GET_DIALOGUE_TOKENS)
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(create_patch(args.root, batch, results, compact=True))
+        print('Generated validated quest-dialogue patch')
+        return
     validate_batch(args.root, batch, results)
     from tools.catalogs.import_policy import OfficialEvidence, validate_batch_policy
     validate_batch_policy(batch, results, OfficialEvidence(args.database, args.root) if args.database else None)

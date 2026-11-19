@@ -1,8 +1,36 @@
 {
   "areaId": 1377,
+  "dialogueContexts": {
+    "64ecf0700c8c7404f791": {
+      "lineId": "q:8731:accept",
+      "npcId": 15540,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "a39ccb2e6cb40eaa7238": {
+      "lineId": "q:8731:complete",
+      "npcId": 15540,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "ca8e5995f649ae439478": {
+      "lineId": "q:8731:progress",
+      "npcId": 15540,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Zdravím tě, {name}. Než ti zadám náročnější válečné úkoly, budeš si muset odsloužit svůj díl polní služby.\n\nLegii kapitána Skullsplita z Orgrimmaru najdeš před Hive'Regal.\n\nHlas se u něj a vrať se ke mně s dokladem o své polní službě. Budu mít pro tebe připravený pokročilejší úkol.\n\nAch, a snaž se ze všech sil držet dál od Brigády Ironforge. Mezi dobrovolníky Aliance a Hordy panuje značné napětí.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Zdravím, $N. Než ti svěřím náročnější válečné úkoly, musíš odsloužit svůj díl služby v poli. $B$BLegii Orgrimmaru kapitána Skullsplita najdeš před Hive’Regal.$B$BPodej mu hlášení a vrať se ke mně s důkazem o své službě. Připravím ti pokročilejší úkol.$B$BA prosím, snaž se držet dál od Ironforge Brigade. Mezi dobrovolníky Aliance a Hordy panuje napětí.",
+        "a39ccb2e6cb40eaa7238": "Vidím, že Krug si na papírování nepotrpí. Podepsal to krví silithida!$B$BDobrá, $N. Připravil jsem sadu úkolů, které dobře využijí tvé schopnosti jako $c.$B$BDíky vytrvalému úsilí tebe a lidí, jako jsi ty, bude náš nepřítel brzy rozdrcen!",
+        "ca8e5995f649ae439478": "Dokončil jsi službu v poli, $N? Kapitána Skullsplita najdeš před Hive’Regal."
+      },
       "summary": "Hlas se u Kruga Skullsplita na stanovišti Orgrimmar Legion před Hive'Regal. Připrav si Unsigned Field Duty Papers, získej Signed Field Duty Papers a dones je k Windcaller Kaldonovi do Cenarion Hold.\n\nPoznámka: Léčení nebo sesílání prospěšných kouzel na příslušníka Orgrimmar Legion tě označí pro PvP.",
       "title": "Služba v poli",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ede9c198616ee79a4ed250b359cfad082c1f1547016a69e1b786ee677591349f"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -31,6 +74,11 @@
     },
     "daDK": {
       "description": "Velkommen, {name}. Før jeg giver dig mere krævende opgaver i krigen, må du gøre din del af felttjenesten.\n\nDu finder kaptajn Skullsplits Orgrimmar Legion uden for Hive'Regal.\n\nMeld dig hos ham og kom tilbage til mig med bevis på din felttjeneste. Jeg vil have en mere avanceret opgave klar til dig.\n\nÅh, gør venligst dit bedste for at holde dig væk fra Ironforge Brigade. Spændingerne er store blandt vores Alliance- og Horde-frivillige.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Vær hilset, $N. Før jeg giver dig mere krævende opgaver i krigen, må du gøre din del af felttjenesten. $B$BDu finder kaptajn Skullsplits Orgrimmar-legion uden for Hive’Regal.$B$BMeld dig hos ham og kom tilbage med bevis på din felttjeneste. Jeg vil have en mere avanceret opgave klar til dig.$B$BOg hold dig venligst så vidt muligt væk fra Ironforge Brigade. Stemningen er anspændt mellem vores frivillige fra Alliancen og Horden.",
+        "a39ccb2e6cb40eaa7238": "Jeg kan se, at Krug ikke bryder sig meget om papirarbejde. Han underskrev dette med silithidblod!$B$BGodt så, $N. Jeg har forberedt en række opgaver, der bør udnytte dine evner som $c.$B$BMed din og ligesindedes fortsatte indsats vil vores fjende snart blive knust!",
+        "ca8e5995f649ae439478": "Har du afsluttet din felttjeneste, $N? Kaptajn Skullsplit findes uden for Hive’Regal."
+      },
       "summary": "Meld dig hos Krug Skullsplit ved Orgrimmar Legions post foran Hive'Regal. Forbered dine Unsigned Field Duty Papers, få Signed Field Duty Papers, og bring dem til Windcaller Kaldon i Cenarion Hold.\n\nBemærk: Hvis du helbreder eller kaster gavnlige besværgelser på et medlem af Orgrimmar Legion, markeres du til PvP.",
       "title": "Felttjeneste",
       "translationMetadata": {
@@ -40,6 +88,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ede9c198616ee79a4ed250b359cfad082c1f1547016a69e1b786ee677591349f"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -58,6 +121,11 @@
     },
     "deDE": {
       "description": "Seid gegrüßt, {name}. Bevor ich Euch mit umfassenderen Aufgaben in diesem Krieg beauftrage, müsst Ihr Euren Anteil am Felddienst leisten.\n\nIhr könnt die Orgrimmarlegion von Captain Skullsplit außerhalb des Regalschwarmbaus finden.\n\nErstattet ihm Bericht und kommt mit dem Beweis für Euren Felddienst zu mir zurück. Ich werde wichtigere Anweisungen für Euch bereithalten.\n\nOh, bitte haltet Euch von der Ironforgebrigade fern. Es herrschen große Spannungen zwischen unseren Freiwilligen der Allianz und der Horde.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Seid gegrüßt, $n. Bevor ich Euch mit umfassenderen Aufgaben in diesem Krieg beauftrage, müsst Ihr Euren Anteil am Felddienst leisten.\n\nIhr könnt die Orgrimmarlegion von Hauptmann Schädelspalt außerhalb des Regalschwarmbaus finden.\n\nErstattet ihm Bericht und kommt mit dem Beweis für Euren Felddienst zu mir zurück. Ich werde wichtigere Anweisungen für Euch bereithalten.\n\nOh, bitte haltet Euch von der Eisenschmiedebrigade fern. Es herrschen große Spannungen zwischen unseren Freiwilligen der Allianz und der Horde.",
+        "a39ccb2e6cb40eaa7238": "Ich sehe, dass Krug wenig Sinn für Papierkram hat. Er hat das mit Silithidenblut unterzeichtet!\n \n Nun gut, $N. Ich habe eine Reihe von Aufgaben vorbereitet, die Euren Fähigkeiten als $C gerecht werden sollten. \n \n Unser Feind wird dank der anhaltenden Bemühungen von Euch und Euresgleichen bald zerschmettert werden!",
+        "ca8e5995f649ae439478": "Ihr habt Euren Felddienst geleistet, $N? Captain Skullsplit hält sich außerhalb des Regalschwarmbaus auf. "
+      },
       "summary": "Erstattet Krug Skullsplit am Posten der Orgrimmarlegion beim Regalschwarmbau Bericht. Bereitet Eure nicht unterzeichneten Felddienstpapiere vor, lasst sie unterzeichnen und bringt sie dann zu Windrufer Kaldon auf Burg Cenarius.\n\nHinweis: das Heilen oder Wirken von begünstigenden Zaubern auf ein Mitglied der Orgrimmarlegion wird Euch für den PvP-Kampf markieren.",
       "title": "Felddienst",
       "translationMetadata": {
@@ -66,6 +134,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +168,11 @@
     },
     "enUS": {
       "description": "Greetings, {name}.  Before I assign you to more involved tasks in the war, you'll need to do your share of field duty.  \n\nYou will find Captain Skullsplit's Orgrimmar Legion outside Hive'Regal.\n\nReport to him and come back to me with proof of your field service.  I shall have a more advanced assignment ready for you.\n\nOh, please do your best to stay away from the Ironforge Brigade.  Tensions are high among our Alliance and Horde volunteers.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Greetings, $N.  Before I assign you to more involved tasks in the war, you'll need to do your share of field duty.  $B$BYou will find Captain Skullsplit's Orgrimmar Legion outside Hive'Regal.$B$BReport to him and come back to me with proof of your field service.  I shall have a more advanced assignment ready for you.$B$BOh, please do your best to stay away from the Ironforge Brigade.  Tensions are high among our Alliance and Horde volunteers.",
+        "a39ccb2e6cb40eaa7238": "I can tell that Krug has little use for paperwork. He signed this in silithid blood!$B$BVery well, $N. I've prepared a set of tasks that should make good use of your skills as a $c.$B$BWith the continued efforts of you and people like you, our enemy will soon be crushed!",
+        "ca8e5995f649ae439478": "You've completed your field duty, $N?  Captain Skullsplit can be found outside of Hive'Regal."
+      },
       "summary": "Report to Krug Skullsplit at the Orgrimmar Legion post in front of Hive'Regal. Prepare your Unsigned Field Duty Papers, obtain Signed Field Duty Papers and bring them to Windcaller Kaldon in Cenarion Hold.\n\nNote: Healing or casting beneficial spells on a member of the Orgrimmar Legion will flag you for PvP.",
       "title": "Field Duty",
       "translationMetadata": {
@@ -90,6 +181,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -106,6 +215,11 @@
     },
     "esES": {
       "description": "Hola, {name}. Antes de poder asignarte tareas más complicadas en la guerra, tendrás que hacer tu parte en el campo de batalla.\n\nEncontrarás al capitán Machacacráneos de la Legión de Orgrimmar fuera de Colmen'Zora.\n\nPreséntate ante él y vuelve a verme con alguna prueba de tu servicio. Tendré una misión más avanzada lista para ti.\n\nOh y, por favor, no te acerques a la Brigada de Forjaz. Hay mucha tensión entre nuestros voluntarios de la Alianza y la Horda.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Hola, $n. Antes de poder asignarte tareas más complicadas en la guerra, tendrás que hacer tu parte en el campo de batalla.\n\nEncontrarás al capitán Machacacráneos de la Legión de Orgrimmar fuera de Colmen'Regal.\n\nPreséntate ante él y vuelve a verme con alguna prueba de tu servicio. Tendré una misión más avanzada lista para ti.\n\nOh y, por favor, no te acerques a la Brigada de Forjaz. Hay mucha tensión entre nuestros voluntarios de la Alianza y la Horda.",
+        "a39ccb2e6cb40eaa7238": "Krug no tiene mucho que hacer el papeleo. Lo ha firmado con su sangre silítida.\n\nMuy bien, $n. He preparado unas tareas para las que son necesarias aptitudes como las tuyas, $c.\n\nCon los esfuerzos continuados de ti y de tu gente, aplastaremos al enemigo muy pronto.",
+        "ca8e5995f649ae439478": "¿Has hecho tu parte en el campo de batalla, $n? Puedes encontrar al capitán Machacacráneos fuera de Colmen'Regal."
+      },
       "summary": "Preséntate ante Krug Machacacráneos en la Avanzada de la Legión de Orgrimmar delante de Colmen'Regal. Prepara tu documentación de instrucción de campo sin firmar, consigue la documentación de instrucción de campo firmada y llévaselas a Clamavientos Kaldon en el Fuerte Cenarion. Nota: curar o lanzar hechizos benéficos a un miembro de la Legión de Orgrimmar, te marcará como JcJ.",
       "title": "Servicio de campo",
       "translationMetadata": {
@@ -114,6 +228,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -130,6 +262,11 @@
     },
     "esMX": {
       "description": "Hola, {name}. Antes de poder asignarte tareas más complicadas en la guerra, tendrás que hacer tu parte en el campo de batalla.\n\nEncontrarás al capitán Machacacráneos de la Legión de Orgrimmar fuera de Colmen'Regal.\n\nPreséntate ante él y vuelve a verme con alguna prueba de tu servicio. Tendré una misión más avanzada lista para ti.\n\nOh y, por favor, no te acerques a la Brigada de Forjaz. Hay mucha tensión entre nuestros voluntarios de la Alianza y la Horda.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Hola, $n. Antes de poder asignarte tareas más complicadas en la guerra, tendrás que hacer tu parte en el campo de batalla.\n\nEncontrarás al capitán Machacacráneos de la Legión de Orgrimmar fuera de Colmen'Regal.\n\nPreséntate ante él y vuelve a verme con alguna prueba de tu servicio. Tendré una misión más avanzada lista para ti.\n\nOh y, por favor, no te acerques a la Brigada de Forjaz. Hay mucha tensión entre nuestros voluntarios de la Alianza y la Horda.",
+        "a39ccb2e6cb40eaa7238": "Puedo decir que Krug tiene poca habilidad para el papeleo. ¡Lo firmó con sangre silítida!\n\nMuy bien, $n. He preparado un conjunto de tareas que deberían hacer un buen uso de tus habilidades como $c.\n\nCon tus continuos esfuerzos los de otros como tú, ¡nuestro enemigo pronto será aplastado!",
+        "ca8e5995f649ae439478": "¿Has completado tu servicio de campo, $n? El Capitán Machacacráneos está fuera de Colmen'Regal."
+      },
       "summary": "Preséntate ante Krug Machacacráneos en la Avanzada de la Legión de Orgrimmar delante de Colmen'Regal. Prepara tu documentación de instrucción de campo sin firmar, consigue la documentación de instrucción de campo firmada y llévaselas a Clamavientos Kaldon en el Fuerte Cenarion.\n\nNota: curar o lanzar hechizos benéficos a un miembro de la Legión de Orgrimmar, te marcará como JcJ.",
       "title": "Servicio de campo",
       "translationMetadata": {
@@ -138,6 +275,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -154,6 +309,11 @@
     },
     "frFR": {
       "description": "Salutations, {name}. Avant que je vous assigne des tâches plus vitales pour la guerre, vous devrez faire votre part dans la mise en place de la campagne. \n\nVous trouverez la légion d’Orgrimmar, commandée par le capitaine Skullsplit, à l’extérieur de Ruche’Regal.\n\nAllez vous présenter à lui et revenez me voir avec une preuve de votre engagement.  Je vous aurai alors préparé des missions plus délicates.\n\nOh, et ne restez pas à côté de la brigade de Forgefer.  Les tensions entre les volontaires de l’Alliance et de la Horde sont fortes.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Salutations, $N. Avant que je vous assigne des tâches plus vitales pour la guerre, vous devrez faire votre part dans la mise en place de la campagne.\n\nVous trouverez la légion d’Orgrimmar, commandée par le capitaine Skullsplit, à l’extérieur de Ruche’Regal.\n\nAllez vous présenter à lui et revenez me voir avec une preuve de votre engagement. Je vous aurai alors préparé des missions plus délicates.\n\nOh, et ne restez pas à côté de la brigade de Forgefer. Les tensions entre les volontaires de l’Alliance et de la Horde sont fortes.",
+        "a39ccb2e6cb40eaa7238": "Je vois que Krug ne se soucie pas vraiment de la paperasse. Il a signé avec du sang de silithide !\n \n Très bien, $N. J’ai préparé une série de tâches qui conviennent parfaitement à vos compétences de $C. \n \n Avec tous les efforts que vous et des personnes de votre trempe êtes en train de fournir, notre ennemi sera bientôt écrasé !",
+        "ca8e5995f649ae439478": "Vous avez terminé votre mission, $N ?  Le capitaine Skullsplit se trouve à l'extérieur de Hive'Regal."
+      },
       "summary": "Allez vous présenter à Krug Skullsplit, au poste de la légion d’Orgrimmar devant la Ruche’Regal. Préparez votre Ordre de mission, obtenez un Ordre de mission signé et apportez-le à l’Implorateur céleste Kaldon au Fort cénarien\n\nNote : lancer un sort de soin, ou tout autre sort bénéfique, sur un membre de la légion d’Orgrimmar vous infligera un marqueur JcJ.",
       "title": "Votre affectation",
       "translationMetadata": {
@@ -162,6 +322,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -178,6 +356,11 @@
     },
     "hrHR": {
       "description": "Pozdrav, {name}. Prije nego što ti dodijelim zahtjevnije ratne zadatke, moraš odraditi svoj dio terenske službe.\n\nOrgrimmar Legion kapetana Skullsplita pronaći ćeš izvan Hive'Regala.\n\nJavi mu se i vrati mi se s dokazom o svojoj terenskoj službi. Pripremit ću ti napredniji zadatak.\n\nOh, molim te nastoj se držati podalje od Ironforge Brigade. Napetosti su velike među našim dobrovoljcima iz Alliancea i Horde.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Pozdrav, $N. Prije nego što ti povjerim zahtjevnije ratne zadatke, moraš odraditi svoj dio službe na terenu. $B$BOrgrimmarsku legiju kapetana Skullsplita pronaći ćeš ispred Hive’Regala.$B$BJavi mu se i vrati mi se s dokazom o službi na terenu. Pripremit ću ti zahtjevniji zadatak.$B$BI molim te, kloni se brigade Ironforgea koliko možeš. Napetosti su velike među dobrovoljcima Saveza i Horde.",
+        "a39ccb2e6cb40eaa7238": "Vidim da Krug ne mari mnogo za papirologiju. Ovo je potpisao silitidskom krvlju!$B$BVrlo dobro, $N. Pripremio sam zadatke koji će dobro iskoristiti tvoje vještine kao $c.$B$BUz tvoje i napore ljudi poput tebe naš će neprijatelj uskoro biti slomljen!",
+        "ca8e5995f649ae439478": "Jesi li dovršio službu na terenu, $N? Kapetana Skullsplita možeš pronaći ispred Hive’Regala."
+      },
       "summary": "Javi se Krugu Skullsplitu na položaju Orgrimmar Legion ispred Hive'Regala. Pripremi Unsigned Field Duty Papers, pribavi Signed Field Duty Papers i donesi ih Windcalleru Kaldonu u Cenarion Hold.\n\nNapomena: Liječenje ili bacanje korisnih čarolija na pripadnika Orgrimmar Legiona označit će te za PvP.",
       "title": "Terenska dužnost",
       "translationMetadata": {
@@ -187,6 +370,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ede9c198616ee79a4ed250b359cfad082c1f1547016a69e1b786ee677591349f"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -205,6 +403,11 @@
     },
     "itIT": {
       "description": "Saluti, {name}. Prima di affidarti compiti più impegnativi nella guerra, dovrai fare la tua parte di servizio sul campo.\n\nTroverai la Legione di Orgrimmar del capitano Skullsplit fuori da Hive'Regal.\n\nPresentati a lui e torna da me con una prova del tuo servizio sul campo. Avrò pronto per te un incarico più avanzato.\n\nAh, per favore, fa' del tuo meglio per stare lontano dalla Brigata di Forgiardente. La tensione tra i nostri volontari dell'Alleanza e dell'Orda è alta.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Salute, $N. Prima di assegnarti compiti più impegnativi in questa guerra, dovrai fare la tua parte di servizio sul campo.\n\nTroverai la Legione di Orgrimmar del Capitano Skullsplit fuori da Hive'Regal.\n\nPresentati a lui e torna da me con la prova del tuo servizio sul campo. Avrò pronto per te un incarico più avanzato.\n\nAh, ti prego, fai del tuo meglio per stare alla larga dall'Ironforge Brigade. C'è molta tensione fra i nostri volontari dell'Alleanza e dell'Orda.",
+        "a39ccb2e6cb40eaa7238": "Si vede che Krug non sa che farsene delle scartoffie. Questo l'ha firmato col sangue di silithid!\n\nMolto bene, $N. Ho preparato una serie di compiti che dovrebbero mettere a frutto le tue capacità da $C.\n\nCon l'impegno costante tuo e di quelli come te, il nostro nemico sarà presto schiacciato!",
+        "ca8e5995f649ae439478": "Hai completato il tuo servizio sul campo, $N? Il Capitano Skullsplit si trova fuori da Hive'Regal."
+      },
       "summary": "Fai rapporto a Krug Skullsplit al posto della legione di Orgrimmar davanti a Hive'Regal. Prepara i documenti di servizio sul campo non firmati, ottieni quelli firmati e portali a Windcaller Kaldon a Cenarion Hold.\n\nNota: curare o lanciare incantesimi benefici su un membro della legione di Orgrimmar ti renderà attaccabile in PvP.",
       "title": "Servizio sul campo",
       "translationMetadata": {
@@ -214,6 +417,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ede9c198616ee79a4ed250b359cfad082c1f1547016a69e1b786ee677591349f"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -232,6 +453,11 @@
     },
     "koKR": {
       "description": "반갑소, {name}. 전쟁에서 중요한 역할을 맡으려면 우선 그대 몫의 야전 임무를 완수해야 하오.\n\n하이브레갈 외곽으로 가면 크루그 스컬스플릿이 이끄는 오그리마 군단이 있을 거요.\n\n크루그에게 보고한 후 임무를 완수했다는 증거를 가지고 이곳으로 돌아오시오. 더욱 중요한 임무를 준비해 놓고 기다리겠소.\n\n아, 한 가지 당부할 것은 절대 아이언포지 여단 가까이로는 가지 마시오. 롱스트라이드와 스타우트해머가 말다툼을 벌인 이후 우리 호드와 얼라이언스 사이에 팽팽한 긴장감이 흐르고 있으니까.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "반갑네, $N. 더 복잡한 전쟁 임무를 맡기기 전에 자네도 야전 근무를 해야 하네. $B$B우두머리껍질 군락 밖에서 해골분쇄 대위의 오그리마 군단을 찾을 수 있을 걸세.$B$B그에게 보고하고 야전 근무를 마쳤다는 증거를 가져오게. 더 어려운 임무를 준비해 두겠네.$B$B아, 가능하면 아이언포지 여단은 피하게. 얼라이언스와 호드 지원병들 사이의 긴장이 높다네.",
+        "a39ccb2e6cb40eaa7238": "크루그는 서류 작업을 별로 좋아하지 않는 모양이군. 실리시드의 피로 서명했어!$B$B좋네, $N. 자네의 $c 기술을 잘 활용할 수 있는 임무들을 준비해 두었네.$B$B자네와 같은 이들이 계속 노력한다면 우리 적은 곧 무너질 걸세!",
+        "ca8e5995f649ae439478": "야전 근무를 마쳤나, $N? 해골분쇄 대위는 우두머리껍질 군락 밖에 있네."
+      },
       "summary": "하이브레갈 앞에 있는 오그리마 군단 주둔지로 가십시오. 서명되지 않은 야전 임무 보고서를 크루그 스컬스플릿에게 제출한 후 서명된 야전 임무 보고서를 받아야 합니다. 그런 다음 세나리온 요새에 있는 바람소환사 칼돈에게 돌아가십시오.\n\n주의: 오그리마 군단의 일원을 치유하거나 이로운 마법을 걸면 전투 상태가 됩니다.",
       "title": "야전 임무",
       "translationMetadata": {
@@ -240,6 +466,21 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -256,6 +497,11 @@
     },
     "plPL": {
       "description": "Witaj, {name}. Zanim przydzielę ci bardziej złożone zadania wojenne, musisz odbyć swoją część służby w terenie.\n\nLegion Orgrimmar kapitana Skullsplita znajdziesz przed Hive'Regal.\n\nZgłoś się do niego i wróć do mnie z dowodem służby polowej. Przygotuję dla ciebie trudniejsze zadanie.\n\nProszę, staraj się trzymać z dala od Brygady Ironforge. Wśród naszych ochotników z Przymierza i Hordy panuje napięcie.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Witaj, $N. Zanim przydzielę ci bardziej złożone zadania wojenne, musisz odbyć swoją część służby w terenie. $B$BLegion Orgrimmaru kapitana Skullsplita znajdziesz przed Hive’Regal.$B$BZamelduj się u niego i wróć z dowodem służby w terenie. Przygotuję dla ciebie trudniejsze zadanie.$B$BAha, postaraj się trzymać z dala od Brygady Ironforge. Między ochotnikami Przymierza i Hordy panuje napięcie.",
+        "a39ccb2e6cb40eaa7238": "Widzę, że Krug nie przepada za papierkową robotą. Podpisał to krwią silithida!$B$BDobrze, $N. Przygotowałem zadania, które pozwolą dobrze wykorzystać twoje umiejętności jako $c.$B$BDzięki dalszym wysiłkom twoim i podobnych ci osób nasz wróg wkrótce zostanie zmiażdżony!",
+        "ca8e5995f649ae439478": "Służba w terenie zakończona, $N? Kapitana Skullsplita znajdziesz przed Hive’Regal."
+      },
       "summary": "Zgłoś się do Kruga Skullsplita na posterunku Legionu Orgrimmar przed Hive'Regal. Przygotuj niepodpisane dokumenty służby polowej, uzyskaj podpisane dokumenty i przynieś je przyzywaczowi wiatru Kaldonowi w Cenarion Hold.\n\nUwaga: leczenie członka Legionu Orgrimmar lub rzucanie na niego korzystnych zaklęć oznaczy cię do PvP.",
       "title": "Służba w terenie",
       "translationMetadata": {
@@ -265,6 +511,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ede9c198616ee79a4ed250b359cfad082c1f1547016a69e1b786ee677591349f"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -283,6 +544,11 @@
     },
     "ptBR": {
       "description": "Saudações, {name}. Antes de lhe atribuir tarefas mais intrincadas na guerra, é preciso que você faça sua parte no serviço em campanha. \n\nA Legião de Orgrimmar do Capitão Rachacrânio está estacionada perto de Colme'Régia.\n\nApresente-se a ele e fale novamente comigo quando tiver concluído ser serviço em campanha. Deverei ter uma tarefa mais complexa para você então.\n\nAh, por favor, faça o possível para ficar longe da Brigada de Altaforja. O clima está tenso entre nossos voluntários da Aliança e da Horda.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Saudações, $N. Antes de lhe atribuir tarefas mais intrincadas na guerra, é preciso que você faça sua parte no serviço em campanha.\n\nA Legião de Orgrimmar do Capitão Rachacrânio está estacionada perto de Colme'Régia.\n\nApresente-se a ele e fale novamente comigo quando tiver concluído ser serviço em campanha. Deverei ter uma tarefa mais complexa para você então.\n\nAh, por favor, faça o possível para ficar longe da Brigada de Altaforja. O clima está tenso entre nossos voluntários da Aliança e da Horda.",
+        "a39ccb2e6cb40eaa7238": "Posso ver que Krug não liga muito para burocracia. Ele assinou isso com sangue de silitídeo!\n\nMuito bem, $N. Preparei uma série de tarefas que devem aproveitar bem suas habilidades de $c.\n\nCom seus esforços contínuos e os de pessoas como você, nosso inimigo logo será esmagado!",
+        "ca8e5995f649ae439478": "Já concluiu o serviço em campanha, $N? Você encontra o Capitão Rachacrânio perto de Colme'Régia."
+      },
       "summary": "Apresente-se para Krug Rachacrânio no posto da Legião de Orgrimmar em frente a Colme'Régia. Prepare seus Papéis em Branco de Serviço em Campanha, obtenha Papéis Assinados de Serviço em Campanha e leve-os ao Arauto do Vento Kaldon no Forte Cenariano.\n\nNota: curar ou lançar feitiços benéficos em um membro da Legião de Orgrimmar marcará você para o JxJ.",
       "title": "Serviço em campanha",
       "translationMetadata": {
@@ -291,6 +557,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -307,6 +591,11 @@
     },
     "ruRU": {
       "description": "Приветствую тебя, {name}. Прежде чем дать тебе ответственные задания, я должен поручить тебе более простые и рутинные.\n\nЛегион Оргриммара под предводительством капитана Крушителя Черепов расквартирован рядом с Ульем Регал.\n\nПоговори с капитаном и принеси мне доказательство выполнения его указаний. Тем временем я подготовлю для тебя новое задание.\n\nАх да, сделай одолжение, держись подальше от дружины Стальгорна. Добровольцы Орды и Альянса постоянно грызутся друг с другом.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Приветствую тебя, $N. Прежде чем дать тебе ответственные задания, я должен поручить тебе более простые и рутинные.\n\nЛегион Оргриммара под предводительством капитана Крушителя Черепов расквартирован рядом с Ульем Регал.\n\nПоговори с капитаном и принеси мне доказательство выполнения его указаний. Тем временем я подготовлю для тебя новое задание.\n\nАх да, сделай одолжение, держись подальше от дружины Стальгорна. Добровольцы Орды и Альянса постоянно грызутся друг с другом.",
+        "a39ccb2e6cb40eaa7238": "Отлично, $N. Я подготовил для тебя несколько заданий, которые отлично подойдут к твоим навыкам, $c.\n\nС твоей помощью, наш враг скоро будет раздавлен!",
+        "ca8e5995f649ae439478": "Ты выполнил свой долг, $N? Капитана Крушителя Черепов можно найти рядом с Ульем Регал."
+      },
       "summary": "Поступите в распоряжение легиона Оргриммара возле улья Регал. Подготовьте неподписанные бумаги о полевых обязанностях и получите подписанные бумаги о полевых обязанностях, отнесите их Зовущему Калдону в крепость Кенария.\n\nВнимание: исцеление или наложение благоприятных заклинаний на бойцов легиона Оргриммара переводит в режим PvP.",
       "title": "Рутинное задание",
       "translationMetadata": {
@@ -315,6 +604,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -331,6 +638,11 @@
     },
     "svSE": {
       "description": "Var hälsad, {name}. Innan jag ger dig mer krävande uppgifter i kriget måste du göra din del av fälttjänsten.\n\nDu hittar kapten Skullsplits Orgrimmar-legion utanför Hive'Regal.\n\nAnmäl dig hos honom och återvänd med bevis på din fälttjänst. Jag har ett mer avancerat uppdrag redo åt dig då.\n\nOch försök hålla dig borta från Ironforge-brigaden. Spänningen är hög mellan våra frivilliga från Alliansen och Horden.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Var hälsad, $N. Innan jag ger dig mer krävande uppgifter i kriget måste du göra din del av fälttjänsten. $B$BDu hittar kapten Skullsplits Orgrimmarlegion utanför Hive’Regal.$B$BAnmäl dig hos honom och kom tillbaka med bevis på din fälttjänst. Jag ska ha en mer avancerad uppgift redo åt dig.$B$BOch försök hålla dig borta från Ironforgebrigaden. Stämningen är spänd bland våra frivilliga från Alliansen och Horden.",
+        "a39ccb2e6cb40eaa7238": "Jag märker att Krug inte bryr sig mycket om pappersarbete. Han skrev under med silithidblod!$B$BNåväl, $N. Jag har förberett en rad uppgifter som bör utnyttja dina färdigheter som $c.$B$BMed fortsatta insatser från dig och andra som du kommer vår fiende snart att krossas!",
+        "ca8e5995f649ae439478": "Har du slutfört din fälttjänst, $N? Kapten Skullsplit finns utanför Hive’Regal."
+      },
       "summary": "Anmäl dig hos Krug Skullsplit vid Orgrimmar Legions post framför Hive'Regal. Förbered dina osignerade tjänstgöringshandlingar, få dem signerade och för dem till Windcaller Kaldon i Cenarion Hold.\n\nObservera: Om du helar eller kastar gynnsamma besvärjelser på en medlem av Orgrimmar Legion markeras du för PvP.",
       "title": "Fälttjänst",
       "translationMetadata": {
@@ -340,6 +652,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ede9c198616ee79a4ed250b359cfad082c1f1547016a69e1b786ee677591349f"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -358,6 +685,11 @@
     },
     "trTR": {
       "description": "Selam, {name}. Seni savaşta daha kapsamlı görevlere atamadan önce saha görevindeki payını yapmalısın.\n\nCaptain Skullsplit'in Orgrimmar Legion'ını Hive'Regal'ın dışında bulacaksın.\n\nOna rapor ver, sonra saha hizmetinin kanıtıyla bana dön. Senin için daha ileri bir görev hazır edeceğim.\n\nAh, lütfen Ironforge Brigade'den uzak durmaya çalış. Alliance ve Horde gönüllülerimiz arasında gerilim yüksek.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Selamlar, $N. Sana savaşta daha kapsamlı görevler vermeden önce saha görevinden payına düşeni yapmalısın. $B$BYüzbaşı Skullsplit’in Orgrimmar Lejyonu’nu Hive’Regal dışında bulabilirsin.$B$BOna rapor ver ve saha hizmetinin kanıtıyla bana dön. Senin için daha ileri bir görev hazırlayacağım.$B$BAh, lütfen Ironforge Tugayı’ndan uzak durmaya çalış. İttifak ve Horde gönüllülerimiz arasında gerginlik yüksek.",
+        "a39ccb2e6cb40eaa7238": "Krug’un evrak işlerine pek önem vermediği belli. Bunu silithid kanıyla imzalamış!$B$BPekâlâ, $N. Bir $c olarak becerilerini iyi kullanacak görevler hazırladım.$B$BSenin ve senin gibilerin süregelen çabalarıyla düşmanımız yakında ezilecek!",
+        "ca8e5995f649ae439478": "Saha görevini tamamladın mı, $N? Yüzbaşı Skullsplit’i Hive’Regal dışında bulabilirsin."
+      },
       "summary": "Hive'Regal'in önündeki Orgrimmar Lejyonu karakolunda Krug Skullsplit'e rapor ver. İmzasız Saha Görev Belgeleri'ni hazırla, İmzalı Saha Görev Belgeleri al ve bunları Cenarion Hold'daki Rüzgâr Çağırıcı Kaldon'a götür.\n\nNot: Orgrimmar Lejyonu'nun bir üyesini iyileştirmek veya ona yararlı büyüler yapmak seni PvP'ye açık hâle getirir.",
       "title": "Saha Görevi",
       "translationMetadata": {
@@ -367,6 +699,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ede9c198616ee79a4ed250b359cfad082c1f1547016a69e1b786ee677591349f"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -385,6 +732,11 @@
     },
     "ukUA": {
       "description": "Вітаю, {name}. Перш ніж ти отримаєш більш відповідальні завдання на війні, тобі потрібно виконати свою частину польової служби.\n\nТи знайдеш капітана Череполама з Орґріммарського легіону поруч з Вул'Регалем.\n\nПоговори з ним і повертайтеся до мене з доказами виконання польової служби. Я підготую для тебе складніше завдання.\n\nІ, будь ласка, зроби послугу, тримайся якомога далі від бригади Залізогарта. Між добровольцями Альянсу та Орди постійно виникають суперечки.",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "Вітаю, $N. Перш ніж доручити тобі складніші воєнні завдання, ти маєш відбути свою частку польової служби. $B$BЛегіон Оргріммара капітана Скаллспліта знайдеш біля Hive’Regal.$B$BДоповідай йому й повертайся до мене з доказом польової служби. Я підготую для тебе складніше завдання.$B$BІ, будь ласка, намагайся триматися подалі від бригади Стальгорна. Між добровольцями Альянсу й Орди велика напруга.",
+        "a39ccb2e6cb40eaa7238": "Бачу, Круґ не надто любить паперову роботу. Він підписав це кров’ю силітида!$B$BГаразд, $N. Я підготував низку завдань, у яких твої навички як $c стануть у пригоді.$B$BЗавдяки постійним зусиллям твоїм і таких, як ти, наш ворог незабаром буде розтрощений!",
+        "ca8e5995f649ae439478": "Ти завершив польову службу, $N? Капітана Скаллспліта можна знайти біля Hive’Regal."
+      },
       "summary": "З'явіться до Krug Skullsplit на пост Орґріммарського легіону перед Вуликом Реґал. Підготуйте непідписані папери польової служби, отримайте підписані папери польової служби й віднесіть їх заклиначу вітру Kaldon у Кенарійську Фортецю.\n\nПримітка: зцілення або корисні закляття, накладені на члена Орґріммарського легіону, позначать вас для PvP.",
       "title": "Польова служба",
       "translationMetadata": {
@@ -395,6 +747,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "ede9c198616ee79a4ed250b359cfad082c1f1547016a69e1b786ee677591349f"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -414,6 +781,11 @@
     },
     "zhCN": {
       "description": "你好，{name}。在我为你布置更重要的任务之前，你需要首先完成一些常规的战地任务。\n\n你可以在佐拉虫穴外找到克鲁格·碎颅的部队。\n\n向他报到，然后拿着你完成任务的证明文件回到我这里来。那时我将会给你下达进一步的指令。\n\n哦，别忘了离铁炉堡军团远一些。由于联盟和部落的志愿兵之间摩擦不断，我们被迫把他们分开来。",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "你好，$N。在我为你布置更重要的任务之前，你需要首先完成一些常规的战地任务。\n\n你可以在佐拉虫穴外找到克鲁格·碎颅的部队。\n\n向他报到，然后拿着你完成任务的证明文件回到我这里来。那时我将会给你下达进一步的指令。\n\n哦，别忘了离铁炉堡军团远一些。由于联盟和部落的志愿兵之间摩擦不断，我们被迫把他们分开来。",
+        "a39ccb2e6cb40eaa7238": "看的出来克鲁格不常使用文书工作。他用异种的鲜血签署这份文件!\n\n很好，$N。我安排了一连串适合$C技能的任务给你。\n\n有你和像你一样的人继续努力，我们的敌人很快就会被击垮!\n",
+        "ca8e5995f649ae439478": "你已完成你的战地任务了吗，$N?你可以在雷戈虫巢外面找到劈颅队长。"
+      },
       "summary": "向雷戈虫巢外的奥格瑞玛军团报到，从克鲁格·碎颅那里拿到签过字的战地任务文件，把它交给希利苏斯塞纳里奥要塞的唤风者卡尔东。\n\n注意：给奥格瑞玛军团的士兵治疗或者施放增益法术会打开你的PvP标志。",
       "title": "战地任务",
       "translationMetadata": {
@@ -422,6 +794,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -438,6 +828,11 @@
     },
     "zhTW": {
       "description": "你好，{name}。在我給你更重要的戰地任務之前，你必須完成你的戰地任務，\n\n你會在雷戈蟲巢外面找到劈顱隊長的奧格瑪軍團。\n\n向他報告後帶著證明回到我這裡。我會給你一個更高階的任務。\n\n喔，請盡量遠離鐵爐堡軍旅。聯盟與部落志願兵之間的緊張情勢正高漲。",
+      "dialogue": {
+        "64ecf0700c8c7404f791": "你好，$N。在我為你佈置更重要的任務之前，你需要首先完成一些常規的戰地任務。\n\n你可以在左拉蟲穴外找到克魯格·碎顱的部隊。\n\n向他報到，然後拿著你完成任務的證明文件回到我這裡來。那時我將會給你下達進一步的指令。\n\n哦，別忘了離鐵爐堡軍團遠一些。由於聯盟和部落的志願兵之間摩擦不斷，我們被迫把他們分開來。",
+        "a39ccb2e6cb40eaa7238": "看的出來克魯格不常使用文書工作。他用異種的鮮血簽署這份文件!\n\n很好，$N。我安排了一連串適合$C技能的任務給你。\n\n有你和像你一樣的人繼續努力，我們的敵人很快就會被擊垮!",
+        "ca8e5995f649ae439478": "你已完成你的戰地任務了嗎，$N?你可以在雷戈蟲巢外面找到劈顱隊長。"
+      },
       "summary": "向雷戈蟲巢外的奧格瑞瑪軍團報到，從克魯格·碎顱那裏拿到簽過字的戰地任務文件，把它交給希利蘇斯塞納裏奧要塞的喚風者卡爾東。\n\n註意：給奧格瑞瑪軍團的士兵治療或者施放增益法術會打開妳的PvP標誌。",
       "title": "戰地任務",
       "translationMetadata": {
@@ -446,6 +841,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.64ecf0700c8c7404f791": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a39ccb2e6cb40eaa7238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.ca8e5995f649ae439478": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

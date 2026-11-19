@@ -1,4 +1,26 @@
 {
+  "dialogueContexts": {
+    "03ca3dc00f467edf06d0": {
+      "broadcastTextId": 3266,
+      "lineId": "3266",
+      "scope": "vanilla-reference",
+      "stage": "option",
+      "variant": 0
+    },
+    "798e86ae3544c7f67e5c": {
+      "contributionId": 28615,
+      "lineId": "g:b5733-human-male-warrior",
+      "scope": "forever",
+      "stage": "gossip",
+      "variant": 0
+    },
+    "cdff8c928d360b8a0fb7": {
+      "lineId": "g:80c8a703f2783e988393cdc3f26954dd",
+      "scope": "classic-era-and-forever",
+      "stage": "gossip",
+      "variant": 0
+    }
+  },
   "factionId": 72,
   "factionMetadata": {
     "npcSource": "questie",
@@ -9,9 +31,29 @@
   "factionTemplateId": 12,
   "locales": {
     "csCZ": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Vycvičte mě.",
+        "798e86ae3544c7f67e5c": "Samozřejmě ti mohu pomoci s výcvikem. Sám jsem jen tovaryš, ale určitě ti něco ukážu.",
+        "cdff8c928d360b8a0fb7": "Promiň, teď mám trochu napilno. Vyrábím podkovy pro Vernera Osgooda z Lakeshiru. "
+      },
       "name": "Kovář Argus",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -21,9 +63,29 @@
       }
     },
     "daDK": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Træn mig.",
+        "798e86ae3544c7f67e5c": "Selvfølgelig kan jeg hjælpe dig med træning. Jeg er selv kun svend, men jeg er sikker på, at jeg kan vise dig noget.",
+        "cdff8c928d360b8a0fb7": "Undskyld, jeg har lidt travlt med at lave hestesko til Verner Osgood i Lakeshire lige nu. "
+      },
       "name": "Smed Argus",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -33,10 +95,32 @@
       }
     },
     "deDE": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Bildet mich aus.",
+        "798e86ae3544c7f67e5c": "Natürlich kann ich Euch bei der Ausbildung helfen. Ich bin zwar selbst noch Geselle, aber ein paar Sachen kann ich Euch sicher zeigen.",
+        "cdff8c928d360b8a0fb7": "Es tut mir Leid, ich bin gerade mit Hufeisen für Verner Osgood in Seenhain beschäftigt."
+      },
       "name": "Schmied Argus",
       "subName": "Schmiedekunstgeselle",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -53,10 +137,32 @@
       }
     },
     "enUS": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Train me.",
+        "798e86ae3544c7f67e5c": "Of course I can help you with training. I'm just a journeyman myself, but I'm sure there's something I can show you.",
+        "cdff8c928d360b8a0fb7": "I'm sorry, I'm a bit busy right now making horseshoes for Verner Osgood in Lakeshire. "
+      },
       "name": "Smith Argus",
       "subName": "Journeyman Blacksmith",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
           "name": {
             "origin": "original",
             "source": "egLink",
@@ -74,10 +180,32 @@
       }
     },
     "esES": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Entréname.",
+        "798e86ae3544c7f67e5c": "Por supuesto que puedo ayudarte con tu entrenamiento. No soy más que un oficial, pero seguro que puedo enseñarte algo.",
+        "cdff8c928d360b8a0fb7": "Lo siento, estoy bastante ocupado ahora mismo haciendo herraduras para Verner Bonmete de la Comarca del Lago."
+      },
       "name": "Herrero Argus",
       "subName": "Oficial herrero",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -94,10 +222,32 @@
       }
     },
     "esMX": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Entréname.",
+        "798e86ae3544c7f67e5c": "Por supuesto que puedo ayudarte con tu instrucción. No soy más que un oficial, pero seguro que puedo enseñarte algo.",
+        "cdff8c928d360b8a0fb7": "Lo siento, estoy bastante ocupado ahora mismo haciendo herraduras para Verner Osbien de la Comarca del Lago."
+      },
       "name": "Herrero Argus",
       "subName": "Oficial herrero",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -114,10 +264,32 @@
       }
     },
     "frFR": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Entraînez-moi.",
+        "798e86ae3544c7f67e5c": "Bien sûr que je peux vous aider à vous former. Je ne suis que compagnon, mais je suis sûr qu'il y a des choses que je peux vous montrer.",
+        "cdff8c928d360b8a0fb7": "Je n'ai guère de temps pour le moment, je fais des fers à cheval pour Verner Osgood de Lakeshire."
+      },
       "name": "Argus le forgeron",
       "subName": "Forgeron - Compagnon",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "frFR"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -134,9 +306,29 @@
       }
     },
     "hrHR": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Podučite me.",
+        "798e86ae3544c7f67e5c": "Naravno da ti mogu pomoći s obukom. I sam sam samo kalfa, ali sigurno te mogu nečemu naučiti.",
+        "cdff8c928d360b8a0fb7": "Oprosti, trenutno sam zauzet izradom potkova za Vernera Osgooda u Lakeshireu. "
+      },
       "name": "Kovač Argus",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -146,9 +338,31 @@
       }
     },
     "itIT": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Addestrami.",
+        "798e86ae3544c7f67e5c": "Certo che posso aiutarti con l'addestramento. Neanch'io sono ancora un maestro, ma sono sicuro che c'è qualcosa che posso mostrarti.",
+        "cdff8c928d360b8a0fb7": "Mi dispiace, al momento sono un po' occupato a fare ferri di cavallo per Verner Osgood di Lakeshire."
+      },
       "name": "Fabbro Argus",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -158,10 +372,31 @@
       }
     },
     "koKR": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "저를 훈련시켜 주십시오.",
+        "798e86ae3544c7f67e5c": "물론 훈련을 도와드릴 수 있죠. 저도 아직 숙련공에 불과하지만, 뭔가 보여드릴 수 있을 거예요.",
+        "cdff8c928d360b8a0fb7": "미안하지만, 지금 레이크샤이어에 있는 베르너 오스구드에게 가져갈 편자를 만드는 중이라 좀 바쁩니다."
+      },
       "name": "대장장이 아거스",
       "subName": "수습 대장장이",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -178,9 +413,29 @@
       }
     },
     "plPL": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Wyszkol mnie.",
+        "798e86ae3544c7f67e5c": "Oczywiście mogę pomóc ci w szkoleniu. Sam jestem tylko czeladnikiem, ale z pewnością mogę ci coś pokazać.",
+        "cdff8c928d360b8a0fb7": "Przepraszam, jestem teraz trochę zajęty robieniem podków dla Vernera Osgooda z Lakeshire. "
+      },
       "name": "Kowal Argus",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -190,10 +445,31 @@
       }
     },
     "ptBR": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Treine-me.",
+        "798e86ae3544c7f67e5c": "Claro que posso ajudar você com o treinamento. Eu mesmo sou apenas um artífice, mas certamente posso lhe ensinar alguma coisa.",
+        "cdff8c928d360b8a0fb7": "Sinto muito, estou muito ocupado no momento fazendo ferraduras para Vervo Obom de Vila Plácida."
+      },
       "name": "Ferreiro Argus",
       "subName": "Ferreiro Profissional",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -210,10 +486,31 @@
       }
     },
     "ruRU": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Обучите меня.",
+        "798e86ae3544c7f67e5c": "Конечно, я могу помочь тебе с обучением. Я и сам всего лишь подмастерье, но уверен, что смогу кое-что тебе показать.",
+        "cdff8c928d360b8a0fb7": "Прошу прощения, но я сейчас несколько занят изготовлением подков для Вернера Осгуда из Озер."
+      },
       "name": "Кузнец Аргус",
       "subName": "Подмастерье кузнеца",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -230,9 +527,29 @@
       }
     },
     "svSE": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Träna mig.",
+        "798e86ae3544c7f67e5c": "Självklart kan jag hjälpa dig med träning. Jag är bara gesäll själv, men jag är säker på att jag kan visa dig något.",
+        "cdff8c928d360b8a0fb7": "Förlåt, jag är lite upptagen med att göra hästskor åt Verner Osgood i Lakeshire just nu. "
+      },
       "name": "Smed Argus",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -242,9 +559,29 @@
       }
     },
     "trTR": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Beni eğit.",
+        "798e86ae3544c7f67e5c": "Elbette eğitimine yardımcı olabilirim. Ben de sadece bir kalfayım ama sana gösterebileceğim bir şeyler olduğuna eminim.",
+        "cdff8c928d360b8a0fb7": "Üzgünüm, şu anda Lakeshire’daki Verner Osgood için nal yapmakla biraz meşgulüm. "
+      },
       "name": "Demirci Argus",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -254,9 +591,29 @@
       }
     },
     "ukUA": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "Навчіть мене.",
+        "798e86ae3544c7f67e5c": "Звісно, я можу допомогти тобі з навчанням. Сам я лише підмайстер, але певен, що можу дещо тобі показати.",
+        "cdff8c928d360b8a0fb7": "Вибач, я зараз трохи зайнятий: кую підкови для Вернера Осґуда з Лейкшира. "
+      },
       "name": "коваль Арґус",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "community",
             "source": "classicUA",
@@ -267,10 +624,32 @@
       }
     },
     "zhCN": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "训练我。",
+        "798e86ae3544c7f67e5c": "当然，我可以帮你进行训练。我也只是一个新手，但是我想我还是能对你有所帮助的。",
+        "cdff8c928d360b8a0fb7": "很抱歉，我现在有些忙，我要为湖畔镇的弗纳·奥斯古打造马蹄。"
+      },
       "name": "铁匠阿古斯",
       "subName": "初级铁匠",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -287,10 +666,31 @@
       }
     },
     "zhTW": {
+      "dialogue": {
+        "03ca3dc00f467edf06d0": "訓練我。",
+        "798e86ae3544c7f67e5c": "我當然可以幫你訓練。我自己也只是個熟手，但我相信總有些東西可以教你。",
+        "cdff8c928d360b8a0fb7": "很抱歉，我現在有些忙，我要為湖畔鎮的弗納·奧斯古打造馬蹄。"
+      },
       "name": "鐵匠阿古斯",
       "subName": "鍛造訓練師",
       "translationMetadata": {
         "fields": {
+          "dialogue.03ca3dc00f467edf06d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.798e86ae3544c7f67e5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cdff8c928d360b8a0fb7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
           "name": {
             "origin": "community",
             "source": "questie",

@@ -1,9 +1,9 @@
-# Northshire dialogue pilot
+# Forever quest dialogue
 
 This local development addon borrows the FRS quest reader styling. It runs with a French
 Forever client and an English FRS target while the FRS quest reader feature is enabled.
-The native panels remain usable. The companion appears only when the displayed French
-text matches a full source line for the live NPC, quest and panel type.
+The native panels remain usable. The companion uses the reference dialogue only when the
+displayed French matches a full source line for the live NPC, quest and panel type.
 It follows the native window size, shows the quest titles available in the English FRS
 catalog and joins the game's LT/RT panel navigation when gamepad UI is enabled.
 
@@ -15,6 +15,7 @@ Forever export. Keep downloaded inputs, generated Lua and the audit under
 uv run --no-project --with lupa==2.8 python tools/quest-dialogue-pilot/prepare.py \
   --spoken datasources/imports/SPOKEN-RUN \
   --questie datasources/imports/QUESTIE-RUN/questie \
+  --all-quests \
   --output datasources/imports/SPOKEN-RUN/pilot
 ```
 
@@ -25,6 +26,13 @@ input hashes and the distinct line counts. Generated dialogue is a local evaluat
 of public references with varying provenance. The base FRS release excludes it.
 See [the Spoken source notes](../../datasources/spoken/SOURCE.md) for the two search
 scopes, the identity checks and the boundary between the local pilot and catalog imports.
+
+`--all-quests` removes the Northshire area restriction. It uses Forever-attributed pairs
+and the Classic Era + Forever view, with Questie NPC and quest relationships checked for
+combined-view quest phases. Greetings can match before or after turn-in. Progress and
+turn-in use their dedicated screens, and offer text fills gaps in the core quest catalog.
+Scripted chat follow-ups appear in the audit only. Omitting the option recreates the
+Northshire scope.
 
 Use `--observed` with a local JSON capture to add French variants to existing bilingual
 lines. Each observation identifies the NPC, quest, stage, Spoken line and variant, and

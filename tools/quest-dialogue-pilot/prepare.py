@@ -38,20 +38,20 @@ def coverage(rows):
     }
 
 
-def list_npcs(questie_directory):
+def list_npcs(questie_directory, all_quests=False):
     db = questie_directory / "src/corrections/Forever/combined/foreverNpcDB.lua"
     npcs = LuaRuntime().execute(db.read_text())
     left, right, top, bottom = NORTHSHIRE_BOUNDS
     for npc_id, npc in sorted(npcs.items()):
-        if not npc[7] or not npc[1]:
+        if not npc[1] or (not all_quests and not npc[7]):
             continue
         positions = []
-        for area, spawns in npc[7].items():
+        for area, spawns in (npc[7] or {}).items():
             for point in spawns.values():
                 x, y = point[1], point[2]
                 if area in NORTHSHIRE_AREAS or (area == 12 and left <= x <= right and top <= y <= bottom):
                     positions.append([area, x, y])
-        if positions:
+        if positions or all_quests:
             yield npc_id, {
                 "name": npc[1], "positions": positions, "flags": npc[15],
                 "friendly": "A" in (npc[13] or ""),
@@ -69,38 +69,58 @@ def lua_string(text):
     return '"' + "".join(escaped.get(ch, f"\\{ord(ch):03d}" if ord(ch) < 32 else ch) for ch in text) + '"'
 
 
-def prepare(scope, en, fr):
+def prepare(scope, en, fr, forever_keys=None):
     english = defaultdict(set)
     for row in en:
-        if row["originalText"].strip():
-            english[identity(row)].add(row["originalText"])
+        if row["originalText"].strip() and not row.get("narration") and not row.get("override"):
+            english[identity(row)].add((row["originalText"], row.get("playerGender")))
 
     pairs = {}
     for row in fr:
         npc = scope.get(row["npcId"])
         stage = row["source"]
         quest_id = row["questId"]
-        if not npc or row["npcType"] != "creature" or stage not in SOURCES:
+        stages = SOURCES if forever_keys is None else (*SOURCES, "accept")
+        key = identity(row)
+        exact_forever = forever_keys is not None and key in forever_keys
+        if row["npcType"] != "creature" or not row["npcId"] or stage not in stages:
             continue
-        if stage in ("progress", "complete") and quest_id not in npc["ends"]:
+        if not exact_forever and not npc:
+            continue
+        if stage in ("accept", "progress", "complete") and not quest_id:
+            continue
+        if not exact_forever and stage in ("progress", "complete") and quest_id not in npc["ends"]:
+            continue
+        if not exact_forever and stage == "accept" and quest_id not in npc["starts"]:
+            continue
+        if stage == "gossip" and quest_id:
             continue
         if row.get("missing", {}).get("text") or row.get("narration") or row.get("override"):
             continue
-        candidates = english[identity(row)]
+        gender = row.get("playerGender")
+        candidates = {(text, english_gender) for text, english_gender in english[key]
+                      if not gender or not english_gender or gender == english_gender}
         french = VOICE_DIRECTION.sub("", row["text"])
         if len(candidates) != 1 or not french.strip():
             continue
-        target, = candidates
+        (target, english_gender), = candidates
         if french.strip() == target.strip():
             continue
-        pairs[identity(row)] = {
+        pair = {
             "npcID": row["npcId"], "questID": quest_id, "stage": stage, "lineID": row["lineId"],
             "variant": row["variant"], "contributionID": row.get("contributionId"),
             "enUS": target, "frFR": french,
         }
+        sex = {"m": 2, "f": 3}.get(gender or english_gender)
+        if sex is not None:
+            pair["playerSex"] = sex
         if french != row["text"]:
-            pairs[identity(row)]["spokenFrFR"] = row["text"]
-    return sorted(pairs.values(), key=lambda row: (row["npcID"], row["stage"], row["questID"] or 0, row["lineID"]))
+            pair["spokenFrFR"] = row["text"]
+        if forever_keys is not None:
+            pair["scope"] = "forever" if exact_forever else "classic-era-and-forever"
+        pairs[key, french, sex] = pair
+    return sorted(pairs.values(), key=lambda row: (
+        row["npcID"], row["stage"], row["questID"] or 0, row["lineID"], row["variant"], row["frFR"]))
 
 
 def write_dialogues(output, pairs):
@@ -228,6 +248,7 @@ def main():
     parser.add_argument("--questie", required=True, type=Path)
     parser.add_argument("--observed", type=Path, help="Optional French client observations of existing lines")
     parser.add_argument("--vmangos", type=Path, help="Optional local VMaNGOS SQLite reference for gossip menu options")
+    parser.add_argument("--all-quests", action="store_true", help="Match dialogue across Forever, beyond Northshire")
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
     if "datasources/imports" not in str(args.output.resolve()) + "/":
@@ -247,26 +268,46 @@ def main():
             views[label, locale] = coverage(load_view(args.spoken, scope, locale))
 
     en, fr = (load_view(args.spoken, "focus", locale) for locale in ("enUS", "frFR"))
+    live_en, live_fr = (load_view(args.spoken, "live", locale) for locale in ("enUS", "frFR"))
+    live_en_ids = {identity(row) for row in live_en if row["text"].strip()}
+    forever_keys = {identity(row) for row in live_fr
+                    if not row.get("missing", {}).get("text") and identity(row) in live_en_ids}
     speakers = {row["npcId"] for row in en + fr if row["npcType"] == "creature"}
-    located = dict(list_npcs(args.questie))
+    located = dict(list_npcs(args.questie, args.all_quests))
     selected = {
         npc_id: npc for npc_id, npc in located.items()
-        if npc_id in speakers or ((npc["flags"] or npc["starts"] or npc["ends"]) and npc["friendly"])
+        if npc_id in speakers or (not args.all_quests
+                                  and (npc["flags"] or npc["starts"] or npc["ends"]) and npc["friendly"])
     }
-    pairs = prepare(selected, en, fr)
+    pairs = prepare(selected, en, fr, set() if args.all_quests else None)
+    if args.all_quests:
+        live_pairs = prepare(selected, live_en, live_fr, forever_keys)
+        def pair_key(row):
+            return (row["npcID"], row["questID"] or 0, row["stage"], row["lineID"], row["variant"],
+                    row.get("playerSex") or 0, row["frFR"], row["enUS"])
+        pairs = sorted({pair_key(row): row for row in pairs + live_pairs}.values(), key=pair_key)
     observations = observed_variants(args.observed, pairs) if args.observed else []
     if args.observed:
         inputs.append(args.observed)
     write_dialogues(bundle, pairs + observations)
-    options = vendor_and_training_options(args.vmangos, selected) if args.vmangos else []
+    menu_npcs = {row["npcID"] for row in pairs if row["stage"] == "gossip"} if args.all_quests else selected
+    options = vendor_and_training_options(args.vmangos, sorted(menu_npcs)) if args.vmangos else []
     write_options(bundle, options)
-    live_en, live_fr = (load_view(args.spoken, "live", locale) for locale in ("enUS", "frFR"))
-    live_en_ids = {identity(row) for row in live_en if row["text"].strip()}
     paired_forever = Counter(stage for stage, _ in {
         (row["source"], row["lineId"]) for row in live_fr
         if not row.get("missing", {}).get("text") and row["text"].strip() and identity(row) in live_en_ids
     })
-    write_report(args.output / "coverage.md", views, paired_forever, selected, pairs)
+    if args.all_quests:
+        counts = Counter(row["stage"] for row in pairs)
+        rows = [f"| {stage} | {count} |" for stage, count in sorted(counts.items())]
+        (args.output / "coverage.md").write_text("\n".join([
+            "# Spoken dialogue candidates for Forever", "",
+            "The local addon matches the full French line on the current NPC screen.",
+            "Scripted follow-ups are retained for audit only.", "", "| Stage | Candidate pairs |", "| --- | ---: |",
+            *rows, "",
+        ]))
+    else:
+        write_report(args.output / "coverage.md", views, paired_forever, selected, pairs)
     audit = {
         "spokenRevision": (args.spoken / "revision.txt").read_text().split()[0],
         "staticGeneratedAt": snapshot["generatedAt"],

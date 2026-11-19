@@ -68,6 +68,29 @@ C_QuestLog.GetQuestObjectives = function(id)
 end
 
 local hidden = { mode = "hidden" }
+do
+    local db = ForeverRosettaStoneDB
+    local lookup, unitSex, locale = db.GetQuestDialogue, UnitSex, GetLocale
+    local source = Addon:GetTargetLocale() == "frFR" and "deDE" or "frFR"
+    GetLocale = function() return source end
+    UnitSex = function() return 3 end
+    db.GetQuestDialogue = function(_, questID, _, language)
+        if questID ~= 179 then return end
+        return {
+            { key = "female", npcID = 197, stage = "progress", playerSex = 3,
+                text = language == source and "Texte natif" or "Translated progress" },
+            { key = "male", npcID = 197, stage = "progress", playerSex = 2,
+                text = language == source and "Texte natif" or "Other variant" },
+        }
+    end
+    check(Addon:MatchQuestDialogue(197, 179, "progress", " Texte natif ") == "Translated progress",
+        "catalog dialogue matches the client text and character variant")
+    check(not Addon:MatchQuestDialogue(198, 179, "progress", "Texte natif")
+        and not Addon:MatchQuestDialogue(197, 179, "complete", "Texte natif")
+        and not Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte"),
+        "catalog dialogue refuses unmatched NPC, phase and wording")
+    db.GetQuestDialogue, UnitSex, GetLocale = lookup, unitSex, locale
+end
 check(Addon:TransitionQuestInteraction(hidden, { type = "dismiss" }) == hidden, "hidden refuses dismissal")
 check(Addon:TransitionQuestInteraction(hidden, { type = "present", questID = 179, context = "gossip" }) == hidden,
     "selection without a native source cannot become visible")
@@ -80,8 +103,11 @@ check(manual.mode == "dismissed", "without auto-open a new NPC screen starts on 
 check(Addon:TransitionQuestInteraction(manual, { type = "present", source = QuestFrame, questID = 179,
     context = "reward", autoOpen = false }).mode == "dismissed", "without auto-open the next NPC screen stays closed")
 check(Addon:TransitionQuestInteraction({ mode = "visible", source = QuestFrame, questID = 179, context = "progress" },
-    { type = "present", source = QuestFrame, questID = 179, context = "detail", autoOpen = false }).mode == "visible",
-    "an opened reader follows the NPC to the next screen")
+    { type = "present", source = QuestFrame, questID = 179, context = "reward", autoOpen = false }).mode == "dismissed",
+    "a disabled turn-in stays on the bookmark after visible progress")
+check(Addon:TransitionQuestInteraction({ mode = "visible", source = QuestFrame, questID = 179, context = "progress" },
+    { type = "present", source = QuestFrame, questID = 179, context = "progress", dialogueKey = "refresh",
+        autoOpen = false }).mode == "visible", "a manually reopened screen stays visible when its text refreshes")
 Addon.preferences.features.questAutoOpen = false
 check(Addon:Transition(Addon:CreateQuestState(), "quest.select", 179).mode == "collapsed",
     "without auto-open the journal starts on its bookmark")
@@ -133,6 +159,12 @@ do
     check(gossipReader.frame.SmartNavigationCloseHandler() and gossipBookmark:IsShown() and GossipFrame:IsShown(),
         "Back on the greeting reader returns to its bookmark")
     controls.setGamepad(false)
+    Addon.preferences.features.questGreetingAutoOpen = false
+    Addon:SendQuestInteraction({ type = "reset" })
+    Addon:UpdateQuestInteraction()
+    check(not gossipReader.frame:IsShown() and gossipBookmark:IsShown(),
+        "the greeting checkbox independently leaves the starting dialogue on its bookmark")
+    Addon.preferences.features.questGreetingAutoOpen = true
     Addon.preferences.features.questAutoOpen = false
     Addon.questInteractionContentProvider = nil
 end
@@ -274,6 +306,30 @@ for _, screen in ipairs({ { QuestFrameProgressPanel, "progress" }, { QuestFrameR
     dialog.frame:Hide()
 end
 GetProgressText, GetRewardText = savedProgress, savedReward
+Addon.preferences.features.questProgressAutoOpen = false
+QuestFrameRewardPanel:Hide()
+QuestFrameProgressPanel:Show()
+Addon:UpdateQuestInteraction()
+check(not reader.frame:IsShown() and Addon.questInteractionBookmark:IsShown(),
+    "progress remains collapsed even when the previous turn-in was visible")
+Addon.questInteractionBookmark:Fire("OnClick")
+check(reader.frame:IsShown(), "the progress bookmark still reopens the reader")
+QuestFrameProgressPanel:Hide()
+QuestFrameRewardPanel:Show()
+Addon:UpdateQuestInteraction()
+check(reader.frame:IsShown(), "disabling progress preserves turn-in auto-open")
+Addon.preferences.features.questRewardAutoOpen = false
+QuestFrameRewardPanel:Hide()
+QuestFrameProgressPanel:Show()
+Addon.preferences.features.questProgressAutoOpen = true
+Addon:UpdateQuestInteraction()
+check(reader.frame:IsShown(), "disabling turn-in preserves progress auto-open")
+QuestFrameProgressPanel:Hide()
+QuestFrameRewardPanel:Show()
+Addon:UpdateQuestInteraction()
+check(not reader.frame:IsShown() and Addon.questInteractionBookmark:IsShown(),
+    "the turn-in checkbox independently leaves the reward screen on its bookmark")
+Addon.preferences.features.questRewardAutoOpen = true
 QuestFrameProgressPanel:Hide(); QuestFrameRewardPanel:Hide(); QuestFrameDetailPanel:Show()
 Addon:UpdateQuestInteraction()
 check(reader.frame:IsShown() and Addon.questInteractionState.context == "detail", "native offer screen owns the reader")

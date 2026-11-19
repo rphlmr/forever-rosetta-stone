@@ -1,8 +1,28 @@
 {
   "areaId": 148,
+  "dialogueContexts": {
+    "8038edafd49b13dce677": {
+      "lineId": "q:994:complete",
+      "npcId": 3693,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "93f74d5ff9a2357e227b": {
+      "lineId": "q:994:accept",
+      "npcId": 3692,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Dobrá, {name}, bude to tedy silou. Vypadněme odsud, jakmile budeš moci vyrazit. Probojujeme se dolů k cestě, Grimclaw by tam měl pořád být. Až tam budeme, můžeme se rozloučit.\n\nTerenthis bude chtít okamžitě slyšet tvou verzi příběhu, tak zamiř do Auberdine, až odsud vyváznem.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Těší mě, že ses úspěšně vrátil. Tvá pomoc Volcorovi mi dodala víru, že dokážeme překonat výzvy, které nás zde na Temném pobřeží i jinde čekají.",
+        "93f74d5ff9a2357e227b": "Dobrá, $N, použijeme sílu. Vyrazíme odsud, jakmile budeš připraven. Probojujeme se k cestě, Grimclaw by tam měl stále být. Tam se můžeme rozdělit.$B$BTerenthis bude chtít hned slyšet tvou verzi příběhu, takže až se odsud dostaneme, zamiř do Auberdine."
+      },
       "eventObjectiveLabel": "Pomoz Volcorovi dostat se na cestu",
       "summary": "Ochraňuj Volcora, dokud nedorazíte na cestu, a pak si promluv s Terenthisem v Auberdine.",
       "title": "Útěk silou",
@@ -13,6 +33,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "622855d237bb2c48894b8da7881a0688e6a87b4544584565e438c53d27a875a0"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +70,10 @@
     },
     "daDK": {
       "description": "Godt, {name}, så bliver det med magt. Lad os komme herfra, så snart du er klar. Vi kæmper os ned til vejen, Grimclaw burde stadig være der. Når vi er der, kan vi skilles.\n\nTerenthis vil straks høre din version af historien, så tag til Auberdine, når vi er kommet herfra.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Det glæder mig at se, at du er vendt sikkert tilbage. Din hjælp til Volcor har givet mig tro på, at vi kan overvinde de udfordringer, vi står over for her i Darkshore og andre steder.",
+        "93f74d5ff9a2357e227b": "Godt, $N, så bruger vi magt. Lad os komme væk, så snart du er klar. Vi kæmper os ned til vejen, hvor Grimclaw stadig burde være. Der kan vi skilles.$B$BTerenthis vil straks høre din version af historien, så tag til Auberdine, når vi er ude herfra."
+      },
       "eventObjectiveLabel": "Hjælp Volcor til vejen",
       "summary": "Beskyt Volcor, indtil I når vejen, og tal derefter med Terenthis i Auberdine.",
       "title": "Flugt med magt",
@@ -50,6 +84,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "622855d237bb2c48894b8da7881a0688e6a87b4544584565e438c53d27a875a0"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +118,10 @@
     },
     "deDE": {
       "description": "Gut, {name}, dann sei es Gewalt. Lasst uns hier verschwinden, sobald Ihr bereit seid. Wir werden uns unseren Weg hinunter zur Straße erkämpfen - Grimmklaue dürfte immer noch dort sein. Sobald wir sie erreicht haben, können wir uns trennen.\n\nTerenthis wird sofort Eure Version der Geschichte hören wollen, also geht nach Auberdine, sobald wir es hier herausgeschafft haben.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Wie ich mich freue, dass Ihr erfolgreich zurückgekehrt seid. Eure Unterstützung für Volcor hat mich zuversichtlich gemacht, dass wir die bevorstehenden Herausforderungen hier in Dunkelküste und außerhalb meistern können. ",
+        "93f74d5ff9a2357e227b": "Gut, $n, dann sei es Gewalt. Lasst uns hier verschwinden, sobald Ihr bereit seid. Wir werden uns unseren Weg hinunter zur Straße erkämpfen - Grimmklaue dürfte immer noch dort sein. Sobald wir sie erreicht haben, können wir uns trennen.\n\nTerenthis wird sofort Eure Version der Geschichte hören wollen, also geht nach Auberdine, sobald wir es hier herausgeschafft haben."
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "Beschützt Volcor, bis Ihr die Straße erreicht habt und sprecht dann mit Terenthis in Auberdine.",
       "title": "Flucht durch Gewalt",
@@ -83,6 +131,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +164,10 @@
     },
     "enUS": {
       "description": "All right, {name}, force it is. Let's get out of here as soon as you're ready. We'll fight our way down to the road--Grimclaw should still be there. Once there, we can part ways.\n\nTerenthis will want to hear your version of the story immediately, so head to Auberdine after we make it out of here.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! I'm pleased to see you've returned successfully. Your assistance to Volcor has given me faith that we can overcome the challenges facing us here in Darkshore and beyond.",
+        "93f74d5ff9a2357e227b": "All right, $N, force it is. Let's get out of here as soon as you're ready. We'll fight our way down to the road--Grimclaw should still be there. Once there, we can part ways.$B$BTerenthis will want to hear your version of the story immediately, so head to Auberdine after we make it out of here."
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "Protect Volcor until you reach the road, then speak to Terenthis in Auberdine.",
       "title": "Escape Through Force",
@@ -113,6 +177,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +211,10 @@
     },
     "esES": {
       "description": "Muy bien, {name}, llegó el momento. Salgamos de aquí. Cuando tú digas. Nos abriremos paso hasta el camino combatiendo. Zarpadura aún debería estar allí. Una vez allí, nos dividiremos.\n\nTerenthis querrá oír tu versión de la historia inmediatamente, así que dirígete a Auberdine en cuanto salgamos de aquí.",
+      "dialogue": {
+        "8038edafd49b13dce677": "¡$N! Me alegra ver que has conseguido volver. Que ayudaras a Volcor me da esperanzas... creo que podremos superar los desafíos que nos esperan en Costa Oscura y más allá.",
+        "93f74d5ff9a2357e227b": "Muy bien, $n, llegó el momento. Salgamos de aquí. Cuando tú digas. Nos abriremos paso hasta el camino combatiendo. Zarpadura aún debería estar allí. Una vez allí, nos dividiremos.\n\nTerenthis querrá oír tu versión de la historia inmediatamente, así que dirígete a Auberdine en cuanto salgamos de aquí."
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "Protege a Volcor hasta que lleguéis al camino y luego ve a Auberdine a hablar con Terenthis.",
       "title": "Escaparse por la fuerza",
@@ -144,6 +224,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +257,10 @@
     },
     "esMX": {
       "description": "Muy bien, {name}, llegó el momento. Salgamos de aquí. Cuando tú digas. Nos abriremos paso hasta el camino combatiendo. Zarpadura aún debería estar allí. Una vez allí, nos dividiremos.\n\nTerenthis querrá oír tu versión de la historia inmediatamente, así que dirígete a Auberdine en cuanto salgamos de aquí.",
+      "dialogue": {
+        "8038edafd49b13dce677": "¡$N! Me alegra ver que has conseguido volver. Que ayudaras a Volcor me da esperanzas... creo que podremos superar los desafíos que nos esperan en Costa Oscura y más allá.",
+        "93f74d5ff9a2357e227b": "Muy bien, $N, llegó el momento. Salgamos de aquí. Cuando tú digas. Nos abriremos paso hasta el camino combatiendo. Zarpadura aún debería estar allí. Una vez allí, nos dividiremos.\n\nTerenthis querrá oír tu versión de la historia inmediatamente, así que dirígete a Auberdine en cuanto salgamos de aquí."
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "Protege a Volcor hasta que lleguen al camino y luego ve a Auberdine a hablar con Terenthis.",
       "title": "Escaparse por la fuerza",
@@ -174,6 +270,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +303,10 @@
     },
     "frFR": {
       "description": "Ça va, {name}. Sortons de là. Nous nous fraierons un passage jusqu'à la route ; Griffe-sinistre devrait encore y être. Une fois là bas, nous pourrons nous séparer.\n\nTerenthis va vouloir que vous lui racontiez immédiatement ce qui s'est passé, vous irez donc à Auberdine dès que nous serons sortis vivants d'ici.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N ! Je suis heureux de voir que vous avez réussi. En aidant Volcor, vous m'avez rendu la foi : nous surmonterons les défis qui nous attendent à Sombrivage et au-delà. ",
+        "93f74d5ff9a2357e227b": "Ça va, $N. Sortons de là. Nous nous fraierons un passage jusqu'à la route ; Griffe-sinistre devrait encore y être. Une fois là bas, nous pourrons nous séparer.\n\nTerenthis va vouloir que vous lui racontiez immédiatement ce qui s'est passé, vous irez donc à Auberdine dès que nous serons sortis vivants d'ici."
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "Protéger Volcor jusqu'à la route puis aller voir Terenthis à Auberdine.",
       "title": "Évasion par la force",
@@ -204,6 +316,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -225,6 +349,10 @@
     },
     "hrHR": {
       "description": "U redu, {name}, onda silom. Krenimo čim budeš spreman. Probit ćemo se do ceste; Grimclaw bi još trebao biti ondje. Tamo se možemo razići.\n\nTerenthis će odmah htjeti čuti tvoju stranu priče, zato se nakon bijega uputi u Auberdine.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Drago mi je što si se uspješno vratio. Tvoja pomoć Volcoru dala mi je vjeru da možemo svladati izazove koji nas čekaju ovdje u Darkshoreu i drugdje.",
+        "93f74d5ff9a2357e227b": "U redu, $N, poslužit ćemo se silom. Krenimo čim budeš spreman. Probit ćemo se do ceste, ondje bi još trebao biti Grimclaw. Tamo se možemo razdvojiti.$B$BTerenthis će odmah htjeti čuti tvoju verziju priče, pa kreni u Auberdine kad izađemo odavde."
+      },
       "eventObjectiveLabel": "Pomozi Volcoru stići do ceste",
       "summary": "Štiti Volcora dok ne stignete do ceste, a zatim razgovaraj s Terenthisom u Auberdineu.",
       "title": "Bijeg silom",
@@ -235,6 +363,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "622855d237bb2c48894b8da7881a0688e6a87b4544584565e438c53d27a875a0"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -259,6 +397,10 @@
     },
     "itIT": {
       "description": "D'accordo, {name}, useremo la forza. Andiamocene appena vuoi cominciare. Ci apriremo la strada combattendo fino alla strada: Grimclaw dovrebbe essere ancora lì. Una volta arrivati potremo separarci.\n\nTerenthis vorrà sentire subito la tua versione della storia, quindi vai ad Auberdine quando saremo usciti da qui.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Sono lieto di vederti tornare con successo. Il tuo aiuto a Volcor mi ha dato fiducia nella nostra capacità di superare le sfide che ci attendono qui a Rivafosca e oltre.",
+        "93f74d5ff9a2357e227b": "D'accordo, $N, useremo la forza. Usciamo da qui appena sei pronto. Combatteremo fino alla strada: Grimclaw dovrebbe essere ancora lì. Una volta arrivati, potremo separarci.$B$BTerenthis vorrà subito sentire la tua versione dei fatti, quindi dirigiti ad Auberdine dopo che saremo usciti."
+      },
       "eventObjectiveLabel": "Aiuta Volcor a raggiungere la strada",
       "summary": "Proteggi Volcor finché non raggiungete la strada, poi parla con Terenthis ad Auberdine.",
       "title": "Fuggire con la forza",
@@ -269,6 +411,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "622855d237bb2c48894b8da7881a0688e6a87b4544584565e438c53d27a875a0"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -293,6 +445,10 @@
     },
     "koKR": {
       "description": "그래요, 그렇게 합시다. 일단 준비가 되는 대로 즉시 이곳을 빠져나간 다음, 적진을 뚫고 그림클로가 기다리고 있는 길까지 가는 거요. 그곳에 이르면 각자 가도록 합시다.\n\n테렌디스님께서 그대의 얘기를 듣고 싶어할 테니 이곳을 빠져나간 다음 아우버다인으로 곧장 가도록 하시오.",
+      "dialogue": {
+        "8038edafd49b13dce677": "무사히 돌아와 줘서 기쁘군. 그대가 볼코르를 도와준 걸 보니 앞으로 이 어둠의 해안과 그 밖의 다른 곳에서 겪게 될 다른 문제들도 잘 극복할 수 있으리란 믿음이 생기는구려.",
+        "93f74d5ff9a2357e227b": "그래요, 그렇게 합시다. 일단 준비가 되는 대로 즉시 이곳을 빠져나간 다음, 적진을 뚫고 그림클로가 기다리고 있는 길까지 가는 거요. 그곳에 이르면 각자 가도록 합시다.\n\n테렌디스님께서 그대의 얘기를 듣고 싶어할 테니 이곳을 빠져나간 다음 아우버다인으로 곧장 가도록 하시오."
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "길에 이를 때까지 볼코르를 보호한 다음 아우버다인에 있는 테렌디스와 대화하십시오.",
       "title": "무력 탈출",
@@ -302,6 +458,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -323,6 +491,10 @@
     },
     "plPL": {
       "description": "Dobrze, {name}, użyjemy siły. Wydostańmy się stąd, gdy tylko będzie można ruszać. Przebijemy się do drogi. Grimclaw powinien nadal tam być. Na miejscu nasze drogi mogą się rozejść.\n\nTerenthis natychmiast zechce usłyszeć twoją wersję wydarzeń, więc po wydostaniu się stąd udaj się do Auberdine.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Cieszę się, że wracasz po udanej wyprawie. Pomoc udzielona Volcorowi dała mi wiarę, że pokonamy wyzwania stojące przed nami tutaj, w Darkshore, i poza nim.",
+        "93f74d5ff9a2357e227b": "Dobrze, $N, użyjemy siły. Wyruszmy, gdy tylko będzie można. Przebijemy się do drogi, gdzie Grimclaw powinien nadal czekać. Tam się rozstaniemy.$B$BTerenthis zechce natychmiast usłyszeć twoją wersję wydarzeń, więc po wyjściu stąd udaj się do Auberdine."
+      },
       "eventObjectiveLabel": "Pomóż Volcorowi dotrzeć do drogi",
       "summary": "Chroń Volcora aż do dotarcia do drogi, a następnie porozmawiaj z Terenthisem w Auberdine.",
       "title": "Ucieczka siłą",
@@ -333,6 +505,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "622855d237bb2c48894b8da7881a0688e6a87b4544584565e438c53d27a875a0"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -357,6 +539,10 @@
     },
     "ptBR": {
       "description": "Muito bem, {name}, que seja pela força. Vamos sair daqui assim que você estiver pronto. Vamos tentar seguir pela estrada... Garratroz ainda deve estar lá. Quando chegarmos, podemos nos separar.\n\nTerenthis vai querer ouvir sua versão da história imediatamente, então vá para Auberdine assim que sairmos daqui.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Folgo em vê-la em segurança novamente. A ajuda que você deu a Volcor reacendeu minhas esperanças de superar os desafios que temos enfrentado aqui na Costa Negra e em outras partes.",
+        "93f74d5ff9a2357e227b": "Muito bem, $N, que seja pela força. Vamos sair daqui assim que você estiver pronto. Vamos tentar seguir pela estrada... Garratroz ainda deve estar lá. Quando chegarmos, podemos nos separar.\n\nTerenthis vai querer ouvir sua versão da história imediatamente, então vá para Auberdine assim que sairmos daqui."
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "Proteja Volcor até vocês alcançarem a estrada, então fale com Terenthis em Auberdine.",
       "title": "Fuga difícil",
@@ -366,6 +552,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -387,6 +585,10 @@
     },
     "ruRU": {
       "description": "Ладно, {name}, силой так силой. Давайте убираться отсюда, как только вы будете готовы. Мы пробьемся к дороге – Мрачнокоготь должен все еще ждать. А там мы уже сможем разделиться.\n\nТерентис сразу же захочет услышать ваш рассказ, поэтому вы направитесь в Аубердин, когда мы отсюда выберемся.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Рад видеть вас живым и здоровым. Ваша помощь Волкору вселила в меня веру, что мы сможем преодолеть трудности, с которыми сталкиваемся на Темном Берегу и за его пределами.",
+        "93f74d5ff9a2357e227b": "Ладно, $N, силой так силой. Давайте убираться отсюда, как только вы будете готовы. Мы пробьемся к дороге – Мрачнокоготь должен все еще ждать. А там мы уже сможем разделиться.\n\nТерентис сразу же захочет услышать ваш рассказ, поэтому вы направитесь в Аубердин, когда мы отсюда выберемся."
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "Защищайте Волкора, пока не доберетесь до дороги, а затем поговорите с Терентисом в Аубердине.",
       "title": "Спасение с помощью силы",
@@ -396,6 +598,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -417,6 +631,10 @@
     },
     "svSE": {
       "description": "Nåväl, {name}, då blir det våld. Låt oss ta oss härifrån så fort du är redo. Vi slåss oss ner till vägen – Grimclaw bör fortfarande vara där. När vi väl är framme kan vi gå skilda vägar.\n\nTerenthis vill genast höra din version av berättelsen, så ta dig till Auberdine när vi har klarat oss härifrån.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Det gläder mig att se att du har återvänt välbehållen. Din hjälp till Volcor har gett mig tro på att vi kan övervinna utmaningarna som väntar oss här i Darkshore och bortom dess gränser.",
+        "93f74d5ff9a2357e227b": "Nåväl, $N, då använder vi våld. Låt oss ge oss av så snart du är redo. Vi kämpar oss ner till vägen, där Grimclaw borde vara kvar. Där kan vi skiljas åt.$B$BTerenthis vill genast höra din version av händelserna, så bege dig till Auberdine när vi kommit ut."
+      },
       "eventObjectiveLabel": "Hjälp Volcor till vägen",
       "summary": "Skydda Volcor tills ni når vägen och tala sedan med Terenthis i Auberdine.",
       "title": "Flykt med våld",
@@ -427,6 +645,16 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -453,6 +681,10 @@
     },
     "trTR": {
       "description": "Pekâlâ, {name}, madem zorla olacak. Hazır olur olmaz buradan çıkalım. Dövüşerek yola kadar ineceğiz -- Grimclaw hâlâ orada olmalı. Oraya varınca yollarımızı ayırabiliriz.\n\nTerenthis hikâyeyi senin ağzından hemen duymak isteyecektir, o yüzden buradan çıktıktan sonra Auberdine'e git.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Başarıyla döndüğünü görmek beni sevindirdi. Volcor'a yardımın, burada Darkshore'da ve ötesinde karşılaştığımız zorlukların üstesinden gelebileceğimize inanmamı sağladı.",
+        "93f74d5ff9a2357e227b": "Pekâlâ, $N, güç kullanacağız. Hazır olur olmaz buradan çıkalım. Savaşarak yola ineceğiz; Grimclaw hâlâ orada olmalı. Oraya varınca yollarımız ayrılabilir.$B$BTerenthis olayın senin tarafından anlatımını hemen duymak isteyecek, bu yüzden buradan çıktıktan sonra Auberdine'e git."
+      },
       "eventObjectiveLabel": "Volcor'un yola ulaşmasına yardım et",
       "summary": "Yola ulaşana dek Volcor'u koru, sonra Auberdine'deki Terenthis ile konuş.",
       "title": "Zorla Kaçış",
@@ -463,6 +695,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -487,6 +729,10 @@
     },
     "ukUA": {
       "description": "Гаразд, {name}, застосуємо силу. Виберемося звідси, щойно будеш готовий. Проб'ємося до дороги — Похмуропазур іще має бути там. Діставшись туди, розійдемося.\n\nТерентіс захоче негайно почути твою розповідь, тож після втечі прямуй до Аубердіна.",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N! Радий бачити, що ти успішно повернувся. Твоя допомога Волкору дала мені віру, що ми зможемо подолати труднощі, які стоять перед нами тут, на Темних берегах, і за їхніми межами.",
+        "93f74d5ff9a2357e227b": "Гаразд, $N, діятимемо силою. Вирушаймо звідси, щойно будеш готовий. Проб'ємося до дороги — Грімклоу мав би ще бути там. А тоді зможемо розійтися.$B$BТерентіс захоче негайно почути твою версію подій, тож прямуй до Аубердіна, коли ми виберемося звідси."
+      },
       "eventObjectiveLabel": "Допоможіть Волкору дістатися до дороги",
       "summary": "Захищайте Волкора, поки не дійдете до дороги, після чого поговоріть з Терентісом в Аубердіні.",
       "title": "Втеча з боєм",
@@ -497,6 +743,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "622855d237bb2c48894b8da7881a0688e6a87b4544584565e438c53d27a875a0"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -523,6 +779,10 @@
     },
     "zhCN": {
       "description": "很好，{name}，就是这样，让我们一起冲出去。我们要杀出一条到锐爪身边的路，到了那里之后我们可以分开行动。\n\n不过我想特伦希斯一定会听你来讲述这次惊心动魄的逃亡，所以在我们活着离开这里以后，别忘了尽快去一趟奥伯丁。",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N!很高兴看见你能安全返回。你对沃科尔提供的帮助使我相信，我们最终可以战胜在黑海岸或是其他任何地方所遇到的一切挑战。\n",
+        "93f74d5ff9a2357e227b": "很好，$N，就是这样，让我们一起冲出去。我们要杀出一条到锐爪身边的路，到了那里之后我们可以分开行动。\n\n不过我想特伦希斯一定会听你来讲述这次惊心动魄的逃亡，所以在我们活着离开这里以后，别忘了尽快去一趟奥伯丁。"
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "保护沃科尔离开，然后去和奥伯丁的特伦希斯谈一谈。",
       "title": "杀出重围",
@@ -532,6 +792,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -553,6 +825,10 @@
     },
     "zhTW": {
       "description": "很好，{name}，就是這樣，讓我們一起衝出去。我們要殺出一條到銳爪身邊的路，到了那裡之後我們可以分開行動。\n\n不過我想特倫希斯一定會聽你來講述這次驚心動魄的逃亡，所以在我們活著離開這裡以後，別忘了儘快去一趟奧伯丁。",
+      "dialogue": {
+        "8038edafd49b13dce677": "$N!很高興看見你能安全返回。你對沃科爾提供的幫助使我相信，我們最終可以戰勝在黑海岸或是其它任何地方所遇到的一切挑戰。",
+        "93f74d5ff9a2357e227b": "很好， $N ，就是這樣，讓我們一起衝出去。我們要殺出一條到銳爪身邊的路，到了那裡之後我們可以分開行動。\n\n不過我想特倫希斯一定會聽你來講述這次驚心動魄的逃亡，所以在我們活著離開這裡以後，別忘了儘快去一趟奧伯丁。"
+      },
       "eventObjectiveLabel": "Help Volcor to the road",
       "summary": "保護沃科爾離開，然後去和奧伯丁的特倫希斯談話。",
       "title": "殺出重圍",
@@ -562,6 +838,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.8038edafd49b13dce677": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.93f74d5ff9a2357e227b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

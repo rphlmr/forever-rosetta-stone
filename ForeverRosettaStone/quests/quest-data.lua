@@ -157,7 +157,7 @@ local function GetPlayerLabel(locale, kind, token, sex)
     end
 end
 
-function Addon:FormatQuestText(text, questID, targetLocale)
+function Addon:FormatQuestText(text, questID, targetLocale, allowSentenceSelectors)
     if type(text) ~= "string" or not text:find("%S") then return nil end
 
     local nativeRace, raceToken = UnitRace("player")
@@ -183,10 +183,12 @@ function Addon:FormatQuestText(text, questID, targetLocale)
         return value
     end
 
+    local genderSelector = allowSentenceSelectors and "%$[Gg]([^:;$\n]+):([^:;$\n]+);"
+        or "%$[Gg]([^:;$\n%.!?]+):([^:;$\n%.!?]+);"
     local formatted = text:gsub("%$[Nn]%f[^%a]", function() return replace(replacements.name) end)
         :gsub("%$[Rr]%f[^%a]", function() return replace(replacements.race) end)
         :gsub("%$[Cc]%f[^%a]", function() return replace(replacements.class) end)
-        :gsub("%$[Gg]([^:;$\n%.!?]+):([^:;$\n%.!?]+);", function(male, female)
+        :gsub(genderSelector, function(male, female)
             if sex == 2 then return male end
             if sex == 3 then return female end
             incomplete = true

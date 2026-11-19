@@ -17,6 +17,15 @@ from tools.build.runtime_catalog import get_has_ai_translation, get_tooltip_sour
 
 
 class TranslationWorkTests(unittest.TestCase):
+    def test_dialogue_selectors_can_contain_complete_sentences(self):
+        token = work['get_quest_tokens']
+        source = '$gWelcome, sir. Need help?:Hello! Need help?; $N'
+        translated = '$gBonjour, monsieur. Besoin d’aide ?:Bonjour ! Besoin d’aide ?; $N'
+        self.assertEqual(token(source, allow_sentence_selectors=True),
+                         token(translated, allow_sentence_selectors=True))
+        with self.assertRaisesRegex(ValueError, 'Malformed quest gender selector'):
+            token(source)
+
     def test_quest_gender_controls_do_not_hide_technical_tokens(self):
         token = work['get_quest_tokens']
         self.assertEqual(token('Hello {name}'), token('Bonjour $gami:amie; {name}'))

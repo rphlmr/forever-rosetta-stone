@@ -1,8 +1,28 @@
 {
   "areaId": 139,
+  "dialogueContexts": {
+    "04f5ab4234bcead7d192": {
+      "lineId": "q:9191:progress",
+      "npcId": 16283,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "d8133397154c404429ff": {
+      "lineId": "q:9191:complete",
+      "npcId": 16283,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Držitel tohoto přípisu má po dokončení zadané pracovní zakázky nárok na odměnu ve formě odznaku dle vlastního výběru.\n\nPracovní zakázka TR-devět tisíc devět set devadesát devět:\n\nOsm tašek z runové látky.\n\nVšechny splněné zakázky je nutné doručit karavanníkovi Stonebruiserovi do Light's Hope Chapel v Eastern Plaguelands.\n\nSmlouva je neplatná, pokud byla pozměněna nebo poškozena.\n\n– Velitel depeší Metz, Argent Dawn",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Plníš pracovní zakázku, $C?",
+        "d8133397154c404429ff": "U všech tkaniček! Je to to, co si myslím? Vojáci si neustále stěžovali na nedostatek místa pro všechno, co v poli potřebují. Jeden mi dokonce nakreslil schéma, takový měkkota...$B$BTohle snad jejich nářek trochu utiší."
+      },
       "summary": "Doruč 8× Runecloth Bags a Craftsman's Writ - Runecloth Bag Packmasteru Stonebruiserovi do Light's Hope Chapel v Eastern Plaguelands.",
       "title": "Přípis řemeslníka – Runecloth Bag",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Indehaveren af dette dokument har ret til betaling i form af et insignie efter eget valg ved fuldførelse af den aftalte arbejdsordre.\n\nArbejdsordre TR-9999:\n\n8 Runecloth Bags.\n\nAlle fuldførte ordrer skal leveres til Packmaster Stonebruiser i Light's Hope Chapel i Eastern Plaguelands.\n\nKontrakten er ugyldig, hvis der er pillet ved den, eller den er beskadiget.\n\n-Dispatch Commander Metz, Argent Dawn",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Udfører du en arbejdsordre, $C?",
+        "d8133397154c404429ff": "Ved alle støvlestropper! Er det, hvad jeg tror? Soldaterne har klaget uafbrudt over manglen på plads til alt det, de behøver i felten. En af dem tegnede endda et diagram til mig, sikke en tøsedreng...$B$BDet her vil bestemt dæmpe noget af klageriet."
+      },
       "summary": "Lever 8 Runecloth Bags og Craftsman's Writ - Runecloth Bag - til Packmaster Stonebruiser ved Light's Hope Chapel i Eastern Plaguelands.",
       "title": "Håndværkerens anmodning - Runestoftaske",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "560537d7dc9aaed5c4d153a3dbb3900d30e4910fe2506a29913fa05ba49bb6d4"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Der Inhaber dieser Handwerksverfügung hat nach Erfüllung des Vertrags Anspruch auf eine Bezahlung in Form von frei wählbaren Insignien.\n\nVertragsnummer TR-9999:\n\n8 Runenstofftaschen.\n\nWas im Vertrag angefordert wurde, muss zu Rottenkommandant Stonebruiser bei der Kapelle des hoffnungsvollen Lichts in den östlichen Pestländern gebracht werden.\n\nIm Falle von Verzug oder Beschädigung der Ware ist der Vertrag als null und nichtig anzusehen.\n\n-Einsatzkommandant Metz, die Argentumdämmerung",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Ihr führt einen Auftrag aus, $C?",
+        "d8133397154c404429ff": "Heiliger Schnürsenkel! Ist es das, was ich denke? Unsere Soldaten beschweren sich immer wieder über den Mangel an Taschen, um ihre ganze Ausrüstung zu verstauen. Einer hat sogar seine Feldrationen in seinen Backen verstaut. . . verdammter Nager. \n \n Das wird die Gemüter bestimmt abkühlen. "
+      },
       "summary": "Bringt 8 Runenstofftaschen und die Handwerksverfügung für die Runenstofftaschen zu Rottenkommandant Stonebruiser bei der Kapelle des hoffnungsvollen Lichts in den östlichen Pestländern.",
       "title": "Handwerksverfügung - Runenstofftasche",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "The bearer of this writ is entitled to payment in the form of an insignia of their choice upon completion of the contracted work order.\n\nWork Order TR-9999:\n\n8 Runecloth Bags.\n\nAll filled orders should be delivered to Packmaster Stonebruiser at Light's Hope Chapel in the Eastern Plaguelands.\n\nContract is null and void if tampered with or damaged.\n\n-Dispatch Commander Metz, The Argent Dawn",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Filling a work order, $C?",
+        "d8133397154c404429ff": "Blessed bootstraps! Are those what I think they are? The troops have been complaining non-stop about the lack of storage space for all that is required while in the field. One of them even drew me a diagram - such a pansy...$B$BThese will definitely help alleviate some of the whining."
+      },
       "summary": "Deliver 8 Runecloth Bags and the Craftsman's Writ - Runecloth Bag - to Packmaster Stonebruiser at Light's Hope Chapel in the Eastern Plaguelands.",
       "title": "Craftsman's Writ - Runecloth Bag",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +183,10 @@
     },
     "esES": {
       "description": "Páguese al portador de esta libranza con una insignia de su elección, una vez completada la orden de trabajo contratada.\n\nOrden de trabajo TR-9999:\n\n8 bolsas de paño rúnico.\n\nTodas las órdenes completadas deben ser entregadas al maestro de manada Mazadura en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.\n\nEste contrato quedará anulado en caso de alteraciones o daños.\n\n-Comandante de despachos Metz, el Alba Argenta",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Llenando una orden de trabajo, $C?",
+        "d8133397154c404429ff": "¡Benditos arranques!  ¿Son esos lo que creo que son?  Las tropas se han quejado sin parar por la falta de espacio de almacenamiento para todo lo que se requiere en el campo.  Uno de ellos incluso me dibujó un diagrama, un pensamiento tan...\n\n Estos definitivamente ayudarán a aliviar algunos de los lloriqueos."
+      },
       "summary": "Entrega 8 bolsas de paño rúnico y la libranza del artesano –bolsa de paño rúnico– al maestro de manada Mazadura que está en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.",
       "title": "Libranza del artesano: bolsas de paño rúnico",
       "translationMetadata": {
@@ -115,6 +195,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +223,10 @@
     },
     "esMX": {
       "description": "Páguese al portador de esta libranza con una insignia de su elección, una vez completada la orden de trabajo contratada.\n\nOrden de trabajo TR-9999:\n\n8 bolsas de paño rúnico.\n\nTodas las órdenes completadas deben ser entregadas al maestro de manada Mazadura en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.\n\nEste contrato quedará anulado en caso de alteraciones o daños.\n\n-Comandante de envíos Metz, El Alba Argenta",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "¿Completando una orden de trabajo, $c?",
+        "d8133397154c404429ff": "¡Bendito seas! ¿Son esos lo que creo que son? Las tropas se han estado quejando sin parar por la falta de espacio de almacenamiento para todo lo que se requiere mientras están en el campo. Uno de ellos incluso me dibujó un diagrama...\n\nEstos definitivamente ayudarán a aliviar algunos de los lloriqueos."
+      },
       "summary": "Entrega 8 bolsas de paño rúnico y la libranza del artesano: bolsa de paño rúnico al maestro de manada Mazadura que está en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.",
       "title": "Libranza del artesano: bolsa de paño rúnico",
       "translationMetadata": {
@@ -139,6 +235,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +263,10 @@
     },
     "frFR": {
       "description": "Le porteur de la présente commission est en droit de recevoir comme payement l’insigne de son choix à la livraison des articles ci-dessous.\n\nBon de commande CT-9999 :\n\n8 sacs en étoffe runique.\n\nToute commission honorée doit être livrée au maître-fourrier Stonebruiser, à la chapelle de l’Espoir de Lumière dans les Maleterres de l’est.\n\nLe présent contrat est nul et non avenu s’il est modifié ou endommagé.\n\n-Commandant d’ordonnance Metz, Aube d’argent",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Vous êtes là pour honorer une commission, $C ?",
+        "d8133397154c404429ff": "Par mes sangles de bottes ! C’est bien ce que je crois ? Les hommes n’arrêtent pas de se plaindre du manque d’espace de stockage pour tout ce dont ils ont besoin sur le terrain. Y’en a même un qui m’a fait un dessin, quelle misère. . . \n \n Avec ça, le niveau de pleurnicherie devrait baisser considérablement. "
+      },
       "summary": "Livrer 8 Sacs en étoffe runique et la Commission d’artisan - Sacs en étoffe runique au maître-fourrier Stonebruiser, à la chapelle de l’Espoir de Lumière dans les Maleterres de l’est.",
       "title": "Commission d'artisan - Sacs en étoffe runique",
       "translationMetadata": {
@@ -163,6 +275,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +303,10 @@
     },
     "hrHR": {
       "description": "Donositelj ovog naloga ima pravo na plaćanje u obliku insignije po izboru nakon izvršenja ugovorene radne narudžbe.\n\nRadna narudžba TR-9999:\n\n8 Runecloth Bags.\n\nSve ispunjene narudžbe treba dostaviti Packmasteru Stonebruiseru u Light's Hope Chapelu u Eastern Plaguelandsu.\n\nUgovor je ništavan ako je mijenjan ili oštećen.\n\n-Dispatch Commander Metz, Argent Dawn",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Izvršavaš radni nalog, $C?",
+        "d8133397154c404429ff": "Svetih mi čizama! Je li to ono što mislim? Vojnici se neprestano žale da nemaju mjesta za sve što im treba na terenu. Jedan mi je čak nacrtao dijagram, kakva nježna dušica...$B$BOvo će zasigurno malo utišati njihovo kukanje."
+      },
       "summary": "Dostavi 8 Runecloth Bags i obrtnički nalog za Runecloth Bag Packmasteru Stonebruiseru u Light's Hope Chapelu u Eastern Plaguelandsu.",
       "title": "Obrtnikov nalog - torba od runotkanine",
       "translationMetadata": {
@@ -188,6 +316,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "560537d7dc9aaed5c4d153a3dbb3900d30e4910fe2506a29913fa05ba49bb6d4"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +344,10 @@
     },
     "itIT": {
       "description": "Il portatore di questo mandato ha diritto a un pagamento sotto forma di un'insegna a propria scelta al completamento della commessa di lavoro concordata.\n\nCommessa di lavoro TR-9999:\n\n8 Borse di Telarunica.\n\nTutte le commesse completate devono essere consegnate al responsabile dei rifornimenti Stonebruiser alla Cappella della Luce nelle Terre Infette Orientali.\n\nIl contratto è nullo se alterato o danneggiato.\n\n-Comandante degli incarichi Metz, Alba d'Argento",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Devi consegnare un ordine di lavoro, avventuriero?",
+        "d8133397154c404429ff": "Per tutti i lacci benedetti! Sono quello che penso? Le truppe non fanno che lamentarsi di non avere abbastanza spazio per tutto quello che serve sul campo. Uno di loro mi ha persino fatto un disegnino... che mollaccione...\n\nQueste aiuteranno di sicuro a far calare un po' di piagnistei."
+      },
       "summary": "Consegna 8 borse di telarunica e la richiesta dell'artigiano per le borse di telarunica al responsabile delle scorte Stonebruiser alla Light's Hope Chapel, nelle Eastern Plaguelands.",
       "title": "Mandato dell'Artigiano - Borsa di Telarunica",
       "translationMetadata": {
@@ -215,6 +357,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "560537d7dc9aaed5c4d153a3dbb3900d30e4910fe2506a29913fa05ba49bb6d4"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -233,6 +387,10 @@
     },
     "koKR": {
       "description": "이 계약서를 가져가는 자는 아래 작업을 완수하는 조건으로 원하는 휘장을 보상으로 받을 수 있다.\n\n작업 주문 번호 TR-9999:\n\n룬매듭 가방 8개\n\n완성된 물건은 모두 동부 역병지대, 희망의 빛 예배당에 있는 짐말주인 스톤브루저에게 전달해야 한다.\n\n물건이 변형되거나 파손된 경우 이 계약은 무효로 처리된다.\n\n-은빛 여명회 파견사령관 메츠",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "작업 주문을 완수했나?",
+        "d8133397154c404429ff": "이렇게 기쁜 소식이! 내가 주문한 물건이 맞나? 그동안 전장에 나간 병사들로부터 물건을 집어넣을 공간이 크게 부족하다는 불만이 끊임없이 제기되어 왔네. 심지어 어떤 녀석은 가방 그림까지 그려서 보냈다니까! 계집애 같은 놈...\n\n흠, 이 정도면 불만이 많이 줄겠군."
+      },
       "summary": "동부 역병지대, 희망의 빛 예배당에 있는 짐말주인 스톤브루저에게 룬매듭 가방 8개와 장인의 계약서: 룬매듭 가방을 가져가야 합니다.",
       "title": "장인의 계약서: 룬매듭 가방",
       "translationMetadata": {
@@ -241,6 +399,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +427,10 @@
     },
     "plPL": {
       "description": "Posiadacz tego zlecenia ma prawo do zapłaty w postaci wybranego insygnium po wykonaniu zamówionej pracy.\n\nZlecenie TR-9999:\n\n8 toreb z runicznego płótna.\n\nWszystkie wykonane zamówienia należy dostarczyć pakmistrzowi Stonebruiserowi w Light's Hope Chapel w Eastern Plaguelands.\n\nUmowa jest nieważna w razie ingerencji lub uszkodzenia.\n\n-Dowódca ekspedycji Metz, Argent Dawn",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Realizujesz zamówienie, $C?",
+        "d8133397154c404429ff": "Na święte buty! Czy to jest to, co myślę? Żołnierze bez przerwy narzekali na brak miejsca na wszystko, czego potrzebują w terenie. Jeden nawet narysował mi schemat, co za mięczak...$B$BTo z pewnością trochę uciszy ich marudzenie."
+      },
       "summary": "Dostarcz 8 toreb z runicznego płótna oraz zlecenie rzemieślnika na torbę z runicznego płótna pakmistrzowi Stonebruiserowi w Light's Hope Chapel w Eastern Plaguelands.",
       "title": "Zlecenie rzemieślnika: torba z runicznego płótna",
       "translationMetadata": {
@@ -266,6 +440,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "560537d7dc9aaed5c4d153a3dbb3900d30e4910fe2506a29913fa05ba49bb6d4"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -284,6 +468,10 @@
     },
     "ptBR": {
       "description": "O portador desta escritura tem direito a pagamento na forma de uma insígnia à sua escolha após o aviamento da ordem de serviço contratada.\n\nOrdem de serviço TR-9999:\n\n8 bolsas de runatrama.\n\nTodas as ordens aviadas devem ser entregues ao Caravaneiro Esmagapedra na Capela Esperança da Luz, nas Terras Pestilentas Orientais.\n\nO contrato é invalidado e anulado em caso de adulteração ou danos.\n\nAss: Comandante de Expedição Metz, da Aurora Argêntea",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Cumprindo uma ordem de serviço, $C?",
+        "d8133397154c404429ff": "Pelas alças das minhas botas! É o que estou pensando? As tropas não param de reclamar da falta de espaço para tudo que precisam levar ao campo. Um deles até desenhou um diagrama para mim, que molenga...$B$BIsso certamente vai diminuir um pouco a choradeira."
+      },
       "summary": "Leve 8 Bolsas de Runatrama e a Escritura do Artífice - Bolsa de Runatrama - para o Caravaneiro Esmagapedra na Capela Esperança da Luz, que fica nas Terras Pestilentas Orientais.",
       "title": "Escritura do Artífice - bolsa de runatrama",
       "translationMetadata": {
@@ -292,6 +480,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -308,6 +506,10 @@
     },
     "ruRU": {
       "description": "Податель сего имеет право на получение награды в форме значков отличия по своему выбору в случае выполнения задания, указанного в контракте.\n\nЗаказ-наряд TR-9999:\n\n8 сумок из рунной ткани.\n\nВыполненные заказы доставлять караванщику Камнетесу в Часовню Последней Надежды в Восточные Чумные земли.\n\nКонтракт признается недействительным в случае, если бумага была подделана или тем или иным образом испорчена.\n\nПодпись: Командир Метц, Серебряный Рассвет",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Заказ выполнен, $C?",
+        "d8133397154c404429ff": "Отлично. Теперь наши воины смогут брать с собой больше личных запасов."
+      },
       "summary": "Доставьте 8 сумок из рунной ткани и соответствующее задание мастера караванщику Камнетесу в Часовню Последней Надежды в Восточные Чумные земли.",
       "title": "Задание мастера – сумка из рунной ткани",
       "translationMetadata": {
@@ -316,6 +518,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +546,10 @@
     },
     "svSE": {
       "description": "Innehavaren av detta kontrakt har rätt till betalning i form av en valfri insignie när beställningen har fullgjorts.\n\nBeställning TR-9999:\n\n8 runtygsväskor.\n\nAlla fullgjorda beställningar ska lämnas till packmästare Stonebruiser vid Light's Hope Chapel i Eastern Plaguelands.\n\nKontraktet är ogiltigt om det ändras eller skadas.\n\n-Expeditionsbefälhavare Metz, Argent Dawn",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Utför du en arbetsorder, $C?",
+        "d8133397154c404429ff": "Vid mina stövelstroppar! Är det vad jag tror? Trupperna har klagat oavbrutet över bristen på plats för allt de behöver i fält. En av dem ritade till och med ett diagram åt mig, vilken vekling...$B$BDet här kommer säkert att dämpa gnället lite."
+      },
       "summary": "Leverera 8 runtygsväskor och hantverkarordern för runtygsväska till Packmaster Stonebruiser vid Light's Hope Chapel i Eastern Plaguelands.",
       "title": "Hantverksorder – Runtygsväska",
       "translationMetadata": {
@@ -341,6 +559,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "560537d7dc9aaed5c4d153a3dbb3900d30e4910fe2506a29913fa05ba49bb6d4"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -359,6 +587,10 @@
     },
     "trTR": {
       "description": "Bu belgenin sahibi, sözleşmede belirtilen iş emrini tamamladığında seçtiği bir nişanla ödeme almaya hak kazanır.\n\nİş Emri TR-9999:\n\n8 Runecloth Bag.\n\nTamamlanan bütün siparişler Eastern Plaguelands'teki Light's Hope Chapel'da bulunan Packmaster Stonebruiser'a teslim edilmelidir.\n\nÜzerinde oynanır veya hasar görürse sözleşme geçersizdir.\n\n-Sevk Komutanı Metz, The Argent Dawn",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Bir iş emrini mi yerine getiriyorsun, $C?",
+        "d8133397154c404429ff": "Kutsal çizme bağları! Bunlar düşündüğüm şeyler mi? Askerler, arazide ihtiyaç duydukları her şeyi koyacak yer olmamasından durmadan yakınıyordu. Hatta biri bana şema bile çizdi, ne kadar da narin...$B$BBunlar sızlanmalarını biraz olsun azaltacak."
+      },
       "summary": "8 Rün Kumaşı Çanta'yı ve Zanaatkârın Belgesi - Rün Kumaşı Çanta'yı Eastern Plaguelands'deki Light's Hope Chapel'da bulunan Yük Ustası Stonebruiser'a teslim et.",
       "title": "Zanaatkâr Siparişi - Rün Bezi Çantası",
       "translationMetadata": {
@@ -368,6 +600,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "560537d7dc9aaed5c4d153a3dbb3900d30e4910fe2506a29913fa05ba49bb6d4"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -386,6 +628,10 @@
     },
     "ukUA": {
       "description": "Пред'явник цього замовлення має право на отримання оплати у вигляді відзнаки за власним вибором після виконання роботи.\n\nЗамовлення ШВ-9999:\n\n8 сумок з рунічного полотна.\n\nВиконане замовлення має бути доставлене в'юннику Камнелупу в каплицю Надії Світла, що в Східних Зачумлених землях.\n\nЗамовлення недійсне, якщо його підроблено або пошкоджено.\n\n-Командир зв'язку Метц, Сріблястий Світанок",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "Виконуєш робоче замовлення, $C?",
+        "d8133397154c404429ff": "Святі шнурки! Це те, про що я думаю? Вояки без упину скаржилися, що їм бракує місця для всього потрібного в поході. Один навіть намалював мені схему, от ніженька...$B$BЦе неодмінно трохи втихомирить їхнє скиглення."
+      },
       "summary": "Доставте 8 сумок з рунічного полотна та замовлення майстра — сумка з рунічного полотна до в'юнника Камнелупа в каплицю Надії Світла, що в Східних Зачумлених землях.",
       "title": "Замовлення майстра — сумка з рунічного полотна",
       "translationMetadata": {
@@ -396,6 +642,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "560537d7dc9aaed5c4d153a3dbb3900d30e4910fe2506a29913fa05ba49bb6d4"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +672,10 @@
     },
     "zhCN": {
       "description": "工匠文书的持有者在完成订单后可以挑选一枚徽记作为奖励。\n\n订单TR-9999：\n\n8个符文布背包。\n\n所有的成品应送到东瘟疫之地圣光之愿礼拜堂的马队管理者布鲁斯·石锤处。\n\n物品若有任何损坏，订单无效。\n\n银色黎明物资官员梅兹",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "完成工作令了吗，$C?",
+        "d8133397154c404429ff": "我的天啊，这真的是那个吗?你知道吗，这些士兵们每天都不停在跟我抱怨说都没有空间来装军备品，甚至还有一位士兵画了一张图来给我看-真是些没用的家伙……\n\n有了这些包包一定可以让我的耳根子清静一下。\n"
+      },
       "summary": "将8个符文布背包和工匠文书 - 符文布背包交给东瘟疫之地圣光之愿礼拜堂的马队管理者布鲁斯·石锤。",
       "title": "工匠文书 - 符文布背包",
       "translationMetadata": {
@@ -424,6 +684,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +712,10 @@
     },
     "zhTW": {
       "description": "這張令狀的持有人在完成訂定的工作後會以他們選擇的徽記形式得到獎賞。\n\n工作令TR-9999:\n\n8個符文布包。\n\n所有完成的工作令都要送到東瘟疫之地給聖光之願禮拜堂的軍需籌備官·石漢 。\n\n一旦契約遭到損壞或篡改一律視為無效。\n\n-發送指揮官梅茲，銀色黎明",
+      "dialogue": {
+        "04f5ab4234bcead7d192": "完成工作令了嗎，$C?",
+        "d8133397154c404429ff": "我的天啊，這真的是那個嗎?你知道嗎，這些士兵們每天都不停在跟我抱怨說都沒有空間來裝軍備品，甚至還有一位士兵畫了一張圖來給我看-真是些沒用的傢伙……\n\n有了這些包包一定可以讓我的耳根子清靜一下。"
+      },
       "summary": "將8個符文布背包和工匠文書 - 符文布背包交給東瘟疫之地聖光之願禮拜堂的馬隊管理者布魯斯·石錘。",
       "title": "工匠令狀 - 符文布包",
       "translationMetadata": {
@@ -448,6 +724,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.04f5ab4234bcead7d192": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d8133397154c404429ff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

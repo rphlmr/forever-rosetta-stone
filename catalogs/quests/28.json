@@ -1,7 +1,35 @@
 {
+  "dialogueContexts": {
+    "31dc5b7210cf62ec5ce0": {
+      "lineId": "q:28:accept",
+      "npcId": 11802,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "9b290373ced4bfccf2be": {
+      "lineId": "q:28:progress",
+      "npcId": 11799,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "dff8ff1568c3c01cfda3": {
+      "lineId": "q:28:complete",
+      "npcId": 11799,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Při své první zkoušce prohledej hlubiny jezera Elune'ara a najdi Shrine Bauble. Velmi rychle se rozpadá, proto s ním bez prodlení spěchej ke Shrine of Remulos. Použij předmět u svatyně a pak si tam promluv s Tajarri; je jednou z nejdůvěryhodnějších strážkyň v Moonglade.\n\nNa splnění tohoto úkolu máš jen vymezený čas a je možné, že budeš soutěžit s ostatními druidy, kteří po těchto předmětech pátrají také. Duševní i tělesná obratnost budou pro tvůj úspěch klíčové.\n\nHodně štěstí, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Při první zkoušce prohledej hlubiny jezera Elune'ara a najdi ozdobu svatyně. Rychle se rozpadá, proto s ní pospíchej ke svatyni Remulose. Použij ji u svatyně a promluv si tam s Tajarri, jednou z nejdůvěryhodnějších strážkyň Moonglade.$B$BNa splnění úkolu máš omezený čas a možná budeš soupeřit s dalšími druidy, kteří ozdoby hledají. Duševní i tělesná obratnost budou klíčem k úspěchu.$B$BHodně štěstí, $N.",
+        "9b290373ced4bfccf2be": "K dokončení zkoušky jezera musíš použít ozdobu svatyně v hranicích této svatyně. Dokud tak neučiníš, zkouška není dokončena a hrozí neúspěch.",
+        "dff8ff1568c3c01cfda3": "Nuže, vypadá to, že další druid úspěšně dokončil zkoušku jezera! Dobrá práce, mladý příteli.$B$BJak jsem řekla, jmenuji se Tajarri. Je mou povinností a výsadou sloužit jako strážkyně Moonglade a zejména této svatyně. Strážce Remulos vede Cenarijský kruh v ochraně přírody a rovnováhy a jeho svatyně je trvalou poctou tomuto úsilí. Použitím ozdoby zde vzdáváš hold významu tohoto místa pro Kruh."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -18,6 +46,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "eee7428db6c56ab9332cacee8233475fb8d52790312fd224d9cd7a6edf99640a"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +85,11 @@
     },
     "daDK": {
       "description": "Til din første prøve skal du søge i Lake Elune'aras dyb efter et helligdomssmykke. Det forgår hurtigt, så skynd dig til Shrine of Remulos med det. Brug smykket ved helligdommen, og tal derefter med Tajarri der. Hun er en af Moonglades mest betroede vogtere.\n\nDu har kun en begrænset tid til at løse opgaven, og du kan komme til at konkurrere med andre druider, der også leder efter smykker. Både åndelig og fysisk smidighed bliver afgørende for, om du klarer dig.\n\nHeld og lykke, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Til din første prøve skal du søge i dybet af Elune'ara-søen efter en helligdomssmykke. Det forgår hurtigt, så skynd dig med det til Remulos' helligdom. Brug smykket ved helligdommen og tal derefter med Tajarri der; hun er en af Moonglades mest betroede vogtere.$B$BDu har kun begrænset tid til opgaven og kan konkurrere med andre druider, der også søger smykker. Mental og fysisk smidighed er afgørende for din succes.$B$BHeld og lykke, $N.",
+        "9b290373ced4bfccf2be": "For at fuldføre søens prøve må du bruge helligdomssmykket inden for helligdommens grænser. Indtil da er prøven ikke fuldført og risikerer at mislykkes.",
+        "dff8ff1568c3c01cfda3": "Nå, det ser ud til, at endnu en druide har fuldført søens prøve! Godt klaret, min unge ven.$B$BSom sagt hedder jeg Tajarri. Det er min pligt og mit privilegium at tjene som vogter for Moonglade og især denne helligdom. Vogter Remulos leder Cenarion Circle i bevarelsen af natur og balance, og hans helligdom er en varig hyldest til dette. Ved at bruge smykket her anerkender du stedets betydning for cirklen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +106,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "eee7428db6c56ab9332cacee8233475fb8d52790312fd224d9cd7a6edf99640a"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +144,11 @@
     },
     "deDE": {
       "description": "Als Eure erste Prüfung müsst Ihr in den Tiefen des Elune'ara Sees nach einem Schreinschmuckstück suchen. Es zerfällt schnell, daher solltet Ihr Euch mit größter Eile zum Schrein von Remulos begeben. Benutzt das Schmuckstück am Schrein und sprecht dann dort mit Tajarri; sie ist eine der vertrauenswürdigsten Aufseherinnen von Moonglade.\n\nIhr habt nur eine gewisse Zeitspanne für diese Aufgabe zur Verfügung, und Ihr könntet in Konkurrenz zu anderen Druiden stehen, die ebenfalls nach Schmuckstücken suchen. Geistiges wie körperliches Geschick wird für Euren Erfolg unabdingbar sein.\n\nViel Glück, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Als Eure erste Prüfung müsst Ihr in den Tiefen des Elune'ara Sees nach einem Schreinschmuckstück suchen. Es zerfällt schnell, daher solltet Ihr Euch mit größter Eile zum Schrein von Remulos begeben. Benutzt das Schmuckstück am Schrein und sprecht dann dort mit Tajarri; sie ist eine der vertrauenswürdigsten Aufseherinnen von Moonglade.\n\nIhr habt nur eine gewisse Zeitspanne für diese Aufgabe zur Verfügung, und Ihr könntet in Konkurrenz zu anderen Druiden stehen, die ebenfalls nach Schmuckstücken suchen. Geistiges wie körperliches Geschick wird für Euren Erfolg unabdingbar sein.\n\nViel Glück, $N.",
+        "9b290373ced4bfccf2be": "Um die Prüfung des Sees abzuschließen, musst du die Schrein-Kugel innerhalb der Grenzen dieses Schreins benutzen.  Solange du das nicht tust, bleibt deine Prüfung unvollendet und läuft Gefahr, zu scheitern.",
+        "dff8ff1568c3c01cfda3": "Na so was, es sieht so aus, als hätte erneut ein $C die Prüfung des Sees erfolgreich abgeschlossen! Gut gemacht. . . sehr gut. \n \n Wie ich schon sagte ist mein Name Tajarri. Es ist meine Pflicht und mein Privileg, Moonglade und insbesondere diesem Schrein als Aufseherin zu dienen. Bewahrer Remulos leitet den Zirkel des Cenarius in seinem Bemühen an, das Gleichgewicht der Natur zu bewahren, und dieser Schrein dient als ständiges Zeichen der Anerkennung dessen. Indem Ihr das Schmuckstück hier benutzt habt, dient es als eine anerkennende Geste für die Wichtigkeit dieses Ortes im Zirkel. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +164,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -118,6 +204,11 @@
     },
     "enUS": {
       "description": "For your first trial, search the depths of Lake Elune'ara to locate a Shrine Bauble.  It decays rapidly, so proceed with it to the Shrine of Remulos post haste.  Use the bauble at the shrine, and then speak with Tajarri there; she is one of Moonglade's most trusted wardens.\n\nYou only have a set amount of time to complete the task, and you may be competing against other druids searching for baubles themselves.  Mental and physical dexterity will be critical to your success.\n\nGood luck, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "For your first trial, search the depths of Lake Elune'ara to locate a Shrine Bauble.  It decays rapidly, so proceed with it to the Shrine of Remulos post haste.  Use the bauble at the shrine, and then speak with Tajarri there; she is one of Moonglade's most trusted wardens.$B$BYou only have a set amount of time to complete the task, and you may be competing against other druids searching for baubles themselves.  Mental and physical dexterity will be critical to your success.$B$BGood luck, $N.",
+        "9b290373ced4bfccf2be": "To complete the Trial of the Lake, you must use the Shrine Bauble within the boundaries of this shrine.  Until you do so, your trial remains unfinished and it is at risk of failure.",
+        "dff8ff1568c3c01cfda3": "Well now, it looks like yet another druid has successfully completed the Trial of the Lake!  Well done, my young friend - well done.$B$BAs I've said, my name is Tajarri.  It is my duty and my privilege to serve as a warden for Moonglade, and specifically this shrine.  Keeper Remulos guides the Cenarion Circle in preservation of nature and balance, and his shrine serves as a lasting tribute to such.  By using the bauble here, it serves as a nod to the importance of this place within the Circle."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -133,6 +224,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -155,6 +264,11 @@
     },
     "esES": {
       "description": "En tu primera prueba, debes ir a las profundidades del Lago Elune'ara y encontrar un adorno de altar. Se descompone rápidamente, por lo que deberás ir inmediatamente al Santuario de Rémulos. Coloca el adorno en el altar y habla con Tajarri; es una de las guardianas más apreciadas de Claro de la Luna.\n\nTienes un tiempo limitado para completar la tarea y es probable que tengas que competir con otros druidas en busca de adornos. Necesitarás toda tu destreza mental y física.\n\nSuerte, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "En tu primera prueba, debes ir a las profundidades del Lago Elune'ara y encontrar un adorno de altar. Se descompone rápidamente, por lo que deberás ir inmediatamente al Santuario de Rémulos. Coloca el adorno en el altar y habla con Tajarri; es una de las guardianas más apreciadas de Claro de la Luna.\n\nTienes un tiempo limitado para completar la tarea y es probable que tengas que competir con otros druidas en busca de adornos. Necesitarás toda tu destreza mental y física.\n\nSuerte, $N.",
+        "9b290373ced4bfccf2be": "Para completar la Prueba del Lago, debes usar el Bauble del Santuario dentro de los límites de este santuario.  Hasta que no lo hagas, tu prueba quedará inconclusa y correrá el riesgo de fracasar.",
+        "dff8ff1568c3c01cfda3": "¡Otro $c que completa la Prueba del Lago! Buen trabajo.\n\nMe llamo Tajarri y tengo el honor de ser el guardián de este santuario, un tributo a la conservación de la naturaleza y su equilibrio. Este adorno señala la importancia de este lugar para el Círculo Cenarion."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -170,6 +284,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -193,6 +325,11 @@
     },
     "esMX": {
       "description": "En tu primera prueba, debes ir a las profundidades del Lago Elune'ara y encontrar un adorno de altar. Se descompone rápidamente, por lo que deberás ir inmediatamente al Santuario de Remulos. Coloca el adorno en el altar y habla con Tajarri; es una de las celadoras más apreciadas de Claro de la Luna.\n\nTienes un tiempo limitado para completar la tarea y es probable que tengas que competir con otros druidas en busca de adornos. Necesitarás toda tu destreza mental y física.\n\nSuerte, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "En tu primera prueba, debes ir a las profundidades del Lago Elune'ara y encontrar un adorno de altar. Se descompone rápidamente, por lo que deberás ir inmediatamente al Santuario de Remulos. Coloca el adorno en el altar y habla con Tajarri; es una de las celadoras más apreciadas de Claro de la Luna.\n\nTienes un tiempo limitado para completar la tarea y es probable que tengas que competir con otros druidas en busca de adornos. Necesitarás toda tu destreza mental y física.\n\nSuerte, $n.",
+        "9b290373ced4bfccf2be": "Para completar la Prueba del Lago, debes usar el abalorio del santuario dentro de sus límites. Hasta que lo hagas, la prueba seguirá incompleta y correrás el riesgo de fallar.",
+        "dff8ff1568c3c01cfda3": "¡Otro $c que completa la Prueba del Lago! Buen trabajo.\n\nMe llamo Tajarri y tengo el honor de ser el guardián de este santuario, un tributo a la conservación de la naturaleza y su equilibrio. Este adorno señala la importancia de este lugar para el Círculo Cenarion."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +345,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -230,6 +384,11 @@
     },
     "frFR": {
       "description": "Pour la première épreuve, vous devrez aller fouiller les profondeurs du lac Elune'ara, et trouver un Colifichet du sanctuaire. Attention, il se corrompt rapidement ; aussi, ne tardez pas à l'apporter au sanctuaire de Remulos. Utilisez le Colifichet sur le sanctuaire puis parlez à Tajarri ; elle est l'un des gardiens les plus fiables de Reflet-de-Lune.\n\nVous devez réussir cette quête avant l'expiration du temps imparti, et vous serez peut-être en concurrence avec d'autres druides, également à la recherche de colifichets. Il vous faudra user de ruse et de dextérité pour réussir dans cette mission.\n\nBonne chance, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Pour la première épreuve, vous devrez aller fouiller les profondeurs du lac Elune'ara, et trouver un Colifichet du sanctuaire. Attention, il se corrompt rapidement ; aussi, ne tardez pas à l'apporter au sanctuaire de Remulos. Utilisez le Colifichet sur le sanctuaire puis parlez à Tajarri ; elle est l'un des gardiens les plus fiables de Reflet-de-Lune.\n\nVous devez réussir cette quête avant l'expiration du temps imparti, et vous serez peut-être en concurrence avec d'autres druides, également à la recherche de colifichets. Il vous faudra user de ruse et de dextérité pour réussir dans cette mission.\n\nBonne chance, $N.",
+        "9b290373ced4bfccf2be": "Pour mener à bien l'épreuve du lac, vous devez utiliser le Colifichet du sanctuaire dans les limites de cet autel. Tant que ce n'est pas fait, l'épreuve n'est pas terminée et vous risquez l'échec. ",
+        "dff8ff1568c3c01cfda3": "Bien, il semble qu'un $C de plus ait réussi à passer l'épreuve du lac ! Bien joué, jeune $C - bien joué. \n \n Comme je l'ai dit, mon nom est Tajarri. C'est mon devoir et un privilège d'être un Gardien de Reflet-de-Lune, et tout spécialement de ce sanctuaire. Le Gardien Remulos guide le Cercle cénarien pour préserver la nature et l'équilibre, son sanctuaire en est la démonstration. Il prouve l'importance de ce lieu dans le Cercle. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -245,6 +404,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -267,6 +444,11 @@
     },
     "hrHR": {
       "description": "Za prvu kušnju pretraži dubine jezera Elune'ara i pronađi sitnicu svetišta. Brzo propada, zato je odmah odnesi u Remulosovo svetište. Upotrijebi sitnicu u svetištu i zatim razgovaraj s Tajarri ondje; ona je jedna od čuvarica kojima se u Moongladeu najviše vjeruje.\n\nImaš samo određeno vrijeme za dovršetak zadatka i možda se natječeš s drugim druidima koji sami traže sitnice. Mentalna i tjelesna spretnost bit će presudne za tvoj uspjeh.\n\nSretno, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Za prvu kušnju pretraži dubine jezera Elune'ara i pronađi ukras svetišta. Brzo propada, stoga požuri s njim do Remulosova svetišta. Upotrijebi ga ondje i razgovaraj s Tajarri, jednom od najpouzdanijih čuvarica Moongladea.$B$BZa zadatak imaš ograničeno vrijeme i možda ćeš se natjecati s drugim druidima koji također traže ukrase. Mentalna i tjelesna spretnost bit će ključne za uspjeh.$B$BSretno, $N.",
+        "9b290373ced4bfccf2be": "Da dovršiš kušnju jezera, moraš upotrijebiti ukras unutar granica ovog svetišta. Dok to ne učiniš, kušnja je nedovršena i prijeti ti neuspjeh.",
+        "dff8ff1568c3c01cfda3": "Pa, čini se da je još jedan druid uspješno dovršio kušnju jezera! Bravo, mladi prijatelju.$B$BKao što rekoh, zovem se Tajarri. Dužnost mi je i čast služiti kao čuvarica Moongladea, osobito ovog svetišta. Čuvar Remulos vodi Cenarijski krug u očuvanju prirode i ravnoteže, a njegovo je svetište trajna počast tome. Upotrebom ukrasa ovdje priznaješ važnost ovog mjesta za Krug."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -283,6 +465,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "eee7428db6c56ab9332cacee8233475fb8d52790312fd224d9cd7a6edf99640a"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -306,6 +503,11 @@
     },
     "itIT": {
       "description": "Per la tua prima prova, esplora le profondità del lago Elune'ara e trova un monile del santuario. Si deteriora rapidamente, quindi portalo senza indugio al santuario di Remulos. Usalo presso il santuario e poi parla con Tajarri: è una delle custodi più fidate di Moonglade.\n\nHai soltanto un tempo limitato per completare l'incarico e potresti dover competere con altri druidi in cerca di monili. Prontezza mentale e agilità fisica saranno fondamentali per riuscire.\n\nBuona fortuna, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Per la tua prima prova, cerca nelle profondità del Lago Elune'ara una Bolla del Santuario. Si deteriora in fretta, quindi portala subito al Santuario di Remulos. Usa il ninnolo al santuario, poi parla con Tajarri, che si trova lì; è una delle guardiane più fidate di Moonglade.\n\nHai solo un tempo limitato per completare il compito, e potresti trovarti in competizione con altri druidi che cercano anche loro dei ninnoli. L'agilità mentale e fisica sarà fondamentale per la tua riuscita.\n\nBuona fortuna, $N.",
+        "9b290373ced4bfccf2be": "Per completare la Prova del Lago devi usare la Bolla del Santuario entro i confini di questo santuario. Finché non lo farai, la tua prova resterà incompiuta e rischierà di fallire.",
+        "dff8ff1568c3c01cfda3": "A quanto pare un altro druido ha completato con successo la Prova del Lago! Ben fatto, giovane amico.$B$BCome ho detto, mi chiamo Tajarri. È mio dovere e privilegio servire come custode di Moonglade, e in particolare di questo santuario. Il Custode Remulos guida il Circolo Cenariano nella tutela della natura e dell'equilibrio, e il suo santuario è un tributo duraturo a questo impegno. Usare qui il monile riconosce l'importanza di questo luogo per il Circolo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -322,6 +524,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "eee7428db6c56ab9332cacee8233475fb8d52790312fd224d9cd7a6edf99640a"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -345,6 +564,11 @@
     },
     "koKR": {
       "description": "첫 번째 시험으로, 엘룬아라 호수의 깊은 곳을 뒤져 제단 구슬을 찾도록 하십시오. 제단 구슬은 금방 그 효력이 다하니 서둘러서 레물로스의 제단으로 가져가야 합니다. 제단에서 구슬을 사용한 다음, 그곳에 있는 타자리와 얘기를 나누십시오. 그녀는 달의 숲에서 가장 신임받는 관리인 중 한 명입니다.\n\n이번 임무는 제한된 시간 내에 완료해야 하는데다, 구슬을 찾는 다른 드루이드들과 경쟁을 벌이게 될 수도 있으니 각오를 단단히 하셔야 할 겁니다. 그대의 정신과 신체의 민첩성이 바로 성공의 열쇠가 될 겁니다.\n\n그럼, 행운을 빌겠습니다, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "첫 번째 시험으로 엘룬아라 호수 깊은 곳을 찾아 성소의 장신구를 구하게. 그것은 빠르게 썩으니 서둘러 레물로스의 성소로 가져가야 하네. 성소에서 장신구를 사용한 다음 그곳에 있는 타자릴과 이야기하게. 그녀는 달숲에서 가장 신뢰받는 감시자 중 하나라네.$B$B임무를 완수할 시간은 한정되어 있으며, 장신구를 찾는 다른 드루이드들과 경쟁할 수도 있네. 정신과 육체의 민첩함이 성공의 열쇠가 될 걸세.$B$B행운을 비네, $N.",
+        "9b290373ced4bfccf2be": "호수의 시련을 완료하려면 이 성소 경계 내에서 성소 방울을 사용해야 합니다.  그렇게 할 때까지 평가판은 완료되지 않은 상태로 남아 있으며 실패할 위험이 있습니다.",
+        "dff8ff1568c3c01cfda3": "이런, 또 한 명의 드루이드가 호수의 시험을 무사히 마쳤군요! 잘했어요, 젊은 친구.$B$B말씀드렸듯 제 이름은 타자릴입니다. 달숲과 특히 이 성소의 감시자로 봉사하는 것은 제 의무이자 영광이지요. 수호자 레물로스는 자연과 균형을 지키는 세나리온 의회를 이끌며, 그의 성소는 그 노력에 대한 영원한 찬사입니다. 이곳에서 장신구를 사용하는 것은 의회에서 이 장소의 중요성을 인정하는 뜻이지요."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -360,6 +584,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -382,6 +622,11 @@
     },
     "plPL": {
       "description": "W ramach pierwszej próby przeszukaj głębiny jeziora Elune'ara i znajdź błyskotkę kapliczki. Szybko się rozpada, więc bezzwłocznie zanieś ją do kapliczki Remulosa. Użyj tam błyskotki, a następnie porozmawiaj z Tajarri, jedną z najbardziej zaufanych strażniczek Moonglade.\n\nNa wykonanie zadania masz ograniczony czas, a o błyskotki mogą z tobą rywalizować inni druidzi. O powodzeniu zadecydują bystrość umysłu i sprawność ciała.\n\nPowodzenia, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "W pierwszej próbie przeszukaj głębiny jeziora Elune'ara, by znaleźć ozdobę świątyni. Szybko niszczeje, więc pośpiesz z nią do sanktuarium Remulosa. Użyj jej w sanktuarium i porozmawiaj tam z Tajarri, jedną z najbardziej zaufanych strażniczek Moonglade.$B$BMasz ograniczony czas na wykonanie zadania i możesz konkurować z innymi druidami poszukującymi ozdób. Sprawność umysłowa i fizyczna będą kluczowe dla sukcesu.$B$BPowodzenia, $N.",
+        "9b290373ced4bfccf2be": "Aby ukończyć Próbę Jeziora, musisz użyć ozdoby w granicach tego sanktuarium. Dopóki tego nie zrobisz, próba pozostaje nieukończona i grozi ci porażka.",
+        "dff8ff1568c3c01cfda3": "Wygląda na to, że kolejny druid pomyślnie ukończył Próbę Jeziora! Dobra robota, młody przyjacielu.$B$BJak mówiłam, nazywam się Tajarri. Moim obowiązkiem i przywilejem jest służyć jako strażniczka Moonglade, a szczególnie tego sanktuarium. Strażnik Remulos kieruje Kręgiem Cenariona w ochronie przyrody i równowagi, a jego sanktuarium jest trwałym hołdem dla tej pracy. Użycie ozdoby tutaj jest wyrazem uznania dla znaczenia tego miejsca dla Kręgu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -398,6 +643,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "eee7428db6c56ab9332cacee8233475fb8d52790312fd224d9cd7a6edf99640a"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -421,6 +681,11 @@
     },
     "ptBR": {
       "description": "Na sua primeira prova, você mergulhará nas profundezas do Lago Eluna'ara, atrás de um Adorno de Altar. Ele se desmancha bem rápido, então trate de levá-lo correndo para o Santuário de Remulos. Use o adorno dentro do santuário, depois fale com Tajarri lá mesmo. Ela é uma das guardiãs mais respeitadas pela Clareira da Lua.\n\nVocê não terá muito tempo para concluir a tarefa e talvez esteja competindo pelos adornos com outros druidas. Destreza física e mental serão essenciais para triunfar.\n\nBoa sorte, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Na sua primeira prova, você mergulhará nas profundezas do Lago Eluna'ara, atrás de um Adorno de Altar. Ele se desmancha bem rápido, então trate de levá-lo correndo para o Santuário de Remulos. Use o adorno dentro do santuário, depois fale com Tajarri lá mesmo. Ela é uma das guardiãs mais respeitadas pela Clareira da Lua.\n\nVocê não terá muito tempo para concluir a tarefa e talvez esteja competindo pelos adornos com outros druidas. Destreza física e mental serão essenciais para triunfar.\n\nBoa sorte, $N.",
+        "9b290373ced4bfccf2be": "Para passar na prova do lago, você tem que usar o Adorno de Altar dentro dos limites do santuário. Enquanto não fizer isso, não poderá concluir a prova e correrá o risco de fracassar nela.",
+        "dff8ff1568c3c01cfda3": "Muito bem, pelo visto mais um $c passou na prova do lago! Muito bem, meu jovem... muito bem.\n\nComo eu já disse, meu nome é Tajarri. É meu dever e grande privilégio servir como guardiã da Clareira da Lua e deste santuário, mais precisamente. O Guardião Remulos orienta o Círculo Cenariano na preservação da natureza e do equilíbrio, o santuário serve para lhe prestar tributo. Usar o adorno aqui dentro é uma forma de reconhecer a importância deste lugar para o Círculo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -436,6 +701,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -458,6 +741,11 @@
     },
     "ruRU": {
       "description": "Вот твое первое испытание – исследуй глубины озера Элуны и найди безделушку святилища. Она быстро разрушается, так что не медля отнеси ее к святилищу Ремулоса. Используй эту безделушку в святилище, а затем поговори там с Таджарри – это одна из самых доверенных хранительниц Лунной поляны.\n\nНа все испытание тебе дается ограниченное количество времени, и возможно, тебе придется соревноваться с другими друидами, которые тоже ищут безделушки. Быстрота ума и ловкость тела помогут тебе добиться успеха.\n\nУдачи тебе, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Вот твое первое испытание – исследуй глубины озера Элуны и найди безделушку святилища. Она быстро разрушается, так что не медля отнеси ее к святилищу Ремулоса. Используй эту безделушку в святилище, а затем поговори там с Таджарри – это одна из самых доверенных хранительниц Лунной поляны.\n\nНа все испытание тебе дается ограниченное количество времени, и возможно, тебе придется соревноваться с другими друидами, которые тоже ищут безделушки. Быстрота ума и ловкость тела помогут тебе добиться успеха.\n\nУдачи тебе, $N.",
+        "9b290373ced4bfccf2be": "Чтобы завершить Испытание озера, используй безделушку святилища в его пределах. Пока ты этого не сделаешь, испытание не завершено и может закончиться неудачей.",
+        "dff8ff1568c3c01cfda3": "Ну вот, еще один друид успешно завершил испытание озера! Молодец! Мой юный друг – молодец.\n\nКак я уже говорила... Меня зовут Таджарри. Это мой долг и честь быть на страже в Лунной поляне. Хранитель Ремул направляет Круг Кенария в сохранение и равновесие баланса природы. Используй эту безделушку здесь, это послужит знаком признания к этому месту."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -473,6 +761,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -495,6 +800,11 @@
     },
     "svSE": {
       "description": "För din första prövning, sök igenom djupet i Elune'arasjön och hitta en helgedomsprydnad. Den förfaller snabbt, så ta den genast till Remulos helgedom. Använd prydnaden vid helgedomen och tala sedan med Tajarri där; hon är en av Mångläntas mest betrodda väktare.\n\nDu har bara en viss tid på dig att klara uppgiften, och du kan få tävla mot andra druider som också letar efter prydnader. Smidighet i både sinne och kropp blir avgörande för att du ska lyckas.\n\nLycka till, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "För ditt första prov ska du söka i Elune'ara-sjöns djup efter en helgedomsprydnad. Den förfaller snabbt, så skynda till Remulos helgedom med den. Använd den vid helgedomen och tala sedan med Tajarri där; hon är en av Moonglades mest betrodda väktare.$B$BDu har begränsad tid att slutföra uppgiften och kan konkurrera med andra druider som söker prydnader. Mental och fysisk smidighet är avgörande för din framgång.$B$BLycka till, $N.",
+        "9b290373ced4bfccf2be": "För att slutföra sjöns prov måste du använda helgedomsprydnaden inom denna helgedoms gränser. Tills du gör det är provet inte slutfört och riskerar att misslyckas.",
+        "dff8ff1568c3c01cfda3": "Nå, det ser ut som om ännu en druid har klarat sjöns prov! Bra gjort, unge vän.$B$BSom jag sa heter jag Tajarri. Det är min plikt och mitt privilegium att tjäna som väktare för Moonglade och särskilt denna helgedom. Väktare Remulos leder Cenarion Circle i bevarandet av natur och balans, och hans helgedom är en varaktig hyllning till detta. Genom att använda prydnaden här erkänner du platsens betydelse för cirkeln."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -511,6 +821,21 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -536,6 +861,11 @@
     },
     "trTR": {
       "description": "İlk sınavın için Elune'ara Gölü'nün derinliklerini arayıp bir Shrine Bauble bul. Çok çabuk bozulur, o yüzden onunla birlikte vakit kaybetmeden Remulos Tapınağı'na ilerle. Shrine Bauble'ı tapınakta kullan, sonra orada Tajarri ile konuş; o, Moonglade'in en güvenilir muhafızlarından biri.\n\nGörevi tamamlamak için yalnızca belirli bir süren var ve Shrine Bauble arayan diğer Druid'lerle yarışıyor olabilirsin. Zihinsel ve bedensel çeviklik başarın için hayati olacak.\n\nBol şans, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "İlk sınavında bir Tapınak Biblosu bulmak için Elune'ara Gölü'nün derinliklerini ara. Hızla bozulur, bu yüzden onu hemen Remulos Tapınağı'na götür. Biblodu tapınakta kullan ve oradaki Tajarri ile konuş; o, Moonglade'in en güvenilir muhafızlarından biridir.$B$BGörevi tamamlamak için sınırlı zamanın var ve kendileri de biblo arayan başka druidlerle yarışıyor olabilirsin. Zihinsel ve bedensel çeviklik başarın için çok önemli olacak.$B$Bİyi şanslar, $N.",
+        "9b290373ced4bfccf2be": "Göl Sınavı'nı tamamlamak için Tapınak Biblosu'nu bu tapınağın sınırları içinde kullanmalısın. Bunu yapana kadar sınavın tamamlanmamış ve başarısız olma riski altındadır.",
+        "dff8ff1568c3c01cfda3": "Pekâlâ, görünüşe göre bir druid daha Göl Sınavı'nı başarıyla tamamladı! Aferin genç dostum.$B$BDediğim gibi, adım Tajarri. Moonglade'in ve özellikle bu tapınağın muhafızı olmak benim görevim ve ayrıcalığım. Muhafız Remulos, doğayı ve dengeyi korumak için Cenarion Circle'a liderlik eder ve tapınağı bunun kalıcı bir anıtıdır. Biblodu burada kullanman, bu yerin Circle için önemini kabul etmektir."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -552,6 +882,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "eee7428db6c56ab9332cacee8233475fb8d52790312fd224d9cd7a6edf99640a"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -575,6 +920,11 @@
     },
     "ukUA": {
       "description": "Для першого випробування обшукай глибини озера Елуна'ара й знайди прикрасу вівтаря. Вона швидко руйнується, тож якнайшвидше неси її до вівтаря Ремула. Скористайся прикрасою біля вівтаря, а потім поговори там із Таджаррі; вона — одна з найнадійніших охоронниць Місячної Галявини.\n\nНа виконання завдання відведено обмежений час, і, можливо, тобі доведеться змагатися з іншими друїдами, які теж шукатимуть прикраси. Для успіху вкрай важливі спритність розуму й тіла.\n\nУдачі, {name}.",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "Для першого випробування обшукай глибини озера Елуне'ара та знайди дрібничку святилища. Вона швидко псується, тому мерщій неси її до святилища Ремулоса. Використай її там і поговори з Таджаррі, однією з найнадійніших вартових Місячної галявини.$B$BНа виконання завдання маєш обмежений час і можеш змагатися з іншими друїдами, які також шукають дрібнички. Розумова й фізична спритність будуть вирішальними.$B$BЩасти, $N.",
+        "9b290373ced4bfccf2be": "Щоб завершити Випробування озера, використай дрібничку святилища в межах цього святилища. Поки не зробиш цього, випробування не завершене й може зазнати невдачі.",
+        "dff8ff1568c3c01cfda3": "Що ж, схоже, ще один друїд успішно завершив Випробування озера! Молодець, юний друже.$B$BЯк я сказала, мене звати Таджаррі. Для мене обов'язок і честь бути вартовою Місячної галявини, зокрема цього святилища. Хранитель Ремулос веде Кенарійське коло в справі збереження природи й рівноваги, а його святилище є тривалою даниною цій справі. Використовуючи тут дрібничку, ти визнаєш важливість цього місця для Кола."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -591,6 +941,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "eee7428db6c56ab9332cacee8233475fb8d52790312fd224d9cd7a6edf99640a"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -616,6 +981,11 @@
     },
     "zhCN": {
       "description": "第一个试炼是要搜寻月神湖底的神殿灵珠。它会很快地腐烂，因此你要在找到它后立即把它拿到雷姆洛斯神殿去。在神殿里使用它，然后跟塔加里谈谈，她是月光林地里最值得信赖的守卫之一。\n\n你的时间非常紧迫，而且还要与其他寻找灵珠的德鲁伊竞争，灵敏和智慧是你取胜的关键。\n\n祝你好运，{name}。",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "第一个试炼是要搜寻月神湖底的神殿灵珠。它会很快地腐烂，因此你要在找到它后立即把它拿到雷姆洛斯神殿去。在神殿里使用它，然后跟塔加里谈谈，她是月光林地里最值得信赖的守卫之一。\n\n你的时间非常紧迫，而且还要与其他寻找灵珠的德鲁伊竞争，灵敏和智慧是你取胜的关键。\n\n祝你好运，$N。",
+        "9b290373ced4bfccf2be": "要完成湖中试炼，你就必须在神殿内使用灵珠。如果你不这样做的话，你的试炼就不算完成，而且随时都可能会失败。",
+        "dff8ff1568c3c01cfda3": "嗯，又一个成功完成湖中试炼的德鲁伊!做得好，我年轻的朋友。\n\n我是塔加里，月光林地及这座神殿的守护者，这是我的责任，也是我所拥有的特权。守护者雷姆洛斯指引着塞纳里奥议会努力保持着自然的平衡，并且他的神殿正在为此做出巨大的贡献。在这里使用灵珠，即表示你认同这个地方在议会中的重要性。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -631,6 +1001,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -653,6 +1041,11 @@
     },
     "zhTW": {
       "description": "第一個試煉是要搜尋月神湖底的神殿靈珠。它腐敗的很快，因此你要在找到它後，立即把它拿到雷姆洛斯神殿去。在神殿裡使用它，然後跟塔加里談談，她是月光林地裡最值得信賴的守衛之一。\n\n你的時間非常緊迫，而且還要與其他尋找靈珠的德魯伊競爭，靈敏和智慧是你取勝的關鍵。\n\n祝你好運，{name}。",
+      "dialogue": {
+        "31dc5b7210cf62ec5ce0": "第一個試煉是要尋找月神湖底的神殿靈珠。它會很快地腐爛，因此你要在找到它後立即把它拿到雷姆洛斯神殿去。在神殿裡使用它，然後跟塔加里談談，她是月光林地裡最值得信賴的守衛之一。\n\n你的時間非常緊迫，而且還要與其它尋找靈珠的德魯伊競爭，靈敏和智慧是你取勝的關鍵。\n\n祝你好運，$N。",
+        "9b290373ced4bfccf2be": "要完成湖泊試煉，你必須在這座聖所的範圍內使用聖所飾物。在你這麼做之前，試煉都尚未完成，而且有失敗的風險。",
+        "dff8ff1568c3c01cfda3": "嗯，又一個成功完成湖中試煉的德魯伊!做得好，我年輕的朋友。\n\n我是塔加里，月光林地及這座神殿的守護者，這是我的責任，也是我所擁有的特權。守護者雷姆洛斯指引著塞納裡奧議會努力保持著自然的平衡，並且他的神殿正在為此做出巨大的貢獻。在這裡使用靈珠，即表示你認同這個地方在議會中的重要性。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -668,6 +1061,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.31dc5b7210cf62ec5ce0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.9b290373ced4bfccf2be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dff8ff1568c3c01cfda3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

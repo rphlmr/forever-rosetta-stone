@@ -1,8 +1,28 @@
 {
   "areaId": 8,
+  "dialogueContexts": {
+    "14e8b8fc54deb1d16d5e": {
+      "lineId": "q:1392:progress",
+      "npcId": 1776,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "20bd018ea3a76d99adde": {
+      "lineId": "q:1392:complete",
+      "npcId": 1776,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Noboru sužuje draenei z Harborage už celé měsíce a jeho kyj je symbolem brutality, kterou od Ztracených snášeli.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Zdravím. Vítej v Harborage.",
+        "20bd018ea3a76d99adde": "Získal jsi zbraň obávaného Noborua? Je tedy mrtev?$B$BDnešek je pro Harborage radostným dnem. Noboru a jeho banda nás děsili, potulovali se bažinami a zabíjeli každého draeneie, který jim zkřížil cestu. Byl přímou hrozbou pro naše přežití a neměli jsme sílu se mu postavit.$B$BMáme štěstí, že v tobě máme přítele, $N."
+      },
       "summary": "Přines Noboru's Cudgel vůdci The Harborage v Swamp of Sorrows.",
       "title": "Noboru Kyj",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -30,6 +60,10 @@
     },
     "daDK": {
       "description": "Noboru har plaget draeneierne i Harborage i månedsvis, og hans kølle er et symbol på den brutalitet, de har lidt under hos de fortabte.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Velkommen. Velkommen til Harborage.",
+        "20bd018ea3a76d99adde": "Har du skaffet den frygtede Noborus våben? Er han så død?$B$BDette er en glædens dag for Harborage. Noboru og hans bande var en plage for os; de strejfede gennem sumpene og dræbte enhver draenei, der krydsede deres vej. Han truede direkte vores overlevelse, og vi havde ikke styrken til at møde ham.$B$BVi er heldige at have dig som ven, $N."
+      },
       "summary": "Bring Noborus kølle til lederen af The Harborage i Swamp of Sorrows.",
       "title": "Noboru Køllen",
       "translationMetadata": {
@@ -39,6 +73,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "49b3b7a69ba0799af68e957e5f57ac4ed41950f425933e9687b4d1b592468c06"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -57,6 +101,10 @@
     },
     "deDE": {
       "description": "Noboru verseuchte die Draenei des sicheren Hafens seit Monaten; sein Knüppel ist ein Symbol der Brutalität, die sie sich von den Verirrten gefallen lassen mussten.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Seid gegrüßt. Und willkommen im sicheren Hafen.",
+        "20bd018ea3a76d99adde": "Habt Ihr die Waffe des verhassten Noboru? Ist er denn tot?\n\nDas ist ein Freudentag für den sicheren Hafen. Noboru und seine Bande waren ein Schrecken für uns, denn sie zogen durch die Sümpfe und töteten jeden Draenei, der ihren Weg kreuzte. Er war eine unmittelbare Bedrohung für unser Überleben und wir hatten nicht die Kraft, ihm zu trotzen.\n\nWir sind glücklich, einen Freund in Euch zu haben, $N."
+      },
       "summary": "Bringt Noborus Knüppel zum Anführer des sicheren Hafens in den Sümpfen des Elends.",
       "title": "Noboru der Knüppel",
       "translationMetadata": {
@@ -65,6 +113,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -81,6 +141,10 @@
     },
     "enUS": {
       "description": "Noboru has plagued the Draenei of the Harborage for months, and his cudgel is a symbol of the brutality they have suffered at the hands of the lost ones.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Greetings.  And welcome to the Harborage.",
+        "20bd018ea3a76d99adde": "You have gained the weapon of the dreaded Noboru?  Is he then dead?$B$BThis is a joyous day for the Harborage.  Noboru and his gang were a terror to us, wandering the swamps and killing any Draenei who crossed his path.  He was a direct threat to our survival, and we did not have the strength to face him.$B$BWe are fortunate to have a friend in you, $N."
+      },
       "summary": "Bring Noboru's Cudgel to the leader of The Harborage in the Swamp of Sorrows.",
       "title": "Noboru the Cudgel",
       "translationMetadata": {
@@ -89,6 +153,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -106,6 +182,10 @@
     },
     "esES": {
       "description": "Noboru ha asediado a los draenei de El Malecón durante meses y su garrote es un símbolo de la brutalidad sufrida a manos de Los Perdidos.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Saludos. Y bienvenido al Refugio.",
+        "20bd018ea3a76d99adde": "¿Has conseguido el arma del temido Noboru? ¿Ha muerto entonces?$B$BEste es un día feliz para el Refugio. Noboru y su banda nos aterrorizaban, vagando por los pantanos y matando a cualquier draenei que se cruzara en su camino. Era una amenaza directa para nuestra supervivencia y no teníamos fuerzas para enfrentarnos a él.$B$BTenemos suerte de contar contigo como amigo, $N."
+      },
       "summary": "Llévale el garrote de Noboru al líder de El Malecón del Pantano de las Penas.",
       "title": "Noboru el Garrote",
       "translationMetadata": {
@@ -114,6 +194,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -130,6 +220,10 @@
     },
     "esMX": {
       "description": "Noboru ha asediado a los draenei de El Puerto durante meses y su garrote es un símbolo de la brutalidad sufrida a manos de Los Perdidos.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Saludos. Y bienvenido al Refugio.",
+        "20bd018ea3a76d99adde": "¿Conseguiste el arma del temido Noboru? ¿Entonces está muerto?$B$BEste es un día de alegría para el Refugio. Noboru y su banda nos aterrorizaban, recorrían los pantanos y mataban a cualquier draenei que se cruzara en su camino. Era una amenaza directa para nuestra supervivencia y no teníamos fuerzas para enfrentarlo.$B$BTenemos suerte de contar contigo como amigo, $N."
+      },
       "summary": "Llévale el garrote de Noboru al líder de El Puerto del Pantano de las Penas.",
       "title": "Noboru el Garrote",
       "translationMetadata": {
@@ -138,6 +232,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -154,6 +258,10 @@
     },
     "frFR": {
       "description": "Noboru a harcelé les draeneï du Havre boueux pendant des mois, et son gourdin est le symbole de la brutalité qu’ils ont subi de la part de ceux qu'ils ont perdus.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Salutations. Et bienvenue au Havre boueux !",
+        "20bd018ea3a76d99adde": "Vous avez obtenu l'arme du redouté Noboru ? Est-il mort ?\n\nC'est un jour heureux pour le Havre boueux. Noboru et sa bande nous terrorisaient, à errer dans les marais et à massacrer tout draeneï croisant leur chemin. Il était un danger direct pour notre simple survie, et nous n'avions pas la force de le combattre.\n\nNous avons de la chance de vous avoir pour ami, $N."
+      },
       "summary": "Apporter le Gourdin de Noboru au Chef du Havre boueux dans le marais des Chagrins.",
       "title": "Noboru le Gourdin",
       "translationMetadata": {
@@ -162,6 +270,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -178,6 +298,10 @@
     },
     "hrHR": {
       "description": "Noboru već mjesecima muči draeneje iz Harboragea, a njegova je batina simbol okrutnosti koju su pretrpjeli od izgubljenih.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Pozdrav. Dobro došao u Harborage.",
+        "20bd018ea3a76d99adde": "Nabavio si oružje strašnog Noborua? Je li onda mrtav?$B$BOvo je radostan dan za Harborage. Noboru i njegova družina utjerivali su nam strah, lutajući močvarama i ubijajući svakog draeneija koji bi im prešao put. Bio je izravna prijetnja našem opstanku, a nismo imali snage suočiti se s njim.$B$BSretni smo što u tebi imamo prijatelja, $N."
+      },
       "summary": "Donesi Noboruovu batinu vođi The Harboragea u Swamp of Sorrowsu.",
       "title": "Noboru s batinom",
       "translationMetadata": {
@@ -187,6 +311,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "49b3b7a69ba0799af68e957e5f57ac4ed41950f425933e9687b4d1b592468c06"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -205,6 +339,10 @@
     },
     "itIT": {
       "description": "Noboru ha vessato per mesi i Draenei del Rifugio dei Corrotti, e la sua mazza ferrata è il simbolo delle violenze che hanno subito per mano dei Perduti.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Salute. E benvenuto all'Harborage.",
+        "20bd018ea3a76d99adde": "Hai ottenuto l'arma del temuto Noboru? È dunque morto?$B$BQuesto è un giorno di gioia per l'Harborage. Noboru e la sua banda ci terrorizzavano, vagando per le paludi e uccidendo qualsiasi draenei incrociasse il loro cammino. Era una minaccia diretta alla nostra sopravvivenza e non avevamo la forza di affrontarlo.$B$BSiamo fortunati ad averti come amico, $N."
+      },
       "summary": "Porta il randello di Noboru al capo di The Harborage, nella Swamp of Sorrows.",
       "title": "Noboru la Mazza",
       "translationMetadata": {
@@ -213,6 +351,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -230,6 +378,10 @@
     },
     "koKR": {
       "description": "노보루는 피난처의 드레나이를 여러 달 동안 괴롭혀 왔습니다. 그의 곤봉은 드레노어 난민에 의해 그들이 겪어야 했던 야만스러운 고통의 상징입니다.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "안녕하세요. 피난처에 오신 것을 환영합니다.",
+        "20bd018ea3a76d99adde": "두려운 노보루의 무기를 가져오셨나요? 그렇다면 그가 죽은 건가요?$B$B피난처에 기쁜 날이군요. 노보루와 그 무리는 늪을 돌아다니며 마주치는 드레나이를 모두 죽여 우리에게 공포의 대상이었습니다. 그는 우리의 생존을 직접 위협했지만, 우리는 그와 맞설 힘이 없었죠.$B$B당신 같은 친구가 있어 다행입니다, $N."
+      },
       "summary": "슬픔의 늪에 있는 피난처의 우두머리에게 노보루의 곤봉을 가져가야 합니다.",
       "title": "곤봉잡이 노보루",
       "translationMetadata": {
@@ -238,6 +390,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -254,6 +416,10 @@
     },
     "plPL": {
       "description": "Noboru od miesięcy nęka draenei z Harborage. Jego pałka jest symbolem okrucieństwa, którego doznali z rąk Zagubionych.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Witaj. Witaj w Harborage.",
+        "20bd018ea3a76d99adde": "Masz broń budzącego postrach Noboru? Czyżby nie żył?$B$BTo radosny dzień dla Harborage. Noboru i jego banda terroryzowali nas, przemierzając bagna i zabijając każdego draeneia, który stanął im na drodze. Był bezpośrednim zagrożeniem dla naszego przetrwania, a my nie mieliśmy siły mu się przeciwstawić.$B$BMamy szczęście, że jesteś naszym przyjacielem, $N."
+      },
       "summary": "Przynieś pałkę Noboru przywódcy Harborage na Swamp of Sorrows.",
       "title": "Noboru Pałka",
       "translationMetadata": {
@@ -263,6 +429,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "49b3b7a69ba0799af68e957e5f57ac4ed41950f425933e9687b4d1b592468c06"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -281,6 +457,10 @@
     },
     "ptBR": {
       "description": "Noboru vem importunando os draeneis do Refúgio há meses, e sua clava é um símbolo da brutalidade que sofreram nas mãos dos perdidos.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Saudações. Boas-vindas ao Refúgio.",
+        "20bd018ea3a76d99adde": "Você conseguiu a arma do temido Noboru? Então ele está morto?$B$BEste é um dia de alegria para o Refúgio. Noboru e sua gangue nos aterrorizavam, vagando pelos pântanos e matando qualquer draenei que cruzasse seu caminho. Ele ameaçava diretamente nossa sobrevivência, e não tínhamos força para enfrentá-lo.$B$BTemos sorte de ter você como amigo, $N."
+      },
       "summary": "Leve a Clava de Noboru ao líder do Refúgio no Pântano das Mágoas.",
       "title": "Noboru, a Borduna",
       "translationMetadata": {
@@ -289,6 +469,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -305,6 +495,10 @@
     },
     "ruRU": {
       "description": "Нобору много месяцев не давал житья дренеям Прибежища, и его дубина стала символом жестокости, которую они претерпели от рук Заблудших.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Приветствую. Добро пожаловать в Прибежище.",
+        "20bd018ea3a76d99adde": "Ты добыл оружие грозного Нобору? Значит, он мертв?$B$BДля Прибежища это радостный день. Нобору и его банда держали нас в страхе, бродили по болотам и убивали каждого дренея на своем пути. Он напрямую угрожал нашему выживанию, а у нас не было сил ему противостоять.$B$BНам повезло иметь такого друга, как ты, $N."
+      },
       "summary": "Принесите дубину Нобору главе Убежища на Болото Печали.",
       "title": "Нобору Дубина",
       "translationMetadata": {
@@ -313,6 +507,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -329,6 +533,10 @@
     },
     "svSE": {
       "description": "Noboru har plågat draeneierna i Harborage i månader, och hans klubba är en symbol för den brutalitet de utsatts för av de förlorade.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Hälsningar. Välkommen till Harborage.",
+        "20bd018ea3a76d99adde": "Har du fått tag i den fruktade Noborus vapen? Är han då död?$B$BDetta är en glädjens dag för Harborage. Noboru och hans gäng terroriserade oss, vandrade genom träsken och dödade varje draenei som korsade deras väg. Han hotade direkt vår överlevnad, och vi hade inte styrkan att möta honom.$B$BVi har tur som har dig som vän, $N."
+      },
       "summary": "Ta med Noborus påk till ledaren för The Harborage i Swamp of Sorrows.",
       "title": "Noboru med påken",
       "translationMetadata": {
@@ -338,6 +546,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "49b3b7a69ba0799af68e957e5f57ac4ed41950f425933e9687b4d1b592468c06"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -356,6 +574,10 @@
     },
     "trTR": {
       "description": "Noboru aylardır Harborage Draenei'lerine musallat oluyor. Sopası, Lost One'ların elinde çektikleri zulmün bir simgesi.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Selamlar. Harborage'a hoş geldin.",
+        "20bd018ea3a76d99adde": "Korkulan Noboru'nun silahını mı aldın? Öyleyse öldü mü?$B$BBugün Harborage için sevinçli bir gün. Noboru ve çetesi bataklıklarda dolaşıp karşılarına çıkan her Draenei'yi öldürerek bize dehşet saçıyordu. Hayatta kalmamız için doğrudan bir tehditti ve onunla yüzleşecek gücümüz yoktu.$B$BSenin gibi bir dostumuz olduğu için şanslıyız, $N."
+      },
       "summary": "Noboru'nun Sopası'nı Swamp of Sorrows'taki Harborage'ın liderine getir.",
       "title": "Sopalı Noboru",
       "translationMetadata": {
@@ -365,6 +587,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "49b3b7a69ba0799af68e957e5f57ac4ed41950f425933e9687b4d1b592468c06"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -382,6 +614,10 @@
     },
     "ukUA": {
       "description": "Нобору місяцями нападав на дренеїв Сховища, і його дубина стала символом жорстокості, якої вони зазнали від рук Загублених.",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "Вітаю. Ласкаво просимо до Harborage.",
+        "20bd018ea3a76d99adde": "Ти здобув зброю грізного Нобору? То він мертвий?$B$BЦе радісний день для Harborage. Нобору та його банда наводили на нас жах, блукали болотами й убивали кожного дренея на своєму шляху. Він прямо загрожував нашому виживанню, а ми не мали сили протистояти йому.$B$BНам пощастило мати такого друга, як ти, $N."
+      },
       "summary": "Принесіть дубину Нобору очільнику Сховища на болото Скорбот.",
       "title": "Нобору-Дубина",
       "translationMetadata": {
@@ -392,6 +628,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "49b3b7a69ba0799af68e957e5f57ac4ed41950f425933e9687b4d1b592468c06"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -412,6 +658,10 @@
     },
     "zhCN": {
       "description": "避难营里的的德莱尼人已经被诺博鲁虐待了好几个月了，他的棒子对于这些失落者来说是一种残忍和暴力的象征。",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "你好。欢迎来到避难营。",
+        "20bd018ea3a76d99adde": "你得到了可怕的诺博鲁的武器？那么他死了吗？$B$B今天是避难营值得庆祝的日子。诺博鲁和他的帮众在沼泽中游荡，杀害遇到的每一个德莱尼，让我们生活在恐惧中。他直接威胁着我们的生存，而我们没有力量对付他。$B$B能有你这样的朋友，我们很幸运，$N。"
+      },
       "summary": "把诺博鲁的木棒交到悲伤沼泽中的避难营领导人手中。",
       "title": "木棒诺博鲁",
       "translationMetadata": {
@@ -420,6 +670,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -436,6 +696,10 @@
     },
     "zhTW": {
       "description": "避難營裡的的德萊尼人已經被諾博魯虐待了好幾個月了，他的棒子對於這些失落者來說是一種殘忍和暴力的象徵。",
+      "dialogue": {
+        "14e8b8fc54deb1d16d5e": "你好。歡迎來到避難營。",
+        "20bd018ea3a76d99adde": "你得到了可怕的諾博魯的武器？那麼他死了嗎？$B$B今天是避難營值得慶祝的日子。諾博魯和他的幫眾在沼澤中遊蕩，殺害遇到的每一個德萊尼，讓我們生活在恐懼中。他直接威脅著我們的生存，而我們沒有力量對付他。$B$B能有你這樣的朋友，我們很幸運，$N。"
+      },
       "summary": "把諾博魯的木棒交給悲傷沼澤中的避難營領導人。",
       "title": "木棒諾博魯",
       "translationMetadata": {
@@ -444,6 +708,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.14e8b8fc54deb1d16d5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.20bd018ea3a76d99adde": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

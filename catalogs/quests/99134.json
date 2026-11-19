@@ -1,8 +1,30 @@
 {
   "areaId": 85,
+  "dialogueContexts": {
+    "1124f4fd9fa1b96dfa58": {
+      "contributionId": 238,
+      "lineId": "q:99134:accept",
+      "npcId": 1515,
+      "scope": "forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "e352022910e83eebf398": {
+      "contributionId": 255,
+      "lineId": "q:99134:complete",
+      "npcId": 1515,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Nepatříš ke strážcům smrti, a proto mě zatím tvé činy nezklamaly.\n\nZa odměnu za tvou poměrně malou neschopnost, potrestáš ty, kdo takové nadání prokázali přehojně.\n\nA rychle, ty jsi... {name}, že? Jinak připíšu tvé jméno do svých záznamů jako odměnu pro někoho jiného.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Nejsi členem Smrtihlídky, a proto jsi mě ještě nezklamal.\n\nZa svou neschopnost projevit neschopnost budeš odměněn tím, že potrestáš ty, kdo takového nadání projevili nadbytek.\n\nRychle tedy... $N, že? Jinak přidám tvé jméno na svůj seznam jako odměnu pro někoho jiného.",
+        "e352022910e83eebf398": "Smrt nám dopřává jen málo radostí. Naštěstí k nim patří především bolest.\n\nDnes jsi mě potěšil, a proto jsi potěšil i Temnou paní. Možná budeš ještě užitečný."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "29ca8f40fc1ce3c319fa42a40209c1eedc66a5cd0cdd6197159285c9b8dc4470"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +76,10 @@
     },
     "daDK": {
       "description": "Du er ikke medlem af Deathguard og har derfor endnu ikke skuffet mig.\r\n\r\nSom belønning for din relative mangel på inkompetence skal du straffe dem, der har udvist disse talenter i overmål.\r\n\r\nHurtigt nu, {name}, er det ikke? Ellers føjer jeg dit navn til min liste som en andens belønning.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Du er ikke medlem af Deathguard og har derfor endnu ikke skuffet mig.\n\nSom belønning for din mangel på inkompetence får du lov at straffe dem, der har udvist rigeligt af dette talent.\n\nSkynd dig nu... $N, ikke sandt? Ellers tilføjer jeg dit navn til min bog som en andens belønning.",
+        "e352022910e83eebf398": "Døden giver os kun ganske få glæder. Heldigvis er smerte en af de største.\n\nDu behager mig i dag, og dermed behager du også den Mørke Frue. Måske kan du være til yderligere nytte."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +96,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "29ca8f40fc1ce3c319fa42a40209c1eedc66a5cd0cdd6197159285c9b8dc4470"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +129,10 @@
     },
     "deDE": {
       "description": "Ihr seid nicht Teil der Todeswache und hattet dementsprechend noch keine Gelegenheit, mich zu enttäuschen.\r\n\r\nAls Belohnung für Euren vergleichsweisen Mangel an Inkompetenz werdet Ihr jene strafen, die dieses Talent zur Genüge zur Schau gestellt haben.\r\n\r\nBeeilt Euch... {name} war Euer Name, richtig? ... sonst landet Ihr auf meiner Liste als Belohnung für jemand anderen.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Ihr seid nicht Teil der Todeswache und hattet dementsprechend noch keine Gelegenheit, mich zu enttäuschen.\n\nAls Belohnung für Eure mangelnde Inkompetenz dürft Ihr jene strafen, die dieses Talent zur Genüge zur Schau gestellt haben. \n\nBeeilt Euch... $N, war Euer Name, richtig? ... sonst landet Ihr auf meiner Liste als Belohnung für jemand anderen.",
+        "e352022910e83eebf398": "Uns sind im Tod nur herzlich wenige Freuden vergönnt. Glücklicherweise gehören Schmerzen dazu.\n\nIhr habt mich heute zufriedengestellt... und damit auch die Dunkle Fürstin. Vielleicht könnt Ihr Euch noch weiter als nützlich erweisen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +148,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +182,10 @@
     },
     "enUS": {
       "description": "You are not a member of the Deathguard, and therefore have yet to disappoint me.\r\n\r\nAs a reward for your relative lack of incompetence, you shall punish those that have demonstrated such talents in excess.\r\n\r\nSwiftly now--{name}, is it?--or I shall add your name to my ledger for someone else's reward.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "You are not a member of the Deathguard, and therefore have yet to disappoint me.\n\nAs a reward for your lack of incompetence, you shall be rewarded with punishing those that have demonstrated such talents in excess.\n\nSwiftly now--$N, is it?--or I shall add your name to my ledger for someone else's reward.",
+        "e352022910e83eebf398": "There are precious few delights afforded to us in death. Thankfully, pain is chief among them.\n\nYou please me this day, and therefore you please the Dark Lady. Perhaps you can be of further use."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +201,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -157,6 +235,10 @@
     },
     "esES": {
       "description": "No eres miembro de la guardia de la muerte, así que aún no has tenido ocasión de decepcionarme.\r\n\r\nComo recompensa por tu relativa falta de incompetencia, castigarás a quienes han demostrado de sobra ese talento.\r\n\r\nRápido... {name}, ¿verdad? O apuntaré tu nombre en mi lista y otro cobrará la recompensa.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "No eres miembro de la guardia de la muerte, así que aún no has tenido ocasión de decepcionarme.\n\nComo recompensa por tu relativa falta de incompetencia, castigarás a quienes han demostrado de sobra ese talento.\n\nRápido... $N, ¿verdad? O apuntaré tu nombre en mi lista y otro cobrará la recompensa.",
+        "e352022910e83eebf398": "La muerte conlleva pocos, pero valiosos deleites. Por fortuna, el dolor es el principal.\n\nHoy me has complacido, y también a la Dama Oscura. Quizá puedas ser de más utilidad."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +254,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -194,6 +288,10 @@
     },
     "esMX": {
       "description": "No eres un miembro de la Guardia de la Muerte; por lo tanto, aún no me has decepcionado.\r\n\r\nComo recompensa por tu relativa falta de incompetencia, podrás castigar a aquellos que han demostrado tener un exceso de ese talento.\r\n\r\nRápido... {name}, ¿verdad? O sino anotaré tu nombre en mi registro para que otra persona reciba la recompensa.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "No eres un miembro de la Guardia de la Muerte; por lo tanto, aún no me has decepcionado.\n\nComo recompensa por tu relativa falta de incompetencia, podrás castigar a aquellos que han demostrado tener un exceso de ese talento.\n\nRápido... $N, ¿verdad? O sino anotaré tu nombre en mi registro para que otra persona reciba la recompensa.",
+        "e352022910e83eebf398": "Son pocos los placeres que se nos conceden en la muerte. Por fortuna, el dolor es uno de los principales.\n\nHoy me complaces y, por lo tanto, complaces a la Dama Oscura. Tal vez puedas ser de más utilidad."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +307,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +340,10 @@
     },
     "frFR": {
       "description": "Vous ne faites pas partie de la Nécrogarde, vous n’avez donc pas encore eu l’occasion de me décevoir.\r\n\r\nPour récompenser votre relative absence d’incompétence, je vous autorise à punir celles et ceux qui font preuve de ce talent en excès.\r\n\r\nHâtez-vous…{name}, c’est bien cela ? Vite, avant que je n’ajoute votre nom dans la colonne des récompenses.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Vous ne faites pas partie de la Nécrogarde, vous n’avez donc pas encore eu l’occasion de me décevoir.\n\nPour récompenser votre relative absence d’incompétence, je vous autorise à punir celles et ceux qui font preuve de ce talent en excès.\n\nHâtez-vous…$N, c’est bien cela ? Vite, avant que je n’ajoute votre nom dans la colonne des récompenses.",
+        "e352022910e83eebf398": "Rares sont les plaisirs auxquels nous avons encore droit dans la mort. Fort heureusement, la souffrance est le plus délicieux d’entre eux.\n\nVous vous êtes montré digne de la tâche que je vous avais confiée, et par conséquent, digne de la Dame noire. Peut-être pourriez-vous m’être encore utile à l’avenir."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +359,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +393,10 @@
     },
     "hrHR": {
       "description": "Nisi član Deathguarda i zato me još nisi razočarao.\n\nKao nagradu za tvoj relativni nedostatak nesposobnosti, kaznit ćeš one koji su takve talente pokazali u izobilju.\n\nBrzo sada, {name}, zar ne? Inače ću dodati tvoje ime u svoju knjigu kao tuđu nagradu.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Nisi član Straže smrti pa me stoga još nisi razočarao.\n\nKao nagradu za svoj nedostatak nesposobnosti dobit ćeš priliku kazniti one koji su taj talent pokazali u izobilju.\n\nBrzo sada... $N, zar ne? Inače ću dodati tvoje ime u svoju knjigu kao nagradu nekome drugome.",
+        "e352022910e83eebf398": "Smrt nam pruža vrlo malo užitaka. Srećom, bol je među najvažnijima.\n\nDanas si mi udovoljio, a time i Mračnoj Gospi. Možda ćeš mi još koristiti."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +413,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "29ca8f40fc1ce3c319fa42a40209c1eedc66a5cd0cdd6197159285c9b8dc4470"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +446,10 @@
     },
     "itIT": {
       "description": "Non sei un membro della Guardia della Morte, e quindi non mi hai ancora deluso.\r\n\r\nCome ricompensa per la tua relativa mancanza d'incompetenza, punirai coloro che hanno dimostrato tali talenti in eccesso.\r\n\r\nIn fretta, ora... {name}, giusto?... o aggiungerò il tuo nome al mio registro per la ricompensa di qualcun altro.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Non fai parte dei Guardiamorte, e quindi non hai ancora avuto modo di deludermi.\n\nCome premio per la tua mancanza di incompetenza, avrai il piacere di punire quelli che di tale talento hanno dato prova in abbondanza.\n\nSvelto, ora... Avventuriero, giusto? O aggiungerò il tuo nome al mio registro, come premio per qualcun altro.",
+        "e352022910e83eebf398": "Sono ben pochi i piaceri che ci sono concessi nella morte. Per fortuna, il dolore è il primo fra tutti.\n\nOggi mi hai compiaciuto, e quindi hai compiaciuto la Signora Oscura. Forse puoi esserci ancora utile."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +466,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "29ca8f40fc1ce3c319fa42a40209c1eedc66a5cd0cdd6197159285c9b8dc4470"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -346,6 +501,10 @@
     },
     "koKR": {
       "description": "자네는 죽음경비병이 아니니, 아직 날 실망시킨 적도 없지.\r\n\r\n무능함을 비교적 덜 보인 상으로, 무능하기 짝이 없는 자들을 직접 벌할 기회를 주지.\r\n\r\n그... {name}라고 했던가? 서두르게. 아니면 자네 이름도 장부에 올려 다른 녀석에게 상으로 줄 테니.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "자네는 죽음의 경비병이 아니니 아직 나를 실망시킨 적도 없군.\n\n무능함을 보이지 않은 보상으로, 그런 재능을 넘치도록 보여 준 자들을 벌할 기회를 주겠네.\n\n서두르게. 이름이 $N 맞나? 그렇지 않으면 내 장부에 자네 이름을 적어 다른 이의 보상으로 삼겠네.",
+        "e352022910e83eebf398": "죽음 속에서 우리에게 허락된 즐거움은 극히 적지. 다행히 고통은 그중 으뜸이야.\n\n오늘 자네는 나를 기쁘게 했고, 따라서 어둠의 여왕님도 기쁘게 했네. 앞으로도 쓸모가 있을지 모르겠군."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -361,6 +520,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -383,6 +552,10 @@
     },
     "plPL": {
       "description": "Nie należysz do Straży Śmierci, a więc jeszcze mnie nie rozczarowałeś.\r\n\r\nW nagrodę za względny brak niekompetencji ukarzesz tych, którzy wykazali się nią w nadmiarze.\r\n\r\nSzybko, {name}, czy tak? Inaczej dopiszę twoje imię do księgi jako nagrodę dla kogoś innego.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Nie należysz do Straży Śmierci, a zatem jeszcze mnie nie rozczarowujesz.\n\nW nagrodę za brak niekompetencji otrzymasz możliwość ukarania tych, którzy wykazali nadmiar takiego talentu.\n\nRuszaj szybko... $N, zgadza się? Inaczej dopiszę twoje imię do księgi jako nagrodę dla kogoś innego.",
+        "e352022910e83eebf398": "Śmierć daje nam niewiele przyjemności. Na szczęście ból należy do najważniejszych.\n\nDziś sprawiasz mi przyjemność, a zatem i Mrocznej Pani. Być może jeszcze się przydasz."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -399,6 +572,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "29ca8f40fc1ce3c319fa42a40209c1eedc66a5cd0cdd6197159285c9b8dc4470"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -424,6 +607,10 @@
     },
     "ptBR": {
       "description": "Você não faz parte da Necroguarda e, por isso, ainda não me decepcionou.\r\n\r\nComo recompensa por sua relativa falta de incompetência, você deverá punir aqueles que demonstraram tais talentos em excesso.\r\n\r\nRápido — {name}, não é? —, senão vou adicionar seu nome aos meus registros e dar a recompensa a outra pessoa.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Você não faz parte da Necroguarda e, por isso, ainda não me decepcionou.\n\nComo recompensa por sua relativa falta de incompetência, você deverá punir aqueles que demonstraram tais talentos em excesso.\n\nRápido — $N, não é? —, senão vou adicionar seu nome aos meus registros e dar a recompensa a outra pessoa.",
+        "e352022910e83eebf398": "São pouquíssimos os prazeres que nos são concedidos na morte. Felizmente, a dor está entre os principais.\n\nVocê me agrada neste dia e, portanto, agrada a Dama Sombria. Talvez você ainda possa ser de alguma utilidade."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -439,6 +626,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -461,6 +660,10 @@
     },
     "ruRU": {
       "description": "Ты не из стражей смерти, так что я в тебе пока не разочаровался.\r\n\r\nВ награду за отсутствие явной некомпетентности ты можешь покарать тех, кто проявил ее в избытке.\r\n\r\nШевелись... как там тебя, {name}? А не то внесу в свой список, и ты станешь наградой для кого-нибудь еще.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Ты не из стражей смерти, так что я в тебе пока не разочаровался.\n\nВ награду за отсутствие явной некомпетентности ты можешь покарать тех, кто проявил ее в избытке.\n\nШевелись... как там тебя, $N? А не то внесу в свой список, и ты станешь наградой для кого-нибудь еще.",
+        "e352022910e83eebf398": "Смерть оставила нам на удивление мало радостей. К счастью, боль – главная из них.\n\nСегодня ты порадовала меня, а значит, и Темную Госпожу. Возможно, ты нам еще пригодишься."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -476,6 +679,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -498,6 +713,10 @@
     },
     "svSE": {
       "description": "Du tillhör inte Dödsvakten och har därför ännu inte gjort mig besviken.\r\n\r\nSom belöning för din relativa brist på inkompetens ska du straffa dem som visat övermått av den varan.\r\n\r\nSkynda nu – {name}, var det? – annars skriver jag ditt namn i liggaren som någon annans belöning.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Du är inte medlem av Deathguard och har därför ännu inte gjort mig besviken.\n\nSom belöning för din brist på inkompetens får du bestraffa dem som visat alltför mycket av den talangen.\n\nSkynda nu... $N, var det väl? Annars lägger jag till ditt namn i min bok som någon annans belöning.",
+        "e352022910e83eebf398": "Döden ger oss dyrbart få nöjen. Lyckligtvis är smärta ett av de främsta.\n\nDu behagar mig i dag och därmed även den Mörka Damen. Kanske kan du vara till ytterligare nytta."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -514,6 +733,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "29ca8f40fc1ce3c319fa42a40209c1eedc66a5cd0cdd6197159285c9b8dc4470"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -537,6 +766,10 @@
     },
     "trTR": {
       "description": "Ölüm Muhafızlarından biri değilsin, dolayısıyla beni henüz hayal kırıklığına uğratmış değilsin.\r\n\r\nBeceriksizliğin görece yokluğunun ödülü olarak, bu yeteneği fazlasıyla sergileyenleri cezalandıracaksın.\r\n\r\nÇabuk ol -- adın {name}, değil mi? -- yoksa adını, ödülünü bir başkasının alacağı defterime yazarım.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Ölüm Muhafızları’ndan değilsin, dolayısıyla beni henüz hayal kırıklığına uğratmadın.\n\nBeceriksizlik göstermediğin için ödülün, bu yeteneği fazlasıyla sergileyenleri cezalandırmak olacak.\n\nÇabuk ol... $N, öyle değil mi? Yoksa adını başkasının ödülü olarak defterime eklerim.",
+        "e352022910e83eebf398": "Ölümde bize tanınan pek az zevk var. Neyse ki acı bunların başında geliyor.\n\nBugün beni memnun ettin, dolayısıyla Karanlık Leydi’yi de memnun ettin. Belki daha fazla işe yarayabilirsin."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -553,6 +786,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -576,6 +819,10 @@
     },
     "ukUA": {
       "description": "Ти не член Стражі смерті, тож ще не встиг розчарувати мене.\r\n\r\nЗа відносну відсутність некомпетентності нагороджу покаранням тих, хто виявив її в надлишку.\r\n\r\nМерщій, тебе ж звуть {name}? Інакше додам твоє ім'я до книги на винагороду комусь іншому.",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "Ти не належиш до Варти смерті, а отже, ще не встиг мене розчарувати.\n\nУ нагороду за відсутність нездарності тобі дозволено покарати тих, хто виявив цей талант надмірно.\n\nПоспішай... $N, чи не так? Інакше я внесу твоє ім’я до свого реєстру як винагороду для когось іншого.",
+        "e352022910e83eebf398": "Смерть дарує нам дуже мало втіх. На щастя, біль — одна з головних.\n\nСьогодні ти мене потішив, а отже, потішив і Темну Пані. Можливо, ти ще станеш у пригоді."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -592,6 +839,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "29ca8f40fc1ce3c319fa42a40209c1eedc66a5cd0cdd6197159285c9b8dc4470"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -617,6 +874,10 @@
     },
     "zhCN": {
       "description": "既然你还不是亡灵卫兵的一员，自然也就还没干出什么让我糟心的蠢事。\r\n\r\n看在你相对还算机灵的份上，我给你个差事——去替我收拾那帮成事不足败事有余的饭桶。\r\n\r\n动作快点。你叫{name}，对吧？别逼我把你的名字也记进悬赏账册，让别人来领你的赏金。",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "你不是亡灵卫兵的一员，因此还没有让我失望。\n\n为了奖励你没有表现出无能，我将让你惩罚那些把这种才能发挥得淋漓尽致的人。\n\n快去吧——你叫$N，是吗？——否则我会把你的名字写进账簿，作为别人的奖赏。",
+        "e352022910e83eebf398": "死亡能带给我们的乐趣少之又少。幸好，痛苦是其中最主要的一种。\n\n你今天让我很满意，也就是让黑暗女王满意。也许你还有更多用处。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -632,6 +893,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -654,6 +925,10 @@
     },
     "zhTW": {
       "description": "你不是亡靈守衛的一員，所以目前為止你的表現還沒讓我失望。\r\n\r\n為了獎勵你還不至於無能透頂，我要讓你去懲罰那些將這項特質發揮得淋漓盡致的蠢貨。\r\n\r\n你叫{name}，對吧？趕快給我動起來，否則我就把你的名字加入懲戒名單，當成給別人的獎勵。",
+      "dialogue": {
+        "1124f4fd9fa1b96dfa58": "你不是死亡守衛的一員，因此還沒有讓我失望。\n\n為了獎勵你沒有表現出無能，我將讓你懲罰那些把這種才能發揮得淋漓盡致的人。\n\n快去吧——你叫$N，對嗎？——否則我會把你的名字寫進帳冊，作為別人的獎賞。",
+        "e352022910e83eebf398": "死亡能帶給我們的樂趣少之又少。幸好，痛苦是其中最主要的一種。\n\n你今天讓我很滿意，也就是讓黑暗女王滿意。也許你還有更多用處。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -669,6 +944,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1124f4fd9fa1b96dfa58": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e352022910e83eebf398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

@@ -1,8 +1,36 @@
 {
   "areaId": 3358,
+  "dialogueContexts": {
+    "5eac12f34b7d3cf440c7": {
+      "lineId": "q:8394:progress~dwarf-male-grim",
+      "npcId": 15351,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "71e81f35f92fbd8b1e95": {
+      "lineId": "q:8394:accept~dwarf-male-grim",
+      "npcId": 15351,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "fe5c6cbb84abc4027fd5": {
+      "lineId": "q:8394:complete~dwarf-male-grim",
+      "npcId": 15351,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vyhrát válku znamená víc než jen přelstít a přemoci protivníka. Vítězství často závisí prostě na tom, kdo dokáže vyrobit víc.\n\nV Arathi Basin máme značné zásoby zdrojů pro tu stranu, která je získá jako první.\n\nPokud zvítězí Aliance, znamená to více mečů a pík pro naše vojáky. Pokud zvítězí Horda, ty meče a píky se vyrobí také, jen budou namířené proti nám! Teď je čas pomoci Alianci v Arathi Basin, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Pověz mi, jaké jsou zprávy z fronty?",
+        "71e81f35f92fbd8b1e95": "Vítězství ve válce znamená víc než jen přechytračit a přemoci soupeře. Často záleží prostě na tom, kdo vyrobí víc než nepřítel.$B$BV Arathi Basin máme značné zásoby zdrojů pro tu stranu, která je získá jako první.$B$BPokud zvítězí Aliance, bude to znamenat více mečů a pík pro naše vojáky. Pokud vyhraje Horda, meče a píky se vyrobí také, jen budou namířené proti nám! Teď je čas pomoci Alianci v Arathi Basin, $N.",
+        "fe5c6cbb84abc4027fd5": "Dobrá práce, vojáku! Jen tak dál a Horda bude utíkat až do Orgrimmaru."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c8d2cd5f42279ab74258ccb106a3901e43f365eec37180bc233ca4e077f383bf"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "At vinde en krig handler om mere end blot at overliste og udkæmpe sin modstander. Sejren afhænger ofte blot af at producere mere end sin fjende.\n\nI Arathi Basin har vi et betydeligt forråd af ressourcer til den side, der først formår at gøre krav på det.\n\nHvis Alliancen sejrer, betyder det flere sværd og piker til vores tropper. Hvis Horden vinder, bliver disse sværd og piker stadig fremstillet, men de vil være rettet mod os! Nu er det tid til at hjælpe Alliancen i Arathi Basin, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Sig mig, hvilke nyheder er der fra fronten?",
+        "71e81f35f92fbd8b1e95": "At vinde en krig handler om mere end at overliste og overmande modstanderen. Sejren afhænger ofte af simpelthen at producere mere end fjenden.$B$BI Arathi Basin findes store mængder ressourcer til den side, der først sikrer sig området.$B$BHvis Alliancen sejrer, betyder det flere sværd og piker til vores tropper. Vinder Horden, bliver våbnene stadig smedet, men de vil blive rettet mod os! Nu er tiden inde til at hjælpe Alliancen i Arathi Basin, $N.",
+        "fe5c6cbb84abc4027fd5": "Godt arbejde, soldat! Fortsæt sådan, så får vi Horden til at flygte hele vejen tilbage til Orgrimmar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +108,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c8d2cd5f42279ab74258ccb106a3901e43f365eec37180bc233ca4e077f383bf"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +146,11 @@
     },
     "deDE": {
       "description": "Es gehört viel mehr dazu, einen Krieg zu gewinnen, als das bloße Überlisten des Gegners oder siegreiche Schlachten. Vielmehr erringt die Seite den Sieg, welche dauerhaft mehr Kriegsgüter als der Gegner produziert.\n\nDas Arathibecken, könnte sich als eine potentielle und äußerst ergiebige Ressourcenquelle für die Seite erweisen, die das Becken zuerst für sich beansprucht. Falls die Allianz den Sieg erringt, könnte man aus den Ressourcen hunderte neuer Waffen herstellen. Sollte allerdings die Horde gewinnen, würden diese Waffen zwar hergestellt, doch würde man sie anschließend auf uns richten! Jetzt ist es an der Zeit, die Allianz im Kampf um das Arathibecken zu unterstützen!",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Sagt mir, welche Neuigkeiten gibt es von der Front?",
+        "71e81f35f92fbd8b1e95": "Es gehört viel mehr dazu, einen Krieg zu gewinnen, als das bloße Überlisten des Gegners oder siegreiche Schlachten. Vielmehr erringt die Seite den Sieg, welche dauerhaft mehr Kriegsgüter als der Gegner produziert.\n\nDas Arathibecken, könnte sich als eine potentielle und äußerst ergiebige Ressourcenquelle für die Seite erweisen, die das Becken zuerst für sich beansprucht. Falls die Allianz den Sieg erringt, könnte man aus den Ressourcen hunderte neuer Waffen herstellen. Sollte allerdings die Horde gewinnen, würden diese Waffen zwar hergestellt, doch würde man sie anschließend auf uns richten! Jetzt ist es an der Zeit, die Allianz im Kampf um das Arathibecken zu unterstützen!",
+        "fe5c6cbb84abc4027fd5": "Gute Arbeit, Soldat. Macht so weiter und die Horde wird schon bald die Flucht Richtung Orgrimmar antreten. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +166,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +206,11 @@
     },
     "enUS": {
       "description": "Winning a war is about more than just outsmarting and outfighting your opponent.  Victory often comes down to simply producing more than your enemy.\n\nWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.\n\nIf the Alliance comes out victorious, it'll mean more swords and pikes for our troops.  If the Horde were to win, those swords and pikes would still get made, they'd just be pointed at us!  Now is the time to help the Alliance in Arathi Basin, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Tell me, what are the news from the front?",
+        "71e81f35f92fbd8b1e95": "Winning a war is about more than just outsmarting and outfighting your opponent.  Victory often comes down to simply producing more than your enemy.$B$BWhat we have in Arathi Basin is a sizeable supply of resources for whichever side manages to claim it first.$B$BIf the Alliance comes out victorious, it'll mean more swords and pikes for our troops.  If the Horde were to win, those swords and pikes would still get made, they'd just be pointed at us!  Now is the time to help the Alliance in Arathi Basin, $N.",
+        "fe5c6cbb84abc4027fd5": "Good work, soldier! Keep it up and we'll have the Horde running all the way back to Orgrimmar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +226,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -158,6 +267,11 @@
     },
     "esES": {
       "description": "Ganar una guerra es algo más que ser más astuto y mejor guerrero que tu oponente. A menudo la victoria llega cuando produces más que tu enemigo.\n\nLo que tenemos en la Cuenca de Arathi es un considerable suministro de recursos a disposición del bando que primero los reclame.\n\nSi la Alianza se alza con la victoria, tendremos más espadas y picos para nuestras tropas. Si ganara la Horda, ¡esas espadas y picos pasarían a amenazarnos! Ha llegado el momento de ayudar a la Alianza en la Cuenca de Arathi, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Dime, ¿cuáles son las noticias del frente?",
+        "71e81f35f92fbd8b1e95": "Ganar una guerra es algo más que ser más astuto y mejor guerrero que tu oponente. A menudo la victoria llega cuando produces más que tu enemigo.\n\nLo que tenemos en la Cuenca de Arathi es un considerable suministro de recursos a disposición del bando que primero los reclame.\n\nSi la Alianza se alza con la victoria, tendremos más espadas y picos para nuestras tropas. Si ganara la Horda, ¡esas espadas y picos pasarían a amenazarnos! Ha llegado el momento de ayudar a la Alianza en la Cuenca de Arathi, $n.",
+        "fe5c6cbb84abc4027fd5": "¡Buen trabajo, soldado!  Sigue así y tendremos a la Horda corriendo hasta Orgrimmar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +287,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -195,6 +327,11 @@
     },
     "esMX": {
       "description": "Ganar una guerra es algo más que ser más astuto y mejor guerrero que tu oponente. A menudo la victoria llega cuando produces más que tu enemigo.\n\nLo que tenemos en la Cuenca de Arathi es un considerable suministro de recursos a disposición del bando que primero los reclame.\n\nSi la Alianza se alza con la victoria, tendremos más espadas y picos para nuestras tropas. Si ganara la Horda, ¡esas espadas y picos pasarían a amenazarnos! Ha llegado el momento de ayudar a la Alianza en la Cuenca de Arathi, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Dime, ¿cuáles son las noticias del frente?",
+        "71e81f35f92fbd8b1e95": "Ganar una guerra es algo más que ser más astuto y mejor guerrero que tu oponente. A menudo la victoria llega cuando produces más que tu enemigo.\n\nLo que tenemos en la Cuenca de Arathi es un considerable suministro de recursos a disposición del bando que primero los reclame.\n\nSi la Alianza se alza con la victoria, tendremos más espadas y picos para nuestras tropas. Si ganara la Horda, ¡esas espadas y picos pasarían a amenazarnos! Ha llegado el momento de ayudar a la Alianza en la Cuenca de Arathi, $n.",
+        "fe5c6cbb84abc4027fd5": "¡Buen trabajo, soldado! Sigue así y haremos que la Horda huya hasta Orgrimmar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +347,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -232,6 +386,11 @@
     },
     "frFR": {
       "description": "Pour gagner une guerre, il ne suffit pas de battre l’adversaire, ou de déjouer ses ruses. Souvent, la victoire est remportée tout simplement en produisant plus de ressources que l’ennemi.\n\nLe bassin Arathi n’est ni plus ni moins qu’un océan de ressources potentielles pour le camp qui parviendra à s’en emparer le premier.\n\nSi l’Alliance l’emporte, cela signifie que nous aurons plus d’épées et de piques pour nos troupes. Si c’est la Horde qui gagne, ces épées et ces piques seront tout de même fabriquées, mais elles seront pointées sur nous ! Il est temps, maintenant, d’aider l’Alliance dans le bassin Arathi, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Dites-moi, quelles sont les nouvelles du front ?",
+        "71e81f35f92fbd8b1e95": "Pour gagner une guerre, il ne suffit pas de battre l'adversaire, ou de déjouer ses ruses. Souvent, la victoire est remportée tout simplement en produisant plus de ressources que l'ennemi.\n\nLe bassin d'Arathi n'est ni plus ni moins qu'un océan de ressources potentielles pour le camp qui parviendra à s'en emparer le premier.\n\nSi l'Alliance l'emporte, cela signifie que nous aurons plus d'épées et de piques pour nos troupes. Si c'est la Horde qui gagne, ces épées et ces piques seront tout de même fabriquées, mais elles seront pointées sur nous ! Il est temps, maintenant, d'aider l'Alliance dans le bassin d'Arathi, $N.",
+        "fe5c6cbb84abc4027fd5": "Bon travail, soldat ! Continuez comme cela, et bientôt nous renverrons la Horde à Orgrimmar au pas de course…"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +406,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -269,6 +446,11 @@
     },
     "hrHR": {
       "description": "Pobjeda u ratu znači više od pukog nadmudrivanja i nadjačavanja protivnika. Često se svodi na to da jednostavno proizvedeš više od neprijatelja.\n\nU Arathi Basinu imamo znatnu zalihu resursa za onu stranu koja je prva uspije osvojiti.\n\nAko Savez pobijedi, to će značiti više mačeva i kopalja za naše trupe. Ako Horda pobijedi, ti će mačevi i koplja svejedno biti izrađeni, samo će biti upereni u nas! Sada je vrijeme da pomogneš Savezu u Arathi Basinu, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Reci mi, kakve su vijesti s bojišnice?",
+        "71e81f35f92fbd8b1e95": "Pobijediti u ratu znači više nego nadmudriti i nadjačati protivnika. Pobjeda često ovisi o tome da jednostavno proizvedeš više od neprijatelja.$B$BU Arathi Basinu nalaze se znatne zalihe resursa za onu stranu koja ih prva osvoji.$B$BAko Savez pobijedi, to će značiti više mačeva i kopalja za naše postrojbe. Ako pobijedi Horda, mačevi i koplja i dalje će se izraditi, samo će biti upereni u nas! Sada je vrijeme da pomogneš Savezu u Arathi Basinu, $N.",
+        "fe5c6cbb84abc4027fd5": "Dobar posao, vojniče! Nastavi tako i natjerat ćemo Hordu da bježi sve do Orgrimmara."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +467,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c8d2cd5f42279ab74258ccb106a3901e43f365eec37180bc233ca4e077f383bf"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +505,11 @@
     },
     "itIT": {
       "description": "Per vincere una guerra bisogna fare qualcosa di più che superare in astuzia il nemico in battaglia. Spesso la vittoria è una semplice questione di produzione.\n\nIl Bacino d'Arathi è una preziosa fonte di risorse per chiunque riesca a conquistarlo.\n\nSe vincesse l'Alleanza, le nostre truppe otterrebbero più spade e lance. Se vincesse l'Orda, quelle spade e quelle lance potrebbero esserci rivolte contro. Dobbiamo aiutare l'Alleanza a prendere il Bacino d'Arathi, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Dimmi, che notizie ci sono dal fronte?",
+        "71e81f35f92fbd8b1e95": "Vincere una guerra non vuol dire solo superare l'avversario in astuzia e in combattimento. Spesso la vittoria si riduce semplicemente a produrre più del nemico.\n\nQuello che abbiamo in Arathi Basin è una notevole riserva di risorse per la parte che riuscirà a impadronirsene per prima.\n\nSe sarà l'Alleanza a vincere, vorrà dire più spade e picche per le nostre truppe. Se vincesse l'Orda, quelle spade e quelle picche verrebbero fabbricate lo stesso, solo che sarebbero puntate contro di noi! È il momento di aiutare l'Alleanza in Arathi Basin, $N.",
+        "fe5c6cbb84abc4027fd5": "Ottimo lavoro, soldato! Continua così e faremo fuggire l’Orda fino a Orgrimmar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +525,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -345,6 +564,11 @@
     },
     "koKR": {
       "description": "전쟁에서 승리하는 것은 단순히 적을 무찌르는 것 이상의 의미가 있네. 승리는 적보다 많은 물자 확보라는 결과로 이어지는 경우가 많지.\n\n아라시 분지에는 상당한 규모의 자원이 있네. 어디든 먼저 움직이는 쪽이 차지할 수 있지.\n\n우리 얼라이언스가 승리하면 더 많은 무기를 제작하여 보급할 수 있다네. 호드가 이기면 우리의 심장을 겨눌 무기를 적의 손에 들려주는 꼴이 되는 거야! 지금은 아라시 분지로 가서 얼라이언스를 도와야 할 때라네.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "말해봐, 앞에서 소식이 뭐야?",
+        "71e81f35f92fbd8b1e95": "전쟁에서 승리하는 것은 단순히 적을 무찌르는 것 이상의 의미가 있네. 승리는 적보다 많은 물자 확보라는 결과로 이어지는 경우가 많지.\n\n아라시 분지에는 상당한 규모의 자원이 있네. 어디든 먼저 움직이는 쪽이 차지할 수 있지.\n\n우리 얼라이언스가 승리하면 더 많은 무기를 제작하여 보급할 수 있다네. 호드가 이기면 우리의 심장을 겨눌 무기를 적의 손에 들려주는 꼴이 되는 거야! 지금은 아라시 분지로 가서 얼라이언스를 도와야 할 때라네.",
+        "fe5c6cbb84abc4027fd5": "수고했어, 병사!  계속 노력하면 호드가 오그리마로 돌아가도록 할 것입니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -360,6 +584,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -382,6 +624,11 @@
     },
     "plPL": {
       "description": "Wygranie wojny wymaga czegoś więcej niż przechytrzenia i pokonania przeciwnika. Zwycięstwo często sprowadza się do wyprodukowania więcej niż wróg.\n\nW Arathi Basin znajdują się znaczne zapasy zasobów dla strony, która pierwsza zdoła je zdobyć.\n\nJeśli zwycięży Przymierze, oznaczać to będzie więcej mieczy i pik dla naszych żołnierzy. Gdyby wygrała Horda, miecze i piki też by powstały, tylko byłyby skierowane przeciw nam! Czas pomóc Przymierzu w Arathi Basin, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Powiedz, jakie wieści z frontu?",
+        "71e81f35f92fbd8b1e95": "Wygranie wojny wymaga czegoś więcej niż przechytrzenia i pokonania przeciwnika. Zwycięstwo często zależy po prostu od produkowania więcej niż wróg.$B$BW Arathi Basin znajdują się znaczne zasoby dla strony, która pierwsza je zdobędzie.$B$BJeśli zwycięży Przymierze, nasze wojska dostaną więcej mieczy i pik. Jeśli wygra Horda, miecze i piki też powstaną, ale zostaną wymierzone w nas! Czas pomóc Przymierzu w Arathi Basin, $N.",
+        "fe5c6cbb84abc4027fd5": "Dobra robota, żołnierzu! Tak trzymaj, a zmusimy Hordę do ucieczki aż do Orgrimmaru."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -398,6 +645,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c8d2cd5f42279ab74258ccb106a3901e43f365eec37180bc233ca4e077f383bf"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -421,6 +683,11 @@
     },
     "ptBR": {
       "description": "Para vencer uma guerra, não basta ser mais inteligente ou mais forte que o inimigo. Muitas vezes, a vitória é obtida simplesmente ao produzir mais que ele.\n\nO que temos na Bacia Arathi é um grande estoque de suprimentos à espera de ser tomado por um dos lados.\n\nSe a Aliança sair vitoriosa, nossas tropas terão mais espadas e lanças. Se a Horda vencer, essas espadas e lanças serão feitas e estarão apontadas contra o nosso exército! Agora é a hora de ajudar a Aliança na Bacia Arathi, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Diga, quais as novidades da linha de frente?",
+        "71e81f35f92fbd8b1e95": "Para vencer uma guerra, não basta ser mais inteligente ou mais forte que o inimigo. Muitas vezes, a vitória é obtida simplesmente ao produzir mais que ele.\n\nO que temos na Bacia Arathi é um grande estoque de suprimentos à espera de ser tomado por um dos lados.\n\nSe a Aliança sair vitoriosa, nossas tropas terão mais espadas e lanças. Se a Horda vencer, essas espadas e lanças serão feitas e estarão apontadas contra o nosso exército! Agora é a hora de ajudar a Aliança na Bacia Arathi, $n.",
+        "fe5c6cbb84abc4027fd5": "Bom trabalho, soldado! Continue assim e, em breve, a Horda estará correndo de volta para Orgrimmar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -436,6 +703,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -458,6 +743,11 @@
     },
     "ruRU": {
       "description": "Чтобы выиграть войну, мало быть быть умнее и хитрее противника. Зачастую победа достается тем, в чьих руках сосредоточены все ресурсы.\n\nРесурсов в Низине Арати – хоть отбавляй. Главное – захватить их первыми.\n\nЕсли победа будет за Альянсом, нашим солдатам достанется больше мечей и копий. Если Орде – те же мечи и копья обратятся против нас! Твой долг помочь Альянсу захватить Низину Арати!",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Скажи мне, какие новости с фронта?",
+        "71e81f35f92fbd8b1e95": "Чтобы выиграть войну, мало быть быть умнее и хитрее противника. Зачастую победа достается тем, в чьих руках сосредоточены все ресурсы.\n\nРесурсов в Низине Арати – хоть отбавляй. Главное – захватить их первыми.\n\nЕсли победа будет за Альянсом, нашим солдатам достанется больше мечей и копий. Если Орде – те же мечи и копья обратятся против нас! Твой долг помочь Альянсу захватить Низину Арати!",
+        "fe5c6cbb84abc4027fd5": "Отлично, солдат! Продолжай в том же духе и Орда побежит от нас в Оргриммар!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -473,6 +763,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -495,6 +803,11 @@
     },
     "svSE": {
       "description": "Att vinna ett krig handlar om mer än att överlista och övervinna sin motståndare. Segern hänger ofta helt enkelt på att man producerar mer än fienden.\n\nDet vi har i Arathibäckenet är ett ansenligt förråd av resurser åt den sida som först lyckas lägga beslag på det.\n\nOm Alliansen segrar blir det fler svärd och pikar åt våra trupper. Om Horden skulle vinna blir svärden och pikarna ändå tillverkade, de skulle bara vara riktade mot oss! Nu är det dags att hjälpa Alliansen i Arathibäckenet, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Säg mig, vad är nytt från fronten?",
+        "71e81f35f92fbd8b1e95": "Att vinna ett krig handlar om mer än att överlista och besegra motståndaren. Segern avgörs ofta av att helt enkelt producera mer än fienden.$B$BI Arathi Basin finns betydande resurser för den sida som först lyckas ta området.$B$BOm Alliansen segrar betyder det fler svärd och pikar till våra trupper. Om Horden vinner kommer svärden och pikarna ändå att tillverkas, men riktas mot oss! Nu är det dags att hjälpa Alliansen i Arathi Basin, $N.",
+        "fe5c6cbb84abc4027fd5": "Bra jobbat, soldat! Fortsätt så får vi Horden att fly hela vägen tillbaka till Orgrimmar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -511,6 +824,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c8d2cd5f42279ab74258ccb106a3901e43f365eec37180bc233ca4e077f383bf"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -536,6 +864,11 @@
     },
     "trTR": {
       "description": "Savaş kazanmak, rakibinden daha akıllı davranıp daha iyi dövüşmekten fazlasıdır. Zafer çoğu zaman düşmandan daha çok üretmeye bakar.\n\nArathi Basin'de, önce ele geçiren taraf için büyük miktarda kaynak var.\n\nAlliance galip gelirse bu askerlerimize daha çok kılıç ve kargı demektir. Horde kazanırsa o kılıçlar ve kargılar yine yapılacak ama bu sefer bize doğrultulacak! Arathi Basin'de Alliance'a yardım etme zamanı geldi, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Söyle, cepheden ne haber var?",
+        "71e81f35f92fbd8b1e95": "Bir savaşı kazanmak, rakibini alt etmekten ve ondan daha iyi savaşmaktan fazlasını gerektirir. Zafer çoğu zaman düşmandan daha fazla üretmeye bağlıdır.$B$BArathi Basin’de, orayı ilk ele geçiren taraf için büyük miktarda kaynak var.$B$Bİttifak kazanırsa askerlerimiz için daha fazla kılıç ve mızrak demektir. Horda kazanırsa kılıçlar ve mızraklar yine yapılacak, ama bize doğrultulacaklar! Arathi Basin’de İttifak’a yardım etme zamanı, $N.",
+        "fe5c6cbb84abc4027fd5": "İyi iş, asker! Böyle devam et; Horda’yı Orgrimmar’a kadar kaçıracağız."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -552,6 +885,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c8d2cd5f42279ab74258ccb106a3901e43f365eec37180bc233ca4e077f383bf"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -575,6 +923,11 @@
     },
     "ukUA": {
       "description": "Перемогти у війні — це не лише перехитрити й перебороти супротивника. Часто перемога залежить від того, хто просто виробляє більше.\n\nУ низині Араті є значні запаси ресурсів для тієї сторони, яка першою їх захопить.\n\nЯкщо переможе Альянс, наші війська отримають більше мечів і пік. Якщо переможе Орда, ці мечі й піки все одно виготовлять, але спрямують уже на нас! Час допомогти Альянсу в низині Араті, {name}.",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "Скажи, які новини з фронту?",
+        "71e81f35f92fbd8b1e95": "Перемогти у війні — це більше, ніж перехитрити й здолати супротивника. Перемога часто залежить від того, хто просто виробить більше за ворога.$B$BВ Arathi Basin є значні запаси ресурсів для тієї сторони, яка першою їх захопить.$B$BЯкщо переможе Альянс, наші війська отримають більше мечів і пік. Якщо переможе Орда, ці мечі й піки теж виготовлять, але спрямують проти нас! Час допомогти Альянсу в Arathi Basin, $N.",
+        "fe5c6cbb84abc4027fd5": "Гарна робота, солдате! Продовжуй у тому ж дусі, і ми змусимо Орду тікати аж до Орґріммара."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -591,6 +944,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c8d2cd5f42279ab74258ccb106a3901e43f365eec37180bc233ca4e077f383bf"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -616,6 +984,11 @@
     },
     "zhCN": {
       "description": "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。\n\n阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。\n\n如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们！去帮助阿拉希盆地的联盟吧，{name}。",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "告诉我，前线那边有什麽消息吗?",
+        "71e81f35f92fbd8b1e95": "要取得战争的胜利，我们要做的并不仅仅是简单地打败敌人，胜利的关键往往取决于双方的战争资源。\n\n阿拉希盆地蕴藏着大量物资，部落和联盟都想抢先夺取这些资源。\n\n如果联盟获胜，我们的军队将获得大量的剑和矛。如果部落获胜，这些武器也一样会被造出来，只不过是由部落的士兵拿在手里，指着我们！去帮助阿拉希盆地的联盟吧，$N。",
+        "fe5c6cbb84abc4027fd5": "干得好，士兵!继续保持下去，部落终将被我们赶回奥格玛。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -631,6 +1004,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -653,6 +1044,11 @@
     },
     "zhTW": {
       "description": "要取得戰爭的勝利，我們要做的並不僅僅是簡單地打敗敵人，勝利的關鍵往往取決於雙方的戰爭資源。\n\n阿拉希盆地蘊藏著大量物資，部落和聯盟都想搶先奪取這些資源。\n\n如果聯盟獲勝，我們的軍隊將獲得大量的劍和矛。如果部落獲勝，這些武器也一樣會被造出來，只不過是由部落的士兵拿在手裡，指著我們!去協助阿拉希盆地的聯盟吧，{name}。",
+      "dialogue": {
+        "5eac12f34b7d3cf440c7": "告訴我，前線有什麼消息？",
+        "71e81f35f92fbd8b1e95": "要取得戰爭的勝利，我們要做的並不僅僅是簡單地打敗敵人，勝利的關鍵往往取決於雙方的戰爭資源。\n\n阿拉希盆地蘊藏著大量物資，部落和聯盟都想搶先奪取這些資源。\n\n如果聯盟獲勝，我們的軍隊將獲得大量的劍和矛。如果部落獲勝，這些武器也一樣會被造出來，只不過是由部落的士兵拿在手裡，指著我們！去協助阿拉希盆地的聯盟吧，$N。",
+        "fe5c6cbb84abc4027fd5": "做得好，士兵！繼續努力，我們會讓部落一路逃回奧格瑪。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -668,6 +1064,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.5eac12f34b7d3cf440c7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71e81f35f92fbd8b1e95": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.fe5c6cbb84abc4027fd5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

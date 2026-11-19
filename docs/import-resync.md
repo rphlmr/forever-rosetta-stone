@@ -57,12 +57,13 @@ Official Forever locales are `enUS`, `deDE`, `esES`, `esMX`, `frFR`, `koKR`, `pt
 `trTR` and `ukUA`; Italian belongs to this additional group for Forever. Code owns these
 sets in [`official_text.py`](../tools/catalogs/official_text.py); configured targets live in
 [`catalogs/quests/metadata.json`](../catalogs/quests/metadata.json).
+Quest and NPC dialogue has a [specific exception](#quest-text-and-captured-objectives).
 
 | Situation | Official target languages | Additional target languages |
 | --- | --- | --- |
 | Applicable localized source exists | Use its exact text and provenance | Use its exact text and provenance |
 | No localized source exists | Use available canonical English with its real provenance | Preserve the existing accepted translation |
-| New authored text is needed | Only book/letter fields under the dedicated policy above | Translate from English only if the applicable eligibility rule passes |
+| New authored text is needed | Only book/letter and quest/NPC dialogue fields under their dedicated policies | Translate from English only if the applicable eligibility rule passes |
 | Eligibility evidence is missing | Use source text; report unresolved source gaps | Keep existing translations; block new AI jobs |
 
 Earlier AI translations in official languages yield to available source text, including
@@ -101,6 +102,13 @@ owned tooltip-key maintenance scope. Unused labels are not coverage backfills; p
 builds still ship every owned GlobalString for dynamic native tooltip lookup.
 
 ## Quest text and captured objectives
+
+Verified English wording owned by a quest or NPC dialogue entry is sufficient for
+provisional AI translations in any supported target locale. This exception covers only
+`dialogue.<key>` fields on quests and NPCs. Use the English text and its recorded context,
+preserve formatting tokens, and mark authored fields as `ai` from `enUS`. A later applicable
+source for the same dialogue identity and locale replaces its AI wording during resync.
+Existing non-AI translations retain their normal source priorities.
 
 Questie English source snapshots with community authorship are valid English context when
 no native English snapshot exists. Verified snapshots take precedence over catalog claims;

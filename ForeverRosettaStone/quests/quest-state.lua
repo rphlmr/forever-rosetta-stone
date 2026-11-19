@@ -42,8 +42,11 @@ function Addon:TransitionQuestInteraction(current, event)
             return current
         end
 
-        -- Without auto-open, a new NPC screen offers the bookmark until the reader is opened once.
-        local mode = (event.autoOpen ~= false or current.mode == "visible") and "visible" or "dismissed"
+        -- Preserve an opened reader when its text refreshes. A new screen uses its own preference.
+        local sameScreen = current.source == event.source and current.questID == event.questID
+            and current.context == event.context
+        local mode = (event.autoOpen ~= false or (sameScreen and current.mode == "visible"))
+            and "visible" or "dismissed"
         return { mode = mode, source = event.source, questID = event.questID, context = event.context,
             dialogueKey = event.dialogueKey }
     end

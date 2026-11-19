@@ -1,8 +1,30 @@
 {
   "areaId": 24,
+  "dialogueContexts": {
+    "0fddbfce7e8736c3e3cc": {
+      "contributionId": 2793,
+      "lineId": "q:91741:progress",
+      "npcId": 951,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f20580877c6e13184fc7": {
+      "contributionId": 1461,
+      "lineId": "q:91741:complete",
+      "npcId": 951,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Jeden z koboldů upustil tuhle knihu. Vypadá to, že se ji kobold možná pokusil sníst.\n\nBratr Paxton uvnitř opatství udržuje malou knihovnu. Ta kniha musí pocházet odtamtud.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Co to máš? Vypadá to jako jedna z mých knih.",
+        "f20580877c6e13184fc7": "Hej! Jak ses k tomu dostal? Má být na polici! Ach ne, koboldi mi zase kradou knihy. Určitě je chtějí sníst!\n\nDěkuji za vrácení knihy, ale co si počnu se zbytkem své ztracené sbírky?"
+      },
       "summary": "Vrať knihu bratru Paxtonovi.",
       "title": "Ohlodaná kniha",
       "translationMetadata": {
@@ -12,6 +34,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9dd5e7933b4314082335acbc0c43b4853d522fb0f3af42cca5b4782795b4f751"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +64,10 @@
     },
     "daDK": {
       "description": "<En af kobolderne tabte denne bog. Det ser ud, som om kobolden kan have forsøgt at spise den.\r\n\r\nBroder Paxton inde i klostret vedligeholder et lille bibliotek. Bogen må komme derfra.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Hvad har du der? Det ligner en af mine bøger.",
+        "f20580877c6e13184fc7": "Hey! Hvordan fik du fat i den? Den skulle stå på hylden! Åh nej, kobolderne har stjålet mine bøger igen. De vil sikkert spise dem!\n\nTak, fordi du bragte bogen tilbage, men hvad skal jeg gøre med resten af min forsvundne samling?"
+      },
       "summary": "Bring bogen tilbage til Brother Paxton.",
       "title": "En gnavet bog",
       "translationMetadata": {
@@ -41,6 +77,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9dd5e7933b4314082335acbc0c43b4853d522fb0f3af42cca5b4782795b4f751"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +105,10 @@
     },
     "deDE": {
       "description": "<Einer der Kobolde hat dieses Buch fallen lassen. Es scheint so, als hätte der Kobold versucht, es zu essen.\r\n\r\nBruder Paxton kümmert sich in der Abtei um eine kleine Bibliothek. Von dort muss das Buch stammen.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Was habt Ihr denn da? Das sieht aus wie eines meiner Bücher.",
+        "f20580877c6e13184fc7": "Hey! Wo habt Ihr das denn her? Das sollte hier im Regal stehen! Ach du meine Güte, die Kobolde haben schon wieder meine Bücher gestohlen. Sie wollen sie wohl essen!\n\nDanke, dass Ihr das Buch zurückgebracht habt. Aber was mache ich mit dem Rest meiner fehlenden Sammlung?"
+      },
       "summary": "Bringt das Buch zu Bruder Paxton zurück.",
       "title": "Angeknabbertes Buch",
       "translationMetadata": {
@@ -67,6 +117,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +145,10 @@
     },
     "enUS": {
       "description": "<One of the kobolds dropped this book. It looks like the kobold might have tried to eat it.\r\n\r\nBrother Paxton inside the abbey has a small library he maintains. The book must have come from there.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "What's that you got there? It looks like one of my books.",
+        "f20580877c6e13184fc7": "Hey! How did you end up with that? It's supposed to be on the shelf! Oh dear, the kobolds have been stealing my books again. They must want to eat them!\n\nThanks for bringing back the book, but what will I do about the rest of my missing collection?"
+      },
       "summary": "Return the book to Brother Paxton.",
       "title": "Nibbled-On Book",
       "translationMetadata": {
@@ -91,6 +157,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +186,10 @@
     },
     "esES": {
       "description": "<Uno de los kóbolds ha dejado caer este libro. Parece que intentó comérselo.\r\n\r\nEl hermano Paxton está al cargo de una pequeña biblioteca en la abadía. Puede que el libro proceda de allí>.",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "¿Qué tienes ahí? Parece uno de mis libros.",
+        "f20580877c6e13184fc7": "¿De dónde has sacado esto? ¡Se supone que tiene que estar en su estantería! Ay, señor, los kóbolds me han vuelto a robar los libros. ¡Seguro que se los quieren comer!\n\nGracias por devolvérmelo, pero ¿qué voy a hacer con el resto que falta de la colección?"
+      },
       "summary": "Devuelve el libro al hermano Paxton.",
       "title": "El libro mordisqueado",
       "translationMetadata": {
@@ -116,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +226,10 @@
     },
     "esMX": {
       "description": "<Uno de los kóbolds dejó caer este libro, y parece que trató de comerlo.\r\n\r\nEl hermano Paxton tiene una pequeña biblioteca dentro de la abadía. El libro debe haber salido de allí.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "¿Qué tienes ahí? Se parece a uno de mis libros.",
+        "f20580877c6e13184fc7": "¡Oye! ¿Cómo conseguiste eso? Se supone que debía estar en el estante. Ay, cielos... los kóbolds han vuelto a robar mis libros. ¡Seguro quieren devorarlos!\n\nGracias por devolver el libro, pero ¿cómo recuperaré los demás que faltan de mi colección?"
+      },
       "summary": "Regrésale el libro al hermano Paxton.",
       "title": "Libro mordisqueado",
       "translationMetadata": {
@@ -140,6 +238,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +266,10 @@
     },
     "frFR": {
       "description": "<Un des Kobolds a laissé échapper ce livre. Il semblerait qu’il ait essayé de le manger.\r\n\r\nFrère Paxton, de l’abbaye, tient une petite bibliothèque. Le livre devait venir de là.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Qu’est-ce que vous avez là ? On dirait un de mes livres.",
+        "f20580877c6e13184fc7": "Hé, mais où est-ce que vous avez déniché ça ? Il était censé être en rayon ! Oh là là, les Kobolds ont recommencé à me voler des livres. Ça doit être pour les manger !\n\nMerci de me l’avoir rapporté, mais comment je vais faire pour les autres qui ont disparu ?"
+      },
       "summary": "Rapportez le livre au frère Paxton.",
       "title": "Un livre grignoté",
       "translationMetadata": {
@@ -164,6 +278,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +306,10 @@
     },
     "hrHR": {
       "description": "<Jedan od kobolda ispustio je ovu knjigu. Izgleda kao da ju je kobold možda pokušao pojesti.\r\n\r\nBrat Paxton u opatiji održava malu knjižnicu. Knjiga mora biti odande.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Što to imaš? Izgleda kao jedna od mojih knjiga.",
+        "f20580877c6e13184fc7": "Hej! Kako si došao do toga? Trebala bi biti na polici! Jao, koboldi mi opet kradu knjige. Sigurno ih žele pojesti!\n\nHvala što si vratio knjigu, ali što ću s ostatkom nestale zbirke?"
+      },
       "summary": "Vrati knjigu bratu Paxtonu.",
       "title": "Izgrickana knjiga",
       "translationMetadata": {
@@ -189,6 +319,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9dd5e7933b4314082335acbc0c43b4853d522fb0f3af42cca5b4782795b4f751"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +347,10 @@
     },
     "itIT": {
       "description": "<Uno dei coboldi ha lasciato cadere questo libro. Sembra che abbia provato a mangiarlo.\n\nFratello Paxton custodisce una piccola biblioteca all'interno dell'abbazia. Il libro deve provenire da lì.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Cos'hai lì? Sembra uno dei miei libri.",
+        "f20580877c6e13184fc7": "Ehi! Come ti è capitato tra le mani? Dovrebbe stare sullo scaffale! Povero me, i coboldi mi hanno rubato di nuovo i libri. Di sicuro vogliono mangiarseli!\n\nGrazie per avermi riportato il libro, ma come faccio con il resto della mia collezione scomparsa?"
+      },
       "summary": "Restituisci il libro a Fratello Paxton.",
       "title": "Libro rosicchiato",
       "translationMetadata": {
@@ -216,6 +360,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9dd5e7933b4314082335acbc0c43b4853d522fb0f3af42cca5b4782795b4f751"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -233,6 +389,10 @@
     },
     "koKR": {
       "description": "<코볼트 한 마리가 떨어뜨린 책입니다. 먹어 보려고 한 듯합니다.\r\n\r\n팩스턴 수사가 수도원의 작은 도서관을 관리하고 있습니다. 이 책도 그곳에서 나온 게 분명합니다.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "거기 가진 게 뭔가? 내 책 중 하나처럼 보이는군.",
+        "f20580877c6e13184fc7": "이봐! 그걸 어떻게 갖게 된 건가? 책장에 있어야 할 텐데! 이런, 코볼트들이 또 내 책을 훔쳐 갔군. 분명 먹으려는 게야!\n\n책을 돌려줘서 고맙지만, 나머지 잃어버린 책들은 어쩌지?"
+      },
       "summary": "책을 수사 팩스턴에게 반환해야 합니다.",
       "title": "갉아 먹은 책",
       "translationMetadata": {
@@ -241,6 +401,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +427,10 @@
     },
     "plPL": {
       "description": "<Jeden z koboldów upuścił tę księgę. Wygląda na to, że kobold próbował ją zjeść.\n\nBrat Paxton prowadzi w opactwie niewielką bibliotekę. Księga musi być stamtąd.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Co tam masz? Wygląda jak jedna z moich książek.",
+        "f20580877c6e13184fc7": "Hej! Skąd to masz? Ta książka powinna stać na półce! O rety, koboldy znowu kradną moje książki. Na pewno chcą je zjeść!\n\nDziękuję za zwrot książki, ale co zrobię z resztą zaginionej kolekcji?"
+      },
       "summary": "Zwróć księgę bratu Paxtonowi.",
       "title": "Nadgryziona księga",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "1.1.1",
             "sourceTextSha256": "9dd5e7933b4314082335acbc0c43b4853d522fb0f3af42cca5b4782795b4f751"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -287,6 +471,10 @@
     },
     "ptBR": {
       "description": "<Um dos kobolds deixou este livro cair. Parece que o kobold pode ter tentado devorá-lo.\r\n\r\nO Irmão Paxeco mantém uma pequena biblioteca no interior da abadia. O livro deve ter vindo de lá.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "O que você tem aí? Parece um dos meus livros.",
+        "f20580877c6e13184fc7": "Ei, como isso foi parar com você? Devia estar na estante! Minha nossa, os kobolds estão roubando meus livros de novo. Devem querer comê-los!\n\nObrigado por trazer este livro de volta, mas o que eu vou fazer a respeito do resto da minha coleção perdida?"
+      },
       "summary": "Devolva o livro ao Irmão Paxeco.",
       "title": "Livro mordiscado",
       "translationMetadata": {
@@ -295,6 +483,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -311,6 +511,10 @@
     },
     "ruRU": {
       "description": "<Один из кобольдов уронил эту книгу. Похоже, он пытался ее съесть.\r\n\r\nУ брата Пакстона в аббатстве есть небольшая библиотека. Вероятно, эта книга оттуда.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Что у тебя там? Похоже на одну из моих книг.",
+        "f20580877c6e13184fc7": "Эй, откуда у тебя это? Она должна стоять на полке! О нет, кобольды опять принялись воровать мои книги. Наверняка пытаются их съесть!\n\nСпасибо, что вернул эту книгу, но как же мне быть с остатками пропавшей коллекции?"
+      },
       "summary": "Верните книгу брату Пакстону.",
       "title": "Погрызенная книга",
       "translationMetadata": {
@@ -319,6 +523,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -335,6 +551,10 @@
     },
     "svSE": {
       "description": "<En av kobolderna tappade den här boken. Kobolden verkar ha försökt äta den.\r\n\r\nBroder Paxton inne i klostret sköter ett litet bibliotek. Boken måste komma därifrån.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Vad har du där? Det ser ut som en av mina böcker.",
+        "f20580877c6e13184fc7": "Hallå! Hur fick du tag på den där? Den ska stå på hyllan! Å nej, kobolderna har stulit mina böcker igen. De vill säkert äta upp dem!\n\nTack för att du tog tillbaka boken, men vad ska jag göra åt resten av min försvunna samling?"
+      },
       "summary": "Lämna tillbaka boken till Brother Paxton.",
       "title": "Söndergnagd bok",
       "translationMetadata": {
@@ -344,6 +564,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9dd5e7933b4314082335acbc0c43b4853d522fb0f3af42cca5b4782795b4f751"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -362,6 +592,10 @@
     },
     "trTR": {
       "description": "<Kobold'lardan biri bu kitabı düşürdü. Görünüşe göre kobold onu yemeye çalışmış olabilir.\r\n\r\nManastırın içindeki Birader Paxton'ın bakımını yaptığı küçük bir kütüphane var. Kitap oradan gelmiş olmalı.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Elindeki ne? Kitaplarımdan birine benziyor.",
+        "f20580877c6e13184fc7": "Hey! O senin eline nasıl geçti? Rafta olması gerekiyordu! Aman tanrım, koboldlar kitaplarımı yine çalmış. Kesin onları yemek istiyorlar!\n\nKitabı geri getirdiğin için teşekkürler ama kayıp koleksiyonumun geri kalanı için ne yapacağım?"
+      },
       "summary": "Kitabı Birader Paxton'a geri ver.",
       "title": "Kemirilmiş Kitap",
       "translationMetadata": {
@@ -371,6 +605,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9dd5e7933b4314082335acbc0c43b4853d522fb0f3af42cca5b4782795b4f751"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -388,6 +632,10 @@
     },
     "ukUA": {
       "description": "<Один із кобольдів упустив цю книгу. Схоже, кобольд намагався її з'їсти.\n\nБрат Пакстон доглядає невелику бібліотеку в абатстві. Мабуть, книга звідти.>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "Що це в тебе? Схоже на одну з моїх книжок.",
+        "f20580877c6e13184fc7": "Гей! Як вона до тебе потрапила? Вона мала стояти на полиці! Ох лишенько, кобольди знову крадуть мої книжки. Певно, хочуть їх з’їсти!\n\nДякую, що повернув книжку, але що ж робити з рештою зниклої колекції?"
+      },
       "summary": "Поверніть книгу братові Пакстону.",
       "title": "Погризена книга",
       "translationMetadata": {
@@ -398,6 +646,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "9dd5e7933b4314082335acbc0c43b4853d522fb0f3af42cca5b4782795b4f751"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -418,6 +676,10 @@
     },
     "zhCN": {
       "description": "<一个狗头人掉落了这本书。看这满是牙印的样子，它八成还试着啃过。\r\n\r\n修道院里的帕克斯顿修士平时负责打理一座小图书馆。这本书肯定是从他那儿来的。>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "嘿，你手里拿的是什么？看起来像是我的一本书。",
+        "f20580877c6e13184fc7": "嘿！这书怎么会在你手上？它本该好好地待在书架上才对！天哪，狗头人又来偷我的书了。它们肯定是想把书当饭吃！\n\n谢谢你把这本书送回来，可我剩下那些被偷走的藏书该怎么办啊？"
+      },
       "summary": "将书归还给帕克斯顿修士。",
       "title": "被啃过的书",
       "translationMetadata": {
@@ -426,6 +688,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -442,6 +716,10 @@
     },
     "zhTW": {
       "description": "<有個狗頭人掉了這本書。那個狗頭人似乎曾打算吃了它。\r\n\r\n修道院內的帕克斯頓修士有個小小的私人圖書館。這本書一定是來自那裡。>",
+      "dialogue": {
+        "0fddbfce7e8736c3e3cc": "你拿的是什麼？看起來像我的一本書。",
+        "f20580877c6e13184fc7": "嘿！你怎麼拿到這本書的？它應該在書架上才對！天啊，狗頭人又偷了我的書。牠們一定是想把書吃掉！\n\n謝謝你把書帶回來，可是我該怎麼找回收藏中其他失蹤的書呢？"
+      },
       "summary": "將書還給帕克斯頓修士。",
       "title": "被啃過的書",
       "translationMetadata": {
@@ -450,6 +728,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0fddbfce7e8736c3e3cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f20580877c6e13184fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

@@ -1,8 +1,56 @@
 {
   "areaId": 1537,
+  "dialogueContexts": {
+    "0ae7b40d2fd77cf91f88": {
+      "lineId": "q:8371:progress:m~dwarf-male-grim",
+      "npcId": 15351,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "4b858438e4798243c2df": {
+      "lineId": "q:8371:accept:f~dwarf-male-grim",
+      "npcId": 15351,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "53cf8931b50e6e823598": {
+      "lineId": "q:8371:accept:m~dwarf-male-grim",
+      "npcId": 15351,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "65a26d4d0382897f065b": {
+      "lineId": "q:8371:complete~dwarf-male-grim",
+      "npcId": 15351,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "e0b255eb81a94540ad65": {
+      "lineId": "q:8371:progress:f~dwarf-male-grim",
+      "npcId": 15351,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Poslyš, už proti Hordě nevedeme jen izolované bitvy.\n\nVítězství na jedné frontě znamená odepřít Hordě suroviny, které by proti nám použila v jiné bitvě. Stejně tak prohra v jakékoliv potyčce může poskytnout výhodu našemu protivníkovi kdekoliv jinde na světě.\n\nAliance potřebuje víc bojovníků s takovým rozhledem... skutečně ostřílené veterány! {name}, vrať se ke mně, až si odsloužíš své v boji proti Hordě na všech našich aktivních bojištích.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Jak se ti daří na cestách, $g chlapče:děvče;?",
+        "4b858438e4798243c2df": "Proti Hordě už nebojujeme jen v oddělených bitvách, $g chlapče:děvče;.$B$BVítězství na jedné frontě připraví Hordu o zdroje, které by proti nám použila jinde. Stejně tak může prohra v jedné bitvě poskytnout nepříteli výhodu na druhém konci světa.$B$BAliance potřebuje více bojovníků, kteří chápou svět v souvislostech... skutečně ostřílených veteránů! $N, vrať se, až budeš proti Hordě bojovat na všech našich aktivních bojištích.",
+        "53cf8931b50e6e823598": "Proti Hordě už nebojujeme jen v oddělených bitvách, $g chlapče:děvče;.$B$BVítězství na jedné frontě připraví Hordu o zdroje, které by proti nám použila jinde. Stejně tak může prohra v jedné bitvě poskytnout nepříteli výhodu na druhém konci světa.$B$BAliance potřebuje více bojovníků, kteří chápou svět v souvislostech... skutečně ostřílených veteránů! $N, vrať se, až budeš proti Hordě bojovat na všech našich aktivních bojištích.",
+        "65a26d4d0382897f065b": "Ty nikdy nezklameš, $N! Naučil ses víc, než vyjadřují bezvýznamné medaile a pochvaly. Získal jsi znalosti, které přicházejí jen se zkušenostmi a otužením v boji.$B$BVedl sis dobře, $c. Jsi skutečný hrdina Aliance!",
+        "e0b255eb81a94540ad65": "Jak se ti daří na cestách, $g chlapče:děvče;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -34,6 +82,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b1f8e1741b99f940c1f1196c9f4a21b78bd7a6d1fa02fe587266d4e67501c6ae"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -73,6 +146,13 @@
     },
     "daDK": {
       "description": "Vi kæmper ikke længere isolerede slag mod Horden, $gknægt:pige;.\n\nSejr på én front betyder, at vi nægter Horden ressourcer, de ville bruge mod os i et andet slag. På samme måde kan tabet af et hvilket som helst slag give vores modstander en fordel et andet sted i verden.\n\nAlliancen har brug for flere krigere med denne verdensforståelse... virkeligt erfarne veteraner! {name}, kom tilbage til mig, når du har tjent mod Horden på alle vores aktive slagmarker.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Hvordan går dine rejser, $gknægt:pige;?",
+        "4b858438e4798243c2df": "Vi kæmper ikke længere isolerede slag mod Horden, $gknægt:pige;.$B$BEn sejr på én front fratager Horden ressourcer, den kunne bruge mod os i et andet slag. På samme måde kan et nederlag give fjenden en fordel et andet sted i verden.$B$BAlliancen behøver flere kæmpere med denne forståelse af verden... virkelig erfarne veteraner! $N, vend tilbage, når du har kæmpet mod Horden på alle vores aktive slagmarker.",
+        "53cf8931b50e6e823598": "Vi kæmper ikke længere isolerede slag mod Horden, $gknægt:pige;.$B$BEn sejr på én front fratager Horden ressourcer, den kunne bruge mod os i et andet slag. På samme måde kan et nederlag give fjenden en fordel et andet sted i verden.$B$BAlliancen behøver flere kæmpere med denne forståelse af verden... virkelig erfarne veteraner! $N, vend tilbage, når du har kæmpet mod Horden på alle vores aktive slagmarker.",
+        "65a26d4d0382897f065b": "Du skuffer aldrig, $N! Det, du har lært, rækker ud over små medaljer og hædersbevisninger. Det er noget, der kun kommer med erfaring og hærdning på slagmarken.$B$BDu har klaret dig godt, $c. Du er en sand helt for Alliancen!",
+        "e0b255eb81a94540ad65": "Hvordan går dine rejser, $gknægt:pige;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -104,6 +184,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf03546083528e091b67736c912ba6354b36788e5596d618f5001ee16f16f9ba"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -142,6 +247,13 @@
     },
     "deDE": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Wie geht's voran, Bursche?",
+        "4b858438e4798243c2df": "Wir kämpfen nicht mehr in vereinzelten Schlachten gegen die Horde, Mädel.\n\nDer gesamte Sieg an einer Front bedeutet der Horde die Ressourcen abzusprechen, die sie ansonsten in einer anderen Schlacht gegen uns verwenden würden. Ebenso könnte das Aufgeben in was auch immer für einer Schlacht unserem Gegner andernorts in der Welt einen Vorteil verschaffen.\n\nDie Allianz benötigt mehr Kämpfer mit diesem globalen Verständnis... wirklich bewährte Veteranen! $n, kommt zu mir zurück, wenn Ihr Euch gegen die Horde auf all unseren aktiven Schlachtfeldern bewährt habt.",
+        "53cf8931b50e6e823598": "Wir kämpfen nicht mehr in vereinzelten Schlachten gegen die Horde, Junge.\n\nDer gesamte Sieg an einer Front bedeutet der Horde die Ressourcen abzusprechen, die sie ansonsten in einer anderen Schlacht gegen uns verwenden würden. Ebenso könnte das Aufgeben in was auch immer für einer Schlacht unserem Gegner andernorts in der Welt einen Vorteil verschaffen.\n\nDie Allianz benötigt mehr Kämpfer mit diesem globalen Verständnis... wirklich bewährte Veteranen! $n, kommt zu mir zurück, wenn Ihr Euch gegen die Horde auf all unseren aktiven Schlachtfeldern bewährt habt.",
+        "65a26d4d0382897f065b": "Ihr habt nicht enttäuscht, $N! Was Ihr gelernt habt, geht über unbedeutende Medaillen und Auszeichnungen hinaus. Was Ihr gelernt habt, erlangt man nur durch Erfahrung und Abhärtung auf dem Schlachtfeld. \n \n Ihr habt Euch gut geschlagen, $C. Ihr seid ein wahrer Held der Allianz!",
+        "e0b255eb81a94540ad65": "Wie geht's voran, Bursche?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +286,36 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -216,6 +358,13 @@
     },
     "enUS": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "How are yer travels faring $g laddie:lass;?",
+        "4b858438e4798243c2df": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.$B$BVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.$B$BThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  $N, come back to me after you've served against the Horde at all of our active battlegrounds.",
+        "53cf8931b50e6e823598": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.$B$BVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.$B$BThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  $N, come back to me after you've served against the Horde at all of our active battlegrounds.",
+        "65a26d4d0382897f065b": "You're not one to disappoint, $N!  What you've learned goes beyond petty medals and commendations.  What you've learned is what can only come with experience and the hardening of one's temper in the field of battle.$B$BYou've done well, $c.  You're a true hero of the Alliance!",
+        "e0b255eb81a94540ad65": "How are yer travels faring $g laddie:lass;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -248,6 +397,36 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -290,6 +469,13 @@
     },
     "esES": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "¿Qué tal van tus viajes muchacho?",
+        "4b858438e4798243c2df": "Ya no estamos combatiendo en batallas aisladas contra la Horda, muchacha.\n\nLa victoria en uno de los frentes supone negar a la Horda recursos que utilizarían contra nosotros en otra batalla. Por eso mismo, perder una batalla daría ventaja a nuestros adversarios en algún otro lugar del mundo.\n\nLa Alianza necesita más combatientes que comprendan esta realidad… ¡veteranos realmente avezados! $N, vuelve a verme cuando hayas servido contra la Horda en todos nuestros campos de batalla activos.",
+        "53cf8931b50e6e823598": "Ya no estamos combatiendo en batallas aisladas contra la Horda, muchacho.\n\nLa victoria en uno de los frentes supone negar a la Horda recursos que utilizarían contra nosotros en otra batalla. Por eso mismo, perder una batalla daría ventaja a nuestros adversarios en algún otro lugar del mundo.\n\nLa Alianza necesita más combatientes que comprendan esta realidad… ¡veteranos realmente avezados! $N, vuelve a verme cuando hayas servido contra la Horda en todos nuestros campos de batalla activos.",
+        "65a26d4d0382897f065b": "¡Nunca nos defraudas, $n! Lo que has aprendido es más importante que todas las medallas y sellos de honor. Lo que has aprendido es algo que solo viene de manos de la experiencia y del esfuerzo en el campo de batalla.\n\nLo has hecho bien. ¡Eres un auténtico héroe de la Alianza!",
+        "e0b255eb81a94540ad65": "¿Qué tal van tus viajes muchacha?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -322,6 +508,36 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -364,6 +580,13 @@
     },
     "esMX": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "¿Qué tal van tus viajes muchacho?",
+        "4b858438e4798243c2df": "Ya no estamos combatiendo en batallas aisladas contra la Horda, muchacha.\n\nLa victoria en uno de los frentes supone negar a la Horda recursos que utilizarían contra nosotros en otra batalla. Por eso mismo, perder una batalla daría ventaja a nuestros adversarios en algún otro lugar del mundo.\n\nLa Alianza necesita más combatientes que comprendan esta realidad… ¡veteranos realmente avezados! $N, vuelve a verme cuando hayas servido contra la Horda en todos nuestros campos de batalla activos.",
+        "53cf8931b50e6e823598": "Ya no estamos combatiendo en batallas aisladas contra la Horda, muchacho.\n\nLa victoria en uno de los frentes supone negar a la Horda recursos que utilizarían contra nosotros en otra batalla. Por eso mismo, perder una batalla daría ventaja a nuestros adversarios en algún otro lugar del mundo.\n\nLa Alianza necesita más combatientes que comprendan esta realidad… ¡veteranos realmente avezados! $N, vuelve a verme cuando hayas servido contra la Horda en todos nuestros campos de batalla activos.",
+        "65a26d4d0382897f065b": "¡No eres de los que decepcionan, $n! Lo que has aprendido va más allá de insignificantes medallas y elogios. Lo que has aprendido es lo que solo se obtiene con la experiencia y el endurecimiento del temperamento en el campo de batalla.\n\nLo has hecho bien, $c. ¡Eres un verdadero héroe de la Alianza!",
+        "e0b255eb81a94540ad65": "¿Qué tal van tus viajes muchacha?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -396,6 +619,36 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -438,6 +691,13 @@
     },
     "frFR": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Comment se déroulent vos voyages gamin ?",
+        "4b858438e4798243c2df": "Nous ne menons plus des combats isolés contre la Horde, jeune fille. La victoire sur un front signifie que nous enlevons à notre adversaire les ressources qu’il utiliserait contre nous dans une autre bataille. De la même façon, le fait d'abandonner un engagement pourrait donner l’avantage à la Horde en un autre point du monde.\n\nL’Alliance a besoin de combattants ayant compris cette vérité… De vrais vétérans expérimentés ! $N, revenez me voir quand vous aurez combattu la Horde sur tous les champs de bataille.",
+        "53cf8931b50e6e823598": "Nous ne menons plus des combats isolés contre la Horde, jeune homme. La victoire sur un front signifie que nous enlevons à notre adversaire les ressources qu’il utiliserait contre nous dans une autre bataille. De la même façon, le fait d'abandonner un engagement pourrait donner l’avantage à la Horde en un autre point du monde.\n\nL’Alliance a besoin de combattants ayant compris cette vérité… De vrais vétérans expérimentés ! $N, revenez me voir quand vous aurez combattu la Horde sur tous les champs de bataille.",
+        "65a26d4d0382897f065b": "Tu n'es pas du genre à décevoir, $N !  Ce que vous avez appris va au-delà des petites médailles et des citations.  Ce que tu as appris, c'est ce qui ne peut venir qu'avec l'expérience et l'endurcissement sur le champ de bataille.\n\nVous avez bien travaillé, $c.  Tu es un véritable héros de l'Alliance !",
+        "e0b255eb81a94540ad65": "Comment se déroulent vos voyages fille ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -470,6 +730,36 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -512,6 +802,13 @@
     },
     "hrHR": {
       "description": "Više ne vodimo izdvojene bitke protiv Horde, $gmomče:djevojko;.\n\nPobjeda na jednoj bojišnici znači da Hordi uskraćujemo resurse koje bi upotrijebila protiv nas u drugoj bitci. Isto tako, gubitak bilo koje bitke mogao bi protivniku dati prednost negdje drugdje u svijetu.\n\nSavezu treba više boraca s takvim razumijevanjem svijeta... doista iskusnih veterana! {name}, vrati mi se nakon što završiš službu protiv Horde na svim našim aktivnim bojištima.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Kako napreduju tvoja putovanja, $gmomče:djevojko;?",
+        "4b858438e4798243c2df": "Više ne vodimo zasebne bitke protiv Horde, $gmomče:djevojko;.$B$BPobjedom na jednoj bojišnici uskraćujemo Hordi resurse koje bi protiv nas upotrijebila u drugoj bitci. Isto tako, poraz u jednoj bitci može protivniku donijeti prednost negdje drugdje u svijetu.$B$BSavezu treba više boraca koji tako razumiju svijet... pravih iskusnih veterana! $N, vrati mi se nakon što se boriš protiv Horde na svim našim aktivnim bojištima.",
+        "53cf8931b50e6e823598": "Više ne vodimo zasebne bitke protiv Horde, $gmomče:djevojko;.$B$BPobjedom na jednoj bojišnici uskraćujemo Hordi resurse koje bi protiv nas upotrijebila u drugoj bitci. Isto tako, poraz u jednoj bitci može protivniku donijeti prednost negdje drugdje u svijetu.$B$BSavezu treba više boraca koji tako razumiju svijet... pravih iskusnih veterana! $N, vrati mi se nakon što se boriš protiv Horde na svim našim aktivnim bojištima.",
+        "65a26d4d0382897f065b": "Ti nikad ne razočaraš, $N! Ono što si naučio nadilazi sitne medalje i pohvale. To dolazi samo s iskustvom i kaljenjem na bojištu.$B$BDobro si učinio, $c. Ti si pravi junak Saveza!",
+        "e0b255eb81a94540ad65": "Kako napreduju tvoja putovanja, $gmomče:djevojko;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -543,6 +840,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf03546083528e091b67736c912ba6354b36788e5596d618f5001ee16f16f9ba"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -581,6 +903,13 @@
     },
     "itIT": {
       "description": "Non combattiamo più battaglie isolate contro l'Orda, $gragazzo:ragazza;.\n\nVincere su un fronte significa negare all'Orda risorse che userebbe contro di noi in un'altra battaglia. Allo stesso modo, perdere una qualsiasi battaglia potrebbe dare un vantaggio al nostro avversario altrove nel mondo.\n\nL'Alleanza ha bisogno di più combattenti con questa visione del mondo... veterani davvero esperti! {name}, torna da me dopo aver combattuto contro l'Orda in tutti i nostri campi di battaglia attivi.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Come ti vanno i viaggi, ragazzo?",
+        "4b858438e4798243c2df": "Non combattiamo più battaglie isolate contro l'Orda, ragazza.\n\nVincere su un fronte vuol dire togliere all'Orda risorse che userebbe contro di noi in un'altra battaglia. Allo stesso modo, perdere una battaglia qualsiasi potrebbe dare il vantaggio all'avversario da qualche altra parte del mondo.\n\nAll'Alleanza servono più combattenti con questa visione d'insieme del mondo... veterani davvero navigati! $N, torna da me dopo aver prestato servizio contro l'Orda su tutti i nostri campi di battaglia attivi.",
+        "53cf8931b50e6e823598": "Non combattiamo più battaglie isolate contro l'Orda, ragazzo.\n\nVincere su un fronte vuol dire togliere all'Orda risorse che userebbe contro di noi in un'altra battaglia. Allo stesso modo, perdere una battaglia qualsiasi potrebbe dare il vantaggio all'avversario da qualche altra parte del mondo.\n\nAll'Alleanza servono più combattenti con questa visione d'insieme del mondo... veterani davvero navigati! $N, torna da me dopo aver prestato servizio contro l'Orda su tutti i nostri campi di battaglia attivi.",
+        "65a26d4d0382897f065b": "Non deludi mai, $N! Ciò che hai imparato va oltre semplici medaglie ed encomi. È qualcosa che arriva solo con l'esperienza e temprando il carattere sul campo di battaglia.$B$BOttimo lavoro, $c. Sei un vero eroe dell'Alleanza!",
+        "e0b255eb81a94540ad65": "Come ti vanno i viaggi, ragazza?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -612,6 +941,35 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf03546083528e091b67736c912ba6354b36788e5596d618f5001ee16f16f9ba"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -649,6 +1007,13 @@
     },
     "koKR": {
       "description": "호드를 상대로 싸우는 여러 전투는 모두 연관되어 있네.\n\n우리가 어떤 전장에서 승리하면 다른 전장에서 호드가 우리를 치는 데 쓸 자원을 손에 넣을 수 없지. 이와 마찬가지로, 우리가 어떤 전장에서 패하면 다른 곳에 있는 적에게 유리한 상황이 전개될 걸세.\n\n얼라이언스에는 이런 상황을 전체적으로 잘 이해하고 있고 전투 경험이 풍부한 대원들이 필요해! {name}, 모든 전장에서 우리를 도와 호드를 물리친 후 돌아와 보고하도록!",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "잘 돼가고 있나?",
+        "4b858438e4798243c2df": "호드를 상대로 싸우는 여러 전투는 모두 연관되어 있네.\n\n우리가 어떤 전장에서 승리하면 다른 전장에서 호드가 우리를 치는 데 쓸 자원을 손에 넣을 수 없지. 이와 마찬가지로, 우리가 어떤 전장에서 패하면 다른 곳에 있는 적에게 유리한 상황이 전개될 걸세.\n\n얼라이언스에는 이런 상황을 전체적으로 잘 이해하고 있고 전투 경험이 풍부한 대원들이 필요해! $N, 모든 전장에서 우리를 도와 호드를 물리친 후 돌아와 보고하도록!",
+        "53cf8931b50e6e823598": "호드를 상대로 싸우는 여러 전투는 모두 연관되어 있네.\n\n우리가 어떤 전장에서 승리하면 다른 전장에서 호드가 우리를 치는 데 쓸 자원을 손에 넣을 수 없지. 이와 마찬가지로, 우리가 어떤 전장에서 패하면 다른 곳에 있는 적에게 유리한 상황이 전개될 걸세.\n\n얼라이언스에는 이런 상황을 전체적으로 잘 이해하고 있고 전투 경험이 풍부한 대원들이 필요해! $N, 모든 전장에서 우리를 도와 호드를 물리친 후 돌아와 보고하도록!",
+        "65a26d4d0382897f065b": "자네는 날 실망시키지 않으리라 믿었어! 그 공로는 시시한 훈장이나 표창장 따위로는 절대 표현할 수 없는 값진 것일세. 전장에서의 경험과 노력 없이는 결코 이룰 수 없지!\n\n잘했네. $c 대원! 진정한 얼라이언스의 영웅이 나타났군!",
+        "e0b255eb81a94540ad65": "잘 돼가고 있나?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -679,6 +1044,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -721,6 +1116,13 @@
     },
     "plPL": {
       "description": "Nie walczymy już z Hordą w odosobnionych bitwach, $gchłopcze:dziewczyno;.\n\nZwycięstwo na jednym froncie oznacza odebranie Hordzie zasobów, których użyłaby przeciw nam w innej bitwie. Podobnie przegrana w dowolnej bitwie może dać przeciwnikowi przewagę gdzieś indziej na świecie.\n\nPrzymierze potrzebuje więcej walczących z takim zrozumieniem świata... naprawdę zaprawionych weteranów! {name}, wróć do mnie, gdy będziesz służyć przeciw Hordzie na wszystkich naszych czynnych polach bitew.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Jak mijają podróże, $gchłopcze:dziewczyno;?",
+        "4b858438e4798243c2df": "Nie walczymy już z Hordą w odosobnionych bitwach, $gchłopcze:dziewczyno;.$B$BZwycięstwo na jednym froncie pozbawia Hordę zasobów, których użyłaby przeciw nam gdzie indziej. Podobnie porażka może dać wrogowi przewagę w innym zakątku świata.$B$BPrzymierze potrzebuje więcej wojowników rozumiejących ten świat... prawdziwie doświadczonych weteranów! $N, wróć, gdy staniesz przeciw Hordzie na wszystkich naszych aktywnych polach bitwy.",
+        "53cf8931b50e6e823598": "Nie walczymy już z Hordą w odosobnionych bitwach, $gchłopcze:dziewczyno;.$B$BZwycięstwo na jednym froncie pozbawia Hordę zasobów, których użyłaby przeciw nam gdzie indziej. Podobnie porażka może dać wrogowi przewagę w innym zakątku świata.$B$BPrzymierze potrzebuje więcej wojowników rozumiejących ten świat... prawdziwie doświadczonych weteranów! $N, wróć, gdy staniesz przeciw Hordzie na wszystkich naszych aktywnych polach bitwy.",
+        "65a26d4d0382897f065b": "Nigdy nie zawodzisz, $N! To, czego się nauczyłeś, wykracza poza drobne medale i pochwały. Tę wiedzę daje tylko doświadczenie i hartowanie ducha na polu bitwy.$B$BDobrze się spisałeś, $c. Jesteś prawdziwym bohaterem Przymierza!",
+        "e0b255eb81a94540ad65": "Jak mijają podróże, $gchłopcze:dziewczyno;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -752,6 +1154,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf03546083528e091b67736c912ba6354b36788e5596d618f5001ee16f16f9ba"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -790,6 +1217,13 @@
     },
     "ptBR": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Como vão suas viagens, $grapaz:moça;?",
+        "4b858438e4798243c2df": "Bah, não existem mais disputas isoladas contra a Horda, $gguri:guria;.\n\nVencer em uma frente significa privar a Horda de se fortalecer em uma outra batalha. Da mesma forma, perder uma batalha pode dar vantagem ao nosso oponente em algum outro canto do mundo.\n\nA Aliança precisa de mais combatentes com esse tipo de visão global... veteranos calejados pela guerra, tchê! $N, fale comigo novamente depois de ter servido contra a Horda em todos os nossos campos de batalha.",
+        "53cf8931b50e6e823598": "Bah, não existem mais disputas isoladas contra a Horda, $gguri:guria;.\n\nVencer em uma frente significa privar a Horda de se fortalecer em uma outra batalha. Da mesma forma, perder uma batalha pode dar vantagem ao nosso oponente em algum outro canto do mundo.\n\nA Aliança precisa de mais combatentes com esse tipo de visão global... veteranos calejados pela guerra, tchê! $N, fale comigo novamente depois de ter servido contra a Horda em todos os nossos campos de batalha.",
+        "65a26d4d0382897f065b": "Você nunca decepciona, $N! O que aprendeu vai além de simples medalhas e elogios. É algo que só vem com experiência e com o caráter forjado no campo de batalha.$B$BVocê foi bem, $c. É um verdadeiro herói da Aliança!",
+        "e0b255eb81a94540ad65": "Como vão suas viagens, $grapaz:moça;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -822,6 +1256,33 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -864,6 +1325,13 @@
     },
     "ruRU": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Как твои путешествия, парен?",
+        "4b858438e4798243c2df": "В войне против Орды решающей может оказаться любая битва, дочка.\n\nПобеда на одном фронте позволит захватить ресурсы, которые помогут победить и на другом. И с точностью до наоборот – любая проигранная битва может дать нашим врагам преимущество в другой.\n\nАльянсу не хватает бойцов, которые бы хорошенько поняли это... бойцов, закаленных в битвах! Отправляйся сражаться с Ордой, а когда побываешь на всех полях битвы, возвращайся ко мне.",
+        "53cf8931b50e6e823598": "В войне против Орды решающей может оказаться любая битва, сынок.\n\nПобеда на одном фронте позволит захватить ресурсы, которые помогут победить и на другом. И с точностью до наоборот – любая проигранная битва может дать нашим врагам преимущество в другой.\n\nАльянсу не хватает бойцов, которые бы хорошенько поняли это... бойцов, закаленных в битвах! Отправляйся сражаться с Ордой, а когда побываешь на всех полях битвы, возвращайся ко мне.",
+        "65a26d4d0382897f065b": "Ты не разочаровал меня, $N! И ты получил большее, чем просто медали и отличия. Ты получил бесценный опыт и закалил свой дух.\n\nХорошо сделано, $C. Ты настоящий герой Альянса!",
+        "e0b255eb81a94540ad65": "Как твои путешествия, девчонка?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -896,6 +1364,36 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -938,6 +1436,13 @@
     },
     "svSE": {
       "description": "Vi utkämpar inte längre isolerade strider mot Horden, $ggrabben:flickan;.\n\nEn seger på en front innebär att Horden förvägras resurser som de skulle använda mot oss i en annan strid. På samma sätt kan en förlust ge motståndaren fördel någon annanstans i världen.\n\nAlliansen behöver fler kämpar med sådan världsvan förståelse... verkligt erfarna veteraner! {name}, kom tillbaka när du har tjänstgjort mot Horden på alla våra aktiva slagfält.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Hur går dina resor, $gpojke:flicka;?",
+        "4b858438e4798243c2df": "Vi utkämpar inte längre isolerade slag mot Horden, $gpojke:flicka;.$B$BEn seger på en front berövar Horden resurser som den skulle använda mot oss i en annan strid. På samma sätt kan en förlust ge fienden en fördel någon annanstans i världen.$B$BAlliansen behöver fler kämpar med sådan förståelse för världen... verkligt erfarna veteraner! $N, återvänd när du har kämpat mot Horden på alla våra aktiva slagfält.",
+        "53cf8931b50e6e823598": "Vi utkämpar inte längre isolerade slag mot Horden, $gpojke:flicka;.$B$BEn seger på en front berövar Horden resurser som den skulle använda mot oss i en annan strid. På samma sätt kan en förlust ge fienden en fördel någon annanstans i världen.$B$BAlliansen behöver fler kämpar med sådan förståelse för världen... verkligt erfarna veteraner! $N, återvänd när du har kämpat mot Horden på alla våra aktiva slagfält.",
+        "65a26d4d0382897f065b": "Du gör ingen besviken, $N! Det du har lärt dig går bortom små medaljer och utmärkelser. Det kommer bara med erfarenhet och genom att härdas på slagfältet.$B$BDu har gjort väl ifrån dig, $c. Du är en sann hjälte för Alliansen!",
+        "e0b255eb81a94540ad65": "Hur går dina resor, $gpojke:flicka;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -969,6 +1474,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf03546083528e091b67736c912ba6354b36788e5596d618f5001ee16f16f9ba"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1008,6 +1538,13 @@
     },
     "trTR": {
       "description": "Artık Horde'a karşı ayrı ayrı savaşlar vermiyoruz evlat.\n\nBir cephede zafer, Horde'u başka savaşta bize karşı kullanacağı kaynaklardan mahrum bırakır. Aynı şekilde herhangi bir savaşı kaybetmek dünyanın başka bir yerinde rakibe üstünlük verebilir.\n\nAlliance'ın böyle dünya anlayışı olan daha çok savaşçıya, gerçekten deneyimli askerlere ihtiyacı var! {name}, etkin bütün savaş alanlarımızda Horde'a karşı hizmet ettikten sonra bana dön.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Yolculukların nasıl gidiyor, $gdelikanlı:genç kız;?",
+        "4b858438e4798243c2df": "Artık Horde'a karşı birbirinden bağımsız savaşlar vermiyoruz, $gdelikanlı:genç kız;.$B$BBir cephedeki zafer, Horde'u başka bir savaşta bize karşı kullanacağı kaynaklardan mahrum bırakır. Aynı şekilde herhangi bir savaşı kaybetmek, dünyanın başka bir yerinde düşmanımıza avantaj sağlayabilir.$B$BAlliance'ın dünyayı böyle anlayan daha fazla savaşçıya, gerçekten tecrübeli gazilere ihtiyacı var! $N, etkin savaş alanlarımızın hepsinde Horde'a karşı görev yaptıktan sonra bana dön.",
+        "53cf8931b50e6e823598": "Artık Horde'a karşı birbirinden bağımsız savaşlar vermiyoruz, $gdelikanlı:genç kız;.$B$BBir cephedeki zafer, Horde'u başka bir savaşta bize karşı kullanacağı kaynaklardan mahrum bırakır. Aynı şekilde herhangi bir savaşı kaybetmek, dünyanın başka bir yerinde düşmanımıza avantaj sağlayabilir.$B$BAlliance'ın dünyayı böyle anlayan daha fazla savaşçıya, gerçekten tecrübeli gazilere ihtiyacı var! $N, etkin savaş alanlarımızın hepsinde Horde'a karşı görev yaptıktan sonra bana dön.",
+        "65a26d4d0382897f065b": "Sen hayal kırıklığına uğratmazsın, $N! Öğrendiklerin basit madalya ve övgülerin ötesinde. Bunlar ancak deneyimle ve savaş alanında karakterini güçlendirmekle kazanılır.$B$Bİyi iş çıkardın, $c. Sen gerçek bir Alliance kahramanısın!",
+        "e0b255eb81a94540ad65": "Yolculukların nasıl gidiyor, $gdelikanlı:genç kız;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1039,6 +1576,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b1f8e1741b99f940c1f1196c9f4a21b78bd7a6d1fa02fe587266d4e67501c6ae"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1077,6 +1639,13 @@
     },
     "ukUA": {
       "description": "Ми більше не ведемо окремих битв проти Орди, $gхлопче:дівчино;.\n\nПеремога на одному фронті позбавляє Орду ресурсів, які вона використала б проти нас в іншій битві. Так само поразка в будь-якому бою може дати ворогові перевагу десь в іншому кінці світу.\n\nАльянсу потрібно більше воїнів із таким розумінням світу — справді загартованих ветеранів! {name}, повертайся до мене, коли послужиш у боротьбі з Ордою на всіх наших чинних полях бою.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "Як твої подорожі, $gхлопче:дівчино;?",
+        "4b858438e4798243c2df": "Ми більше не ведемо окремих битв проти Орди, $gхлопче:дівчино;.$B$BПеремога на одному фронті позбавляє Орду ресурсів, які вона використала б проти нас в іншій битві. Так само поразка може дати ворогові перевагу в іншому куточку світу.$B$BАльянсу потрібно більше бійців, які розуміють це... справді досвідчених ветеранів! $N, повернися до мене, коли битимешся з Ордою на всіх наших активних полях бою.",
+        "53cf8931b50e6e823598": "Ми більше не ведемо окремих битв проти Орди, $gхлопче:дівчино;.$B$BПеремога на одному фронті позбавляє Орду ресурсів, які вона використала б проти нас в іншій битві. Так само поразка може дати ворогові перевагу в іншому куточку світу.$B$BАльянсу потрібно більше бійців, які розуміють це... справді досвідчених ветеранів! $N, повернися до мене, коли битимешся з Ордою на всіх наших активних полях бою.",
+        "65a26d4d0382897f065b": "Ти не розчаровуєш, $N! Те, чого ти навчився, важить більше за дрібні медалі й похвали. Це приходить лише з досвідом і загартуванням характеру на полі бою.$B$BТи добре впорався, $c. Ти справжній герой Альянсу!",
+        "e0b255eb81a94540ad65": "Як твої подорожі, $gхлопче:дівчино;?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1108,6 +1677,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf03546083528e091b67736c912ba6354b36788e5596d618f5001ee16f16f9ba"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1147,6 +1741,13 @@
     },
     "zhCN": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "你做得怎麽样了，小夥子?",
+        "4b858438e4798243c2df": "我们并不是在独自与部落交战，小姑娘。\n\n如果我们可以取得胜利，那么我们就可以使用部落的资源来在其它的战场上对抗他们。反之，如果我们输掉了这场战争，那么在其它的战场上，部落将会占有优势。\n\n联盟需要更多你这种身经百战、意志坚定的老兵！$N，当你在所有战场上都与部落交战之后再回到我这里。",
+        "53cf8931b50e6e823598": "我们并不是在独自与部落交战，小伙子。\n\n如果我们可以取得胜利，那么我们就可以使用部落的资源来在其它的战场上对抗他们。反之，如果我们输掉了这场战争，那么在其它的战场上，部落将会占有优势。\n\n联盟需要更多你这种身经百战、意志坚定的老兵！$N，当你在所有战场上都与部落交战之后再回到我这里。",
+        "65a26d4d0382897f065b": "你没有让我失望，$N!你所学到的东西已经超越了奖章和表扬所能达到的范畴，它只有通过经验积累和在战场上的磨练才可以获得。\n\n你干得很好，$C。你是联盟真正的英雄!\n",
+        "e0b255eb81a94540ad65": "你做得怎麽样了，小姑娘?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1179,6 +1780,36 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -1221,6 +1852,13 @@
     },
     "zhTW": {
       "description": "We're not fighting isolated battles against the Horde anymore, $g lad:lass;.\n\nVictory in one front means denying the Horde resources they'd use against us in a different battle.  By the same token, losing any given battle could give the advantage to our opponent somewhere else around the world.\n\nThe Alliance is in need of more combatants with this sort of worldly understanding... truly seasoned veterans!  {name}, come back to me after you've served against the Horde at all of our active battlegrounds.",
+      "dialogue": {
+        "0ae7b40d2fd77cf91f88": "旅途還順利嗎，$g小伙子:姑娘;？",
+        "4b858438e4798243c2df": "我們並不是在獨自與部落交戰，小姑娘。\n\n如果我們可以取得勝利，那麼我們就可以使用部落的資源來在其他的戰場上對抗他們。反之，如果我們輸掉了這場戰爭，那麼在其他的戰場上，部落將會佔有優勢。\n\n聯盟需要更多你這種身經百戰、意志堅定的老兵！$N，當你在所有戰場上都與部落交戰之後再回到我這裏。",
+        "53cf8931b50e6e823598": "我們並不是在獨自與部落交戰，小夥子。\n\n如果我們可以取得勝利，那麼我們就可以使用部落的資源來在其他的戰場上對抗他們。反之，如果我們輸掉了這場戰爭，那麼在其他的戰場上，部落將會佔有優勢。\n\n聯盟需要更多你這種身經百戰、意志堅定的老兵！$N，當你在所有戰場上都與部落交戰之後再回到我這裏。",
+        "65a26d4d0382897f065b": "你沒有讓我失望，$N!你所學到的東西已經超越了獎章和表揚所能達到的範疇，它只有通過經驗積累和在戰場上的磨練纔可以獲得。\n\n你乾得很好，$C。你是聯盟真正的英雄!",
+        "e0b255eb81a94540ad65": "旅途還順利嗎，$g小伙子:姑娘;？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1253,6 +1891,34 @@
             "sourceBuild": "1.60.1.70888",
             "sourceLocale": "enUS",
             "sourceRevision": "164bd1e2d89579ada4ee5e2de7e5fd4db684a9f1"
+          },
+          "dialogue.0ae7b40d2fd77cf91f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4b858438e4798243c2df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.53cf8931b50e6e823598": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.65a26d4d0382897f065b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e0b255eb81a94540ad65": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

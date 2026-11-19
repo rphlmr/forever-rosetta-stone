@@ -20,9 +20,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "1781386e1c95e99ecd08": {
+      "lineId": "q:455:accept",
+      "npcId": 1342,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "22b5edfaf0a519de3682": {
+      "lineId": "q:455:complete",
+      "npcId": 2086,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "c466920387cb5c55a0a8": {
+      "lineId": "q:455:progress",
+      "npcId": 2086,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Orkové z klanu Dragonmaw mají útočiště ve Wetlands. A teď se rozšířili do Dun Algaz! Nemůžeme jim dovolit udržet si tu oporu, jinak bude Loch Modan odříznut od přístavu Menethil, našeho přístavu a pevnosti ve Wetlands.\n\nProraz se přes Dun Algaz do Wetlands za ním a k tomu ještě zabij pár orků! Hlas se u Valstaga Ironjawa v přístavu Menethil.\n\nMenethil leží za Dun Algaz, pak na sever po cestě a na rozcestí na západ.\n\nSpoléháme na tebe, {name}. Nezklam.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Orkové klanu Dragonmaw mají útočiště v Mokřadech. A teď pronikli i do Dun Algaz! Nesmíme jim dovolit, aby se zde udrželi, jinak bude Loch Modan odříznut od přístavu Menethil, naší pevnosti v Mokřadech.$B$BProbij se přes Dun Algaz do Mokřadů a cestou zabij několik orků! Podej hlášení Valstagovi Ironjawovi v přístavu Menethil.$B$BDo Menethilu se dostaneš přes Dun Algaz, pak po cestě na sever a na rozcestí na západ.$B$BSpoléháme na tebe, $N. Nezklam.",
+        "22b5edfaf0a519de3682": "Tvé hlášení je plné špatných zpráv!$B$BVidím, že Dragonmawové silně pronikají do Algazu. Obvykle se jen skrývají v kopcích. Co je přimělo k útoku, zůstává záhadou...$B$BDěkuji ti, $N. A nejspíš budeme potřebovat tvou pomoc s těmi orky.",
+        "c466920387cb5c55a0a8": "Přicházíš z Loch Modanu? Jaká je situace s orky u brány Algaz?"
+      },
       "eventObjectiveLabel": "Projdi Dun Algaz",
       "objectiveLines": [
         {
@@ -40,6 +68,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -72,6 +115,11 @@
     },
     "daDK": {
       "description": "Orker fra Dragonmaw-klanen har et tilholdssted i Wetlands. Og nu har de bredt sig ind i Dun Algaz! Vi kan ikke lade dem beholde deres fodfæste her, ellers bliver Loch Modan afskåret fra Menethil Harbor, vores havn og fæstning i Wetlands.\n\nBryd gennem Dun Algaz til Wetlands på den anden side, og dræb nogle orker for en sikkerheds skyld! Meld dig hos Valstag Ironjaw i Menethil Harbor.\n\nMenethil ligger gennem Dun Algaz, derefter nordpå langs vejen og så vestpå ved forgreningen.\n\nVi regner med dig, {name}. Du må ikke fejle.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Orkerne fra Dragonmaw-klanen har et tilholdssted i Wetlands. Og nu har de bredt sig til Dun Algaz! Vi kan ikke lade dem beholde fodfæstet her, ellers bliver Loch Modan afskåret fra Menethil Harbor, vores havn og fæstning i Wetlands.$B$BKæmp dig gennem Dun Algaz til Wetlands og dræb nogle orker undervejs! Meld dig hos Valstag Ironjaw i Menethil Harbor.$B$BMenethil ligger gennem Dun Algaz, derefter nordpå ad vejen og mod vest ved vejkrydset.$B$BVi regner med dig, $N. Svigt os ikke.",
+        "22b5edfaf0a519de3682": "Din rapport er fuld af dårlige nyheder!$B$BJeg kan se, at Dragonmaw rykker stærkt ind i Algaz. Normalt gemmer de sig blot i bakkerne. Hvad der fik dem til at strømme ind i Algaz, er stadig et mysterium...$B$BTak, $N. Vi får nok brug for din hjælp med orkerne.",
+        "c466920387cb5c55a0a8": "Kommer du fra Loch Modan? Hvordan står det til med orkerne ved Algaz-porten?"
+      },
       "eventObjectiveLabel": "Kryds Dun Algaz",
       "objectiveLines": [
         {
@@ -89,6 +137,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -118,6 +181,11 @@
     },
     "deDE": {
       "description": "Orcs vom Dragonmawklan haben im Sumpfland eine Zufluchtstätte. Und jetzt haben sie sich nach Dun Algaz ausgebreitet. Wir können nicht zulassen, dass sie ihren Einfluss auf dieses Gebiet behalten, sonst wird der Loch Modan vom Hafen von Menethil, unserer Hafenfestung im Sumpfland, abgeschnitten.\n\nBrecht durch Dun Algaz in das dahinterliegende Sumpfland durch und tötet dabei ein paar Orcs. Meldet Euch bei Valstag Ironjaw im Hafen von Menethil.\n\nNach Menethil kommt Ihr, indem Ihr Dun Algaz durchquert, anschließend nordwärts der Straße folgt und Euch dann an der Biegung westwärts haltet.\n\nWir verlassen uns auf Euch, {name}. Ihr dürft nicht scheitern.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Orcs vom Dragonmawklan haben im Sumpfland eine Zufluchtstätte. Und jetzt haben sie sich nach Dun Algaz ausgebreitet. Wir können nicht zulassen, dass sie ihren Einfluss auf dieses Gebiet behalten, sonst wird der Loch Modan vom Hafen von Menethil, unserer Hafenfestung im Sumpfland, abgeschnitten.\n\nBrecht durch Dun Algaz in das dahinterliegende Sumpfland durch und tötet dabei ein paar Orcs. Meldet Euch bei Valstag Ironjaw im Hafen von Menethil.\n\nNach Menethil kommt Ihr, indem Ihr Dun Algaz durchquert, anschließend nordwärts der Straße folgt und Euch dann an der Biegung westwärts haltet.\n\nWir verlassen uns auf Euch, $N. Ihr dürft nicht scheitern.",
+        "22b5edfaf0a519de3682": "Euer Bericht enthält viele schlechte Nachrichten!\n \n Ich weiß, dass die Dragonmaw verstärkt nach Algaz hineindrängen. Normalerweise verstecken sich die Dragonmaw nur oben in den Hügeln. Was sie dazu gebracht hat, nach Algaz hineinzuströmen, ist immer noch ein Rätsel. . . \n \n Danke, $N. Und wir werden wahrscheinlich Eure Hilfe wünschen, wenn es darum geht, sich um diese Orcs zu kümmern. ",
+        "c466920387cb5c55a0a8": "Ihr kommt aus Loch Modan? Wie ist die Orcsituation am Algaz-Tor?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -134,6 +202,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -161,6 +247,11 @@
     },
     "enUS": {
       "description": "Orcs of the Dragonmaw clan have a haven in the Wetlands.  And now they have expanded into Dun Algaz!  We can't let them keep their foothold here or Loch Modan will be cut off from Menethil Harbor, our port and stronghold in the Wetlands.\n\nBreak through Dun Algaz to the Wetlands beyond, and kill some orcs for good measure!  Report to Valstag Ironjaw in Menethil Harbor.\n\nMenethil is through Dun Algaz, then north along the road, then west at the fork.\n\nWe're counting on you, {name}.  Do not fail.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Orcs of the Dragonmaw clan have a haven in the Wetlands.  And now they have expanded into Dun Algaz!  We can't let them keep their foothold here or Loch Modan will be cut off from Menethil Harbor, our port and stronghold in the Wetlands.$B$BBreak through Dun Algaz to the Wetlands beyond, and kill some orcs for good measure!  Report to Valstag Ironjaw in Menethil Harbor.$B$BMenethil is through Dun Algaz, then north along the road, then west at the fork.$B$BWe're counting on you, $N.  Do not fail.",
+        "22b5edfaf0a519de3682": "Your report is full of bad news!$B$BI see the Dragonmaws are making a strong move into Algaz.  Normally the Dragonmaws just hide up in the hills.  What made them surge into Algaz is still a mystery...$B$BThank you, $N.  And we'll probably want your help dealing with these orcs.",
+        "c466920387cb5c55a0a8": "You're coming from Loch Modan? How is the orc situation at Algaz Gate?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -177,6 +268,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -204,6 +313,11 @@
     },
     "esES": {
       "description": "Los orcos del clan Faucedraco tienen un refugio en Los Humedales ¡y ahora se han adentrado en Dun Algaz! No podemos permitir que continúen afianzándose aquí o Loch Modan perderá el contacto con el Puerto de Menethil, nuestro puerto y bastión en Los Humedales.\n\nAtraviesa Dun Algaz y dirígete a Los Humedales, ¡cuando estés allí mata a tantos orcos como puedas! Informa a Valstag Quijahierro en Puerto de Menethil.\n\nMenethil está pasado Dun Algaz, siguiendo el camino hacia el Norte y al Oeste en el cruce.\n\nContamos contigo, {name}. No nos falles.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Los orcos del clan Faucedraco tienen un refugio en Los Humedales ¡y ahora se han adentrado en Dun Algaz! No podemos permitir que continúen afianzándose aquí o Loch Modan perderá el contacto con el Puerto de Menethil, nuestro puerto y bastión en Los Humedales.\n\nAtraviesa Dun Algaz y dirígete a Los Humedales, ¡cuando estés allí mata a tantos orcos como puedas! Informa a Valstag Quijahierro en Puerto de Menethil.\n\nMenethil está pasado Dun Algaz, siguiendo el camino hacia el Norte y al Oeste en el cruce.\n\nContamos contigo, $n. No nos falles.",
+        "22b5edfaf0a519de3682": "¡Tu informe está lleno de malas noticias!\n\nVeo que los Faucedraco están avanzando con fuerza en Algaz. Normalmente los Faucedraco se quedan escondidos en las colinas. Es un misterio qué les hizo avanzar hacia Algaz...\n\nGracias, $n. Seguramente necesitaremos tu ayuda para combatir a esos orcos.",
+        "c466920387cb5c55a0a8": "¿Vienes de Loch Modan?  ¿Cómo es la situación de los orcos en Algaz Gate?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -220,6 +334,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -247,6 +379,11 @@
     },
     "esMX": {
       "description": "Los orcos del clan Faucedraco tienen un refugio en Los Humedales ¡y ahora se han adentrado en Dun Algaz! No podemos permitir que continúen afianzándose aquí o Loch Modan perderá el contacto con el Puerto de Menethil, nuestro puerto y bastión en Los Humedales.\n\nAtraviesa Dun Algaz y dirígete a Los Humedales, ¡cuando estés allí mata a tantos orcos como puedas! Informa a Valstag Quijahierro en Puerto de Menethil.\n\nMenethil está pasado Dun Algaz, siguiendo el camino hacia el Norte y al Oeste en el cruce.\n\nContamos contigo, {name}. No nos falles.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Los orcos del clan Faucedraco tienen un refugio en Los Humedales ¡y ahora se han adentrado en Dun Algaz! No podemos permitir que continúen afianzándose aquí o Loch Modan perderá el contacto con el Puerto de Menethil, nuestro puerto y bastión en Los Humedales.\n\nAtraviesa Dun Algaz y dirígete a Los Humedales, ¡cuando estés allí mata a tantos orcos como puedas! Informa a Valstag Quijahierro en Puerto de Menethil.\n\nMenethil está pasado Dun Algaz, siguiendo el camino hacia el Norte y al Oeste en el cruce.\n\nContamos contigo, $n. No nos falles.",
+        "22b5edfaf0a519de3682": "¡Tu informe está lleno de malas noticias!\n\nVeo que los Faucedraco están avanzando con fuerza en Algaz. Normalmente los Faucedraco se quedan escondidos en las colinas. Es un misterio qué les hizo avanzar hacia Algaz...\n\nGracias, $n. Seguramente necesitaremos tu ayuda para combatir a esos orcos.",
+        "c466920387cb5c55a0a8": "¿Vienes de Loch Modan? ¿Cómo es la situación con los orcos en la Puerta de Algaz?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -263,6 +400,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -290,6 +445,11 @@
     },
     "frFR": {
       "description": "Les orcs du clan Dragonmaw ont un refuge dans les Paluns. Mais voilà : ils se répandent maintenant dans Dun Algaz ! Nous ne pouvons les laisser s'installer là, sinon le Loch Modan sera coupé du port de Menethil, notre port et bastion dans les Paluns.\n\nTraversez Dun Algaz jusqu'aux Paluns et tuez quelques orcs pour faire bonne mesure! Faites un rapport à Valstag Ironjaw au port de Menethil.\n\nPour rejoindre Menethil, passez par Dun Algaz, puis allez au nord en longeant la route, et enfin prenez à l'ouest à l'embranchement.\n\nNous comptons sur vous, {name}. Vous ne pouvez échouer.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Les orcs du clan Dragonmaw ont un refuge dans les Paluns. Mais voilà : ils se répandent maintenant dans Dun Algaz ! Nous ne pouvons les laisser s'installer là, sinon le Loch Modan sera coupé du port de Menethil, notre port et bastion dans les Paluns.\n\nTraversez Dun Algaz jusqu'aux Paluns et tuez quelques orcs pour faire bonne mesure! Faites un rapport à Valstag Ironjaw au port de Menethil.\n\nPour rejoindre Menethil, passez par Dun Algaz, puis allez au nord en longeant la route, et enfin prenez à l'ouest à l'embranchement.\n\nNous comptons sur vous, $N. Vous ne pouvez échouer.",
+        "22b5edfaf0a519de3682": "Votre rapport n'est que mauvaises nouvelles !\n \n Je constate que les Dragonmaw font mouvement vers Algaz. Normalement ils se cachent dans les collines. Pourquoi se ruent-ils sur Algaz ? C'est encore un mystère. . . \n \n Merci, $N. Nous aurons certainement besoin de votre aide pour traiter le problème des orcs. ",
+        "c466920387cb5c55a0a8": "Vous venez du Loch Modan ? Quelle est la situation des orcs à Algaz Gate ?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -306,6 +466,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -333,6 +511,11 @@
     },
     "hrHR": {
       "description": "Orci klana Dragonmaw imaju utočište u Wetlandsu. A sada su se proširili u Dun Algaz! Ne možemo im dopustiti da ovdje zadrže uporište ili će Loch Modan biti odsječen od Menethil Harbora, naše luke i utvrde u Wetlandsu.\n\nProbij se kroz Dun Algaz do Wetlandsa s druge strane i usput ubij nekoliko orka! Javi se Valstagu Ironjawu u Menethil Harboru.\n\nDo Menethila se stiže kroz Dun Algaz, zatim na sjever cestom i na zapad na račvanju.\n\nRačunamo na tebe, {name}. Nemoj podbaciti.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Orci klana Dragonmaw imaju utočište u Wetlandsu. Sada su se proširili i u Dun Algaz! Ne smijemo im dopustiti da zadrže uporište ili će Loch Modan biti odsječen od Menethil Harbora, naše luke i utvrde u Wetlandsu.$B$BProbij se kroz Dun Algaz u Wetlands i usput ubij nekoliko orka! Javi se Valstagu Ironjawu u Menethil Harboru.$B$BDo Menethila se stiže kroz Dun Algaz, zatim cestom na sjever i na raskrižju na zapad.$B$BRačunamo na tebe, $N. Nemoj nas iznevjeriti.",
+        "22b5edfaf0a519de3682": "Tvoje je izvješće puno loših vijesti!$B$BVidim da Dragonmaw snažno prodire u Algaz. Obično se samo skrivaju u brdima. Još je tajna što ih je navelo na prodor...$B$BHvala ti, $N. Vjerojatno će nam trebati tvoja pomoć protiv tih orka.",
+        "c466920387cb5c55a0a8": "Dolaziš iz Loch Modana? Kakvo je stanje s orcima kod vrata Algaz?"
+      },
       "eventObjectiveLabel": "Prođi kroz Dun Algaz",
       "objectiveLines": [
         {
@@ -350,6 +533,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -379,6 +577,11 @@
     },
     "itIT": {
       "description": "Gli orchi del clan Dragonmaw hanno una base nelle Paludi Grigie. E ora si sono spinti fino a Dun Algaz! Non possiamo lasciare che restino qui, altrimenti Loch Modan sarà tagliato fuori dal Porto di Menethil, il nostro porto e caposaldo nelle paludi.\n\nApriti un varco attraverso Dun Algaz fino alle Paludi Grigie e, già che ci sei, uccidi un po' di orchi! Fai rapporto a Valstag Ironjaw al Porto di Menethil.\n\nPer Menethil attraversa Dun Algaz, poi segui la strada verso nord e al bivio gira a ovest.\n\nContiamo su di te, {name}. Non fallire.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Gli orchi del clan Dragonmaw hanno un rifugio nelle Wetlands. E adesso si sono spinti fino a Dun Algaz! Non possiamo lasciare che si attestino qui, o Loch Modan resterà tagliato fuori da Menethil Harbor, il nostro porto e la nostra roccaforte nelle Wetlands.\n\nApriti un varco attraverso Dun Algaz fino alle Wetlands, dall'altra parte, e già che ci sei uccidi qualche orco! Presentati a Valstag Ironjaw, a Menethil Harbor.\n\nPer arrivare a Menethil, attraversa Dun Algaz, poi prendi la strada verso nord e al bivio gira a ovest.\n\nContiamo su di te, $N. Non fallire.",
+        "22b5edfaf0a519de3682": "Il tuo rapporto è pieno di brutte notizie!\n\nVedo che i Dragonmaw stanno avanzando in forze su Algaz. Di solito i Dragonmaw se ne stanno nascosti sulle colline. Cosa li abbia spinti a riversarsi su Algaz resta un mistero...\n\nGrazie, $N. E probabilmente ci servirà il tuo aiuto per sistemare questi orchi.",
+        "c466920387cb5c55a0a8": "Vieni da Loch Modan? Com'è la situazione con gli orchi alla Porta di Algaz?"
+      },
       "eventObjectiveLabel": "Attraversa Dun Algaz",
       "objectiveLines": [
         {
@@ -396,6 +599,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -425,6 +646,11 @@
     },
     "koKR": {
       "description": "용아귀부족 오크들이 저습지를 차지한 것도 모자라, 이제 던 알가즈에까지 손을 뻗어오고 있소! 이곳에 있는 놈들의 거점을 제거하지 않으면 저습지에 있는 우리의 항만 시설과 요새인, 메네실 항구에서 모단 호수에 이르는 길목을 차단당하게 되오.\n\n던 알가즈를 가로질러 저습지 너머로 이동하시오. 그리고 가는 길에 오크 녀석들도 좀 처치해 주시오. 그런 다음 메네실 항구에 있는 발스탁 아이언조에게 보고하도록 하시오.\n\n메네실은 던 알가즈를 지나 길을 따라 북쪽으로 간 다음 갈림길에서 서쪽으로 가면 되오.\n\n우린 당신만 믿겠으니 우릴 실망시키지 마시오.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "용아귀부족 오크들이 저습지를 차지한 것도 모자라, 이제 던 알가즈에까지 손을 뻗어오고 있소! 이곳에 있는 놈들의 거점을 제거하지 않으면 저습지에 있는 우리의 항만 시설과 요새인, 메네실 항구에서 모단 호수에 이르는 길목을 차단당하게 되오.\n\n던 알가즈를 가로질러 저습지 너머로 이동하시오. 그리고 가는 길에 오크 녀석들도 좀 처치해 주시오. 그런 다음 메네실 항구에 있는 발스탁 아이언조에게 보고하도록 하시오.\n\n메네실은 던 알가즈를 지나 길을 따라 북쪽으로 간 다음 갈림길에서 서쪽으로 가면 되오.\n\n우린 당신만 믿겠으니 우릴 실망시키지 마시오.",
+        "22b5edfaf0a519de3682": "정말 나쁜 소식을 가지고 왔군!\n\n알가즈가 붉은용일족들에게 그리도 유린당하고 있다니... 하지만 보통 언덕에 숨어 지내는 용아귀부족들이 왜 알가즈로 몰려들게 되었는지 알다가도 모를 일이군.\n\n어쨌든 고맙소. 그리고 앞으로도 우릴 도와서 오크들과 싸워 줬으면 하오.",
+        "c466920387cb5c55a0a8": "모단 호수에서 왔나? 알가즈 관문의 오크들은 어떻게 됐지?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -441,6 +667,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -468,6 +711,11 @@
     },
     "plPL": {
       "description": "Orkowie z klanu Dragonmaw mają ostoję w Wetlands. A teraz wkroczyli do Dun Algaz! Nie możemy pozwolić im utrzymać tu przyczółka, bo Loch Modan zostanie odcięte od Menethil Harbor, naszego portu i twierdzy w Wetlands.\n\nPrzebij się przez Dun Algaz do Wetlands po drugiej stronie, a przy okazji zabij kilku orków! Złóż raport Valstagowi Ironjawowi w Menethil Harbor.\n\nDo Menethil dotrzesz przez Dun Algaz, potem drogą na północ, a na rozwidleniu na zachód.\n\nLiczymy na ciebie, {name}. Nie zawiedź nas.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Orkowie z klanu Dragonmaw mają schronienie na Mokradłach. Teraz wkroczyli także do Dun Algaz! Nie możemy pozwolić im utrzymać przyczółka, bo Loch Modan zostanie odcięte od portu Menethil, naszej twierdzy na Mokradłach.$B$BPrzebij się przez Dun Algaz na Mokradła i przy okazji zabij kilku orków! Złóż raport Valstagowi Ironjawowi w porcie Menethil.$B$BDo Menethil prowadzi droga przez Dun Algaz, potem na północ i na zachód na rozwidleniu.$B$BLiczymy na ciebie, $N. Nie zawiedź nas.",
+        "22b5edfaf0a519de3682": "Twój raport jest pełen złych wiadomości!$B$BWidzę, że Dragonmawowie mocno napierają na Algaz. Zwykle tylko ukrywają się w górach. Co skłoniło ich do ataku, pozostaje zagadką...$B$BDziękuję ci, $N. Prawdopodobnie będziemy potrzebować twojej pomocy w walce z orkami.",
+        "c466920387cb5c55a0a8": "Przybywasz z Loch Modan? Jak wygląda sytuacja z orkami przy Bramie Algaz?"
+      },
       "eventObjectiveLabel": "Przemierz Dun Algaz",
       "objectiveLines": [
         {
@@ -485,6 +733,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -514,6 +777,11 @@
     },
     "ptBR": {
       "description": "Orcs do clã Presa do Dragão têm um refúgio no Pantanal, tchê. E agora eles se espraiaram para Dun Algaz! Não podemos deixar que se estabeleçam aqui ou Loch Modan ficará isolado do Porto de Menethil, nosso porto e baluarte no Pantanal.\n\nCruze Dun Algaz até o Pantanal além, e mate alguns orcs por via das dúvidas! Apresente-se a Valstag Ferroqueixo no Porto de Menethil.\n\nVocê chega a Menethil passando por Dun Algaz, depois seguindo ao norte ao longo da estrada, e a oeste na bifurcação.\n\nEstamos contando com você, {name}. Não falhe, guri.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Orcs do clã Presa do Dragão têm um refúgio no Pantanal, tchê. E agora eles se espraiaram para Dun Algaz! Não podemos deixar que se estabeleçam aqui ou Loch Modan ficará isolado do Porto de Menethil, nosso porto e baluarte no Pantanal.\n\nCruze Dun Algaz até o Pantanal além, e mate alguns orcs por via das dúvidas! Apresente-se a Valstag Ferroqueixo no Porto de Menethil.\n\nVocê chega a Menethil passando por Dun Algaz, depois seguindo ao norte ao longo da estrada, e a oeste na bifurcação.\n\nEstamos contando com você, $N. Não falhe, guri.",
+        "22b5edfaf0a519de3682": "Barbaridade, seu relatório está cheio de más notícias!\n\nVejo que os Presa do Dragão estão fazendo uma grande jogada em Algaz. Normalmente, os Presa do Dragão só se escondem nas colinas. O que os fez afluírem para Algaz ainda é um mistério...\n\nObrigado, $N. E provavelmente vamos querer sua ajuda para pelear com esses orcs.",
+        "c466920387cb5c55a0a8": "Você vem de Loch Modan? Como está a situação dos orcs no Portão de Algaz?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -530,6 +798,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -557,6 +842,11 @@
     },
     "ruRU": {
       "description": "Орки из клана Драконьей Пасти бесчинствуют по всей Болотине. А сейчас они двинулись на Дун Альгаз! Нельзя допустить, чтобы они здесь закрепились, иначе Лок Модан будет отрезан от Гавани Менетилов, нашего порта и крепости в Болотине.\n\nПопытайся прорваться сквозь Дун Альгаз в Болотине и убей столько орков, сколько сумеешь! Чем больше, тем лучше! Об исполнении доложишь Валстагу Сталезубу в Гавани Менетилов.\n\nНайти Менетилов несложно: пройдешь через Дун Альгаз, потом – по дороге на север, а на развилке свернешь на запад.\n\nМы очень надеемся на тебя, {name}. Не подведи нас.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Орки из клана Драконьей Пасти бесчинствуют по всей Болотине. А сейчас они двинулись на Дун Альгаз! Нельзя допустить, чтобы они здесь закрепились, иначе Лок Модан будет отрезан от Гавани Менетилов, нашего порта и крепости в Болотине.\n\nПопытайся прорваться сквозь Дун Альгаз в Болотине и убей столько орков, сколько сумеешь! Чем больше, тем лучше! Об исполнении доложишь Валстагу Сталезубу в Гавани Менетилов.\n\nНайти Менетилов несложно: пройдешь через Дун Альгаз, потом – по дороге на север, а на развилке свернешь на запад.\n\nМы очень надеемся на тебя, $N. Не подведи нас.",
+        "22b5edfaf0a519de3682": "Да, нехорошие новости!\n\nКак я понимаю, орки Драконьей Пасти всерьез вознамерились двинуться на Альгаз. Обычно они сидят у себя на холмах и никуда не суются. Что их сподвигло идти на Альгаз? Для меня это загадка...\n\nСпасибо, $N. Может быть, нам понадобится твоя помощь, когда мы пойдем разбираться с орками.",
+        "c466920387cb5c55a0a8": "Ты идешь из озера Лок Модан? Что там орки? Как обстановка у Врат Альгаза?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -573,6 +863,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -600,6 +908,11 @@
     },
     "svSE": {
       "description": "Orcher från drakgapsklanen har en tillflykt i Våtmarkerna. Och nu har de brett ut sig till Dun Algaz! Vi kan inte låta dem behålla sitt fotfäste här, annars blir Loch Modan avskuret från Menethils hamn, vår hamn och vårt fäste i Våtmarkerna.\n\nTa dig igenom Dun Algaz till Våtmarkerna på andra sidan, och döda några orcher på köpet! Rapportera till Valstag Ironjaw i Menethils hamn.\n\nTill Menethil kommer du genom Dun Algaz, sedan norrut längs vägen och västerut vid vägskälet.\n\nVi räknar med dig, {name}. Svik oss inte.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Orkerna i Dragonmaw-klanen har ett tillhåll i Wetlands. Nu har de också trängt in i Dun Algaz! Vi kan inte låta dem behålla fotfästet, annars skärs Loch Modan av från Menethil Harbor, vår hamn och fästning i Wetlands.$B$BKämpa dig genom Dun Algaz till Wetlands och döda några orker på vägen! Rapportera till Valstag Ironjaw i Menethil Harbor.$B$BDu når Menethil genom Dun Algaz, sedan norrut längs vägen och västerut vid vägskälet.$B$BVi räknar med dig, $N. Svik oss inte.",
+        "22b5edfaf0a519de3682": "Din rapport är full av dåliga nyheter!$B$BJag ser att Dragonmaw rycker kraftigt in i Algaz. Vanligtvis gömmer de sig bara i bergen. Vad som fick dem att anfalla är fortfarande ett mysterium...$B$BTack, $N. Vi kommer nog att behöva din hjälp mot orkerna.",
+        "c466920387cb5c55a0a8": "Kommer du från Loch Modan? Hur är läget med orkerna vid Algazporten?"
+      },
       "eventObjectiveLabel": "Ta dig genom Dun Algaz",
       "objectiveLines": [
         {
@@ -617,6 +930,21 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -648,6 +976,11 @@
     },
     "trTR": {
       "description": "Dragonmaw klanından Orc'lar Wetlands'te bir sığınak kurdu. Şimdi de Dun Algaz'a yayıldılar! Buradaki mevzilerini korumalarına izin veremeyiz yoksa Loch Modan, Wetlands'teki limanımız ve kalemiz Menethil Limanı'ndan kopar.\n\nDun Algaz'ı geçip ötedeki Wetlands'e ulaş ve ek olarak birkaç Orc öldür! Menethil Limanı'ndaki Valstag Ironjaw'a rapor ver.\n\nMenethil'e ulaşmak için Dun Algaz'dan geç, sonra yolu kuzeye doğru izle ve yol ayrımında batıya dön.\n\nSana güveniyoruz, {name}. Bizi hayal kırıklığına uğratma.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Dragonmaw klanının orkları Wetlands'ta bir sığınağa sahip. Şimdi Dun Algaz'a da yayıldılar! Buradaki mevzilerini korumalarına izin veremeyiz, yoksa Loch Modan'ın Wetlands'taki limanımız ve kalemiz Menethil Limanı'yla bağlantısı kesilir.$B$BDun Algaz'ı yarıp Wetlands'a geç ve birkaç ork da öldür! Menethil Limanı'nda Valstag Ironjaw'a rapor ver.$B$BMenethil'e Dun Algaz'dan geçip yolu kuzeye takip ederek, yol ayrımında batıya dönerek ulaşabilirsin.$B$BSana güveniyoruz, $N. Bizi yüzüstü bırakma.",
+        "22b5edfaf0a519de3682": "Raporun kötü haberlerle dolu!$B$BDragonmawların Algaz'a güçlü bir saldırı başlattığını görüyorum. Normalde tepelerde saklanırlar. Onları Algaz'a saldırmaya neyin ittiği hâlâ bir gizem...$B$BTeşekkürler, $N. Bu orklarla uğraşmak için yardımını isteyebiliriz.",
+        "c466920387cb5c55a0a8": "Loch Modan'dan mı geliyorsun? Algaz Kapısı'ndaki orkların durumu ne?"
+      },
       "eventObjectiveLabel": "Dun Algaz'dan geç",
       "objectiveLines": [
         {
@@ -665,6 +998,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -694,6 +1042,11 @@
     },
     "ukUA": {
       "description": "Орки з клану Драконової Пащі оселились у Заболотті. А тепер вони полізли в Дун-Альґаз! Ми не можемо дозволити їм цього, інакше Лох-Модан буде відрізаний від гавані Менетілів - нашого порту та твердині у Заболотті.\n\nПрорвись через Дун-Альґаз до Заболоття та вбий стільки орків, скільки зможеш! Доповіси про виконання Вальстаґу Залізогубу в гавані Менетілів.\n\nЩоб дістатись гавані - пройди через Дун-Альґаз, потім йди на північ по дорозі, на роздоріжжі йди на захід.\n\nМи розраховуємо на тебе, {name}. Не підведи.",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "Орки клану Драконячої Пащі мають притулок у Болотах. А тепер вони проникли й до Дун Алгаза! Ми не можемо дозволити їм закріпитися тут, інакше Лох Модан буде відрізаний від гавані Менетіл, нашого порту й фортеці в Болотах.$B$BПробийся через Дун Алгаз до Болот і заодно вбий кількох орків! Доповідай Валстагу Залізній Щелепі в гавані Менетіл.$B$BДо Менетіла шлях веде через Дун Алгаз, потім дорогою на північ і на захід на роздоріжжі.$B$BМи розраховуємо на тебе, $N. Не підведи.",
+        "22b5edfaf0a519de3682": "У твоєму звіті самі погані новини!$B$BБачу, Драконяча Паща сильно наступає на Алгаз. Зазвичай вони лише ховаються в пагорбах. Що спонукало їх до нападу, досі загадка...$B$BДякую, $N. Мабуть, нам знадобиться твоя допомога проти цих орків.",
+        "c466920387cb5c55a0a8": "Ти з Лох Модану? Яка ситуація з орками біля брами Алгаз?"
+      },
       "eventObjectiveLabel": "Пройдіть через Дун-Альґаз",
       "objectiveLines": [
         {
@@ -712,6 +1065,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "7da0aacb96c98dae4a2914f64f647f68679a5f884b50cbe051a031d54a22ed9d"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -743,6 +1111,11 @@
     },
     "zhCN": {
       "description": "龙喉氏族的兽人在湿地有了一处巢穴，现在他们的势力已经快扩展到丹奥加斯了！我们可绝不能让他们在这里立足，不然，我们在湿地唯一的港口与要塞——米奈希尔港与洛克莫丹的联系将会被切断。\n\n穿越丹奥加兹到湿地那边去，向米奈希尔港的瓦斯塔格·铁腭报到，路上顺便杀它几个兽人玩玩！\n\n米奈希尔就在丹奥加兹的另一边，只要先顺着路向北，然后在岔路口转向西边就是。\n\n我们寄希望于你，{name}。可别让我们失望。",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "龙喉氏族的兽人在湿地有了一处巢穴，现在他们的势力已经快扩展到丹奥加斯了！我们可绝不能让他们在这里立足，不然，我们在湿地唯一的港口与要塞——米奈希尔港与洛克莫丹的联系将会被切断。\n\n穿越丹奥加兹到湿地那边去，向米奈希尔港的瓦斯塔格·铁腭报到，路上顺便杀它几个兽人玩玩！\n\n米奈希尔就在丹奥加兹的另一边，只要先顺着路向北，然后在岔路口转向西边就是。\n\n我们寄希望于你，$N。可别让我们失望。",
+        "22b5edfaf0a519de3682": "你的报告里怎麽全都是些坏消息!\n\n我觉得那些龙喉兽人们一定是想向奥加兹推进。过去龙喉氏族一直是躲在深山里，从不与外界接触。到底是什麽迫使他们要进入奥加兹，这就不得而知了……\n\n谢谢你，$N。我们可能还会需要你来帮忙对付那些兽人。\n",
+        "c466920387cb5c55a0a8": "你是从洛克莫丹来的?奥加兹隘口那边的兽人有什麽动向?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -759,6 +1132,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -786,6 +1177,11 @@
     },
     "zhTW": {
       "description": "龍喉氏族的獸人在濕地有了一處巢穴，現在他們的勢力已經快擴展到丹奧加斯了！我們可絕不能讓他們在這裡立足，不然，我們在濕地唯一的港口與要塞——米奈希爾港與洛克莫丹的聯繫將會被切斷。\n\n穿越丹奧加茲到濕地那邊去，向米奈希爾港的瓦斯塔格·鐵齶報到，路上順便殺它幾個獸人玩玩！\n\n米奈希爾就在丹奧加茲的另一邊，只要先順著路向北，然後在岔路口轉向西邊就是。\n\n我們寄希望於你，{name}。可別讓我們失望。",
+      "dialogue": {
+        "1781386e1c95e99ecd08": "龍喉氏族的獸人在濕地有了一處巢穴，現在他們的勢力已經快擴展到丹奧加斯了！我們可絕不能讓他們在這裡立足，不然，我們在濕地唯一的港口與要塞——米奈希爾港與洛克莫丹的聯繫將會被切斷。\n\n穿越丹奧加茲到濕地那邊去，向米奈希爾港的瓦斯塔格·鐵齶報到，路上順便殺它幾個獸人玩玩！\n\n米奈希爾就在丹奧加茲的另一邊，只要先順著路向北，然後在岔路口轉向西邊就是。\n\n我們寄希望於你，$N。可別讓我們失望。",
+        "22b5edfaf0a519de3682": "你的報告裡怎麼全都是些壞消息!\n\n我覺得那些龍喉獸人們一定是想向奧加茲推進。過去龍喉氏族一直是躲在深山裡，從不與外界接觸。到底是什麼迫使他們要進入奧加茲，這就不得而知了……\n\n謝謝你，$N。我們可能還會需要你來幫忙對付那些獸人。",
+        "c466920387cb5c55a0a8": "你是從洛克莫丹來的?奧加茲隘口那邊的獸人有什麼動向?"
+      },
       "eventObjectiveLabel": "Traverse Dun Algaz",
       "objectiveLines": [
         {
@@ -802,6 +1198,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1781386e1c95e99ecd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.22b5edfaf0a519de3682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c466920387cb5c55a0a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

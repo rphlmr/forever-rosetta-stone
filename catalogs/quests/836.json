@@ -1,8 +1,20 @@
 {
   "areaId": 47,
+  "dialogueContexts": {
+    "8fe8c6ea7be77a13c343": {
+      "lineId": "q:836:complete",
+      "npcId": 7406,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Z robota se znovu ozve praskavý hlas gnóma:\n\n„Musím přemístit Ó Ó Iks nula devět lomeno Há Él na otevřené bezpečné místo, aby mohl zahájit zdlouhavý vzletový postup. Má vestavěné maskování, ale potřebuju čas, abych ho znovu zprovoznil. Doprovoď robota z jeho současného místa třeba na pobřeží za útesem Overlook! To by mělo být ideální místo, a dost dlouhé, aby se všechno spustilo!“\n\n„Doprovoď ho bezpečně na pobřeží a pak za mnou přijď do Booty Bay! Oglethorpe Obnoticus, konec!“",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Ach, TY jsi ten velký zachránce OOX-09/HL! Ani nedokážu vyjádřit, jak ti za pomoc děkuji! Má řada návratových robotů potřebuje další vývoj, ale tvá záchrana mi ušetřila nespočet hodin přestavby i mnoho zlaťáků za výrobu!$B$BVyber si prosím kterýkoli z těchto předmětů. Ještě jednou děkuji za velkorysou pomoc, $n, mí roboti i já ti dlužíme!"
+      },
       "eventObjectiveLabel": "Doprovoď OOX-09/HL k pobřeží za Overlook Cliff",
       "objectiveLines": [
         {
@@ -20,6 +32,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -52,6 +69,9 @@
     },
     "daDK": {
       "description": "Gnomens stemme knitrer igen fra robotten:\n\n\"Jeg skal flytte OOX-09/HL til et åbent, sikkert sted, så den kan begynde en langvarig startprocedure. Den har indbygget sløring, men jeg behøver tid her til at få den i drift igen. Ledsag robotten fra dens nuværende sted til, lad os sige, kysten forbi Overlook Cliff! Det burde være et perfekt sted og give tid nok til at få systemerne i gang!\"\n\n\"Ledsag den sikkert til kysten, og kom så og tal med mig i Booty Bay! Oglethorpe Obnoticus, slut!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Åh, det er DIG, der er OOX-09/HLs store redningsmand! Jeg kan slet ikke udtrykke min tak for hjælpen! Min serie af hjemsøgende robotter kræver mere udvikling, men din redningsaktion har sparet mig utallige timers genopbygning og mange guldstykker i produktionsomkostninger!$B$BVælg venligst en af disse genstande. Tak igen for din generøse hjælp, $n. Mine robotter og jeg står i gæld til dig!"
+      },
       "eventObjectiveLabel": "Eskortér OOX-09/HL til kysten på den anden side af Overlook Cliff",
       "objectiveLines": [
         {
@@ -69,6 +89,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fbf748f433f9adfb91724be53ae316b6e48a38242e4a4c3168d89c9a44fbe1c"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -98,6 +123,9 @@
     },
     "deDE": {
       "description": "Aus dem Roboter ertönt erneut die blecherne Stimme des Gnoms:\n\n\"Ich muss OOX-09/HL an einen offenen, sicheren Ort schaffen, wo er die langwierige Startprozedur beginnen kann. Er hat eine eingebaute Tarnvorrichtung, aber ich brauche etwas Zeit, um sie von hier aus wieder funktionstüchtig zu machen. Eskortiert den Roboter von seinem derzeitigen Standort... hmmm, ja, zur Küste jenseits der Aussichtsklippen! Das sollte der perfekte Ort für mein Vorhaben sein, und bis Ihr dort seid, sollte ich auch alles vorbereitet haben und online gehen können.\"\n\n\"Eskortiert ihn sicher bis zur Küste und kommt dann zu mir nach Booty Bay! Oglethorpe Obnoticus - Ende!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Ach, IHR habt so heldenhaft OOX-09/HL gerettet! Ich kann Euch gar nicht sagen, wie dankbar ich für Eure Hilfe bin! In meine Serie von Leitrobotern muss noch viel Entwicklungsaufwand gesteckt werden, aber Eure Bergung des Roboters hat mir zahllose Stunden zusätzlicher Schraubarbeit gespart, ganz zu schweigen von dem vielen Gold, das ich spare, weil ich ihn nicht neu bauen muss!\n \n Bitte sucht Euch einen von diesen Gegenständen hier aus. Ich danke Euch nochmals für Eure großzügige Hilfe, $N, meine Roboter und ich stehen in Eurer Schuld!"
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -114,6 +142,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -141,6 +175,9 @@
     },
     "enUS": {
       "description": "The gnome's voice crackles once again from the robot:\n\n\"I need to move OOX-09/HL to an open, safe place so it can begin a lengthy take-off procedure.  It has built-in cloaking, but I need time on my end to make it operational again.  Escort the robot from its current location to, let's say, the shoreline beyond Overlook Cliff!  That should be a perfect place, and long enough, to get things online!\"\n\n\"Escort it safely to the shore, and then come talk to me in Booty Bay!  Oglethorpe Obnoticus - out!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Oh, YOU'RE the great savior of OOX-09/HL!  I cannot even begin to express my thanks for your assistance!  My homing robot series needs more development, but your recovery has saved me countless hours of extra rebuilding time, as well as many gold pieces in manufacture costs!$B$BPlease, take your choice of any of these items I have.  Thank you again for your generous assistance $n, my robots and I are in your debt!"
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -157,6 +194,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -185,6 +228,9 @@
     },
     "esES": {
       "description": "Vuelves a oír la voz de gnomo que sale del robot:\n\n\"Tengo que llevar a OOX-09/HL a un lugar abierto y seguro en el que pueda iniciar el largo proceso de despegue. Tiene un posicionador de serie, pero necesito tiempo para que vuelva a estar operativo. Lleva al robot a, digamos, la costa que está más allá de los Acantilados Dominantes. Allí tendré tiempo para prepararlo todo.\"\n\n\"Llévalo a la orilla y ven a verme a la Bahía del Botín. Oglethorpe Obnoticus. ¡Corto y cierro!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "¡Ah, tú rescataste a OOX-09/TI! ¡No tengo palabras para expresar mi gratitud! Aún tengo que perfeccionarlo, ¡pero me has ahorrado muchas monedas de oro e incontables horas de trabajo! \n\nTe ruego que aceptes uno de estos objetos en recompensa. Mis robots y yo te estamos muy agradecidos, $n."
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -201,6 +247,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -228,6 +280,9 @@
     },
     "esMX": {
       "description": "Vuelves a oír la voz del gnomo que sale del robot:\n\n\"Tengo que llevar a OOX-09/TI a un lugar abierto y seguro en el que pueda iniciar el largo proceso de despegue. Tiene un dispositivo de invisibilidad integrado, pero necesito tiempo para que vuelva a estar operativo. ¡Escolta al robot hasta, digamos, la costa que está más allá de los Acantilados Dominantes! Ese lugar debería ser perfecto, y tendré tiempo para hacer que todo vuelva a funcionar correctamente.\"\n\n\"¡Escóltalo para que llegue sano y salvo a la orilla y después ven a verme a Bahía del Botín! Oglethorpe Obnoticus. ¡Cambio y fuera!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "¡Ah, tú rescataste a OOX-09/TI! ¡No tengo palabras para expresar mi gratitud! Aún tengo que perfeccionarlo, ¡pero me has ahorrado muchas monedas de oro e incontables horas de trabajo!\n\nTe ruego que aceptes uno de estos objetos en recompensa. Mis robots y yo te estamos muy agradecidos, $n."
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -244,6 +299,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -271,6 +332,9 @@
     },
     "frFR": {
       "description": "Le robot émet à nouveau la voix du gnome :\n\n\"Je dois déplacer OOX-09/HL dans un endroit dégagé et sûr pour qu'il puisse entamer sa longue procédure de décollage. Il est équipé d'un camouflage, mais il me faut du temps pour le rendre opérationnel de mon côté. Il faut que vous l'escortiez jusqu'au... disons jusqu'au littoral qui s'étend au-delà des Haut-Surplombs l ! Ce serait un endroit parfait, et assez long, pour que tout puisse se mettre en route !\"\n\nEscortez-le jusque là-bas, et venez me parler à Baie-du-Butin ! Oglethorpe Obnoticus, terminé.\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Oh, c'est VOUS qui avez sauvé OOX-09/HL ! Aucune formule ne pourrait exprimer l'étendue de ma reconnaissance ! Mes robots guidés ont encore besoin d'être améliorés, mais votre sauvetage m'a épargné un nombre incalculable d'heures de reconstruction, ainsi que de nombreuses pièces d'or !\n \n Je vous en prie, prenez l'un des objets que je possède. J'espère que vous en ferez bon usage. Merci encore pour votre aide généreuse, $N, mes robots et moi-même vous sommes redevables !"
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -287,6 +351,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -314,6 +384,9 @@
     },
     "hrHR": {
       "description": "Gnomov glas ponovno pucketa iz robota:\n\n‘Moram premjestiti OOX-09/HL na otvoreno, sigurno mjesto kako bi mogao započeti dugi postupak polijetanja. Ima ugrađeno prikrivanje, ali treba mi vremena da ga ponovno osposobim. Otprati robota s trenutačnog mjesta do, recimo, obale iza Overlook Cliffa! To bi trebalo biti savršeno mjesto i dovoljno daleko da sve pokrenem!’\n\n‘Sigurno ga otprati do obale, a zatim dođi razgovarati sa mnom u Booty Bay! Oglethorpe Obnoticus, odjava!’",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Oh, TI si veliki spasitelj OOX-09/HL-a! Ne mogu ti ni izraziti koliko sam zahvalan na pomoći! Moja serija robota koji se vraćaju kući treba još razvoja, ali tvoje spašavanje uštedjelo mi je bezbroj sati ponovne izgradnje i mnogo zlatnika za proizvodnju!$B$BIzaberi bilo koji od ovih predmeta. Još jednom hvala na velikodušnoj pomoći, $n, moji roboti i ja tvoji smo dužnici!"
+      },
       "eventObjectiveLabel": "Otprati OOX-09/HL do obale iza Overlook Cliffa",
       "objectiveLines": [
         {
@@ -331,6 +404,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fbf748f433f9adfb91724be53ae316b6e48a38242e4a4c3168d89c9a44fbe1c"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -360,6 +438,9 @@
     },
     "itIT": {
       "description": "Sì, sono io Oglethorpe Saldarame, mastro inventore al tuo servizio! Come posso aiutarti?",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Oh, sei TU il grande salvatore di OOX-09/HL! Non so come esprimerti la mia gratitudine per il tuo aiuto! La mia serie di robot di ritorno richiede ancora sviluppo, ma il tuo recupero mi ha risparmiato innumerevoli ore di ricostruzione e molti pezzi d’oro in costi di produzione!$B$BTi prego, scegli uno qualsiasi di questi oggetti. Grazie ancora per il tuo generoso aiuto, $n, io e i miei robot siamo in debito con te!"
+      },
       "eventObjectiveLabel": "Scorta OOX-09/HL fino alla costa oltre Overlook Cliff",
       "objectiveLines": [
         {
@@ -376,6 +457,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -404,6 +490,9 @@
     },
     "koKR": {
       "description": "노움의 목소리가 다시 로봇에서 흘러나옵니다.\n\n\"긴 활주로로 사용할 수 있을 만한 넓고 안전한 장소로 OOX-09/HL을 옮겨가야겠소. 은폐 기능이 탑재되어 있지만 다시 작동할 수 있도록 하려면 나도 시간이 좀 필요하오. 로봇을 현재 있는 곳에서, 보자 그러니까, 전망대 절벽 너머 해안까지 호위해주시오. 그곳이라면 이륙하기에 충분할 거요!\"\n\n\"해안까지 무사히 호위해 간 후에 무법항으로 와서 날 찾으시오! 오글소프 오브노티쿠스, 이상!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "아, 자네가 바로 OOX-09/HL의 위대한 구원자로군! 도와준 것에 대해 얼마나 고마운지 말로 다 할 수가 없네! 귀환 로봇 시리즈는 아직 더 개발해야 하지만, 자네 덕분에 다시 만드는 데 들일 수많은 시간과 제작비를 아꼈네!$B$B여기 있는 물건 중 하나를 골라 주게. 관대한 도움에 다시 한번 감사하네, $n. 나와 내 로봇들은 자네에게 빚을 졌어!"
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -420,6 +509,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -447,6 +541,9 @@
     },
     "plPL": {
       "description": "Z robota ponownie dobiega trzeszczący głos gnoma:\n\n„Muszę przenieść OOX-09/HL w otwarte, bezpieczne miejsce, aby mógł rozpocząć długą procedurę startową. Ma wbudowany kamuflaż, ale potrzebuję czasu, by z mojej strony ponownie go uruchomić. Eskortuj robota z obecnego miejsca do, powiedzmy, wybrzeża za Overlook Cliff! To powinno być idealne miejsce, a podróż da mi dość czasu, żeby wszystko uruchomić!”\n\n„Doprowadź go bezpiecznie na brzeg, a potem porozmawiaj ze mną w Booty Bay! Oglethorpe Obnoticus, koniec transmisji!”",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Och, to TY jesteś wielkim wybawcą OOX-09/HL! Nie wiem nawet, jak wyrazić wdzięczność za pomoc! Moja seria robotów powracających wymaga dalszych prac, ale twoja akcja ratunkowa oszczędziła mi niezliczonych godzin odbudowy i wielu sztuk złota na produkcję!$B$BWybierz dowolny z tych przedmiotów. Jeszcze raz dziękuję za hojną pomoc, $n. Moje roboty i ja jesteśmy twoimi dłużnikami!"
+      },
       "eventObjectiveLabel": "Odprowadź OOX-09/HL na brzeg za Overlook Cliff",
       "objectiveLines": [
         {
@@ -464,6 +561,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fbf748f433f9adfb91724be53ae316b6e48a38242e4a4c3168d89c9a44fbe1c"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -493,6 +595,9 @@
     },
     "ptBR": {
       "description": "A voz do gnomo surge de novo do robô:\n\n\"Preciso transportar o OOX-09/HL para um local amplo e seguro para eu começar o longo procedimento de lançamento. Ele tem um manto de invisibilidade embutido, mas preciso de tempo para torná-lo funcional de novo. Escolte o robô de sua localização atual para, digamos, a costa além dos Penhascos Panorâmicos! Lá seria um lugar perfeito e extenso o suficiente para a conexão!\"\n\nLeve-o em segurança para a costa e volte para falar comigo na Angra do Butim! Olhatorto Obnótico – câmbio!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Ah, VOCÊ é o grande salvador de OOX-09/HL! Nem sei por onde começar a expressar minha gratidão por sua ajuda! Minha série de robôs teleguiados ainda precisa de ajustes, mas o fato de você ter recuperado ele me poupou horas incontáveis de tempo adicional de reconstrução, bem como muitas moedas de ouro com custos de fabricação!\n\nEscolha o item que desejar. Mais uma vez obrigado pela ajuda generosa, $N, meus robôs e eu estamos em débito com você!"
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -509,6 +614,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -536,6 +647,9 @@
     },
     "ruRU": {
       "description": "Из робота снова раздается голос гнома:\n\n\"Нужно вывести OOX-09/HL на открытое и безопасное место, чтобы он мог взять нужный разбег и взлететь. У него есть система маскировки, но она, похоже, повреждена, поэтому вам придется проводить цыпленка до... ну, скажем, до побережья за Обзорными скалами! Местность там тихая и открытая, так что разбежаться он сумеет\".\n\n\"Пожалуйста, проводите робота на берег, а потом загляните ко мне в Пиратскую бухту. Карлс Пропеллерз, конец связи\".",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "О, да ты просто спас моего робота КПХ-9/HL! Я прям даже не знаю, как тебя благодарить! Моих автономных роботов еще совершенствовать и совершенствовать, но ты избавил меня от многих лишних часов работы, а также от расходов!\n\nПожалуйста, выбери себе что-нибудь в награду. Спасибо тебе еще раз, $N, я и мои роботы навеки у тебя в долгу."
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -552,6 +666,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -579,6 +699,9 @@
     },
     "svSE": {
       "description": "Gnomens röst sprakar åter från roboten:\n\n\"Jag måste flytta OOX-09/HL till en öppen, säker plats för att påbörja en lång startprocedur. Den har inbyggd kamouflering, men jag behöver tid att få den i drift igen. Eskortera roboten härifrån till, låt säga, stranden bortom Overlook Cliff! Perfekt plats och tillräckligt lång tid för att få igång allt!\"\n\n\"För den säkert till stranden och kom sedan till mig i Booty Bay! Oglethorpe Obnoticus, klart slut!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Åh, det är DU som är OOX-09/HL:s stora räddare! Jag kan knappt uttrycka hur tacksam jag är för din hjälp! Min serie hemvändande robotar behöver utvecklas mer, men din räddningsinsats har sparat mig otaliga timmar av återuppbyggnad och många guldstycken i tillverkningskostnader!$B$BVälj gärna ett av dessa föremål. Tack igen för din generösa hjälp, $n. Mina robotar och jag står i skuld till dig!"
+      },
       "eventObjectiveLabel": "Eskortera OOX-09/HL till strandlinjen bortom Overlook Cliff",
       "objectiveLines": [
         {
@@ -596,6 +719,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fbf748f433f9adfb91724be53ae316b6e48a38242e4a4c3168d89c9a44fbe1c"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -625,6 +753,9 @@
     },
     "trTR": {
       "description": "Gnome'un sesi robottan yeniden cızırtıyla duyulur:\n\n\"Uzun kalkış işlemine başlayabilmesi için OOX-09/HL'yi açık ve güvenli bir yere götürmem gerekiyor. Yerleşik bir gizlenme düzeneği var ama onu tekrar çalışır hale getirmek için kendi tarafımda zamana ihtiyacım var. Robota bulunduğu yerden, mesela Overlook Cliff'in ötesindeki kıyıya kadar eşlik et! Her şeyi devreye almak için orası hem mükemmel bir yer olacak hem de bana yeterince zaman kazandıracak!\"\n\n\"Ona güvenle kıyıya kadar eşlik et, sonra Booty Bay'de benimle konuş! Oglethorpe Obnoticus, tamam!\"",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "Ah, OOX-09/HL’nin büyük kurtarıcısı SENSİN demek! Yardımın için teşekkürlerimi anlatmaya kelimeler yetmez! Eve dönen robot serimin daha çok geliştirilmesi gerekiyor ama onu kurtarman beni sayısız saatlik yeniden yapım işinden ve birçok altınlık üretim masrafından kurtardı!$B$BLütfen bu eşyalardan istediğini seç. Cömert yardımın için tekrar teşekkürler $n, robotlarım ve ben sana borçluyuz!"
+      },
       "eventObjectiveLabel": "OOX-09/HL'ye Overlook Cliff'in ötesindeki kıyıya kadar eşlik et",
       "objectiveLines": [
         {
@@ -642,6 +773,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fbf748f433f9adfb91724be53ae316b6e48a38242e4a4c3168d89c9a44fbe1c"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -671,6 +807,9 @@
     },
     "ukUA": {
       "description": "Голос гнома знову потріскує з робота:\n\n«Мені потрібно перевести OOX-09/HL на відкрите безпечне місце, щоб розпочати тривалу процедуру зльоту. Він має вбудоване маскування, але мені потрібен час, щоб знову його запустити. Супроводь робота звідси, скажімо, до берега за Оглядовими кручами! Місце має чудово підійти, а часу вистачить, щоб усе запрацювало!»\n\n«Безпечно проведи його до берега, а потім приходь до мене в Грабіжну Бухту! Оґлторп Обриднус, кінець зв'язку!»",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "О, це ТИ великий рятівник OOX-09/HL! Я навіть не можу висловити, як вдячний тобі за допомогу! Моя серія роботів, що повертаються додому, потребує подальшого розвитку, але порятунок заощадив мені безліч годин на перебудову й чимало золотих на виробництво!$B$BБудь ласка, обери будь-яку з цих речей. Ще раз дякую за щедру допомогу, $n, мої роботи і я перед тобою в боргу!"
+      },
       "eventObjectiveLabel": "Супроводіть OOX-09/HL до узбережжя за Оглядовими кручами",
       "objectiveLines": [
         {
@@ -688,6 +827,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fbf748f433f9adfb91724be53ae316b6e48a38242e4a4c3168d89c9a44fbe1c"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -719,6 +863,9 @@
     },
     "zhCN": {
       "description": "那个侏儒的声音再次从那个机器人中传了出来：\n\n“我需要你帮忙把OOX-09/HL移动到一个安全的开阔地，这样它才可以启动起飞程序。它自带隐形系统，但是我需要一点时间来远程启动这个系统。请你把这个机器人从现在的位置护送到望海崖去！那里是个非常理想的起飞点，有足够的空间作为机器人起飞的跑道！”\n\n“将它护送到那里，然后再到藏宝海湾来找我！奥格索普·奥布诺提斯——完毕！”",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "哦，你是OOX-09/HL的伟大救世主!我简直无法用言语来表达对你的感谢!如果让我自己重新构造一个母体机器人的话，无疑要浪费大量的时间，你真是帮了我的大忙，不仅节约了我的时间，同时也节约了我的钱!\n\n请从这些东西中选择一样你中意的吧。再次感谢你无私的帮助，我的机器人和我都欠你的人情!\n"
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -735,6 +882,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -762,6 +915,9 @@
     },
     "zhTW": {
       "description": "那個地精的聲音再次從那個機器人中傳了出來：\n\n「我需要你幫忙把OOX-09/HL移動到一個安全的開闊地，這樣它才可以啟動起飛程式。它自帶隱形系統，但是我需要一點時間來遠端啟動這個系統。請你把這個機器人從現在的位置護送到望海崖去！那裡是個非常理想的起飛點，有足夠的空間作為機器人起飛的跑道！」\n\n「將它護送到那裡，然後再到藏寶海灣來找我！奧格索普·奧布諾提斯——完畢！」",
+      "dialogue": {
+        "8fe8c6ea7be77a13c343": "哦，你是OOX-09/HL的偉大救世主!我簡直無法用言語來表達對你的感謝!如果讓我自己重新構造一個母體機器人的話，無疑要浪費大量的時間，你真是幫了我的大忙，不僅節約了我的時間，同時也節約了我的錢!\n\n請從這些東西中選擇一樣你中意的吧。再次感謝你無私的幫助，我的機器人和我都欠你的人情!"
+      },
       "eventObjectiveLabel": "Escort OOX-09/HL to the shoreline beyond Overlook Cliff",
       "objectiveLines": [
         {
@@ -778,6 +934,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.8fe8c6ea7be77a13c343": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

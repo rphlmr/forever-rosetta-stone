@@ -1,7 +1,27 @@
 {
+  "dialogueContexts": {
+    "070540f987800ff016e0": {
+      "lineId": "q:2755:accept",
+      "npcId": 7790,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "294cb68723289834e074": {
+      "lineId": "q:2755:complete",
+      "npcId": 7790,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Orokk nebrečí, {name}. To jsou saze v oku.\n\n<Orokk si otře slzu.>\n\nJe tu ještě jedno poslední rodinné tajemství Omoshe, které tě Orokk naučí. Orokk zemře šťastný, a to díky tobě, {name}.\n\nNauč se radostný tanec Omoshe a pak se naučíš pěst ze železa!",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk nepláče, $N. Saze v oku.$B$B<Orokk si utře slzu.>$B$BOrokk tě naučí poslední rodinné tajemství Omoshů. Orokk zemře šťastný díky $N.$B$BNauč se tanec radosti Omoshů a pak se naučíš železnou pěst!\n",
+        "294cb68723289834e074": "<Orokk popadá dech.>$B$BUž je to dávno, co Orokk tančil tanec radosti Omoshů. Teď se uč, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -18,6 +38,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d738bfcc95b845040fb9ce8b1986309072cbb3c0c39d29777b08af7c9cfc66c8"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +73,10 @@
     },
     "daDK": {
       "description": "Orokk græder ikke, {name}. Sod i øjet.\n\n<Orokk wipes a tear away.>\n\nDer er én sidste Omosh-familiehemmelighed, Orokk vil lære dig. Orokk vil dø lykkelig takket være {name}.\n\nLær Omoshs glædesdans, og så lærer du jernnæven!",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk græder ikke, $N. Sod i øjet.$B$B<Orokk tørrer en tåre væk.>$B$BDer er én sidste Omosh-familiehemmelighed, Orokk vil lære dig. Orokk dør lykkelig takket være $N.$B$BLær Omoshs glædesdans, og så lærer du jernnæve!\n",
+        "294cb68723289834e074": "<Orokk gisper efter vejret.>$B$BDet er meget længe siden, Orokk dansede Omoshs glædesdans. Lær nu, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d738bfcc95b845040fb9ce8b1986309072cbb3c0c39d29777b08af7c9cfc66c8"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +126,10 @@
     },
     "deDE": {
       "description": "Orokk weint nicht, {name}. Orokk hat Ruß ins Auge bekommen.\n\n<Orokk wischt eine Träne weg.>\n\nNoch ein letztes Familiengeheimnis der Omosh wird Orokk Euch beibringen. Dank {name} wird Orokk glücklich sterben.\n\nLernt den Freudentanz der Omoshs... und dann lernt Ihr Eisenfaust!",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk weint nicht, $n. Orokk hat Ruß ins Auge bekommen.\n\n\nNoch ein letztes Familiengeheimnis der Omosh wird Orokk Euch beibringen. Dank $n wird Orokk glücklich sterben.\n\nLernt den Freudentanz der Omoshs... und dann lernt Ihr Eisenfaust!",
+        "294cb68723289834e074": " \n Lange her, dass Orokk den Freudentanz der Omoshs getanzt hat. Lernt jetzt, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +145,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "Orokk is not crying, {name}. Soot is in eye.\n\n<Orokk wipes a tear away.>\n\nThere is one last Omosh family secret Orokk will teach you. Orokk will die happy, thanks to {name}.\n\nLearn Omosh dance of joy and then you learn fist of iron!\r\n",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk is not crying, $N. Soot is in eye.$B$B<Orokk wipes a tear away.>$B$BThere is one last Omosh family secret Orokk will teach you. Orokk will die happy, thanks to $N.$B$BLearn Omosh dance of joy and then you learn fist of iron!\n",
+        "294cb68723289834e074": "<Orokk pants.>$B$BIt has been a very long time since Orokk has done the Omosh dance of joy. Learn now, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -157,6 +233,10 @@
     },
     "esES": {
       "description": "Orokk no llora, {name}.\n\n<Se seca una lágrima.>\n\nOrokk tiene otro secreto de la familia Omosh que enseñarte. Orokk morirá feliz gracias a {name}.\n\nAprende la danza de la alegría de los Omosh y te enseñaré lo que sé de los puños de hierro.\n",
+      "dialogue": {
+        "070540f987800ff016e0": "No lloro, es que tengo algo en el ojo, $N. \n\n\nTengo otro secreto de la familia Omosh que enseñarte. Moriré feliz gracias a ti.\n\nAprende la danza de la alegría de los Omosh y te enseñaré lo que sé de los puños de hierro.",
+        "294cb68723289834e074": "\n Ha pasado mucho tiempo desde que Orokk hizo la danza de alegría Omosh.  ¡Aprende ahora, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +252,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -194,6 +286,10 @@
     },
     "esMX": {
       "description": "Orokk no llora, {name}.\n\n<Se seca una lágrima.>\n\nOrokk tiene otro secreto de la familia Omosh que enseñarte. Orokk morirá feliz gracias a {name}.\n\nAprende la danza de la alegría de los Omosh y te enseñaré lo que sé de los puños de hierro.\n",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk no llora, $n.\n\n\nOrokk tiene otro secreto de la familia Omosh que enseñarte. Orokk morirá feliz gracias a $n.\n\nAprende la danza de la alegría de los Omosh y te enseñaré lo que sé de los puños de hierro.|n",
+        "294cb68723289834e074": "\nHa pasado mucho tiempo desde que Orokk hizo la danza de la alegría Omosh. ¡Aprende ahora, $n!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +305,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +339,10 @@
     },
     "frFR": {
       "description": "Orokk ne pleure pas, {name}. Il a une poussière dans l'œil.\n\n<Orokk essuie une larme.>\n\nIl y a un dernier secret de famille Omosh qu'Orokk va transmettre. Orokk mourra heureux, grâce à {name}.\n\nApprenez la danse de joie des Omosh et vous apprendrez ensuite le secret des Poings de fer !",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk ne pleure pas, $N. Il a une poussière dans l'œil.\n\n\nIl y a un dernier secret de famille Omosh qu'Orokk va transmettre. Orokk mourra heureux, grâce à $N.\n\nApprenez la danse de joie des Omosh et vous apprendrez ensuite le secret des Poings de fer !",
+        "294cb68723289834e074": " \n Il y a bien longtemps qu'Orokk n'a pas fait la Danse de joie des Omosh. Apprenez maintenant, $N !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +358,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +392,10 @@
     },
     "hrHR": {
       "description": "Orokk ne plače, {name}. Čađa u oku.\n\n<Orokk briše suzu.>\n\nPostoji još jedna posljednja tajna obitelji Omosh koju će te Orokk naučiti. Orokk će umrijeti sretan zahvaljujući {name}.\n\nNauči Omoshov ples radosti i tada nauči željeznu šaku!",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk ne plače, $N. Čađa u oku.$B$B<Orokk briše suzu.>$B$BOrokk će te naučiti još jednoj obiteljskoj tajni Omosha. Orokk će umrijeti sretan zahvaljujući $N.$B$BNauči Omoshov ples radosti, a onda ćeš naučiti željeznu šaku!\n",
+        "294cb68723289834e074": "<Orokk dahće.>$B$BProšlo je mnogo vremena otkako je Orokk plesao Omoshov ples radosti. Uči sada, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +412,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d738bfcc95b845040fb9ce8b1986309072cbb3c0c39d29777b08af7c9cfc66c8"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +445,10 @@
     },
     "itIT": {
       "description": "Orokk non piange, {name}. Fuliggine negli occhi.\n\n<Orokk si asciuga una lacrima.>\n\nC'è un ultimo segreto della famiglia Omosh che Orokk t'insegnerà. Orokk morirà felice grazie a te, {name}.\n\nImpara la Danza della Gioia Omosh e imparerai a realizzare il pugno di ferro!",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk non piange, $N. Fuliggine è in occhio.\n\n\nC'è un ultimo segreto della famiglia Omosh che Orokk ti insegnerà. Orokk morirà felice, grazie a $N.\n\nImpara danza della gioia degli Omosh e poi impari pugno di ferro!",
+        "294cb68723289834e074": "\nÈ passato moltissimo tempo dall'ultima volta che Orokk ha fatto la danza della gioia degli Omosh. Ora impara, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -322,6 +464,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -344,6 +498,10 @@
     },
     "koKR": {
       "description": "이 오로크는 우는 게 아니오. 눈에 먼지가 들어갔을 뿐.\n\n<눈물을 훔쳐내는 오로크>\n\n이 오로크가 당신에게 가르쳐줄 오모쉬 집안의 마지막 비밀이 하나 남았소. 덕분에 이 오로크 행복하게 눈을 감을 수 있겠소.\n\n오모쉬 집안에 대대로 내려오는 기쁨의 춤을 따라하면 철제 장갑을 만드는 법을 가르쳐 주리다!",
+      "dialogue": {
+        "070540f987800ff016e0": "이 오로크는 우는 게 아니오. 눈에 먼지가 들어갔을 뿐.\n\n\n이 오로크가 당신에게 가르쳐줄 오모쉬 집안의 마지막 비밀이 하나 남았소. 덕분에 이 오로크 행복하게 눈을 감을 수 있겠소.\n\n오모쉬 집안에 대대로 내려오는 기쁨의 춤을 따라하면 철제 장갑을 만드는 법을 가르쳐 주리다!",
+        "294cb68723289834e074": "\n오로크가 기쁨의 오모쉬 춤을 추는 건 정말 오랜만이다.  지금 배우십시오, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -359,6 +517,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -381,6 +551,10 @@
     },
     "plPL": {
       "description": "Orokk nie płacze, {name}. Sadza w oku.\n\n<Orokk ociera łzę.>\n\nJest jeszcze jeden rodzinny sekret Omosh, którego Orokk cię nauczy. Dzięki {name} Orokk umrze szczęśliwy.\n\nNaucz się tańca radości Omosh, a potem poznasz żelazną pięść!\n",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk nie płacze, $N. Sadza w oku.$B$B<Orokk ociera łzę.>$B$BOrokk nauczy cię ostatniego sekretu rodziny Omoshów. Orokk umrze szczęśliwy dzięki $N.$B$BNaucz się tańca radości Omoshów, a potem poznasz żelazną pięść!\n",
+        "294cb68723289834e074": "<Orokk dyszy.>$B$BMinęło bardzo wiele czasu, odkąd Orokk tańczył taniec radości Omoshów. Ucz się teraz, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -397,6 +571,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d738bfcc95b845040fb9ce8b1986309072cbb3c0c39d29777b08af7c9cfc66c8"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -420,6 +604,10 @@
     },
     "ptBR": {
       "description": "Orokk não está chorando, {name}. É cisco no olho.\n\n<Orokk enxuga uma lágrima.>\n\nExiste um último segredo da família Omosh para você aprender. Orokk vai morrer feliz, graças a {name}.\n\nAprende a dancinha feliz do Omosh e daí você aprende o punho de ferro!",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk não está chorando, $n. É cisco no olho.\n\n\nExiste um último segredo da família Omosh para você aprender. Orokk vai morrer feliz, graças a $n.\n\nAprende a dancinha feliz do Omosh e daí você aprende o punho de ferro!",
+        "294cb68723289834e074": "<Orokk ofega.>$B$BFaz muito tempo que Orokk não dança a dança da alegria dos Omosh. Aprenda agora, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -435,6 +623,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -457,6 +656,10 @@
     },
     "ruRU": {
       "description": "Нет, {name}, Орокк не плачет. Это сажа в глаз попала.\n\n*Орокк утирает слезу.*\n\nОстался последний секрет семьи Омошей, которому научит тебя Орокк.\n\nВыучи танец радости Омошей, и научишься ковать железный кулак!",
+      "dialogue": {
+        "070540f987800ff016e0": "Нет, $n, Орокк не плачет. Это сажа в глаз попала.\n\n*Орокк утирает слезу.*\n\nОстался последний секрет семьи Омошей, которому научит тебя Орокк.\n\nВыучи танец радости Омошей, и научишься ковать железный кулак!",
+        "294cb68723289834e074": "\nМного времени прошло с тех пор, когда Орокк танцевал танец радости Омошей. Учись, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -472,6 +675,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -494,6 +709,10 @@
     },
     "svSE": {
       "description": "Orokk gråter inte, {name}. Sot i ögat.\n\n<Orokk torkar bort en tår.>\n\nDet finns en sista Omoshfamiljehemlighet Orokk ska lära dig. Orokk dör lycklig tack vare {name}.\n\nLär dig Omoshs glädjedans, sedan lär du dig järnnäven!\r\n",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk gråter inte, $N. Sot i ögat.$B$B<Orokk torkar bort en tår.>$B$BOrokk ska lära dig en sista hemlighet från familjen Omosh. Orokk kommer att dö lycklig, tack vare $N.$B$BLär dig Omoshs glädjedans, sedan lär du dig järnnäve!\n",
+        "294cb68723289834e074": "<Orokk flämtar.>$B$BDet var mycket länge sedan Orokk dansade Omoshs glädjedans. Lär dig nu, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -510,6 +729,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d738bfcc95b845040fb9ce8b1986309072cbb3c0c39d29777b08af7c9cfc66c8"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -533,6 +762,10 @@
     },
     "trTR": {
       "description": "Orokk ağlamıyor, {name}. Göze kurum kaçtı.\n\n<Orokk bir gözyaşını siler.>\n\nOrokk'un sana öğreteceği son bir Omosh aile sırrı var. Orokk, {name} sayesinde mutlu ölecek.\n\nOmosh sevinç dansını öğren, sonra demir yumruğu öğrenirsin!\r\n",
+      "dialogue": {
+        "070540f987800ff016e0": "Orokk ağlamıyor, $N. Gözüne is kaçtı.$B$B<Orokk bir gözyaşını siler.>$B$BOrokk sana son bir Omosh aile sırrını öğretecek. Orokk, $N sayesinde mutlu ölecek.$B$BOmosh'un neşe dansını öğren, sonra demir yumruğu öğrenirsin!\n",
+        "294cb68723289834e074": "<Orokk soluk soluğadır.>$B$BOrokk, Omosh'un neşe dansını yapmayalı çok uzun zaman oldu. Şimdi öğren, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -549,6 +782,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d738bfcc95b845040fb9ce8b1986309072cbb3c0c39d29777b08af7c9cfc66c8"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -572,6 +815,10 @@
     },
     "ukUA": {
       "description": "Орокк не плаче, {name}. В око потрапила сажа.\n\n<Орокк витирає сльозу.>\n\nЄ ще одна остання таємниця сім'ї Омош, якої Орокк навчить тебе. Орокк помре щасливим завдяки {name}.\n\nВивчи танець радості роду Омош, і тоді ти навчишся кувати залізний кулак!",
+      "dialogue": {
+        "070540f987800ff016e0": "Орокк не плаче, $N. Сажа в око потрапила.$B$B<Орокк витирає сльозу.>$B$BОрокк навчить тебе останньої родинної таємниці Омо́шів. Орокк помре щасливим завдяки $N.$B$BВивчи танець радості Омо́шів, а тоді навчишся залізного кулака!\n",
+        "294cb68723289834e074": "<Орокк важко дихає.>$B$BДуже давно Орокк не танцював танець радості Омо́шів. Навчайся зараз, $N!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -589,6 +836,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "d738bfcc95b845040fb9ce8b1986309072cbb3c0c39d29777b08af7c9cfc66c8"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -614,6 +871,10 @@
     },
     "zhCN": {
       "description": "奥罗克没哭，{name}，眼睛进了灰。\n\n<奥罗克偷偷地抹去一滴眼泪>\n\n还有一个沃姆什家族的秘密，奥罗克可以告诉你。多谢{name}，奥罗克现在死而无憾了。\n\n学习沃姆什家族的喜悦之舞，然后你就掌握了锻造钢铁手套的技术！",
+      "dialogue": {
+        "070540f987800ff016e0": "奥罗克没哭，$N，眼睛进了灰。\n\n\n还有一个沃姆什家族的秘密，奥罗克可以告诉你。多谢$N，奥罗克现在死而无憾了。\n\n学习沃姆什家族的喜悦之舞，然后你就掌握了锻造钢铁手套的技术！",
+        "294cb68723289834e074": "$奥罗克已经很久没跳过喜悦之舞了。你也跟着学吧，$N!\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -629,6 +890,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -651,6 +924,10 @@
     },
     "zhTW": {
       "description": "奧羅克沒哭，{name}，眼睛進了灰。\n\n<奧羅克偷偷地抹去一滴眼淚。>\n\n奧羅克會教你最後一個沃姆什家族的秘密。多虧了{name}，奧羅克現在死而無憾了。\n\n學習沃姆什家族的喜悅之舞，你就學會了鋼鐵之拳!",
+      "dialogue": {
+        "070540f987800ff016e0": "奧羅克沒哭，$N，眼睛進了灰。\n\n\n還有一個沃姆什系列的秘密，奧羅克可以告訴你。多謝$N，奧羅克現在死而無憾了。\n\n學習沃姆什系列的喜悅之舞，然後你就掌握了鍛造鋼鐵手套的技術！",
+        "294cb68723289834e074": "<奧羅克喘着氣說。>"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -666,6 +943,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.070540f987800ff016e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.294cb68723289834e074": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

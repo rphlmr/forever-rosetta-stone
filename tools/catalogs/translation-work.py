@@ -87,8 +87,9 @@ def get_tokens(value):
     return sorted(tokens)
 
 
-def get_quest_tokens(value):
+def get_quest_tokens(value, *, allow_sentence_selectors=False):
     """Ignore literal gender inflection controls without hiding protected value tokens."""
+    branch = r'[^:;$\n]+' if allow_sentence_selectors else r'[^:;$\n.!?]+'
     pieces, protected, offset = [], [], 0
     while offset < len(value):
         if value.startswith('${', offset):
@@ -100,7 +101,7 @@ def get_quest_tokens(value):
             pieces.append(value[start:offset])
             continue
         if value[offset:offset + 2] in ('$g', '$G'):
-            match = re.match(r'\$[gG]([^:;$\n.!?]+):([^:;$\n.!?]+);', value[offset:])
+            match = re.match(rf'\$[gG]({branch}):({branch});', value[offset:])
             if not match or not match[1].strip() or not match[2].strip():
                 raise ValueError('Malformed quest gender selector')
             selector = match.group()

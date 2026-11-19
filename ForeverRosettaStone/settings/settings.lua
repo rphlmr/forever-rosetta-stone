@@ -11,8 +11,14 @@ Addon.features = {
         description = "Show translated section names when hovering profession recipe categories." },
     { id = "questPanel", name = "Quest panel", group = "Quests",
         description = "Show translated quest text beside map details and NPC quest windows. Map details include a bookmark and controller navigation." },
-    { id = "questAutoOpen", name = "Open translation automatically", group = "Quests",
-        description = "Open the quest translation as soon as quest details or an NPC quest window appear. When off, use the bookmark to open it." },
+    { id = "questAutoOpen", name = "Auto-open quest details and offers", group = "Quests",
+        description = "Automatically open the translation for map quest details and NPC quest offers. When off, use the bookmark." },
+    { id = "questGreetingAutoOpen", name = "Auto-open NPC greetings", group = "Quests", defaultFrom = "questAutoOpen",
+        description = "Automatically open the translated dialogue when you talk to an NPC. When off, use the bookmark." },
+    { id = "questProgressAutoOpen", name = "Auto-open quest progress dialogue", group = "Quests", defaultFrom = "questAutoOpen",
+        description = "Automatically open the translation when an NPC asks about an active quest. When off, use the bookmark." },
+    { id = "questRewardAutoOpen", name = "Auto-open quest turn-in dialogue", group = "Quests", defaultFrom = "questAutoOpen",
+        description = "Automatically open the translation on the quest turn-in screen. When off, use the bookmark." },
     { id = "questTooltip", name = "Quest-list tooltips", group = "Quests",
         description = "Show quest-list and chat-link translations using the selected tooltip display." },
     { id = "mapQuestTooltip", name = "Map quest tooltips", group = "Quests",
@@ -96,7 +102,7 @@ function Addon:LoadPreferences()
 
     for _, feature in ipairs(self.features) do
         if type(self.preferences.features[feature.id]) ~= "boolean" then
-            self.preferences.features[feature.id] = true
+            self.preferences.features[feature.id] = not feature.defaultFrom or self.preferences.features[feature.defaultFrom]
         end
     end
 end

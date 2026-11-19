@@ -18,9 +18,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "92b5c17d52c2cc8e632a": {
+      "lineId": "q:1068:progress",
+      "npcId": 4049,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "caafaff3017f44855a3e": {
+      "lineId": "q:1068:accept",
+      "npcId": 4049,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "d6ac3f442a7f3f05144a": {
+      "lineId": "q:1068:complete",
+      "npcId": 4049,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Existuje vztah mezi duchovní magií šamanů a přírodní magií druidů. Proto my šamani slyšíme prosbu duchů Stonetalonu. Mnohé z jejich šepotů mi unikají, ale jedno poselství, jedno vidění, je jasné...\n\nMěla jsem vidění dvou strojů ve tvaru člověka ve Windshear Crag, severozápadně od Greatwood Vale, jak kácejí stromy nevídanou rychlostí. Tyto kovové bestie musí být zastaveny!\n\nV mém vidění byly stroje označeny podivnými symboly:\n\niks té čtyři a iks té devět.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Duchové stromů naříkají nad ztrátou svých bratří, $N. Musíš zničit drtiče XT:4 a XT:9, jinak se Stonetalon podle mě nikdy neuzdraví.",
+        "caafaff3017f44855a3e": "Duchovní magie šamanů souvisí s přírodní magií druidů. Proto my šamani slyšíme prosby duchů Stonetalonu. Mnoho jejich šepotů mi uniká, ale jedna zpráva, jedno vidění, je jasné...$B$BViděl jsem dva stroje lidského tvaru ve Windshear Crag severozápadně od Greatwood Vale, které kácejí stromy neuvěřitelnou rychlostí. Tyto kovové bestie musí být zastaveny!$B$BV mém vidění byly stroje označeny podivnými symboly:$B$BXT:4 a XT:9.",
+        "d6ac3f442a7f3f05144a": "Zničení strojů XT:4 a XT:9 uklidnilo mnoho duchů Stonetalonu, $N. Doufejme, že po jejich ztrátě Venture Company tyto hory opustí.$B$BPokud ne, obávám se, že dosavadní zvěrstva zblednou před tím, co přijde."
+      },
       "summary": "Znič shreddery XT:4 a XT:9 a pak se vrať k Seereth Stonebreak na hranici mezi Stonetalon Mountains a Barrens.",
       "title": "Drticí stroje",
       "translationMetadata": {
@@ -30,6 +58,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -50,6 +93,11 @@
     },
     "daDK": {
       "description": "Der er en forbindelse mellem shamanernes åndelige magi og druidernes naturmagi. Derfor kan vi shamaner høre Stonetalons ånders bøn. Meget af deres hvisken går tabt for mig, men ét budskab, ét syn, står klart...\n\nJeg så et syn af to menneskeformede maskiner i Windshear Crag nordvest for Greatwood Vale, som fældede træer med umulig hastighed. Disse metalbæster må standses!\n\nI mit syn var maskinerne mærket med mærkelige symboler:\n\nXT:4 og XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Træernes ånder jamrer over tabet af deres brødre, $N. Du må ødelægge skovhuggerne XT:4 og XT:9, ellers frygter jeg, at Stonetalon aldrig vil hele.",
+        "caafaff3017f44855a3e": "Der er en forbindelse mellem shamanernes åndelige magi og druidernes naturmagi. Derfor kan vi shamaner høre ånderne i Stonetalon bede om hjælp. Mange af deres hvisken går mig forbi, men ét budskab, ét syn, står klart...$B$BJeg så to menneskeformede maskiner i Windshear Crag nordvest for Greatwood Vale fælde træer med umulig hastighed. Disse metaluhyrer må standses!$B$BI mit syn var maskinerne mærket med underlige symboler:$B$BXT:4 og XT:9.",
+        "d6ac3f442a7f3f05144a": "Ødelæggelsen af maskinerne XT:4 og XT:9 har beroliget mange af Stonetalons ånder, $N. Lad os håbe, at Venture Company forlader bjergene efter dette tab.$B$BFor hvis ikke, frygter jeg, at de hidtidige grusomheder blegner i forhold til det, der venter."
+      },
       "summary": "Dræb sønderdelerne XT:4 og XT:9, og vend derefter tilbage til Seereth Stonebreak på grænsen mellem Stonetalon Mountains og Barrens.",
       "title": "Sønderdelingsmaskiner",
       "translationMetadata": {
@@ -59,6 +107,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9e42a11216a2527a40f07c30eaacfff4dd4e51cb1a0b6c70545eb8dda8b4c846"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -77,6 +140,11 @@
     },
     "deDE": {
       "description": "Es gibt eine Verbindung zwischen der spirituellen Magie der Schamanen und der natürlichen Magie der Druiden. Deshalb können die Schamanen auch das Flehen der Geister des Steinkrallengebirges hören. Vieles, das sie flüstern, verstehe ich nicht, aber eine Nachricht, eine Vision, ist eindeutig ...\n\nIch hatte die Vision zweier menschenähnlicher Maschinen, die auf der Scherwindklippe nordwestlich des Hochwipfeltals mit ungeheuerlicher Geschwindigkeit Bäume fällten. Diese Metallbestien müssen aufgehalten werden!\n\nIn meiner Vision trugen diese Maschinen seltsame Symbole:\n\nXT:4 und XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Die Baumgeister beklagen den Verlust ihrer Brüder, $N. Ihr müsst die Schredder XT:4 und XT:9 zerstören, sonst fürchte ich dass das Steinkrallengebirge nie wieder geheilt werden kann.",
+        "caafaff3017f44855a3e": "Es gibt eine Verbindung zwischen der spirituellen Magie der Schamanen und der natürlichen Magie der Druiden. Deshalb können die Schamanen auch das Flehen der Geister des Steinkrallengebirges hören. Vieles, das sie flüstern, verstehe ich nicht, aber eine Nachricht, eine Vision, ist eindeutig ...\n\nIch hatte die Vision zweier menschenähnlicher Maschinen, die auf der Scherwindklippe nordwestlich des Hochwipfeltals mit ungeheuerlicher Geschwindigkeit Bäume fällten. Diese Metallbestien müssen aufgehalten werden!\n\nIn meiner Vision trugen diese Maschinen seltsame Symbole:\n\nXT:4 und XT:9.",
+        "d6ac3f442a7f3f05144a": "Die Zerstörung der Maschinen XT:4 und XT:9 hat viele der Geister des Steinkrallengebirges besänftigt, $N. Hoffen wir, dass sich die Venture Company aufgrund dieses Verlustes aus diesen Bergen zurückziehen wird. \n \n Geschieht dies nicht, fürchte ich, dass die Gräueltaten, die dieser Ort bereits erleiden musste, nur ein fahler Vorgeschmack auf das sind, was ihm noch bevorsteht. "
+      },
       "summary": "Vernichtet die Schredder XT:4 und XT:9 und kehrt dann zu Seereth Stonebreak an der Grenze zwischen dem Steinkrallengebirge und dem Brachland zurück.",
       "title": "Schreddermaschinen",
       "translationMetadata": {
@@ -85,6 +153,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -101,6 +187,11 @@
     },
     "enUS": {
       "description": "There is a relation to the spiritual magic of shamans and the natural magic of druids.  This is why we shamans can hear the plea of the spirits of Stonetalon.  Many of their whisperings are lost to me, but one message, one vision, is clear...\n\nI saw a vision of two man-shaped machines in Windshear Crag, northwest of Greatwood Vale, felling trees with impossible speed.  These metal beasts must be stopped!\n\nIn my vision, the machines were marked with strange symbols:\n\nXT:4 and XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "The tree spirits wail at the loss of their brethren, $N.  You must destroy the shredders XT:4 and XT:9, or I fear Stonetalon will never be healed.",
+        "caafaff3017f44855a3e": "There is a relation to the spiritual magic of shamans and the natural magic of druids.  This is why we shamans can hear the plea of the spirits of Stonetalon.  Many of their whisperings are lost to me, but one message, one vision, is clear...$B$BI saw a vision of two man-shaped machines in Windshear Crag, northwest of Greatwood Vale, felling trees with impossible speed.  These metal beasts must be stopped!$B$BIn my vision, the machines were marked with strange symbols:$B$BXT:4 and XT:9.",
+        "d6ac3f442a7f3f05144a": "The destruction of the machines XT:4 and XT:9 have soothed many of the spirits of Stonetalon, $N.  With their loss, let us hope the Venture Company will remove itself from these mountains.$B$BFor if they do not, then I fear the atrocities this place has suffered will pale to what lies ahead."
+      },
       "summary": "Kill the shredders XT:4 and XT:9, then return to Seereth Stonebreak at the border of the Stonetalon Mountains and the Barrens.",
       "title": "Shredding Machines",
       "translationMetadata": {
@@ -109,6 +200,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -126,6 +235,11 @@
     },
     "esES": {
       "description": "Hay una relación entre la magia espiritual de los chamanes y la magia natural de los druidas. Por eso los chamanes podemos oír la súplica de los espíritus de Espolón. No me llegan muchos de los susurros, pero tengo muy claro un mensaje, una visión...\n\nHe visto dos máquinas en forma de hombre en el Risco Cortaviento, al noroeste de la Vega del Gran Bosque, cortando árboles a velocidad imposible. Hay que destruir a esas bestias de metal.\n\nEn mi visión, las máquinas tenían grabados unos extraños símbolos:\n\nXT:4 y XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Los espíritus de los árboles se lamentan por la pérdida de sus hermanos, $N.  Debes destruir las trituradoras XT:4 y XT:9, o me temo que Stonetalon nunca se curará.",
+        "caafaff3017f44855a3e": "Hay una relación entre la magia espiritual de los chamanes y la magia natural de los druidas. Por eso los chamanes podemos oír la súplica de los espíritus de Espolón. No me llegan muchos de los susurros, pero tengo muy claro un mensaje, una visión...\n\nHe visto dos máquinas en forma de hombre en el Risco Cortaviento, al noroeste de la Vega del Gran Bosque, cortando árboles a velocidad imposible. Hay que destruir a esas bestias de metal.\n\nEn mi visión, las máquinas tenían grabados unos extraños símbolos:\n\nXT:4 y XT:9.",
+        "d6ac3f442a7f3f05144a": "La destrucción de las máquinas XT:4 y XT:9 ha calmado a muchos de los espíritus de Espolón, $n. Esperemos que, con su pérdida, Ventura y Cía. se vaya de estas montañas.\n\nPorque si no lo hace, me temo que las atrocidades que este lugar ha sufrido palidecerán en comparación con las que nos depara el futuro."
+      },
       "summary": "Destruye las sierras XT:4 y XT:9, a continuación vuelve a ver a Seereth Rompepedras, en la frontera entre Sierra Espolón y Los Baldíos.",
       "title": "Las sierras XT:4 y XT:9",
       "translationMetadata": {
@@ -134,6 +248,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -150,6 +282,11 @@
     },
     "esMX": {
       "description": "Existe una relación entre la magia espiritual de los chamanes y la magia natural de los druidas. Este es el motivo por el que los chamanes podemos oír los pedidos de Espolón. Muchos de sus susurros ya no puedo oírlos, pero hay un mensaje, una visión, que es muy clara...\n\nVi dos máquinas con forma de hombre en Risco Cortaviento, al noroeste de Vega del Gran Bosque, talando árboles a una velocidad imposible. ¡Debemos detener a estas bestias metálicas!\n\nEn mi visión, las máquinas estaban marcadas con unos símbolos extraños:\n\nXT:4 y XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Los espíritus de los árboles gimen por la pérdida de sus hermanos, $n. Debes destruir las sierras XT:4 y XT:9, o me temo que Sierra Espolón nunca se curará.",
+        "caafaff3017f44855a3e": "Existe una relación entre la magia espiritual de los chamanes y la magia natural de los druidas. Este es el motivo por el que los chamanes podemos oír los pedidos de Espolón. Muchos de sus susurros ya no puedo oírlos, pero hay un mensaje, una visión, que es muy clara...\n\nVi dos máquinas con forma de hombre en Risco Cortaviento, al noroeste de Vega del Gran Bosque, talando árboles a una velocidad imposible. ¡Debemos detener a estas bestias metálicas!\n\nEn mi visión, las máquinas estaban marcadas con unos símbolos extraños:\n\nXT:4 y XT:9.",
+        "d6ac3f442a7f3f05144a": "La destrucción de las máquinas XT:4 y XT:9 ha calmado a muchos de los espíritus de Espolón, $n. Esperemos que, con su pérdida, Ventura y Cía. se vaya de estas montañas.\n\nPorque si no lo hace, me temo que las atrocidades que este lugar ha sufrido palidecerán en comparación con las que nos depara el futuro."
+      },
       "summary": "Destruye las sierras XT:4 y XT:9, a continuación vuelve a ver a Seereth Petrajada, en la frontera entre Sierra Espolón y Los Baldíos.",
       "title": "Las sierras XT:4 y XT:9",
       "translationMetadata": {
@@ -158,6 +295,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -174,6 +329,11 @@
     },
     "frFR": {
       "description": "Il existe une relation entre la magie spirituelle des chamans et la magie naturelle des druides. C'est pourquoi nous, les chamans, nous pouvons entendre la complainte des esprits des Serres-Rocheuses. Beaucoup de leurs murmures m'échappent, mais un message – une vision – est clair...\n\nJ'ai eu la vision de deux machines à forme humaine, dans la Combe des cisailles, au nord-ouest du val de Grandbois, coupant les arbres à une vitesse incroyable. Ces bêtes de métal doivent être stoppées !\n\nDans ma vision, il y avait d'étranges symboles gravés sur les machines :\n\nXT4 et XT9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Les Esprits gémissent à la perte de leurs frères, $N. Vous devez détruire les Déchiqueteurs XT4 et XT9, ou les Serres-Rocheuses ne pourront jamais être soignées. ",
+        "caafaff3017f44855a3e": "Il existe une relation entre la magie spirituelle des chamans et la magie naturelle des druides. C'est pourquoi nous, les chamans, nous pouvons entendre la complainte des esprits des Serres-Rocheuses. Beaucoup de leurs murmures m'échappent, mais un message – une vision – est clair...\n\nJ'ai eu la vision de deux machines à forme humaine, dans la Combe des cisailles, au nord-ouest du val de Grandbois, coupant les arbres à une vitesse incroyable. Ces bêtes de métal doivent être stoppées !\n\nDans ma vision, il y avait d'étranges symboles gravés sur les machines :\n\nXT4 et XT9.",
+        "d6ac3f442a7f3f05144a": "La destruction des machines XT4 et XT9 a apaisé beaucoup d'esprits des Serres-Rocheuses, $N. Après cette opération, espérons que la KapitalRisk se retire d’elle-même des montagnes. \n \n Car si elle ne le fait pas, alors je crains que les atrocités commises sur cette terre ne soient rien en comparaison de ce qui pourrait arriver. "
+      },
       "summary": "Détruire les Déchiqueteurs XT4 et XT9, puis retourner voir Seereth Stonebreak à la frontière entre les Serres-Rocheuses et les Tarides.",
       "title": "Les machines à déchiqueter",
       "translationMetadata": {
@@ -182,6 +342,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -198,6 +376,11 @@
     },
     "hrHR": {
       "description": "Duhovna magija šamana i prirodna magija druida povezane su. Zato mi šamani možemo čuti molbu duhova Stonetalona. Mnogi mi njihovi šapati izmiču, ali jedna poruka, jedna vizija, sasvim je jasna...\n\nU viziji sam vidjela dva stroja u ljudskom obličju u Windshear Cragu, sjeverozapadno od Greatwood Valea, kako ruše stabla nemogućom brzinom. Te metalne zvijeri moraju biti zaustavljene!\n\nU mojoj su viziji strojevi bili označeni čudnim simbolima:\n\nXT:4 i XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Duhovi stabala nariču zbog gubitka svoje braće, $N. Moraš uništiti strojeve XT:4 i XT:9 ili se bojim da Stonetalon nikada neće zacijeliti.",
+        "caafaff3017f44855a3e": "Postoji veza između duhovne magije šamana i prirodne magije druida. Zato mi šamani čujemo molbe duhova Stonetalona. Mnogi njihovi šapati izmiču mi, ali jedna poruka, jedna vizija, jasna je...$B$BVidio sam dva stroja ljudskog oblika u Windshear Cragu, sjeverozapadno od Greatwood Valea, kako nevjerojatnom brzinom ruše stabla. Te metalne zvijeri moraju biti zaustavljene!$B$BU mojoj viziji strojevi su nosili čudne oznake:$B$BXT:4 i XT:9.",
+        "d6ac3f442a7f3f05144a": "Uništenje strojeva XT:4 i XT:9 umirilo je mnoge duhove Stonetalona, $N. Nadajmo se da će nakon tog gubitka Venture Company napustiti ove planine.$B$BJer ako ne ode, bojim se da će dosadašnje grozote izblijedjeti pred onim što dolazi."
+      },
       "summary": "Uništi strojeve za sječu XT:4 i XT:9, a zatim se vrati Seereth Stonebreak na granici planina Stonetalon i Barrensa.",
       "title": "Strojevi za sječu",
       "translationMetadata": {
@@ -207,6 +390,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9e42a11216a2527a40f07c30eaacfff4dd4e51cb1a0b6c70545eb8dda8b4c846"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -225,6 +423,11 @@
     },
     "itIT": {
       "description": "Esiste un legame fra la magia spirituale degli sciamani e quella naturale dei druidi. È per questo che noi sciamani possiamo udire la supplica degli spiriti di Stonetalon. Molti dei loro sussurri mi sfuggono, ma un messaggio, una visione, è chiaro...\n\nHo avuto una visione di due macchine dalla forma umana al Windshear Crag, a nord-ovest della Greatwood Vale, che abbattevano alberi a una velocità impossibile. Queste bestie di metallo devono essere fermate!\n\nNella mia visione, le macchine erano contrassegnate da strani simboli:\n\nXT:4 e XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Gli spiriti degli alberi gemono per la perdita dei loro fratelli, $N. Devi distruggere i segatronchi XT:4 e XT:9, o temo che Stonetalon non sarà mai risanata.",
+        "caafaff3017f44855a3e": "C'è un legame tra la magia spirituale degli sciamani e la magia naturale dei druidi. È per questo che noi sciamani possiamo sentire la supplica degli spiriti di Stonetalon. Molti dei loro sussurri mi sfuggono, ma un messaggio, una visione, è chiara...\n\nHo avuto la visione di due macchine a forma d'uomo nella Landa di Windshear, a nord-ovest della Valle di Greatwood, che abbattevano alberi a una velocità impossibile. Queste bestie di metallo vanno fermate!\n\nNella mia visione, le macchine erano marchiate con simboli strani:\n\nXT:4 e XT:9.",
+        "d6ac3f442a7f3f05144a": "La distruzione delle macchine XT:4 e XT:9 ha placato molti degli spiriti di Stonetalon, $N. Speriamo che la Venture Company, ora che le ha perse, se ne vada da queste montagne.\n\nPerché se non lo farà, temo che le atrocità subite da questo luogo impallidiranno davanti a ciò che verrà."
+      },
       "summary": "Uccidi i segatronchi XT:4 e XT:9, poi torna da Seereth Stonebreak sul confine tra le Stonetalon Mountains e le Barrens.",
       "title": "Macchine trituratrici",
       "translationMetadata": {
@@ -234,6 +437,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9e42a11216a2527a40f07c30eaacfff4dd4e51cb1a0b6c70545eb8dda8b4c846"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -252,6 +473,11 @@
     },
     "koKR": {
       "description": "주술사의 영적 마법과 드루이드의 자연 마법에는 연관이 있어요. 그렇기 때문에 우리 주술사들은 돌발톱 산맥의 정령들이 하는 말을 들을 수 있는 거죠. 자연의 정령들이 속삭이는 말들을 다 알아들을 수는 없지만, 한 가지 계시... 그 환영만은 아주 또렷하게 기억해요.\n\n큰소나무 계곡 북서쪽의 칼바람 바위산에서 인간 모양을 한 기계 두 대가 무서운 속도로 나무를 쓰러뜨리는 것을 보았어요.\n\n그리고 기계에는 각각 XT:4와 XT:9라는 식별번호가 표시되어 있었어요. 이 기계들은 반드시 파괴되어야만 해요!",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "나무의 정령들이 형제들의 상실을 애도하고 있네, $N. 벌목기 XT:4와 XT:9를 파괴해야 하네. 그렇지 않으면 돌발톱 산맥은 결코 회복되지 못할 거야.",
+        "caafaff3017f44855a3e": "주술사의 영적 마법과 드루이드의 자연 마법에는 연관이 있어요. 그렇기 때문에 우리 주술사들은 돌발톱 산맥의 정령들이 하는 말을 들을 수 있는 거죠. 자연의 정령들이 속삭이는 말들을 다 알아들을 수는 없지만, 한 가지 계시... 그 환영만은 아주 또렷하게 기억해요.\n\n큰소나무 계곡 북서쪽의 칼바람 바위산에서 인간 모양을 한 기계 두 대가 무서운 속도로 나무를 쓰러뜨리는 것을 보았어요.\n\n그리고 기계에는 각각 XT:4와 XT:9라는 식별번호가 표시되어 있었어요. 이 기계들은 반드시 파괴되어야만 해요!",
+        "d6ac3f442a7f3f05144a": "XT:4와 XT:9를 파괴하여 돌발톱 산맥에 있는 많은 정령들의 슬픔을 조금이나마 달래주었군요. 이제 그 기계들을 잃은 투자개발회사가 돌발톱 산맥에서 떠나기를 한번 기대해 보죠.\n\n그들이 떠나지 않는다면 지금까지 이 산에 벌어졌던 만행과는 비교도 안 될 만큼 끔찍한 일이 앞으로도 계속 일어날 거예요."
+      },
       "summary": "벌목기 XT:4와 XT:9를 파괴한 다음 돌발톱 산맥과 불모의 땅의 경계에 있는 시리스 스톤브레이크에게 돌아가십시오.",
       "title": "벌목기",
       "translationMetadata": {
@@ -260,6 +486,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -276,6 +519,11 @@
     },
     "plPL": {
       "description": "Duchowa magia szamanów jest związana z naturalną magią druidów. Dlatego my, szamani, słyszymy błaganie duchów Stonetalon. Wiele ich szeptów mi umyka, lecz jedna wiadomość, jedna wizja, jest wyraźna...\n\nUjrzałam dwie maszyny o ludzkich kształtach w Windshear Crag, na północny zachód od Greatwood Vale, ścinające drzewa z niewiarygodną szybkością. Trzeba powstrzymać te metalowe bestie!\n\nW mojej wizji maszyny oznaczono dziwnymi symbolami:\n\nXT:4 i XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Duchy drzew opłakują stratę swoich braci, $N. Musisz zniszczyć maszyny XT:4 i XT:9, inaczej obawiam się, że Stonetalon nigdy się nie zagoi.",
+        "caafaff3017f44855a3e": "Duchowa magia szamanów jest powiązana z naturalną magią druidów. Dlatego my, szamani, słyszymy prośby duchów Stonetalon. Wiele ich szeptów umyka mojemu rozumieniu, ale jedno przesłanie, jedna wizja, jest wyraźne...$B$BWidziałem dwie maszyny w kształcie ludzi w Windshear Crag na północny zachód od Greatwood Vale, ścinające drzewa z niemożliwą prędkością. Te metalowe bestie trzeba powstrzymać!$B$BW mojej wizji maszyny miały dziwne oznaczenia:$B$BXT:4 i XT:9.",
+        "d6ac3f442a7f3f05144a": "Zniszczenie maszyn XT:4 i XT:9 uspokoiło wiele duchów Stonetalon, $N. Miejmy nadzieję, że po tej stracie Venture Company opuści góry.$B$BJeśli nie, obawiam się, że dotychczasowe okrucieństwa zbledną wobec tego, co nadejdzie."
+      },
       "summary": "Zniszcz rozdrabniacze XT:4 i XT:9, a następnie wróć do Seereth Stonebreak na granicy gór Stonetalon i Barrens.",
       "title": "Maszyny rozdrabniające",
       "translationMetadata": {
@@ -285,6 +533,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9e42a11216a2527a40f07c30eaacfff4dd4e51cb1a0b6c70545eb8dda8b4c846"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -303,6 +566,11 @@
     },
     "ptBR": {
       "description": "Existe uma conexão entre a magia espiritual dos xamãs e a natural dos druidas. É por isso que nós, xamãs, ouvimos a súplica dos espíritos das Torres de Pedra. Não consigo distinguir grande parte dos murmurinhos, mas uma mensagem, uma visão, é bem nítida...\n\nVi duas máquinas humanoides no Rochedo Cortavento, a noroeste do Vale Matagrande, derrubando a floresta com uma rapidez inconcebível. Temos que deter essas feras metálicas!\n\nNa visão, tinha uns símbolos estranhos nessas máquinas:\n\nXT:4 e XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Os espíritos das árvores lamentam a perda de seus irmãos, $N. Você precisa destruir os trituradores XT:4 e XT:9, ou receio que as Montanhas das Torres de Pedra jamais se recuperem.",
+        "caafaff3017f44855a3e": "Existe uma conexão entre a magia espiritual dos xamãs e a natural dos druidas. É por isso que nós, xamãs, ouvimos a súplica dos espíritos das Torres de Pedra. Não consigo distinguir grande parte dos murmurinhos, mas uma mensagem, uma visão, é bem nítida...\n\nVi duas máquinas humanoides no Rochedo Cortavento, a noroeste do Vale Matagrande, derrubando a floresta com uma rapidez inconcebível. Temos que deter essas feras metálicas!\n\nNa visão, tinha uns símbolos estranhos nessas máquinas:\n\nXT:4 e XT:9.",
+        "d6ac3f442a7f3f05144a": "A destruição das máquinas XT:4 e XT:9 apaziguou muitos dos espíritos das Torres de Pedra, $N. Torçamos para que, após essa perda, a Empreendimentos S.A. se retire destas montanhas.\n\nPorque, caso contrário, temo que as atrocidades cometidas contra este lugar venham a parecer pouco frente ao que está por vir."
+      },
       "summary": "Destrua os retalhadores XT:4 e XT:9 e, então, fale novamente com Seereth Quebra-pedra na fronteira entre a Cordilheira das Torres de Pedra e os Sertões.",
       "title": "Retalhando as máquinas retalhadoras",
       "translationMetadata": {
@@ -311,6 +579,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -327,6 +612,11 @@
     },
     "ruRU": {
       "description": "Есть связь между духовной магией шаманов и природной магией друидов. Именно поэтому мы, шаманы, можем слышать мольбы духов Каменного Когтя. Я могу разобрать не все, что они шепчут, однако одно послание - одно видение - было четким...\n\nВ этом видении я узрела на Утесе Ветрорезов, на северо-западе Долины Высокого леса, две человекоподобные машины, которые валили деревья с невероятной скоростью. Этих металлических тварей нужно остановить!\n\nВ явленном мне видении я заметила, что машины эти отмечены странными символами:\n\nXT:4 и XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Когда мой повелитель отправил меня на Пик Каменного Когтя, мне казалось, что нужно будет лишь погубить ночных эльфов, которые ползают по руинам нашего древнего храма Азшары, оскверняя святость этого места... но Хорданиус ускользнул от меня.",
+        "caafaff3017f44855a3e": "Есть связь между духовной магией шаманов и природной магией друидов. Именно поэтому мы, шаманы, можем слышать мольбы духов Каменного Когтя. Я могу разобрать не все, что они шепчут, однако одно послание - одно видение - было четким...\n\nВ этом видении я узрела на Утесе Ветрорезов, на северо-западе Долины Высокого леса, две человекоподобные машины, которые валили деревья с невероятной скоростью. Этих металлических тварей нужно остановить!\n\nВ явленном мне видении я заметила, что машины эти отмечены странными символами:\n\nXT:4 и XT:9.",
+        "d6ac3f442a7f3f05144a": "Уничтожение машин XT:4 и XT:9 успокоило многих духов Каменного Когтя, $N. Будем надеяться, что после потери этих машин Торговая Компания покинет эти горы.\n\nИбо если этого не произойдет, то бедствия, постигшие эти земли, могут оказаться бледной тенью того, что ждет нас впереди."
+      },
       "summary": "Уничтожьте шреддеры XT:4 и XT:9, затем вернитесь к Сирит Камнелом на границу Когтистых гор и Степи.",
       "title": "Механические измельчители",
       "translationMetadata": {
@@ -335,6 +625,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -351,6 +659,11 @@
     },
     "svSE": {
       "description": "Det finns ett släktskap mellan schamanernas andemagi och druidernas naturmagi. Därför kan vi schamaner höra Stenklobergens andars bön. Mycket av deras viskningar går förlorat för mig, men ett budskap, en vision, är klar ...\n\nJag såg en vision av två människoliknande maskiner i Vindskärsklippan, nordväst om Storskogsdalen, som fällde träd med omöjlig hastighet. De här metallbestarna måste stoppas!\n\nI min vision var maskinerna märkta med märkliga tecken:\n\nXT:4 och XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Trädens andar jämrar sig över förlusten av sina syskon, $N. Du måste förstöra avverkarna XT:4 och XT:9, annars fruktar jag att Stonetalon aldrig läks.",
+        "caafaff3017f44855a3e": "Det finns ett samband mellan shamanernas andliga magi och druidernas naturmagi. Därför kan vi shamaner höra andarnas böner i Stonetalon. Många viskningar undgår mig, men ett budskap, en syn, är tydlig...$B$BJag såg två människoformade maskiner i Windshear Crag nordväst om Greatwood Vale fälla träd i omöjlig hastighet. Dessa metallbestar måste stoppas!$B$BI min syn var maskinerna märkta med märkliga symboler:$B$BXT:4 och XT:9.",
+        "d6ac3f442a7f3f05144a": "Förstörelsen av maskinerna XT:4 och XT:9 har lugnat många av Stonetalons andar, $N. Låt oss hoppas att Venture Company lämnar bergen efter förlusten.$B$BFör om de inte gör det fruktar jag att de grymheter platsen redan lidit bleknar inför vad som väntar."
+      },
       "summary": "Döda shreddrarna XT:4 och XT:9 och återvänd sedan till Seereth Stonebreak vid gränsen mellan Stenklobergen och Kargmarkerna.",
       "title": "Rivande maskiner",
       "translationMetadata": {
@@ -360,6 +673,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9e42a11216a2527a40f07c30eaacfff4dd4e51cb1a0b6c70545eb8dda8b4c846"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -380,6 +708,11 @@
     },
     "trTR": {
       "description": "Shaman'ların ruhani büyüsü ile Druid'lerin doğa büyüsü arasında bir bağ var. Bu yüzden biz Shaman'lar Stonetalon ruhlarının yakarışını duyabiliyoruz. Fısıltılarının çoğu bana ulaşmıyor, ama bir mesaj, bir görü, açık...\n\nWindshear Kayalığı'nda, Greatwood Vadisi'nin kuzeybatısında, insan biçimli iki makinenin ağaçları imkânsız bir hızla kestiğini gösteren bir görü gördüm. Bu metal canavarlar durdurulmalı!\n\nGörümde makineler garip sembollerle işaretlenmişti:\n\nXT:4 ve XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Ağaç ruhları kardeşlerinin kaybına ağıt yakıyor, $N. XT:4 ve XT:9 biçicilerini yok etmelisin, yoksa Stonetalon’un asla iyileşmeyeceğinden korkuyorum.",
+        "caafaff3017f44855a3e": "Şamanların ruhani büyüsü ile druidlerin doğa büyüsü arasında bir bağ vardır. Bu yüzden biz şamanlar Stonetalon ruhlarının yakarışını duyabiliriz. Fısıltılarının çoğunu anlayamıyorum ama bir mesaj, bir görü açık...$B$BGreatwood Vale’in kuzeybatısındaki Windshear Crag’da insan biçimli iki makinenin ağaçları inanılmaz bir hızla devirdiğini gördüm. Bu metal yaratıklar durdurulmalı!$B$BGörümde makinelerin üzerinde tuhaf işaretler vardı:$B$BXT:4 ve XT:9.",
+        "d6ac3f442a7f3f05144a": "XT:4 ve XT:9 makinelerinin yok edilmesi Stonetalon ruhlarının çoğunu sakinleştirdi, $N. Bu kaybın ardından Venture Company’nin dağları terk etmesini umalım.$B$BÇünkü etmezlerse buranın gördüğü vahşetin geleceklerin yanında sönük kalmasından korkuyorum."
+      },
       "summary": "XT:4 ve XT:9 parçalayıcılarını öldür, sonra Stonetalon Dağları ile Barrens'ın sınırındaki Seereth Stonebreak'e dön.",
       "title": "Parçalayıcı Makineler",
       "translationMetadata": {
@@ -389,6 +722,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9e42a11216a2527a40f07c30eaacfff4dd4e51cb1a0b6c70545eb8dda8b4c846"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -407,6 +755,11 @@
     },
     "ukUA": {
       "description": "Існує зв'язок між духовною магією шаманів і природною магією друїдів. Ось чому ми, шамани, можемо чути благання духів Каміннопазуристих гір. Я можу розібрати не все, що вони шепочуть, але одне послання, одне видіння було чітким...\n\nЯ бачила видіння двох людиноподібних машин серед Вітрокосих скель, що на північний захід від Високолісої долини, які рубали дерева з неймовірною швидкістю. Цих металевих тварюк потрібно зупинити!\n\nУ моєму видінні машини були позначені дивними символами:\n\nXT:4 та XT:9.",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "Духи дерев оплакують втрату своїх побратимів, $N. Ти мусиш знищити лісорубні машини XT:4 і XT:9, інакше боюся, що Stonetalon ніколи не зцілиться.",
+        "caafaff3017f44855a3e": "Духовна магія шаманів пов’язана з природною магією друїдів. Тому ми, шамани, чуємо благання духів Stonetalon. Багато їхніх шепотів мені незрозумілі, але одне послання, одне видіння, чітке...$B$BЯ бачив дві людиноподібні машини у Windshear Crag на північний захід від Greatwood Vale, які валили дерева з неймовірною швидкістю. Цих металевих звірів треба зупинити!$B$BУ моєму видінні машини були позначені дивними символами:$B$BXT:4 і XT:9.",
+        "d6ac3f442a7f3f05144a": "Знищення машин XT:4 і XT:9 заспокоїло багатьох духів Stonetalon, $N. Сподіваймося, після цієї втрати Venture Company залишить гори.$B$BБо якщо ні, боюся, що пережиті тут звірства збліднуть перед тим, що чекає попереду."
+      },
       "summary": "Знищіть подрібнювачі XT:4 та XT:9, після чого поверніться до Сірет Камнелом на кордон Каміннопазуристих гір та Степів.",
       "title": "Подрібнювальні машини",
       "translationMetadata": {
@@ -417,6 +770,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "9e42a11216a2527a40f07c30eaacfff4dd4e51cb1a0b6c70545eb8dda8b4c846"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -437,6 +805,11 @@
     },
     "zhCN": {
       "description": "萨满祭司的灵魂魔法与德鲁伊的自然魔法之间有着一些共性，因此，我们萨满祭司也能聆听到石爪山山灵的哭诉。它们的大部分话语我已经不记得了，但有一件事……一个景象，却一直清晰地出现在我脑海之中……\n\n我记得我看到两台人型的巨大机械在巨木谷西北的狂风峭壁之中以飞快的速度砍伐着树木，你必须去阻止这些金属怪兽的疯狂行径！\n\n在我脑海中的景象里，那两台机器上分别标有这样两个奇怪的标志：\n\nXT:4和XT:9。",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "树灵们正因为它们的同胞被无情屠戮而恸哭，$N。你必须马上把伐木机XT:4和XT:9毁掉，否则，恐怕石爪山将永远不得安宁。",
+        "caafaff3017f44855a3e": "萨满祭司的灵魂魔法与德鲁依的自然魔法之间有着一些共性，因此，我们萨满祭司也能聆听到石爪山山灵的哭诉。它们的大部分话语我已经不记得了，但有一件事……一个景象，却一直清晰地出现在我脑海之中……\n\n我记得我看到两台人型的巨大机械在巨木谷西北的狂风峭壁之中以飞快的速度砍伐着树木，你必须去阻止这些金属怪兽的疯狂行径！\n\n在我脑海中的景象里，那两台机器上分别标有这样两个奇怪的标志：\n\nXT:4和XT:9。",
+        "d6ac3f442a7f3f05144a": "你摧毁了XT:4与XT:9，安抚了石爪山的许多山灵，$N。我想遭受了重大损失的风险投资公司应该会因此从石爪山撤离。\n\n但是如果他们仍然要继续作恶的话，恐怕这个地区将彻底变成一片不毛之地。\n"
+      },
       "summary": "杀死伐木机XT:4和XT:9，然后向石爪山与贫瘠之地交界处的希雷斯·碎石复命。",
       "title": "伐木机",
       "translationMetadata": {
@@ -445,6 +818,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -461,6 +852,11 @@
     },
     "zhTW": {
       "description": "薩滿的靈魂魔法與德魯伊的自然魔法之間有著一些共性，因此，我們薩滿也能聆聽到石爪山山靈的哭訴。它們的大部分話語我已經不記得了，但有一件事……一個景象，卻一直清晰地出現在我腦海之中……\n\n我記得我看到兩台人型的巨大機械在巨木谷西北的狂風峭壁之中以飛快的速度砍伐著樹木，你必須去阻止這些金屬怪獸的瘋狂行徑！\n\n在我腦海中的景象裡，那兩台機器上分別標有這樣兩個奇怪的標誌：\n\nXT:4和XT:9。",
+      "dialogue": {
+        "92b5c17d52c2cc8e632a": "樹靈們正因爲它們的同胞被無情屠戮而慟哭，$N。你必須馬上把伐木機XT:4和XT:9毀掉，否則，恐怕石爪山將永遠不得安寧。",
+        "caafaff3017f44855a3e": "薩滿的靈魂魔法與德魯伊的自然魔法有所關聯。因此我們薩滿能聽見石爪山脈之靈的懇求。許多低語我無法理解，但有一則訊息、一個幻象十分清晰……$B$B我看見兩台人形機器在大樹林谷西北方的狂風峭壁，以難以置信的速度砍伐樹木。必須阻止這些金屬怪獸！$B$B在幻象中，機器上標著奇怪的符號：$B$BXT:4和XT:9。",
+        "d6ac3f442a7f3f05144a": "你摧毀了XT:4與XT:9，安撫了石爪山的許多山靈，$N。我想遭受了重大損失的風險投資公司應該會因此從石爪山撤離。\n\n但是如果他們仍然要繼續作惡的話，恐怕這個地區將徹底變成一片不毛之地。"
+      },
       "summary": "殺死伐木機XT:4和XT:9，然後向石爪山與貧瘠之地交界處的希雷斯·碎石覆命。",
       "title": "伐木機",
       "translationMetadata": {
@@ -469,6 +865,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.92b5c17d52c2cc8e632a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.caafaff3017f44855a3e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6ac3f442a7f3f05144a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

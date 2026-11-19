@@ -1,8 +1,28 @@
 {
   "areaId": 331,
+  "dialogueContexts": {
+    "8628a3c9d1864bd79bb0": {
+      "lineId": "q:6547:progress",
+      "npcId": 12862,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f593bbb138f5d8b193b9": {
+      "lineId": "q:6547:complete",
+      "npcId": 12862,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Dávej pozor, {race}. Elfové se často skrývají ve stínech...\n\nMusíme být stále ostražití. Získání této země nás stálo velké úsilí a elfové čekají na příležitost vzít nám ji.\n\nPředpokládám, že máš mé další rozkazy od Kadraka?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Měj oči otevřené, $r. Elfové se často skrývají ve stínech...$B$BMusíme být stále ve střehu. Tvrdě jsme pracovali, abychom získali tuto zemi, a elfové čekají na příležitost nám ji vzít.$B$BPředpokládám, že máš mé další rozkazy od Kadraka?",
+        "f593bbb138f5d8b193b9": "Dej Kadrakovi vědět, jak úspěšně tu zadržujeme noční elfy. Naše plány se daří."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +39,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b15826647fed10096e46921e8b6794c85ac65d0f1e5d61993413d250af218a01"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +73,10 @@
     },
     "daDK": {
       "description": "Hold øje, {race}. Elverne skjuler sig ofte i skyggerne ...\n\nVi må altid være på vagt. Vi har arbejdet meget hårdt for at gøre dette land til vores, og elverne leder efter en chance for at tage det fra os.\n\nJeg går ud fra, at du har mine næste ordrer fra Kadrak?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Hold øje, $r. Elverne gemmer sig ofte i skyggerne...$B$BVi må altid være på vagt. Vi har arbejdet hårdt for at gøre krav på dette land, og elverne leder efter en chance for at tage det fra os.$B$BJeg går ud fra, at du har mine næste ordrer fra Kadrak?",
+        "f593bbb138f5d8b193b9": "Fortæl Kadrak, at vi har haft held med at holde nattelverne tilbage her. Vores planer går godt."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b15826647fed10096e46921e8b6794c85ac65d0f1e5d61993413d250af218a01"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +126,10 @@
     },
     "deDE": {
       "description": "Haltet die Augen offen, {race}. Oftmals verstecken sich Elfen in den Schatten...\n\nWir müssen immer wachsam sein. Wir haben sehr hart daran gearbeitet, dieses Land zu erobern, und die Elfen suchen nur nach einer Gelegenheit, es uns abzunehmen.\n\nIch nehme an, Ihr habt neue Befehle von Kadrak für mich?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Haltet die Augen offen, $R. Oftmals verstecken sich Elfen in den Schatten...\n\nWir müssen immer wachsam sein. Wir haben sehr hart daran gearbeitet, dieses Land zu erobern, und die Elfen suchen nur nach einer Gelegenheit, es uns abzunehmen.\n\nIch nehme an, Ihr habt neue Befehle von Kadrak für mich?",
+        "f593bbb138f5d8b193b9": "Berichtet Kadrak, wie erfolgreich wir die Nachtelfen hier aufgehalten haben. Unsere Pläne laufen gut. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +145,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "Keep an eye out, {race}. The elves are often hiding in the shadows...\n\nWe must always be watching. We have worked very hard to claim this land, and the elves are looking for a chance to take it from us.\n\nI assume you have my next orders from Kadrak?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Keep an eye out, $r. The elves are often hiding in the shadows...$B$BWe must always be watching. We have worked very hard to claim this land, and the elves are looking for a chance to take it from us.$B$BI assume you have my next orders from Kadrak?",
+        "f593bbb138f5d8b193b9": "Let Kadrak know of the success we have had here holding off the night elves. Our plans are going well."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -156,6 +232,10 @@
     },
     "esES": {
       "description": "Mantén los ojos bien abiertos, {race}. Los elfos suelen ocultarse en las sombras...\n\nSiempre debemos estar vigilantes. Hemos trabajado mucho para conseguir esta tierra y los elfos buscan la más mínima oportunidad para arrebatárnosla.\n\nSupongo que tienes mis siguientes órdenes de Kadrak?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Mantén los ojos bien abiertos, no-muerto. Los elfos suelen ocultarse en las sombras...\n\nSiempre debemos estar vigilantes. Hemos trabajado mucho para conseguir esta tierra y los elfos buscan la más mínima oportunidad para arrebatárnosla.\n\nSupongo que tienes mis siguientes órdenes de Kadrak?",
+        "f593bbb138f5d8b193b9": "Que Kadrak se entere del éxito que hemos tenido en mantener a raya a los elfos de la noche. Nuestro planes van muy bien."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +251,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -193,6 +285,10 @@
     },
     "esMX": {
       "description": "Mantén los ojos bien abiertos, {race}. Los elfos suelen ocultarse en las sombras...\n\nSiempre debemos estar vigilantes. Hemos trabajado mucho para conseguir esta tierra y los elfos buscan la más mínima oportunidad para arrebatárnosla.\n\nSupongo que tienes mis siguientes órdenes de Kadrak.",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Mantén los ojos bien abiertos, cielonato. Los elfos suelen ocultarse en las sombras...\n\nSiempre debemos estar vigilantes. Hemos trabajado mucho para conseguir esta tierra y los elfos buscan la más mínima oportunidad para arrebatárnosla.\n\nSupongo que tienes mis siguientes órdenes de Kadrak.",
+        "f593bbb138f5d8b193b9": "Que Kadrak se entere del éxito que hemos tenido en mantener a raya a los elfos de la noche. Nuestro planes van muy bien."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +304,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -230,6 +338,10 @@
     },
     "frFR": {
       "description": "Gardez l'oeil ouvert, {name}. Les elfes se cachent souvent dans les ombres...\n\nNous devons toujours être à l'affût. Nous avons travaillé dur pour gagner cette terre, et les elfes cherchent à nous la voler.\n\nJ'imagine que vous m'avez apporté mes prochains ordres provenant de Kadrak ?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Gardez l'oeil ouvert, $n. Les elfes se cachent souvent dans les ombres...\n\nNous devons toujours être à l'affût. Nous avons travaillé dur pour gagner cette terre, et les elfes cherchent à nous la voler.\n\nJ'imagine que vous m'avez apporté mes prochains ordres provenant de Kadrak ?",
+        "f593bbb138f5d8b193b9": "Faisons savoir à Kadrak que nous avons réussi à repousser les elfes de la nuit. Nos plans se déroulent bien. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -245,6 +357,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -267,6 +391,10 @@
     },
     "hrHR": {
       "description": "Drži oči otvorene, {race}. Vilenjaci se često skrivaju u sjenama...\n\nUvijek moramo paziti. Teško smo radili da osvojimo ovu zemlju, a vilenjaci traže priliku da nam je oduzmu.\n\nPretpostavljam da imaš moje sljedeće zapovijedi od Kadraka?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Drži oči otvorene, $r. Vilenjaci se često skrivaju u sjenama...$B$BUvijek moramo biti na oprezu. Teško smo radili da osvojimo ovu zemlju, a vilenjaci traže priliku da nam je otmu.$B$BPretpostavljam da imaš moje sljedeće zapovijedi od Kadraka?",
+        "f593bbb138f5d8b193b9": "Obavijesti Kadraka o našem uspjehu u zadržavanju noćnih vilenjaka. Naši planovi dobro napreduju."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -283,6 +411,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b15826647fed10096e46921e8b6794c85ac65d0f1e5d61993413d250af218a01"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -306,6 +444,10 @@
     },
     "itIT": {
       "description": "Tieni gli occhi aperti, {race}. Spesso gli Elfi si nascondono nell'ombra...\n\nNon dobbiamo mai abbassare la guardia. Abbiamo compiuto grossi sforzi per conquistare questa terra e gli Elfi non aspettano altro che l'occasione per riprendersela.\n\nImmagino che tu abbia i nuovi ordini di Kadrak?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Tieni gli occhi aperti, $R. Gli elfi si nascondono spesso nell'ombra...\n\nDobbiamo restare sempre vigili. Abbiamo faticato molto per prenderci questa terra, e gli elfi aspettano l'occasione per portarcela via.\n\nImmagino che tu abbia i miei prossimi ordini da Kadrak?",
+        "f593bbb138f5d8b193b9": "Fa' sapere a Kadrak che qui siamo riusciti a tenere a bada gli elfi della notte. I nostri piani procedono bene."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -321,6 +463,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -343,6 +497,10 @@
     },
     "koKR": {
       "description": "{name}, 항상 주위를 잘 살피세요. 엘프들은 종종 밤의 그림자 속으로 숨어 버리거든요.\n\n늘 경계를 게을리해서는 안 돼요. 우리는 나이트 엘프들이 호시탐탐 노리고 있는 이 땅을 지키기 위해 최선을 다하고 있어요.\n\n참, 카드라크가 제게 어떤 명령을 내렸나요?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "$n, 항상 주위를 잘 살피세요. 엘프들은 종종 밤의 그림자 속으로 숨어 버리거든요.\n\n늘 경계를 게을리해서는 안 돼요. 우리는 나이트 엘프들이 호시탐탐 노리고 있는 이 땅을 지키기 위해 최선을 다하고 있어요.\n\n참, 카드라크가 제게 어떤 명령을 내렸나요?",
+        "f593bbb138f5d8b193b9": "우리가 나이트 엘프를 상대로 거두고 있는 승전보를 카드라크에게 전해주세요. 계획대로 착착 잘 진행되고 있다고요."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -358,6 +516,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -380,6 +550,10 @@
     },
     "plPL": {
       "description": "Miej oczy otwarte, {race}. Elfy często ukrywają się w cieniach...\n\nMusimy stale czuwać. Ciężko pracowaliśmy, by zdobyć tę ziemię, a elfy szukają okazji, by nam ją odebrać.\n\nZakładam, że masz moje kolejne rozkazy od Kadraka?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Miej oczy otwarte, $r. Elfy często kryją się w cieniach...$B$BMusimy stale czuwać. Ciężko pracowaliśmy, by zdobyć tę ziemię, a elfy szukają okazji, by nam ją odebrać.$B$BRozumiem, że masz dla mnie kolejne rozkazy od Kadraka?",
+        "f593bbb138f5d8b193b9": "Powiedz Kadrakowi, że skutecznie odpieramy tu nocne elfy. Nasze plany przebiegają pomyślnie."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -396,6 +570,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b15826647fed10096e46921e8b6794c85ac65d0f1e5d61993413d250af218a01"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -419,6 +603,10 @@
     },
     "ptBR": {
       "description": "Mantenha os olhos abertos, {race}. Os elfos costumam se esconder nas sombras...\n\nEles devem estar espreitando. Temos que ficar atentos o tempo todo. Nós demos duro para conquistar essas terras, e os elfos estão tentando tomá-las de nós.\n\nVocê trouxe as novas ordens de Kadrak?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Mantenha os olhos abertos, $r. Os elfos costumam se esconder nas sombras...\n\nEles devem estar espreitando. Temos que ficar atentos o tempo todo. Nós demos duro para conquistar essas terras, e os elfos estão tentando tomá-las de nós.\n\nVocê trouxe as novas ordens de Kadrak?",
+        "f593bbb138f5d8b193b9": "Avise a Kadrak que conseguimos deter os elfos noturnos aqui. Os planos estão correndo bem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -434,6 +622,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -456,6 +656,10 @@
     },
     "ruRU": {
       "description": "Держи ухо востро, {race}. В тенях часто скрываются эльфы...\n\nМы должны быть начеку постоянно. Нам слишком тяжело достались эти земли, и эльфы всегда ищут случая отнять их у нас.\n\nКак я понимаю, у тебя есть очередное поручение для меня от Кадрака?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Будь осторожен, $R. Эльфы часто прячутся в тени...\n\nМы всегда должны быть бдительны. Мы упорно трудились, чтобы завладеть этими землями и ночные эльфы теперь ищут способы отобрать их у нас.\n\nЯ так понимаю, у тебя есть следующий приказ от Кадрака?",
+        "f593bbb138f5d8b193b9": "Пусть Кадрак узнает, что мы добились успеха, задержав ночных эльфов. Все идет по плану."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -471,6 +675,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -493,6 +709,10 @@
     },
     "svSE": {
       "description": "Håll ögonen öppna, {race}. Alverna gömmer sig ofta i skuggorna...\n\nVi måste alltid vara vaksamma. Vi har arbetat mycket hårt för att ta det här landet, och alverna letar efter en chans att ta det ifrån oss.\n\nJag antar att du har mina nästa order från Kadrak?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Håll utkik, $r. Alverna gömmer sig ofta i skuggorna...$B$BVi måste alltid vara vaksamma. Vi har arbetat hårt för att ta detta land, och alverna söker en chans att ta det ifrån oss.$B$BJag antar att du har mina nästa order från Kadrak?",
+        "f593bbb138f5d8b193b9": "Meddela Kadrak att vi har lyckats hålla nattalverna tillbaka här. Våra planer går bra."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -509,6 +729,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b15826647fed10096e46921e8b6794c85ac65d0f1e5d61993413d250af218a01"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -533,6 +763,10 @@
     },
     "trTR": {
       "description": "Gözünü açık tut, {race}. Elfler sık sık gölgelerde saklanır...\n\nHer zaman tetikte olmalıyız. Bu toprakları ele geçirmek için çok çalıştık ve elfler onu bizden almak için fırsat kolluyor.\n\nKadrak'tan gelen sonraki emirlerimin sende olduğunu varsayıyorum?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Gözünü açık tut, $r. Elfler sık sık gölgelerde saklanır...$B$BHer zaman tetikte olmalıyız. Bu toprakları almak için çok çalıştık ve elfler onları elimizden almak için fırsat kolluyor.$B$BSanırım Kadrak’ın yeni emirlerini getirdin?",
+        "f593bbb138f5d8b193b9": "Kadrak’a gece elflerini burada durdurma başarımızı bildir. Planlarımız iyi gidiyor."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -549,6 +783,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b15826647fed10096e46921e8b6794c85ac65d0f1e5d61993413d250af218a01"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -572,6 +816,10 @@
     },
     "ukUA": {
       "description": "Будь напоготові, {race}. Ельфи часто ховаються в тінях...\n\nМи мусимо постійно пильнувати. Ми тяжко працювали, щоб здобути цю землю, а ельфи шукають нагоди відібрати її в нас.\n\nГадаю, ти приніс мої наступні накази від Кадрака?",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "Будь напоготові, $r. Ельфи часто ховаються в тінях...$B$BМи мусимо завжди пильнувати. Ми важко працювали, щоб заволодіти цією землею, а ельфи шукають нагоди її відібрати.$B$BГадаю, ти приніс мої наступні накази від Кадрака?",
+        "f593bbb138f5d8b193b9": "Повідом Кадраку про наш успіх у стримуванні нічних ельфів. Наші плани йдуть добре."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -588,6 +836,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b15826647fed10096e46921e8b6794c85ac65d0f1e5d61993413d250af218a01"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -612,6 +870,10 @@
     },
     "zhCN": {
       "description": "保持警惕，{race}。精灵总是潜伏在黑暗中……\n\n我们必须继续监视敌人。我们在努力地控制这片土地，而精灵也在寻找机会从我们手中夺走它。\n\n我想你是来传达卡德拉克下达给我的新命令的吧？",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "保持警惕，兽人。精灵总是潜伏在黑暗中......\n\n我们必须继续监视敌人。我们在努力地控制这片土地，而精灵也在寻找机会从我们手中夺走它。\n\n我想你是来传达卡德拉克下达给我的新命令的吧？",
+        "f593bbb138f5d8b193b9": "告诉卡德拉克，我们已经成功地阻止了夜精灵的进攻。一切进展顺利。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -627,6 +889,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -650,6 +924,10 @@
     },
     "zhTW": {
       "description": "保持警惕，{race}。精靈總是潛伏在黑暗中……\n\n我們必須繼續監視敵人。我們在努力地控制這片土地，而精靈也在尋找機會從我們手中奪走它。\n\n我想你是來傳達卡德拉克下達給我的新命令的吧？",
+      "dialogue": {
+        "8628a3c9d1864bd79bb0": "保持警惕，$r。精靈總是潛伏在黑暗中……\n\n我們必須繼續監視敵人。我們在努力地控制這片土地，而精靈也在尋找機會從我們手中奪走它。\n\n我想你是來傳達卡德拉克下達給我的新命令的吧?",
+        "f593bbb138f5d8b193b9": "告訴卡德拉克，我們已經成功地阻止了夜精靈的進攻。一切進展順利。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -665,6 +943,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.8628a3c9d1864bd79bb0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f593bbb138f5d8b193b9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

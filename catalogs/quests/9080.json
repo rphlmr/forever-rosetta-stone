@@ -1,8 +1,36 @@
 {
   "areaId": 3456,
+  "dialogueContexts": {
+    "00388297e4c345ce4607": {
+      "lineId": "q:9080:accept",
+      "npcId": 16131,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "16a43f5046bed132b674": {
+      "lineId": "q:9080:progress",
+      "npcId": 16131,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "5d244d36d036ec0f145b": {
+      "lineId": "q:9080:complete",
+      "npcId": 16131,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Pokud chceš vyrobit Bonescythe, budeš muset dodat materiál.\n\nVstup do Naxxramasu, toho velkého létajícího města smrti tam nahoře na obloze, a najdi znesvěcené brnění a odřezky válkou poničené zbroje. Přines je zpátky spolu s materiálem, aby se to dalo dát dohromady, a budeš mít svou Bonescythe. Jo, a budeš mi muset zaplatit za mou námahu... kosti dodám já.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Chceš-li vyrobit Bonescythe, musíš dodat materiály.$B$BVstup do Naxxramasu, toho velkého létajícího města smrti tam na obloze, a najdi znesvěcenou zbroj a kusy válkou poničené zbroje. Přines je zpět spolu s materiály potřebnými k jejich sestavení a dostaneš svůj Bonescythe. A musíš mi zaplatit za námahu... kosti dodám já.",
+        "16a43f5046bed132b674": "<Rohan si tě podezíravě prohlíží.>$B$BByl jsi nedávno v Tyrově ruce?",
+        "5d244d36d036ec0f145b": "<Rohan si otírá pot z čela.>$B$BTyhle nárameníky daly práci! Nenech se zabít jako nějaký břídil, $N."
+      },
       "summary": "Vrah Rohan u Light's Hope Chapel v Eastern Plaguelands ti vyrobí Bonescythe Pauldrons, pokud mu přineseš následující: 1× Desecrated Pauldrons, 12× Wartorn Leather Scraps, 5× Cured Rugged Hides, 1× Nexus Crystal a 50 zlaťáků.",
       "title": "Nárameníky Bonescythe",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +75,11 @@
     },
     "daDK": {
       "description": "Hvis du vil have Bonescythe fremstillet, må du levere materialerne.\n\nGå ind i Naxxramas, den store svævende dødsby deroppe på himlen, og find vanhelliget rustning og krigshærgede rustningsrester. Bring dem tilbage sammen med materialerne til at samle det hele, så får du din Bonescythe. Åh, og du skal betale mig for min ulejlighed... jeg leverer knoglerne.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Hvis du vil have lavet Bonescythe, må du skaffe materialerne.$B$BGå ind i Naxxramas, den store svævende dødsby deroppe på himlen, og find vanhelliget rustning og krigshærgede rustningsrester. Bring dem tilbage sammen med materialerne til at samle det hele, så får du din Bonescythe. Og du må betale mig for besværet... jeg leverer knoglerne.",
+        "16a43f5046bed132b674": "<Rohan betragter dig mistænksomt.>$B$BHar du været ved Tyrs hånd for nylig?",
+        "5d244d36d036ec0f145b": "<Rohan tørrer sveden af panden.>$B$BDe her skulderplader krævede arbejde! Lad dig ikke slå ihjel som en nybegynder, $N."
+      },
       "summary": "Rohan the Assassin ved Light's Hope Chapel i Eastern Plaguelands vil lave Bonescythe Pauldrons, hvis du bringer ham følgende: 1 Desecrated Pauldrons, 12 Wartorn Leather Scraps, 5 Cured Rugged Hides, 1 Nexus Crystal og 50 guldstykker.",
       "title": "Bonescythe-skulderplader",
       "translationMetadata": {
@@ -41,6 +89,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf1bdda743010dec3ddf2ab5225888b82a77249d11b368624d39c79e4fd44d50"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +122,11 @@
     },
     "deDE": {
       "description": "Wenn Ihr etwas von der Knochensensenrüstung wollt, dann werdet Ihr die Materialien dafür auftreiben müssen.\n\nGeht nach Naxxramas, der schwebenden Metropole des Todes, hier oben im Himmel, und sucht nach entweihter Rüstung, sowie kampfzerschlissenen Rüstungsstücken. Bringt alles mitsamt der Materialien zum Zusammenfügen zurück und Ihr bekommt Eure Knochensensenrüstung. Oh, Ihr werdet mich natürlich auch für meine Mühen entschädigen müssen... Ich stelle die Knochen zur Verfügung.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Wenn Ihr etwas von der Knochensensenrüstung wollt, dann werdet Ihr die Materialien dafür auftreiben müssen.\n\nGeht nach Naxxramas, der schwebenden Metropole des Todes, hier oben im Himmel, und sucht nach entweihter Rüstung sowie kampfzerschlissenen Rüstungsstücken. Bringt alles mitsamt der Materialien zum Zusammenfügen zurück und Ihr bekommt Eure Knochensensenrüstung. Oh, Ihr werdet mich natürlich auch für meine Mühen entschädigen müssen... Ich stelle die Knochen zur Verfügung.",
+        "16a43f5046bed132b674": "\nWarst du in letzter Zeit in Tyrs Hand?",
+        "5d244d36d036ec0f145b": "\nDiese Schultern haben ganz schön was abgekriegt! Geh nicht raus und lass dich umbringen wie ein Penner, $N."
+      },
       "summary": "Rohan der Assassine bei der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern wird für Euch Schulterstücke der Knochensense anfertigen, wenn Ihr ihm folgende Gegenstände bringt: 1 Paar entweihte Schulterstücke, 12 kampfzerschlissene Lederstücke, 5 geschmeidige unverwüstliche Bälge, 1 Nexuskristall und 50 Goldstücke.",
       "title": "Schulterstücke der Knochensense",
       "translationMetadata": {
@@ -67,6 +135,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +169,11 @@
     },
     "enUS": {
       "description": "If you want Bonescythe made, you're going to have to supply the materials.\n\nEnter Naxxramas, the big floating city of death in the sky up there, and find desecrated armor and wartorn armor scraps. Bring those back along with the materials to put everything together and you'll have your Bonescythe. Oh, and you'll need to pay me for my troubles... I'll supply the bones.",
+      "dialogue": {
+        "00388297e4c345ce4607": "If you want Bonescythe made, you're going to have to supply the materials.$B$BEnter Naxxramas, the big floating city of death in the sky up there, and find desecrated armor and wartorn armor scraps. Bring those back along with the materials to put everything together and you'll have your Bonescythe. Oh, and you'll need to pay me for my troubles... I'll supply the bones.",
+        "16a43f5046bed132b674": "<Rohan eyes you suspiciously.>$B$BBeen to Tyr's Hand lately?",
+        "5d244d36d036ec0f145b": "<Rohan wipes the sweat from his brow.>$B$BThese shoulders took some work! Don't go out and get yourself killed like a scrub, $N."
+      },
       "summary": "Rohan the Assassin at Light's Hope Chapel in the Eastern Plaguelands will make Bonescythe Pauldrons if you bring him the following: 1 Desecrated Pauldrons, 12 Wartorn Leather Scraps, 5 Cured Rugged Hides, 1 Nexus Crystal and 50 gold pieces.",
       "title": "Bonescythe Pauldrons",
       "translationMetadata": {
@@ -91,6 +182,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +216,11 @@
     },
     "esES": {
       "description": "Si quieres Segahuesos, tendrás que traerme los materiales.\n\nVe a Naxxramas, la ciudad flotante de la muerte, y busca armaduras profanadas y restos de armadura. Tráeme eso y los materiales y voilà. Ah, y tendrás que pagarme. Los huesos los pongo yo.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Si quieres objetos Segahuesos, tendrás que traerme el material necesario.\n\nVe a Naxxramas, la ciudad flotante de la muerte, y busca armaduras y restos de armadura profanados. Tráeme eso y los materiales y voilà. Ah, y tendrás que pagarme. Los huesos los pongo yo.",
+        "16a43f5046bed132b674": "<Rohan te mira con recelo.>$B$B¿Has estado últimamente en la Mano de Tyr?",
+        "5d244d36d036ec0f145b": "\n ¡Estos hombros tomaron algo de trabajo!  No salgas y te dejes matar como un trapo, $N."
+      },
       "summary": "Rohan el Asesino de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, te hará unos espaldares Segahuesos si le llevas lo siguiente: un par de espaldares profanados, 12 restos de cuero, 5 pellejos bastos curtidos, 1 cristal nexo y 50 piezas de oro.",
       "title": "Los espaldares Segahuesos",
       "translationMetadata": {
@@ -115,6 +229,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +262,11 @@
     },
     "esMX": {
       "description": "Si quieres objetos Segahuesos, tendrás que traerme el material necesario.\n\nVe a Naxxramas, la ciudad flotante de la muerte, y busca armaduras y restos de armadura profanados. Tráeme eso y los materiales y voilà. Ah, y tendrás que pagarme. Los huesos los pongo yo.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Si quieres objetos Segahuesos, tendrás que traerme el material necesario.\n\nVe a Naxxramas, la ciudad flotante de la muerte, y busca armaduras y restos de armadura profanados. Tráeme eso y los materiales y voilà. Ah, y tendrás que pagarme. Los huesos los pongo yo.",
+        "16a43f5046bed132b674": "\n¿Has estado en Mano de Tyr últimamente?",
+        "5d244d36d036ec0f145b": "<Rohan se limpia el sudor de la frente.>$B$B¡Estas hombreras me dieron mucho trabajo! No vayas a dejar que te maten como a un novato, $N."
+      },
       "summary": "Rohan el Asesino de la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este, te hará unos espaldares Segahuesos si le llevas lo siguiente: un par de espaldares profanados, 12 restos de cuero, 5 pellejos bastos curtidos, 1 cristal nexo y 50 piezas de oro.",
       "title": "Los espaldares Segahuesos",
       "translationMetadata": {
@@ -139,6 +275,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +308,11 @@
     },
     "frFR": {
       "description": "Si vous voulez que je fabrique de la faucheuse d’os, vous allez devoir me fournir les ingrédients.\n\nEntrez dans Naxxramas, la grande nécropole flottante qu’on voit là-haut dans le ciel, et trouvez des débris d’armures détruites pendant la guerre et des morceaux d’armures désacralisées. Ramenez-moi ça avec les ingrédients pour les assembler et vous aurez votre faucheuse d’os. Au fait, il faudra aussi me payer pour le dérangement... c’est moi qui fournit les os.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Si vous voulez que je fabrique de la faucheuse d’os, vous allez devoir me fournir les ingrédients.\n\nEntrez dans Naxxramas, la grande nécropole flottante qu’on voit là-haut dans le ciel, et trouvez des débris d’armures détruites pendant la guerre et des morceaux d’armures désacralisées. Ramenez-moi ça avec les ingrédients pour les assembler et vous aurez votre faucheuse d’os. Au fait, il faudra aussi me payer pour le dérangement... c’est moi qui fournit les os.",
+        "16a43f5046bed132b674": "<Rohan vous regarde avec méfiance.\n\nTu es allé à la Main de Tyr dernièrement ?",
+        "5d244d36d036ec0f145b": "<Rohan essuie la sueur de son front.\n\nCes épaules ont demandé du travail ! N'allez pas vous faire tuer comme un gueux, $N."
+      },
       "summary": "Rohan l’assassin, à la chapelle de l’Espoir de Lumière dans les Maleterres de l’Est, vous fabriquera des espauliers de la faucheuse d’os si vous lui apportez les éléments suivants : 1 paire d'Espauliers désacralisés, 12 Débris d'armure en cuir, 5 Peaux robustes traitées, 1 Cristal de nexus et 50 pièces d’or.",
       "title": "Les espauliers de la faucheuse d'os",
       "translationMetadata": {
@@ -163,6 +321,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +355,11 @@
     },
     "hrHR": {
       "description": "Ako želiš da izradim Bonescythe, morat ćeš pribaviti materijale.\n\nUđi u Naxxramas, veliki lebdeći grad smrti ondje na nebu, i pronađi oskvrnuti oklop i ratom pohabane dijelove oklopa. Donesi ih zajedno s materijalima potrebnima da sve sastavim i dobit ćeš svoj Bonescythe. Oh, i morat ćeš mi platiti za trud... kosti ću pribaviti ja.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Ako želiš da izradim Bonescythe, moraš donijeti materijale.$B$BUđi u Naxxramas, onaj veliki lebdeći grad smrti na nebu, i pronađi oskvrnuti oklop i ratom pohabane komade oklopa. Vrati ih zajedno s materijalima za izradu i dobit ćeš svoj Bonescythe. I moraš mi platiti za trud... kosti ću pribaviti ja.",
+        "16a43f5046bed132b674": "<Rohan te sumnjičavo promatra.>$B$BJesi li nedavno bio u Tyrovoj ruci?",
+        "5d244d36d036ec0f145b": "<Rohan briše znoj s čela.>$B$BOvi su rameni štitnici zahtijevali mnogo rada! Nemoj dopustiti da te ubiju kao početnika, $N."
+      },
       "summary": "Rohan the Assassin u Light's Hope Chapelu u Eastern Plaguelandsu izradit će Bonescythe Pauldrons ako mu doneseš: 1 Desecrated Pauldrons, 12 ratom pohabanih komada kože, 5 obrađenih grubih koža, 1 Nexus kristal i 50 zlatnika.",
       "title": "Rameni oklopi Bonescythe",
       "translationMetadata": {
@@ -188,6 +369,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf1bdda743010dec3ddf2ab5225888b82a77249d11b368624d39c79e4fd44d50"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +402,11 @@
     },
     "itIT": {
       "description": "Se vuoi che realizzi Bonescythe, dovrai fornire i materiali.\n\nEntra a Naxxramas, la grande città della morte che fluttua nel cielo lassù, e trova armature profanate e frammenti d'armatura segnati dalla guerra. Riportameli insieme ai materiali per assemblare il tutto e avrai la tua Bonescythe. Ah, e dovrai pagarmi per il disturbo... Le ossa le fornirò io.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Se vuoi che ti faccia l'armatura Bonescythe, i materiali dovrai procurarmeli tu.\n\nEntra a Naxxramas, la grande città della morte che fluttua lassù nel cielo, e trova armature profanate e frammenti d'armatura logorati dalla guerra. Riportali insieme ai materiali per mettere tutto insieme e avrai la tua Bonescythe. Ah, e dovrai pagarmi per il disturbo... le ossa ce le metto io.",
+        "16a43f5046bed132b674": "Sei stato a Tyr's Hand di recente?",
+        "5d244d36d036ec0f145b": "Questi spallacci mi sono costati fatica! Non andare a farti ammazzare come un pivellino, avventuriero."
+      },
       "summary": "Rohan l'Assassino alla Light's Hope Chapel, nelle Eastern Plaguelands, creerà spallacci del Bonescythe se gli porti questi oggetti: 1 paio di spallacci profanati, 12 frammenti di cuoio logorato dalla guerra, 5 pelli robuste trattate, 1 cristallo del Nexus e 50 monete d'oro.",
       "title": "Paraspalle della Falce Ossea",
       "translationMetadata": {
@@ -215,6 +416,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf1bdda743010dec3ddf2ab5225888b82a77249d11b368624d39c79e4fd44d50"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -233,6 +452,11 @@
     },
     "koKR": {
       "description": "해골사신의 어깨갑옷을 만들고 싶으면 재료를 가지고 와야 하오.\n\n저기 하늘에 떠 있는 죽은 자들의 도시 낙스라마스가 있소. 거기로 가서 부정한 용도로 사용되고 있는 갑옷과 전쟁으로 부서진 갑옷 조각을 찾은 후 이것들을 붙일 수 있는 재료와 함께 가지고 오시오. 그러면 해골사신의 어깨갑옷을 만들어 주겠소. 아, 그리고 그 대신 제 문제를 좀 해결해 줘야겠는데... 그게, 뼈가 좀 필요하다오.",
+      "dialogue": {
+        "00388297e4c345ce4607": "해골사신 장비를 만들려면 재료를 가져와야 하네.$B$B저 하늘에 떠 있는 거대한 죽음의 도시 낙스라마스에 들어가서 더럽혀진 방어구와 전쟁의 흔적이 남은 방어구 조각을 찾아오게. 그것들과 제작에 필요한 재료를 가져오면 해골사신 장비를 만들어 주지. 수고비도 내야 하네... 뼈는 내가 준비하지.",
+        "16a43f5046bed132b674": "\n요즘 티르의 손을 본 적이 있나요?",
+        "5d244d36d036ec0f145b": "\n이 어깨는 힘이 들었습니다!  나가서 문지기처럼 죽임을 당하지 마세요, $N."
+      },
       "summary": "동부 역병지대의 희망의 빛 예배당에 있는 암살자 로한에게 더럽혀진 어깨갑옷 1개, 닳아해진 가죽 조각 12개, 거진 경화 가죽 5개, 마력의 결정체 1개, 50골드를 가져가면 해골사신의 어깨갑옷을 만들어 줄 것입니다.",
       "title": "해골사신의 어깨갑옷",
       "translationMetadata": {
@@ -241,6 +465,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +498,11 @@
     },
     "plPL": {
       "description": "Jeśli chcesz, bym wykonał kościaną kosę, musisz dostarczyć materiały.\n\nWejdź do Naxxramas, wielkiego unoszącego się tam na niebie miasta śmierci, i znajdź zbezczeszczony pancerz oraz zniszczone w boju skrawki. Przynieś je wraz z materiałami potrzebnymi do połączenia wszystkiego, a otrzymasz swoją kościaną kosę. Aha, i zapłacisz mi za trud... kości dostarczę ja.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Jeśli chcesz, bym wykonał Bonescythe, musisz dostarczyć materiały.$B$BWejdź do Naxxramas, tego wielkiego latającego miasta śmierci na niebie, i znajdź zbezczeszczoną zbroję oraz wojenne szczątki pancerza. Przynieś je wraz z materiałami do ich połączenia, a otrzymasz Bonescythe. Musisz też zapłacić mi za trud... kości dostarczę ja.",
+        "16a43f5046bed132b674": "<Rohan przygląda ci się podejrzliwie.>$B$BOdwiedzasz ostatnio Dłoń Tyra?",
+        "5d244d36d036ec0f145b": "<Rohan ociera pot z czoła.>$B$BTe naramienniki kosztowały mnie sporo pracy! Nie daj się zabić jak nowicjusz, $N."
+      },
       "summary": "Rohan Zabójca z Light's Hope Chapel w Eastern Plaguelands wykona naramienniki kościanej kosy, jeśli przyniesiesz mu: 1 zbezczeszczone naramienniki, 12 zniszczonych w boju skrawków skóry, 5 wyprawionych wytrzymałych skór, 1 kryształ nexusa i 50 sztuk złota.",
       "title": "Naramienniki kościanej kosy",
       "translationMetadata": {
@@ -266,6 +512,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf1bdda743010dec3ddf2ab5225888b82a77249d11b368624d39c79e4fd44d50"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -284,6 +545,11 @@
     },
     "ptBR": {
       "description": "Se quiser o conjunto Ceifa-ossos, você vai ter que providenciar os materiais.\n\nAdentre Naxxramas, a cidadela da morte que voa lá no céu, atrás de restos de armadura profanada. Traga-me os restos e a matéria-prima, que você terá seu conjunto Ceifa-ossos. Ah, e você tem que me pagar pelo serviço... os ossos, eu arranjo.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Se quiser que eu faça a armadura Ceifossos, terá que fornecer os materiais.$B$BEntre em Naxxramas, aquela grande cidade da morte flutuando no céu, e encontre armadura profanada e retalhos de armadura de guerra. Traga tudo junto com os materiais necessários para montar a peça e terá sua Ceifossos. Ah, e terá que pagar pelo meu trabalho... os ossos ficam por minha conta.",
+        "16a43f5046bed132b674": "<Rohan olha para você com desconfiança.>$B$BEsteve na Mão de Tyr ultimamente?",
+        "5d244d36d036ec0f145b": "<Rohan enxuga o suor da testa.>$B$BEssas ombreiras deram trabalho! Não vá se deixar matar feito um iniciante, $N."
+      },
       "summary": "Rohan, o Assassino, na Capela Esperança da Luz, que fica nas Terras Pestilentas Orientais, fará Brafoneiras Ceifa-ossos se você levar para ele: 1 par de Brafoneiras Profanadas, 12 Restos de Couro, 5 Pelegos Rústicos Curados, 1 Cristal do Nexus e 50 de ouro.",
       "title": "Brafoneiras Ceifa-ossos",
       "translationMetadata": {
@@ -292,6 +558,21 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -308,6 +589,11 @@
     },
     "ruRU": {
       "description": "Если ты хочешь броню костяной косы, принеси мне все материалы.\n\nСтупай в Наксрамас, огромный парящий город смерти, и набери там испоганенных доспехов и обрывков кожи. Принеси их мне вместе с остальными материалами, и, считай, Костяная коса – твоя. Ах да, не забудь и мне отстегнуть за работу... Кости я тебе обеспечу.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Если ты хочешь броню костяной косы, принеси мне все материалы.\n\nСтупай в Наксрамас, огромный парящий город смерти, и набери там испоганенных доспехов и обрывков кожи. Принеси их мне вместе с остальными материалами, и, считай, Костяная коса – твоя. Ах да, не забудь и мне отстегнуть за работу... Кости я тебе обеспечу.",
+        "16a43f5046bed132b674": "Принеси все, что требуется!",
+        "5d244d36d036ec0f145b": "\nЧтобы сделать эти плечи, пришлось не плохо попотеть."
+      },
       "summary": "Рохан Убийца из Часовни Последней Надежды в Восточных Чумных землях готов создать наплечье костяной косы, если вы принесете ему следующее: 1 испоганенное наплечье, 12 обрывков кожи, 5 обработанных грубых шкур, 1 кристалл-источник и 50 золотых.",
       "title": "Наплечье костяной косы",
       "translationMetadata": {
@@ -316,6 +602,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +636,11 @@
     },
     "svSE": {
       "description": "Vill du ha Benliens rustning får du ordna materialen.\n\nGå in i Naxxramas, den stora flygande dödsstaden däruppe, och hitta vanhelgade rustningar och krigsslitna rester. Ge mig dem och materialen för sammanfogningen så får du Benlien. Och betala besväret förstås... Jag står för benen.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Om du vill ha Bonescythe tillverkad måste du skaffa materialen.$B$BGå in i Naxxramas, den stora svävande dödsstaden där uppe på himlen, och hitta skändad rustning och krigshärjade rustningsdelar. Ta med dem tillbaka tillsammans med materialen som behövs för att sätta ihop allt, så får du din Bonescythe. Och du måste betala mig för besväret... jag står för benen.",
+        "16a43f5046bed132b674": "<Rohan betraktar dig misstänksamt.>$B$BHar du varit vid Tyrs hand på sistone?",
+        "5d244d36d036ec0f145b": "<Rohan torkar svetten ur pannan.>$B$BDe här axelskydden krävde arbete! Se till att inte bli dödad som en gröngöling, $N."
+      },
       "summary": "Rohan the Assassin vid Light's Hope Chapel i Eastern Plaguelands tillverkar Bonescythe Pauldrons om du ger honom följande: 1 Desecrated Pauldrons, 12 krigshärjade läderbitar, 5 beredda grova hudar, 1 nexuskristall och 50 guldmynt.",
       "title": "Benliens axelplåtar",
       "translationMetadata": {
@@ -341,6 +650,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf1bdda743010dec3ddf2ab5225888b82a77249d11b368624d39c79e4fd44d50"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -359,6 +683,11 @@
     },
     "trTR": {
       "description": "Kemik Tırpanı yapılmasını istiyorsan malzemeleri sağlamalısın.\n\nYukarıdaki gökte süzülen büyük ölüm şehri Naxxramas'a gir; kirletilmiş zırh ve savaştan yıpranmış zırh parçaları bul. Bunları her şeyi bir araya getirecek malzemelerle birlikte getir; Kemik Tırpanı'n olsun. Ah, zahmetim için bana ödeme yapman da gerekecek... kemikleri ben sağlayacağım.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Bonescythe yaptırmak istiyorsan malzemeleri sağlamalısın.$B$BGökyüzünde süzülen o büyük ölüm şehri Naxxramas’a gir ve kutsallığı bozulmuş zırh ile savaşta parçalanmış zırh artıkları bul. Bunları birleştirmek için gereken malzemelerle birlikte getir, Bonescythe senin olsun. Bir de zahmetim için ödeme yapmalısın... kemikleri ben sağlayacağım.",
+        "16a43f5046bed132b674": "<Rohan sana şüpheyle bakar.>$B$BSon zamanlarda Tyrın Eline gittin mi?",
+        "5d244d36d036ec0f145b": "<Rohan alnındaki teri siler.>$B$BBu omuzluklar epey uğraştırdı! Gidip de bir acemi gibi kendini öldürtme, $N."
+      },
       "summary": "Eastern Plaguelands'deki Light's Hope Chapel'da bulunan Suikastçı Rohan, ona şunları getirirsen Kemik Tırpanı Omuz Zırhları yapacak: 1 Kirletilmiş Omuz Zırhı, 12 Savaştan Yıpranmış Deri Parçası, 5 Tabaklanmış Sağlam Post, 1 Nexus Kristali ve 50 altın.",
       "title": "Kemik Tırpanı Omuzlukları",
       "translationMetadata": {
@@ -368,6 +697,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf1bdda743010dec3ddf2ab5225888b82a77249d11b368624d39c79e4fd44d50"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -386,6 +730,11 @@
     },
     "ukUA": {
       "description": "Якщо ти хочеш обладунки кістяної коси, тобі доведеться принеси мені матеріали.\n\nВирушай в Наксрамас, величезне летюче місто смерті он там в небі, знайди осквернені обладунки та понівечені обрізки. Принеси мені їх разом з усіма іншими матеріалами і отримаєш обладунки кістяної коси. О, так, і тобі доведеться заплатити за мої послуги... Я знайду кістки.",
+      "dialogue": {
+        "00388297e4c345ce4607": "Якщо хочеш, щоб я виготовив Bonescythe, доведеться надати матеріали.$B$BУвійди до Наксрамаса, великого летючого міста смерті в небі, і знайди осквернені обладунки та пошматовані війною рештки обладунків. Принеси їх разом із матеріалами для складання, і отримаєш свій Bonescythe. І доведеться заплатити за мою працю... кістки я надам сам.",
+        "16a43f5046bed132b674": "<Роган підозріло дивиться на тебе.>$B$BОстаннім часом бував у Тіровій Руці?",
+        "5d244d36d036ec0f145b": "<Роган витирає піт із чола.>$B$BНад цими наплічниками довелося попрацювати! Тільки не дай убити себе, як невміха, $N."
+      },
       "summary": "Роган-Душогуб з Каплиці Надії Світла, що в Східних Зачумлених землях, зробить наплечі кістяної коси, якщо ви принесете йому наступні предмети: осквернене напліччя, 12 понівечених обрізків шкіри, 5 оброблених міцних шкур, кристал сплетіння та 50 золотих.",
       "title": "Наплечі кістяної коси",
       "translationMetadata": {
@@ -396,6 +745,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "bf1bdda743010dec3ddf2ab5225888b82a77249d11b368624d39c79e4fd44d50"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +780,11 @@
     },
     "zhCN": {
       "description": "如果你想要骨镰护甲，就得帮我找来一些必需的材料。\n\n进入纳克萨玛斯的宫殿——就是那座漂浮在空中的巨大城市，去收集被玷污的护甲和皮甲碎片。集齐所有材料，我就能为你打造骨镰护甲。噢，对了，你还得付点金币给我……制作护甲所需的骨头由我来提供。",
+      "dialogue": {
+        "00388297e4c345ce4607": "如果你想要骨镰护甲，就得帮我找来一些必需的材料。\n\n进入纳克萨玛斯的宫殿——就是那座漂浮在空中的巨大城市，去收集被玷污的护甲和皮甲碎片。集齐所有材料，我就能为你打造骨镰护甲。噢，对了，你还得付点金币给我……制作护甲所需的骨头由我来提供。",
+        "16a43f5046bed132b674": "\n你最近去过提尔之手?",
+        "5d244d36d036ec0f145b": "\n这些护肩费了不少功夫!不要走出去像个呆子一样被人杀了，$N。\n"
+      },
       "summary": "如果你将1副被玷污的肩铠、12块皮甲碎片、5个熟化毛皮、1块连结水晶和50金币交给东瘟疫之地圣光之愿礼拜堂的杀手洛汗，他会为你制作一副骨镰肩铠。",
       "title": "骨镰肩铠",
       "translationMetadata": {
@@ -424,6 +793,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +827,11 @@
     },
     "zhTW": {
       "description": "如果你想要骨鐮護甲，你就要提供材料。\n\n進入納克薩瑪斯，在空中的巨大漂浮死城，找到被褻瀆的護甲和受戰爭破壞的護甲碎片。把它們和其他材料帶回來給我讓我重組，你就會得到你的骨鐮護甲。喔，而且你還要付我錢因為你麻煩我...我會提供骨頭。",
+      "dialogue": {
+        "00388297e4c345ce4607": "如果你想要骨鐮護甲，就得幫我找來一些必需的材料。\n\n進入納克薩瑪斯的宮殿——就是那座漂浮在空中的巨大城市，去收集被玷污的護甲和皮甲碎片。集齊所有材料，我就能為你打造骨鐮護甲。噢，對了，你還得付點金幣給我……製作護甲所需的骨頭由我來提供。",
+        "16a43f5046bed132b674": "\n你最近去過提爾之手?",
+        "5d244d36d036ec0f145b": "\n這些護肩費了不少功夫!不要走出去像個呆子一樣被人殺了，$N。"
+      },
       "summary": "東瘟疫之地聖光之願禮拜堂的『刺客』羅漢將為你製作骨鐮肩鎧，只要你將下列物品帶給他:1雙被褻瀆的肩鎧，12個受戰爭破壞的皮甲碎塊，5塊熟化毛皮，1個聯結水晶和50金。",
       "title": "骨鐮肩鎧",
       "translationMetadata": {
@@ -448,6 +840,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.00388297e4c345ce4607": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.16a43f5046bed132b674": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.5d244d36d036ec0f145b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

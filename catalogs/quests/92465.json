@@ -18,9 +18,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "29fabce84710dcf853b8": {
+      "contributionId": 34,
+      "lineId": "q:92465:complete",
+      "npcId": 249363,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "d17018205015166f415c": {
+      "contributionId": 31,
+      "lineId": "q:92465:accept",
+      "npcId": 249363,
+      "scope": "forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Kult Al'Aketh je zhoubou tohoto ostrova. Tihle kultisté jsou nepochybně ti, kdo rozrušili prosté větrné skřítky, kteří tu žijí, a obrátili je k násilí.\n\nBohužel budeme muset ty rozbouřené větry rozptýlit, než někomu ublíží. Musíme také kultu jasně vzkázat, že v háji nejsou vítáni.\n\nPomůžeš mi, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Bolí mě prolévat zde v háji krev shen'dorei, ale musíme udělat, co je třeba.",
+        "d17018205015166f415c": "Kult Al'Aketh je zhoubou tohoto ostrova. Tito kultisté jistě rozrušili prosté větrné duchy, kteří tu žijí, a obrátili je k násilí.\n\nBohužel musíme tyto bouřící větry rozehnat, než někomu ublíží. Také musíme kultu jasně ukázat, že v háji není vítán.\n\nPomůžeš mi, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -37,6 +59,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f6d2470a1fe303d45026d00c06e24f4cadfd46538b0721e374434503df077111"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -62,6 +94,10 @@
     },
     "daDK": {
       "description": "Al'Aketh-kulten er en plage for denne ø. Disse kultister er helt sikkert ansvarlige for at ophidse de simple vindånder, der bor her, og gøre dem voldelige.\r\n\r\nDesværre må vi sprede de oprørte vinde her, før de skader nogen. Vi skal også sende kulten en klar besked om, at den ikke er velkommen i lunden.\r\n\r\nVil du hjælpe mig, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Det gør mig ondt at udgyde shen'dorei-blod her i lunden, men vi må gøre, hvad der er nødvendigt.",
+        "d17018205015166f415c": "Al'Aketh-kulten er en plage for denne ø. Kultisterne er uden tvivl skyld i, at de enkle vindånder her er blevet ophidsede og voldelige.\n\nDesværre må vi sprede de oprørte vinde, før de gør nogen fortræd. Vi må også sende kulten et klart budskab om, at den ikke er velkommen i lunden.\n\nVil du hjælpe mig, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -78,6 +114,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f6d2470a1fe303d45026d00c06e24f4cadfd46538b0721e374434503df077111"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -101,6 +147,10 @@
     },
     "deDE": {
       "description": "Der Kult der Al'Aketh sucht dieses Land heim. Die Kultisten sind gewiss dafür verantwortlich, die einfachen Windgeister aufzuhetzen, die hier leben, und sie aggressiv zu machen.\r\n\r\nLeider werden wir diese brodelnden Winde hier auflösen müssen, bevor sie noch jemandem etwas tun. Außerdem müssen wir dem Kult eine klare Botschaft senden, dass er in diesem Hain nicht willkommen ist.\r\n\r\nWerdet Ihr mir helfen, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Es schmerzt mich, Shen'dorei-Blut hier im Hain zu vergießen, aber es führt eben kein Weg daran vorbei.",
+        "d17018205015166f415c": "Der Kult der Al'Aketh sucht dieses Land heim. Die Kultisten sind gewiss dafür verantwortlich, die einfachen Windgeister aufzuhetzen, die hier leben, und sie aggressiv zu machen.\n\nLeider werden wir diese brodelnden Winde hier auflösen müssen, bevor sie noch jemandem etwas tun. Außerdem müssen wir dem Kult eine klare Botschaft senden, dass er in diesem Hain nicht willkommen ist.\n\nWerdet Ihr mir helfen, $C?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -116,6 +166,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -138,6 +200,10 @@
     },
     "enUS": {
       "description": "The Al'Aketh cult is a blight upon this island. These cultists are surely the ones responsible for agitating the simple wind sprites that reside here and turning them violent.\r\n\r\nRegrettably, we'll need to disperse these roiling winds here before they harm someone. We also need to send a clear message to the cult that they are not welcome in the grove.\r\n\r\nWill you lend me your aid, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "It pains me to shed shen'dorei blood here in the grove, but we do what we must.",
+        "d17018205015166f415c": "The Al'Aketh cult is a blight upon this island. These cultists are surely the ones responsible for agitating the simple wind sprites that reside here and turning them violent.\n\nRegrettably, we'll need to disperse these roiling winds here before they harm someone. We also need to send a clear message to the cult that they are not welcome in the grove.\n\nWill you lend me your aid, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -153,6 +219,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -175,6 +253,10 @@
     },
     "esES": {
       "description": "El culto Al'Aketh es una lacra para esta isla. Seguro que esos fanáticos son los responsables de enfurecer a las ánimas de viento.\r\n\r\nEs una pena, pero tendremos que disipar estos vientos arremolinados antes de que hagan daño a alguien. También debemos dejar claro al culto que no son bienvenidos en la arboleda.\r\n\r\n¿Me prestarás tu ayuda, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Me apena mancillar la arboleda con sangre shen'dorei, pero hacemos lo que debemos.",
+        "d17018205015166f415c": "El culto Al'Aketh es una lacra para esta isla. Seguro que esos fanáticos son los responsables de enfurecer a las ánimas de viento.\n\nEs una pena, pero tendremos que disipar estos vientos arremolinados antes de que hagan daño a alguien. También debemos dejar claro al culto que no son bienvenidos en la arboleda.\n\n¿Me prestarás tu ayuda, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -190,6 +272,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -212,6 +306,10 @@
     },
     "esMX": {
       "description": "El culto Al'Aketh es una peste para esta isla. Sin duda, estos cultores son los responsables de agitar a los inocentes duendes de viento que residen aquí y de volverlos violentos.\r\n\r\nPor desgracia, tendremos que disipar estos vientos turbios antes de que le hagan daño a alguien. También debemos enviar un mensaje claro al culto de que no son bienvenidos en la arboleda.\r\n\r\n¿Me darías una mano, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Me duele derramar sangre de shen'dorei aquí en la arboleda, pero cumplimos con nuestro deber.",
+        "d17018205015166f415c": "El culto Al'Aketh es una peste para esta isla. Sin duda, estos cultores son los responsables de agitar a los inocentes duendes de viento que residen aquí y de volverlos violentos.\n\nPor desgracia, tendremos que disipar estos vientos turbios antes de que le hagan daño a alguien. También debemos enviar un mensaje claro al culto de que no son bienvenidos en la arboleda.\n\n¿Me darías una mano, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -227,6 +325,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -249,6 +359,10 @@
     },
     "frFR": {
       "description": "La secte des Al’Aketh est un fléau sur cette île. Ce sont sans aucun doute ces adeptes qui perturbent les simples fées du vent qui vivent ici, et qui les ont rendues violentes.\r\n\r\nMalheureusement, nous allons devoir disperser ces vents tourbillonnants avant qu’ils ne blessent quelqu’un. Nous devons également faire clairement comprendre à la secte qu’elle n’est pas la bienvenue dans ce bosquet.\r\n\r\nM’apporterez-vous votre aide, {class} ?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Cela m’attriste de verser du sang shen’dorei dans le bosquet, mais nous faisons ce qui doit être fait.",
+        "d17018205015166f415c": "La secte des Al’Aketh est un fléau sur cette île. Ce sont sans aucun doute ces adeptes qui perturbent les simples fées du vent qui vivent ici, et qui les ont rendues violentes.\n\nMalheureusement, nous allons devoir disperser ces vents tourbillonnants avant qu’ils ne blessent quelqu’un. Nous devons également faire clairement comprendre à la secte qu’elle n’est pas la bienvenue dans ce bosquet.\n\nM’apporterez-vous votre aide, mage ?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -264,6 +378,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -286,6 +412,10 @@
     },
     "hrHR": {
       "description": "Kult Al'Aketh pošast je za ovaj otok. Sigurno su ti kultisti odgovorni za uznemiravanje jednostavnih vjetrenih duhova koji ovdje žive i njihovo pretvaranje u nasilne.\r\n\r\nNažalost, morat ćemo raspršiti ove uzburkane vjetrove prije nego što nekoga ozlijede. Također moramo kultu poslati jasnu poruku da nisu dobrodošli u šumarku.\r\n\r\nHoćeš li mi pomoći, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Boli me prolijevati krv shen'doreija ovdje u gaju, ali moramo učiniti što je potrebno.",
+        "d17018205015166f415c": "Kult Al'Aketh pošast je ovog otoka. Ti su kultisti zasigurno uznemirili jednostavne vjetrene duhove koji ovdje žive i učinili ih nasilnima.\n\nNažalost, moramo rastjerati ove uzburkane vjetrove prije nego što nekome naude. Također moramo kultu jasno poručiti da nije dobrodošao u gaju.\n\nHoćeš li mi pomoći, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -302,6 +432,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f6d2470a1fe303d45026d00c06e24f4cadfd46538b0721e374434503df077111"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -325,6 +465,10 @@
     },
     "itIT": {
       "description": "Salve! Piacere di fare la tua conoscenza!\n\nVedo che hai con te un buono speciale. Consegnamelo e ti darò una cosa in cambio.",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Mi addolora versare sangue shen'dorei qui nel boschetto, ma facciamo ciò che dobbiamo.",
+        "d17018205015166f415c": "Il culto degli Al'Aketh è una piaga per quest'isola. Questi cultisti sono di sicuro i responsabili: sono loro che agitano i semplici folletti del vento che vivono qui e li rendono violenti.\n\nPurtroppo dovremo disperdere questi venti turbinanti prima che facciano del male a qualcuno. Dobbiamo anche mandare al culto un messaggio chiaro: nel boschetto non sono i benvenuti.\n\nMi darai il tuo aiuto, $C?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -340,6 +484,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -362,6 +518,10 @@
     },
     "koKR": {
       "description": "알아케스 교단은 이 섬을 병들게 하는 독이에요. 이곳에 사는 단순한 바람의 정령들을 자극해 난폭하게 만든 것도 분명 그 광신도들일 짓일 거라고요.\r\n\r\n마음은 아프지만 사람이 다치기 전에 이곳의 소용돌이치는 바람들을 흩어야 합니다. 그리고 이 숲에서는 저들이 환영받지 못한다는 뜻도 분명히 보여 줘야 해요.\r\n\r\n도와주시겠어요, {class}님?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "이 숲에서 셴도레이의 피를 흘리게 하다니 마음이 아프지만, 해야 할 일은 해야겠지요.",
+        "d17018205015166f415c": "알아케스 교단은 이 섬의 재앙입니다. 이곳에 사는 순진한 바람 정령들을 자극해 난폭하게 만든 것도 분명 저 광신도들일 겁니다.\n\n안타깝지만 이 거센 바람이 누군가를 해치기 전에 흩어 놓아야 합니다. 또한 교단이 이 숲에서 환영받지 못한다는 사실을 분명히 알려야 하지요.\n\n저를 도와주시겠습니까, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -377,6 +537,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -399,6 +569,10 @@
     },
     "plPL": {
       "description": "Kult Al'Aketh to zaraza tej wyspy. To z pewnością jego wyznawcy podburzają żyjące tu proste duszki wiatru i czynią je agresywnymi.\n\nNiestety, musimy rozproszyć te wzburzone wiatry, zanim kogoś skrzywdzą. Musimy też dać kultowi jasno do zrozumienia, że nie jest mile widziany w gaju.\n\nPomożesz mi, {class}(W)?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Boli mnie przelewanie krwi shen'dorei tutaj, w gaju, ale musimy zrobić, co konieczne.",
+        "d17018205015166f415c": "Kult Al'Aketh jest plagą tej wyspy. To zapewne kultyści rozdrażnili żyjące tu proste duszki wiatru i sprawili, że stały się agresywne.\n\nNiestety musimy rozproszyć te wzburzone wiatry, zanim kogoś skrzywdzą. Musimy też jasno pokazać kultowi, że nie jest mile widziany w gaju.\n\nPomożesz mi, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -415,6 +589,16 @@
             "source": "foreverTranslatedPolish",
             "sourceLocale": "plPL",
             "sourceRevision": "1.1.1"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -440,6 +624,10 @@
     },
     "ptBR": {
       "description": "A seita Al'Aketh é uma praga nesta ilha. Esses sectários são certamente os responsáveis por irritar os espíritos do vento que aqui residem e torná-los violentos.\r\n\r\nInfelizmente, precisaremos dispersar esses ventos turbulentos antes que machuquem alguém. Também precisamos enviar uma mensagem clara à seita de que eles não são bem-vindos no bosque.\r\n\r\nVocê me ajudará, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Me entristece derramar o sangue dos shen'dorei aqui no bosque, mas fazemos o que é preciso.",
+        "d17018205015166f415c": "A seita Al'Aketh é uma praga nesta ilha. Esses sectários são certamente os responsáveis por irritar os espíritos do vento que aqui residem e torná-los violentos.\n\nInfelizmente, precisaremos dispersar esses ventos turbulentos antes que machuquem alguém. Também precisamos enviar uma mensagem clara à seita de que eles não são bem-vindos no bosque.\n\nVocê me ajudará, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -455,6 +643,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -477,6 +677,10 @@
     },
     "ruRU": {
       "description": "Секта Ал'акет – настоящее проклятие этого острова. Наверняка именно сектанты разозлили духов ветра, живущих здесь.\r\n\r\nК сожалению, нам придется угомонить ревущие ветра, пока кто-нибудь не пострадал. А еще надо дать сектантам ясно понять: в роще им не рады.\r\n\r\nПоможешь нам, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Мне больно проливать в роще кровь шен'дорай, но мы должны делать то, что необходимо.",
+        "d17018205015166f415c": "Секта Ал'акет – настоящее проклятие этого острова. Наверняка именно сектанты разозлили духов ветра, живущих здесь.\n\nК сожалению, нам придется угомонить ревущие ветра, пока кто-нибудь не пострадал. А еще надо дать сектантам ясно понять: в роще им не рады.\n\nПоможешь нам, |3-6($c)?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -492,6 +696,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -514,6 +730,10 @@
     },
     "svSE": {
       "description": "Al'Aketh-kulten är en plåga för denna ö. Dessa kultister är säkert ansvariga för att reta upp de enkla vindandarna som bor här och göra dem våldsamma.\r\n\r\nTyvärr måste vi skingra dessa upprörda vindar innan de skadar någon. Vi måste också skicka ett tydligt budskap till kulten att den inte är välkommen i lunden.\r\n\r\nVill du hjälpa mig, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Det plågar mig att spilla shen'doreis blod här i lunden, men vi måste göra det som krävs.",
+        "d17018205015166f415c": "Al'Aketh-kulten är en plåga för denna ö. Det är säkert kultisterna som har retat upp de enkla vindandarna här och gjort dem våldsamma.\n\nTyvärr måste vi skingra de upprörda vindarna innan de skadar någon. Vi måste också tydligt visa kulten att den inte är välkommen i lunden.\n\nVill du hjälpa mig, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -530,6 +750,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f6d2470a1fe303d45026d00c06e24f4cadfd46538b0721e374434503df077111"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -553,6 +783,10 @@
     },
     "trTR": {
       "description": "Al'Aketh tarikatı bu adanın başına bela. Burada yaşayan basit rüzgâr perilerini kışkırtıp onları şiddete yönelten kesinlikle bu tarikatçılar.\r\n\r\nNe yazık ki bu çalkantılı rüzgârları, kimseye zarar vermeden önce dağıtmamız gerek. Ayrıca tarikata, korunun kendilerine açık olmadığını net bir şekilde bildirmeliyiz.\r\n\r\nBana yardım eder misin, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Burada, koruda shen'dorei kanı dökmek canımı acıtıyor ama yapmamız gerekeni yapmalıyız.",
+        "d17018205015166f415c": "Al'Aketh tarikatı bu adanın başına bela oldu. Burada yaşayan basit rüzgâr ruhlarını kışkırtıp saldırganlaştıranların bu tarikatçılar olduğuna eminim.\n\nNe yazık ki bu azgın rüzgârları birine zarar vermeden dağıtmamız gerek. Tarikata da koruda hoş karşılanmadığını açıkça göstermeliyiz.\n\nBana yardım eder misin, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -569,6 +803,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -592,6 +836,10 @@
     },
     "ukUA": {
       "description": "Культ Ал'Акету — пошесть цього острова. Ці культисти, без сумніву, винні в тому, що розбурхали простих духів вітру, які тут мешкають, і зробили їх лютими.\r\n\r\nНа жаль, нам доведеться розсіяти ці вирливі вітри, перш ніж вони комусь зашкодять. Також потрібно чітко дати культу зрозуміти, що в гаю йому не раді.\r\n\r\nДопоможеш мені, {class}?",
+      "dialogue": {
+        "29fabce84710dcf853b8": "Мені боляче проливати кров шен'дорей тут, у гаю, але ми мусимо робити необхідне.",
+        "d17018205015166f415c": "Культ Ал'Акет — лихо для цього острова. Ці культисти напевно роздратували простодушних духів вітру, що тут мешкають, і зробили їх агресивними.\n\nНа жаль, ми мусимо розсіяти ці буремні вітри, перш ніж вони комусь зашкодять. Також треба чітко показати культу, що йому не раді в гаю.\n\nДопоможеш мені, $c?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -608,6 +856,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f6d2470a1fe303d45026d00c06e24f4cadfd46538b0721e374434503df077111"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -633,6 +891,10 @@
     },
     "zhCN": {
       "description": "奥拉凯斯密教就是这座岛上的一颗毒瘤。这里的低阶风灵变得狂躁不安，准是这群教徒在背后捣鬼。\r\n\r\n可惜，为了不让它们伤人，我们只能先驱散这些翻滚之风。至于那群密教徒，也该让他们明白，林地容不得他们撒野。\r\n\r\n你愿意帮我一把吗，{class}？",
+      "dialogue": {
+        "29fabce84710dcf853b8": "在这片林地里让申多雷流血让我痛心，但我们必须这么做。",
+        "d17018205015166f415c": "阿尔阿凯斯教派是这座岛上的祸害。这些教徒肯定是激怒了此地单纯的风灵，让它们变得狂暴的罪魁祸首。\n\n遗憾的是，我们必须在这些狂风伤人之前将其驱散。我们还得明确告诉教派，这片林地不欢迎他们。\n\n你愿意助我一臂之力吗，$c？"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -648,6 +910,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -670,6 +942,10 @@
     },
     "zhTW": {
       "description": "奧拉凱斯邪教是這座島的禍害。這些邪教徒肯定就是讓居住於此的單純風之靈變得躁動且暴力的罪魁禍首。\r\n\r\n遺憾的是，我們必須在這些翻騰的狂風傷人之前將其驅散。我們也需要向這支邪教傳遞一個明確的信息，那就是這片林地不歡迎他們。\r\n\r\n你願意幫我嗎，{class}？",
+      "dialogue": {
+        "29fabce84710dcf853b8": "在這片林地讓辛多雷流血令我痛心，但我們必須做該做的事。",
+        "d17018205015166f415c": "阿爾阿凱斯教派是這座島的禍害。肯定是這些教徒激怒了居住在此的單純風精，使牠們變得暴躁。\n\n遺憾的是，我們必須在這些狂風傷人之前驅散牠們。我們也要明確告訴教派，這片林地不歡迎他們。\n\n你願意助我一臂之力嗎，$c？"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -685,6 +961,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.29fabce84710dcf853b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d17018205015166f415c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",

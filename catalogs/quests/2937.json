@@ -1,8 +1,36 @@
 {
   "areaId": 47,
+  "dialogueContexts": {
+    "0d4c2f05fc4b5452c646": {
+      "lineId": "q:2937:complete",
+      "npcId": 2216,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "2bc1190c968af15e96dc": {
+      "lineId": "q:2937:accept",
+      "npcId": 3188,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "d6d9dac0a65b009eae8f": {
+      "lineId": "q:2937:progress",
+      "npcId": 2216,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vezmi tenhle pergamen a přečti ho na oltáři Shadra'Alor, hluboko v říši trolů z kmene Witherbark v Hinterlands. Tím přivoláš Shadru, pavoučí bohyni.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Skvělé, máš ho!",
+        "2bc1190c968af15e96dc": "Vezmi tenhle pergamen a přečti ho na oltáři Shadra'Alor, hluboko v říši trolů z kmene Witherbark v Hinterlands. Tím přivoláš Shadru, pavoučí bohyni.",
+        "d6d9dac0a65b009eae8f": "Získal jsi ten jed?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,22 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.7.3"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +88,11 @@
     },
     "daDK": {
       "description": "Tag hans pergament, og læs det ved Shadra'Alors alter dybt inde i Witherbark-området i Hinterlands. Det vil hidkalde edderkoppeguden Shadra.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Fedt, du fik fat i den!",
+        "2bc1190c968af15e96dc": "Tag hans pergament, og læs det ved Shadra'Alors alter dybt inde i Witherbark-området i Hinterlands. Det vil hidkalde edderkoppeguden Shadra.",
+        "d6d9dac0a65b009eae8f": "Fik du fat i giften?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +109,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +148,11 @@
     },
     "deDE": {
       "description": "Nehmt dieses Pergament und verlest es am Altar von Shadra'Alor tief in der Welt der Witherbark im Hinterland. Dies wird Shadra, den Spinnengott, beschwören.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Prima, Ihr habt ihn!",
+        "2bc1190c968af15e96dc": "Nehmt dieses Pergament und verlest es am Altar von Shadra'Alor tief in der Welt der Witherbark im Hinterland. Dies wird Shadra, den Spinnengott, beschwören.",
+        "d6d9dac0a65b009eae8f": "Habt Ihr das Gift bekommen?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +168,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +208,11 @@
     },
     "enUS": {
       "description": "Take his parchment, and read it at the altar of Shadra'Alor, deep within the witherbark realm in the Hinterlands.  This will summon Shadra the spider god.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Sweet, you got it!",
+        "2bc1190c968af15e96dc": "Take his parchment, and read it at the altar of Shadra'Alor, deep within the witherbark realm in the Hinterlands.  This will summon Shadra the spider god.",
+        "d6d9dac0a65b009eae8f": "Did you get the venom?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +228,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -158,6 +269,11 @@
     },
     "esES": {
       "description": "Lee este pergamino en el altar de Shadra'Alor, que está escondido en el reino de los Cortezaseca, en las Tierras del Interior. Así invocarás a Shadra, la diosa araña.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "¡Excelente!",
+        "2bc1190c968af15e96dc": "Lee este pergamino en el altar de Shadra'Alor, que está escondido en el reino de los Cortezaseca, en las Tierras del Interior. Así invocarás a Shadra, la diosa araña.",
+        "d6d9dac0a65b009eae8f": "¿Traes el veneno?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +289,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -195,6 +329,11 @@
     },
     "esMX": {
       "description": "Lee este papiro en el altar de Shadra'Alor, que está escondido en el reino de los Secacorteza, en las Tierras del Interior. Así invocarás a Shadra, la diosa araña.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "¡Excelente!",
+        "2bc1190c968af15e96dc": "Lee este papiro en el altar de Shadra'Alor, que está escondido en el reino de los Secacorteza, en las Tierras del Interior. Así invocarás a Shadra, la diosa araña.",
+        "d6d9dac0a65b009eae8f": "¿Traes el veneno?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +349,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -232,6 +389,11 @@
     },
     "frFR": {
       "description": "Prenez ce parchemin et lisez-le devant l'autel de Shadra'Alor, loin à l'intérieur des terres des Witherbark, dans les Hinterlands. Shadra, le dieu-araignée sera invoqué et paraîtra.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Bravo, vous l'avez !",
+        "2bc1190c968af15e96dc": "Prenez ce parchemin et lisez-le devant l'autel de Shadra'Alor, loin à l'intérieur des terres des Witherbark, dans les Hinterlands. Shadra, le dieu-araignée sera invoqué et paraîtra.",
+        "d6d9dac0a65b009eae8f": "Avez-vous le venin ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +409,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -269,6 +449,11 @@
     },
     "hrHR": {
       "description": "Uzmi njegov pergament i pročitaj ga kod oltara Shadra'Alora, duboko u području Witherbarka u Hinterlandsu. To će prizvati Shadru, boga pauka.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Odlično, nabavio si ga!",
+        "2bc1190c968af15e96dc": "Uzmi njegov pergament i pročitaj ga kod oltara Shadra'Alora, duboko u području Witherbarka u Hinterlandsu. To će prizvati Shadru, boga pauka.",
+        "d6d9dac0a65b009eae8f": "Jesi li nabavio otrov?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +470,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +509,11 @@
     },
     "itIT": {
       "description": "Prendi la sua pergamena e leggila all'altare di Shadra'Alor, nel cuore del territorio degli Scorzasecca nelle Entroterre. Così evocherai Shadra, la dea ragno.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Splendido, ce l'hai!",
+        "2bc1190c968af15e96dc": "Prendi la sua pergamena e leggila all'altare di Shadra'Alor, nel profondo del regno dei Witherbark, negli Hinterlands. Così evocherai Shadra, la dea ragno.",
+        "d6d9dac0a65b009eae8f": "Hai preso il veleno?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -324,6 +530,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -347,6 +571,11 @@
     },
     "koKR": {
       "description": "이 양피지를 받게. 동부 내륙지에 있는 마른나무껍질부족 영토 깊숙이에 있는 샤드라알로 제단에서 이걸 읽으면 거미 신 샤드라가 소환될 걸세.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "드디어 가져오셨군!",
+        "2bc1190c968af15e96dc": "이 양피지를 받게. 동부 내륙지에 있는 마른나무껍질부족 영토 깊숙이에 있는 샤드라알로 제단에서 이걸 읽으면 거미 신 샤드라가 소환될 걸세.",
+        "d6d9dac0a65b009eae8f": "독은 가져오셨소?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -362,6 +591,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -384,6 +631,11 @@
     },
     "plPL": {
       "description": "Weź jego pergamin i odczytaj go przy ołtarzu Shadra'Alor, głęboko na terytorium Witherbarków w Hinterlands. Przyzwie to Shadrę, pajęczą boginię.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Świetnie, masz go!",
+        "2bc1190c968af15e96dc": "Weź jego pergamin i odczytaj go przy ołtarzu Shadra'Alor, głęboko na terytorium Witherbarków w Hinterlands. Przyzwie to Shadrę, pajęczą boginię.",
+        "d6d9dac0a65b009eae8f": "Masz jad?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -400,6 +652,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -423,6 +691,11 @@
     },
     "ptBR": {
       "description": "Tu tem que ler o pergaminho em voz alta no altar de Shadra'Alor, lá na meiuca das Terras Agrestes, no território dos Cascasseca. É assim que tu vai conjurar Shadra, a deusa aranha.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Legal, você conseguiu!",
+        "2bc1190c968af15e96dc": "Tu tem que ler o pergaminho em voz alta no altar de Shadra'Alor, lá na meiuca das Terras Agrestes, no território dos Cascasseca. É assim que tu vai conjurar Shadra, a deusa aranha.",
+        "d6d9dac0a65b009eae8f": "Você conseguiu o veneno?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -438,6 +711,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -460,6 +749,11 @@
     },
     "ruRU": {
       "description": "Возьмите этот пергамент и прочитайте написанное на нем заклинание около алтаря Шадра'Алора – это в самом сердце владений клана Сухокожих. Это заклинание призовет Шадру – паучью богиню.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "У тебя получилось!",
+        "2bc1190c968af15e96dc": "Возьмите этот пергамент и прочитайте написанное на нем заклинание около алтаря Шадра'Алора – это в самом сердце владений клана Сухокожих. Это заклинание призовет Шадру – паучью богиню.",
+        "d6d9dac0a65b009eae8f": "Удалось добыть яд?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -475,6 +769,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -497,6 +809,11 @@
     },
     "svSE": {
       "description": "Ta hans pergament och läs det vid Shadra'Alors altare, djupt inne i Witherbarks rike i Hinterlands. Det kommer att åkalla spindelguden Shadra.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Härligt, du fick tag på det!",
+        "2bc1190c968af15e96dc": "Ta hans pergament och läs det vid Shadra'Alors altare, djupt inne i Witherbarks rike i Hinterlands. Det kommer att åkalla spindelguden Shadra.",
+        "d6d9dac0a65b009eae8f": "Fick du tag på giftet?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -513,6 +830,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -536,6 +869,11 @@
     },
     "trTR": {
       "description": "Onun parşömenini al ve Hinterlands'teki Witherbark bölgesinin derinliklerinde bulunan Shadra'Alor sunağında oku. Bu, örümcek tanrısı Shadra'yı çağıracak.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Harika, onu aldın!",
+        "2bc1190c968af15e96dc": "Onun parşömenini al ve Hinterlands'teki Witherbark bölgesinin derinliklerinde bulunan Shadra'Alor sunağında oku. Bu, örümcek tanrısı Shadra'yı çağıracak.",
+        "d6d9dac0a65b009eae8f": "Zehri aldın mı?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -552,6 +890,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -575,6 +929,11 @@
     },
     "ukUA": {
       "description": "Візьми цей пергамент і прочитай його на вівтарі Шадра'Алор, глибоко в володіннях Зів'ялої Кори у Внутрішніх землях. Це викличе богиню павуків Шадру.",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "Чудово, ти його дістав!",
+        "2bc1190c968af15e96dc": "Візьми цей пергамент і прочитай його на вівтарі Шадра'Алор, глибоко в володіннях Зів'ялої Кори у Внутрішніх землях. Це викличе богиню павуків Шадру.",
+        "d6d9dac0a65b009eae8f": "Ти дістав отруту?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -592,6 +951,23 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "bf37a17afacfb10fada26381e6aa2a11e330f7f8fdd8279277f5061eb869af04"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -617,6 +993,11 @@
     },
     "zhCN": {
       "description": "拿着这张羊皮纸，在辛特兰的沙德拉洛祭坛上念诵羊皮纸上的咒文。这样就可以召唤蜘蛛之神沙德拉。",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "太棒了，你成功了!\n",
+        "2bc1190c968af15e96dc": "拿着这张羊皮纸，在辛特兰的沙德拉洛祭坛上念诵羊皮纸上的咒文。这样就可以召唤蜘蛛之神沙德拉。",
+        "d6d9dac0a65b009eae8f": "你拿到毒液了没有?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -632,6 +1013,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -654,6 +1053,11 @@
     },
     "zhTW": {
       "description": "拿著這張羊皮紙，在辛特蘭的沙德拉洛祭壇上念誦羊皮紙上的咒文。這樣就可以召喚蜘蛛之神沙德拉。",
+      "dialogue": {
+        "0d4c2f05fc4b5452c646": "太棒了，你成功了!",
+        "2bc1190c968af15e96dc": "拿著這張羊皮紙，在辛特蘭的沙德拉洛祭壇上念誦羊皮紙上的咒文。這樣就可以召喚蜘蛛之神沙德拉。",
+        "d6d9dac0a65b009eae8f": "你拿到毒液了沒有?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -669,6 +1073,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0d4c2f05fc4b5452c646": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.2bc1190c968af15e96dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d6d9dac0a65b009eae8f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

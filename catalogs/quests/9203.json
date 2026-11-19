@@ -1,8 +1,28 @@
 {
   "areaId": 139,
+  "dialogueContexts": {
+    "1310db4c93eef4af0da1": {
+      "lineId": "q:9203:progress",
+      "npcId": 16283,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "4600f965c77dc499ae06": {
+      "lineId": "q:9203:complete",
+      "npcId": 16283,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Držitel tohoto přípisu má po dokončení zadané pracovní zakázky nárok na odměnu ve formě odznaku dle vlastního výběru.\n\nPracovní zakázka AL-devadesát:\n\nJeden flakón zkamenění.\n\nVšechny splněné zakázky je nutné doručit karavanníkovi Stonebruiserovi do Light's Hope Chapel v Eastern Plaguelands.\n\nSmlouva je neplatná, pokud byla pozměněna nebo poškozena.\n\n– Velitel depeší Metz, Argent Dawn",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Plníš pracovní zakázku, $C?",
+        "4600f965c77dc499ae06": "Bez komentáře.$B$B<Vedoucí smečky Stonebruiser si tě nenávistně měří.>$B$BŘekl jsem bez komentáře! A teď mi zmiz z očí!"
+      },
       "summary": "Doruč 1× Flask of Petrification a Craftsman's Writ - Flask of Petrification Packmasteru Stonebruiserovi do Light's Hope Chapel v Eastern Plaguelands.",
       "title": "Přípis řemeslníka – Flask of Petrification",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Indehaveren af dette dokument har ret til betaling i form af et insignie efter eget valg ved fuldførelse af den aftalte arbejdsordre.\n\nArbejdsordre AL-90:\n\n1 Flask of Petrification.\n\nAlle fuldførte ordrer skal leveres til Packmaster Stonebruiser i Light's Hope Chapel i Eastern Plaguelands.\n\nKontrakten er ugyldig, hvis der er pillet ved den, eller den er beskadiget.\n\n-Dispatch Commander Metz, Argent Dawn",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Udfører du en arbejdsordre, $C?",
+        "4600f965c77dc499ae06": "Ingen kommentar.$B$B<Pakmesteren Stonebruiser stirrer vredt på dig.>$B$BJeg sagde ingen kommentar! Forsvind nu fra mit åsyn!"
+      },
       "summary": "Lever 1 Flask of Petrification og Craftsman's Writ - Flask of Petrification - til Packmaster Stonebruiser ved Light's Hope Chapel i Eastern Plaguelands.",
       "title": "Håndværkerens anmodning - Flaske med forstening",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4923d170b67e503b8fa44abc568cba91d28173bba9c0672b5a15c734404073c2"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Der Inhaber dieser Handwerksverfügung hat nach Erfüllung des Vertrags Anspruch auf eine Bezahlung in Form von frei wählbaren Insignien.\n\nVertragsnummer AL-90:\n\n1 Fläschchen der Versteinerung.\n\nWas im Vertrag angefordert wurde, muss zu Rottenkommandant Stonebruiser bei der Kapelle des hoffnungsvollen Lichts in den östlichen Pestländern gebracht werden.\n\nIm Falle von Verzug oder Beschädigung der Ware ist der Vertrag als null und nichtig anzusehen.\n\n-Einsatzkommandant Metz, die Argentumdämmerung",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Einen Arbeitsauftrag ausfüllen, $C?",
+        "4600f965c77dc499ae06": "Kein Kommentar.\n\n\nIch sagte, kein Kommentar! Und jetzt geh mir aus den Augen!"
+      },
       "summary": "Bringt 1 Fläschchen der Versteinerung und die Handwerksverfügung für das Fläschchen der Versteinerung zu Rottenkommandant Stonebruiser bei der Kapelle des hoffnungsvollen Lichts in den östlichen Pestländern.",
       "title": "Handwerksverfügung - Fläschchen der Versteinerung",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "The bearer of this writ is entitled to payment in the form of an insignia of their choice upon completion of the contracted work order.\n\nWork Order AL-90:\n\n1 Flask of Petrification.\n\nAll filled orders should be delivered to Packmaster Stonebruiser at Light's Hope Chapel in the Eastern Plaguelands.\n\nContract is null and void if tampered with or damaged.\n\n-Dispatch Commander Metz, The Argent Dawn",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Filling a work order, $C?",
+        "4600f965c77dc499ae06": "No comment.$B$B<Packmaster Stonebruiser glares at you.>$B$BI said no comment! Now get out of my sight!"
+      },
       "summary": "Deliver 1 Flask of Petrification and the Craftsman's Writ - Flask of Petrification - to Packmaster Stonebruiser at Light's Hope Chapel in the Eastern Plaguelands.",
       "title": "Craftsman's Writ - Flask of Petrification",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +183,10 @@
     },
     "esES": {
       "description": "Páguese al portador de esta libranza con una insignia de su elección, una vez completada la orden de trabajo contratada.\n\nOrden de trabajo AL-90:\n\n1 frasco de petrificación.\n\nTodas las órdenes completadas deben ser entregadas al maestro de manada Mazadura en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.\n\nEste contrato quedará anulado en caso de alteraciones o daños.\n\n-Comandante de despachos Metz, el Alba Argenta",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Llenando una orden de trabajo, $C?",
+        "4600f965c77dc499ae06": "Sin comentarios.\n\n \n ¡Dije sin comentarios!  ¡Ahora sal de mi vista!"
+      },
       "summary": "Entrega 1 frasco de petrificación y la libranza del artesano –frasco de petrificación– al maestro de manada Mazadura que está en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.",
       "title": "Libranza del artesano: frasco de petrificación",
       "translationMetadata": {
@@ -115,6 +195,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +223,10 @@
     },
     "esMX": {
       "description": "Páguese al portador de esta libranza con una insignia de su elección, una vez completada la orden de trabajo contratada.\n\nOrden de trabajo AL-90:\n\n1 Frasco de petrificación.\n\nTodas las órdenes completadas deben entregarse al maestro de manada Mazadura en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.\n\nEste contrato quedará sin efecto en caso de alteraciones o daños.\n\n-Comandante de envíos Metz, El Alba Argenta",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "¿Completando una orden de trabajo, $c?",
+        "4600f965c77dc499ae06": "Sin comentarios.\n\n\n¡Dije sin comentarios! ¡Ahora sal de mi vista!"
+      },
       "summary": "Entrega 1 poción de petrificación y la libranza del artesano: poción de petrificación al maestro de manada Mazadura que está en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.",
       "title": "Libranza del artesano: frasco de petrificación",
       "translationMetadata": {
@@ -139,6 +235,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +263,10 @@
     },
     "frFR": {
       "description": "Le porteur de la présente commission est en droit de recevoir comme payement l’insigne de son choix à la livraison des articles ci-dessous.\n\nBon de commande AL-90 :\n\n1 flacon de pétrification.\n\nToute commission honorée doit être livrée au maître-fourrier Stonebruiser, à la chapelle de l’Espoir de Lumière dans les Maleterres de l’est.\n\nLe présent contrat est nul et non avenu s’il est modifié ou endommagé.\n\n-Commandant d’ordonnance Metz, Aube d’argent",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Remplir un ordre de travail, $C ?",
+        "4600f965c77dc499ae06": "Pas de commentaire.\n\n\nJ'ai dit pas de commentaire ! Maintenant, sortez de ma vue !"
+      },
       "summary": "Livrer 1 Flacon de pétrification et la Commission d’artisan - Flacon de pétrification au maître-fourrier Stonebruiser, à la chapelle de l’Espoir de Lumière dans les Maleterres de l’est.",
       "title": "Commission d'artisan - Flacon de pétrification",
       "translationMetadata": {
@@ -163,6 +275,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +303,10 @@
     },
     "hrHR": {
       "description": "Donositelj ovog naloga ima pravo na plaćanje u obliku insignije po izboru nakon izvršenja ugovorene radne narudžbe.\n\nRadna narudžba AL-90:\n\n1 Flask of Petrification.\n\nSve ispunjene narudžbe treba dostaviti Packmasteru Stonebruiseru u Light's Hope Chapelu u Eastern Plaguelandsu.\n\nUgovor je ništavan ako je mijenjan ili oštećen.\n\n-Dispatch Commander Metz, Argent Dawn",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Izvršavaš radni nalog, $C?",
+        "4600f965c77dc499ae06": "Bez komentara.$B$B<Gospodar čopora Stonebruiser ljutito te gleda.>$B$BRekao sam bez komentara! Gubi mi se s očiju!"
+      },
       "summary": "Dostavi 1 bočicu skamenjivanja i obrtnički nalog za bočicu skamenjivanja Packmasteru Stonebruiseru u Light's Hope Chapelu u Eastern Plaguelandsu.",
       "title": "Obrtnikov nalog - bočica okamenjivanja",
       "translationMetadata": {
@@ -188,6 +316,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4923d170b67e503b8fa44abc568cba91d28173bba9c0672b5a15c734404073c2"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +344,10 @@
     },
     "itIT": {
       "description": "Il portatore di questo mandato ha diritto a un pagamento sotto forma di un'insegna a scelta al completamento della commessa prevista dal contratto.\n\nCommessa AL-90:\n\n1 Tonico della Pietrificazione.\n\nTutte le commesse completate devono essere consegnate al Responsabile delle Salmerie Stonebruiser alla Cappella della Luce, nelle Terre Infette Orientali.\n\nIl contratto è nullo se manomesso o danneggiato.\n\n-Comandante delle Spedizioni Metz, Alba d'Argento",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Devi consegnare un ordine di lavoro, avventuriero?",
+        "4600f965c77dc499ae06": "Niente commenti.\n\n\nHo detto niente commenti! E ora sparisci dalla mia vista!"
+      },
       "summary": "Consegna 1 fiasca di pietrificazione e la richiesta dell'artigiano per la fiasca di pietrificazione al responsabile delle scorte Stonebruiser alla Light's Hope Chapel, nelle Eastern Plaguelands.",
       "title": "Richiesta dell'artigiano: fiasca di pietrificazione",
       "translationMetadata": {
@@ -215,6 +357,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4923d170b67e503b8fa44abc568cba91d28173bba9c0672b5a15c734404073c2"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -233,6 +387,10 @@
     },
     "koKR": {
       "description": "이 계약서를 가져가는 자는 아래 작업을 완수하는 조건으로 원하는 휘장을 보상으로 받을 수 있다.\n\n작업 주문 번호 AL-90:\n\n석화의 영약 1개\n\n완성된 물건은 모두 동부 역병지대, 희망의 빛 예배당에 있는 짐말주인 스톤브루저에게 전달해야 한다.\n\n물건이 변형되거나 파손된 경우 이 계약은 무효로 처리된다.\n\n-은빛 여명회 파견사령관 메츠",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "작업 주문을 채우고 있습니까, $C?",
+        "4600f965c77dc499ae06": "할 말 없다.$B$B<무리우두머리 스톤브루저가 당신을 노려봅니다.>$B$B할 말 없다고 했다! 당장 내 눈앞에서 사라져!"
+      },
       "summary": "동부 역병지대, 희망의 빛 예배당에 있는 짐말주인 스톤브루저에게 석화의 영약 1개와 장인의 계약서: 석화의 영약을 가져가야 합니다.",
       "title": "장인의 계약서: 석화의 영약",
       "translationMetadata": {
@@ -241,6 +399,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +426,10 @@
     },
     "plPL": {
       "description": "Posiadacz tego zlecenia ma prawo do zapłaty w postaci wybranego insygnium po wykonaniu zamówionej pracy.\n\nZlecenie AL-90:\n\n1 flakon petryfikacji.\n\nWszystkie wykonane zamówienia należy dostarczyć pakmistrzowi Stonebruiserowi w Light's Hope Chapel w Eastern Plaguelands.\n\nUmowa jest nieważna w razie ingerencji lub uszkodzenia.\n\n-Dowódca ekspedycji Metz, Argent Dawn",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Realizujesz zlecenie, $C?",
+        "4600f965c77dc499ae06": "Bez komentarza.$B$B<Mistrz sfory Stonebruiser mierzy cię gniewnym wzrokiem.>$B$BPowiedziałem: bez komentarza! A teraz zejdź mi z oczu!"
+      },
       "summary": "Dostarcz 1 flakon petryfikacji oraz zlecenie rzemieślnika na flakon petryfikacji pakmistrzowi Stonebruiserowi w Light's Hope Chapel w Eastern Plaguelands.",
       "title": "Zlecenie rzemieślnika: flakon petryfikacji",
       "translationMetadata": {
@@ -266,6 +439,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4923d170b67e503b8fa44abc568cba91d28173bba9c0672b5a15c734404073c2"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -284,6 +467,10 @@
     },
     "ptBR": {
       "description": "O portador deste édito tem direito a pagamento na forma de uma insígnia à sua escolha após o aviamento da ordem de serviço contratada.\n\nOrdem de serviço AL-90:\n\n1 frasco de petrificação.\n\nTodas as ordens aviadas devem ser entregues ao Caravaneiro Esmagapedra na Capela Esperança da Luz, nas Terras Pestilentas Orientais.\n\nO contrato é nulo em caso de adulteração ou danos.\n\nAss: Comandante de Expedição Metz, da Aurora Argêntea",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Cumprindo uma ordem de serviço, $C?",
+        "4600f965c77dc499ae06": "Sem comentários.$B$B<O Mestre da Matilha Stonebruiser encara você com raiva.>$B$BEu disse sem comentários! Agora saia da minha frente!"
+      },
       "summary": "Leve 1 Frasco de Petrificação e a Escritura do Artífice - Frasco de Petrificação - para o Caravaneiro Esmagapedra na Capela Esperança da Luz, que fica nas Terras Pestilentas Orientais.",
       "title": "Escritura do Artesão - frasco de petrificação",
       "translationMetadata": {
@@ -292,6 +479,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -308,6 +505,10 @@
     },
     "ruRU": {
       "description": "Податель сего имеет право на получение награды в форме значков отличия по своему выбору в случае выполнения задания, указанного в контракте.\n\nЗаказ-наряд AL-90:\n\n1 склянка Оцепенения.\n\nВыполненные заказы доставлять караванщику Камнетесу в Часовню Последней Надежды в Восточные Чумные земли.\n\nКонтракт признается недействительным в случае, если бумага была подделана или тем или иным образом испорчена.\n\nПодпись: Командир Метц, Серебряный Рассвет",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Заказ выполнен, $C?",
+        "4600f965c77dc499ae06": "Без комментариев.\n\nЯ сказал без комментариев! А теперь, убирайся с глаз моих!"
+      },
       "summary": "Доставьте 1 настой оцепенения и соответствующее задание мастера караванщику Камнетесу в Часовню Последней Надежды в Восточные Чумные земли.",
       "title": "Задание мастера – настой оцепенения",
       "translationMetadata": {
@@ -316,6 +517,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +545,10 @@
     },
     "svSE": {
       "description": "Innehavaren av detta kontrakt har rätt till betalning i form av en valfri insignie när beställningen har fullgjorts.\n\nBeställning AL-90:\n\n1 försteningsflaska.\n\nAlla fullgjorda beställningar ska lämnas till packmästare Stonebruiser vid Light's Hope Chapel i Eastern Plaguelands.\n\nKontraktet är ogiltigt om det ändras eller skadas.\n\n-Expeditionsbefälhavare Metz, Argent Dawn",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Utför du en arbetsorder, $C?",
+        "4600f965c77dc499ae06": "Ingen kommentar.$B$B<Flockmästare Stonebruiser blänger på dig.>$B$BJag sa ingen kommentar! Försvinn ur min åsyn!"
+      },
       "summary": "Leverera 1 flaska förstening och hantverkarordern för försteningsflaska till Packmaster Stonebruiser vid Light's Hope Chapel i Eastern Plaguelands.",
       "title": "Hantverksorder – Förstelningsflaska",
       "translationMetadata": {
@@ -341,6 +558,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4923d170b67e503b8fa44abc568cba91d28173bba9c0672b5a15c734404073c2"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -359,6 +586,10 @@
     },
     "trTR": {
       "description": "Bu belgenin sahibi, sözleşmede belirtilen iş emrini tamamladığında seçtiği bir nişanla ödeme almaya hak kazanır.\n\nİş Emri AL-90:\n\n1 Flask of Petrification.\n\nTamamlanan bütün siparişler Eastern Plaguelands'teki Light's Hope Chapel'da bulunan Packmaster Stonebruiser'a teslim edilmelidir.\n\nÜzerinde oynanır veya hasar görürse sözleşme geçersizdir.\n\n-Sevk Komutanı Metz, The Argent Dawn",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Bir iş emrini mi yerine getiriyorsun, $C?",
+        "4600f965c77dc499ae06": "Yorum yok.$B$B<Sürü Efendisi Stonebruiser sana öfkeyle bakar.>$B$BYorum yok dedim! Şimdi gözümün önünden çekil!"
+      },
       "summary": "1 Taşlaşma Matarası'nı ve Zanaatkârın Belgesi - Taşlaşma Matarası'nı Eastern Plaguelands'deki Light's Hope Chapel'da bulunan Yük Ustası Stonebruiser'a teslim et.",
       "title": "Zanaatkâr Siparişi - Taşlaşma Matarası",
       "translationMetadata": {
@@ -368,6 +599,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4923d170b67e503b8fa44abc568cba91d28173bba9c0672b5a15c734404073c2"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -386,6 +627,10 @@
     },
     "ukUA": {
       "description": "Пред'явник цього замовлення має право на отримання оплати у вигляді відзнаки за власним вибором після виконання роботи.\n\nЗамовлення АЛ-90:\n\n1 настій скам'яніння.\n\nВиконане замовлення має бути доставлене в'юннику Камнелупу в каплицю Надії Світла, що в Східних Зачумлених землях.\n\nЗамовлення недійсне, якщо його підроблено або пошкоджено.\n\n-Командир зв'язку Метц, Сріблястий Світанок",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "Виконуєш робоче замовлення, $C?",
+        "4600f965c77dc499ae06": "Без коментарів.$B$B<Ватажок зграї Стоунбрузер гнівно дивиться на тебе.>$B$BЯ сказав: без коментарів! А тепер геть з очей!"
+      },
       "summary": "Доставте 1 настій скам'яніння та замовлення майстра — настій скам'яніння до в'юнника Камнелупа в каплицю Надії Світла, що в Східних Зачумлених землях.",
       "title": "Замовлення майстра — настій скам'яніння",
       "translationMetadata": {
@@ -396,6 +641,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "4923d170b67e503b8fa44abc568cba91d28173bba9c0672b5a15c734404073c2"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +671,10 @@
     },
     "zhCN": {
       "description": "工匠文书的持有者在完成订单后可以挑选一枚徽记作为奖励。\n\n订单AL-90：\n\n1份石化合剂。\n\n所有的成品应送到东瘟疫之地圣光之愿礼拜堂的马队管理者布鲁斯·石锤处。\n\n物品若有任何损坏，订单无效。\n\n银色黎明物资官员梅兹",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "完成工作令了吗，$C?",
+        "4600f965c77dc499ae06": "无可奉告。\n\n\n我都说了无可奉告了!滚出我的视线!\n"
+      },
       "summary": "将1份化石合剂和工匠文书 - 化石合剂交给东瘟疫之地圣光之愿礼拜堂的马队管理者布鲁斯·石锤。",
       "title": "工匠文书 - 石化合剂",
       "translationMetadata": {
@@ -424,6 +683,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +711,10 @@
     },
     "zhTW": {
       "description": "這張令狀的持有人在完成訂定的工作後會以他們選擇的徽記形式得到獎賞。\n\n工作令AL-90:\n\n1瓶石化精煉藥水。\n\n所有完成的工作令都要送到東瘟疫之地給聖光之願禮拜堂的軍需籌備官·石漢 。\n\n一旦契約遭到損壞或篡改一律視為無效。\n\n-發送指揮官梅茲，銀色黎明",
+      "dialogue": {
+        "1310db4c93eef4af0da1": "完成工作令了嗎，$C?",
+        "4600f965c77dc499ae06": "無可奉告。\n\n\n我都說了無可奉告了!滾出我的視線!\n"
+      },
       "summary": "將1份化石合劑和工匠文書 - 化石合劑交給東瘟疫之地聖光之願禮拜堂的馬隊管理者布魯斯·石錘。",
       "title": "工匠令狀 - 石化精煉藥水",
       "translationMetadata": {
@@ -448,6 +723,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1310db4c93eef4af0da1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.4600f965c77dc499ae06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

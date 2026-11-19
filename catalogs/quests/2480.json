@@ -1,7 +1,27 @@
 {
+  "dialogueContexts": {
+    "45b0d0804f337f7db534": {
+      "lineId": "q:2480:accept",
+      "npcId": 2391,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "470df5f23be1bd545199": {
+      "lineId": "q:2480:complete",
+      "npcId": 2391,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Nikdy jsem neviděl tak podivuhodné účinky jedu! Říkáš Zanzil? Nikdy jsem o něm neslyšel, nicméně musím uznat, že vytvořil vskutku pozoruhodný odvar.\n\nTakže tě z toho mám vyléčit a pak tě naučit, jak ten jed používat?\n\nDej mi chvilku, ať ten toxin prozkoumám, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Nikdy jsem neviděl, aby měl jed tak podivuhodné účinky! Říkáš Zanzil? Nikdy jsem o něm neslyšel, ale musím ho pochválit za vytvoření tohoto lektvaru.$B$BTakže tě mám vyléčit a pak tě naučit, jak ten jed používat?$B$BDej mi chvilku na prozkoumání toxinu, $N.",
+        "470df5f23be1bd545199": "Lék je hotov! Vypij tento protijed a plíživé šílenství ustane, se zápachem však nic nezmůžu."
+      },
       "eventObjectiveLabel": "Léčba dokončena",
       "summary": "Počkej, až Serge Hinott dokončí lék.",
       "title": "Hinottova pomoc",
@@ -12,6 +32,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "165740e096e2ce0536a073d7fe1c2910b3617cf51efa731be53fafa1085a0f6f"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -39,6 +69,10 @@
     },
     "daDK": {
       "description": "Jeg har aldrig set så vidunderlige resultater fra en gift! Zanzil, siger du? Jeg har aldrig hørt om ham, men jeg må rose ham for at have skabt denne blanding.\n\nSå jeg skal helbrede dig for dette og derefter lære dig at bruge giften?\n\nGiv mig et øjeblik til at undersøge toksinet, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Jeg har aldrig set så forunderlige resultater af en gift! Zanzil, siger du? Jeg har aldrig hørt om ham, men jeg må rose ham for denne blanding.$B$BSå jeg skal kurere dig og derefter lære dig at bruge giften?$B$BGiv mig et øjeblik til at undersøge toksinet, $N.",
+        "470df5f23be1bd545199": "Kuren er klar! Drik denne modgift, så stopper det snigende vanvid, men jeg kan ikke gøre noget ved lugten."
+      },
       "eventObjectiveLabel": "Helbredelse fuldført",
       "summary": "Vent på, at Serge Hinott færdiggør kuren.",
       "title": "Hinotts hjælp",
@@ -49,6 +83,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "165740e096e2ce0536a073d7fe1c2910b3617cf51efa731be53fafa1085a0f6f"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -73,6 +117,10 @@
     },
     "deDE": {
       "description": "Noch nie habe ich gesehen, dass ein Gift so wundervolle Auswirkungen hatte! Zanzil, sagt Ihr? Nie von ihm gehört. Aber ich muss ihm zur Kreation dieses Gebräus gratulieren.\n\nTja, ich soll Euch also hiervon heilen und Euch dann beibringen, wie man das Gift anwendet?\n\nGebt mir einen Moment Zeit, damit ich das Toxin untersuchen kann, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Noch nie habe ich gesehen, dass ein Gift so wundervolle Auswirkungen hatte! Zanzil, sagt Ihr? Nie von ihm gehört. Aber ich muss ihm zur Kreation dieses Gebräus gratulieren.\n\nTja, ich soll Euch also hiervon heilen und Euch dann beibringen, wie man das Gift anwendet?\n\nGebt mir einen Moment Zeit, damit ich das Toxin untersuchen kann, $n.",
+        "470df5f23be1bd545199": "Das Heilmittel ist fertig! Trinkt dieses Antitoxin, dann hört der schleichende Wahnsinn auf. Doch gegen den Geruch kann ich nichts tun. "
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "Wartet auf Serge Hinott, um das Heilmittel fertig zu stellen.",
       "title": "Hinotts Hilfe",
@@ -82,6 +130,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -103,6 +163,10 @@
     },
     "enUS": {
       "description": "I have never seen such wondrous results from a poison! Zanzil you say? Never heard of him, however, I must commend him on the creation of this concoction.\n\nSo, I am to cure you of this and then teach you how to make use of the poison?\n\nGive me a few moments to examine the toxin, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "I have never seen such wondrous results from a poison! Zanzil you say? Never heard of him, however, I must commend him on the creation of this concoction.$B$BSo, I am to cure you of this and then teach you how to make use of the poison?$B$BGive me a few moments to examine the toxin, $N.",
+        "470df5f23be1bd545199": "The cure is ready! Drink this anti-toxin and the creeping madness will stop, however, I will not be able to do anything about the smell."
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "Wait for Serge Hinott to complete the cure.",
       "title": "Hinott's Assistance",
@@ -112,6 +176,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -134,6 +210,10 @@
     },
     "esES": {
       "description": "¡Jamás vi un veneno con tan extraordinario efecto! ¿Zanzil, dices? Nunca he oído hablar de él, pero admiro su genio por crear este brebaje.\n\n¿Quieres que te cure y te enseñe a usar el veneno?\n\nDame un momento para examinar la toxina, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "¡Jamás vi un veneno con tan extraordinario efecto! ¿Zanzil, dices? Nunca he oído hablar de él, pero admiro su genio por crear este brebaje.\n\n¿Quieres que te cure y te enseñe a usar el veneno?\n\nDame un momento para examinar la toxina, $n.",
+        "470df5f23be1bd545199": "¡La cura está lista! Bebe este antídoto para detener la demencia. Sin embargo, no puedo hacer nada con el olor."
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "Espera a que Serge Hinott te cure.",
       "title": "La ayuda de Hinott",
@@ -143,6 +223,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -164,6 +256,10 @@
     },
     "esMX": {
       "description": "¡Jamás vi un veneno con tan extraordinario efecto! ¿Zanzil, dices? Nunca he oído hablar de él, pero admiro su genio por crear este brebaje.\n\n¿Quieres que te cure y te enseñe a usar el veneno?\n\nDame un momento para examinar la toxina, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "¡Jamás vi un veneno con tan extraordinario efecto! ¿Zanzil, dices? Nunca he oído hablar de él, pero admiro su genio por crear este brebaje.\n\n¿Quieres que te cure y te enseñe a usar el veneno?\n\nDame un momento para examinar la toxina, $n.",
+        "470df5f23be1bd545199": "¡La cura está lista! Bebe este antídoto para detener la demencia. Sin embargo, no puedo hacer nada con el olor."
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "Espera a que Serge Hinott te cure.",
       "title": "La ayuda de Hinott",
@@ -173,6 +269,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -194,6 +302,10 @@
     },
     "frFR": {
       "description": "Je n'ai jamais vu d’aussi merveilleux résultats pour un poison ! Zanzil, vous dites ? Jamais entendu parler de lui, mais je m'incline devant le mélange qu'il a créé.\n\nBon, vous voulez que je vous guérisse et que je vous apprenne ensuite à utiliser le poison ?\n\nLaissez-moi un peu de temps pour examiner la toxine, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Je n'ai jamais vu d’aussi merveilleux résultats pour un poison ! Zanzil, vous dites ? Jamais entendu parler de lui, mais je m'incline devant le mélange qu'il a créé.\n\nBon, vous voulez que je vous guérisse et que je vous apprenne ensuite à utiliser le poison ?\n\nLaissez-moi un peu de temps pour examiner la toxine, $N.",
+        "470df5f23be1bd545199": "Le remède est prêt ! Buvez cette antitoxine et cette folie rampante s'arrêtera, mais je ne suis pas capable de faire quoi que ce soit pour l'odeur. "
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "Attendre Serge Hinott pour achever le remède.",
       "title": "L'aide d'Hinott",
@@ -203,6 +315,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -224,6 +348,10 @@
     },
     "hrHR": {
       "description": "Nikad nisam vidio tako čudesne rezultate otrova! Kažeš Zanzil? Nikad nisam čuo za njega, ali moram mu čestitati na stvaranju te mješavine.\n\nDakle, trebam te izliječiti od toga, a zatim te naučiti kako koristiti otrov?\n\nDaj mi nekoliko trenutaka da pregledam otrov, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Nikada nisam vidio tako čudesne učinke otrova! Zanzil, kažeš? Nisam čuo za njega, ali moram ga pohvaliti za ovaj pripravak.$B$BDakle, trebam te izliječiti, a zatim naučiti kako upotrijebiti otrov?$B$BDaj mi nekoliko trenutaka da pregledam toksin, $N.",
+        "470df5f23be1bd545199": "Lijek je spreman! Popij ovaj protuotrov i nadolazeće ludilo će prestati, ali neću moći ništa učiniti u vezi sa smradom."
+      },
       "eventObjectiveLabel": "Liječenje dovršeno",
       "summary": "Pričekaj da Serge Hinott dovrši lijek.",
       "title": "Hinottova pomoć",
@@ -234,6 +362,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "165740e096e2ce0536a073d7fe1c2910b3617cf51efa731be53fafa1085a0f6f"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -258,6 +396,10 @@
     },
     "itIT": {
       "description": "Non ho mai visto risultati tanto straordinari da un veleno! Zanzil, dici? Non ne ho mai sentito parlare, ma devo complimentarmi con lui per aver creato questo intruglio.\n\nDunque devo curarti e poi insegnarti a usare il veleno?\n\nDammi qualche istante per esaminare la tossina, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Non ho mai visto risultati così meravigliosi da un veleno! Zanzil, dici? Mai sentito nominare; però devo fargli i miei complimenti per aver creato questo intruglio.\n\nDunque, dovrei curarti da questo e poi insegnarti a usare il veleno?\n\nDammi qualche istante per esaminare la tossina, $N.",
+        "470df5f23be1bd545199": "La cura è pronta! Bevi questa antitossina e la follia strisciante si fermerà; per l'odore, però, non potrò fare niente."
+      },
       "eventObjectiveLabel": "Cura completata",
       "summary": "Aspetta che Serge Hinott completi la cura.",
       "title": "L'aiuto di Hinott",
@@ -268,6 +410,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "165740e096e2ce0536a073d7fe1c2910b3617cf51efa731be53fafa1085a0f6f"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -292,6 +446,10 @@
     },
     "koKR": {
       "description": "독에서 이렇게 놀라운 효과가 나오는 건 처음 보는군요. 잔질이라고 했습니까? 들어본 적은 없지만 이 독을 만들어 낸 실력만큼은 칭찬해주고 싶군요.\n\n그러니까 내가 이 독에 걸린 당신을 치료해주고 이 독을 어떻게 사용하는지 가르쳐줘야 한단 말입니까?\n\n이 독을 조사할 동안 잠시만 기다리도록 하세요.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "독에서 이렇게 놀라운 효과가 나오는 건 처음 보는군요. 잔질이라고 했습니까? 들어본 적은 없지만 이 독을 만들어 낸 실력만큼은 칭찬해주고 싶군요.\n\n그러니까 내가 이 독에 걸린 당신을 치료해주고 이 독을 어떻게 사용하는지 가르쳐줘야 한단 말입니까?\n\n이 독을 조사할 동안 잠시만 기다리도록 하세요.",
+        "470df5f23be1bd545199": "해독제를 다 만들었습니다! 이 해독제를 마시면 점점 다가오는 광기를 막을 수 있을 겁니다. 하지만 냄새는 나도 어떻게 할 수가 없군요."
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "서지 히노트가 해독제를 만드는 동안 기다려야 합니다.",
       "title": "히노트의 도움",
@@ -301,6 +459,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -322,6 +492,10 @@
     },
     "plPL": {
       "description": "Nigdy nie widziałem tak cudownych skutków działania trucizny! Mówisz, że Zanzil? Nigdy o nim nie słyszałem, ale muszę pochwalić stworzenie tego wywaru.\n\nA więc mam cię wyleczyć, a następnie nauczyć cię korzystania z trucizny?\n\nDaj mi kilka chwil na zbadanie toksyny, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Nigdy nie widziałem tak zdumiewających skutków działania trucizny! Zanzil, powiadasz? Nie słyszałem o nim, ale muszę go pochwalić za stworzenie tej mikstury.$B$BA więc mam cię z tego wyleczyć, a potem nauczyć, jak używać trucizny?$B$BDaj mi chwilę na zbadanie toksyny, $N.",
+        "470df5f23be1bd545199": "Lek jest gotowy! Wypij tę odtrutkę, a narastające szaleństwo ustąpi. Nic jednak nie mogę poradzić na zapach."
+      },
       "eventObjectiveLabel": "Leczenie ukończone",
       "summary": "Poczekaj, aż Serge Hinott przygotuje lekarstwo.",
       "title": "Pomoc Hinotta",
@@ -332,6 +506,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "165740e096e2ce0536a073d7fe1c2910b3617cf51efa731be53fafa1085a0f6f"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -356,6 +540,10 @@
     },
     "ptBR": {
       "description": "Nunca vi um veneno trazer resultados tão formidáveis! Zanzil, não é mesmo? Nunca ouvi falar dele, no entanto, devo louvá-lo pela criação desta mistura.\n\nEntão, devo curá-lo disso e depois ensiná-lo a usar o veneno?\n\nDê-me alguns instantes para examinar a toxina, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Nunca vi um veneno trazer resultados tão formidáveis! Zanzil, não é mesmo? Nunca ouvi falar dele, no entanto, devo louvá-lo pela criação desta mistura.\n\nEntão, devo curá-lo disso e depois ensiná-lo a usar o veneno?\n\nDê-me alguns instantes para examinar a toxina, $N.",
+        "470df5f23be1bd545199": "A cura está pronta! Sorva esta antitoxina para deter a loucura, no entanto, não há nada que eu possa fazer quanto ao odor."
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "Espere Serguei Hinoto concluir a cura.",
       "title": "A ajuda de Hinoto",
@@ -365,6 +553,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -386,6 +586,10 @@
     },
     "ruRU": {
       "description": "Никогда не видел таких отличных результатов действия яда! Занзил, говоришь? Не слыхал о таком... Однако пора уже приступать к созданию состава.\n\nИтак, я должен вылечить тебя и научить пользоваться этим ядом?\n\nДай мне пару минут на изучение токсина, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Никогда не видел таких отличных результатов действия яда! Занзил, говоришь? Не слыхал о таком... Однако пора уже приступать к созданию состава.\n\nИтак, я должен вылечить тебя и научить пользоваться этим ядом?\n\nДай мне пару минут на изучение токсина, $N.",
+        "470df5f23be1bd545199": "Готово лекарство! Выпей и безумие прекратится, фирма гарантирует. К сожалению я ничего не могу поделать с тем как оно пахнет."
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "Дождитесь, пока Серж Хинотт доделает лекарство.",
       "title": "Помощь Хинотта",
@@ -395,6 +599,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -416,6 +632,10 @@
     },
     "svSE": {
       "description": "Jag har aldrig sett ett gift ge sådana underbara resultat! Zanzil, säger du? Aldrig hört talas om honom, men jag måste berömma honom för den här brygden.\n\nSå jag ska bota dig från det här och sedan lära dig att använda giftet?\n\nGe mig en stund att undersöka giftet, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Jag har aldrig sett så förunderliga resultat av ett gift! Zanzil, säger du? Jag har aldrig hört talas om honom, men jag måste berömma honom för denna blandning.$B$BSå jag ska bota dig och sedan lära dig att använda giftet?$B$BGe mig några ögonblick att undersöka toxinet, $N.",
+        "470df5f23be1bd545199": "Botemedlet är klart! Drick detta motgift så upphör det smygande vansinnet, men lukten kan jag inte göra något åt."
+      },
       "eventObjectiveLabel": "Botemedlet färdigt",
       "summary": "Vänta tills Serge Hinott har gjort klart botemedlet.",
       "title": "Hinotts hjälp",
@@ -426,6 +646,16 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -452,6 +682,10 @@
     },
     "trTR": {
       "description": "Bir zehirden böylesine harika sonuçlar görmemiştim! Zanzil mi dedin? Adını hiç duymadım ama bu karışımı yaratmasından dolayı onu tebrik etmeliyim.\n\nYani seni bundan kurtarıp sonra zehirden nasıl faydalanacağını öğreteceğim, öyle mi?\n\nToksini incelemem için bana birkaç dakika ver, {name}.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Bir zehrin böyle hayret verici sonuçlar doğurduğunu hiç görmemiştim! Zanzil mi dedin? Onu hiç duymadım, ama bu karışımı hazırladığı için onu kutlamalıyım.$B$BYani seni iyileştireceğim ve sonra zehri nasıl kullanacağını öğreteceğim, öyle mi?$B$BToksini incelemem için bana birkaç dakika ver, $N.",
+        "470df5f23be1bd545199": "Tedavi hazır! Bu panzehri iç, sinsi delilik sona erecek. Ama koku için bir şey yapamam."
+      },
       "eventObjectiveLabel": "Tedavi tamamlandı",
       "summary": "Serge Hinott'un çareyi tamamlamasını bekle.",
       "title": "Hinott'un Yardımı",
@@ -462,6 +696,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -486,6 +730,10 @@
     },
     "ukUA": {
       "description": "Я ніколи не бачив такого дивовижного ефекту від отрути! Занзіл, кажеш? Ніколи не чув про нього, проте, маю віддати йому належне за створення такої чудової суміші.\n\nНу що ж, я вилікую тебе, а потім навчу користуватися отрутою.\n\nДай мені кілька хвилин, {name}, я маю вивчити токсин.",
+      "dialogue": {
+        "45b0d0804f337f7db534": "Ніколи не бачив таких дивовижних наслідків дії отрути! Кажеш, Занзіл? Не чув про нього, але мушу похвалити його за створення цього зілля.$B$BОтже, я маю вилікувати тебе, а потім навчити користуватися отрутою?$B$BДай мені кілька хвилин, щоб дослідити токсин, $N.",
+        "470df5f23be1bd545199": "Ліки готові! Випий цю протиотруту, і повзуче божевілля мине, але із запахом я нічого не вдію."
+      },
       "eventObjectiveLabel": "Ліки готові",
       "summary": "Дочекайтеся, доки Серж Гінотт завершить ліки.",
       "title": "Допомога Гінотта",
@@ -497,6 +745,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "165740e096e2ce0536a073d7fe1c2910b3617cf51efa731be53fafa1085a0f6f"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -523,6 +781,10 @@
     },
     "zhCN": {
       "description": "我从来没有见过哪种毒药能产生这么惊人的效果！你是说赞吉尔？从没听过这个家伙，不过既然他能制造出这种毒药来，那他还是值得我刮目相看的。\n\n那么你是要我帮你解毒，然后教你如何使用这种毒药？\n\n给我点时间研究一下毒药，{name}。",
+      "dialogue": {
+        "45b0d0804f337f7db534": "我从来没有见过哪种毒药能产生这么惊人的效果！你是说赞吉尔？从没听过这个家伙，不过既然他能制造出这种毒药来，那他还是值得我刮目相看的。\n\n那么你是要我帮你解毒，然后教你如何使用这种毒药？\n\n给我点时间研究一下毒药，$N。",
+        "470df5f23be1bd545199": "解药准备好了!喝下这个解药就能解除你的痛苦，不过对於你身上那股味道，我就无能为力了。\n"
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "等待瑟尔格·希诺特完成解药。",
       "title": "希诺特的帮助",
@@ -532,6 +794,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -553,6 +827,10 @@
     },
     "zhTW": {
       "description": "我從來沒有見過哪種毒藥能產生這麼驚人的效果！你是說贊吉爾？從沒聽過這個傢伙，不過既然他能製造出這種毒藥來，那他還是值得我刮目相看的。\n\n那麼你是要我幫你解毒，然後教你如何使用這種毒藥？\n\n給我點時間研究一下毒藥，{name}。",
+      "dialogue": {
+        "45b0d0804f337f7db534": "我從來沒有見過哪種毒藥能產生這麼驚人的效果！你是說贊吉爾？從沒聽過這個傢伙，不過既然他能製造出這種毒藥來，那他還是值得我刮目相看的。\n\n那麼你是要我幫你解毒，然後教你如何使用這種毒藥？\n\n給我點時間研究一下毒藥，$N。",
+        "470df5f23be1bd545199": "解藥準備好了!喝下這個解藥就能解除你的痛苦，不過對於你身上那股味道，我就無能爲力了。"
+      },
       "eventObjectiveLabel": "Cure Completed",
       "summary": "等待瑟爾格·希諾特完成解藥。",
       "title": "希諾特的幫助",
@@ -562,6 +840,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.45b0d0804f337f7db534": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.470df5f23be1bd545199": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

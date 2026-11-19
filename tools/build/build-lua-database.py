@@ -16,7 +16,7 @@ from tools.catalogs.catalog_storage import CATALOGS, load_catalogs
 from tools.build.database_storage import write_localized_records, write_pages
 from tools.build.database_packs import write_pack
 from tools.build.runtime_catalog import (EXCLUDED_QUEST_STATUSES, decode_client_escapes, project_localized_record,
-                                         project_tooltip_rules, equipment_requirement_sources)
+                                         project_tooltip_rules, equipment_requirement_sources, project_dialogue)
 from tools.catalogs.english_scope import has_english_text, identity_field
 
 
@@ -165,6 +165,7 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
             raise ValueError('Expected positive decimal entity IDs in ' + kind)
 
         locale_records = {locale: {} for locale in locales}
+        dialogue_records = {locale: {} for locale in locales} if kind in ('quests', 'npcs') else None
         rule_records = {}
         global_keys = set()
 
@@ -200,6 +201,8 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
                 rule_records[entity_id] = {'details': rules, 'hasAITranslation': False}
 
             for locale in entity['locales']:
+                if dialogue_records is not None and entity['locales'][locale].get('dialogue'):
+                    dialogue_records[locale][entity_id] = project_dialogue(kind, entity_id, entity, locale)
                 localized = project_localized_record(kind, entity_id, entity, locale, combined['items'], combined['npcs'])
 
                 if localized is None:
@@ -232,6 +235,10 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
                         }
 
             write_localized_records(encoder, packs['ForeverRosettaStone_Data_' + locale], kind, locale, records)
+            if dialogue_records is not None:
+                dialogue_kind = 'questdialogue' if kind == 'quests' else 'npcdialogue'
+                write_localized_records(encoder, packs['ForeverRosettaStone_Data_' + locale],
+                                        dialogue_kind, locale, dialogue_records[locale])
 
         if rule_records:
             write_localized_records(encoder, packs['ForeverRosettaStone_Rules'], kind, 'shared', rule_records)

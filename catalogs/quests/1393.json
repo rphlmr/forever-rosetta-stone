@@ -1,8 +1,20 @@
 {
   "areaId": 8,
+  "dialogueContexts": {
+    "e93b83f13ab538fc4de7": {
+      "lineId": "q:1393:accept",
+      "npcId": 5391,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Prosím, pomoz mi! Ti tvorové mě sežerou!\n\nDostaň mě odsud a dám ti velký poklad! Je v mém táboře v bažině severně od Stonardu, ale je zamčený v pevné truhle, kterou lze otevřít jen fíglem, který znám jenom já.\n\nJestli mi pomůžeš utéct, naučím tě ho.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Prosím, pomoz! Tyhle příšery mě sežerou!$B$BPomož mi odsud a já ti dám velký poklad! Je v mém táboře v bažině severně od Stonardu, ale je zamčený v truhle, kterou lze otevřít trikem, který znám jen já.$B$BKdyž mi pomůžeš utéct, naučím tě ho."
+      },
       "eventObjectiveLabel": "Doprovoď Galena z Fallow Sanctuary.",
       "summary": "Doprovoď Galena do bezpečí, pak najdi jeho tábor v Swamp of Sorrows a otevři jeho truhlu.",
       "title": "Galenův útěk",
@@ -13,6 +25,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +57,9 @@
     },
     "daDK": {
       "description": "Hjælp mig! Disse væsner vil spise mig!\n\nHjælp mig ud herfra, så giver jeg dig en stor skat! Den er i min lejr i sumpen nord for Stonard, men den er låst inde i en pengekiste, som kan åbnes med et trick, kun jeg kender.\n\nHvis du hjælper mig med at flygte, lærer jeg dig det.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Hjælp mig! De væsner vil æde mig!$B$BHjælp mig ud herfra, så giver jeg dig en stor skat! Den er i min lejr i sumpen nord for Stonard, men den ligger i en låst kiste, som kun kan åbnes med et trick, jeg alene kender.$B$BHjælper du mig med at flygte, lærer jeg dig det."
+      },
       "eventObjectiveLabel": "Eskortér Galen ud af Fallow Sanctuary.",
       "summary": "Eskortér Galen ud af fare, og find derefter hans lejr i Swamp of Sorrows og åbn hans pengekiste.",
       "title": "Galens flugt",
@@ -50,6 +70,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "99c15a04416f298b2816bc0239612deaa350fe591e506d1972f05e7b99b7fd64"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +99,9 @@
     },
     "deDE": {
       "description": "Bitte helft! Diese Kreaturen werden mich fressen!\n\nHelft mir hier raus und ich gebe Euch einen großen Schatz! Er ist in meinem Lager im Sumpf im Norden von Stonard, aber in einer Geldkassette eingeschlossen, die man mit einem Trick öffnet, den nur ich beherrsche.\n\nWenn ihr mir zur Flucht verhelft, zeige ich ihn Euch.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Bitte helft! Diese Kreaturen werden mich fressen!\n\nHelft mir hier raus und ich gebe Euch einen großen Schatz! Er ist in meinem Lager im Sumpf im Norden von Stonard, aber in einer Geldkassette eingeschlossen, die man mit einem Trick öffnet, den nur ich beherrsche.\n\nWenn ihr mir zur Flucht verhelft, zeige ich ihn Euch."
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "Eskortiert Galen, bis er außer Gefahr ist, sucht dann sein Lager in den Sümpfen des Elends und öffnet seine Geldkassette.",
       "title": "Galens Flucht",
@@ -83,6 +111,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +138,9 @@
     },
     "enUS": {
       "description": "Please help!  These creatures are going to eat me!\n\nHelp me out of here, and I'll give you a great treasure!  It's in my camp in the swamp north of Stonard, but it's locked in a strongbox that can be opened through a trick that only I know.\n\nIf you help me escape, then I'll teach it to you.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Please help!  These creatures are going to eat me!$B$BHelp me out of here, and I'll give you a great treasure!  It's in my camp in the swamp north of Stonard, but it's locked in a strongbox that can be opened through a trick that only I know.$B$BIf you help me escape, then I'll teach it to you."
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "Escort Galen out of danger, then find his camp in the Swamp of Sorrows and open his strongbox.",
       "title": "Galen's Escape",
@@ -113,6 +150,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +178,9 @@
     },
     "esES": {
       "description": "Por favor, necesito ayuda. ¡Estas criaturas van a devorarme!\n\n¡Sácame de aquí y te recompensaré con un gran tesoro! Está en mi campamento, en el pantano situado al norte de Rocal, pero está guardado en una caja fuerte que solo yo puedo abrir.\n\nSi me ayudas a escapar, te enseñaré cómo se hace.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Por favor, necesito ayuda. ¡Estas criaturas van a devorarme!\n\n¡Sácame de aquí y te recompensaré con un gran tesoro! Está en mi campamento, en el pantano situado al norte de Rocal, pero está guardado en una caja fuerte que solo yo puedo abrir.\n\nSi me ayudas a escapar, te enseñaré cómo se hace."
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "Pon a salvo a Galen, y después encuentra su campamento en el Pantano de las Penas y abre su caja fuerte.",
       "title": "La huida de Galen",
@@ -144,6 +190,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +217,9 @@
     },
     "esMX": {
       "description": "Por favor, necesito ayuda. ¡Estas criaturas van a devorarme!\n\n¡Sácame de aquí y te recompensaré con un gran tesoro! Está en mi campamento, en el pantano situado al norte de Rocal, pero está guardado en una caja fuerte que solo yo puedo abrir.\n\nSi me ayudas a escapar, te enseñaré cómo se hace.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Por favor, necesito ayuda. ¡Estas criaturas van a devorarme!\n\n¡Sácame de aquí y te recompensaré con un gran tesoro! Está en mi campamento, en el pantano situado al norte de Rocal, pero está guardado en una caja fuerte que solo yo puedo abrir.\n\nSi me ayudas a escapar, te enseñaré cómo se hace."
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "Pon a salvo a Galen, y después encuentra su campamento en el Pantano de las Penas y abre su caja fuerte.",
       "title": "La huida de Galen",
@@ -174,6 +229,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +256,9 @@
     },
     "frFR": {
       "description": "Au secours ! Ces créatures vont me manger !\n\nSortez-moi de là, et je vous donnerai un grand trésor ! Il est dans mon camp, dans le marais au nord de Pierrêche, mais il est enfermé dans un coffre qui ne peut être ouvert que grâce à un truc que moi seul connais.\n\nSi vous m'aidez à m'en sortir, alors je vous l’enseignerai.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Au secours ! Ces créatures vont me manger !\n\nSortez-moi de là, et je vous donnerai un grand trésor ! Il est dans mon camp, dans le marais au nord de Stonard, mais il est enfermé dans un coffre qui ne peut être ouvert que grâce à un truc que moi seul connais.\n\nSi vous m'aidez à m'en sortir, alors je vous l’enseignerai."
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "Escorter Galen jusqu'à ce qu'il soit hors de danger, puis trouver son camp dans le marais des Chagrins et ouvrir son coffre.",
       "title": "L'évasion de Galen",
@@ -204,6 +268,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -225,6 +295,9 @@
     },
     "hrHR": {
       "description": "Molim te, pomozi! Ta će me stvorenja pojesti!\n\nPomozi mi odavde i dat ću ti veliko blago! Nalazi se u mojem logoru u močvari sjeverno od Stonarda, ali zaključano je u škrinjici koja se može otvoriti trikom koji samo ja znam.\n\nAko mi pomogneš pobjeći, naučit ću te tom triku.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Molim te, pomozi! Ova će me stvorenja pojesti!$B$BPomozi mi da izađem odavde i dat ću ti veliko blago! U mom je logoru u močvari sjeverno od Stonarda, ali zaključano je u škrinji koju može otvoriti samo trik koji ja poznajem.$B$BAko mi pomogneš pobjeći, naučit ću te tom triku."
+      },
       "eventObjectiveLabel": "Otprati Galena iz Fallow Sanctuaryja.",
       "summary": "Otprati Galena iz opasnosti, zatim pronađi njegov logor u Swamp of Sorrowsu i otvori njegovu škrinjicu.",
       "title": "Galenov bijeg",
@@ -235,6 +308,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "99c15a04416f298b2816bc0239612deaa350fe591e506d1972f05e7b99b7fd64"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -259,6 +337,9 @@
     },
     "itIT": {
       "description": "Aiuto! Questi mostri mi mangeranno!\n\nFammi uscire e ti darò un grande tesoro! È nel mio accampamento nella palude, a nord di Pietrachiusa, ma è chiuso in un forziere che può essere aperto con un trucco che conosco solo io.\n\nSe mi aiuti a fuggire te lo insegnerò.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Aiuto, ti prego! Queste creature stanno per mangiarmi!\n\nAiutami a uscire di qui, e ti darò un grande tesoro! È nel mio accampamento nella palude, a nord di Stonard, ma è chiuso in un forziere che si apre con un trucco che conosco solo io.\n\nSe mi aiuti a scappare, te lo insegnerò."
+      },
       "eventObjectiveLabel": "Scorta Galen fuori dal Fallow Sanctuary.",
       "summary": "Scorta Galen fuori pericolo, poi trova il suo accampamento nella Swamp of Sorrows e apri la sua cassaforte.",
       "title": "La fuga di Galen",
@@ -268,6 +349,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -291,6 +378,9 @@
     },
     "koKR": {
       "description": "살려 주세요! 이 짐승들이 날 잡아먹으려고 해요!\n\n여기서 빠져나가게 도와주신다면 귀한 보물을 드릴게요! 보물은 스토나드 북쪽 늪지에 있는 제 야영지에 있어요. 금고 안에 들어 있는데, 저만 알고 있는 방법을 통해 열 수 있답니다.\n\n제가 빠져나갈 수 있도록 도와주신다면 여는 방법을 가르쳐 드리겠어요.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "살려 주세요! 이 짐승들이 날 잡아먹으려고 해요!\n\n여기서 빠져나가게 도와주신다면 귀한 보물을 드릴게요! 보물은 스토나드 북쪽 늪지에 있는 제 야영지에 있어요. 금고 안에 들어 있는데, 저만 알고 있는 방법을 통해 열 수 있답니다.\n\n제가 빠져나갈 수 있도록 도와주신다면 여는 방법을 가르쳐 드리겠어요."
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "갈렌이 위험에서 벗어나도록 호위한 다음 슬픔의 늪에 있는 그의 야영지를 찾아 갈렌의 금고를 열어야 합니다.",
       "title": "갈렌 구출",
@@ -300,6 +390,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -321,6 +417,9 @@
     },
     "plPL": {
       "description": "Proszę, pomóż! Te stworzenia mnie zjedzą!\n\nWyprowadź mnie stąd, a dam ci wielki skarb! Jest w obozie na bagnie na północ od Stonardu, zamknięty w szkatule. Otwiera ją sztuczka, którą znam tylko ja.\n\nJeśli pomożesz uciec, nauczę cię jej.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Pomocy! Te stwory mnie zjedzą!$B$BPomóż mi się stąd wydostać, a dam ci wielki skarb! Jest w moim obozie na bagnach na północ od Stonard, ale zamknięto go w szkatułce, którą można otworzyć tylko znaną mi sztuczką.$B$BJeśli pomożesz mi uciec, nauczę cię jej."
+      },
       "eventObjectiveLabel": "Odprowadź Galena z Fallow Sanctuary.",
       "summary": "Wyprowadź Galena z niebezpieczeństwa, następnie znajdź jego obóz na Swamp of Sorrows i otwórz szkatułę.",
       "title": "Ucieczka Galena",
@@ -331,6 +430,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "99c15a04416f298b2816bc0239612deaa350fe591e506d1972f05e7b99b7fd64"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -355,6 +459,9 @@
     },
     "ptBR": {
       "description": "Por favor, ajude-me! Essas criaturas vão me comer!\n\nAjude-me aqui e darei a você um grande tesouro! Está no meu acampamento no pântano ao norte do Pedregal, mas está trancado em um cofre que pode ser aberto por um truque que apenas eu conheço.\n\nMas, se você me ajudar a escapar, eu o ensinarei a você.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Por favor, ajude-me! Essas criaturas vão me comer!\n\nAjude-me aqui e darei a você um grande tesouro! Está no meu acampamento no pântano ao norte do Pedregal, mas está trancado em um cofre que pode ser aberto por um truque que apenas eu conheço.\n\nMas, se você me ajudar a escapar, eu o ensinarei a você."
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "Escolte Galen até a segurança para, então, encontrar seu acampamento no Pântano das Mágoas e abrir seu cofre.",
       "title": "A fuga de Galen",
@@ -364,6 +471,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -385,6 +498,9 @@
     },
     "ruRU": {
       "description": "Помогите! Эти твари хотят меня съесть!\n\nЕсли ты поможешь мне выбраться отсюда, то получишь великое сокровище! Оно лежит в моем лагере, в болотах к северу от Каменора, но только я знаю, как открыть сейф, в котором оно находится.\n\nЕсли ты поможешь мне, я научу тебя, как открыть этот сейф.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Помогите! Эти твари хотят меня съесть!\n\nЕсли ты поможешь мне выбраться отсюда, то получишь великое сокровище! Оно лежит в моем лагере, в болотах к северу от Каменора, но только я знаю, как открыть сейф, в котором оно находится.\n\nЕсли ты поможешь мне, я научу тебя, как открыть этот сейф."
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "Выведите Галена из опасного места, затем найдите его лагерь на Болоте Печали и откройте его сейф.",
       "title": "Побег Галена",
@@ -394,6 +510,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -415,6 +537,9 @@
     },
     "svSE": {
       "description": "Snälla, hjälp! Varelserna kommer att äta mig!\n\nHjälp mig ut så ger jag dig en stor skatt! Den finns i mitt läger i träsket norr om Stonard, inlåst i ett kassaskrin som bara öppnas med ett knep jag ensam känner.\n\nHjälper du mig fly lär jag dig knepet.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Snälla hjälp mig! De här varelserna tänker äta upp mig!$B$BHjälp mig härifrån så ger jag dig en stor skatt! Den finns i mitt läger i träsket norr om Stonard, men den är inlåst i ett skrin som bara kan öppnas med ett knep som bara jag känner till.$B$BOm du hjälper mig att fly ska jag lära dig det."
+      },
       "eventObjectiveLabel": "Eskortera Galen ut ur Fallow Sanctuary.",
       "summary": "Eskortera Galen ur faran, hitta sedan hans läger i Swamp of Sorrows och öppna hans kassaskrin.",
       "title": "Galens flykt",
@@ -425,6 +550,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "99c15a04416f298b2816bc0239612deaa350fe591e506d1972f05e7b99b7fd64"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -449,6 +579,9 @@
     },
     "trTR": {
       "description": "Lütfen yardım et! Bu yaratıklar beni yiyecek!\n\nBuradan çıkmama yardım et, sana büyük bir hazine vereyim! Stonard'ın kuzeyindeki bataklıkta kampımda, ama yalnızca benim bildiğim bir numarayla açılabilecek bir para kasasında kilitli.\n\nKaçmama yardım edersen sana öğreteceğim.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Lütfen yardım et! Bu yaratıklar beni yiyecek!$B$BBeni buradan çıkar, sana büyük bir hazine vereyim! Stonard’ın kuzeyindeki bataklıkta, kampımda duruyor ama yalnızca benim bildiğim bir numarayla açılabilen kilitli bir sandıkta.$B$BKaçmama yardım edersen sana o numarayı öğretirim."
+      },
       "eventObjectiveLabel": "Galen'e Fallow Sanctuary'den çıkarken eşlik et.",
       "summary": "Galen'e tehlikeden uzaklaşırken eşlik et, ardından Swamp of Sorrows'taki kampını bul ve kasasını aç.",
       "title": "Galen'in Kaçışı",
@@ -459,6 +592,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "99c15a04416f298b2816bc0239612deaa350fe591e506d1972f05e7b99b7fd64"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -483,6 +621,9 @@
     },
     "ukUA": {
       "description": "Будь ласка, допоможи! Ці тварюки хочуть мене з'їсти!\n\nЯкщо ти допоможеш мені вибратися звідси, то отримаєш великий скарб! Він лежить в моєму таборі, в болотах на північ від Камінарду, але сейф міцний і тільки я знаю, як його відчинити.\n\nЯкщо ти допоможеш мені, я навчу тебе, як відкрити сейф.",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "Прошу, допоможи! Ці створіння збираються мене з’їсти!$B$BДопоможи мені вибратися звідси, і я віддам тобі великий скарб! Він у моєму таборі на болоті на північ від Стонарду, але замкнений у скриньці, яку можна відкрити лише відомим мені способом.$B$BЯкщо допоможеш мені втекти, я навчу тебе цього способу."
+      },
       "eventObjectiveLabel": "Виведіть Ґалена з Перелогового притулку.",
       "summary": "Виведіть Ґалена з небезпечного місця, потім знайдіть його табір на болоті Скорбот і відкрийте його сейф.",
       "title": "Втеча Ґалена",
@@ -494,6 +635,11 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "99c15a04416f298b2816bc0239612deaa350fe591e506d1972f05e7b99b7fd64"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -520,6 +666,9 @@
     },
     "zhCN": {
       "description": "请救救我！这些东西想要吃掉我！\n\n帮我离开这儿，我就给你一笔巨大的财富！那笔财富就在斯通纳德北部沼泽的营地中，但是被锁在了一个保险箱里，只有我知道方法来打开箱子。\n\n如果你帮我逃走，我就告诉你怎么拿到那笔财富！",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "请救救我！这些东西想要吃掉我！\n\n帮我离开这儿，我就给你一笔巨大的财富！那笔财富就在斯通纳德北部沼泽的营地中，但是被锁在了一个保险箱里，只有我知道方法来打开箱子。\n\n如果你帮我逃走，我就告诉你怎么拿到那笔财富！"
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "护送加林逃出困境，然后打开他放在悲伤沼泽营地里的保险箱。",
       "title": "加林的逃亡",
@@ -529,6 +678,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -550,6 +705,9 @@
     },
     "zhTW": {
       "description": "請救救我！這些東西想要吃掉我！\n\n幫我離開這兒，我就給你一筆巨大的財富！那筆財富就在斯通納德北部沼澤的營地中，但是被鎖在一個只有我知道怎麼打開箱子的保險箱裡。\n\n如果你幫我逃走，我就告訴你怎麼拿到那筆財富！",
+      "dialogue": {
+        "e93b83f13ab538fc4de7": "請救救我！這些東西想要吃掉我！\n\n幫我離開這兒，我就給你一筆巨大的財富！那筆財富就在斯通納德北部沼澤的營地中，但是被鎖在一個只有我知道怎麼打開箱子的保險箱裡。\n\n如果你幫我逃走，我就告訴你怎麼拿到那筆財富！"
+      },
       "eventObjectiveLabel": "Escort Galen out of the Fallow Sanctuary.",
       "summary": "護送加林逃出困境，然後去開啟他放在傷心沼澤營地裡的保險箱。",
       "title": "加林的逃亡",
@@ -559,6 +717,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.e93b83f13ab538fc4de7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

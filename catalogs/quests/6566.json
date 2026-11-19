@@ -1,8 +1,36 @@
 {
   "areaId": 1637,
+  "dialogueContexts": {
+    "06826b2055a13c989999": {
+      "lineId": "q:6566:accept",
+      "npcId": 4949,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "0fe3d3b934ec7df3ea61": {
+      "lineId": "q:6566:complete",
+      "npcId": 4949,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "e96e850e225cb9f50001": {
+      "lineId": "q:6566:progress",
+      "npcId": 4949,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Rád tě zase vidím, {name}. Vítr s sebou přináší zprávy z Východních království.\n\nPosaď se a poslouchej.",
+      "dialogue": {
+        "06826b2055a13c989999": "Rád tě zase vidím, $N. Vítr přináší zprávy z Východních království.$B$BPosaď se a poslouchej. \n",
+        "0fe3d3b934ec7df3ea61": "Jsi připraven na tento úkol?\n",
+        "e96e850e225cb9f50001": "Trpělivost, $N. Dávej pozor!"
+      },
       "eventObjectiveLabel": "Thrallův příběh",
       "summary": "Vyslechni si Thralla.",
       "title": "Co vítr přináší",
@@ -13,6 +41,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d066db7e988ca00ca4adf3ada9c02436806e7436106050865f73d8bbbd756fc3"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +83,11 @@
     },
     "daDK": {
       "description": "Det er godt at se dig igen, {name}. Vinden bærer nyheder fra Eastern Kingdom med sig.\n\nSæt dig, lyt. \r\n",
+      "dialogue": {
+        "06826b2055a13c989999": "Det er godt at se dig igen, $N. Vinden bringer nyt fra Østrigerne.$B$BSæt dig og lyt. \n",
+        "0fe3d3b934ec7df3ea61": "Er du klar til at påtage dig denne opgave?\n",
+        "e96e850e225cb9f50001": "Tålmodighed, $N. Hør efter!"
+      },
       "eventObjectiveLabel": "Thralls fortælling",
       "summary": "Lyt til Thrall.",
       "title": "Hvad vinden bærer",
@@ -50,6 +98,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d066db7e988ca00ca4adf3ada9c02436806e7436106050865f73d8bbbd756fc3"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +137,11 @@
     },
     "deDE": {
       "description": "Schön, Euch wiederzusehen, {name}. Der Wind führt Kunde aus den östlichen Königreichen mit sich.\n\nSetzt Euch und lauscht.",
+      "dialogue": {
+        "06826b2055a13c989999": "Schön, Euch wiederzusehen, $n. Der Wind führt Kunde aus den Östlichen Königreichen mit sich.\n\nSetzt Euch und lauscht.",
+        "0fe3d3b934ec7df3ea61": "Seid Ihr bereit, diese Aufgabe anzunehmen?",
+        "e96e850e225cb9f50001": "Geduld, $N. Passt gut auf!"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "Hört Thrall zu.",
       "title": "Was der Wind erzählt",
@@ -83,6 +151,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +190,11 @@
     },
     "enUS": {
       "description": "It is good to see you again, {name}. The wind carries with it news from the Eastern Kingdom.\n\nSit, listen. \r\n",
+      "dialogue": {
+        "06826b2055a13c989999": "It is good to see you again, $N. The wind carries with it news from the Eastern Kingdom.$B$BSit, listen. \n",
+        "0fe3d3b934ec7df3ea61": "Are you prepared to take on this task?\n",
+        "e96e850e225cb9f50001": "Patience, $N. Pay attention!"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "Listen to Thrall.",
       "title": "What the Wind Carries",
@@ -113,6 +204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -134,6 +243,11 @@
     },
     "esES": {
       "description": "Me alegro de volver a verte, {name}. El vierno trae noticias de los Reinos del Este.\n\nSiéntate y escucha.",
+      "dialogue": {
+        "06826b2055a13c989999": "Me alegro de volver a verte, $N. El vierno trae noticias de los Reinos del Este.\n\nSiéntate y escucha.",
+        "0fe3d3b934ec7df3ea61": "¿Te ves capaz de aceptar la misión?",
+        "e96e850e225cb9f50001": "Paciencia, $n. ¡Atiende!"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "Escucha a Thrall.",
       "title": "Lo que trae el viento",
@@ -143,6 +257,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -164,6 +296,11 @@
     },
     "esMX": {
       "description": "Me alegro de volver a verte, {name}. El viento trae noticias de los Reinos del Este.\n\nSiéntate y escucha.\n",
+      "dialogue": {
+        "06826b2055a13c989999": "Me alegro de volver a verte, $n. El viento trae noticias de los Reinos del Este.\n\nSiéntate y escucha.|n",
+        "0fe3d3b934ec7df3ea61": "¿Te ves capaz de aceptar la misión?",
+        "e96e850e225cb9f50001": "Paciencia, $n. ¡Atiende!"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "Escucha a Thrall.",
       "title": "Lo que trae el viento",
@@ -173,6 +310,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -194,6 +349,11 @@
     },
     "frFR": {
       "description": "Cela fait plaisir de vous revoir, {name}. Le vent transporte avec lui des nouvelles des Royaumes de l'Est.\n\nAsseyez-vous, écoutez.",
+      "dialogue": {
+        "06826b2055a13c989999": "Cela fait plaisir de vous revoir, $N. Le vent transporte avec lui des nouvelles des Royaumes de l'Est.\n\nAsseyez-vous, écoutez.",
+        "0fe3d3b934ec7df3ea61": "Êtes-vous prêt pour cette tâche ?",
+        "e96e850e225cb9f50001": "Patience, $N. Écoutez-moi !"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "Écouter Thrall.",
       "title": "Ce que le vent apporte",
@@ -203,6 +363,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -224,6 +402,11 @@
     },
     "hrHR": {
       "description": "Drago mi je ponovno te vidjeti, {name}. Vjetar nosi vijesti iz Istočnog kraljevstva.\n\nSjedni, slušaj. \r\n",
+      "dialogue": {
+        "06826b2055a13c989999": "Drago mi je što te opet vidim, $N. Vjetar donosi vijesti iz Istočnih kraljevstava.$B$BSjedni i slušaj. \n",
+        "0fe3d3b934ec7df3ea61": "Jesi li spreman prihvatiti ovaj zadatak?\n",
+        "e96e850e225cb9f50001": "Strpljenja, $N. Obrati pozornost!"
+      },
       "eventObjectiveLabel": "Thrallova priča",
       "summary": "Poslušaj Thralla.",
       "title": "Što vjetar nosi",
@@ -234,6 +417,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d066db7e988ca00ca4adf3ada9c02436806e7436106050865f73d8bbbd756fc3"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -258,6 +456,11 @@
     },
     "itIT": {
       "description": "È bello rivederti, {name}. Il vento porta notizie dal Regno Orientale.\n\nSiediti, ascolta. \r\n",
+      "dialogue": {
+        "06826b2055a13c989999": "È bello rivederti, $N. Il vento porta con sé notizie dagli Eastern Kingdoms.\n\nSiediti, ascolta.",
+        "0fe3d3b934ec7df3ea61": "Sei pronto ad affrontare questo compito?\n",
+        "e96e850e225cb9f50001": "Abbi pazienza, $N. Fai attenzione!"
+      },
       "eventObjectiveLabel": "Il racconto di Thrall",
       "summary": "Ascolta Thrall.",
       "title": "Ciò che porta il vento",
@@ -268,6 +471,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d066db7e988ca00ca4adf3ada9c02436806e7436106050865f73d8bbbd756fc3"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -292,6 +512,11 @@
     },
     "koKR": {
       "description": "{name}, 다시 보게 되어 반갑도다. 바람이 동부 왕국으로부터 소식을 가져왔다.\n\n앉아서 내가 하는 이야기를 듣도록 하라.",
+      "dialogue": {
+        "06826b2055a13c989999": "$n, 다시 보게 되어 반갑도다. 바람이 동부 왕국으로부터 소식을 가져왔다.\n\n앉아서 내가 하는 이야기를 듣도록 하라.",
+        "0fe3d3b934ec7df3ea61": "어떤가? 임무를 맡을 각오는 되었는가?",
+        "e96e850e225cb9f50001": "$n, 인내심을 가지고 집중해서 듣도록!"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "스랄의 이야기를 들어야 합니다.",
       "title": "바람이 전해 온 소식",
@@ -301,6 +526,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -322,6 +565,11 @@
     },
     "plPL": {
       "description": "Dobrze znów cię widzieć, {name}. Wiatr niesie wieści ze Wschodniego Królestwa.\n\nUsiądź i słuchaj.\r\n",
+      "dialogue": {
+        "06826b2055a13c989999": "Dobrze cię znów widzieć, $N. Wiatr niesie wieści ze Wschodnich Królestw.$B$BUsiądź i słuchaj. \n",
+        "0fe3d3b934ec7df3ea61": "Czy podejmiesz się tego zadania?\n",
+        "e96e850e225cb9f50001": "Cierpliwości, $N. Słuchaj uważnie!"
+      },
       "eventObjectiveLabel": "Opowieść Thralla",
       "summary": "Wysłuchaj Thralla.",
       "title": "Co niesie wiatr",
@@ -332,6 +580,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d066db7e988ca00ca4adf3ada9c02436806e7436106050865f73d8bbbd756fc3"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -356,6 +619,11 @@
     },
     "ptBR": {
       "description": "Que bom te ver de novo, {name}. O vento traz notícias dos Reinos do Leste.\n\nFique para ouvir. \r\n",
+      "dialogue": {
+        "06826b2055a13c989999": "Que bom te ver de novo, $N. O vento traz notícias dos Reinos do Leste.\n\nFique para ouvir.",
+        "0fe3d3b934ec7df3ea61": "Você está pronto para esta tarefa?",
+        "e96e850e225cb9f50001": "Paciência, $N. Preste atenção!"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "Ouça Thrall.",
       "title": "O que o vento carrega",
@@ -365,6 +633,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -386,6 +671,11 @@
     },
     "ruRU": {
       "description": "Рад видеть тебя снова, {name}. Ветер принес вести из Восточного королевства.\n\nСадись и слушай.",
+      "dialogue": {
+        "06826b2055a13c989999": "Рад видеть тебя снова, $n. Ветер принес вести из Восточного королевства.\n\nСадись и слушай.",
+        "0fe3d3b934ec7df3ea61": "Готов ли ты взять на себя эту задачу?",
+        "e96e850e225cb9f50001": "Терпение, $N."
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "Выслушайте Тралла.",
       "title": "Что принес ветер",
@@ -395,6 +685,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -416,6 +724,11 @@
     },
     "svSE": {
       "description": "Det är gott att se dig igen, {name}. Vinden bär med sig nyheter från Östra kungarikena.\n\nSätt dig och lyssna.",
+      "dialogue": {
+        "06826b2055a13c989999": "Det är gott att se dig igen, $N. Vinden för med sig nyheter från de östra kungarikena.$B$BSätt dig och lyssna. \n",
+        "0fe3d3b934ec7df3ea61": "Är du redo att ta dig an denna uppgift?\n",
+        "e96e850e225cb9f50001": "Tålamod, $N. Var uppmärksam!"
+      },
       "eventObjectiveLabel": "Thralls berättelse",
       "summary": "Lyssna på Thrall.",
       "title": "Det vinden bär med sig",
@@ -426,6 +739,21 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -452,6 +780,11 @@
     },
     "trTR": {
       "description": "Seni yeniden görmek güzel, {name}. Rüzgâr beraberinde Doğu Krallığı'ndan haberler taşıyor.\n\nOtur, dinle.",
+      "dialogue": {
+        "06826b2055a13c989999": "Seni tekrar görmek güzel, $N. Rüzgâr Doğu Krallıkları’ndan haberler getiriyor.$B$BOtur ve dinle. \n",
+        "0fe3d3b934ec7df3ea61": "Bu görevi üstlenmeye hazır mısın?\n",
+        "e96e850e225cb9f50001": "Sabırlı ol, $N. Dikkatini ver!"
+      },
       "eventObjectiveLabel": "Thrall'ın hikâyesi",
       "summary": "Thrall'ı dinle.",
       "title": "Rüzgârın Taşıdıkları",
@@ -462,6 +795,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d066db7e988ca00ca4adf3ada9c02436806e7436106050865f73d8bbbd756fc3"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -486,6 +834,11 @@
     },
     "ukUA": {
       "description": "Радий знову тебе бачити, {name}. Вітер приніс новини зі Східних Королівств.\n\nСядь, послухай.",
+      "dialogue": {
+        "06826b2055a13c989999": "Радий знову тебе бачити, $N. Вітер приносить звістки зі Східних Королівств.$B$BСідай і слухай. \n",
+        "0fe3d3b934ec7df3ea61": "Ти готовий узятися за це завдання?\n",
+        "e96e850e225cb9f50001": "Терплячіше, $N. Слухай уважно!"
+      },
       "eventObjectiveLabel": "Розповідь Тралла",
       "summary": "Вислухайте Тралла.",
       "title": "Що приніс вітер",
@@ -497,6 +850,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "d066db7e988ca00ca4adf3ada9c02436806e7436106050865f73d8bbbd756fc3"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -523,6 +891,11 @@
     },
     "zhCN": {
       "description": "很高兴再次看到你，{name}。风从东部王国带来了新的消息。\n\n坐下，听我说。",
+      "dialogue": {
+        "06826b2055a13c989999": "很高兴再次看到你，$N。风从东部王国带来了新的消息。\n\n坐下，听我说。",
+        "0fe3d3b934ec7df3ea61": "你准备好接受这个任务了吗?\n",
+        "e96e850e225cb9f50001": "耐心点，$N。注意听!"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "听萨尔讲话。",
       "title": "风吹来的消息",
@@ -532,6 +905,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -553,6 +944,11 @@
     },
     "zhTW": {
       "description": "很高興再次看到你，{name}。風從東部王國帶來了新的消息。\n\n坐下，聽我說。",
+      "dialogue": {
+        "06826b2055a13c989999": "很高興再次看到你，$N。風從東部王國帶來了新的消息。\n\n坐下，聽我說。",
+        "0fe3d3b934ec7df3ea61": "你準備好接受這個任務了嗎?",
+        "e96e850e225cb9f50001": "耐心點，$N。注意聽!"
+      },
       "eventObjectiveLabel": "Thrall's Tale",
       "summary": "聽薩爾講話。",
       "title": "風吹來的消息",
@@ -562,6 +958,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.06826b2055a13c989999": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.0fe3d3b934ec7df3ea61": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e96e850e225cb9f50001": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

@@ -1,8 +1,28 @@
 {
   "areaId": 139,
+  "dialogueContexts": {
+    "05c8eabcbed86e1336cb": {
+      "lineId": "q:9142:progress",
+      "npcId": 16212,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "e8e45a2e162845bd65ca": {
+      "lineId": "q:9142:complete",
+      "npcId": 16212,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Znáš to, děcko. Za jeden Valor Token dostaneš Craftsman's Writ.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Víš, jak to chodí, kluku. Za jeden žeton udatnosti dostaneš řemeslnický příkaz.",
+        "e8e45a2e162845bd65ca": "Tohle sis zasloužil, zelenáči. A teď si na své příkazy nestěžuj. Splň je, nebo je znič.\n"
+      },
       "summary": "Víš, jak to chodí, mladej. Jeden žeton udatnosti ti zajistí řemeslnický výnos.",
       "title": "Přípis řemeslníka",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -31,6 +61,10 @@
     },
     "daDK": {
       "description": "Du kender fremgangsmåden, knægt. Ét valor token giver dig et craftsman's writ.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Du kender rutinen, knægt. Ét tapperhedstegn giver dig en håndværksordre.",
+        "e8e45a2e162845bd65ca": "Den har du fortjent, grønskolling. Og lad være med at klynke over dine ordrer. Udfør dem eller tilintetgør dem.\n"
+      },
       "summary": "Du kender fremgangsmåden, knægt. Ét valor token giver dig et craftsman's writ.",
       "title": "Håndværkerens anmodning",
       "translationMetadata": {
@@ -40,6 +74,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8442d220262cb8bcf1516407b5ddd4a68eb695f466a3d58e864b5cf2e299ff5"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -58,6 +102,10 @@
     },
     "deDE": {
       "description": "Ihr wisst wie's geht, Kind. Für eine Ehrenmarke bekommt Ihr eine Handwerksverfügung.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Du weißt, wie es läuft, Junge. Für eine Tapferkeitsmarke bekommst du eine Handwerksurkunde.",
+        "e8e45a2e162845bd65ca": "Ihr habt's verdient, Anfänger. Beschwert Euch also nicht. Erfüllt Euren Auftrag oder lasst es bleiben. "
+      },
       "summary": "Ihr wisst wie's geht, Kind. Für eine Ehrenmarke bekommt Ihr eine Handwerksverfügung.",
       "title": "Handwerksverfügung",
       "translationMetadata": {
@@ -66,6 +114,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +142,10 @@
     },
     "enUS": {
       "description": "You know the drill, kid. One valor token gets you a craftsman's writ.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "You know the drill, kid. One valor token gets you a craftsman's writ.",
+        "e8e45a2e162845bd65ca": "You earned this, scrub. Now, don't cry about your orders. Fill 'em or destroy 'em.\n"
+      },
       "summary": "You know the drill, kid. One valor token gets you a craftsman's writ.",
       "title": "Craftsman's Writ",
       "translationMetadata": {
@@ -90,6 +154,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -106,6 +182,10 @@
     },
     "esES": {
       "description": "Ya sabes cómo va esto, muchacho. Con una muestra de valor consigues una libranza del artesano.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Conoces el ejercicio, chico.  Una ficha de valor te da un escrito de artesano.",
+        "e8e45a2e162845bd65ca": "Te ganaste esto, matorral.  Ahora, no llores por tus órdenes.  Llénalos o destrúyelos."
+      },
       "summary": "Ya sabes cómo va esto, muchacho. Con una muestra de valor consigues una libranza del artesano.",
       "title": "Libranza del artesano",
       "translationMetadata": {
@@ -114,6 +194,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -130,6 +222,10 @@
     },
     "esMX": {
       "description": "Ya sabes cómo va esto, muchacho. Con una muestra de valor consigues una libranza del artesano.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Ya sabes cómo va esto, muchacho. Con una muestra de valor consigues una libranza del artesano.",
+        "e8e45a2e162845bd65ca": "Te lo has ganado, don nadie. Ahora, no llores por tus órdenes. Llénalos o destrúyelos."
+      },
       "summary": "Ya sabes cómo va esto, muchacha. Con una muestra de valor consigues una libranza del artesano.",
       "title": "Libranza del artesano",
       "translationMetadata": {
@@ -138,6 +234,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -154,6 +262,10 @@
     },
     "frFR": {
       "description": "Vous savez comment ça se passe, mon petit. Pour une marque de valeur, vous recevez une commission d'artisan.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Tu connais la chanson, petit. Un jeton de valeur vous permet d'obtenir un certificat d'artisan.",
+        "e8e45a2e162845bd65ca": "C’est vous qui en vouliez, feignant, alors venez pas pleurer sur la commande. Honorez-la ou détruisez-la. "
+      },
       "summary": "Vous savez comment ça se passe, mon petit. Pour une marque de valeur, vous recevez une commission d'artisan.",
       "title": "Commission d'artisan",
       "translationMetadata": {
@@ -162,6 +274,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -178,6 +302,10 @@
     },
     "hrHR": {
       "description": "Znaš kako to ide, klinac. Jedan znak hrabrosti donosi ti obrtnički nalog.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Znaš kako to ide, klinac. Za jedan znak hrabrosti dobivaš obrtnički nalog.",
+        "e8e45a2e162845bd65ca": "Ovo si zaslužio, početniče. Nemoj sada kukati zbog svojih naloga. Izvrši ih ili ih uništi.\n"
+      },
       "summary": "Znaš kako ide, mali. Jedan znak hrabrosti donosi ti obrtnički nalog.",
       "title": "Obrtnikov nalog",
       "translationMetadata": {
@@ -187,6 +315,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8442d220262cb8bcf1516407b5ddd4a68eb695f466a3d58e864b5cf2e299ff5"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -205,6 +343,10 @@
     },
     "itIT": {
       "description": "Sai come funziona, ragazzo. Un gettone del valore ti frutta un mandato dell'artigiano.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Conosci la procedura, ragazzo. Un gettone del valore ti dà diritto a un ordine per artigiani.",
+        "e8e45a2e162845bd65ca": "Te lo sei guadagnato, pivello. Ora non piagnucolare per gli ordini. Eseguili o distruggili.\n"
+      },
       "summary": "Conosci la procedura, ragazzo. Un emblema al valore vale una richiesta dell'artigiano.",
       "title": "Mandato dell'Artigiano",
       "translationMetadata": {
@@ -214,6 +356,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8442d220262cb8bcf1516407b5ddd4a68eb695f466a3d58e864b5cf2e299ff5"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -232,6 +384,10 @@
     },
     "koKR": {
       "description": "애송이 양반, 아까 해봤지 않소? 명예 휘장 하나당 장인의 계약서 한 장이오.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "당신은 훈련을 알고, 꼬마 야.  용맹 토큰 1개로 장인의 영장을 받을 수 있습니다.",
+        "e8e45a2e162845bd65ca": "자, 옜소. 이번 계약서를 보고 울지나 마시오. 주문을 완수하든가 아니면 찢어 버리든가 마음대로 하시오."
+      },
       "summary": "애송이 양반, 아까 해봤지 않소? 명예 휘장 하나당 장인의 계약서 한 장이오.",
       "title": "장인의 계약서",
       "translationMetadata": {
@@ -240,6 +396,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -256,6 +424,10 @@
     },
     "plPL": {
       "description": "Znasz procedurę, dzieciaku. Jeden żeton męstwa zapewnia zlecenie rzemieślnika.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Znasz zasady, dzieciaku. Jeden żeton męstwa wymienisz na zlecenie dla rzemieślnika.",
+        "e8e45a2e162845bd65ca": "Zasłużyłeś na to, żółtodziobie. A teraz nie marudź z powodu zleceń. Wykonaj je albo zniszcz.\n"
+      },
       "summary": "Znasz procedurę, dzieciaku. Jeden żeton męstwa zapewnia zlecenie rzemieślnika.",
       "title": "Zlecenie rzemieślnika",
       "translationMetadata": {
@@ -265,6 +437,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8442d220262cb8bcf1516407b5ddd4a68eb695f466a3d58e864b5cf2e299ff5"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -283,6 +465,10 @@
     },
     "ptBR": {
       "description": "Você já conhece o esquema, filho. Um símbolo de bravura vale uma escritura do artífice.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Você conhece o procedimento, garoto. Uma insígnia de bravura vale uma ordem de artesão.",
+        "e8e45a2e162845bd65ca": "Você mereceu isto, novato. Agora, não chore por causa das ordens. Cumpra-as ou destrua-as.\n"
+      },
       "summary": "Você já conhece o esquema, filho. Um símbolo de bravura vale uma escritura do artífice.",
       "title": "Escritura do artífice",
       "translationMetadata": {
@@ -291,6 +477,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "original",
@@ -308,6 +504,10 @@
     },
     "ruRU": {
       "description": "Ты знаешь правила парень. Получишь задание, только когда предъявишь знак доблести.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Ты знаешь порядок, малец. За один знак доблести получишь заказ ремесленника.",
+        "e8e45a2e162845bd65ca": "Ты заслужил это."
+      },
       "summary": "Ты знаешь правила парень. Получишь задание, только когда предъявишь знак доблести.",
       "title": "Задание мастера",
       "translationMetadata": {
@@ -316,6 +516,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +543,10 @@
     },
     "svSE": {
       "description": "Du vet hur det går till, grabben. En tapperhetsbricka ger dig en hantverksorder.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Du vet hur det går till, grabben. Ett tapperhetstecken ger dig en hantverksorder.",
+        "e8e45a2e162845bd65ca": "Den här har du förtjänat, gröngöling. Och gnäll inte över dina order. Utför dem eller förstör dem.\n"
+      },
       "summary": "Du vet hur det går till, grabben. Ett tapperhetstecken ger dig en hantverkarorder.",
       "title": "Hantverkarens uppdrag",
       "translationMetadata": {
@@ -341,6 +556,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8442d220262cb8bcf1516407b5ddd4a68eb695f466a3d58e864b5cf2e299ff5"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -359,6 +584,10 @@
     },
     "trTR": {
       "description": "İşleyişi biliyorsun, evlat. Bir cesaret nişanı karşılığında bir zanaatkâr siparişi alırsın.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Usulü biliyorsun, ufaklık. Bir cesaret nişanı karşılığında bir zanaatkâr emri alırsın.",
+        "e8e45a2e162845bd65ca": "Bunu hak ettin, çaylak. Şimdi emirlerin için sızlanma. Ya yerine getir ya da yok et.\n"
+      },
       "summary": "İşleyişi biliyorsun, evlat. Bir cesaret nişanı karşılığında bir zanaatkâr siparişi alırsın.",
       "title": "Zanaatkâr Siparişi",
       "translationMetadata": {
@@ -368,6 +597,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8442d220262cb8bcf1516407b5ddd4a68eb695f466a3d58e864b5cf2e299ff5"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -386,6 +625,10 @@
     },
     "ukUA": {
       "description": "Ти знаєш порядок, малий. Один жетон доблесті — один ремісничий припис.",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "Ти знаєш порядок, малий. За один знак доблесті отримаєш замовлення для ремісника.",
+        "e8e45a2e162845bd65ca": "Ти це заслужив, новачку. А тепер не скигли через замовлення. Виконай їх або знищ.\n"
+      },
       "summary": "Ти знаєш порядок, малий. Один жетон доблесті — один ремісничий припис.",
       "title": "Замовлення майстра",
       "translationMetadata": {
@@ -395,6 +638,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8442d220262cb8bcf1516407b5ddd4a68eb695f466a3d58e864b5cf2e299ff5"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -414,6 +667,10 @@
     },
     "zhCN": {
       "description": "孩子，我想你是知道规矩的。一枚勇气勋章就能换到一份工匠文书。",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "你知道规矩，孩子。一枚勇气勳章才能让你获得一份工匠的令状。",
+        "e8e45a2e162845bd65ca": "这是你的奖励，蠢蛋。现在，不要跟我抱怨你的任务。完成它们 - 或者 - 摧毁它们。\n"
+      },
       "summary": "孩子，我想你是知道规矩的。一枚勇气勋章就能换到一份工匠文书。",
       "title": "工匠文书",
       "translationMetadata": {
@@ -422,6 +679,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "original",
@@ -439,6 +708,10 @@
     },
     "zhTW": {
       "description": "你知道規矩，孩子。一枚勇氣勳章才能讓你獲得一份工匠的令狀。",
+      "dialogue": {
+        "05c8eabcbed86e1336cb": "你知道規矩，孩子。一枚勇氣徽記可以換一張工匠委託書。",
+        "e8e45a2e162845bd65ca": "這是你的獎勵，蠢蛋。現在，不要跟我抱怨你的任務。完成它們 - 或者 - 摧毀它們。"
+      },
       "summary": "你知道規矩，孩子。一枚勇氣勳章才能讓你獲得一份工匠的令狀。",
       "title": "工匠的令狀",
       "translationMetadata": {
@@ -447,6 +720,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.05c8eabcbed86e1336cb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8e45a2e162845bd65ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

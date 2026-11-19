@@ -1,8 +1,28 @@
 {
   "areaId": 15,
+  "dialogueContexts": {
+    "e030c297edc6a909689e": {
+      "lineId": "q:1253:complete",
+      "npcId": 4944,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "f91c5498526a0c77b58b": {
+      "lineId": "q:1253:progress",
+      "npcId": 4944,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Železný štít, zčernalý ohněm, který se prohnal hostincem, je připevněný k rozpadajícímu se komínu, jedné z mála zbývajících částí stavby, která kdysi tvořila hostinec Shady Rest.\n\nŠtít jde z cihel komína sundat.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, ve výrobě zbraní a zbroje nejsem žádný odborník. V jejich používání ano, ale ne ve výrobě.$b$bTen štít vypadá docela obyčejně, až na poškození ohněm, který zachvátil hostinec.",
+        "f91c5498526a0c77b58b": "Našel jsi nějaké důkazy na místě hostince Shady Rest?"
+      },
       "summary": "Přines Blackened Iron Shield kapitánu Garranu Vimesovi do Theramore.",
       "title": "Černý štít",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Et jernskjold, sortnet af ilden, der rasede gennem kroen, er fastgjort til den smuldrende skorsten, en af de få tilbageværende dele af den bygning, der engang udgjorde Shady Rest Inn.\n\nSkjoldet kan fjernes fra skorstenens mursten.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, jeg er ingen ekspert i at fremstille våben og rustninger. At bruge dem, ja, men ikke at lave dem.$b$bSkjoldet ser ganske almindeligt ud, bortset fra skaderne fra ilden, der opslugte kroen.",
+        "f91c5498526a0c77b58b": "Har du fundet spor på stedet, hvor Shady Rest Inn lå?"
+      },
       "summary": "Bring Blackened Iron Shield til kaptajn Garran Vimes i Theramore.",
       "title": "Det sorte skjold",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Ein Eisenschild, vom Feuer geschwärzt, das in dem Gasthaus wütete, ist an dem verfallenen Kamin befestigt, einer der wenigen erhaltenen Teile des Gebäudes, das einmal das Gasthaus Zur süßen Ruh war.\n\nDer Schild lässt sich von den Mauersteinen des Kamins ablösen.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, ich bin kein Experte für die Herstellung von Waffen und Rüstungen. Für ihre Anwendung, ja, aber nicht für die Herstellung. \n \n Der Schild scheint ganz gewöhnlich wie jeder andere zu sein, abgesehen vom Schaden durch das Feuer, das das Gasthaus verwüstete. ",
+        "f91c5498526a0c77b58b": "Habt Ihr Beweise im ehemaligen Gasthaus Zur süßen Ruh gefunden?"
+      },
       "summary": "Bringt den geschwärzten Eisenschild zu Captain Garran Mumm in Theramore.",
       "title": "Der Schwarze Schild",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "An iron shield, blackened by the fire that raged through the inn, is affixed to the crumbling chimney, one of the few remaining parts of the structure that once made up the Shady Rest Inn.\n\nThe shield can be removed from the brick of the chimney.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, I'm no expert with the construction of arms and armor. Their use, yes, but not their making.$b$bThis shield seems as ordinary as any, excepting the damage from the fire that engulfed the inn.",
+        "f91c5498526a0c77b58b": "Have you found evidence from the site of the Shady Rest Inn?"
+      },
       "summary": "Bring the Blackened Iron Shield to Captain Garran Vimes in Theramore.",
       "title": "The Black Shield",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Un escudo de hierro, ennegrecido por el fuego que arrasó la posada, cuelga de la chimenea, una de las pocas partes de la estructura de la Posada Reposo Umbrío que han sobrevivido.\n\nEl escudo puede separarse del ladrillo de la chimenea.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Mm, no soy un experto en la creación de armas y armaduras. En su uso, sí, pero no en su fabricación.\n\nEste escudo parece tan normal como cualquiera, exceptuando el daño que le causó el fuego de la posada.",
+        "f91c5498526a0c77b58b": "¿Has encontrado algo en la Posada Reposo Umbrío?"
+      },
       "summary": "Lleva el escudo de hierro ennegrecido al capitán Garran Vimes a Theramore.",
       "title": "El escudo negro",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Un escudo de hierro, ennegrecido por el fuego que arrasó la posada, cuelga de la chimenea, una de las pocas partes de la estructura de la Posada Reposo Umbrío que han sobrevivido.\n\nEl escudo puede separarse del ladrillo de la chimenea.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Mm, no soy un experto en la creación de armas y armaduras. En su uso, sí, pero no en su fabricación.\n\nEste escudo parece tan normal como cualquiera, exceptuando el daño que le causó el fuego de la posada.",
+        "f91c5498526a0c77b58b": "¿Has encontrado algo en la Posada Reposo Umbrío?"
+      },
       "summary": "Lleva el escudo de hierro ennegrecido al capitán Garran Vimes a Theramore.",
       "title": "El escudo negro",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "Un bouclier en fer, noirci par le feu qui a fait rage, est fixé à la cheminée branlante, une des rares structures encore debout de ce qui a été l'auberge du Repos ombragé.\n\nLe bouclier peut être détaché du mur en brique de la cheminée.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Je ne suis pas un expert en fabrication d’armes et d’armures. En leur utilisation oui, mais pas plus. \n \n Ce bouclier semble ordinaire, à l'exception des dégâts subis lors de l'incendie qui a ravagé l'auberge. ",
+        "f91c5498526a0c77b58b": "Avez-vous trouvé des indices sur le site de l'auberge du Repos ombragé ?"
+      },
       "summary": "Rapporter le Bouclier en fer noirci au capitaine Garran Vimaire à Theramore.",
       "title": "Le Bouclier noir",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +304,10 @@
     },
     "hrHR": {
       "description": "Željezni štit, pocrnio od požara koji je harao gostionicom, pričvršćen je na trošni dimnjak, jedan od rijetkih preostalih dijelova zgrade koja je nekoć bila gostionica Shady Rest.\n\nŠtit se može skinuti s opeke dimnjaka.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, nisam stručnjak za izradu oružja i oklopa. Za njihovu uporabu jesam, ali ne i za izradu.$b$bOvaj štit izgleda sasvim obično, osim oštećenja od vatre koja je zahvatila gostionicu.",
+        "f91c5498526a0c77b58b": "Jesi li pronašao dokaze na mjestu gostionice Shady Rest?"
+      },
       "summary": "Donesi pocrnjeli željezni štit kapetanu Garranu Vimesu u Theramoreu.",
       "title": "Crni štit",
       "translationMetadata": {
@@ -189,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +345,10 @@
     },
     "itIT": {
       "description": "Uno scudo di ferro, annerito dall'incendio che ha devastato la locanda, è fissato al camino diroccato, una delle poche parti rimaste della struttura che un tempo era la Shady Rest Inn.\n\nLo scudo può essere staccato dai mattoni del camino.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, non sono un esperto di come si costruiscono armi e armature. Di come si usano sì, ma non di come si fabbricano.\n\nQuesto scudo sembra comunissimo, a parte i danni dell'incendio che ha avvolto la locanda.",
+        "f91c5498526a0c77b58b": "Hai trovato prove sul luogo della Shady Rest Inn?"
+      },
       "summary": "Porta lo scudo di ferro annerito al capitano Garran Vimes a Theramore.",
       "title": "Lo scudo nero",
       "translationMetadata": {
@@ -216,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +388,10 @@
     },
     "koKR": {
       "description": "그늘 쉼터 여관 건물의 얼마 남지 않은 부분 중 하나인 허물어진 굴뚝에 여관 전체를 휩쓸어 버린 불로 검게 그을린 철제 방패가 붙어 있습니다.\n\n굴뚝의 벽돌에서 방패를 떼어 낼 수 있습니다.",
+      "dialogue": {
+        "e030c297edc6a909689e": "흠, 무기나 갑옷 만드는 일에 대해서는 잘 모르는데... 어떻게 사용해야 하는지는 잘 알고 있지만 만드는 건 내 전문이 아니니까 말일세.\n\n이 방패는 여관에 일어난 화재로 손상되었다는 것 외에는 아주 평범해 보이는군.",
+        "f91c5498526a0c77b58b": "그늘 쉼터 여관의 화재 현장에서 무슨 단서라도 찾았나?"
+      },
       "summary": "테라모어에 있는 사령관 개런 바임스에게 타락의 철제 방패를 가져가야 합니다.",
       "title": "검은 방패",
       "translationMetadata": {
@@ -242,6 +400,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +428,10 @@
     },
     "plPL": {
       "description": "Żelazna tarcza, poczerniała w pożarze gospody, jest przymocowana do kruszącego się komina, jednej z nielicznych pozostałości budynku Shady Rest Inn.\n\nTarczę można zdjąć z cegieł komina.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, nie znam się na wytwarzaniu broni i zbroi. Na ich używaniu owszem, ale nie na ich wyrobie.$b$bTa tarcza wygląda całkiem zwyczajnie, pomijając uszkodzenia od ognia, który strawił gospodę.",
+        "f91c5498526a0c77b58b": "Czy na miejscu gospody Shady Rest udało ci się znaleźć jakieś dowody?"
+      },
       "summary": "Przynieś poczerniałą żelazną tarczę kapitanowi Garranowi Vimesowi w Theramore.",
       "title": "Czarna tarcza",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "Um escudo de ferro, pretejado pelo fogo que devastou a estalagem, está afixado aos destroços da chaminé – uma das poucas partes restantes da estrutura que um dia foi a Estalagem Pouso do Umbral.\n\nÉ possível remover o escudo dos tijolos da chaminé.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, eu não sou um especialista em armas ou armaduras. Como usá-las, sim, mas não sua criação.\n\nEste escudo parece tão comum quanto qualquer outro, exceto pelo dano deixado pelo fogo que consumiu a estalagem.",
+        "f91c5498526a0c77b58b": "Você encontrou alguma evidência na Estalagem Pouso do Umbral?"
+      },
       "summary": "Leve o Escudo de Ferro Enegrecido para o Capitão Garrido Valente em Theramore.",
       "title": "O escudo negro",
       "translationMetadata": {
@@ -293,6 +481,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +509,10 @@
     },
     "ruRU": {
       "description": "Железный щит, почерневший в пламени бушевавшего здесь пожара, висит на остатках камина – только это и осталось от таверны \"Последний привал\".\n\nЩит можно снять.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Хм, я не слишком разбираюсь в оружии и доспехах. То есть, конечно, знаю, как с ними обращаться, но в ковке полный профан.\n\nПо мне, этот щит совсем обычный, разве что от пожара почернел.",
+        "f91c5498526a0c77b58b": "Тебе удалось найти какие-нибудь улики в развалинах \"Последнего приюта\"?"
+      },
       "summary": "Принесите почерневший железный щит капитану Гаррану Ваймсу в Терамор.",
       "title": "Черный Щит",
       "translationMetadata": {
@@ -317,6 +521,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +549,10 @@
     },
     "svSE": {
       "description": "En järnsköld, svärtad av branden som rasade genom värdshuset, sitter fast på den sönderfallande skorstenen, en av få kvarvarande delar av det som en gång var Shady Rest Inn.\n\nSkölden går att lossa från skorstenens tegel.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, jag är ingen expert på att tillverka vapen och rustningar. Att använda dem, ja, men inte att tillverka dem.$b$bSkölden ser helt vanlig ut, bortsett från skadorna från elden som slukade värdshuset.",
+        "f91c5498526a0c77b58b": "Har du hittat några spår vid platsen där Shady Rest Inn låg?"
+      },
       "summary": "Ta med den svartnade järnskölden till kapten Garran Vimes i Theramore.",
       "title": "Den svarta skölden",
       "translationMetadata": {
@@ -342,6 +562,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +590,10 @@
     },
     "trTR": {
       "description": "Hanı kasıp kavuran yangında kararmış bir demir kalkan, bir zamanlar Shady Rest Inn'i oluşturan yapının ayakta kalan az sayıdaki parçalarından biri olan, dökülen bacaya sabitlenmiş.\n\nKalkan bacanın tuğlalarından çıkarılabilir.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Hm, silah ve zırh yapımında uzman değilim. Kullanımlarında evet, ama yapımlarında değil.$b$bBu kalkan, hanı saran yangının verdiği hasar dışında gayet sıradan görünüyor.",
+        "f91c5498526a0c77b58b": "Shady Rest Hanı'nın bulunduğu yerde bir kanıt buldun mu?"
+      },
       "summary": "Kararmış Demir Kalkan'ı Theramore'daki Kaptan Garran Vimes'a getir.",
       "title": "Kara Kalkan",
       "translationMetadata": {
@@ -369,6 +603,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +631,10 @@
     },
     "ukUA": {
       "description": "Залізний щит, почорнілий від пожежі, що вирувала в таверні, прикріплений до зруйнованого каміна, однієї з небагатьох вцілілих частин споруди, яка колись була таверною «Відпочинок у затінку».\n\nЩит можна зняти.",
+      "dialogue": {
+        "e030c297edc6a909689e": "Хм, я не знавець виготовлення зброї та обладунків. Користуватися ними вмію, а от виготовляти — ні.$b$bЦей щит видається цілком звичайним, якщо не брати до уваги пошкодження від вогню, що охопив заїзд.",
+        "f91c5498526a0c77b58b": "Ти знайшов якісь докази на місці заїзду Shady Rest?"
+      },
       "summary": "Принесіть почорнілий залізний щит капітану Ґаррану Ваймсу в Терамор.",
       "title": "Чорний щит",
       "translationMetadata": {
@@ -397,6 +645,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +675,10 @@
     },
     "zhCN": {
       "description": "有一面被烧毁旅店的大火熏黑了的铁盾牌和倒塌的烟囱连在一起，这根烟囱是树荫旅店烧毁之后留下的几段残砖断瓦中的一部分。\n\n这面铁盾牌可以从烟囱的砖上拿下来。",
+      "dialogue": {
+        "e030c297edc6a909689e": "嗯，我可不是制造武器和护甲的专家。我知道它们的用途，可是不懂如何制造。\n\n这个盾牌和一般盾牌没什么区别，只是旅馆的大火在上面留下了些痕迹。",
+        "f91c5498526a0c77b58b": "你在树荫旅店的废墟里找到什么证据了吗?"
+      },
       "summary": "把被熏黑的铁盾牌交给塞拉摩的盖兰·维米斯队长。",
       "title": "黑色盾牌",
       "translationMetadata": {
@@ -425,6 +687,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +715,10 @@
     },
     "zhTW": {
       "description": "有一面被大火燻黑的鐵盾牌和倒塌的煙囪連在一起，這根煙囪是樹蔭旅店燒毀之後留下的殘磚斷瓦中的一部份。\n\n這面鐵盾可以從煙囪的磚上拿下來。",
+      "dialogue": {
+        "e030c297edc6a909689e": "嗯，我可不是製造武器和護甲的專家。我知道它們的用途，可是不懂如何製造。\n\n這個盾牌和一般盾牌沒什麼區別，只是旅館的大火在上面留下了些痕跡。",
+        "f91c5498526a0c77b58b": "你在樹蔭旅店的廢墟里找到什麼證據了嗎?"
+      },
       "summary": "把被燻黑的鐵盾交給塞拉摩的蓋蘭·維米斯隊長。",
       "title": "黑色盾牌",
       "translationMetadata": {
@@ -449,6 +727,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.e030c297edc6a909689e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f91c5498526a0c77b58b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

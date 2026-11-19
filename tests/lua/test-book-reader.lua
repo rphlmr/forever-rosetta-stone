@@ -146,7 +146,7 @@ npcGUID = nil
 for number, pageID in ipairs({ 2097, 2098, 2099, 2100 }) do
     pageNumber = number
     Addon:UpdateBookReader()
-    check(reader.frame:IsShown() and reader.body.lastSections[2].text == DB:GetBookPage(pageID, "enUS"),
+    check(reader.frame:IsShown() and reader.body.lastSections[1].text == DB:GetBookPage(pageID, "enUS"),
         "turning the page without an interaction GUID keeps the matching translation open")
 end
 npcGUID = objectGUID

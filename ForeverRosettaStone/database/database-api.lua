@@ -211,6 +211,12 @@ function api:GetQuest(questID, locale)
     return GetQuest(questID, locale)
 end
 
+function api:GetQuestDialogue(questID, npcID, locale)
+    local kind = questID and "questdialogue" or "npcdialogue"
+    local page, position = GetRecord(kind, questID or npcID, locale)
+    return page and page[2][position] or nil
+end
+
 function api:IsQuestAITranslated(questID, locale)
     return self:IsAITranslated("quests", questID, locale)
 end

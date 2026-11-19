@@ -12,6 +12,7 @@ PAGE_BYTE_LIMIT = 64 * 1024
 
 def pack_records(kind, entries):
     fields = (QUEST_FIELDS if kind == 'quests' else ('description',) if kind == 'bookpages'
+              else ('dialogue',) if kind in ('questdialogue', 'npcdialogue')
               else ('name', 'details') if kind in ('items', 'spells', 'npcs', 'books', 'races') else ('name',))
     flags = bytearray((len(entries) + 7) // 8)
 

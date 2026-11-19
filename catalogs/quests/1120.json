@@ -1,8 +1,36 @@
 {
   "areaId": 400,
+  "dialogueContexts": {
+    "1b1f9db9a79c207d5e43": {
+      "lineId": "q:1120:complete",
+      "npcId": 4495,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "56cbbe9cec3baa67e648": {
+      "lineId": "q:1120:accept",
+      "npcId": 4452,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "bd1c48c617ea30b0da92": {
+      "lineId": "q:1120:progress",
+      "npcId": 4495,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Musíme Bláznův stout vyzkoušet na jedné z boxových posádek. Jestli ho chceš zkusit na gnómech, tak tady, vezmi stout a dej ho gnómskému šéfovi boxů.\n\nA moc to neodkládej. Tenhle stout se nakonec zkazí.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Černé pivo? To je od tebe milé! Děkuji!$B$BPřed nadcházejícím závodem bychom neměli pít, ale... možná by si moji hoši trochu dát mohli. Kromě toho nemůže být tak silné, ne?",
+        "56cbbe9cec3baa67e648": "Musíme Bláznovo černé pivo vyzkoušet na některém servisním týmu. Chceš-li ho zkusit na gnómech, tady ho máš. Dej ho jejich šéfovi.$B$BA nečekej příliš dlouho. Nakonec se zkazí.",
+        "bd1c48c617ea30b0da92": "Ahoj! Máš pro mě něco?"
+      },
       "summary": "Dones Fool's Stout šéfovi gnómského depa (Gnome Pit Boss).",
       "title": "Opij gnómy",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +75,11 @@
     },
     "daDK": {
       "description": "Vi skal prøve Fool's Stout på et af pitmandskaberne. Hvis du vil prøve den på gnomerne, så værsgo, tag stouten og giv den til gnomernes pitchef.\n\nOg vent ikke for længe. Denne stout bliver dårlig på et tidspunkt.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Stout? Hvor betænksomt! Tak!$B$BVi burde ikke drikke, når løbet nærmer sig, men... måske kunne mine drenge få en lille smule. Desuden kan den vel ikke være så stærk?",
+        "56cbbe9cec3baa67e648": "Vi må prøve Fool’s Stout på et af pitbesætningerne. Hvis du vil prøve den på gnomerne, så tag øllet her og giv det til deres pitchef.$B$BVent ikke for længe. Øllet bliver dårligt på et tidspunkt.",
+        "bd1c48c617ea30b0da92": "Hej! Har du noget til mig?"
+      },
       "summary": "Bring Fool's Stout til gnomernes pitboss.",
       "title": "Gør gnomerne fulde",
       "translationMetadata": {
@@ -41,6 +89,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "23524a72168f65ea429c7aa2ff90d113153c79a3af52d52e39065c67c8f87b17"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +122,11 @@
     },
     "deDE": {
       "description": "Wir müssen Fools Starkbier an einem aus der Boxencrew ausprobieren. Wenn Ihr es an den Gnomen erproben wollt, hier - nehmt das Starkbier und gebt es dem Gnomen-Boxenboss.\n\nUnd wartet nicht zu lange. Das Starkbier wird mit der Zeit schlecht.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Starkbier? Wie aufmerksam! Danke!\n \n Wir sollten nicht trinken, da das Rennen bevorsteht, aber. . . vielleicht können meine Jungs einen Schluck vertragen. Außerdem kann es ja so stark nicht sein, oder?",
+        "56cbbe9cec3baa67e648": "Wir müssen Fools Starkbier an einem aus der Boxencrew ausprobieren. Wenn Ihr es an den Gnomen erproben wollt, hier - nehmt das Starkbier und gebt es dem Gnomen-Boxenboss.\n\nUnd wartet nicht zu lange. Das Starkbier wird mit der Zeit schlecht.",
+        "bd1c48c617ea30b0da92": "Hallo! Habt Ihr denn etwas für mich?"
+      },
       "summary": "Bringt Fools Starkbier zum Gnomen-Boxenboss.",
       "title": "Die Gnome betrunken machen",
       "translationMetadata": {
@@ -67,6 +135,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +169,11 @@
     },
     "enUS": {
       "description": "We need to try the Fool's Stout on one of the pit crews.  If you want to try it on the gnomes, then here -- take the stout and give it to the gnome pit boss.\n\nAnd don't wait too long.  This stout will go bad eventually.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Stout?  How considerate!  Thank you!$B$BWe shouldn't be drinking with the race coming up, but... maybe my boys could do with just a little.  Besides, it can't be that strong, can it?",
+        "56cbbe9cec3baa67e648": "We need to try the Fool's Stout on one of the pit crews.  If you want to try it on the gnomes, then here -- take the stout and give it to the gnome pit boss.$B$BAnd don't wait too long.  This stout will go bad eventually.",
+        "bd1c48c617ea30b0da92": "Hi!  You have something for me?"
+      },
       "summary": "Bring the Fool's Stout to the Gnome Pit Boss.",
       "title": "Get the Gnomes Drunk",
       "translationMetadata": {
@@ -91,6 +182,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +217,11 @@
     },
     "esES": {
       "description": "Tenemos que probar la cerveza de tontos con uno de los equipos técnicos. Si quieres probarla con los gnomos, coge la cerveza y dásela al jefe técnico de los gnomos.\n\nY no tardes mucho pues la cerveza podría estropearse.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "¿Cerveza? ¡Qué detalle por tu parte! ¡Gracias!\n\nNo deberíamos beber antes de la carrera pero un poquito de nada no les hará daño a los chicos. Además, no será tan fuerte, ¿verdad?",
+        "56cbbe9cec3baa67e648": "Tenemos que probar la cerveza de tontos con uno de los equipos técnicos. Si quieres probarla con los gnomos, coge la cerveza y dásela al jefe técnico de los gnomos.\n\nY no tardes mucho pues la cerveza podría estropearse.",
+        "bd1c48c617ea30b0da92": "¡Hola! ¿Tienes algo para mí?"
+      },
       "summary": "Llévale la cerveza de tontos al jefe técnico de los gnomos.",
       "title": "Emborrachar a los gnomos",
       "translationMetadata": {
@@ -116,6 +230,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +264,11 @@
     },
     "esMX": {
       "description": "Tenemos que probar la cerveza de tontos con uno de los equipos técnicos. Si quieres probarla con los gnomos, coge la cerveza y dásela al encargado de foso gnomo.\n\nY no tardes mucho pues la cerveza podría estropearse.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "¿Cerveza? ¡Qué detalle por tu parte! ¡Gracias!\n\nNo deberíamos beber antes de la carrera pero un poquito de nada no les hará daño a los chicos. Además, no será tan fuerte, ¿verdad?",
+        "56cbbe9cec3baa67e648": "Tenemos que probar la cerveza de tontos con uno de los equipos técnicos. Si quieres probarla con los gnomos, coge la cerveza y dásela al encargado de foso gnomo.\n\nY no tardes mucho pues la cerveza podría estropearse.",
+        "bd1c48c617ea30b0da92": "¡Hola! ¿Tienes algo para mí?"
+      },
       "summary": "Lleva la cerveza de tontos al encargado de foso gnomo.",
       "title": "Emborrachar a los gnomos",
       "translationMetadata": {
@@ -140,6 +277,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +311,11 @@
     },
     "frFR": {
       "description": "Nous devons essayer cette bière du Sot sur l'une des équipes de mécanos. Si vous voulez l'essayer sur l'équipe des gnomes, alors tenez, prenez la bière et donnez-la au chef des mécaniciens gnomes.\n\nEt n'attendez pas trop. Cette bière va se gâter après un temps.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "De la bière ? Comme c'est aimable ! Merci !\n \n Nous ne devrions pas boire avec la course qui se prépare, mais… mes gars peuvent en boire juste un peu. En plus, elle ne doit pas être très forte, n'est-ce pas ?",
+        "56cbbe9cec3baa67e648": "Nous devons essayer cette bière du Sot sur l'une des équipes de mécanos. Si vous voulez l'essayer sur l'équipe des gnomes, alors tenez, prenez la bière et donnez-la au chef des mécaniciens gnomes.\n\nEt n'attendez pas trop. Cette bière va se gâter après un temps.",
+        "bd1c48c617ea30b0da92": "Salut ! Vous avez quelque chose pour moi ?"
+      },
       "summary": "Apporter la bière du Sot au Chef-mécanicien gnome.",
       "title": "Saoulez les gnomes",
       "translationMetadata": {
@@ -164,6 +324,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +358,11 @@
     },
     "hrHR": {
       "description": "Moramo iskušati budalino tamno pivo na jednoj od ekipa u boksovima. Ako ga želiš iskušati na gnomima, evo, uzmi pivo i daj ga vođi gnomskog boksa.\n\nI nemoj predugo čekati. Ovo će se pivo s vremenom pokvariti.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Tamno pivo? Kako obzirno! Hvala!$B$BNe bismo trebali piti prije utrke, ali... možda bi mojim momcima malo dobro došlo. Osim toga, ne može biti toliko jako, zar ne?",
+        "56cbbe9cec3baa67e648": "Moramo isprobati Fool’s Stout na jednoj ekipi u boksu. Ako ga želiš isprobati na gnomovima, evo, uzmi pivo i daj ga njihovu šefu.$B$BI nemoj predugo čekati. Pivo će se s vremenom pokvariti.",
+        "bd1c48c617ea30b0da92": "Bok! Imaš li nešto za mene?"
+      },
       "summary": "Donesi budalino tamno pivo vođi gnomskog boksa.",
       "title": "Napij gnome",
       "translationMetadata": {
@@ -189,6 +372,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "23524a72168f65ea429c7aa2ff90d113153c79a3af52d52e39065c67c8f87b17"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +405,11 @@
     },
     "itIT": {
       "description": "Dobbiamo provare la Birra dello Sciocco su una delle squadre ai box. Se vuoi provarla sugli gnomi, ecco: prendi la birra e dalla al caposquadra gnomo.\n\nE non aspettare troppo. Prima o poi questa birra andrà a male.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Birra scura? Che pensiero gentile! Grazie!\n\nCon la corsa in arrivo non dovremmo bere, ma... forse ai miei ragazzi un goccio non farebbe male. E poi, non può essere così forte, no?",
+        "56cbbe9cec3baa67e648": "Dobbiamo provare la Birra Scura del Folle su una delle squadre ai box. Se vuoi provarla sugli gnomi, allora tieni — prendi la birra e dalla al caposquadra degli gnomi.\n\nE non aspettare troppo. Prima o poi questa birra andrà a male.",
+        "bd1c48c617ea30b0da92": "Ciao! Hai qualcosa per me?"
+      },
       "summary": "Porta la birra scura dello sciocco al capo box degli gnomi.",
       "title": "Fai ubriacare gli gnomi",
       "translationMetadata": {
@@ -216,6 +419,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "23524a72168f65ea429c7aa2ff90d113153c79a3af52d52e39065c67c8f87b17"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +455,11 @@
     },
     "koKR": {
       "description": "이 멍텅구리 스타우트 맥주를 정비공 하나에게 먹여봐야겠군. 노움에게 먹여볼 생각이라면... 자, 받으시오. 이 스타우트 맥주를 노움 정비주임에게 갖다주시오.\n\n너무 오래 지체하지 않는 게 좋을 거요. 스타우트 맥주의 맛이 변할지도 모르니까 말이오.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "스타우트 맥주? 뭘 이런 것까지... 아무튼 고마워요!\n\n슬슬 경주할 때도 되어가고 해서 술은 자제하고 있는 중이지만... 정비공이 운전을 하는 것도 아닌데 조금쯤은 괜찮겠죠. 그리고 맥주가 그렇게 독한 술도 아니잖아요?",
+        "56cbbe9cec3baa67e648": "이 멍텅구리 스타우트 맥주를 정비공 하나에게 먹여봐야겠군. 노움에게 먹여볼 생각이라면... 자, 받으시오. 이 스타우트 맥주를 노움 정비주임에게 갖다주시오.\n\n너무 오래 지체하지 않는 게 좋을 거요. 스타우트 맥주의 맛이 변할지도 모르니까 말이오.",
+        "bd1c48c617ea30b0da92": "안녕하세요! 제게 줄 거라도 있나요?"
+      },
       "summary": "노움 정비주임에게 멍텅구리 스타우트 맥주를 가져가야 합니다.",
       "title": "노움 취하게 하기",
       "translationMetadata": {
@@ -242,6 +468,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +502,11 @@
     },
     "plPL": {
       "description": "Musimy wypróbować Stout Głupca na jednej z ekip serwisowych. Jeśli chcesz sprawdzić go na gnomach, proszę, weź stout i daj szefowi gnomiej ekipy.\n\nNie czekaj zbyt długo. Ten stout w końcu się zepsuje.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Stout? Jak miło z twojej strony! Dziękuję!$B$BNie powinniśmy pić przed wyścigiem, ale... może chłopcom przyda się odrobina. Poza tym nie może być aż tak mocny, prawda?",
+        "56cbbe9cec3baa67e648": "Musimy wypróbować Fool’s Stout na jednej z ekip serwisowych. Jeśli chcesz wypróbować go na gnomach, weź piwo i daj je szefowi ich ekipy.$B$BTylko nie zwlekaj zbyt długo. W końcu się zepsuje.",
+        "bd1c48c617ea30b0da92": "Cześć! Masz coś dla mnie?"
+      },
       "summary": "Przynieś Stout Głupca szefowi gnomiej ekipy serwisowej.",
       "title": "Upić gnomy",
       "translationMetadata": {
@@ -267,6 +516,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "23524a72168f65ea429c7aa2ff90d113153c79a3af52d52e39065c67c8f87b17"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +549,11 @@
     },
     "ptBR": {
       "description": "Precisamos testar a Cerveja Escura do Tonto com uma das equipes. Se quiser testar com os gnomos, pode levar: é só dar a cerveja para o gnomo chefe dos boxes.\n\nMas não fique enrolando. Uma hora a cerveja estraga.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Cerveja? Quanta consideração! Obrigado!\n\nNão devíamos beber tão perto assim da corrida, mas... um pouquinho só não fará mal aos rapazes. Além do mais, não deve ser tão forte assim, não é mesmo?",
+        "56cbbe9cec3baa67e648": "Precisamos testar a Cerveja Escura do Tonto com uma das equipes. Se quiser testar com os gnomos, pode levar: é só dar a cerveja para o gnomo chefe dos boxes.\n\nMas não fique enrolando. Uma hora a cerveja estraga.",
+        "bd1c48c617ea30b0da92": "Oi! Trouxe alguma coisa pra mim?"
+      },
       "summary": "Leve a Cerveja Escura do Tonto para o Chefe dos Boxes Gnomo.",
       "title": "Deixe os gnomos bêbados",
       "translationMetadata": {
@@ -293,6 +562,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +596,11 @@
     },
     "ruRU": {
       "description": "Надо напоить \"Дурацким Крепким\" одну из команд на пит-стопах.Хочешь посмотреть, как оно подействует на гномов? Тогда возьми эль и передай его начальнику гномского гаража.\n\nИ поторопись – эта бурда быстро выдыхается.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Крепкий? Спасибо!\n\nВообще-то мы не должны пить во время гонок, но... разве что немножко. Тем более, не может же быть оно очень крепким, не так ли?",
+        "56cbbe9cec3baa67e648": "Надо напоить \"Дурацким Крепким\" одну из команд на пит-стопах.Хочешь посмотреть, как оно подействует на гномов? Тогда возьми эль и передай его начальнику гномского гаража.\n\nИ поторопись – эта бурда быстро выдыхается.",
+        "bd1c48c617ea30b0da92": "Привет! У тебя есть что-то для меня?"
+      },
       "summary": "Отнесите \"Дурацкое Крепкое\" начальнику гномского гаража.",
       "title": "Напоить гномов",
       "translationMetadata": {
@@ -317,6 +609,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +643,11 @@
     },
     "svSE": {
       "description": "Vi måste prova dårens stout på ett av depålagen. Vill du prova på gnomerna så ta stouten här och ge den till gnomernas depåchef.\n\nVänta inte för länge. Stouten blir dålig så småningom.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Stout? Så omtänksamt! Tack!$B$BVi borde inte dricka när loppet närmar sig, men... kanske skulle mina pojkar må bra av lite grann. Dessutom kan den väl inte vara så stark?",
+        "56cbbe9cec3baa67e648": "Vi måste prova Fool’s Stout på ett av depåteamen. Vill du prova den på gnomerna, ta då ölen och ge den till deras depåchef.$B$BVänta inte för länge. Ölen blir dålig så småningom.",
+        "bd1c48c617ea30b0da92": "Hej! Har du något åt mig?"
+      },
       "summary": "Ta med Fool's Stout till gnomernas depåchef.",
       "title": "Sup gnomerna fulla",
       "translationMetadata": {
@@ -342,6 +657,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "23524a72168f65ea429c7aa2ff90d113153c79a3af52d52e39065c67c8f87b17"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +690,11 @@
     },
     "trTR": {
       "description": "Aptalın Koyu Birası'nı pit ekiplerinden birinde denemeliyiz. Gnomlarda denemek istiyorsan al, birayı gnom pit şefine ver.\n\nÇok da bekleme. Bu bira eninde sonunda bozulacak.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Siyah bira mı? Ne kadar düşüncelisin! Teşekkürler!$B$BYaklaşan yarış yüzünden içmemeliyiz ama... belki çocuklarıma biraz iyi gelir. Hem o kadar sert olamaz, değil mi?",
+        "56cbbe9cec3baa67e648": "Fool’s Stout’u pit ekiplerinden birinde denemeliyiz. Cücelerde denemek istiyorsan al, birayı pit şeflerine ver.$B$BFazla bekleme. Bu bira sonunda bozulur.",
+        "bd1c48c617ea30b0da92": "Merhaba! Bana bir şeyin mi var?"
+      },
       "summary": "Budala Birası'nı Gnom Çukur Şefi'ne getir.",
       "title": "Gnomları Sarhoş Et",
       "translationMetadata": {
@@ -369,6 +704,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "23524a72168f65ea429c7aa2ff90d113153c79a3af52d52e39065c67c8f87b17"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +737,11 @@
     },
     "ukUA": {
       "description": "Нам потрібно спробувати напоїти одного члена команди на піт-стопі. Якщо хочеш випробувати його на гномах, ось, візьми пиво та подай його гному-начальнику піт-стопу.\n\nНе затримуйся. Зрештою, цей шмурдяк швидко вивітрюється.",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "Стаут? Як люб’язно! Дякую!$B$BНам не слід пити перед перегонами, але... можливо, хлопцям можна трішки. До того ж він не може бути таким міцним, правда?",
+        "56cbbe9cec3baa67e648": "Нам треба випробувати Fool’s Stout на одній із команд механіків. Якщо хочеш перевірити його на гномах, візьми пиво та віддай їхньому головному механіку.$B$BІ не зволікай. Рано чи пізно пиво зіпсується.",
+        "bd1c48c617ea30b0da92": "Привіт! Маєш щось для мене?"
+      },
       "summary": "Принесіть \"Йолопиво\" гному-начальнику піт-стопу.",
       "title": "Напоїти гномів",
       "translationMetadata": {
@@ -397,6 +752,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "23524a72168f65ea429c7aa2ff90d113153c79a3af52d52e39065c67c8f87b17"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +787,11 @@
     },
     "zhCN": {
       "description": "我们要用蠢人酒在那些车队的工作人员身上做试验。如果你想在侏儒身上试试的话，那么就拿去吧——把酒交给侏儒车队的老板。\n\n不要拖得太久，这种酒会慢慢变质的。",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "酒?你真是考虑周全!谢谢你!\n\n比赛就要开始了，所以我们最好不要喝酒……不过……也许可以稍微来那麽一点儿。嗯，这酒不太烈吧?\n",
+        "56cbbe9cec3baa67e648": "我们要用蠢人酒在那些车队的工作人员身上做试验。如果你想在侏儒身上试试的话，那么就拿去吧——把酒交给侏儒车队的老板。\n\n不要拖得太久，这种酒会慢慢变质的。",
+        "bd1c48c617ea30b0da92": "嗨!你有东西要给我?"
+      },
       "summary": "把蠢人酒带给侏儒车队老板。",
       "title": "灌醉侏儒",
       "translationMetadata": {
@@ -425,6 +800,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +834,11 @@
     },
     "zhTW": {
       "description": "我們要用蠢人酒在那些車隊的工作人員身上做試驗。如果你想在地精身上試試的話，那麼就拿去吧——把酒交給地精車隊的老闆。\n\n不要拖得太久，這種酒會慢慢變質的。",
+      "dialogue": {
+        "1b1f9db9a79c207d5e43": "酒?你真是考慮周全!謝謝你!\n\n比賽就要開始了，所以我們最好不要喝酒……不過……也許可以稍微來那麼一點兒。嗯，這酒不太烈吧?",
+        "56cbbe9cec3baa67e648": "我們要用蠢人酒在那些車隊的工作人員身上做試驗。如果你想在侏儒身上試試的話，那麼就拿去吧——把酒交給侏儒車隊的老闆。\n\n不要拖得太久，這種酒會慢慢變質的。",
+        "bd1c48c617ea30b0da92": "嗨!你有東西要給我?"
+      },
       "summary": "把蠢人酒帶給地精車隊老闆。",
       "title": "灌醉地精",
       "translationMetadata": {
@@ -449,6 +847,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1b1f9db9a79c207d5e43": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.56cbbe9cec3baa67e648": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.bd1c48c617ea30b0da92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

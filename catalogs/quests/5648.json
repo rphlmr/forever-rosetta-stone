@@ -1,7 +1,45 @@
 {
+  "dialogueContexts": {
+    "0ba41263d8fc65c8e060": {
+      "lineId": "q:5648:complete:m",
+      "npcId": 3706,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "e1cda873adbfdccfc968": {
+      "lineId": "q:5648:accept",
+      "npcId": 3706,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "e8ffeaf78af05caf856e": {
+      "lineId": "q:5648:progress",
+      "npcId": 3706,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f2f2384dd198c1b7fd6d": {
+      "lineId": "q:5648:complete:f",
+      "npcId": 3706,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Máš potřebnou průpravu na svou první zkoušku, {name}. Na jih od Razor Hill, kousek za městem, je zraněná jedna z našich gardistek, bojovala se zbytky Proudmoorových vojáků. Není na tom dobře a hodně by jí pomohlo, kdyby jí někdo z našeho druhu pomohl. Najdi ji, jmenuje se Kor'ja, vyleč jí rány a dej jí požehnání našich předků.\n\nKdyž to uděláš, myslím, že to bude dostatečný důkaz, že máš potřebnou průpravu k pokračování v našich cestách.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Dobře, Kor'ja žije a vydává se bránit naše město před zlými lidmi. Často vzpomínám na dny bitev, kdy se síla ukazovala v boji a moudří často porazili ty, kteří spoléhali jen na sílu.$B$BProkázal jsi mi službu, $N. Vezmi si toto roucho. Možná pomůže, možná tě nezajímá, ale zasloužil sis ho a hrdě tě nazývám $gbratrem:sestrou;.",
+        "e1cda873adbfdccfc968": "Jsi připraven na první zkoušku, $N. Jižně od Razor Hillu, hned za městem, je zraněna jedna z našich bojovnic po střetu se starými jednotkami Proudmooreové. Není na tom dobře a pomoc někoho z nás by jí velmi prospěla. Najdi ji, jmenuje se Kor'ja, uzdrav její rány a dej jí požehnání našich předků.$B$BUdělej to a bude to dostatečný důkaz, že jsi připraven pokračovat v našich cestách.",
+        "e8ffeaf78af05caf856e": "Většina považuje za samozřejmé, že léčivá magie je mocná, ale málokdo chápe jak moc. Můžeš udržet naživu mnohé, kteří by jinak potkali předky. Tato magie společně se schopností Fortitude tvoří velmi silnou kombinaci. Pamatuj na to. Pomáhá všem: válečníkům, mágům i všem mezi nimi.",
+        "f2f2384dd198c1b7fd6d": "Dobře, Kor'ja žije a vydává se bránit naše město před zlými lidmi. Často vzpomínám na dny bitev, kdy se síla ukazovala v boji a moudří často porazili ty, kteří spoléhali jen na sílu.$B$BProkázal jsi mi službu, $N. Vezmi si toto roucho. Možná pomůže, možná tě nezajímá, ale zasloužila sis ho a hrdě tě nazývám $gbratrem:sestrou;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -18,6 +56,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2a0d861e88f41e833c38a001be9be6947b4282b78cbbfe4d4108f94d7c3ec84d"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +101,12 @@
     },
     "daDK": {
       "description": "Du er klar til din første prøve, {name}. Syd for Razor Hill, lige uden for byen, er en af vores krigere blevet såret i kampen mod nogle af Proudmoores gamle tropper. Hun har det ikke for godt og ville have stor gavn af, at en af vores slags kunne hjælpe hende. Find hende, hun hedder Kor'ja, helbred hendes sår og giv hende vores forfædres velsignelse.\n\nGør du det, tror jeg, at det er tilstrækkeligt bevis på, at du er klar til at fortsætte på vores vej.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Godt, så lever Kor'ja og drager ud for at forsvare vores by mod de onde mennesker. Jeg tænker ofte tilbage på kampens dage, hvor styrke viste sig i strid, og de vise ofte besejrede dem, der kun stolede på deres styrke.$B$BDu har gjort mig en tjeneste, $N. Tag denne kåbe. Måske hjælper den, måske er du ligeglad, men du har fortjent den, og jeg er stolt af at kalde dig $gbror:søster;.",
+        "e1cda873adbfdccfc968": "Du er klar til din første prøve, $N. Syd for Razor Hill, lige uden for byen, er en af vores krigere såret i kamp mod nogle af Proudmoores gamle tropper. Hun har det ikke godt, og hjælp fra en af vores slags ville gavne hende. Find hende, hun hedder Kor'ja, hel hendes sår og giv hende vores forfædres velsignelse.$B$BGør du det, er det bevis nok på, at du er klar til at gå videre på vores vej.",
+        "e8ffeaf78af05caf856e": "De fleste mener, det er logisk, at helbredende magi er mægtig, men få forstår hvor mægtig. Du kan holde mange i live, som ellers ville møde deres forfædre. Helbredelse sammen med Fortitude er en meget stærk kombination. Husk det. Det hjælper alle slags folk: krigere, magikere og alle derimellem.",
+        "f2f2384dd198c1b7fd6d": "Godt, så lever Kor'ja og drager ud for at forsvare vores by mod de onde mennesker. Jeg tænker ofte tilbage på kampens dage, hvor styrke viste sig i strid, og de vise ofte besejrede dem, der kun stolede på deres styrke.$B$BDu har gjort mig en tjeneste, $N. Tag denne kåbe. Måske hjælper den, måske er du ligeglad, men du har fortjent den, og jeg er stolt af at kalde dig $gbror:søster;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +123,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2a0d861e88f41e833c38a001be9be6947b4282b78cbbfe4d4108f94d7c3ec84d"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +166,12 @@
     },
     "deDE": {
       "description": "Ihr seid bereit für Eure erste Prüfung, {name}. Südlich von Klingenhügel, direkt vor der Stadt, wurde eine Grunzerin verletzt, als sie einige von Proudmores alten Truppen bekämpfte. Es geht ihr nicht allzu gut und es wäre wirklich gut, wenn einer unserer Art ihr helfen könnte. Sucht sie - ihr Name ist Kor'ja -, heilt ihre Wunden und gebt ihr den Segen unserer Vorfahren.\n\nWenn Ihr das tut, sehe ich das als ausreichenden Beweis dafür an, dass Ihr bereit seid, unseren Pfad weiter zu beschreiten.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Gut, Kor'ja lebt also und zieht los, um unsere Stadt gegen diese bösartigen Menschen zu verteidigen. Ich wünsche mir oft, mich an die Schlachten vergangener Tage zurückzuerinnern; als Macht noch im Kampf gezeigt wurde und es oftmals der Weise war, der diejenigen vernichtete, die sich nur auf ihre Stärke verließen. \n \n Ihr habt Eure Sache meiner Meinung nach gut gemacht, $N. Nehmt jetzt diese Robe. Ob sie hilft oder ob sie Euch egal ist, Ihr habt sie Euch jedenfalls verdient, und ich bin stolz, Euch Bruder zu nennen. ",
+        "e1cda873adbfdccfc968": "Ihr seid bereit für Eure erste Prüfung, $N. Südlich von Klingenhügel, direkt vor der Stadt, wurde eine Grunzerin verletzt, als sie einige von Proudmores alten Truppen bekämpfte. Es geht ihr nicht allzu gut und es wäre wirklich gut, wenn einer unserer Art ihr helfen könnte. Sucht sie - ihr Name ist Kor'ja -, heilt ihre Wunden und gebt ihr den Segen unserer Vorfahren.\n\nWenn Ihr das tut, sehe ich das als ausreichenden Beweis dafür an, dass Ihr bereit seid, unseren Pfad weiter zu beschreiten.",
+        "e8ffeaf78af05caf856e": "Die meisten halten es für logisch, dass Heilmagie mächtig ist, aber nicht viele verstehen, wie mächtig. Ihr könnt viele am Leben erhalten, wenn sie stattdessen ihre eigenen Vorfahren treffen sollten. Diese Heilungsmagie, gemischt mit der Fähigkeit der Tapferkeit, ist eine sehr mächtige Kombination von Zaubern. Vergiss das nicht. Sie ist für alle Arten von Menschen hilfreich: Krieger, Magier und alles dazwischen.",
+        "f2f2384dd198c1b7fd6d": "Gut, Kor'ja lebt also und zieht los, um unsere Stadt gegen diese bösartigen Menschen zu verteidigen. Ich wünsche mir oft, mich an die Schlachten vergangener Tage zurückzuerinnern; als Macht noch im Kampf gezeigt wurde und es oftmals der Weise war, der diejenigen vernichtete, die sich nur auf ihre Stärke verließen. \n \n Ihr habt Eure Sache meiner Meinung nach gut gemacht, $N. Nehmt jetzt diese Robe. Ob sie hilft oder ob sie Euch egal ist, Ihr habt sie Euch jedenfalls verdient, und ich bin stolz, Euch Bruder zu nennen. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +187,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +233,12 @@
     },
     "enUS": {
       "description": "You be ready for your first test, {name}. South of Razor Hill, just outta town, one of our grunts be hurt fightin' off some o' Proudmoore's old troops. She not doin' too well, an' she benefit much if one of our kind could help her. Find her--her name be Kor'ja--heal her wounds, an' give her the blessin' of our ancestors.\n\nYou do this, an' me thinks that be sufficient proof that you ready to move on in our ways.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Good, then Kor'ja lives and goes off to defend our town from those malicious humans. I often wish to remember days of battle; where power was shown in combat and it was the wise who often destroyed those who relied on just their strength.$B$BYou done good by me, $N. You take this robe now. Maybe it help, maybe you not care, but you earned it and I'm proud to call you $gbrother:sister;.",
+        "e1cda873adbfdccfc968": "You be ready for your first test, $N. South of Razor Hill, just outta town, one of our grunts be hurt fightin' off some o' Proudmoore's old troops. She not doin' too well, an' she benefit much if one of our kind could help her. Find her--her name be Kor'ja--heal her wounds, an' give her the blessin' of our ancestors.$B$BYou do this, an' me thinks that be sufficient proof that you ready to move on in our ways.",
+        "e8ffeaf78af05caf856e": "Most think it logical that healin' magics be powerful, but not many understand how powerful. You can keep many alive when instead they should be meetin' their own ancestors. This healin' magic mixed with the ability of Fortitude are a very powerful combination of spells. You remember this. It helpful to all manner of people: warriors, mages and everything in between.",
+        "f2f2384dd198c1b7fd6d": "Good, then Kor'ja lives and goes off to defend our town from those malicious humans. I often wish to remember days of battle; where power was shown in combat and it was the wise who often destroyed those who relied on just their strength.$B$BYou done good by me, $N. You take this robe now. Maybe it help, maybe you not care, but you earned it and I'm proud to call you $gbrother:sister;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +254,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -157,6 +301,12 @@
     },
     "esES": {
       "description": "Ya estás preparado para tu primera prueba, {name}. Uno de nuestros brutos fue herido en combate por unas tropas de Valiente, al sur de Cerrotajo, nada más salir de la ciudad. No está muy bien y no le vendría mal que uno de nosotros acudiera en su ayuda. Encuéntraloa. Se llama Kor'ja. Cura sus heridas y dale la bendición de nuestros antepasados.\n\nSi haces esto, consideraré que has demostrado que estás listo para moverte en nuestra cultura.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Bien, entonces Kor'ja vive y se va a defender nuestra ciudad de esos humanos maliciosos.  A menudo deseo recordar días de batalla;  donde el poder se mostraba en el combate y eran los sabios quienes a menudo destruían a aquellos que confiaban solo en su fuerza.\n\n Me hiciste bien, $N.  Toma esta túnica ahora.  Tal vez ayude, tal vez no te importe, pero te lo ganaste y estoy orgulloso de llamarte hermano.",
+        "e1cda873adbfdccfc968": "Ya estás preparado para tu primera prueba, $N. Uno de nuestros brutos fue herido en combate por unas tropas de Valiente, al sur de Cerrotajo, nada más salir de la ciudad. No está muy bien y no le vendría mal que uno de nosotros acudiera en su ayuda. Encuéntraloa. Se llama Kor'ja. Cura sus heridas y dale la bendición de nuestros antepasados.\n\nSi haces esto, consideraré que has demostrado que estás listo para moverte en nuestra cultura.",
+        "e8ffeaf78af05caf856e": "La mayoría piensa que es lógico que la magia curativa sea poderosa, pero no muchos entienden cuán poderosa es.  Puedes mantener a muchos con vida cuando, en cambio, deberían encontrarse con sus propios antepasados.  Esta magia curativa mezclada con la habilidad de Fortaleza son una combinación muy poderosa de hechizos.  Recuerdas esto.  Es útil para todo tipo de personas: guerreros, magos y todo lo demás.",
+        "f2f2384dd198c1b7fd6d": "Bien, entonces Kor'ja vive y se va a defender nuestra ciudad de esos humanos maliciosos.  A menudo deseo recordar días de batalla;  donde el poder se mostraba en el combate y eran los sabios quienes a menudo destruían a aquellos que confiaban solo en su fuerza.\n\n Me hiciste bien, $N.  Toma esta túnica ahora.  Tal vez ayude, tal vez no te importe, pero te lo ganaste y estoy orgulloso de llamarte hermano."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +322,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -194,6 +368,12 @@
     },
     "esMX": {
       "description": "Ya estás preparado para tu primera prueba, {name}. Una de nuestras brutas fue herida en combate por unas tropas de Valiente, al sur de Cerrotajo, nada más salir de la ciudad. No está muy bien y no le vendría mal que uno de nosotros acudiera en su ayuda. Encuéntrala. Se llama Kor'ja. Cura sus heridas y dale la bendición de nuestros antepasados.\n\nSi haces esto, consideraré que has demostrado que estás listo para moverte en nuestra cultura.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Bien, entonces Kor'ja vive y va a defender nuestro pueblo de esos humanos malvados. A menudo recuerdo los días de batalla, cuando el poder se demostraba en combate y los sabios solían derrotar a quienes solo confiaban en su fuerza.$B$BHas hecho bien, $N. Toma esta túnica. Quizá te ayude o quizá no te importe, pero te la ganaste y me enorgullece llamarte $ghermano:hermana;.",
+        "e1cda873adbfdccfc968": "Ya estás preparado para tu primera prueba, $n. Una de nuestras brutas fue herida en combate por unas tropas de Valiente, al sur de Cerrotajo, nada más salir de la ciudad. No está muy bien y no le vendría mal que uno de nosotros acudiera en su ayuda. Encuéntrala. Se llama Kor'ja. Cura sus heridas y dale la bendición de nuestros antepasados.\n\nSi haces esto, consideraré que has demostrado que estás listo para moverte en nuestra cultura.",
+        "e8ffeaf78af05caf856e": "La mayoría piensa que es lógico que la magia curativa sea poderosa, pero no muchos entienden cuán poderosa es. Puedes mantener a muchos con vida cuando deberían encontrarse con sus propios antepasados. Esta magia curativa combinada con la habilidad de Fortaleza es una combinación muy poderosa de hechizos. Recuerda esto. Es útil para todo tipo de personas: guerreros, magos y todo lo demás.",
+        "f2f2384dd198c1b7fd6d": "Bien, entonces Kor'ja vive y va a defender nuestro pueblo de esos humanos malvados. A menudo recuerdo los días de batalla, cuando el poder se demostraba en combate y los sabios solían derrotar a quienes solo confiaban en su fuerza.$B$BHas hecho bien, $N. Toma esta túnica. Quizá te ayude o quizá no te importe, pero te la ganaste y me enorgullece llamarte $ghermano:hermana;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +389,28 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +433,12 @@
     },
     "frFR": {
       "description": "V'là votre premier test, {name}. Au sud de Tranchecolline, juste à l'extérieur de la ville, un d'nos fantassins a été blessé en s'battant contre les troupes de Proudmoore. Elle s'trouve pas trop bien, et faudrait qu'un d'nous aille l'aider. Trouvez-la – son nom c'est Kor'ja – soignez ses blessures et donnez-lui la bénédiction d'nos ancêtres.\n\nQuand vous aurez fait ça, ce s'ra la meilleure preuve que vous pouvez commencer à suivre notre trace.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Bien. Alors Kor'ja est en vie et elle part défendre nos villes de ces maudits humains… J'aime souvent repenser aux vieux jours de bataille ; où le pouvoir est réservé au sage et non au fort. \n \n Vous m'avez aidé, $N. Prenez cette robe. Elle peut vous aider, vous n'en avez peut-être pas besoin, mais vous la méritez, et je suis fier de vous appeler frère. ",
+        "e1cda873adbfdccfc968": "V'là votre premier test, $N. Au sud de Tranchecolline, juste à l'extérieur de la ville, un d'nos fantassins a été blessé en s'battant contre les troupes de Proudmoore. Elle s'trouve pas trop bien, et faudrait qu'un d'nous aille l'aider. Trouvez-la – son nom c'est Kor'ja – soignez ses blessures et donnez-lui la bénédiction d'nos ancêtres.\n\nQuand vous aurez fait ça, ce s'ra la meilleure preuve que vous pouvez commencer à suivre notre trace.",
+        "e8ffeaf78af05caf856e": "La plupart des gens trouvent logique que les magies de guérison soient puissantes, mais peu comprennent à quel point elles le sont. Vous pouvez maintenir de nombreuses personnes en vie alors qu'elles devraient plutôt rencontrer leurs propres ancêtres. Cette magie de guérison, combinée à la capacité de Force d'âme, est une combinaison de sorts très puissante. Vous vous en souvenez. Elle est utile à toutes sortes de personnes : guerriers, mages et tout ce qui se trouve entre les deux.",
+        "f2f2384dd198c1b7fd6d": "Bien. Alors Kor'ja est en vie et elle part défendre nos villes de ces maudits humains… J'aime souvent repenser aux vieux jours de bataille ; où le pouvoir est réservé au sage et non au fort. \n \n Vous m'avez aidé, $N. Prenez cette robe. Elle peut vous aider, vous n'en avez peut-être pas besoin, mais vous la méritez, et je suis fier de vous appeler frère. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +454,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +500,12 @@
     },
     "hrHR": {
       "description": "Spreman si za svoju prvu kušnju, {name}. Južno od Razor Hilla, odmah izvan grada, jedna je od naših gruntova ranjena boreći se protiv nekih Proudmooreovih starih postrojbi. Nije joj dobro i mnogo bi joj koristilo kad bi joj netko od nas mogao pomoći. Pronađi je, zove se Kor'ja, izliječi joj rane i daj joj blagoslov naših predaka.\n\nUčiniš li to, mislim da će biti dovoljan dokaz da si spreman napredovati u našem umijeću.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Dobro, dakle Kor'ja živi i odlazi braniti naš grad od zlih ljudi. Često se želim prisjetiti dana bitaka, kada se moć pokazivala u borbi, a mudri su često uništavali one koji su se oslanjali samo na snagu.$B$BDobro si mi učinio, $N. Uzmi ovu halju. Možda će pomoći, možda te nije briga, ali zaslužio si je i ponosno te zovem $gbratom:sestrom;.",
+        "e1cda873adbfdccfc968": "Spreman si za svoju prvu kušnju, $N. Južno od Razor Hilla, odmah izvan grada, jedna je naša ratnica ranjena boreći se protiv starih Proudmooreinih vojnika. Nije joj dobro i mnogo bi joj pomogao netko od nas. Pronađi je, zove se Kor'ja, izliječi joj rane i daj joj blagoslov naših predaka.$B$BUčiniš li to, mislim da je to dovoljan dokaz da si spreman nastaviti našim putem.",
+        "e8ffeaf78af05caf856e": "Većina smatra logičnim da je iscjeljujuća magija moćna, ali malo tko razumije koliko. Možeš mnoge održati na životu kad bi se inače susreli s precima. Ta magija zajedno sa sposobnošću Fortitude vrlo je moćna kombinacija. Zapamti. Pomaže svima: ratnicima, magovima i svima između.",
+        "f2f2384dd198c1b7fd6d": "Dobro, dakle Kor'ja živi i odlazi braniti naš grad od zlih ljudi. Često se želim prisjetiti dana bitaka, kada se moć pokazivala u borbi, a mudri su često uništavali one koji su se oslanjali samo na snagu.$B$BDobro si mi učinio, $N. Uzmi ovu halju. Možda će pomoći, možda te nije briga, ali zaslužila si je i ponosno te zovem $gbratom:sestrom;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +522,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2a0d861e88f41e833c38a001be9be6947b4282b78cbbfe4d4108f94d7c3ec84d"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +565,12 @@
     },
     "itIT": {
       "description": "Sei pronto per la tua prima prova, {name}. A sud di Tranciacolle, appena fuori dal paese, una delle nostre reclute è rimasta ferita respingendo alcune delle vecchie truppe di Proudmoore. Non sta molto bene e le gioverebbe molto l'aiuto di uno di noi. Trovala, si chiama Kor'ja, cura le sue ferite e donale la benedizione dei nostri antenati.\n\nFa' questo e credo che sarà una prova sufficiente che sei pronto a progredire nelle nostre vie.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Bene, allora Kor'ja vive e torna a difendere il nostro villaggio da quegli umani malvagi. Spesso io vorrei ricordare i giorni di battaglia; quando la potenza si mostrava in combattimento ed erano spesso i saggi a distruggere chi contava solo sulla sua forza.\n\nTu hai fatto un buon lavoro per me, $N. Ora prendi questa veste. Forse ti aiuta, forse a te non importa, ma te la sei meritata e io sono fiera di chiamarti fratello.",
+        "e1cda873adbfdccfc968": "Sei pronto per la tua prima prova, $N. A sud di Colle Rasolama, appena fuori città, una delle nostre guerriere è rimasta ferita combattendo alcune vecchie truppe di Proudmoore. Non sta bene e l'aiuto di uno di noi le gioverebbe molto. Trovala: si chiama Kor'ja. Cura le sue ferite e donale la benedizione dei nostri antenati.$B$BSe lo farai, credo sarà una prova sufficiente che sei pronto a proseguire sulla nostra via.",
+        "e8ffeaf78af05caf856e": "Quasi tutti pensano che è logico che le magie di guarigione sono potenti, ma pochi capiscono quanto potenti. Tu puoi tenere in vita tanti che invece dovrebbero andare a incontrare i loro antenati. Questa magia di guarigione mischiata con l'abilità di Fortitude sono una combinazione di incantesimi molto potente. Tu ricordati questo. Utile a ogni tipo di gente: guerrieri, maghi e tutto quello che sta in mezzo.",
+        "f2f2384dd198c1b7fd6d": "Bene, allora Kor'ja vive e torna a difendere il nostro villaggio da quegli umani malvagi. Spesso io vorrei ricordare i giorni di battaglia; quando la potenza si mostrava in combattimento ed erano spesso i saggi a distruggere chi contava solo sulla sua forza.\n\nTu hai fatto un buon lavoro per me, $N. Ora prendi questa veste. Forse ti aiuta, forse a te non importa, ma te la sei meritata e io sono fiera di chiamarti sorella."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +587,29 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2a0d861e88f41e833c38a001be9be6947b4282b78cbbfe4d4108f94d7c3ec84d"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -346,6 +633,12 @@
     },
     "koKR": {
       "description": "{name}, 자네는 이제 첫 번째 시험을 치를 준비가 됐다네. 칼바위 언덕의 남쪽, 마을 바로 바깥에 우리 그런트 하나가 부상을 입은 채 있네. 프라우드무어의 부하 몇과 싸우다가 꽤 심하게 다친 모양이야. 우리 중 하나가 가면 큰 도움을 줄 수 있을 거야. 그 그런트의 이름은 코르자라고 하네. 그녀를 찾아 부상을 치유해 주고 우리 선조의 축복을 내려 주게.\n\n그렇게 하면 자네가 사제의 길을 계속 걸어 나갈 준비가 됐다는 것을 충분히 입증했다고 생각하지.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "좋아, 코르자가 살아서 그 사악한 인간들로부터 우리 마을을 지키러 가는군. 나는 종종 전투의 나날을 떠올리고 싶어. 힘이 전투에서 드러나고, 지혜로운 이들이 힘에만 의존하는 자들을 쓰러뜨리곤 했지.$B$B잘해 주었네, $N. 이 로브를 받게. 도움이 될 수도 있고 아닐 수도 있지만, 자네가 얻어 낸 것이야. 자네를 $g형제:자매;라 부르게 되어 자랑스럽네.",
+        "e1cda873adbfdccfc968": "첫 시험을 치를 준비가 되었네, $N. 칼바람 언덕 남쪽 마을 밖에서 우리 그런트 하나가 프라우드무어의 옛 병력과 싸우다 다쳤어. 상태가 좋지 않으니 우리 동족의 도움이 절실하네. 코르자라는 그녀를 찾아 상처를 치료하고 조상들의 축복을 내려 주게.$B$B그렇게 하면 우리의 길을 계속 걸을 준비가 되었다는 충분한 증거가 될 걸세.",
+        "e8ffeaf78af05caf856e": "대부분 치유 마법이 강력하다는 것은 알지만, 얼마나 강력한지는 잘 모르지. 원래라면 조상들을 만나야 했을 많은 생명을 살릴 수 있네. 치유 마법과 인내의 능력을 함께 쓰면 매우 강력한 조합이 되지. 기억하게. 전사와 마법사 등 모든 이에게 도움이 된다네.",
+        "f2f2384dd198c1b7fd6d": "좋아, 코르자가 살아서 그 사악한 인간들로부터 우리 마을을 지키러 가는군. 나는 종종 전투의 나날을 떠올리고 싶어. 힘이 전투에서 드러나고, 지혜로운 이들이 힘에만 의존하는 자들을 쓰러뜨리곤 했지.$B$B잘해 주었네, $N. 이 로브를 받게. 도움이 될 수도 있고 아닐 수도 있지만, 자네가 얻어 낸 것이야. 자네를 $g형제:자매;라 부르게 되어 자랑스럽네."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -361,6 +654,26 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -383,6 +696,12 @@
     },
     "plPL": {
       "description": "Jesteś gotów na pierwszą próbę, {name}. Na południe od Razor Hill, tuż za miastem, jedna z naszych wojowniczek została ranna, odpierając dawnych żołnierzy Proudmoore'a. Nie czuje się dobrze i wiele by dało, gdyby ktoś z nas jej pomógł. Znajdź ją, nazywa się Kor'ja, ulecz rany i obdarz błogosławieństwem naszych przodków.\n\nJeśli to zrobisz, uznam to za wystarczający dowód, że jesteś gotów dalej podążać naszą drogą.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Dobrze, więc Kor'ja żyje i rusza bronić naszego miasta przed złymi ludźmi. Często wspominam dni bitew, gdy siłę okazywano w walce, a mądrzy pokonywali tych, którzy polegali wyłącznie na sile.$B$BDobrze mi przysłużyłeś, $N. Weź tę szatę. Może pomoże, może cię nie obchodzi, ale zasłużyłeś na nią i z dumą nazywam cię $gbratem:siostrą;.",
+        "e1cda873adbfdccfc968": "Jesteś gotów na pierwszą próbę, $N. Na południe od Razor Hill, tuż za miastem, jedna z naszych wojowniczek została ranna w walce ze starymi oddziałami Proudmoore. Jest w złym stanie i pomoc kogoś z nas wiele by jej dała. Znajdź ją, nazywa się Kor'ja, ulecz jej rany i udziel błogosławieństwa naszych przodków.$B$BJeśli to zrobisz, będzie to wystarczający dowód, że możesz iść dalej naszą drogą.",
+        "e8ffeaf78af05caf856e": "Większość uważa za oczywiste, że magia leczenia jest potężna, ale niewielu rozumie jak bardzo. Możesz utrzymać przy życiu wielu, którzy inaczej spotkaliby przodków. Magia leczenia połączona z Wytrwałością to bardzo potężne połączenie zaklęć. Pamiętaj o tym. Pomaga wszystkim: wojownikom, magom i każdemu pomiędzy.",
+        "f2f2384dd198c1b7fd6d": "Dobrze, więc Kor'ja żyje i rusza bronić naszego miasta przed złymi ludźmi. Często wspominam dni bitew, gdy siłę okazywano w walce, a mądrzy pokonywali tych, którzy polegali wyłącznie na sile.$B$BDobrze mi przysłużyłeś, $N. Weź tę szatę. Może pomoże, może cię nie obchodzi, ale zasłużyłaś na nią i z dumą nazywam cię $gbratem:siostrą;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -399,6 +718,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2a0d861e88f41e833c38a001be9be6947b4282b78cbbfe4d4108f94d7c3ec84d"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -422,6 +761,12 @@
     },
     "ptBR": {
       "description": "Te prepara pro teu primeiro teste, {name}. Ao sul do Monte Navalha, logo saindo da cidade, uma de nossas brutas, Kor'ja, se feriu lutando com alguns velhos soldados do Proudmore. Ela não tá nada bem, e seria muito útil pra ela se alguém como você a ajudasse. Acha ela, cura as feridas dela e dê a ela a bênção dos nossos ancestrais.\n\nSe tu fizer isso, pra mim, já vai ser prova suficiente de que tu tá pronto pra seguir o teu próprio caminho.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Bem, então Kor'ja vive e vai defender nossa cidade daqueles humanos malignos. Muitas vezes lembro dos dias de batalha, quando o poder era mostrado em combate e os sábios costumavam derrotar os que confiavam apenas na força.$B$BVocê me ajudou muito, $N. Pegue esta veste. Talvez ajude, talvez você não ligue, mas a mereceu e tenho orgulho de chamar você de $girmão:irmã;.",
+        "e1cda873adbfdccfc968": "Te prepara pro teu primeiro teste, $N. Ao sul do Monte Navalha, logo saindo da cidade, uma de nossas brutas, Kor'ja, se feriu lutando com alguns velhos soldados do Proudmore. Ela não tá nada bem, e seria muito útil pra ela se alguém como você a ajudasse. Acha ela, cura as feridas dela e dê a ela a bênção dos nossos ancestrais.\n\nSe tu fizer isso, pra mim, já vai ser prova suficiente de que tu tá pronto pra seguir o teu próprio caminho.",
+        "e8ffeaf78af05caf856e": "A maioria acha lógico que a magia de cura seja poderosa, mas poucos entendem o quanto. Você pode manter muitos vivos quando, de outro modo, encontrariam seus ancestrais. Essa magia de cura junto da habilidade Fortitude é uma combinação muito poderosa. Lembre-se disso. Ajuda todo tipo de gente: guerreiros, magos e todos os demais.",
+        "f2f2384dd198c1b7fd6d": "Bem, então Kor'ja vive e vai defender nossa cidade daqueles humanos malignos. Muitas vezes lembro dos dias de batalha, quando o poder era mostrado em combate e os sábios costumavam derrotar os que confiavam apenas na força.$B$BVocê me ajudou muito, $N. Pegue esta veste. Talvez ajude, talvez você não ligue, mas a mereceu e tenho orgulho de chamar você de $girmão:irmã;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -437,6 +782,27 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -459,6 +825,12 @@
     },
     "ruRU": {
       "description": "Что ж, {name}, вот ты и готов к своему первому испытанию. К югу от Колючего Холма, сразу за городской чертой, лежит раненная орчиха из нашего отряда. Она сражалась с остатками прежнего Праудмурова войска, и ей не повезло в бою. Помочь ей может только кто-то из нас. Ее зовут Корджа. Найди ее, исцели и дай ей благословение наших предков.\n\nСделай это – ия сочту, что ты подтвердил свою готовность ступить на путь жреца.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Молодец... оживил и вылечил Кор'жу... пусть она храбро обороняет и дальше наш город от нападений гадких людей.\n\nЯ вспоминаю дни битв, где нередко мудрый сметает того, кто полагается на грубую силу.\n\nХорошо сработал, $N. Возьми это одеяние. Может быть, оно пригодится тебе, может быть нет, но ты заслужил ее и я рада назвать тебя братом.",
+        "e1cda873adbfdccfc968": "Что ж, $n, вот ты и готов к своему первому испытанию. К югу от Колючего Холма, сразу за городской чертой, лежит раненная орчиха из нашего отряда. Она сражалась с остатками прежнего Праудмурова войска, и ей не повезло в бою. Помочь ей может только кто-то из нас. Ее зовут Корджа. Найди ее, исцели и дай ей благословение наших предков.\n\nСделай это – ия сочту, что ты подтвердил свою готовность ступить на путь жреца.",
+        "e8ffeaf78af05caf856e": "Многие думают, что исцеляющая магия мощна, и это логично, но мало кто подозревает, насколько она мощна... Ты можешь возвратить к жизни множество существ или даже воскресить их. Помогай воинам, магам, и остальным, по возможности.",
+        "f2f2384dd198c1b7fd6d": "Молодец... оживила и вылечила Кор'жу... пусть она храбро обороняет и дальше наш город от нападений гадких людей.\n\nЯ вспоминаю дни битв, где нередко мудрый сметает того, кто полагается на грубую силу.\n\nХорошо сработал, $N. Возьми это одеяние. Может быть, оно пригодится тебе, может быть нет, но ты заслужила ее и я рада назвать тебя сестрой."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -474,6 +846,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -496,6 +892,12 @@
     },
     "svSE": {
       "description": "Du vara redo för ditt första prov, {name}. Söder om Knivkullen, strax utanför byn, en av våra knektar bli skadad i strid mot några av Proudmoores gamla trupper. Hon inte må så bra, och hon ha stor nytta om en av vår sort kan hjälpa henne. Hitta henne, hon heter Kor'ja, läk hennes sår och ge henne våra förfäders välsignelse.\n\nGör du det tror jag att det är bevis nog på att du är redo att gå vidare i våra vägar.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Bra, då lever Kor'ja och ger sig av för att försvara vår stad mot de onda människorna. Jag tänker ofta på stridens dagar, då styrka visades i kamp och de visa ofta besegrade dem som bara litade på råstyrka.$B$BDu har gjort väl, $N. Ta denna kåpa. Den kanske hjälper, kanske bryr du dig inte, men du har förtjänat den och jag är stolt att kalla dig $gbroder:syster;.",
+        "e1cda873adbfdccfc968": "Du är redo för ditt första prov, $N. Söder om Razor Hill, strax utanför staden, har en av våra krigare skadats i strid mot några av Proudmoores gamla soldater. Hon mår inte bra och skulle ha stor nytta av hjälp från en av oss. Hitta henne, hon heter Kor'ja, läk hennes sår och ge henne våra förfäders välsignelse.$B$BGör du det är det tillräckligt bevis på att du är redo att fortsätta på vår väg.",
+        "e8ffeaf78af05caf856e": "De flesta tycker det är självklart att läkande magi är stark, men få förstår hur stark. Du kan hålla många vid liv som annars skulle möta sina förfäder. Läkande magi tillsammans med Fortitude är en mycket stark kombination. Kom ihåg det. Den hjälper alla slags människor: krigare, magiker och alla däremellan.",
+        "f2f2384dd198c1b7fd6d": "Bra, då lever Kor'ja och ger sig av för att försvara vår stad mot de onda människorna. Jag tänker ofta på stridens dagar, då styrka visades i kamp och de visa ofta besegrade dem som bara litade på råstyrka.$B$BDu har gjort väl, $N. Ta denna kåpa. Den kanske hjälper, kanske bryr du dig inte, men du har förtjänat den och jag är stolt att kalla dig $gbroder:syster;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +914,26 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -537,6 +959,12 @@
     },
     "trTR": {
       "description": "İlk sınavına hazırsın, {name}. Razor Hill'in güneyinde, kasabanın hemen dışında, Grunt'larımızdan biri Proudmoore'un eski askerlerini püskürtürken yaralanmış. Durumu pek iyi değil, bizden biri ona yardım etse çok işine yarar. Bul onu, adı Kor'ja, yaralarını iyileştir ve ona atalarımızın nimetini ver.\n\nBunu yaparsan, bence bu, yollarımızda ilerlemeye hazır olduğunun yeterli kanıtı olur.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Güzel, demek Kor'ja yaşıyor ve kasabamızı o kötü insanlardan korumaya gidiyor. Savaş günlerini sık sık hatırlarım; gücün savaşta gösterildiği, bilgelerin sadece gücüne güvenenleri sıkça yendiği günleri.$B$BBana iyilik yaptın, $N. Bu cüppeyi al. Belki yardım eder, belki umursamazsın ama onu hak ettin ve sana $gkardeşim:kız kardeşim; demekten gurur duyuyorum.",
+        "e1cda873adbfdccfc968": "İlk sınavına hazırsın, $N. Razor Hill'in güneyinde, kasabanın hemen dışında askerlerimizden biri Proudmoore'un eski birlikleriyle savaşırken yaralandı. Durumu iyi değil; bizden birinin yardımı ona çok iyi gelir. Onu bul, adı Kor'ja, yaralarını iyileştir ve atalarımızın kutsamasını ver.$B$BBunu yaparsan yolumuzda ilerlemeye hazır olduğunun yeterli kanıtı olur.",
+        "e8ffeaf78af05caf856e": "Çoğu kişi iyileştirme büyüsünün güçlü olduğunu mantıklı bulur ama ne kadar güçlü olduğunu pek azı anlar. Atalarıyla buluşmaları gerekirken birçok kişiyi hayatta tutabilirsin. Bu iyileştirme büyüsü Fortitude yeteneğiyle birlikte çok güçlü bir birleşimdir. Bunu hatırla. Savaşçılara, büyücülere ve herkese yardımcı olur.",
+        "f2f2384dd198c1b7fd6d": "Güzel, demek Kor'ja yaşıyor ve kasabamızı o kötü insanlardan korumaya gidiyor. Savaş günlerini sık sık hatırlarım; gücün savaşta gösterildiği, bilgelerin sadece gücüne güvenenleri sıkça yendiği günleri.$B$BBana iyilik yaptın, $N. Bu cüppeyi al. Belki yardım eder, belki umursamazsın ama onu hak ettin ve sana $gkardeşim:kız kardeşim; demekten gurur duyuyorum."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -553,6 +981,26 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -576,6 +1024,12 @@
     },
     "ukUA": {
       "description": "Ти готовий до першого випробування, {name}. На південь від Колючого Пагорба, одразу за містом, одна з наших рубак поранена після бою з колишніми військами Праудмура. Їй кепсько, і вона дуже потребує допомоги когось із наших. Знайди її, звуть її Кор'жа, зціли рани й даруй благословення предків.\n\nЯкщо зробиш це, гадаю, цього буде досить, щоб довести твою готовність іти далі нашими шляхами.",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "Добре, отже Кор'джа жива й вирушає захищати наше місто від злих людей. Я часто згадую дні битв, коли силу показували в бою, а мудрі часто перемагали тих, хто покладався лише на міць.$B$BТи добре мені допоміг, $N. Візьми цю мантію. Може, допоможе, може, тобі байдуже, але ти її заслужив, і я пишаюся, називаючи тебе $gбратом:сестрою;.",
+        "e1cda873adbfdccfc968": "Ти готовий до першого випробування, $N. На південь від Рейзор-Гілла, одразу за містом, одну з наших воїтельок поранено в бою зі старими військами Праудмур. Їй зле, і допомога когось із нас буде дуже доречною. Знайди її — звуть Кор'джа — вилікуй рани й даруй благословення предків.$B$BЯкщо зробиш це, гадаю, буде достатньо доказів, що ти готовий продовжувати наш шлях.",
+        "e8ffeaf78af05caf856e": "Більшість вважає логічним, що цілюща магія могутня, але мало хто розуміє наскільки. Ти можеш зберегти життя багатьом, які інакше зустрілися б із предками. Ця магія разом зі здібністю Стійкість — дуже сильне поєднання. Пам’ятай. Воно допомагає всім: воїнам, магам і кожному між ними.",
+        "f2f2384dd198c1b7fd6d": "Добре, отже Кор'джа жива й вирушає захищати наше місто від злих людей. Я часто згадую дні битв, коли силу показували в бою, а мудрі часто перемагали тих, хто покладався лише на міць.$B$BТи добре мені допоміг, $N. Візьми цю мантію. Може, допоможе, може, тобі байдуже, але ти її заслужила, і я пишаюся, називаючи тебе $gбратом:сестрою;."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -592,6 +1046,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2a0d861e88f41e833c38a001be9be6947b4282b78cbbfe4d4108f94d7c3ec84d"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -617,6 +1091,12 @@
     },
     "zhCN": {
       "description": "你准备接受你的第一次试炼了吗，{name}？我们的一个步兵因为与普罗德摩尔的旧部战斗时不慎受伤了，她就在剃刀岭南边，现在她的情况似乎比较危险，我们应该帮帮她。找到步兵科雅，治疗她的伤口，然后用我们祖先的祝福强化她的躯体。\n\n如果你做到了这些，那么你就证明了自己的能力和价值。",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "很好，科雅活了下来，她可以继续为抵抗那些邪恶的人类而战斗了。我经常想起以往的战斗，智慧与力量并用的勇士总是可以击败那些只会依仗蛮力的家伙。\n\n你做得很好，$N。现在拿着这件袍子吧。虽然你可能用不到它，但是它也许会对你有用。\n",
+        "e1cda873adbfdccfc968": "你准备接受你的第一次试炼了吗，$N？我们的一个步兵因为与普罗德摩尔的旧部战斗时不慎受伤了，她就在剃刀岭南边，现在她的情况似乎比较危险，我们应该帮帮她。找到步兵科雅，治疗她的伤口，然后用我们祖先的祝福强化她的躯体。\n\n如果你做到了这些，那么你就证明了自己的能力和价值。",
+        "e8ffeaf78af05caf856e": "许多人都知道治疗法术非常强大，但是他们并不知道它有多麽强大。你可以拯救无数即将消逝的生命，让他们不致过早地在另一个世界见到他们的祖先。治疗法术与真言术:韧的结合是非常强大的，你要牢记这一点。无论是战士、法师，还是其他的职业，都会很需要你的这种能力。",
+        "f2f2384dd198c1b7fd6d": "很好，科雅活了下来，她可以继续为抵抗那些邪恶的人类而战斗了。我经常想起以往的战斗，智慧与力量并用的勇士总是可以击败那些只会依仗蛮力的家伙。\n\n你做得很好，$N。现在拿着这件袍子吧。虽然你可能用不到它，但是它也许会对你有用。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -632,6 +1112,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -654,6 +1158,12 @@
     },
     "zhTW": {
       "description": "你準備接受你的第一次試煉了嗎，{name}？我們的一個步兵因為與普勞德摩爾的舊部戰鬥時不慎受傷了，她就在剃刀嶺南邊，現在她的情況似乎比較危險，我們應該幫幫她。找到步兵科雅，治療她的傷口，然後用我們祖先的祝福強化她的軀體。\n\n如果你做到了這些，那麼你就證明了自己的能力和價值。",
+      "dialogue": {
+        "0ba41263d8fc65c8e060": "很好，柯爾佳還活著，並將前去保衛我們的城鎮，抵抗那些邪惡的人類。我常想起戰鬥的日子：力量在戰場上展現，而智者往往能擊敗只依賴蠻力的人。$B$B你幫了我大忙，$N。拿去這件長袍吧。它可能有幫助，也可能你不在乎，但這是你應得的。我很驕傲能稱你為$g兄弟:姐妹;。",
+        "e1cda873adbfdccfc968": "你準備接受你的第一次試煉了嗎，$N？我們的一個步兵因為與普羅德摩爾的舊部戰鬥時不慎受傷了，她就在剃刀嶺南邊，現在她的情況似乎比較危險，我們應該幫幫她。找到步兵科雅，治療她的傷口，然後用我們祖先的祝福強化她的軀體。\n\n如果你做到了這些，那麼你就證明了自己的能力和價值。",
+        "e8ffeaf78af05caf856e": "許多人都知道治療法術非常強大，但是他們並不知道它有多麼強大。你可以拯救無數即將消逝的生命，讓他們不致過早地在另一個世界見到他們的祖先。治療法術與真言術:韌的結合是非常強大的，你要牢記這一點。無論是戰士、法師，還是其它的職業，都會很需要你的這種能力。",
+        "f2f2384dd198c1b7fd6d": "很好，柯爾佳還活著，並將前去保衛我們的城鎮，抵抗那些邪惡的人類。我常想起戰鬥的日子：力量在戰場上展現，而智者往往能擊敗只依賴蠻力的人。$B$B你幫了我大忙，$N。拿去這件長袍吧。它可能有幫助，也可能你不在乎，但這是你應得的。我很驕傲能稱你為$g兄弟:姐妹;。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -669,6 +1179,28 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0ba41263d8fc65c8e060": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1cda873adbfdccfc968": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e8ffeaf78af05caf856e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f2f2384dd198c1b7fd6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

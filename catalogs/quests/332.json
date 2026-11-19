@@ -1,8 +1,56 @@
 {
   "areaId": 1519,
+  "dialogueContexts": {
+    "27c462b40f6c860d0472": {
+      "lineId": "q:332:progress:m",
+      "npcId": 1431,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "579bd1a2032a3b61ef68": {
+      "lineId": "q:332:complete:m",
+      "npcId": 1431,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "6025c6d80868db218088": {
+      "lineId": "q:332:complete:f",
+      "npcId": 1431,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "dcf4093cce70f6883da0": {
+      "lineId": "q:332:progress:f",
+      "npcId": 1431,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "fc7f1df282831b38538e": {
+      "lineId": "q:332:accept",
+      "npcId": 1432,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Když se s kýmkoli bavíš o víně, víš, že my Gallinové prodáváme nejlepší víno ve Stormwindu. A nejsme daleko, pořád v Trade District u krásných městských kanálů.\n\nTady, vezmi si tenhle leták. Přines ho mé sestře Suzettě do našeho obchodu a dostaneš láhev našeho slavného pinot noir zdarma. Nebudeš litovat!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Vítej, $gpane:paní;. Ochutnal jsi už některé z našich vynikajících vín?",
+        "579bd1a2032a3b61ef68": "Ach, takže jsi viděl Renata? Tady máš, $gpane:paní;. Láhev našeho speciálního pinotu noir. V celém Azerothu nenajdeš lepší!",
+        "6025c6d80868db218088": "Ach, takže jsi viděl Renata? Tady máš, $gpane:paní;. Láhev našeho speciálního pinotu noir. V celém Azerothu nenajdeš lepší!",
+        "dcf4093cce70f6883da0": "Vítej, $gpane:paní;. Ochutnal jsi už některé z našich vynikajících vín?",
+        "fc7f1df282831b38538e": "Pokud s někým mluvíš o víně, víš, že my Gallinovi prodáváme nejlepší víno ve Stormwindu. A nejsme daleko, stále v obchodní čtvrti podél krásných městských kanálů.$B$BTady, vezmi si tento leták. Přines ho mé sestře Suzettě do našeho obchodu a dostaneš zdarma láhev našeho slavného pinotu noir. Nebudeš litovat!"
+      },
       "summary": "Jdi do Gallina Winery a dones Suzettě Gallině Wine Ticket za láhev vína zdarma.",
       "title": "Reklama na vinotéku",
       "translationMetadata": {
@@ -12,6 +60,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "029a2b834f518b488d2872cff3119eed99782e073d4aaccc48492b590085c995"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +105,13 @@
     },
     "daDK": {
       "description": "Hvis du taler med nogen om vin, ved du, at vi Gallinaer sælger den bedste vin i Stormwind. Og vi er ikke langt væk, stadig i Trade District langs byens dejlige kanaler.\n\nHer, tag denne brochure. Bring den til min søster Suzetta i vores butik for en gratis flaske af vores berømte pinot noir. Du vil ikke fortryde det!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Velkommen, $gherre:frue;. Har du prøvet en af vores gode vine endnu?",
+        "579bd1a2032a3b61ef68": "Ah, så du har set Renato? Værsgo, $gherre:frue;. En flaske af vores særlige pinot noir. Du finder ikke dens lige i hele Azeroth!",
+        "6025c6d80868db218088": "Ah, så du har set Renato? Værsgo, $gherre:frue;. En flaske af vores særlige pinot noir. Du finder ikke dens lige i hele Azeroth!",
+        "dcf4093cce70f6883da0": "Velkommen, $gherre:frue;. Har du prøvet en af vores gode vine endnu?",
+        "fc7f1df282831b38538e": "Hvis du taler med nogen om vin, ved du, at vi Gallinaer sælger den bedste vin i Stormwind. Og vi ligger ikke langt herfra, stadig i handelsdistriktet langs byens smukke kanaler.$B$BHer, tag denne folder. Giv den til min søster Suzetta i vores butik og få en gratis flaske af vores berømte pinot noir. Du vil ikke fortryde det!"
+      },
       "summary": "Gå til Gallina Winery, og bring Suzetta Gallina Wine Ticket for en gratis flaske vin.",
       "title": "Reklame for vinbutikken",
       "translationMetadata": {
@@ -41,6 +121,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "029a2b834f518b488d2872cff3119eed99782e073d4aaccc48492b590085c995"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +164,13 @@
     },
     "deDE": {
       "description": "Wenn Ihr Euch mit irgendwem über Weine unterhaltet, werdet Ihr erfahren, dass wir Gallinas die besten Weine in ganz Stormwind verkaufen. Wir sind auch nicht weit weg, immer noch innerhalb des Handelsdistrikts entlang der herrlichen Kanäle der Stadt.\n\nHier, nehmt dieses Flugblatt. Bringt es meiner Schwester Suzetta in unseren Laden, und Ihr erhaltet eine Gratis-Flasche unseres berühmten Pinot Noir. Ihr werdet es nicht bereuen!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Seid gegrüßt und fühlt Euch willkommen, edler Herr. Habt Ihr schon einmal einen unserer ausgezeichneten Weine versucht?",
+        "579bd1a2032a3b61ef68": "Ah, Ihr wart also bei Renato? Na dann, hier, bitte, werter Herr. Eine Flasche unseres außergewöhnlichen Pinot Noir. Ihr werdet nirgendwo in Azeroth etwas Vergleichbares finden. ",
+        "6025c6d80868db218088": "Ah, Ihr wart also bei Renato? Na dann, hier, bitte, werte Dame. Eine Flasche unseres außergewöhnlichen Pinot Noir. Ihr werdet nirgendwo in Azeroth etwas Vergleichbares finden.",
+        "dcf4093cce70f6883da0": "Seid gegrüßt und fühlt Euch willkommen, edler Herr. Habt Ihr schon einmal einen unserer ausgezeichneten Weine versucht?",
+        "fc7f1df282831b38538e": "Wenn Ihr Euch mit irgendwem über Weine unterhaltet, werdet Ihr erfahren, dass wir Gallinas die besten Weine in ganz Stormwind verkaufen. Wir sind auch nicht weit weg, immer noch innerhalb des Handelsdistrikts entlang der herrlichen Kanäle der Stadt.\n\nHier, nehmt dieses Flugblatt. Bringt es meiner Schwester Suzetta in unseren Laden, und Ihr erhaltet eine Gratis-Flasche unseres berühmten Pinot Noir. Ihr werdet es nicht bereuen!"
+      },
       "summary": "Geht zum Weingut Gallina und gebt Suzetta Gallina den Wein-Gutschein, um eine kostenlose Flasche Wein zu erhalten.",
       "title": "Weinladen-Werbung",
       "translationMetadata": {
@@ -67,6 +179,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +225,13 @@
     },
     "enUS": {
       "description": "If you talk to anyone about wine, then you know we Gallinas sell the best wine in Stormwind.  And we're not far, still in the Trade District along the city's lovely canals.\n\nHere, take this pamphlet.  Bring it to my sister Suzetta at our shop for a complimentary bottle of our famous pinot noir.  You won't regret it!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Greetings and welcome, $gmaster:madam;.  Have you yet tried one of our fine wines?",
+        "579bd1a2032a3b61ef68": "Ah, so you've seen Renato?  Well here you are, $gsir:ma'am;.  A bottle of our special pinot noir.  You'll not find its equal in all of Azeroth!",
+        "6025c6d80868db218088": "Ah, so you've seen Renato?  Well here you are, $gsir:ma'am;.  A bottle of our special pinot noir.  You'll not find its equal in all of Azeroth!",
+        "dcf4093cce70f6883da0": "Greetings and welcome, $gmaster:madam;.  Have you yet tried one of our fine wines?",
+        "fc7f1df282831b38538e": "If you talk to anyone about wine, then you know we Gallinas sell the best wine in Stormwind.  And we're not far, still in the Trade District along the city's lovely canals.$B$BHere, take this pamphlet.  Bring it to my sister Suzetta at our shop for a complimentary bottle of our famous pinot noir.  You won't regret it!"
+      },
       "summary": "Go to the Gallina Winery, and bring Suzetta Gallina the Wine Ticket for a free bottle of wine.",
       "title": "Wine Shop Advert",
       "translationMetadata": {
@@ -91,6 +240,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +287,13 @@
     },
     "esES": {
       "description": "Si hablas sobre vino con alguien, sabrás que nosotros, en Gallinas, vendemos el mejor vino de Ventormenta. Y no estamos lejos, seguimos en el Distrito de Mercaderes, en los preciosos canales de la ciudad.\n\nToma, coge este panfleto. Llévaselo a mi hermana Suzetta a nuestra tienda, a cambio te dará una botella de regalo de nuestro famoso pinot noir. ¡No lo lamentarás!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Saludos y bienvenido, señor. ¿Has probado ya alguno de nuestros vinos?",
+        "579bd1a2032a3b61ef68": "¿Entonces has visto a Renato? Aquí estamos, caballero. Una botella de nuestro pinot noir especial. ¡No encontrarás nada mejor en todo Azeroth!",
+        "6025c6d80868db218088": "¿Entonces has visto a Renato? Aquí estamos, caballero. Una botella de nuestro pinot noir especial. ¡No encontrarás nada mejor en todo Azeroth!",
+        "dcf4093cce70f6883da0": "Saludos y bienvenido, señor. ¿Has probado ya alguno de nuestros vinos?",
+        "fc7f1df282831b38538e": "Si hablas sobre vino con alguien, sabrás que nosotros, en Gallinas, vendemos el mejor vino de Ventormenta. Y no estamos lejos, seguimos en el Distrito de Mercaderes, en los preciosos canales de la ciudad.\n\nToma, coge este panfleto. Llévaselo a mi hermana Suzetta a nuestra tienda, a cambio te dará una botella de regalo de nuestro famoso pinot noir. ¡No lo lamentarás!"
+      },
       "summary": "Ve a la Bodega Gallina y lleva a Suzetta Gallina el cupón de vino para una botella gratis.",
       "title": "Publicidad de la bodega",
       "translationMetadata": {
@@ -116,6 +302,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +348,13 @@
     },
     "esMX": {
       "description": "Si hablas sobre vino con alguien, sabrás que nosotros, los Galina, vendemos el mejor vino de Ventormenta. Y no estamos lejos, seguimos en el Distrito de Mercaderes, en los preciosos canales de la ciudad.\n\nToma, agarra este panfleto. Llévaselo a mi hermana Suzetta a nuestra tienda, a cambio te dará una botella de regalo de nuestro famoso pinot noir. ¡No lo lamentarás!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Saludos y bienvenido, señor. ¿Has probado ya alguno de nuestros vinos?",
+        "579bd1a2032a3b61ef68": "Ah, ¿viste a Renato? Aquí tienes, $gseñor:señora;. Una botella de nuestro pinot noir especial. ¡No encontrarás otro igual en todo Azeroth!",
+        "6025c6d80868db218088": "Ah, ¿viste a Renato? Aquí tienes, $gseñor:señora;. Una botella de nuestro pinot noir especial. ¡No encontrarás otro igual en todo Azeroth!",
+        "dcf4093cce70f6883da0": "Saludos y bienvenida, señorita. ¿Has probado ya alguno de nuestros vinos?",
+        "fc7f1df282831b38538e": "Si hablas sobre vino con alguien, sabrás que nosotros, los Galina, vendemos el mejor vino de Ventormenta. Y no estamos lejos, seguimos en el Distrito de Mercaderes, en los preciosos canales de la ciudad.\n\nToma, agarra este panfleto. Llévaselo a mi hermana Suzetta a nuestra tienda, a cambio te dará una botella de regalo de nuestro famoso pinot noir. ¡No lo lamentarás!"
+      },
       "summary": "Ve a la Bodega Galina y lleva a Suzetta Galina el cupón de vino para una botella gratis.",
       "title": "Publicidad de la bodega",
       "translationMetadata": {
@@ -140,6 +363,34 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +407,13 @@
     },
     "frFR": {
       "description": "Si vous parlez à qui que ce soit de vin, vous apprendrez que nous, les Gallina, nous vendons le meilleur vin de Hurlevent. Et nous ne sommes pas loin, dans le Quartier commerçant, le long des superbes canaux de la ville.\n\nTenez, prenez ce bon d’échange. Apportez-le à ma sœur Suzetta dans notre magasin, et elle vous offrira une bouteille de bienvenue de notre célèbre pinot noir. Vous ne le regretterez pas !",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Bonjour et bienvenue ! Avez-vous déjà goûté l'un de nos excellents vins ?",
+        "579bd1a2032a3b61ef68": "Oh ! Alors vous avez vu Renato ? Vous êtes ici chez vous. Une bouteille de notre pinot noir spécial. Vous n'en trouverez pas d'autre de cette qualité dans tout Azeroth !",
+        "6025c6d80868db218088": "Oh ! Alors vous avez vu Renato ? Vous êtes ici chez vous. Une bouteille de notre pinot noir spécial. Vous n'en trouverez pas d'autre de cette qualité dans tout Azeroth !",
+        "dcf4093cce70f6883da0": "Bonjour et bienvenue ! Avez-vous déjà goûté l'un de nos excellents vins ?",
+        "fc7f1df282831b38538e": "Si vous parlez à qui que ce soit de vin, vous apprendrez que nous, les Gallina, nous vendons le meilleur vin de Stormwind. Et nous ne sommes pas loin, dans le Quartier commerçant, le long des superbes canaux de la ville.\n\nTenez, prenez ce bon d’échange. Apportez-le à ma sœur Suzetta dans notre magasin, et elle vous offrira une bouteille de bienvenue de notre célèbre pinot noir. Vous ne le regretterez pas !"
+      },
       "summary": "Aller à la Cave à vins des Gallina et apporter à Suzetta Gallina le Bon pour une bouteille de vin gratuite.",
       "title": "Publicité pour la cave à vins Gallina",
       "translationMetadata": {
@@ -164,6 +422,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +468,13 @@
     },
     "hrHR": {
       "description": "Ako s bilo kime razgovaraš o vinu, znaš da mi Galline prodajemo najbolje vino u Stormwindu. I nismo daleko, još smo u Trgovačkoj četvrti uz lijepe gradske kanale.\n\nEvo, uzmi ovaj letak. Donesi ga mojoj sestri Suzetti u našu trgovinu za besplatnu bocu našeg poznatog pinota noira. Nećeš požaliti!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Dobro došao, $ggospodine:gospođo;. Jesi li već probao neko od naših izvrsnih vina?",
+        "579bd1a2032a3b61ef68": "Ah, znači vidio si Renata? Izvoli, $ggospodine:gospođo;. Boca našeg posebnog pinota noira. Nećeš pronaći boljeg u cijelom Azerothu!",
+        "6025c6d80868db218088": "Ah, znači vidio si Renata? Izvoli, $ggospodine:gospođo;. Boca našeg posebnog pinota noira. Nećeš pronaći boljeg u cijelom Azerothu!",
+        "dcf4093cce70f6883da0": "Dobro došao, $ggospodine:gospođo;. Jesi li već probao neko od naših izvrsnih vina?",
+        "fc7f1df282831b38538e": "Ako s bilo kim razgovaraš o vinu, znaš da mi Galline prodajemo najbolje vino u Stormwindu. Nismo daleko, još uvijek smo u Trgovačkoj četvrti uz lijepe gradske kanale.$B$BEvo, uzmi ovaj letak. Odnesi ga mojoj sestri Suzetti u našu trgovinu za besplatnu bocu našeg slavnog pinota noira. Nećeš požaliti!"
+      },
       "summary": "Idi u vinariju Gallina i donesi Suzetti Gallina vinski kupon za besplatnu bocu vina.",
       "title": "Oglas vinoteke",
       "translationMetadata": {
@@ -189,6 +484,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "029a2b834f518b488d2872cff3119eed99782e073d4aaccc48492b590085c995"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +527,13 @@
     },
     "itIT": {
       "description": "Se ti piace il vino, allora sai che noi Gallina vendiamo il vino migliore di Roccavento. E non siamo lontani: ci trovi nel Distretto Commerciale, lungo gli splendidi canali della città.\n\nTieni, prendi questo opuscolo. Consegnalo a mia sorella Susetta alla nostra enoteca, per ricevere una bottiglia omaggio del nostro famoso Pinot Nero. Non te ne pentirai!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Salve e benvenuto, signore. Hai già assaggiato uno dei nostri ottimi vini?",
+        "579bd1a2032a3b61ef68": "Ah, quindi hai visto Renato? Bene, ecco a te, signore. Una bottiglia del nostro pinot nero speciale. Non ne troverai uno uguale in tutta Azeroth!",
+        "6025c6d80868db218088": "Ah, quindi hai visto Renato? Bene, ecco a te, signora. Una bottiglia del nostro pinot nero speciale. Non ne troverai uno uguale in tutta Azeroth!",
+        "dcf4093cce70f6883da0": "Salve e benvenuta, signora. Hai già assaggiato uno dei nostri ottimi vini?",
+        "fc7f1df282831b38538e": "Basta parlare di vino con chiunque per sapere che noi Gallina vendiamo il vino migliore di Stormwind. E non siamo lontani, siamo sempre nel Quartiere Commerciale, lungo i bei canali della città.\n\nTieni, prendi questo volantino. Portalo a mia sorella Suzetta, alla nostra bottega, e avrai in omaggio una bottiglia del nostro famoso pinot nero. Non te ne pentirai!"
+      },
       "summary": "Vai alla cantina Gallina e porta a Suzetta Gallina il buono per una bottiglia di vino gratuita.",
       "title": "Pubblicità della bottega del vino",
       "translationMetadata": {
@@ -215,6 +542,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -232,6 +589,13 @@
     },
     "koKR": {
       "description": "스톰윈드 시민들에게 제일 유명한 와인 가게에 대해서 물어보신 적이 있으시다면 우리 갈리나 집안에서 스톰윈드 최고의 와인을 판다는 것을 아실 겁니다. 위치도 멀지 않답니다. 도시의 아름다운 수로를 따라 상업 지구에 있답니다.\n\n자, 이 광고물을 받으세요. 가게에 있는 제 여동생 수제타에게 이 광고물을 가져가시면 저희 가게의 유명한 피노 누아 한 병을 무료로 드릴 겁니다. 절대 후회하시지 않으실 거예요!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "안녕하세요, 어서 오세요. 저희 가게의 맛좋은 와인을 드셔 보셨나요?",
+        "579bd1a2032a3b61ef68": "아, 이미 레나토 오빠를 만나셨군요? 자, 받으세요. 저희 가게의 자랑인 피노 누와 와인입니다. 아제로스 어디에서도 이런 와인은 다시 못 보실 겁니다!",
+        "6025c6d80868db218088": "아, 이미 레나토 오빠를 만나셨군요? 자, 받으세요. 저희 가게의 자랑인 피노 누와 와인입니다. 아제로스 어디에서도 이런 와인은 다시 못 보실 겁니다!",
+        "dcf4093cce70f6883da0": "안녕하세요, 어서 오세요. 저희 가게의 맛좋은 와인을 드셔 보셨나요?",
+        "fc7f1df282831b38538e": "스톰윈드 시민들에게 제일 유명한 와인 가게에 대해서 물어보신 적이 있으시다면 우리 갈리나 집안에서 스톰윈드 최고의 와인을 판다는 것을 아실 겁니다. 위치도 멀지 않답니다. 도시의 아름다운 수로를 따라 상업 지구에 있답니다.\n\n자, 이 광고물을 받으세요. 가게에 있는 제 여동생 수제타에게 이 광고물을 가져가시면 저희 가게의 유명한 피노 누아 한 병을 무료로 드릴 겁니다. 절대 후회하시지 않으실 거예요!"
+      },
       "summary": "갈리나 포도주 상점으로 가서 수제타 갈리나에게 와인 티켓을 주고 와인 한 병을 무료로 얻으십시오.",
       "title": "와인 가게 광고",
       "translationMetadata": {
@@ -240,6 +604,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +651,13 @@
     },
     "plPL": {
       "description": "Zapytaj kogokolwiek o wino, a usłyszysz, że my, Gallinowie, sprzedajemy najlepsze wino w Stormwind. A do nas jest niedaleko: to wciąż Trade District, nad uroczymi kanałami miasta.\n\nProszę, weź tę ulotkę. Zanieś ją mojej siostrze Suzetcie do naszego sklepu, a dostaniesz w prezencie butelkę naszego słynnego pinot noir. Nie pożałujesz!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Witaj, $gpanie:pani;. Czy próbowano już jednego z naszych wyśmienitych win?",
+        "579bd1a2032a3b61ef68": "Ach, a więc widziano Renata? Proszę, $gpanie:pani;. Butelka naszego specjalnego pinot noir. Na całym Azeroth nie znajdziesz mu równego!",
+        "6025c6d80868db218088": "Ach, a więc widziano Renata? Proszę, $gpanie:pani;. Butelka naszego specjalnego pinot noir. Na całym Azeroth nie znajdziesz mu równego!",
+        "dcf4093cce70f6883da0": "Witaj, $gpanie:pani;. Czy próbowano już jednego z naszych wyśmienitych win?",
+        "fc7f1df282831b38538e": "Jeśli rozmawiasz z kimkolwiek o winie, wiesz, że my, Gallinowie, sprzedajemy najlepsze wino w Stormwind. Nie jesteśmy daleko, wciąż w dzielnicy handlowej, nad pięknymi kanałami miasta.$B$BWeź tę ulotkę. Zanieś ją mojej siostrze Suzetcie w naszym sklepie, a dostaniesz darmową butelkę naszego słynnego pinot noir. Nie pożałujesz!"
+      },
       "summary": "Udaj się do Gallina Winery i przynieś Suzetcie Gallina kupon na wino, by odebrać darmową butelkę wina.",
       "title": "Reklama winiarni",
       "translationMetadata": {
@@ -266,6 +667,31 @@
             "source": "foreverTranslatedPolish",
             "sourceLocale": "plPL",
             "sourceRevision": "1.1.1"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -286,6 +712,13 @@
     },
     "ptBR": {
       "description": "Se você conversar com qualquer um sobre vinhos, todos com certeza vão dizer que nós, os Callina, vendemos as melhores garrafas de vinho de Ventobravo. E nossa loja fica pertinho, aqui mesmo no Distrito Comercial, ao lado dos adoráveis canais da cidade.\n\nTome aqui um panfleto que dá direito a uma garrafa do nosso famoso pinot noir como cortesia. Basta entregá-lo para minha irmã Suzette, lá na loja. Você não vai se arrepender!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Saudações e seja bem-vindo, cavalheiro. Já conhece nossos vinhos finos?",
+        "579bd1a2032a3b61ef68": "Ah, então você encontrou o Renato? Bem, então tome, $gcavalheiro:madame;. Uma garrafa do nosso pinot noir especial. Você nunca provou nada igual em toda Azeroth!",
+        "6025c6d80868db218088": "Ah, então você encontrou o Renato? Bem, então tome, $gcavalheiro:madame;. Uma garrafa do nosso pinot noir especial. Você nunca provou nada igual em toda Azeroth!",
+        "dcf4093cce70f6883da0": "Saudações e seja bem-vindo, cavalheiro. Já conhece nossos vinhos finos?",
+        "fc7f1df282831b38538e": "Se você conversar com qualquer um sobre vinhos, todos com certeza vão dizer que nós, os Callina, vendemos as melhores garrafas de vinho de Ventobravo. E nossa loja fica pertinho, aqui mesmo no Distrito Comercial, ao lado dos adoráveis canais da cidade.\n\nTome aqui um panfleto que dá direito a uma garrafa do nosso famoso pinot noir como cortesia. Basta entregá-lo para minha irmã Suzette, lá na loja. Você não vai se arrepender!"
+      },
       "summary": "Vá até a Vinícola Callina e entregue o Vale-vinho para Suzette Callina para ganhar uma garrafa de vinho.",
       "title": "A propaganda é a alma do negócio",
       "translationMetadata": {
@@ -294,6 +727,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -310,6 +773,13 @@
     },
     "ruRU": {
       "description": "Если тебя интересует вино, так лучшее вино в Штормграде продает семейство Галлина! Это недалеко – в Торговом квартале, неподалеку от городских каналов.\n\nВозьми этот талон, отнеси его моей сестре Сюзетте и получишь бутылку нашего знаменитого \"Пино нуар\". Не пожалеешь!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Приветствую и добро пожаловать, мсье! Не желаете ли отведать наших знаменитых вин?",
+        "579bd1a2032a3b61ef68": "Вы знакомы с Ренато? В таком случае – только для вас, мсье... Бутылка нашего особого \"Пино нуар\"! Такого вы не попробуете больше нигде во всем Азероте!",
+        "6025c6d80868db218088": "Вы знакомы с Ренато? В таком случае – только для вас, мадам... Бутылка нашего особого \"Пино нуар\"! Такого вы не попробуете больше нигде во всем Азероте!",
+        "dcf4093cce70f6883da0": "Приветствую и добро пожаловать, мадам! Не желаете ли отведать наших знаменитых вин?",
+        "fc7f1df282831b38538e": "Если тебя интересует вино, так лучшее вино в Штормграде продает семейство Галлина! Это недалеко – в Торговом квартале, неподалеку от городских каналов.\n\nВозьми этот талон, отнеси его моей сестре Сюзетте и получишь бутылку нашего знаменитого \"Пино нуар\". Не пожалеешь!"
+      },
       "summary": "Отправляйтесь на винокурню Галлины и принесите Сюзетте Галлине талон на вино, чтобы получить бутылку вина бесплатно.",
       "title": "Реклама винного магазина",
       "translationMetadata": {
@@ -318,6 +788,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -334,6 +834,13 @@
     },
     "svSE": {
       "description": "Om du talar med någon om vin vet du att vi Gallinas säljer Stormvinds bästa vin. Och vi ligger inte långt härifrån, fortfarande i Handelsdistriktet längs stadens vackra kanaler.\n\nHär, ta det här flygbladet. Ge det till min syster Suzetta i vår butik, så får du en flaska av vår berömda pinot noir på huset. Du kommer inte att ångra dig!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Välkommen, $gmin herre:min fru;. Har du provat något av våra fina viner än?",
+        "579bd1a2032a3b61ef68": "Jaså, du har träffat Renato? Här är den, $gmin herre:min fru;. En flaska av vår speciella pinot noir. Du hittar ingen like i hela Azeroth!",
+        "6025c6d80868db218088": "Jaså, du har träffat Renato? Här är den, $gmin herre:min fru;. En flaska av vår speciella pinot noir. Du hittar ingen like i hela Azeroth!",
+        "dcf4093cce70f6883da0": "Välkommen, $gmin herre:min fru;. Har du provat något av våra fina viner än?",
+        "fc7f1df282831b38538e": "Om du talar med någon om vin vet du att vi Gallinor säljer det bästa vinet i Stormwind. Vi finns inte långt härifrån, i handelsdistriktet längs stadens vackra kanaler.$B$BHär, ta denna broschyr. Ge den till min syster Suzetta i vår butik så får du en gratis flaska av vår berömda pinot noir. Du kommer inte att ångra dig!"
+      },
       "summary": "Gå till Gallinas vingård och ge Suzetta Gallina vinkupongen för en gratis flaska vin.",
       "title": "Vinbutiksreklam",
       "translationMetadata": {
@@ -343,6 +850,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "029a2b834f518b488d2872cff3119eed99782e073d4aaccc48492b590085c995"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -363,6 +895,13 @@
     },
     "trTR": {
       "description": "Kimle şaraptan konuşursan konuş, Gallina ailesinin Stormwind'in en iyi şarabını sattığını bilirsin. Üstelik uzakta da değiliz, şehrin güzel kanalları boyunca, hâlâ Ticaret Mahallesi'ndeyiz.\n\nŞu broşürü al. Dükkânımızdaki kız kardeşim Suzetta'ya götürürsen ünlü pinot noir şarabımızdan bir şişe ikram eder. Pişman olmazsın!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Hoş geldiniz, $gefendim:hanımefendi;. Güzel şaraplarımızdan birini henüz denediniz mi?",
+        "579bd1a2032a3b61ef68": "Demek Renato’yu gördün? Buyur, $gefendim:hanımefendi;. Özel pinot noir şarabımızdan bir şişe. Bütün Azeroth’ta bir benzerini bulamazsın!",
+        "6025c6d80868db218088": "Demek Renato’yu gördün? Buyur, $gefendim:hanımefendi;. Özel pinot noir şarabımızdan bir şişe. Bütün Azeroth’ta bir benzerini bulamazsın!",
+        "dcf4093cce70f6883da0": "Hoş geldiniz, $gefendim:hanımefendi;. Güzel şaraplarımızdan birini henüz denediniz mi?",
+        "fc7f1df282831b38538e": "Şarap hakkında herhangi biriyle konuştuysan biz Gallinaların Stormwind’deki en iyi şarabı sattığını bilirsin. Uzakta da değiliz, şehrin güzel kanalları boyunca Ticaret Bölgesi’ndeyiz.$B$BAl, bu broşürü dükkânımızdaki kız kardeşim Suzetta’ya götür ve ünlü pinot noir şarabımızdan ücretsiz bir şişe al. Pişman olmayacaksın!"
+      },
       "summary": "Gallina Şaraphanesi'ne git ve bedava bir şişe şarap için Wine Ticket'ı Suzetta Gallina'ya götür.",
       "title": "Şarap Dükkânı Reklamı",
       "translationMetadata": {
@@ -372,6 +911,31 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -390,6 +954,13 @@
     },
     "ukUA": {
       "description": "Якщо ти заговориш з будь-ким про вино, то дізнаєшся, що Ґелліни продають найкраще вино у Штормовії. І ми недалеко розташовані, у Торговому районі, уздовж милих міських каналів.\n\nОсь, візьми цю брошуру. Передай моїй сестрі Сузетті в нашій крамниці, щоб отримати безкоштовну пляшку нашого відомого піно-нуару. Ти не пошкодуєш!",
+      "dialogue": {
+        "27c462b40f6c860d0472": "Вітаємо, $gпане:пані;. Ви вже скуштували якесь із наших чудових вин?",
+        "579bd1a2032a3b61ef68": "А, то ти бачив Ренато? Ось, $gпане:пані;. Пляшка нашого особливого піно нуар. Такого не знайдеш у всьому Азероті!",
+        "6025c6d80868db218088": "А, то ти бачив Ренато? Ось, $gпане:пані;. Пляшка нашого особливого піно нуар. Такого не знайдеш у всьому Азероті!",
+        "dcf4093cce70f6883da0": "Вітаємо, $gпане:пані;. Ви вже скуштували якесь із наших чудових вин?",
+        "fc7f1df282831b38538e": "Якщо говорити з кимось про вино, то знаєш, що ми, Галліни, продаємо найкраще вино в Штормовії. Ми недалеко, у Торговому кварталі біля чудових міських каналів.$B$BОсь, візьми цей буклет. Віднеси його моїй сестрі Сюзетті в нашій крамниці й отримай безкоштовну пляшку нашого знаменитого піно нуар. Не пошкодуєш!"
+      },
       "summary": "Йдіть до винарні Ґеллінів, і передайте Сузетті Ґелліні винний квиток на безкоштовну пляшку вина.",
       "title": "Реклама винної крамниці",
       "translationMetadata": {
@@ -400,6 +971,31 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "029a2b834f518b488d2872cff3119eed99782e073d4aaccc48492b590085c995"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -420,6 +1016,13 @@
     },
     "zhCN": {
       "description": "无论你跟任何人谈起酒，大家都会告诉你加林纳家卖的酒是全暴风城最好的。而且那里离我们这儿并不远，就在贸易区中，运河的边上。\n\n给，拿着这张酒票。把这个拿到店里去，交给我的姐姐苏泽塔，她会送你一瓶我们酿造的最有名的黑葡萄酒。你绝对不会后悔的！",
+      "dialogue": {
+        "27c462b40f6c860d0472": "你好，欢迎光临，先生。要品尝一下我们的好酒吗?",
+        "579bd1a2032a3b61ef68": "啊，你见过雷纳多?来，给你，先生，这是我们特制的黑葡萄酒。在艾泽拉斯这可是独此一家别无分店哦!\n",
+        "6025c6d80868db218088": "啊，你见过雷纳多?来，给你，女士，这是我们特制的黑葡萄酒。在艾泽拉斯这可是独此一家别无分店哦!\n",
+        "dcf4093cce70f6883da0": "你好，欢迎光临，小姐。要品尝一下我们的好酒吗?",
+        "fc7f1df282831b38538e": "无论你跟任何人谈起酒，大家都会告诉你加林纳家卖的酒是全暴风城最好的。而且那里离我们这儿并不远，就在贸易区中，运河的边上。\n\n给，拿着这张酒票。把这个拿到店里去，交给我的姐姐苏泽塔，她会送你一瓶我们酿造的最有名的黑葡萄酒。你绝对不会后悔的！"
+      },
       "summary": "到加林纳酒店去, 将酒票交给苏泽塔·加林纳以换一瓶免费的酒。",
       "title": "酒店的广告",
       "translationMetadata": {
@@ -428,6 +1031,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -444,6 +1077,13 @@
     },
     "zhTW": {
       "description": "無論你跟任何人談起酒，大家都會告訴你加林納家賣的酒是全暴風城最好的。而且那裡離我們這兒並不遠，就在貿易區中，運河的邊上。\n\n給，拿著這張酒票。把這個拿到店裡去，交給我的姐姐蘇澤塔，她會送你一瓶我們釀造的最有名的黑葡萄酒。你絕對不會後悔的！",
+      "dialogue": {
+        "27c462b40f6c860d0472": "你好，歡迎光臨，先生。要品嚐一下我們的好酒嗎?",
+        "579bd1a2032a3b61ef68": "啊，你見過雷納托了？給你，$g先生:女士;。這是我們特製的黑皮諾葡萄酒。整個艾澤拉斯都找不到能與之媲美的酒！",
+        "6025c6d80868db218088": "啊，你見過雷納托了？給你，$g先生:女士;。這是我們特製的黑皮諾葡萄酒。整個艾澤拉斯都找不到能與之媲美的酒！",
+        "dcf4093cce70f6883da0": "你好，歡迎光臨，小姐。要品嚐一下我們的好酒嗎?",
+        "fc7f1df282831b38538e": "無論你跟任何人談起酒，大家都會告訴你加林納家賣的酒是全暴風城最好的。而且那裡離我們這兒並不遠，就在貿易區中，運河的邊上。\n\n給，拿著這張酒票。把這個拿到店裡去，交給我的姐姐蘇澤塔，她會送你一瓶我們釀造的最有名的黑葡萄酒。你絕對不會後悔的！"
+      },
       "summary": "到加林納酒店去, 將酒票交給蘇澤塔·加林納以換一瓶免費的酒。",
       "title": "酒店的廣告",
       "translationMetadata": {
@@ -452,6 +1092,34 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.27c462b40f6c860d0472": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.579bd1a2032a3b61ef68": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6025c6d80868db218088": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dcf4093cce70f6883da0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.fc7f1df282831b38538e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

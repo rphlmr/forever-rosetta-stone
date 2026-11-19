@@ -1,8 +1,28 @@
 {
   "areaId": 405,
+  "dialogueContexts": {
+    "32bca136086ff54f0c34": {
+      "lineId": "q:1480:complete",
+      "npcId": 4498,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "b11da89ebd0dd9f30938": {
+      "lineId": "q:1480:progress",
+      "npcId": 4498,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Roztrhaná kůže páchne rozkladem a je pozoruhodně ohebná na něco, co vypadá suše a křehce.\n\nKdyž ji rozbalíš, jasně vidíš červené značky nějakého písma na jedné straně. Dole na kůži je velmi zřetelný symbol, o kterém hádáš, že je jakýsi podpis.\n\nMožná by ti o tom mohl říct víc Maurin?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, ty runy jsou skutečně jazyk, $N, starý jazyk. Vzdáleně připomínají eredunštinu, ale rozdíly jsou zásadní. Nemýlím-li se, jde o nějakou smlouvu.... Tady, ano, tenhle symbol je démonův podpis: lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Hořící čepel si začíná uvědomovat, jak je ve skutečnosti slabá. Její magie je ubohá, její síla chabá.$B$B Veškerá její moc pochází od těch, kterým slouží, nikoli z pochopení skutečné moci a vědění."
+      },
       "summary": "Přines Flayed Demon Skin Maurinovi Bonesplitterovi v Desolace.",
       "title": "Kazitel",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Det iturevne skind lugter råddent og er bemærkelsesværdigt smidigt for noget, der ser tørt og skrøbeligt ud.\n\nDa du ruller det ud, kan du tydeligt se de røde mærker af en slags sprog på den ene side. Nederst på skindet er et meget tydeligt symbol, som du gætter på er en slags underskrift.\n\nMåske kan Maurin fortælle dig mere om det?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, disse runer er ganske rigtigt et sprog, $N, et gammelt sprog. De minder lidt om eredun, men forskellene er store. Hvis jeg ikke tager fejl, er det en slags kontrakt.... Her, ja, dette symbol er dæmonens underskrift: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Burning Blade begynder at indse, hvor svage de virkelig er. Deres magi er ynkelig, deres styrke ringe.$B$B Deres eneste magt kommer fra dem, de tjener, ikke fra nogen forståelse af sand magt og viden."
+      },
       "summary": "Bring Flayed Demon Skin til Maurin Bonesplitter i Desolace.",
       "title": "Fordærveren",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0fbce676854dc49d21d72b8bea8e1c34bc698ea8c5c09c4a23c85372e61c1537"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Die zerrissene Haut riecht verfault und ist erstaunlich geschmeidig für etwas, das so trocken und zerbrechlich wirkt.\n\nAls Ihr sie aufrollt, könnt Ihr deutlich die roten Zeichen einer Art Sprache auf der einen Seite erkennen. Am unteren Ende der Haut befindet sich ein sehr deutliches Symbol, das Ihr für eine Art Unterschrift haltet.\n\nVielleicht könnte Maurin Euch mehr darüber erzählen?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, diese Runen stammen tatsächlich von einer Sprache, $N, einer alten Sprache. Sie scheinen vage Ähnlichkeit mit der Sprache der Eredun zu haben, doch die Unterschiede sind gewichtig. Wenn ich mich nicht irre, ist dies eine Art von Vertrag. . . Hier, ja, dieses Symbol ist die Unterschrift eines Dämons: Lord Azrethoc. ",
+        "b11da89ebd0dd9f30938": "Die Burning Blade begreifen langsam, wie schwach sie wirklich sind. Ihre Magie ist jämmerlich, ihre Stärke lachhaft. \n \n Ihre einzige Macht kommt von jenen, denen sie dienen, und nicht von einem Verständnis von wahrer Macht und Wissen. "
+      },
       "summary": "Bringt die geschundene Dämonenhaut nach Desolace zu Maurin Bonesplitter.",
       "title": "Der Verderber",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "The torn skin smells rotten, and is remarkably pliable for something that appears to be dry and fragile.\n\nAs you unroll it, you can clearly see the red markings of some kind of language on one side. At the bottom of the skin is a very clear symbol that you guess is a signature of some kind.\n\nPerhaps it is something Maurin could tell you more about?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, these runes are indeed a language, $N, an old language. They seem remotely similar to the Eredun language, but the differences are drastic. If I am not mistaken, this is a contract of some kind.... Here, yes, this symbol is the demon's signature: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "The Burning Blade begin to realize how weak they truly are. Their magics are pathetic, their strength feeble.$B$BTheir only power comes from those they serve, and not from any understanding of true power and knowledge."
+      },
       "summary": "Bring the Flayed Demon Skin to Maurin Bonesplitter in Desolace.",
       "title": "The Corrupter",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "La piel desgarrada huele a podrido y es muy flexible pese a lo seca y frágil que parece.\n\nAl desenrollarla ves que tiene símbolos gráficos en rojo en un lado. En la parte inferior se ve muy claro un símbolo; supones que es una firma.\n\nQuizás Maurin te pueda explicar lo que es.",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Estas runas son muy, muy antiguas, $n. Se parecen un poco a las del Eredun, pero con grandes diferencias. Esto parece un contrato... Sí, este símbolo es la firma del demonio: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Filo Ardiente empieza a percatarse de cuán vulnerables son. Su magia es ridícula, carecen de fuerza.\n\nSu poder proviene de aquellos a quienes sirven, pero no lo comprenden en absoluto."
+      },
       "summary": "Lleva la piel de demonio a Maurin Partehuesos a Desolace.",
       "title": "El corruptor",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "La piel desgarrada huele a podrido y es muy flexible pese a lo seca y frágil que parece.\n\nAl desenrollarla ves que tiene símbolos gráficos en rojo en un lado. En la parte inferior se ve muy claro un símbolo; supones que es una firma.\n\nQuizás Maurin te pueda explicar lo que es.",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Estas runas son muy, muy antiguas, $n. Se parecen un poco a las del Eredun, pero con grandes diferencias. Esto parece un contrato... Sí, este símbolo es la firma del demonio: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Filo Ardiente empieza a percatarse de cuán vulnerables son. Su magia es ridícula, carecen de fuerza.\n\nSu poder proviene de aquellos a quienes sirven, pero no lo comprenden en absoluto."
+      },
       "summary": "Lleva la piel de demonio a Maurin Partehuesos a Desolace.",
       "title": "El corruptor",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "La peau déchirée sent le pourri. Malgré son aspect sec et fragile, elle est remarquablement souple.\n\nEn la déroulant, vous voyez clairement une sorte de langage écrit en rouge sur l'un des côtés. Un symbole est apposé en évidence en bas de la peau ; vous supposez qu’il s’agit d’une signature.\n\nPeut-être Maurin pourrait-il vous en dire plus ?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmmm, ces runes composent effectivement un langage, $N, un vieux langage. Elles me font penser à celui d'Eredun, mais avec des différences importantes. Si je ne m'abuse, il s'agit là d'une sorte de contrat… Oui, regardez, ce symbole est la signature du démon, un certain \"seigneur Azrethoc\". ",
+        "b11da89ebd0dd9f30938": "Les membres de la Lame ardente commencent à réaliser à quel point ils sont faibles. Leurs magies sont pathétiques et leurs forces frêles. \n \n Leur seule puissance vient de ceux qu'ils servent et non de la possession de quelque pouvoir ou connaissance. "
+      },
       "summary": "Apporter une Peau de démon écorché à Maurin Bonesplitter en Désolace.",
       "title": "Le corrupteur",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +304,10 @@
     },
     "hrHR": {
       "description": "Razderana koža miriše na trulež i iznimno je savitljiva za nešto što izgleda suho i krhko.\n\nDok je odmotavaš, jasno vidiš crvene oznake nekakva jezika na jednoj strani. Na dnu kože nalazi se vrlo jasan simbol za koji pretpostavljaš da je nekakav potpis.\n\nMožda bi ti Maurin mogao reći više o tome?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, ove rune doista jesu jezik, $N, stari jezik. Izdaleka nalikuju eredunskom, ali razlike su velike. Ako se ne varam, ovo je nekakav ugovor.... Ovdje, da, ovaj simbol je demonov potpis: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Burning Blade počinje shvaćati koliko su doista slabi. Njihova je magija bijedna, njihova snaga neznatna.$B$B Jedina moć dolazi im od onih kojima služe, a ne iz razumijevanja prave moći i znanja."
+      },
       "summary": "Donesi oderanu demonsku kožu Maurinu Bonesplitteru u Desolaceu.",
       "title": "Kvaritelj",
       "translationMetadata": {
@@ -189,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0fbce676854dc49d21d72b8bea8e1c34bc698ea8c5c09c4a23c85372e61c1537"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +345,10 @@
     },
     "itIT": {
       "description": "La pelle strappata puzza di marcio ed è sorprendentemente flessibile per qualcosa che sembra secco e fragile.\n\nSrotolandola, vedi chiaramente su un lato i segni rossi di una qualche lingua. In fondo alla pelle c'è un simbolo molto netto che supponi sia una specie di firma.\n\nForse Maurin potrebbe dirti qualcosa di più?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, queste rune sono davvero una lingua, $N, una lingua antica. Somigliano vagamente alla lingua Eredun, ma le differenze sono enormi. Se non mi sbaglio, si tratta di una specie di contratto... Ecco, sì, questo simbolo è la firma del demone: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Quelli della Burning Blade cominciano a capire quanto siano davvero deboli. Le loro magie sono patetiche, la loro forza misera.\n\nIl loro unico potere viene da coloro che servono, e non da una qualche comprensione del vero potere e della vera conoscenza."
+      },
       "summary": "Porta la pelle di demone scuoiata a Maurin Bonesplitter a Desolace.",
       "title": "Il Corruttore",
       "translationMetadata": {
@@ -216,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0fbce676854dc49d21d72b8bea8e1c34bc698ea8c5c09c4a23c85372e61c1537"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +388,10 @@
     },
     "koKR": {
       "description": "부드러운 가죽은 찢겨져 있고 썩은 냄새가 진동하고 있습니다.\n\n가죽을 펼치자 한쪽 면에 어떤 언어로 쓰인 붉은 색 표시가 선명히 보입니다. 맨 아래쪽에는 일종의 서명으로 추측되는 기호가 선명히 새겨져 있습니다.\n\n어쩌면 마우린이 이 가죽에 대해 좀 더 자세히 알려줄 수 있을지도 모릅니다.",
+      "dialogue": {
+        "32bca136086ff54f0c34": "흠, 이 룬은 일종의 언어, 아주 오래된 언어가 틀림없소. 언뜻 보면 에레둔어와도 유사한 듯하지만 차이가 상당히 크군. 내 생각이 맞다면 일종의 계약서 같은데... 그래, 여기, 여기 이 기호는 제왕 아즈레토크라는 악마의 서명이군.",
+        "b11da89ebd0dd9f30938": "불타는칼날단이 자신들이 실로 얼마나 나약한 존재인지 깨닫기 시작하는군. 사실 놈들의 마법은 보잘것없고 힘도 약하다오.\n\n놈들이 섬기는 자들이 힘을 주지 않으면 한낱 허수아비에 불과하지. 그들의 힘과 지식은 스스로 얻은 게 아니오."
+      },
       "summary": "잊혀진 땅에 있는 마우린 본스플리터에게 악마의 가죽을 가져다주십시오.",
       "title": "타락자",
       "translationMetadata": {
@@ -242,6 +400,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +428,10 @@
     },
     "plPL": {
       "description": "Poszarpana skóra cuchnie zgnilizną i jest niezwykle giętka jak na coś, co wygląda na suche i kruche.\n\nGdy ją rozwijasz, wyraźnie widzisz po jednej stronie czerwone znaki jakiegoś języka. Na dole skóry znajduje się bardzo wyraźny symbol, który według ciebie jest jakimś podpisem.\n\nMoże Maurin zdoła powiedzieć ci o tym coś więcej?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, te runy są rzeczywiście językiem, $N, bardzo starym językiem. Przypominają nieco eredun, ale różnice są ogromne. Jeśli się nie mylę, to jakiś rodzaj umowy.... Tutaj, tak, ten symbol jest podpisem demona: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Burning Blade zaczynają rozumieć, jak naprawdę są słabi. Ich magia jest żałosna, a siła znikoma.$B$B Cała ich moc pochodzi od tych, którym służą, a nie ze zrozumienia prawdziwej potęgi i wiedzy."
+      },
       "summary": "Zanieś zdartą skórę demona Maurinowi Bonesplitterowi w Desolace.",
       "title": "Skaziciel",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0fbce676854dc49d21d72b8bea8e1c34bc698ea8c5c09c4a23c85372e61c1537"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "A pele rasgada tem cheiro podre e é notavelmente maleável para uma coisa que parece seca e frágil.\n\nConforme você a desenrola, é possível ver claramente as marcas vermelhas em algum tipo de língua em um dos lados. Na parte de baixo da pele, há um símbolo claro, que você imagina ser algum tipo de assinatura.\n\nTalvez o Maurin possa lhe dizer alguma coisa sobre isso.",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, essas runas são, de fato, uma língua, $N, uma língua antiga. Elas se parecem remotamente com a língua dos Eredun, mas as diferenças são drásticas. Se não me engano, isto é algum tipo de contrato... Aqui, sim, este símbolo é a assinatura do demônio: Lorde Azrethoc.",
+        "b11da89ebd0dd9f30938": "A Lâmina Ardente começa a perceber o quão fracos eles são de verdade. Suas magias são patéticas, sua força, débil.\n\nSeu único poder vem daqueles a quem eles servem, e não de qualquer compreensão de verdadeiros poder e conhecimento."
+      },
       "summary": "Leve a Pele de Demônio Esfolada a Maurin Rachaosso na Desolação.",
       "title": "O Corruptor",
       "translationMetadata": {
@@ -293,6 +481,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +509,10 @@
     },
     "ruRU": {
       "description": "Эта рваная кожа пахнет гнилью, и она на удивление мягкая и гибкая для такого сухого и хрупкого на вид материала.\n\nЕсли ее развернуть, на ней видны красные письмена на непонятном наречии. А внизу – очень отчетливый отдельный символ, должно быть, подпись.\n\nМожет быть, Майрин сумеет объяснить, что это такое?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Хмм, действительно, эти руны похожи на язык, $N, старый язык. Кажется, он отдаленно похож на язык эредар. Если я не ошибаюсь, это какой-то контракт... Вот, да, вот эти символы подпись демона: Лорда Азретока.",
+        "b11da89ebd0dd9f30938": "Пылающий Клинок начинает понимать, насколько они слабы. Их магия вызывает жалость и сила их слаба.\n\nИх власть проявляется благодаря тому, кому они служат, а не от каких либо знаний и пониманий истинной силы и знаний."
+      },
       "summary": "Отнесите рваную демонскую кожу Майрину Костолому в Пустоши.",
       "title": "Осквернитель душ",
       "translationMetadata": {
@@ -317,6 +521,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +549,10 @@
     },
     "svSE": {
       "description": "Det rivna skinnet luktar ruttet och är märkligt följsamt för något så torrt och skört.\n\nNär du rullar upp det syns röda tecken i ett språk på ena sidan. Längst ner finns en tydlig symbol du antar är en underskrift.\n\nKanske kan Maurin berätta mer om det?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, dessa runor är faktiskt ett språk, $N, ett gammalt språk. De påminner svagt om eredun, men skillnaderna är stora. Om jag inte misstar mig är detta någon sorts kontrakt.... Här, ja, denna symbol är demonens underskrift: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Burning Blade börjar inse hur svaga de verkligen är. Deras magi är ynklig och deras styrka klen.$B$B Deras enda makt kommer från dem de tjänar, inte från någon förståelse för sann makt och kunskap."
+      },
       "summary": "Ta med det flådda demonskinnet till Maurin Bonesplitter i Desolace.",
       "title": "Fördärvaren",
       "translationMetadata": {
@@ -342,6 +562,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0fbce676854dc49d21d72b8bea8e1c34bc698ea8c5c09c4a23c85372e61c1537"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +590,10 @@
     },
     "trTR": {
       "description": "Yırtık deri çürük kokuyor; kuru ve kırılgan görünen bir şey için şaşırtıcı derecede esnek.\n\nAçtığında bir yüzünde bir tür dilin kırmızı işaretlerini açıkça görüyorsun. Derinin altında, bir tür imza olduğunu tahmin ettiğin çok belirgin bir simge var.\n\nBelki Maurin'in hakkında daha fazlasını anlatabileceği bir şeydir?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Hmm, bu rünler gerçekten bir dil, $N, eski bir dil. Eredun diline uzaktan benziyorlar ama aradaki farklar çok büyük. Yanılmıyorsam bu bir tür sözleşme.... İşte, evet, bu sembol iblisin imzası: Lord Azrethoc.",
+        "b11da89ebd0dd9f30938": "Burning Blade gerçekte ne kadar zayıf olduğunu anlamaya başlıyor. Büyüleri zavallı, güçleri cılız.$B$B Tek güçleri hizmet ettiklerinden geliyor; gerçek güç ve bilgiyi anlamalarından değil."
+      },
       "summary": "Yüzülmüş İblis Derisi'ni Desolace'taki Maurin Bonesplitter'a getir.",
       "title": "Yozlaştırıcı",
       "translationMetadata": {
@@ -369,6 +603,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0fbce676854dc49d21d72b8bea8e1c34bc698ea8c5c09c4a23c85372e61c1537"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +631,10 @@
     },
     "ukUA": {
       "description": "Ця обдерта шкіра пахне гниллю, але вона напрочуд гнучка, хоча на перший погляд здається сухою і крихкою.\n\nРозгорнувши її, ви можете чітко побачити червоні письмена якоюсь незрозумілою мовою. В нижній частині шкіри дуже чіткий символ, схожий на підпис.\n\nМожливо, Маврін міг би розповісти більше про це?",
+      "dialogue": {
+        "32bca136086ff54f0c34": "Хм, ці руни справді є мовою, $N, давньою мовою. Вони віддалено нагадують ередун, але відмінності величезні. Якщо я не помиляюся, це якийсь договір.... Ось, так, цей символ — підпис демона: лорд Азреток.",
+        "b11da89ebd0dd9f30938": "Палаючий Клинок починає усвідомлювати, який він насправді слабкий. Його магія жалюгідна, а сила мізерна.$B$B Уся його міць походить від тих, кому він служить, а не від розуміння справжньої сили та знань."
+      },
       "summary": "Принесіть обдерту шкіру демона Мавріну Кісткощепу в Спустошище.",
       "title": "Спотворювач",
       "translationMetadata": {
@@ -397,6 +645,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "0fbce676854dc49d21d72b8bea8e1c34bc698ea8c5c09c4a23c85372e61c1537"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +675,10 @@
     },
     "zhCN": {
       "description": "这片被裁下来的皮子很臭，似乎已经有点腐烂了, 值得注意的是，这块看上去干燥而松脆的东西却异常柔软。\n\n在摊开它之后，你可以清楚地看见其中一面上有着用某种语言写成的红色标记文字。在皮子的底端有一个十分清晰的符号，你认为这是个签名。\n\n也许玛乌林能告诉你些什么？",
+      "dialogue": {
+        "32bca136086ff54f0c34": "嗯，这些符文确实是某种语言，$N，某种古老的语言。它们似乎与艾瑞达语有点类似，但仍然与其相去甚远。如果我没有看错的话，这是某种契约……你看这里，没错……这个符文正是一个恶魔的签名:阿兹雷索克领主。\n",
+        "b11da89ebd0dd9f30938": "火刃族开始意识到他们有多麽的渺小了。他们的魔法是肤浅的，他们的力量是薄弱的。\n\n他们唯一可以依靠的力量来自他们所侍奉的主人，而不是来自於对於力量与知识的真正理解和掌握。"
+      },
       "summary": "把恶魔之皮拿给凄凉之地的玛乌林·碎骨看看。",
       "title": "堕落者",
       "translationMetadata": {
@@ -425,6 +687,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +715,10 @@
     },
     "zhTW": {
       "description": "這塊被裁下來的皮革聞起來有股腐臭味,而且看起來乾燥而易碎的東西卻是異常地柔軟。\n\n在攤開它之後，你可以清楚地看見其中一面上有著用某種語言寫成的紅色標記文字。在皮革的底端有一個十分清晰的符號，你認為這是個簽名。\n\n也許莫林能告訴你些什麼？",
+      "dialogue": {
+        "32bca136086ff54f0c34": "嗯，這些符文確實是某種語言，$N，某種古老的語言。它們似乎與艾瑞達語有點類似，但仍然與其相去甚遠。如果我沒有看錯的話，這是某種契約……你看這裏，沒錯……這個符文正是一個惡魔的簽名:阿茲雷索克領主。",
+        "b11da89ebd0dd9f30938": "燃刃族開始意識到他們有多麼的渺小了。他們的魔法是膚淺的，他們的力量是薄弱的。\n\n他們唯一可以依靠的力量來自他們所侍奉的主人，而不是來自於對於力量與知識的真正理解和掌握。"
+      },
       "summary": "把這塊惡魔之皮拿給淒涼之地的莫林·碎骨看看。",
       "title": "墮落者",
       "translationMetadata": {
@@ -449,6 +727,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.32bca136086ff54f0c34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.b11da89ebd0dd9f30938": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

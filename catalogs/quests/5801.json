@@ -1,8 +1,36 @@
 {
   "areaId": 440,
+  "dialogueContexts": {
+    "39c9a9f87a0e1d3b6f29": {
+      "lineId": "q:5801:complete",
+      "npcId": 11056,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "6984cfa0ce6f40cd724c": {
+      "lineId": "q:5801:progress",
+      "npcId": 11056,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "e851fab797087ac69b96": {
+      "lineId": "q:5801:accept",
+      "npcId": 5411,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Na výrobu dříku klíče potřebuješ dva ingoty thoria a pořádně žhavý zdroj tepla. Thorium je na tobě, ale s tím teplem ti pomůžu.\n\nNa západ od nás, v kráteru Un'Goro, leží hřeben Fire Plume, doutnající sopka. Lávové jezero nahoře je dost horké na to, aby spojilo thorium a kost dohromady. Tvé zlato ti opatřilo formu, kterou stačí ponořit do jezera nahoře; zbytek obstará láva.\n\nZ mé strany je to vše. K dokončení klíče si budeš muset znovu promluvit s Arbingtonem.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Máme tu pěkně drahý kostěný klíč, že, $N? Přesto není hotový. Nastal čas dodat našemu výtvoru sílu. Budeš muset čelit největšímu nepříteli, k němuž naše snažení v Andorhalu směřovalo: zlovolné bytosti, která vládne za hradbami zničeného města.$B$BMluvím o Arajovi Vyvolávači, lichovi a jedné z nejmocnějších bytostí Pohromy.",
+        "6984cfa0ce6f40cd724c": "Máš hotový dřík kostěného klíče? Mrzí mě, že jsi musel zaplatit většinu ceny formy, ale všichni musíme přispět k boji proti Pohromě. Jakmile mi předáš nedokončený klíč, budeš připraven získat poslední součást potřebnou k jeho dokončení.$B$BNebude to snadné, ale práce, kterou jsi dosud věnoval přípravě útoku na Andorhal, se nyní začne vyplácet. Uvidíš.",
+        "e851fab797087ac69b96": "K vykování dříku klíče potřebuješ dva thoriové pruty a velmi silný zdroj tepla. Thorium si musíš obstarat sám, ale s teplem ti pomohu.$B$BNa západ od nás, v kráteru Un'Goro, je Fire Plume Ridge, doutnající sopka. Lávové jezero na vrcholu je dost horké, aby spojilo thorium a kost. Za své zlato jsi koupil formu, kterou stačí ponořit do jezera; láva se postará o zbytek.$B$BTo je z mé strany vše. K dokončení klíče znovu promluv s Arbingtonem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "898db8c49076f8642cb5ac361e8dbfec781e85ad49a8e78b84145a3aa62c4903"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +86,11 @@
     },
     "daDK": {
       "description": "Du skal bruge to thoriumbarer og en meget varm varmekilde for at smede nøglens skaft. Du er på egen hånd med thoriumet, men jeg kan hjælpe med varmen.\n\nVest for os i Un'Goro Crater ligger Fire Plume Ridge, en ulmende vulkan. Lavasøen på toppen er varm nok til at smelte thorium og knogle sammen. Dit guld har købt dig en støbeform, som du blot skal dyppe i søen på toppen; lavaen klarer resten.\n\nDet er alt fra min side. For at færdiggøre din nøgle skal du tale med Arbington igen.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Det er noget af en kostbar skeletnøgle, vi har der, ikke sandt, $N? Men den er stadig ufærdig. Tiden er kommet til at give vores skabning kraft. Du må møde den største fjende, vi har arbejdet hen imod i Andorhal, den onde skabning, der styrer bag den ødelagte bys mure.$B$BJeg taler om Araj Besværgeren, en lich og et af Svøbens mægtigste væsener.",
+        "6984cfa0ce6f40cd724c": "Er skeletnøglens skaft færdigt? Jeg beklager, at du måtte betale hovedparten af formen, men vi må alle gøre vores del mod Svøben. Når du giver mig den ufærdige nøgle, er du klar til den sidste del, der skal til for at fuldføre den.$B$BDet bliver ikke let, men dit hidtidige arbejde med forberedelserne til angrebet på Andorhal vil begynde at betale sig. Du skal se.",
+        "e851fab797087ac69b96": "Du skal bruge to thoriumbarrer og en meget varm varmekilde til at smede nøglens skaft. Thorium må du selv skaffe, men jeg kan hjælpe med varmen.$B$BMod vest i Un'Goro-krateret ligger Fire Plume Ridge, en ulmende vulkan. Lavasøen på toppen er varm nok til at smelte thorium og knogle sammen. Dit guld har købt en form, som du blot skal dyppe i søen; lavaen klarer resten.$B$BDet er alt fra mig. Tal med Arbington igen for at færdiggøre nøglen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +107,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "898db8c49076f8642cb5ac361e8dbfec781e85ad49a8e78b84145a3aa62c4903"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +145,11 @@
     },
     "deDE": {
       "description": "Ihr braucht zwei Barren Thorium und eine kräftige und sehr heiße Wärmequelle, um den Schaft des Schlüssels zu schmieden. Das Thorium müsst Ihr Euch selbst besorgen, aber mit der Wärmequelle kann ich Euch helfen.\n\nWestlich von hier im Un'Goro Krater liegt der Feuerfedergrat - ein brodelnder Vulkan. Der Lavasee an seiner Spitze ist heiß genug, um Thorium und Knochen miteinander zu verschmelzen. Ihr habt mit Eurem Gold eine Form erstanden, die Ihr einfach nur in den See tauchen müsst. Die Lava erledigt dann den Rest.\n\nDas war's von meiner Seite. Um Euren Schlüssel fertig zu stellen, müsst Ihr noch einmal mit Arbington sprechen.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Da haben wir aber einen ziemlich teuren Skelettschlüssel, was, $N? Er ist jedoch noch nicht fertig. Jetzt wird es Zeit, uns näher mit unserem Werk zu befassen. Dazu werdet Ihr Euch dem Schlimmsten aller Feinde stellen müssen, mit denen wir auf dem Weg nach Andorhal zu tun hatten . . . dem ruchlosen Wesen, das in der Ruine der Stadt die Fäden zieht. \n \n Ich spreche von Araj dem Beschwörer . . . das ist ein Lich und eines der mächtigsten Wesen aus den Reihen der Geißel. ",
+        "6984cfa0ce6f40cd724c": "Habt Ihr den Schaft des Skelettschlüssels fertig gestellt? Es tut mir Leid, dass Ihr das Meiste zum Kauf der Form beisteuern musstet, aber wir müssen alle unseren Beitrag leisten, um der Geißel Herr zu werden. Wenn Ihr mir den unvollendeten Schlüssel gebt, seid Ihr für den letzten Gegenstand bereit, der benötigt wird, um die Herstellung des Schlüssels abzuschließen. \n \n Es wird nicht gerade einfach werden, aber die ganze Arbeit, die Ihr bis jetzt zur Vorbereitung eines Angriffs auf Andorhal geleistet habt, wird sich schließlich auszahlen. Ihr werdet schon sehen. ",
+        "e851fab797087ac69b96": "Ihr braucht zwei Barren Thorium und eine kräftige und sehr heiße Wärmequelle, um den Schaft des Schlüssels zu schmieden. Das Thorium müsst Ihr Euch selbst besorgen, aber mit der Wärmequelle kann ich Euch helfen.\n\nWestlich von hier im Un'Goro Krater liegt der Feuerfedergrat - ein brodelnder Vulkan. Der Lavasee an seiner Spitze ist heiß genug, um Thorium und Knochen miteinander zu verschmelzen. Ihr habt mit Eurem Gold eine Form erstanden, die Ihr einfach nur in den See tauchen müsst. Die Lava erledigt dann den Rest.\n\nDas war's von meiner Seite. Um Euren Schlüssel fertig zu stellen, müsst Ihr noch einmal mit Arbington sprechen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +165,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +205,11 @@
     },
     "enUS": {
       "description": "You need two bars of thorium and a powerfully hot heat source to forge the key stem.  You're on your own for the thorium, but I can help with the heat.\n\nTo our west in Un'Goro Crater is Fire Plume Ridge - a simmering volcano.  The lava lake up top is hot enough to fuse thorium and bone together.  Your gold has bought you a mold that simply requires you to dip it in the lake up top; the lava will take care of the rest.\n\nThat's it on my end.  To finish your key, you'll need to talk to Arbington again.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "We've got quite the costly skeleton key there, don't we $N?  Still, it remains unfinished; the time has now come to put some focus behind our creation.  To that end, you're going to have to face the ultimate foe we've been working towards facing in Andorhal... the nefarious being that runs the show within the ruined city walls.$B$BI'm speaking of Araj the Summoner - a lich, and one of the most powerful beings the Scourge calls as its own.",
+        "6984cfa0ce6f40cd724c": "Do you have the stem of the skeletal key finished?  I'm sorry you had to bear the brunt of the fee to purchase the mold, but we must all do our part to counter the Scourge.  Once you hand me the unfinished key, you'll be ready for the final item needed to complete its construction.$B$BIt won't be easy at all, but the work you've done to date in preparing for an assault on Andorhal will now start to pay for itself.  You'll see.",
+        "e851fab797087ac69b96": "You need two bars of thorium and a powerfully hot heat source to forge the key stem.  You're on your own for the thorium, but I can help with the heat.$B$BTo our west in Un'Goro Crater is Fire Plume Ridge - a simmering volcano.  The lava lake up top is hot enough to fuse thorium and bone together.  Your gold has bought you a mold that simply requires you to dip it in the lake up top; the lava will take care of the rest.$B$BThat's it on my end.  To finish your key, you'll need to talk to Arbington again."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +225,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -157,6 +266,11 @@
     },
     "esES": {
       "description": "Necesitas dos barras de torio y una poderosa fuente de calor para forjar la llave. Con el torio no puedo ayudarte pero sí con la fuente de calor.\n\nAl oeste en el Cráter de Un'Goro se encuentra la Cresta del Penacho en Llamas, un volcán en activo. El lago de lava de su cima está lo suficientemente caliente como para derretir el torio. Con el molde que has adquirido, lo único que tendrás que hacer es sumergirlo en el lago de la cima y la lava se encargará del resto.\n\nEso es todo lo que puedo decirte. Para acabar tu llave, tendrás que hablar de nuevo con Arbington.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Ya tenemos la costosa llave esqueleto, ¿verdad, $n? Aun así, está incompleta. Ha llegado el momento de que rematemos nuestra creación. Para ello, tendrás que enfrentarte al mayor enemigo que encontrarás en Andorhal... el abominable ser que domina las ruinas de las murallas de la ciudad.\n\nMe refiero a Araj el Invocador, un exánime y uno de los seres más poderosos de la Plaga.",
+        "6984cfa0ce6f40cd724c": "¿Has acabado el mango de la llave esqueleto? Siento que hayas tenido que correr con los gastos del molde pero todos debemos poner algo de nuestra parte en nuestra lucha contra la Plaga. Cuando me traigas la llave incompleta, estarás preparado para recibir el elemento que necesitas para completar la llave.\n\nNo será fácil pero todo lo que has hecho para preparar el ataque a Andorhal comenzará ahora a dar sus frutos. Ya lo verás...",
+        "e851fab797087ac69b96": "Necesitas dos barras de torio y una poderosa fuente de calor para forjar la llave. Con el torio no puedo ayudarte pero sí con la fuente de calor.\n\nAl oeste en el Cráter de Un'Goro se encuentra la Cresta del Penacho en Llamas, un volcán en activo. El lago de lava de su cima está lo suficientemente caliente como para derretir el torio. Con el molde que has adquirido, lo único que tendrás que hacer es sumergirlo en el lago de la cima y la lava se encargará del resto.\n\nEso es todo lo que puedo decirte. Para acabar tu llave, tendrás que hablar de nuevo con Arbington."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +286,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -194,6 +326,11 @@
     },
     "esMX": {
       "description": "Necesitas dos barras de torio y una poderosa fuente de calor para forjar la llave. Con el torio no puedo ayudarte pero sí con la fuente de calor.\n\nAl oeste en el Cráter de Un'Goro se encuentra la Cresta del Penacho en Llamas, un volcán en activo. El lago de lava de su cima está lo suficientemente caliente como para derretir el torio. Con el molde que has adquirido, lo único que tendrás que hacer es sumergirlo en el lago de la cima y la lava se encargará del resto.\n\nEso es todo lo que puedo decirte. Para acabar tu llave, tendrás que hablar de nuevo con Arbington.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Tenemos una llave esqueleto bastante costosa, ¿no, $N? Pero aún no está terminada. Ha llegado el momento de infundir poder a nuestra creación. Para ello tendrás que enfrentarte al enemigo definitivo hacia el que hemos avanzado en Andorhal: el ser infame que manda tras las murallas de la ciudad en ruinas.$B$BMe refiero a Araj el Invocador, un exánime y uno de los seres más poderosos de la Plaga.",
+        "6984cfa0ce6f40cd724c": "¿Terminaste el vástago de la llave esqueleto? Lamento que hayas tenido que pagar la mayor parte del molde, pero todos debemos poner de nuestra parte contra la Plaga. Cuando me entregues la llave sin terminar, estarás listo para conseguir el último componente necesario.$B$BNo será nada fácil, pero el trabajo que hiciste preparando el ataque a Andorhal empezará a dar frutos. Ya verás.",
+        "e851fab797087ac69b96": "Necesitas dos barras de torio y una poderosa fuente de calor para forjar la llave. Con el torio no puedo ayudarte pero sí con la fuente de calor.\n\nAl oeste en el Cráter de Un'Goro se encuentra la Cresta del Penacho en Llamas, un volcán en activo. El lago de lava de su cima está lo suficientemente caliente como para derretir el torio. Con el molde que has adquirido, lo único que tendrás que hacer es sumergirlo en el lago de la cima y la lava se encargará del resto.\n\nEso es todo lo que puedo decirte. Para acabar tu llave, tendrás que hablar de nuevo con Arbington."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +346,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -231,6 +384,11 @@
     },
     "frFR": {
       "description": "Vous avez besoin de deux barres de thorium et d’une source de chaleur intense pour forger la tige de la clé. Pour le thorium, il faudra vous débrouiller tout seul, mais je peux vous aider pour la chaleur.\n\nA l’ouest d’ici, dans le cratère d'Un'Goro, se trouve la crête de la Fournaise – un volcan bouillonnant. Le lac de lave à son sommet est assez chaud pour fondre le thorium et les os ensemble. Votre or vous a permis d’acheter un moule que vous n’avez qu’à tremper dans le lac du sommet ; la lave se chargera du reste.\n\nC’est tout ce que je peux vous dire. Pour finir votre clé, il faudra retourner parler à Arbington.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "On a bien la coûteuse Clé squelette ici, non, $N ? Enfin, elle est presque finie ; le temps est venu de nous pencher sur la suite. Pour cela, vous allez affronter l'adversaire le plus terrible que nous ayons cherché à rencontrer à Andorhal. . . Cet être funeste mène la danse derrière les murs de la cité en ruines. \n \n Je veux parler d'Araj l'invocateur - une Liche, et une des plus puissantes entités que le Fléau revendique comme sienne. ",
+        "6984cfa0ce6f40cd724c": "Avez-vous terminé la tige de la Clé squelette ? Je suis désolé que vous ayez dû supporter le coût du moule, mais nous devons tous faire notre part dans la lutte contre le Fléau. Quand vous m'aurez donné la clé inachevée, vous serez prêt pour le dernier élément nécessaire à sa finalisation. \n \n Ça ne sera pas facile du tout, mais le travail que vous avez accompli jusqu'à présent pour préparer l'assaut sur Andorhal va commencer à payer maintenant. Vous verrez. ",
+        "e851fab797087ac69b96": "Vous avez besoin de deux barres de thorium et d’une source de chaleur intense pour forger la tige de la clé. Pour le thorium, il faudra vous débrouiller tout seul, mais je peux vous aider pour la chaleur.\n\nA l’ouest d’ici, dans le cratère d'Un'Goro, se trouve la crête de la Fournaise – un volcan bouillonnant. Le lac de lave à son sommet est assez chaud pour fondre le thorium et les os ensemble. Votre or vous a permis d’acheter un moule que vous n’avez qu’à tremper dans le lac du sommet ; la lave se chargera du reste.\n\nC’est tout ce que je peux vous dire. Pour finir votre clé, il faudra retourner parler à Arbington."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +404,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -268,6 +444,11 @@
     },
     "hrHR": {
       "description": "Trebaš dvije poluge torija i iznimno vruć izvor topline da iskuješ tijelo ključa. Za torij si prepušten sam sebi, ali mogu pomoći s toplinom.\n\nZapadno od nas u Un'Goro Crateru nalazi se Fire Plume Ridge, užareni vulkan. Jezero lave na vrhu dovoljno je vruće da spoji torij i kost. Svojim si zlatom kupio kalup koji samo trebaš uroniti u jezero na vrhu; lava će se pobrinuti za ostalo.\n\nTo je sve s moje strane. Da dovršiš ključ, morat ćeš ponovno razgovarati s Arbingtonom.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Imamo prilično skup kosturni ključ, zar ne, $N? Ali još nije dovršen. Vrijeme je da našem djelu damo snagu. Morat ćeš se suočiti s najvećim neprijateljem prema kojem smo se probijali u Andorhalu, zlokobnim bićem koje vlada unutar zidina razrušenog grada.$B$BGovorim o Araju Prizivaču, liču i jednom od najmoćnijih bića Pošasti.",
+        "6984cfa0ce6f40cd724c": "Je li osovina kosturnog ključa gotova? Žao mi je što si morao platiti većinu kalupa, ali svi moramo pridonijeti borbi protiv Pošasti. Kad mi predaš nedovršeni ključ, bit ćeš spreman za posljednji dio potreban za izradu.$B$BNeće biti lako, ali dosadašnje pripreme za napad na Andorhal počet će se isplaćivati. Vidjet ćeš.",
+        "e851fab797087ac69b96": "Za kovanje osovine ključa trebaju ti dvije poluge torija i vrlo snažan izvor topline. Torij moraš nabaviti sam, ali s toplinom ti mogu pomoći.$B$BZapadno od nas u krateru Un'Goro nalazi se Fire Plume Ridge, tinjajući vulkan. Jezero lave na vrhu dovoljno je vruće da spoji torij i kost. Zlatom si kupio kalup koji samo trebaš uroniti u jezero; lava će obaviti ostalo.$B$BTo je sve od mene. Da dovršiš ključ, ponovno razgovaraj s Arbingtonom."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +465,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "898db8c49076f8642cb5ac361e8dbfec781e85ad49a8e78b84145a3aa62c4903"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +503,11 @@
     },
     "itIT": {
       "description": "Ti servono due lingotti di torio e una fonte di calore estremamente intensa per forgiare il gambo della chiave. Per il torio dovrai arrangiarti, ma per il calore posso aiutarti.\n\nA ovest di qui, nel Cratere di Un'Goro, si trova Fire Plume Ridge, un vulcano ribollente. Il lago di lava in cima è abbastanza caldo da fondere insieme torio e ossa. Con il tuo oro hai comprato uno stampo che devi semplicemente immergere nel lago lassù: la lava farà il resto.\n\nDa parte mia è tutto. Per finire la chiave, dovrai parlare di nuovo con Arbington.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Ci è venuta una chiave scheletrica bella costosa, vero, $N? Eppure è ancora incompiuta; è arrivato il momento di concentrarci sulla nostra creazione. Per questo dovrai affrontare il nemico finale, quello per cui ci stiamo preparando ad Andorhal... l'essere nefando che tira le fila tra le mura della città in rovina.\n\nParlo di Araj l'Evocatore — un lich, e uno degli esseri più potenti che il Flagello annoveri tra i suoi.",
+        "6984cfa0ce6f40cd724c": "Hai completato il gambo della chiave scheletrica? Mi dispiace che tu abbia dovuto sostenere gran parte del costo dello stampo, ma tutti dobbiamo fare la nostra parte contro il Flagello. Quando mi consegnerai la chiave incompleta, sarai pronto per l'ultimo componente necessario a completarla.$B$BNon sarà affatto facile, ma il lavoro svolto finora per preparare l'assalto ad Andorhal comincerà a dare i suoi frutti. Vedrai.",
+        "e851fab797087ac69b96": "Per forgiare il fusto della chiave ti servono due barre di torio e una fonte di calore potentissima. Per il torio devi arrangiarti, ma per il calore posso aiutarti io.\n\nA ovest di qui, nell'Un'Goro Crater, c'è il Rilievo del Magma Colante — un vulcano che ribolle. Il lago di lava in cima è abbastanza caldo da fondere insieme torio e osso. Con il tuo oro hai comprato uno stampo che basta immergere nel lago lassù; al resto penserà la lava.\n\nDa parte mia è tutto. Per finire la chiave dovrai parlare di nuovo con Arbington."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +524,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "898db8c49076f8642cb5ac361e8dbfec781e85ad49a8e78b84145a3aa62c4903"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -346,6 +564,11 @@
     },
     "koKR": {
       "description": "열쇠를 만들려면 토륨 주괴 2개와 굉장히 높은 열을 낼 수 있는 장소가 필요하지. 토륨은 알아서 찾아보라고. 그 장소에 대해서는 내가 힌트를 좀 줄 테니까.\n\n여기서 서쪽으로 가면 있는 운고로 분화구에는 불기둥 마루라고 하는 활화산이 있어. 그 꼭대기, 용암의 강에서 뿜어져 나오는 열기는 토륨은 물론이고, 해골을 녹일 만큼 뜨겁지. 자네가 구입한 거푸집을 그 용암의 강에 잠깐 담그기만 하면 나머지는 용암이 알아서 할 거야.\n\n자, 여기까지! 참, 열쇠를 완성하려면 알빙턴과 다시 얘기를 해봐야 할 걸.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "$n, 불완전한 해골 열쇠를 가지고 계시겠죠. 조그만 열쇠 하나에 돈 한번 겁나게 들지 않습니까? 아시겠지만, 아직 완전하지 않은 상태입니다. 하지만, 고지가 멀지 않습니다. 이제는 열쇠를 완성한 후의 일에도 신경을 써야 합니다. 안돌할 공격의 궁극적인 목표는 파괴된 도시를 장악하고 있는 사악한 적을 무찌르는 것입니다.\n\n자칭 가장 강력한 스컬지라고 하는, 사악한 리치 소환사 아라즈를 말하는 겁니다.",
+        "6984cfa0ce6f40cd724c": "해골 열쇠는 거의 다 완성하셨나요? 죄송합니다만, 거푸집의 가격은 더 이상 깎아드릴 수가 없군요. 우린 스컬지를 상대할 수 있도록, 맡은바 소임에 충실할 뿐이랍니다. 제게 불완전한 해골 열쇠를 가져오셨다면, 당신에게 마지막으로 남은 일을 알려드리죠. 열쇠를 완성하려면 그 물건이 반드시 있어야 합니다.\n\n쉽지는 않겠지만, 안돌할 공격이라는 어마어마한 작전을 준비하신 분이니, 그만한 대가는 치를 준비가 되셨겠죠?! 차차 알게 될 거예요.",
+        "e851fab797087ac69b96": "열쇠를 만들려면 토륨 주괴 2개와 굉장히 높은 열을 낼 수 있는 장소가 필요하지. 토륨은 알아서 찾아보라고. 그 장소에 대해서는 내가 힌트를 좀 줄 테니까.\n\n여기서 서쪽으로 가면 있는 운고로 분화구에는 불기둥 마루라고 하는 활화산이 있어. 그 꼭대기, 용암의 강에서 뿜어져 나오는 열기는 토륨은 물론이고, 해골을 녹일 만큼 뜨겁지. 자네가 구입한 거푸집을 그 용암의 강에 잠깐 담그기만 하면 나머지는 용암이 알아서 할 거야.\n\n자, 여기까지! 참, 열쇠를 완성하려면 알빙턴과 다시 얘기를 해봐야 할 걸."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -361,6 +584,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -383,6 +624,11 @@
     },
     "plPL": {
       "description": "Potrzebujesz dwóch sztabek toru i niezwykle gorącego źródła ciepła, by wykuć trzon klucza. Tor musisz zdobyć sam, ale z gorącem mogę pomóc.\n\nNa zachód stąd, w Un'Goro Crater, leży Fire Plume Ridge, tlący się wulkan. Jezioro lawy na szczycie jest dość gorące, by stopić tor i kość. Za twoje złoto kupiono formę, którą wystarczy zanurzyć w jeziorze. Lawa zajmie się resztą.\n\nTo z mojej strony wszystko. Aby ukończyć klucz, musisz znów porozmawiać z Arbingtonem.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Drogo kosztował nas ten kościany klucz, prawda, $N? Nadal jednak nie jest gotowy. Czas nadać naszemu dziełu moc. Musisz zmierzyć się z ostatecznym przeciwnikiem, do którego dążyliśmy w Andorhalu: nikczemną istotą władającą za murami zrujnowanego miasta.$B$BMówię o Araju Przywoływaczu, liszu i jednej z najpotężniejszych istot Plagi.",
+        "6984cfa0ce6f40cd724c": "Czy trzon kościanego klucza jest gotowy? Przykro mi, że trzeba było ponieść większość kosztu formy, ale wszyscy musimy dołożyć się do walki z Plagą. Gdy oddasz mi niedokończony klucz, przyjdzie pora na ostatni element.$B$BNie będzie łatwo, ale dotychczasowe przygotowania do ataku na Andorhal zaczną się opłacać. Zobaczysz.",
+        "e851fab797087ac69b96": "Do wykucia trzonu potrzebujesz dwóch sztab toru i bardzo gorącego źródła ciepła. Tor musisz zdobyć samodzielnie, ale z ciepłem pomogę.$B$BNa zachodzie, w kraterze Un'Goro, leży Fire Plume Ridge, tlący się wulkan. Jezioro lawy na szczycie jest dość gorące, by stopić tor z kością. Złoto kupiło formę, którą wystarczy zanurzyć w jeziorze; lawa zrobi resztę.$B$BTo wszystko z mojej strony. Aby ukończyć klucz, porozmawiaj ponownie z Arbingtonem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -399,6 +645,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "898db8c49076f8642cb5ac361e8dbfec781e85ad49a8e78b84145a3aa62c4903"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -422,6 +683,11 @@
     },
     "ptBR": {
       "description": "Para forjar a palheta da chave, você vai precisar de duas barras de tório e uma fonte intensa de calor. O tório você vai ter que se virar pra arrumar, mas eu posso te ajudar com o calor.\n\nA oeste daqui, na Cratera Un'Goro, fica um vulcão poderoso chamado Pico Penacho de Fogo. Lá no alto, a lava é tão quente que vai fundir tório e osso que é uma beleza. Esse molde foi um tremendo investimento porque você só vai ter que colocá-lo no lago de lava no topo do pico e a lava vai fazer o resto do trabalho.\n\nDa minha parte, é isso aí. Agora, pra terminar a chave, você vai ter que falar com Arvignon outra vez.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "É uma chave-mestra bastante cara, não é mesmo, $N? Contudo, ainda não está terminada. Agora chegou a hora de pôr um certo foco em nossa criação. Para isso, você vai ter que encarar o inimigo que temos trabalhado tanto para enfrentar em Andorhal... o ser nefasto que dá todas as ordens por trás das muralhas arruinadas da cidade.\n\nEstou falando de Araj, o Evocador — um lich que é um dos seres mais poderosos por trás do Flagelo.",
+        "6984cfa0ce6f40cd724c": "Você terminou a palheta da chave-mestra? Sinto muito que você tenha tido que arcar com os custos do molde, mas todos temos que fazer a nossa parte para conter o Flagelo. Assim que me entregar a chave inacabada, você estará pronto para obter o último item necessário para, enfim, terminar a chave.\n\nNão será nada fácil, mas logo vamos começar a colher os frutos de todo o trabalho que você dedicou à preparação do ataque a Andorhal. Você vai ver.",
+        "e851fab797087ac69b96": "Para forjar a palheta da chave, você vai precisar de duas barras de tório e uma fonte intensa de calor. O tório você vai ter que se virar pra arrumar, mas eu posso te ajudar com o calor.\n\nA oeste daqui, na Cratera Un'Goro, fica um vulcão poderoso chamado Pico Penacho de Fogo. Lá no alto, a lava é tão quente que vai fundir tório e osso que é uma beleza. Esse molde foi um tremendo investimento porque você só vai ter que colocá-lo no lago de lava no topo do pico e a lava vai fazer o resto do trabalho.\n\nDa minha parte, é isso aí. Agora, pra terminar a chave, você vai ter que falar com Arvignon outra vez."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -437,6 +703,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -459,6 +743,11 @@
     },
     "ruRU": {
       "description": "Чтобы выковать основу ключа тебе понадобится два ториевых слитка и мощный источник тепла. Торий добывай самостоятельно, а где найти подходящую плавильню, я подскажу.\n\nНа западе от Кратера Ун'Горо располагается Вулкан Огненного Венца – действующий вулкан. Лава из его жерла сплавит торий и кость воедино. Твои денежки потрачены не зря – эту форму для отливки можно просто-напросто окунуть в огненное озеро, а остальное сделает лава.\n\nВот и все, чем я могу тебе помочь. Как доделать ключ тебе подскажет Арбингтон.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Недешево обошлась тебе эта отмычка, а? И все же работа над ней не закончена; пришло время завершающего этапа – а это самое сложное. Тебе придется выступить против того самого врага, что ждал нас в Андорале... Злобной твари, которая правит бал в стенах разрушенного города.\n\nЯ говорю об Араже Призывателе – личе, одном из самых могущественных сторонников Плети.",
+        "6984cfa0ce6f40cd724c": "Тебе удалось сделать заготовку отмычки? Мне жаль, что тебе пришлось покупать форму на свои деньги, но всем приходится вносить свой вклад в борьбу с Плетью. Отдай мне заготовку отмычки, и я скажу, чего не хватает для завершения работы над ней.\n\nЭто будет нелегко, но подготовка к нападению на Андорал не пропадет втуне. Вот увидишь.",
+        "e851fab797087ac69b96": "Чтобы выковать основу ключа тебе понадобится два ториевых слитка и мощный источник тепла. Торий добывай самостоятельно, а где найти подходящую плавильню, я подскажу.\n\nНа западе от Кратера Ун'Горо располагается Вулкан Огненного Венца – действующий вулкан. Лава из его жерла сплавит торий и кость воедино. Твои денежки потрачены не зря – эту форму для отливки можно просто-напросто окунуть в огненное озеро, а остальное сделает лава.\n\nВот и все, чем я могу тебе помочь. Как доделать ключ тебе подскажет Арбингтон."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -474,6 +763,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -496,6 +803,11 @@
     },
     "svSE": {
       "description": "Du behöver två toriumtackor och en mycket het värmekälla för att smida nyckelns skaft. Toriumet får du ordna själv, men jag kan hjälpa med värmen.\n\nVästerut i Un'Goro Crater ligger Fire Plume Ridge, en sjudande vulkan. Lavasjön på toppen är het nog att smälta samman torium och ben. Ditt guld har köpt en form som du bara behöver doppa i sjön där uppe. Lavan sköter resten.\n\nDet var allt från min sida. För att färdigställa nyckeln måste du tala med Arbington igen.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Vi har en ganska dyr skelettnyckel där, eller hur, $N? Men den är ännu inte färdig. Tiden har kommit att ge vår skapelse kraft. Du måste möta den yttersta fienden vi arbetat mot i Andorhal, den ondskefulla varelse som styr bakom den förstörda stadens murar.$B$BJag talar om Araj Besvärjaren, en lich och en av Gisslets mäktigaste varelser.",
+        "6984cfa0ce6f40cd724c": "Är skelettnyckelns skaft färdigt? Jag beklagar att du fick betala det mesta för formen, men vi måste alla göra vår del mot Gisslet. När du ger mig den ofärdiga nyckeln är du redo för den sista delen som behövs för att färdigställa den.$B$BDet blir inte lätt, men arbetet du hittills lagt på anfallet mot Andorhal kommer nu att löna sig. Du ska få se.",
+        "e851fab797087ac69b96": "Du behöver två thoriumtackor och en mycket het värmekälla för att smida nyckelns skaft. Thorium får du skaffa själv, men jag kan hjälpa till med värmen.$B$BVästerut i Un'Gorokratern ligger Fire Plume Ridge, en sjudande vulkan. Lavasjön på toppen är varm nog att förena thorium och ben. Ditt guld köpte en form som du bara behöver doppa i sjön; lavan gör resten.$B$BDet var allt från mig. Tala med Arbington igen för att färdigställa nyckeln."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +824,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "898db8c49076f8642cb5ac361e8dbfec781e85ad49a8e78b84145a3aa62c4903"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -535,6 +862,11 @@
     },
     "trTR": {
       "description": "Anahtarın gövdesini dövmek için iki toryum külçesine ve çok yüksek sıcaklıkta bir ısı kaynağına ihtiyacın var. Toryumu kendin bulacaksın ama ısı konusunda yardımcı olabilirim.\n\nBatımızda, Un'Goro Crater'da Fire Plume Ridge var; kaynayan bir yanardağ. Tepesindeki lav gölü toryumla kemiği kaynaştıracak kadar sıcak. Verdiğin altınla bir kalıp aldın; tek yapman gereken onu tepedeki göle batırmak. Gerisini lav halleder.\n\nBenim yapacaklarım bu kadar. Anahtarını tamamlamak için Arbington ile tekrar konuşmalısın.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Oldukça pahalı bir iskelet anahtarımız var, değil mi $N? Yine de bitmiş değil. Şimdi eserimize güç verme zamanı. Bunun için Andorhal'da karşılaşmaya hazırlandığımız nihai düşmanla, yıkık şehrin surları içinde işleri yöneten kötü varlıkla yüzleşmelisin.$B$BÇağırıcı Araj'dan, Bela'nın en güçlü varlıklarından biri olan bir lich'ten söz ediyorum.",
+        "6984cfa0ce6f40cd724c": "İskelet anahtarın sapını bitirdin mi? Kalıbın bedelinin çoğunu ödemek zorunda kalmana üzgünüm ama Bela'ya karşı hepimiz üzerimize düşeni yapmalıyız. Bitmemiş anahtarı bana verdiğinde yapımı tamamlayacak son parça için hazır olacaksın.$B$BHiç kolay olmayacak ama Andorhal saldırısına hazırlanmak için yaptığın işler karşılığını vermeye başlayacak. Göreceksin.",
+        "e851fab797087ac69b96": "Anahtarın sapını dövmek için iki toryum külçesi ve çok sıcak bir ısı kaynağı gerek. Toryumu kendin bulmalısın ama ısı konusunda yardımcı olabilirim.$B$BBatımızdaki Un'Goro Krateri'nde kaynayan bir yanardağ olan Fire Plume Ridge var. Tepesindeki lav gölü toryumla kemiği birleştirecek kadar sıcak. Altınınla aldığın kalıbı göle daldırman yeterli; gerisini lav halleder.$B$BBenim yapacağım bu kadar. Anahtarını bitirmek için Arbington'la yeniden konuş."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -551,6 +883,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "898db8c49076f8642cb5ac361e8dbfec781e85ad49a8e78b84145a3aa62c4903"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -574,6 +921,11 @@
     },
     "ukUA": {
       "description": "Тобі потрібні два злитки торію та потужне джерело тепла, щоб викувати основу ключа. Торій знайди самостійно, а з нагрівом я можу допомогти.\n\nНа заході, в кратері Ун'Ґоро, є Вогнепера скеля — киплячий вулкан. Лавове озеро нагорі достатньо гаряче, щоб сплавити торій з кістками. Твої гроші витрачені не дарма — цю форму можна просто занурити в вогняне озеро, а все інше зробить лава.\n\nЦе все, чим я можу тобі допомогти. Арбінґтон розкаже тобі, як завершити ключ.",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "Дорогий вийшов кістяний ключ, еге ж, $N? Та він ще не завершений. Настав час надати нашому творінню сили. Для цього доведеться зустрітися з найгрізнішим ворогом, до якого ми наближалися в Андоралі, підступною істотою, що керує всім за мурами зруйнованого міста.$B$BЯ говорю про Араджа Заклинача, ліча й одну з наймогутніших істот Кари.",
+        "6984cfa0ce6f40cd724c": "Стрижень кістяного ключа готовий? Шкода, що тобі довелося сплатити більшу частину вартості форми, але кожен має зробити свій внесок у боротьбу з Карою. Коли передаси мені незавершений ключ, будеш готовий до останнього складника.$B$BБуде нелегко, але твоя попередня робота з підготовки нападу на Андорал почне окупатися. Побачиш.",
+        "e851fab797087ac69b96": "Щоб викувати стрижень ключа, потрібні два злитки торію і дуже гаряче джерело тепла. Торій доведеться здобути самостійно, а з теплом я допоможу.$B$BНа заході в кратері Ун'Ґоро лежить Fire Plume Ridge, тліючий вулкан. Озеро лави на вершині досить гаряче, щоб з'єднати торій і кістку. За золото ти придбав форму, яку треба лише занурити в озеро; лава зробить решту.$B$BЗ мого боку все. Щоб завершити ключ, знову поговори з Арбінґтоном."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -591,6 +943,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "898db8c49076f8642cb5ac361e8dbfec781e85ad49a8e78b84145a3aa62c4903"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -616,6 +983,11 @@
     },
     "zhCN": {
       "description": "你需要两块瑟银锭和一个强大的热源来锻造钥匙的主体部分。你得自己去找瑟银，但是我可以帮你找到热源。\n\n我们西面的安戈洛尔环形山里有一座温度极高的火山，它被称作火羽山。山顶的岩浆足以把瑟银和骨头熔在一起。你只需把买来的模具浸入熔岩湖中，然后就不用管其它的了。\n\n我的任务这就算是完成了。要完成你的钥匙的话，你还得去跟阿尔比顿再谈谈。",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "我们终於拿到这支花费巨大的骷髅钥匙啦，$N!但是它还差一点才能完成，我们还得继续努力。最终，你将要面对安多哈尔城中的强敌……那个在废弃的城墙中徘徊的邪恶生物。\n\n我说的是“召唤者”阿拉基，一个巫妖，天谴军团中最强大的爪牙之一。\n",
+        "6984cfa0ce6f40cd724c": "你铸造出骷髅钥匙的主体部分了吗?很抱歉你得自己掏钱来买这个模具，但是我们必须各尽所能地共同对抗天谴军团。一旦你把未完成的钥匙交给我，你就可以开始准备铸造钥匙所需的最後一件物品了。\n\n虽然这并不简单，但是你为了进攻安多哈尔所做的准备将会初见成效。你会看到的。",
+        "e851fab797087ac69b96": "你需要两块瑟银锭和一个强大的热源来锻造钥匙的主体部分。你得自己去找瑟银，但是我可以帮你找到热源。\n\n我们西面的安戈洛尔环形山里有一座温度极高的火山，它被称作火羽山。山顶的岩浆足以把瑟银和骨头熔在一起。你只需把买来的模具浸入熔岩湖中，然后就不用管其它的了。\n\n我的任务这就算是完成了。要完成你的钥匙的话，你还得去跟阿尔比顿再谈谈。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -631,6 +1003,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -653,6 +1043,11 @@
     },
     "zhTW": {
       "description": "你需要兩塊瑟銀錠和一個強大的熱源來鍛造鑰匙的主體部分。你得自己去找瑟銀，但是我可以幫你找到熱源。\n\n我們西面的安戈洛環形山裡有一座溫度極高的火山，它被稱作火羽山。山頂的岩漿足以把瑟銀和骨頭熔在一起。你只需把買來的模具浸入熔岩湖中，然後就不用管其他的了。\n\n我的任務這就算是完成了。要完成你的鑰匙的話，你還得去跟阿爾比頓再談談。",
+      "dialogue": {
+        "39c9a9f87a0e1d3b6f29": "這把骷髏鑰匙的代價可不小，對吧，$N？不過它還沒完成。現在該為我們的作品注入力量了。為此，你必須面對我們在安多哈爾一直準備迎戰的終極敵人：那個在廢城城牆內掌控一切的邪惡存在。$B$B我說的是召喚者阿拉基，一名巫妖，也是天譴軍團最強大的成員之一。",
+        "6984cfa0ce6f40cd724c": "骷髏鑰匙的鑰柄完成了嗎？很抱歉你得負擔模具的大部分費用，但我們都必須為對抗天譴軍團盡一分力。把未完成的鑰匙交給我後，你就準備好取得最後一項材料了。$B$B這絕不容易，但你至今為進攻安多哈爾所做的準備將開始得到回報。你會看到的。",
+        "e851fab797087ac69b96": "你需要兩塊瑟銀錠和一個強大的熱源來鍛造鑰匙的主體部分。你得自己去找瑟銀，但是我可以幫你找到熱源。\n\n我們西面的安戈洛環形山裡有一座溫度極高的火山，它被稱作火羽山。山頂的岩漿足以把瑟銀和骨頭熔在一起。你只需把買來的模具浸入熔岩湖中，然後就不用管其他的了。\n\n我的任務這就算是完成了。要完成你的鑰匙的話，你還得去跟阿爾比頓再談談。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -668,6 +1063,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.39c9a9f87a0e1d3b6f29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6984cfa0ce6f40cd724c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e851fab797087ac69b96": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

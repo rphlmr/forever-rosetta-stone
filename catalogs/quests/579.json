@@ -1,8 +1,28 @@
 {
   "areaId": 1519,
+  "dialogueContexts": {
+    "648f180c80bf77f1fb93": {
+      "lineId": "q:579:complete",
+      "npcId": 2504,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "cea7969595959a3b91a8": {
+      "lineId": "q:579:progress",
+      "npcId": 2504,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Král Anduin klade velký důraz na vzdělání, a proto poskytl peníze na zpřístupnění kopií různých knih a spisů veřejnosti. Je to velice jednoduché. Přineseš mi knihovní poukázku a já ti dám kopii jedné z dostupných knih.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Zajímá tě některý z těchto titulů, $N?",
+        "cea7969595959a3b91a8": "Král Anduin přikládá vzdělání velký význam, a proto poskytl prostředky na zpřístupnění kopií různých svazků a spisů veřejnosti. Je to prosté. Přineseš mi knihovní poukázku a já ti dám kopii jedné z dostupných knih."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +39,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c28459b03479b66bb985c2fad5f2466d75d6c11a440b8c4956b93e2ea56945ff"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +73,10 @@
     },
     "daDK": {
       "description": "Kong Anduin har lagt stor vægt på lærdom og har derfor stillet midler til rådighed, så kopier af forskellige bøger og skrifter kan gøres tilgængelige for offentligheden. Det er meget enkelt. Du bringer mig en bibliotekskupon, og jeg kan give dig en kopi af en af de tilgængelige bøger.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Interesserer nogen af disse titler dig, $N?",
+        "cea7969595959a3b91a8": "Kong Anduin lægger stor vægt på lærdom og har derfor stillet midler til rådighed, så kopier af forskellige bøger og skrifter kan gøres tilgængelige for offentligheden. Det er ganske enkelt. Du bringer mig en bibliotekskupon, og jeg giver dig en kopi af en af de tilgængelige bøger."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c28459b03479b66bb985c2fad5f2466d75d6c11a440b8c4956b93e2ea56945ff"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +126,10 @@
     },
     "deDE": {
       "description": "König Anduin betrachtet Lernen als sehr wichtig und hat daher Geld zur Verfügung gestellt, damit verschiedene Folianten und Schriften kopiert und für die Öffentlichkeit zugänglich gemacht werden können. Es ist ganz einfach. Ihr bringt mir einen Bibliotheksschein, und ich gebe Euch ein Exemplar eines der verfügbaren Bücher.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Interessiert Euch einer dieser Titel, $N?",
+        "cea7969595959a3b91a8": "König Anduin betrachtet Lernen als sehr wichtig und hat daher Geld zur Verfügung gestellt, damit verschiedene Folianten und Schriften kopiert und für die Öffentlichkeit zugänglich gemacht werden können. Es ist ganz einfach. Ihr bringt mir einen Bibliotheksschein, und ich gebe Euch ein Exemplar eines der verfügbaren Bücher."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +145,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "King Anduin has placed great importance on learning, and thus has provided funds for making copies of various tomes and writings available to the public. It's very simple. You bring me a library scrip, and I can give you a copy of one of the available books.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Do any of these titles interest you, $N?",
+        "cea7969595959a3b91a8": "King Anduin has placed great importance on learning, and thus has provided funds for making copies of various tomes and writings available to the public. It's very simple. You bring me a library scrip, and I can give you a copy of one of the available books."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -156,6 +232,10 @@
     },
     "esES": {
       "description": "El rey Anduin ha puesto mucho énfasis en el aprendizaje y, por ello, nos ha proporcionado fondos para hacer copias de varios libros y escritos y ponerlas a disponibilidad del público. Es muy sencillo. Me traes un manuscrito de la biblioteca y yo te doy una copia de uno de los libros.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "¿Te interesa alguno de estos títulos, $n?",
+        "cea7969595959a3b91a8": "El rey Anduin ha puesto mucho énfasis en el aprendizaje y, por ello, nos ha proporcionado fondos para hacer copias de varios libros y escritos y ponerlas a disponibilidad del público. Es muy sencillo. Me traes un manuscrito de la biblioteca y yo te doy una copia de uno de los libros."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +251,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -193,6 +285,10 @@
     },
     "esMX": {
       "description": "El rey Anduin puso mucho énfasis en el aprendizaje y, por ello, nos proporcionó fondos para hacer copias de varios libros y escritos y ponerlas a disponibilidad del público. Es muy sencillo. Si me traes una caligrafía de biblioteca, yo te doy una copia de uno de los libros.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "¿Te interesa alguno de estos títulos, $N?",
+        "cea7969595959a3b91a8": "El rey Anduin puso mucho énfasis en el aprendizaje y, por ello, nos proporcionó fondos para hacer copias de varios libros y escritos y ponerlas a disponibilidad del público. Es muy sencillo. Si me traes una caligrafía de biblioteca, yo te doy una copia de uno de los libros."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +304,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -231,6 +339,10 @@
     },
     "frFR": {
       "description": "Le Roi Anduin accorde une grand importance à l'éducation, et c'est pourquoi il a débloqué des fonds pour rendre accessible au public des copies de divers ouvrages et écrits. C'est très simple. Vous me donnez un titre de bibliothécaire, et je puis vous fournir la copie de l'un des livres disponibles.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Êtes-vous intéressé par un titre en particulier, $N ?",
+        "cea7969595959a3b91a8": "Le Roi Anduin accorde une grand importance à l'éducation, et c'est pourquoi il a débloqué des fonds pour rendre accessible au public des copies de divers ouvrages et écrits. C'est très simple. Vous me donnez un titre de bibliothécaire, et je puis vous fournir la copie de l'un des livres disponibles."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +358,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -268,6 +392,10 @@
     },
     "hrHR": {
       "description": "Kralj Anduin pridaje veliku važnost učenju i zato je osigurao sredstva da kopije raznih knjiga i zapisa budu dostupne javnosti. Vrlo je jednostavno. Doneseš mi knjižnični bon, a ja ti mogu dati primjerak jedne od dostupnih knjiga.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Zanima li te koji od ovih naslova, $N?",
+        "cea7969595959a3b91a8": "Kralj Anduin pridaje veliku važnost učenju te je osigurao sredstva kako bi primjerci raznih knjiga i spisa bili dostupni javnosti. Vrlo je jednostavno. Doneseš mi knjižnični bon, a ja ti mogu dati primjerak jedne od dostupnih knjiga."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +412,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c28459b03479b66bb985c2fad5f2466d75d6c11a440b8c4956b93e2ea56945ff"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +445,10 @@
     },
     "itIT": {
       "description": "Re Anduin attribuisce grande importanza all'apprendimento e ha quindi stanziato fondi per rendere disponibili al pubblico copie di vari tomi e scritti. È molto semplice: tu mi porti un buono della biblioteca e io posso darti una copia di uno dei libri disponibili.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Ti interessa qualcuno di questi titoli, $N?",
+        "cea7969595959a3b91a8": "Re Anduin dà grande importanza al sapere, e per questo ha stanziato fondi per mettere a disposizione del pubblico copie di vari tomi e scritti. È semplicissimo. Tu mi porti un buono della biblioteca e io ti do una copia di uno dei libri disponibili."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +465,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c28459b03479b66bb985c2fad5f2466d75d6c11a440b8c4956b93e2ea56945ff"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -345,6 +499,10 @@
     },
     "koKR": {
       "description": "안두인 국왕께서는 교육에 큰 비중을 두고 여러 가지 서적과 문서의 복사본을 만들어 대중에게 공개할 수 있도록 예산을 마련해 주셨지요. 이용하시는 방법은 아주 간단합니다. 도서관 증서를 가져오면 이곳에 있는 책의 복사본을 드리고 있습니다.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "이 중에서 관심 있는 책이 있으신가요?",
+        "cea7969595959a3b91a8": "안두인 국왕께서는 교육에 큰 비중을 두고 여러 가지 서적과 문서의 복사본을 만들어 대중에게 공개할 수 있도록 예산을 마련해 주셨지요. 이용하시는 방법은 아주 간단합니다. 도서관 증서를 가져오면 이곳에 있는 책의 복사본을 드리고 있습니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -360,6 +518,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -382,6 +552,10 @@
     },
     "plPL": {
       "description": "Król Anduin przywiązuje wielką wagę do nauki i przeznaczył środki na udostępnianie publiczności kopii różnych tomów i pism. To bardzo proste. Przynieś mi biblioteczny kwit, a dam ci egzemplarz jednej z dostępnych książek.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Czy któryś z tych tytułów cię interesuje, $N?",
+        "cea7969595959a3b91a8": "Król Anduin przywiązuje wielką wagę do nauki, dlatego przeznaczył fundusze na udostępnienie publiczności kopii różnych tomów i pism. To bardzo proste. Przynieś mi kwit biblioteczny, a dam ci kopię jednej z dostępnych książek."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -398,6 +572,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c28459b03479b66bb985c2fad5f2466d75d6c11a440b8c4956b93e2ea56945ff"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -421,6 +605,10 @@
     },
     "ptBR": {
       "description": "O rei Anduin valoriza muito a educação, por isso vem patrocinando a feitura de cópias de vários livros e escritos para consulta pública. É muito simples. Você me traz um canhoto da biblioteca, e eu dou a você uma cópia de um dos livros do acervo.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Algum destes títulos interessa a você, $N?",
+        "cea7969595959a3b91a8": "O rei Anduin valoriza muito a educação, por isso vem patrocinando a feitura de cópias de vários livros e escritos para consulta pública. É muito simples. Você me traz um canhoto da biblioteca, e eu dou a você uma cópia de um dos livros do acervo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -436,6 +624,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -459,6 +658,10 @@
     },
     "ruRU": {
       "description": "Король Андуин уделяет огромное внимание просвещению и всемерно заботится о том, чтобы с ценных книг вовремя делались списки, доступные горожанам. Все просто: принесите мне библиотечный свиток, и я выдам вам копию любой имеющейся книги.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Вас что-нибудь интересует, $N?",
+        "cea7969595959a3b91a8": "Король Андуин уделяет огромное внимание просвещению и всемерно заботится о том, чтобы с ценных книг вовремя делались списки, доступные горожанам. Все просто: принесите мне библиотечный свиток, и я выдам вам копию любой имеющейся книги."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -474,6 +677,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -496,6 +711,10 @@
     },
     "svSE": {
       "description": "Kung Anduin lägger stor vikt vid lärande och har därför finansierat kopior av olika böcker och skrifter för allmänheten. Det är enkelt. Ge mig ett biblioteksbevis så får du en kopia av en av böckerna som finns tillgängliga.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Intresserar någon av dessa titlar dig, $N?",
+        "cea7969595959a3b91a8": "Kung Anduin lägger stor vikt vid lärdom och har därför anslagit medel för att göra kopior av olika böcker och skrifter tillgängliga för allmänheten. Det är mycket enkelt. Du ger mig en bibliotekskupong, så kan jag ge dig en kopia av en av de tillgängliga böckerna."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +731,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c28459b03479b66bb985c2fad5f2466d75d6c11a440b8c4956b93e2ea56945ff"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -536,6 +765,10 @@
     },
     "trTR": {
       "description": "Kral Anduin öğrenime büyük önem verdi; bu yüzden çeşitli kitapların ve yazıların kopyalarının halka sunulması için kaynak sağladı. Çok basit. Bana bir kütüphane belgesi getir, sana mevcut kitaplardan birinin kopyasını vereyim.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Bu kitaplardan herhangi biri ilgini çekiyor mu, $N?",
+        "cea7969595959a3b91a8": "Kral Anduin öğrenime büyük önem veriyor ve bu nedenle çeşitli ciltlerin ve yazıların kopyalarını halka sunmak için kaynak sağladı. Çok basit. Bana bir kütüphane kuponu getirirsen mevcut kitaplardan birinin kopyasını sana verebilirim."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -552,6 +785,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c28459b03479b66bb985c2fad5f2466d75d6c11a440b8c4956b93e2ea56945ff"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -575,6 +818,10 @@
     },
     "ukUA": {
       "description": "Король Андуїн надає великого значення навчанню, тому виділив кошти, щоб зробити копії різних фоліантів і праць доступними для всіх. Усе дуже просто. Принеси мені бібліотечний талон, і я дам тобі копію однієї з наявних книг.",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "Тебе цікавить якась із цих назв, $N?",
+        "cea7969595959a3b91a8": "Король Андуїн надає великого значення навчанню, тому виділив кошти, щоб зробити копії різних томів і писань доступними для всіх. Усе дуже просто. Ти приносиш мені бібліотечний талон, а я даю тобі копію однієї з доступних книжок."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -591,6 +838,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c28459b03479b66bb985c2fad5f2466d75d6c11a440b8c4956b93e2ea56945ff"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -615,6 +872,10 @@
     },
     "zhCN": {
       "description": "我们年轻的国王安度因陛下十分重视教育，他投入了很大一笔资金用于各种书籍卷册的抄录，并允许平民们自行抄录。很简单，你只需向我出示图书馆的阅览证，我就可以给你一本允许借阅的书的手抄本。",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "这些书名里有你感兴趣的吗，$N?\n",
+        "cea7969595959a3b91a8": "我们年轻的国王安度因陛下十分重视教育，他投入了很大一笔资金用於各种书籍卷册的抄录，并允许平民们自行抄录。很简单，你只需向我出示图书馆的阅览证，我就可以给你一本允许借阅的书的手抄本。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -630,6 +891,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -653,6 +926,10 @@
     },
     "zhTW": {
       "description": "我們年輕的國王安度因陛下十分重視教育，他投入了很大一筆資金用於各種書籍卷冊的抄錄，並允許平民們自行抄錄。很簡單，你只需向我出示圖書館的閱覽證，我就可以給你一本允許借閱的書的手抄本。",
+      "dialogue": {
+        "648f180c80bf77f1fb93": "這些書名裡有你感興趣的嗎，$N?",
+        "cea7969595959a3b91a8": "安杜因國王十分重視學問，因此撥款製作各種書籍和文獻的副本，供民眾閱讀。這很簡單。你只要帶一張圖書館憑券給我，我就能給你一本現有書籍的副本。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -668,6 +945,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.648f180c80bf77f1fb93": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.cea7969595959a3b91a8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

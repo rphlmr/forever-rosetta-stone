@@ -1,8 +1,28 @@
 {
   "areaId": 15,
+  "dialogueContexts": {
+    "03c5175119b79d668992": {
+      "lineId": "q:1251:complete",
+      "npcId": 4926,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "ef51ef8b7f4de2f687b1": {
+      "lineId": "q:1251:progress",
+      "npcId": 4926,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Železný štít, zčernalý ohněm, který se prohnal hostincem, je připevněný k rozpadajícímu se komínu, jedné z mála zbývajících částí stavby, která kdysi tvořila hostinec Shady Rest.\n\nŠtít jde z cihel komína sundat.",
+      "dialogue": {
+        "03c5175119b79d668992": "Uznávám, že lidé mají zvláštní vkus na výzdobu, ale ozdobili by si krb obyčejným železným štítem? Možná ho tam umístili ti, kdo hostinec vypálili.$b$bVarování? Výhrůžka?",
+        "ef51ef8b7f4de2f687b1": "Co to tam máš, $n? Důkaz z trosek hostince Shady Rest?"
+      },
       "summary": "Přines Blackened Iron Shield Krogu do Brackenwall Village.",
       "title": "Černý štít",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Et jernskjold, sortnet af ilden, der rasede gennem kroen, er fastgjort til den smuldrende skorsten, en af de få tilbageværende dele af den bygning, der engang udgjorde Shady Rest Inn.\n\nSkjoldet kan fjernes fra skorstenens mursten.",
+      "dialogue": {
+        "03c5175119b79d668992": "Jeg indrømmer, at mennesker har en sær smag, når det gælder indretning, men ville de pynte deres pejs med et almindeligt jernskjold? Måske blev skjoldet anbragt der af dem, der brændte kroen ned.$b$bEn advarsel? En trussel?",
+        "ef51ef8b7f4de2f687b1": "Hvad har du der, $n? Beviser fra resterne af Shady Rest-kroen?"
+      },
       "summary": "Bring Blackened Iron Shield til Krog i Brackenwall Village.",
       "title": "Det sorte skjold",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Ein Eisenschild, vom Feuer geschwärzt, das in dem Gasthaus wütete, ist an dem verfallenen Kamin befestigt, einer der wenigen erhaltenen Teile des Gebäudes, das einmal das Gasthaus Zur süßen Ruh war.\n\nDer Schild lässt sich von den Mauersteinen des Kamins ablösen.",
+      "dialogue": {
+        "03c5175119b79d668992": "Ich gebe ja zu, dass Menschen einen merkwürdigen Geschmack bei der Dekoration haben, aber würden sie einen einfachen Eisenschild benutzen, um ihren Feuerplatz zu schmücken? Vielleicht haben jene, die das Gasthaus niederbrannten, den Schild dort befestigt. \n \n Eine Warnung? Eine Drohung?",
+        "ef51ef8b7f4de2f687b1": "Was habt Ihr denn da, $N? Beweismittel aus den Trümmern des Gasthauses Zur süßen Ruh?"
+      },
       "summary": "Bringt den geschwärzten Eisenschild zu Krog in Brackenwall.",
       "title": "Der schwarze Schild",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "An iron shield, blackened by the fire that raged through the inn, is affixed to the crumbling chimney, one of the few remaining parts of the structure that once made up the Shady Rest Inn.\n\nThe shield can be removed from the brick of the chimney.",
+      "dialogue": {
+        "03c5175119b79d668992": "I grant that humans have strange decorating tastes, but would they use a plain iron shield to adorn their fireplace? Perhaps this shield was placed there by the ones who burned the inn.$b$bA warning? A threat?",
+        "ef51ef8b7f4de2f687b1": "What's that you have there, $n? Evidence from the remains of the Shady Rest Inn?"
+      },
       "summary": "Bring the Blackened Iron Shield to Krog in Brackenwall Village.",
       "title": "The Black Shield",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Un escudo de hierro, ennegrecido por el fuego que arrasó la posada, cuelga de la chimenea, una de las pocas partes de la estructura de la Posada Reposo Umbrío que han sobrevivido.\n\nEl escudo puede separarse del ladrillo de la chimenea.",
+      "dialogue": {
+        "03c5175119b79d668992": "Entiendo que los humanos tienen gustos de decoración un poco extraños pero... ¿usarían un simple escudo de hierro para adornar una chimenea? Quizás ese escudo fue colocado allí por quienes quemaron la posada.\n\n¿Será una advertencia? ¿Será una amenaza?",
+        "ef51ef8b7f4de2f687b1": "¿Qué es eso que tienes ahí, $n? ¿Algo de los restos de la Posada Reposo Umbrío?"
+      },
       "summary": "Lleva el escudo de hierro ennegrecido a Krog al Poblado Murohelecho.",
       "title": "El escudo negro",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Un escudo de hierro, ennegrecido por el fuego que arrasó la posada, cuelga de la chimenea, una de las pocas partes de la estructura de la Posada Reposo Umbrío que han sobrevivido.\n\nEl escudo puede separarse del ladrillo de la chimenea.",
+      "dialogue": {
+        "03c5175119b79d668992": "Entiendo que los humanos tienen gustos de decoración un poco extraños pero... ¿usarían un simple escudo de hierro para adornar una chimenea? Quizás ese escudo fue colocado allí por quienes quemaron la posada.\n\n¿Será una advertencia? ¿Será una amenaza?",
+        "ef51ef8b7f4de2f687b1": "¿Qué es eso que tienes ahí, $n? ¿Algo de los restos de la Posada Reposo Umbrío?"
+      },
       "summary": "Lleva el escudo de hierro ennegrecido a Krog al Poblado Murohelecho.",
       "title": "El escudo negro",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "Un bouclier en fer, noirci par le feu qui a fait rage, est fixé à la cheminée branlante, une des rares structures encore debout de ce qui a été l'auberge du Repos ombragé.\n\nLe bouclier peut être détaché du mur en brique de la cheminée.",
+      "dialogue": {
+        "03c5175119b79d668992": "Je sais que les humains ont des goûts décoratifs étranges, mais placeraient-ils vraiment un bouclier en fer simple sur leur cheminée ? Ce bouclier a peut-être été placé là par ceux qui ont brûlé l'auberge. \n \n Serait-ce un avertissement ? Une menace ?",
+        "ef51ef8b7f4de2f687b1": "Qu'avez-vous là, $N ? Des indices trouvés à l'auberge du Repos ombragé ?"
+      },
       "summary": "Rapporter le Bouclier en fer noirci à Krog, à Mur-de-Fougères.",
       "title": "Le bouclier noir",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +304,10 @@
     },
     "hrHR": {
       "description": "Željezni štit, pocrnio od požara koji je harao gostionicom, pričvršćen je na trošni dimnjak, jedan od rijetkih preostalih dijelova zgrade koja je nekoć bila gostionica Shady Rest.\n\nŠtit se može skinuti s opeke dimnjaka.",
+      "dialogue": {
+        "03c5175119b79d668992": "Priznajem da ljudi imaju čudan ukus za uređenje, ali bi li običnim željeznim štitom ukrasili ognjište? Možda su štit ondje ostavili oni koji su spalili gostionicu.$b$bUpozorenje? Prijetnja?",
+        "ef51ef8b7f4de2f687b1": "Što to imaš, $n? Dokaz iz ostataka gostionice Shady Rest?"
+      },
       "summary": "Donesi pocrnjeli željezni štit Krogu u selu Brackenwall.",
       "title": "Crni štit",
       "translationMetadata": {
@@ -189,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +345,10 @@
     },
     "itIT": {
       "description": "Uno scudo di ferro, annerito dall'incendio che ha devastato la locanda, è fissato al camino diroccato, una delle poche parti rimaste della struttura che un tempo era la Shady Rest Inn.\n\nLo scudo può essere staccato dai mattoni del camino.",
+      "dialogue": {
+        "03c5175119b79d668992": "Ammetto che gli umani hanno gusti strani in fatto di arredamento, ma userebbero davvero un semplice scudo di ferro per decorare il camino? Forse questo scudo l'hanno messo lì quelli che hanno bruciato la locanda.\n\nUn avvertimento? Una minaccia?",
+        "ef51ef8b7f4de2f687b1": "Cos'hai lì, $N? Prove trovate tra i resti della Shady Rest Inn?"
+      },
       "summary": "Porta lo scudo di ferro annerito a Krog a Brackenwall Village.",
       "title": "Lo scudo nero",
       "translationMetadata": {
@@ -216,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +388,10 @@
     },
     "koKR": {
       "description": "그늘 쉼터 여관 건물의 얼마 남지 않은 부분 중 하나인 허물어진 굴뚝에 여관 전체를 휩쓸어 버린 불로 검게 그을린 철제 방패가 붙어 있습니다.\n\n굴뚝의 벽돌에서 방패를 떼어낼 수 있습니다.",
+      "dialogue": {
+        "03c5175119b79d668992": "인간들의 장식 취향이 독특한 건 인정하지만, 벽난로 위에 평범한 철제 방패를 장식했을 리는 없을 텐데? 아마 이 방패는 여관에 불을 지른 자들이 두고 간 걸 것이오.\n\n경고 아니면 위협의 표시인가?",
+        "ef51ef8b7f4de2f687b1": "가지고 있는 게 뭐지? 그늘 쉼터 여관 잔해에서 무슨 단서라도 찾은 것이오?"
+      },
       "summary": "담쟁이 마을에 있는 크로그에게 타락의 철제 방패를 가져가야 합니다.",
       "title": "검은 방패",
       "translationMetadata": {
@@ -242,6 +400,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +428,10 @@
     },
     "plPL": {
       "description": "Żelazna tarcza, poczerniała w pożarze gospody, jest przymocowana do kruszącego się komina, jednej z nielicznych pozostałości budynku Shady Rest Inn.\n\nTarczę można zdjąć z cegieł komina.",
+      "dialogue": {
+        "03c5175119b79d668992": "Przyznaję, że ludzie mają dziwny gust w kwestii wystroju, ale czy ozdobiliby kominek zwykłą żelazną tarczą? Może zostawili ją tam ci, którzy spalili gospodę.$b$bOstrzeżenie? Groźba?",
+        "ef51ef8b7f4de2f687b1": "Co tam masz, $n? Dowód ze zgliszczy gospody Shady Rest?"
+      },
       "summary": "Przynieś poczerniałą żelazną tarczę Krogowi w wiosce Brackenwall.",
       "title": "Czarna tarcza",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "Um escudo de ferro, pretejado pelo fogo que devastou a estalagem, está afixado aos destroços da chaminé – uma das poucas partes restantes da estrutura que um dia foi a Estalagem Pouso do Umbral.\n\nÉ possível remover o escudo dos tijolos da chaminé.",
+      "dialogue": {
+        "03c5175119b79d668992": "Admito que humanos têm um gosto questionável pra decoração, mas será que usariam mesmo um escudo de ferro para adornar uma lareira? Talvez o escudo tenha sido colocado lá por quem pôs fogo na estalagem.\n\nUm aviso, talvez? Uma ameaça?",
+        "ef51ef8b7f4de2f687b1": "O que você traz aí, $N? Uma pista encontrada nos escombros da Estalagem Pouso do Umbral?"
+      },
       "summary": "Leve o Escudo de Ferro Enegrecido a Krog, na Aldeia Muralha Verde.",
       "title": "O escudo negro",
       "translationMetadata": {
@@ -293,6 +481,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +509,10 @@
     },
     "ruRU": {
       "description": "Железный щит, почерневший в пламени бушевавшего здесь пожара, висит на остове камина – только это и осталось от таверны \"Последний привал\".\n\nЩит можно снять.",
+      "dialogue": {
+        "03c5175119b79d668992": "Люди всегда отличались странными вкусами в области украшательства. Но на кой вешать над камином простой металлический щит? Может, его повесили туда те, кто спалил таверну?\n\nПредупреждение? Угроза?",
+        "ef51ef8b7f4de2f687b1": "Что это у тебя там, $N? Вещественное доказательство с руин \"Последнего привала\"?"
+      },
       "summary": "Прнинесите почерневший железный щит Крогу в Деревню Гиблотопь.",
       "title": "Черный щит",
       "translationMetadata": {
@@ -317,6 +521,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +549,10 @@
     },
     "svSE": {
       "description": "En järnsköld, svärtad av branden som rasade genom värdshuset, sitter fast på den sönderfallande skorstenen, en av få kvarvarande delar av det som en gång var Shady Rest Inn.\n\nSkölden går att lossa från skorstenens tegel.",
+      "dialogue": {
+        "03c5175119b79d668992": "Jag medger att människor har märklig smak när det gäller inredning, men skulle de pryda sin eldstad med en enkel järnsköld? Kanske placerades skölden där av dem som brände ner värdshuset.$b$bEn varning? Ett hot?",
+        "ef51ef8b7f4de2f687b1": "Vad har du där, $n? Bevis från resterna av värdshuset Shady Rest?"
+      },
       "summary": "Ta med den svartnade järnskölden till Krog i Brackenwall Village.",
       "title": "Den svarta skölden",
       "translationMetadata": {
@@ -342,6 +562,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +590,10 @@
     },
     "trTR": {
       "description": "Hanı kasıp kavuran yangında kararmış bir demir kalkan, bir zamanlar Shady Rest Inn'i oluşturan yapının ayakta kalan az sayıdaki parçalarından biri olan, dökülen bacaya sabitlenmiş.\n\nKalkan bacanın tuğlalarından çıkarılabilir.",
+      "dialogue": {
+        "03c5175119b79d668992": "İnsanların dekorasyon zevkinin tuhaf olduğunu kabul ediyorum ama şöminelerini sıradan bir demir kalkanla süslerler miydi? Belki de bu kalkanı hanı yakanlar oraya koymuştur.$b$bBir uyarı mı? Bir tehdit mi?",
+        "ef51ef8b7f4de2f687b1": "Elindeki nedir, $n? Shady Rest Hanı'nın kalıntılarından bir kanıt mı?"
+      },
       "summary": "Kararmış Demir Kalkan'ı Brackenwall Köyü'ndeki Krog'a getir.",
       "title": "Kara Kalkan",
       "translationMetadata": {
@@ -369,6 +603,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +631,10 @@
     },
     "ukUA": {
       "description": "Залізний щит, почорнілий від пожежі, що вирувала в таверні, прикріплений до зруйнованого каміна, однієї з небагатьох вцілілих частин споруди, яка колись була таверною «Відпочинок у затінку».\n\nЩит можна зняти.",
+      "dialogue": {
+        "03c5175119b79d668992": "Визнаю, люди мають дивний смак щодо оздоблення, але чи стали б вони прикрашати камін простим залізним щитом? Можливо, його залишили там ті, хто спалив корчму.$b$bПопередження? Погроза?",
+        "ef51ef8b7f4de2f687b1": "Що це в тебе, $n? Доказ із руїн корчми Shady Rest?"
+      },
       "summary": "Принесіть почорнілий залізний щит Кроґу в селище Папорохащі.",
       "title": "Чорний щит",
       "translationMetadata": {
@@ -397,6 +645,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "54237b75ab46b5461584ca4ec12a439575e3482c11d7928962869042937ef464"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +675,10 @@
     },
     "zhCN": {
       "description": "有一面被烧毁旅店的大火熏黑了的铁盾牌和倒塌的烟囱连在一起，这根烟囱是树荫旅店烧毁之后留下的几段残砖断瓦中的一部分。\n\n这面铁盾牌可以从烟囱的砖上拿下来。",
+      "dialogue": {
+        "03c5175119b79d668992": "虽然人类的装饰品味很奇怪，不过我觉得他们不会把一面铁盾挂在壁炉上方做装饰。可能是放火烧旅馆的人放在那儿的。\n\n这是个警告?或者是个威胁?\n",
+        "ef51ef8b7f4de2f687b1": "你手里拿着什么，$N？是从树荫旅店的废墟里找到的东西吗？"
+      },
       "summary": "把被熏黑的铁盾牌带给蕨墙村的克罗格。",
       "title": "黑色盾牌",
       "translationMetadata": {
@@ -425,6 +687,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +715,10 @@
     },
     "zhTW": {
       "description": "有一面被烈火燻黑了的鐵盾牌和倒塌的煙囪連在一起，這根煙囪是樹蔭旅店燒毀之後留下的殘磚斷瓦中的一部分。\n\n這面鐵盾可以從煙囪的磚上拿下來。",
+      "dialogue": {
+        "03c5175119b79d668992": "雖然人類的裝飾品味很奇怪，不過我覺得他們不會把一面鐵盾掛在壁爐上方做裝飾。可能是放火燒旅館的人放在那兒的。\n\n這是個警告?或者是個威脅?",
+        "ef51ef8b7f4de2f687b1": "你手裏拿着什麼，$N?是從樹蔭旅店的廢墟里找到的東西嗎?"
+      },
       "summary": "把被燻黑的鐵盾帶給蕨牆村的克羅格。",
       "title": "黑色盾牌",
       "translationMetadata": {
@@ -449,6 +727,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.03c5175119b79d668992": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.ef51ef8b7f4de2f687b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

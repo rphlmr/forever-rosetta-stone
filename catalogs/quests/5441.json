@@ -1,8 +1,36 @@
 {
   "areaId": 363,
+  "dialogueContexts": {
+    "8d51b42ab98147118ab4": {
+      "lineId": "q:5441:accept",
+      "npcId": 11378,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "cf8ea6b041d2383239e7": {
+      "lineId": "q:5441:progress",
+      "npcId": 11378,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f9582dd18bdfd74ce38b": {
+      "lineId": "q:5441:complete",
+      "npcId": 11378,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Zatracení peoni! Dřou při sběru dřeva ze stromů v údolí, ale pořád si dávají šlofíka! Potřebuju někoho, kdo mi pomůže udržet peony v hrsti.\n\nVypadáš, že se na můj úkol hodíš, {race}. Tady, vezmi si tenhle obušek a použij ho na každého líného peona, kterého přistihneš, jak v práci spí. Pořádná rána ho hned vrátí do práce! Až s tím skončíš, vrať obušek.\n\nMizerní lenoši...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Prokletí dříči! Pilně těží dřevo ze stromů v údolí, ale pořád si zdřímávají! Potřebuji někoho, kdo je pomůže držet v lati.$B$BVypadáš jako ten pravý $r pro můj úkol. Vezmi si tenhle obušek a použij ho na každého lenocha, kterého přistihneš spát při práci. Pořádná rána je hned vrátí k práci! Až skončíš, obušek vrať.$B$BZatracení líní dříči...",
+        "cf8ea6b041d2383239e7": "Ti zatracení lenoši...$B$BCože? Máš můj obušek? Přistihl jsi nějaké dříče spát při práci?!",
+        "f9582dd18bdfd74ce38b": "Dobře, dobře. Snad si příště rozmyslí, než se budou flákat! Díky za pomoc!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c165b22e0c3581732bb91dcc78f5053783d71c88b0b35e3c22edc158acbcd4e4"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "Forbandede arbejdere! De arbejder hårdt med at samle tømmer fra dalens træer, men de tager hele tiden lure! Jeg har brug for nogen til at holde arbejderne i gang.\n\nDu ligner den rette {race} til min opgave. Her, tag denne knippel og brug den på alle dovne arbejdere, du finder sovende på jobbet. Et ordentligt slag får dem straks tilbage til arbejdet! Aflever kniplen, når du er færdig.\n\nElendige drivende arbejdere ...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Forbandede arbejdere! De arbejder hårdt med at samle tømmer fra dalens træer, men de tager hele tiden lure! Jeg har brug for en, der kan holde dem i ørerne.$B$BDu ligner den rette $r til opgaven. Tag denne knippel og brug den på enhver doven arbejder, du finder sovende på jobbet. Et ordentligt slag får dem straks tilbage til arbejdet! Aflever kniplen, når du er færdig.$B$BDovne, uduelige arbejdere...",
+        "cf8ea6b041d2383239e7": "De dovne, uduelige...$B$BHva'? Har du min knippel? Fandt du nogen arbejdere sovende på jobbet?!",
+        "f9582dd18bdfd74ce38b": "Godt, godt. Måske tænker de sig om, før de driver den af næste gang! Tak for hjælpen!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +108,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c165b22e0c3581732bb91dcc78f5053783d71c88b0b35e3c22edc158acbcd4e4"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +146,11 @@
     },
     "deDE": {
       "description": "Verfluchte Peons! Sie arbeiten ja hart daran, Holz aus den Bäumen im Tal zu gewinnen, aber sie machen ständig Nickerchen! Ich brauche jemanden, der dabei hilft, die Peons auf Zack zu halten.\n\nIhr seht wie geschaffen für meinen Auftrag aus, {race}. Hier, Ihr nehmt jetzt diesen Totschläger und lasst ihn auf allen faulen Peons tanzen, die Ihr bei der Arbeit schlafend vorfindet. Ein ordentlicher Schlag wird sie schnell wieder an die Arbeit bringen! Bringt mir den Totschläger wieder, wenn Ihr fertig seid.\n\nVerdammte faule Peons ...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Verfluchte Peons! Sie arbeiten ja hart daran, Holz aus den Bäumen im Tal zu gewinnen, aber sie machen ständig Nickerchen! Ich brauche jemanden, der dabei hilft, die Peons auf Zack zu halten.\n\nIhr seht wie geschaffen für meinen Auftrag aus, $R. Hier, Ihr nehmt jetzt diesen Totschläger und lasst ihn auf allen faulen Peons tanzen, die Ihr bei der Arbeit schlafend vorfindet. Ein ordentlicher Schlag wird sie schnell wieder an die Arbeit bringen! Bringt mir den Totschläger wieder, wenn Ihr fertig seid.\n\nVerdammte faule Peons ...",
+        "cf8ea6b041d2383239e7": "Verdammter fauler B. . . \n \n  Huch? Habt Ihr meinen Totschläger? Habt Ihr Peons dabei erwischt, wie sie bei der Arbeit schliefen?!",
+        "f9582dd18bdfd74ce38b": "Gut, gut. Vielleicht werden sie es sich in Zukunft zweimal überlegen, bevor sie wieder nachlässig werden! Ich danke Euch für Eure Hilfe!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +166,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +206,11 @@
     },
     "enUS": {
       "description": "Cursed peons!  They work hard gathering lumber from the trees of the valley, but they're always taking naps!  I need someone to help keep the peons in line.\n\nYou look like the right {race} for my task.  Here, you take this blackjack and use it on any lazy peons you find sleeping on the job.  A good smack will get them right back to work!  Return the blackjack when you're done.\n\nLousy slacking peons...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Cursed peons!  They work hard gathering lumber from the trees of the valley, but they're always taking naps!  I need someone to help keep the peons in line.$B$BYou look like the right $r for my task.  Here, you take this blackjack and use it on any lazy peons you find sleeping on the job.  A good smack will get them right back to work!  Return the blackjack when you're done.$B$BLousy slacking peons...",
+        "cf8ea6b041d2383239e7": "No good lazy...$B$B Eh?  Do you have my blackjack?  Did you catch any peons sleeping on the job?!",
+        "f9582dd18bdfd74ce38b": "Good, good.  Maybe they'll think twice before slacking next time!  Thanks for the help!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +226,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -157,6 +266,11 @@
     },
     "esES": {
       "description": "¡Malditos peones! Trabajan muy duro recogiendo madera de los árboles del valle, ¡pero siempre se están echando siestas! Necesito a alguien que me ayude a mantener firmes a esos peones.\n\nPareces el {race} adecuado para esta tarea. Toma, coge esta cachiporra y utilízala con los perezosos peones que encontrarás durmiendo por ahí durante el trabajo. ¡Un buen golpe y volverán al trabajo! Devuélveme la cachiporra cuando hayas terminado.\n\nQué vagos y flojos son estos peones...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "¡Malditos peones! Trabajan muy duro recogiendo madera de los árboles del valle, ¡pero siempre se están echando siestas! Necesito a alguien que me ayude a mantener firmes a esos peones.\n\nPareces el $r adecuado para esta tarea. Toma, coge esta cachiporra y utilízala con los perezosos peones que encontrarás durmiendo por ahí durante el trabajo. ¡Un buen golpe y volverán al trabajo! Devuélveme la cachiporra cuando hayas terminado.\n\nQué vagos y flojos son estos peones...",
+        "cf8ea6b041d2383239e7": "Vaya holgazanes...\n\n¿Eh? ¿Tienes mi cachiporra? ¡¿Pillaste a algún peón durmiendo durante el trabajo?!",
+        "f9582dd18bdfd74ce38b": "Bien, bien. ¡Quizás la próxima vez se lo piensen dos veces antes de ponerse a hacer el vago! ¡Gracias por la ayuda!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +286,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -194,6 +326,11 @@
     },
     "esMX": {
       "description": "¡Malditos peones! Trabajan muy duro recogiendo madera de los árboles del valle, ¡pero siempre se están echando siestas! Necesito a alguien que me ayude a mantener firmes a esos peones.\n\nPareces el {race} adecuado para esta tarea. Toma, coge esta cachiporra y utilízala con los perezosos peones que encontrarás durmiendo por ahí durante el trabajo. ¡Un buen golpe y volverán al trabajo! Devuélveme la cachiporra cuando hayas terminado.\n\nQué vagos y flojos son estos peones...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "¡Malditos peones! Trabajan muy duro recogiendo madera de los árboles del valle, ¡pero siempre se están echando siestas! Necesito a alguien que me ayude a mantener firmes a esos peones.\n\nPareces la $r adecuada para esta tarea. Toma, coge esta cachiporra y utilízala con los perezosos peones que encontrarás durmiendo por ahí durante el trabajo. ¡Un buen golpe y volverán al trabajo! Devuélveme la cachiporra cuando hayas terminado.\n\nQué vagos y flojos son estos peones...",
+        "cf8ea6b041d2383239e7": "Vaya holgazanes...\n\n¿Eh? ¿Tienes mi cachiporra? ¡¿Pillaste a algún peón durmiendo durante el trabajo?!",
+        "f9582dd18bdfd74ce38b": "Bien, bien. ¡Quizás la próxima vez se lo piensen dos veces antes de ponerse a hacer el vago! ¡Gracias por la ayuda!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +346,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +386,11 @@
     },
     "frFR": {
       "description": "Maudits péons ! Ils disent qu'ils travaillent dur pour ramasser du bois de charpente dans la vallée, mais ils font sans arrêt la sieste ! J'ai besoin de quelqu'un pour les remettre sur le droit chemin.\n\nVous me semblez être la bonne personne pour cette tâche, {race}. Prenez cette matraque et utilisez-la sur les péons paresseux que vous trouverez en train de dormir sur leur lieu de travail. Ça leur redonnera le goût de l'effort ! Rendez-moi la matraque quand vous aurez fini.\n\nPéons flemmards et glandeurs...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Maudits péons ! Ils disent qu'ils travaillent dur pour ramasser du bois de charpente dans la vallée, mais ils font sans arrêt la sieste ! J'ai besoin de quelqu'un pour les remettre sur le droit chemin.\n\nVous me semblez être la bonne personne pour cette tâche, $r. Prenez cette matraque et utilisez-la sur les péons paresseux que vous trouverez en train de dormir sur leur lieu de travail. Ça leur redonnera le goût de l'effort ! Rendez-moi la matraque quand vous aurez fini.\n\nPéons flemmards et glandeurs...",
+        "cf8ea6b041d2383239e7": "Paresseux… bons à rien. . . \n \n Hein ? Vous avez ma masse ? Vous avez surpris des péons en train de dormir au lieu de travailler ?!",
+        "f9582dd18bdfd74ce38b": "Bien, bien… Peut-être qu'ils y réfléchiront à deux fois la prochaine fois ! Merci de votre aide !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +406,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +446,11 @@
     },
     "hrHR": {
       "description": "Prokleti radnici! Marljivo skupljaju drvo s drveća u dolini, ali stalno drijemaju! Treba mi netko tko će pomoći držati ih u redu.\n\nDjeluješ kao prava osoba rase {race} za moj zadatak. Evo, uzmi ovu palicu i upotrijebi je na svakom lijenom radniku kojeg pronađeš kako spava na poslu. Dobar udarac odmah će ih vratiti na posao! Vrati palicu kad završiš.\n\nJadni lijeni radnici...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Prokleti radnici! Teško rade skupljajući drvo u dolini, ali stalno drijemaju! Treba mi netko da ih drži u redu.$B$BIzgledaš kao pravi $r za moj zadatak. Uzmi ovu palicu i upotrijebi je na svakom ljenčini kojeg zatekneš kako spava na poslu. Dobar udarac odmah će ih vratiti na posao! Vrati palicu kad završiš.$B$BProkleti lijeni radnici...",
+        "cf8ea6b041d2383239e7": "Ti beskorisni ljenčine...$B$BHa? Imaš li moju palicu? Jesi li uhvatio kojeg radnika kako spava na poslu?!",
+        "f9582dd18bdfd74ce38b": "Dobro, dobro. Možda će sljedeći put dvaput razmisliti prije zabušavanja! Hvala na pomoći!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +467,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c165b22e0c3581732bb91dcc78f5053783d71c88b0b35e3c22edc158acbcd4e4"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +505,11 @@
     },
     "itIT": {
       "description": "Maledetti peoni! Lavorano sodo raccogliendo legna dagli alberi della valle, ma fanno sempre dei sonnellini! Ho bisogno di qualcuno che aiuti a tenere in riga i peoni.\n\nSembri proprio il {race} adatto al mio compito. Ecco, prendi questo manganello e usalo su qualsiasi peone pigro che trovi addormentato sul lavoro. Una bella bastonata li rimetterà subito all'opera! Restituisci il manganello quando avrai finito.\n\nDannati peoni scansafatiche...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Maledetti lavoratori! Si danno da fare a raccogliere legname dagli alberi della valle, ma continuano ad appisolarsi! Mi serve qualcuno che li tenga in riga.$B$BSembri il $r giusto per il compito. Prendi questo manganello e usalo su ogni pigro che trovi a dormire sul lavoro. Una bella botta li rimetterà subito al lavoro! Restituiscilo quando hai finito.$B$BMaledetti scansafatiche...",
+        "cf8ea6b041d2383239e7": "Fannulloni buoni a nulla...\n\nEh? Hai il mio manganello? Hai beccato qualche peone a dormire sul lavoro?!",
+        "f9582dd18bdfd74ce38b": "Bene, bene. Magari la prossima volta ci penseranno due volte prima di battere la fiacca! Grazie dell'aiuto!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +526,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c165b22e0c3581732bb91dcc78f5053783d71c88b0b35e3c22edc158acbcd4e4"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -346,6 +566,11 @@
     },
     "koKR": {
       "description": "망할 놈의 일꾼들! 이곳 주변 숲에서 땔감을 모아 오기는 하는데 허구한 날 잠을 잔단 말이야! 열심히 일하도록 누군가 감시를 해야 하는데...\n\n당신이 적임자로 보이는군. 자, 이 몽둥이를 받으시오. 혹 일하다 말고 농땡이를 부리며 조는 녀석이 있거든 쓰시오. 한 대 후려치면 정신 차리겠지! 일이 끝나면 몽둥이를 다시 가져오시오.\n\n휴... 빈둥대기만 하는 형편없는 일꾼 놈들!",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "망할 놈의 일꾼들! 이곳 주변 숲에서 땔감을 모아 오기는 하는데 허구한 날 잠을 잔단 말이야! 열심히 일하도록 누군가 감시를 해야 하는데...\n\n당신이 적임자로 보이는군. 자, 이 몽둥이를 받으시오. 혹 일하다 말고 농땡이를 부리며 조는 녀석이 있거든 쓰시오. 한 대 후려치면 정신 차리겠지! 일이 끝나면 몽둥이를 다시 가져오시오.\n\n휴... 빈둥대기만 하는 형편없는 일꾼 놈들!",
+        "cf8ea6b041d2383239e7": "아무짝에도 쓸모없는 게으름뱅이들...\n\n엉? 내 몽둥이는 가져왔소? 일하다 말고 자는 놈들은 전부 잡았겠지?",
+        "f9582dd18bdfd74ce38b": "좋아, 좋아! 다음부터는 빈둥거리지 못하겠지! 정신이 번쩍 났을 거야. 도와줘서 고맙소이다!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -361,6 +586,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -383,6 +626,11 @@
     },
     "plPL": {
       "description": "Przeklęci robotnicy! Ciężko pracują przy zbieraniu drewna z drzew w dolinie, ale ciągle robią sobie drzemki! Potrzebuję kogoś, kto pomoże utrzymać ich w ryzach.\n\nWyglądasz na właściwego {race} do tego zadania. Weź tę pałkę i użyj jej na leniwych robotnikach śpiących podczas pracy. Porządne uderzenie przywróci ich do roboty! Gdy skończysz, zwróć pałkę.\n\nMarni obibocy...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Przeklęci robotnicy! Ciężko zbierają drewno z drzew w dolinie, ale ciągle ucinają sobie drzemki! Potrzebuję kogoś, kto utrzyma ich w ryzach.$B$BWyglądasz na odpowiednią osobę do tego zadania, $r. Weź tę pałkę i użyj jej na każdym leniu, którego przyłapiesz na spaniu w pracy. Porządny cios od razu zagoni ich do roboty! Oddaj pałkę, gdy skończysz.$B$BPrzeklęte leniwe obiboki...",
+        "cf8ea6b041d2383239e7": "Bezużyteczne lenie...$B$BCo? Masz moją pałkę? Przyłapałeś jakichś robotników na spaniu w pracy?!",
+        "f9582dd18bdfd74ce38b": "Dobrze, dobrze. Może następnym razem dwa razy się zastanowią, zanim zaczną się obijać! Dzięki za pomoc!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -399,6 +647,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c165b22e0c3581732bb91dcc78f5053783d71c88b0b35e3c22edc158acbcd4e4"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -422,6 +685,11 @@
     },
     "ptBR": {
       "description": "Malditos peões! Eles trabalham duro cortando lenha das árvores do vale, mas vivem cochilando! Preciso que alguém me ajude a manter os peões na linha.\n\nVocê parece o {race} certo para essa tarefa. Aqui, pegue este cassetete e use ele nos peões preguiçosos que você encontrar dormindo durante o expediente. Uma boa cacetada e eles voltarão ao trabalho! Devolva o cassetete quando você terminar.\n\nEssas porcarias de peões preguiçosos...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Malditos peões! Eles trabalham duro cortando lenha das árvores do vale, mas vivem cochilando! Preciso que alguém me ajude a manter os peões na linha.\n\nVocê parece o $r certo para essa tarefa. Aqui, pegue este cassetete e use ele nos peões preguiçosos que você encontrar dormindo durante o expediente. Uma boa cacetada e eles voltarão ao trabalho! Devolva o cassetete quando você terminar.\n\nEssas porcarias de peões preguiçosos...",
+        "cf8ea6b041d2383239e7": "Esses preguiçosos imprestáveis...\n\n Hã? Você trouxe o meu cassetete? Você pegou algum peão dormindo no trabalho?",
+        "f9582dd18bdfd74ce38b": "Bom, bom. Talvez eles pensem duas vezes antes de enrolar na próxima vez! Obrigado pela ajuda!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -437,6 +705,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -459,6 +745,11 @@
     },
     "ruRU": {
       "description": "Проклятые батраки! Им велено валить лес, но они все время пытаются отлынивать. Мне нужен кто-то, кто их приструнит. Ты, {race}, мне, пожалуй, годишься. На тебе дубинку – ступай и всыпь этим бездельникам. Хороший тумак заставит их взяться за ум! Управишься – не забудь вернуть дубинку.\n\nПроклятые лентяи...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Проклятые батраки! Им велено валить лес, но они все время пытаются отлынивать. Мне нужен кто-то, кто их приструнит. Ты, $r, мне, пожалуй, годишься. На тебе дубинку – ступай и всыпь этим бездельникам. Хороший тумак заставит их взяться за ум! Управишься – не забудь вернуть дубинку.\n\nПроклятые лентяи...",
+        "cf8ea6b041d2383239e7": "Негодяи, бездельники...\n\nЧто? Где моя дубинка? Ну что, удалось тебе всыпать этим лентяям?",
+        "f9582dd18bdfd74ce38b": "Отлично, отлично! В следующий раз будут знать, как дрыхнуть на работе! Спасибо за помощь!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -474,6 +765,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -496,6 +805,11 @@
     },
     "svSE": {
       "description": "Förbannade peoner! De arbetar hårt med att samla timmer från dalens träd, men de tar jämt tupplurar! Jag behöver någon som hjälper mig att hålla peonerna i schack.\n\nDu ser ut att vara rätt {race} för min uppgift. Här, ta den här batongen och använd den på alla lata peoner du hittar sovande på jobbet. Ett rejält slag får dem genast tillbaka i arbete! Lämna tillbaka batongen när du är klar.\n\nUsla, slöa peoner ...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Förbannade arbetare! De arbetar hårt med att samla timmer från dalens träd, men de tar tupplurar hela tiden! Jag behöver någon som håller ordning på dem.$B$BDu ser ut som rätt $r för uppgiften. Ta den här påken och använd den på alla lata arbetare du hittar sovande på jobbet. En rejäl smäll får dem genast tillbaka till arbetet! Lämna tillbaka påken när du är klar.$B$BFördömda latmaskar...",
+        "cf8ea6b041d2383239e7": "Förbannade latmaskar...$B$BVad? Har du min påk? Hittade du några arbetare sovande på jobbet?!",
+        "f9582dd18bdfd74ce38b": "Bra, bra. Kanske tänker de sig för innan de latar sig nästa gång! Tack för hjälpen!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +826,21 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -537,6 +866,11 @@
     },
     "trTR": {
       "description": "Lanet olası Peon'lar! Vadinin ağaçlarından kereste toplamak için çok çalışıyorlar ama sürekli şekerleme yapıyorlar! Peon'ları hizada tutmama yardım edecek birine ihtiyacım var.\n\nGörevim için doğru {race} gibi duruyorsun. Al, şu copu kullan, iş başında uyuyan tembel Peon görürsen ona vur. İyi bir şaplak onları hemen işe döndürür! İşin bitince copu geri getir.\n\nŞu işe yaramaz tembel Peon'lar...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Lanet olası işçiler! Vadideki ağaçlardan kereste toplamak için çok çalışıyorlar ama sürekli kestiriyorlar! Onları hizaya sokacak birine ihtiyacım var.$B$BGörevim için doğru $r gibi görünüyorsun. Bu sopayı al ve iş başında uyurken bulduğun tembel işçilere kullan. Sağlam bir darbe onları hemen işe döndürür! İşin bitince sopayı geri getir.$B$BLanet tembel işçiler...",
+        "cf8ea6b041d2383239e7": "İşe yaramaz tembeller...$B$BHa? Sopam sende mi? İş başında uyuyan işçi yakaladın mı?!",
+        "f9582dd18bdfd74ce38b": "Güzel, güzel. Belki bir dahaki sefere kaytarmadan önce iki kere düşünürler! Yardımın için teşekkürler!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -553,6 +887,21 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -576,6 +925,11 @@
     },
     "ukUA": {
       "description": "Кляті батраки! Вони тяжко працюють, заготовляючи деревину в долині, але постійно дрімають! Мені потрібен хтось, хто допоможе підтримувати дисципліну.\n\nСхоже, ти саме той {race}, який мені потрібен. Ось, візьми цей кийок і застосуй його до будь-якого лінивого батрака, що спить на роботі. Добрий стусан миттю поверне його до праці! Коли закінчиш, поверни кийок.\n\nНікчемні ледачі батраки...",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "Кляті робітники! Вони старанно заготовляють деревину в долині, але постійно дрімають! Мені потрібен хтось, хто триматиме їх у вузді.$B$BЗдається, ти саме той $r, який мені потрібен. Візьми цю дубинку й застосуй до кожного ледаря, якого застанеш сплячим на роботі. Добрий удар швидко поверне їх до праці! Закінчиш — поверни дубинку.$B$BКляті ледачі робітники...",
+        "cf8ea6b041d2383239e7": "Нікчемні ледарі...$B$BГа? Моя дубинка в тебе? Застав когось зі сплячих на роботі?!",
+        "f9582dd18bdfd74ce38b": "Добре, добре. Може, наступного разу подумають, перш ніж байдикувати! Дякую за допомогу!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -592,6 +946,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c165b22e0c3581732bb91dcc78f5053783d71c88b0b35e3c22edc158acbcd4e4"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -617,6 +986,11 @@
     },
     "zhCN": {
       "description": "该死的苦工！我叫他们在山谷里伐木，但他们总是见缝插针地打盹！我需要找个人帮我去叫醒他们。\n\n你看上去挺适合这差事的。给你，拿着这根棍子，看到偷懒睡觉的苦工就打醒他。只要狠狠地敲他们一下就能让他们乖乖回去工作了！别忘了把棍子还给我。\n\n这些该死的懒汉……",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "该死的苦工！我叫他们在山谷里伐木，但他们总是见缝插针地打盹！我需要找个人帮我去叫醒他们。\n\n你看上去挺适合这差事的。给你，拿着这根棍子，看到偷懒睡觉的苦工就打醒他。只要狠狠地敲他们一下就能让他们乖乖回去工作了！别忘了把棍子还给我。\n\n这些该死的懒汉……",
+        "cf8ea6b041d2383239e7": "偷懒可不好......\n\n嗯？你手里拿的是我的木棒？你抓到偷懒睡觉的苦工没有？",
+        "f9582dd18bdfd74ce38b": "很好，很好，也许他们下次偷懒之前会记起这次的教训!感谢你的帮助!\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -632,6 +1006,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -654,6 +1046,11 @@
     },
     "zhTW": {
       "description": "該死的苦工！我叫他們在山谷裡伐木，但他們總是見縫插針地打盹！我需要找個人幫我去叫醒他們。\n\n你看起來挺適合這差事的。給你，拿著這根棍子，看到偷懶睡覺的苦工就打醒他。只要狠狠地敲他們一下就能讓他們乖乖回去工作了！別忘了把棍子還給我。\n\n這些該死的懶漢……",
+      "dialogue": {
+        "8d51b42ab98147118ab4": "該死的苦工！我叫他們在山谷裡伐木，但他們總是見縫插針地打盹！我需要找個人幫我去叫醒他們。\n\n你看起來挺適合這差事的。給你，拿著這根棍子，看到偷懶睡覺的苦工就打醒他。只要狠狠地敲他們一下就能讓他們乖乖回去工作了！別忘了把棍子還給我。\n\n這些該死的懶漢……",
+        "cf8ea6b041d2383239e7": "偷懶可不好……\n\n嗯?你手裏拿的是我的木棒?你抓到偷懶睡覺的苦工沒有?",
+        "f9582dd18bdfd74ce38b": "很好，很好，也許他們下次偷懶之前會記起這次的教訓!感謝你的幫助!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -669,6 +1066,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.8d51b42ab98147118ab4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.cf8ea6b041d2383239e7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f9582dd18bdfd74ce38b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

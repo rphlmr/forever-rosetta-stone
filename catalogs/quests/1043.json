@@ -1,8 +1,36 @@
 {
   "areaId": 331,
+  "dialogueContexts": {
+    "4d1d9402abc95dbc01fb": {
+      "lineId": "q:1043:progress",
+      "npcId": 661,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "bbcc9abd17ad872b50c5": {
+      "lineId": "q:1043:complete",
+      "npcId": 661,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "e562a5ea5e0baa53e03f": {
+      "lineId": "q:1043:accept",
+      "npcId": 661,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Tvůj příběh zní pravdivě... Tvým pohnutkám zcela nerozumím, ale pokud tvá záležitost tady v Duskwoodu zahrnuje zbavení lesa worgenů v jakémkoli množství, mohu se místo porozumění spokojit s výsledky.\n\nNa jihu je důl, který worgeni zaplavili... Objevili se odnikud, ale z toho, co víme, tam byli nalezeni poprvé.\n\nVěnuj se své záležitosti, ale pokud najdeš něco důležitého, sdílej to se mnou. Přijmeme jakoukoli pomoc v naší válce proti zlu.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Lesy jsou pro nepřipravené nebezpečné. Měj zbraň po ruce a rozum ještě blíž, jinak může být tvá příští cesta do strašidelného lesa poslední.",
+        "bbcc9abd17ad872b50c5": "Vyprávíš zajímavý příběh, $n. Ačkoli vliv rodiny Carevinů nestačí k nalezení kořene těchto potíží a jejich definitivnímu ukončení, uděláme, co můžeme, abychom omezili počet worgenů v Duskwoodu.$b$bCalorovi jsem již nařídil, aby to byla jeho první priorita.",
+        "e562a5ea5e0baa53e03f": "Tvůj příběh zní pravdivě... Tvým pohnutkám úplně nerozumím, ale pokud tvá záležitost v Duskwoodu zahrnuje zbavování lesa worgenů, obejdu se bez porozumění výměnou za výsledky.$b$bNa jihu je důl, který worgeni obsadili... Objevili se odnikud, ale pokud víme, tam byli poprvé nalezeni.$b$bPokračuj ve své práci, ale pokud najdeš něco důležitého, poděl se o to se mnou. Přijmeme jakoukoli pomoc v našem boji proti zlu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "Din historie lyder sandfærdig... Jeg forstår ikke helt dine motiver, men hvis dit ærinde her i Duskwood indebærer at befri skoven for worgen, uanset antal, kan jeg undvære forståelse til fordel for resultater.\n\nDer er en mine mod syd, som er blevet overrendt af worgen... De dukkede op ud af ingenting, men så vidt vi ved, var det der, de først blev fundet.\n\nGør, hvad du skal, men hvis du finder noget vigtigt, beder jeg dig dele det med mig. Vi tager imod enhver hjælp i vores krig mod ondskaben.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Skovene er farlige for de uforberedte. Hold dine våben nær og din forstand endnu nærmere, ellers kan din næste rejse ind i den hjemsøgte skov blive din sidste.",
+        "bbcc9abd17ad872b50c5": "Det er en interessant historie, du fortæller, $n. Selvom Carevin-familiens indflydelse ikke er stor nok til, at vi kan finde roden til problemerne og afslutte dem én gang for alle, gør vi, hvad vi kan for at holde worgenes antal nede i Duskwood.$b$bJeg har allerede bedt Calor gøre det til sin første prioritet.",
+        "e562a5ea5e0baa53e03f": "Din historie lyder sand... Jeg forstår ikke helt dine motiver, men hvis dit ærinde i Duskwood indebærer at rydde skoven for worgen, kan jeg undvære forståelsen til gengæld for resultater.$b$bEn mine mod syd er blevet overrendt af worgen... De dukkede op ud af ingenting, men så vidt vi ved, blev de først fundet dér.$b$bFortsæt dit arbejde, men hvis du finder noget vigtigt, så del det med mig. Vi tager imod al hjælp i vores kamp mod ondskaben."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +108,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f190a6d762231b657ad1fb5e0c9fc2fcaeedcc322423da80ecd60aa44e1e1a22"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +146,11 @@
     },
     "deDE": {
       "description": "Eure Geschichte klingt glaubhaft... Ich habe Eure Beweggründe zwar noch nicht ganz begriffen, aber wenn es zu Euren Angelegenheiten hier im Dämmerwald gehört, die Worgs im Wald auszurotten, dann können mir Eure Beweggründe auch herzlich egal sein, solange das Ergebnis stimmt.\n\nIm Süden gibt es eine Mine, die von Worgs überrannt wurde... Sie kamen aus dem Nichts, aber nach allem, was wir wissen, hat man sie dort zuerst gesehen.\n\nGeht Ihr nur Euren Angelegenheiten nach, aber ich möchte Euch bitten, dass Ihr mir Bescheid gebt, sobald Ihr etwas Wichtiges entdeckt. Wir sind für jede Hilfe gegen das Böse dankbar.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Die Wälder sind gefährlich für den Unvorbereiteten. Halten Sie Ihre Waffen in der Nähe und Ihren Verstand noch näher, oder Ihre nächste Reise in den verwunschenen Wald könnte Ihre letzte sein.",
+        "bbcc9abd17ad872b50c5": "Ihr erzählt mir da eine interessante Geschichte, $N. Der Einfluss der Familie Carevin reicht zwar nicht so weit, dass wir die Wurzel aller Probleme finden und ein für alle Mal ausrotten könnten, aber wir tun was wir können, um die Zahl der Worgs im Dämmerwald in Grenzen zu halten. \n \n Ich habe Calor bereits angewiesen, das zu seinem Hauptanliegen zu machen. ",
+        "e562a5ea5e0baa53e03f": "Eure Geschichte klingt glaubhaft... Ich habe Eure Beweggründe zwar noch nicht ganz begriffen, aber wenn es zu Euren Angelegenheiten hier im Dämmerwald gehört, die Worgs im Wald auszurotten, dann können mir Eure Beweggründe auch herzlich egal sein, solange das Ergebnis stimmt.\n\nIm Süden gibt es eine Mine, die von Worgs überrannt wurde... Sie kamen aus dem Nichts, aber nach allem, was wir wissen, hat man sie dort zuerst gesehen.\n\nGeht Ihr nur Euren Angelegenheiten nach, aber ich möchte Euch bitten, dass Ihr mir Bescheid gebt, sobald Ihr etwas Wichtiges entdeckt. Wir sind für jede Hilfe gegen das Böse dankbar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +166,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +206,11 @@
     },
     "enUS": {
       "description": "Your story rings true... I do not entirely understand your motives, but if your business here in Duskwood involves ridding the forest of worgen in any number, then I can forgo understanding for results.\n\nThere is a mine to the south that has been overrun with worgen... They appeared out of nowhere, but from what we know, that is where they first were found.\n\nGo about your business, but I would ask that if you find anything of import, you share it with me. We will accept any aid in our war against evil.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "The woods are perilous for the unprepared. Keep your weapons close at hand and your wits even closer, or your next journey into the haunted forest may be your last.",
+        "bbcc9abd17ad872b50c5": "It is an interesting story you tell, $n. Though the Carevin family's influence is not large enough that we might find the root of these troubles and finish them once and for all, we will do what we can to contain the worgens' numbers in Duskwood.$b$bAlready I have instructed Calor to make this his first priority.",
+        "e562a5ea5e0baa53e03f": "Your story rings true... I do not entirely understand your motives, but if your business here in Duskwood involves ridding the forest of worgen in any number, then I can forgo understanding for results.$b$bThere is a mine to the south that has been overrun with worgen... They appeared out of nowhere, but from what we know, that is where they first were found.$b$bGo about your business, but I would ask that if you find anything of import, you share it with me. We will accept any aid in our war against evil."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +226,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -158,6 +267,11 @@
     },
     "esES": {
       "description": "Tu historia suena convincente... No acabo de entender tus motivos pero, si tus negocios en el Bosque del Ocaso implican cazar ferocanis en cualquier número, no necesito entender nada.\n\nHay una mina al sur que ha sido invadida por ferocanis. Salieron de la nada pero, por lo que sabemos, es precisamente donde fueron encontrados por vez primera.\n\nTú ocúpate de tus negocios. Y si encuentras algo importante, compártelo conmigo, si no es mucho pedir. Aceptaremos cualquier ayuda en nuestra guerra contra el mal.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Los bosques son peligrosos para quienes no están bien preparados. Ten tus armas bien a mano y mantente alerta, o tu siguiente excursión al bosque encantado será la última.",
+        "bbcc9abd17ad872b50c5": "Tu historia es interesante, $n. Aunque la influencia de la familia Carevin no es tanta, no podremos encontrar las raíces de estos problemas y acabar con ellos para siempre. Pero haremos lo que podamos para contener el número de ferocanis en el Bosque del Ocaso.\n\nYa he dado instrucciones a Calor para que esta sea su prioridad.",
+        "e562a5ea5e0baa53e03f": "Tu historia suena convincente... No acabo de entender tus motivos pero, si tus negocios en el Bosque del Ocaso implican cazar ferocanis en cualquier número, no necesito entender nada.\n\nHay una mina al sur que ha sido invadida por ferocanis. Salieron de la nada pero, por lo que sabemos, es precisamente donde fueron encontrados por vez primera.\n\nTú ocúpate de tus negocios. Y si encuentras algo importante, compártelo conmigo, si no es mucho pedir. Aceptaremos cualquier ayuda en nuestra guerra contra el mal."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +287,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -195,6 +327,11 @@
     },
     "esMX": {
       "description": "Tu historia suena convincente... No acabo de entender tus motivos pero, si tus negocios en el Bosque del Ocaso implican cazar huargen en cualquier número, no necesito entender nada.\n\nHay una mina al sur que ha sido invadida por huargen. Salieron de la nada pero, por lo que sabemos, es precisamente donde fueron encontrados por vez primera.\n\nTú ocúpate de tus negocios. Y si encuentras algo importante, compártelo conmigo, si no es mucho pedir. Aceptaremos cualquier ayuda en nuestra guerra contra el mal.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Los bosques son peligrosos para quienes no están bien preparados. Ten tus armas bien a mano y mantente alerta, o tu siguiente excursión al bosque encantado será la última.",
+        "bbcc9abd17ad872b50c5": "Tu historia es interesante, $n. Aunque la influencia de la familia Carevin no es tanta, no podremos encontrar las raíces de estos problemas y acabar con ellos para siempre. Pero haremos lo que podamos para contener el número de ferocanis en el Bosque del Ocaso.\n\nYa he dado instrucciones a Calor para que esta sea su prioridad.",
+        "e562a5ea5e0baa53e03f": "Tu historia suena convincente... No acabo de entender tus motivos pero, si tus negocios en el Bosque del Ocaso implican cazar huargen en cualquier número, no necesito entender nada.\n\nHay una mina al sur que ha sido invadida por huargen. Salieron de la nada pero, por lo que sabemos, es precisamente donde fueron encontrados por vez primera.\n\nTú ocúpate de tus negocios. Y si encuentras algo importante, compártelo conmigo, si no es mucho pedir. Aceptaremos cualquier ayuda en nuestra guerra contra el mal."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +347,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -232,6 +387,11 @@
     },
     "frFR": {
       "description": "Votre histoire sonne juste... Je ne comprends pas bien vos motifs, mais si vous venez dans le bois de la Pénombre pour le débarrasser de quelques worgens, je ne vais plus chercher à comprendre.\n\nIl y a une mine au sud, que les worgens ont envahie... Ils sont apparus de nulle part, mais d'après ce que nous savons, c'est là qu'on les a vus pour la première fois.\n\nFaites votre boulot, mais si vous découvrez quoi que ce soit d'important, je vous demande de m'en faire part. Nous acceptons l'aide de tout le monde dans notre guerre contre le Mal.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Les bois sont dangereux si l'on est mal préparé. Gardez l'esprit clair et vos armes à portée de main, ou votre prochain voyage dans la forêt hantée sera le dernier.",
+        "bbcc9abd17ad872b50c5": "Votre histoire est intéressante, $N. Quoique l'influence de la famille Carevin ne soit pas assez grande pour que nous puissions y trouver la source de ces problèmes et en finir avec eux une fois pour toutes. Mais nous ferons ce que nous pourrons pour limiter le nombre des worgens dans le bois de la Pénombre. \n \n J'ai déjà chargé Calor d'en faire sa priorité. ",
+        "e562a5ea5e0baa53e03f": "Votre histoire sonne juste... Je ne comprends pas bien vos motifs, mais si vous venez dans le bois de la Pénombre pour le débarrasser de quelques worgens, je ne vais plus chercher à comprendre.\n\nIl y a une mine au sud, que les worgens ont envahie... Ils sont apparus de nulle part, mais d'après ce que nous savons, c'est là qu'on les a vus pour la première fois.\n\nFaites votre boulot, mais si vous découvrez quoi que ce soit d'important, je vous demande de m'en faire part. Nous acceptons l'aide de tout le monde dans notre guerre contre le Mal."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +407,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -269,6 +447,11 @@
     },
     "hrHR": {
       "description": "Tvoja priča zvuči istinito... Ne razumijem posve tvoje pobude, ali ako tvoj posao ovdje u Duskwoodu uključuje uklanjanje bilo kojeg broja worgena iz šume, mogu se odreći razumijevanja u korist rezultata.\n\nNa jugu je rudnik koji su preplavili worgeni... Pojavili su se niotkuda, ali prema onome što znamo, ondje su prvi put pronađeni.\n\nObavi svoj posao, ali zamolio bih te da sa mnom podijeliš sve važne nalaze. Prihvatit ćemo svaku pomoć u ratu protiv zla.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Šume su opasne za nespremne. Drži oružje pri ruci, a pamet još bliže, ili bi tvoje sljedeće putovanje u ukletu šumu moglo biti posljednje.",
+        "bbcc9abd17ad872b50c5": "Zanimljivu priču govoriš, $n. Iako utjecaj obitelji Carevin nije dovoljno velik da pronađemo korijen problema i zauvijek ih okončamo, učinit ćemo sve što možemo da ograničimo broj worgena u Duskwoodu.$b$bVeć sam naredio Caloru da mu to bude prvi prioritet.",
+        "e562a5ea5e0baa53e03f": "Tvoja priča zvuči istinito... Ne razumijem posve tvoje pobude, ali ako tvoj posao u Duskwoodu uključuje uklanjanje worgena iz šume, mogu se odreći razumijevanja u korist rezultata.$b$bNa jugu je rudnik koji su preplavili worgeni... Pojavili su se niotkuda, ali koliko znamo, ondje su prvi put pronađeni.$b$bNastavi svojim poslom, ali ako pronađeš nešto važno, podijeli to sa mnom. Prihvatit ćemo svaku pomoć u ratu protiv zla."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +468,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f190a6d762231b657ad1fb5e0c9fc2fcaeedcc322423da80ecd60aa44e1e1a22"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +506,11 @@
     },
     "itIT": {
       "description": "La tua storia sembra vera... Non comprendo del tutto le tue motivazioni, ma se i tuoi affari qui a Duskwood comportano liberare la foresta da qualche worgen, posso rinunciare a capire in cambio dei risultati.\n\nC'è una miniera a sud che è stata invasa dai worgen... Sono comparsi dal nulla, ma per quanto sappiamo è lì che sono stati trovati per la prima volta.\n\nOccupati dei tuoi affari, ma se trovi qualcosa di importante ti chiedo di condividerlo con me. Accettiamo qualsiasi aiuto nella nostra guerra contro il male.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "I boschi sono pericolosi per chi non è preparato. Tieni le armi a portata di mano e l'ingegno ancora più vicino, o il tuo prossimo viaggio nella foresta infestata potrebbe essere l'ultimo.",
+        "bbcc9abd17ad872b50c5": "È una storia interessante quella che racconti, $N. Anche se l'influenza della famiglia Carevin non è tale da permetterci di trovare la radice di questi guai e di porvi fine una volta per tutte, faremo il possibile per contenere il numero dei worgen a Duskwood.\n\nHo già dato ordine a Calor di farne la sua priorità assoluta.",
+        "e562a5ea5e0baa53e03f": "La tua storia sembra vera... Non capisco del tutto le tue ragioni, ma se quel che hai da fare qui a Duskwood comporta liberare la foresta dai worgen, pochi o tanti che siano, allora posso rinunciare a capire, purché ci siano risultati.\n\nA sud c'è una miniera invasa dai worgen... Sono comparsi dal nulla, ma da quel che sappiamo è lì che sono stati visti per la prima volta.\n\nFa' quel che devi, ma se trovi qualcosa di importante, ti chiedo di condividerlo con me. Accetteremo qualsiasi aiuto nella nostra guerra contro il male."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -324,6 +527,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f190a6d762231b657ad1fb5e0c9fc2fcaeedcc322423da80ecd60aa44e1e1a22"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -347,6 +568,11 @@
     },
     "koKR": {
       "description": "당신 이야기는 사실인 듯하군. 당신의 목적이 뭔지는 모르지만, 숲에서 늑대인간을 몰아내기 위해 이곳 그늘숲에 왔다면 우리로선 나쁠 것 없소.\n\n남쪽에 늑대인간들이 들끓는 광산이 하나 있소이다. 놈들은 모습을 잘 드러내지 않지만, 우리가 아는 한 그곳이 놈들을 처음 발견한 장소요.\n\n자, 이제 가서 할 일을 하시오. 하지만 한 가지 말해둘 건, 뭔가 중요한 걸 발견하면 내게도 알려줘야 한다는 거요. 악의 무리에 맞서기 위해 어떠한 정보나 도움이든 환영이요.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "준비되지 않은 자에게 숲은 위험합니다.  무기를 가까이에 두고 지혜를 더 가까이 두지 않으면 유령의 숲으로의 다음 여행이 마지막이 될 수 있습니다.",
+        "bbcc9abd17ad872b50c5": "흥미로운 얘기로군. 이런 문제들의 원인을 찾아 영원히 제거할 만큼 우리 카레빈 일가의 영향력이 크진 않지만 그늘숲의 늑대인간의 수를 줄이기 위해 우리가 할 수 있는 최선을 다하고 있소이다. 이미 칼로에게 그 일이 최우선이라고 지시도 했소.",
+        "e562a5ea5e0baa53e03f": "당신 이야기는 사실인 듯하군. 당신의 목적이 뭔지는 모르지만, 숲에서 늑대인간을 몰아내기 위해 이곳 그늘숲에 왔다면 우리로선 나쁠 것 없소.\n\n남쪽에 늑대인간들이 들끓는 광산이 하나 있소이다. 놈들은 모습을 잘 드러내지 않지만, 우리가 아는 한 그곳이 놈들을 처음 발견한 장소요.\n\n자, 이제 가서 할 일을 하시오. 하지만 한 가지 말해둘 건, 뭔가 중요한 걸 발견하면 내게도 알려줘야 한다는 거요. 악의 무리에 맞서기 위해 어떠한 정보나 도움이든 환영이요."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -362,6 +588,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -384,6 +628,11 @@
     },
     "plPL": {
       "description": "Twoja opowieść brzmi wiarygodnie... Nie do końca rozumiem pobudki, ale jeśli twoje sprawy w Duskwood wiążą się z pozbywaniem się worgenów z lasu, mogę zamiast zrozumienia zadowolić się rezultatami.\n\nNa południu jest kopalnia opanowana przez worgeny... Pojawiły się znikąd, ale z tego, co wiemy, właśnie tam odnaleziono je po raz pierwszy.\n\nZajmij się swoimi sprawami, ale proszę, podziel się ze mną wszystkim ważnym, co znajdziesz. Przyjmiemy każdą pomoc w wojnie ze złem.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Lasy są niebezpieczne dla nieprzygotowanych. Trzymaj broń pod ręką, a rozum jeszcze bliżej, bo następna wyprawa do nawiedzonego lasu może być ostatnią.",
+        "bbcc9abd17ad872b50c5": "Opowiadasz ciekawą historię, $n. Choć wpływy rodziny Carevinów nie wystarczą, by znaleźć źródło tych kłopotów i zakończyć je raz na zawsze, zrobimy, co w naszej mocy, by ograniczyć liczbę worgenów w Duskwood.$b$bJuż poleciłem Calorowi uczynić to swoim priorytetem.",
+        "e562a5ea5e0baa53e03f": "Twoja historia brzmi wiarygodnie... Nie do końca rozumiem twoje motywy, ale jeśli twoja sprawa w Duskwood polega na usuwaniu worgenów z lasu, mogę zrezygnować ze zrozumienia w zamian za wyniki.$b$bNa południu jest kopalnia opanowana przez worgenów... Pojawili się znikąd, ale z tego, co wiemy, tam odnaleziono ich po raz pierwszy.$b$bRób swoje, ale jeśli znajdziesz coś ważnego, podziel się tym ze mną. Przyjmiemy każdą pomoc w wojnie ze złem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -400,6 +649,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f190a6d762231b657ad1fb5e0c9fc2fcaeedcc322423da80ecd60aa44e1e1a22"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -423,6 +687,11 @@
     },
     "ptBR": {
       "description": "Sua história parece ser verdade... não entendo totalmente os seus motivos, mas se seu objetivo aqui na Floresta do Crepúsculo envolve expurgar os worgens da floresta, aceito abrir mão da compreensão em troca do resultado.\n\nAo sul existe uma mina que foi tomada por worgens... Eles vieram do nada, mas até onde sabemos, a mina foi o primeiro lugar em que foram avistados.\n\nFaça o que tiver que fazer, mas peço que compartilhe comigo quaisquer questões preocupantes que surgirem. Aceitamos qualquer ajuda em nossa luta contra o mal.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "As florestas são perigosas para quem está despreparado. Mantenha suas armas por perto e sua inteligência ainda mais, ou sua próxima jornada pela floresta assombrada poderá ser a última.",
+        "bbcc9abd17ad872b50c5": "$N, a história que você me conta é interessante. Embora a influência da família Carevino não seja grande o suficiente para que possamos encontrar a raiz dessas tribulações e acabar com elas de uma vez por todas, faremos o que estiver ao nosso alcance para eliminar os worgens na Floresta do Crepúsculo.\n\nJá avisei a Petrônio que essa deve ser a prioridade dele.",
+        "e562a5ea5e0baa53e03f": "Sua história parece ser verdade... não entendo totalmente os seus motivos, mas se seu objetivo aqui na Floresta do Crepúsculo envolve expurgar os worgens da floresta, aceito abrir mão da compreensão em troca do resultado.\n\nAo sul existe uma mina que foi tomada por worgens... Eles vieram do nada, mas até onde sabemos, a mina foi o primeiro lugar em que foram avistados.\n\nFaça o que tiver que fazer, mas peço que compartilhe comigo quaisquer questões preocupantes que surgirem. Aceitamos qualquer ajuda em nossa luta contra o mal."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -438,6 +707,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -460,6 +746,11 @@
     },
     "ruRU": {
       "description": "Кажется, ты говоришь правду... Я не до конца понимаю твои мотивы, но если ты готов избавить Сумеречный лес хотя бы от небольшой части воргенов, я не буду допытываться. Важен результат.\n\nВоргены захватили рудник на юге. Они появились внезапно, но, насколько нам известно, нашествие началось именно с рудника.\n\nСтупай по своим делам, но если найдешь что-нибудь важное, расскажи об этом мне. Мы готовы принять любую помощь в нашей войне с силами зла.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Лес опасен для неподготовленного. Держи свое оружие под рукой, а остроумие еще ближе, или твое путешествие может стать последним.",
+        "bbcc9abd17ad872b50c5": "Интересные вещи ты рассказываешь, $C. Хотя семья Карвин не настолько влиятельна, чтобы добраться до корня проблемы и решить ее раз и навсегда, мы делаем все, что в наших силах, чтобы уменьшить число воргенов в Сумеречном лесу.\n\nЯ уже велел Калору уделить этому первоочередное внимание.",
+        "e562a5ea5e0baa53e03f": "Кажется, ты говоришь правду... Я не до конца понимаю твои мотивы, но если ты готов избавить Сумеречный лес хотя бы от небольшой части воргенов, я не буду допытываться. Важен результат.\n\nВоргены захватили рудник на юге. Они появились внезапно, но, насколько нам известно, нашествие началось именно с рудника.\n\nСтупай по своим делам, но если найдешь что-нибудь важное, расскажи об этом мне. Мы готовы принять любую помощь в нашей войне с силами зла."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -475,6 +766,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -497,6 +806,11 @@
     },
     "svSE": {
       "description": "Din berättelse låter sann ... Jag förstår inte helt dina motiv, men om ditt ärende här i Skymningsskogen innebär att skogen blir av med worgar, hur många det än är, kan jag avstå från att förstå så länge det ger resultat.\n\nDet finns en gruva i söder som har blivit överrumplad av worgar ... De dök upp från ingenstans, men så vitt vi vet var det där de först hittades.\n\nSköt dina ärenden, men om du hittar något av vikt ber jag dig att dela det med mig. Vi tar emot all hjälp vi kan få i vårt krig mot ondskan.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Skogarna är farliga för den oförberedda. Håll vapnen nära och förståndet ännu närmare, annars kan din nästa färd in i den hemsökta skogen bli din sista.",
+        "bbcc9abd17ad872b50c5": "Det är en intressant historia du berättar, $n. Även om familjen Carevins inflytande inte räcker för att hitta roten till problemen och avsluta dem en gång för alla, gör vi vad vi kan för att hålla worgenernas antal nere i Duskwood.$b$bJag har redan bett Calor göra detta till sin första prioritet.",
+        "e562a5ea5e0baa53e03f": "Din berättelse låter sann... Jag förstår inte helt dina motiv, men om ditt ärende i Duskwood innebär att rensa skogen på worgen kan jag avstå från förståelse i utbyte mot resultat.$b$bEn gruva i söder har översvämmats av worgen... De dök upp från ingenstans, men såvitt vi vet var det där de först hittades.$b$bFortsätt med ditt ärende, men dela med dig om du finner något viktigt. Vi tar emot all hjälp i vårt krig mot ondskan."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -513,6 +827,21 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -538,6 +867,11 @@
     },
     "trTR": {
       "description": "Hikâyen doğru geliyor... Güdülerini tam olarak anlamıyorum ama Duskwood'daki işin ormanı worgen'lerden herhangi bir sayıda temizlemeyi içeriyorsa, anlamaktan vazgeçip sonuca bakabilirim.\n\nGüneyde worgen istilasına uğramış bir maden var... Ortaya nereden çıktıkları belli değil ama bildiğimiz kadarıyla ilk orada görüldüler.\n\nİşine bak ama önemli bir şey bulursan benimle paylaşmanı isterim. Kötülüğe karşı savaşımızda her yardımı kabul ederiz.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Ormanlar hazırlıksız olanlar için tehlikelidir. Silahlarını yakınında, aklını daha da yakınında tut; yoksa tekinsiz ormana bir sonraki yolculuğun sonuncusu olabilir.",
+        "bbcc9abd17ad872b50c5": "İlginç bir hikâye anlatıyorsun, $n. Carevin ailesinin nüfuzu bu sorunların kökünü bulup sonsuza dek bitirmeye yetmese de Duskwood’daki worgen sayısını sınırlamak için elimizden geleni yapacağız.$b$bCalor’a bunu önceliği yapmasını çoktan söyledim.",
+        "e562a5ea5e0baa53e03f": "Hikâyen doğru geliyor... Niyetlerini tamamen anlamıyorum ama Duskwood’daki işin ormanı worgenlerden temizlemeyi içeriyorsa sonuçlar uğruna anlamaktan vazgeçebilirim.$b$bGüneyde worgenlerin istila ettiği bir maden var... Birdenbire ortaya çıktılar ama bildiğimiz kadarıyla ilk bulundukları yer orası.$b$bİşine devam et ama önemli bir şey bulursan benimle paylaşmanı isterim. Kötülüğe karşı savaşımızda her türlü yardımı kabul ederiz."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -554,6 +888,21 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -577,6 +926,11 @@
     },
     "ukUA": {
       "description": "Ти кажеш правду... Я не зовсім розумію твої мотиви, але якщо твої справи в Смерколіссі передбачають знищення будь-якої кількості воргенів, я радий обміняти розуміння на результат.\n\nНа півдні є шахта, яку захопили воргени. Вони з'явилися хтозна-звідки, але наскільки нам відомо, їх було вперше помічено саме там.\n\nЙди по своїх справах, але прошу: якщо знайдеш щось важливе, дай мені знати. Ми будемо раді будь-якій допомозі в боротьбі зі злом.",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "Ліси небезпечні для непідготовлених. Тримай зброю напоготові, а розум ще ближче, інакше наступна подорож до моторошного лісу може стати останньою.",
+        "bbcc9abd17ad872b50c5": "Цікаву історію ти розповідаєш, $n. Хоч впливу родини Каревінів недостатньо, щоб знайти корінь цих бід і покласти їм край назавжди, ми зробимо все можливе, щоб стримати кількість воргенів у Сутінковому лісі.$b$bЯ вже наказав Калору зробити це першочерговою справою.",
+        "e562a5ea5e0baa53e03f": "Твоя історія звучить правдиво... Я не зовсім розумію твої мотиви, але якщо твоя справа в Сутінковому лісі передбачає винищення воргенів, я можу обійтися без розуміння заради результату.$b$bНа півдні є шахта, захоплена воргенами... Вони з’явилися нізвідки, але, наскільки нам відомо, їх уперше знайшли саме там.$b$bПродовжуй свою справу, але якщо знайдеш щось важливе, поділися зі мною. Ми приймемо будь-яку допомогу у війні проти зла."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -594,6 +948,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "f190a6d762231b657ad1fb5e0c9fc2fcaeedcc322423da80ecd60aa44e1e1a22"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -619,6 +988,11 @@
     },
     "zhCN": {
       "description": "你的故事听上去不像是假的……我不能完全理解你的动机，不过如果你想要除掉暮色森林的狼人，我就不需要了解这些。\n\n在南方有一座矿山，很多狼人在那里出没……天知道他们是从哪里冒出来的，不过据我们所知，他们最早就是在那里出现的。\n\n去忙你的吧，不过如果你有什么重要消息，请一定要告诉我。我们需要所有能帮我们对抗邪恶的信息。",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "不做好准备就贸然闯进森林是很危险的。紧紧握住你的武器，时刻保持高度警惕，否则你一旦进入这片充满邪恶的森林，就可能永远出不来了。",
+        "bbcc9abd17ad872b50c5": "真是个有趣的故事，$N。虽然卡尔文家族还没法找出这一切麻烦的根源并将其彻底铲除，不过我们会尽力遏制暮色森林的狼人势力。\n\n我已经吩咐卡洛尔把这个当作首要任务了。\n",
+        "e562a5ea5e0baa53e03f": "你的故事听上去不像是假的……我不能完全理解你的动机，不过如果你想要除掉暮色森林的狼人，我就不需要了解这些。\n\n在南方有一座矿山，很多狼人在那里出没……天知道他们是从哪里冒出来的，不过据我们所知，他们最早就是在那里出现的。\n\n去忙你的吧，不过如果你有什么重要消息，请一定要告诉我。我们需要所有能帮我们对抗邪恶的信息。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -634,6 +1008,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -656,6 +1048,11 @@
     },
     "zhTW": {
       "description": "你的故事聽上去不像是假的……我不能完全理解你的動機，不過如果你想要除掉暮色森林的狼人，我就不需要瞭解這些。\n\n在南方有一座礦山，很多狼人在那裡出沒……天知道他們是從哪裡冒出來的，不過據我們所知，他們最早就是在那裡出現的。\n\n去忙你的吧，不過如果你有什麼重要消息，請一定要告訴我。我們需要所有能幫我們對抗邪惡的資訊。",
+      "dialogue": {
+        "4d1d9402abc95dbc01fb": "不做好準備就貿然闖進森林是很危險的。緊緊握住你的武器，時刻保持高度警惕，否則你一旦進入這片充滿邪惡的森林，就可能永遠出不來了。",
+        "bbcc9abd17ad872b50c5": "真是個有趣的故事，$N。雖然卡爾文系列還沒法找出這一切麻煩的根源並將其徹底剷除，不過我們會盡力遏制暮色森林的狼人勢力。\n\n我已經吩咐卡洛爾把這個當作首要任務了。",
+        "e562a5ea5e0baa53e03f": "你的故事聽上去不像是假的……我不能完全理解你的動機，不過如果你想要除掉暮色森林的狼人，我就不需要瞭解這些。\n\n在南方有一座礦山，很多狼人在那裡出沒……天知道他們是從哪裡冒出來的，不過據我們所知，他們最早就是在那裡出現的。\n\n去忙你的吧，不過如果你有什麼重要消息，請一定要告訴我。我們需要所有能幫我們對抗邪惡的資訊。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -671,6 +1068,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.4d1d9402abc95dbc01fb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.bbcc9abd17ad872b50c5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e562a5ea5e0baa53e03f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

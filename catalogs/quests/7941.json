@@ -1,7 +1,27 @@
 {
+  "dialogueContexts": {
+    "6a194b3c11aef6cd33b8": {
+      "lineId": "q:7941:progress",
+      "npcId": 14833,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "6bcd206f3cbb306bfb97": {
+      "lineId": "q:7941:complete",
+      "npcId": 14833,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "{name}, musím ti poděkovat za všechnu pomoc. Zásob mám dost, a to z velké části tvou zásluhou, ale pokud mi chceš přinést další sady na zpevnění zbroje, rád je vyměním za lístky na Darkmoon Faire.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, musím ti poděkovat za veškerou pomoc. Díky tvému nemalému úsilí mám zásob dost, ale pokud mi chceš přinést další sady na zbroj, rád je vyměním za lístky na Darkmoon Faire.",
+        "6bcd206f3cbb306bfb97": "Tady máš, $N. Poctivý obchod. Užij si je."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -18,6 +38,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c2000ef00d387b7588311b329ca393afb914856da443a6840e888f93256a97f2"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +72,10 @@
     },
     "daDK": {
       "description": "{name}, jeg må takke dig for al din hjælp. Jeg har rigeligt med forsyninger, ikke mindst takket være din indsats, men hvis du ønsker at bringe mig flere rustningssæt, bytter jeg dem gerne for Darkmoon Faire-billetter.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, jeg må takke dig for al din hjælp. Jeg har rigeligt med forsyninger takket være din store indsats, men hvis du vil bringe mig flere rustningssæt, bytter jeg dem gerne for billetter til Darkmoon Faire.",
+        "6bcd206f3cbb306bfb97": "Værsgo, $N. En fair handel. God fornøjelse."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +92,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c2000ef00d387b7588311b329ca393afb914856da443a6840e888f93256a97f2"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +125,10 @@
     },
     "deDE": {
       "description": "{name}, ich muss mich für all Eure Hilfe bedanken. Ich verfüge jetzt über eine Menge an Vorräten, dank Eurer Bemühungen, aber wenn Ihr mir noch mehr Rüstungssets bringen möchtet, dann werde ich sie gerne gegen ein paar Lose des Dunkelmond-Jahrmarkts eintauschen.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, ich muss mich für all Eure Hilfe bedanken. Ich verfüge jetzt über eine Menge an Vorräten, dank Eurer Bemühungen, aber wenn Ihr mir noch mehr Rüstungssets bringen möchtet, dann werde ich sie gerne gegen ein paar Lose des Dunkelmond-Jahrmarkts eintauschen.",
+        "6bcd206f3cbb306bfb97": "Hier, $N. Ein fairer Tausch. Viel Vergnügen. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +144,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -118,6 +178,10 @@
     },
     "enUS": {
       "description": "{name}, I must thank you for all your help.  I have plenty of supplies, through no small efforts on your part, but if you wish to bring me more armor kits, then I will gladly trade them for Darkmoon Faire tickets.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, I must thank you for all your help.  I have plenty of supplies, through no small efforts on your part, but if you wish to bring me more armor kits, then I will gladly trade them for Darkmoon Faire tickets.",
+        "6bcd206f3cbb306bfb97": "There you are, $N.  A fair trade.  Enjoy."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -133,6 +197,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -155,6 +231,10 @@
     },
     "esES": {
       "description": "{name}, quiero agradecerte tu ayuda. Tengo muchos suministros, gracias a tus esfuerzos. Pero si me traes más refuerzos para armadura, te los cambiaré por vales para la Feria de la Luna Negra.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, debo agradecerte toda tu ayuda.  Tengo muchos suministros, gracias a un gran esfuerzo de tu parte, pero si deseas traerme más conjuntos de armadura, con gusto los cambiaré por boletos para la Feria de la Luna Negra.",
+        "6bcd206f3cbb306bfb97": "Ahí estás, $N.  Un comercio justo.  Disfrutar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -170,6 +250,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -193,6 +285,10 @@
     },
     "esMX": {
       "description": "{name}, quiero agradecerte tu ayuda. Tengo muchos suministros, gracias a tus esfuerzos. Pero si me traes más refuerzos para armadura, te los cambiaré por vales para la Feria de la Luna Negra.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$n, debo agradecerte toda tu ayuda. Tengo muchos suministros, gracias a un gran esfuerzo de tu parte, pero si deseas traerme más kits de armadura, con mucho gusto los cambiaré por vales para la Feria de la Luna Negra.",
+        "6bcd206f3cbb306bfb97": "Ahí lo tienes, $n. Un comercio justo. A disfrutar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +304,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +339,10 @@
     },
     "frFR": {
       "description": "Je dois vous remercier pour votre aide, {name}. J’ai bien assez de réserves, en grande partie grâce à vous. Si vous voulez m’amener davantage de renforts d’armure, je vous les échangerai volontiers contre des bons de la foire de Sombrelune.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, je dois vous remercier pour toute votre aide. Vous avez plein de fournitures, sans que vous ayez à faire de petits efforts de votre part, mais si vous souhaitez me rapporter plus de kits d'armure, je les échangerai volontiers contre des billets pour Darkmoon Faire.",
+        "6bcd206f3cbb306bfb97": "Et voilà, $n. Un marché équitable. Profitez-en."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +358,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +392,10 @@
     },
     "hrHR": {
       "description": "{name}, moram ti zahvaliti na svoj pomoći. Imam mnogo zaliha, dobrim dijelom zahvaljujući tvojem trudu, ali ako mi želiš donijeti još kompleta za oklop, rado ću ih zamijeniti za ulaznice za sajam Darkmoon.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, moram ti zahvaliti na svoj pomoći. Zahvaljujući tvojem velikom trudu imam dovoljno zaliha, ali ako mi želiš donijeti još kompleta za oklop, rado ću ih zamijeniti za ulaznice za Darkmoon Faire.",
+        "6bcd206f3cbb306bfb97": "Izvoli, $N. Poštena razmjena. Uživaj."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +412,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c2000ef00d387b7588311b329ca393afb914856da443a6840e888f93256a97f2"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +445,10 @@
     },
     "itIT": {
       "description": "{name}, ho apprezzato molto il tuo aiuto. Grazie a te ora ho una grossa scorta di potenziamenti d'armatura. Tuttavia, se vuoi portarmene degli altri, li scambierò volentieri con dei buoni della Fiera di Lunacupa.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, devo ringraziarti per tutto il tuo aiuto. Ho scorte in abbondanza, grazie ai tuoi notevoli sforzi, ma se vuoi portarmi altri potenziamenti d'armatura, li scambierò volentieri con dei biglietti della Darkmoon Faire.",
+        "6bcd206f3cbb306bfb97": "Ecco a te, $N. Uno scambio equo. Buon divertimento."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -322,6 +464,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -344,6 +498,10 @@
     },
     "koKR": {
       "description": "그동안 도와 줘서 고맙소. 당신이 애써 준 덕분에 이제 물량이 충분하오. 하지만 방어구 키트를 더 가져다 준다면 앞으로도 내 기꺼이 다크문 축제 상품권으로 교환해 주겠소.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, 도와주셔서 감사합니다.  나는 당신의 노력으로 많은 보급품을 가지고 있지만, 당신이 더 많은 방어구 키트를 가져오고 싶다면 다크문 축제 티켓으로 기꺼이 교환하겠습니다.",
+        "6bcd206f3cbb306bfb97": "여기 있습니다, $N.  공정 거래.  즐기다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -359,6 +517,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -381,6 +551,10 @@
     },
     "plPL": {
       "description": "{name}, muszę ci podziękować za całą pomoc. Mam mnóstwo zapasów, w niemałej mierze dzięki twoim wysiłkom, ale jeśli zechcesz przynieść więcej zestawów do naprawy pancerza, chętnie wymienię je na kupony Darkmoon Faire.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, muszę ci podziękować za całą pomoc. Dzięki twoim niemałym wysiłkom mam mnóstwo zapasów, ale jeśli zechcesz przynieść mi więcej zestawów do zbroi, chętnie wymienię je na bilety na Darkmoon Faire.",
+        "6bcd206f3cbb306bfb97": "Proszę bardzo, $N. Uczciwa wymiana. Korzystaj."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -397,6 +571,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c2000ef00d387b7588311b329ca393afb914856da443a6840e888f93256a97f2"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -420,6 +604,10 @@
     },
     "ptBR": {
       "description": "{name}, devo agradecer por sua ajuda. Tenho provisões suficientes graças a seus notáveis esforços, mas, se você quiser me trazer mais kits de armadura, eu os trocarei de bom grado por cupons da Feira de Negraluna.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, preciso agradecer por toda a sua ajuda. Tenho muitos suprimentos graças aos seus grandes esforços, mas, se quiser trazer mais kits de armadura, terei prazer em trocá-los por ingressos da Feira de Negraluna.",
+        "6bcd206f3cbb306bfb97": "Aqui está, $N. Uma troca justa. Aproveite."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -435,6 +623,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -458,6 +656,10 @@
     },
     "ruRU": {
       "description": "{name}, я так тебе благодарен! Теперь твоими стараниями у меня припасов больше, чем нужно! Но если у тебя еще завалялись комплекты накладок – приноси, а я уж найду им применение. Я расплачусь купонами ярмарки Новолуния.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, я должен поблагодарить тебя за помощь. У меня уже много накладок, но они быстро закончатся. Так что, будет еще, приноси! Я с удовольствием обменяю их на купоны Новолуния!",
+        "6bcd206f3cbb306bfb97": "А вот и ты, $N. Отличная торговля. Наслаждайся."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -473,6 +675,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -495,6 +709,10 @@
     },
     "svSE": {
       "description": "{name}, jag måste tacka dig för all hjälp. Jag har gott om förnödenheter, till stor del tack vare dig, men vill du ge mig fler rustningssatser byter jag dem gärna mot biljetter till Darkmoon Faire.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, jag måste tacka dig för all din hjälp. Tack vare dina stora insatser har jag gott om förnödenheter, men om du vill ge mig fler rustningskit byter jag dem gärna mot biljetter till Darkmoon Faire.",
+        "6bcd206f3cbb306bfb97": "Varsågod, $N. Ett rättvist byte. Njut av dem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -511,6 +729,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c2000ef00d387b7588311b329ca393afb914856da443a6840e888f93256a97f2"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -534,6 +762,10 @@
     },
     "trTR": {
       "description": "{name}, tüm yardımların için sana teşekkür etmeliyim. Senin büyük çabaların sayesinde bolca malzemem var, ama bana daha fazla zırh takımı getirmek istersen bunları seve seve Darkmoon Faire biletleriyle takas ederim.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, tüm yardımların için sana teşekkür etmeliyim. Büyük çabaların sayesinde bolca malzemem var, ama bana daha fazla zırh kiti getirmek istersen onları memnuniyetle Darkmoon Panayırı biletleriyle takas ederim.",
+        "6bcd206f3cbb306bfb97": "Buyur, $N. Adil bir takas. Güle güle kullan."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -550,6 +782,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c2000ef00d387b7588311b329ca393afb914856da443a6840e888f93256a97f2"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -573,6 +815,10 @@
     },
     "ukUA": {
       "description": "{name}, мушу подякувати за всю твою допомогу. Завдяки твоїм чималим зусиллям я маю вдосталь припасів. Але якщо хочеш принести ще накладок для обладунків, я радо обміняю їх на квитки ярмарку Темного Місяця.",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N, мушу подякувати тобі за всю допомогу. Завдяки твоїм чималим зусиллям я маю вдосталь припасів, але якщо принесеш мені ще набори для обладунків, я залюбки обміняю їх на квитки Ярмарку Темного Місяця.",
+        "6bcd206f3cbb306bfb97": "Ось, $N. Чесний обмін. Користуйся."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -589,6 +835,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c2000ef00d387b7588311b329ca393afb914856da443a6840e888f93256a97f2"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -613,6 +869,10 @@
     },
     "zhCN": {
       "description": "{name}，我必须感谢你为我提供的一切帮助。即使没有你的帮助，我也有足够的物资补给，但是如果你为我提供更多的护甲片，我会很乐意用暗月马戏团奖券和你进行交换的。",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N，我必须要感谢你的帮助。我有很多的补给了，当然这里面你帮了很大的忙，如果你可以带更多的护甲片给我的话，我会很乐意用暗月马戏团奖券来交换它们。",
+        "6bcd206f3cbb306bfb97": "给你，$N。很公平的交易。希望你喜欢。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -628,6 +888,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -651,6 +923,10 @@
     },
     "zhTW": {
       "description": "{name}，我必須要感謝你的幫助。我有很多的補給了，當然這裡面你幫了很大的忙，如果你可以帶更多的護甲片給我的話，我會很樂意用暗月馬戲團獎券來交換它們。",
+      "dialogue": {
+        "6a194b3c11aef6cd33b8": "$N，我必須要感謝你的幫助。我有很多的補給了，當然這裏面你幫了很大的忙，如果你可以帶更多的護甲片給我的話，我會很樂意用暗月馬戲團獎券來交換它們。",
+        "6bcd206f3cbb306bfb97": "給你，$N。很公平的交易。希望你喜歡。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -666,6 +942,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.6a194b3c11aef6cd33b8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.6bcd206f3cbb306bfb97": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

@@ -1,13 +1,44 @@
 {
   "areaId": 8,
+  "dialogueContexts": {
+    "3c5c413951099a87d396": {
+      "lineId": "q:1422:complete",
+      "npcId": 5593,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "c8d4af5e272488b9f16e": {
+      "lineId": "q:1422:accept",
+      "npcId": 5592,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Zatímco se pustím do práce na tvé zbrani, nezajdeš za Katarem? Zmiňoval, že potřebuje pomoc s hlídkami podél pláže, a radši tě uvidím s bystrou hlavou a připravenými zbraněmi, než jak se opíjíš s některými z těch mizerů, s nimiž sdílím tenhle tábor.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Chvíli buď zticha, $c. I přes tlumený hukot moře lze slyšet odporné bublání rybích lidí.",
+        "c8d4af5e272488b9f16e": "Zatímco se pustím do práce na tvé zbrani, nezajdeš za Katarem? Zmiňoval, že potřebuje pomoc s hlídkami podél pláže, a radši tě uvidím s bystrou hlavou a připravenými zbraněmi, než jak se opíjíš s některými z těch mizerů, s nimiž sdílím tenhle tábor."
+      },
       "summary": "Promluv si s Katarem v Swamp of Sorrows.",
       "title": "Hrozba z moře",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.7.3"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
             "origin": "community",
             "source": "czechForever",
             "sourceLocale": "csCZ",
@@ -32,11 +63,26 @@
     },
     "daDK": {
       "description": "Mens jeg begynder arbejdet på dit våben, hvorfor taler du så ikke med Katar? Han nævnte, at han havde brug for hjælp med patruljer langs stranden, og jeg ser hellere, at du holder dit sind og dine våben klar, end at du bliver fuld sammen med nogle af de andre lus, jeg deler denne lejr med.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Vær stille et øjeblik, $c. Selv gennem havets dæmpede brusen kan man høre de væmmelige klukkelyde fra fiskefolkene.",
+        "c8d4af5e272488b9f16e": "Mens jeg begynder arbejdet på dit våben, hvorfor taler du så ikke med Katar? Han nævnte, at han havde brug for hjælp med patruljer langs stranden, og jeg ser hellere, at du holder dit sind og dine våben klar, end at du bliver fuld sammen med nogle af de andre lus, jeg deler denne lejr med."
+      },
       "summary": "Tal med Katar i Swamp of Sorrows.",
       "title": "Trussel fra havet",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81b71bb9f3e7c4f42d39b44b6108588c9175afac0ac947d3965d4abc491aa812"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -59,6 +105,10 @@
     },
     "deDE": {
       "description": "Warum unterhaltet Ihr Euch nicht mit Katar, während ich an Eurer Waffe arbeite? Er erwähnte, dass er Hilfe bei Patrouillen am Strand braucht, und mir wäre es lieber, Ihr würdet Euren Geist und Eure Waffen trainieren, anstatt Euch mit den anderen Tunichtguten in diesem Lager zu betrinken.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Schweigt einen Moment, $C. Trotz der dumpf tosenden Brandung könnt Ihr das abscheuliche Gluckern der Fischmenschen hören. ",
+        "c8d4af5e272488b9f16e": "Warum unterhaltet Ihr Euch nicht mit Katar, während ich an Eurer Waffe arbeite? Er erwähnte, dass er Hilfe bei Patrouillen am Strand braucht, und mir wäre es lieber, Ihr würdet Euren Geist und Eure Waffen trainieren, anstatt Euch mit den anderen Tunichtguten in diesem Lager zu betrinken."
+      },
       "summary": "Sprecht mit Katar in den Sümpfen des Elends.",
       "title": "Gefahr aus dem Meer",
       "translationMetadata": {
@@ -67,6 +117,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +145,10 @@
     },
     "enUS": {
       "description": "While I begin work on your weapon, why don't you talk to Katar? He mentioned needing help with patrols along the beach, and I'd rather see you keep your wits and weapons prepared instead of getting drunk with some of the other louses I share this camp with.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Be silent a moment, $c. Even over the dull roar of the sea you can still hear those disgusting gurgles from the fish men.",
+        "c8d4af5e272488b9f16e": "While I begin work on your weapon, why don't you talk to Katar? He mentioned needing help with patrols along the beach, and I'd rather see you keep your wits and weapons prepared instead of getting drunk with some of the other louses I share this camp with."
+      },
       "summary": "Speak to Katar in the Swamp of Sorrows.",
       "title": "Threat From the Sea",
       "translationMetadata": {
@@ -91,6 +157,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +186,10 @@
     },
     "esES": {
       "description": "Mientras me pongo a trabajar en tu arma, ¿por qué no hablas con Katar? Dijo que necesitaba ayuda con las patrullas por la playa y, sinceramente, preferiría verte alerta en lugar de que te emborracharas con algunos de los otros canallas con los que comparto este campamento.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Silencio un momento, $c. Incluso por encima del rugir del mar se pueden oír esos horribles gritos de los pescadores.",
+        "c8d4af5e272488b9f16e": "Mientras me pongo a trabajar en tu arma, ¿por qué no hablas con Katar? Dijo que necesitaba ayuda con las patrullas por la playa y, sinceramente, preferiría verte alerta en lugar de que te emborracharas con algunos de los otros canallas con los que comparto este campamento."
+      },
       "summary": "Habla con Katar en el Pantano de las Penas.",
       "title": "La amenaza marítima",
       "translationMetadata": {
@@ -116,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +226,10 @@
     },
     "esMX": {
       "description": "Mientras me pongo a trabajar en tu arma, ¿por qué no hablas con Katar? Dijo que necesitaba ayuda con las patrullas por la playa y, sinceramente, preferiría verte alerta en lugar de que te emborracharas con algunos de los otros canallas con los que comparto este campamento.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Silencio un momento, $c. Incluso por encima del rugir del mar se pueden oír esos horribles gritos de los pescadores.",
+        "c8d4af5e272488b9f16e": "Mientras me pongo a trabajar en tu arma, ¿por qué no hablas con Katar? Dijo que necesitaba ayuda con las patrullas por la playa y, sinceramente, preferiría verte alerta en lugar de que te emborracharas con algunos de los otros canallas con los que comparto este campamento."
+      },
       "summary": "Habla con Katar en el Pantano de las Penas.",
       "title": "La amenaza marítima",
       "translationMetadata": {
@@ -140,6 +238,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +266,10 @@
     },
     "frFR": {
       "description": "Pendant que je commence à travailler sur votre arme, pourquoi n'iriez-vous pas parler à Katar ? Il a mentionné qu'il aurait besoin d'aide pour patrouiller le long de la plage, et je vous imagine mieux gardant vos esprits et vos armes en alerte que vous saoulant en compagnie des autres poux avec qui je partage ce camp.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Restez silencieux un moment, $C. Même le grondement régulier de la mer n’arrive pas à couvrir les gargouillements dégoûtants de ces hommes-poissons. ",
+        "c8d4af5e272488b9f16e": "Pendant que je commence à travailler sur votre arme, pourquoi n'iriez-vous pas parler à Katar ? Il a mentionné qu'il aurait besoin d'aide pour patrouiller le long de la plage, et je vous imagine mieux gardant vos esprits et vos armes en alerte que vous saoulant en compagnie des autres poux avec qui je partage ce camp."
+      },
       "summary": "Parler à Katar, dans le marais des Chagrin.",
       "title": "Le danger venu des flots",
       "translationMetadata": {
@@ -164,6 +278,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,11 +306,26 @@
     },
     "hrHR": {
       "description": "Dok počnem raditi na tvojem oružju, zašto ne bi razgovarao s Katarom? Spomenuo je da mu treba pomoć s patrolama duž plaže, a radije bih vidio da držiš um i oružje spremnima nego da se opijaš s nekim od drugih nitkova s kojima dijelim ovaj logor.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Budi načas tih, $c. Čak se i kroz prigušenu huku mora čuje odvratno grgljanje ribljih ljudi.",
+        "c8d4af5e272488b9f16e": "Dok počnem raditi na tvojem oružju, zašto ne bi razgovarao s Katarom? Spomenuo je da mu treba pomoć s patrolama duž plaže, a radije bih vidio da držiš um i oružje spremnima nego da se opijaš s nekim od drugih nitkova s kojima dijelim ovaj logor."
+      },
       "summary": "Razgovaraj s Katarom u Swamp of Sorrowsu.",
       "title": "Prijetnja s mora",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81b71bb9f3e7c4f42d39b44b6108588c9175afac0ac947d3965d4abc491aa812"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -207,6 +348,10 @@
     },
     "itIT": {
       "description": "Mentre comincio a lavorare alla tua arma, perché non parli con Katar? Ha detto di aver bisogno di aiuto per pattugliare la spiaggia e preferirei vederti mantenere pronti ingegno e armi anziché ubriacarti con certi fannulloni con cui condivido l'accampamento.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Fa' silenzio un momento, $C. Anche sopra il ruggito sordo del mare si sentono ancora quei disgustosi gorgoglii degli uomini pesce.",
+        "c8d4af5e272488b9f16e": "Mentre comincio a lavorare alla tua arma, perché non parli con Katar? Ha detto che gli serve aiuto con le pattuglie lungo la spiaggia, e preferirei vederti con la mente lucida e le armi pronte, invece che a ubriacarti con qualcuno degli altri pidocchi con cui divido questo accampamento."
+      },
       "summary": "Parla con Katar nella Swamp of Sorrows.",
       "title": "Minaccia dal mare",
       "translationMetadata": {
@@ -216,6 +361,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "81b71bb9f3e7c4f42d39b44b6108588c9175afac0ac947d3965d4abc491aa812"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +391,10 @@
     },
     "koKR": {
       "description": "내가 자네 무기를 만드는 일을 시작할 동안 카타르와 얘기해 보는 게 어떤가? 그는 해안 순찰을 도와줄 일손을 찾고 있다고 했었네. 그리고 이곳의 별 볼일 없는 다른 이들과 어울려 술이나 마시는 것보다는 자네의 전투 감각과 무기를 잘 단련해 두는 게 낫지 않겠나?",
+      "dialogue": {
+        "3c5c413951099a87d396": "잠시만 조용히 해 봐, $c 친구. 단조로운 파도 소리 위로 물고기 인간이 목을 울려 대는 저 역겨운 소리를 들을 수 있을 테니까 말이야.",
+        "c8d4af5e272488b9f16e": "내가 자네 무기를 만드는 일을 시작할 동안 카타르와 얘기해 보는 게 어떤가? 그는 해안 순찰을 도와줄 일손을 찾고 있다고 했었네. 그리고 이곳의 별 볼일 없는 다른 이들과 어울려 술이나 마시는 것보다는 자네의 전투 감각과 무기를 잘 단련해 두는 게 낫지 않겠나?"
+      },
       "summary": "슬픔의 늪에 있는 카타르와 대화해야 합니다.",
       "title": "바다의 위협",
       "translationMetadata": {
@@ -242,6 +403,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,11 +431,26 @@
     },
     "plPL": {
       "description": "Gdy zacznę pracować nad twoją bronią, porozmawiaj z Katarem. Wspominał, że potrzebuje pomocy z patrolami plaży. Wolę widzieć twój umysł i broń w gotowości niż pijaństwo z innymi wszami, z którymi dzielę obóz.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Zamilknij na chwilę, $c. Nawet przez przytłumiony szum morza słychać obrzydliwe bulgotanie rybich ludzi.",
+        "c8d4af5e272488b9f16e": "Gdy zacznę pracować nad twoją bronią, porozmawiaj z Katarem. Wspominał, że potrzebuje pomocy z patrolami plaży. Wolę widzieć twój umysł i broń w gotowości niż pijaństwo z innymi wszami, z którymi dzielę obóz."
+      },
       "summary": "Porozmawiaj z Katarem na Swamp of Sorrows.",
       "title": "Zagrożenie z morza",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81b71bb9f3e7c4f42d39b44b6108588c9175afac0ac947d3965d4abc491aa812"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -285,6 +473,10 @@
     },
     "ptBR": {
       "description": "Enquanto começo a trabalhar na sua arma, por que não fala com Katar? Ele mencionou alguma coisa sobre precisar de ajuda nas patrulhas da praia. Prefiro que você se ocupe e mantenha suas armas em riste do que acabe enchendo a cara com esse bando inúteis aqui do acampamento.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Faça silêncio por um instante, $c. Mesmo com o rugido surdo do oceano, ainda se pode ouvir aqueles gorgolejos nojentos do povo-peixe.",
+        "c8d4af5e272488b9f16e": "Enquanto começo a trabalhar na sua arma, por que não fala com Katar? Ele mencionou alguma coisa sobre precisar de ajuda nas patrulhas da praia. Prefiro que você se ocupe e mantenha suas armas em riste do que acabe enchendo a cara com esse bando inúteis aqui do acampamento."
+      },
       "summary": "Fale com Katar no Pântano das Mágoas.",
       "title": "Ameaça do mar",
       "translationMetadata": {
@@ -293,6 +485,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +513,10 @@
     },
     "ruRU": {
       "description": "Пока я буду работть над твоим оружием, почему бы тебе не поговорить с Катором? Он, говорил, что ему нужна помощь с патрулированием побережья, и тебе бы лучше поддерживать боевую форму, а не напиваться с теми недоделками, что торчат в нашем лагере.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Помолчи, $C. Даже над глухим ревом моря, можно услышать это отвратительное бульканье от рыболовов.",
+        "c8d4af5e272488b9f16e": "Пока я буду работть над твоим оружием, почему бы тебе не поговорить с Катором? Он, говорил, что ему нужна помощь с патрулированием побережья, и тебе бы лучше поддерживать боевую форму, а не напиваться с теми недоделками, что торчат в нашем лагере."
+      },
       "summary": "Поговорите с Катором на Болоте Печали.",
       "title": "Угроза с моря",
       "translationMetadata": {
@@ -317,6 +525,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,11 +553,26 @@
     },
     "svSE": {
       "description": "Medan jag börjar arbeta på ditt vapen kan du väl tala med Katar? Han nämnde att han behövde hjälp med patruller längs stranden, och jag ser hellre att du håller sinnen och vapen redo än super med de andra uslingarna i lägret.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Var tyst ett ögonblick, $c. Till och med genom havets dova brus hör man fiskmännens äckliga gurglande.",
+        "c8d4af5e272488b9f16e": "Medan jag börjar arbeta på ditt vapen kan du väl tala med Katar? Han nämnde att han behövde hjälp med patruller längs stranden, och jag ser hellre att du håller sinnen och vapen redo än super med de andra uslingarna i lägret."
+      },
       "summary": "Tala med Katar i Swamp of Sorrows.",
       "title": "Hot från havet",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81b71bb9f3e7c4f42d39b44b6108588c9175afac0ac947d3965d4abc491aa812"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -360,11 +595,26 @@
     },
     "trTR": {
       "description": "Ben silahın üzerinde çalışmaya başlarken sen de Katar ile konuşsan? Sahil devriyeleri için yardıma ihtiyacı olduğunu söyledi. Bu kampı paylaştığım diğer serserilerden bazılarıyla sarhoş olmak yerine aklını ve silahlarını hazır tutmanı tercih ederim.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Bir an sessiz ol, $c. Denizin uğultusuna rağmen balık adamların o iğrenç gurultuları duyuluyor.",
+        "c8d4af5e272488b9f16e": "Ben silahın üzerinde çalışmaya başlarken sen de Katar ile konuşsan? Sahil devriyeleri için yardıma ihtiyacı olduğunu söyledi. Bu kampı paylaştığım diğer serserilerden bazılarıyla sarhoş olmak yerine aklını ve silahlarını hazır tutmanı tercih ederim."
+      },
       "summary": "Swamp of Sorrows'taki Katar ile konuş.",
       "title": "Denizden Gelen Tehdit",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "81b71bb9f3e7c4f42d39b44b6108588c9175afac0ac947d3965d4abc491aa812"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -387,11 +637,27 @@
     },
     "ukUA": {
       "description": "Поки я буду працювати над твоєю зброєю, чому б тобі не поговорити з Катаром? Він, говорив, що йому потрібна допомога з патрулюванням узбережжя, і я б радше бачив як ти тримаєш розум та зброю напоготові, замість того, щоб напиватись з деякими іншими невдахами з цього табору.",
+      "dialogue": {
+        "3c5c413951099a87d396": "Помовч хвилину, $c. Навіть крізь глухий шум моря чути огидне булькання риболюдей.",
+        "c8d4af5e272488b9f16e": "Поки я буду працювати над твоєю зброєю, чому б тобі не поговорити з Катаром? Він, говорив, що йому потрібна допомога з патрулюванням узбережжя, і я б радше бачив як ти тримаєш розум та зброю напоготові, замість того, щоб напиватись з деякими іншими невдахами з цього табору."
+      },
       "summary": "Поговоріть з Катаром на болоті Скорбот.",
       "title": "Загроза з моря",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "community",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "81b71bb9f3e7c4f42d39b44b6108588c9175afac0ac947d3965d4abc491aa812"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
             "origin": "community",
             "source": "classicUA",
             "sourceLocale": "enUS",
@@ -417,6 +683,10 @@
     },
     "zhCN": {
       "description": "在我给你打造武器的时侯，为什么你不去和卡塔尔谈谈呢？他曾说过需要有人帮忙在海滩上巡逻，我非常乐意看到像你这样睿智而警觉的{race}去协助他，而不是我们这片营地中的某些只会骗酒喝的家伙。",
+      "dialogue": {
+        "3c5c413951099a87d396": "稍微安静一会儿，$C。就算海潮的声音再大，你都能听到那群恶心的鱼人所发出的叫声。\n",
+        "c8d4af5e272488b9f16e": "在我给你打造武器的时侯，为什么你不去和卡塔尔谈谈呢？他曾说过需要有人帮忙在海滩上巡逻，我非常乐意看到像你这样睿智而警觉的$r去协助他，而不是我们这片营地中的某些只会骗酒喝的家伙。"
+      },
       "summary": "与悲伤沼泽的卡塔尔谈一谈。",
       "title": "海中的威胁",
       "translationMetadata": {
@@ -425,6 +695,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +723,10 @@
     },
     "zhTW": {
       "description": "在我幫你打造武器的時侯，你何不去和卡塔爾談談？他曾說過需要人幫忙在海灘上巡邏，我寧願看到你保持清醒並準備好武器去協助他，而不是跟在我們這片營地中某些只會騙酒喝的傢伙醉倒在一起。",
+      "dialogue": {
+        "3c5c413951099a87d396": "稍微安靜一會兒，$C。就算海潮的聲音再大，你都能聽到那羣噁心的魚人所發出的叫聲。",
+        "c8d4af5e272488b9f16e": "在我給你打造武器的時侯，為什麼你不去和卡達談談呢？他曾說過需要有人幫忙在海灘上巡邏，我非常樂意看到像你這樣睿智而警覺的$r去協助他，而不是我們這片營地中的某些只會騙酒喝的傢伙。"
+      },
       "summary": "與悲傷沼澤的卡塔爾談話。",
       "title": "海中的威脅",
       "translationMetadata": {
@@ -449,6 +735,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.3c5c413951099a87d396": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c8d4af5e272488b9f16e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

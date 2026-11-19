@@ -1,7 +1,45 @@
 {
+  "dialogueContexts": {
+    "1bf845a9d1d356f7ef02": {
+      "lineId": "q:1655:progress",
+      "npcId": 6241,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "3a0f34a531b79daa8f0e": {
+      "lineId": "q:1655:accept:f",
+      "npcId": 6241,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "47c19dbf5437549a2398": {
+      "lineId": "q:1655:complete",
+      "npcId": 6241,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "c01580921dd698c14a7e": {
+      "lineId": "q:1655:accept:m",
+      "npcId": 6241,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Ach, člověče, vyděsil jsi mě! Nevidíš, že jsem byl zahloubanej do myšlenek?\n\nCože? Jordanova zásilka... pro Ironforge. Á, jo, vím, o čem mluvíš. Zlobři Mo'grosh, ti vzali zásilku rudy mýho starýho přítele. Karavana sem mířila z Wetlands a přepadli ji. Strážnej, kterej jejich útok přežil, před pár dny zemřel, léčitel se k němu nedostal dost rychle.\n\nJestli tu zásilku chceš, budeš muset na severovýchod přes jezero. Někde tam musí být.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Tak co, už máš štěstí? Haha, ti ogři tě ještě nedostali, že?",
+        "3a0f34a531b79daa8f0e": "Ach, polekal jsi mě, $G muži:ženo;! Nevidíš, že jsem přemýšlel?$B$BCože? Jordanova zásilka... pro Ironforge. Aha, vím, o čem mluvíš. Vzali ji ogři Mo'grosh. Karavanu z Mokřin přepadli cestou sem. Strážný, který útok přežil, před pár dny zemřel — léčitel se k němu nedostal včas.$B$BChceš-li zásilku, musíš přes jezero na severovýchod. Někde tam určitě je.",
+        "47c19dbf5437549a2398": "Ano, to je ono. Ha! Kdybych věděl, že se opravdu vydáš bojovat s ogry, dal bych ti celý seznam věcí. Ale nepracuješ pro mě, že?$B$BDohoda platí; Jordan chtěl zásilku mé slitiny a tu dostane.$B$BPozdravuj ho a opatruj se, $C.",
+        "c01580921dd698c14a7e": "Ach, polekal jsi mě, $G muži:ženo;! Nevidíš, že jsem přemýšlel?$B$BCože? Jordanova zásilka... pro Ironforge. Aha, vím, o čem mluvíš. Vzali ji ogři Mo'grosh. Karavanu z Mokřin přepadli cestou sem. Strážný, který útok přežil, před pár dny zemřel — léčitel se k němu nedostal včas.$B$BChceš-li zásilku, musíš přes jezero na severovýchod. Někde tam určitě je."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -18,6 +56,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d77805d85df951f273add357404f1eda422f9253c6527f14531bc13491e4f9ee"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +101,12 @@
     },
     "daDK": {
       "description": "Åh, du forskrækkede mig! Kan du ikke se, at jeg var fordybet i tanker?\n\nHvad siger du? Jordans forsendelse... til Ironforge. Ahhh, ja, jeg ved, hvad du taler om. Mo'grosh-ogrer... det var dem, der tog min gamle vens malmforsendelse. Karavanen var på vej hertil fra Wetlands og blev overfaldet. Vagten, der overlevede deres angreb, døde for få dage siden; en helbreder kunne ikke nå ham hurtigt nok.\n\nHvis du vil have forsendelsen, må du tage nordøst over søen. Den må være der et sted.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Nå, held endnu? Haha, de ogre har vel ikke fået ram på dig?",
+        "3a0f34a531b79daa8f0e": "Åh, du forskrækkede mig, $G mand:kvinde;! Kan du ikke se, jeg tænkte?$B$BHvad? Jordans sending... til Ironforge. Ah, jeg ved, hvad du taler om. Mo'grosh-ogrerne tog min gamle vens malm. Karavanen fra Wetlands blev overfaldet på vej hertil. Vagten, der overlevede, døde for få dage siden — helbrederen nåede ikke frem i tide.$B$BVil du have sendingen, må du nordøst over søen. Den må være der et sted.",
+        "47c19dbf5437549a2398": "Ja, det er den. Ha! Havde jeg vidst, at du virkelig ville kæmpe mod ogrerne, havde jeg givet dig en hel liste. Men du arbejder jo ikke for mig, vel?$B$BEn aftale er en aftale; Jordan ville have min legering, og det får han.$B$BHils ham, og pas på dig selv, $C.",
+        "c01580921dd698c14a7e": "Åh, du forskrækkede mig, $G mand:kvinde;! Kan du ikke se, jeg tænkte?$B$BHvad? Jordans sending... til Ironforge. Ah, jeg ved, hvad du taler om. Mo'grosh-ogrerne tog min gamle vens malm. Karavanen fra Wetlands blev overfaldet på vej hertil. Vagten, der overlevede, døde for få dage siden — helbrederen nåede ikke frem i tide.$B$BVil du have sendingen, må du nordøst over søen. Den må være der et sted."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +123,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d77805d85df951f273add357404f1eda422f9253c6527f14531bc13491e4f9ee"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +166,12 @@
     },
     "deDE": {
       "description": "Ach, Ihr habt mich erschreckt, Mann! Seht Ihr nicht, dass ich nachdenke?\n\nWie war das? Jordans Lieferung... für Ironforge. Ahhh, ja, ich weiß, wovon Ihr sprecht. Oger der Mo'grosh haben die Erzlieferung meines alten Freundes gestohlen. Die Karawane war auf dem Weg vom Sumpfland hierher und geriet in einen Hinterhalt. Die Wache, die den Angriff überlebte, starb vor wenigen Tagen - der Heiler kam nicht schnell genug hin.\n\nWenn Ihr die Lieferung wollt, müsst Ihr über den Loch nach Nordosten. Dort muss sie irgendwo sein.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Aha, schon Glück gehabt? Ha-ha, diese Oger konnten Euch nichts anhaben, was?",
+        "3a0f34a531b79daa8f0e": "Ach, Ihr habt mich erschreckt, Frau! Seht Ihr nicht, dass ich nachdenke?\n\nWie war das? Jordans Lieferung... für Ironforge. Ahhh, ja, ich weiß, wovon Ihr sprecht. Oger der Mo'grosh haben die Erzlieferung meines alten Freundes gestohlen. Die Karawane war auf dem Weg vom Sumpfland hierher und geriet in einen Hinterhalt. Die Wache, die den Angriff überlebte, starb vor wenigen Tagen - der Heiler kam nicht schnell genug hin.\n\nWenn Ihr die Lieferung wollt, müsst Ihr über den Loch nach Nordosten. Dort muss sie irgendwo sein.",
+        "47c19dbf5437549a2398": "Woll, woll, das ist es. Ha! Hätte ich gewusst, dass Ihr wirklich da rausgeht und gegen diese Oger kämpft, hätte ich Euch eine ganze Liste von Aufträgen gegeben, nicht nur diesen einen. Aber Ihr seid nicht hier, um Geschäfte für mich zu machen, oder?\n \n Abgemacht ist abgemacht; Jordan wollte eine Lieferung meiner Legierung, und die soll er bekommen. \n \n Grüßt ihn von mir, und gute Reise, $C. ",
+        "c01580921dd698c14a7e": "Ach, Ihr habt mich erschreckt, Mann! Seht Ihr nicht, dass ich nachdenke?\n\nWie war das? Jordans Lieferung... für Ironforge. Ahhh, ja, ich weiß, wovon Ihr sprecht. Oger der Mo'grosh haben die Erzlieferung meines alten Freundes gestohlen. Die Karawane war auf dem Weg vom Sumpfland hierher und geriet in einen Hinterhalt. Die Wache, die den Angriff überlebte, starb vor wenigen Tagen - der Heiler kam nicht schnell genug hin.\n\nWenn Ihr die Lieferung wollt, müsst Ihr über den Loch nach Nordosten. Dort muss sie irgendwo sein."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +187,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +233,12 @@
     },
     "enUS": {
       "description": "Ach, ya startled me, man! Can't ya see I was lost in thought?\n\nWhat's that? Jordan's shipment... fer Ironforge. Ahhh, yeah, I know whatcha speak of. Mo'grosh ogres... dat's who took me ol' friend's ore shipment. Caravan was headin' here from the Wetlands and was ambushed. The guard who survived their attack just passed away a few days ago--healer couldn't get to 'em fast enough.\n\nIf you want the shipment, you'll have to head northeast across the Loch. It's got to be there somewhere.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "So, any luck yet? Haha, those ogres didn't get the best of ya yet, did they?",
+        "3a0f34a531b79daa8f0e": "Ach, ya startled me, $G man:woman;! Can't ya see I was lost in thought?$B$BWhat's that? Jordan's shipment... fer Ironforge. Ahhh, yeah, I know whatcha speak of. Mo'grosh ogres... dat's who took me ol' friend's ore shipment. Caravan was headin' here from the Wetlands and was ambushed. The guard who survived their attack just passed away a few days ago--healer couldn't get to 'em fast enough.$B$BIf you want the shipment, you'll have to head northeast across the Loch. It's got to be there somewhere.",
+        "47c19dbf5437549a2398": "Yup yup, this is it. Ha! If I'd known you were really gonna head out there and fight some o' them ogres, I woulda given you a list of things to get instead of just this one thing. But, you're not here doin' business for me, are ya?.$B$BA deal's a deal; Jordan wanted a shipment of me alloy, that's what he's gonna get.$B$BTell 'em hello fer me, and be safe, $C.",
+        "c01580921dd698c14a7e": "Ach, ya startled me, $G man:woman;! Can't ya see I was lost in thought?$B$BWhat's that? Jordan's shipment... fer Ironforge. Ahhh, yeah, I know whatcha speak of. Mo'grosh ogres... dat's who took me ol' friend's ore shipment. Caravan was headin' here from the Wetlands and was ambushed. The guard who survived their attack just passed away a few days ago--healer couldn't get to 'em fast enough.$B$BIf you want the shipment, you'll have to head northeast across the Loch. It's got to be there somewhere."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +254,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -156,6 +300,12 @@
     },
     "esES": {
       "description": "¡Me has asustado, tío! ¿No ves que estaba reflexionando?\n\n¿Qué es eso? El cargamento de Jordan para Forjaz. Vale, ya lo pillo. Los ogros de Mo'grosh son los que afanaron los minerales de mi amigo. Atacaron la caravana cuando venía de Los Humedales. El único guardia que sobrevivió palmó hace poco; los sanadores no sabían qué hacer.\n\nSi quieres el cargamento, tendrás que cruzar Loch Modan hacia el noreste. Tiene que estar por ahí.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "¿Qué hay? Esos ogros no pueden contigo, ¿eh?",
+        "3a0f34a531b79daa8f0e": "¡Me has asustado, tía! ¿No ves que estaba reflexionando?\n\n¿Qué es eso? El cargamento de Jordan para Forjaz. Vale, ya lo pillo. Los ogros de Mo'grosh son los que afanaron los minerales de mi amigo. Atacaron la caravana cuando venía de Los Humedales. El único guardia que sobrevivió palmó hace poco; los sanadores no sabían qué hacer.\n\nSi quieres el cargamento, tendrás que cruzar Loch Modan hacia el noreste. Tiene que estar por ahí.",
+        "47c19dbf5437549a2398": "Vale, aquí está todo. Si llego a saber que eres tan capaz, te habría dado una lista en vez de pedirte solo una cosa. Pero no estás trabajando para mí. \n\nUn trato es un trato y lo acordado con Jordan era el cargamento. \n\nSalúdalos de mi parte. Buen viaje, $c.",
+        "c01580921dd698c14a7e": "¡Me has asustado, tío! ¿No ves que estaba reflexionando?\n\n¿Qué es eso? El cargamento de Jordan para Forjaz. Vale, ya lo pillo. Los ogros de Mo'grosh son los que afanaron los minerales de mi amigo. Atacaron la caravana cuando venía de Los Humedales. El único guardia que sobrevivió palmó hace poco; los sanadores no sabían qué hacer.\n\nSi quieres el cargamento, tendrás que cruzar Loch Modan hacia el noreste. Tiene que estar por ahí."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +321,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -193,6 +367,12 @@
     },
     "esMX": {
       "description": "¡Me has asustado, tío! ¿No ves que estaba reflexionando?\n\n¿Qué es eso? El cargamento de Jordan para Forjaz. Vale, ya lo pillo. Los ogros de Mo'grosh son los que afanaron los minerales de mi amigo. Atacaron la caravana cuando venía de Los Humedales. El único guardia que sobrevivió palmó hace poco; los sanadores no sabían qué hacer.\n\nSi quieres el cargamento, tendrás que cruzar Loch Modan hacia el noreste. Tiene que estar por ahí.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Entonces, ¿todavía tienes suerte? Jaja, esos ogros todavía no sacaron lo mejor de ti, ¿verdad?",
+        "3a0f34a531b79daa8f0e": "¡Me has asustado, tía! ¿No ves que estaba reflexionando?\n\n¿Qué es eso? El cargamento de Jordan para Forjaz. Vale, ya lo pillo. Los ogros de Mo'grosh son los que afanaron los minerales de mi amigo. Atacaron la caravana cuando venía de Los Humedales. El único guardia que sobrevivió palmó hace poco; los sanadores no sabían qué hacer.\n\nSi quieres el cargamento, tendrás que cruzar Loch Modan hacia el noreste. Tiene que estar por ahí.",
+        "47c19dbf5437549a2398": "Sí, sí, esto es todo. ¡Ahh! Si hubiera sabido que realmente ibas a salir y luchar contra esos ogros, te habría dado una lista de cosas para conseguir en lugar de sólo esta. Pero, no estás aquí haciendo negocios por mí, ¿verdad?\n\nUn trato es un trato; Jordan quería un envío de mi aleación y eso es lo que va a conseguir.\n\nSalúdalo de mi parte y ten cuidado, $c.",
+        "c01580921dd698c14a7e": "¡Me has asustado, tío! ¿No ves que estaba reflexionando?\n\n¿Qué es eso? El cargamento de Jordan para Forjaz. Vale, ya lo pillo. Los ogros de Mo'grosh son los que afanaron los minerales de mi amigo. Atacaron la caravana cuando venía de Los Humedales. El único guardia que sobrevivió palmó hace poco; los sanadores no sabían qué hacer.\n\nSi quieres el cargamento, tendrás que cruzar Loch Modan hacia el noreste. Tiene que estar por ahí."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +388,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -230,6 +434,12 @@
     },
     "frFR": {
       "description": "Ach, vous m'avez fait peur homme ! Vous ne pouviez pas remarquer que j'étais perdu dans mes pensées ?\n\nQu'est-ce que c'est ? La cargaison de Jordan... pour Forgefer. Ahhh, ouais, j'vois de quoi vous parlez ! Les ogres Mo'grosh... z'ont volé la cargaison de minerai d'mon vieil ami. La caravane venant des Paluns a été attaquée. Le garde qui avait survécu est mort il y a quelques jours : le soigneur n'est pas arrivé à temps.\n\nSi vous voulez la cargaison, faut que vous alliez au nord-est à travers le Loch. Elle est quelque part par là.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Alors, z'avez eu de la chance ? Ha ha ! Sont pas commodes ces ogres, hein ?",
+        "3a0f34a531b79daa8f0e": "Ach, vous m'avez fait peur femme ! Vous ne pouviez pas remarquer que j'étais perdu dans mes pensées ?\n\nQu'est-ce que c'est ? La cargaison de Jordan... pour Ironforge. Ahhh, ouais, j'vois de quoi vous parlez ! Les ogres Mo'grosh... z'ont volé la cargaison de minerai d'mon vieil ami. La caravane venant des Paluns a été attaquée. Le garde qui avait survécu est mort il y a quelques jours : le soigneur n'est pas arrivé à temps.\n\nSi vous voulez la cargaison, faut que vous alliez au nord-est à travers le Loch. Elle est quelque part par là.",
+        "47c19dbf5437549a2398": "Hé hé, le voilà ! Ah ! Si j'avais su que vous alliez dehors combattre ces ogres, j'vous aurais donné une petite liste de choses dont j'ai besoin. Mais bon, vous n'êtes pas là pour faire des affaires avec moi, hein ?. \n \n Un marché est un marché ; Jordan voulait un chargement de mon alliage et il va l'avoir. \n \n Dites-lui bonjour de ma part, et faites attention à vous, $C. ",
+        "c01580921dd698c14a7e": "Ach, vous m'avez fait peur homme ! Vous ne pouviez pas remarquer que j'étais perdu dans mes pensées ?\n\nQu'est-ce que c'est ? La cargaison de Jordan... pour Ironforge. Ahhh, ouais, j'vois de quoi vous parlez ! Les ogres Mo'grosh... z'ont volé la cargaison de minerai d'mon vieil ami. La caravane venant des Paluns a été attaquée. Le garde qui avait survécu est mort il y a quelques jours : le soigneur n'est pas arrivé à temps.\n\nSi vous voulez la cargaison, faut que vous alliez au nord-est à travers le Loch. Elle est quelque part par là."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -245,6 +455,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -267,6 +501,12 @@
     },
     "hrHR": {
       "description": "Ah, prepao si me, čovječe! Zar ne vidiš da sam bio zamišljen?\n\nŠto kažeš? Jordanova pošiljka... za Ironforge. Ah, da, znam o čemu govoriš. Ogri Mo'grosh... oni su uzeli pošiljku rude mojeg starog prijatelja. Karavana je dolazila ovamo iz Wetlandsa kad je upala u zasjedu. Stražar koji je preživio njihov napad preminuo je prije nekoliko dana, iscjelitelj nije stigao dovoljno brzo.\n\nAko želiš pošiljku, morat ćeš krenuti na sjeveroistok preko jezera. Mora biti negdje ondje.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Ima li sreće? Haha, ti ogrovi te još nisu nadjačali, zar ne?",
+        "3a0f34a531b79daa8f0e": "Ah, preplašio si me, $G čovječe:ženo;! Ne vidiš da sam razmišljao?$B$BŠto? Jordanova pošiljka... za Ironforge. Aha, znam o čemu govoriš. Ogrovi Mo'grosh ukrali su rudu mog starog prijatelja. Karavana iz Wetlandsa upala je u zasjedu. Stražar koji je preživio umro je prije nekoliko dana — iscjelitelj nije stigao na vrijeme.$B$BAko želiš pošiljku, kreni sjeveroistočno preko jezera. Mora biti negdje ondje.",
+        "47c19dbf5437549a2398": "Da, to je to. Ha! Da sam znao da ćeš doista otići boriti se protiv ogrova, dao bih ti cijeli popis. Ali ne radiš za mene, zar ne?$B$BDogovor je dogovor; Jordan je tražio moju leguru i dobit će je.$B$BPozdravi ga i čuvaj se, $C.",
+        "c01580921dd698c14a7e": "Ah, preplašio si me, $G čovječe:ženo;! Ne vidiš da sam razmišljao?$B$BŠto? Jordanova pošiljka... za Ironforge. Aha, znam o čemu govoriš. Ogrovi Mo'grosh ukrali su rudu mog starog prijatelja. Karavana iz Wetlandsa upala je u zasjedu. Stražar koji je preživio umro je prije nekoliko dana — iscjelitelj nije stigao na vrijeme.$B$BAko želiš pošiljku, kreni sjeveroistočno preko jezera. Mora biti negdje ondje."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -283,6 +523,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d77805d85df951f273add357404f1eda422f9253c6527f14531bc13491e4f9ee"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -306,6 +566,12 @@
     },
     "itIT": {
       "description": "Argh! Amico, mi hai fatto prendere un colpo! Non hai visto che ero concentrato?\n\nCos'è, quello? La spedizione di Jordan... per Forgiardente. Ahhh! Sì, so di cosa parli. Gli Ogre di Mo'grosh... sono loro che hanno rubato la spedizione di Minerali del mio vecchio amico. La carovana diretta qui dalle Paludi Grigie è caduta in un'imboscata. La guardia sopravvissuta all'attacco è morta qualche giorno fa: il Curatore non è arrivato in tempo.\n\nSe vuoi recuperare la spedizione, devi dirigerti a nord-est attraverso il Loch. Dev'essere lì, da qualche parte.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Allora, hai avuto fortuna? Ah ah, quegli ogre non ti hanno ancora messo al tappeto, vero?",
+        "3a0f34a531b79daa8f0e": "Ach, mi hai fatto prendere un colpo, $Guomo:donna;! Non vedi che ero perso nei miei pensieri?\n\nCome dici? Il carico di Jordan... per Ironforge. Ahhh, sì, so di cosa parli. Gli ogre Mo'grosh... sono stati loro a prendere il carico di minerale del mio vecchio amico. La carovana veniva qui dalle Wetlands ed è caduta in un'imboscata. La guardia sopravvissuta all'attacco è morta pochi giorni fa: il guaritore non è riuscito ad arrivare in tempo.\n\nSe vuoi il carico, dovrai andare a nord-est, dall'altra parte del Loch. Dev'essere da qualche parte lì.",
+        "47c19dbf5437549a2398": "Sì sì, è proprio questo. Ah! Se avessi saputo che saresti andato davvero laggiù a combattere quegli ogre, ti avrei dato una lista di cose da prendere invece di questa sola. Ma non sei qui a fare affari per me, vero?\n\nI patti sono patti: Jordan voleva un carico della mia lega, ed è quello che avrà.\n\nSalutamelo, e stai attento, avventuriero.",
+        "c01580921dd698c14a7e": "Ach, mi hai fatto prendere un colpo, $Guomo:donna;! Non vedi che ero perso nei miei pensieri?\n\nCome dici? Il carico di Jordan... per Ironforge. Ahhh, sì, so di cosa parli. Gli ogre Mo'grosh... sono stati loro a prendere il carico di minerale del mio vecchio amico. La carovana veniva qui dalle Wetlands ed è caduta in un'imboscata. La guardia sopravvissuta all'attacco è morta pochi giorni fa: il guaritore non è riuscito ad arrivare in tempo.\n\nSe vuoi il carico, dovrai andare a nord-est, dall'altra parte del Loch. Dev'essere da qualche parte lì."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -321,6 +587,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -343,6 +633,12 @@
     },
     "koKR": {
       "description": "으앗! 놀래라! 지금 한참 생각에 몰두 중인 게 안 보이는 거요?\n\n뭐라고? 아이언포지의 조던이 주문한 물건이라... 아아, 맞아! 뭘 얘기하는 건지 알겠소. 모그로쉬 오우거들... 바로 그 녀석들이 조던 그 친구가 주문한 물건을 빼앗아 가 버렸소. 저습지에서 이곳으로 물품을 운송해 오던 짐마차가 습격을 당했다오. 겨우 살아서 빠져나온 경비병은 사제들이 때맞춰 오지 못해 며칠 전에 숨을 거두었소이다.\n\n그 물건들을 찾으려면 대호수 건너편 북동쪽으로 보시오. 그곳 어딘가에 분명히 있을 거요.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "아직 운이 없나요?  하하, 그 오우거들은 아직 널 이기지 못했지?",
+        "3a0f34a531b79daa8f0e": "아, 깜짝 놀랐네, 여자!  내가 생각에 잠긴게 안보여?\n\n그게 뭐야?  조던의 선적... 아이언포지에게.  아, 그래, 무슨 말인지 알아.  모그로쉬 오우거... 내 친구의 광석 선적을 가져간 놈이야.  캐러밴은 저습지에서 여기로 향하다가 기습을 당했습니다.  그들의 공격에서 살아남은 경비병은 며칠 전에 세상을 떠났습니다. 치료사는 그들에게 충분히 빨리 도달할 수 없었습니다.\n\n선적물을 원한다면 호수를 가로질러 북동쪽으로 가야 합니다.  어딘가에 있어야합니다.",
+        "47c19dbf5437549a2398": "그래, 이거야. 하! 정말 오우거와 싸우러 갈 줄 알았다면 이것 말고도 필요한 걸 잔뜩 부탁했을 텐데. 하지만 자네가 날 위해 일하는 건 아니지?$B$B약속은 약속이지. 조던이 내 합금을 원했으니 보내 줘야지.$B$B안부를 전해 주고, 몸조심하게, $C.",
+        "c01580921dd698c14a7e": "아, 깜짝 놀랐네, 남자!  내가 생각에 잠긴게 안보여?\n\n그게 뭐야?  조던의 선적... 아이언포지에게.  아, 그래, 무슨 말인지 알아.  모그로쉬 오우거... 내 친구의 광석 선적을 가져간 놈이야.  캐러밴은 저습지에서 여기로 향하다가 기습을 당했습니다.  그들의 공격에서 살아남은 경비병은 며칠 전에 세상을 떠났습니다. 치료사는 그들에게 충분히 빨리 도달할 수 없었습니다.\n\n선적물을 원한다면 호수를 가로질러 북동쪽으로 가야 합니다.  어딘가에 있어야합니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -358,6 +654,29 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -380,6 +699,12 @@
     },
     "plPL": {
       "description": "Ach, ależ mnie przestraszyłeś! Nie widzisz, że się zamyśliłem?\n\nCo takiego? Dostawa Jordana... do Ironforge. Aaa, tak, wiem, o czym mówisz. Ogry Mo'grosh... to one zabrały dostawę rudy mojego starego przyjaciela. Karawana jechała tu z Wetlands i wpadła w zasadzkę. Strażnik, który przeżył atak, zmarł kilka dni temu. Uzdrowiciel nie zdołał dotrzeć do niego na czas.\n\nJeśli chcesz odzyskać dostawę, musisz udać się na północny wschód, na drugą stronę jeziora. Musi gdzieś tam być.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "I jak, masz szczęście? Haha, ogry jeszcze cię nie pokonały, co?",
+        "3a0f34a531b79daa8f0e": "Ach, wystraszyłeś mnie, $G człowieku:kobieto;! Nie widzisz, że myślałem?$B$BCo? Dostawa Jordana... dla Ironforge. A, wiem, o czym mówisz. Ogry Mo'grosh zabrały rudę starego przyjaciela. Karawana z Wetlands wpadła w zasadzkę. Strażnik, który przeżył atak, zmarł kilka dni temu — uzdrowiciel nie zdążył.$B$BJeśli chcesz dostawę, ruszaj na północny wschód przez jezioro. Musi tam gdzieś być.",
+        "47c19dbf5437549a2398": "Tak, to jest to. Ha! Gdybym wiedział, że naprawdę ruszysz walczyć z ogrami, dałbym ci całą listę rzeczy. Ale nie pracujesz dla mnie, prawda?$B$BUmowa to umowa; Jordan chciał dostawę mojego stopu i ją dostanie.$B$BPozdrów go i uważaj na siebie, $C.",
+        "c01580921dd698c14a7e": "Ach, wystraszyłeś mnie, $G człowieku:kobieto;! Nie widzisz, że myślałem?$B$BCo? Dostawa Jordana... dla Ironforge. A, wiem, o czym mówisz. Ogry Mo'grosh zabrały rudę starego przyjaciela. Karawana z Wetlands wpadła w zasadzkę. Strażnik, który przeżył atak, zmarł kilka dni temu — uzdrowiciel nie zdążył.$B$BJeśli chcesz dostawę, ruszaj na północny wschód przez jezioro. Musi tam gdzieś być."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -396,6 +721,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d77805d85df951f273add357404f1eda422f9253c6527f14531bc13491e4f9ee"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -419,6 +764,12 @@
     },
     "ptBR": {
       "description": "Bá, tu me espavoriu, bagual! Não viu que eu estava pensando na morte da novilha?\n\nO que é isso? Jardel mandou um carregamento... para Altaforja. Ah, sim, sei do que tu está falando. Ogros Mo'grosh... Foram esses esquentados que levaram o carregamento de minério do meu velho camarada. A caravana dele estava indo daqui para o Pantanal e caiu numa esparrela danada. O único galego que sobreviveu morreu na semana passada. O curador não conseguiu socorrer a caravana a tempo.\n\nBueno, se tu quiser pegar o carregamento, vá para nordeste, para lá do lago. Deve estar ali em algum lugar.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Então, tiveste sorte? Barbaridade, você ainda não levou a melhor sobre esses ogros, não foi?",
+        "3a0f34a531b79daa8f0e": "Bá, tu me espavoriu, bagual! Não viu que eu estava pensando na morte da novilha?\n\nO que é isso? Jardel mandou um carregamento... para Altaforja. Ah, sim, sei do que tu está falando. Ogros Mo'grosh... Foram esses esquentados que levaram o carregamento de minério do meu velho camarada. A caravana dele estava indo daqui para o Pantanal e caiu numa esparrela danada. O único galego que sobreviveu morreu na semana passada. O curador não conseguiu socorrer a caravana a tempo.\n\nBueno, se tu quiser pegar o carregamento, vá para nordeste, para lá do lago. Deve estar ali em algum lugar.",
+        "47c19dbf5437549a2398": "Sim, sim, isso mesmo. Oigalê! Se eu soubesse que tu ia mesmo até lá pelear com uns ogros, eu teria te dado uma lista de coisas para buscar em vez de só uma, tchê! Pues tu está aqui pra ralar pra mim, não é?\n\nTrato é trato: o Jardel queria um carregamento da minha liga, e é isso que vai ter.\n\nManda um abraço para ele e vai pela sombra, tchê.",
+        "c01580921dd698c14a7e": "Bá, tu me espavoriu, bagual! Não viu que eu estava pensando na morte da novilha?\n\nO que é isso? Jardel mandou um carregamento... para Altaforja. Ah, sim, sei do que tu está falando. Ogros Mo'grosh... Foram esses esquentados que levaram o carregamento de minério do meu velho camarada. A caravana dele estava indo daqui para o Pantanal e caiu numa esparrela danada. O único galego que sobreviveu morreu na semana passada. O curador não conseguiu socorrer a caravana a tempo.\n\nBueno, se tu quiser pegar o carregamento, vá para nordeste, para lá do lago. Deve estar ali em algum lugar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -434,6 +785,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -456,6 +831,12 @@
     },
     "ruRU": {
       "description": "Ох, и испугал ты меня, парень! Не видишь, что я в размышлениях?\n\nЭто что еще? Поставка Джордану... Стальгорн. А, да, я понял, о чем речь. Мо'грошские огры ограбили меня, и нет у меня руды для старого друга. Караван шел сюда из Болотины и попал в засаду. Охранник, что уцелел, помер пару дней назад – целитель не поспел вовремя.\n\nЕсли хочешь найти эту партию руды, то придется тебе двинуться на север, за озеро Лок. Она где-то там.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Ну, что, удалось? Огры получили от тебя по полной, да?",
+        "3a0f34a531b79daa8f0e": "Ох, и испугала ты меня, дамочка! Не видишь, что я в размышлениях?\n\nЭто что еще? Поставка Джордану... Стальгорн. А, да, я понял, о чем речь. Мо'грошские огры ограбили меня, и нет у меня руды для старого друга. Караван шел сюда из Болотины и попал в засаду. Охранник, что уцелел, помер пару дней назад – целитель не поспел вовремя.\n\nЕсли хочешь найти эту партию руды, то придется тебе двинуться на север, за озеро Лок. Она где-то там.",
+        "47c19dbf5437549a2398": "Ну-ну, надо же! Знал бы я, что ты и правда прямо туда и пойдешь и навтыкаешь этим ограм, я бы дал тебе целый список, что оттуда принести. Но ведь ты тут не за тем, чтобы за меня работу делать, верно?\n\nА сделка есть сделка. Джордан хотел получить свою руду, и он ее получит.\n\nПередай ему приветик от меня, и доброй тебе дороги, $C.",
+        "c01580921dd698c14a7e": "Ох, и испугал ты меня, парень! Не видишь, что я в размышлениях?\n\nЭто что еще? Поставка Джордану... Стальгорн. А, да, я понял, о чем речь. Мо'грошские огры ограбили меня, и нет у меня руды для старого друга. Караван шел сюда из Болотины и попал в засаду. Охранник, что уцелел, помер пару дней назад – целитель не поспел вовремя.\n\nЕсли хочешь найти эту партию руды, то придется тебе двинуться на север, за озеро Лок. Она где-то там."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -471,6 +852,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -493,6 +898,12 @@
     },
     "svSE": {
       "description": "Åh, du skrämde mig, $gkarl:kvinna;! Ser du inte att jag satt försjunken i tankar?\n\nVad sa du? Jordans leverans ... till Järnsmedjan. Ahhh, ja, jag vet vad du talar om. Mo'groshogrerna ... det var de som tog min gamle väns malmleverans. Karavanen var på väg hit från Våtmarkerna och blev överfallen. Vakten som överlevde deras anfall dog för bara några dagar sedan. Läkaren hann inte fram i tid.\n\nOm du vill ha leveransen måste du bege dig nordost över sjön. Den måste finnas där någonstans.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Nå, någon tur än? Haha, de där ogrerna har väl inte besegrat dig?",
+        "3a0f34a531b79daa8f0e": "Åh, du skrämde mig, $G man:kvinna;! Ser du inte att jag tänkte?$B$BVad? Jordans leverans... till Ironforge. Ja, jag vet vad du menar. Mo'grosh-ogrerna tog min gamle väns malm. Karavanen från Wetlands överfölls på väg hit. Vakten som överlevde dog för några dagar sedan — helaren hann inte fram.$B$BVill du ha leveransen måste du nordost över sjön. Den måste finnas där någonstans.",
+        "47c19dbf5437549a2398": "Japp, det är den. Ha! Hade jag vetat att du verkligen skulle slåss mot ogrerna hade jag gett dig en hel lista. Men du arbetar inte för mig, eller hur?$B$BEn överenskommelse är en överenskommelse; Jordan ville ha min legering och det ska han få.$B$BHälsa honom och var försiktig, $C.",
+        "c01580921dd698c14a7e": "Åh, du skrämde mig, $G man:kvinna;! Ser du inte att jag tänkte?$B$BVad? Jordans leverans... till Ironforge. Ja, jag vet vad du menar. Mo'grosh-ogrerna tog min gamle väns malm. Karavanen från Wetlands överfölls på väg hit. Vakten som överlevde dog för några dagar sedan — helaren hann inte fram.$B$BVill du ha leveransen måste du nordost över sjön. Den måste finnas där någonstans."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -509,6 +920,26 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -534,6 +965,12 @@
     },
     "trTR": {
       "description": "Ah, ürküttün beni dostum! Düşüncelere daldığımı görmüyor musun?\n\nNe dedin? Jordan'ın sevkiyatı... Ironforge için. Ahhh evet, ne dediğini biliyorum. Mo'grosh ogreleri... Eski dostumun cevher sevkiyatını alanlar onlar. Kervan Wetlands'ten buraya geliyordu, pusuya düştü. Saldırılarından kurtulan muhafız da birkaç gün önce öldü. Şifacı yeterince çabuk ulaşamadı.\n\nSevkiyatı istiyorsan Loch'un karşısına, kuzeydoğuya gitmelisin. Orada bir yerde olmalı.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Peki, şansın yaver gitti mi? Haha, o ogreler seni henüz yenemedi, değil mi?",
+        "3a0f34a531b79daa8f0e": "Ah, beni korkuttun, $G adam:kadın;! Düşüncelere daldığımı görmüyor musun?$B$BNe? Jordan'ın sevkiyatı... Ironforge için. Evet, ne dediğini biliyorum. Eski dostumun cevherini Mo'grosh ogreleri aldı. Wetlands'ten gelen kervan pusuya düşürüldü. Saldırıdan sağ çıkan muhafız birkaç gün önce öldü; şifacı zamanında yetişemedi.$B$BSevkiyatı istiyorsan gölün karşısına, kuzeydoğuya gitmelisin. Bir yerlerde olmalı.",
+        "47c19dbf5437549a2398": "Evet, işte bu. Ha! Gerçekten ogrelerle savaşmaya gideceğini bilseydim sana uzun bir liste verirdim. Ama benim için çalışmıyorsun, değil mi?$B$BAnlaşma anlaşmadır; Jordan alaşımımı istedi, onu alacak.$B$BSelam söyle ve dikkatli ol, $C.",
+        "c01580921dd698c14a7e": "Ah, beni korkuttun, $G adam:kadın;! Düşüncelere daldığımı görmüyor musun?$B$BNe? Jordan'ın sevkiyatı... Ironforge için. Evet, ne dediğini biliyorum. Eski dostumun cevherini Mo'grosh ogreleri aldı. Wetlands'ten gelen kervan pusuya düşürüldü. Saldırıdan sağ çıkan muhafız birkaç gün önce öldü; şifacı zamanında yetişemedi.$B$BSevkiyatı istiyorsan gölün karşısına, kuzeydoğuya gitmelisin. Bir yerlerde olmalı."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -550,6 +987,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d77805d85df951f273add357404f1eda422f9253c6527f14531bc13491e4f9ee"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -573,6 +1030,12 @@
     },
     "ukUA": {
       "description": "Ох, ти мене налякав, друже! Хіба не бачиш, що я замислився?\n\nЩо кажеш? Партія Джордана... для Залізогарту. А-а-а, так, знаю, про що ти. Оґри Мо'ґрош — ось хто забрав руду мого давнього друга. Караван ішов сюди з Імлистих боліт і потрапив у засідку. Охоронець, який пережив їхній напад, помер лише кілька днів тому: цілитель не встиг до нього дістатися.\n\nЯкщо хочеш повернути руду, доведеться йти на північний схід через озеро. Вона має бути десь там.",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "Ну що, пощастило? Ха-ха, ті огри ще не здолали тебе?",
+        "3a0f34a531b79daa8f0e": "Ох, ти мене налякав, $G чоловіче:жінко;! Не бачиш, я задумався?$B$BЩо? Вантаж Джордана... для Залізогарта. А, знаю, про що ти. Руду мого старого друга забрали огри Мо'ґрош. Караван із Болот потрапив у засідку. Охоронець, який пережив напад, помер кілька днів тому — цілитель не встиг.$B$BЯкщо хочеш вантаж, рушай на північний схід через озеро. Він має бути десь там.",
+        "47c19dbf5437549a2398": "Так, це він. Га! Якби я знав, що ти справді підеш битися з ограми, дав би тобі цілий список. Але ж ти не для мене працюєш, так?$B$BУгода є угода; Джордан просив мою лігатуру, і він її отримає.$B$BПередавай вітання й бережися, $C.",
+        "c01580921dd698c14a7e": "Ох, ти мене налякав, $G чоловіче:жінко;! Не бачиш, я задумався?$B$BЩо? Вантаж Джордана... для Залізогарта. А, знаю, про що ти. Руду мого старого друга забрали огри Мо'ґрош. Караван із Болот потрапив у засідку. Охоронець, який пережив напад, помер кілька днів тому — цілитель не встиг.$B$BЯкщо хочеш вантаж, рушай на північний схід через озеро. Він має бути десь там."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -589,6 +1052,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d77805d85df951f273add357404f1eda422f9253c6527f14531bc13491e4f9ee"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -614,6 +1097,12 @@
     },
     "zhCN": {
       "description": "啊！你吓了我一跳，先生！你没看到我在思考吗？\n\n那是什么？乔丹的矿石…送去铁炉堡的……啊，这样啊，我知道你说的是什么了。那群莫格罗什食人魔抢走了我朋友的矿石，商队从这里前往湿地的路上遭到了埋伏。唯一从袭击中逃出的守卫也在前几天死掉了——医师没能及时赶到。\n\n你想找到那些矿石，就往东北方向去，在洛克湖的另一边。矿石一定就在那里的某个地方。",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "运气怎么样？哈哈，那些食人魔打不过你，对不对？",
+        "3a0f34a531b79daa8f0e": "啊！你吓了我一跳，小姐！你没看到我在思考吗？\n\n那是什么？乔丹的矿石…送去铁炉堡的……啊，这样啊，我知道你说的是什么了。那群莫格罗什食人魔抢走了我朋友的矿石，商队从这里前往湿地的路上遭到了埋伏。唯一从袭击中逃出的守卫也在前几天死掉了——医师没能及时赶到。\n\n你想找到那些矿石，就往东北方向去，在洛克湖的另一边。矿石一定就在那里的某个地方。",
+        "47c19dbf5437549a2398": "是的是的，就是这些。哈哈!早知道你真的能去那儿和巨魔斗斗，我就该让你多让做点事情。不过，你来这儿不是帮我做事的，对吧?\n\n一桩归一桩，乔丹想要我把他的货拿回来，那他就一定能拿到。\n\n代我向他问好，路上多加小心，$C。\n",
+        "c01580921dd698c14a7e": "啊！你吓了我一跳，先生！你没看到我在思考吗？\n\n那是什么？乔丹的矿石…送去铁炉堡的……啊，这样啊，我知道你说的是什么了。那群莫格罗什食人魔抢走了我朋友的矿石，商队从这里前往湿地的路上遭到了埋伏。唯一从袭击中逃出的守卫也在前几天死掉了——医师没能及时赶到。\n\n你想找到那些矿石，就往东北方向去，在洛克湖的另一边。矿石一定就在那里的某个地方。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -629,6 +1118,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -651,6 +1164,12 @@
     },
     "zhTW": {
       "description": "啊！你嚇了我一跳，先生！你沒看到我在思考嗎？\n\n那是什麼？喬丹的礦石…送去鐵爐堡的……啊，這樣啊，我知道你說的是什麼了。那群莫格羅什巨魔搶走了我朋友的礦石，商隊從這裡前往濕地的路上遭到了埋伏。唯一從襲擊中逃出的守衛也在前幾天死掉了——醫師沒能及時趕到。\n\n你想找到那些礦石，就往東北方向去，在洛克湖的另一邊。礦石一定就在那裡的某個地方。",
+      "dialogue": {
+        "1bf845a9d1d356f7ef02": "運氣怎麼樣?哈哈，那些巨魔打不過你，對不對?",
+        "3a0f34a531b79daa8f0e": "啊!你嚇了我一跳，小姐!你沒看到我在思考嗎?\n\n那是什麼?喬丹的礦石...送去鐵爐堡的...啊，這樣啊，我知道你說的是什麼了。那群莫格羅什巨魔搶走了我朋友的礦石，商隊從這裡前往濕地的路上遭到了埋伏。唯一從襲擊中逃出的守衛也在前幾天死掉了─醫者沒能及時趕到。\n\n你想找到那些礦石，就往東北方向去，在洛克湖的另一邊。礦石一定就在那裡的某個地方。",
+        "47c19dbf5437549a2398": "是的是的，就是這些。哈哈!早知道你真的能去那兒和巨魔鬥鬥，我就該讓你多讓做點事情。不過，你來這兒不是幫我做事的，對吧?\n\n一樁歸一樁，喬丹想要我把他的貨拿回來，那他就一定能拿到。\n\n代我向他問好，路上多加小心，$C。",
+        "c01580921dd698c14a7e": "啊!你嚇了我一跳，先生!你沒看到我在思考嗎?\n\n那是什麼?喬丹的礦石...送去鐵爐堡的...啊，這樣啊，我知道你說的是什麼了。那群莫格羅什巨魔搶走了我朋友的礦石，商隊從這裡前往濕地的路上遭到了埋伏。唯一從襲擊中逃出的守衛也在前幾天死掉了─醫者沒能及時趕到。\n\n你想找到那些礦石，就往東北方向去，在洛克湖的另一邊。礦石一定就在那裡的某個地方。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -666,6 +1185,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1bf845a9d1d356f7ef02": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.3a0f34a531b79daa8f0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.47c19dbf5437549a2398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c01580921dd698c14a7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

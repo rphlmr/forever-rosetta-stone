@@ -1,8 +1,28 @@
 {
   "areaId": 8,
+  "dialogueContexts": {
+    "35670805e29f8562584b": {
+      "lineId": "q:1423:progress",
+      "npcId": 5393,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "ee0321a2acd321786a0d": {
+      "lineId": "q:1423:complete",
+      "npcId": 5393,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Tento sud je malý, ale pevný. Jeho švy jsou utěsněny žlutým, štiplavým voskem. Na dně sudu jsou vyražena slova:\n\nIntendant Lungertz\n\nPevnost Nethergarde",
+      "dialogue": {
+        "35670805e29f8562584b": "Máte pro mě něco?",
+        "ee0321a2acd321786a0d": "Ach, děkuji, $N! Cestou z Darkshiru sem se ztratí tolik zásob. Je dobře, že se alespoň některé podařilo získat zpět."
+      },
       "summary": "Přines Lost Supplies proviantnímu Lungertzovi.",
       "title": "Ztracené zásoby",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Denne tønde er lille, men solid. Dens samlinger er forseglet med en gul, skarp voks. På bunden af tønden er stemplet ordene:\n\nQUARTERMASTER LUNGERTZ\n\nNETHERGARDE KEEP",
+      "dialogue": {
+        "35670805e29f8562584b": "Har du noget til mig?",
+        "ee0321a2acd321786a0d": "Åh, tak, $N! Så mange forsyninger går tabt på vejen fra Darkshire hertil. Det er godt at se, at nogle er blevet fundet."
+      },
       "summary": "Bring de forsvundne forsyninger til kvartermester Lungertz.",
       "title": "De forsvundne forsyninger",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8a83653c5ace0cebad21c7ad071fd16e0a9477cb250e9b3888b91c4d030fdf12"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Dieses Fass ist klein, aber stabil. Seine Ritzen sind mit einem gelben, duftenden Wachs versiegelt. Auf der Unterseite des Fasses stehen die Worte:\n\nRÜSTMEISTER LUNGERTZ\n\nBURG NETHERGARDE",
+      "dialogue": {
+        "35670805e29f8562584b": "Habt Ihr etwas für mich?",
+        "ee0321a2acd321786a0d": "Ah, vielen Dank, $N! So viele Vorräte gehen auf dem Weg von Dunkelhain hierher verloren. Es tut gut zu sehen, dass einige davon wiederbeschafft werden. "
+      },
       "summary": "Bringt die verlorenen Vorräte zu Rüstmeister Lungertz.",
       "title": "Die verlorenen Vorräte",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "This barrel is small yet sturdy.  Its seams are sealed with a yellow, pungent wax.  Stamped on the bottom of the barrel are the words:\n\nQUARTERMASTER LUNGERTZ\n\nNETHERGARDE KEEP",
+      "dialogue": {
+        "35670805e29f8562584b": "You have something for me?",
+        "ee0321a2acd321786a0d": "Ah, thank you $N!  So many supplies are lost from Darkshire to here.  It's good to see that some are recovered."
+      },
       "summary": "Bring the Lost Supplies to Quartermaster Lungertz.",
       "title": "The Lost Supplies",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +183,10 @@
     },
     "esES": {
       "description": "Este barril es pequeño pero resistente. Sus juntas están selladas con una cera acre de color amarillo. En el fondo del barril están estampadas las palabras:\n\nINTENDENTE LUNGERTZ\n\nCASTILLO DE NETHERGARDE",
+      "dialogue": {
+        "35670805e29f8562584b": "¿Tienes algo para mí?",
+        "ee0321a2acd321786a0d": "¡Ah! ¡Gracias, $n! Se han perdido muchos suministros desde Villa Oscura hasta aquí. Siempre es bueno recuperar parte de ellos."
+      },
       "summary": "Llévale los suministros perdidos al intendente Lungertz.",
       "title": "Los suministros perdidos",
       "translationMetadata": {
@@ -115,6 +195,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +223,10 @@
     },
     "esMX": {
       "description": "Este barril es pequeño pero resistente. Sus juntas están selladas con una cera acre de color amarillo. En el fondo del barril están estampadas las palabras:\n\nINTENDENTE LUNGERTZ\n\nCASTILLO DE NETHERGARDE",
+      "dialogue": {
+        "35670805e29f8562584b": "¿Tienes algo para mí?",
+        "ee0321a2acd321786a0d": "¡Ah! ¡Gracias, $n! Se han perdido muchos suministros desde Villa Oscura hasta aquí. Siempre es bueno recuperar parte de ellos."
+      },
       "summary": "Llévale los suministros perdidos al intendente Lungertz.",
       "title": "Los suministros perdidos",
       "translationMetadata": {
@@ -139,6 +235,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +263,10 @@
     },
     "frFR": {
       "description": "Ce tonneau, bien que petit, est robuste. Il est scellé avec une cire jaune à l’odeur âcre. On peut lire, tamponné au cul du tonneau :\n\nINTENDANT LUNGERTZ\n\nREMPART-DU-NEANT.",
+      "dialogue": {
+        "35670805e29f8562584b": "Vous avez quelque chose pour moi ?",
+        "ee0321a2acd321786a0d": "Ah, merci $N !  Il y a tellement de fournitures perdues entre le Darkshire et ici.  Il est bon de voir que certaines sont récupérées."
+      },
       "summary": "Apporter les Marchandises perdues à l'Intendant Lungertz.",
       "title": "Les marchandises perdues",
       "translationMetadata": {
@@ -163,6 +275,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +303,10 @@
     },
     "hrHR": {
       "description": "Ova je bačva mala, ali čvrsta. Njezini su spojevi zapečaćeni žutim voskom oštra mirisa. Na dnu bačve utisnute su riječi:\n\nOPSKRBNIK LUNGERTZ\n\nNETHERGARDE KEEP",
+      "dialogue": {
+        "35670805e29f8562584b": "Imaš li nešto za mene?",
+        "ee0321a2acd321786a0d": "Ah, hvala ti, $N! Toliko se zaliha izgubi na putu od Darkshirea do ovamo. Dobro je vidjeti da su neke vraćene."
+      },
       "summary": "Donesi izgubljene zalihe opskrbniku Lungertzu.",
       "title": "Izgubljene zalihe",
       "translationMetadata": {
@@ -188,6 +316,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8a83653c5ace0cebad21c7ad071fd16e0a9477cb250e9b3888b91c4d030fdf12"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +344,10 @@
     },
     "itIT": {
       "description": "Questo barile è piccolo ma robusto. Le giunture sono sigillate con una cera gialla dall'odore pungente. Sul fondo sono stampigliate le parole:\n\nQUARTIERMASTRO LUNGERTZ\n\nNETHERGARDE KEEP",
+      "dialogue": {
+        "35670805e29f8562584b": "Hai qualcosa per me?",
+        "ee0321a2acd321786a0d": "Ah, grazie, $N! Tra Darkshire e qui si perdono così tante provviste. Fa piacere vedere che qualcosa si recupera."
+      },
       "summary": "Porta le scorte perdute al quartiermastro Lungertz.",
       "title": "Le provviste perdute",
       "translationMetadata": {
@@ -215,6 +357,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8a83653c5ace0cebad21c7ad071fd16e0a9477cb250e9b3888b91c4d030fdf12"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -233,6 +387,10 @@
     },
     "koKR": {
       "description": "이 맥주통은 작지만 튼튼합니다. 나무가 이어진 부분은 자극적인 냄새가 나는 노란색 왁스로 봉해져 있습니다. 그리고 맥주통 밑바닥에는 다음과 같은 글귀가 찍혀 있습니다.\n\n병참장교 룬겔츠\n\n네더가드 요새",
+      "dialogue": {
+        "35670805e29f8562584b": "내게 볼일이 있습니까?",
+        "ee0321a2acd321786a0d": "아, 고맙습니다! 다크샤이어에서 여기로 오던 도중 매우 많은 보급품들이 분실되었지요. 그나마 이렇게 일부를 되찾아서 다행이군요."
+      },
       "summary": "병참장교 룬겔츠에게 잃어버린 보급품을 가져가야 합니다.",
       "title": "잃어버린 보급품",
       "translationMetadata": {
@@ -241,6 +399,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +427,10 @@
     },
     "plPL": {
       "description": "Beczka jest mała, lecz solidna. Łączenia uszczelniono żółtym woskiem o ostrym zapachu. Na dnie wybito słowa:\n\nKWATERMISTRZ LUNGERTZ\n\nTWIERDZA NETHERGARDE",
+      "dialogue": {
+        "35670805e29f8562584b": "Masz coś dla mnie?",
+        "ee0321a2acd321786a0d": "Ach, dziękuję, $N! Tyle zapasów ginie w drodze z Darkshire. Dobrze widzieć, że część udało się odzyskać."
+      },
       "summary": "Przynieś zaginione zapasy kwatermistrzowi Lungertzowi.",
       "title": "Zaginione zapasy",
       "translationMetadata": {
@@ -266,6 +440,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8a83653c5ace0cebad21c7ad071fd16e0a9477cb250e9b3888b91c4d030fdf12"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -284,6 +468,10 @@
     },
     "ptBR": {
       "description": "Esse barril é pequeno, mas resistente. O vão entre os aros foi selado com uma cera amarelada e pungente. No fundo do barril foram gravadas as palavras a seguir:\n\nINTENDENTE LUNGERTZ\n\nBASTILHA DE ETERGARDE.",
+      "dialogue": {
+        "35670805e29f8562584b": "Você tem algo para mim?",
+        "ee0321a2acd321786a0d": "Ah, muito obrigado, $N! Tantos suprimentos desaparecem no caminho entre a Vila Sombria e aqui. É bom ver que alguns podem ser recuperados."
+      },
       "summary": "Leve os Suprimentos Perdidos para Intendente Lungertz.",
       "title": "Os suprimentos perdidos",
       "translationMetadata": {
@@ -292,6 +480,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -308,6 +508,10 @@
     },
     "ruRU": {
       "description": "Этот бочонок мал, зато прочен. Его швы заплиты желтым пахучим воском, а на торце выдавлены слова:\n\nИНТЕНДАНТ ЛУНГЕРЦ\n\nКРЕПОСТЬ СТРАЖЕЙ ПУСТОТЫ",
+      "dialogue": {
+        "35670805e29f8562584b": "У тебя что-то есть для меня?",
+        "ee0321a2acd321786a0d": "Благодарю тебя, $N. На пути из Темнолесья теряется так много провизии, Как хорошо, что кое-что удается вернуть."
+      },
       "summary": "Принесите потерянные припасы интенданту Лунгерцу.",
       "title": "Потерянные припасы",
       "translationMetadata": {
@@ -316,6 +520,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +548,10 @@
     },
     "svSE": {
       "description": "Tunnan är liten men stadig. Fogarna är tätade med ett gult, stickande vax. I botten är orden stämplade:\n\nKVARTERMÄSTARE LUNGERTZ\n\nNETHERGARDE KEEP",
+      "dialogue": {
+        "35670805e29f8562584b": "Har du något åt mig?",
+        "ee0321a2acd321786a0d": "Åh, tack, $N! Så mycket förnödenheter går förlorade på vägen hit från Darkshire. Det är gott att se att en del har återfunnits."
+      },
       "summary": "Ta med de förlorade förnödenheterna till kvartermästare Lungertz.",
       "title": "De förlorade förnödenheterna",
       "translationMetadata": {
@@ -341,6 +561,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8a83653c5ace0cebad21c7ad071fd16e0a9477cb250e9b3888b91c4d030fdf12"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -359,6 +589,10 @@
     },
     "trTR": {
       "description": "Bu fıçı küçük ama sağlam. Birleşim yerleri sarı, keskin kokulu bir mumla kapatılmış. Fıçının altına şu sözler damgalanmış:\n\nLEVAZIM SUBAYI LUNGERTZ\n\nNETHERGARDE KEEP",
+      "dialogue": {
+        "35670805e29f8562584b": "Benim için bir şeyin mi var?",
+        "ee0321a2acd321786a0d": "Ah, teşekkürler $N! Darkshire’dan buraya gelirken pek çok malzeme kayboluyor. Bir kısmının geri getirildiğini görmek güzel."
+      },
       "summary": "Kayıp Erzakları Levazım Subayı Lungertz'e getir.",
       "title": "Kayıp Erzak",
       "translationMetadata": {
@@ -368,6 +602,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8a83653c5ace0cebad21c7ad071fd16e0a9477cb250e9b3888b91c4d030fdf12"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -386,6 +630,10 @@
     },
     "ukUA": {
       "description": "Ця діжка невелика, але міцна. Її шви ущільнені жовтим пахучим воском. На дні діжки викарбувані слова:\n\nКВАРТИРМЕЙСТЕР ЛУНГЕРЦ\n\nФОРТЕЦЯ ПІДСВІТНЬОЇ ВАРТИ",
+      "dialogue": {
+        "35670805e29f8562584b": "Маєш щось для мене?",
+        "ee0321a2acd321786a0d": "О, дякую, $N! Дорогою з Темнолісся сюди зникає стільки припасів. Добре, що хоч частину вдалося повернути."
+      },
       "summary": "Принесіть втрачені припаси квартирмейстерові Лунгерцу.",
       "title": "Втрачені припаси",
       "translationMetadata": {
@@ -396,6 +644,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "8a83653c5ace0cebad21c7ad071fd16e0a9477cb250e9b3888b91c4d030fdf12"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +674,10 @@
     },
     "zhCN": {
       "description": "这只木桶不大，但非常坚固。木板的接缝处和桶盖边上都用一种味道刺鼻的黄色封蜡封了起来。桶底的标签上写着两行大字：\n\n军需官朗格尔斯\n\n守望堡",
+      "dialogue": {
+        "35670805e29f8562584b": "你有东西要给我吗?",
+        "ee0321a2acd321786a0d": "啊，太感谢你了，$N!许多货物在从夜色镇运过来的路上都弄丢了，能找回一部分实在是太好了。\n"
+      },
       "summary": "把遗失的货物交给军需官朗格尔斯。",
       "title": "遗失的补给品",
       "translationMetadata": {
@@ -424,6 +686,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +714,10 @@
     },
     "zhTW": {
       "description": "這只木桶小小的，但是非常堅固。木板的接縫處和桶蓋邊上都用一種味道刺鼻的黃色封蠟封了起來。桶底的標籤上印著兩行大字：\n\n軍需官朗格茲\n\n守望堡",
+      "dialogue": {
+        "35670805e29f8562584b": "你有東西要給我嗎?",
+        "ee0321a2acd321786a0d": "啊，太感謝你了，$N!許多貨物在從夜色鎮運過來的路上都弄丟了，能找回一部分實在是太好了。"
+      },
       "summary": "把遺失的補給物資交給軍需官朗格茲。",
       "title": "遺失的補給物資",
       "translationMetadata": {
@@ -448,6 +726,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.35670805e29f8562584b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.ee0321a2acd321786a0d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

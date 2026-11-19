@@ -1,8 +1,28 @@
 {
   "areaId": 3358,
+  "dialogueContexts": {
+    "2a402193c72b7aff48a1": {
+      "lineId": "q:8441:progress",
+      "npcId": 15350,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f13bca359ac8a1f7ff06": {
+      "lineId": "q:8441:complete",
+      "npcId": 15350,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Válka proti alianční chátrě vyžaduje zdroje, {name}! Nemůžeme dopustit, aby naše zásoby uprostřed bitvy vyschly. Dál se starej, aby Arathi Basin zůstala v našich rukou!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "Válka proti alianční spodině vyžaduje zásoby, $N! Nemůžeme dopustit, aby nám uprostřed bitvy došly. Dbej na to, aby Arathská pánev zůstala v našich rukou!",
+        "f13bca359ac8a1f7ff06": "Zabezpečit naše zásoby v Arathi je důležitý úkol! Vedl sis dobře, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +39,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8316f2de05617044823ff5a16d2839cde2972815660fe19dd2ea797b1dc6d955"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +73,10 @@
     },
     "daDK": {
       "description": "Krigen mod Alliance-pakket kræver ressourcer, {name}! Vi kan ikke lade vores lagre løbe tør midt i et slag. Fortsæt med at sikre, at Arathi Basin forbliver i vores hænder!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "Krigen mod Alliancens udskud kræver ressourcer, $N! Vi må ikke lade vores lagre løbe tør midt i et slag. Sørg fortsat for, at Arathi Basin forbliver i vores hænder!",
+        "f13bca359ac8a1f7ff06": "Det er en vigtig opgave at sikre vores ressourcer i Arathi! Godt klaret, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8316f2de05617044823ff5a16d2839cde2972815660fe19dd2ea797b1dc6d955"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +126,10 @@
     },
     "deDE": {
       "description": "Der Krieg gegen den Allianzabschaum frisst Unmengen an Ressourcen, {name}! Wir können es uns nicht erlauben, dass uns unsere Vorräte auf dem Höhepunkt der Schlacht ausgehen. Stellt weiterhin sicher, dass das Arathibecken unter unserer Kontrolle bleibt.",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "Der Krieg gegen den Allianzabschaum frisst Unmengen an Ressourcen, $N! Wir können es uns nicht erlauben, dass uns unsere Vorräte auf dem Höhepunkt der Schlacht ausgehen. Stellt weiterhin sicher, dass das Arathibecken unter unserer Kontrolle bleibt.",
+        "f13bca359ac8a1f7ff06": "Hervorragende Arbeit, $N. Solange wir das Arathibecken halten können, werden unsere Nachschublager gut gefüllt sein. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +145,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "The war against the Alliance scum demands resources, {name}! We cannot allow our stockpiles to run dry in the middle of a battle.  Continue to ensure Arathi Basin remains in our hands!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "The war against the Alliance scum demands resources, $N! We cannot allow our stockpiles to run dry in the middle of a battle.  Continue to ensure Arathi Basin remains in our hands!",
+        "f13bca359ac8a1f7ff06": "Securing our resources in Arathi is an important task! You've done well, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -156,6 +232,10 @@
     },
     "esES": {
       "description": "¡La guerra contra la escoria de la Alianza exige recursos, {name}! No podemos permitir que nuestras reservas se agoten en medio de una batalla. ¡Sigue asegurándote de que la Cuenca de Arathi siga en nuestras manos!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "¡La guerra contra la escoria de la Alianza exige recursos, $n! No podemos permitir que nuestras reservas se agoten en medio de una batalla. ¡Sigue asegurándote de que la Cuenca de Arathi siga en nuestras manos!",
+        "f13bca359ac8a1f7ff06": "¡Un trabajo excelente, $n! Mientras sigamos controlando la Cuenca de Arathi nuestros suministros estarán garantizados."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +251,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -193,6 +285,10 @@
     },
     "esMX": {
       "description": "¡La guerra contra la escoria de la Alianza exige recursos, {name}! No podemos permitir que nuestras reservas se agoten en medio de una batalla. ¡Sigue asegurándote de que la Cuenca de Arathi siga en nuestras manos!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "¡La guerra contra la escoria de la Alianza exige recursos, $N! No podemos permitir que nuestras reservas se agoten en plena batalla. ¡Sigue asegurándote de que la Cuenca de Arathi permanezca en nuestras manos!",
+        "f13bca359ac8a1f7ff06": "¡Asegurar nuestros recursos en Arathi es una tarea importante! Bien hecho, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +304,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +337,10 @@
     },
     "frFR": {
       "description": "La guerre contre la racaille de l'Alliance exige des ressources, {name} ! Nous ne pouvons pas nous permettre de laisser tarir nos réserves au beau milieu de la lutte. Continuez à faire en sorte que le bassin Arathi reste entre nos mains !",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "La guerre contre la racaille de l'Alliance exige des ressources, $N ! Nous ne pouvons pas laisser nos réserves s'épuiser au milieu d'une bataille.  Continuez à vous assurer que le bassin d'Arathi reste entre nos mains !",
+        "f13bca359ac8a1f7ff06": "Sécuriser nos ressources à Arathi est une tâche importante ! Tu as bien travaillé, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +356,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +390,10 @@
     },
     "hrHR": {
       "description": "Rat protiv ološa Saveza zahtijeva resurse, {name}! Ne možemo dopustiti da nam zalihe presuše usred bitke. Nastavi osiguravati da Arathi Basin ostane u našim rukama!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "Rat protiv ološa Saveza zahtijeva zalihe, $N! Ne smijemo dopustiti da nam ponestanu usred bitke. Nastavi osiguravati da Arathi Basin ostane u našim rukama!",
+        "f13bca359ac8a1f7ff06": "Osiguravanje naših zaliha u Arathiju važan je zadatak! Dobro si to obavio, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +410,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8316f2de05617044823ff5a16d2839cde2972815660fe19dd2ea797b1dc6d955"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +443,10 @@
     },
     "itIT": {
       "description": "Abbiamo bisogno di risorse per combattere contro l'Alleanza, {name}! Non possiamo permetterci di rimanere a secco nel mezzo della battaglia. Continua a combattere così che il Bacino d'Arathi rimanga nelle nostre mani!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "La guerra contro la feccia dell'Alleanza richiede risorse, $N! Non possiamo permettere che le nostre scorte si esauriscano nel bel mezzo di una battaglia. Continua a fare in modo che Arathi Basin resti nelle nostre mani!",
+        "f13bca359ac8a1f7ff06": "Mettere al sicuro le nostre risorse in Arathi è un compito importante! Hai fatto un buon lavoro, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -322,6 +462,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -344,6 +496,10 @@
     },
     "koKR": {
       "description": "얼라이언스 놈들과 전쟁을 치르려면 자원이 필요하오! 전투가 한창일 때 보급품 물량이 바닥나서는 절대 안 되오. 적에게 아라시 분지가 넘어가지 않도록 만전을 기하시오!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "얼라이언스 쓰레기와의 전쟁에는 자원이 필요합니다, $N!  우리는 전쟁 중에 비축물이 고갈되도록 내버려 둘 수 없습니다.  계속해서 아라시 분지가 우리 손에 남아 있도록 하십시오!",
+        "f13bca359ac8a1f7ff06": "아라시에서 자원을 확보하는 것은 중요한 임무입니다!  잘했어, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -359,6 +515,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -381,6 +549,10 @@
     },
     "plPL": {
       "description": "Wojna z szumowinami Przymierza wymaga zasobów, {name}! Nie możemy pozwolić, by nasze zapasy wyczerpały się w środku bitwy. Nadal pilnuj, by Arathi Basin pozostało w naszych rękach!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "Wojna ze szumowinami Przymierza wymaga zasobów, $N! Nie możemy pozwolić, by nasze zapasy wyczerpały się w środku bitwy. Dopilnuj, by Kotlina Arathi pozostała w naszych rękach!",
+        "f13bca359ac8a1f7ff06": "Zabezpieczenie naszych zasobów w Arathi to ważne zadanie! Dobra robota, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -397,6 +569,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8316f2de05617044823ff5a16d2839cde2972815660fe19dd2ea797b1dc6d955"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -420,6 +602,10 @@
     },
     "ptBR": {
       "description": "A guerra contra a escória da Aliança requer recursos, {name}! Não podemos permitir que nossos estoques acabem no meio de uma batalha. Vá e faça tudo para que a Bacia Arathi continue sob nosso poder!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "A guerra contra a escória da Aliança exige recursos, $N! Não podemos deixar nossos estoques se esgotarem no meio de uma batalha. Continue garantindo que a Bacia Arathi permaneça em nossas mãos!",
+        "f13bca359ac8a1f7ff06": "Proteger nossos recursos em Arathi é uma tarefa importante! Muito bem, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -435,6 +621,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -458,6 +654,10 @@
     },
     "ruRU": {
       "description": "Нам не выиграть войну против презренного Альянса без снабжения! Не позволим нашим складам опустеть к середине битвы. Низина Арати должна отойти к нам!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "Какие новости из Арати?",
+        "f13bca359ac8a1f7ff06": "Добыча ресурсов в Арати является важной задачей, $N. Хорошо поработал."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -473,6 +673,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -495,6 +707,10 @@
     },
     "svSE": {
       "description": "Kriget mot allianspacket kräver resurser, {name}! Vi kan inte låta förråden sina mitt under en strid. Fortsätt se till att Arathi Basin förblir i våra händer!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "Kriget mot Alliansens avskum kräver resurser, $N! Vi får inte låta våra förråd ta slut mitt under ett slag. Fortsätt se till att Arathi Basin förblir i våra händer!",
+        "f13bca359ac8a1f7ff06": "Att säkra våra resurser i Arathi är en viktig uppgift! Bra gjort, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -511,6 +727,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8316f2de05617044823ff5a16d2839cde2972815660fe19dd2ea797b1dc6d955"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -535,6 +761,10 @@
     },
     "trTR": {
       "description": "Alliance pisliklerine karşı savaş kaynak gerektirir, {name}! Savaşın ortasında stoklarımızın tükenmesine izin veremeyiz. Arathi Basin'in elimizde kalmasını sağlamaya devam et!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "İttifak pisliklerine karşı savaş kaynak gerektiriyor, $N! Stoklarımızın savaşın ortasında tükenmesine izin veremeyiz. Arathi Basin'in elimizde kalmasını sağlamaya devam et!",
+        "f13bca359ac8a1f7ff06": "Arathi'deki kaynaklarımızı güvenceye almak önemli bir görev! İyi iş çıkardın, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -551,6 +781,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8316f2de05617044823ff5a16d2839cde2972815660fe19dd2ea797b1dc6d955"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -574,6 +814,10 @@
     },
     "ukUA": {
       "description": "Війна проти покидьків Альянсу вимагає ресурсів, {name}! Не можна допустити, щоб наші запаси скінчилися посеред битви. І далі дбай про те, щоб низина Араті залишалася в наших руках!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "Війна проти покидьків Альянсу потребує ресурсів, $N! Не можна допустити, щоб запаси вичерпалися посеред битви. Надалі дбай, щоб Низина Араті залишалася в наших руках!",
+        "f13bca359ac8a1f7ff06": "Забезпечити наші ресурси в Араті — важливе завдання! Ти добре впорався, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -590,6 +834,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8316f2de05617044823ff5a16d2839cde2972815660fe19dd2ea797b1dc6d955"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -614,6 +868,10 @@
     },
     "zhCN": {
       "description": "我们要对付那些想要抢夺我们资源的联盟渣子，{name}！我们不能在战斗进行到一半的时候才发现补给资源捉襟见肘。继续努力，确保阿拉希盆地掌握在我们手中！",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "我们要对付那些想要抢夺我们资源的联盟废渣，$N!我们不允许战争中有物资短缺的情形。继续努力，确保阿拉希盆地掌握在我们手中!",
+        "f13bca359ac8a1f7ff06": "干得好，$N!只要阿拉希盆地在我们的控制之下，那麽我们就可以源源不断地获得补给。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -629,6 +887,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -652,6 +922,10 @@
     },
     "zhTW": {
       "description": "我們要對付那些想要搶奪我們資源的聯盟廢渣，{name}!我們不允許戰爭中有物資短缺的情形。繼續努力，確保阿拉希盆地掌握在我們手中!",
+      "dialogue": {
+        "2a402193c72b7aff48a1": "對抗聯盟渣滓的戰爭需要資源，$N！我們不能讓儲備在戰鬥途中耗盡。繼續確保阿拉希盆地掌握在我們手中！",
+        "f13bca359ac8a1f7ff06": "確保我們在阿拉希的資源是一項重要任務！做得好，$N。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -667,6 +941,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.2a402193c72b7aff48a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f13bca359ac8a1f7ff06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

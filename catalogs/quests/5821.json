@@ -1,8 +1,36 @@
 {
   "areaId": 405,
+  "dialogueContexts": {
+    "11df83b6e9fc55a5d020": {
+      "lineId": "q:5821:complete",
+      "npcId": 11596,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "8f0e55d5b25dcaeb5c45": {
+      "lineId": "q:5821:accept",
+      "npcId": 11625,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "a54ae1a097c7f45cc99d": {
+      "lineId": "q:5821:progress",
+      "npcId": 11596,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Za normálních okolností bychom s Riggerem vedli naše kodo kolem Kolkarů. Čas od času slyšíme kentaurské válečné bubny a když je slyšíme, zastavíme. Pro obchod není dobré být mrtvý!\n\nŘeknu ti, {class}, pokud nás ochráníš kolem vesnice Kolkarů, odměníme tě.\n\nJe to kousek, stačí udržet karavanu celou a odměnu si můžeš vyzvednout u Smeeda Scrabblescrewa – je kousek dál po cestě. Trochu spolu obchodujeme.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Víš, platit někomu jako ty za ochranu karavany Gizelton mi nepřipadá výnosné. $C, kdybych byl trochu vyšší, mohl bych si najít druhou práci, sednout bokem na koda s největší puškou, kterou unesou mé ruce... a ukázat těm zatraceným kentaurům, kdo je jejich táta.",
+        "8f0e55d5b25dcaeb5c45": "Za normálních okolností bychom s Riggerem vedli koda kolem kolkarských kentaurů. Občas slyšíme jejich válečné bubny, a když je uslyšíme, zastavíme. Mrtví obchodu moc neprospějí!$B$BŘeknu ti co, $c: ochráníš-li nás cestou kolem kolkarské vesnice, odměníme tě.$B$BJe to jen kousek. Stačí udržet karavanu vcelku a odměnu si můžeš vyzvednout u Smeeda Scrabblescrewa kousek po cestě. Obchodujeme spolu.",
+        "a54ae1a097c7f45cc99d": "Proč tu vlastně čekám na tu zatracenou karavanu?$b$b<Smeedovi se rozjasní.>$b$bAha, platí účty. Viděl jsi je?"
+      },
       "eventObjectiveLabel": "Doprovoď Gizelton Caravan kolem Kolkar Centaur Village",
       "summary": "Doprovoď Gizelton Caravan kolem vesnice Kolkar Centaur. O odměnu si řekni u Smeeda ve Scrabblescrew's Camp.",
       "title": "Osobní strážce k pronajmutí",
@@ -13,6 +41,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8819aa1bad349179488534d5578ed13ebe6c541c3eae6f6eedf3523bbe3938e0"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +83,11 @@
     },
     "daDK": {
       "description": "Under normale omstændigheder ville Rigger og jeg føre vores kodo forbi Kolkar-kentaurerne. Nu og da hører vi kentaurernes krigstrommer, og når vi hører dem, stopper vi. Det er ikke godt for forretningen at være død!\n\nJeg skal sige dig hvad, {class}, hvis du beskytter os forbi Kolkar-landsbyen, gør vi det umagen værd.\n\nDet er kun en kort strækning; alt, du skal gøre, er at holde karavanen intakt, så kan du hente din belønning hos Smeed Scrabblescrew, som er lidt længere nede ad vejen. Vi handler lidt sammen.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Det virker ikke ligefrem indbringende at betale folk som dig for at beskytte Gizelton-karavanen. $C, hvis jeg var lidt højere, kunne jeg tage et ekstra job og sidde på siden af en kodo med den største bøsse, mine hænder kunne bære... så skulle jeg vise de forbandede kentaurer, hvem der bestemmer.",
+        "8f0e55d5b25dcaeb5c45": "Normalt ville Rigger og jeg føre vores kodoer forbi Kolkar-kentaurerne. Af og til hører vi deres krigstrommer, og så stopper vi. Det er dårligt for forretningen at være død!$B$BHør her, $c: Hvis du beskytter os forbi Kolkar-landsbyen, skal vi nok betale dig.$B$BDet er kun et kort stykke. Hold blot karavanen intakt, så kan du hente din belønning hos Smeed Scrabblescrew lidt længere nede ad vejen. Vi handler lidt sammen.",
+        "a54ae1a097c7f45cc99d": "Hvorfor står jeg og venter på den forbandede karavane?$b$b<Smeed ser oplyst ud.>$b$bNå ja, de betaler regningerne. Har du set dem?"
+      },
       "eventObjectiveLabel": "Eskortér Gizelton Caravan forbi Kolkar-kentaurernes landsby",
       "summary": "Eskortér Gizelton-karavanen forbi Kolkar-kentaurernes landsby. Tal med Smeed ved Scrabblescrew's Camp for at få din belønning.",
       "title": "Livvagt til leje",
@@ -50,6 +98,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8819aa1bad349179488534d5578ed13ebe6c541c3eae6f6eedf3523bbe3938e0"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +137,11 @@
     },
     "deDE": {
       "description": "Unter normalen Umständen würden Rigger und ich unseren Kodo an den Kolkarzentauren vorbeiführen. Aber ab und zu sind Kriegstrommeln der Zentauren zu hören, und dann machen wir sofort Halt. Es ist nicht gut fürs Geschäft, tot zu sein!\n\nIch sag Euch was, {class}, wenn Ihr uns heil am Dorf der Kolkar vorbeibringt, soll es Euer Schaden nicht sein.\n\nEs ist nur eine kurze Strecke und Ihr müsst lediglich dafür sorgen, dass die Karawane intakt bleibt, dann könnt Ihr Euch Eure Belohnung bei Smeed Scrabblescrew abholen. Ihr findet ihn ein Stück weiter die Straße runter. Wir haben geschäftlich miteinander zu tun.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Wisst Ihr, es scheint mir nicht besonders lukrativ zu sein, jemanden wie Euch dafür zu bezahlen, Gizeltons Karawane zu beschützen. $C, wenn ich ein bisschen größer wäre, könnte ich einen Nebenjob annehmen und mit der größten Schusswaffe in der Hand auf Kodos reiten. Und dann würde ich den vermaledeiten Zentauren echt mal zeigen, wer hier der Boss ist. ",
+        "8f0e55d5b25dcaeb5c45": "Unter normalen Umständen würden Rigger und ich unseren Kodo an den Kolkarzentauren vorbeiführen. Aber ab und zu sind Kriegstrommeln der Zentauren zu hören, und dann machen wir sofort Halt. Es ist nicht gut fürs Geschäft, tot zu sein!\n\nIch sag Euch was, $C, wenn Ihr uns heil am Dorf der Kolkar vorbeibringt, soll es Euer Schaden nicht sein.\n\nEs ist nur eine kurze Strecke und Ihr müsst lediglich dafür sorgen, dass die Karawane intakt bleibt, dann könnt Ihr Euch Eure Belohnung bei Smeed Scrabblescrew abholen. Ihr findet ihn ein Stück weiter die Straße runter. Wir haben geschäftlich miteinander zu tun.",
+        "a54ae1a097c7f45cc99d": "Warum warte ich eigentlich auf diese verflixte Karawane?\n\n\nOh ja, sie bezahlen die Rechnungen. Habt ihr sie gesehen?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "Bringt Gizeltons Karawane am Dorf der Kolkarzentauren vorbei. Sprecht in Scrabblescrews Lager mit Smeed, um Eure Belohnung zu erhalten.",
       "title": "Leibwache zu mieten",
@@ -83,6 +151,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +190,11 @@
     },
     "enUS": {
       "description": "Under normal circumstances, Rigger and I would lead our kodo past the Kolkar Centaur. Every now and then we hear the Centaur war drums, and when we hear those we stop. It's not good for business to be dead!\n\nI'll tell you what {class}, if you protect us past the Kolkar village we'll make it worth your while.\n\nIt's just a short distance, all you need to do is keep the caravan intact and you can pick up your reward from Smeed Scrabblescrew - he is down the road a bit. We do a little business together.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "You know, it doesn't seem prosperous to be paying the likes of you to guard Gizelton Caravan. $C, if I were a bit taller I could take on a second job and sit kodo-side-saddle with the biggest gun my hands could carry... and I'd show them blasted centaur who's their papa.",
+        "8f0e55d5b25dcaeb5c45": "Under normal circumstances, Rigger and I would lead our kodo past the Kolkar Centaur. Every now and then we hear the Centaur war drums, and when we hear those we stop. It's not good for business to be dead!$B$BI'll tell you what $c, if you protect us past the Kolkar village we'll make it worth your while.$B$BIt's just a short distance, all you need to do is keep the caravan intact and you can pick up your reward from Smeed Scrabblescrew - he is down the road a bit. We do a little business together.",
+        "a54ae1a097c7f45cc99d": "Why do I find myself waiting for that blasted caravan?$b$b<Smeed looks enlightened.>$b$bOh yeah, they pay the bills. Have you seen them?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "Escort the Gizelton Caravan past the Kolkar Centaur village. Talk with Smeed at Scrabblescrew's Camp for your reward.",
       "title": "Bodyguard for Hire",
@@ -113,6 +204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +244,11 @@
     },
     "esES": {
       "description": "En circunstancias normales, Rigger y yo guiaríamos a nuestros kodos más allá del Poblado Kolkar. De vez en cuando oímos los tambores de guerra centauros y entonces, nos detenemos. ¡No sería bueno para el negocio que nos mataran!\n\nTe propongo una cosa, {class}: si nos proteges para atravesar el Poblado Kolkar, haremos que te merezca la pena.\n\nNo es un tramo muy largo. Y lo único que tendrías que hacer es conseguir que la caravana pase intacta. Luego podrás seguir el camino y pedir tu recompensa a Smeed Mezclatornillos. Hacemos negocios juntos.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "¿Sabes? No parece muy propicio pagar a gente como tú para custodiar la caravana Gizelton. Porque, $c, si yo levantara algún palmo más del suelo, podría coger un segundo trabajo como kodo y sentarme a lo amazona con la pistola más grande que pudiera llevar... ¡Y ya les enseñaría yo a esos malditos centauros quién es el jefe!",
+        "8f0e55d5b25dcaeb5c45": "En circunstancias normales, Rigger y yo guiaríamos a nuestros kodos más allá del Poblado Kolkar. De vez en cuando oímos los tambores de guerra centauros y entonces, nos detenemos. ¡No sería bueno para el negocio que nos mataran!\n\nTe propongo una cosa, $c: si nos proteges para atravesar el Poblado Kolkar, haremos que te merezca la pena.\n\nNo es un tramo muy largo. Y lo único que tendrías que hacer es conseguir que la caravana pase intacta. Luego podrás seguir el camino y pedir tu recompensa a Smeed Mezclatornillos. Hacemos negocios juntos.",
+        "a54ae1a097c7f45cc99d": "¿Por qué me encuentro esperando esa maldita caravana?\n\n \n Oh sí, ellos pagan las cuentas.  ¿Los has visto?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "Escolta la caravana Gizelton a través del poblado de los centauros Kolkar. Habla con Smeed en el Campamento Mezclatornillos para recibir tu recompensa.",
       "title": "Guardaespaldas de alquiler",
@@ -144,6 +258,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +297,11 @@
     },
     "esMX": {
       "description": "En circunstancias normales, Rigger y yo guiaríamos a nuestros kodos más allá del Poblado Kolkar. De vez en cuando oímos los tambores de guerra centauros y entonces, nos detenemos. ¡No sería bueno para el negocio que nos mataran!\n\nTe propongo una cosa, {class}: si nos proteges para atravesar el Poblado Kolkar, haremos que te merezca la pena.\n\nNo es un tramo muy largo. Y lo único que tendrías que hacer es conseguir que la caravana pase intacta. Luego podrás seguir el camino y pedir tu recompensa a Smeed Mezclatornillos. Hacemos negocios juntos.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Sabes, no parece rentable pagarle a gente como tú para proteger la caravana Gizelton. $c, si fuera un poco más alto, podría aceptar un segundo trabajo y sentarme con el arma más grande que mis manos pudieran llevar... y les mostraría a los malditos centauros quién es su papito.",
+        "8f0e55d5b25dcaeb5c45": "En circunstancias normales, Rigger y yo guiaríamos a nuestros kodos más allá del Poblado Kolkar. De vez en cuando oímos los tambores de guerra centauros y entonces, nos detenemos. ¡No sería bueno para el negocio que nos mataran!\n\nTe propongo una cosa, $c: si nos proteges para atravesar el Poblado Kolkar, haremos que te merezca la pena.\n\nNo es un tramo muy largo. Y lo único que tendrías que hacer es conseguir que la caravana pase intacta. Luego podrás seguir el camino y pedir tu recompensa a Smeed Mezclatornillos. Hacemos negocios juntos.",
+        "a54ae1a097c7f45cc99d": "¿Por qué sigo esperando esa maldita caravana?\n\n\nOh, sí, ellos pagan las facturas. ¿Los has visto?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "Escolta la caravana Gizelton a través del poblado de los centauros Kolkar. Habla con Smeed en el Campamento de los Mezclatornillos para recibir tu recompensa.",
       "title": "Guardaespaldas de alquiler",
@@ -174,6 +311,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +350,11 @@
     },
     "frFR": {
       "description": "En temps normal, Rigger et moi conduirions nos kodos à travers le territoire des centaures Kolkar. Mais depuis quelque temps, nous entendons résonner les tambours de guerre des centaures. Comme il n’est jamais bon pour les affaires d’être mort, nous préférons ne pas nous aventurer plus avant sur leurs terres !\n\nSi vous acceptiez de nous protéger, {class}, et nous aidiez à passer au-delà du village des Kolkar, nous vous récompenserions en conséquence.\n\nCela ne représente pas une si grande distance ; vous devrez simplement sécuriser la caravane, puis vous pourrez toucher votre dû des mains de Smeed Scrabblescrew, qui est un peu plus bas sur la route. Nous faisons souvent des affaires ensemble.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Vous savez, ça ne paraît pas très intéressant de payer quelqu'un comme vous pour escorter la caravane de Gizelton. $C, si j'étais plus grand, je pourrais aussi m'installer sur mon kodo avec le plus gros fusil que ma main puisse tenir, et j'apprendrais à ces satanés centaures qui est le maître. ",
+        "8f0e55d5b25dcaeb5c45": "En temps normal, Rigger et moi conduirions nos kodos à travers le territoire des centaures Kolkar. Mais depuis quelque temps, nous entendons résonner les tambours de guerre des centaures. Comme il n’est jamais bon pour les affaires d’être mort, nous préférons ne pas nous aventurer plus avant sur leurs terres !\n\nSi vous acceptiez de nous protéger, $c, et nous aidiez à passer au-delà du village des Kolkar, nous vous récompenserions en conséquence.\n\nCela ne représente pas une si grande distance ; vous devrez simplement sécuriser la caravane, puis vous pourrez toucher votre dû des mains de Smeed Scrabblescrew, qui est un peu plus bas sur la route. Nous faisons souvent des affaires ensemble.",
+        "a54ae1a097c7f45cc99d": "Pourquoi est-ce que je me retrouve à attendre cette maudite caravane ?\n\n\nAh oui, ils paient les factures. Vous les avez vus ?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "Escorter la Caravane de Gizelton et l’aider à passer le village des centaures Kolkar. Parler à Smeed, au camp de Scrabblescrew, pour toucher la récompense.",
       "title": "On engage : gardes du corps",
@@ -204,6 +364,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -225,6 +403,11 @@
     },
     "hrHR": {
       "description": "U normalnim okolnostima Rigger i ja vodili bismo svoje kodove pokraj kentaura Kolkar. Povremeno čujemo njihove ratne bubnjeve i tada stanemo. Nije dobro za posao biti mrtav!\n\nReći ću ti što, {class}, ako nas zaštitiš dok prolazimo pokraj sela Kolkar, pobrinut ćemo se da ti se isplati.\n\nTo je samo kratka udaljenost, sve što trebaš učiniti jest sačuvati karavanu i možeš preuzeti nagradu od Smeeda Scrabblescrewa, malo dalje niz cestu. Zajedno nešto poslujemo.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Plaćati nekoga poput tebe da čuva karavanu Gizelton ne čini se baš isplativim. $C, da sam malo viši, mogao bih raditi dodatni posao i sjediti postrance na kodu s najvećom puškom koju mogu nositi... pokazao bih prokletim kentaurima tko im je tata.",
+        "8f0e55d5b25dcaeb5c45": "U normalnim okolnostima Rigger i ja vodili bismo naše kode pokraj kentaura Kolkar. Povremeno čujemo njihove ratne bubnjeve i tada stanemo. Nije dobro za posao biti mrtav!$B$BEvo što, $c: ako nas zaštitiš dok prolazimo pokraj sela Kolkar, dobro ćemo te nagraditi.$B$BUdaljenost je kratka. Samo sačuvaj karavanu i nagradu možeš preuzeti od Smeeda Scrabblescrewa malo dalje niz cestu. Poslujemo zajedno.",
+        "a54ae1a097c7f45cc99d": "Zašto čekam tu prokletu karavanu?$b$b<Smeed se dosjeti.>$b$bA da, oni plaćaju račune. Jesi li ih vidio?"
+      },
       "eventObjectiveLabel": "Otprati karavanu Gizelton pokraj sela kentaura Kolkar",
       "summary": "Otprati Gizelton Caravan pokraj sela kentaura Kolkar. Razgovaraj sa Smeedom u Scrabblescrew's Campu o nagradi.",
       "title": "Tjelohranitelj za najam",
@@ -235,6 +418,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8819aa1bad349179488534d5578ed13ebe6c541c3eae6f6eedf3523bbe3938e0"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -259,6 +457,11 @@
     },
     "itIT": {
       "description": "In circostanze normali, io e Rigger condurremmo i nostri Kudo oltre i Centauri Kolkar. Ogni tanto però sentiamo i loro tamburi di guerra che risuonano, e allora ci fermiamo. Non fa bene agli affari farsi ammazzare!\n\nAscoltami bene, {class}: se ci fai attraversare il Villaggio dei Kolkar sani e salvi, ti ricompenseremo come meriti.\n\nIl tragitto è breve e tutto quello che devi fare è proteggere la carovana, dopodiché potrai riscuotere la tua ricompensa da Smeed Torcivite, che si trova lungo la strada ed è un mio socio in affari.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Sai, pagare gente come te per sorvegliare la Gizelton Caravan non sembra un grande affare. $C, se fossi un po' più alto potrei prendermi un secondo lavoro e sedermi all'amazzone su un kodo con il fucile più grosso che le mie mani possano reggere... e farei vedere io a quei maledetti centauri chi comanda.",
+        "8f0e55d5b25dcaeb5c45": "In circostanze normali, Rigger e io guideremmo i nostri kodo oltre i Centauri Kolkar. Ogni tanto sentiamo i tamburi di guerra dei Centauri, e quando li sentiamo ci fermiamo. Essere morti non fa bene agli affari!\n\nFacciamo così, $C: se ci proteggi finché non avremo superato il villaggio dei Kolkar, ti ripagheremo come si deve.\n\nÈ solo un breve tratto: devi soltanto tenere intatta la carovana e potrai ritirare la ricompensa da Smeed Scrabblescrew, che sta un po' più avanti lungo la strada. Facciamo qualche affare insieme.",
+        "a54ae1a097c7f45cc99d": "Perché mi ritrovo ad aspettare quella maledetta carovana?\n\n\nAh già, pagano i conti. Li hai visti?"
+      },
       "eventObjectiveLabel": "Scorta la carovana di Gizelton oltre il villaggio dei centauri Kolkar",
       "summary": "Scorta la carovana Gizelton oltre il villaggio dei centauri Kolkar. Parla con Smeed allo Scrabblescrew's Camp per ricevere la ricompensa.",
       "title": "Guardia del corpo a pagamento",
@@ -268,6 +471,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -292,6 +513,11 @@
     },
     "koKR": {
       "description": "보통 때 같으면 말이죠, 리거와 내가 우리 코도를 이끌고 콜카르 켄타우로스를 지나쳐 가겠지만요. 요즘은 이따금씩 켄타우로스 전쟁 북소리가 들려와서 말이에요. 그 소리를 들으면 우린 그냥 서 버린다니까요. 우리가 죽으면 사업이 무슨 소용이겠어요!\n\n이렇게 하는 게 어때요? 우리가 콜카르 마을을 지나갈 수 있도록 보호해 주시면 그에 대한 사례를 하도록 하죠.\n\n짧은 거리니까 짐마차만 안전하게 보호해 주시면 스미드 스크래블스크류에게서 보상을 받을 수 있을 거라니까요. 길을 따라 조금만 가다 보면 그 친구가 있거든요. 우리와 작은 사업을 같이 하고 있죠.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "기젤톤 대상단을 호위하려고 경호원을 돈 주고 쓰는 건 돈벌이에 득이 안 될 텐데 말이야. 내 키가 조금만 더 컸어도 부업으로 내가 다룰 수 있는 총 중에서 제일 큰 총을 들고 코도 옆 안장에 앉아서 그 놈의 켄타우로스 녀석들에게 본때를 보여 줄 텐데...",
+        "8f0e55d5b25dcaeb5c45": "보통 때 같으면 말이죠, 리거와 내가 우리 코도를 이끌고 콜카르 켄타우로스를 지나쳐 가겠지만요. 요즘은 이따금씩 켄타우로스 전쟁 북소리가 들려와서 말이에요. 그 소리를 들으면 우린 그냥 서 버린다니까요. 우리가 죽으면 사업이 무슨 소용이겠어요!\n\n이렇게 하는 게 어때요? 우리가 콜카르 마을을 지나갈 수 있도록 보호해 주시면 그에 대한 사례를 하도록 하죠.\n\n짧은 거리니까 짐마차만 안전하게 보호해 주시면 스미드 스크래블스크류에게서 보상을 받을 수 있을 거라니까요. 길을 따라 조금만 가다 보면 그 친구가 있거든요. 우리와 작은 사업을 같이 하고 있죠.",
+        "a54ae1a097c7f45cc99d": "내가 왜 그 빌어먹을 대상 행렬을 기다리고 있지?$b$b<스미드가 깨달은 표정을 짓습니다.>$b$b아, 맞다. 그들이 돈을 내지. 그들을 봤나?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "콜카르 켄타우로스 마을을 지나가는 기젤톤 대상단을 호위하고 스크래블스크류의 야영지에 있는 스미드와 대화하여 보상을 받아야 합니다.",
       "title": "경호원 고용",
@@ -301,6 +527,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -322,6 +565,11 @@
     },
     "plPL": {
       "description": "W normalnych okolicznościach Rigger i ja prowadzilibyśmy nasze kodo obok centaurów Kolkar. Od czasu do czasu słyszymy ich bębny wojenne i wtedy się zatrzymujemy. Śmierć nie służy interesom!\n\nPowiem ci coś, {class}, jeśli ochronisz nas podczas przejścia obok wioski Kolkar, wynagrodzimy cię.\n\nTo niedaleko. Musisz tylko zachować karawanę w całości, a nagrodę odbierzesz od Smeeda Scrabblescrewa kawałek dalej przy drodze. Robimy razem interesy.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Płacenie komuś takiemu jak ty za ochronę karawany Gizelton nie wydaje się zyskowne. $C, gdybym był nieco wyższy, mógłbym podjąć drugą pracę i jeździć bokiem na kodo z największą strzelbą, jaką udźwignę... i pokazać tym przeklętym centaurom, kto tu rządzi.",
+        "8f0e55d5b25dcaeb5c45": "Normalnie z Riggerem prowadzilibyśmy nasze kodo obok centaurów Kolkar. Czasem słyszymy ich wojenne bębny i wtedy się zatrzymujemy. Śmierć źle wpływa na interesy!$B$BPowiem ci tak, $c: jeśli ochronisz nas podczas przejścia obok wioski Kolkar, sowicie ci zapłacimy.$B$BTo niedaleko. Wystarczy, że utrzymasz karawanę w całości, a odbierzesz nagrodę od Smeeda Scrabblescrewa kawałek dalej. Robimy razem interesy.",
+        "a54ae1a097c7f45cc99d": "Dlaczego czekam na tę przeklętą karawanę?$b$b<Smeed doznaje olśnienia.>$b$bA tak, oni płacą rachunki. Widziałeś ich?"
+      },
       "eventObjectiveLabel": "Odprowadź karawanę Gizeltonów obok wioski centaurów Kolkar",
       "summary": "Odprowadź karawanę Gizeltonów obok wioski centaurów Kolkar. Porozmawiaj ze Smeedem w Scrabblescrew's Camp, by odebrać nagrodę.",
       "title": "Ochroniarz do wynajęcia",
@@ -332,6 +580,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8819aa1bad349179488534d5578ed13ebe6c541c3eae6f6eedf3523bbe3938e0"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -356,6 +619,11 @@
     },
     "ptBR": {
       "description": "Em circunstâncias normais, eu e o Armador passaríamos com os kodos pela aldeia dos centauros Kolkar. De vez em quando dá para ouvir os tambores de guerra deles, e quando isso acontece a gente volta. Morrer não é nada bom para os negócios!\n\nO lance é o seguinte, {class}: se você nos ajudar a passar pela aldeia Kolkar, garantimos que a recompensa será à altura.\n\nÉ um percurso pequeno, e basta você proteger a caravana para receber a recompensa do Smid Rabiscafuso, que está mais à frente, na estrada. A gente é sócio em uns negocinhos.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Sabe de uma coisa? Não é lá muito lucrativo pagar a você para proteger a Caravana Gizelton. $c, se eu fosse só um pouquinho mais alto eu mesmo assumiria esse bico... Eu ia ficar de butuca, montadinho num kodo e com um trabucão maior que eu... E mostraria a esses malditos centauros quem é o rei da parada.",
+        "8f0e55d5b25dcaeb5c45": "Em circunstâncias normais, eu e o Armador passaríamos com os kodos pela aldeia dos centauros Kolkar. De vez em quando dá para ouvir os tambores de guerra deles, e quando isso acontece a gente volta. Morrer não é nada bom para os negócios!\n\nO lance é o seguinte, $c: se você nos ajudar a passar pela aldeia Kolkar, garantimos que a recompensa será à altura.\n\nÉ um percurso pequeno, e basta você proteger a caravana para receber a recompensa do Smid Rabiscafuso, que está mais à frente, na estrada. A gente é sócio em uns negocinhos.",
+        "a54ae1a097c7f45cc99d": "Por que estou esperando aquela caravana maldita?$b$b<Smeed parece se lembrar.>$b$bAh, sim, eles pagam as contas. Você os viu?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "Escolte a Caravana Gizelton pela aldeia dos Centauros Kolkar. Fale com o Smid no Acampamento do Rabiscafuso para receber a recompensa.",
       "title": "Procura-se guarda-costas",
@@ -365,6 +633,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -386,6 +671,11 @@
     },
     "ruRU": {
       "description": "Обычно мы с Риггером проводим кодо мимо поселения кентавров из племени Колкар. Боевые барабаны кентавров слышно издалека, так что, едва заслышав их, мы останавливаемся, чтобы переждать опасность. Мертвый торговец, знаешь ли, плохой торговец!\n\nВот что я тебе скажу, {class}: если ты будешь охранять нас по дороге мимо деревни Колкар, мы тебе за это хорошо заплатим.\n\nРасстояние-то небольшое, да и делать почти ничего не придется – только проследить за тем, чтобы караван был цел. А награду ты получишь, не сомневайся: Смид Заржавень тебе сполна заплатит, мы с ним обделываем кое-какие делишки. Он живет чуть дальше по дороге.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Ты знаешь, не больно-то мне улыбается платить такому как ты за защиту каравана Гизлтона. Эх, $C, если бы не мои годы, если бы мои руки могли держать ружье, а в зубах – граната, то я бы показал кентаврам кто их папа..",
+        "8f0e55d5b25dcaeb5c45": "Обычно мы с Риггером проводим кодо мимо поселения кентавров из племени Колкар. Боевые барабаны кентавров слышно издалека, так что, едва заслышав их, мы останавливаемся, чтобы переждать опасность. Мертвый торговец, знаешь ли, плохой торговец!\n\nВот что я тебе скажу, $c: если ты будешь охранять нас по дороге мимо деревни Колкар, мы тебе за это хорошо заплатим.\n\nРасстояние-то небольшое, да и делать почти ничего не придется – только проследить за тем, чтобы караван был цел. А награду ты получишь, не сомневайся: Смид Заржавень тебе сполна заплатит, мы с ним обделываем кое-какие делишки. Он живет чуть дальше по дороге.",
+        "a54ae1a097c7f45cc99d": "Почему я должен ожидать?\n\n\nАх, да. Они же платят по счетам."
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "Охраняйте караван Гизлтона на пути мимо деревни кентавров из племени Колкар. О награде поговорите со Смидом в Лагере Заржавня.",
       "title": "Наемный телохранитель",
@@ -395,6 +685,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -416,6 +724,11 @@
     },
     "svSE": {
       "description": "Vanligtvis skulle Rigger och jag leda våra kodo förbi Kolkar-kentaurerna. Då och då hör vi kentaurernas krigstrummor, och då stannar vi. Det är dåligt för affärerna att vara död!\n\nVet du vad, {class}? Om du skyddar oss förbi Kolkar-byn ska vi göra det värt mödan.\n\nDet är bara en kort sträcka. Håll karavanen intakt så kan du hämta din belöning hos Smeed Scrabblescrew en bit längre ner på vägen. Vi gör lite affärer tillsammans.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Det verkar inte särskilt lönsamt att betala sådana som du för att skydda Gizeltonkaravanen. $C, om jag vore lite längre kunde jag ta ett extrajobb och sitta sidledes på en kodo med det största gevär jag kunde bära... då skulle jag visa de förbaskade kentaurerna vem som bestämmer.",
+        "8f0e55d5b25dcaeb5c45": "Normalt skulle Rigger och jag leda våra kodor förbi Kolkar-kentaurerna. Ibland hör vi deras krigstrummor, och då stannar vi. Det är dåligt för affärerna att vara död!$B$BHör här, $c: om du skyddar oss förbi Kolkarbyn ska vi belöna dig.$B$BDet är bara en kort sträcka. Håll karavanen intakt så kan du hämta belöningen hos Smeed Scrabblescrew en bit längre bort. Vi gör affärer tillsammans.",
+        "a54ae1a097c7f45cc99d": "Varför står jag och väntar på den förbaskade karavanen?$b$b<Smeed ser upplyst ut.>$b$bJust det, de betalar räkningarna. Har du sett dem?"
+      },
       "eventObjectiveLabel": "Eskortera Gizeltons karavan förbi kolkarcentaurernas by",
       "summary": "Eskortera Gizelton-karavanen förbi Kolkar-kentaurernas by. Tala med Smeed vid Scrabblescrew's Camp för din belöning.",
       "title": "Livvakt uthyres",
@@ -426,6 +739,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8819aa1bad349179488534d5578ed13ebe6c541c3eae6f6eedf3523bbe3938e0"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -450,6 +778,11 @@
     },
     "trTR": {
       "description": "Normal şartlarda Rigger ile ben kodomuzu Kolkar centaur'larının yanından geçirirdik. Ara sıra centaur savaş davullarını duyarız ve duyunca dururuz. Ölü olmak ticarete yaramaz!\n\nŞöyle yapalım, {class}: Kolkar köyünü geçene kadar bizi korursan çabana değer bir karşılık veririz.\n\nYalnızca kısa bir mesafe. Tek yapman gereken kervanı sağlam tutmak; ödülünü yolun biraz ilerisindeki Smeed Scrabblescrew'dan alabilirsin. Birlikte biraz iş yaparız.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Gizelton Kervanı'nı koruman için senin gibilere para ödemek pek kârlı görünmüyor. $C, biraz daha uzun olsaydım ikinci bir iş alır, ellerimin taşıyabileceği en büyük silahla kodoya yan otururdum... o lanet sentorlara kimin patron olduğunu gösterirdim.",
+        "8f0e55d5b25dcaeb5c45": "Normal şartlarda Rigger ve ben kodolarımızı Kolkar sentorlarının yanından geçirirdik. Ara sıra savaş davullarını duyarız, duyunca da dururuz. Ölmek iş için iyi değildir!$B$BŞöyle yapalım $c, bizi Kolkar köyünün ötesine kadar korursan karşılığını veririz.$B$BMesafe kısa; kervanı sağlam tutman yeterli. Ödülünü yolun biraz ilerisindeki Smeed Scrabblescrew'dan alabilirsin. Birlikte iş yapıyoruz.",
+        "a54ae1a097c7f45cc99d": "Neden o lanet kervanı bekliyorum ki?$b$b<Smeed birden hatırlar.>$b$bHa evet, faturaları onlar ödüyor. Onları gördün mü?"
+      },
       "eventObjectiveLabel": "Gizelton Kervanı'na Kolkar Kentaur Köyü'nü geçene kadar eşlik et",
       "summary": "Gizelton Kervanı'na Kolkar Sentor köyünü geçene kadar eşlik et. Ödülün için Scrabblescrew's Camp'teki Smeed ile konuş.",
       "title": "Kiralık Koruma",
@@ -460,6 +793,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8819aa1bad349179488534d5578ed13ebe6c541c3eae6f6eedf3523bbe3938e0"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -484,6 +832,11 @@
     },
     "ukUA": {
       "description": "За звичайних обставин ми з Ріґґером провели б наших кодо повз кентаврів Колкар. Час від часу ми чуємо бойові барабани кентаврів, і тоді зупиняємося. Бути мертвим для торгівлі шкідливо!\n\nОсь що скажу, {class}: захисти нас дорогою повз селище Колкар, і ми належно віддячимо.\n\nЦе зовсім недалеко. Треба лише вберегти караван, а винагороду отримаєш у Сміда Гвинтодряпа трохи далі дорогою. Ми з ним ведемо деякі справи.",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "Платити таким, як ти, за охорону каравану Ґізелтон здається не надто прибутковим. $C, якби я був трохи вищим, міг би взяти другу роботу й сидіти боком на кодо з найбільшою рушницею, яку витримають мої руки... і показав би тим клятим кентаврам, хто тут тато.",
+        "8f0e55d5b25dcaeb5c45": "За звичайних обставин ми з Ріґґером проводили б наших кодо повз кентаврів Колкар. Час від часу ми чуємо їхні бойові барабани й тоді зупиняємося. Бути мертвим погано для бізнесу!$B$BСлухай, $c: якщо захистиш нас дорогою повз село Колкар, ми добре тобі заплатимо.$B$BВідстань невелика. Просто збережи караван цілим, а нагороду забереш у Сміда Скребблскрю трохи далі по дорозі. Ми разом ведемо справи.",
+        "a54ae1a097c7f45cc99d": "Чому я чекаю на той клятий караван?$b$b<Смід раптом пригадує.>$b$bА, точно, вони оплачують рахунки. Ти їх бачив?"
+      },
       "eventObjectiveLabel": "Проведіть караван Ґізельтона повз селище кентаврів Колкарів",
       "summary": "Проведіть караван Ґізельтона через поселення Колкарів. Поговоріть зі Смідом в таборі Гвинтодряпа, щоб отримати винагороду.",
       "title": "Найманий охоронець",
@@ -494,6 +847,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8819aa1bad349179488534d5578ed13ebe6c541c3eae6f6eedf3523bbe3938e0"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -520,6 +888,11 @@
     },
     "zhCN": {
       "description": "一般来说，里格和我会率领我们的科多兽商队经过科卡尔半人马的领地。我们不时地听到半人马的战鼓声，而每当听到那种可怕的声音，我们就会停下。为了挣几个钱把命送掉可不值得！\n\n你猜怎么着，{class}，如果你保护我们通过科尔卡半人马的村庄，我们会给你相应的报酬。\n\n这段路程很短，你需要做的就是让商队免受损失，然后你就可以从斯米德·瑟卡布斯库那里领取你的奖赏了——他在就在路的那一边。我们有些生意上的往来。",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "你知道，为了护卫基泽尔顿商队而付钱给你这样的$r并不怎麽让我放心。如果我再高一点的话，我就能兼职打一份工，拿着我能拿动的最大号的枪坐在科多兽背上保护商队……我会让那些该死的半人马知道谁才是真正的大爷!\n",
+        "8f0e55d5b25dcaeb5c45": "一般来说，里格和我会率领我们的科多兽商队经过科卡尔半人马的领地。我们不时地听到半人马的战鼓声，而每当听到那种可怕的声音，我们就会停下。为了挣几个钱把命送掉可不值得！\n\n你猜怎么着，$c，如果你保护我们通过科尔卡半人马的村庄，我们会给你相应的报酬。\n\n这段路程很短，你需要做的就是让商队免受损失，然后你就可以从斯米德·瑟卡布斯库那里领取你的奖赏了——他在就在路的那一边。我们有些生意上的往来。",
+        "a54ae1a097c7f45cc99d": "为什麽我要等那可恶的商队?\n\n\n哦，对了，他们付钱。你看到他们了吗?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "护送基泽尔顿商队通过科卡尔半人马村，然后与瑟卡布斯库的营地中的斯米德谈话以领取你的奖赏。",
       "title": "雇佣保镖",
@@ -529,6 +902,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -550,6 +941,11 @@
     },
     "zhTW": {
       "description": "一般來說，里格和我會率領我們的科多獸商隊經過科卡爾半人馬的領地。我們不時地聽到半人馬的戰鼓聲，而每當聽到那種可怕的聲音，我們就會停下。為了掙幾個錢把命送掉可不值得！\n\n你猜怎麼著，{class}，如果你保護我們通過科卡爾半人馬的村莊，我們會給你相應的報酬。\n\n這段路程很短，你需要做的就是讓商隊免受損失，然後你就可以從斯米德·瑟卡布斯庫那裡領取你的獎賞了——他在就在路的那一邊。我們有些生意上的往來。",
+      "dialogue": {
+        "11df83b6e9fc55a5d020": "你知道，爲了護衛基澤爾頓商隊而付錢給你這樣的$r並不怎麼讓我放心。如果我再高一點的話，我就能兼職打一份工，拿着我能拿動的最大號的槍坐在科多獸背上保護商隊……我會讓那些該死的半人馬知道誰纔是真正的大爺!\n",
+        "8f0e55d5b25dcaeb5c45": "一般來說，里格和我會率領我們的科多獸商隊經過科卡爾半人馬的領地。我們不時地聽到半人馬的戰鼓聲，而每當聽到那種可怕的聲音，我們就會停下。為了掙幾個錢把命送掉可不值得！\n\n你猜怎麼著，$c，如果你保護我們通過科卡爾半人馬的村莊，我們會給你相應的報酬。\n\n這段路程很短，你需要做的就是讓商隊免受損失，然後你就可以從斯米德·瑟卡布斯庫那裡領取你的獎賞了——他在就在路的那一邊。我們有些生意上的往來。",
+        "a54ae1a097c7f45cc99d": "爲什麼我要等那可惡的商隊?\n\n\n哦，對了，他們付錢。你看到他們了嗎?"
+      },
       "eventObjectiveLabel": "Escort Gizelton Caravan past Kolkar Centaur Village",
       "summary": "護送基澤爾頓商隊通過科卡爾半人馬村，然後與瑟卡布斯庫的營地中的斯米德談話以領取你的獎賞。",
       "title": "雇傭保鏢",
@@ -559,6 +955,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.11df83b6e9fc55a5d020": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.8f0e55d5b25dcaeb5c45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a54ae1a097c7f45cc99d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

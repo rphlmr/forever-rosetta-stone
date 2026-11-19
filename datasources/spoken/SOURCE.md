@@ -1,8 +1,7 @@
 # Spoken quest dialogue reference
 
-Use Spoken to locate candidate quest and NPC dialogue during a local Forever investigation.
-It is a comparison source for the quest panel and NPC dialogue pilot. It supplies no text to
-the shipped catalogs or their translation queues.
+Use Spoken to locate candidate quest and NPC dialogue for Forever. Prepared records retain its
+provenance and a runtime match against the full line shown by the live client.
 
 - [Pinned quest corpus](https://github.com/rusty-key/spoken-wow/blob/9dd73894a1a736c3cc69e17c1bb4e8111d06f928/pipelines/quests/corpus/corpus.json.gz)
 - [Public quest catalogue](https://spoken.quest/)
@@ -21,8 +20,31 @@ follow-up lines are chat dialogue. A gossip match alone does not indicate whethe
 before offering or after completing a quest.
 
 Spoken's MIT grant covers its code. Upstream identifies the game prose and contributions as
-third-party text outside that grant. Keep the Spoken data, pilot output and derived wording local.
-Before catalog admission, obtain reusable source evidence with verified Forever identity, stage,
-locale, placeholders and provenance. Follow the project's
+third-party text outside that grant. Raw snapshots and prepared results stay under ignored imports.
+This workflow does not establish distribution rights. Follow the project's
 [import and translation rules](../../docs/import-resync.md) for official targets, English
 fallback and the independent localized evidence required for additional-language jobs.
+
+Retain complete per-locale client=focus snapshots from the quest search endpoint in the
+snapshot directory. English and French come from the paired audit. Other locales must match its
+line identity and English wording. English fallbacks, narration and ambiguous translations are
+excluded from those locale slots.
+
+Run resync.py prepare-quest-dialogue with --audit, --snapshots and --output, then run
+the normal apply and verify commands against that output directory.
+
+Quest offer, progress and reward text live on the existing quest records. Greetings and
+options live on the existing NPC records. Each owner records conditions in dialogueContexts,
+localized text in locales[locale].dialogue and provenance under the matching
+translationMetadata.fields entry. The normal database build packs each language.
+Missing or ambiguous output leaves the live text in the native window.
+
+After applying source updates, run `resync.py queue --directory UPDATE --output QUEUE`.
+It proposes reusable translations in `QUEUE/dialogue-reuse` and lists the distinct remaining
+jobs in `QUEUE/dialogue-translation-queue.json`. Use the normal `apply` and `verify` commands
+for the reuse proposal, if present. Follow the
+[catalog translation workflow](../../catalogs/AGENTS.md) to assign up to 125 entities to
+each of six fresh workers. Use `catalog-batch.py prepare --batch-size 1` to keep a snapshot
+and result per entity, then validate each compact locale-to-dialogue-key result with
+`catalog-batch.py patch-dialogue`. The exception permits any target locale for a dialogue
+with owned English. A later applicable sourced translation replaces the AI wording.

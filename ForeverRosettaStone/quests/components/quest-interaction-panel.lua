@@ -1,5 +1,13 @@
 local _, Addon = ...
 
+local autoOpenSettings = {
+    detail = "questAutoOpen",
+    gossip = "questGreetingAutoOpen",
+    greeting = "questGreetingAutoOpen",
+    progress = "questProgressAutoOpen",
+    reward = "questRewardAutoOpen",
+}
+
 local profiles = Addon:CreateTooltipPlacementProfiles({
     name = "questInteraction",
     contexts = { gossip = {}, greeting = {}, detail = {}, progress = {}, reward = {} },
@@ -198,10 +206,15 @@ function Addon:UpdateQuestInteraction()
     end
 
     local sections, dialogueKey, missing
-    if source and self:HasQuestInteractionTranslation(id, quest, context) then
+    local hasCatalogText = source and self:HasQuestInteractionTranslation(id, quest, context)
+    if source and not (hasCatalogText and self:FormatQuestText(quest.description, id)) then
+        sections, dialogueKey = self:GetCatalogDialogueSections(id, context)
+        if not sections and self.questInteractionContentProvider then
+            sections, dialogueKey = self.questInteractionContentProvider(source, id, context)
+        end
+    end
+    if not sections and hasCatalogText then
         sections = self:GetQuestInteractionSections(id, quest)
-    elseif source and self.questInteractionContentProvider then
-        sections, dialogueKey = self.questInteractionContentProvider(source, id, context)
     end
     if not sections and source and self:IsReadableEntityID(id) then
         sections = { { source = QuestInfoDescriptionText, text = self:GetMissingTranslationMessage("quest"), gap = 0 } }
@@ -215,7 +228,7 @@ function Addon:UpdateQuestInteraction()
     end
 
     self:SendQuestInteraction({ type = "present", source = source, questID = id, context = context,
-        dialogueKey = dialogueKey, autoOpen = self:IsFeatureEnabled("questAutoOpen") })
+        dialogueKey = dialogueKey, autoOpen = self:IsFeatureEnabled(autoOpenSettings[context]) })
 
     local bookmark = self:GetQuestInteractionBookmark()
     bookmark:Attach(source, -76)

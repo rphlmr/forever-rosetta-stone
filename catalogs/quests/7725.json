@@ -1,8 +1,46 @@
 {
   "areaId": 357,
+  "dialogueContexts": {
+    "48b0fbf36fa99abecd5d": {
+      "lineId": "q:7725:accept:m",
+      "npcId": 14637,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "55b24e8eef2f4e437bf1": {
+      "lineId": "q:7725:accept:f",
+      "npcId": 14637,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "770cede8c7701d679dd0": {
+      "lineId": "q:7725:progress",
+      "npcId": 14637,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "bbfe4baa1b3f04e48de2": {
+      "lineId": "q:7725:complete",
+      "npcId": 14637,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vím, že už od tebe nějaké zbytky mám... ale pokud snad zatoužíš po přídavku k téhle zábavné činnosti, další zbytky se mi vždycky hodí.\n\nAčkoli ti tentokrát nemohu nabídnout ani zdaleka tak tučnou odměnu, tuze rád o tvých službách roztroubím chválu všem svým goblinským přátelům, kteří mají uši.\n\nVěř mi, ctěná duše, když říkám, že tihle goblini mají uši opravdu velké.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Vím, že jsi pro mě už zbytky nasbíral... ale pokud by sis chtěl tuto zábavnou činnost zopakovat, další zbytky se vždy hodí.$B$BAčkoli už ti nemohu nabídnout zdaleka takovou odměnu, rád o tvých službách povím všem svým gobliním přátelům s ušima.$B$BVěř mi, $gpane:paní;, když říkám, že tihle goblini mají velmi velké uši.",
+        "55b24e8eef2f4e437bf1": "Vím, že jsi pro mě už zbytky nasbíral... ale pokud by sis chtěl tuto zábavnou činnost zopakovat, další zbytky se vždy hodí.$B$BAčkoli už ti nemohu nabídnout zdaleka takovou odměnu, rád o tvých službách povím všem svým gobliním přátelům s ušima.$B$BVěř mi, $gpane:paní;, když říkám, že tihle goblini mají velmi velké uši.",
+        "770cede8c7701d679dd0": "Ach, plody výzkumu a využití v podobě sladkých, sladkých zbytků. Tedy, nechci říct, že je při studiu ochutnávám.$B$BMoc často.",
+        "bbfe4baa1b3f04e48de2": "Nepředstavitelně fantastické, $N! Znovu jsi mi pomohl a za to ti děkuji.$B$BDěkuji!$B$BI když se ti tato odměna může zdát menší, než jsi zvyklý, věz, že tvé velké činy ve prospěch goblinů se ozývají v síních moci kartelu Steamwheedle. Pokud hledáš další práci, určitě se mnou promluv!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +57,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a1b27d5b5cb2b848b1aa432de29eea04627643098a45a20da598a25564a3a053"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +102,12 @@
     },
     "daDK": {
       "description": "Jeg ved, at du allerede har samlet rester til mig... men hvis du skulle ønske et ekstranummer af en fornøjelig aktivitet, kan jeg altid bruge flere rester.\n\nSelvom jeg ikke igen kan tilbyde nær så meget i kompensation, vil jeg med glæde sprede det gode ord om din tjeneste til alle mine goblinvenner med ører.\n\nTro mig, når jeg siger, at disse goblins har ganske store ører.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Jeg ved, du allerede har samlet rester til mig... men hvis du skulle få lyst til en ekstrarunde af denne fornøjelige aktivitet, kan jeg altid bruge flere.$B$BSelvom jeg ikke kan tilbyde nær så meget i betaling igen, vil jeg med glæde fortælle alle mine goblinvenner med ører om din indsats.$B$BTro mig, $gherre:frue;, når jeg siger, at disse gobliner har meget store ører.",
+        "55b24e8eef2f4e437bf1": "Jeg ved, du allerede har samlet rester til mig... men hvis du skulle få lyst til en ekstrarunde af denne fornøjelige aktivitet, kan jeg altid bruge flere.$B$BSelvom jeg ikke kan tilbyde nær så meget i betaling igen, vil jeg med glæde fortælle alle mine goblinvenner med ører om din indsats.$B$BTro mig, $gherre:frue;, når jeg siger, at disse gobliner har meget store ører.",
+        "770cede8c7701d679dd0": "Ah, forskningens og anvendelsens frugter i form af søde, søde rester. Altså, jeg smager dem jo ikke, når jeg undersøger dem.$B$BSærligt meget.",
+        "bbfe4baa1b3f04e48de2": "Ubegribeligt fantastisk, $N! Du har hjulpet mig igen, og det takker jeg dig for.$B$BTak!$B$BSelvom betalingen måske er mindre, end du er vant til, kan du være sikker på, at dine store gerninger for goblinerne genlyder i Steamwheedle-kartellets magtsale. Hvis du mangler noget andet at lave, så tal endelig med mig!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +124,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a1b27d5b5cb2b848b1aa432de29eea04627643098a45a20da598a25564a3a053"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +167,12 @@
     },
     "deDE": {
       "description": "Ich weiß, dass Ihr schon Überreste für mich gesammelt habt... aber solltet ihr auf der Suche nach einer zusätzlichen Aufgabe sein, könnte ich immer noch einige Überreste gebrauchen.\n\nIch kann zwar nicht genausoviel als Belohnung bieten wie zuvor, aber dafür wäre ich mehr als glücklich ein gutes Wort über Euch unter meinen Goblin Freunden verlauten zu lassen. Unter denen zumindest, die über Ohren verfügen. .\n\nGlaubt mir, Herr wenn ich Euch sage, dass diese Goblins über wirklich ziemliche große Ohren verfügen.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Ich weiß, dass Ihr schon Überreste für mich gesammelt habt... aber solltet ihr auf der Suche nach einer zusätzlichen Aufgabe sein, könnte ich immer noch einige Überreste gebrauchen.\n\nIch kann zwar nicht genausoviel als Belohnung bieten wie zuvor, aber dafür wäre ich mehr als glücklich ein gutes Wort über Euch unter meinen Goblin Freunden verlauten zu lassen. Unter denen zumindest, die über Ohren verfügen. .\n\nGlaubt mir, Herr wenn ich Euch sage, dass diese Goblins über wirklich ziemliche große Ohren verfügen.",
+        "55b24e8eef2f4e437bf1": "Ich weiß, dass Ihr schon Überreste für mich gesammelt habt... aber solltet ihr auf der Suche nach einer zusätzlichen Aufgabe sein, könnte ich immer noch einige Überreste gebrauchen.\n\nIch kann zwar nicht genausoviel als Belohnung bieten wie zuvor, aber dafür wäre ich mehr als glücklich ein gutes Wort über Euch unter meinen Goblin Freunden verlauten zu lassen. Unter denen zumindest, die über Ohren verfügen. .\n\nGlaubt mir, Frau wenn ich Euch sage, dass diese Goblins über wirklich ziemliche große Ohren verfügen.",
+        "770cede8c7701d679dd0": "Ah, die Früchte langer Arbeit und Forschung: süsse süsse Überreste. Natürlich probiere ich während meiner Studien nichts davon. . . \n \n Meistens jedenfalls. ",
+        "bbfe4baa1b3f04e48de2": "Einfach fantastisch, $N! Wieder einmal habt Ihr mir einen großen Gefallen getan und dafür danke ich Euch. \n \n Vielen Dank!\n \n Diese Belohnung mag vielleicht ein wenig kleiner ausgefallen sein, als Ihr es vielleicht gewohnt seid, aber seid Euch sicher, dass Eure großen Taten im Namen der Goblins, überall in den großen Hallen des Steamwheedle-Kartells wiederhallen. Solltet Ihr mal wieder Arbeit suchen, dann um der Götter Willen, redet mit mir!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +188,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +234,12 @@
     },
     "enUS": {
       "description": "I know you've gathered residue for me already... but should you find yourself for want of an encore performance to a fun-time activity, I can always use more residue.\n\nWhile I can't offer nearly as much in the way of compensation again, I'll be more than happy to spread the good word of your service to all my goblin friends with ears.\n\nBelieve me sir when I say that these goblins have quite large ears.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "I know you've gathered residue for me already... but should you find yourself for want of an encore performance to a fun-time activity, I can always use more residue.$B$BWhile I can't offer nearly as much in the way of compensation again, I'll be more than happy to spread the good word of your service to all my goblin friends with ears.$B$BBelieve me $g sir : madam; when I say that these goblins have quite large ears.",
+        "55b24e8eef2f4e437bf1": "I know you've gathered residue for me already... but should you find yourself for want of an encore performance to a fun-time activity, I can always use more residue.$B$BWhile I can't offer nearly as much in the way of compensation again, I'll be more than happy to spread the good word of your service to all my goblin friends with ears.$B$BBelieve me $g sir : madam; when I say that these goblins have quite large ears.",
+        "770cede8c7701d679dd0": "Ah, the fruits of research and utilization in the form of sweet, sweet residue.  Well, that is to say, I don't taste it or anything when I study it.$B$BMuch.",
+        "bbfe4baa1b3f04e48de2": "Inconceivably fantastical, $N!  You've come through for me again, and for that I thank you.$B$BThank you!$B$BWhile you may find this coin to be a little less than you're accustomed to, rest assured your great deeds on the field of goblindom are echoing through the halls of power in the Steamwheedle Cartel.  Should you need something else to do, then by all means talk to me!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +255,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -157,6 +301,12 @@
     },
     "esES": {
       "description": "Sé que ya me has traído residuos pero... si te divirtió la experiencia y quieres hacer un bis, yo encantado de que me traigas un poco más.\n\nEsta vez tampoco puedo ofrecerte gran cosa como compensación, pero estaré encantado de hacer correr la voz de que me has ayudado entre todos los goblins que conozca y que tengan orejas.\n\nY puedes creerme, algunos de esos goblins tienen orejas enormes.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Sé que ya me has traído residuos pero... si te divirtió la experiencia y quieres hacer un bis, yo encantado de que me traigas un poco más.\n\nEsta vez tampoco puedo ofrecerte gran cosa como compensación, pero estaré encantado de hacer correr la voz de que me has ayudado entre todos los goblins que conozca y que tengan orejas.\n\nY puedes creerme, algunos de esos goblins tienen orejas enormes.",
+        "55b24e8eef2f4e437bf1": "Sé que ya me has traído residuos pero... si te divirtió la experiencia y quieres hacer un bis, yo encantado de que me traigas un poco más.\n\nEsta vez tampoco puedo ofrecerte gran cosa como compensación, pero estaré encantado de hacer correr la voz de que me has ayudado entre todos los goblins que conozca y que tengan orejas.\n\nY puedes creerme, algunos de esos goblins tienen orejas enormes.",
+        "770cede8c7701d679dd0": "Ah, los frutos de tanta investigación y prueba recogidos en un dulce residuo. Bueno, lo de dulce es una forma de hablar, no suelo probar las cosas con las que trabajo.\n\nNo siempre.",
+        "bbfe4baa1b3f04e48de2": "¡Inconcebiblemente fantástico, $n! Me has sido de gran ayuda, una vez más. Te lo agradezco mucho.\n\nGracias.\n\nPuede que esta recompensa te parezca un poco menos de lo que te mereces, pero debes saber que tus hazañas en el campo de la goblinización resonarán en todas las salas del Cártel Bonvapor. Si quieres hacer alguna cosa más, ¡habla conmigo!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +322,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -194,6 +368,12 @@
     },
     "esMX": {
       "description": "Sé que ya me has traído residuos pero... si te divirtió la experiencia y quieres hacer un bis, yo encantado de que me traigas un poco más.\n\nEsta vez tampoco puedo ofrecerte gran cosa como compensación, pero estaré encantado de hacer correr la voz de que me has ayudado entre todos los goblins que conozca y que tengan orejas.\n\nY puedes creerme, algunos de esos goblins tienen orejas enormes.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Sé que ya me has traído residuos pero... si te divirtió la experiencia y quieres hacer un bis, yo encantado de que me traigas un poco más.\n\nEsta vez tampoco puedo ofrecerte gran cosa como compensación, pero estaré encantado de hacer correr la voz de que me has ayudado entre todos los goblins que conozca y que tengan orejas.\n\nY puedes creerme, algunos de esos goblins tienen orejas enormes.",
+        "55b24e8eef2f4e437bf1": "Sé que ya me has traído residuos pero... si te divirtió la experiencia y quieres hacer un bis, yo encantado de que me traigas un poco más.\n\nEsta vez tampoco puedo ofrecerte gran cosa como compensación, pero estaré encantado de hacer correr la voz de que me has ayudado entre todos los goblins que conozca y que tengan orejas.\n\nY puedes creerme, algunos de esos goblins tienen orejas enormes.",
+        "770cede8c7701d679dd0": "Ah, los frutos de tanta investigación y prueba recogidos en un dulce residuo. Bueno, lo de dulce es una forma de hablar, no suelo probar las cosas con las que trabajo.\n\nNo siempre.",
+        "bbfe4baa1b3f04e48de2": "¡Inconcebiblemente fantástico, $n! Me has sido de gran ayuda, una vez más. Te lo agradezco mucho.\n\nGracias.\n\nPuede que esta recompensa te parezca un poco menos de lo que te mereces, pero debes saber que tus hazañas en el campo de la goblinización resonarán en todas las salas del Cártel Bonvapor. Si quieres hacer alguna cosa más, ¡habla conmigo!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +389,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -231,6 +435,12 @@
     },
     "frFR": {
       "description": "Je sais que vous avez déjà ramassé des résidus pour moi... mais si vous aviez envie de recommencer cette activité fort amusante, j'aurais toujours besoin de résidus.\n\nJe ne serai plus en mesure de vous offrir la même compensation, mais je serais plus qu'heureux de parler de vous à tous mes amis gobelins dotés d'oreilles.\n\nEt croyez-moi Monsieur quand je vous dis que ces gobelins ont de grandes oreilles.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Je sais que vous avez déjà ramassé des résidus pour moi... mais si vous aviez envie de recommencer cette activité fort amusante, j'aurais toujours besoin de résidus.\n\nJe ne serai plus en mesure de vous offrir la même compensation, mais je serais plus qu'heureux de parler de vous à tous mes amis gobelins dotés d'oreilles.\n\nEt croyez-moi Monsieur quand je vous dis que ces gobelins ont de grandes oreilles.",
+        "55b24e8eef2f4e437bf1": "Je sais que vous avez déjà ramassé des résidus pour moi... mais si vous aviez envie de recommencer cette activité fort amusante, j'aurais toujours besoin de résidus.\n\nJe ne serai plus en mesure de vous offrir la même compensation, mais je serais plus qu'heureux de parler de vous à tous mes amis gobelins dotés d'oreilles.\n\nEt croyez-moi Madame quand je vous dis que ces gobelins ont de grandes oreilles.",
+        "770cede8c7701d679dd0": "Ah, les fruits de la recherche sous la forme de ce si délicieux résidu ! Euh, je veux dire, je n'en mange pas ou quoi que ce soit quand je l'étudie. \n \n Ou pas beaucoup. ",
+        "bbfe4baa1b3f04e48de2": "Absolument fantastique, $N ! Vous avez encore réussi, et je vous en remercie. \n \n Merci !\n \n Peut-être que cette pièce vaut moins que ce à quoi vous êtes habitué, mais soyez assuré que les échos de vos grands exploits pour la gobelinité résonnent aux plus hauts niveaux du Cartel Gentepression. Si vous cherchez quelque chose d'autre à faire, surtout venez me parler !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +456,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -268,6 +502,12 @@
     },
     "hrHR": {
       "description": "Znam da si mi već prikupio ostatke... ali ako poželiš ponoviti ovu zabavnu aktivnost, uvijek mogu iskoristiti još ostataka.\n\nPremda ti ponovno ne mogu ponuditi ni približno jednaku naknadu, bit će mi više nego drago proširiti dobar glas o tvojoj službi svim mojim goblinskim prijateljima koji imaju uši.\n\nVjeruj mi, gospodine, kad kažem da ti goblini imaju prilično velike uši.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Znam da si već sakupio ostatke za mene... ali ako poželiš ponoviti tu zabavnu aktivnost, uvijek mi treba još.$B$BIako ti ne mogu ponovno ponuditi ni približno toliku naknadu, rado ću pohvaliti tvoju uslugu svim svojim goblinskim prijateljima s ušima.$B$BVjeruj mi, $ggospodine:gospođo;, kad kažem da ti goblini imaju vrlo velike uši.",
+        "55b24e8eef2f4e437bf1": "Znam da si već sakupio ostatke za mene... ali ako poželiš ponoviti tu zabavnu aktivnost, uvijek mi treba još.$B$BIako ti ne mogu ponovno ponuditi ni približno toliku naknadu, rado ću pohvaliti tvoju uslugu svim svojim goblinskim prijateljima s ušima.$B$BVjeruj mi, $ggospodine:gospođo;, kad kažem da ti goblini imaju vrlo velike uši.",
+        "770cede8c7701d679dd0": "Ah, plodovi istraživanja i primjene u obliku slatkih, slatkih ostataka. Mislim, ne kušam ih dok ih proučavam.$B$BČesto.",
+        "bbfe4baa1b3f04e48de2": "Nezamislivo fantastično, $N! Opet si mi pomogao i na tome ti zahvaljujem.$B$BHvala!$B$BIako ti se ova naknada može činiti manjom nego što si navikao, znaj da tvoja velika djela za gobline odjekuju dvoranama moći kartela Steamwheedle. Ako tražiš još posla, svakako razgovaraj sa mnom!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +524,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a1b27d5b5cb2b848b1aa432de29eea04627643098a45a20da598a25564a3a053"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +567,12 @@
     },
     "itIT": {
       "description": "So che hai già raccolto dei residui per me... ma se ti venisse voglia di fare il bis di un'attività divertente, altri residui mi fanno sempre comodo.\n\nAnche se stavolta non posso offrirti un compenso altrettanto ricco, sarò più che felice di lodare i tuoi servigi a tutti i miei amici goblin dotati di orecchie.\n\nE credimi, signore, quando dico che questi goblin hanno orecchie davvero grandi.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Lo so che mi hai già raccolto del residuo... ma se ti venisse voglia di un bis di questa attività così divertente, un po' di residuo in più mi fa sempre comodo.\n\nStavolta non posso offrirti un compenso neanche lontanamente pari a quello di prima, ma sarò più che felice di spargere la voce dei tuoi servigi fra tutti i miei amici goblin dotati di orecchie.\n\nCredimi, signore, quando ti dico che questi goblin hanno orecchie belle grandi.",
+        "55b24e8eef2f4e437bf1": "Lo so che mi hai già raccolto del residuo... ma se ti venisse voglia di un bis di questa attività così divertente, un po' di residuo in più mi fa sempre comodo.\n\nStavolta non posso offrirti un compenso neanche lontanamente pari a quello di prima, ma sarò più che felice di spargere la voce dei tuoi servigi fra tutti i miei amici goblin dotati di orecchie.\n\nCredimi, signora, quando ti dico che questi goblin hanno orecchie belle grandi.",
+        "770cede8c7701d679dd0": "Ah, i frutti della ricerca e dell'utilizzo sotto forma di dolce, dolcissimo residuo. Be', voglio dire, non è che lo assaggi o cose del genere quando lo studio.\n\nNon troppo.",
+        "bbfe4baa1b3f04e48de2": "Inconcepibilmente fantastico, $N! Mi hai aiutato ancora e per questo ti ringrazio.$B$BGrazie!$B$BAnche se questa somma può essere inferiore a quella a cui sei abituato, sappi che le tue grandi imprese per i goblin risuonano nelle sale del potere del Cartello di Steamwheedle. Se cerchi altro da fare, parlami pure!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +589,29 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a1b27d5b5cb2b848b1aa432de29eea04627643098a45a20da598a25564a3a053"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -346,6 +635,12 @@
     },
     "koKR": {
       "description": "이미 잔류물을 모아다 주긴 하셨지만... 저야 늘 잔류물이 더 필요하니, 이 재미있는 놀이를 한 번 더 해 보고 싶다면 얼마든지 그렇게 하십시오.\n\n보상금은 예전만큼 많이 드릴 수는 없지만, 제 말을 들을 수 있는 모든 고블린 친구들에게 당신이 해 주신 일에 대해 잘 얘기해 두도록 하겠습니다.\n\n제 고블린 친구들은 소문에 아주 민감하거든요.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "이미 잔류물을 모아다 주긴 하셨지만... 저야 늘 잔류물이 더 필요하니, 이 재미있는 놀이를 한 번 더 해 보고 싶다면 얼마든지 그렇게 하십시오.\n\n보상금은 예전만큼 많이 드릴 수는 없지만, 제 말을 들을 수 있는 모든 고블린 친구들에게 당신이 해 주신 일에 대해 잘 얘기해 두도록 하겠습니다.\n\n제 고블린 친구들은 소문에 아주 민감하거든요.",
+        "55b24e8eef2f4e437bf1": "이미 잔류물을 모아다 주긴 하셨지만... 저야 늘 잔류물이 더 필요하니, 이 재미있는 놀이를 한 번 더 해 보고 싶다면 얼마든지 그렇게 하십시오.\n\n보상금은 예전만큼 많이 드릴 수는 없지만, 제 말을 들을 수 있는 모든 고블린 친구들에게 당신이 해 주신 일에 대해 잘 얘기해 두도록 하겠습니다.\n\n제 고블린 친구들은 소문에 아주 민감하거든요.",
+        "770cede8c7701d679dd0": "아, 연구와 활용의 결실이 달콤하고 달콤한 잔류물의 형태로 맺어지는구나. 뭐, 그렇다고 연구 중에 제가 이 잔류물을 맛본다든가 하는 건 아니랍니다.\n\n그렇게 많이는 아니라고요.",
+        "bbfe4baa1b3f04e48de2": "또 다시 해내시다니... 상상 할 수 없을 만큼 대단하군요! 정말로 고맙습니다. 감사해요!\n\n평소보다 금액이 좀 적긴 할 테지만 고블린 왕국에서 당신이 세우신 공로에 대한 소문이 스팀휘들 무역회사 중심부 곳곳에 퍼지게 될 겁니다. 다른 일거리가 필요하면 언제든지 절 찾아오십시오!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -361,6 +656,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -383,6 +702,12 @@
     },
     "plPL": {
       "description": "Wiem, że już zbierałeś dla mnie pozostałości... ale jeśli zapragniesz powtórki tej zabawnej czynności, zawsze przyda mi się więcej.\n\nChoć nie mogę znów zaoferować równie wielkiej zapłaty, chętnie rozpowiem o twojej służbie wszystkim moim goblińskim przyjaciołom, którzy mają uszy.\n\nUwierz mi, panie, te gobliny mają całkiem duże uszy.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Wiem, że już zebrałeś dla mnie pozostałości... ale jeśli masz ochotę powtórzyć tę przyjemną czynność, zawsze przyda mi się ich więcej.$B$BChoć nie mogę znów zaoferować równie dużej zapłaty, z przyjemnością opowiem o twojej pomocy wszystkim moim goblińskim przyjaciołom z uszami.$B$BUwierz mi, $gpanie:pani;, gdy mówię, że te gobliny mają bardzo duże uszy.",
+        "55b24e8eef2f4e437bf1": "Wiem, że już zebrałeś dla mnie pozostałości... ale jeśli masz ochotę powtórzyć tę przyjemną czynność, zawsze przyda mi się ich więcej.$B$BChoć nie mogę znów zaoferować równie dużej zapłaty, z przyjemnością opowiem o twojej pomocy wszystkim moim goblińskim przyjaciołom z uszami.$B$BUwierz mi, $gpanie:pani;, gdy mówię, że te gobliny mają bardzo duże uszy.",
+        "770cede8c7701d679dd0": "Ach, owoce badań i wykorzystania w postaci słodkich, słodkich pozostałości. To znaczy, nie próbuję ich podczas badania.$B$BZa często.",
+        "bbfe4baa1b3f04e48de2": "Niewyobrażalnie fantastycznie, $N! Znowu mi pomogłeś i dziękuję ci za to.$B$BDziękuję!$B$BChoć ta zapłata może być niższa, niż przywykłeś, zapewniam, że twoje wielkie czyny dla goblinów odbijają się echem w salach władzy kartelu Steamwheedle. Jeśli szukasz kolejnego zajęcia, porozmawiaj ze mną!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -399,6 +724,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a1b27d5b5cb2b848b1aa432de29eea04627643098a45a20da598a25564a3a053"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -422,6 +767,12 @@
     },
     "ptBR": {
       "description": "Sei que você já me arrumou um pouco de resíduo antes, mas, se quiser repetir a revigorante e divertida atividade, eu é que não vou recusar mais material de estudo.\n\nNão tô podendo te oferecer uma recompensa tão boa quanto a da última vez, mas posso fazer os elogios ao seu bom serviço chegarem aos ouvidos de todos os meus amigos goblins.\n\nE pode acreditar, com umas orelhas grandes daquelas, sua fama vai longe.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Sei que você já me arrumou um pouco de resíduo antes, mas, se quiser repetir a revigorante e divertida atividade, eu é que não vou recusar mais material de estudo.\n\nNão tô podendo te oferecer uma recompensa tão boa quanto a da última vez, mas posso fazer os elogios ao seu bom serviço chegarem aos ouvidos de todos os meus amigos goblins.\n\nE pode acreditar, com umas orelhas grandes daquelas, sua fama vai longe.",
+        "55b24e8eef2f4e437bf1": "Sei que você já me arrumou um pouco de resíduo antes, mas, se quiser repetir a revigorante e divertida atividade, eu é que não vou recusar mais material de estudo.\n\nNão tô podendo te oferecer uma recompensa tão boa quanto a da última vez, mas posso fazer os elogios ao seu bom serviço chegarem aos ouvidos de todos os meus amigos goblins.\n\nE pode acreditar, com umas orelhas grandes daquelas, sua fama vai longe.",
+        "770cede8c7701d679dd0": "Ah, os frutos da pesquisa e do uso do doce resíduo... Bem, é modo de falar, não sei o gosto do resíduo. Não é como se eu ficasse provando os meus objetos de estudo.\n\nSó um pouquinho.",
+        "bbfe4baa1b3f04e48de2": "Maneiraço, $N! Você conseguiu outra vez, e eu fico muito grato.\n\nAgradecido!\n\nTá aqui o pagamento. Olha, sei que é um pouquinho menos do que você costuma receber, mas pode ficar despreocupado, porque o relato dos seus grandes feitos goblínicos já tá ecoando pelos prestigiados salões do Cartel Bondebico. Se quiser descolar mais um trabalhinho, é vir me procurar!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -437,6 +788,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -459,6 +834,12 @@
     },
     "ruRU": {
       "description": "Я знаю, вы уже собирали для меня остатки миниатюризации... но, если вам захочется снова поразвлечься, имейте в виду: мне всегда нужны новые остатки!\n\nРазумеется, такого большого вознаграждения, как раньше, я больше предложить не смогу, но зато я всегда буду рад замолвить за вас словечко перед своими друзьями-гоблинами.\n\nПоверьте мне, сударь: гоблины к подобным отзывам прислушиваются чрезвычайно внимательно!",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Я знаю, вы уже собирали для меня остатки миниатюризации... но, если вам захочется снова поразвлечься, имейте в виду: мне всегда нужны новые остатки!\n\nРазумеется, такого большого вознаграждения, как раньше, я больше предложить не смогу, но зато я всегда буду рад замолвить за вас словечко перед своими друзьями-гоблинами.\n\nПоверьте мне, сударь: гоблины к подобным отзывам прислушиваются чрезвычайно внимательно!",
+        "55b24e8eef2f4e437bf1": "Я знаю, вы уже собирали для меня остатки миниатюризации... но, если вам захочется снова поразвлечься, имейте в виду: мне всегда нужны новые остатки!\n\nРазумеется, такого большого вознаграждения, как раньше, я больше предложить не смогу, но зато я всегда буду рад замолвить за вас словечко перед своими друзьями-гоблинами.\n\nПоверьте мне, сударыня: гоблины к подобным отзывам прислушиваются чрезвычайно внимательно!",
+        "770cede8c7701d679dd0": "Ах, сладкие плоды исследований... Не то чтобы я их пробовал...\n\nЧасто...",
+        "bbfe4baa1b3f04e48de2": "Практически немыслимо, $N! Ты снова сделал это и я снова благодарю тебя! Спасибо! Может быть, ты найдешь эту оплату менее большой, но знай, что ты получил большее, чем деньги – а именно уважение Картеля Хитрой Шестеренки. Если чего надо – обращайся ко мне, поможем."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -474,6 +855,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -496,6 +901,12 @@
     },
     "svSE": {
       "description": "Jag vet att du redan har samlat rester åt mig... men om du känner för en repris på en rolig sysselsättning kan jag alltid använda fler.\n\nÄven om jag inte kan erbjuda tillnärmelsevis lika stor ersättning igen sprider jag mer än gärna ryktet om dina insatser till alla mina goblinvänner som har öron.\n\nOch tro mig, min herre, när jag säger att de där goblinerna har rätt stora öron.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Jag vet att du redan har samlat rester åt mig... men om du vill göra om denna roliga aktivitet kan jag alltid använda mer.$B$BÄven om jag inte kan erbjuda lika mycket i ersättning igen berättar jag gärna om din insats för alla mina goblinvänner med öron.$B$BTro mig, $gherrn:frun;, när jag säger att dessa gobliner har mycket stora öron.",
+        "55b24e8eef2f4e437bf1": "Jag vet att du redan har samlat rester åt mig... men om du vill göra om denna roliga aktivitet kan jag alltid använda mer.$B$BÄven om jag inte kan erbjuda lika mycket i ersättning igen berättar jag gärna om din insats för alla mina goblinvänner med öron.$B$BTro mig, $gherrn:frun;, när jag säger att dessa gobliner har mycket stora öron.",
+        "770cede8c7701d679dd0": "Ah, frukterna av forskning och användning i form av söta, söta rester. Jag menar, jag smakar dem inte när jag undersöker dem.$B$BSärskilt mycket.",
+        "bbfe4baa1b3f04e48de2": "Ofattbart fantastiskt, $N! Du har hjälpt mig igen, och för det tackar jag dig.$B$BTack!$B$BÄven om denna betalning kanske är mindre än du är van vid kan du vara säker på att dina stora gärningar för goblinerna ekar i Steamwheedle-kartellets maktsalar. Om du behöver mer att göra, tala gärna med mig!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +923,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a1b27d5b5cb2b848b1aa432de29eea04627643098a45a20da598a25564a3a053"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -535,6 +966,12 @@
     },
     "trTR": {
       "description": "Benim için zaten kalıntı topladığını biliyorum... Ama eğlenceli bir etkinliği bir kez daha tekrarlamak istersen daha fazla kalıntı her zaman işime yarar.\n\nYeniden aynı büyüklükte bir karşılık sunamasam da hizmetlerini kulağı olan bütün goblin dostlarıma memnuniyetle överim.\n\nBu goblinlerin oldukça büyük kulakları olduğunu söylerken bana inanın efendim.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Benim için zaten kalıntı topladığını biliyorum... ama bu eğlenceli etkinliği tekrarlamak istersen daha fazlası her zaman işime yarar.$B$BYeniden o kadar yüksek bir karşılık sunamasam da yaptığın hizmeti kulakları olan tüm goblin dostlarıma seve seve anlatırım.$B$Bİnan bana $gbeyefendi:hanımefendi;, bu goblinlerin kulakları oldukça büyüktür.",
+        "55b24e8eef2f4e437bf1": "Benim için zaten kalıntı topladığını biliyorum... ama bu eğlenceli etkinliği tekrarlamak istersen daha fazlası her zaman işime yarar.$B$BYeniden o kadar yüksek bir karşılık sunamasam da yaptığın hizmeti kulakları olan tüm goblin dostlarıma seve seve anlatırım.$B$Bİnan bana $gbeyefendi:hanımefendi;, bu goblinlerin kulakları oldukça büyüktür.",
+        "770cede8c7701d679dd0": "Ah, tatlı mı tatlı kalıntılar biçiminde araştırma ve uygulamanın meyveleri. Yani incelerken tadına falan bakmıyorum.$B$BPek fazla.",
+        "bbfe4baa1b3f04e48de2": "Akıl almaz derecede harika, $N! Bana yine yardım ettin, bunun için teşekkür ederim.$B$BTeşekkürler!$B$BBu ödül alıştığından biraz az olsa da goblinler için yaptığın büyük işlerin Steamwheedle Karteli'nin güç salonlarında yankılandığından emin ol. Başka bir iş istersen benimle konuş!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -551,6 +988,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a1b27d5b5cb2b848b1aa432de29eea04627643098a45a20da598a25564a3a053"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -574,6 +1031,12 @@
     },
     "ukUA": {
       "description": "Знаю, ти вже збирав для мене залишки... але якщо тобі захочеться повторити цю веселу забаву на біс, мені завжди знадобиться ще трохи залишків.\n\nХоч я й не зможу знову запропонувати таку ж щедру винагороду, зате радо розповім про твої послуги всім моїм гоблінським друзям, які мають вуха.\n\nІ повірте, пане, вуха в цих гоблінів чималенькі.",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "Знаю, ти вже збирав для мене залишки... але якщо забажаєш повторити цю веселу справу, мені завжди потрібно більше.$B$BХоча я не можу знову запропонувати таку велику винагороду, я залюбки розповім про твою послугу всім своїм вухатим друзям-гоблінам.$B$BПовір, $gпане:пані;, коли я кажу, що в цих гоблінів дуже великі вуха.",
+        "55b24e8eef2f4e437bf1": "Знаю, ти вже збирав для мене залишки... але якщо забажаєш повторити цю веселу справу, мені завжди потрібно більше.$B$BХоча я не можу знову запропонувати таку велику винагороду, я залюбки розповім про твою послугу всім своїм вухатим друзям-гоблінам.$B$BПовір, $gпане:пані;, коли я кажу, що в цих гоблінів дуже великі вуха.",
+        "770cede8c7701d679dd0": "Ах, плоди дослідження й застосування у вигляді солодких, солодких залишків. Тобто я ж не куштую їх під час вивчення.$B$BНадто часто.",
+        "bbfe4baa1b3f04e48de2": "Неймовірно фантастично, $N! Ти знову допоміг мені, і я за це дякую.$B$BДякую!$B$BХоча ця платня може бути меншою, ніж ти звик, знай: твої великі справи для гоблінів лунають у владних залах картелю Хитромудрів. Якщо шукаєш ще якесь заняття, поговори зі мною!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -590,6 +1053,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a1b27d5b5cb2b848b1aa432de29eea04627643098a45a20da598a25564a3a053"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -615,6 +1098,12 @@
     },
     "zhCN": {
       "description": "我知道你为我收集了一些微缩残渣……如果你想要找一份全职工作的话，我想我一直都会需要这种残渣的。\n\n虽然我无法付出足够的报酬，但是我很乐意让我的地精朋友们都了解你这个伟大的{race}{class}，地精之友！\n\n相信我，先生，地精们的耳朵都是很灵验的……",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "我知道你为我收集了一些微缩残渣……如果你想要找一份全职工作的话，我想我一直都会需要这种残渣的。\n\n虽然我无法付出足够的报酬，但是我很乐意让我的地精朋友们都了解你这个伟大的$r$c，地精之友！\n\n相信我，先生，地精们的耳朵都是很灵验的……",
+        "55b24e8eef2f4e437bf1": "我知道你为我收集了一些微缩残渣……如果你想要找一份全职工作的话，我想我一直都会需要这种残渣的。\n\n虽然我无法付出足够的报酬，但是我很乐意让我的地精朋友们都了解你这个伟大的$r$c，地精之友！\n\n相信我，女士，地精们的耳朵都是很灵验的……",
+        "770cede8c7701d679dd0": "啊，微缩残渣，甜蜜的结晶!好吧，老实说，我不会在进行研究的时候尝它的味道。\n\n基本不会……",
+        "bbfe4baa1b3f04e48de2": "实在是太棒了，$N!你又帮了我的忙，谢谢你。\n\n非常感谢!\n\n也许我给的报酬比不上你从别人那里得到的，但是你在热砂企业哥布林社群中的声望将大大提升。如果你还有什麽事，尽管找我说就好了!\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -630,6 +1119,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -652,6 +1165,12 @@
     },
     "zhTW": {
       "description": "我知道你為我收集了一些微縮殘渣……如果你想要找一份全職工作的話，我想我一直都會需要這種殘渣的。\n\n雖然我無法付出足夠的報酬，但是我很樂意讓我的哥布林朋友們都瞭解你這個偉大的{race}{class}，哥布林之友！\n\n相信我，先生，哥布林的耳朵都很靈敏……",
+      "dialogue": {
+        "48b0fbf36fa99abecd5d": "我知道你為我收集了一些微縮殘渣……如果你想要找一份全職工作的話，我想我一直都會需要這種殘渣的。\n\n雖然我無法付出足夠的報酬，但是我很樂意讓我的地精朋友們都瞭解你這個偉大的$r$c，地精之友！\n\n相信我，先生，地精們的耳朵都是很靈驗的……",
+        "55b24e8eef2f4e437bf1": "我知道你為我收集了一些微縮殘渣……如果你想要找一份全職工作的話，我想我一直都會需要這種殘渣的。\n\n雖然我無法付出足夠的報酬，但是我很樂意讓我的地精朋友們都瞭解你這個偉大的$r$c，地精之友！\n\n相信我，女士，地精們的耳朵都是很靈驗的……",
+        "770cede8c7701d679dd0": "啊，微縮殘渣，甜蜜的結晶!好吧，老實說，我不會在進行研究的時候嘗它的味道。\n\n基本不會……",
+        "bbfe4baa1b3f04e48de2": "實在是太棒了，$N!你又幫了我的忙，謝謝你。\n\n非常感謝!\n\n也許我給的報酬比不上你從別人那裏得到的，但是你在熱砂企業哥布爾社羣中的聲望將大大提升。如果你還有什麼事，儘管找我說就好了!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -667,6 +1186,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.48b0fbf36fa99abecd5d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.55b24e8eef2f4e437bf1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.770cede8c7701d679dd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.bbfe4baa1b3f04e48de2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

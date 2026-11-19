@@ -1,8 +1,36 @@
 {
   "areaId": 1584,
+  "dialogueContexts": {
+    "08bf4aca0aa64973fd8b": {
+      "lineId": "q:4121:progress",
+      "npcId": 9080,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "12eb0206bc8e1bb2404a": {
+      "lineId": "q:4121:accept",
+      "npcId": 9520,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "34b0bea87da3ab2ac940": {
+      "lineId": "q:4121:complete",
+      "npcId": 9080,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Opravdu věříš, že se mnou jako zajatcem dorazíš na místo schůzky? Skutečně očekáváš, že vtrhneš do silně opevněné pevnosti Blackrocku, uneseš jejich cenný klenot a na svou přítomnost přitom nikoho ani nic neupozorníš?\n\nČeká tě zkáza!",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Převezmu tu zrádnou špínu, $N.",
+        "12eb0206bc8e1bb2404a": "Opravdu věříš, že se dostaneš na místo setkání se mnou v zajetí? Skutečně jsi čekal, že vnikneš do silně opevněné pevnosti Blackrocku a zajmeš jejich cenného spojence, aniž by si někdo nebo něco všimlo tvé přítomnosti?$B$BBudeš zničen!\n",
+        "34b0bea87da3ab2ac940": "Tvé hrdinské činy nezůstanou bez uznání, $N. Zasloužíš si tuto poctu. Vojevůdce s tebou nyní promluví o závěrečném úkolu."
+      },
       "eventObjectiveLabel": "Převoz vězně",
       "objectiveLines": [
         {
@@ -25,6 +53,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b220d245c1edc3fb87273c5f274d66ffc7bec4f3355d91b737f49fb5419b53d6"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -61,6 +104,11 @@
     },
     "daDK": {
       "description": "Tror du virkelig, at du vil nå frem til dit mødested med mig som fange? Forventede du virkelig at bryde ind i en stærkt befæstet Blackrock-fæstning og fange en af deres værdifulde personer uden at advare nogen eller noget om din tilstedeværelse?\n\nDu vil blive tilintetgjort!\r\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Jeg tager mig af dette forræderiske udskud, $N.",
+        "12eb0206bc8e1bb2404a": "Tror du virkelig, at du når frem til mødestedet med mig som fange? Forventede du virkelig at trænge ind i en stærkt befæstet Blackrock-fæstning og fange en værdifuld person uden at nogen eller noget opdagede dig?$B$BDu vil blive tilintetgjort!\n",
+        "34b0bea87da3ab2ac940": "Dine heltegerninger vil ikke gå ubemærket hen, $N. Du har fortjent denne hyldest. Krigsherren vil nu tale med dig om den sidste mission."
+      },
       "eventObjectiveLabel": "Fangetransport",
       "objectiveLines": [
         {
@@ -83,6 +131,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b220d245c1edc3fb87273c5f274d66ffc7bec4f3355d91b737f49fb5419b53d6"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -117,6 +180,11 @@
     },
     "deDE": {
       "description": "Glaubt Ihr wirklich, dass Ihr es mit mir als Gefangenem zum vereinbarten Treffpunkt schafft? Habt Ihr wirklich gedacht, Ihr könntet in eine schwer bewachte Festung der Blackrock eindringen und völlig unbemerkt ihren wertvollsten Besitz entführen?\n\nMan wird Euch vernichten!",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Ich übernehme diesen dreckigen Verräter, $N. ",
+        "12eb0206bc8e1bb2404a": "Glaubt Ihr wirklich, dass Ihr es mit mir als Gefangenem zum vereinbarten Treffpunkt schafft? Habt Ihr wirklich gedacht, Ihr könntet in eine schwer bewachte Festung der Blackrock eindringen und völlig unbemerkt ihren wertvollsten Besitz entführen?\n\nMan wird Euch vernichten!",
+        "34b0bea87da3ab2ac940": "Eure Heldentaten sollen nicht unbeachtet bleiben, $N. Diesen Tribut habt Ihr Euch verdient. Der Kriegsherr wird jetzt mit Euch über die letzte Aufgabe sprechen. "
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -138,6 +206,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -171,6 +257,11 @@
     },
     "enUS": {
       "description": "Do you truly believe that you will make it to your rendezvous point with me in custody? You actually expected to break into a heavily fortified Blackrock fortress to capture a prized asset of theirs without alerting anyone or anything to your presence?\n\nYou will be destroyed!\r\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "I will take this traitorous filth, $N.",
+        "12eb0206bc8e1bb2404a": "Do you truly believe that you will make it to your rendezvous point with me in custody? You actually expected to break into a heavily fortified Blackrock fortress to capture a prized asset of theirs without alerting anyone or anything to your presence?$B$BYou will be destroyed!\n",
+        "34b0bea87da3ab2ac940": "Your heroics will not go unrecognized, $N. You have earned this tribute. The Warlord will speak with you now in regards to the final mission."
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -192,6 +283,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -226,6 +335,11 @@
     },
     "esES": {
       "description": "¿De veras crees que llegarás a tu cita teniendo que vigilarme? ¿Esperabas realmente introducirte en una fortaleza Roca Negra fuertemente vigilada y capturar un valioso trofeo sin que nadie se percatara de nada, o advirtiera tu presencia?\n\n¡Te aplastarán!",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Me llevaré a esta escoria traidora, $n.",
+        "12eb0206bc8e1bb2404a": "¿De veras crees que llegarás a tu cita teniendo que vigilarme? ¿Esperabas realmente introducirte en una fortaleza Roca Negra fuertemente vigilada y capturar un valioso trofeo sin que nadie se percatara de nada, o advirtiera tu presencia?\n\n¡Te aplastarán!",
+        "34b0bea87da3ab2ac940": "Tus proezas no se quedarán sin reconocimiento, $n. Te has ganado este tributo. El Señor de la Guerra hablará contigo respecto a la misión final."
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -247,6 +361,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -280,6 +412,11 @@
     },
     "esMX": {
       "description": "¿De veras crees que llegarás a tu cita teniendo que vigilarme? ¿Esperabas realmente introducirte en una fortaleza Roca Negra fuertemente vigilada y capturar un valioso trofeo sin que nadie se percatara de nada, o advirtiera tu presencia?\n\n¡Te aplastarán!\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Me llevaré a esta escoria traidora, $n.",
+        "12eb0206bc8e1bb2404a": "¿De veras crees que llegarás a tu cita teniendo que vigilarme? ¿Esperabas realmente introducirte en una fortaleza Roca Negra fuertemente vigilada y capturar un valioso trofeo sin que nadie se percatara de nada, o advirtiera tu presencia?\n\n¡Te aplastarán!|n",
+        "34b0bea87da3ab2ac940": "Tus proezas no se quedarán sin reconocimiento, $n. Te has ganado este tributo. El Señor de la Guerra hablará contigo respecto a la misión final."
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -301,6 +438,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -334,6 +489,11 @@
     },
     "frFR": {
       "description": "Croyez-vous réellement que vous parviendrez à rejoindre le point de rendez-vous alors que vous me retenez captif ? Vous pensiez pouvoir pénétrer la Forteresse de Rochenoire et y capturer quelqu'un qui a une grande valeur à leurs yeux sans que rien ni personne ne le sache ?\n\nVous allez être tué.",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Je vais m'occuper de ce traître véreux, $N. ",
+        "12eb0206bc8e1bb2404a": "Croyez-vous réellement que vous parviendrez à rejoindre le point de rendez-vous alors que vous me retenez captif ? Vous pensiez pouvoir pénétrer la Forteresse de Blackrock et y capturer quelqu'un qui a une grande valeur à leurs yeux sans que rien ni personne ne le sache ?\n\nVous allez être tué.",
+        "34b0bea87da3ab2ac940": "Vos actes héroïques ne seront pas oubliés, $N. Vous avez gagné ce tribut. Le Chef de guerre va vous parler à présent de la dernière mission. "
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -355,6 +515,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -388,6 +566,11 @@
     },
     "hrHR": {
       "description": "Zar doista vjeruješ da ćeš stići do mjesta susreta dok sam ti zarobljenik? Zar si stvarno očekivao da ćeš provaliti u teško utvrđenu tvrđavu Blackrocka i zarobiti nekoga tko im je toliko vrijedan, a da nikoga i ništa ne upozoriš na svoju prisutnost?\n\nBit ćeš uništen!\r\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Preuzet ću ovaj izdajnički ološ, $N.",
+        "12eb0206bc8e1bb2404a": "Zar doista vjeruješ da ćeš stići na mjesto sastanka držeći me u zatočeništvu? Zaista si očekivao da ćeš provaliti u snažno utvrđenu tvrđavu Blackrocka i zarobiti njihovu vrijednu osobu, a da nitko i ništa ne primijeti tvoju prisutnost?$B$BBit ćeš uništen!\n",
+        "34b0bea87da3ab2ac940": "Tvoja junačka djela neće proći nezapaženo, $N. Zaslužio si ovu počast. Vojskovođa će sada razgovarati s tobom o posljednjoj misiji."
+      },
       "eventObjectiveLabel": "Prijevoz zarobljenika",
       "objectiveLines": [
         {
@@ -410,6 +593,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b220d245c1edc3fb87273c5f274d66ffc7bec4f3355d91b737f49fb5419b53d6"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -444,6 +642,11 @@
     },
     "itIT": {
       "description": "Credi davvero di raggiungere il punto d'incontro con me in custodia? Ti aspettavi sul serio di entrare in una fortezza Roccianera pesantemente fortificata e catturare una delle loro risorse più preziose senza che nessuno e niente si accorgesse della tua presenza?\n\nVerrai annientato!",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Questo lurido traditore lo prendo io, $N.",
+        "12eb0206bc8e1bb2404a": "Credi davvero di raggiungere il punto d’incontro tenendomi prigioniero? Pensavi di penetrare in una fortezza dei Roccianera pesantemente difesa e catturare una loro preziosa risorsa senza attirare l’attenzione di nessuno?$B$BSarai distrutto!\n",
+        "34b0bea87da3ab2ac940": "Le tue gesta eroiche non passeranno inosservate, $N. Hai meritato questo tributo. Il Signore della Guerra ti parlerà ora dell’ultima missione."
+      },
       "eventObjectiveLabel": "Trasporto del prigioniero",
       "objectiveLines": [
         {
@@ -466,6 +669,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b220d245c1edc3fb87273c5f274d66ffc7bec4f3355d91b737f49fb5419b53d6"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -500,6 +719,11 @@
     },
     "koKR": {
       "description": "정말 나를 포박한 채로 집결지까지 갈 수 있을 것 같나? 네가 정말 경비가 삼엄한 검은바위 요새로 침입해서 그 누구에게도 들키지 않고 그들의 귀중한 정보 제공자를 납치해 갈 수 있을 거 같나?\n\n그러기도 전에 아마 네가 죽게 될 거다!",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "이 쓰레기 같은 물건은 내가 가져 가지.",
+        "12eb0206bc8e1bb2404a": "정말 나를 포박한 채로 집결지까지 갈 수 있을 것 같나? 네가 정말 경비가 삼엄한 검은바위 요새로 침입해서 그 누구에게도 들키지 않고 그들의 귀중한 정보 제공자를 납치해 갈 수 있을 거 같나?\n\n그러기도 전에 아마 네가 죽게 될 거다!",
+        "34b0bea87da3ab2ac940": "자네의 영웅적인 행위는 널리 알려지게 될 걸세. 자네는 충분히 이 보상을 받을 자격이 있군. 이제 장군께서 마지막 임무에 대해 자네와 대화하고 싶어하실 걸세."
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -521,6 +745,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -554,6 +796,11 @@
     },
     "plPL": {
       "description": "Naprawdę wierzysz, że dotrzesz ze mną jako więźniem do miejsca spotkania? Spodziewasz się włamać do silnie ufortyfikowanej twierdzy Blackrock i schwytać kogoś tak cennego dla nich, nie zwracając niczyjej uwagi?\n\nZginiesz!\r\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Zajmę się tym zdradzieckim ścierwem, $N.",
+        "12eb0206bc8e1bb2404a": "Naprawdę wierzysz, że dotrzesz na miejsce spotkania, trzymając mnie w niewoli? Naprawdę spodziewasz się wedrzeć do silnie umocnionej twierdzy Blackrock i schwytać cenną dla nich osobę, nie zwracając niczyjej uwagi?$B$BZostaniesz zniszczony!\n",
+        "34b0bea87da3ab2ac940": "Twoje bohaterskie czyny nie pozostaną bez uznania, $N. Zasługujesz na tę nagrodę. Wódz porozmawia teraz z tobą o ostatniej misji."
+      },
       "eventObjectiveLabel": "Transport więźnia",
       "objectiveLines": [
         {
@@ -576,6 +823,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b220d245c1edc3fb87273c5f274d66ffc7bec4f3355d91b737f49fb5419b53d6"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -610,6 +872,11 @@
     },
     "ptBR": {
       "description": "Você achou mesmo que chegaria a um ponto de encontro sob os meus cuidados? Acreditou de verdade que invadiria uma fortaleza Rocha Negra altamente defendida a fim de capturar algo de valor sem que ninguém, mas ninguém mesmo, notasse sua presença?\n\nEste será seu fim!\r\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Eu vou levar esse lixo traiçoeiro, $N.",
+        "12eb0206bc8e1bb2404a": "Você achou mesmo que chegaria a um ponto de encontro sob os meus cuidados? Acreditou de verdade que invadiria uma fortaleza Rocha Negra altamente defendida a fim de capturar algo de valor sem que ninguém, mas ninguém mesmo, notasse sua presença?\n\nEste será seu fim!",
+        "34b0bea87da3ab2ac940": "Seus feitos heroicos não serão esquecidos, $N. Você merece este tributo. O Senhora da Guerra falará com você agora sobre a última missão."
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -631,6 +898,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -664,6 +949,11 @@
     },
     "ruRU": {
       "description": "Ты в самом деле надеешься добраться до точки встречи, держа меня в плену? Ты и правда рассчитываешь, ворвавшись в крепость Черной горы и похитив главную ценность клана, удрать незамеченным?\n\nДа тебя в порошок сотрут!",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Я возьму эту предательскую грязь, $N.",
+        "12eb0206bc8e1bb2404a": "Ты в самом деле надеешься добраться до точки встречи, держа меня в плену? Ты и правда рассчитываешь, ворвавшись в крепость Черной горы и похитив главную ценность клана, удрать незамеченным?\n\nДа тебя в порошок сотрут!",
+        "34b0bea87da3ab2ac940": "Отличная работа, $N. Ты заслуживаешь уважение. Военачальник хочет поговорить с тобой."
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -685,6 +975,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -718,6 +1026,11 @@
     },
     "svSE": {
       "description": "Tror du verkligen att du når mötesplatsen med mig som fånge? Trodde du att du kunde bryta dig in i en hårt befäst Blackrockfästning och fånga en värdefull tillgång utan att någon eller något märkte din närvaro?\n\nDu kommer att förgöras!\r\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Jag tar hand om detta förrädiska avskum, $N.",
+        "12eb0206bc8e1bb2404a": "Tror du verkligen att du når mötesplatsen med mig som fånge? Förväntade du dig att tränga in i en starkt befäst Blackrock-fästning och fånga en av deras värdefulla tillgångar utan att någon eller något märkte dig?$B$BDu kommer att förintas!\n",
+        "34b0bea87da3ab2ac940": "Dina hjältedåd ska inte gå obemärkta förbi, $N. Du har förtjänat denna hyllning. Krigsherren ska nu tala med dig om det sista uppdraget."
+      },
       "eventObjectiveLabel": "Fångtransport",
       "objectiveLines": [
         {
@@ -740,6 +1053,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b220d245c1edc3fb87273c5f274d66ffc7bec4f3355d91b737f49fb5419b53d6"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -774,6 +1102,11 @@
     },
     "trTR": {
       "description": "Beni tutsak olarak yanında götürürken buluşma noktasına ulaşacağına gerçekten inanıyor musun? Kimseye veya hiçbir şeye varlığını fark ettirmeden, sıkı tahkim edilmiş bir Blackrock kalesine girip değerli bir adamlarını yakalamayı mı bekliyordun?\n\nYok edileceksin!\r\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Bu hain pisliği ben alacağım, $N.",
+        "12eb0206bc8e1bb2404a": "Beni esir tutarak buluşma noktasına varacağına gerçekten inanıyor musun? Sıkı korunan bir Blackrock kalesine girip değerli bir adamlarını, varlığını kimseye fark ettirmeden yakalayabileceğini mi sandın?$B$BYok edileceksin!\n",
+        "34b0bea87da3ab2ac940": "Kahramanlıkların karşılıksız kalmayacak, $N. Bu ödülü hak ettin. Savaş Lordu şimdi son görev hakkında seninle konuşacak."
+      },
       "eventObjectiveLabel": "Esir nakli",
       "objectiveLines": [
         {
@@ -796,6 +1129,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b220d245c1edc3fb87273c5f274d66ffc7bec4f3355d91b737f49fb5419b53d6"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -830,6 +1178,11 @@
     },
     "ukUA": {
       "description": "Ти справді віриш, що дістанешся до місця зустрічі, тримаючи мене під вартою? Ти й справді сподівався вдертися до добре укріпленої фортеці Чорнокаменю, щоб захопити їхню цінну особу, і ніяк не видати своєї присутності?\n\nТебе знищать!\r\n",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "Я заберу цю зрадницьку наволоч, $N.",
+        "12eb0206bc8e1bb2404a": "Ти справді віриш, що дістанешся місця зустрічі, тримаючи мене в полоні? Невже ти очікував проникнути в добре укріплену фортецю Чорної гори й захопити цінного бранця, не привернувши нічиєї уваги?$B$BТебе знищать!\n",
+        "34b0bea87da3ab2ac940": "Твої подвиги не залишаться без визнання, $N. Ти заслужив цю нагороду. Воєначальник поговорить із тобою про останнє завдання."
+      },
       "eventObjectiveLabel": "Перевезення полоненого",
       "objectiveLines": [
         {
@@ -852,6 +1205,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b220d245c1edc3fb87273c5f274d66ffc7bec4f3355d91b737f49fb5419b53d6"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -888,6 +1256,11 @@
     },
     "zhCN": {
       "description": "你真的以为可以把我押出去吗？你难道以为你能穿越戒备森严的黑石要塞，而且还能神不知鬼不觉地带走一个对他们来说如此重要的人吗？\n\n你死定了！",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "我会照顾这个叛徒的，$N。",
+        "12eb0206bc8e1bb2404a": "你真的以为可以把我押出去吗？你难道以为你能穿越戒备森严的黑石要塞，而且还能神不知鬼不觉地带走一个对他们来说如此重要的人吗？\n\n你死定了！",
+        "34b0bea87da3ab2ac940": "你的英雄事蹟决不会被忽视，$N。你理应得到这些奖励。另外，上面还有最後一个任务要交给你。\n"
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -909,6 +1282,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -942,6 +1333,11 @@
     },
     "zhTW": {
       "description": "你真的以為可以把我押出去嗎？你難道以為你能穿越戒備森嚴的黑石要塞，而且還能神不知鬼不覺地帶走一個對他們來說如此重要的人嗎？\n\n你死定了！",
+      "dialogue": {
+        "08bf4aca0aa64973fd8b": "我會照顧這個叛徒的，$N。",
+        "12eb0206bc8e1bb2404a": "你真的以為可以把我押出去嗎？你難道以為你能穿越戒備森嚴的黑石要塞，而且還能神不知鬼不覺地帶走一個對他們來說如此重要的人嗎？\n\n你死定了！",
+        "34b0bea87da3ab2ac940": "你的英雄事蹟決不會被忽視，$N。你理應得到這些獎勵。另外，上面還有最後一個任務要交給你。"
+      },
       "eventObjectiveLabel": "Prisoner Transport",
       "objectiveLines": [
         {
@@ -963,6 +1359,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.08bf4aca0aa64973fd8b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.12eb0206bc8e1bb2404a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.34b0bea87da3ab2ac940": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

@@ -1,7 +1,91 @@
 {
+  "dialogueContexts": {
+    "050d31425f57d04f4835": {
+      "lineId": "q:9388:complete",
+      "npcId": 16788,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "44bbfd8e314044c8e641": {
+      "lineId": "q:9388:complete~dwarf-male-standard",
+      "npcId": 16788,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "5a34855480c566b69c7e": {
+      "lineId": "q:9388:complete~human-female-standard",
+      "npcId": 16788,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "6f12bf2876a66a882c62": {
+      "lineId": "q:9388:progress",
+      "npcId": 16788,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "7094c32aad0f6c1161e0": {
+      "lineId": "q:9388:progress~dwarf-male-standard",
+      "npcId": 16788,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "76e9989873701546d5c9": {
+      "lineId": "q:9388:accept~scourge-male-dark",
+      "npcId": 16818,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "80b76472457a02aa8731": {
+      "lineId": "q:9388:accept",
+      "npcId": 16817,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "a5fe8a622426209298fe": {
+      "lineId": "q:9388:progress~human-female-standard",
+      "npcId": 16788,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "cb9fb2282cffa2f53411": {
+      "lineId": "q:9388:progress~troll-male-shaman",
+      "npcId": 16788,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "ee76f7a6a7e0232e78ae": {
+      "lineId": "q:9388:complete~troll-male-shaman",
+      "npcId": 16788,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Dnes hoří po celém světě mnoho plamenů, {name}. Nejošemetnější na udržování jsou ty, které hoří zeleně; bez dohledu dlouho nevydrží. Dohlédni pro naši Strážkyni plamene, aby smaragdové ohně na Kalimdoru stále hořely, platí?\n\nNajdeš je poblíž Ratchetu v Barrens, blízko Master's Glaive v Darkshore, v lesích Ashenvale u mostu poblíž Silverwing Outpost a poblíž cesty k Windshear Crag podél hlavní silnice v pohoří Stonetalon.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ach, stále tedy hoří. To jsem rád; nebylo by dobré, aby ty ohně vyhasly předčasně. Dobrá práce, $n. Přijmi to s mým požehnáním.",
+        "44bbfd8e314044c8e641": "Ach, stále tedy hoří. To jsem rád; nebylo by dobré, aby ty ohně vyhasly předčasně. Dobrá práce, $n. Přijmi to s mým požehnáním.",
+        "5a34855480c566b69c7e": "Ach, stále tedy hoří. To jsem rád; nebylo by dobré, aby ty ohně vyhasly předčasně. Dobrá práce, $n. Přijmi to s mým požehnáním.",
+        "6f12bf2876a66a882c62": "Ohně nesmí zhasnout, dokud svátek neskončí!",
+        "7094c32aad0f6c1161e0": "Ohně nesmí zhasnout, dokud svátek neskončí!",
+        "76e9989873701546d5c9": "Dnes po celém světě hoří mnoho plamenů, $n. Nejobtížnější na údržbu jsou zelené ohně; bez dozoru dlouho nevydrží. Ujisti se pro našeho Strážce plamenů, že smaragdové ohně na Kalimdoru stále hoří.$b$bNajdeš je u Ratchetu v Barrens, nedaleko Master's Glaive v Darkshore, v lese Ashenvale u mostu poblíž Silverwing Outpost a u odbočky na Windshear Crag z hlavní cesty v horách Stonetalon.",
+        "80b76472457a02aa8731": "Dnes po celém světě hoří mnoho plamenů, $n. Nejobtížnější na údržbu jsou zelené ohně; bez dozoru dlouho nevydrží. Ujisti se pro našeho Strážce plamenů, že smaragdové ohně na Kalimdoru stále hoří.$b$bNajdeš je u Ratchetu v Barrens, nedaleko Master's Glaive v Darkshore, v lese Ashenvale u mostu poblíž Silverwing Outpost a u odbočky na Windshear Crag z hlavní cesty v horách Stonetalon.",
+        "a5fe8a622426209298fe": "Ohně nesmí zhasnout, dokud svátek neskončí!",
+        "cb9fb2282cffa2f53411": "Ohně nesmí zhasnout, dokud svátek neskončí!",
+        "ee76f7a6a7e0232e78ae": "Ach, stále tedy hoří. To jsem rád; nebylo by dobré, aby ty ohně vyhasly předčasně. Dobrá práce, $n. Přijmi to s mým požehnáním."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -33,6 +117,56 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e0d6014bc816146e879352648113d1221ca1568fe37a634b24c6b64eb678eaed"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -73,6 +207,18 @@
     },
     "daDK": {
       "description": "Der brænder mange flammer over hele verden i dag, {name}. De vanskeligste bål at passe er dem, der brænder grønt; de holder sig ikke tændt længe uden opsyn. Sørg for, at smaragdbålene stadig brænder på Kalimdor for vores Flamekeeper, ja?\n\nDu finder dem nær Ratchet i Barrens, tæt ved Master's Glaive i Darkshore, i Ashenvales skov ved broen nær Silverwing Outpost og nær vejen til Windshear Crag langs hovedvejen i Stonetalon Mountains.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ah, så de brænder stadig. Det glæder mig; de må ikke slukkes før tiden. Godt klaret, $n. Tag dette med min velsignelse.",
+        "44bbfd8e314044c8e641": "Ah, så de brænder stadig. Det glæder mig; de må ikke slukkes før tiden. Godt klaret, $n. Tag dette med min velsignelse.",
+        "5a34855480c566b69c7e": "Ah, så de brænder stadig. Det glæder mig; de må ikke slukkes før tiden. Godt klaret, $n. Tag dette med min velsignelse.",
+        "6f12bf2876a66a882c62": "Ildene må ikke dø, før festivalen er slut!",
+        "7094c32aad0f6c1161e0": "Ildene må ikke dø, før festivalen er slut!",
+        "76e9989873701546d5c9": "Mange flammer brænder over hele verden i dag, $n. De sværeste at passe er de grønne; de holder sig ikke tændt længe uden opsyn. Sørg for, at smaragdbålene på Kalimdor stadig brænder for vores flammevogter.$b$bDu finder dem ved Ratchet i Barrens, nær Master's Glaive i Darkshore, i Ashenvales skov ved broen nær Silverwing Outpost og ved vejen til Windshear Crag langs hovedvejen i Stonetalon Mountains.",
+        "80b76472457a02aa8731": "Mange flammer brænder over hele verden i dag, $n. De sværeste at passe er de grønne; de holder sig ikke tændt længe uden opsyn. Sørg for, at smaragdbålene på Kalimdor stadig brænder for vores flammevogter.$b$bDu finder dem ved Ratchet i Barrens, nær Master's Glaive i Darkshore, i Ashenvales skov ved broen nær Silverwing Outpost og ved vejen til Windshear Crag langs hovedvejen i Stonetalon Mountains.",
+        "a5fe8a622426209298fe": "Ildene må ikke dø, før festivalen er slut!",
+        "cb9fb2282cffa2f53411": "Ildene må ikke dø, før festivalen er slut!",
+        "ee76f7a6a7e0232e78ae": "Ah, så de brænder stadig. Det glæder mig; de må ikke slukkes før tiden. Godt klaret, $n. Tag dette med min velsignelse."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -104,6 +250,56 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e0d6014bc816146e879352648113d1221ca1568fe37a634b24c6b64eb678eaed"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -142,6 +338,18 @@
     },
     "deDE": {
       "description": "Heute lodern zahlreiche Flammen in der Welt, {name}. Die Feuer, die am schwierigsten zu unterhalten sind, leuchten grün; werden sie nicht ständig beaufsichtigt, brennen sie nicht lange. Versichert Euch für unseren Flammenbewahrer, dass die Smaragdfeuer in Kalimdor auch weiterhin lodern, eh?\n\nIhr findet sie in der Nähe von Ratchet im Brachland, unweit der Meistergleve in Dunkelküste, im Wald von Ashenvale bei der Brücke nahe des Außenpostens der Silverwing und entlang der Hauptstraße im Steinkrallengebirge, in der Nähe der Straße, die zur Scherwindklippe führt.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ahhh, sie brennen also noch. Das freut mich; es wäre nicht gut, wenn die Feuer vorzeitig erlöschen würden. Ihr habt gute Arbeit geleistet, $N. Nehmt dies mit meinem Segen. ",
+        "44bbfd8e314044c8e641": "Ahhh, sie brennen also noch. Das freut mich; es wäre nicht gut, wenn die Feuer vorzeitig erlöschen würden. Ihr habt gute Arbeit geleistet, $N. Nehmt dies mit meinem Segen. ",
+        "5a34855480c566b69c7e": "Ahhh, sie brennen also noch. Das freut mich; es wäre nicht gut, wenn die Feuer vorzeitig erlöschen würden. Ihr habt gute Arbeit geleistet, $N. Nehmt dies mit meinem Segen. ",
+        "6f12bf2876a66a882c62": "Die Feuer können erst erlöschen, wenn das Festival vorbei ist!",
+        "7094c32aad0f6c1161e0": "Die Feuer können erst erlöschen, wenn das Festival vorbei ist!",
+        "76e9989873701546d5c9": "Heute lodern zahlreiche Flammen in der Welt, $N. Die Feuer, die am schwierigsten zu unterhalten sind, leuchten grün; werden sie nicht ständig beaufsichtigt, brennen sie nicht lange. Versichert Euch für unseren Flammenbewahrer, dass die Smaragdfeuer in Kalimdor auch weiterhin lodern, eh?\n\nIhr findet sie in der Nähe von Ratchet im Brachland, unweit der Meistergleve in Dunkelküste, im Wald von Ashenvale bei der Brücke nahe des Außenpostens der Silverwing und entlang der Hauptstraße im Steinkrallengebirge, in der Nähe der Straße, die zur Scherwindklippe führt.",
+        "80b76472457a02aa8731": "Heute lodern zahlreiche Flammen in der Welt, $N. Die Feuer, die am schwierigsten zu unterhalten sind, leuchten grün; werden sie nicht ständig beaufsichtigt, brennen sie nicht lange. Versichert Euch für unseren Flammenbewahrer, dass die Smaragdfeuer in Kalimdor auch weiterhin lodern, eh?\n\nIhr findet sie in der Nähe von Ratchet im Brachland, unweit der Meistergleve in Dunkelküste, im Wald von Ashenvale bei der Brücke nahe des Außenpostens der Silverwing und entlang der Hauptstraße im Steinkrallengebirge, in der Nähe der Straße, die zur Scherwindklippe führt.",
+        "a5fe8a622426209298fe": "Die Feuer können erst erlöschen, wenn das Festival vorbei ist!",
+        "cb9fb2282cffa2f53411": "Die Feuer können erst erlöschen, wenn das Festival vorbei ist!",
+        "ee76f7a6a7e0232e78ae": "Ahhh, sie brennen also noch. Das freut mich; es wäre nicht gut, wenn die Feuer vorzeitig erlöschen würden. Ihr habt gute Arbeit geleistet, $N. Nehmt dies mit meinem Segen. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +380,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -212,6 +480,18 @@
     },
     "enUS": {
       "description": "There are many flames burning throughout the world today, {name}. The trickiest fires to tend are those that burn green; they do not stay lit long without supervision. Make certain the emerald fires still burn on Kalimdor for our Flamekeeper, eh?\n\nYou will find them near Ratchet in the Barrens, close to the Master's Glaive in Darkshore, in the forest of Ashenvale by the bridge near Silverwing Outpost, and near the road to Windshear Crag along the main road in Stonetalon Mountains.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ahhh, so they do still burn. I am glad; it would not do for those fires to burn out before their time. You have done well, $n. Take this with my blessing.",
+        "44bbfd8e314044c8e641": "Ahhh, so they do still burn. I am glad; it would not do for those fires to burn out before their time. You have done well, $n. Take this with my blessing.",
+        "5a34855480c566b69c7e": "Ahhh, so they do still burn. I am glad; it would not do for those fires to burn out before their time. You have done well, $n. Take this with my blessing.",
+        "6f12bf2876a66a882c62": "The fires cannot die until the festival is done!",
+        "7094c32aad0f6c1161e0": "The fires cannot die until the festival is done!",
+        "76e9989873701546d5c9": "There are many flames burning throughout the world today, $n. The trickiest fires to tend are those that burn green; they do not stay lit long without supervision. Make certain the emerald fires still burn on Kalimdor for our Flamekeeper, eh?$b$bYou will find them near Ratchet in the Barrens, close to the Master's Glaive in Darkshore, in the forest of Ashenvale by the bridge near Silverwing Outpost, and near the road to Windshear Crag along the main road in Stonetalon Mountains.",
+        "80b76472457a02aa8731": "There are many flames burning throughout the world today, $n. The trickiest fires to tend are those that burn green; they do not stay lit long without supervision. Make certain the emerald fires still burn on Kalimdor for our Flamekeeper, eh?$b$bYou will find them near Ratchet in the Barrens, close to the Master's Glaive in Darkshore, in the forest of Ashenvale by the bridge near Silverwing Outpost, and near the road to Windshear Crag along the main road in Stonetalon Mountains.",
+        "a5fe8a622426209298fe": "The fires cannot die until the festival is done!",
+        "cb9fb2282cffa2f53411": "The fires cannot die until the festival is done!",
+        "ee76f7a6a7e0232e78ae": "Ahhh, so they do still burn. I am glad; it would not do for those fires to burn out before their time. You have done well, $n. Take this with my blessing."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -242,6 +522,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -283,6 +623,18 @@
     },
     "esES": {
       "description": "Hoy hay muchas llamas ardiendo en el mundo, {name}. Las hogueras más difíciles de mantener son las verdes; hay que vigilarlas constantemente para que no se apaguen. Comprueba si siguen ardiendo las hogueras esmeralda en Kalimdor, por favor.\n\nEstán en Los Baldíos cerca de Trinquete, en Costa Oscura cerca de El Glaive del Maestro, en el bosque de Vallefresno junto al puente cerca de la Avanzada Ala de Plata y cerca del camino a Risco Cortaviento, siguiendo la ruta principal de Sierra Espolón.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ahhh, entonces todavía se queman.  Me alegro;  no sería bueno que esos fuegos se extinguieran antes de tiempo.  Lo has hecho bien, $n.  Toma esto con mi bendición.",
+        "44bbfd8e314044c8e641": "Ahhh, entonces todavía se queman.  Me alegro;  no sería bueno que esos fuegos se extinguieran antes de tiempo.  Lo has hecho bien, $n.  Toma esto con mi bendición.",
+        "5a34855480c566b69c7e": "Ahhh, entonces todavía se queman.  Me alegro;  no sería bueno que esos fuegos se extinguieran antes de tiempo.  Lo has hecho bien, $n.  Toma esto con mi bendición.",
+        "6f12bf2876a66a882c62": "¡Los fuegos no pueden apagarse hasta que termine el festival!",
+        "7094c32aad0f6c1161e0": "¡Los fuegos no pueden apagarse hasta que termine el festival!",
+        "76e9989873701546d5c9": "Hoy hay muchas llamas ardiendo en el mundo, $n. Las hogueras más difíciles de mantener son las verdes; hay que vigilarlas constantemente para que no se apaguen. Comprueba si siguen ardiendo las hogueras esmeralda en Kalimdor, por favor.\n\nEstán en Los Baldíos cerca de Trinquete, en Costa Oscura cerca de El Glaive del Maestro, en el bosque de Vallefresno junto al puente cerca de la Avanzada Ala de Plata y cerca del camino a Risco Cortaviento, siguiendo la ruta principal de Sierra Espolón.",
+        "80b76472457a02aa8731": "Hoy hay muchas llamas ardiendo en el mundo, $n. Las hogueras más difíciles de mantener son las verdes; hay que vigilarlas constantemente para que no se apaguen. Comprueba si siguen ardiendo las hogueras esmeralda en Kalimdor, por favor.\n\nEstán en Los Baldíos cerca de Trinquete, en Costa Oscura cerca de El Glaive del Maestro, en el bosque de Vallefresno junto al puente cerca de la Avanzada Ala de Plata y cerca del camino a Risco Cortaviento, siguiendo la ruta principal de Sierra Espolón.",
+        "a5fe8a622426209298fe": "¡Los fuegos no pueden apagarse hasta que termine el festival!",
+        "cb9fb2282cffa2f53411": "¡Los fuegos no pueden apagarse hasta que termine el festival!",
+        "ee76f7a6a7e0232e78ae": "Ahhh, entonces todavía se queman.  Me alegro;  no sería bueno que esos fuegos se extinguieran antes de tiempo.  Lo has hecho bien, $n.  Toma esto con mi bendición."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -313,6 +665,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -353,6 +765,18 @@
     },
     "esMX": {
       "description": "Hoy hay muchas llamas ardiendo en el mundo, {name}. Las hogueras más difíciles de mantener son las verdes; hay que vigilarlas constantemente para que no se apaguen. Comprueba si siguen ardiendo las hogueras esmeraldas en Kalimdor, por favor.\n\nEstán en Los Baldíos cerca de Trinquete, en Costa Oscura cerca de La Espada del Maestro, en el bosque de Vallefresno junto al puente cerca de la Avanzada Ala de Plata y cerca del camino a Risco Cortaviento, siguiendo la ruta principal de Sierra Espolón.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ahhh, todavía arden. Me alegro; no sería bueno que esos fuegos se apagaran antes de tiempo. Lo has hecho bien, $n. Toma esto con mi bendición.",
+        "44bbfd8e314044c8e641": "Ahhh, todavía arden. Me alegro; no sería bueno que esos fuegos se apagaran antes de tiempo. Lo has hecho bien, $n. Toma esto con mi bendición.",
+        "5a34855480c566b69c7e": "Ahhh, todavía arden. Me alegro; no sería bueno que esos fuegos se apagaran antes de tiempo. Lo has hecho bien, $n. Toma esto con mi bendición.",
+        "6f12bf2876a66a882c62": "¡Los fuegos no pueden morir hasta que termine el festival!",
+        "7094c32aad0f6c1161e0": "¡Los fuegos no pueden morir hasta que termine el festival!",
+        "76e9989873701546d5c9": "Hoy hay muchas llamas ardiendo en el mundo, $n. Las hogueras más difíciles de mantener son las verdes; hay que vigilarlas constantemente para que no se apaguen. Comprueba si siguen ardiendo las hogueras esmeraldas en Kalimdor, por favor.\n\nEstán en Los Baldíos cerca de Trinquete, en Costa Oscura cerca de La Espada del Maestro, en el bosque de Vallefresno junto al puente cerca de la Avanzada Ala de Plata y cerca del camino a Risco Cortaviento, siguiendo la ruta principal de Sierra Espolón.",
+        "80b76472457a02aa8731": "Hoy hay muchas llamas ardiendo en el mundo, $n. Las hogueras más difíciles de mantener son las verdes; hay que vigilarlas constantemente para que no se apaguen. Comprueba si siguen ardiendo las hogueras esmeraldas en Kalimdor, por favor.\n\nEstán en Los Baldíos cerca de Trinquete, en Costa Oscura cerca de La Espada del Maestro, en el bosque de Vallefresno junto al puente cerca de la Avanzada Ala de Plata y cerca del camino a Risco Cortaviento, siguiendo la ruta principal de Sierra Espolón.",
+        "a5fe8a622426209298fe": "¡Los fuegos no pueden morir hasta que termine el festival!",
+        "cb9fb2282cffa2f53411": "¡Los fuegos no pueden morir hasta que termine el festival!",
+        "ee76f7a6a7e0232e78ae": "Ahhh, todavía arden. Me alegro; no sería bueno que esos fuegos se apagaran antes de tiempo. Lo has hecho bien, $n. Toma esto con mi bendición."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -383,6 +807,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -423,6 +907,18 @@
     },
     "frFR": {
       "description": "En ce jour, {name}, de nombreuses flammes brûlent de par le monde. Les plus délicates à entretenir sont vertes. Sans supervision, elles ne brûlent pas longtemps. Soyez gentil, faites en sorte que les feux d’émeraude continuent à brûler pour notre Gardien des flammes, d’accord ?\n\nVous les trouverez près de Ratchet dans les Tarides, non loin du Glaive du maître à Sombrivage, dans la forêt d’Ashenvale, à côté du pont de l’avant-poste d’Aile-argent, et près du chemin de la combe des Cisailles, le long de la grand-route des Serres-Rocheuses.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ahhh, ainsi, ils brûlent encore. C’est bien. Ils ne doivent pas s’éteindre avant leur temps. Vous avez bien agi, $N. Prenez ceci, avec ma bénédiction. ",
+        "44bbfd8e314044c8e641": "Ahhh, ainsi, ils brûlent encore. C’est bien. Ils ne doivent pas s’éteindre avant leur temps. Vous avez bien agi, $N. Prenez ceci, avec ma bénédiction. ",
+        "5a34855480c566b69c7e": "Ahhh, ainsi, ils brûlent encore. C’est bien. Ils ne doivent pas s’éteindre avant leur temps. Vous avez bien agi, $N. Prenez ceci, avec ma bénédiction. ",
+        "6f12bf2876a66a882c62": "Les feux ne peuvent pas s'éteindre tant que le festival n'est pas terminé !",
+        "7094c32aad0f6c1161e0": "Les feux ne peuvent pas s'éteindre tant que le festival n'est pas terminé !",
+        "76e9989873701546d5c9": "En ce jour, $n, de nombreuses flammes brûlent de par le monde. Les plus délicates à entretenir sont vertes. Sans supervision, elles ne brûlent pas longtemps. Soyez <gentil/gentille>, faites en sorte que les feux d’émeraude continuent à brûler pour notre Gardien des flammes, d’accord ?\n\nVous les trouverez près de Ratchet dans les Tarides, non loin du Glaive du maître à Sombrivage, dans la forêt d’Ashenvale, à côté du pont de l’avant-poste d’Aile-argent, et près du chemin de la combe des Cisailles, le long de la grand-route des Serres-Rocheuses.",
+        "80b76472457a02aa8731": "En ce jour, $n, de nombreuses flammes brûlent de par le monde. Les plus délicates à entretenir sont vertes. Sans supervision, elles ne brûlent pas longtemps. Soyez <gentil/gentille>, faites en sorte que les feux d’émeraude continuent à brûler pour notre Gardien des flammes, d’accord ?\n\nVous les trouverez près de Ratchet dans les Tarides, non loin du Glaive du maître à Sombrivage, dans la forêt d’Ashenvale, à côté du pont de l’avant-poste d’Aile-argent, et près du chemin de la combe des Cisailles, le long de la grand-route des Serres-Rocheuses.",
+        "a5fe8a622426209298fe": "Les feux ne peuvent pas s'éteindre tant que le festival n'est pas terminé !",
+        "cb9fb2282cffa2f53411": "Les feux ne peuvent pas s'éteindre tant que le festival n'est pas terminé !",
+        "ee76f7a6a7e0232e78ae": "Ahhh, ainsi, ils brûlent encore. C’est bien. Ils ne doivent pas s’éteindre avant leur temps. Vous avez bien agi, $N. Prenez ceci, avec ma bénédiction. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -453,6 +949,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -493,6 +1049,18 @@
     },
     "hrHR": {
       "description": "Danas diljem svijeta gori mnogo plamenova, {name}. Najteže je održavati zelene vatre; bez nadzora ne ostaju dugo upaljene. Pobrini se da smaragdne vatre na Kalimdoru još gore za našeg Flamekeepera, može?\n\nNaći ćeš ih blizu Ratcheta u Barrensu, blizu Master's Glaivea u Darkshoreu, u šumi Ashenvalea kod mosta blizu Silverwing Outposta i uz put prema Windshear Cragu duž glavne ceste u Stonetalon Mountainsu.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ah, dakle još gore. Drago mi je; ne bi valjalo da se ugase prije vremena. Dobro obavljeno, $n. Primi ovo uz moj blagoslov.",
+        "44bbfd8e314044c8e641": "Ah, dakle još gore. Drago mi je; ne bi valjalo da se ugase prije vremena. Dobro obavljeno, $n. Primi ovo uz moj blagoslov.",
+        "5a34855480c566b69c7e": "Ah, dakle još gore. Drago mi je; ne bi valjalo da se ugase prije vremena. Dobro obavljeno, $n. Primi ovo uz moj blagoslov.",
+        "6f12bf2876a66a882c62": "Vatre se ne smiju ugasiti dok festival ne završi!",
+        "7094c32aad0f6c1161e0": "Vatre se ne smiju ugasiti dok festival ne završi!",
+        "76e9989873701546d5c9": "Danas diljem svijeta gore mnogi plamenovi, $n. Najteže je čuvati zelene vatre; bez nadzora ne ostaju dugo upaljene. Provjeri za našeg čuvara plamena gore li smaragdne vatre na Kalimdoru.$b$bNaći ćeš ih blizu Ratcheta u Barrensu, kod Master's Glaivea u Darkshoreu, u šumi Ashenvale kod mosta blizu Silverwing Outposta i kraj puta za Windshear Crag uz glavnu cestu u Stonetalon Mountainsu.",
+        "80b76472457a02aa8731": "Danas diljem svijeta gore mnogi plamenovi, $n. Najteže je čuvati zelene vatre; bez nadzora ne ostaju dugo upaljene. Provjeri za našeg čuvara plamena gore li smaragdne vatre na Kalimdoru.$b$bNaći ćeš ih blizu Ratcheta u Barrensu, kod Master's Glaivea u Darkshoreu, u šumi Ashenvale kod mosta blizu Silverwing Outposta i kraj puta za Windshear Crag uz glavnu cestu u Stonetalon Mountainsu.",
+        "a5fe8a622426209298fe": "Vatre se ne smiju ugasiti dok festival ne završi!",
+        "cb9fb2282cffa2f53411": "Vatre se ne smiju ugasiti dok festival ne završi!",
+        "ee76f7a6a7e0232e78ae": "Ah, dakle još gore. Drago mi je; ne bi valjalo da se ugase prije vremena. Dobro obavljeno, $n. Primi ovo uz moj blagoslov."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -524,6 +1092,56 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e0d6014bc816146e879352648113d1221ca1568fe37a634b24c6b64eb678eaed"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -562,6 +1180,18 @@
     },
     "itIT": {
       "description": "{name}, oggi ci sono fiamme che bruciano su tutto il pianeta. Le più difficili da mantenere sono quelle verdi: senza supervisione, non restano accese a lungo. Rassicura il nostro Guardafiamme, andando a controllare che le Fiamme di Smeraldo brucino ancora a Kalimdor.\n\nLe troverai vicino a Porto Paranco nelle Savane, in prossimità del Gladio del Mastro a Rivafosca, accanto al ponte nei pressi dell'Avamposto degli Alargentea nella foresta di Valtetra e lungo la via principale che attraversa le Vette di Petrartiglio, al lato della strada per la Landa di Tagliavento.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ahhh, allora ardono ancora. Mi fa piacere: non andrebbe bene che quei fuochi si spegnessero prima del tempo. Hai fatto un buon lavoro, $N. Prendi questo, con la mia benedizione.",
+        "44bbfd8e314044c8e641": "Ahhh, allora ardono ancora. Mi fa piacere: non andrebbe bene che quei fuochi si spegnessero prima del tempo. Hai fatto un buon lavoro, $N. Prendi questo, con la mia benedizione.",
+        "5a34855480c566b69c7e": "Ahhh, allora ardono ancora. Mi fa piacere: non andrebbe bene che quei fuochi si spegnessero prima del tempo. Hai fatto un buon lavoro, $N. Prendi questo, con la mia benedizione.",
+        "6f12bf2876a66a882c62": "I fuochi non devono spegnersi finché la festa non è finita!",
+        "7094c32aad0f6c1161e0": "I fuochi non devono spegnersi finché la festa non è finita!",
+        "76e9989873701546d5c9": "Oggi nel mondo ardono molte fiamme, $N. I fuochi più difficili da tenere vivi sono quelli dalla fiamma verde: senza sorveglianza non restano accesi a lungo. Assicurati che i fuochi smeraldo ardano ancora su Kalimdor, per il nostro Custode della Fiamma, eh?\n\nLi troverai vicino a Ratchet, nelle Barrens; accanto alla Lama del Maestro, a Darkshore; nella foresta di Ashenvale, presso il ponte vicino al Silverwing Outpost; e vicino alla strada per la Landa di Windshear, lungo la strada principale delle Stonetalon Mountains.",
+        "80b76472457a02aa8731": "Oggi nel mondo ardono molte fiamme, $N. I fuochi più difficili da tenere vivi sono quelli dalla fiamma verde: senza sorveglianza non restano accesi a lungo. Assicurati che i fuochi smeraldo ardano ancora su Kalimdor, per il nostro Custode della Fiamma, eh?\n\nLi troverai vicino a Ratchet, nelle Barrens; accanto alla Lama del Maestro, a Darkshore; nella foresta di Ashenvale, presso il ponte vicino al Silverwing Outpost; e vicino alla strada per la Landa di Windshear, lungo la strada principale delle Stonetalon Mountains.",
+        "a5fe8a622426209298fe": "I fuochi non devono spegnersi finché la festa non è finita!",
+        "cb9fb2282cffa2f53411": "I fuochi non devono spegnersi finché la festa non è finita!",
+        "ee76f7a6a7e0232e78ae": "Ahhh, allora ardono ancora. Mi fa piacere: non andrebbe bene che quei fuochi si spegnessero prima del tempo. Hai fatto un buon lavoro, $N. Prendi questo, con la mia benedizione."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -592,6 +1222,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -629,6 +1319,18 @@
     },
     "koKR": {
       "description": "지금 세계 곳곳에 많은 불꽃이 타오르고 있지만, 약한 불꽃은 녹색으로 타는 경향이 있지. 누군가 돌봐주지 않으면 오래가지 않아 꺼질 거야. 우리 불꽃지기를 위해 그 에메랄드빛 불꽃들이 칼림도어에서 계속 타오르는지 좀 봐주게.\n\n불모의 땅 톱니항 부근과 어둠의 해안에 있는 지배자의 무덤 근처, 잿빛 골짜기 숲속 은빛날개 전초기지 근처의 다리 옆, 그리고 돌발톱 산맥의 대로를 따라 있는 칼바람 바위산 길목에서 찾을 수 있을 걸세.",
+      "dialogue": {
+        "050d31425f57d04f4835": "아, 그래서 그들은 여전히 ​​불타고 있습니다.  나는 기쁘다;  그 불은 때가 되기 전에 꺼지지 않을 것입니다.  잘했어, $n.  내 축복으로 이것을 가져 가라.",
+        "44bbfd8e314044c8e641": "아, 그래서 그들은 여전히 ​​불타고 있습니다.  나는 기쁘다;  그 불은 때가 되기 전에 꺼지지 않을 것입니다.  잘했어, $n.  내 축복으로 이것을 가져 가라.",
+        "5a34855480c566b69c7e": "아, 그래서 그들은 여전히 ​​불타고 있습니다.  나는 기쁘다;  그 불은 때가 되기 전에 꺼지지 않을 것입니다.  잘했어, $n.  내 축복으로 이것을 가져 가라.",
+        "6f12bf2876a66a882c62": "축제가 끝날 때까지 불은 꺼지지 않습니다!",
+        "7094c32aad0f6c1161e0": "축제가 끝날 때까지 불은 꺼지지 않습니다!",
+        "76e9989873701546d5c9": "지금 세계 곳곳에 많은 불꽃이 타오르고 있지만, 약한 불꽃은 녹색으로 타는 경향이 있지. 누군가 돌봐주지 않으면 오래가지 않아 꺼질 거야. 우리 불꽃지기를 위해 그 에메랄드빛 불꽃들이 칼림도어에서 계속 타오르는지 좀 봐주게.\n\n불모의 땅 톱니항 부근과 어둠의 해안에 있는 지배자의 무덤 근처, 잿빛 골짜기 숲속 은빛날개 전초기지 근처의 다리 옆, 그리고 돌발톱 산맥의 대로를 따라 있는 칼바람 바위산 길목에서 찾을 수 있을 걸세.",
+        "80b76472457a02aa8731": "지금 세계 곳곳에 많은 불꽃이 타오르고 있지만, 약한 불꽃은 녹색으로 타는 경향이 있지. 누군가 돌봐주지 않으면 오래가지 않아 꺼질 거야. 우리 불꽃지기를 위해 그 에메랄드빛 불꽃들이 칼림도어에서 계속 타오르는지 좀 봐주게.\n\n불모의 땅 톱니항 부근과 어둠의 해안에 있는 지배자의 무덤 근처, 잿빛 골짜기 숲속 은빛날개 전초기지 근처의 다리 옆, 그리고 돌발톱 산맥의 대로를 따라 있는 칼바람 바위산 길목에서 찾을 수 있을 걸세.",
+        "a5fe8a622426209298fe": "축제가 끝날 때까지 불은 꺼지지 않습니다!",
+        "cb9fb2282cffa2f53411": "축제가 끝날 때까지 불은 꺼지지 않습니다!",
+        "ee76f7a6a7e0232e78ae": "아, 그래서 그들은 여전히 ​​불타고 있습니다.  나는 기쁘다;  그 불은 때가 되기 전에 꺼지지 않을 것입니다.  잘했어, $n.  내 축복으로 이것을 가져 가라."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -659,6 +1361,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -699,6 +1461,18 @@
     },
     "plPL": {
       "description": "Dziś na całym świecie płonie wiele ogni, {name}. Najtrudniejsze do utrzymania są zielone ognie; bez opieki szybko gasną. Upewnij się dla naszego strażnika płomienia, że szmaragdowe ognie Kalimdoru wciąż płoną.\n\nZnajdziesz je przy Ratchet w Barrens, niedaleko Master's Glaive w Darkshore, w lesie Ashenvale przy moście niedaleko Silverwing Outpost oraz przy drodze do Windshear Crag wzdłuż głównej drogi Stonetalon Mountains.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ach, więc nadal płoną. Cieszę się; nie powinny zgasnąć przed czasem. Dobra robota, $n. Przyjmij to z moim błogosławieństwem.",
+        "44bbfd8e314044c8e641": "Ach, więc nadal płoną. Cieszę się; nie powinny zgasnąć przed czasem. Dobra robota, $n. Przyjmij to z moim błogosławieństwem.",
+        "5a34855480c566b69c7e": "Ach, więc nadal płoną. Cieszę się; nie powinny zgasnąć przed czasem. Dobra robota, $n. Przyjmij to z moim błogosławieństwem.",
+        "6f12bf2876a66a882c62": "Ognie nie mogą zgasnąć przed końcem festiwalu!",
+        "7094c32aad0f6c1161e0": "Ognie nie mogą zgasnąć przed końcem festiwalu!",
+        "76e9989873701546d5c9": "Dziś na całym świecie płonie wiele ogni, $n. Najtrudniej utrzymać zielone płomienie; bez nadzoru szybko gasną. Upewnij się dla naszego Strażnika Płomieni, że szmaragdowe ognie w Kalimdorze nadal płoną.$b$bZnajdziesz je przy Ratchet w Barrens, niedaleko Master's Glaive w Darkshore, w lesie Ashenvale przy moście koło Silverwing Outpost oraz przy drodze do Windshear Crag wzdłuż głównego traktu Stonetalon Mountains.",
+        "80b76472457a02aa8731": "Dziś na całym świecie płonie wiele ogni, $n. Najtrudniej utrzymać zielone płomienie; bez nadzoru szybko gasną. Upewnij się dla naszego Strażnika Płomieni, że szmaragdowe ognie w Kalimdorze nadal płoną.$b$bZnajdziesz je przy Ratchet w Barrens, niedaleko Master's Glaive w Darkshore, w lesie Ashenvale przy moście koło Silverwing Outpost oraz przy drodze do Windshear Crag wzdłuż głównego traktu Stonetalon Mountains.",
+        "a5fe8a622426209298fe": "Ognie nie mogą zgasnąć przed końcem festiwalu!",
+        "cb9fb2282cffa2f53411": "Ognie nie mogą zgasnąć przed końcem festiwalu!",
+        "ee76f7a6a7e0232e78ae": "Ach, więc nadal płoną. Cieszę się; nie powinny zgasnąć przed czasem. Dobra robota, $n. Przyjmij to z moim błogosławieństwem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -730,6 +1504,56 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e0d6014bc816146e879352648113d1221ca1568fe37a634b24c6b64eb678eaed"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -768,6 +1592,18 @@
     },
     "ptBR": {
       "description": "Há muitas chamas espalhadas por todo o mundo, {name}. As mais complicadas são as verdes: sem o devido cuidado, elas não ficam acesas por muito tempo. Você poderia verificar se as chamas esmeralda de Kalimdor ainda estão acesas?\n\nHá chamas esmeralda nas cercanias da Vila Catraca, nos Sertões; ao lado do Glaive do Mestre, na Costa Negra; na floresta do Vale Gris, perto da ponte do Posto Avançado Asa de Prata; e próximo à estrada para o Rochedo Cortavento, que fica no caminho principal para a Cordilheira das Torres de Pedra.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ah, então ainda estão acesos. Fico feliz; essas chamas não devem se apagar antes da hora. Muito bem, $n. Aceite isto com minha bênção.",
+        "44bbfd8e314044c8e641": "Ah, então ainda estão acesos. Fico feliz; essas chamas não devem se apagar antes da hora. Muito bem, $n. Aceite isto com minha bênção.",
+        "5a34855480c566b69c7e": "Ah, então ainda estão acesos. Fico feliz; essas chamas não devem se apagar antes da hora. Muito bem, $n. Aceite isto com minha bênção.",
+        "6f12bf2876a66a882c62": "As chamas não podem se apagar antes do fim do festival!",
+        "7094c32aad0f6c1161e0": "As chamas não podem se apagar antes do fim do festival!",
+        "76e9989873701546d5c9": "Há muitas chamas espalhadas por todo o mundo, $n. As mais complicadas são as verdes: sem o devido cuidado, elas não ficam acesas por muito tempo. Você poderia verificar se as chamas esmeralda de Kalimdor ainda estão acesas?\n\nHá chamas esmeralda nas cercanias da Vila Catraca, nos Sertões; ao lado do Glaive do Mestre, na Costa Negra; na floresta do Vale Gris, perto da ponte do Posto Avançado Asa de Prata; e próximo à estrada para o Rochedo Cortavento, que fica no caminho principal para a Cordilheira das Torres de Pedra.",
+        "80b76472457a02aa8731": "Há muitas chamas espalhadas por todo o mundo, $n. As mais complicadas são as verdes: sem o devido cuidado, elas não ficam acesas por muito tempo. Você poderia verificar se as chamas esmeralda de Kalimdor ainda estão acesas?\n\nHá chamas esmeralda nas cercanias da Vila Catraca, nos Sertões; ao lado do Glaive do Mestre, na Costa Negra; na floresta do Vale Gris, perto da ponte do Posto Avançado Asa de Prata; e próximo à estrada para o Rochedo Cortavento, que fica no caminho principal para a Cordilheira das Torres de Pedra.",
+        "a5fe8a622426209298fe": "As chamas não podem se apagar antes do fim do festival!",
+        "cb9fb2282cffa2f53411": "As chamas não podem se apagar antes do fim do festival!",
+        "ee76f7a6a7e0232e78ae": "Ah, então ainda estão acesos. Fico feliz; essas chamas não devem se apagar antes da hora. Muito bem, $n. Aceite isto com minha bênção."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -798,6 +1634,58 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -838,6 +1726,18 @@
     },
     "ruRU": {
       "description": "Сегодня по всему миру горит множество огней, {name}. Сложнее всего присматривать за теми кострами, которые пылают зеленым; без присмотра они не будут гореть долго. Убедись, что изумрудные огни все еще горят в Калимдоре – пусть наш Хранитель костров успокоится.\n\nТы найдешь эти костры вблизи Кабестана в Степях, неподалеку от Меча Властителя на Темном Берегу, в Ясеневом лесу у моста около Аванпоста Среброкрылых, и поблизости от дороги на Утес Ветрорезов вдоль главного тракта в Когтистых горах.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ах, так значит, они все еще горят. Отлично, ты проделал превосходную работу, $N. Вот, возьми это и будь благословен.",
+        "44bbfd8e314044c8e641": "Ах, так значит, они все еще горят. Отлично, ты проделал превосходную работу, $N. Вот, возьми это и будь благословен.",
+        "5a34855480c566b69c7e": "Ах, так значит, они все еще горят. Отлично, ты проделал превосходную работу, $N. Вот, возьми это и будь благословен.",
+        "6f12bf2876a66a882c62": "Пока идет праздник, огни не должны погаснуть!",
+        "7094c32aad0f6c1161e0": "Пока идет праздник, огни не должны погаснуть!",
+        "76e9989873701546d5c9": "Сегодня по всему миру горит множество огней, $n. Сложнее всего присматривать за теми кострами, которые пылают зеленым; без присмотра они не будут гореть долго. Убедись, что изумрудные огни все еще горят в Калимдоре – пусть наш Хранитель костров успокоится.\n\nТы найдешь эти костры вблизи Кабестана в Степях, неподалеку от Меча Властителя на Темном Берегу, в Ясеневом лесу у моста около Аванпоста Среброкрылых, и поблизости от дороги на Утес Ветрорезов вдоль главного тракта в Когтистых горах.",
+        "80b76472457a02aa8731": "Сегодня по всему миру горит множество огней, $n. Сложнее всего присматривать за теми кострами, которые пылают зеленым; без присмотра они не будут гореть долго. Убедись, что изумрудные огни все еще горят в Калимдоре – пусть наш Хранитель костров успокоится.\n\nТы найдешь эти костры вблизи Кабестана в Степях, неподалеку от Меча Властителя на Темном Берегу, в Ясеневом лесу у моста около Аванпоста Среброкрылых, и поблизости от дороги на Утес Ветрорезов вдоль главного тракта в Когтистых горах.",
+        "a5fe8a622426209298fe": "Пока идет праздник, огни не должны погаснуть!",
+        "cb9fb2282cffa2f53411": "Пока идет праздник, огни не должны погаснуть!",
+        "ee76f7a6a7e0232e78ae": "Ах, так значит, они все еще горят. Отлично, ты проделал превосходную работу, $N. Вот, возьми это и будь благословен."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -868,6 +1768,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -908,6 +1868,18 @@
     },
     "svSE": {
       "description": "Det brinner många eldar runt om i världen i dag, {name}. De svåraste att vårda är de som brinner gröna; de håller sig inte tända länge utan tillsyn. Se till att de smaragdgröna eldarna fortfarande brinner i Kalimdor åt vår flamvårdare, va?\n\nDu hittar dem nära Spärrhake i Kargmarkerna, intill Mästarens glav på Mörkstranden, i Askdalens skog vid bron nära Silvervingarnas utpost och nära vägen till Vindskärsklippan längs huvudvägen i Stenklobergen.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ah, de brinner alltså fortfarande. Det gläder mig; de får inte slockna i förtid. Bra gjort, $n. Ta detta med min välsignelse.",
+        "44bbfd8e314044c8e641": "Ah, de brinner alltså fortfarande. Det gläder mig; de får inte slockna i förtid. Bra gjort, $n. Ta detta med min välsignelse.",
+        "5a34855480c566b69c7e": "Ah, de brinner alltså fortfarande. Det gläder mig; de får inte slockna i förtid. Bra gjort, $n. Ta detta med min välsignelse.",
+        "6f12bf2876a66a882c62": "Eldarna får inte slockna förrän festivalen är över!",
+        "7094c32aad0f6c1161e0": "Eldarna får inte slockna förrän festivalen är över!",
+        "76e9989873701546d5c9": "Många flammor brinner i världen i dag, $n. De gröna eldarna är svårast att sköta; de brinner inte länge utan tillsyn. Se till att smaragdeldarna i Kalimdor fortfarande brinner för vår flamvaktare.$b$bDu hittar dem nära Ratchet i Barrens, vid Master's Glaive i Darkshore, i Ashenvales skog vid bron nära Silverwing Outpost och vid vägen till Windshear Crag längs huvudvägen i Stonetalon Mountains.",
+        "80b76472457a02aa8731": "Många flammor brinner i världen i dag, $n. De gröna eldarna är svårast att sköta; de brinner inte länge utan tillsyn. Se till att smaragdeldarna i Kalimdor fortfarande brinner för vår flamvaktare.$b$bDu hittar dem nära Ratchet i Barrens, vid Master's Glaive i Darkshore, i Ashenvales skog vid bron nära Silverwing Outpost och vid vägen till Windshear Crag längs huvudvägen i Stonetalon Mountains.",
+        "a5fe8a622426209298fe": "Eldarna får inte slockna förrän festivalen är över!",
+        "cb9fb2282cffa2f53411": "Eldarna får inte slockna förrän festivalen är över!",
+        "ee76f7a6a7e0232e78ae": "Ah, de brinner alltså fortfarande. Det gläder mig; de får inte slockna i förtid. Bra gjort, $n. Ta detta med min välsignelse."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -939,6 +1911,56 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -979,6 +2001,18 @@
     },
     "trTR": {
       "description": "Bugün dünyanın dört bir yanında pek çok alev yanıyor, {name}. Bakımı en zor ateşler yeşil yananlardır; gözetim olmadan uzun süre yanık kalmazlar. Kalimdor'daki zümrüt ateşlerin hâlâ yandığından Flamekeeper'ımız için emin ol, olur mu?\n\nOnları Barrens'taki Ratchet'in yakınında, Darkshore'daki Ustanın Palası'nın yanında, Ashenvale ormanında Silverwing Karakolu yakınındaki köprünün başında ve Stonetalon Dağları'ndaki ana yol boyunca Windshear Kayalığı yolunun yakınında bulacaksın.",
+      "dialogue": {
+        "050d31425f57d04f4835": "Ah, demek hâlâ yanıyorlar. Sevindim; bu ateşlerin zamanından önce sönmesi iyi olmazdı. Aferin, $n. Bunu kutsamamla al.",
+        "44bbfd8e314044c8e641": "Ah, demek hâlâ yanıyorlar. Sevindim; bu ateşlerin zamanından önce sönmesi iyi olmazdı. Aferin, $n. Bunu kutsamamla al.",
+        "5a34855480c566b69c7e": "Ah, demek hâlâ yanıyorlar. Sevindim; bu ateşlerin zamanından önce sönmesi iyi olmazdı. Aferin, $n. Bunu kutsamamla al.",
+        "6f12bf2876a66a882c62": "Festival bitene kadar ateşler sönmemeli!",
+        "7094c32aad0f6c1161e0": "Festival bitene kadar ateşler sönmemeli!",
+        "76e9989873701546d5c9": "Bugün dünyanın dört bir yanında pek çok alev yanıyor, $n. Bakımı en zor olanlar yeşil yanan ateşlerdir; gözetimsiz uzun süre yanmazlar. Alev Bekçimiz için Kalimdor'daki zümrüt ateşlerin hâlâ yandığından emin ol.$b$bOnları Barrens'teki Ratchet yakınında, Darkshore'daki Master's Glaive civarında, Ashenvale ormanında Silverwing Outpost yakınındaki köprüde ve Stonetalon Dağları ana yolu boyunca Windshear Crag yolunun yakınında bulabilirsin.",
+        "80b76472457a02aa8731": "Bugün dünyanın dört bir yanında pek çok alev yanıyor, $n. Bakımı en zor olanlar yeşil yanan ateşlerdir; gözetimsiz uzun süre yanmazlar. Alev Bekçimiz için Kalimdor'daki zümrüt ateşlerin hâlâ yandığından emin ol.$b$bOnları Barrens'teki Ratchet yakınında, Darkshore'daki Master's Glaive civarında, Ashenvale ormanında Silverwing Outpost yakınındaki köprüde ve Stonetalon Dağları ana yolu boyunca Windshear Crag yolunun yakınında bulabilirsin.",
+        "a5fe8a622426209298fe": "Festival bitene kadar ateşler sönmemeli!",
+        "cb9fb2282cffa2f53411": "Festival bitene kadar ateşler sönmemeli!",
+        "ee76f7a6a7e0232e78ae": "Ah, demek hâlâ yanıyorlar. Sevindim; bu ateşlerin zamanından önce sönmesi iyi olmazdı. Aferin, $n. Bunu kutsamamla al."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1010,6 +2044,56 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1048,6 +2132,18 @@
     },
     "ukUA": {
       "description": "Сьогодні по всьому світу горить безліч вогнів, {name}. Найважче наглядати за тими вогнями, що палають зеленим. Вони не горітимуть довго без нагляду. Переконайся, що смарагдові вогні все ще горять у Калімдорі для наших хранителів полум'я, добре?\n\nТи знайдеш їх поблизу Брашпиля в Степах, біля Глефи властителя в Темнобережжі, у лісі Ясенедолу поблизу мосту біля Срібнокрилої застави та біля дороги до Вітрокосих скель вздовж головної дороги в Каміннопазуристих горах.",
+      "dialogue": {
+        "050d31425f57d04f4835": "А, отже, вони все ще горять. Я радий; не можна, щоб ці вогні згасли завчасно. Добре зроблено, $n. Прийми це з моїм благословенням.",
+        "44bbfd8e314044c8e641": "А, отже, вони все ще горять. Я радий; не можна, щоб ці вогні згасли завчасно. Добре зроблено, $n. Прийми це з моїм благословенням.",
+        "5a34855480c566b69c7e": "А, отже, вони все ще горять. Я радий; не можна, щоб ці вогні згасли завчасно. Добре зроблено, $n. Прийми це з моїм благословенням.",
+        "6f12bf2876a66a882c62": "Вогні не мають згаснути до завершення свята!",
+        "7094c32aad0f6c1161e0": "Вогні не мають згаснути до завершення свята!",
+        "76e9989873701546d5c9": "Сьогодні по всьому світу горить багато вогнів, $n. Найскладніше доглядати зелені: без нагляду вони швидко згасають. Переконайся для нашого Хранителя полум'я, що смарагдові вогні Калімдору досі горять.$b$bЗнайдеш їх біля Ратчета в Barrens, неподалік Master's Glaive у Darkshore, у лісі Ashenvale біля мосту поряд із Silverwing Outpost і біля дороги до Windshear Crag уздовж головного шляху в горах Stonetalon.",
+        "80b76472457a02aa8731": "Сьогодні по всьому світу горить багато вогнів, $n. Найскладніше доглядати зелені: без нагляду вони швидко згасають. Переконайся для нашого Хранителя полум'я, що смарагдові вогні Калімдору досі горять.$b$bЗнайдеш їх біля Ратчета в Barrens, неподалік Master's Glaive у Darkshore, у лісі Ashenvale біля мосту поряд із Silverwing Outpost і біля дороги до Windshear Crag уздовж головного шляху в горах Stonetalon.",
+        "a5fe8a622426209298fe": "Вогні не мають згаснути до завершення свята!",
+        "cb9fb2282cffa2f53411": "Вогні не мають згаснути до завершення свята!",
+        "ee76f7a6a7e0232e78ae": "А, отже, вони все ще горять. Я радий; не можна, щоб ці вогні згасли завчасно. Добре зроблено, $n. Прийми це з моїм благословенням."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1080,6 +2176,56 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "e0d6014bc816146e879352648113d1221ca1568fe37a634b24c6b64eb678eaed"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1120,6 +2266,18 @@
     },
     "zhCN": {
       "description": "今天，全世界上各处有无数的火焰在熊熊燃烧着，{name}。那些最狡诈的火焰往往都是绿色的，如果不小心照看的话，它们很快就会灭掉。为我们的护火者确认一下卡利姆多上的几处翡翠烈焰是否还在燃烧着，好吗？\n\n你能在贫瘠之地的棘齿城、黑海岸的主宰之剑、银翼岗哨附近的桥，以及石爪山尘风峡谷的路旁去寻找这样的篝火堆。",
+      "dialogue": {
+        "050d31425f57d04f4835": "啊，所以它们真的还在燃烧。我很高兴;时间没到之前那些火焰不能熄灭。你做的很好，$N。收下这个和我的祝福。\n\n",
+        "44bbfd8e314044c8e641": "啊，所以它们真的还在燃烧。我很高兴;时间没到之前那些火焰不能熄灭。你做的很好，$N。收下这个和我的祝福。\n\n",
+        "5a34855480c566b69c7e": "啊，所以它们真的还在燃烧。我很高兴;时间没到之前那些火焰不能熄灭。你做的很好，$N。收下这个和我的祝福。\n\n",
+        "6f12bf2876a66a882c62": "庆典结束之前火焰都不能熄灭!",
+        "7094c32aad0f6c1161e0": "庆典结束之前火焰都不能熄灭!",
+        "76e9989873701546d5c9": "今天，全世界上各处有无数的火焰在熊熊燃烧着，$n。那些最狡诈的火焰往往都是绿色的，如果不小心照看的话，它们很快就会灭掉。为我们的护火者确认一下卡利姆多上的几处翡翠烈焰是否还在燃烧着，好吗？\n\n你能在贫瘠之地的棘齿城、黑海岸的主宰之剑、银翼岗哨附近的桥，以及石爪山尘风峡谷的路旁去寻找这样的篝火堆。",
+        "80b76472457a02aa8731": "今天，全世界上各处有无数的火焰在熊熊燃烧着，$n。那些最狡诈的火焰往往都是绿色的，如果不小心照看的话，它们很快就会灭掉。为我们的护火者确认一下卡利姆多上的几处翡翠烈焰是否还在燃烧着，好吗？\n\n你能在贫瘠之地的棘齿城、黑海岸的主宰之剑、银翼岗哨附近的桥，以及石爪山尘风峡谷的路旁去寻找这样的篝火堆。",
+        "a5fe8a622426209298fe": "庆典结束之前火焰都不能熄灭!",
+        "cb9fb2282cffa2f53411": "庆典结束之前火焰都不能熄灭!",
+        "ee76f7a6a7e0232e78ae": "啊，所以它们真的还在燃烧。我很高兴;时间没到之前那些火焰不能熄灭。你做的很好，$N。收下这个和我的祝福。\n\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1150,6 +2308,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -1190,6 +2408,18 @@
     },
     "zhTW": {
       "description": "世界各地都有許多的火焰在燃燒著，{name}。最難處理的火焰就是那些發著綠光的；沒有管理的話它們不會長久燃燒。為我們的營火管理者確認那些翠綠色的火焰仍在卡林多燃燒著，聽到了嗎？\n\n你可以在貧瘠之地的棘齒城，黑海岸的主宰之劍附近找到它們，還有從銀翼哨站旁的橋邊進入梣谷的森林裡，和沿著石爪山脈的幹道走到通往狂風峭壁的路上都能找到。",
+      "dialogue": {
+        "050d31425f57d04f4835": "啊，所以它們真的還在燃燒。我很高興;時間沒到之前那些火焰不能熄滅。你做的很好，$N。收下這個和我的祝福。",
+        "44bbfd8e314044c8e641": "啊，所以它們真的還在燃燒。我很高興;時間沒到之前那些火焰不能熄滅。你做的很好，$N。收下這個和我的祝福。",
+        "5a34855480c566b69c7e": "啊，所以它們真的還在燃燒。我很高興;時間沒到之前那些火焰不能熄滅。你做的很好，$N。收下這個和我的祝福。",
+        "6f12bf2876a66a882c62": "慶典結束之前火焰都不能熄滅!",
+        "7094c32aad0f6c1161e0": "慶典結束之前火焰都不能熄滅!",
+        "76e9989873701546d5c9": "世界各地都有許多的火焰在燃燒著，$n。最難處理的火焰就是那些發著綠光的；沒有管理的話它們不會長久燃燒。為我們的營火管理者確認那些翠綠色的火焰仍在卡林多燃燒著，聽到了嗎？\n\n你可以在貧瘠之地的棘齒城，黑海岸的主宰之劍附近找到它們，還有從銀翼哨站旁的橋邊進入梣谷的森林裡，和沿著石爪山脈的幹道走到通往狂風峭壁的路上都能找到。",
+        "80b76472457a02aa8731": "世界各地都有許多的火焰在燃燒著，$n。最難處理的火焰就是那些發著綠光的；沒有管理的話它們不會長久燃燒。為我們的營火管理者確認那些翠綠色的火焰仍在卡林多燃燒著，聽到了嗎？\n\n你可以在貧瘠之地的棘齒城，黑海岸的主宰之劍附近找到它們，還有從銀翼哨站旁的橋邊進入梣谷的森林裡，和沿著石爪山脈的幹道走到通往狂風峭壁的路上都能找到。",
+        "a5fe8a622426209298fe": "慶典結束之前火焰都不能熄滅!",
+        "cb9fb2282cffa2f53411": "慶典結束之前火焰都不能熄滅!",
+        "ee76f7a6a7e0232e78ae": "啊，所以它們真的還在燃燒。我很高興;時間沒到之前那些火焰不能熄滅。你做的很好，$N。收下這個和我的祝福。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1220,6 +2450,66 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.050d31425f57d04f4835": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.44bbfd8e314044c8e641": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.5a34855480c566b69c7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.6f12bf2876a66a882c62": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.7094c32aad0f6c1161e0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.76e9989873701546d5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.80b76472457a02aa8731": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a5fe8a622426209298fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.cb9fb2282cffa2f53411": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.ee76f7a6a7e0232e78ae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

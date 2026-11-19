@@ -1,8 +1,36 @@
 {
   "areaId": 15,
+  "dialogueContexts": {
+    "3dff265337b22ab16fc7": {
+      "lineId": "q:1273:complete",
+      "npcId": 4926,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "4f217224c15800f47944": {
+      "lineId": "q:1273:progress",
+      "npcId": 4926,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "d1bc80bc16b69e4c113e": {
+      "lineId": "q:1273:accept",
+      "npcId": 4983,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Trvalo to dlouho, ale já najít Reethe. On se schovávat dobře na člověka.\n\nOgron se bát, že on možná šílený po tolika času v bažině. Ty jít se mnou, my získat od něj odpovědi.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hm. Je dobře, že se Reethe už nebude potulovat po bažině, ale škoda, že lidé jsou tak křehcí, že se nedokázal zotavit z malé rány šípem.$b$bZdá se, že tato stopa záhady nikam nevedla a musíme hledat jinde.",
+        "4f217224c15800f47944": "Našel jsi Reetha?",
+        "d1bc80bc16b69e4c113e": "Trvalo to dlouho, ale Ogron našel Reetha. Na člověka se skrýval dobře.$b$bOgron má strach, že po tak dlouhé době v bažině mohl zešílet. Pojď se mnou, půjdeme z něj dostat odpovědi."
+      },
       "eventObjectiveLabel": "Vyslechni Reetheho spolu s Ogronem",
       "objectiveLines": [
         {
@@ -20,6 +48,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -53,6 +96,11 @@
     },
     "daDK": {
       "description": "Det tog lang tid, men jeg fandt Reethe. Han gemme sig godt for et menneske.\n\nOgron bekymret for, at han måske er blevet gal efter så lang tid i sumpen. Du komme med mig, for vi gå og få svar fra ham.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hmph. Det er godt, at Reethe ikke længere lusker rundt i sumpen, men det er synd, at mennesker er så skrøbelige, at han ikke kunne komme sig over et lille pilesår.$b$bDet ser ud til, at dette spor ikke førte nogen vegne, og vi må lede andre steder.",
+        "4f217224c15800f47944": "Fandt du Reethe?",
+        "d1bc80bc16b69e4c113e": "Det tog lang tid, men jeg fandt Reethe. Han gemme sig godt for menneske.$b$bOgron bekymret for, at han er blevet gal efter så lang tid i sump. Du komme med mig, så vi få svar fra ham."
+      },
       "eventObjectiveLabel": "Udspørg Reethe sammen med Ogron",
       "objectiveLines": [
         {
@@ -70,6 +118,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9ee900bda627106e9cf36b21ea4314a1e4fea380b512a4012e98b7b323bd8825"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -99,6 +162,11 @@
     },
     "deDE": {
       "description": "Es hat lange gedauert, aber ich fand Reethe. Für einen Menschen hatte er sich gut versteckt.\n\nOgron hatte Angst, nach der langen Zeit im Sumpf könnte er verrückt sein. Ihr kommt mit mir, denn wir brauchen Antworten von ihm.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hmpf. Es ist gut, dass Reethe nicht mehr im Sumpf herumlungert. Ein Jammer, dass Menschen so empfindlich sind, dass er sich nicht von einer kleinen Pfeilwunde erholen konnte. \n \n Scheinbar hat dieser Teil des Rätsels nirgendwohin geführt und wir müssen es anderswo versuchen. ",
+        "4f217224c15800f47944": "Haben Sie Reethe gefunden?",
+        "d1bc80bc16b69e4c113e": "Es hat lange gedauert, aber ich fand Reethe. Für einen Menschen hatte er sich gut versteckt.\n\nOgron hatte Angst, nach der langen Zeit im Sumpf könnte er verrückt sein. Ihr kommt mit mir, denn wir brauchen Antworten von ihm."
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -115,6 +183,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -142,6 +228,11 @@
     },
     "enUS": {
       "description": "It took a long time, but I found Reethe. He hide good for a human.\n\nOgron worried that he might be crazy after so much time in swamp. You come with me for we go get answers from him.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hmph. It is good that Reethe will no longer be lurking around the swamp, but it is a shame that humans are built so frail that he could not recover from a little arrow wound.$b$bIt seems that this thread of the mystery has led nowhere, and we must look elsewhere.",
+        "4f217224c15800f47944": "Did you find Reethe?",
+        "d1bc80bc16b69e4c113e": "It took a long time, but I found Reethe. He hide good for a human.$b$bOgron worried that he might be crazy after so much time in swamp. You come with me for we go get answers from him."
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -158,6 +249,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -186,6 +295,11 @@
     },
     "esES": {
       "description": "Me llevó un buen rato, pero encontré a Reethe. Estaba bien escondido, para ser humano.\n\nOgron temía que pudiera haber enloquecido después de pasar tanto tiempo en el pantano. Ven conmigo. Tiene que darnos algunas respuestas.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Mm. Que Reethe no vaya a seguir deambulando por el pantano es una buena noticia, pero es una pena que los humanos sean tan débiles... que no pudiera recuperarse de una mínima herida de flecha, es una pena.\n\nParece que este camino no nos ha ayudado a resolver el misterio. Debemos probar por otro lado.",
+        "4f217224c15800f47944": "¿Encontraste a Reethe?",
+        "d1bc80bc16b69e4c113e": "Me llevó un buen rato, pero encontré a Reethe. Estaba bien escondido, para ser humano.\n\nOgron temía que pudiera haber enloquecido después de pasar tanto tiempo en el pantano. Ven conmigo. Tiene que darnos algunas respuestas."
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -202,6 +316,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -229,6 +361,11 @@
     },
     "esMX": {
       "description": "Me llevó un buen rato, pero encontré a Reethe. Estaba bien escondido, para ser humano.\n\nOgron temía que pudiera haber enloquecido después de pasar tanto tiempo en la marisma. Ven conmigo. Tiene que darnos algunas respuestas.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Mm. Que Reethe no vaya a seguir deambulando por el pantano es una buena noticia, pero es una pena que los humanos sean tan débiles... que no pudiera recuperarse de una mínima herida de flecha, es una pena.\n\nParece que este camino no nos ha ayudado a resolver el misterio. Debemos probar por otro lado.",
+        "4f217224c15800f47944": "¿Encontraste a Reethe?",
+        "d1bc80bc16b69e4c113e": "Me llevó un buen rato, pero encontré a Reethe. Estaba bien escondido, para ser humano.\n\nOgron temía que pudiera haber enloquecido después de pasar tanto tiempo en la marisma. Ven conmigo. Tiene que darnos algunas respuestas."
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -245,6 +382,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -272,6 +427,11 @@
     },
     "frFR": {
       "description": "Cela a pris du temps, mais j'ai trouvé Reethe. Il se cache bien pour un humain.\n\nOgron se demande s’il n'est pas devenu fou après tout ce temps passé dans le marais. Vous venez avec moi pour lui tirer les vers du nez.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Ah ! Il est bon de savoir que Reethe ne traînera plus dans le marais, mais il est regrettable que les humains soient trop faibles pour survivre à la blessure d'une petite flèche de rien du tout. \n \n Il semble que cette piste ne nous mène nulle part. Nous devons trouver autre chose. ",
+        "4f217224c15800f47944": "Avez-vous trouvé Reethe ?",
+        "d1bc80bc16b69e4c113e": "Cela a pris du temps, mais j'ai trouvé Reethe. Il se cache bien pour un humain.\n\nOgron se demande s’il n'est pas devenu fou après tout ce temps passé dans le marais. Vous venez avec moi pour lui tirer les vers du nez."
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -288,6 +448,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -315,6 +493,11 @@
     },
     "hrHR": {
       "description": "Dugo trajalo, ali našao Reethea. Dobro se skriva za čovjeka.\n\nOgron se brine da možda lud poslije toliko vremena u močvari. Ti dođi sa mnom da mi dobijemo odgovore od njega.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hm. Dobro je što Reethe više neće vrebati po močvari, ali šteta što su ljudi toliko krhki da se nije mogao oporaviti od male rane strijelom.$b$bČini se da nas ovaj trag nije nikamo doveo i moramo potražiti drugdje.",
+        "4f217224c15800f47944": "Jesi li pronašao Reethea?",
+        "d1bc80bc16b69e4c113e": "Dugo trajalo, ali našao sam Reethea. Dobro se skriva za čovjeka.$b$bOgron se brine da je poludio nakon toliko vremena u močvari. Ti pođi sa mnom da dobijemo odgovore od njega."
+      },
       "eventObjectiveLabel": "Ispitaj Reethea zajedno s Ogronom",
       "objectiveLines": [
         {
@@ -332,6 +515,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9ee900bda627106e9cf36b21ea4314a1e4fea380b512a4012e98b7b323bd8825"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -361,6 +559,11 @@
     },
     "itIT": {
       "description": "Ci voluto tanto tempo, ma trovato Reethe. Lui nascondersi bene per essere umano.\n\nOgron preoccupato che lui diventato matto dopo tanto tempo in palude. Tu venire con me, noi andare a chiedere risposte.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hmph. È un bene che Reethe non si aggiri più per la palude, ma peccato che gli umani siano fatti così fragili: non è riuscito a riprendersi da una piccola ferita di freccia.\n\nSembra che questa pista del mistero non abbia portato da nessuna parte, e dobbiamo cercare altrove.",
+        "4f217224c15800f47944": "Hai trovato Reethe?",
+        "d1bc80bc16b69e4c113e": "Ci è voluto tanto, ma ho trovato Reethe. Lui si nasconde bene, per un umano.\n\nOgron ha paura che lui è diventato matto dopo tanto tempo in palude. Tu vieni con me che andiamo a prendere risposte da lui."
+      },
       "eventObjectiveLabel": "Interroga Reethe insieme a Ogron",
       "objectiveLines": [
         {
@@ -378,6 +581,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9ee900bda627106e9cf36b21ea4314a1e4fea380b512a4012e98b7b323bd8825"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -407,6 +628,11 @@
     },
     "koKR": {
       "description": "시간은 오래 걸렸지만 리테를 찾아냈다. 인간치고는 잘 숨어 다니더군.\n\n이 오그론은 늪지에 그렇게 오래 머물다 미쳐 버리게 될까 봐 걱정했다고. 당신 나랑 같이 그 녀석을 심문하러 가자.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "흠, 더 이상 리테 녀석이 늪지 주변을 어슬렁거리지 않게 된 건 다행이지만, 인간이란 게 화살에 맞은 작은 부상 하나 극복하지 못할 정도로 나약한 존재라니...\n\n이번 단서로는 이번 사건의 실마리를 찾지 못했으니 다른 단서를 찾아보는 수밖에 없겠군.",
+        "4f217224c15800f47944": "리테를 찾으셨나요?",
+        "d1bc80bc16b69e4c113e": "오래 걸렸지만 리스를 찾았다. 인간치고 잘 숨었다.$b$b늪에 오래 있어서 미쳤을까 오그론 걱정한다. 너 나와 함께 가서 그에게 답을 듣자."
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -423,6 +649,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -450,6 +693,11 @@
     },
     "plPL": {
       "description": "Długo to trwać, ale ja znaleźć Reethe'a. On dobrze chować się jak na człowieka.\n\nOgron martwić się, on może szalony po tylu dniach na bagnie. Ty chodź ze mną, my zdobyć odpowiedzi.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hm. Dobrze, że Reethe nie będzie już kręcił się po bagnie, ale szkoda, że ludzie są tak wątli, iż nie zdołał wyzdrowieć po małej ranie od strzały.$b$bWygląda na to, że ten trop prowadzi donikąd i musimy szukać gdzie indziej.",
+        "4f217224c15800f47944": "Znalazłeś Reethe'a?",
+        "d1bc80bc16b69e4c113e": "Długo to trwało, ale Ogron znalazł Reethe'a. Dobrze się krył jak na człowieka.$b$bOgron martwi się, że po tylu dniach na bagnie mógł zwariować. Chodź ze mną, zdobędziemy od niego odpowiedzi."
+      },
       "eventObjectiveLabel": "Przesłuchaj Reethe'a wraz z Ogronem",
       "objectiveLines": [
         {
@@ -467,6 +715,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9ee900bda627106e9cf36b21ea4314a1e4fea380b512a4012e98b7b323bd8825"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -496,6 +759,11 @@
     },
     "ptBR": {
       "description": "Demorou, mas Ogron encontrar Reethe. Ele se esconder bem para um humano.\n\nOgron preocupado com ele ter ficado louco depois de tanto tempo no pântano. Você vir com Ogron fazer perguntas a Reethe.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Humpf. Por um lado é bom que Reethe não esteja mais rastejando pelo pântano, mas por outro é uma pena que esses humanos tenham uma consistência tão fraca que sequer são capazes de se recuperar de uma ferida de flecha.\n\nEssa pista não nos levou a lugar algum; precisamos começar outra busca.",
+        "4f217224c15800f47944": "Você encontrou Reethe?",
+        "d1bc80bc16b69e4c113e": "Demorou muito, mas encontrei Reethe. Ele se esconder bem para um humano.$b$bOgron preocupado que ele enlouqueceu depois de tanto tempo no pântano. Você vir comigo, nós vamos buscar respostas dele."
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -512,6 +780,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -539,6 +823,11 @@
     },
     "ruRU": {
       "description": "Это было непросто, но я все-таки нашел этот Рит. Неплохо он прятаться... Для человек. \n\nОгрон боится, что человек свихнуться, – слишком много времени на болоте, Твоя идти с Огрон и спрашивать человека все, что хотеть.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Пфф. Это хорошо, что Рит больше не будет прятаться на болоте, но это плохо, что люди такие хрупкие существа, что могут помереть от одной маленькой стрелы.\n\nСдается мне, что мы зашли в тупик и нужно поискать разгадку где-нибудь еще.",
+        "4f217224c15800f47944": "Вы нашли Рита?",
+        "d1bc80bc16b69e4c113e": "Долго пришлось искать, но я нашел Рита. Для человека он хорошо прятаться.$b$bОгрон боится, что он сошел с ума после долгого времени в болоте. Ты идти со мной, мы получим от него ответы."
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -555,6 +844,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -582,6 +888,11 @@
     },
     "svSE": {
       "description": "Det tog lång tid, men jag hittade Reethe. Han gömmer sig bra för att vara människa.\n\nOgron orolig att han kanske blivit galen efter så lång tid i träsket. Följ med mig så får vi svar från honom.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hm. Det är bra att Reethe inte längre smyger omkring i träsket, men synd att människor är så sköra att han inte kunde återhämta sig från ett litet pilsår.$b$bDet verkar som om detta spår inte ledde någonstans och vi måste leta på annat håll.",
+        "4f217224c15800f47944": "Hittade du Reethe?",
+        "d1bc80bc16b69e4c113e": "Det tog lång tid, men jag hittade Reethe. Han gömma sig bra för en människa.$b$bOgron orolig att han blivit galen efter så lång tid i träsket. Du följa med mig så vi få svar från honom."
+      },
       "eventObjectiveLabel": "Förhör Reethe tillsammans med Ogron",
       "objectiveLines": [
         {
@@ -599,6 +910,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9ee900bda627106e9cf36b21ea4314a1e4fea380b512a4012e98b7b323bd8825"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -628,6 +954,11 @@
     },
     "trTR": {
       "description": "Uzun sürdü ama Reethe'yi buldum. Bir insana göre iyi saklanır.\n\nOgron, bataklıkta bu kadar zaman geçirdikten sonra delirmiş olabileceğinden endişeli. Benimle gel; ondan cevap almaya gideriz.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Hıh. Reethe'in artık bataklıkta dolaşmayacak olması iyi, ama insanların küçük bir ok yarasından kurtulamayacak kadar kırılgan olması üzücü.$b$bGörünüşe göre gizemin bu izi hiçbir yere çıkmadı, başka yerde aramalıyız.",
+        "4f217224c15800f47944": "Reethe'i buldun mu?",
+        "d1bc80bc16b69e4c113e": "Uzun sürdü ama Reethe'i buldum. İnsan için iyi saklanmak.$b$bOgron, bataklıkta bunca zaman sonra onun delirmiş olmasından endişeli. Sen benimle gel, ondan cevap alacağız."
+      },
       "eventObjectiveLabel": "Ogron ile birlikte Reethe'yi sorgula",
       "objectiveLines": [
         {
@@ -645,6 +976,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9ee900bda627106e9cf36b21ea4314a1e4fea380b512a4012e98b7b323bd8825"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -674,6 +1020,11 @@
     },
     "ukUA": {
       "description": "Пошуки Ріта зайняли деякий час, але я знайшов його. Він добре сховався, як для людини.\n\nОґрон занепокоєний, що після стількох днів у болоті він міг зійти з розуму. Пішли, поговоримо з ним.",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "Хм. Добре, що Ріт більше не нишпоритиме болотом, але шкода, що люди такі кволі й він не зміг оговтатися від маленької рани стрілою.$b$bСхоже, ця нитка загадки нікуди не привела, тож треба шукати деінде.",
+        "4f217224c15800f47944": "Ти знайшов Ріта?",
+        "d1bc80bc16b69e4c113e": "Довго шукав, але знайшов Ріта. Добре ховатися як для людини.$b$bОґрон хвилюється, що він збожеволів після довгого часу в болоті. Ти йди зі мною, ми отримаємо від нього відповіді."
+      },
       "eventObjectiveLabel": "Допитайте Ріта разом з Оґроном",
       "objectiveLines": [
         {
@@ -692,6 +1043,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "9ee900bda627106e9cf36b21ea4314a1e4fea380b512a4012e98b7b323bd8825"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -723,6 +1089,11 @@
     },
     "zhCN": {
       "description": "我花了很长时间终于找到雷瑟了。他躲藏得很好。\n\n奥格隆担心他在沼泽地里待了这么久可能已经疯了，你跟我来，咱们一起去从他那里套出一些我们需要的答案。",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "嗯!雷瑟不用再鬼鬼祟祟躲在沼泽地里了，这真是太好了。不过人类都这麽虚弱，连这点小小的箭伤都恢复不了，真够丢脸的。\n\n这条线索似乎是没有进展了，我们得再找其他线索。\n",
+        "4f217224c15800f47944": "你找到雷瑟了吗?",
+        "d1bc80bc16b69e4c113e": "我花了很长时间终于找到雷瑟了。他躲藏得很好。\n\n奥格隆担心他在沼泽地里待了这么久可能已经疯了，你跟我来，咱们一起去从他那里套出一些我们需要的答案。"
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -739,6 +1110,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -766,6 +1155,11 @@
     },
     "zhTW": {
       "description": "我花了很長的時間終於找到了雷瑟。他躲藏得很好。\n\n奧格隆擔心他在沼澤地裡待了這麼久可能會發瘋，跟我來，我們一起去從他那裡套出一些我們需要的答案。",
+      "dialogue": {
+        "3dff265337b22ab16fc7": "嗯!雷瑟不用再鬼鬼祟祟躲在沼澤地裏了，這真是太好了。不過人類都這麼虛弱，連這點小小的箭傷都恢復不了，真夠丟臉的。\r\n\r\n這條線索似乎是沒有進展了，我們得再找其他線索。",
+        "4f217224c15800f47944": "你找到雷瑟了嗎?",
+        "d1bc80bc16b69e4c113e": "花了很久，但我找到瑞斯了。以人類來說，他藏得很好。$b$b奧格隆擔心他在沼澤待太久會瘋掉。你跟我來，我們去問他答案。"
+      },
       "eventObjectiveLabel": "Question Reethe with Ogron",
       "objectiveLines": [
         {
@@ -782,6 +1176,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.3dff265337b22ab16fc7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.4f217224c15800f47944": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d1bc80bc16b69e4c113e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",

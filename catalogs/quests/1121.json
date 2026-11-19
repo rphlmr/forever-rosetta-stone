@@ -1,8 +1,36 @@
 {
   "areaId": 400,
+  "dialogueContexts": {
+    "4c87805883299f83804c": {
+      "lineId": "q:1121:accept",
+      "npcId": 4452,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "a159d0d2682adfe1ce03": {
+      "lineId": "q:1121:progress",
+      "npcId": 4496,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "ebf522906fb8bcc2c94b": {
+      "lineId": "q:1121:complete",
+      "npcId": 4496,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Musíme Bláznův stout vyzkoušet na jedné z boxových posádek. Jestli ho chceš zkusit na goblinech, tak tady, vezmi stout a dej ho goblinskému šéfovi boxů.\n\nA moc to neodkládej. Tenhle stout se nakonec zkazí.",
+      "dialogue": {
+        "4c87805883299f83804c": "Musíme Bláznovo černé pivo vyzkoušet na jedné z posádek v boxech. Pokud ho chceš vyzkoušet na goblinech, tady ho máš a dej ho jejich šéfovi v boxech.$B$BA nečekej příliš dlouho. To pivo se nakonec zkazí.",
+        "a159d0d2682adfe1ce03": "Na co koukáš?",
+        "ebf522906fb8bcc2c94b": "Co to tu máme? Chlast, co?$B$BNo, trocha nám neuškodí..."
+      },
       "summary": "Dones Fool's Stout šéfovi gobliního depa (Goblin Pit Boss).",
       "title": "Opij gobliny",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +75,11 @@
     },
     "daDK": {
       "description": "Vi skal prøve Fool's Stout på et af pitmandskaberne. Hvis du vil prøve den på goblinerne, så værsgo, tag stouten og giv den til goblinernes pitchef.\n\nOg vent ikke for længe. Denne stout bliver dårlig på et tidspunkt.",
+      "dialogue": {
+        "4c87805883299f83804c": "Vi må prøve Fool’s Stout på et af pitholdene. Hvis du vil prøve det på goblinerne, så tag øllet her og giv det til deres pitchef.$B$BVent ikke for længe. Øllet bliver dårligt med tiden.",
+        "a159d0d2682adfe1ce03": "Hvad glor du på?",
+        "ebf522906fb8bcc2c94b": "Hvad har vi her? Sprut, hva’?$B$BJeg har da ikke noget imod en lille smule..."
+      },
       "summary": "Bring Fool's Stout til goblinernes pitboss.",
       "title": "Gør goblinerne fulde",
       "translationMetadata": {
@@ -41,6 +89,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c18fc6dffe353d46b12d45359e9bd8e2b605f68323a518ac5f0bf74b681655b"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +122,11 @@
     },
     "deDE": {
       "description": "Wir müssen Fools Starkbier an einem aus der Boxencrew ausprobieren. Wenn Ihr es an den Goblins erproben wollt, hier - nehmt das Starkbier und gebt es dem Goblin-Boxenboss.\n\nUnd wartet nicht zu lange. Das Starkbier wird mit der Zeit schlecht.",
+      "dialogue": {
+        "4c87805883299f83804c": "Wir müssen Fools Starkbier an einem aus der Boxencrew ausprobieren. Wenn Ihr es an den Goblins erproben wollt, hier - nehmt das Starkbier und gebt es dem Goblin-Boxenboss.\n\nUnd wartet nicht zu lange. Das Starkbier wird mit der Zeit schlecht.",
+        "a159d0d2682adfe1ce03": "Was glotzt Ihr denn so?",
+        "ebf522906fb8bcc2c94b": "Was haben wir denn da? Fusel, hm?\n \n Also mich stört es nicht, wenn wir ein klein wenig. . . "
+      },
       "summary": "Bringt Fools Starkbier zum Goblin-Boxenboss.",
       "title": "Die Goblins betrunken machen",
       "translationMetadata": {
@@ -67,6 +135,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +169,11 @@
     },
     "enUS": {
       "description": "We need to try the Fool's Stout on one of the pit crews.  If you want to try it on the goblins, then here -- take the stout and give it to the goblin pit boss.\n\nAnd don't wait too long.  This stout will go bad eventually.",
+      "dialogue": {
+        "4c87805883299f83804c": "We need to try the Fool's Stout on one of the pit crews.  If you want to try it on the goblins, then here -- take the stout and give it to the goblin pit boss.$B$BAnd don't wait too long.  This stout will go bad eventually.",
+        "a159d0d2682adfe1ce03": "What are you looking at?",
+        "ebf522906fb8bcc2c94b": "What do we have here?  Booze, eh?$B$BWell, I don't mind if we have just a little..."
+      },
       "summary": "Bring the Fool's Stout to the Goblin Pit Boss.",
       "title": "Get the Goblins Drunk",
       "translationMetadata": {
@@ -91,6 +182,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +217,11 @@
     },
     "esES": {
       "description": "Tenemos que probar la cerveza de tontos con uno de los equipos técnicos. Si quieres probarla con los goblins, coge la cerveza y dásela al jefe técnico de los goblins.\n\nY no tardes mucho pues la cerveza podría estropearse.",
+      "dialogue": {
+        "4c87805883299f83804c": "Tenemos que probar la cerveza de tontos con uno de los equipos técnicos. Si quieres probarla con los goblins, coge la cerveza y dásela al jefe técnico de los goblins.\n\nY no tardes mucho pues la cerveza podría estropearse.",
+        "a159d0d2682adfe1ce03": "¿Qué miras?",
+        "ebf522906fb8bcc2c94b": "¿Qué tenemos aquí?  Alcohol, ¿eh?\n\n Bueno, no me importa si tenemos solo un poco..."
+      },
       "summary": "Llévale la cerveza de tontos al jefe técnico de los goblins.",
       "title": "Emborrachar a los goblin",
       "translationMetadata": {
@@ -116,6 +230,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +264,11 @@
     },
     "esMX": {
       "description": "Tenemos que probar la cerveza de tontos con uno de los equipos técnicos. Si quieres probarla con los goblins, coge la cerveza y dásela al encargado de foso goblin.\n\nY no tardes mucho pues la cerveza podría estropearse.",
+      "dialogue": {
+        "4c87805883299f83804c": "Tenemos que probar la cerveza de tontos con uno de los equipos técnicos. Si quieres probarla con los goblins, coge la cerveza y dásela al encargado de foso goblin.\n\nY no tardes mucho pues la cerveza podría estropearse.",
+        "a159d0d2682adfe1ce03": "¿Qué miras?",
+        "ebf522906fb8bcc2c94b": "¿Qué tenemos aquí? Bebida, ¿eh?\n\nBueno, no importa si solo bebemos un poco..."
+      },
       "summary": "Lleva la cerveza de tontos al encargado de foso goblin.",
       "title": "Emborrachar a los goblins",
       "translationMetadata": {
@@ -140,6 +277,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +311,11 @@
     },
     "frFR": {
       "description": "Nous devons essayer cette bière du Sot sur l'une des équipes de mécanos. Si vous voulez l'essayer sur l'équipe des gobelins, alors tenez, prenez la bière et donnez-la au chef des mécaniciens gobelins.\n\nEt n'attendez pas trop. Cette bière va se gâter après un temps.",
+      "dialogue": {
+        "4c87805883299f83804c": "Nous devons essayer cette bière du Sot sur l'une des équipes de mécanos. Si vous voulez l'essayer sur l'équipe des gobelins, alors tenez, prenez la bière et donnez-la au chef des mécaniciens gobelins.\n\nEt n'attendez pas trop. Cette bière va se gâter après un temps.",
+        "a159d0d2682adfe1ce03": "Qu'est-ce que vous regardez ?",
+        "ebf522906fb8bcc2c94b": "Mais qu'avons-nous là ? De la bibine, hein ?\n \n Bien, ça ne me dérange pas si nous en avons juste un petit peu…"
+      },
       "summary": "Apporter la bière du sot au Chef-mécanicien gobelin.",
       "title": "Saoulez les gobelins",
       "translationMetadata": {
@@ -164,6 +324,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +358,11 @@
     },
     "hrHR": {
       "description": "Moramo iskušati budalino tamno pivo na jednoj od ekipa u boksovima. Ako ga želiš iskušati na goblinima, evo, uzmi pivo i daj ga vođi goblinskog boksa.\n\nI nemoj predugo čekati. Ovo će se pivo s vremenom pokvariti.",
+      "dialogue": {
+        "4c87805883299f83804c": "Moramo isprobati Fool’s Stout na jednoj od ekipa u boksu. Ako ga želiš isprobati na goblinima, evo, uzmi pivo i daj ga šefu goblinskog boksa.$B$BI nemoj predugo čekati. Pivo će se s vremenom pokvariti.",
+        "a159d0d2682adfe1ce03": "Što gledaš?",
+        "ebf522906fb8bcc2c94b": "Što imamo ovdje? Cuga, ha?$B$BPa, ne smeta mi ako malo popijemo..."
+      },
       "summary": "Donesi budalino tamno pivo vođi goblinskog boksa.",
       "title": "Napij gobline",
       "translationMetadata": {
@@ -189,6 +372,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c18fc6dffe353d46b12d45359e9bd8e2b605f68323a518ac5f0bf74b681655b"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +405,11 @@
     },
     "itIT": {
       "description": "Dobbiamo provare la Birra dello Sciocco su una delle squadre ai box. Se vuoi provarla sui goblin, ecco: prendi la birra e dalla al caposquadra goblin.\n\nE non aspettare troppo. Prima o poi questa birra andrà a male.",
+      "dialogue": {
+        "4c87805883299f83804c": "Dobbiamo provare la Birra Scura del Folle su una delle squadre ai box. Se vuoi provarla sui goblin, allora tieni — prendi la birra e dalla al caposquadra dei goblin.\n\nE non aspettare troppo. Prima o poi questa birra andrà a male.",
+        "a159d0d2682adfe1ce03": "Che hai da guardare?",
+        "ebf522906fb8bcc2c94b": "Cos'abbiamo qui? Alcol, eh?\n\nBe', non mi dispiace se ne beviamo solo un goccio..."
+      },
       "summary": "Porta la birra scura dello sciocco al capo box dei goblin.",
       "title": "Fai ubriacare i goblin",
       "translationMetadata": {
@@ -216,6 +419,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c18fc6dffe353d46b12d45359e9bd8e2b605f68323a518ac5f0bf74b681655b"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +455,11 @@
     },
     "koKR": {
       "description": "이 멍텅구리 스타우트 맥주를 정비공 하나에게 먹여봐야겠군. 고블린에게 먹여볼 생각이라면... 자, 받으시오. 이 스타우트 맥주를 고블린 정비주임에게 갖다주시오.\n\n너무 오래 지체하지 않는 게 좋을 거요. 스타우트 맥주의 맛이 변할지도 모르니까 말이오.",
+      "dialogue": {
+        "4c87805883299f83804c": "이 멍텅구리 스타우트 맥주를 정비공 하나에게 먹여봐야겠군. 고블린에게 먹여볼 생각이라면... 자, 받으시오. 이 스타우트 맥주를 고블린 정비주임에게 갖다주시오.\n\n너무 오래 지체하지 않는 게 좋을 거요. 스타우트 맥주의 맛이 변할지도 모르니까 말이오.",
+        "a159d0d2682adfe1ce03": "뭘 훔쳐 보는 겐가?",
+        "ebf522906fb8bcc2c94b": "이게 뭐야? 술이로군.\n\n뭐, 근무 중이긴 하지만 조금 맛만 본다면 괜찮겠지..."
+      },
       "summary": "고블린 정비주임에게 멍텅구리 스타우트 맥주를 가져가야 합니다.",
       "title": "고블린 취하게 하기",
       "translationMetadata": {
@@ -242,6 +468,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +502,11 @@
     },
     "plPL": {
       "description": "Musimy wypróbować Stout Głupca na jednej z ekip serwisowych. Jeśli chcesz sprawdzić go na goblinach, proszę, weź stout i daj szefowi goblińskiej ekipy.\n\nNie czekaj zbyt długo. Ten stout w końcu się zepsuje.",
+      "dialogue": {
+        "4c87805883299f83804c": "Musimy wypróbować Piwo Głupca na jednej z ekip w boksach. Jeśli chcesz wypróbować je na goblinach, weź je i daj goblińskiemu szefowi boksu.$B$BTylko nie zwlekaj zbyt długo. Piwo w końcu się zepsuje.",
+        "a159d0d2682adfe1ce03": "Na co się gapisz?",
+        "ebf522906fb8bcc2c94b": "Co my tu mamy? Alkohol, co?$B$BCóż, nie zaszkodzi nam odrobina..."
+      },
       "summary": "Przynieś Stout Głupca szefowi goblińskiej ekipy serwisowej.",
       "title": "Upić gobliny",
       "translationMetadata": {
@@ -267,6 +516,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c18fc6dffe353d46b12d45359e9bd8e2b605f68323a518ac5f0bf74b681655b"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +549,11 @@
     },
     "ptBR": {
       "description": "Precisamos testar a Cerveja Escura do Tonto com uma das equipes. Se quiser testar com os goblins, pode levar: é só dar a cerveja para o chefe dos boxes goblin.\n\nMas não fique enrolando. Uma hora a cerveja estraga.",
+      "dialogue": {
+        "4c87805883299f83804c": "Precisamos testar a Cerveja Escura do Tonto com uma das equipes. Se quiser testar com os goblins, pode levar: é só dar a cerveja para o chefe dos boxes goblin.\n\nMas não fique enrolando. Uma hora a cerveja estraga.",
+        "a159d0d2682adfe1ce03": "O que está olhando?",
+        "ebf522906fb8bcc2c94b": "O que temos aqui? Bebida, é?$B$BBem, não vejo problema em tomar um pouquinho..."
+      },
       "summary": "Leve a Cerveja Escura do Tonto para o Chefe dos Boxes Goblin.",
       "title": "Deixe os goblins bêbados",
       "translationMetadata": {
@@ -293,6 +562,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +594,11 @@
     },
     "ruRU": {
       "description": "Надо напоить \"Дурацким Крепким\" одну из команд на пит-стопах.Хочешь посмотреть, как оно подействует на гоблинов? Тогда возьми эль и передай его начальнику гномского гаража.\n\nИ поторопись – эта бурда быстро выдыхается.",
+      "dialogue": {
+        "4c87805883299f83804c": "Надо напоить \"Дурацким Крепким\" одну из команд на пит-стопах.Хочешь посмотреть, как оно подействует на гоблинов? Тогда возьми эль и передай его начальнику гномского гаража.\n\nИ поторопись – эта бурда быстро выдыхается.",
+        "a159d0d2682adfe1ce03": "Чего ты смотришь?",
+        "ebf522906fb8bcc2c94b": "Что у нас здесь? Выпивка, да?\n\nНу, хорошо, если немного..."
+      },
       "summary": "Отнесите \"Дурацкое Крепкое\" начальнику гоблинского гаража.",
       "title": "Напоить гоблинов",
       "translationMetadata": {
@@ -317,6 +607,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +641,11 @@
     },
     "svSE": {
       "description": "Vi måste prova dårens stout på ett av depålagen. Vill du prova på goblinerna så ta stouten här och ge den till goblinernas depåchef.\n\nVänta inte för länge. Stouten blir dålig så småningom.",
+      "dialogue": {
+        "4c87805883299f83804c": "Vi måste prova Fool’s Stout på ett av depåteamen. Om du vill prova det på goblinerna, ta ölet och ge det till deras depåchef.$B$BVänta inte för länge. Ölet blir dåligt så småningom.",
+        "a159d0d2682adfe1ce03": "Vad glor du på?",
+        "ebf522906fb8bcc2c94b": "Vad har vi här? Sprit, va?$B$BJag har inget emot att ta lite grann..."
+      },
       "summary": "Ta med Fool's Stout till goblinernas depåchef.",
       "title": "Sup goblinerna fulla",
       "translationMetadata": {
@@ -342,6 +655,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c18fc6dffe353d46b12d45359e9bd8e2b605f68323a518ac5f0bf74b681655b"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +688,11 @@
     },
     "trTR": {
       "description": "Aptalın Koyu Birası'nı pit ekiplerinden birinde denemeliyiz. Goblinlerde denemek istiyorsan al, birayı goblin pit şefine ver.\n\nÇok da bekleme. Bu bira eninde sonunda bozulacak.",
+      "dialogue": {
+        "4c87805883299f83804c": "Aptalın Koyu Birası’nı pit ekiplerinden birinde denememiz gerek. Goblinlerde denemek istiyorsan al, birayı goblin pit şefine ver.$B$BÇok da bekleme. Bu bira sonunda bozulur.",
+        "a159d0d2682adfe1ce03": "Neye bakıyorsun?",
+        "ebf522906fb8bcc2c94b": "Burada ne varmış? İçki, ha?$B$BBiraz içmemizde sakınca yok..."
+      },
       "summary": "Budala Birası'nı Goblin Çukur Şefi'ne getir.",
       "title": "Goblinleri Sarhoş Et",
       "translationMetadata": {
@@ -369,6 +702,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c18fc6dffe353d46b12d45359e9bd8e2b605f68323a518ac5f0bf74b681655b"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +735,11 @@
     },
     "ukUA": {
       "description": "Нам потрібно спробувати напоїти одного члена команди на піт-стопі. Якщо хочеш випробувати його на гоблінах, ось, візьми міцного пива та подай його гобліну-начальнику піт-стопу.\n\nНе затримуйся. Зрештою, цей шмурдяк швидко вивітрюється.",
+      "dialogue": {
+        "4c87805883299f83804c": "Треба випробувати Стаут Дурня на одній із команд у боксах. Якщо хочеш спробувати його на гоблінах, візьми пиво й віддай головному гобліну в боксах.$B$BІ не барися. З часом пиво зіпсується.",
+        "a159d0d2682adfe1ce03": "На що витріщаєшся?",
+        "ebf522906fb8bcc2c94b": "Що це в нас тут? Випивка, га?$B$BЩо ж, я не проти трохи випити..."
+      },
       "summary": "Принесіть \"Йолопиво\" гобліну-начальнику піт-стопу.",
       "title": "Напоїти гоблінів",
       "translationMetadata": {
@@ -397,6 +750,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "3c18fc6dffe353d46b12d45359e9bd8e2b605f68323a518ac5f0bf74b681655b"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +785,11 @@
     },
     "zhCN": {
       "description": "我们要用蠢人酒在那些车队员工身上做做试验。如果你想在地精身上试验的话，那就拿去吧，把酒交给地精车队的老板。\n\n不要拖得太久，这种酒会慢慢变质的。",
+      "dialogue": {
+        "4c87805883299f83804c": "我们要用蠢人酒在那些车队员工身上做做试验。如果你想在地精身上试验的话，那就拿去吧，把酒交给地精车队的老板。\n\n不要拖得太久，这种酒会慢慢变质的。",
+        "a159d0d2682adfe1ce03": "你在看什麽?",
+        "ebf522906fb8bcc2c94b": "哦哦!好香啊!\n\n好吧，我并不介意喝上一小口……\n"
+      },
       "summary": "把蠢人酒交给地精车队老板。",
       "title": "灌醉地精",
       "translationMetadata": {
@@ -425,6 +798,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +832,11 @@
     },
     "zhTW": {
       "description": "我們要用蠢人酒在那些車隊員工身上做做試驗。如果你想在哥布林身上試驗的話，那就拿去吧，把酒交給哥布林車隊的老闆。\n\n不要拖得太久，這種酒會慢慢變質的。",
+      "dialogue": {
+        "4c87805883299f83804c": "我們要用蠢人酒在那些車隊員工身上做做試驗。如果你想在地精身上試驗的話，那就拿去吧，把酒交給地精車隊的老闆。\n\n不要拖得太久，這種酒會慢慢變質的。",
+        "a159d0d2682adfe1ce03": "你在看什麼?",
+        "ebf522906fb8bcc2c94b": "哦哦!好香啊!\n\n好吧，我並不介意喝上一小口……"
+      },
       "summary": "把蠢人酒交給地精車隊老板。",
       "title": "灌醉哥布林",
       "translationMetadata": {
@@ -449,6 +845,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.4c87805883299f83804c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a159d0d2682adfe1ce03": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.ebf522906fb8bcc2c94b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

@@ -12,9 +12,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "1f5770bcfa232a4ea191": {
+      "lineId": "q:1049:complete",
+      "npcId": 3978,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "2f4ef3369d3e3261923e": {
+      "lineId": "q:1049:accept",
+      "npcId": 3978,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "35a22908e5549fefb40b": {
+      "lineId": "q:1049:progress",
+      "npcId": 3978,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Earthen Ring měl s našimi morem stiženými bratry čisté úmysly. Kdo však může znát pohnutky těch, kteří našeptávají do uší Radě stařešinů?\n\nOpuštění, se kterými jsme se spojili, mají historii protkanou klamem. Náš pakt byl příliš unáhlený. Možná by bývalo moudré, kdyby Cairne dbal varování z Orgrimmaru.\n\nHluboko ve Scarlet Monastery leží Compendium of the Fallen, střežené šílenými lidskými fanatiky. Jejich metoda vzešla ze šílenství, ale jejich výzkum by se mohl ukázat jako užitečný.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "Kompendium padlých! Už jsem pochyboval, zda ta kniha vůbec existuje!$b$bDobře jsi posloužil taurenům z Thunder Bluffu, $n. Na tvou oddanost nezapomeneme.",
+        "2f4ef3369d3e3261923e": "Zemský kruh měl s našimi nakaženými bratry čisté úmysly. Kdo však ví, co vede ty, kdo našeptávají radě starších?$b$bOpuštění, s nimiž jsme uzavřeli spojenectví, mají za sebou historii plnou lží. Naše dohoda byla příliš ukvapená. Cairne měl možná vyslechnout varování z Orgrimmaru.$b$bHluboko v Šarlatovém klášteře leží Kompendium padlých, střežené šílenými lidskými fanatiky. Jejich metody jsou šílené, ale výzkum může být užitečný.",
+        "35a22908e5549fefb40b": "Cairne je statečný a ušlechtilý vůdce, svěřil bych mu život. V tomto politickém prostředí však nedůvěřuji jiným.$b$bAž shromáždím všechny dostupné znalosti, budu moci náčelníkovi dobře poradit.$b$bDostal ses do Tirisfalských pasek? Do Šarlatového kláštera? Kompendium padlých je jen jedním dílem složité skládačky..."
+      },
       "summary": "Získej Compendium of the Fallen z Kláštera v Tirisfal Glades a vrať se k mudrci Truthseekerovi do Thunder Bluff.",
       "title": "Kompendium padlých",
       "translationMetadata": {
@@ -24,6 +52,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "Earthen Ring havde rene hensigter over for vores pestplagede brødre. Men hvem kan kende motiverne hos dem, der hvisker Elder Council i øret?\n\nDe Forsagte, som vi har sluttet forbund med, har en historie fyldt med bedrag. Vores pagt blev indgået for hastigt. Måske havde Cairne gjort klogt i at lytte til advarslerne fra Orgrimmar.\n\nDybt inde i Scarlet Monastery findes Compendium of the Fallen, bevogtet af vanvittige menneskelige fanatikere. Deres metode er født af vanvid, men deres forskning kan vise sig nyttig.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "De faldnes kompendium! Jeg var begyndt at tvivle på, om bogen fandtes!$b$bDu har tjent taurerne i Thunder Bluff godt, $n. Din indsats vil ikke blive glemt.",
+        "2f4ef3369d3e3261923e": "Jordringen havde rene hensigter med vores plagede brødre. Men hvem kender motiverne hos dem, der hvisker de ældstes råd i øret?$b$bDe Forsagte, vi har allieret os med, har en historie fuld af bedrag. Vores pagt var forhastet. Cairne burde måske have lyttet til advarslerne fra Orgrimmar.$b$bDybt i Scarlet Monastery ligger De faldnes kompendium, bevogtet af vanvittige menneskelige fanatikere. Deres metoder er gale, men forskningen kan være nyttig.",
+        "35a22908e5549fefb40b": "Cairne er en modig og ædel leder, som jeg ville betro mit liv. Men i dette politiske klima stoler jeg ikke på alle andre.$b$bNår jeg har samlet al tilgængelig viden, kan jeg give høvdingen gode råd.$b$bHar du været i Tirisfal Glades og Scarlet Monastery? De faldnes kompendium er blot én brik i dette komplicerede puslespil..."
+      },
       "summary": "Hent de faldnes kompendium fra klosteret i Tirisfal Glades, og vend tilbage til vismand Truthseeker i Thunder Bluff.",
       "title": "De faldnes kompendium",
       "translationMetadata": {
@@ -53,6 +101,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1593017a3093d221c6a81e72623535fc27bd1cfbf3fc641d69cfdae35d7b5243"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -71,6 +134,11 @@
     },
     "deDE": {
       "description": "Der irdene Ring hatte nur die besten Absichten, was unsere geplagten Brüder betraf. Aber wer weiß schon, welche Absichten jene verfolgen, die dem Ältestenrat Dinge einflüstern?\n\nDie Geschichte der Verlassenen, mit denen wir uns verbündet haben, ist von Lug und Trug durchzogen. Zu übereilt gingen wir unseren Pakt ein. Vielleicht hätte Cairne gut daran getan, die Warnungen aus Orgrimmar zu beherzigen.\n\nTief im Inneren des Scharlachroten Klosters liegt das 'Kompendium der Gefallenen' verborgen, das von irren menschlichen Zeloten bewacht wird. Ihr Tun ist von ihrem Wahnsinn geprägt, aber ihre Forschungen könnten nützlich für uns sein.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "Das 'Kompendium der Gefallenen'! Ich begann mich schon zu fragen, ob das Buch überhaupt existiert!\n \n Ihr habt den Tauren von Thunder Bluff sehr geholfen, $N. Euer Engagement soll belohnt werden. ",
+        "2f4ef3369d3e3261923e": "Der Irdene Ring hatte nur die besten Absichten, was unsere geplagten Brüder betraf. Aber wer weiß schon, welche Absichten jene verfolgen, die dem Ältestenrat Dinge einflüstern?\n\nDie Geschichte der Verlassenen, mit denen wir uns verbündet haben, ist von Lug und Trug durchzogen. Zu übereilt gingen wir unseren Pakt ein. Vielleicht hätte Cairne gut daran getan, die Warnungen aus Orgrimmar zu beherzigen.\n\nTief im Inneren des Scharlachroten Klosters liegt das 'Kompendium der Gefallenen' verborgen, das von irren menschlichen Zeloten bewacht wird. Ihr Tun ist von ihrem Wahnsinn geprägt, aber ihre Forschungen könnten nützlich für uns sein.",
+        "35a22908e5549fefb40b": "Cairne ist ein mutiger und edler Anführer, und ich würde ihm mein eigenes Leben anvertrauen. Es gibt jedoch andere, denen ich in diesem politischen Klima nicht trauen kann. \n \n Sobald ich die Möglichkeit habe, alles Wissen zusammenzutragen, dessen ich habhaft werden kann, würde ich dem Häuptling ein solider Ratgeber sein. \n \n Wäre es Euch vielleicht möglich, nach Tirisfal zu reisen? Zum Scharlachroten Kloster? Das 'Kompendium der Gefallenen' ist nur ein Teil dieses komplizierten Puzzles. . . "
+      },
       "summary": "Holt das 'Kompendium der Gefallenen' aus dem Kloster in Tirisfal und bringt es zu Sage Truthseeker in Thunder Bluff.",
       "title": "Kompendium der Gefallenen",
       "translationMetadata": {
@@ -79,6 +147,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -95,6 +181,11 @@
     },
     "enUS": {
       "description": "The Earthen Ring had pure intentions towards our plagued brethren. But who is to know the motivations of those whispering in the ears of the Elder Council?\n\nThe Forsaken whom we have allied with have a history wrought with deceit. Too hasty was our pact. Perhaps Cairne would have been wise to heed the warnings from Orgrimmar.\n\nDeep within the Scarlet Monastery lies the Compendium of the Fallen, guarded by crazed human zealots. Their method is forged from insanity but their research might prove useful.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "The Compendium of the Fallen! I was beginning to wonder if the very book existed!$b$bYou have served the tauren of Thunder Bluff well, $n. Your dedication shall not be forgotten.",
+        "2f4ef3369d3e3261923e": "The Earthen Ring had pure intentions towards our plagued brethren. But who is to know the motivations of those whispering in the ears of the Elder Council?$b$bThe Forsaken whom we have allied with have a history wrought with deceit. Too hasty was our pact. Perhaps Cairne would have been wise to heed the warnings from Orgrimmar.$b$bDeep within the Scarlet Monastery lies the Compendium of the Fallen, guarded by crazed human zealots. Their method is forged from insanity but their research might prove useful.",
+        "35a22908e5549fefb40b": "Cairne is a brave and noble leader and I would trust him with my own life. But it is others that I do not trust in this political climate.$b$bOnce I have a chance to gather all the knowledge available I can provide sound council to the Chieftain.$b$bHave you had a chance to travel to Tirisfal Glades? To the Scarlet Monastery? The Compendium of the Fallen is just one piece in this complicated puzzle..."
+      },
       "summary": "Retrieve the Compendium of the Fallen from the Monastery in Tirisfal Glades and return to Sage Truthseeker in Thunder Bluff.",
       "title": "Compendium of the Fallen",
       "translationMetadata": {
@@ -103,6 +194,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -120,6 +229,11 @@
     },
     "esES": {
       "description": "Las intenciones del Anillo de la Tierra para con nuestros hermanos eran puras. ¿Pero quién sabe las motivaciones de los que confabulaban con el Consejo de los Ancianos?\n\nLa historia de los Renegados con los que nos aliamos está plagada de grandes engaños, de ahí que nuestro pacto con ellos haya sido breve. Quizás Cairne fue lo suficientemente inteligente para atender a las advertencias de Orgrimmar...\n\nEn lo más profundo del Monasterio Escarlata se encuentra el Compendio de los Caídos, custodiado por agresivos y fanáticos humanos. Su método proviene de la locura pero su trabajo de investigación puede resultar de utilidad.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "¡El Compendio de los Caídos! Me empezaba a preguntar si ese libro realmente existía.\n\nHas servido fielmente a los tauren de Cima del Trueno, $n. Tu dedicación no se olvidará.",
+        "2f4ef3369d3e3261923e": "Las intenciones del Anillo de la Tierra para con nuestros hermanos eran puras. ¿Pero quién sabe las motivaciones de los que confabulaban con el Consejo de los Ancianos?\n\nLa historia de los Renegados con los que nos aliamos está plagada de grandes engaños, de ahí que nuestro pacto con ellos haya sido breve. Quizás Cairne fue lo suficientemente inteligente para atender a las advertencias de Orgrimmar...\n\nEn lo más profundo del Monasterio Escarlata se encuentra el Compendio de los Caídos, custodiado por agresivos y fanáticos humanos. Su método proviene de la locura pero su trabajo de investigación puede resultar de utilidad.",
+        "35a22908e5549fefb40b": "Cairne es un líder valiente y noble y confío en él ciegamente, cosa que no puedo decir de otros dirigentes.\n\nCuando cuente con todos los datos necesarios, podré aconsejar al Jefe.\n\n¿Has tenido oportunidad de viajar al Claro de Tirisfal? ¿Al Monasterio Escarlata? El Compendio de los Caídos es una pieza más de este complicado puzzle..."
+      },
       "summary": "Recupera el Compendio de los Caídos del Monasterio que se encuentra en los Claros de Tirisfal y regresa ante Sabio Buscaverdad, que está en Cima del Trueno.",
       "title": "El Compendio de los Caídos",
       "translationMetadata": {
@@ -128,6 +242,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -144,6 +276,11 @@
     },
     "esMX": {
       "description": "Las intenciones del Anillo de la Tierra para con nuestros hermanos eran puras. ¿Pero quién sabe las motivaciones de los que confabulaban con el Consejo de los Ancianos?\n\nLa historia de los Renegados con los que nos aliamos está plagada de grandes engaños, de ahí que nuestro pacto con ellos haya sido breve. Quizás Cairne fue lo suficientemente inteligente para atender a las advertencias de Orgrimmar...\n\nEn lo más profundo del Monasterio Escarlata se encuentra el Compendio de los Caídos, custodiado por agresivos y fanáticos humanos. Su método proviene de la locura pero su trabajo de investigación puede resultar de utilidad.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "¡El Compendio de los Caídos! Me empezaba a preguntar si ese libro realmente existía.\n\nHas servido fielmente a los tauren de Cima del Trueno, $n. Tu dedicación no se olvidará.",
+        "2f4ef3369d3e3261923e": "Las intenciones del Anillo de la Tierra para con nuestros hermanos eran puras. ¿Pero quién sabe las motivaciones de los que confabulaban con el Consejo de los Ancianos?\n\nLa historia de los Renegados con los que nos aliamos está plagada de grandes engaños, de ahí que nuestro pacto con ellos haya sido breve. Quizás Cairne fue lo suficientemente inteligente para atender a las advertencias de Orgrimmar...\n\nEn lo más profundo del Monasterio Escarlata se encuentra el Compendio de los Caídos, custodiado por agresivos y fanáticos humanos. Su método proviene de la locura pero su trabajo de investigación puede resultar de utilidad.",
+        "35a22908e5549fefb40b": "Cairne es un líder valiente y noble y confío en él ciegamente, cosa que no puedo decir de otros dirigentes.\n\nCuando cuente con todos los datos necesarios, podré aconsejar al Jefe.\n\n¿Has tenido oportunidad de viajar a los Claros de Tirisfal? ¿Al Monasterio Escarlata? El Compendio de los Caídos es una pieza más de este complicado puzle..."
+      },
       "summary": "Recupera el Compendio de los Caídos del Monasterio que se encuentra en los Claros de Tirisfal y regresa ante Sabio Buscador de la Verdad, que está en Cima del Trueno.",
       "title": "El Compendio de los Caídos",
       "translationMetadata": {
@@ -152,6 +289,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -168,6 +323,11 @@
     },
     "frFR": {
       "description": "Le Cercle terrestre avait des intentions pures envers nos frères tourmentés. Mais qui connaît les motivations de ceux qui chuchotent aux oreilles du Conseil des Anciens ?\n\nLes Réprouvés auxquels nous nous sommes alliés ont un lourd passé de duperie. Notre pacte a été trop hâtif. Peut-être Cairne aurait-il été sage de tenir compte des avertissements d'Orgrimmar.\n\nLe cœur du Monastère écarlate abrite le « Compendium des Déchus », gardé par des humains fanatiques et fous furieux. Ils tirent leur méthode de leur folie, mais leurs recherches pourraient s'avérer utiles.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "Le « Compendium des Déchus » ! Je commençais à me demander si ce livre existait vraiment !\n \n Vous avez bien servi les taurens de Thunder Bluff, $N. Votre dévouement ne sera pas oublié. ",
+        "2f4ef3369d3e3261923e": "Le Cercle terrestre avait des intentions pures envers nos frères tourmentés. Mais qui connaît les motivations de ceux qui chuchotent aux oreilles du Conseil des Anciens ?\n\nLes Réprouvés auxquels nous nous sommes alliés ont un lourd passé de duperie. Notre pacte a été trop hâtif. Peut-être Cairne aurait-il été sage de tenir compte des avertissements d'Orgrimmar.\n\nLe cœur du Monastère écarlate abrite le « Compendium des Déchus », gardé par des humains fanatiques et fous furieux. Ils tirent leur méthode de leur folie, mais leurs recherches pourraient s'avérer utiles.",
+        "35a22908e5549fefb40b": "Cairne est un chef noble et courageux et je lui confierais ma vie. Mais il en est d'autres dont je me méfie, compte tenu du climat politique actuel. \n \n Une fois que j'aurai la possibilité d'accéder à toute la connaissance disponible, je pourrai conseiller le Chef. \n \n Avez-vous eu la chance de visiter les Clairières de Tirisfal ? Le Monastère écarlate ? Le « Compendium des Déchus » n'est qu'une partie de cette énigme compliquée. . . "
+      },
       "summary": "Trouver le « Compendium des Déchus » au Monastère dans les Clairières de Tirisfal et retourner voir le Sage Truthseeker à Thunder Bluff.",
       "title": "Compendium des Déchus",
       "translationMetadata": {
@@ -176,6 +336,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -192,6 +370,11 @@
     },
     "hrHR": {
       "description": "Earthen Ring imao je čiste namjere prema našoj oboljeloj braći. Ali tko zna kakve su pobude onih koji šapuću u uši Vijeća starješina?\n\nOdbačeni s kojima smo se udružili imaju prošlost prožetu prijevarom. Prenaglili smo sa savezom. Možda bi Cairne mudrije postupio da je poslušao upozorenja iz Orgrimmara.\n\nDuboko u Grimiznom samostanu nalazi se Zbornik palih, koji čuvaju pomahnitali ljudski fanatici. Njihove su metode plod ludila, ali njihova bi istraživanja mogla biti korisna.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "Kompendij palih! Već sam se pitao postoji li ta knjiga uopće!$b$bDobro si služio taurenima Thunder Bluffa, $n. Tvoja predanost neće biti zaboravljena.",
+        "2f4ef3369d3e3261923e": "Zemljin krug imao je čiste namjere prema našoj zaraženoj braći. Ali tko zna što namjeravaju oni koji šapuću vijeću starješina?$b$bOdbačeni s kojima smo se udružili imaju povijest prijevara. Naš je savez bio prenagao. Cairne je možda trebao poslušati upozorenja iz Orgrimmara.$b$bDuboko u Grimiznom samostanu leži Kompendij palih, koji čuvaju ludi ljudski fanatici. Njihove su metode sulude, ali istraživanja bi mogla koristiti.",
+        "35a22908e5549fefb40b": "Cairne je hrabar i plemenit vođa kojem bih povjerio život. Ali u ovoj političkoj klimi ne vjerujem drugima.$b$bKad prikupim sve dostupno znanje, moći ću dobro savjetovati poglavicu.$b$bJesi li posjetio Tirisfal Glades i Grimizni samostan? Kompendij palih samo je jedan dio složene slagalice..."
+      },
       "summary": "Pribavi Zbornik palih iz samostana u Tirisfal Gladesu i vrati se mudracu Truthseekeru u Thunder Bluffu.",
       "title": "Zbornik palih",
       "translationMetadata": {
@@ -201,6 +384,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1593017a3093d221c6a81e72623535fc27bd1cfbf3fc641d69cfdae35d7b5243"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -219,6 +417,11 @@
     },
     "itIT": {
       "description": "Il Circolo della Terra aveva intenzioni pure verso i nostri fratelli colpiti dalla piaga. Ma chi può conoscere le motivazioni di coloro che sussurrano alle orecchie del Consiglio degli Anziani?\n\nI Reietti con cui ci siamo alleati hanno una storia intessuta d'inganni. Il nostro patto è stato troppo affrettato. Forse Cairne avrebbe fatto bene ad ascoltare gli avvertimenti di Orgrimmar.\n\nNelle profondità del Monastero Scarlatto si trova il Compendio dei Caduti, sorvegliato da fanatici umani impazziti. Il loro metodo nasce dalla follia, ma le loro ricerche potrebbero rivelarsi utili.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "Il Compendio del Caduto! Cominciavo a chiedermi se quel libro esistesse davvero!\n\nHai servito bene i tauren di Thunder Bluff, $N. La tua dedizione non sarà dimenticata.",
+        "2f4ef3369d3e3261923e": "Il Circolo della Terra aveva intenzioni pure nei confronti dei nostri fratelli appestati. Ma chi può conoscere le motivazioni di chi sussurra all'orecchio dell'Elder Council?\n\nI Reietti con cui ci siamo alleati hanno un passato intriso di inganni. Il nostro patto è stato troppo frettoloso. Forse Cairne avrebbe fatto bene a dare ascolto agli avvertimenti di Orgrimmar.\n\nNel profondo dello Scarlet Monastery si trova il Compendio del Caduto, sorvegliato da folli fanatici umani. Il loro metodo nasce dalla follia, ma le loro ricerche potrebbero rivelarsi utili.",
+        "35a22908e5549fefb40b": "Cairne è un capo coraggioso e nobile, e gli affiderei la mia stessa vita. Ma in questo clima politico sono altri quelli di cui non mi fido.\n\nQuando avrò modo di raccogliere tutte le conoscenze disponibili, potrò consigliare saggiamente il Capotribù.\n\nHai avuto modo di andare nelle Tirisfal Glades? Allo Scarlet Monastery? Il Compendio del Caduto è solo un pezzo di questo complicato rompicapo..."
+      },
       "summary": "Recupera il compendio dei caduti dal monastero nelle Tirisfal Glades e torna da Sage Truthseeker a Thunder Bluff.",
       "title": "Compendio dei Caduti",
       "translationMetadata": {
@@ -228,6 +431,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1593017a3093d221c6a81e72623535fc27bd1cfbf3fc641d69cfdae35d7b5243"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -246,6 +467,11 @@
     },
     "koKR": {
       "description": "대지 고리회에서는 역병에 걸린 우리의 새로운 동맹에게 순수한 의도를 갖고 있었지. 하지만 장로 회의의 귓전에 대고 속닥거리는 자들의 의도를 어떻게 안단 말인가?\n\n우리가 동맹을 맺은 포세이큰은 기만으로 가득 찬 역사가 있다네. 너무 서둘러서 조약을 맺었지. 케른님께서 오그리마의 경고를 듣는 게 좋았을지도 몰라.\n\n붉은십자군 수도원 깊숙한 곳에 인간 광신도들이 보호하는 타락의 개요라는 책이 있네. 그들의 방식은 광기에서 비롯된 것이지만 그 연구 내용은 쓸모가 있을 것일세.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "쓰러진 자의 개요서!  그 책이 존재하는지 궁금해지기 시작했습니다!\n\n당신은 썬더 블러프의 타우렌을 잘 섬겼습니다, $n.  당신의 헌신을 잊지 않겠습니다.",
+        "2f4ef3369d3e3261923e": "대지 고리회에서는 역병에 걸린 우리의 새로운 동맹에게 순수한 의도를 갖고 있었지. 하지만 장로 회의의 귓전에 대고 속닥거리는 자들의 의도를 어떻게 안단 말인가?\n\n우리가 동맹을 맺은 포세이큰은 기만으로 가득 찬 역사가 있다네. 너무 서둘러서 조약을 맺었지. 케른님께서 오그리마의 경고를 듣는 게 좋았을지도 몰라.\n\n붉은십자군 수도원 깊숙한 곳에 인간 광신도들이 보호하는 타락의 개요라는 책이 있네. 그들의 방식은 광기에서 비롯된 것이지만 그 연구 내용은 쓸모가 있을 것일세.",
+        "35a22908e5549fefb40b": "케른은 용감하고 고상한 지도자이며 저는 그를 믿고 제 목숨을 바칠 것입니다.  하지만 다른 사람들은 이런 정치적 분위기를 믿지 않습니다.\n\n사용 가능한 모든 지식을 모을 기회가 생기면 족장에게 건전한 조언을 제공할 수 있습니다.\n\n티리스팔 숲으로 여행할 기회가 있었나요? ?  붉은십자군 수도원으로?  쓰러진 자의 기록서는 이 복잡한 퍼즐의 한 조각에 불과합니다..."
+      },
       "summary": "티리스팔 숲의 붉은십자군 수도원에서 타락의 개요를 찾아 썬더 블러프에 있는 현자 트루스시커에게 가져가야 합니다.",
       "title": "타락의 개요",
       "translationMetadata": {
@@ -254,6 +480,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -270,6 +514,11 @@
     },
     "plPL": {
       "description": "Pierścień Ziemi miał czyste zamiary wobec naszych dotkniętych plagą braci. Lecz kto zna motywy szepczących do uszu Rady Starszych?\n\nPorzuceni, z którymi się sprzymierzyliśmy, mają historię pełną oszustw. Zbyt pochopny był nasz pakt. Może Cairne postąpiłby mądrzej, słuchając ostrzeżeń z Orgrimmaru.\n\nGłęboko w Szkarłatnym Klasztorze leży Kompendium poległych, strzeżone przez oszalałych ludzkich fanatyków. Ich metody wywodzą się z obłędu, lecz badania mogą się przydać.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "Kompendium Poległych! Zaczynałem wątpić, czy ta księga istnieje!$b$bDobrze przysłużono się taurenom Thunder Bluff, $n. Twoje oddanie nie zostanie zapomniane.",
+        "2f4ef3369d3e3261923e": "Krąg Ziemi miał czyste intencje wobec naszych dotkniętych zarazą braci. Ale kto zna motywy tych, którzy szepczą do uszu rady starszych?$b$bOpuszczeni, z którymi zawarliśmy sojusz, mają historię pełną oszustw. Nasz pakt był pochopny. Cairne może powinien posłuchać ostrzeżeń z Orgrimmaru.$b$bGłęboko w Szkarłatnym Klasztorze leży Kompendium Poległych, strzeżone przez obłąkanych ludzkich fanatyków. Ich metody są szalone, ale badania mogą się przydać.",
+        "35a22908e5549fefb40b": "Cairne jest odważnym i szlachetnym przywódcą, któremu powierzyłbym życie. Ale w obecnej sytuacji politycznej nie ufam innym.$b$bGdy zbiorę całą dostępną wiedzę, będę mógł udzielić wodzowi dobrej rady.$b$bCzy udało się dotrzeć do Tirisfal Glades i Szkarłatnego Klasztoru? Kompendium Poległych to tylko jeden element złożonej układanki..."
+      },
       "summary": "Odzyskaj Kompendium poległych z klasztoru w Tirisfal Glades i wróć do mędrca Truthseekera w Thunder Bluff.",
       "title": "Kompendium poległych",
       "translationMetadata": {
@@ -279,6 +528,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1593017a3093d221c6a81e72623535fc27bd1cfbf3fc641d69cfdae35d7b5243"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -297,6 +561,11 @@
     },
     "ptBR": {
       "description": "A Harmonia Telúrica tinha boas intenções em relação à nossa amaldiçoada irmandade. Contudo, quem sabe as motivações por trás dos sussurros que chegam aos ouvidos do Conselho dos Anciãos?\n\nNós nos aliamos aos Renegados, mas a história deles é repleta de traição. Nosso pacto foi precipitado. Talvez Caerne devesse ter dado mais atenção aos avisos de Orgrimmar.\n\nO âmago do Monastério Escarlate esconde o Compêndio dos Caídos, guardado por fanáticos zelotes humanos. Por mais que o método deles seja forjado na insanidade, a pesquisa deles pode nos ser útil.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "O Compêndio dos Caídos! Eu já começava a duvidar que o livro existisse!$b$bVocê serviu bem aos taurens de Penhasco do Trovão, $n. Sua dedicação não será esquecida.",
+        "2f4ef3369d3e3261923e": "A Harmonia Telúrica tinha boas intenções em relação à nossa amaldiçoada irmandade. Contudo, quem sabe as motivações por trás dos sussurros que chegam aos ouvidos do Conselho dos Anciãos?\n\nNós nos aliamos aos Renegados, mas a história deles é repleta de traição. Nosso pacto foi precipitado. Talvez Caerne devesse ter dado mais atenção aos avisos de Orgrimmar.\n\nO âmago do Monastério Escarlate esconde o Compêndio dos Caídos, guardado por fanáticos zelotes humanos. Por mais que o método deles seja forjado na insanidade, a pesquisa deles pode nos ser útil.",
+        "35a22908e5549fefb40b": "Cairne é um líder corajoso e nobre a quem eu confiaria minha vida. Mas não confio em outras pessoas neste clima político.$b$bQuando reunir todo o conhecimento disponível, poderei aconselhar bem o chefe.$b$bVocê já viajou às Clareiras de Tirisfal? Ao Monastério Escarlate? O Compêndio dos Caídos é apenas uma peça desse complicado quebra-cabeça..."
+      },
       "summary": "Recupere o Compêndio dos Caídos no Monastério nas Clareiras de Tirisfal e volte a falar com o Sábio Devoto da Verdade no Penhasco do Trovão.",
       "title": "O Compêndio dos Caídos",
       "translationMetadata": {
@@ -305,6 +574,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -321,6 +606,11 @@
     },
     "ruRU": {
       "description": "Намерения Служителей Земли относительно наших пораженных болезнью братьев чисты. Но кому ведомы замыслы тех, кто нашептывает всякое Совету Старейшин?\n\nУ Отрекшихся, с которым мы ныне в союзе, вся история полна лжи. Слишком мы поторопились с союзом. Возможно, Кэрн прислушается к предупреждениям из Оргриммара.\n\nВ недрах Монастыря Алого ордена находится \"Компендиум павших\", который стерегут безумные фанатики-люди. В том, что они творят, сквозит безумие, однако их исследования могут оказаться для нас полезными.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "\"Компендиум павших\"! А я уж начал было сомневаться в том, что он вообще существует!\n\nТы сослужил добрую службу тауренам Громового Утеса, $N. Твоя преданность не будет забыта.",
+        "2f4ef3369d3e3261923e": "Намерения Служителей Земли относительно наших пораженных болезнью братьев чисты. Но кому ведомы замыслы тех, кто нашептывает всякое Совету Старейшин?\n\nУ Отрекшихся, с которым мы ныне в союзе, вся история полна лжи. Слишком мы поторопились с союзом. Возможно, Кэрн прислушается к предупреждениям из Оргриммара.\n\nВ недрах Монастыря Алого ордена находится \"Компендиум павших\", который стерегут безумные фанатики-люди. В том, что они творят, сквозит безумие, однако их исследования могут оказаться для нас полезными.",
+        "35a22908e5549fefb40b": "Кэрн – отважный и благородный вождь, и я доверил бы ему свою жизнь. Но есть и те, кому я в нынешние времена нипочем бы не доверился.\n\nКак только смогу собрать все возможные сведения, я сумею дать вождю небезосновательный совет.\n\nТебе удалось добраться до Тирисфальских лесов? Удалось проникнуть в Монастырь Алого ордена? \"Компендиум павших\" – лишь кусочек сложной мозаики..."
+      },
       "summary": "Добудьте \"Компендиум павших\" из монастыря в Тирисфальских лесах и возвращайтесь к Ведуну Искателю Истины в Громовой Утес.",
       "title": "\"Компендиум павших\"",
       "translationMetadata": {
@@ -329,6 +619,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -345,6 +653,11 @@
     },
     "svSE": {
       "description": "Jordringen hade rena avsikter mot våra pestdrabbade bröder. Men vem vet motiven hos dem som viskar i äldsterådets öron?\n\nDe övergivna vi allierat oss med har en historia av svek. Pakten slöts för snabbt. Kanske borde Cairne ha lyssnat på varningarna från Orgrimmar.\n\nDjupt i Scarlet Monastery finns De fallnas kompendium, vaktat av galna mänskliga fanatiker. Metoderna är vansinniga, men forskningen kan vara användbar.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "De fallnas kompendium! Jag började undra om boken ens fanns!$b$bDu har tjänat Thunder Bluffs taurer väl, $n. Din hängivenhet ska inte glömmas.",
+        "2f4ef3369d3e3261923e": "Jordringen hade rena avsikter gentemot våra pestdrabbade bröder. Men vem vet vad de som viskar i äldsterådets öron vill?$b$bDe övergivna som vi slutit förbund med har en historia av svek. Vår pakt var förhastad. Cairne borde kanske ha lyssnat på varningarna från Orgrimmar.$b$bDjupt i Scarlet Monastery ligger De fallnas kompendium, bevakat av galna mänskliga fanatiker. Deras metoder är vansinniga, men forskningen kan vara användbar.",
+        "35a22908e5549fefb40b": "Cairne är en modig och ädel ledare som jag skulle anförtro mitt liv. Men i detta politiska klimat litar jag inte på alla andra.$b$bNär jag samlat all tillgänglig kunskap kan jag ge hövdingen goda råd.$b$bHar du rest till Tirisfal Glades och Scarlet Monastery? De fallnas kompendium är bara en bit i detta komplicerade pussel..."
+      },
       "summary": "Hämta de fallnas kompendium från klostret i Tirisfal Glades och återvänd till den vise Truthseeker i Thunder Bluff.",
       "title": "De fallnas kompendium",
       "translationMetadata": {
@@ -354,6 +667,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1593017a3093d221c6a81e72623535fc27bd1cfbf3fc641d69cfdae35d7b5243"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -372,6 +700,11 @@
     },
     "trTR": {
       "description": "Earthen Ring'in vebalı kardeşlerimize karşı niyetleri temizdi. Ama Yaşlılar Konseyi'nin kulağına fısıldayanların amaçlarını kim bilebilir?\n\nİttifak kurduğumuz Forsaken'ın aldatmacalarla örülü bir geçmişi var. Anlaşmamız fazla aceleye geldi. Belki Cairne'in Orgrimmar'dan gelen uyarılara kulak vermesi daha akıllıca olurdu.\n\nScarlet Monastery'nin derinliklerinde, çılgın insan bağnazların koruduğu Düşmüşlerin Derlemesi bulunur. Yöntemleri delilikten doğmuş olsa da araştırmaları işe yarayabilir.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "Düşenlerin Derlemesi! Kitabın varlığından şüphe etmeye başlamıştım!$b$bThunder Bluff taurenlerine iyi hizmet ettin, $n. Bağlılığın unutulmayacak.",
+        "2f4ef3369d3e3261923e": "Toprak Halkası, hastalıklı kardeşlerimize karşı temiz niyetler taşıyordu. Ama Yaşlılar Konseyi’nin kulağına fısıldayanların niyetini kim bilebilir?$b$bİttifak kurduğumuz Terk Edilmişlerin geçmişi aldatmacalarla dolu. Anlaşmamız çok aceleciydi. Cairne belki Orgrimmar’dan gelen uyarıları dinlemeliydi.$b$bScarlet Monastery’nin derinliklerinde, çılgın insan fanatiklerin koruduğu Düşenlerin Derlemesi yatıyor. Yöntemleri delice ama araştırmaları yararlı olabilir.",
+        "35a22908e5549fefb40b": "Cairne cesur ve asil bir liderdir; hayatımı ona emanet ederim. Ama bu siyasi ortamda başkalarına güvenmiyorum.$b$bTüm bilgileri topladığımda Şef’e sağlam tavsiyeler verebilirim.$b$bTirisfal Glades’e, Scarlet Monastery’ye gidebildin mi? Düşenlerin Derlemesi bu karmaşık bulmacanın yalnızca bir parçası..."
+      },
       "summary": "Tirisfal Glades'deki Manastır'dan Düşmüşlerin Derlemesi'ni al ve Thunder Bluff'taki Bilge Truthseeker'a dön.",
       "title": "Düşenlerin Derlemesi",
       "translationMetadata": {
@@ -381,6 +714,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1593017a3093d221c6a81e72623535fc27bd1cfbf3fc641d69cfdae35d7b5243"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -399,6 +747,11 @@
     },
     "ukUA": {
       "description": "Служителі Землі мали чисті наміри щодо наших постраждалих від чуми побратимів. Та хто зна, які наміри у тих, хто нашіптує всіляке на вуха членам ради Старійшин?\n\nУ наших нових союзників, відречених, давня історія підступних задумів. Занадто швидко ми уклали з ними союз. Можливо, Керну варто було прислухатись до попереджень Орґріммару.\n\nГлибоко в Багряному монастирі лежить книга, \"Компендіум полеглих\", яку охороняють людські фанатики. Хоч вони й керуються божевіллям, та їх дослідження стануть нам у пригоді.",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "Компендіум полеглих! Я вже почав сумніватися, що ця книга існує!$b$bТи добре послужив тауренам Громового Утесу, $n. Твою відданість не забудуть.",
+        "2f4ef3369d3e3261923e": "Земне Коло мало чисті наміри щодо наших уражених братів. Але хто знає мотиви тих, хто шепоче на вухо Раді старійшин?$b$bПокинуті, з якими ми уклали союз, мають історію сповнену обману. Наша угода була надто поспішною. Можливо, Керну варто було послухати застереження Оргріммара.$b$bГлибоко в Багряному монастирі лежить Компендіум полеглих, який стережуть божевільні людські фанатики. Їхні методи безумні, але дослідження можуть стати в пригоді.",
+        "35a22908e5549fefb40b": "Керн — відважний і шляхетний провідник, якому я довірив би життя. Але в нинішній політичній ситуації я не довіряю іншим.$b$bКоли зберу всі доступні знання, зможу дати вождеві добру пораду.$b$bТи побував у Тірісфальських лісах, у Багряному монастирі? Компендіум полеглих — лише одна частина складної загадки..."
+      },
       "summary": "Знайдіть \"Компендіум полеглих\" в монастирі Тірісфальського перелісся та поверніть її Любомудру Шукачу Істини в Громовий Бескид.",
       "title": "Компендіум полеглих",
       "translationMetadata": {
@@ -409,6 +762,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "1593017a3093d221c6a81e72623535fc27bd1cfbf3fc641d69cfdae35d7b5243"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -429,6 +797,11 @@
     },
     "zhCN": {
       "description": "议会对那些被遗忘者开诚布公，但是谁又知道那些亡灵们对我们到底有什么意图？\n\n虽然被遗忘者与我们结了盟，但他们从来就以精于欺诈而闻名。我们的这个盟约实在是太草率了，也许凯恩会睿智地留意到来自奥格瑞玛的警告。\n\n在血色修道院深处，那些疯狂的人类狂热者们守卫着《堕落者纲要》。虽然这帮家伙是如此的疯狂和顽固，但他们的研究也许会对我们有些用处。",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "《堕落者纲要》!我都快要开始怀疑这本书到底是否真的存在了!\n\n你为雷霆崖的牛头人做出了杰出的贡献，$N。我们永远不会忘记你的奉献。\n",
+        "2f4ef3369d3e3261923e": "大地之环对那些被遗忘者开诚布公，但是谁又知道那些亡灵们对我们到底有什么意图？\n\n虽然被遗忘者与我们结了盟，但他们从来就以精于欺诈而闻名。我们的这个盟约实在是太草率了，也许凯恩会睿智地留意到来自奥格瑞玛的警告。\n\n在血色修道院深处，那些疯狂的人类狂热者们守卫着《堕落者纲要》。虽然这帮家伙是如此的疯狂和顽固，但他们的研究也许会对我们有些用处。",
+        "35a22908e5549fefb40b": "凯恩是一个勇敢而高贵的领袖，我会终生遵循他的领导，但是我对这里的整个高层并不是很信任。\n\n一旦我有机会收集所有可以利用的知识，就能为酋长建立一个成熟的议会。\n\n你去过提里斯法林地了吗?进过血色修道院了吗?《堕落者纲要》只是这错综复杂的谜团中的一小部分罢了……"
+      },
       "summary": "从血色修道院里找到《堕落者纲要》，把它交给雷霆崖的圣者图希克。",
       "title": "堕落者纲要",
       "translationMetadata": {
@@ -437,6 +810,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -453,6 +844,11 @@
     },
     "zhTW": {
       "description": "陶土議會對那些被遺忘者開誠佈公，但是誰又知道那些亡靈們對我們到底有什麼意圖？\n\n雖然被遺忘者與我們結了盟，但他們從來就以精於欺詐而聞名。我們的這個盟約實在是太草率了，也許凱恩會睿智地留意到來自奧格瑪的警告。\n\n在血色修道院深處，那些瘋狂的人類狂熱者們守衛著《墮落者綱要》。雖然這幫傢伙是如此的瘋狂和頑固，但他們的研究也許會對我們有些用處。",
+      "dialogue": {
+        "1f5770bcfa232a4ea191": "《墮落者綱要》!我都快要開始懷疑這本書到底是否真的存在了!\n\n你為雷霆崖的牛頭人做出了傑出的貢獻，$N。我們永遠不會忘記你的奉獻。",
+        "2f4ef3369d3e3261923e": "大地之環對那些被遺忘者開誠佈公，但是誰又知道那些亡靈們對我們到底有什麼意圖？\n\n雖然被遺忘者與我們結了盟，但他們從來就以精于欺詐而聞名。我們的這個盟約實在是太草率了，也許凱恩會睿智地留意到來自奧格瑞瑪的警告。\n\n在血色修道院深處，那些瘋狂的人類狂熱者們守衛著《墮落者綱要》。雖然這幫傢伙是如此的瘋狂和頑固，但他們的研究也許會對我們有些用處。",
+        "35a22908e5549fefb40b": "凱恩是一個勇敢而高貴的領袖，我會終生遵循他的領導，但是我對這裏的整個高層並不是很信任。\n\n一旦我有機會收集所有可以利用的知識，就能爲酋長創建一個成熟的議會。\n\n你去過提瑞斯法林地了嗎?進過血色修道院了嗎?《墮落者綱要》只是這錯綜複雜的謎團中的一小部分罷了……"
+      },
       "summary": "從血色修道院裡找到《墮落者綱要》，把它交給雷霆崖的聖者圖希克。",
       "title": "墮落者綱要",
       "translationMetadata": {
@@ -461,6 +857,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1f5770bcfa232a4ea191": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.2f4ef3369d3e3261923e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.35a22908e5549fefb40b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",
