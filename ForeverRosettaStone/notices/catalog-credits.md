@@ -9,7 +9,8 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
 
 - Game text and names belong to Blizzard Entertainment. Client table references came through
   [Wago.tools](https://wago.tools/db2), including builds `1.60.1.70862`, `1.60.1.70888` and `1.60.1.70938`.
-- [EG Link](https://github.com/JIVESCORP/eg-link-output-wowf) compiles native NPC and item cache text used by our import.
+- [EG Link](https://github.com/JIVESCORP/eg-link-output-wowf) compiles native NPC and item cache text
+  and observed book pages used by our import.
   Data from Efficient Games (https://efficient.games), licensed under
   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Retained source snapshots identify
   the client build and revision; source wording remains attributed to its original language.
@@ -22,7 +23,11 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
   `48514e5119804c8b88cde800a1d99a8de1f28aef`, joined to Wago's build `1.60.1.70888` FactionTemplate table.
 - [Wowhead Forever](https://www.wowhead.com/forever) and
   [Icy Veins](https://db.icy-veins.com/wow-forever/) supplied accepted supplemental text
-  and terminology references. They are references, not automatic synchronization sources.
+  and terminology references. The dedicated book refresh also uses
+  [salty-max/wow-data](https://github.com/salty-max/wow-data)'s pinned Wowhead book snapshots.
+- [VMaNGOS](https://github.com/vmangos/core), [CMaNGOS Classic DB](https://github.com/cmangos/classic-db)
+  and [AzerothCore](https://github.com/azerothcore/azerothcore-wotlk) supplied book page references.
+  The catalog distinguishes Classic and Wrath reference evidence from observations in Forever.
 - Additional terminology/context references included [JudgeHype](https://wowclassic.judgehype.com/),
   [Realm First](https://realmfirst.net/), and [ConquestCapped](https://conquestcapped.com/).
 
@@ -33,8 +38,8 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
   `1770d208ad853d23d61105cf510d53804770d916`: Ukrainian text and translation references.
   Retained upstream markings distinguish declared AI text from community text; the upstream
   model was unspecified. See `classicua-copying.txt`.
-- [Czech Forever](https://www.curseforge.com/wow/addons/czechforever/files/9648816),
-  Marek Lušovský, release `0.8.2`, alongside retained text from `0.7.3` and `v0.7.1`: CC BY-NC 3.0.
+- [Czech Forever](https://www.curseforge.com/wow/addons/czechforever/files/9687520),
+  Marek Lušovský, releases `0.8.3` and `0.8.2`, alongside retained text from `0.7.3` and `v0.7.1`: CC BY-NC 3.0.
   Text AI usage is unspecified; the AI narration declaration does not establish text authorship.
   See `czechforever-license.txt`.
 - [Forever Translated Polish](https://www.curseforge.com/wow/addons/forever-translated/files/9434472),
