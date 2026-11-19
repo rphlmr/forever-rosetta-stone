@@ -66,6 +66,7 @@ def prepare(root, database, output):
     held, changes, files = [], [], []
     counts = Counter()
     reused_inputs = {}
+    translation_scope = defaultdict(list)
 
     def choose(kind, identifier, locale, field, context=None):
         candidates = []
@@ -80,7 +81,8 @@ def prepare(root, database, output):
                 held.append({'kind': kind, 'id': identifier, 'locale': locale, 'field': field, 'reason': 'englishContextMismatch'})
                 continue
             provenance = json.loads(row['provenance'])
-            source_rank = {'egLink': 0, 'wago': 0, 'vmangos': 1}.get(provenance['source'], 2)
+            source_rank = {'egLink': 0, 'wago': 0, 'wowhead': 1, 'vmangos': 2,
+                           'cmangos': 3, 'azerothcore': 4}.get(provenance['source'], 5)
             rank = (row['origin'] == 'ai', source_rank)
             candidates.append((rank, row, provenance))
         if not candidates:
@@ -124,9 +126,10 @@ def prepare(root, database, output):
             counts['missingEnglishEntities'] += 1
             continue
         current_english = after['locales'].get('enUS', {}).get(field)
-        if current_english and current_english != english[0]:
+        if current_english and normalized(current_english) != normalized(english[0]):
             held.append({'kind': kind, 'id': identifier, 'locale': 'enUS', 'field': field, 'reason': 'preserveOwnedEnglish'})
             continue
+        translation_scope[kind].append(str(identifier))
         reused = {}
         if kind == 'books':
             reuse_input, reused = item_title_reuse(root, english[0], english[1])
@@ -141,14 +144,18 @@ def prepare(root, database, output):
                 continue
             text, provenance = selected
             record = after['locales'].setdefault(locale, {})
+            previous_text = record.get(field)
             if field in record:
-                if record[field] != text:
+                current_origin = record.get('translationMetadata', {}).get('fields', {}).get(field, {}).get('origin')
+                replace_ai = locale != 'enUS' and current_origin == 'ai' and provenance['origin'] in ('original', 'community')
+                if not replace_ai and previous_text != text:
                     held.append({'kind': kind, 'id': identifier, 'locale': locale, 'field': field, 'reason': 'preserveAcceptedTranslation'})
-                continue
+                if not replace_ai:
+                    continue
             record[field] = text
             record.setdefault('translationMetadata', {}).setdefault('fields', {})[field] = provenance
             changes.append({'kind': kind, 'id': identifier, 'locale': locale, 'field': field,
-                            'before': None, 'after': text, 'metadata': provenance})
+                            'before': previous_text, 'after': text, 'metadata': provenance})
             counts[locale] += 1
         if kind == 'books':
             structure = {'owners': [{'kind': o['kind'], 'id': o['id']} for o in source['owners']],
@@ -158,22 +165,30 @@ def prepare(root, database, output):
                 after.update(structure)
                 after['ownerNames'] = {o['kind'] + ':' + str(o['id']): {
                     'name': o['title'], 'source': o['observations'][-1]} for o in source['owners']}
-                after['pageChainMetadata'] = {'source': 'vmangos', 'scope': 'vanillaReference',
-                    **({k: source['pages'][0][k] for k in ('assetID', 'patch') if k in source['pages'][0]} if source['pages'] else {})}
+                first_page = source['pages'][0] if source['pages'] else {}
+                after['pageChainMetadata'] = {'source': first_page.get('source', 'vmangos'),
+                    'scope': first_page.get('scope', 'vanillaReference'),
+                    **{k: first_page[k] for k in ('assetID', 'patch') if k in first_page}}
+            elif (not after.get('pages') and source['pages'] and
+                  source['pages'][0].get('scope') == 'observedFirstPage' and structure['owners'] == after['owners']):
+                after['pages'] = structure['pages']
+                after['pageChainMetadata'] = {k: source['pages'][0][k] for k in ('source', 'scope')}
             elif any(after.get(k) != v for k, v in structure.items()):
                 held.append({'kind': kind, 'id': identifier, 'reason': 'preserveOwnedStructure'})
         else:
-            if 'nextPageId' not in after:
+            if 'linkMetadata' not in after:
                 page = source['page']
-                after.update(nextPageId=page['nextPageId'], bookIds=sorted(source['books']),
-                             linkMetadata={k: page[k] for k in ('source', 'assetID', 'patch') if k in page})
+                if 'nextPageId' in page:
+                    after['nextPageId'] = page['nextPageId']
+                after.update(bookIds=sorted(source['books']),
+                             linkMetadata={k: page[k] for k in ('source', 'assetID', 'patch', 'scope') if k in page})
         stage(str(path.relative_to(root)), after)
     for kind in ('books', 'bookpages'):
         metadata_path = root / f'catalogs/{kind}/metadata.json'
         if not metadata_path.exists():
             stage(str(metadata_path.relative_to(root)), {'storageVersion': 2, 'kinds': [kind],
                                                        'document': {'schemaVersion': 1}})
-    policy_paths = ['datasources/books/catalogs.py', 'datasources/books/texts.py',
+    policy_paths = ['datasources/books/catalogs.py', 'datasources/books/texts.py', 'datasources/books/archives.py',
                     'tools/catalogs/import_policy.py', 'tools/catalogs/official_text.py']
     manifest = {'database': str(database), 'databaseSha256': sha(database.read_bytes()), 'files': files,
                 'scope': 'book-texts', 'unresolvedFields': 0, 'heldConflicts': len(held),
@@ -182,6 +197,6 @@ def prepare(root, database, output):
                                  **reused_inputs}}
     for name, document in [('manifest.json', manifest), ('changes.json', changes),
                            ('held-source-conflicts.json', held), ('source-issues.json', source_issues),
-                           ('unresolved.json', []), ('translation-scope.json', {})]:
+                           ('unresolved.json', []), ('translation-scope.json', dict(translation_scope))]:
         (output / name).write_text(dump_json(document))
     return {k: v for k, v in manifest.items() if k not in ('files', 'policyInputs')} | {'changedFiles': len(files)}

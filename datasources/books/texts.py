@@ -8,6 +8,7 @@ import re
 import sqlite3
 import zipfile
 from collections import Counter, defaultdict
+from datasources.books import archives
 from pathlib import Path
 
 from datasources.github_community import polish_hash
@@ -19,6 +20,7 @@ BOOK_PROVIDERS = ('classic-ua', 'czech-forever', 'polish-forever', 'forever-tr',
 VM_LOCALES = {'koKR': 1, 'frFR': 2, 'deDE': 3, 'zhCN': 4, 'zhTW': 5,
               'esES': 6, 'esMX': 7, 'ruRU': 8}
 HTML_TAG = re.compile(r'</?(?:html|body|p|br|h[1-6]|img|table|tr|td|div|span|font|a|b|i|ul|ol|li)\b[^>]*>', re.I)
+TECHNICAL_BOOK_TITLE = re.compile(r'^(?:placeholder|deprecated\b|unused\b|test\b|\[DNT\])', re.I)
 
 
 def normalized(text):
@@ -26,7 +28,10 @@ def normalized(text):
 
 
 def useful(text):
-    return isinstance(text, str) and bool(normalized(text)) and normalized(text).lower() != 'missing text'
+    if not isinstance(text, str):
+        return False
+    visible = normalized(text).strip('<> .').lower()
+    return bool(visible) and visible not in {'missing text', 'this page is missing'}
 
 
 def czech_key(text):
@@ -75,9 +80,13 @@ def ingest(builder, config, codex):
         if not useful(text):
             return
         flags = list(flags)
-        if locale != 'enUS' and context is not None and normalized(text) == normalized(context):
-            issues.append({'kind': kind, 'id': identifier, 'locale': locale, 'reason': 'englishFallback'})
-            return
+        if locale != 'enUS' and context is not None:
+            candidate = normalized(text)
+            if provenance.get('source') == 'wowhead' and candidate.startswith('[') and candidate.endswith(']'):
+                candidate = candidate[1:-1].strip()
+            if candidate == normalized(context):
+                issues.append({'kind': kind, 'id': identifier, 'locale': locale, 'reason': 'englishFallback'})
+                return
         if re.search(r'\$O\(|@\[|@<|\[\[', text):
             flags.append('unsupportedBookMarkup')
         provenance = {**provenance, 'sourceLocale': locale,
@@ -172,8 +181,63 @@ def ingest(builder, config, codex):
                     {'source': 'wago', 'sourceBuild': manifest['build'], 'ownerKind': 'item',
                      'ownerId': identifier}, target, native_names[identifier])
 
-    # Client captures have owner ID + ordinal, not page IDs. Bind only when the reference
-    # page at that ordinal agrees in wording; a shifted/changed chain stays in review.
+    observed = defaultdict(list)
+    fallback = []
+    wrath = {}
+    wrath_locale_files = []
+    archive_page_ids = {p['id'] for first, book in books.items() for p in book['pages']
+                        if not TECHNICAL_BOOK_TITLE.match(canonical[first]['title'])}
+    for repo, revision, path, raw in archives.inputs(config.get('bookArchives', []), builder):
+        if repo == archives.MIRROR:
+            for owner_key, locale, texts in archives.mirror_books(path, raw):
+                for ordinal, text in enumerate(texts, start=1):
+                    if useful(text):
+                        if re.search(r'<br\s*/?>', text, re.I):
+                            text = '<HTML><BODY>' + text + '</BODY></HTML>'
+                        observed[owner_key, ordinal, locale].append((
+                            text, 'community', {'source': 'wowhead', 'sourceRevision': revision}, path))
+        elif path.name == 'page_text_locale.sql':
+            wrath_locale_files.append((revision, path, raw))
+        else:
+            source = 'cmangos' if repo == archives.CLASSIC else 'azerothcore'
+            for page, text, next_page in archives.classic_pages(repo, raw):
+                if page in archive_page_ids and useful(text):
+                    fallback.append((page, text, next_page, source, revision, path))
+                    if source == 'azerothcore':
+                        wrath[page] = text, next_page
+
+    links = {p['id']: p['nextPageId'] for book in books.values() for p in book['pages']}
+    for page, text, next_page, source, revision, path in fallback:
+        if links[page] != next_page:
+            if page not in english:
+                issues.append({'reason': 'archivePageLinkMismatch', 'pageId': page, 'source': source})
+            continue
+        if page not in english:
+            english[page] = text
+        if normalized(text) == normalized(english[page]):
+            add('bookpages', page, 'enUS', 'description', text, 'community',
+                {'source': source, 'sourceRevision': revision, 'sourceRecord': page, 'scope': 'classicReference'},
+                path, text)
+
+    for revision, path, raw in wrath_locale_files:
+        rows = {(page, locale): text for page, locale, text in archives.wrath_locales(raw)
+                if page in wrath}
+        for (page, locale), text in rows.items():
+            context, next_page = wrath[page]
+            if (links[page] == next_page and normalized(english.get(page, '')) == normalized(context)
+                    and (locale != 'esMX' or rows.get((page, 'esES')) != text)):
+                add('bookpages', page, locale, 'description', text, 'community',
+                    {'source': 'azerothcore', 'sourceRevision': revision, 'sourceRecord': page, 'scope': 'wrathReference'},
+                    path, context)
+
+    # For a new Forever book, owner identity proves the ID of the first page only.
+    # Remaining observations stay in review until a source supplies their page IDs.
+    first_observations = defaultdict(list)
+    for (owner_key, ordinal, locale), candidates in observed.items():
+        known = owners.get(owner_key)
+        if known and ordinal == 1 and locale == 'enUS' and not known[0]['pages']:
+            first_observations[known[0]['firstPageId']].extend(candidates)
+
     observations = {}
     for entry in config.get('egBookTexts', []):
         path = input_path(entry['path'])
@@ -193,6 +257,12 @@ def ingest(builder, config, codex):
             for ordinal, record in pages.items():
                 position = int(ordinal) - 1
                 if position < 0 or position >= len(book['pages']):
+                    if position == 0 and not book['pages'] and meta['locale'] == 'enUS':
+                        for variant in record.get('texts', []):
+                            if useful(variant['text']):
+                                first_observations[book['firstPageId']].append((
+                                    variant['text'], 'original', {'source': 'egLink', 'sourceBuild': meta['clientBuild'],
+                                    'sourceRevision': entry['revision'], 'owner': owner_key}, path))
                     issues.append({'reason': 'unboundCapturedPage', 'owner': owner_key, 'ordinal': ordinal})
                     continue
                 page = book['pages'][position]['id']
@@ -216,6 +286,43 @@ def ingest(builder, config, codex):
             {'source': 'egLink', 'sourceBuild': '.'.join(map(str, newest)), 'sourceRevision': entry['revision'],
              'owner': owner, 'pageOrdinal': int(ordinal), 'scope': 'foreverObservation'}, path, english[page])
 
+    for first, candidates in first_observations.items():
+        if len({normalized(candidate[0]) for candidate in candidates}) != 1:
+            issues.append({'reason': 'conflictingObservedFirstPage', 'pageId': first})
+            continue
+        if first in english or TECHNICAL_BOOK_TITLE.match(canonical[first]['title']):
+            continue
+        text, origin, provenance, path = min(candidates, key=lambda candidate: candidate[1] != 'original')
+        books[first]['pages'].append({'id': first, 'source': provenance['source'], 'scope': 'observedFirstPage'})
+        english[first] = text
+        add('bookpages', first, 'enUS', 'description', text, origin,
+            {**provenance, 'scope': 'observedFirstPage'}, path, text)
+
+    for (owner_key, ordinal, locale), candidates in observed.items():
+        known = owners.get(owner_key)
+        if not known:
+            continue
+        book, _ = known
+        pages = book['pages']
+        page = pages[ordinal - 1]['id'] if ordinal <= len(pages) else None
+        context = english.get(page)
+        english_candidates = observed.get((owner_key, ordinal, 'enUS'), [])
+        if (not context or not english_candidates
+                or {normalized(c[0]) for c in english_candidates} != {normalized(context)}):
+            if locale == 'enUS':
+                issues.append({'reason': 'unboundArchivePage', 'owner': owner_key, 'ordinal': ordinal})
+            continue
+        if locale == 'enUS':
+            continue
+        european_spanish = {normalized(c[0]) for c in observed.get((owner_key, ordinal, 'esES'), [])}
+        for text, origin, provenance, path in candidates:
+            if locale == 'esMX' and normalized(text) in european_spanish:
+                continue
+            add('bookpages', page, locale, 'description', text, origin,
+                {**provenance, 'ownerKind': owner_key[0], 'ownerId': owner_key[1], 'pageOrdinal': ordinal},
+                path, context)
+
+    codex['summary']['pages'] = len({p['id'] for book in books.values() for p in book['pages']})
     ingest_community(builder, config, codex, english, add, issues, input_path)
     builder.db.execute('CREATE TABLE book_text_issues (document TEXT NOT NULL)')
     builder.db.executemany('INSERT INTO book_text_issues VALUES (?)', [(json.dumps(row, ensure_ascii=False),) for row in issues])

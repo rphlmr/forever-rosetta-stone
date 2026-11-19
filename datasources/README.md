@@ -21,7 +21,7 @@ python3 datasources/refresh.py --sources wago eg-link --reuse datasources/import
 ```
 
 `--sources` accepts the four core providers (`wago`, `questie`, `blizzard`, `eg-link`)
-and `vmangos`, plus the GitHub community providers listed below. Only selected providers are fetched.
+plus the GitHub community providers listed below. Only selected providers are fetched.
 Without `--reuse`, unselected providers are omitted from the new corpus. Existing catalog
 translations, including community languages, are still indexed; they are not deleted.
 With `--reuse`, unselected raw sources keep their original paths and pins. Their hashes
@@ -33,12 +33,13 @@ When Blizzard and Questie are selected together, Questie completes first to supp
 quest IDs. A Blizzard-only run uses its own discovery plus reused Questie IDs, if available;
 it does not silently fetch Questie. Only selected Blizzard runs require credentials.
 
-## Book identities
+## Books and letters
 
 Use `python3 datasources/refresh.py --book-codex-only --output datasources/imports/BOOK_CODEX`
 for the VMaNGOS + Wago + EG reconciled codex. This targeted path needs only Python 3, fetches
 English item/object identities and page links, and skips translation catalogs and body text.
 See the [codex workflow](books/README.md) for pins, statuses, limitations, existing-source text collection (`--book-texts`) and offline rebuilds.
+VMaNGOS, book captures and the book archives are scoped to explicit book runs.
 
 ## Provider ownership and credit
 
@@ -156,8 +157,8 @@ SQLite starts only after all three fetch branches finish successfully:
    and their supported client locales on that one build. This includes item, spell,
    area/map, faction, class, creature-type and talent dependencies.
 4. **EG Link:** discover HEAD and pin that SHA; fetch the newest available English NPC
-   and valid-item cache datasets. When building the book codex, also retain English object-cache
-   observations at that revision. **No EG quest data is fetched or imported.**
+   and valid-item cache datasets. Dedicated book runs fetch object-cache observations and book prose.
+   **No EG quest data is fetched or imported.**
 5. **VMaNGOS:** retain the published SQLite asset with its ID and verified digest, select Vanilla
    patch 10 identities, and project only owner titles/first pages and page links. No book bodies
    or translations are ingested. See [source scope](vmangos/SOURCE.md).

@@ -86,7 +86,7 @@ objective source positions, or duplicate locale identifiers and English labels.
   source as an explicit fallback, with its real source-language provenance. Do not guess labels.
 - Follow [the import/resync policy](../docs/import-resync.md) for source priority,
   target-language decisions and the reviewed prepare/apply/verify pipeline. Never author AI
-  for official target languages. Preserve accepted additional-language translations, including
+  for official target languages outside the dedicated book/letter pipeline. Preserve accepted translations, including
   captured quest objectives; missing new-job evidence must not remove them.
 - Preserve exact sourced wording and provenance, including legitimate names equal to English.
   For cities and continents, prefer official AreaTable/UiMap names. Never rewrite one
@@ -144,9 +144,10 @@ and book memberships. These are separate ID namespaces. Every name/body uses the
 remain gaps. VMaNGOS prose is a community Vanilla reference, not verified Forever wording.
 
 Use the [book source workflow](../datasources/books/README.md) and `resync.py prepare-books`,
-then the ordinary immutable apply/verify boundary. Preserve existing accepted additional-language
-translations and manual wording. Do not generate AI prose for official targets or import from
-sources with unresolved data terms. The normal build compiles these records; UI is separate.
+then the ordinary immutable apply/verify boundary. Preserve accepted non-AI and manual wording.
+Use the dedicated book queue for AI in either target group when verified English exists and a
+matching translation is unavailable. Applicable sourced wording supersedes AI. Review source
+terms before distributing the compiled records.
 
 ## Everyday editing: add, fix, or translate
 
@@ -187,7 +188,8 @@ quest prose, objectives, tooltip facts, or relationships to make a record look c
 ### 2. Choose the wording and origin
 
 Prefer verified native text, then existing translations with the same source meaning and
-context. AI authoring is limited to additional languages that meet the [source evidence rules](../docs/import-resync.md#eligibility-for-new-additional-language-ai-translations).
+context. Follow the [source evidence rules](../docs/import-resync.md#eligibility-for-new-additional-language-ai-translations)
+and the specific [book and letter exception](../docs/import-resync.md#book-identities-and-existing-source-text).
 Check relevant entity names and Warcraft terminology before
 authoring. For targeted reuse, search the relevant catalog kind; do not print the full corpus.
 Verify that an upstream locale contains an actual translation rather than English fallback.

@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from datasources.blizzard import loader as blizzard
+from datasources.books import archives as book_archives
 from datasources.eg_link import loader as eg_link
 from datasources.questie import loader as questie
 from datasources.wago import loader as wago
@@ -23,17 +24,23 @@ from datasources.corpus.translation_corpus import build, open_corpus, verify
 
 
 from datasources.community_registry import SOURCES as COMMUNITY_SOURCES
-PROVIDERS = ('wago', 'questie', 'blizzard', 'eg-link', 'vmangos', *COMMUNITY_SOURCES)
+BOOK_ONLY_PROVIDERS = {'vmangos', 'book-archives'}
+PROVIDERS = ('wago', 'questie', 'blizzard', 'eg-link', 'vmangos', 'book-archives', *COMMUNITY_SOURCES)
+DEFAULT_PROVIDERS = tuple(provider for provider in PROVIDERS if provider not in BOOK_ONLY_PROVIDERS)
 SOURCE_KEYS = {'wago': ('wago', 'talents'), 'questie': ('questie',),
-               'blizzard': ('blizzard',), 'eg-link': ('egLink', 'egBooks', 'egBookTexts'), 'vmangos': ('vmangos',)}
+               'blizzard': ('blizzard',), 'eg-link': ('egLink', 'egBooks', 'egBookTexts'), 'vmangos': ('vmangos',),
+               'book-archives': ('bookArchives',)}
 PIN_KEYS = {'wago': 'wagoBuild', 'questie': 'questieRevision',
-            'blizzard': 'blizzardNamespace', 'eg-link': 'egLinkRevision', 'vmangos': 'vmangos'}
+            'blizzard': 'blizzardNamespace', 'eg-link': 'egLinkRevision', 'vmangos': 'vmangos',
+            'book-archives': 'bookArchives'}
 SOURCE_KEYS.update({name: (module.SPEC['source'],) for name, module in COMMUNITY_SOURCES.items()})
 PIN_KEYS.update({name: module.SPEC['source'] for name, module in COMMUNITY_SOURCES.items()})
 
 
-def reuse_sources(previous, selected):
+def reuse_sources(previous, selected, book_scope=None):
     """Reuse only verified raw inputs from an explicitly selected completed run."""
+    from datasources.books.texts import BOOK_PROVIDERS
+
     previous = previous.resolve()
     if not previous.is_relative_to(ROOT / 'datasources/imports'):
         raise ValueError('--reuse must name a completed run under datasources/imports/')
@@ -57,11 +64,20 @@ def reuse_sources(previous, selected):
     sources = json.loads((previous / 'sources.json').read_text())
     pins = json.loads((previous / 'pins.json').read_text())
     retained, retained_pins = {}, {}
-    for provider in PROVIDERS:
+    providers = DEFAULT_PROVIDERS
+    if book_scope:
+        providers = ('vmangos', 'wago', 'eg-link')
+        if book_scope == 'book-texts':
+            providers += ('book-archives', *BOOK_PROVIDERS)
+    for provider in providers:
         # A selected Blizzard refresh can conditionally reuse its previous raw responses.
         if provider in selected and provider != 'blizzard':
             continue
         for key in SOURCE_KEYS[provider]:
+            if ((book_scope is None and key in ('egBooks', 'egBookTexts'))
+                    or (book_scope == 'book-identities' and key == 'egBookTexts')
+                    or (book_scope is not None and key in ('egLink', 'talents'))):
+                continue
             entries = sources.get(key, [])
             for entry in entries:
                 path = (ROOT / (entry if isinstance(entry, str) else entry['path'])).resolve()
@@ -90,30 +106,34 @@ def refresh(output, env_file, pins=None, sources=None, reuse=None, wago_tables=N
     """Fetch selected providers and publish a verified corpus with explicit source provenance."""
     from datasources.books.texts import BOOK_PROVIDERS
     book_mode = book_codex_only or book_texts
+    book_scope = 'book-texts' if book_texts else 'book-identities' if book_codex_only else None
     output = output.resolve()
     if not output.is_relative_to(ROOT / 'datasources/imports') or output.exists():
         raise ValueError('Use a new refresh directory under datasources/imports/')
-    selected = set(('vmangos', 'wago', 'eg-link', *(BOOK_PROVIDERS if book_texts else ())) if book_mode and sources is None
-                   else PROVIDERS if sources is None else sources)
+    selected = set(('vmangos', 'wago', 'eg-link', *(('book-archives', *BOOK_PROVIDERS) if book_texts else ())) if book_mode and sources is None
+                   else DEFAULT_PROVIDERS if sources is None else sources)
     if not selected or selected - set(PROVIDERS):
         raise ValueError('Select one or more known sources: ' + ', '.join(PROVIDERS))
     if book_mode:
-        if selected - {'vmangos', 'wago', 'eg-link', *(BOOK_PROVIDERS if book_texts else ())}:
-            raise ValueError('Book-only refresh supports vmangos, wago and eg-link only')
+        if selected - {'vmangos', 'wago', 'eg-link', *(('book-archives', *BOOK_PROVIDERS) if book_texts else ())}:
+            raise ValueError('Selected sources are outside the requested book scope')
         if wago_tables not in (None, ['ItemSparse']) or wago_locales not in (None, ['enUS']) and not book_texts:
             raise ValueError('Book-only refresh uses ItemSparse enUS')
         wago_tables, wago_locales = ['ItemSparse'], list(wago.LOCALES) if book_texts else ['enUS']
+    elif selected & BOOK_ONLY_PROVIDERS:
+        raise ValueError('Select --book-texts or --book-codex-only for book sources')
     values = blizzard.credentials(env_file) if 'blizzard' in selected else None
     template = json.loads((ROOT / 'datasources/corpus/sources.json').read_text())
     config = {**template, **{key: [] for keys in SOURCE_KEYS.values() for key in keys}}
     resolved_pins = {}
     if reuse is not None:
-        retained, resolved_pins = reuse_sources(reuse, selected)
+        retained, resolved_pins = reuse_sources(reuse, selected, book_scope)
         config.update(retained)
     if book_mode:
         config = {**{key: [] for keys in SOURCE_KEYS.values() for key in keys},
-                  **{key: config[key] for key in ('vmangos', 'wago', 'egBooks', 'egBookTexts', *([COMMUNITY_SOURCES[name].SPEC['source'] for name in BOOK_PROVIDERS] if book_texts else [])) if key in config},
-                  'scope': 'book-texts' if book_texts else 'book-identities',
+                  **{key: config[key] for key in ('vmangos', 'wago', 'egBooks', 'egBookTexts', 'bookArchives',
+                     *([COMMUNITY_SOURCES[name].SPEC['source'] for name in BOOK_PROVIDERS] if book_texts else [])) if key in config},
+                  'scope': book_scope,
                   'limitations': [('Existing source book texts; no authored translations or UI.' if book_texts
                                    else 'Identity-only codex. No book bodies or translations are imported.'),
                                   'Vanilla page links are not verified Forever page sequences.']}
@@ -133,6 +153,10 @@ def refresh(output, env_file, pins=None, sources=None, reuse=None, wago_tables=N
         entry = vmangos.fetch(output / 'vmangos', pins.get('vmangos'))
         config['vmangos'] = [entry]
         resolved_pins['vmangos'] = entry['pin']
+    if 'book-archives' in selected:
+        entry = book_archives.fetch(output / 'book-archives', pins.get('bookArchives'))
+        config['bookArchives'] = [entry]
+        resolved_pins['bookArchives'] = entry['pin']
     with ThreadPoolExecutor(max_workers=2) as pool:
         if wago_tables or wago_locales:
             wago_future = pool.submit(wago.fetch, output / 'wago', pins.get('wagoBuild'),
@@ -172,8 +196,6 @@ def refresh(output, env_file, pins=None, sources=None, reuse=None, wago_tables=N
         elif eg_future is not None:
             config['egLink'] = eg_future.result()
             resolved_pins['egLinkRevision'] = config['egLink'][0]['revision']
-            if config.get('vmangos') or config.get('egBooks'):
-                config['egBooks'] = eg_link.fetch_book_objects(output / 'eg-link-books', resolved_pins['egLinkRevision'])
     write_json(output / 'sources.json', config)
     write_json(output / 'pins.json', resolved_pins)
     print('All selected fetches complete; building SQLite', flush=True)
@@ -203,7 +225,7 @@ def main():
     parser.add_argument('--output', type=Path, default=ROOT / 'datasources/imports' / datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ'))
     parser.add_argument('--env-file', type=Path, default=ROOT / '.env')
     parser.add_argument('--pins', type=Path, help='Replay selected revisions/build/namespace from an earlier pins.json')
-    parser.add_argument('--sources', nargs='+', choices=PROVIDERS, help='Fetch only these providers; default: all')
+    parser.add_argument('--sources', nargs='+', choices=PROVIDERS, help='Fetch only these providers in the selected scope')
     parser.add_argument('--reuse', type=Path, help='Keep unselected providers from this completed run')
     parser.add_argument('--book-texts', action='store_true', help='Collect existing book texts and translations for the codex; no UI')
     parser.add_argument('--book-codex-only', action='store_true', help='Build only readable identities; no catalog scan or page text import')

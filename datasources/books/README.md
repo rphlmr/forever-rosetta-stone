@@ -24,9 +24,7 @@ not imported text. The projection reads only owner identities and page links.
 
 A successful run publishes `sources.json`, `pins.json`, verified `corpus.sqlite`,
 `book-codex.json` and `complete.json`. Do not use an unfinished run as a resync baseline.
-The normal full refresh also includes the codex when VMaNGOS or EG book evidence is selected.
-An EG-only normal refresh keeps its existing NPC/item scope; fetching or reusing VMaNGOS
-alongside EG enables collection of book-object identities.
+Normal refreshes skip books and letters. EG Link keeps its NPC/item scope in a normal refresh.
 
 ## Identity and reconciliation
 
@@ -93,18 +91,26 @@ python3 tools/catalogs/resync.py prepare-books \
 # Inspect manifest.json, changes.json, held-source-conflicts.json and source-issues.json.
 python3 tools/catalogs/resync.py apply --directory datasources/imports/BOOK_TEXTS_PREPARED
 python3 tools/catalogs/resync.py verify --directory datasources/imports/BOOK_TEXTS_PREPARED
+python3 tools/catalogs/resync.py queue --directory datasources/imports/BOOK_TEXTS_PREPARED
 ```
 
-`--book-texts` selects VMaNGOS, Wago ItemSparse locales, EG book captures and the existing book
-community providers. `--reuse` retains hash-verified snapshots just like the other source modes.
+`--book-texts` selects VMaNGOS, Wago ItemSparse locales, EG book captures, the Wowhead
+Forever snapshots mirrored in `salty-max/wow-data`, CMaNGOS Classic, AzerothCore and the
+existing book community providers. Use `--sources book-archives --reuse <completed book run>`
+to refresh the three archives while retaining the other inputs. Each archive is pinned and hashed.
 No unrelated maintained catalogs are scanned. The corpus contains only `books.name` and
 `bookpages.description` source records, together with the codex and explicit source issues.
 
 - VMaNGOS bodies and localized owner names retain `community` authorship and Vanilla-reference
   scope. Missing Text placeholders and rendered-empty HTML pages never become prose.
 - Wago contributes localized names only for the selected item owner, with matching page and
-  English title. EG captures bind an owner/ordinal to a page ID only when its English wording
-  agrees with the codex reference. Mismatches remain review issues rather than new mappings.
+  English title. An unambiguous EG or Wowhead first-page observation can use the first page ID
+  provided by an identified Forever owner. Later observations need an existing page ID and
+  matching English. The first-page link remains incomplete when the subsequent IDs are absent.
+- CMaNGOS and AzerothCore backfill identified reference pages with the same next-page link.
+  AzerothCore localizations also require matching English. Spanish copies shared with `esES`
+  are insufficient to establish `esMX`. Preserve archive provenance and review terms before
+  publishing source wording.
 - ClassicUA page arrays require a unique title and matching complete chain; Czech Forever,
   PolishForever and ForeverTR require a unique English fingerprint in the owned page scope.
   Original/community/AI source authorship remains explicit. No new AI translation is generated.
@@ -112,9 +118,9 @@ No unrelated maintained catalogs are scanned. The corpus contains only `books.na
   translation-data terms for WoWLang, WoWForeverIT/QuestIT and QuestTranslator TR remain
   context-only, even when their archives contain relevant books.
 - Sources with nonmatching English context, same-priority conflicting wording or unsafe flags
-  are held. New official-language AI fields are never accepted. Missing translations stay absent.
-- Prepared writes preserve existing accepted text (including additional-language translations)
-  and structures; differences appear in the held report. Source and prepared-result hashes and
+  are held. Upstream AI text remains excluded from official-language source imports.
+- Prepared writes preserve manual and accepted non-AI text; differences appear in the held report.
+  Matching non-AI source text replaces existing AI fields. Source and prepared-result hashes and
   optimistic destination hashes are checked before any write. New files use a null before hash.
 - Before authoring missing titles, preparation also reuses maintained item names for the
   selected item owner and exactly matching English title. It copies wording and field
@@ -133,8 +139,8 @@ language/rules packs. UI adapters and live reading controls remain a separate st
 resync source priorities for quests/items/spells and AI eligibility are not changed by this path.
 
 
-For newly authored additional-language book translations, verified non-English VMaNGOS
-wording is accepted only for books/bookpages with the same identity and English fingerprint.
-This user-approved evidence extension does not apply to other kinds. Existing source text is
-reused first, accepted fields are preserved, and official locales are never AI-authored.
-AI metadata records origin, source and sourceLocale; no model identifier is stored.
+After applying verified source additions, the book queue uses the verified English body or
+title to prepare missing official and community targets with no applicable source translation.
+Run the translation pass separately with GPT-6.1 Tera at medium effort. Assign one catalog entity
+(a book title or a page) and all its missing target languages per mission. Include the other
+known pages as context for terminology and tone. AI metadata records origin, source and sourceLocale.
