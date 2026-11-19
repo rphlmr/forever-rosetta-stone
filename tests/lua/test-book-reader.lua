@@ -19,9 +19,9 @@ controls.setGamepad(false)
 -- Civil War in the Plaguelands: world object 175761, four Vanilla-reference pages from 2097.
 local npcGUID = "GameObject-0-1-0-0-175761-0000ABCD"
 UnitGUID = function(unit) if unit == "npc" then return npcGUID end end
-local pageNumber, nativeText, nativeTitle = 1, DB:GetBookPage(2097, "frFR"), "Guerre civile dans les Maleterres"
+local pageNumber, nativeTitle = 1, "Guerre civile dans les Maleterres"
 ItemTextGetPage = function() return pageNumber end
-ItemTextGetText = function() return nativeText end
+ItemTextGetText = function() error("book translation must not read the native page body") end
 ItemTextGetItem = function() return nativeTitle end
 ItemTextFrame = CreateFrame("Frame", nil, UIParent)
 ItemTextFrame:SetSize(338, 424)
@@ -39,15 +39,11 @@ check(book.title == "Civil War in the Plaguelands", "the reader uses the target-
 check(book.body == DB:GetBookPage(2097, "enUS"), "the reader uses the target-language page")
 check(Addon:GetOpenBook() == book, "an unchanged page reuses its resolution")
 
-pageNumber, nativeText = 2, DB:GetBookPage(2098, "frFR")
-check(Addon:GetOpenBook().pageID == 2098, "turning the page follows the native text")
-pageNumber, nativeText = 1, DB:GetBookPage(2099, "frFR")
-check(Addon:GetOpenBook().pageID == 2099, "the native text, not the page number alone, selects the page")
-nativeText = DB:GetBookPage(2097, "frFR"):gsub("\194\160", " ")
-check(Addon:GetOpenBook().pageID == 2097, "spacing differences do not hide a matching page")
-nativeText = "Une page que le catalogue ne connaît pas."
-check(Addon:GetOpenBook() == nil, "unknown native text keeps the page native")
-nativeText = DB:GetBookPage(2097, "frFR")
+pageNumber = 2
+check(Addon:GetOpenBook().pageID == 2098, "turning the page follows the native page number")
+pageNumber = 5
+check(Addon:GetOpenBook() == nil, "a page number outside the catalog keeps the page native")
+pageNumber = 1
 npcGUID = "GameObject-0-1-0-0-1-0000ABCD"
 check(Addon:GetOpenBook() == nil, "objects that are not catalog books stay native")
 npcGUID = "Creature-0-1-0-0-175761-0000ABCD"
@@ -59,7 +55,7 @@ C_Container = { GetContainerItemID = function(bag, slot) if bag == 0 and slot ==
 local ClientApi = assert(loadfile("tests/lua/support/client-api-fixture.lua"))()
 C_Item = ClientApi.Install(ClientApi.Client("frFR"), { target = {}, strict = false }).C_Item
 Addon:RecordBookItem(0, 3)
-nativeTitle, nativeText = C_Item.GetItemNameByID(5861), DB:GetBookPage(669, "frFR")
+nativeTitle = C_Item.GetItemNameByID(5861)
 check(Addon:GetOpenBook() and Addon:GetOpenBook().pageID == 669, "a book opened from a bag item resolves its page")
 nativeTitle = "Lettre"
 check(Addon:GetOpenBook() == nil, "a different native title is not attributed to the last used item")
@@ -81,8 +77,7 @@ check(Addon:TransitionBookReader({ mode = "dismissed", firstPage = 2097 },
 check(Addon:TransitionBookReader({ mode = "dismissed", firstPage = 2097 },
     { type = "present", firstPage = 669, autoOpen = true }).mode == "visible", "another book opens again")
 
-npcGUID, nativeTitle, nativeText, pageNumber = "GameObject-0-1-0-0-175761-0000ABCD", "Guerre civile dans les Maleterres",
-    DB:GetBookPage(2097, "frFR"), 1
+npcGUID, nativeTitle, pageNumber = "GameObject-0-1-0-0-175761-0000ABCD", "Guerre civile dans les Maleterres", 1
 Addon.preferences.features.bookPanel = true
 Addon.preferences.features.bookAutoOpen = true
 Addon:SendBookReader({ type = "reset" })
@@ -98,6 +93,17 @@ check(#reader.parchments == 0, "a book without native material keeps the quest p
 check(not Addon.bookBookmark:IsShown(), "an open reader hides its bookmark")
 Addon:UpdateBookReader()
 check(reader.body.lastSections == sections, "stable polling does not rebuild the page")
+local objectGUID = npcGUID
+npcGUID = nil
+for number, pageID in ipairs({ 2097, 2098, 2099, 2100 }) do
+    pageNumber = number
+    Addon:UpdateBookReader()
+    check(reader.frame:IsShown() and reader.body.lastSections[2].text == DB:GetBookPage(pageID, "enUS"),
+        "turning the page without an interaction GUID keeps the matching translation open")
+end
+npcGUID = objectGUID
+pageNumber = 1
+Addon:UpdateBookReader()
 controls.setGamepad(true)
 reader:SyncController(true)
 check(SmartNavigation:GetActiveFrame() == reader.frame and SmartNavigation:GetCurrentButton() == nil,
@@ -122,18 +128,18 @@ check(not reader.parchments[1]:IsShown(), "a hidden native material is no longer
 reader.frame.CloseButton:Fire("OnClick")
 Addon:UpdateBookReader()
 check(not reader.frame:IsShown() and Addon.bookBookmark:IsShown(), "closing the reader leaves the bookmark")
-pageNumber, nativeText = 2, DB:GetBookPage(2098, "frFR")
+pageNumber = 2
 Addon:UpdateBookReader()
 check(not reader.frame:IsShown() and Addon.bookBookmark:IsShown(), "turning pages keeps the reader closed")
 Addon.bookBookmark:Fire("OnClick")
 check(reader.frame:IsShown() and reader.body.lastSections[2].text == DB:GetBookPage(2098, "enUS"),
     "the bookmark reopens the reader on the current page")
 
-nativeText = "Une page que le catalogue ne connaît pas."
+pageNumber = 5
 Addon:UpdateBookReader()
-check(not reader.frame:IsShown() and not Addon.bookBookmark:IsShown(), "unverified pages show neither reader nor bookmark")
+check(not reader.frame:IsShown() and not Addon.bookBookmark:IsShown(), "unknown page numbers show neither reader nor bookmark")
 
-nativeText = DB:GetBookPage(2097, "frFR")
+pageNumber = 1
 Addon.preferences.features.bookAutoOpen = false
 Addon:SendBookReader({ type = "reset" })
 Addon:UpdateBookReader()
@@ -181,6 +187,7 @@ GetLocale = savedGetLocale
 check(component.GetName(2097, "enUS") == "Civil War in the Plaguelands", "the book tooltip names the translated title")
 
 for key, value in pairs(saved) do _G[key] = value end
+ItemTextGetText = saved.ItemTextGetText
 for id, value in pairs(features) do Addon.preferences.features[id] = value end
 Addon:SendBookReader({ type = "reset" })
 Addon.bookItemCandidate, Addon.openBookCache = nil, nil

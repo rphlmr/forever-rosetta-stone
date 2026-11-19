@@ -36,8 +36,10 @@ class GithubCommunityTests(unittest.TestCase):
                          'wow-forever-it', 'wow-forver-italiano', 'wow-lang', 'questtranslator-tr',
                          'forever-translated-polish', 'varlden-av-krigskraft', 'forever-tr'}
                         == set(refresh['COMMUNITY_SOURCES']))
-        self.assertEqual(len(refresh['PROVIDERS']), 16)
-        self.assertIn('vmangos', refresh['PROVIDERS'])
+        self.assertEqual(set(refresh['DEFAULT_PROVIDERS']),
+                         {'wago', 'questie', 'blizzard', 'eg-link'} | set(refresh['COMMUNITY_SOURCES']))
+        self.assertEqual(set(refresh['PROVIDERS']) - set(refresh['DEFAULT_PROVIDERS']),
+                         {'vmangos', 'book-archives'})
         self.assertTrue(all(module.SPEC.get('repository') or module.SPEC.get('projectID') for module in refresh['COMMUNITY_SOURCES'].values()))
 
     def test_italian_alias_tables_and_questit_fingerprints_are_retained(self):

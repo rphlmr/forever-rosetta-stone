@@ -40,11 +40,15 @@ Identity-only runs stay under ignored imports. Explicit `--book-texts` collectio
 book wording with source snapshots and field provenance; `resync.py prepare-books` prepares
 new book/page records for the same immutable apply/verify boundary. VMaNGOS text retains
 community origin and Vanilla-reference scope, never automatic native-Forever authorship.
-Existing context-only source licences remain excluded; no AI text is authored, no official-target
-AI source fields are accepted, and accepted translations/manual wording are preserved.
-Missing/blank/placeholder prose, ambiguous mappings and changed English stay absent or in review.
-Book-specific source ordering does not alter the other catalog kinds' priorities or new-AI
-eligibility. A book-only corpus is not a general translation resync baseline.
+Normal refreshes skip the book sources and catalogs. Use the dedicated book refresh to collect,
+review and apply source text with provenance. Preserve accepted manual and non-AI text.
+Applicable native or community sources replace AI text when the English context matches.
+Missing, placeholder or ambiguous prose and changed English stay absent or in review.
+
+For `books.name` and `bookpages.description`, missing official and community targets may both
+be translated with AI from matching English present in the verified book corpus when no applicable
+localized source is available. Prefer exact reuse first. Apply and verify source additions before
+queueing authorship. This exception applies only to book/letter fields in the dedicated pipeline.
 
 ## Target languages
 
@@ -58,7 +62,7 @@ sets in [`official_text.py`](../tools/catalogs/official_text.py); configured tar
 | --- | --- | --- |
 | Applicable localized source exists | Use its exact text and provenance | Use its exact text and provenance |
 | No localized source exists | Use available canonical English with its real provenance | Preserve the existing accepted translation |
-| New authored text is needed | Never author AI translations | Translate from English only if the eligibility rule below passes |
+| New authored text is needed | Only book/letter fields under the dedicated policy above | Translate from English only if the applicable eligibility rule passes |
 | Eligibility evidence is missing | Use source text; report unresolved source gaps | Keep existing translations; block new AI jobs |
 
 Earlier AI translations in official languages yield to available source text, including
@@ -82,11 +86,6 @@ summary for that ID at a pinned revision, and its wording must match the maintai
 summary. Blizzard confirms the quest identity. QuestieDB remains the source of the summary.
 This exception applies only to additional-language summaries, including when the Blizzard
 web API exposes only the full description.
-
-For `books.name` and `bookpages.description` only, the user-approved book policy also accepts
-VMaNGOS non-English evidence with a verified asset, the same owned page identity (for bodies),
-nonempty translated wording and a matching English SHA-256. It remains Vanilla-reference
-evidence with its real community authorship. The book exception is restricted to those two fields.
 
 Eligibility is determined from the verified corpus.
 

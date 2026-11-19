@@ -9,6 +9,8 @@ from pathlib import Path
 from datasources.corpus.translation_corpus import open_corpus, language_flags
 from tools.catalogs.official_text import OFFICIAL_LOCALES, TEXT_FIELDS, SOURCE_PROVIDERS
 
+BOOK_FIELDS = {('books', 'name'), ('bookpages', 'description')}
+
 def normalize(text):
     return re.sub(r'\s+', ' ', text or '').strip()
 
@@ -80,8 +82,21 @@ class OfficialEvidence:
         self.item_sets = {}
         self.entities = {}
         self.extra_inputs = {}
+        self.book_english = set()
+        self.book_translations = set()
         db = open_corpus(self.database)
         try:
+            scope = db.execute("SELECT value FROM settings WHERE key='scope'").fetchone()
+            if scope and json.loads(scope[0]) == 'book-texts':
+                for row in db.execute("""SELECT kind,entity_id,field,locale,text,english FROM records
+                    WHERE kind IN ('books','bookpages') AND evidence='sourceSnapshot'
+                    AND origin IN ('original','community') AND flags='[]'"""):
+                    key = (row['kind'], row['entity_id'], row['field'])
+                    text, english = normalize(row['text']), normalize(row['english'])
+                    if row['locale'] == 'enUS' and text:
+                        self.book_english.add((*key, text))
+                    elif text and english and text != english:
+                        self.book_translations.add((*key, english, row['locale']))
             roots = {(str((self.root / row['source_path']).parent), row['build']) for row in db.execute(
                 "SELECT DISTINCT source_path,json_extract(provenance,'$.sourceBuild') build FROM records "
                 "WHERE evidence='sourceSnapshot' AND origin='original' AND json_extract(provenance,'$.source')='wago'")}
@@ -201,6 +216,13 @@ class OfficialEvidence:
 
 
 def ai_block_reason(locale, kind, entity_id, field, english, evidence):
+    if (kind, field) in BOOK_FIELDS and locale != 'enUS':
+        key = (kind, str(entity_id), field, normalize(english))
+        if not evidence or key not in evidence.book_english:
+            return 'noVerifiedEnglishBookText'
+        if (*key, locale) in evidence.book_translations:
+            return 'applicableBookSourceAvailable'
+        return None
     if locale in OFFICIAL_LOCALES:
         return 'officialLocaleNeverAuthored'
     if not evidence or not evidence.allows(kind, entity_id, field, english):

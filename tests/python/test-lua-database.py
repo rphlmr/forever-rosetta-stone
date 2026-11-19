@@ -917,8 +917,8 @@ class DatabaseTests(unittest.TestCase):
 
     def test_book_catalog_bodies_rules_and_ai_flags_are_available_by_id(self):
         _, api, _ = self.create_runtime()
-        for locale in ('enUS', 'frFR', 'csCZ', 'plPL', 'trTR', 'ukUA'):
-            entity = json.loads((ROOT / 'catalogs/bookpages/2097.json').read_text())
+        entity = json.loads((ROOT / 'catalogs/bookpages/2097.json').read_text())
+        for locale in load_catalog(ROOT, 'quests', ids={})['locales']:
             self.assertEqual(api.GetBookPage(api, 2097, locale.encode()).decode(),
                              entity['locales'][locale]['description'])
             origin = entity['locales'][locale]['translationMetadata']['fields']['description']['origin']
@@ -926,7 +926,7 @@ class DatabaseTests(unittest.TestCase):
         rules = api.GetBookRules(api, 2097)
         self.assertEqual(list(rules[b'pages'].values()), [2097, 2098, 2099, 2100])
         self.assertEqual(api.GetBookName(api, 2097, b'frFR').decode(), 'Guerre civile dans les Maleterres')
-        self.assertIsNone(api.GetBookPage(api, 2097, b'ptBR'))
+        self.assertIsNone(api.GetBookPage(api, 2097, b'xxXX'))
 
     def test_every_shipped_page_has_compact_columns_and_bounded_size(self):
         lua, _, _ = self.create_runtime()

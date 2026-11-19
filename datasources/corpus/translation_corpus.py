@@ -211,10 +211,13 @@ class CorpusBuilder:
 
     def catalogs(self, kinds=None):
         """Retain source claims without upgrading them to verified native evidence."""
+        kinds = kinds or tuple(kind for kind in KINDS if kind not in ('books', 'bookpages'))
         for path in sorted((self.root / 'catalogs').glob('*/metadata.json')):
+            if path.parent.name in ('books', 'bookpages') and path.parent.name not in kinds:
+                continue
             self.read(path)
 
-        for kind in kinds or KINDS:
+        for kind in kinds:
             for path in sorted((self.root / 'catalogs' / kind).glob('[0-9]*.json')):
                 entity = json.loads(self.read(path))
                 locales = {locale: value for locale, value in entity.get('locales', {}).items() if locale != 'enGB'}
@@ -733,10 +736,10 @@ def build(root, config_path, output):
         if identity_only:
             from datasources.books.codex import reconcile, store
             codex = reconcile(root, config, builder.read)
-            store(connection, codex)
             if config.get('scope') == 'book-texts':
                 from datasources.books.texts import ingest
                 ingest(builder, config, codex)
+            store(connection, codex)
         else:
             builder.catalogs()
             print(f'Catalog references: {builder.count:,} rows ({time.monotonic() - started:.1f}s)', file=sys.stderr)
@@ -1000,7 +1003,8 @@ def verify(connection, root):
     known = {row[0] for row in connection.execute("SELECT path FROM inputs WHERE path LIKE 'catalogs/%'")}
     scope = connection.execute("SELECT value FROM settings WHERE key='scope'").fetchone()
     if not scope or json.loads(scope[0]) not in ('book-identities', 'book-texts'):
-        current = {str(path.relative_to(root)) for path in (Path(root) / 'catalogs').glob('*/*.json')}
+        current = {str(path.relative_to(root)) for path in (Path(root) / 'catalogs').glob('*/*.json')
+                   if path.parent.name not in ('books', 'bookpages')}
         changed.extend(sorted(current - known))
 
     return {'valid': not changed, 'changedInputs': changed}

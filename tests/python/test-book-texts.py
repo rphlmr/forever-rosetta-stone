@@ -117,8 +117,77 @@ class BookTextTests(unittest.TestCase):
         self.assertFalse(evidence.allows('items', 101, 'description', english))
         self.assertFalse(evidence.allows('bookpages', 102, 'description', english))
         self.assertFalse(evidence.allows('bookpages', 101, 'description', 'Changed meaning'))
-        self.assertEqual(ai_block_reason('frFR', 'bookpages', 101, 'description', english, evidence), 'officialLocaleNeverAuthored')
+        self.assertEqual(ai_block_reason('frFR', 'bookpages', 101, 'description', english, evidence), 'applicableBookSourceAvailable')
+        self.assertIsNone(ai_block_reason('deDE', 'bookpages', 101, 'description', english, evidence))
         self.assertIsNone(ai_block_reason('daDK', 'bookpages', 101, 'description', english, evidence))
+        self.assertEqual(ai_block_reason('deDE', 'bookpages', 101, 'description', 'Different', evidence), 'noVerifiedEnglishBookText')
+        self.assertEqual(ai_block_reason('deDE', 'quests', 101, 'description', english, evidence), 'officialLocaleNeverAuthored')
+
+    def test_matching_sourced_translation_replaces_ai(self):
+        output = self.imports / 'first'
+        prepare(self.root, self.database, output)
+        RESYNC['apply'](self.root, output)
+        path = self.root / 'catalogs/bookpages/101.json'
+        page = json.loads(path.read_text())
+        french = page['locales']['frFR']
+        french['description'] = 'AI draft'
+        french['translationMetadata']['fields']['description'] = {
+            'origin': 'ai', 'source': 'ForeverRosettaStoneAI', 'sourceLocale': 'enUS'}
+        path.write_text(json.dumps(page))
+        output = self.imports / 'next'
+        prepare(self.root, self.database, output)
+        changes = json.loads((output / 'changes.json').read_text())
+        self.assertEqual([(row['before'], row['metadata']['origin']) for row in changes], [('AI draft', 'community')])
+        RESYNC['apply'](self.root, output)
+        self.assertEqual(json.loads(path.read_text())['locales']['frFR']['description'], 'Bonjour $N.\nGardez $C et $R.')
+
+    def test_archive_first_page_binds_to_owner_without_inventing_following_ids(self):
+        config = json.loads(self.config.read_text())
+        eg_path = self.imports / 'objects.json'
+        eg_path.write_text(json.dumps({'meta': {'product': 'wowf', 'dataset': 'object_details',
+            'locale': 'enUS', 'clientBuild': '1.60.1.70959', 'schemaVersion': 1, 'license': 'example',
+            'attribution': 'example'}, 'objects': {'512': {'type': 9, 'data': [812], 'name': 'A New Book'}}}))
+        config['egBooks'] = [{'path': str(eg_path.relative_to(self.root)), 'revision': 'a' * 40}]
+        mirror = self.imports / 'archives/salty-max'
+        mirror.mkdir(parents=True)
+        raw = json.dumps({'o512': ['The first page.', 'The second page.']}).encode()
+        (mirror / 'books-enUS.json').write_bytes(raw)
+        french = json.dumps({'o512': ['[The first page.]']}).encode()
+        (mirror / 'books-frFR.json').write_bytes(french)
+        config['bookArchives'] = [{'path': 'datasources/imports/archives', 'pin': {'salty-max/wow-data': {
+            'revision': 'b' * 40, 'files': {
+                'data/wowhead/forever/books-enUS.json': hashlib.sha256(raw).hexdigest(),
+                'data/wowhead/forever/books-frFR.json': hashlib.sha256(french).hexdigest()}}}}]
+        self.config.write_text(json.dumps(config))
+        database = self.imports / 'archive.sqlite'
+        build(self.root, self.config, database)
+        output = self.imports / 'prepared'
+        prepare(self.root, database, output)
+        self.assertIn('unboundArchivePage', (output / 'source-issues.json').read_text())
+        RESYNC['apply'](self.root, output)
+        book = json.loads((self.root / 'catalogs/books/812.json').read_text())
+        page = json.loads((self.root / 'catalogs/bookpages/812.json').read_text())
+        self.assertEqual((book['pages'], book['chainStatus']), ([812], 'incomplete'))
+        self.assertEqual(page['locales']['enUS']['description'], 'The first page.')
+        self.assertNotIn('frFR', page['locales'])
+        self.assertNotIn('nextPageId', page)
+
+    def test_normal_refresh_excludes_book_catalogs(self):
+        metadata = self.root / 'catalogs/quests/metadata.json'
+        metadata.parent.mkdir(parents=True)
+        metadata.write_text(json.dumps({'document': {'locales': ['enUS']}}))
+        book = self.root / 'catalogs/books/101.json'
+        book.parent.mkdir(parents=True)
+        book.write_text('A normal corpus must never read this file.')
+        self.config.write_text('{}')
+        output = self.imports / 'ordinary.sqlite'
+        build(self.root, self.config, output)
+        connection = open_corpus(output)
+        try:
+            self.assertTrue(verify(connection, self.root)['valid'])
+            self.assertFalse(connection.execute("SELECT 1 FROM inputs WHERE path LIKE 'catalogs/books/%'").fetchone())
+        finally:
+            connection.close()
 
     def test_hash_ports_are_stable_and_preserve_source_token_case(self):
         self.assertEqual(czech_key('Hello $N!'), czech_key('hello'))

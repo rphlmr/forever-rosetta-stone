@@ -249,21 +249,23 @@ def queue(root, directory):
     manifest = read_json(directory / 'manifest.json')
     verify(root, directory)
     documents = load_catalogs(root, read_json(directory / 'translation-scope.json'))
-    affected = {(row['kind'], row['id'], row['field']) for row in read_json(directory / 'changes.json')}
     candidates = WORK['collect_translation_candidates'](documents)
-    jobs = []
-    for job in candidates['jobs']:
-        selected = []
-        for pointer in job['pointers']:
-            field = pointer['field'].removeprefix('tooltip.')
-            field = 'setName' if field == 'set.name' else field
-            if field == 'objectiveLines':
-                field += '.' + str(pointer['index'])
-            if (pointer['kind'], pointer['id'], field) in affected:
-                selected.append(pointer)
-        if selected:
-            jobs.append({**job, 'pointers': selected})
-    result = filter_queue({**candidates, 'jobs': jobs}, OfficialEvidence(manifest['database'], root))
+    if manifest.get('scope') != 'book-texts':
+        affected = {(row['kind'], row['id'], row['field']) for row in read_json(directory / 'changes.json')}
+        jobs = []
+        for job in candidates['jobs']:
+            selected = []
+            for pointer in job['pointers']:
+                field = pointer['field'].removeprefix('tooltip.')
+                field = 'setName' if field == 'set.name' else field
+                if field == 'objectiveLines':
+                    field += '.' + str(pointer['index'])
+                if (pointer['kind'], pointer['id'], field) in affected:
+                    selected.append(pointer)
+            if selected:
+                jobs.append({**job, 'pointers': selected})
+        candidates['jobs'] = jobs
+    result = filter_queue(candidates, OfficialEvidence(manifest['database'], root))
     (directory / 'translation-queue.json').write_text(dump_json(result))
     return {'eligibleJobs': len(result['jobs']), 'blockedJobs': len(result['blocked'])}
 

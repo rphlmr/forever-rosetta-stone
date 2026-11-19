@@ -86,7 +86,7 @@ objective source positions, or duplicate locale identifiers and English labels.
   source as an explicit fallback, with its real source-language provenance. Do not guess labels.
 - Follow [the import/resync policy](../docs/import-resync.md) for source priority,
   target-language decisions and the reviewed prepare/apply/verify pipeline. Never author AI
-  for official target languages. Preserve accepted additional-language translations, including
+  for official target languages outside the dedicated book/letter pipeline. Preserve accepted translations, including
   captured quest objectives; missing new-job evidence must not remove them.
 - Preserve exact sourced wording and provenance, including legitimate names equal to English.
   For cities and continents, prefer official AreaTable/UiMap names. Never rewrite one
@@ -144,9 +144,10 @@ and book memberships. These are separate ID namespaces. Every name/body uses the
 remain gaps. VMaNGOS prose is a community Vanilla reference, not verified Forever wording.
 
 Use the [book source workflow](../datasources/books/README.md) and `resync.py prepare-books`,
-then the ordinary immutable apply/verify boundary. Preserve existing accepted additional-language
-translations and manual wording. Do not generate AI prose for official targets or import from
-sources with unresolved data terms. The normal build compiles these records; UI is separate.
+then the ordinary immutable apply/verify boundary. Preserve accepted non-AI and manual wording.
+Use the dedicated book queue for AI in either target group when verified English exists and a
+matching translation is unavailable. Applicable sourced wording supersedes AI. Review source
+terms before distributing the compiled records.
 
 ## Everyday editing: add, fix, or translate
 
@@ -187,7 +188,8 @@ quest prose, objectives, tooltip facts, or relationships to make a record look c
 ### 2. Choose the wording and origin
 
 Prefer verified native text, then existing translations with the same source meaning and
-context. AI authoring is limited to additional languages that meet the [source evidence rules](../docs/import-resync.md#eligibility-for-new-additional-language-ai-translations).
+context. Follow the [source evidence rules](../docs/import-resync.md#eligibility-for-new-additional-language-ai-translations)
+and the specific [book and letter exception](../docs/import-resync.md#book-identities-and-existing-source-text).
 Check relevant entity names and Warcraft terminology before
 authoring. For targeted reuse, search the relevant catalog kind; do not print the full corpus.
 Verify that an upstream locale contains an actual translation rather than English fallback.
@@ -325,14 +327,16 @@ translation work merely because saved drafts exist.
   assignments, completed results, validation outcomes, and unresolved work so resuming does
   not repeat accepted jobs or redo searches whose inputs have not changed.
 
-### 3. One entity per worker, coordinator-owned integration
+### 3. One snapshot per entity, coordinator-owned integration
 
-When delegation is explicitly authorized, use the repository's agent limits and
-`tools/catalogs/catalog-batch.py` with `--batch-size 1`. Each worker owns one entity at a time across
-all requested languages. It edits only its assigned results file and returns the result plus
-unresolved evidence/conflicts before receiving another assignment. Keep requests bounded;
-do not start an unattended worker loop. Reuse a worker while its context remains relevant;
-handoff a fresh bounded assignment when accumulated context would obscure the task.
+When delegation is explicitly authorized, prepare waves of up to 100 entities with
+`tools/catalogs/catalog-batch.py` and `--batch-size 1`. Distribute the disjoint snapshots among
+six GPT-6.1-Tera workers at medium effort. Each worker can take several entities in a wave
+and completes every missing target language per entity. Start fresh workers for each wave
+with the assignment and relevant terminology, without inheriting previous conversations.
+Keep one result file per entity and save it before moving on to the next. Workers edit their
+assigned result files and report unresolved cases. Keep assignments bounded and validate
+results before applying them.
 
 For each field, applicable trusted source updates win over existing text, especially AI drafts.
 Prefer verified official text for official languages, or applicable community text for community
@@ -445,10 +449,11 @@ Include new IDs explicitly. Prepare disjoint assignments:
 python3 tools/catalogs/catalog-batch.py prepare --scope datasources/imports/update/scope.json --output-dir datasources/imports/update/batches --batch-size 1
 ```
 
-Assign each agent one `NNNNN.results.json`, the supported languages, and the pinned upstream
-evidence. Results contain all languages with inline field metadata. The coordinator retains
-`NNNNN.batch.json`, which contains complete original records, locale configuration, and fingerprints.
-Agents edit only their results file with the dedicated `apply_patch` tool. Preserve unchanged
+Assign each agent a disjoint group of `NNNNN.results.json` files, the supported languages, and
+the pinned upstream evidence. Each file contains all languages with inline field metadata. The
+coordinator retains the matching `NNNNN.batch.json`, which contains complete original records,
+locale configuration, and fingerprints. Agents edit only their assigned results files with
+the dedicated `apply_patch` tool. Preserve unchanged
 metadata. Changed metadata records the correct origin, source, and source language inline.
 New records start as `null` and must be supplied in the results.
 Do not run builders or modify maintained catalogs or shared metadata from individual agents.
