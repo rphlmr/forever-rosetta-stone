@@ -20,6 +20,8 @@ concurrency:
 jobs:
   release:
     runs-on: ubuntu-latest
+    outputs:
+      artifact-id: ${{ steps.release-artifact.outputs.artifact-id }}
     permissions:
       contents: write
       actions: read
@@ -63,6 +65,7 @@ jobs:
           python3 tools/release/build-release.py --tag "$RELEASE_TAG" \
             --from-preview "ci-artifact/ForeverRosettaStone-${RELEASE_TAG#v}-preview.zip"
       - uses: actions/upload-artifact@v7
+        id: release-artifact
         with:
           name: addon-${{ env.RELEASE_TAG }}
           path: |
@@ -74,3 +77,50 @@ jobs:
           gh release create "$RELEASE_TAG" dist/*.zip dist/release-notes.md \
             --verify-tag --title "Forever Rosetta Stone $RELEASE_TAG" \
             --notes-file dist/release-notes.md
+
+  publish-curseforge:
+    needs: release
+    runs-on: ubuntu-latest
+    permissions: {}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          artifact-ids: ${{ needs.release.outputs.artifact-id }}
+          digest-mismatch: error
+          path: dist
+      - name: Submit the validated ZIP to CurseForge
+        shell: bash
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+        run: |
+          if [[ -z "$CF_API_TOKEN" ]]; then
+            echo '::error::Set the CF_API_TOKEN repository Actions secret to a CurseForge author upload token.'
+            exit 1
+          fi
+
+          archive="dist/ForeverRosettaStone-${RELEASE_TAG#v}.zip"
+          notes="dist/release-notes.md"
+          test -s "$archive"
+          test -s "$notes"
+
+          api="https://wow.curseforge.com/api"
+          versions=$(curl --fail --silent --show-error --max-time 30 \
+            --header "X-Api-Token: $CF_API_TOKEN" "$api/game/wow/versions")
+          # CurseForge's version type for WoW Forever is 88568.
+          game_version_id=$(jq -er '
+            map(select(.gameVersionTypeID == 88568 and .name == "1.60.1"))
+            | if length == 1 then .[0].id | numbers | select(. > 0)
+              else error("Expected exactly one WoW Forever 1.60.1 version") end
+          ' <<< "$versions")
+
+          response=$(jq -n --arg title "Forever Rosetta Stone $RELEASE_TAG" \
+            --argjson version "$game_version_id" --rawfile notes "$notes" \
+            '{displayName: $title, gameVersions: [$version], releaseType: "release", changelogType: "markdown", changelog: $notes}' \
+            | curl --fail --silent --show-error --max-time 480 \
+                --header "X-Api-Token: $CF_API_TOKEN" \
+                --form 'metadata=<-' --form "file=@$archive;type=application/zip" \
+                "$api/projects/1807672/upload-file")
+          file_id=$(jq -er '.id | numbers | select(. > 0 and . == floor)' <<< "$response")
+          echo "Submitted $RELEASE_TAG to CurseForge as file $file_id" >> "$GITHUB_STEP_SUMMARY"

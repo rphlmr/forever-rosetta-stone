@@ -46,10 +46,15 @@ The database builder propagates it to the main addon TOC; data-pack TOCs share t
 generated catalog fingerprint. Do not edit generated identifiers individually. Data updates do not require a version bump
 until they are included in a new player release.
 
+For catalog releases, choose the version bump based on what players get:
+
+- **Minor** when the release adds quests or translations, including translations for existing quests.
+- **Patch** when the catalog changes are limited to metadata updates or corrections to existing translations.
+
 1. On the release branch, set `## Version: MAJOR.MINOR.PATCH` in the manifest template.
 2. Move the Unreleased notes into `## [VERSION] - YYYY-MM-DD`, leaving an empty
    `## [Unreleased]` section above it. The notes become both the GitHub release body and
-   the changelog to paste into CurseForge.
+   the CurseForge file changelog.
 3. Build and check the exact candidate locally:
 
    ```sh
@@ -89,14 +94,19 @@ python3 tools/release/build-release.py --tag vVERSION \
 The workflow establishes CI provenance by repository, workflow, event, branch and exact commit.
 The local command validates the ZIP and version; only pass a preview whose provenance you trust.
 
-## Submit to CurseForge manually
+## Publish to CurseForge
 
-Download `ForeverRosettaStone-VERSION.zip` from the GitHub Release and upload that ZIP to
-CurseForge. Paste the release body or the attached `release-notes.md` into its Markdown
-changelog editor. GitHub's automatic source archives are not installable addon bundles.
+Create a CurseForge author upload token using the [CurseForge Upload API guide](https://support.curseforge.com/support/solutions/articles/9000197321-curseforge-upload-api).
+In the GitHub repository, go to **Settings → Secrets and variables → Actions → New repository secret**.
+Name the secret `CF_API_TOKEN` and paste the CurseForge token as its value.
 
-There is no CurseForge API integration or token configuration. Publishing a GitHub Release
-does not submit a file to CurseForge; its processing and approval remain separate.
+After GitHub publication, the `publish-curseforge` job downloads the same validated ZIP and
+notes from the current run. It submits them to project `1807672` as a WoW Forever `1.60.1`
+release and reports the CurseForge file ID. CurseForge processes and approves the file separately.
+
+If upload fails, check the CurseForge project files first in case CurseForge received the ZIP
+before GitHub lost the response. If the ZIP is absent, rerun the failed job in the original run.
+For a manual upload, use the versioned ZIP and `release-notes.md` attached to the GitHub Release.
 
 The Release workflow can also be run manually against an existing version tag, for example
 if a build failed before publication. It uses that tag's workflow and code. An existing
