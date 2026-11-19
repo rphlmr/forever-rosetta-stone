@@ -12,14 +12,14 @@ local function GetRewardName(source)
     return ForeverRosettaStoneDB:GetItemName(itemID, Addon:GetTargetLocale()) or source.Name:GetText()
 end
 
-function Addon:CopyQuestTextStyle(target, source)
+function Addon:CopyQuestTextStyle(target, source, ...)
     if not target or not source then return end
-    local font, size, flags = source:GetFont()
+    local font, size, flags = source:GetFont(...)
     if font and size then target:SetFont(font, size, flags) end
-    target:SetTextColor(source:GetTextColor())
-    target:SetShadowColor(source:GetShadowColor())
-    target:SetShadowOffset(source:GetShadowOffset())
-    target:SetSpacing(source:GetSpacing())
+    target:SetTextColor(source:GetTextColor(...))
+    target:SetShadowColor(source:GetShadowColor(...))
+    target:SetShadowOffset(source:GetShadowOffset(...))
+    target:SetSpacing(source:GetSpacing(...))
 end
 
 -- The target's parent mirrors the native details frame. Bottom anchoring preserves rewards height.
@@ -47,6 +47,52 @@ function Addon:CopyQuestFrameLayout(target, source, anchor)
     if point == "TOPLEFT" then target:SetHeight(source:GetHeight() * sourceScale / targetScale) end
 end
 
+function Addon:AlignQuestScrollBar(target, native, panel, source)
+    local left, top = native and native:GetLeft(), native and native:GetTop()
+    local bottom = native and native:GetBottom()
+    local sourceLeft, sourceTop = source:GetLeft(), source:GetTop()
+    if not (target and left and top and bottom and sourceLeft and sourceTop) then return false end
+    local scale = native:GetEffectiveScale() / source:GetEffectiveScale()
+    local x = (left - sourceLeft) * scale
+    target:ClearAllPoints()
+    target:SetWidth(native:GetWidth() * scale)
+    target:SetPoint("TOPLEFT", panel, "TOPLEFT", x, (top - sourceTop) * scale)
+    target:SetPoint("BOTTOMLEFT", panel, "TOPLEFT", x, (bottom - sourceTop) * scale)
+    return true
+end
+
+function Addon:AlignQuestViewport(target, native, panel, source, leftInset)
+    local left, top = native and native:GetLeft(), native and native:GetTop()
+    local sourceLeft, sourceTop = source:GetLeft(), source:GetTop()
+    if not (left and top and sourceLeft and sourceTop) then return end
+    local scale = native:GetEffectiveScale() / source:GetEffectiveScale()
+    local x = leftInset or 0
+    target:ClearAllPoints()
+    target:SetPoint("TOPLEFT", panel, "TOPLEFT", (left - sourceLeft) * scale + x, (top - sourceTop) * scale)
+    target:SetSize(math.max(1, native:GetWidth() * scale - x), native:GetHeight() * scale)
+    return scale
+end
+
+function Addon:SyncQuestInset(panel, source)
+    local native = source.Inset
+    local inset = panel.questInset
+    local left, top = native and native:GetLeft(), native and native:GetTop()
+    local sourceLeft, sourceTop = source:GetLeft(), source:GetTop()
+    if not (left and top and sourceLeft and sourceTop and native:IsVisible()) then
+        if inset then inset:Hide() end
+        return
+    end
+    if not inset then
+        inset = self:NewFrame("Frame", nil, panel, "InsetFrameTemplate")
+        panel.questInset = inset
+    end
+    local scale = native:GetEffectiveScale() / source:GetEffectiveScale()
+    inset:ClearAllPoints()
+    inset:SetPoint("TOPLEFT", panel, "TOPLEFT", (left - sourceLeft) * scale, (top - sourceTop) * scale)
+    inset:SetSize(native:GetWidth() * scale, native:GetHeight() * scale)
+    inset:Show()
+end
+
 function Addon:CreateNativeQuestBody(parent, contentWidth)
     local scroll = self:NewFrame("EventScrollFrame", nil, parent, "ScrollFrameTemplate")
     scroll:SetPoint("TOPLEFT", parent, "TOPLEFT", 5, -43)
@@ -61,7 +107,7 @@ function Addon:CreateNativeQuestBody(parent, contentWidth)
     local contents = self:NewFrame("Frame", nil, scroll)
     contents:SetSize(298, 1)
     scroll:SetScrollChild(contents)
-    local body = { frame = scroll, child = contents, sections = {}, textHeight = 1, spacerHeight = 0 }
+    local body = { frame = scroll, child = contents, sections = {}, rowIcons = {}, textHeight = 1, spacerHeight = 0 }
 
     function body:ScrollTo(offset)
         scroll:SetVerticalScroll(math.max(0, math.min(offset, scroll:GetVerticalScrollRange())))
@@ -78,9 +124,11 @@ function Addon:CreateNativeQuestBody(parent, contentWidth)
 
     function body:SetSections(sections)
         self.lastSections = sections
-        local width = contentWidth or QUEST_TEMPLATE_MAP_DETAILS.contentWidth
-        contents:SetWidth(width + 5)
-        local offset = 10
+        local width = self.contentWidth or contentWidth or QUEST_TEMPLATE_MAP_DETAILS.contentWidth
+        local leftInset = self.textInsetX or 5
+        contents:SetWidth(width + leftInset)
+        local offset = self.textInsetY or 10
+        for _, icon in pairs(self.rowIcons) do icon:Hide() end
 
         for index, section in ipairs(sections) do
             local text = self.sections[index]
@@ -94,13 +142,38 @@ function Addon:CreateNativeQuestBody(parent, contentWidth)
             end
 
             offset = offset + section.gap
-            Addon:CopyQuestTextStyle(text, section.source)
+            if section.textType then
+                Addon:CopyQuestTextStyle(text, section.source, section.textType)
+            else
+                Addon:CopyQuestTextStyle(text, section.source)
+            end
             text:ClearAllPoints()
-            text:SetPoint("TOPLEFT", contents, "TOPLEFT", 5, -offset)
-            text:SetWidth(width)
+            local indent = section.indent or 0
+            text:SetWidth(math.max(1, width - indent))
             text:SetText(section.text)
             text:Show()
-            offset = offset + text:GetStringHeight()
+            local height = text:GetStringHeight()
+            if section.rowHeight then
+                height = math.max(height, section.rowHeight)
+                local center = -(offset + height / 2)
+                text:SetPoint("LEFT", contents, "TOPLEFT", leftInset + indent, center)
+                local art = section.icon
+                if art then
+                    local icon = self.rowIcons[index]
+                    if not icon then
+                        icon = contents:CreateTexture(nil, "ARTWORK")
+                        self.rowIcons[index] = icon
+                    end
+                    if art.atlas then icon:SetAtlas(art.atlas) else icon:SetTexture(art.texture) end
+                    icon:SetSize(art.width, art.height)
+                    icon:ClearAllPoints()
+                    icon:SetPoint("LEFT", contents, "TOPLEFT", leftInset + (art.x or 0), center)
+                    icon:Show()
+                end
+            else
+                text:SetPoint("TOPLEFT", contents, "TOPLEFT", leftInset, -offset)
+            end
+            offset = offset + height
         end
 
         for index = #sections + 1, #self.sections do self.sections[index]:Hide() end
@@ -200,6 +273,13 @@ function Addon:CreateQuestPage(parent)
         background:SetAtlas(QuestTextContrast.GetDefaultDetailsBackgroundAtlas())
 
         QuestLogQuestDetailsMixin.AdjustBackgroundTexture(details, background)
+        if details.Bg and details.Bg:GetLeft() and details.Bg:GetTop() then
+            local atlas = details.Bg:GetAtlas()
+            if atlas then background:SetAtlas(atlas) else background:SetTexture(details.Bg:GetTexture()) end
+            background:SetTexCoord(details.Bg:GetTexCoord())
+            background:SetSize(details.Bg:GetSize())
+            Addon:CopyQuestFrameLayout(background, details.Bg)
+        end
 
         local native = details.RewardsFrameContainer
         local shown = self.missingQuest or (native:IsShown() and MapQuestInfoRewardsFrame:IsShown())
@@ -209,6 +289,7 @@ function Addon:CreateQuestPage(parent)
         rewardContents:SetHeight(rewardHeight)
         body.frame:SetSize(details.ScrollFrame:GetSize())
         Addon:CopyQuestFrameLayout(body.frame, details.ScrollFrame)
+        Addon:AlignQuestScrollBar(body.frame.ScrollBar, details.ScrollFrame.ScrollBar, frame, details)
         Addon:CopyQuestFrameLayout(rewards, native, "BOTTOMLEFT")
         body.spacerHeight = height
         body:UpdateScrollRange()

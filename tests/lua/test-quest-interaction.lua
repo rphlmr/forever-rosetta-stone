@@ -96,6 +96,46 @@ check(not (Addon.questInteractionReader and Addon.questInteractionReader.frame:I
     "gossip greeting never opens the reader")
 check(not (Addon.questInteractionBookmark and Addon.questInteractionBookmark:IsShown()),
     "gossip greeting shows no FRS bookmark")
+do
+    local nativeViewport = CreateFrame("Frame", nil, GossipFrame)
+    nativeViewport.left, nativeViewport.top = GossipFrame:GetLeft() + 8, GossipFrame:GetTop() - 65
+    nativeViewport:SetSize(300, 403)
+    local nativeBar = CreateFrame("Frame", nil, GossipFrame)
+    nativeBar.left, nativeBar.top = GossipFrame:GetLeft() + 314, GossipFrame:GetTop() - 68
+    nativeBar:SetSize(8, 397)
+    GossipFrame.GreetingPanel = { ScrollBox = nativeViewport, ScrollBar = nativeBar }
+    Addon.questInteractionContentProvider = function(source, id, context)
+        if source == GossipFrame and id == 0 and context == "gossip" then
+            return { { text = "Translated greeting", gap = 0 } }, "first-greeting"
+        end
+    end
+    Addon.preferences.features.questAutoOpen = true
+    Addon:UpdateQuestInteraction()
+    local gossipReader = Addon.questInteractionReader
+    local gossipBookmark = Addon.questInteractionBookmark
+    check(gossipReader.frame:IsShown() and not gossipReader.options:IsShown(),
+        "a translated greeting uses the quest reader without quest-specific Options")
+    local _, _, _, barX, barY = gossipReader.body.frame.ScrollBar:GetPoint(1)
+    check(barX == 314 and barY == -68, "the shared reader keeps the gossip scrollbar alignment")
+    gossipReader.frame.CloseButton:Fire("OnClick")
+    check(not gossipReader.frame:IsShown() and GossipFrame:IsShown() and gossipBookmark:IsShown(),
+        "the gossip close button collapses to the shared bookmark")
+    Addon:UpdateQuestInteraction()
+    check(gossipBookmark:IsShown() and not gossipReader.frame:IsShown(), "refresh preserves gossip dismissal")
+    controls.setGamepad(true)
+    Addon:UpdateQuestInteraction()
+    local manager = GamepadMode.FrameControlsManager
+    manager:FrameHidden(gossipBookmark.host)
+    manager:FrameShown(gossipBookmark.host, false, true)
+    gossipBookmark:Fire("OnClick")
+    check(gossipReader.frame:IsShown() and manager.focusedFrame == gossipReader.frame,
+        "reopening a greeting hands focus to the shared reader")
+    check(gossipReader.frame.SmartNavigationCloseHandler() and gossipBookmark:IsShown() and GossipFrame:IsShown(),
+        "Back on the greeting reader returns to its bookmark")
+    controls.setGamepad(false)
+    Addon.preferences.features.questAutoOpen = false
+    Addon.questInteractionContentProvider = nil
+end
 GossipFrame:Hide()
 QuestFrame:Show()
 QuestFrameDetailPanel:Hide(); QuestFrameProgressPanel:Hide(); QuestFrameRewardPanel:Hide()
@@ -131,6 +171,18 @@ check(reader.parchment:IsShown() and reader.parchment:GetAtlas() == "QuestBG-Par
 local _, _, _, parchmentX, parchmentY = reader.parchment:GetPoint(1)
 check(parchmentX == 7 and parchmentY == -62 and reader.parchment:GetWidth() == 305
     and reader.parchment:GetHeight() == 422, "companion parchment keeps native offset and size")
+QuestFrame.Inset = CreateFrame("Frame", nil, QuestFrame, "InsetFrameTemplate")
+QuestFrame.Inset.left, QuestFrame.Inset.top = 24, 740
+QuestFrame.Inset:SetSize(328, 410)
+Addon:UpdateQuestInteraction()
+local inset = reader.frame.questInset
+local _, insetParent, _, insetX, insetY = inset:GetPoint(1)
+check(inset:IsShown() and inset.template == "InsetFrameTemplate" and insetParent == reader.frame
+    and insetX == 4 and insetY == -60 and inset:GetWidth() == 328 and inset:GetHeight() == 410,
+    "companion uses the native inset behind its parchment and scrollbar")
+QuestFrame.Inset:Hide()
+Addon:UpdateQuestInteraction()
+check(not inset:IsShown(), "hidden native inset clears the companion background")
 local sections = reader.body.lastSections
 Addon:UpdateQuestInteraction()
 check(reader.body.lastSections == sections, "stable polling does not rebuild text or reset reading")
@@ -147,16 +199,36 @@ controls.setGamepad(true)
 Addon:SendQuestInteraction({ type = "dismiss" })
 Addon:UpdateQuestInteraction()
 local bookmark, bookmarkManager = Addon.questInteractionBookmark, GamepadMode.FrameControlsManager
+local bookmarkTooltip = Addon:GetWidgetTooltip()
 check(bookmark.registered, "a dismissed reader's bookmark joins controller navigation")
+check(bookmark.gamepadPrompt:IsShown() and bookmark.gamepadPrompt.inputKey == "PADRTRIGGER",
+    "a reachable NPC bookmark shows the right trigger")
+local _, promptAnchor, _, promptX = bookmark.gamepadPrompt:GetPoint(1)
+check(promptAnchor == bookmark.Icon and promptX == 0, "bookmark hints align with the Rosetta Stone icon")
 bookmarkManager:FrameHidden(bookmark.host)
 bookmarkManager:FrameShown(bookmark.host, false, true)
+check(bookmark.gamepadPrompt:IsShown() and bookmark.gamepadPrompt.inputKey == GAMEPAD_FACE_BOTTOM,
+    "the focused NPC bookmark shows only the select glyph")
 check(SmartNavigation:GetCurrentButton() == bookmark, "focusing the bookmark frame selects the bookmark")
+check(bookmarkTooltip:IsShown() and bookmarkTooltip:IsOwned(bookmark)
+    and bookmarkTooltip:GetText() == Addon:GetOpenPanelLabel(), "controller focus shows the reopen tooltip")
+bookmarkManager:FrameHidden(bookmark.host)
+check(not bookmarkTooltip:IsShown(), "leaving the bookmark hides its tooltip")
+bookmarkManager:FrameShown(bookmark.host, false, true)
 bookmark:Fire("OnClick")
 check(reader.frame:IsShown() and not bookmark:IsShown() and not bookmark.registered
     and bookmarkManager.focusedFrame == reader.frame, "A on the bookmark opens the reader with controller focus")
-controls.setGamepad(false)
+check(not bookmarkTooltip:IsShown(), "opening the reader clears the bookmark tooltip")
+Addon:SendQuestInteraction({ type = "dismiss" })
 Addon:UpdateQuestInteraction()
-QuestFrame:Hide()
+check(not bookmark.host.SmartNavigationCloseHandler() and QuestFrame:IsShown(),
+    "an unfocused bookmark leaves the native panel open")
+bookmarkManager:FrameHidden(bookmark.host)
+bookmarkManager:FrameShown(bookmark.host, false, true)
+check(bookmark.host.SmartNavigationCloseHandler() and not QuestFrame:IsShown()
+    and not bookmark.registered and not bookmark.gamepadPrompt:IsShown(),
+    "Back on the focused bookmark closes the native panel and releases the bookmark")
+controls.setGamepad(false)
 Addon:UpdateQuestInteraction()
 check(Addon.questInteractionState.mode == "hidden", "closing NPC clears selection")
 QuestFrame:Show()
@@ -165,8 +237,8 @@ check(reader.frame:IsShown(), "new NPC interaction can open again")
 GetQuestID = function() return 999999999 end
 Addon:SendQuestInteraction({ type = "reset" })
 Addon:UpdateQuestInteraction()
-check(not reader.frame:IsShown() and not Addon.questInteractionBookmark:IsShown(),
-    "a quest without translated text shows neither the reader nor its bookmark")
+check(reader.frame:IsShown() and reader.missing and reader.options:IsShown(),
+    "an untranslated quest opens a reportable missing page")
 GetQuestID = function() return 179 end
 Addon:UpdateQuestInteraction()
 controls.setGamepad(true)
@@ -183,14 +255,25 @@ controls.setGamepad(false)
 Addon:SendQuestInteraction({ type = "reset" })
 QuestFrameDetailPanel:Hide()
 QuestFrameGreetingPanel:Hide()
--- Progress and completion prose have no owned source; a title alone does not justify a companion.
+-- Missing progress and completion prose is reportable from the corresponding NPC screen.
+local savedProgress, savedReward = GetProgressText, GetRewardText
+GetProgressText = function() return "Native progress" end
+GetRewardText = function() return "Native completion" end
 for _, screen in ipairs({ { QuestFrameProgressPanel, "progress" }, { QuestFrameRewardPanel, "reward" } }) do
     QuestFrameDetailPanel:Hide(); QuestFrameProgressPanel:Hide(); QuestFrameRewardPanel:Hide()
     screen[1]:Show()
     Addon:UpdateQuestInteraction()
-    check(not reader.frame:IsShown() and not Addon.questInteractionBookmark:IsShown(),
-        screen[2] .. " screen shows neither the reader nor its bookmark")
+    check(reader.frame:IsShown() and reader.missing and reader.options:IsShown(),
+        screen[2] .. " opens a reportable missing page")
+    reader.options:Fire("OnClick")
+    local dialog = Addon.questReport
+    local native = dialog.record.interaction
+    check(native.screen == screen[2] and dialog.record.questID == 179
+        and (native.progress == "Native progress" or native.completion == "Native completion"),
+        "report stores the quest phase and its native text")
+    dialog.frame:Hide()
 end
+GetProgressText, GetRewardText = savedProgress, savedReward
 QuestFrameProgressPanel:Hide(); QuestFrameRewardPanel:Hide(); QuestFrameDetailPanel:Show()
 Addon:UpdateQuestInteraction()
 check(reader.frame:IsShown() and Addon.questInteractionState.context == "detail", "native offer screen owns the reader")
@@ -267,8 +350,8 @@ function nativeRewards:GetRegions() return self.Header, self.ItemReceiveText, xp
 function nativeRewards:GetChildren() return spellReward end
 QuestInfoRewardsFrame = nativeRewards
 Addon:UpdateQuestInteraction()
-local function FindRewardText(text)
-    for _, region in ipairs({reader.body.child:GetChildren()}) do
+local function FindRewardText(text, target)
+    for _, region in ipairs({(target or reader).body.child:GetChildren()}) do
         if region:IsShown() and region:GetText() == text then return region end
     end
 end
@@ -299,15 +382,25 @@ spellButton:Fire("OnLeave")
 check(not rewardTip:IsShown() and not spellSource:IsShown(), "leaving a mirrored spell hides its tooltip")
 local previousActive, previousCurrent = SmartNavigation.activeFrame, SmartNavigation.currentButton
 controls.setGamepad(true)
+Addon:UpdateQuestInteraction()
 SmartNavigation.activeFrame, SmartNavigation.currentButton = reader.frame, spellButton
 Addon:UpdateRewardTooltips()
 check(RewardTitle() == spellName, "gamepad focus on a mirrored spell shows its translated tooltip")
+reader:SyncTarget()
+local selectPrompt, backPrompt = reader.footer.prompts[1], reader.footer.prompts[2]
+check(not selectPrompt.icon:IsShown() and not selectPrompt.text:IsShown() and backPrompt.icon:IsShown(),
+    "read-only reward focus shows Back without Select")
+SmartNavigation.currentButton = nil
+reader:SyncTarget()
+check(not selectPrompt.icon:IsShown(), "reading the quest does not advertise a Select action")
 local _, _, _, anchorX, anchorY = rewardTip:GetPoint(1)
 local tipScale = spellButton:GetEffectiveScale() / UIParent:GetEffectiveScale()
 check(math.abs(anchorX - (spellButton:GetLeft() + spellButton:GetWidth()) * tipScale) < 0.01
     and math.abs(anchorY - spellButton:GetTop() * tipScale) < 0.01,
     "reward tooltips anchor like native ANCHOR_RIGHT, at the button's top-right corner")
 SmartNavigation.currentButton = reader.options
+reader:SyncTarget()
+check(selectPrompt.icon:IsShown() and selectPrompt.text:IsShown(), "Options focus advertises Select")
 Addon:UpdateRewardTooltips()
 check(not rewardTip:IsShown(), "moving gamepad focus away hides the reward tooltip")
 SmartNavigation.activeFrame, SmartNavigation.currentButton = previousActive, previousCurrent
@@ -322,6 +415,57 @@ xp:SetText("170")
 Addon:UpdateQuestInteraction()
 check(not FindRewardText("40") and FindRewardText("170"), "reward values refresh without stale XP")
 check(nativeRewards.Header:GetText() == "Native rewards", "reward mirroring never overwrites native text")
+
+local customReader = reader
+local dialogue = { { text = "Translated turn-in dialogue", gap = 0 } }
+customReader.body:SetSections({
+    { text = "Translated gossip option", gap = 23, indent = 19, rowHeight = 20,
+        icon = { atlas = "test-gossip-atlas", width = 16, height = 16, x = -2 } },
+})
+local _, _, _, rowTextX, rowTextY = customReader.body.sections[1]:GetPoint(1)
+local _, _, _, rowIconX, rowIconY = customReader.body.rowIcons[1]:GetPoint(1)
+check(rowTextY == rowIconY and rowTextY == -43 and rowTextX == 24 and rowIconX == 3,
+    "gossip option text and icon share a center line after the native gap")
+customReader:ShowSections(783, "reward", dialogue)
+check(not customReader.body.rowIcons[1]:IsShown(), "reusing the body clears old gossip icons")
+check(FindRewardText("170", customReader), "turn-in companion mirrors live XP")
+local previousProgressChild = QuestProgressScrollChildFrame
+local previousRequiredItems = QuestProgressRequiredItemsText
+local previousProgressText = QuestProgressText
+local previousTurnInItems = TURN_IN_ITEMS
+local previousQuestItemInfo = GetQuestItemInfo
+ClientApi.InstallGlobals("frFR", { "TURN_IN_ITEMS" })
+QuestProgressScrollChildFrame = CreateFrame("Frame", nil, QuestFrame)
+QuestProgressScrollChildFrame.left, QuestProgressScrollChildFrame.top = 30, 550
+QuestProgressRequiredItemsText = RewardText(TURN_IN_ITEMS, 30, 460)
+QuestProgressText = nativeRewards.ItemReceiveText
+local requiredItem = CreateFrame("Button", nil, QuestProgressScrollChildFrame)
+requiredItem.left, requiredItem.top = 30, 438
+requiredItem:SetSize(150, 40)
+requiredItem:SetID(1)
+requiredItem.type, requiredItem.objectType = "required", "item"
+requiredItem.Name = RewardText("Viande de loup coriace", 72, 436)
+requiredItem.Count = RewardText("8", 60, 422)
+function requiredItem:GetRegions() return self.Name, self.Count end
+function requiredItem:GetChildren() return end
+GetQuestItemInfo = function(kind, index)
+    if kind == "required" and index == 1 then return nil, nil, 8, nil, nil, 750 end
+    return previousQuestItemInfo(kind, index)
+end
+function QuestProgressScrollChildFrame:GetRegions() return QuestProgressRequiredItemsText, QuestProgressText end
+function QuestProgressScrollChildFrame:GetChildren() return requiredItem end
+customReader:ShowSections(783, "progress", dialogue)
+check(FindRewardText(Addon:GetClientLabel("TURN_IN_ITEMS", Addon:GetTargetLocale()), customReader),
+    "progress companion mirrors the translated requirements header")
+local requiredName = ForeverRosettaStoneDB:GetItemName(750, Addon:GetTargetLocale())
+check(requiredName and FindRewardText(requiredName, customReader) and FindRewardText("8", customReader),
+    "progress companion translates the required item and copies its live count")
+check(not FindRewardText("Native receive", customReader), "progress mirror omits the native dialogue")
+customReader.frame:Hide()
+QuestProgressScrollChildFrame, QuestProgressRequiredItemsText = previousProgressChild, previousRequiredItems
+QuestProgressText, TURN_IN_ITEMS = previousProgressText, previousTurnInItems
+GetQuestItemInfo = previousQuestItemInfo
+
 QuestInfoRewardsFrame:Hide()
 Addon:UpdateQuestInteraction()
 check(not FindRewardText("170") and reader.body.spacerHeight == 0, "hidden native rewards clear the mirror")

@@ -62,6 +62,76 @@ function Addon:CreateGamepadLegend(parent, name)
     return legend
 end
 
+function Addon:SetupSideReaderController(reader, footerName, dismiss)
+    local frame, body, options = reader.frame, reader.body, reader.options
+    local footer = self:CreateGamepadLegend(frame, footerName)
+    if options then footer:AddStandardSelectPrompt() end
+    footer:AddStandardBackPrompt(FRAME_ACTION_CLOSE)
+    footer:Finalize()
+    footer:HidePrompts()
+    local selectPrompt = options and footer.prompts[1]
+    reader.footer = footer
+
+    -- Keep actions reachable without preselecting Options; the X gives way to Back.
+    function reader:SyncTarget()
+        local gamepad = InputUtil.IsGamepadUIEnabled()
+        frame.CloseButton:SetShown(not gamepad)
+        local focused = gamepad and self.registered and not InCombatLockdown() and SmartNavigation:GetActiveFrame() == frame
+        local selected = focused and SmartNavigation:GetCurrentButton()
+        if selectPrompt then
+            local canSelect = selected == options and options:IsVisible()
+            selectPrompt.icon:SetShown(canSelect)
+            selectPrompt.text:SetShown(canSelect)
+        end
+        if selected and not selected:IsVisible() then
+            Addon:ClearGamepadTarget(frame)
+        end
+    end
+
+    function reader:ReleaseController()
+        footer:HidePrompts()
+
+        if not self.registered or InCombatLockdown() then return end
+
+        self.registered = nil
+        GamepadMode.FrameControlsManager:FrameHidden(frame)
+        SmartNavigation:RemovePanelInfo(frame)
+    end
+
+    function reader:SyncController(focus)
+        if not InputUtil.IsGamepadUIEnabled() or not frame:IsShown()
+            or (options and Addon.questReport and Addon.questReport.frame:IsShown()) then
+            self:ReleaseController()
+            return
+        end
+
+        if not self.registered and not InCombatLockdown() then
+            self.registered = true
+            GamepadMode.FrameControlsManager:FrameShown(frame, false, focus == true)
+        end
+    end
+
+    frame.FocusGamepad = self:Wrap("focus " .. frame:GetName(), function()
+        if not reader.registered or InCombatLockdown() then return end
+
+        SmartNavigation:SetScrollFrameForFrame(frame, body.frame)
+        SmartNavigation_MarkScrollFrameMaintainPreviousButtonOnScroll(body.frame)
+        Addon:ClearGamepadTarget(frame)
+        reader:SyncTarget()
+        footer:ShowPrompts()
+    end)
+    frame.UnfocusGamepad = self:Wrap("leave " .. frame:GetName(), function()
+        footer:HidePrompts()
+
+        if not InCombatLockdown() then SmartNavigation:SetScrollFrameForFrame(frame, nil) end
+    end)
+    frame.SmartNavigationCloseHandler = self:Wrap("close " .. frame:GetName(), function()
+        dismiss()
+        return true
+    end, true)
+    self:HookScript(frame, "OnHide", function() reader:ReleaseController() end)
+end
+
 function Addon:SyncPanelInputMode()
     local gamepad = InputUtil.IsGamepadUIEnabled()
     self.panel.CloseButton:SetShown(not gamepad)
@@ -111,9 +181,12 @@ function Addon:CreateControllerFocus()
     self:HookScript(panel, "OnHide", function() self:ReleaseControllerFocus() end)
 
     self.toggle.OnSmartNavSelect = self:Wrap("select bookmark", function()
-        if self.toggle:IsVisible() then self:Send("bookmark.focus") end
+        if not self.toggle:IsVisible() then return end
+        self:Send("bookmark.focus")
+        self.toggle:SetGamepadFocus(true)
     end)
     self.toggle.OnSmartNavDeselect = self:Wrap("deselect bookmark", function()
+        self.toggle:SetGamepadFocus(false)
         self:Send("bookmark.blur")
     end)
 

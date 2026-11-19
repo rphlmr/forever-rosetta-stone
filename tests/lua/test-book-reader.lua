@@ -27,6 +27,36 @@ ItemTextFrame = CreateFrame("Frame", nil, UIParent)
 ItemTextFrame:SetSize(338, 424)
 ItemTextFrame.left, ItemTextFrame.top = 20, 800
 ItemTextFrame:Show()
+local nativeScroll = CreateFrame("ScrollFrame", nil, ItemTextFrame, "ScrollFrameTemplate")
+ItemTextFrame.ScrollFrame = nativeScroll
+nativeScroll.left, nativeScroll.top = 28, 737
+nativeScroll:SetSize(296, 347)
+nativeScroll.ScrollBar.left, nativeScroll.ScrollBar.top = 324, 737
+nativeScroll.ScrollBar:SetSize(22, 347)
+local nativeChild = CreateFrame("Frame", nil, nativeScroll)
+nativeChild.top = 750
+nativeScroll:SetScrollChild(nativeChild)
+function nativeScroll:GetScrollChild() return nativeChild end
+local nativePage = CreateFrame("SimpleHTML", nil, nativeChild)
+nativePage.left, nativePage.top = 40, 735
+nativePage:SetSize(270, 400)
+function nativePage:GetFont(element)
+    if element == "P" then return "Fonts/BookParagraph.ttf", 13, "" end
+    return "Fonts/BookHeading.ttf", 16, ""
+end
+function nativePage:GetTextColor(element)
+    assert(element == "P")
+    return 0.2, 0.1, 0.05, 1
+end
+function nativePage:GetSpacing(element)
+    assert(element == "P")
+    return 2
+end
+ItemTextFrame.PageText = nativePage
+local pageNumberLabel = ItemTextFrame:CreateFontString()
+pageNumberLabel.top = 765
+pageNumberLabel:SetHeight(14)
+ItemTextFrame.CurrentPage = pageNumberLabel
 
 check(DB:GetBookFirstPage("object", 175761) == 2097, "world object owners index their book")
 check(DB:GetBookFirstPage("item", 5861) == 669, "bag item owners index their book")
@@ -45,7 +75,9 @@ pageNumber = 5
 check(Addon:GetOpenBook() == nil, "a page number outside the catalog keeps the page native")
 pageNumber = 1
 npcGUID = "GameObject-0-1-0-0-1-0000ABCD"
-check(Addon:GetOpenBook() == nil, "objects that are not catalog books stay native")
+local unknown, unknownReport = Addon:GetOpenBook()
+check(unknown == nil and unknownReport.reason == "book_not_identified" and unknownReport.ownerID == 1
+    and unknownReport.firstPageID == nil, "unknown books can be reported without guessing a catalog ID")
 npcGUID = "Creature-0-1-0-0-175761-0000ABCD"
 check(Addon:GetOpenBook() == nil, "creature IDs are never read as object IDs")
 
@@ -72,9 +104,9 @@ local hidden = { mode = "hidden" }
 check(Addon:TransitionBookReader(hidden, { type = "dismiss" }) == hidden, "hidden refuses dismissal")
 check(Addon:TransitionBookReader(hidden, { type = "present", firstPage = 2097, autoOpen = false }).mode == "dismissed",
     "without auto-open a new book starts on the bookmark")
-check(Addon:TransitionBookReader({ mode = "dismissed", firstPage = 2097 },
+check(Addon:TransitionBookReader({ mode = "dismissed", bookKey = 2097 },
     { type = "present", firstPage = 2097, autoOpen = true }).mode == "dismissed", "a closed reader stays closed for that book")
-check(Addon:TransitionBookReader({ mode = "dismissed", firstPage = 2097 },
+check(Addon:TransitionBookReader({ mode = "dismissed", bookKey = 2097 },
     { type = "present", firstPage = 669, autoOpen = true }).mode == "visible", "another book opens again")
 
 npcGUID, nativeTitle, pageNumber = "GameObject-0-1-0-0-175761-0000ABCD", "Guerre civile dans les Maleterres", 1
@@ -87,8 +119,24 @@ check(reader and reader.frame:IsShown(), "a translated page opens the reader")
 local point, source, relative = reader.frame:GetPoint(1)
 check(source == ItemTextFrame and point == "TOPLEFT" and relative == "TOPRIGHT", "the reader sits beside the native book")
 local sections = reader.body.lastSections
-check(sections[1].text == "Civil War in the Plaguelands" and sections[2].text == DB:GetBookPage(2097, "enUS"),
-    "the reader shows the translated title and page")
+check(reader.title:GetText() == "Civil War in the Plaguelands" and #sections == 1
+    and sections[1].text == DB:GetBookPage(2097, "enUS"), "the translated title sits outside the page body")
+local _, titleParent, _, _, titleY = reader.title:GetPoint(1)
+check(titleParent == reader.frame and titleY == -42, "the title uses the native pagination band's vertical center")
+local _, _, _, viewportX, viewportY = reader.body.frame:GetPoint(1)
+check(viewportX == 8 and viewportY == -63 and reader.body.frame:GetHeight() == 347,
+    "the translated page aligns with the native viewport")
+local _, _, _, barX, barY = reader.body.frame.ScrollBar:GetPoint(1)
+local _, _, _, _, barBottom = reader.body.frame.ScrollBar:GetPoint(2)
+check(barX == 304 and barY == -63 and barBottom == -410,
+    "the book scrollbar follows the native top and bottom")
+local _, _, _, textX, textY = reader.body.sections[1]:GetPoint(1)
+check(textX == 12 and textY == -15 and reader.body.sections[1]:GetWidth() == 270,
+    "native text margins account for the native scroll offset")
+local bodyText = reader.body.sections[1]
+local font, size = bodyText:GetFont()
+check(font == "Fonts/BookParagraph.ttf" and size == 13 and bodyText:GetTextColor() == 0.2
+    and bodyText:GetSpacing() == 2, "translated body copies the rendered paragraph style, not the heading style")
 check(#reader.parchments == 0, "a book without native material keeps the quest parchment")
 check(not Addon.bookBookmark:IsShown(), "an open reader hides its bookmark")
 Addon:UpdateBookReader()
@@ -110,8 +158,20 @@ check(SmartNavigation:GetActiveFrame() == reader.frame and SmartNavigation:GetCu
     "the book reader takes window focus without selecting an action")
 check(SmartNavigation.scrollFrames[reader.frame] == reader.body.frame,
     "the unselected book reader retains stick scrolling")
+check(not reader.footer.prompts[1].icon:IsShown() and reader.footer.prompts[2].icon:IsShown()
+    and reader.footer.frame:IsShown(), "the focused reader advertises only Back")
+check(reader.frame.SmartNavigationCloseHandler() and not reader.frame:IsShown() and Addon.bookBookmark:IsVisible(),
+    "Back closes the translation and immediately shows the bookmark")
+local bookmark, manager = Addon.bookBookmark, GamepadMode.FrameControlsManager
+manager:FrameHidden(bookmark.host)
+manager:FrameShown(bookmark.host, false, true)
+check(bookmark.gamepadPrompt.inputKey == GAMEPAD_FACE_BOTTOM and Addon:GetWidgetTooltip():IsOwned(bookmark),
+    "the focused book bookmark shows Select and the common reopen tooltip")
+bookmark:Fire("OnClick")
+check(reader.frame:IsShown() and manager:GetActiveFrame() == reader.frame
+    and not Addon:GetWidgetTooltip():IsShown(), "the bookmark reopens the translation with reading focus")
 controls.setGamepad(false)
-reader:SyncController()
+Addon:UpdateBookReader()
 
 -- The native material (parchment, stone, marble) is copied like the quest screens copy theirs.
 local material = ItemTextFrame:CreateTexture("ItemTextMaterialTopLeft", "ARTWORK")
@@ -132,18 +192,48 @@ pageNumber = 2
 Addon:UpdateBookReader()
 check(not reader.frame:IsShown() and Addon.bookBookmark:IsShown(), "turning pages keeps the reader closed")
 Addon.bookBookmark:Fire("OnClick")
-check(reader.frame:IsShown() and reader.body.lastSections[2].text == DB:GetBookPage(2098, "enUS"),
+check(reader.frame:IsShown() and reader.body.lastSections[1].text == DB:GetBookPage(2098, "enUS"),
     "the bookmark reopens the reader on the current page")
 
 pageNumber = 5
 Addon:UpdateBookReader()
 check(not reader.frame:IsShown() and not Addon.bookBookmark:IsShown(), "unknown page numbers show neither reader nor bookmark")
 
-pageNumber = 1
+pageNumber = 2
+local getBookPage = DB.GetBookPage
+DB.GetBookPage = function(self, pageID, locale)
+    if pageID == 2098 and locale == "enUS" then return nil end
+    return getBookPage(self, pageID, locale)
+end
+Addon.openBookCache = nil
+Addon:UpdateBookReader()
+check(reader.frame:IsShown() and reader.options:IsShown() and reader.missing,
+    "a known page without target text shows the missing message and report action")
+local nativeText = getBookPage(DB, 2098, "frFR")
+local getNativeText = ItemTextGetText
+ItemTextGetText = function() return nativeText end
+reader.options:Fire("OnClick")
+ItemTextGetText = getNativeText
+local dialog = Addon.questReport
+local report = dialog.record.book
+check(dialog.state == "ready" and dialog.copy.enabled and report.nativeText == nativeText
+    and report.nativeTitle == nativeTitle, "book reports immediately include the native readable text")
+check(report.ownerKind == "object" and report.ownerID == 175761 and report.pageNumber == 2
+    and report.firstPageID == 2097 and report.candidatePageID == 2098 and report.matchedPageID == 2098,
+    "the book report records the owner and the page selected by the native page number")
+dialog.frame:Hide()
+
 Addon.preferences.features.bookAutoOpen = false
 Addon:SendBookReader({ type = "reset" })
 Addon:UpdateBookReader()
-check(not reader.frame:IsShown() and Addon.bookBookmark:IsShown(), "without auto-open books start on the bookmark")
+check(not reader.frame:IsShown() and Addon.bookBookmark:IsShown(), "without auto-open missing books start on the bookmark")
+Addon.bookBookmark:Fire("OnClick")
+check(reader.frame:IsShown() and reader.missing and not Addon.bookBookmark:IsShown(),
+    "disabling book auto-open still allows reopening the missing page from the bookmark")
+DB.GetBookPage = getBookPage
+pageNumber = 1
+Addon:UpdateBookReader()
+check(reader.frame:IsShown() and not reader.options:IsShown(), "a translated page clears the missing report action")
 Addon.preferences.features.bookPanel = false
 Addon:UpdateBookReader()
 check(not reader.frame:IsShown() and not Addon.bookBookmark:IsShown(), "the book panel can be turned off")

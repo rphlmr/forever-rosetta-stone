@@ -31,21 +31,26 @@ function Addon:TransitionQuestInteraction(current, event)
     if event.type == "present" then
         local contexts = { gossip = true, greeting = true, detail = true, progress = true, reward = true }
 
-        if not event.source or not contexts[event.context] or not self:IsReadableEntityID(event.questID) then
+        local greeting = (event.context == "gossip" or event.context == "greeting")
+            and event.questID == 0 and type(event.dialogueKey) == "string"
+        if not event.source or not contexts[event.context] or (not greeting and not self:IsReadableEntityID(event.questID)) then
             return current
         end
 
-        if current.source == event.source and current.questID == event.questID and current.context == event.context then
+        if current.source == event.source and current.questID == event.questID and current.context == event.context
+            and current.dialogueKey == event.dialogueKey then
             return current
         end
 
         -- Without auto-open, a new NPC screen offers the bookmark until the reader is opened once.
         local mode = (event.autoOpen ~= false or current.mode == "visible") and "visible" or "dismissed"
-        return { mode = mode, source = event.source, questID = event.questID, context = event.context }
+        return { mode = mode, source = event.source, questID = event.questID, context = event.context,
+            dialogueKey = event.dialogueKey }
     end
 
     if event.type == "dismiss" and current.mode == "visible" then
-        return { mode = "dismissed", source = current.source, questID = current.questID, context = current.context }
+        return { mode = "dismissed", source = current.source, questID = current.questID, context = current.context,
+            dialogueKey = current.dialogueKey }
     end
 
     return current

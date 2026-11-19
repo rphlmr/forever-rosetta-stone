@@ -35,6 +35,16 @@ class LocalScanBoundaryTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'collector in distribution'):
                 check_distribution(root)
 
+    def test_dialogue_pilot_is_rejected_from_release_manifest(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'tools/build').mkdir(parents=True)
+            (root / 'tools/build/addon-manifest.toc').write_text(
+                '../tools/quest-dialogue-pilot/pilot.lua\n', encoding='utf-8')
+
+            with self.assertRaisesRegex(ValueError, 'collector in distribution'):
+                check_distribution(root)
+
     def test_local_probe_toc_cannot_be_added_to_the_shipping_template(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

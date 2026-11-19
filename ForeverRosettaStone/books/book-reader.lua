@@ -60,14 +60,15 @@ end
 function Addon:ResolveBookFirstPage(guid, title)
     local objectID = self:GetGameObjectID(guid)
     local firstPage = objectID and ForeverRosettaStoneDB:GetBookFirstPage("object", objectID)
-    if firstPage then return firstPage end
+    if firstPage then return firstPage, "object", objectID end
 
     local itemID = self.bookItemCandidate
     if itemID and Readable(title, "string") and GetClientItemName(itemID) == title then
-        return ForeverRosettaStoneDB:GetBookFirstPage("item", itemID)
+        return ForeverRosettaStoneDB:GetBookFirstPage("item", itemID), "item", itemID
     end
     -- The interaction GUID can go away while the native book remains open.
     if not guid then return FindBookByObjectName(title, GetLocale()) end
+    if objectID then return nil, "object", objectID end
 end
 
 function Addon:ResolveBookPage(firstPage, pageNumber)
@@ -90,7 +91,7 @@ end
 function Addon:GetOpenBook()
     if not (ItemTextFrame and ItemTextFrame:IsVisible()) then return end
     local pageNumber = ItemTextGetPage and ItemTextGetPage()
-    if not Readable(pageNumber, "number") then return end
+    if not Readable(pageNumber, "number") or pageNumber < 1 then return end
     local ok, guid = pcall(UnitGUID, "npc")
     guid = ok and Readable(guid, "string") and guid or nil
     local title = ItemTextGetItem and ItemTextGetItem()
@@ -98,19 +99,26 @@ function Addon:GetOpenBook()
         tostring(self.bookItemCandidate), Readable(title, "string") and title or "", pageNumber,
         self:GetTargetLocale() }, "\031")
     local cache = self.openBookCache
-    if cache and cache.key == key then return cache.book end
+    if cache and cache.key == key then return cache.book, cache.missing end
 
-    local book
-    local firstPage = self:ResolveBookFirstPage(guid, title)
+    local book, missing
+    local firstPage, ownerKind, ownerID = self:ResolveBookFirstPage(guid, title)
     local pageID = firstPage and self:ResolveBookPage(firstPage, pageNumber)
+    if firstPage and not pageID then return end
     if pageID then
         local title, body = self:GetBookTranslation(firstPage, pageID)
         if body then
             book = { firstPage = firstPage, pageID = pageID, pageNumber = pageNumber, title = title, body = body }
         end
     end
-    self.openBookCache = { key = key, book = book }
-    return book
+    if not book then
+        missing = { ownerKind = ownerKind, ownerID = ownerID, firstPageID = firstPage,
+            matchedPageID = pageID, candidatePageID = pageID,
+            pageNumber = pageNumber, nativeTitle = Readable(title, "string") and title or nil,
+            reason = pageID and "missing_translation" or "book_not_identified" }
+    end
+    self.openBookCache = { key = key, book = book, missing = missing }
+    return book, missing
 end
 
 -- Same lifecycle as the NPC quest reader: a new book opens the reader (or offers the bookmark
@@ -120,16 +128,17 @@ function Addon:TransitionBookReader(current, event)
         return current.mode == "hidden" and current or { mode = "hidden" }
     end
     if event.type == "present" then
-        if type(event.firstPage) ~= "number" then return current end
-        if current.firstPage == event.firstPage and current.mode ~= "hidden" then return current end
+        local key = event.bookKey or event.firstPage
+        if key == nil then return current end
+        if current.bookKey == key and current.mode ~= "hidden" then return current end
         local mode = (event.autoOpen ~= false or current.mode == "visible") and "visible" or "dismissed"
-        return { mode = mode, firstPage = event.firstPage }
+        return { mode = mode, bookKey = key }
     end
     if event.type == "dismiss" and current.mode == "visible" then
-        return { mode = "dismissed", firstPage = current.firstPage }
+        return { mode = "dismissed", bookKey = current.bookKey }
     end
     if event.type == "open" and current.mode == "dismissed" then
-        return { mode = "visible", firstPage = current.firstPage }
+        return { mode = "visible", bookKey = current.bookKey }
     end
     return current
 end
@@ -144,85 +153,69 @@ function Addon:SendBookReader(event)
 end
 
 function Addon:CreateBookReader()
-    local frame = self:NewFrame("Frame", "ForeverRosettaStoneBookReader", UIParent, "ForeverRosettaStoneQuestPanelTemplate")
-    self:SetupQuestPanelTitle(frame)
-    frame:SetClampedToScreen(true)
-    frame:EnableMouse(true)
-    frame:Hide()
-
-    local content = self:NewFrame("Frame", nil, frame)
-    content:SetPoint("TOPLEFT", frame, "TOPLEFT", 8, -68)
-    content:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -28, 26)
-    local background = content:CreateTexture(nil, "BACKGROUND")
-    background:SetAtlas("QuestDetailsBackgrounds", true)
-    background:SetAllPoints()
+    local function Dismiss()
+        self:SendBookReader({ type = "dismiss" })
+        self:UpdateBookReader()
+    end
+    local reader = self:CreateSideReader("ForeverRosettaStoneBookReader", Dismiss)
+    local frame, body, content, background = reader.frame, reader.body, reader.content, reader.background
     local parchments = {}
-    local body = self:CreateNativeQuestBody(content, 278)
-    body.frame:ClearAllPoints()
-    body.frame:SetPoint("TOPLEFT", content, "TOPLEFT", 5, -8)
-    body.frame:SetPoint("BOTTOMRIGHT", content, "BOTTOMRIGHT", -5, 10)
-    local close = self:NewFrame("Button", nil, frame, "UIPanelCloseButtonDefaultAnchors")
-    frame.CloseButton = close
-    self:SetScript(close, "OnClick", function() self:SendBookReader({ type = "dismiss" }) end)
-
-    local reader = { frame = frame, body = body, parchments = parchments }
-    local footer = Addon:CreateGamepadLegend(frame, "ForeverRosettaStoneBookFooter")
-    footer:AddStandardBackPrompt(FRAME_ACTION_CLOSE)
-    footer:Finalize()
-    footer:HidePrompts()
-
-    function reader:ReleaseController()
-        footer:HidePrompts()
-        if not self.registered or InCombatLockdown() then return end
-        self.registered = nil
-        GamepadMode.FrameControlsManager:FrameHidden(frame)
-        SmartNavigation:RemovePanelInfo(frame)
-    end
-
-    function reader:SyncController(focus)
-        if not InputUtil.IsGamepadUIEnabled() or not frame:IsShown() then
-            self:ReleaseController()
-            return
-        end
-        close:SetShown(false)
-        if not self.registered and not InCombatLockdown() then
-            self.registered = true
-            GamepadMode.FrameControlsManager:FrameShown(frame, false, focus == true)
-        end
-    end
-
-    frame.FocusGamepad = Addon:Wrap("focus book translation", function()
-        if not reader.registered or InCombatLockdown() then return end
-        SmartNavigation:SetScrollFrameForFrame(frame, body.frame)
-        SmartNavigation_MarkScrollFrameMaintainPreviousButtonOnScroll(body.frame)
-        Addon:ClearGamepadTarget(frame)
-        footer:ShowPrompts()
+    reader.parchments = parchments
+    background:SetAtlas("QuestBG-Parchment")
+    local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    title:SetJustifyH("CENTER")
+    title:SetWordWrap(false)
+    reader.title = title
+    local scrollBackground = content:CreateTexture(nil, "BACKGROUND")
+    scrollBackground:SetColorTexture(0, 0, 0, 0.8)
+    scrollBackground:SetPoint("TOPLEFT", body.frame, "TOPRIGHT")
+    scrollBackground:SetPoint("BOTTOMRIGHT", body.frame.ScrollBar, "BOTTOMRIGHT")
+    scrollBackground:Hide()
+    local report = self:NewFrame("Button", nil, frame, "UIPanelButtonTemplate")
+    report:SetSize(180, 22)
+    report:SetPoint("TOP", frame, "TOP", 0, -31)
+    report:Hide()
+    reader.options = report
+    self:SetScript(report, "OnClick", function()
+        if not reader.missing then return end
+        reader.reportOwner = true
+        local reportData = {}
+        for key, value in pairs(reader.missing) do reportData[key] = value end
+        local ok, nativeText
+        if ItemTextGetText then ok, nativeText = pcall(ItemTextGetText) end
+        if ok and Readable(nativeText, "string") then reportData.nativeText = nativeText end
+        self:ShowBookReport(reportData)
     end)
-    frame.UnfocusGamepad = Addon:Wrap("leave book translation", function()
-        footer:HidePrompts()
-        if not InCombatLockdown() then SmartNavigation:SetScrollFrameForFrame(frame, nil) end
-    end)
-    frame.SmartNavigationCloseHandler = Addon:Wrap("close book translation", function()
-        Addon:SendBookReader({ type = "dismiss" })
-        return true
-    end, true)
-    Addon:HookScript(frame, "OnHide", function() reader:ReleaseController() end)
+    self:SetupSideReaderController(reader, "ForeverRosettaStoneBookFooter", Dismiss)
 
     function reader:ShowBook(book)
-        local key = table.concat({ book.firstPage, book.pageID, Addon:GetTargetLocale(), book.title or "", book.body }, "\031")
-        frame:SetTitle(Addon:GetTranslationLanguageLabel())
+        local key = table.concat({ book.firstPage or "", book.pageID or "", book.pageNumber,
+            Addon:GetTargetLocale(), book.title or "", book.body }, "\031")
+        self.missing = book.missing
+        report:SetShown(self.missing ~= nil)
+        report:SetText(Addon:GetMissingQuestText().report)
+        frame:SetTitle(self.missing and "Forever Rosetta Stone" or Addon:GetTranslationLanguageLabel())
         Addon:FitQuestPanelTitle(frame)
-        if self.contentKey ~= key then
-            local sections = {}
-            if book.title then sections[#sections + 1] = { source = QuestInfoTitleHeader, text = book.title, gap = 0 } end
-            sections[#sections + 1] = { source = QuestInfoDescriptionText, text = book.body, gap = book.title and 10 or 0 }
-            body:SetSections(sections)
-            body:ScrollTo(0)
+        title:SetText(book.title)
+        title:SetShown(book.title ~= nil)
+        local pageChanged = self.contentKey ~= key
+        if pageChanged or self.textLayoutChanged then
+            local native = self.nativePage
+            local kind = native and native:GetObjectType()
+            local textType
+            if not self.missing and kind == "SimpleHTML" and native:GetFont("P") then
+                textType = "P"
+            elseif kind ~= "FontString" then
+                native = QuestInfoDescriptionText
+            end
+            body:SetSections({ { source = native, textType = textType,
+                text = book.body, gap = 0 } })
+            if pageChanged then body:ScrollTo(0) end
             self.contentKey = key
         end
-        close:SetShown(not InputUtil.IsGamepadUIEnabled())
         frame:Show()
         self:SyncController()
+        self:SyncTarget()
     end
 
     -- Copy the material the native book draws (its textures, sizes and offsets), so the companion keeps
@@ -230,10 +223,14 @@ function Addon:CreateBookReader()
     function reader:SyncBackground(source)
         local used = 0
         for _, region in ipairs({ source:GetRegions() }) do
-            local name = region.GetObjectType and region:GetObjectType() == "Texture" and region:GetName()
+            local isTexture = region:GetObjectType() == "Texture"
+            local name = isTexture and region:GetName()
+            local isMaterial = isTexture and (region == source.Material
+                or (name and name:find("Material", 1, true))
+                or region:GetAtlas() == "QuestBG-Parchment")
             local left, top = region:GetLeft(), region:GetTop()
             local sourceLeft, sourceTop = source:GetLeft(), source:GetTop()
-            if name and name:find("Material", 1, true) and region:IsVisible() and left and top and sourceLeft and sourceTop then
+            if isMaterial and region:IsVisible() and left and top and sourceLeft and sourceTop then
                 used = used + 1
                 local parchment = parchments[used]
                 if not parchment then
@@ -241,10 +238,8 @@ function Addon:CreateBookReader()
                     parchments[used] = parchment
                 end
                 local atlas = region:GetAtlas()
-                if atlas then parchment:SetAtlas(atlas) else
-                    parchment:SetTexture(region:GetTexture())
-                    parchment:SetTexCoord(region:GetTexCoord())
-                end
+                if atlas then parchment:SetAtlas(atlas) else parchment:SetTexture(region:GetTexture()) end
+                parchment:SetTexCoord(region:GetTexCoord())
                 local scale = region:GetEffectiveScale() / source:GetEffectiveScale()
                 parchment:ClearAllPoints()
                 parchment:SetPoint("TOPLEFT", frame, "TOPLEFT", (left - sourceLeft) * scale, (top - sourceTop) * scale)
@@ -257,20 +252,58 @@ function Addon:CreateBookReader()
     end
 
     function reader:Layout(source, policy)
-        self:SyncBackground(source)
         local scale = source:GetEffectiveScale() / UIParent:GetEffectiveScale()
         local side = policy.GetSide(source)
         local key = table.concat({ tostring(source), policy.inputMode, scale, source:GetWidth(), source:GetHeight(),
             source:GetLeft() or 0, source:GetTop() or 0, side, source:GetFrameStrata(), source:GetFrameLevel() }, ":")
-        if self.layoutKey == key then return end
-        frame:SetScale(scale)
-        frame:SetSize(source:GetWidth(), source:GetHeight())
-        frame:SetFrameStrata(source:GetFrameStrata())
-        frame:SetFrameLevel(source:GetFrameLevel() + 20)
-        frame:SetFrameLevelsFromBaseLevel(frame:GetFrameLevel())
-        frame:ClearAllPoints()
-        frame:SetPoint(side == "left" and "TOPRIGHT" or "TOPLEFT", source, side == "left" and "TOPLEFT" or "TOPRIGHT", 0, 0)
-        self.layoutKey = key
+        if self.layoutKey ~= key then
+            frame:SetScale(scale)
+            frame:SetSize(source:GetWidth(), source:GetHeight())
+            frame:SetFrameStrata(source:GetFrameStrata())
+            frame:SetFrameLevel(source:GetFrameLevel() + 20)
+            frame:SetFrameLevelsFromBaseLevel(frame:GetFrameLevel())
+            frame:ClearAllPoints()
+            frame:SetPoint(side == "left" and "TOPRIGHT" or "TOPLEFT", source,
+                side == "left" and "TOPLEFT" or "TOPRIGHT", 0, 0)
+            self.layoutKey = key
+        end
+
+        Addon:SyncQuestInset(frame, source)
+        local viewport = source.ScrollFrame or ItemTextScrollFrame
+        local viewportScale = Addon:AlignQuestViewport(body.frame, viewport, frame, source)
+        local bar = viewport and (viewport.ScrollBar or ItemTextScrollFrameScrollBar)
+        local alignedBar = Addon:AlignQuestScrollBar(body.frame.ScrollBar, bar, frame, source)
+        scrollBackground:SetShown(alignedBar and not (frame.questInset and frame.questInset:IsShown()))
+
+        local page = source.PageText or ItemTextPageText
+        local leftInset, topInset, width
+        if viewportScale then
+            local child = viewport.GetScrollChild and viewport:GetScrollChild()
+            local pageLeft, pageTop = page and page:GetLeft(), page and page:GetTop()
+            local childTop = child and child:GetTop()
+            leftInset = pageLeft and math.max(0, (pageLeft - viewport:GetLeft()) * viewportScale) or 5
+            topInset = pageTop and childTop and math.max(0, (childTop - pageTop) * viewportScale) or 10
+            local available = viewport:GetWidth() * viewportScale - leftInset
+            width = math.max(1, page and math.min(page:GetWidth() * viewportScale, available) or (available - 5))
+            background:ClearAllPoints()
+            background:SetAllPoints(body.frame)
+        end
+        self.textLayoutChanged = self.nativePage ~= page or body.textInsetX ~= leftInset or body.textInsetY ~= topInset
+            or body.contentWidth ~= width
+        self.nativePage = page
+        body.textInsetX, body.textInsetY, body.contentWidth = leftInset, topInset, width
+        self:SyncBackground(source)
+
+        local nativePageNumber = source.CurrentPage or ItemTextCurrentPage
+        local nativeTop, sourceTop = nativePageNumber and nativePageNumber:GetTop(), source:GetTop()
+        local titleY = -41
+        if nativeTop and sourceTop then
+            titleY = (nativeTop - sourceTop - nativePageNumber:GetHeight() / 2)
+                * nativePageNumber:GetEffectiveScale() / source:GetEffectiveScale()
+        end
+        title:ClearAllPoints()
+        title:SetPoint("LEFT", frame, "TOPLEFT", 16, titleY)
+        title:SetPoint("RIGHT", frame, "TOPRIGHT", -16, titleY)
     end
 
     return reader
@@ -291,20 +324,26 @@ function Addon:GetBookBookmark()
 end
 
 function Addon:UpdateBookReader()
-    local book
+    local book, missing
     if self:IsFeatureEnabled("bookPanel") and not self:IsTooltipBlocked()
         and not SettingsPanel:IsShown() and not WorldMapFrame:IsShown() then
-        book = self:GetOpenBook()
+        book, missing = self:GetOpenBook()
     end
     if book then self:RecordDebugSurface(ItemTextFrame, "bookReader", book.firstPage, "reading", nil, book) end
 
-    if not book then
+    if not book and not missing then
         self:SendBookReader({ type = "reset" })
         if self.bookBookmark then self.bookBookmark:Hide() end
         return
     end
 
-    self:SendBookReader({ type = "present", firstPage = book.firstPage, autoOpen = self:IsFeatureEnabled("bookAutoOpen") })
+    local bookKey = book and book.firstPage or missing.firstPageID
+        or table.concat({ missing.ownerKind or "", missing.ownerID or "", missing.nativeTitle or "" }, ":")
+    if missing then
+        book = { firstPage = missing.firstPageID, pageNumber = missing.pageNumber, missing = missing,
+            body = self:GetMissingTranslationMessage("book") }
+    end
+    self:SendBookReader({ type = "present", bookKey = bookKey, autoOpen = self:IsFeatureEnabled("bookAutoOpen") })
     local bookmark = self:GetBookBookmark()
     bookmark:Attach(ItemTextFrame, -76)
     bookmark:SetShown(self.bookReaderState.mode == "dismissed")

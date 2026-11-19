@@ -51,16 +51,15 @@ end
 
 -- The parchment texture drawn by the visible native screen.
 function Addon:GetQuestInteractionBackground(source)
+    if source and source == GossipFrame then return source.Background end
     for _, panel in ipairs({ QuestFrameDetailPanel, QuestFrameProgressPanel, QuestFrameRewardPanel,
         QuestFrameGreetingPanel }) do
         if panel and panel:IsVisible() then return panel.Bg end
     end
 end
 
--- The companion opens only beside the quest offer, whose description and objectives are owned
--- catalog text. Greeting prose, gossip options, progress and completion text have no owned source,
--- and a translated title alone does not justify a companion, so those screens stay native
--- without a reader or bookmark.
+-- The built-in catalog supplies quest offers. Other screens require a content provider
+-- that can match the native dialogue.
 function Addon:HasQuestInteractionTranslation(id, quest, context)
     if context ~= "detail" or not quest then return false end
     for _, field in ipairs({ "title", "description", "summary" }) do
@@ -98,7 +97,7 @@ function Addon:SendQuestInteraction(event)
 end
 
 -- Native reading windows drive the controller through their own bindings, so a bookmark is its
--- own controller frame: LT reaches it like a reader, A opens the reader with focus.
+-- own controller frame: the right trigger reaches it, and Select opens the reader with focus.
 -- onOpen(focus) runs when the bookmark is clicked; focus is true when it was reached by controller.
 function Addon:CreateInteractionBookmark(name, onOpen)
     local host = self:NewFrame("Frame", name .. "Host", UIParent)
@@ -106,14 +105,19 @@ function Addon:CreateInteractionBookmark(name, onOpen)
     bookmark = self:CreateQuestBookmark(host, name, function() onOpen(bookmark.registered == true) end)
     bookmark.host = host
     bookmark:SetPoint("TOPLEFT", host, "TOPLEFT")
-    local footer = Addon:CreateGamepadLegend(host, name .. "Footer")
-    footer:AddStandardSelectPrompt()
-    footer:Finalize()
-    footer:HidePrompts()
+    bookmark.usesGamepadFocus = true
+    local prompt = self:NewFrame("Frame", nil, bookmark, "InputIconTextureFrameTemplate")
+    bookmark.gamepadPrompt = prompt
+    prompt:SetSize(20, 20)
+    prompt:SetPoint("TOP", bookmark.Icon, "BOTTOM", 0, -13)
+    prompt:SetInputKey("PADRTRIGGER")
+    prompt:Hide()
 
     function bookmark:ReleaseController()
-        footer:HidePrompts()
-        if not self.registered or InCombatLockdown() then return end
+        if not self.registered then return end
+        self:SetGamepadFocus(false)
+        prompt:Hide()
+        if InCombatLockdown() then return end
         self.registered = nil
         GamepadMode.FrameControlsManager:FrameHidden(host)
         SmartNavigation:RemovePanelInfo(host)
@@ -123,6 +127,7 @@ function Addon:CreateInteractionBookmark(name, onOpen)
             self:ReleaseController()
         elseif not self.registered and not InCombatLockdown() then
             self.registered = true
+            self:SetGamepadFocus(false)
             GamepadMode.FrameControlsManager:FrameShown(host, false, false)
         end
     end
@@ -139,10 +144,22 @@ function Addon:CreateInteractionBookmark(name, onOpen)
     host.FocusGamepad = self:Wrap("focus bookmark " .. name, function()
         if bookmark.registered and not InCombatLockdown() then
             SmartNavigation:SetTargetButtonForFrame(host, bookmark)
-            footer:ShowPrompts()
+            bookmark:SetGamepadFocus(true)
         end
     end)
-    host.UnfocusGamepad = self:Wrap("leave bookmark " .. name, function() footer:HidePrompts() end)
+    host.UnfocusGamepad = self:Wrap("leave bookmark " .. name, function()
+        bookmark:SetGamepadFocus(false)
+    end)
+    host.SmartNavigationCloseHandler = self:Wrap("close bookmark " .. name, function()
+        if not bookmark.registered or InCombatLockdown() or SmartNavigation:GetActiveFrame() ~= host
+            or SmartNavigation:GetCurrentButton() ~= bookmark then return false end
+        local source = host:GetParent()
+        if not source or not source:IsVisible() then return false end
+        HideUIPanel(source)
+        if source:IsVisible() then return false end
+        bookmark:Hide()
+        return true
+    end, false)
     self:HookScript(bookmark, "OnHide", function() bookmark:ReleaseController() end)
     return bookmark
 end
@@ -180,14 +197,25 @@ function Addon:UpdateQuestInteraction()
         self:RecordDebugSurface(source, "questInteraction", id, context, nil, quest)
     end
 
-    if not source or not self:IsReadableEntityID(id) or not self:HasQuestInteractionTranslation(id, quest, context) then
+    local sections, dialogueKey, missing
+    if source and self:HasQuestInteractionTranslation(id, quest, context) then
+        sections = self:GetQuestInteractionSections(id, quest)
+    elseif source and self.questInteractionContentProvider then
+        sections, dialogueKey = self.questInteractionContentProvider(source, id, context)
+    end
+    if not sections and source and self:IsReadableEntityID(id) then
+        sections = { { source = QuestInfoDescriptionText, text = self:GetMissingTranslationMessage("quest"), gap = 0 } }
+        missing = true
+    end
+
+    if not sections then
         self:SendQuestInteraction({ type = "reset" })
         if self.questInteractionBookmark then self.questInteractionBookmark:Hide() end
         return
     end
 
     self:SendQuestInteraction({ type = "present", source = source, questID = id, context = context,
-        autoOpen = self:IsFeatureEnabled("questAutoOpen") })
+        dialogueKey = dialogueKey, autoOpen = self:IsFeatureEnabled("questAutoOpen") })
 
     local bookmark = self:GetQuestInteractionBookmark()
     bookmark:Attach(source, -76)
@@ -199,7 +227,7 @@ function Addon:UpdateQuestInteraction()
 
     local policy = profiles[context][self:GetTooltipInputMode()]
     self.questInteractionReader:Layout(source, policy, self:GetQuestInteractionBackground(source))
-    self.questInteractionReader:ShowQuest(id, quest, context)
+    self.questInteractionReader:ShowSections(id, context, sections, dialogueKey, missing)
 
     if self.questOfferTooltip then self.questOfferTooltip:Hide() end
 end
