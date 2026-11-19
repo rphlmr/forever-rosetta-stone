@@ -187,8 +187,8 @@ quest prose, objectives, tooltip facts, or relationships to make a record look c
 ### 2. Choose the wording and origin
 
 Prefer verified native text, then existing translations with the same source meaning and
-context. AI authoring is limited to additional languages with verified same-field official
-game evidence, as specified above. Check relevant entity names and Warcraft terminology before
+context. AI authoring is limited to additional languages that meet the [source evidence rules](../docs/import-resync.md#eligibility-for-new-additional-language-ai-translations).
+Check relevant entity names and Warcraft terminology before
 authoring. For targeted reuse, search the relevant catalog kind; do not print the full corpus.
 Verify that an upstream locale contains an actual translation rather than English fallback.
 

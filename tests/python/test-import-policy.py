@@ -42,11 +42,12 @@ class ImportPolicyTests(unittest.TestCase):
 
     def add(self, text='Inflige $s1 dégâts.', english='Deals $s1 damage.', locale='frFR',
             kind='spells', entity_id='1', field='description', origin='original',
-            source='wago', evidence='sourceSnapshot', flags=()):
+            source='wago', evidence='sourceSnapshot', flags=(), provenance=None):
+        provenance = {'source': source, 'sourceLocale': locale, 'sourceBuild': '1.60.1.70938',
+                      **(provenance or {})}
         self.db.execute('INSERT INTO records VALUES(NULL,?,?,?,?,?,?,?,?,?,?,?)',
                         (kind, entity_id, locale, field, text, english, origin, evidence,
-                         json.dumps({'source': source, 'sourceLocale': locale, 'sourceBuild': '1.60.1.70938'}),
-                         'snapshot.txt', json.dumps(list(flags))))
+                         json.dumps(provenance), 'snapshot.txt', json.dumps(list(flags))))
         self.db.commit()
 
     def evidence(self):
@@ -85,6 +86,73 @@ class ImportPolicyTests(unittest.TestCase):
         queue = filter_queue(self.queue(), None)
         self.assertEqual(queue['jobs'], [])
         self.assertEqual(queue['blocked'][0]['reasons'], ['noVerifiedOfficialTranslation'])
+
+    def test_quest_summary_exception_requires_both_pinned_sources_for_the_same_quest(self):
+        summary = 'Return to Deliana.'
+        questie = {'kind': 'quests', 'entity_id': '1', 'field': 'summary', 'locale': 'enUS',
+                   'text': summary, 'english': summary, 'origin': 'community', 'source': 'questie',
+                   'provenance': {'sourceRevision': 'a' * 40, 'layer': 'composedStaticWithAuthoredCorrections'}}
+        blizzard = {'kind': 'quests', 'entity_id': '1', 'field': 'title', 'locale': 'enUS',
+                    'text': 'Just Compensation', 'english': 'Just Compensation', 'source': 'blizzard',
+                    'provenance': {'sourceNamespace': 'static-1.60.1_70399-forever-eu'}}
+        for invalid in ({'evidence': 'catalogClaim'}, {'entity_id': '2'},
+                        {'provenance': {'sourceNamespace': 'static-eu'}}):
+            with self.subTest(invalid=invalid):
+                self.db.execute('DELETE FROM records')
+                self.add(**questie)
+                self.add(**(blizzard | invalid))
+                self.assertFalse(self.evidence().allows('quests', '1', 'summary', summary))
+
+        self.db.execute('DELETE FROM records')
+        self.add(**blizzard)
+        self.add(**(questie | {'flags': ['headingOnlySummary']}))
+        self.assertFalse(self.evidence().allows('quests', '1', 'summary', summary))
+        self.add(**questie)
+        evidence = self.evidence()
+        self.assertIsNone(ai_block_reason('itIT', 'quests', '1', 'summary', summary, evidence))
+        self.assertEqual(ai_block_reason('frFR', 'quests', '1', 'summary', summary, evidence),
+                         'officialLocaleNeverAuthored')
+        self.assertFalse(evidence.allows('quests', '1', 'description', summary))
+        self.assertFalse(evidence.allows('quests', '1', 'summary', 'Return to Mokvar.'))
+
+        self.add(**(questie | {'text': 'Return to Mokvar.', 'english': 'Return to Mokvar.'}))
+        self.assertFalse(self.evidence().allows('quests', '1', 'summary', summary))
+
+    def test_incremental_resync_replaces_ai_summary_with_matching_localized_source(self):
+        self.db.execute('INSERT INTO settings VALUES(?,?)', ('fingerprint', json.dumps('pinned-fixture')))
+        self.db.commit()
+        previous = self.root / 'previous.sqlite'
+        old = sqlite3.connect(previous)
+        self.db.backup(old)
+        old.close()
+
+        summary = 'Return to {name}.'
+        source = {'kind': 'quests', 'field': 'summary', 'source': 'questie', 'origin': 'community',
+                  'english': summary, 'provenance': {'sourceRevision': 'b' * 40}}
+        self.add(**source, locale='itIT', text='Torna da {name}.')
+        self.add(**source, locale='plPL', text='Wróć do miasta.')
+        path = self.root / 'catalogs/quests/1.json'
+        path.parent.mkdir(parents=True)
+        (path.parent / 'metadata.json').write_text(json.dumps({'document': {
+            'locales': ['enUS', 'frFR', 'itIT', 'plPL']}}))
+
+        def summary_record(text, origin, provider):
+            return {'summary': text, 'translationMetadata': {'fields': {'summary': {
+                'origin': origin, 'source': provider, 'sourceLocale': 'enUS'}}}}
+
+        polish = summary_record('Wróć do {name}.', 'ai', 'ForeverRosettaStoneAI')
+        path.write_text(json.dumps({'locales': {
+            'enUS': summary_record(summary, 'community', 'questie'),
+            'itIT': summary_record('Ritorna da {name}.', 'ai', 'ForeverRosettaStoneAI'),
+            'plPL': polish}}))
+        output = self.root / 'datasources/imports/replace-ai-summary'
+        RESYNC['prepare'](self.root, self.database, previous, output)
+        RESYNC['apply'](self.root, output)
+        RESYNC['verify'](self.root, output)
+        after = json.loads(path.read_text())['locales']
+        self.assertEqual(after['itIT']['summary'], 'Torna da {name}.')
+        self.assertEqual(after['itIT']['translationMetadata']['fields']['summary']['origin'], 'community')
+        self.assertEqual(after['plPL'], polish)
 
     def test_empty_sourced_globalstring_is_not_a_missing_translation(self):
         documents = {'quests': {'locales': ['enUS', 'frFR'], 'catalogs': {'quests': {}}},

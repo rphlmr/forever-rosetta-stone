@@ -71,7 +71,7 @@ def verify_sources(database, root):
 
 
 class OfficialEvidence:
-    """Index verified core-provider translations, excluding catalog claims and AI text."""
+    """Index verified evidence for authoring additional-language translations."""
 
     def __init__(self, database, root):
         self.database = verify_sources(database, root)
@@ -142,8 +142,38 @@ class OfficialEvidence:
                     continue
                 key = (row['kind'], row['entity_id'], row['field'], normalize(row['english']))
                 self.proofs.setdefault(key, {'locale': row['locale'], **provenance})
+            self._index_quest_summary_proofs(db)
         finally:
             db.close()
+
+    def _index_quest_summary_proofs(self, db):
+        rows = db.execute("""
+            SELECT entity_id, field, text, english, origin, provenance
+            FROM records
+            WHERE kind='quests' AND locale='enUS' AND evidence='sourceSnapshot' AND flags='[]'
+              AND source_path IN (SELECT path FROM inputs WHERE path NOT LIKE 'catalogs/%')
+              AND ((field='title' AND json_extract(provenance,'$.source')='blizzard')
+                OR (field='summary' AND json_extract(provenance,'$.source')='questie'))
+            """)
+        confirmed_quests = set()
+        summaries = {}
+        for row in rows:
+            provenance = json.loads(row['provenance'])
+            text = normalize(row['text'])
+            if not text or provenance.get('sourceLocale') != 'enUS':
+                continue
+            if row['field'] == 'title':
+                namespace = str(provenance.get('sourceNamespace', ''))
+                if row['origin'] == 'original' and re.fullmatch(r'static-[\w.]+-forever-eu', namespace):
+                    confirmed_quests.add(row['entity_id'])
+            elif (row['origin'] == 'community' and text == normalize(row['english'])
+                  and provenance.get('layer') == 'composedStaticWithAuthoredCorrections'
+                  and re.fullmatch(r'[0-9a-f]{40}', str(provenance.get('sourceRevision', '')))):
+                summaries.setdefault(row['entity_id'], {})[text] = provenance
+        for entity_id in confirmed_quests & summaries.keys():
+            if len(summaries[entity_id]) == 1:
+                text, provenance = next(iter(summaries[entity_id].items()))
+                self.proofs.setdefault(('quests', entity_id, 'summary', text), provenance)
 
     def item_set_source(self, entity):
         set_id = entity.get('tooltipData', {}).get('itemSet')

@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-11-19
+
+### Translations
+
+- Updated quest summaries and NPC names using the latest QuestieDB data for WoW Forever.
+- Filled 504 gaps in quest summary translations across eight languages, including Italian, Polish, and Ukrainian.
+
 ## [1.0.2] - 2026-11-18
 
 ### Added
