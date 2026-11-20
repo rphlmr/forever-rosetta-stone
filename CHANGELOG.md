@@ -6,11 +6,7 @@
 
 - **Show translation only** puts the translated tooltip in the original position and hides the translation header. Tooltips without a translation stay in the game's language.
 
-  ![Show translation only enabled with a French item tooltip in the live preview](https://raw.githubusercontent.com/rphlmr/forever-rosetta-stone/main/docs/media/changelog/tooltip-translation-only.png)
-
 - **Above the original** puts the translation first when both texts share a tooltip.
-
-  ![Translation first enabled with French above English in the same item tooltip](https://raw.githubusercontent.com/rphlmr/forever-rosetta-stone/main/docs/media/changelog/tooltip-translation-first.png)
 
 - Read translated NPC greetings and conversation options, as well as quest offers, in-progress dialogue, and turn-in text beside the original window. Dialogue uses the appropriate wording for your character where variants are available.
 - Choose separately whether NPC greetings, quest progress, and turn-in translations open automatically. Quest details and offers have their own setting, and you can still open a translation from the Rosetta Stone bookmark.
