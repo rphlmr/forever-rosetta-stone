@@ -31,7 +31,7 @@ jobs:
       - name: Build production database
         run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
       - name: Test addon
-        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py --unit-only
+        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py --unit-only --group core
       - name: Test database contracts
         run: uv run --no-project --with lupa==2.8 python tests/python/test-lua-database.py
       - name: Build preview ZIP
@@ -44,3 +44,18 @@ jobs:
             dist/release-notes.md
           if-no-files-found: error
 
+
+  replays:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          python-version: '3.12'
+      - name: Build production database
+        run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
+      - name: Test tooltip replays
+        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py --unit-only --group replays

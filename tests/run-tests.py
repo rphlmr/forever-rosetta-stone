@@ -19,7 +19,10 @@ for legacy in ('references', 'scripts'):
     assert not (root / legacy).exists(), f"Legacy workspace {legacy}/ must not be recreated; use datasources/ or tools/"
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--unit-only', action='store_true', help='Run unit and integration checks without translation matrices')
+parser.add_argument('--group', choices=('core', 'replays'), help='Run one CI group of the unit suite')
 options, matrix_arguments = parser.parse_known_args()
+if options.group and not options.unit_only:
+    parser.error('--group requires --unit-only')
 if options.unit_only and matrix_arguments:
     parser.error('--unit-only cannot be combined with translation matrix arguments')
 sys.argv = [sys.argv[0]]
@@ -96,9 +99,18 @@ for filename, class_name in (
     ('test-minimap-refresh.py', 'StackedTooltipOwnershipTests'),
     ('test-update-plan.py', 'UpdatePlanTests'),
 ):
+    is_replay = filename.startswith('test-captured-') or filename in (
+        'test-tooltip-roundtrip.py', 'test-official-tooltip-matrix.py', 'test-picked-unit-tooltips.py',
+    )
+    if options.group and is_replay != (options.group == 'replays'):
+        continue
     checks = runpy.run_path(str(root / 'tests/python' / filename))
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(checks[class_name])
     assert unittest.TextTestRunner().run(suite).wasSuccessful(), filename + ' failed'
+if options.group == 'replays':
+    print('PASS: tooltip replay checks')
+    sys.exit(0)
+
 quest_fallbacks = runpy.run_path(str(root / 'tests/python/test-quest-ui-fallback-matrix.py'))
 assert not quest_fallbacks['run_matrix']()['failures'], 'Quest text fallback regressions failed'
 spell_refresh = runpy.run_path(str(root / 'tests/python/test-spell-value-refresh.py'))
