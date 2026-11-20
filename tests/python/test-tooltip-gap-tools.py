@@ -33,6 +33,28 @@ def write_csv(path, rows):
 
 
 class TooltipGapToolTests(unittest.TestCase):
+    def test_compiled_pack_preserves_replay_isolation_and_picks_up_rebuilds(self):
+        from database_harness import DatabaseMetadata, install_metadata
+        from lupa.lua51 import LuaRuntime
+
+        with tempfile.TemporaryDirectory() as directory:
+            metadata = DatabaseMetadata(Path(directory))
+            pack = metadata.pack_root / 'enUS/data.lua'
+            pack.parent.mkdir()
+            cache = {}
+
+            def read_in_fresh_client(expected):
+                lua = LuaRuntime(encoding=None)
+                install_metadata(lua, metadata, compiled_packs=cache)
+                lua.execute(b'''assert(C_AddOns.LoadAddOn("ForeverRosettaStone_Data_enUS"))
+                    assert(testPack.value == ...); testPack.value = 0''', expected)
+
+            pack.write_text('testPack = { value = 1 }')
+            read_in_fresh_client(1)
+            read_in_fresh_client(1)
+            pack.write_text('testPack = { value = 2 }')
+            read_in_fresh_client(2)
+
     def test_campaign_reuses_examples_and_retains_unloaded_ids(self):
         report = {'groups': [
             {'kind': 'spell', 'exampleIds': [1, 2], 'pattern': 'A'},

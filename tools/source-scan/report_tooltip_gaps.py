@@ -264,11 +264,14 @@ def captured_visible_rows(details):
 
 
 class Replay:
+    _compiled_packs = {}
+
     def __init__(self, client_locale, client_globals, calls=None, tooltip_types=None):
         from lupa.lua51 import LuaRuntime
         from database_harness import install_metadata, load_database, read_metadata
         self.lua = LuaRuntime(encoding=None)
-        install_metadata(self.lua, read_metadata(ROOT / 'ForeverRosettaStone/ForeverRosettaStone.toc', include_pages=False))
+        metadata = read_metadata(ROOT / 'ForeverRosettaStone/ForeverRosettaStone.toc', include_pages=False)
+        install_metadata(self.lua, metadata, compiled_packs=self._compiled_packs)
         self.database = load_database(self.lua)
         self.client_locale = client_locale
         lua_globals = self.lua.globals()
