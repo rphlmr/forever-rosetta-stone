@@ -23,9 +23,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "91ec62697c3306806b7e": {
+      "lineId": "q:1428:progress",
+      "npcId": 5593,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "c86af063f0d9f5c97ecd": {
+      "lineId": "q:1428:accept",
+      "npcId": 5593,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "f3ee21ff147fe3b4626f": {
+      "lineId": "q:1428:complete",
+      "npcId": 5593,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Těší mě vidět, že tvá nenávist k rybím lidem roste spolu s mou.\n\nNajdi další z jejich druhu podél pláže, a až budeš mít boje dost, vrať se ke mně. Pak si promluvíme o odměně za tvou píli.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Spokojen budu, teprve až moře a všechny jeho děti zmlknou... zvláště ti odporní rybí lidé.",
+        "c86af063f0d9f5c97ecd": "Těší mě, že tvá nenávist k rybím lidem roste spolu s mou.$B$BNajdi další jejich druhy podél pobřeží, a až budeš mít boje dost, vrať se ke mně. Pak si promluvíme o odměně za tvou píli.",
+        "f3ee21ff147fe3b4626f": "Dobrá práce, $c. Žádám víc jejich krve. Ať všichni rybí lidé zahynou."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -47,6 +75,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -77,6 +120,11 @@
     },
     "daDK": {
       "description": "Det glæder mig at se, at dit had til fiskemændene vokser sammen med mit.\n\nFind flere af deres slags langs stranden, og vend tilbage til mig, når du har fået nok kamp. Så skal vi tale om en belønning for din flid.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Jeg bliver først tilfreds, når havet og alle dets børn er bragt til tavshed... især de modbydelige fiskemennesker.",
+        "c86af063f0d9f5c97ecd": "Det glæder mig at se, at dit had til fiskemenneskene vokser sammen med mit.$B$BFind flere af deres slags langs stranden, og vend tilbage, når du har kæmpet nok. Så taler vi om en belønning for din flid.",
+        "f3ee21ff147fe3b4626f": "Godt klaret, $c. Jeg kræver mere af deres blod. Lad alle fiskemenneskene omkomme."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +146,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9c7513582f9292d4938941959a77fcc8a0d8869c4b63ca7de9af3c541b55efb4"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -126,6 +189,11 @@
     },
     "deDE": {
       "description": "Freut mich zu sehen, dass Euer Hass auf die Fischmenschen mit meinem wächst.\n\nSucht mehr von ihnen am Strand entlang, und wenn Ihr genug vom Gefecht habt, kommt zu mir zurück. Dann sprechen wir über eine Belohnung für Eure Ausdauer.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Erst wenn das Meer und all seine Kinder verstummt sind, werde ich zufrieden sein. . . besonders diese abstoßenden Fischmenschen. ",
+        "c86af063f0d9f5c97ecd": "Freut mich zu sehen, dass Euer Hass auf die Fischmenschen mit meinem wächst.\n\nSucht mehr von ihnen am Strand entlang, und wenn Ihr genug vom Gefecht habt, kommt zu mir zurück. Dann sprechen wir über eine Belohnung für Eure Ausdauer.",
+        "f3ee21ff147fe3b4626f": "Gut gemacht, $C. Ich möchte mehr von ihrem Blut sehen. Mögen alle Fischmenschen verschwinden. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -146,6 +214,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "community",
@@ -174,6 +260,11 @@
     },
     "enUS": {
       "description": "It pleases me to see your hatred for the fish men grows with mine.\n\nFind more of their kind along the beach, and when you've had your fill of combat, return to me. We shall speak then of a reward for your diligence.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Not until the sea and all her children are silenced will I be pleased... especially those disgusting fish men.",
+        "c86af063f0d9f5c97ecd": "It pleases me to see your hatred for the fish men grows with mine.$B$BFind more of their kind along the beach, and when you've had your fill of combat, return to me. We shall speak then of a reward for your diligence.",
+        "f3ee21ff147fe3b4626f": "Well done, $c. I call for more of their blood. Let all the fish men perish. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -194,6 +285,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -223,6 +332,11 @@
     },
     "esES": {
       "description": "Me complace comprobar que tu odio por los hombres-pez crece con el mío.\n\nBúscalos a lo largo de la playa y cuando te hayas hartado de combatir, vuelve a verme. Entonces hablaremos de una recompensa por tu diligencia.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "No estaré complacido hasta que el mar y todos sus hijos sean silenciados... especialmente esos repugnantes hombres pez.",
+        "c86af063f0d9f5c97ecd": "Me complace comprobar que tu odio por los hombres-pez crece con el mío.\n\nBúscalos a lo largo de la playa y cuando te hayas hartado de combatir, vuelve a verme. Entonces hablaremos de una recompensa por tu diligencia.",
+        "f3ee21ff147fe3b4626f": "Bien hecho, $c. Quiero más de su sangre. ¡Acaba con todos los hombres-pez!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -243,6 +357,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "community",
@@ -271,6 +403,11 @@
     },
     "esMX": {
       "description": "Me complace comprobar que tu odio por los hombres-pez crece con el mío.\n\nBúscalos a lo largo de la playa y cuando te hayas hartado de combatir, vuelve a verme. Entonces hablaremos de una recompensa por tu diligencia.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "No estaré complacido hasta que el mar y todos sus hijos sean silenciados... especialmente esos repugnantes hombres-pez.",
+        "c86af063f0d9f5c97ecd": "Me complace comprobar que tu odio por los hombres-pez crece con el mío.\n\nBúscalos a lo largo de la playa y cuando te hayas hartado de combatir, vuelve a verme. Entonces hablaremos de una recompensa por tu diligencia.",
+        "f3ee21ff147fe3b4626f": "Bien hecho, $c. Quiero más de su sangre. ¡Acaba con todos los hombres-pez!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -291,6 +428,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "community",
@@ -319,6 +474,11 @@
     },
     "frFR": {
       "description": "Il me plaît de voir que votre haine pour les hommes-poissons grandit en même temps que la mienne.\n\nTrouvez-en d'autres, le long de la plage, et lorsque vous serez fatigué de vous battre, revenez me voir. Nous parlerons alors d'une récompense pour vos efforts assidus.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Je ne serai pas heureux tant que la mer et ses enfants ne seront pas réduits au silence… Et spécialement ces hommes-poissons dégoûtants. ",
+        "c86af063f0d9f5c97ecd": "Il me plaît de voir que votre haine pour les hommes-poissons grandit en même temps que la mienne.\n\nTrouvez-en d'autres, le long de la plage, et lorsque vous serez fatigué de vous battre, revenez me voir. Nous parlerons alors d'une récompense pour vos efforts assidus.",
+        "f3ee21ff147fe3b4626f": "Bon travail, $C. Je souhaite qu'encore plus de leur sang soit versé. Que tous les hommes-poissons périssent !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -339,6 +499,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "community",
@@ -367,6 +545,11 @@
     },
     "hrHR": {
       "description": "Drago mi je vidjeti da tvoja mržnja prema ribolikim ljudima raste zajedno s mojom.\n\nPronađi još njihovih pripadnika duž plaže, a kad ti bude dosta borbe, vrati mi se. Tada ćemo razgovarati o nagradi za tvoju marljivost.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Neću biti zadovoljan dok more i sva njegova djeca ne utihnu... osobito oni odvratni riboliki ljudi.",
+        "c86af063f0d9f5c97ecd": "Drago mi je vidjeti da tvoja mržnja prema ribolikim ljudima raste zajedno s mojom.$B$BPronađi još njihovih duž obale, a kad ti bude dosta borbe, vrati mi se. Tada ćemo razgovarati o nagradi za tvoju marljivost.",
+        "f3ee21ff147fe3b4626f": "Bravo, $c. Tražim još njihove krvi. Neka svi riboliki ljudi nestanu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -388,6 +571,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9c7513582f9292d4938941959a77fcc8a0d8869c4b63ca7de9af3c541b55efb4"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -416,6 +614,11 @@
     },
     "itIT": {
       "description": "Mi fa piacere vedere che il tuo odio per gli uomini pesce cresce insieme al mio.\n\nTrovane altri lungo la spiaggia e, quando ne avrai abbastanza di combattere, torna da me. Allora parleremo di una ricompensa per il tuo impegno.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Non sarò soddisfatto finché il mare e tutti i suoi figli non saranno ridotti al silenzio... soprattutto quei disgustosi uomini pesce.",
+        "c86af063f0d9f5c97ecd": "Mi fa piacere vedere che il tuo odio per gli uomini pesce cresce insieme al mio.\n\nTrovane altri della loro specie lungo la spiaggia, e quando avrai combattuto abbastanza torna da me. Allora parleremo di una ricompensa per la tua diligenza.",
+        "f3ee21ff147fe3b4626f": "Ben fatto, $C. Voglio ancora del loro sangue. Che periscano tutti gli uomini pesce."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -437,6 +640,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9c7513582f9292d4938941959a77fcc8a0d8869c4b63ca7de9af3c541b55efb4"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -465,6 +686,11 @@
     },
     "koKR": {
       "description": "물고기 인간에 대한 당신의 증오도 나만큼이나 커지고 있다니 기쁘군.\n\n해변에서 놈들을 더 찾아내 원하는 만큼 충분히 전투를 치른 다음 내게 돌아오면 당신에게 줄 보상에 대해 얘기하도록 하지.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "바다와 그녀의 모든 아이들이 잠잠해질 때까지 나는 기뻐하지 않을 것이다... 특히 그 역겨운 물고기 인간들.",
+        "c86af063f0d9f5c97ecd": "물고기 인간에 대한 당신의 증오도 나만큼이나 커지고 있다니 기쁘군.\n\n해변에서 놈들을 더 찾아내 원하는 만큼 충분히 전투를 치른 다음 내게 돌아오면 당신에게 줄 보상에 대해 얘기하도록 하지.",
+        "f3ee21ff147fe3b4626f": "잘해냈군, $c. 아직 놈들을 더 처치해야 해. 물고기 인간이 모두 사라져 버리도록 말이야."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -485,6 +711,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "community",
@@ -513,6 +757,11 @@
     },
     "plPL": {
       "description": "Cieszy mnie, że twoja nienawiść do ryboludzi rośnie wraz z moją.\n\nZnajdź więcej na plaży, a gdy nasycisz się walką, wróć do mnie. Porozmawiamy o nagrodzie za wytrwałość.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Będę zadowolony dopiero wtedy, gdy morze i wszystkie jego dzieci umilkną... zwłaszcza ci obrzydliwi ryboludzie.",
+        "c86af063f0d9f5c97ecd": "Cieszy mnie, że twoja nienawiść do ryboludzi rośnie wraz z moją.$B$BZnajdź więcej ich pobratymców na plaży, a kiedy nasycisz się walką, wróć do mnie. Porozmawiamy wtedy o nagrodzie za twoją gorliwość.",
+        "f3ee21ff147fe3b4626f": "Dobra robota, $c. Żądam więcej ich krwi. Niech wszyscy ryboludzie zginą."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -534,6 +783,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9c7513582f9292d4938941959a77fcc8a0d8869c4b63ca7de9af3c541b55efb4"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -562,6 +826,11 @@
     },
     "ptBR": {
       "description": "É um prazer ver que seu ódio pelos homens-peixe cresce junto com o meu.\n\nVá e encontre mais deles ao longo da praia e, quando tiver se cansado, volte e fale novamente comigo. Poderemos combinar uma recompensa pela sua diligência.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Só ficarei satisfeito quando o mar e todos os seus filhos forem silenciados... especialmente aqueles homens-peixe nojentos.",
+        "c86af063f0d9f5c97ecd": "É um prazer ver que seu ódio pelos homens-peixe cresce junto com o meu.\n\nVá e encontre mais deles ao longo da praia e, quando tiver se cansado, volte e fale novamente comigo. Poderemos combinar uma recompensa pela sua diligência.",
+        "f3ee21ff147fe3b4626f": "Bom trabalho, $c. Eu quero o sangue deles. Morte a todos os homens-peixe."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -582,6 +851,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "community",
@@ -610,6 +896,11 @@
     },
     "ruRU": {
       "description": "Мне приятно видеть, что ненависть, которую ты испытываешь к рыболюдям, все растет, как и моя.\n\nНайди их на побережье, а потом когда битва будет закончена, возвращайся, и мы решим, как вознаградить тебя за усердие.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Все дети моря замолчат и мне не будут рады... особенно те, отвратительные рыбо-люди.",
+        "c86af063f0d9f5c97ecd": "Мне приятно видеть, что ненависть, которую ты испытываешь к рыболюдям, все растет, как и моя.\n\nНайди их на побережье, а потом когда битва будет закончена, возвращайся, и мы решим, как вознаградить тебя за усердие.",
+        "f3ee21ff147fe3b4626f": "Отлично, $C. Я призываю больше их крови. Пусть погибнут все рыбо-люди."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -630,6 +921,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "community",
@@ -658,6 +967,11 @@
     },
     "svSE": {
       "description": "Det gläder mig att se att ditt hat mot fiskmännen växer i takt med mitt.\n\nHitta fler av deras sort längs stranden, och återvänd till mig när du har fått nog av strid. Då talar vi om en belöning för din flit.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Jag blir inte nöjd förrän havet och alla dess barn har tystats... särskilt de där motbjudande fiskmänniskorna.",
+        "c86af063f0d9f5c97ecd": "Det gläder mig att se att ditt hat mot fiskmänniskorna växer tillsammans med mitt.$B$BLeta upp fler av deras sort längs stranden och återvänd när du har kämpat färdigt. Då ska vi tala om en belöning för din flit.",
+        "f3ee21ff147fe3b4626f": "Bra gjort, $c. Jag kräver mer av deras blod. Låt alla fiskmänniskor förgås."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -679,6 +993,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9c7513582f9292d4938941959a77fcc8a0d8869c4b63ca7de9af3c541b55efb4"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -707,6 +1036,11 @@
     },
     "trTR": {
       "description": "Balık adamlara duyduğun nefretin benimkiyle birlikte büyüdüğünü görmek beni memnun ediyor.\n\nSahil boyunca onlardan daha fazlasını bul, savaşa doyduğunda bana dön. O zaman gayretinin ödülünü konuşuruz.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Deniz ve bütün çocukları susturulmadan memnun olmayacağım... özellikle de o iğrenç balık adamlar.",
+        "c86af063f0d9f5c97ecd": "Balık adamlara duyduğun nefretin benimkiyle birlikte büyüdüğünü görmek beni sevindiriyor.$B$BSahil boyunca onların türünden daha fazlasını bul ve savaşa doyduğunda bana dön. O zaman gayretinin ödülünü konuşuruz.",
+        "f3ee21ff147fe3b4626f": "Aferin, $c. Daha çok kanlarını istiyorum. Bütün balık adamlar ölsün."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -728,6 +1062,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9c7513582f9292d4938941959a77fcc8a0d8869c4b63ca7de9af3c541b55efb4"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -758,6 +1107,11 @@
     },
     "ukUA": {
       "description": "Мені приємно бачити, що ненависть, яку ти відчуваєш до риболюдів, зростає, як і моя.\n\nЗнайди їх на узбережжі, а потім, коли битва буде закінчена, повертайся. Тоді ми вирішимо, як винагородити тебе за старанність.",
+      "dialogue": {
+        "91ec62697c3306806b7e": "Я не заспокоюся, доки море та всі його діти не замовкнуть... особливо ті огидні риболюди.",
+        "c86af063f0d9f5c97ecd": "Мені приємно бачити, що твоя ненависть до риболюдів зростає разом із моєю.$B$BЗнайди більше їхніх родичів уздовж берега, а коли вдосталь наб'єшся, повертайся до мене. Тоді поговоримо про нагороду за твою старанність.",
+        "f3ee21ff147fe3b4626f": "Чудово, $c. Я жадаю ще їхньої крові. Нехай усі риболюди загинуть."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -780,6 +1134,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "9c7513582f9292d4938941959a77fcc8a0d8869c4b63ca7de9af3c541b55efb4"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -810,6 +1179,11 @@
     },
     "zhCN": {
       "description": "看着你对鱼人的憎恶也如同我一般地与日俱增，我非常高兴。\n\n沿着海滩巡逻，你就可以找到更多的鱼人，去杀吧。当你觉得自己杀得够多了以后就回来找我，我会好好奖励你一下的。",
+      "dialogue": {
+        "91ec62697c3306806b7e": "只有大海与她所有的孩子都回归寂静之後，我才会高兴……尤其是那些恶心的鱼人。",
+        "c86af063f0d9f5c97ecd": "看着你对鱼人的憎恶也如同我一般地与日俱增，我非常高兴。\n\n沿着海滩巡逻，你就可以找到更多的鱼人，去杀吧。当你觉得自己杀得够多了以后就回来找我，我会好好奖励你一下的。",
+        "f3ee21ff147fe3b4626f": "干得好，$C。所有的鱼人都给我去死吧!\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -830,6 +1204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "community",
@@ -858,6 +1250,11 @@
     },
     "zhTW": {
       "description": "看著你對魚人的憎惡也如同我一般地與日俱增，我非常高興。\n\n沿著海灘巡邏，你就可以找到更多的魚人，去殺吧。當你覺得自己殺得夠多了以後就回來找我，我會好好獎勵你一下的。",
+      "dialogue": {
+        "91ec62697c3306806b7e": "只有大海與她所有的孩子都回歸寂靜之後，我纔會高興……尤其是那些噁心的魚人。",
+        "c86af063f0d9f5c97ecd": "看著你對魚人的憎惡也如同我一般地與日俱增，我非常高興。\n\n沿著海灘巡邏，你就可以找到更多的魚人，去殺吧。當你覺得自己殺得夠多了以後就回來找我，我會好好獎勵你一下的。",
+        "f3ee21ff147fe3b4626f": "幹得好，$C。所有的魚人都給我去死吧!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -878,6 +1275,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.91ec62697c3306806b7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c86af063f0d9f5c97ecd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f3ee21ff147fe3b4626f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "community",

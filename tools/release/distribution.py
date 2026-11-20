@@ -2,7 +2,7 @@
 
 COLLECTOR_MARKERS = ('rosettaquestprobe', 'rosetta-quest-probe', 'rosettascan', 'frsscan', 'frsquestprobereport',
                      'rosettasourceprobe', 'rosetta-source-probe', 'frssource',
-                     'rosettatooltipcheck', 'rosetta-tooltip-check', 'frsverify')
+                     'rosettatooltipcheck', 'rosetta-tooltip-check', 'frsverify', 'rosettanorthshiredialogue')
 
 
 def check_distribution(root):
@@ -20,6 +20,7 @@ def check_distribution(root):
         parts = [part.casefold() for part in relative.parts]
 
         if ('tools' in parts and path != manifest) or 'references' in parts or 'quest-scan' in parts or 'source-scan' in parts \
+                or 'quest-dialogue-pilot' in parts \
                 or path.suffix.casefold() == '.wdb':
             raise ValueError('Local scan artifact in distribution: ' + str(relative))
 
@@ -30,7 +31,7 @@ def check_distribution(root):
 
         if any(marker in text for marker in COLLECTOR_MARKERS) \
                 or any(prefix + scan in text for prefix in ('references/', 'tools/')
-                       for scan in ('quest-scan', 'source-scan')):
+                       for scan in ('quest-scan', 'source-scan', 'quest-dialogue-pilot')):
             raise ValueError('Local quest collector in distribution: ' + str(relative))
 
     return len(files)

@@ -1,8 +1,39 @@
 {
   "areaId": 9,
+  "dialogueContexts": {
+    "d367dcac40205b16ef1e": {
+      "contributionId": 326,
+      "lineId": "q:91772:progress",
+      "npcId": 240,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f5551dd93dd14781af33": {
+      "contributionId": 436,
+      "lineId": "q:91772:accept",
+      "npcId": 248415,
+      "scope": "forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "ff8a8f1e8eb120b789f8": {
+      "contributionId": 327,
+      "lineId": "q:91772:complete",
+      "npcId": 240,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Tak jo. Vezmi si tuhle soupravu na stopování koboldů. Díky ní vystopuješ kobolda, který dělá starosti maršálovi McBridovi.\n\nJdi po stopách a to, co najdeš, přines maršálovi Dughanovi do Goldshire.\n\nMám pocit, že ta havěť něco kuje mimo Northshire. Takže budeš potřebovat Dughanovu pomoc.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Zjistil jsi, kam koboldi míří?",
+        "f5551dd93dd14781af33": "Tak jo. Vezmi si tuhle soupravu na stopování koboldů. Díky ní vystopuješ kobolda, který dělá starosti maršálovi McBridovi.\n\nJdi po stopách a to, co najdeš, přines maršálovi Dughanovi do Goldshire.\n\nMám pocit, že ta havěť něco kuje mimo Northshire. Takže budeš potřebovat Dughanovu pomoc.",
+        "ff8a8f1e8eb120b789f8": "Co to má znamenat, $N? Sleduješ koboldy?\n\nNo, samozřejmě že míří k dolu Fargodeep! To místo se koboldy jen hemží.\n\nDobrá práce, asi. Budu potřebovat někoho, kdo ten problém vyřeší."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +50,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +91,11 @@
     },
     "daDK": {
       "description": "Godt. Tag dette koboldsporingssæt. Det lader dig spore den kobold, som Marshal McBride er bekymret over.\r\n\r\nFølg sporene og bring det, du finder, til Marshal Dughan i Goldshire.\r\n\r\nJeg har en fornemmelse af, at de skadedyr har noget for uden for Northshire. Så du får brug for Dughans hjælp.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Har du fundet ud af, hvor kobolderne er på vej hen?",
+        "f5551dd93dd14781af33": "Godt. Tag dette koboldsporingssæt. Det lader dig spore den kobold, som Marshal McBride er bekymret over.\r\n\r\nFølg sporene og bring det, du finder, til Marshal Dughan i Goldshire.\r\n\r\nJeg har en fornemmelse af, at de skadedyr har noget for uden for Northshire. Så du får brug for Dughans hjælp.",
+        "ff8a8f1e8eb120b789f8": "Hvad er nu det, $N? Sporer du kobolder?\n\nSelvfølgelig er de på vej mod Fargodeep-minen! Det sted vrimler med kobolder.\n\nGodt arbejde, tror jeg. Jeg får brug for nogen til at tage sig af problemet."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +112,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +151,11 @@
     },
     "deDE": {
       "description": "Na schön. Nehmt dieses Kobold-Fährtenleseset. Damit könnt Ihr den Kobold verfolgen, um den es Marshal McBride geht.\r\n\r\nFolgt den Spuren und bringt Eure Funde zu Marshal Dughan in Goldhain.\r\n\r\nMich beschleicht das Gefühl, diese kleinen Racker planen irgendetwas außerhalb von Nordhain. Ihr braucht also Dughans Hilfe.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Habt Ihr herausgefunden, wo die Kobolde hin wollen?",
+        "f5551dd93dd14781af33": "Na schön. Nehmt dieses Kobold-Fährtenleseset. Damit könnt Ihr den Kobold verfolgen, um den es Marshal McBride geht.\n\nFolgt den Spuren und bringt Eure Funde zu Marshal Dughan in Goldhain.\n\nMich beschleicht das Gefühl, diese kleinen Racker planen irgendetwas außerhalb von Nordhain. Ihr braucht also Dughans Hilfe.",
+        "ff8a8f1e8eb120b789f8": "Was ist das denn, $N? Verfolgt Ihr Kobolde?\n\nNun, natürlich waren sie auf dem Weg in die Tiefenschachtmine! Dieser Ort wimmelt nur so vor Kobolden.\n\nGute Arbeit, schätze ich. Ich brauche jemanden, der sich um dieses Problem kümmert."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +171,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +211,11 @@
     },
     "enUS": {
       "description": "Alright. Take this kobold tracking kit. It'll let ye' track the kobold that Marshal McBride is concerned with.\r\n\r\nFollow the tracks and bring what ye' find to Marshal Dughan in Goldshire.\r\n\r\nI have a feelin' these varmints are up to somethin' outside Northshire. So ye'll be needin' Dughan's help.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Have you figured out where the Kobolds are heading?",
+        "f5551dd93dd14781af33": "Alright. Take this kobold tracking kit. It'll let ye' track the kobold that Marshal McBride is concerned with.\n\nFollow the tracks and bring what ye' find to Marshal Dughan in Goldshire.\n\nI have a feelin' these varmints are up to somethin' outside Northshire. So ye'll be needin' Dughan's help.",
+        "ff8a8f1e8eb120b789f8": "What's this, $N? Tracking kobolds?\n\nWell, of course they're headed toward the Fargodeep mine! That place is infested with kobolds.\n\nGood work, I guess. I'm going to need someone to take care of that problem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +231,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -158,6 +272,11 @@
     },
     "esES": {
       "description": "Muy bien. Coge este equipo de rastreo de kóbolds; te ayudará a encontrar al kóbold que tanto preocupa al alguacil McBride.\r\n\r\nSigue su rastro y devuelve lo que encuentres al alguacil Dughan de Villadorada.\r\n\r\nTengo la sensación de que estas alimañas están tramando algo a las afueras de Villanorte. Si es cierto, necesitarás la ayuda de Dughan.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "¿Has averiguado adónde se dirigen los kóbolds?",
+        "f5551dd93dd14781af33": "Muy bien. Coge este equipo de rastreo de kóbolds; te ayudará a encontrar al kóbold que tanto preocupa al alguacil McBride.\n\nSigue su rastro y devuelve lo que encuentres al alguacil Dughan de Villadorada.\n\nTengo la sensación de que estas alimañas están tramando algo a las afueras de Villanorte. Si es cierto, necesitarás la ayuda de Dughan.",
+        "ff8a8f1e8eb120b789f8": "¿Qué dices, $N? ¿Rastrear kóbolds?\n\n¡Pues claro que se dirigen a la Mina Abisal! Ese lugar está plagado de kóbolds.\n\nBuen trabajo, supongo. Aunque necesitaré a alguien que se encargue de ese problema."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +292,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -195,6 +332,11 @@
     },
     "esMX": {
       "description": "Muy bien. Recibe este equipo de rastreo kóbold que te permitirá rastrear al kóbold que preocupa al alguacil McBride.\r\n\r\nSigue las huellas y entrega tus hallazgos al alguacil Dughan en Villadorada.\r\n\r\nTengo la sensación de que esos canallas están tramando algo en las afueras de Villanorte. Necesitarás la ayuda del alguacil Dughan.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "¿Has averiguado adónde se dirigen los kóbolds?",
+        "f5551dd93dd14781af33": "Muy bien. Recibe este equipo de rastreo kóbold que te permitirá rastrear al kóbold que preocupa al alguacil McBride.\n\nSigue las huellas y entrega tus hallazgos al alguacil Dughan en Villadorada.\n\nTengo la sensación de que esos canallas están tramando algo en las afueras de Villanorte. Necesitarás la ayuda del alguacil Dughan.",
+        "ff8a8f1e8eb120b789f8": "¿Qué es esto, $N? ¿Estás rastreando kóbolds?\n\nBueno, ¡no cabe duda de que se dirigen hacia la Mina Abisal! Ese lugar está plagado de kóbolds.\n\nBuen trabajo... supongo. Voy a necesitar que alguien resuelva ese problema."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +352,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -232,6 +392,11 @@
     },
     "frFR": {
       "description": "Bon, prenez ce kit de pistage des Kobolds, il vous permettra de retrouver celui qui tracasse McBride.\r\n\r\nRemontez sa piste et rapportez votre butin au maréchal Dughan, à Comté-de-l’Or.\r\n\r\nQuelque chose me dit que ces petites vermines préparent quelque chose qui va au-delà de Comté-du-Nord, donc vous aurez besoin de son aide.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Vous avez découvert où les Kobolds se dirigeaient ?",
+        "f5551dd93dd14781af33": "Bon, prenez ce kit de pistage des Kobolds, il vous permettra de retrouver celui qui tracasse McBride.\n\nRemontez sa piste et rapportez votre butin au maréchal Dughan, à Comté-de-l’Or.\n\nQuelque chose me dit que ces petites vermines préparent quelque chose qui va au-delà de Comté-du-Nord, donc vous aurez besoin de son aide.",
+        "ff8a8f1e8eb120b789f8": "Qu’est-ce que vous dites, Atalante ? Vous avez pisté les Kobolds ?\n\nC’est vers la mine de Fondugouffre qu’ils se dirigent, évidemment ! L’endroit grouille de ces sales bêtes.\n\nBon travail, disons. Il va me falloir quelqu’un pour s’occuper du problème."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +412,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -269,6 +452,11 @@
     },
     "hrHR": {
       "description": "Dobro. Uzmi ovaj pribor za praćenje kobolda. Pomoću njega možeš pratiti kobolda koji brine maršala McBridea.\r\n\r\nSlijedi tragove i odnesi što pronađeš maršalu Dughanu u Goldshire.\r\n\r\nImam osjećaj da te napasti nešto smjeraju izvan Northshirea. Zato će ti trebati Dughanova pomoć.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Jesi li otkrio kamo se koboldi kreću?",
+        "f5551dd93dd14781af33": "Dobro. Uzmi ovaj pribor za praćenje kobolda. Pomoću njega možeš pratiti kobolda koji brine maršala McBridea.\r\n\r\nSlijedi tragove i odnesi što pronađeš maršalu Dughanu u Goldshire.\r\n\r\nImam osjećaj da te napasti nešto smjeraju izvan Northshirea. Zato će ti trebati Dughanova pomoć.",
+        "ff8a8f1e8eb120b789f8": "Što je ovo, $N? Pratiš kobolde?\n\nPa naravno da idu prema rudniku Fargodeep! To mjesto vrvi koboldima.\n\nDobar posao, valjda. Trebat će mi netko da riješi taj problem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +473,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +512,11 @@
     },
     "itIT": {
       "description": "Bene. Prendi questo kit per seguire le tracce dei coboldi. Ti permetterà di rintracciare il coboldo che preoccupa il maresciallo McBride.\r\n\r\nSegui le tracce e porta ciò che trovi al maresciallo Dughan a Borgodoro.\r\n\r\nHo la sensazione che queste canaglie stiano combinando qualcosa fuori da Norlanda. Quindi ti servirà l'aiuto di Dughan.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Hai scoperto dove sono diretti i coboldi?",
+        "f5551dd93dd14781af33": "Bene. Prendi questo kit per seguire le tracce dei coboldi. Ti aiuterà a rintracciare il coboldo che preoccupa Marshal McBride.\n\nSegui le tracce e porta quello che trovi a Marshal Dughan, a Goldshire.\n\nHo la sensazione che 'ste canaglie stiano combinando qualcosa fuori da Northshire. Quindi ti servirà l'aiuto di Dughan.",
+        "ff8a8f1e8eb120b789f8": "Cos'è questo, $N? Stai seguendo le tracce dei coboldi?\n\nBe', è ovvio che sono diretti alla miniera Fargodeep! Quel posto è infestato dai coboldi.\n\nBel lavoro, direi. Mi servirà qualcuno che si occupi di quel problema."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -324,6 +533,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -347,6 +574,11 @@
     },
     "koKR": {
       "description": "좋습니다. 이 코볼트 추적 도구를 가져가십시오. 맥브라이드 치안대장이 말한 코볼트를 추적할 수 있을 겁니다.\r\n\r\n발자국을 따라가서 알아낸 정보를 골드샤이어의 더그한 치안대장에게 전달하십시오.\r\n\r\n이 해충 같은 놈들이 노스샤이어 밖에서 무언가를 꾸미고 있다는 느낌이 듭니다. 더그한 치안대장의 도움이 필요할 겁니다.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "코볼트들이 어디로 향하는지 알아냈나?",
+        "f5551dd93dd14781af33": "좋습니다. 이 코볼트 추적 도구를 가져가십시오. 맥브라이드 치안대장이 말한 코볼트를 추적할 수 있을 겁니다.\r\n\r\n발자국을 따라가서 알아낸 정보를 골드샤이어의 더그한 치안대장에게 전달하십시오.\r\n\r\n이 해충 같은 놈들이 노스샤이어 밖에서 무언가를 꾸미고 있다는 느낌이 듭니다. 더그한 치안대장의 도움이 필요할 겁니다.",
+        "ff8a8f1e8eb120b789f8": "이게 뭔가, $N? 코볼트를 추적하고 있다고?\n\n물론 깊은굴 광산으로 향하겠지! 거긴 코볼트로 득실거리니까.\n\n수고했네, 아마도. 그 문제를 처리할 사람이 필요하겠군."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -362,6 +594,21 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -384,6 +631,11 @@
     },
     "plPL": {
       "description": "No dobra. Weź ten zestaw do tropienia koboldów. Dzięki niemu wytropisz kobolda, który tak martwi marszałka McBride'a.\n\nIdź jego śladem i zanieś to, co znajdziesz, marszałkowi Dughanowi w Goldshire.\n\nCoś mi się zdaje, że te gagatki szykują coś poza Northshire. Przyda ci się więc pomoc Dughana.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Udało ci się ustalić, dokąd zmierzają koboldy?",
+        "f5551dd93dd14781af33": "No dobra. Weź ten zestaw do tropienia koboldów. Dzięki niemu wytropisz kobolda, który tak martwi marszałka McBride'a.\n\nIdź jego śladem i zanieś to, co znajdziesz, marszałkowi Dughanowi w Goldshire.\n\nCoś mi się zdaje, że te gagatki szykują coś poza Northshire. Przyda ci się więc pomoc Dughana.",
+        "ff8a8f1e8eb120b789f8": "Co to, $N? Śledzisz koboldy?\n\nOczywiście, że zmierzają do kopalni Fargodeep! To miejsce roi się od koboldów.\n\nDobra robota, chyba. Będę potrzebować kogoś, kto zajmie się tym problemem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -401,6 +653,23 @@
             "sourceLocale": "enUS",
             "sourceRevision": "1.1.1",
             "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceLocale": "enUS",
+            "sourceRevision": "1.1.1",
+            "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -426,6 +695,11 @@
     },
     "ptBR": {
       "description": "Buenas. Pega esse kit de rastreamento de kobolds. Com ele, tu vai conseguir ir no encalço do kobold com o qual o Major Belmonte tá preocupado.\r\n\r\nSegue as pegadas e leva o que tu encontrar pro Delegado Durão em Vila d'Ouro.\r\n\r\nTô com um pressentimento de que esses bagaceiros tão aprontando alguma fora de Vila Norte. Então tu vai precisar da ajuda do Delegado, tchê.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Já descobriu aonde os kobolds estão indo?",
+        "f5551dd93dd14781af33": "Buenas. Pega esse kit de rastreamento de kobolds. Com ele, tu vai conseguir ir no encalço do kobold com o qual o Major Belmonte tá preocupado.\n\nSegue as pegadas e leva o que tu encontrar pro Delegado Durão em Vila d'Ouro.\n\nTô com um pressentimento de que esses bagaceiros tão aprontando alguma fora de Vila Norte. Então tu vai precisar da ajuda do Delegado, tchê.",
+        "ff8a8f1e8eb120b789f8": "O que é isso, $N? Está rastreando kobolds?\n\nBom, é claro que eles estão indo para a Mina Vailafundo! Aquele lugar é infestado de kobolds.\n\nBom trabalho, eu acho. Vou precisar de alguém para cuidar desse problema."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -441,6 +715,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -463,6 +755,11 @@
     },
     "ruRU": {
       "description": "Что ж. Возьми набор для выслеживания кобольдов. Он позволит тебе отыскать кобольда, который интересует маршала Макбрайда.\r\n\r\nИди по следам и принеси то, что найдешь, маршалу Дугхану в Златоземье.\r\n\r\nНутром чую, эти вредители что-то затевают за пределами Североземья, так что тебе понадобится помощь Дугхана.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Тебе удалось выяснить, куда направляются кобольды?",
+        "f5551dd93dd14781af33": "Что ж. Возьми набор для выслеживания кобольдов. Он позволит тебе отыскать кобольда, который интересует маршала Макбрайда.\n\nИди по следам и принеси то, что найдешь, маршалу Дугхану в Златоземье.\n\nНутром чую, эти вредители что-то затевают за пределами Североземья, так что тебе понадобится помощь Дугхана.",
+        "ff8a8f1e8eb120b789f8": "Что это, $n? Выслеживаешь кобольдов?\n\nНу конечно же, они направляются на рудник Подземных Глубин! Там кобольдов не счесть.\n\nЛадно, молодцом. Надо будет найти кого-нибудь, чтобы разобрались с этой проблемой."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -478,6 +775,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -500,6 +815,11 @@
     },
     "svSE": {
       "description": "Okej. Ta den här koboldspårningssatsen. Den låter dig spåra kobolden som oroar marskalk McBride.\r\n\r\nFölj spåren och ge fynden till marskalk Dughan i Goldshire.\r\n\r\nJag anar att ohyran har något för sig utanför Northshire. Då behöver du Dughans hjälp.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Har du listat ut vart kobolderna är på väg?",
+        "f5551dd93dd14781af33": "Okej. Ta den här koboldspårningssatsen. Den låter dig spåra kobolden som oroar marskalk McBride.\r\n\r\nFölj spåren och ge fynden till marskalk Dughan i Goldshire.\r\n\r\nJag anar att ohyran har något för sig utanför Northshire. Då behöver du Dughans hjälp.",
+        "ff8a8f1e8eb120b789f8": "Vad är det här, $N? Spårar du kobolder?\n\nSjälvklart är de på väg mot Fargodeepgruvan! Stället kryllar av kobolder.\n\nBra jobbat, antar jag. Jag behöver någon som tar hand om det problemet."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -516,6 +836,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -539,6 +875,11 @@
     },
     "trTR": {
       "description": "Pekâlâ. Şu kobold izleme setini al. Şerif McBride'ın dert ettiği kobold'un izini sürmeni sağlayacak.\r\n\r\nİzleri takip et ve bulduklarını Goldshire'daki Şerif Dughan'a götür.\r\n\r\nİçimde bir his var, bu haşereler Northshire'ın dışında bir şeyler çeviriyor. Yani Dughan'ın yardımına ihtiyacın olacak.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Koboldların nereye gittiğini buldun mu?",
+        "f5551dd93dd14781af33": "Pekâlâ. Şu kobold izleme setini al. Şerif McBride'ın dert ettiği kobold'un izini sürmeni sağlayacak.\r\n\r\nİzleri takip et ve bulduklarını Goldshire'daki Şerif Dughan'a götür.\r\n\r\nİçimde bir his var, bu haşereler Northshire'ın dışında bir şeyler çeviriyor. Yani Dughan'ın yardımına ihtiyacın olacak.",
+        "ff8a8f1e8eb120b789f8": "Bu da ne, $N? Koboldları mı takip ediyorsun?\n\nElbette Fargodeep madenine gidiyorlar! Orası kobold kaynıyor.\n\nİyi iş çıkardın sanırım. Bu sorunla ilgilenecek birine ihtiyacım olacak."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -555,6 +896,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -578,6 +935,11 @@
     },
     "ukUA": {
       "description": "Гаразд. Візьми цей набір для вистежування кобольдів. З ним ти зможеш вистежити кобольда, через якого непокоїться маршал Макбрайд.\n\nІди слідами й принеси те, що знайдеш, маршалу Дугану в Злотохрестя.\n\nМаю передчуття, що ці капосники щось замишляють за межами Північнокраю. Тож тобі знадобиться допомога Дугана.",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "Ти з’ясував, куди прямують кобольди?",
+        "f5551dd93dd14781af33": "Гаразд. Візьми цей набір для вистежування кобольдів. З ним ти зможеш вистежити кобольда, через якого непокоїться маршал Макбрайд.\n\nІди слідами й принеси те, що знайдеш, маршалу Дугану в Злотохрестя.\n\nМаю передчуття, що ці капосники щось замишляють за межами Північнокраю. Тож тобі знадобиться допомога Дугана.",
+        "ff8a8f1e8eb120b789f8": "Що це, $N? Вистежуєш кобольдів?\n\nЗвісно, вони прямують до копальні Фаргодіп! Там повно кобольдів.\n\nГарна робота, мабуть. Мені знадобиться хтось, хто розв’яже цю проблему."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -595,6 +957,23 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "ai",
+            "source": "classicUA",
+            "sourceLocale": "enUS",
+            "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
+            "sourceTextSha256": "135ab5a7a35096f0a89a27ff20dbd64b48b38a358d6d9308cfdb1f1ace3938d2"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -620,6 +999,11 @@
     },
     "zhCN": {
       "description": "好吧。拿上这套狗头人追踪工具。它能帮你追踪治安官玛克布莱德提到的那个狗头人。\r\n\r\n顺着踪迹追下去，把你找到的线索带给闪金镇的治安官杜汉。\r\n\r\n我有种预感，这些害虫正在北郡外头憋着什么坏水。所以你肯定用得上杜汉的帮忙。",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "你弄清楚那些狗头人打算去哪儿了吗？",
+        "f5551dd93dd14781af33": "好吧。拿上这套狗头人追踪工具。它能帮你追踪治安官玛克布莱德提到的那个狗头人。\n\n顺着踪迹追下去，把你找到的线索带给闪金镇的治安官杜汉。\n\n我有种预感，这些害虫正在北郡外头憋着什么坏水。所以你肯定用得上杜汉的帮忙。",
+        "ff8a8f1e8eb120b789f8": "这是什么，$N？你在追踪狗头人？\n\n那还用说，它们肯定是冲着法戈第矿洞去的！那地方早就狗头人泛滥了。\n\n干得不错。我正愁没人去帮我解决那个大麻烦呢。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -635,6 +1019,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -657,6 +1059,11 @@
     },
     "zhTW": {
       "description": "好吧。帶著這個狗頭人追蹤工具組。透過它，你就能追蹤讓治安官瑪克布萊德擔心的那個狗頭人。\r\n\r\n沿著足跡追蹤，把你的發現告訴閃金鎮的治安官杜漢。\r\n\r\n我的直覺告訴我，這些惡棍正在北郡之外製造麻煩。所以你一定需要杜漢的幫忙。",
+      "dialogue": {
+        "d367dcac40205b16ef1e": "你查出狗頭人要去哪裡了嗎？",
+        "f5551dd93dd14781af33": "好吧。帶著這個狗頭人追蹤工具組。透過它，你就能追蹤讓治安官瑪克布萊德擔心的那個狗頭人。\r\n\r\n沿著足跡追蹤，把你的發現告訴閃金鎮的治安官杜漢。\r\n\r\n我的直覺告訴我，這些惡棍正在北郡之外製造麻煩。所以你一定需要杜漢的幫忙。",
+        "ff8a8f1e8eb120b789f8": "這是怎麼回事，$N？你在追蹤狗頭人？\n\n他們當然是往法戈第礦坑去！那地方到處都是狗頭人。\n\n幹得好吧。我需要有人去處理這個問題。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -672,6 +1079,21 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.d367dcac40205b16ef1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5551dd93dd14781af33": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "dialogue.ff8a8f1e8eb120b789f8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

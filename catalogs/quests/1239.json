@@ -1,8 +1,28 @@
 {
   "areaId": 15,
+  "dialogueContexts": {
+    "1f495c59963cf9b597fd": {
+      "lineId": "q:1239:complete",
+      "npcId": 4791,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "8ac4950d26ef19c8fd0b": {
+      "lineId": "q:1239:progress",
+      "npcId": 4791,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Po usilovném kopání se objeví hlava orka, nerovně useknutá u krku. Rty má zkřivené v zavrčení a tmavé oči vzdorovitě zírají.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "To je hlava Marga Nighteye! Jak jsem se obával, je mrtev.$B$BPodívej se na tu ránu na krku! Mohla takovou tržnou ránu způsobit zbraň, nebo našeho agenta zabila nějaká bestie?$B$BTohle tajemství musíme rozluštit, $N. Musíme zjistit, zda Marg zemřel rukou Aliance!",
+        "8ac4950d26ef19c8fd0b": "Máš další hlášení, $N?"
+      },
       "summary": "Přines Defiant Orc Head Nazeeru Bloodpikeovi do Brackenwall Village.",
       "title": "Uťatá hlava",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Ivrig graven afslører hovedet af en mandlig ork, ujævnt hugget af ved halsen. Hans læber er stivnet i en snerren, og hans mørke øjne stirrer trodsigt.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "Det er Marg Nighteyes hoved! Som jeg frygtede, er han død.$B$BSe på såret i hans hals! Kunne et våben have lavet det flænsede snit, eller dræbte et udyr vores agent?$B$BDet mysterium må vi opklare, $N. Vi må finde ud af, om Marg døde for Alliancens hånd!",
+        "8ac4950d26ef19c8fd0b": "Har du endnu en sag at rapportere, $N?"
+      },
       "summary": "Bring Defiant Orc Head til Nazeer Bloodpike i Brackenwall Village.",
       "title": "Det afhuggede hoved",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b2167be9a629b057e5eb52c4b0d72a8913b563622a30c6cf03a9fd6aff386fca"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Ausgiebiges Graben fördert den Kopf eines männlichen Orcs zu Tage, der am Hals abgesägt worden war. Seine Lippen sind zu einer höhnischen Grimasse verzerrt, seine dunklen Augen blicken trotzig.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "Dies ist der Kopf von Marg Nighteye! Er ist tot, wie ich befürchtete. \n \n Seht euch die Wunde an seinem Hals an! Kann eine Waffe diesen ausgefransten Schnitt gemacht haben, oder wurde unser Agent von einer Bestie angefallen?\n \n Das ist ein Rätsel, das wir lösen müssen, $N! Wir müssen herausfinden, ob Marg durch die Hände der Allianz starb!",
+        "8ac4950d26ef19c8fd0b": "Habt ihr noch etwas zu berichten, $N?"
+      },
       "summary": "Bringt den Kopf des aufsässigen Orcs zu Nazeer Bloodpike in Brackenwall.",
       "title": "Der abgetrennte Kopf",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "Vigorous digging reveals the head of a male orc, raggedly severed at the neck.  His lips are frozen in a snarl, and its dark eyes stare defiantly.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "This is the head of Marg Nighteye!  As I feared, he is dead.$B$BLook at the wound on his neck!  Could a weapon have made that ragged cut, or did some beast slay our agent?$B$BThis is a mystery we must solve, $N.  We must discover if Marg's death was at the hands of the Alliance!",
+        "8ac4950d26ef19c8fd0b": "You have another matter to report, $N?"
+      },
       "summary": "Bring the Defiant Orc Head to Nazeer Bloodpike in Brackenwall Village.",
       "title": "The Severed Head",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Una enérgica excavación revela la cabeza de un orco macho, salvajemente decapitada. Sus labios se petrificaron con un gruñido y sus ojos oscuros tienen aún una mirada desafiante.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "¡Esta es la cabeza de Marg Ojonocturno! Tal y como temía, está muerto.\n\n¡Mira la herida que tiene en el cuello! ¿Podría haberla causado un arma, o quizás nuestro agente murió a manos de una bestia?\n\nEs un misterio que debemos resolver, $n. ¡Debemos descubrir si Marg encontró la muerte a manos de la Alianza!",
+        "8ac4950d26ef19c8fd0b": "¿Tienes algo más que comunicarme, $n?"
+      },
       "summary": "Lleva la cabeza de orco desafiante a Nazeer Picasangre al Poblado Murohelecho.",
       "title": "La cabeza decapitada",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Una enérgica excavación revela la cabeza de un orco macho, salvajemente cercenada. Sus labios se petrificaron con un gruñido y sus ojos oscuros tienen aún una mirada desafiante.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "¡Esta es la cabeza de Marg Ojonocturno! Tal y como temía, está muerto.\n\n¡Mira la herida que tiene en el cuello! ¿Podría haberla causado un arma, o quizás nuestro agente murió a manos de una bestia?\n\nEs un misterio que debemos resolver, $n. ¡Debemos descubrir si Marg encontró la muerte a manos de la Alianza!",
+        "8ac4950d26ef19c8fd0b": "¿Tienes algo más que comunicarme, $n?"
+      },
       "summary": "Lleva la cabeza de orco desafiante a Nazeer Picasangre al Poblado Murohelecho.",
       "title": "La cabeza cercenada",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "Une fouille approfondie permet de découvrir une tête d'orc mâle. Les lèvres sont figées dans un rictus et les yeux noirs semblent vous fixer avec défi.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "C'est la tête de Marg Nighteye ! Comme je le craignais, il est mort. \n \n Regardez la blessure du cou ! Une arme a-t-elle pu faire de telles marques ou bien a-t-il été tué par une bête ?\n \n C'est un mystère que nous devons résoudre, $N. Nous devons savoir si la mort de Marg est du fait de l'Alliance !",
+        "8ac4950d26ef19c8fd0b": "Vous avez quelque chose d'autre à signaler, $N ?"
+      },
       "summary": "Apporter la Tête d'orc défiant à Nazeer Bloodpike à Mur-de-Fougères.",
       "title": "La tête coupée",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +304,10 @@
     },
     "hrHR": {
       "description": "Snažno kopanje otkriva glavu mužjaka orka, grubo odsječenu na vratu. Usne su mu ukočene u režanju, a tamne oči prkosno zure.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "To je glava Marga Nighteyea! Kao što sam se bojao, mrtav je.$B$BPogledaj ranu na njegovu vratu! Je li oružje moglo nanijeti takvu razderotinu ili je neka zvijer ubila našeg agenta?$B$BMoramo riješiti ovu zagonetku, $N. Moramo otkriti je li Marg stradao od ruke Saveza!",
+        "8ac4950d26ef19c8fd0b": "Imaš li još nešto prijaviti, $N?"
+      },
       "summary": "Donesi prkosnu orkovsku glavu Nazeeru Bloodpikeu u selu Brackenwall.",
       "title": "Odsječena glava",
       "translationMetadata": {
@@ -189,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b2167be9a629b057e5eb52c4b0d72a8913b563622a30c6cf03a9fd6aff386fca"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +345,10 @@
     },
     "itIT": {
       "description": "Scavando con energia scopri la testa di un orco maschio, recisa irregolarmente all'altezza del collo. Le labbra sono irrigidite in un ringhio e gli occhi scuri fissano con sfida.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "Questa è la testa di Marg Nighteye! Come temevo, è morto.\n\nGuarda la ferita sul collo! Può essere stata un'arma a fare quel taglio frastagliato, o è stata qualche bestia a uccidere il nostro agente?\n\nÈ un mistero che dobbiamo risolvere, $N. Dobbiamo scoprire se la morte di Marg è opera dell'Alleanza!",
+        "8ac4950d26ef19c8fd0b": "Hai qualcos'altro da riferire, $N?"
+      },
       "summary": "Porta la testa dell'orco ribelle a Nazeer Bloodpike a Brackenwall Village.",
       "title": "La testa mozzata",
       "translationMetadata": {
@@ -216,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b2167be9a629b057e5eb52c4b0d72a8913b563622a30c6cf03a9fd6aff386fca"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +388,10 @@
     },
     "koKR": {
       "description": "열심히 땅을 파자 거칠게 보이는 남자 오크의 가면이 나왔습니다. 입술은 으르렁거리며 굳은 듯, 다소 반항적인 눈동자로 당신을 노려보는 형상입니다.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "이건 마그 나이트아이의 쓰던 가면이군! 걱정했던 대로 그는 죽은 것이야.\n\n여기를 좀 보게! 도대체 어떤 무기로 당했기에 이 지경이 된 거지? 혹시 야수에게 당한 것인가?\n\n우리는 반드시 알아내야 하네. 마그가 얼라이언스 손에 죽은 것인지 반드시 알아내야만 해!",
+        "8ac4950d26ef19c8fd0b": "보고할 또 다른 사항이라도 있나?"
+      },
       "summary": "담쟁이 마을에 있는 나지르 블러드파이크에게 험상궂은 오크 가면을 가져가야 합니다.",
       "title": "무서운 가면",
       "translationMetadata": {
@@ -242,6 +400,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +428,10 @@
     },
     "plPL": {
       "description": "Energiczne kopanie odsłania głowę orka, nierówno odrąbaną przy szyi. Wargi zastygły w warknięciu, a ciemne oczy patrzą wyzywająco.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "To głowa Marga Nighteye'a! Obawiałem się tego, nie żyje.$B$BSpójrz na ranę na jego szyi! Czy broń mogła zadać tak poszarpaną ranę, czy może jakaś bestia zabiła naszego agenta?$B$BMusimy rozwiązać tę zagadkę, $N. Musimy odkryć, czy Marg zginął z rąk Przymierza!",
+        "8ac4950d26ef19c8fd0b": "Masz kolejną sprawę do zgłoszenia, $N?"
+      },
       "summary": "Przynieś głowę nieugiętego orka Nazeerowi Bloodpike'owi w wiosce Brackenwall.",
       "title": "Odcięta głowa",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b2167be9a629b057e5eb52c4b0d72a8913b563622a30c6cf03a9fd6aff386fca"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "Uma escavação vigorosa revela a cabeça de um orc, decepada grosseiramente na altura do pescoço. Os lábios estão congelados em um rosnado, e os olhos negros encaram desafiadoramente.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "Essa é a cabeça de Marg Olholunar! Como eu temia, ele morreu.\n\nOlhe o ferimento no pescoço! Será que uma arma poderia fazer esse rasgo, ou será que uma fera matou o nosso agente?\n\nNós temos que resolver esse mistério, $N. Temos que descobrir se o Marg morreu nas mãos da Aliança!",
+        "8ac4950d26ef19c8fd0b": "Você tem mais alguma coisa para reportar, $N?"
+      },
       "summary": "Leve a Cabeça de Orc Desafiante para Nazir Piquessangue na Aldeia Muralha Verde.",
       "title": "A cabeça decepada",
       "translationMetadata": {
@@ -293,6 +481,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +509,10 @@
     },
     "ruRU": {
       "description": "Стоило копнуть чуть глубже, и из земли показалась отрубленная голова орка. На его лице застыл оскал, а в темных глазах – вызов.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "Это голова Марга Ночного Соглядатая! Этого-то я и боялся. Посмотри на эту рану у него на шее, – как думаешь, это какое-то оружие, или он пал от клыков и когтей какого-то зверя? \n\nМы должны выяснить это, $N. Выяснить, не является ли его смерть делом рук Альянса.",
+        "8ac4950d26ef19c8fd0b": "У тебя для меня еще что-то есть, $N?"
+      },
       "summary": "Принесите голову строптивого орка Назиру Кровавому Копью в Деревню Гиблотопь.",
       "title": "Отрубленная Голова",
       "translationMetadata": {
@@ -317,6 +521,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +549,10 @@
     },
     "svSE": {
       "description": "Efter ivrigt grävande blottläggs huvudet av en manlig orch, ojämnt avhugget vid halsen. Hans läppar är frusna i ett morrande och de mörka ögonen stirrar trotsigt.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "Det här är Marg Nighteyes huvud! Som jag befarade är han död.$B$BSe på såret på hans hals! Kan ett vapen ha orsakat det trasiga snittet, eller dödades vår agent av ett odjur?$B$BDetta mysterium måste vi lösa, $N. Vi måste ta reda på om Marg dog för Alliansens hand!",
+        "8ac4950d26ef19c8fd0b": "Har du ännu en sak att rapportera, $N?"
+      },
       "summary": "Ta med det trotsiga orckhuvudet till Nazeer Bloodpike i Brackenwall Village.",
       "title": "Det avhuggna huvudet",
       "translationMetadata": {
@@ -342,6 +562,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b2167be9a629b057e5eb52c4b0d72a8913b563622a30c6cf03a9fd6aff386fca"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +590,10 @@
     },
     "trTR": {
       "description": "Güçlü kazma hareketleri, boynundan düzensizce kesilmiş bir erkek orcun kafasını ortaya çıkarıyor. Dudakları bir hırıltıyla donmuş, kara gözleri meydan okurcasına bakıyor.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "Bu Marg Nighteye'ın başı! Korktuğum gibi ölmüş.$B$BBoynundaki yaraya bak! Bu düzensiz kesiği bir silah açmış olabilir mi, yoksa ajanımızı bir canavar mı öldürdü?$B$BBu gizemi çözmeliyiz, $N. Marg'ın Alliance'ın elinde ölüp ölmediğini öğrenmeliyiz!",
+        "8ac4950d26ef19c8fd0b": "Bildirecek başka bir meselen mi var, $N?"
+      },
       "summary": "Meydan Okuyan Orc Kafası'nı Brackenwall Köyü'ndeki Nazeer Bloodpike'a getir.",
       "title": "Kesik Baş",
       "translationMetadata": {
@@ -369,6 +603,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b2167be9a629b057e5eb52c4b0d72a8913b563622a30c6cf03a9fd6aff386fca"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +631,10 @@
     },
     "ukUA": {
       "description": "Варто було копнути трохи глибше і ви знаходите відрубану голову орка. На його обличчі застиг вищир, а в його темних очах — зухвалість.",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "Це голова Марґа Нічне Око! Як я й боявся, він мертвий.$B$BПоглянь на рану на його шиї! Чи могла зброя залишити такий рваний поріз, чи нашого агента вбив якийсь звір?$B$BМи мусимо розгадати цю таємницю, $N. Треба з'ясувати, чи загинув Марґ від рук Альянсу!",
+        "8ac4950d26ef19c8fd0b": "Маєш ще щось доповісти, $N?"
+      },
       "summary": "Принесіть голову зухвалого орка Назіру Кровоспису в селище Папорохащі.",
       "title": "Відрубана голова",
       "translationMetadata": {
@@ -397,6 +645,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "b2167be9a629b057e5eb52c4b0d72a8913b563622a30c6cf03a9fd6aff386fca"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +675,10 @@
     },
     "zhCN": {
       "description": "继续挖掘了一番之后，你找到了一颗男性兽人的头颅，脖子上有参差不齐的割痕。他的脸上还保持着发出怒吼的样子，黑色的眼睛不屈地怒视着前方。",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "这是玛格·夜眼的头!和我担心的一样，他真的死了。\n\n看他脖子上的伤口!是某种武器留下这样不整齐的割痕，还是某种野兽杀了我们的密探?\n\n我们一定要解开这个谜，$N。我们必须查出玛格是不是死在联盟的手上!\n",
+        "8ac4950d26ef19c8fd0b": "你还有别的事报告？"
+      },
       "summary": "把兽人的头颅交给蕨墙村的纳泽尔·血矛。",
       "title": "被斩下的头颅",
       "translationMetadata": {
@@ -425,6 +687,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +715,10 @@
     },
     "zhTW": {
       "description": "繼續挖掘了一番之後，你找到了一顆男性獸人的頭顱，脖子上有參差不齊的割痕。他的臉上還保持著發出怒吼的樣子，黑色的眼睛不屈地怒視著前方。",
+      "dialogue": {
+        "1f495c59963cf9b597fd": "這是瑪格.夜眼的頭!和我擔心的一樣，他真的死了。\n\n看他脖子上的傷口!是某種武器留下這樣不整齊的割痕，還是某種野獸殺了我們的密探?\n\n我們一定要解開這個謎，$N。我們必須查出瑪格是不是死在聯盟的手上!",
+        "8ac4950d26ef19c8fd0b": "你還有別的事要報告，$N?"
+      },
       "summary": "把獸人的頭顱交給蕨牆村的納澤爾·血矛。",
       "title": "被斬下的頭顱",
       "translationMetadata": {
@@ -449,6 +727,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1f495c59963cf9b597fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.8ac4950d26ef19c8fd0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

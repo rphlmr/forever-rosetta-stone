@@ -1,13 +1,46 @@
 {
   "areaId": 33,
+  "dialogueContexts": {
+    "1c40d7e32468b5904d7e": {
+      "contributionId": 86075,
+      "lineId": "q:95141:complete",
+      "npcId": 256418,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "f0394bc27ea32ffe3a6a": {
+      "contributionId": 83686,
+      "lineId": "q:95141:accept",
+      "npcId": 2464,
+      "scope": "forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Daleko na severovýchodě, za Stonardem, leží u východního pobřeží válkou zmítaná země zvaná Riverglades.\n\nMnozí se ji snažili získat, ale uspěli jen málokteří. Je tu však jeden, jehož zkušenosti z bojů s našimi nepřáteli stačily k založení malé základny jménem Rog'mar. Přes nespočet útoků stále stojí.\n\nAť je Krom'rosh jakkoli nelítostný, jeho vůle našim spojencům velmi posloužila. Jestli hledáš boj, vydej se na severovýchod a najdi tohohle našeho starého přítele.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Posílá tě Aggro'gosh? Vážím si jeho ochoty podpořit naše úsilí, ačkoli jeho obavy jsou jen jeho vlastní.\n\nPorazíme lidi I Twilight's Hammer. Pokud hledáš boj, je mnoho způsobů, jak nám můžeš posloužit ve jménu Hordy.",
+        "f0394bc27ea32ffe3a6a": "Daleko na severovýchodě, za Stonardem, leží u východního pobřeží válkou zmítaná země zvaná Riverglades.\n\nMnozí se ji snažili získat, ale uspěli jen málokteří. Je tu však jeden, jehož zkušenosti z bojů s našimi nepřáteli stačily k založení malé základny jménem Rog'mar. Přes nespočet útoků stále stojí.\n\nAť je Krom'rosh jakkoli nelítostný, jeho vůle našim spojencům velmi posloužila. Jestli hledáš boj, vydej se na severovýchod a najdi tohohle našeho starého přítele."
+      },
       "summary": "Hlas se u Krom'roshe na základně Rog'mar v Riverglades.",
       "title": "Hlas se v Rog'maru",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.8.2"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "community",
             "source": "czechForever",
             "sourceLocale": "csCZ",
@@ -32,11 +65,26 @@
     },
     "daDK": {
       "description": "Langt mod nordøst bag Stonard ligger et krigshærget land langs østkysten kendt som Riverglades.\r\n\r\nMange har forsøgt at gøre krav på disse lande, men få er lykkedes. Der er dog én, hvis erfaring med at bekæmpe vores fjender var nok til at etablere en lille udpost kendt som Rog'mar. Gennem utallige angreb består den stadig.\r\n\r\nHvor hensynsløs Krom'rosh end er, har hans vilje tjent vores allierede godt. Hvis du søger kamp, så tag nordøstpå og opsøg denne gamle ven af os.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Har Aggro'gosh sendt dig? Jeg respekterer hans vilje til at støtte vores indsats, selvom hans bekymringer er hans egne.\n\nVi vil besejre både menneskene OG Twilight's Hammer. Hvis du søger kamp, er der masser af måder, du kan tjene Horden på.",
+        "f0394bc27ea32ffe3a6a": "Langt mod nordøst bag Stonard ligger et krigshærget land langs østkysten kendt som Riverglades.\r\n\r\nMange har forsøgt at gøre krav på disse lande, men få er lykkedes. Der er dog én, hvis erfaring med at bekæmpe vores fjender var nok til at etablere en lille udpost kendt som Rog'mar. Gennem utallige angreb består den stadig.\r\n\r\nHvor hensynsløs Krom'rosh end er, har hans vilje tjent vores allierede godt. Hvis du søger kamp, så tag nordøstpå og opsøg denne gamle ven af os."
+      },
       "summary": "Meld dig hos Krom'rosh ved Rog'mar-forposten i Riverglades.",
       "title": "Meld tilbage til Rog'mar",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "e1fb13429816faf6d11bb827d8c3014bd1e9613653938c9322542717eb3a86a8"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -59,6 +107,10 @@
     },
     "deDE": {
       "description": "Weit im Norden hinter Steinard liegt ein umkämpfter Streifen Land entlang der Ostküste: Die Flusslande.\r\n\r\nViele haben versucht, das Gebiet zu erobern, mit wenig Erfolg. Es gibt allerdings jemanden, dessen Erfahrung im Kampf gegen unsere Feinde ihm erlaubt hat, einen kleinen Außenposten namens Rog'mar zu gründen. Trotz zahlloser Angriffe besteht er bis heute.\r\n\r\nKrom'rosh mag gnadenlos sein, doch seine Überzeugung war unseren Verbündeten eine große Hilfe. Wenn Ihr einen Kampf sucht, geht nach Nordosten und seht nach unserem alten Freund.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Aggro'gosh schickt Euch? Ich respektiere seine Bereitschaft, unsere Arbeit zu unterstützen, aber er macht sich grundlos Sorgen.\n\nWir werden die Menschen UND den Twilight-Hammer bezwingen. Wenn Ihr kämpfen wollt, gibt es viele Möglichkeiten, wie Ihr der Horde dienen könnt.",
+        "f0394bc27ea32ffe3a6a": "Weit im Norden hinter Steinard liegt ein umkämpfter Streifen Land entlang der Ostküste: Die Flusslande.\n\nViele haben versucht, das Gebiet zu erobern, mit wenig Erfolg. Es gibt allerdings jemanden, dessen Erfahrung im Kampf gegen unsere Feinde ihm erlaubt hat, einen kleinen Außenposten namens Rog'mar zu gründen. Trotz zahlloser Angriffe besteht er bis heute.\n\nKrom'rosh mag gnadenlos sein, doch seine Überzeugung war unseren Verbündeten eine große Hilfe. Wenn Ihr einen Kampf sucht, geht nach Nordosten und seht nach unserem alten Freund."
+      },
       "summary": "Meldet Euch bei Krom'rosh am Außenposten Rog'mar in den Flusslanden.",
       "title": "Berichtet in Rog'mar",
       "translationMetadata": {
@@ -67,6 +119,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -86,6 +150,10 @@
     },
     "enUS": {
       "description": "Far to the northeast beyond Stonard lies an embattled land along the eastern coast known as the Riverglades.\r\n\r\nMany have sought to lay claim to these lands, but few have succeeded. There is one, however, whose experience battling our enemies proved enough to settle a small outpost known as Rog'mar. Through countless attacks, it still remains.\r\n\r\nAs ruthless as Krom'rosh may be, his will has served our allies greatly. If it's battle you seek, head northeast to seek out this old friend of ours.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Aggro'gosh sent you? I respect his willingness to support our efforts, though his concerns are his alone.\n\nWe will defeat the humans AND the Twilight's Hammer. If it's battle you seek, there are plenty of ways to engage your services in the name of the Horde.",
+        "f0394bc27ea32ffe3a6a": "Far to the northeast beyond Stonard lies an embattled land along the eastern coast known as the Riverglades.\n\nMany have sought to lay claim to these lands, but few have succeeded. There is one, however, whose experience battling our enemies proved enough to settle a small outpost known as Rog'mar. Through countless attacks, it still remains.\n\nAs ruthless as Krom'rosh may be, his will has served our allies greatly. If it's battle you seek, head northeast to seek out this old friend of ours."
+      },
       "summary": "Report to Krom'rosh at the Rog'mar outpost in the Riverglades.",
       "title": "Report to Rog'mar",
       "translationMetadata": {
@@ -94,6 +162,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -111,6 +191,10 @@
     },
     "esES": {
       "description": "Muy lejos, al noreste, más allá de Rocal, se encuentra una tierra asediada a lo largo de la costa oriental a la que denominan Clarofluvial.\r\n\r\nMuchos han querido reclamarla como propia, pero pocos lo han conseguido. No obstante, hay alguien cuya experiencia en la lucha contra nuestros enemigos bastó para instalar una avanzada pequeña llamada Rog'mar, que sigue ahí tras innumerables ataques.\r\n\r\nPor implacable que sea Krom'rosh, su voluntad ha sido muy útil para nuestros aliados. Si lo que buscas es combatir, ve al noreste a buscar a este viejo amigo nuestro.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "¿Te ha enviado Aggro'gosh? Respeto que quiera ayudarnos, pero no compartimos preocupaciones.\n\nDerrotaremos a los humanos y a los del Martillo Crepuscular. Si lo que quieres es combatir, hay muchos otros modos de emplear tus servicios en nombre de la Horda.",
+        "f0394bc27ea32ffe3a6a": "Muy lejos, al noreste, más allá de Rocal, se encuentra una tierra asediada a lo largo de la costa oriental a la que denominan Clarofluvial.\n\nMuchos han querido reclamarla como propia, pero pocos lo han conseguido. No obstante, hay alguien cuya experiencia en la lucha contra nuestros enemigos bastó para instalar una avanzada pequeña llamada Rog'mar, que sigue ahí tras innumerables ataques.\n\nPor implacable que sea Krom'rosh, su voluntad ha sido muy útil para nuestros aliados. Si lo que buscas es combatir, ve al noreste a buscar a este viejo amigo nuestro."
+      },
       "summary": "Informa a Krom'rosh en la avanzada de Rog'mar, en Clarofluvial.",
       "title": "Informar en Rog'mar",
       "translationMetadata": {
@@ -119,6 +203,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -136,6 +232,10 @@
     },
     "esMX": {
       "description": "Lejos y al noreste, más allá de Rocal, se halla Claros del Río, una tierra asediada que se extiende a lo largo de la costa este.\r\n\r\nMuchos han buscado adueñarse de estas tierras, pero pocos lo han logrado. Hay alguien, sin embargo, con la suficiente experiencia en la batalla contra nuestros enemigos para establecer un pequeño puesto de avanzada conocido como Rog'mar. A pesar de haber recibido incontables ataques, aún sigue en pie.\r\n\r\nPor más despiadado que sea Krom'rosh, su voluntad ha sido de gran ayuda para nuestros aliados. Si buscas una batalla, dirígete al noreste y busca a nuestro viejo amigo.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "¿Aggro'gosh te envió? Respeto que esté dispuesto a apoyar nuestros esfuerzos, aunque sus preocupaciones son solo suyas.\n\nDerrotaremos a los humanos y al Martillo Crepuscular. Si buscas una batalla, hay muchas formas de aprovechar tus servicios en nombre de la Horda.",
+        "f0394bc27ea32ffe3a6a": "Lejos y al noreste, más allá de Rocal, se halla Claros del Río, una tierra asediada que se extiende a lo largo de la costa este.\n\nMuchos han buscado adueñarse de estas tierras, pero pocos lo han logrado. Hay alguien, sin embargo, con la suficiente experiencia en la batalla contra nuestros enemigos para establecer un pequeño puesto de avanzada conocido como Rog'mar. A pesar de haber recibido incontables ataques, aún sigue en pie.\n\nPor más despiadado que sea Krom'rosh, su voluntad ha sido de gran ayuda para nuestros aliados. Si buscas una batalla, dirígete al noreste y busca a nuestro viejo amigo."
+      },
       "summary": "Preséntate ante Krom'rosh en el puesto de avanzada de Rog'mar en Claros del Río.",
       "title": "Preséntate ante Rog'mar",
       "translationMetadata": {
@@ -144,6 +244,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -161,6 +273,10 @@
     },
     "frFR": {
       "description": "Loin au nord-est, au-delà de Pierrêche, une terre ravagée par la guerre et connue sous le nom de rives Claires s’étend le long de la côte est.\r\n\r\nNombreux sont ceux qui ont cherché à s’emparer de ces terres, mais peu ont réussi. L’un d’eux, pourtant, fort de son expérience des combats contre nos adversaires y a fondé un petit avant-poste appelé Rog’mar. Ce dernier tient toujours, malgré d’incessantes attaques.\r\n\r\nAussi téméraire que soit Krom’rosh, sa force d’âme a bien servi nos alliés. Si c’est la bataille que vous cherchez, rendez-vous au nord-est pour aller trouver notre vieil ami.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "C’est Aggro’gosh qui vous envoie ? Je respecte sa volonté de soutenir nos efforts, bien que ses inquiétudes ne concernent que lui.\n\nNous vaincrons les Humains ET le Marteau du crépuscule. Si c’est la bataille que vous cherchez, vous trouverez de nombreuses façons de proposer vos services à la Horde.",
+        "f0394bc27ea32ffe3a6a": "Loin au nord-est, au-delà de Pierrêche, une terre ravagée par la guerre et connue sous le nom de rives Claires s’étend le long de la côte est.\n\nNombreux sont ceux qui ont cherché à s’emparer de ces terres, mais peu ont réussi. L’un d’eux, pourtant, fort de son expérience des combats contre nos adversaires y a fondé un petit avant-poste appelé Rog’mar. Ce dernier tient toujours, malgré d’incessantes attaques.\n\nAussi téméraire que soit Krom’rosh, sa force d’âme a bien servi nos alliés. Si c’est la bataille que vous cherchez, rendez-vous au nord-est pour aller trouver notre vieil ami."
+      },
       "summary": "Parlez à Krom’rosh à l’avant-poste de Rog’mar, sur les rives Claires.",
       "title": "Rapport à Rog’mar",
       "translationMetadata": {
@@ -169,6 +285,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -187,11 +315,26 @@
     },
     "hrHR": {
       "description": "Daleko na sjeveroistoku iza Stonarda, duž istočne obale, nalazi se zemlja zahvaćena sukobima poznata kao Riverglades.\r\n\r\nMnogi su pokušali prisvojiti ove zemlje, ali malo ih je uspjelo. Postoji jedan, međutim, čije se iskustvo u borbi protiv naših neprijatelja pokazalo dovoljnim da osnuje malu postaju poznatu kao Rog'mar. Kroz nebrojene napade ona još opstaje.\r\n\r\nKoliko god Krom'rosh bio nemilosrdan, njegova je volja uvelike pomogla našim saveznicima. Ako tražiš bitku, kreni na sjeveroistok i potraži našeg starog prijatelja.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Šalje te Aggro'gosh? Poštujem njegovu spremnost da podrži naše napore, iako su njegove brige samo njegove.\n\nPorazit ćemo ljude I Twilight's Hammer. Ako tražiš borbu, mnogo je načina da nam poslužiš u ime Horde.",
+        "f0394bc27ea32ffe3a6a": "Daleko na sjeveroistoku iza Stonarda, duž istočne obale, nalazi se zemlja zahvaćena sukobima poznata kao Riverglades.\r\n\r\nMnogi su pokušali prisvojiti ove zemlje, ali malo ih je uspjelo. Postoji jedan, međutim, čije se iskustvo u borbi protiv naših neprijatelja pokazalo dovoljnim da osnuje malu postaju poznatu kao Rog'mar. Kroz nebrojene napade ona još opstaje.\r\n\r\nKoliko god Krom'rosh bio nemilosrdan, njegova je volja uvelike pomogla našim saveznicima. Ako tražiš bitku, kreni na sjeveroistok i potraži našeg starog prijatelja."
+      },
       "summary": "Javi se Krom'roshu u predstraži Rog'mara u Rivergladesu.",
       "title": "Javi se Rog'maru",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "e1fb13429816faf6d11bb827d8c3014bd1e9613653938c9322542717eb3a86a8"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -214,6 +357,10 @@
     },
     "itIT": {
       "description": "Molto a nord-est, oltre Stonard, lungo la costa orientale si trova una terra contesa conosciuta come Riverglades.\n\nMolti hanno cercato di rivendicare queste terre, ma pochi ci sono riusciti. C'è però qualcuno la cui esperienza nel combattere i nostri nemici è bastata a fondare un piccolo avamposto chiamato Rog'mar. Nonostante innumerevoli attacchi, resiste ancora.\n\nPer quanto Krom'rosh possa essere spietato, la sua volontà è stata di grande aiuto ai nostri alleati. Se cerchi battaglia, dirigiti a nord-est per trovare questo nostro vecchio amico.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Ti ha mandato Aggro'gosh? Rispetto la sua disponibilità a sostenere i nostri sforzi, anche se le sue preoccupazioni sono soltanto sue.\n\nSconfiggeremo gli umani E il Martello del Crepuscolo. Se cerchi battaglia, ci sono molti modi per mettere i tuoi servigi al servizio dell'Orda.",
+        "f0394bc27ea32ffe3a6a": "Lontano a nord-est, oltre Stonard, lungo la costa orientale, si trova una terra martoriata dalla guerra, conosciuta come le Riverglades.\n\nIn molti hanno cercato di rivendicare queste terre, ma pochi ci sono riusciti. C'è uno, però, la cui esperienza nel combattere i nostri nemici è bastata a fondare un piccolo avamposto chiamato Rog'mar. Nonostante innumerevoli attacchi, è ancora in piedi.\n\nPer quanto spietato possa essere Krom'rosh, la sua volontà ha servito molto bene i nostri alleati. Se cerchi battaglia, dirigiti a nord-est e cerca questo nostro vecchio amico."
+      },
       "summary": "Fai rapporto a Krom'rosh all'avamposto di Rog'mar, a Riverglades.",
       "title": "Rapporto a Rog'mar",
       "translationMetadata": {
@@ -223,6 +370,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e1fb13429816faf6d11bb827d8c3014bd1e9613653938c9322542717eb3a86a8"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -241,11 +400,25 @@
     },
     "koKR": {
       "description": "스토나드 너머 먼 북동쪽, 동부 해안을 따라가면 강물터라는 전란의 땅이 나오네.\r\n\r\n많은 이가 그 땅을 차지하려 했지만 성공한 이는 드물었지. 다만 우리 적과 싸운 경험을 바탕으로 로그마라는 작은 전초기지를 세운 자가 하나 있네. 수많은 공격 속에서도 그곳은 여전히 버티고 있다네.\r\n\r\n크롬로쉬가 아무리 무자비하다 해도, 그자의 의지는 우리 동맹에 큰 보탬이 되었네. 몸이 근질거린다면 북동쪽으로 가서 우리의 오랜 친구를 찾아보게.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "아그로고쉬가 보냈나? 그가 우리를 돕고자 하는 마음은 존중하지만, 그의 걱정은 그만의 것이네.\n\n우리는 인간과 황혼의 망치단 모두를 물리칠 걸세. 전투를 원한다면 호드의 이름으로 자네가 할 일은 얼마든지 있네.",
+        "f0394bc27ea32ffe3a6a": "스토나드 너머 먼 북동쪽, 동부 해안을 따라가면 강물터라는 전란의 땅이 나오네.\r\n\r\n많은 이가 그 땅을 차지하려 했지만 성공한 이는 드물었지. 다만 우리 적과 싸운 경험을 바탕으로 로그마라는 작은 전초기지를 세운 자가 하나 있네. 수많은 공격 속에서도 그곳은 여전히 버티고 있다네.\r\n\r\n크롬로쉬가 아무리 무자비하다 해도, 그자의 의지는 우리 동맹에 큰 보탬이 되었네. 몸이 근질거린다면 북동쪽으로 가서 우리의 오랜 친구를 찾아보게."
+      },
       "summary": "강물터 로그마 전초기지에 있는 크롬로쉬에게 보고해야 합니다.",
       "title": "로그마로 보고",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
@@ -268,11 +441,26 @@
     },
     "plPL": {
       "description": "Daleko na północnym wschodzie, za Stonard, leży targana walką kraina na wschodnim wybrzeżu zwana Riverglades.\r\n\r\nWielu próbowało zająć te ziemie, ale niewielu się udało. Jest jednak ktoś, komu doświadczenie walki z naszymi wrogami wystarczyło do założenia małego posterunku Rog'mar. Przetrwał niezliczone ataki.\r\n\r\nChoć Krom'rosh bywa bezwzględny, jego wola bardzo pomogła sojusznikom. Jeśli szukasz walki, ruszaj na północny wschód do naszego starego przyjaciela.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Aggro'gosh cię przysłał? Szanuję jego gotowość do wspierania naszych wysiłków, choć jego obawy należą wyłącznie do niego.\n\nPokonamy zarówno ludzi, JAK I Twilight's Hammer. Jeśli szukasz walki, jest wiele sposobów, by służyć Hordzie.",
+        "f0394bc27ea32ffe3a6a": "Daleko na północnym wschodzie, za Stonard, leży targana walką kraina na wschodnim wybrzeżu zwana Riverglades.\r\n\r\nWielu próbowało zająć te ziemie, ale niewielu się udało. Jest jednak ktoś, komu doświadczenie walki z naszymi wrogami wystarczyło do założenia małego posterunku Rog'mar. Przetrwał niezliczone ataki.\r\n\r\nChoć Krom'rosh bywa bezwzględny, jego wola bardzo pomogła sojusznikom. Jeśli szukasz walki, ruszaj na północny wschód do naszego starego przyjaciela."
+      },
       "summary": "Zamelduj się u Krom'rosha na posterunku Rog'mar w Riverglades.",
       "title": "Zamelduj się w Rog'mar",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "e1fb13429816faf6d11bb827d8c3014bd1e9613653938c9322542717eb3a86a8"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -295,6 +483,10 @@
     },
     "ptBR": {
       "description": "Bem ao nordeste, depois do Pedregal, tem uma terra que já foi um campo de batalha. Ela fica na costa leste que chamam de Sendas do Rio.\r\n\r\nMuitos tentaram tomar essa região, mas poucos conseguiram. Só houve um guerreiro habilidoso o suficiente para montar aquele pequeno posto avançado de Rog'mar. Apesar dos vários ataques, ele ainda está de pé.\r\n\r\nKrom'rosh é implacável e serviu aos nossos aliados muito bem. Se você quer lutar, siga a nordeste e procure esse nosso velho amigo.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Aggro'gosh enviou você? Respeito a disposição dele em apoiar nossos esforços, embora as preocupações dele sejam apenas dele.\n\nDerrotaremos os humanos E o Martelo do Crepúsculo. Se busca combate, há muitas maneiras de oferecer seus serviços em nome da Horda.",
+        "f0394bc27ea32ffe3a6a": "Bem ao nordeste, depois do Pedregal, tem uma terra que já foi um campo de batalha. Ela fica na costa leste que chamam de Sendas do Rio.\n\nMuitos tentaram tomar essa região, mas poucos conseguiram. Só houve um guerreiro habilidoso o suficiente para montar aquele pequeno posto avançado de Rog'mar. Apesar dos vários ataques, ele ainda está de pé.\n\nKrom'rosh é implacável e serviu aos nossos aliados muito bem. Se você quer lutar, siga a nordeste e procure esse nosso velho amigo."
+      },
       "summary": "Fale com Krom'rosh no posto avançado Rog'mar, nas Sendas do Rio.",
       "title": "A caminho de Rog'mar",
       "translationMetadata": {
@@ -303,6 +495,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -320,11 +523,25 @@
     },
     "ruRU": {
       "description": "Далеко на северо-востоке, за Каменором, пролегает Лесоречье – охваченные войной земли вдоль восточного побережья.\r\n\r\nМногие пытались их отвоевать, но немногим это удалось. Однако есть один воин, чей опыт в сражениях с нашим врагом дал плоды в виде небольшой заставы под названием Рог'мар. Она стоит и до сих пор, несмотря на бесчисленные нападения.\r\n\r\nКром'рош суров и безжалостен, но его решимость очень помогла нашим союзникам. Если ищешь битвы, отправляйся на северо-восток и найди нашего старого товарища.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Тебя послал Аггро'гош? Я уважаю его готовность поддержать наши усилия, хотя его опасения касаются лишь его самого.\n\nМы победим и людей, И Сумеречный Молот. Если ищешь сражений, у тебя будет немало возможностей послужить Орде.",
+        "f0394bc27ea32ffe3a6a": "Далеко на северо-востоке, за Каменором, пролегает Лесоречье – охваченные войной земли вдоль восточного побережья.\r\n\r\nМногие пытались их отвоевать, но немногим это удалось. Однако есть один воин, чей опыт в сражениях с нашим врагом дал плоды в виде небольшой заставы под названием Рог'мар. Она стоит и до сих пор, несмотря на бесчисленные нападения.\r\n\r\nКром'рош суров и безжалостен, но его решимость очень помогла нашим союзникам. Если ищешь битвы, отправляйся на северо-восток и найди нашего старого товарища."
+      },
       "summary": "Явитесь к Кром'рошу на заставу Рог'мар в Лесоречье.",
       "title": "Явка в Рог'мар",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
@@ -347,11 +564,26 @@
     },
     "svSE": {
       "description": "Långt i nordost bortom Stonard ligger ett krigshärjat land längs östkusten som kallas Riverglades.\r\n\r\nMånga har försökt göra anspråk på markerna, men få har lyckats. Det finns dock en vars erfarenhet av att bekämpa våra fiender räckte för att grunda en liten utpost som kallas Rog'mar. Trots oräkneliga angrepp står den ännu kvar.\r\n\r\nHur hänsynslös Krom'rosh än må vara har hans vilja tjänat våra allierade väl. Om det är strid du söker, bege dig nordost och sök upp vår gamle vän.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Skickade Aggro'gosh dig? Jag respekterar hans vilja att stödja våra ansträngningar, även om hans farhågor är hans egna.\n\nVi ska besegra både människorna OCH Twilight's Hammer. Om det är strid du söker finns det gott om sätt att tjäna Horden.",
+        "f0394bc27ea32ffe3a6a": "Långt i nordost bortom Stonard ligger ett krigshärjat land längs östkusten som kallas Riverglades.\r\n\r\nMånga har försökt göra anspråk på markerna, men få har lyckats. Det finns dock en vars erfarenhet av att bekämpa våra fiender räckte för att grunda en liten utpost som kallas Rog'mar. Trots oräkneliga angrepp står den ännu kvar.\r\n\r\nHur hänsynslös Krom'rosh än må vara har hans vilja tjänat våra allierade väl. Om det är strid du söker, bege dig nordost och sök upp vår gamle vän."
+      },
       "summary": "Anmäl dig hos Krom'rosh vid Rog'mars utpost i Riverglades.",
       "title": "Rapportera till Rog'mar",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "e1fb13429816faf6d11bb827d8c3014bd1e9613653938c9322542717eb3a86a8"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -374,11 +606,26 @@
     },
     "trTR": {
       "description": "Çok kuzeydoğuda, Stonard'ın ötesinde, doğu kıyısı boyunca uzanan ve Riverglades olarak bilinen, savaşlarla boğuşan bir bölge vardır.\r\n\r\nPek çok kişi bu toprakları ele geçirmeye çalıştı ama çok azı başardı. Yine de düşmanlarımızla savaşırken edindiği tecrübe sayesinde Rog'mar adı verilen küçük bir karakol kurabilmiş biri var. Sayısız saldırıya rağmen karakol hâlâ ayakta.\r\n\r\nKrom'rosh ne kadar acımasız olursa olsun, iradesi müttefiklerimize büyük hizmet etti. Aradığın savaşsa kuzeydoğuya git ve bu eski dostumuzu bul.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Seni Aggro'gosh mu gönderdi? Çabalarımızı destekleme isteğine saygı duyuyorum, ancak kaygıları yalnızca kendisini ilgilendirir.\n\nHem insanları HEM DE Twilight's Hammer'ı yeneceğiz. Savaş arıyorsan Horde adına hizmet edebileceğin pek çok yol var.",
+        "f0394bc27ea32ffe3a6a": "Çok kuzeydoğuda, Stonard'ın ötesinde, doğu kıyısı boyunca uzanan ve Riverglades olarak bilinen, savaşlarla boğuşan bir bölge vardır.\r\n\r\nPek çok kişi bu toprakları ele geçirmeye çalıştı ama çok azı başardı. Yine de düşmanlarımızla savaşırken edindiği tecrübe sayesinde Rog'mar adı verilen küçük bir karakol kurabilmiş biri var. Sayısız saldırıya rağmen karakol hâlâ ayakta.\r\n\r\nKrom'rosh ne kadar acımasız olursa olsun, iradesi müttefiklerimize büyük hizmet etti. Aradığın savaşsa kuzeydoğuya git ve bu eski dostumuzu bul."
+      },
       "summary": "Riverglades'teki Rog'mar karakolunda Krom'rosh'a rapor ver.",
       "title": "Rog'mar'a Rapor Ver",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "e1fb13429816faf6d11bb827d8c3014bd1e9613653938c9322542717eb3a86a8"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -401,11 +648,26 @@
     },
     "ukUA": {
       "description": "Далеко на північному сході, за Каміннардом, уздовж східного узбережжя лежить охоплений боями край, відомий як Річкові галявини.\r\n\r\nБагато хто намагався заволодіти цими землями, але мало кому вдалося. Однак є один, чий досвід боїв із ворогами дозволив заснувати невелику заставу Роґ'мар. Вона витримала незліченні напади й досі стоїть.\r\n\r\nХоч яким безжальним є Кром'рош, його воля дуже прислужилася нашим союзникам. Якщо шукаєш бою, вирушай на північний схід до цього нашого старого друга.",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "Тебе послав Аггро'ґош? Я поважаю його готовність підтримати наші зусилля, хоча його побоювання стосуються лише його самого.\n\nМи переможемо і людей, І Сутінковий Молот. Якщо шукаєш битви, ти можеш послужити Орді багатьма способами.",
+        "f0394bc27ea32ffe3a6a": "Далеко на північному сході, за Каміннардом, уздовж східного узбережжя лежить охоплений боями край, відомий як Річкові галявини.\r\n\r\nБагато хто намагався заволодіти цими землями, але мало кому вдалося. Однак є один, чий досвід боїв із ворогами дозволив заснувати невелику заставу Роґ'мар. Вона витримала незліченні напади й досі стоїть.\r\n\r\nХоч яким безжальним є Кром'рош, його воля дуже прислужилася нашим союзникам. Якщо шукаєш бою, вирушай на північний схід до цього нашого старого друга."
+      },
       "summary": "Доповістіть Krom'rosh на заставі Роґ'мар у Поріччі.",
       "title": "Доповідь до Роґ'мара",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "e1fb13429816faf6d11bb827d8c3014bd1e9613653938c9322542717eb3a86a8"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -428,6 +690,10 @@
     },
     "zhCN": {
       "description": "在斯通纳德东北方很远的地方，沿着东海岸有一片饱受战火蹂躏的土地，名为河林。\r\n\r\n许多人都曾试图征服这片土地，但鲜有成功者。然而，有这么一个人，他凭借着与敌人厮杀的丰富经验，硬是建立起了一座名为洛格玛的小型哨所。历经无数次袭击，这座哨所依然屹立不倒。\r\n\r\n尽管克罗姆罗什冷酷无情，但他的钢铁意志为我们的盟友提供了极大的助力。如果你渴望战斗，就向东北方前进，去见见我们这位老朋友吧。",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "指挥官阿格罗戈什派你来的？我敬佩他支援我们行动的意愿，不过他的担忧只是他自己的看法。\n\n我们会击败人类，也会击败暮光之锤。如果你渴望战斗，这里有的是机会让你以部落之名效力。",
+        "f0394bc27ea32ffe3a6a": "在斯通纳德东北方很远的地方，沿着东海岸有一片饱受战火蹂躏的土地，名为河林。\n\n许多人都曾试图征服这片土地，但鲜有成功者。然而，有这么一个人，他凭借着与敌人厮杀的丰富经验，硬是建立起了一座名为洛格玛的小型哨所。历经无数次袭击，这座哨所依然屹立不倒。\n\n尽管克罗姆罗什冷酷无情，但他的钢铁意志为我们的盟友提供了极大的助力。如果你渴望战斗，就向东北方前进，去见见我们这位老朋友吧。"
+      },
       "summary": "向河林洛格玛哨所的克罗姆罗什复命。",
       "title": "向洛格玛复命",
       "translationMetadata": {
@@ -436,6 +702,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -455,11 +733,25 @@
     },
     "zhTW": {
       "description": "在距離斯通納德十分遙遠的東北方，有片戰火紛飛的地域處在東部沿岸上，名叫大河林地。\r\n\r\n許多勢力都想佔領這片土地，但極少得償所願。然而，有一支勢力與我們的敵人對戰的經驗十分豐富，足以打下一小塊立足之地，名為羅格瑪。經歷無數的攻擊，它仍屹立不搖。\r\n\r\n儘管克隆羅許性情殘暴，但他的堅定意志為我們的盟友帶來莫大幫助。如果你追求戰鬥的刺激，可以前往東北方，去找我們的這位老朋友。",
+      "dialogue": {
+        "1c40d7e32468b5904d7e": "是阿格羅戈什派你來的？我尊重他願意支持我們的努力，雖然他的顧慮只屬於他自己。\n\n我們會打敗人類和暮光之錘。如果你渴望戰鬥，有很多方式可以讓你為部落效力。",
+        "f0394bc27ea32ffe3a6a": "在距離斯通納德十分遙遠的東北方，有片戰火紛飛的地域處在東部沿岸上，名叫大河林地。\r\n\r\n許多勢力都想佔領這片土地，但極少得償所願。然而，有一支勢力與我們的敵人對戰的經驗十分豐富，足以打下一小塊立足之地，名為羅格瑪。經歷無數的攻擊，它仍屹立不搖。\r\n\r\n儘管克隆羅許性情殘暴，但他的堅定意志為我們的盟友帶來莫大幫助。如果你追求戰鬥的刺激，可以前往東北方，去找我們的這位老朋友。"
+      },
       "summary": "到大河林地的羅格瑪哨站向克隆羅許報到。",
       "title": "到羅格瑪報到",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "dialogue.1c40d7e32468b5904d7e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f0394bc27ea32ffe3a6a": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"

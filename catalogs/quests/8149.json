@@ -1,7 +1,35 @@
 {
+  "dialogueContexts": {
+    "12cd387a91fce2698170": {
+      "lineId": "q:8149:accept",
+      "npcId": 15011,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "954fff0938ab536db518": {
+      "lineId": "q:8149:complete",
+      "npcId": 15011,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "f2b383417f25d786053a": {
+      "lineId": "q:8149:progress",
+      "npcId": 15011,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Během slavnosti Harvest Festival vzdáváme díky hrdinům za oběti – v některých případech oběti nejvyšší –, které přinesli v náš prospěch. Aliance uznává mnoho hrdinů, ale nikdo nemá tragičtější příběh než Uther Lightbringer.\n\nPomoz nám Uthera uctít tím, že doneseš tento dar k jeho hrobce ve Western Plaguelands. Polož ho k jeho soše a pak se vrať ke mně. Budu tu jen do konce festivalu, takže neotálej a vzdej Utherovi hold.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Během svátku sklizně v Azerothu děkujeme hrdinům za oběti, které za nás přinesli, v některých případech i za oběť nejvyšší. Aliance uznává mnoho hrdinů, ale žádný nemá tragičtější příběh než Uther Lightbringer.$B$BPomoz nám uctít Uthera tím, že odneseš tuto obětinu k jeho hrobce v Západních morových zemích. Polož ji k jeho soše a pak se ke mně vrať. Budu tu jen do konce svátku, proto se vzdáním pocty neotálej.",
+        "954fff0938ab536db518": "Uther byl hrdinou mezi hrdiny. Nedokážu si ani představit jeho utrpení, když Arthas, jeho nejlepší žák a někdo, koho Uther miloval jako vlastního syna, zradil celé lidstvo. Přesto se mu postavil a pokusil se ho zastavit, a proto na něj budeme navždy vzpomínat jako na pravého paladina. Bojoval až do konce a myslel jen na ty, které mohl zachránit.$B$BDěkuji, $N. Dnešní pocta velkému hrdinovi uctila jeho ducha i ducha svátku sklizně.",
+        "f2b383417f25d786053a": "Podařilo se ti dojít k Utherově hrobce a položit tam obětinu?$B$BPro méně zkušené dobrodruhy může být cesta nebezpečná; relativně bezpečnější je cestovat na sever podél řeky, která protéká Hillsbradem do Morových zemí. Vytéká z jezera sousedícího se Sorrow Hill; vydej se západně do kopců a vyhni se nedaleké hrobce... té, která se hemží Pohromou."
+      },
       "summary": "Vydej se k Uther's Tomb ve Western Plaguelands, použij Uther's Tribute u jeho sochy a pak se vrať k Wagneru Hammerstrikeovi před Ironforge, než skončí Harvest Festival.",
       "title": "Pocta hrdinovi",
       "translationMetadata": {
@@ -11,6 +39,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -31,6 +74,11 @@
     },
     "daDK": {
       "description": "Under Azeroths høstfest takker vi helte for de ofre, de har bragt på vores vegne, i nogle tilfælde det største offer. Alliancen anerkender mange helte, men ingen har en mere tragisk fortælling end Uther Lightbringer.\n\nHjælp os med at ære Uther ved at bringe denne ofring til hans grav i Western Plaguelands. Læg den ved hans statue og vend så tilbage til mig. Jeg er her kun til slutningen af festen, så spild ingen tid med at bringe Uther din hyldest.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Under Azeroths høstfest takker vi helte for de ofre, de har bragt for os, i nogle tilfælde det ultimative offer. Alliancen anerkender mange helte, men ingen har en mere tragisk fortælling end Uther Lightbringer.$B$BHjælp os med at ære Uther ved at bringe dette offer til hans grav i Western Plaguelands. Læg det ved hans statue og vend derefter tilbage til mig. Jeg er her kun til festivalens afslutning, så tøv ikke med at bringe Uther din hyldest.",
+        "954fff0938ab536db518": "Uther var en helt blandt helte. Jeg kan knap forestille mig hans smerte, da Arthas, hans bedste elev og en, Uther elskede som sin egen søn, forrådte hele menneskeheden. Alligevel rejste han sig for at standse Arthas, og derfor vil han altid blive husket som en sand paladin. Han kæmpede til det sidste og tænkte kun på dem, han kunne redde.$B$BTak, $N. Du har i dag hyldet en stor helt og æret hans ånd og høstfestens ånd.",
+        "f2b383417f25d786053a": "Har du rejst til Uthers grav og lagt hyldesten der?$B$BTuren kan være farlig for mindre erfarne eventyrere; en forholdsvis sikrere vej er at rejse nordpå langs floden, der løber gennem Hillsbrad til Plaguelands. Den løber fra en sø ved siden af Sorrow Hill; rejs vestpå gennem bakkerne og hold dig fra den nærliggende grav... den, der vrimler med Svøben."
+      },
       "summary": "Rejs til Uther's Tomb i Western Plaguelands, og brug Uther's Tribute ved hans statue. Vend derefter tilbage til Wagner Hammerstrike uden for Ironforge, inden Harvest Festival er forbi.",
       "title": "Ær en helt",
       "translationMetadata": {
@@ -40,6 +88,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3edfb576a95663b3d3651eb73a877e35b6313ee9e7f5dc7dfd38524035aa1c92"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -58,6 +121,11 @@
     },
     "deDE": {
       "description": "Während des Erntedankfests in Azeroth danken wir unseren Helden für all die Opfer, die sie in unserem Namen dargebracht haben. Für einige war es gar das höchste aller Opfer, ihr Leben. Die Allianz kennt viele Helden, doch keine Heldensage und kein Lebensweg ist so tragisch, wie der von Uther Lightbringer.\n\nHelft uns Uther zu ehren, indem Ihr diese Opfergabe zu seinem Grabmal in den westlichen Pestländern bringt. Legt sie an seiner Statue nieder und kehrt zu mir zurück. Lasst Euch nicht zuviel Zeit, denn ich bin nur bis zum Ende des Erntedankfests hier.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Während des Erntedankfests in Azeroth danken wir unseren Helden für all die Opfer, die sie in unserem Namen dargebracht haben. Für einige war es gar das höchste aller Opfer, ihr Leben. Die Allianz kennt viele Helden, doch keine Heldensage und kein Lebensweg ist so tragisch, wie der von Uther Lightbringer.\n\nHelft uns Uther zu ehren, indem Ihr diese Opfergabe zu seinem Grabmal in den westlichen Pestländern bringt. Legt sie an seiner Statue nieder und kehrt zu mir zurück. Lasst Euch nicht zuviel Zeit, denn ich bin nur bis zum Ende des Erntedankfests hier.",
+        "954fff0938ab536db518": "Uther war selbst unter Helden ein Held. Ich vermag es mir kaum vorstellen, welche Qualen er erlitten hat, als Arthas, Uthers bester Schüler und von ihm geliebt wie seinen eigenen Sohn, Verrat an ihm und der ganzen Menschheit beging. Dennoch besaß er die Stärke sich zu erheben und zu versuchen, Arthas aufzuhalten. Für diese Selbstlosigkeit wird er uns immer als wahrer Paladin in Erinnerung bleiben. Er kämpfte bis zum bitteren Ende und dachte dabei nur an all diejenigen, die er retten würde. \n \n Habt Dank, $N. Heute habt Ihr einem großen Helden Tribut gezollt und so seinem Geist und dem Geist des Erntedankfests alle Ehre erwiesen. ",
+        "f2b383417f25d786053a": "Seid Ihr zu Uthers Grabmal gereist und habt den Tribut dort abgelegt?\n \n Ich weiß, dass die Reise dorthin für weniger erfahrene Abenteuerer recht gefährlich sein kann. Um relativ sicher dorthin zu gelangen, reist nördlich von dem Fluss, welcher durch Hillsbrad in die Pestländer fließt. Er entspringt dort einem See, der an Sorrow Hill grenzt. Reist nach Westen durch die Hügel und seid in der Nähe des Grabmals vorsichtig. . . es ist von der Geißel verseucht. "
+      },
       "summary": "Reist zu Uthers Grabmal in den westlichen Pestländern und benutzt Uthers Tribut an seiner Statue. Kehrt zu Wagner Hammerstrike außerhalb von Ironforge zurück, bevor das Erntedankfest endet.",
       "title": "Die Ehrung eines Helden",
       "translationMetadata": {
@@ -66,6 +134,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +168,11 @@
     },
     "enUS": {
       "description": "During the Harvest Festival of Azeroth, we give thanks to heroes for the sacrifices - in some cases ultimate sacrifices - they have given on our behalf.  The Alliance acknowledges many heroes, but none weave a more tragic tale than that of Uther Lightbringer.\n\nHelp us honor Uther by taking this offering to his tomb in the Western Plaguelands.  Place it at his statue, and then return to me.  I'll only be here through the end of the festival, so waste no time in giving Uther his tribute.",
+      "dialogue": {
+        "12cd387a91fce2698170": "During the Harvest Festival of Azeroth, we give thanks to heroes for the sacrifices - in some cases ultimate sacrifices - they have given on our behalf.  The Alliance acknowledges many heroes, but none weave a more tragic tale than that of Uther Lightbringer.$B$BHelp us honor Uther by taking this offering to his tomb in the Western Plaguelands.  Place it at his statue, and then return to me.  I'll only be here through the end of the festival, so waste no time in giving Uther his tribute.",
+        "954fff0938ab536db518": "He was a hero among heroes, Uther was.  I can't even begin to imagine the anguish of what he felt when Arthas - his greatest student and someone whom Uther loved like his own son - betrayed all of humanity.  Still, he rose to try and stop Arthas, and for that he will be forever remembered as a true paladin.  His fight was to the end, thinking only of those he might save.$B$BThank you, $N.  You've paid tribute to a great hero today, honoring his spirit and the spirit of the Harvest Festival.",
+        "f2b383417f25d786053a": "Have you made the journey to Uther's Tomb and placed the tribute there?$B$BIt can be a dangerous trip for less experienced adventurers; a safer way of traveling there, relatively speaking, may be to travel north from the river that runs through Hillsbrad into the Plaguelands.  It flows from a lake that is adjacent to Sorrow Hill; travel west up through the hills, steering clear of the adjacent tomb... one that is infested with the Scourge."
+      },
       "summary": "Travel to Uther's Tomb in Western Plaguelands and use Uther's Tribute at his statue, and then return to Wagner Hammerstrike outside Ironforge before the Harvest Festival is over.",
       "title": "Honoring a Hero",
       "translationMetadata": {
@@ -90,6 +181,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +216,11 @@
     },
     "esES": {
       "description": "Durante el Festival de la Cosecha de Azeroth, agradecemos a los héroes todos los sacrificios, a veces máximos, que han hecho por nosotros. La Alianza muestra su gratitud y reconocimiento a muchos héroes, pero ninguno tiene una historia más trágica que Uther el Iluminado.\n\nAyúdanos a honrar a Uther llevando esta ofrenda a su tumba, en las Tierras de la Peste del Oeste. Colócala en su estatua y luego vuelve a verme. Solo estaré aquí hasta que termine el festival, así que no pierdas tiempo en darle a Uther su tributo.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Durante el Festival de la Cosecha de Azeroth, agradecemos a los héroes todos los sacrificios, a veces máximos, que han hecho por nosotros. La Alianza muestra su gratitud y reconocimiento a muchos héroes, pero ninguno tiene una historia más trágica que Uther el Iluminado.\n\nAyúdanos a honrar a Uther llevando esta ofrenda a su tumba, en las Tierras de la Peste del Oeste. Colócala en su estatua y luego vuelve a verme. Solo estaré aquí hasta que termine el festival, así que no pierdas tiempo en darle a Uther su tributo.",
+        "954fff0938ab536db518": "Era un héroe de héroes, el gran Uther. No puedo ni imaginar la angustia que sintió cuando Arthas, su mejor alumno y alguien a quien Uther amaba como a su propio hijo, traicionó toda la humanidad. Aun así intentó detener a Arthas y por ello siempre será recordado como un auténtico paladín. Luchó hasta el final, pensando solo en aquellos a los que podría salvar.\n\nGracias, $n. Hoy has prestado tributo a un gran héroe, honrando su espíritu y el espíritu del Festival de la Cosecha.",
+        "f2b383417f25d786053a": "¿Has hecho el viaje a la Tumba de Uther y colocado el tributo allí?\n\n Puede ser un viaje peligroso para aventureros menos experimentados;  una forma más segura de viajar allí, en términos relativos, puede ser viajar hacia el norte desde el río que atraviesa Trabalomas hasta las Tierras de la Peste.  Fluye de un lago que se encuentra junto a Sorrow Hill;  viaja hacia el oeste a través de las colinas, alejándote de la tumba adyacente... una que está infestada por la Plaga."
+      },
       "summary": "Viaja a la Tumba de Uther en las Tierras de la peste del Oeste y utiliza el tributo a Uther en su estatua. Cuando hayas terminado, y antes de que termine el Festival de la Cosecha, regresa con Wagner Mazas a las puertas de Forjaz.",
       "title": "En honor a un héroe",
       "translationMetadata": {
@@ -115,6 +229,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +263,11 @@
     },
     "esMX": {
       "description": "Durante el Festival de la Cosecha de Azeroth, agradecemos a los héroes todos los sacrificios, a veces máximos, que han hecho por nosotros. La Alianza muestra su gratitud y reconocimiento a muchos héroes, pero ninguno tiene una historia más trágica que Uther el Iluminado.\n\nAyúdanos a honrar a Uther llevando esta ofrenda a su tumba, en las Tierras de la Peste del Oeste. Colócala en su estatua y luego vuelve a verme. Solo estaré aquí hasta que termine el festival, así que no pierdas tiempo en darle a Uther su tributo.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Durante el Festival de la Cosecha de Azeroth, agradecemos a los héroes todos los sacrificios, a veces máximos, que han hecho por nosotros. La Alianza muestra su gratitud y reconocimiento a muchos héroes, pero ninguno tiene una historia más trágica que Uther el Iluminado.\n\nAyúdanos a honrar a Uther llevando esta ofrenda a su tumba, en las Tierras de la Peste del Oeste. Colócala en su estatua y luego vuelve a verme. Solo estaré aquí hasta que termine el festival, así que no pierdas tiempo en darle a Uther su tributo.",
+        "954fff0938ab536db518": "Era un héroe de héroes, el gran Uther. No puedo ni imaginar la angustia que sintió cuando Arthas, su mejor alumno y alguien a quien Uther amaba como a su propio hijo, traicionó a toda la humanidad. Aun así intentó detener a Arthas y por ello siempre será recordado como un auténtico paladín. Luchó hasta el final, pensando solo en aquellos a los que podría salvar.\n\nGracias, $n. Hoy has prestado tributo a un gran héroe, honrando su espíritu y el espíritu del Festival de la Cosecha.",
+        "f2b383417f25d786053a": "¿Has hecho el viaje a la tumba de Uther y has colocado el tributo allí?\n\nPuede ser un viaje peligroso para los aventureros menos experimentados; una forma más segura de viajar allí, relativamente hablando, puede ser viajar hacia el norte desde el río que atraviesa Trabalomas hasta las Tierras de la Peste. Fluye de un lago junto a las Colinas de la Tristeza; viaja hacia el oeste a través de las colinas, evitando la tumba adyacente... una que está infestada con la Plaga."
+      },
       "summary": "Viaja a la Tumba de Uther en las Tierras de la Peste del Oeste y utiliza el tributo a Uther en su estatua. Cuando hayas terminado, y antes de que termine el Festival de la Cosecha, regresa con Wagner Mazas a las puertas de Forjaz.",
       "title": "En honor a un héroe",
       "translationMetadata": {
@@ -139,6 +276,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +310,11 @@
     },
     "frFR": {
       "description": "Au cours de la Fête des moissons d’Azeroth, nous rendons grâces aux héros pour les sacrifices accomplis pour nous – y compris, dans certains cas, celui de leur vie. L’Alliance se souvient de nombreux héros, mais aucune histoire n’est plus tragique que celle d’Uther le Porteur de Lumière.\n\nAidez-nous à rendre hommage à Uther en allant déposer cette offrande sur sa tombe, dans les Maleterres de l’ouest. Placez-la aux pieds de sa statue, puis revenez me voir. Je ne serai là que jusqu’à la fin de la fête, alors ne perdez pas de temps pour rendre hommage à Uther !",
+      "dialogue": {
+        "12cd387a91fce2698170": "Au cours de la Fête des moissons d’Azeroth, nous rendons grâces aux héros pour les sacrifices accomplis pour nous – y compris, dans certains cas, celui de leur vie. L’Alliance se souvient de nombreux héros, mais aucune histoire n’est plus tragique que celle d’Uther le Porteur de Lumière.\n\nAidez-nous à rendre hommage à Uther en allant déposer cette offrande sur sa tombe, dans les Maleterres de l’ouest. Placez-la aux pieds de sa statue, puis revenez me voir. Je ne serai là que jusqu’à la fin de la fête, alors ne perdez pas de temps pour rendre hommage à Uther !",
+        "954fff0938ab536db518": "Uther… un héros parmi les héros. Je n’ose même pas imaginer la souffrance qu’il a ressenti lorsqu’il a vu Arthas, le meilleur de ses disciples, celui qu’il aimait comme un fils, trahir toute l’humanité. Mais il s’est dressé contre Arthas. Il a tenté de l’arrêter. Pour cela, nous nous souviendrons de lui à tout jamais comme d’un authentique paladin. Il s’est battu jusqu’au bout, ne pensant qu’à ceux qu’il pouvait sauver. \n \n Merci, $N. Vous avez rendu hommage à un grand héros. Vous avez fait honneur à son esprit, et à l’esprit de la Fête des moissons. ",
+        "f2b383417f25d786053a": "Avez-vous fait le voyage jusqu'à la tombe d'Uther et y avez-vous déposé le tribut ?\n\nCe voyage peut s'avérer dangereux pour les aventuriers les moins expérimentés ; un moyen plus sûr de s'y rendre, relativement parlant, serait de voyager vers le nord depuis la rivière qui traverse Hillsbrad jusqu'aux Plaguelands.  Elle s'écoule d'un lac adjacent à la colline du chagrin ; voyagez vers l'ouest à travers les collines, en évitant la tombe adjacente... qui est infestée par le Fléau."
+      },
       "summary": "Rendez-vous au tombeau d’Uther dans les Maleterres de l’ouest, puis utilisez Offrande à Uther sur sa statue, avant de retourner voir Wagner Hammerstrike à l’extérieur d’Ironforge, avant la fin de la Fête des moissons.",
       "title": "En l'honneur d'un héros",
       "translationMetadata": {
@@ -163,6 +323,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +357,11 @@
     },
     "hrHR": {
       "description": "Tijekom Festivala žetve u Azerothu zahvaljujemo junacima na žrtvama koje su podnijeli za nas, u nekim slučajevima i najvećim žrtvama. Savez priznaje mnoge junake, ali nijedan nema tragičniju priču od Uthera Lightbringera.\n\nPomozi nam odati počast Utheru tako da odneseš ovaj dar do njegove grobnice u Western Plaguelandsu. Postavi ga kod njegova kipa, a zatim mi se vrati. Ovdje ću biti samo do kraja festivala, zato ne gubi vrijeme s odavanjem počasti Utheru.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Tijekom Azerothove svetkovine žetve zahvaljujemo junacima na žrtvama koje su podnijeli za nas, u nekim slučajevima i najvećoj žrtvi. Alijansa priznaje mnoge junake, ali nijedna priča nije tragičnija od one o Utheru Lightbringeru.$B$BPomozi nam odati počast Utheru tako što ćeš ovaj prinos odnijeti na njegovu grobnicu u Zapadnim okuženim zemljama. Položi ga uz njegov kip i vrati mi se. Ovdje ću biti samo do kraja svetkovine, zato ne gubi vrijeme.",
+        "954fff0938ab536db518": "Uther je bio junak među junacima. Ne mogu ni zamisliti njegovu bol kad je Arthas, njegov najveći učenik i netko koga je volio kao vlastitog sina, izdao cijelo čovječanstvo. Ipak je ustao pokušati zaustaviti Arthasa i zato će zauvijek ostati zapamćen kao pravi paladin. Borio se do kraja, misleći samo na one koje je mogao spasiti.$B$BHvala ti, $N. Danas si odao počast velikom junaku, njegovu duhu i duhu svetkovine žetve.",
+        "f2b383417f25d786053a": "Je li ti pošlo za rukom otići do Utherove grobnice i ondje položiti prinos?$B$BPut može biti opasan za manje iskusne pustolove; razmjerno sigurniji put vodi na sjever uz rijeku koja teče kroz Hillsbrad u Okužene zemlje. Ona izvire iz jezera uz Sorrow Hill; kreni zapadno kroz brda i izbjegni obližnju grobnicu... onu kojom vrvi Pošast."
+      },
       "summary": "Otputuj do Utherove grobnice u Western Plaguelandsu i upotrijebi Uther's Tribute kod njegova kipa, a zatim se vrati Wagneru Hammerstrikeu izvan Ironforgea prije završetka Festivala žetve.",
       "title": "Odavanje počasti junaku",
       "translationMetadata": {
@@ -188,6 +371,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3edfb576a95663b3d3651eb73a877e35b6313ee9e7f5dc7dfd38524035aa1c92"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +404,11 @@
     },
     "itIT": {
       "description": "Nel corso della Sagra del Raccolto di Azeroth, ringraziamo gli eroi per i loro sacrifici... che, a volte, arrivano fino all'estremo. Nei racconti dell'Alleanza vengono narrate le gesta di molti eroi, ma nessuna storia è tragica quanto quella di Uther l'Araldo della Luce.\n\nAiutaci a onorare Uther portando quest'offerta alla sua tomba nelle Terre Infette Occidentali. Lasciala davanti alla sua statua e torna da me. Rimarrò qui solo fino alla fine della Sagra, quindi non perdere tempo.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Durante l'Harvest Festival di Azeroth rendiamo grazie agli eroi per i sacrifici — in alcuni casi il sacrificio supremo — che hanno fatto per noi. L'Alleanza riconosce molti eroi, ma nessuno ha una storia più tragica di quella di Uther Lightbringer.\n\nAiutaci a onorare Uther portando questa offerta alla sua tomba, nelle Western Plaguelands. Mettila presso la sua statua, poi torna da me. Resterò qui solo fino alla fine della festa, quindi sbrigati a rendere omaggio a Uther.",
+        "954fff0938ab536db518": "Era un eroe tra gli eroi, Uther. Non riesco nemmeno a immaginare l'angoscia che provò quando Arthas — il suo allievo migliore, che Uther amava come un figlio — tradì tutta l'umanità. Eppure si levò per cercare di fermare Arthas, e per questo sarà ricordato per sempre come un vero paladino. Combatté fino alla fine, pensando solo a coloro che poteva salvare.\n\nGrazie, $N. Oggi hai reso omaggio a un grande eroe, onorando il suo spirito e lo spirito dell'Harvest Festival.",
+        "f2b383417f25d786053a": "Hai fatto il viaggio fino al Sepolcro di Uther e hai lasciato lì il tributo?\n\nPuò essere un viaggio pericoloso per gli avventurieri meno esperti; un modo relativamente più sicuro per arrivarci potrebbe essere partire dal fiume che attraversa Hillsbrad e andare verso nord, nelle Plaguelands. Il fiume nasce da un lago vicino alla Collina del Cordoglio; va' verso ovest su per le colline, tenendoti lontano dalla tomba vicina... che è infestata dal Flagello."
+      },
       "summary": "Raggiungi la tomba di Uther nelle Western Plaguelands e usa l'omaggio a Uther presso la sua statua, poi torna da Wagner Hammerstrike fuori da Ironforge prima che finisca la Festa del Raccolto.",
       "title": "Onore all'eroe",
       "translationMetadata": {
@@ -214,6 +417,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -231,6 +452,11 @@
     },
     "koKR": {
       "description": "우리는 아제로스의 추수절 기간 동안 우리를 대신해 희생을 감수한 영웅들에게 감사를 표하고 있습니다. 그러한 영웅 중엔 최후의 희생까지 마다하지 않은 경우도 있답니다. 얼라이언스에서 인정하는 영웅들은 많이 있지만, 빛의 수호자 우서 경의 일화만큼 비극적인 건 없지요.\n\n우서 경께 경의를 표할 수 있도록 우리를 도와 서부 역병지대에 있는 그분의 무덤으로 이 공물을 가져가 주십시오. 그분의 석상에 공물을 바친 다음 내게 돌아오십시오. 저는 추수절이 끝날 때까지만 이곳에 머무를 예정이니, 어서 우서 경께 공물을 바치고 돌아와 주시기 바랍니다.",
+      "dialogue": {
+        "12cd387a91fce2698170": "우리는 아제로스의 추수절 기간 동안 우리를 대신해 희생을 감수한 영웅들에게 감사를 표하고 있습니다. 그러한 영웅 중엔 최후의 희생까지 마다하지 않은 경우도 있답니다. 얼라이언스에서 인정하는 영웅들은 많이 있지만, 빛의 수호자 우서 경의 일화만큼 비극적인 건 없지요.\n\n우서 경께 경의를 표할 수 있도록 우리를 도와 서부 역병지대에 있는 그분의 무덤으로 이 공물을 가져가 주십시오. 그분의 석상에 공물을 바친 다음 내게 돌아오십시오. 저는 추수절이 끝날 때까지만 이곳에 머무를 예정이니, 어서 우서 경께 공물을 바치고 돌아와 주시기 바랍니다.",
+        "954fff0938ab536db518": "우서 경께서는 영웅 중의 영웅이셨습니다. 그분의 가장 훌륭한 제자이자 자신의 친아들처럼 아꼈던 아서스가 인간 전체를 배신했을 때 우서 경께서 어떤 고통을 느꼈을지 상상도 할 수 없답니다. 그럼에도 그분은 아서스를 막기 위해 일어나 그를 저지하셨고, 바로 그러한 행동이 그분을 영원히 진정한 성기사로 추앙을 받게 할 원동력이지요. 우서 경께서는 자신이 구하게 될 이들의 목숨만을 생각하며 최후까지 싸우셨지요...\n\n고맙습니다. 당신은 오늘 위대한 영웅에게 공물을 바침으로써 그의 영혼과 추수절의 정신을 기렸습니다.",
+        "f2b383417f25d786053a": "우서의 무덤에 가서 공물을 바치셨나요?$B$B경험이 적은 모험가에게는 위험한 여정일 수 있습니다. 비교적 안전한 길은 힐스브래드를 지나는 강을 따라 북쪽 역병지대로 가는 것입니다. 강은 슬픔의 언덕 옆 호수에서 시작됩니다. 서쪽 언덕을 지나가되 근처 무덤은 피하세요... 스컬지가 들끓는 곳입니다."
+      },
       "summary": "서부 역병지대에 있는 우서 경의 무덤으로 가서 그의 석상에 우서의 공물을 사용한 후, 추수절이 끝나기 전에 아이언포지 외곽에 있는 와그너 해머스트라이크에게 돌아가야 합니다.",
       "title": "영웅 기념",
       "translationMetadata": {
@@ -239,6 +465,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -255,6 +498,11 @@
     },
     "plPL": {
       "description": "Podczas Święta Plonów Azeroth dziękujemy bohaterom za poświęcenia, których dokonali dla nas, czasem płacąc najwyższą cenę. Przymierze uznaje wielu bohaterów, ale los żadnego nie jest bardziej tragiczny niż historia Uthera Lightbringera.\n\nPomóż nam uczcić Uthera, zanosząc tę ofiarę do jego grobu w Western Plaguelands. Złóż ją przy pomniku, a potem wróć do mnie. Zostanę tu tylko do końca święta, więc nie zwlekaj ze złożeniem mu hołdu.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Podczas Święta Plonów Azeroth dziękujemy bohaterom za poświęcenia, których dla nas dokonali, czasem za ofiarę najwyższą. Przymierze uznaje wielu bohaterów, ale żadna opowieść nie jest tragiczniejsza od historii Uthera Lightbringera.$B$BPomóż nam uczcić Uthera, zabierając ten dar do jego grobowca w Zachodnich Ziemiach Plagi. Złóż go przy posągu i wróć do mnie. Będę tu tylko do końca święta, więc nie zwlekaj z oddaniem mu hołdu.",
+        "954fff0938ab536db518": "Uther był bohaterem wśród bohaterów. Nie potrafię nawet wyobrazić sobie jego rozpaczy, gdy Arthas, jego największy uczeń, którego kochał jak własnego syna, zdradził całą ludzkość. Mimo to stanął do walki, by go powstrzymać, i dlatego na zawsze pozostanie w pamięci jako prawdziwy paladyn. Walczył do końca, myśląc jedynie o tych, których mógł ocalić.$B$BDziękuję, $N. Oddano dziś hołd wielkiemu bohaterowi, jego duchowi i duchowi Święta Plonów.",
+        "f2b383417f25d786053a": "Czy udało się dotrzeć do grobowca Uthera i złożyć tam dar?$B$BDla mniej doświadczonych podróżników może to być niebezpieczna droga; względnie bezpieczniej jest udać się na północ wzdłuż rzeki przepływającej przez Hillsbrad do Ziem Plagi. Wypływa ona z jeziora obok Sorrow Hill; idź na zachód przez wzgórza, omijając pobliski grobowiec... ten opanowany przez Plagę."
+      },
       "summary": "Udaj się do grobu Uthera w Western Plaguelands i użyj daru dla Uthera przy jego pomniku, a następnie wróć do Wagnera Hammerstrike'a pod Ironforge przed końcem Święta Plonów.",
       "title": "Uczczenie bohatera",
       "translationMetadata": {
@@ -264,6 +512,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3edfb576a95663b3d3651eb73a877e35b6313ee9e7f5dc7dfd38524035aa1c92"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -282,6 +545,11 @@
     },
     "ptBR": {
       "description": "Durante o Festival da Colheita de Azeroth, nós agradecemos aos nossos heróis pelos sacrifícios – em alguns casos o sacrifício supremo – que fizeram por nós. A Aliança reconhece muitos heróis, mas nenhum viveu história tão trágica como Uther, o Arauto da Luz.\n\nAjude-nos a homenagear nosso herói levando esta oferenda para o túmulo dele nas Terras Pestilentas Ocidentais. Coloque isto aos pés da estátua dele, e me procure novamente. Eu só ficarei aqui até o fim do festival, então não perca tempo.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Durante o Festival da Colheita de Azeroth, nós agradecemos aos nossos heróis pelos sacrifícios – em alguns casos o sacrifício supremo – que fizeram por nós. A Aliança reconhece muitos heróis, mas nenhum viveu história tão trágica como Uther, o Arauto da Luz.\n\nAjude-nos a homenagear nosso herói levando esta oferenda para o túmulo dele nas Terras Pestilentas Ocidentais. Coloque isto aos pés da estátua dele, e me procure novamente. Eu só ficarei aqui até o fim do festival, então não perca tempo.",
+        "954fff0938ab536db518": "Uther era um herói entre heróis. Não consigo imaginar a angústia que sentiu quando Arthas, seu maior aluno e alguém que amava como um filho, traiu toda a humanidade. Ainda assim, ele se levantou para tentar deter Arthas e, por isso, será sempre lembrado como um verdadeiro paladino. Lutou até o fim, pensando apenas naqueles que poderia salvar.$B$BObrigado, $N. Hoje você homenageou um grande herói, honrando seu espírito e o espírito do Festival da Colheita.",
+        "f2b383417f25d786053a": "Você foi até a Tumba de Uther e deixou a homenagem lá?$B$BA viagem pode ser perigosa para aventureiros menos experientes; um caminho relativamente mais seguro é seguir para o norte pelo rio que passa por Eira dos Montes até as Terras Pestilentas. Ele vem de um lago perto da Colina da Dor. Siga para oeste pelas colinas, evitando a tumba próxima... aquela infestada pelo Flagelo."
+      },
       "summary": "Vá até a Tumba de Uther nas Terras Pestilentas Ocidentais e use o Tributo de Uther aos pés da estátua de Uther. Em seguida, fale novamente com Wagner Golparrão, que está do lado de fora de Altaforja, antes que o Festival da Colheita acabe.",
       "title": "Homenagem a um herói",
       "translationMetadata": {
@@ -290,6 +558,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -306,6 +590,11 @@
     },
     "ruRU": {
       "description": "Во время Недели урожая в Азероте мы возносим хвалу героям, которые готовы жизнь отдать – а порой и отдают – за нас. Альянс славит множество героев, но нет повести печальнее на свете, чем повесть об Утере Светоносном.\n\nПомоги же нам воздать почести Утеру и отнеси эти подношения к его гробнице в Западных Чумных землях. Положи их к подножию его статуи и возвращайся ко мне. Я пробуду тут только до конца праздника, так что не трать времени и отнеси Утеру эти приношения.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Во время Недели урожая в Азероте мы возносим хвалу героям, которые готовы жизнь отдать – а порой и отдают – за нас. Альянс славит множество героев, но нет повести печальнее на свете, чем повесть об Утере Светоносном.\n\nПомоги же нам воздать почести Утеру и отнеси эти подношения к его гробнице в Западных Чумных землях. Положи их к подножию его статуи и возвращайся ко мне. Я пробуду тут только до конца праздника, так что не трать времени и отнеси Утеру эти приношения.",
+        "954fff0938ab536db518": "Утер, был героем, среди всех героев. Я даже не могу представить, какие страдания он чувствовал, когда Артас – его самый любимый ученик, которого он любил как сына, предал его и всех людей. Тем не менее, он поднялся, чтобы остановить Артаса и за это его будут помнить как истинного паладина. Он всегда сражался до конца, думая о тех, кого он сможет спасти.\n\nСпасибо, $N. Ты воздал должное великому герою.",
+        "f2b383417f25d786053a": "Ты уже был у гробницы Утера и положил подношения у подножия его статуи? Это может быть очень опасной поездкой для менее опытных искателей приключений."
+      },
       "summary": "Пойдите к гробнице Утера в Западных Чумных землях, положите подношения у подножия его статуи и вернутсья к Вагнеру Молотобойцу в Стальгорн до конца Недели урожая.",
       "title": "Почести герою",
       "translationMetadata": {
@@ -314,6 +603,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -330,6 +637,11 @@
     },
     "svSE": {
       "description": "Under Azeroths skördefest tackar vi hjältar för de uppoffringar, i vissa fall den yttersta uppoffringen, de gjort för oss. Alliansen erkänner många hjältar, men ingen har en mer tragisk historia än Uther Lightbringer.\n\nHjälp oss hedra Uther genom att ta denna gåva till hans grav i Western Plaguelands. Lägg den vid hans staty och återvänd sedan till mig. Jag är bara här till festens slut, så dröj inte med att hylla Uther.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Under Azeroths skördefest tackar vi hjältar för de uppoffringar de gjort för oss, i vissa fall det yttersta offret. Alliansen hedrar många hjältar, men ingen har en mer tragisk berättelse än Uther Lightbringer.$B$BHjälp oss att hedra Uther genom att ta denna gåva till hans grav i Western Plaguelands. Lägg den vid hans staty och återvänd sedan till mig. Jag är bara här till festivalens slut, så dröj inte med att hedra honom.",
+        "954fff0938ab536db518": "Uther var en hjälte bland hjältar. Jag kan knappt föreställa mig den vånda han kände när Arthas, hans främste elev och någon som Uther älskade som en son, förrådde hela mänskligheten. Ändå reste han sig för att försöka stoppa Arthas, och därför kommer han alltid att minnas som en sann paladin. Han kämpade till slutet och tänkte bara på dem han kunde rädda.$B$BTack, $N. Du har i dag hedrat en stor hjälte, hans ande och skördefestens anda.",
+        "f2b383417f25d786053a": "Har du rest till Uthers grav och lagt hyllningen där?$B$BResan kan vara farlig för mindre erfarna äventyrare; en relativt säkrare väg är att resa norrut längs floden som rinner genom Hillsbrad till Plaguelands. Den kommer från en sjö intill Sorrow Hill; res västerut genom kullarna och håll dig undan den närliggande graven... den som kryllar av Gisslet."
+      },
       "summary": "Res till Uthers grav i Western Plaguelands och använd hyllningen till Uther vid hans staty. Återvänd sedan till Wagner Hammerstrike utanför Ironforge innan skördefesten är över.",
       "title": "Hedra en hjälte",
       "translationMetadata": {
@@ -339,6 +651,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3edfb576a95663b3d3651eb73a877e35b6313ee9e7f5dc7dfd38524035aa1c92"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -357,6 +684,11 @@
     },
     "trTR": {
       "description": "Azeroth'un Hasat Festivali sırasında, bizim adımıza yaptıkları fedakârlıklar, bazen de en büyük fedakârlık için kahramanlara teşekkür ederiz. Alliance birçok kahramanı tanır ama hiçbirinin hikâyesi Uther Lightbringer'ınki kadar trajik değildir.\n\nBu sunuyu Western Plaguelands'teki mezarına götürerek Uther'ı onurlandırmamıza yardım et. Heykeline bırak, sonra bana dön. Yalnızca festivalin sonuna kadar burada olacağım. Uther'a saygı sunmakta zaman kaybetme.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Azeroth Hasat Festivali sırasında kahramanlara bizim için yaptıkları fedakârlıklar, hatta bazılarının verdiği canlar için teşekkür ederiz. İttifak pek çok kahramanı onurlandırır, ama hiçbirinin öyküsü Uther Lightbringer’ınki kadar trajik değildir.$B$BBu adağı Western Plaguelands’teki mezarına götürerek Uther’i onurlandırmamıza yardım et. Heykelinin yanına bırak ve bana dön. Yalnızca festivalin sonuna kadar burada olacağım, bu yüzden saygılarını sunmakta gecikme.",
+        "954fff0938ab536db518": "Uther kahramanlar arasında bir kahramandı. En büyük öğrencisi ve kendi oğlu gibi sevdiği Arthas tüm insanlığa ihanet ettiğinde hissettiği acıyı hayal bile edemiyorum. Yine de Arthas’ı durdurmak için ayağa kalktı ve bunun için sonsuza dek gerçek bir paladin olarak hatırlanacak. Kurtarabileceği insanları düşünerek sonuna kadar savaştı.$B$BTeşekkür ederim, $N. Bugün büyük bir kahramanı, onun ruhunu ve Hasat Festivali’nin ruhunu onurlandırdın.",
+        "f2b383417f25d786053a": "Uther’in Mezarı’na gidip adağı bıraktın mı?$B$BDaha az deneyimli maceracılar için yolculuk tehlikeli olabilir; görece daha güvenli bir yol Hillsbrad’dan geçen nehri kuzeye, Plaguelands’e doğru takip etmektir. Nehir Sorrow Hill’in yanındaki bir gölden akar; tepeler boyunca batıya git ve yakındaki mezardan, Scourge’la dolu o mezardan uzak dur."
+      },
       "summary": "Western Plaguelands'deki Uther'in Mezarı'na git, heykelinde Uther'e Saygı Sunusu'nu kullan; ardından Hasat Festivali bitmeden Ironforge'un dışındaki Wagner Hammerstrike'a dön.",
       "title": "Bir Kahramanı Onurlandırmak",
       "translationMetadata": {
@@ -366,6 +698,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3edfb576a95663b3d3651eb73a877e35b6313ee9e7f5dc7dfd38524035aa1c92"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -384,6 +731,11 @@
     },
     "ukUA": {
       "description": "Під час Свята врожаю Азерота, ми висловлюємо шану героям за жертви, що вони принесли заради нас. Альянс визнає багатьох героїв, але ніхто не уособлює жертовність так, як Утер Світлоносець.\n\nДопоможи нам вшанувати Утера, віднеси ці підношення до його могили в Західні Зачумлені землі. Поклади їх до статуї, а потім повертайся до мене. Я буду тут лише до кінця фестивалю, тому не гай часу та вшануй Утера.",
+      "dialogue": {
+        "12cd387a91fce2698170": "Під час Свята врожаю Азероту ми дякуємо героям за жертви, які вони принесли заради нас, іноді й найбільшу жертву. Альянс шанує багатьох героїв, але жодна історія не трагічніша за історію Утера Світлоносного.$B$BДопоможи нам ушанувати Утера: віднеси цей дар до його гробниці в Західних Чумних землях. Поклади його біля статуї та повернися до мене. Я буду тут лише до кінця свята, тож не барися.",
+        "954fff0938ab536db518": "Утер був героєм серед героїв. Я навіть не можу уявити його мук, коли Артас, його найкращий учень і той, кого Утер любив як сина, зрадив усе людство. Та він підвівся, щоб спробувати зупинити Артаса, і тому його назавжди пам’ятатимуть як справжнього паладина. Він бився до кінця, думаючи лише про тих, кого міг урятувати.$B$BДякую, $N. Сьогодні завдяки тобі отримав шану великий герой, його дух і дух Свята врожаю.",
+        "f2b383417f25d786053a": "Чи вдалося тобі дістатися гробниці Утера й покласти там дар?$B$BДля менш досвідчених шукачів пригод дорога може бути небезпечною; відносно безпечніше йти на північ уздовж річки, що тече через Гіллсбрад до Чумних земель. Вона витікає з озера біля Пагорба Скорботи; йди на захід через пагорби, оминаючи сусідню гробницю... ту, що кишить Плеттю."
+      },
       "summary": "Відправляйтеся до могили Утера в Західні Зачумлені землі та покладіть підношення біля статуї. Поверніться до Вагнера Молотобойця поблизу Залізогарта до завершення Свята врожаю.",
       "title": "Вшанування героя",
       "translationMetadata": {
@@ -394,6 +746,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "3edfb576a95663b3d3651eb73a877e35b6313ee9e7f5dc7dfd38524035aa1c92"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -414,6 +781,11 @@
     },
     "zhCN": {
       "description": "在艾泽拉斯收获节上，我们对那些无私奉献英雄们表示感谢，他们中的一些甚至献出了自己的性命。联盟曾涌现出很多的英雄，但是没有谁的光芒能超越光明使者乌瑟尔。\n\n将这些祭品带到西瘟疫之地光明使者乌瑟尔的墓碑那儿，去表达我们的敬意吧。把祭品放在墓碑下，然后回到我们这儿来。收获节结束之前我会一直在这儿，别浪费时间了，出发吧。",
+      "dialogue": {
+        "12cd387a91fce2698170": "在艾泽拉斯收获节上，我们对那些无私奉献英雄们表示感谢，他们中的一些甚至献出了自己的性命。联盟曾涌现出很多的英雄，但是没有谁的光芒能超越光明使者乌瑟尔。\n\n将这些祭品带到西瘟疫之地光明使者乌瑟尔的墓碑那儿，去表达我们的敬意吧。把祭品放在墓碑下，然后回到我们这儿来。收获节结束之前我会一直在这儿，别浪费时间了，出发吧。",
+        "954fff0938ab536db518": "乌瑟是英雄中的英雄。我简直难以想像阿萨斯变节时他所承受的痛苦，阿萨斯是他最优秀的学生，他就像疼爱自己的儿子一样疼爱他。他尽了全力去阻止阿萨斯，他永远都是一个真正的圣骑士。乌瑟的战斗已经结束了，想想那些他曾经拯救过的人吧。\n\n谢谢你，$N。你向这位伟大的英雄献上了祭品，以此来纪念了他的精神和收获节的精神。\n",
+        "f2b383417f25d786053a": "你到达光明使者乌瑟的墓碑，放下他的祭品了吗?\n\n对经验并不丰富的冒险家来说，这是一次危险的旅程;沿着穿越希尔斯布莱德的河流向北进入瘟疫之地是一条相对安全的道路。河流从悔恨岭附近的湖泊发源，往西奔流进入群山，穿过寂静的坟墓……那儿到处都是天谴军团的爪牙。"
+      },
       "summary": "前往西瘟疫之地的光明使者乌瑟尔的墓碑，在墓碑前放下他的祭品。在收获节结束之前返回铁炉堡的瓦格纳·巨锤那儿。",
       "title": "缅怀英雄",
       "translationMetadata": {
@@ -422,6 +794,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -438,6 +828,11 @@
     },
     "zhTW": {
       "description": "在艾澤拉斯收穫節上，我們對那些無私奉獻英雄們表示感謝，他們其中甚至獻出自己的性命。聯盟曾湧現出很多的英雄，但是沒有誰的光芒能超越『光明使者』烏瑟。\n\n將這些祭品帶到西瘟疫之地『光明使者』烏瑟的墓碑那兒，去表達我們的敬意吧。把祭品放在墓碑下，然後回到我們這兒來。收穫節結束之前我會一直在這兒，別浪費時間了，出發吧。",
+      "dialogue": {
+        "12cd387a91fce2698170": "在艾澤拉斯收穫節上，我們對那些無私奉獻英雄們表示感謝，他們其中甚至獻出自己的性命。聯盟曾湧現出很多的英雄，但是沒有誰的光芒能超越光明使者烏瑟。\n\n將這些祭品帶到西瘟疫之地光明使者烏瑟的墓碑那兒，去表達我們的敬意吧。把祭品放在墓碑下，然後回到我們這兒來。收穫節結束之前我會一直在這兒，別浪費時間了，出發吧。",
+        "954fff0938ab536db518": "烏瑟是英雄中的英雄。我簡直難以想象阿爾薩斯變節時他所承受的痛苦，阿爾薩斯是他最優秀的學生，他就像疼愛自己的兒子一樣疼愛他。他盡了全力去阻止阿爾薩斯，他永遠都是一個真正的聖騎士。烏瑟的戰鬥已經結束了，想想那些他曾經拯救過的人吧。\n\n謝謝你，$N。你向這位偉大的英雄獻上了祭品，以此來紀念了他的精神和收穫節的精神。",
+        "f2b383417f25d786053a": "你到達光明使者烏瑟的墓碑，放下他的祭品了嗎?\n\n對經驗並不豐富的冒險家來說，這是一次危險的旅程;沿着穿越希爾斯布萊德的河流向北進入瘟疫之地是一條相對安全的道路。河流從悔恨嶺附近的湖泊發源，往西奔流進入羣山，穿過寂靜的墳墓……那兒到處都是天災軍團的爪牙。"
+      },
       "summary": "前往西瘟疫之地的光明使者烏瑟爾的墓碑，在墓碑前放下他的祭品。在收獲節結束之前返回鐵爐堡的瓦格納·巨錘那兒。",
       "title": "緬懷英雄",
       "translationMetadata": {
@@ -446,6 +841,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.12cd387a91fce2698170": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.954fff0938ab536db518": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f2b383417f25d786053a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

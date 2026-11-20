@@ -1,8 +1,30 @@
 {
   "areaId": 16591,
+  "dialogueContexts": {
+    "34c7d38415e98bf9dc8e": {
+      "contributionId": 93062,
+      "lineId": "q:94739:complete",
+      "npcId": 257062,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "90e3b5dbffca01c455ac": {
+      "contributionId": 93071,
+      "lineId": "q:94739:accept",
+      "npcId": 257062,
+      "scope": "forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "No, tak gratuluju k prvnímu kolu, asi.\n\nS dalším soupeřem se známe dlouho. Není to zrovna nejbystřejší chlapík, ale umí rozmlátit všechno, co mu přijde do cesty.\n\nTak běž do jámy a připrav se, zatímco to ohlásím.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Hej, hej. Klid. Chápu to nadšení, ale to není důvod ostatním to otloukat o hlavu.",
+        "90e3b5dbffca01c455ac": "No, tak gratuluju k prvnímu kolu, asi.\n\nS dalším soupeřem se známe dlouho. Není to zrovna nejbystřejší chlapík, ale umí rozmlátit všechno, co mu přijde do cesty.\n\nTak běž do jámy a připrav se, zatímco to ohlásím."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -15,6 +37,17 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "community",
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.7.3"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "community",
             "source": "czechForever",
             "sourceLocale": "csCZ",
@@ -43,6 +76,10 @@
     },
     "daDK": {
       "description": "Jeg er vel glad for, at du kom igennem første runde.\r\n\r\nDen næste deltager og jeg kender hinanden langt tilbage. Han er ikke den skarpeste fyr, men han er virkelig god til at gennembanke alt på sin vej.\r\n\r\nGå bare ind i arenaen og gør dig klar, mens jeg annoncerer kampen.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Hey, hey. Dæmp jer. Jeg forstår begejstringen, men det er ingen grund til at gnide det ind.",
+        "90e3b5dbffca01c455ac": "Jeg er vel glad for, at du kom igennem første runde.\r\n\r\nDen næste deltager og jeg kender hinanden langt tilbage. Han er ikke den skarpeste fyr, men han er virkelig god til at gennembanke alt på sin vej.\r\n\r\nGå bare ind i arenaen og gør dig klar, mens jeg annoncerer kampen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -55,6 +92,17 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "770ae6c48ebd8018bb75f457a9c73846e6ee0f4d15b7f7fc329f3ee6a9dc50c9"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -83,6 +131,10 @@
     },
     "deDE": {
       "description": "Freut mich, dass Ihr die erste Runde überstanden habt, schätze ich.\r\n\r\nDieser nächste Teilnehmer und ich kennen uns schon ewig. Er ist nicht gerade der hellste Bursche, aber er ist verdammt gut darin, alles zu vermöbeln, was ihm in den Weg kommt.\r\n\r\nGeht einfach in die Grube und macht Euch bereit, während ich die Ankündigung mache.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "He, he. Ruhe jetzt. Ich verstehe die Aufregung, aber das ist noch lange kein Grund, dermaßen damit anzugeben.",
+        "90e3b5dbffca01c455ac": "Freut mich, dass Ihr die erste Runde überstanden habt, schätze ich.\n\nDieser nächste Teilnehmer und ich kennen uns schon ewig. Er ist nicht gerade der hellste Bursche, aber er ist verdammt gut darin, alles zu vermöbeln, was ihm in den Weg kommt.\n\nGeht einfach in die Grube und macht Euch bereit, während ich die Ankündigung mache."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +150,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -123,6 +187,10 @@
     },
     "enUS": {
       "description": "Glad you made it through the first round, I guess.\r\n\r\nThis next contestant and I go way back. He ain't the brightest fella, but he's sure good at pummeling anything in his path.\r\n\r\nJust head on into the pit and get yourself ready while I make the announcement.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Hey, hey. Quiet down. I get the excitement, but that ain't no reason to rub it in.",
+        "90e3b5dbffca01c455ac": "Glad you made it through the first round, I guess.\n\nThis next contestant and I go way back. He ain't the brightest fella, but he's sure good at pummeling anything in his path.\n\nJust head on into the pit and get yourself ready while I make the announcement."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -138,6 +206,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -161,6 +241,10 @@
     },
     "esES": {
       "description": "Me alegro de que hayas superado la primera ronda, supongo.\r\n\r\nEl siguiente participante y yo somos viejos conocidos. No es el tipo más brillante, pero se le da de maravilla aporrear todo lo que se le ponga por delante.\r\n\r\nPasa al foso y prepárate mientras hago el anuncio.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Eh, eh. Tranquilidad. Entiendo la emoción, pero no hay razón para restregárselo a nadie.",
+        "90e3b5dbffca01c455ac": "Me alegro de que hayas superado la primera ronda, supongo.\r\n\r\nEl siguiente participante y yo somos viejos conocidos. No es el tipo más brillante, pero se le da de maravilla aporrear todo lo que se le ponga por delante.\r\n\r\nPasa al foso y prepárate mientras hago el anuncio."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +257,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esES"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
@@ -199,6 +293,10 @@
     },
     "esMX": {
       "description": "Me alegra que hayas pasado la primera ronda, supongo.\r\n\r\nEste próximo contrincante y yo nos conocemos desde hace mucho tiempo. No es el más listo, pero sí que sabe darle una paliza a quien se le cruce.\r\n\r\nEntra al foso y prepárate mientras anuncio la pelea.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Ey, ey. Tranquilos. Entiendo la emoción, pero no hay razón para restregárselo a nadie.",
+        "90e3b5dbffca01c455ac": "Me alegra que hayas pasado la primera ronda, supongo.\r\n\r\nEste próximo contrincante y yo nos conocemos desde hace mucho tiempo. No es el más listo, pero sí que sabe darle una paliza a quien se le cruce.\r\n\r\nEntra al foso y prepárate mientras anuncio la pelea."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -211,6 +309,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "esMX"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
@@ -237,6 +345,10 @@
     },
     "frFR": {
       "description": "J’imagine que vous vous réjouissez d’avoir survécu à la première manche.\r\n\r\nÇa fait un bail que je connais votre prochain adversaire. Il n’a pas inventé l’eau chaude, mais il n’a pas son pareil quand il s’agit d’écraser tout ce qui se trouve sur son chemin.\r\n\r\nAllez, entrez dans la fosse et préparez-vous pendant que je m’occupe des présentations.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Hé, hé. Un peu de calme. Je comprends votre joie, mais c’est pas la peine d’en rajouter.",
+        "90e3b5dbffca01c455ac": "J’imagine que vous vous réjouissez d’avoir survécu à la première manche.\n\nÇa fait un bail que je connais votre prochain adversaire. Il n’a pas inventé l’eau chaude, mais il n’a pas son pareil quand il s’agit d’écraser tout ce qui se trouve sur son chemin.\n\nAllez, entrez dans la fosse et préparez-vous pendant que je m’occupe des présentations."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +364,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -275,6 +399,10 @@
     },
     "hrHR": {
       "description": "Drago mi je što si prošao prvi krug, valjda.\r\n\r\nOvaj sljedeći natjecatelj i ja stari smo znanci. Nije najbistriji tip, ali stvarno dobro mlati sve što mu se nađe na putu.\r\n\r\nSamo uđi u jamu i pripremi se dok ja najavljujem borbu.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Hej, hej. Tiše. Razumijem uzbuđenje, ali to nije razlog da drugima nabijate na nos.",
+        "90e3b5dbffca01c455ac": "Drago mi je što si prošao prvi krug, valjda.\r\n\r\nOvaj sljedeći natjecatelj i ja stari smo znanci. Nije najbistriji tip, ali stvarno dobro mlati sve što mu se nađe na putu.\r\n\r\nSamo uđi u jamu i pripremi se dok ja najavljujem borbu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -287,6 +415,17 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "770ae6c48ebd8018bb75f457a9c73846e6ee0f4d15b7f7fc329f3ee6a9dc50c9"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -315,6 +454,10 @@
     },
     "itIT": {
       "description": "Sono felice che tu abbia superato il primo turno, suppongo.\r\n\r\nIo e il prossimo concorrente ci conosciamo da molto. Non è il tipo più sveglio, ma sa di certo pestare qualsiasi cosa trovi sul cammino.\r\n\r\nEntra nella fossa e preparati mentre faccio l'annuncio.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Ehi, ehi. Calmatevi. Capisco l'entusiasmo, ma non è un buon motivo per rigirare il coltello nella piaga.",
+        "90e3b5dbffca01c455ac": "Contento che tu abbia superato il primo turno, direi.\n\nIl prossimo concorrente e io ci conosciamo da una vita. Non è il tipo più sveglio del mondo, ma di sicuro è bravo a pestare qualunque cosa gli capiti davanti.\n\nEntra pure nella fossa e preparati mentre faccio l'annuncio."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -331,6 +474,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "770ae6c48ebd8018bb75f457a9c73846e6ee0f4d15b7f7fc329f3ee6a9dc50c9"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -355,6 +510,10 @@
     },
     "koKR": {
       "description": "첫 라운드를 통과해서 다행이라고 해 두지.\r\n\r\n다음 참가자와 나는 꽤 오래된 사이야. 엄청 똑똑한 친구는 아니지만 앞길에 있는 건 뭐든 두들겨 패는 재주가 있지.\r\n\r\n그냥 구덩이로 들어가서 준비하고 있어. 진행은 나한테 맡기고.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "이봐, 이봐. 조용히 해. 신나는 건 알겠지만 그렇다고 남들 염장을 지를 이유는 없잖아.",
+        "90e3b5dbffca01c455ac": "첫 라운드를 통과해서 다행이라고 해 두지.\r\n\r\n다음 참가자와 나는 꽤 오래된 사이야. 엄청 똑똑한 친구는 아니지만 앞길에 있는 건 뭐든 두들겨 패는 재주가 있지.\r\n\r\n그냥 구덩이로 들어가서 준비하고 있어. 진행은 나한테 맡기고."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -367,6 +526,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "koKR"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
@@ -395,6 +564,10 @@
     },
     "plPL": {
       "description": "Chyba cieszę się, że przechodzisz pierwszą rundę.\r\n\r\nNastępnego zawodnika znam od dawna. Nie jest najbystrzejszy, ale świetnie tłucze wszystko na swojej drodze.\r\n\r\nWejdź do dołu i przygotuj się, a ja ogłoszę walkę.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Hej, hej. Ciszej. Rozumiem wasz entuzjazm, ale nie ma powodu, żeby innym to wypominać.",
+        "90e3b5dbffca01c455ac": "Chyba cieszę się, że udało ci się przejść pierwszą rundę.\r\n\r\nNastępnego zawodnika znam od dawna. Nie jest najbystrzejszy, ale świetnie tłucze wszystko na swojej drodze.\r\n\r\nWejdź do dołu i przygotuj się, a ja ogłoszę walkę."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -407,6 +580,17 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "770ae6c48ebd8018bb75f457a9c73846e6ee0f4d15b7f7fc329f3ee6a9dc50c9"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -435,6 +619,10 @@
     },
     "ptBR": {
       "description": "Que bom que tu passou da primeira rodada, chapa.\r\n\r\nAgora esse próximo competidor aqui eu conheço desde pequeno. E ele não é dos mais cabeças, mas adora bater em tudo pelo caminho.\r\n\r\nCai dentro da arena e se prepara enquanto eu faço o anúncio, tá beleza?",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Ei, ei. Calma aí. Eu entendo a empolgação, mas não precisa esfregar isso na cara dos outros.",
+        "90e3b5dbffca01c455ac": "Que bom que tu passou da primeira rodada, chapa.\r\n\r\nAgora esse próximo competidor aqui eu conheço desde pequeno. E ele não é dos mais cabeças, mas adora bater em tudo pelo caminho.\r\n\r\nCai dentro da arena e se prepara enquanto eu faço o anúncio, tá beleza?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -447,6 +635,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ptBR"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
@@ -473,6 +671,10 @@
     },
     "ruRU": {
       "description": "Славно, что ты уцелел в первом раунде.\r\n\r\nСо следующим противником мы старые друзья. В голове у него пусто, но тумаки раздает так, что закачаешься.\r\n\r\nИди на арену и приготовься, а я пока вас объявлю.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Эй, эй. Потише. Я понимаю, вы рады, но незачем этим тыкать другим в лицо.",
+        "90e3b5dbffca01c455ac": "Славно, что ты уцелел в первом раунде.\r\n\r\nСо следующим противником мы старые друзья. В голове у него пусто, но тумаки раздает так, что закачаешься.\r\n\r\nИди на арену и приготовься, а я пока вас объявлю."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -485,6 +687,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "ruRU"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
@@ -511,6 +723,10 @@
     },
     "svSE": {
       "description": "Trevligt att du klarade första rundan, antar jag.\r\n\r\nNästa deltagare är en gammal bekant. Han är inte den skarpaste, men han är bra på att banka sönder allt i sin väg.\r\n\r\nGå ner i gropen och gör dig redo medan jag presenterar honom.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Hallå, hallå. Lugna ner er. Jag förstår att ni är glada, men det finns ingen anledning att gnugga in det.",
+        "90e3b5dbffca01c455ac": "Trevligt att du klarade första rundan, antar jag.\r\n\r\nNästa deltagare är en gammal bekant. Han är inte den skarpaste, men han är bra på att banka sönder allt i sin väg.\r\n\r\nGå ner i gropen och gör dig redo medan jag presenterar honom."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -523,6 +739,17 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "770ae6c48ebd8018bb75f457a9c73846e6ee0f4d15b7f7fc329f3ee6a9dc50c9"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -551,6 +778,10 @@
     },
     "trTR": {
       "description": "İlk turu atlatmana sevindim sanırım.\r\n\r\nBir sonraki yarışmacıyla eskiden tanışırız. Pek parlak biri değil, ama yoluna çıkan her şeyi yumruklamakta kesinlikle iyi.\r\n\r\nBen duyuruyu yaparken sen çukura girip hazırlan.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Hey, hey. Sakin olun. Heyecanınızı anlıyorum ama bunu başkalarının gözüne sokmanıza gerek yok.",
+        "90e3b5dbffca01c455ac": "İlk turu atlatmana sevindim sanırım.\r\n\r\nBir sonraki yarışmacıyla eskiden tanışırız. Pek parlak biri değil, ama yoluna çıkan her şeyi yumruklamakta kesinlikle iyi.\r\n\r\nBen duyuruyu yaparken sen çukura girip hazırlan."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -563,6 +794,17 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "770ae6c48ebd8018bb75f457a9c73846e6ee0f4d15b7f7fc329f3ee6a9dc50c9"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -591,6 +833,10 @@
     },
     "ukUA": {
       "description": "Радий, що ти пережив перший раунд, мабуть.\r\n\r\nМи з наступним учасником знайомі давно. Він не найсвітліша голова, зате вправно гамселить усе на своєму шляху.\r\n\r\nПросто йди в яму й готуйся, поки я зроблю оголошення.",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "Гей, гей. Тихіше. Я розумію ваше захоплення, але не треба цим хизуватися перед іншими.",
+        "90e3b5dbffca01c455ac": "Радий, що ти пережив перший раунд, мабуть.\r\n\r\nМи з наступним учасником знайомі давно. Він не найсвітліша голова, зате вправно гамселить усе на своєму шляху.\r\n\r\nПросто йди в яму й готуйся, поки я зроблю оголошення."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -603,6 +849,17 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "770ae6c48ebd8018bb75f457a9c73846e6ee0f4d15b7f7fc329f3ee6a9dc50c9"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
@@ -631,6 +888,10 @@
     },
     "zhCN": {
       "description": "我很高兴你能挺过第一轮，应该算是挺过了吧。\r\n\r\n下一位选手跟我可是老交情了。他脑子不太灵光，但绝对擅长把他面前的任何东西揍成肉泥。\r\n\r\n赶紧进场准备好，我要开始作介绍了。",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "嘿，嘿，安静点。我理解大家有多激动，但你也没必要这么得瑟吧。",
+        "90e3b5dbffca01c455ac": "我很高兴你能挺过第一轮，应该算是挺过了吧。\n\n下一位选手跟我可是老交情了。他脑子不太灵光，但绝对擅长把他面前的任何东西揍成肉泥。\n\n赶紧进场准备好，我要开始作介绍了。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -646,6 +907,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -669,6 +942,10 @@
     },
     "zhTW": {
       "description": "我該說，很高興看到你闖過第一輪嗎？\r\n\r\n下一位參賽者和我是老交情了。他不是最厲害的傢伙，但他很擅長把路上的東西全都砸扁。\r\n\r\n在我廣播的時候，你可以直接上場，先做好熱身。",
+      "dialogue": {
+        "34c7d38415e98bf9dc8e": "嘿，嘿。安靜點。我明白你們很興奮，但也沒必要拿這事刺激別人。",
+        "90e3b5dbffca01c455ac": "我該說，很高興看到你闖過第一輪嗎？\r\n\r\n下一位參賽者和我是老交情了。他不是最厲害的傢伙，但他很擅長把路上的東西全都砸扁。\r\n\r\n在我廣播的時候，你可以直接上場，先做好熱身。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -681,6 +958,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "original",
+            "source": "blizzard",
+            "sourceLocale": "zhTW"
+          },
+          "dialogue.34c7d38415e98bf9dc8e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90e3b5dbffca01c455ac": {
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"

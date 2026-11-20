@@ -151,6 +151,60 @@ equal(dialog.stopPicking:IsShown(), true, "Stop remains available outside the fa
 equal(dialog.stopPicking:IsMouseEnabled(), true, "Stop is clickable")
 tooltipData(GameTooltip, Enum.TooltipDataType.Item, 25, nil, {{type=0, leftText="Native instance amount 42"}})
 local afterItem = #Addon.debugPicker.entries
+do
+    local previousInspect, previousUnitIsUnit, previousCollection = InspectFrame, UnitIsUnit, C_TransmogCollection
+    local previousProcessing = GameTooltip.processingInfo
+    InspectFrame = { unit = "target", IsShown = function() return true end }
+    UnitIsUnit = function(left, right) return left == right end
+    local calls = 0
+    C_TransmogCollection = { GetInspectItemTransmogInfoList = function()
+        calls = calls + 1
+        return { [1] = { appearanceID = 456 } }
+    end }
+    local function inspectCapture(unit)
+        GameTooltip.processingInfo = { getterName = "GetInventoryItem", getterArgs = { unit, 1, n = 2 } }
+        Addon:RecordDebugTooltip(GameTooltip, { type = Enum.TooltipDataType.Item, id = 25, lines = {} })
+        return Addon.debugPicker.byID["item:25"].tooltipEvidence.replayContext.item.transmog
+    end
+    local captured = inspectCapture("target")
+    equal(captured.slot, 1, "inspect capture keeps the live inventory slot")
+    equal(captured.inspectAppearances.values[1][1].appearanceID, 456, "inspect capture keeps the raw appearance cache")
+    equal(inspectCapture("player").inspectAppearances, nil, "another unit cannot inherit the inspect cache")
+    equal(calls, 1, "capture only reads appearances for the matching inspect unit")
+    local priorLocation, priorApplied = ItemLocation, C_Item.GetAppliedItemTransmogInfo
+    ItemLocation = { CreateFromEquipmentSlot = function(_, slot) return { slot = slot } end }
+    C_Item.GetAppliedItemTransmogInfo = function(location)
+        equal(location.slot, 1, "capture uses the player's equipped item location")
+        return { appearanceID = 789 }
+    end
+    equal(inspectCapture("player").equippedAppearance.values[1].appearanceID, 789,
+        "picker records the equipped item's applied appearance")
+    equal(calls, 1, "player capture does not use the inspect cache")
+    local priorModel = CharacterModelScene
+    C_Item.GetAppliedItemTransmogInfo = function() return { appearanceID = 0, secondaryAppearanceID = 0 } end
+    CharacterModelScene = {
+        IsVisible = function() return true end,
+        GetPlayerActor = function()
+            return { GetItemTransmogInfo = function() return { appearanceID = 789 } end }
+        end,
+    }
+    local fallback = inspectCapture("player")
+    equal(fallback.equippedAppearance.values[1].appearanceID, 0, "picker preserves the raw zero from the item")
+    equal(fallback.characterSheetAppearance.values[1].appearanceID, 789, "picker captures the model fallback")
+    equal(fallback.status, "captured", "a readable model appearance supplies the missing identity")
+    local priorCurrent = C_Item.GetCurrentItemTransmogInfo
+    C_Item.GetCurrentItemTransmogInfo = function(location)
+        equal(location.slot, 1, "current equipment capture uses the same item location")
+        return { appearanceID = 456 }
+    end
+    equal(inspectCapture("player").currentAppearance.values[1].appearanceID, 456,
+        "picker records the current appearance when applied IDs are zero")
+    C_Item.GetCurrentItemTransmogInfo = priorCurrent
+    CharacterModelScene = priorModel
+    ItemLocation, C_Item.GetAppliedItemTransmogInfo = priorLocation, priorApplied
+    GameTooltip.processingInfo = previousProcessing
+    InspectFrame, UnitIsUnit, C_TransmogCollection = previousInspect, previousUnitIsUnit, previousCollection
+end
 tooltipData(GameTooltip, Enum.TooltipDataType.Item, 25)
 equal(#Addon.debugPicker.entries, afterItem, "repeated item hovers do not duplicate a capture")
 tooltipData(GameTooltip, Enum.TooltipDataType.Spell, 133)

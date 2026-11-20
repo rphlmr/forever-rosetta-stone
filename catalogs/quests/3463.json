@@ -1,8 +1,36 @@
 {
   "areaId": 51,
+  "dialogueContexts": {
+    "9435b88b5ad99dca2280": {
+      "lineId": "q:3463:accept",
+      "npcId": 8509,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "9de2473c6b4427111c32": {
+      "lineId": "q:3463:complete",
+      "npcId": 8509,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "c5cd4a1cce1fcd2084da": {
+      "lineId": "q:3463:progress",
+      "npcId": 8509,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Dobře poslouchej, {name}. Čtyři věže sice nelze nikdy zničit, ale pomocí Pochodně odplaty je můžeš zapálit na velmi dlouhou dobu: oheň, který nezdolá žádný živel ani síla.\n\nDokud budou v plamenech, nemůže v hlídkových stanovištích sídlit žádná stráž ani strážní jednotka, a tak je jejich první linie obrany ochromena.\n\nMusíš vstoupit do každé věže a použít Pochodeň odplaty uvnitř jejich opevnění. Měj se na pozoru před elitními strážními jednotkami trpaslíků z Dark Iron, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Dobře poslouchej, $N. Ačkoli ty čtyři věže nelze nikdy zničit, můžeš je pochodní odplaty zapálit na velmi dlouhou dobu. Tento oheň neuhasí žádný živel ani síla.$B$BDokud budou hořet, žádná stráž ani hlídka nemůže obsadit strážní stanoviště, a jejich první obranná linie tak bude vyřazena.$B$BMusíš vstoupit do každé věže a použít Pochodeň odplaty uvnitř opevnění. Dej si pozor na elitní hlídky Temného železa, $N.",
+        "9de2473c6b4427111c32": "Je to nádhera! Není to nádhera, mistře? ",
+        "c5cd4a1cce1fcd2084da": "Ztratil ses, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -34,6 +62,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2042bff1f5689073619f911ceb736ed2f3853bf47f6431366b9b369cd43f38f9"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -74,6 +117,11 @@
     },
     "daDK": {
       "description": "Hør godt efter, {name}. Selv om de fire tårne aldrig kan ødelægges, kan du bruge Torch of Retribution til at sætte dem i brand i meget lang tid: en ild, som intet element eller nogen kraft kan slukke.\n\nMens de brænder, kan ingen vagter eller vagtstyrker opholde sig på posterne, og dermed er deres første forsvarslinje sat ud af spil.\n\nDu må gå ind i hvert tårn og bruge Torch of Retribution inden for deres befæstninger. Pas på Dark Iron-dværgenes elitevagter, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Lyt godt efter, $N. Selv om de fire tårne aldrig kan ødelægges, kan du bruge gengældelsens fakkel til at sætte ild til dem i meget lang tid. Ingen kraft eller element kan slukke denne ild.$B$BMens de brænder, kan ingen vagter bemande vagtposterne, og deres første forsvarslinje sættes dermed ud af spil.$B$BDu skal gå ind i hvert tårn og bruge Gengældelsens Fakkel inde i befæstningerne. Pas på Dark Irons elitevagter, $N.",
+        "9de2473c6b4427111c32": "Det er herligt! Er det ikke herligt, mester? ",
+        "c5cd4a1cce1fcd2084da": "Er du faret vild, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -105,6 +153,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2042bff1f5689073619f911ceb736ed2f3853bf47f6431366b9b369cd43f38f9"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -143,6 +206,11 @@
     },
     "deDE": {
       "description": "Hört gut zu, {name}. Obgleich die vier Türme niemals zerstört werden können, könnt Ihr dennoch die Fackel der Vergeltung benutzen, um sie für lange Zeit in Brand zu setzen. Ein Feuer, das kein Element und keine Macht löschen kann.\n\nWährend sie in Flammen stehen, kann keine Wache oder Wachposteneinheit die Posten besetzen, und so ist ihre erste Verteidigungslinie außer Kraft gesetzt.\n\nIhr müsst in jeden Turm eindringen und die Fackel der Vergeltung innerhalb ihrer Befestigung verwenden. Nehmt Euch in Acht vor den Elitewachposteneinheiten der Dunkeleisenzwerge, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Hört gut zu, $N. Obgleich die vier Türme niemals zerstört werden können, könnt Ihr dennoch die Fackel der Vergeltung benutzen, um sie für lange Zeit in Brand zu setzen. Ein Feuer, das kein Element und keine Macht löschen kann.\n\nWährend sie in Flammen stehen, kann keine Wache oder Wachposteneinheit die Posten besetzen, und so ist ihre erste Verteidigungslinie außer Kraft gesetzt.\n\nIhr müsst in jeden Turm eindringen und die Fackel der Vergeltung innerhalb ihrer Befestigung verwenden. Nehmt Euch in Acht vor den Elitewachposteneinheiten der Dunkeleisenzwerge, $N.",
+        "9de2473c6b4427111c32": "Es ist glorreich! Ist es nicht glorreich, Meister?",
+        "c5cd4a1cce1fcd2084da": "Habt Ihr Euch verlaufen, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +241,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -213,6 +299,11 @@
     },
     "enUS": {
       "description": "Listen well, {name}. While the four towers can never be destroyed, you can use the torch of retribution to set them ablaze for a very long period of time: A fire that no element or force can subdue.\n\nWhile they are ablaze, no guard or sentry unit can inhabit the watch posts and thus, their first line of defense is nullified.\n\nYou must enter each tower and use the Torch of Retribution within their fortifications. Beware the elite sentry units of the Dark Irons, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Listen well, $N. While the four towers can never be destroyed, you can use the torch of retribution to set them ablaze for a very long period of time: A fire that no element or force can subdue.$B$BWhile they are ablaze, no guard or sentry unit can inhabit the watch posts and thus, their first line of defense is nullified.$B$BYou must enter each tower and use the Torch of Retribution within their fortifications. Beware the elite sentry units of the Dark Irons, $N.",
+        "9de2473c6b4427111c32": "It is glorious! Is it not glorious master? ",
+        "c5cd4a1cce1fcd2084da": "Are you lost, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -243,6 +334,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -283,6 +392,11 @@
     },
     "esES": {
       "description": "Escúchame bien, {name}. Aunque no es posible destruir las torres, con la antorcha provocarás unos incendios muy difíciles de extinguir, un fuego que no puede apagar ninguna fuerza ni elemento. \n\nMientras ardan no podrá haber centinelas ni guardias; su primera línea de defensa quedará anulada. \n\nTienes que entrar en cada torre y usar la antorcha dentro de las fortificaciones. Ten cuidado con las unidades de élite de los Hierro Negro, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Escúchame bien, $N. Aunque no es posible destruir las torres, con la antorcha provocarás unos incendios muy difíciles de extinguir, un fuego que no puede apagar ninguna fuerza ni elemento. \n\nMientras ardan no podrá haber centinelas ni guardias; su primera línea de defensa quedará anulada. \n\nTienes que entrar en cada torre y usar la antorcha dentro de las fortificaciones. Ten cuidado con las unidades de élite de los Hierro Negro, $N.",
+        "9de2473c6b4427111c32": "¡Qué vista tan gloriosa!",
+        "c5cd4a1cce1fcd2084da": "¿Estás perdido, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -313,6 +427,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -353,6 +485,11 @@
     },
     "esMX": {
       "description": "Escúchame bien, {name}. Si bien es imposible destruir las cuatro torres, puedes usar la antorcha de reprensión para incendiarlas durante un largo período de tiempo: ningún elemento ni fuerza puede apagar este fuego.\n\nMientras están en llamas, los guardias o unidades de vigilancia no pueden apostarse en las avanzadas y, de esa forma, su primera línea de defensa queda anulada.\n\nDebes entrar a cada torre y usar la antorcha de reprensión dentro de sus fortificaciones. Cuídate de las unidades de vigilancia de élite de los Hierro Negro, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Escúchame bien, $N. Si bien es imposible destruir las cuatro torres, puedes usar la antorcha de reprensión para incendiarlas durante un largo período de tiempo: ningún elemento ni fuerza puede apagar este fuego.\n\nMientras están en llamas, los guardias o unidades de vigilancia no pueden apostarse en las avanzadas y, de esa forma, su primera línea de defensa queda anulada.\n\nDebes entrar a cada torre y usar la antorcha de reprensión dentro de sus fortificaciones. Cuídate de las unidades de vigilancia de élite de los Hierro Negro, $N.",
+        "9de2473c6b4427111c32": "¡Qué vista tan gloriosa!",
+        "c5cd4a1cce1fcd2084da": "¿Te has perdido, $n?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -383,6 +520,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -423,6 +578,11 @@
     },
     "frFR": {
       "description": "Écoutez bien, {name}. Bien que les quatre tours ne pourront jamais être détruites, vous pouvez vous servir de la Torche de châtiment afin d'y mettre le feu pour une longue période. Un incendie qu'aucun élément ou qu'aucune force ne pourra éteindre.\n\nTant qu'elles seront en flammes, aucun Garde ou aucune Sentinelle ne pourra y résider. Ainsi, leur première ligne de défense n'existera simplement plus.\n\nVous devez pénétrer dans chaque tour et utiliser la Torche de vindicte à l'intérieur des fortifications. Méfiez-vous des Sentinelles d'élite Sombrefer, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Écoutez bien, $N. Bien que les quatre tours ne pourront jamais être détruites, vous pouvez vous servir de la Torche de châtiment afin d'y mettre le feu pour une longue période. Un incendie qu'aucun élément ou qu'aucune force ne pourra éteindre.\n\nTant qu'elles seront en flammes, aucun Garde ou aucune Sentinelle ne pourra y résider. Ainsi, leur première ligne de défense n'existera simplement plus.\n\nVous devez pénétrer dans chaque tour et utiliser la Torche de vindicte à l'intérieur des fortifications. Méfiez-vous des Sentinelles d'élite Sombrefer, $N.",
+        "9de2473c6b4427111c32": "Formidable ! N'est-ce pas que c'est glorieux, maître ?",
+        "c5cd4a1cce1fcd2084da": "Alors, $N, êtes-vous perdu ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -453,6 +613,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -493,6 +671,11 @@
     },
     "hrHR": {
       "description": "Dobro slušaj, {name}. Premda se četiri tornja nikada ne mogu uništiti, bakljom odmazde možeš ih zapaliti na vrlo dugo vrijeme: vatrom koju nijedan element ili sila ne mogu ugasiti.\n\nDok gore, nijedna stražarska ili izviđačka jedinica ne može zauzeti stražarska mjesta i time je njihova prva linija obrane poništena.\n\nMoraš ući u svaki toranj i upotrijebiti baklju odmazde unutar njegovih utvrda. Čuvaj se elitnih stražarskih jedinica Dark Irona, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Dobro slušaj, $N. Iako se četiri kule nikada ne mogu uništiti, bakljom odmazde možeš ih zapaliti na vrlo dugo vrijeme. Tu vatru ne može ugasiti nijedan element ni sila.$B$BDok gore, stražari ne mogu zauzeti osmatračnice pa je njihova prva linija obrane onesposobljena.$B$BMoraš ući u svaku kulu i upotrijebiti Baklju odmazde unutar utvrda. Čuvaj se elitnih stražara Tamnog željeza, $N.",
+        "9de2473c6b4427111c32": "Veličanstveno je! Zar nije veličanstveno, gospodaru? ",
+        "c5cd4a1cce1fcd2084da": "Jesi li se izgubio, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -524,6 +707,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2042bff1f5689073619f911ceb736ed2f3853bf47f6431366b9b369cd43f38f9"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -562,6 +760,11 @@
     },
     "itIT": {
       "description": "Ascolta bene, {name}. Le quattro torri non potranno mai essere distrutte, ma puoi usare la Torcia del Castigo per incendiarle per un lunghissimo periodo: un fuoco che nessun elemento o forza può domare.\n\nMentre bruciano, nessuna guardia o sentinella può occupare le postazioni di vedetta, annullando così la loro prima linea di difesa.\n\nDevi entrare in ogni torre e usare la Torcia del Castigo all'interno delle fortificazioni. Guardati dalle sentinelle d'élite dei Ferroscuro, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Ascolta bene, $N. Le quattro torri non potranno mai essere distrutte, ma con la torcia del castigo puoi incendiarle per un tempo lunghissimo: un fuoco che nessun elemento e nessuna forza può domare.\n\nFinché sono in fiamme, nessuna guardia e nessuna unità di sentinelle può occupare i posti di vedetta, e così la loro prima linea di difesa è annullata.\n\nDevi entrare in ogni torre e usare la Torcia del Castigo all'interno delle fortificazioni. Guardati dalle unità scelte di sentinelle dei Dark Irons, $N.",
+        "9de2473c6b4427111c32": "È glorioso! Non è glorioso, mio signore?",
+        "c5cd4a1cce1fcd2084da": "Ti sei perso, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -593,6 +796,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2042bff1f5689073619f911ceb736ed2f3853bf47f6431366b9b369cd43f38f9"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -631,6 +851,11 @@
     },
     "koKR": {
       "description": "잘 들으세요. 그 네 개의 감시탑은 절대 파괴할 수 없지만 응보의 횃불을 사용해 아주 오랫동안 불태울 수는 있습니다. 어떤 자연의 힘이나 마법으로도 끌 수 없는 불로 말이죠.\n\n탑이 불타는 동안에는 경비병들이 경비초소에 올라갈 수 없으니 첫 번째 방어선이 무너지게 될 겁니다.\n\n그 때 각 탑 안으로 들어가 녀석들의 요새 내부에서 응보의 횃불을 사용하도록 하십시오. 그리고 검은무쇠 부족의 정예 경비병들을 조심하시기 바랍니다.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "잘 들으세요. 그 네 개의 감시탑은 절대 파괴할 수 없지만 응보의 횃불을 사용해 아주 오랫동안 불태울 수는 있습니다. 어떤 자연의 힘이나 마법으로도 끌 수 없는 불로 말이죠.\n\n탑이 불타는 동안에는 경비병들이 경비초소에 올라갈 수 없으니 첫 번째 방어선이 무너지게 될 겁니다.\n\n그 때 각 탑 안으로 들어가 녀석들의 요새 내부에서 응보의 횃불을 사용하도록 하십시오. 그리고 검은무쇠단의 정예 경비병들을 조심하시기 바랍니다.",
+        "9de2473c6b4427111c32": "정말 대단하군요! 굉장하지 않습니까, 주인님?",
+        "c5cd4a1cce1fcd2084da": "길을 잃었나요, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -661,6 +886,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -701,6 +944,11 @@
     },
     "plPL": {
       "description": "Słuchaj uważnie, {name}. Choć czterech wież nigdy nie można zniszczyć, pochodnia odpłaty pozwoli podpalić je na bardzo długi czas ogniem, którego nie ugasi żaden żywioł ani siła.\n\nDopóki płoną, żaden strażnik ani oddział wartowników nie zajmie posterunków, przez co pierwsza linia obrony przestanie działać.\n\nMusisz wejść do każdej wieży i użyć pochodni odpłaty wewnątrz umocnień. Strzeż się elitarnych wartowników Ciemnego Żelaza, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Słuchaj uważnie, $N. Choć czterech wież nie da się zniszczyć, możesz podpalić je pochodnią odpłaty na bardzo długo. Tego ognia nie ugasi żaden żywioł ani żadna siła.$B$BGdy wieże płoną, strażnicy nie mogą obsadzić posterunków, a pierwsza linia obrony zostaje wyłączona.$B$BMusisz wejść do każdej wieży i użyć Pochodni Odpłaty wewnątrz fortyfikacji. Strzeż się elitarnych wartowników Czarnych Żelaz, $N.",
+        "9de2473c6b4427111c32": "To wspaniałe! Czyż nie wspaniałe, mistrzu? ",
+        "c5cd4a1cce1fcd2084da": "Zgubiłeś się, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -732,6 +980,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2042bff1f5689073619f911ceb736ed2f3853bf47f6431366b9b369cd43f38f9"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -770,6 +1033,11 @@
     },
     "ptBR": {
       "description": "Ouça bem, {name}. Embora as quatro torres nunca possam ser destruídas, você pode usar a Tocha da Retribuição para incendiá-las por um longo período de tempo: um incêndio que nenhum elemento ou força seja capaz de controlar.\n\nEnquanto estiverem em chamas, nenhum guarda ou unidade de sentinela poderá ocupar os postos de vigia, então a primeira linha de defesa deles estará temporariamente anulada.\n\nVocê deve entrar em cada torre e usar a Tocha da Retribuição dentro das fortificações deles. Cuidado com as unidades de sentinela de elite dos Ferro Negro, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Ouça bem, $N. Embora as quatro torres nunca possam ser destruídas, você pode usar a Tocha da Retribuição para incendiá-las por um longo período de tempo: um incêndio que nenhum elemento ou força seja capaz de controlar.\n\nEnquanto estiverem em chamas, nenhum guarda ou unidade de sentinela poderá ocupar os postos de vigia, então a primeira linha de defesa deles estará temporariamente anulada.\n\nVocê deve entrar em cada torre e usar a Tocha da Retribuição dentro das fortificações deles. Cuidado com as unidades de sentinela de elite dos Ferro Negro, $N.",
+        "9de2473c6b4427111c32": "Que glória! Não é uma glória, mestre?",
+        "c5cd4a1cce1fcd2084da": "Você está perdido, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -800,6 +1068,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -840,6 +1126,11 @@
     },
     "ruRU": {
       "description": "Слушай меня внимательно, {name}. Четыре башни нельзя разрушить, но если поджечь их с помощью факела воздаяния, пламя не угаснет очень долго – и это пламя нельзя будет унять никакими силами. \n\nПока башни горят, ни один страж или караульный не сможет подняться на них – а значит, первая линия обороны противника фактически будет прорвана. \n\nТы должен пробраться в башни и поджечь их с помощью факела воздаяния. И берегись патрульных клана Черного Железа, {name}!",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Слушай меня внимательно, $N. Четыре башни нельзя разрушить, но если поджечь их с помощью факела воздаяния, пламя не угаснет очень долго – и это пламя нельзя будет унять никакими силами. \n\nПока башни горят, ни один страж или караульный не сможет подняться на них – а значит, первая линия обороны противника фактически будет прорвана. \n\nТы должен пробраться в башни и поджечь их с помощью факела воздаяния. И берегись патрульных Черного Железа!",
+        "9de2473c6b4427111c32": "Славное деяние!",
+        "c5cd4a1cce1fcd2084da": "Ты что, заблудился, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -870,6 +1161,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -910,6 +1219,11 @@
     },
     "svSE": {
       "description": "Lyssna noga, {name}. De fyra tornen kan aldrig förstöras, men med Vedergällningens fackla kan du sätta dem i brand under mycket lång tid. En eld som inget element eller någon kraft kan kuva.\n\nMedan de brinner kan inga vakter eller vaktförband bemanna posterna, och deras första försvarslinje är därmed utslagen.\n\nDu måste gå in i varje torn och använda Vedergällningens fackla inne i befästningen. Akta dig för Dark Irons elitvaktförband, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Lyssna noga, $N. Även om de fyra tornen aldrig kan förstöras kan du använda vedergällningens fackla för att sätta dem i brand under lång tid. Ingen kraft eller inget element kan släcka elden.$B$BNär tornen brinner kan inga vakter bemanna posterna, och deras första försvarslinje sätts ur spel.$B$BDu måste gå in i varje torn och använda Vedergällningens fackla inne i befästningarna. Akta dig för Dark Irons elitvakter, $N.",
+        "9de2473c6b4427111c32": "Det är underbart! Visst är det underbart, mästare? ",
+        "c5cd4a1cce1fcd2084da": "Har du gått vilse, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -941,6 +1255,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2042bff1f5689073619f911ceb736ed2f3853bf47f6431366b9b369cd43f38f9"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -979,6 +1308,11 @@
     },
     "trTR": {
       "description": "İyi dinle, {name}. Dört kule asla yıkılamasa da Torch of Retribution'ı kullanarak onları çok uzun süre ateşe verebilirsin. Hiçbir elementin ya da kuvvetin söndüremeyeceği bir ateş.\n\nYanarken hiçbir muhafız ya da nöbetçi birliği gözetleme noktalarında bulunamaz. Böylece ilk savunma hatları etkisizleşir.\n\nHer kuleye girip tahkimatlarının içinde Torch of Retribution'ı kullanmalısın. Dark Iron'ların seçkin nöbetçi birliklerine dikkat et, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "İyi dinle, $N. Dört kule asla yok edilemese de İntikam Meşalesi’ni kullanarak onları çok uzun süre yakabilirsin. Bu ateşi hiçbir unsur veya güç söndüremez.$B$BKuleler yanarken hiçbir muhafız ya da nöbetçi gözetleme noktalarında duramaz ve böylece ilk savunma hatları etkisiz kalır.$B$BHer kuleye girip İntikam Meşalesi’ni tahkimatların içinde kullanmalısın. Kara Demirlerin seçkin nöbetçilerine dikkat et, $N.",
+        "9de2473c6b4427111c32": "Muhteşem! Muhteşem değil mi, efendim? ",
+        "c5cd4a1cce1fcd2084da": "Kayboldun mu, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1010,6 +1344,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2042bff1f5689073619f911ceb736ed2f3853bf47f6431366b9b369cd43f38f9"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1048,6 +1397,11 @@
     },
     "ukUA": {
       "description": "Слухай уважно, {name}. Хоча чотири вежі неможливо зруйнувати, смолоскип відплати дозволить підпалити їх на дуже довгий час. Цей вогонь не здатні приборкати жодна стихія чи сила.\n\nПоки вежі палатимуть, жодні охоронці чи вартові не зможуть займати спостережні пости, тож їхню першу лінію оборони буде знешкоджено.\n\nТи мусиш увійти до кожної вежі й застосувати смолоскип відплати всередині укріплень. Стережися елітних вартових Темного Заліза, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Уважно слухай, $N. Хоча чотири вежі неможливо знищити, ти можеш запалити їх смолоскипом відплати на дуже довгий час. Цей вогонь не здолає жодна стихія чи сила.$B$BПоки вежі палають, варта не зможе зайняти спостережні пости, а отже, їхня перша лінія оборони буде знешкоджена.$B$BТи маєш увійти в кожну вежу й використати Смолоскип відплати всередині укріплень. Стережися елітних вартових Темного Заліза, $N.",
+        "9de2473c6b4427111c32": "Це чудово! Хіба не чудово, господарю? ",
+        "c5cd4a1cce1fcd2084da": "Ти заблукав, $N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1079,6 +1433,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2042bff1f5689073619f911ceb736ed2f3853bf47f6431366b9b369cd43f38f9"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1119,6 +1488,11 @@
     },
     "zhCN": {
       "description": "听好了，{name}。虽然我们无法摧毁那四座哨塔，但是你可以使用惩戒火炬点燃它们，这种火焰是任何元素或力量都没法熄灭的。\n\n在哨塔燃烧的过程中，没有什么部队可以驻扎在里面，这样他们的第一道防线就失效了。\n\n你必须进入每一个塔楼，用惩戒火炬把它们烧掉。要小心黑铁矮人的精英哨兵，{name}。",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "听好了，$N。虽然我们无法摧毁那四座哨塔，但是你可以使用惩戒火炬点燃它们，这种火焰是任何元素或力量都没法熄灭的。\n\n在哨塔燃烧的过程中，没有什么部队可以驻扎在里面，这样他们的第一道防线就失效了。\n\n你必须进入每一个塔楼，用惩戒火炬把它们烧掉。要小心黑铁矮人的精英哨兵，$N。",
+        "9de2473c6b4427111c32": "伟大的胜利!这难道不是一个伟大的胜利麽?\n",
+        "c5cd4a1cce1fcd2084da": "你迷路了吗，$N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1149,6 +1523,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -1189,6 +1581,11 @@
     },
     "zhTW": {
       "description": "聽好了，{name}。雖然我們無法摧毀那四座哨塔，但是你可以使用懲戒火炬點燃它們，這種火焰是任何元素或力量都沒法熄滅的。\n\n在哨塔燃燒的過程中，沒有什麼部隊可以駐紮在裡面，這樣他們的第一道防線就失效了。\n\n你必須進入每一個塔樓，用懲戒火炬把它們燒掉。要小心黑鐵矮人的精英哨兵，{name}。",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "聽好了，$N。雖然我們無法摧毀那四座哨塔，但是你可以使用懲戒火炬點燃它們，這種火焰是任何元素或力量都沒法熄滅的。\n\n在哨塔燃燒的過程中，沒有什麼部隊可以駐紮在裡面，這樣他們的第一道防線就失效了。\n\n你必須進入每一個塔樓，用懲戒火炬把它們燒掉。要小心黑鐵矮人的精英哨兵，$N。",
+        "9de2473c6b4427111c32": "偉大的勝利!這難道不是一個偉大的勝利麼?",
+        "c5cd4a1cce1fcd2084da": "你迷路了嗎，$N?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1219,6 +1616,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

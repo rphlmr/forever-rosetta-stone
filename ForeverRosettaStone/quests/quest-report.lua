@@ -1,4 +1,5 @@
 local _, Addon = ...
+local issueURL = "https://github.com/rphlmr/forever-rosetta-stone/issues/new"
 
 local transitions = {
     closed = { open = "waiting" },
@@ -15,24 +16,32 @@ function Addon:CanOpenQuestOptions()
     return self.panel:IsVisible() and self.current.mode ~= "unavailable" and self:CanReportQuest(self.current.questID)
 end
 
+function Addon:ShowTranslationOptions(owner, label, action)
+    if self.lifecycle ~= "ready" or InCombatLockdown()
+        or (self.questReport and self.questReport.frame:IsShown()) then return end
+    -- A context menu opened by addon code taints the controller manager: its MenuProxy close
+    -- callback unsuspends focus from our call stack and blocks every later native action. The
+    -- controller therefore goes straight to the menu's only action, through the secure report popup.
+    if InputUtil.IsGamepadUIEnabled() then
+        action()
+        return
+    end
+    MenuUtil.CreateContextMenu(owner, function(_, root)
+        root:CreateTitle("Forever Rosetta Stone")
+        root:CreateButton(label, action)
+    end)
+end
+
 -- Without an explicit quest ID the menu belongs to the journal panel's displayed quest.
-function Addon:ShowQuestOptions(owner, questID)
+function Addon:ShowQuestOptions(owner, questID, interaction)
     if questID == nil then
         if not self:CanOpenQuestOptions() then return end
         questID = self.current.questID
     elseif not self:CanReportQuest(questID) then
         return
     end
-    -- A context menu opened by addon code taints the controller manager: its MenuProxy close
-    -- callback unsuspends focus from our call stack and blocks every later native action. The
-    -- controller therefore goes straight to the menu's only action, through the secure report popup.
-    if InputUtil.IsGamepadUIEnabled() then
-        self:ShowQuestReport(questID)
-        return
-    end
-    MenuUtil.CreateContextMenu(owner or self.panel, function(_, root)
-        root:CreateTitle("Forever Rosetta Stone")
-        root:CreateButton(self:SettingsText("questBugged"), function() self:ShowQuestReport(questID) end)
+    self:ShowTranslationOptions(owner or self.panel, self:SettingsText("questBugged"), function()
+        self:ShowQuestReport(questID, interaction)
     end)
 end
 
@@ -46,6 +55,7 @@ local function Read(record, name, callback, ...)
 end
 
 local function Serialize(value)
+    if not canaccessallvalues(value) then return "nil" end
     if type(value) == "string" then return string.format("%q", value) end
     if type(value) ~= "table" then return tostring(value) end
 
@@ -110,17 +120,23 @@ function Addon:CaptureQuestReport(record, tooltip)
 end
 
 function Addon:FinishQuestReport(outcome, message)
-    if not self:MoveQuestReport("result") then return end
-
     local dialog = self.questReport
+    if dialog.state ~= "waiting" then return end
     local record = dialog.record
     record.requestOutcome, record.requestError = outcome, message
     self:CaptureQuestReport(record, dialog.tooltip)
-    dialog.text = "## Quest report: " .. record.questID
+    self:FinishTranslationReport("Quest report: " .. record.questID,
+        "\nFull quest-log prose is only available while the quest is in your log.")
+end
+
+function Addon:FinishTranslationReport(heading, note)
+    if not self:MoveQuestReport("result") then return end
+    local dialog = self.questReport
+    dialog.text = "## " .. heading
         .. "\n\nWhat is wrong?\n[Describe the problem and what you expected.]"
         .. "\n\nClient text is included exactly as returned; its language has not been verified."
-        .. "\nFull summary and description are only available when the quest is in your quest log."
-        .. "\n\n```lua\n" .. Serialize(record) .. "\n```"
+        .. (note or "")
+        .. "\n\n```lua\n" .. Serialize(dialog.record) .. "\n```"
     dialog.measure:SetText(dialog.text)
     dialog.edit:SetHeight(math.max(280, dialog.measure:GetStringHeight() + 16))
     dialog.edit:SetText(dialog.text)
@@ -173,8 +189,8 @@ function Addon:CreateQuestReport()
     instructions:SetPoint("TOPLEFT", 18, -46)
     instructions:SetWidth(610)
     instructions:SetJustifyH("LEFT")
-    instructions:SetText("Select Copy report, then press Ctrl+C / Cmd+C. Open a GitHub issue and paste the report.\n"
-        .. "GitHub: [issue URL coming soon]")
+    instructions:SetText("Select Copy report, then press Ctrl+C / Cmd+C. Review the text before posting it on GitHub.\n"
+        .. issueURL)
 
     local close = self:NewFrame("Button", nil, frame, "UIPanelCloseButton")
     close:SetPoint("TOPRIGHT", -4, -4)
@@ -206,7 +222,7 @@ function Addon:CreateQuestReport()
         "GameTooltipTemplate")
     tooltip:Hide()
     self.questReport = { frame = frame, edit = edit, scroll = scroll, measure = measure,
-        copy = copy, tooltip = tooltip, state = "closed" }
+        copy = copy, title = title, tooltip = tooltip, state = "closed" }
 
     self:SetScript(copy, "OnClick", function()
         if self.questReport.state ~= "ready" then return end
@@ -220,8 +236,7 @@ function Addon:CreateQuestReport()
         edit:ClearFocus()
         self:SyncQuestReportController()
         self:SyncControllerFocus(true)
-        local reader = self.questInteractionReader
-        if reader then
+        for _, reader in pairs({ self.questInteractionReader, self.bookReader }) do
             reader:SyncController(reader.reportOwner)
             reader:SyncTarget()
             reader.reportOwner = nil
@@ -249,39 +264,110 @@ function Addon:CreateQuestReport()
     self:SetScript(frame, "OnEvent", function(_, event, questID, success)
         if event == "PLAYER_REGEN_ENABLED" then
             self:SyncQuestReportController()
-        elseif self.questReport.state == "waiting" and self.questReport.record.questID == questID then
+        elseif self.questReport.state == "waiting" and self.questReport.record.kind == "Quest"
+            and self.questReport.record.questID == questID then
             self:FinishQuestReport(success and "success" or "failed")
         end
     end)
     self:SetScript(frame, "OnUpdate", function()
-        if self.questReport.state == "waiting" and GetTime() >= self.questReport.deadline then
+        if self.questReport.state == "waiting" and self.questReport.record.kind == "Quest"
+            and GetTime() >= self.questReport.deadline then
             self:FinishQuestReport("timeout")
         end
         self:SyncQuestReportController()
     end)
 end
 
-function Addon:ShowQuestReport(questID)
-    if InCombatLockdown() then return end
-    if type(questID) ~= "number" or questID < 1 or questID % 1 ~= 0 or questID > 2147483647 then return end
+function Addon:BeginTranslationReport(kind, loadingText)
+    if self.lifecycle ~= "ready" or InCombatLockdown() then return end
     if not self.questReport then self:CreateQuestReport() end
     if not self:MoveQuestReport("open") then return end
 
     local dialog = self.questReport
     local version, build, buildDate, interface = GetBuildInfo()
-    dialog.record = { schemaVersion = 1, questID = questID, locale = GetLocale(),
+    dialog.record = { schemaVersion = 1, kind = kind, locale = GetLocale(),
         version = version, build = build, buildDate = buildDate, interface = interface,
         translationLocale = self:GetTargetLocale(), catalogVersion = ForeverRosettaStoneDB.catalogVersion,
         apiErrors = {} }
     dialog.record.addonVersion = Read(dialog.record, "GetAddOnMetadata", C_AddOns.GetAddOnMetadata,
         "ForeverRosettaStone", "Version")
+    local mapID = Read(dialog.record, "GetBestMapForUnit", C_Map and C_Map.GetBestMapForUnit, "player")
+    if self:IsReadableEntityID(mapID) then dialog.record.mapID = mapID end
+    local _, class = Read(dialog.record, "UnitClass", UnitClass, "player")
+    local _, race = Read(dialog.record, "UnitRace", UnitRace, "player")
+    local sex = Read(dialog.record, "UnitSex", UnitSex, "player")
+    dialog.record.character = { class = class, race = race, sex = sex }
     dialog.deadline = GetTime() + 5
-    dialog.edit:SetText("Loading quest " .. questID .. "...")
+    dialog.title:SetText("Forever Rosetta Stone: " .. kind .. " report")
+    dialog.edit:SetText(loadingText)
     dialog.copy:Disable()
     dialog.frame:Show()
     self:SyncControllerFocus()
     if self.questInteractionReader then self.questInteractionReader:SyncController() end
+    if self.bookReader then self.bookReader:SyncController() end
     self:SyncQuestReportController()
+    return dialog.record
+end
+
+function Addon:ShowBookReport(book)
+    local record = self:BeginTranslationReport("Book", "")
+    if not record then return end
+    record.book = book
+    record.surface = "book"
+    self:FinishTranslationReport(book.reason and "Missing book translation" or "Book translation")
+end
+
+function Addon:ShowNPCDialogueReport(context)
+    local menu
+    if context == "gossip" then
+        menu = self:CaptureGossipMenu()
+        if not menu.menuVisible then return end
+    elseif not (QuestFrameGreetingPanel and QuestFrameGreetingPanel:IsVisible()) then
+        return
+    end
+    local record = self:BeginTranslationReport("Dialogue", "")
+    if not record then return end
+    record.surface = context
+    if menu then
+        record.gossip = menu
+    else
+        record.greeting = {
+            npc = { name = Read(record, "UnitName", UnitName, "npc"), guid = Read(record, "UnitGUID", UnitGUID, "npc") },
+            text = Read(record, "GetGreetingText", GetGreetingText),
+        }
+    end
+    self:FinishTranslationReport("NPC dialogue translation")
+end
+
+function Addon:ShowQuestReport(questID, interaction)
+    if not self:IsReadableEntityID(questID) or questID > 2147483647 then return end
+    local record = self:BeginTranslationReport("Quest", "Loading quest " .. questID .. "...")
+    if not record then return end
+    record.questID = questID
+    record.surface = interaction and "npc" or "journal"
+    local nativeQuestID = interaction and Read(record, "GetQuestID", GetQuestID)
+    if self:IsReadableEntityID(nativeQuestID) and nativeQuestID == questID then
+        local native = { screen = interaction }
+        local getters = {
+            detail = { title = GetTitleText, description = GetQuestText, summary = GetObjectiveText },
+            progress = { title = GetTitleText, progress = GetProgressText },
+            reward = { title = GetTitleText, completion = GetRewardText },
+        }
+        for field, getter in pairs(getters[interaction] or {}) do
+            local value = Read(record, "questInteraction." .. field, getter)
+            if canaccessallvalues(value) and type(value) == "string" then native[field] = value end
+        end
+        local guid = Read(record, "UnitGUID", UnitGUID, "npc")
+        if canaccessallvalues(guid) and type(guid) == "string" then
+            local kind, id = guid:match("^([^-]+)%-[^-]+%-[^-]+%-[^-]+%-[^-]+%-(%d+)%-")
+            if kind == "Creature" or kind == "Vehicle" then
+                native.npcID = tonumber(id)
+                local name = Read(record, "UnitName", UnitName, "npc")
+                if canaccessallvalues(name) and type(name) == "string" then native.npcName = name end
+            end
+        end
+        record.interaction = native
+    end
     local ok, reason = pcall(C_QuestLog.RequestLoadQuestByID, questID)
     if not ok then self:FinishQuestReport("request_error", tostring(reason)) end
 end

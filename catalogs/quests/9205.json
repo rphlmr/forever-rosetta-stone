@@ -1,8 +1,28 @@
 {
   "areaId": 139,
+  "dialogueContexts": {
+    "8e6c0ae3dfea301bc5ab": {
+      "lineId": "q:9205:progress",
+      "npcId": 16283,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "e2c2c604952827b29f2d": {
+      "lineId": "q:9205:complete",
+      "npcId": 16283,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Držitel tohoto přípisu má po dokončení zadané pracovní zakázky nárok na odměnu ve formě odznaku dle vlastního výběru.\n\nPracovní zakázka FS-dvanáct:\n\nTřicet obrněných pancířnatek.\n\nVšechny splněné zakázky je nutné doručit karavanníkovi Stonebruiserovi do Light's Hope Chapel v Eastern Plaguelands.\n\nSmlouva je neplatná, pokud byla pozměněna nebo poškozena.\n\n– Velitel depeší Metz, Argent Dawn",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Plníš pracovní zakázku, $C?",
+        "e2c2c604952827b29f2d": "Opravdu nevíš, k čemu to je?$B$B<Nákladmistr Stonebruiser se směje.>$B$BTo si myslíš, že ti to řeknu?"
+      },
       "summary": "Doruč 30× Plated Armorfish a Craftsman's Writ - Plated Armorfish karavanníkovi Stonebruiserovi do Light's Hope Chapel v Eastern Plaguelands.",
       "title": "Přípis řemeslníka – Plated Armorfish",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Indehaveren af dette dokument har ret til betaling i form af et insignie efter eget valg ved fuldførelse af den aftalte arbejdsordre.\n\nArbejdsordre FS-12:\n\n30 Plated Armorfish.\n\nAlle fuldførte ordrer skal leveres til Packmaster Stonebruiser i Light's Hope Chapel i Eastern Plaguelands.\n\nKontrakten er ugyldig, hvis der er pillet ved den, eller den er beskadiget.\n\n-Dispatch Commander Metz, Argent Dawn",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Er du ved at udføre en bestilling, $C?",
+        "e2c2c604952827b29f2d": "Ved du virkelig ikke, hvad de er til?$B$B<Pakmester Stonebruiser griner.>$B$BSom om jeg ville fortælle dig det!"
+      },
       "summary": "Lever 30 Plated Armorfish og Craftsman's Writ - Plated Armorfish - til Packmaster Stonebruiser ved Light's Hope Chapel i Eastern Plaguelands.",
       "title": "Håndværkerens anmodning - Pansret rustningsfisk",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d959eceb6dc83ae0521d0ff330c94e84f19d53dfd02b8ad9d2b342822332a0f"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Der Inhaber dieser Handwerksverfügung hat nach Erfüllung des Vertrags Anspruch auf eine Bezahlung in Form von frei wählbaren Insignien.\n\nVertragsnummer FS-12:\n\n30 Panzerfische.\n\nWas im Vertrag angefordert wurde, muss zu Rottenkommandant Stonebruiser bei der Kapelle des hoffnungsvollen Lichts in den östlichen Pestländern gebracht werden.\n\nIm Falle von Verzug oder Beschädigung der Ware ist der Vertrag als null und nichtig anzusehen.\n\n-Einsatzkommandant Metz, die Argentumdämmerung",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Ihr führt einen Auftrag aus, $C?",
+        "e2c2c604952827b29f2d": "Ihr wisst wirklich nicht, wofür man die hier braucht?\n \n  \n Als ob ich Euch das verraten würde!"
+      },
       "summary": "Bringt 30 Panzerfische und die Handwerksverfügung für die Panzerfische zu Rottenkommandant Stonebruiser bei der Kapelle des hoffnungsvollen Lichts in den östlichen Pestländern.",
       "title": "Handwerksverfügung - Panzerfisch",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "The bearer of this writ is entitled to payment in the form of an insignia of their choice upon completion of the contracted work order.\n\nWork Order FS-12:\n\n30 Plated Armorfish.\n\nAll filled orders should be delivered to Packmaster Stonebruiser at Light's Hope Chapel in the Eastern Plaguelands.\n\nContract is null and void if tampered with or damaged.\n\n-Dispatch Commander Metz, The Argent Dawn",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Filling a work order, $C? ",
+        "e2c2c604952827b29f2d": "You really don't know what these are for?$B$B<Packmaster Stonebruiser laughs.>$B$BLike I'm going to tell you! "
+      },
       "summary": "Deliver 30 Plated Armorfish and the Craftsman's Writ - Plated Armorfish - to Packmaster Stonebruiser at Light's Hope Chapel in the Eastern Plaguelands.",
       "title": "Craftsman's Writ - Plated Armorfish",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +183,10 @@
     },
     "esES": {
       "description": "Páguese al portador de esta libranza con una insignia de su elección, una vez completada la orden de trabajo contratada.\n\nOrden de trabajo FS-12:\n\n30 peces coraza plateados.\n\nTodas las órdenes completadas deben ser entregadas al maestro de manada Mazadura en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.\n\nEste contrato quedará anulado en caso de alteraciones o daños.\n\n-Comandante de despachos Metz, el Alba Argenta",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Llenando una orden de trabajo, $C?",
+        "e2c2c604952827b29f2d": "¿De verdad no sabes para qué sirven?\n\n \n ¡Como te voy a decir!"
+      },
       "summary": "Entrega 30 peces coraza plateados y la libranza del artesano –pez coraza plateado– al maestro de manada Mazadura que está en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.",
       "title": "Libranza del artesano: pez coraza plateado",
       "translationMetadata": {
@@ -115,6 +195,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +223,10 @@
     },
     "esMX": {
       "description": "Páguese al portador de esta libranza con una insignia de su elección, una vez completada la orden de trabajo contratada.\n\nOrden de trabajo FS-12:\n\n30 peces coraza de placas.\n\nTodas las órdenes completadas deben ser entregadas al maestro de manada Mazadura en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.\n\nEste contrato quedará anulado en caso de alteraciones o daños.\n\n-Comandante de envíos Metz, El Alba Argenta",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "¿Completando una orden de trabajo, $c?",
+        "e2c2c604952827b29f2d": "¿Realmente no sabes para qué son?\n\n\n¡Como te diría...!"
+      },
       "summary": "Entrega 30 peces coraza de placas y la libranza del artesano: pez coraza de placas al maestro de manada Mazadura que está en la Capilla de la Esperanza de la Luz, en las Tierras de la Peste del Este.",
       "title": "Libranza del artesano: pez coraza de placas",
       "translationMetadata": {
@@ -139,6 +235,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +263,10 @@
     },
     "frFR": {
       "description": "Le porteur de la présente commission est en droit de recevoir comme payement l’insigne de son choix à la livraison des articles ci-dessous.\n\nBon de commande PC-12 :\n\n30 poissons cuirassés.\n\nToute commission honorée doit être livrée au maître-fourrier Stonebruiser, à la chapelle de l’Espoir de Lumière dans les Maleterres de l’est.\n\nLe présent contrat est nul et non avenu s’il est modifié ou endommagé.\n\n-Commandant d’ordonnance Metz, Aube d’argent",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Vous êtes là pour honorer une commission, $C ?",
+        "e2c2c604952827b29f2d": "Vous ne savez vraiment pas à quoi ils vont servir ?\n \n  \n Comme si j'allais vous le dire !"
+      },
       "summary": "Livrer 30 Poissons cuirassés et la Commission d’artisan - Poissons cuirassés au maître-fourrier Stonebruiser, à la chapelle de l’Espoir de Lumière dans les Maleterres de l’est.",
       "title": "Commission d'artisan - Poissons cuirassés",
       "translationMetadata": {
@@ -163,6 +275,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +303,10 @@
     },
     "hrHR": {
       "description": "Donositelj ovog naloga ima pravo na plaćanje u obliku insignije po izboru nakon izvršenja ugovorene radne narudžbe.\n\nRadna narudžba FS-12:\n\n30 Plated Armorfish.\n\nSve ispunjene narudžbe treba dostaviti Packmasteru Stonebruiseru u Light's Hope Chapelu u Eastern Plaguelandsu.\n\nUgovor je ništavan ako je mijenjan ili oštećen.\n\n-Dispatch Commander Metz, Argent Dawn",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Ispunjavaš radni nalog, $C?",
+        "e2c2c604952827b29f2d": "Doista ne znaš čemu ovo služi?$B$B<Glavni tovarnik Stonebruiser se smije.>$B$BNe misliš valjda da ću ti reći!"
+      },
       "summary": "Dostavi 30 Plated Armorfish i obrtnički nalog za Plated Armorfish Packmasteru Stonebruiseru u Light's Hope Chapelu u Eastern Plaguelandsu.",
       "title": "Obrtnikov nalog - oklopljena riba",
       "translationMetadata": {
@@ -188,6 +316,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d959eceb6dc83ae0521d0ff330c94e84f19d53dfd02b8ad9d2b342822332a0f"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +344,10 @@
     },
     "itIT": {
       "description": "Il portatore di questo mandato ha diritto a un pagamento sotto forma di un'insegna a propria scelta al completamento della commessa di lavoro concordata.\n\nCommessa di lavoro FS-12:\n\n30 Pesci Corazzati a Piastre.\n\nTutte le commesse completate devono essere consegnate al responsabile dei rifornimenti Stonebruiser alla Cappella della Luce nelle Terre Infette Orientali.\n\nIl contratto è nullo se alterato o danneggiato.\n\n-Comandante degli incarichi Metz, Alba d'Argento",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Devi consegnare un ordine di lavoro, avventuriero?",
+        "e2c2c604952827b29f2d": "Davvero non sai a cosa servono?\n\n\nFigurati se te lo dico!"
+      },
       "summary": "Consegna 30 pesci corazzati a piastre e la richiesta dell'artigiano per i pesci corazzati a piastre al responsabile delle scorte Stonebruiser alla Light's Hope Chapel, nelle Eastern Plaguelands.",
       "title": "Mandato dell'Artigiano - Corazzolo a Piastre",
       "translationMetadata": {
@@ -215,6 +357,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d959eceb6dc83ae0521d0ff330c94e84f19d53dfd02b8ad9d2b342822332a0f"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -233,6 +387,10 @@
     },
     "koKR": {
       "description": "이 계약서를 가져가는 자는 아래 작업을 완수하는 조건으로 원하는 휘장을 보상으로 받을 수 있다.\n\n작업 주문 번호 FS-12:\n\n무쇠비늘 철갑어 30개\n\n완성된 물건은 모두 동부 역병지대, 희망의 빛 예배당에 있는 짐말주인 스톤브루저에게 전달해야 한다.\n\n물건이 변형되거나 파손된 경우 이 계약은 무효로 처리된다.\n\n-은빛 여명회 파견사령관 메츠",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "작업 주문을 채우고 있습니까, $C?",
+        "e2c2c604952827b29f2d": "이게 어디에 쓰이는지 정말 모르겠습니까?$B$B<짐말주인 스톤브루저가 웃습니다.>$B$B제가 알려줄 것 같습니까!"
+      },
       "summary": "동부 역병지대, 희망의 빛 예배당에 있는 짐말주인 스톤브루저에게 무쇠비늘 철갑어 30개와 장인의 계약서: 무쇠비늘 철갑어를 가져가야 합니다.",
       "title": "장인의 계약서: 무쇠비늘 철갑어",
       "translationMetadata": {
@@ -241,6 +399,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +426,10 @@
     },
     "plPL": {
       "description": "Posiadacz tego zlecenia ma prawo do zapłaty w postaci wybranego insygnium po wykonaniu zamówionej pracy.\n\nZlecenie FS-12:\n\n30 płytowych ryb pancernych.\n\nWszystkie wykonane zamówienia należy dostarczyć pakmistrzowi Stonebruiserowi w Light's Hope Chapel w Eastern Plaguelands.\n\nUmowa jest nieważna w razie ingerencji lub uszkodzenia.\n\n-Dowódca ekspedycji Metz, Argent Dawn",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Realizujesz zlecenie, $C?",
+        "e2c2c604952827b29f2d": "Naprawdę nie wiesz, do czego to służy?$B$B<Mistrz stada Stonebruiser śmieje się.>$B$BJakbym miał ci powiedzieć!"
+      },
       "summary": "Dostarcz 30 płytowych ryb pancernych oraz zlecenie rzemieślnika na płytową rybę pancerną pakmistrzowi Stonebruiserowi w Light's Hope Chapel w Eastern Plaguelands.",
       "title": "Zlecenie rzemieślnika: płytowa ryba pancerna",
       "translationMetadata": {
@@ -266,6 +439,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d959eceb6dc83ae0521d0ff330c94e84f19d53dfd02b8ad9d2b342822332a0f"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -284,6 +467,10 @@
     },
     "ptBR": {
       "description": "O portador desta escritura tem direito a pagamento na forma de uma insígnia à sua escolha após o aviamento da ordem de serviço contratada.\n\nOrdem de serviço FS-12:\n\n30 peixes-armaduras de placas.\n\nTodas as ordens aviadas devem ser entregues ao Caravaneiro Esmagapedra na Capela Esperança da Luz, nas Terras Pestilentas Orientais.\n\nO contrato é invalidado e anulado em caso de adulteração ou danos.\n\nAss: Comandante de Expedição Metz, da Aurora Argêntea",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Cumprindo uma ordem de serviço, $C?",
+        "e2c2c604952827b29f2d": "Você realmente não sabe para que servem?$B$B<O Caravaneiro Esmagapedra ri.>$B$BComo se eu fosse contar!"
+      },
       "summary": "Leve 30 Peixes-armaduras de Placas e a Escritura do Artífice - Peixe-armadura de Placas - para o Caravaneiro Esmagapedra na Capela Esperança da Luz, que fica nas Terras Pestilentas Orientais.",
       "title": "Escritura do artífice - peixe-armadura de placas",
       "translationMetadata": {
@@ -292,6 +479,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -308,6 +505,10 @@
     },
     "ruRU": {
       "description": "Податель сего имеет право на получение награды в форме значков отличия по своему выбору в случае выполнения задания, указанного в контракте.\n\nЗаказ-наряд FS-12:\n\n30 латных бронерыб.\n\nВыполненные заказы доставлять караванщику Камнетесу в Часовню Последней Надежды в Восточные Чумные земли.\n\nКонтракт признается недействительным в случае, если бумага была подделана или тем или иным образом испорчена.\n\nПодпись: Командир Метц, Серебряный Рассвет",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Заказ выполнен, $C?",
+        "e2c2c604952827b29f2d": "Ты действительно не знаешь что это?\n\nНу хорошо, я потом расскажу тебе."
+      },
       "summary": "Доставьте 30 латных бронерыб и соответствующее задание мастера караванщику Камнетесу в Часовню Последней Надежды в Восточные Чумные земли.",
       "title": "Задание мастера – латная бронерыба",
       "translationMetadata": {
@@ -316,6 +517,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +545,10 @@
     },
     "svSE": {
       "description": "Innehavaren av detta kontrakt har rätt till betalning i form av en valfri insignie när beställningen har fullgjorts.\n\nBeställning FS-12:\n\n30 bepansrade pansarfiskar.\n\nAlla fullgjorda beställningar ska lämnas till packmästare Stonebruiser vid Light's Hope Chapel i Eastern Plaguelands.\n\nKontraktet är ogiltigt om det ändras eller skadas.\n\n-Expeditionsbefälhavare Metz, Argent Dawn",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Utför du en beställning, $C?",
+        "e2c2c604952827b29f2d": "Vet du verkligen inte vad de är till för?$B$B<Packmästare Stonebruiser skrattar.>$B$BSom om jag skulle berätta det!"
+      },
       "summary": "Leverera 30 bepansrade pansarfiskar och hantverkarordern för bepansrad pansarfisk till Packmaster Stonebruiser vid Light's Hope Chapel i Eastern Plaguelands.",
       "title": "Hantverksorder – Pansarklädd rustningsfisk",
       "translationMetadata": {
@@ -341,6 +558,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d959eceb6dc83ae0521d0ff330c94e84f19d53dfd02b8ad9d2b342822332a0f"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -359,6 +586,10 @@
     },
     "trTR": {
       "description": "Bu belgenin sahibi, sözleşmede belirtilen iş emrini tamamladığında seçtiği bir nişanla ödeme almaya hak kazanır.\n\nİş Emri FS-12:\n\n30 Plated Armorfish.\n\nTamamlanan bütün siparişler Eastern Plaguelands'teki Light's Hope Chapel'da bulunan Packmaster Stonebruiser'a teslim edilmelidir.\n\nÜzerinde oynanır veya hasar görürse sözleşme geçersizdir.\n\n-Sevk Komutanı Metz, The Argent Dawn",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Bir iş emrini mi yerine getiriyorsun, $C?",
+        "e2c2c604952827b29f2d": "Bunların ne işe yaradığını gerçekten bilmiyor musun?$B$B<Yük Ustası Stonebruiser güler.>$B$BSana söyleyeceğimi mi sanıyorsun!"
+      },
       "summary": "30 Plakalı Zırh Balığı'nı ve Zanaatkârın Belgesi - Plakalı Zırh Balığı'nı Eastern Plaguelands'deki Light's Hope Chapel'da bulunan Yük Ustası Stonebruiser'a teslim et.",
       "title": "Zanaatkâr Siparişi - Plakalı Zırh Balığı",
       "translationMetadata": {
@@ -368,6 +599,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d959eceb6dc83ae0521d0ff330c94e84f19d53dfd02b8ad9d2b342822332a0f"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -386,6 +627,10 @@
     },
     "ukUA": {
       "description": "Пред'явник цього замовлення має право на отримання оплати у вигляді відзнаки за власним вибором після виконання роботи.\n\nЗамовлення РЛ-12:\n\n30 риб-броненосців.\n\nВиконане замовлення має бути доставлене в'юннику Камнелупу в каплицю Надії Світла, що в Східних Зачумлених землях.\n\nЗамовлення недійсне, якщо його підроблено або пошкоджено.\n\n-Командир зв'язку Метц, Сріблястий Світанок",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "Виконуєш замовлення, $C?",
+        "e2c2c604952827b29f2d": "Ти справді не знаєш, для чого це?$B$B<В’юнник Камнелуп сміється.>$B$BНевже гадаєш, що я тобі скажу!"
+      },
       "summary": "Доставте 30 риб-броненосців та замовлення майстра — риба-броненосець до в'юнника Камнелупа в каплицю Надії Світла, що в Східних Зачумлених землях.",
       "title": "Замовлення майстра — риба-броненосець",
       "translationMetadata": {
@@ -396,6 +641,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "1d959eceb6dc83ae0521d0ff330c94e84f19d53dfd02b8ad9d2b342822332a0f"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +671,10 @@
     },
     "zhCN": {
       "description": "工匠文书的持有者在完成订单后可以挑选一枚徽记作为奖励。\n\n订单FS-12：\n\n30条板鳞鱼。\n\n所有的成品应送到东瘟疫之地圣光之愿礼拜堂的马队管理者布鲁斯·石锤处。\n\n物品若有任何损坏，订单无效。\n\n银色黎明物资官员梅兹",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "完成工作令了吗，$C?",
+        "e2c2c604952827b29f2d": "你真的不知道这个是做什麽用的?\n\n\n别想指望我会告诉你!\n"
+      },
       "summary": "将30条板鳞鱼和工匠文书 - 板鳞鱼交给东瘟疫之地圣光之愿礼拜堂的马队管理者布鲁斯·石锤。",
       "title": "工匠文书 - 板鳞鱼",
       "translationMetadata": {
@@ -424,6 +683,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +711,10 @@
     },
     "zhTW": {
       "description": "這張令狀的持有人在完成訂定的工作後會以他們選擇的徽記形式得到獎賞。\n\n工作令FS-12:\n\n30隻板鱗魚。\n\n所有完成的工作令都要送到東瘟疫之地給聖光之願禮拜堂的軍需籌備官·石漢 。\n\n一旦契約遭到損壞或篡改一律視為無效。\n\n-發送指揮官梅茲，銀色黎明",
+      "dialogue": {
+        "8e6c0ae3dfea301bc5ab": "完成工作令了嗎，$C?",
+        "e2c2c604952827b29f2d": "你真的不知道這個是做什麼用的?\n\n\n別想指望我會告訴你!"
+      },
       "summary": "將30條板鱗魚和工匠文書 - 板鱗魚交給東瘟疫之地聖光之願禮拜堂的馬隊管理者布魯斯·石錘。",
       "title": "工匠令狀 - 板鱗魚",
       "translationMetadata": {
@@ -448,6 +723,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.8e6c0ae3dfea301bc5ab": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e2c2c604952827b29f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

@@ -1,8 +1,46 @@
 {
   "areaId": 357,
+  "dialogueContexts": {
+    "2e8ff5d19257cc70e398": {
+      "lineId": "q:4297:complete:f",
+      "npcId": 9660,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "346dd4f7aba6843188ba": {
+      "lineId": "q:4297:accept",
+      "npcId": 9660,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "3edb9dcf460692947925": {
+      "lineId": "q:4297:progress",
+      "npcId": 9660,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "d1d8b022ec3f169ee849": {
+      "lineId": "q:4297:complete:m",
+      "npcId": 9660,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vílí šipky jsou všežravci, to znamená, že jedí maso i rostliny. Jestli se to tvoje vejce má vylíhnout, měli bychom být připraveni. Dobrým jídlem pro tyhle malé drobečky jsou kýty masa, syrové a šťavnaté, věř nebo ne. Nikdy jsem nezjistil proč, ale má to cosi společného s plánem Elune pro elfy... možná měli být ochránci nebo tak něco, nevím.\n\nO vejce se zatím postarám, tak mi nanos pár pořádných kýt ze stopařů Silvermane, aby měl co jíst, až se vylíhne.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Tohle bude stačit a pokud se nemýlím, tvoje vajíčko se brzy vylíhne. Jaký je to pocit? Víš, že z tebe bude $g otec:matka;? Haha, nečekala jsi takovou zodpovědnost, co?",
+        "346dd4f7aba6843188ba": "Vílí dráčci jsou všežravci, jedí maso i rostliny. Jestli se má tvé vejce vylíhnout, musíme se připravit. Věř nebo ne, tihle drobci mají rádi syrové šťavnaté kusy masa. Nikdy jsem nezjistil proč, ale souvisí to s Eluniným plánem pro elfy... možná měli být ochránci nebo tak něco, nevím.$B$BO vejce se zatím postarám. Přines mi pořádné kusy masa ze stříbrohřívých stopařů, aby měl malý po vylíhnutí co jíst.",
+        "3edb9dcf460692947925": "Máš už to maso, $N? Vajíčko se skoro líhne. Když jeho první jídlo nebude dost dobré, nemusí přežít první týden, a to bych nerad.$B$BNebudu lhát, $N. Závidím ti to vejce. Ať nelituji, že jsem ti pomohl.",
+        "d1d8b022ec3f169ee849": "Tohle bude stačit a pokud se nemýlím, tvoje vajíčko se brzy vylíhne. Jaký je to pocit? Víš, že z tebe bude $g otec:matka;? Haha, nečekal jsi takovou zodpovědnost, co?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +57,26 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +102,12 @@
     },
     "daDK": {
       "description": "Sprite darters er altædende, det betyder, at de spiser både kød og planter. Hvis dit æg her skal klække, må vi hellere være forberedt. Noget godt til de små fyre er kødstykker, rå og saftige, tro det eller ej. Jeg fandt aldrig ud af hvorfor, men det har noget at gøre med Elunes plan for elverne ... måske skulle de være beskyttere eller sådan noget, det ved jeg ikke.\n\nJeg tager mig af ægget indtil videre. Hvorfor skaffer du mig ikke nogle gode Silvermane stalker-kødstykker, som han kan spise, når han er klækket?",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Det her duer, og hvis jeg ikke tager fejl, er dit lille æg snart klar til at klække. Hvordan føles det at skulle være $g far:mor;? Haha, du havde ikke ventet så stort et ansvar, vel?",
+        "346dd4f7aba6843188ba": "Eventyrdrager er altædende, de spiser både kød og planter. Hvis dit æg skal klække, må vi være forberedte. De små kan godt lide rå, saftige kødstykker, tro det eller ej. Jeg fandt aldrig ud af hvorfor, men det har noget med Elunes plan for elverne at gøre... måske skulle de være beskyttere, jeg ved det ikke.$B$BJeg passer ægget imens. Hent nogle gode flanker fra Silvermane-stalkere, som den lille kan spise, når han klækker.",
+        "3edb9dcf460692947925": "Har du fundet kødet, $N? Ægget er næsten klar til at klække. Får han ikke et godt første måltid, overlever han måske ikke den første uge, og det ville jeg nødig se.$B$BJeg vil ikke lyve, $N. Jeg misunder dig det æg. Lad mig ikke fortryde, at jeg hjalp dig.",
+        "d1d8b022ec3f169ee849": "Det her duer, og hvis jeg ikke tager fejl, er dit lille æg snart klar til at klække. Hvordan føles det at skulle være $g far:mor;? Haha, du havde ikke ventet så stort et ansvar, vel?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +124,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "767989312e3cd448a7c6c3a588a7fc3442cd11deba732c75f4126c99fdd3d975"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +167,12 @@
     },
     "deDE": {
       "description": "Grimmlingflitzer sind Allesfresser - das bedeutet, dass sie sowohl Fleisch als auch Grünzeug fressen. Wenn dieses Junge hier schlüpft, sollten wir vorbereitet sein. Es ist kaum zu glauben, aber diese kleinen Kerlchen ernährt man am besten mit Fleischstücken, roh und saftig. Ich habe nie herausgefunden, warum das so ist, aber es muss wohl etwas mit Elunes Plan für die Elfen zu tun haben ... vielleicht waren sie als Beschützer oder so etwas vorgesehen, ich weiß es nicht.\n\nIch kümmere mich vorerst um das Ei. Warum besorgt Ihr nicht ein paar Silbermähnenpirscherflanken, mit denen wir das Junge füttern können, sobald es geschlüpft ist?",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Das wird reichen, und wenn ich mich nicht irre, wird Euer Kleines bald schlüpfen. Wie ist das so? Ihr wisst schon, bald Vater zu sein? Haha, Ihr habt wohl nicht damit gerechnet, einmal solche Verantwortung übernehmen zu müssen, was?",
+        "346dd4f7aba6843188ba": "Grimmlingflitzer sind Allesfresser - das bedeutet, dass sie sowohl Fleisch als auch Grünzeug fressen. Wenn dieses Junge hier schlüpft, sollten wir vorbereitet sein. Es ist kaum zu glauben, aber diese kleinen Kerlchen ernährt man am besten mit Fleischstücken, roh und saftig. Ich habe nie herausgefunden, warum das so ist, aber es muss wohl etwas mit Elunes Plan für die Elfen zu tun haben ... vielleicht waren sie als Beschützer oder so etwas vorgesehen, ich weiß es nicht.\n\nIch kümmere mich vorerst um das Ei. Warum besorgt Ihr nicht ein paar Silbermähnenpirscherflanken, mit denen wir das Junge füttern können, sobald es geschlüpft ist?",
+        "3edb9dcf460692947925": "Habt Ihr das Fleisch, $N? Euer Kleines hier wird bald schlüpfen. Wenn seine erste Mahlzeit nicht ausreicht, wird er die erste Woche vielleicht nicht überleben, und ich möchte nicht, dass das geschieht. \n \n Ich will ehrlich zu Euch sein, $N. Ich bin neidisch, weil Ihr so ein Ei habt und ich nicht. Und ich möchte es nicht bereuen, Euch hier ausgeholfen zu haben. ",
+        "d1d8b022ec3f169ee849": "Das wird reichen, und wenn ich mich nicht irre, wird Euer Kleines bald schlüpfen. Wie ist das so? Ihr wisst schon, bald Vater zu sein? Haha, Ihr habt wohl nicht damit gerechnet, einmal solche Verantwortung übernehmen zu müssen, was?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +188,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +234,12 @@
     },
     "enUS": {
       "description": "Sprite darters are omnivores--that means they eat both meat and vegetation. If your egg here's gonna hatch, we best be prepared. Some good eats for these little guys are flanks of meat, raw and juicy, believe it or not. I was never able to find out why, but it has somethin' to do with Elune's plan for the elves... maybe they were to be protectors or somethin', I don't know.\n\nI'll take care of the egg for now, why don't you get me some good Silvermane stalker flanks for 'em to eat when he's hatched.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "These'll do nicely, and if I'm not mistaken, your little egg's just about ready to hatch. How does it feel? You know, you about to be a $g father:mother;? Haha, didn't think ya'd have to deal with such responsibility, now did ya?",
+        "346dd4f7aba6843188ba": "Sprite darters are omnivores--that means they eat both meat and vegetation. If your egg here's gonna hatch, we best be prepared. Some good eats for these little guys are flanks of meat, raw and juicy, believe it or not. I was never able to find out why, but it has somethin' to do with Elune's plan for the elves... maybe they were to be protectors or somethin', I don't know.$B$BI'll take care of the egg for now, why don't you get me some good Silvermane stalker flanks for 'em to eat when he's hatched.",
+        "3edb9dcf460692947925": "Find that meat yet, $N? Your little egg here's just about ready to hatch. If he don't have a good enough first meal, then he might not make it past his first week, and I'd hate for that to happen.$B$BCan't much lie to ya, $N. I'm jealous of you gettin' this egg to begin with. Don't make me regret helpin' ya out like this.",
+        "d1d8b022ec3f169ee849": "These'll do nicely, and if I'm not mistaken, your little egg's just about ready to hatch. How does it feel? You know, you about to be a $g father:mother;? Haha, didn't think ya'd have to deal with such responsibility, now did ya?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +255,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -158,6 +302,12 @@
     },
     "esES": {
       "description": "Los duendes dardo son omnívoros, es decir, comen tanto carne como vegetales. Será mejor que nos preparemos para cuando tu huevo eclosione. Lo creas o no, el mejor bocado para estas crías sería un puñado de costillas de carne cruda y jugosa. Nunca he sabido por qué, pero tiene algo que ver con el plan de Elune para los elfos... quizás estaban destinados a ser protectores de algo, no sé.\n\n¿Por qué no me consigues algunas costillas de acechadores Melenargenta para dar a la cría cuando nazca? Yo cuidaré del huevo en tu ausencia.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Estas costillas son estupendas. Y, por cierto, si no me equivoco, tu huevo está a punto de eclosionar. ¿Cómo es? Ya sabes, eso de estar a punto de ser padre. ¡Ja, ja! Ni habías pensado en la responsabilidad que te va a caer encima, ¿eh?",
+        "346dd4f7aba6843188ba": "Los duendes dardo son omnívoros, es decir, comen tanto carne como vegetales. Será mejor que nos preparemos para cuando tu huevo eclosione. Lo creas o no, el mejor bocado para estas crías sería un puñado de costillas de carne cruda y jugosa. Nunca he sabido por qué, pero tiene algo que ver con el plan de Elune para los elfos... quizás estaban destinados a ser protectores de algo, no sé.\n\n¿Por qué no me consigues algunas costillas de acechadores melenargenta para dar a la cría cuando nazca? Yo cuidaré del huevo en tu ausencia.",
+        "3edb9dcf460692947925": "¿Tienes ya la carne, $n? Tu huevito está casi a punto de eclosionar. Si no tenemos carne para la primera comida de la criatura, quizás no sobreviva a su primera semana... y no me gustaría que muriera.\n\nPorque la verdad, $n, es que estoy celoso de que consiguieras este huevo. Así que no hagas que me arrepienta de haberte ayudado.",
+        "d1d8b022ec3f169ee849": "Estas costillas son estupendas. Y, por cierto, si no me equivoco, tu huevo está a punto de eclosionar. ¿Cómo es? Ya sabes, eso de estar a punto de ser padre. ¡Ja, ja! Ni habías pensado en la responsabilidad que te va a caer encima, ¿eh?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +323,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -195,6 +369,12 @@
     },
     "esMX": {
       "description": "Los duendes dardo son omnívoros, es decir, comen tanto carne como vegetales. Será mejor que nos preparemos para cuando tu huevo eclosione. Lo creas o no, el mejor bocado para estas crías sería un puñado de costillas de carne cruda y jugosa. Nunca he sabido por qué, pero tiene algo que ver con el plan de Elune para los elfos... quizás estaban destinados a ser protectores de algo, no sé.\n\n¿Por qué no me consigues algunas costillas de acechadores melenargenta para dar a la cría cuando nazca? Yo cuidaré del huevo en tu ausencia.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Esto servirá, y si no me equivoco, tu huevito está a punto de eclosionar. ¿Qué se siente? Ya sabes, ¿estar a punto de ser $g padre:madre;? Ja, no esperabas tanta responsabilidad, ¿verdad?",
+        "346dd4f7aba6843188ba": "Los duendes dardo son omnívoros, es decir, comen tanto carne como vegetales. Será mejor que nos preparemos para cuando tu huevo eclosione. Lo creas o no, el mejor bocado para estas crías sería un puñado de costillas de carne cruda y jugosa. Nunca he sabido por qué, pero tiene algo que ver con el plan de Elune para los elfos... quizás estaban destinados a ser protectores de algo, no sé.\n\n¿Por qué no me consigues algunas costillas de acechadores melenargenta para dar a la cría cuando nazca? Yo cuidaré del huevo en tu ausencia.",
+        "3edb9dcf460692947925": "¿Ya encontraste esa carne, $n? Tu pequeño huevo está a punto de nacer. Si no tiene una primera comida lo suficientemente buena, es posible que no supere la primera semana, y odiaría que eso sucediera.\n\nNo puedo mentirte, $n. Estoy celoso de que consigas este huevo. No hagas que me arrepienta de haberte ayudado así.",
+        "d1d8b022ec3f169ee849": "Esto servirá, y si no me equivoco, tu huevito está a punto de eclosionar. ¿Qué se siente? Ya sabes, ¿estar a punto de ser $g padre:madre;? Ja, no esperabas tanta responsabilidad, ¿verdad?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +390,28 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -232,6 +434,12 @@
     },
     "frFR": {
       "description": "Les Fées fléchetteuses sont omnivores. Cela veut dire qu'elles mangent de tout. Si l'œuf que vous avez là se décide à éclore, nous ferions mieux d'être prêts. Croyez-le ou non, ces demoiselles apprécient la viande, sous forme de flancs crus et bien saignants. Je n'ai jamais su pourquoi, mais cela a à voir avec les projets d'Elune concernant les elfes… Peut-être auraient-ils dû être les protecteurs de quelque chose, je n'en sais trop rien.\n\nDésormais je vais m'occuper de l'œuf. Pourquoi n'iriez-vous pas chercher de bons flancs de Traqueur Crins-d'argent le temps qu'il éclose.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Ils feront parfaitement l'affaire, et si je ne m'abuse, votre petit œuf va éclore très bientôt. Alors, quel effet ça fait ? Vous allez bientôt être papa, vous savez ? Ha ! Ha ! Vous n'auriez pas cru avoir tant de responsabilités, pas vrai ?",
+        "346dd4f7aba6843188ba": "Les Fées fléchetteuses sont omnivores. Cela veut dire qu'elles mangent de tout. Si l'œuf que vous avez là se décide à éclore, nous ferions mieux d'être prêts. Croyez-le ou non, ces demoiselles apprécient la viande, sous forme de flancs crus et bien saignants. Je n'ai jamais su pourquoi, mais cela a à voir avec les projets d'Elune concernant les elfes… Peut-être auraient-ils dû être les protecteurs de quelque chose, je n'en sais trop rien.\n\nDésormais je vais m'occuper de l'œuf. Pourquoi n'iriez-vous pas chercher de bons flancs de Traqueur Crins-d'argent le temps qu'il éclose.",
+        "3edb9dcf460692947925": "Avez-vous trouvé la viande, $N ? Votre petit œuf est sur le point d'éclore, vous savez ? S'il ne mange pas de la bonne viande à son premier repas, il peut ne pas passer la semaine, et je n'aimerais pas du tout que cela arrive. \n \n Je ne peux pas vous mentir plus longtemps, $N. La jalousie m'étreint du fait que vous ayez trouvé cet œuf. Ne me faites pas regretter de vous aider ainsi. ",
+        "d1d8b022ec3f169ee849": "Ils feront parfaitement l'affaire, et si je ne m'abuse, votre petit œuf va éclore très bientôt. Alors, quel effet ça fait ? Vous allez bientôt être papa, vous savez ? Ha ! Ha ! Vous n'auriez pas cru avoir tant de responsabilités, pas vrai ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +455,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -269,6 +501,12 @@
     },
     "hrHR": {
       "description": "Vilinski zmajići su svejedi, što znači da jedu i meso i biljke. Ako će se to tvoje jaje izleći, bolje da budemo spremni. Dobra hrana za te mališane jesu komadi mesa, sirovi i sočni, vjerovao ili ne. Nikada nisam uspio doznati zašto, ali ima to nekakve veze s Eluneinim planom za vilenjake... možda su trebali biti zaštitnici ili nešto slično, ne znam.\n\nZasad ću se pobrinuti za jaje, a ti mi nabavi nekoliko dobrih komada mesa Silvermane stalkera da ima što jesti kad se izleže.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Ovo će dobro poslužiti, a ako se ne varam, tvoje će se jaje uskoro izleći. Kakav je osjećaj biti uskoro $g otac:majka;? Haha, nisi očekivala takvu odgovornost, zar ne?",
+        "346dd4f7aba6843188ba": "Vilinski zmajići su svejedi, što znači da jedu meso i biljke. Ako će se tvoje jaje izleći, moramo se pripremiti. Ovi mališani vole sirove, sočne komade mesa, vjerovao ili ne. Nikad nisam saznao zašto, ali ima veze s Eluninim planom za vilenjake... možda su trebali biti zaštitnici, ne znam.$B$BJa ću se zasad brinuti za jaje, a ti mi donesi dobre komade mesa srebrnogrivih progonitelja da mali ima što jesti kad se izlegne.",
+        "3edb9dcf460692947925": "Imaš li meso, $N? Jaje će se uskoro izleći. Ako njegov prvi obrok ne bude dovoljno dobar, možda neće preživjeti prvi tjedan, a to ne želim.$B$BNeću lagati, $N. Zavidim ti na jajetu. Nemoj da požalim što sam pomogao.",
+        "d1d8b022ec3f169ee849": "Ovo će dobro poslužiti, a ako se ne varam, tvoje će se jaje uskoro izleći. Kakav je osjećaj biti uskoro $g otac:majka;? Haha, nisi očekivao takvu odgovornost, zar ne?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +523,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "767989312e3cd448a7c6c3a588a7fc3442cd11deba732c75f4126c99fdd3d975"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +566,12 @@
     },
     "itIT": {
       "description": "I Draghetti Fatati sono onnivori: significa che mangiano sia carne sia vegetali. Se il tuo uovo sta per schiudersi, sarà meglio essere pronti. Che tu ci creda o no, un buon cibo per questi piccoletti sono i tranci di carne cruda e succosa. Non sono mai riuscito a capire perché, ma ha qualcosa a che fare con il piano di Elune per gli Elfi... forse dovevano essere dei protettori o qualcosa del genere, non so.\n\nPer ora mi occuperò io dell'uovo: perché non mi procuri dei buoni Tranci di Predatore Mantargento da dargli da mangiare quando sarà nato?",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Questi andranno benissimo, e se non sbaglio il tuo uovo è quasi pronto a schiudersi. Che effetto fa? Sai, stare per diventare mamma? Ah ah, non pensavi di doverti prendere una responsabilità del genere, eh?",
+        "346dd4f7aba6843188ba": "I folletti sfreccianti sono onnivori — vuol dire che mangiano sia carne sia vegetali. Se il tuo uovo deve schiudersi, sarà meglio farci trovare pronti. Per questi piccoletti vanno bene le costate di carne, crude e succose, che tu ci creda o no. Non sono mai riuscito a scoprire perché, ma ha qualcosa a che fare con i piani di Elune per gli elfi... forse dovevano essere dei protettori o qualcosa del genere, non lo so.\n\nPer adesso all'uovo ci penso io. Perché non mi porti qualche bella costata di inseguitore Peloargento da fargli mangiare quando sarà nato?",
+        "3edb9dcf460692947925": "Hai già trovato la carne, $N? Il tuo uovo è quasi pronto a schiudersi. Se non gli dai un primo pasto come si deve, potrebbe non arrivare alla fine della prima settimana, e mi dispiacerebbe un sacco.\n\nNon ti posso mentire, $N: già solo per aver avuto quest'uovo ti invidio parecchio. Non farmi pentire di averti dato una mano così.",
+        "d1d8b022ec3f169ee849": "Questi andranno benissimo, e se non sbaglio il tuo uovo è quasi pronto a schiudersi. Che effetto fa? Sai, stare per diventare papà? Ah ah, non pensavi di doverti prendere una responsabilità del genere, eh?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -324,6 +588,30 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "767989312e3cd448a7c6c3a588a7fc3442cd11deba732c75f4126c99fdd3d975"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -347,6 +635,12 @@
     },
     "koKR": {
       "description": "화살요정용들은 잡식 동물이라 고기와 채소를 모두 먹는다네. 자네의 알들이 곧 부화할 테니 미리 준비를 해 두는 게 좋겠네. 믿거나 말거나, 이런 어린 녀석들에게는 즙 많은 날고기 조각 같은 게 좋지. 어째서 그런지는 나도 알아낼 수 없었는데, 엘프들을 위한 엘룬의 계획과 상관이 있네... 아마 수호자나 뭐 그런 게 되는 거였겠지.\n\n이제 알은 내가 돌볼 테니 이 녀석이 부화하면 먹을 수 있도록 괜찮은 긴발톱 은빛갈기늑대 갈비살이나 좀 가져오는 게 어떻겠나?",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "이거면 충분하겠군. 그리고 내 생각이 맞다면 이 알은 곧 부화할 걸세. 기분이 어떻나? 이제 곧 아빠가 될 텐데 말이야. 하하, 그런 막중한 책임을 지게 될 줄은 몰랐겠지? 안 그런가?",
+        "346dd4f7aba6843188ba": "화살요정용들은 잡식 동물이라 고기와 채소를 모두 먹는다네. 자네의 알들이 곧 부화할 테니 미리 준비를 해 두는 게 좋겠네. 믿거나 말거나, 이런 어린 녀석들에게는 즙 많은 날고기 조각 같은 게 좋지. 어째서 그런지는 나도 알아낼 수 없었는데, 엘프들을 위한 엘룬의 계획과 상관이 있네... 아마 수호자나 뭐 그런 게 되는 거였겠지.\n\n이제 알은 내가 돌볼 테니 이 녀석이 부화하면 먹을 수 있도록 괜찮은 긴발톱 은빛갈기늑대 갈비살이나 좀 가져오는 게 어떻겠나?",
+        "3edb9dcf460692947925": "고기는 찾아 온 건가? 자네의 작은 알은 이제 부화할 때가 거의 다 됐네. 처음 먹는 음식을 좋은 것으로 먹이지 않으면 한 주도 넘기지 못할지 모르네. 그런 일이 일어나서는 안 되지.\n\n음, 더 이상 거짓말하지 않겠네. 난 애초에 당신이 이 알을 손에 넣었다는 것부터가 부럽네. 자네를 이렇게 도와 준 걸 후회하지 않도록 해 주게나.",
+        "d1d8b022ec3f169ee849": "이거면 충분하겠군. 그리고 내 생각이 맞다면 이 알은 곧 부화할 걸세. 기분이 어떻나? 이제 곧 아빠가 될 텐데 말이야. 하하, 그런 막중한 책임을 지게 될 줄은 몰랐겠지? 안 그런가?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -362,6 +656,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -384,6 +702,12 @@
     },
     "plPL": {
       "description": "Sprite dartery są wszystkożerne, czyli jedzą zarówno mięso, jak i rośliny. Jeśli twoje jajo ma się wykluć, lepiej się przygotujmy. Wierz lub nie, ale dobrym pokarmem dla maluchów są kawałki surowego, soczystego mięsa ze słabizny. Nigdy nie udało mi się ustalić dlaczego, ale ma to coś wspólnego z planem Elune dla elfów... może miały być ich obrońcami czy coś, nie wiem.\n\nNa razie zajmę się jajem. Przynieś mi trochę dobrej słabizny Silvermane Stalkerów do jedzenia dla malucha, kiedy się wykluje.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "To się przyda, a jeśli się nie mylę, twoje jajko zaraz się wykluje. Jakie to uczucie, zostać $g ojcem:matką;? Ha, nie spodziewano się takiej odpowiedzialności, co?",
+        "346dd4f7aba6843188ba": "Baśniowe smoki są wszystkożerne, jedzą mięso i rośliny. Jeśli twoje jajo ma się wykluć, musimy się przygotować. Wierz lub nie, te maleństwa lubią surowe, soczyste kawałki mięsa. Nigdy nie dowiedziałem się dlaczego, ale ma to związek z planem Elune dla elfów... może miały być obrońcami, nie wiem.$B$BJa zajmę się jajem, a ty przynieś mięso srebrnogrzywych tropicieli, żeby maluch miał co jeść po wykluciu.",
+        "3edb9dcf460692947925": "Masz już mięso, $N? Jajko zaraz się wykluje. Jeśli pierwszy posiłek nie będzie dość dobry, malec może nie przeżyć tygodnia, a nie chciałbym tego.$B$BNie będę kłamał, $N. Zazdroszczę ci tego jaja. Nie każ mi żałować, że pomogłem.",
+        "d1d8b022ec3f169ee849": "To się przyda, a jeśli się nie mylę, twoje jajko zaraz się wykluje. Jakie to uczucie, zostać $g ojcem:matką;? Ha, nie spodziewano się takiej odpowiedzialności, co?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -400,6 +724,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "767989312e3cd448a7c6c3a588a7fc3442cd11deba732c75f4126c99fdd3d975"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -423,6 +767,12 @@
     },
     "ptBR": {
       "description": "Dardejantes são onívoros — isso significa que eles comem carne e vegetais. Se o seu ovo aqui estiver pra chocar, é melhor estarmos preparados. Uma boa churrasqueada pra esses pequenos são flancos de carne crua e suculenta, veja só. Eu nunca consegui de descobrir o porquê, mas tem algo a ver com o plano de Eluna pros elfos... talvez eles fossem protetores ou sei lá o quê.\n\nEu vou cuidar do ovo por ora. Por que não me trazes uns bons lombos de espreitadores Jubaprata pra eles comerem quando chocarem?",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Isto vai servir, e se não me engano, seu ovinho está prestes a chocar. Como se sente por estar prestes a ser $g pai:mãe;? Haha, não esperava tanta responsabilidade, não é?",
+        "346dd4f7aba6843188ba": "Dardejantes são onívoros — isso significa que eles comem carne e vegetais. Se o seu ovo aqui estiver pra chocar, é melhor estarmos preparados. Uma boa churrasqueada pra esses pequenos são flancos de carne crua e suculenta, veja só. Eu nunca consegui de descobrir o porquê, mas tem algo a ver com o plano de Eluna pros elfos... talvez eles fossem protetores ou sei lá o quê.\n\nEu vou cuidar do ovo por ora. Por que não me trazes uns bons lombos de espreitadores Jubaprata pra eles comerem quando chocarem?",
+        "3edb9dcf460692947925": "Já encontrou a carne, $N? Seu ovinho está prestes a chocar. Se ele não tiver uma boa primeira refeição, talvez não sobreviva à primeira semana, e eu odiaria que isso acontecesse.$B$BNão vou mentir, $N. Tenho inveja de você ter conseguido esse ovo. Não me faça arrepender de ajudar.",
+        "d1d8b022ec3f169ee849": "Isto vai servir, e se não me engano, seu ovinho está prestes a chocar. Como se sente por estar prestes a ser $g pai:mãe;? Haha, não esperava tanta responsabilidade, não é?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -438,6 +788,27 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -460,6 +831,12 @@
     },
     "ruRU": {
       "description": "Летучие хамелеоны всеядны: это значит, что они питаются как животной, так и растительной пищей. Твое яйцо вот-вот проклюнется, и мы должны быть к этому готовы. Лучшая еда для этих малявок – это мясо, свежее, сочное мясо! Хочешь – верь, хочешь – нет. Почему – я так и не выяснил, но, кажется, это имеет какое-то отношение к замыслу Элуны относительно эльфов. Возможно, они должны были быть защитниками... не знаю.\n\nЯйцо я пока покараулю, а ты сходи и добудь мне свеженьких окороков среброгривых бродяг. Ими-то мы и покормим малыша, когда он вылупится.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Если я не ошибаюсь, твое маленькое яйцо, готово вылупиться. Ты же будешь матерью, знаешь? Ха-ха, не думала что придется иметь дело с такой ответственностью?",
+        "346dd4f7aba6843188ba": "Летучие хамелеоны всеядны: это значит, что они питаются как животной, так и растительной пищей. Твое яйцо вот-вот проклюнется, и мы должны быть к этому готовы. Лучшая еда для этих малявок – это мясо, свежее, сочное мясо! Хочешь – верь, хочешь – нет. Почему – я так и не выяснил, но, кажется, это имеет какое-то отношение к замыслу Элуны относительно эльфов. Возможно, они должны были быть защитниками... не знаю.\n\nЯйцо я пока покараулю, а ты сходи и добудь мне свеженьких окороков среброгривых бродяг. Ими-то мы и покормим малыша, когда он вылупится.",
+        "3edb9dcf460692947925": "Добыл мясо, $N? Твое маленькое яйцо, почти готово вылупиться. Если у него в первую неделю будет достаточно хорошего мяса, то он вырастит здоровым.",
+        "d1d8b022ec3f169ee849": "Если я не ошибаюсь, твое маленькое яйцо, готово вылупиться. Ты же будешь отцом, знаешь? Ха-ха, не думал что придется иметь дело с такой ответственностью?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -475,6 +852,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -497,6 +898,12 @@
     },
     "svSE": {
       "description": "Älvdrakar är allätare, alltså äter de både kött och växter. Om ägget kläcks bör vi vara redo. Råa, saftiga köttflankor är bra mat åt dem, tro det eller ej. Jag kom aldrig på varför, men det har med Elunes plan för alverna att göra... kanske skulle de vara beskyddare, jag vet inte.\n\nJag ser efter ägget så länge. Skaffa goda flankor från Silvermane-förföljare att mata den med efter kläckningen.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Det här duger fint, och om jag inte misstar mig är ditt lilla ägg snart redo att kläckas. Hur känns det att snart bli $g far:mor;? Haha, du trodde inte att du skulle få ett sådant ansvar, va?",
+        "346dd4f7aba6843188ba": "Älvdartare är allätare, de äter både kött och växter. Om ditt ägg ska kläckas måste vi vara beredda. De små gillar råa, saftiga köttstycken, tro det eller ej. Jag fick aldrig veta varför, men det har med Elunes plan för alverna att göra... kanske skulle de vara beskyddare, jag vet inte.$B$BJag tar hand om ägget så länge. Hämta fina köttstycken från Silvermane-smygare åt den lille när han kläckts.",
+        "3edb9dcf460692947925": "Har du hittat köttet, $N? Ägget är snart redo att kläckas. Om han inte får en bra första måltid kanske han inte överlever första veckan, och det vill jag inte.$B$BJag ska inte ljuga, $N. Jag är avundsjuk på att du fick ägget. Få mig inte att ångra att jag hjälpte dig.",
+        "d1d8b022ec3f169ee849": "Det här duger fint, och om jag inte misstar mig är ditt lilla ägg snart redo att kläckas. Hur känns det att snart bli $g far:mor;? Haha, du trodde inte att du skulle få ett sådant ansvar, va?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -513,6 +920,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "767989312e3cd448a7c6c3a588a7fc3442cd11deba732c75f4126c99fdd3d975"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -536,6 +963,12 @@
     },
     "trTR": {
       "description": "Sprite darter'lar hepçildir; yani hem et hem bitki yerler. Şu yumurtandan yavru çıkacaksa hazırlıklı olmalıyız. İnan veya inanma, bu küçükler için iyi yiyeceklerden biri çiğ ve sulu böğür etidir. Nedenini hiç öğrenemedim ama Elune'nin elfler için planıyla bir ilgisi var... belki koruyucu olmaları gerekiyordu falan, bilmiyorum.\n\nŞimdilik yumurtayla ben ilgilenirim. Sen de yavru çıktığında yesin diye bana güzel Silvermane stalker böğür etlerinden getirsen?",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Bunlar iş görür ve yanılmıyorsam küçük yumurtan çatlamak üzere. Yakında $g baba:anne; olmak nasıl hissettiriyor? Haha, böyle bir sorumluluk beklemiyordun, değil mi?",
+        "346dd4f7aba6843188ba": "Peri ejderleri hepçildir, yani hem et hem bitki yerler. Yumurtan çatlayacaksa hazırlıklı olmalıyız. İster inan ister inanma, bu küçükler çiğ ve sulu et parçalarını sever. Nedenini hiç öğrenemedim ama Elune'un elfler için planıyla ilgili... belki koruyucu olacaklardı, bilmiyorum.$B$BŞimdilik yumurtaya ben bakarım. Sen de yavru çıktığında yemesi için Silvermane avcılarından güzel et parçaları getir.",
+        "3edb9dcf460692947925": "Eti buldun mu, $N? Yumurtan çatlamak üzere. İlk öğünü yeterince iyi olmazsa ilk haftayı atlatamayabilir; bunun olmasını istemem.$B$BSana yalan söylemeyeceğim, $N. Bu yumurtayı elde ettiğin için seni kıskanıyorum. Yardım ettiğime pişman etme.",
+        "d1d8b022ec3f169ee849": "Bunlar iş görür ve yanılmıyorsam küçük yumurtan çatlamak üzere. Yakında $g baba:anne; olmak nasıl hissettiriyor? Haha, böyle bir sorumluluk beklemiyordun, değil mi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -552,6 +985,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "767989312e3cd448a7c6c3a588a7fc3442cd11deba732c75f4126c99fdd3d975"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -575,6 +1028,12 @@
     },
     "ukUA": {
       "description": "Райдужні хамелеони всеїдні і їдять як м'ясо, так і рослини. Якщо це яйце має вилупитися, нам слід підготуватися. Ці маленькі істоти полюбляють соковите сире м'ясо, зокрема вирізку срібногривих ловців. Я ніколи не зміг зрозуміти, чому це так. Мабуть, це такий задум Елуни... можливо, ельфи мали бути захисниками... не знаю.\n\nЯ попіклуюсь про яйце, а ти принеси мені кілька смачних вирізок срібногривих ловців для малюка.",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "Це чудово підійде, і, якщо не помиляюся, твоє яєчко ось-ось вилупиться. Як воно — скоро стати $g батьком:матір'ю;? Ха-ха, не очікувала такої відповідальності, еге ж?",
+        "346dd4f7aba6843188ba": "Фейські дракончики всеїдні: вони їдять і м'ясо, і рослини. Якщо твоє яйце скоро вилупиться, треба підготуватися. Повір чи ні, ці малюки люблять сирі соковиті шматки м'яса. Я так і не дізнався чому, але це пов'язано з планом Елуни для ельфів... може, вони мали бути захисниками, не знаю.$B$BЯ поки подбаю про яйце, а ти принеси доброго м'яса срібногривих переслідувачів, щоб малюк мав що їсти після вилуплення.",
+        "3edb9dcf460692947925": "Маєш уже м'ясо, $N? Яєчко ось-ось вилупиться. Якщо перша їжа буде недостатньо доброю, малюк може не пережити першого тижня, а я цього не хочу.$B$BНе брехатиму, $N. Я заздрю тобі через це яйце. Не змушуй мене шкодувати про допомогу.",
+        "d1d8b022ec3f169ee849": "Це чудово підійде, і, якщо не помиляюся, твоє яєчко ось-ось вилупиться. Як воно — скоро стати $g батьком:матір'ю;? Ха-ха, не очікував такої відповідальності, еге ж?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -592,6 +1051,26 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "767989312e3cd448a7c6c3a588a7fc3442cd11deba732c75f4126c99fdd3d975"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -617,6 +1096,12 @@
     },
     "zhCN": {
       "description": "小精龙是杂食动物——它们既吃肉也吃植物。要是这颗蛋即将孵化的话，我们最好有所准备。信不信由你，这些小家伙最喜欢吃生的新鲜腰肉。我始终不明白为什么，但是这也许和艾露恩的旨意有关……或许它们将成为守护者或是别的什么，谁知道呢。\n\n我会照顾好这颗蛋，而你要负责找到一些银鬃捕猎者的肉，以便在小精龙孵化后喂食。",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "很好，要是我没猜错的话，它就要孵化了。感觉如何?你知道，你就要成为妈妈了。哈哈，你还没想到要承担这样的责任吧，对吗?\n",
+        "346dd4f7aba6843188ba": "小精龙是杂食动物——它们既吃肉也吃植物。要是这颗蛋即将孵化的话，我们最好有所准备。信不信由你，这些小家伙最喜欢吃生的新鲜腰肉。我始终不明白为什么，但是这也许和艾露恩的旨意有关……或许它们将成为守护者或是别的什么，谁知道呢。\n\n我会照顾好这颗蛋，而你要负责找到一些银鬃捕猎者的肉，以便在小精龙孵化后喂食。",
+        "3edb9dcf460692947925": "找到肉了吗，$N?这颗蛋就快孵化了。要是第一餐不喂饱，没准它连一周都活不了，我可不愿意发生这样的事。\n\n我没骗你，$N。我很是羡慕你能得到这颗蛋呢。别让我後悔这样帮助你。",
+        "d1d8b022ec3f169ee849": "很好，要是我没猜错的话，它就要孵化了。感觉如何?你知道，你就要成为爸爸了。哈哈，你还没想到要承担这样的责任吧，对吗?\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -632,6 +1117,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -654,6 +1163,12 @@
     },
     "zhTW": {
       "description": "小精龍是雜食動物——它們既吃肉也吃植物。要是這顆蛋即將孵化的話，我們最好有所準備。信不信由你，這些小傢伙最喜歡吃生的新鮮腰肉。我始終不明白為什麼，但是這也許和伊露恩的旨意有關……或許它們將成為守護者或是別的什麼，誰知道呢。\n\n我會照顧好這顆蛋，而你要負責找到一些銀鬃捕獵者的肉，以便在小精龍孵化後餵食。",
+      "dialogue": {
+        "2e8ff5d19257cc70e398": "這些很合適，而且如果我沒看錯，你的小蛋就快孵化了。即將成為$g 父親:母親;，感覺如何？哈哈，沒想到要承擔這樣的責任吧？",
+        "346dd4f7aba6843188ba": "小精龍是雜食動物——它們既吃肉也吃植物。要是這顆蛋即將孵化的話，我們最好有所準備。信不信由你，這些小傢伙最喜歡吃生的新鮮腰肉。我始終不明白為什麼，但是這也許和艾露恩的旨意有關……或許它們將成為守護者或是別的什麼，誰知道呢。\n\n我會照顧好這顆蛋，而你要負責找到一些銀鬃捕獵者的肉，以便在小精龍孵化後餵食。",
+        "3edb9dcf460692947925": "找到肉了嗎，$N?這顆蛋就快孵化了。要是第一餐不餵飽，沒準它連一週都活不了，我可不願意發生這樣的事。\n\n我沒騙你，$N。我很是羨慕你能得到這顆蛋呢。別讓我後悔這樣幫助你。",
+        "d1d8b022ec3f169ee849": "這些很合適，而且如果我沒看錯，你的小蛋就快孵化了。即將成為$g 父親:母親;，感覺如何？哈哈，沒想到要承擔這樣的責任吧？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -669,6 +1184,28 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.2e8ff5d19257cc70e398": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.346dd4f7aba6843188ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.3edb9dcf460692947925": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d1d8b022ec3f169ee849": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

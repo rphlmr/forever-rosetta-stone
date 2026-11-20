@@ -1,7 +1,45 @@
 {
+  "dialogueContexts": {
+    "619de86e3d2a9a65c5c9": {
+      "lineId": "q:2608:progress",
+      "npcId": 7207,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "a055aa72987b45d98a0b": {
+      "lineId": "q:2608:complete",
+      "npcId": 7207,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "b8cdc3a538cc16f5d705": {
+      "lineId": "q:2608:accept:f",
+      "npcId": 7207,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "eb225b9fea9a7aab9c0e": {
+      "lineId": "q:2608:accept:m",
+      "npcId": 7207,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Můj ty světe, vypadáš jako smrt. Oprava – smrt už jsem viděl, ty vypadáš ještě hůř než smrt. Právě vy musíte být to, co smrt vykašlala při své poslední lékařské prohlídce.\n\nHahaha! Slyšíš to, Noarme? To si zapiš!\n\n*Kašel* Ehm ano, abych ti mohl pomoct, budu ti muset odebrat trochu krve. Neboj se, bolí to jen prvních párkrát... tak padesátkrát nebo tak nějak... lehni si (/lay down), až budeš moci podstoupit zákrok, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Až budeš připraven na vyšetření, lehni si pomocí /lay a začnu s odběrem krve.",
+        "a055aa72987b45d98a0b": "Dej mi chvíli na poradu s kolegy, $N. Doktore Montgomery, pane Noarme, poraďme se!",
+        "b8cdc3a538cc16f5d705": "Propána, vypadáš jako smrt. Oprava: smrt jsem viděl a vypadáš hůř. Ty, $gpane:slečno;, jsi to, co smrt vykašlala při poslední prohlídce.$B$BHa! Slyšel jsi to, Noarme? Zapiš si to!$B$B*Kašel* Ehm ano, abych ti pomohl, musím ti odebrat trochu krve. Neboj, bolí to jen prvních pár... asi padesátkrát... Až bude čas na ošetření, použij /lay a lehni si, $N.",
+        "eb225b9fea9a7aab9c0e": "Propána, vypadáš jako smrt. Oprava: smrt jsem viděl a vypadáš hůř. Ty, $gpane:slečno;, jsi to, co smrt vykašlala při poslední prohlídce.$B$BHa! Slyšel jsi to, Noarme? Zapiš si to!$B$B*Kašel* Ehm ano, abych ti pomohl, musím ti odebrat trochu krve. Neboj, bolí to jen prvních pár... asi padesátkrát... Až bude čas na ošetření, použij /lay a lehni si, $N."
+      },
       "eventObjectiveLabel": "Diagnóza dokončena",
       "summary": "Použij /lay a lehni si, aby tě doktor Mixilpixil mohl vyšetřit. Jak může najít lék, když nezná příčinu?",
       "title": "Zanzilův dotek",
@@ -12,6 +50,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "90b4d65aa0bdad2295f2db226b461fe1e277a24cda28f7063ad1eed988d6030b"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -39,6 +97,12 @@
     },
     "daDK": {
       "description": "Åh, du ligner døden. Rettelse: Jeg har set døden, og du ser værre ud end døden. Du, min herre, er det, døden hostede op ved sit sidste lægetjek.\n\nHah! Hørte du det, Noarm? Skriv den ned!\n\n*Host* Hm ja, for at kunne hjælpe dig skal jeg tage noget blod. Bare rolig, det gør kun ondt de første ... halvtreds gange eller deromkring ... /lay dig ned, når du er klar til behandlingen, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Når du er klar til undersøgelsen, så brug /lay til at lægge dig, så begynder jeg blodtapningen.",
+        "a055aa72987b45d98a0b": "Giv mig et øjeblik til at rådføre mig med mine kolleger, $N. Doktor Montgomery, hr. Noarm, lad os konferere!",
+        "b8cdc3a538cc16f5d705": "Åh dog, du ligner døden. Rettelse: Jeg har set døden, og du ser værre ud. Du, $gherre:frøken;, ligner det, døden hostede op ved sin sidste undersøgelse.$B$BHa! Hørte du det, Noarm? Skriv den ned!$B$B*Host* Hrm ja, for at hjælpe dig må jeg tage noget blod. Bare rolig, det gør kun ondt de første par... halvtreds gange eller deromkring... Brug /lay og læg dig ned, når du er klar til behandlingen, $N.",
+        "eb225b9fea9a7aab9c0e": "Åh dog, du ligner døden. Rettelse: Jeg har set døden, og du ser værre ud. Du, $gherre:frøken;, ligner det, døden hostede op ved sin sidste undersøgelse.$B$BHa! Hørte du det, Noarm? Skriv den ned!$B$B*Host* Hrm ja, for at hjælpe dig må jeg tage noget blod. Bare rolig, det gør kun ondt de første par... halvtreds gange eller deromkring... Brug /lay og læg dig ned, når du er klar til behandlingen, $N."
+      },
       "eventObjectiveLabel": "Diagnose fuldført",
       "summary": "/Lay dig ned for at blive undersøgt af Doc Mixilpixil. Hvordan skal han finde kuren, hvis han ikke kan finde årsagen?",
       "title": "Zanzils berøring",
@@ -49,6 +113,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "90b4d65aa0bdad2295f2db226b461fe1e277a24cda28f7063ad1eed988d6030b"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -73,6 +157,12 @@
     },
     "deDE": {
       "description": "Meine Güte, Ihr seht ja aus wie der Tod. Nein, falsch. Ich habe den Tod schon gesehen - Ihr seht schlimmer aus. Ihr seht aus wie das, was der Tod bei seiner letzten Vorsorgeuntersuchung ausgespuckt hat.\n\nHa! Habt Ihr das gehört, Noarm? Schreibt das auf!\n\n<hustet> Ähem, ja, damit ich Euch helfen kann, muss ich Euch Blut abnehmen. Und keine Sorge, es tut nur die ersten... fünfzig Male oder so weh... Wenn Ihr bereit für die Behandlung seid, {name}, solltet Ihr Euch bitte /hinlegen.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Wenn Ihr bereit seid für die Untersuchung, bitte auf den Boden /hinlegen, dann fange ich mit der Phlebotomie an. ",
+        "a055aa72987b45d98a0b": "Gebt mir einen Moment Zeit, um mich mit meinen Kollegen zu beraten, $N. Dr. Montgomery, Herr Noarm, dann wollen wir uns mal besprechen!",
+        "b8cdc3a538cc16f5d705": "Meine Güte, Ihr seht ja aus wie der Tod. Nein, falsch. Ich habe den Tod schon gesehen - Ihr seht schlimmer aus. Ihr seht aus wie das, was der Tod bei seiner letzten Vorsorgeuntersuchung ausgespuckt hat.\n\nHa! Habt Ihr das gehört, Noarm? Schreibt das auf!\n\nÄhem, ja, damit ich Euch helfen kann, muss ich Euch Blut abnehmen. Und keine Sorge, es tut nur die ersten... fünfzig Male oder so weh... Wenn Ihr bereit für die Behandlung seid, $n, solltet Ihr Euch bitte /hinlegen.",
+        "eb225b9fea9a7aab9c0e": "Meine Güte, Ihr seht ja aus wie der Tod. Nein, falsch. Ich habe den Tod schon gesehen - Ihr seht schlimmer aus. Ihr seht aus wie das, was der Tod bei seiner letzten Vorsorgeuntersuchung ausgespuckt hat.\n\nHa! Habt Ihr das gehört, Noarm? Schreibt das auf!\n\nÄhem, ja, damit ich Euch helfen kann, muss ich Euch Blut abnehmen. Und keine Sorge, es tut nur die ersten... fünfzig Male oder so weh... Wenn Ihr bereit für die Behandlung seid, $n, solltet Ihr Euch bitte /hinlegen."
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "Ihr solltet Euch /hinlegen, damit Doc Mixilpixil Euch untersuchen kann. Denn wie soll er ein Heilmittel finden, wenn er die Ursache nicht finden kann?",
       "title": "Die Berührung von Zanzil",
@@ -82,6 +172,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -103,6 +217,12 @@
     },
     "enUS": {
       "description": "Oh my, you look like death. Correction - I've seen death, you look worse than death. You, sir, would be what death coughed up at his last physical.\n\nHah! You hear that Noarm? Write that one down!\n\n*Cough* Hrm yes, in order for me to help you, I'll need to draw some blood. Don't worry, it only hurts the first few... fifty times or so... /lay down when you're ready for the treatment, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "When you're ready for the examination, /lay down on the ground and I'll begin the phlebotomy.",
+        "a055aa72987b45d98a0b": "Give me a moment to confer with my colleagues, $N. Dr. Montgomery, Mr. Noarm, let us conference!",
+        "b8cdc3a538cc16f5d705": "Oh my, you look like death. Correction - I've seen death, you look worse than death. You, $g sir:miss;, would be what death coughed up at his last physical.$B$BHah! You hear that Noarm? Write that one down!$B$B*Cough* Hrm yes, in order for me to help you, I'll need to draw some blood. Don't worry, it only hurts the first few... fifty times or so... /lay down when you're ready for the treatment, $N.",
+        "eb225b9fea9a7aab9c0e": "Oh my, you look like death. Correction - I've seen death, you look worse than death. You, $g sir:miss;, would be what death coughed up at his last physical.$B$BHah! You hear that Noarm? Write that one down!$B$B*Cough* Hrm yes, in order for me to help you, I'll need to draw some blood. Don't worry, it only hurts the first few... fifty times or so... /lay down when you're ready for the treatment, $N."
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "/Lay down to be examined by Doc Mixilpixil. How can he find the cure if he can't find the cause?\n",
       "title": "The Touch of Zanzil",
@@ -112,6 +232,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -133,6 +277,12 @@
     },
     "esES": {
       "description": "Oh my, you look like death. Correction - I've seen death, you look worse than death. You, sir, would be what death coughed up at his last physical.\n\nHah! You hear that Noarm? Write that one down!\n\n*Cough* Hrm yes, in order for me to help you, I'll need to draw some blood. Don't worry, it only hurts the first few... fifty times or so... /lay down when you're ready for the treatment, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Cuando esté listo para el examen, acuéstese en el suelo y comenzaré la flebotomía.",
+        "a055aa72987b45d98a0b": "Dame un momento para hablarlo con mis colegas, $n. Dr. Montgomery, Mr. Noarm, ¡hablémoslo!",
+        "b8cdc3a538cc16f5d705": "¡Oh! Pareces como muerta. Corrección, he visto muchos muertos, tú tienes peor aspecto. señorita, tú serías lo que la muerte obtuvo como resultado en su último examen médico.\n\n¡Ja! ¿Has oído eso, Noarm? ¡Escríbelo!\n\n*Tose* Mmm, sí. Para poder ayudarte, necesito sacarte sangre. No te preocupes, solo duele las primeras... cincuenta veces, o así... Túmbate cuando estés $gpreparado:preparada para el tratamiento, $N.",
+        "eb225b9fea9a7aab9c0e": "¡Oh! Pareces como muerto. Corrección, he visto muchos muertos, tú tienes peor aspecto. Caballero, tú serías lo que la muerte obtuvo como resultado en su último examen médico.\n\n¡Ja! ¿Has oído eso, Noarm? ¡Escríbelo!\n\n*Tose* Mmm, sí. Para poder ayudarte, necesito sacarte sangre. No te preocupes, solo duele las primeras... cincuenta veces, o así... Túmbate cuando estés $gpreparado:preparada para el tratamiento, $N."
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "Túmbate para que te examine Doc Mixilpixil. ¿Cómo va a encontrar la cura si no encuentra la causa?",
       "title": "Toque de Zanzil",
@@ -142,6 +292,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -163,6 +337,12 @@
     },
     "esMX": {
       "description": "¡Oh! Pareces como muerto. Corrección, he visto muchos muertos, tú tienes peor aspecto. Caballero, tú serías lo que la muerte obtuvo como resultado en su último examen médico.\n\n¡Ja! ¿Has oído eso, Noarm? ¡Escríbelo!\n\n*Tose* Mmm, sí. Para poder ayudarte, necesito sacarte sangre. No te preocupes, solo duele las primeras... cincuenta veces, o así... Túmbate cuando estés preparado para el tratamiento, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Cuando estés listo para el examen, acuéstate en el suelo y comenzaré la flebotomía.",
+        "a055aa72987b45d98a0b": "Dame un momento para hablar con mis colegas, $n. Dr. Montgomery, Sr. Noarm, ¡tengamos una conferencia!",
+        "b8cdc3a538cc16f5d705": "¡Oh! Pareces como muerta. Corrección, he visto muchos muertos, tú tienes peor aspecto. Señorita, tú serías lo que la muerte obtuvo como resultado en su último examen médico.\n\n¡Ja! ¿Has oído eso, Noarm? ¡Escríbelo!\n\n*Tose* Mmm, sí. Para poder ayudarte, necesito sacarte sangre. No te preocupes, solo duele las primeras... cincuenta veces, o así... Túmbate cuando estés preparada para el tratamiento, $n.",
+        "eb225b9fea9a7aab9c0e": "¡Oh! Pareces como muerto. Corrección, he visto muchos muertos, tú tienes peor aspecto. Caballero, tú serías lo que la muerte obtuvo como resultado en su último examen médico.\n\n¡Ja! ¿Has oído eso, Noarm? ¡Escríbelo!\n\n*Tose* Mmm, sí. Para poder ayudarte, necesito sacarte sangre. No te preocupes, solo duele las primeras... cincuenta veces, o así... Túmbate cuando estés preparado para el tratamiento, $n."
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "Túmbate para que te examine Doc Mixilpixil. ¿Cómo va a encontrar la cura si no encuentra la causa?",
       "title": "Toque de Zanzil",
@@ -172,6 +352,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -193,6 +397,12 @@
     },
     "frFR": {
       "description": "Oh Ciel ! Vous ressemblez à la mort. Je corrige : j'ai vu la mort, vous semblez en pire état. Vous ressemblez à ce que serait la mort à son dernier instant.\n\nAh ! Vous entendez ce Noarm ? Notez-le !\n\n*soupir* Hum ! Oui, pour vous aider, je dois prendre un peu de votre sang. Ne vous inquiétez pas, ça ne fait mal que les… cinquante premières fois. Allongez-vous (/coucher) quand vous serez prêt pour le traitement, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Lorsque vous serez prêt pour l'examen, /couchez-vous sur le sol et je commencerai la phlébotomie.",
+        "a055aa72987b45d98a0b": "Donnez-moi un moment pour discuter avec mes confrères, $N. Docteur Montgomery, M. Noarm, réunissons-nous !",
+        "b8cdc3a538cc16f5d705": "Oh Ciel ! Vous ressemblez à la mort. Je corrige : j'ai vu la mort, vous semblez en pire état. Vous ressemblez à ce que serait la mort à son dernier instant.\n\nAh ! Vous entendez ce Noarm ? Notez-le !\n\n*soupir* Hum ! Oui, pour vous aider, je dois prendre un peu de votre sang. Ne vous inquiétez pas, ça ne fait mal que les… cinquante premières fois. Allongez-vous (/coucher) quand vous serez prête pour le traitement, $N.",
+        "eb225b9fea9a7aab9c0e": "Oh Ciel ! Vous ressemblez à la mort. Je corrige : j'ai vu la mort, vous semblez en pire état. Vous ressemblez à ce que serait la mort à son dernier instant.\n\nAh ! Vous entendez ce Noarm ? Notez-le !\n\n*soupir* Hum ! Oui, pour vous aider, je dois prendre un peu de votre sang. Ne vous inquiétez pas, ça ne fait mal que les… cinquante premières fois. Allongez-vous (/coucher) quand vous serez prêt pour le traitement, $N."
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "/Lay down to be examined by Doc Mixilpixil. How can he find the cure if he can't find the cause?\n",
       "title": "Le toucher de Zanzil",
@@ -202,6 +412,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -223,6 +457,12 @@
     },
     "hrHR": {
       "description": "O, Bože, izgledaš kao smrt. Ispravak: vidio sam smrt, izgledaš gore od smrti. Gospodine, ti si ono što je smrt iskašljala na posljednjem sistematskom pregledu.\n\nHa! Čuješ li to, Noarm? Zapiši!\n\n*Kašalj* Hm, da, da bih ti pomogao, morat ću ti izvaditi krv. Ne brini, boli samo prvih nekoliko... pedesetak puta... /lay kad budeš spreman za liječenje, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Kad budeš spreman za pregled, upotrijebi /lay i lezi na tlo pa ću započeti vađenje krvi.",
+        "a055aa72987b45d98a0b": "Daj mi trenutak da se posavjetujem s kolegama, $N. Doktore Montgomery, gospodine Noarm, savjetujmo se!",
+        "b8cdc3a538cc16f5d705": "O, izgledaš kao smrt. Ispravak: vidio sam smrt, a ti izgledaš gore. Ti si, $ggospodine:gospođice;, ono što je smrt iskašljala na posljednjem pregledu.$B$BHa! Jesi li čuo, Noarm? Zapiši to!$B$B*Kašalj* Hm, da bih ti pomogao, moram uzeti malo krvi. Ne brini, boli samo prvih nekoliko... pedesetak puta... Kad dođe vrijeme za liječenje, upotrijebi /lay i lezi, $N.",
+        "eb225b9fea9a7aab9c0e": "O, izgledaš kao smrt. Ispravak: vidio sam smrt, a ti izgledaš gore. Ti si, $ggospodine:gospođice;, ono što je smrt iskašljala na posljednjem pregledu.$B$BHa! Jesi li čuo, Noarm? Zapiši to!$B$B*Kašalj* Hm, da bih ti pomogao, moram uzeti malo krvi. Ne brini, boli samo prvih nekoliko... pedesetak puta... Kad dođe vrijeme za liječenje, upotrijebi /lay i lezi, $N."
+      },
       "eventObjectiveLabel": "Dijagnoza dovršena",
       "summary": "/Lay da te doktor Mixilpixil pregleda. Kako može pronaći lijek ako ne može pronaći uzrok?\n",
       "title": "Zanzilov dodir",
@@ -233,6 +473,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "90b4d65aa0bdad2295f2db226b461fe1e277a24cda28f7063ad1eed988d6030b"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -257,6 +517,12 @@
     },
     "itIT": {
       "description": "Oh cielo, sembri la morte. Mi correggo: ho visto la morte, tu sembri peggio. Tu, signore, saresti ciò che la morte ha tossito durante la sua ultima visita medica.\n\nAh! Hai sentito, Noarm? Segnatela!\n\n*Tosse* Ehm, sì, per aiutarti dovrò prelevarti del sangue. Non preoccuparti, fa male solo le prime... cinquanta volte, più o meno... Sdraiati quando sei pronto per il trattamento, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Quando sei pronto per l'esame, usa /lay per sdraiarti a terra e inizierò il prelievo di sangue.",
+        "a055aa72987b45d98a0b": "Dammi un momento per consultarmi con i miei colleghi, $N. Dottor Montgomery, Signor Noarm, a consulto!",
+        "b8cdc3a538cc16f5d705": "Oh cielo, sembri la morte in persona. Correggo — io la morte l'ho vista, e tu sei messa peggio. Tu, signorina, saresti quello che la morte ha tossito fuori alla sua ultima visita medica.\n\nAh! Hai sentito, Noarm? Scrivitela!\n\n*Coff* Ehm, sì, per poterti aiutare dovrò prelevarti un po' di sangue. Non preoccuparti, fa male solo le prime... cinquanta volte o giù di lì... Usa /lay down quando sei pronta per il trattamento, $N.",
+        "eb225b9fea9a7aab9c0e": "Oh cielo, sembri la morte in persona. Correggo — io la morte l'ho vista, e tu sei messo peggio. Tu, signore, saresti quello che la morte ha tossito fuori alla sua ultima visita medica.\n\nAh! Hai sentito, Noarm? Scrivitela!\n\n*Coff* Ehm, sì, per poterti aiutare dovrò prelevarti un po' di sangue. Non preoccuparti, fa male solo le prime... cinquanta volte o giù di lì... Usa /lay down quando sei pronto per il trattamento, $N."
+      },
       "eventObjectiveLabel": "Diagnosi completata",
       "summary": "Usa /Lay per sdraiarti e farti esaminare da Doc Mixilpixil. Come può trovare la cura se non riesce a trovare la causa?\n",
       "title": "Il tocco di Zanzil",
@@ -267,6 +533,29 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "90b4d65aa0bdad2295f2db226b461fe1e277a24cda28f7063ad1eed988d6030b"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -291,6 +580,12 @@
     },
     "koKR": {
       "description": "아, 이런. 당신 안색이 꼭 죽을 상이군. 아니지... 송장은 많이 봐왔지만 당신 얼굴은 상태가 더 안 좋아 보이는데... 그러니까 당신은 귀신보고 놀래 쓰러진 얼굴이라고나 할까...?\n\n하하! 방금 내가 한 말 들었니, 노암? 그거 꼭좀 적어 두라고!\n\n*콜록* 에헴, 그러니까... 내가 당신을 도와주려면 피를 좀 뽑아야 하겠소. 걱정하지 마시오. 아주 쪼오금... 많이 아플 뿐이니까... 치료 받을 준비가 되거든 /누워 주시오.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "검사 준비가 되면 /바닥에 눕습니다. 제가 정맥 절개를 시작하겠습니다.",
+        "a055aa72987b45d98a0b": "제 동료 $N과 의논할 시간을 주세요.  몽고메리 박사님, 노암 씨, 회의합시다!",
+        "b8cdc3a538cc16f5d705": "오, 당신은 죽음처럼 보입니다.  정정 - 나는 죽음을 보았다, 당신은 죽음보다 더 나빠 보인다.  $g 선생님, 당신은 그의 마지막 신체검사에서 죽음을 토해냈을 것입니다.\n\nHah!  Noarm이 들리나요?  적어두세요!\n\n*기침* 음, 네, 도와드리려면 피를 좀 뽑아야겠습니다.  걱정하지 마세요. 처음 몇 번만 아파요... 50번 정도... /치료할 준비가 되면 누워요, $N.",
+        "eb225b9fea9a7aab9c0e": "오, 당신은 죽음처럼 보입니다.  정정 - 나는 죽음을 보았다, 당신은 죽음보다 더 나빠 보인다.  $g 선생님, 당신은 그의 마지막 신체검사에서 죽음을 토해냈을 것입니다.\n\nHah!  Noarm이 들리나요?  적어두세요!\n\n*기침* 음, 네, 도와드리려면 피를 좀 뽑아야겠습니다.  걱정하지 마세요. 처음 몇 번만 아파요... 50번 정도... /치료할 준비가 되면 누워요, $N."
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "닥 믹실픽실에게 검사를 받으려면 \"/누워\"야 합니다. 믹실픽실은 원인도 모르는 병의 치료법을 어떻게 찾을 수 있을까요?",
       "title": "잔질의 손길",
@@ -300,6 +595,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -321,6 +640,12 @@
     },
     "plPL": {
       "description": "Ojej, wyglądasz jak śmierć. Poprawka: widziałem śmierć, wyglądasz gorzej. Panie, wyglądasz jak to, co śmierć wykrztusiła podczas ostatniego badania.\n\nHa! Słyszysz, Noarm? Zapisz to!\n\n*Kaszel* Hrm, tak, żeby ci pomóc, muszę pobrać trochę krwi. Nie martw się, boli tylko przez pierwsze kilka... jakieś pięćdziesiąt razy... Połóż się komendą /lay, gdy będziesz gotowy na zabieg, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Gdy nadejdzie pora badania, użyj /lay, by położyć się na ziemi, a rozpocznę pobieranie krwi.",
+        "a055aa72987b45d98a0b": "Daj mi chwilę na naradę z kolegami, $N. Doktorze Montgomery, panie Noarm, naradźmy się!",
+        "b8cdc3a538cc16f5d705": "O rety, wyglądasz jak śmierć. Poprawka: widziałem śmierć i wyglądasz gorzej. Ty, $gpanie:panno;, jesteś tym, co śmierć wykrztusiła podczas ostatniego badania.$B$BHa! Słyszałeś to, Noarm? Zapisz to!$B$B*Kaszel* Hm, tak, żeby ci pomóc, muszę pobrać trochę krwi. Nie martw się, boli tylko przez pierwsze kilka... pięćdziesiąt razy... Użyj /lay i połóż się, gdy nadejdzie pora zabiegu, $N.",
+        "eb225b9fea9a7aab9c0e": "O rety, wyglądasz jak śmierć. Poprawka: widziałem śmierć i wyglądasz gorzej. Ty, $gpanie:panno;, jesteś tym, co śmierć wykrztusiła podczas ostatniego badania.$B$BHa! Słyszałeś to, Noarm? Zapisz to!$B$B*Kaszel* Hm, tak, żeby ci pomóc, muszę pobrać trochę krwi. Nie martw się, boli tylko przez pierwsze kilka... pięćdziesiąt razy... Użyj /lay i połóż się, gdy nadejdzie pora zabiegu, $N."
+      },
       "eventObjectiveLabel": "Diagnoza ukończona",
       "summary": "Połóż się komendą /Lay, by doktor Mixilpixil mógł cię zbadać. Jak ma znaleźć lekarstwo, jeśli nie zna przyczyny?\n",
       "title": "Dotyk Zanzila",
@@ -331,6 +656,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "90b4d65aa0bdad2295f2db226b461fe1e277a24cda28f7063ad1eed988d6030b"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -355,6 +700,12 @@
     },
     "ptBR": {
       "description": "Carambola, você está a cara da morte. Correção: eu já vi a morte, você está ainda pior. Você, mocinho, seria algo que a morte escarraria no derradeiro exame médico.\n\nRá! Ouviu essa, Quilo? Pois trate de anotar essa!\n\n*Tosse* Hm, sim, posso te ajudar, mas primeiro preciso coletar seu sangue. Não se preocupe, só dói nas primeiras... cinquenta vezes... {name}, quando estiver pronto para o tratamento, é só deitar.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Quando estiver pronto para o exame, use /lay para se deitar no chão e começarei a coleta de sangue.",
+        "a055aa72987b45d98a0b": "Só um momento, $N, preciso consultar os meus colegas. Dr. Monteiro, sr. Quilo, vamos botar a cuca para trabalhar!",
+        "b8cdc3a538cc16f5d705": "Carambola, você está a cara da morte. Correção: eu já vi a morte, você está ainda pior. Você, mocinha, seria algo que a morte escarraria no derradeiro exame médico.\n\nRá! Ouviu essa, Quilo? Pois trate de anotar essa!\n\n*Tosse* Hm, sim, posso te ajudar, mas primeiro preciso coletar seu sangue. Não se preocupe, só dói nas primeiras... cinquenta vezes... $N, quando estiver pronta para o tratamento, é só deitar.",
+        "eb225b9fea9a7aab9c0e": "Carambola, você está a cara da morte. Correção: eu já vi a morte, você está ainda pior. Você, mocinho, seria algo que a morte escarraria no derradeiro exame médico.\n\nRá! Ouviu essa, Quilo? Pois trate de anotar essa!\n\n*Tosse* Hm, sim, posso te ajudar, mas primeiro preciso coletar seu sangue. Não se preocupe, só dói nas primeiras... cinquenta vezes... $N, quando estiver pronto para o tratamento, é só deitar."
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "/Lay down to be examined by Doc Mixilpixil. How can he find the cure if he can't find the cause?\n",
       "title": "O toque de Zanzil",
@@ -364,6 +715,29 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -385,6 +759,12 @@
     },
     "ruRU": {
       "description": "Ох, вы так выглядите – точь-в-точь мертвец. Поправочка – я видел мертвецов, вы выглядите еще хуже. Вы, сударь, будете предсмертной отрыжкой самой смерти.\n\nХа! Слышал, Ноарм? Запиши-ка это!\n\n*Кашляет.* Хмм, да, чтобы я мог помочь, мне нужно будет взять у вас немного крови. Не беспокойтесь, больно лишь первые... раз пятьдесят или около того... Ложитесь, и приступим к лечению, {name}!",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Когда будешь $готов:готова;, ложись и мы начнем обследование.",
+        "a055aa72987b45d98a0b": "Я сейчас посоветуюсь со своими коллегами, $N. Коллеги, что вы думаете... ?",
+        "b8cdc3a538cc16f5d705": "Ох, вы так выглядите – точь-в-точь мертвец. Поправочка – я видел мертвецов, вы выглядите еще хуже. Вы, детка, будете предсмертной отрыжкой самой смерти.\n\nХа! Слышал, Ноарм? Запиши-ка это!\n\n*Кашляет.* Хмм, да, чтобы я мог помочь, мне нужно будет взять у вас немного крови. Не беспокойтесь, больно лишь первые... раз пятьдесят или около того... Ложитесь, и приступим к лечению, $N!",
+        "eb225b9fea9a7aab9c0e": "Ох, вы так выглядите – точь-в-точь мертвец. Поправочка – я видел мертвецов, вы выглядите еще хуже. Вы, сударь, будете предсмертной отрыжкой самой смерти.\n\nХа! Слышал, Ноарм? Запиши-ка это!\n\n*Кашляет.* Хмм, да, чтобы я мог помочь, мне нужно будет взять у вас немного крови. Не беспокойтесь, больно лишь первые... раз пятьдесят или около того... Ложитесь, и приступим к лечению, $N!"
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "Лягте на землю (действие /lay) для осмотра Доком Миксиль-Пиксилем – он не сможет подобрать лекарство, пока не найдет причину болезни.",
       "title": "Прикосновение Занзила",
@@ -394,6 +774,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -415,6 +819,12 @@
     },
     "svSE": {
       "description": "Oj då, du ser ut som döden. Rättelse: jag har sett döden, och du ser värre ut än döden. Du, $gmin herre:min fröken;, ser ut som något döden hostade upp vid sin senaste läkarundersökning.\n\nHa! Hörde du det, Noarm? Skriv upp det!\n\n*Host* Hrm, ja, för att jag ska kunna hjälpa dig måste jag ta lite blod. Oroa dig inte, det gör bara ont de första ... femtio gångerna eller så ... /lay ned dig när du är redo för behandlingen, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "När du är redo för undersökningen, använd /lay för att lägga dig på marken så börjar jag blodtappningen.",
+        "a055aa72987b45d98a0b": "Ge mig ett ögonblick att rådfråga mina kollegor, $N. Doktor Montgomery, herr Noarm, låt oss rådgöra!",
+        "b8cdc3a538cc16f5d705": "Oj, du ser ut som döden. Rättelse: jag har sett döden, och du ser värre ut. Du, $gherrn:fröken;, ser ut som det döden hostade upp vid sin senaste läkarundersökning.$B$BHa! Hörde du det, Noarm? Skriv ner det!$B$B*Host* Hrm ja, för att hjälpa dig måste jag ta lite blod. Oroa dig inte, det gör bara ont de första... femtio gångerna eller så... Använd /lay och lägg dig när du är redo för behandlingen, $N.",
+        "eb225b9fea9a7aab9c0e": "Oj, du ser ut som döden. Rättelse: jag har sett döden, och du ser värre ut. Du, $gherrn:fröken;, ser ut som det döden hostade upp vid sin senaste läkarundersökning.$B$BHa! Hörde du det, Noarm? Skriv ner det!$B$B*Host* Hrm ja, för att hjälpa dig måste jag ta lite blod. Oroa dig inte, det gör bara ont de första... femtio gångerna eller så... Använd /lay och lägg dig när du är redo för behandlingen, $N."
+      },
       "eventObjectiveLabel": "Diagnosen färdig",
       "summary": "/lay ned dig för att undersökas av doktor Mixilpixil. Hur ska han hitta botemedlet om han inte hittar orsaken?",
       "title": "Zanzils beröring",
@@ -425,6 +835,26 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -451,6 +881,12 @@
     },
     "trTR": {
       "description": "Aman aman, ölü gibi görünüyorsun. Düzeltiyorum: ben ölümü gördüm, sen ölümden de beter görünüyorsun. Sen, ölümün son muayenesinde öksürüp çıkardığı şey olurdun.\n\nHah! Duydun mu, Noarm? Şunu not al!\n\n*Öhö* Hım, evet, sana yardım edebilmem için biraz kan almam gerekecek. Merak etme, sadece ilk birkaç... elli kere falan acıyor... Tedaviye hazır olduğunda /lay down komutunu kullan, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Muayeneye hazır olduğunda /lay kullanarak yere uzan, ben de kan almaya başlayayım.",
+        "a055aa72987b45d98a0b": "Meslektaşlarıma danışmam için bir dakika ver, $N. Doktor Montgomery, Bay Noarm, toplanalım!",
+        "b8cdc3a538cc16f5d705": "Aman, ölüm gibi görünüyorsun. Düzeltme: Ölümü gördüm, sen daha kötü görünüyorsun. Sen, $gbeyefendi:hanımefendi;, ölümün son muayenesinde öksürerek çıkardığı şeye benziyorsun.$B$BHa! Duydun mu Noarm? Bunu yaz!$B$B*Öksürük* Hım evet, sana yardım etmek için biraz kan almam gerek. Merak etme, sadece ilk birkaç... elli sefer kadar acır... Tedaviye hazır olduğunda /lay kullanıp uzan, $N.",
+        "eb225b9fea9a7aab9c0e": "Aman, ölüm gibi görünüyorsun. Düzeltme: Ölümü gördüm, sen daha kötü görünüyorsun. Sen, $gbeyefendi:hanımefendi;, ölümün son muayenesinde öksürerek çıkardığı şeye benziyorsun.$B$BHa! Duydun mu Noarm? Bunu yaz!$B$B*Öksürük* Hım evet, sana yardım etmek için biraz kan almam gerek. Merak etme, sadece ilk birkaç... elli sefer kadar acır... Tedaviye hazır olduğunda /lay kullanıp uzan, $N."
+      },
       "eventObjectiveLabel": "Teşhis tamamlandı",
       "summary": "Doktor Mixilpixil'in seni muayene edebilmesi için /lay komutuyla yere uzan. Nedeni bulamazsa çareyi nasıl bulsun?\n",
       "title": "Zanzil'in Dokunuşu",
@@ -461,6 +897,26 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -485,6 +941,12 @@
     },
     "ukUA": {
       "description": "Ох, ти схожий на смерть. Виправляюся: я бачив смерть, і ти виглядаєш гірше. Пане, ви — те, що смерть викашляла на останньому медогляді.\n\nХа! Чув, Noarm? Запиши це!\n\n*Кахикає* Гм, так, щоб допомогти тобі, мені треба взяти трохи крові. Не хвилюйся, болітиме лише перші кілька... разів п'ятдесят... /lay down, коли будеш готовий до лікування, {name}.",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "Коли настане час огляду, використай /lay, щоб лягти на землю, і я почну забір крові.",
+        "a055aa72987b45d98a0b": "Дай мені хвилину порадитися з колегами, $N. Докторе Монтгомері, пане Безрукий, на нараду!",
+        "b8cdc3a538cc16f5d705": "Ой лишенько, ти виглядаєш як смерть. Поправка: я бачив смерть, ти виглядаєш гірше. Ти, $gпане:панно;, нагадуєш те, що смерть відкашляла під час останнього огляду.$B$BХа! Чув, Безрукий? Запиши це!$B$B*Кашель* Гм, так, щоб допомогти тобі, я маю взяти трохи крові. Не хвилюйся, боляче лише перші кілька... разів п'ятдесят... Коли настане час процедури, використай /lay і лягай, $N.",
+        "eb225b9fea9a7aab9c0e": "Ой лишенько, ти виглядаєш як смерть. Поправка: я бачив смерть, ти виглядаєш гірше. Ти, $gпане:панно;, нагадуєш те, що смерть відкашляла під час останнього огляду.$B$BХа! Чув, Безрукий? Запиши це!$B$B*Кашель* Гм, так, щоб допомогти тобі, я маю взяти трохи крові. Не хвилюйся, боляче лише перші кілька... разів п'ятдесят... Коли настане час процедури, використай /lay і лягай, $N."
+      },
       "eventObjectiveLabel": "Діагностику завершено",
       "summary": "Ляжте (/lay), щоб Док Міксільпіксіль оглянув вас. Як він знайде ліки, якщо не знатиме від чого?",
       "title": "Дотик Занзіла",
@@ -495,6 +957,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "90b4d65aa0bdad2295f2db226b461fe1e277a24cda28f7063ad1eed988d6030b"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -521,6 +1003,12 @@
     },
     "zhCN": {
       "description": "哦，天哪，你看上去就象死人一样。纠正一下——我见过死人，你看上去比死人还要糟，简直像是死了又死！\n\n哈哈！诺拉姆，你听见了吧？把它记下来！\n\n*咳嗽*嗯，好吧。为了帮助你，我得先给你抽点血。别担心，只有前几次抽血会有点疼……大概前五十次吧……准备好了之后就躺下（使用/lay指令），{name}。",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "准备好了之后就躺下(使用/lay指令)，然后让我开始帮你抽血。",
+        "a055aa72987b45d98a0b": "等我和同事们交换一下意见，$N。蒙特高莫医生，诺拉姆先生，让我们来讨论一下吧!\n",
+        "b8cdc3a538cc16f5d705": "哦，天哪，你看上去就象死人一样。纠正一下——我见过死人，你看上去比死人还要糟，简直像是死了又死！\n\n哈哈！诺拉姆，你听见了吧？把它记下来！\n\n*咳嗽*嗯，好吧。为了帮助你，我得先给你抽点血。别担心，只有前几次抽血会有点疼……大概前五十次吧……准备好了之后就躺下（使用/lay指令），$N。",
+        "eb225b9fea9a7aab9c0e": "哦，天哪，你看上去就象死人一样。纠正一下——我见过死人，你看上去比死人还要糟，简直像是死了又死！\n\n哈哈！诺拉姆，你听见了吧？把它记下来！\n\n*咳嗽*嗯，好吧。为了帮助你，我得先给你抽点血。别担心，只有前几次抽血会有点疼……大概前五十次吧……准备好了之后就躺下（使用/lay指令），$N。"
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "用/lay指令躺下，接受道克·米希匹克斯的治疗。如果他找不到病因，就找不到治疗的方法。",
       "title": "赞吉尔之触",
@@ -530,6 +1018,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -551,6 +1063,12 @@
     },
     "zhTW": {
       "description": "哦，天哪，你看起來就象死人一樣。糾正一下——我見過死人，你看起來比死人還要糟，簡直像是死了又死！\n\n哈哈！諾拉姆，你聽見了吧？把它記下來！\n\n*咳嗽*嗯，好吧。為了幫助你，我得先給你抽點血。別擔心，只有前幾次抽血會有點疼……大概前五十次吧……準備好了之後就躺下（使用/lay指令），{name}。",
+      "dialogue": {
+        "619de86e3d2a9a65c5c9": "準備好了之後就躺下(使用/lay指令)，然後讓我開始幫你抽血。",
+        "a055aa72987b45d98a0b": "等我和同事們交換一下意見，$N。蒙特高莫醫生，諾拉姆先生，讓我們來討論一下吧!",
+        "b8cdc3a538cc16f5d705": "哦，天哪，你看起來就像死人一樣。糾正一下─我見過死人，你看起來比死人還要糟，簡直像是死了又死!\n\n哈哈!諾拉姆，你聽見了吧?把它記下來!\n\n*咳嗽*嗯，好吧。為了幫助你，我得先給你抽點血。別擔心，只有前幾次抽血會有點疼……大概前五十次吧……準備好了之後就躺下(使用/lay指令)， $N 。",
+        "eb225b9fea9a7aab9c0e": "哦，天哪，你看起來就像死人一樣。糾正一下─我見過死人，你看起來比死人還要糟，簡直像是死了又死!\n\n哈哈!諾拉姆，你聽見了吧?把它記下來!\n\n*咳嗽*嗯，好吧。為了幫助你，我得先給你抽點血。別擔心，只有前幾次抽血會有點疼……大概前五十次吧……準備好了之後就躺下(使用/lay指令)， $N 。"
+      },
       "eventObjectiveLabel": "Diagnosis Complete",
       "summary": "用/lay指令躺下，接受道克·米希匹克斯的治療。如果他找不到病因，就找不到治療的方法。",
       "title": "贊吉爾之觸",
@@ -560,6 +1078,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.619de86e3d2a9a65c5c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a055aa72987b45d98a0b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.b8cdc3a538cc16f5d705": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.eb225b9fea9a7aab9c0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

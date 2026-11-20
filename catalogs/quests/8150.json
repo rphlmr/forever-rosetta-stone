@@ -1,7 +1,35 @@
 {
+  "dialogueContexts": {
+    "508a5b933bd617c19a83": {
+      "lineId": "q:8150:complete",
+      "npcId": 15012,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "58c0a5b2c75b9aa1b806": {
+      "lineId": "q:8150:accept",
+      "npcId": 15012,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "da61882046e99855c60b": {
+      "lineId": "q:8150:progress",
+      "npcId": 15012,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Během slavnosti Harvest Festival vzdáváme díky hrdinům za oběti – v některých případech oběti nejvyšší –, které přinesli v náš prospěch. Horda uznává mnoho hrdinů, ale nikdo neztělesňuje sílu a oběť víc než Grom Hellscream.\n\nPomoz nám Groma uctít tím, že doneseš tento dar k jeho památníku v kaňonu Demon Fall v Ashenvale. Polož ho k podstavci a pak se vrať ke mně. Budu tu jen do konce festivalu, takže neotálej a vzdej Gromovi hold.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Gromovo celé jméno, Grommash, znamená „Srdce obra“; to a mnohem víc bylo třeba k tomu, aby sám stanul proti Mannorothovi. Náčelník to řekl nejlépe: kletba orků začala i skončila s Gromem. Je příhodné, že Gromova oběť, a snad i vykoupení, se stala pramenem dnešní Hordy.$B$BDěkuji, $N. Dnes jsi vzdal hold velkému hrdinovi a uctil jeho ducha i ducha Slavnosti sklizně.",
+        "58c0a5b2c75b9aa1b806": "Během Slavnosti sklizně v Azerothu děkujeme hrdinům za oběti, které za nás přinesli, někdy i tu nejvyšší. Horda uznává mnoho hrdinů, ale nikdo neztělesňuje sílu a obětavost více než Grom Hellscream.$B$BPomoz nám jej uctít: odnes tento dar k jeho památníku v Kaňonu pádu démonů v Ashenvalu. Polož ho k patě památníku a vrať se. Budu tu jen do konce slavnosti, tak neotálej.",
+        "da61882046e99855c60b": "Vydal ses ke Gromovu památníku a položil tam dar?$B$BMísto je stále zasaženo nákazou Hořící legie. Nemáš-li mnoho dobrodružných zkušeností, buď při přiblížení opatrný."
+      },
       "summary": "Vydej se ke Grom's Monument v Demon Fall Canyon v Ashenvale a použij Grom's Tribute na úpatí památníku. Vrať se k Javniru Nashakovi před Orgrimmarem, než skončí Harvest Festival.",
       "title": "Pocta hrdinovi",
       "translationMetadata": {
@@ -11,6 +39,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -31,6 +74,11 @@
     },
     "daDK": {
       "description": "Under Azeroths høstfest takker vi helte for de ofre, de har bragt på vores vegne, i nogle tilfælde det største offer. Horden anerkender mange helte, men ingen er et større eksempel på styrke og opofrelse end Grom Hellscream.\n\nHjælp os med at ære Grom ved at bringe denne ofring til hans monument i Demon Fall Canyon i Ashenvale. Læg den ved foden og vend så tilbage til mig. Jeg er her kun til slutningen af festen, så spild ingen tid med at bringe Grom din hyldest.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Groms fulde navn, Grommash, betyder 'kæmpens hjerte'; det og mere til krævedes for at stå alene mod Mannoroth. Krigsherren sagde det bedst: orkernes forbandelse begyndte og sluttede med Grom. Det er passende, at Groms offer og måske forløsning blev kilden til den Horde, vi kender i dag.$B$BTak, $N. Du har hyldet en stor helt og æret hans ånd og høstfestens ånd.",
+        "58c0a5b2c75b9aa1b806": "Under Azeroths høstfest takker vi heltene for de ofre, de har bragt for os, i nogle tilfælde det største offer. Horden anerkender mange helte, men ingen viser styrke og offervilje som Grom Hellscream.$B$BHjælp os med at ære Grom ved at bringe denne gave til hans monument i Demon Fall Canyon i Ashenvale. Læg den ved foden og vend tilbage. Jeg er her kun til festivalens slutning, så spild ikke tiden.",
+        "da61882046e99855c60b": "Har du besøgt Groms monument og lagt hans offergave der?$B$BStedet er stadig præget af Den Brændende Legions besmittelse. Er du uerfaren som eventyrer, så vær på vagt, når du nærmer dig."
+      },
       "summary": "Rejs til Grom's Monument i Demon Fall Canyon i Ashenvale, og brug Grom's Tribute ved monumentets fod. Vend tilbage til Javnir Nashak uden for Orgrimmar, inden Harvest Festival er forbi.",
       "title": "Ær en helt",
       "translationMetadata": {
@@ -40,6 +88,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7d97dba0621ae9fbbcc78b0a8c6ed293d2e72c905627f04d395216e09f5a8e1f"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -58,6 +121,11 @@
     },
     "deDE": {
       "description": "Während des Erntedankfests in Azeroth danken wir unseren Helden für all die Opfer, die sie in unserem Namen dargebracht haben. Für einige war es gar das höchste aller Opfer, ihr Leben. Die Horde kennt viele Helden, doch niemand verkörpert Stärke und Opferbereitschaft so sehr, wie Grom Hellscream.\n\nHelft uns Grom zu ehren, indem Ihr diese Opfergabe zu seinem Monument im Demonfall-Canyon in Ashenvale bringt. Legt sie an seinem Monument nieder und kehrt zu mir zurück. Lasst Euch nicht zuviel Zeit, denn ich bin nur bis zum Ende des Erntedankfests hier.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Groms vollständer Name lautet Grommash und bedeutet \"Großes Herz\". Das und noch viel mehr war nötig, um alleine gegen Mannoroth zu bestehen. \n \n Ich denke der Kriegshäuptling hat es am besten formuliert, als der Fluch der Orcs mit Grom begann und auch wieder mit ihm endete. Groms Opfer oder vielmehr, seine Erlösung, ist die Lebensquelle, welche die heutige Horde erblühen lässt und ihr Fortbestehen nährt. \n \n Habt Dank, $N. Heute habt Ihr einem großen Helden Tribut gezollt und so seinem Geist und dem Geist des Erntedankfests alle Ehre erwiesen. ",
+        "58c0a5b2c75b9aa1b806": "Während des Erntedankfests in Azeroth danken wir unseren Helden für all die Opfer, die sie in unserem Namen dargebracht haben. Für einige war es gar das höchste aller Opfer, ihr Leben. Die Horde kennt viele Helden, doch niemand verkörpert Stärke und Opferbereitschaft so sehr, wie Grom Hellscream.\n\nHelft uns Grom zu ehren, indem Ihr diese Opfergabe zu seinem Monument im Demonfall-Canyon in Ashenvale bringt. Legt sie an seinem Monument nieder und kehrt zu mir zurück. Lasst Euch nicht zuviel Zeit, denn ich bin nur bis zum Ende des Erntedankfests hier.",
+        "da61882046e99855c60b": "Seid Ihr zu Groms Grabmal gereist und habt den Tribut dort abgelegt?\n\nDie Umgebung des Monuments ist immer noch durch die Macht der Brennenden Legion verseucht. Wenn Ihr ein noch recht unerfahrener Abenteurer seid, solltet Ihr Euch dem Monument nur mit größter Vorsicht nähern."
+      },
       "summary": "Reist zu Groms Monument im Demonfall-Canyon in Ashenvale und benutzt Groms Tribut am Fuße seines Monuments. Kehrt zu Javnir Nashak außerhalb von Orgrimmar zurück, bevor das Erntedankfest endet.",
       "title": "Die Ehrung eines Helden",
       "translationMetadata": {
@@ -66,6 +134,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +168,11 @@
     },
     "enUS": {
       "description": "During the Harvest Festival of Azeroth, we give thanks to heroes for the sacrifices - in some cases ultimate sacrifices - they have given on our behalf.  The Horde acknowledges many heroes, but none exemplify strength and sacrifice more than Grom Hellscream.\n\nHelp us honor Grom by taking this offering to his monument in the Demon Fall Canyon of Ashenvale.  Place it at the base, and then return to me.  I'll only be here through the end of the festival, so waste no time in giving Grom his tribute.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Grom's full name - Grommash - means \"The Giant's Heart\"; it took that and more to stand alone against Mannoroth.  I think the Warchief said it best when the curse of the orcs began and ended with Grom.  Fitting that Grom's sacrifice - and perhaps redemption - would be the wellspring from which the Horde flows today.$B$BThank you, $N.  You've paid tribute to a great hero today, honoring his spirit and the spirit of the Harvest Festival.",
+        "58c0a5b2c75b9aa1b806": "During the Harvest Festival of Azeroth, we give thanks to heroes for the sacrifices - in some cases ultimate sacrifices - they have given on our behalf.  The Horde acknowledges many heroes, but none exemplify strength and sacrifice more than Grom Hellscream.$B$BHelp us honor Grom by taking this offering to his monument in the Demon Fall Canyon of Ashenvale.  Place it at the base, and then return to me.  I'll only be here through the end of the festival, so waste no time in giving Grom his tribute.",
+        "da61882046e99855c60b": "Have you made the journey to Grom's Monument and placed his tribute there?$B$BThe site where the monument is still touched by the taint of the Burning Legion.  Should you be less experienced in the ways of adventuring, be on your toes when approaching the monument."
+      },
       "summary": "Travel to Grom's Monument in the Demon Fall Canyon of Ashenvale and use Grom's Tribute at the base of the monument. Return to Javnir Nashak outside Orgrimmar before the Harvest Festival is over.",
       "title": "Honoring a Hero",
       "translationMetadata": {
@@ -90,6 +181,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -106,6 +215,11 @@
     },
     "esES": {
       "description": "Durante el Festival de la Cosecha de Azeroth, agradecemos a los héroes todos los sacrificios, a veces máximos, que han hecho por nosotros. La Horda muestra su gratitud y reconocimiento a muchos héroes, pero no hay mejor ejemplo de fuerza y sacrificio que Grom Grito Infernal.\n\nAyúdamos a honrar a Grom llevando esta ofrenda a su monumento en el Barranco del Demonio de Vallefresno. Colócala en la base y luego vuelve a verme. Solo estaré aquí hasta que termine el festival, así que no pierdas tiempo en darle a Grom su tributo.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "El nombre completo de Grom, Grommash, significa \"El corazón de gigante\", necesitó eso y algo más para enfrentarse solo a Mannoroth. Creo que el Jefe de Guerra lo expresó mejor cuando comenzó la maldición de los orcos y terminó con Grom. Reparar el sacrificio (y tal vez la redención) de Grom sería la fuente de la que fluye hoy la Horda.\n\nGracias, $n. Hoy has prestado tributo a un gran héroe, honrando su espíritu y el espíritu del Festival de la Cosecha.",
+        "58c0a5b2c75b9aa1b806": "Durante el Festival de la Cosecha de Azeroth, agradecemos a los héroes todos los sacrificios, a veces máximos, que han hecho por nosotros. La Horda muestra su gratitud y reconocimiento a muchos héroes, pero no hay mejor ejemplo de fuerza y sacrificio que Grom Grito Infernal.\n\nAyúdamos a honrar a Grom llevando esta ofrenda a su monumento en el Barranco del Demonio de Vallefresno. Colócala en la base y luego vuelve a verme. Solo estaré aquí hasta que termine el festival, así que no pierdas tiempo en darle a Grom su tributo.",
+        "da61882046e99855c60b": "¿Has hecho el viaje al Monumento de Grom y colocado su tributo allí?\n\n El sitio donde el monumento todavía está tocado por la mancha de la Legión Ardiente.  Si tiene menos experiencia en las formas de aventuras, esté alerta cuando se acerque al monumento."
+      },
       "summary": "Viaja al Monumento a Grom en el Barranco del Demonio Caído de Vallefresno y utiliza el tributo a Grom en la base del monumento. Vuelve a ver a Javnir Nashak fuera de Orgrimmar antes de que termine el Festival de la Cosecha.",
       "title": "En honor a un héroe",
       "translationMetadata": {
@@ -114,6 +228,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -130,6 +262,11 @@
     },
     "esMX": {
       "description": "Durante el Festival de la Cosecha de Azeroth, agradecemos a los héroes todos los sacrificios, a veces máximos, que han hecho por nosotros. La Horda muestra su gratitud y reconocimiento a muchos héroes, pero no hay mejor ejemplo de fuerza y sacrificio que Grom Grito Infernal.\n\nAyúdanos a honrar a Grom llevando esta ofrenda a su monumento en el Barranco del Demonio de Vallefresno. Colócala en la base y luego vuelve a verme. Solo estaré aquí hasta que termine el festival, así que no pierdas tiempo en darle a Grom su tributo.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "El nombre completo de Grom, Grommash, significa \"El corazón de gigante\"; necesitó eso y algo más para enfrentarse solo a Mannoroth. Creo que el Jefe de Guerra lo expresó mejor: la maldición de los orcos comenzó y terminó con Grom. Es apropiado que el sacrificio (y tal vez la redención) de Grom sea la fuente de la que fluye hoy la Horda.\n\nGracias, $n. Hoy has prestado tributo a un gran héroe, honrando su espíritu y el espíritu del Festival de la Cosecha.",
+        "58c0a5b2c75b9aa1b806": "Durante el Festival de la Cosecha de Azeroth, agradecemos a los héroes todos los sacrificios, a veces máximos, que han hecho por nosotros. La Horda muestra su gratitud y reconocimiento a muchos héroes, pero no hay mejor ejemplo de fuerza y sacrificio que Grom Grito Infernal.\n\nAyúdanos a honrar a Grom llevando esta ofrenda a su monumento en el Barranco del Demonio de Vallefresno. Colócala en la base y luego vuelve a verme. Solo estaré aquí hasta que termine el festival, así que no pierdas tiempo en darle a Grom su tributo.",
+        "da61882046e99855c60b": "¿Ha hecho el viaje al Monumento de Grom y depositado tu tributo allí?\n\nEl sitio donde está el monumento todavía está tocado por la mancha de la Legión Ardiente. Si tiene poca experiencia en aventuras de este tipo, permanece alerta cuando te acerques al monumento."
+      },
       "summary": "Viaja al Monumento a Grom en el Barranco del Demonio Caído de Vallefresno y utiliza el tributo a Grom en la base del monumento. Vuelve a ver a Javnir Nashak fuera de Orgrimmar antes de que termine el Festival de la Cosecha.",
       "title": "En honor a un héroe",
       "translationMetadata": {
@@ -138,6 +275,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -154,6 +309,11 @@
     },
     "frFR": {
       "description": "Au cours de la Fête des moissons d’Azeroth, nous rendons grâces aux héros pour les sacrifices accomplis pour nous – y compris, dans certains cas, celui de leur vie. La Horde se souvient de nombreux héros, mais c’est Grom Hellscream qui personnifie le mieux la force et le sacrifice.\n\nS’il vous plaît, aidez-nous à honorer Grom en allant déposer cette offrande au pied de son monument, dans le canyon de la Malechute, en Ashenvale. Lorsque ce sera fait, revenez me voir. Je ne serai là que jusqu’à la fin de la fête, alors ne perdez pas de temps pour rendre hommage à Grom !",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Le nom complet de Grom était Grommash, “Coeur de géant”. Il en était digne, car il s’est tenu, seul, face à Mannoroth. Je crois que le Chef de guerre a su trouver les mots justes quand il a dit que la malédiction des orcs avait commencé et s’était achevée avec Grom. Son sacrifice, et peut-être sa rédemption, sont devenus la source d’où est sortie notre Horde. \n \n Merci, $N. Vous avez rendu hommage à un grand héros. Vous avez fait honneur à son esprit, et à l’esprit de la Fête des moissons. ",
+        "58c0a5b2c75b9aa1b806": "Au cours de la Fête des moissons d’Azeroth, nous rendons grâces aux héros pour les sacrifices accomplis pour nous – y compris, dans certains cas, celui de leur vie. La Horde se souvient de nombreux héros, mais c’est Grom Hellscream qui personnifie le mieux la force et le sacrifice.\n\nS’il vous plaît, aidez-nous à honorer Grom en allant déposer cette offrande au pied de son monument, dans le canyon de la Malechute, en Ashenvale. Lorsque ce sera fait, revenez me voir. Je ne serai là que jusqu’à la fin de la fête, alors ne perdez pas de temps pour rendre hommage à Grom !",
+        "da61882046e99855c60b": "Avez-vous fait le voyage jusqu'au monument de Grom et y avez-vous déposé son hommage ?\n\nLe site où se trouve le monument est encore touché par la souillure de la Légion ardente.  Si vous êtes moins expérimenté dans le domaine de l'aventure, soyez sur vos gardes lorsque vous vous approcherez du monument."
+      },
       "summary": "Rendez-vous au monument de Grom dans le canyon de la Malechute en Ashenvale, puis utilisez Offrande à Grom à la base du monument. Ensuite, retournez voir Javnir Nashak à l’extérieur d’Orgrimmar, avant la fin de la Fête des moissons.",
       "title": "En l'honneur d'un héros",
       "translationMetadata": {
@@ -162,6 +322,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -178,6 +356,11 @@
     },
     "hrHR": {
       "description": "Tijekom Festivala žetve u Azerothu zahvaljujemo junacima na žrtvama koje su podnijeli za nas, u nekim slučajevima i najvećim žrtvama. Horda priznaje mnoge junake, ali nitko ne utjelovljuje snagu i žrtvu više od Groma Hellscreama.\n\nPomozi nam odati počast Gromu tako da odneseš ovaj dar do njegova spomenika u Demon Fall Canyonu u Ashenvaleu. Postavi ga u podnožje, a zatim mi se vrati. Ovdje ću biti samo do kraja festivala, zato ne gubi vrijeme s odavanjem počasti Gromu.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Gromovo puno ime, Grommash, znači „Srce diva“; to i više bilo je potrebno da se sam suoči s Mannorothom. Vojskovođa je najbolje rekao da je kletva orka počela i završila s Gromom. Prikladno je da njegova žrtva, a možda i iskupljenje, bude izvor današnje Horde.$B$BHvala ti, $N. Danas si odao počast velikom junaku, njegovu duhu i duhu Svetkovine žetve.",
+        "58c0a5b2c75b9aa1b806": "Tijekom Svetkovine žetve Azerotha zahvaljujemo junacima na žrtvama koje su podnijeli za nas, ponekad i najvećoj. Horda priznaje mnoge junake, ali nitko ne utjelovljuje snagu i žrtvu više od Groma Hellscreama.$B$BPomozi nam odati mu počast i odnesi ovaj dar njegovu spomeniku u kanjonu Demon Fall u Ashenvaleu. Položi ga podno spomenika i vrati mi se. Ostat ću samo do kraja svetkovine, zato požuri.",
+        "da61882046e99855c60b": "Jesi li otišao do Gromova spomenika i položio dar?$B$BMjesto je još obilježeno zarazom Goruće legije. Ako nemaš mnogo pustolovnog iskustva, budi oprezan pri prilasku."
+      },
       "summary": "Otputuj do Gromova spomenika u Demon Fall Canyonu u Ashenvaleu i upotrijebi Grom's Tribute u podnožju spomenika. Vrati se Javniru Nashaku izvan Orgrimmara prije završetka Festivala žetve.",
       "title": "Odavanje počasti junaku",
       "translationMetadata": {
@@ -187,6 +370,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7d97dba0621ae9fbbcc78b0a8c6ed293d2e72c905627f04d395216e09f5a8e1f"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -205,6 +403,11 @@
     },
     "itIT": {
       "description": "Durante la Sagra del Raccolto di Azeroth, porgiamo i nostri ringraziamenti agli eroi per i sacrifici fatti per noi. Sacrifici anche di vita. L'Orda ringrazia molti eroi, ma nessuno dà un esempio di forza e abnegazione come Grom Malogrido.\n\nAiutaci a onorare Grom portando quest'offerta al suo monumento nel Canyon della Caduta Infernale a Valtetra. Lasciala alla base e torna da me. Rimarrò qui solo fino alla fine della Sagra, quindi non perdere tempo quando porterai a Grom questo tributo.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Il nome completo di Grom — Grommash — significa \"Il Cuore del Gigante\"; ci volle questo e anche di più per affrontare da solo Mannoroth. Come ha detto il Capoguerra, meglio di chiunque altro, la maledizione degli orchi cominciò e finì con Grom. È giusto che il sacrificio di Grom — e forse la sua redenzione — sia la sorgente da cui l'Orda scaturisce oggi.\n\nGrazie, $N. Oggi hai reso omaggio a un grande eroe, onorando il suo spirito e lo spirito dell'Harvest Festival.",
+        "58c0a5b2c75b9aa1b806": "Durante l'Harvest Festival di Azeroth rendiamo grazie agli eroi per i sacrifici — in alcuni casi il sacrificio supremo — che hanno fatto per noi. L'Orda riconosce molti eroi, ma nessuno incarna la forza e il sacrificio più di Grom Hellscream.\n\nAiutaci a onorare Grom portando questa offerta al suo monumento, nel Canyon della Caduta Infernale di Ashenvale. Mettila alla base, poi torna da me. Resterò qui solo fino alla fine della festa, quindi sbrigati a rendere omaggio a Grom.",
+        "da61882046e99855c60b": "Hai fatto il viaggio fino al Monumento a Grom e hai lasciato lì il suo tributo?\n\nIl luogo dove sorge il monumento è ancora segnato dalla corruzione della Legione Infuocata. Se hai poca esperienza nell'avventura, sta' in guardia quando ti avvicini al monumento."
+      },
       "summary": "Raggiungi il monumento di Grom nel Demon Fall Canyon di Ashenvale e usa l'omaggio a Grom alla sua base. Torna da Javnir Nashak fuori da Orgrimmar prima che finisca la Festa del Raccolto.",
       "title": "Onore all'eroe",
       "translationMetadata": {
@@ -213,6 +416,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -230,6 +451,11 @@
     },
     "koKR": {
       "description": "우리는 아제로스의 추수절 기간 동안 우리를 대신해 희생을 감수한 영웅들에게 감사를 표하고 있소. 이러한 영웅 중엔 최후의 희생까지 마다하지 않은 경우도 있지. 호드에서 인정하는 영웅들은 많이 있지만, 그롬 헬스크림님만큼 힘과 희생의 모범을 보인 자는 없소이다.\n\n그롬님께 경의를 표할 수 있도록 잿빛 골짜기의 악마벼락 협곡에 있는 그분의 기념비로 이 공물을 가져가 주시오. 기념비 아래쪽에 이 공물을 바친 다음 내게 돌아오시오. 나는 추수절이 끝날 때까지만 이곳에 머무를 예정이니, 시간 낭비하지 말고 어서 그롬에게 공물을 바치고 오도록 하시오.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "그롬님의 정식 이름인 그롬마쉬는 \"거인의 용기\"란 뜻이오. 홀로 만노로스와 맞서는 데는 그만한 용기로도 부족했지. 그분에 대해 대족장님께서 더할 나위 없이 적당한 말씀을 하셨는데, 오크족의 저주는 그롬과 함께 시작되어서 그롬과 함께 끝이 났다는 거요. 그롬님의 희생, 그리고 그분의 구원은 오늘날 호드가 번성하게 된 근원이라 할 수 있으니, 아주 딱 어울리는 말이 아닐 수 없지.\n\n고맙소. 당신은 오늘 위대한 영웅에게 공물을 바침으로써 그의 영혼과 추수절의 정신을 기렸소이다.",
+        "58c0a5b2c75b9aa1b806": "우리는 아제로스의 추수절 기간에 우리를 대신해 희생을 감수한 영웅들에게 감사를 표하고 있소. 이러한 영웅 중엔 최후의 희생까지 마다하지 않은 일도 있지. 호드에서 인정하는 영웅들은 많이 있지만, 그롬 헬스크림님만큼 힘과 희생의 모범을 보인 자는 없소이다.\n\n그롬님께 경의를 표할 수 있도록 잿빛 골짜기의 악마벼락 협곡에 있는 그분의 기념비로 이 공물을 가져가 주시오. 기념비 아래쪽에 이 공물을 바친 다음 내게 돌아오시오. 나는 추수절이 끝날 때까지만 이곳에 머무를 예정이니, 시간 낭비하지 말고 어서 그롬에게 공물을 바치고 오도록 하시오.",
+        "da61882046e99855c60b": "그롬의 기념비로 가서 그의 공물을 바쳤습니까?\n\n불타는 군단의 오염이 여전히 기념비에 남아 있는 곳입니다.  모험 방법에 대한 경험이 부족한 경우 기념비에 접근할 때 긴장하십시오."
+      },
       "summary": "잿빛 골짜기의 악마벼락 협곡에 있는 그롬 헬스크림의 기념비로 가서 기념비 아래쪽에 그롬의 공물을 사용한 후, 추수절이 끝나기 전에 오그리마 바깥에 있는 야브니르 나샤크에게 돌아가야 합니다.",
       "title": "영웅 기념",
       "translationMetadata": {
@@ -238,6 +464,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -254,6 +498,11 @@
     },
     "plPL": {
       "description": "Podczas Święta Plonów Azeroth dziękujemy bohaterom za poświęcenia, których dokonali dla nas, czasem płacąc najwyższą cenę. Horda uznaje wielu bohaterów, ale nikt nie uosabia siły i poświęcenia bardziej niż Grom Hellscream.\n\nPomóż nam uczcić Groma, zanosząc tę ofiarę do jego pomnika w Demon Fall Canyon w Ashenvale. Złóż ją u podstawy, a potem wróć do mnie. Zostanę tu tylko do końca święta, więc nie zwlekaj ze złożeniem mu hołdu.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Pełne imię Groma, Grommash, znaczy „Serce Olbrzyma”; trzeba było tego i jeszcze więcej, by samotnie stanąć przeciw Mannorothowi. Wódz Wojenny najlepiej ujął, że klątwa orków zaczęła się i skończyła wraz z Gromem. To stosowne, że jego poświęcenie, a może i odkupienie, stało się źródłem dzisiejszej Hordy.$B$BDziękuję, $N. Oddajesz dziś hołd wielkiemu bohaterowi, jego duchowi i duchowi Święta Plonów.",
+        "58c0a5b2c75b9aa1b806": "Podczas Święta Plonów Azeroth dziękujemy bohaterom za ofiary, które dla nas ponieśli, niekiedy najwyższe. Horda uznaje wielu bohaterów, ale nikt nie uosabia siły i poświęcenia bardziej niż Grom Hellscream.$B$BPomóż uczcić Groma, zanosząc ten dar pod jego pomnik w Kanionie Upadku Demona w Ashenvale. Złóż go u podstawy i wróć. Będę tu tylko do końca święta, więc nie zwlekaj.",
+        "da61882046e99855c60b": "Czy dar został złożony pod pomnikiem Groma?$B$BMiejsce to wciąż nosi skażenie Płonącego Legionu. Jeśli nie masz wielkiego doświadczenia w przygodach, zachowaj czujność."
+      },
       "summary": "Udaj się do pomnika Groma w Demon Fall Canyon w Ashenvale i użyj daru dla Groma u podstawy pomnika. Wróć do Javnira Nashaka pod Orgrimmar przed końcem Święta Plonów.",
       "title": "Uczczenie bohatera",
       "translationMetadata": {
@@ -263,6 +512,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7d97dba0621ae9fbbcc78b0a8c6ed293d2e72c905627f04d395216e09f5a8e1f"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -281,6 +545,11 @@
     },
     "ptBR": {
       "description": "Durante o Festival da Colheita de Azeroth, nós agradecemos aos nossos heróis pelos sacrifícios – em alguns casos o sacrifício supremo – que fizeram por nós. A Horda reconhece muitos heróis, mas nenhum exemplifica as noções de força e sacrifício mais que Grom Grito Infernal.\n\nAjude-nos a homenagear Grom levando esta oferenda para o túmulo dele no Cânion do Demônio Caído, que fica no Vale Gris. Coloque isto aos pés da estátua dele e volte aqui. Eu só ficarei aqui até o fim do festival, então não perca tempo e vá logo homenagear Grom.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "O nome completo de Grom, Grommash, significa 'Coração do Gigante'; foi preciso isso e muito mais para enfrentar Mannoroth sozinho. O Chefe Guerreiro disse bem: a maldição dos orcs começou e terminou com Grom. É apropriado que seu sacrifício, e talvez sua redenção, seja a fonte da Horda de hoje.$B$BObrigado, $N. Você prestou homenagem a um grande herói, honrando seu espírito e o espírito do Festival da Colheita.",
+        "58c0a5b2c75b9aa1b806": "Durante o Festival da Colheita de Azeroth, nós agradecemos aos nossos heróis pelos sacrifícios – em alguns casos o sacrifício supremo – que fizeram por nós. A Horda reconhece muitos heróis, mas nenhum exemplifica as noções de força e sacrifício mais que Grom Grito Infernal.\n\nAjude-nos a homenagear Grom levando esta oferenda para o túmulo dele no Cânion do Demônio Caído, que fica no Vale Gris. Coloque isto aos pés da estátua dele e volte aqui. Eu só ficarei aqui até o fim do festival, então não perca tempo e vá logo homenagear Grom.",
+        "da61882046e99855c60b": "Você foi ao Monumento de Grom e deixou a homenagem lá?$B$BO local ainda sofre a corrupção da Legião Ardente. Se tiver pouca experiência como aventureiro, fique alerta ao se aproximar."
+      },
       "summary": "Vá até o Monumento de Grom no Cânion do Demônio Caído, que fica no Vale Gris. Use o Tributo de Grom na base do monumento. Fale novamente com Javnir Nashak, fora de Orgrimmar, antes que o Festival da Colheita termine.",
       "title": "Homenagem a um herói",
       "translationMetadata": {
@@ -289,6 +558,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -305,6 +590,11 @@
     },
     "ruRU": {
       "description": "Во время Недели урожая мы воздаем почести героям, которые готовы отдать, – а порой и отдают, – за нас жизнь. В Орде множество храбрецов и героев, но нет более яркого примера мужества и самопожертвования, чем Гром Адский Крик.\n\nПомоги же нам воздать почести Грому. Отнеси эти подношения к его памятнику в каньоне Гибели Демона в Ясеневом лесу. Положи их к ногам статуи и возвращайся ко мне. Я пробуду тут только до конца праздника, так что не теряй времени!",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Полное имя Грома – \"Громмаш\", означает \"Сердце великана\". Воистину, ему потребовалось сердце великана, чтобы в одиночку выстоять против Маннорота! Верно сказал вождь, что проклятие орков началось с Грома, и Гром же с ним покончил! И воистину, самопожертвование – и, возможно, искупление – Грома было не напрасным.\n\nСпасибо тебе, $N. Ты почтил память великого героя, порадовав его дух и дух Недели урожая.",
+        "58c0a5b2c75b9aa1b806": "Во время Недели урожая мы воздаем почести героям, которые готовы отдать, – а порой и отдают, – за нас жизнь. В Орде множество храбрецов и героев, но нет более яркого примера мужества и самопожертвования, чем Гром Адский Крик.\n\nПомоги же нам воздать почести Грому. Отнеси эти подношения к его памятнику в Каньоне Гибели Демона в Ясеневом лесу. Положи их к ногам статуи и возвращайся ко мне. Я пробуду тут только до конца праздника, так что не теряй времени!",
+        "da61882046e99855c60b": "Ну что, ты уже побывал у памятника Грому?\n\nМесто, где стоит памятник, все еще осквернено присутствием Пылающего Легиона. Если ты еще недостаточно опытный искатель приключений, смотри в оба, когда окажешься там!"
+      },
       "summary": "Отправляйтесь к памятнику Грому Зычногласому в Каньон Гибели Демона в Ясеневом лесу и положите подношения у подножия памятника. Вернитесь к Явниру Нашаку в Оргриммар до конца Недели урожая.",
       "title": "Почести герою",
       "translationMetadata": {
@@ -313,6 +603,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -329,6 +637,11 @@
     },
     "svSE": {
       "description": "Under Azeroths skördefest tackar vi hjältar för de uppoffringar, i vissa fall den yttersta uppoffringen, de gjort för oss. Horden erkänner många hjältar, men ingen exemplifierar styrka och uppoffring mer än Grom Hellscream.\n\nHjälp oss hedra Grom genom att ta denna gåva till hans monument i Demon Fall Canyon i Ashenvale. Lägg den vid monumentets fot och återvänd sedan till mig. Jag är bara här till festens slut, så dröj inte med att hylla Grom.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Groms fullständiga namn, Grommash, betyder 'jättens hjärta'; det och mer därtill krävdes för att ensam möta Mannoroth. Krigshövdingen sa det bäst: orchernas förbannelse började och slutade med Grom. Det är passande att Groms offer, och kanske försoning, blev källan till dagens Horde.$B$BTack, $N. Du har hedrat en stor hjälte, hans ande och skördefestens anda.",
+        "58c0a5b2c75b9aa1b806": "Under Azeroths skördefest tackar vi hjältar för de uppoffringar de gjort för oss, ibland den yttersta. Horden erkänner många hjältar, men ingen står för styrka och uppoffring mer än Grom Hellscream.$B$BHjälp oss hedra Grom genom att föra denna gåva till hans monument i Demon Fall Canyon i Ashenvale. Lägg den vid foten och återvänd. Jag är bara här till festens slut, så dröj inte.",
+        "da61882046e99855c60b": "Har du besökt Groms monument och lagt hans gåva där?$B$BPlatsen är fortfarande märkt av Brinnande legionens fördärv. Är du oerfaren som äventyrare, var vaksam när du närmar dig."
+      },
       "summary": "Res till Groms monument i Demon Fall Canyon i Ashenvale och använd hyllningen till Grom vid monumentets fot. Återvänd till Javnir Nashak utanför Orgrimmar innan skördefesten är över.",
       "title": "Hedra en hjälte",
       "translationMetadata": {
@@ -338,6 +651,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7d97dba0621ae9fbbcc78b0a8c6ed293d2e72c905627f04d395216e09f5a8e1f"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -356,6 +684,11 @@
     },
     "trTR": {
       "description": "Azeroth'un Hasat Festivali'nde, bizim için yaptıkları fedakârlıklar, hatta bazen verdikleri canları için kahramanlara minnetimizi sunarız. Horde pek çok kahramanı onurlandırır ama hiçbiri gücü ve fedakârlığı Grom Hellscream kadar iyi temsil etmez.\n\nBu sunuyu Ashenvale'in Demon Fall Canyon bölgesindeki anıtına götürerek Grom'u onurlandırmamıza yardım et. Kaidesine bırak, sonra bana dön. Yalnızca festival bitene kadar burada olacağım; Grom'a saygını sunarken vakit kaybetme.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Grom'un tam adı Grommash, 'Devin Yüreği' demektir; Mannoroth'a tek başına karşı koymak için bu ve daha fazlası gerekti. Savaş Şefi en iyisini söyledi: orkların laneti Grom'la başladı ve onunla sona erdi. Grom'un fedakârlığının ve belki de kefaretinin bugünkü Horde'un kaynağı olması yerinde.$B$BTeşekkürler, $N. Bugün büyük bir kahramana saygı göstererek onun ruhunu ve Hasat Festivali'nin ruhunu onurlandırdın.",
+        "58c0a5b2c75b9aa1b806": "Azeroth'un Hasat Festivali'nde bizim için fedakârlık yapan, bazen en büyük fedakârlığı veren kahramanlara teşekkür ederiz. Horde birçok kahramanı tanır ama hiçbiri gücü ve fedakârlığı Grom Hellscream kadar temsil etmez.$B$BBu sunuyu Ashenvale'deki Demon Fall Canyon'da bulunan anıtına götürerek Grom'u onurlandırmamıza yardım et. Kaidesine bırak ve bana dön. Yalnızca festivalin sonuna kadar buradayım, vakit kaybetme.",
+        "da61882046e99855c60b": "Grom'un Anıtı'na gidip sunuyu bıraktın mı?$B$BAnıtın bulunduğu yer hâlâ Burning Legion'ın yozlaşmasını taşıyor. Maceracılıkta tecrübesizsen yaklaşırken dikkatli ol."
+      },
       "summary": "Ashenvale'deki Demon Fall Canyon'da bulunan Grom'un Anıtı'na git ve anıtın dibinde Grom'a Saygı Sunusu'nu kullan. Hasat Festivali bitmeden Orgrimmar'ın dışındaki Javnir Nashak'a dön.",
       "title": "Bir Kahramanı Onurlandırmak",
       "translationMetadata": {
@@ -365,6 +698,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7d97dba0621ae9fbbcc78b0a8c6ed293d2e72c905627f04d395216e09f5a8e1f"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -383,6 +731,11 @@
     },
     "ukUA": {
       "description": "Під час Свята врожаю Азерота, ми висловлюємо шану героям за жертви, що вони принесли заради нас. Орда визнає багатьох героїв, але ніхто не уособлює жертовність так, як Ґром Пеклокрик.\n\nДопоможи нам вшанувати Ґрома, віднеси ці підношення до його пам'ятника в каньйон Погибелі демона, що в Ясенедолі. Поклади їх до пам'ятника, а потім повертайся до мене. Я буду тут лише до кінця фестивалю, тому не гай часу та вшануй Ґрома.",
+      "dialogue": {
+        "508a5b933bd617c19a83": "Повне ім'я Ґрома, Ґроммаш, означає «Серце велетня»; це й більше було потрібно, щоб самотужки стати проти Маннорота. Вождь найкраще сказав: прокляття орків почалося і скінчилося з Ґромом. Доречно, що його жертва, а можливо й спокута, стала джерелом сьогоднішньої Орди.$B$BДякую, $N. Сьогодні ти вшанував великого героя, його дух і дух Свята врожаю.",
+        "58c0a5b2c75b9aa1b806": "Під час Свята врожаю Азероту ми дякуємо героям за жертви, принесені заради нас, іноді й найвищі. Орда знає багатьох героїв, але ніхто не втілює силу й самопожертву більше за Ґрома Пеклокрика.$B$BДопоможи вшанувати Ґрома: віднеси цю дарину до його пам'ятника в каньйоні Падіння Демона в Ясенедолі. Поклади біля підніжжя й повертайся. Я буду тут лише до кінця свята, тож не зволікай.",
+        "da61882046e99855c60b": "Ти відвідав пам'ятник Ґрому й залишив дарину?$B$BМісце й досі позначене скверною Палаючого Легіону. Якщо маєш мало досвіду пригод, будь напоготові поблизу пам'ятника."
+      },
       "summary": "Відправляйтеся до пам'ятника Ґрому в каньйон Погибелі демона, що в Ясенедолі та покладіть підношення до підніжжя пам'ятника. Поверніться до Явніра Нашака поблизу Орґріммара до завершення Свята врожаю.",
       "title": "Вшанування героя",
       "translationMetadata": {
@@ -393,6 +746,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "7d97dba0621ae9fbbcc78b0a8c6ed293d2e72c905627f04d395216e09f5a8e1f"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -413,6 +781,11 @@
     },
     "zhCN": {
       "description": "在艾泽拉斯收获节上，我们对那些无私奉献英雄们表示感谢，他们中的一些甚至献出了自己的性命。部落曾涌现出许多英雄，但是没有谁的光芒能超越格罗姆·地狱咆哮。\n\n将这些祭品带到灰谷屠魔峡谷中的格罗姆·地狱咆哮的墓碑那儿，去表达我们的敬意吧。把祭品放在墓碑下，然后回到我们这儿来。收获节结束之前我会一直在这儿，别浪费时间了，出发吧。",
+      "dialogue": {
+        "508a5b933bd617c19a83": "葛罗的全名是葛罗玛什，这个名字的意思是「巨人之心」，他勇敢地与玛诺洛斯抗争。我想，在兽人受到诅咒之後，葛罗与玛诺洛斯同归於尽的壮举是对此最好的诠释。他的牺牲─或者说是赎罪，为部落後来的发展奠定了基础。\n\n谢谢你，$N。你向这位伟大的英雄献上了祭品，纪念了他的精神和收获节的精神。\n",
+        "58c0a5b2c75b9aa1b806": "在艾泽拉斯收获节上，我们对那些无私奉献英雄们表示感谢，他们中的一些甚至献出了自己的性命。部落曾涌现出许多英雄，但是没有谁的光芒能超越格罗姆·地狱咆哮。\n\n将这些祭品带到灰谷屠魔峡谷中的格罗姆·地狱咆哮的墓碑那儿，去表达我们的敬意吧。把祭品放在墓碑下，然后回到我们这儿来。收获节结束之前我会一直在这儿，别浪费时间了，出发吧。",
+        "da61882046e99855c60b": "你造访了葛罗·地狱吼的纪念碑，放下他的祭品了吗?\n\n纪念碑的所在地仍然受到燃烧军团的污染。当你接近纪念碑时，一定要多加小心，不要太过冒险了。"
+      },
       "summary": "前往灰谷屠魔峡谷的格罗姆·地狱咆哮的墓碑，在墓碑前放下他的祭品。在收获节结束之前返回奥格瑞玛的亚尼·纳沙克那儿。",
       "title": "缅怀英雄",
       "translationMetadata": {
@@ -421,6 +794,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -437,6 +828,11 @@
     },
     "zhTW": {
       "description": "在艾澤拉斯收穫節上，我們對那些無私奉獻英雄們表示感謝，他們其中甚至犧牲自己的生命。部落曾湧現出許多英雄，但是沒有誰的光芒能超越葛羅·地獄吼。\n\n將這些祭品帶到梣谷屠魔峽谷中的葛羅·地獄吼的墓碑那兒，去表達我們的敬意吧。把祭品放在墓碑下，然後回到我們這兒來。收穫節結束之前我會一直在這兒，別浪費時間了，出發吧。",
+      "dialogue": {
+        "508a5b933bd617c19a83": "格羅姆的全名是格羅姆，這個名字的意思是“巨人之心”，他勇敢地與瑪諾洛斯抗爭。我想，在獸人受到詛咒之後，格羅姆與瑪諾洛斯同歸於盡的壯舉是對此最好的詮釋。他的犧牲―或者說是贖罪，爲部落後來的發展奠定了基礎。\n\n謝謝你，$N。你向這位偉大的英雄獻上了祭品，紀念了他的精神和收穫節的精神。",
+        "58c0a5b2c75b9aa1b806": "在艾澤拉斯收穫節上，我們對那些無私奉獻英雄們表示感謝，他們其中甚至犧牲自己的生命。部落曾湧現出許多英雄，但是沒有誰的光芒能超越葛羅‧地獄吼。\n\n將這些祭品帶到梣谷屠魔峽谷中的葛羅‧地獄吼的紀念碑那兒，去表達我們的敬意吧。把祭品放在墓碑下，然後回到我們這兒來。收穫節結束之前我會一直在這兒，別浪費時間了，出發吧。",
+        "da61882046e99855c60b": "你造訪了格羅姆.地獄咆哮的紀念碑，放下他的祭品了嗎?\n\n紀念碑的所在地仍然受到燃燒軍團的污染。當你接近紀念碑時，一定要多加小心，不要太過冒險了。"
+      },
       "summary": "前往灰谷屠魔峽谷的格羅姆·地獄咆哮的墓碑，在墓碑前放下他的祭品。在收獲節結束之前返回奧格瑞瑪的亞尼·納沙克那兒。",
       "title": "緬懷英雄",
       "translationMetadata": {
@@ -445,6 +841,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.508a5b933bd617c19a83": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.58c0a5b2c75b9aa1b806": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.da61882046e99855c60b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

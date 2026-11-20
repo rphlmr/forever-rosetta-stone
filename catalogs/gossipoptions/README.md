@@ -29,6 +29,18 @@ to have captured the original gossip wording in every client language. Missing
 names were translated from the captured French. The guild service is distinct
 from the player guild-leader label, so that GlobalString was not reused.
 
-Runtime lookups use only these owned option records. Unknown options keep their
-native text without a translation tooltip. New options require their own
-captured IDs and catalog records, not runtime exceptions.
+Runtime lookups first use the captured option ID. Records with a unique
+`sharedIcon` also supply a standard label for options with that native icon.
+This applies to the flight option. Unrecognized options keep their native text.
+
+The Ironforge guard menu was captured on Forever 1.60.1.70959 (NPC 274781).
+Twelve options reuse the equivalent destination or service names already in this
+catalog and retain their exact captured French labels. The bank (95418) uses the
+[VMaNGOS Classic reference](https://github.com/vmangos/core/releases/download/db_latest/db-sqlite-70e38cd.zip) for
+BroadcastText 5078, the [Blizzard Ironforge guide](https://news.blizzard.com/pt-br/article/23149294/tour-urbano-em-wow-classic-altaforja)
+for Brazilian Portuguese, and translations from English for additional locales.
+
+Gryth Thurden's flight option (97329) was captured in French on Forever
+1.60.1.70959. [Zephras](https://zephras.com/forever/enUS/npc/1573/) confirms the
+English label, VMaNGOS BroadcastText 3409 supplies matching reference locales,
+and Brazilian Portuguese uses the English fallback.

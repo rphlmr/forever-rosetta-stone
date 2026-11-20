@@ -1,8 +1,36 @@
 {
   "areaId": 267,
+  "dialogueContexts": {
+    "9511535092bb232e2577": {
+      "lineId": "q:660:accept",
+      "npcId": 2713,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "b46ba76240376ef96a4c": {
+      "lineId": "q:660:complete",
+      "npcId": 2712,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "cb4f41c4ea04695014af": {
+      "lineId": "q:660:progress",
+      "npcId": 2712,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Dobře, {name}. Jsem připravená, jestli ty taky.\n\nJdeme na to?",
+      "dialogue": {
+        "9511535092bb232e2577": "Dobrá, $N. Jsem připravená, jestli jsi i ty.$B$BPůjdeme?",
+        "b46ba76240376ef96a4c": "Prokázal jsi nám velkou službu, $N. Děkuji.$B$BDoufám, že Kin tam dole nebyla příliš k nezvládnutí. Je velmi přátelská, ale ke svým nepřátelům umí být stejně smrtící.",
+        "cb4f41c4ea04695014af": "Čas na řeči skončil. Chraň Kinelory, pokud ti na lidech z Hillsbradu alespoň trochu záleží."
+      },
       "eventObjectiveLabel": "Chraň Kinelory",
       "summary": "Chraň Kinelory, dokud se nevrátí ke Quae.",
       "title": "Náznaky nové nákazy?",
@@ -13,6 +41,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fa1870e780cc7cf503f25329a7dc04480e601f191c1310367e86736cc18816f"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +83,11 @@
     },
     "daDK": {
       "description": "Godt, {name}. Jeg er klar, hvis du er.\n\nSkal vi?",
+      "dialogue": {
+        "9511535092bb232e2577": "Godt, $N. Jeg er klar, hvis du er.$B$BSkal vi?",
+        "b46ba76240376ef96a4c": "Du har gjort os en stor tjeneste, $N. Tak.$B$BJeg håber ikke, at Kin var for svær at styre dernede. Hun er meget venlig, men kan være lige så dødbringende mod sine fjender.",
+        "cb4f41c4ea04695014af": "Tiden til snak er forbi. Beskyt Kinelory, hvis du overhovedet bekymrer dig om folkene i Hillsbrad."
+      },
       "eventObjectiveLabel": "Beskyt Kinelory",
       "summary": "Beskyt Kinelory, indtil hun vender tilbage til Quae.",
       "title": "Tegn på en ny pest?",
@@ -50,6 +98,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fa1870e780cc7cf503f25329a7dc04480e601f191c1310367e86736cc18816f"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +137,11 @@
     },
     "deDE": {
       "description": "Nun gut, {name}. Bereit, wenn Ihr es seid.\n\nSollen wir?",
+      "dialogue": {
+        "9511535092bb232e2577": "Nun gut, $n. Bereit, wenn Ihr es seid.\n\nSollen wir?",
+        "b46ba76240376ef96a4c": "Ihr habt uns einen großen Dienst erwiesen, $N. Danke. \n \n Ich hoffe, Kin hat Euch da unten nicht zu sehr auf Trab gehalten. Sie ist sehr freundlich, aber sie kann genauso tödlich sein, wenn Ihr sie zum Feind habt. ",
+        "cb4f41c4ea04695014af": "Die Zeit der Gespräche ist vorbei. Wenn Euch die Bewohner von Hillsbrad auch nur das Geringste bedeuten, dann beschützt Ihr Kinelory. "
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "Beschützt Kinelory bis sie zu Quae zurückkehrt.",
       "title": "Hinweise auf eine neue Seuche?",
@@ -83,6 +151,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +190,11 @@
     },
     "enUS": {
       "description": "All right, {name}. I'm ready if you are.\n\nShall we?",
+      "dialogue": {
+        "9511535092bb232e2577": "All right, $N. I'm ready if you are.$B$BShall we?",
+        "b46ba76240376ef96a4c": "You've done a great service for us, $N. Thank you.$B$BI hope Kin wasn't too much of a handful down there. She's very friendly, but can be just as deadly when you're her enemy.",
+        "cb4f41c4ea04695014af": "The time for talk is done. Protect Kinelory if you care about the people of Hillsbrad at all."
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "Protect Kinelory until she returns to Quae.",
       "title": "Hints of a New Plague?",
@@ -113,6 +204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +244,11 @@
     },
     "esES": {
       "description": "Muy bien, {name}. Si tú estás listo, yo también.\n\n¿Vamos?",
+      "dialogue": {
+        "9511535092bb232e2577": "Muy bien, $N. Si tú estás listo, yo también.\n\n¿Vamos?",
+        "b46ba76240376ef96a4c": "Nos has hecho un gran favor, $n. Gracias.\n\nEspero que Kin no te lo pusiera demasiado difícil. Es muy simpática pero como enemiga es letal.",
+        "cb4f41c4ea04695014af": "El tiempo para hablar ha terminado.  Protege a Kinelory si te preocupas por la gente de Hillsbrad."
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "Protege a Kinelory hasta que haya regresado con Quae.",
       "title": "Sospechas de una nueva Peste",
@@ -144,6 +258,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +297,11 @@
     },
     "esMX": {
       "description": "Muy bien, {name}. Si tú estás listo, yo también.\n\n¿Vamos?",
+      "dialogue": {
+        "9511535092bb232e2577": "Muy bien, $n. Si tú estás listo, yo también.\n\n¿Vamos?",
+        "b46ba76240376ef96a4c": "Nos has hecho un gran favor, $n. Gracias.\n\nEspero que Kin no te lo pusiera demasiado difícil. Es muy simpática pero como enemiga es letal.",
+        "cb4f41c4ea04695014af": "Se acabó el tiempo de hablar. Protege a Kinelory si te importa aunque sea un poco la gente de Trabalomas."
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "Protege a Kinelory hasta que haya regresado con Quae.",
       "title": "Sospechas de una nueva Peste",
@@ -174,6 +311,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +349,11 @@
     },
     "frFR": {
       "description": "Très bien, {name}. Je suis prête si vous l'êtes.\n\nOn y va ?",
+      "dialogue": {
+        "9511535092bb232e2577": "Très bien, $n. Je suis prête si vous l'êtes.\n\nOn y va ?",
+        "b46ba76240376ef96a4c": "Vous nous avez rendu un grand service, $N. Merci. \n \n Kin ne vous a pas posé trop de problèmes jusqu'à présent ? Elle est très sympa, mais il vaut mieux ne pas être son ennemi. ",
+        "cb4f41c4ea04695014af": "Le temps des discours est terminé. Protégez Kinelory si le peuple d'Hillsbrad vous importe un tant soit peu. "
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "Protéger Kinelory jusqu'à ce qu'elle rejoigne Quae.",
       "title": "Les indices d'une Peste nouvelle ?",
@@ -204,6 +363,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -225,6 +402,11 @@
     },
     "hrHR": {
       "description": "U redu, {name}. Spremna sam ako si i ti.\n\nHoćemo li?",
+      "dialogue": {
+        "9511535092bb232e2577": "U redu, $N. Spremna sam ako si i ti.$B$BHoćemo li?",
+        "b46ba76240376ef96a4c": "Učinio si nam veliku uslugu, $N. Hvala ti.$B$BNadam se da Kin ondje dolje nije bila previše zahtjevna. Vrlo je prijateljski nastrojena, ali može biti jednako smrtonosna kad si joj neprijatelj.",
+        "cb4f41c4ea04695014af": "Vrijeme za razgovor je prošlo. Zaštiti Kinelory ako ti je imalo stalo do ljudi iz Hillsbrada."
+      },
       "eventObjectiveLabel": "Zaštiti Kinelory",
       "summary": "Zaštiti Kinelory dok se ne vrati Quae.",
       "title": "Naznake nove kuge?",
@@ -235,6 +417,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fa1870e780cc7cf503f25329a7dc04480e601f191c1310367e86736cc18816f"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -259,6 +456,11 @@
     },
     "itIT": {
       "description": "Va bene, {name}. Io sono pronta, se lo sei anche tu.\n\nAndiamo?",
+      "dialogue": {
+        "9511535092bb232e2577": "Bene, $N. Io sono pronta, se lo sei tu.\n\nAndiamo?",
+        "b46ba76240376ef96a4c": "Ci hai reso un grande servizio, $N. Grazie.$B$BSpero che Kin non sia stata troppo difficile da gestire laggiù. È molto amichevole, ma può essere altrettanto letale con i suoi nemici.",
+        "cb4f41c4ea04695014af": "Il tempo delle chiacchiere è finito. Proteggi Kinelory, se ti importa qualcosa della gente di Hillsbrad."
+      },
       "eventObjectiveLabel": "Proteggi Kinelory",
       "summary": "Proteggi Kinelory finché non sarà tornata da Quae.",
       "title": "Indizi di una nuova piaga?",
@@ -269,6 +471,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fa1870e780cc7cf503f25329a7dc04480e601f191c1310367e86736cc18816f"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -293,6 +512,11 @@
     },
     "koKR": {
       "description": "좋아요. 난 언제나 준비되어 있답니다.\n\n그럼 시작할까요?",
+      "dialogue": {
+        "9511535092bb232e2577": "좋아요. 난 언제나 준비되어 있답니다.\n\n그럼 시작할까요?",
+        "b46ba76240376ef96a4c": "정말 큰 도움을 받았군요. 고마워요.\n\n키넬로리가 아래에서 말썽을 많이 안 일으켰으면 하네요. 천성이 본래 친절한 성격이긴 하지만 적에게는 아주 사납거든요.",
+        "cb4f41c4ea04695014af": "이제 말보다는 행동을 할 때예요. 힐스브래드 주민을 조금이라도 걱정한다면 키넬로리를 엄호해 줘요."
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "키넬로리가 쿠에에게 돌아갈 때까지 보호해야 합니다.",
       "title": "새로운 역병의 징조?",
@@ -302,6 +526,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -323,6 +565,11 @@
     },
     "plPL": {
       "description": "Dobrze, {name}. Jestem gotowa, jeśli ty też.\n\nRuszamy?",
+      "dialogue": {
+        "9511535092bb232e2577": "W porządku, $N. Jestem gotowa, jeśli ty też.$B$BRuszamy?",
+        "b46ba76240376ef96a4c": "Oddano nam wielką przysługę, $N. Dziękuję.$B$BMam nadzieję, że Kin nie była tam na dole zbyt kłopotliwa. Jest bardzo przyjazna, ale potrafi być równie zabójcza dla swoich wrogów.",
+        "cb4f41c4ea04695014af": "Czas rozmów dobiegł końca. Chroń Kinelory, jeśli choć trochę zależy ci na mieszkańcach Hillsbradu."
+      },
       "eventObjectiveLabel": "Chroń Kinelory",
       "summary": "Chroń Kinelory, dopóki nie wróci do Quae.",
       "title": "Ślady nowej plagi?",
@@ -333,6 +580,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fa1870e780cc7cf503f25329a7dc04480e601f191c1310367e86736cc18816f"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -357,6 +619,11 @@
     },
     "ptBR": {
       "description": "Muito bem, {name}. Estou pronta à sua espera.\n\nPodemos ir?",
+      "dialogue": {
+        "9511535092bb232e2577": "Muito bem, $N. Estou pronta à sua espera.\n\nPodemos ir?",
+        "b46ba76240376ef96a4c": "Você nos fez um grande favor, $N. Obrigada.\n\nEspero que Kin não tenha causado muitos problemas lá embaixo. Embora seja muito amigável, ela sabe ser mortal quando tem inimigos por perto.",
+        "cb4f41c4ea04695014af": "O tempo de conversa acabou. Proteja Kinelory se você se importa minimamente com o povo de Eira dos Montes."
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "Proteja Kinelory até que ela volte para Quae.",
       "title": "Sinais de uma nova peste?",
@@ -366,6 +633,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -387,6 +671,11 @@
     },
     "ruRU": {
       "description": "Ладно, {name}. Если вы готовы, то и я тоже.\n\nПопробуем?",
+      "dialogue": {
+        "9511535092bb232e2577": "Ладно, $N. Если вы готовы, то и я тоже.\n\nПопробуем?",
+        "b46ba76240376ef96a4c": "Ты сделал огромную для нас услугу, $N. Спасибо.\n\nНадеюсь у Кин не было особых проблем. Она очень доброжелательная, но если ты ее враг, она может быть столь же опасна.",
+        "cb4f41c4ea04695014af": "Время для болтовни закончилось. Защитите Кинелори, если вам небезразлична судьба народа Хилсбрада."
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "Защищайте Кинелори, пока она не вернется к Кви.",
       "title": "Новая чума зарождается?",
@@ -396,6 +685,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -417,6 +724,11 @@
     },
     "svSE": {
       "description": "Okej, {name}. Jag är redo om du är det.\n\nSka vi?",
+      "dialogue": {
+        "9511535092bb232e2577": "Okej, $N. Jag är redo om du är det.$B$BSka vi?",
+        "b46ba76240376ef96a4c": "Du har gjort oss en stor tjänst, $N. Tack.$B$BJag hoppas att Kin inte var alltför besvärlig där nere. Hon är mycket vänlig, men kan vara lika dödlig mot sina fiender.",
+        "cb4f41c4ea04695014af": "Tiden för prat är över. Skydda Kinelory om du alls bryr dig om folket i Hillsbrad."
+      },
       "eventObjectiveLabel": "Skydda Kinelory",
       "summary": "Skydda Kinelory tills hon återvänder till Quae.",
       "title": "Tecken på en ny pest?",
@@ -427,6 +739,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fa1870e780cc7cf503f25329a7dc04480e601f191c1310367e86736cc18816f"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -451,6 +778,11 @@
     },
     "trTR": {
       "description": "Pekâlâ, {name}. Sen hazırsan ben de hazırım.\n\nBaşlayalım mı?",
+      "dialogue": {
+        "9511535092bb232e2577": "Pekâlâ, $N. Sen hazırsan ben de hazırım.$B$BGidelim mi?",
+        "b46ba76240376ef96a4c": "Bize büyük bir iyilik yaptın, $N. Teşekkür ederim.$B$BUmarım Kin aşağıda sana fazla zorluk çıkarmamıştır. Çok cana yakındır, ama düşmanlarına karşı bir o kadar ölümcül olabilir.",
+        "cb4f41c4ea04695014af": "Konuşma zamanı bitti. Hillsbrad halkını biraz olsun önemsiyorsan Kinelory’yi koru."
+      },
       "eventObjectiveLabel": "Kinelory'yi koru",
       "summary": "Quae'ye dönene kadar Kinelory'yi koru.",
       "title": "Yeni Bir Vebanın İşaretleri mi?",
@@ -461,6 +793,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fa1870e780cc7cf503f25329a7dc04480e601f191c1310367e86736cc18816f"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -485,6 +832,11 @@
     },
     "ukUA": {
       "description": "Гаразд, {name}. Я готовий, якщо ти готовий.\n\nПочнемо?",
+      "dialogue": {
+        "9511535092bb232e2577": "Гаразд, $N. Я готова, якщо ти готовий.$B$BХодімо?",
+        "b46ba76240376ef96a4c": "Ти дуже нам допоміг, $N. Дякую.$B$BСподіваюся, з Кін там унизу було не надто важко. Вона дуже привітна, але може бути так само смертельно небезпечною для ворогів.",
+        "cb4f41c4ea04695014af": "Час розмов минув. Захисти Кінелорі, якщо тобі бодай трохи небайдужі жителі Гіллсбрада."
+      },
       "eventObjectiveLabel": "Захистіть Кінелорі",
       "summary": "Захищайте Кінелорі, поки вона не повернеться до Кві.",
       "title": "Сліди нової чуми?",
@@ -495,6 +847,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "4fa1870e780cc7cf503f25329a7dc04480e601f191c1310367e86736cc18816f"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -521,6 +888,11 @@
     },
     "zhCN": {
       "description": "好了，{name}。我已经准备好了。\n\n可以出发了吗？",
+      "dialogue": {
+        "9511535092bb232e2577": "好了，$N。我已经准备好了。\n\n可以出发了吗？",
+        "b46ba76240376ef96a4c": "你帮了我们的大忙，$N，谢谢你。\n\n但愿基恩洛刚才的凶狠善战没有吓到你。她对朋友很和善，但是对於敌人，她决不会有半点怜悯之心。\n",
+        "cb4f41c4ea04695014af": "现在不是聊天的时候。为了希尔斯布莱德的所有人民，请你一定要保护好基恩洛。"
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "保护基恩洛，直到她回到奎艾身边。",
       "title": "新的瘟疫？",
@@ -530,6 +902,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -551,6 +941,11 @@
     },
     "zhTW": {
       "description": "好了，{name}。我已經準備好了。\n\n可以出發了嗎？",
+      "dialogue": {
+        "9511535092bb232e2577": "好了，$N。我已經準備好了。\n\n可以出發了嗎？",
+        "b46ba76240376ef96a4c": "你幫了我們的大忙，$N，謝謝你。\n\n但願基恩洛剛才的兇狠善戰沒有嚇到你。她對朋友很和善，但是對於敵人，她決不會有半點憐憫之心。",
+        "cb4f41c4ea04695014af": "沒時間多說了。要是你在乎希爾斯布萊德的人民，就保護好奇妮洛莉。"
+      },
       "eventObjectiveLabel": "Protect Kinelory",
       "summary": "保護基恩洛，直到她回到奎艾身邊。",
       "title": "新的瘟疫？",
@@ -560,6 +955,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.9511535092bb232e2577": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.b46ba76240376ef96a4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.cb4f41c4ea04695014af": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",

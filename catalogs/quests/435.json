@@ -1,8 +1,36 @@
 {
   "areaId": 130,
+  "dialogueContexts": {
+    "81d9c8d88063a485a592": {
+      "lineId": "q:435:accept",
+      "npcId": 1978,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "90a2ea82b748b957e501": {
+      "lineId": "q:435:complete",
+      "npcId": 1950,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "efa8db46d9d6a1fc9554": {
+      "lineId": "q:435:progress",
+      "npcId": 1950,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vlci venku neodejdou a pokaždé, když vystrčím nohu ze dveří, na mě zlomyslně civí. Musí být neuvěřitelně hladoví, když si myslí, že stojím za to, aby mě snědli.\n\nMusím se hlásit své kolegyni Deathstalker Rane Yorick. A abych se k Rane dostal, budu potřebovat pomoc proti těm vlkům.\n\nProsím, doprovoď mě! A je tam venku hodně vlků, takže budeme mít větší šanci, pokud máš přátele, kteří mohou pomoci...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Vlci venku nechtějí odejít a pokaždé, když vyjdu ze dveří, zlověstně na mě hledí. Musí mít strašný hlad, když si myslí, že stojím za snědení.$B$BMusím podat hlášení svému druhovi, stopaři smrti Raneovi Yorickovi. Abych se k němu dostal, potřebuji proti těm vlkům pomoc.$B$BProsím, doprovoď mě! Vlků je tam hodně, takže budeme mít větší šanci, pokud ti pomohou přátelé...",
+        "90a2ea82b748b957e501": "Děkuji za pomoc, $N. Obával jsem se, že Erlanda přemohla nebezpečí Silverpine. Díky tobě vidím, že se tak nestalo.",
+        "efa8db46d9d6a1fc9554": "Buď prosím stručný. Všude kolem hrozí nebezpečí a nemůžeme tu nečinně rozmlouvat."
+      },
       "eventObjectiveLabel": "Erland se musí dostat k Raneu Yorickovi",
       "summary": "Doprovázej Erlanda přes vlky k Rane Yorickové.",
       "title": "Doprovod Erlanda",
@@ -13,6 +41,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +83,11 @@
     },
     "daDK": {
       "description": "Ulvene udenfor vil ikke forlade stedet, og de ser ondt på mig, hver gang jeg træder ud ad døren. De må være utroligt sultne, hvis de synes, jeg er værd at spise.\n\nJeg skal rapportere til min holdkammerat, Deathstalker Rane Yorick. Og for at nå frem til Rane får jeg brug for hjælp mod ulvene.\n\nEskortér mig! Og der er mange ulve derude, så vi har en bedre chance, hvis du har venner, der kan hjælpe ...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Ulvene udenfor vil ikke forsvinde, og de ser ondt på mig, hver gang jeg træder ud ad døren. De må være utroligt sultne, hvis de synes, jeg er værd at spise.$B$BJeg skal melde tilbage til min holdkammerat, dødsspejder Rane Yorick. For at nå frem til Rane har jeg brug for hjælp mod ulvene.$B$BFølg mig venligst! Der er mange ulve derude, så vi har en bedre chance, hvis du har venner, der kan hjælpe...",
+        "90a2ea82b748b957e501": "Tak for hjælpen, $N. Jeg frygtede, at Silverpines farer havde overvundet Erland. Takket være dig ser jeg, at det ikke er tilfældet.",
+        "efa8db46d9d6a1fc9554": "Gør det kort. Der er mange farer omkring os, og vi kan ikke stå stille og snakke."
+      },
       "eventObjectiveLabel": "Erland skal nå Rane Yorick",
       "summary": "Eskortér Erland gennem ulvene til Rane Yorick.",
       "title": "Eskortér Erland",
@@ -50,6 +98,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47a21ceec6aec19fa780924f7d7c2ca1af17c6a827031c4153956800551dccd1"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +137,11 @@
     },
     "deDE": {
       "description": "Die Wölfe da draußen wollen nicht abhauen, und jedesmal, wenn ich einen Schritt aus der Tür mache, schauen sie mich böse an. Sie müssen unglaublich hungrig sein, wenn sie mich für essenswert halten.\n\nIch muss mich bei meiner Kampfgefährtin, Todespirscherin Rane Yorick, melden. Und um zu Rane zu kommen, brauche ich Hilfe gegen diese Wölfe.\n\nBitte begleitet mich! Ach ja, da draußen sind eine Menge Wölfe, wir hätten also eine bessere Chance, wenn Ihr Freunde dabei hättet, die ebenfalls helfen können...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Die Wölfe da draußen wollen nicht abhauen, und jedesmal, wenn ich einen Schritt aus der Tür mache, schauen sie mich böse an. Sie müssen unglaublich hungrig sein, wenn sie mich für essenswert halten.\n\nIch muss mich bei meiner Kampfgefährtin, Todespirscherin Rane Yorick, melden. Und um zu Rane zu kommen, brauche ich Hilfe gegen diese Wölfe.\n\nBitte begleitet mich! Ach ja, da draußen sind eine Menge Wölfe, wir hätten also eine bessere Chance, wenn Ihr Freunde dabei hättet, die ebenfalls helfen können...",
+        "90a2ea82b748b957e501": "Danke für die Hilfe, $N. Ich hatte befürchtet, Erland wäre den Gefahren des Silberwaldes erlegen. Aber dank Eurer Hilfe war dem offensichtlich nicht so. ",
+        "efa8db46d9d6a1fc9554": "Bitte fassen Sie sich kurz.  Es ist viel Gefahr im Anmarsch, und wir können nicht untätig im Gespräch bleiben."
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "Begleitet Erland durch die Wölfe hindurch zu Rane Yorick.",
       "title": "Eskorte für Erland",
@@ -83,6 +151,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +190,11 @@
     },
     "enUS": {
       "description": "The wolves outside won't leave, and they eye me evilly every time I step foot out that door.  They must be incredibly hungry to think I'm worth eating.\n\nI have to report to my teammate, the Deathstalker Rane Yorick.  And to get to Rane, I'll need help against those wolves.\n\nPlease escort me!  And there are a lot of wolves out there, so we'll have a better chance if you have friends who can help...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "The wolves outside won't leave, and they eye me evilly every time I step foot out that door.  They must be incredibly hungry to think I'm worth eating.$B$BI have to report to my teammate, the Deathstalker Rane Yorick.  And to get to Rane, I'll need help against those wolves.$B$BPlease escort me!  And there are a lot of wolves out there, so we'll have a better chance if you have friends who can help...",
+        "90a2ea82b748b957e501": "Thank you for the aid, $N.  I had feared Erland was overcome by the dangers of Silverpine.  With your help, I see that he has not.",
+        "efa8db46d9d6a1fc9554": "Please be brief.  There is much danger about and we cannot stand idle in conversation."
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "Escort Erland through the wolves, to Rane Yorick.",
       "title": "Escorting Erland",
@@ -113,6 +204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +244,11 @@
     },
     "esES": {
       "description": "Los lobos que están fuera no se mueven y me miran de forma malvada cada vez que salgo por esa puerta. Deben de estar increíblemente hambrientos si piensan que puede merecer la pena comerme.\n\nTengo que informar a mi compañero de equipo, el Mortacechador Rane Yorick. Y, para conseguir llegar donde está Rane, necesitaré ayuda con esos lobos.\n\n¡Por favor, escóltame! Hay un montón de lobos ahí fuera, así que tendríamos más oportunidades si tienes algún amigo que pueda ayudarnos...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Los lobos que están fuera no se mueven y me miran de forma malvada cada vez que salgo por esa puerta. Deben de estar increíblemente hambrientos si piensan que puede merecer la pena comerme.\n\nTengo que informar a mi compañero de equipo, el Mortacechador Rane Yorick. Y, para conseguir llegar donde está Rane, necesitaré ayuda con esos lobos.\n\n¡Por favor, escóltame! Hay un montón de lobos ahí fuera, así que tendríamos más oportunidades si tienes algún amigo que pueda ayudarnos...",
+        "90a2ea82b748b957e501": "Gracias por tu ayuda, $n. Temía que Erland hubiera perecido en Argénteos. Pero, gracias a ti, veo que sigue con vida.",
+        "efa8db46d9d6a1fc9554": "Por favor, sea breve.  Hay mucho peligro alrededor y no podemos permanecer inactivos en la conversación."
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "Escolta a Erland a través de los lobos, hasta llegar a Rane Yorick.",
       "title": "Escolta a Erland",
@@ -144,6 +258,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +297,11 @@
     },
     "esMX": {
       "description": "Los lobos que están fuera no se mueven y me miran de forma malvada cada vez que salgo por esa puerta. Deben de estar increíblemente hambrientos si piensan que puede merecer la pena comerme.\n\nTengo que informar a mi compañero de equipo, el Mortacechador Rane Yorick. Y, para conseguir llegar donde está Rane, necesitaré ayuda con esos lobos.\n\n¡Por favor, escóltame! Hay un montón de lobos ahí fuera, así que tendríamos más oportunidades si tienes algún amigo que pueda ayudarnos...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Los lobos que están fuera no se mueven y me miran de forma malvada cada vez que salgo por esa puerta. Deben de estar increíblemente hambrientos si piensan que puede merecer la pena comerme.\n\nTengo que informar a mi compañero de equipo, el Mortacechador Rane Yorick. Y, para conseguir llegar donde está Rane, necesitaré ayuda con esos lobos.\n\n¡Por favor, escóltame! Hay un montón de lobos ahí fuera, así que tendríamos más oportunidades si tienes algún amigo que pueda ayudarnos...",
+        "90a2ea82b748b957e501": "Gracias por tu ayuda, $n. Temía que Erland hubiera perecido en Argénteos. Pero, gracias a ti, veo que sigue con vida.",
+        "efa8db46d9d6a1fc9554": "Por favor, sé breve. Hay mucho peligro por aquí y no podemos quedarnos conversando."
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "Escolta a Erland a través de los lobos, hasta llegar a Rane Yorick.",
       "title": "Escolta a Erland",
@@ -174,6 +311,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +349,11 @@
     },
     "frFR": {
       "description": "Les loups ne partiront pas, et leurs yeux me fixent avec avidité dès que je fais un pas dehors. Ils doivent avoir une sacrée fringale pour penser que je suis comestible !\n\nJ'ai un rapport à remettre à mon équipier, le Traqueur noir Rane Yorick, mais il faudra d'abord se tailler une route à travers ces loups.\n\nEscortez-moi ! C'est une véritable meute qui attend dehors ; si vous appeliez des amis en renfort, nous doublerions nos chances de réussite...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Les loups ne partiront pas, et leurs yeux me fixent avec avidité dès que je fais un pas dehors. Ils doivent avoir une sacrée fringale pour penser que je suis comestible !\n\nJ'ai un rapport à remettre à mon équipier, le Traqueur noir Rane Yorick, mais il faudra d'abord se tailler une route à travers ces loups.\n\nEscortez-moi ! C'est une véritable meute qui attend dehors ; si vous appeliez des amis en renfort, nous doublerions nos chances de réussite...",
+        "90a2ea82b748b957e501": "Merci de votre aide, $N. Je craignais qu'Erland n'ait succombé aux dangers de la forêt. Grâce à vous, je me réjouis de voir que ce n’est pas le cas. ",
+        "efa8db46d9d6a1fc9554": "Soyez bref, s'il vous plaît.  Il y a beaucoup de danger et nous ne pouvons pas rester inactifs dans nos conversations."
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "Escorter Erland jusqu'à Rane Yorick.",
       "title": "Une escorte pour Erland",
@@ -204,6 +363,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -225,6 +402,11 @@
     },
     "hrHR": {
       "description": "Vukovi vani ne odlaze i zlobno me gledaju svaki put kad kročim kroz ta vrata. Mora da su nevjerojatno gladni kad misle da me vrijedi pojesti.\n\nMoram se javiti svojem suradniku, Deathstalkeru Raneu Yoricku. A da bih stigao do Ranea, trebat će mi pomoć protiv tih vukova.\n\nMolim te, otprati me! Vani ima mnogo vukova pa ćemo imati više izgleda ako imaš prijatelje koji mogu pomoći...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Vukovi vani ne odlaze i zlokobno me gledaju svaki put kad izađem kroz vrata. Mora da su nevjerojatno gladni kad misle da me vrijedi pojesti.$B$BMoram se javiti svojem suborcu, smrtnom uhodi Raneu Yoricku. Da stignem do Ranea, trebat će mi pomoć protiv vukova.$B$BMolim te, otprati me! Vani je mnogo vukova, pa ćemo imati više izgleda ako ti prijatelji mogu pomoći...",
+        "90a2ea82b748b957e501": "Hvala na pomoći, $N. Bojao sam se da su opasnosti Silverpinea svladale Erlanda. Zahvaljujući tebi vidim da nisu.",
+        "efa8db46d9d6a1fc9554": "Molim te, budi kratak. Posvuda vreba opasnost i ne možemo stajati i razgovarati."
+      },
       "eventObjectiveLabel": "Erland mora stići do Ranea Yoricka",
       "summary": "Otprati Erlanda kroz vukove do Ranea Yoricka.",
       "title": "Pratnja Erlandu",
@@ -235,6 +417,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47a21ceec6aec19fa780924f7d7c2ca1af17c6a827031c4153956800551dccd1"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -259,6 +456,11 @@
     },
     "itIT": {
       "description": "I lupi là fuori non se ne vanno e mi guardano con cattiveria ogni volta che metto piede fuori dalla porta. Devono essere terribilmente affamati per pensare che valga la pena mangiarmi.\n\nDevo fare rapporto alla mia compagna, la cacciatrice della morte Rane Yorick. E per raggiungerla mi servirà aiuto contro quei lupi.\n\nTi prego, scortami! Là fuori ci sono molti lupi, quindi avremo più possibilità se hai amici che possono aiutarci...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "I lupi là fuori non se ne vanno, e mi lanciano occhiate cattive ogni volta che metto piede fuori da quella porta. Devono avere una fame incredibile, per pensare che valga la pena mangiarmi.\n\nDevo fare rapporto alla mia compagna di squadra, Rane Yorick, degli Inseguitori della Morte. E per arrivare da Rane mi serve aiuto contro quei lupi.\n\nTi prego, scortami! E là fuori di lupi ce ne sono tanti, quindi avremo più possibilità se hai degli amici che possono darci una mano...",
+        "90a2ea82b748b957e501": "Grazie dell'aiuto, $N. Temevo che Erland fosse stato sopraffatto dai pericoli di Silverpine. Vedo che, grazie a te, non è così.",
+        "efa8db46d9d6a1fc9554": "Ti prego, sii breve. C'è molto pericolo qui intorno e non possiamo restare fermi a chiacchierare."
+      },
       "eventObjectiveLabel": "Erland deve raggiungere Rane Yorick",
       "summary": "Scorta Erland tra i lupi fino a Rane Yorick.",
       "title": "Scortare Erland",
@@ -269,6 +471,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47a21ceec6aec19fa780924f7d7c2ca1af17c6a827031c4153956800551dccd1"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -293,6 +513,11 @@
     },
     "koKR": {
       "description": "밖에 있는 늑대들은 떠날 생각을 않고 날 사납게 노려보고 있소. 내가 저 문으로 한 발짝이라도 내딛으면 놈들이 덤벼 들 거요. 놈들은 너무 굶주린 나머지 나를 맛있는 먹잇감으로 보고 있는 것이 분명하오.\n\n동료인 레인 요릭에게 보고서를 가져다 줘야 하는데, 그러려면 아무래도 누군가 날 좀 보호해 줘야 할 것 같소.\n\n당신이 날 좀 도와주겠소? 늑대들이 너무 많아서 혼자서는 힘들지도 모르니 친구들이 더 있다면 도움이 될 것이오.",
+      "dialogue": {
+        "81d9c8d88063a485a592": "밖에 있는 늑대들은 떠날 생각을 않고 날 사납게 노려보고 있소. 내가 저 문으로 한 발짝이라도 내딛으면 놈들이 덤벼 들 거요. 놈들은 너무 굶주린 나머지 나를 맛있는 먹잇감으로 보고 있는 것이 분명하오.\n\n동료인 레인 요릭에게 보고서를 가져다 줘야 하는데, 그러려면 아무래도 누군가 날 좀 보호해 줘야 할 것 같소.\n\n당신이 날 좀 도와주겠소? 늑대들이 너무 많아서 혼자서는 힘들지도 모르니 친구들이 더 있다면 도움이 될 것이오.",
+        "90a2ea82b748b957e501": "고마워요. 엘런드가 이 위험한 은빛소나무 숲에서 변이라도 당한 건 아닌지 얼마나 걱정했다고요. 당신이 도와준 덕분에 그를 다시 볼 수 있게 되었네요.",
+        "efa8db46d9d6a1fc9554": "간략하게 작성해주세요.  주위에는 많은 위험이 있으며 우리는 대화를 게을리 할 수 ​​없습니다."
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "레인 요릭이 있는 곳까지 늑대들을 물리치고 엘런드를 경호해야 합니다.",
       "title": "엘런드 경호",
@@ -302,6 +527,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -323,6 +566,11 @@
     },
     "plPL": {
       "description": "Wilki na zewnątrz nie chcą odejść. Za każdym razem, gdy wychylę się za drzwi, łypią na mnie złowrogo. Muszą być niesłychanie głodne, skoro uważają mnie za coś wartego zjedzenia.\n\nMuszę złożyć raport Rane Yorick z mojego oddziału Deathstalker. Żeby dotrzeć do Rane, potrzebuję pomocy w walce z tymi wilkami.\n\nProszę, eskortuj mnie! Wilków jest tam mnóstwo, więc nasze szanse wzrosną, jeśli masz przyjaciół gotowych pomóc...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Wilki na zewnątrz nie chcą odejść i patrzą na mnie złowrogo za każdym razem, gdy wychodzę za drzwi. Muszą być strasznie głodne, skoro uważają, że warto mnie zjeść.$B$BMuszę zgłosić się do mojego towarzysza, tropiciela śmierci Rane’a Yoricka. By do niego dotrzeć, potrzebuję pomocy przeciw wilkom.$B$BProszę, odprowadź mnie! Wilków jest tam wiele, więc będziemy mieć większe szanse, jeśli pomogą ci przyjaciele...",
+        "90a2ea82b748b957e501": "Dziękuję za pomoc, $N. Obawiałem się, że Erland padł ofiarą niebezpieczeństw Silverpine. Dzięki tobie widzę, że tak się nie stało.",
+        "efa8db46d9d6a1fc9554": "Proszę, mów krótko. Wokół czyha wiele niebezpieczeństw i nie możemy stać bezczynnie na rozmowie."
+      },
       "eventObjectiveLabel": "Erland musi dotrzeć do Rane'a Yoricka",
       "summary": "Przeprowadź Erlanda przez wilki do Rane Yorick.",
       "title": "Eskorta Erlanda",
@@ -333,6 +581,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47a21ceec6aec19fa780924f7d7c2ca1af17c6a827031c4153956800551dccd1"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -357,6 +620,11 @@
     },
     "ptBR": {
       "description": "Os lobos do lado de fora não vão embora, e me olham com maldade cada vez que eu ponho o pé para fora daquela porta. Eles devem estar com muita fome para me considerar uma refeição aceitável.\n\nPreciso me reportar à minha colega, a Sicária Rane Yorick. E para chegar até ela, vou precisar de sua ajuda para sobreviver aos lobos.\n\nPor favor, me escolte! E como tem muitos lobos lá fora, teremos mais chance de conseguir se você trouxer amigos para ajudar...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Os lobos do lado de fora não vão embora, e me olham com maldade cada vez que eu ponho o pé para fora daquela porta. Eles devem estar com muita fome para me considerar uma refeição aceitável.\n\nPreciso me reportar à minha colega, a Sicária Rane Yorick. E para chegar até ela, vou precisar de sua ajuda para sobreviver aos lobos.\n\nPor favor, me escolte! E como tem muitos lobos lá fora, teremos mais chance de conseguir se você trouxer amigos para ajudar...",
+        "90a2ea82b748b957e501": "Obrigada pela ajuda, $N. Estava com medo de Orlando ser derrotado pelos perigos de Pinhaprata. Com a sua ajuda, vejo que ele conseguiu se sair bem.",
+        "efa8db46d9d6a1fc9554": "Por favor, seja breve. Há muito perigo por aqui e não podemos ficar parados conversando."
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "Escolte Orlando a salvo dos lobos até encontrar-se com Rane Yorick.",
       "title": "Uma escolta para Orlando",
@@ -366,6 +634,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -387,6 +672,11 @@
     },
     "ruRU": {
       "description": "Волки там, снаружи, никуда не уйдут, и они злобно смотрят на меня каждый раз, когда я выхожу из двери. Должно быть, они невероятно голодны, раз смогли счесть меня пищей. \n\nЯ должен доложиться своей коллеге, стражу смерти Ран Йорик. Но чтобы добраться до Ран, мне нужна помощь против этих волков.\n\nПожалуйста, проводите меня! Волков здесь очень много, так что наши шансы будут выше, если у вас есть готовые помочь друзья...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Волки там, снаружи, никуда не уйдут, и они злобно смотрят на меня каждый раз, когда я выхожу из двери. Должно быть, они невероятно голодны, раз смогли счесть меня пищей. \n\nЯ должен доложиться своей коллеге, стражу смерти Ран Йорик. Но чтобы добраться до Ран, мне нужна помощь против этих волков.\n\nПожалуйста, проводите меня! Волков здесь очень много, так что наши шансы будут выше, если у вас есть готовые помочь друзья...",
+        "90a2ea82b748b957e501": "Спасибо за помощь, $N. Я боялась, что Эрланда погубили опасности Серебряного бора. Но я вижу, что благодаря вашей помощи этого не произошло.",
+        "efa8db46d9d6a1fc9554": "Пожалуйста, говори кратко. Вокруг много опасностей, и нам нельзя стоять без дела и болтать."
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "Проводите Эрланда, защищая его от волков, к Ран Йорик.",
       "title": "Сопровождая Эрланда",
@@ -396,6 +686,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -417,6 +724,11 @@
     },
     "svSE": {
       "description": "Vargarna där ute ger sig inte av, och de ger mig onda blickar varje gång jag sätter foten utanför dörren. De måste vara otroligt hungriga om de tycker att jag är värd att äta.\n\nJag måste rapportera till min lagkamrat, dödspejaren Rane Yorick. Och för att komma till Rane behöver jag hjälp mot de där vargarna.\n\nSnälla, eskortera mig! Och det finns många vargar där ute, så vi har större chans om du har vänner som kan hjälpa till ...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Vargarna utanför vill inte ge sig av, och de ser ondskefullt på mig varje gång jag kliver ut genom dörren. De måste vara otroligt hungriga om de tycker att jag är värd att äta.$B$BJag måste rapportera till min kamrat, dödsspanaren Rane Yorick. För att nå Rane behöver jag hjälp mot vargarna.$B$BSnälla, följ mig! Det finns många vargar där ute, så vi har större chans om du har vänner som kan hjälpa till...",
+        "90a2ea82b748b957e501": "Tack för hjälpen, $N. Jag fruktade att Erland hade fallit offer för farorna i Silverpine. Tack vare dig ser jag att han inte gjorde det.",
+        "efa8db46d9d6a1fc9554": "Var kortfattad. Det finns många faror omkring oss och vi kan inte stå stilla och prata."
+      },
       "eventObjectiveLabel": "Erland måste nå Rane Yorick",
       "summary": "Eskortera Erland förbi vargarna till Rane Yorick.",
       "title": "Eskort åt Erland",
@@ -427,6 +739,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47a21ceec6aec19fa780924f7d7c2ca1af17c6a827031c4153956800551dccd1"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -453,6 +780,11 @@
     },
     "trTR": {
       "description": "Dışarıdaki kurtlar gitmiyor ve şu kapıdan her adım attığımda bana kötü kötü bakıyorlar. Beni yemeye değer bulacak kadar aç olmalılar.\n\nTakım arkadaşım Deathstalker Rane Yorick'e rapor vermem lazım. Rane'e ulaşmak için de o kurtlara karşı yardıma ihtiyacım var.\n\nLütfen bana eşlik et! Dışarıda bir sürü kurt var, yardım edebilecek arkadaşların varsa şansımız daha yüksek olur...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Dışarıdaki kurtlar gitmiyor ve kapıdan her çıktığımda bana kötü kötü bakıyorlar. Beni yemeye değer bulduklarına göre çok aç olmalılar.$B$BTakım arkadaşım Ölüm İzci Rane Yorick’e rapor vermem gerekiyor. Rane’e ulaşmak için kurtlara karşı yardıma ihtiyacım var.$B$BLütfen bana eşlik et! Dışarıda çok sayıda kurt var, yardım edebilecek dostların varsa şansımız daha yüksek olur...",
+        "90a2ea82b748b957e501": "Yardımın için teşekkür ederim, $N. Erland’ın Silverpine’ın tehlikelerine yenik düştüğünden korkmuştum. Senin sayende öyle olmadığını görüyorum.",
+        "efa8db46d9d6a1fc9554": "Lütfen kısa kes. Etrafta çok tehlike var ve burada boş boş konuşamayız."
+      },
       "eventObjectiveLabel": "Erland, Rane Yorick'e ulaşmalı",
       "summary": "Erland'a kurtların arasından Rane Yorick'e kadar eşlik et.",
       "title": "Erland'a Refakat",
@@ -463,6 +795,21 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -487,6 +834,11 @@
     },
     "ukUA": {
       "description": "Вовки ззовні ніяк не підуть, і вони злісно на мене дивляться щоразу, коли я виходжу за двері. Вони, мабуть, неймовірно голодні, якщо думають, що я вартий того, щоб мене з'їсти.\n\nМені потрібно відзвідувати моїй напарниці, смертоловці Рейні Йорік. А щоб дістатися до Рейни, мені знадобиться допомога проти цих вовків.\n\nБудь ласка, супроводь мене! Назовні багато вовків, тому наші шанси зростуть, якщо в тебе є друзі, які зможуть допомогти...",
+      "dialogue": {
+        "81d9c8d88063a485a592": "Вовки надворі не йдуть і щоразу, як я виходжу за двері, зловісно дивляться на мене. Мабуть, вони страшенно голодні, якщо вважають мене гідним обіду.$B$BЯ мушу доповісти товаришеві, ловцю смерті Рейну Йоріку. А щоб дістатися до Рейна, мені потрібна допомога проти вовків.$B$BБудь ласка, проведи мене! Вовків там багато, тож у нас буде більше шансів, якщо твої друзі допоможуть...",
+        "90a2ea82b748b957e501": "Дякую за допомогу, $N. Я боявся, що Ерланд загинув через небезпеки Silverpine. Завдяки тобі бачу, що це не так.",
+        "efa8db46d9d6a1fc9554": "Будь ласка, коротко. Навколо багато небезпек, і ми не можемо стояти без діла й розмовляти."
+      },
       "eventObjectiveLabel": "Ерланд має дістатися до Рейни Йорік",
       "summary": "Проведіть Ерланда через вовків до Рейни Йорік.",
       "title": "Супроводжуючи Ерланда",
@@ -498,6 +850,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "47a21ceec6aec19fa780924f7d7c2ca1af17c6a827031c4153956800551dccd1"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -524,6 +891,11 @@
     },
     "zhCN": {
       "description": "外面的狼群看来是不想离开了，而且我每次走出屋子的时候，它们都恶狠狠地盯着我。这些野狼显然是饿极了，它们把我当成了大餐！\n\n我得通知我的队友，亡灵哨兵兰妮·尤瑞克。也就是说，我要到她那里去，得先找人帮我搞定这群狼。\n\n请护送我吧！不过，这边的狼也实在是多了点，如果你还有别的朋友的话…再好不过……",
+      "dialogue": {
+        "81d9c8d88063a485a592": "外面的狼群看来是不想离开了，而且我每次走出屋子的时候，它们都恶狠狠地盯着我。这些野狼显然是饿极了，它们把我当成了大餐！\n\n我得通知我的队友，亡灵哨兵兰妮·尤瑞克。也就是说，我要到她那里去，得先找人帮我搞定这群狼。\n\n请护送我吧！不过，这边的狼也实在是多了点，如果你还有别的朋友的话…再好不过……",
+        "90a2ea82b748b957e501": "多谢你的帮助，$N。我正担心埃兰德在银松森林里遭遇不幸了呢。幸亏有你帮忙，我才放下心来。\n",
+        "efa8db46d9d6a1fc9554": "请说得尽量简短点。这太危险了，我们可没法站在这里悠闲地聊天。"
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "护送亡灵哨兵埃兰德避过群狼，直到他找到兰妮·尤瑞克。",
       "title": "护送埃兰德",
@@ -533,6 +905,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -554,6 +944,11 @@
     },
     "zhTW": {
       "description": "外面的狼群看來是不想離開了，而且我每次走出屋子的時候，它們都惡狠狠地盯著我。這些野狼顯然是餓極了，它們把我當成了大餐！\n\n我得通知我的隊友，亡靈哨兵蘭妮·尤瑞克。也就是說，我要到她那裡去，得先找人幫我搞定這群狼。\n\n請護送我吧！不過，這邊的狼也實在是多了點，如果你還有別的朋友的話…再好不過……",
+      "dialogue": {
+        "81d9c8d88063a485a592": "外面的狼群看來是不想離開了，而且我每次走出屋子的時候，它們都惡狠狠地盯著我。這些野狼顯然是餓極了，它們把我當成了大餐!\n\n我得通知我的隊友，亡靈哨兵蘭妮·尤瑞克。也就是說，我要到她那裡去，得先找人幫我搞定這群狼。\n\n請護送我吧!不過，這邊的狼也實在是多了點，如果你還有別的朋友的話…再好不過……",
+        "90a2ea82b748b957e501": "多謝你的幫助，$N。我正擔心埃蘭德在銀松森林裡遭遇不幸了呢。幸虧有你幫忙，我才放下心來。",
+        "efa8db46d9d6a1fc9554": "請長話短說。四周危機四伏，我們不能站在這裡閒聊。"
+      },
       "eventObjectiveLabel": "Erland must reach Rane Yorick",
       "summary": "護送亡靈哨兵埃蘭德避過群狼，直到他找到蘭妮·尤瑞克。",
       "title": "護送埃蘭德",
@@ -563,6 +958,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.81d9c8d88063a485a592": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.90a2ea82b748b957e501": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.efa8db46d9d6a1fc9554": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",

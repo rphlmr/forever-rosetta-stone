@@ -1,7 +1,27 @@
 {
+  "dialogueContexts": {
+    "db0bce0950d97ddb4e89": {
+      "lineId": "q:6623:accept",
+      "npcId": 3373,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "eaa435d993a4d2b483d3": {
+      "lineId": "q:6623:complete",
+      "npcId": 12920,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "{name}, předpokládám, že tvým oborem je lékařství. Rád tě znovu vidím.\n\nMám pro tebe skvělou zprávu! Doktor Gregory Victor, vrchní lékař Horde Trauma, osobně požádal, ať se k němu připojíš v Hammerfallu. Tohle může být životní příležitost! Dal bych cokoli za možnost učit se u velkého doktora Gregoryho Victora! Tuhle příležitost nepromarni!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doktor $N, předpokládám. Rád vás opět vidím.$B$BMám pro vás úžasnou zprávu! Doktor Gregory Victor, hlavní lékař úrazové péče Hordy, si osobně vyžádal, abyste se k němu připojil v Hammerfallu. To může být životní příležitost! Dal bych cokoli za možnost studovat pod vedením velkého doktora Gregoryho Victora! Nepromarněte ji!",
+        "eaa435d993a4d2b483d3": "Výborně. Oblečte si pracovní oděv, začneme ihned!"
+      },
       "summary": "Vydej se do Hammerfall v Arathi Highlands a promluv si s doktorem Gregorym Victorem o vstupu do řad Horde Trauma.",
       "title": "Trauma Hordy",
       "translationMetadata": {
@@ -11,6 +31,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "15990eaf4538bee5479110a7b4d1913847fbb7c16921d0cbbf3509df0b10aa6d"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -29,6 +59,10 @@
     },
     "daDK": {
       "description": "Doktor {name}, formoder jeg. Det er en fornøjelse at se dig igen.\n\nJeg har vidunderlige nyheder til dig! Doktor Gregory Victor, overlæge for Horde Trauma, har personligt anmodet om, at du slutter dig til ham ved Hammerfall. Det kan være en enestående mulighed! Jeg ville give alt for at få en chance for at studere under den store doktor Gregory Victor! Spild ikke denne mulighed!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doktor $N, formoder jeg. Det glæder mig at se Dem igen.$B$BJeg har vidunderlige nyheder! Doktor Gregory Victor, overlæge for Hordens traumebehandling, har personligt anmodet om, at De slutter Dem til ham i Hammerfall. Det kan være en enestående mulighed! Jeg ville give hvad som helst for at studere under den store doktor Gregory Victor! Lad ikke chancen gå til spilde!",
+        "eaa435d993a4d2b483d3": "Vidunderligt. Tag arbejdstøjet på, vi begynder straks!"
+      },
       "summary": "Rejs til Hammerfall i Arathi Highlands, og tal med doktor Gregory Victor om at slutte dig til Horde Trauma.",
       "title": "Hordens traumer",
       "translationMetadata": {
@@ -38,6 +72,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "15990eaf4538bee5479110a7b4d1913847fbb7c16921d0cbbf3509df0b10aa6d"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -56,6 +100,10 @@
     },
     "deDE": {
       "description": "Doktor {name}, nehme ich an. Es ist mir eine Freude, Euch wiederzusehen.\n\nIch habe wunderbare Neuigkeiten für Euch! Doktor Gregory Victor, Chefarzt der Traumachirurgen der Horde, hat Euch persönlich angefordert, damit Ihr Euch ihm in Hammerfall anschließt. Das könnte eine einmalige Gelegenheit sein! Ich würde alles darum geben, bei dem großen Doktor Gregory Victor studieren zu dürfen! Diese Gelegenheit dürft Ihr Euch nicht entgehen lassen!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doktor $n, nehme ich an. Es ist mir eine Freude, Euch wiederzusehen.\n\nIch habe wunderbare Neuigkeiten für Euch! Doktor Gregory Victor, Chefarzt der Traumachirurgen der Horde, hat Euch persönlich angefordert, damit Ihr Euch ihm in Hammerfall anschließt. Das könnte eine einmalige Gelegenheit sein! Ich würde alles darum geben, bei dem großen Doktor Gregory Victor studieren zu dürfen! Diese Gelegenheit dürft Ihr Euch nicht entgehen lassen!",
+        "eaa435d993a4d2b483d3": "Großartig. Zieht Eure Operationskluft an, dann werden wir sogleich beginnen!"
+      },
       "summary": "Reist nach Hammerfall im Arathihochland und sprecht mit Doktor Gregory Victor darüber, dass Ihr auch ein Traumachirurg der Horde werden wollt.",
       "title": "Traumachirurg der Horde",
       "translationMetadata": {
@@ -64,6 +112,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -80,6 +140,10 @@
     },
     "enUS": {
       "description": "Doctor {name}, I presume. It is a pleasure to see you again.\n\nI have some wonderful news for you! Doctor Gregory Victor, chief physician of Horde Trauma has made a personal request for you to join him at Hammerfall. This could be the opportunity of a lifetime! I would give anything to be given a chance to study under the great Doctor Gregory Victor! Do not squander this opportunity!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doctor $N, I presume. It is a pleasure to see you again.$B$BI have some wonderful news for you! Doctor Gregory Victor, chief physician of Horde Trauma has made a personal request for you to join him at Hammerfall. This could be the opportunity of a lifetime! I would give anything to be given a chance to study under the great Doctor Gregory Victor! Do not squander this opportunity!",
+        "eaa435d993a4d2b483d3": "Wonderful. Put on your scrubs, we are to start at once!"
+      },
       "summary": "Travel to Hammerfall in the Arathi Highlands and speak with Doctor Gregory Victor about joining the ranks of Horde Trauma.\n",
       "title": "Horde Trauma",
       "translationMetadata": {
@@ -88,6 +152,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -104,6 +180,10 @@
     },
     "esES": {
       "description": "¿Eres {name}? Me alegra verte de nuevo.\n\n¡Tengo muy buenas noticias! Gregory Victor, el jefe médico del Dispensario de la Horda, ha solicitado personalmente que te reúnas con él en Sentencia. ¡Podría ser la oportunidad de tu vida! ¡Daría lo que fuera por poder estudiar con el gran Gregory Victor! ¡Aprovecha tú que puedes!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "¿Eres $n? Me alegra verte de nuevo.\n\n¡Tengo muy buenas noticias! Gregory Victor, el jefe médico del Dispensario de la Horda, ha solicitado personalmente que te reúnas con él en Sentencia. ¡Podría ser la oportunidad de tu vida! ¡Daría lo que fuera por poder estudiar con el gran Gregory Victor! ¡Aprovecha tú que puedes!",
+        "eaa435d993a4d2b483d3": "Bien, ¡ponte la bata y empecemos!"
+      },
       "summary": "Ve a Sentencia, en las Tierras Altas de Arathi, y habla con el doctor Gregory Victor sobre tu incorporación al Dispensario de la Horda.|n",
       "title": "Dispensario de la Horda",
       "translationMetadata": {
@@ -112,6 +192,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -128,6 +220,10 @@
     },
     "esMX": {
       "description": "¿Eres {name}? Me alegra verte de nuevo.\n\n¡Tengo muy buenas noticias! Gregory Victor, el jefe médico del Dispensario de la Horda, ha solicitado personalmente que te reúnas con él en Sentencia. ¡Podría ser la oportunidad de tu vida! ¡Daría lo que fuera por poder estudiar con el gran Gregory Victor! ¡Aprovecha tú que puedes!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "¿Eres $n? Me alegra verte de nuevo.\n\n¡Tengo muy buenas noticias! Gregory Victor, el jefe médico del Dispensario de la Horda, ha solicitado personalmente que te reúnas con él en Sentencia. ¡Podría ser la oportunidad de tu vida! ¡Daría lo que fuera por poder estudiar con el gran Gregory Victor! ¡Aprovecha tú que puedes!",
+        "eaa435d993a4d2b483d3": "Maravilloso. ¡Ponte la bata, vamos a empezar de inmediato!"
+      },
       "summary": "Ve a Sentencia, en las Tierras Altas de Arathi, y habla con el doctor Gregory Victor sobre tu incorporación al Dispensario de la Horda.",
       "title": "Dispensario de la Horda",
       "translationMetadata": {
@@ -136,6 +232,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -152,6 +260,10 @@
     },
     "frFR": {
       "description": "Docteur {name}, je suppose. C'est un plaisir de vous revoir.\n\nJ'ai de merveilleuses nouvelles pour vous : le docteur Gregory Victor, médecin-chef de la Horde, veut que vous alliez le retrouver au Trépas-d'Orgrim. Ceci pourrait bien être une occasion unique ! Je donnerais n'importe quoi pour avoir la chance d'étudier avec le grand docteur Gregory Victor ! Ne gâchez pas cette occasion, elle ne se représentera peut-être plus jamais !",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Docteur $N, je suppose. C'est un plaisir de vous revoir.\n\nJ'ai de merveilleuses nouvelles pour vous : le docteur Gregory Victor, médecin-chef de la Horde, veut que vous alliez le retrouver au Trépas-d'Orgrim. Ceci pourrait bien être une occasion unique ! Je donnerais n'importe quoi pour avoir la chance d'étudier avec le grand docteur Gregory Victor ! Ne gâchez pas cette occasion, elle ne se représentera peut-être plus jamais !",
+        "eaa435d993a4d2b483d3": "Merveilleux. préparez-vous, nous devons commencer immédiatement !"
+      },
       "summary": "Aller au Trépas-d'Orgrim, dans les hautes-terres d'Arathi, et évoquer avec le docteur Gregory Victor la possibilité de rejoindre les rangs des médecins de la Horde.",
       "title": "Service de traumatologie de la Horde",
       "translationMetadata": {
@@ -160,6 +272,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -176,6 +300,10 @@
     },
     "hrHR": {
       "description": "Doktor {name}, pretpostavljam. Drago mi je ponovno te vidjeti.\n\nImam divne vijesti za tebe! Doktor Gregory Victor, glavni liječnik Horde Trauma, osobno je zatražio da mu se pridružiš u Hammerfallu. To bi mogla biti životna prilika! Dao bih sve za priliku da učim kod velikog doktora Gregoryja Victora! Ne protraći ovu priliku!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doktor $N, pretpostavljam. Drago mi je ponovno vas vidjeti.$B$BImam divne vijesti! Doktor Gregory Victor, glavni liječnik za traume Horde, osobno je zatražio da mu se pridružite u Hammerfallu. To bi mogla biti životna prilika! Dao bih sve za priliku da učim od velikog doktora Gregoryja Victora! Nemojte je propustiti!",
+        "eaa435d993a4d2b483d3": "Divno. Obucite radnu odjeću, odmah počinjemo!"
+      },
       "summary": "Otputuj u Hammerfall u Arathi Highlandsu i razgovaraj s doktorom Gregoryjem Victorom o pridruživanju redovima Horde Trauma.\n",
       "title": "Trauma Horde",
       "translationMetadata": {
@@ -185,6 +313,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "15990eaf4538bee5479110a7b4d1913847fbb7c16921d0cbbf3509df0b10aa6d"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -202,6 +340,10 @@
     },
     "itIT": {
       "description": "Il dottor {name}, suppongo. È un piacere rivederti.\n\nHo delle notizie fantastiche da darti. Il Dottor Gregory Victor, Direttore Medico dell'Istituto di Traumatologia dell'Orda, ha chiesto personalmente che tu lo raggiunga a Requie del Martello. Potrebbe essere un'opportunità unica! Non so cosa darei per studiare sotto il grande Dottor Gregory Victor! Non sprecare quest'occasione!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Dottor $N, presumo. È un piacere rivederti.$B$BHo una splendida notizia! Il dottor Gregory Victor, primario del reparto traumi dell'Orda, ha chiesto personalmente che tu lo raggiunga a Hammerfall. Potrebbe essere l'occasione della vita! Darei qualsiasi cosa per studiare sotto la guida del grande dottor Gregory Victor! Non sprecarla!",
+        "eaa435d993a4d2b483d3": "Magnifico. Mettiti il camice, cominciamo subito!"
+      },
       "summary": "Raggiungi Hammerfall nelle Arathi Highlands e parla con il dottor Gregory Victor per entrare nel servizio traumatologico dell'Orda.\n",
       "title": "Istituto di Traumatologia dell'Orda",
       "translationMetadata": {
@@ -210,6 +352,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -227,6 +380,10 @@
     },
     "koKR": {
       "description": "{name}, 자네 의사로군?! 다시 만나 반갑네.\n\n그나저나 기가 막히게 기쁜 소식이 하나 있어! 호드 응급의학회의 수석 의사이신 그레고리 빅터께서 친히 자네에게 해머폴로 오라는 요청을 하셨다네. 이건 일생일대의 기회라고! 나라면 그레고리 빅터와 같이 위대한 의사 밑에서 공부할 기회를 잡을 수만 있다면 무슨 짓이라도 하겠어! 그러니 이 기회를 놓치지 말라고, 의사 선생!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "$n, 자네 의사로군?! 다시 만나 반갑네.\n\n그나저나 기가 막히게 기쁜 소식이 하나 있어! 호드 응급의학회의 수석 의사이신 그레고리 빅터께서 친히 자네에게 해머폴로 오라는 요청을 하셨다네. 이건 일생일대의 기회라고! 나라면 그레고리 빅터와 같이 위대한 의사 밑에서 공부할 수 있는 기회를 잡을 수만 있다면 무슨 짓이라도 하겠어! 그러니 이 기회를 놓치지 말라고, 의사 선생!",
+        "eaa435d993a4d2b483d3": "좋아, 손부터 씻고 바로 시작하도록 하세나!"
+      },
       "summary": "아라시 고원에 있는 해머폴로 가서 호드 응급의학회의 일원이 되는 방법에 대해 의사 그레고리 빅터와 대화를 나누어야 합니다.",
       "title": "호드 응급의학회",
       "translationMetadata": {
@@ -235,6 +392,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -251,6 +420,10 @@
     },
     "plPL": {
       "description": "Doktor {name}, jak przypuszczam. Miło znów cię widzieć.\n\nMam wspaniałe wieści! Doktor Gregory Victor, naczelny lekarz medyków Hordy, osobiście poprosił, byś dołączył do niego w Hammerfall. To może być szansa życia! Oddałbym wszystko za możliwość nauki u wielkiego doktora Gregory'ego Victora! Nie zmarnuj jej!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doktor $N, jak przypuszczam. Miło znów cię widzieć.$B$BMam wspaniałe wieści! Doktor Gregory Victor, naczelny lekarz oddziału urazowego Hordy, osobiście poprosił, byś dołączył do niego w Hammerfall. To może być szansa życia! Oddałbym wszystko, by móc uczyć się pod okiem wielkiego doktora Gregory'ego Victora! Nie zmarnuj tej okazji!",
+        "eaa435d993a4d2b483d3": "Wspaniale. Włóż strój medyczny, zaczynamy natychmiast!"
+      },
       "summary": "Udaj się do Hammerfall w Arathi Highlands i porozmawiaj z doktorem Gregorym Victorem o dołączeniu do medyków Hordy.\n",
       "title": "Medycy Hordy",
       "translationMetadata": {
@@ -260,6 +433,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "15990eaf4538bee5479110a7b4d1913847fbb7c16921d0cbbf3509df0b10aa6d"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -278,6 +461,10 @@
     },
     "ptBR": {
       "description": "Doutor {name}, eu presumo. É um prazer vê-lo.\n\nTenho ótimas notícias para você! O Doutor Victor Zerbini, médico-chefe do Pronto-socorro da Horda, faz questão que você se junte à equipe dele na Ruína do Martelo. É uma oportunidade única na vida! Eu daria tudo para estudar com o grande Doutor Victor Zerbini! Não desperdice esta chance!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doutor $n, eu presumo. É um prazer vê-lo.\n\nTenho ótimas notícias para você! O Doutor Victor Zerbini, médico-chefe do Pronto-socorro da Horda, faz questão que você se junte à equipe dele na Ruína do Martelo. É uma oportunidade única na vida! Eu daria tudo para estudar com o grande Doutor Victor Zerbini! Não desperdice esta chance!",
+        "eaa435d993a4d2b483d3": "Ótimo. Vista o jaleco para começarmos logo!"
+      },
       "summary": "Vá para a Ruína do Martelo no Planalto Arathi e fale com o Doutor Victor Zerbini para entrar para a equipe do Pronto-socorro da Horda.",
       "title": "Pronto-socorro da Horda",
       "translationMetadata": {
@@ -286,6 +473,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -302,6 +501,10 @@
     },
     "ruRU": {
       "description": "Доктор {name}, я так понимаю? Рад новой встрече.\n\nУ меня для тебя замечательные новости. Доктор Грегори Виктор, главный травматолог Орды, предлагает тебе поработать у него в Павшем Молоте. Такой шанс выпадает раз в жизни! Лично я отдал бы все на свете за возможность поработать под руководством великого Грегори Виктора! Не упусти свою удачу!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Доктор $n, я так понимаю? Рад новой встрече.\n\nУ меня для тебя замечательные новости. Доктор Грегори Виктор, главный травматолог Орды, предлагает тебе поработать у него в Павшем Молоте. Такой шанс выпадает раз в жизни! Лично я отдал бы все на свете за возможность поработать под руководством великого Грегори Виктора! Не упусти свою удачу!",
+        "eaa435d993a4d2b483d3": "Чудесно. Располагайтесь, и мы начнем!"
+      },
       "summary": "Пойдите в Павший Молот на нагорье Арати и поговорите с доктором Грегори Виктором о том, чтобы стать травматологом.",
       "title": "Травматология",
       "translationMetadata": {
@@ -310,6 +513,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -326,6 +541,10 @@
     },
     "svSE": {
       "description": "Doktor {name}, förmodar jag. Det är ett nöje att träffa dig igen.\n\nJag har underbara nyheter! Doktor Gregory Victor, överläkare vid Hordens traumavård, har personligen bett att du ska ansluta dig till honom i Hammerfall. Det kan vara ditt livs chans! Jag skulle ge vad som helst för möjligheten att studera under den store doktor Gregory Victor! Kasta inte bort den här möjligheten!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doktor $N, förmodar jag. Det är ett nöje att se dig igen.$B$BJag har fantastiska nyheter! Doktor Gregory Victor, överläkare för Hordens traumavård, har personligen bett dig ansluta dig till honom i Hammerfall. Det kan vara ditt livs chans! Jag skulle ge vad som helst för att få studera under den store doktor Gregory Victor! Slösa inte bort chansen!",
+        "eaa435d993a4d2b483d3": "Utmärkt. Ta på dig arbetskläderna, vi börjar genast!"
+      },
       "summary": "Res till Hammerfall i Arathi Highlands och tala med doktor Gregory Victor om att ansluta dig till Hordens traumavård.\n",
       "title": "Hordens traumavård",
       "translationMetadata": {
@@ -335,6 +554,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "15990eaf4538bee5479110a7b4d1913847fbb7c16921d0cbbf3509df0b10aa6d"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -353,6 +582,10 @@
     },
     "trTR": {
       "description": "Doktor {name}, sanırım. Seni yeniden görmek bir zevk.\n\nSana harika haberlerim var! Horde Trauma'nın başhekimi Doktor Gregory Victor, Hammerfall'da kendisine katılman için bizzat talepte bulundu. Bu, hayatında bir kez karşına çıkacak bir fırsat olabilir! Büyük Doktor Gregory Victor'un yanında eğitim alma şansı için her şeyimi verirdim! Bu fırsatı boşa harcama!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Doktor $N, sanırım. Sizi tekrar görmek ne güzel.$B$BSizin için harika haberlerim var! Horde Travma Birimi'nin başhekimi Doktor Gregory Victor, Hammerfall'da kendisine katılmanızı şahsen istedi. Bu hayatınızın fırsatı olabilir! Büyük Doktor Gregory Victor'un yanında eğitim görmek için her şeyimi verirdim! Bu fırsatı boşa harcamayın!",
+        "eaa435d993a4d2b483d3": "Harika. Ameliyat kıyafetlerinizi giyin, hemen başlıyoruz!"
+      },
       "summary": "Arathi Highlands'deki Hammerfall'a git ve Horde Travma ekibine katılmak hakkında Doktor Gregory Victor ile konuş.\n",
       "title": "Horde Travması",
       "translationMetadata": {
@@ -362,6 +595,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "15990eaf4538bee5479110a7b4d1913847fbb7c16921d0cbbf3509df0b10aa6d"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -380,6 +623,10 @@
     },
     "ukUA": {
       "description": "Лікар {name}, якщо не помиляюся. Приємно знову вас бачити.\n\nМаю для вас чудові новини! Лікар Грегорі Віктор, головний лікар травматологів Орди, особисто попросив вас приєднатися до нього в Молотобої. Це може бути шанс усього життя! Я віддав би все за можливість учитися у великого лікаря Грегорі Віктора! Не змарнуйте цієї нагоди!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "Доктор $N, гадаю? Радий знову вас бачити.$B$BУ мене чудові новини! Доктор Грегорі Віктор, головний лікар травматологічної служби Орди, особисто попросив вас приєднатися до нього в Гаммерфоллі. Це може бути нагода всього життя! Я віддав би все за можливість навчатися у великого доктора Грегорі Віктора! Не змарнуйте її!",
+        "eaa435d993a4d2b483d3": "Чудово. Одягайте медичний одяг, ми негайно починаємо!"
+      },
       "summary": "Відвідайте Молотобій на височині Араті та поговоріть з лікарем Грегорі Віктором про вступ до лав травматологів Орди.",
       "title": "Травматолог Орди",
       "translationMetadata": {
@@ -389,6 +636,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "15990eaf4538bee5479110a7b4d1913847fbb7c16921d0cbbf3509df0b10aa6d"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -409,6 +666,10 @@
     },
     "zhCN": {
       "description": "{name}医生，我想我应该这么称呼你。很高兴再见到你。\n\n我有些好消息要告诉你！格里高利·维克托医生，也就是部落外科医疗队的首席医师，要求你到落锤镇去加入他的队伍。这可是毕生难求的机会啊！我真希望能付出一切来换取跟随格里高利·维克托医生学习的机会！你可不要浪费了这个机会！",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "$N医生，我想我应该这么称呼你。很高兴再见到你。\n\n我有些好消息要告诉你！格里高利·维克托医生，也就是部落外科医疗队的首席医师，要求你到落锤镇去加入他的队伍。这可是毕生难求的机会啊！我真希望能付出一切来换取跟随格里高利·维克托医生学习的机会！你可不要浪费了这个机会！",
+        "eaa435d993a4d2b483d3": "很好。拿上你的医疗器械，我们现在就开始!\n"
+      },
       "summary": "到阿拉希高地的落锤镇去，与格里高利·维克托医生谈一谈关于加入部落外科医疗队的事宜。",
       "title": "部落医疗队",
       "translationMetadata": {
@@ -417,6 +678,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -433,6 +706,10 @@
     },
     "zhTW": {
       "description": "{name}醫生，我想我應該這麼稱呼你。很高興再見到你。\n\n我有些好消息要告訴你!葛列格里·維克多醫生，也就是部落外科醫療隊的首席治療師，要求你到落錘鎮去加入他的隊伍。這可是畢生難求的機會啊!我真希望能付出一切來換取跟隨葛列格里·維克多醫生學習的機會!你可不要浪費了這個機會!",
+      "dialogue": {
+        "db0bce0950d97ddb4e89": "$N醫生，我想我應該這麼稱呼你。很高興再見到你。\n\n我有些好消息要告訴你！格裡高利·維克托醫生，也就是部落外科醫療隊的首席醫師，要求你到落錘鎮去加入他的隊伍。這可是畢生難求的機會啊！我真希望能付出一切來換取跟隨格裡高利·維克托醫生學習的機會！你可不要浪費了這個機會！",
+        "eaa435d993a4d2b483d3": "很好。拿上你的醫療器械，我們現在就開始!"
+      },
       "summary": "到阿拉希高地的落錘鎮去，與格裏高利·維克托醫生談壹談關於加入部落外科醫療隊的事宜。",
       "title": "部落醫療隊",
       "translationMetadata": {
@@ -441,6 +718,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.db0bce0950d97ddb4e89": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.eaa435d993a4d2b483d3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

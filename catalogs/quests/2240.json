@@ -1,8 +1,36 @@
 {
   "areaId": 1517,
+  "dialogueContexts": {
+    "03fcb11a80e926f3f833": {
+      "lineId": "q:2240:complete",
+      "npcId": 1356,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "0d99fdd9dd27fa5aeb34": {
+      "lineId": "q:2240:progress",
+      "npcId": 1356,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "b86e931b9b48e3ccf03d": {
+      "lineId": "q:2240:accept",
+      "npcId": 6906,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Teď k věci.\n\nExistuje tajná komnata, komnata Khaz'mul, kterou je třeba prozkoumat. Potíž je v tom, že je za obrovskými zamčenými dveřmi! Štěstí, že vím, jak je otevřít.\n\nVšechno jsem popsal ve svém deníku, tady na stole. Já a moje parta tu zatím vězíme... takže ty, {name}, musíš najít komnatu Khaz'mul za nás!\n\nPřečti si můj deník, prozkoumej komnatu a pak se ohlas u prospektora Stormpika v Explorers' League v Ironforge.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Viděl jsi Khaz’mulovu komnatu? Úžasné! Baelog si byl jistý, že existuje, ale musím přiznat, že jsem pochyboval.$B$BDěkuji, $N. Snad tvůj objev přiměje naše vůdce obnovit snahy o znovudobytí Uldamanu. A pokud se někdy znovu dostane pod kontrolu Ironforge, tajemství Khaz’mulovy komnaty budou naše!",
+        "0d99fdd9dd27fa5aeb34": "Máš co nahlásit?",
+        "b86e931b9b48e3ccf03d": "A teď k úkolu.$B$BJe tu tajná komnata, Khaz’mulova komnata, kterou je třeba prozkoumat. Problém je, že je za obrovskými zamčenými dveřmi! Naštěstí vím, jak je otevřít.$B$BVšechno jsem popsal ve svém deníku, tady na stole. Má skupina i já tu zatím trčíme... takže ty, $N, musíš Khaz’mulovu komnatu najít za nás!$B$BPřečti si můj deník, prozkoumej komnatu a pak podej hlášení prospektorovi Stormpikeovi v Lize objevitelů v Ironforge."
+      },
       "eventObjectiveLabel": "Prozkoumej skrytou komnatu",
       "summary": "Přečti si Baelog's Journal, prozkoumej skrytou komnatu a pak se hlas u prospektora Stormpika.",
       "title": "Skrytá komnata",
@@ -13,6 +41,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "88d0918298d32ca9d6ccbf9a998d6d1c74b6d26aa74a5c880ca739bd8d8c591e"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +83,11 @@
     },
     "daDK": {
       "description": "Nu til den aktuelle opgave.\n\nDer er et hemmeligt kammer, Chamber of Khaz'mul, som skal udforskes. Problemet er, at kammeret ligger bag en enorm, aflåst dør! Det er heldigt, at jeg ved, hvordan den åbnes.\n\nJeg har beskrevet det hele i min dagbog her på bordet. Mine folk og jeg sidder fast her indtil videre ... så du, {name}, må finde Khaz'muls kammer for os!\n\nLæs min dagbog, udforsk kammeret, og aflæg derefter rapport til Prospector Stormpike hos Explorers' League i Ironforge.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Har du set Khaz’muls kammer? Fantastisk! Baelog var sikker på, at det fandtes, men jeg må indrømme, at jeg tvivlede.$B$BTak, $N. Med lidt held vil dit fund få vores ledere til at genoptage indsatsen for at generobre Uldaman. Og hvis Ironforge igen får kontrol over stedet, bliver Khaz’muls kammers hemmeligheder vores!",
+        "0d99fdd9dd27fa5aeb34": "Har du noget at rapportere?",
+        "b86e931b9b48e3ccf03d": "Nu til opgaven.$B$BDer er et hemmeligt kammer, Khaz’muls kammer, som skal udforskes. Problemet er, at det ligger bag en enorm låst dør! Heldigvis ved jeg, hvordan den åbnes.$B$BJeg har beskrevet det hele i min dagbog her på bordet. Min gruppe og jeg sidder fast her for nu... så du, $N, må finde Khaz’muls kammer for os!$B$BLæs min dagbog, udforsk kammeret, og aflæg derefter rapport til prospektør Stormpike hos Explorers’ League i Ironforge."
+      },
       "eventObjectiveLabel": "Udforsk Hidden Chamber",
       "summary": "Læs Baelogs dagbog, udforsk det skjulte kammer, og meld derefter tilbage til prospektør Stormpike.",
       "title": "Det skjulte kammer",
@@ -50,6 +98,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "88d0918298d32ca9d6ccbf9a998d6d1c74b6d26aa74a5c880ca739bd8d8c591e"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +137,11 @@
     },
     "deDE": {
       "description": "Jetzt zur anstehenden Aufgabe:\n\nEs gibt eine geheime Kammer, die Kammer von Khaz'mul, die erforscht werden muss. Das Problem dabei ist, dass die Kammer hinter einer riesigen verschlossenen Tür liegt! Glücklicherweise weiß ich, wie man sie öffnet.\n\nIch habe alles in dem Tagebuch hier auf dem Tisch beschrieben. Meine Leute und ich sitzen hier zurzeit fest ... also müsst Ihr die Kammer von Khaz'mul für uns finden, {name}.\n\nLest mein Tagebuch, erforscht die Kammer und meldet Euch dann bei Ausgrabungsleiter Stormpike in der Forscherliga in Ironforge.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Ihr habt die Kammer von Khaz'mul gesehen? Erstaunlich! Baelog war sich sicher, dass es sie geben müsse, aber ich muss gestehen, dass ich so meine Zweifel hatte. \n \n Danke, $N. Mit etwas Glück wird Euer Fund unsere Anführer dazu bewegen, ihre Anstrengungen zur Wiedereroberung von Uldaman zu verstärken. Und sollte es jemals wieder unter die Kontrolle von Ironforge fallen, dann sind die Geheimnisse der Kammer von Khaz'mul unser!",
+        "0d99fdd9dd27fa5aeb34": "Haben Sie etwas zu berichten?",
+        "b86e931b9b48e3ccf03d": "Jetzt zur anstehenden Aufgabe:\n\nEs gibt eine geheime Kammer, die Kammer von Khaz'mul, die erforscht werden muss. Das Problem dabei ist, dass die Kammer hinter einer riesigen verschlossenen Tür liegt! Glücklicherweise weiß ich, wie man sie öffnet.\n\nIch habe alles in dem Tagebuch hier auf dem Tisch beschrieben. Meine Leute und ich sitzen hier zurzeit fest ... also müsst Ihr die Kammer von Khaz'mul für uns finden, $N.\n\nLest mein Tagebuch, erforscht die Kammer und meldet Euch dann bei Ausgrabungsleiter Stormpike in der Forscherliga in Ironforge."
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "Lest Baelogs Tagebuch, erforscht die geheime Kammer und erstattet dann Ausgrabungsleiter Stormpike Bericht.",
       "title": "Die geheime Kammer",
@@ -83,6 +151,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +190,11 @@
     },
     "enUS": {
       "description": "Now for the task at hand.\n\nThere is a secret chamber, the Chamber of Khaz'mul, that must be explored.  The problem is that the chamber's behind a huge, locked door!  It's a lucky thing I know how to open it.\n\nI've described everything in my journal, here on the table.  My band and I are stuck here for now... so you, {name}, must find the chamber of Khaz'mul for us!\n\nRead my journal, explore the chamber, then report to Prospector Stormpike at the Explorers' League in Ironforge.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "You have seen the Chamber of Khaz'mul?  Amazing!  Baelog was sure it existed, but I must admit that I had my doubts.$B$BThank you, $N.  With luck your finding will incite our leaders to renew their efforts to retake Uldaman.  And if it is ever again under Ironforge control, then the secrets of the Chamber of Khaz'mul will be ours!",
+        "0d99fdd9dd27fa5aeb34": "Do you have something to report?",
+        "b86e931b9b48e3ccf03d": "Now for the task at hand.$B$BThere is a secret chamber, the Chamber of Khaz'mul, that must be explored.  The problem is that the chamber's behind a huge, locked door!  It's a lucky thing I know how to open it.$B$BI've described everything in my journal, here on the table.  My band and I are stuck here for now... so you, $N, must find the chamber of Khaz'mul for us!$B$BRead my journal, explore the chamber, then report to Prospector Stormpike at the Explorers' League in Ironforge."
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "Read Baelog's Journal, explore the hidden chamber, then report to Prospector Stormpike.",
       "title": "The Hidden Chamber",
@@ -113,6 +204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +244,11 @@
     },
     "esES": {
       "description": "Pasemos a la siguiente tarea.\n\nExiste una cámara secreta, la cámara de Khaz'mul, que hay que examinar. ¡El problema es que esta cámara se encuentra tras una enorme puerta cerrada con llave! Es una suerte que sepa cómo abrirla.\n\nLo explico todo en mi diario, que está sobre la mesa. Mi equipo y yo no podemos salir de aquí... así que tú, {name}, debes encontrar la cámara de Khaz'mul por nosotros.\n\nLee mi diario, examina la cámara y ve a informar al prospector Pico Tormenta de la Liga de Expedicionarios en Forjaz.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "¿Has visto la cámara de Khaz'mul? ¡No puedo creerlo! Baelog estaba seguro de su existencia pero yo he de reconocer que tenía mis dudas.\n\nGracias, $n. Con un poco de suerte, tu hallazgo incitará a nuestros líderes a seguir luchando por recuperar Uldaman. Y, si algún día vuelve a estar bajo el control de Forjaz, ¡los secretos de la cámara de Khaz'mul serán nuestros!",
+        "0d99fdd9dd27fa5aeb34": "¿Tienes algo que informar?",
+        "b86e931b9b48e3ccf03d": "Pasemos a la siguiente tarea.\n\nExiste una cámara secreta, la cámara de Khaz'mul, que hay que examinar. ¡El problema es que esta cámara se encuentra tras una enorme puerta cerrada con llave! Es una suerte que sepa cómo abrirla.\n\nLo explico todo en mi diario, que está sobre la mesa. Mi equipo y yo no podemos salir de aquí... así que tú, $n, debes encontrar la cámara de Khaz'mul por nosotros.\n\nLee mi diario, examina la cámara y ve a informar al prospector Pico Tormenta de la Liga de Expedicionarios en Forjaz."
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "Lee el diario de Baelog, inspecciona la cámara oculta y ve a informar al prospector Pico Tormenta.",
       "title": "La cámara oculta",
@@ -144,6 +258,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +297,11 @@
     },
     "esMX": {
       "description": "Pasemos a la siguiente tarea.\n\nExiste una cámara secreta, la cámara de Khaz'mul, que hay que examinar. ¡El problema es que esta cámara se encuentra tras una enorme puerta cerrada con llave! Es una suerte que sepa cómo abrirla.\n\nLo explico todo en mi diario, que está sobre la mesa. Mi equipo y yo no podemos salir de aquí... así que tú, {name}, debes encontrar la cámara de Khaz'mul por nosotros.\n\nLee mi diario, examina la cámara y ve a informar al prospector Pico Tormenta de la Liga de Expedicionarios en Forjaz.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "¿Has visto la cámara de Khaz'mul? ¡No puedo creerlo! Baelog estaba seguro de su existencia pero yo he de reconocer que tenía mis dudas.\n\nGracias, $n. Con un poco de suerte, tu hallazgo incitará a nuestros líderes a seguir luchando por recuperar Uldaman. Y, si algún día vuelve a estar bajo el control de Forjaz, ¡los secretos de la cámara de Khaz'mul serán nuestros!",
+        "0d99fdd9dd27fa5aeb34": "¿Tienes algo que informar?",
+        "b86e931b9b48e3ccf03d": "Pasemos a la siguiente tarea.\n\nExiste una cámara secreta, la cámara de Khaz'mul, que hay que examinar. ¡El problema es que esta cámara se encuentra tras una enorme puerta cerrada con llave! Es una suerte que sepa cómo abrirla.\n\nLo explico todo en mi diario, que está sobre la mesa. Mi equipo y yo no podemos salir de aquí... así que tú, $n, debes encontrar la cámara de Khaz'mul por nosotros.\n\nLee mi diario, examina la cámara y ve a informar al prospector Pico Tormenta de la Liga de Expedicionarios en Forjaz."
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "Lee el diario de Baelog, inspecciona la cámara oculta y ve a informar al prospector Pico Tormenta.",
       "title": "La cámara oculta",
@@ -174,6 +311,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +350,11 @@
     },
     "frFR": {
       "description": "Bon... Pour la tâche en cours...\n\nIl va falloir explorer une chambre secrète, la Chambre de Khaz'mul. Le problème, c'est qu'elle se trouve derrière une lourde porte fermée ! Il est heureux que je sache comment l'ouvrir ! \n\nJ'ai tout écrit dans ce journal, là, sur la table. Pour l'instant nous sommes coincés ici. Trouvez la Chambre de Khaz'mul pour nous, {name} !\n\nLisez mon journal, explorez la Chambre, puis rendez compte au Prospecteur Foudrepique de la Ligue des Explorateurs à Forgefer.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Vous avez vu la Chambre de Khaz'mul ? Fascinant ! Baelog affirmait son existence, mais j'avais des doutes. . . \n \n Merci, $N. Avec un peu de chance, cette découverte incitera nos chefs à renouveler leurs efforts pour reprendre Uldaman. Et si nous en reprenons le contrôle, les secrets de la Chambre de Khaz'mul serons nôtres !",
+        "0d99fdd9dd27fa5aeb34": "Avez-vous quelque chose à signaler ?",
+        "b86e931b9b48e3ccf03d": "Bon... Pour la tâche en cours...\n\nIl va falloir explorer une chambre secrète, la Chambre de Khaz'mul. Le problème, c'est qu'elle se trouve derrière une lourde porte fermée ! Il est heureux que je sache comment l'ouvrir ! \n\nJ'ai tout écrit dans ce journal, là, sur la table. Pour l'instant nous sommes coincés ici. Trouvez la Chambre de Khaz'mul pour nous, $N !\n\nLisez mon journal, explorez la Chambre, puis rendez compte au Prospecteur Stormpike de la Ligue des Explorateurs à Ironforge."
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "Lire le journal de Baelog, explorer la Chambre secrète, puis rendre compte au Prospecteur Foudrepique.",
       "title": "La Chambre secrète",
@@ -204,6 +364,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -226,6 +404,11 @@
     },
     "hrHR": {
       "description": "Sada na zadatak koji je pred nama.\n\nPostoji tajna odaja, Odaja Khaz'mula, koju treba istražiti. Problem je što je odaja iza golemih zaključanih vrata! Srećom znam kako ih otvoriti.\n\nSve sam opisao u svojem dnevniku ovdje na stolu. Moja družina i ja zasad smo ovdje zarobljeni... pa ti, {name}, moraš za nas pronaći odaju Khaz'mula!\n\nPročitaj moj dnevnik, istraži odaju, a zatim se javi istraživaču Stormpikeu u Ligi istraživača u Ironforgeu.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Vidio si Khaz’mulovu odaju? Nevjerojatno! Baelog je bio siguran da postoji, ali moram priznati da sam sumnjao.$B$BHvala ti, $N. Nadam se da će tvoje otkriće potaknuti naše vođe da obnove napore za ponovno osvajanje Uldamana. A ako opet dođe pod vlast Ironforgea, tajne Khaz’mulove odaje bit će naše!",
+        "0d99fdd9dd27fa5aeb34": "Imaš li što prijaviti?",
+        "b86e931b9b48e3ccf03d": "A sada na zadatak.$B$BPostoji tajna odaja, Khaz’mulova odaja, koju treba istražiti. Problem je što se nalazi iza golemih zaključanih vrata! Srećom znam kako ih otvoriti.$B$BSve sam opisao u svojem dnevniku ovdje na stolu. Moja skupina i ja zasad smo zaglavljeni ovdje... pa ti, $N, moraš pronaći Khaz’mulovu odaju za nas!$B$BPročitaj moj dnevnik, istraži odaju, a zatim podnesi izvještaj istraživaču Stormpikeu u Ligi istraživača u Ironforgeu."
+      },
       "eventObjectiveLabel": "Istraži skrivenu odaju",
       "summary": "Pročitaj Baelogov dnevnik, istraži skrivenu odaju, a zatim se javi istraživaču Stormpikeu.",
       "title": "Skrivena odaja",
@@ -236,6 +419,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "88d0918298d32ca9d6ccbf9a998d6d1c74b6d26aa74a5c880ca739bd8d8c591e"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -260,6 +458,11 @@
     },
     "itIT": {
       "description": "Ora passiamo al compito che ci attende.\n\nC'è una camera segreta, la Camera di Khaz'mul, che deve essere esplorata. Il problema è che si trova dietro un'enorme porta chiusa a chiave! Per fortuna so come aprirla.\n\nHo descritto tutto nel mio diario, qui sul tavolo. Io e il mio gruppo per ora siamo bloccati qui... quindi tu, {name}, devi trovare la Camera di Khaz'mul per noi!\n\nLeggi il mio diario, esplora la camera e poi fai rapporto al Prospettore Stormpike, alla Lega degli Esploratori di Forgiardente.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Hai visto la Camera di Khaz'mul? Straordinario! Baelog era sicuro che esistesse, ma devo ammettere che avevo i miei dubbi.\n\nGrazie, $N. Con un po' di fortuna la tua scoperta spingerà i nostri capi a rinnovare gli sforzi per riprendere Uldaman. E se mai tornerà sotto il controllo di Ironforge, i segreti della Camera di Khaz'mul saranno nostri!",
+        "0d99fdd9dd27fa5aeb34": "Hai qualcosa da riferire?",
+        "b86e931b9b48e3ccf03d": "E ora veniamo al compito da svolgere.\n\nC'è una camera segreta, la Camera di Khaz'mul, che va esplorata. Il problema è che la camera si trova dietro un'enorme porta chiusa! Per fortuna io so come aprirla.\n\nHo descritto tutto nel mio diario, qui sul tavolo. Io e i miei compagni per ora siamo bloccati qui... quindi tocca a te, $N, trovare la camera di Khaz'mul per noi!\n\nLeggi il mio diario, esplora la camera, poi fai rapporto al Prospettore Stormpike, alla Lega degli Esploratori, a Ironforge."
+      },
       "eventObjectiveLabel": "Esplora la camera nascosta",
       "summary": "Leggi il diario di Baelog, esplora la camera nascosta e poi fai rapporto al prospettore Stormpike.",
       "title": "La camera nascosta",
@@ -270,6 +473,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "88d0918298d32ca9d6ccbf9a998d6d1c74b6d26aa74a5c880ca739bd8d8c591e"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -294,6 +515,11 @@
     },
     "koKR": {
       "description": "자, 그럼 임무 얘기를 하지.\n\n카즈뮬의 석실이라는 비밀 석실이 있는데 그곳을 조사해야 하네. 문제는 이 방으로 들어가는 커다란 문이 잠겨져 있다는 것인데, 다행히 내가 그 문을 여는 방법을 알고 있지.\n\n내가 이 탁자 위에 있는 일지에 모두 적어뒀지. 지금 나와 내 동료는 이곳에서 꼼짝할 수가 없다네... 그러니 자네가 우리를 대신해 카즈뮬의 석실을 찾아야 하네!\n\n내 일지를 읽고 그 석실을 조사한 후 아이언포지에 있는 탐험가 연맹으로 가서 발굴조사단장 스톰파이크에게 보고하도록 하게.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "카즈뮬의 석실을 봤단 말이오? 놀랍군! 밸로그는 비밀 석실이 존재한다고 확신했었지만 솔직히 나는 의심을 했었소.\n\n고맙소. 당신이 비밀 석실을 찾았다는 소식이 전해지면 울다만을 되찾으려는 우리 지도자들이 더욱 힘을 얻게 될 거요. 그리고 울다만을 다시 아이언포지가 지배하게 되면 카즈뮬의 석실에 숨겨진 비밀은 우리 것이 되는 거지!",
+        "0d99fdd9dd27fa5aeb34": "신고할 사항이 있습니까?",
+        "b86e931b9b48e3ccf03d": "자, 그럼 임무 얘기를 하지.\n\n카즈뮬의 석실이라는 비밀 석실이 있는데 그곳을 조사해야 하네. 문제는 이 방으로 들어가는 커다란 문이 잠겨져 있다는 것인데, 다행히 내가 그 문을 여는 방법을 알고 있지.\n\n내가 이 탁자 위에 있는 일지에 모두 적어뒀지. 지금 나와 내 동료는 이곳에서 꼼짝할 수가 없다네... 그러니 자네가 우리를 대신해 카즈뮬의 석실을 찾아야 하네!\n\n내 일지를 읽고 그 석실을 조사한 후 아이언포지에 있는 탐험가 연맹으로 가서 발굴조사단장 스톰파이크에게 보고하도록 하게."
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "밸로그의 일지를 읽고 비밀 석실을 조사한 후 발굴조사단장 스톰파이크에게 보고해야 합니다.",
       "title": "비밀 석실",
@@ -303,6 +529,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -324,6 +568,11 @@
     },
     "plPL": {
       "description": "Teraz przejdźmy do zadania.\n\nIstnieje tajna komnata, Komnata Khaz'mul, którą trzeba zbadać. Problem w tym, że znajduje się za ogromnymi, zamkniętymi drzwiami! Na szczęście wiem, jak je otworzyć.\n\nWszystko opisałem w dzienniku, tutaj, na stole. Moja drużyna i ja na razie tu utknęliśmy... więc to ty, {name}, musisz odnaleźć dla nas Komnatę Khaz'mul!\n\nPrzeczytaj mój dziennik, zbadaj komnatę i zgłoś się do poszukiwacza Stormpike'a w Lidze Odkrywców w Ironforge.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Czy widziano Komnatę Khaz’mula? Niesamowite! Baelog był pewien, że istnieje, ale muszę przyznać, że miałem wątpliwości.$B$BDziękuję, $N. Przy odrobinie szczęścia twoje odkrycie skłoni naszych przywódców do ponowienia starań o odzyskanie Uldamanu. A jeśli znów znajdzie się pod kontrolą Ironforge, tajemnice komnaty Khaz’mula będą nasze!",
+        "0d99fdd9dd27fa5aeb34": "Masz coś do przekazania?",
+        "b86e931b9b48e3ccf03d": "A teraz do rzeczy.$B$BIstnieje tajna komnata, Komnata Khaz’mula, którą trzeba zbadać. Problem w tym, że znajduje się za ogromnymi, zamkniętymi drzwiami! Na szczęście wiem, jak je otworzyć.$B$BWszystko opisałem w dzienniku, tutaj na stole. Moja grupa i ja utknęliśmy na razie tutaj... więc ty, $N, musisz znaleźć dla nas komnatę Khaz’mula!$B$BPrzeczytaj mój dziennik, zbadaj komnatę, a potem złóż raport poszukiwaczowi Stormpike’owi w Lidze Odkrywców w Ironforge."
+      },
       "eventObjectiveLabel": "Zbadaj Ukrytą Komnatę",
       "summary": "Przeczytaj dziennik Baeloga, zbadaj ukrytą komnatę, a następnie zgłoś się do poszukiwacza Stormpike'a.",
       "title": "Ukryta komnata",
@@ -334,6 +583,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "88d0918298d32ca9d6ccbf9a998d6d1c74b6d26aa74a5c880ca739bd8d8c591e"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -358,6 +622,11 @@
     },
     "ptBR": {
       "description": "Vamos cuidar da tarefa em mãos.\n\nExiste uma câmara secreta — a Câmara de Khaz'mul — que precisa ser explorada. O problema é que ela fica atrás de uma enorme porta trancada! A boa notícia é que eu sei como abri-la.\n\nEu descrevi tudo no meu diário, aqui na mesa. Meu bando e eu estamos presos aqui por ora... Por isso, você, {name}, deve encontrar a câmara de Khaz'mul para nós!\n\nLeia o meu diário, explore a câmara e depois fale com o Prospector Lançatroz na Liga dos Exploradores, em Altaforja.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Você viu a Câmara de Khaz'mul Incrível! Baelog tinha certeza de que ela existia, mas admito que eu tinha lá minhas dúvidas.\n\nObrigado, $N. Com sorte, seu achado incitará os nossos líderes a renovar seus esforços para retomar Uldaman. E se um dia ela tornar a ser controlada por Altaforja, pelo menos os segredos da Câmara de Khaz'mul serão nossos!",
+        "0d99fdd9dd27fa5aeb34": "Tem algo a relatar?",
+        "b86e931b9b48e3ccf03d": "Vamos cuidar da tarefa em mãos.\n\nExiste uma câmara secreta — a Câmara de Khaz'mul — que precisa ser explorada. O problema é que ela fica atrás de uma enorme porta trancada! A boa notícia é que eu sei como abri-la.\n\nEu descrevi tudo no meu diário, aqui na mesa. Meu bando e eu estamos presos aqui por ora... Por isso, você, $N, deve encontrar a câmara de Khaz'mul para nós!\n\nLeia o meu diário, explore a câmara e depois fale com o Prospector Lançatroz na Liga dos Exploradores, em Altaforja."
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "Leia o Diário de Baelog, explore a câmara oculta, depois fale com o Prospector Lançatroz.",
       "title": "A câmara oculta",
@@ -367,6 +636,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -388,6 +674,11 @@
     },
     "ruRU": {
       "description": "Теперь вернемся к насущным задачам.\n\nТебе предстоит исследовать чертог Хаз'Мула. Проблема в том, что он находится за огромной, запертой дверью! К счастью, я знаю, как ее открыть.\n\nЯ записал все в своем дневнике, здесь на столе. Моя группа и я заперты здесь... Так что ты, {name}, должен найти для нас чертог Хаз-Мула!\n\nПрочитай мой дневник и отправляйся в чертог. Потом доложи геологу Грозовой Вершине в Стальгорне.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Вы видели чертог Хаз'Мула? Потрясающе! Бейлог был уверен, что он существовал, но я, честно говоря, сомневался.\n\nСпасибо, $N. Теперь то, что вы обнаружили сподвигнет наших лидеров приложить все усилия к тому, чтобы отвоевать Ульдаман. А когда это место снова вернется под руку Стальгорна, все тайны Чертога Хаз'Мула будут нашими!",
+        "0d99fdd9dd27fa5aeb34": "У тебя есть что доложить?",
+        "b86e931b9b48e3ccf03d": "Теперь вернемся к насущным задачам.\n\nТебе предстоит исследовать чертог Хаз'Мула. Проблема в том, что он находится за огромной, запертой дверью! К счастью, я знаю, как ее открыть.\n\nЯ записал все в своем дневнике, здесь на столе. Моя группа и я заперты здесь... Так что ты, $N, должен найти для нас чертог Хаз-Мула!\n\nПрочитай мой дневник и отправляйся в чертог. Потом доложи геологу Грозовой Вершине в Стальгорне."
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "Прочитайте журнал Бейлога, исследуйте, потайной чертог и потом доложите об увиденном геологу Грозовой Вершине.",
       "title": "Потайной чертог",
@@ -397,6 +688,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -418,6 +727,11 @@
     },
     "svSE": {
       "description": "Nu till uppgiften.\n\nEn hemlig kammare, Khaz'muls kammare, måste utforskas. Problemet är att den ligger bakom en enorm låst dörr! Tur att jag vet hur den öppnas.\n\nJag har beskrivit allt i dagboken här på bordet. Min grupp och jag sitter fast här för tillfället... så du, {name}, måste hitta Khaz'muls kammare åt oss!\n\nLäs dagboken, utforska kammaren och rapportera sedan till prospektör Stormpike vid Utforskarförbundet i Ironforge.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Har du sett Khaz’muls kammare? Otroligt! Baelog var säker på att den fanns, men jag måste erkänna att jag tvivlade.$B$BTack, $N. Med lite tur får ditt fynd våra ledare att återuppta försöken att återta Uldaman. Och om Ironforge någonsin återfår kontrollen blir Khaz’muls kammares hemligheter våra!",
+        "0d99fdd9dd27fa5aeb34": "Har du något att rapportera?",
+        "b86e931b9b48e3ccf03d": "Nu till uppgiften.$B$BDet finns en hemlig kammare, Khaz’muls kammare, som måste utforskas. Problemet är att den ligger bakom en enorm låst dörr! Som tur är vet jag hur den öppnas.$B$BJag har beskrivit allt i min dagbok här på bordet. Min grupp och jag sitter fast här just nu... så du, $N, måste hitta Khaz’muls kammare åt oss!$B$BLäs min dagbok, utforska kammaren och rapportera sedan till prospektör Stormpike vid Explorers’ League i Ironforge."
+      },
       "eventObjectiveLabel": "Utforska den dolda kammaren",
       "summary": "Läs Baelogs dagbok, utforska den dolda kammaren och rapportera sedan till prospektör Stormpike.",
       "title": "Den dolda kammaren",
@@ -428,6 +742,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "88d0918298d32ca9d6ccbf9a998d6d1c74b6d26aa74a5c880ca739bd8d8c591e"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -452,6 +781,11 @@
     },
     "trTR": {
       "description": "Şimdi önümüzdeki işe gelelim.\n\nKeşfedilmesi gereken gizli bir oda var: Chamber of Khaz'mul. Sorun, odanın devasa kilitli bir kapının arkasında olması! Neyse ki nasıl açılacağını biliyorum.\n\nHer şeyi burada masadaki günlüğümde anlattım. Grubumla ben şimdilik burada sıkıştık... Bu yüzden {name}, Khaz'mul'un odasını bizim için sen bulmalısın!\n\nGünlüğümü oku, odayı araştır. Sonra Ironforge'daki Explorers' League'de Prospector Stormpike'a rapor ver.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Khaz’mul Odası’nı gördün mü? İnanılmaz! Baelog var olduğundan emindi, ama şüphelerim olduğunu itiraf etmeliyim.$B$BTeşekkürler, $N. Şansımız varsa buluşun liderlerimizi Uldaman’ı geri alma çabalarını yenilemeye teşvik eder. Bir gün yeniden Ironforge’un kontrolüne girerse Khaz’mul Odası’nın sırları bizim olacak!",
+        "0d99fdd9dd27fa5aeb34": "Bildirecek bir şeyin var mı?",
+        "b86e931b9b48e3ccf03d": "Şimdi asıl göreve gelelim.$B$BKeşfedilmesi gereken gizli bir oda, Khaz’mul Odası var. Sorun şu ki oda devasa, kilitli bir kapının ardında! Neyse ki nasıl açılacağını biliyorum.$B$BHer şeyi şuradaki masada duran günlüğüme yazdım. Ekibimle ben şimdilik burada sıkışıp kaldık... bu yüzden Khaz’mul Odası’nı bizim için sen bulmalısın, $N!$B$BGünlüğümü oku, odayı keşfet, sonra Ironforge’daki Kaşifler Birliği’nde Prospektör Stormpike’a rapor ver."
+      },
       "eventObjectiveLabel": "Gizli Oda'yı keşfet",
       "summary": "Baelog'un Günlüğü'nü oku, gizli odayı keşfet, ardından Maden Arayıcısı Stormpike'a rapor ver.",
       "title": "Gizli Oda",
@@ -462,6 +796,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "88d0918298d32ca9d6ccbf9a998d6d1c74b6d26aa74a5c880ca739bd8d8c591e"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -486,6 +835,11 @@
     },
     "ukUA": {
       "description": "Тепер повернемося до нагальних завдань.\n\nІснує таємна кімната, кімната Хаз'мула, яку потрібно дослідити. Проблема в тому, що вона знаходиться за величезними замкненими дверима! На щастя, я знаю, як їх відчинити.\n\nЯ все описав у своєму щоденнику, ось тут, на столі. Ми з групою поки що застрягли тут... тож ти, {name}, маєш знайти для нас кімнату Хаз'мула!\n\nПрочитай мій щоденник, досліди кімнату, а потім звітуй розвідувачу Бурешпилю в Залізогарті.",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "Ти бачив палату Хаз’мула? Неймовірно! Баелоґ був певен, що вона існує, але мушу визнати, що я сумнівався.$B$BДякую, $N. Якщо пощастить, твоє відкриття спонукає наших ватажків відновити зусилля з повернення Ульдамана. А якщо він знову опиниться під контролем Айронфорджа, таємниці палати Хаз’мула стануть нашими!",
+        "0d99fdd9dd27fa5aeb34": "Маєш що доповісти?",
+        "b86e931b9b48e3ccf03d": "А тепер до справи.$B$BЄ таємна палата Хаз’мула, яку потрібно дослідити. Проблема в тому, що вона за величезними замкненими дверима! На щастя, я знаю, як їх відчинити.$B$BЯ все описав у своєму щоденнику ось тут, на столі. Мій загін і я поки застрягли тут... тож ти, $N, мусиш знайти для нас палату Хаз’мула!$B$BПрочитай мій щоденник, досліди палату, а потім доповідай досліднику Stormpike в Лізі дослідників в Айронфорджі."
+      },
       "eventObjectiveLabel": "Дослідіть приховану кімнату",
       "summary": "Прочитайте щоденник Бейлоґа, дослідіть приховану кімнату та звітуйте розвідувачу Бурешпилю.",
       "title": "Прихована кімната",
@@ -497,6 +851,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "88d0918298d32ca9d6ccbf9a998d6d1c74b6d26aa74a5c880ca739bd8d8c591e"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -523,6 +892,11 @@
     },
     "zhCN": {
       "description": "现在我手头有个任务。\n\n我们要找到一间被称作卡兹穆尔大厅的密室。问题是这个房间在一扇巨大的门后面，而那扇门被锁住了！幸运的是，我知道如何打开它。\n\n我把所有东西都写在我的日记里了，就在这个台子上。我的队伍现在被困在这里……所以呢，{name}，你必须为我们找到卡兹穆尔大厅！\n\n阅读我的日记，探索那间密室，然后向铁炉堡探险者协会的勘察员塔伯斯·雷矛汇报。",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "你找到卡兹莫尔大厅了?真是太惊人了!巴尔洛戈认为它确实存在，但是我承认我当初并不是十分相信他。\n\n谢谢你，$N。你的发现将会促使我们的领袖重新考虑夺回奥达曼的计画。如果铁炉堡重新控制奥达曼的话，那卡兹莫尔大厅的秘密就是我们的了!\n",
+        "0d99fdd9dd27fa5aeb34": "你有什麽要报告的吗?",
+        "b86e931b9b48e3ccf03d": "现在我手头有个任务。\n\n我们要找到一间被称作卡兹穆尔大厅的密室。问题是这个房间在一扇巨大的门后面，而那扇门被锁住了！幸运的是，我知道如何打开它。\n\n我把所有东西都写在我的日记里了，就在这个台子上。我的队伍现在被困在这里……所以呢，$n，你必须为我们找到卡兹穆尔大厅！\n\n阅读我的日记，探索那间密室，然后向铁炉堡探险者协会的勘察员塔伯斯·雷矛汇报。"
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "阅读巴尔洛戈的日记，探索密室，然后向铁炉堡的勘察员塔伯斯·雷矛汇报。",
       "title": "密室",
@@ -532,6 +906,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -553,6 +945,11 @@
     },
     "zhTW": {
       "description": "現在我手頭有個任務。\n\n我們要找到一間被稱作卡茲莫爾大廳的密室。問題是這個房間在一扇巨大的門後面，而那扇門被鎖住了！幸運的是，我知道如何打開它。\n\n我把所有東西都寫在我的日記裡了，就在這個臺子上。我的隊伍現在被困在這裡……所以呢，{name}，你必須為我們找到卡茲莫爾大廳！\n\n閱讀我的日記，探索那間密室，然後向鐵爐堡探險者協會的勘察員塔伯斯·雷矛彙報。",
+      "dialogue": {
+        "03fcb11a80e926f3f833": "你找到卡茲莫爾大廳了?真是太驚人了!巴爾洛戈認爲它確實存在，但是我承認我當初並不是十分相信他。\n\n謝謝你，$N。你的發現將會促使我們的領袖重新考慮奪回奧達曼的計畫。如果鐵爐堡重新控制奧達曼的話，那卡茲莫爾大廳的祕密就是我們的了!",
+        "0d99fdd9dd27fa5aeb34": "你有什麼要報告的嗎?",
+        "b86e931b9b48e3ccf03d": "現在我手頭有個任務。\n\n我們要找到一間被稱作卡茲莫爾大廳的密室。問題是這個房間在一扇巨大的門後面，而那扇門被鎖住了！幸運的是，我知道如何打開它。\n\n我把所有東西都寫在我的日記裡了，就在這個檯子上。我的隊伍現在被困在這裡……所以呢，$n，你必須為我們找到卡茲莫爾大廳！\n\n閱讀我的日記，探索那間密室，然後向鐵爐堡探險者協會的勘察員塔伯斯·雷矛彙報。"
+      },
       "eventObjectiveLabel": "Explore the Hidden Chamber",
       "summary": "閱讀巴爾洛戈的日記，探索密室，然後向鐵爐堡的勘察員塔伯斯·雷矛彙報。",
       "title": "密室",
@@ -562,6 +959,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.03fcb11a80e926f3f833": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.0d99fdd9dd27fa5aeb34": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.b86e931b9b48e3ccf03d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

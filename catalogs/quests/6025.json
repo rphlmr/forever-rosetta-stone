@@ -1,8 +1,36 @@
 {
   "areaId": 28,
+  "dialogueContexts": {
+    "4d76cc41ee447cf4257a": {
+      "lineId": "q:6025:accept",
+      "npcId": 11610,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "67ba49a51f8ba986669c": {
+      "lineId": "q:6025:complete",
+      "npcId": 11610,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "c01e052abdf1f5c8ef5e": {
+      "lineId": "q:6025:progress",
+      "npcId": 11610,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Cože? Opravdu? Chceš slyšet víc? Ale už za sebou máš tolik práce pro mě, {name}. Nemůžu po tobě přece chtít, ať za mě vstoupíš do samotného Hearthglenu.\n\nMáš v tom jasno, {name}? Hearthglen je mnohem nebezpečnější než průsmyk. Nemůžu ti poskytnout žádnou ochranu ani informace o tom, co tě tam může čekat.\n\nNo, jestli mi opravdu chceš pomoct, vstup do města a najdi si vysoké místo s dobrým výhledem na celé město. Odtud můžeš odhadnout jejich počty a podat mi hlášení. Ale postupuj opatrně...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Cože? Opravdu? Chceš vědět víc? Ale už jsi pro mě udělal tolik, $N. Nemohu tě žádat, abys kvůli mně vstoupil přímo do Hearthglenu.$B$B Jsi si jistý, $N? Hearthglen je mnohem nebezpečnější než průsmyk; nemohu ti poskytnout ochranu ani informace o tom, čemu můžeš čelit.$B$B Dobrá, pokud jsi opravdu ochoten pomoci, vstup do města a najdi vyvýšené místo s dobrým výhledem. Odtud můžeš odhadnout jejich počet a podat mi hlášení. Ale buď opatrný....",
+        "67ba49a51f8ba986669c": "Dokázal jsi to, $N! Děkuji!$B$B Vrátím se do Elling... tedy do Stormwindu, jakmile budu moci. Tady, vezmi si tuto minci, je to to nejmenší, co pro tebe mohu udělat. Jsi chloubou svého lidu, $N. Děkuji a hodně štěstí.",
+        "c01e052abdf1f5c8ef5e": "Je to nebezpečný úkol, $N. Závidím ti odvahu."
+      },
       "eventObjectiveLabel": "Přehlédni Hearthglen z vyvýšeného vyhlídkového místa",
       "summary": "Vstup do Hearthglenu a najdi vyvýšené vyhlídkové místo, odkud přehlédneš město a odhadneš síly Scarlet Crusade, a pak se vrať ke Kirstě Deepshadow do Western Plaguelands.",
       "title": "Nedokončená záležitost",
@@ -13,6 +41,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "38870a1620c2039d341333a416b4697cc518a36536ce412ff37f345eaff60ea6"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +83,11 @@
     },
     "daDK": {
       "description": "Hvad? Virkelig? Vil du vide mere? Men du har allerede gjort så meget for mig, {name}. Jeg kunne umuligt bede dig gå ind i selve Hearthglen på mine vegne.\n\nEr du sikker, {name}? Hearthglen er langt farligere end passet; jeg kan ikke give dig nogen beskyttelse eller endda oplysninger om, hvad du kan møde.\n\nHvis du virkelig er villig til at hjælpe, så gå ind i byen og find et højt sted, hvor du har god udsigt over byen. Derfra kan du vurdere deres antal og rapportere tilbage til mig. Men vær forsigtig ...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Hvad? Virkelig? Vil du vide mere? Men du har allerede gjort så meget for mig, $N. Jeg kan umuligt bede dig om at gå ind i selve Hearthglen for min skyld.$B$B Er du sikker, $N? Hearthglen er langt farligere end passet; jeg kan hverken beskytte dig eller give dig oplysninger om, hvad du kan møde.$B$B Hvis du virkelig vil hjælpe, så gå ind i byen og find et højt sted med godt udsyn. Derfra kan du vurdere deres antal og rapportere til mig. Men vær forsigtig....",
+        "67ba49a51f8ba986669c": "Du gjorde det, $N! Tak!$B$B Jeg vender tilbage til Elling... jeg mener Stormwind, så snart jeg kan. Her, tag denne mønt, det er det mindste, jeg kan gøre. Du er en ære for dit folk, $N. Tak og held og lykke.",
+        "c01e052abdf1f5c8ef5e": "Det er en farlig opgave, $N. Jeg misunder dit mod."
+      },
       "eventObjectiveLabel": "Se ud over Hearthglen fra et højt udsigtspunkt",
       "summary": "Gå ind i Hearthglen, og find et højt udsigtspunkt, hvorfra du kan se byen og vurdere Scarlet Crusades styrker. Vend derefter tilbage til Kirsta Deepshadow i Western Plaguelands.",
       "title": "Uafsluttede sager",
@@ -50,6 +98,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "38870a1620c2039d341333a416b4697cc518a36536ce412ff37f345eaff60ea6"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +137,11 @@
     },
     "deDE": {
       "description": "Was? Wirklich? Ihr möchtet noch mehr wissen? Aber Ihr habt bereits so viel für mich getan, {name}. Ich kann Euch unmöglich darum bitten, an meiner statt nach Hearthglen zu gehen.\n\nSeid Ihr sicher, {name}? Hearthglen ist viel gefährlicher als der Pass - ich kann Euch weder Schutz noch Informationen geben, was Ihr da vorfinden könntet.\n\nAlso, wenn Ihr wirklich bereit seid, mir zu helfen, dann geht in die Stadt und sucht eine erhöhte Stelle, von der aus Ihr einen guten Überblick habt. Dort könnt Ihr ihre Zahl abschätzen und mir dann Bericht erstatten. Aber seid vorsichtig...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Was? Wirklich? Ihr möchtet noch mehr wissen? Aber Ihr habt bereits so viel für mich getan, $N. Ich kann Euch unmöglich darum bitten, an meiner statt nach Hearthglen zu gehen.\n\nSeid Ihr sicher, $N? Hearthglen ist viel gefährlicher als der Pass - ich kann Euch weder Schutz noch Informationen geben, was Ihr da vorfinden könntet.\n\nAlso, wenn Ihr wirklich bereit seid, mir zu helfen, dann geht in die Stadt und sucht eine erhöhte Stelle, von der aus Ihr einen guten Überblick habt. Dort könnt Ihr ihre Zahl abschätzen und mir dann Bericht erstatten. Aber seid vorsichtig...",
+        "67ba49a51f8ba986669c": "Ihr habt es geschafft, $N! Danke!\n \n Ich kehre zu Elling zurück. . . Ich meine nach Stormwind, so schnell ich kann. Hier, nehmt diese Münze, das ist das Mindeste, was ich für Euch tun kann. Ihr macht Eurem Volk Ehre, $N. Habt Dank, und viel Glück. ",
+        "c01e052abdf1f5c8ef5e": "Es ist eine gefährliche Aufgabe, $N. Ich beneide Sie um Ihren Mut."
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "Geht nach Hearthglen, sucht einen hohen Aussichtspunkt, von dem aus Ihr die Stadt überblicken könnt, schätzt die Streitkräfte des Scharlachroten Kreuzzugs und kehrt dann zu Kirsta Deepshadow in den Westlichen Pestländern zurück.",
       "title": "Offene Rechnungen",
@@ -83,6 +151,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +190,11 @@
     },
     "enUS": {
       "description": "What? Really? You want to know more? But you've already done so much for me, {name}. I couldn't possibly ask you to enter Hearthglen itself on my behalf.\n\nAre you sure, {name}? Hearthglen is much more dangerous than the Pass--I cannot provide you any protection  or even information about what you might face.\n\nWell, if you really are willing to help, then enter the town and find a high place to gain a good view of the town. From there you can gauge their numbers and report them back to me. But be careful....",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "What? Really? You want to know more? But you've already done so much for me, $N. I couldn't possibly ask you to enter Hearthglen itself on my behalf.$B$BAre you sure, $N? Hearthglen is much more dangerous than the Pass--I cannot provide you any protection  or even information about what you might face.$B$BWell, if you really are willing to help, then enter the town and find a high place to gain a good view of the town. From there you can gauge their numbers and report them back to me. But be careful....",
+        "67ba49a51f8ba986669c": "You've done it, $N! Thank you!$B$BI'll return to Elling... I mean Stormwind as soon as I can. Here, take this coin, it's the least I can do for you. You're a credit to your people, $N. Thank you and good luck.",
+        "c01e052abdf1f5c8ef5e": "It's a dangerous task, $N. I envy your courage."
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "Enter Hearthglen and find a high vantage point from which you can see the town and gauge the Scarlet Crusade's forces, then return to Kirsta Deepshadow in Western Plaguelands.",
       "title": "Unfinished Business",
@@ -113,6 +204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +244,11 @@
     },
     "esES": {
       "description": "¿Qué? ¿De verdad? ¿Quieres saber más? Pero ya has hecho mucho por mí, {name}, no podría pedirte entrar en la Vega del Amparo en mi nombre.\n\n¿Estás seguro, {name}? La Vega del Amparo es mucho más peligrosa que el Paso... no puedo darte ningún tipo de protección, ni siquiera información sobre lo que puedas encontrarte allí.\n\nBien, si de verdad quieres ayudar, entra en la ciudad y busca un lugar elevado para hacerte con una buena perspectiva de la ciudad. Desde allí podrás calcular su número, cuando lo hayas hecho vuelve a informarme. Pero ten cuidado...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "¿Qué? ¿De verdad? ¿Quieres saber más? Pero ya has hecho mucho por mí, $n, no podría pedirte entrar en la Vega del Amparo en mi nombre.\n\n¿Estás seguro, $n? La Vega del Amparo es mucho más peligrosa que el Paso... no puedo darte ningún tipo de protección, ni siquiera información sobre lo que puedas encontrarte allí.\n\nBien, si de verdad quieres ayudar, entra en la ciudad y busca un lugar elevado para hacerte con una buena perspectiva de la ciudad. Desde allí podrás calcular su número, cuando lo hayas hecho vuelve a informarme. Pero ten cuidado...",
+        "67ba49a51f8ba986669c": "¡Lo has conseguido, $n! ¡Gracias!\n\nVolveré con Elling... quiero decir, a Ventormenta, tan pronto como pueda. Toma, coge esta moneda, es lo menos que puedo hacer por ti. Haces honor a tu pueblo, $n. Gracias y buena suerte.",
+        "c01e052abdf1f5c8ef5e": "Es una tarea peligrosa, $N.  Envidio tu coraje."
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "Entra en la Vega del Amparo y busca un punto elevado desde el que puedas ver la ciudad y calcular las fuerzas de la Cruzada Escarlata. Cuando lo hayas hecho regresa con Kirsta Sombraprofunda en las Tierras de la Peste del Oeste.",
       "title": "Negocios inconclusos",
@@ -144,6 +258,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +297,11 @@
     },
     "esMX": {
       "description": "¿Qué? ¿De verdad? ¿Quieres saber más? Pero ya has hecho mucho por mí, {name}, no podría pedirte entrar en la Vega del Amparo en mi nombre.\n\n¿Estás seguro, {name}? La Vega del Amparo es mucho más peligrosa que el Paso... no puedo darte ningún tipo de protección, ni siquiera información sobre lo que puedas encontrarte allí.\n\nBien, si de verdad quieres ayudar, entra en la ciudad y busca un lugar elevado para hacerte con una buena perspectiva de la ciudad. Desde allí podrás calcular su número, cuando lo hayas hecho vuelve a informarme. Pero ten cuidado...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "¿Qué? ¿De verdad? ¿Quieres saber más? Pero ya has hecho mucho por mí, $n, no podría pedirte entrar en la Vega del Amparo en mi nombre.\n\n¿Estás seguro, $n? La Vega del Amparo es mucho más peligrosa que el Paso... no puedo darte ningún tipo de protección, ni siquiera información sobre lo que puedas encontrarte allí.\n\nBien, si de verdad quieres ayudar, entra en la ciudad y busca un lugar elevado para hacerte con una buena perspectiva de la ciudad. Desde allí podrás calcular su número, cuando lo hayas hecho vuelve a informarme. Pero ten cuidado...",
+        "67ba49a51f8ba986669c": "¡Lo has conseguido, $n! ¡Gracias!\n\nVolveré con Elling... quiero decir, a Ventormenta, tan pronto como pueda. Toma, coge esta moneda, es lo menos que puedo hacer por ti. Haces honor a tu pueblo, $n. Gracias y buena suerte.",
+        "c01e052abdf1f5c8ef5e": "Es una tarea peligrosa, $n. Envidio tu coraje."
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "Entra en la Vega del Amparo y busca un punto elevado desde el que puedas ver la ciudad y calcular las fuerzas de la Cruzada Escarlata. Cuando lo hayas hecho regresa con Kirsta Sombraprofunda en las Tierras de la Peste del Oeste.",
       "title": "Negocios inconclusos",
@@ -174,6 +311,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +350,11 @@
     },
     "frFR": {
       "description": "Quoi ? Vraiment ? Vous voulez en savoir plus ? Mais vous avez déjà fait tant pour moi, {name}. Je ne peux quand même pas vous demander d'entrer dans Âtreval pour me défendre.\n\nC'est sûr, {name} ? Âtreval est beaucoup plus dangereux que le Passage, et je ne peux vous fournir ni protection ni même d'informations sur les risques que vous prenez.\n\nEh bien ! Si vous désirez vraiment m'aider, pénétrez dans la ville et cherchez un endroit en hauteur, pour dominer toute la ville. De là vous pourrez voir combien ils sont et revenir me l'annoncer. Mais faites preuve de prudence...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Quoi ? Vraiment ? Vous voulez en savoir plus ? Mais vous avez déjà fait tant pour moi, $N. Je ne peux quand même pas vous demander d'entrer dans Hearthglen pour me défendre.\n\nC'est sûr, $N ? Hearthglen est beaucoup plus dangereux que le Passage, et je ne peux vous fournir ni protection ni même d'informations sur les risques que vous prenez.\n\nEh bien ! Si vous désirez vraiment m'aider, pénétrez dans la ville et cherchez un endroit en hauteur, pour dominer toute la ville. De là vous pourrez voir combien ils sont et revenir me l'annoncer. Mais faites preuve de prudence...",
+        "67ba49a51f8ba986669c": "Vous l'avez fait, $N ! Merci !\n \n Je vais retourner voir Elling… je veux dire aller à Stormwind, aussitôt que je le pourrai. Tenez, prenez cette pièce, c'est le moins que je puisse faire pour vous. Vous faites l'honneur de votre peuple, $N. Merci et bonne chance. ",
+        "c01e052abdf1f5c8ef5e": "C'est une tâche dangereuse, $N. J'envie votre courage."
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "Aller dans Âtreval, et trouver un poste d’observation élevé d’où voir la ville et jauger les forces de la Croisade écarlate, puis retourner voir Kirsta Deepshadow, dans les Maleterres de l’ouest.",
       "title": "Un travail inachevé",
@@ -204,6 +364,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -226,6 +404,11 @@
     },
     "hrHR": {
       "description": "Što? Doista? Želiš znati više? Ali već si toliko učinio za mene, {name}. Nikako te ne bih mogla zamoliti da u moje ime uđeš u sam Hearthglen.\n\nJesi li siguran, {name}? Hearthglen je mnogo opasniji od Prijevoja; ne mogu ti pružiti zaštitu, pa čak ni podatke o onome s čime bi se mogao suočiti.\n\nPa, ako si doista spreman pomoći, uđi u grad i pronađi visoko mjesto s kojeg ćeš ga dobro vidjeti. Odatle možeš procijeniti njihovu brojnost i izvijestiti me. Ali budi oprezan...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Što? Stvarno? Želiš znati više? Ali već si toliko učinio za mene, $N. Ne mogu te tražiti da zbog mene uđeš u sam Hearthglen.$B$B Jesi li siguran, $N? Hearthglen je mnogo opasniji od prijevoja; ne mogu ti pružiti zaštitu ni informacije o onome što te može čekati.$B$B Dobro, ako doista želiš pomoći, uđi u grad i pronađi visoko mjesto s dobrim pogledom. Odatle možeš procijeniti njihov broj i izvijestiti me. Ali pazi....",
+        "67ba49a51f8ba986669c": "Uspio si, $N! Hvala!$B$B Vratit ću se u Elling... mislim, Stormwind čim budem mogao. Evo, uzmi ovaj novčić, to je najmanje što mogu učiniti. Na ponos si svom narodu, $N. Hvala i sretno.",
+        "c01e052abdf1f5c8ef5e": "To je opasan zadatak, $N. Zavidim ti na hrabrosti."
+      },
       "eventObjectiveLabel": "Pogledaj Hearthglen s visoke osmatračnice",
       "summary": "Uđi u Hearthglen i pronađi visoki vidikovac s kojeg možeš vidjeti grad i procijeniti snage Scarlet Crusadea, a zatim se vrati Kirsti Deepshadow u Western Plaguelands.",
       "title": "Nedovršeni posao",
@@ -236,6 +419,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "38870a1620c2039d341333a416b4697cc518a36536ce412ff37f345eaff60ea6"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -260,6 +458,11 @@
     },
     "itIT": {
       "description": "Cosa? Davvero? Vuoi saperne di più? Ma hai già fatto tanto per me, {name}. Non potrei mai chiederti di entrare proprio a Hearthglen per conto mio.\n\nNe sei sicuro, {name}? Hearthglen è molto più pericolosa del Passo: non posso offrirti alcuna protezione e nemmeno informazioni su ciò che potresti affrontare.\n\nBeh, se vuoi davvero aiutare, entra in paese e trova un punto elevato da cui avere una buona visuale. Da lì potrai valutare il numero dei loro uomini e riferirmelo. Ma fa' attenzione....",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Cosa? Davvero? Vuoi saperne di più? Ma hai già fatto tanto per me, $N. Non potrei chiederti di entrare a Hearthglen per conto mio.$B$B Ne sei sicuro, $N? Hearthglen è molto più pericolosa del Passo; non posso offrirti protezione né informazioni su ciò che potresti affrontare.$B$B Se vuoi davvero aiutarmi, entra in città e trova un punto alto da cui osservarla bene. Da lì potrai valutare il loro numero e riferirmelo. Ma fai attenzione....",
+        "67ba49a51f8ba986669c": "Ce l'hai fatta, $N! Grazie!\n\nTornerò a Elling... volevo dire a Stormwind, appena posso. Ecco, prendi questa moneta, è il minimo che possa fare per te. Fai onore alla tua gente, $N. Grazie e buona fortuna.",
+        "c01e052abdf1f5c8ef5e": "È un compito pericoloso, $N. Invidio il tuo coraggio."
+      },
       "eventObjectiveLabel": "Osserva Hearthglen da un punto elevato",
       "summary": "Entra a Hearthglen e trova un punto elevato da cui osservare la città e valutare le forze della Crociata Scarlatta, poi torna da Kirsta Deepshadow nelle Western Plaguelands.",
       "title": "Affari in sospeso",
@@ -270,6 +473,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "38870a1620c2039d341333a416b4697cc518a36536ce412ff37f345eaff60ea6"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -294,6 +514,11 @@
     },
     "koKR": {
       "description": "예? 정말인가요? 알고 싶은 게 더 있으시다고요? 하지만 이미 많은 일을 해주셨는걸요. 제 대신 하스글렌에 들어가 달라는 부탁을 어떻게 할 수 있겠어요...\n\n정말 그렇게 해주실 건가요? 하스글렌은 하스글렌으로 가는 통로보다 훨씬 위험한 곳이에요. 전 당신을 보호해 드릴 수도 없고 어떤 일이 닥칠 것인지 알려드릴 수도 없답니다.\n\n당신이 정 도와주시겠다면 마을로 들어가 마을이 잘 보이는 높은 장소를 찾으세요. 그곳에서 그들의 숫자를 파악하여 저에게 알려 주세요. 정말 조심하셔야 합니다.",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "예? 정말인가요? 알고 싶은 게 더 있으시다고요? 하지만 이미 많은 일을 해주셨는걸요. 제 대신 하스글렌에 들어가 달라는 부탁을 어떻게 할 수 있겠어요...\n\n정말 그렇게 해주실 건가요? 하스글렌은 하스글렌으로 가는 통로보다 훨씬 위험한 곳이에요. 전 당신을 보호해 드릴 수도 없고 어떤 일이 닥칠 것인지 알려드릴 수도 없답니다.\n\n당신이 정 도와주시겠다면 마을로 들어가 마을이 잘 보이는 높은 장소를 찾으세요. 그곳에서 그들의 숫자를 파악하여 저에게 알려 주세요. 정말 조심하셔야 합니다.",
+        "67ba49a51f8ba986669c": "해내셨군요! 고맙습니다!\n\n저는 엘링에게 돌아가야겠어요. 곧장 스톰윈드로 돌아간다는 얘기에요. 자, 이 돈을 받으세요. 당신께 드릴 수 있는 최소한의 성의에요. 당신은 동족의 자랑입니다. 감사 드리며 행운을 빌어요.",
+        "c01e052abdf1f5c8ef5e": "위험한 일이야, $N.  당신의 용기가 부럽습니다."
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "하스글렌에 들어가 마을이 잘 보이는 높은 지대를 찾아 붉은십자군 병력 규모를 파악한 다음 서부 역병지대에 있는 키르스타 딥섀도에게 돌아가야 합니다.",
       "title": "끝나지 않은 임무",
@@ -303,6 +528,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -324,6 +567,11 @@
     },
     "plPL": {
       "description": "Co? Naprawdę? Chcesz wiedzieć więcej? Ale już tak wiele dla mnie zrobiłeś, {name}. Nie mogłabym prosić, byś w moim imieniu wchodził do samego Hearthglen.\n\nJesteś pewien, {name}? Hearthglen jest znacznie niebezpieczniejsze niż przełęcz. Nie mogę zapewnić ci ochrony ani nawet informacji o tym, co możesz napotkać.\n\nCóż, jeśli naprawdę chcesz pomóc, wejdź do miasta i znajdź wysokie miejsce z dobrym widokiem. Stamtąd możesz ocenić ich liczebność i mi ją zgłosić. Uważaj jednak...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Co? Naprawdę? Chcesz wiedzieć więcej? Ale już tyle dla mnie zrobiłeś, $N. Nie mogę prosić cię, byś dla mnie wszedł do samego Hearthglen.$B$B Jesteś pewien, $N? Hearthglen jest znacznie bardziej niebezpieczne niż przełęcz; nie mogę zapewnić ci ochrony ani nawet informacji o tym, co możesz tam spotkać.$B$B Jeśli naprawdę chcesz pomóc, wejdź do miasta i znajdź wysoko położony punkt z dobrym widokiem. Stamtąd możesz ocenić ich liczebność i mi ją przekazać. Ale uważaj....",
+        "67ba49a51f8ba986669c": "Udało ci się, $N! Dziękuję!$B$B Wrócę do Elling... to znaczy do Stormwind, jak tylko będę mógł. Weź tę monetę, to najmniej, co mogę dla ciebie zrobić. Przynosisz chlubę swojemu ludowi, $N. Dziękuję i powodzenia.",
+        "c01e052abdf1f5c8ef5e": "To niebezpieczne zadanie, $N. Zazdroszczę ci odwagi."
+      },
       "eventObjectiveLabel": "Obejrzyj Hearthglen z wysokiego punktu widokowego",
       "summary": "Wejdź do Hearthglen i znajdź wysoki punkt obserwacyjny, z którego zobaczysz miasto i ocenisz siły Szkarłatnej Krucjaty, a następnie wróć do Kirsty Deepshadow w Western Plaguelands.",
       "title": "Niedokończone sprawy",
@@ -334,6 +582,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "38870a1620c2039d341333a416b4697cc518a36536ce412ff37f345eaff60ea6"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -358,6 +621,11 @@
     },
     "ptBR": {
       "description": "O quê? Mesmo? Você quer saber mais? Mas você já fez tanta coisa por mim, {name}. Eu não poderia lhe pedir para entrar em Amparo em meu lugar.\n\nTem certeza, {name}? Amparo é muito mais perigoso que a Passagem... não posso lhe dar nenhuma proteção nem mesmo informações sobre o que você pode ter que enfrentar.\n\nBem, se você estiver realmente disposto a ajudar, entre na cidade e encontre um lugar alto para ter uma visão geral. De lá, você pode calcular quantos eles são e voltar para me contar. Mas tenha cuidado....",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "O quê? Mesmo? Você quer saber mais? Mas você já fez tanta coisa por mim, $N. Eu não poderia lhe pedir para entrar em Amparo em meu lugar.\n\nTem certeza, $N? Amparo é muito mais perigoso que a Passagem... não posso lhe dar nenhuma proteção nem mesmo informações sobre o que você pode ter que enfrentar.\n\nBem, se você estiver realmente disposto a ajudar, entre na cidade e encontre um lugar alto para ter uma visão geral. De lá, você pode calcular quantos eles são e voltar para me contar. Mas tenha cuidado....",
+        "67ba49a51f8ba986669c": "Você conseguiu, $N! Obrigada!\n\nVoltarei para Elling... quero dizer, Ventobravo, assim que puder. Aqui, pegue esta moeda, é o mínimo que posso fazer. Você é uma pessoa de grande valor, $N. Obrigada e boa sorte.",
+        "c01e052abdf1f5c8ef5e": "É uma tarefa perigosa, $N. Invejo sua coragem."
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "Entre em Amparo e encontre um lugar alto de onde possa ver a cidade e avaliar as forças da Cruzada Escarlate. Então fale novamente com Kirsta Sombrafunda nas Terras Pestilentas Ocidentais.",
       "title": "Negócios inacabados",
@@ -367,6 +635,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -388,6 +673,11 @@
     },
     "ruRU": {
       "description": "Что? Правда? Ты готов меня выслушать? Но ты и так очень много для меня сделал, {name}. Я не могу просить тебя отправиться в Дольный Очаг.\n\nТы серьезно? Дольный Очаг гораздо опаснее прохода... Я не смогу защитить тебя или даже рассказать, что тебя может ждать там.\n\nЕсли ты в самом деле хочешь мне помочь, то проникни в город, поднимись на гору и осмотри его с высоты. Оцени количество войск и доложи мне. Но будь осторожен...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Что? Правда? Ты готов меня выслушать? Но ты и так очень много для меня сделал, $N. Я не могу просить тебя отправиться в Дольный Очаг.\n\nТы серьезно? Дольный Очаг гораздо опаснее прохода... Я не смогу защитить тебя или даже рассказать, что тебя может ждать там.\n\nЕсли ты в самом деле хочешь мне помочь, то проникни в город, поднимись на гору и осмотри его с высоты. Оцени количество войск и доложи мне. Но будь осторожен...",
+        "67ba49a51f8ba986669c": "Молодец, $N! Спасибо!\n\nЯ вернусь к Эллингу... точнее, в Штормград как только смогу. Возьми эту скромную сумму, должна же я тебя отблагодарить. Твой народ может тобой гордиться, $N. Спасибо и удачи.",
+        "c01e052abdf1f5c8ef5e": "Это опасная задача, $n. Я завидую твоему мужеству."
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "Проберитесь в Дольный Очаг и найдите возвышенность, с которой открывается вид на весь город. Оцените силы Алого ордена и вернитесь к Кристе Чернотени в Западных Чумных землях.",
       "title": "Неоконченное дело",
@@ -397,6 +687,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -418,6 +726,11 @@
     },
     "svSE": {
       "description": "Vad? Verkligen? Du vill veta mer? Men du har redan gjort så mycket för mig, {name}. Jag kan omöjligen be dig gå in i själva Hearthglen för min skull.\n\nÄr du säker, {name}? Hearthglen är mycket farligare än passet. Jag kan inte ge dig skydd eller ens information om vad du kan möta.\n\nNåväl, om du verkligen vill hjälpa till, gå in i staden och hitta en hög plats med god utsikt. Därifrån kan du uppskatta deras antal och rapportera till mig. Men var försiktig...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Vad? Verkligen? Vill du veta mer? Men du har redan gjort så mycket för mig, $N. Jag kan omöjligt be dig att gå in i själva Hearthglen för min skull.$B$B Är du säker, $N? Hearthglen är mycket farligare än passet; jag kan varken ge dig skydd eller information om vad du kan möta.$B$B Om du verkligen vill hjälpa till, gå in i staden och hitta en hög plats med god utsikt. Därifrån kan du uppskatta deras antal och rapportera tillbaka till mig. Men var försiktig....",
+        "67ba49a51f8ba986669c": "Du klarade det, $N! Tack!$B$B Jag återvänder till Elling... jag menar Stormwind så snart jag kan. Här, ta detta mynt, det är det minsta jag kan göra. Du är en heder för ditt folk, $N. Tack och lycka till.",
+        "c01e052abdf1f5c8ef5e": "Det är en farlig uppgift, $N. Jag avundas ditt mod."
+      },
       "eventObjectiveLabel": "Betrakta Hearthglen från en hög utsiktspunkt",
       "summary": "Gå in i Hearthglen och hitta en hög utsiktspunkt där du kan se staden och bedöma Scharlakanskorstågets styrkor. Återvänd sedan till Kirsta Deepshadow i Western Plaguelands.",
       "title": "Oavslutade affärer",
@@ -428,6 +741,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "38870a1620c2039d341333a416b4697cc518a36536ce412ff37f345eaff60ea6"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -452,6 +780,11 @@
     },
     "trTR": {
       "description": "Ne? Gerçekten mi? Daha fazlasını mı öğrenmek istiyorsun? Ama benim için zaten çok şey yaptın, {name}. Benim adıma Hearthglen'in içine girmeni isteyemem.\n\nEmin misin, {name}? Hearthglen geçitten çok daha tehlikeli; sana ne koruma ne de karşılaşabileceklerin hakkında bilgi verebilirim.\n\nPekâlâ, gerçekten yardıma razıysan kasabaya gir ve iyi görebileceğin yüksek bir yer bul. Oradan sayılarını ölçüp bana bildirebilirsin. Ama dikkatli ol...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Ne? Gerçekten mi? Daha fazlasını öğrenmek mi istiyorsun? Ama benim için zaten çok şey yaptın, $N. Benim adıma Hearthglenin içine girmeni isteyemem.$B$B Emin misin, $N? Hearthglen geçitten çok daha tehlikeli; sana koruma sağlayamam, hatta neyle karşılaşabileceğin konusunda bilgi bile veremem.$B$B Gerçekten yardım etmek istiyorsan kasabaya gir ve iyi bir görüş sağlayan yüksek bir yer bul. Oradan sayılarını tahmin edip bana bildirebilirsin. Ama dikkatli ol....",
+        "67ba49a51f8ba986669c": "Başardın, $N! Teşekkürler!$B$B Elimden gelir gelmez Ellinge... yani Stormwinde döneceğim. Al bu parayı, senin için yapabileceğim en az şey bu. Halkının yüz akısın, $N. Teşekkürler ve iyi şanslar.",
+        "c01e052abdf1f5c8ef5e": "Tehlikeli bir görev, $N. Cesaretini kıskanıyorum."
+      },
       "eventObjectiveLabel": "Hearthglen'i yüksek bir gözlem noktasından izle",
       "summary": "Hearthglen'e gir; kasabayı görüp Scarlet Crusade kuvvetlerini değerlendirebileceğin yüksek bir nokta bul, ardından Western Plaguelands'deki Kirsta Deepshadow'a dön.",
       "title": "Bitmemiş İşler",
@@ -462,6 +795,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "38870a1620c2039d341333a416b4697cc518a36536ce412ff37f345eaff60ea6"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -486,6 +834,11 @@
     },
     "ukUA": {
       "description": "Що? Справді? Хочеш дізнатися більше? Але ти вже стільки для мене зробив, {name}. Я не можу просити тебе заради мене ввійти до самого Вогнедолу.\n\nТи впевнений, {name}? Вогнеділ набагато небезпечніший за перевал. Я не зможу ані захистити тебе, ані навіть розповісти, що тебе там чекає.\n\nЩо ж, якщо справді хочеш допомогти, увійди до міста й знайди височину з добрим краєвидом на нього. Звідти зможеш оцінити їхню чисельність і доповісти мені. Але будь обережний...",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "Що? Справді? Хочеш дізнатися більше? Але ти вже стільки для мене зробив, $N. Я не можу просити тебе заради мене входити до самого Гартґлена.$B$B Ти впевнений, $N? Гартґлен набагато небезпечніший за перевал; я не можу дати тобі ані захисту, ані навіть відомостей про те, з чим ти можеш зіткнутися.$B$B Якщо ти справді хочеш допомогти, увійди в місто й знайди високе місце з добрим оглядом. Звідти ти зможеш оцінити їхню чисельність і доповісти мені. Але будь обережний....",
+        "67ba49a51f8ba986669c": "Ти впорався, $N! Дякую!$B$B Я повернуся до Еллінґ... тобто до Штормовія, щойно зможу. Ось, візьми цю монету, це найменше, що я можу зробити. Ти гордість свого народу, $N. Дякую й щасти тобі.",
+        "c01e052abdf1f5c8ef5e": "Це небезпечне завдання, $N. Заздрю твоїй відвазі."
+      },
       "eventObjectiveLabel": "Огляньте Вогнеділ із високого спостережного пункту",
       "summary": "Проникніть у Вогнеділ та знайдіть височину, з якої ви зможете побачити місто та оцінити сили Багряного Походу, після чого поверніться до Кірсти Чорнотіні в Західні Зачумлені землі.",
       "title": "Незавершена справа",
@@ -496,6 +849,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "38870a1620c2039d341333a416b4697cc518a36536ce412ff37f345eaff60ea6"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -522,6 +890,11 @@
     },
     "zhCN": {
       "description": "什么？真的？你想要知道更多的情报？但是你已经为我做了很多了，{name}。我不能要求你为了我进入壁炉谷。\n\n你当真要去，{name}？壁炉谷里面可比那条小径危险很多——我不能给你提供任何保护，也没法告诉你那里有什么样的危险。\n\n好吧，如果你真的想帮忙，那就到那个镇子里去，找一个可以俯瞰全景的高地。你可以在那里估算一下十字军的人数，然后回来向我报告。但是你一定要小心……",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "什么？真的？你想要知道更多的情报？但是你已经为我做了很多了，$N。我不能要求你为了我进入壁炉谷。\n\n你当真要去，$N？壁炉谷里面可比那条小径危险很多——我不能给你提供任何保护，也没法告诉你那里有什么样的危险。\n\n好吧，如果你真的想帮忙，那就到那个镇子里去，找一个可以俯瞰全景的高地。你可以在那里估算一下十字军的人数，然后回来向我报告。但是你一定要小心……",
+        "67ba49a51f8ba986669c": "你成功了，$N!谢谢你!\n\n我会尽快回到伊林……我是说尽快回到暴风城去。拿着这个，我只能给你这个了。你是个值得信任的$C，$N。谢谢你，祝你好运。\n",
+        "c01e052abdf1f5c8ef5e": "这是个危险的任务，$N。我羡慕你的勇气。"
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "进入壁炉谷并找一处高地，你可以在那里观察整个城镇并估算血色十字军的兵力，然后向西瘟疫之地的科尔斯塔·迪普沙东回报。",
       "title": "未完的任务",
@@ -531,6 +904,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -552,6 +943,11 @@
     },
     "zhTW": {
       "description": "什麼？真的？你想要知道更多的情報？但是你已經為我做了很多了，{name}。我不能要求你為了我進入壁爐谷。\n\n你當真要去，{name}？壁爐谷裡面可比那條小徑危險很多——我不能給你提供任何保護，也沒法告訴你那裡有什麼樣的危險。\n\n好吧，如果你真的想幫忙，那就到那個鎮子裡去，找一個可以俯瞰全景的高地。你可以在那裡估算一下十字軍的人數，然後回來向我報告。但是你一定要小心……",
+      "dialogue": {
+        "4d76cc41ee447cf4257a": "什麼？真的？你想要知道更多的情報？但是你已經為我做了很多了，$N。我不能要求你為了我進入壁爐谷。\n\n你當真要去，$N？壁爐谷裡面可比那條小徑危險很多——我不能給你提供任何保護，也沒法告訴你那裡有什麼樣的危險。\n\n好吧，如果你真的想幫忙，那就到那個鎮子裡去，找一個可以俯瞰全景的高地。你可以在那裡估算一下十字軍的人數，然後回來向我報告。但是你一定要小心……",
+        "67ba49a51f8ba986669c": "你成功了，$N!謝謝你!\n\n我會盡快回到伊林……我是說盡快回到暴風城去。拿着這個，我只能給你這個了。你是個值得信任的$C，$N。謝謝你，祝你好運。",
+        "c01e052abdf1f5c8ef5e": "這是個危險的任務，$N。我羨慕你的勇氣。"
+      },
       "eventObjectiveLabel": "Overlook Hearthglen from a high vantage point",
       "summary": "進入壁爐谷並找壹處高地，妳可以在那裏觀察整個城鎮並估算血色十字軍的兵力，然後向西瘟疫之地的科爾斯塔·迪普沙東回報。",
       "title": "未完的任務",
@@ -561,6 +957,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.4d76cc41ee447cf4257a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.67ba49a51f8ba986669c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c01e052abdf1f5c8ef5e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

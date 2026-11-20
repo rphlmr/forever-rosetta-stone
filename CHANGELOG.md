@@ -2,12 +2,31 @@
 
 ## [Unreleased]
 
+### Added
+
+- Read translated NPC greetings and conversation options, as well as quest offers, in-progress dialogue, and turn-in text beside the original window. Dialogue uses the appropriate wording for your character where variants are available.
+- Choose separately whether NPC greetings, quest progress, and turn-in translations open automatically. Quest details and offers have their own setting, and you can still open a translation from the Rosetta Stone bookmark.
+- When a quest, NPC dialogue, or book translation is missing, the panel explains what is missing and lets you copy a report to share on GitHub.
+
+### Changed
+
+- Quest, NPC dialogue, and book translations share a reading layout with aligned parchment and scrollbars. On a gamepad, use LT and RT to move focus between panels, B to close the focused translation, and the bookmark to reopen it. The translated book follows the page you turn in the original.
+- Use the Options button on quest, dialogue, and book translations to report an issue, including when a translation is missing.
+- Item reports from the picker include available transmogrification data for your own equipment and for inspected players.
+
 ### Fixed
 
 - Fixed the translation panel closing when turning pages in books.
+- Guard dialogue keeps the game's option order and spacing. Missing option translations are identified, and Ironforge guards show the correct directions prompt.
+- Fixed quest and dialogue tooltips briefly appearing as their translation panel opens.
+- Fixed untranslated appearance names under the transmogrification heading for supported equipped and inspected items.
 
 ### Translations
 
+- Added Ironforge guard directions, including the bank, and support for the shared travel option at flight masters.
+- Added equipment enchantment translations, including armor kits, weapon oils, poisons, sharpening stones, and fishing lures, in the 18 bundled languages where wording is available. Temporary effects retain the remaining time shown by the game.
+- Added 20,209 dialogue entries across 4,493 quests and 1,565 NPCs in all 18 bundled languages.
+- Refined 7,949 dialogue translations for quest and item terminology, meaning, and character gender. The review covered all 166,206 AI-translated dialogue entries.
 - Expanded translations for 462 books and letters across all 18 bundled languages, covering 1,210 pages.
 - Added 2 book titles and 61 pages to the catalog.
 

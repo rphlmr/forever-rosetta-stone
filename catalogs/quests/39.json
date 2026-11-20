@@ -1,8 +1,28 @@
 {
   "areaId": 12,
+  "dialogueContexts": {
+    "125a86441961f6e72190": {
+      "lineId": "q:39:complete",
+      "npcId": 240,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "f1eecaf5a8ff8570fb59": {
+      "lineId": "q:39:accept",
+      "npcId": 261,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Řekni maršálovi Dughanovi o smrti Malakaie a Rolfa a oznam mu, že murloky ve východní části lesa Elwynn naše současná vojenská přítomnost nedokáže udržet na uzdě.\n\nVím, že nemáme moc vojáků nazbyt, ale snad Dughan někoho najde.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm, to jsou znepokojivé zprávy. Naše obrana je už tak napjatá a ztráta Rolfa a Malakaie v boji s těmi murloky nás ještě oslabila.$B$BPokud se situace nezlepší, do konce týdne se bude bojovat v Goldshire!",
+        "f1eecaf5a8ff8570fb59": "Řekni maršálovi Dughanovi o smrti Malakaie a Rolfa a oznam mu, že murloky ve východní části lesa Elwynn naše současná vojenská přítomnost nedokáže udržet na uzdě.$B$BVím, že nemáme moc vojáků nazbyt, ale snad Dughan někoho najde."
+      },
       "summary": "Přihlas se u maršála Dughana v Goldshire.",
       "title": "Doruč Thomasovu zprávu",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Fortæl marskal Dughan, at Malakai og Rolf er døde, og meld til ham, at vores nuværende styrker ikke kan holde murlocerne i det østlige Elwynn i skak.\n\nJeg ved, at vi ikke har mange tropper at undvære, men forhåbentlig kan Dughan finde nogen.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm, det er foruroligende nyt. Vores forsvar er allerede presset, og tabet af Rolf og Malakai til de murlocer har stillet os endnu værre.$B$BHvis det ikke bliver bedre, vil der være kampe i Goldshire inden ugens udgang!",
+        "f1eecaf5a8ff8570fb59": "Fortæl marskal Dughan, at Malakai og Rolf er døde, og meld til ham, at vores nuværende styrker ikke kan holde murlocerne i det østlige Elwynn i skak.$B$BJeg ved, at vi ikke har mange tropper at undvære, men forhåbentlig kan Dughan finde nogen."
+      },
       "summary": "Meld dig hos marskal Dughan i Goldshire.",
       "title": "Aflevér Thomas' rapport",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3f508d47029c3798151bada3c7e320296900ab0a05784abe87142fe14b0379ca"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Berichtet Marshal Dughan, dass Malakai und Rolf ums Leben gekommen sind, und teilt ihm auch mit, dass wir die Murlocs in Ost-Elwynn mit unserer derzeitigen Truppenstärke hier nicht unter Kontrolle halten können.\n\nIch weiß, dass wir nicht viele überzählige Männer haben, aber vielleicht findet Dughan ja doch jemanden.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm. . . das sind beunruhigende Neuigkeiten. Unsere Reihen sind ohnehin schon ausgedünnt, und dass wir jetzt auch noch Rolf und Malakai verloren haben, macht die Lage noch schlimmer. \n \n Wenn sich die Dinge nicht bald ändern, dann wird in ein paar Tagen sogar Goldhain umkämpft sein. ",
+        "f1eecaf5a8ff8570fb59": "Berichtet Marshal Dughan, dass Malakai und Rolf ums Leben gekommen sind, und teilt ihm auch mit, dass wir die Murlocs in Ost-Elwynn mit unserer derzeitigen Truppenstärke hier nicht unter Kontrolle halten können.\n\nIch weiß, dass wir nicht viele überzählige Männer haben, aber vielleicht findet Dughan ja doch jemanden."
+      },
       "summary": "Erstattet Marshal Dughan in Goldhain Bericht.",
       "title": "Zustellung von Thomas' Bericht",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "Tell Marshal Dughan of Malakai and Rolf's deaths, and report to him that the Murlocs in eastern Elwynn cannot be contained by our current troop presence.\n\nI know we don't have many troops to spare, but hopefully Dughan can find someone.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm, this news is troubling.  Already our defenses are stretched thin, and losing Rolf and Malakai to those murlocs put us in an even worse position.$B$BIf things don't improve, there will be fighting in Goldshire by the week's end!",
+        "f1eecaf5a8ff8570fb59": "Tell Marshal Dughan of Malakai and Rolf's deaths, and report to him that the Murlocs in eastern Elwynn cannot be contained by our current troop presence.$B$BI know we don't have many troops to spare, but hopefully Dughan can find someone."
+      },
       "summary": "Report to Marshal Dughan in Goldshire.",
       "title": "Deliver Thomas' Report",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Habla al alguacil Dughan de la muerte de Malakai y Rolf y después infórmale de que no podrá contener a los murlocs del este de Elwynn con sus tropas.\n\nSé que no tenemos bastantes soldados, quizás Dughan pueda encontrar alguno más.",
+      "dialogue": {
+        "125a86441961f6e72190": "Mmm, son noticias preocupantes. Nuestras defensas ya están bastante mermadas y, ahora que hemos perdido a Rolf y Malakai a manos de esos murlocs, estamos incluso peor.\n\nSi las cosas no mejoran, para el final de la semana habrá un combate en Villadorada.",
+        "f1eecaf5a8ff8570fb59": "Habla al alguacil Dughan de la muerte de Malakai y Rolf y después infórmale de que no podrá contener a los murlocs del este de Elwynn con sus tropas.\n\nSé que no tenemos bastantes soldados, quizás Dughan pueda encontrar alguno más."
+      },
       "summary": "Preséntate ante el alguacil Dughan en Villadorada.",
       "title": "Entrega el informe de Thomas",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Habla al alguacil Dughan de la muerte de Malakai y Rolf, y después infórmale de que no podrá contener a los múrlocs del este de Elwynn con sus tropas.\n\nSé que no tenemos bastantes soldados, quizás Dughan pueda encontrar alguno más.",
+      "dialogue": {
+        "125a86441961f6e72190": "Mmm, son noticias preocupantes. Nuestras defensas ya están bastante mermadas y ahora que hemos perdido a Rolf y Malakai a manos de esos múrlocs, estamos incluso peor.\n\nSi las cosas no mejoran, para el final de la semana habrá un combate en Villadorada.",
+        "f1eecaf5a8ff8570fb59": "Habla al alguacil Dughan de la muerte de Malakai y Rolf, y después infórmale de que no podrá contener a los múrlocs del este de Elwynn con sus tropas.\n\nSé que no tenemos bastantes soldados, quizás Dughan pueda encontrar alguno más."
+      },
       "summary": "Preséntate ante el alguacil Dughan en Villadorada.",
       "title": "Entrega el informe de Thomas",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "Allez annoncer au maréchal Dughan la mort de Malakai et de Rolf, et prévenez-le que les murlocs à l'est d'Elwynn ne pourront pas être contenus par les troupes présentes actuellement.\n\nJe sais que nous n’avons pas beaucoup de troupes disponibles, mais Dughan trouvera une solution.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hum ! Encore des ennuis. Déjà que nos défenses sont bien minces, perdre Rolf et Malakai à cause de ces murlocs nous place dans une position encore plus délicate.\n\nSi les choses ne s'arrangent pas, il y aura des combats à Comté-de-l’Or avant la fin de cette semaine !",
+        "f1eecaf5a8ff8570fb59": "Allez annoncer au maréchal Dughan la mort de Malakai et de Rolf, et prévenez-le que les murlocs à l'est d'Elwynn ne pourront pas être contenus par les troupes présentes actuellement.\n\nJe sais que nous n’avons pas beaucoup de troupes disponibles, mais Dughan trouvera une solution."
+      },
       "summary": "Avertir le maréchal Dughan de Comté-de-l’Or.",
       "title": "Remettre le rapport de Thomas",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -181,6 +305,10 @@
     },
     "hrHR": {
       "description": "Reci maršalu Dughanu o smrti Malakaija i Rolfa te ga izvijesti da s trenutačnim brojem vojnika ne možemo zadržati murloke u istočnom Elwynnu.\n\nZnam da nemamo mnogo vojnika na raspolaganju, ali nadam se da Dughan može nekoga pronaći.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm, te su vijesti zabrinjavajuće. Naša je obrana već rastegnuta, a gubitak Rolfa i Malakaija od ruku tih murloka doveo nas je u još gori položaj.$B$BAko se stanje ne popravi, do kraja tjedna borit ćemo se u Goldshireu!",
+        "f1eecaf5a8ff8570fb59": "Reci maršalu Dughanu o smrti Malakaija i Rolfa te ga izvijesti da s trenutačnim brojem vojnika ne možemo zadržati murloke u istočnom Elwynnu.$B$BZnam da nemamo mnogo vojnika na raspolaganju, ali nadam se da Dughan može nekoga pronaći."
+      },
       "summary": "Javi se maršalu Dughanu u Goldshireu.",
       "title": "Dostavi Thomasovo izvješće",
       "translationMetadata": {
@@ -190,6 +318,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3f508d47029c3798151bada3c7e320296900ab0a05784abe87142fe14b0379ca"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -208,6 +346,10 @@
     },
     "itIT": {
       "description": "Informa il maresciallo Dughan della morte di Malakai e Rolf e riferiscigli che le truppe attualmente presenti non riescono a contenere i murloc nell'Elwynn orientale.\n\nSo che non abbiamo molti soldati da destinare qui, ma spero che Dughan riesca a trovare qualcuno.",
+      "dialogue": {
+        "125a86441961f6e72190": "Mmh, sono notizie preoccupanti. Le nostre difese sono già ridotte all'osso, e perdere Rolf e Malakai per colpa di quei murloc ci mette in una posizione ancora peggiore.\n\nSe le cose non migliorano, entro fine settimana si combatterà a Goldshire!",
+        "f1eecaf5a8ff8570fb59": "Informa Marshal Dughan della morte di Malakai e Rolf, e digli che con le truppe che abbiamo ora non riusciamo a contenere i Murloc di Elwynn est.\n\nSo che non abbiamo molte truppe da mandare, ma spero che Dughan trovi qualcuno."
+      },
       "summary": "Fai rapporto al maresciallo Dughan a Goldshire.",
       "title": "Consegna il rapporto di Thomas",
       "translationMetadata": {
@@ -217,6 +359,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3f508d47029c3798151bada3c7e320296900ab0a05784abe87142fe14b0379ca"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -235,6 +389,10 @@
     },
     "koKR": {
       "description": "더그한 치안대장님께 말라카이와 롤프의 죽음을 말씀드려 주십시오. 그리고 엘윈 숲 동쪽에 있는 멀록들을 견제하기엔 현재 병력만으로는 무리라고 보고해 주시기 바랍니다.\n\n이쪽에 충분한 병력을 배치할 만큼 상황이 여의치 않다는 것은 알지만 더그한님께서 이 지역에 희망이 되어 줄 누군가를 보내주시리라 믿습니다.",
+      "dialogue": {
+        "125a86441961f6e72190": "흠, 이거 좋지 않은 소식인 걸. 아직 우리의 방어선이 미약하게 펼쳐져 있는데다가, 멀록에게 롤프와 말라카이까지 희생되었으니 우리를 더 어려운 상황에 처하게 하는군.\n\n이 모든 상황들이 개선되지 못한다면 이번 주말에 골드샤이어에서 전투를 치러야할 것이오!",
+        "f1eecaf5a8ff8570fb59": "더그한 치안대장님께 말라카이와 롤프의 죽음을 말씀드려 주십시오. 그리고 엘윈 숲 동쪽에 있는 멀록들을 견제하기엔 현재 병력만으로는 무리라고 보고해 주시기 바랍니다.\n\n이쪽에 충분한 병력을 배치할 만큼 상황이 여의치 않다는 것은 알지만 더그한님께서 이 지역에 희망이 되어 줄 누군가를 보내주시리라 믿습니다."
+      },
       "summary": "골드샤이어에 있는 치안대장 더그한에게 보고해야 합니다.",
       "title": "토마스의 보고 전달",
       "translationMetadata": {
@@ -243,6 +401,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -259,6 +429,10 @@
     },
     "plPL": {
       "description": "Powiedz marszałkowi Dughanowi o śmierci Malakaia i Rolfa i zamelduj mu, że obecnymi siłami nie zdołamy powstrzymać murloków we wschodnim Elwynn.\n\nWiem, że nie mamy wielu wolnych żołnierzy, ale mam nadzieję, że Dughan kogoś znajdzie.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm, to niepokojące wieści. Nasza obrona już jest nadwyrężona, a utrata Rolfa i Malakaia z rąk tych murloków jeszcze pogorszyła nasze położenie.$B$BJeśli sytuacja się nie poprawi, przed końcem tygodnia walki dotrą do Goldshire!",
+        "f1eecaf5a8ff8570fb59": "Powiedz marszałkowi Dughanowi o śmierci Malakaia i Rolfa i zamelduj mu, że obecnymi siłami nie zdołamy powstrzymać murloków we wschodnim Elwynn.$B$BWiem, że nie mamy wielu wolnych żołnierzy, ale mam nadzieję, że Dughan kogoś znajdzie."
+      },
       "summary": "Zgłoś się do marszałka Dughana w Goldshire.",
       "title": "Dostarcz meldunek Thomasa",
       "translationMetadata": {
@@ -269,6 +443,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "1.1.1",
             "sourceTextSha256": "3f508d47029c3798151bada3c7e320296900ab0a05784abe87142fe14b0379ca"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -289,6 +473,10 @@
     },
     "ptBR": {
       "description": "Conte ao Delegado Durão sobre as mortes de Malaquias e Rodolfo. Conte também que os murlocs na área leste de Elwynn não podem ser contidos pelas tropas que temos lá.\n\nEu sei que não temos um grande contingente, mas com sorte Durão achará alguém.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm, isso é problemático. Nossas defesas já foram dizimadas – com a perda de Malaquias e Rodolfo para aqueles murlocs, ficamos numa posição pior ainda.\n\nSe as coisas não melhorarem, antes do fim da semana a Vila d'Ouro virar uma balbúrdia!",
+        "f1eecaf5a8ff8570fb59": "Conte ao Delegado Durão sobre as mortes de Malaquias e Rodolfo. Conte também que os murlocs na área leste de Elwynn não podem ser contidos pelas tropas que temos lá.\n\nEu sei que não temos um grande contingente, mas com sorte Durão achará alguém."
+      },
       "summary": "Apresente-se ao Delegado Durão na Vila d'Ouro.",
       "title": "O relatório de Tomás",
       "translationMetadata": {
@@ -297,6 +485,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -313,6 +513,10 @@
     },
     "ruRU": {
       "description": "Нужно сообщить маршалу Дугхану о смерти Малакаи и Рольфа. Наши войска на востоке Элвиннского леса не смогут справиться с мурлоками.\n\nЯ знаю, лишних солдат у нас нет, но, может, Дугхан пришлет хоть какую-то помощь...",
+      "dialogue": {
+        "125a86441961f6e72190": "Да, вести невеселые... Людей у нас и так немного, а теперь, когда мурлоки прикончили Рольфа и Малакаи, будет и вовсе несладко.\n\nЕсли положение не изменится к лучшему, боюсь, к концу недели бои будут идти уже в Златоземье...",
+        "f1eecaf5a8ff8570fb59": "Нужно сообщить маршалу Дугхану о смерти Малакаи и Рольфа. Наши войска на востоке Элвиннского леса не смогут справиться с мурлоками.\n\nЯ знаю, лишних солдат у нас нет, но, может, Дугхан пришлет хоть какую-то помощь..."
+      },
       "summary": "Доставьте донесение в Златоземье маршалу Дугхану.",
       "title": "Донесение Томаса",
       "translationMetadata": {
@@ -321,6 +525,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -337,6 +553,10 @@
     },
     "svSE": {
       "description": "Berätta för marskalk Dughan om Malakais och Rolfs död, och rapportera att murlocerna i östra Elwynn inte kan hållas stången av våra nuvarande trupper.\n\nJag vet att vi inte har många soldater att avvara, men förhoppningsvis kan Dughan hitta några.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm, det här är oroande nyheter. Vårt försvar är redan hårt ansträngt, och förlusten av Rolf och Malakai till de där murlocerna har försatt oss i ett ännu sämre läge.$B$BOm det inte blir bättre kommer striderna att nå Guldby före veckans slut!",
+        "f1eecaf5a8ff8570fb59": "Berätta för marskalk Dughan om Malakais och Rolfs död, och rapportera att murlocerna i östra Elwynn inte kan hållas stången av våra nuvarande trupper.$B$BJag vet att vi inte har många soldater att avvara, men förhoppningsvis kan Dughan hitta några."
+      },
       "summary": "Rapportera till marskalk Dughan i Guldby.",
       "title": "Lämna Thomas rapport",
       "translationMetadata": {
@@ -346,6 +566,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3f508d47029c3798151bada3c7e320296900ab0a05784abe87142fe14b0379ca"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -366,6 +596,10 @@
     },
     "trTR": {
       "description": "Şerif Dughan'a Malakai ile Rolf'un ölümlerini anlat ve doğu Elwynn'deki Murloc'ların mevcut birlik varlığımızla kontrol altında tutulamayacağını bildir.\n\nAyıracak çok askerimiz olmadığını biliyorum ama umarım Dughan birini bulabilir.",
+      "dialogue": {
+        "125a86441961f6e72190": "Hmm, bu haber endişe verici. Savunmamız zaten zorlanıyor ve Rolf ile Malakai’yi o murloclara kaptırmamız bizi daha da kötü bir duruma soktu.$B$Bİşler düzelmezse hafta sonuna kadar Goldshire’da çatışmalar başlayacak!",
+        "f1eecaf5a8ff8570fb59": "Şerif Dughan'a Malakai ile Rolf'un ölümlerini anlat ve doğu Elwynn'deki Murloc'ların mevcut birlik varlığımızla kontrol altında tutulamayacağını bildir.$B$BAyıracak çok askerimiz olmadığını biliyorum ama umarım Dughan birini bulabilir."
+      },
       "summary": "Goldshire'daki Şerif Dughan'a rapor ver.",
       "title": "Thomas'ın Raporunu Teslim Et",
       "translationMetadata": {
@@ -375,6 +609,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -393,6 +637,10 @@
     },
     "ukUA": {
       "description": "Розкажи маршалові Дугану про смерть Малакая та Рольфа, повідом йому, що теперішня чисельність наших військ не здатна стримувати мурлоків на сході Ельвинну.\n\nЯ знаю, що у нас не так багато вільних військ, але, сподіваюся, Дугану вдасться когось знайти.",
+      "dialogue": {
+        "125a86441961f6e72190": "Хм, тривожні новини. Наші оборонні сили й так на межі, а втрата Рольфа й Малакая від рук тих мурлоків ще погіршила наше становище.$B$BЯкщо ситуація не покращиться, до кінця тижня бої точитимуться вже у Злотохресті!",
+        "f1eecaf5a8ff8570fb59": "Розкажи маршалові Дугану про смерть Малакая та Рольфа, повідом йому, що теперішня чисельність наших військ не здатна стримувати мурлоків на сході Ельвинну.$B$BЯ знаю, що у нас не так багато вільних військ, але, сподіваюся, Дугану вдасться когось знайти."
+      },
       "summary": "Відзвітуйте маршалові Дугану в Злотохресті.",
       "title": "Передача звіту Томаса",
       "translationMetadata": {
@@ -403,6 +651,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "3f508d47029c3798151bada3c7e320296900ab0a05784abe87142fe14b0379ca"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -423,6 +681,10 @@
     },
     "zhCN": {
       "description": "把罗尔夫和马拉凯的死讯告知治安官杜汉，向他报告说，靠我们现在的部队根本无法遏制住这些在艾尔文森林东部繁衍的鱼人。\n\n我知道我们的兵力很短缺，但是杜汉应该可以为我们提供人手。",
+      "dialogue": {
+        "125a86441961f6e72190": "嗯，这个消息确实是很麻烦。我们的防守已经很薄弱了，罗尔夫和马拉凯死在鱼人的手上让我们的处境更加不妙。\n\n如果我们不想些办法的话，不用一个礼拜，这群长着腿的鱼就会杀到闪金镇来了!\n",
+        "f1eecaf5a8ff8570fb59": "把罗尔夫和马拉凯的死讯告知治安官杜汉，向他报告说，靠我们现在的部队根本无法遏制住这些在艾尔文森林东部繁衍的鱼人。\n\n我知道我们的兵力很短缺，但是杜汉应该可以为我们提供人手。"
+      },
       "summary": "到闪金镇去向治安官杜汉报告。",
       "title": "托马斯的报告",
       "translationMetadata": {
@@ -431,6 +693,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -447,6 +721,10 @@
     },
     "zhTW": {
       "description": "把羅爾夫和馬拉凱的死訊告知治安官杜漢，向他報告說，靠我們現在的部隊根本無法遏制住這些在東部艾爾文森林的魚人。\n\n我知道我們的兵力很短缺，但是希望杜漢可以找到些人手。",
+      "dialogue": {
+        "125a86441961f6e72190": "嗯，這個消息確實是很麻煩。我們的防守已經很薄弱了，羅爾夫和馬拉凱死在魚人的手上讓我們的處境更加不妙。\n\n如果我們不想些辦法的話，不用一個禮拜，這群長著腿的魚就會殺到閃金鎮來了!",
+        "f1eecaf5a8ff8570fb59": "把羅爾夫和馬拉凱的死訊告知治安官杜漢，向他報告說，靠我們現在的部隊根本不能遏制住這些在艾爾文森林東部繁衍的魚人。\n\n我知道我們的兵力很短缺，但是杜漢應該可以為我們提供人手。"
+      },
       "summary": "到閃金鎮去向治安官杜漢報告。",
       "title": "傳遞湯瑪斯的報告",
       "translationMetadata": {
@@ -455,6 +733,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.125a86441961f6e72190": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f1eecaf5a8ff8570fb59": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

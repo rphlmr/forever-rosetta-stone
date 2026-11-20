@@ -1,8 +1,36 @@
 {
   "areaId": 400,
+  "dialogueContexts": {
+    "a3e3a7ffec907fa432e2": {
+      "lineId": "q:1106:progress",
+      "npcId": 4618,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "a955931017ce0f183771": {
+      "lineId": "q:1106:accept",
+      "npcId": 4454,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "b2b55942659f1c9883c9": {
+      "lineId": "q:1106:complete",
+      "npcId": 4618,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vyvíjím nový motor, díky kterému bude auto tak rychlé! Dost rychlé na to, aby létalo, to vím! Jen musím vyrobit písty, které vydrží opravdu opravdu velké zatížení. Všechny mé pokusy selhaly, protože nedokážu vyrobit dost tvrdé písty!\n\nAle je tu někdo, kdo by mohl vědět jak.\n\nJmenuje se Martek the Exiled. Je to skvělý kovář a o kovech ví víc než kdokoli jiný. Odnes mu tento dopis, vím, že může pomoct!\n\nAle je to hodně hodně daleko, v Azerothu, v Badlands, v táboře, s goblinem!\n\nNajdi ho!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Tak jsi mě našel. Dobře pro tebe.$B$BJsi tu kvůli té sekeře, kterou jsem vyrobil pro Gath’Ilzogga? Nebo chceš získat zpět čest vévodkyně Pamay?$B$BVlastně je mi jedno proč. Jestli chceš bojovat, skončeme to...",
+        "a955931017ce0f183771": "Vyvíjím nový motor, díky kterému pojede auto tak rychle! Dost rychle na létání, to vím! Jen potřebuji vyrobit písty, které vydrží opravdu velké zatížení. Všechny pokusy selhaly, protože nedokážu vyrobit dost tvrdé písty!$B$BAle někdo by mohl vědět jak.$B$BJmenuje se Martek Vyhnanec. Je skvělý kovář a ví o kovu víc než kdokoli jiný. Odnes mu tento dopis, určitě pomůže!$B$BAle je daleko, daleko — v Azerothu, v Badlands, v táboře, s goblinem!$B$BNajdi ho!",
+        "b2b55942659f1c9883c9": "Fizzle tě posílá? To všechno mění! Samozřejmě ti pomohu. Fizzle a jeho bratr jsou jedni z mála lidí, kteří mě nechtějí mrtvého!$B$BTakže Fizzle chce vyrobit písty? Dost silné, aby vydržely cokoli, co plánuje, a pokud Fizzla znám, jeho nové auto je sopka na kolech!"
+      },
       "summary": "Přines Fizzle's Letter Marteku the Exiled do Badlands.",
       "title": "Martek Vyhnanec",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -30,6 +73,11 @@
     },
     "daDK": {
       "description": "Jeg udvikler en ny motor, der vil få bilen til at køre så hurtigt! Hurtigt nok til at flyve, det ved jeg! Jeg skal bare lave stempler, der kan klare meget, meget hård belastning. Alle mine forsøg er slået fejl, fordi jeg ikke kan lave stemplerne hårde nok!\n\nMen der er en, som måske ved hvordan.\n\nHan hedder Martek the Exiled. Han er en stor smed og ved mere om metal end nogen anden. Tag dette brev med til ham, jeg ved, han kan hjælpe!\n\nMen han er langt, langt væk, i Azeroth, i Badlands, i en lejr, sammen med en goblin!\n\nFind ham!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Nå, du fandt mig. Godt for dig.$B$BEr du her på grund af øksen, jeg lavede til Gath’Ilzogg? Eller for at genoprette hertuginde Pamays ære?$B$BEgentlig er jeg ligeglad. Hvis du vil kæmpe, så lad os få det overstået...",
+        "a955931017ce0f183771": "Jeg udvikler en ny motor, som vil få bilen til at køre så hurtigt! Hurtigt nok til at flyve, det ved jeg! Jeg skal bare lave stempler, der kan klare en meget, meget stor belastning. Alle mine forsøg er mislykkedes, fordi jeg ikke kan lave dem hårde nok!$B$BMen der er en, som måske ved hvordan.$B$BHan hedder Martek den forviste. Han er en stor smed og ved mere om metal end nogen anden. Tag dette brev til ham, jeg ved, han kan hjælpe!$B$BMen han er langt, langt væk — i Azeroth, i Badlands, i en lejr, sammen med en goblin!$B$BFind ham!",
+        "b2b55942659f1c9883c9": "Fizzle sendte dig? Så ændrer det sagen! Selvfølgelig hjælper jeg dig. Fizzle og hans bror er blandt de få, som ikke ønsker mig død!$B$BSå Fizzle vil lave stempler? Stempler stærke nok til alt, hvad han har planlagt, og kender jeg Fizzle ret, er hans nye bil en vulkan på hjul!"
+      },
       "summary": "Bring Fizzles brev til Martek den forviste i Badlands.",
       "title": "Martek den forviste",
       "translationMetadata": {
@@ -39,6 +87,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e8aaa5e311ac7bfda508baeb30c06e94e3cfbe42ba2d4a5859bb1c71f5a7ee3e"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -57,6 +120,11 @@
     },
     "deDE": {
       "description": "Ich entwickle einen neuen Motor, mit dem der Wagen so schnell wie der Wind wird! Schnell genug, um zu fliegen, ich weiß es! Ich muss nur ein paar Kolben herstellen, die sehr, sehr große Belastungen aushalten. All meine bisherigen Versuche sind fehlgeschlagen, weil ich die Kolben einfach nicht robust genug herstellen kann!\n\nAber es gibt jemanden, der wissen könnte, wie es geht.\n\nSein Name ist Martek der Verbannte. Er ist ein großartiger Schmied und weiß mehr über Metall als alle anderen. Bringt ihm diesen Brief, ich weiß, dass er helfen kann!\n\nAber er lebt weit, weit weg - in Azeroth, im Ödland, in einem Lager, zusammen mit einem Goblin!\n\nSucht ihn!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Tja, da habt Ihr mich also gefunden. Schön für Euch. \n \n Seid Ihr wegen der Axt hier, die ich für Gath'Ilzogg geschmiedet habe? Oder seid Ihr hier, um die Ehre der Herzogin Pamay zurückzufordern?\n \n Wisst Ihr, es ist mir völlig egal, warum Ihr hier seid. Wenn Ihr hier seid um zu kämpfen, dann bringen wir's hinter uns . . . ",
+        "a955931017ce0f183771": "Ich entwickle einen neuen Motor, mit dem der Wagen so schnell wie der Wind wird! Schnell genug, um zu fliegen, ich weiß es! Ich muss nur ein paar Kolben herstellen, die sehr, sehr große Belastungen aushalten. All meine bisherigen Versuche sind fehlgeschlagen, weil ich die Kolben einfach nicht robust genug herstellen kann!\n\nAber es gibt jemanden, der wissen könnte, wie es geht.\n\nSein Name ist Martek der Verbannte. Er ist ein großartiger Schmied und weiß mehr über Metall als alle anderen. Bringt ihm diesen Brief, ich weiß, dass er helfen kann!\n\nAber er lebt weit, weit weg - in Azeroth, im Ödland, in einem Lager, zusammen mit einem Goblin!\n\nSucht ihn!",
+        "b2b55942659f1c9883c9": "Fizzle hat Euch geschickt? Also das ändert die Sachlage! Natürlich helfe ich Euch. Fizzle und sein Bruder sind zwei der wenigen Leute, die mich nicht tot sehen wollen!\n \n Fizzle will also Kolben herstellen, was? Kolben, die stark genug sind, um großen Belastungen standhalten zu können; was auch immer ihm vorschweben mag. Und wie ich Fizzle kenne, wird sein neuer Wagen ein Vulkan auf Rädern!"
+      },
       "summary": "Bringt Martek dem Verbannten im Ödland Fizzles Brief.",
       "title": "Martek der Verbannte",
       "translationMetadata": {
@@ -65,6 +133,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -81,6 +167,11 @@
     },
     "enUS": {
       "description": "I'm developing a new engine that'll make the car go so fast!  Fast enough to fly, I know it!  I just need to make pistons that can handle very very heavy stress.  All my trials have failed because I can't make pistons hard enough!\n\nBut there is someone who might know how.\n\nHis name is Martek the Exiled.  He is a great smith and knows more about metal than anyone.  Take him this letter, I know he can help!\n\nBut he's far far away -- in Azeroth, in the Badlands, in a camp, with a goblin!\n\nFind him!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Well, you found me.  Good for you.$B$BAre you here about that axe I made for Gath'Ilzogg?  Or are you here to reclaim Duchess Pamay's honor?$B$BActually, I don't care which it is.  If you're here to fight, then let's get it over with...",
+        "a955931017ce0f183771": "I'm developing a new engine that'll make the car go so fast!  Fast enough to fly, I know it!  I just need to make pistons that can handle very very heavy stress.  All my trials have failed because I can't make pistons hard enough!$B$BBut there is someone who might know how.$B$BHis name is Martek the Exiled.  He is a great smith and knows more about metal than anyone.  Take him this letter, I know he can help!$B$BBut he's far far away -- in Azeroth, in the Badlands, in a camp, with a goblin!$B$BFind him!",
+        "b2b55942659f1c9883c9": "Fizzle sent you?  Well that changes things!  Of course I'll help you.  Fizzle and his brother are two of the few people who don't want me dead!$B$BSo Fizzle wants to make pistons, eh?  Pistons strong enough to take whatever stresses he has planned, and if I know Fizzle, then this new car of his is a volcano on wheels!"
+      },
       "summary": "Bring Fizzle's Letter to Martek the Exiled in the Badlands.",
       "title": "Martek the Exiled",
       "translationMetadata": {
@@ -89,6 +180,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -106,6 +215,11 @@
     },
     "esES": {
       "description": "Estoy trabajando en un nuevo motor que hará que el coche corra como el viento. ¡Podrá incluso volar, lo sé! Lo único que tengo que hacer es crear unos pistones que puedan aguantar una presión realmente alta. ¡Todos mis ensayos fueron un fracaso porque no consigo que los pistones sean lo suficientemente resistentes!\n\nAunque hay alguien que puede que sepa cómo conseguirlo.\n\nSu nombre es Martek el Exiliado. Es un gran herrero y sabe más sobre metales que ningún otro. Llévale esta carta, ¡estoy seguro de que nos puede ayudar!\n\nAunque está muy, muy lejos, en las Tierras Inhóspitas de Azeroth, en un campamento con un goblin.\n\n¡Ve y encuéntralo!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Genial, me has encontrado. Bien por ti.\n\n¿Vienes por el hacha que le hice a Gath'Ilzogg? ¿O acaso vienes a reclamar el honor de la duquesa Pamay?\n\nEn realidad, no me interesan tus motivos. Así que si estás aquí para pelear, acabemos cuanto antes...",
+        "a955931017ce0f183771": "Estoy trabajando en un nuevo motor que hará que el coche corra como el viento. ¡Podrá incluso volar, lo sé! Lo único que tengo que hacer es crear unos pistones que puedan aguantar una presión realmente alta. ¡Todos mis ensayos fueron un fracaso porque no consigo que los pistones sean lo suficientemente resistentes!\n\nAunque hay alguien que puede que sepa cómo conseguirlo.\n\nSu nombre es Martek el Exiliado. Es un gran herrero y sabe más sobre metales que ningún otro. Llévale esta carta, ¡estoy seguro de que nos puede ayudar!\n\nAunque está muy, muy lejos, en las Tierras Inhóspitas de Azeroth, en un campamento con un goblin.\n\n¡Ve y encuéntralo!",
+        "b2b55942659f1c9883c9": "¿Te envía Fizzle? ¡Eso lo cambia todo! Pues claro que te voy a ayudar. ¡Fizzle y su hermano son de los pocos a los que no les gustaría verme muerto!\n\nAsí que Fizzle quiere unos pistones, ¿verdad? ¿Unos que aguanten bastante presión? Conociendo a Fizzle, ¡seguro que su nuevo coche será un volcán con ruedas!"
+      },
       "summary": "Llévale la carta de Fizzle Pernolatón a Martek el Exiliado, que está en las Tierras Inhóspitas.",
       "title": "Martek el Exiliado",
       "translationMetadata": {
@@ -114,6 +228,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -130,6 +262,11 @@
     },
     "esMX": {
       "description": "Estoy trabajando en un nuevo motor que hará que el coche corra como el viento. ¡Podrá incluso volar, lo sé! Lo único que tengo que hacer es crear unos pistones que puedan aguantar una presión realmente alta. ¡Todos mis ensayos fueron un fracaso porque no consigo que los pistones sean lo suficientemente resistentes!\n\nAunque hay alguien que puede que sepa cómo conseguirlo.\n\nSu nombre es Martek el Exiliado. Es un gran herrero y sabe más sobre metales que ningún otro. Llévale esta carta, ¡seguro que nos puede ayudar!\n\nAunque está muy, muy lejos, en las Tierras Inhóspitas de Azeroth, en un campamento con un goblin.\n\n¡Ve y encuéntralo!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Genial, me has encontrado. Bien por ti.\n\n¿Vienes por el hacha que le hice a Gath'Ilzogg? ¿O acaso vienes a reclamar el honor de la duquesa Pamay?\n\nEn realidad, no me interesan tus motivos. Así que si estás aquí para pelear, acabemos cuanto antes...",
+        "a955931017ce0f183771": "Estoy trabajando en un nuevo motor que hará que el coche corra como el viento. ¡Podrá incluso volar, lo sé! Lo único que tengo que hacer es crear unos pistones que puedan aguantar una presión realmente alta. ¡Todos mis ensayos fueron un fracaso porque no consigo que los pistones sean lo suficientemente resistentes!\n\nAunque hay alguien que puede que sepa cómo conseguirlo.\n\nSu nombre es Martek el Exiliado. Es un gran herrero y sabe más sobre metales que ningún otro. Llévale esta carta, ¡seguro que nos puede ayudar!\n\nAunque está muy, muy lejos, en las Tierras Inhóspitas de Azeroth, en un campamento con un goblin.\n\n¡Ve y encuéntralo!",
+        "b2b55942659f1c9883c9": "¿Te envía Fizzle? ¡Eso lo cambia todo! Pues claro que te voy a ayudar. ¡Fizzle y su hermano son de los pocos a los que no les gustaría verme muerto!\n\nAsí que Fizzle quiere unos pistones, ¿verdad? ¿Unos que aguanten bastante presión? Conociendo a Fizzle, ¡seguro que su nuevo coche será un volcán con ruedas!"
+      },
       "summary": "Llévale la carta de Fizzle Pernolatón a Martek el Exiliado, que está en las Tierras Inhóspitas.",
       "title": "Martek el Exiliado",
       "translationMetadata": {
@@ -138,6 +275,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -154,6 +309,11 @@
     },
     "frFR": {
       "description": "Je suis en train de développer un nouveau moteur. Il rendra le chariot si rapide ! Suffisamment rapide pour voler, je le sais ! J'ai juste besoin de faire des pistons qui peuvent supporter de très très grandes pressions. Tous mes essais ont échoué, car je n'arrive pas à faire des pistons suffisamment forts !\n\nMais il y a quelqu'un qui pourrait m’aider.\n\nSon nom est Martek l'Exilé. C'est un grand forgeron et il en connaît plus sur les métaux que n'importe qui d'autre. Apportez-lui cette lettre, je sais qu'il peut m'aider !\n\nMais il est très très loin. En Azeroth, dans les Terres ingrates, dans un camp, avec un gobelin !\n\nTrouvez-le !",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Bien, vous m'avez trouvé. Un bon point pour vous. \n \n Êtes-vous là pour cette hache que j'ai faite pour Gath'Ilzogg ? Ou bien est-ce pour sauver l'honneur de la duchesse Parmay ?\n \n En fait, je me fiche de savoir pour quelle raison vous êtes là. Si vous êtes là pour vous battre, eh bien finissons-en !",
+        "a955931017ce0f183771": "Je suis en train de développer un nouveau moteur. Il rendra le chariot si rapide ! Suffisamment rapide pour voler, je le sais ! J'ai juste besoin de faire des pistons qui peuvent supporter de très très grandes pressions. Tous mes essais ont échoué, car je n'arrive pas à faire des pistons suffisamment forts !\n\nMais il y a quelqu'un qui pourrait m’aider.\n\nSon nom est Martek l'Exilé. C'est un grand forgeron et il en connaît plus sur les métaux que n'importe qui d'autre. Apportez-lui cette lettre, je sais qu'il peut m'aider !\n\nMais il est très très loin. En Azeroth, dans les Terres ingrates, dans un camp, avec un gobelin !\n\nTrouvez-le !",
+        "b2b55942659f1c9883c9": "Fizzle vous a envoyé ? Eh bien ça change tout ! Bien sûr que je vais vous aider. Fizzle et son frère font partie des rares personnes qui ne veulent pas ma mort. \n \n Ainsi, Fizzle veut faire des pistons, hein ? Des pistons suffisamment forts pour résister aux pressions qu'il a prévues, et si je connais bien Fizzle, alors ce nouveau chariot doit être un volcan à roulettes. "
+      },
       "summary": "Apporter la Lettre de Fizzle à Martek l'Exilé dans les Terres ingrates.",
       "title": "Martek l'Exilé",
       "translationMetadata": {
@@ -162,6 +322,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -178,6 +356,11 @@
     },
     "hrHR": {
       "description": "Razvijam novi motor zbog kojeg će automobil juriti! Toliko brzo da će letjeti, znam to! Samo trebam napraviti klipove koji mogu izdržati vrlo, vrlo veliko opterećenje. Svi su moji pokusi propali jer ne mogu napraviti dovoljno tvrde klipove!\n\nAli postoji netko tko možda zna kako.\n\nZove se Martek Prognani. On je veliki kovač i zna o metalu više nego itko. Odnesi mu ovo pismo, znam da može pomoći!\n\nAli on je daleko, daleko, u Azerothu, u Badlandsu, u logoru, s goblinom!\n\nPronađi ga!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Dakle, pronašao si me. Dobro za tebe.$B$BJesi li ovdje zbog sjekire koju sam napravio za Gath’Ilzogga? Ili da vratiš čast vojvotkinji Pamay?$B$BZapravo me nije briga. Ako se želiš boriti, završimo s tim...",
+        "a955931017ce0f183771": "Razvijam novi motor koji će auto učiniti tako brzim! Dovoljno brzim da leti, znam to! Samo moram napraviti klipove koji mogu izdržati vrlo, vrlo veliko opterećenje. Svi su pokušaji propali jer ne mogu napraviti dovoljno čvrste klipove!$B$BAli netko bi mogao znati kako.$B$BZove se Prognani Martek. Velik je kovač i zna o metalu više od ikoga. Odnesi mu ovo pismo, znam da može pomoći!$B$BAli daleko je, jako daleko — u Azerothu, u Badlandsu, u logoru, s goblinom!$B$BPronađi ga!",
+        "b2b55942659f1c9883c9": "Fizzle te poslao? To mijenja stvari! Naravno da ću pomoći. Fizzle i njegov brat među rijetkima su koji me ne žele mrtvog!$B$BDakle, Fizzle želi napraviti klipove? Dovoljno snažne da izdrže sve što planira, a poznajući Fizzlea, njegov novi auto je vulkan na kotačima!"
+      },
       "summary": "Donesi Fizzleovo pismo Marteku Prognanom u Badlandsu.",
       "title": "Martek Prognani",
       "translationMetadata": {
@@ -187,6 +370,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e8aaa5e311ac7bfda508baeb30c06e94e3cfbe42ba2d4a5859bb1c71f5a7ee3e"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -205,6 +403,11 @@
     },
     "itIT": {
       "description": "Sto sviluppando un nuovo motore che farà andare l'auto velocissima! Abbastanza veloce da volare, lo so! Devo solo creare pistoni che sopportino sollecitazioni molto, molto forti. Tutte le mie prove sono fallite perché non riesco a fare pistoni abbastanza duri!\n\nMa c'è qualcuno che potrebbe sapere come fare.\n\nSi chiama Martek l'Esiliato. È un grande fabbro e conosce i metalli meglio di chiunque altro. Portagli questa lettera, so che può aiutarmi!\n\nMa è molto, molto lontano: su Azeroth, nelle Badlands, in un accampamento, con un goblin!\n\nTrovalo!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Be', mi hai trovato. Buon per te.\n\nSei qui per quell'ascia che ho fatto per Gath'Ilzogg? O sei qui a riscattare l'onore della Duchessa Pamay?\n\nA dire il vero non m'importa quale delle due. Se sei qui per combattere, allora facciamola finita...",
+        "a955931017ce0f183771": "Sto sviluppando un motore nuovo che farà andare l'auto velocissima! Abbastanza veloce da volare, lo so! Mi servono solo pistoni che reggano sforzi molto molto pesanti. Tutte le mie prove sono fallite perché non riesco a fare pistoni abbastanza duri!\n\nMa c'è qualcuno che forse sa come si fa.\n\nSi chiama Martek l'Esiliato. È un grande fabbro e di metalli ne sa più di chiunque altro. Portagli questa lettera, so che può aiutarci!\n\nMa è lontano lontano — ad Azeroth, nei Badlands, in un accampamento, con un goblin!\n\nTrovalo!",
+        "b2b55942659f1c9883c9": "Ti manda Fizzle? Be', allora la cosa cambia! Certo che ti aiuto. Fizzle e suo fratello sono tra le poche persone che non mi vogliono morto!\n\nQuindi Fizzle vuole fare dei pistoni, eh? Pistoni abbastanza robusti da reggere qualunque sforzo abbia in mente, e se conosco Fizzle questa sua nuova auto è un vulcano su ruote!"
+      },
       "summary": "Porta la lettera di Fizzle a Martek the Exiled nelle Badlands.",
       "title": "Martek l'Esiliato",
       "translationMetadata": {
@@ -214,6 +417,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e8aaa5e311ac7bfda508baeb30c06e94e3cfbe42ba2d4a5859bb1c71f5a7ee3e"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -232,6 +453,11 @@
     },
     "koKR": {
       "description": "지금 엄청난 속도를 낼 수 있는 새로운 자동차 엔진을 개발하는 중이오. 내가 장담하는데 분명히 자동차가 날아다닐 정도로 빨라질 거요! 그러려면 엄청나게 강한 압력을 견딜 수 있는 피스톤을 만들어야 하는데... 지금까지의 피스톤은 강도가 충분하지 않아서 다 실패하고 말았소!\n\n이 문제를 해결할 수 있는 자를 알고 있소.\n\n망명자 마르텍이라는 친구인데, 금속에 대한 지식이라면 누구도 따라 올 수 없는 유능한 대장장이라오. 그라면 충분히 우릴 도울 수 있을 테니 그에게 이 편지를 전해 주시오!\n\n그자는 아주 아주 먼 동부 왕국의 황야의 땅이라는 곳에 있는 야영지에서 고블린들과 함께 살고 있다오.\n\n그를 찾아봐 주시오!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "흠, 용케도 날 찾아냈군.\n\n가스일조그에게 주려고 만든 도끼를 구하러 온건가? 아니면 공작부인 파메이의 명예를 되찾으러 온건가?\n\n사실, 무슨 일로 왔든 나야 상관없지만... 싸우러 온건가? 그럼 바로 시작하지!",
+        "a955931017ce0f183771": "지금 엄청난 속도를 낼 수 있는 새로운 자동차 엔진을 개발하는 중이오. 내가 장담하는데 분명히 자동차가 날아다닐 정도로 빨라질 거요! 그러려면 엄청나게 강한 압력을 견딜 수 있는 피스톤을 만들어야 하는데... 지금까지의 피스톤은 강도가 충분하지 않아서 다 실패하고 말았소!\n\n이 문제를 해결할 수 있는 자를 알고 있소.\n\n망명자 마르텍이라는 친구인데, 금속에 대한 지식이라면 누구도 따라 올 수 없는 유능한 대장장이라오. 그라면 충분히 우릴 도울 수 있을 테니 그에게 이 편지를 전해 주시오!\n\n그자는 아주 아주 먼 동부 왕국의 황야의 땅이라는 곳에 있는 야영지에서 고블린들과 함께 살고 있다오.\n\n그를 찾아봐 주시오!",
+        "b2b55942659f1c9883c9": "피즐이 보냈다고? 그렇다면 얘기가 달라지지. 기꺼이 도움을 드리겠소이다! 암, 피즐과 그의 동생은 내가 죽지 않기를 바라는 몇 안 되는 이들 중 하나니까...\n\n음... 그러니까 지금 피즐이 피스톤을 만들고 싶어한다는 얘기요? 그 어떤 압력도 견딜 만큼 강력한 피스톤이라... 피즐이라면 마치 바퀴에 불이 날 정도로 어마어마한 힘을 내뿜는 차를 만들어 낼 수 있을 거요."
+      },
       "summary": "황야의 땅에 있는 망명자 마르텍에게 피즐의 편지를 가져가야 합니다.",
       "title": "망명자 마르텍",
       "translationMetadata": {
@@ -240,6 +466,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -256,6 +500,11 @@
     },
     "plPL": {
       "description": "Opracowuję nowy silnik, dzięki któremu samochód będzie niesamowicie szybki! Dość szybki, by latać, wiem to! Muszę tylko zrobić tłoki znoszące ogromne obciążenia. Wszystkie próby zawiodły, bo nie potrafię zrobić dość twardych tłoków!\n\nAle ktoś może wiedzieć jak.\n\nNazywa się Martek Wygnaniec. Jest wielkim kowalem i o metalu wie więcej niż ktokolwiek. Zanieś mu list, na pewno pomoże!\n\nJest jednak bardzo daleko, w Azeroth, w Badlands, w obozie, z goblinem!\n\nZnajdź go!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "No cóż, znalazłeś mnie. Gratuluję.$B$BPrzyszedłeś po topór, który zrobiłem dla Gath’Ilzogga? A może przywrócić honor księżnej Pamay?$B$BWłaściwie wszystko mi jedno. Jeśli chcesz walczyć, miejmy to za sobą...",
+        "a955931017ce0f183771": "Pracuję nad nowym silnikiem, dzięki któremu samochód pojedzie tak szybko! Wiem, że dość szybko, by latać! Muszę tylko zrobić tłoki, które wytrzymają ogromne obciążenia. Wszystkie próby się nie udały, bo nie potrafię zrobić dość twardych tłoków!$B$BAle ktoś może wiedzieć jak.$B$BNazywa się Martek Wygnaniec. Jest wielkim kowalem i zna się na metalu lepiej niż ktokolwiek. Zanieś mu ten list, wiem, że pomoże!$B$BAle jest daleko, bardzo daleko — w Azeroth, w Badlands, w obozie, z goblinem!$B$BZnajdź go!",
+        "b2b55942659f1c9883c9": "Fizzle cię przysłał? To zmienia postać rzeczy! Oczywiście pomogę. Fizzle i jego brat są jednymi z niewielu, którzy nie chcą mojej śmierci!$B$BA więc Fizzle chce zrobić tłoki? Dość mocne, by wytrzymać wszystko, co zaplanował, a jeśli go znam, jego nowe auto to wulkan na kołach!"
+      },
       "summary": "Przynieś list Fizzle'a Martekowi Wygnańcowi w Badlands.",
       "title": "Martek Wygnaniec",
       "translationMetadata": {
@@ -265,6 +514,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e8aaa5e311ac7bfda508baeb30c06e94e3cfbe42ba2d4a5859bb1c71f5a7ee3e"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -283,6 +547,11 @@
     },
     "ptBR": {
       "description": "Estou desenvolvendo um novo motor que vai fazer o carro andar tão rápido, mas tão rápido, que vai decolar, pode apostar! Só preciso de uns pistões que aguentem um tranco muito pesado. Todas as minhas tentativas fracassaram porque não consigo fazer pistões tão resistentes!\n\nMas acho que sei de alguém que consegue: Martek, o Exilado.\n\nEle é um gênio inigualável do trabalho com metais. Entregue essa carta para ele, sei que ele pode ajudar!\n\nO problema é que ele mora muito, muito longe. Em Azeroth, nos Ermos, num acampamento com um goblin!\n\nEncontre-o!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Ora, ora, você me encontrou. Bom pra você.\n\nVeio aqui por causa do machado que fiz pro Gath'Ilzogg? Ou para defender a honra da Duquesa Pamaia?\n\nQuer saber, não importa. Se veio aqui pra lutar, então vamos logo com isso...",
+        "a955931017ce0f183771": "Estou desenvolvendo um novo motor que vai fazer o carro andar tão rápido, mas tão rápido, que vai decolar, pode apostar! Só preciso de uns pistões que aguentem um tranco muito pesado. Todas as minhas tentativas fracassaram porque não consigo fazer pistões tão resistentes!\n\nMas acho que sei de alguém que consegue: Martek, o Exilado.\n\nEle é um gênio inigualável do trabalho com metais. Entregue essa carta para ele, sei que ele pode ajudar!\n\nO problema é que ele mora muito, muito longe. Em Azeroth, nos Ermos, num acampamento com um goblin!\n\nEncontre-o!",
+        "b2b55942659f1c9883c9": "Xabu te mandou? Ora, por que não disse logo? Claro que ajudo. Xabu e o irmão dele são umas das poucas pessoas que não querem a minha cabeça!\n\nEntão o Xabu quer uns pistões, hein? Pistões resistentes o bastante para aguentar o tranco do que ele está projetando. Se bem conheço o Xabu, esse carro novo teve ser um vulcão sobre rodas!"
+      },
       "summary": "Entregue a carta do Xabu para Martek, o Exilado, nos Ermos.",
       "title": "Martek, o Exilado",
       "translationMetadata": {
@@ -291,6 +560,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -307,6 +594,11 @@
     },
     "ruRU": {
       "description": "Я разрабатываю новый двигатель, с которым мой болид помчится быстрее ветра! Помчится так, что даже сможет взлететь! Осталось мне сделать поршни, которые выдержат очень, очень высокое давление. Все мои испытания провалились потому, что я не смог сделать достаточно крепких поршней!\n\nНо есть тот, кто может мне помочь.\n\nЕго зовут Мартек Изгой. Он отличный кузнец и знает о металлах больше других. Вот, отвези ему это письмо, я знаю, он поможет мне!\n\nПравда, живет он далеко – в Азероте, в Бесплодных землях, в  одном лагере с гоблином!\n\nНайди его!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Тебе удалось добыть соленый хвостовой плавник? Если мне удастся защитить болид, то эти гонки не будут такими долгими.",
+        "a955931017ce0f183771": "Я разрабатываю новый двигатель, с которым мой болид помчится быстрее ветра! Помчится так, что даже сможет взлететь! Осталось мне сделать поршни, которые выдержат очень, очень высокое давление. Все мои испытания провалились потому, что я не смог сделать достаточно крепких поршней!\n\nНо есть тот, кто может мне помочь.\n\nЕго зовут Мартек Изгой. Он отличный кузнец и знает о металлах больше других. Вот, отвези ему это письмо, я знаю, он поможет мне!\n\nПравда, живет он далеко – в Азероте, в Бесплодных землях, в  одном лагере с гоблином!\n\nНайди его!",
+        "b2b55942659f1c9883c9": "Спасибо, $N! После того как я измельчу их и смешаю с другими ингредиентами, компонент будет готов. После этого, наш болид вряд ли пострадает от собственной скорости."
+      },
       "summary": "Отнесите письмо Пшикса Мартеку Изгою в Бесплодные земли.",
       "title": "Мартек Изгой",
       "translationMetadata": {
@@ -315,6 +607,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -331,6 +641,11 @@
     },
     "svSE": {
       "description": "Jag utvecklar en motor som gör bilen så snabb! Snabb nog att flyga, det vet jag! Jag behöver bara kolvar som tål mycket, mycket hård belastning. Alla försök har misslyckats eftersom kolvarna inte blir hårda nog!\n\nMen någon kanske vet hur.\n\nMartek the Exiled heter han, en stor smed som vet mer om metall än någon annan. Ge honom brevet. Han kan hjälpa!\n\nMen han är långt, långt borta, i Azeroth, i Badlands, i ett läger med en goblin!\n\nHitta honom!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Nå, du hittade mig. Bra för dig.$B$BÄr du här för yxan jag gjorde åt Gath’Ilzogg? Eller för att återupprätta hertiginna Pamays ära?$B$BEgentligen bryr jag mig inte. Om du vill slåss, låt oss få det överstökat...",
+        "a955931017ce0f183771": "Jag utvecklar en ny motor som ska få bilen att gå så fort! Fort nog att flyga, det vet jag! Jag behöver bara göra kolvar som klarar mycket, mycket stor belastning. Alla mina försök har misslyckats eftersom jag inte kan göra dem hårda nog!$B$BMen det finns någon som kanske vet hur.$B$BHan heter Martek den landsförvisade. Han är en stor smed och vet mer om metall än någon annan. Ta detta brev till honom, jag vet att han kan hjälpa!$B$BMen han är långt, långt borta — i Azeroth, i Badlands, i ett läger, med en goblin!$B$BHitta honom!",
+        "b2b55942659f1c9883c9": "Fizzle skickade dig? Då ändras saken! Självklart hjälper jag dig. Fizzle och hans bror är några av de få som inte vill se mig död!$B$BSå Fizzle vill göra kolvar? Starka nog att klara vad han än planerar, och om jag känner Fizzle är hans nya bil en vulkan på hjul!"
+      },
       "summary": "Ta med Fizzles brev till Martek den landsförvisade i Badlands.",
       "title": "Martek den landsförvisade",
       "translationMetadata": {
@@ -340,6 +655,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e8aaa5e311ac7bfda508baeb30c06e94e3cfbe42ba2d4a5859bb1c71f5a7ee3e"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -358,6 +688,11 @@
     },
     "trTR": {
       "description": "Arabayı çok hızlı götürecek yeni bir motor geliştiriyorum! Uçacak kadar hızlı, biliyorum! Yalnızca çok ama çok ağır baskıya dayanabilecek pistonlar yapmam gerekiyor. Bütün denemelerim başarısız oldu çünkü yeterince sert pistonlar yapamıyorum!\n\nAma nasıl yapılacağını bilebilecek biri var.\n\nAdı Martek the Exiled. Harika bir demirci ve metal hakkında herkesten çok şey biliyor. Bu mektubu ona götür; yardım edebileceğini biliyorum!\n\nAma çok ama çok uzakta; Azeroth'ta, Badlands'de, bir kampta, bir goblinle birlikte!\n\nOnu bul!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Demek beni buldun. Aferin sana.$B$BGath’Ilzogg için yaptığım balta için mi geldin? Yoksa Düşes Pamay’ın onurunu geri kazanmak için mi?$B$BAslında hangisi olduğu umurumda değil. Dövüşmeye geldiysen, bitirelim şu işi...",
+        "a955931017ce0f183771": "Arabayı çok hızlandıracak yeni bir motor geliştiriyorum! Uçacak kadar hızlı olacağını biliyorum! Sadece çok ama çok ağır yüke dayanacak pistonlar yapmalıyım. Yeterince sert piston yapamadığım için bütün denemelerim başarısız oldu!$B$BAma nasıl yapılacağını bilen biri olabilir.$B$BAdı Sürgün Martek. Harika bir demircidir ve metal hakkında herkesten çok şey bilir. Ona bu mektubu götür, yardım edebileceğini biliyorum!$B$BAma çok çok uzakta: Azeroth’ta, Badlands’te, bir kampta, bir goblinle birlikte!$B$BOnu bul!",
+        "b2b55942659f1c9883c9": "Seni Fizzle mı gönderdi? Bu işleri değiştirir! Elbette yardım edeceğim. Fizzle ve kardeşi ölmemi istemeyen az sayıdaki kişiden ikisi!$B$BDemek Fizzle piston yapmak istiyor? Planladığı her türlü yüke dayanacak kadar güçlü pistonlar; Fizzle’ı tanıyorsam yeni arabası tekerlekli bir yanardağdır!"
+      },
       "summary": "Fizzle'ın Mektubu'nu Badlands'teki Sürgün Martek'e getir.",
       "title": "Sürgün Martek",
       "translationMetadata": {
@@ -367,6 +702,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e8aaa5e311ac7bfda508baeb30c06e94e3cfbe42ba2d4a5859bb1c71f5a7ee3e"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -385,6 +735,11 @@
     },
     "ukUA": {
       "description": "Я розробляю новий двигун, який змусить їхати машину швидше! Достатньо швидко, щоб летіти, я знаю про що кажу! Мені лише потрібно зробити поршні, які зможуть витримати дуже велике навантаження. Всі мої випробування провалилися тому, що я не можу зробити поршні достатньо міцними!\n\nАле є дехто, хто може знати, як їх зробити.\n\nЙого звати Мартек Вигнанець. Він прекрасний коваль, і знає про метали більше, ніж будь-хто. Передай йому цього листа, я впевнений, що він зможе допомогти!\n\nАле він дуже далеко — в Азероті, в Безплідних краях, в таборі з гобліном!\n\nЗнайди його!",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "Отже, ти мене знайшов. Молодець.$B$BТи прийшов через сокиру, яку я зробив для Ґат’Ілзогга? Чи хочеш повернути честь герцогині Памай?$B$BНасправді мені байдуже. Якщо хочеш битися, покінчімо з цим...",
+        "a955931017ce0f183771": "Я розробляю новий двигун, який зробить автомобіль неймовірно швидким! Досить швидким, щоб літати, я знаю! Треба лише зробити поршні, які витримають дуже-дуже велике навантаження. Усі спроби провалилися, бо я не можу зробити їх досить міцними!$B$BАле є хтось, хто, можливо, знає як.$B$BЙого звуть Мартек Вигнанець. Він чудовий коваль і знає про метал більше за будь-кого. Віднеси йому цього листа, я знаю, він допоможе!$B$BАле він далеко-далеко: в Азероті, у Безплідних землях, у таборі, з гобліном!$B$BЗнайди його!",
+        "b2b55942659f1c9883c9": "Тебе послав Фіззл? Це все змінює! Звісно, допоможу. Фіззл і його брат — одні з небагатьох, хто не бажає мені смерті!$B$BОтже, Фіззл хоче зробити поршні? Досить міцні для будь-якого навантаження, яке він задумав, а знаючи Фіззла, його нова машина — це вулкан на колесах!"
+      },
       "summary": "Принесіть лист Фіззла Мартеку Вигнанцю в Безплідні краї.",
       "title": "Мартек Вигнанець",
       "translationMetadata": {
@@ -395,6 +750,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "e8aaa5e311ac7bfda508baeb30c06e94e3cfbe42ba2d4a5859bb1c71f5a7ee3e"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -415,6 +785,11 @@
     },
     "zhCN": {
       "description": "我正在研制一种新的发动机，它可以让赛车开得更快！快到飞起来！我只要有一个能承受重压的活塞就能够完成这个发动机了，但是之前所有的活塞样品试验都失败了，就因为活塞的质地不够硬！\n\n我想有人知道怎么解决这个问题。\n\n他叫流放者马特克，是个伟大的铁匠，他比任何人都更加了解金属的特性。把这封信交给他，我知道他能帮我！\n\n但他在很远的地方，在艾泽拉斯大陆上的荒芜之地，和一个地精同住在一个营地里！\n\n去找到他吧！",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "啊，你找到我了。很好。\n\n你来是为了我替加塞尔佐格所铸造的那把斧头的事情吗?还是为了夺回杜切斯·帕麦尔的荣耀?\n\n实际上，我根本不在乎是哪个原因。如果你是来打架的，那就放马过来吧……",
+        "a955931017ce0f183771": "我正在研制一种新的发动机，它可以让赛车开得更快！快到飞起来！我只要有一个能承受重压的活塞就能够完成这个发动机了，但是之前所有的活塞样品试验都失败了，就因为活塞的质地不够硬！\n\n我想有人知道怎么解决这个问题。\n\n他叫流放者马特克，是个伟大的铁匠，他比任何人都更加了解金属的特性。把这封信交给他，我知道他能帮我！\n\n但他在很远的地方，在艾泽拉斯大陆上的荒芜之地，和一个地精同住在一个营地里！\n\n去找到他吧！",
+        "b2b55942659f1c9883c9": "菲兹尔派你来的?你早说不就结了嘛!我当然会帮你。菲兹尔和他的兄弟是少数几个不会想置我於死地的人!\n\n所以菲兹尔想要活塞?要坚固到足以承受他预计的任何压力?以我对菲兹尔的了解，他的这部新车肯定会跟火箭一样快。\n"
+      },
       "summary": "把菲兹尔·铜栓的信带给荒芜之地的流放者马特克。",
       "title": "流放者马特克",
       "translationMetadata": {
@@ -423,6 +798,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -439,6 +832,11 @@
     },
     "zhTW": {
       "description": "我正在研製一種新的引擎，它可以讓車子開得非常快！快到足以飛起來！我只要再做出能承受非常非常重的壓力活塞就好了，我之前所有的試做都失敗了，因為我做不出夠堅固的活塞！\n\n但是有人可能知道怎麼解決這個問題。\n\n他的名字叫做流放者馬特克，是個偉大的鐵匠，他比任何人都更加瞭解金屬的特性。把這封信交給他，我知道他能幫我！\n\n但他在很遠很遠的地方，在艾澤拉斯大陸上的荒蕪之地，和一個哥布林同住在一個營地裡！\n\n去找他吧！",
+      "dialogue": {
+        "a3e3a7ffec907fa432e2": "啊，你找到我了。很好。\n\n你來是爲了我替加塞爾佐格所鑄造的那把斧頭的事情嗎?還是爲了奪回杜切斯.帕麥爾的榮耀?\n\n實際上，我根本不在乎是哪個原因。如果你是來打架的，那就放馬過來吧……",
+        "a955931017ce0f183771": "我正在研製一種新的引擎，它可以讓車子開得非常快！快到足以飛起來！我只要再做出能承受非常非常重的壓力活塞就好了，我之前所有的試做都失敗了，因為我做不出夠堅固的活塞！\n\n但是有人可能知道怎麼解決這個問題。\n\n他的名字叫做流放者馬特克，是個偉大的鐵匠，他比任何人都更加瞭解金屬的特性。把這封信交給他，我知道他能幫我！\n\n但他在很遠很遠的地方，在艾澤拉斯大陸上的荒蕪之地，和一個哥布林同住在一個營地裡！\n\n去找他吧！",
+        "b2b55942659f1c9883c9": "菲茲爾派你來的?你早說不就結了嘛!我當然會幫你。菲茲爾和他的兄弟是少數幾個不會想置我於死地的人!\n\n所以菲茲爾想要活塞?要堅固到足以承受他預計的任何壓力?以我對菲茲爾的瞭解，他的這部新車肯定會跟火箭一樣快。"
+      },
       "summary": "把菲茲爾·銅栓的信帶給荒蕪之地的流放者馬特克。",
       "title": "流放者馬特克",
       "translationMetadata": {
@@ -447,6 +845,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.a3e3a7ffec907fa432e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a955931017ce0f183771": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.b2b55942659f1c9883c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

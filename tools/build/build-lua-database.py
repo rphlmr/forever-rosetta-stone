@@ -16,7 +16,7 @@ from tools.catalogs.catalog_storage import CATALOGS, load_catalogs
 from tools.build.database_storage import write_localized_records, write_pages
 from tools.build.database_packs import write_pack
 from tools.build.runtime_catalog import (EXCLUDED_QUEST_STATUSES, decode_client_escapes, project_localized_record,
-                                         project_tooltip_rules, equipment_requirement_sources)
+                                         project_tooltip_rules, equipment_requirement_sources, project_dialogue)
 from tools.catalogs.english_scope import has_english_text, identity_field
 
 
@@ -96,7 +96,7 @@ def normalize_client_literal(text):
 def export_database(documents, output, dev_debug=False, globalstring_keys=None):
     """Emit a small manifest and grouped load-on-demand database addons."""
     for kind in CATALOG_FILES:
-        if kind in ('races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings') and kind not in documents:
+        if kind in ('races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'itemenchantments', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings') and kind not in documents:
             continue
         if documents[kind].get('schemaVersion') != 1:
             raise ValueError('Expected schema 1 catalog: ' + kind)
@@ -112,7 +112,7 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
     combined.setdefault('bookpages', {})
     combined.setdefault('totemcategories', {})
     combined.setdefault('shapeshiftforms', {})
-    for kind in ('itemlimitcategories', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings'):
+    for kind in ('itemlimitcategories', 'itemenchantments', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings'):
         combined.setdefault(kind, {})
     if globalstring_keys is not None:
         combined['globalstrings'] = {entity_id: entity for entity_id, entity in combined['globalstrings'].items()
@@ -129,7 +129,7 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
     digest = hashlib.sha256(b'format8')
 
     for kind in CATALOG_FILES:
-        if kind in ('races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings') and kind not in documents:
+        if kind in ('races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'itemenchantments', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings') and kind not in documents:
             continue
         document = documents[kind]
         if kind == 'globalstrings' and globalstring_keys is not None:
@@ -165,8 +165,10 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
             raise ValueError('Expected positive decimal entity IDs in ' + kind)
 
         locale_records = {locale: {} for locale in locales}
+        dialogue_records = {locale: {} for locale in locales} if kind in ('quests', 'npcs') else None
         rule_records = {}
         global_keys = set()
+        gossip_icons = set()
 
         for entity_id in ids:
             entity = catalog[str(entity_id)]
@@ -182,6 +184,14 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
             rules = project_tooltip_rules(entity) if kind in ('items', 'spells') else {}
             if kind == 'spells' and entity_id in equipment_sources:
                 rules['equipmentRequirementSources'] = equipment_sources[entity_id]
+            if kind == 'gossipoptions' and 'sharedIcon' in entity:
+                icon = entity['sharedIcon']
+                if type(icon) is not int or icon <= 0 or icon in gossip_icons:
+                    raise ValueError(f'Gossip option {entity_id} has an invalid or duplicate shared icon')
+                gossip_icons.add(icon)
+                rule_records[entity_id] = {'name': str(icon), 'hasAITranslation': False}
+            if kind == 'itemenchantments' and entity.get('duration', 0) > 0:
+                rule_records[entity_id] = {'name': 'temporary', 'hasAITranslation': False}
             if kind == 'sharedstrings' and 'usage' in entity:
                 usage = entity.get('usage')
                 if not isinstance(usage, str) or not re.fullmatch(r'[a-z][A-Za-z]+', usage):
@@ -200,6 +210,8 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
                 rule_records[entity_id] = {'details': rules, 'hasAITranslation': False}
 
             for locale in entity['locales']:
+                if dialogue_records is not None and entity['locales'][locale].get('dialogue'):
+                    dialogue_records[locale][entity_id] = project_dialogue(kind, entity_id, entity, locale)
                 localized = project_localized_record(kind, entity_id, entity, locale, combined['items'], combined['npcs'])
 
                 if localized is None:
@@ -232,6 +244,10 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
                         }
 
             write_localized_records(encoder, packs['ForeverRosettaStone_Data_' + locale], kind, locale, records)
+            if dialogue_records is not None:
+                dialogue_kind = 'questdialogue' if kind == 'quests' else 'npcdialogue'
+                write_localized_records(encoder, packs['ForeverRosettaStone_Data_' + locale],
+                                        dialogue_kind, locale, dialogue_records[locale])
 
         if rule_records:
             write_localized_records(encoder, packs['ForeverRosettaStone_Rules'], kind, 'shared', rule_records)

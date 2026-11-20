@@ -1,8 +1,36 @@
 {
   "areaId": 28,
+  "dialogueContexts": {
+    "8e3d86c21cd80030f1de": {
+      "lineId": "q:5097:progress",
+      "npcId": 10838,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "9ceac6d0ef3d54cac682": {
+      "lineId": "q:5097:complete",
+      "npcId": 10838,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "a2cfe21a815e6a5be6c4": {
+      "lineId": "q:5097:accept",
+      "npcId": 10838,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Pomocí magického zařízení zvaného signální pochodeň můžeme označit cíle podle našeho výběru pro budoucí akce našich jednotek. Z toho důvodu si myslíme, že Pohroma používá strážní věže Andorhalu k řízení pohybu svých vojsk.\n\nTvůj úkol: prolom obranu Andorhalu a umísti majáky na všech čtyřech strážních věžích. Maják umístíš, když budeš stát ve dveřích věže; pak věž sám označí. Signální pochodeň má jen pět použití, tak jimi nemrhej!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Jakmile budou věže označeny, stanou se prioritními cíli našeho útoku na Andorhal. Mám podezření, že jakmile věže zneškodníme, objeví se hlavní hrozba Andorhalu. Od té chvíle nás čeká přímý boj o kontrolu nad městem!$B$BVrátil ses ohlásit úspěch, že? Nezapomeň také na majákovou pochodeň; musíme mít svůj materiál pod kontrolou.",
+        "9ceac6d0ef3d54cac682": "Moji kněží hlásí, že naše sledovače majáků zachycují mimořádně silné signály na všech čtyřech věžích! Troufám si říct, že jsi další misi provedl s naprostým úspěchem! Opět dobře zahráno, $N!$B$BVěže jsou označeny a naše přípravy k útoku jsou hotové. Nastal čas zaútočit na Pohromu!",
+        "a2cfe21a815e6a5be6c4": "Pomocí magického zařízení známého jako majáková pochodeň můžeme označit vybrané cíle pro budoucí akce našich vojsk. Domníváme se, že Pohroma používá strážní věže Andorhalu k řízení pohybu svých jednotek.$B$BTvá mise: pronikni andorhalskou obranou a umísti majáky u všech čtyř strážních věží. Abys maják umístil, musíš stát ve dveřích každé věže; poté věž označí. Majáková pochodeň má jen pět nábojů, tak je používej rozumně!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -34,6 +62,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0f2a432da59975b8b679c9f62545daef086222edddec8e4dff61622f5a889573"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -73,6 +116,11 @@
     },
     "daDK": {
       "description": "Ved hjælp af en magisk enhed kaldet en signalfakkel kan vi markere mål efter eget valg for vores troppers fremtidige handlinger. Vi tror, at Scourge bruger Andorhals vagttårne til at styre deres troppers bevægelser.\n\nDin mission: Bryd gennem Andorhals forsvar og anbring signaler ved alle fire vagttårne. Du skal stå i døråbningen til hvert tårn for at anbringe signalet; det vil derefter markere tårnet. Der er kun fem ladninger i signalfaklen, så brug dem klogt!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Når tårnene er markeret, bliver de højt prioriterede mål for vores angreb på Andorhal. Jeg formoder, at når vi har neutraliseret tårnene, vil Andorhals største trussel vise sig. Derefter får vi en direkte kamp om kontrollen over byen!$B$BDu er vendt tilbage for at melde om succes, ikke? Glem heller ikke signalfaklen; vi må holde styr på vores materiel.",
+        "9ceac6d0ef3d54cac682": "Mine præster rapporterer, at vores signalsøgere opfanger ekstremt stærke signaler fra alle fire tårne! Jeg vover at sige, at du har udført endnu en mission med fuldstændig succes! Godt spillet igen, $N!$B$BMed tårnene markeret er vores forberedelser til angrebet på plads. Tiden er kommet til at tage kampen op mod Svøben!",
+        "a2cfe21a815e6a5be6c4": "Ved hjælp af en magisk genstand kendt som en signalfakkel kan vi markere udvalgte mål for vores troppers fremtidige aktioner. Vi mener, at Svøben bruger Andorhals vagttårne til at styre deres troppers bevægelser.$B$BDin mission: Bryd gennem Andorhals forsvar og placer signaler ved alle fire vagttårne. Du skal stå i hver tårndør for at placere signalet, som derefter markerer tårnet. Signalfaklen har kun fem ladninger, så brug dem klogt!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -104,6 +152,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0f2a432da59975b8b679c9f62545daef086222edddec8e4dff61622f5a889573"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -142,6 +205,11 @@
     },
     "deDE": {
       "description": "Durch die Verwendung eines magischen Gegenstandes, einer Signalfackel, können wir Ziele unserer Wahl für künftige Aktionen durch unsere Truppen markieren. Was das angeht, glauben wir, dass die Geißel die Wachtürme von Andorhal nutzt, um die Bewegungen ihrer Truppen zu kontrollieren.\n\nEure Mission: Durchbrecht die Verteidigung von Andorhal, um Signalfackeln an allen vier Wachtürmen zu platzieren. Ihr müsst im Eingang eines jeden Turmes stehen, um das Signal zu platzieren; es wird dann den Turm markieren. Die Signalfackel hat nur fünf Ladungen, nutzt sie also weise!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Wenn die Türme markiert sind, werden sie zu Zielen der obersten Priorität für unseren Angriff auf Andorhal. Ich vermute, dass die Hauptbedrohung von Andorhal auftauchen wird, wenn wir die Türme neutralisiert haben. Von dem Punkt an gibt es einen offenen Kampf um die Kontrolle der Stadt!\n \n Ihr seid zurück, um von Eurem Erfolg zu berichten, ja? Vergesst nicht die Signalfackel, wir müssen die Kontrolle über unser Material bewahren. ",
+        "9ceac6d0ef3d54cac682": "Meine Priester melden, dass unsere Signalsucher extrem starke Signale von allen vier Türmen empfangen! Ich wage zu sagen, dass Ihr eine weitere Mission mit umfassendem und absolutem Erfolg ausgeführt habt! Erneut gut gespielt, $N!\n \n Mit der Markierung der Türme sind unsere Angriffsvorbereitungen jetzt abgeschlossen. Die Zeit ist gekommen, um den Kampf zur Geißel zu bringen!",
+        "a2cfe21a815e6a5be6c4": "Durch die Verwendung eines magischen Gegenstandes, einer Signalfackel, können wir Ziele unserer Wahl für künftige Aktionen durch unsere Truppen markieren. Was das angeht, glauben wir, dass die Geißel die Wachtürme von Andorhal nutzt, um die Bewegungen ihrer Truppen zu kontrollieren.\n\nEure Mission: Durchbrecht die Verteidigung von Andorhal, um Signalfackeln an allen vier Wachtürmen zu platzieren. Ihr müsst im Eingang eines jeden Turmes stehen, um das Signal zu platzieren; es wird dann den Turm markieren. Die Signalfackel hat nur fünf Ladungen, nutzt sie also weise!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +240,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -212,6 +298,11 @@
     },
     "enUS": {
       "description": "Through the use of a magical device known as a beacon torch, we can mark targets of our choosing for future actions by our troops.  To that end, we think the Scourge are using Andorhal's watchtowers as a means to control their troop movements.\n\nYour mission: breach Andorhal's defenses to plant beacons at all four watchtowers.  You'll need to be in the doorway of each tower to plant the beacon; it will then proceed to mark the tower.  There are only five charges on the beacon torch, so use them wisely!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Once the towers are marked, they'll become top priority targets for our attack on Andorhal.  I suspect that once we neutralize the towers, the main threat of Andorhal will emerge.  From that point on, we'll have a straight-up fight for control of the city!$B$BYou're back to report success, yes?  Don't forget the beacon torch as well; we must maintain control of our materiel.",
+        "9ceac6d0ef3d54cac682": "My priests are reporting that our beacon trackers are picking up extremely strong signals on all four towers!  Dare I say it, but I believe you've executed another mission with complete and total success!  Well played once again, $N!$B$BWith the towers marked, our preparations for the attack are now in place.  The time has come to take the fight to the Scourge!",
+        "a2cfe21a815e6a5be6c4": "Through the use of a magical device known as a beacon torch, we can mark targets of our choosing for future actions by our troops.  To that end, we think the Scourge are using Andorhal's watchtowers as a means to control their troop movements.$B$BYour mission: breach Andorhal's defenses to plant beacons at all four watchtowers.  You'll need to be in the doorway of each tower to plant the beacon; it will then proceed to mark the tower.  There are only five charges on the beacon torch, so use them wisely!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -242,6 +333,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -282,6 +391,11 @@
     },
     "esES": {
       "description": "Utilizando un instrumento mágico conocido como antorcha de aviso, puedo marcar objetivos a nuestra elección para futuras acciones de nuestras tropas. Para ese fin, pensamos que la Plaga está sirviéndose de las atalayas de Andorhal para controlar sus movimientos de tropas.\n\nTu misión: rompe las defensas de Andorhal y coloca antorchas en sus cuatro atalayas. Tendrás que estar en la entrada de las torres para colocar la antorcha, solo entonces quedarán marcadas. La antorcha de aviso solo tiene cinco cargas, así que úsalas con prudencia.",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Una vez que las torres estén marcadas, se convertirán en objetivos prioritarios para nuestro ataque a Andorhal.  Sospecho que una vez que neutralicemos las torres, surgirá la principal amenaza de Andorhal.  A partir de ese momento, ¡tendremos una lucha directa por el control de la ciudad!\n\n Estás de vuelta para informar el éxito, ¿sí?  No olvides la linterna de la baliza también;  debemos mantener el control de nuestro material.",
+        "9ceac6d0ef3d54cac682": "¡Mis sacerdotes informan de que nuestros rastreadores están recibiendo señales muy fuertes de las cuatro torres! No sé si debería decirlo, pero creo que has realizado otra misión con total y completo éxito. ¡Buena jugada de nuevo, $n!\n\nCon las torres marcadas, podemos pasar a los preparativos para el ataque. ¡Ha llegado el momento de combatir a la Plaga!",
+        "a2cfe21a815e6a5be6c4": "Utilizando un instrumento mágico conocido como antorcha de aviso, puedo marcar objetivos a nuestra elección para futuras acciones de nuestras tropas. Para ese fin, pensamos que la Plaga está sirviéndose de las atalayas de Andorhal para controlar sus movimientos de tropas.\n\nTu misión: rompe las defensas de Andorhal y coloca antorchas en sus cuatro atalayas. Tendrás que estar en la entrada de las torres para colocar la antorcha, solo entonces quedarán marcadas. La antorcha de aviso solo tiene cinco cargas, así que úsalas con prudencia."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -312,6 +426,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -352,6 +484,11 @@
     },
     "esMX": {
       "description": "Utilizando un instrumento mágico conocido como antorcha de aviso, puedo marcar objetivos a nuestra elección para futuras acciones de nuestras tropas. Para ese fin, pensamos que la Plaga está sirviéndose de las atalayas de Andorhal para controlar sus movimientos de tropas.\n\nTu misión: rompe las defensas de Andorhal y coloca antorchas en sus cuatro atalayas. Tendrás que estar en la entrada de las atalayas para colocar la antorcha, solo entonces quedarán marcadas. La antorcha de aviso solo tiene cinco cargas, así que úsalas con prudencia.",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Una vez que las torres estén marcadas, se convertirán en objetivos de máxima prioridad para nuestro ataque a Andorhal. Sospecho que una vez que neutralicemos las torres, surgirá la principal amenaza de Andorhal. ¡A partir de ese momento, tendremos una lucha directa por el control de la ciudad!\n\nhas vuelto para informar del éxito, ¿no? No olvides también la antorcha de aviso; debemos mantener el control de nuestro material.",
+        "9ceac6d0ef3d54cac682": "¡Mis sacerdotes informan de que nuestros rastreadores están recibiendo señales muy fuertes de las cuatro torres! No sé si debería decirlo, pero creo que has realizado otra misión con total y completo éxito. ¡Buena jugada de nuevo, $n!\n\nCon las torres marcadas, podemos pasar a los preparativos para el ataque. ¡Ha llegado el momento de combatir a la Plaga!",
+        "a2cfe21a815e6a5be6c4": "Utilizando un instrumento mágico conocido como antorcha de aviso, puedo marcar objetivos a nuestra elección para futuras acciones de nuestras tropas. Para ese fin, pensamos que la Plaga está sirviéndose de las atalayas de Andorhal para controlar sus movimientos de tropas.\n\nTu misión: rompe las defensas de Andorhal y coloca antorchas en sus cuatro atalayas. Tendrás que estar en la entrada de las atalayas para colocar la antorcha, solo entonces quedarán marcadas. La antorcha de aviso solo tiene cinco cargas, así que úsalas con prudencia."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -382,6 +519,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -422,6 +577,11 @@
     },
     "frFR": {
       "description": "En utilisant l'objet magique connu sous le nom de torche-balise, nous pouvons marquer les cibles sur lesquelles interviendront nos troupes. À cette fin, nous pensons que le Fléau utilise les tours de guet d'Andorhal pour diriger les mouvements de leurs troupes.\n\nVotre mission : déjouer les défenses d'Andorhal pour poser des balises sur les quatre tours de guet. Vous devez être sur le pas de la porte pour poser la balise, ce qui assurera le marquage de la tour. Attention, la torche-balise ne contient que cinq charges. Utilisez-les à bon escient !",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Une fois les tours repérées, elles deviendront nos cibles prioritaires dans l'attaque d'Andorhal. Je suppose que lorsque nous aurons neutralisé les tours, la menace principale d'Andorhal émergera. À ce moment, nous déclencherons une attaque directe pour contrôler la cité !\n \n Vous revenez victorieux, n'est-ce pas ? N'oubliez pas la torche-balise : il faut maintenir notre matériel sous contrôle. ",
+        "9ceac6d0ef3d54cac682": "Mes prêtres m'informent que nos traqueurs de balises détectent des signaux très forts sur les quatre tours ! J'ose à peine le dire, mais je crois que vous avez effectué une nouvelle mission avec un succès complet et total ! Bien joué à nouveau, $N !\n \n Une fois les tours marquées, nos préparatifs pour l'attaque sont désormais en place. Le temps est venu d'engager le combat contre le Fléau !",
+        "a2cfe21a815e6a5be6c4": "En utilisant l'objet magique connu sous le nom de torche-balise, nous pouvons marquer les cibles sur lesquelles interviendront nos troupes. À cette fin, nous pensons que le Fléau utilise les tours de guet d'Andorhal pour diriger les mouvements de leurs troupes.\n\nVotre mission : déjouer les défenses d'Andorhal pour poser des balises sur les quatre tours de guet. Vous devez être sur le pas de la porte pour poser la balise, ce qui assurera le marquage de la tour. Attention, la torche-balise ne contient que cinq charges. Utilisez-les à bon escient !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -452,6 +612,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -492,6 +670,11 @@
     },
     "hrHR": {
       "description": "Pomoću čarobnog uređaja zvanog signalna baklja možemo označiti odabrane ciljeve za buduće akcije naših postrojbi. U tu svrhu smatramo da Scourge koristi andorhalske stražarske tornjeve za upravljanje kretanjem svojih postrojbi.\n\nTvoja misija: probij obranu Andorhala i postavi signale na sva četiri stražarska tornja. Moraš biti na vratima svakog tornja da postaviš signal; on će zatim označiti toranj. Signalna baklja ima samo pet punjenja, pa ih mudro iskoristi!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Kad tornjevi budu označeni, postat će prioritetne mete našeg napada na Andorhal. Pretpostavljam da će se, nakon što neutraliziramo tornjeve, pojaviti glavna prijetnja Andorhala. Od tada nas čeka otvorena borba za kontrolu grada!$B$BVratio si se prijaviti uspjeh, zar ne? Ne zaboravi ni signalnu baklju; moramo zadržati kontrolu nad svojim materijalom.",
+        "9ceac6d0ef3d54cac682": "Moji svećenici javljaju da naši uređaji za praćenje signala hvataju iznimno snažne signale sa sva četiri tornja! Usuđujem se reći da si još jednu misiju izvršio potpuno uspješno! Opet izvrsno, $N!$B$BTornjevi su označeni i naše pripreme za napad dovršene. Došlo je vrijeme da napadnemo Pošast!",
+        "a2cfe21a815e6a5be6c4": "Pomoću čarobne naprave poznate kao signalna baklja možemo označiti odabrane ciljeve za buduće akcije naših postrojbi. Vjerujemo da Pošast koristi stražarske tornjeve Andorhala za upravljanje kretanjem svojih snaga.$B$BTvoja misija: probij obranu Andorhala i postavi signale na sva četiri tornja. Moraš stajati na vratima svakog tornja da postaviš signal, koji će zatim označiti toranj. Signalna baklja ima samo pet punjenja, zato ih koristi mudro!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -523,6 +706,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0f2a432da59975b8b679c9f62545daef086222edddec8e4dff61622f5a889573"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -561,6 +759,11 @@
     },
     "itIT": {
       "description": "Grazie a un dispositivo magico chiamato torcia segnalatrice possiamo contrassegnare bersagli a nostra scelta per le future operazioni delle truppe. A questo proposito, riteniamo che il Flagello usi le torri di guardia di Andorhal per controllare i movimenti delle proprie truppe.\n\nLa tua missione: superare le difese di Andorhal e collocare segnalatori presso tutte e quattro le torri di guardia. Per collocare il segnalatore dovrai trovarti sulla soglia di ciascuna torre; poi provvederà a contrassegnarla. La torcia segnalatrice ha soltanto cinque cariche, quindi usale con saggezza!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Una volta segnate, le torri diventeranno obiettivi prioritari del nostro attacco ad Andorhal. Sospetto che, una volta neutralizzate, emergerà la minaccia principale di Andorhal. Da quel momento combatteremo apertamente per il controllo della città!$B$BSei tornato a riferire il successo, vero? Non dimenticare anche la torcia segnaletica; dobbiamo mantenere il controllo dei nostri materiali.",
+        "9ceac6d0ef3d54cac682": "I miei sacerdoti riferiscono che i nostri rilevatori captano segnali fortissimi dai segnalatori di tutte e quattro le torri! Oserei dire che hai portato a termine un'altra missione con un successo pieno e totale! Ben fatto ancora una volta, $N!\n\nCon le torri marcate, i nostri preparativi per l'attacco sono ormai completati. È arrivato il momento di portare la battaglia in casa del Flagello!",
+        "a2cfe21a815e6a5be6c4": "Con un congegno magico chiamato torcia di segnalazione possiamo marcare i bersagli che scegliamo per le azioni future delle nostre truppe. A questo proposito, crediamo che il Flagello usi le torri di guardia di Andorhal per controllare i movimenti delle sue truppe.\n\nLa tua missione: sfondare le difese di Andorhal per piazzare i segnalatori in tutte e quattro le torri di guardia. Per piazzare il segnalatore dovrai stare sulla soglia di ogni torre; a marcare la torre penserà poi lui. La torcia di segnalazione ha solo cinque cariche, quindi usale con giudizio!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -592,6 +795,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0f2a432da59975b8b679c9f62545daef086222edddec8e4dff61622f5a889573"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -630,6 +850,11 @@
     },
     "koKR": {
       "description": "자, 이걸 받으시오. 이 신호 횃불이라는 마법 장치를 이용하면 우리 부대의 다음 임무 대상을 선택해 표시할 수 있소. 스컬지는 안돌할의 감시탑을 이용해 우리 부대의 동태를 파악하고 있는 것 같소.\n\n당신의 임무는 이렇소. 안돌할의 방어선을 뚫고 들어가 네 개의 감시탑 모두에 신호 횃불을 설치하시오. 신호 횃불을 설치하려면 각 탑의 문턱으로 들어서야 하는데, 그러면 신호 횃불이 작동하여 탑을 표시하게 될 것이오. 신호 횃불은 다섯 번만 사용할 수 있으니 신중하게 사용하도록 하시오!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "탑이 표시되면 안돌할 공격의 최우선 목표가 될 것입니다.  탑을 무력화하면 안돌할의 주요 위협이 나타날 것 같습니다.  그 시점부터 우리는 도시를 장악하기 위한 정면 대결을 펼칠 것입니다!\n\n성공했다고 보고하러 돌아왔군요, 그렇죠?  횃불도 잊지 마세요.  우리는 우리의 물자에 대한 통제권을 유지해야 합니다.",
+        "9ceac6d0ef3d54cac682": "우리 사제들이 네 개의 감시탑 모두에서 극히 강력한 신호를 받고 있다고 보고하고 있소! 이번에도 당신이 임무를 매우 성공적으로 완수했군! 정말 잘했소!\n\n탑에 표시했으니 우리 군이 공격할 준비가 다 된 것이오. 이제 스컬지를 몰아붙일 때가 온 것이야!",
+        "a2cfe21a815e6a5be6c4": "자, 이걸 받으시오. 이 신호 횃불이라는 마법 장치를 이용하면 우리 부대의 다음 임무 대상을 선택해 표시할 수 있소. 스컬지는 안돌할의 감시탑을 이용해 우리 부대의 동태를 파악하고 있는 것 같소.\n\n당신의 임무는 이렇소. 안돌할의 방어선을 뚫고 들어가 네 개의 감시탑 모두에 신호 횃불을 설치하시오. 신호 횃불을 설치하려면 각 탑의 문턱으로 들어서야 하는데, 그러면 신호 횃불이 작동하여 탑을 표시하게 될 것이오. 신호 횃불은 다섯 번만 사용할 수 있으니 신중하게 사용하도록 하시오!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -660,6 +885,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -700,6 +943,11 @@
     },
     "plPL": {
       "description": "Za pomocą magicznego urządzenia zwanego pochodnią sygnałową możemy oznaczać wybrane cele dla przyszłych działań naszych wojsk. Sądzimy, że Plaga używa wież strażniczych Andorhal do kierowania ruchem swoich oddziałów.\n\nTwoja misja: przełam obronę Andorhal i ustaw sygnały przy wszystkich czterech wieżach. Musisz stanąć w drzwiach każdej wieży, aby umieścić sygnał, który następnie ją oznaczy. Pochodnia ma tylko pięć ładunków, więc używaj ich mądrze!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Gdy wieże zostaną oznaczone, staną się priorytetowymi celami naszego ataku na Andorhal. Podejrzewam, że po ich unieszkodliwieniu ujawni się główne zagrożenie Andorhalu. Wtedy czeka nas bezpośrednia walka o kontrolę nad miastem!$B$BWracasz zameldować sukces, prawda? Nie zapomnij także o pochodni sygnałowej; musimy zachować kontrolę nad naszym sprzętem.",
+        "9ceac6d0ef3d54cac682": "Moi kapłani donoszą, że nasze urządzenia wykrywają niezwykle silne sygnały ze wszystkich czterech wież! Śmiem twierdzić, że wykonałeś kolejną misję z całkowitym sukcesem! Znów świetna robota, $N!$B$BGdy wieże są oznaczone, nasze przygotowania do ataku są gotowe. Czas uderzyć na Plagę!",
+        "a2cfe21a815e6a5be6c4": "Za pomocą magicznego urządzenia zwanego pochodnią sygnałową możemy oznaczać wybrane cele dla przyszłych działań naszych wojsk. Uważamy, że Plaga wykorzystuje wieże strażnicze Andorhalu do kontrolowania ruchów swoich oddziałów.$B$BTwoja misja: przełam obronę Andorhalu i umieść sygnały przy wszystkich czterech wieżach. Musisz stanąć w drzwiach każdej wieży, by umieścić sygnał, który następnie ją oznaczy. Pochodnia ma tylko pięć ładunków, więc używaj ich rozważnie!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -731,6 +979,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0f2a432da59975b8b679c9f62545daef086222edddec8e4dff61622f5a889573"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -769,6 +1032,11 @@
     },
     "ptBR": {
       "description": "Com um dispositivo mágico conhecido como tocha sinalizadora, podemos marcar os alvos à nossa escolha para ações futuras das nossas tropas. Dito isso, achamos que o Flagelo está usando as torres de vigia de Andorhal para controlar a movimentação de suas tropas.\n\nSua missão: romper as defesas de Andorhal e plantar sinalizadores em todas as quatro torres. Você tem que passar pela porta de cada torre para plantar o sinalizador, e a tocha vai marcar a torre. A tocha sinalizadora só tem cinco cargas, então use-as com atenção!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Depois que as torres forem marcadas, elas se tornarão alvos prioritários do nosso ataque a Andorhal. Suspeito que, assim que neutralizarmos as torres, a principal ameaça de Andorhal surgirá. A partir daí, teremos uma luta direta pelo controle da cidade!$B$BVocê voltou para relatar sucesso, certo? Não se esqueça da tocha sinalizadora; precisamos manter o controle dos nossos materiais.",
+        "9ceac6d0ef3d54cac682": "Meus sacerdotes reportam que nossos sinalizadores estão detectando sinais muito fortes nas quatro torres! Tenho que dizer, acredito que você executou mais uma missão com sucesso esmagador! Mais uma vez, parabéns, $N!\n\nCom as torres marcadas, nossa preparação para o ataque está no caminho certo. Chegou a hora de levar a briga até o Flagelo!",
+        "a2cfe21a815e6a5be6c4": "Com um dispositivo mágico conhecido como tocha sinalizadora, podemos marcar os alvos à nossa escolha para ações futuras das nossas tropas. Dito isso, achamos que o Flagelo está usando as torres de vigia de Andorhal para controlar a movimentação de suas tropas.\n\nSua missão: romper as defesas de Andorhal e plantar sinalizadores em todas as quatro torres. Você tem que passar pela porta de cada torre para plantar o sinalizador, e a tocha vai marcar a torre. A tocha sinalizadora só tem cinco cargas, então use-as com atenção!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -799,6 +1067,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -839,6 +1124,11 @@
     },
     "ruRU": {
       "description": "Мы можем пометить будущие цели для наших войск при помощи магического устройства, сигнального факела. Мы подозреваем, что Плеть пользуется сторожевыми башнями Андорала для управления собственными войсками.\n\nТвоя цель – ворваться в Андорал и установить сигнальные факелы на всех четырех башнях. Устанавливать факелы надо в дверных проемах; они сами собой отметят всю башню. В сигнальном факеле всего пять зарядов, поэтому не трать их понапрасну.",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Когда башни будут помечены... это сделает их высшим приоритетом для атаки... Я ожидаю, что когда мы нейтрализуем башни, то мы вскоре устраним и угрозу со стороны Андорала... Не возвращайся ко мне без отчета об успехе операции!",
+        "9ceac6d0ef3d54cac682": "Жрецы говорят, что со всех четырех башен идут четкие сигналы! Боюсь сглазить, но по-моему, ты только что выполнил очередную операцию без сучка, без задоринки! Отлично, $N!\n\nБашни помечены, и все готово к началу атаки. Пришло время сразиться с Плетью!",
+        "a2cfe21a815e6a5be6c4": "Мы можем пометить будущие цели для наших войск при помощи магического устройства, сигнального факела. Мы подозреваем, что Плеть пользуется сторожевыми башнями Андорала для управления собственными войсками.\n\nТвоя цель – ворваться в Андорал и установить сигнальные факелы на всех четырех башнях. Устанавливать факелы надо в дверных проемах; они сами собой отметят всю башню. В сигнальном факеле всего пять зарядов, поэтому не трать их понапрасну."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -869,6 +1159,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -909,6 +1217,11 @@
     },
     "svSE": {
       "description": "Med en magisk anordning som kallas signalfackla kan vi märka ut valfria mål för våra truppers framtida insatser. Vi tror att Scourge använder Andorhals vakttorn för att styra sina truppförflyttningar.\n\nDitt uppdrag är att bryta igenom Andorhals försvar och placera signaler vid alla fyra vakttorn. Du måste stå i dörröppningen till varje torn för att placera signalen, som sedan märker ut tornet. Signalfacklan har bara fem laddningar, så använd dem klokt!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "När tornen har markerats blir de högprioriterade mål för vårt anfall mot Andorhal. Jag misstänker att när vi neutraliserat tornen kommer Andorhals största hot att visa sig. Därefter blir det en öppen strid om kontrollen över staden!$B$BDu är tillbaka för att rapportera framgång, eller hur? Glöm inte signalfacklan också; vi måste hålla reda på vår materiel.",
+        "9ceac6d0ef3d54cac682": "Mina präster rapporterar att våra signalsökare fångar upp extremt starka signaler från alla fyra tornen! Jag vågar säga att du har utfört ännu ett uppdrag med fullständig framgång! Väl spelat igen, $N!$B$BMed tornen markerade är våra förberedelser för anfallet klara. Tiden har kommit att ta striden till Gisslet!",
+        "a2cfe21a815e6a5be6c4": "Med hjälp av ett magiskt redskap känt som en signalfackla kan vi markera valda mål för våra truppers framtida insatser. Vi tror att Gisslet använder Andorhals vakttorn för att styra sina truppers rörelser.$B$BDitt uppdrag: bryt igenom Andorhals försvar och placera signaler vid alla fyra vakttorn. Du måste stå i varje torns dörröppning för att placera signalen, som sedan markerar tornet. Signalfacklan har bara fem laddningar, så använd dem klokt!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -940,6 +1253,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0f2a432da59975b8b679c9f62545daef086222edddec8e4dff61622f5a889573"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -978,6 +1306,11 @@
     },
     "trTR": {
       "description": "İşaret meşalesi denen büyülü bir aygıtla, askerlerimizin gelecekteki harekâtları için seçtiğimiz hedefleri işaretleyebiliriz. Bu amaçla, Scourge'un Andorhal'ın gözetleme kulelerini birlik hareketlerini kontrol etmek için kullandığını düşünüyoruz.\n\nGörevin: Andorhal'ın savunmasını aşıp dört gözetleme kulesinin hepsine işaret koymak. İşareti yerleştirmek için her kulenin kapı eşiğinde olmalısın; ardından kule işaretlenecek. İşaret meşalesinin yalnızca beş kullanım hakkı var, bu yüzden akıllıca kullan!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Kuleler işaretlendiğinde Andorhal’a saldırımızın öncelikli hedefleri olacaklar. Kuleleri etkisiz hale getirdiğimizde Andorhal’ın asıl tehdidinin ortaya çıkacağından şüpheleniyorum. O andan itibaren şehrin kontrolü için doğrudan savaşacağız!$B$BBaşarını bildirmek için döndün, değil mi? İşaret meşalesini de unutma; malzemelerimizi kontrol altında tutmalıyız.",
+        "9ceac6d0ef3d54cac682": "Rahiplerim, işaret takipçilerimizin dört kulenin hepsinden son derece güçlü sinyaller aldığını bildiriyor! Söylemeye cüret ediyorum, bir görevi daha tam bir başarıyla yerine getirdin! Yine iyi iş çıkardın, $N!$B$BKuleler işaretlendiğine göre saldırı hazırlıklarımız tamam. Savaşı Scourge’a taşıma zamanı geldi!",
+        "a2cfe21a815e6a5be6c4": "İşaret meşalesi olarak bilinen büyülü bir aygıtla birliklerimizin gelecekteki harekâtları için seçtiğimiz hedefleri işaretleyebiliriz. Scourge’un birliklerinin hareketlerini kontrol etmek için Andorhal’ın gözetleme kulelerini kullandığını düşünüyoruz.$B$BGörevin: Andorhal’ın savunmasını aş ve dört gözetleme kulesinin hepsine işaret yerleştir. İşareti yerleştirmek için her kulenin kapısında durmalısın; ardından kuleyi işaretleyecek. İşaret meşalesinde yalnızca beş yük var, onları akıllıca kullan!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1009,6 +1342,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0f2a432da59975b8b679c9f62545daef086222edddec8e4dff61622f5a889573"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1047,6 +1395,11 @@
     },
     "ukUA": {
       "description": "Завдяки магічному пристрою, відомому як сигнальний смолоскип, ми можемо помічати цілі для майбутніх дій наших солдатів. Ми думаємо, що Скара використовує вежі Андоралу для того, щоб контролювати рух своїх військ.\n\nТвоє завдання — увірватися в Андорал та встановити смолоскипи на всіх чотирьох вежах. Тобі доведеться стати у дверному отворі кожної вежі, щоб поставити смолоскипи, а він помітить вежу. В сигнальному смолоскипі лише п'ять зарядів, тому використовуй їх розумно!",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "Коли вежі буде позначено, вони стануть пріоритетними цілями нашого наступу на Andorhal. Гадаю, після знешкодження веж з’явиться головна загроза Andorhal. Відтоді на нас чекає відкрита битва за контроль над містом!$B$BТи повернувся повідомити про успіх, так? Не забудь і сигнальний смолоскип: ми мусимо стежити за своїм спорядженням.",
+        "9ceac6d0ef3d54cac682": "Мої жерці повідомляють, що наші пристрої вловлюють надзвичайно сильні сигнали з усіх чотирьох веж! Наважуся сказати, що ти виконав ще одну місію з повним успіхом! Знову чудова робота, $N!$B$BВежі позначено, а наші приготування до нападу завершено. Настав час дати бій Пошесті!",
+        "a2cfe21a815e6a5be6c4": "За допомогою магічного пристрою, відомого як сигнальний смолоскип, ми можемо позначати вибрані цілі для майбутніх дій наших військ. Ми вважаємо, що Пошесть використовує сторожові вежі Andorhal для керування рухом своїх військ.$B$BТвоя місія: прорви оборону Andorhal і встанови сигнали біля всіх чотирьох веж. Щоб установити сигнал, потрібно стояти у дверях кожної вежі; після цього він позначить її. Смолоскип має лише п’ять зарядів, тож використовуй їх розумно!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1079,6 +1432,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "0f2a432da59975b8b679c9f62545daef086222edddec8e4dff61622f5a889573"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -1119,6 +1487,11 @@
     },
     "zhCN": {
       "description": "通过使用一种被称作信号火炬的魔法物品，我们可以为军队即将展开的行动标识出目标。我们认为亡灵天灾正在将安多哈尔的哨塔作为控制军队的手段。\n\n你的任务就是突破安多哈尔的防线，将信标放置在四座哨塔中。你必须将信标放在每座哨塔的门口才行。信号火炬仅可使用五次，可别浪费了！",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "一旦那几座哨塔被做上了标记，它们就将成为我们在安多哈尔的首要攻击目标。我预计在攻占那些哨塔塔之後就要和安多哈尔城中的主力部队交锋了。那时，我们要进行一场痛快淋漓的战斗，一举夺取城市的控制权!\n\n我希望你凯旋而归，另外别忘了把信号火炬也带回来，我们可不能浪费资源。",
+        "9ceac6d0ef3d54cac682": "我的牧师报告说信号追踪器接收到了来自四座哨塔的强烈信号!那麽你肯定是已经成功完成了这项任务!干得好，$N!\n\n哨塔已被做上了标记，进攻的准备工作也一切就绪。与天谴军团的战争就要开始了!\n",
+        "a2cfe21a815e6a5be6c4": "通过使用一种被称作信号火炬的魔法物品，我们可以为军队即将展开的行动标识出目标。我们认为亡灵天灾正在将安多哈尔的哨塔作为控制军队的手段。\n\n你的任务就是突破安多哈尔的防线，将信标放置在四座哨塔中。你必须将信标放在每座哨塔的门口才行。信号火炬仅可使用五次，可别浪费了！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1149,6 +1522,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -1189,6 +1580,11 @@
     },
     "zhTW": {
       "description": "通過使用一種被稱作信號火炬的魔法物品，我們可以為軍隊即將展開的行動標識出目標。我們認為天譴軍團正在將安多哈爾的哨塔作為控制軍隊的手段。\n\n你的任務就是突破安多哈爾的防線，將信標放置在四座哨塔中。你必須將信標放在每座哨塔的門口才行。信號火炬僅可使用五次，可別浪費了！",
+      "dialogue": {
+        "8e3d86c21cd80030f1de": "一旦那幾座哨塔被做上了標記，它們就將成爲我們在安多哈爾的首要攻擊目標。我預計在攻佔那些哨塔塔之後就要和安多哈爾城中的主力部隊交鋒了。那時，我們要進行一場痛快淋漓的戰鬥，一舉奪取城市的控制權!\n\n我希望你凱旋而歸，另外別忘了把信號火炬也帶回來，我們可不能浪費資源。",
+        "9ceac6d0ef3d54cac682": "我的牧師報告說信號追蹤器接收到了來自四座哨塔的強烈信號!那麼你肯定是已經成功完成了這項任務!幹得好，$N!\n\n哨塔已被做上了標記，進攻的準備工作也一切就緒。與天災軍團的戰爭就要開始了!",
+        "a2cfe21a815e6a5be6c4": "通過使用一種被稱作信號火炬的魔法物品，我們可以為軍隊即將展開的行動標識出目標。我們認為天譴軍團正在將安多哈爾的哨塔作為控制軍隊的手段。\n\n你的任務就是突破安多哈爾的防線，將信標放置在四座哨塔中。你必須將信標放在每座哨塔的門口才行。信號火炬僅可使用五次，可別浪費了!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1219,6 +1615,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.8e3d86c21cd80030f1de": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.9ceac6d0ef3d54cac682": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a2cfe21a815e6a5be6c4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

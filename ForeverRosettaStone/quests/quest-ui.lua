@@ -49,19 +49,36 @@ function Addon:CreateQuestBookmark(parent, name, onClick)
     button.Icon:SetTexCoord(0, 1, 0, 1)
     button:SetChecked(false)
     Addon:SetScript(button, "OnClick", onClick or function() Addon:OpenPanel() end)
-    Addon:SetScript(button, "OnEnter", function(owner)
-        Addon:GetWidgetTooltip():SetOwner(owner, "ANCHOR_RIGHT")
-        Addon:GetWidgetTooltip():SetText(Addon:GetOpenPanelLabel())
-        Addon:GetWidgetTooltip():Show()
-    end)
-    local function HideTooltip()
-        if Addon:GetWidgetTooltip():IsOwned(button) then Addon:GetWidgetTooltip():Hide() end
+    local function ShowOpenTooltip(owner)
+        local tooltip = Addon:GetWidgetTooltip()
+        tooltip:SetOwner(owner, "ANCHOR_RIGHT")
+        tooltip:SetText(Addon:GetOpenPanelLabel())
+        tooltip:Show()
     end
-    Addon:SetScript(button, "OnLeave", HideTooltip)
-    Addon:SetScript(button, "OnHide", function()
-        button:InitializeIconAnchoring()
-        button:SetChecked(false)
-        HideTooltip()
+    local function HideOpenTooltip(owner)
+        local tooltip = Addon:GetWidgetTooltip()
+        if tooltip:IsOwned(owner) then tooltip:Hide() end
+    end
+    function button:SetGamepadFocus(focused)
+        local visible = self:IsVisible()
+        if focused and visible then ShowOpenTooltip(self) else HideOpenTooltip(self) end
+        if self.gamepadPrompt then
+            self.gamepadPrompt:SetInputKey(focused and GAMEPAD_FACE_BOTTOM or "PADRTRIGGER")
+            self.gamepadPrompt:SetShown(self.registered == true and visible)
+        end
+    end
+    Addon:SetScript(button, "OnEnter", function(owner)
+        if owner.usesGamepadFocus and InputUtil.IsGamepadUIEnabled() then return end
+        ShowOpenTooltip(owner)
+    end)
+    Addon:SetScript(button, "OnLeave", function(owner)
+        if owner.usesGamepadFocus and InputUtil.IsGamepadUIEnabled() then return end
+        HideOpenTooltip(owner)
+    end)
+    Addon:SetScript(button, "OnHide", function(owner)
+        owner:InitializeIconAnchoring()
+        owner:SetChecked(false)
+        HideOpenTooltip(owner)
     end)
 
     return button
@@ -100,6 +117,30 @@ function Addon:FitQuestPanelTitle(panel)
     local title = panel.TitleContainer.TitleText
     title:SetWidth(math.min(title:GetStringWidth(),
         panel:GetWidth() - 2 * TITLE_INSET - TITLE_ICON_SIZE - TITLE_ICON_GAP))
+end
+
+-- Books and NPC interactions open beside a native reading window.
+function Addon:CreateSideReader(name, dismiss)
+    local frame = self:NewFrame("Frame", name, UIParent, "ForeverRosettaStoneQuestPanelTemplate")
+    self:SetupQuestPanelTitle(frame)
+    frame:SetClampedToScreen(true)
+    frame:EnableMouse(true)
+    frame:Hide()
+
+    local content = self:NewFrame("Frame", nil, frame)
+    content:SetPoint("TOPLEFT", frame, "TOPLEFT", 8, -68)
+    content:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -28, 26)
+    local background = content:CreateTexture(nil, "BACKGROUND")
+    background:SetAtlas("QuestDetailsBackgrounds", true)
+    background:SetAllPoints()
+    local body = self:CreateNativeQuestBody(content, 278)
+    body.frame:ClearAllPoints()
+    body.frame:SetPoint("TOPLEFT", content, "TOPLEFT", 5, -8)
+    body.frame:SetPoint("BOTTOMRIGHT", content, "BOTTOMRIGHT", -5, 10)
+    local close = self:NewFrame("Button", nil, frame, "UIPanelCloseButtonDefaultAnchors")
+    frame.CloseButton = close
+    self:SetScript(close, "OnClick", dismiss)
+    return { frame = frame, body = body, content = content, background = background }
 end
 
 function Addon:CreateUI()
@@ -145,13 +186,6 @@ function Addon:CreateUI()
     self:SetScript(report, "OnClick", function(owner) self:ShowQuestOptions(owner) end)
     report:Hide()
     panel.ReportButton = report
-
-    local prepareReport = self:NewFrame("Button", nil, header, "UIPanelButtonTemplate")
-    prepareReport:SetSize(210, 26)
-    prepareReport:SetPoint("CENTER", header, "CENTER", 0, 4)
-    self:SetScript(prepareReport, "OnClick", function() self:ShowQuestReport(self.current.questID) end)
-    prepareReport:Hide()
-    page.reportButton = prepareReport
 
     local toggle = self:CreateQuestBookmark(QuestMapFrame.DetailsFrame, "ForeverRosettaStoneQuestToggle")
     toggle:SetClampedToScreen(true)
@@ -419,7 +453,7 @@ function Addon:Render()
     if visible then self:RecordDebugSurface(self.panel, "quest", current.questID, "questPanel", nil, quest) end
     self.panel:SetShown(visible)
     self.toggle:SetShown(self:IsPanelCollapsed())
-    self.panel.ReportButton:SetShown(quest ~= nil)
+    self.panel.ReportButton:SetShown(visible)
 
     if current.mode == "unavailable" then return end
 
@@ -454,7 +488,6 @@ function Addon:Render()
             objectives = quest and (objectives or "") or missingText.summary,
             progress = quest and progress or (missingText.questID .. current.questID),
             reward = not quest and missingText.beer or nil,
-            reportLabel = not quest and missingText.report or nil,
             description = quest and (description or "") or missingText.description,
         })
         self.page.body:ScrollTo(0)

@@ -1,8 +1,36 @@
 {
   "areaId": 357,
+  "dialogueContexts": {
+    "4cfaa83fcd048c85020a": {
+      "lineId": "q:2767:complete",
+      "npcId": 7406,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "940c9d2508acae0cfa73": {
+      "lineId": "q:2767:progress",
+      "npcId": 7406,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "a7e63a76887efce20a77": {
+      "lineId": "q:2767:accept",
+      "npcId": 7807,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Z robota se znovu ozve praskavý hlas gnóma:\n\n„Musím přesunout Ó Ó Iks dvacet dva lomeno Ef É na otevřené, bezpečné místo, aby mohl zahájit zdlouhavý postup startu. Má vestavěné maskování, ale potřebuji tady u sebe nějaký čas, abych ho zase zprovoznil. Doprovoď robota z jeho současného místa třeba na molo podél pobřeží Forgotten! To by mělo být ideální místo a cesta tam potrvá dost dlouho, aby se všechno rozjelo!“\n\n„Doprovoď ho bezpečně na molo a pak za mnou přijď do Booty Bay! Oglethorpe Obnoticus, konec!“",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Ach, TY jsi ten velký zachránce OOX-22/FE! Ani nedokážu vyjádřit, jak jsem ti vděčný za pomoc! Má řada naváděcích robotů potřebuje další vývoj, ale jeho záchranou jsi mi ušetřil nespočet hodin přestavby a mnoho zlatých na výrobních nákladech!$B$BProsím, vyber si kterýkoli z těchto předmětů. Ještě jednou děkuji za velkorysou pomoc, $n, moji roboti i já ti dlužíme!",
+        "940c9d2508acae0cfa73": "Ano, jsem Oglethorpe Obnoticus, mistr vynálezce k tvým službám! Mohu ti s něčím pomoci?",
+        "a7e63a76887efce20a77": "Z robota opět zapraská gnómův hlas:$B$B„Potřebuji přesunout OOX-22/FE na otevřené bezpečné místo, aby mohl zahájit zdlouhavý vzlet. Má vestavěné maskování, ale potřebuji čas, abych ho znovu zprovoznil. Doprovoď robota z jeho současného místa třeba k molu na Zapomenutém pobřeží! To bude ideální místo a budu mít dost času vše zapnout!“$B$B„Bezpečně ho doprovoď k molu a pak si se mnou přijď promluvit do Booty Bay! Oglethorpe Obnoticus končí!“"
+      },
       "eventObjectiveLabel": "Doprovoď OOX-22/FE k molu u Forgotten Coast",
       "objectiveLines": [
         {
@@ -20,6 +48,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -52,6 +95,11 @@
     },
     "daDK": {
       "description": "Gnomens stemme knitrer endnu en gang fra robotten:\n\n'Jeg skal flytte OOX-22/FE til et åbent, sikkert sted, så den kan begynde en langvarig startprocedure. Den har indbygget camouflage, men jeg skal bruge tid herfra til at gøre den funktionsdygtig igen. Eskortér robotten fra dens nuværende placering til, lad os sige, molen langs Forgotten Coast! Det burde være et perfekt sted og give tid nok til at få systemerne i gang!'\n\n'Eskortér den sikkert til molen, og kom så og tal med mig i Booty Bay! Oglethorpe Obnoticus, slut!'",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Åh, DU er den store redningsperson for OOX-22/FE! Jeg kan slet ikke udtrykke min tak for din hjælp! Min serie af hjemvendende robotter kræver mere udvikling, men din redningsaktion har sparet mig utallige timers ekstra genopbygning og mange guldstykker i produktionsomkostninger!$B$BVælg venligst en af disse genstande. Tak igen for din gavmilde hjælp, $n, mine robotter og jeg skylder dig meget!",
+        "940c9d2508acae0cfa73": "Ja, jeg er Oglethorpe Obnoticus, mesteropfinder til tjeneste! Er der noget, jeg kan hjælpe dig med?",
+        "a7e63a76887efce20a77": "Gnomens stemme knitrer igen fra robotten:$B$B„Jeg må flytte OOX-22/FE til et åbent, sikkert sted, så den kan begynde en lang opstartsprocedure. Den har indbygget sløring, men jeg skal bruge tid på at få den i gang igen. Eskortér robotten fra dens nuværende sted til molen ved Forgotten Coast! Det burde være perfekt og give mig nok tid til at få systemerne online!“$B$B„Følg den sikkert til molen og kom så og tal med mig i Booty Bay! Oglethorpe Obnoticus, slut!“"
+      },
       "eventObjectiveLabel": "Eskortér OOX-22/FE til kajen langs Forgotten Coast",
       "objectiveLines": [
         {
@@ -69,6 +117,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f30ace7bbbb7c807108090a18be770e3290215ce82ebda600bd9f36932aa3753"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -98,6 +161,11 @@
     },
     "deDE": {
       "description": "Aus dem Roboter ertönt erneut die blecherne Stimme des Gnoms:\n\n\"Ich muss OOX-22/FE an einen offenen, sicheren Ort schaffen, wo er die langwierige Startprozedur beginnen kann. Er hat eine eingebaute Tarnvorrichtung, aber ich brauche etwas Zeit, um sie von hier aus wieder zum Funktionieren zu bringen. Eskortiert den Roboter von seinem momentanen Standort zu, ach, sagen wir mal, dem Dock an der Vergessenen Küste. Das sollte der perfekte Ort für mein Vorhaben sein, und bis Ihr dort seid, sollte ich auch alles vorbereitet haben und online gehen können.\"\n\n\"Eskortiert ihn sicher bis zum Dock und kommt dann zu mir nach Booty Bay! Oglethorpe Obnoticus - Ende!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Ach, IHR habt so heldenhaft OOX-22/FE gerettet! Ich kann meine Dankbarkeit für Eure Hilfe noch nicht einmal ansatzweise ausdrücken! In meine Serie von Leitrobotern muss noch viel Entwicklungsaufwand gesteckt werden, aber Eure Bergung des Roboters hat mir zahllose Stunden zusätzlicher Schraubarbeit gespart, ganz zu schweigen von dem vielen Gold, das ich spare, weil ich ihn nicht neu bauen muss!\n \n Bitte sucht Euch einen von diesen Gegenständen hier aus. Ich danke Euch nochmals für Eure großzügige Hilfe, $N, meine Roboter und ich stehen in Eurer Schuld!",
+        "940c9d2508acae0cfa73": "Ja, ich bin Oglethorpe Obnoticus, Meistererfinder zu Euren Diensten! Gibt es etwas, bei dem ich Euch helfen kann?",
+        "a7e63a76887efce20a77": "Aus dem Roboter ertönt erneut die blecherne Stimme des Gnoms:\n\n\"Ich muss OOX-22/FE an einen offenen, sicheren Ort schaffen, wo er die langwierige Startprozedur beginnen kann. Er hat eine eingebaute Tarnvorrichtung, aber ich brauche etwas Zeit, um sie von hier aus wieder zum Funktionieren zu bringen. Eskortiert den Roboter von seinem momentanen Standort zu, ach, sagen wir mal, dem Dock an der Vergessenen Küste. Das sollte der perfekte Ort für mein Vorhaben sein, und bis Ihr dort seid, sollte ich auch alles vorbereitet haben und online gehen können.\"\n\n\"Eskortiert ihn sicher bis zum Dock und kommt dann zu mir nach Booty Bay! Oglethorpe Obnoticus - Ende!\""
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -114,6 +182,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -141,6 +227,11 @@
     },
     "enUS": {
       "description": "The gnome's voice crackles once again from the robot:\n\n\"I need to move OOX-22/FE to an open, safe place so it can begin a lengthy take-off procedure.  It has built-in cloaking, but I need time on my end to make it operational again.  Escort the robot from its current location to, let's say, the dock along the Forgotten Coast!  That should be a perfect place, and long enough, to get things online!\"\n\n\"Escort it safely to the dock, and then come talk to me in Booty Bay!  Oglethorpe Obnoticus - out!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Oh, YOU'RE the great savior of OOX-22/FE!  I cannot even begin to express my thanks for your assistance!  My homing robot series needs more development, but your recovery has saved me countless hours of extra rebuilding time, as well as many gold pieces in manufacture costs!$B$BPlease, take your choice of any of these items I have.  Thank you again for your generous assistance $n, my robots and I are in your debt!",
+        "940c9d2508acae0cfa73": "Yes, I'm Oglethorpe Obnoticus, master inventor at your service! Now, is there something I could assist you with?",
+        "a7e63a76887efce20a77": "The gnome's voice crackles once again from the robot:$B$B\"I need to move OOX-22/FE to an open, safe place so it can begin a lengthy take-off procedure.  It has built-in cloaking, but I need time on my end to make it operational again.  Escort the robot from its current location to, let's say, the dock along the Forgotten Coast!  That should be a perfect place, and long enough, to get things online!\"$B$B\"Escort it safely to the dock, and then come talk to me in Booty Bay!  Oglethorpe Obnoticus - out!\""
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -157,6 +248,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -185,6 +294,11 @@
     },
     "esES": {
       "description": "Vuelves a oír la voz de gnomo que sale del robot:\n\n\"Tengo que llevar a OOX-22/FE a un lugar abierto y seguro en el que pueda iniciar el largo proceso de despegue. Tiene un posicionador de serie, pero necesito tiempo para que vuelva a estar operativo. Escolta al robot de su posición actual a, digamos, el embarcadero que hay en La Costa Olvidada. Es el lugar perfecto. Allí tendré tiempo para repararlo.\"\n\n\"Llévalo al embarcadero y luego ve a buscarme a Bahía del Botín. Oglethorpe Obnoticus.\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "¡Oh, eres el gran salvador de OOX-22/FE! ¡No sé ni cómo empezar a expresarte mi gratitud por tu ayuda! Aún necesito trabajar más en el desarrollo de mi serie de robots mensajeros, pero de momento, tu ayuda me ha ahorrado innumerables horas de reconstrucción, ¡y mucho dinero en costes de fabricación!\n\nPor favor, elige uno de estos objetos. Gracias de nuevo por tu valiosa ayuda, $n, ¡mis robots y yo estamos en deuda contigo!",
+        "940c9d2508acae0cfa73": "¡Sí, soy Oglethorpe Obnoticus, maestro inventor a su servicio!  Ahora, ¿hay algo en lo que pueda ayudarte?",
+        "a7e63a76887efce20a77": "La voz del gnomo vuelve a crujir desde el robot:$B$B«Necesito trasladar a OOX-22/FE a un lugar abierto y seguro para que inicie un largo procedimiento de despegue. Tiene camuflaje integrado, pero necesito tiempo para reactivarlo. ¡Escolta al robot desde donde está hasta el muelle de la Costa Olvidada! ¡Será el lugar perfecto y me dará tiempo suficiente para poner todo en marcha!»$B$B«¡Llévalo a salvo al muelle y luego ven a hablar conmigo en Bahía del Botín! ¡Oglethorpe Obnoticus, corto!»"
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -201,6 +315,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -228,6 +359,11 @@
     },
     "esMX": {
       "description": "Vuelves a oír la voz del gnomo que sale del robot:\n\n\"Tengo que llevar a OOX-22/FE a un lugar abierto y seguro en el que pueda iniciar el largo proceso de despegue. Tiene un dispositivo de invisibilidad integrado, pero necesito tiempo para que vuelva a estar operativo. ¡Escolta al robot hasta, digamos, el muelle que está en la Costa Olvidada! Ese lugar debería ser perfecto y tendré tiempo para hacer que todo vuelva a funcionar correctamente.\"\n\n\"¡Escóltalo para que llegue sano y salvo al muelle y después ven a verme a Bahía del Botín! Oglethorpe Obnoticus. ¡Cambio y fuera!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "¡Oh, eres el gran salvador de OOX-22/FE! ¡No sé ni cómo empezar a expresarte mi gratitud por tu ayuda! Aún necesito trabajar más en el desarrollo de mi serie de robots mensajeros, pero de momento, tu ayuda me ha ahorrado innumerables horas de reconstrucción, ¡y mucho dinero en costes de fabricación!\n\nPor favor, elige uno de estos objetos. Gracias de nuevo por tu valiosa ayuda, $n, ¡mis robots y yo estamos en deuda contigo!",
+        "940c9d2508acae0cfa73": "¡Sí, soy Oglethorpe Obnoticus, maestro inventor a su servicio! Ahora, ¿hay algo en lo que pueda ayudarlo?",
+        "a7e63a76887efce20a77": "Vuelves a oír la voz del gnomo que sale del robot:\n\n\"Tengo que llevar a OOX-22/FE a un lugar abierto y seguro en el que pueda iniciar el largo proceso de despegue. Tiene un dispositivo de invisibilidad integrado, pero necesito tiempo para que vuelva a estar operativo. ¡Escolta al robot hasta, digamos, el muelle que está en la Costa Olvidada! Ese lugar debería ser perfecto y tendré tiempo para hacer que todo vuelva a funcionar correctamente.\"\n\n\"¡Escóltalo para que llegue sano y salvo al muelle y después ven a verme a Bahía del Botín! Oglethorpe Obnoticus. ¡Cambio y fuera!\""
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -244,6 +380,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -271,6 +425,11 @@
     },
     "frFR": {
       "description": "Le robot émet à nouveau la voix du gnome :\n\n\"Je dois déplacer OOX-22/FE dans un endroit dégagé et sûr pour qu'il puisse entamer sa longue procédure de décollage. Il est équipé d'un camouflage, mais il me faut du temps pour le rendre opérationnel. J'ai besoin que vous escortiez le robot jusqu'à... disons la Côte oubliée ! Ce serait un endroit parfait et assez vaste pour que tout puisse se mettre en route !\"\n\nEscortez-le jusque là-bas, et venez me parler à Baie-du-Butin ! Oglethorpe Obnoticus - terminé !\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Alors c’est VOUS le sauveur de OOX-22/FE ! Je ne sais même pas comment vous remercier pour votre aide ! Ma série de robots guidés a encore besoin d'être améliorée, mais votre intervention m'a permis de gagner de nombreuses heures de travail, ainsi qu'une somme significative en matières premières !\n \n S'il vous plaît, faites votre choix parmi ces objets. Merci encore pour votre assistance généreuse, $N, mes robots et moi sommes vos débiteurs !",
+        "940c9d2508acae0cfa73": "Oui, je suis Oglethorpe Obnoticus, maître inventeur à votre service ! Y a-t-il quelque chose que je puisse faire pour vous aider ?",
+        "a7e63a76887efce20a77": "Le robot émet à nouveau la voix du gnome :\n\n\"Je dois déplacer OOX-22/FE dans un endroit dégagé et sûr pour qu'il puisse entamer sa longue procédure de décollage. Il est équipé d'un camouflage, mais il me faut du temps pour le rendre opérationnel. J'ai besoin que vous escortiez le robot jusqu'à... disons la Côte oubliée ! Ce serait un endroit parfait et assez vaste pour que tout puisse se mettre en route !\"\n\nEscortez-le jusque là-bas, et venez me parler à Baie-du-Butin ! Oglethorpe Obnoticus - terminé !\""
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -287,6 +446,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -314,6 +491,11 @@
     },
     "hrHR": {
       "description": "Gnomov glas ponovno zapucketa iz robota:\n\n\"Moram premjestiti OOX-22/FE na otvoreno, sigurno mjesto kako bi mogao započeti dug postupak uzlijetanja. Ima ugrađeno prikrivanje, ali s moje strane treba vremena da ga ponovno osposobim. Otprati robota s trenutačne lokacije do, recimo, pristaništa duž Forgotten Coasta! To bi trebalo biti savršeno mjesto i dovoljno dugo da sve pokrenem!\"\n\n\"Sigurno ga otprati do pristaništa, a zatim dođi razgovarati sa mnom u Booty Bay! Oglethorpe Obnoticus, završio!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Oh, TI si veliki spasitelj OOX-22/FE! Ne mogu ni izraziti koliko sam zahvalan na pomoći! Mojoj seriji povratnih robota treba još razvoja, ali njegovo spašavanje uštedjelo mi je nebrojene sate ponovne izrade i mnogo zlata u troškovima proizvodnje!$B$BMolim te, odaberi jedan od ovih predmeta. Još jednom hvala na velikodušnoj pomoći, $n, moji roboti i ja tvoji smo dužnici!",
+        "940c9d2508acae0cfa73": "Da, ja sam Oglethorpe Obnoticus, majstor izumitelj tebi na usluzi! Mogu li ti nekako pomoći?",
+        "a7e63a76887efce20a77": "Gnomov glas ponovno zakrči iz robota:$B$B„Moram premjestiti OOX-22/FE na otvoreno i sigurno mjesto kako bi mogao započeti dug postupak polijetanja. Ima ugrađeno prikrivanje, ali treba mi vremena da ga ponovno pokrenem. Otprati robota odavde do pristaništa na Zaboravljenoj obali! To bi trebalo biti savršeno mjesto i dovoljno vremena da sve proradi!“$B$B„Sigurno ga otprati do pristaništa, a zatim dođi razgovarati sa mnom u Booty Bay! Oglethorpe Obnoticus, odjava!“"
+      },
       "eventObjectiveLabel": "Otprati OOX-22/FE do pristaništa na Forgotten Coastu",
       "objectiveLines": [
         {
@@ -331,6 +513,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f30ace7bbbb7c807108090a18be770e3290215ce82ebda600bd9f36932aa3753"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -360,6 +557,11 @@
     },
     "itIT": {
       "description": "La voce dello gnomo crepita ancora una volta dal robot:\n\n\"Devo spostare OOX-22/FE in un luogo aperto e sicuro, così potrà iniziare una lunga procedura di decollo. Ha un dispositivo di occultamento integrato, ma mi serve tempo da qui per renderlo nuovamente operativo. Scorta il robot dalla sua posizione attuale fino, diciamo, al molo lungo la Costa Dimenticata! Dovrebbe essere il posto perfetto e il tragitto dovrebbe darmi il tempo necessario per riattivare i sistemi!\"\n\n\"Scortalo sano e salvo al molo, poi vieni a parlarmi a Baia del Bottino! Oglethorpe Obnoticus, passo e chiudo!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Oh, sei TU il grande salvatore di OOX-22/FE! Non so nemmeno come ringraziarti per il tuo aiuto! La mia serie di robot di ritorno richiede ancora sviluppo, ma il tuo recupero mi ha risparmiato innumerevoli ore di ricostruzione e molte monete d’oro in costi di produzione!$B$BTi prego, scegli uno di questi oggetti. Grazie ancora per il tuo generoso aiuto, $n, i miei robot e io siamo in debito con te!",
+        "940c9d2508acae0cfa73": "Sì, sono Oglethorpe Obnoticus, maestro inventore al tuo servizio! Allora, c'è qualcosa in cui posso aiutarti?",
+        "a7e63a76887efce20a77": "La voce dello gnomo gracchia di nuovo dal robot:\n\n\"Devo portare OOX-22/FE in un posto aperto e sicuro, così potrà cominciare una lunga procedura di decollo. Ha un occultamento incorporato, ma io, da qui, ho bisogno di tempo per rimetterlo in funzione. Scorta il robot da dove si trova ora fino, diciamo, al molo lungo la Costa Dimenticata! Dovrebbe essere il posto perfetto, e un tragitto abbastanza lungo, per riattivare tutto!\"\n\n\"Scortalo al molo sano e salvo, e poi vieni a parlarmi a Booty Bay! Oglethorpe Obnoticus — passo e chiudo!\""
+      },
       "eventObjectiveLabel": "Scorta OOX-22/FE fino al molo lungo la Forgotten Coast",
       "objectiveLines": [
         {
@@ -377,6 +579,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f30ace7bbbb7c807108090a18be770e3290215ce82ebda600bd9f36932aa3753"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -406,6 +625,11 @@
     },
     "koKR": {
       "description": "로봇에서 다시 노움의 목소리가 흘러나옵니다.\n\n\"긴 활주로로 사용할 수 있을 만한 넓고 안전한 장소로 OOX-22/FE를 옮겨야겠소. 로봇에 위장 기능이 있기는 하지만 다시 작동하려면 시간이 필요하오. 그 로봇을 현재 있는 곳에서 잊혀진 해안에 있는 부두까지 호위해주시오. 그곳이라면 이륙하기에 충분할 거요!\"\n\n\"부두까지 무사히 호위해 간 후에 무법항으로 와서 나에게 알려 주시오! 오글소프 오브노티쿠스, 이상!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "아, 자네가 바로 OOX-22/FE를 구한 위대한 구원자군! 도움에 어떻게 감사해야 할지 모르겠네! 귀환 로봇 시리즈는 아직 더 개발해야 하지만, 자네 덕분에 다시 만드는 데 들었을 수많은 시간과 제작비를 아꼈어!$B$B부디 여기 있는 물건 중 하나를 골라 주게. 아낌없는 도움에 다시 한번 감사하네, $n. 나와 내 로봇들은 자네에게 빚을 졌어!",
+        "940c9d2508acae0cfa73": "그렇소, 내가 바로 발명 대가 오글소프 오브노티쿠스요! 무엇을 도와드릴까요?",
+        "a7e63a76887efce20a77": "로봇에서 노움의 목소리가 다시 지직거리며 흘러나온다.$B$B“OOX-22/FE가 긴 이륙 절차를 시작하려면 탁 트이고 안전한 곳으로 옮겨야 하오. 은폐 장치가 내장되어 있지만 다시 작동시키려면 시간이 필요하오. 로봇을 지금 위치에서 잊혀진 해안의 부두까지 호위해 주시오! 그곳이면 완벽하고 장치를 가동할 시간도 충분할 거요!”$B$B“부두까지 안전하게 호위한 다음 무법항으로 와서 나와 이야기하시오! 오글소프 오브노티쿠스, 통신 끝!”"
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -422,6 +646,21 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -449,6 +688,11 @@
     },
     "plPL": {
       "description": "Z robota znów dobiega trzeszczący głos gnoma:\n\n\"Muszę przemieścić OOX-22/FE na otwarty, bezpieczny teren, by mógł rozpocząć długą procedurę startową. Ma wbudowane maskowanie, ale potrzebuję czasu, by przywrócić jego działanie po swojej stronie. Odprowadź robota z obecnego miejsca, powiedzmy, do pomostu przy Forgotten Coast! To powinno być doskonałe miejsce i zapewnić dość czasu, by uruchomić systemy!\"\n\n\"Bezpiecznie odprowadź go do pomostu, a potem przyjdź porozmawiać ze mną w Booty Bay! Oglethorpe Obnoticus, bez odbioru!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Och, to TY jesteś wielkim wybawcą OOX-22/FE! Nie potrafię wyrazić wdzięczności za pomoc! Moja seria robotów powrotnych wymaga dalszego rozwoju, ale odzyskując tego, oszczędziłeś mi niezliczonych godzin odbudowy i wielu sztuk złota na produkcji!$B$BProszę, wybierz jeden z tych przedmiotów. Jeszcze raz dziękuję za hojną pomoc, $n, moje roboty i ja mamy u ciebie dług!",
+        "940c9d2508acae0cfa73": "Tak, jestem Oglethorpe Obnoticus, mistrz wynalazca do usług! Czy mogę ci w czymś pomóc?",
+        "a7e63a76887efce20a77": "Z robota ponownie dobiega trzaskający głos gnoma:$B$B„Muszę przenieść OOX-22/FE w otwarte, bezpieczne miejsce, by mógł rozpocząć długą procedurę startową. Ma wbudowany kamuflaż, ale potrzebuję czasu, by go ponownie uruchomić. Eskortuj robota stąd do przystani na Zapomnianym Wybrzeżu! To idealne miejsce i wystarczająco dużo czasu, by uruchomić systemy!”$B$B„Doprowadź go bezpiecznie do przystani, a potem przyjdź do mnie do Booty Bay! Oglethorpe Obnoticus, bez odbioru!”"
+      },
       "eventObjectiveLabel": "Odprowadź OOX-22/FE do pomostu na Zapomnianym Wybrzeżu",
       "objectiveLines": [
         {
@@ -466,6 +710,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f30ace7bbbb7c807108090a18be770e3290215ce82ebda600bd9f36932aa3753"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -495,6 +754,11 @@
     },
     "ptBR": {
       "description": "A voz do gnomo surge de novo do robô:\n\n\"Preciso transportar o OOX-22/FE para um local amplo e seguro para eu começar o longo procedimento de lançamento. Ele tem um disfarce embutido, mas preciso de tempo para torná-lo funcional de novo. Escolte o robô de sua localização atual para, digamos, a doca ao longo da Costa Esquecida! Lá seria um lugar perfeito e extenso o suficiente para acertar as coisas!\"\n\nLeve-o em segurança para a doca e volte para falar comigo em Angra do Butim! Olhatorto Obnótico - câmbio!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Ah, VOCÊ é o grande salvador de OOX-22/FE! Nem tenho como expressar minha gratidão pela sua cooperação! Minha linha de robôs teleguiados precisa de mais desenvolvimento, mas seu auxílio me poupou várias horas de trabalho de reconstrução, assim como muitas peças de ouro de custo!\n\nPor favor, escolha quaisquer desses itens. Obrigadinho de novo pela generosa ajuda, $N. Eu e meus robôs temos uma dívida com você!",
+        "940c9d2508acae0cfa73": "Sim, sou Olhatorto Obnótico, mestre inventor às suas ordens! Posso ajudar em alguma coisa?",
+        "a7e63a76887efce20a77": "A voz do gnomo volta a crepitar pelo robô:$B$B“Preciso levar OOX-22/FE a um lugar aberto e seguro para iniciar um longo procedimento de decolagem. Ele tem camuflagem integrada, mas preciso de tempo para reativá-la. Escolte o robô daqui até o cais na Costa Esquecida! Deve ser o lugar perfeito e dar tempo suficiente para ligar os sistemas!”$B$B“Leve-o em segurança até o cais e depois venha falar comigo em Angra do Butim! Oglethorpe Obnoticus, desligando!”"
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -511,6 +775,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -538,6 +818,11 @@
     },
     "ruRU": {
       "description": "Из динамика снова слышится искаженный разрядами голос гнома:\n\n\"Мне необходимо перегнать OOX-22/FE в просторное и безопасное место, чтобы начать длительную процедуру подготовки к взлету. Проводите робота из того места, где вы его обнаружили, в... ну, скажем, в порт на Забытом берегу! Это самое подходящее место, и там достаточно просторно, чтобы аппарату было где развернуться.\n\nПроводите робота в порт, а затем сообщите об этом мне. Я живу в Пиратской бухте, меня зовут Карлс Пропеллерз. Конец связи!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "О, так это ТЕБЕ я обязан спасением КПХ-22/FE! Я даже не знаю, как выразить тебе мою благодарность за помощь! Серию моих самонаводящихся роботов нужно еще дорабатывать, но благодаря тебе я избавлен от необходимости тратить многие часы на сборку нового робота и золото на изготовление деталей!\n\nПрошу, выбери себе любую из этих вещей. И еще раз спасибо тебе за огромную помощь, $N. Мы с моими роботами у тебя в долгу!",
+        "940c9d2508acae0cfa73": "Да, я Карлс Пропеллерз, мастер изобретатель, к твоим услугам. Чем я могу тебе помочь?",
+        "a7e63a76887efce20a77": "Из робота вновь доносится потрескивающий голос гнома:$B$B«Мне нужно переместить OOX-22/FE на открытое безопасное место, чтобы он начал долгую процедуру взлета. У него есть встроенная маскировка, но мне нужно время, чтобы снова ее включить. Сопроводи робота отсюда до пристани на Забытом берегу! Это идеальное место, и времени на запуск систем хватит!»$B$B«Безопасно проводи его до пристани, а потом приходи ко мне в Пиратскую бухту! Оглеторп Обнотикус, конец связи!»"
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -554,6 +839,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -581,6 +883,11 @@
     },
     "svSE": {
       "description": "Gnomens röst sprakar åter från roboten:\n\n\"Jag måste flytta OOX-22/FE till en öppen, säker plats för att påbörja en lång startprocedur. Den har inbyggd kamouflering, men jag behöver tid att få den i drift igen. Eskortera roboten härifrån till, låt säga, kajen längs Forgotten Coast! Perfekt plats och tillräckligt lång tid för att få igång allt!\"\n\n\"För den säkert till kajen och kom sedan till mig i Booty Bay! Oglethorpe Obnoticus, klart slut!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Åh, det är DU som är OOX-22/FE:s store räddare! Jag kan knappt uttrycka min tacksamhet för hjälpen! Min serie av återvändande robotar behöver mer utveckling, men din räddningsinsats har sparat mig otaliga timmars återuppbyggnad och många guldmynt i tillverkningskostnader!$B$BVälj gärna ett av mina föremål. Tack igen för din generösa hjälp, $n, mina robotar och jag står i skuld till dig!",
+        "940c9d2508acae0cfa73": "Ja, jag är Oglethorpe Obnoticus, mästeruppfinnare till din tjänst! Finns det något jag kan hjälpa dig med?",
+        "a7e63a76887efce20a77": "Gnomens röst sprakar åter från roboten:$B$B”Jag måste flytta OOX-22/FE till en öppen, säker plats så att den kan påbörja en lång startprocedur. Den har inbyggt kamouflage, men jag behöver tid för att få det att fungera igen. Eskortera roboten från dess nuvarande plats till kajen vid Forgotten Coast! Det borde vara perfekt och ge mig nog med tid att starta systemen!”$B$B”Följ den säkert till kajen och kom sedan och tala med mig i Booty Bay! Oglethorpe Obnoticus, klart slut!”"
+      },
       "eventObjectiveLabel": "Eskortera OOX-22/FE till bryggan vid Forgotten Coast",
       "objectiveLines": [
         {
@@ -598,6 +905,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f30ace7bbbb7c807108090a18be770e3290215ce82ebda600bd9f36932aa3753"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -627,6 +949,11 @@
     },
     "trTR": {
       "description": "Gnome'un sesi robottan yeniden cızırtıyla duyulur:\n\n\"Uzun kalkış işlemine başlayabilmesi için OOX-22/FE'yi açık ve güvenli bir yere götürmem gerekiyor. Yerleşik bir gizlenme düzeneği var ama onu tekrar çalışır hale getirmek için kendi tarafımda zamana ihtiyacım var. Robota bulunduğu yerden, mesela Forgotten Coast boyunca uzanan iskeleye kadar eşlik et! Her şeyi devreye almak için orası hem mükemmel bir yer olacak hem de bana yeterince zaman kazandıracak!\"\n\n\"Ona güvenle iskeleye kadar eşlik et, sonra Booty Bay'de benimle konuş! Oglethorpe Obnoticus, tamam!\"",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "Ah, OOX-22/FE’nin büyük kurtarıcısı SENSİN! Yardımın için teşekkürümü nasıl ifade edeceğimi bilemiyorum! Eve dönüş robotu serimin daha fazla geliştirilmesi gerekiyor ama onu kurtarman bana sayısız yeniden yapım saati ve üretim masrafında pek çok altın kazandırdı!$B$BLütfen bu eşyalardan istediğini seç. Cömert yardımın için tekrar teşekkür ederim $n, robotlarım ve ben sana borçluyuz!",
+        "940c9d2508acae0cfa73": "Evet, ben Oglethorpe Obnoticus, usta mucit, hizmetindeyim! Sana yardımcı olabileceğim bir şey var mı?",
+        "a7e63a76887efce20a77": "Gnomun sesi robottan yeniden cızırtıyla duyulur:$B$B“OOX-22/FE’yi uzun kalkış işlemini başlatabilmesi için açık ve güvenli bir yere götürmem gerekiyor. Yerleşik gizleme sistemi var ama onu tekrar çalıştırmam zaman alacak. Robotu bulunduğu yerden Unutulmuş Sahil’deki iskeleye kadar koru! Orası mükemmel olmalı ve sistemleri çalıştırmak için yeterli zaman sağlar!”$B$B“Onu güvenle iskeleye götür, sonra Booty Bay’de benimle konuş! Oglethorpe Obnoticus, tamam!”"
+      },
       "eventObjectiveLabel": "OOX-22/FE'ye Forgotten Coast kıyısındaki rıhtıma kadar eşlik et",
       "objectiveLines": [
         {
@@ -644,6 +971,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f30ace7bbbb7c807108090a18be770e3290215ce82ebda600bd9f36932aa3753"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -673,6 +1015,11 @@
     },
     "ukUA": {
       "description": "Із робота знову долинає потріскуючий голос гнома:\n\n«Мені треба перемістити OOX-22/FE у відкрите, безпечне місце, щоб він розпочав тривалу процедуру зльоту. У нього є вбудоване маскування, але мені потрібен час, щоб знову налагодити його зі свого боку. Проведи робота звідси, скажімо, до доку на Забутому узбережжі! Це має бути ідеальне місце, а дорога дасть достатньо часу, щоб усе запрацювало!»\n\n«Безпечно проведи його до доку, а тоді поговори зі мною в Грабіжній Бухті! Оґлторп Обриднус, кінець зв'язку!»",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "О, це ТИ великий рятівник OOX-22/FE! Навіть не знаю, як висловити вдячність за допомогу! Моя серія роботів повернення ще потребує розробки, але порятунок заощадив мені незліченні години перебудови й чимало золота на виробництві!$B$BПрошу, обери будь-який із цих предметів. Ще раз дякую за щедру допомогу, $n, ми з роботами перед тобою в боргу!",
+        "940c9d2508acae0cfa73": "Так, я Оґлторп Обнотікус, майстер-винахідник до твоїх послуг! Чим можу допомогти?",
+        "a7e63a76887efce20a77": "Із робота знову долинає потріскуючий голос гнома:$B$B«Мені треба перемістити OOX-22/FE на відкрите безпечне місце, щоб він почав тривалу процедуру зльоту. Він має вбудоване маскування, але мені потрібен час, щоб знову його ввімкнути. Супроводи робота звідси до причалу на Забутому узбережжі! Це буде ідеальне місце й достатньо часу для запуску систем!»$B$B«Безпечно доведи його до причалу, а потім приходь до мене в Піратську бухту! Оґлторп Обнотікус, кінець зв’язку!»"
+      },
       "eventObjectiveLabel": "Супроводіть OOX-22/FE до доку на Забутому узбережжі",
       "objectiveLines": [
         {
@@ -690,6 +1037,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f30ace7bbbb7c807108090a18be770e3290215ce82ebda600bd9f36932aa3753"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -721,6 +1083,11 @@
     },
     "zhCN": {
       "description": "那个侏儒的声音再次从那个机器人中传了出来：\n\n“我需要你帮忙把OOX-22/FE移动到一个安全的开阔地，这样它才可以启动起飞程序。它自带隐形系统，但是我需要一点时间来远程启动这个系统。请你把这个机器人从现在的位置护送到被遗忘的海岸去！那里是个非常理想的起飞点，有足够的空间作为机器人起飞的跑道！”\n\n“将它护送到那里，然后再到藏宝海湾来找我！奥格索普·奥布诺提斯——完毕！”",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "哦，你是OOX-22/FE的伟大救世主!我简直无法用言语来表达对你的感谢!如果让我自己重新构造一个母体机器人的话，无疑要浪费大量的时间，你真是帮了我的大忙，不仅节约了我的时间，同时也节约了我的钱!\n\n请从这些东西中选择一样你中意的吧。再次感谢你无私的帮助，我的机器人和我都欠你的人情!\n",
+        "940c9d2508acae0cfa73": "没错，我就是奥格索普·奥布诺提斯，世上最强的发明家，随时为您效劳!现在，我能帮您什麽忙吗?",
+        "a7e63a76887efce20a77": "侏儒的声音再次从机器人里传来，伴随着一阵杂音：$B$B“我需要把OOX-22/FE移到开阔安全的地方，才能开始漫长的起飞程序。它有内置的隐形装置，但我需要时间重新启动。护送机器人从当前位置到遗忘海岸的码头吧！那里应该很合适，也能给我足够的时间启动系统！”$B$B“安全护送它到码头后，来藏宝海湾找我！奥格索普·奥布诺提斯，通话完毕！”"
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -737,6 +1104,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -764,6 +1148,11 @@
     },
     "zhTW": {
       "description": "那個地精的聲音再次從那個機器人中傳了出來：\n\n「我需要你幫忙把OOX-22/FE移動到一個安全的開闊地，這樣它才可以啟動起飛程式。它自帶隱形系統，但是我需要一點時間來遠端啟動這個系統。請你把這個機器人從現在的位置護送到被遺忘的海岸去！那裡是個非常理想的起飛點，有足夠的空間作為機器人起飛的跑道！」\n\n「將它護送到那裡，然後再到藏寶海灣來找我！奧格索普·奧布諾提斯——完畢！」",
+      "dialogue": {
+        "4cfaa83fcd048c85020a": "哦，你是OOX-22/FE的偉大救世主!我簡直無法用言語來表達對你的感謝!如果讓我自己重新構造一個母體機器人的話，無疑要浪費大量的時間，你真是幫了我的大忙，不僅節約了我的時間，同時也節約了我的錢!\n\n請從這些東西中選擇一樣你中意的吧。再次感謝你無私的幫助，我的機器人和我都欠你的人情!",
+        "940c9d2508acae0cfa73": "沒錯，我就是奧格索普.奧布諾提斯，世上最強的發明家，隨時爲您效勞!現在，我能幫您什麼忙嗎?",
+        "a7e63a76887efce20a77": "地精的聲音再次從機器人裡傳來，伴隨著一陣雜音：$B$B「我需要把OOX-22/FE移到開闊安全的地方，才能開始漫長的起飛程序。它有內建的隱形裝置，但我需要時間重新啟動。護送機器人從目前的位置到遺忘海岸的碼頭吧！那裡應該很合適，也能給我足夠的時間啟動系統！」$B$B「安全護送它到碼頭後，來藏寶海灣找我！奧格索普·奧布諾提斯，通話完畢！」"
+      },
       "eventObjectiveLabel": "Escort OOX-22/FE to the dock along the Forgotten Coast",
       "objectiveLines": [
         {
@@ -780,6 +1169,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.4cfaa83fcd048c85020a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.940c9d2508acae0cfa73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a7e63a76887efce20a77": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",

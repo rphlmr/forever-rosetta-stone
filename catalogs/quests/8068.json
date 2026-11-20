@@ -1,8 +1,36 @@
 {
   "areaId": 19,
+  "dialogueContexts": {
+    "c3131ea7b48bfb0ad2ee": {
+      "lineId": "q:8068:accept",
+      "npcId": 14903,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "d662ba50fe76fa3898df": {
+      "lineId": "q:8068:progress",
+      "npcId": 14903,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f9808fb02b8f8173432f": {
+      "lineId": "q:8068:complete",
+      "npcId": 14903,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Magie je surová, prvotní síla, kterou mohou tvarovat jen ti, kdo jsou k tomu dost silní. Mojo je naším prodloužením této moci; jedním z nejmocnějších způsobů, jak s ním zacházet, je právě iluze. Jak může někdo doufat ve vítězství proti nepříteli, který tam ve skutečnosti ani není? My Zandalari známe její sílu, a proto mají iluzionisté v kmeni čestné místo.\n\nVezmi potřebné Vzory moci ze Zul'Gurubu – za to tě čeká čest od kmene a mocný plášť, jaký používají naši nejlepší iluzionisté!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Magie je surová, prvotní síla, kterou mohou utvářet jen dostatečně silní. Mojo je naším rozšířením této moci; jednou z jejích mocných podob je iluze. Jak může někdo doufat ve vítězství nad nepřítelem, který tam ve skutečnosti ani není? My Zandalaři známe její sílu, a proto mají iluzionisté v kmeni čestné místo.$B$BPřines potřebné vzory moci ze Zul’Gurubu a získáš úctu kmene i mocný plášť našich nejlepších iluzionistů!",
+        "d662ba50fe76fa3898df": "Jak dopadl tvůj výpad do Zul’Gurubu? Přivedl jsi nepřátele k šílenství silou iluzí? Ať už šlo o iluzi, nebo ne, jejich smrt a získané vzory moci pomohou zmařit Hakkarův vzestup.",
+        "f9808fb02b8f8173432f": "Úspěch! Od nynějška tě bude kmen ctít! Zul’Gurub dnes díky tobě poznal sílu Zandalarů, $N.$B$BS požehnáním kmene přijmi plášť zandalarijského iluzionisty. Ať ti dobře slouží."
+      },
       "summary": "Dones Al'tabim the All-Seeing předmět Primal Hakkari Shawl. Musíš mít také reputaci rovnou nebo vyšší než Honored u Zandalar Tribe.\n\nAl'tabim the All-Seeing se nachází na Yojamba Isle v Stranglethorn Vale.",
       "title": "Vzory moci: plášť Illusionist",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -31,6 +74,11 @@
     },
     "daDK": {
       "description": "Magi er en rå, urkraft, der skal formes af dem, der er stærke nok til det. Mojo er vores forlængelse af denne kraft; en særlig stærk manipulation af den tager form som illusion. Hvordan kan man håbe at vinde mod en fjende, der ikke engang virkelig er der? Vi Zandalar kender dens magt, og derfor har illusionister en æret plads i stammen.\n\nTag de nødvendige Paragons of Power fra Zul'Gurub. For det bliver stammens ære og en mægtig kappe brugt af vores bedste illusionister dine!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Magi er en rå, oprindelig kraft, som formes af dem, der er stærke nok. Mojo er vores forlængelse af denne kraft; en mægtig anvendelse er illusion. Hvordan kan man håbe på at sejre over en fjende, der ikke engang er der? Vi Zandalar kender dens kraft, og derfor har illusionister en æret plads i stammen.$B$BHent de nødvendige magtens forbilleder fra Zul’Gurub, så får du stammens ære og en mægtig kappe, som vores bedste illusionister bruger!",
+        "d662ba50fe76fa3898df": "Hvordan gik dit indtog i Zul’Gurub? Drev du dine fjender til vanvid med illusionens kraft? Illusion eller ej, deres død og magtens forbilleder, du tog fra dem, vil hjælpe med at standse Hakkars opstigning.",
+        "f9808fb02b8f8173432f": "Succes! Du vil fremover blive æret i stammen! Zul’Gurub har sandelig mærket Zandalars styrke i dag takket være dig, $N.$B$BModtag Zandalar-illusionistens kappe med stammens velsignelse. Må den tjene dig godt."
+      },
       "summary": "Bring Al'tabim the All-Seeing en Primal Hakkari Shawl. Du skal også have et omdømme hos Zandalar-stammen, der er mindst æret.\n\nAl'tabim the All-Seeing befinder sig på Yojamba Isle i Stranglethorn Vale.",
       "title": "Magtens forbilleder: Illusionistens kappe",
       "translationMetadata": {
@@ -40,6 +88,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7a8f6fd3636a602276c12f8bdd1a2e0d29ba0ddb2f3be4a583a3f34bc7225c72"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -58,6 +121,11 @@
     },
     "deDE": {
       "description": "Magie ist eine rohe, uralte Kraft, die von denen beherrscht werden muss, die stark genug dafür sind. Mojo ist unsere Ausdehnung dieser Macht; eine der mächtigsten Manipulationen davon ist die Form der Illusion. Wie kann man sich ernsthaft erhoffen einen Feind zu schlagen, der nicht einmal wirklich da ist? Wir Zandalarianer wissen von dieser Macht und daher wird den Illusionisten eine besondere Stellung in unserem Stamm zuteil.\n\nBeschafft das notwendige Symbol der Macht von Zul'Gurub... dafür werdet Ihr mit dem Wohlwollen unseres Stammes und einem mächtigen Mantel, wie er von unseren besten Illusionisten verwendet wird, belohnt werden!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Magie ist eine rohe, uralte Kraft, die von denen beherrscht werden muss, die stark genug dafür sind. Mojo ist unser verlängerter Arm dieser Macht; eine der mächtigsten Manipulationen davon ist die Form der Illusion. Wie kann man sich ernsthaft erhoffen einen Feind zu schlagen, der nicht einmal wirklich da ist? Wir Zandalari wissen von dieser Macht und daher wird den Illusionisten eine besondere Stellung in unserem Stamm zuteil.\n\nBeschafft das notwendige Symbol der Macht von Zul'Gurub... dafür werdet Ihr mit dem Wohlwollen unseres Stammes und einem mächtigen Mantel, wie er von unseren besten Illusionisten verwendet wird, belohnt werden!",
+        "d662ba50fe76fa3898df": "Wie war Euer Ausflug nach Zul'Gurub? Habt Ihr Eure Feinde mit der Macht der Illusion in den Wahnsinn getrieben? Illusion ja oder nein, ihr Tod - und die von ihnen wiedererlangten Symbole der Macht - werden die Auferstehung Hakkars vereiteln. ",
+        "f9808fb02b8f8173432f": "Erfolg! Man wird Euch von jetzt an in unserem Stamm mit Wohlwollen entgegenkommen! Zul'Gurub hat heute mit Sicherheit die Macht der Zandalarianer zu spüren bekommen, dank Euch, $N. \n \n Ihr habt den Segen unseres Stammes, bitte nehmt den zandalarianischen Mantel des Illusionisten. Möge er Euch gut dienen. "
+      },
       "summary": "Bringt einen urzeitlichen Hakkarischal zu Al'tabim dem Allsehenden. Die Einstellung des Stammes der Zandalar muss Euch gegenüber wenigstens wohlwollend oder höher sein.\n\nAl'tabim der Allsehende befindet sich auf der Insel Yojamba im Schlingendorntal.",
       "title": "Symbole der Macht: Der Mantel des Illusionisten",
       "translationMetadata": {
@@ -66,6 +134,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +168,11 @@
     },
     "enUS": {
       "description": "Magic is a raw, primal force to be shaped by those strong enough to do it.  Mojo is our extension of this power; one such potent manipulation of it is in the form of illusion.  How can one truly hope to win against a foe that is not even really there?  We Zandalar know the power of this, and as such illusionists hold a honored place within the tribe.\n\nTake the needed Paragons of Power from Zul'Gurub - for this, honor from the tribe and a powerful mantle used by our best illusionists will be yours!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Magic is a raw, primal force to be shaped by those strong enough to do it.  Mojo is our extension of this power; one such potent manipulation of it is in the form of illusion.  How can one truly hope to win against a foe that is not even really there?  We Zandalar know the power of this, and as such illusionists hold a honored place within the tribe.$B$BTake the needed Paragons of Power from Zul'Gurub - for this, honor from the tribe and a powerful mantle used by our best illusionists will be yours!",
+        "d662ba50fe76fa3898df": "How was your foray into Zul'Gurub?  Did you drive your enemies mad through the power of illusion?  Illusion or not, their deaths - and the Paragons of Power taken from them - will help thwart the rise of Hakkar.",
+        "f9808fb02b8f8173432f": "Success!  You shall be honored in the tribe from here on!  Zul'Gurub has certainly tasted the might of the Zandalar today, thanks to you $N.$B$BWith the tribe's blessing, take the Zandalar illusionist's mantle.  May it serve you well."
+      },
       "summary": "Bring Al'tabim the All-Seeing a Primal Hakkari Shawl. You must also have a reputation equal to or greater than Honored with the Zandalar Tribe.\n\nAl'tabim the All-Seeing is located on Yojamba Isle, Stranglethorn Vale.",
       "title": "Paragons of Power: The Illusionist's Mantle",
       "translationMetadata": {
@@ -90,6 +181,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +216,11 @@
     },
     "esES": {
       "description": "La magia es una fuerza primaria, básica, maleable por aquellos que son lo suficientemente fuertes para dominarla. El mojo es una extensión de este poder, y una de las potentes manipulaciones que se le pueden dar es en forma de ilusión. ¿Cómo puedes ganarle a un enemigo que ni siquiera es real?  Los Zandalar conocemos este poder, y como ilusionistas tenemos un lugar en la tribu.\n\nObtén los Dechados de Poder de Zul'Gurub. La tribu te honrará y te regalará un poderoso manto de los que usan los mejores ilusionistas.",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "La magia es una fuerza primaria, básica, maleable por aquellos que son lo suficientemente fuertes para dominarla. El mojo es una extensión de este poder, y una de las potentes manipulaciones que se le pueden dar es en forma de ilusión. ¿Cómo puedes ganarle a un enemigo que ni siquiera es real? Los Zandalar conocemos este poder, y como ilusionistas tenemos un lugar en la tribu.\n\nObtén los Dechados de Poder de Zul'Gurub. La tribu te honrará y te regalará un poderoso manto de los que usan los mejores ilusionistas.",
+        "d662ba50fe76fa3898df": "¿Cómo fue tu incursión en Zul'Gurub?  ¿Enloqueciste a tus enemigos a través del poder de la ilusión?  Ilusión o no, sus muertes, y los Paragons of Power que les quitaron, ayudarán a frustrar el ascenso de Hakkar.",
+        "f9808fb02b8f8173432f": "¡Éxito!  ¡Serás honrado en la tribu de ahora en adelante!  Zul'Gurub ciertamente ha probado el poder de Zandalar hoy, gracias a ti $N.\n\n Con la bendición de la tribu, toma el manto del ilusionista Zandalar.  Que te sirva bien."
+      },
       "summary": "Lleva los siguientes Dechados de Poder de Zul'Gurub a Al'tabim el que todo lo ve: un chal Hakkari primigenio. También debes tener una reputación mínima de <honrado/honrada> con la tribu Zandalar.\n\nAl'tabim el que todo lo ve está en Isla Yojamba, en la Vega de Tuercespina.",
       "title": "Dechados de Poder: el Manto de ilusionista",
       "translationMetadata": {
@@ -115,6 +229,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +264,11 @@
     },
     "esMX": {
       "description": "La magia es una fuerza primaria, básica, maleable por aquellos que son lo suficientemente fuertes para dominarla. El mojo es una extensión de este poder, y una de las potentes manipulaciones que se le pueden dar es en forma de ilusión. ¿Cómo puedes ganarle a un enemigo que ni siquiera es real? Los Zandalar conocemos este poder, y como ilusionistas tenemos un lugar en la tribu.\n\nObtén los Dechados de Poder de Zul'Gurub. La tribu te honrará y te regalará un poderoso manto de los que usan los mejores ilusionistas.",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "La magia es una fuerza primaria, básica, maleable por aquellos que son lo suficientemente fuertes para dominarla. El mojo es una extensión de este poder, y una de las potentes manipulaciones que se le pueden dar es en forma de ilusión. ¿Cómo puedes ganarle a un enemigo que ni siquiera es real? Los Zandalar conocemos este poder, y como ilusionistas tenemos un lugar en la tribu.\n\nObtén los Dechados de Poder de Zul'Gurub. La tribu te honrará y te regalará un poderoso manto de los que usan los mejores ilusionistas.",
+        "d662ba50fe76fa3898df": "¿Cómo fue tu incursión en Zul'Gurub? ¿Volviste locos a tus enemigos con el poder de la ilusión? Ilusión o no, sus muertes, y los Dechados de Poder que les quitaste, ayudarán a frustrar el ascenso de Hakkar.",
+        "f9808fb02b8f8173432f": "¡Éxito! ¡Serás honrado en la tribu de aquí en adelante! Sin duda, Zul'Gurub ha probado el poder de los Zandalar hoy, gracias a ti, $n.\n\nCon la bendición de la tribu, toma el manto del ilusionista Zandalar. Que te sirva bien."
+      },
       "summary": "Lleva a Al'tabim el que todo lo ve un chal Hakkari primigenio. También debes tener una reputación mínima de honorable con la tribu Zandalar.\n\nAl'tabim el que todo lo ve está en Isla Yojamba, en la Vega de Tuercespina.",
       "title": "Dechados de Poder: el Manto de ilusionista",
       "translationMetadata": {
@@ -140,6 +277,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +311,11 @@
     },
     "frFR": {
       "description": "La magie est une force brute, primitive, que seuls les plus forts peuvent modeler. Le mojo est une extension de notre pouvoir, et l’un de ses emplois les plus puissants est l’illusion. Comment peut-on espérer vaincre un ennemi qui n’est pas réellement là ? Nous, les Zandalar, nous apprécions ce pouvoir, et les illlusionnistes ont une place d’honneur au sein de la tribu.\n\nPrenez le Parangon de puissance dont nous avons besoin à Zul’Gurub. Si vous y parvenez, vous serez honoré par la tribu, et nous vous remettrons un mantelet puissant, utilisé par nos meilleurs illusionnistes !",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "La magie est une force brute, primitive, que seuls les plus forts peuvent modeler. Le mojo est une extension de notre pouvoir, et l’un de ses emplois les plus puissants est l’illusion. Comment peut-on espérer vaincre un ennemi qui n’est pas réellement là ? Nous, les Zandalar, nous apprécions ce pouvoir, et les illusionnistes ont une place d’honneur au sein de la tribu.\n\nPrenez le Parangon de puissance dont nous avons besoin à Zul’Gurub. Si vous y parvenez, vous serez honoré par la tribu, et nous vous remettrons un mantelet puissant, utilisé par nos meilleurs illusionnistes !",
+        "d662ba50fe76fa3898df": "Comment s’est passée votre expédition à Zul’Gurub ? Avez-vous rendu fous vos ennemis grâce à la puissance de l’illusion ? Illusion ou pas, leur mort – et la confiscation de leurs Parangons de puissance – nous aidera à contrecarrer l’ascension d’Hakkar. ",
+        "f9808fb02b8f8173432f": "Un succès ! Désormais, la tribu vous honorera, $N. Aujourd’hui, Zul’Gurub a goûté à la puissance des Zandalar, grâce à vous. \n \n Prenez ce mantelet d’illusionniste zandalar, avec la bénédiction de la tribu. Puisse-t-il bien vous servir !"
+      },
       "summary": "Ramenez un Châle primordial hakkari à Al’tabim Qui-voit-tout. La tribu Zandalar doit aussi vous Honorer (au minimum).\n\nAl’tabim Qui-voit-tout se trouve sur l’île de Yojamba, dans la vallée de Strangleronce.",
       "title": "Parangons de puissance : le mantelet d’illusionniste",
       "translationMetadata": {
@@ -164,6 +324,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +358,11 @@
     },
     "hrHR": {
       "description": "Magija je sirova, iskonska sila koju oblikuju oni dovoljno snažni za to. Mojo je naš produžetak te moći; jedna snažna manipulacija njome dolazi u obliku iluzije. Kako se netko može nadati pobjedi protiv neprijatelja koji zapravo nije ondje? Mi Zandalari znamo tu moć i zato iluzionisti imaju počasno mjesto u plemenu.\n\nUzmi potrebne Paragons of Power iz Zul'Guruba. Za to ćeš dobiti čast od plemena i moćan plašt kojim se služe naši najbolji iluzionisti!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Magija je sirova, iskonska sila koju oblikuju oni dovoljno snažni. Mojo je naš produžetak te moći; jedna od njezinih snažnih primjena jest iluzija. Kako se možeš nadati pobjedi nad neprijateljem koji zapravo nije ondje? Mi Zandalari poznajemo tu moć pa iluzionisti uživaju čast u plemenu.$B$BDonesi potrebne uzore moći iz Zul’Guruba i dobit ćeš čast plemena te moćni plašt naših najboljih iluzionista!",
+        "d662ba50fe76fa3898df": "Kako je prošao tvoj pohod u Zul’Gurub? Jesi li izludio neprijatelje snagom iluzije? Iluzija ili ne, njihova smrt i uzori moći koje si uzeo pomoći će zaustaviti Hakkarov uspon.",
+        "f9808fb02b8f8173432f": "Uspjeh! Od sada ćeš uživati čast u plemenu! Zul’Gurub je danas, zahvaljujući tebi, osjetio moć Zandalara, $N.$B$BUz blagoslov plemena primi plašt zandalskog iluzionista. Neka ti dobro služi."
+      },
       "summary": "Donesi Al'tabimu the All-Seeingu Primal Hakkari Shawl. Također moraš imati ugled Honored ili veći kod plemena Zandalar.\n\nAl'tabim the All-Seeing nalazi se na Yojamba Isleu u Stranglethorn Valeu.",
       "title": "Uzori moći: plašt iluzionista",
       "translationMetadata": {
@@ -189,6 +372,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7a8f6fd3636a602276c12f8bdd1a2e0d29ba0ddb2f3be4a583a3f34bc7225c72"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +405,11 @@
     },
     "itIT": {
       "description": "'A magia è na forza grezza che può essere plasmata dai cchiù forti. 'O mojo è 'a nuostr' estensione di chisto potere; na de' forme cchiù potenti di manipolazione è l'illusione. Come si può pensare di vincere contro nu nemico che nun sta veramente accà? Nuje Zandalari capiamo l'importanza di chisto potere e 'o teniamo in grande considerazione.\n\nA Zul'Gurub piglia 'e Modelli do' Potere richiesti e sarai onorato da' tribù che ti regalerà nu potente mantello usato dagli Illusionisti.",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "La magia è una forza grezza e primordiale, e plasmarla spetta a chi è abbastanza forte da farlo. Il mojo è il modo in cui noi estendiamo questo potere; e una delle forme più potenti in cui lo si manipola è l'illusione. Come si può davvero sperare di vincere contro un nemico che in realtà non c'è nemmeno? Noi Zandalar ne conosciamo il potere, e per questo gli illusionisti hanno un posto d'onore nella tribù.\n\nPrendi a Zul'Gurub i Modelli di Potere necessari — in cambio avrai l'onore della tribù e un potente coprispalla usato dai nostri illusionisti migliori!",
+        "d662ba50fe76fa3898df": "Com'è andata la tua incursione a Zul'Gurub? Hai fatto impazzire i nemici con il potere dell'illusione? Illusione o no, la loro morte — e i Modelli di Potere tolti loro — aiuteranno a fermare l'ascesa di Hakkar.",
+        "f9808fb02b8f8173432f": "Un successo! D’ora in poi sarai onorato nella tribù! Oggi Zul’Gurub ha assaporato la potenza degli Zandalar grazie a te, $N.$B$BCon la benedizione della tribù, prendi il manto dell’illusionista Zandalar. Che possa servirti bene."
+      },
       "summary": "Porta uno scialle Hakkari primordiale ad Al'tabim the All-Seeing. Devi anche avere una reputazione almeno Onorato con la tribù Zandalar.\n\nAl'tabim the All-Seeing si trova sull'isola di Yojamba, a Stranglethorn Vale.",
       "title": "Modelli del Potere: Il Coprispalla dell'Illusionista",
       "translationMetadata": {
@@ -215,6 +418,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -232,6 +452,11 @@
     },
     "koKR": {
       "description": "마력은 충분한 힘을 지닌 자가 형상화할 수 있는 천연적이고 근본적인 힘일세. 모조는 우리가 이 힘을 확장한 것인데, 환영술은 그러한 강력한 마력 조작의 한 형태라네. 실제로 있지도 않은 적에게 어떻게 이길 수 있겠는가? 우리 잔달라 부족은 이 진리의 위력을 잘 알기에 환영술사들을 명예롭게 여긴다네.\n\n줄구룹에서 우리가 필요로 하는 마력의 보물을 가져오게. 그러면 부족의 존경을 얻을 뿐 아니라 우리 최정예 환영술사들이 착용하는 강력한 어깨보호대를 주도록 하지!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "마력은 충분한 힘을 지닌 자가 형상화할 수 있는 천연적이고 근본적인 힘일세. 모조는 우리가 이 힘을 확장한 것인데, 환영술은 그러한 강력한 마력 조작의 한 형태라네. 실제로 있지도 않은 적에게 어떻게 이길 수 있겠는가? 우리 잔달라 부족은 이 진리의 위력을 잘 알기에 환영술사들을 명예롭게 여긴다네.\n\n줄구룹에서 우리가 필요로 하는 마력의 보물을 가져오게. 그러면 부족의 존경을 얻을 뿐 아니라 우리 최정예 환영술사들이 착용하는 강력한 어깨보호대를 주도록 하지!",
+        "d662ba50fe76fa3898df": "줄구룹 급습 작전은 어떻게 되었나? 환영술의 위력으로 적들이 미치게 했는가? 환영술을 사용했든 아니든 녀석들의 죽음과 그들에게서 빼앗아 온 마력의 보물은 학카르의 부활을 막아내는 데 도움이 될 걸세.",
+        "f9808fb02b8f8173432f": "성공했군! 이제부터 자네는 우리 부족에서 존경을 받게 될 걸세! 자네 덕분에 오늘 줄구룹이 확실히 잔달라 부족의 위력을 맛보게 되었네.\n\n부족민들의 축복과 함께 잔달라 환영술사의 어깨보호대를 받게. 유용하게 쓰이기를 바라네."
+      },
       "summary": "줄구룹에서 고대 학카리 어깨걸이를 구해 가시덤불 골짜기의 요잠바 섬에 있는 천리안 알타빔에게 가져가야 합니다.\n\n잔달라 부족에게 우호적 이상의 평판이어야 합니다.",
       "title": "마력의 보물: 환영술사의 어깨보호대",
       "translationMetadata": {
@@ -240,6 +465,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -256,6 +499,11 @@
     },
     "plPL": {
       "description": "Magia to surowa, pierwotna siła, którą kształtują dostatecznie silni. Mojo jest naszym sposobem korzystania z tej mocy; jednym z jej potężnych zastosowań jest iluzja. Jak można liczyć na zwycięstwo nad wrogiem, którego tak naprawdę nawet nie ma? My, Zandalar, znamy tę moc, dlatego iluzjoniści zajmują zaszczytne miejsce w plemieniu.\n\nZabierz potrzebne Wzorce Mocy z Zul'Gurub, a zdobędziesz uznanie plemienia i potężną opończę używaną przez naszych najlepszych iluzjonistów!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Magia to surowa, pierwotna siła kształtowana przez tych, którzy są dość silni. Mojo jest naszym przedłużeniem tej mocy; jednym z jej potężnych zastosowań jest iluzja. Jak pokonać wroga, którego w rzeczywistości tam nie ma? My, Zandalarowie, znamy tę moc, dlatego iluzjoniści zajmują zaszczytne miejsce w plemieniu.$B$BZdobądź potrzebne wzorce mocy z Zul’Gurub, a otrzymasz szacunek plemienia i potężny płaszcz naszych najlepszych iluzjonistów!",
+        "d662ba50fe76fa3898df": "Jak poszła wyprawa do Zul’Gurub? Czy moc iluzji doprowadziła twoich wrogów do szaleństwa? Iluzja czy nie, ich śmierć i odebrane im wzorce mocy pomogą powstrzymać wzrost potęgi Hakkara.",
+        "f9808fb02b8f8173432f": "Sukces! Odtąd plemię będzie cię szanować! Dzięki tobie Zul’Gurub zaznało dziś potęgi Zandalarów, $N.$B$BPrzyjmij płaszcz iluzjonisty Zandalarów z błogosławieństwem plemienia. Niech dobrze ci służy."
+      },
       "summary": "Przynieś Al'tabimowi Wszechwidzącemu pierwotny szal Hakkari. Musisz też mieć co najmniej poważaną reputację u plemienia Zandalar.\n\nAl'tabim Wszechwidzący znajduje się na Yojamba Isle w Stranglethorn Vale.",
       "title": "Wzorce Mocy: opończa iluzjonisty",
       "translationMetadata": {
@@ -265,6 +513,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7a8f6fd3636a602276c12f8bdd1a2e0d29ba0ddb2f3be4a583a3f34bc7225c72"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -283,6 +546,11 @@
     },
     "ptBR": {
       "description": "A magia é uma força primeva, pura e moldável apenas pelos fortes. O mojo é a nossa extensão desse poder e a ilusão é uma das mais fortes formas de manipulá-lo. Como se derrota um inimigo que nem existe? Esse poder é reconhecido em Zandalar, e os ilusionistas ocupam um lugar honrado em nossa tribo.\n\nSe você quiser obter a honra da tribo e as dragonas poderosas usadas pelos ilusionistas, vá para Zul'Gurub e traga-me os Epítomes de Poder.",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "A magia é uma força primeva, pura e moldável apenas pelos fortes. O mojo é a nossa extensão desse poder e a ilusão é uma das mais fortes formas de manipulá-lo. Como se derrota um inimigo que nem existe? Esse poder é reconhecido em Zandalar, e os ilusionistas ocupam um lugar honrado em nossa tribo.\n\nSe você quiser obter a honra da tribo e as dragonas poderosas usadas pelos ilusionistas, vá para Zul'Gurub e traga-me os Epítomes de Poder.",
+        "d662ba50fe76fa3898df": "Como foi sua incursão em Zul’Gurub? Enlouqueceu seus inimigos com o poder da ilusão? Ilusão ou não, a morte deles e os Epítomes de Poder retirados deles ajudarão a impedir a ascensão de Hakkar.",
+        "f9808fb02b8f8173432f": "Sucesso! De agora em diante, a tribo honrará você! Zul’Gurub certamente provou o poder dos Zandalar hoje, graças a você, $N.$B$BCom a bênção da tribo, aceite o dragonas do ilusionista Zandalar. Que elas sirvam bem a você."
+      },
       "summary": "Leve um Xale Hakkari Primevo a Al'tabim, que Tudo Vê, que se encontra na Ilha Yojamba, que fica na Selva do Espinhaço. Você precisa ser no mínimo <Honrado/Honrada> pela Tribo Zandalar.",
       "title": "Epítomes de poder: as dragonas do ilusionista",
       "translationMetadata": {
@@ -291,6 +559,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -308,6 +592,11 @@
     },
     "ruRU": {
       "description": "Магия – это бесформенная изначальная сила. Могучие маги управляют ее энергией в своих целях. Мы прибегаем к ней в своих заклятиях, но, чтобы создавать иллюзии, нужно особое могущество. Как можно победить врага, который существует только в твоем воображении? В Зандаларе знают цену подобной магии, и мастера иллюзий пользуются большим уважением в племени.\n\nПринеси из Зул'Гуруба Знаки Силы, и ты заслужишь уважение племени, а также оплечье мастера иллюзий.",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Магия – это бесформенная изначальная сила. Могучие маги управляют ее энергией в своих целях. Мы прибегаем к ней в своих заклятиях, но, чтобы создавать иллюзии, нужно особое могущество. Как можно победить врага, который существует только в твоем воображении? В Зандаларе знают цену подобной магии, и мастера иллюзий пользуются большим уважением в племени.\n\nПринеси из Зул'Гуруба Знаки Силы, и ты заслужишь уважение племени, а также оплечье мастера иллюзий.",
+        "d662ba50fe76fa3898df": "Как прошло твое вторжение в Зул'Гуруб?",
+        "f9808fb02b8f8173432f": "Привосходно! Сегодня Зул'Гуруб испытал мощь Зандаларов!\n\nИ в награду ты получишь оплечье зандаларского иллюзиониста!"
+      },
       "summary": "Принесите Ал'табиму Всевидящему изначальную лацерну Хаккари. Кроме того, вам необходимо заслужить как минимум уважительное отношение племени Зандалар.\n\nАльтабим Всевидящий живет на острове Йоджамба, в Тернистой долине.",
       "title": "Знаки Силы: оплечье мастера иллюзий",
       "translationMetadata": {
@@ -316,6 +605,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +639,11 @@
     },
     "svSE": {
       "description": "Magi är en rå, ursprunglig kraft som formas av dem som är starka nog. Mojo är vår förlängning av denna kraft. En mäktig manipulation av den tar formen av illusion. Hur kan man hoppas vinna mot en fiende som egentligen inte ens finns där? Vi Zandalar känner kraften i detta, och därför har illusionister en hedrad plats i stammen.\n\nTa de Paragons of Power som behövs från Zul'Gurub. För detta blir stammens ära och en mäktig mantel som våra bästa illusionister använder dina!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Magi är en rå, ursprunglig kraft som formas av dem som är starka nog. Mojo är vår förlängning av kraften; en mäktig användning är illusionen. Hur kan någon hoppas besegra en fiende som inte ens finns där? Vi Zandalar känner dess kraft, och därför har illusionister en hedrad plats i stammen.$B$BHämta de nödvändiga maktens förebilder från Zul’Gurub, så får du stammens heder och en mäktig mantel som våra bästa illusionister använder!",
+        "d662ba50fe76fa3898df": "Hur gick din räd in i Zul’Gurub? Drev du dina fiender till vansinne med illusionens kraft? Illusion eller inte, deras död och maktens förebilder du tog från dem hjälper till att stoppa Hakkars uppgång.",
+        "f9808fb02b8f8173432f": "Framgång! Du ska hädanefter hedras i stammen! Zul’Gurub har sannerligen fått smaka Zandalars styrka i dag, tack vare dig, $N.$B$BTa emot Zandalar-illusionistens mantel med stammens välsignelse. Må den tjäna dig väl."
+      },
       "summary": "Ge Al'tabim the All-Seeing en Primal Hakkari Shawl. Du måste också ha minst hedrat anseende hos Zandalar-stammen.\n\nAl'tabim the All-Seeing finns på Yojamba Isle i Stranglethorn Vale.",
       "title": "Maktens förebilder: Illusionistens axelmantel",
       "translationMetadata": {
@@ -341,6 +653,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7a8f6fd3636a602276c12f8bdd1a2e0d29ba0ddb2f3be4a583a3f34bc7225c72"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -359,6 +686,11 @@
     },
     "trTR": {
       "description": "Büyü, onu şekillendirecek kadar güçlü olanların elinde biçim alan ham ve ilkel bir kuvvettir. Mojo bu gücün bizim elimizdeki uzantısıdır; onu güçlü biçimde kullanmanın yollarından biri de yanılsamadır. Gerçekte orada bile olmayan bir düşmana karşı zafer kazanmayı kim umabilir? Biz Zandalar bunun gücünü biliriz; bu yüzden illüzyonistler kabile içinde onurlu bir yere sahiptir.\n\nGereken Güç Nişanelerini Zul'Gurub'dan al; karşılığında kabilenin saygısı ve en iyi illüzyonistlerimizin kullandığı güçlü bir omuzluk senin olacak!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Büyü, yeterince güçlü olanların şekillendirebildiği ham ve ilkel bir kuvvettir. Mojo bu gücün bizim uzantımızdır; yanılsama onun güçlü kullanımlarından biridir. Gerçekte orada bile olmayan bir düşmana karşı nasıl kazanmayı umabilirsin? Biz Zandalar bunun gücünü biliriz, bu yüzden yanılsamacılar kabilede saygın bir yere sahiptir.$B$BZul’Gurub’dan gereken Güç Örnekleri’ni al; kabilenin onuru ve en iyi yanılsamacılarımızın kullandığı güçlü bir omuzluk senin olsun!",
+        "d662ba50fe76fa3898df": "Zul’Gurub seferin nasıl geçti? Yanılsamanın gücüyle düşmanlarını deliye çevirdin mi? Yanılsama olsun ya da olmasın, ölümleri ve onlardan alınan Güç Örnekleri Hakkar’ın yükselişini engellemeye yardım edecek.",
+        "f9808fb02b8f8173432f": "Başardın! Bundan böyle kabilede onurlandırılacaksın! Senin sayende Zul’Gurub bugün Zandalar’ın gücünü tattı, $N.$B$BKabilenin kutsamasıyla Zandalar yanılsamacısının omuzluğunu al. Sana iyi hizmet etsin."
+      },
       "summary": "Her Şeyi Gören Al'tabim'e bir İlkel Hakkari Şalı götür. Zandalar Kabilesi nezdinde en az Onurlu itibara da sahip olmalısın.\n\nHer Şeyi Gören Al'tabim, Stranglethorn Vale'deki Yojamba Isle'da bulunur.",
       "title": "Gücün Örnekleri: İllüzyoncunun Omuzluğu",
       "translationMetadata": {
@@ -368,6 +700,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7a8f6fd3636a602276c12f8bdd1a2e0d29ba0ddb2f3be4a583a3f34bc7225c72"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -386,6 +733,11 @@
     },
     "ukUA": {
       "description": "Магія — це чиста, первісна сила, яку можуть використовувати лише ті, хто має достатньо сили. Моджо — це наше продовження цієї сили. Однією з таких потужних маніпуляцій з нею є створення ілюзій. Як можна перемогти супротивника, якого насправді немає? Ми, Зандалари, знаємо цю силу, і саме тому ілюзіоністи займають почесне місце в нашому племені.\n\nЗбери взірці могутності в Зул'Ґурубі — за це отримаєш повагу нашого племені та потужні наплічники, якими користуються наші найкращі ілюзіоністи!",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "Магія — сира, первісна сила, яку формують ті, хто достатньо сильний. Моджо — наше продовження цієї сили; один із могутніх способів її використання — ілюзія. Як перемогти ворога, якого насправді навіть немає? Ми, зандалари, знаємо її силу, тому ілюзіоністи посідають почесне місце в племені.$B$BЗдобудь потрібні Зразки могутності із Зул’Ґуруба — і отримаєш пошану племені та могутню мантію наших найкращих ілюзіоністів!",
+        "d662ba50fe76fa3898df": "Як минув твій похід до Зул’Ґуруба? Ти звів ворогів з розуму силою ілюзій? Ілюзія чи ні, їхня смерть і відібрані в них Зразки могутності допоможуть зупинити піднесення Гаккара.",
+        "f9808fb02b8f8173432f": "Успіх! Відтепер тебе шануватимуть у племені! Завдяки тобі Зул’Ґуруб сьогодні відчув силу Зандалару, $N.$B$BІз благословення племені прийми мантію ілюзіоніста Зандалару. Нехай вона добре тобі служить."
+      },
       "summary": "Принесіть Ал'табіму Всевидющому первісну шаль Гаккарі. Ви також повинні мати репутацію не нижче почесної з племенем Зандалар.\n\nАл'табім Всевидющий знаходиться на острові Йоджамба в Тернистій долині.",
       "title": "Взірці могутності: наплічники ілюзіоніста",
       "translationMetadata": {
@@ -396,6 +748,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "7a8f6fd3636a602276c12f8bdd1a2e0d29ba0ddb2f3be4a583a3f34bc7225c72"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +783,11 @@
     },
     "zhCN": {
       "description": "魔法是供强者随心所欲运用的原始力量。魔精便是这种力量的外延，我们以幻术的形式来操纵这种魔法。谁希望自己打败的敌人并非真实的存在呢？赞达拉部族了解这种魔法，幻术师在部族中倍受尊敬。\n\n从祖尔格拉布带回我需要的权力珍宝吧——如果你成功的话，你就将受到部族的尊敬，并获得幻术师所使用的衬肩！",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "魔法是供强者随心所欲运用的原始力量。魔精便是这种力量的外延，我们以幻术的形式来操纵这种魔法。谁希望自己打败的敌人并非真实的存在呢？赞达拉部族了解这种魔法，幻术师在部族中倍受尊敬。\n\n从祖尔格拉布带回我需要的权力珍宝吧——如果你成功的话，你就将受到部族的尊敬，并获得幻术师所使用的衬肩！",
+        "d662ba50fe76fa3898df": "祖尔格拉布的情况如何?你利用幻术的力量打败敌人了吗?无论如何，他们都得死─从他们那儿取必的权力珍宝将会帮助我们打败哈卡。",
+        "f9808fb02b8f8173432f": "成功了!你从今後将得到整个部族的尊敬!祖尔格拉布的家伙们一定尝到了赞达拉的厉害，谢谢你，$N。\n\n带着部族的祝福，请收下赞达拉幻术师的披肩。愿它助你一臂之力。\n"
+      },
       "summary": "从祖尔格拉布把以下权力珍宝交给全知者阿塔比姆：1条原始哈卡莱披肩。你还必须在赞达拉部族中达到尊敬或更高的声望。\n\n全知者阿塔比姆克在荆棘谷的尤亚姆巴岛上。",
       "title": "权力珍宝：幻术师衬肩",
       "translationMetadata": {
@@ -424,6 +796,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +830,11 @@
     },
     "zhTW": {
       "description": "魔法是供強者隨心所欲運用的原始力量。魔精便是這種力量的延伸；我們以幻術的形式來操縱這種魔法。誰希望自己打敗的敵人並非真實的存在呢？我們贊達拉部族瞭解這種魔法，幻術師在部族中倍受尊敬。\n\n從祖爾格拉布帶回我需要的權力珍寶吧——如果你成功的話，你就將受到部族的尊敬，並獲得幻術師所使用的襯肩！",
+      "dialogue": {
+        "c3131ea7b48bfb0ad2ee": "魔法是供強者隨心所欲運用的原始力量。魔精便是這種力量的延伸；我們以幻術的形式來操縱這種魔法。誰希望自己打敗的敵人並非真實的存在呢？我們贊達拉部族瞭解這種魔法，幻術師在部族中倍受尊敬。\n\n從祖爾格拉布帶回我需要的權力珍寶吧——如果你成功的話，你就將受到部族的尊敬，並獲得幻術師所使用的襯肩！",
+        "d662ba50fe76fa3898df": "祖爾格拉布的情況如何?你利用幻術的力量打敗敵人了嗎?無論如何，他們都得死―從他們那兒取回的權力珍寶將會幫助我們打敗哈卡。",
+        "f9808fb02b8f8173432f": "成功了!你從今後將得到整個部族的尊敬!祖爾格拉布的傢伙們一定嚐到了贊達拉的厲害，謝謝你，$N。\n\n帶着部族的祝福，請收下贊達拉幻術師的披肩。願它助你一臂之力。"
+      },
       "summary": "從祖爾格拉布把以下權力珍寶交給全知者阿塔比姆：1條原始哈卡萊披肩。妳還必須在贊達拉部族中達到尊敬或更高的聲望。\n\n全知者阿塔比姆克在荊棘谷的尤亞姆巴島上。",
       "title": "權力珍寶：幻術師襯肩",
       "translationMetadata": {
@@ -448,6 +843,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.c3131ea7b48bfb0ad2ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d662ba50fe76fa3898df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f9808fb02b8f8173432f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

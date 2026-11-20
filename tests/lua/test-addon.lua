@@ -1188,7 +1188,7 @@ PanelTemplates_SelectTab = function(tab) tab.selected = true end
 PanelTemplates_DeselectTab = function(tab) tab.selected = false end
 for _, file in ipairs({
     "database/database-api", "core/safety", "locales/settings-locales", "settings/settings", "settings/minimap-button", "locales/debug-locales", "diagnostics/error-dialog", "diagnostics/diagnostics", "diagnostics/debug-display", "diagnostics/benchmark", "tooltips/tooltip-layout", "quests/quest-report", "quests/missing-quest",
-    "quests/quest-data", "database/item-data", "database/npc-tooltip-data", "tooltips/english-tooltip-formats", "quests/quest-state", "quests/quest-page", "quests/quest-interaction-reader", "quests/reward-tooltips", "tooltips/tooltip-state", "tooltips/tooltip-comparisons", "tooltips/tooltip-component", "tooltips/tooltip-companions", "tooltips/spell-live-values", "tooltips/tooltip-descriptions",
+    "quests/quest-data", "quests/quest-dialogue", "database/item-data", "database/npc-tooltip-data", "tooltips/english-tooltip-formats", "quests/quest-state", "quests/quest-page", "quests/quest-interaction-reader", "quests/reward-tooltips", "tooltips/tooltip-state", "tooltips/tooltip-comparisons", "tooltips/tooltip-component", "tooltips/tooltip-companions", "tooltips/spell-live-values", "tooltips/tooltip-descriptions",
     "tooltips/policies/toolkit", "tooltips/policies/item-comparison", "tooltips/policies/item", "tooltips/policies/spell", "tooltips/policies/talent", "tooltips/policies/npc",
     "tooltips/policies/quest-tracker",
     "tooltips/components/talent-tooltip", "tooltips/components/mount-tooltip", "tooltips/components/pet-tooltip", "tooltips/components/appearance-tooltip", "tooltips/components/activity-tooltip", "tooltips/components/taxi-node-tooltip", "tooltips/components/item-tooltip", "tooltips/components/spell-tooltip",
@@ -1359,6 +1359,16 @@ near(page.background:GetWidth() * Addon.panel.Content:GetEffectiveScale(),
 equal(body.frame.template, "ScrollFrameTemplate", "native quest scrolling template")
 equal(body.frame.kind, "EventScrollFrame", "same scrolling intrinsic as quest details")
 equal(body.frame.ScrollBar:GetParent(), body.frame, "native scrollbar belongs to English page")
+local details = QuestMapFrame.DetailsFrame
+local sourceBar = details.ScrollFrame.ScrollBar
+sourceBar.left, sourceBar.top = 1000, 730
+sourceBar:SetSize(11, 160)
+page:RefreshNativeLayout()
+local _, translatedBarAnchor, _, translatedBarX, translatedBarY = body.frame.ScrollBar:GetPoint(1)
+equal(translatedBarAnchor, body.frame:GetParent(), "map scrollbar anchors to the translated content")
+equal(translatedBarX, 300, "map scrollbar copies the native horizontal inset")
+equal(translatedBarY, -30, "map scrollbar copies the native top inset")
+equal(body.frame.ScrollBar:GetWidth(), 11, "map scrollbar copies the native width")
 equal(body.frame.clipsChildren == true, false, "viewport must not clip its native scrollbar")
 equal(page.rewards.clipsChildren, true, "native rewards clipping")
 equal(QuestInfoTitleHeader:GetText(), "Titre français", "French title stays unchanged")
@@ -1689,11 +1699,13 @@ equal(SmartNavigation:GetCurrentButton(), nativeQuestRow, "refresh preserves nat
 equal(Addon.current.mode, "collapsed", "native quest focus does not select the bookmark state")
 SmartNavigation:SelectButton(Addon.toggle)
 equal(Addon.current.mode, "bookmarkFocused", "manual selection enters bookmark focus before Back")
-Addon.toggle:Fire("OnEnter")
 equal(Addon:GetWidgetTooltip():IsShown(), true, "manual bookmark selection shows its tooltip")
 Addon:ShowTranslationTooltip()
 equal(Addon.tooltip:IsShown(), false, "bookmark focus cannot inherit a quest tooltip from its details parent")
 equal(Addon:GetWidgetTooltip():GetOwner(), Addon.toggle, "bookmark keeps its own reopen tooltip")
+SmartNavigation:SelectButton(nativeQuestRow)
+equal(Addon:GetWidgetTooltip():IsShown(), false, "leaving bookmark focus hides its reopen tooltip")
+SmartNavigation:SelectButton(Addon.toggle)
 QuestMapFrame.DetailsFrame:Hide()
 equal(Addon.current.mode, "unavailable", "returning to the quest list withdraws Rosetta")
 equal(Addon.toggle:IsVisible(), false, "bookmark is absent from the quest list")
@@ -2752,6 +2764,145 @@ end
 
 function Frame:RebuildFromTooltipInfo()
     if self.lastTooltipRequest then tooltipData(self, unpack(self.lastTooltipRequest)) end
+end
+
+do
+    local previousLocale, previousLabels = GetLocale, Addon.GetClientLabel
+    GetLocale = function() return "frFR" end
+    Addon.GetClientLabel = function(_, key, locale)
+        return ForeverRosettaStoneDB:GetGlobalStringByKey(key, locale)
+    end
+    local previousNone = Enum.TooltipDataLineType.None
+    Enum.TooltipDataLineType.None = 0
+    local function itemRow(text, lineType, enchantID)
+        return { type = lineType, leftText = text, enchantID = enchantID }
+    end
+    local function english(line)
+        return Addon:GetEnglishTooltipLine({}, line, "item", 5315)
+    end
+    local spirit = itemRow("Enchanté : Esprit +3", 15, 243)
+    local oil = itemRow("Huile de sorcier mineure (30 min)", 0)
+    equal(english(spirit), "Enchanted: Spirit +3", "captured permanent enchantment")
+    equal(english(oil), "Minor Wizard Oil (30 min)", "captured untyped temporary enchantment")
+    equal(english(itemRow("Huile de sorcier mineure (29 min)", 0)),
+        "Minor Wizard Oil (29 min)", "keep the remaining duration instead of the catalog duration")
+    equal(english(itemRow("Huile de sorcier mineure (1 heure)", 0)),
+        "Minor Wizard Oil (1 hour)", "localize the time unit and its plural")
+    equal(english(itemRow("Enchanté : Endurance +1 et armure +8", 15, 15)),
+        "Enchanted: Stamina +1 and Armor +8", "keep both rendered modifier amounts")
+    equal(english(itemRow("Enchanté : Esprit +4", 15, 243)), nil,
+        "preserve a permanent effect whose source wording does not match the ID")
+    equal(english(itemRow("Huile de sorcier mineure", 0)), nil, "require the native duration on untyped rows")
+    equal(english(itemRow("Huile inconnue (30 min)", 0)), nil, "preserve unknown temporary effects")
+    local previousSpellTranslation = Addon.TranslateLiveSpellDescription
+    Addon.TranslateLiveSpellDescription = function(_, spellID, locale, body)
+        if spellID == 1225951 and locale == "enUS" and body == "Effet du sort" then return "Spell effect" end
+    end
+    equal(english(itemRow("Enchanté : Effet du sort", 15, 7919)), "Enchanted: Spell effect",
+        "resolve the owned spell reference through the existing tooltip translator")
+    Addon.TranslateLiveSpellDescription = previousSpellTranslation
+    local german = Addon:GetLocalizedTooltipLine(spirit, "item", 5315, "deDE", {})
+    local germanFormat = ForeverRosettaStoneDB:GetGlobalStringByKey("ENCHANTED_TOOLTIP_LINE", "deDE")
+    equal(german, germanFormat:gsub("%%s", "Willenskraft +3"), "render a non-English target")
+    equal(english(itemRow("Enchanté : +24 Armure", 15, 122)), "Enchanted: +24 Armor",
+        "resolve the armor kit through the permanent enchantment table")
+    equal(Addon:GetLocalizedTooltipLine(spirit, "item", 5315, "itIT", {}), "Incantato: Spirito +3",
+        "load the localized prefix and value from the additional locale pack")
+    Enum.TooltipDataLineType.None = previousNone
+    GetLocale, Addon.GetClientLabel = previousLocale, previousLabels
+end
+
+do
+    local previousInspect, previousUnitIsUnit = InspectFrame, UnitIsUnit
+    local previousInventoryID, previousCollection = GetInventoryItemID, C_TransmogCollection
+    local previousLocale, previousTarget, previousLabels = GetLocale, Addon.GetTargetLocale, Addon.GetClientLabel
+    local previousNone = Enum.TooltipDataLineType.None
+    Enum.TooltipDataLineType.None = 0
+    InspectFrame = { unit = "target", IsShown = function() return true end }
+    UnitIsUnit = function(left, right) return left == right end
+    GetLocale = function() return "frFR" end
+    Addon.GetTargetLocale = function() return "enUS" end
+    Addon.GetClientLabel = function(_, key, locale) return ForeverRosettaStoneDB:GetGlobalStringByKey(key, locale) end
+    C_TransmogCollection = {
+        GetInspectItemTransmogInfoList = function()
+            return { [1] = { appearanceID = 77344 }, [16] = { appearanceID = 309588 } }
+        end,
+        GetSourceItemID = function(id) return ({ [77344] = 134110, [309588] = 276102 })[id] end,
+    }
+    local function render(id, slot, unit, text, liveID)
+        GetInventoryItemID = function() return liveID or id end
+        local source, tip = CreateFrame("GameTooltip", nil, UIParent), CreateFrame("GameTooltip", nil, UIParent)
+        local lines = {
+            { type = Enum.TooltipDataLineType.ItemName, leftText = "Native title", lineIndex = 1 },
+            { type = 0, leftText = "Transmogrifié en :", lineIndex = 2 },
+            { type = 0, leftText = text, lineIndex = 3 },
+        }
+        for _, line in ipairs(lines) do source:AddLine(line.leftText) end
+        source.processingInfo = { getterName = "GetInventoryItem", getterArgs = { unit, slot } }
+        Addon:FillEnglishTooltip({ kind = "item", id = id, name = ForeverRosettaStoneDB:GetItemName(id, "enUS"),
+            source = source, tip = tip, data = { lines = lines } })
+        return tip:GetLeftLine(3):GetText()
+    end
+    equal(render(276102, 16, "target", "Lame-vent"), "Bladewind", "inspected weapon appearance translates by source ID")
+    equal(render(9969, 1, "target", "Heaume caché"), "Hidden Helm", "hidden helm uses its own source ID")
+    equal(render(9969, 1, "player", "Heaume caché"), "Heaume caché", "another unit cannot use the inspect cache")
+    local priorLocation, priorApplied = ItemLocation, C_Item.GetAppliedItemTransmogInfo
+    local priorSourceLookup = C_TransmogCollection.GetSourceItemID
+    ItemLocation = { CreateFromEquipmentSlot = function(_, slot) return { slot = slot } end }
+    C_Item.GetAppliedItemTransmogInfo = function(location)
+        equal(location.slot, 16, "own transmog uses the equipped item location")
+        return { appearanceID = 156293, secondaryAppearanceID = 0 }
+    end
+    C_TransmogCollection.GetSourceItemID = function(sourceID)
+        if sourceID == 156293 then return 1411 end
+        return priorSourceLookup(sourceID)
+    end
+    equal(render(15397, 16, "player", "Vieux bâton usé"), "Withered Staff", "use the equipped item's applied appearance")
+    equal(render(15397, 16, "player", "Lame-vent"), "Lame-vent", "reject a name that differs from the applied appearance")
+    local priorModel = CharacterModelScene
+    local modelVisible, modelReads = true, 0
+    CharacterModelScene = {
+        IsVisible = function() return modelVisible end,
+        GetPlayerActor = function()
+            return { GetItemTransmogInfo = function(_, slot)
+                equal(slot, 16, "read the rendered appearance of the hovered slot")
+                modelReads = modelReads + 1
+                return { appearanceID = 156293, secondaryAppearanceID = 0 }
+            end }
+        end,
+    }
+    equal(render(15397, 16, "player", "Vieux bâton usé"), "Withered Staff", "prefer an applied item appearance")
+    equal(modelReads, 0, "no model lookup when the item reports an applied appearance")
+    C_Item.GetAppliedItemTransmogInfo = function() return { appearanceID = 0, secondaryAppearanceID = 0 } end
+    equal(render(15397, 16, "player", "Vieux bâton usé"), "Withered Staff",
+        "use the character sheet when the captured equipped item returns zero appearances")
+    equal(render(15397, 16, "player", "Autre apparence"), "Autre apparence", "verify the name from the scene")
+    modelVisible = false
+    equal(render(15397, 16, "player", "Vieux bâton usé"), "Vieux bâton usé", "ignore hidden character scenes")
+    equal(modelReads, 2, "the hidden scene is never read")
+    local priorCurrent = C_Item.GetCurrentItemTransmogInfo
+    C_Item.GetCurrentItemTransmogInfo = function(location)
+        equal(location.slot, 18, "read the current appearance of the ranged weapon slot")
+        return { appearanceID = 158636, secondaryAppearanceID = 0 }
+    end
+    C_TransmogCollection.GetSourceItemID = function(sourceID)
+        if sourceID == 158636 then return 6677 end
+        return priorSourceLookup(sourceID)
+    end
+    equal(render(6677, 18, "player", "Baguette de sortilèges"), "Spellcrafter Wand",
+        "resolve the wand with zero applied appearances and no readable character model")
+    equal(render(6677, 18, "player", "Autre apparence"), "Autre apparence",
+        "the current appearance must match the row")
+    C_Item.GetCurrentItemTransmogInfo = priorCurrent
+    CharacterModelScene = priorModel
+    ItemLocation, C_Item.GetAppliedItemTransmogInfo = priorLocation, priorApplied
+    C_TransmogCollection.GetSourceItemID = priorSourceLookup
+    equal(render(9969, 1, "target", "Ancienne apparence"), "Ancienne apparence", "reject stale appearance wording")
+    equal(render(9969, 1, "target", "Heaume caché", 25), "Heaume caché", "reject stale equipment data")
+    InspectFrame, UnitIsUnit = previousInspect, previousUnitIsUnit
+    GetInventoryItemID, C_TransmogCollection = previousInventoryID, previousCollection
+    GetLocale, Addon.GetTargetLocale, Addon.GetClientLabel = previousLocale, previousTarget, previousLabels
+    Enum.TooltipDataLineType.None = previousNone
 end
 
 checks = checks + assert(loadfile("tests/lua/test-tooltip-component-contract.lua"))(Addon)

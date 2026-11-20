@@ -76,6 +76,7 @@ for filename, class_name in (
     ('test-client-hotfix.py', 'ClientHotfixTests'),
     ('test-shared-tooltip-rows.py', 'SharedTooltipRowsTests'),
     ('test-official-text-policy.py', 'OfficialTextPolicyTests'),
+    ('test-dialogue-jobs.py', 'DialogueJobsTests'),
     ('test-english-catalog-scope.py', 'EnglishCatalogScopeTests'),
     ('test-matrix-classification.py', 'MatrixClassificationTests'),
     ('test-id-only-matrix-harness.py', 'IdOnlyHarnessTests'),

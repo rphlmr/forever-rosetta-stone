@@ -1,8 +1,36 @@
 {
   "areaId": 361,
+  "dialogueContexts": {
+    "048ada91b8a48c647a74": {
+      "lineId": "q:4741:complete",
+      "npcId": 10306,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "0a93ec818501775ca655": {
+      "lineId": "q:4741:accept",
+      "npcId": 10306,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "699597d1abd50121a15b": {
+      "lineId": "q:4741:progress",
+      "npcId": 10306,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "V severních oblastech Winterspringu jsou wildkinové ještě zuřivější. Musíme tam pokračovat v našich opatřeních.\n\nVyraz na lov měsícem dotčených sovodlaků ve Winterspringu a prozkoumej oblast, kterou obývají.\n\nJe to nebezpečná půda, ale vím, že tu výzvu zvládneš. Vrať se ke mně, až zabiješ třináct wildkinů.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Cítím, že tě tvá práce těší. A věřím, že jsme na něco přišli.",
+        "0a93ec818501775ca655": "V severních oblastech Winterspringu jsou divocí tvorové ještě zuřivější. Musíme tam pokračovat v našem úsilí.$B$BUlov měsíční soví bestie ve Winterspringu a prozkoumej oblast, kde žijí.$B$BJe to nebezpečné území, ale vím, že ten úkol zvládneš. Vrať se ke mně, až zabiješ 13 těch tvorů.",
+        "699597d1abd50121a15b": "Neříkej mi, že se bojíš! Do toho!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +86,11 @@
     },
     "daDK": {
       "description": "I de nordlige områder af Winterspring bliver Wildkin endnu mere vilde. Vi må fortsætte vores indsats dér.\n\nJag de måneberørte uglebæster i Winterspring og udforsk det område, de bebor.\n\nDet er farligt terræn, men jeg ved, at du kan klare udfordringen. Vend tilbage til mig, når du har dræbt 13 af wildkin-væsnerne.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Jeg fornemmer, at du nyder dit arbejde. Og jeg tror, vi er på sporet af noget.",
+        "0a93ec818501775ca655": "I de nordlige dele af Winterspring er vilddyrene endnu mere glubske. Vi må fortsætte vores indsats der.$B$BJagt de måneberørte uglebæster i Winterspring, og undersøg området, de lever i.$B$BDet er farligt terræn, men jeg ved, at du kan klare udfordringen. Vend tilbage, når du har dræbt 13 af vilddyrene.",
+        "699597d1abd50121a15b": "Sig ikke, at du er for bange! Kom af sted!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +107,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2fb8ab45a02a524377f8331374ff46cd786876fcacedae1e2415a1aeddfa1798"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +145,11 @@
     },
     "deDE": {
       "description": "Die Wildekin in den nördlichen Bereichen von Winterspring werden immer aggressiver. Wir müssen unsere Aktivitäten dort fortsetzen.\n\nJagt die mondbestrahlten Eulenbestien von Winterspring und untersucht das Gebiet, das sie bewohnen.\n\nDie Gegend dort ist gefährlich, aber ich weiß, dass Ihr der Aufgabe gewachsen seid. Kehrt zu mir zurück, sobald Ihr 13 der Wildekin getötet habt.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Ich kann spüren, dass Eure Arbeit Euch Spaß macht. Und ich glaube, wir sind hier etwas auf der Spur. ",
+        "0a93ec818501775ca655": "Die Wildekin in den nördlichen Bereichen von Winterspring werden immer aggressiver. Wir müssen unsere Aktivitäten dort fortsetzen.\n\nJagt die mondbestrahlten Eulenbestien von Winterspring und untersucht das Gebiet, das sie bewohnen.\n\nDie Gegend dort ist gefährlich, aber ich weiß, dass Ihr der Aufgabe gewachsen seid. Kehrt zu mir zurück, sobald Ihr 13 der Wildekin getötet habt.",
+        "699597d1abd50121a15b": "Sag mir nicht, dass du zu viel Angst hast! Los geht's!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +165,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +205,11 @@
     },
     "enUS": {
       "description": "In the northern areas of Winterspring, the Wildkin grow even more ferocious. We must continue our measures there.\n\nHunt the moontouched owlbeasts in Winterspring, and explore the area they inhabit.\n\nThis is dangerous ground, but I know that you will be able to handle the challenge. Return to me after you have slain 13 of the wildkin.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "I sense that you are enjoying your work. And I believe that we are onto something here.",
+        "0a93ec818501775ca655": "In the northern areas of Winterspring, the Wildkin grow even more ferocious. We must continue our measures there.$B$BHunt the moontouched owlbeasts in Winterspring, and explore the area they inhabit.$B$BThis is dangerous ground, but I know that you will be able to handle the challenge. Return to me after you have slain 13 of the wildkin.",
+        "699597d1abd50121a15b": "Don't tell me that you're too scared! Get going!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +225,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -157,6 +266,11 @@
     },
     "esES": {
       "description": "En las zonas septentrionales de Cuna del Invierno, los lechúcicos son todavía más feroces. Debemos seguir allí con nuestras medidas.\n\nDa caza a las lechubestias lunadón de Cuna del Invierno y explora la zona en la que habitan.\n\nEs un terreno muy peligroso, pero sé que podrás enfrentarte al desafío. Vuelve a verme cuando hayas acabado con 13 de esos lechúcicos.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Tengo la sensación de que disfrutas con tu trabajo. Y creo que estamos a punto de dar con algo.",
+        "0a93ec818501775ca655": "En las zonas septentrionales de Cuna del Invierno, los lechúcicos son todavía más feroces. Debemos seguir allí con nuestras medidas.\n\nDa caza a las lechubestias lunadón de Cuna del Invierno y explora la zona en la que habitan.\n\nEs un terreno muy peligroso, pero sé que podrás enfrentarte al desafío. Vuelve a verme cuando hayas acabado con 13 de esos lechúcicos.",
+        "699597d1abd50121a15b": "¡No me digas que tienes demasiado miedo!  ¡Ponerse en marcha!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +286,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -194,6 +326,11 @@
     },
     "esMX": {
       "description": "En las zonas septentrionales de Cuna del Invierno, los lechúcicos salvajes son todavía más feroces. Debemos seguir allí con nuestras medidas.\n\nDa caza a las lechubestias lunadón de Cuna del Invierno y explora la zona en la que habitan.\n\nEs un terreno muy peligroso, pero sé que podrás enfrentarte al desafío. Vuelve a verme cuando hayas acabado con 13 de esos lechúcicos salvajes.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Tengo la sensación de que disfrutas con tu trabajo. Y creo que estamos a punto de dar con algo.",
+        "0a93ec818501775ca655": "En las zonas septentrionales de Cuna del Invierno, los lechúcicos salvajes son todavía más feroces. Debemos seguir allí con nuestras medidas.\n\nDa caza a las lechubestias lunadón de Cuna del Invierno y explora la zona en la que habitan.\n\nEs un terreno muy peligroso, pero sé que podrás enfrentarte al desafío. Vuelve a verme cuando hayas acabado con 13 de esos lechúcicos salvajes.",
+        "699597d1abd50121a15b": "¡No me digas que estás demasiado asustado! ¡Ponte en marcha!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +346,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -231,6 +386,11 @@
     },
     "frFR": {
       "description": "Dans la partie nord du Berceau-de-l'Hiver, les Indomptables sont encore plus féroces. Nous devons continuer nos mesures là-bas.\n\nChassez les Chouettards lunaires du Berceau-de-l'Hiver, et explorez la zone où ils vivent.\n\nC’est un terrain dangereux, mais je sais que vous êtes à la hauteur de la tâche. Revenez me voir après avoir tué 13 Indomptables.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "J'ai l'impression que vous aimez votre travail. Et je crois que l'on a découvert quelque chose ici. ",
+        "0a93ec818501775ca655": "Dans la partie nord du Berceau-de-l'Hiver, les Indomptables sont encore plus féroces. Nous devons continuer nos mesures là-bas.\n\nChassez les Chouettards lunaires du Berceau-de-l'Hiver, et explorez la zone où ils vivent.\n\nC’est un terrain dangereux, mais je sais que vous êtes à la hauteur de la tâche. Revenez me voir après avoir tué 13 Indomptables.",
+        "699597d1abd50121a15b": "Ne me dites pas que vous avez trop peur ! Allez-y !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +406,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -268,6 +446,11 @@
     },
     "hrHR": {
       "description": "U sjevernim dijelovima Winterspringa wildkini postaju još svirepiji. Moramo ondje nastaviti s našim mjerama.\n\nLovi mjesecom dotaknute sovozvijeri u Winterspringu i istraži područje koje nastanjuju.\n\nOvo je opasno područje, ali znam da ćeš se moći nositi s izazovom. Vrati mi se nakon što ubiješ 13 wildkina.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Osjećam da uživaš u svojem poslu. I vjerujem da smo nečemu na tragu.",
+        "0a93ec818501775ca655": "U sjevernim dijelovima Winterspringa divljaci postaju još svirepiji. Ondje moramo nastaviti s našim mjerama.$B$BLovi mjesecom dotaknute sovozvijeri u Winterspringu i istraži područje koje nastanjuju.$B$BTo je opasan teren, ali znam da se možeš nositi s izazovom. Vrati mi se nakon što ubiješ 13 divljaka.",
+        "699597d1abd50121a15b": "Nemoj mi reći da se previše bojiš! Kreni!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +467,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2fb8ab45a02a524377f8331374ff46cd786876fcacedae1e2415a1aeddfa1798"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +505,11 @@
     },
     "itIT": {
       "description": "Nelle zone settentrionali di Fontefredda, i Silvagufo diventano ancora più feroci. Dobbiamo continuare a intervenire laggiù.\n\nCaccia i Guforsi Toccati dalla Luna a Fontefredda ed esplora la zona in cui vivono.\n\nÈ un territorio pericoloso, ma so che saprai affrontare la sfida. Torna da me dopo aver ucciso 13 Silvagufo.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Sento che questo lavoro ti piace. E credo che qui siamo sulla pista di qualcosa.",
+        "0a93ec818501775ca655": "Nelle zone settentrionali di Winterspring i Wildkin si fanno ancora più feroci. Dobbiamo continuare a prendere provvedimenti anche lì.\n\nDai la caccia agli owlbeast toccati dalla luna a Winterspring, ed esplora la zona in cui vivono.\n\nÈ un territorio pericoloso, ma so che saprai essere all'altezza. Torna da me quando avrai ucciso 13 di quei wildkin.",
+        "699597d1abd50121a15b": "Non dirmi che hai troppa paura! Muoviti!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +526,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2fb8ab45a02a524377f8331374ff46cd786876fcacedae1e2415a1aeddfa1798"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -346,6 +567,11 @@
     },
     "koKR": {
       "description": "더욱 사나운 올빼미야수들이 여명의 설원 북부 지방에 출몰하여 호드를 성가시게 하고 있다네. 이 녀석들도 처치해야 해.\n\n여명의 설원에서 달빛 깃든 올빼미 야수들을 처치하고 녀석들이 서식하는 장소를 탐험하게.\n\n위험한 곳이긴 하지만 당신이라면 썩 잘해낼 수 있을 거라 믿네. 올빼미야수 13마리를 처치한 후 다시 날 찾아오도록 하게.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "일을 즐기는 것 같군. 그런데 우리가 뭔가 짚은 것 같아.",
+        "0a93ec818501775ca655": "더욱 사나운 올빼미야수들이 여명의 설원 북부 지방에 출몰하여 호드를 성가시게 하고 있다네. 이 녀석들도 처치해야 해.\n\n여명의 설원에서 달빛 깃든 올빼미 야수들을 처치하고 녀석들이 서식하는 장소를 탐험하게.\n\n위험한 곳이긴 하지만 당신이라면 썩 잘해낼 수 있을 거라 믿네. 올빼미야수 13마리를 처치한 후 다시 날 찾아오도록 하게.",
+        "699597d1abd50121a15b": "너무 무섭다고 말하지 마세요!  가야!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -361,6 +587,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -383,6 +627,11 @@
     },
     "plPL": {
       "description": "W północnych rejonach Winterspring wildkiny stają się jeszcze bardziej dzikie. Musimy kontynuować tam nasze działania.\n\nUpoluj Moontouched Owlbeasty w Winterspring i zbadaj teren, który zamieszkują.\n\nTo niebezpieczna okolica, ale wiem, że poradzisz sobie z wyzwaniem. Wróć do mnie po zabiciu 13 wildkinów.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Wyczuwam, że lubisz swoją pracę. I sądzę, że jesteśmy na dobrym tropie.",
+        "0a93ec818501775ca655": "Na północy Winterspring dzikie bestie są jeszcze bardziej zaciekłe. Musimy kontynuować tam nasze działania.$B$BZapoluj na muśnięte księżycem sowobestie w Winterspring i zbadaj teren, który zamieszkują.$B$BTo niebezpieczna okolica, ale wiem, że podołasz wyzwaniu. Wróć, gdy zabijesz 13 bestii.",
+        "699597d1abd50121a15b": "Nie mów, że się boisz! Ruszaj!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -399,6 +648,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2fb8ab45a02a524377f8331374ff46cd786876fcacedae1e2415a1aeddfa1798"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -422,6 +686,11 @@
     },
     "ptBR": {
       "description": "Nas áreas ao norte de Hibérnia, os coruscantes estão ficando cada vez mais ferozes. Nós temos que continuar com os nossos planos por lá.\n\nCace as ferujas Lunamarca em Hibérnia e explore a área que elas habitam.\n\nEsse é um terreno perigoso, mas eu sei que você será capaz de enfrentar o desafio. Fale comigo depois que matar 13 ferujas.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Sinto que você está gostando do trabalho. E acredito que estamos no caminho certo.",
+        "0a93ec818501775ca655": "Nas áreas ao norte de Hibérnia, os coruscantes estão ficando cada vez mais ferozes. Nós temos que continuar com os nossos planos por lá.\n\nCace as ferujas Lunamarca em Hibérnia e explore a área que elas habitam.\n\nEsse é um terreno perigoso, mas eu sei que você será capaz de enfrentar o desafio. Fale comigo depois que matar 13 ferujas.",
+        "699597d1abd50121a15b": "Não me diga que está com medo! Vá logo!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -437,6 +706,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -459,6 +744,11 @@
     },
     "ruRU": {
       "description": "В северных областях Зимних Ключей дикие совухи совсем озверели. Необходимо положить этому конец!\n\nОтправляйся на охоту, а заодно исследуешь местность, где они обитают.\n\nМеста там дикие, но ты справишься. Возвращайся, когда убъешь 13 диких совухов.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Тебе похоже понравилось! Я надеюсь, что и ИМ тоже...",
+        "0a93ec818501775ca655": "В северных областях Зимних Ключей дикосовухи совсем озверели. Необходимо положить этому конец!\n\nОтправляйся на охоту, а заодно исследуешь местность, где они обитают.\n\nМеста там дикие, но ты справишься. Возвращайся, когда убъешь 13 совухов.",
+        "699597d1abd50121a15b": "Не говори мне что ты испуган! Вперед!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -474,6 +764,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -496,6 +804,11 @@
     },
     "svSE": {
       "description": "I norra Winterspring blir vildvarelserna ännu vildare. Vi måste fortsätta våra åtgärder där.\n\nJaga de månberörda ugglebestarna i Winterspring och utforska deras område.\n\nMarken är farlig, men du klarar utmaningen. Återvänd när du dräpt 13 av vildvarelserna.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Jag känner att du njuter av ditt arbete. Och jag tror att vi är något på spåren.",
+        "0a93ec818501775ca655": "I de norra delarna av Winterspring är vilddjuren ännu grymmare. Vi måste fortsätta våra insatser där.$B$BJaga de månberörda ugglebestarna i Winterspring och utforska området där de lever.$B$BDet är farlig mark, men jag vet att du klarar utmaningen. Återvänd när du har dödat 13 av vilddjuren.",
+        "699597d1abd50121a15b": "Säg inte att du är för rädd! Ge dig av!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +825,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2fb8ab45a02a524377f8331374ff46cd786876fcacedae1e2415a1aeddfa1798"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -535,6 +863,11 @@
     },
     "trTR": {
       "description": "Winterspring'in kuzey bölgelerinde Wildkinler daha da vahşileşiyor. Oradaki önlemlerimizi sürdürmeliyiz.\n\nWinterspring'deki ay dokunuşlu baykuş ayılarını avla ve yaşadıkları bölgeyi keşfet.\n\nBurası tehlikeli, ama bu zorluğun üstesinden gelebileceğini biliyorum. 13 wildkin öldürdükten sonra bana dön.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "İşinden keyif aldığını hissediyorum. Ayrıca bir şeylerin izini bulduğumuza inanıyorum.",
+        "0a93ec818501775ca655": "Winterspring'in kuzeyindeki yabaniller daha da vahşileşiyor. Önlemlerimizi orada sürdürmeliyiz.$B$BWinterspring'deki aya dokunmuş baykuş canavarlarını avla ve yaşadıkları bölgeyi araştır.$B$BBurası tehlikeli bir yer ama bu zorluğun üstesinden geleceğini biliyorum. Yabanillerden 13 tanesini öldürdükten sonra bana dön.",
+        "699597d1abd50121a15b": "Bana korktuğunu söyleme! Hadi git!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -551,6 +884,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "2fb8ab45a02a524377f8331374ff46cd786876fcacedae1e2415a1aeddfa1798"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -574,6 +922,11 @@
     },
     "ukUA": {
       "description": "У північних районах Зимоключа дикі совухи ще більш жорстокі. І саме туди ти й відправишся.\n\nВирушай на полювання на осяяних місяцем совозвірів в Зимоключ, а заразом досліди місцевість, де вони мешкають.\n\nМісця там дикі, але я знаю, що ти впораєшся. Повертайся до мене, як вб'єш 13 осяяних місяцем совозвірів.",
+      "dialogue": {
+        "048ada91b8a48c647a74": "Відчуваю, що тобі подобається твоя робота. І гадаю, ми напали на слід.",
+        "0a93ec818501775ca655": "На півночі Winterspring дикі створіння стають ще лютішими. Ми маємо продовжити наші заходи там.$B$BПолюй на торкнутих місяцем совозвірів у Winterspring і досліди місцевість, де вони живуть.$B$BЦе небезпечні землі, але я знаю, що ти впораєшся. Повертайся до мене, коли вб'єш 13 диких створінь.",
+        "699597d1abd50121a15b": "Тільки не кажи, що боїшся! Рушай!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -591,6 +944,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "2fb8ab45a02a524377f8331374ff46cd786876fcacedae1e2415a1aeddfa1798"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -616,6 +984,11 @@
     },
     "zhCN": {
       "description": "冬泉谷北部区域的枭兽更加凶残，我们必须在那儿继续采取主动。\n\n猎杀冬泉谷中的月光枭兽，并探察他们居住的区域。\n\n那里是非常危险的地区，但是我知道你可以面对这样的挑战。当你杀死十三头枭兽之后就回到我这里来。",
+      "dialogue": {
+        "048ada91b8a48c647a74": "我感觉你是在享受任务。并且，我相信我们对此处的事物心中有数。\n",
+        "0a93ec818501775ca655": "冬泉谷北部区域的枭兽更加凶残，我们必须在那儿继续采取主动。\n\n猎杀冬泉谷中的月光枭兽，并探察他们居住的区域。\n\n那里是非常危险的地区，但是我知道你可以面对这样的挑战。当你杀死十三头枭兽之后就回到我这里来。",
+        "699597d1abd50121a15b": "别说你害怕了!继续前进!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -631,6 +1004,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -653,6 +1044,11 @@
     },
     "zhTW": {
       "description": "冬泉谷北部區域的梟獸更加兇殘，我們必須在那兒繼續採取主動。\n\n獵殺冬泉谷中的月光梟獸，並探察他們居住的區域。\n\n那裡是非常危險的地區，但是我知道你可以面對這樣的挑戰。當你殺死十三頭梟獸之後就回到我這裡來。",
+      "dialogue": {
+        "048ada91b8a48c647a74": "我感覺你是在享受任務。並且，我相信我們對此處的事物心中有數。",
+        "0a93ec818501775ca655": "冬泉穀北部區域的梟獸更加兇殘，我們必須在那兒繼續採取主動。\n\n獵殺冬泉谷中的月光梟獸，並探察他們居住的區域。\n\n那裡是非常危險的地區，但是我知道你可以面對這樣的挑戰。當你殺死十三頭梟獸之後就回到我這裡來。",
+        "699597d1abd50121a15b": "別說你害怕了!繼續前進!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -668,6 +1064,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.048ada91b8a48c647a74": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.0a93ec818501775ca655": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.699597d1abd50121a15b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

@@ -1,8 +1,28 @@
 {
   "areaId": 15,
+  "dialogueContexts": {
+    "d855e16e0eb2fb013a16": {
+      "lineId": "q:1259:complete",
+      "npcId": 4948,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "e386876091483effe01c": {
+      "lineId": "q:1259:accept",
+      "npcId": 4944,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Jméno poručíka Pavala Reethe nepoznávám. Nejlepší bude, když se zeptáš pobočníka Tesorana. Vede veškeré záznamy stráže Theramore, od lidí až po výstroj.\n\nStačí, aby se podíval do svých knih, a hned ti řekne, kdo ten Reethe je.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Zdravím, $n. Chceš informace o konkrétním členu theramorské stráže? Reethe, říkáš?$b$bDej mi chvilku, najdu správnou knihu.",
+        "e386876091483effe01c": "Jméno poručíka Pavala Reetha mi nic neříká. Nejlepší bude zeptat se adjutanta Tesorana. Vede veškeré záznamy theramorské stráže, od personálu až po vybavení.$b$bStačí mu rychle nahlédnout do knih a měl by ti říct, kdo ten Reethe je."
+      },
       "summary": "Zjisti více o Reethovi od pobočníka Tesorana v Theramore.",
       "title": "Poručík Paval Reethe",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Jeg genkender ikke navnet Lieutenant Paval Reethe. Dit bedste bud ville være at spørge Adjutant Tesoran. Han holder styr på alle optegnelser for Theramores vagt, fra mandskab til deres udstyr.\n\nHan burde kunne fortælle dig, hvem denne Reethe er, ved hurtigt at slå op i sine bøger.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Hej, $n. Du vil have oplysninger om et bestemt medlem af Theramores vagt? Reethe, var det?$b$bGiv mig et øjeblik til at finde den rette bog.",
+        "e386876091483effe01c": "Jeg genkender ikke navnet løjtnant Paval Reethe. Dit bedste bud er at spørge adjudant Tesoran. Han holder styr på alle Theramores vagts optegnelser, fra mandskab til udstyr.$b$bHan burde hurtigt kunne slå op i sine bøger og fortælle dig, hvem denne Reethe er."
+      },
       "summary": "Find ud af mere om Reethe hos adjudant Tesoran i Theramore.",
       "title": "Løjtnant Paval Reethe",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "582369b19a432778e446b1d7c97c2c9452202e0398f1c0b139b6c5cfaab87a3a"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Ich kenne den Namen Lieutenant Paval Reethe nicht. Am besten erkundigt Ihr Euch bei Adjudant Tesoran. Er hat alle Aufzeichnungen über die Wachen von Theramore, vom Personal bis hin zur Ausrüstung.\n\nEr sollte Euch nach einem Blick in seine Bücher sagen können, wer dieser Reethe ist.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Hallo, $N. Ihr möchtet Informationen über ein bestimmtes Mitglied der Wache von Theramore? Reethe, richtig?\n \n Bitte habt einen Moment Geduld, bis ich das richtige Buch gefunden habe. ",
+        "e386876091483effe01c": "Ich kenne den Namen Lieutenant Paval Reethe nicht. Am besten erkundigt Ihr Euch bei Adjudant Tesoran. Er hat alle Aufzeichnungen über die Wachen von Theramore, vom Personal bis hin zur Ausrüstung.\n\nEr sollte Euch nach einem Blick in seine Bücher sagen können, wer dieser Reethe ist."
+      },
       "summary": "Findet bei Adjudant Tesoran in Theramore mehr über Reethe heraus.",
       "title": "Lieutenant Paval Reethe",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -85,6 +145,10 @@
     },
     "enUS": {
       "description": "I don't recognize the name of Lieutenant Paval Reethe. Your best bet would be to check with Adjutant Tesoran. He keeps track of all the records for the Theramore guard, from personnel to their equipment.\n\nHe should be able to tell you who this Reethe is with a quick check of his books.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Hello, $n. You'd like information about a specific member of the Theramore guard? Reethe, was it?$b$bJust give me a moment to find the right book.",
+        "e386876091483effe01c": "I don't recognize the name of Lieutenant Paval Reethe. Your best bet would be to check with Adjutant Tesoran. He keeps track of all the records for the Theramore guard, from personnel to their equipment.$b$bHe should be able to tell you who this Reethe is with a quick check of his books."
+      },
       "summary": "Find out more about Reethe from Adjutant Tesoran in Theramore.",
       "title": "Lieutenant Paval Reethe",
       "translationMetadata": {
@@ -93,6 +157,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -110,6 +186,10 @@
     },
     "esES": {
       "description": "No reconozco el nombre... Teniente Paval Reethe... Será mejor que consultes al tesorero adjunto. Él lleva todos los registros de la Guardia de Theramore, desde el personal hasta el equipamiento.\n\nÉl debería poder decirte quién es Reethe, solo tendrá que echar un vistazo a los libros.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Hola, $n. ¿Deseas información sobre algún miembro de la Guardia de Theramore en concreto? Reethe, ¿no?\n\nDame un momento para que encuentre el libro correcto.",
+        "e386876091483effe01c": "No reconozco el nombre... Teniente Paval Reethe... Será mejor que consultes al tesorero adjunto. Él lleva todos los registros de la Guardia de Theramore, desde el personal hasta el equipamiento.\n\nÉl debería poder decirte quién es Reethe, solo tendrá que echar un vistazo a los libros."
+      },
       "summary": "Averigua más sobre Reethe hablando con el ayudante Tesoran de Theramore.",
       "title": "Teniente Paval Reethe",
       "translationMetadata": {
@@ -118,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -134,6 +226,10 @@
     },
     "esMX": {
       "description": "No reconozco el nombre... Teniente Paval Reethe... Será mejor que consultes al ayudante Tesoran. Él lleva todos los registros de la Guardia de Theramore, desde el personal hasta el equipamiento.\n\nÉl debería poder decirte quién es Reethe, solo tendrá que echar un vistazo a los libros.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Hola, $n. ¿Deseas información sobre algún miembro de la Guardia de Theramore en concreto? Reethe, ¿no?\n\nDame un momento para que encuentre el libro correcto.",
+        "e386876091483effe01c": "No reconozco el nombre... Teniente Paval Reethe... Será mejor que consultes al ayudante Tesoran. Él lleva todos los registros de la Guardia de Theramore, desde el personal hasta el equipamiento.\n\nÉl debería poder decirte quién es Reethe, solo tendrá que echar un vistazo a los libros."
+      },
       "summary": "Averigua más sobre Reethe hablando con el ayudante Tesoran en Theramore.",
       "title": "Teniente Paval Reethe",
       "translationMetadata": {
@@ -142,6 +238,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -158,6 +266,10 @@
     },
     "frFR": {
       "description": "Le nom du lieutenant Paval Reethe ne me dit rien. Votre meilleure chance est de vérifier auprès de l'adjudant Tesoran. Il conserve tous les dossiers de la garde de Theramore, du personnel jusqu'à l'équipement.\n\nIl devrait être capable de vous dire qui est ce Reethe après un rapide coup d'oeil dans ses registres.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Bonjour, $N. Vous avez besoin de renseignements sur un membre de la garde de Theramore ? Reethe, n'est-ce pas ?\n \n Accordez-moi un moment que je trouve les bonnes archives. ",
+        "e386876091483effe01c": "Le nom du lieutenant Paval Reethe ne me dit rien. Votre meilleure chance est de vérifier auprès de l'adjudant Tesoran. Il conserve tous les dossiers de la garde de Theramore, du personnel jusqu'à l'équipement.\n\nIl devrait être capable de vous dire qui est ce Reethe après un rapide coup d'oeil dans ses registres."
+      },
       "summary": "Trouver plus de renseignements sur Paval Reethe auprès de l'adjudant Tesoran à Theramore.",
       "title": "Le lieutenant Paval Reethe",
       "translationMetadata": {
@@ -166,6 +278,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -182,6 +306,10 @@
     },
     "hrHR": {
       "description": "Ne prepoznajem ime poručnika Pavala Reethea. Najbolje bi bilo provjeriti s pobočnikom Tesoranom. On vodi svu evidenciju straže Theramorea, od osoblja do opreme.\n\nTrebao bi ti moći reći tko je taj Reethe nakon kratkog pregleda svojih knjiga.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Pozdrav, $n. Želiš informacije o određenom pripadniku straže Theramorea? Reethe, zar ne?$b$bDaj mi trenutak da pronađem pravu knjigu.",
+        "e386876091483effe01c": "Ne prepoznajem ime poručnika Pavala Reethea. Najbolje ti je pitati ađutanta Tesorana. On vodi sve zapise straže Theramorea, od osoblja do opreme.$b$bTrebao bi ti moći reći tko je taj Reethe nakon kratkog pregleda svojih knjiga."
+      },
       "summary": "Doznaj više o Reetheu od pobočnika Tesorana u Theramoreu.",
       "title": "Poručnik Paval Reethe",
       "translationMetadata": {
@@ -191,6 +319,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "582369b19a432778e446b1d7c97c2c9452202e0398f1c0b139b6c5cfaab87a3a"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -209,6 +347,10 @@
     },
     "itIT": {
       "description": "Il nome del Tenente Paval Reethe non mi dice nulla. Ti conviene controllare con l'Aiutante Tesoran. Tiene tutti i registri della guardia di Theramore, dal personale all'equipaggiamento.\n\nCon una rapida consultazione dei suoi libri dovrebbe saperti dire chi è questo Reethe.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Salve, $N. Vuoi informazioni su un membro in particolare della guardia di Theramore? Reethe, hai detto?\n\nDammi solo un momento per trovare il libro giusto.",
+        "e386876091483effe01c": "Il nome del Tenente Paval Reethe non mi dice niente. La cosa migliore è chiedere all'Aiutante Tesoran. Tiene i registri di tutta la guardia di Theramore, dal personale all'equipaggiamento.\n\nCon una rapida occhiata ai suoi libri dovrebbe riuscire a dirti chi è questo Reethe."
+      },
       "summary": "Scopri di più su Reethe parlando con l'aiutante Tesoran a Theramore.",
       "title": "Il tenente Paval Reethe",
       "translationMetadata": {
@@ -218,6 +360,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "582369b19a432778e446b1d7c97c2c9452202e0398f1c0b139b6c5cfaab87a3a"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -236,6 +390,10 @@
     },
     "koKR": {
       "description": "부관 파발 리테라는 이름은 처음 들어 보는데... 부관 테소렌을 만나 확인해 보는 게 현재로선 가장 현명한 선택일 듯하네. 테소렌은 개인 신상 정보에서 장비에 이르기까지 테라모어 경비병에 대한 모든 기록을 보관하고 있으니까 말일세.\n\n그라면 이 리테라는 자가 누구인지 자료를 찾아 금방 확인해 줄 수 있을 것일세.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "안녕하시오. 테라모어 경비병에 대한 정보가 필요하다고 했소? 리테, 맞소이까?\n\n잠시만 기다려 보시오. 어느 장부에 기록이 있는지 찾아보도록 하겠소.",
+        "e386876091483effe01c": "부관 파발 리테라는 이름은 처음 들어 보는데... 부관 테소렌을 만나 확인해 보는 게 현재로선 가장 현명한 선택일 듯하네. 테소렌은 개인 신상 정보에서 장비에 이르기까지 테라모어 경비병에 대한 모든 기록을 보관하고 있으니까 말일세.\n\n그라면 이 리테라는 자가 누구인지 자료를 찾아 금방 확인해 줄 수 있을 것일세."
+      },
       "summary": "테라모어에 있는 부관 테소렌으로부터 리테에 대해 알아내야 합니다.",
       "title": "부관 파발 리테",
       "translationMetadata": {
@@ -244,6 +402,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -260,6 +430,10 @@
     },
     "plPL": {
       "description": "Nie znam nazwiska porucznika Pavala Reethe'a. Najlepiej spytać adiutanta Tesorana. Prowadzi wszystkie rejestry straży Theramore, od ludzi po wyposażenie.\n\nKrótkie sprawdzenie ksiąg powinno wyjaśnić, kim jest Reethe.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Witaj, $n. Szukasz informacji o konkretnym członku straży Theramore? Reethe, tak?$b$bDaj mi chwilę, a znajdę właściwą księgę.",
+        "e386876091483effe01c": "Nie kojarzę nazwiska porucznika Pavala Reethe'a. Najlepiej zapytaj adiutanta Tesorana. Prowadzi wszystkie rejestry straży Theramore, od personelu po wyposażenie.$b$bPowinien szybko sprawdzić księgi i powiedzieć ci, kim jest ten Reethe."
+      },
       "summary": "Dowiedz się więcej o Reethem od adiutanta Tesorana w Theramore.",
       "title": "Porucznik Paval Reethe",
       "translationMetadata": {
@@ -269,6 +443,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "582369b19a432778e446b1d7c97c2c9452202e0398f1c0b139b6c5cfaab87a3a"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -287,6 +471,10 @@
     },
     "ptBR": {
       "description": "Não reconheço esse nome. É melhor você conferir com o Auxiliar Tesoran. Ele toma conta de todos os registros da guarda de Theramore, tanto de pessoal quanto de equipamento.\n\nCom uma pesquisa rápida ele deve descobrir quem é Reethe.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Olá, $N. Você quer informações sobre um membro da guarda de Theramore? Reethe... é isso, não é?\n\nSó um segundo que eu encontro o livro.",
+        "e386876091483effe01c": "Não reconheço esse nome. É melhor você conferir com o Auxiliar Tesoran. Ele toma conta de todos os registros da guarda de Theramore, tanto de pessoal quanto de equipamento.\n\nCom uma pesquisa rápida ele deve descobrir quem é Reethe."
+      },
       "summary": "Descubra mais sobre Reethe consultando o Auxiliar Tesoran em Theramore.",
       "title": "Tenente Paval Reethe",
       "translationMetadata": {
@@ -295,6 +483,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -311,6 +511,10 @@
     },
     "ruRU": {
       "description": "Лейтенант Павал Рит? Не припоминаю такого имени. Лучше всего вам будет поговорить с адъютантом Тезораном. У него хранятся все записи о тераморских стражниках – от их имен до предпочитаемого вооружения.\n\nУж он-то расскажет вам об этом Павале Рите.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Здравствуй, $N. Значит, хочешь узнать об одном из тераморских стражников? Рит, так?\n\nПодожди секунду, я найду нужную книгу.",
+        "e386876091483effe01c": "Лейтенант Павал Рит? Не припоминаю такого имени. Лучше всего вам будет поговорить с адъютантом Тезораном. У него хранятся все записи о тераморских стражниках – от их имен до предпочитаемого вооружения.\n\nУж он-то расскажет вам об этом Павале Рите."
+      },
       "summary": "Поговорите о Рите с адъютантом Тезораном в Тераморе.",
       "title": "Лейтенант Павал Рит",
       "translationMetadata": {
@@ -319,6 +523,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -335,6 +551,10 @@
     },
     "svSE": {
       "description": "Jag känner inte igen namnet löjtnant Paval Reethe. Fråga adjutant Tesoran. Han sköter alla register för Theramores vakt, från personal till utrustning.\n\nHan borde kunna säga vem Reethe är efter en snabb titt i böckerna.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Hej, $n. Du vill ha information om en viss medlem av Theramores vaktstyrka? Reethe, var det så?$b$bGe mig ett ögonblick att hitta rätt bok.",
+        "e386876091483effe01c": "Jag känner inte igen namnet löjtnant Paval Reethe. Det bästa är att fråga adjutant Tesoran. Han håller reda på alla handlingar för Theramores vaktstyrka, från personal till utrustning.$b$bHan borde snabbt kunna titta i sina böcker och berätta vem denne Reethe är."
+      },
       "summary": "Ta reda på mer om Reethe från adjutant Tesoran i Theramore.",
       "title": "Löjtnant Paval Reethe",
       "translationMetadata": {
@@ -344,6 +564,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "582369b19a432778e446b1d7c97c2c9452202e0398f1c0b139b6c5cfaab87a3a"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -362,6 +592,10 @@
     },
     "trTR": {
       "description": "Teğmen Paval Reethe adını tanımıyorum. En iyisi Yaver Tesoran'a danışman. Personelden teçhizata kadar Theramore muhafızlarının bütün kayıtlarını tutar.\n\nDefterlerine çabucak bakarak sana bu Reethe'in kim olduğunu söyleyebilir.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Merhaba, $n. Theramore muhafızlarından belirli biri hakkında bilgi mi istiyorsun? Reethe demiştin, değil mi?$b$bDoğru kitabı bulmam için bana biraz zaman ver.",
+        "e386876091483effe01c": "Teğmen Paval Reethe adını tanımıyorum. En iyisi emir subayı Tesoran'a sormak. Theramore muhafızlarının personelinden teçhizatına kadar bütün kayıtlarını o tutar.$b$bDefterlerine şöyle bir bakarak bu Reethe'in kim olduğunu söyleyebilir."
+      },
       "summary": "Theramore'daki Yaver Tesoran'dan Reethe hakkında daha fazla bilgi al.",
       "title": "Teğmen Paval Reethe",
       "translationMetadata": {
@@ -371,6 +605,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "582369b19a432778e446b1d7c97c2c9452202e0398f1c0b139b6c5cfaab87a3a"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -389,6 +633,10 @@
     },
     "ukUA": {
       "description": "Мені не знайомий лейтенант на ім'я Павал Ріт. Тобі краще звернутися до ад'ютанта Тесорана. У нього є записи про варту Терамору: від самих вартових до їхнього спорядження.\n\nВін зможе швидко знайти інформацію про цього Ріті, перевіривши свої книги.",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "Вітаю, $n. Тобі потрібні відомості про конкретного вартового Терамора? Ріт, здається?$b$bДай мені хвилинку знайти потрібну книгу.",
+        "e386876091483effe01c": "Ім'я лейтенанта Павала Ріта мені незнайоме. Найкраще запитати ад'ютанта Тесорана. Він веде всі записи варти Терамора, від особового складу до спорядження.$b$bВін швидко перегляне книги й зможе сказати, хто такий цей Ріт."
+      },
       "summary": "Дізнайтеся більше про Ріта в ад'ютанта Тесорана в Тераморі.",
       "title": "Лейтенант Павал Ріт",
       "translationMetadata": {
@@ -399,6 +647,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "582369b19a432778e446b1d7c97c2c9452202e0398f1c0b139b6c5cfaab87a3a"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -419,6 +677,10 @@
     },
     "zhCN": {
       "description": "我不认识这个帕瓦尔·雷瑟上尉，你最好还是去问问泰索兰副官。他负责管理塞拉摩所有守卫的档案，包括守卫的个人资料和他们的装备。\n\n他可以查查这些档案，然后告诉你这个雷瑟到底是谁。",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "你好，$N。你要查一个塞拉摩守卫的资料?是叫雷瑟的吗?\n\n等一下，让我来找找。\n",
+        "e386876091483effe01c": "我不认识这个帕瓦尔·雷瑟上尉，你最好还是去问问泰索兰副官。他负责管理塞拉摩所有守卫的档案，包括守卫的个人资料和他们的装备。\n\n他可以查查这些档案，然后告诉你这个雷瑟到底是谁。"
+      },
       "summary": "从塞拉摩的泰索兰副官那儿找出更多关于雷瑟的消息。",
       "title": "帕瓦尔·雷瑟上尉",
       "translationMetadata": {
@@ -427,6 +689,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -443,6 +717,10 @@
     },
     "zhTW": {
       "description": "我不認識這個帕瓦爾·雷瑟上尉，你最好還是去問問泰索蘭副官。他負責管理塞拉摩所有守衛的資料，從個人資料到他們的裝備。\n\n他可以查查這些資料，然後告訴你這個雷瑟到底是誰。",
+      "dialogue": {
+        "d855e16e0eb2fb013a16": "你好，$N。你要查一個塞拉摩守衛的資料?是叫雷瑟的嗎?\n\n等一下，讓我來找找。",
+        "e386876091483effe01c": "我不認識這個帕瓦爾·雷瑟上尉，你最好還是去問問泰索蘭副官。他負責管理塞拉摩所有守衛的資料，從個人資料到他們的裝備。\n\n他可以查查這些資料，然後告訴你這個雷瑟到底是誰。"
+      },
       "summary": "從塞拉摩的泰索蘭副官那兒找出更多關於雷瑟的消息。",
       "title": "帕瓦爾·雷瑟上尉",
       "translationMetadata": {
@@ -451,6 +729,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.d855e16e0eb2fb013a16": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e386876091483effe01c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

@@ -12,9 +12,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "1d369fb72e1655f35e99": {
+      "lineId": "q:1435:accept",
+      "npcId": 4498,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "7791f421f81fd855c2fd": {
+      "lineId": "q:1435:complete",
+      "npcId": 4498,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "78fe73b177fb4b244bfe": {
+      "lineId": "q:1435:progress",
+      "npcId": 4498,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Smrt je nanejvýš žádoucí pro ty odporné tvory, kteří se obrátili zády ke svému pánovi z tak sobeckých důvodů. Ale smrt nestačí, když jde o ty, kdo se oddali temnotě.\n\nVezmi si tento drahokam. Až bude někdo z Burning Blade na prahu smrti, aktivuj jeho kouzlo. Kouzlo vytáhne zkaženého ducha z jeho oběti a zanechá za sebou naplněný drahokam.\n\nPřines mi tyto naplněné drahokamy, abych se jich mohl náležitě zbavit.\n\nJdi hned a kéž unikneš smrti.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Smrt je nejvhodnějším osudem těch opovrženíhodných tvorů, kteří ze sobeckých důvodů zradí svého pána. Ale smrt nestačí pro ty, kteří se oddali temnotě.$B$BVezmi tento drahokam. Když bude někdo z Burning Blade blízko smrti, aktivuj jeho magii. Kouzlo vytáhne zkaženého ducha z oběti a zanechá naplněný drahokam.$B$BPřines mi tyto drahokamy, abych je mohl řádně zlikvidovat.$B$BNyní jdi a kéž unikneš smrti.",
+        "7791f421f81fd855c2fd": "Ach, vrátil ses úspěšně. Dobře. Dej mi drahokamy a uložím je na bezpečné místo...$B$BMé úkoly pro tebe skončily, $c. Až si odpočineš, promluv s Takatou. Možná pro tebe má další úkoly, nebo potřebuje, abys informoval Keldrana v Orgrimmaru o našem postupu v Desolace.",
+        "78fe73b177fb4b244bfe": "Snažil jsem se magii co nejvíce zjednodušit. Vytáhnout ducha ze zraněné oběti by měla být hračka. Nespoléhej, že moc drahokamu nepřítele zabije. Aktivuj ho, až bude blízko smrti, jinak bude k ničemu."
+      },
       "summary": "Vrať Burning Gem a 15× Infused Burning Gems Maurinovi Bonesplitterovi v Desolace.",
       "title": "Spalování duchů",
       "translationMetadata": {
@@ -24,6 +52,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "Døden er højst ønskværdig for de foragtelige væsner, der vender ryggen til deres herre af så selviske grunde. Men døden er ikke nok, når man har med dem at gøre, som har overgivet sig til mørket.\n\nTag denne ædelsten. Når en af Burning Blade er tæt på døden, skal du aktivere dens magi. Besværgelsen vil trække den fordærvede ånd ud af sit offer og efterlade en gennemsyret ædelsten.\n\nBring mig disse gennemsyrede ædelstene, så jeg kan bortskaffe dem ordentligt.\n\nGå nu, og må du undslippe døden.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Døden er mest ønskelig for de afskyelige væsener, der vender deres lensherre ryggen af selviske grunde. Men døden er ikke nok for dem, der har overgivet sig til mørket.$B$BTag denne ædelsten. Når en fra Burning Blade er nær døden, skal du aktivere dens magi. Besværgelsen trækker den fordærvede ånd ud af offeret og efterlader en fyldt sten.$B$BBring mig stenene, så jeg kan bortskaffe dem forsvarligt.$B$BGå nu, og måtte du undslippe døden.",
+        "7791f421f81fd855c2fd": "Ah, du vendte tilbage med succes. Godt. Giv mig ædelstenene, så lægger jeg dem et sikkert sted...$B$BMine opgaver til dig er fuldført, $c. Tal med Takata, når du har hvilet. Han har måske flere opgaver eller ønsker, at du vender tilbage til Orgrimmar og fortæller Keldran om vores fremskridt i Desolace.",
+        "78fe73b177fb4b244bfe": "Jeg har gjort magien så enkel som muligt. Det bør være en leg at trække ånden ud af dit sårede offer. Stol ikke på, at stenens kraft dræber fjenden. Aktiver den kun, når fjenden er nær døden, ellers er den ubrugelig."
+      },
       "summary": "Bring Burning Gem og 15 Infused Burning Gems tilbage til Maurin Bonesplitter i Desolace.",
       "title": "Afbrænding af ånder",
       "translationMetadata": {
@@ -53,6 +101,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "12a972d56cf048729c84f5a2fd6c0779b183fe72f41ebb954ae2f56e08105d80"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -71,6 +134,11 @@
     },
     "deDE": {
       "description": "Für diese abscheulichen Kreaturen, die ihrem Lehen aus so egoistischen Gründen den Rücken kehren, ist der Tod höchst wünschenswert. Doch wenn man es mit denen zu tun hat, die sich der Dunkelheit verschrieben haben, reicht der Tod allein nicht aus.\n\nNehmt diesen Edelstein. Wenn einer der Burning Blade dem Tode nahe ist, aktiviert seine Magie. Der Zauber wird den verderbten Geist aus seinem Opfer herausziehen und einen damit erfüllten Edelstein hinterlassen.\n\nBringt mir diese erfüllten Edelsteine, damit ich sie angemessen entsorgen kann.\n\nGeht jetzt, und möge Euch der Tod meiden.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Für diese abscheulichen Kreaturen, die ihrem Lehen aus so egoistischen Gründen den Rücken kehren, ist der Tod höchst wünschenswert. Doch wenn man es mit denen zu tun hat, die sich der Dunkelheit verschrieben haben, reicht der Tod allein nicht aus.\n\nNehmt diesen Edelstein. Wenn einer der Burning Blade dem Tode nahe ist, aktiviert seine Magie. Der Zauber wird den verderbten Geist aus seinem Opfer herausziehen und einen damit erfüllten Edelstein hinterlassen.\n\nBringt mir diese erfüllten Edelsteine, damit ich sie angemessen entsorgen kann.\n\nGeht jetzt, und möge Euch der Tod meiden.",
+        "7791f421f81fd855c2fd": "Ah, Ihr seid erfolgreich zurückgekehrt. Das ist gut. Gebt mir die Edelsteine und ich verwahre sie an einem sicheren Ort. . . \n \n Meine Aufgaben für Euch sind abgeschlossen, $C. Sprecht mit Takata, wenn Ihr erholt seid. Er hat vielleicht andere Aufgaben für Euch oder bittet Euch nach Orgrimmar zurückzukehren, um Keldran von den Fortschritten hier in Desolace zu informieren. ",
+        "78fe73b177fb4b244bfe": "Ich habe versucht, die Magie so einfach wie möglich zu machen. Es sollte ein Kinderspiel sein, den Geist Eures Opfers aus seiner verletzten Hülle herauszuziehen. Verlasst Euch aber nicht darauf, dass die Macht des Edelsteins Eure Gegner ganz tötet. Ihr dürft den Edelstein erst aktivieren, wenn sie dem Tode nahe sind, sonst ist er wirkungslos. "
+      },
       "summary": "Bringt den brennenden Edelstein und 15 erfüllte brennende Edelsteine nach Desolace zu Maurin Bonesplitter.",
       "title": "Brennender Geist",
       "translationMetadata": {
@@ -79,6 +147,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -95,6 +181,11 @@
     },
     "enUS": {
       "description": "Death is most desirable for those despicable creatures that turn their back on their liege for such selfish reasons. But death is not enough when dealing with those that have given themselves over to the darkness.\n\nTake this gem. When one of the Burning Blade's near death, activate its magic. The spell shall pull the corrupted spirit out of its victim, leaving an infused gem behind.\n\nBring me these infused gems so I may dispose of them properly.\n\nGo now, and may you elude death.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Death is most desirable for those despicable creatures that turn their back on their liege for such selfish reasons. But death is not enough when dealing with those that have given themselves over to the darkness.$B$BTake this gem. When one of the Burning Blade's near death, activate its magic. The spell shall pull the corrupted spirit out of its victim, leaving an infused gem behind.$B$BBring me these infused gems so I may dispose of them properly.$B$BGo now, and may you elude death.",
+        "7791f421f81fd855c2fd": "Ah, you've returned successful. That is good. Give me the gems and I shall put them someplace safe....$B$BMy tasks for you are complete, $c. Speak to Takata when you are rested. He may have other tasks for you, or perhaps needs you to return to Orgrimmar to inform Keldran of our progress here in Desolace.",
+        "78fe73b177fb4b244bfe": "I have tried to make the magics as simple as possible. Drawing the spirit of your victim out of its injured form should be child's play. Do not rely on the gem's power to slay your foe completely. You must only activate the gem when they are close to death, or it will be useless."
+      },
       "summary": "Return the Burning Gem and 15 Infused Burning Gems to Maurin Bonesplitter in Desolace.",
       "title": "The Burning of Spirits",
       "translationMetadata": {
@@ -103,6 +194,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -120,6 +229,11 @@
     },
     "esES": {
       "description": "Esas despreciables criaturas prefieren la muerte antes que dar la espalda a su señor. Pero la muerte no basta cuando tratas con aquellos que se han entregado a las tinieblas.\n\nTen esta gema; actívala cuando algún miembro de Filo Ardiente esté a punto de morir. El hechizo hará que el espíritu corrupto abandone a su víctima y deje una gema imbuida.\n\nTráeme las gemas para que me encargue de ellas.\n\nVe, y que la muerte te eluda.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Esas despreciables criaturas prefieren la muerte antes que dar la espalda a su señor. Pero la muerte no basta cuando tratas con aquellos que se han entregado a las tinieblas.\n\nTen esta gema; actívala cuando algún miembro de Filo Ardiente esté a punto de morir. El hechizo hará que el espíritu corrupto abandone a su víctima y deje una gema imbuida.\n\nTráeme las gemas para que me encargue de ellas.\n\nVe, y que la muerte te eluda.",
+        "7791f421f81fd855c2fd": "Me alegro de verte. Dame las gemas, las pondré en lugar seguro. \n\nNo tengo más tareas para ti, $c. Ve a ver a Takata cuando hayas descansado; puede que tenga trabajo para ti o que tengas que ir a Orgrimmar para informar a Keldran sobre nuestro progreso aquí, en Desolace.",
+        "78fe73b177fb4b244bfe": "He intentado imbuir hechizos simples. Extraer el espíritu de la víctima de su forma corrupta te será fácil. No confíes en las gemas para aniquilar al enemigo; solo debes activarlas cuando el sujeto esté a punto de morir. De lo contrario, no servirán de nada."
+      },
       "summary": "LLeva la gema ardiente y 15 gemas ardientes imbuidas a Maurin Partehuesos a Desolace.",
       "title": "Los espíritus ardientes",
       "translationMetadata": {
@@ -128,6 +242,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -144,6 +276,11 @@
     },
     "esMX": {
       "description": "Esas despreciables criaturas prefieren la muerte antes que dar la espalda a su señor. Pero la muerte no basta cuando tratas con aquellos que se han entregado a las tinieblas.\n\nTen esta gema; actívala cuando algún miembro de Filo Ardiente esté a punto de morir. El hechizo hará que el espíritu corrupto abandone a su víctima y deje una gema imbuida.\n\nTráeme las gemas para que me encargue de ellas.\n\nVe, y que la muerte te eluda.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Esas despreciables criaturas prefieren la muerte antes que dar la espalda a su señor. Pero la muerte no basta cuando tratas con aquellos que se han entregado a las tinieblas.\n\nTen esta gema; actívala cuando algún miembro de Filo Ardiente esté a punto de morir. El hechizo hará que el espíritu corrupto abandone a su víctima y deje una gema imbuida.\n\nTráeme las gemas para que me encargue de ellas.\n\nVe, y que la muerte te eluda.",
+        "7791f421f81fd855c2fd": "Me alegro de verte. Dame las gemas, las pondré en lugar seguro.\n\nNo tengo más tareas para ti, $c. Ve a ver a Takata cuando hayas descansado; puede que tenga trabajo para ti o que tengas que ir a Orgrimmar para informar a Keldran sobre nuestro progreso aquí, en Desolace.",
+        "78fe73b177fb4b244bfe": "He intentado imbuir hechizos simples. Extraer el espíritu de la víctima de su forma corrupta te será fácil. No confíes en las gemas para aniquilar al enemigo; solo debes activarlas cuando el sujeto esté a punto de morir. De lo contrario, no servirán de nada."
+      },
       "summary": "Lleva la gema ardiente y 15 gemas ardientes imbuidas a Maurin Partehuesos a Desolace.",
       "title": "Los espíritus ardientes",
       "translationMetadata": {
@@ -152,6 +289,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -168,6 +323,11 @@
     },
     "frFR": {
       "description": "La mort est très désirable pour ces dégoûtantes créatures qui quittent les ordres de leur seigneur pour des raisons si égoïstes. Mais la mort n'est pas suffisante quand on a affaire à ceux qui se sont donnés aux ténèbres.\n\nPrenez cette gemme. Lorsque un membre de la Lame ardente approchera de la mort, activez sa magie. Le sort attirera l'esprit corrompu de sa victime, laisssant une gemme ardente canalisée.\n\nApportez-moi ces gemmes ardentes, que je m'en occupe comme il convient.\n\nPartez à présent, et puissiez-vous échapper à la mort.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "La mort est très désirable pour ces dégoûtantes créatures qui quittent les ordres de leur seigneur pour des raisons si égoïstes. Mais la mort n'est pas suffisante quand on a affaire à ceux qui se sont donnés aux ténèbres.\n\nPrenez cette gemme. Lorsque un membre de la Lame ardente approchera de la mort, activez sa magie. Le sort attirera l'esprit corrompu de sa victime, laisssant une gemme ardente canalisée.\n\nApportez-moi ces gemmes ardentes, que je m'en occupe comme il convient.\n\nPartez à présent, et puissiez-vous échapper à la mort.",
+        "7791f421f81fd855c2fd": "Ah ! Vous êtes de retour et vous avez réussi. C'est bien. Donnez-moi les gemmes et je les placerai dans un endroit sûr…\n \n Je n'ai pas d'autre tâche pour vous, $C. Parlez à Takata une fois que vous aurez pris du repos. Il se peut qu'il en ait d'autres pour vous, ou il aura peut-être besoin que vous retourniez à Orgrimmar pour informer Keldran de nos progrès ici en Désolace. ",
+        "78fe73b177fb4b244bfe": "J'ai essayé de faire en sorte que la magie soit aussi simple que possible. Attirer l'esprit de votre victime hors de sa forme blessée devrait être un jeu d'enfant. Ne comptez pas sur le pouvoir des gemmes pour tuer vos ennemis. Vous ne devez activer la gemme que lorsqu'ils sont proches de la mort. "
+      },
       "summary": "Apporter une Gemme ardente et 15 Gemmes ardente canalisées à Maurin Bonesplitter en Désolace.",
       "title": "Esprits consumés",
       "translationMetadata": {
@@ -176,6 +336,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -192,6 +370,11 @@
     },
     "hrHR": {
       "description": "Smrt je najpoželjnija za ta prezrena stvorenja koja iz tako sebičnih razloga okreću leđa svojem gospodaru. Ali smrt nije dovoljna kad se radi o onima koji su se predali tami.\n\nUzmi ovaj dragulj. Kad je jedan od pripadnika Burning Bladea na samrti, aktiviraj njegovu magiju. Čarolija će izvući iskvareni duh iz žrtve, a iza nje će ostati prožeti dragulj.\n\nDonesi mi te prožete dragulje kako bih ih mogao pravilno zbrinuti.\n\nKreni sada i neka te smrt zaobiđe.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Smrt je najpoželjnija za prezrena stvorenja koja iz sebičnih razloga okreću leđa svom gospodaru. Ali smrt nije dovoljna za one koji su se predali tami.$B$BUzmi ovaj dragulj. Kad je netko iz Burning Bladea na samrti, aktiviraj njegovu magiju. Čarolija će izvući pokvareni duh iz žrtve i ostaviti ispunjen dragulj.$B$BDonesi mi te dragulje kako bih ih pravilno zbrinuo.$B$BPođi sada i neka izbjegneš smrt.",
+        "7791f421f81fd855c2fd": "Ah, vratio si se uspješno. Dobro. Daj mi dragulje i stavit ću ih na sigurno...$B$BMoji zadaci za tebe su gotovi, $c. Razgovaraj s Takatom kad se odmoriš. Možda ima druge zadatke ili treba da se vratiš u Orgrimmar i obavijestiš Keldrana o našem napretku u Desolaceu.",
+        "78fe73b177fb4b244bfe": "Pokušao sam magiju učiniti što jednostavnijom. Izvlačenje duha iz ranjene žrtve trebalo bi biti lako. Ne oslanjaj se na moć dragulja da ubije neprijatelja. Aktiviraj ga tek kad je blizu smrti, inače je beskoristan."
+      },
       "summary": "Vrati gorući dragulj i 15 prožetih gorućih dragulja Maurinu Bonesplitteru u Desolaceu.",
       "title": "Spaljivanje duhova",
       "translationMetadata": {
@@ -201,6 +384,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "12a972d56cf048729c84f5a2fd6c0779b183fe72f41ebb954ae2f56e08105d80"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -219,6 +417,11 @@
     },
     "itIT": {
       "description": "La morte è ciò che meritano quelle spregevoli creature che voltano le spalle al loro signore per ragioni tanto egoistiche. Ma la morte non basta per chi si è consegnato all'oscurità.\n\nPrendi questa gemma. Quando un membro della Lama Ardente è vicino alla morte, attivane la magia. L'incantesimo estrarrà lo spirito corrotto dalla vittima, lasciando una gemma infusa.\n\nPortami queste gemme infuse, così potrò eliminarle nel modo appropriato.\n\nOra vai, e che tu possa sfuggire alla morte.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "La morte è quanto di più desiderabile per quelle creature spregevoli che voltano le spalle al loro signore per ragioni tanto egoistiche. Ma la morte non basta, quando si ha a che fare con chi si è consegnato all'oscurità.\n\nPrendi questa gemma. Quando uno dei Burning Blade è vicino alla morte, attivane la magia. L'incantesimo strapperà lo spirito corrotto dalla sua vittima e lascerà una gemma infusa.\n\nPortami queste gemme infuse, così potrò disfarmene come si deve.\n\nOra va', e possa tu sfuggire alla morte.",
+        "7791f421f81fd855c2fd": "Ah, sei tornato vittorioso. Bene. Dammi le gemme e le metterò al sicuro...$B$BI miei incarichi per te sono conclusi, $c. Parla con Takata quando ti sarai riposato. Potrebbe avere altri compiti, oppure chiederti di tornare a Orgrimmar per informare Keldran dei nostri progressi a Desolanda.",
+        "78fe73b177fb4b244bfe": "Ho cercato di rendere la magia il più semplice possibile. Tirare fuori lo spirito della tua vittima dal suo corpo ferito dovrebbe essere un gioco da ragazzi. Non contare sul potere della gemma per uccidere del tutto il nemico. Devi attivarla solo quando è vicino alla morte, altrimenti non servirà a nulla."
+      },
       "summary": "Riporta la gemma ardente e 15 gemme ardenti infuse a Maurin Bonesplitter a Desolace.",
       "title": "Bruciare gli spiriti",
       "translationMetadata": {
@@ -228,6 +431,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "12a972d56cf048729c84f5a2fd6c0779b183fe72f41ebb954ae2f56e08105d80"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -246,6 +466,11 @@
     },
     "koKR": {
       "description": "사사로운 욕심을 위해 자신의 군주를 배반한 천한 짐승들은 죽어 마땅하지. 하지만 스스로 어둠 속에 내던진 자들에게는 죽음만으로는 부족하지.\n\n자, 이 보석을 받으시오. 불타는칼날단 중 하나가 거의 죽음에 이르렀을 때 그 보석의 마법을 사용하도록 하시오. 그러면 그들의 몸에서 타락한 영혼이 나와 보석 안으로 빨려 들어가게 될 것이오.\n\n영혼이 깃든 불타는 보석을 내게 가져오면 알아서 처리하도록 하지.\n\n이제 가 보도록 하시오. 죽지 않도록 조심하고...",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "사사로운 욕심을 위해 자신의 군주를 배반한 천한 짐승들은 죽어 마땅하지. 하지만 스스로 어둠 속에 내던진 자들에게는 죽음만으로는 부족하지.\n\n자, 이 보석을 받으시오. 불타는칼날단 중 하나가 거의 죽음에 이르렀을 때 그 보석의 마법을 사용하도록 하시오. 그러면 그들의 몸에서 타락한 영혼이 나와 보석 안으로 빨려 들어가게 될 것이오.\n\n영혼이 깃든 불타는 보석을 내게 가져오면 알아서 처리하도록 하지.\n\n이제 가 보도록 하시오. 죽지 않도록 조심하고...",
+        "7791f421f81fd855c2fd": "아, 무사히 돌아왔군. 정말 다행이야. 안전한 곳에 보관할 테니 보석을 내게 주시오.\n\n이제 내가 당신에게 맡길 임무는 더 이상 없소. 타카타가 다른 임무를 맡길지도 모르니까 휴식을 좀 취한 뒤 그를 만나 보도록 하시오. 아니면 오그리마로 돌아가 이곳 잊혀진 땅에서의 진척 상황을 켈드란에게 알려 주시오.",
+        "78fe73b177fb4b244bfe": "난 마법을 되도록 간단하게 만들려고 했소. 부상 당한 적의 몸에서 쉽게 영혼을 빼낼 수 있도록 말이지. 보석의 힘에 의존해 적의 목숨을 완전히 끊어서는 안 되오. 상대가 거의 죽음에 이르렀을 때에 보석을 사용해야지, 그렇지 않으면 아무 소용도 없다는 것을 명심하시오."
+      },
       "summary": "잊혀진 땅에 있는 마우린 본스플리터에게 빌린 불타는 보석 하나와 영혼이 깃든 불타는 보석 15개를 가져가야 합니다.",
       "title": "불타는 영혼",
       "translationMetadata": {
@@ -254,6 +479,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -270,6 +513,11 @@
     },
     "plPL": {
       "description": "Śmierć jest najbardziej pożądanym losem dla nikczemnych istot, które z tak samolubnych pobudek odwracają się od swego władcy. Lecz sama śmierć nie wystarczy, gdy mamy do czynienia z tymi, którzy oddali się ciemności.\n\nWeź ten klejnot. Gdy członek Płonącego Ostrza będzie bliski śmierci, uruchom jego magię. Zaklęcie wyrwie spaczonego ducha z ofiary, pozostawiając nasycony klejnot.\n\nPrzynieś mi te nasycone klejnoty, abym mógł się nimi odpowiednio zająć.\n\nIdź już i oby udało ci się wymknąć śmierci.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Śmierć jest najlepszym losem dla tych nikczemnych stworzeń, które z samolubnych pobudek odwracają się od swego pana. Lecz śmierć nie wystarczy wobec tych, którzy oddali się ciemności.$B$BWeź ten klejnot. Gdy ktoś z Burning Blade będzie bliski śmierci, aktywuj jego magię. Zaklęcie wyciągnie skażonego ducha z ofiary i pozostawi nasycony klejnot.$B$BPrzynieś mi te klejnoty, abym mógł właściwie się nimi zająć.$B$BIdź teraz i oby śmierć cię ominęła.",
+        "7791f421f81fd855c2fd": "Ach, wracasz z sukcesem. Dobrze. Daj mi klejnoty, a umieszczę je w bezpiecznym miejscu...$B$BMoje zadania dla ciebie dobiegły końca, $c. Po odpoczynku porozmawiaj z Takatą. Może mieć kolejne zadania albo poprosić o powrót do Orgrimmaru, by poinformować Keldrana o postępach w Desolace.",
+        "78fe73b177fb4b244bfe": "Uprościłem magię, jak tylko mogłem. Wyciągnięcie ducha z rannej ofiary powinno być dziecinnie proste. Nie licz, że klejnot zabije wroga. Aktywuj go dopiero, gdy wróg będzie bliski śmierci, inaczej będzie bezużyteczny."
+      },
       "summary": "Zwróć płonący klejnot i 15 nasyconych płonących klejnotów Maurinowi Bonesplitterowi w Desolace.",
       "title": "Palenie duchów",
       "translationMetadata": {
@@ -279,6 +527,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "12a972d56cf048729c84f5a2fd6c0779b183fe72f41ebb954ae2f56e08105d80"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -297,6 +560,11 @@
     },
     "ptBR": {
       "description": "A morte é deveras desejável para as criaturas desprezíveis que dão as costas ao próprio senhor por motivos tão egoístas. Mas a morte não é suficiente para os que se entregaram às trevas.\n\nLeve esta gema. Quando alguém da Lâmina Ardente estiver às portas da morte, ative a magia. O feitiço puxará o espírito corrompido para fora da vítima, deixando para trás uma gema infusa.\n\nTraga as gemas infusas para que eu possa descartá-las adequadamente.\n\nVá, e que você possa enganar a morte.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "A morte é deveras desejável para as criaturas desprezíveis que dão as costas ao próprio senhor por motivos tão egoístas. Mas a morte não é suficiente para os que se entregaram às trevas.\n\nLeve esta gema. Quando alguém da Lâmina Ardente estiver às portas da morte, ative a magia. O feitiço puxará o espírito corrompido para fora da vítima, deixando para trás uma gema infusa.\n\nTraga as gemas infusas para que eu possa descartá-las adequadamente.\n\nVá, e que você possa enganar a morte.",
+        "7791f421f81fd855c2fd": "Ah, você voltou vitorioso. Isso é bom. Entregue as gemas para eu colocá-las em um lugar seguro...\n\nMinhas tarefas para você terminaram, $c. Fale com Takta depois de descansar. Ele pode ter outras tarefas para você, ou talvez precise que você volte a Orgrimmar para relatar a Keldran seu progresso aqui na Desolação.",
+        "78fe73b177fb4b244bfe": "Tentei manter as mágicas o mais simples possível. Extrair o espírito da vítima da forma física ferida deve ser brincadeira de criança. Não conte com o poder da gema para matar completamente o oponente. Você precisa ativar a gema quando ele estiver perto da morte, ou ela será inútil."
+      },
       "summary": "Devolva a Gema Ardente e leve 15 Gemas Ardentes Infusas para Maurin Rachaosso na Desolação.",
       "title": "A queima dos espíritos",
       "translationMetadata": {
@@ -305,6 +573,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -321,6 +607,11 @@
     },
     "ruRU": {
       "description": "Этих жалких тварей лучше всего предать смерти. Но, когда имеешь дело с теми, кто присягнул тьме, недостаточно просто убивать.\n\nВозьми этот самоцвет. Приведи его в действие, когда один из негодяев из клана Пылающего Клинка будет близок к смерти. Заклятие вытянет оскверненный дух из жертвы, и у тебя в руках окажется одушевленный самоцвет.\n\nПринеси мне эти одушевленные самоцветы, я с ними разберусь.\n\nСтупай же, и постарайся избегнуть смерти!",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Этих жалких тварей лучше всего предать смерти. Но, когда имеешь дело с теми, кто присягнул тьме, недостаточно просто убивать.\n\nВозьми этот самоцвет. Приведи его в действие, когда один из негодяев клана Пылающего Клинка будет близок к смерти. Заклятие вытянет оскверненный дух из жертвы, и у тебя в руках окажется одушевленный самоцвет.\n\nПринеси мне эти одушевленные самоцветы, я с ними разберусь.\n\nСтупай же, и постарайся избегнуть смерти!",
+        "7791f421f81fd855c2fd": "Ты вернулся с успехом. Это хорошо. Давай одушевленные самоцветы, я спрячу их в безопасное место...\n\nУ меня больше нет для тебя заданий, $C. ",
+        "78fe73b177fb4b244bfe": "Я попытался сделать магию более простой. Похищение духа твоей жертвы, должна показаться детской забавой. Но не полагайся на камень. Ты должен активировать камень, когда твоя жертва близка к смерти."
+      },
       "summary": "Верните пылающий самоцвет и 15 одушевленных самоцветов Маурину Костолому в Пустошах.",
       "title": "Сжигание душ",
       "translationMetadata": {
@@ -329,6 +620,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -345,6 +654,11 @@
     },
     "svSE": {
       "description": "Döden är det mest önskvärda för de föraktliga varelser som vänder sin herre ryggen av så själviska skäl. Men döden räcker inte för dem som har gett sig hän åt mörkret.\n\nTa den här ädelstenen. När någon ur Brinnande klingan är nära döden aktiverar du dess magi. Besvärjelsen drar ut den fördärvade anden ur offret och lämnar kvar en genomsyrad ädelsten.\n\nTa med de genomsyrade ädelstenarna till mig, så att jag kan göra mig av med dem på rätt sätt.\n\nGå nu, och må du undgå döden.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Döden är mest önskvärd för de föraktliga varelser som av själviska skäl vänder sin herre ryggen. Men döden räcker inte för dem som överlämnat sig åt mörkret.$B$BTa denna ädelsten. När en medlem av Burning Blade är nära döden, aktivera dess magi. Besvärjelsen drar ut den fördärvade anden ur offret och lämnar en fylld sten.$B$BFör stenarna till mig så att jag kan ta hand om dem på rätt sätt.$B$BGå nu, och må du undkomma döden.",
+        "7791f421f81fd855c2fd": "Ah, du har återvänt med framgång. Bra. Ge mig ädelstenarna så lägger jag dem på en säker plats...$B$BMina uppgifter åt dig är slutförda, $c. Tala med Takata när du vilat. Han kanske har fler uppgifter eller behöver att du återvänder till Orgrimmar och berättar för Keldran om våra framsteg i Desolace.",
+        "78fe73b177fb4b244bfe": "Jag har gjort magin så enkel som möjligt. Att dra ut anden ur ditt skadade offer borde vara en barnlek. Förlita dig inte på att stenen dödar fienden. Aktivera den först när fienden är nära döden, annars är den värdelös."
+      },
       "summary": "Ta den brinnande ädelstenen och 15 genomsyrade brinnande ädelstenar till Maurin Bonesplitter i Ödelandet.",
       "title": "Andarnas bränning",
       "translationMetadata": {
@@ -354,6 +668,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "12a972d56cf048729c84f5a2fd6c0779b183fe72f41ebb954ae2f56e08105d80"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -374,6 +703,11 @@
     },
     "trTR": {
       "description": "Böylesine bencil sebeplerle efendisine sırt çeviren o aşağılık yaratıklar için en arzulanan şey ölüm. Ama kendini karanlığa teslim edenlerle uğraşırken ölüm yeterli değil.\n\nBu taşı al. Burning Blade'den biri ölmek üzereyken büyüsünü etkinleştir. Büyü, yozlaşmış ruhu kurbanından çekip geride güçle dolmuş bir taş bırakacak.\n\nBu güçle dolmuş taşları bana getir ki düzgünce ortadan kaldırabileyim.\n\nŞimdi git, ölümden sıyrılasın.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Bencil nedenlerle hükümdarına sırt çeviren aşağılık yaratıklar için ölüm en uygun cezadır. Ama kendini karanlığa teslim edenler için ölüm yeterli değildir.$B$BBu mücevheri al. Burning Blade üyelerinden biri ölmek üzereyken büyüsünü etkinleştir. Büyü yozlaşmış ruhu kurbandan çekip geride dolu bir mücevher bırakacak.$B$BBu mücevherleri bana getir ki onları uygun şekilde ortadan kaldırabileyim.$B$BŞimdi git ve ölümden kurtulman dileğiyle.",
+        "7791f421f81fd855c2fd": "Ah, başarıyla döndün. Güzel. Mücevherleri ver, onları güvenli bir yere koyayım...$B$BSana verdiğim görevler tamamlandı, $c. Dinlendiğinde Takata ile konuş. Başka görevleri olabilir ya da Desolace’taki ilerlememizi Keldran’a bildirmek için Orgrimmar’a dönmeni isteyebilir.",
+        "78fe73b177fb4b244bfe": "Büyüyü olabildiğince basitleştirdim. Yaralı kurbanının ruhunu çıkarmak çocuk oyuncağı olmalı. Mücevherin gücünün düşmanını öldürmesine güvenme. Onu yalnızca düşman ölüme yakınken etkinleştir, yoksa işe yaramaz."
+      },
       "summary": "Yanan Mücevher'i ve 15 Aşılanmış Yanan Mücevher'i Desolace'taki Maurin Bonesplitter'a geri götür.",
       "title": "Ruhların Yakılması",
       "translationMetadata": {
@@ -383,6 +717,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "12a972d56cf048729c84f5a2fd6c0779b183fe72f41ebb954ae2f56e08105d80"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -401,6 +750,11 @@
     },
     "ukUA": {
       "description": "Смерть — єдиний вихід для цих жалюгідних створінь. Але смерті недостатньо, коли маєш справу з тими, хто віддався на поталу темряві.\n\nВізьми цей самоцвіт. Коли один з послідовників Палаючого Леза буде при смерті, активуй його. Закляття витягне зіпсованого духа з його жертви, залишивши по собі наповнений самоцвіт.\n\nПринеси мені ці самоцвіти, а я з ними розберуся.\n\nІди ж, і нехай тебе не наздожене смерть.",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "Смерть — найкраща доля для нікчемних створінь, які з егоїстичних причин зраджують свого володаря. Але для тих, хто віддав себе темряві, смерті недостатньо.$B$BВізьми цей самоцвіт. Коли хтось із Палаючого клинка буде при смерті, активуй його магію. Закляття витягне з жертви зіпсований дух і залишить наповнений самоцвіт.$B$BПринеси мені ці самоцвіти, щоб я міг належно їх позбутися.$B$BТепер іди, і нехай смерть омине тебе.",
+        "7791f421f81fd855c2fd": "А, ти повернувся з успіхом. Добре. Дай мені самоцвіти, і я покладу їх у безпечне місце...$B$BМої завдання для тебе завершено, $c. Поговори з Такатою, коли відпочинеш. Можливо, він має інші завдання або потребує, щоб ти повернувся до Орґріммара й повідомив Келдрану про наш поступ у Спустошенні.",
+        "78fe73b177fb4b244bfe": "Я спростив магію наскільки міг. Витягнути дух із пораненої жертви має бути дитячою забавкою. Не покладайся на силу самоцвіта, щоб убити ворога. Активуй його лише тоді, коли ворог близький до смерті, інакше він буде марним."
+      },
       "summary": "Принесіть палаючий самоцвіт і 15 наповнених палаючих самоцвітів Мавріну Кісткощепу в Спустошище.",
       "title": "Спалення духів",
       "translationMetadata": {
@@ -411,6 +765,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "12a972d56cf048729c84f5a2fd6c0779b183fe72f41ebb954ae2f56e08105d80"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -431,6 +800,11 @@
     },
     "zhCN": {
       "description": "对那些为了某些自私的理由而背叛了自己首领的卑劣生物们而言，死亡是他们最合适的归宿。但对于那些将自己的全部身心奉献给黑暗的家伙们来说，死亡还远远不够。\n\n拿着这块宝石，当你附近有火刃氏族的爪牙死去时，就启动宝石上面的魔法。这个法术会拯救堕落的灵魂，将它们拉出黑暗的深渊，灌注到宝石里。\n\n在这些宝石中灌入了灵魂之后，把它们带回来交给我，我会妥善处置它们。\n\n现在就出发吧，多加小心。",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "对那些为了某些自私的理由而背叛了自己首领的卑劣生物们而言，死亡是他们最合适的归宿。但对于那些将自己的全部身心奉献给黑暗的家伙们来说，死亡还远远不够。\n\n拿着这块宝石，当你附近有火刃氏族的爪牙死去时，就启动宝石上面的魔法。这个法术会拯救堕落的灵魂，将它们拉出黑暗的深渊，灌注到宝石里。\n\n在这些宝石中灌入了灵魂之后，把它们带回来交给我，我会妥善处置它们。\n\n现在就出发吧，多加小心。",
+        "7791f421f81fd855c2fd": "啊，你平安归来了，这很好。给我宝石，我要把它们放到安全的地方去。\n\n我给你的任务你已经全都完成了，$C。你休整好了以後记得和塔卡塔谈一下，他或许还有其他的任务给你，或者会安排你回奥格玛去将我们在凄凉之地的工作进程通报给科尔丹。\n",
+        "78fe73b177fb4b244bfe": "我自己也尝试过尽可能将魔法弄得简单些。从受伤的躯体中抽取灵魂实在是易如反掌，但你不能完全依赖宝石的力量去杀敌。你必须在他们濒死的时候才能启动宝石，否则宝石就不能发挥它的功效。"
+      },
       "summary": "将15块燃烧宝石转变为灌入灵魂的燃烧宝石，然后把它们交给凄凉之地的玛乌林·碎骨。",
       "title": "灵魂的燃烧",
       "translationMetadata": {
@@ -439,6 +813,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -455,6 +847,11 @@
     },
     "zhTW": {
       "description": "對那些為了某些自私的理由而背叛了自己首領的卑劣生物們而言，死亡是他們最合適的歸宿。但對於那些將自己的全部身心奉獻給黑暗的傢伙們來說，死亡還遠遠不夠。\n\n拿著這塊寶石，當你附近有燃刃氏族的爪牙死去時，就啟動寶石上面的魔法。這個法術會拯救墮落的靈魂，將它們拉出黑暗的深淵，灌注到寶石裡。\n\n在這些寶石中灌入了靈魂之後，把它們帶回來交給我，我會妥善處置它們。\n\n現在就出發吧，多加小心。",
+      "dialogue": {
+        "1d369fb72e1655f35e99": "對那些為了某些自私的理由而背叛了自己首領的卑劣生物們而言，死亡是他們最合適的歸宿。但對於那些將自己的全部身心奉獻給黑暗的傢伙們來說，死亡還遠遠不夠。\n\n拿著這塊寶石，當你附近有火刃氏族的爪牙死去時，就啟動寶石上面的魔法。這個法術會拯救墮落的靈魂，將它們拉出黑暗的深淵，灌注到寶石裡。\n\n在這些寶石中灌入了靈魂之後，把它們帶回來交給我，我會妥善處置它們。\n\n現在就出發吧，多加小心。",
+        "7791f421f81fd855c2fd": "啊，你平安歸來了，這很好。給我寶石，我要把它們放到安全的地方去。\n\n我給你的任務你已經全都完成了，$C。你休整好了以後記得和塔卡塔談一下，他或許還有其它的任務給你，或者會安排你回奧格瑞瑪去將我們在淒涼之地的工作進程通報給科爾丹。",
+        "78fe73b177fb4b244bfe": "我自己也嘗試過儘可能將魔法弄得簡單些。從受傷的軀體中抽取靈魂實在是易如反掌，但你不能完全依賴寶石的力量去殺敵。你必須在他們瀕死的時候才能啓動寶石，否則寶石就不能發揮它的功效。"
+      },
       "summary": "將15塊燃燒寶石轉變為灌入靈魂的燃燒寶石，然後把它們交給淒涼之地的莫林·碎骨者。",
       "title": "靈魂的燃燒",
       "translationMetadata": {
@@ -463,6 +860,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1d369fb72e1655f35e99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.7791f421f81fd855c2fd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.78fe73b177fb4b244bfe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

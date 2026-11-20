@@ -896,6 +896,8 @@ class DatabaseTests(unittest.TestCase):
         options = load_catalog(ROOT, 'gossipoptions')['catalogs']['gossipoptions']
         captured_ids = {96904, 96905, 96906, 96907, 96908, 96909, 96910, 96911,
                         96912, 96913, 96914, 96915, 96916, 140186, 141988, 141989}
+        captured_ids.update(range(95408, 95420))
+        captured_ids.update((97329, 143270))
         self.assertTrue(captured_ids.issubset({int(key) for key in options}))
         for option_id in captured_ids:
             entity = options[str(option_id)]
@@ -908,6 +910,11 @@ class DatabaseTests(unittest.TestCase):
                     origin = localized['translationMetadata']['fields']['name']['origin']
                     self.assertEqual(api.IsAITranslated(api, b'gossipoptions', option_id, locale.encode()), origin == 'ai')
         self.assertEqual(api.GetGossipOptionName(api, 96916, b'frFR').decode(), 'Hôtel des ventes')
+        self.assertEqual(api.GetGossipOptionName(api, 95418, b'enUS').decode(), 'Bank of Ironforge')
+        self.assertEqual(api.GetGossipOptionName(api, 97329, b'enUS').decode(), 'I need a ride.')
+        self.assertEqual(api.GetGossipOptionNameByIcon(api, 132057, b'enUS').decode(), 'I need a ride.')
+        self.assertIsNone(api.GetGossipOptionNameByIcon(api, 132053, b'enUS'))
+        self.assertEqual(api.GetGossipOptionName(api, 95418, b'frFR').decode(), 'Banque de Forgefer')
         self.assertFalse(api.IsAITranslated(api, b'gossipoptions', 96916, b'frFR'))
         self.assertFalse(api.IsAITranslated(api, b'gossipoptions', 96916, b'enUS'))
         self.assertTrue(api.IsAITranslated(api, b'gossipoptions', 96904, b'enUS'))

@@ -48,8 +48,7 @@ equal(Addon.panel:IsShown(), true, "missing quest opens the Rosetta panel")
 equal(Addon.current.questID, 999999999, "missing page retains the native quest ID")
 equal(Addon.page.body.sections[1]:GetText(), "Désolés pour cet oubli", "missing page follows the client locale")
 equal(Addon.panel.title, "Forever Rosetta Stone", "missing page is not labeled with the translation language")
-equal(Addon.page.reportButton:IsShown(), true, "missing page offers the report action")
-equal(Addon.panel.ReportButton:IsShown(), false, "sorry page has no extra report button")
+equal(Addon.panel.ReportButton:IsShown(), true, "missing quest offers the shared Options button")
 equal(Addon.page.rewards:IsShown(), true, "missing page uses the same framed reward area")
 equal(Addon.page.background:GetHeight(), 440, "missing page uses native parchment sizing")
 equal(Addon.page.body.frame:GetHeight(), QuestMapFrame.DetailsFrame.ScrollFrame:GetHeight(),
@@ -57,11 +56,9 @@ equal(Addon.page.body.frame:GetHeight(), QuestMapFrame.DetailsFrame.ScrollFrame:
 equal(#Addon.page.body.lastSections, 5, "missing page uses the standard five quest sections")
 equal(Addon.page.beerReward.Name:GetText(), "Bière", "reward name follows the client locale")
 equal(Addon.page.beerReward.Count:GetText(), "100", "reward count uses the native reward slot")
-equal(Addon.page.reportButton:GetParent(), Addon.panel.Header,
-    "prepare report action belongs to the quest header")
-equal(Addon.page.reportButton.points[1][1], "CENTER", "prepare report action is centered in the header")
-equal(Addon.page.reportButton.points[1][5], 4, "prepare report action shares the native header control baseline")
-equal(Addon.page.reportButton:GetText(), "Préparer le rapport", "report action follows the client locale")
+equal(Addon.panel.ReportButton:GetParent(), Addon.panel.Header, "Options belongs to the quest header")
+equal(Addon.panel.ReportButton.points[1][1], "TOPRIGHT", "Options aligns with the translated quest button")
+equal(Addon.panel.ReportButton:GetText(), "Options", "missing quest uses the shared Options label")
 Addon.page.receiveText:ClearAllPoints()
 Addon.page.receiveText:SetPoint("BOTTOMLEFT", Addon.page.rewards.RewardsFrame, "BOTTOMLEFT", 12, 0)
 Addon:RefreshSelection()
@@ -88,10 +85,10 @@ equal(Addon.panel.points[1][2], SpokenPlacesPanel, "missing page stands beside S
 Addon:ReleaseControllerFocus()
 Addon:SyncControllerFocus(true)
 equal(SmartNavigation:GetCurrentButton(), nil,
-    "opening the missing quest page does not select Prepare report")
+    "opening the missing quest page does not select Options")
 local beforeReportSelection = Addon.page.body.frame:GetVerticalScroll()
-SmartNavigation:SelectButton(Addon.page.reportButton)
-equal(SmartNavigation:GetCurrentButton(), Addon.page.reportButton, "controller reaches the report action")
+SmartNavigation:SelectButton(Addon.panel.ReportButton)
+equal(SmartNavigation:GetCurrentButton(), Addon.panel.ReportButton, "controller reaches the report action")
 equal(Addon.page.body.frame:GetVerticalScroll(), beforeReportSelection,
     "selecting the header report action preserves the reading position")
 context.press("PAD1")
@@ -145,19 +142,18 @@ equal(dialog.registered, nil, "closing releases native registration")
 equal(Addon.lifecycle, "ready", "closing report preserves addon lifecycle")
 equal(context.manager.focusedFrame, Addon.panel, "closing report returns to the missing quest page")
 equal(SmartNavigation:GetCurrentButton(), nil,
-    "returning from the report does not preselect Prepare report")
+    "returning from the report does not preselect Options")
 
-SmartNavigation:SelectButton(Addon.page.reportButton)
-equal(SmartNavigation:GetCurrentButton(), Addon.page.reportButton, "report action can be selected again")
+SmartNavigation:SelectButton(Addon.panel.ReportButton)
+equal(SmartNavigation:GetCurrentButton(), Addon.panel.ReportButton, "report action can be selected again")
 QuestMapFrame.DetailsFrame.questID = 943
 Addon:RefreshSelection()
-equal(Addon.page.reportButton:IsShown(), false, "translated quest restores the regular page")
 equal(Addon.panel.ReportButton:IsShown(), true, "translated quest offers the header report button")
 equal(Addon.page.rewards:IsShown(), true, "translated quest restores native rewards")
 equal(Addon.page.beerReward:IsShown(), false, "translated quest hides the fictional reward")
 equal(Addon.page.background:GetHeight(), 440, "translated quest restores native parchment sizing")
-equal(SmartNavigation:GetCurrentButton(), nil,
-    "switching quests clears the hidden action without selecting another")
+equal(SmartNavigation:GetCurrentButton(), Addon.panel.ReportButton,
+    "switching quests keeps the shared Options action selected")
 SmartNavigation:SelectButton(Addon.panel.ReportButton)
 equal(SmartNavigation:GetCurrentButton(), Addon.panel.ReportButton,
     "controller reaches the translated quest report button")

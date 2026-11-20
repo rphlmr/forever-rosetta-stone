@@ -1,8 +1,36 @@
 {
   "areaId": 33,
+  "dialogueContexts": {
+    "4c2a6d4b23e464f7c2f5": {
+      "lineId": "q:1127:accept",
+      "npcId": 2498,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "738aa09c9fb9f771655e": {
+      "lineId": "q:1127:complete",
+      "npcId": 2498,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "d143a17cad6cf49a8d3d": {
+      "lineId": "q:1127:progress",
+      "npcId": 2498,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Takže ty chceš trochu Bláznova stoutu, co? Přemýšlíš o návratu na závody...?\n\nTak dobře, přines mi víc Zanzilovy směsi a já ti toho piva uvařím víc.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Takže chceš trochu Bláznovy černé, co? Chystáš se zpátky na závody...? $B$B Dobrá, přines mi víc Zanzilovy směsi a já ti uvařím další.",
+        "738aa09c9fb9f771655e": "Ach, výborně! Tady máš svou odměnu.$B$B A tady něco navíc... za tvou diskrétnost.",
+        "d143a17cad6cf49a8d3d": "Už máš ty Zanzilovy směsi, $N?"
+      },
       "summary": "Přines 12× Zanzil's Mixture Crankovi Fizzlebubovi do Booty Bay.",
       "title": "Stout bláznů",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +75,11 @@
     },
     "daDK": {
       "description": "Så du vil have noget Fool's Stout? Overvejer du at vende tilbage til løbene...?\n\nNå, bring mig mere af Zanzils blanding, så laver jeg mere stout til dig.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Så du vil have noget Fool’s Stout, hva? Overvejer du at tage tilbage til væddeløbene...? $B$B Godt, kom med mere af Zanzils blanding, så brygger jeg mere til dig.",
+        "738aa09c9fb9f771655e": "Ah, fortrinligt! Her er din betaling.$B$B Og her er lidt ekstra... for din diskretion.",
+        "d143a17cad6cf49a8d3d": "Har du Zanzils blandinger endnu, $N?"
+      },
       "summary": "Bring 12 af Zanzils blanding til Crank Fizzlebub i Booty Bay.",
       "title": "Tåbens stout",
       "translationMetadata": {
@@ -41,6 +89,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a0764b833d00a0b497f6d7908dd5dd928cfe0e5b7d17ce2c7c8351ab2cd06516"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +122,11 @@
     },
     "deDE": {
       "description": "Ihr möchtet also etwas von Fools Starkbier, hm? Denkt Ihr daran, wieder die Rennen zu besuchen...?\n\nGut, bringt mir mehr von Zanzils Mixtur und ich braue noch etwas mehr Starkbier für Euch.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Ihr möchtet also etwas von Fools Starkbier, hm? Denkt Ihr daran, wieder die Rennen zu besuchen...?\n\nGut, bringt mir mehr von Zanzils Mixtur und ich braue noch etwas mehr Starkbier für Euch.",
+        "738aa09c9fb9f771655e": "Ah, sehr gut! Hier ist Eure Bezahlung.\n\nUnd hier noch ein kleiner Zuschuss... für Eure Verschwiegenheit.",
+        "d143a17cad6cf49a8d3d": "Haben Sie diese Zanzil-Mischungen schon, $N?"
+      },
       "summary": "Bringt 12 von Zanzils Mixturen zu Crank Fizzlebub in Booty Bay.",
       "title": "Fools Starkbier",
       "translationMetadata": {
@@ -67,6 +135,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +169,11 @@
     },
     "enUS": {
       "description": "So you want some Fool's Stout, eh?  Thinking of heading back to the races...?\n\nAll right, bring me more of Zanzil's mixture and I'll make some more stout for you.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "So you want some Fool's Stout, eh?  Thinking of heading back to the races...?$B$BAll right, bring me more of Zanzil's mixture and I'll make some more stout for you.",
+        "738aa09c9fb9f771655e": "Ah, very good! Here is your pay.$B$BAnd here is a little something extra... for your discretion.",
+        "d143a17cad6cf49a8d3d": "Do you have those Zanzil mixtures yet, $N?"
+      },
       "summary": "Bring 12 of Zanzil's Mixture to Crank Fizzlebub in Booty Bay.",
       "title": "Fool's Stout",
       "translationMetadata": {
@@ -91,6 +182,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +216,11 @@
     },
     "esES": {
       "description": "¿Así que quieres un poco de cerveza de tontos, eh? Seguro que estás pensando en volver a las carreras...\n\nEstá bien, tráeme más mezclas de Zanzil y yo te prepararé más cerveza de esa.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "¿Así que quieres un poco de cerveza de tontos, eh? Seguro que estás pensando en volver a las carreras...\n\nEstá bien, tráeme más mezclas de Zanzil y yo te prepararé más cerveza de esa.",
+        "738aa09c9fb9f771655e": "¡Ay, muy bien!  Aquí está tu paga.\n\n Y aquí hay algo extra... para su discreción.",
+        "d143a17cad6cf49a8d3d": "¿Ya tienes esas mezclas de Zanzil, $N?"
+      },
       "summary": "Llévale 12 mezclas de Zanzil a Loquillo Pinchabujas, que está en Bahía del Botín.",
       "title": "Cerveza de tontos",
       "translationMetadata": {
@@ -115,6 +229,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +263,11 @@
     },
     "esMX": {
       "description": "¿Así que quieres un poco de cerveza de tontos, eh? Seguro que estás pensando en volver a las carreras...\n\nEstá bien, tráeme más mezclas de Zanzil y yo te prepararé más cerveza de esa.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "¿Así que quieres un poco de cerveza de tontos, eh? Seguro que estás pensando en volver a las carreras...\n\nEstá bien, tráeme más mezclas de Zanzil y yo te prepararé más cerveza de esa.",
+        "738aa09c9fb9f771655e": "¡Ah, muy bien! Aquí está tu paga.\n\nY aquí hay algo extra... por tu discreción.",
+        "d143a17cad6cf49a8d3d": "¿Ya tienes esas mezclas de Zanzil, $n?"
+      },
       "summary": "Llévale 12 mezclas de Zanzil a Loquillo Pinchabujas, que está en Bahía del Botín.",
       "title": "Cerveza de tontos",
       "translationMetadata": {
@@ -139,6 +276,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +310,11 @@
     },
     "frFR": {
       "description": "Ainsi, vous voulez de la Bière du sot, hein ? Vous pensez retourner aux courses ?\n\nTrès bien, apportez-moi de la Mixture de Zanzil et je préparerai davantage de bière pour vous.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Ainsi, vous voulez de la Bière du sot, hein ? Vous pensez retourner aux courses ?\n\nTrès bien, apportez-moi de la Mixture de Zanzil et je préparerai davantage de bière pour vous.",
+        "738aa09c9fb9f771655e": "Ah, très bien ! Voici votre salaire.\n\nEt voici un petit quelque chose en plus... pour votre discrétion.",
+        "d143a17cad6cf49a8d3d": "Avez-vous déjà ces mélanges de Zanzil, $N ?"
+      },
       "summary": "Apporter 12 Mixtures de Zanzil à Crank Fizzlebub à Baie-du-Butin.",
       "title": "Bière du sot",
       "translationMetadata": {
@@ -163,6 +323,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +357,11 @@
     },
     "hrHR": {
       "description": "Dakle, želiš malo budalina tamnog piva, ha? Razmišljaš o povratku na utrke...?\n\nDobro, donesi mi još Zanzilove mješavine i napravit ću ti još piva.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Dakle, želiš malo Fool’s Stouta, ha? Razmišljaš o povratku na utrke...? $B$B U redu, donesi mi još Zanzilove mješavine pa ću ti skuhati još piva.",
+        "738aa09c9fb9f771655e": "Ah, izvrsno! Evo tvoje plaće.$B$B A evo i nečeg dodatnog... za tvoju diskreciju.",
+        "d143a17cad6cf49a8d3d": "Imaš li već te Zanzilove mješavine, $N?"
+      },
       "summary": "Donesi 12 Zanzilovih mješavina Cranku Fizzlebubu u Booty Bayu.",
       "title": "Budalino tamno pivo",
       "translationMetadata": {
@@ -188,6 +371,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a0764b833d00a0b497f6d7908dd5dd928cfe0e5b7d17ce2c7c8351ab2cd06516"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +404,11 @@
     },
     "itIT": {
       "description": "Vuoi della Birra dello Sciocco, eh? Pensi di tornare alle corse...?\n\nD'accordo, portami altra miscela di Zanzil e te ne preparerò ancora.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Quindi vuoi un po' di Fool's Stout, eh? Pensi di tornare alle corse...?\n\nVa bene, portami altra mistura di Zanzil e ti preparerò altra birra scura.",
+        "738aa09c9fb9f771655e": "Ah, molto bene! Ecco la tua paga.\n\nEd ecco un piccolo extra... per la tua discrezione.",
+        "d143a17cad6cf49a8d3d": "Ce l'hai già la mistura di Zanzil, avventuriero?"
+      },
       "summary": "Porta 12 dosi della mistura di Zanzil a Crank Fizzlebub a Booty Bay.",
       "title": "Birra dello Sciocco",
       "translationMetadata": {
@@ -215,6 +418,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a0764b833d00a0b497f6d7908dd5dd928cfe0e5b7d17ce2c7c8351ab2cd06516"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -233,6 +454,11 @@
     },
     "koKR": {
       "description": "멍텅구리 스타우트 맥주가 더 필요하단 말씀이죠? 다시 경주에 돈을 거시려고...?\n\n좋습니다. 잔질의 혼합물만 더 가져다주면 스타우트 맥주를 얼마든지 더 만들어 드리지요.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "바보의 스타우트가 좀 필요하다고? 경주장으로 돌아갈 생각인가...? $B$B 좋아, 잔질의 혼합물을 더 가져오면 스타우트를 더 만들어 주지.",
+        "738aa09c9fb9f771655e": "아, 아주 좋아!  여기 당신의 급여가 있습니다.\n\n그리고 여기에 약간의 추가 사항이 있습니다... 당신의 재량에 따라.",
+        "d143a17cad6cf49a8d3d": "$N 님, 잔질 혼합물 아직 가지고 계시나요?"
+      },
       "summary": "무법항에 있는 크랭크 피즐버브에게 잔질의 혼합물 12개를 가져가야 합니다.",
       "title": "멍텅구리 스타우트 맥주",
       "translationMetadata": {
@@ -241,6 +467,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +500,11 @@
     },
     "plPL": {
       "description": "Chcesz Stoutu Głupca, co? Myślisz o powrocie na wyścigi...?\n\nDobrze, przynieś więcej mikstury Zanzila, a przygotuję kolejną porcję.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "A więc chcesz trochę Fool’s Stout, co? Myślisz o powrocie na wyścigi...? $B$B Dobrze, przynieś mi więcej mieszanki Zanzila, a uwarzę ci więcej piwa.",
+        "738aa09c9fb9f771655e": "Ach, doskonale! Oto twoja zapłata.$B$B A tu coś ekstra... za dyskrecję.",
+        "d143a17cad6cf49a8d3d": "Masz już te mieszanki Zanzila, $N?"
+      },
       "summary": "Przynieś 12 porcji mikstury Zanzila Crankowi Fizzlebubowi w Booty Bay.",
       "title": "Stout Głupca",
       "translationMetadata": {
@@ -266,6 +514,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a0764b833d00a0b497f6d7908dd5dd928cfe0e5b7d17ce2c7c8351ab2cd06516"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -284,6 +547,11 @@
     },
     "ptBR": {
       "description": "Quer um pouco de Cerveja Escura do Tonto, né? Está pensando em voltar para as pistas?\n\nCerto, traga um pouco mais do preparado de Zanzil, que eu preparo a cerveja.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Quer um pouco de Cerveja Escura do Tonto, né? Está pensando em voltar para as pistas?\n\nCerto, traga um pouco mais do preparado de Zanzil, que eu preparo a cerveja.",
+        "738aa09c9fb9f771655e": "Ah, muito bem! Aqui está seu pagamento.$B$B E aqui vai algo a mais... pela sua discrição.",
+        "d143a17cad6cf49a8d3d": "Já conseguiu aquelas misturas do Zanzil, $N?"
+      },
       "summary": "Leve 12 Preparados de Zanzil para Cranque Mirrabolha na Angra do Butim.",
       "title": "Cerveja Escura do Tonto",
       "translationMetadata": {
@@ -292,6 +560,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -308,6 +592,11 @@
     },
     "ruRU": {
       "description": "Говорите, вам нужно \"Дурацкое Крепкое\", да? Хотите снова отправиться на гонки?\n\nНу ладно, принесите мне еще смеси Занзила, и я наварю вам еще.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Говорите, вам нужно \"Дурацкое Крепкое\", да? Хотите снова отправиться на гонки?\n\nНу ладно, принесите мне еще смеси Занзила, и я наварю вам еще.",
+        "738aa09c9fb9f771655e": "Отлично! Вот твоя плата.\n\nТак же вот, на твое усмотрение.",
+        "d143a17cad6cf49a8d3d": "Что насчет смеси Занзила, $N?"
+      },
       "summary": "Принесите 12 порций смеси Занзила Шиззи Пуззыриксу в Пиратскую бухту.",
       "title": "\"Дурацкое Крепкое\"",
       "translationMetadata": {
@@ -316,6 +605,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +639,11 @@
     },
     "svSE": {
       "description": "Så du vill ha lite av dårens stout, va? Tänker du återvända till kapplöpningarna...?\n\nOkej, ge mig mer av Zanzils blandning så gör jag lite mer stout åt dig.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Så du vill ha lite Fool’s Stout, va? Funderar du på att återvända till kapplöpningarna...? $B$B Okej, ge mig mer av Zanzils blandning så brygger jag mer stout åt dig.",
+        "738aa09c9fb9f771655e": "Ah, mycket bra! Här är din betalning.$B$B Och här är något extra... för din diskretion.",
+        "d143a17cad6cf49a8d3d": "Har du fått tag på Zanzils blandningar än, $N?"
+      },
       "summary": "Ta med 12 av Zanzils blandning till Crank Fizzlebub i Booty Bay.",
       "title": "Dårens starköl",
       "translationMetadata": {
@@ -341,6 +653,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a0764b833d00a0b497f6d7908dd5dd928cfe0e5b7d17ce2c7c8351ab2cd06516"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -359,6 +686,11 @@
     },
     "trTR": {
       "description": "Demek biraz Budala Birası istiyorsun, ha? Yarışlara geri dönmeyi mi düşünüyorsun...?\n\nPekâlâ, bana Zanzil'in karışımından biraz daha getir; sana biraz daha bira yapayım.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Demek biraz Fool’s Stout istiyorsun, ha? Yarışlara geri dönmeyi mi düşünüyorsun...? $B$B Peki, bana biraz daha Zanzil karışımı getir, sana daha fazla yapayım.",
+        "738aa09c9fb9f771655e": "Ah, çok iyi! İşte ödemen.$B$B Bir de küçük bir ek... ketumluğun için.",
+        "d143a17cad6cf49a8d3d": "Zanzil karışımlarını buldun mu, $N?"
+      },
       "summary": "Zanzil'in Karışımı'ndan 12 tane Booty Bay'deki Crank Fizzlebub'a getir.",
       "title": "Budala Birası",
       "translationMetadata": {
@@ -368,6 +700,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a0764b833d00a0b497f6d7908dd5dd928cfe0e5b7d17ce2c7c8351ab2cd06516"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -386,6 +733,11 @@
     },
     "ukUA": {
       "description": "То ти хочеш випити \"Йолопива\", так? Хочеш знову повернутися на перегони?\n\nГаразд, принеси мені трохи суміші Занзіла і я зроблю тобі ще.",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "Отже, хочеш трохи Fool’s Stout, га? Думаєш повернутися на перегони...? $B$B Гаразд, принеси мені ще суміші Занзіла, і я зварю тобі більше пива.",
+        "738aa09c9fb9f771655e": "О, чудово! Ось твоя платня.$B$B А ось дещо додатково... за твою мовчазність.",
+        "d143a17cad6cf49a8d3d": "Ти вже маєш ті суміші Занзіла, $N?"
+      },
       "summary": "Принесіть 12 порцій суміші Занзіла Вибрику Бульчуку у Грабіжну Бухту.",
       "title": "Йолопиво",
       "translationMetadata": {
@@ -396,6 +748,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "a0764b833d00a0b497f6d7908dd5dd928cfe0e5b7d17ce2c7c8351ab2cd06516"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +783,11 @@
     },
     "zhCN": {
       "description": "你想要一些蠢人酒？是用在赛车比赛上么……\n\n好吧，给我弄些赞吉尔的药剂来，我就给你调制更多的酒。",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "你想要一些蠢人酒？是用在赛车比赛上么……\n\n好吧，给我弄些赞吉尔的药剂来，我就给你调制更多的酒。",
+        "738aa09c9fb9f771655e": "嗯，这些是给你的蠢人酒。现在你到闪光平原去把它交给地精或哥布尔的车队老板吧，记得要赶快，因为这东西没法长时间保持新鲜。\n\n如果什么时候你还想要更多酒的话……就来这里找我吧!",
+        "d143a17cad6cf49a8d3d": "你搞到赞吉尔的药剂了吗，$N?"
+      },
       "summary": "收集12份赞吉尔的药剂，把它们交给藏宝海湾的克兰克·菲兹巴布。",
       "title": "蠢人酒",
       "translationMetadata": {
@@ -424,6 +796,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +830,11 @@
     },
     "zhTW": {
       "description": "你想要一些蠢人酒？是用在賽車比賽上麼……\n\n好吧，給我弄些贊吉爾的藥劑來，我就給你調製更多的酒。",
+      "dialogue": {
+        "4c2a6d4b23e464f7c2f5": "你想要一些蠢人酒？是用在賽車比賽上麼……\n\n好吧，給我弄些贊吉爾的藥劑來，我就給你調製更多的酒。",
+        "738aa09c9fb9f771655e": "嗯，這些是給你的蠢人酒。現在你到閃光平原去把它交給地精或哥布爾的車隊老闆吧，記得要趕快，因爲這東西沒法長時間保持新鮮。\n\n如果什麼時候你還想要更多酒的話……就來這裏找我吧!",
+        "d143a17cad6cf49a8d3d": "你搞到贊吉爾的藥劑了嗎，$N?"
+      },
       "summary": "收集12份贊吉爾的藥劑，把它們交給藏寶海灣的克蘭克·菲茲巴布。",
       "title": "蠢人酒",
       "translationMetadata": {
@@ -448,6 +843,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.4c2a6d4b23e464f7c2f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.738aa09c9fb9f771655e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d143a17cad6cf49a8d3d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

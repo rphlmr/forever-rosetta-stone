@@ -1,8 +1,28 @@
 {
   "areaId": 12,
+  "dialogueContexts": {
+    "845609df1ab060237405": {
+      "lineId": "q:35:complete",
+      "npcId": 261,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "87b473a0afa003e6a92b": {
+      "lineId": "q:35:accept",
+      "npcId": 240,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Pokud se obáváš, že zvěsti o murlocích jsou pravdivé, udělej tohle: jdi k východnímu mostu v lese Elwynn a promluv si se strážným Thomasem. Poslední týden byl u mostu a bude znát stav oblasti.\n\nPřines mi jeho hlášení.",
+      "dialogue": {
+        "845609df1ab060237405": "Ano, murloci se usadili v potocích východního Elwynnu a kolem nich. Nevíme, proč tu jsou, ale jsou agresivní a alespoň trochu inteligentní.",
+        "87b473a0afa003e6a92b": "Pokud se obáváš, že zvěsti o murlocích jsou pravdivé, udělej tohle: jdi k východnímu mostu v lese Elwynn a promluv si se strážným Thomasem. Poslední týden byl u mostu a bude znát stav oblasti.$B$BPřines mi jeho hlášení."
+      },
       "summary": "Maršál Dughan chce, aby sis promluvil se strážným Thomasem.",
       "title": "Další obavy",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -31,6 +61,10 @@
     },
     "daDK": {
       "description": "Hvis du er bekymret for, at rygterne om murlocs er sande, så gør følgende: Rejs til broen i det østlige Elwynn, og tal med vagt Thomas. Han har været udstationeret ved broen den sidste uge og kender forholdene i området.\n\nBring mig hans rapport.",
+      "dialogue": {
+        "845609df1ab060237405": "Ja, murlocs har slået sig ned i og omkring vandløbene i det østlige Elwynn. Vi ved ikke, hvorfor de er her, men de er aggressive og i det mindste nogenlunde intelligente.",
+        "87b473a0afa003e6a92b": "Hvis du er bekymret for, at rygterne om murlocs er sande, så gør følgende: Rejs til broen i det østlige Elwynn, og tal med vagt Thomas. Han har været udstationeret ved broen den sidste uge og kender forholdene i området.$B$BBring mig hans rapport."
+      },
       "summary": "Marskal Dughan vil have dig til at tale med vagt Thomas.",
       "title": "Yderligere bekymringer",
       "translationMetadata": {
@@ -40,6 +74,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "788f274e354446bfef4168d669adfd4534e49b7fa31860e6a1e8518f4c5ae632"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -58,6 +102,10 @@
     },
     "deDE": {
       "description": "Falls Ihr befürchtet, dass die Gerüchte über das Auftauchen von Murlocs wahr sein könnten, dann tut das Folgende: Begebt Euch zur östlichen Elwynn-Brücke und sprecht mit Wache Thomas. Er ist seit einer Woche an der Brücke stationiert und wird deswegen wissen, wie es in der Gegend aussieht.\n\nBringt mir seinen Bericht.",
+      "dialogue": {
+        "845609df1ab060237405": "Ja, es haben sich Murlocs in und an den Flüssen und Bächen des östlichen Elwynn niedergelassen. Wir wissen nicht, warum sie hergekommen sind, aber sie sind aggressiv und zumindest halbintelligent. ",
+        "87b473a0afa003e6a92b": "Falls Ihr befürchtet, dass die Gerüchte über das Auftauchen von Murlocs wahr sein könnten, dann tut das Folgende: Begebt Euch zur östlichen Elwynn-Brücke und sprecht mit Wache Thomas. Er ist seit einer Woche an der Brücke stationiert und wird deswegen wissen, wie es in der Gegend aussieht.\n\nBringt mir seinen Bericht."
+      },
       "summary": "Marshal Dughan möchte, dass Ihr mit Wache Thomas sprecht.",
       "title": "Weitere Sorgen",
       "translationMetadata": {
@@ -66,6 +114,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +142,10 @@
     },
     "enUS": {
       "description": "If you are concerned that the rumors of murlocs are true, then do this -- travel to the eastern Elwynn bridge and speak with Guard Thomas.  He has been stationed at the bridge for the past week and will know the state of the area.\n\nBring me his report.",
+      "dialogue": {
+        "845609df1ab060237405": "Yes, murlocs have settled in and around the streams of eastern Elwynn.  We don't know why they are here, but they are aggressive and at least semi-intelligent.",
+        "87b473a0afa003e6a92b": "If you are concerned that the rumors of murlocs are true, then do this -- travel to the eastern Elwynn bridge and speak with Guard Thomas.  He has been stationed at the bridge for the past week and will know the state of the area.$B$BBring me his report."
+      },
       "summary": "Marshal Dughan wants you to speak with Guard Thomas.",
       "title": "Further Concerns",
       "translationMetadata": {
@@ -90,6 +154,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +183,10 @@
     },
     "esES": {
       "description": "Si te preocupa que los rumores sobre los murlocs sean ciertos, viaja al puente del este de Elwynn y habla con el guardia Thomas. Esta última semana se encuentra emplazado en el puente y sabrá cuál es el estado de la situación.\n\nTráeme su informe.",
+      "dialogue": {
+        "845609df1ab060237405": "Sí, los murlocs se han asentado a lo largo de los ríos del este de Elwynn. No sabemos por qué están ahí, pero son agresivos y, además, ¡son hasta un poco inteligentes!",
+        "87b473a0afa003e6a92b": "Si te preocupa que los rumores sobre los murlocs sean ciertos, viaja al puente del este de Elwynn y habla con el guardia Thomas. Esta última semana se encuentra emplazado en el puente y sabrá cuál es el estado de la situación.\n\nTráeme su informe."
+      },
       "summary": "El alguacil Dughan quiere que hables con el guardia Thomas.",
       "title": "Más preocupaciones",
       "translationMetadata": {
@@ -115,6 +195,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +223,10 @@
     },
     "esMX": {
       "description": "Si te preocupa que los rumores sobre los múrlocs sean ciertos, hay algo que puedes hacer: viaja al puente oriental de Elwynn y habla con el guardia Thomas. Ha estado emplazado en el puente durante la última semana, así que debe saber cuál es el estado de la situación.\n\nTráeme su informe.",
+      "dialogue": {
+        "845609df1ab060237405": "Sí, los múrlocs se han asentado a lo largo de los ríos del este de Elwynn. No sabemos por qué están ahí, pero son agresivos y, además, ¡son hasta un poco inteligentes!",
+        "87b473a0afa003e6a92b": "Si te preocupa que los rumores sobre los múrlocs sean ciertos, hay algo que puedes hacer: viaja al puente oriental de Elwynn y habla con el guardia Thomas. Ha estado emplazado en el puente durante la última semana, así que debe saber cuál es el estado de la situación.\n\nTráeme su informe."
+      },
       "summary": "El alguacil Dughan quiere que hables con el guardia Thomas.",
       "title": "Más preocupaciones",
       "translationMetadata": {
@@ -139,6 +235,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +263,10 @@
     },
     "frFR": {
       "description": "Si vous voulez savoir si les rumeurs concernant les murlocs sont vraies, allez donc au pont, à l'est d’Elwynn et parlez au garde Thomas. Il y est en poste depuis une semaine, il saura de quoi il retourne.\n\nRamenez-moi son compte rendu.",
+      "dialogue": {
+        "845609df1ab060237405": "Oui, les murlocs se sont installés sur la rive est de l'Elwynn. Nous ne savons pas pourquoi ils sont là, mais ils sont agressifs et ont une certaine forme d'intelligence. ",
+        "87b473a0afa003e6a92b": "Si vous voulez savoir si les rumeurs concernant les murlocs sont vraies, allez donc au pont, à l'est d’Elwynn et parlez au garde Thomas. Il y est en poste depuis une semaine, il saura de quoi il retourne.\n\nRamenez-moi son compte rendu."
+      },
       "summary": "Le maréchal Dughan veut que vous parliez au garde Thomas.",
       "title": "Inquiétudes supplémentaires",
       "translationMetadata": {
@@ -163,6 +275,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +303,10 @@
     },
     "hrHR": {
       "description": "Ako te brine da su glasine o murlocima istinite, učini sljedeće: otputuj do istočnog mosta Elwynna i razgovaraj sa stražarom Thomasom. On je ondje smješten posljednjih tjedan dana i znat će kakvo je stanje u području.\n\nDonesi mi njegovo izvješće.",
+      "dialogue": {
+        "845609df1ab060237405": "Da, murloci su se nastanili u potocima istočnog Elwynna i oko njih. Ne znamo zašto su ovdje, ali agresivni su i barem donekle inteligentni.",
+        "87b473a0afa003e6a92b": "Ako te brine da su glasine o murlocima istinite, učini sljedeće: otputuj do istočnog mosta Elwynna i razgovaraj sa stražarom Thomasom. On je ondje smješten posljednjih tjedan dana i znat će kakvo je stanje u području.$B$BDonesi mi njegovo izvješće."
+      },
       "summary": "Maršal Dughan želi da razgovaraš sa stražarom Thomasom.",
       "title": "Daljnje brige",
       "translationMetadata": {
@@ -188,6 +316,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "788f274e354446bfef4168d669adfd4534e49b7fa31860e6a1e8518f4c5ae632"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +344,10 @@
     },
     "itIT": {
       "description": "Se temi che le voci sui murloc siano vere, fa' così: raggiungi il ponte a est di Elwynn e parla con la guardia Thomas. È di stanza al ponte da una settimana e conoscerà la situazione della zona.\n\nPortami il suo rapporto.",
+      "dialogue": {
+        "845609df1ab060237405": "Sì, i murloc si sono insediati nei torrenti di Elwynn est e tutt'intorno. Non sappiamo perché siano qui, ma sono aggressivi e almeno in parte intelligenti.",
+        "87b473a0afa003e6a92b": "Se temi che le voci sui murloc siano vere, allora fai così — va' al ponte a est di Elwynn e parla con la Guardia Thomas. È di stanza al ponte da una settimana e saprà com'è la situazione della zona.\n\nPortami il suo rapporto."
+      },
       "summary": "Il maresciallo Dughan vuole che tu parli con la guardia Thomas.",
       "title": "Altre preoccupazioni",
       "translationMetadata": {
@@ -215,6 +357,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "788f274e354446bfef4168d669adfd4534e49b7fa31860e6a1e8518f4c5ae632"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -232,6 +386,10 @@
     },
     "koKR": {
       "description": "멀록에 대한 소문의 진상을 확인하려면 엘윈 숲 동쪽 다리에 있는 경비병 토마스와 이야기를 나눠 보시오. 그는 지난 몇 주간 그 근방에서 근무했었으니까 그 지역의 상황을 잘 알고 있을 것이오.\n\n나에게 그의 보고를 전해주시오.",
+      "dialogue": {
+        "845609df1ab060237405": "맞습니다. 멀록들이 엘윈 숲 동쪽의 강가와 그 주변에 정착했습니다. 멀록들이 왜 이곳에 왔는진 모르겠지만 성질이 난폭하고 어느 정도 지능이 있다는 것은 확실합니다.",
+        "87b473a0afa003e6a92b": "멀록에 대한 소문의 진상을 확인하려면 엘윈 숲 동쪽 다리에 있는 경비병 토마스와 이야기를 나눠 보시오. 그는 지난 몇 주간 그 근방에서 근무했었으니까 그 지역의 상황을 잘 알고 있을 것이오.\n\n나에게 그의 보고를 전해주시오."
+      },
       "summary": "치안대장 더그한이 경비병 토마스와 대화해 달라고 부탁했습니다.",
       "title": "소문의 진상",
       "translationMetadata": {
@@ -240,6 +398,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -256,6 +426,10 @@
     },
     "plPL": {
       "description": "Jeśli obawiasz się, że plotki o murlokach są prawdziwe, zrób tak: udaj się do mostu we wschodnim Elwynn i porozmawiaj ze strażnikiem Thomasem. Od tygodnia pełni służbę przy moście i będzie wiedział, co się dzieje w okolicy.\n\nPrzynieś mi jego meldunek.",
+      "dialogue": {
+        "845609df1ab060237405": "Tak, murloki osiedliły się w strumieniach wschodniego Elwynn i wokół nich. Nie wiemy, dlaczego tu są, ale są agresywne i przynajmniej częściowo inteligentne.",
+        "87b473a0afa003e6a92b": "Jeśli obawiasz się, że plotki o murlokach są prawdziwe, zrób tak: udaj się do mostu we wschodnim Elwynn i porozmawiaj ze strażnikiem Thomasem. Od tygodnia pełni służbę przy moście i będzie wiedział, co się dzieje w okolicy.$B$BPrzynieś mi jego meldunek."
+      },
       "summary": "Marszałek Dughan chce, aby porozmawiać ze strażnikiem Thomasem.",
       "title": "Dalsze obawy",
       "translationMetadata": {
@@ -266,6 +440,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "1.1.1",
             "sourceTextSha256": "788f274e354446bfef4168d669adfd4534e49b7fa31860e6a1e8518f4c5ae632"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "Se você está preocupado quanto aos rumores sobre os murlocs, faça o seguinte: vá para a ponte leste de Elwynn e fale com o guarda Tomás. Ele está lá desde a semana passada e vai saber qual a situação do local.\n\nTraga-me o relatório dele.",
+      "dialogue": {
+        "845609df1ab060237405": "Sim, os murlocs se estabeleceram perto dos córregos da parte leste de Elwynn. Não sabemos o que querem aqui, mas eles são agressivos e semi-inteligentes.",
+        "87b473a0afa003e6a92b": "Se você está preocupado quanto aos rumores sobre os murlocs, faça o seguinte: vá para a ponte leste de Elwynn e fale com o guarda Tomás. Ele está lá desde a semana passada e vai saber qual a situação do local.\n\nTraga-me o relatório dele."
+      },
       "summary": "O Delegado Durão quer que você fale com o Guarda Tomás.",
       "title": "Mais preocupações",
       "translationMetadata": {
@@ -293,6 +481,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +509,10 @@
     },
     "ruRU": {
       "description": "Если ты думаешь, что слухи о мурлоках могут оказаться правдой, отправляйся к восточному мосту Элвиннского леса и поговори со стражником Томасом. Он уже неделю несет стражу у моста и должен знать, что там происходит на самом деле.\n\nПринеси мне его отчет.",
+      "dialogue": {
+        "845609df1ab060237405": "Да, это правда: мурлоки поселились в реках и на их берегах в западной части леса. Мы не знаем, почему они пришли сюда, но их следует остерегаться: они агрессивны и довольно умны.",
+        "87b473a0afa003e6a92b": "Если ты думаешь, что слухи о мурлоках могут оказаться правдой, отправляйся к восточному мосту Элвиннского леса и поговори со стражником Томасом. Он уже неделю несет стражу у моста и должен знать, что там происходит на самом деле.\n\nПринеси мне его отчет."
+      },
       "summary": "Поговорите со стражником Томасом.",
       "title": "Новые заботы",
       "translationMetadata": {
@@ -317,6 +521,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +549,10 @@
     },
     "svSE": {
       "description": "Om du oroar dig för att ryktena om murlocker är sanna, gör så här: res till bron i östra Elwynn och tala med vakt Thomas. Han har varit stationerad vid bron den senaste veckan och känner till läget i området.\n\nTa med mig hans rapport.",
+      "dialogue": {
+        "845609df1ab060237405": "Ja, murlocker har slagit sig ner i och omkring bäckarna i östra Elwynn. Vi vet inte varför de är här, men de är aggressiva och åtminstone någorlunda intelligenta.",
+        "87b473a0afa003e6a92b": "Om du oroar dig för att ryktena om murlocker är sanna, gör så här: res till bron i östra Elwynn och tala med vakt Thomas. Han har varit stationerad vid bron den senaste veckan och känner till läget i området.$B$BTa med mig hans rapport."
+      },
       "summary": "Marskalk Dughan vill att du talar med vakt Thomas.",
       "title": "Ytterligare farhågor",
       "translationMetadata": {
@@ -342,6 +562,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "788f274e354446bfef4168d669adfd4534e49b7fa31860e6a1e8518f4c5ae632"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -362,6 +592,10 @@
     },
     "trTR": {
       "description": "Murloc söylentilerinin doğru olmasından endişe ediyorsan şunu yap -- doğudaki Elwynn köprüsüne git ve Muhafız Thomas ile konuş. Son bir haftadır köprüde görevli, bölgenin durumunu bilir.\n\nRaporunu bana getir.",
+      "dialogue": {
+        "845609df1ab060237405": "Evet, murloclar doğu Elwynn’deki derelere ve çevrelerine yerleştiler. Neden burada olduklarını bilmiyoruz ama saldırganlar ve en azından bir ölçüde zekiler.",
+        "87b473a0afa003e6a92b": "Murloc söylentilerinin doğru olmasından endişe ediyorsan şunu yap -- doğudaki Elwynn köprüsüne git ve Muhafız Thomas ile konuş. Son bir haftadır köprüde görevli, bölgenin durumunu bilir.$B$BRaporunu bana getir."
+      },
       "summary": "Şerif Dughan, Muhafız Thomas ile konuşmanı istiyor.",
       "title": "Daha Fazla Endişe",
       "translationMetadata": {
@@ -371,6 +605,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -389,6 +633,10 @@
     },
     "ukUA": {
       "description": "Якщо ти переймаєшся, що чутки про мурлоків правдиві, зроби ось що: вирушай до східного ельвиннського мосту й поговори з вартовим Томасом. Він стоїть на мосту вже тиждень і знатиме, що діється довкола.\n\nПринеси мені його звіт.",
+      "dialogue": {
+        "845609df1ab060237405": "Так, мурлоки оселилися в струмках східного Елвинну та навколо них. Ми не знаємо, чому вони тут, але вони агресивні й мають хоч якийсь розум.",
+        "87b473a0afa003e6a92b": "Якщо ти переймаєшся, що чутки про мурлоків правдиві, зроби ось що: вирушай до східного ельвиннського мосту й поговори з вартовим Томасом. Він стоїть на мосту вже тиждень і знатиме, що діється довкола.$B$BПринеси мені його звіт."
+      },
       "summary": "Маршал Дуган хоче, щоб ви поговорили з вартовим Томасом.",
       "title": "Нові турботи",
       "translationMetadata": {
@@ -398,6 +646,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "788f274e354446bfef4168d669adfd4534e49b7fa31860e6a1e8518f4c5ae632"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -418,6 +676,10 @@
     },
     "zhCN": {
       "description": "如果你担心关于鱼人的传言可能属实的话，就去一趟艾尔文森林东部的桥边和卫兵托马斯谈谈吧。他最近一个星期都驻扎在那里，应该很了解那个地区的情况。\n\n搞清楚事态之后，把他的报告带给我。",
+      "dialogue": {
+        "845609df1ab060237405": "没错，鱼人已经在这里落脚了，就在艾尔文森林东部的河流附近。我们不知道他们为什麽会出现在这里，不过他们很有攻击性，而且看起来并不是很笨。\n",
+        "87b473a0afa003e6a92b": "如果你担心关于鱼人的传言可能属实的话，就去一趟艾尔文森林东部的桥边和卫兵托马斯谈谈吧。他最近一个星期都驻扎在那里，应该很了解那个地区的情况。\n\n搞清楚事态之后，把他的报告带给我。"
+      },
       "summary": "治安官杜汉要你和卫兵托马斯谈一谈。",
       "title": "卫兵托马斯",
       "translationMetadata": {
@@ -426,6 +688,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -442,6 +716,10 @@
     },
     "zhTW": {
       "description": "如果你擔心關於魚人的傳言可能屬實的話，就去一趟艾爾文森林東部的橋邊和衛兵湯瑪斯談談吧。他最近一個星期都駐紮在那裡，應該很瞭解那個地區的情況。\n\n搞清楚事態之後，把他的報告帶給我。",
+      "dialogue": {
+        "845609df1ab060237405": "沒錯，魚人已經在這裡落腳了，就在艾爾文森林東部的河流附近。我們不知道他們為什麼會出現在這裡，不過他們很有攻擊性，而且看起來並不是很笨。",
+        "87b473a0afa003e6a92b": "如果你擔心關於魚人的傳言可能屬實的話，就去一趟艾爾文森林東部的橋邊和衛兵湯瑪斯談談吧。他最近一個星期都駐紮在那裡，應該很瞭解那個地區的情況。\n\n搞清楚事態之後，把他的報告帶給我。"
+      },
       "summary": "治安官杜漢要你和衛兵湯瑪斯談話。",
       "title": "衛兵湯瑪斯",
       "translationMetadata": {
@@ -450,6 +728,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.845609df1ab060237405": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.87b473a0afa003e6a92b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

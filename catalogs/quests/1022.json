@@ -1,8 +1,36 @@
 {
   "areaId": 331,
+  "dialogueContexts": {
+    "3fd10fff6e64248cdd29": {
+      "lineId": "q:1022:accept",
+      "npcId": 3880,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "73c0e65bcd621df37bd0": {
+      "lineId": "q:1022:progress",
+      "npcId": 3880,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "772a438c52934faca594": {
+      "lineId": "q:1022:complete",
+      "npcId": 3880,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Přestože jsme vložili mnoho prostředků a úsilí do vyhnání zbylých démonů z Felwoodu na severu, úspěchů jsme měli málo. Podařilo se nám udržet velkou část démonické přítomnosti mimo Ashenvale.\n\nNa severu, poblíž hranice s Felwoodem, byla zničená svatyně Mel'Thandris obsazena záhadnými vlčími muži. Jejich mrazivé volání dalo oblasti jméno Howling Vale. Tome of Mel'Thandris uložený ve svatyni může osvětlit, proč ti vlčí muži přišli.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Přestože jsme vynaložili mnoho prostředků a úsilí na vyhnání zbývajících démonů z Felwoodu na severu, úspěchů jsme dosáhli jen málo. Podařilo se nám však udržet většinu démonů mimo Popelavé údolí.$b$bNa severu poblíž hranice Felwoodu obsadili zničenou svatyni Mel’Thandris tajemní vlčí lidé. Jejich mrazivé volání dalo oblasti jméno Howling Vale. Svazek Mel’Thandris uchovávaný ve svatyni by mohl objasnit, proč tito vlčí lidé přišli.",
+        "73c0e65bcd621df37bd0": "Svazek svatyně je tajemný předmět. Není to kniha v běžném smyslu. Jeho listy požehnala sama Mel’Thandris a zaznamenávají na svých stránkách důležité události.$b$bTěžko se mi to vysvětluje. Pokud půjdeš do svatyně, pochopíš.",
+        "772a438c52934faca594": "Svazek Mel’Thandris funguje podivně. Události, které zaznamenává, události, které ukazuje... Nikdo doopravdy nechápe, proč dělá to, co dělá.$b$bPřesto je jasné, že to, co kněžka Starsong obdržela, tato Elunina kosa, vyžaduje další zkoumání."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +86,11 @@
     },
     "daDK": {
       "description": "Selvom vi har brugt mange ressourcer og gjort en stor indsats for at drive de tilbageværende dæmoner ud af Felwood mod nord, har vi kun haft begrænset succes. Det er lykkedes os at holde størstedelen af den dæmoniske tilstedeværelse væk fra Ashenvale.\n\nMod nord, nær grænsen til Felwood, er den ødelagte helligdom Mel'Thandris blevet overtaget af mystiske ulvemænd. Deres isnende hyl har givet området navnet Howling Vale. Tome of Mel'Thandris, som opbevares i helligdommen, kan måske kaste lys over, hvorfor disse ulvemænd er kommet.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Selvom vi har brugt mange ressourcer og kræfter på at drive de resterende dæmoner ud af Felwood mod nord, har vi haft få succeser. Vi har dog kunnet holde størstedelen af dæmonerne ude af Askedalen.$b$bMod nord, nær grænsen til Felwood, er Mel’Thandris’ ødelagte helligdom blevet overtaget af mystiske ulvemænd. Deres isnende hyl har givet området navnet Howling Vale. Mel’Thandris’ bog i helligdommen kan måske kaste lys over, hvorfor ulvemændene er kommet.",
+        "73c0e65bcd621df37bd0": "Helligdommens bog er en mystisk genstand. Den er ikke en bog i traditionel forstand. Bladene blev velsignet af Mel’Thandris selv og nedskriver vigtige begivenheder på deres sider.$b$bDet er svært at forklare. Hvis du går til helligdommen, vil du forstå.",
+        "772a438c52934faca594": "Mel’Thandris’ bog virker på mærkelige måder. Begivenhederne, den nedskriver, begivenhederne, den viser... Ingen forstår helt, hvorfor den gør, som den gør.$b$bIkke desto mindre er det klart, at det, præstinde Starsong modtog, Elunes le, kræver yderligere undersøgelser."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +107,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "83bac4909d4593e25c6d75d6c676437c8f2c1737b612d78ea646bc19a00b3c80"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +145,11 @@
     },
     "deDE": {
       "description": "Obwohl wir viele Mittel und große Bemühungen investiert haben, um auch die letzten Dämonen aus dem Teufelswald im Norden zu vertreiben, hatten wir nur wenig Erfolg damit. Wir konnten jedoch einen Großteil der Dämonen von Ashenvale fern halten.\n\nIm Norden, nahe der Grenze zum Teufelswald, wurde der verfallene Mel'Thandris-Schrein von rätselhaften Wolfmenschen übernommen. Ihre Schreie, die einem das Blut in den Adern gerinnen lassen, haben dem als \"Das heulende Tal\" bekannten Gebiet seinen Namen gegeben. Der Foliant von Mel'Thandris, der im Schrein aufbewahrt wird, könnte etwas Licht darauf werfen, warum die Wolfmenschen hier sind.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Obwohl wir viele Mittel und große Bemühungen investiert haben, um auch die letzten Dämonen aus dem Teufelswald im Norden zu vertreiben, hatten wir nur wenig Erfolg damit. Wir konnten jedoch einen Großteil der Dämonen von Ashenvale fern halten.\n\nIm Norden, nahe der Grenze zum Teufelswald, wurde der verfallene Mel'Thandris-Schrein von rätselhaften Wolfmenschen übernommen. Ihre Schreie, die einem das Blut in den Adern gerinnen lassen, haben dem als \"Das heulende Tal\" bekannten Gebiet seinen Namen gegeben. Der Foliant von Mel'Thandris, der im Schrein aufbewahrt wird, könnte etwas Licht darauf werfen, warum die Wolfmenschen hier sind.",
+        "73c0e65bcd621df37bd0": "Der Foliant des Schreins ist ein rätselhafter Gegenstand. Es ist kein Buch im eigentlichen Sinne. Mel'Thandris selbst hat die Seiten des Folianten gesegnet und darauf wichtige Ereignisse festgehalten.\n\nEs ist nur schwer zu erklären. Wenn Ihr zum Schrein geht, werdet Ihr es verstehen.",
+        "772a438c52934faca594": "Der Foliant von Mel'Thandris funktioniert auf merkwürdige Weise. Die Ereignisse, die er enthält, die Ereignisse, die er zeigt. . . Niemand versteht wirklich, wie er funktioniert. \n \n Dennoch ist es klar, dass man näher untersuchen sollte, was die Priesterin Starsong bekommen hat - die Sense von Elune. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +165,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +205,11 @@
     },
     "enUS": {
       "description": "Though we have put many resources and much effort into driving the remaining demons from the Felwood to the north, our successes have been few. We have been able to keep much of the demonic presence from Ashenvale.\n\nTo the north, near the Felwood border, the ruined shrine of Mel'Thandris has been overtaken by mysterious wolf-men. Their chilling calls have led the area to be known as the Howling Vale. The Tome of Mel'Thandris kept at the shrine may shed some light on why these wolf-men have come.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Though we have put many resources and much effort into driving the remaining demons from the Felwood to the north, our successes have been few. We have been able to keep much of the demonic presence from Ashenvale.$b$bTo the north, near the Felwood border, the ruined shrine of Mel'Thandris has been overtaken by mysterious wolf-men. Their chilling calls have led the area to be known as the Howling Vale. The Tome of Mel'Thandris kept at the shrine may shed some light on why these wolf-men have come.",
+        "73c0e65bcd621df37bd0": "The tome of the shrine is a mysterious object. It is not a book in the traditional sense. The leaves of the tome were blessed by Mel'Thandris herself, and records events of import in its pages.$b$bIt is hard for me to explain. If you go to the shrine, you will understand.",
+        "772a438c52934faca594": "The Tome of Mel'Thandris works in strange ways. The events it records, the events it shows... No one truly understands why it does what it does.$b$bNonetheless, it is clear that what Priestess Starsong received--this Scythe of Elune--bears further investigation."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +225,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -156,6 +265,11 @@
     },
     "esES": {
       "description": "Aunque hemos puesto muchos recursos y esfuerzo en expulsar hacia el norte a los demonios restantes en Frondavil, no hemos tenido mucho éxito. Hemos logrado mantener apartados de Vallefresno a casi todos los demonios.\n\nHacia el norte, cerca de los límites de Frondavil, el altar en ruinas de Mel'Thandris ha sido tomado por unos misteriosos hombres lobo. Sus llamadas te hielan la sangre y han hecho que se conozca esa zona como la Vega del Aullido. Es posible que el Libro de Mel'Thandris que se conserva en el altar arroje algo de luz sobre el motivo que ha traído a estos hombres lobo.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Aunque hemos puesto muchos recursos y esfuerzo en expulsar hacia el norte a los demonios restantes en Frondavil, no hemos tenido mucho éxito. Hemos logrado mantener apartados de Vallefresno a casi todos los demonios.\n\nHacia el norte, cerca de los límites de Frondavil, el altar en ruinas de Mel'Thandris ha sido tomado por unos misteriosos hombres lobo. Sus llamadas te hielan la sangre y han hecho que se conozca esa zona como la Vega del Aullido. Es posible que el Libro de Mel'Thandris que se conserva en el altar arroje algo de luz sobre el motivo que ha traído a estos hombres lobo.",
+        "73c0e65bcd621df37bd0": "El libro del altar es un objeto misterioso. No es un libro en el sentido tradicional de la palabra. La propia Mel'Thandris bendijo las hojas del libro y en sus páginas se registran sucesos de gran trascendencia.\n\nNo sé muy bien cómo explicarlo. Si vas al altar, lo entenderás.",
+        "772a438c52934faca594": "El Libro de Mel'Thandris funciona de extraña manera. Los acontecimientos que registra, los que muestra... Nadie entiende realmente por qué hace lo que hace. \n\nNo obstante, es evidente que lo que la sacerdotisa Cantoestelar recibió, esta Guadaña de Elune, merece algo más de investigación."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +285,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -193,6 +325,11 @@
     },
     "esMX": {
       "description": "Aunque hemos puesto muchos recursos y esfuerzo en expulsar hacia el norte a los demonios restantes en Frondavil, no hemos tenido mucho éxito. Hemos logrado mantener apartados de Vallefresno a casi todos los demonios.\n\nHacia el norte, cerca de los límites de Frondavil, el altar en ruinas de Mel'Thandris ha sido tomado por unos misteriosos hombres lobo. Sus llamadas te hielan la sangre y han hecho que se conozca esa zona como la Vega del Aullido. Es posible que el Libro de Mel'Thandris que se conserva en el altar arroje algo de luz sobre el motivo que ha traído a estos hombres lobo.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Aunque hemos puesto muchos recursos y esfuerzo en expulsar hacia el norte a los demonios restantes en Frondavil, no hemos tenido mucho éxito. Hemos logrado mantener apartados de Vallefresno a casi todos los demonios.\n\nHacia el norte, cerca de los límites de Frondavil, el altar en ruinas de Mel'Thandris ha sido tomado por unos misteriosos hombres lobo. Sus llamadas te hielan la sangre y han hecho que se conozca esa zona como la Vega del Aullido. Es posible que el Libro de Mel'Thandris que se conserva en el altar arroje algo de luz sobre el motivo que ha traído a estos hombres lobo.",
+        "73c0e65bcd621df37bd0": "El libro del altar es un objeto misterioso. No es un libro en el sentido tradicional de la palabra. La propia Mel'Thandris bendijo las hojas del libro y en sus páginas se registran sucesos de gran trascendencia.\n\nNo sé muy bien cómo explicarlo. Si vas al altar, lo entenderás.",
+        "772a438c52934faca594": "El Libro de Mel'Thandris funciona de extraña manera. Los acontecimientos que registra, los que muestra... Nadie entiende realmente por qué hace lo que hace. \n\nNo obstante, es evidente que lo que la sacerdotisa Cantoestelar recibió, esta Guadaña de Elune, merece algo más de investigación."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +345,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +386,11 @@
     },
     "frFR": {
       "description": "Bien que nous ayons dépensé beaucoup d'énergie pour repousser les démons encore présents de Gangrebois jusqu'au nord, nous n'avons pas eu beaucoup de succès. Nous avons pu éviter toute présence démoniaque à Ashenvale.\n\nAu nord, près de la frontière de Gangrebois, de mystérieux hommes-loups ont investi le sanctuaire en ruine de Mel'Thandris. Leurs cris sont si terrifiants qu'on a surnommé ce secteur le Val hurlant. Le « Tome de Mel'Thandris » qui est gardé dans le sanctuaire peut faire la lumière sur la raison de la venue de ces hommes-loups.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Bien que nous ayons dépensé beaucoup d'énergie pour repousser les démons encore présents de Gangrebois jusqu'au nord, nous n'avons pas eu beaucoup de succès. Nous avons pu éviter toute présence démoniaque à Ashenvale.\n\nAu nord, près de la frontière de Gangrebois, de mystérieux hommes-loups ont investi le sanctuaire en ruine de Mel'Thandris. Leurs cris sont si terrifiants qu'on a surnommé ce secteur le Val hurlant. Le « Tome de Mel'Thandris » qui est gardé dans le sanctuaire peut faire la lumière sur la raison de la venue de ces hommes-loups.",
+        "73c0e65bcd621df37bd0": "Le tome du sanctuaire est un objet mystérieux. Ce n'est pas un livre au sens traditionnel du terme. Les feuilles du tome ont été bénies par Mel'Thandris elle-même, et il consigne dans ses pages des événements importants.\n\nIl m'est difficile de l'expliquer. Si vous vous rendez à l'autel, vous comprendrez.",
+        "772a438c52934faca594": "Le « Tome de Mel'Thandris » fonctionne d'une étrange façon. Les événements qu'il enregistre, les événements qu'il montre. . . Personne ne comprend vraiment pourquoi il agit ainsi. \n \n Cependant, il est clair que ce que la prêtresse Velinde Starsong a reçu, cette Faux d'Elune, mérite d'autres investigations. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +406,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +446,11 @@
     },
     "hrHR": {
       "description": "Iako smo uložili mnogo sredstava i truda u protjerivanje preostalih demona iz Felwooda na sjeveru, postigli smo malo uspjeha. Uspjeli smo spriječiti da se velik dio demonske prisutnosti proširi u Ashenvale.\n\nNa sjeveru, blizu granice s Felwoodom, ruševno svetište Mel'Thandris zaposjeli su tajanstveni ljudi-vukovi. Zbog njihova jezivog zavijanja to je područje postalo poznato kao Howling Vale. Knjiga Mel'Thandris koja se čuva u svetištu mogla bi rasvijetliti razlog njihova dolaska.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Iako smo uložili mnogo sredstava i truda da protjeramo preostale demone iz Felwooda na sjeveru, imali smo malo uspjeha. Uspjeli smo zadržati većinu demonske prisutnosti izvan Pepelne doline.$b$bNa sjeveru, blizu granice Felwooda, ruševno svetište Mel’Thandris preuzeli su tajanstveni vukoliki ljudi. Njihovi ledeni povici dali su području ime Howling Vale. Knjiga Mel’Thandris koja se čuva u svetištu mogla bi objasniti zašto su došli.",
+        "73c0e65bcd621df37bd0": "Knjiga svetišta tajanstven je predmet. To nije knjiga u uobičajenom smislu. Njezine listove blagoslovila je sama Mel’Thandris i oni bilježe važne događaje.$b$bTeško mi je objasniti. Ako odeš u svetište, razumjet ćeš.",
+        "772a438c52934faca594": "Knjiga Mel’Thandris djeluje na neobične načine. Događaji koje bilježi, događaji koje prikazuje... Nitko doista ne razumije zašto radi to što radi.$b$bIpak, jasno je da ono što je svećenica Starsong primila, Elunina kosa, zahtijeva daljnje istraživanje."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +467,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "83bac4909d4593e25c6d75d6c676437c8f2c1737b612d78ea646bc19a00b3c80"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +505,11 @@
     },
     "itIT": {
       "description": "Benché abbiamo impiegato molte risorse e grandi sforzi per scacciare i demoni rimasti a Felwood, a nord, i nostri successi sono stati pochi. Siamo riusciti a tenere gran parte della presenza demoniaca lontana da Ashenvale.\n\nA nord, vicino al confine con Felwood, il santuario in rovina di Mel'Thandris è stato occupato da misteriosi uomini lupo. I loro richiami agghiaccianti hanno dato alla zona il nome di Howling Vale. Il Tomo di Mel'Thandris, custodito nel santuario, potrebbe chiarire perché questi uomini lupo siano arrivati.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Anche se abbiamo dedicato molte risorse e molti sforzi a scacciare dal Felwood, a nord, i demoni rimasti, i successi sono stati pochi. Siamo riusciti a tenere gran parte della presenza demoniaca lontana da Ashenvale.\n\nA nord, vicino al confine del Felwood, il santuario in rovina di Mel'Thandris è stato occupato da misteriosi uomini-lupo. I loro richiami agghiaccianti hanno fatto sì che la zona venisse chiamata Valle degli Ululati. Il Tomo di Mel'Thandris custodito nel santuario potrebbe far luce sul motivo per cui questi uomini-lupo sono arrivati.",
+        "73c0e65bcd621df37bd0": "Il tomo del santuario è un oggetto misterioso. Non è un libro nel senso comune. I fogli del tomo furono benedetti da Mel'Thandris in persona, e le sue pagine registrano gli eventi importanti.\n\nPer me è difficile da spiegare. Se vai al santuario, capirai.",
+        "772a438c52934faca594": "Il Tomo di Mel'Thandris funziona in modi strani. Gli eventi che registra, gli eventi che mostra... Nessuno capisce davvero perché faccia quello che fa.\n\nResta però chiaro che ciò che ha ricevuto la Sacerdotessa Starsong — questa Falce di Elune — merita ulteriori indagini."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +526,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "83bac4909d4593e25c6d75d6c676437c8f2c1737b612d78ea646bc19a00b3c80"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -346,6 +567,11 @@
     },
     "koKR": {
       "description": "북쪽 악령의 숲에 남아 있는 악마들을 몰아내기 위해 많은 자원과 시간을 투자해왔지만 아직 이렇다 할 성과를 거두지 못하고 있습니다. 어쨌든 악마로부터 잿빛 골짜기를 지켜낼 수는 있었지만 말입니다.\n\n북쪽 악령의 숲 가장자리 부근에 폐허가 된 멜탄드리스의 제단이 있는데 괴이한 늑대 인간들에게 점령당하고 말았습니다. 그들의 무시무시한 울음 소리 때문에 그 지역은 울부짖는 골짜기라고도 한답니다. 그 제단에 보관된 멜탄드리스의 마법책을 손에 넣으면 늑대 인간들이 온 이유를 알아내는데 도움이 될 겁니다.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "북쪽 악령의 숲에 남아 있는 악마들을 몰아내기 위해 많은 자원과 시간을 투자해왔지만 아직 이렇다 할 성과를 거두지 못하고 있습니다. 어쨌든 악마로부터 잿빛 골짜기를 지켜낼 수는 있었지만 말입니다.\n\n북쪽 악령의 숲 가장자리 부근에 폐허가 된 멜탄드리스의 제단이 있는데 괴이한 늑대 인간들에게 점령당하고 말았습니다. 그들의 무시무시한 울음 소리 때문에 그 지역은 울부짖는 골짜기라고도 한답니다. 그 제단에 보관된 멜탄드리스의 마법책을 손에 넣으면 늑대 인간들이 온 이유를 알아내는데 도움이 될 겁니다.",
+        "73c0e65bcd621df37bd0": "신사의 책은 신비한 물건입니다.  전통적인 의미의 책이 아닙니다.  고서의 잎사귀는 멜탄드리스 자신의 축복을 받았고 그 장에는 중요한 사건이 기록되어 있습니다.\n\n설명하기 어렵습니다.  신사에 가보면 알 것이다.",
+        "772a438c52934faca594": "멜탄드리스의 마법책은 이상한 방식으로 작동합니다. 직접 보고 오신대로 이 책에 기록된 마법들은 눈 앞에서 벌어집니다. 이 책이 어떻게 그런 힘을 얻게 됐는지는 아무도 모릅니다.\n\n하지만 엘룬의 낫을 받은 여사제 스타송이 틀림없이 더 자세한 내막을 알고 있을 겁니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -361,6 +587,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -383,6 +627,11 @@
     },
     "plPL": {
       "description": "Choć poświęciliśmy wiele środków i wysiłku, by wypędzić pozostałe demony z Felwood na północy, odnieśliśmy niewiele sukcesów. Udało nam się jednak powstrzymać znaczną część demonów przed wejściem do Ashenvale.\n\nNa północy, przy granicy Felwood, ruiny świątyni Mel'Thandris opanowali tajemniczy wilkoludzie. Ich mrożące krew w żyłach nawoływania sprawiły, że miejsce nazwano Wyjącą Doliną. Przechowywana w świątyni Księga Mel'Thandris może wyjaśnić, dlaczego przybyli.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Choć poświęciliśmy wiele zasobów i wysiłku na wypędzenie pozostałych demonów z Felwood na północy, odnieśliśmy niewiele sukcesów. Udało nam się jednak powstrzymać większość demonów przed wejściem do Popielnej Doliny.$b$bNa północy, w pobliżu granicy Felwood, zrujnowaną świątynię Mel’Thandris zajęli tajemniczy wilkoludzie. Ich mrożące krew w żyłach wycie sprawiło, że okolica zyskała nazwę Howling Vale. Księga Mel’Thandris przechowywana w świątyni może wyjaśnić, dlaczego przybyli.",
+        "73c0e65bcd621df37bd0": "Księga ze świątyni jest tajemniczym przedmiotem. Nie jest książką w tradycyjnym znaczeniu. Jej karty pobłogosławiła sama Mel’Thandris i zapisują one ważne wydarzenia.$b$bTrudno mi to wyjaśnić. Jeśli udasz się do świątyni, zrozumiesz.",
+        "772a438c52934faca594": "Księga Mel’Thandris działa w dziwny sposób. Wydarzenia, które zapisuje, wydarzenia, które pokazuje... Nikt naprawdę nie rozumie, dlaczego tak postępuje.$b$bMimo to jest jasne, że to, co otrzymała kapłanka Starsong, Kosa Elune, wymaga dalszych badań."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -399,6 +648,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "83bac4909d4593e25c6d75d6c676437c8f2c1737b612d78ea646bc19a00b3c80"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -422,6 +686,11 @@
     },
     "ptBR": {
       "description": "Por mais que tenhamos empregado nossos recursos e energia para expulsar os demônios da Selva Maleva, ao norte, não fomos muito bem-sucedidos. Pelo menos, mantivemos os demônios afastados do Vale Gris.\n\nAo norte, perto da fronteira com a Selva Maleva, o santuário arruinado de Mel'Thandris foi tomado por misteriosos lobisomens. Por causa dos uivos incessantes, a região acabou ficando conhecida como Vale Uivante. Talvez o Tomo de Mel'Thandris, que jaz no santuário, ajude a explicar o surgimento dos lobisomens.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Por mais que tenhamos empregado nossos recursos e energia para expulsar os demônios da Selva Maleva, ao norte, não fomos muito bem-sucedidos. Pelo menos, mantivemos os demônios afastados do Vale Gris.\n\nAo norte, perto da fronteira com a Selva Maleva, o santuário arruinado de Mel'Thandris foi tomado por misteriosos lobisomens. Por causa dos uivos incessantes, a região acabou ficando conhecida como Vale Uivante. Talvez o Tomo de Mel'Thandris, que jaz no santuário, ajude a explicar o surgimento dos lobisomens.",
+        "73c0e65bcd621df37bd0": "O tomo do santuário é um objeto misterioso. Não é um livro no sentido tradicional. Suas folhas foram abençoadas pela própria Mel’Thandris e registram acontecimentos importantes em suas páginas.$b$bÉ difícil explicar. Se você for ao santuário, entenderá.",
+        "772a438c52934faca594": "Esse Tomo de Mel'Thandris é muito estranho. Os eventos que registrou, os eventos que mostra ali... Ninguém entende direito a lógica.\n\nDe qualquer forma, uma coisa ficou clara: essa tal Foice de Eluna que a Sacerdotisa Stelacanto recebeu precisa ser melhor investigada."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -437,6 +706,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -459,6 +745,11 @@
     },
     "ruRU": {
       "description": "Хотя мы затратили много средств и сил на то, чтобы вытеснить остатки демонов из Оскверненного леса на север, успехи наши невелики. Нам удалось не допустить большую часть демонов в Ясеневый лес.\n\nНа севере, у границы Оскверненного леса, разрушенное святилище Мел'Тандрис захватили загадочные волколюди. Из-за их пронзительных воплей это место называют теперь Воющей Долиной. Фолиант Мел'Тандрис, что хранится в святилище может пролить свет на появление там волколюдей.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Хотя мы затратили много средств и сил на то, чтобы вытеснить остатки демонов из Оскверненного леса на север, успехи наши невелики. Нам удалось не допустить большую часть демонов в Ясеневый лес.\n\nНа севере, у границы Оскверненного леса, разрушенное святилище Мел'Тандрис захватили загадочные волколюди. Из-за их пронзительных воплей это место называют теперь Воющей Долиной. Фолиант Мел'Тандрис, что хранится в святилище может пролить свет на появление там волколюдей.",
+        "73c0e65bcd621df37bd0": "Священный фолиант – загадочный объект. Это не книга. Листы тома, были благословлены Мел'Тандрис\n\nЭто сложно объяснить. Если ты пойдешь в храм, то все поймешь.",
+        "772a438c52934faca594": "Фолиант Мел'Тандрис действует странным образом. События, которые он записывает, события, которые он показывает... Никто тольком не понимает, почему он делает то, что делает.\n\nТем не менее, понятно, что предмет, который получила жрица Звездная Песня – эта коса Элуны – требует дальнейшего исследования."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -474,6 +765,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -496,6 +805,11 @@
     },
     "svSE": {
       "description": "Trots att vi har lagt ned mycket resurser och möda på att driva bort de sista demonerna från Fördärvsskogen i norr har vi haft få framgångar. Vi har kunnat hålla det mesta av den demoniska närvaron borta från Askdalen.\n\nI norr, nära gränsen till Fördärvsskogen, har Mel'Thandris förfallna helgedom tagits över av gåtfulla vargmän. Deras kusliga ylanden har gett trakten namnet Den ylande dalen. Mel'Thandris foliant, som förvaras i helgedomen, kan kanske kasta ljus över varför vargmännen har kommit.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Även om vi lagt mycket resurser och kraft på att driva de återstående demonerna från Felwood i norr har framgångarna varit få. Vi har dock kunnat hålla större delen av demonernas närvaro borta från Askdalen.$b$bI norr, nära Felwoods gräns, har den förstörda helgedomen Mel’Thandris tagits över av mystiska vargmänniskor. Deras isande läten har gett området namnet Howling Vale. Mel’Thandris bok som förvaras i helgedomen kan kanske förklara varför de har kommit.",
+        "73c0e65bcd621df37bd0": "Helgedomens bok är ett mystiskt föremål. Det är ingen bok i traditionell mening. Dess blad välsignades av Mel’Thandris själv och nedtecknar viktiga händelser på sina sidor.$b$bDet är svårt att förklara. Om du går till helgedomen kommer du att förstå.",
+        "772a438c52934faca594": "Mel’Thandris bok fungerar på märkliga sätt. Händelserna den nedtecknar, händelserna den visar... Ingen förstår riktigt varför den gör som den gör.$b$bÄndå står det klart att det prästinnan Starsong fick, Elunes lie, behöver undersökas vidare."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +826,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "83bac4909d4593e25c6d75d6c676437c8f2c1737b612d78ea646bc19a00b3c80"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -537,6 +866,11 @@
     },
     "trTR": {
       "description": "Kuzeydeki Felwood'da kalan iblisleri sürmek için pek çok kaynak ve emek harcamamıza rağmen başarılarımız az oldu. İblis varlığının büyük kısmını Ashenvale'den uzak tutabildik.\n\nKuzeyde, Felwood sınırına yakın yerde, Mel'Thandris'in harap tapınağı gizemli kurt adamlar tarafından ele geçirildi. Ürpertici ulumaları bölgenin Uluyan Vadi olarak anılmasına yol açtı. Tapınakta tutulan Tome of Mel'Thandris, bu kurt adamların neden geldiğine ışık tutabilir.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Kuzeydeki Felwood’dan kalan iblisleri kovmak için çok kaynak ve çaba harcasak da pek az başarı elde ettik. İblislerin çoğunu Kül Vadisi’nden uzak tutmayı başardık.$b$bKuzeyde, Felwood sınırına yakın yıkık Mel’Thandris tapınağı gizemli kurt adamlar tarafından ele geçirildi. Ürpertici ulumaları yüzünden bölge Howling Vale olarak anılmaya başladı. Tapınakta tutulan Mel’Thandris Kitabı bu kurt adamların neden geldiğine ışık tutabilir.",
+        "73c0e65bcd621df37bd0": "Tapınağın kitabı gizemli bir nesnedir. Geleneksel anlamda bir kitap değildir. Sayfaları bizzat Mel’Thandris tarafından kutsanmıştır ve önemli olayları kaydeder.$b$bAçıklaması zor. Tapınağa gidersen anlarsın.",
+        "772a438c52934faca594": "Mel’Thandris Kitabı tuhaf şekillerde işler. Kaydettiği olaylar, gösterdiği olaylar... Kimse neden böyle davrandığını gerçekten anlamıyor.$b$bYine de Rahibe Starsong’un aldığı şeyin, Elune’nin Tırpanı’nın, daha fazla araştırılması gerektiği açık."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -553,6 +887,21 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -576,6 +925,11 @@
     },
     "ukUA": {
       "description": "Хоча ми доклали багато ресурсів і зусиль, аби позбавитися від решти демонів в Скверноліссі на півночі, наші успіхи були незначними. Нам вдалося захистити Ясенеділ від більшості демонів.\n\nНа півночі, біля кордону зі Скверноліссям, загадкові вовколюди захопили зруйноване святилище Мел'Тандріс. Їх жахливе завивання дало тій місцині назву — долина Виття. Фоліант Мел'Тандріс, що зберігається у святилищі, може допомогти дізнатися причину появи вовколюдів.",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "Хоча ми витратили багато сил і ресурсів, щоб вигнати решту демонів із Felwood на півночі, успіхів було небагато. Нам вдалося не допустити більшість демонів до Ясенедолу.$b$bНа півночі, біля кордону Felwood, зруйноване святилище Мел’Тандріс захопили загадкові вовколюди. Їхнє моторошне виття дало місцевості назву Howling Vale. Фоліант Мел’Тандріс, що зберігається у святилищі, може пояснити, чому вони прийшли.",
+        "73c0e65bcd621df37bd0": "Фоліант святилища — загадковий предмет. Це не книга у звичайному розумінні. Його сторінки благословила сама Мел’Тандріс, і вони записують важливі події.$b$bМені важко пояснити. Якщо підеш до святилища, зрозумієш.",
+        "772a438c52934faca594": "Фоліант Мел’Тандріс діє дивним чином. Події, які він записує, події, які показує... Ніхто насправді не розуміє, чому він так робить.$b$bУтім, ясно, що річ, яку отримала жриця Starsong, Коса Елуни, потребує подальшого вивчення."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -593,6 +947,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "83bac4909d4593e25c6d75d6c676437c8f2c1737b612d78ea646bc19a00b3c80"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -617,6 +986,11 @@
     },
     "zhCN": {
       "description": "尽管我们投入了大量的物资和人力想要将剩余的恶魔赶出北方的费伍德森林，但是看来似乎并没有什么效果。我们只能把大部分的恶魔御于灰谷之外。\n\n在北方的费伍德森林附近，有一群神秘的狼人占据了麦尔莎迪丝神殿的废墟。他们令人心颤的嗥叫使得那个地区得了个“狼嚎谷”的名字。保存在神殿中的麦尔莎迪丝之书也许能让我们知道这些狼人出现在这里的原因。",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "尽管我们投入了大量的物资和人力想要将剩余的恶魔赶出北方的费伍德森林，但是看来似乎并没有什么效果。我们只能把大部分的恶魔御于灰谷之外。\n\n在北方的费伍德森林附近，有一群神秘的狼人占据了麦尔莎迪丝神殿的废墟。他们令人心颤的嗥叫使得那个地区得了个“狼嚎谷”的名字。保存在神殿中的麦尔莎迪丝之书也许能让我们知道这些狼人出现在这里的原因。",
+        "73c0e65bcd621df37bd0": "麦尔莎迪丝之书是件神秘的物品，它已经不是传统意义上的书了。这本书的每一页都受到了麦尔莎迪丝本人的佑护，书中记载着重大的事件。\n\n我很难具体解释，等你到了神殿之後自然就会了解了。",
+        "772a438c52934faca594": "麦尔莎迪丝之书非常奇怪，它所记录的那些事件，它所展现的那些事件……没有人能真正理解究竟为什麽会是那样……\n\n不过有一点非常清楚的是，女祭司维琳德·星歌收到的东西-也就是这个月神镰刀-需要进行更多的研究。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -632,6 +1006,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -654,6 +1046,11 @@
     },
     "zhTW": {
       "description": "儘管我們投入了大量的物資和人力想要將剩餘的惡魔趕出北方的費伍德森林，但是看來似乎並沒有什麼效果。我們只能把大部分的惡魔禦於梣谷之外。\n\n在北方的費伍德森林附近，有一群神秘的狼人佔據了麥爾莎迪絲神殿的廢墟。他們令人心顫的嗥叫使得那個地區得了個「狼嚎谷」的名字。保存在神殿中的麥爾莎迪絲之書也許能讓我們知道這些狼人出現在這裡的原因。",
+      "dialogue": {
+        "3fd10fff6e64248cdd29": "儘管我們投入了大量的物資和人力想要將剩餘的惡魔趕出北方的費伍德森林，但是看來似乎並沒有什麼效果。我們只能把大部分的惡魔禦於梣谷之外。\n\n在北方的費伍德森林附近，有一群神秘的狼人佔據了麥爾莎迪絲神殿的廢墟。他們令人心顫的嗥叫使得那個地區得了個「狼嚎谷」的名字。保存在神殿中的麥爾莎迪絲之書也許能讓我們知道這些狼人出現在這裡的原因。",
+        "73c0e65bcd621df37bd0": "麥爾莎迪絲之書是件神祕的物品，它已經不是傳統意義上的書了。這本書的每一頁都受到了麥爾莎迪絲本人的佑護，書中記載着重大的事件。\n\n我很難具體解釋，等你到了神殿之後自然就會了解了。",
+        "772a438c52934faca594": "麥爾莎迪絲之書是件神秘的物品，它已經不是傳統意義上的書了。這本書的每一頁都受到了麥爾莎迪絲本人的佑護，書中記載著重大的事件。\n\n我很難具體解釋，等你到了神殿之後自然就會瞭解了。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -669,6 +1066,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.3fd10fff6e64248cdd29": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.73c0e65bcd621df37bd0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.772a438c52934faca594": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

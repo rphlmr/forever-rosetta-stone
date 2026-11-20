@@ -1,8 +1,28 @@
 {
   "areaId": 15,
+  "dialogueContexts": {
+    "7fd7c147efd580f4a0ea": {
+      "lineId": "q:1238:progress",
+      "npcId": 4791,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "8103ed5692d065514727": {
+      "lineId": "q:1238:complete",
+      "npcId": 4791,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Při prohrabávání kypré hlíny se najde useknutá ruka orka. A v ruce je sevřená trubice vyřezaná z kosti. A v trubici je zašpiněný pergamen.\n\nPergamen je hlášení od orka, který týdny špehoval město Theramore.\n\nPo prohlédnutí pergamenu je jasné, že musí být doručen orkskému mistru špehů ve vesnici Brackenwall.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Máš pro mě něco?",
+        "8103ed5692d065514727": "Dobrá práce, $N. Náš agent Marg Nighteye působil poblíž Theramoru. Měl za úkol město špehovat.$B$BTohle je jeho poslední hlášení a možná už žádné další nebude. Podle tvého svědectví se obávám, že Marg v bažině zahynul..."
+      },
       "summary": "Přines Spy's Report Nazeeru Bloodpikeovi do Brackenwall Village.",
       "title": "Ztracená zpráva",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Mens du sier den løse jord, finder du en afhugget orkhånd. Og i hånden ligger et rør udskåret af ben. Og i røret er et jordplettet pergament.\n\nPergamentet er en rapport skrevet af en ork, der brugte uger på at udspionere byen Theramore.\n\nEfter at have skimmet pergamentet er det klart, at det må bringes til orkernes spionmester i Brackenwall Village.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Har du noget til mig?",
+        "8103ed5692d065514727": "Godt arbejde, $N. Vores agent, Marg Nighteye, var udstationeret uden for Theramore for at udspionere byen.$B$BDette er hans seneste rapport, og måske hans sidste. Ud fra din beretning frygter jeg, at Marg mødte sin død i sumpen..."
+      },
       "summary": "Bring spionens rapport til Nazeer Bloodpike i Brackenwall Village.",
       "title": "Den bortkomne rapport",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d0fe7886e97cf666021826c7b7f57c3de7672f02eb79ca27049173f28583463"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Beim Durchsuchen der lockeren Erde wird die abgetrennte Hand eines Orcs gefunden. Die Hand hält eine aus Knochen geschnitzte Röhre umklammert. Und in der Röhre befindet sich ein fleckiges Pergament.\n\nDas Pergament ist ein Bericht von einem Orc, der die Stadt Theramore über Wochen ausspionierte.\n\nAls Ihr das Pergament überflogen habt, ist klar, dass es zum Orc-Spionagemeister in Brackenwall gebracht werden muss.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Habt Ihr etwas für mich?",
+        "8103ed5692d065514727": "Gute Arbeit, $N . Unser Agent Marg Nighteye war außerhalb von Theramore stationiert. Seine Aufgabe war es, die Stadt auszuspionieren. \n \n Das ist sein jüngster Bericht und könnte sein letzter sein; nach Eurer Aussage fürchte ich, dass Marg im Sumpf sein Ende fand. . . "
+      },
       "summary": "Bringt den Bericht des Spions zu Nazeer Bloodpike in Brackenwall.",
       "title": "Der verlorene Bericht",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "Sifting through the loose dirt, the severed hand of an orc is found.  And clutched in the hand is a bone-carved tube.  And in the tube is a dirt-stained parchment.\n\nThe parchment is a report made by an orc who spent weeks spying on the city of Theramore.\n\nAfter scanning the parchment, it is clear that it must be brought to the orc spymaster in Brackenwall Village.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "You have something for me?",
+        "8103ed5692d065514727": "Good work, $N.  Our agent, Marg Nighteye, was stationed outside Theramore.  He was charged to spy on the city.  $B$BThis is his latest report, and it may be his last -- from your testimony, I fear that Marg met his end in the swamp..."
+      },
       "summary": "Bring the Spy's Report to Nazeer Bloodpike in Brackenwall Village.",
       "title": "The Lost Report",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Una criba de la tierra revela la mano cortada de un orco. En la mano hay un tubo de hueso. Y en el tubo, un pergamino manchado de tierra.\n\nEl pergamino es el informe de un orco que pasó semanas espiando la ciudad de Theramore.\n\nCon una rápida lectura del pergamino te das cuenta de que debes llevarlo al maestro de espías orco del Poblado Murohelecho.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "¿Tienes algo para mí?",
+        "8103ed5692d065514727": "Buen trabajo, $n. Nuestro agente, Marg Ojonocturno, se encontraba fuera de Theramore. Tenía el cometido de espiar la ciudad.\n\nEste es su último informe... y por lo que dices, será de verdad el último, pues temo que Marg encontrara su final en el pantano..."
+      },
       "summary": "Lleva el informe del espía a Nazeer Picasangre al Poblado Murohelecho.",
       "title": "El informe perdido",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Una criba de la tierra revela la mano cortada de un orco. En la mano hay un tubo de hueso. Y en el tubo, un papiro manchado de tierra.\n\nEl pergamino es el informe de un orco que pasó semanas espiando la ciudad de Theramore.\n\nCon una rápida lectura del pergamino te das cuenta de que debes llevarlo al maestro de espías orco del Poblado Murohelecho.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "¿Tienes algo para mí?",
+        "8103ed5692d065514727": "Buen trabajo, $n. Nuestro agente, Marg Ojonocturno, se encontraba fuera de Theramore. Tenía el cometido de espiar la ciudad.\n\nEste es su último informe... y por lo que dices, será de verdad el último, pues temo que Marg encontrara su final en el pantano..."
+      },
       "summary": "Lleva el informe de espía a Nazeer Picasangre al Poblado Murohelecho.",
       "title": "El informe perdido",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "Au milieu de la poussière, une main d'orc, seule. Et dans cette main, un tube creusé dans de l'os. Dans le tube, un parchemin sale.\n\nCe parchemin est un rapport établi par un orc qui a passé des semaines à espionner la ville de Theramore.\n\nAprès examen du rapport, il est clair qu'il doit être apporté au Maître Espion, au village de Mur-de-Fougères.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Vous avez quelque chose pour moi ?",
+        "8103ed5692d065514727": "Beau travail, $N. Notre agent, Marg Nighteye, était stationné à l'extérieur de Theramore. Il était chargé d'espionner la ville. \n \n Voici son dernier rapport, il n’en fera sans doute jamais plus. D'après votre témoignage, je crains que Marg n'ait fini dans les marais. . . "
+      },
       "summary": "Apporter le Rapport de l'espion à Nazeer Bloodpike à Mur-de-Fougères.",
       "title": "Le rapport perdu",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +304,10 @@
     },
     "hrHR": {
       "description": "Prekopavanjem rahle zemlje pronalazi se odsječena ruka orka. U ruci je stisnuta cijev izrezbarena od kosti. A u cijevi je pergament zamrljan zemljom.\n\nPergament je izvješće orka koji je tjednima špijunirao grad Theramore.\n\nNakon brzog pregleda pergamenta jasno je da ga treba odnijeti orkovskom zapovjedniku špijuna u selu Brackenwall.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Imaš li nešto za mene?",
+        "8103ed5692d065514727": "Dobar posao, $N. Naš agent Marg Nighteye bio je smješten izvan Theramorea sa zadatkom da špijunira grad.$B$BOvo je njegovo najnovije izvješće, a možda i posljednje. Prema tvojoj priči, bojim se da je Marg skončao u močvari..."
+      },
       "summary": "Donesi špijunovo izvješće Nazeeru Bloodpikeu u selu Brackenwall.",
       "title": "Izgubljeno izvješće",
       "translationMetadata": {
@@ -189,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d0fe7886e97cf666021826c7b7f57c3de7672f02eb79ca27049173f28583463"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +345,10 @@
     },
     "itIT": {
       "description": "Frugando nella terra smossa, trovi la mano mozzata di un orco. Stretta nella mano c'è una custodia tubolare d'osso intagliato. E nella custodia c'è una pergamena sporca di terra.\n\nLa pergamena è il rapporto di un orco che ha passato settimane a spiare la città di Theramore.\n\nDopo una rapida lettura, è chiaro che deve essere portata al capo delle spie orchesche a Brackenwall Village.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Hai qualcosa per me?",
+        "8103ed5692d065514727": "Buon lavoro, $N. Il nostro agente, Marg Nighteye, era di stanza fuori Theramore. Aveva il compito di spiare la città.\n\nQuesto è il suo rapporto più recente, e potrebbe essere l'ultimo — da quello che racconti, temo che Marg abbia trovato la morte nella palude..."
+      },
       "summary": "Porta il rapporto della spia a Nazeer Bloodpike a Brackenwall Village.",
       "title": "Il rapporto perduto",
       "translationMetadata": {
@@ -216,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d0fe7886e97cf666021826c7b7f57c3de7672f02eb79ca27049173f28583463"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +388,10 @@
     },
     "koKR": {
       "description": "푸석푸석한 흙 사이에 오크의 손만이 드러나 있습니다. 꽉 쥔 손에는 뼈를 깎아 만든 관이 쥐여 있습니다. 그리고 관 안에는 흙 묻은 양피지 문서가 들어 있습니다.\n\n양피지 문서는 몇 주 동안 테라모어 도시를 염탐한 오크에 의해 작성된 보고서입니다.\n\n양피지 문서를 자세히 살펴본 결과, 담쟁이 마을에 있는 오크 나지르 블러드파이크에게 전달해야 할 보고서였던 것이 분명합니다.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "내게 무슨 볼일이라도 있나?",
+        "8103ed5692d065514727": "잘했군. 마그 나이트아이는 테라모어 외곽에 배치되었던 우리 요원일세. 그는 그 도시를 염탐하는 임무를 맡고 있었지.\n\n이건 그의 최근 보고서인데, 자네 얘기대로라면 동시에 그의 마지막 보고서가 되겠군. 흠, 마그가 늪에서 최후를 맞이한 건 아닌가 싶어 걱정이 되는군..."
+      },
       "summary": "담쟁이 마을에 있는 나지르 블러드파이크에게 밀정의 보고서를 가져가야 합니다.",
       "title": "사라진 보고서",
       "translationMetadata": {
@@ -242,6 +400,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +428,10 @@
     },
     "plPL": {
       "description": "Przesiewając luźną ziemię, znajdujesz odciętą dłoń orka. Ściska wyrzeźbioną z kości tubę, a w tubie leży ubrudzony ziemią pergamin.\n\nTo raport orka, który tygodniami szpiegował miasto Theramore.\n\nPo przejrzeniu pergaminu staje się jasne, że trzeba go zanieść orkowi kierującemu szpiegami w wiosce Brackenwall.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Masz coś dla mnie?",
+        "8103ed5692d065514727": "Dobra robota, $N. Nasz agent, Marg Nighteye, stacjonował pod Theramore i miał szpiegować miasto.$B$BTo jego najnowszy raport, a być może i ostatni. Z twojej relacji wynika, że Marg mógł zginąć na bagnach..."
+      },
       "summary": "Przynieś raport szpiega Nazeerowi Bloodpike'owi w wiosce Brackenwall.",
       "title": "Zaginiony raport",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d0fe7886e97cf666021826c7b7f57c3de7672f02eb79ca27049173f28583463"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "Remexendo a terra, você encontra a mão decepada de um orc. A mão segura um tubo feito de osso. No tubo há um pergaminho sujo de terra.\n\nO pergaminho é um relatório feito por um orc que passou algumas semanas espionando a cidade de Theramore.\n\nApós uma passada de olhos, fica claro que isso deve ser encaminhado ao mestre espião orc da Aldeia Muralha Verde.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Você tem algo para mim?",
+        "8103ed5692d065514727": "Bom trabalho, $N. Nosso agente, Marg Olholunar, estava posicionado nas adjacências de Theramore. Sua designação era espionar a cidade.\n\nEste é o último relatório dele, provavelmente o último de todos... pelo que você disse, temo que o pântano tenha sido o fim do Marg..."
+      },
       "summary": "Leve o Relatório do Espião para Nazir Piquessangue na Aldeia Muralha Verde.",
       "title": "O relatório perdido",
       "translationMetadata": {
@@ -293,6 +481,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +509,10 @@
     },
     "ruRU": {
       "description": "Просеивая землю, мы нашли отрубленную руку орка, сжимающую резную костяную трубку. А в трубке находился заляпаный грязью пергамент. \n\nЭто донесение шпиона, который провел многие недели в Тераморе.\n\nРасшифровав его, мы выяснили, что это донесение должно быть доставлено командиру орков-разведчиков в Деревню Гиблотопь.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Ты хочешь мне что-то отдать?",
+        "8103ed5692d065514727": "Очень хорошо, $N. Наш агент Марг Инфраглаз собирал информацию на окраинах Терамора.\n\nЭто его последний рапорт, причем во всех смыслах слова – боюсь, бедняга Марг погиб на болоте."
+      },
       "summary": "Отнесите донесение шпиона Назиру Кровавому Копью в Деревню Гиблотопь.",
       "title": "Потерянный рапорт",
       "translationMetadata": {
@@ -317,6 +521,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +549,10 @@
     },
     "svSE": {
       "description": "När du sållar den lösa jorden hittar du en orchs avhuggna hand. I handen hålls ett rör snidat av ben. I röret finns ett jordfläckat pergament.\n\nDet är en rapport från en orch som i veckor spionerat på Theramore.\n\nEfter en genomläsning är det tydligt att den måste till orchernas spionmästare i Brackenwall Village.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Har du något åt mig?",
+        "8103ed5692d065514727": "Bra arbete, $N. Vår agent Marg Nighteye var stationerad utanför Theramore för att spionera på staden.$B$BDet här är hans senaste rapport, och kanske hans sista. Av din berättelse fruktar jag att Marg mötte sitt slut i träsket..."
+      },
       "summary": "Ta med spionens rapport till Nazeer Bloodpike i Brackenwall Village.",
       "title": "Den försvunna rapporten",
       "translationMetadata": {
@@ -342,6 +562,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d0fe7886e97cf666021826c7b7f57c3de7672f02eb79ca27049173f28583463"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +590,10 @@
     },
     "trTR": {
       "description": "Gevşek toprağı eşelerken bir orkun kesilmiş eli bulunuyor. El, kemikten oyulmuş bir tüpü kavrıyor. Tüpün içinde de toprağa bulanmış bir parşömen var.\n\nParşömen, Theramore şehrini haftalarca gözetleyen bir orkun raporu.\n\nParşömene göz atınca bunun Brackenwall Village'daki ork casus ustasına götürülmesi gerektiği açıkça anlaşılıyor.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Bana getirdiğin bir şey var mı?",
+        "8103ed5692d065514727": "İyi iş, $N. Ajanımız Marg Nighteye, Theramore'un dışında görevlendirilmişti. Şehri gözetlemekle sorumluydu.$B$BBu onun son raporu ve belki de bir daha gelmeyecek. Anlattıklarından Marg'ın bataklıkta öldüğünden korkuyorum..."
+      },
       "summary": "Casusun Raporu'nu Brackenwall Köyü'ndeki Nazeer Bloodpike'a getir.",
       "title": "Kayıp Rapor",
       "translationMetadata": {
@@ -369,6 +603,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "1d0fe7886e97cf666021826c7b7f57c3de7672f02eb79ca27049173f28583463"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +631,10 @@
     },
     "ukUA": {
       "description": "Просіюючи землю, ви знаходите відрубану руку орка, що стискає різьблену кістяну трубку. В трубці — заляпаний брудом пергамент.\n\nЦе звіт орка, що багато тижнів шпигував за Терамором.\n\nСхоже, що його потрібно доставити командиру орків-розвідників в селище Папорохащі.",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "Маєш щось для мене?",
+        "8103ed5692d065514727": "Гарна робота, $N. Наш агент Марґ Найтей перебував біля Терамора й мав шпигувати за містом.$B$BЦе його найновіший звіт, і, можливо, останній. Судячи з твоєї розповіді, боюся, Марґ загинув на болоті..."
+      },
       "summary": "Принесіть звіт шпигуна Назіру Кровоспису в селище Папорохащі.",
       "title": "Загублений звіт",
       "translationMetadata": {
@@ -397,6 +645,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "1d0fe7886e97cf666021826c7b7f57c3de7672f02eb79ca27049173f28583463"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +675,10 @@
     },
     "zhCN": {
       "description": "你可以在松土里看到一只紧紧握起来的兽人的手，手里抓着一根用骨头刻出来的管子，里面塞着一张粘着泥土的羊皮纸。\n\n羊皮纸上是一个在塞拉摩侦察了好几个星期的兽人写的报告。\n\n浏览过羊皮纸之后，你决定立刻把它送给蕨墙村的兽人情报官。",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "你有什么东西要给我吗？",
+        "8103ed5692d065514727": "做得好，$N。我们的密探玛格·夜眼就在塞拉摩周边活动，他奉命监视塞拉摩城里的动静。\n\n这是他最近的一份报告，也可能是他最後一次报告—根据你所描述的情况，我担心玛格已经死在沼泽地了……\n"
+      },
       "summary": "把间谍的报告交给蕨墙村的纳泽尔·血矛。",
       "title": "遗失的报告",
       "translationMetadata": {
@@ -425,6 +687,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +715,10 @@
     },
     "zhTW": {
       "description": "撥開鬆軟的泥土，你看到一隻斷掉的獸人的手，手裡抓著一根用骨頭製成的管子，裡面塞著一張粘滿泥土的羊皮紙。\n\n這張羊皮紙是一個在塞拉摩偵察了好幾個星期的獸人所寫的報告。\n\n在檢視過羊皮紙之後，你決定立刻把它送給蕨牆村的獸人情報官。",
+      "dialogue": {
+        "7fd7c147efd580f4a0ea": "你有東西要給我嗎?",
+        "8103ed5692d065514727": "做得好，$N。我們的密探瑪格.夜眼就在塞拉摩周邊活動，他奉命監視塞拉摩城裏的動靜。\n\n這是他最近的一份報告，也可能是他最後一次報告—根據你所描述的情況，我擔心瑪格已經死在沼澤地了……"
+      },
       "summary": "把間諜的報告交給蕨牆村的納澤爾·血矛。",
       "title": "遺失的報告",
       "translationMetadata": {
@@ -449,6 +727,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.7fd7c147efd580f4a0ea": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.8103ed5692d065514727": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

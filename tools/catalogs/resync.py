@@ -203,15 +203,21 @@ def prepare(root, database, previous, output):
     return {k: v for k, v in manifest.items() if k != 'files'} | {'changedFiles': len(files)}
 
 
+def verify_prepared_sources(root, manifest):
+    verify_policy_inputs(root, manifest)
+    if manifest.get('sourceType') == 'questDialogue' and manifest.get('policyInputs'):
+        return
+    database = verify_sources(manifest['database'], root)
+    if PLAN['file_sha'](database) != manifest['databaseSha256']:
+        raise ValueError('Source database changed since preparation')
+
+
 def apply(root, directory):
     root, directory = Path(root).resolve(), Path(directory).resolve()
     manifest = read_json(directory / 'manifest.json')
     if manifest.get('unresolvedFields', 0):
         raise ValueError('Prepared source issues must be resolved before application')
-    database = verify_sources(manifest['database'], root)
-    verify_policy_inputs(root, manifest)
-    if PLAN['file_sha'](database) != manifest['databaseSha256']:
-        raise ValueError('Source database changed since preparation')
+    verify_prepared_sources(root, manifest)
     # Check every file before the first write; a conflict must not cause a partial application.
     pending = []
     for row in manifest['files']:
@@ -234,19 +240,22 @@ def apply(root, directory):
 
 def verify(root, directory):
     manifest = read_json(Path(directory) / 'manifest.json')
-    database = verify_sources(manifest['database'], root)
-    verify_policy_inputs(root, manifest)
-    if PLAN['file_sha'](database) != manifest['databaseSha256']:
-        raise ValueError('Source database changed since preparation')
+    verify_prepared_sources(root, manifest)
     for row in manifest['files']:
         if digest((Path(root) / row['path']).read_bytes()) != row['afterSha256']:
             raise ValueError('Applied result mismatch: ' + row['path'])
     return {'verifiedFiles': len(manifest['files'])}
 
 
-def queue(root, directory):
+def queue(root, directory, output=None):
     directory = Path(directory)
     manifest = read_json(directory / 'manifest.json')
+    if manifest.get('sourceType') == 'questDialogue':
+        from tools.catalogs.dialogue_jobs import queue as queue_dialogue
+        verify_prepared_sources(root, manifest)
+        return queue_dialogue(root, output or directory, manifest)
+    if output is not None:
+        raise ValueError('An explicit queue output is supported only for quest dialogue')
     verify(root, directory)
     documents = load_catalogs(root, read_json(directory / 'translation-scope.json'))
     candidates = WORK['collect_translation_candidates'](documents)
@@ -307,27 +316,45 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
     commands = parser.add_subparsers(dest='command', required=True)
+    command = commands.add_parser('prepare-item-enchantments')
+    command.add_argument('--database', type=Path, required=True)
+    command.add_argument('--output', type=Path, required=True)
     command = commands.add_parser('prepare-books')
     command.add_argument('--database', type=Path, required=True)
+    command.add_argument('--output', type=Path, required=True)
+    command = commands.add_parser('prepare-quest-dialogue')
+    command.add_argument('--audit', type=Path, required=True)
+    command.add_argument('--snapshots', type=Path, required=True)
     command.add_argument('--output', type=Path, required=True)
     command = commands.add_parser('prepare')
     command.add_argument('--database', type=Path, required=True)
     command.add_argument('--previous', type=Path, help='Last applied corpus; omit for a first import without local history')
     command.add_argument('--output', type=Path, required=True)
-    for name in ('apply', 'verify', 'queue'):
+    for name in ('apply', 'verify'):
         commands.add_parser(name).add_argument('--directory', type=Path, required=True)
+    command = commands.add_parser('queue')
+    command.add_argument('--directory', type=Path, required=True)
+    command.add_argument('--output', type=Path)
     command = commands.add_parser('install')
     command.add_argument('--directory', type=Path, required=True)
     command.add_argument('--addons', type=Path, required=True)
     command.add_argument('--runtime-file', action='append', default=[])
     args = parser.parse_args()
-    if args.command == 'prepare-books':
+    if args.command == 'prepare-item-enchantments':
+        from datasources.wago.enchantments import prepare as prepare_enchantments
+        result = prepare_enchantments(args.root, args.database, args.output)
+    elif args.command == 'prepare-books':
         from datasources.books.catalogs import prepare as prepare_books
         result = prepare_books(args.root, args.database, args.output)
+    elif args.command == 'prepare-quest-dialogue':
+        from datasources.spoken.catalogs import prepare as prepare_dialogue
+        result = prepare_dialogue(args.root, args.audit, args.snapshots, args.output)
     elif args.command == 'prepare':
         result = prepare(args.root, args.database, args.previous, args.output)
     elif args.command == 'install':
         result = install(args.root, args.directory, args.addons, args.runtime_file)
+    elif args.command == 'queue':
+        result = queue(args.root, args.directory, args.output)
     else:
         result = globals()[args.command](args.root, args.directory)
     print(json.dumps(result, ensure_ascii=False))

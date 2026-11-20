@@ -1,8 +1,28 @@
 {
   "areaId": 47,
+  "dialogueContexts": {
+    "93d8e47f24b285d32171": {
+      "lineId": "q:2992:complete",
+      "npcId": 8022,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "b4e7e926bdfae21896f0": {
+      "lineId": "q:2992:accept",
+      "npcId": 8022,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Dej mi prostor, abych mohl provést věštecký rituál. Najdu spojení mezi pírkem od tebe a jeho majitelem a půjdu po tom spojení až k samotnému Sharpbeakovi.\n\nTo znamená... najdu ho, pokud všechno půjde podle plánu. Pokud ne, tak... radši zavři oči.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Rituál se zdařil. Viděl jsem Sharpbeaka a mohu ti říct, jak ho najít.",
+        "b4e7e926bdfae21896f0": "Dej mi prostor, zatímco provedu věštecký rituál. Najdu spojení mezi perem, které jsi mi přinesl, a jeho majitelem a po něm dojdu až k samotnému Sharpbeakovi.$B$BTedy... pokud půjde vše podle plánu. Pokud ne, pak... raději zavři oči."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +39,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "864aa3183ac89640aa29a3bbc1caf25b2d252036673e9a6f18f5939a5c2d0630"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +74,10 @@
     },
     "daDK": {
       "description": "Giv mig plads, mens jeg udfører et sandsigelsesritual. Jeg vil finde forbindelsen mellem fjeren, du bragte mig, og dens ejer og følge forbindelsen til Sharpbeak selv.\n\nDet vil sige ... hvis alt går efter planen. Hvis ikke ... må du hellere lukke øjnene.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Ritualet lykkedes. Jeg har set Sharpbeak og kan fortælle dig, hvordan du finder ham.",
+        "b4e7e926bdfae21896f0": "Giv mig plads, mens jeg udfører et spådomsritual. Jeg vil finde forbindelsen mellem fjeren, du bragte mig, og dens ejer og følge den helt til Sharpbeak selv.$B$BAltså... hvis alt går efter planen. Hvis ikke, så... er det bedst, at du lukker øjnene."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "864aa3183ac89640aa29a3bbc1caf25b2d252036673e9a6f18f5939a5c2d0630"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +127,10 @@
     },
     "deDE": {
       "description": "Lasst mir etwas Platz, während ich ein Rutengangritual durchführe. Ich werde die Verbindung zwischen der Feder, die Ihr mir gebracht habt, und ihrem Besitzer herstellen und dann selbst dieser Verbindung zu Scharfschnabel folgen.\n\nZumindest... wenn alles nach Plan verläuft. Wenn nicht, nun... dann schließt Ihr besser die Augen.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Das Ritual verlief erfolgreich. Ich habe Scharfschnabel gesehen und kann Euch sagen, wie Ihr ihn findet. ",
+        "b4e7e926bdfae21896f0": "Lasst mir etwas Platz, während ich ein Rutengangritual durchführe. Ich werde die Verbindung zwischen der Feder, die Ihr mir gebracht habt, und ihrem Besitzer herstellen und dann selbst dieser Verbindung zu Scharfschnabel folgen.\n\nZumindest... wenn alles nach Plan verläuft. Wenn nicht, nun... dann schließt Ihr besser die Augen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +180,10 @@
     },
     "enUS": {
       "description": "Give me room while I perform a ritual of divination.  I will find the connection between the feather you brought me and its owner, and follow that connection to Sharpbeak himself.\n\nThat is... I will if all goes according to plan.  If it does not, then... you better close your eyes.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "The ritual was a success.  I have seen Sharpbeak and can tell you how to find him.",
+        "b4e7e926bdfae21896f0": "Give me room while I perform a ritual of divination.  I will find the connection between the feather you brought me and its owner, and follow that connection to Sharpbeak himself.$B$BThat is... I will if all goes according to plan.  If it does not, then... you better close your eyes."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +199,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -158,6 +234,10 @@
     },
     "esES": {
       "description": "Hazme sitio mientras realizo el ritual de adivinación. Encontraré la conexión entre la pluma y su dueño y la seguiré hasta llegar a Picoafilado.\n\nBueno... si todo sale bien. Si no, pues... Cierra los ojos.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "El ritual ha salido bien; he visto a Picoafilado y puedo decirte dónde encontrarlo.",
+        "b4e7e926bdfae21896f0": "Hazme sitio mientras realizo el ritual de adivinación. Encontraré la conexión entre la pluma y su dueño y la seguiré hasta llegar a Picoafilado.\n\nBueno... si todo sale bien. Si no, pues... Cierra los ojos."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +253,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -195,6 +287,10 @@
     },
     "esMX": {
       "description": "Hazme sitio mientras realizo el ritual de adivinación. Encontraré la conexión entre la pluma y su dueño y la seguiré hasta llegar a Picoafilado.\n\nBueno... si todo sale bien. Si no, pues... Cierra los ojos.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "El ritual ha salido bien; he visto a Picoafilado y puedo decirte dónde encontrarlo.",
+        "b4e7e926bdfae21896f0": "Hazme sitio mientras realizo el ritual de adivinación. Encontraré la conexión entre la pluma y su dueño y la seguiré hasta llegar a Picoafilado.\n\nBueno... si todo sale bien. Si no, pues... Cierra los ojos."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +306,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -232,6 +340,10 @@
     },
     "frFR": {
       "description": "Laissez-moi un peu de place pour me permettre de pratiquer le rituel de divination. Je vais connecter la plume à son propriétaire, ce qui me donnera accès à Bec-tranchant lui-même.\n\nSi tout se déroule comme prévu, évidemment... Sinon, hé bien, vous feriez mieux de ne pas regarder.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "J'ai réussi. Je sais où se trouve Bec-tranchant et comment vous pouvez le rejoindre. ",
+        "b4e7e926bdfae21896f0": "Laissez-moi un peu de place pour me permettre de pratiquer le rituel de divination. Je vais connecter la plume à son propriétaire, ce qui me donnera accès à Bec-tranchant lui-même.\n\nSi tout se déroule comme prévu, évidemment... Sinon, hé bien, vous feriez mieux de ne pas regarder."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +359,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -269,6 +393,10 @@
     },
     "hrHR": {
       "description": "Daj mi prostora dok izvodim obred proricanja. Pronaći ću vezu između pera koje si mi donio i njegova vlasnika te slijediti tu vezu do samog Sharpbeaka.\n\nTo jest... hoću ako sve bude išlo prema planu. Ako ne bude, onda... bolje zatvori oči.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Ritual je uspio. Vidio sam Sharpbeaka i mogu ti reći kako ga pronaći.",
+        "b4e7e926bdfae21896f0": "Odmakni se dok izvedem obred proricanja. Pronaći ću vezu između pera koje si mi donio i njegova vlasnika te je slijediti do samog Sharpbeaka.$B$BOdnosno... ako sve pođe prema planu. Ako ne, onda... bolje zatvori oči."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +413,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "864aa3183ac89640aa29a3bbc1caf25b2d252036673e9a6f18f5939a5c2d0630"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +446,10 @@
     },
     "itIT": {
       "description": "Fammi spazio mentre eseguo un rituale di divinazione. Troverò il legame tra la piuma che mi hai portato e il suo proprietario, e seguirò quel legame fino a Beccaguzzo in persona.\n\nO meglio... ci riuscirò se tutto andrà secondo i piani. Altrimenti... sarà meglio che tu chiuda gli occhi.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Il rituale è riuscito. Ho visto Sharpbeak e posso dirti come trovarlo.",
+        "b4e7e926bdfae21896f0": "Fammi spazio mentre eseguo un rituale di divinazione. Troverò il legame fra la piuma che mi hai portato e il suo proprietario, e seguirò quel legame fino a Sharpbeak in persona.\n\nCioè... lo farò se tutto va secondo i piani. Se no, allora... faresti meglio a chiudere gli occhi."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -324,6 +466,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "864aa3183ac89640aa29a3bbc1caf25b2d252036673e9a6f18f5939a5c2d0630"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -347,6 +501,10 @@
     },
     "koKR": {
       "description": "점치기 의식을 수행하도록 좀 물러서 있게나. 자네가 가져온 깃털과 그 주인 사이에 연결된 끈을 찾아서 뾰족부리가 있는 곳을 찾을 거야.\n\n그야 물론... 모든 것이 계획대로 잘 풀릴 때의 얘기지. 잘 되지 않는다면... 차라리 눈을 감아 버리는 게 좋을 거야.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "점치기 의식이 성공했네. 뾰족부리를 보았으니 어떻게 찾을 수 있는지 말해 주지.",
+        "b4e7e926bdfae21896f0": "점치기 의식을 수행하도록 좀 물러서 있게나. 자네가 가져온 깃털과 그 주인 사이에 연결된 끈을 찾아서 뾰족부리가 있는 곳을 찾을 거야.\n\n그야 물론... 모든 것이 계획대로 잘 풀릴 때의 얘기지. 잘 되지 않는다면... 차라리 눈을 감아 버리는 게 좋을 거야."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -362,6 +520,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -384,6 +554,10 @@
     },
     "plPL": {
       "description": "Daj mi przestrzeń na odprawienie rytuału wróżbiarskiego. Odnajdę połączenie między przyniesionym przez ciebie piórem a jego właścicielem i podążę nim do samego Sharpbeaka.\n\nTo znaczy... jeśli wszystko pójdzie zgodnie z planem. Jeśli nie, to... lepiej zamknij oczy.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Rytuał się powiódł. Widziałem Sharpbeaka i mogę powiedzieć ci, jak go odnaleźć.",
+        "b4e7e926bdfae21896f0": "Daj mi trochę miejsca, gdy będę odprawiać rytuał wróżenia. Odszukam więź między przyniesionym piórem a jego właścicielem i podążę nią do samego Sharpbeaka.$B$BTo znaczy... jeśli wszystko pójdzie zgodnie z planem. A jeśli nie, to... lepiej zamknij oczy."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -400,6 +574,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "864aa3183ac89640aa29a3bbc1caf25b2d252036673e9a6f18f5939a5c2d0630"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -423,6 +607,10 @@
     },
     "ptBR": {
       "description": "Me dê espaço enquanto eu realizo um ritual de divinação. Eu vou encontrar a conexão entre a pena que tu me trouxe e seu dono; daí, eu vou seguir essa conexão até chegar ao Bicoafiado.\n\nQuer dizer... se tudo sair de acordo com o planejado. Se não der certo... é melhor fechar os olhos.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "O ritual foi um sucesso. Eu vi o Bicoafiado e posso te dizer como encontrá-lo.",
+        "b4e7e926bdfae21896f0": "Me dê espaço enquanto eu realizo um ritual de divinação. Eu vou encontrar a conexão entre a pena que tu me trouxe e seu dono; daí, eu vou seguir essa conexão até chegar ao Bicoafiado.\n\nQuer dizer... se tudo sair de acordo com o planejado. Se não der certo... é melhor fechar os olhos."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -438,6 +626,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -460,6 +660,10 @@
     },
     "ruRU": {
       "description": "Посторонитесь-ка, мне нужно место, чтобы выполнить ритуал прорицания. Я установлю связь между этим пером и его владельцем, а потом попытаюсь найти и самого Остроклюва.\n\nЕсли все пойдет по плану, то должно получиться, а если нет... Вы, на всякий случай, закройте глаза.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Ритуал прошел успешно. Я видел Остроклюва и могу сказать, где его найти.",
+        "b4e7e926bdfae21896f0": "Посторонитесь-ка, мне нужно место, чтобы выполнить ритуал прорицания. Я установлю связь между этим пером и его владельцем, а потом попытаюсь найти и самого Остроклюва.\n\nЕсли все пойдет по плану, то должно получиться, а если нет... Вы, на всякий случай, закройте глаза."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -475,6 +679,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -497,6 +713,10 @@
     },
     "svSE": {
       "description": "Ge mig utrymme medan jag utför en spådomsritual. Jag ska finna bandet mellan fjädern du gav mig och dess ägare och följa det ända till Sharpbeak.\n\nDet vill säga... om allt går enligt planen. Om inte, då... är det bäst att du sluter ögonen.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Ritualen lyckades. Jag har sett Sharpbeak och kan berätta hur du hittar honom.",
+        "b4e7e926bdfae21896f0": "Ge mig utrymme medan jag utför en spådomsritual. Jag ska hitta länken mellan fjädern du gav mig och dess ägare och följa den till Sharpbeak själv.$B$BAlltså... om allt går enligt planen. Om inte, så... är det bäst att du blundar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -513,6 +733,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "864aa3183ac89640aa29a3bbc1caf25b2d252036673e9a6f18f5939a5c2d0630"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -536,6 +766,10 @@
     },
     "trTR": {
       "description": "Kehanet ritüelini gerçekleştirirken bana alan aç. Getirdiğin tüyle sahibi arasındaki bağı bulup bu bağı Sharpbeak'in kendisine kadar izleyeceğim.\n\nYani... her şey plana göre giderse. Gitmezse... gözlerini kapatsan iyi olur.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Ritüel başarılı oldu. Sharpbeak’i gördüm ve onu nasıl bulacağını söyleyebilirim.",
+        "b4e7e926bdfae21896f0": "Bir kehanet ritüeli yaparken bana yer aç. Getirdiğin tüyle sahibi arasındaki bağı bulup onu bizzat Sharpbeak’e kadar takip edeceğim.$B$BYani... her şey plana göre giderse. Gitmezse... gözlerini kapatsan iyi olur."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -552,6 +786,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "864aa3183ac89640aa29a3bbc1caf25b2d252036673e9a6f18f5939a5c2d0630"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -575,6 +819,10 @@
     },
     "ukUA": {
       "description": "Дай мені місце, поки я проводитиму ритуал провидіння. Я знайду зв'язок між пером, яке ти приніс, та його власником і піду за цим зв'язком до самого Гостродзьоба.\n\nТобто... якщо все піде за планом. А якщо ні, тоді... краще заплющ очі.",
+      "dialogue": {
+        "93d8e47f24b285d32171": "Ритуал удався. Я бачив Шарпбіка й можу сказати, як його знайти.",
+        "b4e7e926bdfae21896f0": "Дай мені місце, поки я проведу обряд віщування. Я знайду зв’язок між принесеною тобою пір’їною та її власником і простежу його до самого Шарпбіка.$B$BТобто... якщо все піде за планом. А якщо ні, то... краще заплющ очі."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -591,6 +839,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "864aa3183ac89640aa29a3bbc1caf25b2d252036673e9a6f18f5939a5c2d0630"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -616,6 +874,10 @@
     },
     "zhCN": {
       "description": "在我进行占卜仪式的过程中，不要打断我。我会找出你拿来的那根羽毛和它主人之间的关系，然后顺藤摸瓜找到沙普比克。\n\n理论上讲是这样……如果一切都按照计划进行的话。如果不是，那么……你最好闭上眼睛。",
+      "dialogue": {
+        "93d8e47f24b285d32171": "仪式很成功。我看到了沙普比克，也可以告诉你如何找到它了。\n",
+        "b4e7e926bdfae21896f0": "在我进行占卜仪式的过程中，不要打断我。我会找出你拿来的那根羽毛和它主人之间的关系，然后顺藤摸瓜找到沙普比克。\n\n理论上讲是这样……如果一切都按照计划进行的话。如果不是，那么……你最好闭上眼睛。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -631,6 +893,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -653,6 +927,10 @@
     },
     "zhTW": {
       "description": "在我進行占卜儀式的過程中，不要打斷我。我會找出你拿來的那根羽毛和它主人之間的關係，然後順藤摸瓜找到沙普比克。\n\n理論上講是這樣……如果一切都按照計畫進行的話。如果不是，那麼……你最好閉上眼睛。",
+      "dialogue": {
+        "93d8e47f24b285d32171": "儀式很成功。我看到了沙普比克，也可以告訴你如何找到它了。",
+        "b4e7e926bdfae21896f0": "在我進行占卜儀式的過程中，不要打斷我。我會找出你拿來的那根羽毛和它主人之間的關係，然後順藤摸瓜找到沙普比克。\n\n理論上講是這樣……如果一切都按照計畫進行的話。如果不是，那麼……你最好閉上眼睛。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -668,6 +946,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.93d8e47f24b285d32171": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.b4e7e926bdfae21896f0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

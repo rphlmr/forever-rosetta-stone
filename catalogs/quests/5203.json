@@ -1,8 +1,36 @@
 {
   "areaId": 361,
+  "dialogueContexts": {
+    "79929511155009a34238": {
+      "lineId": "q:5203:progress",
+      "npcId": 11019,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "96d5af88cceb9416991b": {
+      "lineId": "q:5203:accept",
+      "npcId": 11016,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "a9f623dc9e662d0699a7": {
+      "lineId": "q:5203:complete",
+      "npcId": 11019,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Ale ať mě to bolí sebevíc, nejdřív je třeba udělat jednu věc: musím najít Treyův meč Lightforge a uprchnout z pevnosti Shadow, abych svým nadřízeným řekla, co se tu děje. Pomůžeš mi, {name}?\n\nNaše výbava není odsud daleko a tvá schopnost přežít cestu nahoru je už prokázaná.\n\nAž unikneme, zamířím do Darnassu, pokud najdeš mou přítelkyni Jessir poblíž hranice lesa Ashenvale. Měla se s námi sejít v táboře Emerald Circle nedaleko odtamtud.\n\nCo na to říkáš, {name}? Pomůžeš mi znovu?",
+      "dialogue": {
+        "79929511155009a34238": "Vypadáš udýchaně, $n. Jsi v pořádku, nebo se něco stalo?",
+        "96d5af88cceb9416991b": "Ale ač mě to bolí, musím nejprve udělat jednu věc: najít Treyův meč Lightforge a uniknout ze Shadow Hold, abych nadřízeným řekla, co se zde děje. Pomůžeš mi, $N?$B$BNaše výstroj není daleko a už jsi dokázal, že cestu nahoru zvládneš.$B$BAž unikneme, vydám se do Darnassu, pokud najdeš mou přítelkyni Jessir poblíž hranice Ashenvale. Měla se s námi sejít v táboře Smaragdového kruhu poblíž.$B$BCo říkáš, $N? Pomůžeš mi znovu?",
+        "a9f623dc9e662d0699a7": "Tys pomohl Arko uniknout? Jsem moc ráda, že jsi mě našel. Před nedávnem tudy prošla cestou do Darnassu. Nesla Lightforge a ani si neudělala čas, aby ji druidové vyléčili. Řekla, že je to příliš naléhavé.$B$BAle řekla mi o setkání s Treyovým duchem. Jak strašný osud pro rytíře Stříbrné ruky. Nedala to najevo, ale vím, že ji myšlenka na ztrátu jednoho z nejbližších přátel uvnitř trhá."
+      },
       "eventObjectiveLabel": "Chraň Arko'narin při úniku ze Shadow Hold",
       "summary": "Doprovoď Arko'narin na místo, kde je držena Lightforge a její vybavení, a poté ji chraň při útěku z Shadow Hold. Následně vyhledej Jessir Moonbow ve Felwoodu a dej jí vědět, co se stalo s jejími přáteli.",
       "title": "Záchrana z Jaedenaru",
@@ -13,6 +41,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c0fc61d7f5cfe7721e919d16505e705aede3b36cf7966b3bcc5c98b03e4a5520"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -40,6 +83,11 @@
     },
     "daDK": {
       "description": "Men hvor ondt det end gør mig, er der én ting, der først må gøres: Jeg må finde Treys sværd Lightforge og undslippe Shadow Hold for at fortælle mine overordnede, hvad der sker her. Kan du hjælpe mig, {name}?\n\nVores udstyr er ikke langt herfra, og du har allerede bevist, at du kan overleve vejen til toppen.\n\nNår vi er undsluppet, tager jeg til Darnassus, hvis du kan finde min veninde Jessir nær Ashenvale-grænsen. Hun skulle møde os ved Emerald Circles lejr der i nærheden.\n\nHvad siger du, {name}? Kan du hjælpe mig igen?",
+      "dialogue": {
+        "79929511155009a34238": "Du ser forpustet ud, $n. Er du okay, eller er der noget galt?",
+        "96d5af88cceb9416991b": "Men selvom det smerter mig, er der én ting, jeg må gøre først: Jeg må finde Treys sværd Lightforge og flygte fra Shadow Hold for at fortælle mine overordnede, hvad der sker her. Kan du hjælpe mig, $N?$B$BVores udstyr er ikke langt herfra, og du har allerede vist, at du kan overleve vejen op.$B$BNår vi er undsluppet, tager jeg til Darnassus, hvis du kan finde min ven Jessir nær Ashenvales grænse. Hun skulle møde os ved Smaragdcirklens lejr i nærheden.$B$BHvad siger du, $N? Vil du hjælpe mig igen?",
+        "a9f623dc9e662d0699a7": "Var det dig, der hjalp Arko med at flygte? Hvor er jeg glad for, at du fandt mig. Hun kom forbi for ikke længe siden på vej til Darnassus. Hun havde Lightforge med og tog sig ikke engang tid til at lade druiderne helbrede hende. Hun sagde, det hastede alt for meget.$B$BMen hun fortalte mig om jeres møde med Treys ånd. Hvilken frygtelig skæbne for en ridder af Sølvhånden. Hun viste det ikke, men jeg ved, at tanken om at miste en af sine nærmeste venner sønderriver hende indeni."
+      },
       "eventObjectiveLabel": "Beskyt Arko'narin ud af Shadow Hold",
       "summary": "Eskortér Arko'narin til stedet, hvor Lightforge og hendes udstyr holdes, og beskyt hende derefter, mens I flygter fra Shadow Hold. Opsøg derefter Jessir Moonbow i Felwood for at fortælle hende, hvad der er sket med hendes venner.",
       "title": "Redning fra Jaedenar",
@@ -50,6 +98,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c0fc61d7f5cfe7721e919d16505e705aede3b36cf7966b3bcc5c98b03e4a5520"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -74,6 +137,11 @@
     },
     "deDE": {
       "description": "Aber so sehr es mich auch schmerzt, es gibt eine Sache, die zuerst erledigt werden muss. Ich muss Treys Schwert Lightforge finden und aus der Schattenfeste entkommen, um meinen Vorgesetzten zu berichten, was hier geschieht. Könntet Ihr mir helfen, {name}?\n\nUnsere Ausrüstung ist nicht weit von hier und Ihr habt bereits bewiesen, dass Ihr den Weg an die Spitze überleben könnt.\n\nNachdem wir entkommen sind, werde ich nach Darnassus gehen, und Euch würde ich bitten, meine Freundin Jessir in der Nähe der Grenze zu Ashenvale aufzusuchen. Sie sollte sich eigentlich im Lager des Smaragdkreises hier in der Nähe mit uns treffen.\n\nWas sagt Ihr dazu, {name}? Würdet Ihr mir nochmals helfen?",
+      "dialogue": {
+        "79929511155009a34238": "Du siehst erschöpft aus, $n. Geht es dir gut, oder stimmt etwas nicht?",
+        "96d5af88cceb9416991b": "Aber so sehr es mich auch schmerzt, es gibt eine Sache, die zuerst erledigt werden muss. Ich muss Treys Schwert Lightforge finden und aus der Schattenfeste entkommen, um meinen Vorgesetzten zu berichten, was hier geschieht. Könntet Ihr mir helfen, $N?\n\nUnsere Ausrüstung ist nicht weit von hier und Ihr habt bereits bewiesen, dass Ihr den Weg an die Spitze überleben könnt.\n\nNachdem wir entkommen sind, werde ich nach Darnassus gehen, und Euch würde ich bitten, meine Freundin Jessir in der Nähe der Grenze zu Ashenvale aufzusuchen. Sie sollte sich eigentlich im Lager des Smaragdkreises hier in der Nähe mit uns treffen.\n\nWas sagt Ihr dazu, $N? Würdet Ihr mir nochmals helfen?",
+        "a9f623dc9e662d0699a7": "Ihr wart es, der Arko bei der Flucht geholfen hat? Ich bin ja so froh, dass Ihr mich gefunden habt. Sie kam vor nicht allzu langer Zeit auf ihrem Weg nach Darnassus hier vorbei. Sie hatte Lightforge im Schlepptau und nahm sich nicht einmal die Zeit, um mit den Druiden zu sprechen, um sich heilen zu lassen. Sie sagte, es wäre viel zu dringend. \n \n Aber sie berichtete mir von Eurer Begegnung mit dem Geist von Trey. Was für ein schreckliches Schicksal für einen Ritter der Silberhand. Sie zeigte es nicht, aber ich weiß, dass der Gedanke, einen ihrer engsten Freund zu verlieren, sie im Inneren zerreißt. "
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "Bringt Arko'narin dorthin, wo Lightforge und ihre Ausrüstung aufbewahrt werden, und beschützt sie dann bei eurer Flucht aus der Schattenfeste. Sucht danach Jessir Moonbow im Teufelswald auf und lasst sie wissen, was mit ihren Freunden geschehen ist.",
       "title": "Rettung aus Jaedenar",
@@ -83,6 +151,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -104,6 +190,11 @@
     },
     "enUS": {
       "description": "But, as much as it pains me, there is one thing that must be done first: I have to find Trey's sword Lightforge and escape Shadow Hold to tell my superiors what's happening here. Can you help me, {name}?\n\nOur equipment isn't far from here, and you've already proven you can survive the path to the top.\n\nAfter we escape, I'll head to Darnassus if you can find my friend Jessir near the Ashenvale border. She was to meet us at the Emerald Circle's camp near there.\n\nWhat do you say, {name}? Can you help me again?",
+      "dialogue": {
+        "79929511155009a34238": "You look winded, $n. Are you all right, or is something wrong?",
+        "96d5af88cceb9416991b": "But, as much as it pains me, there is one thing that must be done first: I have to find Trey's sword Lightforge and escape Shadow Hold to tell my superiors what's happening here. Can you help me, $N?$B$BOur equipment isn't far from here, and you've already proven you can survive the path to the top.$B$BAfter we escape, I'll head to Darnassus if you can find my friend Jessir near the Ashenvale border. She was to meet us at the Emerald Circle's camp near there.$B$BWhat do you say, $N? Can you help me again?",
+        "a9f623dc9e662d0699a7": "You were the one who helped Arko escape? I'm so glad you found me. She passed by here not too long ago on her way to Darnassus. She had Lightforge in tow and wouldn't even take time to speak to the druids to be healed. She said it was far too urgent.$B$BBut she did tell me about your encounter with Trey's spirit. What a terrible fate for a Knight of the Silver Hand. She didn't show it, but I know it's tearing her up inside, the thought of losing one of her closest friends."
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "Escort Arko'narin to where Lightforge and her equipment are being held, and then protect her as you escape Shadow Hold. Afterwards, seek out Jessir Moonbow in Felwood to let her know what's happened to her friends.",
       "title": "Rescue From Jaedenar",
@@ -113,6 +204,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -135,6 +244,11 @@
     },
     "esES": {
       "description": "Pero, por mucho que me duela, he de hacer una cosa antes: tengo que encontrar la espada de Trey, Forjaluz, y escapar de la Guarida Sombría para informar a mis superiores de lo que está ocurriendo aquí. ¿Puedes ayudarme, {name}?\n\nNuestro equipamiento no está lejos de aquí. Y tú ya has demostrado que puedes sobrevivir al camino hasta la cima.\n\nCuando escapemos, yo me dirigiré a Darnassus y tú a buscar a mi amiga Jessir cerca de la frontera de Vallefresno. Teníamos que encontrarnos en el campamento del Círculo Esmeralda que hay cerca de allí.\n\n¿Qué dices, {name}? ¿Puedes ayudarme una vez más?",
+      "dialogue": {
+        "79929511155009a34238": "Pareces sin aliento, $n.  ¿Estás bien, o algo anda mal?",
+        "96d5af88cceb9416991b": "Pero, por mucho que me duela, he de hacer una cosa antes: tengo que encontrar la espada de Trey, Forjaluz, y escapar de la Guarida Sombría para informar a mis superiores de lo que está ocurriendo aquí. ¿Puedes ayudarme, $n?\n\nNuestro equipamiento no está lejos de aquí. Y tú ya has demostrado que puedes sobrevivir al camino hasta la cima.\n\nCuando escapemos, yo me dirigiré a Darnassus y tú a buscar a mi amiga Jessir cerca de la frontera de Vallefresno. Teníamos que encontrarnos en el campamento del Círculo Esmeralda que hay cerca de allí.\n\n¿Qué dices, $n? ¿Puedes ayudarme una vez más?",
+        "a9f623dc9e662d0699a7": "¿Eres tú quien ayudó a Arko a escapar? Cómo me alegro de que me hayas encontrado. Ella pasó por aquí hace no mucho, de camino a Darnassus. Forjaluz iba pisándole los talones y no tenía ni tiempo para hablar con los druidas y hacer que le curaran las heridas. Dijo que tenía mucha prisa.\n\nPero sí me contó tu encuentro con el espíritu de Trey. Qué destino tan cruel para un caballero de la Mano de Plata. Ella intentaba ocultarlo, pero era evidente que la pérdida que ha sufrido le está desgarrando las entrañas."
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "Escolta a Arko'narin hasta el lugar en el que están Forjaluz y su equipo y protégela en la huida de la Guarida Sombría. Después, busca a Jessir Arcolunar en Frondavil para contarle lo que les ha ocurrido a sus amigos.",
       "title": "El rescate en Jaedenar",
@@ -144,6 +258,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -165,6 +297,11 @@
     },
     "esMX": {
       "description": "Pero, por mucho que me duela, he de hacer una cosa antes: tengo que encontrar la espada de Trey, Forjaluz, y escapar de la Guarida Sombría para informar a mis superiores de lo que está ocurriendo aquí. ¿Puedes ayudarme, {name}?\n\nNuestro equipamiento no está lejos de aquí. Y tú ya has demostrado que puedes sobrevivir al camino hasta la cima.\n\nCuando escapemos, yo me dirigiré a Darnassus y tú a buscar a mi amiga Jessir cerca de la frontera de Vallefresno. Teníamos que encontrarnos en el campamento del Círculo Esmeralda que hay cerca de allí.\n\n¿Qué dices, {name}? ¿Puedes ayudarme una vez más?",
+      "dialogue": {
+        "79929511155009a34238": "Te ves sin aliento, $n. ¿Estás bien o pasa algo?",
+        "96d5af88cceb9416991b": "Pero, por mucho que me duela, he de hacer una cosa antes: tengo que encontrar la espada de Trey, Forjaluz, y escapar de la Guarida Sombría para informar a mis superiores de lo que está ocurriendo aquí. ¿Puedes ayudarme, $n?\n\nNuestro equipamiento no está lejos de aquí. Y tú ya has demostrado que puedes sobrevivir al camino hasta la cima.\n\nCuando escapemos, yo me dirigiré a Darnassus y tú a buscar a mi amiga Jessir cerca de la frontera de Vallefresno. Teníamos que encontrarnos en el campamento del Círculo Esmeralda que hay cerca de allí.\n\n¿Qué dices, $n? ¿Puedes ayudarme una vez más?",
+        "a9f623dc9e662d0699a7": "¿Eres tú quien ayudó a Arko a escapar? Cómo me alegro de que me hayas encontrado. Ella pasó por aquí hace no mucho, de camino a Darnassus. Forjaluz iba pisándole los talones y no tenía ni tiempo para hablar con los druidas y hacer que le curaran las heridas. Dijo que tenía mucha prisa.\n\nPero sí me contó tu encuentro con el espíritu de Trey. Qué destino tan cruel para un caballero de la Mano de Plata. Ella intentaba ocultarlo, pero era evidente que la pérdida que ha sufrido le está desgarrando las entrañas."
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "Escolta a Arko'narin hasta el lugar en el que están Forjaluz y su equipo y protégela en la huida de la Guarida Sombría. Después, busca a Jessir Arcolunar en Frondavil para contarle lo que les ha ocurrido a sus amigos.",
       "title": "Rescate de Jaedenar",
@@ -174,6 +311,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -195,6 +350,11 @@
     },
     "frFR": {
       "description": "Bien que cela me peine énormément, il y a une chose que je dois faire d'abord : trouver l'épée de Trey Lightforge et m'échapper du Fort des ombres afin de prévenir mes supérieurs de ce qui se passe ici. Pouvez-vous m'aider, {name} ?\n\nNotre équipement n'est pas très loin, et vous avez déjà prouvé que vous pouvez survivre au chemin qui mène tout là haut.\n\nUne fois que nous nous serons échappés, j'irai à Darnassus, mais il faudra encore trouver mon amie Jessir près de la frontière d'Ashenvale. Elle devait nous retrouver au camp du Cercle d'émeraude près d'ici.\n\nQu'en dites-vous, {name} ? Acceptez-vous de m'aider encore ?",
+      "dialogue": {
+        "79929511155009a34238": "Vous avez l'air essoufflé, $n. Vous allez bien, ou quelque chose ne va pas ?",
+        "96d5af88cceb9416991b": "Bien que cela me peine énormément, il y a une chose que je dois faire d'abord : trouver l'épée de Trey Lightforge et m'échapper du Fort des ombres afin de prévenir mes supérieurs de ce qui se passe ici. Pouvez-vous m'aider, $N ?\n\nNotre équipement n'est pas très loin, et vous avez déjà prouvé que vous pouvez survivre au chemin qui mène tout là haut.\n\nUne fois que nous nous serons échappés, j'irai à Darnassus, mais il faudra encore trouver mon amie Jessir près de la frontière d'Ashenvale. Elle devait nous retrouver au camp du Cercle d'émeraude près d'ici.\n\nQu'en dites-vous, $N ? Acceptez-vous de m'aider encore ?",
+        "a9f623dc9e662d0699a7": "Vous êtes celui qui a aidé Arko à s'échapper ? Je suis si contente que vous m'ayez trouvée ! Elle est passée par ici il y a peu, en route vers Darnassus. Elle traînait Lightforge et ne se serait pas même arrêtée pour demander des soins aux druides. Elle a dit qu'elle était bien trop pressée. \n \n Mais elle m'a parlé de votre rencontre avec l'esprit de Trey. Quelle triste fin pour un chevalier de la Main d'Argent. Elle ne l'a pas montré, mais je sais que son coeur pleure toujours l'un de ses plus proches amis. "
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "Escorter Arko'narin à l’endroit où Lightforge et son équipement sont détenus, puis la protéger lors de l’évasion du Fort des ombres. Ensuite, aller trouver Jessir Moonbow dans Gangrebois pour lui apprendre ce qui est arrivé à ses amis.",
       "title": "Sauvetage à Jaedenar",
@@ -204,6 +364,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -225,6 +403,11 @@
     },
     "hrHR": {
       "description": "Ali, koliko god me to boljelo, najprije se mora učiniti jedno: moram pronaći Treyjev mač Lightforge i pobjeći iz Shadow Holda kako bih nadređenima rekla što se ovdje događa. Možeš li mi pomoći, {name}?\n\nNaša oprema nije daleko odavde, a već si dokazao da možeš preživjeti put do vrha.\n\nNakon što pobjegnemo, krenut ću u Darnassus ako ti možeš pronaći moju prijateljicu Jessir blizu granice Ashenvalea. Trebala nas je ondje dočekati u logoru Emerald Circlea.\n\nŠto kažeš, {name}? Možeš li mi ponovno pomoći?",
+      "dialogue": {
+        "79929511155009a34238": "Izgledaš zadihano, $n. Jesi li dobro ili nešto nije u redu?",
+        "96d5af88cceb9416991b": "No koliko god me boljelo, najprije moram nešto učiniti: pronaći Treyev mač Lightforge i pobjeći iz Shadow Holda kako bih nadređenima rekla što se ovdje događa. Možeš li mi pomoći, $N?$B$BNaša oprema nije daleko, a već si dokazao da možeš preživjeti put do vrha.$B$BNakon bijega uputit ću se u Darnassus ako možeš pronaći moju prijateljicu Jessir blizu granice Ashenvalea. Trebala nas je dočekati u obližnjem logoru Smaragdnog kruga.$B$BŠto kažeš, $N? Možeš li mi opet pomoći?",
+        "a9f623dc9e662d0699a7": "Ti si pomogao Arko pobjeći? Tako mi je drago što si me pronašao. Prošla je ovuda nedavno na putu u Darnassus. Nosila je Lightforge i nije odvojila ni vremena da je druidi izliječe. Rekla je da je previše hitno.$B$BAli ispričala mi je o vašem susretu s Treyevim duhom. Kakva strašna sudbina za viteza Srebrne ruke. Nije to pokazala, ali znam da je iznutra razdire pomisao na gubitak jednog od najbližih prijatelja."
+      },
       "eventObjectiveLabel": "Zaštiti Arko'narin pri izlasku iz Shadow Holda",
       "summary": "Otprati Arko'narin do mjesta gdje se čuvaju Lightforge i njezina oprema, a zatim je zaštiti dok bježite iz Shadow Holda. Nakon toga potraži Jessir Moonbow u Felwoodu i reci joj što se dogodilo njezinim prijateljima.",
       "title": "Spašavanje iz Jaedenara",
@@ -235,6 +418,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c0fc61d7f5cfe7721e919d16505e705aede3b36cf7966b3bcc5c98b03e4a5520"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -259,6 +457,11 @@
     },
     "itIT": {
       "description": "Ma, per quanto mi addolori, c'è una cosa che va fatta prima: devo trovare la spada di Trey, Lightforge, e fuggire da Shadow Hold per dire ai miei superiori cosa sta succedendo qui. Puoi aiutarmi, {name}?\n\nIl nostro equipaggiamento non è lontano e hai già dimostrato di poter sopravvivere al percorso verso la superficie.\n\nDopo la fuga andrò a Darnassus, se tu potrai trovare la mia amica Jessir vicino al confine con Ashenvale. Doveva incontrarci nell'accampamento del Circolo di Smeraldo nei paraggi.\n\nChe ne dici, {name}? Puoi aiutarmi ancora?",
+      "dialogue": {
+        "79929511155009a34238": "Sembri senza fiato, $N. Stai bene, o c'è qualcosa che non va?",
+        "96d5af88cceb9416991b": "Ma, per quanto mi addolori, c'è una cosa da fare prima di tutto: devo trovare Lightforge, la spada di Trey, e fuggire dall'Eremo delle Ombre per riferire ai miei superiori quello che succede qui. Puoi aiutarmi, $N?\n\nIl nostro equipaggiamento non è lontano da qui, e hai già dimostrato di saper sopravvivere al percorso fino in cima.\n\nDopo la fuga io andrò a Darnassus, se tu puoi trovare la mia amica Jessir vicino al confine con Ashenvale. Doveva incontrarci all'accampamento dell'Emerald Circle, lì vicino.\n\nChe ne dici, $N? Puoi aiutarmi ancora una volta?",
+        "a9f623dc9e662d0699a7": "Sei tu che hai aiutato Arko a fuggire? Sono così contenta che tu mi abbia trovata. È passata di qui non molto tempo fa, diretta a Darnassus. Aveva Lightforge con sé e non ha voluto nemmeno fermarsi a parlare con i druidi per farsi curare. Ha detto che era troppo urgente.\n\nMi ha raccontato però del tuo incontro con lo spirito di Trey. Che sorte terribile per un Cavaliere della Mano d'Argento. Non lo dava a vedere, ma so che dentro la sta straziando, il pensiero di aver perso uno dei suoi amici più cari."
+      },
       "eventObjectiveLabel": "Proteggi Arko'narin durante la fuga da Shadow Hold",
       "summary": "Scorta Arko'narin fino al luogo in cui si trovano Lightforge e il suo equipaggiamento, poi proteggila mentre fuggite da Shadow Hold. Infine cerca Jessir Moonbow a Felwood per dirle cosa è successo ai suoi amici.",
       "title": "Salvataggio da Jaedenar",
@@ -269,6 +472,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c0fc61d7f5cfe7721e919d16505e705aede3b36cf7966b3bcc5c98b03e4a5520"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -293,6 +514,11 @@
     },
     "koKR": {
       "description": "하지만 그 전에 꼭 하고 갈 일이 하나 있어요. 정말 괴로운 일이긴 하지만요. 트레이의 검, 라이트포지를 찾아 어둠의 요새에서 탈출한 뒤, 제 상관들에게 이곳 상황을 보고해야 해요. 절 좀 도와주시겠어요, {name}?\n\n그대는 벌써 저 위로 이르는 길까지 살아남을 수 있음을 증명해 보이셨잖아요. 제 방어구와 검은 여기서 멀지 않은 곳에 있어요.\n\n여기서 탈출하면 저는 다르나서스로 갈 테니 그대는 잿빛 골짜기 경계에 있는 제 친구 제시를 찾아가 주세요. 그 부근에 있는 에메랄드 의회 야영지에서 만나기로 했었거든요.\n\n어떠세요, {name}? 절 조금만 더 도와 주실 수 있겠어요?",
+      "dialogue": {
+        "79929511155009a34238": "피곤해 보이는군요, $n.  괜찮으세요, 아니면 뭔가 잘못되었나요?",
+        "96d5af88cceb9416991b": "하지만 그 전에 꼭 하고 갈 일이 하나 있어요. 정말 괴로운 일이긴 하지만요. 트레이의 검, 라이트포지를 찾아 어둠의 요새에서 탈출한 뒤, 제 상관들에게 이곳 상황을 보고해야 해요. 절 좀 도와주시겠어요, $n?\n\n그대는 벌써 저 위로 이르는 길까지 살아남을 수 있음을 증명해 보이셨잖아요. 제 방어구와 검은 여기서 멀지 않은 곳에 있어요.\n\n여기서 탈출하면 저는 다르나서스로 갈 테니 그대는 잿빛 골짜기 경계에 있는 제 친구 제시를 찾아가 주세요. 그 부근에 있는 에메랄드 의회 야영지에서 만나기로 했었거든요.\n\n어떠세요, $n? 절 조금만 더 도와 주실 수 있겠어요?",
+        "a9f623dc9e662d0699a7": "아르코나린의 탈출을 도운 것이 바로 그대였다고요? 절 찾아 오셔서 정말 다행이로군요. 얼마 전 아르코나린이 다르나서스로 가는 길에 잠시 들렀어요. 힘겹게 라이트포지를 들고서 드루이드에게 치유를 받을 틈도 없이 서둘러 떠나더군요. 굉장히 급한 일이라면서 말이에요.\n\n그래도 트레이의 영혼과 만난 일은 얘기해 주었어요. 은빛성기사단의 훌륭한 기사가 그렇게 끔찍한 종말을 맞이하다니... 아르코나린은 내색을 하지 않았지만, 전 알아요. 그녀가 마음 속으로 너무나 아파하고 있다는 걸. 가장 가까운 친구를 하나 잃었으니까요."
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "아르코나린을 그녀의 방어구와 라이트포지가 있는 곳까지 호위해 간 후, 함께 어둠의 요새에서 빠져나가야 합니다. 그런 다음, 악령의 숲에 있는 제시 문보우를 찾아가 그녀의 친구들에게 무슨 일이 있었는지 알려 주어야 합니다.",
       "title": "자에데나르 탈출",
@@ -302,6 +528,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -323,6 +567,11 @@
     },
     "plPL": {
       "description": "Ale choć bardzo mnie to boli, najpierw trzeba zrobić jedną rzecz: muszę znaleźć miecz Treya, Lightforge, i uciec z Shadow Hold, by powiedzieć przełożonym, co się tu dzieje. Pomożesz mi, {name}?\n\nNasz ekwipunek jest niedaleko, a ty już dowiodłeś, że zdołasz przeżyć drogę na górę.\n\nPo ucieczce udam się do Darnassus, jeśli ty znajdziesz moją przyjaciółkę Jessir przy granicy Ashenvale. Miała się z nami spotkać w pobliskim obozie Kręgu Cenariona.\n\nCo powiesz, {name}? Pomożesz mi jeszcze raz?",
+      "dialogue": {
+        "79929511155009a34238": "Wyglądasz na osobę zdyszaną, $n. Wszystko w porządku?",
+        "96d5af88cceb9416991b": "Choć sprawia mi to ból, najpierw muszę coś zrobić: znaleźć miecz Treya, Lightforge, i uciec z Shadow Hold, by powiedzieć przełożonym, co się tu dzieje. Pomożesz mi, $N?$B$BNasz ekwipunek jest niedaleko, a ty już udowadniasz, że potrafisz przetrwać drogę na szczyt.$B$BGdy uciekniemy, ruszę do Darnassus, jeśli znajdziesz moją przyjaciółkę Jessir przy granicy Ashenvale. Miała spotkać się z nami w pobliskim obozie Szmaragdowego Kręgu.$B$BCo powiesz, $N? Pomożesz mi znowu?",
+        "a9f623dc9e662d0699a7": "Czy to dzięki tobie Arko uciekła? Tak się cieszę, że udało ci się mnie znaleźć. Niedawno przechodziła tędy w drodze do Darnassus. Miała ze sobą Lightforge i nie poświęciła nawet czasu, by druidzi ją uleczyli. Powiedziała, że sprawa jest zbyt pilna.$B$BOpowiedziała mi jednak o waszym spotkaniu z duchem Treya. Cóż za straszny los rycerza Srebrnej Dłoni. Nie okazała tego, ale wiem, że myśl o utracie jednego z najbliższych przyjaciół rozdziera ją od środka."
+      },
       "eventObjectiveLabel": "Chroń Arko'narin podczas ucieczki z Shadow Hold",
       "summary": "Odprowadź Arko'narin do miejsca, gdzie znajdują się Lightforge i jej ekwipunek, a następnie chroń ją podczas ucieczki z Shadow Hold. Potem odszukaj Jessir Moonbow w Felwood i powiedz jej, co stało się z przyjaciółmi.",
       "title": "Ratunek z Jaedenar",
@@ -333,6 +582,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c0fc61d7f5cfe7721e919d16505e705aede3b36cf7966b3bcc5c98b03e4a5520"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -357,6 +621,11 @@
     },
     "ptBR": {
       "description": "Mas, por mais que me doa, há uma coisa que deve ser feita primeiro: tenho de encontrar a espada de Trey, Forjaleve, e escapar da Fortaleza do Concílio das Sombras para contar aos meus superiores o que está acontecendo aqui. Você pode me ajudar, {name}?\n\nNosso equipamento não está muito longe, e você já provou que pode sobreviver ao caminho até o topo.\n\nDepois que escaparmos, seguirei para Darnassus. Se você puder, procure minha amiga Jessir perto da fronteira de Vale Gris. Ela tinha ficado de nos encontrar no acampamento do Círculo Esmeraldino próximo dali.\n\nO que você me diz, {name}? Pode me ajudar novamente?",
+      "dialogue": {
+        "79929511155009a34238": "Você parece sem fôlego, $n. Está tudo bem ou há algo errado?",
+        "96d5af88cceb9416991b": "Mas, por mais que me doa, há uma coisa que deve ser feita primeiro: tenho de encontrar a espada de Trey, Forjaleve, e escapar da Fortaleza do Concílio das Sombras para contar aos meus superiores o que está acontecendo aqui. Você pode me ajudar, $N?\n\nNosso equipamento não está muito longe, e você já provou que pode sobreviver ao caminho até o topo.\n\nDepois que escaparmos, seguirei para Darnassus. Se você puder, procure minha amiga Jessir perto da fronteira de Vale Gris. Ela tinha ficado de nos encontrar no acampamento do Círculo Esmeraldino próximo dali.\n\nO que você me diz, $N? Pode me ajudar novamente?",
+        "a9f623dc9e662d0699a7": "Foi você que ajudou Arko a escapar? Estou tão feliz que você tenha me encontrado. Ela passou por aqui a caminho de Darnassus não faz muito tempo. Estava com Forjaleve e nem sequer procurou os druidas para ser curada. Ela disse que era muito urgente.\n\nMas me contou sobre o encontro que você teve com o espírito de Trey. Que terrível destino para um Cavaleiro do Punho de Prata. Ela não demonstrou, mas sei que a ideia de perder um dos seus amigos mais próximos deve estar dilacerando-a por dentro."
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "Escolte Arko'narin até onde Forjaleve e o equipamento dela estão, e então a proteja enquanto escapam da Fortaleza do Concílio das Sombras. Depois, procure Jessir Lunarco em Selva Maleva para informá-la sobre o que houve com os amigos dela.",
       "title": "Resgate de Jaedenar",
@@ -366,6 +635,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -387,6 +673,11 @@
     },
     "ruRU": {
       "description": "Но, как бы мне это ни было тяжко, в первую очередь мне нужно сделать вот что: найти меч Трея, именуемый Светлая Сталь и сбежать из Оплота Теней, чтобы рассказать моим командирам, что здесь творится. Ты поможешь мне, {name}?\n\nНаше снаряжение тут неподалеку, а ты уже показал, что сумеешь выбраться наверх.\n\nКогда мы выберемся отсюда, я направлюсь в Дарнасс, если ты сможешь найти мою подругу Джессир на границе с Ясеневым лесом. Она должна была встретить нас у лагеря Изумрудного Круга неподалеку отсюда.\n\nЧто скажешь, {name}? Поможешь мне еще раз?",
+      "dialogue": {
+        "79929511155009a34238": "Ты плохо выглядишь, $n. С тобой все в порядке?",
+        "96d5af88cceb9416991b": "Но, как бы мне это ни было тяжко, в первую очередь мне нужно сделать вот что: найти меч Трея, именуемый Светлая Сталь и сбежать из Оплота Теней, чтобы рассказать моим командирам, что здесь творится. Ты поможешь мне, $N?\n\nНаше снаряжение тут неподалеку, а ты уже показал, что сумеешь выбраться наверх.\n\nКогда мы выберемся отсюда, я направлюсь в Дарнасс, если ты сможешь найти мою подругу Джессир на границе с Ясеневым лесом. Она должна была встретить нас у лагеря Изумрудного Круга неподалеку отсюда.\n\nЧто скажешь, $N? Поможешь мне еще раз?",
+        "a9f623dc9e662d0699a7": "Ты тот, кто помог Арко сбежать? Я так рада, что ты меня нашел. Она проходила мимо не так давно по пути в Дарнасус. Она тащила Светлую Сталь на плече, и она не потратила время даже на то, чтобы поговорить с друидами о своем лечении. Она сказала что дело слишком срочное.\n\nНо она рассказала мне о вашей встрече с духом Трея. Что за ужасная судьба для Рыцаря Серебряной Длани. Она не показывала этого, но я знаю, что это терзает ее изнутри – мысль о потере одного из ближайших друзей."
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "Сопроводите Арко'нарин туда, где лежат меч Светлая Сталь и снаряжение Арконарин, и защитите ее при побеге из Оплота Теней. Потом разыщите Джессиру Лунную Радугу в Оскверненном лесу и расскажите ей, что случилось с ее друзьями.",
       "title": "Спасение из Джеденара",
@@ -396,6 +687,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -417,6 +726,11 @@
     },
     "svSE": {
       "description": "Men hur ont det än gör mig finns en sak som måste göras först: jag måste hitta Treys svärd Lightforge och fly från Shadow Hold för att berätta för mina överordnade vad som händer här. Kan du hjälpa mig, {name}?\n\nVår utrustning finns inte långt härifrån och du har redan visat att du kan överleva vägen upp.\n\nNär vi flytt beger jag mig till Darnassus om du kan hitta min vän Jessir nära Ashenvales gräns. Hon skulle möta oss vid Emerald Circles läger där i närheten.\n\nVad säger du, {name}? Kan du hjälpa mig igen?",
+      "dialogue": {
+        "79929511155009a34238": "Du ser andfådd ut, $n. Är du okej, eller är något fel?",
+        "96d5af88cceb9416991b": "Men hur ont det än gör finns det en sak jag måste göra först: hitta Treys svärd Lightforge och fly från Shadow Hold för att berätta för mina överordnade vad som händer här. Kan du hjälpa mig, $N?$B$BVår utrustning finns inte långt härifrån och du har redan visat att du kan överleva vägen upp.$B$BNär vi har flytt beger jag mig till Darnassus om du kan hitta min vän Jessir nära Ashenvales gräns. Hon skulle möta oss vid Smaragdcirkelns läger där i närheten.$B$BVad säger du, $N? Kan du hjälpa mig igen?",
+        "a9f623dc9e662d0699a7": "Var det du som hjälpte Arko att fly? Jag är så glad att du hittade mig. Hon passerade här för inte länge sedan på väg till Darnassus. Hon hade Lightforge med sig och tog sig inte ens tid att låta druiderna hela henne. Hon sa att det var alltför brådskande.$B$BMen hon berättade om ert möte med Treys ande. Vilket fruktansvärt öde för en riddare av Silverhanden. Hon visade det inte, men jag vet att tanken på att förlora en av sina närmaste vänner sliter sönder henne inombords."
+      },
       "eventObjectiveLabel": "Skydda Arko'narin på vägen ut ur Shadow Hold",
       "summary": "Eskortera Arko'narin till platsen där Lightforge och hennes utrustning hålls och skydda henne sedan under flykten från Shadow Hold. Sök därefter upp Jessir Moonbow i Felwood och berätta vad som hänt hennes vänner.",
       "title": "Räddning från Jaedenar",
@@ -427,6 +741,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c0fc61d7f5cfe7721e919d16505e705aede3b36cf7966b3bcc5c98b03e4a5520"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -451,6 +780,11 @@
     },
     "trTR": {
       "description": "Ama ne kadar canımı acıtsa da önce yapılması gereken bir şey var: Trey'in kılıcı Lightforge'u bulmalı ve burada olanları üstlerime anlatmak için Shadow Hold'dan kaçmalıyım. Bana yardım edebilir misin, {name}?\n\nTeçhizatımız buradan uzakta değil; yukarı giden yolda hayatta kalabileceğini zaten kanıtladın.\n\nKaçtıktan sonra ben Darnassus'a gideceğim; sen de Ashenvale sınırı yakınındaki dostum Jessir'i bulabilir misin? Oraya yakın Emerald Circle kampında bizimle buluşacaktı.\n\nNe dersin, {name}? Bana yine yardım eder misin?",
+      "dialogue": {
+        "79929511155009a34238": "Nefes nefese görünüyorsun, $n. İyi misin, yoksa bir sorun mu var?",
+        "96d5af88cceb9416991b": "Ama ne kadar acı verse de önce yapmam gereken bir şey var: Trey'in kılıcı Lightforge'u bulup burada olanları üstlerime anlatmak için Shadow Hold'dan kaçmalıyım. Bana yardım eder misin, $N?$B$BTeçhizatımız buradan uzak değil ve yukarı giden yolda hayatta kalabileceğini zaten kanıtladın.$B$BKaçtıktan sonra Darnassus'a gideceğim; sen de Ashenvale sınırı yakınındaki arkadaşım Jessir'i bulabilir misin? Yakınlardaki Zümrüt Çember kampında bizimle buluşacaktı.$B$BNe dersin, $N? Bana tekrar yardım eder misin?",
+        "a9f623dc9e662d0699a7": "Arko'nun kaçmasına yardım eden sen miydin? Beni bulduğuna çok sevindim. Kısa süre önce Darnassus yolunda buradan geçti. Lightforge yanındaydı ve druidlerin onu iyileştirmesine bile zaman ayırmadı. İşin çok acil olduğunu söyledi.$B$BAma Trey'in ruhuyla karşılaşmanızı anlattı. Gümüş El şövalyesi için ne korkunç bir kader. Belli etmedi ama en yakın arkadaşlarından birini kaybetme düşüncesinin onu içten içe parçaladığını biliyorum."
+      },
       "eventObjectiveLabel": "Shadow Hold'dan çıkarken Arko'narin'i koru",
       "summary": "Arko'narin'e Lightforge ile eşyalarının tutulduğu yere kadar eşlik et, ardından Shadow Hold'dan kaçarken onu koru. Sonrasında Felwood'daki Jessir Moonbow'u bulup arkadaşlarına ne olduğunu anlat.",
       "title": "Jaedenar'dan Kurtarma",
@@ -461,6 +795,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c0fc61d7f5cfe7721e919d16505e705aede3b36cf7966b3bcc5c98b03e4a5520"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -485,6 +834,11 @@
     },
     "ukUA": {
       "description": "Та, хоч як мені це боляче, спершу треба зробити одне: знайти меч Трея, Світлогарт, і втекти з оплоту Тіні, щоб розповісти начальству, що тут відбувається. Допоможеш мені, {name}?\n\nНаше спорядження недалеко, а ти вже довів, що можеш пережити шлях нагору.\n\nКоли втечемо, я вирушу в Дарнас, а ти знайди мою подругу Джессір біля кордону Ясенедолу. Вона мала зустріти нас у таборі Смарагдового Кола неподалік.\n\nЩо скажеш, {name}? Допоможеш мені ще раз?",
+      "dialogue": {
+        "79929511155009a34238": "Виглядаєш захекано, $n. Усе гаразд чи щось сталося?",
+        "96d5af88cceb9416991b": "Хоча мені й боляче, спершу я мушу дещо зробити: знайти меч Трея Lightforge і втекти з Shadow Hold, щоб розповісти начальству, що тут відбувається. Допоможеш мені, $N?$B$BНаше спорядження недалеко, а ти вже довів, що можеш пережити шлях нагору.$B$BПісля втечі я вирушу до Дарнаса, а ти знайди мою подругу Джессір біля кордону Ashenvale. Вона мала зустріти нас у таборі Смарагдового кола неподалік.$B$BЩо скажеш, $N? Допоможеш мені знову?",
+        "a9f623dc9e662d0699a7": "Це ти допоміг Арко втекти? Я така рада, що ти мене знайшов. Вона проходила тут нещодавно дорогою до Дарнаса. Вона несла Lightforge і навіть не затрималася, щоб друїди її зцілили. Сказала, що справа надто термінова.$B$BАле вона розповіла про вашу зустріч із духом Трея. Яка жахлива доля для лицаря Срібної Руки. Вона цього не показала, але я знаю, що думка про втрату одного з найближчих друзів розриває її зсередини."
+      },
       "eventObjectiveLabel": "Захищайте Арко'нарін під час втечі з оплоту Тіні",
       "summary": "Проведіть Арко'нарін до місця, де знаходиться Світлогарт та її спорядження, а потім захищайте її під час втечі з оплоту Тіні. Після цього знайдіть Лукомісяць у Скверноліссі, щоб повідомити їй про те, що сталося з її друзями.",
       "title": "Порятунок з Джеденара",
@@ -495,6 +849,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c0fc61d7f5cfe7721e919d16505e705aede3b36cf7966b3bcc5c98b03e4a5520"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -521,6 +890,11 @@
     },
     "zhCN": {
       "description": "虽然我承受了很大的痛苦，但是有件事情我们必须先做好：我要找到特雷·莱弗治，然后从暗影堡逃出去，把这里所发生的一切都报告给我们的上司。你能帮我吗，{name}？\n\n我的装备就在离这里不远的地方，而且你已经证明了你的实力。\n\n在我们逃脱之后，我会去达纳苏斯，请你到灰谷的边界地带去找到杰希尔。她应该在那里的翡翠议会营地中。\n\n你认为怎么样，{name}？你能再帮我一次吗？",
+      "dialogue": {
+        "79929511155009a34238": "你看起来气喘吁吁的，$N。你还好吗?",
+        "96d5af88cceb9416991b": "虽然我承受了很大的痛苦，但是有件事情我们必须先做好：我要找到特雷·莱弗治，然后从暗影堡逃出去，把这里所发生的一切都报告给我们的上司。你能帮我吗，$N？\n\n我的装备就在离这里不远的地方，而且你已经证明了你的实力。\n\n在我们逃脱之后，我会去达纳苏斯，请你到灰谷的边界地带去找到杰希尔。她应该在那里的翡翠议会营地中。\n\n你认为怎么样，$n？你能再帮我一次吗？",
+        "a9f623dc9e662d0699a7": "你帮助亚科逃了出来?很高兴你找到我了。她不久之前来过我这里，然後就去达纳苏斯了。她之前是和莱弗治在一起，当时都来不及让德鲁伊进行治疗。她说当时情况太紧急了。\n\n但是她确实告诉我你遇到了特雷的灵魂。白银之手的骑士遇到了多麽恐怖的命运。她没有具体说那件事情，但是我知道这让她承受了很大的痛苦，因为她失去了她最好的朋友之一。\n"
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "护送亚科纳琳到莱弗治和她的装备所在的地方，然后保护她逃离暗影堡。之后，在费伍德森林找杰希尔·月弓，并告诉她刚才发生的事情。",
       "title": "逃出加德纳尔",
@@ -530,6 +904,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -551,6 +943,11 @@
     },
     "zhTW": {
       "description": "雖然我承受了很大的痛苦，但是有件事情我們必須先做好：我要找到特雷·萊弗治，然後從暗影堡逃出去，把這裡所發生的一切都報告給我們的上司。你能幫我嗎，{name}？\n\n我的裝備就在離這裡不遠的地方，而且你已經證明了你的實力。\n\n在我們逃脫之後，我會去達納蘇斯，請你到梣谷的邊界地帶去找到傑希爾。她應該在那裡的翡翠議會營地中。\n\n你認為怎麼樣，{name}？你能再幫我一次嗎？",
+      "dialogue": {
+        "79929511155009a34238": "你看起來氣喘吁吁的，$N。你還好嗎?",
+        "96d5af88cceb9416991b": "雖然我承受了很大的痛苦，但是有件事情我們必須先做好：我要找到特雷·萊弗治，然後從暗影堡逃出去，把這裡所發生的一切都報告給我們的上司。你能幫我嗎，$N？\n\n我的裝備就在離這裡不遠的地方，而且你已經證明了你的實力。\n\n在我們逃脫之後，我會去達納蘇斯，請你到灰穀的邊界地帶去找到傑希爾。她應該在那裡的翡翠議會營地中。\n\n你認為怎麼樣，$n？你能再幫我一次嗎？",
+        "a9f623dc9e662d0699a7": "你幫助亞科逃了出來?很高興你找到我了。她不久之前來過我這裏，然後就去達納蘇斯了。她之前是和萊弗治在一起，當時都來不及讓德魯伊進行治療。她說當時情況太緊急了。\n\n但是她確實告訴我你遇到了特雷的靈魂。白銀之手的騎士遇到了多麼恐怖的命運。她沒有具體說那件事情，但是我知道這讓她承受了很大的痛苦，因爲她失去了她最好的朋友之一。\n"
+      },
       "eventObjectiveLabel": "Protect Arko'narin out of Shadow Hold",
       "summary": "護送亞科納琳到萊弗治和她的裝備所在的地方，然後保護她逃離暗影堡。之後，在費伍德森林找傑希爾·月弓，並告訴她剛才發生的事情。",
       "title": "逃出加德納爾",
@@ -560,6 +957,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.79929511155009a34238": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.96d5af88cceb9416991b": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.a9f623dc9e662d0699a7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

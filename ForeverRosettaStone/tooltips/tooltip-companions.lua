@@ -29,7 +29,12 @@ function Addon:GetTooltipComponents()
 end
 
 function Addon:UpdateTooltipComponents()
-    for _, component in ipairs(components) do component.Update() end
+    -- Resolve the NPC reader first so its row tooltips never show on the opening frame.
+    local interaction = componentByKind.questInteraction
+    if interaction then interaction.Update() end
+    for _, component in ipairs(components) do
+        if component ~= interaction then component.Update() end
+    end
 end
 
 function Addon:GetTooltipPlacementPolicy(source)

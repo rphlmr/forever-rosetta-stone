@@ -12,9 +12,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "5ed6489fc321ee1fb76d": {
+      "lineId": "q:1016:accept",
+      "npcId": 3885,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "895544505bcc7f83dfbf": {
+      "lineId": "q:1016:progress",
+      "npcId": 3885,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "e84b724ccd34f2a962f9": {
+      "lineId": "q:1016:complete",
+      "npcId": 3885,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vezmi tenhle věštecký svitek, dokáže určit stvořitele těch elementálů. Ale budeš potřebovat něco od nich jako reagencii, aby se soustředilo kouzlo svitku, jejich nátepníky by se k tomu hodily.\n\nPár neporušených nátepníků od těch tvorů by mělo stačit. Ostatní nátepníky jsou pro naše účely k ničemu, ale můžou mít cenu pro obchodníka, pokud je chceš prodat. Jakmile budeš mít neporušené nátepníky, zkus svitek použít. Vrať se ke mně s výsledky a půjdeme dál.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Vezmi tento věštecký svitek, dokáže určit tvůrce těchto elementálů. K soustředění jeho magie však budeš potřebovat něco z nich jako činidlo; jejich náramky budou stačit.$B$BMělo by stačit několik neporušených náramků. Ostatní jsou pro naše účely k ničemu, ale pokud je prodáš, obchodník za ně možná něco dá. Až budeš mít neporušené náramky, zkus svitek použít. Vrať se s výsledky a budeme pokračovat.",
+        "895544505bcc7f83dfbf": "Protože musíš náramky zničit, abys elementály zabil, bude asi obtížné najít ty konkrétní, které obsahují informace potřebné pro věštecký svitek. Můžeš je vyměnit s ostatními, nebo už snad máš vyvěštěný papír?",
+        "e84b724ccd34f2a962f9": "Dobrá práce, $N, tohle by nám mělo dát informace potřebné k odhalení viníka. Co bys řekl na odstranění mága, který plní naše tůně zkaženými elementály? Už samotná zkáza Ashenvale a dalších míst mi obrací žaludek; představa čaroděje, který ji vědomě prohlubuje, je ještě horší. Přinutíme ho zaplatit."
+      },
       "summary": "Nasbírej 5× Intact Elemental Bracers a použij na ně Divining Scroll. Poté dones Divined Scroll sentinelce Velene Starstrike do Silverwind Refuge.",
       "title": "Elementální náramky",
       "translationMetadata": {
@@ -24,6 +52,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "Tag denne spådomsskriftrulle; den kan bestemme, hvem der skabte disse elementarer. Men du skal bruge noget fra dem som reagens til at fokusere rullens magi. Deres armværn burde egne sig fint.\n\nEt par intakte armværn fra væsnerne burde være nok. De andre armværn er ubrugelige til vores formål, men de kan måske være noget værd for en købmand, hvis du vil sælge dem. Når du har de intakte armværn, så forsøg at bruge skriftrullen. Vend tilbage til mig med resultaterne, så fortsætter vi derfra.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Tag denne spådomsrulle; den kan fastslå, hvem der skabte elementarerne. Men du skal bruge noget fra dem som reagens til at fokusere rullens magi; deres armbeskyttere burde duge.$B$BNogle få intakte armbeskyttere burde være nok. De andre er ubrugelige til vores formål, men en købmand vil måske betale for dem. Når du har de intakte armbeskyttere, så prøv rullen. Vend tilbage med resultatet, så fortsætter vi derfra.",
+        "895544505bcc7f83dfbf": "Da du må ødelægge armbeskytterne for at dræbe elementarerne, bliver det nok svært at finde netop dem, der indeholder de oplysninger, spådomsrullen behøver. Du kan bytte armbeskyttere med andre for at få de rigtige, eller har du måske allerede det fremmanede papir?",
+        "e84b724ccd34f2a962f9": "Godt klaret, $N, dette burde give os de oplysninger, vi behøver for at finde den skyldige. Hvad siger du til at skaffe magikeren, der fylder vores bassiner med fordærvede elementarer, af vejen? Fordærvelsen af Ashenvale og områderne omkring gør mig allerede dårlig; at en troldmand aktivt forsøger at ødelægge det yderligere, gør mig endnu mere syg. Han skal betale."
+      },
       "summary": "Saml 5 Intact Elemental Bracers, og brug Divining Scroll på dem. Bring derefter Divined Scroll til vagtpost Velene Starstrike ved Silverwind Refuge.",
       "title": "Elementære armskinner",
       "translationMetadata": {
@@ -53,6 +101,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dba407204f3714d5ddf3ac4c16a6e372415d9efe6171091eb822f5fa2364100c"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -71,6 +134,11 @@
     },
     "deDE": {
       "description": "Nehmt diese Rolle der Bestimmung; sie kann den Schöpfer dieser Elementare bestimmen. Aber Ihr werdet etwas von ihnen benötigen, um es als Reagenz zum Fokussieren der Magie dieser Rolle zu verwenden; ihre Armschienen sollten hervorragend dafür geeignet sein.\n\nEin paar wenige intakte Armschienen dieser Kreaturen dürften reichen. Die anderen Armschienen werden für unsere Zwecke nutzlos sein, aber sie könnten einem Händler etwas wert sein, wenn Ihr sie verkaufen wollt. Nachdem Ihr die intakten Armschienen habt, versucht die Rolle zu verwenden. Kehrt mit den Ergebnissen zu mir zurück und dann werden wir weitersehen.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Nehmt diese Rolle der Bestimmung; sie kann den Schöpfer dieser Elementare bestimmen. Aber Ihr werdet etwas von ihnen benötigen, um es als Reagenz zum Fokussieren der Magie dieser Rolle zu verwenden; ihre Armschienen sollten hervorragend dafür geeignet sein.\n\nEin paar wenige intakte Armschienen dieser Kreaturen dürften reichen. Die anderen Armschienen werden für unsere Zwecke nutzlos sein, aber sie könnten einem Händler etwas wert sein, wenn Ihr sie verkaufen wollt. Nachdem Ihr die intakten Armschienen habt, versucht die Rolle zu verwenden. Kehrt mit den Ergebnissen zu mir zurück und dann werden wir weitersehen.",
+        "895544505bcc7f83dfbf": "Da Ihr die Armschienen zerstören müsst, um die Elementare zu töten, wird es möglicherweise schwierig sein, genau jene zu finden, die die Informationen enthalten, die von der Rolle der Bestimmung benötigt werden. Ihr könnt Armschienen auch mit anderen tauschen, um die zu erhalten, die Ihr benötigt, aber vielleicht habt Ihr das bestimmte Dokument ja auch bereits?",
+        "e84b724ccd34f2a962f9": "Gut gemacht, $N, das sollte uns die Informationen liefern, die wir brauchen, um den Schuldigen zu entlarven. Hättet Ihr nicht Lust, den Magier auszuschalten, der unsere Teiche mit verderbten Elementaren überschwemmt? Die Verderbnis von Ashenvale und darüber hinaus dreht mir ja bereits den Magen um. Dass ein Hexer versucht, es noch weiter zu zerstören, macht mich ganz krank. Wir sollten ihn dafür bezahlen lassen. "
+      },
       "summary": "Sammelt 5 intakte Elementararmschienen und wendet die Rolle der Bestimmung darauf an. Bringt danach der Schildwache Velene Starstrike in der Silberwindzuflucht die Rolle der Bestimmung.",
       "title": "Elementararmschienen",
       "translationMetadata": {
@@ -79,6 +147,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -95,6 +181,11 @@
     },
     "enUS": {
       "description": "Take this divining scroll--it can determine the creator of these elementals. But you will need something from them to use as a reagent to focus scroll's magic--their bracers should do nicely.\n\nA few intact bracers from the creatures should be enough. The other bracers will be useless for our purposes, but they may be worth something to a merchant if you wish to sell them. Once you have the intact bracers attempt to use the scroll. Return to me with the results and we shall proceed from there.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Take this divining scroll--it can determine the creator of these elementals. But you will need something from them to use as a reagent to focus scroll's magic--their bracers should do nicely.$B$BA few intact bracers from the creatures should be enough. The other bracers will be useless for our purposes, but they may be worth something to a merchant if you wish to sell them. Once you have the intact bracers attempt to use the scroll. Return to me with the results and we shall proceed from there.",
+        "895544505bcc7f83dfbf": "Since you must destroy the bracers to kill the elementals, it will probably be difficult to find the specific ones that contain the information the divining scroll needs. You can trade bracers with others in order to obtain the ones you need, or perhaps you have the divined paper already?",
+        "e84b724ccd34f2a962f9": "Well done, $N, this should give us the information we need to have the culprit discovered. How would you feel about taking out the mage who fills our pools with corrupt elementals? The corruption of Ashenvale and beyond makes my stomach turn on its own--to have a wizard actively attempting to destroy it further sickens me to no end. We shall make him pay."
+      },
       "summary": "Collect 5 Intact Elemental Bracers and use the Divining Scroll on them. Afterwards, bring the Divined Scroll to Sentinel Velene Starstrike at the Silverwind Refuge.",
       "title": "Elemental Bracers",
       "translationMetadata": {
@@ -103,6 +194,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -120,6 +229,11 @@
     },
     "esES": {
       "description": "Toma este pergamino de adivinación, puede revelar al creador de estos elementales. Pero necesitarás algo suyo que usar de componente para concentrar la magia del pergamino, sus brazales deberían ir muy bien.\n\nUnos pocos brazales intactos de esas criaturas deberían bastar. Los otros brazales no servirían para lo que nos proponemos, aunque puede que les saques algo si se los vendes a un comerciante. Cuando consigas los brazales intactos, intenta usar el pergamino. Vuelve aquí con los resultados y ya veremos cómo proseguimos.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Toma este pergamino de adivinación, puede revelar al creador de estos elementales. Pero necesitarás algo suyo que usar de componente para concentrar la magia del pergamino, sus brazales deberían ir muy bien.\n\nUnos pocos brazales intactos de esas criaturas deberían bastar. Los otros brazales no servirían para lo que nos proponemos, aunque puede que les saques algo si se los vendes a un comerciante. Cuando consigas los brazales intactos, intenta usar el pergamino. Vuelve aquí con los resultados y ya veremos cómo proseguimos.",
+        "895544505bcc7f83dfbf": "Como debes destruir los brazales para matar a los elementales, tal vez sea difícil encontrar los que contienen la información que necesita el pergamino de adivinación. Puedes comerciar brazales con otros para obtener los que necesitas, ¿o ya tienes el papel descifrado?",
+        "e84b724ccd34f2a962f9": "Bien hecho, $N, esto debería brindarnos la información que necesitamos para descubrir al culpable. ¿Qué te parecería eliminar al mago que llena nuestras pozas con elementales corruptos? La corrupción de Vallefresno y alrededores me provoca náuseas. Y que un mago intente extender la corrupción aún más me resulta insoportable. Haremos que pague."
+      },
       "summary": "Reúne 5 brazales elementales intactos y aplícales el pergamino de adivinación. A continuación, llévale el pergamino adivinado a la centinela Velene Estrella en el Refugio Brisa de Plata.",
       "title": "Brazales elementales",
       "translationMetadata": {
@@ -128,6 +242,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -144,6 +276,11 @@
     },
     "esMX": {
       "description": "Lleva este pergamino de adivinación, tal vez revele al creador de los elementales. Pero necesitarás algo de ellos para usar como componente y concentrar la magia del pergamino. Sus brazales deberían servir.\n\nCon unos brazales intactos de las criaturas debería bastar. Los demás brazales no servirán a nuestros propósitos, pero tal vez puedas vendérselos a un mercader. Cuando tengas los brazales intactos, usa el pergamino. Vuelve a verme con los resultados y luego continuaremos.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Lleva este pergamino de adivinación, tal vez revele al creador de los elementales. Pero necesitarás algo de ellos para usar como componente y concentrar la magia del pergamino. Sus brazales deberían servir.\n\nCon unos brazales intactos de las criaturas debería bastar. Los demás brazales no servirán a nuestros propósitos, pero tal vez puedas vendérselos a un mercader. Cuando tengas los brazales intactos, usa el pergamino. Vuelve a verme con los resultados y luego continuaremos.",
+        "895544505bcc7f83dfbf": "Como debes destruir los brazales para matar a los elementales, tal vez sea difícil encontrar los que contienen la información que necesita el pergamino de adivinación. Puedes comerciar brazales con otros para obtener los que necesitas, ¿o ya tienes el papel descifrado?",
+        "e84b724ccd34f2a962f9": "Bien hecho, $N, esto debería brindarnos la información que necesitamos para descubrir al culpable. ¿Qué te parecería eliminar al mago que llena nuestras pozas con elementales corruptos? La corrupción de Vallefresno y alrededores me provoca náuseas. Y que un mago intente extender la corrupción aún más me resulta insoportable. Haremos que pague."
+      },
       "summary": "Recoge 5 brazales elementales intactos y usa el pergamino de adivinación sobre ellos. Después, llévaselo a la centinela Velene Golpe Estelar en el Refugio Brisa de Plata.",
       "title": "Brazales elementales",
       "translationMetadata": {
@@ -152,6 +289,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -168,6 +323,11 @@
     },
     "frFR": {
       "description": "Prenez ce Parchemin de divination, il pourra nous apprendre qui a créé ces élémentaires. Mais vous aurez besoin d'une chose qui leur appartienne et que l’on pourra utiliser comme réactif pour focaliser la magie du parchemin ; leurs bracelets, par exemple, devraient faire l’affaire.\n\nQuelques bracelets intacts suffiront. Les autres bracelets ne serviront pas nos desseins mais pourront être revendus auprès d’un marchand. Une fois que vous aurez les bracelets intacts, essayez d’utiliser le Parchemin. Revenez avec le résultat de l'expérience et nous verrons quelle suite donner aux événements.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Prenez ce Parchemin de divination, il pourra nous apprendre qui a créé ces élémentaires. Mais vous aurez besoin d'une chose qui leur appartienne et que l’on pourra utiliser comme réactif pour focaliser la magie du parchemin ; leurs bracelets, par exemple, devraient faire l’affaire.\n\nQuelques bracelets intacts suffiront. Les autres bracelets ne serviront pas nos desseins mais pourront être revendus auprès d’un marchand. Une fois que vous aurez les bracelets intacts, essayez d’utiliser le Parchemin. Revenez avec le résultat de l'expérience et nous verrons quelle suite donner aux événements.",
+        "895544505bcc7f83dfbf": "Comme vous devez détruire les Bracelets pour tuer les Élémentaires, il ne sera pas facile de trouver ceux qui contiennent les informations dont le Parchemin de divination a besoin. Vous pouvez échanger les bracelets avec d'autres personnes pour obtenir ceux qu'il vous manque, à moins que vous n'ayez déjà le parchemin ?",
+        "e84b724ccd34f2a962f9": "Bon travail, $N, cela devrait nous permettre d'obtenir les informations dont nous avons besoin pour démasquer le coupable. Que pensez-vous de nous débarrasser du mage qui a infesté nos étangs avec des élémentaires corrompus ? La corruption qui afflige la région d'Ashenvale me retourne l'estomac ; savoir qu'un sorcier tente de la détruire est un véritable supplice. Nous devons le faire payer. "
+      },
       "summary": "Récolter 5 Bracelets élémentaires intacts et utiliser le Parchemin de divination sur eux. Ensuite, apporter le Parchemin de divination à la Sentinelle Velene Starstrike au Refuge de Vent-argent.",
       "title": "Les bracelets d'élémentaire",
       "translationMetadata": {
@@ -176,6 +336,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -192,6 +370,11 @@
     },
     "hrHR": {
       "description": "Uzmi ovaj svitak za proricanje; njime se može otkriti tko je stvorio te elementale. Ali trebat će ti nešto njihovo kao reagens za usmjeravanje magije svitka. Njihove bi narukvice trebale poslužiti.\n\nNekoliko neoštećenih narukvica tih stvorenja trebalo bi biti dovoljno. Ostale nam neće biti od koristi, ali trgovcu bi mogle nešto vrijediti ako ih poželiš prodati. Kad prikupiš neoštećene narukvice, pokušaj upotrijebiti svitak. Vrati mi se s rezultatima pa ćemo odlučiti kako dalje.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Uzmi ovaj proročki svitak — može odrediti tvorca tih elementala. No trebat će ti nešto njihovo kao reagens za usmjeravanje magije svitka; njihove narukvice trebale bi poslužiti.$B$BNekoliko neoštećenih narukvica trebalo bi biti dovoljno. Ostale su beskorisne za našu svrhu, ali trgovac bi ih možda kupio. Kad prikupiš neoštećene narukvice, pokušaj upotrijebiti svitak. Vrati mi se s rezultatima pa ćemo nastaviti.",
+        "895544505bcc7f83dfbf": "Budući da moraš uništiti narukvice kako bi ubio elementale, vjerojatno će biti teško pronaći baš one koje sadrže podatke potrebne svitku. Možeš razmjenjivati narukvice s drugima kako bi dobio potrebne, ili možda već imaš prorečeni papir?",
+        "e84b724ccd34f2a962f9": "Bravo, $N, ovo bi nam trebalo dati podatke potrebne da pronađemo krivca. Kako ti se čini ukloniti maga koji puni naše bazene iskvarenim elementalima? Sama pokvarenost Ashenvalea i okolice okreće mi želudac, a pomisao da je čarobnjak namjerno pogoršava još je gora. Platit će za to."
+      },
       "summary": "Prikupi 5 neoštećenih narukvica elementala i upotrijebi na njima svitak za proricanje. Zatim odnesi svitak s otkrivenim podacima stražarici Velene Starstrike u Silverwind Refugeu.",
       "title": "Narukvice elementala",
       "translationMetadata": {
@@ -201,6 +384,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dba407204f3714d5ddf3ac4c16a6e372415d9efe6171091eb822f5fa2364100c"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -219,6 +417,11 @@
     },
     "itIT": {
       "description": "Prendi questa pergamena divinatoria: può determinare chi ha creato questi elementali. Ma ti servirà qualcosa che provenga da loro, da usare come reagente per concentrare la magia della pergamena: i loro bracciali dovrebbero andare benissimo.\n\nDovrebbero bastare alcuni bracciali intatti recuperati da quelle creature. Gli altri saranno inutili per i nostri scopi, ma potrebbero valere qualcosa per un mercante, se vorrai venderli. Una volta ottenuti i bracciali intatti, prova a usare la pergamena. Torna da me con i risultati e decideremo come procedere.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Prendi questa pergamena divinatoria — può rivelare chi ha creato questi elementali. Ma ti servirà qualcosa che appartenga a loro, da usare come reagente per concentrare la magia della pergamena — i loro bracciali dovrebbero andare benissimo.\n\nQualche bracciale intatto preso dalle creature dovrebbe bastare. Gli altri bracciali non ci serviranno, ma forse per un mercante varranno qualcosa, se vuoi venderli. Quando hai i bracciali intatti, prova a usare la pergamena. Torna da me con il risultato e vedremo come procedere.",
+        "895544505bcc7f83dfbf": "Visto che per uccidere gli elementali devi distruggere i loro bracciali, sarà probabilmente difficile trovare proprio quelli che contengono le informazioni di cui la pergamena divinatoria ha bisogno. Puoi scambiare bracciali con altri per ottenere quelli che ti servono, o forse hai già il foglio con il responso?",
+        "e84b724ccd34f2a962f9": "Ben fatto, $N, questo dovrebbe darci le informazioni che ci servono per scoprire il colpevole. Che ne diresti di eliminare il mago che riempie i nostri specchi d'acqua di elementali corrotti? La corruzione di Ashenvale e di altre terre mi rivolta lo stomaco già di suo — sapere che un mago fa di tutto per devastare ancora di più queste terre mi disgusta oltre ogni dire. Gliela faremo pagare."
+      },
       "summary": "Raccogli 5 bracciali elementali intatti e usa su di essi la pergamena divinatoria. Poi porta la pergamena risultante alla sentinella Velene Starstrike al Silverwind Refuge.",
       "title": "Bracciali elementali",
       "translationMetadata": {
@@ -228,6 +431,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dba407204f3714d5ddf3ac4c16a6e372415d9efe6171091eb822f5fa2364100c"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -246,6 +467,11 @@
     },
     "koKR": {
       "description": "이 예언의 두루마리를 받으십시오. 이것으로 저 정령들을 만든 게 누군지 알아낼 수 있을 겁니다. 단, 정령들에게서 두루마리의 마법을 강화할 재료를 빼앗아 와야 합니다. 아마 그들의 족쇄 정도면 쓸만할 겁니다.\n\n온전한 족쇄 몇 개면 충분하죠. 그 외의 다른 족쇄는 이 임무에는 쓸모가 없겠지만 상인들이 관심을 보일 만한 물건들입니다. 팔 생각이 있다면 모아 오셔도 좋겠죠. 온전한 족쇄를 손에 넣으면 두루마리를 사용해 보십시오. 그 결과를 가지고 저를 다시 찾아오시면 이후의 일을 계속 진척시켜 나가도록 하죠.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "이 예언의 두루마리를 받으십시오. 이것으로 저 정령들을 만든 게 누군지 알아낼 수 있을 겁니다. 단, 정령들에게서 두루마리의 마법을 강화할 재료를 빼앗아 와야 합니다. 아마 그들의 족쇄 정도면 쓸만할 겁니다.\n\n온전한 족쇄 몇 개면 충분하죠. 그 외의 다른 족쇄는 이 임무에는 쓸모가 없겠지만 상인들이 관심을 보일 만한 물건들입니다. 팔 생각이 있다면 모아 오셔도 좋겠죠. 온전한 족쇄를 손에 넣으면 두루마리를 사용해 보십시오. 그 결과를 가지고 저를 다시 찾아오시면 이후의 일을 계속 진척시켜 나가도록 하죠.",
+        "895544505bcc7f83dfbf": "예언의 두루마리를 예언된 두루마리로 바꿀 수 있는 온전한 족쇄를 찾기는 쉽지 않을 겁니다. 정령들을 처치할 때 족쇄가 쉽게 부서지기 때문이죠. 다른 이와 족쇄를 교환해서 필요한 족쇄를 모을 수도 있습니다만, 혹시 이미 두루마리의 비밀을 밝혀낸 것인가요?",
+        "e84b724ccd34f2a962f9": "훌륭합니다. 이거라면 필요한 정보를 얻을 수 있을 겁니다. 우리의 샘을 타락한 정령들로 더럽히고 있는 마법사를 처단하는 것에 대해 어떻게 생각하십니까? 저는 잿빛 골짜기와 그 너머까지 퍼진 타락을 생각하면 속이 다 뒤틀릴 지경입니다. 고작 마법사 하나가 활개를 치며 우리의 땅을 파괴하려 하다니 참을 수가 없군요. 반드시 대가를 치르게 하고야 말 겁니다."
+      },
       "summary": "온전한 정령의 족쇄 5개를 모아서 예언의 두루마리를 사용한 후, 실바람 산장에 있는 파수꾼 벨레네 스타스트라이크에게 예언된 두루마리를 가져가야 합니다.",
       "title": "정령의 족쇄",
       "translationMetadata": {
@@ -254,6 +480,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -270,6 +514,11 @@
     },
     "plPL": {
       "description": "Weź ten zwój wróżenia. Może wskazać twórcę tych żywiołaków. Potrzebujesz jednak czegoś z nich jako odczynnika skupiającego magię zwoju. Ich karwasze powinny się nadać.\n\nKilka nienaruszonych karwaszy powinno wystarczyć. Inne są dla nas bezużyteczne, ale może kupiec za nie zapłaci, jeśli zechcesz je sprzedać. Gdy zdobędziesz nienaruszone karwasze, spróbuj użyć zwoju. Wróć z wynikami, a zdecydujemy, co dalej.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Weź ten zwój wróżbiarski — potrafi ustalić, kto stworzył żywiołaki. Potrzebujesz jednak czegoś od nich jako odczynnika skupiającego magię zwoju; ich karwasze powinny się nadać.$B$BKilka nienaruszonych karwaszy powinno wystarczyć. Pozostałe nie przydadzą się nam, ale kupiec może za nie zapłacić. Gdy zdobędziesz nienaruszone karwasze, spróbuj użyć zwoju. Wróć z wynikami, a zdecydujemy, co dalej.",
+        "895544505bcc7f83dfbf": "Ponieważ musisz zniszczyć karwasze, by zabić żywiołaki, prawdopodobnie trudno będzie znaleźć te, które zawierają informacje potrzebne zwojowi. Możesz wymienić się karwaszami z innymi, aby zdobyć właściwe, albo może masz już zapisany przez wróżbę papier?",
+        "e84b724ccd34f2a962f9": "Dobra robota, $N. To powinno dać nam informacje potrzebne do odkrycia sprawcy. Co powiesz na pozbycie się maga, który zapełnia nasze sadzawki skażonymi żywiołakami? Sama myśl o skażeniu Ashenvale i okolic przyprawia mnie o mdłości, a czarodziej aktywnie próbujący je pogłębić budzi jeszcze większy wstręt. Zapłaci za to."
+      },
       "summary": "Zbierz 5 nienaruszonych karwaszy żywiołaków i użyj na nich zwoju wróżenia. Następnie przynieś odczytany zwój strażniczce Velene Starstrike w schronieniu Silverwind.",
       "title": "Karwasze żywiołaków",
       "translationMetadata": {
@@ -279,6 +528,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dba407204f3714d5ddf3ac4c16a6e372415d9efe6171091eb822f5fa2364100c"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -297,6 +561,11 @@
     },
     "ptBR": {
       "description": "Tome este pergaminho divinatório, ele vai identificar quem foi o criador dos elementais. Mas você vai precisar de alguma coisa deles para usar como reagente e canalizar a magia do pergaminho: as braçadeiras devem servir.\n\nAlgumas braçadeiras intactas já vão bastar. As mais desgastadas não servirão aos nossos propósitos, mas talvez você consiga vendê-las para os comerciantes por aí. Depois que estiver com as braçadeiras intactas, é só usar o pergaminho. Volte com os resultados e nós daremos prosseguimento à missão.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Tome este pergaminho divinatório, ele vai identificar quem foi o criador dos elementais. Mas você vai precisar de alguma coisa deles para usar como reagente e canalizar a magia do pergaminho: as braçadeiras devem servir.\n\nAlgumas braçadeiras intactas já vão bastar. As mais desgastadas não servirão aos nossos propósitos, mas talvez você consiga vendê-las para os comerciantes por aí. Depois que estiver com as braçadeiras intactas, é só usar o pergaminho. Volte com os resultados e nós daremos prosseguimento à missão.",
+        "895544505bcc7f83dfbf": "Considerando que só dá para matar os elementais destruindo as braçadeiras, deve ser difícil encontrar as que contêm as informações de que o pergaminho divinatório precisa. Talvez você as consiga negociando com os outros, isso se já não tiver realizado o feitiço...",
+        "e84b724ccd34f2a962f9": "Bom trabalho, $N, isso vai nos dar a informação para descobrir quem foi o culpado. Está a fim de acabar com o mago que vem enchendo nossas águas de elementais corrompidos? A corrupção que se espalha pelo Vale Gris e além é de revirar o estômago — só de pensar que um feiticeiro fez isso de propósito me dá nojo. Ele vai pagar caro por isso."
+      },
       "summary": "Recolha 5 Braçadeiras Elementais Intactas e use o Pergaminho Divinatório nelas. Depois, leve o Pergaminho Vaticinado para a Sentinela Velene Golpestela no Refúgio Brisaprata.",
       "title": "Braçadeiras Elementais",
       "translationMetadata": {
@@ -305,6 +574,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -321,6 +608,11 @@
     },
     "ruRU": {
       "description": "Бозьми этот гадальный свиток – он поможет определить создателя этих элементалей. Но тебе понадобится кое-что взять у этих духов для фокусировки магии свитка – их браслеты прекрасно подойдут.\n\nХватит нескольких неповрежденных браслетов с этих существ. Другие для наших целей бесполезны, но зато у торговцев за них можно кое-что выручить, если пожелаешь продать. Как только ты добудешь неповрежденные браслеты, попытайся использовать свиток. Возвращайся ко мне с результатами, и мы продолжим.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Бозьми этот гадальный свиток – он поможет определить создателя этих элементалей. Но тебе понадобится кое-что взять у этих духов для фокусировки магии свитка – их браслеты прекрасно подойдут.\n\nХватит нескольких неповрежденных браслетов с этих существ. Другие для наших целей бесполезны, но зато у торговцев за них можно кое-что выручить, если пожелаешь продать. Как только ты добудешь неповрежденные браслеты, попытайся использовать свиток. Возвращайся ко мне с результатами, и мы продолжим.",
+        "895544505bcc7f83dfbf": "Поскольку тебе придется разрушить браслеты, чтобы убить элементалей, наверное трудно будет найти те самые, в которых содержится информация, которая нужна для гадального свитка. Ты можешь выменять нужные тебе браслеты у кого-нибудь другого, но, может, у тебя есть уже разгаданный свиток?",
+        "e84b724ccd34f2a962f9": "Хорошая работа, $N, это даст нам информацию, необходимую для того, чтобы раскрыть преступника. Ты не против помочь нам схватить мага, который наполнил наши пруды порчеными элементалями? У меня сердце сжимается при виде оскверненного Ясеневого леса и других мест, и я просто сгораю от нетерпения схватить волшебника, который так старается еще сильнее навредить этому краю. Мы заставим его за все ответить."
+      },
       "summary": "Соберите 5 неповрежденных браслетов элементалей, а затем задействуйте на них гадальный свиток. После отнесите разгаданный свиток Стражу Велене Звездный Всполох в Приют Серебряного Ветра.",
       "title": "Браслеты элементалей",
       "translationMetadata": {
@@ -329,6 +621,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -345,6 +655,11 @@
     },
     "svSE": {
       "description": "Ta den här spådomsrullen. Den kan avslöja vem som har skapat de här elementarerna. Men du behöver något från dem som reagens för att fokusera rullens magi, och deras armskydd borde duga utmärkt.\n\nNågra hela armskydd från varelserna borde räcka. De andra armskydden är oanvändbara för vårt syfte, men de kan vara värda något för en handlare om du vill sälja dem. När du har de hela armskydden, försök använda rullen. Återvänd till mig med resultatet så går vi vidare därifrån.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Ta denna spådomsrulle, den kan avgöra vem som skapade elementarerna. Men du behöver något från dem som reagens för att fokusera rullens magi; deras armskenor borde duga.$B$BNågra få hela armskenor borde räcka. De andra är värdelösa för vårt syfte, men en köpman kanske betalar för dem. När du har de hela armskenorna, försök använda rullen. Återvänd med resultatet så fortsätter vi därifrån.",
+        "895544505bcc7f83dfbf": "Eftersom du måste förstöra armskenorna för att döda elementarerna blir det nog svårt att hitta just de som innehåller informationen spådomsrullen behöver. Du kan byta armskenor med andra för att få rätt sort, eller har du kanske redan det frambesvurna papperet?",
+        "e84b724ccd34f2a962f9": "Bra gjort, $N. Det här borde ge oss informationen vi behöver för att hitta den skyldige. Vad säger du om att ta itu med magikern som fyller våra dammar med fördärvade elementarer? Fördärvningen av Ashenvale och områdena omkring får redan min mage att vända sig; att en trollkarl aktivt försöker förstöra mer gör mig ännu sjukare. Han ska få betala."
+      },
       "summary": "Samla 5 hela elementararmskydd och använd spådomsrullen på dem. Ta sedan den uttydda skriftrullen till väktare Velene Starstrike vid Silvervindens tillflykt.",
       "title": "Elementararmskydd",
       "translationMetadata": {
@@ -354,6 +669,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dba407204f3714d5ddf3ac4c16a6e372415d9efe6171091eb822f5fa2364100c"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -374,6 +704,11 @@
     },
     "trTR": {
       "description": "Bu kehanet tomarını al; bu elemental'leri yaratanı belirleyebilir. Ama tomarın büyüsünü odaklamak için malzeme olarak onlardan bir şey lazım olacak -- bileklikleri iş görür.\n\nBu yaratıklardan birkaç sağlam bileklik yeter. Diğer bileklikler amacımız için işe yaramaz ama satmak istersen bir tüccar için biraz değeri olabilir. Sağlam bileklikleri bulunca tomarı kullanmayı dene. Sonuçlarla bana dön, oradan devam ederiz.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Bu kehanet tomarını al; bu elementalleri kimin yarattığını belirleyebilir. Ama tomarın büyüsünü odaklamak için onlardan bir şeyi reaktif olarak kullanmalısın; kollukları iş görecektir.$B$BYaratıklardan birkaç sağlam kolluk yeterli olmalı. Diğerleri amacımız için işe yaramaz ama satmak istersen bir tüccar değer verebilir. Sağlam kollukları aldığında tomarı kullanmayı dene. Sonuçlarla bana dön, oradan devam ederiz.",
+        "895544505bcc7f83dfbf": "Elementalleri öldürmek için kolluklarını yok etmen gerektiğinden kehanet tomarının ihtiyaç duyduğu bilgiyi içerenleri bulmak zor olabilir. Gerekli kollukları elde etmek için başkalarıyla takas yapabilirsin; yoksa kehanet kâğıdı zaten sende mi?",
+        "e84b724ccd34f2a962f9": "İyi iş, $N. Bu, suçluyu bulmamız için gereken bilgiyi sağlamalı. Havuzlarımızı yozlaşmış elementallerle dolduran büyücüyü ortadan kaldırmaya ne dersin? Ashenvale’in ve çevresinin yozlaşması zaten midemi bulandırıyor; bir büyücünün bunu daha da kötüleştirmeye çalışması beni iyice hasta ediyor. Bunun bedelini ödeyecek."
+      },
       "summary": "5 Intact Elemental Bracer topla ve Divining Scroll'u üzerlerinde kullan. Ardından Divined Scroll'u Silverwind Sığınağı'ndaki Nöbetçi Velene Starstrike'a getir.",
       "title": "Elemental Bileklikleri",
       "translationMetadata": {
@@ -383,6 +718,21 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -401,6 +751,11 @@
     },
     "ukUA": {
       "description": "Візьми цей сувій — він може визначити творця цих елементалів. Але тобі знадобиться щось від них як реагент для фокусування магії сувою. Їхні браслети повинні добре підійти.\n\nДекількох неушкоджених браслетів повинно бути достатньо. Решта не знадобляться для наших цілей, але вони можуть чогось коштувати, якщо ти захочеш їх продати. Після того, як ти отримаєш неушкоджені браслети, застосуй сувій. Повернись до мене з результатами — і ми знатимемо як діяти далі.",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "Візьми цей віщувальний сувій — він може визначити творця цих елементалів. Але для зосередження його магії потрібен реагент із них; їхні наручі підійдуть.$B$BКількох цілих наручів має вистачити. Решта для нас марні, але торговець може за них заплатити. Здобувши цілі наручі, спробуй використати сувій. Повертайся з результатами, і ми вирішимо, що далі.",
+        "895544505bcc7f83dfbf": "Оскільки для вбивства елементалів треба знищити наручі, знайти саме ті, що містять потрібні сувою відомості, буде важко. Ти можеш обмінюватися наручами з іншими, щоб здобути потрібні, або, можливо, уже маєш папір із результатом ворожіння?",
+        "e84b724ccd34f2a962f9": "Добре впорався, $N, це має дати нам відомості для викриття винуватця. Як щодо того, щоб усунути мага, який заповнює наші водойми оскверненими елементалями? Мене й так нудить від скверни в Ясенедолі та за його межами, а думка про чарівника, який навмисно руйнує їх далі, ще гірша. Він за це заплатить."
+      },
       "summary": "Зберіть 5 неушкоджених браслетів елементалів та застосуйте до них сувій провіщення. Після цього принесіть сувій з провіщенням стражниці Велені Зоребій в притулок Срібновію.",
       "title": "Браслети елементалів",
       "translationMetadata": {
@@ -411,6 +766,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "dba407204f3714d5ddf3ac4c16a6e372415d9efe6171091eb822f5fa2364100c"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -431,6 +801,11 @@
     },
     "zhCN": {
       "description": "拿着这张占卜卷轴——它可以侦测出那些水元素是谁召唤出来的。但是你必须从水元素身上拿到一些东西才能查到真相。\n\n只需几个完整的元素护腕就可以完成占卜过程，其它类型的护腕对我们没什么用，但是也许会有商人想要收购那些东西。当你拿到了完整的元素护腕之后，就对它使用占卜卷轴，得出结果之后回到我这里来，让我们看看下一步该怎么办。",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "拿着这张占卜卷轴——它可以侦测出那些水元素是谁召唤出来的。但是你必须从水元素身上拿到一些东西才能查到真相。\n\n只需几个完整的元素护腕就可以完成占卜过程，其它类型的护腕对我们没什么用，但是也许会有商人想要收购那些东西。当你拿到了完整的元素护腕之后，就对它使用占卜卷轴，得出结果之后回到我这里来，让我们看看下一步该怎么办。",
+        "895544505bcc7f83dfbf": "你必须摧毁护腕才能干掉那些水元素，所以你可能不太容易找齐那些具有特定信息的护腕。如果你还没有收集到所有护腕的话，可以用自己找到的护腕与别人交换来集齐你所需的护腕。",
+        "e84b724ccd34f2a962f9": "干得不错，这些资讯足够让我找到那个该死的混蛋了。嗯，接下来就去干掉那个在我们的湖里召唤了那麽多水元素的法师吧，你觉得怎麽样?他做出腐化梣谷还有其他的一些恶劣行为令我反胃-只要一想到有个巫师在外面进一步的使情况恶化就使我想吐。我们一定要叫他付出代价。\n"
+      },
       "summary": "收集5个完整的元素护腕，并对它们使用占卜卷轴。然后把使用过的占卜卷轴带给银风避难所的哨兵维尔莉妮·星坠。",
       "title": "元素护腕",
       "translationMetadata": {
@@ -439,6 +814,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -455,6 +848,11 @@
     },
     "zhTW": {
       "description": "拿著這張占卜卷軸——它可以偵測出那些水元素是誰召喚出來的。但是你必須從水元素身上拿到一些東西才能查到真相。\n\n只需幾個完整的元素護腕就可以完成占卜過程，其他類型的護腕對我們沒什麼用，但是也許會有商人想要收購那些東西。當你拿到了完整的元素護腕之後，就對它使用占卜卷軸，得出結果之後回到我這裡來，讓我們看看下一步該怎麼辦。",
+      "dialogue": {
+        "5ed6489fc321ee1fb76d": "如果部落無法突破密斯特拉湖的水元素防禦時，我們可以很輕易地守住銀風避難所。\n\n他們其中一位薩滿，在泰德雷斯的森林中召喚出一個古老而憤怒的水靈，汙染我們的元素並使其轉而對付我們。湖泊與部落向我們步步進逼，我們毫無選擇，只能撤退到這個尖塔上。\n\n向東走。把湖泊拿回來，我們才有機會收復這個避難所。",
+        "895544505bcc7f83dfbf": "你必須摧毀護腕才能幹掉那些水元素，所以你可能不太容易找齊那些具有特定資訊的護腕。如果你還沒有收集到所有護腕的話，可以用自己找到的護腕與別人交換來集齊你所需的護腕。",
+        "e84b724ccd34f2a962f9": "幹得不錯，這些資訊足夠讓我找到那個該死的混蛋了。嗯，接下來就去幹掉那個在我們的湖里召喚了那麼多水元素的法師吧，你覺得怎麼樣?他做出腐化灰谷還有其他的一些惡劣行為令我反胃-只要一想到有個巫師在外面進一步的使情況惡化就使我想吐。我們一定要叫他付出代價。"
+      },
       "summary": "收集5個完整的元素護腕，並對它們使用占卜卷軸。然後把使用過的占卜卷軸帶給銀風避難所的哨兵維爾莉妮·星墜。",
       "title": "元素護腕",
       "translationMetadata": {
@@ -463,6 +861,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.5ed6489fc321ee1fb76d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.895544505bcc7f83dfbf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e84b724ccd34f2a962f9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

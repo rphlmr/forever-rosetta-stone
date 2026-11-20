@@ -1,7 +1,27 @@
 {
+  "dialogueContexts": {
+    "521eecec8394f7bf48b1": {
+      "lineId": "q:2765:accept",
+      "npcId": 7802,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "b601457b7a1c7214feeb": {
+      "lineId": "q:2765:complete",
+      "npcId": 7802,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Už při tvém prvním příchodu jsem věděl, že tvé výsledky budou patřit k nejlepším mezi mými žáky! Bez váhání od tebe McGavan dostal poměrně mocnou cetku. Jen kvůli setkání se mnou. Taková slepá víra a oddanost řemeslu by měly být odměněny.\n\nV kovářství už máš mistrovské znalosti, {name}. Sklízej plody své práce!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Když jsi ke mně poprvé přišel, věděl jsem, že budeš jedním z mých nejlepších žáků! Bez váhání jsi odevzdal McGavanovi mocnou tretku jen proto, abys mě mohl potkat. Taková slepá víra a oddanost řemeslu si zaslouží odměnu.$B$BDosáhl jsi mistrovství v kovářství, $N. Sklízej odměny!",
+        "b601457b7a1c7214feeb": "Je jen správné, abys dostal tretku mnohem mocnější než tu, kterou jsi obětoval, abys sem přišel. Užívej ji ve zdraví, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -18,6 +38,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "fa381c2f7f62fdc074b4e4aef3458321004a8b1bb174540855f27f7a55c9a95a"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +73,10 @@
     },
     "daDK": {
       "description": "Da du først kom til mig, vidste jeg, at du ville vise dig at være en af mine bedste elever! Uden tøven gav du en tingest med en vis kraft til McGavan. Det gjorde du alene for at kunne møde mig. Sådan blind tro og hengivenhed til håndværket bør belønnes.\n\nDu har opnået ekspertise i smedehåndværket, {name}. Høst belønningen!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Da du først kom til mig, vidste jeg, at du ville blive en af mine bedste elever! Uden tøven gav du McGavan en kraftfuld nipsting, blot for at møde mig. Så blind tro og hengivenhed til håndværket bør belønnes.$B$BDu har opnået ekspertise i smedekunst, $N. Høst belønningen!",
+        "b601457b7a1c7214feeb": "Det er kun passende, at du får en langt mere kraftfuld nipsting end den, du ofrede for at komme hertil. Brug den med godt helbred, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "fa381c2f7f62fdc074b4e4aef3458321004a8b1bb174540855f27f7a55c9a95a"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +126,10 @@
     },
     "deDE": {
       "description": "Schon als Ihr das erste Mal zu mir kamt, wusste ich, dass Ihr Euch als einer meiner besten Schüler herausstellen würdet! Ohne zu zögern trenntet Ihr Euch von einem nicht recht mächtigen Gegenstand und gabt ihn McGavan. Ihr tatet dies, nur damit Ihr mich treffen konntet. Solch blindes Vertrauen und Hingabe an unser Handwerk soll nicht unbelohnt bleiben.\n\nIhr seid zu einem wahren Experten der Schmiedekunst geworden, {name}. Nun erntet den Lohn dafür!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Schon als Ihr das erste Mal zu mir kamt, wusste ich, dass Ihr Euch als einer meiner besten Schüler herausstellen würdet! Ohne zu zögern trenntet Ihr Euch von einem nicht recht mächtigen Gegenstand und gabt ihn McGavan. Ihr tatet dies, nur damit Ihr mich treffen konntet. Solch blindes Vertrauen und Hingabe an unser Handwerk soll nicht unbelohnt bleiben.\n\nIhr seid zu einem wahren Experten der Schmiedekunst geworden, $n. Nun erntet den Lohn dafür!",
+        "b601457b7a1c7214feeb": "Es ist nur recht und billig, dass Ihr jetzt einen wesentlich mächtigeren Gegenstand erhaltet als den, den Ihr aufgabt, um hierher zu kommen. Möget Ihr immer bei guter Gesundheit sein, wenn Ihr ihn verwendet, $N. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +145,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "When you first came to me, I knew that you would turn out to be one of my finest pupils! It was without hesitancy that you gave up a trinket of some power to McGavan. You did this only so that you could meet me. Such blind faith and devotion to the craft should be rewarded.\n\nYou have attained expertise over blacksmithing, {name}. Reap the rewards!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "When you first came to me, I knew that you would turn out to be one of my finest pupils! It was without hesitancy that you gave up a trinket of some power to McGavan. You did this only so that you could meet me. Such blind faith and devotion to the craft should be rewarded.$B$BYou have attained expertise over blacksmithing, $N. Reap the rewards!",
+        "b601457b7a1c7214feeb": "It is only fitting that you receive a trinket of far greater power than the one you sacrificed to get here. Use it in good health, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -157,6 +233,10 @@
     },
     "esES": {
       "description": "Cuando viniste por primera vez a verme, sabía que acabarías siendo uno de mis más brillantes alumnos. Le diste un abalorio de bastante poder a McGavan sin dudarlo. Y lo hiciste solo para poder conocerme. Esa fe ciega y devoción debe ser recompensada.\n\nHas conseguido ser un experto en herrería, {name}. ¡Ahora te esperan las recompensas!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Cuando viniste por primera vez a verme, sabía que acabarías siendo uno de mis más brillantes alumnos. Le diste un abalorio de bastante poder a McGavan sin dudarlo. Y lo hiciste solo para poder conocerme. Esa fe ciega y devoción debe ser recompensada.\n\nHas conseguido ser un experto en herrería, $N. ¡Ahora te esperan las recompensas!",
+        "b601457b7a1c7214feeb": "Solo es justo que recibas un abalorio de mucho más poder que el que has sacrificado aquí. Utilízalo con buena salud, $n."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +252,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -194,6 +286,10 @@
     },
     "esMX": {
       "description": "Cuando viniste por primera vez a verme, sabía que acabarías siendo uno de mis más brillantes alumnos. Le diste un abalorio de bastante poder a McGavan sin dudarlo. Y lo hiciste solo para poder conocerme. Esa fe ciega y devoción debe ser recompensada.\n\nHas conseguido gran pericia en la herrería, {name}. ¡Ahora te esperan las recompensas!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Cuando viniste por primera vez a verme, sabía que acabarías siendo uno de mis más brillantes alumnos. Le diste un abalorio de bastante poder a McGavan sin dudarlo. Y lo hiciste solo para poder conocerme. Esa fe ciega y devoción debe ser recompensada.\n\nHas conseguido gran pericia en la herrería, $n. ¡Ahora te esperan las recompensas!",
+        "b601457b7a1c7214feeb": "Solo es justo que recibas un abalorio de mucho más poder que el que has sacrificado aquí. Utilízalo con buena salud, $n."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +305,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +339,10 @@
     },
     "frFR": {
       "description": "J'ai su, dès que je vous ai vu, que vous deviendriez un de mes meilleurs disciples ! Vous n’avez pas hésité à donner une relique à McGavan. Dans le seul but de le rencontrer. Une telle foi et une telle dévotion pour l'art doivent être récompensées.\n\nVous avez obtenu une expertise dans l'art de la forge, {name}. Cueillez le fruit de vos efforts !",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "J'ai su, dès que je vous ai vu, que vous deviendriez un de mes meilleurs disciples ! Vous n’avez pas hésité à donner une relique à McGavan. Dans le seul but de le rencontrer. Une telle foi et une telle dévotion pour l'art doivent être récompensées.\n\nVous avez obtenu une expertise dans l'art de la forge, $N. Cueillez le fruit de vos efforts !",
+        "b601457b7a1c7214feeb": "Il est juste que vous receviez une relique de plus grande valeur que celle que vous avez sacrifiée pour venir ici. Utilisez-la avec soin, $N. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +358,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +392,10 @@
     },
     "hrHR": {
       "description": "Kad si mi prvi put došao, znao sam da ćeš postati jedan od mojih najboljih učenika! Bez oklijevanja si predao McGavanu sitnicu s određenom moći. Učinio si to samo kako bi me mogao upoznati. Takvu slijepu vjeru i predanost zanatu treba nagraditi.\n\nStekao si stručnost u kovačkom zanatu, {name}. Uživaj u nagradama!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Kad si mi prvi put došao, znao sam da ćeš postati jedan od mojih najboljih učenika! Bez oklijevanja si McGavanu predao moćnu sitnicu samo da bi me upoznao. Takvu slijepu vjeru i odanost zanatu treba nagraditi.$B$BPostigao si stručnost u kovaštvu, $N. Uživaj u nagradi!",
+        "b601457b7a1c7214feeb": "Priliči da dobiješ mnogo moćniju sitnicu od one koju si žrtvovao da bi stigao ovamo. Koristi je u zdravlju, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +412,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "fa381c2f7f62fdc074b4e4aef3458321004a8b1bb174540855f27f7a55c9a95a"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +445,10 @@
     },
     "itIT": {
       "description": "Quando sei arrivato da me, sapevo che saresti diventato uno dei miei migliori allievi! Hai rinunciato senza esitare a un monile dotato di un certo potere per consegnarlo a McGavan. Lo hai fatto soltanto per potermi incontrare. Una fede tanto cieca e una simile dedizione al mestiere meritano una ricompensa.\n\nHai raggiunto il grado di esperto nella Forgiatura, {name}. Raccogli i frutti del tuo impegno!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Quando sei venuto da me per la prima volta, sapevo che saresti diventato uno dei miei migliori allievi! Hai ceduto senza esitare a McGavan un monile dotato di potere solo per incontrarmi. Una simile fede cieca e dedizione al mestiere meritano una ricompensa.$B$BHai raggiunto l'esperienza nella forgiatura, $N. Raccogli la tua ricompensa!",
+        "b601457b7a1c7214feeb": "È giusto che tu riceva un monile ben più potente di quello che hai sacrificato per arrivare qui. Goditelo in salute, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +465,17 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "fa381c2f7f62fdc074b4e4aef3458321004a8b1bb174540855f27f7a55c9a95a"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -346,6 +499,10 @@
     },
     "koKR": {
       "description": "자네가 내게 처음 왔을 때 나는 자네가 내 최고의 제자 중 하나가 될 줄 알아봤다네! 자네는 주저하지 않고 맥개번에게 마법 장신구를 내주었고, 그것도 단지 나를 만나기 위해서 그런 것이니 말일세. 대장기술에 대한 그런 맹목적인 믿음과 헌신은 보상을 받아야 마땅하지.\n\n자네는 고급 대장기술을 터득했네. 자, 보상을 받게나!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "자네가 내게 처음 왔을 때 나는 자네가 내 최고의 제자 중 하나가 될 줄 알아봤다네! 자네는 주저하지 않고 맥개번에게 마법 장신구를 내주었고, 그것도 단지 나를 만나기 위해서 그런 것이니 말일세. 대장기술에 대한 그런 맹목적인 믿음과 헌신은 보상을 받아야 마땅하지.\n\n자네는 고급 대장기술을 터득했네. 자, 보상을 받게나!",
+        "b601457b7a1c7214feeb": "여기에 오기 위해서 써버린 장신구보다는 훨씬 더 강력한 걸 받아야 마땅하지. 잘 쓰도록 하게."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -361,6 +518,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -383,6 +552,10 @@
     },
     "plPL": {
       "description": "Gdy pierwszy raz do mnie przyszedłeś, od razu wiedziałem, że zostaniesz jednym z moich najlepszych uczniów! Bez wahania oddałeś McGavanowi obdarzoną pewną mocą błyskotkę. Tylko po to, by móc mnie spotkać. Tak ślepa wiara i oddanie rzemiosłu zasługują na nagrodę.\n\nZdobyłeś biegłość w kowalstwie, {name}. Zbierz owoce swojej pracy!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Kiedy po raz pierwszy do mnie przyszedłeś, wiedziałem, że zostaniesz jednym z moich najlepszych uczniów! Bez wahania oddałeś McGavanowi potężny drobiazg tylko po to, by mnie spotkać. Taka ślepa wiara i oddanie rzemiosłu zasługują na nagrodę.$B$BOsiągnąłeś biegłość w kowalstwie, $N. Odbierz nagrodę!",
+        "b601457b7a1c7214feeb": "Słusznie jest obdarować cię przedmiotem znacznie potężniejszym od tego, który poświęcono, by tu dotrzeć. Używaj go w zdrowiu, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -399,6 +572,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "fa381c2f7f62fdc074b4e4aef3458321004a8b1bb174540855f27f7a55c9a95a"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -422,6 +605,10 @@
     },
     "ptBR": {
       "description": "Quando você apareceu, eu tive certeza de que estava diante de um dos meus melhores pupilos! Você nem hesitou em entregar um berloque com algum poder a McGavan. Você fez isso só para poder me conhecer. Essa fé cega e essa devoção à arte merecem ser recompensadas.\n\nVocê dominou a ferraria, {name}. Pode colher os louros!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Quando você apareceu, eu tive certeza de que estava diante de um dos meus melhores pupilos! Você nem hesitou em entregar um berloque com algum poder a McGavan. Você fez isso só para poder me conhecer. Essa fé cega e essa devoção à arte merecem ser recompensadas.\n\nVocê dominou a ferraria, $N. Pode colher os louros!",
+        "b601457b7a1c7214feeb": "É justo que você receba um talismã muito mais poderoso do que aquele que sacrificou para chegar aqui. Use-o com saúde, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -437,6 +624,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -459,6 +657,10 @@
     },
     "ruRU": {
       "description": "Я с первого взгляда понял, что ты станешь одним из моих лучших учеников! Ты без колебаний отдал Макгевану вещь, наделенную силой, лишь бы только встретиться со мной. Подобная слепая вера и преданность искусству должна быть вознаграждена.\n\nТы стал настоящим экспертом в кузнечном деле. Насладись же наградой!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Я с первого взгляда понял, что ты станешь одним из моих лучших учеников! Ты без колебаний отдал Макгевану вещь, наделенную силой, лишь бы только встретиться со мной. Подобная слепая вера и преданность искусству должна быть вознаграждена.\n\nТы стал настоящим экспертом в кузнечном деле. Насладись же наградой!",
+        "b601457b7a1c7214feeb": "Что ж, ты в самом деле заслужил украшение, наделенное большей силой, чем то, которым пришлось пожертвовать на пути сюда. Пользуйся на здоровье, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -474,6 +676,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -496,6 +710,10 @@
     },
     "svSE": {
       "description": "När du först kom visste jag att du skulle bli en av mina främsta lärjungar! Utan tvekan gav du McGavan en mäktig prydnad bara för att få träffa mig. Sådan blind tro och hängivenhet till hantverket förtjänar belöning.\n\nDu har nått expertis i smideskonsten, {name}. Skörda frukterna!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "När du först kom till mig visste jag att du skulle bli en av mina bästa elever! Utan att tveka gav du McGavan en kraftfull prydnad bara för att få träffa mig. Sådan blind tro och hängivenhet till hantverket bör belönas.$B$BDu har uppnått expertkunskap i smide, $N. Skörda belöningen!",
+        "b601457b7a1c7214feeb": "Det är bara rätt att du får en långt mäktigare prydnad än den du offrade för att komma hit. Använd den med hälsan i behåll, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +730,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "fa381c2f7f62fdc074b4e4aef3458321004a8b1bb174540855f27f7a55c9a95a"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -535,6 +763,10 @@
     },
     "trTR": {
       "description": "Bana ilk geldiğinde en iyi öğrencilerimden biri olacağını biliyordum! Güçlü sayılabilecek bir süs eşyasını hiç tereddüt etmeden McGavan'a verdin. Bunu yalnızca benimle tanışabilmek için yaptın. Böylesine körü körüne inanç ve zanaata bağlılık ödüllendirilmeli.\n\nDemircilikte ustalık kazandın, {name}. Ödüllerini al!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Bana ilk geldiğinde en iyi öğrencilerimden biri olacağını biliyordum! Benimle tanışabilmek için güçlü bir ziynet eşyasını hiç tereddüt etmeden McGavan'a verdin. Zanaata böylesine körü körüne bağlılık ve inanç ödüllendirilmeli.$B$BDemircilikte uzmanlaştın, $N. Ödülünü al!",
+        "b601457b7a1c7214feeb": "Buraya gelmek için feda ettiğinden çok daha güçlü bir ziynet eşyası alman yerinde olur. Güle güle kullan, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -551,6 +783,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "fa381c2f7f62fdc074b4e4aef3458321004a8b1bb174540855f27f7a55c9a95a"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -574,6 +816,10 @@
     },
     "ukUA": {
       "description": "Щойно ти вперше прийшов до мене, я вже знав, що ти станеш одним із моїх найкращих учнів! Ти без вагань віддав Макґавану дрібничку, наділену певною силою. І все це лише заради зустрічі зі мною. Така сліпа віра й відданість ремеслу заслуговують винагороди.\n\nТи став знавцем ковальства, {name}. Пожинай плоди!",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "Коли ти вперше прийшов до мене, я знав, що ти станеш одним із моїх найкращих учнів! Ти без вагань віддав Макґавану доволі могутню дрібничку лише для того, щоб зустрітися зі мною. Така сліпа віра й відданість ремеслу заслуговують винагороди.$B$BТи досяг майстерності в ковальстві, $N. Отримуй нагороду!",
+        "b601457b7a1c7214feeb": "Справедливо, щоб ти отримав набагато могутнішу дрібничку, ніж та, яку пожертвував заради зустрічі. Користуйся на здоров'я, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -590,6 +836,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "fa381c2f7f62fdc074b4e4aef3458321004a8b1bb174540855f27f7a55c9a95a"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -615,6 +871,10 @@
     },
     "zhCN": {
       "description": "你刚来的时候，我就知道你会成为我最出色的学生之一！你毫不犹豫地把这个有魔力的饰品交给了马克迦文，因此你才有了来见我的资格。你的全心奉献和坚定信念应该得到回报。\n\n你已经在锻造技艺方面取得了长足的进步，{name}。拿上你的回报吧！",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "你刚来的时候，我就知道你会成为我最出色的学生之一！你毫不犹豫地把这个有魔力的饰品交给了马克迦文，因此你才有了来见我的资格。你的全心奉献和坚定信念应该得到回报。\n\n你已经在锻造技艺方面取得了长足的进步，$N。拿上你的回报吧！",
+        "b601457b7a1c7214feeb": "你将得到一个比你放弃的饰品更棒的东西，好好利用它吧，$N。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -630,6 +890,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -652,6 +924,10 @@
     },
     "zhTW": {
       "description": "你剛來的時候，我就知道你會成為我最出色的學生之一！你毫不猶豫地把這個有魔力的飾品交給了馬克迦文，因此你才有了來見我的資格。你的全心奉獻和堅定信念應該得到回報。\n\n你已經在鍛造技藝方面取得了長足的進步，{name}。拿上你的回報吧！",
+      "dialogue": {
+        "521eecec8394f7bf48b1": "你剛來的時候，我就知道你會成為我最出色的學生之一！你毫不猶豫地把這個有魔力的飾品交給了馬克迦文，因此你才有了來見我的資格。你的全心奉獻和堅定信念應該得到回報。\n\n你已經在鍛造技藝方面取得了長足的進步，$N。拿上你的回報吧！",
+        "b601457b7a1c7214feeb": "你將得到一個比你放棄的飾品更棒的東西，好好利用它吧，$N。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -667,6 +943,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.521eecec8394f7bf48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.b601457b7a1c7214feeb": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

@@ -1,8 +1,36 @@
 {
   "areaId": 1638,
+  "dialogueContexts": {
+    "180fc533f8eb11f61dc2": {
+      "lineId": "q:1086:accept",
+      "npcId": 3419,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "7492b657e80b63c7d09e": {
+      "lineId": "q:1086:progress",
+      "npcId": 3419,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "d3a30956303b05af1773": {
+      "lineId": "q:1086:complete",
+      "npcId": 3419,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Toxin je připraven. Zbývá ho jen doručit. A právě ty, {name}, ho musíš doručit.\n\nVenture Company musí mít nějaký způsob přepravy zpráv a lehkého nákladu mezi ústředím a provozy ve Stonetalon. Nejspíš malé vzdušné přístaviště, příliš malé pro vzducholoď, ale snad dostačující pro létající stroj. Prohledej oblasti Stonetalon ovládané Venture Company a najdi to přístaviště, pokud existuje. Jestli ho najdeš, umísti tam toxin.\n\nPolož ho tam a utíkej.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Toxin je připraven. Zbývá ho jen doručit. A to musíš udělat ty, $N.$B$BVenture Company musí mít způsob, jak posílat zprávy a lehký náklad mezi ústředím a svými provozy v Kamenných horách. Pravděpodobně jde o malý vzdušný přístav, příliš malý pro vzducholoď, ale možná vhodný pro létající stroj. Prohledej oblasti Kamenných hor pod kontrolou Venture Company a najdi ho, pokud existuje. Pokud ho najdeš, umísti tam toxin.$B$BPolož ho a utíkej.",
+        "7492b657e80b63c7d09e": "Musíš najít letiště Venture Company, pokud existuje, $N.",
+        "d3a30956303b05af1773": "Našel jsi přístav? Dobrá práce, $N! Jsem si jistý, že gobliny tvá zásilka překvapila! Doufejme, že si toxin najde cestu do jejich ústředí.$B$BSvému lidu jsi dobře posloužil a radím ti ignorovat jakoukoli vinu, kterou bys kvůli otrávení Venture Company cítil. Zaslouží si mnohem horší.$B$BA pokud mohou Opuštění naučit své spojence jediné moudro, pak toto:$B$BNevyhýbejte se temným cestám... vedou-li k vítězství."
+      },
       "eventObjectiveLabel": "Umísti Toxic Fogger",
       "objectiveLines": [
         {
@@ -20,6 +48,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e617dce8dedbbbbb9bccad9e42246325e5a92cb751a3db9af93caf910fade369"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -53,6 +96,11 @@
     },
     "daDK": {
       "description": "Giftstoffet er klar. Det eneste, der mangler, er leveringen. Du, {name}, skal foretage den levering.\n\nVenture Company må have en måde at sende beskeder og let last mellem sit hovedkvarter og sine aktiviteter i Stonetalon. Det er sandsynligvis en lille lufthavn, ikke stor nok til en zeppeliner, men måske til en flyvemaskine. Du må gennemsøge de områder i Stonetalon, som Venture Company kontrollerer, og finde denne lufthavn, hvis den findes. Hvis du finder den, skal du anbringe giftstoffet der.\n\nPlacér det, og løb.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Giften er klar. Kun leveringen mangler. Det er dig, $N, der skal levere den.$B$BVenture Company må have en måde at sende beskeder og let last mellem hovedkvarteret og deres aktiviteter i Stonetalon. Det er sandsynligvis en lille lufthavn, for lille til en zeppeliner, men måske stor nok til en flyvemaskine. Gennemsøg områderne i Stonetalon, som Venture Company kontrollerer, og find lufthavnen, hvis den findes. Læg giften der, hvis du finder den.$B$BLæg den og løb.",
+        "7492b657e80b63c7d09e": "Du må finde Venture Companys lufthavn, hvis den findes, $N.",
+        "d3a30956303b05af1773": "Fandt du havnen? Godt klaret, $N! Jeg er sikker på, at goblinerne blev overraskede over din levering! Lad os håbe, at giften finder vej til deres hovedkvarter.$B$BDu har tjent dit folk godt, og jeg råder dig til at ignorere enhver skyldfølelse over at forgifte Venture Company. De fortjener langt værre.$B$BOg hvis de Forladte kan lære deres allierede én visdom, er det denne:$B$BVig ikke tilbage for mørke veje... hvis de fører til sejr."
+      },
       "eventObjectiveLabel": "Placér Toxic Fogger",
       "objectiveLines": [
         {
@@ -70,6 +118,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e617dce8dedbbbbb9bccad9e42246325e5a92cb751a3db9af93caf910fade369"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -99,6 +162,11 @@
     },
     "deDE": {
       "description": "Das Toxin ist bereit. Jetzt muss es nur noch ausgeliefert werden. Ihr, {name}, müsst es ausliefern.\n\nDie Venture Company muss irgendwelche Mittel und Wege haben, Nachrichten und leichte Fracht zwischen ihrem Hauptquartier und dem Betrieb im Steinkrallengebirge hin- und herzuschicken. Es könnte ein kleiner Flugplatz sein - nicht groß genug für einen Zeppelin, aber vielleicht für einen Flugapparat. Ihr müsst die Gebiete, die von der Venture Company kontrolliert werden, durchsuchen und diesen Flugplatz finden, falls er existiert. Solltet Ihr ihn finden, platziert das Toxin dort.\n\nPlatziert es und lauft, was Ihr könnt.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Das Toxin ist bereit. Jetzt muss es nur noch ausgeliefert werden. Ihr, $n, müsst es ausliefern.\n\nDie Venture Company muss irgendwelche Mittel und Wege haben, Nachrichten und leichte Fracht zwischen ihrem Hauptquartier und dem Betrieb im Steinkrallengebirge hin- und herzuschicken. Es könnte ein kleiner Flugplatz sein - nicht groß genug für einen Zeppelin, aber vielleicht für einen Flugapparat. Ihr müsst die Gebiete, die von der Venture Company kontrolliert werden, durchsuchen und diesen Flugplatz finden, falls er existiert. Solltet Ihr ihn finden, platziert das Toxin dort.\n\nPlatziert es und lauft, was Ihr könnt.",
+        "7492b657e80b63c7d09e": "Sie müssen den Flughafen der Venture Company finden, falls er existiert, $N.",
+        "d3a30956303b05af1773": "Ihr habt den Flugplatz gefunden? Gut gemacht, $N! Die Goblins waren sicher ziemlich überrascht von Eurer Lieferung! Hoffen wir, dass das Toxin den Weg zu ihrem Hauptquartier findet. \n \n Ihr habt Eurem Volk gute Dienste geleistet, und ich rate Euch, dass Ihr Euch nicht mit Schuldgefühlen quält, die Ihr vielleicht wegen der Vergiftung der Venture Company hegt. Sie hat noch viel Schlimmeres verdient. \n \n Und wenn die Verlassenen ihren Verbündeten noch ein Körnchen Wissen vermitteln können, dann dies hier:\n \n Scheut Euch nicht, dunkle Wege zu begehen. . . wenn Euch solche Wege zum Sieg führen. "
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -115,6 +183,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -142,6 +228,11 @@
     },
     "enUS": {
       "description": "The toxin is ready.  All that remains is its delivery.  You, {name}, must make that delivery.\n\nThe Venture Company must have a means of sending messages and light cargo between its headquarters and its operations in Stonetalon.  It is likely a small sky port -- not big enough for a zeppelin, but perhaps for a flying machine.  You must search the areas in Stonetalon under control of the Venture Company and find this sky port, if it exists.  If you find it, then place the toxin there.\n\nPlace it, and run.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "The toxin is ready.  All that remains is its delivery.  You, $N, must make that delivery.$B$BThe Venture Company must have a means of sending messages and light cargo between its headquarters and its operations in Stonetalon.  It is likely a small sky port -- not big enough for a zeppelin, but perhaps for a flying machine.  You must search the areas in Stonetalon under control of the Venture Company and find this sky port, if it exists.  If you find it, then place the toxin there.$B$BPlace it, and run.",
+        "7492b657e80b63c7d09e": "You must find the Venture Company airport if it exists, $N.",
+        "d3a30956303b05af1773": "You found the port? Well done, $N! I am sure the goblins were quite surprised from your delivery! Let us hope that toxin finds its way to their headquarters.$B$BYou have served your people well, and I advise you to ignore any guilt you might harbor for poisoning the Venture Company. They are deserving of far worse.$B$BAnd if there is one mote of wisdom the Forsaken might teach its allies, it is this:$B$BDo not shy from dark paths... if those paths lead to victory."
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -158,6 +249,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -186,6 +295,11 @@
     },
     "esES": {
       "description": "La toxina ya está lista. Solo queda entregarla. Y eso te toca a ti, {name}.\n\nVentura y Cía. tiene que disponer de un sistema para enviar mensajes y paquetes ligeros entre su administración central y las operaciones de Sierra Espolón. Probablemente sea un minipuerto, no lo bastante grande para un zepelín, pero sí para un transportador aéreo. Recorre las zonas de influencia de Ventura y Cía. en Sierra Espolón y encuentra el minipuerto. Si lo localizas, planta la toxina.\n\nY sal de ahí inmediatamente.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "La toxina ya está lista. Solo queda entregarla. Y eso te toca a ti, $N.\n\nVentura y Cía. tiene que disponer de un sistema para enviar mensajes y paquetes ligeros entre su administración central y las operaciones de Sierra Espolón. Probablemente sea un minipuerto, no lo bastante grande para un zepelín, pero sí para un transportador aéreo. Recorre las zonas de influencia de Ventura y Cía. en Sierra Espolón y encuentra el minipuerto. Si lo localizas, planta la toxina.\n\nY sal de ahí inmediatamente.",
+        "7492b657e80b63c7d09e": "Debe encontrar el aeropuerto de Venture Company si existe, $N.",
+        "d3a30956303b05af1773": "¡Buen trabajo, $n! ¡Seguro que esos globlins se llevaron una sorpresa!\n\nNo te sientas culpable por lo que has hecho; esa gente merece esto y más.\n\nEn mis años de servicio he aprendido algo:\n\ntodo medio es válido si conduce a la victoria."
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -202,6 +316,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -229,6 +361,11 @@
     },
     "esMX": {
       "description": "La toxina ya está lista. Solo queda entregarla. Y eso te toca a ti, {name}.\n\nVentura y Cía. tiene que disponer de un sistema para enviar mensajes y paquetes ligeros entre su administración central y las operaciones de Sierra Espolón. Probablemente sea un aeropuerto, no lo bastante grande para un zepelín, pero sí para un transportador aéreo. Recorre las zonas de influencia de Ventura y Cía. en Sierra Espolón y encuentra el aeropuerto. Si lo localizas, planta la toxina.\n\nY sal de ahí inmediatamente.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "La toxina ya está lista. Solo queda entregarla. Y eso te toca a ti, $n.\n\nVentura y Cía. tiene que disponer de un sistema para enviar mensajes y paquetes ligeros entre su administración central y las operaciones de Sierra Espolón. Probablemente sea un aeropuerto, no lo bastante grande para un zepelín, pero sí para un transportador aéreo. Recorre las zonas de influencia de Ventura y Cía. en Sierra Espolón y encuentra el aeropuerto. Si lo localizas, planta la toxina.\n\nY sal de ahí inmediatamente.",
+        "7492b657e80b63c7d09e": "Debes encontrar el aeropuerto de Ventura y Cia, si es que existe, $n.",
+        "d3a30956303b05af1773": "¡Buen trabajo, $n! ¡Seguro que esos globlins se llevaron una sorpresa!\n\nNo te sientas culpable por lo que has hecho; esa gente merece esto y más.\n\nEn mis años de servicio he aprendido algo:\n\ntodo medio es válido si conduce a la victoria."
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -245,6 +382,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -272,6 +427,11 @@
     },
     "frFR": {
       "description": "La toxine est prête. Tout ce qu'il reste à faire est de la livrer. Vous devez vous en occuper, {name}.\n\nLa KapitalRisk doit avoir un moyen d'envoyer des messages et de petites cargaisons entre ses quartiers généraux et ses sites d'opérations dans les Serres-Rocheuses. Il s'agit probablement d'un petit aéroport, pas suffisamment important pour un zeppelin, mais assez pour une machine volante. Cherchez dans les Serres-Rocheuses les secteurs sous contrôle de la KapitalRisk et trouvez cet aéroport, s'il existe. Placez-y alors la toxine.\n\nPlacez-la, et courez !",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "La toxine est prête. Tout ce qu'il reste à faire est de la livrer. Vous devez vous en occuper, $n.\n\nLa KapitalRisk doit avoir un moyen d'envoyer des messages et de petites cargaisons entre ses quartiers généraux et ses sites d'opérations dans les Serres-Rocheuses. Il s'agit probablement d'un petit aéroport, pas suffisamment important pour un zeppelin, mais assez pour une machine volante. Cherchez dans les Serres-Rocheuses les secteurs sous contrôle de la KapitalRisk et trouvez cet aéroport, s'il existe. Placez-y alors la toxine.\n\nPlacez-la, et courez !",
+        "7492b657e80b63c7d09e": "Vous devez trouver l'aéroport de la Venture Company s'il existe, $N.",
+        "d3a30956303b05af1773": "Avez-vous trouvé le port ? Bon travail, $N ! Je suis sûre que les gobelins ont été très surpris par votre livraison ! Espérons que la toxine se fraye un chemin jusqu'à leurs quartiers généraux. \n \n Vous avez rendu un grand service à votre peuple, et je vous conseille de ne pas ressentir de culpabilité. La KapitalRisk mérite pire que cela. \n \n Et s'il y a un atome de sagesse que les Réprouvés pourraient apprendre à leurs alliés, c'est :\n \n N'évitez pas les sombres chemins. . . si ces chemins vous mènent à la victoire. "
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -288,6 +448,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -315,6 +493,11 @@
     },
     "hrHR": {
       "description": "Otrov je spreman. Preostaje samo dostava. Ti, {name}, moraš obaviti tu dostavu.\n\nVenture Company sigurno ima način slanja poruka i lakog tereta između svojeg sjedišta i svojih pogona u Stonetalonu. Vjerojatno je riječ o maloj zračnoj luci, nedovoljno velikoj za cepelin, ali možda dovoljnoj za leteći stroj. Moraš pretražiti područja Stonetalona pod nadzorom Venture Companyja i pronaći tu zračnu luku, ako postoji. Ako je pronađeš, ondje postavi otrov.\n\nPostavi ga i bježi.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Otrov je spreman. Preostaje ga samo dostaviti. Ti, $N, moraš to učiniti.$B$BVenture Company mora imati način slanja poruka i lakog tereta između sjedišta i svojih pogona u Stonetalonu. Vjerojatno je riječ o maloj zračnoj luci, premaloj za cepelin, ali možda dovoljnoj za leteći stroj. Pretraži područja Stonetalona pod kontrolom Venture Companyja i pronađi luku, ako postoji. Ako je pronađeš, ondje postavi otrov.$B$BPostavi ga i bježi.",
+        "7492b657e80b63c7d09e": "Moraš pronaći zračnu luku Venture Companyja ako postoji, $N.",
+        "d3a30956303b05af1773": "Pronašao si luku? Bravo, $N! Siguran sam da su se goblini iznenadili tvojoj pošiljci! Nadajmo se da će otrov pronaći put do njihova sjedišta.$B$BDobro si služio svojem narodu i savjetujem ti da zanemariš svaku krivnju zbog trovanja Venture Companyja. Zaslužuju mnogo gore.$B$BAko Odbačeni mogu saveznike naučiti jednoj mudrosti, onda je to ova:$B$BNe bježi od mračnih putova... ako vode do pobjede."
+      },
       "eventObjectiveLabel": "Postavi raspršivač otrovne magle",
       "objectiveLines": [
         {
@@ -332,6 +515,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e617dce8dedbbbbb9bccad9e42246325e5a92cb751a3db9af93caf910fade369"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -361,6 +559,11 @@
     },
     "itIT": {
       "description": "La tossina è pronta. Manca soltanto la consegna. Tu, {name}, devi effettuarla.\n\nLa Venture Company deve avere un mezzo per inviare messaggi e piccoli carichi tra la sede centrale e le sue attività a Stonetalon. Probabilmente è un piccolo porto aereo: non abbastanza grande per uno zeppelin, ma forse per una macchina volante. Devi esplorare le zone di Stonetalon controllate dalla Venture Company e trovare questo porto aereo, se esiste. Se lo trovi, lascia lì la tossina.\n\nLasciala e corri.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "La tossina è pronta. Non resta che consegnarla. Sei tu, $N, a doverlo fare.\n\nLa Venture Company deve pur avere un modo per mandare messaggi e carichi leggeri tra il suo quartier generale e le sue attività a Stonetalon. Probabilmente è un piccolo porto aereo — non abbastanza grande per uno zeppelin, ma forse per una macchina volante. Devi cercare nelle zone di Stonetalon controllate dalla Venture Company e trovare questo porto aereo, se esiste. Se lo trovi, metti lì la tossina.\n\nMettila, e corri via.",
+        "7492b657e80b63c7d09e": "Devi trovare l'aeroporto della Venture Company, se esiste, $N.",
+        "d3a30956303b05af1773": "Hai trovato il porto? Ben fatto, $N! Sono certa che i goblin siano rimasti piuttosto sorpresi dalla tua consegna! Speriamo che quella tossina trovi la strada per il loro quartier generale.\n\nHai servito bene il tuo popolo, e ti consiglio di ignorare qualunque senso di colpa tu possa provare per aver avvelenato la Venture Company. Si meritano ben di peggio.\n\nE se c'è un briciolo di saggezza che i Reietti possono insegnare ai loro alleati, è questo:\n\nNon evitare le strade oscure... se quelle strade portano alla vittoria."
+      },
       "eventObjectiveLabel": "Posiziona il nebulizzatore tossico",
       "objectiveLines": [
         {
@@ -378,6 +581,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e617dce8dedbbbbb9bccad9e42246325e5a92cb751a3db9af93caf910fade369"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -407,6 +628,11 @@
     },
     "koKR": {
       "description": "당신이 가져다준 독약으로 독가스통을 만들었소. 이제 갖다 놓기만 하면 되는데 이 일은 당신이 해 주시오.\n\n투자개발회사에는 분명 본부와 돌발톱 산맥에 있는 작업장 사이에서 전갈이나 수화물을 전달하는 수단이 있을 것이오. 조그마한 비행장 같은 게 아닐까 싶은데... 큰 비행선이 드나들 만큼 크지는 않지만 아마 작은 비행기라면 가능할 것이오. 돌발톱 산맥에서 투자개발회사가 관할하는 지역을 수색해서 이 비행장이 정말로 있는지 찾아내시오.\n\n비행장을 찾으면 이 독가스통을 그곳에 놓아두시오. 독가스통을 놓고 재빨리 빠져나와야 하오.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "당신이 가져다준 독약으로 독가스통을 만들었소. 이제 갖다 놓기만 하면 되는데 이 일은 당신이 해 주시오.\n\n투자개발회사에는 분명 본부와 돌발톱 산맥에 있는 작업장 사이에서 전갈이나 수화물을 전달하는 수단이 있을 것이오. 조그마한 비행장 같은 게 아닐까 싶은데... 큰 비행선이 드나들 만큼 크지는 않지만 아마 작은 비행기라면 가능할 것이오. 돌발톱 산맥에서 투자개발회사가 관할하는 지역을 수색해서 이 비행장이 정말로 있는지 찾아내시오.\n\n비행장을 찾으면 이 독가스통을 그곳에 놓아두시오. 독가스통을 놓고 재빨리 빠져나와야 하오.",
+        "7492b657e80b63c7d09e": "투자개발회사의 비행장이 존재한다면 찾아야 합니다, $N.",
+        "d3a30956303b05af1773": "비행장을 찾았다고? 잘했소! 분명 당신이 갖다 놓은 독가스통 때문에 고블린들이 많이 놀랐을 것이오! 그 독가스통이 본부까지 가길 빌어보도록 하지.\n\n당신의 종족에게 좋은 일을 한 것이니 투자개발회사에 독을 퍼뜨린 것에 대한 죄의식 따위는 버리도록 하시오. 그들은 독가스보다 더한 것을 받아도 마땅한 자들이니까.\n\n포세이큰이 동맹들에게 전하는 조그만 지혜가 하나 있다면 바로 이것이오. 승리로 가는 길이라면... 어둠의 길이라도 피하지 말라."
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -423,6 +649,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -450,6 +693,11 @@
     },
     "plPL": {
       "description": "Toksyna jest gotowa. Pozostaje ją dostarczyć. Ty, {name}, musisz to zrobić.\n\nVenture Company musi mieć sposób przesyłania wiadomości i lekkich ładunków między centralą a placówkami w Stonetalon. Najpewniej to mały port lotniczy, zbyt niewielki dla zeppelina, lecz może wystarczający dla latającej maszyny. Przeszukaj kontrolowane przez firmę obszary Stonetalon i znajdź port, jeśli istnieje. Jeśli go znajdziesz, umieść tam toksynę.\n\nUmieść ją i uciekaj.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Toksyna jest gotowa. Pozostało ją dostarczyć. Ty, $N, musisz to zrobić.$B$BVenture Company musi mieć sposób przesyłania wiadomości i lekkich ładunków między siedzibą a placówkami w Stonetalon. Prawdopodobnie jest to mały port powietrzny, za mały dla sterowca, ale być może odpowiedni dla maszyny latającej. Przeszukaj obszary Stonetalon kontrolowane przez Venture Company i znajdź port, jeśli istnieje. Jeśli go znajdziesz, umieść tam toksynę.$B$BZostaw ją i uciekaj.",
+        "7492b657e80b63c7d09e": "Musisz znaleźć lotnisko Venture Company, jeśli istnieje, $N.",
+        "d3a30956303b05af1773": "Znalazłeś port? Dobra robota, $N! Jestem pewien, że gobliny były zaskoczone twoją przesyłką! Miejmy nadzieję, że toksyna dotrze do ich siedziby.$B$BDobrze przysłużyłeś się swemu ludowi i radzę ci odrzucić wszelkie poczucie winy za otrucie Venture Company. Zasługują na znacznie gorszy los.$B$BA jeśli Opuszczeni mogą nauczyć sojuszników jednej mądrości, to tej:$B$BNie unikajcie mrocznych ścieżek... jeśli prowadzą do zwycięstwa."
+      },
       "eventObjectiveLabel": "Umieść Toksyczny Zamgławiacz",
       "objectiveLines": [
         {
@@ -467,6 +715,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e617dce8dedbbbbb9bccad9e42246325e5a92cb751a3db9af93caf910fade369"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -496,6 +759,11 @@
     },
     "ptBR": {
       "description": "A toxina está pronta. Só falta entregar a encomenda. Você, {name}, fará a entrega.\n\nA Empreendimentos S.A. deve ter uma forma de transportar mensagens e cargas leves entre o quartel general e as operações nas Torres de Pedra. Deve ser algum aeródromo pequeno demais para um zepelim, mas perfeito pra uma máquina voadora. Vasculhe a região nas mãos da Empreendimentos S.A em Torres de Pedra e ache esse aeródromo, se ele existir. Quando o encontrar, é só largar a toxina lá.\n\nLargue e dê o fora.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "A toxina está pronta. Só falta entregar a encomenda. Você, $N, fará a entrega.\n\nA Empreendimentos S.A. deve ter uma forma de transportar mensagens e cargas leves entre o quartel general e as operações nas Torres de Pedra. Deve ser algum aeródromo pequeno demais para um zepelim, mas perfeito pra uma máquina voadora. Vasculhe a região nas mãos da Empreendimentos S.A em Torres de Pedra e ache esse aeródromo, se ele existir. Quando o encontrar, é só largar a toxina lá.\n\nLargue e dê o fora.",
+        "7492b657e80b63c7d09e": "Você precisa encontrar o aeroporto da Companhia de Empreendimentos, se ele existir, $N.",
+        "d3a30956303b05af1773": "Achou o aeroporto? Excelente, $N! Aposto que os goblins ficaram surpresos com a encomenda! Vamos torcer para a toxina chegar ao quartel general.\n\nVocê prestou um grande serviço ao seu povo e sugiro não carregar nenhuma culpa por ter envenenado a Empreendimentos S.A. Isso é pouco para eles.\n\nE se tem um conselho que os Renegados podem dar ao aliados, é esse:\n\nNão evite os caminhos sombrios... se eles o levaram à vitória."
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -512,6 +780,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -539,6 +824,11 @@
     },
     "ruRU": {
       "description": "Отрава готова. Остается только ее доставить адресату. И это придется сделать тебе, {name}.\n\nУ Торговой Компании есть средства доставки сообщений и легкого груза от штаб-квартиры до Когтистых гор. Скорее всего, это маленький аэропорт, подходящий не для дирижабля, а для ветролета. Обыщи все области Когтистых гор, находящиеся под контролем Торговой Компании, и найди этот аэропорт, если он существует. Как найдешь, помести туда отраву.\n\nПоложишь – беги оттуда.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Отрава готова. Остается только ее доставить адресату. И это придется сделать тебе, $N.\n\nУ Торговой Компании есть средства доставки сообщений и легкого груза от штаб-квартиры до Когтистых гор. Скорее всего, это маленький аэропорт, подходящий не для дирижабля, а для ветролета. Обыщи все области Когтистых гор, находящиеся под контролем Торговой Компании, и найди этот аэропорт, если он существует. Как найдешь, помести туда отраву.\n\nПоложишь – беги оттуда.",
+        "7492b657e80b63c7d09e": "$N. Ты должен найти аэропорт Торговой Компании, конечно, если он существует.",
+        "d3a30956303b05af1773": "Ты нашел аэропорт? Молодец, $N! Отличный сюрприз ждал гобинов! Будем надеяться, что яд доберется до их штаб-квартиры.\n\nТы оказал своему народу неоценимую услугу, и пусть тебя не мучает совесть из-за отравления Торговой Компании. Они еще не того заслуживают.\n\nИ вот какой мудрости союзникам Отрекшихся стоит поучиться:\n\nНе бойся темных дорог... если они ведут к победе."
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -555,6 +845,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -582,6 +890,11 @@
     },
     "svSE": {
       "description": "Toxinet är klart. Allt som återstår är att leverera det. Du, {name}, ska stå för leveransen.\n\nÄventyrsbolaget måste ha något sätt att skicka meddelanden och lätt last mellan sitt högkvarter och sin verksamhet i Stenklobergen. Troligen är det en liten flygplats, inte stor nog för en zeppelinare men kanske för en flygmaskin. Du måste söka igenom de delar av Stenklobergen som Äventyrsbolaget behärskar och hitta flygplatsen, om den finns. Om du hittar den, ställ toxinet där.\n\nStäll dit det, och spring.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Giftet är klart. Det enda som återstår är leveransen. Du, $N, måste sköta den.$B$BVenture Company måste ha ett sätt att skicka meddelanden och lätt last mellan högkvarteret och verksamheten i Stonetalon. Det är troligen en liten lufthamn, för liten för en zeppelinare men kanske stor nog för en flygmaskin. Sök igenom områdena i Stonetalon som Venture Company kontrollerar och hitta hamnen om den finns. Placera giftet där om du hittar den.$B$BPlacera det och spring.",
+        "7492b657e80b63c7d09e": "Du måste hitta Venture Companys flygplats om den finns, $N.",
+        "d3a30956303b05af1773": "Hittade du hamnen? Bra gjort, $N! Jag är säker på att goblinerna blev överraskade av din leverans! Låt oss hoppas att giftet hittar vägen till deras högkvarter.$B$BDu har tjänat ditt folk väl, och jag råder dig att ignorera eventuell skuld över att ha förgiftat Venture Company. De förtjänar mycket värre.$B$BOm de Övergivna kan lära sina allierade en enda visdom, är det denna:$B$BSky inte mörka vägar... om de leder till seger."
+      },
       "eventObjectiveLabel": "Placera den giftiga dimspridaren",
       "objectiveLines": [
         {
@@ -599,6 +912,21 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -630,6 +958,11 @@
     },
     "trTR": {
       "description": "Toksin hazır. Geriye yalnızca teslimi kalıyor. Bu teslimi sen yapacaksın, {name}.\n\nVenture Company'nin karargâhı ile Stonetalon'daki faaliyetleri arasında mesaj ve hafif yük taşımanın bir yolu olmalı. Muhtemelen küçük bir gök limanı -- zeplin için yeterince büyük değil ama belki bir uçan makine için yeter. Stonetalon'da Venture Company'nin denetimindeki bölgeleri araştırıp, varsa bu gök limanını bulmalısın. Bulursan toksini oraya bırak.\n\nBırak ve kaç.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Zehir hazır. Geriye yalnızca teslimatı kaldı. Bu teslimatı sen yapmalısın, $N.$B$BVenture Company'nin karargâhı ile Stonetalon'daki operasyonları arasında mesaj ve hafif yük göndermenin bir yolu olmalı. Muhtemelen zeplin için fazla küçük ama bir uçan makineye uygun olabilecek küçük bir hava limanıdır. Stonetalon'da şirketin kontrolündeki bölgeleri ara ve varsa bu limanı bul. Bulursan zehri oraya bırak.$B$BBırak ve kaç.",
+        "7492b657e80b63c7d09e": "Varsa Venture Company havaalanını bulmalısın, $N.",
+        "d3a30956303b05af1773": "Limanı buldun mu? Aferin, $N! Eminim goblinler teslimatına çok şaşırmıştır! Umarım zehir karargâhlarına kadar ulaşır.$B$BHalkına iyi hizmet ettin ve Venture Company'yi zehirlediğin için duyabileceğin suçluluğu görmezden gelmeni tavsiye ederim. Çok daha kötüsünü hak ediyorlar.$B$BTerk Edilmişlerin müttefiklerine öğretebileceği tek bir bilgelik varsa o da şudur:$B$BZafere çıkıyorsa... karanlık yollardan çekinme."
+      },
       "eventObjectiveLabel": "Zehirli Sis Püskürtücüsünü yerleştir",
       "objectiveLines": [
         {
@@ -647,6 +980,21 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -676,6 +1024,11 @@
     },
     "ukUA": {
       "description": "Токсин готовий. Залишилося лише доставити його. І саме ти, {name}, це зробиш.\n\nУ ТзНБ \"Авантюра\" має бути засіб для доставки повідомлень і легких вантажів між штаб-квартирою і Каміннопазуристими горами. Ймовірно, це невеликий повітряний порт — недостатньо великий для дирижабля, але, можливо, придатний для літальних апаратів. Ти маєш обшукати підконтрольні ТзНБ \"Авантюра\" території Каміннопазуристих гір і знайти цей повітряний порт, якщо він існує. Як знайдеш його — розмісти там токсин.\n\nРозмісти його і швидко тікай.",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "Токсин готовий. Залишилося його доставити. Це маєш зробити ти, $N.$B$BКомпанія Venture мусить мати спосіб надсилати повідомлення й легкий вантаж між штабом і своїми підприємствами в Кам'янокігтих горах. Імовірно, це невеликий повітряний порт: замалий для дирижабля, але, можливо, придатний для літального апарата. Обшукай райони гір під контролем компанії й знайди порт, якщо він існує. Знайдеш — залиш там токсин.$B$BЗалиш і тікай.",
+        "7492b657e80b63c7d09e": "Ти маєш знайти летовище компанії Venture, якщо воно існує, $N.",
+        "d3a30956303b05af1773": "Ти знайшов порт? Чудово, $N! Певен, гобліни були дуже здивовані твоєю доставкою! Сподіваймося, токсин дістанеться їхнього штабу.$B$BТи добре послужив своєму народові, і я раджу відкинути будь-яке почуття провини за отруєння компанії Venture. Вони заслуговують на значно гірше.$B$BІ якщо Зречені можуть навчити союзників хоч однієї мудрості, то ось вона:$B$BНе цурайтеся темних шляхів... якщо вони ведуть до перемоги."
+      },
       "eventObjectiveLabel": "Розмістіть розсіювач токсичного туману",
       "objectiveLines": [
         {
@@ -694,6 +1047,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "e617dce8dedbbbbb9bccad9e42246325e5a92cb751a3db9af93caf910fade369"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -725,6 +1093,11 @@
     },
     "zhCN": {
       "description": "毒药已经准备好，接下来就是如何下毒的问题了。{name}，你来负责这个工作。\n\n风险投资公司的指挥部和石爪山的基地之间肯定有一条快速传送消息和小型货物的运输线。我想那应该是一个小型空港，它对地精飞艇来说可能还不够大，不过应付一般的飞行器应该是绰绰有余了。到风险投资公司控制下的石爪山地区查查看，如果确实有这样的空港存在的话，就把毒药放在那里。\n\n放下毒药就赶快回来。",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "毒药已经准备好，接下来就是如何下毒的问题了。$N，你来负责这个工作。\n\n风险投资公司的指挥部和石爪山的基地之间肯定有一条快速传送消息和小型货物的运输线。我想那应该是一个小型空港，它对地精飞艇来说可能还不够大，不过应付一般的飞行器应该是绰绰有余了。到风险投资公司控制下的石爪山地区查查看，如果确实有这样的空港存在的话，就把毒药放在那里。\n\n放下毒药就赶快回来。",
+        "7492b657e80b63c7d09e": "如果风险投资公司在那里确实有一座空港的话，你就必须找到它，$N。",
+        "d3a30956303b05af1773": "找到空港了?干得好，$N!这些哥布林一定会对你送去的东西大吃一惊!希望这个毒药能够流入他们的总指挥部。\n\n你为你的人民作出了贡献。我建议你还是忘掉给风险投资公司下毒所带来的负罪感，他们绝对是罪有应得。\n\n如果被遗忘者让它的同盟领悟了一些事情，那就是:\n\n不要在黑暗之路面前退缩……只要这条最终通向的是成功。\n"
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -741,6 +1114,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -768,6 +1159,11 @@
     },
     "zhTW": {
       "description": "毒藥已經準備好，接下來就是如何下毒的問題了。{name}，你來負責這個工作。\n\n風險投資公司的指揮部和石爪山的基地之間肯定有一條快速傳送消息和小型貨物的運輸線。我想那應該是一個小型空港，它對地精飛艇來說可能還不夠大，不過應付一般的飛行器應該是綽綽有餘了。到風險投資公司控制下的石爪山地區查查看，如果確實有這樣的空港存在的話，就把毒藥放在那裡。\n\n放下毒藥就趕快回來。",
+      "dialogue": {
+        "180fc533f8eb11f61dc2": "毒藥已經準備好，接下來就是如何下毒的問題了。$N，你來負責這個工作。\n\n風險投資公司的指揮部和石爪山的基地之間肯定有一條快速傳送消息和規模貨物的運輸線。我想那應該是一個規模空港，它對地精飛艇來說可能還不夠大，不過應付一般的飛行器應該是綽綽有餘了。到風險投資公司控制下的石爪山地區查查看，如果確實有這樣的空港存在的話，就把毒藥放在那裡。\n\n放下毒藥就趕快回來。",
+        "7492b657e80b63c7d09e": "如果風險投資公司在那裏確實有一座空港的話，你就必須找到它，$N。",
+        "d3a30956303b05af1773": "找到空港了?幹得好，$N!這些哥布林一定會對你送去的東西大喫一驚!希望這個毒藥能夠流入他們的總指揮部。\n\n你爲你的人民作出了貢獻。我建議你還是忘掉給風險投資公司下毒所帶來的負罪感，他們絕對是罪有應得。\n\n如果被遺忘者讓它的同盟領悟了一些事情，那就是:\n\n不要在黑暗之路面前退縮……只要這條最終通向的是成功。"
+      },
       "eventObjectiveLabel": "Place the Toxic Fogger",
       "objectiveLines": [
         {
@@ -784,6 +1180,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.180fc533f8eb11f61dc2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.7492b657e80b63c7d09e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d3a30956303b05af1773": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

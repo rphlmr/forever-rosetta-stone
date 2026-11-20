@@ -1,8 +1,36 @@
 {
   "areaId": 38,
+  "dialogueContexts": {
+    "63db31e678698e811165": {
+      "lineId": "q:1338:progress",
+      "npcId": 5413,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "b45313948295650971a5": {
+      "lineId": "q:1338:accept",
+      "npcId": 1343,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "faefcbb8f72ca63a1bd3": {
+      "lineId": "q:1338:complete",
+      "npcId": 5413,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Je tu jeden trpasličí zbrojíř, jehož práci nesmírně obdivuji. Jmenuje se Furen Longbeard a jeho um nemá obdoby. Potřebuju nový štít a musím mít právě jeden od něj!\n\nPotíž je v tom... že Furen je daleko na jihu, v Dwarven District ve Stormwindu. V lidských zemích! Nechápu, proč by žil tam, tak daleko od Ironforge. Lidé mu musí platit královské výkupné, aby ho tam udrželi!\n\nTak jestli chceš cestovat a nevadí ti vydělat si, doručíš Furenovi mou žádost o štít?",
+      "dialogue": {
+        "63db31e678698e811165": "Dopis z trpasličích zemí? Zajímalo by mě, kdo píše z tak dalekého severu...$B$BProsím, ukaž mi objednávku.",
+        "b45313948295650971a5": "Znám jednoho trpasličího zbrojíře, jehož práci velmi obdivuji. Jmenuje se Furen Dlouhovous a jeho umění nemá konkurenci. Potřebuji nový štít a musí být od něj!$B$BProblém je, že Furen žije daleko na jihu v trpasličí čtvrti Stormwindu. V lidských zemích! Nedovedu si představit, proč by žil tak daleko od Ironforge. Lidé mu za to musejí platit královské výkupné!$B$BChceš-li cestovat a nevadí ti vydělat si pár peněz, doručíš Furenovi mou žádost o štít?",
+        "faefcbb8f72ca63a1bd3": "Ach, žádost od jednoho ze Stormpikeů. To je hrdý klan plný kvalitních trpaslíků. A také bohatých.$B$BDěkuji, $N. Do konce dne se pustím do štítu horala Stormpikea."
+      },
       "summary": "Přines Stormpike's Request Furenu Longbeardovi do Stormwindu.",
       "title": "Stormpikova objednávka",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +75,11 @@
     },
     "daDK": {
       "description": "Der er en dværgerustningssmed, hvis arbejde jeg beundrer meget. Han hedder Furen Longbeard, og hans dygtighed er uden lige. Jeg har brug for et nyt skjold, og jeg må have et af hans!\n\nProblemet er... at Furen er langt mod syd, i dværgekvarteret i Stormwind. I menneskenes lande! Jeg kan ikke forestille mig, hvorfor han ville bo der, så langt fra Ironforge. Menneskene må betale ham en konges løsesum for at holde ham der!\n\nSå hvis du vil rejse og ikke har noget imod at tjene nogle penge, vil du så overbringe Furen min anmodning om et skjold?",
+      "dialogue": {
+        "63db31e678698e811165": "Et brev fra dværgenes lande? Gad vide, hvem der skriver fra så langt mod nord...$B$BLad mig se bestillingen.",
+        "b45313948295650971a5": "Der er en dværgesmed, hvis arbejde jeg beundrer meget. Han hedder Furen Longbeard, og hans evner er uden lige. Jeg behøver et nyt skjold, og det skal være et af hans!$B$BProblemet er, at Furen er langt mod syd i dværgekvarteret i Stormwind. I menneskenes land! Jeg kan ikke forestille mig, hvorfor han bor så langt fra Ironforge. Menneskene må betale ham en konges løsesum for at holde ham der!$B$BHvis du gerne vil rejse og tjene lidt penge, vil du så bringe Furen min bestilling på et skjold?",
+        "faefcbb8f72ca63a1bd3": "Ah, en bestilling fra en af Stormpike-klanen. Det er en stolt klan fuld af gode dværge. Rige også.$B$BTak, $N. Jeg begynder på bjergvagt Stormpikes skjold inden dagens ende."
+      },
       "summary": "Bring Stormpikes anmodning til Furen Longbeard i Stormwind.",
       "title": "Stormpikes ordre",
       "translationMetadata": {
@@ -41,6 +89,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b5bb12a5f9d00b8e583cdc8476ca2e9493ab1b28dbda7c9d5987a958dd15d37a"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +122,11 @@
     },
     "deDE": {
       "description": "Es gibt einen Rüstungsschmied bei den Zwergen, dessen Arbeit ich sehr bewundere. Sein Name ist Furen Longbeard und seine Fertigkeit unübertroffen. Ich brauche einen neuen Schild und muss einen von ihm haben!\n\nDas Problem ist... Furen lebt weit im Süden im Zwergendistrikt von Stormwind. Im Menschenland! Ich kann mir nicht vorstellen, warum er dort lebt, so weit weg von Ironforge. Die Menschen müssen ihn fürstlich bezahlen, damit er dort bleibt!\n\nWenn Ihr reisen wollt und nichts gegen das Geldverdienen habt, würdet Ihr Furen dann meine Bitte nach einem Schild überbringen?",
+      "dialogue": {
+        "63db31e678698e811165": "Ein Brief aus dem Zwergenland? Ich frage mich, wer von so weit aus dem Norden kommen mag. . . \n \n Bitte lasst mich die Bestellung sehen. ",
+        "b45313948295650971a5": "Es gibt einen Rüstungsschmied bei den Zwergen, dessen Arbeit ich sehr bewundere. Sein Name ist Furen Longbeard und seine Fertigkeit unübertroffen. Ich brauche einen neuen Schild und muss einen von ihm haben!\n\nDas Problem ist... Furen lebt weit im Süden im Zwergendistrikt von Stormwind. Im Menschenland! Ich kann mir nicht vorstellen, warum er dort lebt, so weit weg von Ironforge. Die Menschen müssen ihn fürstlich bezahlen, damit er dort bleibt!\n\nWenn Ihr reisen wollt und nichts gegen das Geldverdienen habt, würdet Ihr Furen dann meine Bitte nach einem Schild überbringen?",
+        "faefcbb8f72ca63a1bd3": "Ah, eine Bitte von einem der Stormpikes. Das ist ein stolzer Klan erstklassiger Zwerge. Und reich sind sie auch. \n \n Danke, $N. Ich werde noch heute Abend mit der Arbeit am Schild von Gebirgsjäger Stormpike beginnen. "
+      },
       "summary": "Bringt Stormpikes Bitte zu Furen Longbeard in Stormwind.",
       "title": "Stormpikes Bestellung",
       "translationMetadata": {
@@ -67,6 +135,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +169,11 @@
     },
     "enUS": {
       "description": "There is a dwarven armorsmith whose work I admire greatly.  His name is Furen Longbeard, and his skill is unmatched.  I need a new shield, and I must have one of his!\n\nThe problem is... Furen is far to the south, in the dwarven district within Stormwind.  In human lands!  I can't imagine why he would live there, so far from Ironforge.  The humans must pay him a king's ransom to keep him there!\n\nSo, if you want to travel and don't mind making some money, then will you send Furen my request for a shield?",
+      "dialogue": {
+        "63db31e678698e811165": "A letter from the dwarven lands?  I wonder who would call from so far to the north...$B$BPlease, let me see the order.",
+        "b45313948295650971a5": "There is a dwarven armorsmith whose work I admire greatly.  His name is Furen Longbeard, and his skill is unmatched.  I need a new shield, and I must have one of his!$B$BThe problem is... Furen is far to the south, in the dwarven district within Stormwind.  In human lands!  I can't imagine why he would live there, so far from Ironforge.  The humans must pay him a king's ransom to keep him there!$B$BSo, if you want to travel and don't mind making some money, then will you send Furen my request for a shield?",
+        "faefcbb8f72ca63a1bd3": "Ah, a request from one of the Stormpikes.  That's a proud clan, full of quality dwarves.  Rich ones, too.$B$BThank you, $N.  I'll get to work on Mountaineer Stormpike's shield by the end of the day."
+      },
       "summary": "Bring Stormpike's Request to Furen Longbeard in Stormwind.",
       "title": "Stormpike's Order",
       "translationMetadata": {
@@ -91,6 +182,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +217,11 @@
     },
     "esES": {
       "description": "Hay un forjador de armaduras enano cuyo trabajo me gusta mucho. Se llama Furen Barbalarga y es el mejor de su gremio. Necesito un escudo nuevo, y quiero que me lo haga él.\n\nSolo hay un problema... Furen vive muy al sur, en el Distrito de los Enanos de Ventormenta. ¡En tierra humana! No entiendo por qué vive ahí, tan lejos de Forjaz. ¡Será que los humanos le pagan una fortuna!\n\nSi te apetece viajar y ganar algo de dinero, ve a ver a Furen para hacer mi pedido de un escudo.",
+      "dialogue": {
+        "63db31e678698e811165": "¿Una carta de tierras enanas? No sé quién me escribirá de tan al norte...\n\nA ver, déjame ese pedido.",
+        "b45313948295650971a5": "Hay un forjador de armaduras enano cuyo trabajo me gusta mucho. Se llama Furen Barbalarga y es el mejor de su gremio. Necesito un escudo nuevo, y quiero que me lo haga él.\n\nSolo hay un problema... Furen vive muy al sur, en el Distrito de los Enanos de Ventormenta. ¡En tierra humana! No entiendo por qué vive ahí, tan lejos de Forjaz. ¡Será que los humanos le pagan una fortuna!\n\nSi te apetece viajar y ganar algo de dinero, ve a ver a Furen para hacer mi pedido de un escudo.",
+        "faefcbb8f72ca63a1bd3": "Ah, un pedido de Pico Tormenta... Una de las mejores familias de enanos y también una de las más ricas.\n\nGracias, $n. Esta tarde me pondré con el escudo."
+      },
       "summary": "Lleva el pedido de Pico Tormenta a Furen Barbalarga a Ventormenta.",
       "title": "Un pedido de Pico Tormenta",
       "translationMetadata": {
@@ -116,6 +230,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +264,11 @@
     },
     "esMX": {
       "description": "Hay un forjador de armaduras enano cuyo trabajo me gusta mucho. Se llama Furen Barbalarga y es el mejor de su gremio. Necesito un escudo nuevo, y quiero que me lo haga él.\n\nSolo hay un problema... Furen vive muy al sur, en el Distrito de los Enanos de Ventormenta. ¡En tierra humana! No entiendo por qué vive ahí, tan lejos de Forjaz. ¡Será que los humanos le pagan una fortuna!\n\nSi te apetece viajar y ganar algo de dinero, ve a ver a Furen para hacer mi pedido de un escudo.",
+      "dialogue": {
+        "63db31e678698e811165": "¿Una carta de tierras enanas? No sé quién me escribirá de tan al norte...\n\nA ver, déjame ese pedido.",
+        "b45313948295650971a5": "Hay un forjador de armaduras enano cuyo trabajo me gusta mucho. Se llama Furen Barbalarga y es el mejor de su gremio. Necesito un escudo nuevo, y quiero que me lo haga él.\n\nSolo hay un problema... Furen vive muy al sur, en el Distrito de los Enanos de Ventormenta. ¡En tierra humana! No entiendo por qué vive ahí, tan lejos de Forjaz. ¡Será que los humanos le pagan una fortuna!\n\nSi te apetece viajar y ganar algo de dinero, ve a ver a Furen para hacer mi pedido de un escudo.",
+        "faefcbb8f72ca63a1bd3": "Ah, un pedido de un Pico Tormenta... Es un orgulloso clan que cuenta con enanos de gran calidad. Ricos también.\n\nGracias, $N. Al final del día me pondré con el pedido del escudo del montaraz Pico Tormenta."
+      },
       "summary": "Lleva el pedido de Pico Tormenta a Furen Barbalarga a Ventormenta.",
       "title": "Un pedido de Pico Tormenta",
       "translationMetadata": {
@@ -140,6 +277,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +311,11 @@
     },
     "frFR": {
       "description": "Il y a un forgeron nain dont j'admire beaucoup le travail. Il s'appelle Furen Longbeard et ses compétences sont inégalables. J'ai besoin d'un nouveau bouclier et je veux l'un des siens !\n\nLe problème… Furen est loin dans le sud, dans le quartier des nains de Stormwind. Chez les humains ! Je ne comprends pas pourquoi il vit là-bas, si loin de Forgefer. Les humains doivent lui faire un pont d’or pour qu'il accepte de rester !\n\nSi vous avez envie de voyager, et ne pensez pas à demander une récompense, alors pourquoi ne porteriez-vous pas ma commande de bouclier à Furen ?",
+      "dialogue": {
+        "63db31e678698e811165": "Une lettre en provenance du pays ? Je me demande qui peut bien m'écrire de si loin dans le nord…\n \n Excusez-moi, je dois lire ce courrier. ",
+        "b45313948295650971a5": "Il y a un forgeron nain dont j'admire beaucoup le travail. Il s'appelle Furen Longbeard et ses compétences sont inégalables. J'ai besoin d'un nouveau bouclier et je veux l'un des siens !\n\nLe problème… Furen est loin dans le sud, dans le quartier des nains de Stormwind. Chez les humains ! Je ne comprends pas pourquoi il vit là-bas, si loin d'Ironforge. Les humains doivent lui faire un pont d’or pour qu'il accepte de rester !\n\nSi vous avez envie de voyager, et ne pensez pas à demander une récompense, alors pourquoi ne porteriez-vous pas ma commande de bouclier à Furen ?",
+        "faefcbb8f72ca63a1bd3": "Ah ! Une requête d'un des Stormpike. C'est un fier clan, plein des qualités appréciées par les nains. Riches aussi. \n \n Merci, $N. Je dois me mettre au travail sur le bouclier du Montagnard Stormpike avant la fin du jour. "
+      },
       "summary": "Porter la commande de Foudrepique à Furen Longbeard à Hurlevent.",
       "title": "La mission de Foudrepique",
       "translationMetadata": {
@@ -164,6 +324,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -181,6 +359,11 @@
     },
     "hrHR": {
       "description": "Postoji patuljački oklopar čijem se radu silno divim. Zove se Furen Longbeard i njegova je vještina nenadmašna. Trebam novi štit i moram imati jedan njegov!\n\nProblem je... Furen je daleko na jugu, u Patuljačkoj četvrti Stormwinda. U ljudskim zemljama! Ne mogu zamisliti zašto bi živio ondje, tako daleko od Ironforgea. Ljudi mu sigurno plaćaju kraljevsku otkupninu da bi ostao!\n\nDakle, ako želiš putovati i nije ti mrsko zaraditi nešto novca, hoćeš li Furenu prenijeti moj zahtjev za štitom?",
+      "dialogue": {
+        "63db31e678698e811165": "Pismo iz patuljačkih zemalja? Pitam se tko se javlja s tako dalekog sjevera...$B$BDaj da vidim narudžbu.",
+        "b45313948295650971a5": "Postoji patuljački oklopar čijem se radu jako divim. Zove se Furen Longbeard i njegova je vještina nenadmašna. Treba mi novi štit i mora biti njegov!$B$BProblem je što je Furen daleko na jugu, u patuljačkoj četvrti Stormwinda. U ljudskim zemljama! Ne mogu zamisliti zašto živi tako daleko od Ironforgea. Ljudi mu sigurno plaćaju pravo bogatstvo da ostane tamo!$B$BAko želiš putovati i pritom zaraditi, hoćeš li odnijeti Furenu moj zahtjev za štit?",
+        "faefcbb8f72ca63a1bd3": "Ah, zahtjev jednog od Stormpikea. To je ponosan klan pun vrsnih patuljaka. I bogatih.$B$BHvala, $N. Do kraja dana počet ću raditi na štitu planinara Stormpikea."
+      },
       "summary": "Donesi Stormpikeov zahtjev Furenu Longbeardu u Stormwindu.",
       "title": "Stormpikeova narudžba",
       "translationMetadata": {
@@ -190,6 +373,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b5bb12a5f9d00b8e583cdc8476ca2e9493ab1b28dbda7c9d5987a958dd15d37a"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -208,6 +406,11 @@
     },
     "itIT": {
       "description": "C'è un Nano Fabbro d'Armature di cui ammiro molto il lavoro. Si chiama Furen Barbalunga e non conosce rivali. Mi serve un nuovo scudo e voglio uno dei suoi!\n\nIl problema è che... Furen vive a sud, nel Distretto dei Nani a Roccavento. In territorio umano! Non riesco a immaginare perché viva là, così lontano da Forgiardente. Gli Umani lo devono pagare una fortuna!\n\nQuindi, se vuoi viaggiare e t'interessa fare qualche soldo, perché non consegni a Furen la richiesta del mio scudo?",
+      "dialogue": {
+        "63db31e678698e811165": "Una lettera dalle terre dei nani? Chissà chi mi scrive da così lontano, su al nord...\n\nTi prego, fammi vedere l'ordinazione.",
+        "b45313948295650971a5": "C'è un nano che forgia armature, e il suo lavoro lo ammiro moltissimo. Si chiama Furen Longbeard, e la sua abilità non ha rivali. Mi serve uno scudo nuovo, e deve essere uno dei suoi!\n\nIl problema è che... Furen è molto più a sud, nel quartiere dei nani di Stormwind. In terra umana! Non riesco a immaginare perché viva là, così lontano da Ironforge. Gli umani devono pagarlo a peso d'oro per tenerlo lì!\n\nAllora, se hai voglia di viaggiare e non ti dispiace guadagnare qualcosa, gli porteresti la mia richiesta di uno scudo?",
+        "faefcbb8f72ca63a1bd3": "Ah, una richiesta da uno degli Stormpike. È un clan fiero, pieno di nani in gamba. E anche ricchi.\n\nGrazie, $N. Entro fine giornata mi metto al lavoro sullo scudo del Montanaro Stormpike."
+      },
       "summary": "Porta la richiesta di Stormpike a Furen Longbeard a Stormwind.",
       "title": "L'ordine di Piccatonante",
       "translationMetadata": {
@@ -216,6 +419,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -233,6 +454,11 @@
     },
     "koKR": {
       "description": "내가 아주 존경하는 드워프 방어구 제작자가 한 명 있소. 푸렌 롱비어드라고 하는데, 그의 기술은 타의 추종을 불허하지. 난 그가 만든 새 방패를 원한다오!\n\n그런데 문제는... 그가 남쪽으로 멀리 떨어져 있는 스톰윈드 내의 드워프 지구에 살고 있다는 거요. 인간의 땅에 말이오! 그가 왜 아이언포지에서 그렇게 멀리 떨어진 곳에 사는지 도무지 모르겠소. 필시 그곳 인간들이 그를 잡아두기 위해 거액을 쏟아 붓고 있겠지!\n\n여행도 하고 돈도 벌 생각이 있다면 푸렌 씨를 찾아가 내 방패를 좀 주문해 주겠소?",
+      "dialogue": {
+        "63db31e678698e811165": "드워프의 땅에서 온 편지라고 했나? 그 먼 북쪽 땅에서 누가 날 찾는 건지 궁금하군...\n\n어디 주문서를 한번 보세.",
+        "b45313948295650971a5": "내가 아주 존경하는 드워프 방어구 제작자가 한 명 있소. 푸렌 롱비어드라고 하는데, 그의 기술은 타의 추종을 불허하지. 난 그가 만든 새 방패를 원한다오!\n\n그런데 문제는... 그가 남쪽으로 멀리 떨어져 있는 스톰윈드 내의 드워프 지구에 살고 있다는 거요. 인간의 땅에 말이오! 그가 왜 아이언포지에서 그렇게 멀리 떨어진 곳에 사는지 도무지 모르겠소. 필시 그곳 인간들이 그를 잡아두기 위해 거액을 쏟아 붓고 있겠지!\n\n여행도 하고 돈도 벌 생각이 있다면 푸렌 씨를 찾아가 내 방패를 좀 주문해 주겠소?",
+        "faefcbb8f72ca63a1bd3": "아, 스톰파이크 일가 중 한 명이 보낸 주문서로군그래. 스톰파이크 집안은 뛰어난 드워프들을 많이 배출한 훌륭한 집안이지. 부자들이기도 하고...\n\n고맙네. 오늘 내로 산악경비대 스톰파이크에게 줄 방패를 만들어야겠어."
+      },
       "summary": "스톰윈드에 있는 푸렌 롱비어드에게 스톰파이크의 주문서를 가져가야 합니다.",
       "title": "스톰파이크의 주문서",
       "translationMetadata": {
@@ -241,6 +467,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -257,6 +501,11 @@
     },
     "plPL": {
       "description": "Jest krasnoludzki płatnerz, którego pracę bardzo podziwiam. Nazywa się Furen Longbeard i nie ma sobie równych. Potrzebuję nowej tarczy, koniecznie jego roboty!\n\nProblem w tym, że Furen jest daleko na południu, w krasnoludzkiej dzielnicy Stormwind. Na ludzkich ziemiach! Nie pojmuję, dlaczego mieszka tak daleko od Ironforge. Ludzie muszą płacić królewski okup, żeby go tam zatrzymać!\n\nJeśli chcesz podróżować i przy okazji zarobić, zaniesiesz mu prośbę o tarczę?",
+      "dialogue": {
+        "63db31e678698e811165": "List z ziem krasnoludów? Ciekawe, kto pisze z tak dalekiej północy...$B$BProszę, pokaż mi zamówienie.",
+        "b45313948295650971a5": "Jest pewien krasnoludzki płatnerz, którego pracę bardzo podziwiam. Nazywa się Furen Longbeard i nie ma sobie równych. Potrzebuję nowej tarczy i musi być jego dziełem!$B$BProblem w tym, że Furen mieszka daleko na południu, w krasnoludzkiej dzielnicy Stormwind. Na ziemiach ludzi! Nie rozumiem, czemu mieszka tak daleko od Ironforge. Ludzie muszą mu płacić królewską sumę, by tam został!$B$BJeśli chcesz podróżować i trochę zarobić, czy przekażesz Furenowi moje zamówienie na tarczę?",
+        "faefcbb8f72ca63a1bd3": "Ach, zamówienie od jednego ze Stormpike’ów. To dumny klan pełen porządnych krasnoludów. Bogatych też.$B$BDziękuję, $N. Jeszcze dziś zacznę pracę nad tarczą górskiego strażnika Stormpike’a."
+      },
       "summary": "Przynieś prośbę Stormpike'a Furenowi Longbeardowi w Stormwind.",
       "title": "Zamówienie Stormpike'a",
       "translationMetadata": {
@@ -266,6 +515,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b5bb12a5f9d00b8e583cdc8476ca2e9493ab1b28dbda7c9d5987a958dd15d37a"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -284,6 +548,11 @@
     },
     "ptBR": {
       "description": "Eu conheço um ferreiro de armaduras cujo trabalho admiro muito. O nome dele é Furen Barbalonga, e habilidade como a dele não há. Estou precisando de um escudo novo, quero um dos dele!\n\nMas tem um problema... O Furen mora longe, lá para o sul, no distrito enânico de Ventobravo. Em terras humanas! Nem imagino o que o fez morar tão longe de Altaforja. Os humanos devem pagar muito bem para segurar um anão de qualidade como ele por lá!\n\nEntão, se você quer viajar e ainda ganhar umas moedinhas, poderia entregar o meu pedido para o Furen?",
+      "dialogue": {
+        "63db31e678698e811165": "Uma carta das terras enânicas? Quem será que me enviaria um pedido de tão longe, lá do norte?\n\nDeixe-me ver esse pedido.",
+        "b45313948295650971a5": "Eu conheço um ferreiro de armaduras cujo trabalho admiro muito. O nome dele é Furen Barbalonga, e habilidade como a dele não há. Estou precisando de um escudo novo, quero um dos dele!\n\nMas tem um problema... O Furen mora longe, lá para o sul, no distrito enânico de Ventobravo. Em terras humanas! Nem imagino o que o fez morar tão longe de Altaforja. Os humanos devem pagar muito bem para segurar um anão de qualidade como ele por lá!\n\nEntão, se você quer viajar e ainda ganhar umas moedinhas, poderia entregar o meu pedido para o Furen?",
+        "faefcbb8f72ca63a1bd3": "Ah, um pedido de um dos Lançatroz. É um clã nobre, com muitos anões de qualidade. E ricos também.\n\nObrigado, $N. Vou começar a trabalhar no escudo do Montanhista Lançatroz até o final do dia."
+      },
       "summary": "Entregue o Pedido de Lançatroz para Furen Barbalonga em Ventobravo.",
       "title": "Ordens dos Lançatroz",
       "translationMetadata": {
@@ -292,6 +561,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -308,6 +595,11 @@
     },
     "ruRU": {
       "description": "Есть один дворф-бронник, чья работа меня глубоко восхищает. Его зовут Фьюрен Длиннобород, и такого искусника еще поискать. Мне нужен новый щит, и я хотел бы сделать заказ у него!\n\nПроблема в том... что он живет далеко на юге, в Квартале Дворфов в Штормграде. В человеческих землях! Представления не имею, зачем он поселился так далеко от Стальгорна. Должно быть, люди платят немалую мзду, лишь бы удержать его у себя!\n\nЕсли ты любишь путешествовать и не прочь подзаработать, может, передашь мой заказ Фьюрену?",
+      "dialogue": {
+        "63db31e678698e811165": "Письмо из дворфийских земель? Интересно, кто это пишет мне из такой дали...\n\nПозволь взглянуть на заказ.",
+        "b45313948295650971a5": "Есть один дворф-бронник, чья работа меня глубоко восхищает. Его зовут Фьюрен Длиннобород, и такого искусника еще поискать. Мне нужен новый щит, и я хотел бы сделать заказ у него!\n\nПроблема в том... что он живет далеко на юге, в Квартале Дворфов в Штормграде. В человеческих землях! Представления не имею, зачем он поселился так далеко от Стальгорна. Должно быть, люди платят немалую мзду, лишь бы удержать его у себя!\n\nЕсли ты любишь путешествовать и не прочь подзаработать, может, передашь мой заказ Фьюрену?",
+        "faefcbb8f72ca63a1bd3": "А, заказ от дворфа Грозовой Вершины. Это гордый клан, славный крепкими, сильными дворфами. И их богатством.\n\nБольшое спасибо, $N. Я сегодня же вечером займусь щитом для горного пехотинца Грозовой Вершины."
+      },
       "summary": "Отнесите заказ Грозовой Вершины Фьюрену Длиннобороду в Штормград.",
       "title": "Заказ Грозовой Вершины",
       "translationMetadata": {
@@ -316,6 +608,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -332,6 +642,11 @@
     },
     "svSE": {
       "description": "Det finns en dvärgisk rustningssmed vars arbete jag beundrar storligen. Han heter Furen Longbeard, och hans skicklighet är utan like. Jag behöver en ny sköld, och den måste vara hans verk!\n\nProblemet är bara att Furen bor långt söderut, i Dvärgdistriktet i Stormvind. I människornas land! Jag förstår inte varför han bor där, så långt från Järnsmedjan. Människorna måste betala honom en kungsränta för att behålla honom!\n\nSå om du vill ut och resa och inte har något emot att tjäna en slant, vill du då föra min förfrågan om en sköld vidare till Furen?",
+      "dialogue": {
+        "63db31e678698e811165": "Ett brev från dvärgarnas länder? Jag undrar vem som hör av sig från så långt norrut...$B$BLåt mig se beställningen.",
+        "b45313948295650971a5": "Det finns en dvärgisk rustningssmed vars arbete jag beundrar mycket. Han heter Furen Longbeard och hans skicklighet saknar motstycke. Jag behöver en ny sköld och den måste vara hans!$B$BProblemet är att Furen finns långt söderut i dvärgkvarteret i Stormwind. I människornas land! Jag kan inte förstå varför han bor så långt från Ironforge. Människorna måste betala honom en kunglig lösensumma för att behålla honom där!$B$BSå om du vill resa och gärna tjänar lite pengar, kan du lämna min sköldbeställning till Furen?",
+        "faefcbb8f72ca63a1bd3": "Ah, en beställning från en av Stormpike. Det är en stolt klan full av dugliga dvärgar. Rika också.$B$BTack, $N. Jag ska börja arbeta på bergsvakt Stormpikes sköld innan dagen är slut."
+      },
       "summary": "Ge Stormpikes förfrågan till Furen Longbeard i Stormvind.",
       "title": "Stormpikes order",
       "translationMetadata": {
@@ -341,6 +656,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b5bb12a5f9d00b8e583cdc8476ca2e9493ab1b28dbda7c9d5987a958dd15d37a"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -361,6 +691,11 @@
     },
     "trTR": {
       "description": "İşçiliğine hayran olduğum bir Dwarf zırhçı var. Adı Furen Longbeard ve ustalığının eşi benzeri yok. Yeni bir kalkana ihtiyacım var ve onunkilerden birini edinmeliyim!\n\nSorun şu ki... Furen çok uzakta, güneyde, Stormwind'in içindeki Dwarf Mahallesi'nde. Human diyarında yani! Neden oralarda, Ironforge'dan bu kadar uzakta yaşadığını anlayamıyorum. Human'lar onu orada tutmak için ona bir servet ödüyor olmalı!\n\nNe dersin, yolculuğa çıkmak ve biraz para kazanmak sana uyarsa, Furen'e bir kalkan siparişimi iletir misin?",
+      "dialogue": {
+        "63db31e678698e811165": "Cüce diyarlarından bir mektup mu? Bu kadar uzak kuzeyden kim yazmış acaba...$B$BLütfen siparişi göreyim.",
+        "b45313948295650971a5": "İşine büyük hayranlık duyduğum bir cüce zırh ustası var. Adı Furen Uzunsakal ve becerisinin eşi yok. Yeni bir kalkana ihtiyacım var ve onun yaptığı bir kalkan olmalı!$B$BSorun şu ki Furen çok güneyde, Stormwind’in cüce mahallesinde. İnsanların diyarında! Ironforge’dan bu kadar uzakta neden yaşadığını anlayamıyorum. İnsanlar onu orada tutmak için bir servet ödüyor olmalı!$B$BYolculuk etmek istiyor ve biraz para kazanmaya karşı değilsen kalkan isteğimi Furen’a iletir misin?",
+        "faefcbb8f72ca63a1bd3": "Ah, Stormpike ailesinden birinin isteği. İyi cücelerle dolu gururlu bir klandır. Hem de zenginler.$B$BTeşekkürler, $N. Gün bitmeden Dağlı Stormpike’ın kalkanı üzerinde çalışmaya başlayacağım."
+      },
       "summary": "Stormwind'deki Furen Longbeard'a Stormpike's Request'i götür.",
       "title": "Stormpike'ın Siparişi",
       "translationMetadata": {
@@ -370,6 +705,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b5bb12a5f9d00b8e583cdc8476ca2e9493ab1b28dbda7c9d5987a958dd15d37a"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -388,6 +738,11 @@
     },
     "ukUA": {
       "description": "Є один дворфійський майстер обладунків, від чиєї роботи я в захваті. Його звати Фьюрен Довгоборід, і його навички неперевершені. Мені потрібен новий щит і я маю зробити замовлення!\n\nПроблема в тому, що він живе далеко на півдні, в Дворфійському районі Штормовію. В землях людей! Поняття не маю, нащо він забрався так далеко від Залізогарту. Певне, люди платять йому чимало, аби втримати його там!\n\nТож, якщо ти не проти невеликої подорожі та не проти трішки підзаробити, може доставиш Фьюрену моє замовлення?",
+      "dialogue": {
+        "63db31e678698e811165": "Лист із дворфійських земель? Цікаво, хто пише з такої далекої півночі...$B$BПрошу, покажи замовлення.",
+        "b45313948295650971a5": "Є один дворф-броняр, роботою якого я дуже захоплююся. Його звуть Фурен Довгобородий, і його майстерності немає рівних. Мені потрібен новий щит, неодмінно його роботи!$B$BПроблема в тому, що Фурен далеко на півдні, у дворфійському кварталі Штормовія. На людських землях! Не уявляю, чому він живе так далеко від Стальгорна. Люди, мабуть, платять йому цілі статки, щоб утримати його там!$B$BТож якщо бажаєш помандрувати й трохи заробити, передаси Фурену моє замовлення на щит?",
+        "faefcbb8f72ca63a1bd3": "А, замовлення від одного зі Стормпайків. Гордовитий клан, повний гідних дворфів. І багатих теж.$B$BДякую, $N. До кінця дня я почну роботу над щитом горянина Стормпайка."
+      },
       "summary": "Віднесіть замовлення Бурешпиля Фьюрену Довгобороду в Штормовій.",
       "title": "Замовлення Бурешпиля",
       "translationMetadata": {
@@ -398,6 +753,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "b5bb12a5f9d00b8e583cdc8476ca2e9493ab1b28dbda7c9d5987a958dd15d37a"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -418,6 +788,11 @@
     },
     "zhCN": {
       "description": "有一个名叫弗伦·长须的矮人铸甲匠，我很欣赏他做的东西，那手艺简直是无人能敌。我需要一面新盾牌，而且一定要他亲手做出来的盾牌！\n\n问题是……弗伦住在遥远的南方，在暴风城的矮人区里。他竟然住在人类的领地里！我没法想象他怎么会住在离铁炉堡这么远的地方，那帮人类一定出了足够收买国王的大价钱把他给留在那儿！\n\n如果你正好要去那里旅行一趟，又想顺便挣点钱的话，能不能去弗伦那儿让他给我做一面盾牌？",
+      "dialogue": {
+        "63db31e678698e811165": "从洛克莫丹那边带来的信？不知道会是谁找我……\n\n请让我看看是怎样的订单吧。",
+        "b45313948295650971a5": "有一个名叫弗伦·长须的矮人铸甲匠，我很欣赏他做的东西，那手艺简直是无人能敌。我需要一面新盾牌，而且一定要他亲手做出来的盾牌！\n\n问题是……弗伦住在遥远的南方，在暴风城的矮人区里。他竟然住在人类的领地里！我没法想象他怎么会住在离铁炉堡这么远的地方，那帮人类一定出了足够收买国王的大价钱把他给留在那儿！\n\n如果你正好要去那里旅行一趟，又想顺便挣点钱的话，能不能去弗伦那儿让他给我做一面盾牌？",
+        "faefcbb8f72ca63a1bd3": "哦，是雷矛氏族的成员下的订单啊，那可是一个令人骄傲的氏族，有许多精干的矮人都是那个氏族出来的，而且他们还都是有钱人。\n\n谢谢你，$N。天快黑的时候我就可以开始帮巡山人雷矛打造盾牌了。\n"
+      },
       "summary": "把卡尔·雷矛的订单交给暴风城的弗伦·长须。",
       "title": "卡尔·雷矛的订单",
       "translationMetadata": {
@@ -426,6 +801,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -442,6 +835,11 @@
     },
     "zhTW": {
       "description": "有一個名叫弗倫·長鬚的矮人鑄甲匠，我很欣賞他做的東西，那手藝簡直是無人能敵。我需要一面新盾牌，而且一定要他親手做出來的盾牌！\n\n問題是……弗倫住在遙遠的南方，在暴風城的矮人區裡。他竟然住在人類的領地裡！我沒法想像他怎麼會住在離鐵爐堡這麼遠的地方，那幫人類一定出了足夠收買國王的大價錢把他給留在那兒！\n\n如果你正好要去那裡旅行一趟，又想順便掙點錢的話，能不能去弗倫那兒讓他給我做一面盾牌？",
+      "dialogue": {
+        "63db31e678698e811165": "從洛克莫丹那邊帶來的信?不知道會是誰找我……\n\n請讓我看看是怎樣的訂單吧。",
+        "b45313948295650971a5": "有一個名叫弗倫·長鬚的矮人鑄甲匠，我很欣賞他做的東西，那手藝簡直是無人能敵。我需要一面新盾牌，而且一定要他親手做出來的盾牌！\n\n問題是……弗倫住在遙遠的南方，在暴風城的矮人區裡。他竟然住在人類的領地裡！我沒法想像他怎麼會住在離鐵爐堡這麼遠的地方，那幫人類一定出了足夠收買國王的大價錢把他給留在那兒！\n\n如果你正好要去那裡旅行一趟，又想順便掙點錢的話，能不能去弗倫那兒讓他給我做一面盾牌？",
+        "faefcbb8f72ca63a1bd3": "哦，是雷矛氏族的成員下的訂單啊，那可是一個令人驕傲的氏族，有許多精幹的矮人都是那個氏族出來的，而且他們還都是有錢人。\n\n謝謝你，$N。天快黑的時候我就可以開始幫巡山人雷矛打造盾牌了。"
+      },
       "summary": "把卡爾·雷矛的訂單交給暴風城的弗倫·長鬚。",
       "title": "卡爾·雷矛的訂單",
       "translationMetadata": {
@@ -450,6 +848,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.63db31e678698e811165": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.b45313948295650971a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.faefcbb8f72ca63a1bd3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

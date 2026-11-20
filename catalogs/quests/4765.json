@@ -1,8 +1,56 @@
 {
   "areaId": 1583,
+  "dialogueContexts": {
+    "33b21f2bde8a779167ba": {
+      "lineId": "q:4765:complete:m",
+      "npcId": 2285,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "5a1c328420f4849ea233": {
+      "lineId": "q:4765:progress:m",
+      "npcId": 2285,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "8da7e4873bc00b7c2006": {
+      "lineId": "q:4765:complete:f",
+      "npcId": 2285,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "d6449fc983bbee24e19d": {
+      "lineId": "q:4765:progress:f",
+      "npcId": 2285,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f5952cf318199bf31f88": {
+      "lineId": "q:4765:accept",
+      "npcId": 9565,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Zabalila jsem Doomrigger's Clasp do bedny vhodné pro přepravu do Stormwindu. {name}, tvá pomoc byla nesmírná – mohu tě požádat o jednu poslední laskavost?\n\nDoruč tu bednu hraběti Remingtonu Ridgewellovi. Najdeš ho v pevnosti Stormwindu. Jsem si jistá, že bude velmi potěšen, až uvidí, co pro něj máš.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ach, takže ty jsi $gon:ona;! Děkuji ti, $N. A pokud to ještě nevíš, vděčnost šlechtice rodu Ridgewellů má téměř cenu královského výkupného.",
+        "5a1c328420f4849ea233": "Bylo mi řečeno, že přijde posel s darem z Blackrock Spire.$B$BJsi to $gon:ona;?",
+        "8da7e4873bc00b7c2006": "Ach, takže ty jsi $gon:ona;! Děkuji ti, $N. A pokud to ještě nevíš, vděčnost šlechtice rodu Ridgewellů má téměř cenu královského výkupného.",
+        "d6449fc983bbee24e19d": "Bylo mi řečeno, že přijde posel s darem z Blackrock Spire.$B$BJsi to $gon:ona;?",
+        "f5952cf318199bf31f88": "Zabalil jsem Doomriggerovu sponu do bedny pro přepravu do Stormwindu. $N, velmi jsi pomohl; mohu tě požádat o poslední laskavost?$B$BDoruč bednu hraběti Remingtonu Ridgewellovi ve Stormwindské pevnosti. Jistě ho potěší, co pro něj máš."
+      },
       "summary": "Doruč Ridgewell's Crate Remingtonu Ridgewellovi do Stormwindu.",
       "title": "Zásilka pro Ridgewella",
       "translationMetadata": {
@@ -12,6 +60,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f218f9c96841ec1934a4973b15cb48902e503866a1552db090f668dcc0c8d5b2"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +105,13 @@
     },
     "daDK": {
       "description": "Jeg har pakket Doomrigger's Clasp i en kasse, der er egnet til forsendelse til Stormwind. {name}, du har været yderst hjælpsom, kan jeg bede dig om en sidste tjeneste?\n\nLever kassen til grev Remington Ridgewell. Du finder ham i Stormwind Keep. Jeg er sikker på, at han bliver meget glad for at se, hvad du har til ham.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, så du er $ghan:hende;! Du har min tak, $N. Og hvis du ikke allerede ved det, er en adelig fra Ridgewell-familiens taknemmelighed næsten en konges løsesum værd.",
+        "5a1c328420f4849ea233": "Jeg fik at vide, at en budbringer ville komme med en gave fra Blackrock Spire.$B$BEr du $ghan:hende;?",
+        "8da7e4873bc00b7c2006": "Ah, så du er $ghan:hende;! Du har min tak, $N. Og hvis du ikke allerede ved det, er en adelig fra Ridgewell-familiens taknemmelighed næsten en konges løsesum værd.",
+        "d6449fc983bbee24e19d": "Jeg fik at vide, at en budbringer ville komme med en gave fra Blackrock Spire.$B$BEr du $ghan:hende;?",
+        "f5952cf318199bf31f88": "Jeg har pakket Doomriggers spænde i en kasse til Stormwind. $N, du har været til stor hjælp. Må jeg bede dig om en sidste tjeneste?$B$BLever kassen til grev Remington Ridgewell i Stormwinds fæstning. Jeg er sikker på, at han bliver glad for det, du har til ham."
+      },
       "summary": "Bring Ridgewells kasse til Remington Ridgewell i Stormwind.",
       "title": "Levering til Ridgewell",
       "translationMetadata": {
@@ -41,6 +121,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f218f9c96841ec1934a4973b15cb48902e503866a1552db090f668dcc0c8d5b2"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +164,13 @@
     },
     "deDE": {
       "description": "Ich habe Doomriggers Schnalle in eine Kiste gepackt, damit sie nach Stormwind geschickt werden kann. {name}, Ihr wart wirklich eine große Hilfe - darf ich Euch noch um einen letzten Gefallen bitten?\n\nBringt Graf Remington Ridgewell die Kiste. Ihr findet ihn in der Burg von Stormwind. Ich bin sicher, dass er sich sehr über das freuen wird, was Ihr ihm bringt.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, Ihr seid das also! Seid bedankt, $N. Und falls Ihr es noch nicht wisst. . . die Dankbarkeit eines Adligen derer von Ridgewell übertrifft selbst die Großzügigkeit eines Königs. ",
+        "5a1c328420f4849ea233": "Man sagte mir, dass ein Bote kommen würde. Einer mit einem Geschenk von der Blackrockspitze. \n \n Seid Ihr das vielleicht?",
+        "8da7e4873bc00b7c2006": "Ah, Ihr seid das also! Seid bedankt, $N. Und falls Ihr es noch nicht wisst. . . die Dankbarkeit eines Adligen derer von Ridgewell übertrifft selbst die Großzügigkeit eines Königs. ",
+        "d6449fc983bbee24e19d": "Man sagte mir, dass ein Bote kommen würde. Einer mit einem Geschenk von der Blackrockspitze. \n \n Seid Ihr das vielleicht?",
+        "f5952cf318199bf31f88": "Ich habe Doomriggers Schnalle in eine Kiste gepackt, damit sie nach Stormwind geschickt werden kann. $N, Ihr wart wirklich eine große Hilfe - darf ich Euch noch um einen letzten Gefallen bitten?\n\nBringt Graf Remington Ridgewell die Kiste. Ihr findet ihn in der Burg von Stormwind. Ich bin sicher, dass er sich sehr über das freuen wird, was Ihr ihm bringt."
+      },
       "summary": "Bringt Ridgewells Kiste zu Remington Ridgewell nach Stormwind.",
       "title": "Lieferung an Ridgewell",
       "translationMetadata": {
@@ -67,6 +179,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +225,13 @@
     },
     "enUS": {
       "description": "I have packaged Doomriggers Clasp into a crate, suitable for shipment to Stormwind.  {name}, you have been extremely helpful -- can I ask you for one last favor?\n\nDeliver the crate to Count Remington Ridgewell.  You will find him in the Keep of Stormwind.  I am sure he'll be very pleased to see what you have for him.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, so you are $ghe:she;!  You have my thanks, $N.  And... if you didn't already know... the gratitude of a noble in the house of Ridgewell is nigh worth a king's ransom.",
+        "5a1c328420f4849ea233": "I was told a messenger would come.  One with a gift from Blackrock Spire.$B$BAre you $ghe:she;?",
+        "8da7e4873bc00b7c2006": "Ah, so you are $ghe:she;!  You have my thanks, $N.  And... if you didn't already know... the gratitude of a noble in the house of Ridgewell is nigh worth a king's ransom.",
+        "d6449fc983bbee24e19d": "I was told a messenger would come.  One with a gift from Blackrock Spire.$B$BAre you $ghe:she;?",
+        "f5952cf318199bf31f88": "I have packaged Doomriggers Clasp into a crate, suitable for shipment to Stormwind.  $N, you have been extremely helpful -- can I ask you for one last favor?$B$BDeliver the crate to Count Remington Ridgewell.  You will find him in the Keep of Stormwind.  I am sure he'll be very pleased to see what you have for him."
+      },
       "summary": "Bring Ridgewell's Crate to Remington Ridgewell in Stormwind.",
       "title": "Delivery to Ridgewell",
       "translationMetadata": {
@@ -91,6 +240,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +287,13 @@
     },
     "esES": {
       "description": "He guardado el Broche Equipasino Clasp en una caja adecuada para su envío a Ventormenta. {name}, has sido de gran ayuda, ¿puedo pedirte un último favor?\n\nEntrégale la caja al conde Remington Crestabuena. Lo encontrarás en el Castillo de Ventormenta. No me cabe la menor duda de que se alegrará mucho de ver lo que le traes.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, ¡así que eres tú! Recibe mi agradecimiento, $n. Y... por si no lo supieras ya... el agradecimiento de un noble Crestabuena bien vale el rescate de un rey.",
+        "5a1c328420f4849ea233": "Me dijeron que vendría un mensajero. Alguien con un regalo de la Cumbre de Roca Negra.\n\n¿Eres tú?",
+        "8da7e4873bc00b7c2006": "Ah, ¡así que eres tú! Recibe mi agradecimiento, $n. Y... por si no lo supieras ya... el agradecimiento de un noble Crestabuena bien vale el rescate de un rey.",
+        "d6449fc983bbee24e19d": "Me dijeron que vendría un mensajero. Alguien con un regalo de la Cumbre de Roca Negra.\n\n¿Eres tú?",
+        "f5952cf318199bf31f88": "He guardado el Broche Equipasino Clasp en una caja adecuada para su envío a Ventormenta. $N, has sido de gran ayuda, ¿puedo pedirte un último favor?\n\nEntrégale la caja al conde Remington Crestabuena. Lo encontrarás en el Castillo de Ventormenta. No me cabe la menor duda de que se alegrará mucho de ver lo que le traes."
+      },
       "summary": "Llévale el cajón de Crestabuena a Remington Crestabuena en Ventormenta.",
       "title": "Entrega a Crestabuena",
       "translationMetadata": {
@@ -116,6 +302,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +348,13 @@
     },
     "esMX": {
       "description": "He guardado el Broche Equipasino en una caja adecuada para su envío a Ventormenta. {name}, has sido de gran ayuda, ¿puedo pedirte un último favor?\n\nEntrégale la caja al conde Remington Bonacresta. Lo encontrarás en el Castillo de Ventormenta. No me cabe la menor duda de que se alegrará mucho de ver lo que le traes.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "¡Ah, entonces tú eres $gél:ella;! Tienes mi agradecimiento, $N. Y, por si no lo sabías, la gratitud de un noble de la casa Ridgewell vale casi el rescate de un rey.",
+        "5a1c328420f4849ea233": "Me dijeron que vendría un mensajero con un regalo de la Cumbre de Roca Negra.$B$B¿Eres tú $gél:ella;?",
+        "8da7e4873bc00b7c2006": "¡Ah, entonces tú eres $gél:ella;! Tienes mi agradecimiento, $N. Y, por si no lo sabías, la gratitud de un noble de la casa Ridgewell vale casi el rescate de un rey.",
+        "d6449fc983bbee24e19d": "Me dijeron que vendría un mensajero con un regalo de la Cumbre de Roca Negra.$B$B¿Eres tú $gél:ella;?",
+        "f5952cf318199bf31f88": "He guardado el Broche Equipasino en una caja adecuada para su envío a Ventormenta. $n, has sido de gran ayuda, ¿puedo pedirte un último favor?\n\nEntrégale la caja al conde Remington Bonacresta. Lo encontrarás en el Castillo de Ventormenta. No me cabe la menor duda de que se alegrará mucho de ver lo que le traes."
+      },
       "summary": "Llévale el cajón de Bonacresta al conde Remington Bonacresta en el Castillo de Ventormenta, en Ventormenta.",
       "title": "Entrega a Bonacresta",
       "translationMetadata": {
@@ -140,6 +363,32 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +405,13 @@
     },
     "frFR": {
       "description": "J’ai empaqueté le Fermoir de Doomrigger dans une caisse, pour faciliter son convoyage vers Hurlevent. {name}, votre aide fut précieuse ; mais puis-je vous demander un dernier service ?\n\nLivrez la caisse au comte Remington Ridgewell. Vous le trouverez dans le donjon de Hurlevent. Il sera content de recevoir ce colis.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, c'est donc vous ! Je vous remercie, $N. Et. . . si vous ne le saviez pas déjà. . . La gratitude d'un noble de la maison de Ridgewell équivaut presque à une récompense royale. ",
+        "5a1c328420f4849ea233": "On m'a dit qu'un messager viendrait et qu'il aurait un cadeau du pic Blackrock. \n \n Est-ce que c'est vous ?",
+        "8da7e4873bc00b7c2006": "Ah, c'est donc vous ! Je vous remercie, $N. Et. . . si vous ne le saviez pas déjà. . . La gratitude d'un noble de la maison de Ridgewell équivaut presque à une récompense royale. ",
+        "d6449fc983bbee24e19d": "On m'a dit qu'un messager viendrait et qu'il aurait un cadeau du pic Blackrock. \n \n Est-ce que c'est vous ?",
+        "f5952cf318199bf31f88": "J’ai empaqueté le Fermoir de Doomrigger dans une caisse, pour faciliter son convoyage vers Stormwind. $N, votre aide fut précieuse ; mais puis-je vous demander un dernier service ?\n\nLivrez la caisse au comte Remington Ridgewell. Vous le trouverez dans le donjon de Stormwind. Il sera content de recevoir ce colis."
+      },
       "summary": "Apporter la Caisse de Ridgewell à Remington Ridgewell, à Stormwind.",
       "title": "La livraison à Ridgewell",
       "translationMetadata": {
@@ -164,6 +420,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +466,13 @@
     },
     "hrHR": {
       "description": "Zapakirala sam Doomriggerovu kopču u sanduk prikladan za slanje u Stormwind. {name}, bio si mi od velike pomoći; mogu li te zamoliti za još jednu uslugu?\n\nDostavi sanduk grofu Remingtonu Ridgewellu. Pronaći ćeš ga u Stormwind Keepu. Sigurna sam da će mu biti vrlo drago vidjeti što mu nosiš.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, dakle ti si $gon:ona;! Zahvaljujem ti, $N. A ako već ne znaš, zahvalnost plemića kuće Ridgewell vrijedi gotovo kao kraljeva otkupnina.",
+        "5a1c328420f4849ea233": "Rekli su mi da će stići glasnik s darom iz Blackrock Spirea.$B$BJesi li ti $gon:ona;?",
+        "8da7e4873bc00b7c2006": "Ah, dakle ti si $gon:ona;! Zahvaljujem ti, $N. A ako već ne znaš, zahvalnost plemića kuće Ridgewell vrijedi gotovo kao kraljeva otkupnina.",
+        "d6449fc983bbee24e19d": "Rekli su mi da će stići glasnik s darom iz Blackrock Spirea.$B$BJesi li ti $gon:ona;?",
+        "f5952cf318199bf31f88": "Spakirao sam Doomriggerovu kopču u sanduk za prijevoz u Stormwind. $N, mnogo si pomogao; mogu li te zamoliti za još jednu uslugu?$B$BOdnesi sanduk grofu Remingtonu Ridgewellu u tvrđavi Stormwinda. Siguran sam da će ga razveseliti ono što nosiš."
+      },
       "summary": "Donesi Ridgewell's Crate Remingtonu Ridgewellu u Stormwind.",
       "title": "Dostava Ridgewellu",
       "translationMetadata": {
@@ -189,6 +482,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f218f9c96841ec1934a4973b15cb48902e503866a1552db090f668dcc0c8d5b2"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +525,13 @@
     },
     "itIT": {
       "description": "Ho imballato il Fermaglio di Doomrigger in una cassa adatta alla spedizione a Roccavento. {name}, sei stato di enorme aiuto: posso chiederti un ultimo favore?\n\nConsegna la cassa al Conte Remington Ridgewell. Lo troverai nel Forte di Roccavento. Sono sicura che sarà molto contento di vedere ciò che gli porti.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, allora sei proprio quello! Ti ringrazio, $N. E... nel caso non lo sapessi già... la gratitudine di un nobile della casata dei Ridgewell vale quasi il riscatto di un re.",
+        "5a1c328420f4849ea233": "Mi è stato detto che sarebbe venuto un messaggero. Uno con un dono da Blackrock Spire.\n\nSei tu quello?",
+        "8da7e4873bc00b7c2006": "Ah, allora sei proprio quella! Ti ringrazio, $N. E... nel caso non lo sapessi già... la gratitudine di un nobile della casata dei Ridgewell vale quasi il riscatto di un re.",
+        "d6449fc983bbee24e19d": "Mi è stato detto che sarebbe venuto un messaggero. Uno con un dono da Blackrock Spire.\n\nSei tu quella?",
+        "f5952cf318199bf31f88": "Ho imballato la fibbia di Doomrigger in una cassa pronta per Roccavento. $N, sei stato di grande aiuto; posso chiederti un ultimo favore?$B$BConsegna la cassa al conte Remington Ridgewell nella Fortezza di Roccavento. Sono certo che sarà felice di ciò che gli porti."
+      },
       "summary": "Porta la cassa di Ridgewell a Remington Ridgewell a Stormwind.",
       "title": "Consegna a Ridgewell",
       "translationMetadata": {
@@ -216,6 +541,35 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f218f9c96841ec1934a4973b15cb48902e503866a1552db090f668dcc0c8d5b2"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +588,13 @@
     },
     "koKR": {
       "description": "스톰윈드로 가져갈 수 있도록 파멸의 기념물을 상자에 넣어 포장을 마쳤습니다. 이번 일에 당신 도움이 아주 컸습니다. 그런데 마지막으로 한 가지만 더 부탁을 드려도 될까요?\n\n이 상자를 레밍턴 리지웰 백작님께 전해 주세요. 스톰윈드 왕궁에서 그분을 찾을 수 있을 겁니다. 백작님께 이걸 가져가면 분명 크게 기뻐하실 거예요.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "아, 그게 자네였군! 정말 고맙네. 그리고 말이지... 아직 모르고 있었다면 말해 주겠는데, 리지웰 가의 귀족이 표하는 감사는 왕의 보상과 거의 맞먹는다네.",
+        "5a1c328420f4849ea233": "검은바위 첨탑에서 전령이 선물을 가지고 올 거라는 소식을 들었는데... \n\n자네가 바로 그 심부름꾼인가?",
+        "8da7e4873bc00b7c2006": "아, 그게 자네였군! 정말 고맙네. 그리고 말이지... 아직 모르고 있었다면 말해 주겠는데, 리지웰 가의 귀족이 표하는 감사는 왕의 보상과 거의 맞먹는다네.",
+        "d6449fc983bbee24e19d": "검은바위 첨탑에서 전령이 선물을 가지고 올 거라는 소식을 들었는데... \n\n자네가 바로 그 심부름꾼인가?",
+        "f5952cf318199bf31f88": "스톰윈드로 가져갈 수 있도록 파멸의 기념물을 상자에 넣어 포장을 마쳤습니다. 이번 일에 당신 도움이 아주 컸습니다. 그런데 마지막으로 한 가지만 더 부탁을 드려도 될까요?\n\n이 상자를 레밍턴 리지웰 백작님께 전해 주세요. 스톰윈드 왕궁에서 그분을 찾을 수 있을 겁니다. 백작님께 이걸 가져가면 분명 크게 기뻐하실 거예요."
+      },
       "summary": "스톰윈드에 있는 레밍턴 리지웰에게 리지웰의 상자를 가져가야 합니다.",
       "title": "리지웰에게 가져가기",
       "translationMetadata": {
@@ -242,6 +603,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +649,13 @@
     },
     "plPL": {
       "description": "Zapakowałam zapinkę Doomriggera do skrzyni nadającej się do wysyłki do Stormwind. {name}, bardzo mi pomogłeś. Czy mogę prosić cię o ostatnią przysługę?\n\nDostarcz skrzynię hrabiemu Remingtonowi Ridgewellowi. Znajdziesz go w twierdzy Stormwind. Jestem pewna, że bardzo ucieszy go to, co mu niesiesz.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ach, więc to ty jesteś $gon:ona;! Dziękuję ci, $N. A jeśli jeszcze nie wiesz, wdzięczność szlachcica z rodu Ridgewellów jest warta niemal królewskiego okupu.",
+        "5a1c328420f4849ea233": "Powiedziano mi, że przybędzie posłaniec z darem z Blackrock Spire.$B$BCzy to ty jesteś $gon:ona;?",
+        "8da7e4873bc00b7c2006": "Ach, więc to ty jesteś $gon:ona;! Dziękuję ci, $N. A jeśli jeszcze nie wiesz, wdzięczność szlachcica z rodu Ridgewellów jest warta niemal królewskiego okupu.",
+        "d6449fc983bbee24e19d": "Powiedziano mi, że przybędzie posłaniec z darem z Blackrock Spire.$B$BCzy to ty jesteś $gon:ona;?",
+        "f5952cf318199bf31f88": "Zapakowałem klamrę Doomriggera do skrzyni gotowej do wysyłki do Stormwind. $N, bardzo pomagasz. Czy mogę prosić o ostatnią przysługę?$B$BDostarcz skrzynię hrabiemu Remingtonowi Ridgewellowi w twierdzy Stormwind. Z pewnością ucieszy się z tego, co mu niesiesz."
+      },
       "summary": "Zanieś skrzynię Ridgewella Remingtonowi Ridgewellowi w Stormwind.",
       "title": "Dostawa dla Ridgewella",
       "translationMetadata": {
@@ -267,6 +665,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f218f9c96841ec1934a4973b15cb48902e503866a1552db090f668dcc0c8d5b2"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +708,13 @@
     },
     "ptBR": {
       "description": "Eu coloquei o broche do Finitudo em uma caixa adequada para o trajeto até Ventobravo. {name}, você tem sido extremamente útil... Será que posso lhe pedir um último favor?\n\nEntregue a caixa ao Conde Capistrano de Espargosa. Você o encontrará na bastilha de Ventobravo. Tenho certeza de que ele ficará satisfeito com a entrega.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, então é você! Muito obrigado, $N. E... se ainda não sabe... a gratidão de um nobre da casa de Espargosa vale uma fortuna.",
+        "5a1c328420f4849ea233": "Eu fui informado que um mensageiro viria. Um com um presente do Pico da Rocha Negra.\n\nSeria você?",
+        "8da7e4873bc00b7c2006": "Ah, então é você! Muito obrigado, $N. E... se ainda não sabe... a gratidão de um nobre da casa de Espargosa vale uma fortuna.",
+        "d6449fc983bbee24e19d": "Eu fui informado que um mensageiro viria. Um com um presente do Pico da Rocha Negra.\n\nSeria você?",
+        "f5952cf318199bf31f88": "Eu coloquei o broche do Finitudo em uma caixa adequada para o trajeto até Ventobravo. $N, você tem sido extremamente útil... Será que posso lhe pedir um último favor?\n\nEntregue a caixa ao Conde Capistrano de Espargosa. Você o encontrará na bastilha de Ventobravo. Tenho certeza de que ele ficará satisfeito com a entrega."
+      },
       "summary": "Leve a Caixote de Espargosa para o Conde Capistrano de Espargosa em Ventobravo.",
       "title": "Entrega para Espargosa",
       "translationMetadata": {
@@ -293,6 +723,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +769,13 @@
     },
     "ruRU": {
       "description": "Я упаковала пряжку Роковой оснастки в ящик для отправки в Штормград. {name}, ты мне очень помог, но я хочу попросить еще об одной услуге.\n\nДоставь этот ящик графу Ремингтону Риджвеллу. Он в Крепости Ветров. Не сомневаюсь, он обрадуется.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "А, так это ты! Спасибо, $N. И... если ты еще не знаешь об этом... благодарность дома Риджвеллов стоит королевской.",
+        "5a1c328420f4849ea233": "Мне доложили о прибытии вестника. Вестника с даром с пика Черной горы.\n\nЭто ты?",
+        "8da7e4873bc00b7c2006": "А, так это ты! Спасибо, $N. И... если ты еще не знаешь об этом... благодарность дома Риджвеллов стоит королевской.",
+        "d6449fc983bbee24e19d": "Мне доложили о прибытии вестника. Вестника с даром с пика Черной горы.\n\nЭто ты?",
+        "f5952cf318199bf31f88": "Я упаковала пряжку Роковой оснастки в ящик для отправки в Штормград. $n, ты мне очень помог, но я хочу попросить еще об одной услуге.\n\nДоставь этот ящик графу Ремингтону Риджвеллу. Он в Крепости Ветров. Не сомневаюсь, он обрадуется."
+      },
       "summary": "Отнесите ящик Риджвелла Ремингтону Риджвеллу в Штормград.",
       "title": "Доставить Риджвеллу",
       "translationMetadata": {
@@ -317,6 +784,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +830,13 @@
     },
     "svSE": {
       "description": "Jag har packat Doomriggers spänne i en låda för transport till Stormwind. {name}, du har varit till stor hjälp. Får jag be om en sista tjänst?\n\nLeverera lådan till greve Remington Ridgewell. Han finns i Stormwind Keep och blir säkert mycket glad över vad du har åt honom.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Jaså, då är du $ghan:hon;! Du har mitt tack, $N. Och om du inte redan vet det är en adelsmans tacksamhet från huset Ridgewell nästan värd en kungs lösen.",
+        "5a1c328420f4849ea233": "Jag fick veta att ett sändebud skulle komma med en gåva från Blackrock Spire.$B$BÄr du $ghan:hon;?",
+        "8da7e4873bc00b7c2006": "Jaså, då är du $ghan:hon;! Du har mitt tack, $N. Och om du inte redan vet det är en adelsmans tacksamhet från huset Ridgewell nästan värd en kungs lösen.",
+        "d6449fc983bbee24e19d": "Jag fick veta att ett sändebud skulle komma med en gåva från Blackrock Spire.$B$BÄr du $ghan:hon;?",
+        "f5952cf318199bf31f88": "Jag har packat Doomriggers spänne i en låda för transport till Stormwind. $N, du har varit till stor hjälp. Får jag be om en sista tjänst?$B$BLeverera lådan till greve Remington Ridgewell i Stormwinds fästning. Han blir säkert glad över det du har åt honom."
+      },
       "summary": "Ta Ridgewells låda till Remington Ridgewell i Stormwind.",
       "title": "Leverans till Ridgewell",
       "translationMetadata": {
@@ -342,6 +846,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f218f9c96841ec1934a4973b15cb48902e503866a1552db090f668dcc0c8d5b2"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +889,13 @@
     },
     "trTR": {
       "description": "Doomrigger'ın Tokası'nı Stormwind'e gönderilmeye uygun bir sandığa koydum. {name}, çok yardımcı oldun; senden son bir iyilik isteyebilir miyim?\n\nSandığı Kont Remington Ridgewell'e teslim et. Onu Stormwind Kalesi'nde bulacaksın. Getirdiğini görünce çok memnun olacağından eminim.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "Ah, demek $go:o; sensin! Teşekkürlerimi sunarım, $N. Henüz bilmiyorsan söyleyeyim, Ridgewell hanesinden bir soylunun minnettarlığı neredeyse bir kralın fidyesi değerindedir.",
+        "5a1c328420f4849ea233": "Blackrock Spire’dan bir hediyeyle bir ulak geleceği söylendi.$B$BO $gkişi:kişi; sen misin?",
+        "8da7e4873bc00b7c2006": "Ah, demek $go:o; sensin! Teşekkürlerimi sunarım, $N. Henüz bilmiyorsan söyleyeyim, Ridgewell hanesinden bir soylunun minnettarlığı neredeyse bir kralın fidyesi değerindedir.",
+        "d6449fc983bbee24e19d": "Blackrock Spire’dan bir hediyeyle bir ulak geleceği söylendi.$B$BO $gkişi:kişi; sen misin?",
+        "f5952cf318199bf31f88": "Doomrigger’ın Tokası’nı Stormwind’e gönderilecek bir sandığa paketledim. $N, çok yardımcı oldun; senden son bir iyilik isteyebilir miyim?$B$BSandığı Stormwind Kalesi’ndeki Kont Remington Ridgewell’e teslim et. Ona getirdiğin şeyden çok memnun kalacağına eminim."
+      },
       "summary": "Ridgewell'in Sandığı'nı Stormwind'deki Remington Ridgewell'e getir.",
       "title": "Ridgewell'e Teslimat",
       "translationMetadata": {
@@ -369,6 +905,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f218f9c96841ec1934a4973b15cb48902e503866a1552db090f668dcc0c8d5b2"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +948,13 @@
     },
     "ukUA": {
       "description": "Я запакував застібку Думріґґер у ящик, придатний для перевезення до Штормовію. {name}, ти надзвичайно допоміг. Чи можу попросити про останню послугу?\n\nДостав ящик графу Ремінґтону Скеледужу. Знайдеш його у фортеці Штормовію. Певен, він дуже зрадіє, коли побачить, що ти приніс.",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "А, отже, це $gвін:вона;! Дякую тобі, $N. І якщо ти ще не знаєш, вдячність шляхтича дому Ріджвеллів варта майже королівського викупу.",
+        "5a1c328420f4849ea233": "Мені сказали, що прийде посланець із дарунком із Піку Чорної Гори.$B$BЦе $gвін:вона;?",
+        "8da7e4873bc00b7c2006": "А, отже, це $gвін:вона;! Дякую тобі, $N. І якщо ти ще не знаєш, вдячність шляхтича дому Ріджвеллів варта майже королівського викупу.",
+        "d6449fc983bbee24e19d": "Мені сказали, що прийде посланець із дарунком із Піку Чорної Гори.$B$BЦе $gвін:вона;?",
+        "f5952cf318199bf31f88": "Я запакував застібку Думріґґера в ящик для перевезення до Штормовія. $N, ти дуже допоміг. Чи можу попросити про останню послугу?$B$BДостав ящик графу Ремінґтону Ріджвеллу у Штормовійській фортеці. Певен, він буде радий твоєму дарунку."
+      },
       "summary": "Віднесіть ящик Скеледужа Ремінґтону Скеледужу в Штормовій.",
       "title": "Посилка для Скеледужа",
       "translationMetadata": {
@@ -396,6 +964,31 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f218f9c96841ec1934a4973b15cb48902e503866a1552db090f668dcc0c8d5b2"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +1009,13 @@
     },
     "zhCN": {
       "description": "我已经把末日扣环放入一只箱子，便于运送到暴风城。{name}，你帮了我的大忙，不过我能请你再帮我最后一个忙吗？\n\n把这只箱子交给雷明顿·瑞治维尔伯爵，你可以在暴风城里找到他。我敢说他看到这东西之后会非常高兴的。",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "啊，果然是你!谢谢你，$N。呃……如果你还不知道的话……瑞治维尔家族中的一个贵族所能给予你的酬谢，足可以抵得上一个国王所能给予的。\n",
+        "5a1c328420f4849ea233": "有人告诉我，一个来自黑石塔的信差给我带来了一件礼物。\n\n你就是那个信差吗?",
+        "8da7e4873bc00b7c2006": "啊，果然是你!谢谢你，$N。呃……如果你还不知道的话……瑞治维尔家族中的一个贵族所能给予你的酬谢，足可以抵得上一个国王所能给予的。\n",
+        "d6449fc983bbee24e19d": "有人告诉我，一个来自黑石塔的信差给我带来了一件礼物。\n\n你就是那个信差吗?",
+        "f5952cf318199bf31f88": "我已经把末日扣环放入一只箱子，便于运送到暴风城。$N，你帮了我的大忙，不过我能请你再帮我最后一个忙吗？\n\n把这只箱子交给雷明顿·瑞治维尔伯爵，你可以在暴风城里找到他。我敢说他看到这东西之后会非常高兴的。"
+      },
       "summary": "将瑞治维尔的箱子交给暴风城的雷明顿·瑞治维尔。",
       "title": "瑞治维尔的箱子",
       "translationMetadata": {
@@ -424,6 +1024,36 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +1070,13 @@
     },
     "zhTW": {
       "description": "我已經把末日扣環放入一隻箱子，便於運送到暴風城。{name}，你幫了我的大忙，不過我能請你再幫我最後一個忙嗎？\n\n把這只箱子交給雷明頓·瑞治維爾伯爵，你可以在暴風城裡找到他。我敢說他看到這東西之後會非常高興的。",
+      "dialogue": {
+        "33b21f2bde8a779167ba": "啊，原來你就是$g他:她;！謝謝你，$N。還有……如果你不知道的話……里吉維爾家族貴族的感激之情幾乎值一筆國王的贖金。",
+        "5a1c328420f4849ea233": "有人告訴我會有一位帶著黑石塔禮物的信使前來。$B$B你就是$g他:她;嗎？",
+        "8da7e4873bc00b7c2006": "啊，原來你就是$g他:她;！謝謝你，$N。還有……如果你不知道的話……里吉維爾家族貴族的感激之情幾乎值一筆國王的贖金。",
+        "d6449fc983bbee24e19d": "有人告訴我會有一位帶著黑石塔禮物的信使前來。$B$B你就是$g他:她;嗎？",
+        "f5952cf318199bf31f88": "我已經把末日扣環放入一隻箱子，便於運送到暴風城。$N，你幫了我的大忙，不過我能請你再幫我最後一個忙嗎？\n\n把這只箱子交給雷明頓·瑞治維爾伯爵，你可以在暴風城裡找到他。我敢說他看到這東西之後會非常高興的。"
+      },
       "summary": "將瑞治維爾的箱子交給暴風城的雷明頓·瑞治維爾。",
       "title": "瑞治維爾的箱子",
       "translationMetadata": {
@@ -448,6 +1085,32 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.33b21f2bde8a779167ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a1c328420f4849ea233": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8da7e4873bc00b7c2006": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d6449fc983bbee24e19d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5952cf318199bf31f88": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

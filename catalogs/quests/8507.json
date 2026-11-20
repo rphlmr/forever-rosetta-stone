@@ -1,8 +1,36 @@
 {
   "areaId": 1377,
+  "dialogueContexts": {
+    "11fc75b29f4c540541fa": {
+      "lineId": "q:8507:progress",
+      "npcId": 15540,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "4e2525979c471fede1a1": {
+      "lineId": "q:8507:accept",
+      "npcId": 15540,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "edbea5482b0e09a1df01": {
+      "lineId": "q:8507:complete",
+      "npcId": 15540,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Zdravím tě, {name}. Než ti zadám náročnější válečné úkoly, budeš si muset odsloužit svůj díl polní služby.\n\nBrigádu kapitána Blackanvila z Ironforge najdeš před Hive'Zora.\n\nHlas se jemu nebo jeho pobočnici Janele Stouthammerové a pak se vrať ke mně. Budu mít pro tebe připravený pokročilejší úkol.\n\nAch, a prokaž nám laskavost a drž se dál od Legie Orgrimmaru. Vzájemná zášť nás donutila držet obě tyto síly daleko od sebe.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Jednotku kapitána Blackanvila najdeš před Hive’Zora. Pokud ho nenajdeš, promluv si s jeho poručicí Janelou Stouthammerovou.",
+        "4e2525979c471fede1a1": "Zdravím, $N. Než ti přidělím náročnější válečné úkoly, musíš si odsloužit svůj díl služby v poli.$B$BBrigádu Ironforge kapitána Blackanvila najdeš před Hive’Zora.$B$BOhlas se jemu nebo jeho poručici Janele Stouthammerové a vrať se ke mně. Připravím pro tebe pokročilejší úkol.$B$BA prokaž nám laskavost a drž se dál od Orgrimmarské legie. Kvůli vzájemnému nepřátelství musíme obě jednotky držet daleko od sebe.",
+        "edbea5482b0e09a1df01": "Dobře, $N. Připravil jsem soubor úkolů, které by měly tvé schopnosti využít co nejlépe.$B$BPokud ty a lidé jako ty budete pokračovat v úsilí, náš nepřítel bude brzy jednou provždy poražen!$B$BPokud budeš potřebovat nové pokyny k misi, vrať se ke kapitánu Blackanvilovi."
+      },
       "summary": "Hlas se do služby na stanovišti Ironforge Brigade poblíž Hive'Zora. Připrav si Unsigned Field Duty Papers, získej Signed Field Duty Papers od kapitána Blackanvila a vrať se k Windcallerovi Kaldonovi do Cenarion Hold v Silithusu.\n\nPoznámka: Léčení nebo sesílání prospěšných kouzel na příslušníka Ironforge Brigade tě označí pro PvP.",
       "title": "Služba v poli",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "308e2ab1a834d85428786d889c0de16b620db59fd91cade60f77869ebc76a3da"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -31,6 +74,11 @@
     },
     "daDK": {
       "description": "Velkommen, {name}. Før jeg giver dig mere krævende opgaver i krigen, må du gøre din del af felttjenesten.\n\nDu finder kaptajn Blackanvils Ironforge Brigade uden for Hive'Zora.\n\nMeld dig hos ham eller hans løjtnant, Janela Stouthammer, og kom tilbage til mig. Jeg vil have en mere avanceret opgave klar til dig.\n\nÅh, og gør os en tjeneste og hold dig væk fra Orgrimmar Legion. Vi har været nødt til at holde de to styrker langt fra hinanden på grund af gensidig fjendtlighed.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Du finder kaptajn Blackanvils styrke stationeret uden for Hive’Zora. Tal med hans løjtnant, Janela Stouthammer, hvis du ikke kan finde ham.",
+        "4e2525979c471fede1a1": "Hilsner, $N. Før jeg giver dig mere krævende opgaver i krigen, skal du gøre din del af felttjenesten.$B$BDu finder kaptajn Blackanvils Ironforge-brigade uden for Hive’Zora.$B$BMeld dig hos ham eller hans løjtnant, Janela Stouthammer, og vend tilbage til mig. Jeg vil have en mere avanceret opgave klar til dig.$B$BOg gør os en tjeneste og hold dig væk fra Orgrimmar-legionen. Vi har været nødt til at holde de to styrker adskilt på grund af deres gensidige fjendskab.",
+        "edbea5482b0e09a1df01": "Udmærket, $N. Jeg har forberedt en række opgaver, som bør udnytte dine evner bedst muligt.$B$BMed fortsat indsats fra dig og folk som dig vil vores fjende snart være besejret én gang for alle!$B$BHvis du har brug for en ny missionsgennemgang, så vend tilbage til kaptajn Blackanvil."
+      },
       "summary": "Meld dig til tjeneste ved Ironforge Brigades post nær Hive'Zora. Forbered dine Unsigned Field Duty Papers, og få Signed Field Duty Papers fra Captain Blackanvil, og vend derefter tilbage til Windcaller Kaldon ved Cenarion Hold i Silithus.\n\nBemærk: Hvis du helbreder eller kaster gavnlige besværgelser på et medlem af Ironforge Brigade, markeres du til PvP.",
       "title": "Felttjeneste",
       "translationMetadata": {
@@ -40,6 +88,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "308e2ab1a834d85428786d889c0de16b620db59fd91cade60f77869ebc76a3da"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -58,6 +121,11 @@
     },
     "deDE": {
       "description": "Seid gegrüßt, {name}. Bevor ich Euch mit umfassenderen Aufgaben in diesem Krieg beauftrage, müsst Ihr Euren Anteil am Felddienst leisten.\n\nIhr könnt die Ironforgebrigade von Captain Blackanvil außerhalb des Zoraschwarmbaus finden.\n\nErstattet ihm oder seinem Lieutenant, Janela Stouthammer, Bericht und kommt dann wieder zu mir. Ich werde wichtigere Anweisungen für Euch bereithalten.\n\nOh, bitte erweist uns den Gefallen und haltet Euch von der Orgrimmarlegion fern. Wir sind gezwungen die beiden Streitkräfte aufgrund gegenseitiger Feindseligkeit auseinander zu halten.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Ihr könnt Captain Blackanvils Streitkräfte außerhalb des Zoraschwarmbaus finden. Sprecht mit seinem Lieutenant, Janela Stouthammer, wenn Ihr ihn nicht finden könnt. ",
+        "4e2525979c471fede1a1": "Seid gegrüßt, $n. Bevor ich Euch mit umfassenderen Aufgaben in diesem Krieg beauftrage, müsst Ihr Euren Anteil am Felddienst leisten.\n\nIhr könnt die Eisenschmiedebrigade von Hauptmann Rußschmied außerhalb des Zoraschwarmbaus finden.\n\nErstattet ihm oder seinem Leutnant, Janela Starkhammer, Bericht und kommt dann wieder zu mir. Ich werde wichtigere Anweisungen für Euch bereithalten.\n\nOh, bitte erweist uns den Gefallen und haltet Euch von der Orgrimmarlegion fern. Wir sind gezwungen die beiden Streitkräfte aufgrund gegenseitiger Feindseligkeit auseinander zu halten.",
+        "edbea5482b0e09a1df01": "Na schön, $N. Ich habe eine Reihe von Aufgaben vorbereitet, die Euren Fähigkeiten optimal gerecht werden sollten. \n \n Unser Feind wird dank der anhaltenden Bemühungen von Euch und Euresgleichen bald ein für alle Mal besiegt sein!\n \n Solltet Ihr neue Einsatzanweisungen benötigen, dann kehrt zu Captain Blackanvil zurück. "
+      },
       "summary": "Erstattet am Posten der Ironforgebrigade beim Zoraschwarmbau Bericht. Bereitet Eure nicht unterzeichneten Felddienstpapiere vor, lasst sie von Captain Blackanvil unterzeichnen und kehrt zu Windrufer Kaldon auf Burg Cenarius in Silithus zurück.\n\nHinweis: das Heilen oder Wirken von begünstigenden Zaubern auf ein Mitglied der Ironforgebrigade wird Euch für den PvP-Kampf markieren.",
       "title": "Felddienst",
       "translationMetadata": {
@@ -66,6 +134,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +168,11 @@
     },
     "enUS": {
       "description": "Greetings, {name}.  Before I assign you to more involved tasks in the war, you'll need to do your share of field duty.  \n\nYou will find Captain Blackanvil's Ironforge Brigade outside Hive'Zora.\n\nReport to him or his lieutenant, Janela Stouthammer and come back to me.  I shall have a more advanced assignment for you ready.\n\nOh and please do us a favor and stay away from the Orgrimmar Legion.  We've been forced to keep the two forces well apart from one another due to mutual animosity.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "You'll find Captain Blackanvil's force stationed outside Hive'Zora.  Talk to his lieutenant, Janela Stouthammer, if you can't find him.",
+        "4e2525979c471fede1a1": "Greetings, $N.  Before I assign you to more involved tasks in the war, you'll need to do your share of field duty.  $B$BYou will find Captain Blackanvil's Ironforge Brigade outside Hive'Zora.$B$BReport to him or his lieutenant, Janela Stouthammer and come back to me.  I shall have a more advanced assignment for you ready.$B$BOh and please do us a favor and stay away from the Orgrimmar Legion.  We've been forced to keep the two forces well apart from one another due to mutual animosity.",
+        "edbea5482b0e09a1df01": "Very well, $N  I've prepared a set of tasks that should make optimal use of your skills.$B$BWith the continued efforts of you and people like you, our enemy will soon be vanquished once and for all!$B$BShould you require a new mission briefing, return to Captain Blackanvil."
+      },
       "summary": "Report for duty at the Ironforge Brigade post near Hive'Zora. Prepare your Unsigned Field Duty Papers and obtain Signed Field Duty Papers from Captain Blackanvil and return to Windcaller Kaldon at Cenarion Hold in Silithus.\n\nNote: Healing or casting beneficial spells on a member of the Ironforge Brigade will flag you for PvP.",
       "title": "Field Duty",
       "translationMetadata": {
@@ -90,6 +181,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -106,6 +215,11 @@
     },
     "esES": {
       "description": "Hola, {name}. Antes de poder asignarte tareas más complicadas en la guerra, tendrás que hacer tu parte en el campo de batalla. \n\nEncontrarás al capitán Yunquenegro de la Brigada de Forjaz fuera de Colmen'Zora.\n\nPreséntate ante él o ante su teniente, Janela Martillotenaz y después vuelve a verme. Tendré preparada alguna tarea más avanzada para ti.\n\nOh y, por favor, no te acerques a la Legión de Orgrimmar. Nos hemos visto obligados a mantener ambas fuerzas separadas debido a la animadversión mutua.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Encontrarás la fuerza del Capitán Blackunvil estacionada fuera de Hive'Zora.  Habla con su lugarteniente, Janela Stouthammer, si no puedes encontrarlo.",
+        "4e2525979c471fede1a1": "Hola, $n. Antes de poder asignarte tareas más complicadas en la guerra, tendrás que hacer tu parte en el campo de batalla. \n\nEncontrarás al capitán Yunquenegro de la Brigada de Forjaz fuera de Colmen'Zora.\n\nPreséntate ante él o ante su teniente, Janela Martillotenaz y después vuelve a verme. Tendré preparada alguna tarea más avanzada para ti.\n\nOh y, por favor, no te acerques a la Legión de Orgrimmar. Nos hemos visto obligados a mantener ambas fuerzas separadas debido a la animadversión mutua.",
+        "edbea5482b0e09a1df01": "Muy bien, $N He preparado un conjunto de tareas que deberían hacer un uso óptimo de tus habilidades.\n\n ¡Con los continuos esfuerzos de usted y de personas como usted, nuestro enemigo pronto será vencido de una vez por todas!\n\n Si necesita una nueva sesión informativa de la misión, regrese con el Capitán Blackanvil."
+      },
       "summary": "Preséntate en el puesto de la Brigada de Forjaz cerca de Colmen'Zora. Prepara tu documentación de instrucción de campo sin firmar y consigue la documentación de instrucción de campo firmada del capitán Yunquenegro. A continuación, reúnete con Clamavientos Kaldon en el Fuerte Cenarion, en Silithus.\n\nNota: curar o lanzar hechizos benéficos a un miembro de la Brigada de Forjaz, te marcará como JcJ.",
       "title": "Servicio de campo",
       "translationMetadata": {
@@ -114,6 +228,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -130,6 +262,11 @@
     },
     "esMX": {
       "description": "Hola, {name}. Antes de poder asignarte tareas más complicadas en la guerra, tendrás que hacer tu parte en el campo de batalla. \n\nEncontrarás al capitán Yunquenegro de la Brigada de Forjaz fuera de Colmen'Zora.\n\nPreséntate ante él o ante su teniente, Janela Martillotenaz y después vuelve a verme. Tendré preparada alguna tarea más avanzada para ti.\n\nOh y, por favor, no te acerques a la Legión de Orgrimmar. Nos hemos visto obligados a mantener ambas fuerzas separadas debido a la animadversión mutua.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Encontrarás las fuerzas del Capitán Yunquenegro estacionadas fuera de Colmen'Zora. Si no puedes encontrarlo, habla con su teniente, Janela Martillotenaz.",
+        "4e2525979c471fede1a1": "Hola, $n. Antes de poder asignarte tareas más complicadas en la guerra, tendrás que hacer tu parte en el campo de batalla. \n\nEncontrarás al capitán Yunquenegro de la Brigada de Forjaz fuera de Colmen'Zora.\n\nPreséntate ante él o ante su teniente, Janela Martillotenaz y después vuelve a verme. Tendré preparada alguna tarea más avanzada para ti.\n\nOh y, por favor, no te acerques a la Legión de Orgrimmar. Nos hemos visto obligados a mantener ambas fuerzas separadas debido a la animadversión mutua.",
+        "edbea5482b0e09a1df01": "Muy bien, $n He preparado un conjunto de tareas que deberían hacer un uso óptimo de tus habilidades.\n\n¡Con los tus continuos esfuerzos y los de otros como tú, nuestro enemigo pronto será derrotado de una vez por todas!\n\nSi necesitas un nuevo informe de misión, regresa con el Capitán Yunquenegro."
+      },
       "summary": "Preséntate en el puesto de la Brigada de Forjaz cerca de Colmen'Zora. Prepara tu documentación de instrucción de campo sin firmar y consigue la documentación de instrucción de campo firmada del capitán Yunquenegro. A continuación, reúnete con Clamavientos Kaldon en el Fuerte Cenarion, en Silithus.\n\nNota: curar o lanzar hechizos benéficos a un miembro de la Brigada de Forjaz, te marcará como JcJ.",
       "title": "Servicio de campo",
       "translationMetadata": {
@@ -138,6 +275,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -154,6 +309,11 @@
     },
     "frFR": {
       "description": "Salutations, {name}. Avant que je vous assigne des tâches plus vitales pour la guerre, vous devrez faire votre part dans la mise en place de la campagne. \n\nVous trouverez les forces de la brigade de Forgefer commandée par le capitaine Blackanvil devant la Ruche’Zora. \n\nAllez vous présenter à lui ou à  son lieutenant, Janela Stouthammer, et revenez me voir. Je vous aurai alors préparé des missions plus délicates.\n\nOh, et faites-nous une faveur. Ne restez pas à côté de la légion d’Orgrimmar. Nous avons été obligés de bien séparer les deux armées à cause de l’animosité mutuelle qu’elles se vouent…",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Les forces du capitaine Blackanvil sont cantonnées devant la Ruche’Zora.  Parlez à son lieutenant, Janela Stouthammer, si vous ne pouvez pas le trouver. ",
+        "4e2525979c471fede1a1": "Salutations, $N. Avant que je vous assigne des tâches plus vitales pour la guerre, vous devrez faire votre part dans la mise en place de la campagne.\n\nVous trouverez les forces de la brigade de Forgefer commandée par le capitaine Noirenclume devant la Ruche’Zora.\n\nAllez vous présenter à lui ou à son lieutenant, Janela Rudemartel, et revenez me voir. Je vous aurai alors préparé des missions plus délicates.\n\nOh, et faites-nous une faveur. Ne restez pas à côté de la légion d’Orgrimmar. Nous avons été obligés de bien séparer les deux armées à cause de l’animosité mutuelle qu’elles se vouent…",
+        "edbea5482b0e09a1df01": "Très bien, $N. J’ai préparé une série de tâches qui conviennent parfaitement à vos compétences. \n \n Avec tous les efforts que vous et des personnes comme vous avez fournis, notre ennemi sera bientôt vaincu une bonne fois pour toutes !\n \n Si vous avez besoin d’un nouveau briefing, retournez voir le capitaine Blackanvil. "
+      },
       "summary": "Présentez-vous au poste de la brigade d’Ironforge devant la Ruche’Zora. Préparez votre Ordre de mission et obtenez un Ordre de mission signé du capitaine Blackanvil. Ensuite, retournez voir l'Implorateur céleste Kaldon au Fort cénarien, en Silithus.\n\nNote : lancer un sort de soin, ou tout autre sort bénéfique, sur un membre de la brigade d’Ironforge vous infligera un marqueur JcJ.",
       "title": "Votre affectation",
       "translationMetadata": {
@@ -162,6 +322,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -178,6 +356,11 @@
     },
     "hrHR": {
       "description": "Pozdrav, {name}. Prije nego što ti dodijelim složenije ratne zadatke, morat ćeš odraditi svoj dio terenske dužnosti.\n\nIronforge Brigade kapetana Blackanvila pronaći ćeš izvan Hive'Zore.\n\nJavi se njemu ili njegovoj poručnici Janeli Stouthammer i vrati mi se. Imat ću spreman napredniji zadatak za tebe.\n\nI molim te, učini nam uslugu i kloni se Orgrimmar Legiona. Bili smo prisiljeni držati te dvije snage daleko jedne od drugih zbog međusobnog neprijateljstva.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Snage kapetana Blackanvila pronaći ćeš ispred Hive’Zore. Razgovaraj s njegovom poručnicom Janelom Stouthammer ako ga ne možeš pronaći.",
+        "4e2525979c471fede1a1": "Pozdrav, $N. Prije nego što ti dodijelim zahtjevnije ratne zadatke, moraš odraditi svoj dio terenske službe.$B$BIronforge brigadu kapetana Blackanvila pronaći ćeš ispred Hive’Zore.$B$BJavi se njemu ili njegovoj poručnici Janeli Stouthammer pa se vrati k meni. Pripremit ću ti napredniji zadatak.$B$BI učini nam uslugu, drži se podalje od Orgrimmarske legije. Morali smo držati te dvije snage podalje jedne od drugih zbog uzajamnog neprijateljstva.",
+        "edbea5482b0e09a1df01": "Vrlo dobro, $N. Pripremio sam niz zadataka koji bi trebali najbolje iskoristiti tvoje vještine.$B$BUz daljnji trud tebe i ljudi poput tebe, naš će neprijatelj uskoro biti poražen jednom zauvijek!$B$BAko zatrebaš nove upute za misiju, vrati se kapetanu Blackanvilu."
+      },
       "summary": "Javi se na dužnost u ispostavu Ironforge Brigade blizu Hive'Zore. Pripremi Unsigned Field Duty Papers i uzmi Signed Field Duty Papers od kapetana Blackanvila pa se vrati Windcalleru Kaldonu u Cenarion Hold u Silithusu.\n\nNapomena: liječenje ili bacanje korisnih čarolija na člana Ironforge Brigade označit će te za PvP.",
       "title": "Terenska dužnost",
       "translationMetadata": {
@@ -187,6 +370,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "308e2ab1a834d85428786d889c0de16b620db59fd91cade60f77869ebc76a3da"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -205,6 +403,11 @@
     },
     "itIT": {
       "description": "Saluti, {name}. Prima di affidarti compiti più impegnativi nella guerra, dovrai fare la tua parte di servizio sul campo.\n\nTroverai la Brigata di Forgiardente del capitano Blackanvil fuori da Hive'Zora.\n\nPresentati a lui o al suo luogotenente, Janela Stouthammer, e torna da me. Avrò pronto per te un incarico più avanzato.\n\nAh, e per favore facci un favore: sta' lontano dalla Legione di Orgrimmar. Siamo stati costretti a tenere le due forze ben separate a causa della loro reciproca animosità.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Troverai le forze del Capitano Blackanvil di stanza fuori da Hive'Zora. Se non lo trovi, parla con la sua tenente, Janela Stouthammer.",
+        "4e2525979c471fede1a1": "Salute, $N. Prima che io ti assegni compiti più impegnativi in questa guerra, dovrai fare la tua parte di servizio sul campo.\n\nTroverai la Ironforge Brigade del Capitano Blackanvil fuori da Hive'Zora.\n\nPresentati a lui o alla sua tenente, Janela Stouthammer, e torna da me. Avrò pronto per te un incarico più avanzato.\n\nAh, e per favore, facci una cortesia: stai alla larga dalla Legione di Orgrimmar. Siamo stati costretti a tenere le due forze ben lontane l'una dall'altra per via dell'ostilità reciproca.",
+        "edbea5482b0e09a1df01": "Molto bene, $N. Ho preparato una serie di incarichi che dovrebbero sfruttare al meglio le tue capacità.\n\nGrazie all'impegno costante tuo e di quelli come te, il nostro nemico sarà presto sconfitto una volta per tutte!\n\nSe ti servono nuove istruzioni di missione, torna dal Capitano Blackanvil."
+      },
       "summary": "Presentati in servizio al posto della brigata di Ironforge vicino a Hive'Zora. Prepara i documenti di servizio sul campo non firmati, ottieni quelli firmati dal capitano Blackanvil e torna da Windcaller Kaldon a Cenarion Hold, a Silithus.\n\nNota: curare o lanciare incantesimi benefici su un membro della brigata di Ironforge ti renderà attaccabile in PvP.",
       "title": "Servizio sul campo",
       "translationMetadata": {
@@ -214,6 +417,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "308e2ab1a834d85428786d889c0de16b620db59fd91cade60f77869ebc76a3da"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -232,6 +453,11 @@
     },
     "koKR": {
       "description": "반갑소, {name}. 전쟁에서 중요한 역할을 맡으려면 우선 그대 몫의 야전 임무를 완수해야 하오.\n\n하이브조라 외곽으로 가면 블랙앤빌 연대장이 이끄는 아이언포지 여단이 있을 거요.\n\n연대장이나 부관인 자넬라 스타우트해머에게 보고한 후 돌아오시오. 더욱 중요한 임무를 준비해 놓고 기다리겠소.\n\n아, 한 가지 당부할 것은 오그리마 군단에 절대 가까이 가지 마시오. 양진영의 군대는 뿌리 깊은 적개심 때문에 적당히 떨어져 있을 수밖에 없는 상황이외다.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "하이브조라 밖으로 가면 주둔 중인 블랙앤빌 연대장의 군대가 있을 것입니다. 연대장을 찾을 수 없으면 그의 부관인 자넬라 스타우트해머와 대화하십시오.",
+        "4e2525979c471fede1a1": "반갑소, $N. 전쟁에서 중요한 역할을 맡으려면 우선 그대 몫의 야전 임무를 완수해야 하오.\n\n하이브조라 외곽으로 가면 블랙앤빌 연대장이 이끄는 아이언포지 여단이 있을 거요.\n\n연대장이나 부관인 자넬라 스타우트해머에게 보고한 후 돌아오시오. 더욱 중요한 임무를 준비해 놓고 기다리겠소.\n\n아, 한 가지 당부할 것은 오그리마 군단에 절대 가까이 가지 마시오. 양진영의 군대는 뿌리 깊은 적개심 때문에 적당히 떨어져 있을 수밖에 없는 상황이외다.",
+        "edbea5482b0e09a1df01": "$n, 정말 잘하셨소. 그동안 그대의 실력에 알맞은 몇 가지 임무를 준비해 두었소.\n\n그대 같은 이들이 계속 노력해 준다면 조만간 이 땅에서 적을 섬멸할 수 있을 것이오!\n\n새로운 임무를 받고 싶다면 블랙앤빌 연대장에게 가보시오."
+      },
       "summary": "하이브조라 외곽에 있는 아이언포지 여단의 주둔지로 가십시오. 서명되지 않은 야전 임무 보고서를 연대장 블랙앤빌에게 제출하고 서명된 야전 임무 보고서를 받아야 합니다. 그런 다음 실리더스 세나리온 요새에 있는 바람소환사 칼돈에게 돌아가십시오.\n\n주의: 아이언포지 여단의 일원을 치유하거나 이로운 마법을 걸면 전투 상태가 됩니다.",
       "title": "야전 임무",
       "translationMetadata": {
@@ -240,6 +466,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -256,6 +500,11 @@
     },
     "plPL": {
       "description": "Witaj, {name}. Zanim przydzielę ci bardziej złożone zadania wojenne, musisz odbyć swoją część służby w terenie.\n\nBrygadę Ironforge kapitana Blackanvila znajdziesz przed Hive'Zora.\n\nZgłoś się do niego lub jego porucznik, Janeli Stouthammer, i wróć do mnie. Przygotuję dla ciebie trudniejsze zadanie.\n\nAha, wyświadcz nam przysługę i trzymaj się z dala od Legionu Orgrimmar. Z powodu wzajemnej wrogości musieliśmy trzymać oba oddziały z dala od siebie.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Oddział kapitana Blackanvila stacjonuje przed Hive’Zora. Jeśli go nie znajdziesz, porozmawiaj z jego porucznik, Janelą Stouthammer.",
+        "4e2525979c471fede1a1": "Witaj, $N. Zanim przydzielę ci bardziej wymagające zadania wojenne, musisz odbyć swoją część służby w terenie.$B$BBrygadę Ironforge kapitana Blackanvila znajdziesz przed Hive’Zora.$B$BZgłoś się do niego lub jego porucznik, Janeli Stouthammer, a potem wróć do mnie. Przygotuję dla ciebie trudniejsze zadanie.$B$BAha, i zrób nam przysługę: trzymaj się z dala od Legionu Orgrimmaru. Musieliśmy trzymać obie formacje daleko od siebie z powodu wzajemnej wrogości.",
+        "edbea5482b0e09a1df01": "Bardzo dobrze, $N. Przygotowałem zestaw zadań, które powinny najlepiej wykorzystać twoje umiejętności.$B$BJeśli ty i podobne ci osoby będziecie kontynuować wysiłki, nasz wróg wkrótce zostanie pokonany raz na zawsze!$B$BJeśli potrzebujesz ponownych instrukcji do misji, wróć do kapitana Blackanvila."
+      },
       "summary": "Zgłoś się do służby na posterunku Brygady Ironforge w pobliżu Hive'Zora. Przygotuj niepodpisane dokumenty służby polowej, uzyskaj podpisane dokumenty od kapitana Blackanvila i wróć do przyzywacza wiatru Kaldona w Cenarion Hold w Silithus.\n\nUwaga: leczenie członka Brygady Ironforge lub rzucanie na niego korzystnych zaklęć oznaczy cię do PvP.",
       "title": "Służba w terenie",
       "translationMetadata": {
@@ -265,6 +514,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "308e2ab1a834d85428786d889c0de16b620db59fd91cade60f77869ebc76a3da"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -283,6 +547,11 @@
     },
     "ptBR": {
       "description": "Saudações, {name} Antes de lhe atribuir tarefas mais intrincadas na guerra, é preciso que você faça sua parte no serviço em campanha. \n\nA Brigada de Altaforja do Capitão Bigornero está estacionada perto de Colme'Zora.\n\nApresente-se a ele ou a Jenila Fortemalho, tenente dele, e fale novamente comigo. Deverei ter uma tarefa mais complexa para você então.\n\nAh, por favor, faça-nos um favor e fique longe da Legião de Orgrimmar. Fomos obrigados a manter as duas forças separadas uma da outra devido à animosidade mútua.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Você encontrará a força do Capitão Bigornero posicionada perto de Colme'Zora. Fale com a tenente dele, Jenila Fortemalho, se não conseguir encontrá-lo.",
+        "4e2525979c471fede1a1": "Saudações, $N Antes de lhe atribuir tarefas mais intrincadas na guerra, é preciso que você faça sua parte no serviço em campanha.\n\nA Brigada de Altaforja do Capitão Bigornero está estacionada perto de Colme'Zora.\n\nApresente-se a ele ou a Jenila Fortemalho, tenente dele, e fale novamente comigo. Deverei ter uma tarefa mais complexa para você então.\n\nAh, por favor, faça-nos um favor e fique longe da Legião de Orgrimmar. Fomos obrigados a manter as duas forças separadas uma da outra devido à animosidade mútua.",
+        "edbea5482b0e09a1df01": "Muito bem, $N. Preparei uma série de tarefas que devem aproveitar bem suas habilidades.\n\nCom seus esforços contínuos e os de pessoas como você, nosso inimigo logo será derrotado de uma vez por todas!\n\nSe você quiser instruções para uma nova missão, fale novamente com o Capitão Bigornero."
+      },
       "summary": "Apresente-se para o trabalho no posto da Brigada de Altaforja perto de Colme'Zora. Prepare seus Papéis em Branco de Serviço em Campanha e obtenha Papéis Assinados de Serviço em Campanha com o Capitão Bigornero. Então fale novamente com o Arauto do Vento Kaldon no Forte Cenariano em Silithus.\n\nNota: Curar ou lançar feitiços benéficos em um membro da Brigada de Altaforja marcará você para o JxJ.",
       "title": "Serviço em campanha",
       "translationMetadata": {
@@ -291,6 +560,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -307,6 +594,11 @@
     },
     "ruRU": {
       "description": "Приветствую тебя, {name}. Прежде чем дать тебе ответственные задания, я должен поручить тебе более простые и рутинные.\n\nДружина Стальгорна под предводительством капитана Черной Наковальни расквартирована рядом с Ульем Зора.\n\nПоговори с капитаном и его лейтенантом, Джанелой Твердомолот, а потом возвращайся. Тем временем я подготовлю для тебя новое задание.\n\nАх да, сделай одолжение, держись подальше от легиона Оргриммара. Нам нелегко удерживать эти два войска от грызни, очень уж они друг друга не любят.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Ты найдешь капитана Черной Наковальни не далеко от Улья Зора. Если все-таки не удастся его найти, то поговори с его лейтенантом, Джанелой Твердомолот.",
+        "4e2525979c471fede1a1": "Приветствую тебя, $N. Прежде чем дать тебе ответственные задания, я должен поручить тебе более простые и рутинные.\n\nДружина Стальгорна под предводительством капитана Черной Наковальни расквартирована рядом с Ульем Зора.\n\nПоговори с капитаном и его лейтенантом, Джанелой Твердомолот, а потом возвращайся. Тем временем я подготовлю для тебя новое задание.\n\nАх да, сделай одолжение, держись подальше от легиона Оргриммара. Нам нелегко удерживать эти два войска от грызни, очень уж они друг друга не любят.",
+        "edbea5482b0e09a1df01": "Очень хорошо, $N. Я подготовил несколько задач, которые обеспечат оптимальное использование твоих навыков.\n\nС твоими и усилиями других, скоро, наш враг будет разгромлен раз и на всегда!\n\nЕсли тебе потребуется новый инструктаж задания, вернись к капитану Черной Наковальни."
+      },
       "summary": "Поступите в распоряжение дружины Стальгорна возле улья Зора. Подготовьте неподписанные бумаги о полевых обязанностях и получите подписанные бумаги о полевых обязанностях от капитана Черной Наковальни, вернитесь к призывателю ветров Калдону в крепость Кенария в Силитусе.\n\nВнимание: исцеление или наложение благоприятных заклинаний на бойцов дружины Стальгорна переводит в режим PvP.",
       "title": "Рутинное задание",
       "translationMetadata": {
@@ -315,6 +607,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -331,6 +641,11 @@
     },
     "svSE": {
       "description": "Var hälsad, {name}. Innan jag ger dig mer omfattande uppgifter i kriget måste du göra din del av fälttjänsten.\n\nDu hittar Captain Blackanvils Ironforge Brigade utanför Hive'Zora.\n\nAnmäl dig hos honom eller hans löjtnant Janela Stouthammer och kom tillbaka till mig. Jag ska ha ett mer avancerat uppdrag redo.\n\nOch gör oss en tjänst och håll dig borta från Orgrimmar Legion. Vi har tvingats hålla styrkorna väl åtskilda på grund av deras ömsesidiga fiendskap.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Du hittar kapten Blackanvils styrka stationerad utanför Hive’Zora. Tala med hans löjtnant Janela Stouthammer om du inte hittar honom.",
+        "4e2525979c471fede1a1": "Hälsningar, $N. Innan jag ger dig mer krävande uppgifter i kriget måste du göra din del av fälttjänsten.$B$BDu hittar kapten Blackanvils Ironforge-brigad utanför Hive’Zora.$B$BAnmäl dig hos honom eller hans löjtnant Janela Stouthammer och återvänd sedan till mig. Jag ska ha ett mer avancerat uppdrag redo åt dig.$B$BOch gör oss en tjänst och håll dig borta från Orgrimmarlegionen. Vi har tvingats hålla styrkorna åtskilda på grund av deras ömsesidiga fientlighet.",
+        "edbea5482b0e09a1df01": "Mycket väl, $N. Jag har förberett en rad uppgifter som bör utnyttja dina färdigheter på bästa sätt.$B$BMed fortsatta insatser från dig och andra som du kommer vår fiende snart att besegras en gång för alla!$B$BOm du behöver en ny genomgång av uppdraget, återvänd till kapten Blackanvil."
+      },
       "summary": "Anmäl dig till tjänst vid Ironforge Brigades post nära Hive'Zora. Förbered dina osignerade tjänstgöringshandlingar, få dem signerade av Captain Blackanvil och återvänd till Windcaller Kaldon vid Cenarion Hold i Silithus.\n\nObservera: Om du helar eller kastar gynnsamma besvärjelser på en medlem av Ironforge Brigade markeras du för PvP.",
       "title": "Fälttjänst",
       "translationMetadata": {
@@ -340,6 +655,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "308e2ab1a834d85428786d889c0de16b620db59fd91cade60f77869ebc76a3da"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -358,6 +688,11 @@
     },
     "trTR": {
       "description": "Selam, {name}. Seni savaşta daha kapsamlı görevlere atamadan önce saha görevindeki payını yapmalısın.\n\nCaptain Blackanvil'in Ironforge Brigade'ini Hive'Zora'nın dışında bulacaksın.\n\nOna ya da teğmeni Janela Stouthammer'a rapor ver, sonra bana dön. Senin için daha ileri bir görev hazır edeceğim.\n\nAh, lütfen iyilik yapıp Orgrimmar Legion'dan uzak dur. Karşılıklı düşmanlık yüzünden iki kuvveti birbirinden epey ayrı tutmak zorunda kaldık.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Yüzbaşı Blackanvil’in birliğini Hive’Zora dışında konuşlanmış bulacaksın. Onu bulamazsan teğmeni Janela Stouthammer ile konuş.",
+        "4e2525979c471fede1a1": "Selamlar, $N. Sana savaşta daha kapsamlı görevler vermeden önce saha görevindeki payını yerine getirmelisin.$B$BYüzbaşı Blackanvil’in Ironforge Tugayı’nı Hive’Zora dışında bulacaksın.$B$BOna veya teğmeni Janela Stouthammer’a rapor ver ve bana geri dön. Senin için daha ileri bir görev hazırlayacağım.$B$BBir de bize iyilik yapıp Orgrimmar Lejyonu’ndan uzak dur. Karşılıklı düşmanlıkları nedeniyle iki gücü birbirinden uzak tutmak zorunda kaldık.",
+        "edbea5482b0e09a1df01": "Pekâlâ, $N. Yeteneklerinden en iyi şekilde yararlanacak bir dizi görev hazırladım.$B$BSenin ve senin gibilerin çabaları sürdükçe düşmanımız yakında kesin olarak yenilecek!$B$BYeni bir görev brifingine ihtiyacın olursa Yüzbaşı Blackanvil’e dön."
+      },
       "summary": "Hive'Zora yakınındaki Ironforge Tugayı karakolunda göreve rapor ver. İmzasız Saha Görev Belgeleri'ni hazırla, Yüzbaşı Blackanvil'den İmzalı Saha Görev Belgeleri al ve Silithus'taki Cenarion Hold'da bulunan Rüzgâr Çağırıcı Kaldon'a dön.\n\nNot: Ironforge Tugayı'nın bir üyesini iyileştirmek veya ona yararlı büyüler yapmak seni PvP'ye açık hâle getirir.",
       "title": "Saha Görevi",
       "translationMetadata": {
@@ -367,6 +702,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "308e2ab1a834d85428786d889c0de16b620db59fd91cade60f77869ebc76a3da"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -385,6 +735,11 @@
     },
     "ukUA": {
       "description": "Вітаю, {name}. Перш ніж ти отримаєш більш відповідальні завдання на війні, тобі потрібно виконати свою частину польового обов'язку.\n\nТи знайдеш капітана Чорнокова з бригада Залізогарта поблизу Вул'Зора.\n\nПоговори з ним або його лейтенанткою, Жанелою Дужомолот та повертайся до мене. Я підготую для тебе складніше завдання.\n\nІ, будь ласка, зроби послугу, тримайся якомога далі від Орґріммарського легіону. Ми змушені тримати ці два війська далеко одне від одного через ворожнечу між ними.",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "Загін капітана Блекенвіла стоїть біля Вулика Зора. Якщо не знайдеш його, поговори з його лейтенанткою Джанелою Стаутгаммер.",
+        "4e2525979c471fede1a1": "Вітаю, $N. Перш ніж доручити тобі складніші воєнні завдання, ти маєш виконати свою частку польової служби.$B$BБригаду Сталегарту капітана Блекенвіла знайдеш біля Вулика Зора.$B$BДоповідай йому або його лейтенантці Джанелі Стаутгаммер і повертайся до мене. Я підготую для тебе складніше завдання.$B$BІ зроби нам послугу: тримайся подалі від легіону Оргріммара. Через взаємну ворожнечу ми змушені тримати ці сили якнайдалі одна від одної.",
+        "edbea5482b0e09a1df01": "Гаразд, $N. Я підготував низку завдань, які мають якнайкраще використати твої вміння.$B$BЯкщо ти й такі, як ти, продовжите свої зусилля, нашого ворога незабаром буде переможено раз і назавжди!$B$BЯкщо тобі знадобляться нові вказівки щодо місії, повертайся до капітана Блекенвіла."
+      },
       "summary": "З'явіться для служби на пост бригади Залізогарта біля Вулика Зора. Підготуйте непідписані папери польової служби, отримайте підписані папери польової служби в капітана Blackanvil і поверніться до заклинача вітру Kaldon у Кенарійській Фортеці в Силітусі.\n\nПримітка: зцілення або корисні закляття, накладені на члена бригади Залізогарта, позначать вас для PvP.",
       "title": "Польова служба",
       "translationMetadata": {
@@ -395,6 +750,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "308e2ab1a834d85428786d889c0de16b620db59fd91cade60f77869ebc76a3da"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -414,6 +784,11 @@
     },
     "zhCN": {
       "description": "你好，{name}。在我为你布置更重要的任务之前，你需要首先完成一些常规的战地任务。\n\n你可以在佐拉虫穴外找到布莱卡维尔上尉的部队。\n\n向他或者他的副官珍妮拉·钢锤报到，然后回到我这里来。那时我将会给你下达进一步的指令。\n\n哦，别忘了离奥格瑞玛军团远一些。由于这两股势力之间的互相仇视，我们被迫把他们分开来。",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "你可以在佐拉虫巢外找到布莱卡维尔上尉的军队。和他的中尉，珍妮拉·钢锤谈谈，如果你能找到他的话。",
+        "4e2525979c471fede1a1": "你好，$N。在我为你布置更重要的任务之前，你需要首先完成一些常规的战地任务。\n\n你可以在佐拉虫穴外找到布莱卡维尔上尉的部队。\n\n向他或者他的副官珍妮拉·钢锤报到，然后回到我这里来。那时我将会给你下达进一步的指令。\n\n哦，别忘了离奥格瑞玛军团远一些。由于这两股势力之间的互相仇视，我们被迫把他们分开来。",
+        "edbea5482b0e09a1df01": "很好，$N。我已准备了一系列最适合你的技能的任务。\n\n有你和像你这样的人继续努力，我们的敌人很快就会被击败了!\n\n要取得新的任务简报，回去找布莱卡维尔上尉。\n"
+      },
       "summary": "向佐拉虫巢外的铁炉堡军团报到，从布莱卡维尔上尉那里拿到签过字的战地任务文件，把它交给希利苏斯塞纳里奥要塞的唤风者卡尔东。\n\n注意：给铁炉堡军团的士兵治疗或者施放增益法术会打开你的PvP标志。",
       "title": "战地任务",
       "translationMetadata": {
@@ -422,6 +797,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -438,6 +831,11 @@
     },
     "zhTW": {
       "description": "你好，{name}。在我給你更重要的戰地任務之前，你必須遵守你的戰地任務，\n\n你會在佐拉蟲巢外面找到鐵鬚指揮官的軍隊。幫助他完成在駐紮地的職務再回到我這裡。我會給你一個更高階的任務。",
+      "dialogue": {
+        "11fc75b29f4c540541fa": "你可以在佐拉蟲巢外找到布萊卡維爾上尉的軍隊。和他的中尉，珍妮拉.頑錘談談，如果你能找到他的話。",
+        "4e2525979c471fede1a1": "你好，$N。在我給你更重要的戰地任務之前，你必須遵守你的戰地任務，\n\n你會在佐拉蟲巢外面找到鐵鬚指揮官的軍隊。幫助他完成在駐紮地的職務再回到我這裡。我會給你一個更高階的任務。",
+        "edbea5482b0e09a1df01": "很好，$N。我已準備了一系列最適合你的技能的任務。\n\n有你和像你這樣的人繼續努力，我們的敵人很快就會被擊敗了!\n\n要取得新的任務簡報，回去找布萊卡維爾上尉。"
+      },
       "summary": "向佐拉蟲巢外的鐵爐堡軍團報到，從布萊卡維爾上尉那裏拿到簽過字的戰地任務文件，把它交給希利蘇斯塞納裏奧要塞的喚風者卡爾東。\n\n註意：給鐵爐堡軍團的士兵治療或者施放增益法術會打開妳的PvP標誌。",
       "title": "戰地任務",
       "translationMetadata": {
@@ -446,6 +844,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.11fc75b29f4c540541fa": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.4e2525979c471fede1a1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.edbea5482b0e09a1df01": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

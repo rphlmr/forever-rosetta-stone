@@ -26,6 +26,9 @@ parallel `locales/client-labels` files. Authorized translation snapshots use `ca
 `prepare-labels`, `check-labels` and `patch-labels`; agents edit only result JSON, and the
 coordinator applies validated catalog patches. Preserve existing translations and raw source
 formatting during source updates.
+Item modifiers use `itemenchantments/<SpellItemEnchantment.ID>.json`. Keep the
+official name, optional Horde variant and per-field provenance next to the source
+duration in seconds. Follow the [enchantment refresh and translation workflow](../docs/import-resync.md#equipment-enchantments-and-temporary-modifiers).
 Tool category names live in `totemcategories/<TotemCategory.ID>.json`, with localized `name`
 and inline field provenance. These IDs are not item IDs. Spell `tooltipData.requiredToolCategories`
 contains verified `SpellTotems.RequiredTotemCategoryID_*` relationships, with
@@ -49,6 +52,11 @@ objective source positions, or duplicate locale identifiers and English labels.
 
 - Quest text: `quests/<decimalQuestID>.json` → `locales[locale]`.
   Fields include `title`, `summary`, `description`, `eventObjectiveLabel`, and indexed `objectiveLines`.
+- Quest interaction dialogue carries its source identity in `dialogueContexts` and locale text in
+  `locales[locale].dialogue`. The owner is the quest for offers, progress and turn-in, and the
+  NPC for greetings and options. Keep `translationMetadata.fields["dialogue.<key>"]` with each
+  localized line. The [Spoken source workflow](../datasources/spoken/SOURCE.md) prepares updates
+  through resync. A reference candidate must match its full client text at runtime.
 - Names: `<kind>/<decimalID>.json` → `locales[locale].name`.
   Kinds are `items`, `npcs`, `areas`, `spells`, `talents`, `factions`, `creaturetypes`, and `classes`.
   Group finder activity names live in `activities/<GroupFinderActivity.ID>.json`, keyed by the
@@ -86,8 +94,8 @@ objective source positions, or duplicate locale identifiers and English labels.
   source as an explicit fallback, with its real source-language provenance. Do not guess labels.
 - Follow [the import/resync policy](../docs/import-resync.md) for source priority,
   target-language decisions and the reviewed prepare/apply/verify pipeline. Never author AI
-  for official target languages outside the dedicated book/letter pipeline. Preserve accepted translations, including
-  captured quest objectives; missing new-job evidence must not remove them.
+  for official target languages outside the book/letter and quest/NPC dialogue exceptions.
+  Preserve accepted translations, including captured quest objectives; missing new-job evidence must not remove them.
 - Preserve exact sourced wording and provenance, including legitimate names equal to English.
   For cities and continents, prefer official AreaTable/UiMap names. Never rewrite one
   language's source to make it agree with another language.
@@ -329,14 +337,14 @@ translation work merely because saved drafts exist.
 
 ### 3. One snapshot per entity, coordinator-owned integration
 
-When delegation is explicitly authorized, prepare waves of up to 100 entities with
-`tools/catalogs/catalog-batch.py` and `--batch-size 1`. Distribute the disjoint snapshots among
-six GPT-6.1-Tera workers at medium effort. Each worker can take several entities in a wave
-and completes every missing target language per entity. Start fresh workers for each wave
-with the assignment and relevant terminology, without inheriting previous conversations.
-Keep one result file per entity and save it before moving on to the next. Workers edit their
-assigned result files and report unresolved cases. Keep assignments bounded and validate
-results before applying them.
+When delegation is explicitly authorized, assign up to 125 entities to each of six fresh
+GPT-6.1-Tera workers at medium effort for a wave of up to 750 entities. Keep one snapshot
+per entity with `tools/catalogs/catalog-batch.py` and `--batch-size 1`. Balance disjoint
+assignments by the source text volume across missing target languages. Give workers compact
+inputs and relevant terminology with a fresh context for each wave. Each worker completes
+every missing target language per entity and saves a result file before moving on.
+Workers edit their assigned result files and report unresolved cases. Validate results
+before applying them.
 
 For each field, applicable trusted source updates win over existing text, especially AI drafts.
 Prefer verified official text for official languages, or applicable community text for community
@@ -421,7 +429,8 @@ Names use `fields.name`; quest prose uses its field name, and objective template
 
 The builder validates these origins and exports a `hasAITranslation` boolean per runtime record.
 Quest records contain only `title`, `summary`, `description`, `eventObjectiveLabel`, `objectiveLines`,
-and that boolean. Item/spell records also export available target-language `details`; their normalized
+and that boolean. Quest and NPC dialogue are indexed separately in the same language packs.
+Item/spell records also export available target-language `details`; their normalized
 tooltip dependencies and retained source templates remain in English detail records. ID-only rendering
 loads numeric rules through `GetItemRules` and `GetSpellRules`. Book-page records
 expose `description` and that boolean; other named entity records expose `name` and

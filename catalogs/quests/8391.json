@@ -1,8 +1,28 @@
 {
   "areaId": 3358,
+  "dialogueContexts": {
+    "2bbceda8b287d76d5ad3": {
+      "lineId": "q:8391:complete~dwarf-male-grim",
+      "npcId": 15351,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "e27846dd739bd14373b2": {
+      "lineId": "q:8391:progress~dwarf-male-grim",
+      "npcId": 15351,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Válka proti Hordě rychle vyčerpává naše zásoby, {name}. Musíme udržet Arathi Basin pod kontrolou, aby přísun zdrojů nepřestal! Už ses v Arathi zapojil do boje?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Dobrá práce, vojáku! Jen tak dál a Horda bude utíkat až do Orgrimmaru.",
+        "e27846dd739bd14373b2": "Válka proti Hordě rychle vyčerpává naše zásoby, $n. Je zásadní udržet kontrolu nad Arathijskou pánví, aby přísun surovin nepolevil! Pomohl jsi už v Arathi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +39,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "364a962f0c4b7f1770e9f77179c522916a344fcdc2ba5531136e74eec568ff57"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +73,10 @@
     },
     "daDK": {
       "description": "Krigen mod Horden udtømmer hurtigt vores forsyninger, {name}. Det er afgørende at bevare kontrollen over Arathi Basin for at holde ressourcestrømmen i gang! Har du givet en hånd med i Arathi endnu?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Godt arbejde, soldat! Fortsæt sådan, så får vi Horden til at flygte hele vejen tilbage til Orgrimmar.",
+        "e27846dd739bd14373b2": "Krigen mod Horden tærer hurtigt på vores forsyninger, $n. Det er afgørende at bevare kontrollen over Arathi Basin, så ressourcerne bliver ved med at strømme ind! Har du givet en hånd med i Arathi endnu?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "364a962f0c4b7f1770e9f77179c522916a344fcdc2ba5531136e74eec568ff57"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +126,10 @@
     },
     "deDE": {
       "description": "Der Krieg gegen die Horde verbraucht zusehends unsere Vorräte, {name}. Es ist lebenswichtig, dass wir die Kontrolle über das Arathibecken halten können, um den Ressourcennachschub für unsere Kriegsproduktion aufrechtzuerhalten! Unsere Truppen im Arathibecken können jederzeit Eure Hilfe brauchen.",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Hervorragende Arbeit, $C. Eure Anstrengungen werden dazu beitragen, dass der Allianz auch weiterhin dringend benötigte Ressourcen zur Verfügung stehen. ",
+        "e27846dd739bd14373b2": "Der Krieg gegen die Horde verbraucht zusehends unsere Vorräte, $N. Es ist lebenswichtig, dass wir die Kontrolle über das Arathibecken halten können, um den Ressourcennachschub für unsere Kriegsproduktion aufrechtzuerhalten! Unsere Truppen im Arathibecken können jederzeit Eure Hilfe brauchen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +145,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "The war against the Horde is quickly depleting our supplies, {name}.  It is vital to maintain control of Arathi Basin to keep the stream of resources flowing!  Have you lent a hand in Arathi yet?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Good work, soldier! Keep it up and we'll have the Horde running all the way back to Orgrimmar.",
+        "e27846dd739bd14373b2": "The war against the Horde is quickly depleting our supplies, $n.  It is vital to maintain control of Arathi Basin to keep the stream of resources flowing!  Have you lent a hand in Arathi yet?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -156,6 +232,10 @@
     },
     "esES": {
       "description": "La guerra contra la Horda está acabando rápidamente con nuestros recursos, {name}. ¡Es fundamental seguir controlando la Cuenca de Arathi para mantener la llegada de suministros! ¿Ya has prestado ayuda en Arathi?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "¡Buen trabajo, soldado!  Sigue así y tendremos a la Horda corriendo hasta Orgrimmar.",
+        "e27846dd739bd14373b2": "Dime, ¿cuáles son las noticias del frente?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +251,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -194,6 +286,10 @@
     },
     "esMX": {
       "description": "La guerra contra la Horda está acabando rápidamente con nuestros recursos, {name}. ¡Es fundamental seguir controlando la Cuenca de Arathi para mantener la llegada de suministros! ¿Ya has prestado ayuda en Arathi?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "¡Buen trabajo, soldado! Sigue así y haremos que la Horda huya hasta Orgrimmar.",
+        "e27846dd739bd14373b2": "La guerra contra la Horda está agotando rápidamente nuestros suministros, $n. ¡Es vital mantener el control de la Cuenca de Arathi para que sigan llegando recursos! ¿Ya has ayudado en Arathi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +305,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -231,6 +337,10 @@
     },
     "frFR": {
       "description": "La guerre contre la Horde diminue rapidement nos réserves, {name}. Il est vital que nous conservions le contrôle du bassin Arathi pour que les ressources continuent à nous arriver ! Êtes-vous déjà venu nous donner un coup de main en Arathor ?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Excellent travail, $C ! Vos efforts permettront à l’Alliance de recevoir les ressources dont elle a besoin. ",
+        "e27846dd739bd14373b2": "La guerre contre la Horde diminue rapidement nos réserves, $n.  Il est vital que nous conservions le contrôle du bassin d'Arathi pour que les ressources continuent à nous arriver !  Êtes-vous déjà venu nous donner un coup de main en Arathi ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +356,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -268,6 +390,10 @@
     },
     "hrHR": {
       "description": "Rat protiv Horde brzo iscrpljuje naše zalihe, {name}. Ključno je zadržati kontrolu nad Arathi Basinom kako bi resursi nastavili pritjecati! Jesi li već pomogao u Arathiju?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Dobar posao, vojniče! Nastavi tako i natjerat ćemo Hordu da bježi sve do Orgrimmara.",
+        "e27846dd739bd14373b2": "Rat protiv Horde brzo iscrpljuje naše zalihe, $n. Od ključne je važnosti zadržati kontrolu nad Arathijskim bazenom kako bi resursi nastavili pristizati! Jesi li već pomogao u Arathiju?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +410,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "364a962f0c4b7f1770e9f77179c522916a344fcdc2ba5531136e74eec568ff57"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +443,10 @@
     },
     "itIT": {
       "description": "La guerra contro l'Orda sta riducendo le nostre risorse, {name}. È vitale mantenere il controllo del Bacino d'Arathi per non vedere crollare l'afflusso di rifornimenti! Hai già prestato soccorso ad Arathi?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Ottimo lavoro, soldato! Continua così e faremo fuggire l’Orda fino a Orgrimmar.",
+        "e27846dd739bd14373b2": "La guerra contro l'Orda sta esaurendo in fretta le nostre provviste, $N. È vitale mantenere il controllo di Arathi Basin perché il flusso di risorse non si interrompa! Hai già dato una mano in Arathi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -322,6 +462,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -344,6 +495,10 @@
     },
     "koKR": {
       "description": "호드와의 오랜 전쟁으로 인해 물자가 급속도로 바닥나고 있네. 지속적인 자원 공급을 위해서는 아라시 분지를 우리 손에 넣는 것이 매우 중요하네! 얼라이언스를 위해 아라시 분지에는 다녀온 건가?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "수고했어, 병사!  계속 노력하면 호드가 오그리마로 돌아가도록 할 것입니다.",
+        "e27846dd739bd14373b2": "말해봐, 앞에서 소식이 뭐야?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -359,6 +514,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -381,6 +548,10 @@
     },
     "plPL": {
       "description": "Wojna z Hordą szybko wyczerpuje nasze zapasy, {name}. Utrzymanie kontroli nad Arathi Basin jest niezbędne, by zasoby nadal napływały! Czy pomogłeś już w Arathi?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Dobra robota, żołnierzu! Tak trzymaj, a zmusimy Hordę do ucieczki aż do Orgrimmaru.",
+        "e27846dd739bd14373b2": "Wojna z Hordą szybko wyczerpuje nasze zapasy, $n. Musimy utrzymać kontrolę nad Kotliną Arathi, aby zasoby nadal do nas płynęły! Czy udało ci się już pomóc w Arathi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -397,6 +568,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "364a962f0c4b7f1770e9f77179c522916a344fcdc2ba5531136e74eec568ff57"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -420,6 +601,10 @@
     },
     "ptBR": {
       "description": "A guerra contra a Horda está esgotando nossos suprimentos, {name}. É de vital importância mantermos o controle da Bacia Arathi para que nossa linha de abastecimento continue fluindo! Você já ajudou nossos soldados em Arathi?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Bom trabalho, soldado! Continue assim e, em breve, a Horda estará correndo de volta para Orgrimmar.",
+        "e27846dd739bd14373b2": "A guerra contra a Horda está esgotando nossos suprimentos rapidamente, $n. É vital manter o controle da Bacia Arathi para garantir o fluxo de recursos! Você já ajudou em Arathi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -435,6 +620,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -458,6 +654,10 @@
     },
     "ruRU": {
       "description": "У нас подходят к концу все припасы, {name}. Нам не выстоять против Орды, если мы не захватим Низину Арати. Эта низина – настоящая кладовая природы. Ты уже внес свой вклад в борьбу за нее?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Отлично, солдат! Продолжай в том же духе и Орда побежит от нас в Оргриммар!",
+        "e27846dd739bd14373b2": "Скажи мне, какие новости с фронта?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -473,6 +673,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -496,6 +708,10 @@
     },
     "svSE": {
       "description": "Kriget mot Horden tömmer snabbt våra förråd, {name}. Vi måste behålla kontrollen över Arathi Basin så att resurserna fortsätter strömma in! Har du hjälpt till i Arathi än?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Bra jobbat, soldat! Fortsätt så får vi Horden att fly hela vägen tillbaka till Orgrimmar.",
+        "e27846dd739bd14373b2": "Kriget mot Horden tömmer snabbt våra förråd, $n. Det är avgörande att behålla kontrollen över Arathi Basin så att resurserna fortsätter att flöda! Har du hjälpt till i Arathi ännu?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -512,6 +728,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "364a962f0c4b7f1770e9f77179c522916a344fcdc2ba5531136e74eec568ff57"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -536,6 +762,10 @@
     },
     "trTR": {
       "description": "Horde'a karşı savaş erzağımızı hızla tüketiyor, {name}. Kaynak akışının sürmesi için Arathi Basin'in kontrolünü elde tutmak hayati önem taşıyor! Arathi'de henüz yardım ettin mi?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "İyi iş, asker! Böyle devam et; Horde’un Orgrimmar’a kadar kaçmasını sağlayacağız.",
+        "e27846dd739bd14373b2": "Horde’a karşı savaş erzağımızı hızla tüketiyor, $n. Kaynak akışını sürdürmek için Arathi Havzası’nın kontrolünü korumamız hayati önem taşıyor! Arathi’de henüz yardım ettin mi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -552,6 +782,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "364a962f0c4b7f1770e9f77179c522916a344fcdc2ba5531136e74eec568ff57"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -575,6 +815,10 @@
     },
     "ukUA": {
       "description": "Війна проти Орди швидко виснажує наші припаси, {name}. Життєво важливо втримати контроль над низиною Араті, щоб потік ресурсів не припинявся! Ти вже допомагав в Араті?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "Гарна робота, солдате! Продовжуй у тому ж дусі, і ми змусимо Орду тікати аж до Орґріммара.",
+        "e27846dd739bd14373b2": "Війна проти Орди швидко виснажує наші запаси, $n. Вкрай важливо утримувати контроль над Низиною Араті, щоб ресурси надходили безперервно! Ти вже допомагав у Араті?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -591,6 +835,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "364a962f0c4b7f1770e9f77179c522916a344fcdc2ba5531136e74eec568ff57"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -615,6 +869,10 @@
     },
     "zhCN": {
       "description": "与部落的激战很快耗尽了我们的资源，{name}。掌握阿拉希盆地的控制权对维系战争物资的补给至关重要！你前往阿拉希伸出援手了吗？",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "太棒了，$C!你为联盟提供了急需的战争物资。\n",
+        "e27846dd739bd14373b2": "与部落的激战很快耗尽了我们的资源，$N。掌握阿拉希盆地的控制权对维系战争物资的补给相当重要!你前往阿拉希伸出援手了吗?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -630,6 +888,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -653,6 +923,10 @@
     },
     "zhTW": {
       "description": "與部落的激戰很快耗盡了我們的資源，{name}。掌握阿拉希盆地的控制權對維繫戰爭物資的補給相當重要!你前往阿拉希伸出援手了嗎?",
+      "dialogue": {
+        "2bbceda8b287d76d5ad3": "做得好，士兵！繼續努力，我們會讓部落一路逃回奧格瑪。",
+        "e27846dd739bd14373b2": "與部落的戰爭正迅速消耗我們的補給，$n。維持對阿拉希盆地的控制至關重要，才能確保資源源源不絕！你去阿拉希幫忙了嗎？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -668,6 +942,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.2bbceda8b287d76d5ad3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e27846dd739bd14373b2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

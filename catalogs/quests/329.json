@@ -1,8 +1,28 @@
 {
   "areaId": 33,
+  "dialogueContexts": {
+    "5b57634d62601c294134": {
+      "lineId": "q:329:complete",
+      "npcId": 469,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "81665ee556eba96181c9": {
+      "lineId": "q:329:progress",
+      "npcId": 469,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Mezi cennostmi ve schránce je zablácený, naškrábaný vzkaz. Je sotva čitelný, ale vypadá to na itinerář vojína Thorsena. Podrobně v něm uvádí jeho hlídkové trasy, s kým mluví a jak tráví čas s rebely. Je podepsaný jen jedním písmenem: em.\n\nAle kdokoli ten vzkaz napsal, musel být Thorsenovi velmi blízko. Ten, kdo to napsal, je zrádce v rebelském táboře.",
+      "dialogue": {
+        "5b57634d62601c294134": "Děkuji, $N. Tento vzkaz je stopa, kterou potřebujeme k odhalení zrádce!",
+        "81665ee556eba96181c9": "Zjistil jsi, kdo znal Thorsenovo tajemství? Je mezi námi zrádce?"
+      },
       "summary": "Dones Muddy Note poručíku Dorenovi do Rebel Camp.",
       "title": "Špeh odhalen!",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Blandt pengekistens værdigenstande ligger en mudret, hastigt nedskrevet besked. Selv om den knap er læselig, ligner den en rejseplan for menig Thorsen. Den beskriver hans patruljeruter, hvem han taler med, og hvordan han bruger sin tid sammen med oprørerne. Den er kun underskrevet med ét bogstav: -M.\n\nMen den, der skrev beskeden, må have holdt sig meget tæt på Thorsen. Den, der skrev beskeden, er forræderen i oprørslejren.",
+      "dialogue": {
+        "5b57634d62601c294134": "Tak, $N. Denne seddel er det spor, vi skal bruge for at afsløre forræderen!",
+        "81665ee556eba96181c9": "Fandt du ud af, hvem der kendte Thorsens hemmelighed? Er der en forræder blandt os?"
+      },
       "summary": "Tag den mudrede seddel med til løjtnant Doren ved Rebel Camp.",
       "title": "Spionen er afsløret!",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8761d4be52e89fe147771090cde73d117f0ab31e841265e5b7d369ef6859a58"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Unter den Wertgegenständen in der Geldkassette befindet sich eine schlammverschmierte, gekritzelte Notiz. Wenn sie auch kaum lesbar ist, so scheint es, als wäre es eine Abhandlung über den Gefreiten Thorsen. Sie beschreibt ausführlich seine Patrouillenrouten, mit wem er so spricht und wie er seine Zeit bei den Rebellen verbringt. Sie ist nur mit einem einzelnen Buchstaben unterschrieben: -M.\n\nDennoch muss, wer auch immer diese Notiz verfasst hat, stets in Thorsens Nähe gewesen sein. Wer auch immer diese Notiz verfasst hat, ist der Verräter im Rebellen-Lager.",
+      "dialogue": {
+        "5b57634d62601c294134": "Danke, $N. Diese Notiz ist der Hinweis, den wir brauchen, um den Verräter aufzustöbern!",
+        "81665ee556eba96181c9": "Habt Ihr herausgefunden, wer von Thorsens Geheimnis wusste? Gibt es einen Verräter unter uns?"
+      },
       "summary": "Bringt die schlammverschmierte Notiz zu Lieutenant Doren im Rebellen-Lager.",
       "title": "Der entlarvte Spion",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "Among the valuables of the strongbox is a muddy, scribbled note.  Although barely legible, it looks to be an itinerary for Private Thorsen.  It details his patrol routes, who he speaks with and how he spends his time with the rebels.  It's signed with only one letter: -M.\n\nBut whoever wrote this note must have stayed very close to Thorsen.  Whoever wrote this note is the traitor within the rebel camp.",
+      "dialogue": {
+        "5b57634d62601c294134": "Thank you, $N.  This note is the clue we need to root out the traitor!",
+        "81665ee556eba96181c9": "Did you discover who knew Thorsen's secret?  Is there a traitor among us?"
+      },
       "summary": "Take the Muddy Note to Lieutenant Doren at the Rebel Camp.",
       "title": "The Spy Revealed!",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Entre los objetos de la caja fuerte hay una nota sucia llena de garabatos. Aunque casi es imposible de leer, parece ser un itinerario para el soldado Thorsen. Detalla sus rutas de patrulla, con quién habla y cómo pasa su tiempo con los rebeldes. Está firmada con una letra: M.\n\nPero quien fuera que escribiera esta nota debe de haber estado muy cerca de Thorsen. Quien escribió esta nota es el traidor del Asentamiento Rebelde.",
+      "dialogue": {
+        "5b57634d62601c294134": "Gracias, $n. Esta nota es la pista que necesitábamos para dar con el traidor.",
+        "81665ee556eba96181c9": "¿Has descubierto quién sabía el secreto de Thorsen? ¿Hay un traidor entre nosotros?"
+      },
       "summary": "Lleva la nota sucia al teniente Doren en el Asentamiento Rebelde.",
       "title": "¡Espía descubierto!",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Entre los objetos de la caja fuerte hay una nota sucia llena de garabatos. Aunque casi es imposible de leer, parece ser un itinerario para el soldado Thorsen. Detalla sus rutas de patrulla, con quién habla y cómo pasa su tiempo con los rebeldes. Está firmada con una letra: M.\n\nPero quien fuera que escribiera esta nota debe de haber estado muy cerca de Thorsen. Quien escribió esta nota es el traidor del Asentamiento Rebelde.",
+      "dialogue": {
+        "5b57634d62601c294134": "Gracias, $n. Esta nota es la pista que necesitábamos para dar con el traidor.",
+        "81665ee556eba96181c9": "¿Has descubierto quién sabía el secreto de Thorsen? ¿Hay un traidor entre nosotros?"
+      },
       "summary": "Lleva la nota sucia al teniente Doren en el Asentamiento Rebelde.",
       "title": "¡Espía descubierto!",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "Parmi les objets précieux contenus dans le coffre-fort, il y a une note griffonnée et couverte de boue. Bien qu'elle soit à peine lisible, on dirait un itinéraire pour le soldat Thorsen. Il y a des détails sur ses itinéraires de patrouille, les gens auxquels il parle, ce qu'il fait de son temps avec les rebelles. Elle n'est signée que d'une lettre : M.\n\nMais celui ou celle qui a écrit cette note doit être proche de Thorsen. Celui ou celle qui a écrit cette note est le traître du camp rebelle.",
+      "dialogue": {
+        "5b57634d62601c294134": "Merci, $N. Cette note est l'indice qui nous manquait pour coincer le traître !",
+        "81665ee556eba96181c9": "Avez-vous découvert qui connaissait le secret de Thorsen ? Y a-t-il un traître parmi nous ?"
+      },
       "summary": "Apporter la Note maculée de boue au lieutenant Doren, au camp rebelle.",
       "title": "L'espion découvert !",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +304,10 @@
     },
     "hrHR": {
       "description": "Među dragocjenostima škrinjice nalazi se blatna, naškrabana poruka. Iako je jedva čitljiva, izgleda kao raspored vojnika Thorsena. Opisuje njegove ophodnje, s kim razgovara i kako provodi vrijeme s pobunjenicima. Potpisana je samo jednim slovom: -M.\n\nAli tko god je napisao ovu poruku morao je biti vrlo blizu Thorsena. Tko god ju je napisao izdajnik je u pobunjeničkom logoru.",
+      "dialogue": {
+        "5b57634d62601c294134": "Hvala, $N. Ova je poruka trag koji nam treba da razotkrijemo izdajnika!",
+        "81665ee556eba96181c9": "Jesi li otkrio tko je znao Thorsenovu tajnu? Ima li izdajnika među nama?"
+      },
       "summary": "Odnesi blatnu poruku poručniku Dorenu u Pobunjenički logor.",
       "title": "Špijun otkriven!",
       "translationMetadata": {
@@ -189,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8761d4be52e89fe147771090cde73d117f0ab31e841265e5b7d369ef6859a58"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +345,10 @@
     },
     "itIT": {
       "description": "Tra gli oggetti di valore nella cassetta c'è un biglietto infangato e scarabocchiato. Anche se è a malapena leggibile, sembra un resoconto degli spostamenti del soldato Thorsen. Descrive i percorsi delle sue pattuglie, le persone con cui parla e come trascorre il tempo con i ribelli. È firmato con una sola lettera: -M.\n\nMa chiunque l'abbia scritto deve essere rimasto molto vicino a Thorsen. Chi ha scritto questo biglietto è il traditore nell'accampamento dei ribelli.",
+      "dialogue": {
+        "5b57634d62601c294134": "Grazie, $N. Questo biglietto è l'indizio che ci serve per stanare il traditore!",
+        "81665ee556eba96181c9": "Hai scoperto chi conosceva il segreto di Thorsen? C'è un traditore tra noi?"
+      },
       "summary": "Porta il biglietto infangato al tenente Doren presso il Rebel Camp.",
       "title": "La spia smascherata!",
       "translationMetadata": {
@@ -216,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8761d4be52e89fe147771090cde73d117f0ab31e841265e5b7d369ef6859a58"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +388,10 @@
     },
     "koKR": {
       "description": "금고의 귀중한 물건들 중에는 진흙투성이의 휘갈겨 쓴 쪽지가 있습니다. 알아보기 힘들긴 하지만 병사 토르센의 여행 계획인 것 같습니다. 거기에는 정찰 경로, 접촉할 대상, 그리고 반란군의 임무를 완수하기 위한 시간 계획 등이 적혀 있습니다. 계획서에는 '-M'이라는 한 글자로 된 서명이 있습니다.\n\n이 쪽지를 작성한 것이 누구든지 간에 토르센과 매우 가까운 사이었음이 분명합니다. 또한 그자가 바로 반란군 야영지 내의 배반자일 것입니다.",
+      "dialogue": {
+        "5b57634d62601c294134": "고맙소. 이 쪽지는 배반자를 색출하는데 중요한 단서가 될 거요.",
+        "81665ee556eba96181c9": "토르센의 비밀을 알고 있는 자를 찾아냈소? 우리 중에 정말 배반자가 있는 거요?"
+      },
       "summary": "반란군 야영지에 있는 부관 도렌에게 진흙투성이 쪽지를 가져가야 합니다.",
       "title": "드러나는 첩자의 정체",
       "translationMetadata": {
@@ -242,6 +400,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +428,10 @@
     },
     "plPL": {
       "description": "Wśród kosztowności w szkatule leży ubłocona, nabazgrana notatka. Choć ledwo czytelna, wygląda na rozkład dnia szeregowego Thorsena. Szczegółowo opisuje trasy jego patroli, rozmówców i sposób spędzania czasu wśród buntowników. Widnieje na niej tylko jednoliterowy podpis: -M.\n\nKtokolwiek napisał tę notatkę, musiał trzymać się bardzo blisko Thorsena. Jej autor jest zdrajcą w obozie buntowników.",
+      "dialogue": {
+        "5b57634d62601c294134": "Dziękuję, $N. Ta notatka jest wskazówką, której potrzebujemy, by wykryć zdrajcę!",
+        "81665ee556eba96181c9": "Czy udało ci się odkryć, kto znał sekret Thorsena? Czy jest wśród nas zdrajca?"
+      },
       "summary": "Zanieś Ubłoconą notatkę porucznikowi Dorenowi w obozie buntowników.",
       "title": "Szpieg zdemaskowany!",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8761d4be52e89fe147771090cde73d117f0ab31e841265e5b7d369ef6859a58"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "Entre os itens valiosos na caixa-forte, encontra-se um bilhete enlameado. Mesmo quase ilegível, distingue-se um itinerário do Recruta Turgo. Detalhes sobre rotas de patrulha, com quem ele fala e o que ele faz quando está com os rebeldes. Na assinatura consta apenas de uma letra: M.\n\nQuem escreveu isto deve ter seguido Turgo de perto. Essa pessoa é o traidor infiltrado no acampamento dos rebeldes.",
+      "dialogue": {
+        "5b57634d62601c294134": "Obrigado, $N. Este bilhete é a pista de que precisamos para descobrir o traidor!",
+        "81665ee556eba96181c9": "Descobriu se mais alguém sabia do segredo de Turgo? Há um traidor entre nós?"
+      },
       "summary": "Leve o Bilhete Lamacento para Tenente Doren no Acampamento dos Rebeldes.",
       "title": "O espião é revelado!",
       "translationMetadata": {
@@ -293,6 +481,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +508,10 @@
     },
     "ruRU": {
       "description": "Среди ценностей в сундуке оказывается грязная, торопливо написанная записка. Это сведения о рядовом Торсене – где он патрулирует, с кем он говорит и как проводит время среди повстанцев. Записка подписана лишь одной буквой – М.\n\nЯсно одно, ее автор очень близко знаком с Торсеном, а это значит, что предатель – среди повстанцев.",
+      "dialogue": {
+        "5b57634d62601c294134": "Спасибо, $N. Эта записка является подсказкой, нам нужно уничтожить предателя!",
+        "81665ee556eba96181c9": "Тебе удалось узнать, кто знал секрет Торсена? Предатель среди нас?"
+      },
       "summary": "Отнесите грязную записку лейтенанту Дорену в Лагерь повстанцев.",
       "title": "Шпион найден!",
       "translationMetadata": {
@@ -317,6 +520,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +548,10 @@
     },
     "svSE": {
       "description": "Bland värdesakerna i kassaskrinet finns en lerig, nedklottrad lapp. Den är knappt läslig, men verkar vara ett schema för menige Thorsen. Där beskrivs hans patrullvägar, vilka han talar med och hur han tillbringar sin tid hos rebellerna. Den är undertecknad med en enda bokstav: -M.\n\nMen den som skrev lappen måste ha hållit sig mycket nära Thorsen. Den som skrev lappen är förrädaren i rebellägret.",
+      "dialogue": {
+        "5b57634d62601c294134": "Tack, $N. Den här lappen är ledtråden vi behöver för att avslöja förrädaren!",
+        "81665ee556eba96181c9": "Fick du reda på vem som kände till Thorsens hemlighet? Finns det en förrädare bland oss?"
+      },
       "summary": "Ta den leriga lappen till löjtnant Doren i rebellägret.",
       "title": "Spionen avslöjad!",
       "translationMetadata": {
@@ -342,6 +561,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8761d4be52e89fe147771090cde73d117f0ab31e841265e5b7d369ef6859a58"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +589,10 @@
     },
     "trTR": {
       "description": "Kasanın değerli eşyaları arasında çamurlu, karalanmış bir not var. Zor okunuyor ama Er Thorsen'in programına benziyor. Devriye güzergâhlarını, kimlerle konuştuğunu ve asilerle geçirdiği zamanı nasıl değerlendirdiğini ayrıntılı biçimde anlatıyor. Yalnızca tek bir harfle imzalanmış: -M.\n\nAma bu notu yazan kişi Thorsen'in çok yakınında bulunmuş olmalı. Bu notu kim yazdıysa asi kampındaki hain o.",
+      "dialogue": {
+        "5b57634d62601c294134": "Teşekkürler, $N. Bu not, haini ortaya çıkarmak için ihtiyaç duyduğumuz ipucu!",
+        "81665ee556eba96181c9": "Thorsen’ın sırrını kimin bildiğini öğrendin mi? Aramızda bir hain mi var?"
+      },
       "summary": "Çamurlu Not'u Asi Kampı'ndaki Teğmen Doren'e götür.",
       "title": "Casus Ortaya Çıktı!",
       "translationMetadata": {
@@ -369,6 +602,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d8761d4be52e89fe147771090cde73d117f0ab31e841265e5b7d369ef6859a58"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +630,10 @@
     },
     "ukUA": {
       "description": "Серед цінностей в сейфі ви знаходите брудну, надряпану записку. Хоч і текст ледве читається, але все ж вдається зрозуміти, що це маршрут рядового Торсена. У ній детально описано маршрути його патрулювання, з ким він розмовляє і як проводить час з повстанцями. Записка підписана лише однією літерою — M.\n\nАле, хто б не написав цю записку, у нього дуже близькі відносини з Торсеном. Автор цієї записки — зрадник табору Повстання.",
+      "dialogue": {
+        "5b57634d62601c294134": "Дякую, $N. Ця записка — зачіпка, яка допоможе нам викрити зрадника!",
+        "81665ee556eba96181c9": "Тобі вдалося з’ясувати, хто знав таємницю Торсена? Серед нас є зрадник?"
+      },
       "summary": "Віднесіть брудну записку лейтенанту Дорену в табір Повстання.",
       "title": "Шпигуна розкрито!",
       "translationMetadata": {
@@ -397,6 +644,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "d8761d4be52e89fe147771090cde73d117f0ab31e841265e5b7d369ef6859a58"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +674,10 @@
     },
     "zhCN": {
       "description": "在箱子里的这些贵重物品之中，还有一张满是灰尘且写得十分潦草的便笺。尽管几乎已经没法辨认了，但你能看出来这便笺上面似乎描述了列兵索尔森所走的路线。这应该是他的巡逻路线，以及反抗军方面与他接头的人员与时间。签名只有一个字母：M。\n\n毫无疑问，这应该是索尔森身边的人写下的便笺，而且这个人就是反抗军营地中的卧底。",
+      "dialogue": {
+        "5b57634d62601c294134": "谢谢你，$N。这条便笺显然是我们揪出这该死的内鬼的重要线索。\n",
+        "81665ee556eba96181c9": "你发现还有谁知道托尔森的秘密了吗?谁是我们当中的内鬼?"
+      },
       "summary": "将沾泥的便笺交给叛军营地里的多伦上尉。",
       "title": "找出内鬼！",
       "translationMetadata": {
@@ -425,6 +686,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +714,10 @@
     },
     "zhTW": {
       "description": "在箱子裡的這些貴重物品之中，還有一張滿是灰塵且寫得十分潦草的便箋。儘管幾乎已經沒法辨認了，但你能看出來這便箋上面似乎描述了列兵索爾森所走的路線。這應該是他的巡邏路線，以及反抗軍方面與他接頭的人員與時間。簽名只有一個字母：M。\n\n毫無疑問，這應該是索爾森身邊的人寫下的便箋，而且這個人就是反抗軍營地中的臥底。",
+      "dialogue": {
+        "5b57634d62601c294134": "謝謝你，$N。這條便箋顯然是我們揪出這該死的內鬼的重要線索。",
+        "81665ee556eba96181c9": "你發現還有誰知道托爾森的祕密了嗎?誰是我們當中的內鬼?"
+      },
       "summary": "將沾泥的便箋交給叛軍營地裡的多倫上尉。",
       "title": "找出內鬼！",
       "translationMetadata": {
@@ -449,6 +726,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.5b57634d62601c294134": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.81665ee556eba96181c9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

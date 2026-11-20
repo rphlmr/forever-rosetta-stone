@@ -1,8 +1,36 @@
 {
   "areaId": 357,
+  "dialogueContexts": {
+    "adcaccbc6ecbf9c6d1cc": {
+      "lineId": "q:3125:accept",
+      "npcId": 8115,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "bc3fcb89732594d5b3e2": {
+      "lineId": "q:3125:complete",
+      "npcId": 8115,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "fede3da0fa904b387a73": {
+      "lineId": "q:3125:progress",
+      "npcId": 8115,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "{name}, dále tě musím požádat o zajetí tvora, který může na pohled působit dost křehce, ale právě jeho mocný duch je to, oč nám doopravdy jde. Vílí draci, o kterých mluvím, sloužili nočním elfům jako spojenci. Musíme jednoho zajmout, aby z této síly ducha mohla mít prospěch i Horda.\n\nTady je nádoba na muisek, {name}. Zabij 8 vílích šipek nebo vílích draků a zachyť jejich muisek. Najdeš je na západ odsud.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, nyní potřebuji, abys zachytil tvora, který může vypadat velmi křehce, ale ve skutečnosti nám jde o jeho mocného ducha. Kouzelní dráčci, o kterých mluvím, sloužili jako spojenci nočních elfů. Musíme jednoho zajmout, aby i Horda mohla těžit ze síly jeho ducha.$B$BTady je muisek, $N. Zabij 8 sprite darterů nebo sprite dragonů a zachyť jejich muisek. Najdeš je západně odtud.",
+        "bc3fcb89732594d5b3e2": "Děkuji, $N. Nyní nám budou k dispozici duchovní síly kouzelného dráčka.$B$BDoufám, že pro mě budeš ochoten splnit další úkol.",
+        "fede3da0fa904b387a73": "Podařilo se ti zachytit muisek kouzelných dráčků?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "553746f666ab4740c43d263c753098fd48f18acdfe298716cbd9a674f11ec11d"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "{name}, nu må jeg bede dig indfange et væsen, som måske ser skrøbeligt ud, men hvis stærke ånd er det, vi i virkeligheden er ude efter. De fe-drager, jeg taler om, har tjent natelverne som allierede. Vi må indfange en, så Horden også kan nyde godt af denne åndens styrke.\n\nHer er muisek-beholderen, {name}. Dræb 8 sprite darters eller sprite dragons, og indfang deres muisek. De findes vest herfra.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, nu må jeg bede dig fange et væsen, der kan se skrøbeligt ud, men hvis stærke ånd er det, vi virkelig søger. De fe-drager, jeg taler om, har tjent som natelvernes allierede. Vi må fange en, så Horden også kan drage nytte af denne åndelige styrke.$B$BHer er muisek, $N. Dræb 8 sprite darters eller sprite dragons og indfang deres muisek. De findes vest for her.",
+        "bc3fcb89732594d5b3e2": "Tak, $N. Nu vil fe-dragens åndelige kræfter være til rådighed for os.$B$BJeg håber, du vil udføre endnu en opgave for mig.",
+        "fede3da0fa904b387a73": "Lykkedes det dig at fange fe-dragernes muisek?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +108,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "553746f666ab4740c43d263c753098fd48f18acdfe298716cbd9a674f11ec11d"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +146,11 @@
     },
     "deDE": {
       "description": "{name}, als Nächstes müsst Ihr für mich eine Kreatur fangen, die vom Aussehen her sehr zerbrechlich scheint, aber ihr mächtiger Geist ist das, was wir eigentlich besitzen wollen. Die Feendrachen, von denen ich spreche, dienen den Nachtelfen als Verbündete. Wir müssen einen von ihnen einfangen, damit auch die Horde von seiner Geisteskraft profitieren kann.\n\nHier ist das Muisekgefäß, {name}. Schaltet 8 Grimmlingflitzer oder Grimmlingdrachen aus und fangt ihr Muisek ein. Ihr könnt sie westlich von hier finden.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$n, als Nächstes müsst Ihr für mich eine Kreatur fangen, die vom Aussehen her sehr zerbrechlich scheint, aber ihr mächtiger Geist ist das, was wir eigentlich besitzen wollen. Die Feendrachen, von denen ich spreche, dienen den Nachtelfen als Verbündete. Wir müssen einen von ihnen einfangen, damit auch die Horde von seiner Geisteskraft profitieren kann.\n\nHier ist das Muisekgefäß, $n. Schaltet 8 Grimmlingflitzer oder Grimmlingdrachen aus und fangt ihr Muisek ein. Ihr könnt sie westlich von hier finden.",
+        "bc3fcb89732594d5b3e2": "Danke, $N. Jetzt steht die geistige Macht der Feendrachen auch uns zur Verfügung. \n \n Ich hoffe, Ihr seid willens, eine weitere Aufgabe für mich zu vollbringen. ",
+        "fede3da0fa904b387a73": "Konntet Ihr das Muisek der Feendrachen einfangen?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +166,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +206,11 @@
     },
     "enUS": {
       "description": "{name}, next I must have you capture a creature that in appearance, may look quite fragile, yet its powerful spirit is what we are truly after. The faerie dragons that I speak of have served the night elves as their allies. We must capture one so that the horde may benefit from this strength of spirit as well.\n\nHere is the muisek, {name}. Kill 8 sprite darters or sprite dragons, and capture their muisek. They may be found to the west of here.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, next I must have you capture a creature that in appearance, may look quite fragile, yet its powerful spirit is what we are truly after. The faerie dragons that I speak of have served the night elves as their allies. We must capture one so that the horde may benefit from this strength of spirit as well.$B$BHere is the muisek, $N. Kill 8 sprite darters or sprite dragons, and capture their muisek. They may be found to the west of here.",
+        "bc3fcb89732594d5b3e2": "Thank you, $N. Now the spiritual powers of the faerie dragon will be available to us.$B$BI hope you willing to perform another task for me.",
+        "fede3da0fa904b387a73": "Were you able to capture the muisek of the faerie dragons?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +226,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -158,6 +267,11 @@
     },
     "esES": {
       "description": "{name}, ahora quiero que captures a una criatura que es de apariencia frágil pero que posee un espíritu poderoso, que es lo que me interesa de ella. Hablo del dragón feérico, una criatura que ha servido como aliada a los elfos de la noche. Debemos capturar uno para que la Horda pueda beneficiarse de la fuerza de su espíritu.\n\nAquí tienes la vasija, {name}. Mata a 8 duendes dardo o duendes dragón y captura su muisek. Puedes encontrarlos al oeste de aquí.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, ahora quiero que captures a una criatura que es de apariencia frágil pero que posee un espíritu poderoso, que es lo que me interesa de ella. Hablo del dragón feérico, una criatura que ha servido como aliada a los elfos de la noche. Debemos capturar uno para que la Horda pueda beneficiarse de la fuerza de su espíritu.\n\nAquí tienes la vasija, $N. Mata a 8 duendes dardo o duendes dragón y captura su muisek. Puedes encontrarlos al oeste de aquí.",
+        "bc3fcb89732594d5b3e2": "Gracias, $n. Ahora tenemos los poderes espirituales del dragón feérico a nuestra disposición.\n\nEspero que aceptes una tarea más.",
+        "fede3da0fa904b387a73": "¿Conseguiste hacerte con el muisek de los dragones feéricos?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +287,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -195,6 +327,11 @@
     },
     "esMX": {
       "description": "{name}, ahora quiero que captures a una criatura que es de apariencia frágil pero que posee un espíritu poderoso, que es lo que me interesa de ella. Hablo de los dragones feéricos, unas criaturas que han servido como aliadas a los elfos de la noche. Debemos capturar uno para que la Horda pueda beneficiarse de la fuerza de su espíritu.\n\nAquí tienes la vasija, {name}. Mata a 8 duendes dardo o duendes dragón y captura su muisek. Puedes encontrarlos al oeste de aquí.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$n, ahora quiero que captures a una criatura que es de apariencia frágil pero que posee un espíritu poderoso, que es lo que me interesa de ella. Hablo de los dragones feéricos, unas criaturas que han servido como aliadas a los elfos de la noche. Debemos capturar uno para que la Horda pueda beneficiarse de la fuerza de su espíritu.\n\nAquí tienes la vasija, $n. Mata a 8 duendes dardo o duendes dragón y captura su muisek. Puedes encontrarlos al oeste de aquí.",
+        "bc3fcb89732594d5b3e2": "Gracias, $n. Ahora tenemos los poderes espirituales del dragón feérico a nuestra disposición.\n\nEspero que aceptes una tarea más.",
+        "fede3da0fa904b387a73": "¿Conseguiste hacerte con el muisek de los dragones feéricos?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +347,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -232,6 +387,11 @@
     },
     "frFR": {
       "description": "À présent, {name}, je souhaite que vous capturiez une créature fragile en apparence, mais dont l'esprit puissant nous intéresse. Je veux parler des dragons féeriques. Ils ont été les alliés des elfes de la nuit. Nous devons en capturer afin que la Horde puisse également bénéficier de cette force spirituelle.\n\nVoici le Vaisseau, {name}. Tuez 8 Fées fléchetteuses ou Petits dragons féeriques, et capturez leur muisek. On peut en trouver à l'ouest d'ici.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "À présent, $N, je souhaite que vous capturiez une créature fragile en apparence, mais dont l'esprit puissant nous intéresse. Je veux parler des dragons féeriques. Ils ont été les alliés des elfes de la nuit. Nous devons en capturer afin que la Horde puisse également bénéficier de cette force spirituelle.\n\nVoici le Vaisseau, $N. Tuez 8 Fées fléchetteuses ou Petits dragons féeriques, et capturez leur muisek. On peut en trouver à l'ouest d'ici.",
+        "bc3fcb89732594d5b3e2": "Merci, $N. Le pouvoir spirituel du dragon féerique nous sera désormais disponible. \n \n J'espère que cela ne vous gêne pas d'accomplir une autre mission pour moi. ",
+        "fede3da0fa904b387a73": "Avez-vous pu capturer le muisek des dragons féeriques ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +407,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -269,6 +447,11 @@
     },
     "hrHR": {
       "description": "{name}, sljedeće moram tražiti da zarobiš stvorenje koje se izgledom može činiti vrlo krhkim, ali njegov moćni duh ono je što doista tražimo. Vilinski zmajevi o kojima govorim služili su noćnim vilenjacima kao saveznici. Moramo zarobiti jednog kako bi i Horda mogla imati koristi od te snage duha.\n\nEvo muiseka, {name}. Ubij 8 Sprite Dartera ili Sprite Dragona i zarobi njihov muisek. Mogu se pronaći zapadno odavde.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, sada te moram zamoliti da uhvatiš stvorenje koje izgleda krhko, ali zapravo tražimo njegov moćni duh. Vilinski zmajevi o kojima govorim služili su noćnim vilenjacima kao saveznici. Moramo uhvatiti jednoga kako bi i Horda mogla iskoristiti tu snagu duha.$B$BEvo muiseka, $N. Ubij 8 sprite dartera ili sprite dragona i uhvati njihov muisek. Možeš ih pronaći zapadno odavde.",
+        "bc3fcb89732594d5b3e2": "Hvala ti, $N. Sada će nam duhovne moći vilinskog zmaja biti dostupne.$B$BNadam se da si spreman obaviti još jedan zadatak za mene.",
+        "fede3da0fa904b387a73": "Jesi li uspio uhvatiti muisek vilinskih zmajeva?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +468,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "553746f666ab4740c43d263c753098fd48f18acdfe298716cbd9a674f11ec11d"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +506,11 @@
     },
     "itIT": {
       "description": "{name}, ora devo chiederti di catturare una creatura che può sembrare molto fragile nell'aspetto, ma è il suo spirito potente ciò che cerchiamo davvero. I Draghi Fatati di cui parlo hanno servito gli Elfi della Notte come alleati. Dobbiamo catturarne uno affinché anche l'Orda possa beneficiare di questa forza dello spirito.\n\nEcco il muisek, {name}. Uccidi 8 Draghi Fatati o Draghetti Fatati e cattura il loro muisek. Si trovano a ovest di qui.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, ora devo chiederti di catturare una creatura che all'aspetto può sembrare assai fragile, ma è il suo spirito potente quello che cerchiamo davvero. I draghi fatati di cui parlo sono stati alleati degli elfi della notte. Dobbiamo catturarne uno, così che anche l'orda possa trarre beneficio da questa forza di spirito.\n\nEcco il muisek, $N. Uccidi 8 folletti sfreccianti o draghi folletto e cattura il loro muisek. Li troverai a ovest di qui.",
+        "bc3fcb89732594d5b3e2": "Grazie, $N. Ora i poteri spirituali del drago fatato saranno a nostra disposizione.$B$BSpero che tu sia disposto a svolgere un altro compito per me.",
+        "fede3da0fa904b387a73": "Sei riuscito a catturare il muisek dei draghi fatati?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -324,6 +527,22 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "553746f666ab4740c43d263c753098fd48f18acdfe298716cbd9a674f11ec11d"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -347,6 +566,11 @@
     },
     "koKR": {
       "description": "이번에는 보기에는 아주 나약해 보여도 아주 강한 영혼을 지니고 있는 생물을 잡아야 하네. 내가 말하는 요정용은 나이트 엘프의 동지라네. 녀석을 한 마리 잡아서 호드도 그 영혼의 힘으로부터 이익을 얻어야만 하네.\n\n자, 뮤세크 단지 여기 있네. 화살요정용이나 요정용을 8마리 처치해서 그들의 뮤세크를 손에 넣게. 요정용들은 여기서 서쪽으로 가면 찾을 수 있다네.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "이번에는 보기에는 아주 나약해 보여도 아주 강한 영혼을 지니고 있는 생물을 잡아야 하네. 내가 말하는 요정용은 나이트 엘프의 동지라네. 녀석을 한 마리 잡아서 호드도 그 영혼의 힘으로부터 이익을 얻어야만 하네.\n\n자, 뮤세크 단지 여기 있네. 화살요정용이나 요정용을 8마리 처치해서 그들의 뮤세크를 손에 넣게. 요정용들은 여기서 서쪽으로 가면 찾을 수 있다네.",
+        "bc3fcb89732594d5b3e2": "고맙네. 이제 호드도 요정용의 영적인 힘을 사용할 수 있게 되었군.\n\n자네가 한 가지 일을 더 해줬으면 좋겠네.",
+        "fede3da0fa904b387a73": "요정용들의 뮤세크를 잡아 왔나?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -362,6 +586,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -384,6 +626,11 @@
     },
     "plPL": {
       "description": "{name}, następnie musisz schwytać stworzenie, które może wyglądać dość krucho, lecz tak naprawdę zależy nam na jego potężnym duchu. Baśniowe smoki, o których mówię, służyły nocnym elfom jako sojusznicy. Musimy jednego schwytać, by Horda również skorzystała z tej siły ducha.\n\nOto muisek, {name}. Zabij 8 smoków Sprite Darter lub Sprite Dragon i schwytaj ich muisek. Znajdziesz je na zachód stąd.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, teraz muszę poprosić cię o schwytanie stworzenia, które może wyglądać krucho, lecz tak naprawdę zależy nam na jego potężnym duchu. Baśniowe smoki, o których mówię, były sojusznikami nocnych elfów. Musimy schwytać jednego, by Horda również mogła skorzystać z tej siły ducha.$B$BOto muisek, $N. Zabij 8 sprite darterów lub sprite dragonów i schwytaj ich muisek. Znajdziesz je na zachód stąd.",
+        "bc3fcb89732594d5b3e2": "Dziękuję, $N. Teraz duchowe moce baśniowego smoka będą nam dostępne.$B$BMam nadzieję, że podejmiesz się kolejnego zadania.",
+        "fede3da0fa904b387a73": "Czy udało się schwytać muisek baśniowych smoków?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -400,6 +647,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "553746f666ab4740c43d263c753098fd48f18acdfe298716cbd9a674f11ec11d"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -423,6 +685,11 @@
     },
     "ptBR": {
       "description": "{name}, agora tu vai pegar uma criatura que tu não dá nada pra ela, mas, saca só, o espírito dela é poderoso e pode ser útil. Tô falando é das dragoletas, aliadas dos elfos noturnos. A gente tem que prender umas pra Horda tirar proveito do poder espiritual delas.\n\nToma aí o muisec, {name}. Mate 8 dardejantes ou dragões-íris e capture seus muisecs. É só tu pegar pra oeste daqui que tu encontra elas.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, agora tu vai pegar uma criatura que tu não dá nada pra ela, mas, saca só, o espírito dela é poderoso e pode ser útil. Tô falando é das dragoletas, aliadas dos elfos noturnos. A gente tem que prender umas pra Horda tirar proveito do poder espiritual delas.\n\nToma aí o muisec, $N. Mate 8 dardejantes ou dragões-íris e capture seus muisecs. É só tu pegar pra oeste daqui que tu encontra elas.",
+        "bc3fcb89732594d5b3e2": "Obrigado, $N. Agora teremos acesso aos poderes espirituais do dragão feérico.$B$BEspero que você aceite realizar outra tarefa para mim.",
+        "fede3da0fa904b387a73": "Você conseguiu capturar o muisek dos dragões feéricos?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -438,6 +705,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -460,6 +743,11 @@
     },
     "ruRU": {
       "description": "{name}, теперь я попрошу тебя отловить существо, которое на вид кажется довольно хилым, но дух его могуч, а это – именно то, что нам надо. Лесные дракончики, о которых я говорю, были союзниками ночных эльфов. Нам надо поймать такого дракончика, чтобы Орда тоже могла воспользоваться силой его духа.\n\nУбей 8 летучих хамелеонов или радужных дракончиков, и плени их души. Эти существа водятся к западу отсюда.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$n, теперь я попрошу тебя отловить существо, которое на вид кажется довольно хилым, но дух его могуч, а это – именно то, что нам надо. Лесные дракончики, о которых я говорю, были союзниками ночных эльфов. Нам надо поймать такого дракончика, чтобы Орда тоже могла воспользоваться силой его духа.\n\nУбей 8 летучих хамелеонов или радужных дракончиков, и плени их души. Эти существа водятся к западу отсюда.",
+        "bc3fcb89732594d5b3e2": "Благодарю тебя, $N. Теперь духовная сила дракончиков доступна и нам!\n\nДумаю ты не откажешься еще от одной задачки, которую я тебе дам.",
+        "fede3da0fa904b387a73": "Ну, где сила дракончиков? Где она??"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -475,6 +763,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -497,6 +803,11 @@
     },
     "svSE": {
       "description": "{name}, härnäst måste du fånga en varelse som till utseendet kan verka skör, men vars starka ande är det vi verkligen söker. Älvdrakarna jag talar om har tjänat nattalverna som allierade. Vi måste fånga en så att även Horden kan dra nytta av denna andliga styrka.\n\nHär är muisek, {name}. Döda 8 sprite darters eller sprite dragons och fånga deras muisek. Du hittar dem väster härom.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, härnäst måste jag be dig fånga en varelse som kan se bräcklig ut, men vars mäktiga ande är det vi egentligen söker. Fédraakarna jag talar om har tjänat som nattalvernas allierade. Vi måste fånga en så att Horden också kan dra nytta av denna andliga styrka.$B$BHär är muisek, $N. Döda 8 sprite darters eller sprite dragons och fånga deras muisek. De finns västerut härifrån.",
+        "bc3fcb89732594d5b3e2": "Tack, $N. Nu blir fédrakens andliga krafter tillgängliga för oss.$B$BJag hoppas att du vill utföra ännu en uppgift åt mig.",
+        "fede3da0fa904b387a73": "Lyckades du fånga fédrakarnas muisek?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -513,6 +824,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "553746f666ab4740c43d263c753098fd48f18acdfe298716cbd9a674f11ec11d"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -536,6 +862,11 @@
     },
     "trTR": {
       "description": "{name}, sırada görünüşte oldukça narin olsa da asıl peşinde olduğumuz güçlü bir ruha sahip olan bir yaratığı yakalaman gerekiyor. Sözünü ettiğim peri ejderhaları night elflere müttefik olarak hizmet etti. Horde'un da bu ruh gücünden yararlanması için birini yakalamalıyız.\n\nİşte muisek, {name}. 8 sprite darter ya da sprite dragon öldür ve muiseklerini yakala. Buranın batısında bulunabilirler.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, şimdi görünüşte oldukça kırılgan olabilecek bir yaratığı yakalamanı istemeliyim; ama asıl istediğimiz onun güçlü ruhu. Sözünü ettiğim peri ejderhaları gece elflerine müttefik olarak hizmet etti. Horde’un da bu ruh gücünden yararlanması için birini yakalamalıyız.$B$Bİşte muisek, $N. 8 sprite darter veya sprite dragon öldür ve muiseklerini yakala. Onları buranın batısında bulabilirsin.",
+        "bc3fcb89732594d5b3e2": "Teşekkür ederim, $N. Artık peri ejderhasının ruhani güçlerinden yararlanabileceğiz.$B$BUmarım benim için başka bir görev daha yapmaya hazırsındır.",
+        "fede3da0fa904b387a73": "Peri ejderhalarının muiseklerini yakalayabildin mi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -552,6 +883,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "553746f666ab4740c43d263c753098fd48f18acdfe298716cbd9a674f11ec11d"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -575,6 +921,11 @@
     },
     "ukUA": {
       "description": "{name}, наступне створіння яке я попрошу тебе захопити, на перший погляд, може виглядати досить крихітним і невинним, але його потужний дух — це те, що нам потрібно. Чарівні дракончики, про яких я говорю, були союзниками нічних ельфів. Ми повинні захопити їх, щоб Орда також могла скористатися цією силою духу.\n\nОсь посудина зменшення, {name}. Вбий 8 райдужних хамелеонів або райдужних дракончиків і захопи їхні душі. Їх можна знайти на заході звідси.",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N, тепер я маю попросити тебе впіймати створіння, яке на вигляд може бути тендітним, але насправді нас цікавить його могутній дух. Чарівні дракони, про яких я кажу, були союзниками нічних ельфів. Ми мусимо впіймати одного, щоб і Орда могла скористатися силою його духу.$B$BОсь муісек, $N. Убий 8 лісових стрімчаків або дракончиків і захопи їхній муісек. Їх можна знайти на захід звідси.",
+        "bc3fcb89732594d5b3e2": "Дякую, $N. Тепер духовні сили чарівного дракона будуть нам доступні.$B$BСподіваюся, ти погодишся виконати ще одне завдання.",
+        "fede3da0fa904b387a73": "Чи вдалося тобі захопити муісек чарівних драконів?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -592,6 +943,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "553746f666ab4740c43d263c753098fd48f18acdfe298716cbd9a674f11ec11d"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -617,6 +983,11 @@
     },
     "zhCN": {
       "description": "{name}，下一步我必须让你捕获一种看上去可能很脆弱，但却有着我们真正需要的强大精神力量的生物。我所说的就是精灵龙，它们是暗夜精灵的伙伴。我们必须抓一只精灵龙来进行研究，这样部落也可以从这种精神力量中获益。\n\n我们需要它们的灵魂精华，{name}。杀掉八只小精龙或精龙，并俘获它们的灵魂。从这里向西就可以找到它们。",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N，下一步我必须让你捕获一种看上去可能很脆弱，但却有着我们真正需要的强大精神力量的生物。我所说的就是精灵龙，它们是暗夜精灵的伙伴。我们必须抓一只精灵龙来进行研究，这样部落也可以从这种精神力量中获益。\n\n我们需要它们的灵魂精华，$N。杀掉八只小精龙或精龙，并俘获它们的灵魂。从这里向西就可以找到它们。",
+        "bc3fcb89732594d5b3e2": "谢谢你，$N。现在精灵龙的灵魂力量可以为我们所用了。\n\n我希望你能再为我完成另一个任务。\n",
+        "fede3da0fa904b387a73": "你捕获那些精灵龙的灵魂了吗?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -632,6 +1003,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -654,6 +1043,11 @@
     },
     "zhTW": {
       "description": "{name}，下一步我必須讓你捕獲一種看起來可能很脆弱，但卻有著我們真正需要的強大精神力量的生物。我所說的就是精靈龍，它們是夜精靈的夥伴。我們必須抓一隻精靈龍來進行研究，這樣部落也可以從這種精神力量中獲益。\n\n我們需要它們的靈魂精華，{name}。殺掉八隻小精龍或精龍，並俘獲它們的靈魂。從這裡向西就可以找到它們。",
+      "dialogue": {
+        "adcaccbc6ecbf9c6d1cc": "$N，下一步我必須讓你捕獲一種看上去可能很脆弱，但卻有著我們真正需要的強大精神力量的生物。我所說的就是精靈龍，它們是暗夜精靈的夥伴。我們必須抓一隻精靈龍來進行研究，這樣部落也可以從這種精神力量中獲益。\n\n我們需要它們的靈魂精華，$N。殺掉八隻小精龍或精龍，並俘獲它們的靈魂。從這裡向西就可以找到它們。",
+        "bc3fcb89732594d5b3e2": "謝謝你，$N。現在精靈龍的靈魂力量可以爲我們所用了。\n\n我希望你能再爲我完成另一個任務。",
+        "fede3da0fa904b387a73": "你捕獲那些精靈龍的靈魂了嗎?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -669,6 +1063,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.adcaccbc6ecbf9c6d1cc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.bc3fcb89732594d5b3e2": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.fede3da0fa904b387a73": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

@@ -1,8 +1,46 @@
 {
   "areaId": 10,
+  "dialogueContexts": {
+    "787fb08aef4b5196f56e": {
+      "lineId": "q:269:accept",
+      "npcId": 311,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "79f7d33052576a03c271": {
+      "lineId": "q:269:progress:f",
+      "npcId": 1212,
+      "playerSex": 3,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "c10c8b93261676c5b647": {
+      "lineId": "q:269:progress:m",
+      "npcId": 1212,
+      "playerSex": 2,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "ed48dc1c73e969132a44": {
+      "lineId": "q:269:complete",
+      "npcId": 1212,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Jdi do města Stormwind a promluv si s biskupem Farthingem v Cathedral of Light. Dej mu Jittersův deník a řekni mu, že hodláš čelit Morbentu Felovi.\n\nAčkoli Stormwind Darkshire opustil, Farthing je laskavá duše a velmi moudrý. Může ti na tvé výpravě za naší záchranou pomoct.\n\nTvá mise je nebezpečná, ale pospěš si, {name}. S každou hodinou jsou stíny Duskwoodu temnější.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Jdi do Stormwindu a promluv si s biskupem Farthingem v Katedrále Světla. Dej mu Jittersův deník a řekni, že chceš čelit Morbentu Felovi.$B$BAčkoli Stormwind opustil Darkshire, Farthing je laskavá a velmi moudrá duše. Možná ti pomůže nás zachránit.$B$BTvé poslání je nebezpečné, ale pospěš si, $N. S každou hodinou jsou stíny Duskwoodu temnější.",
+        "79f7d33052576a03c271": "Odpočiň si, $gbratře:sestro;. Vidím, že jsi putovala daleko a neseš těžké břemeno. Pověz mi, co na tebe vrhá ten temný stín?",
+        "c10c8b93261676c5b647": "Odpočiň si, $gbratře:sestro;. Vidím, že jsi putoval daleko a neseš těžké břemeno. Pověz mi, co na tebe vrhá ten temný stín?",
+        "ed48dc1c73e969132a44": "<Po přečtení deníku a vyslechnutí tvého záměru...>$B$BZlo zapustilo kořeny v již tak těžce zkoušeném Duskwoodu. Děkuji Světlu, že máme hrdinu, jako jsi ty, který se mu postaví.$B$BNejprve se však musíš připravit na nadcházející zkoušku... nekromant Morbent Fel je nesmírně mocný a chrání se temnými kouzly proti fyzickým útokům. Abys ho porazil, budeš potřebovat zbraň, která tuto ochranu překoná."
+      },
       "summary": "Předej Jitters' Completed Journal biskupu Farthingovi do Stormwindu.",
       "title": "Hledání moudrosti",
       "translationMetadata": {
@@ -12,6 +50,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "18d9aa2100a00d50c23a7c23e563fd0c7336660c99c28b3d5f52cdc1b3e9fca4"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +90,12 @@
     },
     "daDK": {
       "description": "Tag til byen Stormwind og tal med biskop Farthing i Cathedral of Light. Giv ham Jitters' dagbog og fortæl ham, at du har til hensigt at konfrontere Morbent Fel.\n\nSelvom Stormwind har svigtet Darkshire, er Farthing en venlig sjæl og meget vis. Han kan måske hjælpe dig på din færd for at redde os.\n\nDin mission er farefuld, men skynd dig, {name}. For hver time bliver Duskwoods skygger stadig mørkere.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Tag til Stormwind og tal med biskop Farthing i Lysets Katedral. Giv ham Jitters' dagbog og fortæl, at du vil møde Morbent Fel.$B$BSelvom Stormwind har svigtet Darkshire, er Farthing en venlig og meget vis sjæl. Han kan måske hjælpe dig med at redde os.$B$BDin mission er farefuld, men skynd dig, $N. For hver time bliver Duskwoods skygger mørkere.",
+        "79f7d33052576a03c271": "Hvil dig, $gbror:søster;. Jeg kan se, at du har rejst langt og bærer en tung byrde. Kan du fortælle mig, hvad der kaster den mørke skygge over dig?",
+        "c10c8b93261676c5b647": "Hvil dig, $gbror:søster;. Jeg kan se, at du har rejst langt og bærer en tung byrde. Kan du fortælle mig, hvad der kaster den mørke skygge over dig?",
+        "ed48dc1c73e969132a44": "<Efter at have læst dagbogen og hørt din hensigt...>$B$BEn ond besmittelse har fået fodfæste i det allerede hårdt prøvede Duskwood. Jeg takker Lyset for, at vi har en helt som dig til at møde den.$B$BMen først må du forberede dig på den kommende prøve... nekromantikeren Morbent Fel er umådelig mægtig og har omgivet sig med mørke besværgelser mod fysiske angreb. Hvis du skal besejre ham, behøver du et våben, der kan trænge gennem beskyttelsen."
+      },
       "summary": "Giv Jitters' færdige dagbog til biskop Farthing i Stormwind.",
       "title": "På jagt efter visdom",
       "translationMetadata": {
@@ -41,6 +105,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "18d9aa2100a00d50c23a7c23e563fd0c7336660c99c28b3d5f52cdc1b3e9fca4"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +143,12 @@
     },
     "deDE": {
       "description": "Geht nach Stormwind und sprecht dort mit Bischof Farthing in der Kathedrale des Lichts. Gebt ihm Jitters' Tagebuch und sagt ihm, dass Ihr vorhabt, Euch Morbent Fel zu stellen.\n\nAuch wenn Stormwind Dunkelhain aufgegeben hat, ist Farthing doch eine gute Seele und sehr weise. Er könnte Euch bei Eurem Versuch, uns zu retten, behilflich sein.\n\nEure Mission ist gefahrvoll, aber beeilt Euch dennoch, {name}. Mit jeder verstreichenden Stunde verfinstern sich die Schatten über dem Dämmerwald mehr und mehr.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Geht nach Stormwind und sprecht dort mit Bischof Farthing in der Kathedrale des Lichts. Gebt ihm Jitters' Tagebuch und sagt ihm, dass Ihr vorhabt, Euch Morbent Fel zu stellen.\n\nAuch wenn Stormwind Dunkelhain aufgegeben hat, ist Farthing doch eine gute Seele und sehr weise. Er könnte Euch bei Eurem Versuch, uns zu retten, behilflich sein.\n\nEure Mission ist gefahrvoll, aber beeilt Euch dennoch, $N. Mit jeder verstreichenden Stunde verfinstern sich die Schatten über dem Dämmerwald mehr und mehr.",
+        "79f7d33052576a03c271": "Ruht Euch erst einmal aus, Schwester. Ich sehe Euch an, dass Ihr weit gereist seid und eine schwere Bürde tragt. Könnt Ihr mir erzählen, was diesen dunklen Schatten über Euch wirft?",
+        "c10c8b93261676c5b647": "Ruht Euch erst einmal aus, Bruder. Ich sehe Euch an, dass Ihr weit gereist seid und eine schwere Bürde tragt. Könnt Ihr mir erzählen, was diesen dunklen Schatten über Euch wirft?",
+        "ed48dc1c73e969132a44": " \n Eine böse Besudelung hat im ohnehin bereits belagerten Dämmerwald Fuß gefasst. Ich danke dem Licht, dass wir einen Helden wie Euch haben, der sich ihm stellen will. \n \n Aber zuerst müsst Ihr Euch auf die kommenden Strapazen vorbereiten. . . denn der Totenbeschwörer Morbent Fel ist ungeheuer mächtig, und er hat dunkle Verzauberungen auf sich selbst gewirkt, um sich vor körperlichen Angriffen zu schützen. Wenn Ihr ihn besiegen wollt, werdet Ihr eine Waffe benötigen, die gegen diese Schutzzauber gefeit ist. "
+      },
       "summary": "Gebt Bischof Farthing in Stormwind Jitters' vollständiges Tagebuch.",
       "title": "Auf der Suche nach Weisheit",
       "translationMetadata": {
@@ -67,6 +157,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +197,12 @@
     },
     "enUS": {
       "description": "Go to the city of Stormwind and speak with Bishop Farthing in the Cathedral of Light.  Give him Jitters' journal and tell him you mean to face Morbent Fel.\n\nAlthough Stormwind has forsaken Darkshire, Farthing is a kind soul and very wise.  He may help you on your quest to save us.\n\nYour mission is perilous, but hurry, {name}.  With each passing hour, the shadows of Duskwood grow ever darker.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Go to the city of Stormwind and speak with Bishop Farthing in the Cathedral of Light.  Give him Jitters' journal and tell him you mean to face Morbent Fel.$B$BAlthough Stormwind has forsaken Darkshire, Farthing is a kind soul and very wise.  He may help you on your quest to save us.$B$BYour mission is perilous, but hurry, $N.  With each passing hour, the shadows of Duskwood grow ever darker.",
+        "79f7d33052576a03c271": "Rest, $gbrother:sister;.  I can tell you have traveled far, and you bear a heavy burden.  Can you tell me what casts that dark shadow over you?",
+        "c10c8b93261676c5b647": "Rest, $gbrother:sister;.  I can tell you have traveled far, and you bear a heavy burden.  Can you tell me what casts that dark shadow over you?",
+        "ed48dc1c73e969132a44": "<After reading the journal and hearing your intent...>$B$BAn evil taint has gained a foothold within the already beleaguered Duskwood.  I thank the Light we have a hero such as you to face it.$B$BBut you must first prepare yourself for the coming trial...for the Necromancer Morbent Fel is immensely powerful, and has cast dark enchantments about himself to protect him from physical assaults.  If you are to defeat him, you will need a weapon that is proof against these protections."
+      },
       "summary": "Give Jitters' Completed Journal to Bishop Farthing in Stormwind.",
       "title": "Seeking Wisdom",
       "translationMetadata": {
@@ -91,6 +211,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +252,12 @@
     },
     "esES": {
       "description": "Ve a la ciudad de Ventormenta y habla con el obispo Farthing. Búscalo en la Catedral de la Luz. Dale el diario del Gato y dile que deseas enfrentarte a Morbent Vil.\n\nAunque Ventormenta ha abandonado a Villa Oscura, Farthing es un alma buena y sabia. Puede que te ayude a salvarnos.\n\nTu misión es peligrosa, pero date prisa, {name}. Las sombras del Bosque del Ocaso son más cada vez más oscuras.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Ve a la ciudad de Ventormenta y habla con el obispo Farthing. Búscalo en la Catedral de la Luz. Dale el diario del Gato y dile que deseas enfrentarte a Morbent Vil.\n\nAunque Ventormenta ha abandonado a Villa Oscura, Farthing es un alma buena y sabia. Puede que te ayude a salvarnos.\n\nTu misión es peligrosa, pero date prisa, $N. Las sombras del Bosque del Ocaso son más cada vez más oscuras.",
+        "79f7d33052576a03c271": "Descansa, hermano. Se ve que has viajado lejos y que llevas un peso enorme. ¿Puedes decirme qué es lo que proyecta sobre ti esa sombra tan oscura?",
+        "c10c8b93261676c5b647": "Descansa, hermano. Se ve que has viajado lejos y que llevas un peso enorme. ¿Puedes decirme qué es lo que proyecta sobre ti esa sombra tan oscura?",
+        "ed48dc1c73e969132a44": "\nUna malvada mácula se ha hecho con el ya asediado Bosque del Ocaso. Doy gracias a la Luz porque ahora tenemos a un héroe como tú para hacerle frente.\n\nPero primero debes prepararte para la prueba que te espera, pues el poder del Necromántico Morbent Vil es inconmensurable y además, ha lanzado sobre sí mismo oscuros encantamientos que lo protegen de ataques físicos. Si quieres derrotarle, necesitarás un arma que pueda contrarrestar estas protecciones."
+      },
       "summary": "Entrega el diario completo de Alterio al obispo Lontananza de Ventormenta.",
       "title": "En busca de sabiduría",
       "translationMetadata": {
@@ -116,6 +266,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +306,12 @@
     },
     "esMX": {
       "description": "Ve a la ciudad de Ventormenta y habla con el obispo Lontananza. Búscalo en la Catedral de la Luz. Dale el diario de Alterio y dile que deseas enfrentarte a Morbent Vil.\n\nAunque Ventormenta ha abandonado a Villa Oscura, Lontananza es un alma buena y sabia. Puede que te ayude a salvarnos.\n\nTu misión es peligrosa, pero date prisa, {name}. Las sombras del Bosque del Ocaso son más cada vez más oscuras.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Ve a la ciudad de Ventormenta y habla con el obispo Lontananza. Búscalo en la Catedral de la Luz. Dale el diario de Alterio y dile que deseas enfrentarte a Morbent Vil.\n\nAunque Ventormenta ha abandonado a Villa Oscura, Lontananza es un alma buena y sabia. Puede que te ayude a salvarnos.\n\nTu misión es peligrosa, pero date prisa, $n. Las sombras del Bosque del Ocaso son más cada vez más oscuras.",
+        "79f7d33052576a03c271": "Descansa, hermana. Se ve que has viajado lejos y que llevas un peso enorme. ¿Puedes decirme qué es lo que proyecta sobre ti esa sombra tan oscura?",
+        "c10c8b93261676c5b647": "Descansa, hermano. Se ve que has viajado lejos y que llevas un peso enorme. ¿Puedes decirme qué es lo que proyecta sobre ti esa sombra tan oscura?",
+        "ed48dc1c73e969132a44": "\nUna malvada mácula se ha hecho con el ya asediado Bosque del Ocaso. Doy gracias a la Luz porque ahora tenemos a un héroe como tú para hacerle frente.\n\nPero primero debes prepararte para la prueba que te espera, pues el poder del Necromántico Morbent Vil es inconmensurable y además, ha lanzado sobre sí mismo oscuros encantamientos que lo protegen de ataques físicos. Si quieres derrotarle, necesitarás un arma que pueda contrarrestar estas protecciones."
+      },
       "summary": "Entrega el diario completo de Alterio al obispo Lontananza de Ventormenta.",
       "title": "En busca de sabiduría",
       "translationMetadata": {
@@ -140,6 +320,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +360,12 @@
     },
     "frFR": {
       "description": "Rendez-vous à la cité de Hurlevent et parlez à l'évêque Farthing dans la cathédrale de la Lumière. Donnez-lui le journal de la Tremblotte et dites-lui que vous voulez combattre Morbent Fel.\n\nBien que Hurlevent ait abandonné Darkshire, Farthing est un homme aimable et empli de sagesse. Il pourrait vous aider dans votre quête pour nous sauver.\n\nVotre mission est périlleuse, mais hâtez-vous, {name}. À chaque heure qui s'écoule, le bois de la Pénombre s'assombrit encore...",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Rendez-vous à la cité de Stormwind et parlez à l'évêque Farthing dans la cathédrale de la Lumière. Donnez-lui le journal de la Tremblotte et dites-lui que vous voulez combattre Morbent Fel.\n\nBien que Stormwind ait abandonné Darkshire, Farthing est un homme aimable et empli de sagesse. Il pourrait vous aider dans votre quête pour nous sauver.\n\nVotre mission est périlleuse, mais hâtez-vous, $N. À chaque heure qui s'écoule, le bois de la Pénombre s'assombrit encore...",
+        "79f7d33052576a03c271": "Reposez-vous, mon frère. Je vois que vous avez fait un long voyage, et qu'un lourd fardeau vous accable. Pouvez-vous me dire ce qui vous soucie tant ?",
+        "c10c8b93261676c5b647": "Reposez-vous, mon frère. Je vois que vous avez fait un long voyage, et qu'un lourd fardeau vous accable. Pouvez-vous me dire ce qui vous soucie tant ?",
+        "ed48dc1c73e969132a44": " \n Le Mal s'établit encore plus dans le bois de la Pénombre, qui a déjà beaucoup souffert. Je remercie la Lumière de nous avoir envoyé un héros tel que vous pour y faire face. \n \n Mais vous devez vous préparer à l'épreuve qui vous attend. . . Le Nécromancien Morbent Fel est infiniment puissant et il s'est protégé, grâce à la magie noire, de tout assaut physique. Si vous voulez le vaincre, vous aurez besoin d'une arme qui neutralise ses protections. "
+      },
       "summary": "Donner le journal complété de la Tremblotte à l'évêque Farthing à Hurlevent.",
       "title": "À la recherche de la sagesse",
       "translationMetadata": {
@@ -164,6 +374,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -181,6 +415,12 @@
     },
     "hrHR": {
       "description": "Idi u grad Stormwind i razgovaraj s biskupom Farthingom u Katedrali svjetlosti. Daj mu Jittersov dnevnik i reci da se namjeravaš suočiti s Morbentom Felom.\n\nIako je Stormwind napustio Darkshire, Farthing je dobra duša i vrlo mudar. Možda ti može pomoći u tvojem zadatku da nas spasiš.\n\nTvoja je misija opasna, ali požuri, {name}. Sa svakim satom sjene Duskwooda postaju sve mračnije.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Idi u Stormwind i razgovaraj s biskupom Farthingom u Katedrali Svjetlosti. Daj mu Jittersov dnevnik i reci mu da se namjeravaš suočiti s Morbentom Felom.$B$BIako je Stormwind napustio Darkshire, Farthing je dobra i vrlo mudra duša. Možda ti pomogne u potrazi da nas spasiš.$B$BTvoja je misija opasna, ali požuri, $N. Svakim satom sjene Duskwooda postaju sve tamnije.",
+        "79f7d33052576a03c271": "Odmori se, $gbrate:sestro;. Vidim da si daleko putovala i nosiš težak teret. Možeš li mi reći što baca tu tamnu sjenu na tebe?",
+        "c10c8b93261676c5b647": "Odmori se, $gbrate:sestro;. Vidim da si daleko putovao i nosiš težak teret. Možeš li mi reći što baca tu tamnu sjenu na tebe?",
+        "ed48dc1c73e969132a44": "<Nakon što pročita dnevnik i čuje tvoju namjeru...>$B$BZla se zaraza ukorijenila u već napaćenom Duskwoodu. Zahvaljujem Svjetlosti što imamo junaka poput tebe da joj se suprotstavi.$B$BAli prvo se moraš pripremiti za nadolazeće iskušenje... nekromant Morbent Fel neizmjerno je moćan i zaštitio se mračnim čarolijama od fizičkih napada. Da bi ga porazio, trebat će ti oružje koje može probiti tu zaštitu."
+      },
       "summary": "Daj Jittersov dovršeni dnevnik biskupu Farthingu u Stormwindu.",
       "title": "Potraga za mudrošću",
       "translationMetadata": {
@@ -190,6 +430,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "18d9aa2100a00d50c23a7c23e563fd0c7336660c99c28b3d5f52cdc1b3e9fca4"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -208,6 +468,12 @@
     },
     "itIT": {
       "description": "Vai nella città di Roccavento e parla con il vescovo Farthing nella Cattedrale della Luce. Consegnagli il diario di Jitters e digli che intendi affrontare Morbent Fel.\n\nAnche se Roccavento ha abbandonato Darkshire, Farthing è un'anima gentile e molto saggia. Potrebbe aiutarti nella tua missione per salvarci.\n\nLa tua missione è pericolosa, ma sbrigati, {name}. A ogni ora che passa, le ombre di Duskwood diventano sempre più oscure.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Va' nella città di Stormwind e parla con il Vescovo Farthing, nella Cattedrale della Luce. Dagli il diario di Jitters e digli che intendi affrontare Morbent Fel.\n\nAnche se Stormwind ha abbandonato Darkshire, Farthing è un'anima buona e molto saggia. Potrebbe aiutarti nella tua impresa per salvarci.\n\nLa tua missione è pericolosa, ma sbrigati, $N. Ora dopo ora, le ombre di Duskwood si fanno sempre più cupe.",
+        "79f7d33052576a03c271": "Riposati, sorella. Vedo che hai viaggiato a lungo, e che porti un peso gravoso. Sai dirmi cos'è che getta quell'ombra scura su di te?",
+        "c10c8b93261676c5b647": "Riposati, fratello. Vedo che hai viaggiato a lungo, e che porti un peso gravoso. Sai dirmi cos'è che getta quell'ombra scura su di te?",
+        "ed48dc1c73e969132a44": "<Dopo aver letto il diario e ascoltato le tue intenzioni...>$B$BUna contaminazione maligna ha messo radici nella già travagliata Boscovespro. Ringrazio la Luce per avere un eroe come te ad affrontarla.$B$BMa prima devi prepararti alla prova imminente... il negromante Morbent Fel è immensamente potente e si è protetto dagli attacchi fisici con oscuri incantesimi. Per sconfiggerlo ti servirà un'arma capace di superare quelle difese."
+      },
       "summary": "Consegna il diario completato di Jitters al vescovo Farthing a Stormwind.",
       "title": "In cerca di saggezza",
       "translationMetadata": {
@@ -217,6 +483,29 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "18d9aa2100a00d50c23a7c23e563fd0c7336660c99c28b3d5f52cdc1b3e9fca4"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -235,6 +524,12 @@
     },
     "koKR": {
       "description": "스톰윈드로 가서 빛의 대성당에 있는 파딩 주교님과 대화해 보시기 바랍니다. 그분께 지터스의 일지를 보여 주고 모벤트 펠을 상대하겠다고 얘기하십시오.\n\n스톰윈드는 다크샤이어를 저버렸지만 주교께서는 인도적이고 매우 지혜로운 분이시니 당신이 우리를 구할 수 있도록 도와 주실 겁니다.\n\n당신의 임무는 위험천만하지만 서둘러 주시기 바랍니다. 시간이 지날수록 그늘숲의 그림자는 점점 커져 가고 있습니다.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "스톰윈드로 가서 빛의 대성당에 있는 파딩 주교님과 대화해 보시기 바랍니다. 그분께 지터스의 일지를 보여 주고 모벤트 펠을 상대하겠다고 얘기하십시오.\n\n스톰윈드는 다크샤이어를 저버렸지만 주교께서는 인도적이고 매우 지혜로운 분이시니 당신이 우리를 구할 수 있도록 도와 주실 겁니다.\n\n당신의 임무는 위험천만하지만 서둘러 주시기 바랍니다. 시간이 지날수록 그늘숲의 그림자는 점점 커져 가고 있습니다.",
+        "79f7d33052576a03c271": "편히 쉬시오, 형제여. 먼 길을 여행하고 무거운 책임을 지고 있는 게 보이는구려. 저 어두운 그림자가 무슨 염려를 끼치고 있는지 말해 주시겠소?",
+        "c10c8b93261676c5b647": "편히 쉬시오, 형제여. 먼 길을 여행하고 무거운 책임을 지고 있는 게 보이는구려. 저 어두운 그림자가 무슨 염려를 끼치고 있는지 말해 주시겠소?",
+        "ed48dc1c73e969132a44": "\n이미 악의 손에 넘어간 그늘숲 내부에는 어두운 기운이 확고하게 자리 잡고 있소. 이에 대적할 수 있는 당신과 같은 영웅이 있다는 것만으로도 신께 감사드리오.\n\n하지만 앞으로 다가올 시련에 먼저 준비해야 할 것이 있소. 강령술사 모벤트 펠은 매우 강력하며 어둠의 마법을 이용하여 물리적인 공격으로부터 자신을 보호할 수 있는 자요. 그를 무찌를 계획이라면 이러한 보호 마법을 깨뜨릴 수 있는 무기가 필요하오이다."
+      },
       "summary": "스톰윈드에 있는 주교 파딩에게 완성된 지터스의 일지를 보여 줘야 합니다.",
       "title": "지혜의 추구",
       "translationMetadata": {
@@ -243,6 +538,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -259,6 +578,12 @@
     },
     "plPL": {
       "description": "Udaj się do Stormwind i porozmawiaj z biskupem Farthingiem w Katedrze Światłości. Daj mu dziennik Jittersa i powiedz, że zamierzasz stawić czoła Morbentowi Felowi.\n\nChoć Stormwind porzuciło Darkshire, Farthing to dobry i bardzo mądry człowiek. Może pomóc ci w misji ocalenia nas.\n\nTwoje zadanie jest niebezpieczne, ale pospiesz się, {name}. Z każdą godziną cienie Duskwood stają się coraz mroczniejsze.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Udaj się do Stormwind i porozmawiaj z biskupem Farthingiem w Katedrze Światłości. Daj mu dziennik Jittersa i powiedz, że zamierzasz stawić czoła Morbentowi Felowi.$B$BChoć Stormwind porzuciło Darkshire, Farthing jest życzliwy i bardzo mądry. Może pomóc ci nas uratować.$B$BTwoja misja jest niebezpieczna, ale spiesz się, $N. Z każdą godziną cienie Duskwood stają się coraz mroczniejsze.",
+        "79f7d33052576a03c271": "Odpocznij, $gbracie:siostro;. Widzę, że daleko podróżujesz i dźwigasz ciężkie brzemię. Czy powiesz mi, co rzuca na ciebie ten mroczny cień?",
+        "c10c8b93261676c5b647": "Odpocznij, $gbracie:siostro;. Widzę, że daleko podróżujesz i dźwigasz ciężkie brzemię. Czy powiesz mi, co rzuca na ciebie ten mroczny cień?",
+        "ed48dc1c73e969132a44": "<Po przeczytaniu dziennika i wysłuchaniu twoich zamiarów...>$B$BZłe skażenie zapuściło korzenie w i tak już udręczonym Duskwood. Dziękuję Światłości, że mamy bohatera takiego jak ty, który mu się przeciwstawi.$B$BNajpierw jednak musisz przygotować się do nadchodzącej próby... nekromanta Morbent Fel jest niezwykle potężny i otoczył się mrocznymi zaklęciami chroniącymi go przed fizycznymi atakami. Aby go pokonać, potrzebujesz broni zdolnej przełamać te osłony."
+      },
       "summary": "Przekaż Ukończony dziennik Jittersa biskupowi Farthingowi w Stormwind.",
       "title": "W poszukiwaniu mądrości",
       "translationMetadata": {
@@ -268,6 +593,26 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "18d9aa2100a00d50c23a7c23e563fd0c7336660c99c28b3d5f52cdc1b3e9fca4"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -286,6 +631,12 @@
     },
     "ptBR": {
       "description": "Vá à cidade de Ventobravo e procure o Bispo Palhares na Catedral da Luz. Entregue o diário de Medrisco a ele e diga que você quer enfrentar Morbídio Vil.\n\nEmbora Ventobravo tenha renegado a Vila Sombria, Palhares é sábio, uma alma generosa. Talvez ele colabore com a sua missão de nos salvar.\n\nSua tarefa é perigosa, {name}, mas é melhor se apressar. A cada hora que passa, as sombras da Floresta do Crepúsculo ficam mais escuras.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Vá à cidade de Ventobravo e procure o Bispo Palhares na Catedral da Luz. Entregue o diário de Medrisco a ele e diga que você quer enfrentar Morbídio Vil.\n\nEmbora Ventobravo tenha renegado a Vila Sombria, Palhares é sábio, uma alma generosa. Talvez ele colabore com a sua missão de nos salvar.\n\nSua tarefa é perigosa, $N, mas é melhor se apressar. A cada hora que passa, as sombras da Floresta do Crepúsculo ficam mais escuras.",
+        "79f7d33052576a03c271": "Descanse, irmão. Percebo que sua jornada foi longa e que você carrega um pesado fardo. Pode me dizer o que está causando esta sombra escura que paira à sua volta?",
+        "c10c8b93261676c5b647": "Descanse, irmão. Percebo que sua jornada foi longa e que você carrega um pesado fardo. Pode me dizer o que está causando esta sombra escura que paira à sua volta?",
+        "ed48dc1c73e969132a44": "<Após ler o diário e ouvir sua intenção...>$B$BUma corrupção maligna fincou raízes na já castigada Floresta do Crepúsculo. Agradeço à Luz por termos um herói como você para enfrentá-la.$B$BMas primeiro você precisa se preparar para a provação... o necromante Morbent Fel é imensamente poderoso e lançou encantamentos sombrios para se proteger de ataques físicos. Para derrotá-lo, você precisará de uma arma capaz de superar essas proteções."
+      },
       "summary": "Entregue o Diário Completo de Medrisco para o Bispo Palhares em Ventobravo.",
       "title": "Em busca da sabedoria",
       "translationMetadata": {
@@ -294,6 +645,29 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -310,6 +684,12 @@
     },
     "ruRU": {
       "description": "Отправляйся в Штормград и поговори с епископом Фартингом в Соборе Света. Отдай ему записи Трясунчика и сообщи, что собираешься бросить вызов Морбенту Скверну.\n\nХоть Штормград и бросил Темнолесье на произвол судьбы, Фартинг – добрая душа и мудрый человек. Он поможет тебе спасти нас.\n\nТебя ждет много опасностей... Однако поспеши, {name}. С каждым часом в Сумеречном лесу сгущается тьма.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Отправляйся в Штормград и поговори с епископом Фартингом в Соборе Света. Отдай ему записи Трясунчика и сообщи, что собираешься бросить вызов Морбенту Скверну.\n\nХоть Штормград и бросил Темнолесье на произвол судьбы, Фартинг – добрая душа и мудрый человек. Он поможет тебе спасти нас.\n\nТебя ждет много опасностей... Однако поспеши, $N. С каждым часом в Сумеречном лесу сгущается тьма.",
+        "79f7d33052576a03c271": "Отдохни пока, брат. Я вижу, у тебя позади долгий путь, и на тебя возложена тяжкая ноша. Скажи, что за тень пала на тебя?",
+        "c10c8b93261676c5b647": "Отдохни пока, брат. Я вижу, у тебя позади долгий путь, и на тебя возложена тяжкая ноша. Скажи, что за тень пала на тебя?",
+        "ed48dc1c73e969132a44": "Епископ изучает записи... \n\nЗло нашло лазейку в и без того обложенный со всех сторон Сумеречный лес. Хвала Свету, что отыскался герой вроде тебя.\n\nНо прежде чем смело двинуться навстречу испытаниям, тебе следует хорошо подготовиться... Некромант Морбент Скверн всегда был необычайно силен, а чтобы стать неуязвимым, наложил на себя могучие чары. Тебе не одолеть его без оружия, способного пробиться сквозь эти преграды."
+      },
       "summary": "Отдайте законченные записи Трясунчика епископу Фартингу в Штормграде.",
       "title": "В поисках мудрости",
       "translationMetadata": {
@@ -318,6 +698,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -334,6 +738,12 @@
     },
     "svSE": {
       "description": "Bege dig till staden Stormvind och tala med biskop Farthing i Ljusets katedral. Ge honom Jitters dagbok och berätta att du tänker möta Morbent Fel.\n\nÄven om Stormvind har övergett Mörkby är Farthing en vänlig själ och mycket klok. Han kan kanske hjälpa dig i ditt uppdrag att rädda oss.\n\nDitt uppdrag är farligt, men skynda dig, {name}. För varje timme som går blir Skymningsskogens skuggor allt mörkare.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Gå till Stormwind och tala med biskop Farthing i Ljusets katedral. Ge honom Jitters dagbok och säg att du tänker möta Morbent Fel.$B$BÄven om Stormwind har övergett Darkshire är Farthing en vänlig och mycket vis själ. Han kan kanske hjälpa dig att rädda oss.$B$BDitt uppdrag är farligt, men skynda dig, $N. För varje timme blir Duskwoods skuggor allt mörkare.",
+        "79f7d33052576a03c271": "Vila, $gbror:syster;. Jag ser att du har rest långt och bär en tung börda. Kan du berätta vad som kastar den mörka skuggan över dig?",
+        "c10c8b93261676c5b647": "Vila, $gbror:syster;. Jag ser att du har rest långt och bär en tung börda. Kan du berätta vad som kastar den mörka skuggan över dig?",
+        "ed48dc1c73e969132a44": "<Efter att ha läst dagboken och hört din avsikt...>$B$BEtt ont fördärv har fått fotfäste i det redan hårt prövade Duskwood. Jag tackar Ljuset för att vi har en hjälte som du som kan möta det.$B$BMen först måste du förbereda dig för den kommande prövningen... nekromantikern Morbent Fel är oerhört mäktig och har lagt mörka förtrollningar omkring sig som skydd mot fysiska angrepp. För att besegra honom behöver du ett vapen som kan tränga igenom skyddet."
+      },
       "summary": "Ge Jitters färdiga dagbok till biskop Farthing i Stormvind.",
       "title": "På jakt efter visdom",
       "translationMetadata": {
@@ -343,6 +753,26 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -363,6 +793,12 @@
     },
     "trTR": {
       "description": "Stormwind şehrine git ve Işık Katedrali'nde Piskopos Farthing ile konuş. Ona Jitters'ın günlüğünü ver ve Morbent Fel ile yüzleşmeye niyetli olduğunu söyle.\n\nStormwind, Darkshire'ı terk etmiş olsa da Farthing nazik bir ruh ve çok bilge. Bizi kurtarma yolundaki görevinde sana yardım edebilir.\n\nGörevin tehlikeli ama acele et, {name}. Geçen her saatle Duskwood'un gölgeleri daha da karanlıklaşıyor.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Stormwind şehrine git ve Işık Katedrali'nde Piskopos Farthing ile konuş. Ona Jitters'ın günlüğünü ver ve Morbent Fel'le yüzleşmek istediğini söyle.$B$BStormwind Darkshire'ı terk etmiş olsa da Farthing iyi kalpli ve çok bilgedir. Bizi kurtarma görevinde sana yardım edebilir.$B$BGörevin tehlikeli ama acele et, $N. Geçen her saat Duskwood'un gölgeleri daha da kararıyor.",
+        "79f7d33052576a03c271": "Dinlen, $gerkek kardeşim:kız kardeşim;. Uzaklardan geldiğini ve ağır bir yük taşıdığını görebiliyorum. Üzerine bu karanlık gölgeyi neyin düşürdüğünü söyleyebilir misin?",
+        "c10c8b93261676c5b647": "Dinlen, $gerkek kardeşim:kız kardeşim;. Uzaklardan geldiğini ve ağır bir yük taşıdığını görebiliyorum. Üzerine bu karanlık gölgeyi neyin düşürdüğünü söyleyebilir misin?",
+        "ed48dc1c73e969132a44": "<Günlüğü okuduktan ve niyetini dinledikten sonra...>$B$BZaten zor durumdaki Duskwood'da kötü bir kirlenme kök salmış. Onunla yüzleşecek senin gibi bir kahramanımız olduğu için Işık'a şükrediyorum.$B$BAma önce yaklaşan sınava hazırlanmalısın... Ölüm büyücüsü Morbent Fel son derece güçlü ve fiziksel saldırılardan korunmak için çevresine karanlık büyüler yaptı. Onu yeneceksen bu korumaları aşacak bir silaha ihtiyacın var."
+      },
       "summary": "Jitters' Completed Journal'ı Stormwind'deki Piskopos Farthing'e ver.",
       "title": "Bilgelik Arayışı",
       "translationMetadata": {
@@ -372,6 +808,26 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -390,6 +846,12 @@
     },
     "ukUA": {
       "description": "Відправляйся в Штормовій і поговори з єпископом Фартингом в соборі Світла. Дай йому щоденник Тремтінія і скажи, що збираєшся кинути виклик Морбенту Скверну.\n\nХоча Штормовій відрікся від Темноділу, Фартинг — добродушний та дуже мудрий. Він може допомогти тобі врятувати нас.\n\nТвоє завдання небезпечне, але поспіши, {name}. З кожною годиною, тіні Смерколісся стають ще темнішими.",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "Іди до Штормовія й поговори з єпископом Фартінґом у Соборі Світла. Віддай йому щоденник Джиттерса й скажи, що збираєшся виступити проти Морбента Фела.$B$BХоч Штормовій покинув Darkshire, Фартінґ — добра й дуже мудра душа. Можливо, він допоможе тобі врятувати нас.$B$BТвоя місія небезпечна, але поспішай, $N. З кожною годиною тіні Duskwood стають темнішими.",
+        "79f7d33052576a03c271": "Відпочинь, $gбрате:сестро;. Я бачу, що ти здолала довгий шлях і несеш важкий тягар. Скажеш, що кидає на тебе цю темну тінь?",
+        "c10c8b93261676c5b647": "Відпочинь, $gбрате:сестро;. Я бачу, що ти здолав довгий шлях і несеш важкий тягар. Скажеш, що кидає на тебе цю темну тінь?",
+        "ed48dc1c73e969132a44": "<Прочитавши щоденник і вислухавши твій намір...>$B$BЗла скверна вкоренилася в і без того змученому Duskwood. Дякую Світлу, що маємо такого героя, як ти, який їй протистоїть.$B$BАле спершу ти маєш підготуватися до майбутнього випробування... некромант Морбент Фел надзвичайно могутній і оточив себе темними чарами для захисту від фізичних нападів. Щоб його перемогти, тобі потрібна зброя, здатна подолати цей захист."
+      },
       "summary": "Передайте заповнений щоденник Тремтінія єпископу Фартингу в Штормовій.",
       "title": "У пошуках мудрості",
       "translationMetadata": {
@@ -400,6 +862,26 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "18d9aa2100a00d50c23a7c23e563fd0c7336660c99c28b3d5f52cdc1b3e9fca4"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -420,6 +902,12 @@
     },
     "zhCN": {
       "description": "到暴风城去找光明大教堂的主教法席恩，把基特斯的日记给他看一看，告诉他你决心要和摩本特·费尔进行面对面的较量。\n\n虽然暴风城抛弃了夜色镇，但是法席恩主教是个善良而又睿智的人，也许他能给你一些帮助。\n\n你的使命非常危险，不过请动作快点，{name}。笼罩夜色镇的黑暗力量无时无刻不在变得更加强大。",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "到暴风城去找光明大教堂的主教法席恩，把基特斯的日记给他看一看，告诉他你决心要和摩本特·费尔进行面对面的较量。\n\n虽然暴风城抛弃了夜色镇，但是法席恩主教是个善良而又睿智的人，也许他能给你一些帮助。\n\n你的使命非常危险，不过请动作快点，$N。笼罩夜色镇的黑暗力量无时无刻不在变得更加强大。",
+        "79f7d33052576a03c271": "休息一会儿吧，姐妹。我看得出你走了很远的路，身上还承担着重任。你能告诉我是什么样的阴影笼罩着你吗？",
+        "c10c8b93261676c5b647": "休息一会儿吧，兄弟。我看得出你走了很远的路，身上还承担着重任。你能告诉我是什麽样的阴影笼罩着你吗?",
+        "ed48dc1c73e969132a44": "\n又一股邪恶势力在危机四伏的暮色森林立足了。感谢圣光赐予我们一位像你这样的英雄。\n\n对於将要面对的挑战，你必须做好充分的准备……摩本特·费尔这个死灵法师有着超强的实力，他能够施法使自己免受物理攻击。如果你想要打败他的话，就必须要找到能够打破这种防护的东西。\n"
+      },
       "summary": "把基特斯的日记交给暴风城的主教法席恩。",
       "title": "寻求指引",
       "translationMetadata": {
@@ -428,6 +916,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -444,6 +956,12 @@
     },
     "zhTW": {
       "description": "到暴風城去找光明大教堂的主教法席恩，把基特斯的日記給他看一看，告訴他你決心要和摩本特·費爾進行面對面的較量。\n\n雖然暴風城拋棄了夜色鎮，但是法席恩主教是個善良而又睿智的人，也許他能給你一些幫助。\n\n你的使命非常危險，不過請動作快點，{name}。籠罩夜色鎮的黑暗力量無時無刻不在變得更加強大。",
+      "dialogue": {
+        "787fb08aef4b5196f56e": "到暴風城去找光明大教堂的主教法席恩，把基特斯的日記給他看一看，告訴他你決心要和摩本特·費爾進行面對面的較量。\n\n雖然暴風城拋棄了夜色鎮，但是法席恩主教是個善良而又睿智的人，也許他能給你一些幫助。\n\n你的使命非常危險，不過請動作快點，$N。籠罩夜色鎮的黑暗力量無時無刻不在變得更加強大。",
+        "79f7d33052576a03c271": "休息一會兒吧，姐妹。我看得出你走了很遠的路，身上還承擔着重任。你能告訴我是什麼樣的陰影籠罩着你嗎?",
+        "c10c8b93261676c5b647": "休息一會兒吧，兄弟。我看得出你走了很遠的路，身上還承擔着重任。你能告訴我是什麼樣的陰影籠罩着你嗎?",
+        "ed48dc1c73e969132a44": "\n又一股邪惡勢力在危機四伏的暮色森林立足了。感謝聖光賜予我們一位像你這樣的英雄。\n\n對於將要面對的挑戰，你必須做好充分的準備……摩本特.費爾這個死靈法師有著超強的實力，他能夠施法使自己免受物理攻擊。如果你想要打敗他的話，就必須要找到能夠打破這種防護的東西。"
+      },
       "summary": "把基特斯的日記交給暴風城的主教法席恩。",
       "title": "尋求指引",
       "translationMetadata": {
@@ -452,6 +970,30 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.787fb08aef4b5196f56e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.79f7d33052576a03c271": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c10c8b93261676c5b647": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.ed48dc1c73e969132a44": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

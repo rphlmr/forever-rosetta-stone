@@ -1,8 +1,28 @@
 {
   "areaId": 406,
+  "dialogueContexts": {
+    "1beaa59d050292fb580c": {
+      "lineId": "q:1090:complete",
+      "npcId": 4276,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "dc01990de854c6a51d98": {
+      "lineId": "q:1090:accept",
+      "npcId": 4276,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Víš, kdysi jsem byl druhým nejdůležitějším člověkem na tomhle místě. To se změnilo, když převzal vedení Gerenzo. Vyhodil mého šéfa Zize Fizzikse a poslal mě pracovat do dolů. Ziz mi ale řekl, ať tu zůstanu a sbírám informace. Jeho nový šéf nám dobře zaplatí, pokud zjistíme, jaké má Gerenzo plány.\n\nKaždopádně, co vím, je, že Gerenzo nařídil vytěžit velká množství této zlatozelené rudy. Můžu ti sehnat vzorek, který odneseš Zizovi, ale budeš muset dávat pozor na hlídky, zatímco ho budu brát.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Díky, $N. Na chvíli to vypadalo nebezpečně a nejspíš jsme na sebe přitáhli příliš mnoho pozornosti.$b$bDůležité ale je, že máme vzorek rudy a měli bychom ho co nejdřív dostat k Zizovi.",
+        "dc01990de854c6a51d98": "Víš, kdysi jsem byl na tomto místě druhou nejdůležitější osobou. Všechno změnil Gerenzo, když převzal velení. Vyhodil mého šéfa Zize Fizzikse a poslal mě pracovat do dolů. Ziz mi však řekl, abych zůstal a sbíral informace. Jeho nový šéf nám dobře zaplatí, pokud zjistíme Gerenzovy plány.$b$bVím, že Gerenzo nařídil vytěžit velké množství této zlatozelené rudy. Mohu ti dát vzorek pro Zize, ale zatímco ho budu získávat, budeš muset hlídat patrolky."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +39,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +74,10 @@
     },
     "daDK": {
       "description": "Ved du hvad, jeg var engang den næstvigtigste person her på stedet. Det ændrede sig alt sammen, da Gerenzo tog over. Han fyrede min chef, Ziz Fizziks, og sendte mig ned for at arbejde i minerne. Ziz bad mig dog blive her og indsamle oplysninger. Hans nye chef vil betale os godt, hvis vi kan finde ud af, hvad Gerenzos planer er.\n\nUnder alle omstændigheder ved jeg, at Gerenzo har beordret store mængder af denne guldgrønne malm udvundet. Jeg kan skaffe dig en prøve til Ziz, men du må holde øje med patruljer, mens jeg henter den.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Tak, $N. Det så lidt farligt ud et øjeblik, og vi har nok tiltrukket alt for megen opmærksomhed.$b$bDet vigtige er dog, at vi har malmprøven, og vi bør få den til Ziz hurtigst muligt.",
+        "dc01990de854c6a51d98": "Jeg var engang den næstvigtigste person her på stedet. Det ændrede sig, da Gerenzo tog over. Han fyrede min chef Ziz Fizziks og sendte mig ned i minerne. Men Ziz bad mig blive og samle oplysninger. Hans nye chef betaler os godt, hvis vi finder ud af, hvad Gerenzo planlægger.$b$bJeg ved, at Gerenzo har beordret store mængder af denne gyldengrønne malm udvundet. Jeg kan skaffe dig en prøve til Ziz, men du må holde øje med patruljer, mens jeg henter den."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5a07b3dacd4f8cc900aad4a13eeb3deb43e5560d88965662a24569522bfa676d"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +127,10 @@
     },
     "deDE": {
       "description": "Wisst Ihr, ich war hier einst die zweitwichtigste Person. Das hat sich alles geändert, als Gerenzo hier übernahm. Hat meinen Boss Ziz Fizziks gefeuert und mich zum Arbeiten nach unten in die Minen geschickt. Ziz sagte mir aber, dass ich hier bleiben und Informationen sammeln solle. Sein neuer Boss wird uns gut bezahlen, wenn wir rausfinden, was Gerenzo plant.\n\nEgal, was ich weiß ist, dass Gerenzo befohlen hat, dass Riesenmengen von diesem gold-grünen Erz abgebaut werden sollen. Ich hol Euch eine Probe, damit Ihr sie Ziz bringen könnt, aber Ihr müsst Euch vor Patrouillen hüten, während ich es hole.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Danke, $N. Sah für einen Moment ziemlich riskant aus und wir haben vielleicht etwas zu viel Aufmerksamkeit auf uns gelenkt. \n \n Das Wichtigste ist aber, dass wir eine Erzprobe haben, die wir so schnell wie möglich zu Ziz bringen sollten. ",
+        "dc01990de854c6a51d98": "Wisst Ihr, ich war hier einst die zweitwichtigste Person. Das hat sich alles geändert, als Gerenzo hier übernahm. Hat meinen Boss Ziz Fizziks gefeuert und mich zum Arbeiten nach unten in die Minen geschickt. Ziz sagte mir aber, dass ich hier bleiben und Informationen sammeln solle. Sein neuer Boss wird uns gut bezahlen, wenn wir rausfinden, was Gerenzo plant.\n\nEgal, was ich weiß ist, dass Gerenzo befohlen hat, dass Riesenmengen von diesem gold-grünen Erz abgebaut werden sollen. Ich hol Euch eine Probe, damit Ihr sie Ziz bringen könnt, aber Ihr müsst Euch vor Patrouillen hüten, während ich es hole."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +180,10 @@
     },
     "enUS": {
       "description": "You know, I was once the second most important person here at this site. That all changed when Gerenzo took over. Fired my boss, Ziz Fizziks, and sent me down to work in the mines. Ziz told me to stay here and gather information, though. His new boss will pay us well if we can find out what Gerenzo's plans are.\n\nAnyways, what I do know is that Gerenzo has ordered large amounts of this gold-green ore to be mined. I can get you a sample to bring to Ziz, but you'll have to watch for patrols while I get it.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Thanks, $N. It was looking a little dicey there for a second and we've probably drawn far too much attention to ourselves.$b$bThe important part is that we have the ore sample, though, and we should get it to Ziz as soon as possible.",
+        "dc01990de854c6a51d98": "You know, I was once the second most important person here at this site. That all changed when Gerenzo took over. Fired my boss, Ziz Fizziks, and sent me down to work in the mines. Ziz told me to stay here and gather information, though. His new boss will pay us well if we can find out what Gerenzo's plans are.$b$bAnyways, what I do know is that Gerenzo has ordered large amounts of this gold-green ore to be mined. I can get you a sample to bring to Ziz, but you'll have to watch for patrols while I get it."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +199,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -158,6 +234,10 @@
     },
     "esES": {
       "description": "¿Sabes? Una vez fui la segunda persona más importante de este lugar. Pero todo cambió con la llegada de Gerenzo. Despidió a mi jefe, Ziz Fizziks, y me envió a trabajar a las minas. Sin embargo, Ziz me dijo que permaneciese aquí y reuniese algo de información. Su nuevo jefe nos pagará bien si podemos descubrir los planes de Gerenzo. \n\nDe todas formas, lo que sí sé es que Gerenzo ha ordenado excavar grandes cantidades de su mineral dorado verdoso. Puedo conseguirte una muestra para que se la lleves a Ziz, pero tendrás que vigilar por si aparecen patrullas mientras lo hago.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Gracias, $n. La situación parecía algo complicada y, probablemente, habíamos atraído demasiada atención.\n\nLo más importante es que tenemos la muestra del mineral y que debemos llevársela a Ziz lo antes posible.",
+        "dc01990de854c6a51d98": "¿Sabes? Una vez fui la segunda persona más importante de este lugar. Pero todo cambió con la llegada de Gerenzo. Despidió a mi jefe, Ziz Fizziks, y me envió a trabajar a las minas. Sin embargo, Ziz me dijo que permaneciese aquí y reuniese algo de información. Su nuevo jefe nos pagará bien si podemos descubrir los planes de Gerenzo. \n\nDe todas formas, lo que sí sé es que Gerenzo ha ordenado excavar grandes cantidades de su mineral dorado verdoso. Puedo conseguirte una muestra para que se la lleves a Ziz, pero tendrás que vigilar por si aparecen patrullas mientras lo hago."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +253,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -195,6 +287,10 @@
     },
     "esMX": {
       "description": "¿Sabes? Una vez fui la segunda persona más importante de este lugar. Pero todo cambió con la llegada de Gerenzo. Despidió a mi jefe, Ziz Fizziks, y me envió a trabajar a las minas. Sin embargo, Ziz me dijo que permaneciese aquí y reuniese algo de información. Su nuevo jefe nos pagará bien si podemos descubrir los planes de Gerenzo.\n\nDe todas formas, lo que sí sé es que Gerenzo ha ordenado excavar grandes cantidades de su mineral dorado verdoso. Puedo conseguirte una muestra para que se la lleves a Ziz, pero tendrás que vigilar por si aparecen patrullas mientras lo hago.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Gracias, $n. La situación parecía algo complicada y, probablemente, habíamos atraído demasiada atención.\n\nLo más importante es que tenemos la muestra del mineral y que debemos llevársela a Ziz lo antes posible.",
+        "dc01990de854c6a51d98": "¿Sabes? Una vez fui la segunda persona más importante de este lugar. Pero todo cambió con la llegada de Gerenzo. Despidió a mi jefe, Ziz Fizziks, y me envió a trabajar a las minas. Sin embargo, Ziz me dijo que permaneciese aquí y reuniese algo de información. Su nuevo jefe nos pagará bien si podemos descubrir los planes de Gerenzo.\n\nDe todas formas, lo que sí sé es que Gerenzo ha ordenado excavar grandes cantidades de su mineral dorado verdoso. Puedo conseguirte una muestra para que se la lleves a Ziz, pero tendrás que vigilar por si aparecen patrullas mientras lo hago."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +306,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -232,6 +340,10 @@
     },
     "frFR": {
       "description": "Vous savez, avant j'étais la seconde personne la plus importante ici sur ce site. Tout a changé quand Gerenzo est arrivé. Il a viré mon patron, Ziz Fizziks, et m'a envoyé bosser dans les mines. Ziz m'a dit de rester ici et de rassembler des renseignements. Son nouveau patron nous paiera bien si nous pouvons découvrir les plans de Gerenzo.\n\nMais bon, ce que je sais c’est que Gerenzo a ordonné que des quantités importantes de ce minerai or-vert soient extraites. Je peux vous trouver un échantillon pour que vous l'apportiez à Ziz, mais faites attention aux patrouilles le temps que j’aille en chercher.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Merci, $N. Ça a été un petit peu risqué pendant un moment et nous avons probablement attiré l'attention. \n \n Ce qui est important, c'est que nous avons l'échantillon de minerai, et nous devons l'apporter à Ziz dès que possible. ",
+        "dc01990de854c6a51d98": "Vous savez, avant j'étais la seconde personne la plus importante ici sur ce site. Tout a changé quand Gerenzo est arrivé. Il a viré mon patron, Ziz Fizziks, et m'a envoyé bosser dans les mines. Ziz m'a dit de rester ici et de rassembler des renseignements. Son nouveau patron nous paiera bien si nous pouvons découvrir les plans de Gerenzo.\n\nMais bon, ce que je sais c’est que Gerenzo a ordonné que des quantités importantes de ce minerai or-vert soient extraites. Je peux vous trouver un échantillon pour que vous l'apportiez à Ziz, mais faites attention aux patrouilles le temps que j’aille en chercher."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +359,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -269,6 +393,10 @@
     },
     "hrHR": {
       "description": "Znaš, nekoć sam bio druga najvažnija osoba na ovom radilištu. Sve se promijenilo kad je Gerenzo preuzeo posao. Otpustio je mojeg šefa, Ziza Fizziksa, a mene poslao dolje da radim u rudnicima. No Ziz mi je rekao da ostanem ovdje i prikupljam informacije. Njegov će nam novi šef dobro platiti ako doznamo što Gerenzo planira.\n\nUglavnom, znam da je Gerenzo naredio iskopavanje velikih količina ove zlatnozelene rude. Mogu ti pribaviti uzorak koji ćeš odnijeti Zizu, ali morat ćeš paziti na ophodnje dok ga kopam.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Hvala, $N. Na trenutak je izgledalo opasno i vjerojatno smo privukli previše pozornosti.$b$bVažno je da imamo uzorak rude i trebamo ga što prije odnijeti Zizu.",
+        "dc01990de854c6a51d98": "Nekad sam bio druga najvažnija osoba ovdje. Sve se promijenilo kad je Gerenzo preuzeo vodstvo. Otpustio je mog šefa Ziza Fizziksa i poslao me da radim u rudnicima. No Ziz mi je rekao da ostanem i prikupljam informacije. Njegov novi šef dobro će nam platiti ako otkrijemo Gerenzove planove.$b$bZnam da je Gerenzo naredio iskopavanje velikih količina ove zlatnozelene rude. Mogu ti nabaviti uzorak za Ziza, ali morat ćeš paziti na ophodnje dok ga uzimam."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +413,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5a07b3dacd4f8cc900aad4a13eeb3deb43e5560d88965662a24569522bfa676d"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +446,10 @@
     },
     "itIT": {
       "description": "Sai, un tempo ero la seconda persona più importante di questo sito. Tutto è cambiato quando è arrivato Gerenzo. Ha licenziato il mio capo, Ziz Fizziks, e mi ha mandato a lavorare nelle miniere. Ziz però mi ha detto di restare qui e raccogliere informazioni. Il suo nuovo capo ci pagherà bene se scopriamo quali sono i piani di Gerenzo.\n\nComunque, so che Gerenzo ha ordinato di estrarre grandi quantità di questo minerale verde dorato. Posso procurarti un campione da portare a Ziz, ma dovrai sorvegliare le pattuglie mentre lo recupero.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Grazie, $N. Per un attimo si è messa un po' male e probabilmente abbiamo attirato fin troppa attenzione su di noi.\n\nLa cosa importante, però, è che abbiamo il campione di minerale, e dovremmo portarlo a Ziz il prima possibile.",
+        "dc01990de854c6a51d98": "Sai, un tempo ero la seconda persona più importante di questo cantiere. È cambiato tutto quando Gerenzo ha preso il comando. Ha licenziato il mio capo, Ziz Fizziks, e mi ha spedito a lavorare giù nelle miniere. Ziz però mi ha detto di restare qui e raccogliere informazioni. Il suo nuovo capo ci pagherà bene se riusciamo a scoprire quali sono i piani di Gerenzo.\n\nComunque, quello che so è che Gerenzo ha ordinato di estrarre grandi quantità di questo minerale verde-oro. Posso procurarti un campione da portare a Ziz, ma dovrai fare attenzione alle pattuglie mentre lo prendo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -324,6 +466,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5a07b3dacd4f8cc900aad4a13eeb3deb43e5560d88965662a24569522bfa676d"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -347,6 +501,10 @@
     },
     "koKR": {
       "description": "이곳에서 한때 난 2인자 위치에까지 올랐지만 게렌조가 부임하면서 모든 게 변했소. 그는 내 상관 지즈 피직스님을 해고하고 나는 광산에서 광물이나 캐라고 내려보냈지. 지즈님께서 여기 남아서 정보를 수집하라고 하셨기에 참고 있는 것이야. 새로운 상관은 게렌조를 수상히 여기고 그가 꾸미고 있는 계획이 무엇인지 밝혀낸다면 충분한 보상을 하신다고 했소.\n\n어쨌든 내가 아는 건 게렌조가 황녹색 빛 광석을 다량 채굴하도록 지시했다는 거요. 지즈님께 보낼 표본을 구해 볼 테니 그동안 순찰하는 녀석들이 오는지 망을 좀 봐 주시오.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "고맙소. 잠시 위험했던 것 같소. 주위의 시선을 너무 끌었던 것 같군.\n\n어쨌든 광석의 표본을 구했으니 이걸 가능한 빨리 지즈님께 보내야 하오.",
+        "dc01990de854c6a51d98": "이곳에서 한때 난 2인자 위치에까지 올랐지만 게렌조가 부임하면서 모든 게 변했소. 그는 내 상관 지즈 피직스님을 해고하고 나는 광산에서 광물이나 캐라고 내려보냈지. 지즈님께서 여기 남아서 정보를 수집하라고 하셨기에 참고 있는 것이야. 새로운 상관은 게렌조를 수상히 여기고 그가 꾸미고 있는 계획이 무엇인지 밝혀낸다면 충분한 보상을 하신다고 했소.\n\n어쨌든 내가 아는 건 게렌조가 황녹색 빛 광석을 다량 채굴하도록 지시했다는 거요. 지즈님께 보낼 표본을 구해 볼 테니 그동안 순찰하는 녀석들이 오는지 망을 좀 봐 주시오."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -362,6 +520,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -384,6 +554,10 @@
     },
     "plPL": {
       "description": "Wiesz, kiedyś byłem tu drugą najważniejszą osobą. Zmieniło się to, kiedy władzę przejął Gerenzo. Wyrzucił mojego szefa, Ziza Fizziksa, a mnie wysłał do kopalń. Ziz kazał mi jednak zostać i zbierać informacje. Jego nowy szef dobrze zapłaci, jeśli poznamy plany Gerenza.\n\nWiem, że Gerenzo polecił wydobywać wielkie ilości złotozielonej rudy. Mogę zdobyć próbkę dla Ziza, ale podczas wydobycia musisz pilnować patroli.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Dzięki, $N. Przez chwilę było niebezpiecznie i pewnie zwróciliśmy na siebie zbyt wiele uwagi.$b$bNajważniejsze jednak, że mamy próbkę rudy i powinniśmy jak najszybciej dostarczyć ją Zizowi.",
+        "dc01990de854c6a51d98": "Kiedyś byłem drugą najważniejszą osobą w tym miejscu. Wszystko zmieniło się, gdy władzę przejął Gerenzo. Zwolnił mojego szefa Ziza Fizziksa i wysłał mnie do pracy w kopalni. Ziz kazał mi jednak zostać i zbierać informacje. Jego nowy szef dobrze nam zapłaci, jeśli poznamy plany Gerenza.$b$bWiem, że Gerenzo kazał wydobywać wielkie ilości tej złotozielonej rudy. Mogę zdobyć próbkę dla Ziza, ale musisz uważać na patrole, gdy będę ją zabierać."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -400,6 +574,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5a07b3dacd4f8cc900aad4a13eeb3deb43e5560d88965662a24569522bfa676d"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -423,6 +607,10 @@
     },
     "ptBR": {
       "description": "Sabe, eu já fui a segunda pessoa mais importante aqui. Mas tudo mudou quando o Hanfritz tomou o comando. Ele despediu o meu chefe, o Zé Fízzica, e me mandou pra cá pra baixo pra trabalhar na mina. Mas o Zé me falou pra ficar e ver o que está rolando. O novo chefe dele vai pagar bem se a gente conseguir descobrir o plano do Hanfritz.\n\nDe qualquer forma, tudo que eu sei é que o Hanfritz mandou pegar muito desse minério verde dourado aí. Eu posso te dar um pedaço pra levar pro Zé, mas você vai ter que olhar os guardas enquanto eu pego.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Obrigado, $N. Teve uma hora em que o negócio lá ficou meio complicado e a gente provavelmente chamou mais atenção do que devia.\n\nMas o importante é que a gente está com o pedaço do minério e precisa levar logo pro Zé.",
+        "dc01990de854c6a51d98": "Sabe, eu já fui a segunda pessoa mais importante aqui. Mas tudo mudou quando o Hanfritz tomou o comando. Ele despediu o meu chefe, o Zé Fízzica, e me mandou pra cá pra baixo pra trabalhar na mina. Mas o Zé me falou pra ficar e ver o que está rolando. O novo chefe dele vai pagar bem se a gente conseguir descobrir o plano do Hanfritz.\n\nDe qualquer forma, tudo que eu sei é que o Hanfritz mandou pegar muito desse minério verde dourado aí. Eu posso te dar um pedaço pra levar pro Zé, mas você vai ter que olhar os guardas enquanto eu pego."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -438,6 +626,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -460,6 +660,10 @@
     },
     "ruRU": {
       "description": "Знаешь, когда-то я был второй по важности персоной во всем этом деле. Все изменилось, когда главным стал Геренцо. Уволил моего начальника Зиза Физзикса, а меня послал работать в копях. Но Зиз велел мне оставаться здесь и собирать сведения. Его новое начальство хорошо заплатит нам, если мы узнаем, что планирует Геренцо.\n\nВ любом случае, я точно знаю, что Геренцо приказал добыть как можно больше этой золотисто-зеленой руды. Я могу раздобыть образец, а ты передашь его Зизу. Но пока я этим занимаюсь, следи, не покажется ли стража.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Спасибо, $N. Тут выдалось несколько опасных моментов, да и мы, наверное, были не слишком-то внимательны.\n\nНо важно то, что у нас теперь есть образец руды, и мы должны как можно скорее доставить его Зизу.",
+        "dc01990de854c6a51d98": "Знаешь, когда-то я был второй по важности персоной во всем этом деле. Все изменилось, когда главным стал Геренцо. Уволил моего начальника Зиза Физзикса, а меня послал работать в копях. Но Зиз велел мне оставаться здесь и собирать сведения. Его новое начальство хорошо заплатит нам, если мы узнаем, что планирует Геренцо.\n\nВ любом случае, я точно знаю, что Геренцо приказал добыть как можно больше этой золотисто-зеленой руды. Я могу раздобыть образец, а ты передашь его Зизу. Но пока я этим занимаюсь, следи, не покажется ли стража."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -475,6 +679,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -497,6 +713,10 @@
     },
     "svSE": {
       "description": "Vet du, en gång var jag den näst viktigaste personen här på platsen. Allt det ändrades när Gerenzo tog över. Han sparkade min chef, Ziz Fizziks, och skickade ned mig för att arbeta i gruvorna. Men Ziz sa åt mig att stanna här och samla uppgifter. Hans nya chef betalar oss bra om vi kan ta reda på vad Gerenzo har för planer.\n\nHur som helst vet jag att Gerenzo har beordrat att stora mängder av den här guldgröna malmen ska brytas. Jag kan skaffa dig ett prov att ta till Ziz, men du måste hålla utkik efter patruller medan jag hämtar det.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Tack, $N. Det såg lite osäkert ut ett ögonblick och vi har nog dragit alldeles för mycket uppmärksamhet till oss.$b$bDet viktiga är ändå att vi har malmprovet och bör få det till Ziz så snart som möjligt.",
+        "dc01990de854c6a51d98": "Jag var en gång den näst viktigaste personen här. Allt ändrades när Gerenzo tog över. Han avskedade min chef Ziz Fizziks och skickade ner mig i gruvorna. Men Ziz bad mig stanna och samla information. Hans nya chef betalar oss väl om vi kan ta reda på Gerenzos planer.$b$bJag vet att Gerenzo har beordrat brytning av stora mängder av den här guldgröna malmen. Jag kan skaffa ett prov åt dig att ta till Ziz, men du måste hålla utkik efter patruller medan jag hämtar det."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -513,6 +733,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5a07b3dacd4f8cc900aad4a13eeb3deb43e5560d88965662a24569522bfa676d"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -538,6 +768,10 @@
     },
     "trTR": {
       "description": "Biliyor musun, bir zamanlar burada en önemli ikinci kişi bendim. Gerenzo başa geçince her şey değişti. Patronum Ziz Fizziks'i kovdu, beni de madenlerde çalışmak üzere aşağı gönderdi. Ama Ziz bana burada kalıp bilgi toplamamı söyledi. Yeni patronu, Gerenzo'nun planlarını öğrenebilirsek bize iyi para verecek.\n\nNeyse, bildiğim şu: Gerenzo bu altın-yeşil cevherden büyük miktarlarda çıkarılmasını emretti. Ziz'e götürmen için sana bir örnek alabilirim ama ben alırken devriyelere dikkat etmen gerekecek.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Teşekkürler, $N. Bir an için işler tehlikeli görünüyordu ve muhtemelen çok fazla dikkat çektik.$b$bAma önemli olan cevher örneğinin bizde olması; onu mümkün olduğunca çabuk Ziz’e ulaştırmalıyız.",
+        "dc01990de854c6a51d98": "Bir zamanlar burada en önemli ikinci kişiydim. Gerenzo yönetimi ele alınca her şey değişti. Patronum Ziz Fizziks’i kovdu ve beni madenlerde çalışmaya gönderdi. Ama Ziz burada kalıp bilgi toplamamı söyledi. Gerenzo’nun planlarını öğrenebilirsek yeni patronu bize iyi para ödeyecek.$b$bBildiğim şu ki Gerenzo bu altın yeşili cevherden büyük miktarlarda çıkarılmasını emretti. Ziz’e götürmen için bir örnek alabilirim ama ben onu alırken devriyelere göz kulak olmalısın."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -554,6 +788,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -577,6 +821,10 @@
     },
     "ukUA": {
       "description": "Знаєш, колись я був тут другою за важливістю особою. Усе змінилося, коли владу перебрав Ґерензо. Він звільнив мого начальника Зіза Фіззікса, а мене послав працювати в копальні. Але Зіз наказав залишитися тут і збирати відомості. Його новий начальник добре нам заплатить, якщо дізнаємося про плани Ґерензо.\n\nТак чи інакше, я знаю, що Ґерензо наказав видобувати велику кількість цієї золотаво-зеленої руди. Можу дістати зразок для Зіза, але тобі доведеться пильнувати патрулі, поки я його добуватиму.",
+      "dialogue": {
+        "1beaa59d050292fb580c": "Дякую, $N. На мить стало небезпечно, і ми, мабуть, привернули надто багато уваги.$b$bТа головне, що ми маємо зразок руди, і треба якнайшвидше доставити його Зізу.",
+        "dc01990de854c6a51d98": "Колись я був другою за важливістю особою на цьому об’єкті. Усе змінилося, коли владу перебрав Ґеренцо. Він звільнив мого начальника Зіза Фіззікса й відправив мене працювати в шахти. Але Зіз звелів мені залишитися і збирати відомості. Його новий начальник добре заплатить, якщо ми дізнаємося про плани Ґеренцо.$b$bЯ знаю, що Ґеренцо наказав видобувати багато цієї золотаво-зеленої руди. Я можу дістати зразок для Зіза, але поки я його братиму, стеж за патрулями."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -593,6 +841,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5a07b3dacd4f8cc900aad4a13eeb3deb43e5560d88965662a24569522bfa676d"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -618,6 +876,10 @@
     },
     "zhCN": {
       "description": "你知道的，我曾经是这里的二把手，但在格雷苏接管了这里之后，一切就全变了。我的老板菲兹克斯被他炒了鱿鱼，而我被丢到这片矿里来当苦力。菲兹克斯让我就呆在这里，暗中收集信息，如果我们能知道格雷苏在打什么算盘，菲兹克斯的新老板就会付给我们不错的酬劳。\n\n无论如何，现在我知道的是，格雷苏下令要大量地开采这种青绿色的矿石。要不这样，我给你搞出一份样本来，你帮我带给菲兹克斯，但是我在采集矿石的时候，你得帮我留意外面的巡逻兵。",
+      "dialogue": {
+        "1beaa59d050292fb580c": "谢谢啦，$N。时间越长越危险，还好我们及时完成了任务。\n\n重要的是我们拿到了矿石，你赶快去将它送到菲兹克斯那里。\n",
+        "dc01990de854c6a51d98": "你知道的，我曾经是这里的二把手，但在格雷苏接管了这里之后，一切就全变了。我的老板菲兹克斯被他炒了鱿鱼，而我被丢到这片矿里来当苦力。菲兹克斯让我就呆在这里，暗中收集信息，如果我们能知道格雷苏在打什么算盘，菲兹克斯的新老板就会付给我们不错的酬劳。\n\n无论如何，现在我知道的是，格雷苏下令要大量地开采这种青绿色的矿石。要不这样，我给你搞出一份样本来，你帮我带给菲兹克斯，但是我在采集矿石的时候，你得帮我留意外面的巡逻兵。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -633,6 +895,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -655,6 +929,10 @@
     },
     "zhTW": {
       "description": "你知道的，我曾經是這裡的二老闆，但在格雷蘇接管了這裡之後，一切就全變了。我的老闆菲茲克斯被他炒魷魚，而我被丟到這個礦坑裡來當苦力。菲茲克斯就讓我待在這裡，暗中收集資訊，如果我們能知道格雷蘇在打什麼算盤，菲茲克斯的新老闆就會付給我們不錯的酬勞。\n\n無論如何，現在我知道的是，格雷蘇下令要大量地開採這種青綠色的礦石。要不這樣，我幫你作一份樣本出來，你幫我帶給菲茲克斯，但是我在採集礦石的時候，你得幫我留意外面的巡邏兵。",
+      "dialogue": {
+        "1beaa59d050292fb580c": "謝謝啦，$N。時間越長越危險，還好我們及時完成了任務。\n\n重要的是我們拿到了礦石，你趕快去將它送到菲茲克斯那裏。",
+        "dc01990de854c6a51d98": "你知道的，我曾經是這裡的二老闆，但在格雷蘇接管了這裡之後，一切就全變了。我的老闆菲茲克斯被他炒魷魚，而我被丟到這個礦坑裡來當苦力。菲茲克斯就讓我待在這裡，暗中收集資訊，如果我們能知道格雷蘇在打什麼算盤，菲茲克斯的新老闆就會付給我們不錯的酬勞。\n\n無論如何，現在我知道的是，格雷蘇下令要大量地開採這種青綠色的礦石。要不這樣，我幫你作一份樣本出來，你幫我帶給菲茲克斯，但是我在採集礦石的時候，你得幫我留意外面的巡邏兵。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -670,6 +948,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1beaa59d050292fb580c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.dc01990de854c6a51d98": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

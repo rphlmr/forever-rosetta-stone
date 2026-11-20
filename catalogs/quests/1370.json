@@ -19,9 +19,29 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "0f2de294dadee4554875": {
+      "lineId": "q:1370:accept",
+      "npcId": 5397,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "bb64861f6674e755a5f5": {
+      "lineId": "q:1370:progress",
+      "npcId": 5397,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Když nejsme ve válce, lovíme maso. Maso nám dává sílu a plné břicho bojuje tvrději než prázdné.\n\nStejné je to u Magramů. Ukládají si maso navíc, aby mohli bojovat déle mezi lovy. Pokud přepadneš jejich vesnici na východě a vezmeš jejich zásoby masa, jejich síla selže.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Když neválčíme, lovíme maso. Maso nám dává sílu a s plným břichem se bojuje lépe než s prázdným.$B$BS Magramy je to stejné. Ukládají si maso, aby mohli mezi lovy déle bojovat. Když přepadneš jejich vesnici na východě a vezmeš jim zásoby masa, jejich síla ochabne.",
+        "bb64861f6674e755a5f5": "Vrať se, až Gelkisům více prokážeš svou hodnotu!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -38,6 +58,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -63,6 +93,10 @@
     },
     "daDK": {
       "description": "Når vi ikke er i krig, jager vi efter kød. Kød giver os styrke, og fyldte maver kæmper hårdere end tomme.\n\nSådan er det også med Magram. De opbevarer ekstra kød, så de kan kæmpe længere mellem jagterne. Hvis du plyndrer deres landsby mod øst og tager deres kødlager, vil deres styrke svigte.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Når vi ikke er i krig, jager vi efter kød. Kød giver os styrke, og fulde maver kæmper hårdere end tomme.$B$BSådan er det også med Magram. De oplagrer ekstra kød, så de kan kæmpe længere mellem jagterne. Hvis du angriber deres landsby mod øst og tager deres kødforsyninger, vil deres styrke svigte.",
+        "bb64861f6674e755a5f5": "Vend tilbage, når du yderligere har bevist dit værd for Gelkis!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -79,6 +113,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "45a931dda4c7099acb3c99f3d392a411a89856c0d211609979773073dc5ce70b"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -102,6 +146,10 @@
     },
     "deDE": {
       "description": "Wenn wir nicht im Krieg sind, jagen wir wegen Fleisch. Fleisch gibt uns Kraft und volle Bäuche kämpfen besser als leere.\n\nSo ist es bei den Magram. Sie lagern extra Fleisch ein, damit sie zwischen den Jagdausflügen länger kämpfen können. Wenn man ihr Dorf im Osten überfällt und ihre Fleischvorräte raubt, wird ihre Kraft schwinden.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Wenn wir nicht im Krieg sind, jagen wir wegen Fleisch. Fleisch gibt uns Kraft und volle Bäuche kämpfen besser als leere.\n\nSo ist es bei den Magram. Sie lagern extra Fleisch ein, damit sie zwischen den Jagdausflügen länger kämpfen können. Wenn man ihr Dorf im Osten überfällt und ihre Fleischvorräte raubt, wird ihre Kraft schwinden.",
+        "bb64861f6674e755a5f5": "Kommt wieder, wenn Ihr Euch der Gelkis abermals als würdig erwiesen habt!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -117,6 +165,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -139,6 +199,10 @@
     },
     "enUS": {
       "description": "When we are not at war, we hunt for meat.  Meat gives us strength, and full bellies fight harder than empty ones.\n\nIt is the same with the Magram.  They store extra meat so they may fight longer between hunts.  If you raid their village to the east and take their stores of meat, then their strength will fail.",
+      "dialogue": {
+        "0f2de294dadee4554875": "When we are not at war, we hunt for meat.  Meat gives us strength, and full bellies fight harder than empty ones.$B$BIt is the same with the Magram.  They store extra meat so they may fight longer between hunts.  If you raid their village to the east and take their stores of meat, then their strength will fail.",
+        "bb64861f6674e755a5f5": "Return after you further prove your worth to the Gelkis!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -154,6 +218,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -177,6 +253,10 @@
     },
     "esES": {
       "description": "Cuando no estamos combatiendo, cazamos para conseguir carne. La carne nos hace fuertes. Y un estómago satisfecho combate mejor que uno vacío.\n\nLo mismo ocurre con los Magram. Almacenan carne para poder combatir más tiempo seguido sin tener que ir a cazar. Si asaltas su poblado del este y les robas su reserva de carne, les fallarán las fuerzas.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Cuando no estamos combatiendo, cazamos para conseguir carne. La carne nos hace fuertes. Y un estómago satisfecho combate mejor que uno vacío.\n\nLo mismo ocurre con los Magram. Almacenan carne para poder combatir más tiempo seguido sin tener que ir a cazar. Si asaltas su poblado del este y les robas su reserva de carne, les fallarán las fuerzas.",
+        "bb64861f6674e755a5f5": "¡Vuelve cuando hayas demostrado a los Gelkis tu valía!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -192,6 +272,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -214,6 +306,10 @@
     },
     "esMX": {
       "description": "Cuando no estamos combatiendo, cazamos para conseguir carne. La carne nos hace fuertes. Y un estómago satisfecho combate mejor que uno vacío.\n\nLo mismo ocurre con los Magram. Almacenan carne para poder combatir más tiempo seguido sin tener que ir a cazar. Si asaltas su poblado del este y les robas su reserva de carne, les fallarán las fuerzas.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Cuando no estamos combatiendo, cazamos para conseguir carne. La carne nos hace fuertes. Y un estómago satisfecho combate mejor que uno vacío.\n\nLo mismo ocurre con los Magram. Almacenan carne para poder combatir más tiempo seguido sin tener que ir a cazar. Si asaltas su poblado del este y les robas su reserva de carne, les fallarán las fuerzas.",
+        "bb64861f6674e755a5f5": "¡Vuelve cuando hayas demostrado a los Gelkis tu valía!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -229,6 +325,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -251,6 +359,10 @@
     },
     "frFR": {
       "description": "Lorsque nous ne sommes pas en guerre, nous chassons pour trouver de la viande. La viande nous donne la force et des ventres remplis se battent mieux que des ventres vides.\n\nC'est la même chose chez les Magram. Ils gardent la viande en trop afin de se battre plus longtemps entre leurs chasses. Si vous attaquez leur village par l'est et prenez leurs réserves de viande, leur force va diminuer.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Lorsque nous ne sommes pas en guerre, nous chassons pour trouver de la viande. La viande nous donne la force et des ventres remplis se battent mieux que des ventres vides.\n\nC'est la même chose chez les Magram. Ils gardent la viande en trop afin de se battre plus longtemps entre leurs chasses. Si vous attaquez leur village par l'est et prenez leurs réserves de viande, leur force va diminuer.",
+        "bb64861f6674e755a5f5": "Revenez après avoir prouvé votre valeur aux Gelkis !"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -266,6 +378,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -288,6 +412,10 @@
     },
     "hrHR": {
       "description": "Kad ne ratujemo, lovimo meso. Meso nam daje snagu, a puni trbusi bore se žešće od praznih.\n\nIsto vrijedi za Magrame. Čuvaju dodatno meso kako bi se mogli dulje boriti između lovova. Ako upadneš u njihovo selo na istoku i uzmeš njihove zalihe mesa, izgubit će snagu.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Kad ne ratujemo, lovimo meso. Meso nam daje snagu, a punih se trbuha borimo bolje nego praznih.$B$BIsto je s Magramima. Spremaju zalihe mesa kako bi se mogli dulje boriti između lovova. Ako napadneš njihovo selo na istoku i uzmeš njihove zalihe mesa, snaga će ih izdati.",
+        "bb64861f6674e755a5f5": "Vrati se kad još više dokažeš svoju vrijednost Gelkisima!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -304,6 +432,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "45a931dda4c7099acb3c99f3d392a411a89856c0d211609979773073dc5ce70b"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -327,6 +465,10 @@
     },
     "itIT": {
       "description": "Quando non siamo in guerra, cacciamo per procurarci carne. La carne ci dà forza e le pance piene combattono più duramente di quelle vuote.\n\nLo stesso vale per i Magram. Conservano carne in più per poter combattere più a lungo tra una caccia e l'altra. Se assalti il loro villaggio a est e rubi le loro scorte di carne, la loro forza verrà meno.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Quando non siamo in guerra, cacciamo per procurarci carne. La carne ci dà forza, e le pance piene combattono con più forza di quelle vuote.\n\nLo stesso vale per i Magram. Mettono da parte carne in più per poter combattere più a lungo tra una caccia e l'altra. Se fai razzia nel loro villaggio a est e prendi le loro scorte di carne, la loro forza verrà meno.",
+        "bb64861f6674e755a5f5": "Torna dopo aver dimostrato ancora il tuo valore ai Gelkis!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -343,6 +485,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "45a931dda4c7099acb3c99f3d392a411a89856c0d211609979773073dc5ce70b"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -366,6 +520,10 @@
     },
     "koKR": {
       "description": "우리가 전쟁을 치르지 않을 때는 고기를 얻기 위해 사냥을 하지. 고기는 우리에게 힘을 주고 배가 든든해야 잘 싸울 수 있는 법이니까 말이야.\n\n마그람도 마찬가지야. 놈들은 사냥하지 않고도 오래전쟁을 치를 수 있도록 여분의 고기를 저장해 두고 있지. 네가 동쪽에 놈들 마을을 습격해서 저장되어 있는 고기를 빼앗는다면 놈들은 힘을 잃게 될 거야.",
+      "dialogue": {
+        "0f2de294dadee4554875": "전쟁을 하지 않을 때 우리는 고기를 얻으려 사냥한다. 고기는 우리에게 힘을 주고, 배가 부르면 굶주렸을 때보다 더 잘 싸울 수 있지.$B$B마그람도 마찬가지다. 그들은 사냥 사이에 더 오래 싸우려고 고기를 비축한다. 동쪽에 있는 그들의 마을을 습격해 고기 비축분을 빼앗으면 놈들의 힘이 약해질 것이다.",
+        "bb64861f6674e755a5f5": "겔키스에게 네 가치를 더 증명한 뒤 돌아와라!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -381,6 +539,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -403,6 +571,10 @@
     },
     "plPL": {
       "description": "Gdy nie ma wojny, polujemy na mięso. Daje siłę, a pełne brzuchy walczą mocniej niż puste.\n\nTak samo jest z Magramami. Gromadzą nadmiar mięsa, by walczyć dłużej między polowaniami. Jeśli napadniesz na ich wioskę na wschodzie i zabierzesz zapasy, stracą siłę.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Gdy nie walczymy, polujemy na mięso. Mięso daje nam siłę, a z pełnym brzuchem walczy się lepiej niż z pustym.$B$BTak samo jest z Magramami. Gromadzą zapasy mięsa, by móc dłużej walczyć między polowaniami. Jeśli napadniesz na ich wioskę na wschodzie i zabierzesz zapasy mięsa, ich siły osłabną.",
+        "bb64861f6674e755a5f5": "Wróć, gdy jeszcze bardziej dowiedziesz swej wartości Gelkisom!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -419,6 +591,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "45a931dda4c7099acb3c99f3d392a411a89856c0d211609979773073dc5ce70b"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -442,6 +624,10 @@
     },
     "ptBR": {
       "description": "Quando não estamos em guerra, a gente caça para comer. A carne nos deixa fortes, e é melhor lutar de barriga cheia.\n\nOs Magram pensam assim também. Eles estocam carne para poder lutar por mais tempo e então saem para caçar de novo. Se você saquear a vila deles, a leste daqui, e levar os estoques de carne, eles vão ficar enfraquecidos.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Quando não estamos em guerra, a gente caça para comer. A carne nos deixa fortes, e é melhor lutar de barriga cheia.\n\nOs Magram pensam assim também. Eles estocam carne para poder lutar por mais tempo e então saem para caçar de novo. Se você saquear a vila deles, a leste daqui, e levar os estoques de carne, eles vão ficar enfraquecidos.",
+        "bb64861f6674e755a5f5": "Só volte aqui quando provar seu valor perante os Gelkis!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -457,6 +643,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -479,6 +677,10 @@
     },
     "ruRU": {
       "description": "Когда мы не воюем, то охотимся, чтобы добыть мяса. Мясо дает нам силу. Сытый воюет лучше голодного. Сытый сильнее. Сытый победит.\n\nПлемя Маграм поступает так же. Они запасают мясо, чтобы воевать дольше. Если нападешь на их деревню на востоке и заберешь их припасы, Маграм станут слабыми.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Когда мы не воюем, мы охотимся ради мяса. Мясо дает нам силу, а с полным брюхом сражаются лучше, чем с пустым.$B$BУ маграмов так же. Они запасают мясо, чтобы дольше сражаться между охотами. Если ты нападешь на их деревню на востоке и заберешь запасы мяса, их силы иссякнут.",
+        "bb64861f6674e755a5f5": "Возвращайся, когда еще раз докажешь свою ценность гелкисам!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -494,6 +696,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -516,6 +728,10 @@
     },
     "svSE": {
       "description": "När vi inte krigar jagar vi kött. Kött ger styrka, och mätta magar kämpar hårdare än tomma.\n\nSå är det också för Magram. De lagrar extra kött för att slåss längre mellan jakterna. Plundrar du byn i öster och tar köttförråden sviker deras styrka.",
+      "dialogue": {
+        "0f2de294dadee4554875": "När vi inte krigar jagar vi efter kött. Kött ger oss styrka, och fulla magar slåss hårdare än tomma.$B$BDet är likadant med Magram. De lagrar extra kött så att de kan slåss längre mellan jakterna. Om du anfaller deras by i öster och tar deras köttförråd kommer deras styrka att svikta.",
+        "bb64861f6674e755a5f5": "Återvänd när du ytterligare har bevisat ditt värde för Gelkis!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -532,6 +748,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "45a931dda4c7099acb3c99f3d392a411a89856c0d211609979773073dc5ce70b"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -555,6 +781,10 @@
     },
     "trTR": {
       "description": "Savaşmadığımızda et avlarız. Et bize güç verir; tok karın aç karından daha sıkı savaşır.\n\nMagram için de aynısı geçerli. Avlar arasında daha uzun savaşabilmek için fazladan et depolarlar. Doğudaki köylerine baskın yapıp et stoklarını alırsan güçleri tükenir.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Savaşmadığımız zaman et için avlanırız. Et bize güç verir ve tok karınlar aç olanlardan daha iyi savaşır.$B$BMagram için de aynısı geçerli. Avlar arasında daha uzun savaşabilmek için fazla et depolarlar. Doğudaki köylerine baskın yapıp et stoklarını alırsan güçleri tükenir.",
+        "bb64861f6674e755a5f5": "Gelkislere değerini daha fazla kanıtladıktan sonra dön!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -571,6 +801,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "45a931dda4c7099acb3c99f3d392a411a89856c0d211609979773073dc5ce70b"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -594,6 +834,10 @@
     },
     "ukUA": {
       "description": "Коли ми не воюємо, ми полюємо заради м'яса. М'ясо дає нам силу, а з повним шлунком воювати набагато краще, ніж з порожнім.\n\nТак само і з Маґрами. Вони запасаються м'ясом, щоб довше воювати. Якщо ти нападеш на їхнє селище на сході й викрадеш запаси м'яса, то вони стануть слабшими.",
+      "dialogue": {
+        "0f2de294dadee4554875": "Коли ми не воюємо, то полюємо заради м'яса. М'ясо дає нам силу, а ситі бійці борються краще за голодних.$B$BУ Маграмів так само. Вони запасають м'ясо, щоб довше воювати між полюваннями. Якщо нападеш на їхнє село на сході й забереш запаси м'яса, їхні сили ослабнуть.",
+        "bb64861f6674e755a5f5": "Повертайся, коли ще більше доведеш свою цінність Ґелкісам!"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -611,6 +855,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "45a931dda4c7099acb3c99f3d392a411a89856c0d211609979773073dc5ce70b"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -636,6 +890,10 @@
     },
     "zhCN": {
       "description": "在作战之余，我们为了食物而打猎。肉可以为我们补充力量，吃饱喝足之后作战会更加勇敢。\n\n玛格拉姆部族的半人马和我们一样，他们贮藏多余的肉食，这样他们就能进行更持久的战斗。如果你能去袭击他们在东部的村庄，并且偷走他们贮藏的肉，他们的力量就会衰竭。",
+      "dialogue": {
+        "0f2de294dadee4554875": "不打仗的时候，我们猎取肉食。肉能给我们力量，吃饱肚子比饿着肚子更能战斗。$B$B玛格拉姆也是如此。他们储存多余的肉，好在两次狩猎之间战斗更久。如果你袭击他们东边的村庄，夺走他们储存的肉，他们的力量就会衰退。",
+        "bb64861f6674e755a5f5": "向吉尔吉斯进一步证明你的价值后再回来！"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -651,6 +909,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -673,6 +941,10 @@
     },
     "zhTW": {
       "description": "在作戰之餘，我們為了食物而打獵。肉可以為我們補充力量，吃飽喝足之後作戰會更加勇敢。\n\n瑪格拉姆部族的半人馬和我們一樣，他們貯藏多餘的肉食，這樣他們就能進行更持久的戰鬥。如果你能去襲擊他們在東部的村莊，並且偷走他們貯藏的肉，他們的力量就會衰竭。",
+      "dialogue": {
+        "0f2de294dadee4554875": "不打仗的時候，我們獵取肉食。肉能給我們力量，吃飽肚子比餓著肚子更能戰鬥。$B$B瑪格拉姆也是如此。他們儲存多餘的肉，好在兩次狩獵之間戰鬥更久。如果你襲擊他們東邊的村莊，奪走他們儲存的肉，他們的力量就會衰退。",
+        "bb64861f6674e755a5f5": "向吉爾吉斯進一步證明你的價值後再回來！"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -688,6 +960,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0f2de294dadee4554875": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb64861f6674e755a5f5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",

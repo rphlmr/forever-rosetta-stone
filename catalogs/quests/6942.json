@@ -1,8 +1,28 @@
 {
   "areaId": 2597,
+  "dialogueContexts": {
+    "20e9e6853f0304d3fb99": {
+      "lineId": "q:6942:complete",
+      "npcId": 13438,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "fa43c7a113b3d508e36a": {
+      "lineId": "q:6942:progress",
+      "npcId": 13438,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Moji gryfové jsou připraveni udeřit na přední linie, ale nemohou zaútočit, dokud je neprořídneme.\n\nVálečníci Frostwolf pověření držením předních linií hrdě nosí na prsou služební medaile. Strhni ty medaile z jejich shnilých mrtvol a přines je sem.\n\nAž budou přední linie dostatečně prořídlé, dám pokyn k letu! Smrt shůry!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Nos další, vojáku! Gryfi z Hnízdiště budou připraveni udeřit raz dva!",
+        "fa43c7a113b3d508e36a": "Moji gryfi jsou připraveni udeřit na frontě, ale nemohou zaútočit, dokud její řady neprořídnou.$B$BVálečníci Frostwolfů, kteří drží frontu, hrdě nosí na hrudi služební medaile. Strhni ty medaile z jejich hnijících mrtvol a přines je sem.$B$BAž fronta dostatečně prořídne, vydám rozkaz ke vzletu! Smrt shůry!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +39,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "af839b7c6509429075d73aa693c7f52762dcc585a15ea038441fa16cdf2ef23d"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +73,10 @@
     },
     "daDK": {
       "description": "Mine gryffer er klar til at slå til mod frontlinjerne, men kan ikke angribe, før der er tyndet ud i linjerne.\n\nFrostwolf-krigerne, der har til opgave at holde frontlinjerne, bærer stolt tjenestemedaljer på deres bryst. Flå medaljerne af deres rådne lig, og bring dem tilbage hertil.\n\nNår der er tyndet tilstrækkeligt ud i frontlinjen, kalder jeg luftstyrken ind! Død ovenfra!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Bliv ved, soldat! Aeriens griffer vil være klar til at slå til på ingen tid!",
+        "fa43c7a113b3d508e36a": "Mine griffer er klar til at angribe frontlinjen, men kan ikke gå til angreb, før rækkerne er tyndet ud.$B$BFrostwolf-krigerne, som holder fronten, bærer stolt tjenestemedaljer på brystet. Flå medaljerne af deres rådnende lig og bring dem hertil.$B$BNår fronten er tilstrækkeligt tyndet ud, giver jeg ordre til luftangreb! Død fra oven!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "af839b7c6509429075d73aa693c7f52762dcc585a15ea038441fa16cdf2ef23d"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +126,10 @@
     },
     "deDE": {
       "description": "Meine Greifen sind bereit, an den Frontlinien zuzuschlagen, können den Angriff aber erst vornehmen, wenn die Linien ausgedünnt sind.\n\nDie Krieger der Horde, die mit dem Halten der Frontlinien betraut sind, tragen stolz Verdienstmedaillen an ihrer Brust. Reißt diese Medaillen von ihren verfaulten Körpern und bringt sie mir.\n\nWenn die Frontlinie ausreichend ausgedünnt wurde, werde ich den Luftschlag anordnen! Tod von oben!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Immer her damit, Soldat! Die Aerie-Greifen werden im Handumdrehen bereit sein zuzuschlagen!",
+        "fa43c7a113b3d508e36a": "Meine Greifen sind bereit, an den Frontlinien zuzuschlagen, können den Angriff aber erst vornehmen, wenn die Linien ausgedünnt sind.\n\nDie Krieger der Horde, die mit dem Halten der Frontlinien vertraut sind, tragen stolz Verdienstmedaillen an ihrer Brust. Reißt diese Medaillen von ihren verfaulten Körpern und bringt sie mir.\n\nWenn die Frontlinie ausreichend ausgedünnt wurde, werde ich den Luftschlag anordnen! Tod von oben!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +145,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "My gryphons are poised to strike at the front lines but cannot make the attack until the lines are thinned out.\n\nThe Frostwolf warriors charged with holding the front lines wear medals of service proudly upon their chests. Rip those medals off their rotten corpses and bring them back here.\n\nOnce the front line is sufficiently thinned out, I will make the call to air! Death from above!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Keep em coming, soldier! The Aerie gryphons will be ready to strike in no time at all!",
+        "fa43c7a113b3d508e36a": "My gryphons are poised to strike at the front lines but cannot make the attack until the lines are thinned out.$B$BThe Frostwolf warriors charged with holding the front lines wear medals of service proudly upon their chests. Rip those medals off their rotten corpses and bring them back here.$B$BOnce the front line is sufficiently thinned out, I will make the call to air! Death from above!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -156,6 +232,10 @@
     },
     "esES": {
       "description": "Mis grifos están listos para atacar a las primeras líneas del frente pero no pueden hacerlo hasta que las líneas se reduzcan algo.\n\nLos guerreros Lobo Gélido, encargados de resistir en las primeras líneas del frente, llevan medallas de servicio que lucen orgullosos en la pechera. Arráncales esas medallas de sus podridos cadáveres y tráemelas.\n\nCuando la primera línea del frente esté suficientemente diezmada, ¡daré la orden de atacar desde el aire! ¡Muerte desde el cielo!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "¡Sigue así y trae más, soldado! ¡Los grifos Nidal estarán listos para atacar muy pronto!",
+        "fa43c7a113b3d508e36a": "Mis grifos están listos para atacar a las primeras líneas del frente pero no pueden hacerlo hasta que las líneas se reduzcan algo.\n\nLos guerreros Lobo Gélido, encargados de resistir en las primeras líneas del frente, llevan medallas de servicio que lucen orgullosos en la pechera. Arráncales esas medallas de sus podridos cadáveres y tráemelas.\n\nCuando la primera línea del frente esté suficientemente diezmada, ¡daré la orden de atacar desde el aire! ¡Muerte desde el cielo!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +251,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -193,6 +285,10 @@
     },
     "esMX": {
       "description": "Mis grifos están listos para atacar a las primeras líneas del frente pero no pueden hacerlo hasta que las líneas se reduzcan algo.\n\nLos guerreros Lobo Gélido, encargados de resistir en las primeras líneas del frente, llevan medallas de servicio que lucen orgullosos en la pechera. Arráncales esas medallas de sus podridos cadáveres y tráemelas.\n\nCuando la primera línea del frente esté suficientemente diezmada, ¡daré la orden de atacar desde el aire! ¡Muerte desde el cielo!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "¡Sigue así y trae más, soldado! ¡Los grifos Nidal estarán listos para atacar muy pronto!",
+        "fa43c7a113b3d508e36a": "Mis grifos están listos para atacar a las primeras líneas del frente pero no pueden hacerlo hasta que las líneas se reduzcan algo.\n\nLos guerreros Lobo Gélido, encargados de resistir en las primeras líneas del frente, llevan medallas de servicio que lucen orgullosos en la pechera. Arráncales esas medallas de sus podridos cadáveres y tráemelas.\n\nCuando la primera línea del frente esté suficientemente diezmada, ¡daré la orden de atacar desde el aire! ¡Muerte desde el cielo!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +304,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -231,6 +339,10 @@
     },
     "frFR": {
       "description": "Mes gryphons sont en place pour donner l'assaut frontal, mais ils ne peuvent pas le faire tant que les rangs ennemis n'auront pas été réduits préalablement.\n\nLes guerriers de la Horde chargés de tenir la ligne de front portent des Médailles qu'ils arborent fièrement sur leurs poitrines. Arrachez ces Médailles à leurs cadavres et rapportez-les-moi.\n\nUne fois que les effectifs ennemis de la ligne de front auront été suffisamment réduits, je ferai donner la force aérienne !",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Il faut que ça entre, soldat ! Les gryphons du Nid-de-l'Aigle seront prêts à frapper en un rien de temps !",
+        "fa43c7a113b3d508e36a": "Mes gryphons sont en place pour donner l'assaut frontal, mais ils ne peuvent pas le faire tant que les rangs ennemis n'auront pas été réduits préalablement.\n\nLes guerriers de la Horde chargés de tenir la ligne de front portent des Médailles qu'ils arborent fièrement sur leurs poitrines. Arrachez ces Médailles à leurs cadavres et rapportez-les-moi.\n\nUne fois que les effectifs ennemis de la ligne de front auront été suffisamment réduits, je ferai donner la force aérienne !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -246,6 +358,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -268,6 +392,10 @@
     },
     "hrHR": {
       "description": "Moji su grifoni spremni udariti na prve crte, ali ne mogu napasti dok se redovi ne prorijede.\n\nRatnici Frostwolfa zaduženi za držanje prve crte ponosno na prsima nose medalje za službu. Strgaj te medalje s njihovih trulih leševa i donesi ih ovamo.\n\nKad prva crta bude dovoljno prorijeđena, pozvat ću zračni napad! Smrt odozgo!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Samo ih donosi, vojniče! Grifoni iz gnijezda začas će biti spremni za napad!",
+        "fa43c7a113b3d508e36a": "Moji grifoni spremni su udariti na bojišnici, ali ne mogu napasti dok se redovi ne prorijede.$B$BRatnici Frostwolfa koji drže prvu crtu ponosno nose službene medalje na prsima. Strgni ih s njihovih trulih leševa i donesi ovamo.$B$BKad se prva crta dovoljno prorijedi, naredit ću zračni napad! Smrt s neba!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -284,6 +412,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "af839b7c6509429075d73aa693c7f52762dcc585a15ea038441fa16cdf2ef23d"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -307,6 +445,10 @@
     },
     "itIT": {
       "description": "I miei grifoni sono pronti ad attaccare la prima linea nemica, ma non possono procedere finché il numero dei nemici non sarà ridotto.\n\nI guerrieri dei Lupi Bianchi incaricati di difendere le prime linee sfoggiano orgogliosamente sul petto delle medaglie al valore. Strappale dai loro putridi cadaveri e portamele.\n\nQuando la prima linea sarà stata sufficientemente sfoltita, i miei grifoni attaccheranno! Morte dall'alto!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Continua a portarmene, soldato! I grifoni di Aerie saranno pronti a colpire in men che non si dica!",
+        "fa43c7a113b3d508e36a": "I miei grifoni sono pronti a colpire la prima linea, ma non possono attaccare finché le linee non saranno sfoltite.\n\nI guerrieri Frostwolf incaricati di tenere la prima linea portano con orgoglio sul petto le medaglie di servizio. Strappa quelle medaglie dai loro cadaveri marci e portale qui.\n\nQuando la prima linea sarà sfoltita a sufficienza, darò l'ordine di alzarsi in volo! Morte dall'alto!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -322,6 +464,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -344,6 +498,10 @@
     },
     "koKR": {
       "description": "우리 그리핀 부대가 최전방에 공습을 가할 준비가 됐는데, 적의 수가 줄어들기 전에는 출격할 수가 없다.\n\n최전방을 지키는 임무를 맡은 서리늑대부족 전사들은 가슴에 견장을 자랑스럽게 달고 다니는데, 녀석들을 쓰러뜨리고 견장을 빼앗아서 여기로 가져오도록 해라.\n\n최전방에서 녀석들의 수가 충분히 줄어들면 공습을 개시하겠다! 창공에서 죽음을 선사하리라!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "견장을 계속 가져오도록 하라, 병사! 이제 곧 맹금의 그리핀들의 출격 준비가 완료될 것이다!",
+        "fa43c7a113b3d508e36a": "우리 그리핀 부대가 최전방에 공습을 가할 준비가 됐는데, 적의 수가 줄어들기 전에는 출격할 수가 없다.\n\n최전방을 지키는 임무를 맡은 서리늑대부족 전사들은 가슴에 견장을 자랑스럽게 달고 다니는데, 녀석들을 쓰러뜨리고 견장을 빼앗아서 여기로 가져오도록 해라.\n\n최전방에서 녀석들의 수가 충분히 줄어들면 공습을 개시하겠다! 창공에서 죽음을 선사하리라!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -359,6 +517,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -381,6 +551,10 @@
     },
     "plPL": {
       "description": "Moje gryfy są gotowe uderzyć na linię frontu, ale nie mogą zaatakować, dopóki jej nie przerzedzimy.\n\nWojownicy Frostwolf trzymający front dumnie noszą medale służby na piersiach. Zerwij je z gnijących zwłok i przynieś tutaj.\n\nGdy linia frontu będzie dostatecznie przerzedzona, wezwę nalot! Śmierć z góry!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Przynoś kolejne, żołnierzu! Gryfy z Gniazda będą gotowe do ataku w mgnieniu oka!",
+        "fa43c7a113b3d508e36a": "Moje gryfy są gotowe uderzyć na pierwszą linię, ale nie mogą zaatakować, dopóki jej szeregi nie zostaną przerzedzone.$B$BWojownicy Frostwolfów broniący frontu dumnie noszą na piersiach medale służby. Zerwij je z ich gnijących ciał i przynieś tutaj.$B$BGdy szeregi dostatecznie się przerzedzą, wydam rozkaz do ataku z powietrza! Śmierć z przestworzy!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -397,6 +571,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "af839b7c6509429075d73aa693c7f52762dcc585a15ea038441fa16cdf2ef23d"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -420,6 +604,10 @@
     },
     "ptBR": {
       "description": "Meus grifos estão prontos para atacar as linhas de frente, mas não posso ordenar o ataque até que as fileiras do inimigo sejam enfraquecidas.\n\nOs guerreiros Lobo do Gelo encarregados de manter as linhas usam medalhas no peito. Arranque as medalhas dos cadáveres desses cretinos e traga-as para mim.\n\nQuando as linhas de frente estiverem enfraquecidas, eu darei a ordem de ataque! Morte vinda dos céus!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Continue trazendo, soldado! Os grifos do Ninho estarão prontos para atacar num instante!",
+        "fa43c7a113b3d508e36a": "Meus grifos estão prontos para atacar a linha de frente, mas não podem fazê-lo até que as fileiras sejam reduzidas.$B$BOs guerreiros Lobo do Gelo encarregados de defender a linha de frente exibem medalhas de serviço no peito. Arranque essas medalhas dos cadáveres apodrecidos deles e traga-as para cá.$B$BQuando a linha de frente estiver suficientemente enfraquecida, darei a ordem para decolar! Morte vinda dos céus!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -435,6 +623,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -458,6 +656,10 @@
     },
     "ruRU": {
       "description": "Мои грифоны должны отправиться вглубь территории противника, чтобы нанести удар, но линия фронта слишком хорошо охраняется.\n\nВоины клана Северного Волка, которые охраняют линию фронта, носят на груди медали за верную службу. Сорви эти медали с их трупов и принеси мне.\n\nКак только линия фронта будет ослаблена, мы нанесем удар с воздуха!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Держись до их прибытия, солдат! В скором времени, удар будет нанесен.",
+        "fa43c7a113b3d508e36a": "Мы готовы нанести удар по линии фронта, но мы не сможем нанести удар, пока их ряды не поредеют. Принеси мне жетон солдата Северного Волка.\n\nКак только их ряды поредеют, мы вызову поддержку с воздуха!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -473,6 +675,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -495,6 +709,10 @@
     },
     "svSE": {
       "description": "Mina gripar är redo att slå till mot frontlinjen, men de kan inte anfalla förrän leden har glesats ut.\n\nFrostwolf-krigarna som försvarar frontlinjen bär stolt sina tjänstemedaljer på bröstet. Slit medaljerna från deras ruttna lik och ta hit dem.\n\nNär frontlinjen har glesats ut tillräckligt ger jag order om luftanfall! Döden kommer ovanifrån!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Fortsätt komma med dem, soldat! Nästets gripar är snart redo att slå till!",
+        "fa43c7a113b3d508e36a": "Mina gripar står redo att slå till mot frontlinjen men kan inte anfalla förrän leden har tunnats ut.$B$BFrostwolfkrigarna som håller fronten bär stolt tjänstemedaljer på bröstet. Slit av medaljerna från deras ruttnande lik och för dem hit.$B$BNär fronten har tunnats ut tillräckligt ger jag order om luftangrepp! Död från ovan!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -511,6 +729,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "af839b7c6509429075d73aa693c7f52762dcc585a15ea038441fa16cdf2ef23d"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -534,6 +762,10 @@
     },
     "trTR": {
       "description": "Grifonlarım ön cepheye saldırmaya hazır, ama hatlar seyreltilmeden saldırıyı yapamazlar.\n\nÖn cepheyi tutmakla görevli Frostwolf savaşçıları hizmet madalyalarını göğüslerinde gururla taşıyor. Madalyaları çürük cesetlerinden söküp buraya getir.\n\nÖn cephe yeterince seyrelince hava saldırısı çağrısını yapacağım! Ölüm yukarıdan gelecek!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Getirmeye devam et asker! Yuvadaki grifonlar çok yakında saldırmaya hazır olacak!",
+        "fa43c7a113b3d508e36a": "Grifonlarım ön saflara saldırmaya hazır ama saflar seyreltilmeden saldıramazlar.$B$BÖn hattı tutmakla görevli Frostwolf savaşçıları göğüslerinde gururla hizmet madalyaları taşır. Bu madalyaları çürümüş cesetlerinden söküp buraya getir.$B$BÖn hat yeterince seyrelince hava saldırısı emrini vereceğim! Yukarıdan ölüm!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -550,6 +782,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "af839b7c6509429075d73aa693c7f52762dcc585a15ea038441fa16cdf2ef23d"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -573,6 +815,10 @@
     },
     "ukUA": {
       "description": "Мої грифони готові вдарити по передовій, але не зможуть атакувати, доки її лави не порідіють.\n\nВоїни Морозних Вовків, яким доручено тримати передову, гордо носять на грудях медалі за службу. Зірви ці медалі з їхніх гнилих трупів і принеси сюди.\n\nКоли передова достатньо порідіє, я подам сигнал до вильоту! Смерть із небес!",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "Неси ще, солдате! Грифони гніздовища незабаром будуть готові до удару!",
+        "fa43c7a113b3d508e36a": "Мої грифони готові вдарити по передовій, але не можуть атакувати, доки її лави не порідшають.$B$BВоїни Frostwolf, яким доручено тримати передову, гордо носять на грудях медалі за службу. Зірви ці медалі з їхніх гнилих трупів і принеси сюди.$B$BКоли передова достатньо порідшає, я накажу здійнятися в повітря! Смерть згори!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -589,6 +835,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "af839b7c6509429075d73aa693c7f52762dcc585a15ea038441fa16cdf2ef23d"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -613,6 +869,10 @@
     },
     "zhCN": {
       "description": "我的狮鹫应该在前线作战，但是在那里的敌人被削弱之前，它们是无法发动攻击的。\n\n部落的战士胸前挂着代表荣誉的勋章勇猛冲锋，而你要做的就是从他们腐烂的尸体上把勋章拿下来，并把它们交给我。\n\n只要敌人在前线的力量受到足够的打击，我就会发出命令进行空袭！我们将从空中给敌人造成致命的创伤！",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "继续带勳章回来，士兵!狮鹫兽空袭马上就要准备好了!\n",
+        "fa43c7a113b3d508e36a": "我的狮鹫兽应该在前线作战，但是在那里的敌人被削弱之前，它们是无法发动攻击的。\n\n部落的战士胸前挂着代表荣誉的勳章勇猛冲锋，而你要做的就是从他们腐烂的屍体上把勳章拿下来，并把它们交视l琚C\n\n只要敌人在前线的力量受到足够的打击，我就会发出命令进行空袭!我们将从空中给敌人造成致命的创伤!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -628,6 +888,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -650,6 +922,10 @@
     },
     "zhTW": {
       "description": "我的獅鷲獸應該在前線作戰，但是在那裡的敵人被削弱之前，它們是無法發動攻擊的。\n\n部落的戰士胸前掛著代表榮譽的勳章勇猛衝鋒，而你要做的就是從他們腐爛的屍體上把勳章拿下來，並把它們交給我。\n\n只要敵人在前線的力量受到足夠的打擊，我就會發出命令進行空襲！我們將從空中給敵人造成致命的創傷！",
+      "dialogue": {
+        "20e9e6853f0304d3fb99": "繼續帶勳章回來，士兵!獅鷲獸空襲馬上就要準備好了!",
+        "fa43c7a113b3d508e36a": "我的獅鷲獸應該在前線作戰，但是在那裏的敵人被削弱之前，它們是無法發動攻擊的。\n\n部落的戰士胸前掛着代表榮譽的勳章勇猛衝鋒，而你要做的就是從他們腐爛的屍體上把勳章拿下來，並把它們交給我。\n\n只要敵人在前線的力量受到足夠的打擊，我就會發出命令進行空襲!我們將從空中給敵人造成致命的創傷!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -665,6 +941,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.20e9e6853f0304d3fb99": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.fa43c7a113b3d508e36a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

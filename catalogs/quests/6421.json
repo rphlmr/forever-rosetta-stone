@@ -13,9 +13,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "80436de5d8c7263080a5": {
+      "lineId": "q:6421:accept",
+      "npcId": 11861,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "af649f596bc0731f6745": {
+      "lineId": "q:6421:complete",
+      "npcId": 11861,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "e1b7b92be386036b7eb3": {
+      "lineId": "q:6421:progress",
+      "npcId": 11861,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Něco je tady ve Stonetalonu v nepořádku. Cítíš to napětí ve vzduchu, {name}?\n\nJihovýchodně odsud leží hluboká jeskyně v rokli Boulderslide. Koboldi tam horečně těží vzácný krystal zvaný Resonite. Přines mi vzorky rudy, ať pochopím, co se v té jeskyni děje. Prozkoumej také hloubku té jeskyně.\n\n{class}, jdi, mladá duše. Je nezbytné, abych věděl, jaké zlo číhá pod těmito horami.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Ve Stonetalonu není něco v pořádku. Cítíš to napětí ve vzduchu, $N?$B$BNa jih odtud leží hluboká jeskyně v rokli Boulderslide. Koboldi tam horečně těží vzácný krystal zvaný resonit. Přines mi vzorky rudy, abych pochopil, co se v jeskyni děje. Prozkoumej také její hloubky.$B$BJdi, mladý $c, musím vědět, jaké zlo číhá pod těmito horami.",
+        "af649f596bc0731f6745": "Ach... ano! To je ono; krystaly resonitu nesou stopy magie pozemšťanů. Koboldi museli kopat hluboko a jednoho odkrýt.$B$BPodle legend jsou pozemšťané tvorové stvoření Titány, kteří je použili k vytvoření země, po níž kráčíme. Tuto hrozbu rozhodně nelze ignorovat.$B$B<Mor’rogal zavrtí hlavou.>$B$BMožná mohu tyto vzorky rudy očarovat a použít proti koboldím plánům.",
+        "e1b7b92be386036b7eb3": "Jaké zprávy máš z rokle Boulderslide? Vzpomínám si na legendu o resonitu... jen si na ni nemohu přijít. Snad jejich úmysly objasní, co leží na dně jeskyně."
+      },
       "eventObjectiveLabel": "Prozkoumej jeskyni v Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -33,6 +61,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -66,6 +109,11 @@
     },
     "daDK": {
       "description": "Noget er galt her i Stonetalon. Kan du mærke spændingen i luften, {name}?\n\nSydøst herfra ligger en dyb hule i Boulderslide Ravine. Kobolderne dér udvinder febrilsk en sjælden krystal kaldet Resonite. Jeg har brug for, at du bringer nogle malmprøver tilbage, så jeg kan forstå, hvad der sker i hulen. Jeg har også brug for, at du undersøger hulens dyb.\n\nGå, unge {class}, det er afgørende, at jeg ved, hvilken ondskab der lurer under disse bjerge.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Noget er galt her i Stonetalon. Kan du mærke spændingen i luften, $N?$B$BSyd herfor ligger en dyb hule i Boulderslide-kløften. Kobolderne udvinder febrilsk en sjælden krystal kaldet resonit. Bring mig malmprøver, så jeg kan forstå, hvad der sker i hulen. Undersøg også dens dyb.$B$BGå, unge $c, jeg må vide, hvilken ondskab der lurer under bjergene.",
+        "af649f596bc0731f6745": "Ah... ja! Det er det; resonitkrystallerne har spor af jordfolkenes magi. Kobolderne må have gravet dybt og afdækket en af dem.$B$BIfølge legenden skabte titanerne jordfolkene og brugte dem til at skabe landet under vores fødder. Denne trussel kan bestemt ikke ignoreres.$B$B<Mor’rogal ryster på hovedet.>$B$BMåske kan jeg fortrylle malmprøverne til brug mod koboldernes planer.",
+        "e1b7b92be386036b7eb3": "Hvilke nyheder har du fra Boulderslide-kløften? Jeg husker en legende om resonit... jeg kan bare ikke få hoven på den. Måske vil det, der ligger i hulens dyb, afsløre deres hensigter."
+      },
       "eventObjectiveLabel": "Undersøg hulen i Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -83,6 +131,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -112,6 +175,11 @@
     },
     "deDE": {
       "description": "Irgendetwas stimmt hier im Steinkrallengebirge nicht. Spürt Ihr die Spannung, die in der Luft liegt, {name}?\n\nSüdlich von hier liegt eine tiefe Höhle in der Steinschlagklamm. Die Kobolde dort schürfen wie wild nach einem seltenen Kristall, dem so genannten Resonit. Ich möchte, dass Ihr mir ein paar Erzproben bringt, damit ich herausfinden kann, was in dieser Höhle vor sich geht. Ich hätte auch gern, dass Ihr die Tiefen dieser Höhle untersucht.\n\nGeht nun, {class}, es ist von größter Bedeutung, dass ich in Erfahrung bringe, welche Bösartigkeiten unter diesen Bergen lauern.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Irgendetwas stimmt hier im Steinkrallengebirge nicht. Spürt Ihr die Spannung, die in der Luft liegt, $n?\n\nSüdlich von hier liegt eine tiefe Höhle in der Steinschlagklamm. Die Kobolde dort schürfen wie wild nach einem seltenen Kristall, dem so genannten Resonit. Ich möchte, dass Ihr mir ein paar Erzproben bringt, damit ich herausfinden kann, was in dieser Höhle vor sich geht. Ich hätte auch gern, dass Ihr die Tiefen dieser Höhle untersucht.\n\nGeht nun, $C, es ist von größter Bedeutung, dass ich in Erfahrung bringe, welche Bösartigkeiten unter diesen Bergen lauern.",
+        "af649f596bc0731f6745": "Ah. . . ja! Das ist es. Die Resonitkristalle enthalten eine Spur Erdmagie. Die Kobolde müssen sehr tief gegraben haben, um einen Irdenen zu finden. \n \n Den Legenden nach sind die Irdenen Kreaturen, die von den Titanen geschaffen wurden. Sie erschufen das Land, auf dem wir heute stehen. Das ist wahrlich eine Bedrohung, die wir nicht ignorieren dürfen. \n \n  \n Vielleicht kann ich diese Erzproben verzaubern, um sie gegen die üblen Pläne der Kobolde zu verwenden. ",
+        "e1b7b92be386036b7eb3": "Was habt Ihr in der Steinschlagklamm in Erfahrung bringen können? Ich erinnere mich an eine Legende, die irgendwas mit Resonit zu tun hatte. . . Ich komme nur nicht darauf. Vielleicht wird es etwas Licht auf ihre verschlagenen Absichten werfen, wenn wir erst wissen, was auf dem Grund der Höhle liegt. "
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -128,6 +196,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -155,6 +241,11 @@
     },
     "enUS": {
       "description": "Something is amiss here in Stonetalon. Can you feel the tension in the air, {name}?\n\nSoutheast of here lies a deep cave in Boulderslide Ravine. The kobolds there are frantically mining a rare crystal called Resonite. I need you to bring back some ore samples so that I can understand what's happening in that cave.  I also need you to investigate the depth of that cave.\n\nGo young {class}, it's imperative I know what evil lurks under these mountains.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Something is amiss here in Stonetalon. Can you feel the tension in the air, $N?$B$BSouth of here lies a deep cave in Boulderslide Ravine. The kobolds there are frantically mining a rare crystal called Resonite. I need you to bring back some ore samples so that I can understand what's happening in that cave.  I also need you to investigate the depth of that cave.$B$BGo young $c, it's imperative I know what evil lurks under these mountains.",
+        "af649f596bc0731f6745": "Ah... Yes! That's it; the Resonite crystals have a trace of Earthen magic. The kobolds must have dug deep uncovering an Earthen.$B$BLegend states that the Earthen are creatures created by the Titans.  They were used to create the land our feet walk on. This most definitely is a threat that cannot be ignored.$B$B<Mor'rogal shakes his head.>$B$BPerhaps I can enchant these ore samples to use against this kobold plot.",
+        "e1b7b92be386036b7eb3": "What news have you discovered from Boulderslide Ravine? I recall some legend that deals with Resonite... I just cannot place my hoof on it. Perhaps knowing what lies at the bottom of the cave will illuminate their devious intentions."
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -171,6 +262,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -199,6 +308,11 @@
     },
     "esES": {
       "description": "Aquí en el Espolón pasa algo. ¿Sientes la tensión en el aire, {name}?\n\nAl sureste de aquí existe una profunda caverna en el Barranco del Alud. Los kobolds de allí están extrayendo un extraño mineral llamado resonita. Necesito que me traigas algunas muestras para poder entender lo que sucede allí. También necesito que investigues las profundidades de la cueva.\n\nVe allí, joven {class}. Tenemos que saber lo que se oculta bajo esas montañas.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Aquí en el Espolón pasa algo. ¿Sientes la tensión en el aire, $n?\n\nAl sureste de aquí existe una profunda caverna en el Barranco del Alud. Los kóbolds de allí están extrayendo un extraño mineral llamado resonita. Necesito que me traigas algunas muestras para poder entender lo que sucede allí. También necesito que investigues las profundidades de la cueva.\n\nVe allí, joven $c. Tenemos que saber lo que se oculta bajo esas montañas.",
+        "af649f596bc0731f6745": "Ah, ¡sí! ¡Eso es! Los cristales de resonita tienen una traza de magia terránea. Los kobolds deben haber cavado muy profundo para encontrarlos.\n\nLa leyenda cuenta que los terráneos son criaturas elementales creadas por los Titanes. Los utilizaban para construir la tierra sobre la que caminamos. Esto constituye una amenaza que no podemos ignorar.\n\n\nQuizás pueda encantarte estas muestras de mineral para que las uses para desbaratar la conspiración kóbold.",
+        "e1b7b92be386036b7eb3": "¿Qué has descubierto del Barranco del Alud? Recuerdo una leyenda que habla sobre la resonita... Aunque no lo sé con toda certeza. Quizás si supiéramos lo que yace en el fondo de la cueva, podríamos descubrir sus malignas intenciones."
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -215,6 +329,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -242,6 +374,11 @@
     },
     "esMX": {
       "description": "Aquí en el Espolón pasa algo. ¿Sientes la tensión en el aire, {name}?\n\nAl sureste de aquí existe una profunda caverna en el Barranco del Alud. Los kóbolds de allí están extrayendo un extraño mineral llamado resonita. Necesito que me traigas algunas muestras para poder entender lo que sucede allí. También necesito que investigues las profundidades de la cueva.\n\nVe allí, joven {class}. Tenemos que saber lo que se oculta bajo esas montañas.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Aquí en el Espolón pasa algo. ¿Sientes la tensión en el aire, $n?\n\nAl sureste de aquí existe una profunda caverna en el Barranco del Alud. Los kóbolds de allí están extrayendo un extraño mineral llamado resonita. Necesito que me traigas algunas muestras para poder entender lo que sucede allí. También necesito que investigues las profundidades de la cueva.\n\nVe allí, joven $c. Tenemos que saber lo que se oculta bajo esas montañas.",
+        "af649f596bc0731f6745": "Ah, ¡sí! ¡Eso es! Los cristales de resonita tienen una traza de magia terránea. Los kobolds deben haber cavado muy profundo para encontrarlos.\n\nLa leyenda cuenta que los terráneos son criaturas elementales creadas por los Titanes. Los utilizaban para construir la tierra sobre la que caminamos. Esto constituye una amenaza que no podemos ignorar.\n\n\nQuizás pueda encantarte estas muestras de mineral para que las uses para desbaratar la conspiración kóbold.",
+        "e1b7b92be386036b7eb3": "¿Qué has descubierto del Barranco del Alud? Recuerdo una leyenda que habla sobre la resonita... Aunque no lo sé con toda certeza. Quizás si supiéramos lo que yace en el fondo de la cueva, podríamos descubrir sus malignas intenciones."
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -258,6 +395,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -285,6 +440,11 @@
     },
     "frFR": {
       "description": "Quelque chose ne va pas dans les Serres-Rocheuses. Vous sentez cette tension dans l'air, {name} ?\n\nAu sud-est d'ici, dans le Ravin des éboulis, se trouve une profonde caverne. Les kobolds sont là-bas et passent tout leur temps à extraire un cristal rare, la résonite. J'ai besoin de vous pour m’en rapporter quelques échantillons afin de comprendre ce qui se passe dans cette caverne. J'ai aussi besoin de connaître sa profondeur.\n\nAllez, jeune {class}, il est impératif que je sache quel mal se cache sous ces montagnes.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Quelque chose ne va pas dans les Serres-Rocheuses. Vous sentez cette tension dans l'air, $N ?\n\nAu sud-est d'ici, dans le Ravin des éboulis, se trouve une profonde caverne. Les kobolds sont là-bas et passent tout leur temps à extraire un cristal rare, la résonite. J'ai besoin de vous pour m’en rapporter quelques échantillons afin de comprendre ce qui se passe dans cette caverne. J'ai aussi besoin de connaître sa profondeur.\n\nAllez, jeune $c, il est impératif que je sache quel mal se cache sous ces montagnes.",
+        "af649f596bc0731f6745": "Ah. . . Oui ! C'est ça : les cristaux de résonite contiennent des traces de magie terrestre. Les kobolds ont dû creuser très profond pour tomber sur un Terrestre. \n \n La légende veut que les Terrestres aient été créés par les Titans. Ils s'en sont servis pour créer la terre sur laquelle nous marchons aujourd'hui. C'est une menace à prendre définitivement au sérieux. \n \n  \n Je peux peut-être enchanter ces échantillons de minerai pour les utiliser contre ce complot kobold. ",
+        "e1b7b92be386036b7eb3": "Qu'avez-vous découvert au ravin des Eboulis ? Je me rappelle de certaines légendes parlant de résonite. . . je n'arrive pas à m'en souvenir. Peut-être qu'en découvrant ce qu'il y a au fond de cette grotte, nous devinerons leurs sournoises intentions. "
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -301,6 +461,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -328,6 +506,11 @@
     },
     "hrHR": {
       "description": "Nešto nije u redu ovdje u Stonetalonu. Osjećaš li napetost u zraku, {name}?\n\nJugoistočno odavde nalazi se duboka špilja u Boulderslide Ravineu. Tamošnji koboldi mahnito iskopavaju rijedak kristal zvan rezonit. Trebam da doneseš uzorke rude kako bih mogao razumjeti što se događa u toj špilji. Također trebam da istražiš njezine dubine.\n\nIdi, mladi {class}, nužno je da znam kakvo zlo vreba pod ovim planinama.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Nešto nije u redu u Stonetalonu. Osjećaš li napetost u zraku, $N?$B$BJužno odavde nalazi se duboka špilja u Boulderslide Ravineu. Koboldi ondje grozničavo iskapaju rijedak kristal zvan rezonit. Donesi mi uzorke rude da shvatim što se događa u špilji. Istraži i njezine dubine.$B$BIdi, mladi $c, moram znati kakvo zlo vreba ispod ovih planina.",
+        "af649f596bc0731f6745": "Ah... da! To je to; kristali rezonita imaju trag zemljane magije. Koboldi su sigurno kopali duboko i otkrili jednog Zemljanog.$B$BLegenda kaže da su Zemljane stvorili Titani kako bi oblikovali zemlju po kojoj hodamo. Tu prijetnju zasigurno ne možemo zanemariti.$B$B<Mor’rogal odmahne glavom.>$B$BMožda mogu začarati uzorke rude i upotrijebiti ih protiv koboldskog plana.",
+        "e1b7b92be386036b7eb3": "Kakve vijesti donosiš iz Boulderslide Ravinea? Sjećam se legende o rezonitu... ali ne mogu je se točno dosjetiti. Možda će ono što leži na dnu špilje rasvijetliti njihove namjere."
+      },
       "eventObjectiveLabel": "Istraži špilju u Boulderslide Ravineu",
       "objectiveLines": [
         {
@@ -345,6 +528,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -374,6 +572,11 @@
     },
     "itIT": {
       "description": "Qualcosa non va qui a Petrartiglio. Riesci a sentire la tensione nell'aria, {name}?\n\nA sudest di qui si trova una caverna profonda nella Gola di Boulderslide. I coboldi laggiù stanno estraendo freneticamente un raro cristallo chiamato resonite. Ho bisogno che tu riporti dei campioni di minerale, così potrò capire cosa sta succedendo in quella caverna. Ho anche bisogno che tu ne esplori le profondità.\n\nVa', giovane {class}, è imperativo che io sappia quale male si cela sotto queste montagne.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Qualcosa non va, qui a Stonetalon. Senti anche tu la tensione nell'aria, $N?\n\nA sud-est di qui, nella Gola di Boulderslide, c'è una caverna profonda. I coboldi là dentro stanno estraendo febbrilmente un cristallo raro chiamato Resonite. Ho bisogno che mi riporti dei campioni di minerale, così potrò capire cosa sta succedendo in quella caverna. Ho bisogno anche che tu vada a vedere quanto è profonda.\n\nVa', giovane $C, è indispensabile che io sappia quale male si annida sotto queste montagne.",
+        "af649f596bc0731f6745": "Ah... Sì! Ecco: i cristalli di Resonite hanno una traccia della magia dei Terrigeni. I coboldi devono aver scavato così a fondo da portarne alla luce uno.\n\nLa leggenda dice che i Terrigeni sono creature plasmate dai Titani. Servirono a creare la terra su cui camminiamo. Questa è senza dubbio una minaccia che non si può ignorare.\n\n\nForse posso incantare questi campioni di minerale per usarli contro questo complotto dei coboldi.",
+        "e1b7b92be386036b7eb3": "Quali notizie mi porti dalla Gola di Boulderslide? Mi torna in mente una leggenda che parla del Resonite... ma ce l'ho sulla punta dello zoccolo. Forse scoprire cosa c'è in fondo alla caverna farà luce sulle loro intenzioni subdole."
+      },
       "eventObjectiveLabel": "Esplora la caverna nel Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -391,6 +594,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -420,6 +641,11 @@
     },
     "koKR": {
       "description": "이곳 돌발톱 산맥에 뭔가 수상한 일이 벌어지고 있는 것 같아. 바람에 실려 전해져 오는 이 긴장을 자네도 느낄 수 있나?\n\n여기서 남동쪽으로 구릉바위 협곡에는 깊은 동굴이 하나 있네. 그곳에선 코볼트들이 리조나이트라는 희귀한 수정을 미친 듯이 캐고 있지. 그 표본이 좀 필요하네. 그리고, 동굴 깊숙한 곳까지 들어가서 뭐가 있는지 좀 조사해 주게.\n\n어서 떠나게. 난 이 산맥 깊은 곳에 어떤 악의 무리가 숨어 있는지 반드시 알아내야만 해.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "이곳 돌발톱 산맥에 뭔가 수상한 일이 벌어지고 있는 것 같아. 바람에 실려 전해져 오는 이 긴장을 자네도 느낄 수 있나?\n\n여기서 남동쪽으로 구릉바위 협곡에는 깊은 동굴이 하나 있네. 그곳에선 코볼트들이 리조나이트라는 희귀한 수정을 미친 듯이 캐고 있지. 그 표본이 좀 필요하네. 그리고, 동굴 깊숙한 곳까지 들어가서 뭐가 있는지 좀 조사해 주게.\n\n어서 떠나게. 난 이 산맥 깊은 곳에 어떤 악의 무리가 숨어 있는지 반드시 알아내야만 해.",
+        "af649f596bc0731f6745": "바로 이거야! 리조나이트 수정에 토석인의 흔적이 남아 있군. 코볼트들이 토석인을 발견하려고 동굴을 샅샅이 파헤친 게 분명해.\n\n전설에 따르면 티탄들이 토석인을 창조했다지. 토석인을 이용해 우리가 지금 밟고 서 있는 이 땅을 창조했어. 그래, 이건 분명 그냥 지나칠 수 없는 위협이야.\n\n\n이 광석 표본에 마력을 부여하면 코볼트의 계략에 대항할 수 있을 거야.",
+        "e1b7b92be386036b7eb3": "구릉바위 협곡에서 뭔가 발견했나? 사실 전에 리조나이트에 관한 전설을 들은 적이 있어서... 그 동굴에는 들어가기 꺼려지는군. 동굴 깊은 곳에 무엇이 있는지 알면 놈들의 계획을 짐작이라도 할 수 있을 텐데..."
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -436,6 +662,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -463,6 +707,11 @@
     },
     "plPL": {
       "description": "Coś jest nie tak w Stonetalon. Czujesz napięcie w powietrzu, {name}?\n\nNa południowy wschód stąd leży głęboka jaskinia w Boulderslide Ravine. Koboldy gorączkowo wydobywają tam rzadki kryształ zwany rezonitem. Potrzebuję próbek rudy, by zrozumieć, co dzieje się w jaskini. Musisz też zbadać jej głębię.\n\nIdź, młody {class}, muszę wiedzieć, jakie zło czai się pod górami.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Coś jest nie tak w Stonetalon. Czujesz napięcie w powietrzu, $N?$B$BNa południe stąd, w Wąwozie Boulderslide, znajduje się głęboka jaskinia. Koboldy gorączkowo wydobywają tam rzadki kryształ zwany rezonitem. Przynieś próbki rudy, abym mógł zrozumieć, co się tam dzieje. Zbadaj także głębię jaskini.$B$BRuszaj, młody $c. Muszę wiedzieć, jakie zło czai się pod tymi górami.",
+        "af649f596bc0731f6745": "Ach... tak! To jest to; kryształy rezonitu noszą ślad magii Ziemnych. Koboldy musiały kopać głęboko i odkryć jednego z nich.$B$BLegenda mówi, że Ziemnych stworzyli Tytani, by ukształtowali ziemię pod naszymi stopami. Tej groźby nie wolno ignorować.$B$B<Mor’rogal kręci głową.>$B$BByć może mogę zaczarować te próbki rudy, by użyć ich przeciw planom koboldów.",
+        "e1b7b92be386036b7eb3": "Jakie wieści przynosisz z Wąwozu Boulderslide? Pamiętam legendę o rezonicie... ale nie mogę sobie jej przypomnieć. Być może to, co leży na dnie jaskini, wyjaśni ich zamiary."
+      },
       "eventObjectiveLabel": "Zbadaj jaskinię w wąwozie Boulderslide",
       "objectiveLines": [
         {
@@ -480,6 +729,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -509,6 +773,11 @@
     },
     "ptBR": {
       "description": "Algo está errado aqui nas Torres de Pedra. Você sente a tensão no ar, {name}?\n\nA sudeste daqui, na Ravina da Avalanche, fica uma profunda caverna. Os kobolds de lá estão minerando freneticamente um cristal raro chamado ressonita. Preciso que você colete algumas amostras do minério para que eu possa entender o que está acontecendo na caverna. Também preciso que você investigue as áreas mais profundas de lá.\n\nVá, jovem {class}. É imperativo que eu saiba que mal espreita sob estas montanhas.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Algo está errado aqui nas Torres de Pedra. Você sente a tensão no ar, $n?\n\nA sudeste daqui, na Ravina da Avalanche, fica uma profunda caverna. Os kobolds de lá estão minerando freneticamente um cristal raro chamado ressonita. Preciso que você colete algumas amostras do minério para que eu possa entender o que está acontecendo na caverna. Também preciso que você investigue as áreas mais profundas de lá.\n\nVá, jovem $c. É imperativo que eu saiba que mal espreita sob estas montanhas.",
+        "af649f596bc0731f6745": "Ah... sim! É isso: os cristais de resonita têm um traço de magia terrena. Os kobolds devem ter escavado fundo e descoberto um terreno.$B$BSegundo a lenda, os terrenos foram criados pelos Titãs para moldar a terra sob nossos pés. Esta é uma ameaça que certamente não pode ser ignorada.$B$B<Mor’rogal balança a cabeça.>$B$BTalvez eu possa encantar essas amostras de minério para usá-las contra os planos dos kobolds.",
+        "e1b7b92be386036b7eb3": "Que notícias você traz da Ravina da Avalanche? Lembro-me de uma lenda que falava sobre a ressonita... mas não estou conseguindo ligar os pontos. Talvez saber o que jaz no fundo da caverna esclareça as perversas intensões dos kobolds."
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -525,6 +794,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -552,6 +838,11 @@
     },
     "ruRU": {
       "description": "Что-то не так здесь, в Каменном Когте. Чувствуешь ли ты непокой, витающий в воздухе, {name}?\n\nК юго-востоку отсюда, в ущелье Камнепадов, есть пещера. Там кобольды отчаянно ищут редкие кристаллы резонита. Я прошу тебя принести оттуда образцы руды, чтобы я мог понять, что происходит в этой пещере. Помимо того, неплохо бы тебе обследовать глубины этой пещеры.\n\nИди же, юный {class}, мне очень важно знать, что за зло таится под этими горами.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Что-то не так здесь, в Каменном Когте. Чувствуешь ли ты непокой, витающий в воздухе, $N?\n\nК юго-востоку отсюда, в ущелье Камнепадов, есть пещера. Там кобольды отчаянно ищут редкие кристаллы резонита. Я прошу тебя принести оттуда образцы руды, чтобы я мог понять, что происходит в этой пещере. Помимо того, неплохо бы тебе обследовать глубины этой пещеры.\n\nИди же, $gюный:юная:c; $c, мне очень важно знать, что за зло таится под этими горами.",
+        "af649f596bc0731f6745": "О да! Это оно – кристалл резонита несет следы земной магии. Должно быть, кобольды, докопавшись до глубин, обнаружили там земельника.\n\nЛегенда утверждает, что земельники – это существа, созданные титанами. Именно с их помощью создана земная твердь, по которой мы ступаем. Угроза велика, нельзя не обращать на нее внимания.\n\nМор'рогал качает головой.\n\nБыть может, я сумею наложить заклинание на эти куски руды, чтобы нарушить затею кобольдов.",
+        "e1b7b92be386036b7eb3": "Какие новости из Ущелья Камнепадов? Я вспомнил, что существует легенда, в которой говорится о резоните... Но не за что ухватиться. Быть может, узнав, что таится на дне пещеры, мы сможем пролить свет на их зловещие намерения."
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -568,6 +859,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -595,6 +904,11 @@
     },
     "svSE": {
       "description": "Något är på tok här i Stenklobergen. Känner du spänningen i luften, {name}?\n\nSydost om här ligger en djup grotta i Stenrasravinen. Kobolderna där bryter frenetiskt en sällsynt kristall som kallas resonit. Jag behöver att du tar med några malmprover så att jag kan förstå vad som händer i den grottan. Jag behöver också att du undersöker hur djup grottan är.\n\nGå, unge {class}, det är avgörande att jag får veta vilken ondska som lurar under de här bergen.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Något är fel här i Stonetalon. Känner du spänningen i luften, $N?$B$BSöderut ligger en djup grotta i Stenrasravinen. Kobolderna där utvinner febrilt en sällsynt kristall som kallas resonit. Hämta malmprover så att jag kan förstå vad som händer i grottan. Undersök också dess djup.$B$BGå, unga $c, jag måste få veta vilken ondska som lurar under bergen.",
+        "af649f596bc0731f6745": "Ah... ja! Där har vi det; resonitkristallerna bär spår av de jordföddas magi. Kobolderna måste ha grävt djupt och frilagt en jordfödd.$B$BEnligt legenden skapade titanerna de jordfödda för att forma marken vi går på. Detta hot kan definitivt inte ignoreras.$B$B<Mor’rogal skakar på huvudet.>$B$BKanske kan jag förtrolla malmproverna och använda dem mot koboldernas planer.",
+        "e1b7b92be386036b7eb3": "Vilka nyheter har du från Stenrasravinen? Jag minns en legend om resonit... men kan inte komma på den. Kanske kan det som finns längst ner i grottan avslöja deras avsikter."
+      },
       "eventObjectiveLabel": "Undersök grottan i Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -612,6 +926,21 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -643,6 +972,11 @@
     },
     "trTR": {
       "description": "Stonetalon'da bir şeyler ters gidiyor. Havadaki gerginliği hissedebiliyor musun, {name}?\n\nBuranın güneydoğusunda, Boulderslide Kanyonu'nda derin bir mağara var. Oradaki kobold'lar Resonite denen nadir bir kristali çılgınca çıkarıyor. O mağarada neler olduğunu anlayabilmem için bana birkaç cevher örneği getirmeni istiyorum. Mağaranın derinliğini de araştırmanı istiyorum.\n\nGit genç {class}, bu dağların altında hangi kötülüğün gizlendiğini bilmem şart.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "Stonetalon’da bir terslik var. Havadaki gerginliği hissediyor musun, $N?$B$BBuranın güneyinde Boulderslide Kanyonu’nda derin bir mağara var. Koboldlar orada Resonite denen nadir bir kristali çılgınca çıkarıyor. Mağarada neler olduğunu anlamam için bana cevher örnekleri getir. Mağaranın derinliklerini de araştır.$B$BGit genç $c, bu dağların altında hangi kötülüğün gizlendiğini bilmeliyim.",
+        "af649f596bc0731f6745": "Ah... evet! İşte bu; Resonite kristallerinde Earthen büyüsünün izi var. Koboldlar çok derine kazıp bir Earthen ortaya çıkarmış olmalı.$B$BEfsaneye göre Earthen’ları Titanlar yarattı ve ayaklarımızın altındaki toprağı şekillendirmek için kullandı. Bu kesinlikle görmezden gelinemeyecek bir tehdit.$B$B<Mor’rogal başını sallar.>$B$BBelki bu cevher örneklerini koboldların planına karşı kullanmak üzere büyüleyebilirim.",
+        "e1b7b92be386036b7eb3": "Boulderslide Kanyonu’ndan ne haber getirdin? Resonite ile ilgili bir efsane hatırlıyorum... ama bir türlü çıkaramıyorum. Belki mağaranın dibinde ne olduğunu bilmek niyetlerini aydınlatır."
+      },
       "eventObjectiveLabel": "Boulderslide Vadisi'ndeki mağarayı araştır",
       "objectiveLines": [
         {
@@ -660,6 +994,21 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -689,6 +1038,11 @@
     },
     "ukUA": {
       "description": "Щось негаразд у Каміннопазуристих горах. Відчуваєш напругу в повітрі, {name}?\n\nНа південний схід звідси, в ущелині Крутих валунів, є глибока печера. Тамтешні кобольди несамовито видобувають рідкісний кристал, званий резонітом. Принеси мені зразки руди, щоб я зрозумів, що відбувається в печері. Також досліди її глибини.\n\nІди, юний {class}, мені вкрай необхідно знати, яке зло ховається під цими горами.",
+      "dialogue": {
+        "80436de5d8c7263080a5": "У Stonetalon щось негаразд. Відчуваєш напругу в повітрі, $N?$B$BНа південь звідси в Ущелині Крутих валунів є глибока печера. Кобольди гарячково видобувають там рідкісний кристал резоніт. Принеси зразки руди, щоб я зрозумів, що відбувається в печері. Також досліди її глибини.$B$BІди, юний $c, я мушу знати, яке зло причаїлося під цими горами.",
+        "af649f596bc0731f6745": "А... так! Ось воно: кристали резоніту мають слід магії земляних. Кобольди, мабуть, копали глибоко й відкрили одного з них.$B$BЗа легендою, земляних створили титани й використали для творення землі під нашими ногами. Цю загрозу безумовно не можна ігнорувати.$B$B<Мор’рогал хитає головою.>$B$BМожливо, я зачарую ці зразки руди для боротьби з планом кобольдів.",
+        "e1b7b92be386036b7eb3": "Які новини з Ущелини Крутих валунів? Пригадую легенду про резоніт... але ніяк не можу згадати. Можливо, те, що лежить на дні печери, прояснить їхні задуми."
+      },
       "eventObjectiveLabel": "Дослідіть печеру в ущелині Крутих валунів",
       "objectiveLines": [
         {
@@ -706,6 +1060,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "a7606d3796f7496381b3dcf43fa6ab9ca224ddc92c8cb6a0c7eace3d9c837694"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -737,6 +1106,11 @@
     },
     "zhCN": {
       "description": "石爪山脉有些事不大对劲。你能感觉到空气中的紧张气氛吗，{name}？在此地以南的滚岩峡谷中有一处很深的洞穴，狗头人正在那儿疯狂地开采一种被称作共鸣水晶的稀有矿石。我需要你去取回一些矿石样本，那样我就能了解洞穴中究竟发生了什么事儿。另外，你还得去勘查一下洞穴的深度。\n\n去吧，年轻的{class}，我必须知道这里的山脉中潜伏着什么样的邪恶力量。",
+      "dialogue": {
+        "80436de5d8c7263080a5": "石爪山脉有些事不大对劲。你能感觉到空气中的紧张气氛吗，$N？在此地以南的滚岩峡谷中有一处很深的洞穴，狗头人正在那儿疯狂地开采一种被称作共鸣水晶的稀有矿石。我需要你去取回一些矿石样本，那样我就能了解洞穴中究竟发生了什么事儿。另外，你还得去勘查一下洞穴的深度。\n\n去吧，年轻的$c，我必须知道这里的山脉中潜伏着什么样的邪恶力量。",
+        "af649f596bc0731f6745": "啊……没错!就是这个。共鸣水晶附有土灵的魔法。狗头人一定挖得很深，结果把土灵给挖出来了。\n\n传说土灵是泰坦创造的生物，他们曾协助泰坦创造了我们脚下的土地。这是个不能忽视的威胁。\n\n\n或许我能为这些矿石样本附上一些魔法，以此来破坏狗头人的阴谋。\n",
+        "e1b7b92be386036b7eb3": "你在滚岩峡谷有什麽发现吗?我记得一些与共鸣水晶有关的传说……但是我没法亲自去那儿。或许当我知道洞穴底部都有些什麽东西的时候就能洞察他们的意图了。"
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -753,6 +1127,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -780,6 +1172,11 @@
     },
     "zhTW": {
       "description": "石爪山脈有些事不大對勁。你能感覺到空氣中的緊張氣氛嗎，{name}？在東南方的滾岩峽谷中有一處很深的洞穴。狗頭人正在那兒瘋狂地開採一種被稱作共鳴水晶的稀有礦石。我需要你去取回一些礦石樣本，那麼我就能瞭解洞穴中究竟發生了什麼事。另外，你還得去勘查一下洞穴的深度。\n\n去吧年輕的{class}，我必須知道這裡的山脈中潛伏著什麼樣的邪惡力量。",
+      "dialogue": {
+        "80436de5d8c7263080a5": "石爪山脈有些事不大對勁。你能感覺到空氣中的緊張氣氛嗎，$N？在此地以南的滾岩峽谷中有一處很深的洞穴，狗頭人正在那兒瘋狂地開採一種被稱作共鳴水晶的稀有礦石。我需要你去取回一些礦石樣本，那樣我就能瞭解洞穴中究竟發生了什麼事兒。另外，你還得去勘查一下洞穴的深度。\n\n去吧，年輕的$c，我必須知道這裡的山脈中潛伏著什麼樣的邪惡力量。",
+        "af649f596bc0731f6745": "啊……沒錯!就是這個。共鳴水晶附有土靈的魔法。狗頭人一定挖得很深，結果把土靈給挖出來了。\n\n傳說土靈是泰坦創造的生物，他們曾協助泰坦創造了我們腳下的土地。這是個不能忽視的威脅。\n\n\n或許我能爲這些礦石樣本附上一些魔法，以此來破壞狗頭人的陰謀。",
+        "e1b7b92be386036b7eb3": "你在滾巖峽谷有什麼發現嗎?我記得一些與共鳴水晶有關的傳說……但是我沒法親自去那兒。或許當我知道洞穴底部都有些什麼東西的時候就能洞察他們的意圖了。"
+      },
       "eventObjectiveLabel": "Investigate Cave in Boulderslide Ravine",
       "objectiveLines": [
         {
@@ -796,6 +1193,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.80436de5d8c7263080a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.af649f596bc0731f6745": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e1b7b92be386036b7eb3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

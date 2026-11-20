@@ -1,8 +1,36 @@
 {
   "areaId": 440,
+  "dialogueContexts": {
+    "6dbb14f7aec539c219bd": {
+      "lineId": "q:32:accept",
+      "npcId": 7724,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "ce9c6f6ba8f175f88230": {
+      "lineId": "q:32:complete",
+      "npcId": 7010,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "e0c9565c96376d8b0693": {
+      "lineId": "q:32:progress",
+      "npcId": 7010,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Tady je tvá zpráva. Naléhavě tě žádám, odnes ji někomu, kdo by mohl mít o takových věcech praktické znalosti.\n\nZnám jednoho trolího učence jménem Zilzibin Drumlore. Strávil spoustu času studiem forem života jedinečných pro ekologii Azerothu; navíc je to historik! Pokud chceš někoho, kdo ti pomůže zjistit, co přesně je ta hrozba zač a jak ji zastavit, dej tu zprávu jemu. Budeme potřebovat každou pomoc.\n\nZil bydlí v domě na druhé úrovni Drag v Orgrimmaru.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Tady je tvá zpráva. Doporučuji ti odnést ji někomu, kdo má s podobnými věcmi zkušenosti.$B$BZnám trollího učence jménem Zilzibin Drumlore. Dlouho studoval formy života jedinečné pro Azeroth a navíc je historik! Chceš-li zjistit, co přesně je tato hrozba a jak ji zastavit, dej zprávu jemu. Budeme potřebovat veškerou pomoc.$B$BZil žije v domě na druhé úrovni Dragu v Orgrimmaru.",
+        "ce9c6f6ba8f175f88230": "Tato zpráva... s těmito tvory už jsem se setkal. Fizzledowser udělal dobře, že ji i tebe poslal ke mně.$B$BTito tvorové rychle pohltí poušť Tanaris; patří k největším hrozbám, kterým kdy budeme čelit. Zapamatuj si to jméno, $n: silithidé. Hmyz zmíněný zde jsou silithidé a slouží jedné z největších hrozeb pro Hordu i Alianci.$B$BKdybychom to jen dříve dokázali pochopit.",
+        "e0c9565c96376d8b0693": "Promiň, neznám tě... ale zdá se, že už o mně něco víš. S čím ti mohu pomoci? Něco pro mě máš?"
+      },
       "summary": "Dones zprávu Zilzibinu Drumloreovi do Orgrimmaru.",
       "title": "Vzestup silithidů",
       "translationMetadata": {
@@ -12,6 +40,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +75,11 @@
     },
     "daDK": {
       "description": "Her er din rapport. Jeg vil stærkt opfordre dig til at tage den med til en, der har praktisk viden om den slags.\n\nJeg kender en lærd trold ved navn Zilzibin Drumlore. Han har brugt meget tid på at studere livsformer, der er særegne for Azeroths økosystem, og så er han ovenikøbet historiker! Hvis du vil have nogen til at hjælpe med at finde ud af, præcis hvad denne trussel er, og hvordan den kan standses, så giv ham rapporten. Vi får brug for al den hjælp, vi kan få.\n\nZil bor i et hus på det andet niveau af Drag i Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Her er din rapport. Jeg opfordrer dig til at bringe den til en, der har praktisk viden om den slags.$B$BJeg kender en troldelærd ved navn Zilzibin Drumlore. Han har studeret livsformer, der er unikke for Azeroths økologi, og er ovenikøbet historiker! Hvis du vil finde ud af, hvad truslen er, og hvordan den standses, så giv ham rapporten. Vi får brug for al den hjælp, vi kan få.$B$BZil bor i et hus på Dragens andet niveau i Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "Denne rapport... jeg har haft med disse bæster at gøre før. Fizzledowser gjorde klogt i at sende den og dig til mig.$B$BDisse væsner vil hurtigt opsluge Tanaris-ørkenen; de er blandt de største trusler, vi nogensinde vil møde. Husk dette navn, $n: silithid. Insekterne her er silithider, redskaber for en af de største trusler mod både Horden og Alliancen.$B$BHavde vi dog været kloge nok til at se det før.",
+        "e0c9565c96376d8b0693": "Beklager, jeg kender dig ikke... men det lader til, at du har hørt om mig. Hvad kan jeg hjælpe dig med? Har du noget til mig?"
+      },
       "summary": "Tag rapporten med til Zilzibin Drumlore i Orgrimmar.",
       "title": "Silithidernes fremmarch",
       "translationMetadata": {
@@ -41,6 +89,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "34c3cd955e2bc17470c0e3c19134414044abaa5793c7c2b35733d6410602e7c7"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +122,11 @@
     },
     "deDE": {
       "description": "Hier ist Euer Bericht. Ihr solltet damit zu jemandem gehen, der ausreichend Kenntnis von solchen Dingen hat.\n\nIch kenne da einen Troll-Gelehrten mit Namen Zilzibin Drumlore. Er hat viel Zeit mit dem Studium der Lebensformen verbracht, die in der Ökologie von Azeroth einzigartig sind, und er ist noch dazu Historiker! Wenn Euch jemand helfen soll herauszufinden, was genau diese Bedrohung ausmacht, und wie sie zu stoppen ist, gebt ihm diesen Bericht. Hilfe können wir gar nicht genug haben.\n\nZil lebt in einem Haus auf der zweiten Ebene der Gasse in Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Hier ist Euer Bericht. Ihr solltet damit zu jemandem gehen, der ausreichend Kenntnis von solchen Dingen hat.\n\nIch kenne da einen Troll-Gelehrten mit Namen Zilzibin Drumlore. Er hat viel Zeit mit dem Studium der Lebensformen verbracht, die in der Ökologie von Azeroth einzigartig sind, und er ist noch dazu Historiker! Wenn Euch jemand helfen soll herauszufinden, was genau diese Bedrohung ausmacht, und wie sie zu stoppen ist, gebt ihm diesen Bericht. Hilfe können wir gar nicht genug haben.\n\nZil lebt in einem Haus auf der zweiten Ebene der Gasse in Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "Dieser Bericht. . . Ich habe mich schon zuvor mit diesen Bestien beschäftigt. Fizzledowser hat gut daran getan, dies und Euch zu mir zu schicken. \n \n Diese Kreaturen werden die Tanariswüste schnell verzehren; sie stellen so ziemlich die größte Bedrohung dar, der wir uns je gegenübersehen werden. Macht Euch mit diesem Namen vertraut, $N: Silithid. Die hier erwähnten Insekten sind die Silithid und sie sind das Werkzeug einer der größten Bedrohungen, der sich die Horde und die Allianz gegenübersehen. \n \n Wenn wir nur früher schon klug genug gewesen wären, das zu verstehen. ",
+        "e0c9565c96376d8b0693": "Es tut mir Leid, ich kenne Euch nicht. . . aber so wie es aussieht, habt Ihr zumindest schon von mir gehört. Nun, wie kann ich Euch helfen? Habt Ihr etwas für mich?"
+      },
       "summary": "Bringt den Bericht nach Orgrimmar zu Zilzibin Drumlore.",
       "title": "Aufstieg der Silithid",
       "translationMetadata": {
@@ -67,6 +135,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +169,11 @@
     },
     "enUS": {
       "description": "Here's your report.  I urge you to take it to someone who might have working knowledge in this kind of thing.\n\nI know this troll scholar named Zilzibin Drumlore.  He's spent a lot of time studying life forms that are unique to the ecology of Azeroth; he's a historian to boot!  If you want someone to help figure out what exactly this threat is and how to stop it, give this report to him.  We're going to need all the help we can get.\n\nZil lives in a house on the second tier of the Drag in Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Here's your report.  I urge you to take it to someone who might have working knowledge in this kind of thing.$B$BI know this troll scholar named Zilzibin Drumlore.  He's spent a lot of time studying life forms that are unique to the ecology of Azeroth; he's a historian to boot!  If you want someone to help figure out what exactly this threat is and how to stop it, give this report to him.  We're going to need all the help we can get.$B$BZil lives in a house on the second tier of the Drag in Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "This report... I've dealt with these beasts before.  Fizzledowser was wise to send this, and you, to me.$B$BThese creatures will consume the Tanaris desert rapidly; they are nothing short of one of the greatest menaces we all will ever face.  Familiarize yourself with this name, $n: silithid.  The insects mentioned here are the silithid, and they are the tools of one of the greatest threats that both the Horde and Alliance face.$B$BIf only we were smart enough to see that before.",
+        "e0c9565c96376d8b0693": "I'm sorry, I don't know you... but from the look of things you have at least heard something of me.  Now, what can I help you with?  Do you have something for me?"
+      },
       "summary": "Take the report to Zilzibin Drumlore in Orgrimmar.",
       "title": "Rise of the Silithid",
       "translationMetadata": {
@@ -91,6 +182,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +217,11 @@
     },
     "esES": {
       "description": "Aquí tienes el informe. Te ruego que se lo entregues a alguien que tenga conocimientos de este tema.\n\nConozco a un erudito trol llamado Zilzibin Drumlore que ha dedicado mucho tiempo al estudio de los seres vivos que solo se encuentran en Azeroth. ¡Es un historiador de los pies a la cabeza! Entrégale este informe si quieres que te ayude a entender a qué te enfrentas y el modo de detener esta amenaza. Vamos a necesitar toda la ayuda que podamos conseguir.\n\nZil vive en una casa en el segundo nivel de La Calle Mayor en Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Aquí tienes el informe. Te ruego que se lo entregues a alguien que tenga conocimientos de este tema.\n\nConozco a un erudito trol llamado Zilzibin Drumlore que ha dedicado mucho tiempo al estudio de los seres vivos que solo se encuentran en Azeroth. ¡Es un historiador de los pies a la cabeza! Entrégale este informe si quieres que te ayude a entender a qué te enfrentas y el modo de detener esta amenaza. Vamos a necesitar toda la ayuda que podamos conseguir.\n\nZil vive en una casa en el segundo nivel de La Calle Mayor en Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "Este informe... Yo ya he visto antes a estas criaturas. Picoflojo ha hecho muy bien al enviarte aquí con el informe. \n\nEstas criaturas destruirán el Desierto de Tanaris con rapidez. Se trata de una de las mayores amenazas a la que jamás nos hemos enfrentado. Familiarízate con este nombre, $n: silítidos. Los insectos de los que habla este informe son los silítidos y representan uno de los mayores peligros a los que tanto la Horda como la Alianza se enfrentan. \n\nSi hubiéramos sido capaces de descubrirlo antes...",
+        "e0c9565c96376d8b0693": "Lo siento, no te conozco... pero por lo que parece, tú sí has oído hablar de mí. ¿En qué puedo ayudarte? ¿Tienes algo para mí?"
+      },
       "summary": "Entrégale el informe a Zilzibin Drumlore en Orgrimmar.",
       "title": "La sublevación de los silítidos",
       "translationMetadata": {
@@ -116,6 +230,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -133,6 +265,11 @@
     },
     "esMX": {
       "description": "Aquí tienes el informe. Te ruego que se lo entregues a alguien que tenga conocimientos de este tema.\n\nConozco a un trol erudito llamado Zilzibin Tambor Sabio que ha dedicado mucho tiempo al estudio de los seres vivos que solo se encuentran en Azeroth. ¡Es un historiador de los pies a la cabeza! Entrégale este informe si quieres que te ayude a entender a qué te enfrentas y el modo de detener esta amenaza. Vamos a necesitar toda la ayuda que podamos conseguir.\n\nZil vive en una casa en el segundo nivel de La Calle Mayor en Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Aquí tienes el informe. Te ruego que se lo entregues a alguien que tenga conocimientos de este tema.\n\nConozco a un trol erudito llamado Zilzibin Tambor Sabio que ha dedicado mucho tiempo al estudio de los seres vivos que solo se encuentran en Azeroth. ¡Es un historiador de los pies a la cabeza! Entrégale este informe si quieres que te ayude a entender a qué te enfrentas y el modo de detener esta amenaza. Vamos a necesitar toda la ayuda que podamos conseguir.\n\nZil vive en una casa en el segundo nivel de La Calle Mayor en Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "Este informe... Yo ya he visto antes a estas criaturas. Picoflojo ha hecho muy bien al enviarte aquí con el informe.\n\nEstas criaturas destruirán el Desierto de Tanaris con rapidez. Se trata de una de las mayores amenazas a la que jamás nos hemos enfrentado. Familiarízate con este nombre, $n: silítidos. Los insectos de los que habla este informe son los silítidos y representan uno de los mayores peligros a los que tanto la Horda como la Alianza se enfrentan.\n\nSi hubiéramos sido capaces de descubrirlo antes...",
+        "e0c9565c96376d8b0693": "Lo siento, no te conozco... pero por lo que parece, tú sí has oído hablar de mí. ¿En qué puedo ayudarte? ¿Tienes algo para mí?"
+      },
       "summary": "Entrégale el informe a Zilzibin Tambor Sabio en Orgrimmar.",
       "title": "La sublevación de los silítidos",
       "translationMetadata": {
@@ -141,6 +278,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -157,6 +312,11 @@
     },
     "frFR": {
       "description": "Voici votre rapport. Je vous demande de l'apporter de toute urgence à quelqu'un qui a de l'expérience dans ce domaine.\n\nJe connais un troll érudit du nom de Zilzibin Drumlore. Il a passé beaucoup de temps à étudier les formes de vie exceptionnelles de l'écologie d'Azeroth ; de plus, c'est un historien ! Si vous voulez rencontrer quelqu'un capable de comprendre la nature de ce danger et comment l'arrêter, apportez-lui ce rapport. Nous allons avoir besoin de toute l'aide disponible.\n\nZil réside dans une maison sur le second tiers de la Herse, à Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Voici votre rapport. Je vous demande de l'apporter de toute urgence à quelqu'un qui a de l'expérience dans ce domaine.\n\nJe connais un troll érudit du nom de Zilzibin Drumlore. Il a passé beaucoup de temps à étudier les formes de vie exceptionnelles de l'écologie d'Azeroth ; de plus, c'est un historien ! Si vous voulez rencontrer quelqu'un capable de comprendre la nature de ce danger et comment l'arrêter, apportez-lui ce rapport. Nous allons avoir besoin de toute l'aide disponible.\n\nZil réside dans une maison sur le second tiers de la Herse, à Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "Oui… J'ai déjà eu affaire à ces bêtes dans le passé. Fizzledowser a été bien avisé de vous envoyer avec ce rapport. \n \n Ces créatures vont consumer le désert de Tanaris très rapidement. Elles ne sont rien de moins que l'un des plus grands dangers auxquels nous aurons jamais à faire face. Retenez ce nom, $N : les silithides. Les insectes mentionnés ici sont des silithides et ce sont les instruments de l'une des plus grandes menaces que l'Alliance et la Horde affronteront jamais. \n \n Si seulement nous avions été plus perspicaces. ",
+        "e0c9565c96376d8b0693": "Veuillez m'excuser, je ne vous connais pas. . . Mais il semble que vous, vous avez entendu parler de moi. Maintenant, comment puis-je vous aider ? Avez-vous quelque chose pour moi ?"
+      },
       "summary": "Apporter le rapport à Zilzibin Drumlore à Orgrimmar.",
       "title": "L'ascension des silithides",
       "translationMetadata": {
@@ -165,6 +325,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -181,6 +359,11 @@
     },
     "hrHR": {
       "description": "Evo tvojeg izvješća. Potičem te da ga odneseš nekome tko ima praktično znanje o takvim stvarima.\n\nPoznajem trolskog učenjaka Zilzibina Drumlorea. Proveo je mnogo vremena proučavajući oblike života jedinstvene za ekologiju Azerotha; uz to je i povjesničar! Ako želiš nekoga tko će pomoći otkriti što je točno ova prijetnja i kako je zaustaviti, daj mu izvješće. Trebat će nam sva pomoć koju možemo dobiti.\n\nZil živi u kući na drugoj razini Draga u Orgrimmaru.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Evo tvog izvješća. Savjetujem ti da ga odneseš nekome tko se razumije u takve stvari.$B$BPoznajem trolskog učenjaka po imenu Zilzibin Drumlore. Mnogo je vremena proučavao životne oblike jedinstvene za ekologiju Azerotha, a uz to je i povjesničar! Ako želiš otkriti kakva je ovo prijetnja i kako je zaustaviti, daj mu izvješće. Trebat će nam sva moguća pomoć.$B$BZil živi u kući na drugoj razini Draga u Orgrimmaru.",
+        "ce9c6f6ba8f175f88230": "Ovo izvješće... već sam se susreo s tim zvijerima. Fizzledowser je mudro postupio poslavši izvješće i tebe k meni.$B$BTa će stvorenja brzo proždrijeti pustinju Tanaris; među najvećim su prijetnjama s kojima ćemo se ikada suočiti. Zapamti ovo ime, $n: silithidi. Kukci koji se ovdje spominju silithidi su i oruđe jedne od najvećih prijetnji i Hordi i Savezu.$B$BDa smo barem to ranije shvatili.",
+        "e0c9565c96376d8b0693": "Oprosti, ne poznajem te... ali čini se da barem nešto znaš o meni. Kako ti mogu pomoći? Imaš li nešto za mene?"
+      },
       "summary": "Odnesi izvješće Zilzibinu Drumloreu u Orgrimmar.",
       "title": "Uspon silithida",
       "translationMetadata": {
@@ -190,6 +373,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "34c3cd955e2bc17470c0e3c19134414044abaa5793c7c2b35733d6410602e7c7"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -208,6 +406,11 @@
     },
     "itIT": {
       "description": "Ecco il rapporto. Ti esorto a portarlo a qualcuno che abbia esperienza in questo genere di cose.\n\nConosco uno studioso troll chiamato Zilzibin Drumlore. Ha dedicato molto tempo allo studio delle forme di vita uniche dell'ecologia di Azeroth ed è anche uno storico! Se vuoi qualcuno che capisca esattamente quale sia questa minaccia e come fermarla, consegnagli il rapporto. Avremo bisogno di tutto l'aiuto possibile.\n\nZil vive in una casa sul secondo livello del Drag di Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Ecco il tuo rapporto. Ti consiglio vivamente di portarlo a qualcuno che di queste cose abbia una conoscenza pratica.\n\nConosco uno studioso troll, un certo Zilzibin Drumlore. Ha passato molto tempo a studiare le forme di vita che appartengono solo all'ecologia di Azeroth; e per giunta è uno storico! Se vuoi qualcuno che ti aiuti a capire cos'è esattamente questa minaccia e come fermarla, dai questo rapporto a lui. Avremo bisogno di tutto l'aiuto possibile.\n\nZil abita in una casa al secondo livello del Corso, a Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "Questo rapporto... ho già avuto a che fare con queste bestie. Fizzledowser è stato saggio a mandare questo rapporto, e te, da me.\n\nQueste creature divoreranno in fretta il deserto di Tanaris; sono niente meno che uno dei pericoli più grandi che tutti noi dovremo mai affrontare. Impara bene questo nome, $N: silithid. Gli insetti di cui si parla qui sono i silithid, e sono gli strumenti di una delle più gravi minacce che incombono tanto sull'Orda quanto sull'Alleanza.\n\nSe solo fossimo stati abbastanza svegli da capirlo prima.",
+        "e0c9565c96376d8b0693": "Mi dispiace, non ti conosco... ma a quanto vedo tu almeno hai sentito parlare di me. Allora, in cosa posso aiutarti? Hai qualcosa per me?"
+      },
       "summary": "Porta il rapporto a Zilzibin Drumlore a Orgrimmar.",
       "title": "L'ascesa dei silitidi",
       "translationMetadata": {
@@ -217,6 +420,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "34c3cd955e2bc17470c0e3c19134414044abaa5793c7c2b35733d6410602e7c7"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -235,6 +456,11 @@
     },
     "koKR": {
       "description": "여기 보고서를 받으시오. 이 보고서는 이런 일에 대해 실제로 잘 아는 사람에게 가져가는 것이 좋겠소.\n\n질지빈 드럼로어라는 트롤 학자를 알고 있는데 아제로스 생태계 고유의 생물들을 연구하며 많은 시간을 보내고 있소. 게다가 역사학에도 조예가 깊다오. 이 보고서를 그에게 전하면 이 위협이 정확히 무엇인지 그리고 그것을 막을 방법이 있는지 알 게 될 테지. 분명 도움을 줄 것이오. 이번 일에는 우리가 만날 수 있는 모든 이의 도움이 필요하오.\n\n내가 마지막으로 들은 소식에 의하면 질지빈은 오그리마의 골목길 2층에 있는 집에 살고 있다고 합디다.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "여기 보고서를 받으시오. 이 보고서는 이런 일에 대해 실제로 잘 아는 사람에게 가져가는 것이 좋겠소.\n\n질지빈 드럼로어라는 트롤 학자를 알고 있는데 아제로스 생태계 고유의 생물들을 연구하며 많은 시간을 보내고 있소. 게다가 역사학에도 조예가 깊다오. 이 보고서를 그에게 전하면 이 위협이 정확히 무엇인지 그리고 그것을 막을 방법이 있는지 알 게 될 테지. 분명 도움을 줄 것이오. 이번 일에는 우리가 만날 수 있는 모든 이의 도움이 필요하오.\n\n내가 마지막으로 들은 소식에 의하면 질지빈은 오그리마의 골목길 2층에 있는 집에 살고 있다고 합디다.",
+        "ce9c6f6ba8f175f88230": "내가 전에 이 보고서에 기록된 것들을 상대한 적 있소. 피즐도저가 이 보고서를 내게 보낸 건 참 현명한 일이었어.\n\n이 생물들은 빠른 속도로 타나리스 사막을 모조리 집어삼키고 말 거요. 우리가 맞서게 될 가장 큰 위협이 될 것이 분명하지. 이 생물들의 이름을 잘 기억해 두시오. 실리시드... 여기에 적힌 곤충의 이름은 실리시드라고 하지. 이들은 호드와 얼라이언스 모두에게 가장 큰 위협이 될 존재라오.\n\n우리가 그것을 미리 알 수 있을 만큼 현명하기만 하다면 좋을 것을...",
+        "e0c9565c96376d8b0693": "미안하지만, 난 당신을 잘 모르는데... 하지만 당신은 나에 대해 뭔가 들어 본 것 같군. 그래, 내가 도와줄 일이라도 있소? 내게 뭘 가져온 거요?"
+      },
       "summary": "오그리마에 있는 질지빈 드럼로어에게 보고서를 가져가야 합니다.",
       "title": "실리시드의 전조",
       "translationMetadata": {
@@ -243,6 +469,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -259,6 +503,11 @@
     },
     "plPL": {
       "description": "Oto twój raport. Gorąco zachęcam do zaniesienia go komuś, kto ma praktyczną wiedzę w tej dziedzinie.\n\nZnam uczonego trolla, Zilzibina Drumlore'a. Poświęcił mnóstwo czasu na badanie form życia właściwych wyłącznie ekosystemowi Azeroth, a do tego jest historykiem! Jeśli szukasz kogoś, kto pomoże ustalić, czym dokładnie jest to zagrożenie i jak je powstrzymać, daj mu ten raport. Przyda nam się wszelka dostępna pomoc.\n\nZil mieszka w domu na drugim poziomie dzielnicy Drag w Orgrimmarze.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Oto twój raport. Radzę zanieść go komuś, kto zna się na takich sprawach.$B$BZnam trollowego uczonego imieniem Zilzibin Drumlore. Spędził wiele czasu, badając formy życia wyjątkowe dla Azeroth, a do tego jest historykiem! Jeśli chcesz ustalić, czym dokładnie jest to zagrożenie i jak je powstrzymać, daj mu raport. Będziemy potrzebować wszelkiej możliwej pomocy.$B$BZil mieszka w domu na drugim poziomie Dragu w Orgrimmarze.",
+        "ce9c6f6ba8f175f88230": "Ten raport... miałem już do czynienia z tymi bestiami. Fizzledowser mądrze postąpił, wysyłając go i ciebie do mnie.$B$BTe stworzenia szybko pochłoną pustynię Tanaris; należą do największych zagrożeń, z jakimi kiedykolwiek się zmierzymy. Zapamiętaj tę nazwę, $n: silithidy. Owady opisane tutaj to silithidy, narzędzia jednego z największych zagrożeń dla Hordy i Przymierza.$B$BGdybyśmy tylko wcześniej to dostrzegli.",
+        "e0c9565c96376d8b0693": "Przykro mi, nie znam cię... ale wygląda na to, że coś o mnie wiesz. W czym mogę pomóc? Masz coś dla mnie?"
+      },
       "summary": "Zanieś raport Zilzibinowi Drumlore'owi w Orgrimmarze.",
       "title": "Powstanie silithidów",
       "translationMetadata": {
@@ -268,6 +517,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "34c3cd955e2bc17470c0e3c19134414044abaa5793c7c2b35733d6410602e7c7"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -286,6 +550,11 @@
     },
     "ptBR": {
       "description": "Tá aqui o relatório. Quero que tu leve isso urgente pra alguém que manje pra valer desse tipo de coisa.\n\nConheço um estudioso troll, o Zilzibin Tamborleiro. Ele passou uma cara estudando formas de vida que só existem na ecologia de Azeroth. E, de quebra, ainda manja muito de história! Se tu quer alguém pra te ajudar a ver qualé dessa ameaça, e dar cabo dela, ele é o cara. Leva isso pra ele que a gente vai precisar de ajuda.\n\nZil mora numa casa no segundo andar do Bazar de Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Tá aqui o relatório. Quero que tu leve isso urgente pra alguém que manje pra valer desse tipo de coisa.\n\nConheço um estudioso troll, o Zilzibin Tamborleiro. Ele passou uma cara estudando formas de vida que só existem na ecologia de Azeroth. E, de quebra, ainda manja muito de história! Se tu quer alguém pra te ajudar a ver qualé dessa ameaça, e dar cabo dela, ele é o cara. Leva isso pra ele que a gente vai precisar de ajuda.\n\nZil mora numa casa no segundo andar do Bazar de Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "Esse relatório... Já dei de cara com essas feras. Secamolha foi sábio de me avisar e mandar tu aqui.\n\nNão demora muito e essas criaturas vão devorar o deserto de Tanaris. Pode crer que elas são uma ameaça sem tamanho. Pode gravar esse nome, $n: silitídeos. Esses insetos do relatório são silitídeos, peças importantes numa das maiores ameaças que tanto a Horda quanto a Aliança têm que encarar.\n\nQue dera eu tivesse sacado isso antes.",
+        "e0c9565c96376d8b0693": "Olha, não sei quem tu é, mas pelo jeito que as coisas estão, tu já ouviu falar de euzinho aqui. Diga, tá precisando de alguma coisa? Ou trouxe alguma coisa pra mim?"
+      },
       "summary": "Leve o relatório para Zilzibin Tamborleiro em Orgrimmar.",
       "title": "A ascensão dos silitídeos",
       "translationMetadata": {
@@ -294,6 +563,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -310,6 +597,11 @@
     },
     "ruRU": {
       "description": "Вот твой отчет. Прошу тебя, отнеси его кому-нибудь, сведущему в такого рода вопросах.\n\nЯ слышал про ученого-тролля по имени Зилзибин Барабанный Бой. Он посвятил много времени изучению форм жизни, встречающихся лишь в Азероте; он и историк заодно! Если ты хочешь, чтобы кто-то объяснил, что именно происходит и как это прекратить, обратись к нему. Нам любая помощь не помешает.\n\nЕго дом находится во втором ряду Волока в Оргриммаре.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Вот твой отчет. Прошу тебя, отнеси его кому-нибудь, сведущему в такого рода вопросах.\n\nЯ слышал про ученого-тролля по имени Зилзибин Барабанный Бой. Он посвятил много времени изучению форм жизни, встречающихся лишь в Азероте; он и историк заодно! Если ты хочешь, чтобы кто-то объяснил, что именно происходит и как это прекратить, обратись к нему. Нам любая помощь не помешает.\n\nЕго дом находится во втором ряду Волока в Оргриммаре.",
+        "ce9c6f6ba8f175f88230": "Что до твоего отчета... да, я уже встречался с этими тварями. Рудознатец правильно поступил, отправив это письмо и тебя ко мне.\n\nЭти существа мигом пожрут всю пустыню Танарис; они представляют собой одну из величайших опасностей, с которой только можно столкнуться. Знакомься, $N – это силитиды. Так зовутся странные насекомые, которые служат величайшему злу, грозящему и Орде, и Альянсу.\n\nЖаль, что нам не хватило ума понять это раньше.",
+        "e0c9565c96376d8b0693": "Прости, мы не знакомы... Но судя по всему, тебе приходилось слышать обо мне. Чем могу помочь? Ты мне что-то принес?"
+      },
       "summary": "Отнесите отчет Зилзибину Барабанному Бою в Оргриммар.",
       "title": "Восхождение силитидов",
       "translationMetadata": {
@@ -318,6 +610,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -334,6 +644,11 @@
     },
     "svSE": {
       "description": "Här är rapporten. Ta den till någon med praktisk kunskap om sådant här.\n\nJag känner trollforskaren Zilzibin Drumlore. Han har länge studerat livsformer unika för Azeroths ekologi och är dessutom historiker! Vill du ha hjälp att förstå och stoppa hotet ska du ge honom rapporten. Vi behöver all hjälp vi kan få.\n\nZil bor i ett hus på andra våningen av Drag i Orgrimmar.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Här är din rapport. Jag uppmanar dig att ta den till någon som har praktisk kunskap om sådant här.$B$BJag känner en trollärd vid namn Zilzibin Drumlore. Han har ägnat mycket tid åt att studera livsformer unika för Azeroths ekologi och är dessutom historiker! Om du vill ha hjälp att ta reda på vad hotet är och hur det stoppas, ge honom rapporten. Vi behöver all hjälp vi kan få.$B$BZil bor i ett hus på Dragens andra nivå i Orgrimmar.",
+        "ce9c6f6ba8f175f88230": "Den här rapporten... jag har mött dessa bestar förut. Fizzledowser gjorde klokt i att skicka den och dig till mig.$B$BDessa varelser kommer snabbt att sluka Tanarisöknen; de är ett av de största hot vi någonsin kommer att möta. Lär dig namnet, $n: silithid. Insekterna som nämns här är silithider och verktyg för ett av de största hoten mot både Horden och Alliansen.$B$BOm vi bara hade varit kloka nog att se det tidigare.",
+        "e0c9565c96376d8b0693": "Förlåt, jag känner dig inte... men det verkar som om du har hört talas om mig. Vad kan jag hjälpa dig med? Har du något åt mig?"
+      },
       "summary": "Ta rapporten till Zilzibin Drumlore i Orgrimmar.",
       "title": "Silithidernas uppgång",
       "translationMetadata": {
@@ -343,6 +658,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "34c3cd955e2bc17470c0e3c19134414044abaa5793c7c2b35733d6410602e7c7"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -361,6 +691,11 @@
     },
     "trTR": {
       "description": "İşte raporun. Bunu bu tür konularda işe yarar bilgisi olan birine götürmeni önemle tavsiye ederim.\n\nZilzibin Drumlore adında bir troll bilgin tanıyorum. Azeroth'un ekolojisine özgü yaşam biçimlerini incelemeye çok zaman ayırdı; üstelik bir de tarihçi! Bu tehdidin tam olarak ne olduğunu ve nasıl durdurulacağını çözmeye yardım edecek birini arıyorsan bu raporu ona ver. Bulabildiğimiz her türlü yardıma ihtiyacımız olacak.\n\nZil, Orgrimmar'daki Drag'in ikinci katında bir evde yaşıyor.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "İşte raporun. Bunu bu konularda deneyimi olan birine götürmeni öneririm.$B$BZilzibin Drumlore adında bir trol bilgin tanıyorum. Azeroth'un ekolojisine özgü yaşam biçimlerini incelemekle çok zaman geçirdi; üstelik tarihçidir! Bu tehdidin tam olarak ne olduğunu ve nasıl durdurulacağını anlamak istiyorsan raporu ona ver. Alabileceğimiz her yardıma ihtiyacımız olacak.$B$BZil, Orgrimmar'daki Drag'in ikinci katında bir evde yaşıyor.",
+        "ce9c6f6ba8f175f88230": "Bu rapor... bu yaratıklarla daha önce uğraştım. Fizzledowser bunu ve seni bana göndermekle akıllılık etmiş.$B$BBu yaratıklar Tanaris çölünü hızla tüketecek; karşılaşacağımız en büyük tehlikelerden biridirler. Bu adı öğren, $n: silithid. Burada söz edilen böcekler silithidlerdir ve hem Horde'un hem Alliance'ın karşılaştığı en büyük tehditlerden birinin araçlarıdır.$B$BKeşke bunu daha önce görebilecek kadar akıllı olsaydık.",
+        "e0c9565c96376d8b0693": "Üzgünüm, seni tanımıyorum... ama görünüşe göre sen beni duymuşsun. Sana nasıl yardım edebilirim? Benim için bir şey mi getirdin?"
+      },
       "summary": "Raporu Orgrimmar'daki Zilzibin Drumlore'a götür.",
       "title": "Silithidlerin Yükselişi",
       "translationMetadata": {
@@ -370,6 +705,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "34c3cd955e2bc17470c0e3c19134414044abaa5793c7c2b35733d6410602e7c7"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -388,6 +738,11 @@
     },
     "ukUA": {
       "description": "Ось твій звіт. Я раджу тобі передати цей звіт кому-небудь, хто має практичні знання у цій справі.\n\nЯ знаю троля-науковця, на ім'я Зілзібін Ударник. Він провів багато часу, вивчаючи форми життя, що є унікальними для екології Азероту, а ще він історик! Якщо ти хочеш, щоб хтось допоміг з'ясувати, що саме є цією загрозою, і, що ще важливіше, як зупинити її — передай йому звіт. Нам потрібна допомога.\n\nВостаннє я чув, що він знаходиться на другому ярусі Тракту, що в Орґріммарі.",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "Ось твій звіт. Раджу віднести його комусь, хто розуміється на таких справах.$B$BЯ знаю троля-вченого на ім'я Зілзібін Барабанознавець. Він багато часу вивчав форми життя, унікальні для Азероту, і до того ж історик! Якщо хочеш з'ясувати, що це за загроза і як її зупинити, передай звіт йому. Нам знадобиться вся можлива допомога.$B$BЗіл живе в будинку на другому рівні Драґу в Орґріммарі.",
+        "ce9c6f6ba8f175f88230": "Цей звіт... я вже мав справу з цими звірами. Фізлдаузер мудро вчинив, надіславши його і тебе до мене.$B$BЦі створіння швидко поглинуть пустелю Танаріс; вони є однією з найбільших загроз, з якими ми коли-небудь зіткнемося. Запам'ятай це ім'я, $n: силітиди. Згадані тут комахи — силітиди, знаряддя однієї з найбільших загроз для Орди й Альянсу.$B$BЯкби ж ми зрозуміли це раніше.",
+        "e0c9565c96376d8b0693": "Пробач, я тебе не знаю... але, схоже, ти щось про мене знаєш. Чим можу допомогти? Маєш щось для мене?"
+      },
       "summary": "Віднесіть звіт про дослідження комах Зілзібіну Ударнику в Орґріммар.",
       "title": "Нашестя силітидів",
       "translationMetadata": {
@@ -398,6 +753,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "34c3cd955e2bc17470c0e3c19134414044abaa5793c7c2b35733d6410602e7c7"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -418,6 +788,11 @@
     },
     "zhCN": {
       "description": "这是我要你去递送的报告，马上把它送到能够对其内容有深入了解的那些人的手中。\n\n我知道一个名叫基尔兹宾·鼓眼的巨魔学者，他致力于研究卡利姆多大陆上的那些与艾泽拉斯生态格格不入的生物形态；他简直是一本活的生物书！如果你想要知道我们面临的是怎样的威胁，以及如何解决这个威胁，那就把这份报告交给他吧，我们现在需要一切可以得到的帮助。\n\n基尔兹宾应该住在奥格瑞玛暗巷区的第二层。",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "这是我要你去递送的报告，马上把它送到能够对其内容有深入了解的那些人的手中。\n\n我知道一个名叫基尔兹宾·鼓眼的巨魔学者，他致力于研究卡利姆多大陆上的那些与艾泽拉斯生态格格不入的生物形态；他简直是一本活的生物书！如果你想要知道我们面临的是怎样的威胁，以及如何解决这个威胁，那就把这份报告交给他吧，我们现在需要一切可以得到的帮助。\n\n基尔兹宾应该住在奥格瑞玛暗巷区的第二层。",
+        "ce9c6f6ba8f175f88230": "这份报告……我以前确实对付过其中提到过的野兽。菲兹杜瑟很明智地让你把这份报告送到我这里来。\n\n这些生物会迅速吞噬塔纳利斯的沙漠，它们将会是我们有史以来所要面临的最大威胁。$N，记住这个名字:异种蠍。报告里提到的这些昆虫就是异种蠍，它们对部落和联盟来说都是一个巨大的威胁。\n\n除非我们能够早点意识到它的危害程度，否则後果不堪设想。\n",
+        "e0c9565c96376d8b0693": "很抱歉，我不认识你……但是看来你似乎对我已经有所了解了。我能帮你什麽忙吗?或者你有什麽东西要交给我?"
+      },
       "summary": "把报告带给奥格瑞玛的基尔兹宾·鼓眼。",
       "title": "异种蝎的威胁",
       "translationMetadata": {
@@ -426,6 +801,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -442,6 +835,11 @@
     },
     "zhTW": {
       "description": "這是我要你去送的報告，我需要你盡快把它送到能夠深入瞭解內容的某人手中。\n\n我知道有個名叫基爾茲賓·鼓眼的食人妖學者，他致力於研究卡林多大陸上的那些與艾澤拉斯生態格格不入的生物形態；他簡直是一本活的生物百科！如果你想要知道我們面臨的是怎樣的威脅，以及如何解決這個威脅，那就把這份報告交給他吧，我們現在需要一切可以得到的幫助。\n\n基爾茲賓應該住在奧格瑪暗巷區的第二層。",
+      "dialogue": {
+        "6dbb14f7aec539c219bd": "這是我要你去遞送的報告，馬上把它送到能夠對其內容有深入瞭解的那些人的手中。\n\n我知道一個名叫基爾茲賓·鼓眼的巨魔學者，他致力於研究卡利姆多大陸上的那些與艾澤拉斯生態格格不入的生物形態；他簡直是一本活的生物書！如果你想要知道我們面臨的是怎樣的威脅，以及如何解決這個威脅，那就把這份報告交給他吧，我們現在需要一切可以得到的説明。\n\n基爾茲賓應該住在奧格瑞瑪暗巷區的第二層。",
+        "ce9c6f6ba8f175f88230": "這份報告……我以前確實對付過其中提到過的野獸。菲茲杜瑟很明智地讓你把這份報告送到我這裡來。\n\n這些生物會迅速吞噬塔納利斯的沙漠，它們將會是我們有史以來所要面臨的最大威脅。$N，記住這個名字:異種蠍。報告裡提到的這些昆蟲就是異種蠍，它們對部落和聯盟來說都是一個巨大的威脅。\n\n除非我們能夠早點意識到它的危害程度，否則後果不堪設想。",
+        "e0c9565c96376d8b0693": "很抱歉，我不認識你……但是看來你似乎對我已經有所瞭解了。我能幫你什麼忙嗎?或者你有什麼東西要交給我?"
+      },
       "summary": "把報告帶給奧格瑪的基爾茲賓·鼓眼。",
       "title": "異種蠍的威脅",
       "translationMetadata": {
@@ -450,6 +848,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.6dbb14f7aec539c219bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.ce9c6f6ba8f175f88230": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.e0c9565c96376d8b0693": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

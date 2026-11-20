@@ -20,9 +20,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "149b14614ba26e29d9c6": {
+      "lineId": "q:342:progress",
+      "npcId": 716,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "5ff8aa0a7442a84c1e1e": {
+      "lineId": "q:342:complete",
+      "npcId": 716,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "d878cb96e2ae1da99cf4": {
+      "lineId": "q:342:accept",
+      "npcId": 716,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Ach, čtvrtá kapitola; velké finále! A to byl konec!\n\nChybí nám jen tři stránky do téhle kapitoly. Potřebujeme stránky číslo dvacet pět, dvacet šest a dvacet sedm, abychom čtvrtou kapitolu zase dali dohromady.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "K dokončení kapitoly IV potřebujeme jen tři stránky, $N. Máš už stránky 25, 26 nebo 27?",
+        "5ff8aa0a7442a84c1e1e": "Skvělé! Kapitola IV je teď kompletní!",
+        "d878cb96e2ae1da99cf4": "Ach, kapitola IV, velké finále! A jaký to byl konec! $b$bK této kapitole nám chybí už jen tři stránky. Potřebujeme stránky 25, 26 a 27, abychom kapitolu IV znovu sestavili."
+      },
       "summary": "Dones stránky 25, 26 a 27 Nesingwaryho knihy The Green Hills of Stranglethorn Barnilu Stonepotovi, aby byla dokončena Kapitola IV.",
       "title": "Kapitola IV",
       "translationMetadata": {
@@ -32,6 +60,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -52,6 +95,11 @@
     },
     "daDK": {
       "description": "Ah, kapitel IV; den store finale! Og sikke en afslutning!\n\nVi mangler kun tre sider til dette kapitel. Vi skal bruge siderne 25, 26 og 27 for at samle kapitel IV igen.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Vi mangler kun tre sider for at færdiggøre kapitel IV, $N. Har du fundet side 25, 26 eller 27?",
+        "5ff8aa0a7442a84c1e1e": "Fremragende! Nu er kapitel IV klar!",
+        "d878cb96e2ae1da99cf4": "Ah, kapitel IV, den store finale! Og sikke en afslutning! $b$bVi mangler kun tre sider til dette kapitel. Vi skal bruge side 25, 26 og 27 for at samle kapitel IV igen."
+      },
       "summary": "Bring siderne 25, 26 og 27 af Nesingwarys The Green Hills of Stranglethorn til Barnil Stonepot for at fuldføre kapitel IV.",
       "title": "Kapitel IV",
       "translationMetadata": {
@@ -61,6 +109,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "026cbe9019ab19a4453ff2bb9a12c377d0d992d3b5a210473e799606f1fc449d"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -79,6 +142,11 @@
     },
     "deDE": {
       "description": "Ah, Kapitel IV; Das große Finale! Und was für ein Ende es war! \n\nUns fehlen nur drei Seiten aus diesem Kapitel. Wir brauchen die Seiten 25, 26 und 27, um Kapitel IV wieder zusammenzusetzen.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "$N, wir brauchen nur drei Seiten, um Kapitel IV fertig zu stellen. Habt Ihr mittlerweile die Seiten 25, 26 oder 27?",
+        "5ff8aa0a7442a84c1e1e": "Phantastisch! Jetzt haben wir Kapitel IV fertig!",
+        "d878cb96e2ae1da99cf4": "Ah, Kapitel IV; Das große Finale! Und was für ein Ende es war! \n\nUns fehlen nur drei Seiten aus diesem Kapitel. Wir brauchen die Seiten 25, 26 und 27, um Kapitel IV wieder zusammenzusetzen."
+      },
       "summary": "Bringt Barnil Stonepot die Seiten 25, 26 und 27 von Nesingwarys \"Die Grünen Hügel des Schlingendorntals\", um Kapitel IV zu vervollständigen.",
       "title": "Kapitel IV",
       "translationMetadata": {
@@ -87,6 +155,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -103,6 +189,11 @@
     },
     "enUS": {
       "description": "Ah Chapter IV; the big finale!  And what an ending it was! \n\nWe are only missing three pages for this chapter.  We need pages 25, 26 and 27 to put Chapter IV back together.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "We just need three pages to finish off Chapter IV, $N.  Do you have pages 25, 26 or 27 yet?",
+        "5ff8aa0a7442a84c1e1e": "Superb!  We now have Chapter IV ready to go!",
+        "d878cb96e2ae1da99cf4": "Ah Chapter IV; the big finale!  And what an ending it was! $b$bWe are only missing three pages for this chapter.  We need pages 25, 26 and 27 to put Chapter IV back together."
+      },
       "summary": "Bring pages 25, 26, and 27 of Nesingwary's The Green Hills of Stranglethorn to Barnil Stonepot in order to complete Chapter IV.",
       "title": "Chapter IV",
       "translationMetadata": {
@@ -111,6 +202,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -128,6 +237,11 @@
     },
     "esES": {
       "description": "Ah, el capítulo IV, ¡el gran final! ¡Y menudo final! \n\nSolo nos faltan tres páginas de este capítulo. Necesitamos las páginas 25, 26 y 27 para finalizar el capítulo IV.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Solo necesitamos tres páginas para acabar el capítulo IV, $n. ¿Tienes las páginas 25, 26 o 27?",
+        "5ff8aa0a7442a84c1e1e": "¡Excelente! ¡Ya tenemos el capítulo IV!",
+        "d878cb96e2ae1da99cf4": "Ah, el capítulo IV, ¡el gran final! ¡Y menudo final! \n\nSolo nos faltan tres páginas de este capítulo. Necesitamos las páginas 25, 26 y 27 para finalizar el capítulo IV."
+      },
       "summary": "Lleva las páginas 25, 26, y 27 de Las verdes colinas de Tuercespina de Decautela a Barnil Jarropetra para completar el capítulo IV.",
       "title": "Capítulo IV",
       "translationMetadata": {
@@ -136,6 +250,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -152,6 +284,11 @@
     },
     "esMX": {
       "description": "Ah, el capítulo IV, ¡el gran final! ¡Y menudo final!\n\nSolo nos faltan tres páginas de este capítulo. Necesitamos las páginas 25, 26 y 27 para finalizar el capítulo IV.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Solo necesitamos tres páginas para acabar el capítulo IV, $n. ¿Tienes las páginas 25, 26 o 27?",
+        "5ff8aa0a7442a84c1e1e": "¡Excelente! ¡Ya tenemos el capítulo IV!",
+        "d878cb96e2ae1da99cf4": "Ah, el capítulo IV, ¡el gran final! ¡Y menudo final!\n\nSolo nos faltan tres páginas de este capítulo. Necesitamos las páginas 25, 26 y 27 para finalizar el capítulo IV."
+      },
       "summary": "Lleva las páginas 25, 26, y 27 de Las verdes colinas de Tuercespina de Nesingwary a Barnil Jarropetra para completar el capítulo IV.",
       "title": "Capítulo IV",
       "translationMetadata": {
@@ -160,6 +297,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -176,6 +331,11 @@
     },
     "frFR": {
       "description": "Ah Le Chapitre IV : le grand final ! Et quel final !\n\nIl ne nous manque plus que trois pages, les 25, 26 et 27, pour compléter le Chapitre IV.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Il ne nous manque plus que trois pages pour finir le Chapitre IV, $N. Avez-vous déjà les pages 25, 26 et 27 ?",
+        "5ff8aa0a7442a84c1e1e": "Magnifique ! Le Chapitre IV est maintenant prêt !",
+        "d878cb96e2ae1da99cf4": "Ah Le Chapitre IV : le grand final ! Et quel final !\n\nIl ne nous manque plus que trois pages, les 25, 26 et 27, pour compléter le Chapitre IV."
+      },
       "summary": "Rapporter les pages 25, 26 et 27 des « Vertes collines de Strangleronce » de Nesingwary à Barnil Stonepot pour achever le Chapitre IV.",
       "title": "Chapitre IV",
       "translationMetadata": {
@@ -184,6 +344,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -200,6 +378,11 @@
     },
     "hrHR": {
       "description": "Ah, četvrto poglavlje; veliko finale! I kakav je to završetak bio!\n\nZa ovo poglavlje nedostaju nam samo tri stranice. Trebamo stranice 25, 26 i 27 da ponovno sastavimo četvrto poglavlje.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Trebaju nam još samo tri stranice da dovršimo četvrto poglavlje, $N. Imaš li već stranice 25, 26 ili 27?",
+        "5ff8aa0a7442a84c1e1e": "Izvrsno! Četvrto je poglavlje sada spremno!",
+        "d878cb96e2ae1da99cf4": "Ah, četvrto poglavlje, veliko finale! Kakav je to završetak bio! $b$bNedostaju nam samo tri stranice ovog poglavlja. Trebaju nam stranice 25, 26 i 27 kako bismo ga ponovno sastavili."
+      },
       "summary": "Donesi stranice 25, 26 i 27 Nesingwaryjevih Zelenih brda Stranglethorna Barnilu Stonepotu da dovršiš četvrto poglavlje.",
       "title": "Poglavlje IV",
       "translationMetadata": {
@@ -209,6 +392,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "026cbe9019ab19a4453ff2bb9a12c377d0d992d3b5a210473e799606f1fc449d"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -227,6 +425,11 @@
     },
     "itIT": {
       "description": "Ah, il Capitolo IV: il gran finale! E che conclusione!\n\nCi mancano soltanto tre pagine di questo capitolo. Servono le pagine 25, 26 e 27 per ricomporre il Capitolo IV.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Ci servono solo tre pagine per finire il Capitolo IV, $N. Hai già le pagine 25, 26 o 27?",
+        "5ff8aa0a7442a84c1e1e": "Magnifico! Ora il Capitolo IV è pronto!",
+        "d878cb96e2ae1da99cf4": "Ah, il Capitolo IV: il gran finale! E che finale è stato!\n\nCi mancano solo tre pagine per questo capitolo. Ci servono le pagine 25, 26 e 27 per ricomporre il Capitolo IV."
+      },
       "summary": "Porta le pagine 25, 26 e 27 de \"Le verdi colline di Stranglethorn\" di Nesingwary a Barnil Stonepot per completare il capitolo IV.",
       "title": "Capitolo IV",
       "translationMetadata": {
@@ -236,6 +439,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "026cbe9019ab19a4453ff2bb9a12c377d0d992d3b5a210473e799606f1fc449d"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -254,6 +475,11 @@
     },
     "koKR": {
       "description": "아, 대미를 장식하는 4장! 정말 멋진 결말이었답니다.\n\n이 장의 원고는 단 세 쪽이 빠져 있습니다. 25, 26, 27 쪽만 찾으면 4장의 원고를 모두 되찾게 됩니다.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "세 쪽만 있으면 4장을 완성할 수 있습니다. 25, 26, 27 쪽을 찾으셨나요?",
+        "5ff8aa0a7442a84c1e1e": "정말 훌륭합니다! 이제 4장의 원고를 모두 모았군요!",
+        "d878cb96e2ae1da99cf4": "아, 대미를 장식하는 4장! 정말 멋진 결말이었답니다.\n\n이 장의 원고는 단 세 쪽이 빠져 있습니다. 25, 26, 27 쪽만 찾으면 4장의 원고를 모두 되찾게 됩니다."
+      },
       "summary": "바닐 스톤팟이 네싱워리의 소설 가시덤불 골짜기의 푸른 언덕의 4장을 완성할 수 있도록 25, 26, 27 쪽을 가져가야 합니다.",
       "title": "제 4 장",
       "translationMetadata": {
@@ -262,6 +488,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -278,6 +522,11 @@
     },
     "plPL": {
       "description": "Ach, rozdział IV, wielki finał! I cóż to było za zakończenie!\n\nDo tego rozdziału brakuje nam tylko trzech stron. Potrzebujemy stron 25, 26 i 27, żeby ponownie złożyć rozdział IV.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Potrzebujemy tylko trzech stron, by ukończyć rozdział IV, $N. Masz już strony 25, 26 lub 27?",
+        "5ff8aa0a7442a84c1e1e": "Wspaniale! Rozdział IV jest już gotowy!",
+        "d878cb96e2ae1da99cf4": "Ach, rozdział IV, wielki finał! Cóż to było za zakończenie! $b$bBrakuje nam tylko trzech stron tego rozdziału. Potrzebujemy stron 25, 26 i 27, aby go skompletować."
+      },
       "summary": "Przynieś Barnilowi Stonepotowi strony 25, 26 i 27 „Zielonych wzgórz Stranglethorn” Nesingwary'ego, aby uzupełnić rozdział IV.",
       "title": "Rozdział IV",
       "translationMetadata": {
@@ -287,6 +536,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "026cbe9019ab19a4453ff2bb9a12c377d0d992d3b5a210473e799606f1fc449d"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -305,6 +569,11 @@
     },
     "ptBR": {
       "description": "Barbaridade, Capítulo IV; o grande final! E que final! \n\nFaltam apenas três páginas para este capítulo, tchê. Precisamos das páginas 25, 26 e 27 para atrelar o Capítulo IV.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Bah, nós só precisamos de três páginas para completar o Capítulo IV, $N. Tu já conseguiste as páginas 25, 26 e 27, guri?",
+        "5ff8aa0a7442a84c1e1e": "Trilegal! Agora completamos o Capítulo IV!",
+        "d878cb96e2ae1da99cf4": "Barbaridade, Capítulo IV; o grande final! E que final! \n\nFaltam apenas três páginas para este capítulo, tchê. Precisamos das páginas 25, 26 e 27 para atrelar o Capítulo IV."
+      },
       "summary": "Leve as páginas 25, 26 e 27 de Grande Espinhaço: Veredas, de Rosarães, até Eucunha de Clides para completar o Capítulo IV.",
       "title": "Capítulo IV",
       "translationMetadata": {
@@ -313,6 +582,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -329,6 +616,11 @@
     },
     "ruRU": {
       "description": "А, Глава IV, захватывающий финал! И как она закончилась! \n\nНам не хватает всего лишь трех страниц этой  главы. А именно – 25, 26 и 27. Стоит найти их – и последняя глава готова.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Нам всего лишь нужны три страницы, чтобы закончить четвертую главу, $N. У тебя есть 25, 26 и 27 страницы?",
+        "5ff8aa0a7442a84c1e1e": "Превосходно! Теперь у нас собрана Глава IV!",
+        "d878cb96e2ae1da99cf4": "А, Глава IV, захватывающий финал! И как она закончилась! \n\nНам не хватает всего лишь трех страниц этой  главы. А именно – 25, 26 и 27. Стоит найти их – и последняя глава готова."
+      },
       "summary": "Принесите 25, 26 и 27 страницы книги \"Зеленые холмы Тернистой долины\" Барнилу Каменному Кубку, чтобы собрать всю четвертую главу.",
       "title": "Глава IV",
       "translationMetadata": {
@@ -337,6 +629,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -353,6 +663,11 @@
     },
     "svSE": {
       "description": "Ah, kapitel IV, den stora finalen! Och vilket slut det var!\n\nVi saknar bara tre sidor till det här kapitlet. Vi behöver sidorna 25, 26 och 27 för att sätta ihop kapitel IV igen.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Vi behöver bara tre sidor till för att färdigställa kapitel IV, $N. Har du sida 25, 26 eller 27 än?",
+        "5ff8aa0a7442a84c1e1e": "Utmärkt! Nu är kapitel IV färdigt!",
+        "d878cb96e2ae1da99cf4": "Ah, kapitel IV, den stora finalen! Och vilket slut det var! $b$bVi saknar bara tre sidor till detta kapitel. Vi behöver sida 25, 26 och 27 för att sätta ihop kapitel IV igen."
+      },
       "summary": "Ta med sidorna 25, 26 och 27 ur Nesingwarys Stranglethorns gröna kullar till Barnil Stonepot för att färdigställa kapitel IV.",
       "title": "Kapitel IV",
       "translationMetadata": {
@@ -362,6 +677,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "026cbe9019ab19a4453ff2bb9a12c377d0d992d3b5a210473e799606f1fc449d"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -380,6 +710,11 @@
     },
     "trTR": {
       "description": "Ah, Bölüm IV; büyük final! Hem de ne finaldi!\n\nBu bölüm için yalnızca üç sayfamız eksik. Bölüm IV'ü yeniden birleştirmek için 25, 26 ve 27 numaralı sayfalar gerekiyor.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "IV. Bölüm'ü tamamlamak için yalnızca üç sayfaya ihtiyacımız var, $N. 25, 26 veya 27. sayfaları buldun mu?",
+        "5ff8aa0a7442a84c1e1e": "Harika! IV. Bölüm artık hazır!",
+        "d878cb96e2ae1da99cf4": "Ah, IV. Bölüm, büyük final! Ne sondu ama! $b$bBu bölüm için yalnızca üç sayfamız eksik. IV. Bölüm'ü tamamlamak için 25, 26 ve 27. sayfalara ihtiyacımız var."
+      },
       "summary": "Bölüm IV'ü tamamlamak için Nesingwary'nin Stranglethorn'un Yeşil Tepeleri eserinin 25, 26 ve 27 numaralı sayfalarını Barnil Stonepot'a getir.",
       "title": "Bölüm IV",
       "translationMetadata": {
@@ -389,6 +724,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "026cbe9019ab19a4453ff2bb9a12c377d0d992d3b5a210473e799606f1fc449d"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -407,6 +757,11 @@
     },
     "ukUA": {
       "description": "Ех, розділ IV, великий фінал! Яка ж чудова кінцівка!\n\nНам не вистачає лише трьох сторінок для цього розділу. Потрібні сторінки 25, 26 і 27, щоб зібрати розділ IV в одне ціле.",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "Нам бракує лише трьох сторінок, щоб завершити розділ IV, $N. У тебе вже є сторінки 25, 26 або 27?",
+        "5ff8aa0a7442a84c1e1e": "Чудово! Тепер розділ IV готовий!",
+        "d878cb96e2ae1da99cf4": "Ах, розділ IV, великий фінал! Який же то був фінал! $b$bНам бракує лише трьох сторінок цього розділу. Потрібні сторінки 25, 26 і 27, щоб зібрати розділ IV докупи."
+      },
       "summary": "Принесіть 25, 26 і 27 сторінки книги Ернінґвея \"Зелені пагорби Тернистої долини\" Барнілу Камнекухлю, щоб зібрати весь четвертий розділ.",
       "title": "Розділ IV",
       "translationMetadata": {
@@ -417,6 +772,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "026cbe9019ab19a4453ff2bb9a12c377d0d992d3b5a210473e799606f1fc449d"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -437,6 +807,11 @@
     },
     "zhCN": {
       "description": "啊，第四章，大结局！多么精彩的结局啊！\n\n第四章里我们只丢了3页，也就是第25页，第26页和第27页。",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "我们只需要三页就能完成完整的第四章，$N。你找到第25页，第26页和第27页了吗?",
+        "5ff8aa0a7442a84c1e1e": "好极了!我们现在有了完整的第四章了!\n",
+        "d878cb96e2ae1da99cf4": "啊，第四章，大结局！多么精彩的结局啊！\n\n第四章里我们只丢了3页，也就是第25页，第26页和第27页。"
+      },
       "summary": "将奈辛瓦里的小说《荆棘谷的青山》的第25页，第26页和第27页带给巴尼尔·石罐以凑齐第四章。",
       "title": "荆棘谷的青山 - 第四章",
       "translationMetadata": {
@@ -445,6 +820,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -461,6 +854,11 @@
     },
     "zhTW": {
       "description": "啊，第四章，大結局！多麼精彩的結局啊！\n\n第四章裡我們只丟了3頁，也就是第25頁，第26頁和第27頁。",
+      "dialogue": {
+        "149b14614ba26e29d9c6": "我們只需要三頁就能完成完整的第四章，$N。你找到第25頁，第26頁和第27頁了嗎?",
+        "5ff8aa0a7442a84c1e1e": "好極了!我們現在有了完整的第四章了!",
+        "d878cb96e2ae1da99cf4": "啊，第四章，大結局！多麼精彩的結局啊！\n\n第四章裡我們只丟了3頁，也就是第25頁，第26頁和第27頁。"
+      },
       "summary": "將奈辛瓦里的小說《荊棘谷的青山》的第25頁，第26頁和第27頁帶給巴尼爾·石罐以湊齊第四章。",
       "title": "荊棘谷的青山 - 第四章",
       "translationMetadata": {
@@ -469,6 +867,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.149b14614ba26e29d9c6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.5ff8aa0a7442a84c1e1e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d878cb96e2ae1da99cf4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

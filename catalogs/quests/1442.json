@@ -1,7 +1,35 @@
 {
+  "dialogueContexts": {
+    "4bf3dfcbcbacc3790802": {
+      "lineId": "q:1442:accept",
+      "npcId": 3649,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "4febbb34a14e088aa946": {
+      "lineId": "q:1442:progress",
+      "npcId": 3649,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "87eab500ae9b33c53d0e": {
+      "lineId": "q:1442:complete",
+      "npcId": 3649,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Zdravím, {name}. Co mohu udělat pro někoho, kdo kráčí po svaté cestě?\n\nAch ano, kovář Stilwell... kdysi dávno. Pamatuji si ho dobře, přestože jsem jeho jméno už nějakou dobu neslyšel.\n\nNikdy na mě nepůsobil jako drzý člověk, takže mohu jen předpokládat, že jeho touha po drahokamu Kor má ušlechtilý důvod.\n\nPokud opravdu chceš jeden z těch drahokamů, musíš na severozápad Ashenvale. Ve starobylých troskách tam najdeš Blackfathom Deeps. Nagy, které drahokamy stále používají, jsou dole v hlubinách. Nechoď sám, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Zdravím tě, $N. Co mohu udělat pro někoho, kdo kráčí svatou cestou?$B$BAch ano, kovář Stilwell... z dávných dob. Dobře si ho pamatuji, ačkoli jsem jeho jméno dlouho neslyšel.$B$BNikdy mi nepřipadal drzý, a tak předpokládám, že jeho touha po drahokamu Kor je ušlechtilá.$B$BJestli ho opravdu chceš, vydej se na severozápad Ashenvale. Ve starobylých ruinách najdeš Blackfathom Deeps. Nagy, které drahokamy stále používají, jsou dole. Nechoď sám, $c.",
+        "4febbb34a14e088aa946": "Někomu, kdo nekráčí svatou cestou, bych při dotazu na drahokam Kor věřil méně. Tvému druhu věřím víc než některým svým příbuzným. Nesoudím celý tvůj řád podle jednoho padlého člena.",
+        "87eab500ae9b33c53d0e": "To je opravdu drahokam, který Stilwell hledá, ale než mu ho odneseš, musí být očištěn od zkaženosti. Čarodějnice nag ho sice naplňují mocí, ale zlou.$B$BŘekni Stilwellovi, že jeho moc zůstala nedotčena a měla by dobře posloužit při jeho rituálu.$B$BDoufám, že víš, co děláš, $C. Toto není obyčejný předmět."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -18,6 +46,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cae9a6062659be743178b82c695ba501f9d5b9ce5470160328b8e60aded5d7e1"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +86,11 @@
     },
     "daDK": {
       "description": "Vær hilset, {name}. Hvad kan jeg gøre for en, der følger en hellig vej?\n\nAh ja, Stilwell, smeden... fra for længe siden. Jeg husker ham godt, selvom jeg ikke har hørt hans navn i nogen tid.\n\nHan slog mig aldrig som en uforskammet mand, så jeg kan kun antage, at hans ønske om en Kor-ædelsten er ædelt.\n\nHvis du virkelig ønsker en af ædelstenene, må du tage til det nordvestlige Ashenvale. Der finder du Blackfathom Deeps i nogle gamle ruiner. Nagaerne, der stadig bruger ædelstenene, er dernede. Gå ikke alene, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Vær hilset, $N. Hvad kan jeg gøre for en, der følger en hellig vej?$B$BAh ja, smeden Stilwell... fra gamle dage. Jeg husker ham godt, selv om jeg ikke har hørt hans navn længe.$B$BHan slog mig aldrig som en fræk mand, så jeg antager, at hans ønske om en Kor-sten er ædelt.$B$BHvis du virkelig vil have en, skal du til det nordvestlige Ashenvale. I gamle ruiner finder du Blackfathom Deeps. Nagaerne, der stadig bruger stenene, er dernede. Gå ikke alene, $c.",
+        "4febbb34a14e088aa946": "Jeg ville stole mindre på en uden for den hellige vej, der spurgte efter en Kor-sten. Men jeg stoler mere på din slags end nogle af mine egne. Jeg dømmer ikke hele din orden efter én falden persons handlinger.",
+        "87eab500ae9b33c53d0e": "Det er stenen, Stilwell ønsker, men før du giver ham den, må den renses for fordærv. Nagaheksene fylder ganske vist stenene med kraft, men af deres egen onde slags.$B$BFortæl Stilwell, at dens kraft er intakt og bør virke i det ritual, han ønsker.$B$BJeg håber, du ved, hvad du gør, $C. Det er ikke en almindelig genstand."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +107,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cae9a6062659be743178b82c695ba501f9d5b9ce5470160328b8e60aded5d7e1"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +145,11 @@
     },
     "deDE": {
       "description": "Seid gegrüßt, {name}. Was kann ich für einen tun, der dem heiligen Weg folgt?\n\nAh ja, Stilwell, der Schmied... das war vor langer Zeit. Ich erinnere mich gut an ihn, doch ich habe seinen Namen schon eine ganze Weile nicht mehr gehört.\n\nEr schien mir nie ein habgieriger Mann zu sein, daher kann ich nur davon ausgehen, dass sein Wunsch nach einem Koredelstein edle Motive hat.\n\nWenn Ihr wirklich so einen Edelstein möchtet, dann müsst Ihr in den Nordwesten von Ashenvale. Dort findet Ihr die Blackfathom-Tiefe mit einigen alten Ruinen. Die Naga, die diese Edelsteine noch immer benutzen, sind dort unten. Geht nicht allein, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Seid gegrüßt, $N. Was kann ich für einen tun, der dem heiligen Weg folgt?\n\nAh ja, Stilwell, der Schmied... das war vor langer Zeit. Ich erinnere mich gut an ihn, doch ich habe seinen Namen schon eine ganze Weile nicht mehr gehört.\n\nEr schien mir nie ein habgieriger Mann zu sein, daher kann ich nur davon ausgehen, dass sein Wunsch nach einem Kor-Edelstein edle Motive hat.\n\nWenn Ihr wirklich so einen Edelstein möchtet, dann müsst Ihr in den Nordwesten von Ashenvale. Dort findet Ihr die Blackfathom-Tiefe mit einigen alten Ruinen. Die Naga, die diese Edelsteine noch immer benutzen, sind dort unten. Geht nicht allein, $C.",
+        "4febbb34a14e088aa946": "Bei einem, der nicht dem heiligen Weg folgt, wäre ich nicht so vertrauensselig, wenn er nach einem Kor-Edelstein fragen würde. Aber ich traue Euresgleichen fast mehr als meiner Art. Ich beurteile nicht Euren ganzen Orden nach den Taten eines gefallenen Mitglieds. ",
+        "87eab500ae9b33c53d0e": "Das ist wahrhaftig der Edelstein, den Stilwell begehrt, doch ehe ich zulassen kann, dass Ihr ihn zu ihm bringt, muss er von Verderbnis geläutert werden - die Frauen der Naga stärken die Edelsteine mit Macht, das stimmt, aber mit ihrer eigenen bösen Macht. \n \n Lasst Stilwell wissen, dass die Macht unversehrt ist und bei jedem Ritual, das er durchführen möchte, funktionieren sollte. \n \n Ich hoffe nur, Ihr wisst, was Ihr tut, $C, es ist kein einfacher Gegenstand, den Ihr da besitzt. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +165,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +205,11 @@
     },
     "enUS": {
       "description": "Greetings, {name}. What can I do for one who follows a holy path?\n\nAh, yes, Stilwell, the blacksmith... from long ago. I remember him well, though, I have not heard his name in some time.\n\nHe never struck me as an impudent man, so I can only assume his desire for a Kor gem is noble.\n\nIf you truly wish for one of the gems, then you must head to the northwest of Ashenvale. You will find Blackfathom Deeps there within some ancient ruins. The naga who still use the gems are down below. Do not go alone, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Greetings, $N. What can I do for one who follows a holy path?$B$BAh, yes, Stilwell, the blacksmith... from long ago. I remember him well, though, I have not heard his name in some time.$B$BHe never struck me as an impudent man, so I can only assume his desire for a Kor gem is noble.$B$BIf you truly wish for one of the gems, then you must head to the northwest of Ashenvale. You will find Blackfathom Deeps there within some ancient ruins. The naga who still use the gems are down below. Do not go alone, $c.",
+        "4febbb34a14e088aa946": "I would be less trustful of one not on a holy path if they came asking about a Kor gem. But I trust your kind more than some of my kin. I do not judge your entire order based on the actions of just one of your fallen kind.",
+        "87eab500ae9b33c53d0e": "This is indeed the gem Stilwell desires, but before I can allow you to bring it to him, it must be purified of corruption--the naga wenches imbue the gems with power, that much is true, but of their own, evil kind.$B$BLet Stilwell know that its power is intact, and it should work well for whatever ritual he wishes it to be part of.$B$BI hope you know what you're doing, $C, this is no simple item you possess."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +225,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -156,6 +265,11 @@
     },
     "esES": {
       "description": "Saludos, {name}. ¿Cómo puedo ayudar a quien sigue una senda sagrada?\n\nAh, sí, Fontana, el herrero... Cuánto tiempo. Lo recuerdo bien, aunque hacía tiempo que no oía hablar de él.\n\nNo lo tengo por avaricioso, luego su deseo de tener una gema Kor solo puede tener un motivo noble.\n\nPara encontrar una de esas gemas tendrás que ir hacia el noroeste de Vallefresno. Allí encontrarás unas ruinas antiguas y las Cavernas de Brazanegra. Allí viven los nagas que siguen usando esas gemas. No vayas por tu cuenta, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Saludos, $N. ¿Cómo puedo ayudar a quien sigue una senda sagrada?\n\nAh, sí, Fontana, el herrero... Cuánto tiempo. Lo recuerdo bien, aunque hacía tiempo que no oía hablar de él.\n\nNo lo tengo por avaricioso, luego su deseo de tener una gema Kor solo puede tener un motivo noble.\n\nPara encontrar una de esas gemas tendrás que ir hacia el noroeste de Vallefresno. Allí encontrarás unas ruinas antiguas y las Cavernas Anegadas. Allí viven los nagas que siguen usando esas gemas. No vayas por tu cuenta, $c.",
+        "4febbb34a14e088aa946": "Normalmente desconfío de quien venga buscando una gema Kor. Pero confío más en tu gente que en la mía.",
+        "87eab500ae9b33c53d0e": "De hecho, esta es la gema que Stilwell desea, pero antes de que pueda permitirte que se la lleves, debe estar purificada de la corrupción: las mozas naga imbuyen las gemas con poder, eso es cierto, pero de su propia clase maligna.\n\n Hágale saber a Stilwell que su poder está intacto y que debería funcionar bien para cualquier ritual del que desee que forme parte.\n\n Espero que sepas lo que estás haciendo, $C, este no es un simple artículo que posees."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +285,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -193,6 +325,11 @@
     },
     "esMX": {
       "description": "Saludos, {name}. ¿Cómo puedo ayudar a quien sigue una senda sagrada?\n\nAh, sí, Fontana, el herrero... Cuánto tiempo. Lo recuerdo bien, aunque hacía tiempo que no oía hablar de él.\n\nNo lo tengo por avaricioso, luego su deseo de tener una gema Kor solo puede tener un motivo noble.\n\nPara encontrar una de esas gemas tendrás que ir hacia el noroeste de Vallefresno. Allí encontrarás unas ruinas antiguas y las Cavernas de Brazanegra. Allí viven los nagas que siguen usando esas gemas. No vayas por tu cuenta, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Saludos, $n. ¿Cómo puedo ayudar a quien sigue una senda sagrada?\n\nAh, sí, Fontana, el herrero... Cuánto tiempo. Lo recuerdo bien, aunque hacía tiempo que no oía hablar de él.\n\nNo lo tengo por avaricioso, luego su deseo de tener una gema Kor solo puede tener un motivo noble.\n\nPara encontrar una de esas gemas tendrás que ir hacia el noroeste de Vallefresno. Allí encontrarás unas ruinas antiguas y las Cavernas de Brazanegra. Allí viven los nagas que siguen usando esas gemas. No vayas por tu cuenta, $c.",
+        "4febbb34a14e088aa946": "Confiaría menos en alguien que no esté en un camino sagrado si vinieran a preguntar por una gema Kor. Pero confío en los de tu especie más que en algunos de los míos. No juzgo toda su orden basándome en las acciones de solo uno de los caídos.",
+        "87eab500ae9b33c53d0e": "Ésta es, de hecho, la gema que Fontana desea, pero antes de que pueda entregársela, debe purificarse de la corrupción: las mujeres naga imbuyen las gemas con poder, eso es cierto, pero de su propia clase malvada.\n\nHazle saber a Fontana que su poder está intacto y que debería funcionar bien para cualquier ritual del que desee que forme parte.\n\nEspero que sepas lo que estás haciendo, $c, esta gema no es un simple objeto."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +345,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -230,6 +385,11 @@
     },
     "frFR": {
       "description": "Salutations, {name}. Que puis-je faire pour quelqu'un qui suit la voie sacrée ?\n\nAh oui ! Morpuits, le forgeron... d'il y a longtemps. Je me souviens bien de lui, mais cela fait quelque temps que je n'ai pas entendu parler de lui.\n\nIl ne m'a jamais paru impudent, aussi je ne peux que supposer que son désir d'une gemme de Kor est noble.\n\nSi vous souhaitez réellement l'une de ces gemmes, alors vous devez vous diriger vers le nord-ouest d'Orneval. Vous y trouverez les Profondeurs de Brassenoire à l'intérieur de ruines anciennes. Les nagas qui utilisent toujours ces gemmes se trouvent en bas. Ne partez pas seul, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Salutations, $n. Que puis-je faire pour quelqu'un qui suit la voie sacrée ?\n\nAh oui ! Stilwell, le forgeron… d'il y a longtemps. Je me souviens bien de lui, mais cela fait quelque temps que je n'ai pas entendu parler de lui.\n\nIl ne m'a jamais paru impudent, aussi je ne peux que supposer que son désir d'une gemme de Kor est noble.\n\nSi vous souhaitez réellement l'une de ces gemmes, alors vous devez vous diriger vers le nord-ouest d'Ashenvale. Vous y trouverez les Profondeurs de Brassenoire à l'intérieur de ruines anciennes. Les nagas qui utilisent toujours ces gemmes se trouvent en bas. Ne partez pas seul, $c.",
+        "4febbb34a14e088aa946": "Si quelqu'un venait s'informer sur la Gemme de Kor en dehors du chemin sacré, je serai soupçonneux. Mais j'ai plus confiance en votre race qu'en certains membres de ma propre famille. Je ne juge pas tout votre ordre à l’aune de ceux qui sont déchus. ",
+        "87eab500ae9b33c53d0e": "C'est effectivement la gemme que Stilwell désire, mais avant que j’autorise son départ, elle doit être purifiée de toute corruption. Les jeunes femelles nagas imprègnent les gemmes de puissance, ceci est certain, mais de nature maléfique. \n \n Faites savoir à Stilwell que cette puissance est intacte, et qu'elle devrait fonctionner pour n'importe quel rituel qu’il voudrait mettre en place. \n \n J'espère que vous savez ce que vous faites, $C, ce n'est pas un objet anodin que vous possédez là. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -245,6 +405,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -267,6 +445,11 @@
     },
     "hrHR": {
       "description": "Pozdrav, {name}. Što mogu učiniti za onoga koji slijedi sveti put?\n\nAh, da, Stilwell, kovač... odavno. Dobro ga se sjećam, iako već neko vrijeme nisam čuo njegovo ime.\n\nNikada mi se nije činio drskim čovjekom, pa mogu samo pretpostaviti da je njegova želja za draguljem Kor plemenita.\n\nAko doista želiš jedan od dragulja, moraš krenuti na sjeverozapad Ashenvalea. Ondje ćeš u drevnim ruševinama pronaći Blackfathom Deeps. Nage koje još uvijek koriste dragulje nalaze se dolje. Ne idi sam, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Pozdrav, $N. Što mogu učiniti za nekoga tko slijedi sveti put?$B$BAh da, kovač Stilwell... odavno. Dobro ga pamtim, iako mu dugo nisam čuo ime.$B$BNikad mi se nije činio drskim, pa pretpostavljam da je njegova želja za draguljem Kor plemenita.$B$BAko ga doista želiš, kreni na sjeverozapad Ashenvalea. U drevnim ruševinama pronaći ćeš Blackfathom Deeps. Nage koje još koriste dragulje nalaze se dolje. Ne idi sam, $c.",
+        "4febbb34a14e088aa946": "Manje bih vjerovao onome tko ne slijedi sveti put, a raspituje se o dragulju Kor. Tvojoj vrsti vjerujem više nego nekima svojima. Ne sudim cijeli tvoj red po djelima jednog palog člana.",
+        "87eab500ae9b33c53d0e": "To je dragulj koji Stilwell želi, ali prije nego što mu ga odneseš mora se pročistiti. Naga vještice doista ulijevaju moć u dragulje, ali vlastitu zlu moć.$B$BReci Stilwellu da je moć netaknuta i da bi trebala poslužiti za njegov obred.$B$BNadam se da znaš što radiš, $C. To nije običan predmet."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -283,6 +466,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cae9a6062659be743178b82c695ba501f9d5b9ce5470160328b8e60aded5d7e1"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -306,6 +504,11 @@
     },
     "itIT": {
       "description": "Salve {name}. Cosa posso fare per colui che segue il sentiero della santità?\n\nAh, sì: Stilwell il Fabbro. Ne è passato di tempo. Comunque me lo ricordo bene, anche se non lo sento nominare da molto.\n\nNon mi ha mai dato l'impressione di essere un uomo impudente, quindi immagino che i motivi per cui desidera una Gemma Kor siano nobili.\n\nSe davvero vuoi una delle gemme, devi dirigerti a nord-ovest di Valtetra. Laggiù, in mezzo ad alcune antiche rovine, troverai gli Abissi di Fondocupo. Le Naga che ancora usano le gemme sono sul fondo. {class}, ti do un consiglio: non andare da solo.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Salve, avventuriero. Cosa posso fare per chi segue un sentiero sacro?\n\nAh, sì, Stilwell, il fabbro... di tanto tempo fa. Me lo ricordo bene, anche se non sentivo il suo nome da un po'.\n\nNon mi è mai sembrato un uomo sfrontato, quindi posso solo supporre che il suo desiderio di una Kor Gem sia nobile.\n\nSe vuoi davvero una di quelle gemme, devi andare a nord-ovest di Ashenvale. Lì, fra alcune antiche rovine, troverai le Blackfathom Deeps. Le naga che usano ancora le gemme sono laggiù, nelle profondità. Non andarci da solo, avventuriero.",
+        "4febbb34a14e088aa946": "Sarei meno fiducioso verso chi non segue un sentiero sacro, se venisse a chiedermi di una Kor Gem. Ma della tua gente mi fido più che di certi miei consanguinei. Non giudico il tuo intero ordine per le azioni di uno solo dei vostri caduti.",
+        "87eab500ae9b33c53d0e": "Questa è davvero la gemma che Stilwell desidera, ma prima che io ti permetta di portargliela va purificata dalla corruzione: quelle streghe delle naga infondono potere nelle gemme, questo è vero, ma un potere tutto loro, malvagio.\n\nFai sapere a Stilwell che il suo potere è intatto, e che dovrebbe funzionare bene per qualunque rituale lui voglia compiere.\n\nSpero che tu sappia quello che fai, avventuriero: non è un oggetto da poco quello che hai fra le mani."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -321,6 +524,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -343,6 +564,11 @@
     },
     "koKR": {
       "description": "안녕하시오, {name}. 거룩한 길을 걷는 그대에게 어떻게 도움을 주면 되겠소? 아, 그렇군. 스틸웰... 오래전부터 알고 지내던 그 대장장이 말이로군. 그 친구의 이름을 들어본 지도 꽤 오래됐지만 아직 기억하고 있소.\n\n절대로 그 사람에게서 경솔하다는 인상을 받은 적이 없었으니, 이번에 그가 코르석을 얻으려는 것도 분명 숭고한 이유 때문일 거라고 생각되는군.\n\n진정으로 그 보석을 원한다면 잿빛 골짜기에서 북서쪽으로 가야 하오. 거기서 어느 고대 폐허 안쪽에 검은심연 나락이 있을 거요. 그 아래 살고 있는 나가들이 아직도 그 보석을 사용하고 있다고 하오. 그곳에 절대로 혼자서는 가지 마시길...",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "안녕하시오, $n. 거룩한 길을 걷는 그대에게 어떻게 도움을 주면 되겠소? 아, 그렇군. 스틸웰... 오래전부터 알고 지내던 그 대장장이 말이로군. 그 친구의 이름을 들어본 지도 꽤 오래됐지만 아직 기억하고 있소.\n\n절대로 그 사람에게서 경솔하다는 인상을 받은 적이 없었으니, 이번에 그가 코르석을 얻으려는 것도 분명 숭고한 이유 때문일 거라고 생각되는군.\n\n진정으로 그 보석을 원한다면 잿빛 골짜기에서 북서쪽으로 가야 하오. 거기서 어느 고대 폐허 안쪽에 검은심연 나락이 있을 거요. 그 아래 살고 있는 나가들이 아직도 그 보석을 사용하고 있다고 하오. 그곳에 절대로 혼자서는 가지 마시길...",
+        "4febbb34a14e088aa946": "성스러운 길을 걷지 않는 자가 코르 보석을 묻는다면 덜 신뢰했을 것이오. 하지만 나는 당신 같은 이들을 내 동족 일부보다 더 믿소. 타락한 한 사람의 행동으로 당신의 전체 교단을 판단하지는 않소.",
+        "87eab500ae9b33c53d0e": "이것이 스틸웰이 원하는 보석이 맞지만, 그에게 가져가기 전에 타락을 정화해야 하오. 나가 마녀들이 보석에 힘을 불어넣는 건 사실이나 그들 특유의 사악한 힘이오.$B$B힘은 그대로이니 그가 원하는 의식에 잘 쓰일 거라고 전하시오.$B$B부디 자신이 하는 일을 알기를 바라오, $C. 그대가 가진 건 평범한 물건이 아니오."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -358,6 +584,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -380,6 +622,11 @@
     },
     "plPL": {
       "description": "Witaj, {name}. Co mogę zrobić dla kogoś, kto podąża świętą ścieżką?\n\nAch tak, Stilwell, kowal... sprzed wielu lat. Dobrze go pamiętam, choć od dawna nie słyszałem jego imienia.\n\nNigdy nie wydawał mi się zuchwały, więc mogę jedynie zakładać, że pragnie klejnotu Kor ze szlachetnych pobudek.\n\nJeśli naprawdę chcesz zdobyć jeden z tych klejnotów, musisz udać się na północny zachód Ashenvale. W starożytnych ruinach znajdziesz Blackfathom Deeps. Nagi, które wciąż używają klejnotów, przebywają na dole. Nie idź tam samotnie, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Witaj, $N. Co mogę zrobić dla osoby kroczącej świętą ścieżką?$B$BAch tak, kowal Stilwell... sprzed dawnych lat. Dobrze go pamiętam, choć dawno nie słyszałem jego imienia.$B$BNigdy nie wydawał mi się bezczelny, więc zakładam, że pragnie klejnotu Kor w szlachetnym celu.$B$BJeśli naprawdę go chcesz, udaj się na północny zachód Ashenvale. W starożytnych ruinach znajdziesz Blackfathom Deeps. Nagi wciąż używające klejnotów są na dole. Nie idź sam, $c.",
+        "4febbb34a14e088aa946": "Mniej ufałbym komuś spoza świętej ścieżki, kto pyta o klejnot Kor. Twojemu rodzajowi ufam bardziej niż niektórym pobratymcom. Nie oceniam całego zakonu po czynach jednego upadłego członka.",
+        "87eab500ae9b33c53d0e": "To rzeczywiście klejnot, którego pragnie Stilwell, ale zanim mu go zaniesiesz, trzeba go oczyścić ze skażenia. Wiedźmy nag nasycają klejnoty mocą, lecz własną, złą.$B$BPowiedz Stilwellowi, że jego moc jest nienaruszona i powinna posłużyć do dowolnego rytuału.$B$BMam nadzieję, że wiesz, co robisz, $C. To nie jest zwykły przedmiot."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -396,6 +643,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cae9a6062659be743178b82c695ba501f9d5b9ce5470160328b8e60aded5d7e1"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -419,6 +681,11 @@
     },
     "ptBR": {
       "description": "Saudações, {name}. Como posso ajudar alguém que trilha o caminho sagrado?\n\nAh, sim, Calmafonte, o ferreiro... quanto tempo. Eu me lembro bem dele, mas faz muito tempo que não escuto esse nome.\n\nEle nunca me pareceu um homem afeito a brincadeiras, então creio que o pedido dele de uma gema Kor seja justo.\n\nSe você realmente quer encontrar uma das gemas, vá para a região noroeste do Vale Gris. Lá, por entre as ruínas ancestrais, há um lugar chamado Profundezas Negras, lar de nagas que ainda usam as gemas. Não vá sozinho, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Saudações, $n. Como posso ajudar alguém que trilha o caminho sagrado?\n\nAh, sim, Calmafonte, o ferreiro... quanto tempo. Eu me lembro bem dele, mas faz muito tempo que não escuto esse nome.\n\nEle nunca me pareceu um homem afeito a brincadeiras, então creio que o pedido dele de uma gema Kor seja justo.\n\nSe você realmente quer encontrar uma das gemas, vá para a região noroeste do Vale Gris. Lá, por entre as ruínas ancestrais, há um lugar chamado Profundezas Negras, lar de nagas que ainda usam as gemas. Não vá sozinho, $c.",
+        "4febbb34a14e088aa946": "Eu não confiaria tanto se alguém que não trilha o caminho sagrado perguntasse sobre uma gema Kor. Mas confio na sua raça mais do que em alguns da minha própria linhagem. Não julgo a ordem inteira pelos atos de um indivíduo da sua raça decaída.",
+        "87eab500ae9b33c53d0e": "Esta é mesmo a gema que Stilwell deseja, mas antes que você a leve a ele, é preciso purificá-la da corrupção. As bruxas nagas de fato infundem poder nas gemas, mas um poder maligno.$B$BDiga a Stilwell que seu poder está intacto e deve servir ao ritual que ele pretende realizar.$B$BEspero que saiba o que faz, $C. Isso não é um objeto comum."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -434,6 +701,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -456,6 +740,11 @@
     },
     "ruRU": {
       "description": "День добрый, {name}. Чем могу помочь идущему путем Света?\n\nАх да, кузнец Стилвелл... давно не виделись. Я хорошо его помню, хотя давно о нем не слышал.\n\nОн никогда не казался мне злодеем, поэтому остается думать, что его стремление получить самоцвет Кора благородно.\n\nЕсли вам и правда нужен самоцвет, то придется направиться на северо-запад Ясеневого леса. Там, среди древних развалин, вы обнаружите Непроглядную Пучину. В их недрах таятся наги, и они до сих пор используют такие самоцветы. Не ходите туда в одиночку, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "День добрый, $N. Чем могу помочь идущему путем Света?\n\nАх да, кузнец Стилвелл... давно не виделись. Я хорошо его помню, хотя давно о нем не слышал.\n\nОн никогда не казался мне злодеем, поэтому остается думать, что его стремление получить самоцвет Кора благородно.\n\nЕсли вам и правда нужен самоцвет, то придется направиться на северо-запад Ясеневого леса. Там, среди древних развалин, вы обнаружите Непроглядную Пучину. В их недрах таятся наги, и они до сих пор используют такие самоцветы. Не ходите туда в одиночку, $c.",
+        "4febbb34a14e088aa946": "Я с трудом поверил бы в чистые намерения того, кто ищет самоцвет Кора, не будь это искатель святого пути. Но таким, как вы, я доверяю даже больше, чем собственным сородичам. И я не стану судить о вашем ордене по деяниям ваших падших собратьев.",
+        "87eab500ae9b33c53d0e": "Действительно, это тот самый камень, который хочет получить Стилвелл, но, прежде чем я отдам его вам, надо очистить камень от скверны – мерзкие наги наполняют самоцветы силой, но своей, злобной силой.\n\nПусть Стилвелл знает, что мощь камня чиста, и он хорошо послужит в любом ритуале.\n\nЯ надеюсь, вы понимаете, что делаете, $C, ибо в руках у вас не игрушка."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -471,6 +760,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -493,6 +800,11 @@
     },
     "svSE": {
       "description": "Hälsningar, {name}. Vad kan jag göra för en som följer en helig väg?\n\nAh, ja, Stilwell, smeden ... för länge sedan. Jag minns honom väl, även om jag inte har hört hans namn på länge.\n\nHan verkade aldrig vara en fräck man, så jag kan bara anta att hans önskan om en ädelsten från Kor är ädel.\n\nOm du verkligen vill ha en av stenarna måste du bege dig till nordvästra Askdalen. Där hittar du Svartdjupen bland några uråldriga ruiner. Nagorna som fortfarande använder stenarna finns där nere. Gå inte ensam, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Var hälsad, $N. Vad kan jag göra för någon som följer en helig väg?$B$BAh ja, smeden Stilwell... från länge sedan. Jag minns honom väl, även om jag inte hört hans namn på länge.$B$BHan verkade aldrig fräck, så jag antar att hans önskan om en Korsten är ädel.$B$BOm du verkligen vill ha en ska du till nordvästra Ashenvale. I gamla ruiner finner du Blackfathom Deeps. Nagaerna som fortfarande använder stenarna finns där nere. Gå inte ensam, $c.",
+        "4febbb34a14e088aa946": "Jag skulle lita mindre på någon som inte följer en helig väg och frågar efter en Korsten. Men jag litar mer på din sort än på några av mina egna. Jag dömer inte hela din orden efter en fallen persons handlingar.",
+        "87eab500ae9b33c53d0e": "Detta är stenen Stilwell vill ha, men innan du tar den till honom måste den renas från fördärv. Nagahäxorna fyller stenarna med kraft, men sin egen onda sort.$B$BSäg till Stilwell att kraften är intakt och bör fungera för hans ritual.$B$BJag hoppas att du vet vad du gör, $C. Det är inget vanligt föremål."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -509,6 +821,21 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -534,6 +861,11 @@
     },
     "trTR": {
       "description": "Selamlar, {name}. Kutsal bir yolu izleyen biri için ne yapabilirim?\n\nAh evet, demirci Stilwell... çok eskiden. Onu iyi hatırlıyorum ama adını bir süredir duymamıştım.\n\nBana hiç küstah biri gibi gelmedi; o yüzden Kor mücevheri istemesinin soylu bir amacı olduğunu varsayabilirim.\n\nGerçekten mücevherlerden birini istiyorsan Ashenvale'in kuzeybatısına gitmelisin. Kadim harabelerin içinde Blackfathom Deeps'i bulacaksın. Mücevherleri hâlâ kullanan nagalar aşağıda. Yalnız gitme, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Selamlar, $N. Kutsal bir yolda yürüyen biri için ne yapabilirim?$B$BAh evet, demirci Stilwell... çok eskiden. Adını uzun süredir duymasam da onu iyi hatırlıyorum.$B$BBana hiç küstah biri gibi gelmedi, bu yüzden Kor mücevherini soylu bir amaçla istediğini varsayıyorum.$B$BGerçekten birini istiyorsan Ashenvale'in kuzeybatısına git. Kadim harabelerde Blackfathom Derinlikleri'ni bulacaksın. Mücevherleri hâlâ kullanan nagalar aşağıda. Yalnız gitme, $c.",
+        "4febbb34a14e088aa946": "Kutsal yolda olmayan biri Kor mücevherini sorsaydı ona daha az güvenirdim. Senin gibilere kendi soyumun bazı üyelerinden daha çok güveniyorum. Bütün tarikatını düşmüş bir kişinin eylemleriyle yargılamam.",
+        "87eab500ae9b33c53d0e": "Bu gerçekten Stilwell'in istediği mücevher, ama ona götürmeden önce bozulmadan arındırılmalı. Naga cadıları mücevherlere güç aşılar, doğru, ancak kendi kötü güçlerini.$B$BStilwell'e gücünün sağlam kaldığını ve istediği ayinde işe yarayacağını söyle.$B$BUmarım ne yaptığını biliyorsundur, $C. Elindeki sıradan bir eşya değil."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -550,6 +882,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cae9a6062659be743178b82c695ba501f9d5b9ce5470160328b8e60aded5d7e1"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -573,6 +920,11 @@
     },
     "ukUA": {
       "description": "Вітаю, {name}. Чим я можу допомогти тому, хто йде святим шляхом?\n\nА, так, Стілвелл, коваль... це було давно. Я добре його пам'ятаю, хоча давно не чув цього імені.\n\nВін ніколи не здавався мені зухвальцем, тож можу лише припустити, що його бажання отримати самоцвіт Кор має шляхетну мету.\n\nЯкщо ти справді хочеш такий самоцвіт, вирушай на північний захід Ясенедолу. Серед стародавніх руїн знайдеш Непроглядну Пучину. Наги, які досі користуються цими самоцвітами, перебувають унизу. Не йди туди сам, {class}.",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "Вітаю, $N. Чим можу допомогти тому, хто йде священним шляхом?$B$BА, так, коваль Стілвелл... із давніх часів. Я добре його пам'ятаю, хоча давно не чув його імені.$B$BВін ніколи не здавався зухвалим, тож припускаю, що його бажання отримати камінь Кор шляхетне.$B$BЯкщо справді хочеш камінь, рушай на північний захід Ясенедолу. У стародавніх руїнах знайдеш Чорноводні глибини. Наги, які досі використовують камені, перебувають унизу. Не йди сам, $c.",
+        "4febbb34a14e088aa946": "Я менше довіряв би тому, хто не йде священним шляхом і питає про камінь Кор. Але таким, як ти, я довіряю більше, ніж деяким родичам. Я не суджу весь твій орден за вчинками одного занепалого.",
+        "87eab500ae9b33c53d0e": "Це справді камінь, якого бажає Стілвелл, але перед тим як віднести його, треба очистити від скверни. Відьми наг справді наділяють камені силою, але власною злою силою.$B$BСкажи Стілвеллу, що сила збереглася й має підійти для його обряду.$B$BСподіваюся, ти знаєш, що робиш, $C. Це непростий предмет."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -589,6 +941,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cae9a6062659be743178b82c695ba501f9d5b9ce5470160328b8e60aded5d7e1"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -614,6 +981,11 @@
     },
     "zhCN": {
       "description": "你好，{name}。我能为你这位追寻神圣之道的人做点什么呢？\n\n哦，铁匠斯迪威尔……很久以前的事了，不过我还记得他，有一段时间没听到他的消息了。\n\n我知道他决不是那种卑鄙的人，他想要一块科尔宝石一定也是为了某种高尚的目的。\n\n如果你真想要科尔宝石，就到灰谷的西北方去。你会在古老的废墟里看到黑暗深渊，而那些仍然在使用科尔宝石纳迦就聚集在那里。你一定要小心，不要单独行动。",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "你好，$N。我能为你这位追寻神圣之道的人做点什么呢？\n\n哦，铁匠斯迪威尔……很久以前的事了，不过我还记得他，有一段时间没听到他的消息了。\n\n我知道他决不是那种卑鄙的人，他想要一块科尔宝石一定也是为了某种高尚的目的。\n\n如果你真想要科尔宝石，就到灰谷的西北方去。你会在古老的废墟里看到黑暗深渊，而那些仍然在使用科尔宝石纳迦就聚集在那里。你一定要小心，不要单独行动。",
+        "4febbb34a14e088aa946": "对于一个向我要科尔宝石的人，我会怀疑他是不是真地追寻神圣的道路。不过我相信你胜于相信我的同类，更不会因为你们中的某个个体的堕落而怀疑你们所有人。",
+        "87eab500ae9b33c53d0e": "这正是史蒂威尔想要的宝石，不过在我让你拿给他之前，必须先去除其中的腐败成分—纳迦为科尔宝石灌输了强大的魔法，不过那是邪恶的魔法。\n\n告诉史蒂威尔，科尔宝石中的魔法能量都是纯正圣洁的，无论他想用它完成什麽仪式都没有问题。\n\n我希望你知道自己在做什麽，$C，你手里拿的可不是个简单的东西。\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -629,6 +1001,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -651,6 +1041,11 @@
     },
     "zhTW": {
       "description": "你好，{name}。我能為你這位追尋神聖之道的人做點什麼呢?\n\n哦，鐵匠史蒂威爾...很久以前的事了，不過我還記得他，有一段時間沒聽到他的消息了。\n\n我知道他絕不是那種卑鄙的人，他想要一塊科爾寶石一定也是為了某種高尚的目的。\n\n如果你真想要科爾寶石，就到梣谷的西北方去。你會在古老的廢墟裡看到黑暗深淵。那些仍然在使用科爾寶石的納迦就聚集在那裡。千萬不要單獨前去，{class}。",
+      "dialogue": {
+        "4bf3dfcbcbacc3790802": "你好，$n。我能為你這位追尋神聖之道的人做點什麼呢?\n\n哦，鐵匠斯迪威爾...很久以前的事了，不過我還記得他，有一段時間沒聽到他的消息了。\n\n我知道他絕不是那種卑鄙的人，他想要一塊科爾寶石一定也是為了某種高尚的目的。\n\n如果你真想要科爾寶石，就到梣谷的西北方去。你會在古老的廢墟裡看到黑暗深淵。那些仍然在使用科爾寶石的納迦就聚集在那裡。千萬不要單獨前去，$c。",
+        "4febbb34a14e088aa946": "對於一個向我要科爾寶石的人，我會懷疑他是不是真的追尋神聖的道路。不過我相信你勝於相信我的某些同類，更不會因爲你們之中某人的墮落而懷疑你們所有的人。",
+        "87eab500ae9b33c53d0e": "這正是史蒂威爾想要的寶石，不過在我讓你拿給他之前，必須先去除其中的腐敗成分—納迦爲科爾寶石灌輸了強大的魔法，不過那是邪惡的魔法。\n\n告訴史蒂威爾，科爾寶石中的魔法能量都是純正聖潔的，無論他想用它完成什麼儀式都沒有問題。\n\n我希望你知道自己在做什麼，$C，你手裏拿的可不是個簡單的東西。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -666,6 +1061,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.4bf3dfcbcbacc3790802": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.4febbb34a14e088aa946": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.87eab500ae9b33c53d0e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

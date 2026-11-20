@@ -87,8 +87,9 @@ def get_tokens(value):
     return sorted(tokens)
 
 
-def get_quest_tokens(value):
+def get_quest_tokens(value, *, allow_sentence_selectors=False):
     """Ignore literal gender inflection controls without hiding protected value tokens."""
+    branch = r'[^:;$\n]+' if allow_sentence_selectors else r'[^:;$\n.!?]+'
     pieces, protected, offset = [], [], 0
     while offset < len(value):
         if value.startswith('${', offset):
@@ -100,7 +101,7 @@ def get_quest_tokens(value):
             pieces.append(value[start:offset])
             continue
         if value[offset:offset + 2] in ('$g', '$G'):
-            match = re.match(r'\$[gG]([^:;$\n.!?]+):([^:;$\n.!?]+);', value[offset:])
+            match = re.match(rf'\$[gG]({branch}):({branch});', value[offset:])
             if not match or not match[1].strip() or not match[2].strip():
                 raise ValueError('Malformed quest gender selector')
             selector = match.group()
@@ -126,10 +127,21 @@ def get_book_tokens(value):
                   for token in get_quest_tokens(value))
 
 
+def get_enchantment_tokens(text):
+    # Signed bonuses, percent bonuses, explicit ranks and dynamic values are gameplay data.
+    bare = TOKEN.sub(lambda match: match[0] if match[0] == '%' else '', text)
+    bare = bare.replace('−', '-').replace('％', '%')
+    bare = re.sub(r'(?<!\d)%[ \u00a0]*(\d+(?:[.,]\d+)?)', r'\1%', bare)
+    values = re.findall(r'(?<![\w])(?:[+-]\s*)?\d+(?:[.,]\d+)?(?:\s*%)?', bare)
+    ranks = re.findall(r'\b[IVX]{1,5}\b', bare)
+    return get_tokens(text), sorted(re.sub(r'\s+', '', value).replace(',', '.') for value in values), sorted(ranks)
+
+
 def matching_tokens(context, source, target):
     try:
         getter = (get_book_tokens if context.startswith(('books.', 'bookpages.')) else
-                  get_quest_tokens if context.startswith('quests.') else get_tokens)
+                  get_quest_tokens if context.startswith('quests.') else
+                  get_enchantment_tokens if context.startswith('itemenchantments.') else get_tokens)
         return getter(source) == getter(target)
     except ValueError:
         return False
@@ -503,6 +515,9 @@ def iter_fields(kind, entity):
     yield identity, english.get(identity), None
     if kind == 'races' and any(record.get('nameFemale') for record in entity['locales'].values()):
         yield 'nameFemale', english.get('nameFemale'), None
+
+    if kind == 'itemenchantments' and english.get('nameHorde'):
+        yield 'nameHorde', english['nameHorde'], None
 
     if kind in ('items', 'spells'):
         tooltip = entity.get('tooltipData', {})

@@ -1,8 +1,28 @@
 {
   "areaId": 440,
+  "dialogueContexts": {
+    "0bec7ac22d70d4aaa68d": {
+      "lineId": "q:1878:complete",
+      "npcId": 7408,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "909d45e4471ca716dd08": {
+      "lineId": "q:1878:progress",
+      "npcId": 7408,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Už jsi zpátky, {name}? Jestli máš dalších pět měchů vody Wastewander, pak tu na tebe čeká balíček zásob přímo se tvým jménem!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Výborně! Čím víc měchů s vodou získáme zpět, tím dál budeme od pohromy! Jen je nos dál a za každých pět tě odměním.",
+        "909d45e4471ca716dd08": "Zase zpátky, $n? Jestli máš dalších pět měchů s vodou od Pustinářů, mám pro tebe balíček pomoci!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +39,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dd8b4f492764c52f26d58ec62550550b4409af985be321e2538e9e1e2a26d5b6"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +73,10 @@
     },
     "daDK": {
       "description": "Tilbage igen, {name}? Hvis du har fem Wastewander-vandposer mere, har jeg en forsyningspakke med dit navn på!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Fremragende! Jo flere vandposer vi får tilbage, desto længere kommer vi fra katastrofen! Bliv ved med at bringe dem, så belønner jeg dig for hver femte.",
+        "909d45e4471ca716dd08": "Tilbage igen, $n? Hvis du har fem vandposer mere fra Wastewander, har jeg en forsyningspakke til dig!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dd8b4f492764c52f26d58ec62550550b4409af985be321e2538e9e1e2a26d5b6"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +126,10 @@
     },
     "deDE": {
       "description": "Ihr seid ja schon wieder da, {name}! Wenn Ihr noch fünf Wasserbeutel eines Wüstenläufers für mich habt, dann habe ich hier ein kleines Paket, das nur auf Euch wartet!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Hervorragend - je mehr Wasserbeutel wir wiederbeschaffen können, desto weiter sind wir von einer Katastrophe entfernt! Bringt mir mehr und ich werde Euch für jeweils fünf Wasserbeutel belohnen, die Ihr mir bringt.",
+        "909d45e4471ca716dd08": "Ihr seid ja schon wieder da, $N! Wenn Ihr noch fünf Wasserbeutel eines Wüstenläufers für mich habt, dann habe ich hier ein kleines Paket, das nur auf Euch wartet!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +145,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "Back again, {name}?  If you have five more Wastewander water pouches, then I have a care package with your name on it!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Excellent - the more water pouches we are able to reclaim, the further away from disaster we'll all be!  Keep 'em coming, and I will be sure to reward you for every five water pouches you bring me.",
+        "909d45e4471ca716dd08": "Back again, $n?  If you have five more Wastewander water pouches, then I have a care package with your name on it!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -156,6 +232,10 @@
     },
     "esES": {
       "description": "¿Ya has vuelto, {name}? Si tienes cinco bolsas más de agua te puedo dar ya mismo tu recompensa.",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Excelente, ¡cuantas más bolsas de agua consigamos, más nos alejaremos del desastre! Consigue tantas como puedas y te daré una recompensa por cada 5 bolsas de agua que me traigas.",
+        "909d45e4471ca716dd08": "¿Ya has vuelto, $n? Si tienes cinco bolsas más de agua te puedo dar ya mismo tu recompensa."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +251,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -193,6 +285,10 @@
     },
     "esMX": {
       "description": "¿Ya has vuelto, {name}? Si tienes cinco faltriqueras más de agua te puedo dar ya mismo tu recompensa.",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Excelente, ¡cuantas más bolsas de agua consigamos, más nos alejaremos del desastre! Consigue tantas como puedas y te daré una recompensa por cada 5 bolsas de agua que me traigas.",
+        "909d45e4471ca716dd08": "¿Ya has vuelto, $n? Si tienes cinco bolsas más de agua te puedo dar ya mismo tu recompensa."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -208,6 +304,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -230,6 +338,10 @@
     },
     "frFR": {
       "description": "Vous revoici, {name} ? Si vous avez cinq outres de Bat-le-désert de plus, alors j'ai un paquet qui porte votre nom !",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Excellent : plus nous récupérons d'outres, moins nous risquons le désastre ! Rapportez-en encore, et je vous récompenserai pour chaque lot de cinq outres que vous rapporterez. ",
+        "909d45e4471ca716dd08": "Vous revoici, $n ? Si vous avez cinq outres de Bat-le-désert de plus, alors j'ai un paquet qui porte votre nom !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -245,6 +357,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -267,6 +391,10 @@
     },
     "hrHR": {
       "description": "Opet si se vratio, {name}? Ako imaš još pet mješina vode Wastewandera, onda imam paket potrepština s tvojim imenom na njemu!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Izvrsno! Što više mješina vode vratimo, to ćemo biti dalje od katastrofe! Nastavi ih donositi i nagradit ću te za svakih pet.",
+        "909d45e4471ca716dd08": "Opet si tu, $n? Ako imaš još pet mješina vode od Wastewandera, imam paket pomoći za tebe!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -283,6 +411,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dd8b4f492764c52f26d58ec62550550b4409af985be321e2538e9e1e2a26d5b6"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -306,6 +444,10 @@
     },
     "itIT": {
       "description": "Di nuovo qui, {name}? Se hai altre cinque sacche d'acqua dei Wastewander, ho un pacco di provviste che ti aspetta!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Eccellente — più otri d'acqua riusciamo a recuperare, più saremo tutti lontani dal disastro! Continua a portarmeli, e non mancherò di ricompensarti per ogni cinque otri d'acqua che mi porti.",
+        "909d45e4471ca716dd08": "Di nuovo qui, $N? Se hai altri cinque otri d'acqua dei Wastewander, ho un pacco dono con sopra il tuo nome!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -322,6 +464,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dd8b4f492764c52f26d58ec62550550b4409af985be321e2538e9e1e2a26d5b6"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -345,6 +499,10 @@
     },
     "koKR": {
       "description": "부지런한 {name} 양반, 또 오셨군. 사막유랑단 물주머니 5개를 더 가져왔다면 선물세트를 주겠소! 이름도 큼직하게 새겨서 말이오.",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "잘했소. 물주머니를 더 많이 찾을수록 우리는 끔찍한 갈증 걱정을 안 해도 되지! 계속 더 가져오면 고맙겠소. 물주머니를 5개마다 반드시 보상이 따를 테니까.",
+        "909d45e4471ca716dd08": "부지런한 $n 양반, 또 오셨군. 사막유랑단 물주머니 5개를 더 가져왔다면 선물세트를 주겠소! 이름도 큼직하게 새겨서 말이오."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -360,6 +518,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -382,6 +552,10 @@
     },
     "plPL": {
       "description": "Znowu wracasz, {name}? Jeśli masz jeszcze pięć bukłaków Wastewander, czeka na ciebie paczka zaopatrzeniowa!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Doskonale! Im więcej bukłaków z wodą odzyskamy, tym dalej będziemy od katastrofy! Przynoś je dalej, a nagrodzę cię za każde pięć.",
+        "909d45e4471ca716dd08": "Znowu tu jesteś, $n? Jeśli masz jeszcze pięć bukłaków z wodą od Wędrowców Pustkowi, mam dla ciebie paczkę z zaopatrzeniem!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -398,6 +572,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dd8b4f492764c52f26d58ec62550550b4409af985be321e2538e9e1e2a26d5b6"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -421,6 +605,10 @@
     },
     "ptBR": {
       "description": "Voltou, {name}? Se você tiver mais cinco bolsas de água do errante pra mim, eu tenho um kit de sobrevivência pra você!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Excelente! Quanto mais bolsas de água nós coletarmos, mais longe do desastre estaremos! Traga mais. Eu lhe darei uma recompensa para cada cinco bolsas de água que você me trouxer.",
+        "909d45e4471ca716dd08": "De volta, $n? Se tiver mais cinco bolsas de água dos Andarilhos do Ermo, tenho um pacote de suprimentos para você!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -436,6 +624,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -458,6 +657,10 @@
     },
     "ruRU": {
       "description": "Опять ты здесь? Если ты несешь еще пять бурдюков с водой Скитальцев Пустыни, то тебя ждет еще один именной полевой набор!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Восхитительно – чем больше бурдюков с водой мы сможем вернуть, тем лучше! Продолжай в том же духе, и я гарантирую новую награду за каждые пять, которые ты принесешь.",
+        "909d45e4471ca716dd08": "Вернулся, $n? А 5 бурдюков с водой добыл?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -473,6 +676,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -495,6 +710,10 @@
     },
     "svSE": {
       "description": "Tillbaka igen, {name}? Har du fem vattenpåsar till från Wastewander så har jag ett hjälppaket med ditt namn på!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Utmärkt! Ju fler vattenpåsar vi får tillbaka, desto längre bort kommer vi från katastrofen! Fortsätt att ta hit dem så belönar jag dig för var femte.",
+        "909d45e4471ca716dd08": "Tillbaka igen, $n? Om du har fem vattenpåsar till från Wastewander har jag ett hjälppaket till dig!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -511,6 +730,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dd8b4f492764c52f26d58ec62550550b4409af985be321e2538e9e1e2a26d5b6"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -534,6 +763,10 @@
     },
     "trTR": {
       "description": "Yine mi geldin, {name}? Beş Wastewander su matarası daha getirdiysen üzerinde adın yazılı bir yardım paketim var!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Harika! Ne kadar çok su tulumu geri alırsak felaketten o kadar uzaklaşırız! Getirmeye devam et, bana getirdiğin her beş tulum için seni ödüllendireceğim.",
+        "909d45e4471ca716dd08": "Yine mi geldin, $n? Beş Wastewander su tulumun daha varsa senin için bir yardım paketim var!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -550,6 +783,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dd8b4f492764c52f26d58ec62550550b4409af985be321e2538e9e1e2a26d5b6"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -573,6 +816,10 @@
     },
     "ukUA": {
       "description": "Знову тут, {name}? Якщо в тебе є ще п'ять бурдюків води Пустельних Блукачів, я маю пакунок припасів саме для тебе!",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "Чудово! Що більше міхів з водою ми повернемо, то далі будемо від лиха! Продовжуй приносити їх, а я винагороджу тебе за кожні п'ять.",
+        "909d45e4471ca716dd08": "Знову тут, $n? Якщо маєш ще п'ять міхів з водою Мандрівників Пустки, я маю для тебе пакунок допомоги!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -589,6 +836,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "dd8b4f492764c52f26d58ec62550550b4409af985be321e2538e9e1e2a26d5b6"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -613,6 +870,10 @@
     },
     "zhCN": {
       "description": "又回来了，{name}？如果你找到五只废土水袋，那我就再给你一个包裹！",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "干得好!收集到越多水袋，我们就可以越早脱离这场灾难!继续干，你每给我带回五个水袋，我就会给你相应的奖励。\n",
+        "909d45e4471ca716dd08": "又回来了，$N?如果你又找到5个废土水袋，那我就再给你一个医疗包裹!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -628,6 +889,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -650,6 +923,10 @@
     },
     "zhTW": {
       "description": "又回來了，{name}？如果你又找到5個廢土水袋，那我就再給你一個醫療包裹！",
+      "dialogue": {
+        "0bec7ac22d70d4aaa68d": "幹得好!收集到越多水袋，我們就可以越早脫離這場災難!繼續幹，你每給我帶回五個水袋，我就會給你相應的獎勵。",
+        "909d45e4471ca716dd08": "又回來了，$N?如果你又找到5個廢土水袋，那我就再給你一個醫療包裹!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -665,6 +942,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0bec7ac22d70d4aaa68d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.909d45e4471ca716dd08": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

@@ -1,7 +1,35 @@
 {
+  "dialogueContexts": {
+    "1dcf31e4407a6014e258": {
+      "lineId": "q:5145:accept",
+      "npcId": 7867,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "48a1836d97f2599ae1ca": {
+      "lineId": "q:5145:complete",
+      "npcId": 7867,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "c49251f545a17cdbec3c": {
+      "lineId": "q:5145:progress",
+      "npcId": 7867,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Dračí koželužství není snadné, ale přináší obrovské odměny. Naučím tě vyrábět tuto skvělou kroužkovou zbroj, ale pouze pokud přistoupíš na určité podmínky.\n\nVýběrem této cesty souhlasíš s tím, že se nikdy nenaučíš elementární ani kmenové koželužství; na vrcholu řemesla je místo pouze pro jedno ze tří odvětví. Dále budu potřebovat vzorky tvé nejlepší práce se škorpidí zbrojí. A nakonec budu potřebovat důkaz tvé schopnosti získat základ tohoto řemesla: šupiny dračích bytostí.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Zpracování dračích šupin není snadné, ale přináší velké odměny. Naučím tě vyrábět toto kvalitní kroužkové brnění, pokud přijmeš určité podmínky.$B$BVolbou této cesty souhlasíš, že se nikdy nenaučíš elementární ani kmenové kožedělnictví; na vrcholu řemesla je místo jen pro jednu ze tří cest. Potřebuji také ukázky tvé nejlepší práce se škorpídím brněním a důkaz, že dokážeš získat základní surovinu: šupiny dračích tvorů.",
+        "48a1836d97f2599ae1ca": "Musím uznat, že takové trvalé rozhodnutí vyžaduje pevnou vůli. Ujišťuji tě, že zpracování dračích šupin pro tebe bude výnosnou a obohacující cestou.$b$bAž se budeš chtít učit dál, promluv si se mnou a předám ti znalosti, které ještě nemáš.",
+        "c49251f545a17cdbec3c": "Pokud jsi připraven trvale se stát zpracovatelem dračích šupin, rád tě přijmu za žáka. Přines mi, co jsem žádal, a začneme."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -28,6 +56,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -62,6 +105,11 @@
     },
     "daDK": {
       "description": "Drageskælslæderarbejde er ikke let, men det er yderst givende. Jeg vil lære dig at lave denne fine ringbrynje, men kun hvis du accepterer visse betingelser.\n\nVed at vælge denne vej accepterer du aldrig at lære elementært eller stammelæderarbejde; der er kun plads til én af de tre på håndværkets højeste niveau. Desuden skal jeg bruge nogle prøver på dit bedste arbejde med scorpid-rustning. Endelig skal jeg bruge bevis på din evne til at skaffe fagets grundmateriale: dragevæsners skæl.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Drageskæl-læderarbejde er ikke let, men meget givende. Jeg vil lære dig at fremstille denne fine ringbrynje, hvis du accepterer visse betingelser.$B$BVælger du denne vej, lover du aldrig at lære elementært eller stammebaseret læderarbejde; der er kun plads til én af de tre specialer. Jeg skal også bruge eksempler på dit bedste skorpidearbejde og bevis på, at du kan skaffe fagets grundmateriale: drageskæl.",
+        "48a1836d97f2599ae1ca": "Jeg må anerkende det: Det kræver viljestyrke at træffe en permanent beslutning. Jeg forsikrer dig om, at drageskæl-læderarbejde vil være en indbringende og givende vej.$b$bTal blot med mig, når du vil lære mere, så deler jeg den viden, du endnu mangler.",
+        "c49251f545a17cdbec3c": "Hvis du er klar til permanent at blive drageskæl-læderarbejder, er jeg klar til at tage dig som elev. Bring det, jeg bad om, så begynder vi."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -88,6 +136,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "abae54b8ccefe82d5724b17eef6ef02cbe56638861e686adaacd23fddfb020ee"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -121,6 +184,11 @@
     },
     "deDE": {
       "description": "Drachenlederverarbeitung ist nicht einfach, aber sie ist sehr einträglich. Ich werde Euch beibringen, wie man diese feine Panzerrüstung fertigt, aber nur, wenn Ihr bestimmten Bedingungen zustimmt.\n\nMit der Wahl dieses Weges erklärt Ihr Euch einverstanden, niemals die Kunst der Elementarlederverarbeitung oder der Stammeslederverarbeitung zu erlernen. An der Spitze des Handwerks ist nur Platz für eine der drei. Des Weiteren werde ich eine Probe Eurer besten Arbeit aus dem Bereich der Skorpidrüstung benötigen. Schließlich benötige ich noch einen Beweis für Eure Fähigkeit, die Hauptzutat des Handwerks zu erlangen: Schuppen der Drachkin.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Drachenlederverarbeitung ist nicht einfach, aber sie ist sehr einträglich. Ich werde Euch beibringen, wie man diese feine Panzerrüstung fertigt, aber nur, wenn Ihr bestimmten Bedingungen zustimmt.\n\nMit der Wahl dieses Weges erklärt Ihr Euch einverstanden, niemals die Kunst der Elementarlederverarbeitung oder der Stammeslederverarbeitung zu erlernen. An der Spitze des Handwerks ist nur Platz für eine der drei. Des Weiteren werde ich eine Probe Eurer besten Arbeit aus dem Bereich der Skorpidrüstung benötigen. Schließlich benötige ich noch einen Beweis für Eure Fähigkeit, die Hauptzutat des Handwerks zu erlangen: Schuppen der Drachkin.",
+        "48a1836d97f2599ae1ca": "Ich muss Euch loben. . . es bedarf eines starken Willens, eine dauerhafte Entscheidung zu treffen, wie Ihr es gerade getan habt. Ich versichere Euch, Drachenlederverarbeitung wird sich als profitabler und lohnender Weg für Euch erweisen. \n \n Um in Zukunft die Kunst zu trainieren, sprecht einfach mit mir, und ich werde Euch das Wissen verfügbar machen, das Ihr noch als das Eure erwerben müsst. ",
+        "c49251f545a17cdbec3c": "Wenn Ihr bereit seid, eine dauerhafte Entscheidung zu treffen, indem Ihr ein Drachenlederer werdet, dann bin ich bereit, Euch als Schüler aufzunehmen. Bringt mir einfach die Dinge, um die ich gebeten habe, und wir werden mit Eurer Ausbildung beginnen. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -146,6 +214,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -180,6 +266,11 @@
     },
     "enUS": {
       "description": "Dragonscale leatherworking isn't easy, but it's extremely rewarding.  I'll teach you how to make this fine mail armor, but only if you agree to certain conditions.\n\nBy choosing this path, you agree never to learn elemental or tribal leatherworking; there is only room for one of the three at the apex of the craft.  Furthermore, I'll need some samples of your best work involving scorpid armor.  Finally, I'll need proof of your ability to acquire the staple of the trade: scales of the dragonkin.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Dragonscale leatherworking isn't easy, but it's extremely rewarding.  I'll teach you how to make this fine mail armor, but only if you agree to certain conditions.$B$BBy choosing this path, you agree never to learn elemental or tribal leatherworking; there is only room for one of the three at the apex of the craft.  Furthermore, I'll need some samples of your best work involving scorpid armor.  Finally, I'll need proof of your ability to acquire the staple of the trade: scales of the dragonkin.",
+        "48a1836d97f2599ae1ca": "I'll hand it to you - it takes a strong will to make a permanent decision like you've just done. I assure you, dragonscale leatherworking will prove to be a profitable and rewarding path for you to follow.$b$bTo train in the art for the future, simply speak to me and I will make available any knowledge that you have yet to commit as yours.",
+        "c49251f545a17cdbec3c": "If you're ready to commit to a permanent decision by becoming a dragonscale leatherworker, then I'm ready to take you on as a student. Just bring to me the things I asked for, and we'll begin your education."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -205,6 +296,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -240,6 +349,11 @@
     },
     "esES": {
       "description": "La peletería dragontina no es fácil pero es muy gratificante. Te enseñaré a hacer estas magníficas mallas de armadura pero solo si aceptas ciertas condiciones.\n\nSi eliges este camino, aceptas no aprender nunca la peletería elemental ni la tribal; solo hay lugar para una de las tres en la cúspide del oficio. Es más, necesitaré muestras de tu mejor trabajo con armaduras de escórpidos. Por último, tendré que comprobar que eres capaz de adquirir la materia prima del negocio: las escamas de dragonante.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "La peletería dragontina no es fácil pero es muy gratificante. Te enseñaré a hacer estas magníficas mallas de armadura pero solo si aceptas ciertas condiciones.\n\nSi eliges este camino, aceptas no aprender nunca la peletería elemental ni la tribal; solo hay lugar para una de las tres en la cúspide del oficio. Es más, necesitaré muestras de tu mejor trabajo con armaduras de escórpidos. Por último, tendré que comprobar que eres capaz de adquirir la materia prima del negocio: las escamas de dragonante.",
+        "48a1836d97f2599ae1ca": "Te lo reconozco: se necesita una fuerte voluntad para tomar una decisión permanente como la que acabas de hacer.  Te aseguro que la peletería de escamas de dragón demostrará ser un camino rentable y gratificante para ti.\n\n Para entrenarte en el arte para el futuro, simplemente háblame y pondré a tu disposición cualquier conocimiento que aún tengas que comprometer como tuyo.",
+        "c49251f545a17cdbec3c": "Si estás listo para comprometerte con una decisión permanente y convertirte en peletero de escamas de dragón, entonces estoy listo para aceptarte como estudiante.  Solo tráeme las cosas que te pedí y comenzaremos tu educación."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -265,6 +379,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -299,6 +431,11 @@
     },
     "esMX": {
       "description": "La peletería dragontina no es fácil pero es muy gratificante. Te enseñaré a hacer estas magníficas mallas de armadura pero solo si aceptas ciertas condiciones.\n\nSi eliges este camino, aceptas no aprender nunca la peletería elemental ni la tribal; solo hay lugar para una de las tres en la cúspide del oficio. Es más, necesitaré muestras de tu mejor trabajo con armaduras de escórpidos. Por último, tendré que comprobar que eres capaz de adquirir la materia prima del negocio: las escamas de dragonante.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "La peletería dragontina no es fácil pero es muy gratificante. Te enseñaré a hacer estas magníficas mallas de armadura pero solo si aceptas ciertas condiciones.\n\nSi eliges este camino, aceptas no aprender nunca la peletería elemental ni la tribal; solo hay lugar para una de las tres en la cúspide del oficio. Es más, necesitaré muestras de tu mejor trabajo con armaduras de escórpidos. Por último, tendré que comprobar que eres capaz de adquirir la materia prima del negocio: las escamas de dragonante.",
+        "48a1836d97f2599ae1ca": "Se necesita una voluntad fuerte para tomar una decisión como la que acabas de tomar. Te lo aseguro, la peletería de escamas de dragón demostrará ser un camino rentable y gratificante para que lo sigas.\n\nPara formarte en este arte, en el futuro, simplemente habla conmigo y pondré a tu disposición cualquier conocimiento que aún puedas aprender como tuyo.",
+        "c49251f545a17cdbec3c": "Si tu estás listo para comprometerte para siempre y convertirte en un peletero de escamas de dragón, entonces yo estoy listo para aceptarte como estudiante. Solo tráeme las cosas que te pedí y comenzaremos tu educación."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -324,6 +461,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -358,6 +513,11 @@
     },
     "frFR": {
       "description": "Le travail des écailles de dragons n'est pas chose aisée, mais les récompenses qu'on en retire sont nombreuses. Je vous enseignerai comment fabriquer cette belle cotte de mailles, mais cela seulement si vous acceptez certaines conditions.\n\nTout d'abord, en choisissant cette voie, vous vous engagez à ne jamais apprendre le travail du cuir élémentaire ou le travail du cuir tribal. Vous ne pouvez parvenir à l'excellence que dans un seul domaine. De plus, j'aurai besoin d'échantillons de vos meilleurs ouvrages d'armure de scorpide. Enfin, vous devez me prouver votre capacité à acquérir la matière première de cet art : des écailles de draconiens.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Le travail des écailles de dragons n'est pas chose aisée, mais les récompenses qu'on en retire sont nombreuses. Je vous enseignerai comment fabriquer cette belle cotte de mailles, mais cela seulement si vous acceptez certaines conditions.\n\nTout d'abord, en choisissant cette voie, vous vous engagez à ne jamais apprendre le travail du cuir élémentaire ou le travail du cuir tribal. Vous ne pouvez parvenir à l'excellence que dans un seul domaine. De plus, j'aurai besoin d'échantillons de vos meilleurs ouvrages d'armure de scorpide. Enfin, vous devez me prouver votre capacité à acquérir la matière première de cet art : des écailles de draconiens.",
+        "48a1836d97f2599ae1ca": "Je vous le dis - il faut une volonté forte pour prendre une décision irréversible comme vous venez de le faire. Je vous assure, le travail du cuir d'écaille de dragon sera pour vous une voie profitable. \n \n Pour apprendre cet art dans le futur, parlez-moi simplement et je vous dispenserai toutes les connaissances qu'il vous faut encore acquérir. ",
+        "c49251f545a17cdbec3c": "Si vous êtes prêt à prendre la décision définitive de devenir un Artisan du cuir d'écaille de dragon, je peux vous prendre comme apprenti. Apportez-moi juste les choses que je vous ai demandées, et je commencerai votre éducation. "
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -383,6 +543,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -417,6 +595,11 @@
     },
     "hrHR": {
       "description": "Kožarstvo zmajevih ljusaka nije lako, ali je iznimno korisno. Naučit ću te izrađivati ovaj fini verižni oklop, ali samo ako pristaneš na određene uvjete.\n\nOdabirom ovog puta pristaješ da nikada nećeš učiti elementarno ili plemensko kožarstvo; na vrhuncu zanata ima mjesta samo za jednu od triju grana. Nadalje, trebat će mi nekoliko uzoraka tvojeg najboljeg rada s oklopom od skorpida. Naposljetku, trebat će mi dokaz tvoje sposobnosti da nabaviš osnovu ovog zanata: ljuske zmajeve čeljadi.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Kožarstvo zmajevih ljusaka nije lako, ali je vrlo korisno. Naučit ću te izraditi ovaj fini verižni oklop ako prihvatiš određene uvjete.$B$BOdabirom ovog puta pristaješ da nikad nećeš učiti elementarno ni plemensko kožarstvo; na vrhuncu zanata ima mjesta samo za jednu od triju grana. Trebam i primjere tvog najboljeg rada sa skorpidskim oklopom te dokaz da možeš nabaviti osnovu zanata: ljuske zmajevih bića.",
+        "48a1836d97f2599ae1ca": "Moram priznati da je potrebna snažna volja za trajnu odluku poput tvoje. Uvjeravam te da će kožarstvo zmajevih ljusaka biti unosan i koristan put.$b$bZa daljnje učenje samo razgovaraj sa mnom i podijelit ću znanje koje još nemaš.",
+        "c49251f545a17cdbec3c": "Ako si spreman trajno postati kožar zmajevih ljusaka, spreman sam te primiti za učenika. Donesi što sam tražio i počet ćemo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -443,6 +626,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "abae54b8ccefe82d5724b17eef6ef02cbe56638861e686adaacd23fddfb020ee"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -476,6 +674,11 @@
     },
     "itIT": {
       "description": "La Conciatura delle Scaglie di Drago non è semplice, ma è estremamente redditizia. Sono disposto a insegnarti come realizzare quest'ottima armatura di maglia, ma solo se accetterai alcune condizioni.\n\nPer prima cosa, dovrai giurare di non imparare mai la Conciatura Elementale, né quella Tribale: chi vuole raggiungere la maestria in quest'arte può perseguire una sola tra queste tre specializzazioni. Inoltre, mi servono alcuni campioni dei tuoi lavori migliori realizzati con gli scorpioni. Infine, devi dimostrarmi di essere in grado di procurarti la materia prima: le Scaglie di Drago.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "La conciatura di scaglie di drago non è facile, ma dà grandissime soddisfazioni. Ti insegnerò a fabbricare questa pregiata armatura di maglia, ma solo se accetti certe condizioni.\n\nScegliendo questa strada, ti impegni a non imparare mai la conciatura elementale né quella tribale; in cima al mestiere c'è posto per una sola delle tre. Inoltre, mi serviranno alcuni campioni dei tuoi lavori migliori fra le armature di scorpid. Infine, mi servirà la prova che sai procurarti il materiale di base del mestiere: le scaglie dei dragonkin.",
+        "48a1836d97f2599ae1ca": "Devo dartene atto — ci vuole una volontà forte per prendere una decisione definitiva come quella che hai appena preso. Ti assicuro che la conciatura di scaglie di drago si rivelerà per te una strada redditizia e ricca di soddisfazioni.\n\nPer addestrarti in quest'arte in futuro, ti basterà parlare con me, e ti metterò a disposizione tutte le conoscenze che non hai ancora fatto tue.",
+        "c49251f545a17cdbec3c": "Se sei pronto a prendere la decisione permanente di diventare un conciatore di scaglie di drago, sono pronto ad accettarti come allievo. Portami ciò che ho chiesto e cominceremo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -501,6 +704,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -533,6 +753,11 @@
     },
     "koKR": {
       "description": "용비늘 가죽세공은 확실히 쉬운 일은 아니네만 분명 엄청난 보상이 따르는 일이지. 몇 가지만 약속해 준다면 내 자네에게 이 질 좋은 사슬 방어구를 어떻게 만들 수 있는지 가르쳐줌세.\n\n이 길을 선택했다면 원소 가죽세공술이나 전통 가죽세공술을 익히지 않을 것임을 약속하게. 세 가지 중 통달할 수 있는 기술은 한 가지 뿐이네. 그리고 실력 평가를 할 겸, 전갈의 껍질로 만든 자네 최고의 가죽세공품도 좀 필요하네. 마지막으로 자네가 재료를 조달할 수 있는 능력이 있다는 것을 증명하기 위해 용비늘 가죽세공의 주재료인 녹색용혈족의 비늘을 구해오게.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "용비늘 가죽세공은 쉽지는 않지만 매우 보람이 있습니다.  이 고급 쇠사슬 갑옷 만드는 법을 알려드리지만 특정 조건에 동의하는 경우에만 가능합니다.\n\nB이 길을 선택하면 정령이나 부족의 가죽세공을 절대 배우지 않겠다는 데 동의하는 것입니다.  공예의 정점에는 세 개 중 하나만 위한 공간이 있습니다.  게다가 전갈 갑옷과 관련된 당신의 최고의 작품 샘플이 필요합니다.  마지막으로 거래의 필수품인 용혈족의 비늘을 획득할 수 있다는 증거가 필요합니다.",
+        "48a1836d97f2599ae1ca": "당신에게 건네줄게 - 당신이 방금 한 것처럼 영구적인 결정을 내리려면 강한 의지가 필요합니다.  장담하건대, 용비늘 가죽세공은 수익성 있고 보람 있는 길이 될 것입니다.\n\n미래를 위한 예술 교육을 받으려면 저에게 말씀해 주십시오.  당신 것.",
+        "c49251f545a17cdbec3c": "용비늘 가죽 세공인이 되어 영구적인 결정을 내릴 준비가 되었으면 학생으로 받아들일 준비가 되어 있습니다.  내가 요청한 것을 가져오면 교육을 시작하겠습니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -558,6 +783,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -592,6 +835,11 @@
     },
     "plPL": {
       "description": "Skórnictwo smoczych łusek nie jest łatwe, lecz daje wielką satysfakcję. Nauczę cię tworzyć tę wspaniałą kolczugę, ale tylko jeśli zgodzisz się na pewne warunki.\n\nWybierając tę drogę, zgadzasz się nigdy nie uczyć skórnictwa żywiołów ani plemiennego. Na szczycie rzemiosła jest miejsce tylko na jedną z trzech sztuk. Potrzebuję też próbek twoich najlepszych prac z pancerzem ze skorpida. Wreszcie musisz dowieść, że potrafisz zdobyć podstawowy materiał tego rzemiosła: łuski smoczych pobratymców.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Kaletnictwo smoczych łusek nie jest łatwe, ale daje wielkie korzyści. Nauczę cię robić tę piękną kolczugę, jeśli zgodzisz się na pewne warunki.$B$BWybierając tę drogę, zgadzasz się nigdy nie uczyć kaletnictwa żywiołów ani plemiennego; na szczycie rzemiosła można wybrać tylko jedną z trzech dróg. Potrzebuję też próbek twojej najlepszej zbroi skorpida i dowodu, że potrafisz zdobyć podstawowy materiał: łuski smoczych istot.",
+        "48a1836d97f2599ae1ca": "Muszę przyznać, że podjęcie trwałej decyzji wymaga silnej woli. Zapewniam, że kaletnictwo smoczych łusek okaże się dochodową i satysfakcjonującą drogą.$b$bAby dalej się szkolić, porozmawiaj ze mną, a udostępnię ci wiedzę, której jeszcze nie posiadasz.",
+        "c49251f545a17cdbec3c": "Jeśli jesteś gotów na trwałą decyzję o specjalizacji w smoczych łuskach, przyjmę cię na ucznia. Przynieś to, o co prosiłem, a zaczniemy naukę."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -618,6 +866,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "abae54b8ccefe82d5724b17eef6ef02cbe56638861e686adaacd23fddfb020ee"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -651,6 +914,11 @@
     },
     "ptBR": {
       "description": "A couraria dragônica não é fácil, mas é extremamente gratificante. Vou lhe ensinar como fazer uma bela armadura de malha como esta, mas só se você aceitar algumas condições.\n\nAo escolher a couraria dragônica, você concorda em jamais aprender a elemental ou a tribal. Quando se chega ao ápice da profissão, só há espaço para um dos três caminhos. Além disso, vou precisar de algumas amostras dos seus melhores trabalhos com armadura escorpídea. Por fim, quero que você prove sua capacidade de obter a matéria-prima da nossa arte: escamas draconianas.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "A couraria dragônica não é fácil, mas é extremamente gratificante. Vou lhe ensinar como fazer uma bela armadura de malha como esta, mas só se você aceitar algumas condições.\n\nAo escolher a couraria dragônica, você concorda em jamais aprender a elemental ou a tribal. Quando se chega ao ápice da profissão, só há espaço para um dos três caminhos. Além disso, vou precisar de algumas amostras dos seus melhores trabalhos com armadura escorpídea. Por fim, quero que você prove sua capacidade de obter a matéria-prima da nossa arte: escamas draconianas.",
+        "48a1836d97f2599ae1ca": "Tenho que admitir: é preciso muita determinação para tomar uma decisão permanente como essa. Garanto que o trabalho em couro de escama de dragão será um caminho lucrativo e gratificante.$b$bPara continuar aprendendo, fale comigo e compartilharei o conhecimento que você ainda não possui.",
+        "c49251f545a17cdbec3c": "Se está pronto para tomar a decisão permanente de trabalhar com escamas de dragão, estou pronto para aceitá-lo como aluno. Traga o que pedi e começaremos."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -676,6 +944,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -710,6 +994,11 @@
     },
     "ruRU": {
       "description": "Кожевничество школы чешуи драконов – непростое ремесло, однако весьма прибыльное. Я научу тебя изготовлять отличные кольчужные доспехи, но при одном условии. \n\nВыбрав этот путь, ты откажешься от изучения школ традиций предков и силы стихий. На пути к вершине мастерства ты должен выбрать лишь одну из трех. Кроме того, я должен взглянуть на лучшие твои работы – в том числе на доспехи скорпида. И наконец, докажи мне, что ты способен добыть основу нашего ремесла – чешую дракона.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Кожевничество школы чешуи драконов – непростое ремесло, однако весьма прибыльное. Я научу тебя изготовлять отличные кольчужные доспехи, но при одном условии. \n\nВыбрав этот путь, ты откажешься от изучения школ традиций предков и силы стихий. На пути к вершине мастерства ты должен выбрать лишь одну из трех. Кроме того, я должен взглянуть на лучшие твои работы – в том числе на доспехи скорпида. И наконец, докажи мне, что ты способен добыть основу нашего ремесла – чешую дракона.",
+        "48a1836d97f2599ae1ca": "Ладно. Запомни накрепко – возможности изучить другие разделы работы с кожей у тебя больше не будет. Тренировка твоя будет осуществляться мной с большой скидкой. Просто поговори со мной, потом, в будущем.",
+        "c49251f545a17cdbec3c": "Ты готов к этому постоянному решению стать мастером кожевничества: чешуи драконов"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -735,6 +1024,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -769,6 +1076,11 @@
     },
     "svSE": {
       "description": "Läderhantverk med drakfjäll är inte lätt, men mycket givande. Jag ska lära dig att tillverka denna fina ringbrynja, men bara om du går med på vissa villkor.\n\nGenom att välja denna väg går du med på att aldrig lära dig elementärt läderhantverk eller stammarnas läderhantverk. På hantverkets högsta nivå finns bara utrymme för en av de tre. Dessutom behöver jag några prov på ditt bästa arbete med skorpionsrustning. Slutligen behöver jag bevis på din förmåga att skaffa hantverkets grundmaterial: drakvarelsers fjäll.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Drakfjällsläderarbete är inte lätt, men mycket givande. Jag lär dig att göra denna fina ringbrynja om du går med på vissa villkor.$B$BGenom att välja denna väg lovar du att aldrig lära dig elementärt eller stamorienterat läderarbete; det finns bara plats för en av de tre inriktningarna. Jag behöver också prov på ditt bästa arbete med skorpidrustning och bevis på att du kan skaffa hantverkets grundmaterial: fjäll från drakvarelser.",
+        "48a1836d97f2599ae1ca": "Jag måste medge att det krävs stark vilja för ett permanent beslut som ditt. Jag försäkrar dig att drakfjällsläderarbete blir en lönsam och givande väg.$b$bFör vidare träning behöver du bara tala med mig, så delar jag med mig av den kunskap du ännu inte har.",
+        "c49251f545a17cdbec3c": "Om du är redo att permanent bli drakfjällsläderarbetare är jag redo att ta dig som elev. Ge mig det jag bad om så börjar vi."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -795,6 +1107,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "abae54b8ccefe82d5724b17eef6ef02cbe56638861e686adaacd23fddfb020ee"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -828,6 +1155,11 @@
     },
     "trTR": {
       "description": "Dragonscale deri işçiliği kolay değil ama son derece ödüllendirici. Bu güzel örme zırhı yapmayı öğreteceğim ama yalnızca bazı koşulları kabul edersen.\n\nBu yolu seçerek elemental ya da kabile deri işçiliğini asla öğrenmemeyi kabul edersin. Zanaatın zirvesinde üçünden yalnızca birine yer var. Ayrıca scorpid zırhındaki en iyi işinden örnekler gerekecek. Son olarak mesleğin temel malzemesini, dragonkin pullarını edinebildiğine kanıt isteyeceğim.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Ejderha pulu dericiliği kolay değildir ama son derece ödüllendiricidir. Bazı koşulları kabul edersen sana bu güzel zincir zırhı yapmayı öğretirim.$B$BBu yolu seçerek element veya kabile dericiliğini asla öğrenmemeyi kabul edersin; zanaatın zirvesinde üçünden yalnızca birine yer vardır. Ayrıca akrep zırhıyla ilgili en iyi çalışmalarından örnekler ve mesleğin temel malzemesi olan ejderha pullarını edinebildiğine dair kanıt istiyorum.",
+        "48a1836d97f2599ae1ca": "Kabul etmeliyim ki böyle kalıcı bir karar vermek güçlü irade ister. Ejderha pulu dericiliğinin kazançlı ve ödüllendirici bir yol olacağını garanti ederim.$b$bİleride eğitim almak için benimle konuşman yeterli; henüz öğrenmediğin bilgileri sana sunarım.",
+        "c49251f545a17cdbec3c": "Kalıcı bir karar verip ejderha pulu dericisi olmaya hazırsan seni öğrenci olarak kabul etmeye hazırım. İstediklerimi getir, eğitimine başlayalım."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -854,6 +1186,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "abae54b8ccefe82d5724b17eef6ef02cbe56638861e686adaacd23fddfb020ee"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -887,6 +1234,11 @@
     },
     "ukUA": {
       "description": "Шкірництво драконячої луски — непросте ремесло, проте вельми прибуткове. Я можу навчити тебе виготовляти цю чудову кольчугу, але тільки якщо ти погодишся на певні умови.\n\nОбравши цей шлях, ти зобов'язуєшся ніколи не вивчати шкірництво стихій чи предків. Ти можеш практикувати лиш одне з цих трьох ремесел. Крім того, мені знадобляться зразки твоїх обладунків з луски скорпіда. Нарешті, мені потрібен доказ твоєї здатності добувати основні матеріали для цієї справи: луску драконів.",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "Шкіряна справа драконячої луски нелегка, але дуже вдячна. Я навчу тебе виготовляти ці чудові кольчужні обладунки, якщо погодишся на певні умови.$B$BОбравши цей шлях, ти погоджуєшся ніколи не вивчати стихійне чи племінне шкіряництво: на вершині ремесла є місце лише для однієї з трьох спеціалізацій. Мені також потрібні зразки твоєї найкращої роботи зі скорпідними обладунками й доказ, що ти можеш добути основу ремесла — луску драконячих істот.",
+        "48a1836d97f2599ae1ca": "Мушу визнати, що для такого остаточного рішення потрібна сильна воля. Запевняю, шкіряництво драконячої луски буде прибутковим і вдячним шляхом.$b$bЩоб навчатися далі, просто поговори зі мною, і я поділюся знаннями, яких тобі ще бракує.",
+        "c49251f545a17cdbec3c": "Якщо готовий назавжди стати майстром драконячої луски, я готовий прийняти тебе в учні. Принеси те, що я просив, і ми почнемо."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -914,6 +1266,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "abae54b8ccefe82d5724b17eef6ef02cbe56638861e686adaacd23fddfb020ee"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -949,6 +1316,11 @@
     },
     "zhCN": {
       "description": "龙鳞制皮可不是件简单的工作，但是收益也非常丰厚。我可以教你如何制造这件精良的锁甲，但你得先同意我的一些条件。\n\n你选择了这条路，就必须承诺永远不会学习元素制皮技术或部族制皮技术，只能沿着这条路走下去。此外，你还必须制造一件蝎壳护甲。最后，我还要看看你是否有能力获得制造护甲所必需的材料：龙类的鳞片。",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "龙鳞制皮可不是件简单的工作，但是收益也非常丰厚。我可以教你如何制造这件精良的锁甲，但你得先同意我的一些条件。\n\n你选择了这条路，就必须承诺永远不会学习元素制皮技术或部族制皮技术，只能沿着这条路走下去。此外，你还必须制造一件蝎壳护甲。最后，我还要看看你是否有能力获得制造护甲所必需的材料：龙类的鳞片。",
+        "48a1836d97f2599ae1ca": "我将向你传授龙鳞制皮技能，你做这样的决定一定是下了极大的勇气吧。我向你保证，掌握这种技能会给你带来丰厚的回报。\n\n要学会龙鳞制皮，你只要跟我交谈，我就会把我所掌握的知识都传授给你。\n",
+        "c49251f545a17cdbec3c": "如果你决心成为龙鳞制皮师，那麽我就收下你这个学生。把我要的东西交给我，我就可以开始向你传授技能了。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -974,6 +1346,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -1008,6 +1398,11 @@
     },
     "zhTW": {
       "description": "龍鱗製皮可不是件簡單的工作，但是收益也非常豐厚。我可以教你如何製造這件精良的鎖甲，但你得先同意我的一些條件。\n\n你選擇了這條路，就必須承諾永遠不會學習元素製皮技術或部族製皮技術，你只能從這三種頂尖的手工中選擇一個。此外，你還必須製造一件蠍殼護甲。最後，我還要看看你是否有能力獲得製造護甲所必需的材料：龍皮的鱗片。",
+      "dialogue": {
+        "1dcf31e4407a6014e258": "龍鱗制皮可不是件簡單的工作，但是收益也非常豐厚。我可以教你如何製造這件精良的鎖甲，但你得先同意我的一些條件。\n\n你選擇了這條路，就必須承諾永遠不會學習元素制皮技術或部族制皮技術，只能沿著這條路走下去。此外，你還必須製造一件蠍殼護甲。最後，我還要看看你是否有能力獲得製造護甲所必需的材料：龍類的鱗片。",
+        "48a1836d97f2599ae1ca": "我將向你傳授龍鱗制皮技能，你做這樣的決定一定是下了極大的勇氣吧。我向你保證，掌握這種技能會給你帶來豐厚的回報。\n\n要學會龍鱗制皮，你只要跟我交談，我就會把我所掌握的知識都傳授給你。",
+        "c49251f545a17cdbec3c": "如果你決心成爲龍鱗制皮師，那麼我就收下你這個學生。把我要的東西交給我，我就可以開始向你傳授技能了。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1033,6 +1428,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1dcf31e4407a6014e258": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.48a1836d97f2599ae1ca": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.c49251f545a17cdbec3c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "original",

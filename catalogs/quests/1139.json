@@ -12,9 +12,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "4638c3ca1a618a55f812": {
+      "lineId": "q:1139:complete",
+      "npcId": 2918,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "567dbdcabecc6669c619": {
+      "lineId": "q:1139:accept",
+      "npcId": 2918,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "d3712be5270ec2fa48b1": {
+      "lineId": "q:1139:progress",
+      "npcId": 2918,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Zpomalili jsme klan Shadowforge tím, že jsme je odřízli od Blackrock Spire, ale Hammertoeův úkol zůstává nesplněn. Jeho smrt nesmí být marná. Snil o nalezení Tabule vůle: kamenného střepu, do kterého sami titáni vtiskli magii, aby jejich výtvorům vdechla život, aby měly vlastní vůli, nebo tak alespoň praví legendy.\n\nStále musíme Tabuli získat dřív, než ji najde klan Shadowforge.\n\nVrať se do Uldamanu, najdi tabuli a okamžitě se vrať sem.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<Poradce Belgrum nevěřícně kroutí hlavou, když mu podáváš kamenný úlomek.>$B$B$N, to je úžasné. Nechám jej co nejdříve dopravit královým mágům. Budou ho chtít prozkoumat a zjistit, zda jsou legendy pravdivé. O tom si ale povíme jindy: pomohl jsi našemu lidu víc, než jsem kdy očekával. Děkuji.",
+        "567dbdcabecc6669c619": "Klan Shadowforge jsme zpomalili tím, že jsme ho odřízli od Blackrock Spire, ale Hammertoeův úkol zůstává nesplněný. Jeho smrt nesmí být marná. Snil o nalezení Tabulky vůle: kamenného úlomku, který sami titáni popsali magií, aby svým výtvorům vdechli život a vlastní vůli, alespoň podle legend.$B$BMusíme tabulku získat dříve než klan Shadowforge.$B$BVrať se do Uldamanu, najdi tabulku a ihned se vrať.",
+        "d3712be5270ec2fa48b1": "Hammertoeův úkol musí být splněn, $N. To mu dlužím.$B$BTvůj návrat do Uldamanu je zásadní nejen pro tento cíl, ale i pro bezpečnost všech trpaslíků. Kdo ví, jak mocnou by se armáda golemů Temného železa stala, kdyby získali tabulku."
+      },
       "summary": "Najdi Tablet of Will a dones ji poradci Belgrumovi do Ironforge.",
       "title": "Ztracené tabule vůle",
       "translationMetadata": {
@@ -24,6 +52,21 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "Vi har bremset Shadowforge-klanen ved at afskære dem fra Blackrock Spire, men Hammertoes mission er stadig ikke fuldført. Hans død må ikke være forgæves. Han drømte om at finde Tablet of Will: et stenskår indgraveret med magi af titanerne selv for at hjælpe med at give deres skabninger liv og dermed en egen vilje, eller sådan siger legenderne.\n\nVi må stadig hente tavlen, før Shadowforge-klanen finder den.\n\nVend tilbage til Uldaman, find tavlen, og kom straks tilbage hertil.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<Rådgiver Belgrum ryster vantro på hovedet, da du rækker ham stenfragmentet.>$B$B$N, det er utroligt. Jeg sender det til kongens magikere hurtigst muligt. De vil undersøge det for at finde ud af, om legenderne taler sandt. Men det må vi tale om en anden gang: Du har hjulpet vores folk mere, end jeg nogensinde havde ventet. Tak.",
+        "567dbdcabecc6669c619": "Vi har sinket Shadowforge-klanen ved at afskære den fra Blackrock Spire, men Hammertoes opgave er stadig ikke fuldført. Hans død må ikke være forgæves. Han drømte om at finde Viljens Tavle: et stenfragment indskrevet med magi af titanerne selv for at give deres skabninger liv og en egen vilje, eller sådan siger legenderne.$B$BVi må finde tavlen, før Shadowforge-klanen gør det.$B$BVend tilbage til Uldaman, find tavlen, og kom straks tilbage.",
+        "d3712be5270ec2fa48b1": "Hammertoes opgave må fuldføres, $N. Det skylder jeg ham.$B$BDin tilbagevenden til Uldaman er afgørende ikke blot for det mål, men for alle dværges sikkerhed. Med tavlen i Dark Irons hænder ved ingen, hvor stærk deres golemhær kunne blive."
+      },
       "summary": "Find Tablet of Will, og bring dem tilbage til rådgiver Belgrum i Ironforge.",
       "title": "De tabte viljestavler",
       "translationMetadata": {
@@ -53,6 +101,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "057531ff7d2bd9625dfb4c32d809b79a82bfc252fbc7da2dd5748c8f7aff629b"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -71,6 +134,11 @@
     },
     "deDE": {
       "description": "Wir haben den Schattenschmiedeklan ausgebremst, indem wir ihn von der Blackrockspitze abgeschnitten haben, doch Hammertoes Mission wurde noch nicht erfüllt. Sein Tod darf nicht umsonst gewesen sein. Er träumte davon, die Schrifttafel des Willens zu finden: eine Steintafel, graviert mit Magie durch die Titanen selbst, die helfen, ihren Schöpfungen Leben einzuhauchen und ihnen damit einen eigenen Willen ermöglichen. So jedenfalls heißt es in den Legenden.\n\nDennoch müssen wir die Tafel bergen, ehe der Schattenschmiedeklan sie finden kann.\n\nKehrt nach Uldaman zurück, sucht die Tafel und kommt unverzüglich wieder her.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": " \n $N, das ist erstaunlich. Ich muss das schnellstens zu den Magiern des Königs bringen lassen. Sie werden das Teil studieren und herausfinden, ob die Legenden wahr sind. Doch das soll ein andermal diskutiert werden. Ihr habt unserem Volk mehr geholfen, als ich für möglich hielt - danke. ",
+        "567dbdcabecc6669c619": "Wir haben den Schattenschmiedeklan ausgebremst, indem wir ihn von der Blackrockspitze abgeschnitten haben, doch Hammertoes Mission wurde noch nicht erfüllt. Sein Tod darf nicht umsonst gewesen sein. Er träumte davon, die Schrifttafel des Willens zu finden: eine Steintafel, graviert mit Magie durch die Titanen selbst, die helfen, ihren Schöpfungen Leben einzuhauchen und ihnen damit einen eigenen Willen ermöglichen. So jedenfalls heißt es in den Legenden.\n\nDennoch müssen wir die Tafel bergen, ehe der Schattenschmiedeklan sie finden kann.\n\nKehrt nach Uldaman zurück, sucht die Tafel und kommt unverzüglich wieder her.",
+        "d3712be5270ec2fa48b1": "Hammertoes Auftrag muss aktualisiert werden, $N. Das schulde ich ihm. \n \n Nicht nur deswegen ist es zwingend, dass Ihr nach Uldaman zurückkehrt, sondern auch für die Sicherheit aller Zwerge. Wenn die Tafel den Dunkeleisenzwergen in die Hände fällt, kann niemand sagen, wie mächtig ihre Golemarmee werden könnte. "
+      },
       "summary": "Sucht die Tafel des Willens und bringt sie zu Berater Belgrum in Ironforge.",
       "title": "Die verlorene Tafel des Willens",
       "translationMetadata": {
@@ -79,6 +147,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -95,6 +181,11 @@
     },
     "enUS": {
       "description": "We've slowed the Shadowforge clan by cutting them off from Blackrock Spire, but Hammertoe's quest is still unfulfilled. His death must not be in vain. He dreamt of finding the Tablet of Will: a stone shard inscribed with magic by the titans themselves to help imbue their creations with life--making them have a will of their own, or so the legends say.\n\nWe must still recover the Tablet before the Shadowforge clan finds it.\n\nReturn to Uldaman, find the tablet, and return here immediately.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<Advisor Belgrum shakes his head in disbelief as you hand him the stone shard.>$B$B$N, this is amazing. I shall have this brought to the king's mages as soon as possible. They will want to study it to find out if the legends are true. But that is a discussion for another time: you have aided our people more than I would have ever expected--thank you.",
+        "567dbdcabecc6669c619": "We've slowed the Shadowforge clan by cutting them off from Blackrock Spire, but Hammertoe's quest is still unfulfilled. His death must not be in vain. He dreamt of finding the Tablet of Will: a stone shard inscribed with magic by the titans themselves to help imbue their creations with life--making them have a will of their own, or so the legends say.$B$BWe must still recover the Tablet before the Shadowforge clan finds it.$B$BReturn to Uldaman, find the tablet, and return here immediately.",
+        "d3712be5270ec2fa48b1": "Hammertoe's quest must be actualized, $N. I owe him that much.$B$BYour return to Uldaman is imperative not only to that goal, but also to the safety of all dwarven kind. With the tablet in the hands of the Dark Irons who knows how powerful their army of golems would become."
+      },
       "summary": "Find the Tablet of Will, and return them to Advisor Belgrum in Ironforge.",
       "title": "The Lost Tablets of Will",
       "translationMetadata": {
@@ -103,6 +194,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -120,6 +229,11 @@
     },
     "esES": {
       "description": "Hemos conseguido frenar al clan Forjatiniebla al aislarlos de la Cumbre de Roca Negra pero aún no hemos completado la misión de Piemartillo. Su muerte no debe ser en vano. Soñaba con encontrar la tablilla de Voluntad: un fragmento de piedra grabado con magia de los mismísimos titanes para ayudar a imbuir de vida a sus creaciones dándoles voluntad propia, o al menos eso cuenta la leyenda.\n\nDebemos recuperar la tablilla antes de que lo haga el clan Forjatiniebla.\n\nRegresa a Uldaman, encuentra la tablilla y vuelve aquí inmediatamente.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "\n $N, esto es increíble.  Haré que se lo lleven a los magos del rey lo antes posible.  Querrán estudiarlo para saber si las leyendas son ciertas.  Pero esa es una discusión para otro momento: ha ayudado a nuestra gente más de lo que nunca hubiera esperado, gracias.",
+        "567dbdcabecc6669c619": "Hemos conseguido frenar al clan Forjatiniebla al aislarlos de la Cumbre de Roca Negra pero aún no hemos completado la misión de Piemartillo. Su muerte no debe ser en vano. Soñaba con encontrar la tablilla de Voluntad: un fragmento de piedra grabado con magia de los mismísimos titanes para ayudar a imbuir de vida a sus creaciones dándoles voluntad propia, o al menos eso cuenta la leyenda.\n\nDebemos recuperar la tablilla antes de que lo haga el clan Forjatiniebla.\n\nRegresa a Uldaman, encuentra la tablilla y vuelve aquí inmediatamente.",
+        "d3712be5270ec2fa48b1": "La búsqueda de Hammertoe debe actualizarse, $N.  Le debo tanto.\n\n Tu regreso a Uldaman es imperativo no solo para ese objetivo, sino también para la seguridad de todos los enanos.  Con la tablilla en manos de los Hierro Negro, quién sabe cuán poderoso se volvería su ejército de golems."
+      },
       "summary": "Encuentra la tablilla de Voluntad y llévasela al consejero Belgrum en Forjaz.",
       "title": "Las tablillas perdidas de Voluntad",
       "translationMetadata": {
@@ -128,6 +242,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -144,6 +276,11 @@
     },
     "esMX": {
       "description": "Hemos conseguido frenar al clan Forjatiniebla al aislarlos de la Cumbre de Roca Negra pero aún no hemos completado la misión de Piemartillo. Su muerte no debe ser en vano. Soñaba con encontrar la tablilla de Voluntad: un fragmento de piedra grabado con magia de los mismísimos titanes para ayudar a imbuir de vida a sus creaciones dándoles voluntad propia, o al menos eso cuenta la leyenda.\n\nDebemos recuperar la tablilla antes de que lo haga el clan Forjatiniebla.\n\nRegresa a Uldaman, encuentra la tablilla y vuelve aquí inmediatamente.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "\n$n, esto es asombroso. Haré que se lo lleven a los magos del rey lo antes posible. Querrán estudiarlo para averiguar si las leyendas son ciertas. Pero esa es una discusión para otro momento: has ayudado a nuestra gente más de lo que hubiera esperado, gracias.",
+        "567dbdcabecc6669c619": "Hemos conseguido frenar al clan Forjatiniebla al aislarlos de la Cumbre de Roca Negra pero aún no hemos completado la misión de Piemartillo. Su muerte no debe ser en vano. Soñaba con encontrar la tablilla de Voluntad: un fragmento de piedra grabado con magia de los mismísimos titanes para ayudar a imbuir de vida a sus creaciones dándoles voluntad propia, o al menos eso cuenta la leyenda.\n\nDebemos recuperar la tablilla antes de que lo haga el clan Forjatiniebla.\n\nRegresa a Uldaman, encuentra la tablilla y vuelve aquí inmediatamente.",
+        "d3712be5270ec2fa48b1": "La búsqueda de Piemartillo debe continuar, $n. Le debo mucho.\n\nTu regreso a Uldaman es imperativo no solo para ese objetivo, sino también para la seguridad de todos los enanos. Con la tablilla en manos de los Forjatiniebla, quién sabe lo poderoso que se volvería su ejército de golems."
+      },
       "summary": "Encuentra la tablilla de Voluntad y llévasela al consejero Belgrum en Forjaz.",
       "title": "Las tablillas perdidas de Voluntad",
       "translationMetadata": {
@@ -152,6 +289,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -168,6 +323,11 @@
     },
     "frFR": {
       "description": "Nous avons ralenti le clan Ombreforge en le coupant du pic Rochenoire, mais la quête d'Hammertoe n'est toujours pas accomplie. Sa mort ne doit pas rester vaine. Il voulait trouver la Tablette de Volonté : un morceau de pierre que les Titans avaient gravé de caractères magiques pour les aider à donner la vie à leurs créations, leur communiquer une volonté propre. C'est ce que dit la légende en tout cas. \n\nIl nous faut retrouver cette tablette avant ceux du clan Ombreforge !\n\nRepartez pour Uldaman, trouvez la Tablette et revenez ici immédiatement.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": " \n $N, c'est ahurissant ! Je dois la faire porter aux mages du roi aussi vite que possible. Ils voudront l'analyser pour vérifier la véracité de la légende ! Mais c'est un autre sujet. Vous avez apporté à notre peuple une aide plus grande que tout ce que nous aurions pu espérer. Merci !",
+        "567dbdcabecc6669c619": "Nous avons ralenti le clan Ombreforge en le coupant du pic Blackrock, mais la quête d'Hammertoe n'est toujours pas accomplie. Sa mort ne doit pas rester vaine. Il voulait trouver la Tablette de Volonté : un morceau de pierre que les Titans avaient gravé de caractères magiques pour les aider à donner la vie à leurs créations, leur communiquer une volonté propre. C'est ce que dit la légende en tout cas. \n\nIl nous faut retrouver cette tablette avant ceux du clan Ombreforge !\n\nRepartez pour Uldaman, trouvez la Tablette et revenez ici immédiatement.",
+        "d3712be5270ec2fa48b1": "La quête d'Hammertoe doit être reprise, $N. Je lui dois au moins ça. \n \n Vous devez impérativement retourner à Uldaman, non seulement dans ce but, mais également dans l'intérêt de toute la race des nains. Si la Tablette tombe entre les mains des Sombrefer, qui sait le pouvoir que pourrait avoir leur armée de golems. "
+      },
       "summary": "Trouver la Tablette de Volonté et la rapporter au Conseiller Belgrum à Forgefer.",
       "title": "La tablette de volonté",
       "translationMetadata": {
@@ -176,6 +336,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -193,6 +371,11 @@
     },
     "hrHR": {
       "description": "Usporili smo klan Shadowforge presjekavši im vezu s Blackrock Spireom, ali Hammertoeova potraga još nije dovršena. Njegova smrt ne smije biti uzaludna. Sanjao je o pronalasku ploče volje: kamene krhotine u koju su sami titani upisali magiju kako bi svojim tvorevinama udahnuli život i dali im vlastitu volju, barem tako kažu legende.\n\nJoš moramo pribaviti ploču prije nego što je pronađe klan Shadowforge.\n\nVrati se u Uldaman, pronađi ploču i odmah se vrati ovamo.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<Savjetnik Belgrum u nevjerici odmahuje glavom dok mu predaješ kameni ulomak.>$B$B$N, ovo je nevjerojatno. Pobrinut ću se da ga kraljevi magovi dobiju što prije. Proučit će ga da saznaju jesu li legende istinite. No o tome drugi put: pomogao si našem narodu više nego što sam očekivao. Hvala ti.",
+        "567dbdcabecc6669c619": "Usporili smo klan Shadowforge odsjekavši ga od Blackrock Spirea, ali Hammertoeova potraga ostaje nedovršena. Njegova smrt ne smije biti uzaludna. Sanjao je pronaći Ploču volje: kameni ulomak u koji su sami titani upisali magiju kako bi svojim tvorevinama udahnuli život i vlastitu volju, barem tako kažu legende.$B$BMoramo pronaći ploču prije klana Shadowforge.$B$BVrati se u Uldaman, pronađi ploču i odmah se vrati ovamo.",
+        "d3712be5270ec2fa48b1": "Hammertoeova potraga mora se ostvariti, $N. To mu dugujem.$B$BTvoj povratak u Uldaman nužan je ne samo za taj cilj nego i za sigurnost svih patuljaka. Tko zna koliko bi vojska golema Dark Irona postala moćna s pločom u njihovim rukama."
+      },
       "summary": "Pronađi ploču volje i vrati je savjetniku Belgrumu u Ironforgeu.",
       "title": "Izgubljene ploče volje",
       "translationMetadata": {
@@ -202,6 +385,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "057531ff7d2bd9625dfb4c32d809b79a82bfc252fbc7da2dd5748c8f7aff629b"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -220,6 +418,11 @@
     },
     "itIT": {
       "description": "Abbiamo rallentato il clan Shadowforge tagliandolo fuori da Blackrock Spire, ma la missione di Hammertoe è ancora incompiuta. La sua morte non deve essere vana. Sognava di trovare la Tavoletta della Volontà: un frammento di pietra su cui i titani stessi incisero una magia per infondere vita nelle loro creazioni, dando loro una volontà propria, o almeno così dicono le leggende.\n\nDobbiamo ancora recuperare la Tavoletta prima che la trovi il clan Shadowforge.\n\nTorna a Uldaman, trova la tavoletta e torna immediatamente qui.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "\n$N, è straordinario. Lo farò portare ai maghi del re il prima possibile. Vorranno studiarlo per scoprire se le leggende sono vere. Ma ne parleremo un'altra volta: hai aiutato il nostro popolo più di quanto mi sarei mai aspettato — grazie.",
+        "567dbdcabecc6669c619": "Abbiamo rallentato il clan Shadowforge tagliandolo fuori dalla Blackrock Spire, ma la missione di Hammertoe non è ancora compiuta. La sua morte non deve essere vana. Sognava di trovare la Tavoletta della Volontà: un frammento di pietra inciso con la magia dai titani in persona per aiutare a infondere la vita nelle loro creazioni — per dare loro una volontà propria, o almeno così dicono le leggende.\n\nDobbiamo ancora recuperare la Tavoletta prima che la trovi il clan Shadowforge.\n\nTorna a Uldaman, trova la tavoletta e torna qui immediatamente.",
+        "d3712be5270ec2fa48b1": "La missione di Hammertoe deve essere portata a compimento, $N. Glielo devo.\n\nIl tuo ritorno a Uldaman è indispensabile non solo per questo scopo, ma anche per la sicurezza di tutto il popolo dei nani. Con la tavoletta nelle mani dei Dark Iron, chissà quanto diventerebbe potente il loro esercito di golem."
+      },
       "summary": "Trova la tavoletta della volontà e riportala al consigliere Belgrum a Ironforge.",
       "title": "Le Tavole della Volontà perdute",
       "translationMetadata": {
@@ -229,6 +432,24 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "057531ff7d2bd9625dfb4c32d809b79a82bfc252fbc7da2dd5748c8f7aff629b"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -247,6 +468,11 @@
     },
     "koKR": {
       "description": "검은바위 첨탑에서 어둠괴철로단 드워프의 진로를 끊어 그들의 진군은 늦추었지만, 해머토의 꿈은 아직 이루어지지 못했소. 절대 그의 죽음을 헛되이 해서는 안 되오. 해머토는 늘 결의의 서판을 찾기를 꿈꾸었지. 전설에 의하면, 그것은 티탄들이 자신의 의지를 가진 생명체를 창조하는데 사용하려고 몸소 마법으로 돌에 새긴 서판이라고 하더군.\n\n아무튼 어둠괴철로단 드워프들이 발견하기 전에 우리가 먼저 그걸 되찾아와야 하오.\n\n울다만으로 돌아가서 그 서판을 찾는 즉시 다시 이곳으로 돌아오시오.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "\n정말 놀랍군. 가능한 한 빨리 이 서판을 폐하의 직속 마법사들에게 전달하도록 하겠소. 이 서판을 연구해 그 전설이 사실인지 알고 싶어할 테니... 그건 나중 얘기고... 당신은 내 기대 이상으로 우리 종족에게 크나큰 힘이 되어 주었어. 고맙소.",
+        "567dbdcabecc6669c619": "검은바위 첨탑에서 어둠괴철로단 드워프의 진로를 끊어 그들의 진군은 늦추었지만, 해머토의 꿈은 아직 이루어지지 못했소. 절대 그의 죽음을 헛되이 해서는 안 되오. 해머토는 늘 결의의 서판을 찾기를 꿈꾸었지. 전설에 의하면, 그것은 티탄들이 자신의 의지를 가진 생명체를 창조하는데 사용하려고 몸소 마법으로 돌에 새긴 서판이라고 하더군.\n\n아무튼 어둠괴철로단 드워프들이 발견하기 전에 우리가 먼저 그걸 되찾아와야 하오.\n\n울다만으로 돌아가서 그 서판을 찾는 즉시 다시 이곳으로 돌아오시오.",
+        "d3712be5270ec2fa48b1": "해머토의 꿈을 반드시 이루어내야만 하오. 나는 그에게 그만한 빚을 졌어.\n\n당신이 울다만으로 돌아가는 것은 그러한 목표의 완수뿐 아니라 전 드워프 종족의 안녕이 걸린 중요한 문제야. 그 서판이 검은무쇠단 드워프의 손아귀에 들어가 버린다면 그들의 골렘 군대는 그야말로 무적의 세력이 될 것이오."
+      },
       "summary": "결의의 서판을 찾아 아이언포지에 있는 조언자 벨그룸에게 가져가야 합니다.",
       "title": "잃어버린 결의의 서판",
       "translationMetadata": {
@@ -255,6 +481,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -271,6 +515,11 @@
     },
     "plPL": {
       "description": "Spowolniliśmy klan Shadowforge, odcinając go od Blackrock Spire, ale misja Hammertoe'a wciąż nie została spełniona. Nie może zginąć na próżno. Marzył o znalezieniu tablicy woli: kamiennego odłamka zapisanego magią przez samych tytanów, by tchnąć życie w ich twory i dać im własną wolę. Tak przynajmniej mówią legendy.\n\nNadal musimy odzyskać tablicę, zanim znajdzie ją klan Shadowforge.\n\nWróć do Uldamanu, znajdź tablicę i natychmiast wracaj.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<Doradca Belgrum kręci głową z niedowierzaniem, gdy podajesz mu kamienny odłamek.>$B$B$N, to niezwykłe. Każę jak najszybciej dostarczyć go królewskim magom. Zechcą zbadać, czy legendy mówią prawdę. Ale to temat na inną rozmowę: pomoc dla naszego ludu przerosła moje oczekiwania. Dziękuję.",
+        "567dbdcabecc6669c619": "Spowolniliśmy klan Shadowforge, odcinając go od Blackrock Spire, lecz zadanie Hammertoe'a pozostaje niewypełnione. Jego śmierć nie może pójść na marne. Marzył o odnalezieniu Tablicy Woli: kamiennego odłamka pokrytego magią przez samych tytanów, by obdarzyć ich twory życiem i własną wolą, przynajmniej według legend.$B$BMusimy odzyskać tablicę przed klanem Shadowforge.$B$BWróć do Uldamanu, znajdź tablicę i natychmiast wracaj.",
+        "d3712be5270ec2fa48b1": "Zadanie Hammertoe'a musi zostać wykonane, $N. Jestem mu to winien.$B$BTwój powrót do Uldamanu jest niezbędny nie tylko dla tego celu, ale też dla bezpieczeństwa wszystkich krasnoludów. Kto wie, jak potężna stałaby się armia golemów Dark Iron, gdyby tablica wpadła im w ręce."
+      },
       "summary": "Znajdź tablicę woli i przynieś ją doradcy Belgrumowi w Ironforge.",
       "title": "Zaginione tablice woli",
       "translationMetadata": {
@@ -280,6 +529,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "057531ff7d2bd9625dfb4c32d809b79a82bfc252fbc7da2dd5748c8f7aff629b"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -298,6 +562,11 @@
     },
     "ptBR": {
       "description": "Nós atrapalhamos o clã Umbraforja ao barrar o Pico da Rocha Negra, mas ainda falta cumprir a missão do Pé-de-malho. Ele não pode ter morrido em vão. O sonho dele era encontrar a Tabuleta da Vontade: uma pedra onde os titãs escreveram uma magia que dava vida às suas criações, fazendo com que tivessem vontade própria, ou pelo menos é o que reza a lenda.\n\nNós temos que buscar essa tabuleta antes que o clã Umbraforja ponha as patas nela.\n\nVá a Uldaman, encontre a tabuleta e volte para cá.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<O Conselheiro Belgrum balança a cabeça, incrédulo, ao receber o fragmento de pedra.>$B$B$N, isso é incrível. Mandarei levá-lo aos magos do rei o mais rápido possível. Eles vão estudá-lo para descobrir se as lendas são verdadeiras. Mas essa conversa fica para outra hora: você ajudou nosso povo muito mais do que eu esperava. Obrigado.",
+        "567dbdcabecc6669c619": "Nós atrapalhamos o clã Umbraforja ao barrar o Pico da Rocha Negra, mas ainda falta cumprir a missão do Pé-de-malho. Ele não pode ter morrido em vão. O sonho dele era encontrar a Tabuleta da Vontade: uma pedra onde os titãs escreveram uma magia que dava vida às suas criações, fazendo com que tivessem vontade própria, ou pelo menos é o que reza a lenda.\n\nNós temos que buscar essa tabuleta antes que o clã Umbraforja ponha as patas nela.\n\nVá a Uldaman, encontre a tabuleta e volte para cá.",
+        "d3712be5270ec2fa48b1": "A missão de Hammertoe precisa ser cumprida, $N. Devo isso a ele.$B$BSeu retorno a Uldaman é essencial não só para esse objetivo, mas para a segurança de todos os anões. Com a tabuinha nas mãos dos Ferro Negro, quem sabe o poder que seu exército de golens alcançaria."
+      },
       "summary": "Encontre a Tabuleta da Vontade e leve-a para o Conselheiro Belgrum em Altaforja.",
       "title": "As tabuletas perdidas da vontade",
       "translationMetadata": {
@@ -306,6 +575,22 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -322,6 +607,11 @@
     },
     "ruRU": {
       "description": "Мы смогли сдержать клан Кузни Теней, отрезав их силы от пика Черной Стали, но задание Тяжелоступа еще не выполнено. Его смерть не должна быть напрасной. Он мечтал найти табличку Воли: камень, на котором высекли магические письмена сами титаны, чтобы вдохнуть жизнь в созданных ими существ, – по крайней мере, так гласят легенды. \n\nМы должны заполучить табличку Воли прежде, чем до нее доберется клан Кузня Теней. \n\nВозвращайся в Ульдаман, найди табличку и принеси ее мне незамедлительно.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "*Советник Белграм качает головой, не веря, что вы вручили ему табличку*\n\n $N, это удивительно. Я должен как можно скорее сообщить королевским магам. Они захотят изучить ее, чтобы выяснить верность предсказаний. Но, эти дискуссию уже в другое время. Ты помог нашему народу, больше, чем я ожидал.",
+        "567dbdcabecc6669c619": "Мы смогли сдержать клан Кузни Теней, отрезав их силы от пика Черной Стали, но задание Тяжелоступа еще не выполнено. Его смерть не должна быть напрасной. Он мечтал найти табличку Воли: камень, на котором высекли магические письмена сами титаны, чтобы вдохнуть жизнь в созданных ими существ, – по крайней мере, так гласят легенды. \n\nМы должны заполучить табличку Воли прежде, чем до нее доберется клан Кузня Теней. \n\nВозвращайся в Ульдаман, найди табличку и принеси ее мне незамедлительно.",
+        "d3712be5270ec2fa48b1": "Дело Тяжелоступа должно быть продолжено, $N. Я в долгу перед ним.\n\nТвое возвращение в Ульдаман, важно, не только для этого дела, но и для безопасности всего рода дворфов. Если таблички попадут в руки Черного Железа, кто знает, насколько мощной станет их армия."
+      },
       "summary": "Найдите табличку Воли и принесите ее советнику Белграму в Стальгорн.",
       "title": "Утерянные таблички Воли",
       "translationMetadata": {
@@ -330,6 +620,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -346,6 +654,11 @@
     },
     "svSE": {
       "description": "Vi har bromsat Shadowforge-klanen genom att skära av förbindelsen med Blackrock Spire, men Hammertoes uppdrag är fortfarande oavslutat. Hans död får inte vara förgäves. Han drömde om Viljans tavla: en stenskärva där titanerna själva ristade magi för att ge sina skapelser liv och egen vilja, åtminstone enligt legenderna.\n\nVi måste ändå återfinna tavlan före Shadowforge-klanen.\n\nÅtervänd till Uldaman, hitta tavlan och kom genast tillbaka.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<Rådgivare Belgrum skakar misstroget på huvudet när du räcker honom stenfragmentet.>$B$B$N, det här är otroligt. Jag ska se till att kungens magiker får det så snart som möjligt. De vill undersöka om legenderna är sanna. Men det får vi tala om en annan gång: Du har hjälpt vårt folk mer än jag någonsin väntat mig. Tack.",
+        "567dbdcabecc6669c619": "Vi har sinkat Shadowforge-klanen genom att skära av dem från Blackrock Spire, men Hammertoes uppdrag är fortfarande ofullbordat. Hans död får inte ha varit förgäves. Han drömde om att finna Viljans tavla: ett stenfragment med magi inristad av titanerna själva för att ge deras skapelser liv och en egen vilja, åtminstone enligt legenderna.$B$BVi måste hämta tavlan innan Shadowforge-klanen hittar den.$B$BÅtervänd till Uldaman, hitta tavlan och kom genast tillbaka.",
+        "d3712be5270ec2fa48b1": "Hammertoes uppdrag måste fullbordas, $N. Det är jag skyldig honom.$B$BDin återkomst till Uldaman är avgörande inte bara för det målet utan för alla dvärgarnas säkerhet. Med tavlan i Dark Irons händer vet ingen hur mäktig deras golemarmé kan bli."
+      },
       "summary": "Hitta viljans tavla och återlämna dem till rådgivare Belgrum i Ironforge.",
       "title": "Viljans förlorade tavlor",
       "translationMetadata": {
@@ -355,6 +668,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "057531ff7d2bd9625dfb4c32d809b79a82bfc252fbc7da2dd5748c8f7aff629b"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -373,6 +701,11 @@
     },
     "trTR": {
       "description": "Shadowforge klanını Blackrock Spire'dan kopararak yavaşlattık ama Hammertoe'nun arayışı hâlâ tamamlanmadı. Ölümü boşuna olmamalı. Tablet of Will'i bulmayı düşlerdi. Titanların bizzat büyü kazıdığı, eserlerine yaşam vermeye, kendi iradelerine sahip olmalarını sağlamaya yarayan bir taş parçası. En azından efsaneler böyle der.\n\nTablet'i Shadowforge klanı bulmadan yine de geri almalıyız.\n\nUldaman'a dön, tableti bul ve hemen buraya gel.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<Danışman Belgrum taş parçasını ona uzattığında inanamayan bir ifadeyle başını sallar.>$B$B$N, bu inanılmaz. Onu en kısa sürede kralın büyücülerine göndereceğim. Efsanelerin doğru olup olmadığını anlamak için incelemek isteyecekler. Ama bunu başka zaman konuşuruz: Halkımıza beklediğimden çok daha fazla yardım ettin, teşekkür ederim.",
+        "567dbdcabecc6669c619": "Shadowforge Klanı'nı Blackrock Spire'dan ayırarak yavaşlattık, ama Hammertoe'nun görevi hâlâ tamamlanmadı. Ölümü boşa gitmemeli. İrade Tableti'ni bulmayı hayal ediyordu: efsanelere göre titanların kendi yarattıklarına hayat ve irade vermek için büyüyle işlediği bir taş parçası.$B$BTableti Shadowforge Klanı bulmadan önce ele geçirmeliyiz.$B$BUldaman'a dön, tableti bul ve hemen buraya getir.",
+        "d3712be5270ec2fa48b1": "Hammertoe'nun görevi gerçekleşmeli, $N. Ona bunu borçluyum.$B$BUldaman'a dönmen yalnızca bu amaç için değil, bütün cücelerin güvenliği için de şart. Tablet Dark Iron'ların elindeyken golem ordularının ne kadar güçleneceğini kim bilebilir?"
+      },
       "summary": "İrade Tableti'ni bul ve Ironforge'daki Danışman Belgrum'a götür.",
       "title": "Kayıp İrade Tabletleri",
       "translationMetadata": {
@@ -382,6 +715,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "057531ff7d2bd9625dfb4c32d809b79a82bfc252fbc7da2dd5748c8f7aff629b"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -400,6 +748,11 @@
     },
     "ukUA": {
       "description": "Ми змогли стримати клан Тінегарту, відрізавши їхні сили від Чорноскельного шпиля, але завдання Молотопалого ще не завершено. Його смерть не повинна бути марною. Він мріяв знайти скрижаль волі — кам'яний уламок, на якому самі титани викарбували магічні письмена, щоб вдихнути життя у свої творіння і дати їм власну волю, — принаймні, так свідчать легенди.\n\nМи маємо повернути скрижаль до того, як її знайде клан Тінегарта.\n\nПовертайся до Ульдамана, знайди скрижаль і негайно принеси її мені.",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "<Радник Белґрум недовірливо хитає головою, коли ти подаєш йому уламок каменю.>$B$B$N, це неймовірно. Я якнайшвидше передам його королівським магам. Вони захочуть дослідити його й дізнатися, чи правдиві легенди. Але про це іншим разом: ти допоміг нашому народу більше, ніж я очікував. Дякую.",
+        "567dbdcabecc6669c619": "Ми сповільнили клан Shadowforge, відрізавши його від Шпиля Чорної гори, але завдання Гаммертоу залишається невиконаним. Його смерть не повинна бути марною. Він мріяв знайти Скрижаль Волі: уламок каменю, на якому самі титани викарбували магію, щоб вдихнути життя і власну волю у свої творіння, принаймні так кажуть легенди.$B$BМи маємо здобути скрижаль раніше за клан Shadowforge.$B$BПовертайся до Ульдамана, знайди скрижаль і негайно принеси її сюди.",
+        "d3712be5270ec2fa48b1": "Завдання Гаммертоу треба виконати, $N. Я йому це винен.$B$BТвоє повернення до Ульдамана потрібне не лише для цієї мети, а й для безпеки всіх дворфів. Хтозна, наскільки могутньою стане армія големів Темного Заліза, якщо скрижаль потрапить їм до рук."
+      },
       "summary": "Знайдіть скрижаль волі та принесіть її раднику Белґраму в Залізогарт.",
       "title": "Втрачені скрижалі волі",
       "translationMetadata": {
@@ -410,6 +763,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "057531ff7d2bd9625dfb4c32d809b79a82bfc252fbc7da2dd5748c8f7aff629b"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -430,6 +798,11 @@
     },
     "zhCN": {
       "description": "通过切断暗炉部族与黑石塔的联系，我们已经成功减缓了他们的行动。不过，铁趾的遗愿仍未完成，他不能就这么白白死去。他的梦想是要找到意志石板，那是一块注入了魔法能量的石头碎片。利用这种魔法，泰坦赋予那些由他们创造出来的物体以鲜活的生命，甚至将思想和意志赐予这些生命。\n\n我们必须赶在暗炉部族之前找到意志石板。\n\n返回奥达曼去找到石板，然后立刻回到这里。",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "\n$N，真是不可思议。我将马上把这个交给国王的法师们。他们想仔细研究一下，从而确定传说的真伪。不过那不是我们现在该讨论的问题……你对我们的帮助已经远远超出了我的期望，谢谢你。\n",
+        "567dbdcabecc6669c619": "通过切断暗炉部族与黑石塔的联系，我们已经成功减缓了他们的行动。不过，铁趾的遗愿仍未完成，他不能就这么白白死去。他的梦想是要找到意志石板，那是一块注入了魔法能量的石头碎片。利用这种魔法，泰坦赋予那些由他们创造出来的物体以鲜活的生命，甚至将思想和意志赐予这些生命。\n\n我们必须赶在暗炉部族之前找到意志石板。\n\n返回奥达曼去找到石板，然后立刻回到这里。",
+        "d3712be5270ec2fa48b1": "$N，我们必须完成铁趾的遗愿，我欠他太多了。\n\n你要尽快返回奥达曼，这不仅有助於实现我们的计画，也有助於保护所有矮人的安全。如果石板落入黑铁矮人的手中，天知道他们能造出多少强大的作战魔像来。"
+      },
       "summary": "找到意志石板，把它们交给铁炉堡的顾问贝尔格拉姆。",
       "title": "意志石板",
       "translationMetadata": {
@@ -438,6 +811,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -454,6 +845,11 @@
     },
     "zhTW": {
       "description": "通過切斷暗爐部族與黑石塔的聯繫，我們已經成功減緩了他們的行動。不過，鐵趾的遺願仍未完成，他不能就這麼白白死去。他的夢想是要找到意志石板，那是一塊注入了魔法能量的石頭碎片。利用這種魔法，泰坦賦予那些由他們創造出來的物體以鮮活的生命，甚至將思想和意志賜予這些生命。\n\n我們必須趕在暗爐部族之前找到意志石板。\n\n返回奧達曼去找到石板，然後立刻回到這裡。",
+      "dialogue": {
+        "4638c3ca1a618a55f812": "\n$N，真是不可思議。我將馬上把這個交給國王的法師們。他們想仔細研究一下，從而確定傳說的真僞。不過那不是我們現在該討論的問題……你對我們的幫助已經遠遠超出了我的期望，謝謝你。",
+        "567dbdcabecc6669c619": "通過切斷暗爐部族與黑石塔的聯繫，我們已經成功減緩了他們的行動。不過，鐵趾的遺願仍未完成，他不能就這麼白白死去。他的夢想是要找到意志石板，那是一塊注入了魔法能量的石頭碎片。利用這種魔法，泰坦賦予那些由他們創造出來的物體以鮮活的生命，甚至將思想和意志賜予這些生命。\n\n我們必須趕在暗爐部族之前找到意志石板。\n\n返回奧達曼去找到石板，然後立刻回到這裡。",
+        "d3712be5270ec2fa48b1": "$N，我們必須完成鐵趾的遺願，我欠他太多了。\n\n你要儘快返回奧達曼，這不僅有助於實現我們的計畫，也有助於保護所有矮人的安全。如果石板落入黑鐵矮人的手中，天知道他們能造出多少強大的作戰魔像來。"
+      },
       "summary": "找到意志石板，把它們交給鐵爐堡的顧問貝爾格拉姆。",
       "title": "意志石板",
       "translationMetadata": {
@@ -462,6 +858,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.4638c3ca1a618a55f812": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.567dbdcabecc6669c619": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.d3712be5270ec2fa48b1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

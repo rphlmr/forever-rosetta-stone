@@ -1,8 +1,28 @@
 {
   "areaId": 33,
+  "dialogueContexts": {
+    "d0c3b29be031216d2928": {
+      "lineId": "q:330:complete",
+      "npcId": 1422,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "faece45b84cb77b79586": {
+      "lineId": "q:330:accept",
+      "npcId": 469,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vzkaz, který jsem od tebe dostal, je podepsaný „em“... nevím, co by to mohlo znamenat.\n\nAle... vzkaz také říká, že tato osoba minulý týden sdílela s Thorsenem hlídkové trasy. Takže kdokoli minulý týden hlídkoval s Thorsenem, musí být zrádce!\n\nJdi za desátníkem Sethmanem. Má na starosti rozpisy hlídek a může ti říct, kdo byl s Thorsenem.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Ano, mohu ti to zjistit. Podívejme se... minulý týden to byl...$B$B...vojín Merle měl službu s Thorsenem. Celý minulý týden měli stejné hlídky.",
+        "faece45b84cb77b79586": "Vzkaz, který jsi mi dal, je podepsán „-M“... Nevím, co to znamená.$B$BAle také se v něm píše, že ten člověk minulý týden hlídkoval s Thorsenem. Takže zrádcem musí být ten, kdo s ním měl hlídku!$B$BZajdi za desátníkem Sethmanem. Má na starosti rozpisy hlídek a řekne ti, kdo byl s Thorsenem."
+      },
       "summary": "Promluv si s desátníkem Sethmanem.",
       "title": "Rozpisy hlídek",
       "translationMetadata": {
@@ -12,6 +32,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -32,6 +62,10 @@
     },
     "daDK": {
       "description": "Beskeden, du gav mig, er underskrevet med »-M« ... jeg ved ikke, hvad det kan betyde.\n\nMen ... beskeden siger også, at denne person delte patruljeruter med Thorsen i sidste uge. Så den, der gik på patrulje med Thorsen i sidste uge, må være forræderen!\n\nGå til korporal Sethman. Han står for patruljeplanerne og kan fortælle dig, hvem der var sammen med Thorsen.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Ja, det kan jeg undersøge for dig. Lad mig se... sidste uge var det...$B$B...menig Merle, der var sat sammen med Thorsen. De havde samme patruljetider hele sidste uge.",
+        "faece45b84cb77b79586": "Sedlen, du gav mig, er underskrevet \"-M\"... Jeg ved ikke, hvad det betyder.$B$BMen der står også, at personen delte patruljerute med Thorsen sidste uge. Den, der patruljerede med Thorsen, må altså være forræderen!$B$BGå til korporal Sethman. Han står for patruljeplanerne og kan fortælle dig, hvem der var sammen med Thorsen."
+      },
       "summary": "Tal med korporal Sethman.",
       "title": "Patruljeplaner",
       "translationMetadata": {
@@ -41,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e18bf76d2eb1e0869c62d46022ba760738ac5e657ac39d9fde0ce2035301f98e"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -59,6 +103,10 @@
     },
     "deDE": {
       "description": "Die Notiz, die Ihr mir gegeben habt, ist mit einem \"-M\" unterzeichnet... Ich weiß nicht, was das heißen könnte.\n\nAber... die Notiz sagt auch aus, dass diese Person letzte Woche die gleichen Patrouillenrouten wie Thorsen hatte. Also muss, wer auch immer mit Thorsen letzte Woche auf Patrouille war, der Verräter sein!\n\nGeht zu Corporal Sethman. Er kümmert sich um die Patrouillenpläne und wird Euch sagen können, wer mit Thorsen unterwegs war.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Oh, klar kann ich das für Euch überprüfen. Mal sehen. . . letzte Woche war es. . . \n \n . . . nun, es war Gefreiter Merle, der mit Thorsen eingeteilt war. Sie hatten die gesamte letzte Woche die gleichen Patrouillenzeiten. ",
+        "faece45b84cb77b79586": "Die Notiz, die Ihr mir gegeben habt, ist mit einem \"-M\" unterzeichnet... Ich weiß nicht, was das heißen könnte.\n\nAber... die Notiz sagt auch aus, dass diese Person letzte Woche die gleichen Patrouillenrouten wie Thorsen hatte. Also muss, wer auch immer mit Thorsen letzte Woche auf Patrouille war, der Verräter sein!\n\nGeht zu Corporal Sethman. Er kümmert sich um die Patrouillenpläne und wird Euch sagen können, wer mit Thorsen unterwegs war."
+      },
       "summary": "Sprecht mit Corporal Sethman.",
       "title": "Patrouillen-Pläne",
       "translationMetadata": {
@@ -67,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -83,6 +143,10 @@
     },
     "enUS": {
       "description": "The note you gave me is signed with an \"-M\"...I don't know what that could mean.\n\nBut...the note also says this person shared patrol routes with Thorsen last week.  So whoever shared patrol with Thorsen last week must be the traitor!\n\nGo to Corporal Sethman.  He handles the patrol schedules and can tell you who was with Thorsen.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Oh, yes I can check that for you.  Let's see...last week it was...$B$B...why, it was Private Merle scheduled with Thorsen.  They had the same patrol times all of last week.",
+        "faece45b84cb77b79586": "The note you gave me is signed with an \"-M\"...I don't know what that could mean.$B$BBut...the note also says this person shared patrol routes with Thorsen last week.  So whoever shared patrol with Thorsen last week must be the traitor!$B$BGo to Corporal Sethman.  He handles the patrol schedules and can tell you who was with Thorsen."
+      },
       "summary": "Speak with Corporal Sethman.",
       "title": "Patrol Schedules",
       "translationMetadata": {
@@ -91,6 +155,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -108,6 +184,10 @@
     },
     "esES": {
       "description": "Esa nota que me diste está firmada con una \"M\"... No sé lo que puede significar.\n\nPero... la nota también dice que esta persona compartió las rutas de patrulla con Thorsen la semana pasada. Así que, quien compartió las rutas de patrulla con Thorsen la semana pasada es el traidor.\n\nVete a ver al cabo Sethman. Se encarga de hacer los horarios de patrulla y podrá decirte quién estaba con Thorsen.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Ah, sí, claro que puedo comprobar eso. Veamos... la semana pasada era...\n\n...por qué..., el soldado Merle estaba de guardia con Thorsen. Tenían la misma hora de patrulla durante toda la semana pasada.",
+        "faece45b84cb77b79586": "Esa nota que me diste está firmada con una \"M\"... No sé lo que puede significar.\n\nPero... la nota también dice que esta persona compartió las rutas de patrulla con Thorsen la semana pasada. Así que, quien compartió las rutas de patrulla con Thorsen la semana pasada es el traidor.\n\nVete a ver al cabo Sethman. Se encarga de hacer los horarios de patrulla y podrá decirte quién estaba con Thorsen."
+      },
       "summary": "Habla con el cabo Sethman.",
       "title": "Horarios de patrulla",
       "translationMetadata": {
@@ -116,6 +196,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "Esa nota que me diste está firmada con una \"M\"... No sé lo que puede significar.\n\nPero... la nota también dice que esta persona compartió las rutas de patrulla con Thorsen la semana pasada. Así que, quien compartió las rutas de patrulla con Thorsen la semana pasada es el traidor.\n\nVete a ver al cabo Sethman. Se encarga de hacer los horarios de patrulla y podrá decirte quién estaba con Thorsen.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Ah, sí, claro que puedo comprobar eso. Veamos... la semana pasada era...\n\n...por qué..., el soldado Merle estaba de guardia con Thorsen. Tenían la misma hora de patrulla durante toda la semana pasada.",
+        "faece45b84cb77b79586": "Esa nota que me diste está firmada con una \"M\"... No sé lo que puede significar.\n\nPero... la nota también dice que esta persona compartió las rutas de patrulla con Thorsen la semana pasada. Así que, quien compartió las rutas de patrulla con Thorsen la semana pasada es el traidor.\n\nVete a ver al cabo Sethman. Se encarga de hacer los horarios de patrulla y podrá decirte quién estaba con Thorsen."
+      },
       "summary": "Habla con el cabo Sethman.",
       "title": "Horarios de patrulla",
       "translationMetadata": {
@@ -140,6 +236,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -156,6 +264,10 @@
     },
     "frFR": {
       "description": "La note que vous m'avez donnée est signée d'un \" M \"... Je ne sais pas ce que ça signifie.\n\nMais... La note dit aussi que cette personne a partagé les tours de patrouille de Thorsen la semaine dernière. Le traître doit être l'un de ceux qui ont patrouillé en même temps que Thorsen !\n\nAllez voir le caporal Sethman. C'est lui qui gère la composition des patrouilles, il vous dira qui était avec Thorsen la semaine dernière.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Oh oui ! Je peux vérifier ça pour vous. Voyons. . . La semaine dernière, c'était. . . \n \n . . . C'était le soldat Merle qui était prévu avec Thorsen. Ils ont eu les mêmes heures de patrouille toute la semaine dernière. ",
+        "faece45b84cb77b79586": "La note que vous m'avez donnée est signée d'un \" M \"... Je ne sais pas ce que ça signifie.\n\nMais... La note dit aussi que cette personne a partagé les tours de patrouille de Thorsen la semaine dernière. Le traître doit être l'un de ceux qui ont patrouillé en même temps que Thorsen !\n\nAllez voir le caporal Sethman. C'est lui qui gère la composition des patrouilles, il vous dira qui était avec Thorsen la semaine dernière."
+      },
       "summary": "Parler au caporal Sethman.",
       "title": "Composition des patrouilles",
       "translationMetadata": {
@@ -164,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -180,6 +304,10 @@
     },
     "hrHR": {
       "description": "Poruka koju si mi dao potpisana je s '-M'... ne znam što bi to moglo značiti.\n\nAli... poruka također kaže da je ta osoba prošlog tjedna dijelila ophodnju s Thorsenom. Dakle, onaj tko je prošlog tjedna patrolirao s Thorsenom mora biti izdajnik!\n\nIdi do kaplara Sethmana. On vodi rasporede ophodnji i može ti reći tko je bio s Thorsenom.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Da, mogu to provjeriti. Da vidimo... prošlog je tjedna to bio...$B$B...vojnik Merle raspoređen s Thorsenom. Imali su iste ophodnje cijeli prošli tjedan.",
+        "faece45b84cb77b79586": "Poruka koju si mi dao potpisana je s „-M“... Ne znam što bi to moglo značiti.$B$BAli piše i da je ta osoba prošlog tjedna patrolirala s Thorsenom. Dakle, onaj tko je bio s njim mora biti izdajnik!$B$BIdi do kaplara Sethmana. On vodi rasporede ophodnji i može ti reći tko je bio s Thorsenom."
+      },
       "summary": "Razgovaraj s kaplarom Sethmanom.",
       "title": "Rasporedi ophodnji",
       "translationMetadata": {
@@ -189,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e18bf76d2eb1e0869c62d46022ba760738ac5e657ac39d9fde0ce2035301f98e"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -207,6 +345,10 @@
     },
     "itIT": {
       "description": "Il biglietto che mi hai dato è firmato con una \"-M\"... Non so cosa possa significare.\n\nMa... dice anche che questa persona ha condiviso i percorsi di pattuglia con Thorsen la settimana scorsa. Quindi il traditore dev'essere chi ha pattugliato con lui la settimana scorsa!\n\nVai dal caporale Sethman. Si occupa dei turni delle pattuglie e saprà dirti chi era con Thorsen.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Oh, sì, posso controllare. Vediamo... la settimana scorsa c'era...\n\n...ma guarda, in turno con Thorsen c'era il Soldato Merle. Hanno fatto gli stessi orari di pattuglia per tutta la settimana scorsa.",
+        "faece45b84cb77b79586": "Il biglietto che mi hai dato è firmato con una \"-M\"... non so cosa possa significare.\n\nMa... il biglietto dice anche che la settimana scorsa questa persona era di pattuglia con Thorsen. Quindi chiunque abbia fatto la pattuglia con Thorsen la settimana scorsa dev'essere il traditore!\n\nVa' dal Caporale Sethman. Si occupa dei turni di pattuglia e può dirti chi era con Thorsen."
+      },
       "summary": "Parla con il caporale Sethman.",
       "title": "Gli orari delle pattuglie",
       "translationMetadata": {
@@ -216,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e18bf76d2eb1e0869c62d46022ba760738ac5e657ac39d9fde0ce2035301f98e"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "summary": {
             "origin": "ai",
@@ -234,6 +388,10 @@
     },
     "koKR": {
       "description": "당신이 찾아 준 쪽지에 \"-M\"이라고 서명이 되어 있는데... 누구를 말하는 건지 모르겠소.\n\n하지만... 쪽지에 따르면 이자가 지난주에 토르센과 함께 정찰을 했다는 것을 알 수 있군그래. 그러니 지난주에 토르센과 함께 정찰 임무를 수행한 자가 배반자일 거요!\n\n하사관 세스먼에게 가 보시오. 그가 정찰 일정을 관리하니 토르센과 함께 임무를 수행한 자가 누군지 말해 줄 수 있을 거요.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "아, 예, 확인해 드리지요. 어디 보자... 지난 주라면...\n\n이런, 병사 메를이 토르센과 함께 정찰을 나간걸로 기록되어 있네요. 그들은 지난주 내내 같은 시간에 정찰 임무를 수행했었습니다.",
+        "faece45b84cb77b79586": "당신이 찾아 준 쪽지에 \"-M\"이라고 서명이 되어 있는데... 누구를 말하는 건지 모르겠소.\n\n하지만... 쪽지에 따르면 이자가 지난주에 토르센과 함께 정찰을 했다는 것을 알 수 있군그래. 그러니 지난주에 토르센과 함께 정찰 임무를 수행한 자가 배반자일 거요!\n\n하사관 세스먼에게 가 보시오. 그가 정찰 일정을 관리하니 토르센과 함께 임무를 수행한 자가 누군지 말해 줄 수 있을 거요."
+      },
       "summary": "하사관 세스먼과 대화해야 합니다.",
       "title": "정찰 일정",
       "translationMetadata": {
@@ -242,6 +400,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -258,6 +428,10 @@
     },
     "plPL": {
       "description": "Przekazana przez ciebie notatka jest podpisana „-M”... Nie wiem, co to może znaczyć.\n\nAle... z notatki wynika też, że ta osoba chodziła z Thorsenem na patrole w zeszłym tygodniu. A zatem towarzysz Thorsena z zeszłotygodniowych patroli musi być zdrajcą!\n\nIdź do kaprala Sethmana. Zajmuje się harmonogramami patroli i powie ci, kto był z Thorsenem.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Tak, mogę to sprawdzić. Zobaczmy... w zeszłym tygodniu był to...$B$B...szeregowy Merle, przydzielony do Thorsena. Przez cały zeszły tydzień mieli te same godziny patroli.",
+        "faece45b84cb77b79586": "Notatka, którą mi dałeś, jest podpisana „-M”... Nie wiem, co to oznacza.$B$BAle jest w niej też napisane, że ta osoba patrolowała z Thorsenem w zeszłym tygodniu. Ktokolwiek to był, musi być zdrajcą!$B$BIdź do kaprala Sethmana. Zajmuje się harmonogramem patroli i powie ci, kto był z Thorsenem."
+      },
       "summary": "Porozmawiaj z kapralem Sethmanem.",
       "title": "Harmonogramy patroli",
       "translationMetadata": {
@@ -267,6 +441,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e18bf76d2eb1e0869c62d46022ba760738ac5e657ac39d9fde0ce2035301f98e"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -285,6 +469,10 @@
     },
     "ptBR": {
       "description": "O bilhete que você trouxe foi assinado por \"M\"... não sei o que isso significa.\n\nPorém... o bilhete também menciona participação nas rotas de patrulha do Turgo semana passada. Então, quem fez a patrulha com Turgo semana passada deve ser o traidor!\n\nProcure o Cabo Malta. Ele cuida do itinerário das patrulhas e pode dizer quem estava com Turgo.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Ah, sim, posso verificar isso para você. Vejamos... na semana passada foi...$B$B...o soldado Merle que estava escalado com Thorsen. Eles patrulharam juntos durante toda a semana passada.",
+        "faece45b84cb77b79586": "O bilhete que você trouxe foi assinado por \"M\"... não sei o que isso significa.\n\nPorém... o bilhete também menciona participação nas rotas de patrulha do Turgo semana passada. Então, quem fez a patrulha com Turgo semana passada deve ser o traidor!\n\nProcure o Cabo Malta. Ele cuida do itinerário das patrulhas e pode dizer quem estava com Turgo."
+      },
       "summary": "Fale com o Cabo Malta.",
       "title": "Itinerário das patrulhas",
       "translationMetadata": {
@@ -293,6 +481,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -309,6 +508,10 @@
     },
     "ruRU": {
       "description": "Принесенная тобой записка подписана просто \"-М\".. Не пойму, что это значит.\n\nНо... в записке также говорится, что этот человек дежурил вместе с Торсеном на прошлой неделе. Значит, он и есть предатель!\n\nИди к капралу Сетману. Он занимается составлением расписания и скажет, кто дежурил с Торсеном.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Да, конечно я могу узнать. Давайте посмотрим... на прошлой неделе...\n\n... вместе с Торсеном так же патрулировал и Рядовой Мерль. На прошлой неделе у них было одно патрульное время.",
+        "faece45b84cb77b79586": "Принесенная тобой записка подписана просто \"-М\".. Не пойму, что это значит.\n\nНо... в записке также говорится, что этот человек дежурил вместе с Торсеном на прошлой неделе. Значит, он и есть предатель!\n\nИди к капралу Сетману. Он занимается составлением расписания и скажет, кто дежурил с Торсеном."
+      },
       "summary": "Поговорите с капралом Сетманом.",
       "title": "Расписание дежурств",
       "translationMetadata": {
@@ -317,6 +520,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -333,6 +548,10 @@
     },
     "svSE": {
       "description": "Lappen är undertecknad \"-M\"... jag vet inte vad det betyder.\n\nMen den säger också att personen patrullerade med Thorsen förra veckan. Den som patrullerade med honom måste alltså vara förrädaren!\n\nSök korpral Sethman. Han sköter patrullschemat och vet vem som var med Thorsen.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Ja, det kan jag kontrollera åt dig. Låt se... förra veckan var det...$B$B...menige Merle som var schemalagd med Thorsen. De hade samma patrulltider hela förra veckan.",
+        "faece45b84cb77b79586": "Lappen du gav mig är undertecknad \"-M\"... Jag vet inte vad det kan betyda.$B$BMen det står också att personen patrullerade med Thorsen förra veckan. Den som gjorde det måste alltså vara förrädaren!$B$BGå till korpral Sethman. Han sköter patrullschemat och kan berätta vem som var med Thorsen."
+      },
       "summary": "Tala med korpral Sethman.",
       "title": "Patrullscheman",
       "translationMetadata": {
@@ -342,6 +561,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e18bf76d2eb1e0869c62d46022ba760738ac5e657ac39d9fde0ce2035301f98e"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +589,10 @@
     },
     "trTR": {
       "description": "Bana verdiğin not \"-M\" diye imzalanmış... Bunun ne anlama gelebileceğini bilmiyorum.\n\nAma... notta bu kişinin geçen hafta Thorsen ile aynı devriye güzergâhlarını paylaştığı da yazıyor. Demek ki geçen hafta Thorsen ile devriyeye çıkan kişi hain olmalı!\n\nOnbaşı Sethman'a git. Devriye programlarıyla o ilgilenir ve Thorsen'in yanında kimin olduğunu söyleyebilir.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Evet, bunu senin için kontrol edebilirim. Bakalım... geçen hafta...$B$B...Er Merle, Thorsen'le görevlendirilmiş. Geçen hafta boyunca aynı devriye saatlerine sahiplerdi.",
+        "faece45b84cb77b79586": "Bana verdiğin not \"-M\" diye imzalanmış... Bunun ne anlama geldiğini bilmiyorum.$B$BAma notta bu kişinin geçen hafta Thorsen'le devriye gezdiği de yazıyor. Öyleyse onunla devriye gezen kişi hain olmalı!$B$BOnbaşı Sethman'a git. Devriye çizelgelerini o hazırlıyor ve Thorsen'in yanında kimin olduğunu söyleyebilir."
+      },
       "summary": "Onbaşı Sethman ile konuş.",
       "title": "Devriye Programları",
       "translationMetadata": {
@@ -369,6 +602,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e18bf76d2eb1e0869c62d46022ba760738ac5e657ac39d9fde0ce2035301f98e"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +630,10 @@
     },
     "ukUA": {
       "description": "Записка, яку ти мені передаєш, підписана «-M»... Не знаю, що це може означати.\n\nАле... у записці також сказано, що ця особа минулого тижня патрулювала разом із Торсеном. Отже, той, хто минулого тижня ходив із Торсеном у патруль, і є зрадником!\n\nІди до капрала Сетмана. Він веде розклад патрулювання й може сказати, хто був із Торсеном.",
+      "dialogue": {
+        "d0c3b29be031216d2928": "Так, я можу це перевірити. Подивімося... минулого тижня це був...$B$B...рядовий Мерл, призначений до Торсена. Вони патрулювали разом увесь минулий тиждень.",
+        "faece45b84cb77b79586": "Записка, яку ти мені дав, підписана «-M»... Не знаю, що це означає.$B$BАле тут також сказано, що ця особа минулого тижня патрулювала разом із Торсеном. Отже, той, хто був із ним, і є зрадником!$B$BІди до капрала Сетмана. Він складає графіки патрулів і скаже, хто був із Торсеном."
+      },
       "summary": "Поговоріть з капралом Сетманом.",
       "title": "Розклад патрулювання",
       "translationMetadata": {
@@ -396,6 +643,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e18bf76d2eb1e0869c62d46022ba760738ac5e657ac39d9fde0ce2035301f98e"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -416,6 +673,10 @@
     },
     "zhCN": {
       "description": "你给我的便笺上的签名只有一个字母“M”……我也不知道这代表谁。\n\n但是……这便笺同时也告诉我们，这个人应该是上周与索尔森一同巡逻的同伴。所以，只要知道上周谁和索尔森一起巡逻过，那他就应该是内鬼没错了！\n\n去找塞斯曼下士问一问，他是负责制订巡逻时间表的人，可以告诉你那个时候索尔森和谁在一起。",
+      "dialogue": {
+        "d0c3b29be031216d2928": "噢，当然，我可以帮你查一下。我看看……上周是……\n\n……嗯，上周是士兵默尔和托尔森一起巡逻的。他们俩上周一直在一起。\n",
+        "faece45b84cb77b79586": "你给我的便笺上的签名只有一个字母“M”……我也不知道这代表谁。\n\n但是……这便笺同时也告诉我们，这个人应该是上周与索尔森一同巡逻的同伴。所以，只要知道上周谁和索尔森一起巡逻过，那他就应该是内鬼没错了！\n\n去找塞斯曼下士问一问，他是负责制订巡逻时间表的人，可以告诉你那个时候索尔森和谁在一起。"
+      },
       "summary": "与塞斯曼下士谈一谈。",
       "title": "巡逻时间表",
       "translationMetadata": {
@@ -424,6 +685,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -440,6 +713,10 @@
     },
     "zhTW": {
       "description": "你給我的便箋上的簽名只有一個字母「M」……我也不知道這代表誰。\n\n但是……這便箋同時也告訴我們，這個人應該是上週與索爾森一同巡邏的同伴。所以，只要知道上週誰和索爾森一起巡邏過，那他就應該是內鬼沒錯了！\n\n去找塞斯曼下士問一問，他是負責制訂巡邏時間表的人，可以告訴你那個時候索爾森和誰在一起。",
+      "dialogue": {
+        "d0c3b29be031216d2928": "噢，當然，我可以幫你查一下。我看看……上周是……\n\n……嗯，上周是士兵默爾和托爾森一起巡邏的。他們倆上周一直在一起。",
+        "faece45b84cb77b79586": "你給我的便箋上的簽名只有一個字母「M」……我也不知道這代表誰。\n\n但是……這便箋同時也告訴我們，這個人應該是上週與索爾森一同巡邏的同伴。所以，只要知道上週誰和索爾森一起巡邏過，那他就應該是內鬼沒錯了！\n\n去找塞斯曼下士問一問，他是負責制訂巡邏時間表的人，可以告訴你那個時候索爾森和誰在一起。"
+      },
       "summary": "與塞斯曼下士談話。",
       "title": "巡邏時間表",
       "translationMetadata": {
@@ -448,6 +725,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.d0c3b29be031216d2928": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.faece45b84cb77b79586": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

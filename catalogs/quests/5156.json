@@ -20,9 +20,37 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "1c776bd531ca0511b3d8": {
+      "lineId": "q:5156:progress",
+      "npcId": 10921,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "2dee1526f591068e3363": {
+      "lineId": "q:5156:accept",
+      "npcId": 10921,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "591b000324e85f2987df": {
+      "lineId": "q:5156:complete",
+      "npcId": 10921,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Na severu, po východní straně cesty, v údolí zvaném Shatter Scar, leží místo, kam byli za poslední velké války svrženi infernálové. Krátery tu zemi jizví dodnes, stejně jako sami infernálové.\n\nZajímají mě dvě věci. Zaprvé, toulají se po okolí ještě entropičtí elementálové? A zadruhé, jsou ty krátery stále plné zkažené, páchnoucí vody, která se tam nahromadila před lety? Pomůžeš mi to zjistit, {name}? Dávej si ale pozor, infernálové zničí všechno, co jim stojí v cestě.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Doufám, že se ti hledání daří, $N. Tak daleko na sever jsem se ještě nevydal, ale přiznávám, že představa setkání s infernálem mě trochu děsí. Jsou sice bez mozku, ale stále nahánějí hrůzu.",
+        "2dee1526f591068e3363": "Na severu, východně od cesty v oblasti zvané Shatter Scar Vale, byli během poslední velké války přivoláni infernálové. Krátery i samotní infernálové dodnes hyzdí zemi.$B$BZajímají mě dvě věci. Zaprvé, potulují se tam stále entropičtí elementálové? A zadruhé, jsou krátery stále plné zkažené páchnoucí vody, která se tam před lety nahromadila? Pomůžeš mi to ověřit, $N? Buď opatrný, infernálové ničí vše v cestě.",
+        "591b000324e85f2987df": "Dobře, že žiješ, $N. Špatně, že voda stále existuje. Doufal jsem, že ve Zkaženém lese najdu alespoň jeden čistý zdroj vody. Zdá se, že mé hledání selhalo. S ním by bylo léčení země mnohem snazší.$B$BMusím se soustředit na záchranu lesních tvorů, které zachránit lze, a zničení těch, kteří jsou tak zkažení, že ohrožují sebe i cestující tímto kdysi mocným lesem."
+      },
       "eventObjectiveLabel": "Prozkoumej krátery v Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -40,6 +68,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "20a4f3b19150be09abcd194f3b5b1b4615c141fe0aa405523bbe40233c195e09"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -73,6 +116,11 @@
     },
     "daDK": {
       "description": "Mod nord langs østsiden af vejen i det, der kaldes Shatter Scar Vale, er et område, hvor infernaler blev kaldt ned under den sidste store krig; kraterne skæmmer stadig landet, ligesom infernalerne selv.\n\nJeg er nysgerrig efter to ting. For det første, strejfer entropiske elementaler stadig omkring i området? Og for det andet, er kraterne stadig fyldt med det fordærvede, stinkende vand, der samlede sig dér for år siden? Vil du hjælpe mig og undersøge det, {name}? Vær dog forsigtig, infernalerne ødelægger alt på deres vej.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Jeg håber, din søgen går godt, $N. Jeg er endnu ikke draget så langt nordpå, men jeg må indrømme, at tanken om at møde en infernal skræmmer mig lidt. De er hjerneløse, men stadig ret skræmmende.",
+        "2dee1526f591068e3363": "Mod nord, øst for vejen i Shatter Scar Vale, blev infernaler kaldt ned under den sidste store krig. Kraterne og infernalerne skæmmer stadig landet.$B$BJeg er nysgerrig efter to ting. Strejfer entropiske elementaler stadig omkring? Og er kraterne stadig fyldt med det fordærvede, stinkende vand, som samlede sig der for år siden? Vil du undersøge det for mig, $N? Pas på, infernalerne ødelægger alt på deres vej.",
+        "591b000324e85f2987df": "Godt, at du er i live, $N. Skidt, at vandet stadig findes. Jeg håbede at finde mindst én ren vandkilde her i Fordærvelsens skov. Min søgen ser ud til at have slået fejl. Den kunne have gjort helbredelsen af landet meget lettere.$B$BJeg må koncentrere mig om at redde de skovdyr, jeg kan, og tilintetgøre dem, der er så fordærvede, at de truer både sig selv og rejsende gennem denne engang mægtige skov."
+      },
       "eventObjectiveLabel": "Udforsk kraterne i Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -90,6 +138,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "20a4f3b19150be09abcd194f3b5b1b4615c141fe0aa405523bbe40233c195e09"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -119,6 +182,11 @@
     },
     "deDE": {
       "description": "Im Norden, entlang der östlichen Straße im so genannten Shatter Scar-Tal, liegt ein Bereich, wo im letzten großen Krieg Höllenbestien herbeigerufen wurden; die Krater zernarben immer noch das Land, so wie die Höllenbestien selbst.\n\nIch möchte gern zwei Dinge wissen. Erstens, durchstreifen immer noch entropische Elementare das Gebiet? Und zweitens, sind die Krater immer noch mit dem verderbten, stinkenden Wasser gefüllt, das sich dort vor Jahren gesammelt hat? Würdet Ihr das für mich überprüfen, {name}? Seid aber vorsichtig, die Höllenbestien zerstören alles, was ihren Weg kreuzt.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Ich hoffe, Eure Suche läuft gut, $N. Ich bin noch nicht so weit im Norden gewesen, aber ich gebe zu, dass mich der Gedanke, irgendwann den Weg der Höllenbestien zu kreuzen, doch ängstigt. Die Kreaturen sind zwar hirnlos, aber dennoch recht einschüchternd.",
+        "2dee1526f591068e3363": "Im Norden, entlang der östlichen Straße im so genannten Shatter Scar-Tal, liegt ein Bereich, wo im letzten großen Krieg Höllenbestien herbeigerufen wurden; die Krater zernarben immer noch das Land, so wie die Höllenbestien selbst.\n\nIch möchte gern zwei Dinge wissen. Erstens, durchstreifen immer noch entropische Elementare das Gebiet? Und zweitens, sind die Krater immer noch mit dem verderbten, stinkenden Wasser gefüllt, das sich dort vor Jahren gesammelt hat? Würdet Ihr das für mich überprüfen, $N? Seid aber vorsichtig, die Höllenbestien zerstören alles, was ihren Weg kreuzt.",
+        "591b000324e85f2987df": "Schön, dass Ihr am Leben seid, $N. Nicht schön ist, dass das Wasser immer noch existiert. Ich hatte gehofft, zumindest eine reine Wasserquelle hier im Teufelswald zu finden. Es sieht so aus, als wäre meine Suche fehlgeschlagen. Gäbe es sie, wäre der Prozess der Heilung des Landes wesentlich vereinfacht worden. \n \n Ich werde mich also damit befassen müssen, die Waldkreaturen zu retten, die ich retten kann. Gleichzeitig vernichte ich die, die so verderbt wurden, dass sie nicht nur für sich selbst, sondern auch für Reisende, die durch diesen einst so mächtigen Wald ziehen, eine Gefahr sind. "
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -135,6 +203,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -162,6 +248,11 @@
     },
     "enUS": {
       "description": "To the north, along the east of the road in what's called Shatter Scar Vale, is an area where infernals were called down during the last great war--the craters still scar the land, as do the infernals themselves.\n\nI am curious about two things. First, are there still entropic elementals roaming the area? And second, are the craters still filled with the corrupt, fetid water that gathered there years ago? Will you help me and check, {name}? Be careful though, the infernals destroy anything in their path.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "I hope your search goes well, $N. I haven't started heading that far north, but I will admit, the thought of crossing the path of an infernal at any point scares me just a little. The creatures are brainless, but still quite intimidating.",
+        "2dee1526f591068e3363": "To the north, along the east of the road in what's called Shatter Scar Vale, is an area where infernals were called down during the last great war--the craters still scar the land, as do the infernals themselves.$B$BI am curious about two things. First, are there still entropic elementals roaming the area? And second, are the craters still filled with the corrupt, fetid water that gathered there years ago? Will you help me and check, $N? Be careful though, the infernals destroy anything in their path.",
+        "591b000324e85f2987df": "Good that you're alive, $N. Bad that the water still exists. I was hoping to find at least one pure source of water here in Felwood. It looks like my search has failed. The process of healing the land could have been made much easier with its existence.$B$BI will have to concern myself with saving what forest creatures I can while destroying those that have become so corrupt that they endanger themselves as much as travelers through this once-mighty forest."
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -178,6 +269,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -206,6 +315,11 @@
     },
     "esES": {
       "description": "Al norte, al lado este del camino, en lo que se llama la Cañada Gran Cicatriz, hay una zona en la que los infernos fueron invocados durante la Gran Guerra... los cráteres aún marcan la tierra... como lo hacen los propios infernos.\n\nSiento curiosidad por dos cosas. Primera: ¿aún vagan los elementales entrópicos por esta área? Y segunda: ¿los cráteres contienen aún el agua corrupta y fétida que se acumuló allí hace años? ¿Me ayudarás a saciar mi curiosidad, {name}? Pero ve con cuidado, los infernos destruyen todo lo que encuentran en su camino.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Espero que tu búsqueda vaya bien, $N.  No he comenzado a dirigirme tan al norte, pero lo admito, la idea de cruzarme en el camino de un infernal en cualquier punto me asusta un poco.  Las criaturas no tienen cerebro, pero siguen siendo bastante intimidantes.",
+        "2dee1526f591068e3363": "Al norte, al lado este del camino, en lo que se llama la Cañada Gran Cicatriz, hay una zona en la que los infernos fueron invocados durante la Gran Guerra... los cráteres aún marcan la tierra... como lo hacen los propios infernos.\n\nSiento curiosidad por dos cosas. Primera: ¿aún vagan los elementales entrópicos por esta área? Y segunda: ¿los cráteres contienen aún el agua corrupta y fétida que se acumuló allí hace años? ¿Me ayudarás a saciar mi curiosidad, $N? Pero ve con cuidado, los infernos destruyen todo lo que encuentran en su camino.",
+        "591b000324e85f2987df": "Me alegra que sigas con vida, $n. Pero me preocupa que esa agua aún exista. Esperaba encontrar al menos una fuente de agua pura en Frondavil. Pero parece que mi búsqueda ha sido un fracaso. El proceso de curación de la tierra habría sido mucho más sencillo de haber existido tal fuente. \n\nTendré que centrarme en salvar a las criaturas del bosque que aún puedan salvarse mientras destruyo a las que se han corrompido tanto que son un peligro para sí mismas y para los viajeros que atraviesen este bosque que antaño fuera tan poderoso."
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -222,6 +336,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -249,6 +381,11 @@
     },
     "esMX": {
       "description": "Al norte, al lado este del camino, en lo que se llama la Cañada Gran Cicatriz, hay una zona en la que los infernales fueron invocados durante la Gran Guerra... los cráteres aún marcan la tierra... como lo hacen los propios infernales.\n\nSiento curiosidad por dos cosas. Primera: ¿aún vagan los elementales entrópicos por esta área? Y segunda: ¿los cráteres contienen aún el agua corrupta y fétida que se acumuló allí hace años? ¿Me ayudarás a saciar mi curiosidad, {name}? Pero ve con cuidado, los infernales destruyen todo lo que encuentran en su camino.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Espero que tu búsqueda salga bien, $n. No he comenzado a dirigirme tan al norte, pero lo admito, la idea de cruzar el camino de un infernal en cualquier momento me asusta un poco. Las criaturas no tienen cerebro, pero siguen siendo bastante intimidantes.",
+        "2dee1526f591068e3363": "Al norte, al lado este del camino, en lo que se llama la Cañada Gran Cicatriz, hay una zona en la que los infernales fueron invocados durante la Gran Guerra... los cráteres aún marcan la tierra... como lo hacen los propios infernales.\n\nSiento curiosidad por dos cosas. Primera: ¿aún vagan los elementales entrópicos por esta área? Y segunda: ¿los cráteres contienen aún el agua corrupta y fétida que se acumuló allí hace años? ¿Me ayudarás a saciar mi curiosidad, $n? Pero ve con cuidado, los infernales destruyen todo lo que encuentran en su camino.",
+        "591b000324e85f2987df": "Me alegra que sigas con vida, $n. Pero me preocupa que esa agua aún exista. Esperaba encontrar al menos una fuente de agua pura en Frondavil. Pero parece que mi búsqueda ha sido un fracaso. El proceso de curación de la tierra habría sido mucho más sencillo de haber existido tal fuente.\n\nTendré que centrarme en salvar a las criaturas del bosque que aún puedan salvarse mientras destruyo a las que se han corrompido tanto que son un peligro para sí mismas y para los viajeros que atraviesen este bosque que antaño fuera tan poderoso."
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -265,6 +402,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -292,6 +447,11 @@
     },
     "frFR": {
       "description": "En allant vers le nord, à l'est de la route qui traverse le Val Grêlé, se trouve un lieu où les Infernaux se rassemblèrent durant la dernière grande guerre : des cratères défigurent le paysage, ainsi que les Infernaux eux-mêmes.\n\nDeux choses m'intriguent : premièrement, y a-t-il toujours des élémentaires d'entropie qui errent sur la zone ? Deuxièmement : les cratères sont-ils toujours remplis d'eau fétide et corrompue, piégée là depuis des années ? M'aiderez-vous, {name} ? Attention, les Infernaux détruisent tout sur leur passage.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "J'espère que vos recherches se dérouleront bien, $N. Je n'ai pas encore commencé à me diriger vers le nord, mais j'avoue que l'idée de croiser le chemin d'un infernal m'effraie un peu. Ces créatures n'ont pas de cerveau, mais elles sont tout de même assez intimidantes.",
+        "2dee1526f591068e3363": "En allant vers le nord, à l'est de la route qui traverse le Val Grêlé, se trouve un lieu où les Infernaux se rassemblèrent durant la dernière grande guerre : des cratères défigurent le paysage, ainsi que les Infernaux eux-mêmes.\n\nDeux choses m'intriguent : premièrement, y a-t-il toujours des élémentaires d'entropie qui errent sur la zone ? Deuxièmement : les cratères sont-ils toujours remplis d'eau fétide et corrompue, piégée là depuis des années ? M'aiderez-vous, $N ? Attention, les Infernaux détruisent tout sur leur passage.",
+        "591b000324e85f2987df": "C'est bien que vous soyez toujours en vie, $N. Dommage que l'eau existe toujours. J'espérais trouver au moins une source d'eau pure ici à Gangrebois. On dirait que ma quête a échoué. Le processus de guérison de la terre aurait été grandement amélioré si elle avait existé. \n \n Je vais devoir me consacrer au sauvetage des créatures de la forêt encore sauvables, tout en détruisant celles qui ont été tant corrompues qu'elles se mettent elles-mêmes en danger, comme elles mettent en danger les voyageurs qui traversent cette forêt autrefois puissante. "
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -308,6 +468,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -335,6 +513,11 @@
     },
     "hrHR": {
       "description": "Na sjeveru, istočno od ceste u području zvanom Shatter Scar Vale, nalazi se mjesto na koje su tijekom posljednjeg velikog rata prizvani infernali; krateri još ožiljavaju zemlju, kao i sami infernali.\n\nZanimaju me dvije stvari. Prvo, lutaju li područjem još entropijski elementali? Drugo, jesu li krateri još ispunjeni iskvarenom, smrdljivom vodom koja se ondje skupila prije mnogo godina? Hoćeš li mi pomoći i provjeriti, {name}? Ipak budi oprezan, infernali uništavaju sve na svojem putu.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Nadam se da potraga dobro ide, $N. Još nisam krenuo tako daleko na sjever, ali moram priznati da me pomisao na susret s infernalom pomalo plaši. Ta stvorenja nemaju mozga, ali su ipak zastrašujuća.",
+        "2dee1526f591068e3363": "Na sjeveru, istočno od ceste u dolini Shatter Scar, tijekom posljednjeg velikog rata prizvani su infernali. Krateri i sami infernali još ranjavaju zemlju.$B$BZanimaju me dvije stvari. Lutaju li još ondje entropski elementali? I jesu li krateri još puni iskvarene, smrdljive vode koja se ondje skupila prije mnogo godina? Hoćeš li provjeriti, $N? Budi oprezan, infernali uništavaju sve na putu.",
+        "591b000324e85f2987df": "Dobro je da si živ, $N. Loše je što voda još postoji. Nadao sam se pronaći barem jedan čist izvor vode u Šumi kvarenja. Čini se da nisam uspio. Njegovo postojanje moglo je uvelike olakšati iscjeljenje zemlje.$B$BMorat ću se posvetiti spašavanju šumskih stvorenja koja mogu spasiti i uništavanju onih toliko iskvarenih da ugrožavaju sebe i putnike kroz ovu nekoć moćnu šumu."
+      },
       "eventObjectiveLabel": "Istraži kratere u Shatter Scar Valeu",
       "objectiveLines": [
         {
@@ -352,6 +535,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "20a4f3b19150be09abcd194f3b5b1b4615c141fe0aa405523bbe40233c195e09"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -381,6 +579,11 @@
     },
     "itIT": {
       "description": "A nord, a est della strada, nella zona chiamata Shatter Scar Vale, c'è un'area in cui vennero richiamati degli infernali durante l'ultima grande guerra: i crateri segnano ancora la terra, così come gli infernali stessi.\n\nVorrei sapere due cose. Primo: ci sono ancora elementali entropici che si aggirano nella zona? E secondo: i crateri sono ancora pieni dell'acqua corrotta e fetida che vi si accumulò anni fa? Mi aiuteresti andando a controllare, {name}? Ma fai attenzione: gli infernali distruggono tutto ciò che incontrano.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Spero che la tua ricerca vada bene, $N. Io non ho ancora cominciato a spingermi così a nord, ma devo ammettere che il pensiero di incrociare un infernale, in qualunque momento, mi spaventa un pochino. Sono creature senza cervello, ma incutono comunque parecchio timore.",
+        "2dee1526f591068e3363": "A nord, lungo il lato est della strada, in quella che chiamano Valle dei Crateri Infernali, c'è una zona dove durante l'ultima grande guerra furono fatti piovere dal cielo gli infernali — i crateri sfregiano ancora la terra, e lo stesso fanno gli infernali.\n\nSono curioso di sapere due cose. Primo, ci sono ancora elementali entropici che vagano per la zona? E secondo, i crateri sono ancora pieni dell'acqua corrotta e fetida che vi si raccolse anni fa? Mi dai una mano e vai a controllare, $N? Ma fai attenzione, gli infernali distruggono tutto quello che trovano sul loro cammino.",
+        "591b000324e85f2987df": "Bene che tu sia vivo, $N. Male che l’acqua esista ancora. Speravo di trovare almeno una fonte d’acqua pura qui a Vilbosco. Sembra che la mia ricerca sia fallita. La sua presenza avrebbe reso molto più facile guarire la terra.$B$BDovrò dedicarmi a salvare le creature della foresta che posso e a distruggere quelle così corrotte da mettere in pericolo se stesse e i viaggiatori di questa foresta un tempo maestosa."
+      },
       "eventObjectiveLabel": "Esplora i crateri nella Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -398,6 +601,23 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "20a4f3b19150be09abcd194f3b5b1b4615c141fe0aa405523bbe40233c195e09"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -427,6 +647,11 @@
     },
     "koKR": {
       "description": "여기서 동쪽으로 나가 길을 따라 북쪽으로 가다 보면 불벼락 골짜기라는 곳이 나오지. 지난 대전쟁 당시 지옥불정령들이 소환된 자리일세. 그들이 내려온 흔적이 아직도 그 땅 위에 상처로 남아 있다네.\n\n그런데 궁금한 것이, 아직도 그 지역에 혼돈의 존재들이 남아 있을까? 그리고 몇 년 전에 지옥불정령들이 추락할 때 생긴 분화구에 악취가 나는 부패한 물이 고였었는데 아직도 남아 있을까? 나를 좀 도와주지 않겠나, {name}? 조심해야 할 걸세. 지옥불정령들은 눈앞에 있는 모든 것들을 파괴하는 존재이니...",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "검색이 잘 되길 바랍니다, $N.  나는 그렇게 멀리 북쪽으로 향하기 시작하지는 않았지만 어느 지점에서 지옥의 길을 건너야 한다는 생각이 조금 두렵다는 것을 인정할 것입니다.  생물은 머리가 없지만 여전히 위협적입니다.",
+        "2dee1526f591068e3363": "여기서 동쪽으로 나가 길을 따라 북쪽으로 가다 보면 불벼락 골짜기라는 곳이 나오지. 지난 대전쟁 당시 지옥불정령들이 소환된 자리일세. 그들이 내려온 흔적이 아직도 그 땅 위에 상처로 남아 있다네.\n\n그런데 궁금한 것이, 아직도 그 지역에 혼돈의 존재들이 남아 있을까? 그리고 몇 년 전에 지옥불정령들이 추락할 때 생긴 분화구에 악취가 나는 부패한 물이 고였었는데 아직도 남아 있을까? 나를 좀 도와주지 않겠나, $N? 조심해야 할 걸세. 지옥불정령들은 눈앞에 있는 모든 것들을 파괴하는 존재이니...",
+        "591b000324e85f2987df": "살아있어서 다행이네, $n. 그 더러운 물이 아직도 남아 있다는 것은 솔직히 마음에 걸리지만... 나는 여기 악령의 숲에서 단 한 곳이라도 순수한 물을 얻을 수 있는 장소를 찾으려고 했었네. 하지만 실패한 것 같군. 그런 곳이 있다면 이 땅이 훨씬 쉽게 되살아날 수 있었겠지.\n\n한때 아름다웠던 이 숲을 여행자들은 그냥 지나쳐 갈 뿐이지만 난 이곳에 남아 숲을 파괴하고 있는 존재들을 처치하고 생물들을 타락으로부터 지켜내겠네."
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -443,6 +668,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -470,6 +713,11 @@
     },
     "plPL": {
       "description": "Na północy, na wschód od drogi, w miejscu zwanym Shatter Scar Vale znajduje się obszar, na który podczas ostatniej wielkiej wojny przywołano infernale. Kratery nadal znaczą ziemię bliznami, podobnie jak same infernale.\n\nCiekawią mnie dwie rzeczy. Po pierwsze, czy nadal wędrują tam entropiczne żywiołaki? Po drugie, czy kratery nadal wypełnia skażona, cuchnąca woda, która zebrała się tam przed laty? Pomożesz mi to sprawdzić, {name}? Uważaj jednak, infernale niszczą wszystko na swojej drodze.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Mam nadzieję, że poszukiwania idą dobrze, $N. Nie zapuszczałem się jeszcze tak daleko na północ, ale przyznam, że myśl o spotkaniu infernala trochę mnie przeraża. Te stworzenia są bezmyślne, ale wciąż groźne.",
+        "2dee1526f591068e3363": "Na północy, na wschód od drogi w Shatter Scar Vale, podczas ostatniej wielkiej wojny przywołano infernale. Kratery i same infernale nadal szpecą ziemię.$B$BInteresują mnie dwie rzeczy. Czy nadal wędrują tam entropiczne żywiołaki? I czy kratery wciąż są pełne skażonej, cuchnącej wody, która zebrała się tam przed laty? Pomożesz mi to sprawdzić, $N? Uważaj, infernale niszczą wszystko na swojej drodze.",
+        "591b000324e85f2987df": "Dobrze, że żyjesz, $N. Źle, że woda nadal tam jest. Miałem nadzieję znaleźć choć jedno czyste źródło w Spaczonym Lesie. Wygląda na to, że moje poszukiwania zawiodły. Takie źródło znacznie ułatwiłoby leczenie ziemi.$B$BMuszę zająć się ratowaniem leśnych stworzeń, które jeszcze można ocalić, i niszczeniem tych tak skażonych, że zagrażają sobie i podróżnym przemierzającym ten niegdyś potężny las."
+      },
       "eventObjectiveLabel": "Zbadaj kratery w Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -487,6 +735,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "20a4f3b19150be09abcd194f3b5b1b4615c141fe0aa405523bbe40233c195e09"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -516,6 +779,11 @@
     },
     "ptBR": {
       "description": "Ao norte daqui, ao longo do leste da estrada no chamado Vale das Escaras Pungentes, fica um local onde os infernais foram evocados durante a última grande guerra. As crateras ainda desfiguram a área, assim como a presença dos próprios infernais.\n\nFico curioso com duas coisas. Primeiro, ainda tem elementais entrópicos vagando por aquelas bandas? E segundo, as crateras ainda estão cheias daquela água fétida e corrupta que se acumulou há anos? Você pode ir lá verificar, {name}? Mas tome cuidado, pois os infernais destroem tudo o que atravessar o caminho deles.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Espero que sua busca esteja indo bem, $N. Ainda não fui tão ao norte, mas admito que a ideia de encontrar um infernal me assusta um pouco. Essas criaturas não têm cérebro, mas ainda são intimidadoras.",
+        "2dee1526f591068e3363": "Ao norte daqui, ao longo do leste da estrada no chamado Vale das Escaras Pungentes, fica um local onde os infernais foram evocados durante a última grande guerra. As crateras ainda desfiguram a área, assim como a presença dos próprios infernais.\n\nFico curioso com duas coisas. Primeiro, ainda tem elementais entrópicos vagando por aquelas bandas? E segundo, as crateras ainda estão cheias daquela água fétida e corrupta que se acumulou há anos? Você pode ir lá verificar, $N? Mas tome cuidado, pois os infernais destroem tudo o que atravessar o caminho deles.",
+        "591b000324e85f2987df": "Que bom que você ainda está vivo, $N. E que ruim que a água ainda está contaminada. Eu tinha esperanças de encontrar pelo menos uma fonte de água pura aqui na Selva Maleva. Parece que minha esperança era vã. O processo de cura da terra seria muito mais fácil se houvesse água.\n\nVou ter que focar em salvar as poucas criaturas da floresta que ainda puderem ser salvas, enquanto destruo as que já estão tão corrompidas que representam uma ameaça, a si mesmas e também aos viajantes que passarem por esta floresta que já foi tão impressionante um dia."
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -532,6 +800,23 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -559,6 +844,11 @@
     },
     "ruRU": {
       "description": "На севере отсюда, если идти по восточной дороге, лежить так называемая долина Рваных Ран. Это то место, где во время последнией великой войны призывали инферналов. Там до сих пор поганят землю кратеры – да и сами големы.\n\nЯ хочу узнать две вещи. Во-первых, шляются ли там до сих пор эти энтропийные духи? И второе – до сих ли пор заполнены эти кратеры поганой вонючей водой, что скапливалась в них долгие годы? Поможешь ли ты мне это узнать, {name}? Но будь осторожен – инферналы уничтожают все на своем пути.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Надеюсь, твои поиски пройдут удачно, $N. Я еще никогда не забирался так далеко на север, должен признаться, мысль о встрече с инферналом, мягко говоря, меня пугает. Эти создания безмозглы, но, тем не менее, устрашающи.",
+        "2dee1526f591068e3363": "На севере отсюда, если идти по восточной дороге, лежить так называемая долина Рваных Ран. Это то место, где во время последнией великой войны призывали инферналов. Там до сих пор поганят землю кратеры – да и сами големы.\n\nЯ хочу узнать две вещи. Во-первых, шляются ли там до сих пор эти энтропийные духи? И второе – до сих ли пор заполнены эти кратеры поганой вонючей водой, что скапливалась в них долгие годы? Поможешь ли ты мне это узнать, $N? Но будь осторожен – инферналы уничтожают все на своем пути.",
+        "591b000324e85f2987df": "Хорошо что ты жив, $N. Плохо, что вода по прежнему загрязнена. Я хотел найти хотя бы один чистый источник в Оскверненном лесу, но похоже мой поиск закончился неудачей. Ах, восстановление этой земли пошло бы намного легче...\n\nМне придется ограничиться спасением тех лесных существ, которых еще можно спасти, и уничтожением всех прочих..."
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -575,6 +865,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -602,6 +910,11 @@
     },
     "svSE": {
       "description": "I norr, öster om vägen i det som kallas Shatter Scar Vale, finns ett område där infernaler kallades ner under det senaste stora kriget. Kratrarna ärrar fortfarande marken, liksom infernalerna själva.\n\nJag undrar över två saker. Strövar entropiska elementarer fortfarande omkring där? Och är kratrarna fortfarande fyllda av det fördärvade, stinkande vatten som samlades där för flera år sedan? Vill du hjälpa mig att undersöka det, {name}? Var försiktig, infernalerna förstör allt i sin väg.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Jag hoppas att ditt sökande går bra, $N. Jag har inte börjat bege mig så långt norrut, men jag måste erkänna att tanken på att möta en infernal skrämmer mig lite. Varelserna är hjärnlösa men ändå skrämmande.",
+        "2dee1526f591068e3363": "Norrut, öster om vägen i Shatter Scar Vale, kallades infernaler ner under det senaste stora kriget. Kratrarna och infernalerna själva ärrar fortfarande landet.$B$BJag undrar två saker. Vandrar entropiska elementarer fortfarande i området? Och är kratrarna fortfarande fyllda med det fördärvade, stinkande vatten som samlades där för flera år sedan? Vill du undersöka det åt mig, $N? Var försiktig, infernalerna förstör allt i sin väg.",
+        "591b000324e85f2987df": "Bra att du lever, $N. Illa att vattnet fortfarande finns kvar. Jag hoppades finna åtminstone en ren vattenkälla här i Fördärvskogen. Det verkar som om mitt sökande har misslyckats. En sådan källa kunde ha gjort läkningen av landet mycket lättare.$B$BJag får ägna mig åt att rädda de skogsvarelser jag kan och förgöra dem som är så fördärvade att de hotar både sig själva och resenärer genom denna en gång mäktiga skog."
+      },
       "eventObjectiveLabel": "Utforska kratrarna i Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -619,6 +932,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "20a4f3b19150be09abcd194f3b5b1b4615c141fe0aa405523bbe40233c195e09"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -648,6 +976,11 @@
     },
     "trTR": {
       "description": "Kuzeyde, yolun doğusunda Shatter Scar Vale denen yerde, son büyük savaşta infernal'ların indirildiği bir bölge var. Kraterler, infernal'ların kendileri gibi, hâlâ toprağı yaralıyor.\n\nİki şeyi merak ediyorum. Birincisi, bölgede hâlâ entropik elementaller dolaşıyor mu? İkincisi, kraterler hâlâ yıllar önce orada biriken kirli ve pis kokulu suyla dolu mu? Bana yardım edip bakar mısın, {name}? Ama dikkat et, infernal'lar yollarına çıkan her şeyi yok eder.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Umarım arayışın iyi gidiyordur, $N. Henüz o kadar kuzeye gitmedim ama bir infernalle karşılaşma düşüncesinin beni biraz korkuttuğunu itiraf etmeliyim. Bu yaratıklar akılsız ama yine de ürkütücü.",
+        "2dee1526f591068e3363": "Kuzeyde, yolun doğusundaki Shatter Scar Vadisi’nde son büyük savaş sırasında infernaller çağrılmıştı. Kraterler ve infernaller hâlâ toprakları yaralıyor.$B$Bİki şeyi merak ediyorum. Entropik elementaller hâlâ bölgede dolaşıyor mu? Kraterler yıllar önce biriken bozulmuş, kokuşmuş suyla hâlâ dolu mu? Bunları benim için kontrol eder misin, $N? Dikkatli ol, infernaller yollarına çıkan her şeyi yok eder.",
+        "591b000324e85f2987df": "Hayatta olman iyi, $N. Suyun hâlâ orada olması kötü. Fel Ormanı’nda en az bir temiz su kaynağı bulmayı umuyordum. Görünüşe göre arayışım başarısız oldu. Böyle bir kaynak toprağı iyileştirmeyi çok kolaylaştırabilirdi.$B$BKurtarabileceğim orman yaratıklarını kurtarmaya, hem kendilerini hem de bir zamanlar görkemli bu ormandan geçenleri tehlikeye atacak kadar yozlaşanları yok etmeye odaklanmalıyım."
+      },
       "eventObjectiveLabel": "Shatter Scar Vadisi'ndeki kraterleri keşfet",
       "objectiveLines": [
         {
@@ -665,6 +998,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "20a4f3b19150be09abcd194f3b5b1b4615c141fe0aa405523bbe40233c195e09"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -694,6 +1042,11 @@
     },
     "ukUA": {
       "description": "На півночі, зі східного боку дороги, у місці під назвою долина Шматованих порубів, є ділянка, куди під час останньої великої війни прикликали пекельників. Кратери досі спотворюють землю, як і самі пекельники.\n\nМене цікавлять дві речі. По-перше, чи досі блукають там ентропічні елементалі? По-друге, чи досі кратери наповнені оскверненою смердючою водою, що зібралася там багато років тому? Допоможеш перевірити, {name}? Тільки обережно: пекельники знищують усе на своєму шляху.",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "Сподіваюся, пошуки йдуть добре, $N. Я ще не заходив так далеко на північ, але зізнаюся, що думка про зустріч з інферналом трохи лякає. Ці істоти безмозкі, але все одно грізні.",
+        "2dee1526f591068e3363": "На півночі, на схід від дороги в долині Розбитого Шраму, під час останньої великої війни викликали інферналів. Кратери й самі інфернали досі спотворюють землю.$B$BМене цікавлять дві речі. Чи блукають там досі ентропійні елементалі? І чи кратери досі заповнені зіпсованою смердючою водою, що зібралася там багато років тому? Допоможеш перевірити, $N? Обережно, інфернали знищують усе на своєму шляху.",
+        "591b000324e85f2987df": "Добре, що ти живий, $N. Погано, що вода досі там. Я сподівався знайти хоча б одне чисте джерело у Скверноліссі. Схоже, пошуки зазнали невдачі. Наявність джерела значно полегшила б зцілення землі.$B$BМені доведеться рятувати тих лісових істот, яких можу, і знищувати тих, що настільки зіпсовані, що загрожують і собі, і мандрівникам у цьому колись могутньому лісі."
+      },
       "eventObjectiveLabel": "Дослідіть кратери в долині Шматованих порубів",
       "objectiveLines": [
         {
@@ -711,6 +1064,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "20a4f3b19150be09abcd194f3b5b1b4615c141fe0aa405523bbe40233c195e09"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -742,6 +1110,11 @@
     },
     "zhCN": {
       "description": "在这里的北面，沿着大路向东看，你可以找到一处被称作碎痕谷的地方，那里是上次战争中燃烧军团的地狱火恶魔们的着陆点——迄今仍有许多地狱火在那里游荡。\n\n我感兴趣的有两件事情。首先，那里是否还有被污染的元素生物？其次，那些凹坑中是否还充满了堕落的恶臭之水？你能帮我去看看吗，{name}？小心一些，地狱火可是会攻击它们看到的一切东西的。",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "我希望你的搜索进行得很顺利，$N。我还没有准备启程去森林北部，但是我必须承认，穿越一片到处都是地狱火的区域让我感到有些害怕。那些生物没有思想，但仍然非常具有威胁性。",
+        "2dee1526f591068e3363": "在这里的北面，沿着大路向东看，你可以找到一处被称作碎痕谷的地方，那里是上次战争中燃烧军团的地狱火恶魔们的着陆点——迄今仍有许多地狱火在那里游荡。\n\n我感兴趣的有两件事情。首先，那里是否还有被污染的元素生物？其次，那些凹坑中是否还充满了堕落的恶臭之水？你能帮我去看看吗，$N？小心一些，地狱火可是会攻击它们看到的一切东西的。",
+        "591b000324e85f2987df": "很好，你还活着，$N。糟糕的是那些堕落之水还在那里。我原本希望能在费伍德森林找到一片乾净的水源，看来我的计画落空了。如果有那样的水源，治癒这片土地的工作就会简单许多。\n\n我现在不得不一边拯救那些可以被拯救的生物，一边消灭那些已经无可救药的生物，它们对於进入这片森林的旅人是一种威胁。\n"
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -758,6 +1131,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -785,6 +1176,11 @@
     },
     "zhTW": {
       "description": "在這裡的北面，沿著大路向東看，你可以找到一處被稱作碎痕谷的地方，那裡是上次戰爭中燃燒軍團的地獄火惡魔們的著陸點——迄今仍有許多地獄火在那裡遊蕩。\n\n我感興趣的有兩件事情。首先，那裡是否還有被污染的元素生物？其次，那些凹坑中是否還充滿了墮落的惡臭之水？你能幫我去看看嗎，{name}？小心一些，地獄火可是會攻擊它們看到的一切東西的。",
+      "dialogue": {
+        "1c776bd531ca0511b3d8": "我希望你的搜索進行得很順利，$N。我還沒有準備啓程去森林北部，但是我必須承認，穿越一片到處都是煉獄火的區域讓我感到有些害怕。那些生物沒有思想，但仍然非常具有威脅性。",
+        "2dee1526f591068e3363": "在這裡的北面，沿著大路向東看，你可以找到一處被稱作碎痕谷的地方，那裡是上次戰爭中燃燒軍團的地獄火惡魔們的著陸點——迄今仍有許多地獄火在那裡遊蕩。\n\n我感興趣的有兩件事情。首先，那裡是否還有被污染的元素生物？其次，那些凹坑中是否還充滿了墮落的惡臭之水？你能幫我去看看嗎，$N？小心一些，地獄火可是會攻擊它們看到的一切東西的。",
+        "591b000324e85f2987df": "很好，你還活着，$N。糟糕的是那些墮落之水還在那裏。我原本希望能在費伍德森林找到一片乾淨的水源，看來我的計劃落空了。如果有那樣的水源，治癒這片土地的工作就會簡單許多。\n\n我現在不得不一邊拯救那些可以被拯救的生物，一邊消滅那些已經無可救藥的生物，它們對於進入這片森林的旅人是一種威脅。"
+      },
       "eventObjectiveLabel": "Explore the craters in Shatter Scar Vale",
       "objectiveLines": [
         {
@@ -801,6 +1197,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.1c776bd531ca0511b3d8": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.2dee1526f591068e3363": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.591b000324e85f2987df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

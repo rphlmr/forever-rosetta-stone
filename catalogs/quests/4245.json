@@ -1,8 +1,28 @@
 {
   "areaId": 490,
+  "dialogueContexts": {
+    "75b5db2da7db6dbbab4c": {
+      "lineId": "q:4245:complete",
+      "npcId": 9618,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "f3e0945d62429165f964": {
+      "lineId": "q:4245:progress",
+      "npcId": 9618,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Než A-Me nula jedna povedeš zpátky ke Karně Remtravel, přepneš spínač do polohy „Vypnuto“. Ještě jednou se rozhlédneš, jestli se neblíží nějaké gorily, a chystáš se zjistit, co se stane, když spínač přepneš zpátky do polohy „Zapnuto“.\n\nTohle je tvoje poslední šance... Opravdu to chceš udělat?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Ach, dokázal jsi to! Nádhera! Děkuji, $N.$B$BChudinka A-Me. Podívej na ty promáčkliny. S trochou práce ji zase uvedeme do dokonalého stavu.$B$BJeště jednou děkuji, $N. Opravdu si toho vážím.",
+        "f3e0945d62429165f964": "Podařilo se ti A-Me pomoci? Měl jsi pravdu, když jsi za příčinu označil zničený mithrilový plášť. Jsem si jistá, že když ho vyměníš, znovu se aktivuje a bude se moci vrátit domů."
+      },
       "eventObjectiveLabel": "Chraň A-Me 01, dokud nedorazíš ke Karně Remtravel",
       "objectiveLines": [
         {
@@ -20,6 +40,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -52,6 +82,10 @@
     },
     "daDK": {
       "description": "Mens du undersøger, om du er klar til at føre A-Me 01 tilbage til Karna Remtravel, slår du kontakten til positionen »Off«. Du ser dig endnu en gang omkring for at sikre dig, at ingen af gorillaerne kommer, og gør dig klar til at se, hvad der sker, når du slår kontakten tilbage til positionen »On«.\n\nDette er din sidste chance ... er du sikker på, at det er det, du vil gøre?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Åh, du gjorde det! Vidunderligt! Tak, $N.$B$BÅh, stakkels A-Me. Se alle de buler. Med lidt arbejde får vi hende til at fungere perfekt igen.$B$BTak igen, $N. Jeg sætter virkelig pris på det.",
+        "f3e0945d62429165f964": "Har du kunnet hjælpe A-Me? Du havde nok ret i, at det ødelagte mithrilhylster var problemet. Jeg er sikker på, at hvis du udskifter det, vil hun blive aktiveret igen og kunne komme hjem."
+      },
       "eventObjectiveLabel": "Beskyt A-Me 01, indtil du når Karna Remtravel",
       "objectiveLines": [
         {
@@ -69,6 +103,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ed02b07d387d6e07a7e6331a4df955ebda53fc146f530bb671a799b952558542"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -98,6 +142,10 @@
     },
     "deDE": {
       "description": "Nachdem Ihr Euch vergewissert habt, dass Ihr bereit seid, A-Me 01 zu Karna Remtravel zurückzubringen, knipst Ihr den Schalter auf 'Aus'. Ihr seht Euch nochmals um, um sicherzugehen, dass sich keine Gorillas nähern, und fragt Euch, was wohl geschieht, wenn Ihr den Schalter wieder auf die 'Ein'-Position stellt.\n\nDas ist Eure letzte Chance ... wollt Ihr das wirklich tun?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Oh, Ihr habt es geschafft! Großartig! Ich danke Euch, $N. \n \n Oh, meine arme A-Me. Diese Beulen, oh nein! Aber mit Geduld und Spucke werden wir sie im Handumdrehen wieder voll funktionsfähig haben. \n \n Nochmals danke, $N. Ich weiß das wirklich zu schätzen. ",
+        "f3e0945d62429165f964": "Konntet Ihr A-Me helfen? Eure Überlegung, dass das Mithrilgehäuse beschädigt sein könnte und das den Fehler verursacht, war gut. Wenn Ihr es ersetzt, wird A-Me bestimmt wieder aktiviert und kann nach Hause kommen."
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -114,6 +162,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -143,6 +203,10 @@
     },
     "enUS": {
       "description": "Checking to see if your prepared to lead A-Me 01 back to Karna Remtravel, you flip the switch to the \"Off\" position. Glancing around once again to make sure none of the gorillas are coming, you prepare to see what happens when you flip the switch back to the \"On\" position.\n\nThis is your last chance... are you sure this is what you want to do?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Oh, you've done it! Wonderful! Thank you, $N.$B$BOh, my poor, A-Me. Look at all those dents. We'll get her up and running perfectly with just a little work.$B$BThank you again, $N. I really appreciate it.",
+        "f3e0945d62429165f964": "Have you been able to help A-Me? That mithril casing you mentioned being destroyed was a good guess at what was wrong. I'm sure if you replace that, she'll reactivate and be able to come home."
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -159,6 +223,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -187,6 +263,10 @@
     },
     "esES": {
       "description": "Mientras compruebas si estás preparado para conducir a Memo 01 de vuelta a Karna Tripirrem, pones el interruptor en la posición \"Apagado\". Miras a los lados de nuevo para asegurarte de que no se acercan gorilas y te preparas para descubrir qué ocurre al poner de nuevo el interruptor en la posición \"Encendido\".\n\nEsta es tu última oportunidad... ¿estás seguro de que esto es lo que quieres hacer?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "¡Lo has logrado! ¡Estupendo! Gracias, $n.\n\nMi pobre Memo 01... ¡mira qué abolladuras! Con unos pequeños retoques, la dejaré como nueva.\n\nGracias de nuevo por tu inestimable ayuda, $n.",
+        "f3e0945d62429165f964": "¿Has podido ayudar a A-Me?  Esa cubierta de mithril que mencionaste que fue destruida fue una buena suposición de lo que estaba mal.  Estoy seguro de que si reemplazas eso, se reactivará y podrá volver a casa."
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -203,6 +283,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -230,6 +322,10 @@
     },
     "esMX": {
       "description": "Mientras revisas si tienes todo listo para llevar el Memo 01 de regreso a Karna Tripirrem, mueves el interruptor a la posición de \"Apagado\". Echas otro vistazo para verificar que no se acerque ningún gorila, y te preparas para ver lo que sucederá cuando vuelvas a mover el interruptor a la posición de \"Encendido\".\n\nEsta es tu última oportunidad... ¿Estás seguro de que quieres hacer esto?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "¡Lo has logrado! ¡Estupendo! Gracias, $n.\n\nMi pobre Memo 01... ¡mira qué abolladuras! Con unos pequeños retoques, la dejaré como nueva.\n\nGracias de nuevo por tu inestimable ayuda, $n.",
+        "f3e0945d62429165f964": "¿Has podido ayudar a Memo? Esa carcasa de mithril que mencionaste fue destruida era una buena suposición de lo que estaba mal. Estoy seguro de que si reemplaza eso, se reactivará y podrá volver a casa."
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -246,6 +342,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -273,6 +381,10 @@
     },
     "frFR": {
       "description": "Tout en vérifiant que vous pourrez bien ramener A-mi à Karna Remtravel, vous placez l'interrupteur en position Off. Tandis que vous scrutez les alentours pour vous assurer qu'aucun gorille ne survient, vous vous préparez à voir le résultat du passage de l'interrupteur sur la position On.\n\nC'est votre dernière chance… Êtes-vous sûr que c'est bien ce que vous voulez faire ?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Oh ! Vous avez réussi ! Merveilleux ! Merci, $N. \n \n Oh non ! Regardez-moi ces bosses. On va la réparer et la remettre en parfait état de marche en deux temps trois mouvements. \n \n Merci encore, $N. J'apprécie réellement ce que vous avez fait. ",
+        "f3e0945d62429165f964": "Avez-vous pu aider A-Me ? Le boîtier en mithril que vous avez mentionné comme étant détruit était une bonne idée de ce qui n'allait pas. Je suis sûr que si vous le remplacez, elle se réactivera et pourra rentrer à la maison."
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -289,6 +401,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -316,6 +440,10 @@
     },
     "hrHR": {
       "description": "Provjeravaš jesi li spreman odvesti A-Me 01 natrag Karni Remtravel i prebacuješ prekidač u položaj „Isključeno”. Još jednom pogledaš oko sebe kako bi se uvjerio da se nijedna gorila ne približava, a zatim se pripremaš vidjeti što će se dogoditi kada prekidač vratiš u položaj „Uključeno”.\n\nOvo ti je posljednja prilika... jesi li siguran da to želiš učiniti?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Oh, uspjelo ti je! Predivno! Hvala ti, $N.$B$BJadna moja A-Me. Pogledaj sva ta udubljenja. Uz malo rada ponovno će savršeno raditi.$B$BJoš jednom hvala, $N. Zaista to cijenim.",
+        "f3e0945d62429165f964": "Jesi li uspio pomoći A-Me? Dobro si pretpostavio da je uništeno mitrilsko kućište uzrok problema. Sigurna sam da će se, ako ga zamijeniš, ponovno aktivirati i moći doći kući."
+      },
       "eventObjectiveLabel": "Štiti A-Me 01 dok ne stigneš do Karne Remtravel",
       "objectiveLines": [
         {
@@ -333,6 +461,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ed02b07d387d6e07a7e6331a4df955ebda53fc146f530bb671a799b952558542"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -362,6 +500,10 @@
     },
     "itIT": {
       "description": "Dopo aver verificato di essere pronto a ricondurre A-Me 01 da Karna Remtravel, porti l'interruttore in posizione \"Spento\". Guardandoti di nuovo intorno per assicurarti che non stiano arrivando gorilla, ti prepari a vedere cosa succederà quando riporterai l'interruttore in posizione \"Acceso\".\n\nQuesta è la tua ultima occasione... sei sicuro di volerlo fare?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Oh, ce l'hai fatta! Magnifico! Grazie, $N.\n\nOh, mia povera A-Me. Guarda quante ammaccature. Con appena un po' di lavoro la rimetteremo in perfetta efficienza.\n\nGrazie ancora, $N. Te ne sono davvero grata.",
+        "f3e0945d62429165f964": "Sei riuscito ad aiutare A-Me? Hai fatto bene a sospettare che il problema fosse l’involucro di mitril distrutto. Sono certa che, se lo sostituisci, si riattiverà e potrà tornare a casa."
+      },
       "eventObjectiveLabel": "Proteggi A-Me 01 fino a raggiungere Karna Remtravel",
       "objectiveLines": [
         {
@@ -379,6 +521,17 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ed02b07d387d6e07a7e6331a4df955ebda53fc146f530bb671a799b952558542"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -408,6 +561,10 @@
     },
     "koKR": {
       "description": "이제 카르나 렘트래블에게 에이미 01을 데리고 갈 준비가 되었는지 확인하면서 전원을 끕니다. 주변에 고릴라가 없는지 다시 한번 확인한 후, 전원을 켰을 때 일어날 상황에 대해 단단히 각오를 합니다.\n\n이게 마지막 기회입니다... 정말로 이렇게 해야 할까요?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "오, 해내셨군요! 굉장해요! 정말 감사합니다.\n\n아, 불쌍한 우리 에이미. 움푹 패인 이 자국 좀 봐. 조금만 손을 보면 완전히 고칠 수 있을 거예요.\n\n다시 한번 감사 드립니다. 정말로 고마워요.",
+        "f3e0945d62429165f964": "에이미를 수리하셨나요? 미스릴 형틀이 부서졌을 거라는 추측은 아주 훌륭했어요. 그걸 교체하면 다시 작동할 테니 에이미를 쉽게 데리고 올 수 있을 거예요."
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -424,6 +581,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -451,6 +620,10 @@
     },
     "plPL": {
       "description": "Sprawdzając, czy jesteś gotów odprowadzić A-Me 01 do Karny Remtravel, ustawiasz przełącznik w pozycji „Wyłączone”. Jeszcze raz rozglądasz się, by upewnić się, że żaden goryl nie nadchodzi, i przygotowujesz się sprawdzić, co się stanie po ponownym ustawieniu przełącznika w pozycji „Włączone”.\n\nTo twoja ostatnia szansa... na pewno chcesz to zrobić?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Och, udało ci się! Wspaniale! Dziękuję, $N.$B$BMoja biedna A-Me. Spójrz na te wszystkie wgniecenia. Przy odrobinie pracy znowu będzie działać jak nowa.$B$BJeszcze raz dziękuję, $N. Naprawdę to doceniam.",
+        "f3e0945d62429165f964": "Czy udało ci się pomóc A-Me? Słusznie przypuszczasz, że problemem była zniszczona mithrilowa obudowa. Jestem pewna, że jeśli ją wymienisz, A-Me uruchomi się ponownie i będzie mogła wrócić do domu."
+      },
       "eventObjectiveLabel": "Chroń A-Me 01, aż dotrzecie do Karny Remtravel",
       "objectiveLines": [
         {
@@ -468,6 +641,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ed02b07d387d6e07a7e6331a4df955ebda53fc146f530bb671a799b952558542"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -497,6 +680,10 @@
     },
     "ptBR": {
       "description": "Verificando se está tudo pronto para levar a A-Me 01 de volta para Karna Trilheiro, você coloca a chave na posição \"Desligado\". Olhando mais uma vez para se certificar de que nenhum dos gorilas está chegando, você se prepara para ver o que acontece quando vira o botão de volta para a posição \"Ligado\".\n\nEsta é sua última chance... tem certeza de que é isso que você querer fazer?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Ah, você conseguiu! Maravilha! Obrigado, $N.\n\nAh, minha pobre A-Me. Quantos amassados. Nós vamos colocá-la para funcionar perfeitamente com um pouquinho de trabalho.\n\nObrigado novamente, $N. Foi muito importante para mim.",
+        "f3e0945d62429165f964": "Você conseguiu ajudar A-Me? O revestimento de mithril destruído que você mencionou foi um bom palpite sobre o problema. Tenho certeza de que, se o substituir, ela será reativada e poderá voltar para casa."
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -513,6 +700,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -540,6 +738,10 @@
     },
     "ruRU": {
       "description": "Установив тумблер в положение \"выкл.\", вы оглядываетесь, чтобы удостовериться, что все готово к тому, чтобы доставить Чи-Та 3 назад к Карне Сомнамбулер. Убедившись, что горилл поблизости нет, вы собираетесь включить робота. \n\nЭто ваш последний шанс. Вы уверены, что хотите сделать именно это?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Ах, тебе удалось, какое счастье! Спасибо, $N.\n\nО, моя бедняжечка! Как тебе досталось! Ничего, я починю тебя, будешь как новенькая!\n\nЕще раз благодарю тебя, $N, твоя помощь неоценима.",
+        "f3e0945d62429165f964": "Что там с Чи-Та 3? Ты заменил мифриловую обшивку?"
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -556,6 +758,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -583,6 +797,10 @@
     },
     "svSE": {
       "description": "För att se om du är redo att leda A-Me 01 till Karna Remtravel slår du strömbrytaren till \"Av\". Du tittar runt så att ingen gorilla närmar sig och gör dig redo att se vad som händer när du slår tillbaka till \"På\".\n\nSista chansen... är du säker på att du vill göra detta?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Åh, du klarade det! Underbart! Tack, $N.$B$BÅh, min stackars A-Me. Se på alla bucklor. Med lite arbete får vi henne att fungera perfekt igen.$B$BTack igen, $N. Jag uppskattar det verkligen.",
+        "f3e0945d62429165f964": "Har du kunnat hjälpa A-Me? Du gissade nog rätt om att det förstörda mithrilhöljet var problemet. Jag är säker på att hon aktiveras igen och kan komma hem om du byter ut det."
+      },
       "eventObjectiveLabel": "Skydda A-Me 01 tills ni når Karna Remtravel",
       "objectiveLines": [
         {
@@ -600,6 +818,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ed02b07d387d6e07a7e6331a4df955ebda53fc146f530bb671a799b952558542"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -629,6 +857,10 @@
     },
     "trTR": {
       "description": "A-Me 01'i Karna Remtravel'a geri götürmeye hazır olup olmadığını kontrol ederek anahtarı \"Kapalı\" konumuna çeviriyorsun. Gorillerin gelmediğinden emin olmak için bir kez daha çevrene bakıp anahtarı yeniden \"Açık\" konumuna çevirdiğinde ne olacağını görmeye hazırlanıyorsun.\n\nBu son şansın... yapmak istediğinin bu olduğundan emin misin?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "Ah, başardın! Harika! Teşekkür ederim, $N.$B$BAh, zavallı A-Me’m. Şu göçüklere bak. Biraz çalışmayla onu tekrar kusursuz hale getiririz.$B$BTekrar teşekkürler, $N. Gerçekten minnettarım.",
+        "f3e0945d62429165f964": "A-Me’ye yardım edebildin mi? Bahsettiğin hasarlı mithril kaplamanın sorunun kaynağı olduğunu düşünmek iyi bir tahmindi. Eminim onu değiştirirsen yeniden çalışacak ve eve gelebilecek."
+      },
       "eventObjectiveLabel": "Karna Remtravel'a ulaşana kadar A-Me 01'i koru",
       "objectiveLines": [
         {
@@ -646,6 +878,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ed02b07d387d6e07a7e6331a4df955ebda53fc146f530bb671a799b952558542"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -675,6 +917,10 @@
     },
     "ukUA": {
       "description": "Переконавшись, чи готові ви провести Е-Мі 01 до Карни Сноходень, ви перемикаєте перемикач в положення \"Вимкнено\". Ще раз озирнувшись навколо, щоб переконатися, що жодна з мавп не наближається до вас, ви готуєтесь побачити, що станеться, коли ви повернете перемикач в положення \"Увімкнено\".\n\nЦе ваш останній шанс... ви впевнені, що хочете це зробити?",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "О, тобі вдалося! Чудово! Дякую, $N.$B$BБідолашна моя А-Ме. Поглянь на всі ці вм’ятини. Трохи попрацюємо, і вона знову чудово запрацює.$B$BЩе раз дякую, $N. Я дуже це ціную.",
+        "f3e0945d62429165f964": "Чи вдалося допомогти А-Ме? Ти правильно припустив, що проблема в зруйнованому міфриловому корпусі. Впевнена, якщо його замінити, вона знову запрацює і зможе повернутися додому."
+      },
       "eventObjectiveLabel": "Захищайте Е-Мі 01, доки не дістанетеся Карни Сноходень",
       "objectiveLines": [
         {
@@ -692,6 +938,16 @@
             "source": "classicUA",
             "sourceLocale": "ukUA",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "eventObjectiveLabel": {
             "origin": "ai",
@@ -723,6 +979,10 @@
     },
     "zhCN": {
       "description": "在看了看周围的情况是否允许你把A-Me 01带回卡尔纳·雷塔维身边之后，你将开关扳到了“关闭”位置。你有看了看周围，确信没有某只猩猩朝你冲过来，然后将开关扳到“打开”。\n\n这是你最后的机会了……你确定要这样做吗？",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "哦，你成功了!太棒了!谢谢你，$N。\n\n啊，我可怜的艾米，看看这些牙印!我们只需稍作修理就能让她重新正常运转起来。\n\n再次感谢你，$N。\n",
+        "f3e0945d62429165f964": "你能帮助艾米吗?看来很可能是她的秘银外壳被损坏了，我相信如果你给她换一个秘银外壳，她就能恢复如初，而且可以自己回家。"
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -739,6 +999,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "eventObjectiveLabel": {
             "origin": "community",
@@ -766,6 +1038,10 @@
     },
     "zhTW": {
       "description": "在看了看周圍的情況是否允許你把A-Me 01帶回卡爾納·雷塔維身邊之後，你將開關扳到了「關閉」位置。你看了看周圍，確信沒有某隻猩猩朝你衝過來，然後將開關扳到「打開」。\n\n這是你最後的機會了……你確定要這樣做嗎？",
+      "dialogue": {
+        "75b5db2da7db6dbbab4c": "哦，你成功了!太棒了!謝謝你，$N。\n\n啊，我可憐的艾米，看看這些牙印!我們只需稍作修理就能讓她重新正常運轉起來。\n\n再次感謝你，$N。",
+        "f3e0945d62429165f964": "你能幫助艾米嗎?看來很可能是她的祕銀外殼被損壞了，我相信如果你給她換一個祕銀外殼，她就能恢復如初，而且可以自己回家。"
+      },
       "eventObjectiveLabel": "Protect A-Me 01 until you reach Karna Remtravel",
       "objectiveLines": [
         {
@@ -782,6 +1058,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.75b5db2da7db6dbbab4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f3e0945d62429165f964": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "eventObjectiveLabel": {
             "origin": "community",

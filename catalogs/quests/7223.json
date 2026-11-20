@@ -1,8 +1,36 @@
 {
   "areaId": 2597,
+  "dialogueContexts": {
+    "191e7e91fc832385f37e": {
+      "lineId": "q:7223:progress",
+      "npcId": 13257,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "78b16df9d4e117d6cbff": {
+      "lineId": "q:7223:accept",
+      "npcId": 13257,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "f1ef7a45ea4452085aa3": {
+      "lineId": "q:7223:complete",
+      "npcId": 13257,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Bitvy v Alterac Valley zuří nepřetržitě a zásoby, které dostáváme z Ironforge, nestačí na vystrojení našich zkušených jednotek.\n\nPokud na bojišti najdeš útržky zbroje, pomoz válečnému úsilí a dones mi je!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Přinesl jsi nějaké zbytky zbroje, $N?",
+        "78b16df9d4e117d6cbff": "V Alterackém údolí neustále zuří bitvy a zásoby z Ironforge nestačí na výzbroj našich zkušených vojáků.$B$BPokud na bojišti najdeš zbytky zbroje, podpoř válečné úsilí a přines mi je!",
+        "f1ef7a45ea4452085aa3": "To jsou dobré kusy, $N. Mohu z nich vyrobit novou výstroj pro naše vojáky.$B$BAž budeme mít dostatečné zásoby, možná vyrazí do boje i naše zkušené jednotky!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +47,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b9f3d17e91350ea42c6901be5f7bc21cb579a2a8c34a4f83ea1641dcb1f481c0"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -44,6 +87,11 @@
     },
     "daDK": {
       "description": "Kampene raser konstant i Alterac Valley, og forsyningerne fra Ironforge er ikke nok til at udruste vores erfarne tropper.\n\nHvis du finder rustningsrester på slagmarken, så hjælp krigsindsatsen og bring resterne til mig!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Har du bragt nogle rustningsrester, $N?",
+        "78b16df9d4e117d6cbff": "Kampene raser uafbrudt i Alterac Valley, og forsyningerne fra Ironforge er ikke nok til at udruste vores erfarne tropper.$B$BHvis du finder rustningsrester på slagmarken, så støt krigsindsatsen og bring dem til mig!",
+        "f1ef7a45ea4452085aa3": "Det er nogle gode stykker, $N. Jeg kan bruge dem til at fremstille nyt udstyr til vores tropper.$B$BHvis vi får nok forsyninger, kan vores erfarne kampenheder måske komme i felten!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -60,6 +108,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b9f3d17e91350ea42c6901be5f7bc21cb579a2a8c34a4f83ea1641dcb1f481c0"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +146,11 @@
     },
     "deDE": {
       "description": "Im Alteractal wird ständig gekämpft und der Nachschub, den wir aus Ironforge bekommen, reicht nicht, um unsere erfahrenen Truppen auszustatten.\n\nWenn Ihr Rüstungsfetzen auf dem Schlachtfeld findet, dann unterstützt unsere Kriegsbemühungen und bringt mir diese Stücke!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Habt ihr mir Rüstungsfetzen mitgebracht, $N?",
+        "78b16df9d4e117d6cbff": "Im Alteractal wird ständig gekämpft und der Nachschub, den wir aus Eisenschmiede bekommen, reicht nicht, um unsere erfahrenen Truppen auszustatten.\n\nWenn Ihr Rüstungsfetzen auf dem Schlachtfeld findet, dann unterstützt unsere Kriegsbemühungen und bringt mir diese Stücke!",
+        "f1ef7a45ea4452085aa3": "Das sind ein paar recht gute Stücke, $N. Ich kann sie nutzen, um neue Ausrüstung für unsere Truppen herzustellen. \n \n Wenn ich genug davon bekomme, dann können vielleicht sogar unsere bewährten Kampfeinheiten in den Kampf eintreten!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +166,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +206,11 @@
     },
     "enUS": {
       "description": "Battles rage constantly in Alterac Valley, and the supplies we get from Ironforge are not enough to outfit our experienced troops.\n\nIf you find armor scraps from the battlefield, aid the war effort and bring those scraps to me!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Did you bring any armor scraps, $N?",
+        "78b16df9d4e117d6cbff": "Battles rage constantly in Alterac Valley, and the supplies we get from Ironforge are not enough to outfit our experienced troops.$B$BIf you find armor scraps from the battlefield, aid the war effort and bring those scraps to me!",
+        "f1ef7a45ea4452085aa3": "These are some good pieces, $N.  I can use them to fashion new equipment for our troops.$B$BIf my supply level gets high enough, then maybe our seasoned fighting units will enter the field!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +226,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -158,6 +267,11 @@
     },
     "esES": {
       "description": "La batalla es encarnizada en el Valle de Alterac y los suministros que conseguimos de Forjaz no bastan para vestir a nuestros expertos soldados.\n\nSi encuentras restos de armadura en el campo de batalla, ¡contribuye a nuestro esfuerzo bélico y tráemelos!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "¿Me has traído algún resto de armadura, $n?",
+        "78b16df9d4e117d6cbff": "La batalla es encarnizada en el Valle de Alterac y los suministros que conseguimos de Forjaz no bastan para vestir a nuestros expertos soldados.\n\nSi encuentras restos de armadura en el campo de batalla, ¡contribuye a nuestro esfuerzo bélico y tráemelos!",
+        "f1ef7a45ea4452085aa3": "Estas piezas son muy buenas, $n. Puedo usarlas para confeccionar nuevos equipos para nuestros soldados.\n\nSi mi nivel de suministro llega a ser suficientemente alto, ¡a lo mejor nuestras avezadas unidades de combate irán al campo de batalla!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +287,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -195,6 +327,11 @@
     },
     "esMX": {
       "description": "La batalla es encarnizada en el Valle de Alterac y los suministros que conseguimos de Forjaz no bastan para vestir a nuestros expertos soldados.\n\nSi encuentras restos de armadura en el campo de batalla, ¡contribuye a nuestro esfuerzo bélico y tráemelos!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "¿Me has traído algún resto de armadura, $n?",
+        "78b16df9d4e117d6cbff": "La batalla es encarnizada en el Valle de Alterac y los suministros que conseguimos de Forjaz no bastan para vestir a nuestros expertos soldados.\n\nSi encuentras restos de armadura en el campo de batalla, ¡contribuye a nuestro esfuerzo bélico y tráemelos!",
+        "f1ef7a45ea4452085aa3": "Estas piezas son muy buenas, $n. Puedo usarlas para confeccionar nuevos equipos para nuestros soldados.\n\nSi mi nivel de suministro llega a ser suficientemente alto, ¡a lo mejor nuestras avezadas unidades de combate irán al campo de batalla!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +347,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -232,6 +387,11 @@
     },
     "frFR": {
       "description": "Les combats font sans cesse rage dans la vallée d’Aterac, et le matériel que nous recevons de Forgefer est insuffisant pour équiper nos troupes.\n\nSi vous trouvez des morceaux d’armure sur le champ de bataille, contribuez à l’effort de guerre et ramenez-les-moi !",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Avez-vous apporté des restes d'armure, $N ?",
+        "78b16df9d4e117d6cbff": "Les combats font sans cesse rage dans la vallée d’Alterac, et le matériel que nous recevons de Forgefer est insuffisant pour équiper nos troupes.\n\nSi vous trouvez des morceaux d’armure sur le champ de bataille, contribuez à l’effort de guerre et rapportez-les-moi !",
+        "f1ef7a45ea4452085aa3": "Ce sont de bonnes pièces, $N.  Je peux les utiliser pour fabriquer de nouveaux équipements pour nos troupes.\n\nSi mon niveau d'approvisionnement est suffisamment élevé, alors peut-être que nos unités de combat aguerries entreront en action !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -247,6 +407,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -269,6 +447,11 @@
     },
     "hrHR": {
       "description": "Bitke neprestano bjesne u Alterac Valleyju, a zalihe koje dobivamo iz Ironforgea nisu dovoljne da opremimo naše iskusne vojnike.\n\nAko pronađeš ostatke oklopa na bojištu, pomozi ratnim naporima i donesi mi ih!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Jesi li donio komade oklopa, $N?",
+        "78b16df9d4e117d6cbff": "Bitke neprestano bjesne u Alterac Valleyju, a zalihe iz Ironforgea nisu dovoljne da opremimo naše iskusne postrojbe.$B$BAko na bojištu pronađeš komade oklopa, pomozi u ratu i donesi ih meni!",
+        "f1ef7a45ea4452085aa3": "Ovo su dobri komadi, $N. Mogu ih upotrijebiti za izradu nove opreme za naše postrojbe.$B$BAko prikupimo dovoljno zaliha, možda će naše iskusne borbene jedinice izaći na bojište!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -285,6 +468,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b9f3d17e91350ea42c6901be5f7bc21cb579a2a8c34a4f83ea1641dcb1f481c0"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -308,6 +506,11 @@
     },
     "itIT": {
       "description": "La battaglia infuria incessante nella Valle d'Alterac e i rifornimenti che riceviamo da Forgiardente non bastano a corazzare le nostre truppe esperte.\n\nDovessi trovare pezzi di armature sul campo di battaglia, contribuisci allo sforzo bellico e portameli!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Hai portato dei pezzi di armatura, $N?",
+        "78b16df9d4e117d6cbff": "Ad Alterac Valley si combatte senza sosta, e i rifornimenti che ci arrivano da Ironforge non bastano a equipaggiare le nostre truppe esperte.\n\nSe sul campo di battaglia trovi dei pezzi di armatura, contribuisci allo sforzo bellico e portali a me!",
+        "f1ef7a45ea4452085aa3": "Questi sono dei buoni pezzi, $N. Posso usarli per fabbricare equipaggiamento nuovo per le nostre truppe.\n\nSe le mie scorte crescono abbastanza, forse le nostre unità da combattimento più esperte scenderanno in campo!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -323,6 +526,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -345,6 +566,11 @@
     },
     "koKR": {
       "description": "알터랙 계곡에서는 언제나 전투가 한창이라서 아이언포지에서 오는 보급품만으로는 우리처럼 숙련된 부대의 장비를 개량하는 데 충분하지 않네.\n\n전장에서 방어구 조각을 찾거든 나한테 그 조각들을 가져와 주게나!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "방어구 조각은 좀 가져왔나?",
+        "78b16df9d4e117d6cbff": "알터랙 계곡에서는 언제나 전투가 한창이라서 아이언포지에서 오는 보급품만으로는 우리처럼 숙련된 부대의 장비를 개량하는 데 충분하지 않네.\n\n전장에서 방어구 조각을 찾거든 나한테 그 조각들을 가져와 주게나!",
+        "f1ef7a45ea4452085aa3": "아주 괜찮은 조각들을 가져왔군. 이걸로 우리 부대를 위해 새로운 장비를 만들 수 있겠어.\n\n보급품이 충분히 확보되면 우리 노련한 전투 부대가 전장에 뛰어들게 될 걸세!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -360,6 +586,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -382,6 +626,11 @@
     },
     "plPL": {
       "description": "W Alterac Valley nieustannie szaleją bitwy, a zapasy z Ironforge nie wystarczają do wyposażenia naszych doświadczonych wojsk.\n\nJeśli znajdziesz na polu bitwy kawałki pancerza, przynieś mi je, by wspomóc wojnę!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Masz jakieś fragmenty pancerza, $N?",
+        "78b16df9d4e117d6cbff": "W Dolinie Alteraku nieustannie szaleją bitwy, a dostawy z Ironforge nie wystarczają, by wyposażyć nasze doświadczone oddziały.$B$BJeśli znajdziesz na polu bitwy fragmenty pancerza, wesprzyj nasz wysiłek wojenny i przynieś je do mnie!",
+        "f1ef7a45ea4452085aa3": "To dobre kawałki, $N. Mogę z nich wykonać nowy sprzęt dla naszych żołnierzy.$B$BJeśli zgromadzimy dość zapasów, może nasze doświadczone oddziały wkroczą do walki!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -398,6 +647,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b9f3d17e91350ea42c6901be5f7bc21cb579a2a8c34a4f83ea1641dcb1f481c0"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -421,6 +685,11 @@
     },
     "ptBR": {
       "description": "As batalhas irrompem sem cessar no Vale Alterac, e os suprimentos que recebemos de Altaforja não são suficientes para equipar nossas tropas de veteranos.\n\nSe você encontrar sobras no campo de batalha, ajude com os esforços de guerra e traga-as para mim!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Você trouxe as sobras de armadura, $N?",
+        "78b16df9d4e117d6cbff": "As batalhas irrompem sem cessar no Vale Alterac, e os suprimentos que recebemos de Altaforja não são suficientes para equipar nossas tropas de veteranos.\n\nSe você encontrar sobras no campo de batalha, ajude com os esforços de guerra e traga-as para mim!",
+        "f1ef7a45ea4452085aa3": "Essas sobras estão em bom estado, $N. Posso usá-las para produzir novos equipamentos para nossas tropas.\n\nSe eu conseguir um bom estoque, nossas tropas veteranas poderão entrar na batalha!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -436,6 +705,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -458,6 +745,11 @@
     },
     "ruRU": {
       "description": "В Альтеракской долине часто гремят сражения, и поставок из Стальгорна для нужд наших войск недостаточно.\n\nЕсли ты найдешь на поле боя обломки брони, приноси их мне, они нам пригодятся.",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Принес мне обломки брони, $N?",
+        "78b16df9d4e117d6cbff": "В Альтеракской долине часто гремят сражения, и поставок из Стальгорна для нужд наших войск недостаточно.\n\nЕсли ты найдешь на поле боя обломки брони, приноси их мне, они нам пригодятся.",
+        "f1ef7a45ea4452085aa3": "Пойду расплавлять их, $N. Цветной металл налево, черный направо.\n\nЕсли доспехов наберется достаточно много – наши отборные отряды выйдут на поле боя."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -473,6 +765,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -495,6 +805,11 @@
     },
     "svSE": {
       "description": "Striderna rasar ständigt i Alterac Valley, och förnödenheterna från Ironforge räcker inte för att utrusta våra erfarna trupper.\n\nHittar du rustningsrester på slagfältet ska du hjälpa krigsinsatsen och ge dem till mig!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Har du tagit med några rustningsdelar, $N?",
+        "78b16df9d4e117d6cbff": "Striderna rasar ständigt i Alterac Valley, och förnödenheterna från Ironforge räcker inte för att utrusta våra erfarna trupper.$B$BOm du hittar rustningsdelar på slagfältet, hjälp till i kriget och ta dem till mig!",
+        "f1ef7a45ea4452085aa3": "Det här är bra delar, $N. Jag kan använda dem för att tillverka ny utrustning åt våra trupper.$B$BOm vi får tillräckligt med förråd kanske våra erfarna stridsförband kan ge sig ut i fält!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -511,6 +826,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b9f3d17e91350ea42c6901be5f7bc21cb579a2a8c34a4f83ea1641dcb1f481c0"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -534,6 +864,11 @@
     },
     "trTR": {
       "description": "Alterac Valley'de savaşlar durmaksızın sürüyor ve Ironforge'dan aldığımız malzemeler deneyimli birliklerimizi donatmaya yetmiyor.\n\nSavaş alanında zırh hurdaları bulursan savaş çabasına yardım et ve bunları bana getir!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Zırh parçaları getirdin mi, $N?",
+        "78b16df9d4e117d6cbff": "Alterac Vadisi’nde savaşlar durmaksızın sürüyor ve Ironforge’dan gelen erzak, deneyimli askerlerimizi donatmaya yetmiyor.$B$BSavaş alanında zırh parçaları bulursan savaş çabalarına destek ol ve onları bana getir!",
+        "f1ef7a45ea4452085aa3": "Bunlar iyi parçalar, $N. Onları birliklerimiz için yeni teçhizat yapmakta kullanabilirim.$B$BYeterince malzeme toplarsak belki deneyimli savaş birliklerimiz de sahaya çıkar!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -550,6 +885,21 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "b9f3d17e91350ea42c6901be5f7bc21cb579a2a8c34a4f83ea1641dcb1f481c0"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -573,6 +923,11 @@
     },
     "ukUA": {
       "description": "В Альтерацькій долині постійно лютують жахливі битви, а спорядження, що ми отримуємо з Залізогарту, недостатньо, щоб задовольнити потреби наших досвідчених бійців.\n\nЯкщо ти знайдеш уламки броні на полі бою — принеси їх мені, допоможи нашим бійцям!",
+      "dialogue": {
+        "191e7e91fc832385f37e": "Ти приніс уламки обладунків, $N?",
+        "78b16df9d4e117d6cbff": "В Альтеракській долині безупинно точаться бої, а припасів із Стальгорна не вистачає, щоб спорядити наших досвідчених воїнів.$B$BЯкщо знайдеш на полі бою уламки обладунків, допоможи нашій армії та принеси їх мені!",
+        "f1ef7a45ea4452085aa3": "Хороші шматки, $N. Я можу виготовити з них нове спорядження для наших військ.$B$BЯкщо назбираємо достатньо припасів, можливо, наші досвідчені бойові загони виступлять на поле бою!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -590,6 +945,21 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "b9f3d17e91350ea42c6901be5f7bc21cb579a2a8c34a4f83ea1641dcb1f481c0"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -615,6 +985,11 @@
     },
     "zhCN": {
       "description": "战争在奥特兰克山谷激烈地进行着，从铁炉堡运来的物资不足以让我们为部队提供充足的补给。\n\n如果你能在战场上找到护甲碎片，那么就帮我带一些回来吧！",
+      "dialogue": {
+        "191e7e91fc832385f37e": "你带回护甲碎块了吗，$N?",
+        "78b16df9d4e117d6cbff": "战争在奥特兰克山谷激烈地进行着，从铁炉堡运来的物资不足以让我们为部队提供充足的补给。\n\n如果你能在战场上找到护甲碎片，那么就帮我带一些回来吧！",
+        "f1ef7a45ea4452085aa3": "这里有不少上好的材料呢，$N。我可以用这些东西来给我们的军队提供新的装备。\n\n如果我可以得到更多补给的话，也许我们的主力部队就就可以开进战场了!\n"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -630,6 +1005,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -652,6 +1045,11 @@
     },
     "zhTW": {
       "description": "戰爭在奧特蘭克山谷激烈地進行著，從鐵爐堡運來的物資不足以讓我們為部隊提供充足的補給。\n\n如果你能在戰場上找到護甲碎片，那麼就幫我帶一些回來吧！",
+      "dialogue": {
+        "191e7e91fc832385f37e": "你帶回護甲碎塊了嗎，$N?",
+        "78b16df9d4e117d6cbff": "戰爭在奧特蘭克山谷激烈地進行著，從鐵爐堡運來的物資不足以讓我們為部隊提供充足的補給。\n\n如果你能在戰場上找到護甲碎片，那麼就幫我帶一些回來吧！",
+        "f1ef7a45ea4452085aa3": "這裏有不少上好的材料呢，$N。我可以用這些東西來給我們的軍隊提供新的裝備。\n\n如果我可以得到更多補給的話，也許我們的主力部隊就就可以開進戰場了!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -667,6 +1065,24 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.191e7e91fc832385f37e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.78b16df9d4e117d6cbff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.f1ef7a45ea4452085aa3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "objectiveLines.1": {
             "origin": "ai",

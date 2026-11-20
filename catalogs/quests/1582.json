@@ -19,9 +19,29 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "a0f83f991e459a153154": {
+      "lineId": "q:1582:accept",
+      "npcId": 6034,
+      "scope": "classic-era-and-forever",
+      "stage": "accept",
+      "variant": 0
+    },
+    "df7df4215180517ff737": {
+      "lineId": "q:1582:complete",
+      "npcId": 6034,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "My v Darnassu, zvláště my řemeslníci, máme plné ruce práce. Mladí dobrodruzi dychtí vyzkoušet své síly v divočině a neustále potřebují zásoby.\n\nPokud mi pomůžeš splnit mé zakázky na kožené zboží, možná tě budu moci naučit pokročilou koželužskou techniku.",
+      "dialogue": {
+        "a0f83f991e459a153154": "My v Darnassu, zvláště řemeslníci, máme plné ruce práce. Mladí dobrodruzi se chtějí vyzkoušet v divočině a neustále potřebují zásoby.$B$BPomůžeš-li mi splnit objednávky koženého zboží, možná tě naučím pokročilou techniku zpracování kůže.",
+        "df7df4215180517ff737": "Ano, to jsou dobré kusy. Máš šikovné ruce a smysl pro detail. Čeká tě slibná budoucnost koželuha.$B$BTady, $N. Ukážu ti vzor na výrobu vesty Moonglow."
+      },
       "summary": "Přines 1× Embossed Leather Glove, 5× Embossed Leather Boots a 5× Embossed Leather Cloaks Lotherias do Darnassu.",
       "title": "Vesta Moonglow",
       "translationMetadata": {
@@ -31,6 +51,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -50,6 +80,10 @@
     },
     "daDK": {
       "description": "Vi i Darnassus, især vi håndværkere, har ganske travlt. Unge eventyrere er ivrige efter at prøve sig selv i vildmarken og har konstant brug for forsyninger.\n\nHvis du kan hjælpe mig med at opfylde mine bestillinger på lædervarer, kan jeg måske lære dig en avanceret læderarbejdsteknik.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Vi i Darnassus, især vi håndværkere, har meget travlt. Unge eventyrere er ivrige efter at prøve kræfter i vildmarken og har konstant brug for forsyninger.$B$BHvis du kan hjælpe mig med mine bestillinger på lædervarer, kan jeg måske lære dig en avanceret læderarbejdsteknik.",
+        "df7df4215180517ff737": "Ja, det er godt arbejde. Du har dygtige hænder og øje for detaljer. Din fremtid som læderarbejder ser lovende ud.$B$BHer, $N. Lad mig vise dig mønstret til en måneskinsvest."
+      },
       "summary": "Bring 1 Embossed Leather Gloves, 5 Embossed Leather Boots og 5 Embossed Leather Cloaks til Lotherias i Darnassus.",
       "title": "Måneskinsvest",
       "translationMetadata": {
@@ -59,6 +93,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c252c674229d0ae4920793557dd40578d5c67453966592c868a578846517ccd"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -77,6 +121,10 @@
     },
     "deDE": {
       "description": "Wir in Darnassus, besonders wir Handwerker, sind sehr beschäftigt. Junge Abenteurer brennen darauf, sich in der Wildnis zu beweisen, und benötigen unablässig Nachschub.\n\nWenn Ihr mir helft, meine Bestellungen an Lederwaren zu erfüllen, kann ich Euch vielleicht eine hochentwickelte Technik der Lederverarbeitung beibringen.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Wir in Darnassus, besonders wir Handwerker, sind sehr beschäftigt. Junge Abenteurer brennen darauf, sich in der Wildnis zu beweisen, und benötigen unablässig Nachschub.\n\nWenn Ihr mir helft, meine Bestellungen an Lederwaren zu erfüllen, kann ich Euch vielleicht eine hochentwickelte Technik der Lederverarbeitung beibringen.",
+        "df7df4215180517ff737": "Ja, das sind gute Stücke. Ihr habt eine geschickte Hand und ein Auge für Details. Eure Zukunft als Lederer scheint viel versprechend. \n \n Hier, $N. Lasst mich Euch das Muster für eine Mondscheinweste zeigen. "
+      },
       "summary": "Bringt 1 geprägten Lederhandschuh, 5 geprägte Lederstiefel und 5 geprägte Lederumhänge zu Lotherias in Darnassus.",
       "title": "Mondscheinweste",
       "translationMetadata": {
@@ -85,6 +133,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -101,6 +161,10 @@
     },
     "enUS": {
       "description": "We in Darnassus, especially we craftsman, are quite busy.  Young adventurers are eager to test themselves in the wilderness, and are in constant need of supplies.\n\nIf you can help me fill my orders of leather goods, then perhaps I can teach you an advanced leatherworking technique.",
+      "dialogue": {
+        "a0f83f991e459a153154": "We in Darnassus, especially we craftsman, are quite busy.  Young adventurers are eager to test themselves in the wilderness, and are in constant need of supplies.$B$BIf you can help me fill my orders of leather goods, then perhaps I can teach you an advanced leatherworking technique.",
+        "df7df4215180517ff737": "Yes, these are good pieces. You have a skilled hand and an eye for detail. Your future as a leatherworker is promising.$B$BHere, $N. Let me show you the pattern to make the Moonglow Vest."
+      },
       "summary": "Bring 1 Embossed Leather Gloves, 5 Embossed Leather Boots and 5 Embossed Leather Cloaks to Lotherias in Darnassus.",
       "title": "Moonglow Vest",
       "translationMetadata": {
@@ -109,6 +173,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +201,10 @@
     },
     "esES": {
       "description": "En Darnassus estamos muy ocupados, sobre todo los artesanos. Los jóvenes aventureros están impacientes por probar sus habilidades en las tierras salvajes y encargan suministros constantemente.\n\nSi pudieras ayudarme a atender mis pedidos de artículos de cuero, yo podría enseñarte una técnica de peletería avanzada.",
+      "dialogue": {
+        "a0f83f991e459a153154": "En Darnassus estamos muy ocupados, sobre todo los artesanos. Los jóvenes aventureros están impacientes por probar sus habilidades en las tierras salvajes y encargan suministros constantemente.\n\nSi pudieras ayudarme a atender mis pedidos de artículos de cuero, yo podría enseñarte una técnica de peletería avanzada.",
+        "df7df4215180517ff737": "Son unas buenas piezas. Tienes manos hábiles y un buen ojo para los detalles. Tu futuro como peletera es prometedor.\n\nTen, $n. Deja que te enseñe el patrón para hacer el jubón de brillo lunar."
+      },
       "summary": "Lleva 1 guante de cuero estampado, 5 botas de cuero estampado y 5 capas de cuero estampado a Lotherias a Darnassus.",
       "title": "El jubón de brillo lunar",
       "translationMetadata": {
@@ -133,6 +213,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -149,6 +241,10 @@
     },
     "esMX": {
       "description": "En Darnassus estamos muy ocupados, sobre todo los artesanos. Los jóvenes aventureros están impacientes por probar sus habilidades en las tierras salvajes y encargan suministros constantemente.\n\nSi pudieras ayudarme a atender mis pedidos de artículos de cuero, yo podría enseñarte una técnica de peletería avanzada.",
+      "dialogue": {
+        "a0f83f991e459a153154": "En Darnassus estamos muy ocupados, sobre todo los artesanos. Los jóvenes aventureros están impacientes por probar sus habilidades en las tierras salvajes y encargan suministros constantemente.\n\nSi pudieras ayudarme a atender mis pedidos de artículos de cuero, yo podría enseñarte una técnica de peletería avanzada.",
+        "df7df4215180517ff737": "Son unas buenas piezas. Tienes manos hábiles y un buen ojo para los detalles. Tu futuro como peletero es prometedor.\n\nTen, $n. Deja que te enseñe el patrón para hacer el jubón de brillo lunar."
+      },
       "summary": "Llévale 1 par de guantes de cuero estampado, 5 botas de cuero estampado y 5 capas de cuero estampado a Lotherias en Darnassus.",
       "title": "El jubón resplandor lunar",
       "translationMetadata": {
@@ -157,6 +253,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -174,6 +282,10 @@
     },
     "frFR": {
       "description": "Nous autres à Darnassus sommes très occupés, et tout particulièrement les artisans. Les jeunes aventuriers souhaitant affronter les dangers de la nature ont constamment besoin d'équipement.\n\nSi vous pouviez m'aider à honorer mes commandes de cuir, alors je pourrais peut-être vous apprendre une technique avancée d'artisanat du cuir.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Nous autres à Darnassus sommes très occupés, et tout particulièrement les artisans. Les jeunes aventuriers souhaitant affronter les dangers de la nature ont constamment besoin d'équipement.\n\nSi vous pouviez m'aider à honorer mes commandes de cuir, alors je pourrais peut-être vous apprendre une technique avancée d'artisanat du cuir.",
+        "df7df4215180517ff737": "Oui, ce sont de bonnes pièces. Vous avez une main habile et le sens du détail. Votre avenir en tant que maroquinier est prometteur.\n\nTenez, $N. Je vais vous montrer le patron du gilet Moonglow."
+      },
       "summary": "Apporter 1 Gant en cuir estampé, 5 Bottes en cuir estampé et 5 Capes en cuir estampé à Lotherias à Darnassus.",
       "title": "Veste de Moonglow",
       "translationMetadata": {
@@ -182,6 +294,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -198,6 +322,10 @@
     },
     "hrHR": {
       "description": "Mi u Darnassusu, osobito mi obrtnici, vrlo smo zaposleni. Mladi pustolovi željni su iskušati se u divljini i stalno trebaju zalihe.\n\nAko mi možeš pomoći ispuniti narudžbe kožnih proizvoda, možda te mogu naučiti naprednoj kožarskoj tehnici.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Mi u Darnassusu, osobito mi obrtnici, prilično smo zaposleni. Mladi pustolovi jedva čekaju iskušati se u divljini i stalno trebaju zalihe.$B$BAko mi pomogneš ispuniti narudžbe kožne robe, možda te mogu naučiti naprednoj tehnici obrade kože.",
+        "df7df4215180517ff737": "Da, ovo su dobri komadi. Imaš vješte ruke i oko za detalje. Tvoja budućnost kožara izgleda obećavajuće.$B$BEvo, $N. Pokazat ću ti kroj za prsluk mjesečeva sjaja."
+      },
       "summary": "Donesi 1 reljefne kožne rukavice, 5 reljefnih kožnih čizama i 5 reljefnih kožnih ogrtača Lotheriasu u Darnassus.",
       "title": "Prsluk mjesečeva sjaja",
       "translationMetadata": {
@@ -207,6 +335,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c252c674229d0ae4920793557dd40578d5c67453966592c868a578846517ccd"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -225,6 +363,10 @@
     },
     "itIT": {
       "description": "Noi di Darnassus, e soprattutto noi artigiani, abbiamo sempre parecchio lavoro. I giovani avventurieri non vedono l'ora di mettersi alla prova nelle terre selvagge e hanno un costante bisogno di provviste.\n\nSe mi aiuterai a completare i miei ordini di oggetti in cuoio, magari potrei insegnarti una tecnica di conciatura avanzata.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Noi di Darnassus, e soprattutto noi artigiani, abbiamo molto da fare. I giovani avventurieri sono impazienti di mettersi alla prova nelle terre selvagge, e hanno sempre bisogno di rifornimenti.\n\nSe mi aiuti a evadere i miei ordini di articoli di cuoio, forse potrò insegnarti una tecnica di conciatura avanzata.",
+        "df7df4215180517ff737": "Sì, questi pezzi sono ben fatti. Hai mani abili e occhio per i dettagli. Il tuo futuro come conciatore è promettente.$B$BEcco, $N. Ti mostrerò il modello per creare la Veste di Lucelunare."
+      },
       "summary": "Porta 1 paio di guanti di cuoio decorato, 5 paia di stivali di cuoio decorato e 5 mantelli di cuoio decorato a Lotherias a Darnassus.",
       "title": "Giaco del Bagliore Lunare",
       "translationMetadata": {
@@ -233,6 +375,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -250,6 +403,10 @@
     },
     "koKR": {
       "description": "다르나서스에 사는 우리 장인들은 아주 바쁘답니다. 열성이 대단한 젊은 모험가들이 자신의 능력을 시험해보고 싶어 황야로 모여들고 있습니다. 그들은 꾸준히 우리의 보급품을 필요로 하고 있답니다.\n\n이번에 주문받은 가죽 제품을 보충할 수 있도록 도와준다면 고급 가죽세공술을 가르쳐 드리도록 하죠.",
+      "dialogue": {
+        "a0f83f991e459a153154": "다르나서스에 사는 우리 장인들은 아주 바쁘답니다. 열성이 대단한 젊은 모험가들이 자신의 능력을 시험해보고 싶어 황야로 모여들고 있습니다. 그들은 꾸준히 우리의 보급품을 필요로 하고 있답니다.\n\n이번에 주문받은 가죽 제품을 보충할 수 있도록 도와준다면 고급 가죽세공술을 가르쳐 드리도록 하죠.",
+        "df7df4215180517ff737": "좋군요, 물건의 품질이 아주 좋습니다. 손재주도 있고 보는 눈도 꼼꼼하니 장차 유명한 가죽 세공인이 될 자질이 충분하군요.\n\n그럼, 약속대로 달빛 조끼를 만드는 방법을 가르쳐 드리겠습니다."
+      },
       "summary": "다르나서스에 있는 로서리아스에게 새김무늬 가죽 장갑 1개, 새김무늬 가죽 장화 5개, 새김무늬 가죽 망토 5개를 가져가야 합니다.",
       "title": "달빛 조끼",
       "translationMetadata": {
@@ -258,6 +415,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -274,6 +443,10 @@
     },
     "plPL": {
       "description": "My w Darnassus, zwłaszcza rzemieślnicy, mamy mnóstwo zajęć. Młodzi poszukiwacze przygód chcą sprawdzić się w dziczy i nieustannie potrzebują zaopatrzenia.\n\nJeśli pomożesz mi zrealizować zamówienia na wyroby skórzane, może nauczę cię zaawansowanej techniki kaletniczej.",
+      "dialogue": {
+        "a0f83f991e459a153154": "My w Darnassus, zwłaszcza rzemieślnicy, mamy pełne ręce roboty. Młodzi poszukiwacze przygód chętnie sprawdzają się w dziczy i stale potrzebują zapasów.$B$BJeśli pomożesz mi zrealizować zamówienia na wyroby skórzane, być może nauczę cię zaawansowanej techniki obróbki skóry.",
+        "df7df4215180517ff737": "Tak, to dobre wyroby. Masz wprawną rękę i oko do szczegółów. Twoja przyszłość jako kaletnika zapowiada się obiecująco.$B$BProszę, $N. Pokażę ci wzór na kamizelkę księżycowego blasku."
+      },
       "summary": "Przynieś 1 parę tłoczonych skórzanych rękawic, 5 par tłoczonych skórzanych butów i 5 tłoczonych skórzanych płaszczy Lotheriasowi w Darnassus.",
       "title": "Kamizelka księżycowego blasku",
       "translationMetadata": {
@@ -283,6 +456,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c252c674229d0ae4920793557dd40578d5c67453966592c868a578846517ccd"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -301,6 +484,10 @@
     },
     "ptBR": {
       "description": "Nós de Darnassus, especialmente os artesãos, estamos sempre ocupados. Os jovens aventureiros desejam se colocar à prova no mundo lá fora e estão sempre precisando de equipamento.\n\nSe puder me ajudar a cuidar de todos os pedidos de artigos de couro, talvez eu lhe ensine uma técnica de couraria avançada.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Nós de Darnassus, especialmente os artesãos, estamos sempre ocupados. Os jovens aventureiros desejam se colocar à prova no mundo lá fora e estão sempre precisando de equipamento.\n\nSe puder me ajudar a cuidar de todos os pedidos de artigos de couro, talvez eu lhe ensine uma técnica de couraria avançada.",
+        "df7df4215180517ff737": "É, são boas peças. Tem mãos habilidosas e olho clínico para detalhes, $N. Seu futuro como coureiro é promissor.\n\nVenha cá, pois vou lhe mostar o molde para confeccionar o Colete Brilho da Lua."
+      },
       "summary": "Leve 1 par de Luvas de Couro com Relevo, 5 pares de Botas de Couro com Relevo e 5 Mantos de Couro com Relevo para Lotherias em Darnassus.",
       "title": "O colete brilho da lua",
       "translationMetadata": {
@@ -309,6 +496,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -325,6 +524,10 @@
     },
     "ruRU": {
       "description": "У нас, жителей Дарнасса, в особенности у ремесленников, работы невпроворот. Молодым искателям приключений неймется испытать себя во всякой глухомани, так что нам постоянно нужен подвоз материалов.\n\nЕсли ты поможешь мне выполнить заказ на кожаные изделия, я, может, научу тебя более совершенной технике работы с кожей.",
+      "dialogue": {
+        "a0f83f991e459a153154": "У нас, жителей Дарнасса, в особенности у ремесленников, работы невпроворот. Молодым искателям приключений неймется испытать себя во всякой глухомани, так что нам постоянно нужен подвоз материалов.\n\nЕсли ты поможешь мне выполнить заказ на кожаные изделия, я, может, научу тебя более совершенной технике работы с кожей.",
+        "df7df4215180517ff737": "Да, это прекрасные вещи. У тебя профессиональные руки и особое внимание к деталям. Твое будущее в кожевничестве весьма перспективное.\n\nВот, $N. Возьми это."
+      },
       "summary": "Принесите 1 пару тисненых кожаных перчаток, 5 пар тисненых кожаных сапог и 5 тисненых кожаных плащей Лотериас в Дарнасс.",
       "title": "Жилет Лунного сияния",
       "translationMetadata": {
@@ -333,6 +536,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -349,6 +564,10 @@
     },
     "svSE": {
       "description": "Vi i Darnassus, särskilt vi hantverkare, har mycket att göra. Unga äventyrare är ivriga att pröva sig själva i vildmarken och behöver ständigt förnödenheter.\n\nOm du kan hjälpa mig att fylla mina beställningar av lädervaror kan jag kanske lära dig en avancerad teknik i lädersmide.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Vi i Darnassus, särskilt vi hantverkare, har fullt upp. Unga äventyrare vill gärna pröva sig i vildmarken och behöver ständigt förnödenheter.$B$BOm du kan hjälpa mig att fylla mina beställningar på lädervaror kan jag kanske lära dig en avancerad teknik för läderarbete.",
+        "df7df4215180517ff737": "Ja, det här är välgjorda stycken. Du har en skicklig hand och öga för detaljer. Din framtid som läderarbetare ser lovande ut.$B$BHär, $N. Låt mig visa dig mönstret till en månglödsväst."
+      },
       "summary": "Ta 1 präglade läderhandskar, 5 präglade läderstövlar och 5 präglade lädermantlar till Lotherias i Darnassus.",
       "title": "Månglödsväst",
       "translationMetadata": {
@@ -358,6 +577,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "3c252c674229d0ae4920793557dd40578d5c67453966592c868a578846517ccd"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -378,6 +607,10 @@
     },
     "trTR": {
       "description": "Biz Darnassus'takiler, özellikle de biz zanaatkârlar, epey meşgulüz. Genç maceracılar vahşi doğada kendilerini sınamak için can atıyor ve sürekli malzemeye ihtiyaç duyuyor.\n\nDeri eşya siparişlerimi karşılamama yardım edersen, belki sana ileri seviye bir Dericilik tekniği öğretebilirim.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Darnassus'ta bizler, özellikle de zanaatkârlar, oldukça meşgulüz. Genç maceracılar kendilerini doğada sınamak için sabırsızlanıyor ve sürekli malzemeye ihtiyaç duyuyor.$B$BDeri eşya siparişlerimi tamamlamama yardım edersen sana ileri bir dericilik tekniği öğretebilirim.",
+        "df7df4215180517ff737": "Evet, bunlar iyi parçalar. Elin becerikli, ayrıntıları da iyi görüyorsun. Derici olarak geleceğin umut verici.$B$Bİşte, $N. Sana Ay Işıltısı Yeleği yapımının kalıbını göstereyim."
+      },
       "summary": "Darnassus'taki Lotherias'a 1 Embossed Leather Gloves, 5 Embossed Leather Boots ve 5 Embossed Leather Cloak getir.",
       "title": "Ay Işıltısı Yeleği",
       "translationMetadata": {
@@ -387,6 +620,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -404,6 +647,10 @@
     },
     "ukUA": {
       "description": "В Дарнасі всі, а особливо майстри, дуже зайняті. Юні шукачі пригод прагнуть випробувати себе та постійно потребують припасів.\n\nЯкщо ти допоможеш мені виконати замовлення на шкіряні вироби, то, можливо, я зможу навчити тебе більш досконалій техніці роботи зі шкірою.",
+      "dialogue": {
+        "a0f83f991e459a153154": "Ми в Дарнасі, особливо ремісники, дуже зайняті. Молоді шукачі пригод прагнуть випробувати себе в дикій природі й постійно потребують припасів.$B$BЯкщо допоможеш мені виконати замовлення на шкіряні вироби, можливо, я навчу тебе складнішої техніки обробки шкіри.",
+        "df7df4215180517ff737": "Так, це гарні вироби. У тебе вправні руки й око на деталі. Твоє майбутнє як шкіряника багатообіцяюче.$B$BОсь, $N. Дозволь показати тобі викрійку для жилета місячного сяйва."
+      },
       "summary": "Принесіть пару тиснених шкіряних рукавичок, 5 пар тиснених шкіряних чобіт та 5 тиснених шкіряних плащів до Лотеріас в Дарнас.",
       "title": "Жилет місячного сяйва",
       "translationMetadata": {
@@ -414,6 +661,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "3c252c674229d0ae4920793557dd40578d5c67453966592c868a578846517ccd"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -434,6 +691,10 @@
     },
     "zhCN": {
       "description": "达纳苏斯的居民，尤其是像我这样的手工艺者，都是相当繁忙的。年轻的冒险家们很想在旷野里试试他们的身手，当然这就需要相应的装备来做保障。\n\n如果你能帮我搞到足够多的皮革制品的话，我也许会教你一些高级的制皮技术。",
+      "dialogue": {
+        "a0f83f991e459a153154": "达纳苏斯的居民，尤其是像我这样的手工艺者，都是相当繁忙的。年轻的冒险家们很想在旷野里试试他们的身手，当然这就需要相应的装备来做保障。\n\n如果你能帮我搞到足够多的皮革制品的话，我也许会教你一些高级的制皮技术。",
+        "df7df4215180517ff737": "啊，真是上等的皮货。你有灵巧的双手和善於捕捉细节的双眼。你将是个前途无量的制皮师。\n\n拿着这个，$N，这是制作月光外衣的图样。\n"
+      },
       "summary": "把1双雕花皮手套、5双雕花皮靴和5件雕花皮质披风交给达纳苏斯的洛瑟里亚斯。",
       "title": "月光外衣",
       "translationMetadata": {
@@ -442,6 +703,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -458,6 +731,10 @@
     },
     "zhTW": {
       "description": "達納蘇斯的居民，尤其是像我這樣的手工藝者，都是相當繁忙的。年輕的冒險家們很想在曠野裡試試他們的身手，當然這就需要相應的裝備來做保障。\n\n如果你能幫我搞到足夠多的皮革製品的話，我也許會教你一些高級的製皮技術。",
+      "dialogue": {
+        "a0f83f991e459a153154": "達納蘇斯的居民，尤其是像我這樣的手工藝者，都是相當繁忙的。年輕的冒險家們很想在曠野裡試試他們的身手，當然這就需要相應的裝備來做保障。\n\n如果你能幫我搞到足夠多的皮革製品的話，我也許會教你一些高級的製皮技術。",
+        "df7df4215180517ff737": "啊，真是上等的皮貨。你有靈巧的雙手和善於捕捉細節的雙眼。你將是個前途無量的制皮師。\n\n拿着這個，$N，這是製作月光外衣的圖樣。"
+      },
       "summary": "把1雙雕花皮手套、5雙雕花皮靴和5件雕花皮質披風交給達納蘇斯的洛瑟里亞斯。",
       "title": "月光外衣",
       "translationMetadata": {
@@ -466,6 +743,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.a0f83f991e459a153154": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.df7df4215180517ff737": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",

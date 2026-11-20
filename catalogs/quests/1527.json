@@ -1,7 +1,27 @@
 {
+  "dialogueContexts": {
+    "05ffb9665eb4e0e86278": {
+      "lineId": "q:1527:progress",
+      "npcId": 5907,
+      "scope": "classic-era-and-forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "528038c47ab4e7e86297": {
+      "lineId": "q:1527:complete",
+      "npcId": 5907,
+      "scope": "classic-era-and-forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "S pochodní pevně v ruce se odvrátíš od obětní pánve a pohlédneš na celý Durotar. Cítíš, jak tvého ducha naplňuje vzrušení, zatímco vítr sílí a nutí plamen divoce tančit.\n\nVydáš se po stezce zpět do Barrens hledat Kranala Fisse.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Ano, $N? Co to tam máš?",
+        "528038c47ab4e7e86297": "Tvůj duch hoří jasněji než jakákoli pochodeň, kterou jsem kdy viděl, $N, a na to můžeš být hrdý.$B$BPokud budeš pokračovat touto cestou, živly budou poslouchat tvé příkazy a naši bratři a sestry u tebe budou hledat vedení a moudrost. Dovol mi, abych ti jako první poblahopřál a předal ti tvůj nový totem."
+      },
       "summary": "Přines Torch of Eternal Flame Kranalovi Fissovi v Barrens.",
       "title": "Volání ohně",
       "translationMetadata": {
@@ -11,6 +31,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -31,6 +61,10 @@
     },
     "daDK": {
       "description": "Med faklen fast i hånden vender du dig væk fra fyrfadet og ser ud over Durotar. Du føler en spænding trække i din ånd, mens vinden tager til og får flammen til at danse voldsomt.\n\nDu begiver dig ned ad stien tilbage til Barrens på jagt efter Kranal Fiss.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Ja, $N? Hvad har du der?",
+        "528038c47ab4e7e86297": "Din ånd brænder klarere end nogen fakkel, jeg har set, $N, og det kan du være stolt af.$B$BHvis du fortsætter ad denne vej, vil elementerne adlyde dig, og vores brødre og søstre vil søge din vejledning og visdom. Lad mig være den første til at ønske dig tillykke og overrække dig dit nye totem."
+      },
       "summary": "Bring Torch of Eternal Flame til Kranal Fiss i Barrens.",
       "title": "Ildens kald",
       "translationMetadata": {
@@ -40,6 +74,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "07a145ae58170f574b435812d308a6fc3fba8573c4ea04e50c64107bf2c35f63"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -58,6 +102,10 @@
     },
     "deDE": {
       "description": "Mit der Fackel fest in der Hand wendet Ihr Euch von der Kohlenpfanne ab und lasst den Blick über Durotar schweifen. Ihr spürt, wie Aufregung Euren Geist erfüllt, als der Wind anschwillt und die Flamme heftig flackern lässt.\n\nAuf der Suche nach Kranal Fiss betretet Ihr den Pfad zurück ins Brachland.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Ja, $N? Was habt Ihr da?",
+        "528038c47ab4e7e86297": "Euer Geist brennt heller als jede Fackel, die ich je gesehen habe, $N, und darauf solltet Ihr stolz sein. \n \n Wenn Ihr diesem Weg weiter folgt, werdet Ihr über die Elemente gebieten und unsere Brüder werden Führung und Weisheit bei Euch suchen. Lasst mich der Erste sein, der Euch gratuliert und Euch Euer neuestes Totem überreicht. "
+      },
       "summary": "Bringt die Fackel der ewigen Flamme zu Kranal Fiss im Brachland.",
       "title": "Ruf des Feuers",
       "translationMetadata": {
@@ -66,6 +114,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +142,10 @@
     },
     "enUS": {
       "description": "Torch firmly in hand, you turn away from the brazier and look out over Durotar. You feel an excitement tugging at your spirit as the wind picks up and forces the flame to dance violently.\n\nYou start off down the path back to the Barrens in search of Kranal Fiss.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Yes, $N? What do you have there?",
+        "528038c47ab4e7e86297": "Your spirit burns brighter than any torch I've ever seen, $N, and for that, you should be proud.$B$BIf you continue down this path, the elements will be yours to command, and our brethren will look to you for guidance and wisdom. Let me be the first to congratulate you and present to you your newest totem."
+      },
       "summary": "Bring the Torch of Eternal Flame to Kranal Fiss in the Barrens.",
       "title": "Call of Fire",
       "translationMetadata": {
@@ -90,6 +154,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +183,10 @@
     },
     "esES": {
       "description": "Con la antorcha firmemente sujeta, te alejas del blandón y diriges la vista sobre Durotar. Sientes una excitación creciente que tira de tu espíritu a la vez que el viento agita la llama y la hace bailar con violencia.\n\nEmprendes el camino de regreso a Los Baldíos en busca de Kranal Fiss.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "¿Sí, $n? ¿Qué tienes ahí?",
+        "528038c47ab4e7e86297": "Tu espíritu arde con más brillo que ninguna antorcha, $n, deberías estar orgulloso de ello.\n\nSi sigues por este camino, podrás dominar los elementos y nuestros hermanos acudirán a ti para que los guíes. Deja que sea el primero en felicitarte y en presentarte a tu nuevo tótem."
+      },
       "summary": "Lleva la antorcha de la llama eterna a Kranal Fiss a Los Baldíos.",
       "title": "La llamada del Fuego",
       "translationMetadata": {
@@ -115,6 +195,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
           },
           "summary": {
             "origin": "community",
@@ -131,6 +223,10 @@
     },
     "esMX": {
       "description": "Con la antorcha firmemente sujeta, te alejas del blandón y diriges la vista sobre Durotar. Sientes una excitación creciente que tira de tu espíritu a la vez que el viento agita la llama y la hace bailar con violencia.\n\nEmprendes el camino de regreso a Los Baldíos en busca de Kranal Fiss.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "¿Sí, $n? ¿Qué tienes ahí?",
+        "528038c47ab4e7e86297": "Tu espíritu arde con más brillo que ninguna antorcha, $n, deberías estar orgulloso de ello.\n\nSi sigues por este camino, podrás dominar los elementos y nuestros hermanos acudirán a ti para que los guíes. Deja que sea el primero en felicitarte y en presentarte a tu nuevo tótem."
+      },
       "summary": "Lleva la antorcha de la llama eterna a Kranal Fiss a Los Baldíos.",
       "title": "La llamada del fuego",
       "translationMetadata": {
@@ -139,6 +235,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esMX",
+            "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
           "summary": {
             "origin": "community",
@@ -155,6 +263,10 @@
     },
     "frFR": {
       "description": "Tenant fermement la torche, vous vous détournez du brasero et embrassez Durotar du regard. Vous sentez la fièvre battre dans votre esprit tandis que le vent avive les flammes qui dansent furieusement.\n\nVous prenez le chemin du retour vers les Tarides, pour trouver Kranal Fiss.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Oui, $N ? Qu'avez-vous là ?",
+        "528038c47ab4e7e86297": "Votre esprit brûle avec plus d'ardeur que toutes les torches qu'il m'a été donné de voir, $N, et vous pouvez en être fier. Si vous continuez dans cette voie, vous pourrez commander à tous les éléments, et nos semblables, en quête d'un guide ou de sagesse, vous consulteront. Laissez-moi être le premier à vous féliciter et à vous présenter votre nouveau totem. "
+      },
       "summary": "Apporter la Torche de la flamme éternelle à Kranal Fiss dans les Tarides.",
       "title": "L'appel du feu",
       "translationMetadata": {
@@ -163,6 +275,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "frFR",
+            "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "summary": {
             "origin": "community",
@@ -179,6 +303,10 @@
     },
     "hrHR": {
       "description": "Čvrsto držeći baklju, okrećeš se od žeravnika i gledaš preko Durotara. Osjećaš uzbuđenje koje obuzima tvoj duh dok vjetar jača i prisiljava plamen da divlje pleše.\n\nKrećeš stazom natrag u Barrens u potrazi za Kranalom Fissom.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Da, $N? Što to imaš?",
+        "528038c47ab4e7e86297": "Tvoj duh gori sjajnije od bilo koje baklje koju sam vidio, $N, i na to možeš biti ponosan.$B$BAko nastaviš tim putem, elementi će slušati tvoje zapovijedi, a naša braća i sestre tražit će tvoje vodstvo i mudrost. Dopusti mi da ti prvi čestitam i predam tvoj novi totem."
+      },
       "summary": "Donesi baklju vječnog plamena Kranalu Fissu u Barrensu.",
       "title": "Poziv vatre",
       "translationMetadata": {
@@ -188,6 +316,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "07a145ae58170f574b435812d308a6fc3fba8573c4ea04e50c64107bf2c35f63"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -206,6 +344,10 @@
     },
     "itIT": {
       "description": "Con la torcia saldamente in mano, ti allontani dal braciere e guardi Durotar. Senti un'emozione richiamare il tuo spirito mentre il vento si alza e fa danzare violentemente la fiamma.\n\nTi avvii lungo il sentiero che torna nelle Barrens alla ricerca di Kranal Fiss.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Sì, $N? Cos'hai lì?",
+        "528038c47ab4e7e86297": "Il tuo spirito arde più luminoso di qualsiasi torcia abbia mai visto, $N, e dovresti esserne fiero.$B$BSe continuerai su questa strada, gli elementi obbediranno ai tuoi ordini e i nostri fratelli cercheranno in te guida e saggezza. Permettimi di essere il primo a congratularmi e a consegnarti il tuo nuovo totem."
+      },
       "summary": "Porta la torcia della fiamma eterna a Kranal Fiss nelle Barrens.",
       "title": "Il richiamo del fuoco",
       "translationMetadata": {
@@ -215,6 +357,17 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "07a145ae58170f574b435812d308a6fc3fba8573c4ea04e50c64107bf2c35f63"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "6e5c207caf06f86e345de85238d9c524692b1aea8b15231e6a01d045e2938946"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -232,6 +385,10 @@
     },
     "koKR": {
       "description": "횃불을 손에 꼭 쥔 채 화로에서 등을 돌려 듀로타를 내려다 봅니다. 바람이 일어 불길이 심하게 흔들리면서 말할 수 없는 전율이 느껴집니다.\n\n크라날 피스를 찾으러 다시 불모의 땅으로 길을 내려가기 시작합니다.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "예, $N?  거기에 무엇이 있습니까?",
+        "528038c47ab4e7e86297": "당신의 영혼은 내가 본 그 어떤 횃불보다 더 밝게 타오르고 있습니다, $N. 그런 점에서 당신은 자랑스러워해야 합니다.\n\n당신이 이 길을 계속 간다면, 정령은 당신의 것이 될 것이며, 우리 형제들은 당신을 바라볼 것입니다.  지도와 지혜를 위해.  가장 먼저 당신을 축하하고 당신의 최신 토템을 선물하겠습니다."
+      },
       "summary": "불모의 땅에 있는 크라날 피스에게 영원한 불꽃의 횃불을 가져가야 합니다.",
       "title": "불의 부름",
       "translationMetadata": {
@@ -240,6 +397,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "koKR",
+            "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
           "summary": {
             "origin": "community",
@@ -256,6 +425,10 @@
     },
     "plPL": {
       "description": "Trzymając mocno pochodnię, odwracasz się od paleniska i spoglądasz na Durotar. Czujesz poruszenie ducha, gdy wiatr przybiera na sile i zmusza płomień do gwałtownego tańca.\n\nRuszając ścieżką w dół, wracasz do Barrens na poszukiwanie Kranala Fissa.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Tak, $N? Co tam masz?",
+        "528038c47ab4e7e86297": "Twój duch płonie jaśniej niż każda pochodnia, jaką widziałem, $N. Możesz być z tego dumny.$B$BJeśli podążysz tą ścieżką, żywioły będą ci posłuszne, a nasi bracia i siostry zwrócą się do ciebie po radę i mądrość. Pozwól, że jako pierwszy ci pogratuluję i wręczę ci nowy totem."
+      },
       "summary": "Zanieś pochodnię Wiecznego Płomienia Kranalowi Fissowi w Barrens.",
       "title": "Zew ognia",
       "translationMetadata": {
@@ -265,6 +438,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "07a145ae58170f574b435812d308a6fc3fba8573c4ea04e50c64107bf2c35f63"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -283,6 +466,10 @@
     },
     "ptBR": {
       "description": "Segure a tocha com firmeza, afaste-se do braseiro e olhe para fora na direção de Durotar. Você vai sentir a empolgação enlaçando seu espírito enquanto o vento entra e obriga a chama a dançar violentamente.\n\nFaça o caminho de volta até os Sertões em busca de Kranal Fiss.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Pois não, $N? O que você tem aí?",
+        "528038c47ab4e7e86297": "Seu espírito brilha mais do que qualquer tocha que eu já vi, $N, e isso é algo para se orgulhar.\n\nSe continuar por este caminho, os elementos serão seus servos e seus irmãos vão querer beber na sua fonte de sabedoria. Quero ser o primeiro a lhe dar os parabéns e presenteá-la com seu novo totem."
+      },
       "summary": "Leve a Tocha da Chama Eterna a Kranal Fiss nos Sertões.",
       "title": "Clamor do Fogo",
       "translationMetadata": {
@@ -291,6 +478,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
           "summary": {
             "origin": "community",
@@ -307,6 +506,10 @@
     },
     "ruRU": {
       "description": "Крепко сжимая факел, вы отступаете от жаровни, оборачиваетесь и окидываете взглядом весь Дуротар. Вас охватывает восторг. Пламя факела рвется и трепещет на ветру.\n\nИ вот вы начинаете спускаться обратно по тропе, ведущей в Степи, возвращаясь к Краналу Фиссу.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Да, $N? Что там у тебя?",
+        "528038c47ab4e7e86297": "Твой дух пылает ярче любого факела, $N! Тебе есть чем гордиться.\n\nНе сходи с избранного пути, и стихии будут повиноваться тебе, а наши собратья станут искать у тебя советов и наставлений. Позволь мне первым поздравить тебя и вручить тебе новый тотем..."
+      },
       "summary": "Принесите факел Неугасимого Пламени Краналу Фиссу в Степи.",
       "title": "Зов огня",
       "translationMetadata": {
@@ -315,6 +518,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
           "summary": {
             "origin": "community",
@@ -331,6 +546,10 @@
     },
     "svSE": {
       "description": "Med facklan stadigt i handen vänder du dig bort från fyrfatet och blickar ut över Durotar. Du känner en spänning som drar i din ande när vinden tilltar och får lågan att dansa våldsamt.\n\nDu börjar gå nedför stigen tillbaka mot Kargmarkerna för att leta reda på Kranal Fiss.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Ja, $N? Vad har du där?",
+        "528038c47ab4e7e86297": "Din ande brinner klarare än någon fackla jag sett, $N, och det bör du vara stolt över.$B$BOm du fortsätter på denna väg kommer elementen att lyda dig, och våra bröder och systrar kommer att söka din vägledning och visdom. Låt mig bli den första att gratulera dig och överlämna din nya totem."
+      },
       "summary": "Ta Evighetslågans fackla till Kranal Fiss i Kargmarkerna.",
       "title": "Eldens kallelse",
       "translationMetadata": {
@@ -340,6 +559,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "07a145ae58170f574b435812d308a6fc3fba8573c4ea04e50c64107bf2c35f63"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -360,6 +589,10 @@
     },
     "trTR": {
       "description": "Meşale sımsıkı elinde, mangaldan dönüp Durotar'a bakıyorsun. Rüzgâr kuvvetlenip alevi şiddetle dans ettirirken ruhunu çeken bir heyecan hissediyorsun.\n\nKranal Fiss'i aramak için Barrens'a dönen patikada yola koyuluyorsun.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Evet, $N? Elindeki nedir?",
+        "528038c47ab4e7e86297": "Ruhun gördüğüm bütün meşalelerden daha parlak yanıyor, $N; bununla gurur duymalısın.$B$BBu yolda devam edersen elementler emirlerine uyacak, kardeşlerimiz rehberlik ve bilgelik için sana başvuracak. Seni ilk kutlayan ve yeni totemini sunan kişi olmama izin ver."
+      },
       "summary": "Torch of Eternal Flame'i Barrens'taki Kranal Fiss'e götür.",
       "title": "Ateşin Çağrısı",
       "translationMetadata": {
@@ -369,6 +602,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -387,6 +630,10 @@
     },
     "ukUA": {
       "description": "Міцно тримаючи факел у руці, ви відвертаєтесь від жаровні й дивитеся на Дуротар. Ви відчуваєте хвилювання, яке переймає ваш дух, коли вітер підіймається і змушує вогонь бурхливо танцювати.\n\nВи починаєте свій зворотний шлях до Степів в пошуках Кранала Фісса.",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "Так, $N? Що це в тебе?",
+        "528038c47ab4e7e86297": "Твій дух палає яскравіше за будь-який смолоскип, який я бачив, $N, і ти можеш цим пишатися.$B$BЯкщо й далі йтимеш цим шляхом, стихії коритимуться тобі, а наші брати й сестри шукатимуть у тебе настанов і мудрості. Дозволь мені першому привітати тебе і вручити твій новий тотем."
+      },
       "summary": "Принесіть смолоскип вічного полум'я до Кранала Фісса у Степи.",
       "title": "Поклик вогню",
       "translationMetadata": {
@@ -397,6 +644,16 @@
             "sourceLocale": "enUS",
             "sourceRevision": "d9bf29572a85957fd69085be0cec28262cba0c87",
             "sourceTextSha256": "07a145ae58170f574b435812d308a6fc3fba8573c4ea04e50c64107bf2c35f63"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -417,6 +674,10 @@
     },
     "zhCN": {
       "description": "你手中紧握着火炬离开火盆，望向远处的杜隆塔尔，神圣的火焰随风狂舞，令你感到心中充满了激动和兴奋。\n\n你沿着小路回到贫瘠之地去找卡纳尔·菲斯。",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "嗯，这不是爆裂鼓手吗？",
+        "528038c47ab4e7e86297": "你的意志燃烧得比我见过的任何火炬都要更加明亮，$N，你应该为此感到骄傲。\n\n继续沿着萨满之道走下去，你终将获得驾驭元素的力量，我们的同胞也将向你寻求指引和智慧。恭喜你得到这宝贵的图腾。\n"
+      },
       "summary": "将恒焰火炬交给贫瘠之地的卡纳尔·菲斯。",
       "title": "火焰的召唤",
       "translationMetadata": {
@@ -425,6 +686,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
           "summary": {
             "origin": "community",
@@ -441,6 +714,10 @@
     },
     "zhTW": {
       "description": "你手中緊握著火炬離開火盆，望向遠處的杜洛塔，神聖的火焰隨風狂舞，令你感到心中充滿了激動和興奮。\n\n你沿著小路回到貧瘠之地去找卡納爾·菲斯。",
+      "dialogue": {
+        "05ffb9665eb4e0e86278": "嗯，這不是$N嗎?",
+        "528038c47ab4e7e86297": "你的意志燃燒得比我見過的任何火炬都要更加明亮，$N，你應該爲此感到驕傲。\n\n繼續沿着薩滿之道走下去，你終將獲得駕馭元素的力量，我們的同胞也將向你尋求指引和智慧。恭喜你得到這寶貴的圖騰。"
+      },
       "summary": "將恒焰火炬交給貧瘠之地的卡納爾·菲斯。",
       "title": "火焰的召喚",
       "translationMetadata": {
@@ -449,6 +726,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.05ffb9665eb4e0e86278": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.528038c47ab4e7e86297": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhTW",
+            "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
           },
           "summary": {
             "origin": "community",
