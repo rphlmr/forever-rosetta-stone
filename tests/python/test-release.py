@@ -3,11 +3,15 @@
 import runpy
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from zipfile import ZipFile, BadZipFile, ZipInfo
 import stat
+
+
+from tools.release.versioning import prepare_version
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -51,6 +55,30 @@ def create_fixture(root):
 
 
 class ReleaseTests(unittest.TestCase):
+
+    def test_version_bump_moves_only_unreleased_notes(self):
+        for kind, expected in (('patch', '0.7.1'), ('minor', '0.8.0'), ('major', '1.0.0')):
+            with self.subTest(kind=kind), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                create_fixture(root)
+                self.assertEqual(prepare_version(root, kind, date(2026, 11, 20)), expected)
+                self.assertEqual(release['read_version'](root), expected)
+                changelog = (root / 'CHANGELOG.md').read_text()
+                self.assertIn(f'## [Unreleased]\n\n## [{expected}] - 2026-11-20\n\n- Future change.', changelog)
+                self.assertTrue(changelog.endswith(NOTES[NOTES.index('## [0.7.0]'):]))
+                self.assertIn('## Version: 0.7.0\n', (root / 'ForeverRosettaStone/ForeverRosettaStone.toc').read_text())
+
+    def test_empty_unreleased_changelog_cannot_prepare_a_version(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            create_fixture(root)
+            changelog = root / 'CHANGELOG.md'
+            before = NOTES.replace('- Future change.\n\n', '')
+            changelog.write_text(before)
+            with self.assertRaisesRegex(ValueError, 'player-facing notes'):
+                prepare_version(root, 'minor', date(2026, 11, 20))
+            self.assertEqual(release['read_version'](root), '0.7.0')
+            self.assertEqual(changelog.read_text(), before)
     def test_promoting_preview_preserves_bytes_and_uses_release_notes_without_rebuilding(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

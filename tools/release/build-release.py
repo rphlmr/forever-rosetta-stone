@@ -11,41 +11,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from zipfile import ZIP_DEFLATED, ZipFile
 from tools.build.database_packs import pack_directory
 from tools.release.distribution import check_distribution
+from tools.release.versioning import extract_notes, read_version
 
 
 ROOT = Path(__file__).resolve().parents[2]
-VERSION_PATTERN = r'(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)'
-
-
-def read_version(root):
-    template = (root / 'tools/build/addon-manifest.toc').read_text(encoding='utf-8')
-    match = re.search(r'^## Version: (' + VERSION_PATTERN + r')$', template, re.MULTILINE)
-
-    if not match:
-        raise ValueError('Expected a numeric major.minor.patch Version in tools/build/addon-manifest.toc')
-
-    return match[1]
-
-
-def extract_notes(changelog, heading):
-    """Extract exactly one release section, excluding other releases and maintainer instructions."""
-    sections = list(re.finditer(r'^## \[([^\]]+)\][^\n]*$', changelog, re.MULTILINE))
-    matches = [index for index, section in enumerate(sections) if section[1] == heading]
-
-    if len(matches) != 1:
-        raise ValueError(f'Expected exactly one CHANGELOG.md section for [{heading}]')
-
-    index = matches[0]
-    end = sections[index + 1].start() if index + 1 < len(sections) else len(changelog)
-    body = changelog[sections[index].end():end].strip()
-
-    if heading == 'Unreleased' and not body:
-        return '## Unreleased\n\nNo unreleased changes.\n'
-
-    if not re.search(r'^- \S', body, re.MULTILINE):
-        raise ValueError(f'Changelog section [{heading}] needs at least one player-facing bullet')
-
-    return f'## {heading}\n\n{body}\n'
 
 
 def pack_inventory(manifest):
