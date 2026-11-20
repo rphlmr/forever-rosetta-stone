@@ -25,14 +25,16 @@ from a catalog count or an automated check. Include an upgrade instruction only 
 The first entry describes the initial release. Later entries contain only changes since the previous
 release, plus limitations that affect that update. Keep technical maintenance details in commits.
 
-GitHub **CI** runs on pushes to `main` and pull requests. It builds the production database, runs the
-addon harness and packaging tests, and provides an `addon-preview` artifact containing a ZIP and
-Markdown notes. Preview ZIPs use **Unreleased** notes and are not published to CurseForge.
+GitHub **CI** runs on pull requests. On `main`, it runs automatically when a push changes the
+version template (`tools/build/addon-manifest.toc`). It can also be run manually. CI builds the
+production database, runs the addon harness and packaging tests, and provides an `addon-preview`
+artifact containing a ZIP and Markdown notes. Preview ZIPs use **Unreleased** notes and are not published to CurseForge.
 The ZIP includes the main addon, its declared data packs, artwork, and license notices.
 Developer tracing files, local collectors, catalogs, and reference captures are excluded.
 
 CI gates unit/integration regressions, database contracts and packaging. Release requires a
-successful push-to-main CI run for the exact tagged commit, then reuses that run's ZIP bytes.
+successful CI run triggered by a push to `main` or a manual run on `main` for the exact tagged commit,
+then reuses that run's ZIP bytes.
 It waits if CI is still running; it does not rebuild the database or rerun the tests.
 The manual **Translation coverage** workflow runs the full strict matrices and retains reports
 even on failure. Missing translations and unavailable source evidence fail that audit; they do
@@ -70,7 +72,7 @@ For catalog releases, choose the version bump based on what players get:
    installs the addon. Branch CI also provides an `addon-preview` artifact for local testing.
 5. Commit the template, changelog and generated shipping files. Merge the tested candidate
    into `main`. If review changes runtime code or data, rebuild and retest before merging.
-6. Tag the merged commit `vVERSION` and push that tag. The Release workflow requires the tagged
+6. Tag the version bump commit `vVERSION` and push that tag. The Release workflow requires the tagged
    commit to belong to `main` and have a successful main CI run. It downloads that run's
    `addon-preview` artifact, validates its version and archive inventory, renames the ZIP
    without changing its bytes, and publishes the GitHub Release with version-specific notes
@@ -82,7 +84,8 @@ in the same ZIP. Preview artifacts use Unreleased notes; use `--tag vVERSION` lo
 inspect the final version-specific notes before tagging.
 
 Failed, cancelled or missing main CI runs block publication. Rerun CI for the tagged commit
-if needed, then retry Release. Expired or missing artifacts require another CI run; Release
+if needed, then retry Release. If there is no CI run yet, use **Run workflow** in **CI** while
+`main` points to the tagged commit. Expired or missing artifacts require another CI run; Release
 never silently substitutes an artifact from a different commit or rebuilds it itself.
 For local promotion of an already downloaded, validated preview, use:
 

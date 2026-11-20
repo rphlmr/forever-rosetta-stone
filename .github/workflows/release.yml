@@ -47,13 +47,14 @@ jobs:
           commit=$(git rev-parse HEAD)
           run_id=""
           for attempt in $(seq 1 12); do
-            run_id=$(gh run list --workflow ci.yml --event push --branch main --commit "$commit" \
-              --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+            run_id=$(gh run list --workflow ci.yml --branch main --commit "$commit" \
+              --json databaseId,event \
+              --jq '[.[] | select(.event == "push" or .event == "workflow_dispatch")][0].databaseId // empty')
             if [ -n "$run_id" ]; then break; fi
             sleep 5
           done
           if [ -z "$run_id" ]; then
-            echo "::error::No main CI run found for tagged commit $commit. Run CI on this commit before releasing."
+            echo "::error::No main CI run found for tagged commit $commit. Run CI manually on main while it points to this commit."
             exit 1
           fi
           gh run watch "$run_id" --exit-status --interval 15

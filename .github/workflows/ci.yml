@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [main]
+    paths:
+      - tools/build/addon-manifest.toc
   pull_request:
   workflow_dispatch:
 
@@ -10,7 +12,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ci-${{ github.workflow }}-${{ github.ref }}
+  group: ci-${{ github.ref }}-${{ github.event_name == 'pull_request' && 'pr' || github.sha }}
   cancel-in-progress: true
 
 jobs:
