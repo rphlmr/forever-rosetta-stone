@@ -13,7 +13,7 @@ function Addon:CreateQuestInteractionReader()
 
     -- Same Options menu as the journal panel, for the quest the NPC screen is showing.
     local options = self:NewFrame("Button", nil, frame, "UIPanelButtonTemplate")
-    options:SetHeight(22)
+    options:SetSize(110, 22)
     options:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -32)
     options:SetText("Options")
     options:Hide()
@@ -21,9 +21,12 @@ function Addon:CreateQuestInteractionReader()
     reader.options = options
     self:SetScript(options, "OnClick", function(owner)
         reader.reportOwner = true
-        if reader.missing then
-            self:ShowQuestReport(reader.questID, reader.context)
-        else
+        local context = reader.context
+        if context == "gossip" or context == "greeting" then
+            self:ShowTranslationOptions(owner, self:SettingsText("reportTranslation"), function()
+                self:ShowNPCDialogueReport(context)
+            end)
+        elseif reader.questID then
             self:ShowQuestOptions(owner, reader.questID, reader.context)
         end
     end)
@@ -58,10 +61,8 @@ function Addon:CreateQuestInteractionReader()
         self:AlignWithNative(context)
         self:SyncRewards(context)
         self.questID = Addon:IsReadableEntityID(questID) and questID or nil
-        self.context, self.missing = context, missing
-        options:SetText(missing and Addon:GetMissingQuestText().report or "Options")
-        options:SetWidth(missing and 180 or 110)
-        options:SetShown(self.questID ~= nil)
+        self.context = context
+        options:SetShown(self.questID ~= nil or greeting)
         frame:Show()
         self:SyncController()
         self:SyncTarget()

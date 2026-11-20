@@ -182,6 +182,38 @@ retranslation of all languages. One-time migrations are not maintained commands:
 preparation script stays ignored, uses the normal apply/verify boundary, and is removed after
 validation. Keep reports, queues, raw inputs and SQLite under `datasources/imports/`.
 
+## Equipment enchantments and temporary modifiers
+
+Refresh `SpellItemEnchantment` whenever the pinned Forever build changes. The dedicated
+preparation step checks the complete official-locale export and updates the names and
+durations together, including newly added IDs. It also works with a full Wago refresh.
+
+```sh
+python3 datasources/refresh.py --sources wago --wago-tables SpellItemEnchantment \
+  --wago-locales enUS deDE esES esMX frFR koKR ptBR ruRU zhCN zhTW \
+  --output datasources/imports/ENCHANT_SOURCES
+python3 tools/catalogs/resync.py prepare-item-enchantments \
+  --database datasources/imports/ENCHANT_SOURCES/corpus.sqlite \
+  --output datasources/imports/ENCHANT_UPDATE
+python3 tools/catalogs/resync.py apply --directory datasources/imports/ENCHANT_UPDATE
+python3 tools/catalogs/resync.py verify --directory datasources/imports/ENCHANT_UPDATE
+```
+
+Review the prepared manifest and `changed-english.json` before applying. Use the
+prepared scope for the standard translation queue and batch validator. The eight
+additional targets require the usual verified official translation evidence.
+Accepted wording and named variants stay with their enchantment ID.
+
+```sh
+uv run --no-project --with lupa==2.8 python tools/catalogs/translation-work.py \
+  --database datasources/imports/ENCHANT_SOURCES/corpus.sqlite queue \
+  --scope datasources/imports/ENCHANT_UPDATE/translation-scope.json \
+  --output datasources/imports/ENCHANT_UPDATE/translation-queue.json
+```
+
+Compile accepted translations through the normal build. The permanent prefix and
+the four temporary duration formats use the existing GlobalStrings workflow.
+
 ## Integrity and prepared decisions
 
 Source/input hashes establish which evidence was used. Result hashes detect changed prepared

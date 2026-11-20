@@ -130,24 +130,135 @@ do
     nativeBar.left, nativeBar.top = GossipFrame:GetLeft() + 314, GossipFrame:GetTop() - 68
     nativeBar:SetSize(8, 397)
     GossipFrame.GreetingPanel = { ScrollBox = nativeViewport, ScrollBar = nativeBar }
+    do
+        local getOptions, savedActive = C_GossipInfo.GetOptions, active
+        local auction = { gossipOptionID = 95419, orderIndex = 0, name = "Hôtel des ventes" }
+        local bank = { gossipOptionID = 95418, orderIndex = 1, name = "Banque de Forgefer" }
+        local trainer = { gossipOptionID = 95408, orderIndex = 11, name = "Maître de profession" }
+        local unknown = { orderIndex = 16, name = "Native option without a translation" }
+        local apiOptions = { trainer, bank, auction, unknown }
+        active = {}
+        C_GossipInfo.GetOptions = function() return apiOptions end
+        GossipFrame.gossipOptions = { auction, bank, trainer, unknown }
+
+        local greeting = CreateFrame("Frame", nil, nativeViewport)
+        greeting.GreetingText = greeting:CreateFontString()
+        greeting.GreetingText.top = 710
+        greeting.GreetingText:SetHeight(16)
+        local rows = { greeting }
+        for index, option in ipairs(GossipFrame.gossipOptions) do
+            local row = CreateFrame("Button", nil, nativeViewport)
+            row.top = 674 - (index - 1) * 18
+            row:SetHeight(18)
+            row:SetText(option.name)
+            row.GetElementData = function() return { info = option } end
+            rows[#rows + 1] = row
+        end
+        function nativeViewport:ForEachFrame(callback)
+            for index = #rows, 1, -1 do callback(rows[index]) end
+        end
+
+        local locale = Addon:GetTargetLocale()
+        local dialogue = Addon:CreateQuestDialogueSections("Translated greeting", "gossip")
+        check(dialogue[2].text == Addon:GetMissingTranslationMessage("gossipOptions"),
+            "a partly translated menu explains missing options once")
+        check(dialogue[3].text == ForeverRosettaStoneDB:GetGossipOptionName(auction.gossipOptionID, locale)
+            and dialogue[4].text == ForeverRosettaStoneDB:GetGossipOptionName(bank.gossipOptionID, locale)
+            and dialogue[5].text == ForeverRosettaStoneDB:GetGossipOptionName(trainer.gossipOptionID, locale)
+            and dialogue[6].text == unknown.name,
+            "guard options use catalog translations in native display order, with native text for unknown options")
+        check(dialogue[3].gap == 20 and dialogue[4].gap == 0 and dialogue[5].gap == 0 and dialogue[6].gap == 0,
+            "guard options start after the native greeting gap and stay adjacent")
+
+        local getText, getLocale, unitGUID = C_GossipInfo.GetText, GetLocale, UnitGUID
+        local unitSex, unitName = UnitSex, UnitName
+        GetLocale = function() return "frFR" end
+        UnitSex = function() return 2 end
+        UnitName = function(unit) return unit == "npc" and "Garde royale de fer" or "Player" end
+        UnitGUID = function(unit) if unit == "npc" then return "Creature-0-1-0-4-274781-ABCD" end end
+        C_GossipInfo.GetText = function() return "Où voulez-vous aller ?" end
+        local catalogSections = Addon:GetCatalogDialogueSections(0, "gossip")
+        check(catalogSections and catalogSections[1].text == "What do ye need directions to?",
+            "the captured Ironforge greeting reuses directions instead of flight dialogue")
+        C_GossipInfo.GetText = function() return "Native greeting without a matching translation" end
+        Addon.preferences.features.questAutoOpen = true
+        Addon:UpdateQuestInteraction()
+        local reader = Addon.questInteractionReader
+        check(reader.frame:IsShown() and reader.options:GetText() == "Options"
+            and reader.body.lastSections[1].text == Addon:GetMissingTranslationMessage("gossip"),
+            "an owned NPC with a missing greeting offers the fallback and Options")
+        reader.options:Fire("OnClick")
+        reader.options.contextMenu.entries[2].onClick()
+        local dialog = Addon.questReport
+        check(dialog.state == "ready" and dialog.record.gossip.options[2].gossipOptionID == bank.gossipOptionID
+            and dialog.record.gossip.text == C_GossipInfo.GetText(),
+            "the dialogue report includes the original text and option IDs")
+        dialog.frame:Hide()
+        Addon:SendQuestInteraction({ type = "reset" })
+        C_GossipInfo.GetText, GetLocale, UnitGUID = getText, getLocale, unitGUID
+        UnitSex, UnitName = unitSex, unitName
+
+        local flight = { gossipOptionID = 98541, orderIndex = 0, name = "Un vol, s’il vous plaît.", icon = 132057 }
+        GossipFrame.gossipOptions = { flight }
+        dialogue = Addon:CreateQuestDialogueSections("Translated greeting", "gossip")
+        check(#dialogue == 2 and dialogue[2].text == "I need a ride.",
+            "a different flight option ID shares the label without a missing-translation notice")
+
+        nativeViewport.ForEachFrame = nil
+        GossipFrame.gossipOptions = nil
+        C_GossipInfo.GetOptions, active = getOptions, savedActive
+    end
     Addon.questInteractionContentProvider = function(source, id, context)
         if source == GossipFrame and id == 0 and context == "gossip" then
             return { { text = "Translated greeting", gap = 0 } }, "first-greeting"
         end
     end
     Addon.preferences.features.questAutoOpen = true
-    Addon:UpdateQuestInteraction()
+    local savedOptions = C_GossipInfo.GetOptions
+    local flight = { gossipOptionID = 97329, orderIndex = 0, name = "Je dois voyager.", icon = 132057 }
+    C_GossipInfo.GetOptions = function() return { flight } end
+    local option = CreateFrame("Button", nil, nativeViewport)
+    option:SetText(flight.name)
+    option.left, option.top = 30, 690
+    option:SetSize(278, 20)
+    function option:GetElementData() return { info = flight } end
+    local quest = CreateFrame("Button", nil, nativeViewport)
+    quest.questID = 179
+    quest.left, quest.top = 30, 665
+    quest:SetSize(278, 20)
+    controls.setMouseFoci({ option, quest })
+    Addon:UpdateGossipOptionTooltip()
+    Addon:UpdateQuestOfferTooltip()
+    local optionTip, offerTip = Addon.gossipOptionTooltip, Addon.questOfferTooltip
+    check(optionTip:IsShown() and offerTip:IsShown(),
+        "both focused native rows offer tooltips while the translation reader is closed")
+    local optionShow, offerShow = optionTip.Show, offerTip.Show
+    local shows = 0
+    optionTip.Show = function(self) shows = shows + 1; optionShow(self) end
+    offerTip.Show = function(self) shows = shows + 1; offerShow(self) end
+    Addon:UpdateTooltipComponents()
+    check(shows == 0 and not optionTip:IsShown() and not offerTip:IsShown(),
+        "automatic reader opening hides both native row tooltips without showing either again")
+    optionTip.Show, offerTip.Show = optionShow, offerShow
+
     local gossipReader = Addon.questInteractionReader
     local gossipBookmark = Addon.questInteractionBookmark
-    check(gossipReader.frame:IsShown() and not gossipReader.options:IsShown(),
-        "a translated greeting uses the quest reader without quest-specific Options")
+    check(gossipReader.frame:IsShown() and gossipReader.options:IsShown(),
+        "a translated greeting offers the same Options button as the missing greeting")
     local _, _, _, barX, barY = gossipReader.body.frame.ScrollBar:GetPoint(1)
     check(barX == 314 and barY == -68, "the shared reader keeps the gossip scrollbar alignment")
     gossipReader.frame.CloseButton:Fire("OnClick")
     check(not gossipReader.frame:IsShown() and GossipFrame:IsShown() and gossipBookmark:IsShown(),
         "the gossip close button collapses to the shared bookmark")
-    Addon:UpdateQuestInteraction()
+    Addon:UpdateTooltipComponents()
     check(gossipBookmark:IsShown() and not gossipReader.frame:IsShown(), "refresh preserves gossip dismissal")
+    check(optionTip:IsShown() and offerTip:IsShown(), "native row tooltips return when the reader is closed")
+    gossipBookmark:Fire("OnClick")
+    check(gossipReader.frame:IsShown() and not optionTip:IsShown() and not offerTip:IsShown(),
+        "opening the bookmark immediately hides both native row tooltips")
+    gossipReader.frame.CloseButton:Fire("OnClick")
+    C_GossipInfo.GetOptions = savedOptions
+    controls.setMouseFoci({})
     controls.setGamepad(true)
     Addon:UpdateQuestInteraction()
     local manager = GamepadMode.FrameControlsManager
@@ -156,6 +267,12 @@ do
     gossipBookmark:Fire("OnClick")
     check(gossipReader.frame:IsShown() and manager.focusedFrame == gossipReader.frame,
         "reopening a greeting hands focus to the shared reader")
+    gossipReader.options.contextMenu = nil
+    gossipReader.options:Fire("OnClick")
+    check(not gossipReader.options.contextMenu and Addon.questReport.state == "ready",
+        "controller Options opens the dialogue report directly")
+    Addon.questReport.frame:Hide()
+    check(manager.focusedFrame == gossipReader.frame, "the dialogue report returns controller focus to the reader")
     check(gossipReader.frame.SmartNavigationCloseHandler() and gossipBookmark:IsShown() and GossipFrame:IsShown(),
         "Back on the greeting reader returns to its bookmark")
     controls.setGamepad(false)
@@ -269,7 +386,8 @@ check(reader.frame:IsShown(), "new NPC interaction can open again")
 GetQuestID = function() return 999999999 end
 Addon:SendQuestInteraction({ type = "reset" })
 Addon:UpdateQuestInteraction()
-check(reader.frame:IsShown() and reader.missing and reader.options:IsShown(),
+check(reader.frame:IsShown() and reader.frame.title == "Forever Rosetta Stone"
+    and reader.options:IsShown() and reader.options:GetText() == "Options",
     "an untranslated quest opens a reportable missing page")
 GetQuestID = function() return 179 end
 Addon:UpdateQuestInteraction()
@@ -295,9 +413,15 @@ for _, screen in ipairs({ { QuestFrameProgressPanel, "progress" }, { QuestFrameR
     QuestFrameDetailPanel:Hide(); QuestFrameProgressPanel:Hide(); QuestFrameRewardPanel:Hide()
     screen[1]:Show()
     Addon:UpdateQuestInteraction()
-    check(reader.frame:IsShown() and reader.missing and reader.options:IsShown(),
+    check(reader.frame:IsShown() and reader.frame.title == "Forever Rosetta Stone"
+        and reader.options:IsShown() and reader.options:GetText() == "Options",
         screen[2] .. " opens a reportable missing page")
+    reader.options.contextMenu = nil
     reader.options:Fire("OnClick")
+    local menu = reader.options.contextMenu
+    check(menu and menu.entries[2].label == Addon:SettingsText("questBugged"),
+        "missing " .. screen[2] .. " uses the same quest options menu")
+    menu.entries[2].onClick()
     local dialog = Addon.questReport
     local native = dialog.record.interaction
     check(native.screen == screen[2] and dialog.record.questID == 179

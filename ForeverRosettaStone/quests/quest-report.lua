@@ -16,6 +16,22 @@ function Addon:CanOpenQuestOptions()
     return self.panel:IsVisible() and self.current.mode ~= "unavailable" and self:CanReportQuest(self.current.questID)
 end
 
+function Addon:ShowTranslationOptions(owner, label, action)
+    if self.lifecycle ~= "ready" or InCombatLockdown()
+        or (self.questReport and self.questReport.frame:IsShown()) then return end
+    -- A context menu opened by addon code taints the controller manager: its MenuProxy close
+    -- callback unsuspends focus from our call stack and blocks every later native action. The
+    -- controller therefore goes straight to the menu's only action, through the secure report popup.
+    if InputUtil.IsGamepadUIEnabled() then
+        action()
+        return
+    end
+    MenuUtil.CreateContextMenu(owner, function(_, root)
+        root:CreateTitle("Forever Rosetta Stone")
+        root:CreateButton(label, action)
+    end)
+end
+
 -- Without an explicit quest ID the menu belongs to the journal panel's displayed quest.
 function Addon:ShowQuestOptions(owner, questID, interaction)
     if questID == nil then
@@ -24,16 +40,8 @@ function Addon:ShowQuestOptions(owner, questID, interaction)
     elseif not self:CanReportQuest(questID) then
         return
     end
-    -- A context menu opened by addon code taints the controller manager: its MenuProxy close
-    -- callback unsuspends focus from our call stack and blocks every later native action. The
-    -- controller therefore goes straight to the menu's only action, through the secure report popup.
-    if InputUtil.IsGamepadUIEnabled() then
+    self:ShowTranslationOptions(owner or self.panel, self:SettingsText("questBugged"), function()
         self:ShowQuestReport(questID, interaction)
-        return
-    end
-    MenuUtil.CreateContextMenu(owner or self.panel, function(_, root)
-        root:CreateTitle("Forever Rosetta Stone")
-        root:CreateButton(self:SettingsText("questBugged"), function() self:ShowQuestReport(questID, interaction) end)
     end)
 end
 
@@ -306,7 +314,29 @@ function Addon:ShowBookReport(book)
     if not record then return end
     record.book = book
     record.surface = "book"
-    self:FinishTranslationReport("Missing book translation")
+    self:FinishTranslationReport(book.reason and "Missing book translation" or "Book translation")
+end
+
+function Addon:ShowNPCDialogueReport(context)
+    local menu
+    if context == "gossip" then
+        menu = self:CaptureGossipMenu()
+        if not menu.menuVisible then return end
+    elseif not (QuestFrameGreetingPanel and QuestFrameGreetingPanel:IsVisible()) then
+        return
+    end
+    local record = self:BeginTranslationReport("Dialogue", "")
+    if not record then return end
+    record.surface = context
+    if menu then
+        record.gossip = menu
+    else
+        record.greeting = {
+            npc = { name = Read(record, "UnitName", UnitName, "npc"), guid = Read(record, "UnitGUID", UnitGUID, "npc") },
+            text = Read(record, "GetGreetingText", GetGreetingText),
+        }
+    end
+    self:FinishTranslationReport("NPC dialogue translation")
 end
 
 function Addon:ShowQuestReport(questID, interaction)

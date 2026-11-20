@@ -213,6 +213,7 @@ local nativeText = getBookPage(DB, 2098, "frFR")
 local getNativeText = ItemTextGetText
 ItemTextGetText = function() return nativeText end
 reader.options:Fire("OnClick")
+reader.options.contextMenu.entries[2].onClick()
 ItemTextGetText = getNativeText
 local dialog = Addon.questReport
 local report = dialog.record.book
@@ -233,7 +234,14 @@ check(reader.frame:IsShown() and reader.missing and not Addon.bookBookmark:IsSho
 DB.GetBookPage = getBookPage
 pageNumber = 1
 Addon:UpdateBookReader()
-check(reader.frame:IsShown() and not reader.options:IsShown(), "a translated page clears the missing report action")
+check(reader.frame:IsShown() and reader.options:IsShown() and reader.options:GetText() == "Options",
+    "a translated book page keeps the shared Options action")
+reader.options:Fire("OnClick")
+reader.options.contextMenu.entries[2].onClick()
+report = dialog.record.book
+check(dialog.state == "ready" and report.firstPageID == 2097 and report.matchedPageID == 2097
+    and report.pageNumber == 1 and not report.reason, "Options reports the currently displayed translated page")
+dialog.frame:Hide()
 Addon.preferences.features.bookPanel = false
 Addon:UpdateBookReader()
 check(not reader.frame:IsShown() and not Addon.bookBookmark:IsShown(), "the book panel can be turned off")

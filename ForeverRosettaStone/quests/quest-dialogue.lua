@@ -119,11 +119,18 @@ local function VisibleGreetingQuestRows()
     return rows
 end
 
-local function OptionTitle(npcID, option)
+local function OptionTitle(npcID, option, locale, translateOption)
     if not canaccessallvalues(option) or type(option) ~= "table" then return end
+    local translated = Addon:GetGossipOptionTranslation(option, locale)
+    if translated then return translated, true end
     local name = option.name
     if not ReadableString(name) or name == "" then return end
-    return Addon:MatchQuestDialogue(npcID, nil, "option", name) or name
+    if translateOption then
+        translated = translateOption(npcID, option)
+        return translated, translated ~= nil and translated ~= name
+    end
+    translated = Addon:MatchQuestDialogue(npcID, nil, "option", name)
+    return translated or name, translated ~= nil
 end
 
 function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, translateOption)
@@ -169,7 +176,8 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
 
     if questID then AddTitle(questID, 0) end
     local textStyle = context == "progress" and QuestProgressText or QuestInfoDescriptionText
-    local introduction = { text = translated, gap = questID and 5 or 0, source = textStyle }
+    local introduction = { text = translated or Addon:GetMissingTranslationMessage("gossip"),
+        gap = questID and 5 or 0, source = textStyle }
     sections[#sections + 1] = introduction
     if context == "detail" then
         local quest = Addon:GetQuest(questID)
@@ -191,13 +199,24 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
             AddTitle(quest.questID, 10, rows[quest.questID],
                 quest.isComplete and "ActiveQuestIcon" or "IncompleteQuestIcon", "active")
         end
-        for _, option in ipairs(C_GossipInfo.GetOptions and C_GossipInfo.GetOptions() or {}) do
-            local title = (translateOption or OptionTitle)(npcID, option)
+        -- The frame sorts its own options before adding them to the ScrollBox.
+        local options = GossipFrame.gossipOptions
+        if not canaccessallvalues(options) or type(options) ~= "table" or #options == 0 then
+            options = C_GossipInfo.GetOptions and C_GossipInfo.GetOptions() or {}
+        end
+        local missingOptions
+        for _, option in ipairs(options) do
+            local title, hasTranslation = OptionTitle(npcID, option, locale, translateOption)
             if title then
+                if not hasTranslation then missingOptions = true end
                 local row = canaccessallvalues(option.orderIndex) and optionRows[option.orderIndex]
                 local icon = option.overrideIconID or option.icon
                 AddRow(title, row, canaccessallvalues(icon) and icon or nil, "option")
             end
+        end
+        if translated and missingOptions then
+            table.insert(sections, 2, { text = Addon:GetMissingTranslationMessage("gossipOptions"),
+                gap = 8, source = introduction.source })
         end
     elseif context == "greeting" then
         introduction.source = GreetingText or textStyle
@@ -232,5 +251,9 @@ function Addon:GetCatalogDialogueSections(questID, context)
     local translated = self:MatchQuestDialogue(npcID, questID, stage, native)
     if translated then
         return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. native
+    end
+    if stage == "gossip" and ReadableString(native)
+        and ForeverRosettaStoneDB:GetQuestDialogue(nil, npcID, "enUS") then
+        return self:CreateQuestDialogueSections(nil, context, nil, npcID), guid .. "\031" .. native, true
     end
 end

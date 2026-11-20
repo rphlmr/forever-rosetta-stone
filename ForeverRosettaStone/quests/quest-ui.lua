@@ -187,13 +187,6 @@ function Addon:CreateUI()
     report:Hide()
     panel.ReportButton = report
 
-    local prepareReport = self:NewFrame("Button", nil, header, "UIPanelButtonTemplate")
-    prepareReport:SetSize(210, 26)
-    prepareReport:SetPoint("CENTER", header, "CENTER", 0, 4)
-    self:SetScript(prepareReport, "OnClick", function() self:ShowQuestReport(self.current.questID) end)
-    prepareReport:Hide()
-    page.reportButton = prepareReport
-
     local toggle = self:CreateQuestBookmark(QuestMapFrame.DetailsFrame, "ForeverRosettaStoneQuestToggle")
     toggle:SetClampedToScreen(true)
     toggle:Hide()
@@ -460,7 +453,7 @@ function Addon:Render()
     if visible then self:RecordDebugSurface(self.panel, "quest", current.questID, "questPanel", nil, quest) end
     self.panel:SetShown(visible)
     self.toggle:SetShown(self:IsPanelCollapsed())
-    self.panel.ReportButton:SetShown(quest ~= nil)
+    self.panel.ReportButton:SetShown(visible)
 
     if current.mode == "unavailable" then return end
 
@@ -495,7 +488,6 @@ function Addon:Render()
             objectives = quest and (objectives or "") or missingText.summary,
             progress = quest and progress or (missingText.questID .. current.questID),
             reward = not quest and missingText.beer or nil,
-            reportLabel = not quest and missingText.report or nil,
             description = quest and (description or "") or missingText.description,
         })
         self.page.body:ScrollTo(0)

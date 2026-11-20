@@ -535,7 +535,11 @@ local previousGossipInfo = C_GossipInfo
 local auction = { gossipOptionID = 96916, orderIndex = 0, name = "Hôtel des ventes" }
 local trainer = { gossipOptionID = 96904, orderIndex = 13, name = "Maître de profession" }
 local gossipOptions = { trainer, auction }
-C_GossipInfo = { GetOptions = function() return gossipOptions end }
+C_GossipInfo = {
+    GetOptions = function() return gossipOptions end,
+    GetActiveQuests = function() return {} end,
+    GetAvailableQuests = function() return {} end,
+}
 GossipFrame:Show()
 local gossipRow = CreateFrame("Button", nil, GossipFrame)
 gossipRow.left, gossipRow.top = 400, 700
@@ -575,6 +579,21 @@ local unknownOption = { gossipOptionID = 999999999, orderIndex = 0, name = "Unkn
 gossipElement, gossipOptions = { info = unknownOption }, { unknownOption }
 Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:IsShown(), false, "uncataloged options preserve native text without guessing")
+unknownOption.icon = 132057
+Addon:UpdateGossipOptionTooltip()
+equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "I need a ride.",
+    "an uncataloged flight option gets the shared label by its native icon")
+unknownOption.gossipOptionID = nil
+gossipOrder, gossipText = unknownOption.orderIndex, unknownOption.name
+Addon:UpdateGossipOptionTooltip()
+equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "I need a ride.",
+    "a flight option with no ID still gets the shared label")
+auction.icon = 132057
+gossipElement, gossipOptions = { info = auction }, { auction }
+Addon:UpdateGossipOptionTooltip()
+equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "Auction House",
+    "an explicit option translation takes priority over its icon")
+auction.icon = nil
 gossipElement, gossipOptions = { info = auction }, { auction, auction }
 Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:IsShown(), false, "ambiguous options do not display a guessed translation")

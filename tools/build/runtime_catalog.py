@@ -64,6 +64,8 @@ def get_has_ai_translation(kind, entity_id, locale, original):
             text_fields.append('subName')
         elif kind == 'races' and 'nameFemale' in original:
             text_fields.append('nameFemale')
+        elif kind == 'itemenchantments' and 'nameHorde' in original:
+            text_fields.append('nameHorde')
 
     has_ai_translation = False
 
@@ -231,6 +233,11 @@ def project_localized_record(kind, entity_id, entity, locale, items, npcs=None):
             localized['details'] = {'subName': original['subName']}
         elif kind == 'races' and original.get('nameFemale') and has_english_text(entity, 'nameFemale'):
             localized['details'] = {'nameFemale': original['nameFemale']}
+        elif kind == 'itemenchantments':
+            if has_name:
+                localized['name'] = decode_client_escapes(original['name'])
+            if original.get('nameHorde') and has_english_text(entity, 'nameHorde'):
+                localized['details'] = {'nameHorde': decode_client_escapes(original['nameHorde'])}
 
     if not localized:
         return None

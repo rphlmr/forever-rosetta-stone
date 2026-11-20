@@ -247,13 +247,6 @@ function Addon:SyncControllerFocus(focusPanel)
 
     local selected = SmartNavigation:GetCurrentButton()
 
-    if self.panel:IsShown() and self.current.mode ~= "unavailable"
-        and SmartNavigation:GetActiveFrame() == self.panel
-        and (selected == self.page.reportButton or selected == self.panel.ReportButton)
-        and not selected:IsVisible() then
-        self:ClearGamepadTarget(self.panel)
-    end
-
     if SmartNavigation:GetActiveFrame() == self.panel and selected and not selected:IsForbidden() and selected.rewardSource
         and not self:IsFeatureEnabled("rewardComparison") then
         SmartNavigation:HideCursor()

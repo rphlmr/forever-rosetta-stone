@@ -983,8 +983,154 @@ local function TranslateOwnedItemRestriction(addon, line, id, locale)
     end
 end
 
+local enchantTimeFormats = {
+    "ITEM_ENCHANT_TIME_LEFT_SEC", "ITEM_ENCHANT_TIME_LEFT_MIN",
+    "ITEM_ENCHANT_TIME_LEFT_HOURS", "ITEM_ENCHANT_TIME_LEFT_DAYS",
+}
+
+local function EnchantmentPattern(source)
+    local parts, tokens, offset = { "^" }, {}, 1
+    while true do
+        local first, last, token = source:find("(%$[%a]+%d*)", offset)
+        if not first then break end
+        if token ~= "$i" and not token:match("^%$k[123]$") then return end
+        parts[#parts + 1] = Escape(source:sub(offset, first - 1))
+        parts[#parts + 1] = "([%+%-]?%d+[.,]?%d*)"
+        tokens[#tokens + 1] = token
+        offset = last + 1
+    end
+    if #tokens == 0 then return end
+    parts[#parts + 1] = Escape(source:sub(offset)) .. "$"
+    return table.concat(parts), tokens
+end
+
+local function MatchEnchantment(body, source, target, locale, pattern, tokens)
+    if not pattern then
+        if body == source then return target and not target:find("%$[%a]") and target or nil, true end
+        return
+    end
+    local values = { body:match(pattern) }
+    if #values == 0 then return end
+    if not target then return nil, true end
+    local captured = {}
+    for index, token in ipairs(tokens) do
+        local value = EnglishNumber(values[index], false)
+        if not value or (captured[token] and captured[token] ~= value) then return nil, true end
+        captured[token] = value
+    end
+    local used, unresolved = {}, false
+    local translated = target:gsub("%$[%a]+%d*", function(token)
+        local value = captured[token]
+        if not value then unresolved = true; return end
+        used[token] = true
+        return FormatTargetNumber(value, locale)
+    end)
+    for token in pairs(captured) do
+        if not used[token] then return nil, true end
+    end
+    if unresolved then return nil, true end
+    return translated, true
+end
+
+local function MergeEnchantmentMatch(current, translated, matched)
+    if not matched then return current end
+    if not translated or (current and current ~= translated) then return false end
+    return translated
+end
+
+local function TranslateEnchantmentByID(body, id, locale)
+    local source, sourceHorde = ForeverRosettaStoneDB:GetItemEnchantmentNames(id, GetLocale())
+    local target, targetHorde = ForeverRosettaStoneDB:GetItemEnchantmentNames(id, locale)
+    local function Match(name, localized)
+        if not name then return end
+        name = Normalize(name)
+        local spellID = tonumber(name:match("^%$@spelldesc(%d+)$"))
+        if spellID and (not localized or localized == name) then
+            local description = Addon:TranslateLiveSpellDescription(spellID, locale, body)
+            return description, description ~= nil
+        end
+        local pattern, tokens = EnchantmentPattern(name)
+        return MatchEnchantment(body, name, localized, locale, pattern, tokens)
+    end
+    local translated, matched = Match(source, target)
+    local alternate, alternateMatched = Match(sourceHorde, targetHorde)
+    local result = MergeEnchantmentMatch(nil, translated, matched)
+    if result == false then return end
+    return MergeEnchantmentMatch(result, alternate, alternateMatched) or nil
+end
+
+local temporaryEnchantmentIndexes = {}
+
+local function GetTemporaryEnchantmentIndex(sourceLocale)
+    local cached = temporaryEnchantmentIndexes[sourceLocale]
+    if cached then return cached end
+    local exact, dynamic = {}, {}
+    for _, id in ipairs(ForeverRosettaStoneDB:GetTemporaryItemEnchantmentIDs() or {}) do
+        local name, alternate = ForeverRosettaStoneDB:GetItemEnchantmentNames(id, sourceLocale)
+        for index, source in pairs({ name, alternate }) do
+            source = Normalize(source)
+            local entry = { id = id, index = index, source = source }
+            if source:find("%$[%a]") then
+                entry.pattern, entry.tokens = EnchantmentPattern(source)
+                if entry.pattern then dynamic[#dynamic + 1] = entry end
+            else
+                exact[source] = exact[source] or {}
+                exact[source][#exact[source] + 1] = entry
+            end
+        end
+    end
+    cached = { exact = exact, dynamic = dynamic }
+    temporaryEnchantmentIndexes[sourceLocale] = cached
+    return cached
+end
+
+local function TranslateTemporaryEnchantment(body, locale)
+    local index = GetTemporaryEnchantmentIndex(GetLocale())
+    local result
+    for _, entries in ipairs({ index.exact[body] or {}, index.dynamic }) do
+        for _, entry in ipairs(entries) do
+            if not entry.pattern or body:match(entry.pattern) then
+                local name, alternate = ForeverRosettaStoneDB:GetItemEnchantmentNames(entry.id, locale)
+                local target = entry.index == 1 and name or entry.index == 2 and alternate
+                local translated, matched = MatchEnchantment(body, entry.source, target, locale, entry.pattern, entry.tokens)
+                result = MergeEnchantmentMatch(result, translated, matched)
+                if result == false then return end
+            end
+        end
+    end
+    return result
+end
+
+local function TranslateItemEnchantment(addon, line, locale)
+    local text, id = line.leftText, line.enchantID
+    if GetLocale() == locale or not Readable(text, "string") then return end
+    local hasID = Readable(id, "number") and id > 0
+    if not hasID and (not IsLineType(line, "None") or Readable(line.spellID, "number")) then return end
+    local function TranslateBody(value)
+        if hasID then return TranslateEnchantmentByID(value, id, locale) end
+        return TranslateTemporaryEnchantment(value, locale)
+    end
+    if hasID then
+        local translated = addon:TranslateOwnedTooltipFormat(text, "ENCHANTED_TOOLTIP_LINE", locale, TranslateBody)
+            or TranslateBody(Normalize(text))
+        if translated then return translated end
+    end
+    for _, key in ipairs(enchantTimeFormats) do
+        local translated = addon:TranslateOwnedTooltipFormat(text, key, locale, function(value, kind)
+            if kind == "s" then return TranslateBody(value) end
+            local number = EnglishNumber(value, false)
+            return number and FormatTargetNumber(number, locale)
+        end)
+        if translated then return translated end
+    end
+end
+
 function Addon:GetEnglishTooltipLine(data, line, kind, id, sharedTextCache)
     if not canaccessallvalues(line.type, line.leftText, line.rightText) then return end
+    if kind == "item" then
+        local enchantment = TranslateItemEnchantment(self, line, "enUS")
+        if enchantment then return enchantment end
+    end
     if kind == "item" and not Readable(line.spellID, "number") then
         local owned = TranslateOwnedItemText(self, line, id, "enUS")
         if owned then return owned end
@@ -1048,6 +1194,10 @@ local function GetTargetFormats(locale)
 end
 
 local function TranslateLocalizedTooltipLine(self, line, kind, id, locale, data, sharedTextCache)
+    if kind == "item" then
+        local enchantment = TranslateItemEnchantment(self, line, locale)
+        if enchantment then return enchantment end
+    end
     if kind == "item" and not Readable(line.spellID, "number") then
         local owned = TranslateOwnedItemText(self, line, id, locale)
         if owned then return owned end
@@ -1372,6 +1522,107 @@ local function EmbeddedSpellContexts(spec, lines)
     return contexts, titles, inline
 end
 
+function Addon:GetEquippedTransmogItemLocation(slot)
+    if ItemLocation and ItemLocation.CreateFromEquipmentSlot then
+        return ItemLocation:CreateFromEquipmentSlot(slot)
+    end
+end
+
+function Addon:GetCharacterSheetTransmogInfo(slot)
+    local scene = CharacterModelScene
+    if not scene or not scene.GetPlayerActor or not scene:IsVisible() then return end
+    local actor = scene:GetPlayerActor()
+    if actor and actor.GetItemTransmogInfo then return actor:GetItemTransmogInfo(slot) end
+end
+
+local function GetInspectedAppearanceSources(unit, slot)
+    if not InspectFrame or not InspectFrame:IsShown() or not Readable(InspectFrame.unit, "string")
+        or UnitIsUnit(unit, InspectFrame.unit) ~= true then return end
+    local collection = C_TransmogCollection
+    local appearances = collection and collection.GetInspectItemTransmogInfoList
+        and collection.GetInspectItemTransmogInfoList()
+    local appearance = Readable(appearances, "table") and appearances[slot]
+    if Readable(appearance, "table") then
+        return appearance.appearanceID, appearance.secondaryAppearanceID
+    end
+end
+
+local function TranslateEquippedAppearance(spec, lines, locale)
+    local header = NativeFormat("TRANSMOGRIFIED_HEADER")
+    if not Readable(header, "string") then return end
+    local appearanceLine
+    for index = 2, #lines - 1 do
+        local line = lines[index]
+        if Readable(line.leftText, "string") and Normalize(line.leftText) == Normalize(header) then
+            appearanceLine = lines[index + 1]
+            break
+        end
+    end
+    if not appearanceLine or not canaccessallvalues(appearanceLine.type)
+        or not IsLineType(appearanceLine, "None") or not Readable(appearanceLine.leftText, "string") then return end
+
+    local source = spec.source
+    local info = source.GetProcessingTooltipInfo and source:GetProcessingTooltipInfo()
+    if canaccessallvalues(info) and info == nil and source.GetPrimaryTooltipInfo then
+        info = source:GetPrimaryTooltipInfo()
+    end
+    if not Readable(info, "table") or not canaccessallvalues(info.getterName)
+        or info.getterName ~= "GetInventoryItem" or not Readable(info.getterArgs, "table") then return end
+    local unit, slot = info.getterArgs[1], info.getterArgs[2]
+    if not Readable(unit, "string") or not Readable(slot, "number") then return end
+    local equippedID = GetInventoryItemID(unit, slot)
+    if not Readable(equippedID, "number") or equippedID ~= spec.id then return end
+
+    local collection = C_TransmogCollection
+    if not collection then return end
+    local nativeName = Normalize(appearanceLine.leftText)
+    local function MatchSources(primary, secondary)
+        local matchedID
+        for _, sourceID in pairs({ primary, secondary }) do
+            if Readable(sourceID, "number") and sourceID > 0 then
+                local itemID = collection.GetSourceItemID and collection.GetSourceItemID(sourceID)
+                if (not Readable(itemID, "number") or itemID <= 0) and collection.GetSourceInfo then
+                    local sourceInfo = collection.GetSourceInfo(sourceID)
+                    itemID = Readable(sourceInfo, "table") and sourceInfo.itemID
+                end
+                if Readable(itemID, "number") and itemID > 0 then
+                    local sourceName = ForeverRosettaStoneDB:GetItemName(itemID, GetLocale())
+                    if Readable(sourceName, "string") and Normalize(sourceName) == nativeName then
+                        if matchedID and matchedID ~= itemID then return false end
+                        matchedID = itemID
+                    end
+                end
+            end
+        end
+        return matchedID
+    end
+    local function MatchInfo(appearance)
+        if Readable(appearance, "table") then
+            return MatchSources(appearance.appearanceID, appearance.secondaryAppearanceID)
+        end
+    end
+
+    local matchedID
+    if unit == "player" or UnitIsUnit(unit, "player") == true then
+        local location = Addon:GetEquippedTransmogItemLocation(slot)
+        if Readable(location, "table") and C_Item then
+            for _, getter in ipairs({ "GetAppliedItemTransmogInfo", "GetCurrentItemTransmogInfo" }) do
+                local query = C_Item[getter]
+                if query then
+                    matchedID = MatchInfo(query(location))
+                    if matchedID ~= nil then break end
+                end
+            end
+        end
+        if matchedID == nil then
+            matchedID = MatchInfo(Addon:GetCharacterSheetTransmogInfo(slot))
+        end
+    else
+        matchedID = MatchSources(GetInspectedAppearanceSources(unit, slot))
+    end
+    if matchedID then return appearanceLine, ForeverRosettaStoneDB:GetItemName(matchedID, locale) end
+end
+
 function Addon:FillEnglishTooltip(spec)
     if not spec or not spec.source or not spec.tip or not canaccessallvalues(spec.data)
         or type(spec.data) ~= "table" then return end
@@ -1427,6 +1678,11 @@ function Addon:FillEnglishTooltip(spec)
                 end
             end
         end
+    end
+    local appearanceLine, appearanceName
+    if spec.kind == "item" then
+        local ok, line, name = pcall(TranslateEquippedAppearance, spec, lines, locale)
+        if ok then appearanceLine, appearanceName = line, name end
     end
     local itemContexts, embeddedTitles = EmbeddedItemContexts(spec, lines)
     local spellContexts, embeddedSpellTitles, inlineTooltips = EmbeddedSpellContexts(spec, lines)
@@ -1519,7 +1775,9 @@ function Addon:FillEnglishTooltip(spec)
             local lineKind = itemContexts[line] and "item" or spellContexts[line] and "spell" or spec.kind
             local priceRange = IsLineType(line, "SellPrice") and Readable(line.price, "number")
                 and Readable(line.maxPrice, "number") and line.maxPrice > 0
-            if embeddedTitles[line] then
+            if line == appearanceLine and appearanceName then
+                left = appearanceName
+            elseif embeddedTitles[line] then
                 left = ForeverRosettaStoneDB:GetItemName(embeddedTitles[line], locale)
                 if left and Readable(line.leftText, "string") then
                     left = (line.leftText:match("^[ \t\r\n]*") or "") .. left .. (line.leftText:match("[ \t\r\n]*$") or "")

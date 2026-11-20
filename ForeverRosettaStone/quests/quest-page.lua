@@ -381,13 +381,11 @@ function Addon:CreateQuestPage(parent)
 
     function page:Show(entry)
         self.missingQuest = entry.missing
-        self.reportButton:SetShown(entry.missing == true)
         beer:SetShown(entry.missing == true)
         if entry.missing then
             beer.Icon:SetTexture([[Interface\Icons\INV_Drink_03]])
             beer.Name:SetText(entry.reward)
             beer.Count:SetText("100")
-            self.reportButton:SetText(entry.reportLabel)
         end
         body:SetSections(Addon:GetQuestPageSections(entry))
         self:RefreshNativeLayout()

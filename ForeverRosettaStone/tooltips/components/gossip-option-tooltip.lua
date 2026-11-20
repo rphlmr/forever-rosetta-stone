@@ -4,11 +4,20 @@ local function ReadableTable(value)
     return canaccessallvalues(value) and type(value) == "table"
 end
 
+function Addon:GetGossipOptionTranslation(option, locale)
+    local db = ForeverRosettaStoneDB
+    local id = option.gossipOptionID
+    local name = self:IsReadableEntityID(id) and db:GetGossipOptionName(id, locale)
+    if name then return name end
+    local icon = option.icon
+    if canaccessallvalues(icon) then return db:GetGossipOptionNameByIcon(icon, locale) end
+end
+
 local function FindGossipOption(frame)
     if not GossipFrame or not GossipFrame:IsShown() or not C_GossipInfo or not C_GossipInfo.GetOptions then return end
     local options = C_GossipInfo.GetOptions()
     if not ReadableTable(options) then return end
-    local row, id
+    local row, matchedOption
     while frame and frame ~= GossipFrame do
         if frame:IsForbidden() then return end
         if not row then
@@ -22,14 +31,14 @@ local function FindGossipOption(frame)
             if canaccessallvalues(optionID, order, text) and not frame.questID
                 and not (ReadableTable(info) and info.questID) then
                 for _, option in ipairs(options) do
-                    if ReadableTable(option) and Addon:IsReadableEntityID(option.gossipOptionID) then
+                    if ReadableTable(option) and canaccessallvalues(option.gossipOptionID, option.orderIndex, option.name) then
                         local matches = optionID and optionID == option.gossipOptionID and info.name == option.name
                         if not optionID and type(order) == "number" and type(text) == "string" then
                             matches = order == option.orderIndex and text == option.name
                         end
                         if matches then
                             if row then return end
-                            row, id = frame, option.gossipOptionID
+                            row, matchedOption = frame, option
                         end
                     end
                 end
@@ -37,17 +46,19 @@ local function FindGossipOption(frame)
         end
         frame = frame:GetParent()
     end
-    if frame == GossipFrame then return row, id end
+    if frame == GossipFrame then return row, matchedOption end
 end
 
 function Addon:UpdateGossipOptionTooltip()
-    local tip, source, id = self.gossipOptionTooltip
+    local tip, source, option = self.gossipOptionTooltip
     if not self:IsTooltipBlocked() and self:IsFeatureEnabled("gossipOptionTooltip")
         and not (self.questInteractionReader and self.questInteractionReader.frame:IsShown()) then
-        source, id = self:GetTooltipFocus(FindGossipOption, GossipFrame)
+        source, option = self:GetTooltipFocus(FindGossipOption, GossipFrame)
     end
-    local name = source and source:IsVisible() and ForeverRosettaStoneDB:GetGossipOptionName(id, self:GetTargetLocale())
-    if source then self:RecordDebugSurface(source, "gossipOption", id, "gossip", nil, name) end
+    local name = source and source:IsVisible() and self:GetGossipOptionTranslation(option, self:GetTargetLocale())
+    if source and self:IsReadableEntityID(option.gossipOptionID) then
+        self:RecordDebugSurface(source, "gossipOption", option.gossipOptionID, "gossip", nil, name)
+    end
     if not name then
         if tip then tip:Hide() end
         return

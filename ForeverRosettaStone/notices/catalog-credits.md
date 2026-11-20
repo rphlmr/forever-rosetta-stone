@@ -28,6 +28,7 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
 - [VMaNGOS](https://github.com/vmangos/core), [CMaNGOS Classic DB](https://github.com/cmangos/classic-db)
   and [AzerothCore](https://github.com/azerothcore/azerothcore-wotlk) supplied book page references.
   The catalog distinguishes Classic and Wrath reference evidence from observations in Forever.
+- [Zephras](https://zephras.com/forever/enUS/npc/1573/) supplied the English flight option wording for Gryth Thurden.
 - Additional terminology/context references included [JudgeHype](https://wowclassic.judgehype.com/),
   [Realm First](https://realmfirst.net/), and [ConquestCapped](https://conquestcapped.com/).
 

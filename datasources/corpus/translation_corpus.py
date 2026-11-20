@@ -53,6 +53,7 @@ WAGO = {
     'TotemCategory': ('totemcategories', {'Name_lang': 'name'}),
     'SpellShapeshiftForm': ('shapeshiftforms', {'Name_lang': 'name'}),
     'ItemLimitCategory': ('itemlimitcategories', {'Name_lang': 'name'}),
+    'SpellItemEnchantment': ('itemenchantments', {'Name_lang': 'name', 'HordeName_lang': 'nameHorde'}),
     'HolidayNames': ('holidaynames', {'Name_lang': 'name'}),
     'LockType': ('locktypes', {'Name_lang': 'name'}),
     'ItemSubClass': ('itemsubclasses', {'VerboseName_lang': 'name'}),

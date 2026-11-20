@@ -96,7 +96,7 @@ def normalize_client_literal(text):
 def export_database(documents, output, dev_debug=False, globalstring_keys=None):
     """Emit a small manifest and grouped load-on-demand database addons."""
     for kind in CATALOG_FILES:
-        if kind in ('races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings') and kind not in documents:
+        if kind in ('races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'itemenchantments', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings') and kind not in documents:
             continue
         if documents[kind].get('schemaVersion') != 1:
             raise ValueError('Expected schema 1 catalog: ' + kind)
@@ -112,7 +112,7 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
     combined.setdefault('bookpages', {})
     combined.setdefault('totemcategories', {})
     combined.setdefault('shapeshiftforms', {})
-    for kind in ('itemlimitcategories', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings'):
+    for kind in ('itemlimitcategories', 'itemenchantments', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings'):
         combined.setdefault(kind, {})
     if globalstring_keys is not None:
         combined['globalstrings'] = {entity_id: entity for entity_id, entity in combined['globalstrings'].items()
@@ -129,7 +129,7 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
     digest = hashlib.sha256(b'format8')
 
     for kind in CATALOG_FILES:
-        if kind in ('races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings') and kind not in documents:
+        if kind in ('races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'itemenchantments', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings') and kind not in documents:
             continue
         document = documents[kind]
         if kind == 'globalstrings' and globalstring_keys is not None:
@@ -168,6 +168,7 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
         dialogue_records = {locale: {} for locale in locales} if kind in ('quests', 'npcs') else None
         rule_records = {}
         global_keys = set()
+        gossip_icons = set()
 
         for entity_id in ids:
             entity = catalog[str(entity_id)]
@@ -183,6 +184,14 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
             rules = project_tooltip_rules(entity) if kind in ('items', 'spells') else {}
             if kind == 'spells' and entity_id in equipment_sources:
                 rules['equipmentRequirementSources'] = equipment_sources[entity_id]
+            if kind == 'gossipoptions' and 'sharedIcon' in entity:
+                icon = entity['sharedIcon']
+                if type(icon) is not int or icon <= 0 or icon in gossip_icons:
+                    raise ValueError(f'Gossip option {entity_id} has an invalid or duplicate shared icon')
+                gossip_icons.add(icon)
+                rule_records[entity_id] = {'name': str(icon), 'hasAITranslation': False}
+            if kind == 'itemenchantments' and entity.get('duration', 0) > 0:
+                rule_records[entity_id] = {'name': 'temporary', 'hasAITranslation': False}
             if kind == 'sharedstrings' and 'usage' in entity:
                 usage = entity.get('usage')
                 if not isinstance(usage, str) or not re.fullmatch(r'[a-z][A-Za-z]+', usage):

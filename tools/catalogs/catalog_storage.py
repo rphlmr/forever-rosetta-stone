@@ -10,7 +10,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 
-CATALOGS = ('quests', 'items', 'npcs', 'areas', 'spells', 'talents', 'factions', 'creaturetypes', 'classes', 'races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings')
+CATALOGS = ('quests', 'items', 'npcs', 'areas', 'spells', 'talents', 'factions', 'creaturetypes', 'classes', 'races', 'globalstrings', 'professioncategories', 'activities', 'taxinodes', 'books', 'bookpages', 'totemcategories', 'shapeshiftforms', 'itemlimitcategories', 'itemenchantments', 'holidaynames', 'locktypes', 'itemsubclasses', 'gossipoptions', 'sharedstrings')
 KINDS = CATALOGS + ('maps',)
 
 

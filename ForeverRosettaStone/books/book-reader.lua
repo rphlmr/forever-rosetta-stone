@@ -108,7 +108,8 @@ function Addon:GetOpenBook()
     if pageID then
         local title, body = self:GetBookTranslation(firstPage, pageID)
         if body then
-            book = { firstPage = firstPage, pageID = pageID, pageNumber = pageNumber, title = title, body = body }
+            book = { firstPage = firstPage, pageID = pageID, pageNumber = pageNumber, title = title, body = body,
+                ownerKind = ownerKind, ownerID = ownerID }
         end
     end
     if not book then
@@ -172,19 +173,29 @@ function Addon:CreateBookReader()
     scrollBackground:SetPoint("BOTTOMRIGHT", body.frame.ScrollBar, "BOTTOMRIGHT")
     scrollBackground:Hide()
     local report = self:NewFrame("Button", nil, frame, "UIPanelButtonTemplate")
-    report:SetSize(180, 22)
-    report:SetPoint("TOP", frame, "TOP", 0, -31)
-    report:Hide()
+    report:SetSize(110, 22)
+    report:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -10, -32)
+    report:SetText("Options")
     reader.options = report
-    self:SetScript(report, "OnClick", function()
-        if not reader.missing then return end
-        reader.reportOwner = true
-        local reportData = {}
-        for key, value in pairs(reader.missing) do reportData[key] = value end
-        local ok, nativeText
-        if ItemTextGetText then ok, nativeText = pcall(ItemTextGetText) end
-        if ok and Readable(nativeText, "string") then reportData.nativeText = nativeText end
-        self:ShowBookReport(reportData)
+    self:SetScript(report, "OnClick", function(owner)
+        self:ShowTranslationOptions(owner, self:SettingsText("reportTranslation"), function()
+            local book, missing = self:GetOpenBook()
+            if not (book or missing) then return end
+            local reportData = {}
+            if missing then
+                for key, value in pairs(missing) do reportData[key] = value end
+            else
+                reportData = { firstPageID = book.firstPage, matchedPageID = book.pageID, pageNumber = book.pageNumber,
+                    ownerKind = book.ownerKind, ownerID = book.ownerID }
+                local title = ItemTextGetItem and ItemTextGetItem()
+                if Readable(title, "string") then reportData.nativeTitle = title end
+            end
+            local ok, nativeText
+            if ItemTextGetText then ok, nativeText = pcall(ItemTextGetText) end
+            if ok and Readable(nativeText, "string") then reportData.nativeText = nativeText end
+            reader.reportOwner = true
+            self:ShowBookReport(reportData)
+        end)
     end)
     self:SetupSideReaderController(reader, "ForeverRosettaStoneBookFooter", Dismiss)
 
@@ -192,8 +203,6 @@ function Addon:CreateBookReader()
         local key = table.concat({ book.firstPage or "", book.pageID or "", book.pageNumber,
             Addon:GetTargetLocale(), book.title or "", book.body }, "\031")
         self.missing = book.missing
-        report:SetShown(self.missing ~= nil)
-        report:SetText(Addon:GetMissingQuestText().report)
         frame:SetTitle(self.missing and "Forever Rosetta Stone" or Addon:GetTranslationLanguageLabel())
         Addon:FitQuestPanelTitle(frame)
         title:SetText(book.title)
@@ -303,7 +312,7 @@ function Addon:CreateBookReader()
         end
         title:ClearAllPoints()
         title:SetPoint("LEFT", frame, "TOPLEFT", 16, titleY)
-        title:SetPoint("RIGHT", frame, "TOPRIGHT", -16, titleY)
+        title:SetPoint("RIGHT", frame, "TOPRIGHT", -report:GetWidth() - 18, titleY)
     end
 
     return reader

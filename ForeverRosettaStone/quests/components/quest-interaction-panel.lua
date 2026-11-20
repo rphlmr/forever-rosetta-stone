@@ -208,9 +208,10 @@ function Addon:UpdateQuestInteraction()
     local sections, dialogueKey, missing
     local hasCatalogText = source and self:HasQuestInteractionTranslation(id, quest, context)
     if source and not (hasCatalogText and self:FormatQuestText(quest.description, id)) then
-        sections, dialogueKey = self:GetCatalogDialogueSections(id, context)
-        if not sections and self.questInteractionContentProvider then
-            sections, dialogueKey = self.questInteractionContentProvider(source, id, context)
+        sections, dialogueKey, missing = self:GetCatalogDialogueSections(id, context)
+        if (not sections or missing) and self.questInteractionContentProvider then
+            local provided, key = self.questInteractionContentProvider(source, id, context)
+            if provided then sections, dialogueKey, missing = provided, key, nil end
         end
     end
     if not sections and hasCatalogText then
@@ -240,9 +241,9 @@ function Addon:UpdateQuestInteraction()
 
     local policy = profiles[context][self:GetTooltipInputMode()]
     self.questInteractionReader:Layout(source, policy, self:GetQuestInteractionBackground(source))
+    if self.questOfferTooltip and self.questOfferTooltip:IsShown() then self.questOfferTooltip:Hide() end
+    if self.gossipOptionTooltip and self.gossipOptionTooltip:IsShown() then self.gossipOptionTooltip:Hide() end
     self.questInteractionReader:ShowSections(id, context, sections, dialogueKey, missing)
-
-    if self.questOfferTooltip then self.questOfferTooltip:Hide() end
 end
 
 Addon:RegisterNameTooltipComponent({

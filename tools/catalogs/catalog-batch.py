@@ -22,6 +22,7 @@ from tools.catalogs.english_scope import has_english_text
 ROOT = Path(__file__).resolve().parents[2]
 TOKEN_TOOLS = runpy.run_path(str(Path(__file__).with_name('translation-work.py')))
 GET_TOKENS = TOKEN_TOOLS['get_tokens']
+GET_ENCHANTMENT_TOKENS = TOKEN_TOOLS['get_enchantment_tokens']
 GET_QUEST_TOKENS = TOKEN_TOOLS['get_quest_tokens']
 GET_DIALOGUE_TOKENS = partial(GET_QUEST_TOKENS, allow_sentence_selectors=True)
 GET_BOOK_TOKENS = TOKEN_TOOLS['get_book_tokens']
@@ -183,7 +184,8 @@ def validate_record(kind, entity_id, before, after, locales):
 
             getter = (GET_DIALOGUE_TOKENS if field.startswith('dialogue.') else
                       GET_BOOK_TOKENS if kind in ('books', 'bookpages') else
-                      GET_QUEST_TOKENS if kind == 'quests' else GET_TOKENS)
+                      GET_QUEST_TOKENS if kind == 'quests' else
+                      GET_ENCHANTMENT_TOKENS if kind == 'itemenchantments' else GET_TOKENS)
             if getter(text) != getter(source):
                 raise ValueError('Placeholder mismatch: ' + kind + '/' + entity_id + '/' + locale + '/' + field)
 

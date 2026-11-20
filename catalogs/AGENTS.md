@@ -26,6 +26,9 @@ parallel `locales/client-labels` files. Authorized translation snapshots use `ca
 `prepare-labels`, `check-labels` and `patch-labels`; agents edit only result JSON, and the
 coordinator applies validated catalog patches. Preserve existing translations and raw source
 formatting during source updates.
+Item modifiers use `itemenchantments/<SpellItemEnchantment.ID>.json`. Keep the
+official name, optional Horde variant and per-field provenance next to the source
+duration in seconds. Follow the [enchantment refresh and translation workflow](../docs/import-resync.md#equipment-enchantments-and-temporary-modifiers).
 Tool category names live in `totemcategories/<TotemCategory.ID>.json`, with localized `name`
 and inline field provenance. These IDs are not item IDs. Spell `tooltipData.requiredToolCategories`
 contains verified `SpellTotems.RequiredTotemCategoryID_*` relationships, with

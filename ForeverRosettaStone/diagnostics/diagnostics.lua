@@ -204,6 +204,55 @@ local function CaptureReplayContext(evidence, native)
                 instant = Call("C_Item.GetItemInfoInstant", false, link or id),
                 stats = Call("C_Item.GetItemStats", false, link or ("item:" .. id)),
                 name = Call("C_Item.GetItemNameByID", false, id) }
+
+            local function InventoryArgs(info)
+                if Field(info, "getterName") == "GetInventoryItem" then
+                    return Table(Field(info, "getterArgs"))
+                end
+            end
+            local args = InventoryArgs(evidence.processingInfo) or InventoryArgs(evidence.primaryInfo)
+            local unit, slot = Field(args, 1), Field(args, 2)
+            if type(unit) == "string" and type(slot) == "number" then
+                local inspectUnit = Read(function()
+                    if InspectFrame and InspectFrame:IsShown() then return InspectFrame.unit end
+                end)
+                local transmog = { unit = unit, slot = slot, status = "inspect unit unavailable" }
+                context.item.transmog = transmog
+                if unit == "player" or First(Call("UnitIsUnit", false, unit, "player")) == true then
+                    local location = Addon:GetEquippedTransmogItemLocation(slot)
+                    transmog.status = "equipped appearance unavailable"
+                    if location then
+                        transmog.equippedAppearance = Call("C_Item.GetAppliedItemTransmogInfo", false, location)
+                    end
+                    local applied = Table(First(transmog.equippedAppearance))
+                    if Addon:IsReadableEntityID(Field(applied, "appearanceID"))
+                        or Addon:IsReadableEntityID(Field(applied, "secondaryAppearanceID")) then
+                        transmog.status = "captured"
+                    else
+                        if location then
+                            transmog.currentAppearance = Call("C_Item.GetCurrentItemTransmogInfo", false, location)
+                        end
+                        transmog.characterSheetAppearance = CaptureReturns(function()
+                            return Addon:GetCharacterSheetTransmogInfo(slot)
+                        end)
+                        local current = Table(First(transmog.currentAppearance))
+                        local displayed = Table(First(transmog.characterSheetAppearance))
+                        if Addon:IsReadableEntityID(Field(current, "appearanceID"))
+                            or Addon:IsReadableEntityID(Field(current, "secondaryAppearanceID"))
+                            or Addon:IsReadableEntityID(Field(displayed, "appearanceID"))
+                            or Addon:IsReadableEntityID(Field(displayed, "secondaryAppearanceID")) then
+                            transmog.status = "captured"
+                        end
+                    end
+                elseif type(inspectUnit) == "string" and inspectUnit ~= "<nil>" and inspectUnit ~= "<restricted>"
+                    and First(Call("UnitIsUnit", false, unit, inspectUnit)) == true then
+                    transmog.inspectUnit = inspectUnit
+                    transmog.inspectGUID = Call("UnitGUID", false, inspectUnit)
+                    -- The API exposes the inspect cache. Keep its raw list beside the hovered slot.
+                    transmog.inspectAppearances = Call("C_TransmogCollection.GetInspectItemTransmogInfoList", false)
+                    transmog.status = Table(First(transmog.inspectAppearances)) and "captured" or "appearance data unavailable"
+                end
+            end
         end
     end
 
@@ -451,7 +500,7 @@ function Addon:FormatDebugReport(title, report)
     return IssueReport(title, Format(Snapshot(report)))
 end
 
-function Addon:GetGossipDebugReport()
+function Addon:CaptureGossipMenu()
     local report = {
         capturedAt = Read(function() return date("%Y-%m-%d %H:%M:%S") end),
         client = CaptureReturns(GetBuildInfo),
@@ -475,7 +524,11 @@ function Addon:GetGossipDebugReport()
             report.status = "options unavailable"
         end
     end
-    return self:FormatDebugReport("Forever Rosetta Stone · Gossip menu capture", report)
+    return Snapshot(report)
+end
+
+function Addon:GetGossipDebugReport()
+    return IssueReport("Forever Rosetta Stone · Gossip menu capture", Format(self:CaptureGossipMenu()))
 end
 
 function Addon:IsDebugPicking()

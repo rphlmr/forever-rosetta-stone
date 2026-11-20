@@ -224,7 +224,7 @@ end
 local kinds = { quests = true, items = true, npcs = true, areas = true, spells = true, talents = true, maps = true,
     factions = true, creaturetypes = true, classes = true, races = true, professioncategories = true, activities = true, taxinodes = true, books = true, bookpages = true,
     totemcategories = true, shapeshiftforms = true, itemlimitcategories = true, holidaynames = true, locktypes = true,
-    itemsubclasses = true, gossipoptions = true, sharedstrings = true }
+    itemsubclasses = true, itemenchantments = true, gossipoptions = true, sharedstrings = true }
 
 function api:IsAITranslated(kind, entityID, locale)
     if not kinds[kind] then return end
@@ -360,25 +360,51 @@ local function GetRules(kind, entityID)
     return page and page[3][position] or nil
 end
 
-local globalStringKeys, globalStringEntries, sharedTextUses
+local globalStringKeys, globalStringEntries
+local sharedTextUses = {}
 
-function api:GetSharedTextsByUsage(usage, locale)
-    if type(usage) ~= "string" or not IsSupportedLocale(locale) then return end
-    if not sharedTextUses then
-        sharedTextUses = {}
-        local prefix = "X-Rosetta-shared-sharedstrings"
+local function GetSharedTextIDs(kind, usage)
+    local uses = sharedTextUses[kind]
+    if not uses then
+        uses = {}
+        sharedTextUses[kind] = uses
+        local prefix = "X-Rosetta-shared-" .. kind
         local encoded = GetStored(prefix .. "-INDEX")
         for _, start in ipairs(encoded and Decode(encoded) or {}) do
             local page = GetPage(prefix, start)
             for position, id in ipairs(page[1]) do
                 local role = page[2][position]
-                sharedTextUses[role] = sharedTextUses[role] or {}
-                sharedTextUses[role][#sharedTextUses[role] + 1] = id
+                uses[role] = uses[role] or {}
+                uses[role][#uses[role] + 1] = id
             end
         end
     end
+    return uses[usage]
+end
+
+function api:GetItemEnchantmentNames(enchantID, locale)
+    local page, position = GetRecord("itemenchantments", enchantID, locale)
+    if page then
+        local details = page[3][position]
+        return page[2][position], details and details.nameHorde
+    end
+end
+
+function api:GetTemporaryItemEnchantmentIDs()
+    return GetSharedTextIDs("itemenchantments", "temporary")
+end
+
+function api:GetGossipOptionNameByIcon(icon, locale)
+    if (canaccessallvalues and not canaccessallvalues(icon)) or type(icon) ~= "number"
+        or not IsSupportedLocale(locale) then return end
+    local ids = GetSharedTextIDs("gossipoptions", tostring(icon))
+    if ids and #ids == 1 then return self:GetGossipOptionName(ids[1], locale) end
+end
+
+function api:GetSharedTextsByUsage(usage, locale)
+    if type(usage) ~= "string" or not IsSupportedLocale(locale) then return end
     local result = {}
-    for _, id in ipairs(sharedTextUses[usage] or {}) do
+    for _, id in ipairs(GetSharedTextIDs("sharedstrings", usage) or {}) do
         local text = GetName("sharedstrings", id, locale)
         if text then result[#result + 1] = text end
     end

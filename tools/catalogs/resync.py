@@ -316,6 +316,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
     commands = parser.add_subparsers(dest='command', required=True)
+    command = commands.add_parser('prepare-item-enchantments')
+    command.add_argument('--database', type=Path, required=True)
+    command.add_argument('--output', type=Path, required=True)
     command = commands.add_parser('prepare-books')
     command.add_argument('--database', type=Path, required=True)
     command.add_argument('--output', type=Path, required=True)
@@ -337,7 +340,10 @@ def main():
     command.add_argument('--addons', type=Path, required=True)
     command.add_argument('--runtime-file', action='append', default=[])
     args = parser.parse_args()
-    if args.command == 'prepare-books':
+    if args.command == 'prepare-item-enchantments':
+        from datasources.wago.enchantments import prepare as prepare_enchantments
+        result = prepare_enchantments(args.root, args.database, args.output)
+    elif args.command == 'prepare-books':
         from datasources.books.catalogs import prepare as prepare_books
         result = prepare_books(args.root, args.database, args.output)
     elif args.command == 'prepare-quest-dialogue':
