@@ -11,6 +11,10 @@ function Addon:GetTooltipDisplayMode(source)
     return self.preferences.tooltipMode
 end
 
+local function UsesNativeTooltipSlot(self, source)
+    return self.preferences.translationOnly or self:GetTooltipDisplayMode(source) == "stacked"
+end
+
 function Addon:RegisterNameTooltipComponent(definition)
     local component = self:CreateTooltipComponent(definition)
     assert(not componentByKind[component.kind], "Duplicate tooltip component: " .. component.kind)
@@ -89,6 +93,9 @@ function Addon:FillNameTooltip(spec)
         component.FillTooltip(tip, source, spec.name, red, green, blue, spec)
     end
     component.AfterFill(spec)
+    if Addon.preferences.translationOnly and not Addon:HasLiveTooltipWidgets(source, tip) then
+        Addon:AppendTooltipExtraRows(spec)
+    end
     tip:Show()
     Addon:RecordDebugRenderedTooltip(spec)
 end
@@ -103,17 +110,20 @@ function Addon:RenderTooltipPreview(data)
     tip:Hide()
     if not name then return end
     local spec = { source = source, tip = tip, kind = "item", id = PREVIEW_ITEM_ID, name = name, data = data }
-    local mode = self.preferences.tooltipMode
+    local translationOnly = self.preferences.translationOnly
     self:FillNameTooltip(spec)
-    if mode == "stacked" then
+    if UsesNativeTooltipSlot(self, source) then
         self:FillStackedTooltip(source, tip, "preview:" .. self:GetTargetLocale()
             .. ":" .. self.preferences.tooltipCoverage)
     end
-    local separate = mode == "separate"
+    local separate = self.preferences.tooltipMode == "separate" and not translationOnly
     local side = self.preferences.npcTooltipPosition
     local horizontal = side == "left" or side == "right"
     local totalWidth = source:GetWidth()
     local totalHeight = source:GetHeight()
+    if translationOnly and tip:IsShown() then
+        totalWidth, totalHeight = tip:GetSize()
+    end
     local sourceX, sourceY = 0, 0
     if separate then
         if horizontal then
@@ -193,10 +203,39 @@ function Addon:RefreshTooltipPreview()
 end
 
 
+local function LayoutReplacementComparisons(self, group)
+    local primary = group[1]
+    local primarySlot = self:GetTooltipRect(primary)
+    local primaryState = self.stackedTooltips[primary]
+    local anchor = primaryState and primaryState.replacement and primaryState.owner or primary
+    local bounds = self:GetTooltipRect(anchor)
+    if not primarySlot or not bounds then return end
+    local occupied, replacements = { bounds }, {}
+    for index = 2, #group do
+        local source = group[index]
+        if not source:IsForbidden() and source:IsVisible() then
+            local rect = self:GetTooltipRect(source)
+            local saved = self.stackedTooltips[source]
+            if rect and saved and saved.replacement then
+                replacements[#replacements + 1] = { source = source, saved = saved, left = rect.left }
+            elseif rect then
+                occupied[#occupied + 1] = rect
+            end
+        end
+    end
+    for _, entry in ipairs(replacements) do
+        local side = entry.left < primarySlot.left and "left" or "right"
+        local rect = self:PlaceCompanionTooltip(entry.saved.owner, anchor, occupied, false, nil,
+            { GetSide = function() return side end, allowSideFallback = true, allowVerticalFallback = true })
+        if rect then occupied[#occupied + 1] = rect
+        else self:ClearStackedTooltip(entry.source) end
+    end
+end
+
 local function LayoutNameTooltipGroup(self, group)
     local restoreBlocked = false
-    local mode = self:GetTooltipDisplayMode(group[1])
-    if mode ~= "separate" then
+    local nativeSlot = UsesNativeTooltipSlot(self, group[1])
+    if nativeSlot then
         self:TransitionTooltipSources(group, "sources.restore")
         restoreBlocked = group.sourcePlacements ~= nil
         for _, source in ipairs(group) do
@@ -210,7 +249,7 @@ local function LayoutNameTooltipGroup(self, group)
     local primary = self.nameTooltips[group[1]]
     local component = componentByKind[primary.kind]
 
-    if mode == "stacked" and component and component.supportsEmbedded and group[1].ClearLines then
+    if nativeSlot and component and component.supportsEmbedded and group[1].ClearLines then
         for _, source in ipairs(group) do
             local spec = self.nameTooltips[source]
             if not self:IsTooltipBlocked() and not source:IsForbidden() and source:IsVisible()
@@ -218,16 +257,22 @@ local function LayoutNameTooltipGroup(self, group)
                 local stacked = self.stackedTooltips and self.stackedTooltips[source]
                 local key = table.concat({ spec.kind, spec.id,
                     self:GetTargetLocale(), self.preferences.tooltipCoverage }, ":")
+                local preserveWidgets = self.preferences.translationOnly and self:HasLiveTooltipWidgets(source, spec.tip)
                 if not stacked or stacked.owner ~= spec.tip or stacked.key ~= key
-                    or source:NumLines() ~= stacked.numLines then
+                    or source:NumLines() ~= stacked.numLines or stacked.preserveWidgets ~= preserveWidgets then
                     if stacked then self:ClearStackedTooltip(source) end
                     self:FillNameTooltip(spec)
                     self:FillStackedTooltip(source, spec.tip, key)
+                else
+                    self:RefreshStackedTooltip(source, stacked)
                 end
             else
                 self:ClearStackedTooltip(source)
                 if spec.tip then spec.tip:Hide() end
             end
+        end
+        if self.preferences.translationOnly and primary.kind == "item" and #group > 1 and self.stackedTooltips then
+            LayoutReplacementComparisons(self, group)
         end
         return
     end
@@ -412,7 +457,7 @@ end
 function Addon:UpdateNameTooltip(source, kind, id, color, deferLayout)
     if source:IsForbidden() then return end
     local spec = self.nameTooltips[source]
-    if spec.kind ~= kind or spec.id ~= id or self:GetTooltipDisplayMode(source) == "separate" then
+    if spec.kind ~= kind or spec.id ~= id or not UsesNativeTooltipSlot(self, source) then
         self:ClearStackedTooltip(source)
     end
     spec.kind, spec.id, spec.color = kind, id, color
@@ -490,12 +535,24 @@ function Addon:CreateNameTooltips()
                         local spec = Addon.nameTooltips and Addon.nameTooltips[source]
                         if not spec then return end
                         -- Comparison Show runs before the client appends the stat summary.
-                        local mode = Addon:GetTooltipDisplayMode(source)
-                        local immediate = mode ~= "separate" and (mode ~= "stacked" or source == spec.group[1])
+                        local immediate = UsesNativeTooltipSlot(Addon, source) and source == spec.group[1]
                         Addon:Run("tooltip lifecycle", Addon.SendTooltipEvent, Addon, spec.group,
                             { type = event, source = source, immediate = immediate })
                     end
-                    source:HookScript("OnHide", function() Send("native.hidden") end)
+                    source:HookScript("OnHide", function()
+                        Addon:UpdateReplacementFade(source, "hide")
+                        Send("native.hidden")
+                    end)
+                    if source.FadeOut then
+                        hooksecurefunc(source, "FadeOut", function()
+                            if not source:IsForbidden() then Addon:UpdateReplacementFade(source, "start") end
+                        end)
+                        source:HookScript("OnUpdate", function()
+                            if Addon.preferences.translationOnly and not source:IsForbidden() then
+                                Addon:UpdateReplacementFade(source)
+                            end
+                        end)
+                    end
                     if source.ClearLines then
                         source:HookScript("OnTooltipCleared", function() Send("native.clear") end)
                         hooksecurefunc(source, "ClearLines", function() Send("native.clear") end)
@@ -507,12 +564,18 @@ function Addon:CreateNameTooltips()
                     hooksecurefunc(source, "Show", function()
                         if Addon.TraceTooltip then Addon:TraceTooltip("show", source) end
                         if not source:IsForbidden() and source:IsVisible() then
+                            if not Addon.tooltipRendering then Addon:UpdateReplacementFade(source, "show") end
                             Send("native.shown")
-                            -- Map pins finish rebuilding their objectives and controller hints at Show.
+                            if Addon.preferences.translationOnly and not Addon.tooltipRendering then
+                                -- Other tooltip post-hooks can attach live regions after Show.
+                                Send("layout.request")
+                            end
+                            -- Quest tooltips are complete at Show, including the native controller hints.
                             local owner = source == GameTooltip and source:GetOwner()
                             if Addon.lifecycle == "ready" and not Addon.tooltipRendering
-                                and owner and not owner:IsForbidden() and owner.pinTemplate == "QuestPinTemplate" then
-                                Addon:Run("translate map quest tooltip", Addon.ShowTranslationTooltip, Addon)
+                                and owner and not owner:IsForbidden()
+                                and (owner.pinTemplate == "QuestPinTemplate" or Addon:GetQuestListTooltipQuestID(owner)) then
+                                Addon:Run("translate quest tooltip", Addon.ShowTranslationTooltip, Addon)
                             end
                             Addon:RecordDebugTooltipText(source)
                         end
@@ -540,14 +603,14 @@ function Addon:CreateNameTooltips()
         -- callback caused native merchant gamepad taint in client testing.
         hooksecurefunc(TooltipComparisonManager, "AnchorShoppingTooltips", LayoutComparison)
         hooksecurefunc(TooltipComparisonManager, "SetItemTooltip", function(manager)
-            if Addon:GetTooltipDisplayMode(manager.tooltip) == "stacked" then LayoutComparison(manager) end
+            if UsesNativeTooltipSlot(Addon, manager.tooltip) then LayoutComparison(manager) end
         end)
         if GameTooltip_ShowCompareItem then
             -- The native C comparison path can bypass the manager's method hooks. Finish stacked
             -- layout after that entire call, so periodic pinned-tooltip refreshes never paint short.
             hooksecurefunc(_G, "GameTooltip_ShowCompareItem", function(source)
                 source = source or GameTooltip
-                if Addon:GetTooltipDisplayMode(source) == "stacked" then
+                if UsesNativeTooltipSlot(Addon, source) then
                     Addon:Run("layout completed item comparison", LayoutComparisonSource, source)
                 end
             end)

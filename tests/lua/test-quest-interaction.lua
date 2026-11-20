@@ -180,6 +180,17 @@ do
         local catalogSections = Addon:GetCatalogDialogueSections(0, "gossip")
         check(catalogSections and catalogSections[1].text == "What do ye need directions to?",
             "the captured Ironforge greeting reuses directions instead of flight dialogue")
+        local savedLocale = Addon.preferences.locale
+        Addon.preferences.locale = "frFR"
+        GetLocale = function() return "enUS" end
+        UnitGUID = function(unit) if unit == "npc" then return "Creature-0-6867-0-2-5595-EA631DAB78" end end
+        C_GossipInfo.GetText = function() return "What do ye need directions to?" end
+        local guard = Addon:GetCatalogDialogueSections(0, "gossip")
+        check(guard and guard[1].text == "Où voulez-vous aller ?",
+            "the Ironforge guard's Forever greeting wins over the identical shared source text")
+        Addon.preferences.locale = savedLocale
+        GetLocale = function() return "frFR" end
+        UnitGUID = function(unit) if unit == "npc" then return "Creature-0-1-0-4-274781-ABCD" end end
         C_GossipInfo.GetText = function() return "Native greeting without a matching translation" end
         Addon.preferences.features.questAutoOpen = true
         Addon:UpdateQuestInteraction()

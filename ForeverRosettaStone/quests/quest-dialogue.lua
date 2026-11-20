@@ -35,22 +35,25 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
     if not source then return end
     local translations = db:GetQuestDialogue(questID, npcID, target)
     if not translations then return end
-    local observed, matches = Normalize(native), {}
+    local observed, matches, foreverMatches = Normalize(native), {}, {}
     local sex = UnitSex("player")
     local name = UnitName("player")
     local firstName = ReadableString(name) and name:match("^(%S+)%s+%S")
     for _, entry in ipairs(source) do
         if entry.stage == stage and (not questID or entry.npcID == npcID)
             and (not entry.playerSex or entry.playerSex == sex) then
+            local candidates = entry.scope == "forever" and foreverMatches or matches
             local text = Render(entry.text, questID, client)
             if text and Normalize(text) == observed then
-                matches[entry.key] = {}
+                candidates[entry.key] = {}
             elseif firstName and entry.text:find("%$[Nn]%f[^%a]") then
                 text = Render(entry.text, questID, client, firstName)
-                if text and Normalize(text) == observed then matches[entry.key] = { firstName = firstName } end
+                if text and Normalize(text) == observed then candidates[entry.key] = { firstName = firstName } end
             end
         end
     end
+    -- Explicit Forever variants take precedence among exact native matches.
+    if next(foreverMatches) then matches = foreverMatches end
     local result
     for _, entry in ipairs(translations) do
         local match = matches[entry.key]

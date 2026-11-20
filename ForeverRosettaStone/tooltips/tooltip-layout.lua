@@ -84,7 +84,7 @@ function Addon:GetTooltipTranslationLabel()
 end
 
 function Addon:ShouldShowTranslationHeader()
-    return not self.preferences or self.preferences.translationHeader ~= false
+    return not self.preferences or (not self.preferences.translationOnly and self.preferences.translationHeader ~= false)
 end
 
 local function StyleTranslationLabel(label, title)
@@ -144,6 +144,249 @@ local function IsBlank(line)
     return canaccessallvalues(text) and (text == nil or text == "")
 end
 
+local function ForEachTranslatedLine(tip, append)
+    for index = 1, tip:NumLines() do
+        local leftLine, rightLine = tip:GetLeftLine(index), tip:GetRightLine(index)
+        local left, right = leftLine and leftLine:GetText(), rightLine and rightLine:GetText()
+        -- Companion FontStrings may retain restricted client text.
+        if canaccessallvalues(left) and canaccessallvalues(right) then
+            append(left, right, leftLine, rightLine)
+        end
+    end
+end
+
+local function CopyStackedLineStyle(target, original)
+    if target and original then
+        Addon:CopyQuestTextStyle(target, original)
+        target:SetTextScale(original:GetTextScale())
+    end
+end
+
+function Addon:AppendTooltipExtraRows(spec)
+    -- Talent rendering already reads the live rows and filters purchase requirements.
+    if spec.kind == "talent" then return end
+    local source, tip, data = spec.source, spec.tip, spec.data
+    if not canaccessallvalues(data) or type(data) ~= "table"
+        or not canaccessallvalues(data.lines) or type(data.lines) ~= "table" then return end
+    local lastNative = 0
+    for _, row in ipairs(data.lines) do
+        local index = row.lineIndex
+        if canaccessallvalues(index) and type(index) == "number" then
+            local money = Enum.TooltipDataLineType.SellPrice
+                and canaccessallvalues(row.type) and row.type == Enum.TooltipDataLineType.SellPrice
+            lastNative = math.max(lastNative, index + (money and 1 or 0))
+        end
+    end
+    if lastNative == 0 then return end
+    -- Some native rows have no display index, particularly on unit tooltips.
+    lastNative = math.max(lastNative, #data.lines)
+
+    local appended = false
+    for index = lastNative + 1, source:NumLines() do
+        local leftLine, rightLine = source:GetLeftLine(index), source:GetRightLine(index)
+        local left, right = leftLine and leftLine:GetText(), rightLine and rightLine:GetText()
+        local alreadyRendered = spec.renderedComparisonLines and spec.renderedComparisonLines[leftLine]
+        if not alreadyRendered and canaccessallvalues(left) and canaccessallvalues(right)
+            and ((left and left:find("%S")) or (right and right:find("%S"))) then
+            if not appended then tip:AddLine(" "); appended = true end
+            if right and right ~= "" then
+                tip:AddDoubleLine(left or "", right)
+                CopyStackedLineStyle(tip:GetRightLine(tip:NumLines()), rightLine)
+            else
+                tip:AddLine(left or "", 1, 1, 1, leftLine and leftLine:CanWordWrap())
+            end
+            CopyStackedLineStyle(tip:GetLeftLine(tip:NumLines()), leftLine)
+        end
+    end
+end
+
+function Addon:HasLiveTooltipWidgets(source, tip)
+    local inserted = source.insertedFrames
+    if canaccessallvalues(inserted) and type(inserted) == "table" and #inserted > 0 then return true end
+    -- Passive textures and their holder frames can decorate otherwise copyable rows.
+    if not source.GetChildren then return false end
+    for _, child in ipairs({ source:GetChildren() }) do
+        if child ~= source.NineSlice and child ~= source.CompareHeader and child ~= (tip and tip.stackedTranslationBlock)
+            and not child:IsForbidden() and child:IsShown()
+            and ((child.IsMouseEnabled and child:IsMouseEnabled())
+                or (child.IsMouseClickEnabled and child:IsMouseClickEnabled())
+                or (child.IsMouseMotionEnabled and child:IsMouseMotionEnabled())) then return true end
+    end
+    return false
+end
+
+local function GetOverlayPadding(source)
+    local right, bottom, left, top = source:GetPadding()
+    if canaccessallvalues(right, bottom, left, top) then
+        return { right or 0, bottom or 0, left or 0, top or 0 }
+    end
+end
+
+local function SamePadding(a, b)
+    return a and b and a[1] == b[1] and a[2] == b[2] and a[3] == b[3] and a[4] == b[4]
+end
+
+local function SetOverlayPadding(source, padding, refresh)
+    local previousRendering = Addon.tooltipRendering
+    Addon.tooltipRendering = source
+    source:SetPadding(unpack(padding))
+    if refresh and source:IsShown() then source:Show() end
+    Addon.tooltipRendering = previousRendering
+end
+
+-- Use the native tooltip as the single backdrop. Top padding moves its existing
+-- content down, while the addon owns and lays out the translated block.
+function Addon:RefreshStackedTranslationFirst(source, saved)
+    local current = GetOverlayPadding(source)
+    if not current then return end
+    local hasOurPadding = SamePadding(current, saved.appliedPadding)
+    local base = hasOurPadding and saved.basePadding or current
+    local nativeWidth = source:GetWidth() - (current[1] - base[1])
+    local block = saved.block
+    local padding = { base[1] + math.max(0, block:GetWidth() - nativeWidth),
+        base[2], base[3], base[4] + block:GetHeight() }
+    if not SamePadding(current, padding) then
+        saved.basePadding, saved.appliedPadding = base, padding
+        SetOverlayPadding(source, padding, true)
+    end
+end
+
+local function BuildStackedTranslationBlock(source, tip, showHeader)
+    local block = tip.stackedTranslationBlock
+    if not block then
+        local name = tip:GetName()
+        block = Addon:CreateCompanionTooltip(name and name .. "StackedBlock", source)
+        block:SetClampedToScreen(false)
+        block:SetFrameStrata(source:GetFrameStrata())
+        if block.NineSlice then block.NineSlice:SetAlpha(0) end
+        tip.stackedTranslationBlock = block
+    end
+    block:SetOwner(source, "ANCHOR_NONE")
+    block:SetFrameLevel(source:GetFrameLevel() + 1)
+    block:ClearAllPoints()
+    block:SetPoint("TOPLEFT", source, "TOPLEFT", 0, 0)
+    block:ClearLines()
+    if showHeader then
+        block:AddLine(Addon:GetTooltipTranslationLabel())
+        StyleTranslationLabel(block:GetLeftLine(1), source:GetLeftLine(1))
+    end
+    ForEachTranslatedLine(tip, function(left, right, leftLine, rightLine)
+        if right and right ~= "" then
+            block:AddDoubleLine(left or "", right)
+            CopyStackedLineStyle(block:GetRightLine(block:NumLines()), rightLine)
+        else
+            block:AddLine(left or "", 1, 1, 1, true)
+        end
+        CopyStackedLineStyle(block:GetLeftLine(block:NumLines()), leftLine)
+    end)
+    if block:NumLines() > (showHeader and 1 or 0) then
+        block:Show()
+        return block
+    end
+end
+
+local function RestoreTooltipOriginal(tip)
+    local original = tip.hiddenOriginal
+    if not original then return end
+    tip.hiddenOriginal = nil
+    if not original.source:IsForbidden() then
+        local alpha = original.source:GetAlpha()
+        if canaccessallvalues(alpha) and alpha == 0 then original.source:SetAlpha(original.alpha) end
+    end
+end
+
+local fadingTooltipRegions = setmetatable({}, { __mode = "k" })
+
+local function SuppressFadeRegion(region, alphas)
+    if not region.GetAlpha or not region.SetAlpha or (region.IsForbidden and region:IsForbidden()) then return end
+    local alpha = region:GetAlpha()
+    if canaccessallvalues(alpha) and alpha ~= 0 then
+        alphas[region] = alpha
+        region:SetAlpha(0)
+    end
+end
+
+local function SuppressTooltipFade(source)
+    if fadingTooltipRegions[source] then return end
+    local alphas = {}
+    fadingTooltipRegions[source] = alphas
+    -- The client can render a fading GameTooltip at its own opacity.
+    for _, region in ipairs({ source:GetRegions() }) do SuppressFadeRegion(region, alphas) end
+    for _, child in ipairs({ source:GetChildren() }) do SuppressFadeRegion(child, alphas) end
+end
+
+local function RestoreTooltipFadeRegions(source)
+    local alphas = fadingTooltipRegions[source]
+    if not alphas then return end
+    fadingTooltipRegions[source] = nil
+    for region, originalAlpha in pairs(alphas) do
+        if not region.IsForbidden or not region:IsForbidden() then
+            local alpha = region:GetAlpha()
+            if canaccessallvalues(alpha) and alpha == 0 then region:SetAlpha(originalAlpha) end
+        end
+    end
+end
+
+function Addon:UpdateReplacementFade(source, event)
+    if event == "hide" or event == "show" then
+        RestoreTooltipFadeRegions(source)
+        if event == "hide" then return end
+    end
+    local saved = self.stackedTooltips and self.stackedTooltips[source]
+    local tip = saved and saved.replacement and saved.owner
+    local original = tip and tip.hiddenOriginal
+    if not original then return end
+    if event == "start" then
+        original.fading = true
+        SuppressTooltipFade(source)
+        tip:SetAlpha(0)
+    elseif event == "show" and original.fading then
+        original.fading = nil
+        tip:SetAlpha(original.alpha)
+    elseif not original.fading then
+        return
+    end
+    local alpha = source:GetAlpha()
+    if canaccessallvalues(alpha) and alpha ~= 0 then source:SetAlpha(0) end
+end
+
+-- Keep the native frame alive for comparison and anchoring.
+local function ReplaceTooltipOriginal(source, tip, place)
+    local title = tip:NumLines() > 0 and tip:GetLeftLine(1)
+    local text = title and title:GetText()
+    if not canaccessallvalues(text) or not text or text == "" or not source:IsShown() then return false end
+    if tip.hiddenOriginal and tip.hiddenOriginal.source == source and tip.hiddenOriginal.fading then
+        return true
+    end
+    local alpha = source:GetAlpha()
+    if not canaccessallvalues(alpha) then return false end
+    if tip.hiddenOriginal and tip.hiddenOriginal.source ~= source then RestoreTooltipOriginal(tip) end
+    if place then
+        local point = source:GetPoint(1)
+        point = canaccessallvalues(point) and point or "TOPLEFT"
+        tip:SetScale(source:GetEffectiveScale() / tip:GetParent():GetEffectiveScale())
+        tip:ClearAllPoints()
+        tip:SetPoint(point, source, point, 0, 0)
+    end
+    -- Show also lays out newly written lines on an already visible GameTooltip.
+    if place or not tip:IsShown() then tip:Show() end
+    if not tip:IsShown() then return false end
+    if not tip.hiddenOriginal or alpha ~= 0 then
+        tip.hiddenOriginal = { source = source, alpha = alpha }
+        tip:SetAlpha(alpha)
+        source:SetAlpha(0)
+    end
+    return true
+end
+
+function Addon:RefreshStackedTooltip(source, saved)
+    if saved.replacement then
+        if not ReplaceTooltipOriginal(source, saved.owner) then self:ClearStackedTooltip(source) end
+    elseif saved.block then
+        self:RefreshStackedTranslationFirst(source, saved)
+    end
+end
+
 -- When supplied, owner limits cleanup to the companion that created the snapshot.
 function Addon:ClearStackedTooltip(source, nativeCleared, owner)
     if not source then return end
@@ -151,6 +394,18 @@ function Addon:ClearStackedTooltip(source, nativeCleared, owner)
     local saved = self.stackedTooltips and self.stackedTooltips[source]
     if not saved or (owner and saved.owner ~= owner) then return end
     self.stackedTooltips[source] = nil
+    if saved.replacement then
+        RestoreTooltipOriginal(saved.owner)
+        saved.owner:Hide()
+        return
+    end
+    if saved.block then
+        saved.block:Hide()
+        if not source:IsForbidden() and SamePadding(GetOverlayPadding(source), saved.appliedPadding) then
+            SetOverlayPadding(source, saved.basePadding, not nativeCleared)
+        end
+        return
+    end
     if source:IsForbidden() then return end
     for line, style in pairs(saved.styles) do RestoreLine(line, style) end
     if nativeCleared then return end
@@ -168,15 +423,45 @@ end
 function Addon:FillStackedTooltip(source, tip, key)
     if not source or not tip then return end
     local showHeader = self:ShouldShowTranslationHeader()
+    local onlyRequested = self.preferences and self.preferences.translationOnly
+    local preserveWidgets = onlyRequested and self:HasLiveTooltipWidgets(source, tip)
+    local translationOnly = onlyRequested and not preserveWidgets
+    local translationFirst = (preserveWidgets or (not translationOnly and self.preferences and self.preferences.stackedTranslationFirst))
+        and source:IsShown() and source.GetPadding and source.SetPadding and GetOverlayPadding(source) ~= nil
     self.stackedTooltips = self.stackedTooltips or {}
     local previous = self.stackedTooltips[source]
     if previous and previous.owner == tip and previous.key == key and previous.showHeader == showHeader
+        and previous.translationFirst == translationFirst and previous.translationOnly == translationOnly
         and previous.numLines == source:NumLines() then
-        tip:Hide()
+        self:RefreshStackedTooltip(source, previous)
+        if not previous.replacement then tip:Hide() end
         return
     end
-    self:ClearStackedTooltip(source)
-    local saved = { key = key, owner = tip, styles = {}, showHeader = showHeader }
+    if onlyRequested and previous and previous.replacement and previous.owner == tip then
+        if preserveWidgets then RestoreTooltipOriginal(tip) end
+        self.stackedTooltips[source] = nil
+    else
+        self:ClearStackedTooltip(source)
+    end
+    local saved = { key = key, owner = tip, styles = {}, showHeader = showHeader,
+        translationFirst = translationFirst, translationOnly = translationOnly, preserveWidgets = preserveWidgets }
+    if translationOnly then
+        if not ReplaceTooltipOriginal(source, tip, true) then tip:Hide(); return end
+        saved.replacement = true
+    end
+    if translationFirst then
+        saved.block = BuildStackedTranslationBlock(source, tip, showHeader)
+    end
+    if saved.replacement or saved.block then
+        saved.rows, saved.numLines = {}, source:NumLines()
+        for index = 1, saved.numLines do saved.rows[index] = {} end
+        self.stackedTooltips[source] = saved
+        if saved.block then
+            self:RefreshStackedTranslationFirst(source, saved)
+            tip:Hide()
+        end
+        return
+    end
     -- Blank lines left by an earlier translation are reused while they still end the tooltip.
     local blank = self.blankTooltipLines and self.blankTooltipLines[source]
     local cursor
@@ -195,8 +480,6 @@ function Addon:FillStackedTooltip(source, tip, key)
     self.stackedTooltips[source] = saved
     self.tooltipRendering = source
     local function Append(left, right, originalLeft, originalRight)
-        -- Companion FontStrings may retain restricted client text. Leave those rows native.
-        if not canaccessallvalues(left) or not canaccessallvalues(right) then return end
         local hasRight = right and right ~= ""
         local index = source:NumLines() + 1
         if cursor and cursor <= blank.last and not hasRight then
@@ -219,14 +502,8 @@ function Addon:FillStackedTooltip(source, tip, key)
         targetLeft, targetRight = source:GetLeftLine(index), source:GetRightLine(index)
         if targetLeft then saved.styles[targetLeft] = leftStyle or SnapshotLine(targetLeft) end
         if targetRight then saved.styles[targetRight] = rightStyle or SnapshotLine(targetRight) end
-        if targetLeft and originalLeft then
-            self:CopyQuestTextStyle(targetLeft, originalLeft)
-            targetLeft:SetTextScale(originalLeft:GetTextScale())
-        end
-        if targetRight and originalRight then
-            self:CopyQuestTextStyle(targetRight, originalRight)
-            targetRight:SetTextScale(originalRight:GetTextScale())
-        end
+        CopyStackedLineStyle(targetLeft, originalLeft)
+        CopyStackedLineStyle(targetRight, originalRight)
         return targetLeft
     end
     Append(" ")
@@ -234,10 +511,7 @@ function Addon:FillStackedTooltip(source, tip, key)
         local header = Append(self:GetTooltipTranslationLabel())
         StyleTranslationLabel(header, source:GetLeftLine(1))
     end
-    for index = 1, tip:NumLines() do
-        local left, right = tip:GetLeftLine(index), tip:GetRightLine(index)
-        Append(left and left:GetText(), right and right:GetText(), left, right)
-    end
+    ForEachTranslatedLine(tip, Append)
     saved.last, saved.numLines = source:NumLines(), source:NumLines()
     self.tooltipRendering = nil
     tip:Hide()
@@ -246,6 +520,49 @@ end
 
 function Addon:SetCompanionTooltipTitle(tip, text, ...)
     tip:SetText(text, ...)
+end
+
+local backdropPieces = {
+    "TopLeftCorner", "TopRightCorner", "BottomLeftCorner", "BottomRightCorner",
+    "TopEdge", "BottomEdge", "LeftEdge", "RightEdge", "Center",
+}
+
+local function CopyTooltipBackdrop(tip, source)
+    local target, native = tip.NineSlice, source.NineSlice
+    local alpha = (fadingTooltipRegions[source] or {})[native] or native:GetAlpha()
+    if canaccessallvalues(alpha) then target:SetAlpha(alpha) end
+    target:SetShown(native:IsShown())
+    local anchors = { [source] = tip, [native] = target }
+    for _, key in ipairs(backdropPieces) do
+        if native[key] and target[key] then anchors[native[key]] = target[key] end
+    end
+    for _, key in ipairs(backdropPieces) do
+        local from, to = native[key], target[key]
+        if from and to then
+            local atlas, texture = from:GetAtlas(), from:GetTexture()
+            if canaccessallvalues(atlas, texture) then
+                if atlas then to:SetAtlas(atlas) else to:SetTexture(texture) end
+                to:SetTexCoord(from:GetTexCoord())
+                if from.GetHorizTile then to:SetHorizTile(from:GetHorizTile()) end
+                if from.GetVertTile then to:SetVertTile(from:GetVertTile()) end
+            end
+            if from.GetBlendMode then to:SetBlendMode(from:GetBlendMode()) end
+            local pointCount = from:GetNumPoints()
+            if pointCount > 0 then
+                to:ClearAllPoints()
+                to:SetSize(from:GetSize())
+                for index = 1, pointCount do
+                    local point, relativeTo, relativePoint, x, y = from:GetPoint(index)
+                    if canaccessallvalues(point, relativeTo, relativePoint, x, y) then
+                        to:SetPoint(point, anchors[relativeTo] or target, relativePoint, x, y)
+                    end
+                end
+            end
+            to:SetAlpha(from:GetAlpha())
+            to:SetVertexColor(from:GetVertexColor())
+            to:SetShown(from:IsShown())
+        end
+    end
 end
 
 function Addon:CopyCompanionTooltipStyle(tip, source)
@@ -257,9 +574,18 @@ function Addon:CopyCompanionTooltipStyle(tip, source)
     if source.NineSlice and tip.NineSlice then
         tip.NineSlice:SetCenterColor(source.NineSlice:GetCenterColor())
         tip.NineSlice:SetBorderColor(source.NineSlice:GetBorderColor())
+        CopyTooltipBackdrop(tip, source)
     end
 
-    tip:SetAlpha(source:GetAlpha())
+    local original = tip.hiddenOriginal
+    local alpha = source:GetAlpha()
+    if canaccessallvalues(alpha) then
+        if original and original.source == source then
+            if original.fading then alpha = 0
+            elseif alpha == 0 then alpha = original.alpha end
+        end
+        tip:SetAlpha(alpha)
+    end
 end
 
 function Addon:GetTooltipGap(frame)
@@ -277,6 +603,7 @@ function Addon:CreateCompanionTooltip(name, parent, template)
     tip:SetFrameStrata("TOOLTIP")
     tip:EnableMouse(false)
     tip:HookScript("OnHide", function()
+        RestoreTooltipOriginal(tip)
         local owner = tip:GetOwner()
         local spec = self.nameTooltips and self.nameTooltips[owner]
         if spec and spec.tip == tip then return end
@@ -436,10 +763,16 @@ function Addon:PlaceCompanionTooltip(tip, source, occupied, centerVertically, al
     local desiredTop = centerVertically and (alignment.top + alignment.bottom + height) / 2
         or alignment.top + titleInset
     local alignedTop = math.max(height + gap, math.min(desiredTop, screenHeight - gap))
-    local side = policy and policy.GetSide(source) or "right"
-    local attempts = policy and policy.allowSideFallback and (side == "left" or side == "right") and 2 or 1
-    for attempt = 1, attempts do
-        if attempt == 2 then side = side == "left" and "right" or "left" end
+    local preferred = policy and policy.GetSide(source) or "right"
+    local sides = { preferred }
+    if policy and policy.allowSideFallback and (preferred == "left" or preferred == "right") then
+        sides[2] = preferred == "left" and "right" or "left"
+    end
+    if policy and policy.allowVerticalFallback then
+        sides[#sides + 1] = "bottom"
+        sides[#sides + 1] = "top"
+    end
+    for _, side in ipairs(sides) do
         local vertical = side == "top" or side == "bottom"
         local left = side == "left" and original.left - gap - width or original.right + gap
         if vertical then left = math.max(gap, math.min(original.left, screenWidth - width - gap)) end

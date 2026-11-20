@@ -265,6 +265,8 @@ def project_dialogue(kind, entity_id, entity, locale):
         if sex not in (None, 2, 3):
             raise ValueError(f'Invalid dialogue player sex: {kind}/{entity_id}/{key}')
         row = {'key': key, 'stage': context['stage'], 'text': text}
+        if context.get('scope') == 'forever':
+            row['scope'] = 'forever'
         if npc_id is not None:
             row['npcID'] = npc_id
         if sex is not None:

@@ -93,6 +93,8 @@ function Addon:LoadPreferences()
     if type(angle) ~= "number" or angle ~= angle or math.abs(angle) == math.huge then angle = 135 end
     self.preferences.minimapAngle = angle % 360
     if not tooltipModes[self.preferences.tooltipMode] then self.preferences.tooltipMode = "stacked" end
+    if type(self.preferences.translationOnly) ~= "boolean" then self.preferences.translationOnly = false end
+    if type(self.preferences.stackedTranslationFirst) ~= "boolean" then self.preferences.stackedTranslationFirst = false end
     if not tooltipCoverages[self.preferences.tooltipCoverage] then self.preferences.tooltipCoverage = "full" end
     if type(self.preferences.translationHeader) ~= "boolean" then self.preferences.translationHeader = true end
     if not npcTooltipPositions[self.preferences.npcTooltipPosition] then self.preferences.npcTooltipPosition = "top" end
@@ -154,6 +156,24 @@ function Addon:SetNpcTooltipPosition(position)
     end
 end
 
+function Addon:SetStackedTranslationFirst(enabled)
+    assert(type(enabled) == "boolean", "Stacked translation order setting must be boolean")
+    self.preferences.stackedTranslationFirst = enabled
+    self:RefreshSettingsUI()
+    if self.lifecycle == "ready" then
+        self:Run("change stacked tooltip order", function() self:RefreshFeatures() end)
+    end
+end
+
+function Addon:SetTranslationOnly(enabled)
+    assert(type(enabled) == "boolean", "Translation-only setting must be boolean")
+    self.preferences.translationOnly = enabled
+    self:RefreshSettingsUI()
+    if self.lifecycle == "ready" then
+        self:Run("change translation-only display", function() self:RefreshFeatures() end)
+    end
+end
+
 function Addon:SetTooltipCoverage(coverage)
     assert(tooltipCoverages[coverage], "Unknown tooltip coverage: " .. tostring(coverage))
     self.preferences.tooltipCoverage = coverage
@@ -206,6 +226,8 @@ function Addon:ResetFeatureSettings()
     self.preferences.locale = "enUS"
     self.preferences.npcTooltipPosition = "top"
     self.preferences.tooltipMode = "stacked"
+    self.preferences.translationOnly = false
+    self.preferences.stackedTranslationFirst = false
     self.preferences.tooltipCoverage = "full"
     self.preferences.translationHeader = true
     self.contentKey, self.tooltipKey = nil, nil
@@ -451,10 +473,30 @@ function Addon:CreateSettingsUI()
     RadioList("ForeverRosettaStoneSettingsLanguageListTemplate", 2, "locale", Text("language"), Text("languageHint"), "enUS", languages,
         function() return self:GetTargetLocale() end,
         function(value) self:SetTargetLocale(value) end)
-    Toggle(category, "tooltipMode", Text("separate"), false, "separate", "stacked",
+    local only = Register(category, "translationOnly", Text("translationOnly"), false,
+        function() return self.preferences.translationOnly end,
+        function(value) self:SetTranslationOnly(value) end)
+    local onlyInitializer = Settings.CreateCheckbox(category, only, Text("translationOnlyHint"))
+    local showOriginal = function() return not self.preferences.translationOnly end
+    local separate = Toggle(category, "tooltipMode", Text("separate"), false, "separate", "stacked",
         function() return self.preferences.tooltipMode end,
         function(value) self:SetTooltipMode(value) end,
         Text("separateHint"))
+    separate:SetParentInitializer(onlyInitializer, showOriginal)
+    local positions = {}
+    for index, position in ipairs({ "top", "left", "right", "bottom" }) do
+        positions[index] = { value = position, label = Text(position) }
+    end
+    RadioList("ForeverRosettaStoneSettingsPositionListTemplate", 4, "npcTooltipPosition", Text("npcPosition"), Text("npcPositionHint"), "top", positions,
+        function() return self.preferences.npcTooltipPosition end,
+        function(value) self:SetNpcTooltipPosition(value) end,
+        function() return showOriginal() and self.preferences.tooltipMode == "separate" end)
+    local order = Register(category, "stackedTranslationFirst", Text("stackedTranslationFirst"), false,
+        function() return self.preferences.stackedTranslationFirst end,
+        function(value) self:SetStackedTranslationFirst(value) end)
+    local orderInitializer = Settings.CreateCheckbox(category, order, Text("stackedTranslationFirstHint"))
+    orderInitializer:SetParentInitializer(separate, function() return showOriginal() and self.preferences.tooltipMode == "stacked" end)
+    orderInitializer:AddEvaluateStateCVar(only:GetVariable())
     Toggle(category, "tooltipCoverage", Text("fullText"), true, "full", "name",
         function() return self.preferences.tooltipCoverage end,
         function(value) self:SetTooltipCoverage(value) end,
@@ -463,14 +505,7 @@ function Addon:CreateSettingsUI()
         function() return self.preferences.translationHeader end,
         function(value) self:SetTranslationHeader(value) end)
     Settings.CreateCheckbox(category, header, Text("translationHeaderHint"))
-    local positions = {}
-    for index, position in ipairs({ "top", "left", "right", "bottom" }) do
-        positions[index] = { value = position, label = Text(position) }
-    end
-    RadioList("ForeverRosettaStoneSettingsPositionListTemplate", 4, "npcTooltipPosition", Text("npcPosition"), Text("npcPositionHint"), "top", positions,
-        function() return self.preferences.npcTooltipPosition end,
-        function(value) self:SetNpcTooltipPosition(value) end,
-        function() return self.preferences.tooltipMode == "separate" end)
+        :SetParentInitializer(onlyInitializer, showOriginal)
 
     local panel = CreateFrame("Frame", "ForeverRosettaStoneSettingsPanel", UIParent)
     panel:Hide()

@@ -92,6 +92,40 @@ GameTooltip.left, GameTooltip.top = 500, 500
 show()
 equal(spec.tip.points[1][2], GameTooltip, "NPC position follows the moved native tooltip")
 Addon:SetNpcTooltipPosition("top")
+do
+    local icon = GameTooltip:CreateTexture()
+    icon:Show()
+    Addon:SetTranslationOnly(true)
+    emit(GameTooltip, { type = Enum.TooltipDataType.Unit, guid = "Creature-0-1-0-1-658-000001" }, {})
+    show()
+    equal(GameTooltip:GetAlpha(), 0, "a decorative NPC icon does not bring back the original tooltip")
+    equal(spec.tip:GetLeftLine(1):GetText(), "Sten Stoutarm", "decorated NPC tooltips start with the translation")
+    local nativeTitle = GameTooltip:GetLeftLine(1)
+    nativeTitle:SetAlpha(0.75)
+    GameTooltip:FadeOut()
+    equal(GameTooltip:GetAlpha(), 0, "the native world-tooltip fade cannot reveal the original")
+    equal(spec.tip:GetAlpha(), 0, "the translated tooltip stops drawing at the end of the hover")
+    GameTooltip:SetAlpha(0.5)
+    equal(nativeTitle:GetAlpha(), 0, "the native title stays masked when the fade engine changes root opacity")
+    equal(icon:GetAlpha(), 0, "native decorations also stay masked during the fade")
+    GameTooltip:Fire("OnUpdate", 0.01)
+    equal(GameTooltip:GetAlpha(), 0, "subsequent native fade frames also stay invisible")
+    GameTooltip:Show()
+    equal(spec.tip:GetAlpha(), 1, "hovering the same NPC again restores the translation")
+    equal(GameTooltip:GetAlpha(), 0, "re-entering the hover still hides the original")
+    equal(nativeTitle:GetAlpha(), 0.75, "a new native Show restores the original region opacity")
+    GameTooltip:FadeOut()
+    Addon:ClearStackedTooltip(GameTooltip, true)
+    equal(nativeTitle:GetAlpha(), 0, "clearing the replacement before the native fade finishes keeps the native title masked")
+    GameTooltip:Hide()
+    equal(nativeTitle:GetAlpha(), 0.75, "native Hide restores the region opacity for the next tooltip")
+    equal(icon:GetAlpha(), 1, "native Hide restores the original decoration opacity")
+    equal(spec.tip:IsShown(), false, "native fade completion cleans up the translated tooltip")
+    equal(GameTooltip:GetAlpha(), 1, "native fade completion restores opacity for the next tooltip")
+    icon:Hide()
+    nativeTitle:SetAlpha(1)
+    Addon:SetTranslationOnly(false)
+end
 emit(GameTooltip, { type = Enum.TooltipDataType.Unit, guid = "Player-1-00000001", lines = {} })
 equal(VisibleTooltipLines(GameTooltip), 2, "players do not receive creature translations")
 emit(GameTooltip, { type = Enum.TooltipDataType.Unit, guid = { secret = true }, lines = {} })
@@ -111,6 +145,64 @@ emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 17783 }, { { type = 
 show()
 equal(spec.kind, "talent", "full tooltip preserves talent feature routing")
 equal(spec.tip.lines[2], "Passive", "shared talent labels translate without inferring entity prose")
+do
+    local getLocale, getClientLabel = GetLocale, Addon.GetClientLabel
+    GetLocale = function() return "enUS" end
+    Addon.GetClientLabel = function(_, key, locale) return ForeverRosettaStoneDB:GetGlobalStringByKey(key, locale) end
+    Addon:SetTargetLocale("frFR")
+    Addon:SetTranslationOnly(true)
+    prepare(UIParent, "GetTalent", { 134370 })
+    emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 17783 }, {})
+    local points, preceding = "Spend 15 more points in Holy Talents", "Requires all preceding talents"
+    local border = GameTooltip.NineSlice
+    local previousAtlas, previousAlpha = border.Center:GetAtlas(), border:GetAlpha()
+    border.Center:SetAtlas("talent-tooltip-center")
+    border:SetAlpha(0.8)
+    GameTooltip:AddLine("Rank 0/5")
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine("Passive")
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine(points, 1, 0, 0)
+    GameTooltip:AddLine(preceding, 1, 0, 0)
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddDoubleLine("Addon label", "Addon value")
+    show()
+    equal(GameTooltip:GetAlpha(), 0, "translation-only replaces the talent tooltip")
+    equal(spec.tip.NineSlice.Center:GetAtlas(), "talent-tooltip-center", "replacement inherits the native backdrop atlas")
+    equal(spec.tip.NineSlice:GetAlpha(), 0.8, "replacement inherits the native backdrop opacity")
+    equal(border.Center:GetAtlas(), "talent-tooltip-center", "replacement leaves the native backdrop untouched")
+    border.Center:SetAtlas(previousAtlas)
+    border:SetAlpha(previousAlpha)
+    equal(GameTooltip:GetLeftLine(7):GetText(), points, "the native tooltip retains its point requirement")
+    equal(GameTooltip:GetLeftLine(8):GetText(), preceding, "the native tooltip retains its preceding-talent requirement")
+    local extraRows = 0
+    for index = 1, spec.tip:NumLines() do
+        local text = spec.tip:GetLeftLine(index):GetText()
+        if text == "Addon label" then extraRows = extraRows + 1 end
+        equal((text == points or text == preceding) and text or nil, nil,
+            "translation-only omits the same purchase requirements as stacked")
+    end
+    equal(extraRows, 1, "the talent renderer retains an unrelated addon row once")
+    equal(spec.tip:GetLeftLine(3):GetText(), " ", "the rank and talent details retain their spacer")
+    equal(spec.tip:GetLeftLine(5):GetText(), " ", "a spacer preceding retained addon content remains")
+    equal(spec.tip:GetLeftLine(6):GetText(), "Addon label", "purchase-only spacers are removed before the addon content")
+    emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 17783 }, {})
+    GameTooltip:AddLine("Rank 0/5")
+    GameTooltip:AddLine(" ")
+    GameTooltip:AddLine(points, 1, 0, 0)
+    GameTooltip:AddLine(preceding, 1, 0, 0)
+    GameTooltip:AddLine(" ")
+    show()
+    equal(spec.tip:NumLines(), 3, "the translated talent retains only its title, rank and incomplete notice")
+    equal(spec.tip:GetLeftLine(3):GetText(), Addon:GetIncompleteTranslationNotice(),
+        "the incomplete notice immediately follows the talent details when prerequisites are removed")
+    GameTooltip:Hide()
+    Addon:SetTranslationOnly(false)
+    GetLocale = getLocale
+    Addon.GetClientLabel = getClientLabel
+    Addon:SetTargetLocale("enUS")
+end
 prepare(UIParent, "GetTalent", { 134370 })
 emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 17783, lines = {} })
 show()
@@ -970,6 +1062,11 @@ emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 133 }, { { type = 0,
 show()
 Addon:SetTooltipMode("stacked")
 equal(GameTooltip:GetHeight(), 120, "selecting Stacked immediately expands the visible native tooltip")
+Addon:SetStackedTranslationFirst(true)
+equal(Addon.stackedTooltips[GameTooltip].block:GetLeftLine(2):GetText(), "Fireball",
+    "spell tooltips use the shared translation-first setting")
+equal(VisibleTooltipLines(GameTooltip), 2, "the spell's original rows remain visible below the translation")
+Addon:SetStackedTranslationFirst(false)
 local stackedHeader = GameTooltip:GetLeftLine(4)
 equal(stackedHeader:GetJustifyH(), "LEFT", "translation header is left aligned")
 equal(select(2, stackedHeader:GetFont()) < select(2, GameTooltip:GetLeftLine(1):GetFont()), true,
@@ -1090,6 +1187,10 @@ for _, pair in ipairs({
             comparison:AddLine(" ")
             comparison:AddLine(ITEM_DELTA_DESCRIPTION, 1, 0.82, 0, true)
             comparison:AddLine("|cff00ff00+35|r Armure", 1, 1, 1)
+            if Addon.preferences.translationOnly then
+                comparison:AddDoubleLine("Addon label", "Addon value")
+                comparison:CreateTexture():Show()
+            end
             return true
         end
         TooltipComparisonManager:SetItemTooltip(true)
@@ -1110,6 +1211,59 @@ for _, pair in ipairs({
             "native comparison rebuilds retain their translated height in the same frame")
         context.flushTimers()
     end
+    Addon:SetStackedTranslationFirst(true)
+    GameTooltip_ShowCompareItem(primary)
+    local original = Addon.stackedTooltips[primary]
+    local equipped = Addon.stackedTooltips[comparison]
+    equal(original and original.block and original.block:IsShown(), true, "item translation is shown first")
+    equal(equipped and equipped.block and equipped.block:IsShown(), true, "equipped item translation is shown first")
+    equal(comparison:GetLeftLine(3):GetText(), ITEM_DELTA_DESCRIPTION,
+        "translation-first preserves the original stat summary")
+    local padding = select(4, comparison:GetPadding())
+    GameTooltip_ShowCompareItem(primary)
+    equal(select(4, comparison:GetPadding()), padding, "comparison rebuilds reserve space for a single translation")
+    Addon:SetStackedTranslationFirst(false)
+    equal(select(4, comparison:GetPadding()), 0, "leaving translation-first removes extra top padding")
+    for _, mode in ipairs({ "stacked", "separate" }) do
+        Addon:SetTooltipMode(mode)
+        Addon:SetTranslationOnly(true)
+        GameTooltip_ShowCompareItem(primary)
+        local replacement = Addon.stackedTooltips[comparison].owner
+        equal(primary:GetAlpha(), 0, "the hovered item's original is hidden in " .. mode)
+        equal(comparison:GetAlpha(), 0, "the equipped item's original is hidden in " .. mode)
+        equal(select(2, replacement:GetPoint(1)), comparison, "the translation takes the equipped tooltip's slot")
+        equal(replacement:GetLeftLine(1):GetText():find("Traduit en", 1, true), nil,
+            "the translated comparison starts without an FRS header")
+        equal(replacement:GetLeftLine(replacement:NumLines() - 2):GetText(), "|cff00ff00+35|r Armor",
+            "translation-only keeps the translated stat differences")
+        equal(replacement:GetLeftLine(replacement:NumLines()):GetText(), "Addon label",
+            "decorated addon data remains below the translated comparison")
+        equal(replacement:GetRightLine(replacement:NumLines()):GetText(), "Addon value",
+            "the addon row keeps both columns through the comparison renderer")
+        local mainTip = Addon.stackedTooltips[primary].owner
+        local mainLeft, mainTop = mainTip.left, mainTip.top
+        local compareLeft, compareTop = comparison.left, comparison.top
+        mainTip.left, mainTip.top = 700, 600
+        comparison.left, comparison.top = 640, 600
+        Addon:LayoutNameTooltipGroup(Addon.nameTooltips[primary].group)
+        local point, anchor, relative, gap = replacement:GetPoint(1)
+        equal(anchor, mainTip, "the comparison positions against the visible translation")
+        equal(point, "TOPRIGHT", "the left comparison anchors from its right edge")
+        equal(relative, "TOPLEFT", "the left comparison sits outside the primary tooltip")
+        equal(gap < 0, true, "comparison translations use a non-overlapping gap")
+        comparison.left = primary:GetLeft() + 60
+        Addon:LayoutNameTooltipGroup(Addon.nameTooltips[primary].group)
+        point, anchor, relative, gap = replacement:GetPoint(1)
+        equal(anchor, mainTip, "the right comparison also positions against the visible translation")
+        equal(point, "TOPLEFT", "the right comparison anchors from its left edge")
+        equal(relative, "TOPRIGHT", "the right comparison sits outside the primary tooltip")
+        equal(gap > 0, true, "right-side comparison translations keep a non-overlapping gap")
+        mainTip.left, mainTip.top = mainLeft, mainTop
+        comparison.left, comparison.top = compareLeft, compareTop
+        Addon:SetTranslationOnly(false)
+        equal(comparison:GetAlpha(), 1, "disabling translation-only restores the original comparison")
+    end
+    Addon:SetTooltipMode("stacked")
     TooltipComparisonManager.tooltip, TooltipComparisonManager.buildItemTooltip = nil, nil
     primary.shoppingTooltips = previousShoppingTooltips
     comparison:Hide()
@@ -1244,9 +1398,63 @@ Addon:SetTooltipMode("separate")
 GameTooltip:Show()
 equal(VisibleTooltipLines(GameTooltip), 4, "Separate keeps the map tooltip's native rows")
 equal(Addon.tooltip:IsShown(), true, "Separate restores the companion immediately on native Show")
+do
+    local show = Addon.tooltip.Show
+    local getProgressText = Addon.GetProgressText
+    local progress = ""
+    function Addon:GetProgressText(id)
+        if id == mapPin:GetQuestID() then return progress end
+        return getProgressText(self, id)
+    end
+    local layoutPasses, renderedRows = 0
+    function Addon.tooltip:Show()
+        layoutPasses = layoutPasses + 1
+        renderedRows = VisibleTooltipLines(self)
+        show(self)
+    end
+    Addon:SetTranslationOnly(true)
+    local initialLayoutPasses = layoutPasses
+    equal(renderedRows, 1, "translation-only lays out the map quest title")
+    equal(GameTooltip:GetAlpha(), 0, "translation-only hides the original map quest rendering")
+    progress = "Stone of Relu: 0/1"
+    Addon:ShowTranslationTooltip()
+    equal(renderedRows, 2, "a new objective row is laid out while the translated quest tooltip is already shown")
+    equal(Addon.tooltip:GetLeftLine(2):GetText(), "- Stone of Relu: 0/1", "the objective is rendered below its title")
+    equal(layoutPasses, initialLayoutPasses + 1, "updated map quest progress relayouts the translated tooltip once")
+    Addon:ShowTranslationTooltip()
+    equal(layoutPasses, initialLayoutPasses + 1, "polling unchanged objectives keeps the cached layout")
+    Addon.tooltip.Show, Addon.GetProgressText = show, getProgressText
+    Addon:SetTranslationOnly(false)
+end
 Addon:SetTooltipMode("stacked")
 GameTooltip:Hide()
 equal(Addon.stackedTooltips[GameTooltip], nil, "leaving a map pin clears the embedded translation")
+do
+    local questList = QuestMapFrame.QuestsFrame.ScrollFrame
+    questList:Show()
+    local row = CreateFrame("Button", nil, questList)
+    local owner = CreateFrame("Button", nil, row)
+    Addon:SetTranslationOnly(true)
+    for _, quest in ipairs({ { 943, "The Absent Minded Prospector" }, { 399, "Humble Beginnings" } }) do
+        row.info = { questID = quest[1] }
+        GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
+        GameTooltip:ClearLines()
+        GameTooltip:SetText("Native quest title")
+        GameTooltip:AddLine("Native controller controls")
+        GameTooltip:Show()
+        equal(GameTooltip:GetAlpha(), 0, "quest-list navigation hides the original before the next tick")
+        equal(Addon.tooltip:GetLeftLine(1):GetText(), quest[2], "the pooled quest row resolves its current translated title")
+        equal(GameTooltip:GetLeftLine(2):GetText(), "Native controller controls", "the native controller hints stay intact")
+    end
+    row.info.questID = 999999999
+    GameTooltip:ClearLines()
+    GameTooltip:SetText("Untranslated quest")
+    GameTooltip:Show()
+    equal(GameTooltip:GetAlpha(), 1, "a quest without a translation keeps the original visible")
+    equal(Addon.tooltip:IsShown(), false, "a quest without a translation clears the old replacement")
+    Addon:SetTranslationOnly(false)
+    GameTooltip:Hide()
+end
 GameTooltip.accurateLines, Addon.tooltip.accurateLines = accurateNativeLines, accurateQuestLines
 WorldMapFrame:Hide()
 Addon:SetTooltipMode("separate")

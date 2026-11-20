@@ -74,8 +74,8 @@ ROW_HOOKS = (
      'ReplayRowContext = {line = nameLine, role = "title"}\n    if subtext then tip:AddDoubleLine(titleText, subtext,'),
     ('for _, line in ipairs(lines) do\n        if canaccessallvalues(line.type, line.leftText, line.rightText)',
      'for _, line in ipairs(lines) do\n        ReplayRowContext = {line = line, role = "row"}\n        if canaccessallvalues(line.type, line.leftText, line.rightText)'),
-    ('IsTalentPurchaseRequirement(line, purchaseFormats)',
-     'ReplayPurchaseGate(line, IsTalentPurchaseRequirement(line, purchaseFormats))'),
+    ('IsTalentPurchaseRequirement(line, formats) then',
+     'ReplayPurchaseGate(line, IsTalentPurchaseRequirement(line, formats)) then'),
     ('local requirementIncomplete = {}',
      'ReplaySkippedRows = liveSkipped\n    local requirementIncomplete = {}'),
 )

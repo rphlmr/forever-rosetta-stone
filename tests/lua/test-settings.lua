@@ -241,22 +241,36 @@ for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
     equal(available[locale] ~= nil, locale ~= "enGB" and locale:sub(1, 2) ~= GetLocale():sub(1, 2),
         "native language page exposes supported translations: " .. locale)
 end
-local displayControl, coverageControl
-for _, initializer in ipairs(category.initializers) do
-    if initializer.setting == settings.tooltipModeEnabled then displayControl = initializer end
+local displayControl, coverageControl, orderControl, displayIndex, positionIndex
+for index, initializer in ipairs(category.initializers) do
+    if initializer.setting == settings.tooltipModeEnabled then displayControl, displayIndex = initializer, index end
     if initializer.setting == settings.tooltipCoverageEnabled then coverageControl = initializer end
+    if initializer.setting == settings.stackedTranslationFirst then orderControl = initializer end
+    if initializer.data and initializer.data.list == "npcTooltipPosition" then positionIndex = index end
 end
+equal(positionIndex, displayIndex + 1, "NPC position is immediately below the separate-tooltip control")
 equal(displayControl.kind, "checkbox", "two-value display choice uses a native checkbox")
 equal(coverageControl.kind, "checkbox", "two-value coverage choice uses a native checkbox")
 local savedPosition = Addon.preferences.npcTooltipPosition
 settings.tooltipModeEnabled:SetValue(false)
 equal(Addon.preferences.tooltipMode, "stacked", "unchecked separate tooltip selects stacked")
 equal(positionList.buttons[4]:IsEnabled(), false, "stacked disables the NPC position radios")
+equal(orderControl.displayedEnabled, true, "stacked enables translation-first")
+settings.translationOnly:SetValue(true)
+equal(orderControl.displayedEnabled, false, "translation-only immediately disables translation-first")
+settings.translationOnly:SetValue(false)
+equal(orderControl.displayedEnabled, true, "leaving translation-only immediately enables translation-first")
 positionList.buttons[4]:Fire("OnClick")
 equal(Addon.preferences.npcTooltipPosition, savedPosition, "disabled position radios keep the chosen position")
 settings.tooltipModeEnabled:SetValue(true)
 equal(Addon.preferences.tooltipMode, "separate", "checked separate tooltip selects separate")
 equal(positionList.buttons[4]:IsEnabled(), true, "separate enables the NPC position radios")
+equal(orderControl.displayedEnabled, false, "separate tooltips disable translation-first")
+settings.translationOnly:SetValue(true)
+equal(positionList.buttons[4]:IsEnabled(), false, "translation-only uses the original position")
+equal(ForeverRosettaStoneSettings.translationOnly, true, "translation-only is saved")
+settings.translationOnly:SetValueToDefault()
+equal(positionList.buttons[4]:IsEnabled(), true, "the stored separate position is available again")
 settings.tooltipCoverageEnabled:SetValue(false)
 equal(Addon.preferences.tooltipCoverage, "name", "unchecked full text selects name only")
 settings.tooltipCoverageEnabled:SetValueToDefault()
@@ -286,6 +300,13 @@ Addon:OpenSettings()
 equal(panel:IsVisible(), true, "default page displays the live preview")
 do
     local preview = panel.TooltipPreview
+    equal(settings.stackedTranslationFirst:GetValue(), false, "stacked item tooltips show the original first by default")
+    settings.stackedTranslationFirst:SetValue(true)
+    equal(ForeverRosettaStoneSettings.stackedTranslationFirst, true, "tooltip order saves in preferences")
+    Addon:LoadPreferences()
+    equal(settings.stackedTranslationFirst:GetValue(), true, "tooltip order survives loading preferences")
+    settings.stackedTranslationFirst:SetValueToDefault()
+    equal(settings.stackedTranslationFirst:GetValue(), false, "native Defaults restores the original-first order")
     local function Rendered()
         return (Addon.stackedTooltips and Addon.stackedTooltips[preview.native] ~= nil) or preview.translated:IsShown()
     end

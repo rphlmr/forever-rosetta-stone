@@ -4,12 +4,21 @@
 
 ### Added
 
+- **Show translation only** puts the translated tooltip in the original position and hides the translation header. Tooltips without a translation stay in the game's language.
+
+  ![Show translation only enabled with a French item tooltip in the live preview](https://raw.githubusercontent.com/rphlmr/forever-rosetta-stone/main/docs/media/changelog/tooltip-translation-only.png)
+
+- **Translation first** puts the translation above the original when both texts share a tooltip.
+
+  ![Translation first enabled with French above English in the same item tooltip](https://raw.githubusercontent.com/rphlmr/forever-rosetta-stone/main/docs/media/changelog/tooltip-translation-first.png)
+
 - Read translated NPC greetings and conversation options, as well as quest offers, in-progress dialogue, and turn-in text beside the original window. Dialogue uses the appropriate wording for your character where variants are available.
 - Choose separately whether NPC greetings, quest progress, and turn-in translations open automatically. Quest details and offers have their own setting, and you can still open a translation from the Rosetta Stone bookmark.
 - When a quest, NPC dialogue, or book translation is missing, the panel explains what is missing and lets you copy a report to share on GitHub.
 
 ### Changed
 
+- The NPC tooltip position setting now sits directly below **Separate tooltip**.
 - Quest, NPC dialogue, and book translations share a reading layout with aligned parchment and scrollbars. On a gamepad, use LT and RT to move focus between panels, B to close the focused translation, and the bookmark to reopen it. The translated book follows the page you turn in the original.
 - Use the Options button on quest, dialogue, and book translations to report an issue, including when a translation is missing.
 - Item reports from the picker include available transmogrification data for your own equipment and for inspected players.
@@ -19,10 +28,14 @@
 - Fixed the translation panel closing when turning pages in books.
 - Guard dialogue keeps the game's option order and spacing. Missing option translations are identified, and Ironforge guards show the correct directions prompt.
 - Fixed quest and dialogue tooltips briefly appearing as their translation panel opens.
+- Quest tooltips on the map and in the quest list switch to the translation as soon as the tooltip opens, reducing flicker during gamepad navigation.
+- Translated equipment comparisons stay beside the item tooltip and retain supported rows and controls added by other addons.
+- The translated section of talent tooltips omits purchase requirements and their extra blank lines.
 - Fixed untranslated appearance names under the transmogrification heading for supported equipped and inspected items.
 
 ### Translations
 
+- Updated Vampiric Embrace in all 18 bundled languages for build 70959. The tooltip shows both the group healing and the caster's increased healing with the game's current values.
 - Added Ironforge guard directions, including the bank, and support for the shared travel option at flight masters.
 - Added equipment enchantment translations, including armor kits, weapon oils, poisons, sharpening stones, and fishing lures, in the 18 bundled languages where wording is available. Temporary effects retain the remaining time shown by the game.
 - Added 20,209 dialogue entries across 4,493 quests and 1,565 NPCs in all 18 bundled languages.

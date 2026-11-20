@@ -78,14 +78,17 @@ local function ReadText(text)
     return canaccessallvalues(text) and type(text) == "string"
 end
 
-local function GetSummaryLines(source)
+local function GetSummaryLines(source, excludeOtherRows)
     local rows, summary = {}, false
     for index = 1, source:NumLines() do
         local line = source:GetLeftLine(index)
         local text = line and line:GetText()
         if ReadText(text) then
-            if text == ITEM_DELTA_DESCRIPTION or text == ITEM_DELTA_MULTIPLE_COMPARISON_DESCRIPTION then summary = true end
-            if summary then rows[#rows + 1] = { line = line, text = text } end
+            local heading = text == ITEM_DELTA_DESCRIPTION or text == ITEM_DELTA_MULTIPLE_COMPARISON_DESCRIPTION
+            if heading then summary = true end
+            if summary and (not excludeOtherRows or heading or text:gsub("|c%x%x%x%x%x%x%x%x", ""):match("^%s*[+-]")) then
+                rows[#rows + 1] = { line = line, text = text }
+            end
         end
     end
     return rows
@@ -156,7 +159,8 @@ function Addon:FillTooltipComparison(spec)
     if tip.CompareHeader then
         local header = source.CompareHeader
         local shown = header and header:IsShown()
-        tip.CompareHeader:SetShown(shown and self:GetTooltipDisplayMode(source) == "separate")
+        tip.CompareHeader:SetShown(shown
+            and (self.preferences.translationOnly or self:GetTooltipDisplayMode(source) == "separate"))
         if shown and header.Label and tip.CompareHeader.Label then
             local text = header.Label:GetText()
             tip.CompareHeader.Label:SetText(self:TranslateComparisonText(text) or text)
@@ -165,8 +169,13 @@ function Addon:FillTooltipComparison(spec)
             tip.CompareHeader:SetWidth(tip.CompareHeader.Label:GetWidth() + 30)
         end
     end
+    spec.renderedComparisonLines = nil
     if spec.kind ~= "item" or self.preferences.tooltipCoverage == "name" then return end
-    for index, row in ipairs(GetSummaryLines(source)) do
+    for index, row in ipairs(GetSummaryLines(source, self.preferences.translationOnly)) do
+        if self.preferences.translationOnly then
+            spec.renderedComparisonLines = spec.renderedComparisonLines or {}
+            spec.renderedComparisonLines[row.line] = true
+        end
         if index == 1 then tip:AddLine(" ") end
         local red, green, blue = row.line:GetTextColor()
         tip:AddLine(self:TranslateComparisonText(row.text) or row.text, red, green, blue, true)

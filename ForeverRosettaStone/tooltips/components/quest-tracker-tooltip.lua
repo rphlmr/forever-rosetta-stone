@@ -66,7 +66,7 @@ function Addon:UpdateQuestTrackerTooltip()
         self.questTrackerTooltipKey = key
     end
 
-    if self.preferences.tooltipMode == "stacked" and native then
+    if native and (self.preferences.tooltipMode == "stacked" or self.preferences.translationOnly) then
         self:FillStackedTooltip(GameTooltip, tip, "tracker:" .. key .. ":" .. self.preferences.tooltipCoverage)
         return
     end
