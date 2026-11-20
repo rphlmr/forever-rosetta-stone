@@ -138,6 +138,7 @@ local function FillSpellTooltip(self, tip, button, spellID)
     if not data then native:Hide(); return false end
     -- The transparent source stays shown: the translated tooltip it owns hides with it.
     self:FillNameTooltip({ source = native, tip = tip, kind = "spell", id = spellID, name = name, data = data })
+    tip:SetAlpha(1)
     self.rewardTooltipSpell = spellID
     tip:SetScale(button:GetEffectiveScale() / UIParent:GetEffectiveScale())
     if tip.CompareHeader then tip.CompareHeader:Hide() end

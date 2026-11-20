@@ -1373,6 +1373,31 @@ local function IsTalentPurchaseRequirement(line, formats)
     return false
 end
 
+local function IsBlankTalentText(text)
+    return canaccessallvalues(text) and (text == nil
+        or type(text) == "string" and not text:gsub("|n", " "):gsub("\194\160", " "):gsub("\226\128\175", " "):find("%S"))
+end
+
+local function SkipTalentPurchaseRows(lines, formats, descriptions, skipped)
+    local firstBlank, lastContent, endsWithRequirement
+    for index, line in ipairs(lines) do
+        if not skipped[line] then
+            if not descriptions[line] and IsTalentPurchaseRequirement(line, formats) then
+                for cursor = firstBlank or index, index do skipped[lines[cursor]] = true end
+                firstBlank, endsWithRequirement = nil, true
+            elseif not descriptions[line] and IsBlankTalentText(line.leftText) and IsBlankTalentText(line.rightText) then
+                firstBlank = firstBlank or index
+            else
+                firstBlank, lastContent, endsWithRequirement = nil, line, false
+            end
+        end
+    end
+    if endsWithRequirement then
+        for index = firstBlank or #lines + 1, #lines do skipped[lines[index]] = true end
+        return lastContent
+    end
+end
+
 local function IsMountRidingRequirement(line)
     if not Readable(line.leftText, "string")
         or Readable(line.rightText, "string") and line.rightText:find("%S") then return false end
@@ -1730,6 +1755,7 @@ function Addon:FillEnglishTooltip(spec)
         for line, text in pairs(requirements) do liveDescriptions[line] = text end
         requirementIncomplete = requirementIncomplete or {}
     end
+    local trimTalentRow = spec.kind == "talent" and SkipTalentPurchaseRows(lines, purchaseFormats, liveDescriptions, liveSkipped)
     local subtext
     if nameLine and Readable(nameLine.rightText, "string") and nameLine.rightText ~= "" then
         if aura then
@@ -1764,7 +1790,6 @@ function Addon:FillEnglishTooltip(spec)
     end
     for _, line in ipairs(lines) do
         if canaccessallvalues(line.type, line.leftText, line.rightText)
-            and not (spec.kind == "talent" and not liveDescriptions[line] and IsTalentPurchaseRequirement(line, purchaseFormats))
             and not (mount and not liveDescriptions[line] and IsMountRidingRequirement(line))
             and not liveSkipped[line]
             and not (IsLineType(line, "ItemName") and line == nameLine)
@@ -1816,6 +1841,7 @@ function Addon:FillEnglishTooltip(spec)
                 right = line.rightText
                 if HasTranslatableText(right) then incomplete = true end
             end
+            if left and line == trimTalentRow then left = left:gsub("[ \t\r\n]+$", "") end
             if left or right then
                 left = PreserveInlineLineColors(line.leftText, left)
                 right = PreserveInlineLineColors(line.rightText, right)

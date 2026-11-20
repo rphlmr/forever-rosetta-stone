@@ -1,6 +1,7 @@
 """Emulate WoW metadata and native encoding using QuestieDB's pinned Blizzard CBOR mock."""
 
 import base64
+import hashlib
 import json
 import re
 import zlib
@@ -21,7 +22,7 @@ class DatabaseMetadata(dict):
         self.pack_root = pack_root
 
 
-def read_metadata(path, *, include_pages=True):
+def read_metadata(path, *, include_pages=False):
     metadata = DatabaseMetadata(path.parent.parent / 'ForeverRosettaStone_Data')
 
     for line in path.read_bytes().splitlines():
@@ -58,7 +59,7 @@ def read_metadata(path, *, include_pages=True):
     return metadata
 
 
-def install_metadata(lua, metadata):
+def install_metadata(lua, metadata, *, compiled_packs=None):
     codec = lua.execute((ROOT / 'tools/build/encoding/blizzard-cbor.lua').read_bytes())
     counts = {'base64': 0, 'inflate': 0, 'cbor': 0, 'decoded_bytes': 0, 'packs': []}
     loaded = set()
@@ -78,7 +79,18 @@ def install_metadata(lua, metadata):
         if not path.is_file():
             return lua.table_from([False, b'MISSING'])
 
-        lua.execute(path.read_bytes())
+        source = path.read_bytes()
+        if compiled_packs is None:
+            lua.execute(source)
+        else:
+            # Share compiled code only. Each replay registers its own Lua tables.
+            digest = hashlib.sha256(source).digest()
+            cached = compiled_packs.get(path)
+            if cached is None or cached[0] != digest:
+                compile_pack = lua.eval(b'function(src, name) return string.dump(assert(loadstring(src, name))) end')
+                cached = digest, compile_pack(source, b'@' + name + b'/data.lua')
+                compiled_packs[path] = cached
+            lua.execute(cached[1], mode='b')
         loaded.add(name)
         counts['packs'].append(name)
         return lua.table_from([True])

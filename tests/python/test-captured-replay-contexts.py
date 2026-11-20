@@ -54,17 +54,44 @@ class CapturedReplayContextTests(unittest.TestCase):
                     and len(gaps.clean(observation['data'])['lines']) == 3 and len(observation.get('visible') or []) == 8:
                 cls.preview = observation
 
+        cls.outcomes = None
+
+    @classmethod
+    def load_matrix_results(cls):
+        if cls.outcomes is not None:
+            return
+        fixtures = ROOT / 'tests/fixtures/tooltip-campaign'
+        captures = (cls.windfury, cls.player, cls.cases['spell', 459611], cls.cases['item', 5863])
+        keys = {matrix.fingerprint(observation) for observation in captures}
+        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
+            report = matrix.run(fixtures, Path(directory) / 'report', case_keys=keys)
+            cls.events = triage(report, fixtures)['events']
+        cls.outcomes = {case['key']: case for case in report['cases']}
+        cls.failures = report['failures']
+
+    def matrix_case(self, observation):
+        self.load_matrix_results()
+        key = matrix.fingerprint(observation)
+        paths = self.outcomes[key]['byPath']
+        self.assertEqual(sum(sum(statuses.values()) for statuses in paths.values()), 90)
+        return paths, [failure for failure in self.failures if failure['case'] == key]
+
     def load(self, name):
         capture = restore(json.loads((ROOT / 'tests/fixtures/tooltip-campaign' / name).read_text()))
         return dict(locale=capture['source']['locale'], data=gaps.clean(capture['data']),
                     visible=matrix.visible(capture.get('visible', {})), processing=capture.get('processingInfo'),
                     globals={}, calls={}, kind='spell', id=capture['data']['id'])
 
-    def render(self, observation, target, source=None, data=None, visible=None):
+    def new_replay(self, observation, source=None):
         replay = gaps.Replay(source or observation['locale'],
             {key: value for key, value in observation['globals'].items() if value != '<nil>'} if not source else {},
             tooltip_types=observation.get('types'))
         replay.install_calls(observation['calls'], observation.get('unit'))
+        return replay
+
+    def render(self, observation, target, source=None, data=None, visible=None, *, replay=None):
+        if replay is None:
+            replay = self.new_replay(observation, source)
         kind = 'spell' if observation['kind'] == 'aura' else observation['kind']
         missing, error, _ = replay.run(kind, observation['id'], data or gaps.clean(observation['data']), target,
             gaps.clean(observation.get('processing')), observation.get('visible') if visible is None else visible,
@@ -169,24 +196,22 @@ class CapturedReplayContextTests(unittest.TestCase):
     def test_actual_cosmetic_known_requirement_uses_owned_item_class_in_every_direction(self):
         observation = self.cases['item', 280404]
         original = copy.deepcopy(observation)
+        native = self.new_replay(observation)
         for source in sorted(matrix.OFFICIAL_LOCALES - {observation['locale']}):
             with self.subTest(derivedSource=source):
-                replay, rows = self.render(observation, source)
+                replay, rows = self.render(observation, source, replay=native)
                 data, visible = self.derived(replay, observation, rows)
+                derived = self.new_replay(observation, source)
                 for target in sorted(matrix.OFFICIAL_LOCALES - {source}):
-                    self.render(observation, target, source, data, visible)
+                    self.render(observation, target, source, data, visible, replay=derived)
         self.assertEqual(original, observation)
 
     def test_actual_windfury_capture_round_trips_with_the_fixed_extra_attack(self):
-        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
-            report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report',
-                                case_keys={matrix.fingerprint(self.windfury)})
-            classified = triage(report, ROOT / 'tests/fixtures/tooltip-campaign')
-        # The current French template spells out the fixed extra attack. The original
-        # capture should round-trip without a word/digit difference to classify.
-        self.assertEqual(report['selectedCases'], 1)
-        self.assertEqual(report['counts'], {'passed': 90})
-        self.assertEqual(classified['events'], [])
+        paths, _ = self.matrix_case(self.windfury)
+        for statuses in paths.values():
+            self.assertEqual(set(statuses), {'passed'})
+        key = matrix.fingerprint(self.windfury)
+        self.assertFalse(any(event['case'] == key for event in self.events))
 
     def test_actual_rank_preview_repeated_passive_row_keeps_its_captured_origin(self):
         observation = self.preview
@@ -237,28 +262,24 @@ class CapturedReplayContextTests(unittest.TestCase):
 
     def test_actual_player_level_race_returns_from_every_successfully_generated_locale(self):
         original = copy.deepcopy(self.player)
-        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
-            report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report',
-                                case_keys={matrix.fingerprint(self.player)})
-        self.assertEqual(sum(report['counts'].values()), 90)
-        self.assertFalse(any(event['status'] in ('derived_incomplete', 'derived_error') for event in report['failures']))
-        returns = report['byPath']['return_to_native']
-        forwards = report['byPath']['native_to_target']
+        paths, failures = self.matrix_case(self.player)
+        self.assertFalse(any(event['status'] in ('derived_incomplete', 'derived_error') for event in failures))
+        returns = paths['return_to_native']
+        forwards = paths['native_to_target']
         self.assertEqual(returns.get('passed', 0) + returns.get('text_difference_values_preserved', 0),
                          forwards.get('passed', 0) + forwards.get('text_difference_values_preserved', 0))
         self.assertFalse(any(event['path'] == 'return_to_native' and event['status'] != 'blocked_source_generation'
-                             for event in report['failures']))
-        self.assertEqual(sum(report['byPath']['return_to_native'].values()), 9)
+                             for event in failures))
+        self.assertEqual(sum(returns.values()), 9)
         self.assertEqual(self.player, original)
 
     def test_generated_counter_proves_the_native_value_was_already_unresolved(self):
         observation = self.cases['spell', 459611]
         original = copy.deepcopy(observation)
-        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
-            report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report',
-                                case_keys={matrix.fingerprint(observation)})
-            classified = triage(report, ROOT / 'tests/fixtures/tooltip-campaign')
-        unresolved = [event for event in classified['events'] if event['category'] == 'inherited_unresolved_client_value']
+        self.matrix_case(observation)
+        key = matrix.fingerprint(observation)
+        unresolved = [event for event in self.events if event['case'] == key
+                      and event['category'] == 'inherited_unresolved_client_value']
         self.assertTrue(unresolved)
         for event in unresolved:
             self.assertEqual(event['path'], 'return_to_native')
@@ -270,10 +291,8 @@ class CapturedReplayContextTests(unittest.TestCase):
     def test_generated_literal_keeps_its_captured_interaction_identity(self):
         observation = self.cases['item', 5863]
         original = copy.deepcopy(observation)
-        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
-            report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report',
-                                case_keys={matrix.fingerprint(observation)})
-        self.assertEqual(report['failures'], [])
+        _, failures = self.matrix_case(observation)
+        self.assertEqual(failures, [])
         replay = gaps.Replay('frFR', {})
         db = replay.database
         source, owner = db.GetGlobalStringByKey(db, b'ITEM_SIGNABLE', b'frFR')

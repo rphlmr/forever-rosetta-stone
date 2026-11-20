@@ -34,6 +34,19 @@ class TalentDescriptionSourceTests(LiveValueHarness, unittest.TestCase):
         self.assertIn('maximum increase of 12%.', text)
         self.assertNotIn('Augmente', text)
 
+    def test_current_vampiric_embrace_transfers_both_healing_values(self):
+        native = ('Afflicts your target with Shadow energy that causes all party members to be healed '
+                  'for 10% of any Shadow spell damage you deal for 30 sec. '
+                  'You receive 100% increased healing on yourself from this effect.')
+        db = self.lua.globals().ForeverRosettaStoneDB
+        for locale in db.GetLocales(db).keys():
+            with self.subTest(locale=locale.decode()):
+                translated = self.capture(15286, native, 'enUS', locale.decode())
+                self.assertTrue(translated)
+                for value in (b'10', b'100', b'30'):
+                    self.assertRegex(translated, rb'(?<!\d)' + value + rb'(?!\d)')
+        self.assertIn('augmentés de 100\xa0%'.encode(), self.capture(15286, native, 'enUS', 'frFR'))
+
 
 if __name__ == '__main__':
     unittest.main()

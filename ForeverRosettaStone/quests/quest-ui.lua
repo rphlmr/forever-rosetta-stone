@@ -591,6 +591,19 @@ local function PlaceHeaderWithQuestTooltip(self)
     end
 end
 
+function Addon:GetQuestListTooltipQuestID(owner)
+    if not WorldMapFrame:IsShown() then return end
+    local questList = QuestMapFrame.QuestsFrame.ScrollFrame
+    if not questList:IsVisible() then return end
+    local questID
+    while owner and owner ~= questList do
+        if owner:IsForbidden() then return end
+        questID = questID or owner.questID or (owner.info and owner.info.questID)
+        owner = owner:GetParent()
+    end
+    if owner == questList then return questID end
+end
+
 function Addon:ShowTranslationTooltip()
     local tip = self.tooltip
 
@@ -634,20 +647,8 @@ function Addon:ShowTranslationTooltip()
 
         questID = mapPin:GetQuestID()
     else
-        local questList = QuestMapFrame.QuestsFrame.ScrollFrame
-
-        if not questList:IsVisible() then
-            tip:Hide()
-            return
-        end
-
-        while owner and owner ~= questList do
-            if owner:IsForbidden() then tip:Hide(); return end
-            questID = questID or owner.questID or (owner.info and owner.info.questID)
-            owner = owner:GetParent()
-        end
-
-        if owner ~= questList then
+        questID = self:GetQuestListTooltipQuestID(owner)
+        if not questID then
             tip:Hide()
             return
         end
@@ -657,7 +658,6 @@ function Addon:ShowTranslationTooltip()
             tip:Hide()
             return
         end
-
     end
 
     local quest = questID and self:GetQuest(questID)
@@ -722,7 +722,7 @@ function Addon:ShowTranslationTooltip()
         self.tooltipKey = key
     end
 
-    if self.preferences.tooltipMode == "stacked" then
+    if self:GetTooltipPresentation(GameTooltip) ~= "separate" then
         self:FillStackedTooltip(GameTooltip, tip, "quest:" .. key .. ":" .. self.preferences.tooltipCoverage)
         PlaceHeaderWithQuestTooltip(self)
         return

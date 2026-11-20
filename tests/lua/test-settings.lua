@@ -81,7 +81,7 @@ preview.native.SetItemByID = function() requests = requests + 1 end
 Addon:RefreshTooltipPreview()
 equal(requests, 0, "hidden preview does not request tooltip data before canvas layout")
 preview.native.SetItemByID = setPreviewItem
-equal(settings.tooltipMode:GetValue(), Addon.preferences.tooltipMode, "native display reads saved preference")
+equal(settings.tooltipPresentation:GetValue(), Addon:GetTooltipPresentation(), "native display reads saved preference")
 settings.tooltipCoverage:SetValue("name")
 equal(Addon.preferences.tooltipCoverage, "name", "native dropdown applies coverage")
 Addon:LoadPreferences()
@@ -120,7 +120,7 @@ ForeverRosettaStoneSettings.tooltipMode = "inline"
 Addon:LoadPreferences()
 equal(Addon.preferences.tooltipMode, "stacked", "saved Inline migrates to Stacked")
 equal(pcall(Addon.SetTooltipMode, Addon, "inline"), false, "removed Inline mode cannot be selected")
-settings.tooltipMode:SetValue("separate")
+settings.tooltipPresentation:SetValue("separate")
 equal(Addon.preferences.tooltipMode, "separate", "native dropdown applies display mode")
 equal(pcall(Addon.SetTooltipMode, Addon, "unknown"), false, "display rejects unknown values")
 Addon:OpenSettings()
@@ -241,22 +241,31 @@ for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
     equal(available[locale] ~= nil, locale ~= "enGB" and locale:sub(1, 2) ~= GetLocale():sub(1, 2),
         "native language page exposes supported translations: " .. locale)
 end
-local displayControl, coverageControl
+local modes = Addon.radioLists.tooltipPresentation
+local headerControl
 for _, initializer in ipairs(category.initializers) do
-    if initializer.setting == settings.tooltipModeEnabled then displayControl = initializer end
-    if initializer.setting == settings.tooltipCoverageEnabled then coverageControl = initializer end
+    if initializer.setting == settings.translationHeader then headerControl = initializer end
 end
-equal(displayControl.kind, "checkbox", "two-value display choice uses a native checkbox")
-equal(coverageControl.kind, "checkbox", "two-value coverage choice uses a native checkbox")
-local savedPosition = Addon.preferences.npcTooltipPosition
-settings.tooltipModeEnabled:SetValue(false)
-equal(Addon.preferences.tooltipMode, "stacked", "unchecked separate tooltip selects stacked")
-equal(positionList.buttons[4]:IsEnabled(), false, "stacked disables the NPC position radios")
-positionList.buttons[4]:Fire("OnClick")
-equal(Addon.preferences.npcTooltipPosition, savedPosition, "disabled position radios keep the chosen position")
-settings.tooltipModeEnabled:SetValue(true)
-equal(Addon.preferences.tooltipMode, "separate", "checked separate tooltip selects separate")
-equal(positionList.buttons[4]:IsEnabled(), true, "separate enables the NPC position radios")
+for index, mode in ipairs({ "below", "above", "separate", "replacement" }) do
+    local badge = modes.buttons[index].newBadge
+    equal(badge ~= nil, mode == "above" or mode == "replacement", "only new layout choices are highlighted")
+    if badge then
+        equal(badge.template, "NewFeatureLabelTemplate", "highlight uses the localized native badge")
+        equal(badge.smartNavigationIgnored, true, "the badge is skipped by gamepad navigation")
+    end
+    modes.buttons[index]:Fire("OnClick")
+    equal(Addon:GetTooltipPresentation(), mode, "radio applies presentation " .. mode)
+    Addon:LoadPreferences()
+    equal(settings.tooltipPresentation:GetValue(), mode, "presentation survives reloading " .. mode)
+    equal(positionList.buttons[4]:IsEnabled(), mode == "separate", "position requires separate mode")
+    equal(headerControl.displayedEnabled, mode ~= "replacement", "header requires original text")
+    for choice, button in ipairs(modes.buttons) do
+        equal(button.selected, choice == index, "only the active mode is selected")
+    end
+end
+settings.tooltipPresentation:SetValueToDefault()
+equal(Addon:GetTooltipPresentation(), "below", "native Defaults restores translation below the original")
+settings.tooltipPresentation:SetValue("separate")
 settings.tooltipCoverageEnabled:SetValue(false)
 equal(Addon.preferences.tooltipCoverage, "name", "unchecked full text selects name only")
 settings.tooltipCoverageEnabled:SetValueToDefault()
@@ -286,6 +295,13 @@ Addon:OpenSettings()
 equal(panel:IsVisible(), true, "default page displays the live preview")
 do
     local preview = panel.TooltipPreview
+    equal(Addon.preferences.stackedTranslationFirst, false, "stacked item tooltips show the original first by default")
+    settings.tooltipPresentation:SetValue("above")
+    equal(ForeverRosettaStoneSettings.stackedTranslationFirst, true, "tooltip order saves in preferences")
+    Addon:LoadPreferences()
+    equal(Addon.preferences.stackedTranslationFirst, true, "tooltip order survives loading preferences")
+    settings.tooltipPresentation:SetValueToDefault()
+    equal(Addon.preferences.stackedTranslationFirst, false, "native Defaults restores the original-first order")
     local function Rendered()
         return (Addon.stackedTooltips and Addon.stackedTooltips[preview.native] ~= nil) or preview.translated:IsShown()
     end
@@ -332,7 +348,7 @@ equal(SettingsPanel:IsShown(), false, "opening debug closes settings")
 Addon.RunDebugCommand = runDebugCommand
 Addon:OpenSettings()
 equal(Addon.settingsPreviewCategory, nil, "preview has no separate menu")
-for _, id in ipairs({ "locale", "tooltipModeEnabled", "tooltipCoverageEnabled", "npcTooltipPosition" }) do
+for _, id in ipairs({ "locale", "tooltipPresentation", "tooltipCoverageEnabled", "npcTooltipPosition" }) do
     equal(settings[id].category, category, "tooltip control stays beside the preview: " .. id)
 end
 SettingsPanel:Hide()

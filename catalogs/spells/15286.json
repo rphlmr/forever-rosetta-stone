@@ -2,7 +2,7 @@
   "locales": {
     "csCZ": {
       "auraDescription": "$w1% poškození stínovými kouzly způsobeného sesílajícím knězem léčí jeho skupinu.",
-      "description": "Zasáhne cíl stínovou energií, díky níž se všichni členové družiny po dobu $d léčí za $s1 % stínového poškození tvých kouzel.",
+      "description": "Zasáhne cíl stínovou energií, díky níž se všichni členové družiny po dobu $d léčí za $s1 % stínového poškození tvých kouzel. Tento efekt tě léčí o $s2 % více.",
       "name": "Upíří objetí",
       "translationMetadata": {
         "fields": {
@@ -27,7 +27,7 @@
     },
     "daDK": {
       "auraDescription": "$w1% af skyggeskaden fra den præst, der kaster besværgelsen, heler præstens gruppe.",
-      "description": "Rammer dit mål med skyggeenergi, som i $d helbreder alle gruppemedlemmer for $s1% af den skyggemagi-skade, du uddeler.",
+      "description": "Rammer dit mål med skyggeenergi, som i $d helbreder alle gruppemedlemmer for $s1% af den skyggemagi-skade, du uddeler. Du modtager $s2 % mere heling fra denne effekt.",
       "name": "Vampyrisk omfavnelse",
       "translationMetadata": {
         "fields": {
@@ -51,7 +51,10 @@
     },
     "deDE": {
       "auraDescription": "$w1% des durch den zaubernden Priester verursachten Schattenzauberschadens heilt die Gruppe des Priesters.",
-      "description": "Trifft Euer Ziel mit Schattenenergie, die alle Gruppenmitglieder $d lang um $s1% jeglichen Schattenschadens heilt, den Ihr zufügt.",
+      "description": "Belegt Euer Ziel mit Schattenenergie, die alle Gruppenmitglieder $d lang um $s1% Eures verursachten Schattenzauberschadens heilt. Ihr erhaltet von Euch selbst $s2% mehr Heilung durch diesen Effekt.",
+      "descriptionVariants": [
+        "Trifft Euer Ziel mit Schattenenergie, die alle Gruppenmitglieder $d lang um $s1% jeglichen Schattenschadens heilt, den Ihr zufügt."
+      ],
       "name": "Vampirumarmung",
       "translationMetadata": {
         "fields": {
@@ -63,9 +66,30 @@
           },
           "description": {
             "origin": "original",
+            "originalDescriptionSha256": "c4001e853150525c7b5ca88f31b5924570817e3d58f5b1aa22035692ab4ba693",
+            "source": "blizzard",
+            "sourceField": "description",
+            "sourceLocale": "deDE",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "tokenDerivation": "matchingNativeHotfixAndLocalizedApiValues",
+            "tokenTemplateBuild": "1.60.1.70959",
+            "tokenTemplateLocales": [
+              "enUS",
+              "frFR"
+            ],
+            "tokenTemplatePushID": 114093
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
-            "sourceLocale": "deDE"
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "deDE",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -78,7 +102,10 @@
     },
     "enUS": {
       "auraDescription": "$w1% of Shadow spell damage caused by casting priest heals the priest's group.",
-      "description": "Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d.",
+      "description": "Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d. You receive $s2% increased healing on yourself from this effect.",
+      "descriptionVariants": [
+        "Afflicts your target with Shadow energy that causes all party members to be healed for $s1% of any Shadow spell damage you deal for $d."
+      ],
       "name": "Vampiric Embrace",
       "translationMetadata": {
         "fields": {
@@ -91,8 +118,20 @@
           "description": {
             "origin": "original",
             "source": "wowClient",
-            "sourceBuild": "1.60.1.70862",
+            "sourceBuild": "1.60.1.70959",
             "sourceLocale": "enUS"
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "enUS",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -105,7 +144,10 @@
     },
     "esES": {
       "auraDescription": "Un $w1% del daño con hechizos de las Sombras causado con los hechizos lanzados por el sacerdote sana a su grupo.",
-      "description": "Atacas a tu objetivo con energía de las Sombras, lo que hace que todos los miembros del grupo reciban una sanación equivalente a un $s1% del daño que inflijas con hechizos de las Sombras durante $d.",
+      "description": "Atacas a tu objetivo con energía de las Sombras, lo que hace que todos los miembros del grupo reciban una sanación equivalente a un $s1% del daño que inflijas con hechizos de las Sombras durante $d. Recibes un $s2% más de sanación sobre ti por este efecto.",
+      "descriptionVariants": [
+        "Atacas a tu objetivo con energía de las Sombras, lo que hace que todos los miembros del grupo reciban una sanación equivalente a un $s1% del daño que inflijas con hechizos de las Sombras durante $d."
+      ],
       "name": "Unirse a vampírica",
       "translationMetadata": {
         "fields": {
@@ -117,9 +159,30 @@
           },
           "description": {
             "origin": "original",
+            "originalDescriptionSha256": "a081245eba3e8a130efd73a86193952d3152dfc86692ebcbf82f2c9d9fe405f9",
+            "source": "blizzard",
+            "sourceField": "description",
+            "sourceLocale": "esES",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "tokenDerivation": "matchingNativeHotfixAndLocalizedApiValues",
+            "tokenTemplateBuild": "1.60.1.70959",
+            "tokenTemplateLocales": [
+              "enUS",
+              "frFR"
+            ],
+            "tokenTemplatePushID": 114093
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
-            "sourceLocale": "esES"
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "esES",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -132,7 +195,10 @@
     },
     "esMX": {
       "auraDescription": "El grupo del sacerdote sana por un $w1% del daño con hechizos de las Sombras que inflige el sacerdote taumaturgo.",
-      "description": "Afecta a tu objetivo con energía de las Sombras que sana a todos los miembros del grupo por un $s1% de todo el daño con hechizos de las Sombras que inflijas durante $d.",
+      "description": "Afecta a tu objetivo con energía de las Sombras que sana a todos los miembros del grupo por un $s1% de todo el daño con hechizos de las Sombras que inflijas durante $d. Recibes un $s2% más de sanación de este efecto.",
+      "descriptionVariants": [
+        "Afecta a tu objetivo con energía de las Sombras que sana a todos los miembros del grupo por un $s1% de todo el daño con hechizos de las Sombras que inflijas durante $d."
+      ],
       "name": "Abrazo vampírico",
       "translationMetadata": {
         "fields": {
@@ -144,9 +210,30 @@
           },
           "description": {
             "origin": "original",
+            "originalDescriptionSha256": "7344c9ce2a553fac049ce490b03258ef1cf84a24b2e96ffaeb2b20443eb58267",
+            "source": "blizzard",
+            "sourceField": "description",
+            "sourceLocale": "esMX",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "tokenDerivation": "matchingNativeHotfixAndLocalizedApiValues",
+            "tokenTemplateBuild": "1.60.1.70959",
+            "tokenTemplateLocales": [
+              "enUS",
+              "frFR"
+            ],
+            "tokenTemplatePushID": 114093
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
-            "sourceLocale": "esMX"
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "esMX",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -159,7 +246,10 @@
     },
     "frFR": {
       "auraDescription": "Un montant de points de vie égal à $w1 % des dégâts des sorts d’ombre infligés par le prêtre est rendu à son groupe.",
-      "description": "Libère sur votre cible de l’énergie de l’ombre grâce à laquelle tous les membres de votre groupe reçoivent un montant de points de vie égal à $s1 % des dégâts d’ombre que vous infligez avec des sorts pendant $d.",
+      "description": "Libère sur votre cible de l’énergie de l’ombre, grâce à laquelle tous les membres de votre groupe reçoivent un montant de points de vie égal à $s1 % des dégâts d’ombre que vous infligez avec des sorts d’ombre pendant $d. Les soins que vous recevez grâce à cet effet sont augmentés de $s2 %.",
+      "descriptionVariants": [
+        "Libère sur votre cible de l’énergie de l’ombre grâce à laquelle tous les membres de votre groupe reçoivent un montant de points de vie égal à $s1 % des dégâts d’ombre que vous infligez avec des sorts pendant $d."
+      ],
       "name": "Etreinte vampirique",
       "translationMetadata": {
         "fields": {
@@ -171,9 +261,21 @@
           },
           "description": {
             "origin": "original",
-            "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "source": "wowClient",
+            "sourceBuild": "1.60.1.70959",
             "sourceLocale": "frFR"
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
+            "source": "wago",
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "frFR",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -186,7 +288,7 @@
     },
     "hrHR": {
       "auraDescription": "$w1% štete od čarolija sjene koju nanese svećenik koji baca čaroliju liječi njegovu skupinu.",
-      "description": "Obuzima metu sjenovitom energijom koja tijekom $d liječi sve članove skupine za $s1% svake štete od čarolija sjene koju naneseš.",
+      "description": "Obuzima metu sjenovitom energijom koja tijekom $d liječi sve članove skupine za $s1% svake štete od čarolija sjene koju naneseš. Ovaj te učinak liječi za $s2% više.",
       "name": "Vampirski zagrljaj",
       "translationMetadata": {
         "fields": {
@@ -210,7 +312,7 @@
     },
     "itIT": {
       "auraDescription": "Il $w1% dei danni degli incantesimi d'ombra inflitti dal lancio di cure da parte del sacerdote viene condiviso con il gruppo del sacerdote.",
-      "description": "Avvolge il bersaglio nell'energia d'ombra, facendo sì che tutti i membri del gruppo vengano curati per il $s1% dei danni da ombra inflitti dai tuoi incantesimi per $d.",
+      "description": "Avvolge il bersaglio nell'energia d'ombra, facendo sì che tutti i membri del gruppo vengano curati per il $s1% dei danni da ombra inflitti dai tuoi incantesimi per $d. Ricevi il $s2% di cure in più da questo effetto.",
       "name": "Abbraccio Vampirico",
       "translationMetadata": {
         "fields": {
@@ -235,7 +337,10 @@
     },
     "koKR": {
       "auraDescription": "사제가 시전한 암흑 주문 피해의 $w1%만큼 사제가 속한 파티 치유",
-      "description": "대상을 암흑의 기운으로 감싸 자신이 입히는 암흑 주문 피해의 $s1%만큼 모든 파티원의 생명력을 회복시킵니다. $d 동안 지속됩니다.",
+      "description": "대상을 암흑의 기운으로 감싸 자신이 입히는 암흑 주문 피해의 $s1%만큼 모든 파티원의 생명력을 회복시킵니다. $d 동안 지속됩니다. 이 효과로 인해 자신에게 적용되는 치유량이 $s2%만큼 증가합니다.",
+      "descriptionVariants": [
+        "대상을 암흑의 기운으로 감싸 자신이 입히는 암흑 주문 피해의 $s1%만큼 모든 파티원의 생명력을 회복시킵니다. $d 동안 지속됩니다."
+      ],
       "name": "흡혈의 선물",
       "translationMetadata": {
         "fields": {
@@ -247,9 +352,30 @@
           },
           "description": {
             "origin": "original",
+            "originalDescriptionSha256": "751234f94f1defde2c4c3ce02a6b541bab2564dcf90c5188fe51c09230305ed3",
+            "source": "blizzard",
+            "sourceField": "description",
+            "sourceLocale": "koKR",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "tokenDerivation": "matchingNativeHotfixAndLocalizedApiValues",
+            "tokenTemplateBuild": "1.60.1.70959",
+            "tokenTemplateLocales": [
+              "enUS",
+              "frFR"
+            ],
+            "tokenTemplatePushID": 114093
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
-            "sourceLocale": "koKR"
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "koKR",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -262,7 +388,7 @@
     },
     "plPL": {
       "auraDescription": "$w1% obrażeń zaklęć Cienia spowodowanych przez rzucającego kapłana uzdrawia grupę kapłana.",
-      "description": "Oplata cel energią cienia, dzięki której wszyscy członkowie drużyny są leczeni za $s1% obrażeń od cienia zadawanych przez twoje zaklęcia przez $d.",
+      "description": "Oplata cel energią cienia, dzięki której wszyscy członkowie drużyny są leczeni za $s1% obrażeń od cienia zadawanych przez twoje zaklęcia przez $d. Ten efekt leczy cię o $s2% skuteczniej.",
       "name": "Wampiryczny uścisk",
       "translationMetadata": {
         "fields": {
@@ -287,7 +413,10 @@
     },
     "ptBR": {
       "auraDescription": "$w1% do dano mágico de Sombra causado pelo Sacerdote lançador é convertido em cura para ele e para o grupo dele.",
-      "description": "Aflige o alvo com energia sombria. Todos os integrantes do grupo serão curados em $s1% do dano mágico de Sombra que você causar por $d.",
+      "description": "Aflige o alvo com energia de Sombra. Todos os integrantes do grupo serão curados em $s1% do dano mágico de Sombra que você causar por $d. Você recebe $s2% a mais de cura em si mesmo com este efeito.",
+      "descriptionVariants": [
+        "Aflige o alvo com energia sombria. Todos os integrantes do grupo serão curados em $s1% do dano mágico de Sombra que você causar por $d."
+      ],
       "name": "Abraço Vampírico",
       "translationMetadata": {
         "fields": {
@@ -299,9 +428,30 @@
           },
           "description": {
             "origin": "original",
+            "originalDescriptionSha256": "51332d707554d41c6fe19376269d606db2925fced09c1e714d8bee344c677cf3",
+            "source": "blizzard",
+            "sourceField": "description",
+            "sourceLocale": "ptBR",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "tokenDerivation": "matchingNativeHotfixAndLocalizedApiValues",
+            "tokenTemplateBuild": "1.60.1.70959",
+            "tokenTemplateLocales": [
+              "enUS",
+              "frFR"
+            ],
+            "tokenTemplatePushID": 114093
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
-            "sourceLocale": "ptBR"
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "ptBR",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -314,7 +464,10 @@
     },
     "ruRU": {
       "auraDescription": "Участники группы жреца восстанавливают здоровье в объеме $w1% наносимого им урона от темной магии.",
-      "description": "Переполняет вашу цель темной энергией. Когда ваши заклинания наносят этой цели урон от темной магии, участники вашей группы восполняют здоровье в объеме $s1% нанесенного урона. Длительность - $d.",
+      "description": "Переполняет вашу цель темной энергией. Когда ваши заклинания наносят этой цели урон от темной магии, участники вашей группы восполняют здоровье в объеме $s1% нанесенного урона. Длительность – $d. Этот эффект восполняет вам на $s2% больше здоровья.",
+      "descriptionVariants": [
+        "Переполняет вашу цель темной энергией. Когда ваши заклинания наносят этой цели урон от темной магии, участники вашей группы восполняют здоровье в объеме $s1% нанесенного урона. Длительность - $d."
+      ],
       "name": "Объятия вампира",
       "translationMetadata": {
         "fields": {
@@ -326,9 +479,30 @@
           },
           "description": {
             "origin": "original",
+            "originalDescriptionSha256": "666183ac16767c2ac095b1628c6995791dfd6e22c82204acdc9bfc19583394e2",
+            "source": "blizzard",
+            "sourceField": "description",
+            "sourceLocale": "ruRU",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "tokenDerivation": "matchingNativeHotfixAndLocalizedApiValues",
+            "tokenTemplateBuild": "1.60.1.70959",
+            "tokenTemplateLocales": [
+              "enUS",
+              "frFR"
+            ],
+            "tokenTemplatePushID": 114093
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
-            "sourceLocale": "ruRU"
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "ruRU",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -341,7 +515,7 @@
     },
     "svSE": {
       "auraDescription": "$w1 % av skuggskadan som prästen orsakar med besvärjelser läker prästens grupp.",
-      "description": "Drabbar ditt mål med skuggenergi som gör att alla gruppmedlemmar läks med $s1 % av den skada dina skuggbesvärjelser orsakar i $d.",
+      "description": "Drabbar ditt mål med skuggenergi som gör att alla gruppmedlemmar läks med $s1 % av den skada dina skuggbesvärjelser orsakar i $d. Du får $s2 % mer läkning av den här effekten.",
       "name": "Vampyrisk omfamning",
       "translationMetadata": {
         "fields": {
@@ -353,9 +527,8 @@
           },
           "description": {
             "origin": "ai",
-            "source": "varldenAvKrigskraft",
-            "sourceLocale": "enUS",
-            "sourceRevision": "0.10.1"
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "name": {
             "origin": "ai",
@@ -367,7 +540,7 @@
     },
     "trTR": {
       "auraDescription": "Büyüyü yapan rahibin verdiği Gölge büyüsü hasarının $w1% kadarı rahibin grubunu iyileştirir.",
-      "description": "Hedefi gölge enerjisiyle etkileyerek $d boyunca tüm grup üyelerinin verdiğin gölge büyüsü hasarının %$s1 kadarıyla iyileşmesini sağlar.",
+      "description": "Hedefi gölge enerjisiyle etkileyerek $d boyunca tüm grup üyelerinin verdiğin gölge büyüsü hasarının %$s1 kadarıyla iyileşmesini sağlar. Bu etki sizi %$s2 daha fazla iyileştirir.",
       "name": "Vampir Kucağı",
       "translationMetadata": {
         "fields": {
@@ -392,7 +565,7 @@
     },
     "ukUA": {
       "auraDescription": "$w1% шкоди від заклинань тіні, завданої жерцем, який застосував заклинання, зцілює його групу.",
-      "description": "Огортає ціль енергією тіні, завдяки якій протягом $d всі члени групи зцілюються на $s1% шкоди тінню, завданої вами закляттями.",
+      "description": "Огортає ціль енергією тіні, завдяки якій протягом $d всі члени групи зцілюються на $s1% шкоди тінню, завданої вами закляттями. Цей ефект відновлює вам на $s2% більше здоров’я.",
       "name": "Вампірські обійми",
       "translationMetadata": {
         "fields": {
@@ -416,7 +589,10 @@
     },
     "zhCN": {
       "auraDescription": "牧师造成的暗影伤害总量的$w1%治疗牧师及其队友。",
-      "description": "暗影魔法的能量笼罩你的目标，使你对其造成的暗影伤害总量的$s1%转而治疗所有队友。效果持续$d。",
+      "description": "暗影能量笼罩你的目标，使所有小队成员获得治疗，治疗量相当于你造成的暗影法术伤害的$s1%。效果持续$d。此效果对你自身的治疗量提高$s2%。",
+      "descriptionVariants": [
+        "暗影魔法的能量笼罩你的目标，使你对其造成的暗影伤害总量的$s1%转而治疗所有队友。效果持续$d。"
+      ],
       "name": "吸血鬼的拥抱",
       "translationMetadata": {
         "fields": {
@@ -428,9 +604,30 @@
           },
           "description": {
             "origin": "original",
+            "originalDescriptionSha256": "52c8ff8e274e773ba882e2ba45a78a9f599178ba2e0be8e764b59741088296d3",
+            "source": "blizzard",
+            "sourceField": "description",
+            "sourceLocale": "zhCN",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "tokenDerivation": "matchingNativeHotfixAndLocalizedApiValues",
+            "tokenTemplateBuild": "1.60.1.70959",
+            "tokenTemplateLocales": [
+              "enUS",
+              "frFR"
+            ],
+            "tokenTemplatePushID": 114093
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
-            "sourceLocale": "zhCN"
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "zhCN",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",
@@ -443,7 +640,10 @@
     },
     "zhTW": {
       "auraDescription": "為施法牧師的隊伍成員治療相當於所造成的$w1%暗影法術傷害的生命力。",
-      "description": "暗影魔法的能量籠罩你的目標，使你對其造成的暗影傷害總量的$s1%轉而治療所有隊友，持續$d。",
+      "description": "暗影魔法的能量籠罩你的目標，使你對其造成的暗影傷害總量的$s1%轉而治療所有隊友，持續$d。你從此效果受到的治療量提高$s2%。",
+      "descriptionVariants": [
+        "暗影魔法的能量籠罩你的目標，使你對其造成的暗影傷害總量的$s1%轉而治療所有隊友，持續$d。"
+      ],
       "name": "吸血鬼的擁抱",
       "translationMetadata": {
         "fields": {
@@ -455,9 +655,30 @@
           },
           "description": {
             "origin": "original",
+            "originalDescriptionSha256": "045cb199c793381bfffd4dfffc8c072cab8cfe9ff03d3e9fb436100ca3961de8",
+            "source": "blizzard",
+            "sourceField": "description",
+            "sourceLocale": "zhTW",
+            "sourceNamespace": "static-1.60.1_70399-forever-eu",
+            "tokenDerivation": "matchingNativeHotfixAndLocalizedApiValues",
+            "tokenTemplateBuild": "1.60.1.70959",
+            "tokenTemplateLocales": [
+              "enUS",
+              "frFR"
+            ],
+            "tokenTemplatePushID": 114093
+          },
+          "descriptionVariants.0": {
+            "canonicalEnglishSha256": "ac607811806618b91aeacd6d1f1c2c02445be02f2e31a08a80d3288201419471",
+            "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
-            "sourceLocale": "zhTW"
+            "sourceBuild": "1.60.1.70959",
+            "sourceField": "Description_lang",
+            "sourceLocale": "zhTW",
+            "sourceRecordIDs": [
+              15286
+            ],
+            "sourceTable": "Spell"
           },
           "name": {
             "origin": "original",

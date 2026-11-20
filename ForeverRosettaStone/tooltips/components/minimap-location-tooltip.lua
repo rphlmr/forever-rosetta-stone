@@ -48,7 +48,7 @@ Addon:RegisterNameTooltipComponent({
             if not isZone and not isSubzone then return end
 
             Addon:Run("translate minimap location line", Addon.UpdateNameTooltip, Addon,
-                source, "minimapLocation", text, nil, Addon.preferences.tooltipMode == "stacked")
+                source, "minimapLocation", text, nil, Addon:GetTooltipPresentation(GameTooltip) ~= "separate")
         end)
     end,
 })

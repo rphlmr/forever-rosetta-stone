@@ -368,7 +368,9 @@ end
 local function InstallItemTracking()
     if Addon.bookItemTracking then return end
     Addon.bookItemTracking = true
-    local record = Addon:Wrap("record book item", function(bag, slot) Addon:RecordBookItem(bag, slot) end)
+    local function record(bag, slot)
+        if Addon.lifecycle == "ready" then Addon:Run("record book item", Addon.RecordBookItem, Addon, bag, slot) end
+    end
     if C_Container and C_Container.UseContainerItem then hooksecurefunc(C_Container, "UseContainerItem", record) end
 end
 

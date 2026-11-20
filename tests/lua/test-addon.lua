@@ -79,8 +79,11 @@ function Frame:SetWidth(width) self.width = width end
 function Frame:SetMinimumWidth(width) self.minimumWidth = width end
 function Frame:SetHeight(height) self.height = height end
 function Frame:SetSize(width, height) self.width, self.height = width, height end
-function Frame:GetHeight() return self.height end
-function Frame:GetWidth() return self.width end
+function Frame:SetPadding(right, bottom, left, top) self.padding = { right, bottom, left or 0, top or 0 } end
+function Frame:ClearPadding() self.padding = nil end
+function Frame:GetPadding() return unpack(self.padding or { 0, 0, 0, 0 }) end
+function Frame:GetHeight() return self.height + (self.padding and self.padding[2] + self.padding[4] or 0) end
+function Frame:GetWidth() return self.width + (self.padding and self.padding[1] + self.padding[3] or 0) end
 function Frame:GetSize() return self.width, self.height end
 function Frame:GetTop()
     if self.clamped and self.top then
@@ -109,6 +112,7 @@ function Frame:SetFrameLevel(level) self.level = math.min(10000, level) end
 function Frame:GetFrameLevel() return self.level end
 function Frame:SetAlpha(alpha) self.alpha = alpha end
 function Frame:GetAlpha() return self.alpha end
+function Frame:FadeOut() self:SetAlpha(1) end
 function Frame:SetTitle(title)
     self.title = title
     self.TitleContainer.TitleText:SetText(title)
@@ -349,6 +353,10 @@ function CreateFrame(kind, name, parent, template)
     }, Frame)
     frames[#frames + 1] = frame
     if name then _G[name] = frame end
+    if template == "NewFeatureLabelTemplate" then
+        frame.Label = frame:CreateFontString(nil, "OVERLAY")
+        frame.Label:SetText("NEW")
+    end
     if template == "GameTooltipTemplate" or template == "ShoppingTooltipTemplate"
         or template == "TooltipBackdropTemplate" then
         frame.TextLeft1 = frame:CreateFontString(nil, "ARTWORK")
@@ -730,6 +738,7 @@ function Settings.RegisterCanvasLayoutSubcategory(parent, panel, name)
 end
 function Settings.RegisterProxySetting(category, variable, valueType, name, default, getter, setter)
     local setting = { variable = variable, name = name, default = default, category = category }
+    function setting:GetVariable() return self.variable end
     function setting:GetValue() return getter() end
     function setting:IsLocked() return self.locked end
     function setting:SetValue(value)
@@ -747,6 +756,13 @@ function Settings.RegisterProxySetting(category, variable, valueType, name, defa
             end
         end
         self.displayedValue = getter()
+        for _, initializer in ipairs(category.initializers) do
+            local parent = initializer.parentInitializer
+            if initializer.modifyPredicate and ((parent and parent.setting == self)
+                or (initializer.watchedVariables and initializer.watchedVariables[self.variable])) then
+                initializer.displayedEnabled = initializer.modifyPredicate()
+            end
+        end
     end
     table.insert(category.settings, setting)
     return setting
@@ -761,6 +777,15 @@ function Settings.CreateCheckbox(category, setting, tooltip)
     local initializer = { kind = "checkbox", setting = setting, tooltip = tooltip }
     function initializer:SetParentInitializer(parent, predicate)
         self.parentInitializer, self.modifyPredicate = parent, predicate
+        self.displayedEnabled = predicate()
+    end
+    function initializer:AddModifyPredicate(predicate)
+        self.modifyPredicate = predicate
+        self.displayedEnabled = predicate()
+    end
+    function initializer:AddEvaluateStateCVar(variable)
+        self.watchedVariables = self.watchedVariables or {}
+        self.watchedVariables[variable] = true
     end
     category:AddInitializer(initializer)
     return initializer
@@ -2982,6 +3007,22 @@ do
     equal(calls, 2, "stale update handlers skip the safety wrapper")
     Addon.generation = Addon.generation - 1
     Addon.Run = run
+end
+
+do
+    local oldBook = Addon:GetBookBookmark()
+    local oldDialogue = Addon:GetQuestInteractionBookmark()
+    Addon:Restart()
+    equal(Addon.lifecycle, "ready", "reset recreates the reading UI")
+    equal(Addon.bookReader, nil, "book reader is recreated on demand after reset")
+    equal(Addon:GetBookBookmark() ~= oldBook, true, "book bookmark belongs to the current generation")
+    equal(Addon:GetQuestInteractionBookmark() ~= oldDialogue, true, "dialogue bookmark belongs to the current generation")
+    local calls = 0
+    local update = Addon.UpdateBookReader
+    Addon.UpdateBookReader = function() calls = calls + 1 end
+    Addon.bookBookmark:Fire("OnClick")
+    equal(calls, 1, "clicking the new book bookmark opens the reader after reset")
+    Addon.UpdateBookReader = update
 end
 
 print("PASS: " .. checks .. " assertions (Lua 5.1; real addon renderer, mocked WoW APIs and templates)")

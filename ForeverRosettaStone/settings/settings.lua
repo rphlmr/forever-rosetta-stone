@@ -1,5 +1,12 @@
 local _, Addon = ...
 
+-- Release highlights: use a setting ID for a checkbox, or "listID.choiceValue" for a radio.
+-- Remove the entry when the option should no longer be advertised as new.
+local newSettings = {
+    ["tooltipPresentation.above"] = true,
+    ["tooltipPresentation.replacement"] = true,
+}
+
 Addon.features = {
     { id = "taxiNodeTooltip", name = "Flight map destinations", group = "Locations",
         description = "Translate flight map destination names using the hovered flight node ID. Prices and route information stay native." },
@@ -93,6 +100,8 @@ function Addon:LoadPreferences()
     if type(angle) ~= "number" or angle ~= angle or math.abs(angle) == math.huge then angle = 135 end
     self.preferences.minimapAngle = angle % 360
     if not tooltipModes[self.preferences.tooltipMode] then self.preferences.tooltipMode = "stacked" end
+    if type(self.preferences.translationOnly) ~= "boolean" then self.preferences.translationOnly = false end
+    if type(self.preferences.stackedTranslationFirst) ~= "boolean" then self.preferences.stackedTranslationFirst = false end
     if not tooltipCoverages[self.preferences.tooltipCoverage] then self.preferences.tooltipCoverage = "full" end
     if type(self.preferences.translationHeader) ~= "boolean" then self.preferences.translationHeader = true end
     if not npcTooltipPositions[self.preferences.npcTooltipPosition] then self.preferences.npcTooltipPosition = "top" end
@@ -134,6 +143,18 @@ function Addon:IsFeatureEnabled(id)
     return self.preferences.features[id]
 end
 
+function Addon:SetTooltipPresentation(mode)
+    assert(mode == "above" or mode == "below" or mode == "separate" or mode == "replacement",
+        "Unknown tooltip presentation: " .. tostring(mode))
+    self.preferences.translationOnly = mode == "replacement"
+    if mode ~= "replacement" then
+        self.preferences.tooltipMode = mode == "separate" and "separate" or "stacked"
+        if mode ~= "separate" then self.preferences.stackedTranslationFirst = mode == "above" end
+    end
+    self:RefreshSettingsUI()
+    if self.lifecycle == "ready" then self:Run("change tooltip presentation", self.RefreshFeatures, self) end
+end
+
 function Addon:SetTooltipMode(mode)
     assert(tooltipModes[mode], "Unknown tooltip mode: " .. tostring(mode))
     self.preferences.tooltipMode = mode
@@ -151,6 +172,24 @@ function Addon:SetNpcTooltipPosition(position)
     self:RefreshSettingsUI()
     if self.lifecycle == "ready" then
         self:Run("change NPC tooltip position", function() self:RefreshNameTooltips() end)
+    end
+end
+
+function Addon:SetStackedTranslationFirst(enabled)
+    assert(type(enabled) == "boolean", "Stacked translation order setting must be boolean")
+    self.preferences.stackedTranslationFirst = enabled
+    self:RefreshSettingsUI()
+    if self.lifecycle == "ready" then
+        self:Run("change stacked tooltip order", function() self:RefreshFeatures() end)
+    end
+end
+
+function Addon:SetTranslationOnly(enabled)
+    assert(type(enabled) == "boolean", "Translation-only setting must be boolean")
+    self.preferences.translationOnly = enabled
+    self:RefreshSettingsUI()
+    if self.lifecycle == "ready" then
+        self:Run("change translation-only display", function() self:RefreshFeatures() end)
     end
 end
 
@@ -206,6 +245,8 @@ function Addon:ResetFeatureSettings()
     self.preferences.locale = "enUS"
     self.preferences.npcTooltipPosition = "top"
     self.preferences.tooltipMode = "stacked"
+    self.preferences.translationOnly = false
+    self.preferences.stackedTranslationFirst = false
     self.preferences.tooltipCoverage = "full"
     self.preferences.translationHeader = true
     self.contentKey, self.tooltipKey = nil, nil
@@ -278,7 +319,16 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
         end
         button.text = button:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
         button.text:SetPoint("LEFT", button.radio, "RIGHT", 1, 0)
-        button.text:SetPoint("RIGHT", -4, 0)
+        if newSettings[id .. "." .. choice.value] then
+            local badge = CreateFrame("Frame", nil, button, "NewFeatureLabelTemplate")
+            badge:EnableMouse(false)
+            SmartNavigation_MarkFrameIgnored(badge)
+            badge:SetSize(1, 1)
+            badge:Show()
+            button.newBadge = badge
+        else
+            button.text:SetPoint("RIGHT", -4, 0)
+        end
         button.text:SetJustifyH("LEFT")
         button.text:SetWordWrap(false)
         button.text:SetText(choice.label)
@@ -293,7 +343,7 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
             button:LockHighlight()
             Addon:GetWidgetTooltip():SetOwner(list, "ANCHOR_RIGHT")
             Addon:GetWidgetTooltip():SetText(label, 1, 1, 1)
-            Addon:GetWidgetTooltip():AddLine(hint, nil, nil, nil, true)
+            Addon:GetWidgetTooltip():AddLine(choice.hint or hint, nil, nil, nil, true)
             Addon:GetWidgetTooltip():Show()
         end)
         button:SetScript("OnLeave", function()
@@ -356,6 +406,12 @@ function Addon:LayoutRadioList(list, listWidth)
         button:ClearAllPoints()
         button:SetSize(width, RADIO_ROW_HEIGHT)
         button:SetPoint("TOPLEFT", list, "TOPLEFT", left + column * width, -RADIO_TOP - row * RADIO_ROW_HEIGHT)
+        if button.newBadge then
+            local badgeWidth = button.newBadge.Label:GetStringWidth()
+            local room = width - button.radio:GetWidth() - badgeWidth - 12
+            button.text:SetWidth(math.min(button.text:GetUnboundedStringWidth() + 1, math.max(1, room)))
+            button.newBadge:SetPoint("CENTER", button.text, "RIGHT", 5 + badgeWidth / 2, 0)
+        end
         -- Native settings sorts focusable children by GetTop before deferred anchors resolve.
         if list:IsVisible() and button:GetLeft() and button:GetTop() then
             SmartNavigation_ClearIgnoreStatus(button)
@@ -434,12 +490,21 @@ function Addon:CreateSettingsUI()
         layout:AddInitializer(initializer)
         return initializer
     end
+    local function Checkbox(category, id, setting, description)
+        local initializer = Settings.CreateCheckbox(category, setting, description)
+        if newSettings[id] then
+            -- Use the native row's badge. Release highlights are managed by the addon.
+            initializer.IsNewTagShown = function() return true end
+            initializer.MarkSettingAsSeen = function() end
+        end
+        return initializer
+    end
     local function Toggle(category, id, name, default, onValue, offValue, getValue, setValue, description)
         Register(category, id, name, default and onValue or offValue, getValue, setValue)
         local setting = Register(category, id .. "Enabled", name, default,
             function() return getValue() == onValue end,
             function(enabled) setValue(enabled and onValue or offValue) end)
-        return Settings.CreateCheckbox(category, setting, description)
+        return Checkbox(category, id, setting, description)
     end
     local Text = function(key) return self:SettingsText(key) end
     local names, languages = ForeverRosettaStoneDB:GetLocales(), {}
@@ -451,18 +516,14 @@ function Addon:CreateSettingsUI()
     RadioList("ForeverRosettaStoneSettingsLanguageListTemplate", 2, "locale", Text("language"), Text("languageHint"), "enUS", languages,
         function() return self:GetTargetLocale() end,
         function(value) self:SetTargetLocale(value) end)
-    Toggle(category, "tooltipMode", Text("separate"), false, "separate", "stacked",
-        function() return self.preferences.tooltipMode end,
-        function(value) self:SetTooltipMode(value) end,
-        Text("separateHint"))
-    Toggle(category, "tooltipCoverage", Text("fullText"), true, "full", "name",
-        function() return self.preferences.tooltipCoverage end,
-        function(value) self:SetTooltipCoverage(value) end,
-        Text("fullTextHint"))
-    local header = Register(category, "translationHeader", Text("translationHeader"), true,
-        function() return self.preferences.translationHeader end,
-        function(value) self:SetTranslationHeader(value) end)
-    Settings.CreateCheckbox(category, header, Text("translationHeaderHint"))
+    layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(Text("tooltipLayout")))
+    RadioList("ForeverRosettaStoneSettingsPresentationListTemplate", 1, "tooltipPresentation",
+        Text("translation"), Text("belowOriginal"), "below", {
+            { value = "below", label = Text("belowOriginal") },
+            { value = "above", label = Text("aboveOriginal"), hint = Text("stackedTranslationFirstHint") },
+            { value = "separate", label = Text("separate"), hint = Text("separateHint") },
+            { value = "replacement", label = Text("translationOnly"), hint = Text("translationOnlyHint") },
+        }, function() return self:GetTooltipPresentation() end, function(value) self:SetTooltipPresentation(value) end)
     local positions = {}
     for index, position in ipairs({ "top", "left", "right", "bottom" }) do
         positions[index] = { value = position, label = Text(position) }
@@ -470,7 +531,18 @@ function Addon:CreateSettingsUI()
     RadioList("ForeverRosettaStoneSettingsPositionListTemplate", 4, "npcTooltipPosition", Text("npcPosition"), Text("npcPositionHint"), "top", positions,
         function() return self.preferences.npcTooltipPosition end,
         function(value) self:SetNpcTooltipPosition(value) end,
-        function() return self.preferences.tooltipMode == "separate" end)
+        function() return self:GetTooltipPresentation() == "separate" end)
+    layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(Text("tooltipContent")))
+    Toggle(category, "tooltipCoverage", Text("fullText"), true, "full", "name",
+        function() return self.preferences.tooltipCoverage end,
+        function(value) self:SetTooltipCoverage(value) end,
+        Text("fullTextHint"))
+    local header = Register(category, "translationHeader", Text("translationHeader"), true,
+        function() return self.preferences.translationHeader end,
+        function(value) self:SetTranslationHeader(value) end)
+    local headerControl = Checkbox(category, "translationHeader", header, Text("translationHeaderHint"))
+    headerControl:AddModifyPredicate(function() return not self.preferences.translationOnly end)
+    headerControl:AddEvaluateStateCVar(self.settings.tooltipPresentation:GetVariable())
 
     local panel = CreateFrame("Frame", "ForeverRosettaStoneSettingsPanel", UIParent)
     panel:Hide()
@@ -507,7 +579,7 @@ function Addon:CreateSettingsUI()
                 local setting = Register(category, feature.id, name, true,
                     function() return self:IsFeatureEnabled(feature.id) end,
                     function(value) self:SetFeatureEnabled(feature.id, value) end)
-                Settings.CreateCheckbox(category, setting, description)
+                Checkbox(category, feature.id, setting, description)
             end
         end
     end

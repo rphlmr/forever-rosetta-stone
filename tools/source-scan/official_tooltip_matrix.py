@@ -37,11 +37,12 @@ def observations(directory):
     """Keep provenance for every observation, including unavailable inputs and repeated surfaces."""
     directory = directory.resolve()
     for path in sorted(directory.glob('*.json')):
-        capture = restore(json.loads(path.read_text()))
+        payload = path.read_bytes()
+        capture = restore(json.loads(payload))
         locale = capture.get('source', {}).get('locale')
         if locale not in OFFICIAL_LOCALES:
             continue
-        source = {'fixture': str(path.relative_to(gaps.ROOT)), 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
+        source = {'fixture': str(path.relative_to(gaps.ROOT)), 'sha256': hashlib.sha256(payload).hexdigest()}
         if 'runs' not in capture:
             if not isinstance(capture.get('data'), dict):
                 continue
@@ -109,9 +110,9 @@ def stable(value):
 
 
 def fingerprint(observation):
-    data = copy.deepcopy(observation.get('data', {}))
-    if observation['kind'] not in ('npc', 'player'):
-        data.pop('guid', None)
+    data = observation.get('data', {})
+    if observation['kind'] not in ('npc', 'player') and 'guid' in data:
+        data = {key: value for key, value in data.items() if key != 'guid'}
     calls = observation.get('calls', {})
     state = {key: value for key, value in calls.items() if not key.startswith('C_TradeSkillUI.')}
     schematic = calls.get('C_TradeSkillUI.GetRecipeSchematic', {}).get(f"{observation['id']}, false")
@@ -168,14 +169,40 @@ def derived_context(replay, observation, locale):
     return calls, unit
 
 
-def cache_catalog(replay):
+def cache_catalog(replay, labels=None):
+    # A matrix uses the same generated packs in every VM. Share only scalar text
+    # and ID pairs across VMs; keep all Lua tables inside their owning runtime.
+    if labels is None:
+        labels = {}
+    lookup_label = replay.database.GetGlobalStringByKey
+    local_table = replay.lua.table_from
+
+    def label(database, key, locale):
+        pair = (key, locale)
+        if pair not in labels:
+            labels[pair] = lookup_label(database, key, locale) or (None, None)
+        return local_table(labels[pair])
+
     # The snapshot's owned catalogs are immutable. Cache their query results only;
     # captured client APIs and renderer behaviour keep their real implementations.
     replay.lua.execute(b'''
 local database = ForeverRosettaStoneDB
+local label = ...
+local labels = {}
+database.GetGlobalStringByKey = function(self, key, locale)
+    if type(key) ~= "string" or type(locale) ~= "string" then return end
+    local byKey = labels[locale]
+    if not byKey then byKey = {}; labels[locale] = byKey end
+    local pair = byKey[key]
+    if not pair then
+        pair = label(self, key, locale)
+        byKey[key] = pair
+    end
+    if pair[2] then return pair[1], pair[2] end
+end
 for _, key in ipairs({"GetSpellDetails", "GetItemDetails", "GetSpellRules", "GetItemRules",
     "GetSpellName", "GetItemName", "GetNpcName", "GetNpcSubName", "GetNpcFactionID", "GetQuest",
-    "GetGlobalStringByKey", "GetGlobalStringKeysByText", "GetHolidayName", "GetItemLimitCategoryName",
+    "GetGlobalStringKeysByText", "GetHolidayName", "GetItemLimitCategoryName",
     "GetFactionName", "GetAreaName", "GetClassName", "GetCreatureTypeName",
     "GetShapeshiftFormName", "GetTotemCategoryName", "GetLockTypeName", "GetItemSubclassName"}) do
     local original, cache = database[key], {}
@@ -197,7 +224,7 @@ ReplayAddon.GetClientLabel = function(self, key, locale)
     cache[lookup] = {value = value}
     return value
 end
-''')
+''', label)
 
 
 def read_rendered(replay):
@@ -225,6 +252,10 @@ def copied_rows(value):
 
 
 def run(directory, output, limit=None, focus_locale=None, case_keys=None, locales=None):
+    return run_observations(observations(directory), output, limit, focus_locale, case_keys, locales)
+
+
+def run_observations(captures, output, limit=None, focus_locale=None, case_keys=None, locales=None):
     started = time.monotonic()
     locales = sorted(set(locales) if locales is not None else OFFICIAL_LOCALES)
     if len(locales) < 2 or not set(locales) <= OFFICIAL_LOCALES:
@@ -232,24 +263,24 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
     if focus_locale is not None and focus_locale not in locales:
         raise ValueError('The focused locale must belong to the selected official locales')
     cases, native_count, inventories = {}, 0, Counter()
-    for observation in observations(directory):
+    for observation in captures:
         native_count += 1
         inventories[observation['locale']] += 1
         key = fingerprint(observation)
         if key in cases:
             cases[key]['sources'].append(observation['source'])
         else:
-            observation['sources'] = [observation.pop('source')]
-            cases[key] = observation
+            cases[key] = dict(observation, sources=[observation['source']])
     if case_keys is not None and not set(case_keys).issubset(cases):
         raise ValueError('Requested case fingerprints are absent from the native corpus')
     selected = [(key, observation) for key, observation in cases.items() if case_keys is None or key in case_keys]
     if limit:
         selected = selected[:limit]
     native_replays, reverse, label_keys = {}, {}, {}
+    catalog_labels = {}
     for locale in locales:
         replay = gaps.Replay(locale, {})
-        cache_catalog(replay)
+        cache_catalog(replay, catalog_labels)
         for key in ('DECIMAL_SEPERATOR', 'LARGE_NUMBER_SEPERATOR'):
             value = replay.lua.globals().ReplayAddon.GetClientLabel(replay.lua.globals().ReplayAddon, key.encode(), locale.encode())
             if value is not None:
@@ -270,8 +301,9 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
         path = ('native_to_target' if source == observation['locale'] else
                 'return_to_native' if target == observation['locale'] else 'cross_target')
         by_path[path][status] += 1
+        outcome['byPath'].setdefault(path, Counter())[status] += 1
         if status not in ('passed', 'text_difference_values_preserved'):
-            event = {'case': fingerprint(observation), 'source': source, 'target': target,
+            event = {'case': outcome['key'], 'source': source, 'target': target,
                      'status': status, 'kind': observation['kind'], 'id': observation['id'],
                      'originLocale': observation['locale'], 'path': path,
                      'reference': observation['sources'][0]}
@@ -295,7 +327,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
         if number % 25 == 1:
             print(json.dumps({'case': number, 'total': len(selected), 'seconds': round(time.monotonic()-started, 1), 'counts': dict(counts)}), flush=True)
         locale, kind, entity = observation['locale'], observation['kind'], observation['id']
-        outcome = {'key': key, 'locale': locale, 'kind': kind, 'id': entity, 'sources': observation['sources']}
+        outcome = {'key': key, 'locale': locale, 'kind': kind, 'id': entity, 'sources': observation['sources'], 'byPath': {}}
         outcomes.append(outcome)
         if entity is None or 'data' not in observation:
             status = 'not_applicable' if kind == 'npc' else 'missing_native_context'
@@ -305,6 +337,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
         if kind == 'unsupported':
             outcome['nativeStatus'] = 'unsupported'; native_status['unsupported'] += 1; continue
         data = gaps.clean(observation['data'])
+        processing = gaps.clean(observation.get('processing'))
         if any('Récupération des informations' in row.get('leftText', '') or 'Retrieving item information' in row.get('leftText', '')
                for row in data.get('lines', [])):
             outcome['nativeStatus'] = 'loading'; native_status['loading'] += 1; continue
@@ -316,7 +349,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
         if replay_key not in native_replays:
             labels = {key: value for key, value in observation['globals'].items() if value != '<nil>'}
             native_replays[replay_key] = gaps.Replay(locale, labels, tooltip_types=observation.get('types'))
-            cache_catalog(native_replays[replay_key])
+            cache_catalog(native_replays[replay_key], catalog_labels)
         native = native_replays[replay_key]
         native.install_calls(observation['calls'], observation.get('unit'))
         input_rows = [{'left': row.get('leftText'), 'right': row.get('rightText')} for row in data['lines']]
@@ -324,7 +357,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
         # layout through the same renderer before comparing displayed quantities;
         # the original captured data stays unchanged and remains the source input.
         _, baseline_error, _ = native.run('spell' if kind == 'aura' else kind, entity, data, locale,
-            gaps.clean(observation.get('processing')), observation.get('visible'), observation.get('unit'))
+            processing, observation.get('visible'), observation.get('unit'))
         if not baseline_error:
             baseline, encoding_error = read_rendered(native)
             if baseline is not None:
@@ -336,7 +369,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
         for target in locales:
             if target == locale:
                 continue
-            rows, error, name = native.run(render_kind, entity, data, target, gaps.clean(observation.get('processing')), observation.get('visible'), observation.get('unit'))
+            rows, error, name = native.run(render_kind, entity, data, target, processing, observation.get('visible'), observation.get('unit'))
             if rows or error or not name:
                 context = gaps.missing_player_context(native, render_kind, entity, data, observation['calls'], target, rows) if not error else []
                 status = ('native_error' if error else 'missing_catalog' if not name
@@ -349,6 +382,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
                 record(observation, locale, target, 'native_invalid_utf8', error=encoding_error)
                 continue
             record(observation, locale, target, 'passed')
+            bindings = copied_rows(native.lua.globals().ReplayOutputBindings)
             source_data = data
             if kind in ('npc', 'player'):
                 source_data = dict(data, lines=copied_rows(native.lua.globals().ReplayLastSourceRows))
@@ -365,11 +399,9 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
                         if text[side] is None: line.pop(field, None)
                         else: line[field] = text[side]
             else:
-                bindings = copied_rows(native.lua.globals().ReplayOutputBindings)
                 suppressions = copied_rows(native.lua.globals().ReplaySuppressions)
-                processing = observation.get('processing') or {}
                 derived, issue = derive(source_data, translated, bindings, suppressions,
-                    visible_surface=processing.get('getterName') in ('GetTraitEntry', 'GetTalent')
+                    visible_surface=(processing or {}).get('getterName') in ('GetTraitEntry', 'GetTalent')
                         and observation.get('visible') is not None)
                 if issue:
                     generation[target] = dict(issue, sourceRows=len(source_data['lines']), translatedRows=len(translated))
@@ -378,7 +410,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
                                 'right': {'status': 'ok', 'values': {1: row['right'] or '<nil>'}}}
                                for row in translated]
             provenance = []
-            for binding, row in zip(copied_rows(native.lua.globals().ReplayOutputBindings), translated):
+            for binding, row in zip(bindings, translated):
                 original = binding.get('originalIndex')
                 if isinstance(original, int) and 0 < original <= len(data['lines']):
                     provenance.append({'sourceRow': original, 'nativeRow': data['lines'][original - 1],
@@ -388,6 +420,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
                                'rowProvenance': provenance}}
         outcome['generatedLocales'] = sorted(set(states) - {locale})
         outcome['generationGaps'] = generation
+        expected_rows = {}
         for source in locales:
             if source == locale:
                 continue
@@ -406,7 +439,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
                 if focus_locale is not None and focus_locale not in (source, target):
                     continue
                 rows, error, name = replay.run(render_kind, entity, states[source]['data'], target,
-                    gaps.clean(observation.get('processing')), visible=states[source]['visible'], unit=unit)
+                    processing, visible=states[source]['visible'], unit=unit)
                 if rows or error or not name:
                     context = gaps.missing_player_context(replay, render_kind, entity, states[source]['data'], calls, target, rows) if not error else []
                     record(observation, source, target, 'derived_error' if error else 'missing_catalog' if not name
@@ -422,16 +455,19 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
                 # available. Differences are candidates for review, not automatically bugs.
                 expected = states.get(target)
                 if expected:
-                    decimal = reverse[target].lua.globals().DECIMAL_SEPERATOR
-                    grouping = reverse[target].lua.globals().LARGE_NUMBER_SEPERATOR
-                    decimal = decimal.decode() if decimal is not None else '.'
-                    grouping = grouping.decode() if grouping is not None else ''
-                    before, after = quantities(expected['rows'], decimal, grouping), quantities(returned, decimal, grouping)
+                    if target not in expected_rows:
+                        globals_ = reverse[target].lua.globals()
+                        decimal = (globals_.DECIMAL_SEPERATOR or b'.').decode()
+                        grouping = (globals_.LARGE_NUMBER_SEPERATOR or b'').decode()
+                        expected_rows[target] = (decimal, grouping, quantities(expected['rows'], decimal, grouping),
+                                                 normalized_rows(expected['rows']))
+                    decimal, grouping, before, normalized = expected_rows[target]
+                    after = quantities(returned, decimal, grouping)
                     if before != after:
                         record(observation, source, target, 'numeric_difference', before=before, after=after,
                                evidence={'expected': expected['rows'], 'returned': returned})
                         continue
-                    if normalized_rows(expected['rows']) != normalized_rows(returned):
+                    if normalized != normalized_rows(returned):
                         record(observation, source, target, 'text_difference_values_preserved')
                         continue
                 record(observation, source, target, 'passed')

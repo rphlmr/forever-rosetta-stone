@@ -88,29 +88,35 @@ function Addon:CreateQuestInteractionReader()
                     end
                     cache[native] = region
                 end
-                region:ClearAllPoints()
-                region:SetPoint("TOPLEFT", target, "TOPLEFT", (x - origin.left) * origin.scale + origin.x,
-                    (y - origin.top) * origin.scale + origin.y)
                 region:SetAlpha(native:GetAlpha())
                 if kind == "FontString" then
                     Addon:CopyQuestTextStyle(region, native)
                     region:SetJustifyH(native:GetJustifyH())
                     region:SetJustifyV(native:GetJustifyV())
                     local text = native:GetText()
-                    local translated = translate(native, owner, text)
+                    local translated, rewardName = translate(native, owner, text)
                     region:SetText(translated)
-                    -- Translated text keeps the native width but may need more room: a single-line
-                    -- label widens to fit, wrapped text grows downward, nothing is truncated.
                     local width = native:GetWidth() * origin.scale
-                    if translated ~= text and (not native.GetNumLines or native:GetNumLines() <= 1)
-                        and region.GetUnboundedStringWidth then
-                        width = math.max(width, region:GetUnboundedStringWidth())
-                    end
-                    -- Keep the native box so its vertical justification still centers the text;
-                    -- only translated text taller than that box grows downward.
                     local height = native:GetHeight() * origin.scale
-                    region:SetSize(width, height)
-                    if translated ~= text and region:GetStringHeight() > height then region:SetHeight(0) end
+                    if translated ~= text and rewardName and owner:GetRight() then
+                        -- Fit the name between the icon and the edge of its native reward card.
+                        local card = owner.NameFrame
+                        if not card or not card:GetRight() or not card:GetTop() then card = owner end
+                        local inset = 3
+                        width = math.max(1, (card:GetRight() - x - inset) * origin.scale)
+                        height = math.max(1, (card:GetHeight() - 2 * inset) * origin.scale)
+                        y = card:GetTop() - inset
+                        region:SetWordWrap(true)
+                        region:SetJustifyV("MIDDLE")
+                        region:SetSize(width, height)
+                    else
+                        if translated ~= text and (not native.GetNumLines or native:GetNumLines() <= 1)
+                            and region.GetUnboundedStringWidth then
+                            width = math.max(width, region:GetUnboundedStringWidth())
+                        end
+                        region:SetSize(width, height)
+                        if translated ~= text and region:GetStringHeight() > height then region:SetHeight(0) end
+                    end
                 else
                     region:SetSize(native:GetWidth() * origin.scale, native:GetHeight() * origin.scale)
                     local atlas = native:GetAtlas()
@@ -118,6 +124,9 @@ function Addon:CreateQuestInteractionReader()
                     region:SetTexCoord(native:GetTexCoord())
                     region:SetVertexColor(native:GetVertexColor())
                 end
+                region:ClearAllPoints()
+                region:SetPoint("TOPLEFT", target, "TOPLEFT", (x - origin.left) * origin.scale + origin.x,
+                    (y - origin.top) * origin.scale + origin.y)
                 origin.height = math.max(origin.height or 0, (origin.top - y) * origin.scale + region:GetHeight())
                 region:Show()
             end
@@ -149,10 +158,10 @@ function Addon:CreateQuestInteractionReader()
                 local item = C_TooltipInfo.GetQuestItem(owner.type, owner:GetID())
                 if canaccessallvalues(item) and type(item) == "table" then itemID = item.id end
             end
-            return Addon:IsReadableEntityID(itemID) and ForeverRosettaStoneDB:GetItemName(itemID, locale) or text
+            return Addon:IsReadableEntityID(itemID) and ForeverRosettaStoneDB:GetItemName(itemID, locale) or text, true
         end
         if native == name and owner.rewardSpellID then
-            return ForeverRosettaStoneDB:GetSpellName(owner.rewardSpellID, locale) or text
+            return ForeverRosettaStoneDB:GetSpellName(owner.rewardSpellID, locale) or text, true
         end
         for _, key in ipairs(rewardLabelKeys) do
             if text and text == _G[key] then return Addon:GetClientLabel(key, locale) or text end

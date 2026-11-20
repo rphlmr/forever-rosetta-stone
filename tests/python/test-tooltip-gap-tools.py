@@ -33,6 +33,43 @@ def write_csv(path, rows):
 
 
 class TooltipGapToolTests(unittest.TestCase):
+    def test_compiled_pack_preserves_replay_isolation_and_picks_up_rebuilds(self):
+        from database_harness import DatabaseMetadata, install_metadata
+        from lupa.lua51 import LuaRuntime
+
+        with tempfile.TemporaryDirectory() as directory:
+            metadata = DatabaseMetadata(Path(directory))
+            pack = metadata.pack_root / 'enUS/data.lua'
+            pack.parent.mkdir()
+            cache = {}
+
+            def read_in_fresh_client(expected):
+                lua = LuaRuntime(encoding=None)
+                install_metadata(lua, metadata, compiled_packs=cache)
+                lua.execute(b'''assert(C_AddOns.LoadAddOn("ForeverRosettaStone_Data_enUS"))
+                    assert(testPack.value == ...); testPack.value = 0''', expected)
+
+            pack.write_text('testPack = { value = 1 }')
+            read_in_fresh_client(1)
+            read_in_fresh_client(1)
+            pack.write_text('testPack = { value = 2 }')
+            read_in_fresh_client(2)
+
+    def test_matrix_label_cache_preserves_text_and_id_across_clients(self):
+        from official_tooltip_matrix import cache_catalog
+
+        cache = {}
+        keys = (b'ITEM_BIND_ON_EQUIP', b'MISSING_REPLAY_LABEL')
+        for locale in ('enUS', 'frFR'):
+            replay = gaps.Replay(locale, {})
+            database = replay.database
+            expected = {key: database.GetGlobalStringByKey(database, key, b'frFR') for key in keys}
+            self.assertIsInstance(expected[keys[0]], tuple)
+            self.assertIsNone(expected[keys[1]])
+            cache_catalog(replay, cache)
+            for key in keys:
+                self.assertEqual(database.GetGlobalStringByKey(database, key, b'frFR'), expected[key])
+
     def test_campaign_reuses_examples_and_retains_unloaded_ids(self):
         report = {'groups': [
             {'kind': 'spell', 'exampleIds': [1, 2], 'pattern': 'A'},

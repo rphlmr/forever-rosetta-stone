@@ -19,10 +19,19 @@ for legacy in ('references', 'scripts'):
     assert not (root / legacy).exists(), f"Legacy workspace {legacy}/ must not be recreated; use datasources/ or tools/"
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--unit-only', action='store_true', help='Run unit and integration checks without translation matrices')
+parser.add_argument('--group', choices=('core', 'replays'), help='Run one CI group of the unit suite')
 options, matrix_arguments = parser.parse_known_args()
+if options.group and not options.unit_only:
+    parser.error('--group requires --unit-only')
 if options.unit_only and matrix_arguments:
     parser.error('--unit-only cannot be combined with translation matrix arguments')
 sys.argv = [sys.argv[0]]
+if options.group != 'core':
+    from run_replays import run_replays
+    run_replays()
+if options.group == 'replays':
+    sys.exit(0)
+
 for filename, class_name in (
     ('test-tooltip-regression-corpus.py', 'TooltipRegressionCorpusTests'),
     ('test-clean.py', 'CleanTests'),
@@ -50,28 +59,6 @@ for filename, class_name in (
     ('test-debug-pick-context.py', 'DebugPickContextTests'),
     ('test-api-only-mode.py', 'APIOnlyModeTests'),
     ('test-tooltip-gap-tools.py', 'TooltipGapToolTests'),
-    ('test-captured-tooltip-campaign.py', 'CapturedTooltipCampaignTests'),
-    ('test-captured-tooltip-campaign.py', 'EnglishCapturedTooltipCampaignTests'),
-    ('test-captured-tooltip-campaign.py', 'LegacyCapturedAPITooltipCampaignTests'),
-    ('test-captured-tooltip-campaign.py', 'AllCapturedHoverTests'),
-    ('test-captured-tooltip-campaign.py', 'RemainingCapturedTooltipCampaignTests'),
-    ('test-captured-auras.py', 'CapturedAuraTests'),
-    ('test-tooltip-roundtrip.py', 'TooltipRoundtripTests'),
-    ('test-picked-unit-tooltips.py', 'PickedUnitTooltipTests'),
-    ('test-official-tooltip-matrix.py', 'OfficialTooltipMatrixTests'),
-    ('test-captured-matrix-regressions.py', 'CapturedMatrixRegressionTests'),
-    ('test-captured-bind-location.py', 'CapturedBindLocationTests'),
-    ('test-captured-replay-contexts.py', 'CapturedReplayContextTests'),
-    ('test-captured-german-tooltips.py', 'CapturedGermanTooltipTests'),
-    ('test-captured-native-locales.py', 'CapturedNativeLocaleTests'),
-    ('test-captured-reference-surfaces.py', 'CapturedReferenceSurfaceTests'),
-    ('test-captured-form-name-reuse.py', 'CapturedFormNameReuseTests'),
-    ('test-captured-equipment-labels.py', 'CapturedEquipmentLabelTests'),
-    ('test-captured-literal-percentages.py', 'CapturedLiteralPercentageTests'),
-    ('test-captured-api-spell-templates.py', 'CapturedApiSpellTemplateTests'),
-    ('test-captured-conditional-source-repairs.py', 'CapturedConditionalSourceRepairTests'),
-    ('test-captured-description-variants.py', 'CapturedDescriptionVariantTests'),
-    ('test-captured-context-recapture.py', 'CapturedContextRecaptureTests'),
     ('test-map-hover-location.py', 'MapHoverLocationTests'),
     ('test-client-hotfix.py', 'ClientHotfixTests'),
     ('test-shared-tooltip-rows.py', 'SharedTooltipRowsTests'),
@@ -99,6 +86,7 @@ for filename, class_name in (
     checks = runpy.run_path(str(root / 'tests/python' / filename))
     suite = unittest.defaultTestLoader.loadTestsFromTestCase(checks[class_name])
     assert unittest.TextTestRunner().run(suite).wasSuccessful(), filename + ' failed'
+
 quest_fallbacks = runpy.run_path(str(root / 'tests/python/test-quest-ui-fallback-matrix.py'))
 assert not quest_fallbacks['run_matrix']()['failures'], 'Quest text fallback regressions failed'
 spell_refresh = runpy.run_path(str(root / 'tests/python/test-spell-value-refresh.py'))

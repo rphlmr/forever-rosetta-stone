@@ -128,7 +128,7 @@ local function Update(kind, find, activeFrame, tracker)
         for _, text in ipairs(rows) do tip:AddLine(text, 1, 1, 1, true) end
         Addon[kind .. "TooltipKey"] = key
     end
-    if native and Addon.preferences.tooltipMode == "stacked" then
+    if native and Addon:GetTooltipPresentation(GameTooltip) ~= "separate" then
         Addon:FillStackedTooltip(GameTooltip, tip, kind .. ":" .. key)
         return
     end

@@ -29,7 +29,7 @@ class CapturedContextRecaptureTests(unittest.TestCase):
             shutil.copy2(cls.path, fixtures / cls.path.name)
             cls.observations = list(matrix.observations(fixtures))
             with contextlib.redirect_stdout(io.StringIO()):
-                cls.report = matrix.run(fixtures, directory / 'report')
+                cls.report = matrix.run_observations(cls.observations, directory / 'report')
 
     def test_all_new_applicable_native_cases_pass_every_official_direction(self):
         self.assertEqual(self.report['nativeObservations'], 78)
