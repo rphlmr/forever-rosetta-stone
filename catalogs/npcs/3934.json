@@ -277,6 +277,18 @@
       "scope": "classic-era-and-forever",
       "stage": "gossip",
       "variant": 0
+    },
+    "gossipOption:96518": {
+      "lineId": "gossipOption:96518",
+      "scope": "forever",
+      "stage": "option",
+      "variant": 0
+    },
+    "gossipOption:96520": {
+      "lineId": "gossipOption:96520",
+      "scope": "forever",
+      "stage": "option",
+      "variant": 0
     }
   },
   "factionId": 76,
@@ -1257,7 +1269,9 @@
         "f085ae3f29dd42a4a88f": "Over a thousand years ago a group of troll priests known as the Atal'ai attempted to bring back an ancient blood god named Hakkar the Soulflayer. After the resulting civil war the priests were defeated and exiled to the Swamp of Sorrows. There they erected a temple to Hakkar to prepare for his arrival into the physical world. The dragon Aspect Ysera soon learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's ruins are guarded by the mighty green dragons.\n",
         "f6260472ab035086b639": "Scarlet Monastery lies in the hills northeast of Tirisfal Glades.",
         "f671a6ebdf67c8c9b63f": "The monastery was once a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. \n",
-        "fe82b7ea48b648f043a1": "Love tokens are small messages of affection you can give to amorous town and city folk.  Such people will reward you with a gift of adoration.$B$BOr, if you are already adored by another, then at the least they'll give you a gift of friendship."
+        "fe82b7ea48b648f043a1": "Love tokens are small messages of affection you can give to amorous town and city folk.  Such people will reward you with a gift of adoration.$B$BOr, if you are already adored by another, then at the least they'll give you a gift of friendship.",
+        "gossipOption:96518": "Tell me about dungeons I could explore.",
+        "gossipOption:96520": "Make this inn your home."
       },
       "name": "Innkeeper Boorand Plainswind",
       "subName": "Innkeeper",
@@ -1536,6 +1550,20 @@
             "source": "Spoken",
             "sourceLocale": "enUS",
             "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
+          },
+          "dialogue.gossipOption:96518": {
+            "origin": "original",
+            "source": "ForeverClientObservation",
+            "sourceBuild": "1.60.1.71037",
+            "sourceLocale": "enUS",
+            "sourceRevision": "https://github.com/rphlmr/forever-rosetta-stone/issues/15"
+          },
+          "dialogue.gossipOption:96520": {
+            "origin": "original",
+            "source": "ForeverClientObservation",
+            "sourceBuild": "1.60.1.71037",
+            "sourceLocale": "enUS",
+            "sourceRevision": "https://github.com/rphlmr/forever-rosetta-stone/issues/15"
           },
           "name": {
             "origin": "original",
@@ -4855,7 +4883,9 @@
         "f085ae3f29dd42a4a88f": "Bin yıldan uzun süre önce Atal’ai adlı trol rahipleri kadim kan tanrısı Ruh Yüzücü Hakkar’ı geri getirmeye çalıştı. Ardından gelen iç savaştan sonra yenilip Swamp of Sorrows’a sürüldüler. Orada Hakkar’ın fiziksel dünyaya gelişine hazırlanmak için bir tapınak kurdular. Ejderha Aspekti Ysera planlarını öğrenip tapınağı bataklığın altına yıktı. Bugün bile harabeleri güçlü yeşil ejderhalar korur.\n",
         "f6260472ab035086b639": "Scarlet Monastery, Tirisfal Glades’in kuzeydoğusundaki tepelerdedir.",
         "f671a6ebdf67c8c9b63f": "Manastır bir zamanlar öğrenim ve aydınlanma merkeziydi. Üçüncü Savaş sırasında ölümsüz Bela’nın yükselişiyle huzurlu manastır fanatik Scarlet Crusade’in kalesine dönüştürüldü. Haçlılar, ittifakları ne olursa olsun insan dışı hiçbir ırka tahammül etmez. Bütün yabancıların ölümsüz vebasının olası taşıyıcıları olduğuna ve yok edilmeleri gerektiğine inanırlar.\n",
-        "fe82b7ea48b648f043a1": "Aşk simgeleri, âşık kasaba ve şehir halkına verebileceğin küçük sevgi mesajlarıdır. Bu kişiler seni bir hayranlık hediyesiyle ödüllendirir.$B$BYa da zaten başka biri sana hayransa en azından bir arkadaşlık hediyesi verirler."
+        "fe82b7ea48b648f043a1": "Aşk simgeleri, âşık kasaba ve şehir halkına verebileceğin küçük sevgi mesajlarıdır. Bu kişiler seni bir hayranlık hediyesiyle ödüllendirir.$B$BYa da zaten başka biri sana hayransa en azından bir arkadaşlık hediyesi verirler.",
+        "gossipOption:96518": "Keşfedebileceğim zindanlardan bahseder misin?",
+        "gossipOption:96520": "Bu hanı evim yapmak istiyorum."
       },
       "name": "Hancı Boorand Plainswind",
       "translationMetadata": {
@@ -5086,6 +5116,16 @@
             "sourceLocale": "enUS"
           },
           "dialogue.fe82b7ea48b648f043a1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.gossipOption:96518": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.gossipOption:96520": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"

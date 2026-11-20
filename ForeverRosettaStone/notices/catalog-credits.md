@@ -34,6 +34,9 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
 
 ## Community translations
 
+- devteabct78 contributed the Turkish name for Greater Plainstrider in
+  [issue #14](https://github.com/rphlmr/forever-rosetta-stone/issues/14).
+
 - [ClassicUA](https://github.com/greenya/ClassicUA/tree/1770d208ad853d23d61105cf510d53804770d916),
   revisions `d9bf29572a85957fd69085be0cec28262cba0c87` and
   `1770d208ad853d23d61105cf510d53804770d916`: Ukrainian text and translation references.

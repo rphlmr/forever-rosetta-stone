@@ -91,6 +91,35 @@ do
         "catalog dialogue refuses unmatched NPC, phase and wording")
     db.GetQuestDialogue, UnitSex, GetLocale = lookup, unitSex, locale
 end
+do
+    local getLocale, getTargetLocale, getUnitGUID = GetLocale, Addon.GetTargetLocale, UnitGUID
+    local getUnitSex = UnitSex
+    local getText, getOptions, getActiveQuests = C_GossipInfo.GetText, C_GossipInfo.GetOptions, C_GossipInfo.GetActiveQuests
+    GetLocale = function() return "enUS" end
+    Addon.GetTargetLocale = function() return "trTR" end
+    UnitGUID = function(unit) return unit == "npc" and "Creature-0-33177-1-576977-3934-5C27864BF2" or nil end
+    UnitSex = function() return 2 end
+    C_GossipInfo.GetText = function() return "As the wind on the plains, you are always welcome here." end
+    C_GossipInfo.GetActiveQuests = function() return {} end
+    C_GossipInfo.GetOptions = function()
+        return {
+            { gossipOptionID = 96520, orderIndex = 2, icon = 132052, name = "Make this inn your home." },
+            { gossipOptionID = 96519, orderIndex = 3, icon = 132060, name = "Let me browse your goods." },
+            { gossipOptionID = 96518, orderIndex = 5, icon = 132053, name = "Tell me about dungeons I could explore." },
+        }
+    end
+    local database = ForeverRosettaStoneDB
+    check(database:GetNpcName(3244, "trTR") == "Büyük Ovagezgini", "Turkish Greater Plainstrider uses the community name")
+    local dialogue = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(dialogue and #dialogue == 4, "Boorand's Turkish dialogue has no missing-options warning")
+    check(dialogue[2].text == "Bu hanı evim yapmak istiyorum."
+        and dialogue[3].text == "Mallarına bakmak istiyorum."
+        and dialogue[4].text == "Keşfedebileceğim zindanlardan bahseder misin?",
+        "Boorand's three visible options are translated in Turkish")
+    GetLocale, Addon.GetTargetLocale, UnitGUID = getLocale, getTargetLocale, getUnitGUID
+    UnitSex = getUnitSex
+    C_GossipInfo.GetText, C_GossipInfo.GetOptions, C_GossipInfo.GetActiveQuests = getText, getOptions, getActiveQuests
+end
 check(Addon:TransitionQuestInteraction(hidden, { type = "dismiss" }) == hidden, "hidden refuses dismissal")
 check(Addon:TransitionQuestInteraction(hidden, { type = "present", questID = 179, context = "gossip" }) == hidden,
     "selection without a native source cannot become visible")

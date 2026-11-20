@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### Translations
+
+- Renamed Greater Plainstrider to **Büyük Ovagezgini** in Turkish, as suggested by [@devteabct78](https://github.com/rphlmr/forever-rosetta-stone/issues/14).
+- Added the two missing Turkish dialogue options for Innkeeper Boorand Plainswind. [Issue #15](https://github.com/rphlmr/forever-rosetta-stone/issues/15)
+
 ## [1.2.0] - 2026-11-20
 
 ### Added
