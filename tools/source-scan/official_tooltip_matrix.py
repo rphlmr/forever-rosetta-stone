@@ -270,6 +270,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
         path = ('native_to_target' if source == observation['locale'] else
                 'return_to_native' if target == observation['locale'] else 'cross_target')
         by_path[path][status] += 1
+        outcome['byPath'].setdefault(path, Counter())[status] += 1
         if status not in ('passed', 'text_difference_values_preserved'):
             event = {'case': fingerprint(observation), 'source': source, 'target': target,
                      'status': status, 'kind': observation['kind'], 'id': observation['id'],
@@ -295,7 +296,7 @@ def run(directory, output, limit=None, focus_locale=None, case_keys=None, locale
         if number % 25 == 1:
             print(json.dumps({'case': number, 'total': len(selected), 'seconds': round(time.monotonic()-started, 1), 'counts': dict(counts)}), flush=True)
         locale, kind, entity = observation['locale'], observation['kind'], observation['id']
-        outcome = {'key': key, 'locale': locale, 'kind': kind, 'id': entity, 'sources': observation['sources']}
+        outcome = {'key': key, 'locale': locale, 'kind': kind, 'id': entity, 'sources': observation['sources'], 'byPath': {}}
         outcomes.append(outcome)
         if entity is None or 'data' not in observation:
             status = 'not_applicable' if kind == 'npc' else 'missing_native_context'
