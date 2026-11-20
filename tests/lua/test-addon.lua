@@ -353,6 +353,10 @@ function CreateFrame(kind, name, parent, template)
     }, Frame)
     frames[#frames + 1] = frame
     if name then _G[name] = frame end
+    if template == "NewFeatureLabelTemplate" then
+        frame.Label = frame:CreateFontString(nil, "OVERLAY")
+        frame.Label:SetText("NEW")
+    end
     if template == "GameTooltipTemplate" or template == "ShoppingTooltipTemplate"
         or template == "TooltipBackdropTemplate" then
         frame.TextLeft1 = frame:CreateFontString(nil, "ARTWORK")
@@ -773,6 +777,10 @@ function Settings.CreateCheckbox(category, setting, tooltip)
     local initializer = { kind = "checkbox", setting = setting, tooltip = tooltip }
     function initializer:SetParentInitializer(parent, predicate)
         self.parentInitializer, self.modifyPredicate = parent, predicate
+        self.displayedEnabled = predicate()
+    end
+    function initializer:AddModifyPredicate(predicate)
+        self.modifyPredicate = predicate
         self.displayedEnabled = predicate()
     end
     function initializer:AddEvaluateStateCVar(variable)

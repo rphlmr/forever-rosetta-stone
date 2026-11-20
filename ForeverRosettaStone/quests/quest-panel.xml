@@ -21,6 +21,14 @@
             </OnShow>
         </Scripts>
     </Frame>
+    <Frame name="ForeverRosettaStoneSettingsPresentationListTemplate" virtual="true">
+        <Size y="96"/>
+        <Scripts>
+            <OnShow>
+                ForeverRosettaStone:AttachRadioList(self, "tooltipPresentation");
+            </OnShow>
+        </Scripts>
+    </Frame>
     <Frame name="ForeverRosettaStoneSettingsPositionListTemplate" virtual="true">
         <Size y="30"/>
         <Scripts>

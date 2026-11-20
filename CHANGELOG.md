@@ -8,7 +8,7 @@
 
   ![Show translation only enabled with a French item tooltip in the live preview](https://raw.githubusercontent.com/rphlmr/forever-rosetta-stone/main/docs/media/changelog/tooltip-translation-only.png)
 
-- **Translation first** puts the translation above the original when both texts share a tooltip.
+- **Above the original** puts the translation first when both texts share a tooltip.
 
   ![Translation first enabled with French above English in the same item tooltip](https://raw.githubusercontent.com/rphlmr/forever-rosetta-stone/main/docs/media/changelog/tooltip-translation-first.png)
 
@@ -18,7 +18,7 @@
 
 ### Changed
 
-- The NPC tooltip position setting now sits directly below **Separate tooltip**.
+- After choosing a language, pick one tooltip layout: translation below or above the original, a separate tooltip, or translation only. Full text and the translation header are grouped under **Tooltip content**.
 - Quest, NPC dialogue, and book translations share a reading layout with aligned parchment and scrollbars. On a gamepad, use LT and RT to move focus between panels, B to close the focused translation, and the bookmark to reopen it. The translated book follows the page you turn in the original.
 - Use the Options button on quest, dialogue, and book translations to report an issue, including when a translation is missing.
 - Item reports from the picker include available transmogrification data for your own equipment and for inspected players.

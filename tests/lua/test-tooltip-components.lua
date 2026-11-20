@@ -1111,7 +1111,7 @@ Addon:SetTooltipMode("separate")
 equal(GameTooltip:GetHeight(), 40, "leaving Stacked immediately restores native tooltip height without reload")
 equal(spec.tip:IsShown(), true, "selecting Separate immediately shows the companion")
 for _, mode in ipairs({ "stacked", "separate", "stacked", "separate" }) do
-    Addon.settings.tooltipMode:SetValue(mode)
+    Addon:SetTooltipMode(mode)
     equal(Addon.lifecycle, "ready", "live display changes keep the addon running: " .. mode)
     if mode == "stacked" then
         equal(GameTooltip:GetHeight(), 120, "selecting Stacked after Separate immediately resizes the tooltip")
@@ -1318,7 +1318,7 @@ for _, mode in ipairs({ "stacked", "separate", "stacked", "separate" }) do
     SettingsPanel:Show()
     equal(not Addon:IsTooltipBlocked(), true, "opening settings permits live translations")
     equal(spec.tip:IsShown(), true, "opening settings preserves the existing separate translation")
-    Addon.settings.tooltipMode:SetValue(mode)
+    Addon:SetTooltipMode(mode)
     if mode == "stacked" then
         equal(GameTooltip:GetLeftLine(5):GetText(), "Fireball", "settings changes the visible tooltip to Stacked")
     else

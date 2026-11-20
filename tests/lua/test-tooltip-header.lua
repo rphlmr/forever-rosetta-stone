@@ -68,7 +68,7 @@ translated:AddDoubleLine("Translated item", "Value")
 translated:Show()
 local previousMode = Addon.preferences.tooltipMode
 Addon:SetTooltipMode("stacked")
-Addon.settings.stackedTranslationFirst:SetValue(true)
+Addon:SetStackedTranslationFirst(true)
 Addon:FillStackedTooltip(source, translated, "translation-first")
 local saved = Addon.stackedTooltips[source]
 local block = saved.block
@@ -98,7 +98,7 @@ equal(select(3, source:GetPadding()), left + 1, "cleanup preserves another addon
 equal(block:IsShown(), false, "native clear hides the translated block")
 equal(select(4, source:GetPadding()), 3, "native clear restores the most recent base padding")
 equal(select(2, source:GetPadding()), 9, "native clear restores the entire base padding")
-Addon.settings.stackedTranslationFirst:SetValueToDefault()
+Addon:SetStackedTranslationFirst(false)
 Addon:SetTooltipMode(previousMode)
 source:ClearPadding()
 source:Hide()
