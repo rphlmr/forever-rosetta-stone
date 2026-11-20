@@ -19,7 +19,7 @@
 ### Translations
 
 - Added 20,209 dialogue entries across 4,493 quests and 1,565 NPCs in all 18 bundled languages.
-- Refined 1,592 dialogue translations to better match quest and item wording, and corrected lines shown in the wrong language.
+- Refined 7,949 dialogue translations for quest and item terminology, meaning, and character gender. The review covered all 166,206 AI-translated dialogue entries.
 - Expanded translations for 462 books and letters across all 18 bundled languages, covering 1,210 pages.
 - Added 2 book titles and 61 pages to the catalog.
 
