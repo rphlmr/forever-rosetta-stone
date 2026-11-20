@@ -82,11 +82,16 @@ class CapturedReplayContextTests(unittest.TestCase):
                     visible=matrix.visible(capture.get('visible', {})), processing=capture.get('processingInfo'),
                     globals={}, calls={}, kind='spell', id=capture['data']['id'])
 
-    def render(self, observation, target, source=None, data=None, visible=None):
+    def new_replay(self, observation, source=None):
         replay = gaps.Replay(source or observation['locale'],
             {key: value for key, value in observation['globals'].items() if value != '<nil>'} if not source else {},
             tooltip_types=observation.get('types'))
         replay.install_calls(observation['calls'], observation.get('unit'))
+        return replay
+
+    def render(self, observation, target, source=None, data=None, visible=None, *, replay=None):
+        if replay is None:
+            replay = self.new_replay(observation, source)
         kind = 'spell' if observation['kind'] == 'aura' else observation['kind']
         missing, error, _ = replay.run(kind, observation['id'], data or gaps.clean(observation['data']), target,
             gaps.clean(observation.get('processing')), observation.get('visible') if visible is None else visible,
@@ -191,12 +196,14 @@ class CapturedReplayContextTests(unittest.TestCase):
     def test_actual_cosmetic_known_requirement_uses_owned_item_class_in_every_direction(self):
         observation = self.cases['item', 280404]
         original = copy.deepcopy(observation)
+        native = self.new_replay(observation)
         for source in sorted(matrix.OFFICIAL_LOCALES - {observation['locale']}):
             with self.subTest(derivedSource=source):
-                replay, rows = self.render(observation, source)
+                replay, rows = self.render(observation, source, replay=native)
                 data, visible = self.derived(replay, observation, rows)
+                derived = self.new_replay(observation, source)
                 for target in sorted(matrix.OFFICIAL_LOCALES - {source}):
-                    self.render(observation, target, source, data, visible)
+                    self.render(observation, target, source, data, visible, replay=derived)
         self.assertEqual(original, observation)
 
     def test_actual_windfury_capture_round_trips_with_the_fixed_extra_attack(self):
