@@ -548,6 +548,24 @@ local function FindRewardText(text, target)
 end
 local spellName = ForeverRosettaStoneDB:GetSpellName(688, Addon:GetTargetLocale())
 check(spellName and FindRewardText(spellName), "NPC spell rewards show the catalog spell name")
+-- The English source fits on one line, while the French name exceeds the card.
+local getSpellName = ForeverRosettaStoneDB.GetSpellName
+ForeverRosettaStoneDB.GetSpellName = function() return "Invocation d'un diablotin" end
+spellReward.Name:SetText("Summon Imp")
+spellReward.NameFrame = spellReward:CreateTexture()
+spellReward.NameFrame.left, spellReward.NameFrame.top = 65, 440
+spellReward.NameFrame:SetSize(100, 40)
+Addon:UpdateQuestInteraction()
+local wrappedName = FindRewardText("Invocation d'un diablotin")
+local rewardScale = nativeRewards:GetEffectiveScale() / reader.body.child:GetEffectiveScale()
+check(wrappedName and wrappedName:CanWordWrap()
+    and wrappedName:GetUnboundedStringWidth() > wrappedName:GetWidth()
+    and wrappedName:GetWidth() <= (spellReward.NameFrame:GetRight() - spellReward.Name:GetLeft()) * rewardScale
+    and wrappedName:GetHeight() <= spellReward.NameFrame:GetHeight() * rewardScale,
+    "long translated names wrap inside the native reward card")
+ForeverRosettaStoneDB.GetSpellName = getSpellName
+spellReward.Name:SetText("Invocation d'un diablotin")
+Addon:UpdateQuestInteraction()
 check(FindRewardText(Addon:GetClientLabel("REWARD_SPELL", Addon:GetTargetLocale())),
     "spell reward headers translate by their GlobalString key")
 local spellButton
@@ -567,6 +585,7 @@ local function RewardTitle()
     return rewardTip:IsShown() and rewardTip.TextLeft1 and rewardTip.TextLeft1:GetText()
 end
 spellButton:Fire("OnEnter")
+check(rewardTip:GetAlpha() == 1 and spellSource:GetAlpha() == 0, "only the spell measurement source is transparent")
 check(RewardTitle() == spellName and not GameTooltip:IsOwned(spellButton),
     "hovering a mirrored spell shows only the translated reward tooltip, like the journal")
 spellButton:Fire("OnLeave")

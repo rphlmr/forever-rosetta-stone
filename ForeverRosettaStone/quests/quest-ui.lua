@@ -722,7 +722,7 @@ function Addon:ShowTranslationTooltip()
         self.tooltipKey = key
     end
 
-    if self.preferences.tooltipMode == "stacked" or self.preferences.translationOnly then
+    if self:GetTooltipPresentation(GameTooltip) ~= "separate" then
         self:FillStackedTooltip(GameTooltip, tip, "quest:" .. key .. ":" .. self.preferences.tooltipCoverage)
         PlaceHeaderWithQuestTooltip(self)
         return

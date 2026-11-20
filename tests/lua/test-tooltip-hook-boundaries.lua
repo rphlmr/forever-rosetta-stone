@@ -48,6 +48,7 @@ for _, mode in ipairs({ "baseline", "separate", "no-stats", "no-method-hooks", "
         setfenv(assert(loadfile("ForeverRosettaStone/" .. path .. ".lua")), env)("ForeverRosettaStone", addon)
     end
     Load("core/safety")
+    Load("tooltips/tooltip-layout")
     Load("tooltips/tooltip-companions")
     Load("tooltips/components/character-stat-tooltip")
     Load("tooltips/components/appearance-tooltip")

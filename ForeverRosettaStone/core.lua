@@ -84,6 +84,13 @@ function Addon:ToggleReading()
     end)
 end
 
+local function ReleaseReaderControllers()
+    for _, key in ipairs({ "questInteractionReader", "questInteractionBookmark", "bookReader", "bookBookmark" }) do
+        local reader = Addon[key]
+        if reader then pcall(reader.ReleaseController, reader) end
+    end
+end
+
 local function Initialize()
     Addon.apiOnly = RequestedAPIOnly()
     if Addon:IsAPIOnly() then
@@ -99,6 +106,8 @@ local function Initialize()
     if Addon.InitializeTooltipLabels then Addon:InitializeTooltipLabels() end
     Addon.current = Addon:CreateQuestState()
     Addon.questInteractionState, Addon.questInteractionReader = { mode = "hidden" }, nil
+    Addon.questInteractionBookmark, Addon.bookBookmark, Addon.bookReader = nil, nil, nil
+    Addon.bookReaderState, Addon.bookItemCandidate, Addon.openBookCache = nil, nil, nil
     Addon.contentKey, Addon.tooltipKey = nil, nil
     Addon:CreateUI()
     Addon:CreateRewardTooltips()
@@ -195,9 +204,7 @@ local function Initialize()
         -- A failure in combat must still release native focus after combat ends.
         if event == "PLAYER_REGEN_ENABLED" and Addon.lifecycle == "suspended" then
             pcall(Addon.ReleaseControllerFocus, Addon)
-            if Addon.questInteractionReader then
-                pcall(Addon.questInteractionReader.ReleaseController, Addon.questInteractionReader)
-            end
+            ReleaseReaderControllers()
             return
         end
 
@@ -222,6 +229,7 @@ function Addon:Restart()
 
     if not self:MoveLifecycle("reset") then return end
 
+    ReleaseReaderControllers()
     self.generation = self.generation + 1
     if self.questReport then
         self.questReport.frame:Hide()

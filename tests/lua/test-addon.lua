@@ -3001,4 +3001,20 @@ do
     Addon.Run = run
 end
 
+do
+    local oldBook = Addon:GetBookBookmark()
+    local oldDialogue = Addon:GetQuestInteractionBookmark()
+    Addon:Restart()
+    equal(Addon.lifecycle, "ready", "reset recreates the reading UI")
+    equal(Addon.bookReader, nil, "book reader is recreated on demand after reset")
+    equal(Addon:GetBookBookmark() ~= oldBook, true, "book bookmark belongs to the current generation")
+    equal(Addon:GetQuestInteractionBookmark() ~= oldDialogue, true, "dialogue bookmark belongs to the current generation")
+    local calls = 0
+    local update = Addon.UpdateBookReader
+    Addon.UpdateBookReader = function() calls = calls + 1 end
+    Addon.bookBookmark:Fire("OnClick")
+    equal(calls, 1, "clicking the new book bookmark opens the reader after reset")
+    Addon.UpdateBookReader = update
+end
+
 print("PASS: " .. checks .. " assertions (Lua 5.1; real addon renderer, mocked WoW APIs and templates)")

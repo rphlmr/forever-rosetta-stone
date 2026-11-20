@@ -83,6 +83,20 @@ function Addon:GetTooltipTranslationLabel()
     return "|T" .. ICON .. ":14:14:0:1|t " .. self:GetTranslationLanguageLabel()
 end
 
+function Addon:GetTooltipDisplayMode(source)
+    local spec = self.nameTooltips and self.nameTooltips[source]
+    local primary = spec and spec.group and spec.group[1] or source
+    if self.debugPreviewSource and primary == self.debugPreviewSource then return self.debugPreviewMode end
+    return self.preferences and self.preferences.tooltipMode or "stacked"
+end
+
+function Addon:GetTooltipPresentation(source)
+    if self.preferences and self.preferences.translationOnly then return "replacement" end
+    if self:GetTooltipDisplayMode(source) == "separate" then return "separate" end
+    if self.preferences and self.preferences.stackedTranslationFirst then return "above" end
+    return "below"
+end
+
 function Addon:ShouldShowTranslationHeader()
     return not self.preferences or (not self.preferences.translationOnly and self.preferences.translationHeader ~= false)
 end
@@ -200,19 +214,24 @@ function Addon:AppendTooltipExtraRows(spec)
     end
 end
 
+local function HasInteractiveDescendant(frame, source, block)
+    if not frame.GetChildren then return false end
+    for _, child in ipairs({ frame:GetChildren() }) do
+        if child ~= source.NineSlice and child ~= source.CompareHeader and child ~= block
+            and not child:IsForbidden() and child:IsShown() then
+            if (child.IsMouseEnabled and child:IsMouseEnabled())
+                or (child.IsMouseClickEnabled and child:IsMouseClickEnabled())
+                or (child.IsMouseMotionEnabled and child:IsMouseMotionEnabled())
+                or HasInteractiveDescendant(child, source, block) then return true end
+        end
+    end
+    return false
+end
+
 function Addon:HasLiveTooltipWidgets(source, tip)
     local inserted = source.insertedFrames
     if canaccessallvalues(inserted) and type(inserted) == "table" and #inserted > 0 then return true end
-    -- Passive textures and their holder frames can decorate otherwise copyable rows.
-    if not source.GetChildren then return false end
-    for _, child in ipairs({ source:GetChildren() }) do
-        if child ~= source.NineSlice and child ~= source.CompareHeader and child ~= (tip and tip.stackedTranslationBlock)
-            and not child:IsForbidden() and child:IsShown()
-            and ((child.IsMouseEnabled and child:IsMouseEnabled())
-                or (child.IsMouseClickEnabled and child:IsMouseClickEnabled())
-                or (child.IsMouseMotionEnabled and child:IsMouseMotionEnabled())) then return true end
-    end
-    return false
+    return HasInteractiveDescendant(source, source, tip and tip.stackedTranslationBlock)
 end
 
 local function GetOverlayPadding(source)
@@ -224,6 +243,19 @@ end
 
 local function SamePadding(a, b)
     return a and b and a[1] == b[1] and a[2] == b[2] and a[3] == b[3] and a[4] == b[4]
+end
+
+-- Another addon may update one edge while leaving our reservation on the others.
+local function GetBasePadding(current, saved)
+    local base = {}
+    for edge = 1, 4 do
+        if saved.appliedPadding and current[edge] == saved.appliedPadding[edge] then
+            base[edge] = saved.basePadding[edge]
+        else
+            base[edge] = current[edge]
+        end
+    end
+    return base
 end
 
 local function SetOverlayPadding(source, padding, refresh)
@@ -239,14 +271,13 @@ end
 function Addon:RefreshStackedTranslationFirst(source, saved)
     local current = GetOverlayPadding(source)
     if not current then return end
-    local hasOurPadding = SamePadding(current, saved.appliedPadding)
-    local base = hasOurPadding and saved.basePadding or current
+    local base = GetBasePadding(current, saved)
     local nativeWidth = source:GetWidth() - (current[1] - base[1])
     local block = saved.block
     local padding = { base[1] + math.max(0, block:GetWidth() - nativeWidth),
         base[2], base[3], base[4] + block:GetHeight() }
+    saved.basePadding, saved.appliedPadding = base, padding
     if not SamePadding(current, padding) then
-        saved.basePadding, saved.appliedPadding = base, padding
         SetOverlayPadding(source, padding, true)
     end
 end
@@ -401,8 +432,10 @@ function Addon:ClearStackedTooltip(source, nativeCleared, owner)
     end
     if saved.block then
         saved.block:Hide()
-        if not source:IsForbidden() and SamePadding(GetOverlayPadding(source), saved.appliedPadding) then
-            SetOverlayPadding(source, saved.basePadding, not nativeCleared)
+        local current = not source:IsForbidden() and GetOverlayPadding(source)
+        if current then
+            local base = GetBasePadding(current, saved)
+            if not SamePadding(current, base) then SetOverlayPadding(source, base, not nativeCleared) end
         end
         return
     end
@@ -420,36 +453,41 @@ function Addon:ClearStackedTooltip(source, nativeCleared, owner)
     if source:IsShown() then RefreshTooltipLayout(source) end
 end
 
-function Addon:FillStackedTooltip(source, tip, key)
+function Addon:ResolveStackedPresentation(source, tip, requested)
+    if requested == "replacement" and not self:HasLiveTooltipWidgets(source, tip) then return "replacement" end
+    if (requested == "above" or requested == "replacement")
+        and source:IsShown() and source.GetPadding and source.SetPadding
+        and GetOverlayPadding(source) then return "above" end
+    return "below"
+end
+
+function Addon:FillStackedTooltip(source, tip, key, presentation)
     if not source or not tip then return end
     local showHeader = self:ShouldShowTranslationHeader()
-    local onlyRequested = self.preferences and self.preferences.translationOnly
-    local preserveWidgets = onlyRequested and self:HasLiveTooltipWidgets(source, tip)
-    local translationOnly = onlyRequested and not preserveWidgets
-    local translationFirst = (preserveWidgets or (not translationOnly and self.preferences and self.preferences.stackedTranslationFirst))
-        and source:IsShown() and source.GetPadding and source.SetPadding and GetOverlayPadding(source) ~= nil
+    presentation = presentation or self:ResolveStackedPresentation(source, tip, self:GetTooltipPresentation(source))
     self.stackedTooltips = self.stackedTooltips or {}
     local previous = self.stackedTooltips[source]
     if previous and previous.owner == tip and previous.key == key and previous.showHeader == showHeader
-        and previous.translationFirst == translationFirst and previous.translationOnly == translationOnly
+        and previous.presentation == presentation
         and previous.numLines == source:NumLines() then
         self:RefreshStackedTooltip(source, previous)
         if not previous.replacement then tip:Hide() end
         return
     end
-    if onlyRequested and previous and previous.replacement and previous.owner == tip then
-        if preserveWidgets then RestoreTooltipOriginal(tip) end
+    if previous and previous.replacement and previous.owner == tip then
+        -- Hiding the companion here can discard the lines needed by the next presentation.
+        if presentation ~= "replacement" then RestoreTooltipOriginal(tip) end
         self.stackedTooltips[source] = nil
     else
         self:ClearStackedTooltip(source)
     end
     local saved = { key = key, owner = tip, styles = {}, showHeader = showHeader,
-        translationFirst = translationFirst, translationOnly = translationOnly, preserveWidgets = preserveWidgets }
-    if translationOnly then
+        presentation = presentation }
+    if presentation == "replacement" then
         if not ReplaceTooltipOriginal(source, tip, true) then tip:Hide(); return end
         saved.replacement = true
     end
-    if translationFirst then
+    if presentation == "above" then
         saved.block = BuildStackedTranslationBlock(source, tip, showHeader)
     end
     if saved.replacement or saved.block then

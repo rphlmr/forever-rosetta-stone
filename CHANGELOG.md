@@ -26,10 +26,12 @@
 ### Fixed
 
 - Fixed the translation panel closing when turning pages in books.
+- Book and NPC dialogue bookmarks work again after `/frs reset`.
+- Long item and spell names wrap inside quest reward buttons. Hovering a spell reward shows its translated tooltip.
 - Guard dialogue keeps the game's option order and spacing. Missing option translations are identified, and Ironforge guards show the correct directions prompt.
 - Fixed quest and dialogue tooltips briefly appearing as their translation panel opens.
 - Quest tooltips on the map and in the quest list switch to the translation as soon as the tooltip opens, reducing flicker during gamepad navigation.
-- Translated equipment comparisons stay beside the item tooltip and retain supported rows and controls added by other addons.
+- Translated equipment comparisons stay beside the item tooltip and show updated values from other addons. When a tooltip contains interactive controls, **Show translation only** keeps them visible.
 - The translated section of talent tooltips omits purchase requirements and their extra blank lines.
 - Fixed untranslated appearance names under the transmogrification heading for supported equipped and inspected items.
 

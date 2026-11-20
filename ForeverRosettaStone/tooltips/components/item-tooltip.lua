@@ -24,7 +24,7 @@ Addon:RegisterNameTooltipComponent({
         end
         return Addon.itemTooltipPlacements[context][mode]
     end,
-    AfterFill = function(spec) Addon:FillTooltipComparison(spec) end,
+    AfterFill = function(spec, presentation) Addon:FillTooltipComparison(spec, presentation) end,
     GetName = function(id, locale) return ForeverRosettaStoneDB:GetItemName(id, locale) end,
     ResolveData = function(_, data)
         if (data.type == Enum.TooltipDataType.Item or data.type == Enum.TooltipDataType.Toy)

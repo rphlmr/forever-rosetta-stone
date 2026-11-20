@@ -154,13 +154,13 @@ function Addon:TranslateComparisonText(text)
     if GetLocale() == self:GetTargetLocale() then return text end
 end
 
-function Addon:FillTooltipComparison(spec)
+function Addon:FillTooltipComparison(spec, presentation)
     local source, tip = spec.source, spec.tip
     if tip.CompareHeader then
         local header = source.CompareHeader
         local shown = header and header:IsShown()
         tip.CompareHeader:SetShown(shown
-            and (self.preferences.translationOnly or self:GetTooltipDisplayMode(source) == "separate"))
+            and (presentation == "replacement" or presentation == "separate"))
         if shown and header.Label and tip.CompareHeader.Label then
             local text = header.Label:GetText()
             tip.CompareHeader.Label:SetText(self:TranslateComparisonText(text) or text)
@@ -171,8 +171,8 @@ function Addon:FillTooltipComparison(spec)
     end
     spec.renderedComparisonLines = nil
     if spec.kind ~= "item" or self.preferences.tooltipCoverage == "name" then return end
-    for index, row in ipairs(GetSummaryLines(source, self.preferences.translationOnly)) do
-        if self.preferences.translationOnly then
+    for index, row in ipairs(GetSummaryLines(source, presentation == "replacement")) do
+        if presentation == "replacement" then
             spec.renderedComparisonLines = spec.renderedComparisonLines or {}
             spec.renderedComparisonLines[row.line] = true
         end

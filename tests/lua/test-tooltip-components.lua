@@ -1240,6 +1240,11 @@ for _, pair in ipairs({
             "decorated addon data remains below the translated comparison")
         equal(replacement:GetRightLine(replacement:NumLines()):GetText(), "Addon value",
             "the addon row keeps both columns through the comparison renderer")
+        comparison:GetRightLine(comparison:NumLines()):SetText("Updated value")
+        comparison:Show()
+        context.flushTimers()
+        equal(replacement:GetRightLine(replacement:NumLines()):GetText(), "Updated value",
+            "a native Show refreshes addon values changed in place")
         local mainTip = Addon.stackedTooltips[primary].owner
         local mainLeft, mainTop = mainTip.left, mainTip.top
         local compareLeft, compareTop = comparison.left, comparison.top
