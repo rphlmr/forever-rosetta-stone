@@ -13,6 +13,9 @@ Run from the repository root:
 # Unit/integration checks only. Does not run translation matrices.
 uv run --no-project --with lupa==2.8 python tests/run-tests.py --unit-only
 
+# Replay every tooltip suite across three local worker processes, as in CI.
+uv run --no-project --with lupa==2.8 python tests/python/run_replays.py --workers 3
+
 # Focused checks can run directly.
 uv run --no-project --with lupa==2.8 python tests/python/test-lua-database.py
 uv run --no-project --with lupa==2.8 python tests/python/test-release.py

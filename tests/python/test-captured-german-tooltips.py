@@ -28,7 +28,7 @@ class CapturedGermanTooltipTests(unittest.TestCase):
             shutil.copy2(fixture, fixtures)
             cls.observations = list(matrix.observations(fixtures))
             with contextlib.redirect_stdout(io.StringIO()):
-                cls.report = matrix.run(fixtures, directory / 'report')
+                cls.report = matrix.run_observations(cls.observations, directory / 'report')
 
     def test_finished_native_capture_keeps_real_player_context(self):
         self.assertEqual(self.capture['source']['locale'], 'deDE')

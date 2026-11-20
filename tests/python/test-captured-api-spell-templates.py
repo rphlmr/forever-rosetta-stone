@@ -24,13 +24,14 @@ class CapturedApiSpellTemplateTests(LiveValueHarness, unittest.TestCase):
         cls.prior = cls.evidence['previousNativeTemplates']
         cls.rendered = {locale: row['document']['description'] for locale, row in cls.evidence['responses'].items()}
         cls.recovered = infer_leading_percentage(cls.known, cls.rendered, cls.prior)
-        cls.observations = [o for o in matrix.observations(ROOT / 'tests/fixtures/tooltip-campaign')
+        observations = list(matrix.observations(ROOT / 'tests/fixtures/tooltip-campaign'))
+        cls.observations = [o for o in observations
                             if o['kind'] == 'spell' and o['id'] == 408498]
         keys = {matrix.fingerprint(o) for o in cls.observations}
         (ROOT / 'datasources/imports').mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT / 'datasources/imports') as directory:
             with contextlib.redirect_stdout(io.StringIO()):
-                cls.report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report', case_keys=keys)
+                cls.report = matrix.run_observations(observations, Path(directory) / 'report', case_keys=keys)
 
     def test_all_real_game_variants_pass_all_official_directions(self):
         self.assertTrue(self.report['selectedCases'])

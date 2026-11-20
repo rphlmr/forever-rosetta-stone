@@ -22,7 +22,7 @@ class DatabaseMetadata(dict):
         self.pack_root = pack_root
 
 
-def read_metadata(path, *, include_pages=True):
+def read_metadata(path, *, include_pages=False):
     metadata = DatabaseMetadata(path.parent.parent / 'ForeverRosettaStone_Data')
 
     for line in path.read_bytes().splitlines():

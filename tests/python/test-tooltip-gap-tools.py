@@ -55,6 +55,21 @@ class TooltipGapToolTests(unittest.TestCase):
             pack.write_text('testPack = { value = 2 }')
             read_in_fresh_client(2)
 
+    def test_matrix_label_cache_preserves_text_and_id_across_clients(self):
+        from official_tooltip_matrix import cache_catalog
+
+        cache = {}
+        keys = (b'ITEM_BIND_ON_EQUIP', b'MISSING_REPLAY_LABEL')
+        for locale in ('enUS', 'frFR'):
+            replay = gaps.Replay(locale, {})
+            database = replay.database
+            expected = {key: database.GetGlobalStringByKey(database, key, b'frFR') for key in keys}
+            self.assertIsInstance(expected[keys[0]], tuple)
+            self.assertIsNone(expected[keys[1]])
+            cache_catalog(replay, cache)
+            for key in keys:
+                self.assertEqual(database.GetGlobalStringByKey(database, key, b'frFR'), expected[key])
+
     def test_campaign_reuses_examples_and_retains_unloaded_ids(self):
         report = {'groups': [
             {'kind': 'spell', 'exampleIds': [1, 2], 'pattern': 'A'},

@@ -31,7 +31,7 @@ class CapturedNativeLocaleTests(unittest.TestCase):
             keys = {matrix.fingerprint(o) for o in cls.observations
                     if o['kind'] == 'spell' and o['id'] in (424785, 408498)}
             with contextlib.redirect_stdout(io.StringIO()):
-                cls.report = matrix.run(fixtures, directory / 'report', case_keys=keys)
+                cls.report = matrix.run_observations(cls.observations, directory / 'report', case_keys=keys)
 
     def test_four_completed_native_passes_keep_actual_player_context(self):
         self.assertEqual({capture['source']['locale'] for capture in self.captures},

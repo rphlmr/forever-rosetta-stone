@@ -520,7 +520,7 @@ class DatabaseTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.metadata = read_metadata(ROOT / 'ForeverRosettaStone/ForeverRosettaStone.toc')
+        cls.metadata = read_metadata(ROOT / 'ForeverRosettaStone/ForeverRosettaStone.toc', include_pages=True)
 
     def create_runtime(self, metadata=None):
         lua = LuaRuntime(encoding=None)
@@ -620,7 +620,7 @@ class DatabaseTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / 'addon/runtime.toc'
             build['export_database'](documents, output)
-            metadata = read_metadata(output)
+            metadata = read_metadata(output, include_pages=True)
             lua, api, _ = self.create_runtime(metadata)
             expected = {field.encode() for field in runtime_catalog.QUEST_FIELDS} | {b'hasAITranslation'}
 

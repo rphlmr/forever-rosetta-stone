@@ -58,4 +58,4 @@ jobs:
       - name: Build production database
         run: uv run --no-project --with lupa==2.8 python tools/build/build-lua-database.py
       - name: Test tooltip replays
-        run: uv run --no-project --with lupa==2.8 python tests/run-tests.py --unit-only --group replays
+        run: uv run --no-project --with lupa==2.8 python tests/python/run_replays.py --workers 3

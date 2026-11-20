@@ -26,7 +26,7 @@ class CapturedConditionalSourceRepairTests(LiveValueHarness, unittest.TestCase):
         (ROOT / 'datasources/imports').mkdir(parents=True, exist_ok=True)
         with tempfile.TemporaryDirectory(dir=ROOT / 'datasources/imports') as directory:
             with contextlib.redirect_stdout(io.StringIO()):
-                cls.report = matrix.run(ROOT / 'tests/fixtures/tooltip-campaign', Path(directory) / 'report', case_keys=keys)
+                cls.report = matrix.run_observations(observations, Path(directory) / 'report', case_keys=keys)
 
     def test_existing_game_captures_have_no_remaining_conditional_decoder_failures(self):
         self.assertTrue(self.report['selectedCases'])
