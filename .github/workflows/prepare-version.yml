@@ -1,0 +1,75 @@
+name: Prepare version
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: Version increment
+        type: choice
+        required: true
+        default: minor
+        options:
+          - patch
+          - minor
+          - major
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: prepare-version
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          python-version: '3.12'
+      - name: Prepare manifest and changelog
+        id: version
+        env:
+          BUMP: ${{ inputs.bump }}
+        run: |
+          version=$(uv run --no-project python tools/release/versioning.py "$BUMP")
+          uv run --no-project python tools/build/build-lua-database.py --manifest-only
+          git diff --check
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+      - name: Open version pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          branch="rphlmr/bump-v$VERSION"
+          pr=$(gh pr list --state open --base main --head "$branch" --json url --jq '.[0].url // empty')
+          if [[ -n "$pr" ]]; then
+            echo "Version pull request already open: $pr"
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add CHANGELOG.md tools/build/addon-manifest.toc ForeverRosettaStone/ForeverRosettaStone.toc
+          git commit -m "Prepare version $VERSION"
+
+          ref="refs/heads/$branch"
+          if git ls-remote --exit-code origin "$ref"; then
+            git fetch --no-tags origin "$ref"
+            if ! git diff --quiet HEAD FETCH_HEAD; then
+              echo "The existing version branch contains different changes." >&2
+              exit 1
+            fi
+          else
+            status=$?
+            if [[ "$status" -ne 2 ]]; then exit "$status"; fi
+            git push --no-follow-tags origin "HEAD:$ref"
+          fi
+
+          body="$RUNNER_TEMP/version-pr.md"
+          printf -- '- Bump Forever Rosetta Stone to %s.\n- Move pending changelog entries into the version section.\n' "$VERSION" > "$body"
+          gh pr create --base main --head "$branch" --title "Prepare version $VERSION" --body-file "$body"
