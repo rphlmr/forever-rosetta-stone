@@ -1,4 +1,11 @@
 {
+  "dialogueContexts": {
+    "description": {
+      "sourceDescriptionSha256": "7e01371a099cf5bd0545356c55bfc3a37f52be8d8001dec28567c4dd859f128d",
+      "sourceField": "description",
+      "stage": "accept"
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Děkuji za tvůj návrat, {name}. Jestli na to ty a tví přátelé ještě máte, potřebuji, ať se vrátíš do Molten Core a pokračuješ ve sběru ožehnutých corestones. Co ty na to?",
@@ -208,6 +215,9 @@
     },
     "ptBR": {
       "description": "Thank you for returning {name}. If you and your friends still have it in you, I need you to return to the Molten Core and continue your singed corestone collection efforts. What do you say?",
+      "dialogue": {
+        "description": "Obrigado por voltar, {name}. Se você e seus amigos ainda tiverem forças, preciso que retornem ao Núcleo Derretido e continuem coletando pedras nucleares chamuscadas. O que me diz?"
+      },
       "title": "A Aliança precisa de mais pedra nuclear chamuscada!",
       "translationMetadata": {
         "fields": {
@@ -217,6 +227,11 @@
             "sourceLocale": "ptBR",
             "sourceNamespace": "static-1.60.1_70399-forever-eu",
             "sourceRevision": "static-1.60.1_70399-forever-eu"
+          },
+          "dialogue.description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "title": {
             "origin": "original",

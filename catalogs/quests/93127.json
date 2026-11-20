@@ -1,8 +1,21 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "9cc958de838d800f3372": {
+      "contributionId": 118486,
+      "lineId": "q:93127:complete",
+      "npcId": 40833,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Divoký král má možná početní převahu, ale můžeme ho přechytračit taktikou.\n\nVlij sílu do našich živých strážných kamenů na okolních kopcích, budou za nás sledovat pohyby Blackthorne Pact. Na severních hřebenech, jižních svazích i západní vyvýšenině jsou vyčerpané kameny, které se probudí, jakmile ucítí přítomnost spojence.\n\nPři práci dávej pozor, po těch stezkách se hemží hlídky Blackthorne Pact a právě kvůli nim musíme mít tuhle zemi pod bedlivým dohledem.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Výborně. Vaše schopnost proklouznout jejich tábory a umožnit našim strážním kamenům spojit se se zrakem naší strážkyně je pro naše úsilí velkým přínosem, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -29,6 +42,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -62,6 +80,9 @@
     },
     "daDK": {
       "description": "Den vilde konge har måske en talmæssig fordel, men vi kan udmanøvrere ham med taktik.\r\n\r\nStyrk vores levende vagtsten på de omkringliggende bakker; de kan spore Blackthornes bevægelser for os. De nordlige højderygge, sydlige skråninger og vestlige højder har alle drænede sten, der aktiveres, når de registrerer din allierede tilstedeværelse.\r\n\r\nTræd varsomt, mens du arbejder. Blackthorne-patruljer fylder disse stier, og deres tilstedeværelse er netop grunden til, at vi må holde landet under årvågen overvågning.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Godt klaret. Jeres evne til at snige jer gennem deres lejre og lade vores vagtsten knytte sig til vores vagtpostes syn er en stor hjælp for vores indsats, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -88,6 +109,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d05f4a19258b224c5694e425c1f06743d10bbcff91bb9828ab9831e852cb710d"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -121,6 +147,9 @@
     },
     "deDE": {
       "description": "Der Wildniskönig mag uns zahlenmäßig überlegen sein, doch wir können ihn taktisch ausmanövrieren.\r\n\r\nVerstärkt unsere lebenden Wächtersteine in den umgebenden Hügeln; sie können die Bewegungen des Blackthorne-Pakts für uns verfolgen. In den nördlichen Graten, den südlichen Hängen und dem westlichen Hochland befinden sich entleerte Steine, die sich aktivieren, sobald sie die Anwesenheit eines Verbündeten registrieren.\r\n\r\nGeht bei Eurer Arbeit vorsichtig vor, auf diesen Pfaden wimmelt es vor Blackthorne-Patrouillen, und aufgrund ihrer Präsenz müssen wir dieses Land aufmerksam beobachten.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Gut gemacht. Eure Fähigkeit, ihre Lager unbemerkt zu durchqueren und unseren Wachsteinen die Verbindung mit dem Blick unserer Schildwache zu ermöglichen, ist für unser Vorhaben eine große Hilfe, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -146,6 +175,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -181,6 +215,9 @@
     },
     "enUS": {
       "description": "The Wild King may have a numbers advantage, but we can outmaneuver him with tactics.\r\n\r\nEmpower our living sentinel stones across the encircling hills, they can track Blackthorne movements for us. The northern ridges, the southern slopes, and the western high ground all have drained stones that will activate upon detecting your allied presence.\r\n\r\nTread carefully as you work, Blackthorne patrols crowd these paths, and their presence is precisely why we must bring this land under vigilant surveillance.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Well done. Your ability to slip through their encampments and enable our sentry stones to establish their bond with our sentinel's sight is a considerable boon to our efforts, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -206,6 +243,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -241,6 +284,9 @@
     },
     "esES": {
       "description": "Puede que el Rey Salvaje cuente con ventaja numérica, pero podemos superarlo estratégicamente.\r\n\r\nFortalece nuestras piedras de los Centinelas vivientes en las colinas circundantes: nos pueden permitir rastrear los movimientos de los Endrinos. En las crestas del norte, las laderas del sur y en el terreno elevado del oeste hay piedras drenadas que se activarán al detectar tu presencia aliada.\r\n\r\nProcede con cautela mientras te pones con ello. Los caminos están infestados de patrullas de Endrinos, y precisamente por su presencia, debemos vigilar estas tierras constantemente.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Bien hecho. Tu capacidad para pasar por sus campamentos y permitir que nuestras piedras de vigilancia se vinculen con la vista de nuestra centinela es de gran ayuda para nuestros esfuerzos, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -266,6 +312,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -301,6 +352,9 @@
     },
     "esMX": {
       "description": "Puede que el Rey Salvaje tenga una ventaja numérica, pero podemos superarlo con nuestra estrategia.\r\n\r\nPotencia nuestras piedras centinelas vivas que se encuentran en las colinas circundantes, pues sirven para rastrear cualquier movimiento de los puanegra. Las crestas del norte, las laderas del sur y las alturas del oeste poseen piedras que se activarán cuando detecten tu presencia aliada.\r\n\r\nProcede con cautela mientras trabajas: las patrullas puanegra frecuentan estos caminos, y su presencia es precisamente la razón por la que debemos mantener esta tierra bajo vigilancia constante.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Bien hecho. Tu capacidad para pasar por sus campamentos y permitir que nuestras piedras de vigilancia se vinculen con la vista de nuestra centinela es de gran ayuda para nuestros esfuerzos, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -326,6 +380,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -361,6 +420,9 @@
     },
     "frFR": {
       "description": "Le roi sauvage a certes l’avantage du nombre, mais nous pouvons prendre le dessus par la stratégie.\r\n\r\nRenforcez les pierres de nos sentinelles vivantes sur les collines entourant le sommet, elles pourront suivre les mouvements de la secte noirépine pour nous. Les crêtes du nord, les versants du sud et les reliefs de l’ouest comportent tous des pierres drainées qui s’activeront lorsqu’elles détecteront votre présence alliée.\r\n\r\nProcédez avec prudence, les patrouilles noirépines sillonnent le coin, et leur présence est la raison même qui nous incite à tenir ce territoire sous étroite surveillance.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Bien joué. Votre capacité à vous faufiler dans leurs campements et à permettre à nos pierres de garde de se lier à la vue de notre sentinelle est une aide précieuse pour notre cause, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -386,6 +448,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -421,6 +488,9 @@
     },
     "hrHR": {
       "description": "Divlji kralj možda ima brojčanu prednost, ali možemo ga nadmudriti taktikom.\r\n\r\nOsnaži naše živo stražarsko kamenje po okolnim brdima; ono može pratiti kretanje Blackthornea za nas. Na sjevernim grebenima, južnim padinama i zapadnoj uzvisini nalazi se iscrpljeno kamenje koje će se aktivirati kad otkrije tvoju savezničku prisutnost.\r\n\r\nKreći se oprezno dok radiš. Blackthorneove patrole pune ove staze, a njihova je prisutnost upravo razlog zašto ovu zemlju moramo staviti pod budan nadzor.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Dobro obavljeno. Vaša sposobnost da se provučete kroz njihove logore i omogućite našim stražarskim kamenovima da se povežu s vidom naše stražarice velika je pomoć našem pothvatu, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -447,6 +517,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d05f4a19258b224c5694e425c1f06743d10bbcff91bb9828ab9831e852cb710d"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -480,6 +555,9 @@
     },
     "itIT": {
       "description": "Hai trovato una versione corrotta e malata di quella che somiglia a una pianta di Fiorcanto. Emana un odore acre ed è evidente che ha bisogno di cure immediate per tornare al suo stato originale.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Ben fatto. La tua capacità di intrufolarti nei loro accampamenti e permettere alle nostre pietre di guardia di legarsi alla vista della nostra sentinella è un grande aiuto per i nostri sforzi, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -505,6 +583,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -538,6 +621,9 @@
     },
     "koKR": {
       "description": "야생왕이 수적으로 우세하지만, 우린 기동성과 전술로 우위를 잡을 수 있습니다.\r\n\r\n주변 언덕 곳곳에 있는 생명이 깃든 파수꾼 돌에 힘을 불어넣으십시오. 그러면 돌들이 우리 대신 검은가시의 움직임을 추적할 겁니다. 북쪽 산등성이와 남쪽 비탈, 서쪽 고지대에는 힘을 잃은 돌이 있습니다. 그 돌들도 그대가 아군임을 감지하면 활성화될 겁니다.\r\n\r\n임무를 수행할 동안 조심히 움직이십시오. 검은가시 순찰대가 길을 가득 메우고 있습니다. 저들의 존재야말로 우리가 이 땅을 철저한 감시 아래 두어야 하는 이유입니다.",
+      "dialogue": {
+        "9cc958de838d800f3372": "잘하셨습니다. 적의 야영지를 뚫고 들어가 우리 감시석이 파수꾼의 시야와 연결되도록 해 주셨으니, 우리에게 큰 도움이 되었습니다, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -563,6 +649,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -598,6 +689,9 @@
     },
     "plPL": {
       "description": "Dziki Król może mieć przewagę liczebną, ale możemy go przechytrzyć taktyką.\r\n\r\nWzmocnij nasze żywe kamienie strażnicze na otaczających wzgórzach; będą śledzić ruchy Blackthorne. Na północnych grzbietach, południowych zboczach i zachodnim wzniesieniu są wyczerpane kamienie, które aktywują się, gdy wykryją twoją sojuszniczą obecność.\r\n\r\nPostępuj ostrożnie, bo patrole Blackthorne tłoczą się na ścieżkach i właśnie dlatego musimy objąć tę ziemię czujną obserwacją.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Dobra robota. Umiejętność przemknięcia przez ich obozowiska i umożliwienia naszym kamieniom strażniczym połączenia się ze wzrokiem naszej strażniczki jest wielkim wsparciem dla naszych działań, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -624,6 +718,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d05f4a19258b224c5694e425c1f06743d10bbcff91bb9828ab9831e852cb710d"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -657,6 +756,9 @@
     },
     "ptBR": {
       "description": "O Rei Selvagem conta com a vantagem numérica, mas nós podemos vencê-lo pela estratégia.\r\n\r\nEnergize nossas pedras sentinelas vivas pelas colinas ao redor, pois elas podem rastrear os movimentos dos Aguilhanegra para nós. Os despenhadeiros ao norte, os barrancos ao sul e o terreno elevado ao oeste abrigam pedras esgotadas que se ativarão ao detectar sua presença aliada.\r\n\r\nCaminhe com cuidado em sua tarefa. As patrulhas dos Aguilhanegra infestam esses caminhos, e a presença deles é exatamente o motivo pelo qual devemos colocar esta terra sob vigilância constante.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Muito bem. Sua habilidade de passar pelos acampamentos deles e permitir que nossas pedras de vigia se vinculem à visão da nossa sentinela é uma grande ajuda para nossos esforços, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -682,6 +784,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -717,6 +824,9 @@
     },
     "ruRU": {
       "description": "Может, у Дикого Короля есть численное превосходство, но мы можем превзойти его в тактике.\r\n\r\nАктивируй наши живые сторожевые камни на окружающих холмах – они будут отслеживать перемещения Черношипов. На северных холмах, южных склонах и западной возвышенности есть истощенные камни, которые пробудятся, почуяв присутствие друга.\r\n\r\nДействуй осторожно – там повсюду патрули культа. За ними мы и хотим установить наблюдение.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Отличная работа. Ваше умение незаметно пробраться через их лагеря и позволить нашим сторожевым камням связаться со зрением нашей часовой очень поможет нам, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -742,6 +852,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -777,6 +892,9 @@
     },
     "svSE": {
       "description": "Wild King må ha ett numerärt övertag, men vi kan överlista honom med taktik.\r\n\r\nStärk våra levande vaktstenar runt de omgivande kullarna, så kan de spåra Blackthornes rörelser åt oss. De norra höjdryggarna, de södra sluttningarna och höjderna i väster har alla uttömda stenar som aktiveras när de känner av din allierade närvaro.\r\n\r\nGå försiktigt medan du arbetar. Blackthorne-patruller trängs på dessa stigar, och deras närvaro är just anledningen till att vi måste hålla landet under vaksam uppsikt.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Bra gjort. Er förmåga att ta er obemärkt genom deras läger och låta våra vaktstenar knyta an till vår vaktposts syn är till stor hjälp för vårt arbete, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -803,6 +921,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d05f4a19258b224c5694e425c1f06743d10bbcff91bb9828ab9831e852cb710d"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -836,6 +959,9 @@
     },
     "trTR": {
       "description": "Vahşi Kral'ın sayı üstünlüğü olabilir ama taktiklerle onu alt edebiliriz.\r\n\r\nÇevredeki tepeler boyunca yaşayan gözcü taşlarımıza güç ver; bizim için Blackthorne hareketlerini izleyebilirler. Kuzey sırtlarında, güney yamaçlarında ve batıdaki yüksek arazide, müttefik varlığını algıladığında etkinleşecek gücü tükenmiş taşlar var.\r\n\r\nÇalışırken dikkatli ilerle; Blackthorne devriyeleri bu patikaları dolduruyor. Bu toprağı sıkı gözetim altına almamızın nedeni tam da onların varlığı.",
+      "dialogue": {
+        "9cc958de838d800f3372": "İyi iş çıkardınız. Kamplarının arasından sıyrılıp gözcü taşlarımızın nöbetçimizin görüşüyle bağ kurmasını sağlamanız çabalarımıza büyük katkı sağladı, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -862,6 +988,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d05f4a19258b224c5694e425c1f06743d10bbcff91bb9828ab9831e852cb710d"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -895,6 +1026,9 @@
     },
     "ukUA": {
       "description": "Дикий Король може мати чисельну перевагу, але ми можемо переграти його тактикою.\r\n\r\nНаповни силою наші живі вартові камені на навколишніх пагорбах: вони зможуть стежити за пересуваннями Чорного Терну. На північних хребтах, південних схилах і західних висотах є виснажені камені, що активуються, відчувши присутність союзника.\r\n\r\nПрацюй обережно: ці стежки кишать патрулями Чорного Терну, і саме через їхню присутність ми мусимо встановити над цим краєм пильний нагляд.",
+      "dialogue": {
+        "9cc958de838d800f3372": "Чудова робота. Ваше вміння непомітно пройти крізь їхні табори й дозволити нашим вартовим каменям з’єднатися із зором нашої вартової дуже допоможе нам, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -921,6 +1055,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d05f4a19258b224c5694e425c1f06743d10bbcff91bb9828ab9831e852cb710d"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -954,6 +1093,9 @@
     },
     "zhCN": {
       "description": "荒野之王或许在数量上占优，但我们可以用战术胜过他。\r\n\r\n为环绕此地的丘陵上的活体哨兵石充能，它们能替我们追踪黑棘教派的动向。北面的山脊、南面的斜坡和西面的高地上都有能量耗尽的石头，只要感知到身为盟友的你靠近，它们就会激活。\r\n\r\n行动时务必小心，黑棘巡逻队遍布这些道路。正因他们在此出没，我们才必须严密监视这片土地。",
+      "dialogue": {
+        "9cc958de838d800f3372": "干得好，$N。你穿过他们的营地，让我们的哨戒石与哨兵的视野建立联系，这对我们的行动帮助极大。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -979,6 +1121,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -1014,6 +1161,9 @@
     },
     "zhTW": {
       "description": "荒野之王或許有人數上的優勢，但我們可以用戰術贏過他。\r\n\r\n強化散布在四周山丘上的活體哨兵石，它們可以為我們追蹤黑荊的行動。北方的山脊、南方的丘陵和西方的高地都有耗盡能量的石頭，偵測到友方接近後就會啟動。\r\n\r\n行動時要特別小心，路上都會是黑荊的衛兵，而他們的存在也是我們必須緊密監控這片土地的根本原因。",
+      "dialogue": {
+        "9cc958de838d800f3372": "做得好，$N。你穿過他們的營地，讓我們的哨戒石與哨兵的視野建立連結，這對我們的行動幫助極大。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1039,6 +1189,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.9cc958de838d800f3372": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "16a0b6cf8de74e0462d1": {
+      "contributionId": 111530,
+      "lineId": "q:94004:progress",
+      "npcId": 257281,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "d9a70f2ccf610daa8f45": {
+      "contributionId": 38946,
+      "lineId": "q:94004:complete",
+      "npcId": 257281,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vzkaz psaný vybledlým inkoustem žádá o jeden elixír zlobří síly a uvádí také místo doručení a způsob platby. Dole stojí, že tuto zakázku lze předat někomu jinému.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Cože?",
+        "d9a70f2ccf610daa8f45": "Přinesl jsi elixír!!\n\nDíky, nebešťane. Přišel jsi tak daleko pomoct Sos'molovi. Žádný zlobr to nikdy neudělal.\n\nSos'mol si to zapamatuje. Jednou ti to oplatí. Já slibuje."
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Elixir of Ogre's Strength",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Elixir of Ogre's Strength. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Hva'?",
+        "d9a70f2ccf610daa8f45": "Du kom med eliksiren!!\n\nTak, himmelbårne. Du kom hele vejen for at hjælpe Sos'mol. Ingen ogre har gjort det før.\n\nSos'mol vil huske det. Betale dig tilbage en dag. Mig lover."
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Ogrens styrkeeliksir",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Elixier der Ogerstärke und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Wat?",
+        "d9a70f2ccf610daa8f45": "Ihr habt das Elixier gebracht!!\n\nDanke, Himmelsgeborener. Ihr seid den ganzen Weg gekommen, um Sos'mol zu helfen. Kein Oger hat das je getan.\n\nSos'mol wird sich daran erinnern. Euch eines Tages etwas zurückgeben. Ich versprechen."
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Elixier der Ogerstärke",
       "translationMetadata": {
@@ -82,6 +132,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -100,6 +161,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Elixir of Ogre's Strength, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Wut?",
+        "d9a70f2ccf610daa8f45": "You brought da elixir!!\n\nT'anks, skyborne. You come all this way to help Sos'mol. No ogre ever done that before.\n\nSos'mol will remember this. Pay you back someday. Me promise."
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Elixir of Ogre's Strength",
       "translationMetadata": {
@@ -108,6 +173,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +202,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa elixir de fuerza de ogro e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "¿Qué?",
+        "d9a70f2ccf610daa8f45": "¡Has traído el elixir! ¡Bien!\n\nGracias, habitante del cielo. Has venido desde muy lejos para ayudar a Sos'mol. Ningún ogro había hecho eso antes.\n\nSos'mol lo recordará. Te lo devolverá algún día. Yo prometer."
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: elixir de fuerza de ogro",
       "translationMetadata": {
@@ -133,6 +214,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -149,6 +240,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa elixir de fuerza de ogro, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "¿Qué?",
+        "d9a70f2ccf610daa8f45": "¡Trajiste el elixir! ¡Bien!\n\nGracias, habitante del cielo. Viniste desde muy lejos para ayudar a Sos'mol. Ningún ogro había hecho eso antes.\n\nSos'mol lo recordará. Te lo devolverá algún día. Yo prometer."
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Elixir de fuerza de ogro",
       "translationMetadata": {
@@ -157,6 +252,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -174,6 +279,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa olélixir:élixirs;  de force d’ogre, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Hein ?",
+        "d9a70f2ccf610daa8f45": "Vous avez apporté l’élixir !!\n\nMerci, venu du ciel. Vous avez fait tout ce chemin pour aider Sos’mol. Aucun ogre n’a jamais fait ça.\n\nSos’mol s’en souviendra. Vous revaudra ça un jour. Moi promettre."
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : élixir de force d’ogre",
       "translationMetadata": {
@@ -182,6 +291,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -200,11 +319,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Elixir of Ogre's Strength i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Šta?",
+        "d9a70f2ccf610daa8f45": "Donio si eliksir!!\n\nHvala, nebeski putniče. Došao si izdaleka pomoći Sos'molu. Nijedan ogar to prije nije učinio.\n\nSos'mol će pamtiti. Jednog dana vratiti uslugu. Ja obećati."
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: eliksir ogrove snage",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -226,6 +359,10 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede un Elisir della Forza dell'Ogre e riporta informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che la commissione è trasferibile.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Eh? Cosa?",
+        "d9a70f2ccf610daa8f45": "Tu portato elisir!!\n\nGrazie, skyborne. Tu fatto tutta questa strada per aiutare Sos'mol. Nessun ogre mai fatto prima.\n\nSos'mol ricorderà. Ripagherà te un giorno. Me promette."
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Elisir della Forza dell'Ogre",
       "translationMetadata": {
@@ -234,6 +371,18 @@
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "summary": {
             "origin": "ai",
@@ -252,6 +401,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 오우거 힘의 비약 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "뭐?",
+        "d9a70f2ccf610daa8f45": "비약 가져왔어!!\n\n고마워, 하늘에서 온 자. 소스몰 도우려고 여기까지 왔어. 오우거는 아무도 그런 적 없어.\n\n소스몰 기억할게. 언젠가 갚을게. 나 약속해."
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 오우거 힘의 비약",
       "translationMetadata": {
@@ -260,6 +413,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -276,11 +439,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Elixir of Ogre's Strength oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Co?",
+        "d9a70f2ccf610daa8f45": "Przyniosłeś eliksir!!\n\nDzięki, przybyszu z nieba. Przybyłeś taki kawał drogi, żeby pomóc Sos'molowi. Żaden ogr nigdy tego nie zrobił.\n\nSos'mol zapamięta. Kiedyś się odwdzięczy. Ja obiecuje."
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: eliksir siły ogra",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -302,6 +479,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Elixir de Força do Ogro, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Quê?",
+        "d9a70f2ccf610daa8f45": "Você trouxe o elixir!!\n\nObrigado, vindo do céu. Você veio de tão longe para ajudar Sos'mol. Nenhum ogro fez isso antes.\n\nSos'mol vai lembrar. Retribuir um dia. Eu promete."
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Elixir de Força do Ogro",
       "translationMetadata": {
@@ -310,6 +491,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -327,6 +518,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa порций эликсира силы огра, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Чаво?",
+        "d9a70f2ccf610daa8f45": "Ты принес эликсир!!\n\nСпасибо, небесный странник. Ты прошел такой путь, чтобы помочь Сос'молу. Ни один огр раньше так не делал.\n\nСос'мол запомнит. Однажды отплатит тебе. Я обещать."
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: эликсир силы огра",
       "translationMetadata": {
@@ -335,6 +530,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -353,6 +558,10 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och beställer 1 ogerstyrkans elixir. Den anger också var leveransen ska ske och vad betalningen blir. Längst ned står det att skrivelsen kan överlåtas.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Va?",
+        "d9a70f2ccf610daa8f45": "Du hämtade elixiret!!\n\nTack, himmelsborne. Du kom hela vägen för att hjälpa Sos'mol. Ingen ogre har gjort det förut.\n\nSos'mol ska minnas. Betala tillbaka en dag. Jag lova."
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Yrkesmannens skrivelse: Ogerstyrkans elixir",
       "translationMetadata": {
@@ -362,6 +571,16 @@
             "source": "varldenAvKrigskraft",
             "sourceLocale": "svSE",
             "sourceRevision": "0.10.1"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -382,6 +601,10 @@
     },
     "trTR": {
       "description": "<Solmuş mürekkeple kaleme alınmış not, teslimat yeri ve ödeme bilgileriyle birlikte $2oa adet Elixir of Ogre's Strength talep ediyor. Notun altında, bu sipariş belgesinin devredilebilir olduğunu belirten bir yazı yer alıyor.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Ne?",
+        "d9a70f2ccf610daa8f45": "İksiri getirdin!!\n\nSağ ol, gökten gelen. Sos'mol'a yardım etmek için onca yol geldin. Hiçbir ogre bunu daha önce yapmadı.\n\nSos'mol bunu hatırlayacak. Bir gün karşılığını verecek. Ben söz veriyor."
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Elixir of Ogre's Strength",
       "translationMetadata": {
@@ -391,6 +614,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -409,11 +642,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Elixir of Ogre's Strength і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "Шо?",
+        "d9a70f2ccf610daa8f45": "Ти приніс еліксир!!\n\nДякую, небесний мандрівнику. Ти пройшов такий шлях, щоб допомогти Сос'молу. Жоден огр раніше так не робив.\n\nСос'мол запам'ятає. Колись віддячить. Я обіцяти."
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Еліксир сили огра",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -437,6 +684,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa瓶食人魔力量药剂，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "啥？",
+        "d9a70f2ccf610daa8f45": "你带来了药剂！！\n\n谢谢你，天外来客。你走这么远来帮助索斯莫尔。以前从来没有食人魔这么做过。\n\n索斯莫尔会记住的。总有一天会报答你。我保证。"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：食人魔力量药剂",
       "translationMetadata": {
@@ -445,6 +696,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -462,6 +723,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa個巨魔力量藥劑，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "16a0b6cf8de74e0462d1": "啥？",
+        "d9a70f2ccf610daa8f45": "你帶來了藥劑！！\n\n謝謝你，天外來客。你走這麼遠來幫助索斯莫爾。以前從來沒有巨魔這麼做過。\n\n索斯莫爾會記住的。總有一天會報答你。我保證。"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：巨魔力量藥劑",
       "translationMetadata": {
@@ -470,6 +735,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.16a0b6cf8de74e0462d1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d9a70f2ccf610daa8f45": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

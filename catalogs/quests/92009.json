@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "0ad181a5f02e1828610d": {
+      "contributionId": 145008,
+      "lineId": "q:92009:progress",
+      "npcId": 249235,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "526b1b4f73b4211996d0": {
+      "contributionId": 145094,
+      "lineId": "q:92009:complete",
+      "npcId": 249235,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "O téhle objednávce musíš něco vědět. Na dně bedny je pár invertovaných manových článků, obložených, jak nejlíp to šlo. Články mají sklon se vybít, když do nich něco drcne a když se včas nestabilizují. Obsah vyšumí zhruba za 2 hodiny.\n\nKaylaena bude vědět, co s nimi, až je dostane, ale radím ti jet pomalu, jestli se chystáš vyjet v sedle na horu Hyjal.\n\nKdyby bylo potřeba je doplnit, vrať se a kanystry ti dobiju. Dávej na sebe pozor, jo?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Do Zimního pramene ses také ještě nedostal? To nevadí, mezitím tu mám spoustu práce!",
+        "526b1b4f73b4211996d0": "Hej, vrátil ses v jednom kuse! Věděla jsem, že to zvládneš, a bedna taky nevypadá nijak poškozená!\n\nO ty invertované manové články se postarám já. Vím, jak těžké je převážet je v balíku. To... možná proto jsem tenhle úkol tak dlouho odkládala."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Der er noget, du bør vide om denne bestilling. Der ligger nogle omvendte manaceller i bunden af kassen, polstret så godt jeg kunne. Cellerne har tendens til at aflade, når de får stød, og når de ikke stabiliseres i tide. Det tager omkring to timer, før indholdet mister sin kraft.\r\n\r\nKaylaena ved, hvad hun skal gøre, når hun modtager dem, men jeg foreslår, at du rider langsomt op ad Mount Hyjal.\r\n\r\nHvis du har brug for en genopfyldning, så kom tilbage, og jeg fylder beholderne op. Pas på, ikke?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Du er heller ikke kommet til Winterspring endnu, hva’? Det gør ikke noget, jeg har rigeligt at lave her imens!",
+        "526b1b4f73b4211996d0": "Hej, du kom tilbage i ét stykke! Jeg vidste, at du kunne klare det, og kassen ser heller ikke ud til at have taget skade!\n\nLad mig tage mig af de inverterede manaceller. Jeg ved, hvor besværlige de er at sende i en pakke. Det... kan være grunden til, at jeg udsatte opgaven så længe."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "078fa57649326dd97106ad2aa9fe9cecc90fd2f2716e370c7d0c3920250e6199"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Es gibt da etwas, das Ihr über diese Bestellung wissen solltet. Da befinden sich einige invertierte Manazellen drin, die ich unten in der Kiste so gut wie möglich gepolstert habe. Die Zellen tendieren dazu, sich zu entladen, wenn sie angestoßen und nicht rechtzeitig wieder stabilisiert werden. Es dauert etwa zwei Stunden, bis der Inhalt verfliegt.\r\n\r\nKaylaena wird wissen, was zu tun ist, wenn sie die Zellen erhält, doch ich würde Euch empfehlen, langsam zu machen, wenn Ihr Euch in den Sattel schwing und den Hyjal hinaufreitet.\r\n\r\nKommt zurück, solltet Ihr Nachschub brauchen, dann fülle ich die Kanister wieder für Euch auf. Passt auf Euch auf, verstanden?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Ihr habt es auch noch nicht nach Winterspring geschafft, wie? Schon gut, ich habe hier in der Zwischenzeit mehr als genug andere Dinge zu tun!",
+        "526b1b4f73b4211996d0": "Hey, Ihr habt es in einem Stück zurückgeschafft! Ich wusste, dass Ihr das hinbekommt, und die Kiste sieht trotz allem noch gut in Schuss aus!\n\nLasst mich mich um die invertierten Manazellen kümmern, ich weiß, was für ein Geraffel es ist, die verpackt zu transportieren. Das... könnte auch der Grund gewesen sein, weshalb ich das so lange vor mich hingeschoben habe."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +181,10 @@
     },
     "enUS": {
       "description": "There's something you should know about this order. There's a few inverted mana cells padded as well as I could at the bottom of the box. The cells have a tendency to discharge when they get bumped, and when not stabilized in time. It takes about two hours for the contents to fizzle.\r\n\r\nKaylaena will know what to do when she receives them, but I suggest going slow if you're going to ride saddled up Mount Hyjal.\r\n\r\nIf you need a refill, come back and I'll top off the canisters. Be careful, you know?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Haven't found yourself around Winterspring either, huh? That's okay, I've got plenty around here to do in the meantime!",
+        "526b1b4f73b4211996d0": "Hey, you made it back in one piece! I knew you could do it, and that crate looks no worse for the wear!\n\nLet me take care of those inverted mana cells, I know how much trouble they are to ship in a package. That... may have been why I was putting off this chore for so long."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +200,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -157,6 +235,10 @@
     },
     "esES": {
       "description": "Hay algo que deberías saber sobre este pedido. En el fondo del cajón hay unas cuantas células de maná invertidas que he acolchado lo mejor posible. Ese tipo de células tienden a soltar una descarga cuando reciben golpes o si no se estabilizan a tiempo. El contenido tarda unas dos horas en perder la carga.\r\n\r\nKaylaena debe saber esto cuando reciba el cajón, pero te sugiero que vayas despacio si asciendes por el Monte Hyjal sobre una montura.\r\n\r\nSi es necesario, vuelve y rellenaré los botes. Ten cuidado, ¿vale?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "¿Tampoco has llegado a Cuna del Invierno, eh? ¡No pasa nada, tengo mucho que hacer aquí mientras tanto!",
+        "526b1b4f73b4211996d0": "¡Eh, has vuelto de una pieza! Sabía que lo lograrías, ¡y la caja tampoco parece haber sufrido daños!\n\nDeja que me ocupe de esas celdas de maná invertidas. Sé lo complicado que es enviarlas en un paquete. Puede que... por eso haya aplazado esta tarea durante tanto tiempo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +254,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -195,6 +287,10 @@
     },
     "esMX": {
       "description": "Hay algo que debes saber sobre este pedido. En el fondo de la caja hay unas cuantas células de maná invertidas que acomodé lo mejor que pude. Las células suelen descargarse si reciben un golpe y si no se estabilizan a tiempo. El contenido tarda un par de horas en agotarse.\r\n\r\nKayleena sabrá qué hacer cuando las tenga, pero te sugiero que vayas despacio si vas subir el Monte Hyjal a caballo.\r\n\r\nSi necesitas una recarga, regresa y te llenaré los bidones. ¡Ve con cuidado!",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "¿Tampoco has llegado a Cuna del Invierno, eh? ¡No pasa nada, tengo mucho que hacer aquí mientras tanto!",
+        "526b1b4f73b4211996d0": "¡Oye, regresaste de una pieza! Sabía que lo lograrías, ¡y la caja tampoco parece dañada!\n\nDeja que me ocupe de esas celdas de maná invertidas. Sé lo complicado que es enviarlas en un paquete. Quizás... por eso pospuse esta tarea tanto tiempo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +306,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -233,6 +339,10 @@
     },
     "frFR": {
       "description": "Vous devez savoir une chose au sujet de cette commande. J’ai déposé des cellules de mana inversées au fond de la boîte. Je les ai emballées comme j’ai pu, mais elles ont tendance à se décharger au moindre choc, ou si elles ne sont pas stabilisées à temps. Elles commencent à faiblir au bout de deux heures environ.\r\n\r\nKaylaena prendra le relais à la réception, mais je vous suggère d’y aller doucement pendant le voyage si vous vous rendez au mont Hyjal à dos de monture.\r\n\r\nSi vous avez besoin d’une recharge, revenez me voir et je remplirai les réservoirs. Soyez prudent, d’accord ?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Vous n’êtes pas encore allé à Berceau-de-l’Hiver non plus ? Ce n’est pas grave, j’ai de quoi m’occuper ici en attendant !",
+        "526b1b4f73b4211996d0": "Hé, tu es revenu en un seul morceau ! Je savais que tu y arriverais, et la caisse n’a pas l’air d’avoir souffert non plus !\n\nLaisse-moi m’occuper de ces cellules de mana inversées. Je sais à quel point elles sont difficiles à transporter dans un colis. C’est… peut-être pour ça que j’ai repoussé cette corvée si longtemps."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -248,6 +358,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -271,6 +391,10 @@
     },
     "hrHR": {
       "description": "Nešto trebaš znati o ovoj narudžbi. Na dnu kutije nalazi se nekoliko obrnutih mana ćelija koje sam obložio najbolje što sam mogao. Ćelije se obično prazne kad se udare i ne stabiliziraju na vrijeme. Treba oko dva sata da sadržaj ishlapi.\r\n\r\nKaylaena će znati što učiniti kad ih primi, ali predlažem da ideš polako ako ćeš jahati uz Mount Hyjal.\r\n\r\nAko trebaš dopunu, vrati se i dopunit ću spremnike. Budi oprezan, znaš?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Ni ti još nisi stigao do Winterspringa? Nema veze, imam ovdje mnogo posla u međuvremenu!",
+        "526b1b4f73b4211996d0": "Hej, vratio si se u komadu! Znala sam da ćeš uspjeti, a ni sanduk ne izgleda oštećeno!\n\nDopusti da se pobrinem za te obrnute ćelije mane. Znam koliko ih je teško slati u paketu. To je... možda razlog zašto sam toliko dugo odgađala taj posao."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -287,6 +411,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "078fa57649326dd97106ad2aa9fe9cecc90fd2f2716e370c7d0c3920250e6199"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -310,6 +444,10 @@
     },
     "itIT": {
       "description": "Hai trovato una versione corrotta e malata di quella che somiglia a una pianta di Fiorcanto. Emana un odore acre ed è evidente che ha bisogno di cure immediate per tornare al suo stato originale.",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Non sei ancora arrivato a Fontefredda neanche tu? Non importa, nel frattempo ho molto da fare qui!",
+        "526b1b4f73b4211996d0": "Ehi, sei tornato tutto intero! Sapevo che ce l'avresti fatta, e la cassa non sembra nemmeno ammaccata!\n\nLascia che mi occupi io di quelle celle di mana invertite, so quanto sono complicate da spedire in un pacco. Forse... è anche per questo che rimandavo questa faccenda da così tanto."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -325,6 +463,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -347,6 +496,10 @@
     },
     "koKR": {
       "description": "이 주문품에 대해 알아둘 게 있네. 상자 바닥에 반전된 마나 저장기 몇 개를 내가 최대한 완충해서 넣어 두었지. 이 저장기들은 충격을 받거나 제때 안정화하지 못하면 곧잘 방전되네. 내용물이 완전히 빠지는 데는 대략 두 시간쯤 걸리고.\r\n\r\n물건을 받으면 케이레나가 알아서 할 걸세. 다만 탈것을 타고 하이잘 산을 오를 생각이라면 천천히 가는 편이 좋겠네.\r\n\r\n보충이 필요하면 다시 오게. 저장기를 가득 채워 주지. 조심하게, 알겠나?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "아직 여명의 설원에 가지 못했군요? 괜찮아요. 그동안 여기서 할 일이 많으니까요!",
+        "526b1b4f73b4211996d0": "어머, 무사히 돌아왔군요! 해내실 줄 알았어요. 상자도 멀쩡해 보이네요!\n\n뒤집힌 마나 전지는 제가 처리할게요. 소포에 넣어 보내기가 얼마나 까다로운지 알거든요. 어쩌면... 그 때문에 이 일을 그렇게 오래 미뤘는지도 모르겠네요."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -362,6 +515,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -385,6 +548,10 @@
     },
     "plPL": {
       "description": "Musisz wiedzieć coś o tym zamówieniu. Na dnie skrzyni jest kilka odwróconych ogniw many, które wyściełałam najlepiej, jak umiałam. Ogniwa mają skłonność do rozładowania po uderzeniu i gdy nie zostaną na czas ustabilizowane. Zawartość wyczerpuje się po około dwóch godzinach.\r\n\r\nKaylaena będzie wiedziała, co robić, gdy je otrzyma, ale radzę jechać powoli, jeśli zamierzasz wjechać wierzchem na górę Hyjal.\r\n\r\nJeśli potrzebujesz uzupełnienia, wróć, a napełnię pojemniki. Uważaj, dobrze?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Też jeszcze nie udało ci się dotrzeć do Winterspring? Nic nie szkodzi, mam tu w międzyczasie mnóstwo do zrobienia!",
+        "526b1b4f73b4211996d0": "Hej, wracasz w jednym kawałku! Wiedziałam, że się uda, a skrzynia też nie wygląda na uszkodzoną!\n\nPozwól, że zajmę się tymi odwróconymi ogniwami many. Wiem, jak trudno wysłać je w paczce. To... może dlatego tak długo odkładałam tę robotę."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -401,6 +568,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "078fa57649326dd97106ad2aa9fe9cecc90fd2f2716e370c7d0c3920250e6199"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -424,6 +601,10 @@
     },
     "ptBR": {
       "description": "Preciso te contar uma coisa sobre essa encomenda. Tem umas células de mana invertido que eu acomodei como pude no fundo da caixa. As células se descarregam quando sofrem um chacoalhão e não são estabilizadas a tempo. Leva umas duas horas pra carga se dissipar.\r\n\r\nKaylaena vai saber o que fazer quando receber, mas recomendo ir com calma se você pretende subir o Monte Hyjal montado.\r\n\r\nCaso precise de reposição, volte, que eu encho os recipientes de novo. Toma cuidado, tá?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Você também ainda não chegou a Hibérnia? Tudo bem, tenho muito o que fazer por aqui enquanto isso!",
+        "526b1b4f73b4211996d0": "Ei, você voltou em um pedaço só! Eu sabia que conseguiria, e a caixa também não parece danificada!\n\nDeixe que eu cuide dessas células de mana invertidas. Sei como é difícil enviá-las em um pacote. Talvez... seja por isso que adiei essa tarefa por tanto tempo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -439,6 +620,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -462,6 +653,10 @@
     },
     "ruRU": {
       "description": "Мне стоит рассказать тебе, что за заказ. В ящике находятся перевернутые контейнеры с маной – я упаковала их настолько надежно, насколько смогла. И все же если их встряхнуть и потом вовремя не стабилизировать, может произойти выброс маны. Содержимое выдыхается примерно за два часа.\r\n\r\nКайлена знает, что с ними делать в такой ситуации, но если ты собираешься подниматься на Хиджал верхом, то лучше помедленнее.\r\n\r\nЕсли нужно будет заново наполнить контейнеры, возвращайся. Осторожнее, ладно?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Ты тоже еще не добрался до Зимних Ключей? Ничего страшного, мне тут пока есть чем заняться!",
+        "526b1b4f73b4211996d0": "Эй, ты вернулся целым и невредимым! Я знала, что ты справишься, да и ящик выглядит совсем не хуже прежнего!\n\nПозволь мне заняться инвертированными ячейками маны. Я знаю, как трудно перевозить их в посылке. Возможно... поэтому я так долго откладывала эту работу."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -477,6 +672,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -500,6 +705,10 @@
     },
     "svSE": {
       "description": "Det finns något du bör veta om den här beställningen. Det finns några inverterade manaceller i botten av lådan, vadderade så väl jag kunde. Cellerna har en tendens att laddas ur när de stöts till och när de inte stabiliseras i tid. Det tar ungefär två timmar innan innehållet förlorar sin kraft.\r\n\r\nKaylaena vet vad hon ska göra när hon tar emot dem, men jag föreslår att du tar det lugnt om du ska rida uppför Mount Hyjal.\r\n\r\nOm du behöver påfyllning, kom tillbaka så fyller jag behållarna. Var försiktig, förstår du?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Du har inte heller kommit till Winterspring än? Det gör inget, jag har gott om saker att göra här under tiden!",
+        "526b1b4f73b4211996d0": "Hej, du kom tillbaka i ett stycke! Jag visste att du skulle klara det, och lådan ser inte heller ut att ha tagit skada!\n\nLåt mig ta hand om de inverterade manacellerna. Jag vet hur besvärliga de är att skicka i ett paket. Det... kan vara därför jag sköt upp sysslan så länge."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -516,6 +725,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "078fa57649326dd97106ad2aa9fe9cecc90fd2f2716e370c7d0c3920250e6199"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -539,6 +758,10 @@
     },
     "trTR": {
       "description": "Bu sipariş hakkında bilmen gereken bir şey var. Kutunun dibinde, elimden geldiğince destekleyip koruduğum birkaç tersine çevrilmiş mana hücresi bulunuyor. Hücreler sarsıldıklarında ve zamanında dengelenmediklerinde boşalmaya eğilimlidir. İçindekilerin etkisini yitirmesi yaklaşık iki saat sürer.\r\n\r\nKaylaena onları aldığında ne yapacağını bilir ama Mount Hyjal'a binekle çıkacaksan yavaş gitmeni öneririm.\r\n\r\nYeniden doldurmak gerekirse geri gel, kapları doldurayım. Dikkatli ol, tamam mı?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Sen de henüz Winterspring’e ulaşamadın, öyle mi? Sorun değil, bu arada burada yapacak bir sürü işim var!",
+        "526b1b4f73b4211996d0": "Hey, sapasağlam dönmüşsün! Bunu başaracağını biliyordum, sandık da hiç zarar görmemişe benziyor!\n\nŞu ters çevrilmiş mana hücreleriyle ben ilgileneyim. Onları bir paketle göndermenin ne kadar zor olduğunu biliyorum. Belki de... bu işi bu kadar uzun süre ertelememin sebebi buydu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -555,6 +778,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "078fa57649326dd97106ad2aa9fe9cecc90fd2f2716e370c7d0c3920250e6199"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -578,6 +811,10 @@
     },
     "ukUA": {
       "description": "Тобі треба дещо знати про це замовлення. На дні ящика лежать кілька інвертованих комірок мани, які я якнайкраще обклав м'яким матеріалом. Ці комірки мають звичку розряджатися від струсів і якщо їх вчасно не стабілізувати. Вміст видихається приблизно за дві години.\r\n\r\nKaylaena знатиме, що робити, коли їх отримає, але раджу їхати повільно, якщо підніматимешся на Гіджал верхи.\r\n\r\nЯкщо знадобиться перезарядка, повертайся, і я знову наповню каністри. Будь обережний, гаразд?",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "Ти теж ще не дістався до Зимових Ключів? Нічого страшного, мені тут поки є чим зайнятися!",
+        "526b1b4f73b4211996d0": "Гей, ти повернувся цілим і неушкодженим! Я знала, що ти впораєшся, та й ящик виглядає не гірше, ніж раніше!\n\nДозволь мені подбати про інвертовані комірки мани. Я знаю, як важко перевозити їх у пакунку. Можливо... саме тому я так довго відкладала цю справу."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -594,6 +831,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "078fa57649326dd97106ad2aa9fe9cecc90fd2f2716e370c7d0c3920250e6199"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -617,6 +864,10 @@
     },
     "zhCN": {
       "description": "关于这份订单，有件事你得知道。我在箱底垫了几块倒置的法力电池，并且已经尽可能地包严实了。这些电池一受磕碰就容易放电，如果没能及时稳定下来，里面的东西大概两小时就会失效。\r\n\r\n凯莱娜收到后自会处理，但如果你打算骑着坐骑上海加尔山的话，我建议你最好慢点儿。\r\n\r\n如果你需要重新充能，就回来找我，我会把容器加满。当心点，明白吗？",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "你也还没到过冬泉谷，是吧？没关系，趁这段时间我在这里有很多事要做！",
+        "526b1b4f73b4211996d0": "嘿，你平安回来了！我就知道你能做到，而且箱子看起来也没受什么损伤！\n\n那些逆转法力电池就交给我吧，我知道把它们装在包裹里运输有多麻烦。那……或许就是我把这件差事拖了这么久的原因。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -632,6 +883,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -655,6 +916,10 @@
     },
     "zhTW": {
       "description": "關於這份訂單，有些事情你必須知道。在箱子底部有一些倒置的法力電池，我已經盡可能鋪好防護墊了。但這些電池在受到碰撞且沒有及時穩定的情況下，往往很容易漏電。大約兩個小時之後，裡面的能量就會徹底失效。\r\n\r\n凱蕾娜收到它們時會知道該怎麼做，但如果你打算騎著坐騎上到海加爾山的話，我建議你最好走慢一點。\r\n\r\n如果你需要重新補充，就回來找我，我會幫你把容器補滿。總之小心點，好嗎？",
+      "dialogue": {
+        "0ad181a5f02e1828610d": "你也還沒到過冬泉谷，對吧？沒關係，這段時間我在這裡有很多事要做！",
+        "526b1b4f73b4211996d0": "嘿，你平安回來了！我就知道你能做到，而且箱子看起來也沒受什麼損傷！\n\n那些逆轉法力電池就交給我吧，我知道把它們裝在包裹裡運送有多麻煩。那……或許就是我把這件差事拖了這麼久的原因。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -670,6 +935,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0ad181a5f02e1828610d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.526b1b4f73b4211996d0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

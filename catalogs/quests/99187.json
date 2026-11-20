@@ -1,4 +1,11 @@
 {
+  "dialogueContexts": {
+    "description": {
+      "sourceDescriptionSha256": "e8e9d16a91860aeb320c9774bc5efebd9beaa1249503205e87af2eae48dcb75b",
+      "sourceField": "description",
+      "stage": "accept"
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Možná nepatříš k rytířům Lordaeronu, i když svým způsobem snad ano. Paladinské poslání však zůstává... a znáš sílu přísahy.\n\nBlackmaw jsou mocní znalci totemů a moc artefaktu, jako je Relikviář, by poznali. Nepochybně jej stále mají.\n\nProto tě nyní žádám: dokonči mé započaté poslání. Vrať Reliquary of Tyr sem do Tirisfal Glades, kam patří. Teprve pak bude má přísaha splněna a můj duch může opustit tento svět.",
@@ -194,6 +201,9 @@
     },
     "esMX": {
       "description": "You may not be a Knight of Lordaeron--though perhaps you are, in a way. However, a Paladin you remain... and you know the power of an oath.\r\n\r\nThe Blackmaw are powerful totemics, and they would recognize the power of such an artifact as the Reliquary. Undoubtedly, they still possess it.\r\n\r\nThusly I'd ask this of you now--finish the quest I started. Return the Reliquary of Tyr here to Tirisfal Glades where it belongs. Only then will my oath be discharged, and my spirit may move on from this world.",
+      "dialogue": {
+        "description": "Puede que no seas un caballero de Lordaeron, aunque tal vez lo seas de alguna manera. Pero sigues siendo $gun:una; paladín... y sabes el poder que tiene un juramento.\r\n\r\nLos Faucenegra son poderosos totémicos y reconocerían el poder de un artefacto como el relicario. Sin duda, aún lo tienen.\r\n\r\nPor eso te pido esto ahora: termina la misión que empecé. Trae el relicario de Tyr a los Claros de Tirisfal donde pertenece. Solo así se cumplirá mi juramento y mi espíritu podrá descansar en paz."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -209,6 +219,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceSha256": "597cef17af91d34018f602ca2e9cf29117e01ed2a8375a1043f8ad57f905d715"
           },
           "objectiveLines.1": {
             "origin": "ai",

@@ -1,8 +1,30 @@
 {
   "areaId": 16620,
+  "dialogueContexts": {
+    "28c317c2870fc8e1c83c": {
+      "contributionId": 108316,
+      "lineId": "q:96332:complete",
+      "npcId": 260383,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "57e14213d34a4a852db4": {
+      "contributionId": 108323,
+      "lineId": "q:96332:progress",
+      "npcId": 260383,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Když jsme ustupovali, blížila se k pevnosti druhá vlna nag. Tuším, že uvnitř bitva pořád zuří.\n\nMy z Kor'kron oplácíme krev krví. Jestli tam stejně jdeš, zabij každou nagu, na kterou narazíš. Byla mezi nimi i čarodějka a vsadím se, že to byla jejich velitelka. Přines mi její hlavu.\n\nDnes jsme přišli o spoustu dobrých orků a nebudu mít klid, dokud jim to nevrátíme i s úroky.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Doufám, že jsi jim dal pořádně vytrpět, $c!",
+        "57e14213d34a4a852db4": "Krev a hrom!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -29,6 +51,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -64,6 +96,10 @@
     },
     "daDK": {
       "description": "En anden bølge af nagaer nærmede sig borgen, da vi trak os tilbage. Jeg formoder, at kampen stadig raser derinde.\n\nVi Kor'kron giver blod for blod. Hvis du alligevel går derind, vil jeg have dig til at dræbe alle de nagaer, du ser. Jeg så også en troldkvinde blandt dem, og du kan være sikker på, at hun var deres leder. Bring mig hendes hoved.\n\nVi mistede mange gode orker i dag, og jeg får ingen ro ved tanken om, at vi ikke gav igen med samme mønt.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Jeg håber, du fik dem til at lide, $c!",
+        "57e14213d34a4a852db4": "Blod og torden!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -90,6 +126,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c31e54712316145a3a712762967aa836a89330d26770fe45fba9ebdb3a490c93"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -125,6 +171,10 @@
     },
     "deDE": {
       "description": "Eine zweite Nagawelle näherte sich der Burg, als wir zurückgefallen sind. Ich vermute, dass drinnen noch der Kampf tobt.\r\n\r\nWir Kor'kron zahlen Blut mit Blut heim. Wenn Ihr ohnehin dort hinein geht, will ich, dass Ihr alle Naga tötet, die Ihr seht. Ich habe unter ihnen auch eine Zauberin gesehen. Ihr könnt darauf wetten, dass das die Anführerin war. Bringt mir ihren Kopf.\r\n\r\nWir haben heute viele gute Orcs verloren. Ich werde erst ruhig schlafen können, wenn ich weiß, dass wir so ausgeteilt haben, wie wir einstecken mussten.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Ich hoffe, Ihr habt sie leiden lassen, $c!",
+        "57e14213d34a4a852db4": "Blut und Donner!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -150,6 +200,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -186,6 +247,10 @@
     },
     "enUS": {
       "description": "A second wave of Naga was approaching the keep when we were falling back. I suspect that the battle is still raging inside. \r\n\r\nWe Kor'kron play blood for blood. If you are going in there anyway, I want you to kill any Naga you see. I saw a sorceress among them as well, and you can bet that was their leader. Bring me her head.\r\n\r\nWe lost a lot of good orcs today and I won't rest easy knowing that we didn't give as good as we got.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "I hope you made them suffer, $c!",
+        "57e14213d34a4a852db4": "Blood and thunder!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -211,6 +276,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -247,6 +324,10 @@
     },
     "esES": {
       "description": "Una segunda oleada de nagas se acercaba a la fortaleza mientras nos retirábamos. Sospecho que la batalla sigue en pleno apogeo en su interior.\r\n\r\nLos Kor'kron pagamos sangre con sangre, así que, si vas a entrar ahí, quiero que mates a cualquier naga que veas. También vi a una hechicera entre ellos que parecía ser quien los lideraba. Tráeme su cabeza.\r\n\r\nHoy hemos perdido a muchos buenos orcos, y no dormiré tranquilo sabiendo que no les hemos pagado con la misma moneda.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "¡Espero que les hayas hecho sufrir, $c!",
+        "57e14213d34a4a852db4": "¡Sangre y truenos!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -272,6 +353,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -308,6 +401,10 @@
     },
     "esMX": {
       "description": "Cuando nos retirábamos, una segunda oleada de naga avanzaba hacia la fortaleza. Estoy segura de que la batalla sigue ardiendo en su interior.\r\n\r\nLos Kor’kron pagamos sangre con sangre. Si entras, mata a cada naga que veas. Entre ellos había una hechicera, sin duda su líder. Tráeme su cabeza.\r\n\r\nHoy cayeron demasiados orcos valiosos, y no descansaré hasta que nuestra venganza sea completa.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "¡Espero que los hayas hecho sufrir, $c!",
+        "57e14213d34a4a852db4": "¡Sangre y truenos!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -333,6 +430,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -369,6 +476,10 @@
     },
     "frFR": {
       "description": "Une deuxième vague de Nagas approchait du donjon pendant que nous étions en train de nous replier. J’imagine que les combats font toujours rage à l’intérieur.\r\n\r\nNous, les Kor’krons, répondons au sang par le sang. Si vous comptez vous rendre dans cet endroit, j’aimerais que vous tuiez tous les Nagas que vous rencontrerez. J’ai également remarqué une sorcière parmi eux et je vous parie que c’est elle qui les dirige. Rapportez-moi sa tête.\r\n\r\nNous avons perdu beaucoup de bons Orcs aujourd’hui et je ne trouverai pas le repos tant que nous n’aurons pas rendu les coups aussi fort que nous les avons reçus.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "J’espère que vous les avez fait souffrir, $c !",
+        "57e14213d34a4a852db4": "Par le sang et le tonnerre !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -394,6 +505,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -429,6 +550,10 @@
     },
     "hrHR": {
       "description": "Drugi val naga približavao se utvrdi dok smo se povlačili. Sumnjam da bitka još bjesni unutra. \r\n\r\nMi Kor'kron vraćamo krv za krv. Ako ionako ulaziš ondje, želim da ubiješ svaku nagu koju vidiš. Među njima sam vidio i čarobnicu i možeš se kladiti da im je ona vođa. Donesi mi njezinu glavu.\r\n\r\nDanas smo izgubili mnogo dobrih orkova i neću mirno spavati znajući da im nismo uzvratili istom mjerom.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Nadam se da su patili zbog tebe, $c!",
+        "57e14213d34a4a852db4": "Krv i grom!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -455,6 +580,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c31e54712316145a3a712762967aa836a89330d26770fe45fba9ebdb3a490c93"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -490,6 +625,10 @@
     },
     "itIT": {
       "description": "Di nuovo salute, {name}. Oggi più che mai è per me un orgoglio fratello. La tua dedizione ci onora tutti.\n\nÈ giunto il momento che io ti faccia un grande dono. Sappi, però, che per ora te lo concedo senza richiedere nulla in cambio, ma in futuro, a tempo debito, sarà una sfida ancora più grande riservata ai Paladini che sceglieranno di accettare la mia missione.\n\nParla nuovamente con me e ti darò il tuo dono.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Spero che tu li abbia fatti soffrire, $c!",
+        "57e14213d34a4a852db4": "Sangue e tuono!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -515,6 +654,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -550,6 +699,10 @@
     },
     "koKR": {
       "description": "우리가 퇴각할 때 두 번째 나가 병력이 성채로 접근하고 있었소. 안에서는 아직 전투가 한창일 거요.\r\n\r\n우리 코르크론은 피는 피로 갚소. 어차피 안으로 들어갈 거라면 나가를 눈에 띄는 대로 처치하시오. 그중 마술사도 한 명 있었는데 틀림없이 우두머리였을 거요. 그자의 머리카락을 가져오시오.\r\n\r\n오늘 훌륭한 오크를 많이 잃었소. 당한 만큼 갚아 주지 못했다는 생각만 하면 두 발 뻗고 쉴 수가 없단 말이지.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "그놈들을 고통스럽게 해줬길 바란다, $c!",
+        "57e14213d34a4a852db4": "피와 천둥을 위하여!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -575,6 +728,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -611,6 +774,10 @@
     },
     "plPL": {
       "description": "Kiedy się wycofywaliśmy, do twierdzy zbliżała się druga fala nag. Podejrzewam, że w środku wciąż trwa bitwa. \r\n\r\nMy, Kor'kron, odpłacamy krwią za krew. Skoro i tak tam idziesz, chcę, żebyś zabijał każdą napotkaną nagę. Widziałam wśród nich także czarodziejkę i założę się, że to ich przywódczyni. Przynieś mi jej głowę.\r\n\r\nStraciliśmy dziś wielu dobrych orków i nie zaznam spokoju, jeśli nie odpłacimy im pięknym za nadobne.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Mam nadzieję, że zadano im cierpienie, $c!",
+        "57e14213d34a4a852db4": "Krew i grom!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -637,6 +804,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c31e54712316145a3a712762967aa836a89330d26770fe45fba9ebdb3a490c93"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -672,6 +849,10 @@
     },
     "ptBR": {
       "description": "Uma segunda leva de nagas se aproximava da fortaleza quando iniciamos a retirada. Suspeito que ainda estejam travando batalha lá dentro.\r\n\r\nNós, Kor'kron, pagamos sangue com sangue. Já que vai entrar lá, quero que elimine todas as nagas que vir pela frente. Há uma feiticeira entre elas, e aposto é a líder. Traga a cabeça dela.\r\n\r\nPerdemos muitos bons orcs hoje, e não vou descansar enquanto não tivermos revidado à altura.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Espero que você tenha feito eles sofrerem, $c!",
+        "57e14213d34a4a852db4": "Sangue e trovão!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -697,6 +878,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -733,6 +924,10 @@
     },
     "ruRU": {
       "description": "Когда мы отступали, к крепости приближалась вторая волна наг. Подозреваю, что там по-прежнему кипит бой.\r\n\r\nКор'кроны платят кровью за кровь. Раз ты все равно туда направляешься, расправься по пути с каждой встречной нагой. Среди них была колдунья – могу поспорить, что она там главная. Принеси мне ее голову.\r\n\r\nСегодня мы потеряли много отличных орков, и я не успокоюсь, пока не узнаю, что наги получили за это сполна.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Надеюсь, ты заставил их страдать, $c!",
+        "57e14213d34a4a852db4": "Кровь и гром!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -758,6 +953,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -794,6 +999,10 @@
     },
     "svSE": {
       "description": "En andra våg av naga närmade sig borgen när vi drog oss tillbaka. Jag misstänker att striden fortfarande rasar där inne.\r\n\r\nVi Kor'kron kräver blod för blod. Om du ändå ska gå in dit vill jag att du dödar alla naga du ser. Jag såg också en trollkvinna bland dem, och du kan slå vad om att hon var deras ledare. Ge mig hennes huvud.\r\n\r\nVi förlorade många goda orcher i dag, och jag kan inte vila lugnt om vi inte har gett igen med samma mynt.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Jag hoppas att du fick dem att lida, $c!",
+        "57e14213d34a4a852db4": "Blod och åska!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -820,6 +1029,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c31e54712316145a3a712762967aa836a89330d26770fe45fba9ebdb3a490c93"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -855,6 +1074,10 @@
     },
     "trTR": {
       "description": "Biz geri çekilirken ikinci bir naga dalgası kaleye yaklaşıyordu. Sanırım içeride savaş hâlâ sürüyor.\n\nBiz Kor'kron'lar kana kan isteriz. Zaten içeri gireceksen gördüğün her nagayı öldürmeni istiyorum. Aralarında bir büyücü kadın da gördüm. Liderleri olduğuna bahse girebilirsin. Kafasını bana getir.\n\nBugün çok sayıda iyi ork kaybettik. Yediğimiz kadar vurmadığımızı bilerek rahat edemem.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Umarım onlara acı çektirmişsindir, $c!",
+        "57e14213d34a4a852db4": "Kan ve gök gürültüsü!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -881,6 +1104,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c31e54712316145a3a712762967aa836a89330d26770fe45fba9ebdb3a490c93"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -917,6 +1150,10 @@
     },
     "ukUA": {
       "description": "Коли ми відступали, до фортеці наближалася друга хвиля наґ. Підозрюю, бій усередині досі триває.\r\n\r\nМи, кор'крони, платимо кров'ю за кров. Якщо ти й так ідеш туди, убий усіх наґ, яких побачиш. Серед них я бачив чаклунку, і закладаюся, це їхня ватажка. Принеси її голову.\r\n\r\nСьогодні ми втратили багато добрих орків, і я не матиму спокою, знаючи, що не відплатили сповна.",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "Сподіваюся, ти змусив їх страждати, $c!",
+        "57e14213d34a4a852db4": "Кров і грім!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -943,6 +1180,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c31e54712316145a3a712762967aa836a89330d26770fe45fba9ebdb3a490c93"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -978,6 +1225,10 @@
     },
     "zhCN": {
       "description": "撤退的时候，我看到第二波纳迦正朝着要塞狂涌。我敢肯定，里面的血战绝对还没结束。\r\n\r\n我们库卡隆向来信奉血债血偿。既然你无论如何都要杀进去，我要求你干掉视线里的每一只纳迦。我还看到她们队伍里混着个女巫，那绝对是她们的头目。把她的徽记给我带回来。\r\n\r\n今天我们折了太多好兄弟，要是不能以牙还牙、以血还血，我死不瞑目。",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "希望你让他们吃尽了苦头，$c！",
+        "57e14213d34a4a852db4": "鲜血与雷鸣！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1003,6 +1254,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -1039,6 +1300,10 @@
     },
     "zhTW": {
       "description": "當我們撤退的時候，第二波納迦正朝著要塞逼近。我想裡面依然在激烈廝殺。\r\n\r\n我們柯爾克隆講求的是血債血償。如果你不管怎樣都要進去，我要你殺光你看見的所有納迦。我還在他們之中看到了一個女巫，我敢打賭那肯定就是他們的領袖。把她的頭顱帶來給我。\r\n\r\n我們今天失去了許多優秀的獸人，如果不讓那些傢伙付出同樣的代價，我是絕對無法放心休息的。",
+      "dialogue": {
+        "28c317c2870fc8e1c83c": "希望你讓他們吃盡了苦頭，$c！",
+        "57e14213d34a4a852db4": "鮮血與雷鳴！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1064,6 +1329,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.28c317c2870fc8e1c83c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.57e14213d34a4a852db4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

@@ -16,9 +16,22 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "3b53a4f3121bcb369040": {
+      "contributionId": 158565,
+      "lineId": "q:94221:complete",
+      "npcId": 257296,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Golden Rod a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Á, zlatá tyč, kterou jsem si objednal. Nikdy jsem nečekal, že dorazí. Už jsem uvažoval, že se vrátím do Ironforge a koupím si ji v aukční síni. Ušetřil jsi mi cestu, za což ti tyto staré nohy velmi děkují.\n\nJeště nevím, jak ji mohu použít ke spojení s Kameny pout, a dokonce ani zda to vůbec dokážu, ale tuším, že mě to přiblížilo o krok blíž.\n\nV nejhorším případě mám alespoň radost z nové hole."
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Golden Rod",
       "translationMetadata": {
@@ -28,6 +41,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +66,19 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Golden Rod. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, den gyldne stav, jeg bestilte. Jeg havde aldrig forventet, at den ville ankomme. Jeg overvejede at vende tilbage til Ironforge og købe en på auktionshuset. Du sparede mig for en rejse, og det takker disse gamle fødder dig hjerteligt for.\n\nJeg ved endnu ikke, hvordan jeg kan bruge den til at kommunikere med Bindingsstenene, eller om jeg overhovedet kan, men jeg tror, den bringer mig et skridt nærmere.\n\nI værste fald er jeg glad for at have en ny stok."
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Guldstav",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +100,9 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Goldrute und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, die Goldrute, die ich angefordert habe. Ich hätte nie gedacht, dass sie tatsächlich ankommt. Ich hatte mit dem Gedanken gespielt, zurück nach Ironforge zu reisen und dort eine im Auktionshaus zu kaufen. Ihr habt mir den Weg erspart, wofür Euch diese alten Füße sehr danken.\n\nMir ist noch nicht klar, wie ich die Rute nutzen kann, um mit den Bindungssteinen in Kontakt zu treten, oder ob es mir überhaupt möglich ist. Aber wahrscheinlich bringt mich dies ein Stück weiter.\n\nIm schlimmsten Fall freue ich mich über einen neuen Gehstock."
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Goldrute",
       "translationMetadata": {
@@ -82,6 +111,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -100,6 +135,9 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Golden Rod, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, the Golden Rod I requested. I never expected it to arrive. I was considering going back to Ironforge to purchase one off the auction house. You saved me a trip, something these old feet greatly thank you for.\n\nI do not yet know how I can use this to commune with the Binding Stones, let alone if I even can, but I suspect this brings me one step closer.\n\nIn the worst case, well, I am happy to have a new cane."
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Golden Rod",
       "translationMetadata": {
@@ -108,6 +146,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +169,9 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa vara dorada e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, la vara dorada que pedí. Nunca esperé que llegara. Estaba pensando en volver a Forjaz para comprar una en la casa de subastas. Me has ahorrado el viaje, algo que estos viejos pies te agradecen enormemente.\n\nAún no sé cómo puedo usarla para comunicarme con las Piedras de Vínculo, ni siquiera si puedo hacerlo, pero sospecho que esto me acerca un paso más.\n\nEn el peor de los casos, me alegra tener un bastón nuevo."
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: vara dorada",
       "translationMetadata": {
@@ -133,6 +180,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -149,6 +201,9 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa vara dorada, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, la vara dorada que pedí. Nunca esperé que llegara. Estaba pensando en volver a Forjaz para comprar una en la casa de subastas. Me has ahorrado el viaje, algo que estos viejos pies te agradecen enormemente.\n\nAún no sé cómo puedo usarla para comunicarme con las Piedras de Vínculo, ni siquiera si puedo hacerlo, pero sospecho que esto me acerca un paso más.\n\nEn el peor de los casos, me alegra tener un bastón nuevo."
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Vara dorada",
       "translationMetadata": {
@@ -157,6 +212,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -176,6 +236,9 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa olbâtonnet doré:bâtonnets dorés;, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, la baguette dorée que j’avais demandée. Je ne pensais pas qu’elle arriverait un jour. J’envisageais de retourner à Forgefer pour en acheter une à l’hôtel des ventes. Vous m’avez épargné un voyage, et mes vieux pieds vous en remercient chaleureusement.\n\nJe ne sais pas encore comment m’en servir pour communiquer avec les pierres de lien, ni même si j’en suis capable, mais je pense que cela m’en rapproche.\n\nAu pire, je suis heureux d’avoir une nouvelle canne."
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : bâtonnet doré",
       "translationMetadata": {
@@ -184,6 +247,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -202,11 +270,19 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Golden Rod i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, zlatni štap koji sam naručio. Nisam očekivao da će stići. Razmišljao sam o povratku u Ironforge da ga kupim na dražbi. Poštedio si me puta, na čemu ti ove stare noge mnogo zahvaljuju.\n\nJoš ne znam kako ga mogu upotrijebiti za razgovor s Kamenjem vezivanja, pa ni mogu li to uopće, ali mislim da me ovo dovodi korak bliže.\n\nU najgorem slučaju, drago mi je što imam novi štap za hodanje."
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: zlatni štap",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -228,11 +304,19 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede: Dorato: verga. Riporta anche informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che questo mandato è trasferibile.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, la verga dorata che avevo richiesto. Non mi aspettavo che arrivasse. Stavo pensando di tornare a Forgiardente per comprarne una alla casa d’aste. Mi hai risparmiato il viaggio, e questi vecchi piedi te ne sono molto grati.\n\nNon so ancora come usarla per comunicare con le Pietre del Vincolo, né se sia possibile, ma sospetto che mi avvicini di un passo.\n\nNel peggiore dei casi, sono felice di avere un nuovo bastone."
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Verga d'Oro",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -254,6 +338,9 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 금마법막대 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "아, 내가 부탁한 황금마법막대군요. 도착하리라고는 생각도 못 했습니다. 아이언포지 경매장에서 하나 사 올까 고민하던 참이었죠. 덕분에 그곳까지 가지 않아도 되겠군요. 이 늙은 발이 정말 고마워할 겁니다.\n\n이걸로 결속의 돌과 어떻게 교감해야 할지, 아니 가능한 일인지조차 아직 모르겠습니다. 하지만 한 걸음 더 가까워진 것 같군요.\n\n최악의 경우라도 새 지팡이가 생겼으니 기쁩니다."
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 금마법막대",
       "translationMetadata": {
@@ -262,6 +349,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -280,11 +372,19 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Golden Rod oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ach, złota różdżka, o którą prosiłem. Nie spodziewałem się, że dotrze. Rozważałem powrót do Ironforge, by kupić ją w domu aukcyjnym. Oszczędzono mi podróży, za co moje stare nogi są bardzo wdzięczne.\n\nNie wiem jeszcze, jak mogę użyć jej do porozumienia się z Kamieniami Więzi ani czy w ogóle potrafię, ale podejrzewam, że przybliża mnie to do celu.\n\nW najgorszym razie cieszę się z nowej laski."
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: złoty pręt",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -306,6 +406,9 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Bastão Dourado, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, a vara dourada que pedi. Nunca esperei que chegasse. Eu estava pensando em voltar a Altaforja para comprar uma no leilão. Você me poupou a viagem, e estes pés velhos agradecem muito.\n\nAinda não sei como posso usá-la para me comunicar com as Pedras de Vinculação, nem mesmo se consigo, mas suspeito que isso me deixa um passo mais perto.\n\nNa pior das hipóteses, fico feliz por ter uma bengala nova."
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Bastão Dourado",
       "translationMetadata": {
@@ -314,6 +417,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -331,6 +439,9 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa золотых жезлов, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "А, золотой жезл, который я просил. Я и не надеялся его получить. Уже подумывал вернуться в Стальгорн и купить такой на аукционе. Вы избавили меня от поездки, за что мои старые ноги вам весьма благодарны.\n\nЯ пока не знаю, как с его помощью связаться с Камнями Связи и возможно ли это вообще, но, полагаю, я стал на шаг ближе к цели.\n\nВ худшем случае у меня будет новая трость, и это уже радует."
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: золотой жезл",
       "translationMetadata": {
@@ -339,6 +450,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -357,11 +473,19 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Golden Rod. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, den gyllene stav jag bad om. Jag trodde aldrig att den skulle komma fram. Jag funderade på att återvända till Ironforge och köpa en på auktionshuset. Du besparade mig en resa, vilket dessa gamla fötter tackar dig varmt för.\n\nJag vet ännu inte hur jag kan använda den för att kommunicera med Bindningsstenarna, eller ens om jag kan det, men jag misstänker att den för mig ett steg närmare.\n\nI värsta fall är jag glad över att ha en ny käpp."
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Guldstav",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -384,11 +508,19 @@
     },
     "trTR": {
       "description": "<Soluk mürekkeple yazılmış notta Golden Rod isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "Ah, istediğim altın asa. Geleceğini hiç ummamıştım. Ironforge’a dönüp müzayede evinden bir tane almayı düşünüyordum. Beni bir yolculuktan kurtardın; bu yaşlı ayaklarım sana çok teşekkür ediyor.\n\nBunu Bağlama Taşları ile iletişim kurmak için nasıl kullanacağımı, hatta kullanıp kullanamayacağımı henüz bilmiyorum, ama beni bir adım daha yaklaştırdığını düşünüyorum.\n\nEn kötü ihtimalle yeni bir bastonum olduğu için mutluyum."
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Golden Rod",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -410,11 +542,19 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Golden Rod і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "А, золотий жезл, який я просив. Я й не сподівався, що він прибуде. Уже думав повернутися до Стальгорна й купити його на аукціоні. Ви позбавили мене поїздки, за що мої старі ноги вам щиро дякують.\n\nЯ ще не знаю, як використати його для спілкування з Каменями Зв’язку і чи можливо це взагалі, але гадаю, що став на крок ближче до мети.\n\nУ найгіршому разі я радий мати нову тростину."
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Золотий жезл",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -438,6 +578,9 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa根金棒，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "啊，我要的金棒。我从没想过它会送到。我正考虑回铁炉堡，在拍卖行买一根。你省了我一趟路，我这双老脚可要好好谢谢你。\n\n我还不知道该如何用它与禁锢之石沟通，甚至不知道能不能做到，但我想这让我离目标更近了一步。\n\n最坏的情况嘛，能有根新手杖也不错。"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：金棒",
       "translationMetadata": {
@@ -446,6 +589,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -462,6 +610,9 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa根金棒，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "3b53a4f3121bcb369040": "啊，我要的金棒。我從沒想過它會送到。我正考慮回鐵爐堡，在拍賣場買一根。你省了我一趟路，我這雙老腳可要好好謝謝你。\n\n我還不知道該如何用它與禁錮之石溝通，甚至不知道能不能做到，但我想這讓我離目標更近了一步。\n\n最壞的情況嘛，能有根新手杖也不錯。"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：金棒",
       "translationMetadata": {
@@ -470,6 +621,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.3b53a4f3121bcb369040": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

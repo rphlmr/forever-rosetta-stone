@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "114afc5900c0110ca97a": {
+      "contributionId": 142716,
+      "lineId": "q:94286:complete",
+      "npcId": 262284,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "54ce88742741e09b4c24": {
+      "contributionId": 142720,
+      "lineId": "q:94286:progress",
+      "npcId": 262284,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Flash Bomb a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Hej, hej! Nemávej s tím takhle na očích! Po téhle cestě hlídkují i ranaři, kamaráde, a já nechci, aby se vyptávali.\n\nPodej mi to, než kvůli tobě budu vypadat podezřele.",
+        "54ce88742741e09b4c24": "Co tu dělám já? Co tu děláš TY?!"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Flash Bomb",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Flash Bomb. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Rolig, rolig! Lad være med at vifte med sådan en helt åbenlyst! Håndhæverne patruljerer også den her vej, min ven, og jeg kan ikke have, at de stiller spørgsmål.\n\nGiv mig den, før du får mig til at se mistænkelig ud.",
+        "54ce88742741e09b4c24": "Hvad jeg laver her? Hvad laver DU her?!"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Lysbombe",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Blitzstrahlbombe und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Hey, hey! Wedelt damit nicht so offen herum! Auf dieser Straße patrouillieren auch Schläger, mein Freund, und ich kann keine Fragen von ihnen gebrauchen.\n\nGebt es mir, bevor Ihr mich verdächtig aussehen lasst.",
+        "54ce88742741e09b4c24": "Was ich hier mache? Was macht IHR denn hier?!"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Blitzbombe",
       "translationMetadata": {
@@ -82,6 +132,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -98,6 +158,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Flash Bomb, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Whoa, whoa! Don't be waving one of those out in the open like that! Bruisers patrol this road too, pal, and I can't have them asking questions.\n\nHand it over before you make me look suspicious.",
+        "54ce88742741e09b4c24": "What am I doing here? What are YOU doing here?!"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Flash Bomb",
       "translationMetadata": {
@@ -106,6 +170,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -123,6 +199,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa bomba cegadora e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "114afc5900c0110ca97a": "¡Eh, eh! ¡No vayas agitando eso a la vista de todos! Los matones también patrullan este camino, colega, y no quiero que empiecen a hacer preguntas.\n\nDámelo antes de que hagas que parezca sospechoso.",
+        "54ce88742741e09b4c24": "¿Que qué hago aquí? ¡¿Qué haces TÚ aquí?!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: bomba cegadora",
       "translationMetadata": {
@@ -131,6 +211,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -147,6 +237,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa bomba cegadora, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "¡Oye, oye! ¡No andes agitando eso a la vista de todos! Los matones también patrullan este camino, amigo, y no quiero que empiecen a hacer preguntas.\n\nDámelo antes de que me hagas parecer sospechoso.",
+        "54ce88742741e09b4c24": "¿Que qué hago aquí? ¡¿Qué haces TÚ aquí?!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Bomba cegadora",
       "translationMetadata": {
@@ -155,6 +249,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -172,6 +276,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa olbombe éclairante:bombes éclairantes;, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Hé, hé ! Ne brandis pas ça à la vue de tout le monde ! Les cogneurs patrouillent aussi sur cette route, mon pote, et je ne veux pas qu’ils commencent à poser des questions.\n\nDonne-moi ça avant de me faire paraître suspect.",
+        "54ce88742741e09b4c24": "Ce que je fais ici ? Mais qu’est-ce que VOUS faites ici ?!"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : bombe éclairante",
       "translationMetadata": {
@@ -180,6 +288,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -198,11 +316,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Flash Bomb i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Hej, hej! Nemoj time mahati svima pred očima! I snagatori patroliraju ovom cestom, prijatelju, a ne želim da počnu postavljati pitanja.\n\nPredaj mi to prije nego što zbog tebe izgledam sumnjivo.",
+        "54ce88742741e09b4c24": "Što ja radim ovdje? Što TI radiš ovdje?!"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: bljeskajuća bomba",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -224,11 +356,25 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede una Bomba Accecante e riporta informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che la commissione è trasferibile.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Ehi, ehi! Non agitare quella cosa così, in bella vista! Anche i picchiatori pattugliano questa strada, amico, e non voglio che inizino a fare domande.\n\nDammela prima che tu mi faccia sembrare sospetto.",
+        "54ce88742741e09b4c24": "Cosa ci faccio io qui? Cosa ci fate VOI qui?!"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Bomba Accecante",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -250,6 +396,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 섬광탄 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "어이, 어이! 그런 걸 대놓고 흔들지 마! 이 길에는 경비병들도 순찰을 돈다고, 친구. 놈들이 질문하게 둘 수는 없어.\n\n내가 수상해 보이기 전에 어서 이리 줘.",
+        "54ce88742741e09b4c24": "내가 여기서 뭘 하냐고? 네가 여기서 뭘 하는데?!"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 섬광탄",
       "translationMetadata": {
@@ -258,6 +408,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -274,11 +434,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Flash Bomb oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Hej, hej! Nie machaj tym tak na widoku! Zabijaki też patrolują tę drogę, kolego, a nie chcę, żeby zaczęli zadawać pytania.\n\nDaj mi to, zanim sprawisz, że będę wyglądał podejrzanie.",
+        "54ce88742741e09b4c24": "Co ja tu robię? A co TY tu robisz?!"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: bomba błyskowa",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -300,6 +474,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Bomba de Clarão, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Ei, ei! Não fique balançando isso assim, à vista de todos! Os brutamontes também patrulham esta estrada, amigo, e não quero que comecem a fazer perguntas.\n\nPasse isso para cá antes que eu pareça suspeito.",
+        "54ce88742741e09b4c24": "O que eu estou fazendo aqui? O que VOCÊ está fazendo aqui?!"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Bomba de Clarão",
       "translationMetadata": {
@@ -308,6 +486,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -325,6 +513,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa световые бомб, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Эй, эй! Не размахивай этим у всех на виду! По этой дороге тоже ходят громилы, приятель, а мне их вопросы ни к чему.\n\nОтдавай, пока из-за тебя я не стал выглядеть подозрительно.",
+        "54ce88742741e09b4c24": "Что я тут делаю? А ТЫ что тут делаешь?!"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: световая бомба",
       "translationMetadata": {
@@ -333,6 +525,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -350,11 +552,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Flash Bomb. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Hörru, hörru! Vifta inte med en sån där helt öppet! Busarna patrullerar också den här vägen, kompis, och jag vill inte att de börjar ställa frågor.\n\nGe hit den innan du får mig att se misstänkt ut.",
+        "54ce88742741e09b4c24": "Vad jag gör här? Vad gör DU här?!"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Ljusbomb",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -377,6 +593,10 @@
     },
     "trTR": {
       "description": "<Solmuş mürekkeple kaleme alınmış not, teslimat yeri ve ödeme bilgileriyle birlikte $2oa adet Flash Bomb talep ediyor. Notun altında, bu sipariş belgesinin devredilebilir olduğunu belirten bir yazı yer alıyor.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Hey, hey! Onu öyle herkesin gözü önünde sallama! Bu yolda fedailer de devriye geziyor dostum, soru sormalarını istemem.\n\nBeni şüpheli duruma düşürmeden onu ver bakalım.",
+        "54ce88742741e09b4c24": "Benim burada ne işim varmış? SENİN burada ne işin var?!"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Flash Bomb",
       "translationMetadata": {
@@ -386,6 +606,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -404,11 +634,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Flash Bomb і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "Гей, гей! Не розмахуй цим у всіх на видноті! Цією дорогою теж патрулюють громили, друже, а їхні запитання мені ні до чого.\n\nВіддавай, поки через тебе я не став виглядати підозріло.",
+        "54ce88742741e09b4c24": "Що я тут роблю? А ТИ що тут робиш?!"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Світлова бомба",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -432,6 +676,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa个闪光雷，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "喂，喂！别在大庭广众之下挥舞那东西！伙计，这条路上也有打手巡逻，我可不想让他们盘问。\n\n快把它给我，别让我看起来形迹可疑。",
+        "54ce88742741e09b4c24": "我在这里干什么？你又在这里干什么？！"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：闪光雷",
       "translationMetadata": {
@@ -440,6 +688,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -457,6 +715,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa個閃光雷，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "114afc5900c0110ca97a": "喂，喂！別在大庭廣眾之下揮舞那東西！夥計，這條路上也有打手巡邏，我可不想讓他們盤問。\n\n快把它給我，別讓我看起來形跡可疑。",
+        "54ce88742741e09b4c24": "我在這裡做什麼？你又在這裡做什麼？！"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：閃光雷",
       "translationMetadata": {
@@ -465,6 +727,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.114afc5900c0110ca97a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.54ce88742741e09b4c24": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

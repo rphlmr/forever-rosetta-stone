@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "91e6267f7327bfeac175": {
+      "contributionId": 7282,
+      "lineId": "q:94217:complete",
+      "npcId": 14508,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "adf1386f96c83153f048": {
+      "contributionId": 7281,
+      "lineId": "q:94217:progress",
+      "npcId": 14508,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Lesser Troll's Blood Elixir a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Přesně to, co si Malý John Mithril objednal!\n\nTady máš své mince. Až se odsud budeš plížit pryč, radši si je drž pevně u těla. Bojovníci v aréně prahnou po bohatství stejně jako po krvi!",
+        "adf1386f96c83153f048": "Jarr, neseš mi můj elixír?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -35,6 +57,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -60,6 +92,10 @@
     },
     "daDK": {
       "description": "\n\n<Sedlen er skrevet med falmet blæk og anmoder om Lesser Troll's Blood Elixir. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Præcis hvad Short John Mithril bestilte!\n\nHer er dine mønter. Hold dem tæt ind til kroppen, når du smutter herfra. Arenaens kæmpere tørster lige så meget efter rigdom som efter blod!",
+        "adf1386f96c83153f048": "Arrr, har du min eliksir med?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -72,6 +108,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -98,6 +144,10 @@
     },
     "deDE": {
       "description": "\r\n\r\n<Die in verblichener Tinte verfasste Notiz verlangt nach oa geringen Trollblutelixier und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Genau, was Störtebrecher bestellt hat!\n\nHier ist Eure Bezahlung. Haltet es gut fest, den Kämpfern der Arena dürstet es genauso sehr nach Reichtümern, wie nach Blut!",
+        "adf1386f96c83153f048": "Arrr, bringt Ihr mir mein Elixier?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -113,6 +163,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -137,6 +199,10 @@
     },
     "enUS": {
       "description": "\n\n<Penned in faded ink, the note is requesting oa Lesser Troll's Blood Elixir, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Exactly what Short John Mithril ordered!\n\nHere's ye' coin. I'd keep it clutched to your chest as ye' scuttle out of here, the arena combatants thirst for riches as much as they thirst for blood!",
+        "adf1386f96c83153f048": "Yarr, you be bringin' me my elixir?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -152,6 +218,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -175,6 +253,10 @@
     },
     "esES": {
       "description": "\r\n\r\n<Escrita con tinta borrosa, la nota solicita oa elixir de sangre de trol inferior e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "91e6267f7327bfeac175": "¡Justo lo que pidió Short John Mithril!\n\nAquí tienes tu dinero. Yo lo sujetaría bien contra el pecho al escabullirme de aquí. ¡Los combatientes de la arena ansían las riquezas tanto como la sangre!",
+        "adf1386f96c83153f048": "¡Arrr! ¿Me traes mi elixir?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -190,6 +272,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -212,6 +304,10 @@
     },
     "esMX": {
       "description": "\r\n\r\n<Escrita con tinta desteñida, la nota pide oa elixir de sangre de troll inferior, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "¡Justo lo que pidió Short John Mithril!\n\nAquí tienes tu dinero. Yo lo sujetaría bien contra el pecho al escabullirme de aquí. ¡Los combatientes de la arena ansían las riquezas tanto como la sangre!",
+        "adf1386f96c83153f048": "¡Arrr! ¿Me traes mi elixir?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -227,6 +323,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -250,6 +356,10 @@
     },
     "frFR": {
       "description": "\r\n\r\n<Cette note manuscrite à l’encre délavée réclame oa olélixir:élixirs;  de sang de Troll inférieur, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Exactement ce que Short John Mithril a commandé !\n\nVoici ton argent. À ta place, je le serrerais contre moi en filant d’ici. Les combattants de l’arène ont autant soif de richesses que de sang !",
+        "adf1386f96c83153f048": "Arrr, vous m’apportez mon élixir ?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -265,6 +375,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -289,6 +409,10 @@
     },
     "hrHR": {
       "description": "\n\n<Bilješka napisana izblijedjelom tintom traži Lesser Troll's Blood Elixir i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Upravo ono što je Short John Mithril naručio!\n\nEvo ti novca. Čvrsto ga drži uz prsa dok se šuljaš odavde. Borci u areni žude za bogatstvom koliko i za krvlju!",
+        "adf1386f96c83153f048": "Arrr, nosiš li mi moj eliksir?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -301,6 +425,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -327,6 +461,10 @@
     },
     "itIT": {
       "description": "\n\n<Scritta con inchiostro sbiadito, la nota richiede un elisir inferiore di sangue di troll e riporta informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che la commissione è trasferibile.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Proprio quello che ha ordinato Short John Mithril!\n\nEcco le tue monete. Io me le terrei strette al petto mentre sgattaioli via di qui: i combattenti dell'arena hanno sete di ricchezze quanto di sangue!",
+        "adf1386f96c83153f048": "Arrr, mi stai portando il mio elisir?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -342,6 +480,18 @@
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -365,6 +515,10 @@
     },
     "koKR": {
       "description": "\r\n\r\n<빛바랜 잉크로 쓴 쪽지에는 하급 트롤의 피 비약 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Short John Mithril이 주문한 게 바로 이거야!\n\n여기 돈일세. 여길 빠져나갈 때는 가슴에 꼭 품고 가게나. 투기장 전사들은 피만큼이나 재물에도 목말라 있으니까!",
+        "adf1386f96c83153f048": "어이, 내 비약을 가져온 거냐?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -380,6 +534,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -402,6 +566,10 @@
     },
     "plPL": {
       "description": "\n\n<Notatka napisana wyblakłym atramentem zawiera prośbę o Lesser Troll's Blood Elixir oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Dokładnie to, co zamówił Short John Mithril!\n\nOto twoja zapłata. Na twoim miejscu mocno trzymałbym ją przy piersi, wymykając się stąd. Wojownicy na arenie łakną bogactwa równie mocno jak krwi!",
+        "adf1386f96c83153f048": "Arrr, niesiesz mi mój eliksir?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -414,6 +582,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -440,6 +618,10 @@
     },
     "ptBR": {
       "description": "\r\n\r\n <Escrito com tinta desbotada, o bilhete solicita oax Elixir de Sangue de Troll Inferior, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Exatamente o que Short John Mithril encomendou!\n\nAqui está seu dinheiro. Eu o seguraria bem junto ao peito ao sair daqui. Os combatentes da arena têm tanta sede de riqueza quanto de sangue!",
+        "adf1386f96c83153f048": "Arrr, trouxe meu elixir?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -455,6 +637,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -480,6 +672,10 @@
     },
     "ruRU": {
       "description": "\r\n\r\n<В записке, написанной выцветшими чернилами, содержится заказ на oa порций малого эликсира тролльей крови, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Именно то, что заказал Short John Mithril!\n\nВот твои деньги. На твоем месте я бы крепко прижал их к груди, выбираясь отсюда: бойцы арены жаждут богатства не меньше, чем крови!",
+        "adf1386f96c83153f048": "Йарр, принес мне мой эликсир?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -495,6 +691,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -520,6 +726,10 @@
     },
     "svSE": {
       "description": "\n\n<Lappen är skriven med blekt bläck och efterfrågar Lesser Troll's Blood Elixir. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Precis vad Short John Mithril beställde!\n\nHär är dina mynt. Jag skulle hålla dem tätt intill bröstet på vägen härifrån. Arenans kämpar törstar lika mycket efter rikedomar som efter blod!",
+        "adf1386f96c83153f048": "Arrr, har du med dig mitt elixir?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -532,6 +742,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -560,6 +780,10 @@
     },
     "trTR": {
       "description": "\n\n<Soluk mürekkeple yazılmış notta Lesser Troll's Blood Elixir isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Tam da Short John Mithril’in sipariş ettiği şey!\n\nAl paranı. Buradan sıvışırken onu göğsüne sıkı sıkı bastırsan iyi olur. Arena dövüşçüleri kana olduğu kadar servete de susamıştır!",
+        "adf1386f96c83153f048": "Arrr, iksirimi getirdin mi?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -572,6 +796,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -598,6 +832,10 @@
     },
     "ukUA": {
       "description": "\n\n<У записці, написаній вицвілим чорнилом, просять принести Lesser Troll's Blood Elixir і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "Саме те, що замовив Short John Mithril!\n\nОсь твої гроші. На твоєму місці я міцно притиснув би їх до грудей, вибираючись звідси: бійці арени прагнуть багатства не менше, ніж крові!",
+        "adf1386f96c83153f048": "Йарр, приніс мені мій еліксир?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -610,6 +848,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -638,6 +886,10 @@
     },
     "zhCN": {
       "description": "\r\n\r\n<字条以褪色的墨水写成，要求提供oa瓶次级巨魔之血药剂，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "正是Short John Mithril订购的东西！\n\n这是你的钱。溜出去的时候最好把它紧紧抱在怀里，竞技场的斗士们渴望财富就像渴望鲜血一样！",
+        "adf1386f96c83153f048": "呀，你把我的药剂带来了？"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -653,6 +905,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -678,6 +940,10 @@
     },
     "zhTW": {
       "description": "\r\n\r\n<紙條以褪色的墨水寫成，要求提供oa個次級食人妖之血藥劑，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "91e6267f7327bfeac175": "正是Short John Mithril訂購的東西！\n\n這是你的錢。溜出去的時候最好把它緊緊抱在懷裡，競技場的鬥士們渴望財富就像渴望鮮血一樣！",
+        "adf1386f96c83153f048": "呀，你把我的藥劑帶來了？"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -693,6 +959,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.91e6267f7327bfeac175": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.adf1386f96c83153f048": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",

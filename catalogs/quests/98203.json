@@ -1,8 +1,30 @@
 {
   "areaId": 47,
+  "dialogueContexts": {
+    "2fed7ac2b60838fca850": {
+      "contributionId": 108301,
+      "lineId": "q:98203:complete",
+      "npcId": 270780,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "f019c0b7deb6ca36f1df": {
+      "contributionId": 108326,
+      "lineId": "q:98203:progress",
+      "npcId": 270780,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Trollové z Witherbark vědí, že je lovíme jako zrádce, kterými jsou. Kujou plány a chystají úkryty, aby jejich kmen zůstal ve stínu, i když je za jejich zradu upálíme.\n\nNaši zvědi našli jeskyni západně od Hiri'wathy. Jeden felčar, Ti'ik, si tam nosí svý vúdú – hnilobu, rozklad a svíjející se larvy pro nějakou odpornou magii.\n\nNenecháme tu havěť lézt nám po domovech, zatímco spíme. Jdi, přines jeho hlavu a rozdrť všechno, co tam pěstujou.\n\nJe tuhej, tak ho nepodceňuj, jo?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "To je on. Odporný pohled.\n\nPavoučí vejce a červi, nic z toho v naší vesnici nechceme.\n\nTak běžte s požehnáním loa. Kmen Revantusk vám děkuje za hubení škůdců.",
+        "f019c0b7deb6ca36f1df": "Hledáš Ti'ika v jeho jeskyni plné larev?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +75,10 @@
     },
     "daDK": {
       "description": "Witherbark ved, at vi jager dem som de forrædere, de er. De laver planer og skjulesteder for at holde stammen i skyggerne, selv efter vi brænder dem for deres bedrag.\r\n\r\nVores spejdere finder en grotte vest for Hiri'watha. En heksedoktor, Ti'ik, bringer sin voodoo derind, råd, forfald og vridende larver til en modbydelig magi.\r\n\r\nVi lader ikke det snavs kravle gennem vores hjem, mens vi sover. Gå, tag hans hoved og knus, hvad end de dyrker.\r\n\r\nHan er hård, så undervurdér ham ikke, ja?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "Det er ham. Et fælt syn.\n\nEdderkoppeæg og maddiker, intet af det vil vi have i vores landsby.\n\nGå nu med loaernes vejledning. Revantusk takker dig for skadedyrsbekæmpelsen.",
+        "f019c0b7deb6ca36f1df": "Er du taget ud for at finde Ti'ik i hans hule fuld af larver?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +95,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7ceaa89edd70a440097b6b0161b66c4e1c24943b04e20c56049a51d6ef25c057"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +128,10 @@
     },
     "deDE": {
       "description": "Die Bleichborken wissen, dass wir sie jagen wie die Verräter, die sie sin'. Sie machen Pläne und verstecken sich, um ihren Stamm selbst dann noch im Verborgenen zu halten, nachdem wir sie für ihren Verrat brennen lassen.\r\n\r\nUnsere Späher ham westlich von Hiri'watha 'ne Höhle entdeckt. Ein Hexendoktor, Ti'ik, nutzt sie als Lager für seine Voodoohilfsmittel: Fäulnis, Zerfall un' sich windende Larven für irgend 'ne üble Magie.\r\n\r\nWir lassen nich' zu, dass dieser Dreck durch unsere Häuser kriecht, während wir schlafen. Geht, holt Euch seinen Kopf und tötet, was auch immer er da züchtet.\r\n\r\nEr is' zäh, also unterschätzt ihn lieber nich', ja?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "Das isser. Ein abartiger Anblick.\n\nSpinneneier un' Maden, nichts davon wollen wir in unserem Dorf.\n\nMacht weiter un' lasst Euch von de Loa leiten. Die Bruchhauer danken Euch für die Schädlingsbekämpfung.",
+        "f019c0b7deb6ca36f1df": "Sucht Ihr nach Ti'ik in seiner Höhle voller Larven?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +147,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +182,10 @@
     },
     "enUS": {
       "description": "The Witherbark know we be huntin' them like the traitors they are. Makin' plans and hideouts to keep their tribe in the shadows even after we burn 'em for their deceit.\r\n\r\nOur scouts be findin' a cave west of Hiri'watha. One witch doctor, Ti'ik, he bring his voodoo inside--rot, decay, an' wrigglin' larvae for some foul magic.\r\n\r\nWe not lettin' that filth crawl through our homes while we sleep. Go, take his head, and crush whatever they be growin'. \r\n\r\nHe be tough, so don't go underestimatin' him, ya?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "Dis be the one. A wicked sight.\n\nSpider eggs, maggots, none of dis be what we want in our village.\n\nGo on then with da loa's guidance. Revantusk be thanking you for the pest control.",
+        "f019c0b7deb6ca36f1df": "Ya go findin' Ti'ik in his cave of larvae?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +201,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -158,6 +236,10 @@
     },
     "esES": {
       "description": "Loh Secacorteza saben que loh cazamoh como a loh traidoreh que son. Están urdiendo planeh y preparando esconditeh para mantener a su tribu en lah sombrah, incluso dehpuéh de que loh hayamoh pasado por la hoguera por su engaño.\r\n\r\nNuehtroh exploradoreh han encontrado una cueva al oehte de Hiri'watha. Dentro hay un médico brujo, Ti'ik, que obra su ahqueroso vudú: podredumbre, dehcomposición y larvah retorciéndose para practicar una magia repugnante.\r\n\r\nNo vamoh a permitir que esa inmundicia se arrahtre por nuehtrah casah mientrah dormimoh. Córtale la cabeza y dehtroza lo que ehté cultivando.\r\n\r\nEh un tipo duro, así que no le subehtimeh, colega.",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "Es él. Qué visión tan espantosa.\n\nHuevos de araña y gusanos, nada de eso queremos en nuestra aldea.\n\nSeguid vuestro camino con la guía de los loa. Los Revantusk os agradecen que hayáis acabado con las plagas.",
+        "f019c0b7deb6ca36f1df": "¿Has ido a buscar a Ti'ik a su cueva de larvas?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +255,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -196,6 +288,10 @@
     },
     "esMX": {
       "description": "Los Secacorteza saben que los cazamo' como los traidore' que son. Preparan escondites y refugios para mantener a su tribu en la' sombra', incluso después de que los redujimo' a cenizas por su traición.\r\n\r\nNuestro' exploradore' encontraron una cueva al oeste de Hiri'watha. Allí, el médico brujo Ti'ik desató su vudú oscuro: podredumbre, decadencia y larvas retorcidas que alimentan su hechicería profana.\r\n\r\nNo dejaremo' que esa plaga se infiltre en nuestros hogares mientras dormimo'. Ve, córtale la cabeza y destruye todo lo que están cultivando en las sombras.\r\n\r\nEs fuerte, así que no caigas en el error de tomarlo a la ligera, ¿entendido?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "Es él. Qué visión tan espantosa.\n\nHuevos de araña y gusanos, nada de eso queremos en nuestra aldea.\n\nSigue tu camino con la guía de los loa. Los Revantusk te agradecen que hayas acabado con las plagas.",
+        "f019c0b7deb6ca36f1df": "¿Has ido a buscar a Ti'ik en su cueva de larvas?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -211,6 +307,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -234,6 +340,10 @@
     },
     "frFR": {
       "description": "Les Fânécorces, ils savent qu’on les chasse comme les traîtres qu’ils sont. Ils montent des plans et se cachent dans leurs repaires pour garder leur tribu dans l’ombre, même après les avoir brûlés pour leur tromperie.\r\n\r\nNos éclaireurs ont trouvé une grotte à l’ouest d’Hiri’watha. Un féticheur, Ti’ik, y a ramené son vaudou : pourriture, décomposition et larves qui grouillent pour nourrir une vile magie.\r\n\r\nNous, on laissera pas cette saleté ramper jusque dans nos foyers pendant qu’on dort. Allez lui prendre sa tête, pis écrasez tout ce qu’ils font pousser là-dedans.\r\n\r\nTi’ik, il est coriace, alors allez pas le sous-estimer, d’accord ?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "C’est bien lui. Quelle vision de cauchemar.\n\nDes œufs d’araignée et des asticots, on ne veut rien de tout ça dans notre village.\n\nAllez, que les loas vous guident. Les Vengebroches vous remercient d’avoir éliminé ces nuisibles.",
+        "f019c0b7deb6ca36f1df": "Tu es allé chercher Ti'ik dans sa grotte pleine de larves ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -249,6 +359,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -272,6 +392,10 @@
     },
     "hrHR": {
       "description": "Witherbark znaju da ih lovimo kao izdajice kakvi jesu. Prave planove i skrovišta da svoje pleme zadrže u sjeni čak i nakon što ih kaznimo za prijevaru.\n\nNaši izviđači pronašli su špilju zapadno od Hiri'wathe. Jedan vrač, Ti'ik, unosi svoj vudu unutra, trulež, propadanje i migoljeće ličinke za neku odvratnu magiju.\n\nNećemo dopustiti da ta prljavština gmiže našim domovima dok spavamo. Idi, uzmi mu glavu i uništi što god uzgajaju.\n\nOpasan je, zato ga nemoj podcijeniti, razumiješ?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "To je taj. Grozan prizor.\n\nPaukova jaja i crvi, ništa od toga ne želimo u našem selu.\n\nPođite sad uz vodstvo loa. Revantusk vam zahvaljuje što ste uklonili nametnike.",
+        "f019c0b7deb6ca36f1df": "Ideš li pronaći Ti'ika u njegovoj špilji punoj ličinki?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -288,6 +412,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7ceaa89edd70a440097b6b0161b66c4e1c24943b04e20c56049a51d6ef25c057"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -312,6 +446,10 @@
     },
     "itIT": {
       "description": "I Witherbark sanno che diamo loro la caccia come ai traditori che sono. Preparano piani e nascondigli per tenere la loro tribù nell'ombra anche dopo che li avremo bruciati per il loro inganno.\n\nI nostri esploratori hanno trovato una caverna a ovest di Hiri'watha. Uno stregone, Ti'ik, ci porta il suo vudù: marciume, putrefazione e larve contorte per qualche magia immonda.\n\nNon lasceremo che quella sudiceria strisci nelle nostre case mentre dormiamo. Vai, prendi la sua testa e schiaccia qualunque cosa stiano facendo crescere.\n\nÈ un osso duro, quindi non sottovalutarlo, d'accordo?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "È proprio lui. Che spettacolo orribile.\n\nUova di ragno e larve, non vogliamo niente del genere nel nostro villaggio.\n\nVa’ con la guida dei loa. I Revantusk ti ringraziano per aver eliminato i parassiti.",
+        "f019c0b7deb6ca36f1df": "Sei andato a cercare Ti'ik nella sua caverna piena di larve?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -328,6 +466,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7ceaa89edd70a440097b6b0161b66c4e1c24943b04e20c56049a51d6ef25c057"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -352,6 +500,10 @@
     },
     "koKR": {
       "description": "배신자 마른나무껍질 놈들도 우리가 자기들을 사냥하고 있다는 걸 알아. 우리가 기만의 대가로 불태워 응징한 뒤에도, 어둠 속에서 명맥을 이을 계획을 세워 놓고 은신처를 만들고 있지.\r\n\r\n정찰대가 히리와타 서쪽에서 동굴 하나를 찾았다. 티이크라는 의술사가 그 안에서 부두술을 부리고 있더군. 부패와 썩음, 꿈틀거리는 애벌레를 사악한 마법에 쓰려는 거야.\r\n\r\n우리가 잠자는 사이 그런 더러운 것들이 마을을 기어다니게 둘 수는 없지. 가서 놈의 목을 치고 기르는 건 모조리 짓밟아라.\r\n\r\n강한 놈이니 얕보지 말도록. 알겠나?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "바로 이놈이군. 끔찍한 몰골이야.\n\n거미 알이랑 구더기라니, 우리 마을에선 그런 것들 필요 없어.\n\n자, 로아의 인도와 함께 가게. 복수의 엄니가 해충을 없애 줘서 고맙다고 전하네.",
+        "f019c0b7deb6ca36f1df": "애벌레가 가득한 동굴에서 티이크를 찾아봤나?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -367,6 +519,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -392,6 +554,10 @@
     },
     "plPL": {
       "description": "Witherbark wiedzą, że polujemy na nich jak na zdrajców, którymi są. Przygotowują plany i kryjówki, by utrzymać plemię w cieniu, nawet po tym, jak spalimy ich za oszustwo.\r\n\r\nNasi zwiadowcy znaleźli jaskinię na zachód od Hiri'watha. Znachor Ti'ik wnosi tam swoje voodoo: zgniliznę, rozkład i wijące się larwy do jakiejś plugawej magii.\r\n\r\nNie pozwolimy, by to plugastwo pełzało po naszych domach, kiedy śpimy. Idź, zabierz jego głowę i zniszcz wszystko, co hodują. \r\n\r\nJest twardy, więc go nie lekceważ, co?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "To on. Okropny widok.\n\nPajęcze jaja i larwy, niczego takiego nie chcemy w naszej wiosce.\n\nRuszaj więc pod opieką loa. Revantusk dziękują za pozbycie się szkodników.",
+        "f019c0b7deb6ca36f1df": "Szukasz Ti'ika w jego jaskini pełnej larw?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -408,6 +574,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7ceaa89edd70a440097b6b0161b66c4e1c24943b04e20c56049a51d6ef25c057"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -432,6 +608,10 @@
     },
     "ptBR": {
       "description": "Os Cascasseca sabem que a gente vai caçar eles como os traidores que eles são. Tão fazendo planos e esconderijos pra manter a tribo nas sombras, mesmo depois que a gente queimou eles por aquela traição.\r\n\r\nOs nossos batedores acharam uma caverna a oeste de Hiri'watha. Um mandingueiro, o Ti'ik, faz vodu lá dentro — podridão, carniça e umas larvas se contorcendo pra alguma magia maligna.\r\n\r\nA gente não vai deixar essa sujeira passar pelas nossas casas enquanto a gente dorme. Vai lá, arranca a cabeça dele e esmaga qualquer coisa que eles tiverem criando. \r\n\r\nO cara é durão, então não subestima ele, falou?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "É ele mesmo. Que visão horrível.\n\nOvos de aranha e larvas, nada disso a gente quer na nossa aldeia.\n\nVai com a orientação dos loa. Os Revantusk agradecem por acabar com as pragas.",
+        "f019c0b7deb6ca36f1df": "Foi procurar Ti'ik na caverna cheia de larvas dele?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -447,6 +627,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -470,6 +660,10 @@
     },
     "ruRU": {
       "description": "Племя Сухокожих знает, что мы охотимся на них, проклятых предателей. Они строят козни, находят новые убежища, даже когда мы сжигаем их за коварство.\r\n\r\nНаши разведчики нашли пещеру, к западу от Хири'ваты. Знахарь Сухокожих, Ти'ик, практикует там свое вуду: гниль, разложение, личинки – вот что питает его гнусную магию.\r\n\r\nЧтобы эта мерзость ползала по нашим домам, пока мы спим... Ну уж нет! Иди добудь его голову и уничтожь то, что они там выращивают.\r\n\r\nОн силен, так что будь поосторожней, лады?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "Это он. Мерзкое зрелище.\n\nПаучьи яйца и личинки нам в деревне ни к чему.\n\nСтупайте же под покровительством лоа. Сломанное Копье благодарит вас за избавление от вредителей.",
+        "f019c0b7deb6ca36f1df": "Ищешь Ти'ика в его пещере, полной личинок?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -485,6 +679,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -510,6 +714,10 @@
     },
     "svSE": {
       "description": "Witherbark vet att vi jagar dem som de förrädare de är. De gör upp planer och gömställen för att hålla stammen i skuggorna även efter att vi bränt dem för deras svek.\r\n\r\nVåra spejare har hittat en grotta väster om Hiri'watha. En häxdoktor, Ti'ik, tar in sin voodoo där, röta, förfall och krälande larver för någon vidrig magi.\r\n\r\nVi låter inte den smutsen krypa genom våra hem medan vi sover. Gå, ta hans huvud och krossa vad det än är de odlar.\r\n\r\nHan är tuff, så underskatta honom inte, ja?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "Det är han. En otäck syn.\n\nSpindelägg och larver, inget sådant vill vi ha i vår by.\n\nGå nu med loaernas vägledning. Revantusk tackar dig för att du tog hand om skadedjuren.",
+        "f019c0b7deb6ca36f1df": "Har du gett dig av för att hitta Ti'ik i hans grotta full av larver?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -526,6 +734,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7ceaa89edd70a440097b6b0161b66c4e1c24943b04e20c56049a51d6ef25c057"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -550,6 +768,10 @@
     },
     "trTR": {
       "description": "Witherbark, onları oldukları hainler gibi avladığımızı biliyor. Aldatmacalarının cezası olarak onları yaktıktan sonra bile kabilelerini gölgelerde tutmak için planlar ve sığınaklar hazırlıyorlar.\r\n\r\nGözcülerimiz Hiri'watha'nın batısında bir mağara buldu. Ti'ik adında bir cadı doktor, vudusunu oraya taşıyor; iğrenç bir büyü için çürüme, bozulma ve kıpır kıpır larvalar.\r\n\r\nBiz uyurken o pisliğin evlerimizde sürünmesine izin vermeyeceğiz. Git, başını al ve yetiştirdikleri her şeyi ez.\r\n\r\nÇetindir, o yüzden onu hafife alma, tamam mı?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "İşte bu o. İğrenç bir manzara.\n\nÖrümcek yumurtaları, kurtçuklar... Bunların hiçbirini köyümüzde istemiyoruz.\n\nHaydi, loaların rehberliğiyle yoluna devam et. Revantusk haşereleri temizlediğin için sana teşekkür ediyor.",
+        "f019c0b7deb6ca36f1df": "Ti'ik'i larvalarla dolu mağarasında aramaya gittin mi?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -566,6 +788,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7ceaa89edd70a440097b6b0161b66c4e1c24943b04e20c56049a51d6ef25c057"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -590,6 +822,10 @@
     },
     "ukUA": {
       "description": "Зів'яла Кора знає, що ми полюємо на них як на зрадників. Будують плани й схованки, щоб плем'я залишилося в тінях навіть після того, як спалимо за обман.\r\n\r\nРозвідники знайшли печеру на захід від Гірі'вати. Один знахар, Ті'ік, заніс туди вуду: гниль, розпад і звивистих личинок для нечистої магії.\r\n\r\nНе дамо цій гидоті повзати домівками, поки спимо. Іди, забери голову й розчави все, що вирощують.\r\n\r\nВін міцний, тож не недооцінюй, гаразд?",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "Це він. Огидне видовище.\n\nПавучі яйця й личинки нам у селі ні до чого.\n\nРушайте ж під опікою лоа. Revantusk дякують вам за знищення шкідників.",
+        "f019c0b7deb6ca36f1df": "Пішов шукати Ti'ik у його печері, повній личинок?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -606,6 +842,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "7ceaa89edd70a440097b6b0161b66c4e1c24943b04e20c56049a51d6ef25c057"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -630,6 +876,10 @@
     },
     "zhCN": {
       "description": "枯木巨魔那帮家伙心里清楚得很，我们会像猎杀叛徒一样四处追捕他们。所以他们开始疯狂地制定计划、到处修建藏身处，妄图在我们为了惩罚他们的背叛而放火烧死他们之后，仍能让整个部族苟延残喘地躲藏在阴影里。\r\n\r\n我们的斥候刚刚在西利瓦萨以西的地方发现了一座洞穴。一个名叫提伊克的巫医，把他的那些恶心巫毒全都带进了那个洞里——腐肉、衰败的气息，还有到处扭动着的幼虫，这一切显然全是为了施展某种极度邪恶的魔法。\r\n\r\n我们绝对不能任由那种令人作呕的污秽之物，趁着我们熟睡的时候偷偷爬进我们的家园。去，把他的徽记带回来，再把他们培育出的那些恶心玩意儿全都踩成肉泥。\r\n\r\n他这人非常难对付，你千万可别小看他了，听明白了吗？",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "就是这家伙。真是可怕的景象。\n\n蜘蛛卵和蛆虫，我们村子里可不想要这些东西。\n\n去吧，愿洛阿指引你。恶齿部族感谢你除掉这些害虫。",
+        "f019c0b7deb6ca36f1df": "你去满是幼虫的洞穴里找提伊克了吗？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -645,6 +895,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -668,6 +928,10 @@
     },
     "zhTW": {
       "description": "枯木食人妖知道我們會把他們當叛徒一樣追捕。即便我們燒死他們，他們還是會在暗處謀劃，好讓他們的部族能苟延殘喘。\r\n\r\n我們的斥侯在西利瓦薩的西邊找到一個洞穴。有個名叫提克的巫醫，利用其中的蠕蟲來施展邪惡的巫毒魔法。\r\n\r\n有這個惡人在，我們根本無法安睡。去斬下他的首級，然後摧毀他們培養的東西。\r\n\r\n他不是好惹的，不要低估他，聽到沒有？",
+      "dialogue": {
+        "2fed7ac2b60838fca850": "就是這傢伙。真是可怕的景象。\n\n蜘蛛卵和蛆蟲，我們村子裡可不想要這些東西。\n\n去吧，願羅亞指引你。惡齒部族感謝你除掉這些害蟲。",
+        "f019c0b7deb6ca36f1df": "你去滿是幼蟲的洞穴裡找提伊克了嗎？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -683,6 +947,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.2fed7ac2b60838fca850": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f019c0b7deb6ca36f1df": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

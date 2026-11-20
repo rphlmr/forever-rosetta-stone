@@ -1,4 +1,11 @@
 {
+  "dialogueContexts": {
+    "description": {
+      "sourceDescriptionSha256": "426fc546b675df86cdd12aee07cefe34f1bb9a302858aa25c92e5cb2af5aaef4",
+      "sourceField": "description",
+      "stage": "accept"
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Šamančina mrtvola je ohlodaná dočista. Na zbytcích ulpěly chlupy, hlína a jed, které napovídají, kdo její smrt způsobil. Chybí také její brašna. Pošlapaný útržek pergamenu zmiňuje Murky Earth Sapta. Tvorové ji museli odnést spolu se zbytkem jejího výzkumu. Cítíš podivné nutkání saptu najít a vypít.>",
@@ -210,6 +217,9 @@
     },
     "ptBR": {
       "description": "<The shaman's corpse is picked clean. There is fur, earth, and venom stuck to what remains, hinting to the culprits behind her demise. Her bag is missing as well. A trodden scrap of parchment mentions a Murky Earth Sapta. The creatures must have taken it along with the rest of her research. You feel strangely compelled to find the sapta and drink it.>",
+      "dialogue": {
+        "description": "<Fizeram uma limpa no cadáver da xamã. Há pelos, terra e peçonha grudados em seus restos mortais, e tudo isso dá uma dica sobre os culpados. A bolsa da vítima também sumiu. Há um retalho de pergaminho amassado que menciona uma sapta da terra turva. As criaturas devem ter levado junto com o resto da pesquisa da xamã. Você fica estranhamente $gcompelido:compelida; a encontrar a sapta e bebê-la.>"
+      },
       "title": "Terra expurgante",
       "translationMetadata": {
         "fields": {
@@ -217,6 +227,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceSha256": "96488b3c8f583efd48c869b7181524c3babb834a5485a04fa104176be2d4514b"
           },
           "title": {
             "origin": "original",

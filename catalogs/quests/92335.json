@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "051ee2e7089ec9a45fff": {
+      "contributionId": 115635,
+      "lineId": "q:92335:complete",
+      "npcId": 256222,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "cf2c7697b07470d6af53": {
+      "contributionId": 115612,
+      "lineId": "q:92335:progress",
+      "npcId": 256222,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Magie, kterou hledáš, je stejně složitá jako divoká. Potřebuje přísadu, která poskytne stabilní zdroj nepřetržité energie, a já vím přesně o té pravé.\n\nKdyž tu Archimonde potkal svůj zasloužený konec, padlo i mnoho jeho nižších přisluhovačů. Zabili i jeho hlavního pobočníka Azgalora – a to dokonce smrtelníci jako ty!\n\nPoslední tělesné pozůstatky Azgalora najdeš uprostřed zdejších ruin. Nemusíš Ketharasovi nosit všechen ten popel. Na jeho potřeby bohatě postačí špetka.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Výborně, tato špetka popela poskytne právě to sympatetické spojení, které je k fungování kouzla potřeba. Znepokojuje mě používat démonické ostatky jako přísadu, ale pro vyšší dobro, kterému mohou posloužit, to dokážu překonat.\n\nDobrá práce, $N.",
+        "cf2c7697b07470d6af53": "Jak pokračuje tvé hledání něčeho, co by nám pomohlo v práci?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Den magi, du søger, er lige så kompleks, som den er vild. Den behøver en reagens, der kan give en stabil kilde til vedvarende energi, og jeg ved præcis hvad.\r\n\r\nDa Archimonde mødte sin velfortjente ende her, blev mange af hans mindre håndlangere også dræbt. Hans øverste løjtnant Azgalor blev dræbt, endda af dødelige som dig!\r\n\r\nDu finder de sidste fysiske rester af Azgalor midt i ruinerne her. Du behøver ikke bringe al asken tilbage til Ketharas. En knivspids burde være mere end nok til hans behov.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Udmærket, denne knivspids aske giver netop den sympatiske forbindelse, der skal til for at få magien til at virke. Det bekymrer mig at bruge dæmoniske rester som ingrediens, men jeg kan lægge det til side for det større gode, de kan bidrage til.\n\nGodt klaret, $N.",
+        "cf2c7697b07470d6af53": "Hvordan går din søgen efter noget, der kan hjælpe vores arbejde?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "418ded6adc302dd96bf6278634bffd981840b809bf2d7a8f5b2db185b32bc757"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Diese Magie, nach der Ihr sucht, ist wild und komplex. Sie benötigt ein Reagenz, das eine stabile, kontinuierliche Energiequelle darstellt, und ich weiß auch schon genau welche.\r\n\r\nAls Archimonde hier sein verdientes Ende fand, wurden viele seiner niederen Diener mit ihm getötet. Sein Oberleutnant Azgalor wurde ebenfalls erschlagen, und zwar von Sterblichen.\r\n\r\nSeine letzten Überreste befinden sich inmitten dieser Ruinen. Ihr braucht Ketharas nicht die ganze Asche zu bringen. Eine kleine Prise würde schon genügen.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Ausgezeichnet, diese Prise Asche liefert genau die sympathetische Verbindung, die nötig ist, damit diese Magie wirkt. Es beunruhigt mich, dämonische Überreste als Zutat zu verwenden, doch für das höhere Wohl kann ich darüber hinwegsehen.\n\nGut gemacht, $N.",
+        "cf2c7697b07470d6af53": "Wie steht es um Eure Suche nach etwas, das uns bei unserer Arbeit helfen könnte?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "This magic you seek is as complex as it is wild. It needs a reagent that can provide a stable source of continual energy, and I know of just the thing.\r\n\r\nWhen Archimonde met his well-deserved end here, many of his lesser minions were also killed. His chief lieutenant, Azgalor, was slain--by mortals like you, no less!\r\n\r\nYou'll find the last physical remains of Azgalor in the middle of the ruins here. No need to bring all of that ash back to Ketharas. Just a pinch should be more than enough for his needs.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Excellent, this pinch of ash provides just the sympathetic connection to make this magic work. It troubles me to use demonic remains as an ingredient, but I can set that aside for the greater good it can provide.\n\nWell done, $N.",
+        "cf2c7697b07470d6af53": "How fares your search for something to aid our work?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -157,6 +233,10 @@
     },
     "esES": {
       "description": "La magia que buscas es compleja y salvaje. Necesita un componente capaz de proporcionar una fuente estable de energía, y yo conozco una perfecta.\r\n\r\nCuando Archimonde recibió aquí su merecido final, también murieron muchos de sus esbirros inferiores. Su principal lugarteniente, Azgalor, fue asesinado... por mortales como tú, nada más y nada menos.\r\n\r\nEncontrarás sus últimos restos físicos en medio de las ruinas que hay aquí. No hace falta que le lleves todas las cenizas a Ketharas. Con una pizca debería bastar.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Excelente, esta pizca de ceniza proporciona justo el vínculo simpático necesario para que funcione esta magia. Me inquieta usar restos demoníacos como ingrediente, pero puedo dejar eso de lado por el bien mayor al que pueden contribuir.\n\nBien hecho, $N.",
+        "cf2c7697b07470d6af53": "¿Cómo va tu búsqueda de algo que nos ayude en nuestro trabajo?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +252,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -195,6 +285,10 @@
     },
     "esMX": {
       "description": "La magia que buscas es compleja y salvaje. Necesita un componente capaz de proporcionar una fuente estable de energía, y yo conozco una perfecta.\r\n\r\nCuando Archimonde recibió aquí su merecido final, también murieron muchos de sus esbirros inferiores. Su principal lugarteniente, Azgalor, fue asesinado... por mortales como tú, nada más y nada menos.\r\n\r\nEncontrarás sus últimos restos físicos en medio de las ruinas que hay aquí. No hace falta que le lleves todas las cenizas a Ketharas. Con una pizca debería bastar.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Excelente, esta pizca de ceniza proporciona justo el vínculo simpático necesario para que funcione esta magia. Me inquieta usar restos demoníacos como ingrediente, pero puedo dejar eso de lado por el bien mayor al que pueden contribuir.\n\nBien hecho, $N.",
+        "cf2c7697b07470d6af53": "¿Cómo va tu búsqueda de algo que nos ayude en nuestro trabajo?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +304,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -233,6 +337,10 @@
     },
     "frFR": {
       "description": "La magie que vous recherchez est aussi complexe que dangereuse. Elle nécessite un réactif capable de fournir une source stable d’énergie continue, et je pense savoir exactement où en trouver.\r\n\r\nLorsque Archimonde a connu ici la fin qu’il méritait, bon nombre de ses serviteurs de second rang ont également été tués. Son lieutenant en chef, Azgalor, a été exécuté… ni plus ni moins par des êtres mortels comme vous.\r\n\r\nVous trouverez les derniers restes d’Azgalor au milieu de ces ruines. Inutile de rapporter toutes ces cendres à Ketharas. Une pincée devrait largement lui suffire.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Excellent, cette pincée de cendre fournit exactement le lien sympathique nécessaire au fonctionnement de cette magie. Utiliser des restes démoniaques comme ingrédient me trouble, mais je peux passer outre pour le bien supérieur auquel ils contribueront.\n\nBien joué, $N.",
+        "cf2c7697b07470d6af53": "Comment avance ta recherche de quelque chose qui pourrait nous aider dans notre travail ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -248,6 +356,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -271,6 +389,10 @@
     },
     "hrHR": {
       "description": "Magija koju tražiš složena je koliko i divlja. Potreban joj je reagens koji može dati stabilan izvor stalne energije, a znam upravo što.\r\n\r\nKad je Archimonde ovdje dočekao svoj zasluženi kraj, ubijeni su i mnogi njegovi slabiji sluge. Njegov glavni poručnik Azgalor ubijen je, i to od smrtnika poput tebe!\r\n\r\nPosljednje fizičke ostatke Azgalora naći ćeš usred ovih ruševina. Nema potrebe vraćati sav taj pepeo Ketharasu. Samo prstohvat trebao bi biti više nego dovoljan za njegove potrebe.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Izvrsno, ovaj prstohvat pepela pruža upravo onu simpatetičku vezu potrebnu da ova magija djeluje. Muči me što koristim demonske ostatke kao sastojak, ali mogu to zanemariti zbog većeg dobra kojem mogu pridonijeti.\n\nBravo, $N.",
+        "cf2c7697b07470d6af53": "Kako napreduje potraga za nečim što bi nam pomoglo u radu?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -287,6 +409,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "418ded6adc302dd96bf6278634bffd981840b809bf2d7a8f5b2db185b32bc757"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -310,6 +442,10 @@
     },
     "itIT": {
       "description": "La magia che cerchi è tanto complessa quanto selvaggia. Richiede un reagente che possa fornire una fonte stabile di energia continua e so proprio cosa fa al caso tuo.\r\n\r\nQuando Archimonde incontrò qui la sua meritata fine, furono uccisi anche molti dei suoi servitori minori. Il suo principale luogotenente, Azgalor, fu abbattuto, addirittura da mortali come te!\r\n\r\nTroverai gli ultimi resti fisici di Azgalor nel mezzo delle rovine qui. Non serve riportare tutte quelle ceneri a Ketharas. Un pizzico dovrebbe essere più che sufficiente per le sue necessità.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Eccellente, questo pizzico di cenere fornisce proprio il legame simpatetico necessario a far funzionare questa magia. Mi turba usare resti demoniaci come ingrediente, ma posso mettere da parte il disagio per il bene superiore a cui contribuiranno.\n\nBen fatto, $N.",
+        "cf2c7697b07470d6af53": "Come procede la ricerca di qualcosa che ci aiuti nel nostro lavoro?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -326,6 +462,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "418ded6adc302dd96bf6278634bffd981840b809bf2d7a8f5b2db185b32bc757"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -349,6 +495,10 @@
     },
     "koKR": {
       "description": "네가 찾는 마법은 불안정한 만큼 복잡하기도 해서 안정된 마력을 지속적으로 공급해 줄 재료가 필요하다. 거기에 딱 맞는 물건이 있지.\r\n\r\n아키몬드가 이곳에서 최후를 맞았을 때 하급 수하들도 많이 죽었다. 아키몬드의 최고 부관 아즈갈로도 당연히 너와 같은 필멸자들의 손에 쓰러졌고!\r\n\r\n이 폐허 한가운데에서 아즈갈로가 마지막으로 남긴 물리적 잔해를 찾을 수 있을 것이다. 그 재를 몽땅 케타라스에게 가져갈 필요는 없다. 한 줌이면 필요한 곳에 쓰고도 남을 테니까.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "훌륭합니다. 이 한 줌의 재가 마법을 작동시키는 데 필요한 감응의 연결을 제공해 줄 겁니다. 악마의 유해를 재료로 쓰는 것은 마음에 걸리지만, 더 큰 선을 위해 그 마음은 접어 둘 수 있습니다.\n\n수고했습니다, $N.",
+        "cf2c7697b07470d6af53": "우리 일을 도울 만한 것을 찾는 일은 어떻게 되어 가나요?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -364,6 +514,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -387,6 +547,10 @@
     },
     "plPL": {
       "description": "Magia, której szukasz, jest równie złożona, co dzika. Potrzebuje odczynnika zapewniającego stabilne źródło ciągłej energii i znam coś odpowiedniego.\r\n\r\nGdy Archimonde spotkał tu zasłużony koniec, wielu jego pomniejszych sług również zginęło. Jego główny porucznik Azgalor został zabity, i to przez śmiertelników takich jak ty!\r\n\r\nOstatnie materialne szczątki Azgalora znajdziesz pośrodku tutejszych ruin. Nie trzeba przynosić Ketharasowi całego popiołu. Szczypta powinna mu z nawiązką wystarczyć.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Doskonale, ta szczypta popiołu zapewni dokładnie tę sympatyczną więź, która jest potrzebna, by magia zadziałała. Niepokoi mnie używanie demonicznych szczątków jako składnika, lecz mogę odłożyć te obawy na bok dla większego dobra.\n\nDobra robota, $N.",
+        "cf2c7697b07470d6af53": "Jak idą poszukiwania czegoś, co pomoże nam w pracy?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -403,6 +567,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "418ded6adc302dd96bf6278634bffd981840b809bf2d7a8f5b2db185b32bc757"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -426,6 +600,10 @@
     },
     "ptBR": {
       "description": "Esta magia que você busca é tão complexa quanto selvagem. Ela precisa é de um reagente que forneça uma fonte estável de energia contínua, e eu conheço uma coisinha assim.\r\n\r\nQuando Arquimonde teve seu merecido fim aqui, muitos de seus lacaios menores também foram mortos. Azgalor, seu tenente-chefe, foi abatido... por mortais como você, ainda por cima!\r\n\r\nVocê pode encontrar os últimos resquícios físicos de Azgalor no meio das ruínas aqui perto. Não precisa levar todas aquelas cinzas até Ketharas. Uma pitada deve ser mais que o suficiente para as necessidades dele.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Excelente, esta pitada de cinzas fornece exatamente a conexão simpática necessária para fazer esta magia funcionar. Usar restos demoníacos como ingrediente me incomoda, mas posso deixar isso de lado pelo bem maior que eles podem proporcionar.\n\nMuito bem, $N.",
+        "cf2c7697b07470d6af53": "Como vai a busca por algo que possa ajudar no nosso trabalho?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -441,6 +619,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -464,6 +652,10 @@
     },
     "ruRU": {
       "description": "Магия, которой ты интересуешься, древняя и очень сложная. Для нее требуется особый реагент, который будет стабильным источником постоянной энергии, и я как раз такой знаю.\r\n\r\nКогда Архимонд встретил здесь заслуженную смерть, многие из его приспешников тоже пали. А главного помощника Азгалора убили твои сородичи-смертные, представляешь?\r\n\r\nТо, что осталось от физического воплощения Азгалора, ты найдешь среди здешних руин. Не надо нести весь этот пепел Кетарасу, щепотки будет вполне достаточно.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Превосходно, эта щепотка пепла обеспечит именно ту симпатическую связь, которая нужна для действия магии. Меня тревожит использование останков демона в качестве ингредиента, но ради высшего блага я могу отложить эти тревоги.\n\nОтличная работа, $N.",
+        "cf2c7697b07470d6af53": "Как продвигаются поиски того, что поможет нам в работе?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -479,6 +671,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -502,6 +704,10 @@
     },
     "svSE": {
       "description": "Magin du söker är lika komplex som den är vild. Den behöver en reagens som kan ge en stabil källa till fortlöpande energi, och jag vet precis vad.\r\n\r\nNär Archimonde mötte sitt välförtjänta slut här dödades också många av hans mindre tjänare. Hans främste löjtnant Azgalor dräptes, av dödliga som du dessutom!\r\n\r\nDu hittar de sista fysiska kvarlevorna av Azgalor mitt i ruinerna här. Du behöver inte ta all askan tillbaka till Ketharas. Bara en nypa borde vara mer än nog för hans behov.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Utmärkt, denna nypa aska ger precis den sympatiska förbindelse som krävs för att magin ska fungera. Det oroar mig att använda demoniska kvarlevor som ingrediens, men jag kan lägga det åt sidan för det större goda de kan bidra till.\n\nBra gjort, $N.",
+        "cf2c7697b07470d6af53": "Hur går sökandet efter något som kan hjälpa vårt arbete?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -518,6 +724,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "418ded6adc302dd96bf6278634bffd981840b809bf2d7a8f5b2db185b32bc757"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -541,6 +757,10 @@
     },
     "trTR": {
       "description": "Aradığın büyü vahşi olduğu kadar karmaşık. Sürekli ve kararlı bir enerji kaynağı sağlayabilen bir malzemeye ihtiyacı var. Tam uygun olanı biliyorum.\r\n\r\nArchimonde burada hak ettiği sonla karşılaştığında daha küçük hizmetkârlarının çoğu da öldürüldü. Baş yardımcısı Azgalor da öldürüldü; üstelik senin gibi ölümlüler tarafından!\r\n\r\nAzgalor'un son fiziksel kalıntılarını buradaki harabelerin ortasında bulacaksın. O külün hepsini Ketharas'a götürmene gerek yok. Bir tutamı bile ihtiyacına fazlasıyla yeter.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Harika, bu bir tutam kül büyünün işlemesi için gereken sempatik bağı sağlıyor. Şeytani kalıntıları malzeme olarak kullanmak beni rahatsız ediyor, ama sağlayabileceği büyük iyilik için bunu bir kenara bırakabilirim.\n\nAferin, $N.",
+        "cf2c7697b07470d6af53": "Çalışmamıza yardımcı olacak bir şey arayışın nasıl gidiyor?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -557,6 +777,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "418ded6adc302dd96bf6278634bffd981840b809bf2d7a8f5b2db185b32bc757"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -580,6 +810,10 @@
     },
     "ukUA": {
       "description": "Магія, якої ти прагнеш, така ж складна, як і дика. Їй потрібен реагент, здатний забезпечити стале джерело безперервної енергії, і я знаю саме те, що треба.\r\n\r\nКоли Архімонд зустрів тут заслужений кінець, багато його менших поплічників також загинули. Його головного заступника, Азґалора, вбили — не хто інший, як смертні на кшталт тебе!\r\n\r\nОстанні тілесні рештки Азґалора знайдеш посеред тутешніх руїн. Не потрібно нести весь той попіл назад до Ketharas. Лише дрібки має бути більш ніж достатньо для його потреб.",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "Чудово, ця дрібка попелу забезпечить саме той симпатичний зв’язок, що потрібен для дії магії. Мене непокоїть використання демонічних решток як складника, але заради вищого блага я можу відкинути ці сумніви.\n\nДобра робота, $N.",
+        "cf2c7697b07470d6af53": "Як просуваються пошуки чогось, що допоможе нам у роботі?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -596,6 +830,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "418ded6adc302dd96bf6278634bffd981840b809bf2d7a8f5b2db185b32bc757"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -619,6 +863,10 @@
     },
     "zhCN": {
       "description": "你想用的魔法很复杂，也很难驾驭。施法材料必须能持续、稳定地提供能量，而我知道该用什么。\r\n\r\n阿克蒙德在这里遭了报应，他手下不少弱小的爪牙也跟着送了命。连他的首席副官阿兹加洛也没能幸免——杀他的，还是像你这样的凡人！\r\n\r\n阿兹加洛留下的遗骸就在这片废墟中央。那些灰烬不必全带给凯萨拉斯，取一小撮就够他用了。",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "很好，这一撮灰烬正好能提供施展这道魔法所需的感应联系。用恶魔的残骸作为材料让我感到不安，但为了它所能带来的更大利益，我可以暂时放下顾虑。\n\n干得好，$N。",
+        "cf2c7697b07470d6af53": "寻找能帮助我们完成工作的东西，进展如何？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -634,6 +882,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -657,6 +915,10 @@
     },
     "zhTW": {
       "description": "你在尋找的這個魔法既複雜又狂野。它需要某種試劑，提供穩定而持久的能量，而我正好知道有樣東西很適合。\r\n\r\n阿克蒙德在這裡迎來末日時，許多低階爪牙也跟著他一起送命。他的首席副官亞茲加洛也難逃一死，而且還是死在像你這種凡人手上呢！\r\n\r\n你可以在這片廢墟中央找到亞茲加洛僅存的遺骸。不用把那些灰燼全都帶回去給柯薩拉斯，只要一小撮就足夠了。",
+      "dialogue": {
+        "051ee2e7089ec9a45fff": "很好，這一撮灰燼正好能提供施展這道魔法所需的感應聯繫。用惡魔的殘骸作為材料令我不安，但為了它能帶來的更大利益，我可以暫時放下顧慮。\n\n做得好，$N。",
+        "cf2c7697b07470d6af53": "尋找能幫助我們完成工作的東西，進展如何？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -672,6 +934,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.051ee2e7089ec9a45fff": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cf2c7697b07470d6af53": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

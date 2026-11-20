@@ -1,8 +1,30 @@
 {
   "areaId": 16591,
+  "dialogueContexts": {
+    "3700c366983c9b426732": {
+      "contributionId": 89296,
+      "lineId": "q:94891:complete",
+      "npcId": 257591,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "ca90cb7b36147377e561": {
+      "contributionId": 89286,
+      "lineId": "q:94891:progress",
+      "npcId": 257591,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Vypadá to, že se to tu zatím uklidňuje, ale chci mít oči na stopkách. Chceš poslat Amberhall hlášení? Pošli jí tohle.\n\n<Seržant Riftan ti hodí Kilgarovu hlavu zpátky.>\n\nTo by ji mělo umlčet. Aspoň na chvíli. Dobrá práce.",
+      "dialogue": {
+        "3700c366983c9b426732": "Byl jsi pryč tak dlouho, že jsem se začínala bát, zda jsem tvé schopnosti nepřecenila. Ale zdá se, že jsi byl pro ten úkol přesně ten pravý.\n\nA ten Riftan. Takže se pořád drží, co? Věděla jsem, že si vy dva budete skvěle rozumět!",
+        "ca90cb7b36147377e561": "Předpokládám, že tvá výprava byla úspěšná?"
+      },
       "summary": "Vrať se k Ashe Amberhall do Farholde Keep.",
       "title": "Zprávy do Farholde",
       "translationMetadata": {
@@ -12,6 +34,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -30,6 +62,10 @@
     },
     "daDK": {
       "description": "Det ser ud til, at der er ved at falde ro på her omkring for nu, men jeg vil holde øje. Vil du sende Amberhall en rapport? Send hende dette.\r\n\r\n<Sergent Riftan kaster Kilgars hoved tilbage til dig.>\r\n\r\nDet burde få hende til at tie stille. I det mindste et stykke tid. Godt arbejde derude.",
+      "dialogue": {
+        "3700c366983c9b426732": "Du var væk så længe, at jeg begyndte at frygte, at jeg havde fejlbedømt dine evner. Men det ser ud til, at du var den helt rette til opgaven.\n\nOg den Riftan. Han er altså stadig i live? Jeg vidste bare, at I to ville komme glimrende ud af det med hinanden!",
+        "ca90cb7b36147377e561": "Din færd var vellykket, går jeg ud fra?"
+      },
       "summary": "Vend tilbage til Ashe Amberhall i Farholde Keep.",
       "title": "Nyt til Farholde",
       "translationMetadata": {
@@ -39,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "06a47185a0d7029a1a55fe88a008d05b7fd7268854e7297261b472d8be3db856"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -57,6 +103,10 @@
     },
     "deDE": {
       "description": "Es sieht so aus, als würde es hier vorerst wieder ruhiger werden, aber ich halte die Augen offen. Wollt Ihr Amberhall einen Bericht schicken? Dann gebt ihr das hier.\r\n\r\n<Sergeant Riftan wirft Kilgars Kopf zu Euch zurück.>\r\n\r\nDas sollte ihr den Mund stopfen. Zumindest für eine Weile. Gute Arbeit da draußen.",
+      "dialogue": {
+        "3700c366983c9b426732": "So lange, wie Ihr gebraucht habt, hatte ich schon Sorgen, ich hätte Eure Fähigkeiten falsch eingeschätzt. Aber wie es scheint, wart Ihr genau das richtige Werkzeug für diese Arbeit.\n\nUnd dieser Riftan. Er lebt also noch, ja? Ich wusste doch, dass Ihr zwei Euch hervorragend verstehen würdet!",
+        "ca90cb7b36147377e561": "Ich gehe davon aus, dass Euer Unterfangen erfolgreich war?"
+      },
       "summary": "Kehrt zu Ashe Amberhall in Farholde zurück.",
       "title": "Neuigkeiten für Farholde",
       "translationMetadata": {
@@ -65,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -84,6 +146,10 @@
     },
     "enUS": {
       "description": "Seems like things are quieting down around here for now, but I want to keep an eye out. You want to send Amberhall a report? Send her this.\r\n\r\n<Sergeant Riftan tosses Kilgar's head back to you.>\r\n\r\nThat ought to shut her up. At least for a while. Good work out there.",
+      "dialogue": {
+        "3700c366983c9b426732": "With how long you were gone, I was starting to worry I misjudged your talents. But it seems you were just the right tool for the job.\n\nAnd that Riftan. Still kicking around then, is he? I just knew you two would get along splendidly!",
+        "ca90cb7b36147377e561": "You had a successful venture, I trust?"
+      },
       "summary": "Return to Ashe Amberhall in Farholde Keep.",
       "title": "News to Farholde",
       "translationMetadata": {
@@ -92,6 +158,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -109,6 +187,10 @@
     },
     "esES": {
       "description": "Parece que las cosas se han calmado por ahora, pero no quiero bajar la guardia. ¿Quieres enviarle un informe a Salámbar? Pues dile esto:\r\n\r\n<El sargento Riftan te entrega la cabeza de Kilgar>.\r\n\r\nCon eso debería callarse, al menos durante un tiempo. Buen trabajo.",
+      "dialogue": {
+        "3700c366983c9b426732": "Has tardado tanto que empezaba a preocuparme haber juzgado mal tus talentos. Pero parece que eras la persona indicada para el trabajo.\n\nY ese Riftan. Así que sigue dando guerra, ¿eh? ¡Sabía que os llevaríais de maravilla!",
+        "ca90cb7b36147377e561": "Confío en que tu empresa haya tenido éxito, ¿no?"
+      },
       "summary": "Vuelve con Ashe Salámbar en el Castillo de Farholde.",
       "title": "Noticias para Farholde",
       "translationMetadata": {
@@ -117,6 +199,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -134,6 +226,10 @@
     },
     "esMX": {
       "description": "Parece que, por ahora, la situación aquí se está calmando, pero no quiero bajar la guardia. ¿Quieres enviarle un informe a Salámbar? Llévale esto.\r\n\r\n<El sargento Riftan te arroja la cabeza de Kilgar.>\r\n\r\nEso hará que cierre el pico. Al menos por un tiempo. Buen trabajo.",
+      "dialogue": {
+        "3700c366983c9b426732": "Tardaste tanto que empezaba a preocuparme haber juzgado mal tus talentos. Pero parece que eras la persona indicada para el trabajo.\n\nY ese Riftan. Así que sigue por ahí, ¿eh? ¡Sabía que ustedes dos se llevarían de maravilla!",
+        "ca90cb7b36147377e561": "Confío en que tu empresa haya tenido éxito, ¿no?"
+      },
       "summary": "Vuelve con Ashe Salámbar en la Fortaleza de Farholde.",
       "title": "Noticias para Farholde",
       "translationMetadata": {
@@ -142,6 +238,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -159,6 +265,10 @@
     },
     "frFR": {
       "description": "Les choses semblent se calmer pour l’instant, mais je préfère rester vigilant. Vous souhaitez envoyer un rapport à Ambrehall ? Envoyez-lui ça.\r\n\r\n<Le sergent Faillan vous lance la tête de Kilgar.>\r\n\r\nÇa devrait la faire taire. Du moins, pendant un moment. Beau travail.",
+      "dialogue": {
+        "3700c366983c9b426732": "Vous avez été si longtemps absent que je commençais à craindre d’avoir mal jugé vos talents. Mais il semble que vous étiez la personne idéale pour cette tâche.\n\nEt ce Riftan. Il est donc toujours dans les parages ? Je savais que vous vous entendriez à merveille !",
+        "ca90cb7b36147377e561": "Votre entreprise a été couronnée de succès, j’espère ?"
+      },
       "summary": "Retournez voir Ashe Ambrehall au donjon de Fort-Lointain.",
       "title": "Des nouvelles pour Fort-Lointain",
       "translationMetadata": {
@@ -167,6 +277,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -184,6 +304,10 @@
     },
     "hrHR": {
       "description": "Čini se da se stvari ovdje zasad smiruju, ali želim pripaziti. Želiš poslati Amberhall izvješće? Pošalji joj ovo.\r\n\r\n<Narednik Riftan baca ti Kilgarovu glavu natrag.>\r\n\r\nTo bi je trebalo ušutkati. Barem neko vrijeme. Dobar posao tamo vani.",
+      "dialogue": {
+        "3700c366983c9b426732": "Bilo te tako dugo da sam se počela brinuti da sam pogrešno procijenila tvoje sposobnosti. Ali izgleda da si baš prava osoba za taj posao.\n\nA taj Riftan. Još je živ i zdrav, zar ne? Znala sam da ćete se vas dvoje sjajno slagati!",
+        "ca90cb7b36147377e561": "Pretpostavljam da je tvoj pothvat bio uspješan?"
+      },
       "summary": "Vrati se Asheu Amberhallu u Farholde Keep.",
       "title": "Vijesti za Farholde",
       "translationMetadata": {
@@ -193,6 +317,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "06a47185a0d7029a1a55fe88a008d05b7fd7268854e7297261b472d8be3db856"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -211,6 +345,10 @@
     },
     "itIT": {
       "description": "Sembra che per ora le cose si stiano calmando qui, ma voglio tenere gli occhi aperti. Vuoi mandare un rapporto ad Amberhall? Mandale questo.\r\n\r\n<Il sergente Riftan ti rilancia la testa di Kilgar.>\r\n\r\nDovrebbe farla tacere. Almeno per un po'. Ottimo lavoro là fuori.",
+      "dialogue": {
+        "3700c366983c9b426732": "Sei stato via così a lungo che cominciavo a temere di aver sopravvalutato il tuo talento. Ma pare che tu fossi proprio lo strumento giusto per il lavoro.\n\nE quel Riftan. Ancora in circolazione, eh? Lo sapevo che voi due sareste andati d'amore e d'accordo!",
+        "ca90cb7b36147377e561": "Confido che la tua impresa sia andata a buon fine, vero?"
+      },
       "summary": "Torna da Ashe Amberhall nella Fortezza di Farholde.",
       "title": "Notizie per Farholde",
       "translationMetadata": {
@@ -220,6 +358,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "06a47185a0d7029a1a55fe88a008d05b7fd7268854e7297261b472d8be3db856"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "summary": {
             "origin": "ai",
@@ -238,6 +388,10 @@
     },
     "koKR": {
       "description": "지금은 주변이 잠잠해질 기미가 있지만 계속 지켜볼 생각입니다. 앰버홀에게 보고서를 보내고 싶습니까? 이걸 보내면 됩니다.\r\n\r\n<킬가르의 머리카락을 다시 건네는 하사관 리프탄>\r\n\r\n그럼 조용해지겠지요. 적어도 한동안은. 밖에서 잘해 주셨습니다.",
+      "dialogue": {
+        "3700c366983c9b426732": "너무 오래 걸려서 내가 자네의 실력을 잘못 판단했나 걱정하기 시작했네. 하지만 자네가 이 일에 딱 맞는 사람이었던 것 같군.\n\n그리고 그 리프탄 말일세. 아직도 살아 있단 말이지? 자네 둘이 아주 잘 어울릴 줄 알았다니까!",
+        "ca90cb7b36147377e561": "일은 성공적으로 마쳤겠지?"
+      },
       "summary": "파홀드 성채에 있는 애시 앰버홀에게 가야 합니다.",
       "title": "파홀드에 전할 소식",
       "translationMetadata": {
@@ -246,6 +400,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -263,6 +427,10 @@
     },
     "plPL": {
       "description": "Wygląda na to, że sytuacja na razie się uspokaja, ale chcę mieć ją na oku. Chcesz wysłać Amberhall raport? Wyślij jej to.\r\n\r\n<Sierżant Riftan odrzuca ci głowę Kilgara.>\r\n\r\nTo powinno ją uciszyć. Przynajmniej na chwilę. Dobra robota.",
+      "dialogue": {
+        "3700c366983c9b426732": "Nie było cię tak długo, że zaczynałam się martwić, czy nie przeceniłam twoich zdolności. Ale wygląda na to, że nadawałeś się do tego zadania idealnie.\n\nA ten Riftan. Nadal się trzyma, co? Wiedziałam, że świetnie się dogadacie!",
+        "ca90cb7b36147377e561": "Ufam, że twoja wyprawa zakończyła się sukcesem?"
+      },
       "summary": "Wróć do Ashe Amberhall w Farholde Keep.",
       "title": "Wieści dla Farholde",
       "translationMetadata": {
@@ -272,6 +440,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "06a47185a0d7029a1a55fe88a008d05b7fd7268854e7297261b472d8be3db856"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -290,6 +468,10 @@
     },
     "ptBR": {
       "description": "Parece que as coisas estão se acalmando por aqui no momento, mas quero ficar alerta. Quer mandar um relatório para a Larambar? Mande isso aqui para ela.\r\n\r\n<O Sargento Riftan joga a cabeça de Kilgar de volta para você.>\r\n\r\nDeve calar a boca dela. Pelo menos por um tempo. Bom trabalho.",
+      "dialogue": {
+        "3700c366983c9b426732": "Você demorou tanto que comecei a achar que tinha julgado mal seus talentos. Mas parece que você era a pessoa certa para o trabalho.\n\nE aquele Riftan. Então ele ainda está por aí, é? Eu sabia que vocês dois iam se dar muito bem!",
+        "ca90cb7b36147377e561": "Sua empreitada foi bem-sucedida, espero?"
+      },
       "summary": "Fale novamente com Ashe Larambar na Bastilha de Ermoforte.",
       "title": "Notícias para Ermoforte",
       "translationMetadata": {
@@ -298,6 +480,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -315,6 +507,10 @@
     },
     "ruRU": {
       "description": "Похоже, тут наступило затишье, но я на всякий случай останусь и понаблюдаю. Хочешь доклад для Амберхолл? Отнеси ей вот это.\r\n\r\n<Сержант Мракан бросает вам голову Килгара.>\r\n\r\nЭто ее успокоит. Хотя бы на какое-то время... Спасибо за помощь.",
+      "dialogue": {
+        "3700c366983c9b426732": "Тебя долго не было. Я уже боялась, что переоценила твои способности. Но ты оказался идеальным инструментом для этой задачи.\n\nИ Мракан тоже. Он же еще жив, да? Я знала, что вы сработаетесь!",
+        "ca90cb7b36147377e561": "Я полагаю, ты вернулся с хорошими новостями?"
+      },
       "summary": "Вернитесь к Эш Амберхолл в крепость Фархолд.",
       "title": "Новости для Фархолда",
       "translationMetadata": {
@@ -323,6 +519,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "923c65b4e9ffb1220a3db189b4971c0b37e435a446032cabab3faf6cf39c98a0"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "923c65b4e9ffb1220a3db189b4971c0b37e435a446032cabab3faf6cf39c98a0"
           },
           "summary": {
             "origin": "community",
@@ -340,6 +548,10 @@
     },
     "svSE": {
       "description": "Det verkar lugna sig här för tillfället, men jag vill hålla utkik. Vill du skicka en rapport till Amberhall? Skicka det här.\r\n\r\n<Sergeant Riftan kastar tillbaka Kilgars huvud till dig.>\r\n\r\nDet borde få tyst på henne. Åtminstone ett tag. Bra jobbat där ute.",
+      "dialogue": {
+        "3700c366983c9b426732": "Du var borta så länge att jag började oroa mig för att jag hade felbedömt dina talanger. Men det verkar som om du var precis rätt person för uppgiften.\n\nOch den där Riftan. Han hänger alltså fortfarande med, va? Jag visste att ni två skulle komma utmärkt överens!",
+        "ca90cb7b36147377e561": "Din färd var väl framgångsrik, hoppas jag?"
+      },
       "summary": "Återvänd till Ashe Amberhall i Farholde Keep.",
       "title": "Nyheter till Farholde",
       "translationMetadata": {
@@ -349,6 +561,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "06a47185a0d7029a1a55fe88a008d05b7fd7268854e7297261b472d8be3db856"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -367,6 +589,10 @@
     },
     "trTR": {
       "description": "Şimdilik burada işler sakinleşiyor gibi, ama gözümü açık tutmak istiyorum. Amberhall'a rapor mu göndermek istiyorsun? Ona bunu gönder.\r\n\r\n<Çavuş Riftan, Kilgar'ın başını sana geri atar.>\r\n\r\nBu onu susturur. En azından bir süreliğine. Orada iyi iş çıkardın.",
+      "dialogue": {
+        "3700c366983c9b426732": "O kadar uzun süre ortalarda yoktun ki yeteneklerini yanlış değerlendirdiğimden endişelenmeye başlamıştım. Ama görünen o ki bu iş için doğru kişiymişsin.\n\nŞu Riftan da hâlâ hayatta demek, öyle mi? İkinizin harika anlaşacağını biliyordum!",
+        "ca90cb7b36147377e561": "Umarım girişimin başarılı olmuştur?"
+      },
       "summary": "Farholde Keep'teki Ashe Amberhall'a dön.",
       "title": "Farholde'a Haberler",
       "translationMetadata": {
@@ -376,6 +602,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "06a47185a0d7029a1a55fe88a008d05b7fd7268854e7297261b472d8be3db856"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -394,6 +630,10 @@
     },
     "ukUA": {
       "description": "Схоже, тут поки стає тихіше, але я хочу пильнувати. Хочеш надіслати Емберголл звіт? Надішли їй це.\r\n\r\n<Сержант Ріфтан кидає тобі назад голову Кілґара.>\r\n\r\nЦе має її втихомирити. Принаймні ненадовго. Добре попрацював.",
+      "dialogue": {
+        "3700c366983c9b426732": "Тебе так довго не було, що я почала хвилюватися, чи правильно оцінила твої здібності. Але, схоже, ти був саме тим, хто потрібен для цієї справи.\n\nА той Ріфтан досі живий, кажеш? Я так і знала, що ви чудово порозумієтеся!",
+        "ca90cb7b36147377e561": "Сподіваюся, твоя справа завершилася успішно?"
+      },
       "summary": "Поверніться до Ashe Amberhall у фортеці Фаргольд.",
       "title": "Новини для Farholde",
       "translationMetadata": {
@@ -403,6 +643,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "06a47185a0d7029a1a55fe88a008d05b7fd7268854e7297261b472d8be3db856"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -421,6 +671,10 @@
     },
     "zhCN": {
       "description": "看来这附近暂时是消停了，但我还得留在这儿放哨。你想给安伯霍尔送份报告？把这个送给她。\r\n\r\n<里夫坦中士把基尔加的头颅扔回给你。>\r\n\r\n这应该能堵住她的嘴了。至少能让她安静一阵子。干得漂亮。",
+      "dialogue": {
+        "3700c366983c9b426732": "你去了那么久，我还真有点担心是不是自己看走眼了。不过现在看来，你确实是完成这项任务的完美工具。\n\n还有那个里夫坦。他还活蹦乱跳的，是吧？我就知道你们俩肯定能相处得极好！",
+        "ca90cb7b36147377e561": "我猜你已经顺利得手了吧？"
+      },
       "summary": "向法霍德要塞的艾什·安伯霍尔复命。",
       "title": "法霍德的消息",
       "translationMetadata": {
@@ -429,6 +683,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
           },
           "summary": {
             "origin": "community",
@@ -446,6 +712,10 @@
     },
     "zhTW": {
       "description": "這周圍的情勢似乎暫時平靜下來了，不過我想繼續保持警戒。你要送報告給安珀荷嗎？那就送她這個。\r\n\r\n<瑞夫坦中士將基爾加頭顱再丟給你。>\r\n\r\n這應該能讓她閉上嘴巴一陣子了。你做得很好。",
+      "dialogue": {
+        "3700c366983c9b426732": "你去了那麼久，我都開始擔心自己看錯了你的本事。不過看來你正是這份差事的合適人選。\n\n還有那個瑞夫坦。他還活蹦亂跳的，是吧？我就知道你們倆一定會相處得很好！",
+        "ca90cb7b36147377e561": "我相信你的行動很順利吧？"
+      },
       "summary": "回到遠境堡要塞找艾希‧安珀荷。",
       "title": "傳訊遠境堡",
       "translationMetadata": {
@@ -454,6 +724,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.3700c366983c9b426732": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca90cb7b36147377e561": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

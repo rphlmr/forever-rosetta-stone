@@ -5,7 +5,9 @@
 ### Translations
 
 - Renamed Greater Plainstrider to **Büyük Ovagezgini** in Turkish, as suggested by [@devteabct78](https://github.com/rphlmr/forever-rosetta-stone/issues/14).
-- Added the two missing Turkish dialogue options for Innkeeper Boorand Plainswind. [Issue #15](https://github.com/rphlmr/forever-rosetta-stone/issues/15)
+- Added missing NPC dialogue options in all 18 languages, including Innkeeper Boorand Plainswind's inn and dungeon options. [Issue #15](https://github.com/rphlmr/forever-rosetta-stone/issues/15)
+- Added quest progress, turn-in dialogue, and alternate offers in all 18 languages. The reader uses the alternate offer when it matches the NPC's text on screen.
+- Filled 53 English quest-description fallbacks across 17 quests, preserving gender and objective placeholders.
 
 ## [1.2.0] - 2026-11-20
 

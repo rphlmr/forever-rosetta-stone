@@ -66,6 +66,24 @@ class QuestFormattingTests(unittest.TestCase):
         self.assertEqual(self.addon.MatchQuestDialogue(self.addon, 32, None, 'gossip', 'Welcome, sir. Need help?\n\nFollow me.'),
                          'Bonjour, monsieur. Besoin d’aide ?\n\nSuivez-moi.')
 
+    def test_dialogue_renders_player_tokens_before_localized_characters(self):
+        self.lua.execute("""
+            addon.locale = 'zhCN'
+            function GetLocale() return 'enUS' end
+            ForeverRosettaStoneDB = {
+                GetQuestDialogue = function(_, _, _, locale)
+                    local text = locale == 'enUS' and 'Hello, $N. You are a $c.'
+                        or '$N，你是一名$c。'
+                    return {{key = 'greeting', stage = 'gossip', text = text}}
+                end,
+            }
+        """)
+        source = (ROOT / 'ForeverRosettaStone/quests/quest-dialogue.lua').read_text()
+        self.lua.execute("assert(loadstring(...))('addon', addon)", source)
+        self.assertEqual(self.addon.MatchQuestDialogue(self.addon, 32, None, 'gossip', 'Hello, Rosetta. You are a Mage.'),
+                         'Rosetta，你是一名法师。')
+        self.assertEqual(self.format('$Notice $b下一段'), '$Notice \n下一段')
+
     def test_unmapped_summary_objective_stays_native(self):
         self.lua.execute("""
             addon.locale = 'frFR'

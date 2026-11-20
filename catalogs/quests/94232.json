@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "2e2b70baf86bcdd48c10": {
+      "contributionId": 90153,
+      "lineId": "q:94232:progress",
+      "npcId": 3134,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "efaf51cd592566836c8a": {
+      "contributionId": 1958,
+      "lineId": "q:94232:complete",
+      "npcId": 3134,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Minor Recombobulator a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Máme spolu něco k vyřízení?",
+        "efaf51cd592566836c8a": "Nevím, co jsem čekal, když jsem objednával zařízení na rušení kleteb, ale tenhle malý rekombi... rekam... ach, malý kdovíco to teda rozhodně není!\n\nHele, vím, jak složité je žádat o vrácení peněz, a na to já ROZHODNĚ nemám čas. Pro nás oba bude mnohem snazší, když si to od tebe vezmu a příště objednávku upřesním.\n\nV zájmu nás obou doufejme, že ani tu příští nepokazíš!"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Minor Recombobulator",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Minor Recombobulator. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Har vi noget at tale om?",
+        "efaf51cd592566836c8a": "Jeg ved ikke, hvad jeg forventede, da jeg bestilte en anordning til at ophæve forbandelser, men den her lille rekom... rakom... åh, lille hvad-det-nu-hedder er det bestemt ikke!\n\nHør, jeg ved, hvor besværligt det er at få pengene tilbage, og det har jeg IKKE tid til. Det er meget nemmere for os begge, hvis jeg bare tager den, og så er jeg mere præcis i min næste bestilling.\n\nFor vores begges skyld må vi håbe, at du ikke også ødelægger den!"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Lille rekompobulator",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa schwachen Rekombobulator und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Haben wir geschäftlich miteinander zu tun?",
+        "efaf51cd592566836c8a": "Ich weiß nicht, was ich erwartet habe, als ich ein Gerät zum Aufheben von Flüchen bestellt habe, aber dieser kleine Rekombi... Rekom... ach, kleine Dingens ist es bestimmt nicht!\n\nHör zu, ich weiß, wie kompliziert eine Rückerstattung ist, und dafür habe ich KEINE Zeit. Es ist für uns beide viel einfacher, wenn ich dir das Ding abnehme und meine nächste Bestellung genauer formuliere.\n\nHoffen wir für uns beide, dass du die nicht auch noch vermasselst!"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Schwacher Rekombobulator",
       "translationMetadata": {
@@ -82,6 +132,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -100,6 +160,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Minor Recombobulator, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Do we have business?",
+        "efaf51cd592566836c8a": "I don't know what I expected when I sent out an order for a curse dispelling device, but this Minor Recon--Racom--ugh, Minor Whatchamacallit sure ain't it!\n\nLook, I know how complicated the refund process is and I do NOT have time for that. It's way easier for us both if I just take this off your hands, and I'll be more specific with my next order.\n\nFor both of our sakes, let's hope you don't screw that one up too!"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Minor Recombobulator",
       "translationMetadata": {
@@ -108,6 +172,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +201,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa recombobulador menor e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "¿Tenemos algún asunto que tratar?",
+        "efaf51cd592566836c8a": "No sé qué esperaba cuando encargué un aparato para disipar maldiciones, ¡pero este recom... racom... uf, pequeño chisme desde luego no es!\n\nMira, sé lo complicado que es conseguir un reembolso y NO tengo tiempo para eso. Será mucho más fácil para ambos si me quedo con esto y soy más específico en mi próximo pedido.\n\nPor el bien de los dos, ¡esperemos que tampoco metas la pata con ese!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: recombobulador menor",
       "translationMetadata": {
@@ -133,6 +213,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -151,6 +241,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa recombobulador menor, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "¿Tenemos algún asunto que tratar?",
+        "efaf51cd592566836c8a": "No sé qué esperaba cuando encargué un aparato para disipar maldiciones, ¡pero este recom... racom... uf, pequeño coso desde luego no es!\n\nMira, sé lo complicado que es conseguir un reembolso y NO tengo tiempo para eso. Será mucho más fácil para ambos si me quedo con esto y soy más específico en mi próximo pedido.\n\nPor el bien de los dos, ¡esperemos que tampoco arruines ese!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Recombobulador menor",
       "translationMetadata": {
@@ -159,6 +253,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -175,6 +279,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa olrecombobulateur mineur:recombobulateurs mineurs;, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Vous avez affaire à moi ?",
+        "efaf51cd592566836c8a": "Je ne sais pas à quoi je m’attendais en commandant un appareil pour dissiper les malédictions, mais ce recom... racom... pff, ce petit machin, ce n’est certainement pas ça !\n\nÉcoute, je sais à quel point la procédure de remboursement est compliquée et je n’ai PAS le temps pour ça. Ce sera bien plus simple pour nous deux si je te le prends et que je suis plus précis dans ma prochaine commande.\n\nPour notre bien à tous les deux, espérons que tu ne rates pas celle-là aussi !"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : recombobulateur mineur",
       "translationMetadata": {
@@ -183,6 +291,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -201,11 +319,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Minor Recombobulator i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Imamo li posla?",
+        "efaf51cd592566836c8a": "Ne znam što sam očekivao kad sam naručio napravu za uklanjanje kletvi, ali ovaj mali rekombi... rakom... uh, mali kako-se-već-zove sigurno nije to!\n\nSlušaj, znam koliko je povrat novca kompliciran i NEMAM vremena za to. Oboje ćemo lakše proći ako ovo preuzmem, a sljedeći put budem određeniji u narudžbi.\n\nZa oboje se nadajmo da ni tu nećeš zabrljati!"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: mali rekombobulator",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -227,6 +359,10 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede oa Ricombobolatore minore, insieme alle informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che questa commissione è trasferibile.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Abbiamo affari da trattare?",
+        "efaf51cd592566836c8a": "Non so cosa mi aspettassi quando ho mandato un ordine per un congegno che dissolve le maledizioni, ma questo Minor Recon... Racom... uff, questo Minor Coso di certo non lo è!\n\nSenti, so quanto è complicata la procedura di rimborso, e NON ho tempo per quella roba. È molto più semplice per tutti e due se te lo levo dalle mani, e col prossimo ordine sarò più preciso.\n\nPer il bene di entrambi, speriamo che tu non combini un disastro anche con quello!"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Ricombobulatore Minore",
       "translationMetadata": {
@@ -235,6 +371,18 @@
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "summary": {
             "origin": "ai",
@@ -253,6 +401,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 하급 유전자 역결합기 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "볼일 있어?",
+        "efaf51cd592566836c8a": "저주를 해제하는 장치를 주문하면서 뭘 기대했는지는 모르겠지만, 이 하급 재결... 재조... 으, 하급 뭐시기는 절대 아니었어!\n\n봐, 환불 절차가 얼마나 복잡한지 아는데 난 그럴 시간이 없다고. 그냥 이걸 받고 다음 주문을 더 구체적으로 하는 게 우리 둘 다 훨씬 편해.\n\n서로를 위해서라도 다음 주문까지 망치지는 않길 바라자고!"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 하급 유전자 역결합기",
       "translationMetadata": {
@@ -261,6 +413,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -277,11 +439,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Minor Recombobulator oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Mamy jakąś sprawę do omówienia?",
+        "efaf51cd592566836c8a": "Nie wiem, czego się spodziewałem, zamawiając urządzenie do rozpraszania klątw, ale ten mniejszy rekom... rakom... ach, mniejszy cośtam na pewno tym nie jest!\n\nSłuchaj, wiem, jak skomplikowany jest zwrot pieniędzy, a ja NIE mam na to czasu. Obojgu będzie nam łatwiej, jeśli to od ciebie wezmę, a następnym razem dokładniej opiszę zamówienie.\n\nDla dobra nas obojga miejmy nadzieję, że tamtego też nie schrzanisz!"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: zamek ćwiczebny",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -303,6 +479,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Rebotocador Menor, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Temos algum negócio a tratar?",
+        "efaf51cd592566836c8a": "Não sei o que eu esperava quando encomendei um aparelho para dissipar maldições, mas este recom... racom... argh, trequinho menor com certeza não é!\n\nEscuta, eu sei como o processo de reembolso é complicado e NÃO tenho tempo para isso. É muito mais fácil para nós dois se eu ficar com isto e for mais específico no próximo pedido.\n\nPelo bem de nós dois, espero que você não estrague o próximo também!"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Rebotocador Menor",
       "translationMetadata": {
@@ -311,6 +491,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -328,6 +518,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa малых атомарных перенаправляторов, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "У нас есть какие-то дела?",
+        "efaf51cd592566836c8a": "Не знаю, чего я ожидал, когда заказывал прибор для снятия проклятий, но этот малый реком... раком... тьфу, малый как-его-там точно не то!\n\nСлушай, я знаю, как сложно получить возврат денег, а у меня на это НЕТ времени. Нам обоим будет проще, если я заберу эту штуку и в следующий раз точнее сформулирую заказ.\n\nРади нас обоих надеюсь, что уж его ты не испортишь!"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: малый атомарный перенаправлятор",
       "translationMetadata": {
@@ -336,6 +530,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -354,11 +558,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Minor Recombobulator. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Har vi några affärer?",
+        "efaf51cd592566836c8a": "Jag vet inte vad jag väntade mig när jag beställde en apparat som häver förbannelser, men den här lilla rekombi... rakom... äh, lilla mojängen är det definitivt inte!\n\nHör här, jag vet hur krångligt det är att få pengarna tillbaka och det har jag INTE tid med. Det blir mycket enklare för oss båda om jag tar hand om den och är tydligare med nästa beställning.\n\nFör vår bådas skull får vi hoppas att du inte klantar till den också!"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Mindre rekombobulator",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -381,11 +599,25 @@
     },
     "trTR": {
       "description": "<Soluk mürekkeple yazılmış notta Minor Recombobulator isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "Bir işimiz mi var?",
+        "efaf51cd592566836c8a": "Lanetleri kaldıracak bir cihaz sipariş ederken ne bekliyordum bilmiyorum ama bu küçük rekombi... rakom... ah, küçük zımbırtı kesinlikle o değil!\n\nBak, para iadesinin ne kadar karmaşık olduğunu biliyorum ve buna vaktim YOK. Bunu senden alıp bir sonraki siparişimde daha açık olmam ikimiz için de çok daha kolay.\n\nİkimizin de iyiliği için umarım onu da berbat etmezsin!"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Minor Recombobulator",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -407,11 +639,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Minor Recombobulator і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "У нас є якісь справи?",
+        "efaf51cd592566836c8a": "Не знаю, чого я очікував, коли замовляв пристрій для зняття проклять, але цей малий реком... раком... тьху, малий казна-що точно не те!\n\nСлухай, я знаю, як складно повернути гроші, а в мене на це НЕМАЄ часу. Нам обом буде простіше, якщо я заберу цю штуку й наступного разу точніше сформулюю замовлення.\n\nЗаради нас обох сподіваюся, що вже його ти не зіпсуєш!"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Малий рекомбобулятор",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -435,6 +681,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa个自动净化装置，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "我们有生意要谈吗？",
+        "efaf51cd592566836c8a": "我不知道自己订购解除诅咒的装置时期望的是什么，但这个初级重组……重构……唉，初级什么玩意儿肯定不是！\n\n听着，我知道退款流程有多麻烦，我可没时间折腾。你把这东西交给我，我下次订购时说得更清楚些，这样对咱俩都省事。\n\n为了咱俩着想，希望你下次别再搞砸了！"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：自动净化装置",
       "translationMetadata": {
@@ -443,6 +693,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -460,6 +720,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa個初級淨化器，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "2e2b70baf86bcdd48c10": "我們有生意要談嗎？",
+        "efaf51cd592566836c8a": "我不知道自己訂購解除詛咒的裝置時期待的是什麼，但這個初級重組……重構……唉，初級什麼玩意兒肯定不是！\n\n聽著，我知道退款流程有多麻煩，我可沒時間折騰。你把這東西交給我，我下次訂購時說得更清楚些，這樣對咱倆都省事。\n\n為了咱倆著想，希望你下次別再搞砸了！"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：初級淨化器",
       "translationMetadata": {
@@ -468,6 +732,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.2e2b70baf86bcdd48c10": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efaf51cd592566836c8a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

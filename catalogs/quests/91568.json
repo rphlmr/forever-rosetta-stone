@@ -1,8 +1,30 @@
 {
   "areaId": 16,
+  "dialogueContexts": {
+    "68bcac74fb29d98fe795": {
+      "contributionId": 114437,
+      "lineId": "q:91568:complete",
+      "npcId": 247473,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "72207e3f624a26118c23": {
+      "contributionId": 114422,
+      "lineId": "q:91568:progress",
+      "npcId": 247473,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Co zdejším plážím chybí na kráse, to dohánějí cenou!\n\nVětšina zdejších ruin je vybraná do posledního drobku, ale pod tím pískem se skrývá pořádná kořist. Háček je v tom, že je všechno rozházené a kvůli nagám je dlouhé hledání tak trochu nepraktické. Tak co má taková holka dělat?\n\nPředstavuju ti Treasure Trowel 3000! Lopatku na hledání pokladů, co zvládne úplně všechno! Můj vlastní vynález.\n\nVezmi tohle zlatíčko na východní pobřeží a přines všechno, co najdeš. Pak se o zisk rozdělíme!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hej, vůbec ne špatné, mladej! I kdyby o ně jako o artefakty nikdo nestál, kov se dá pořád roztavit a prodat.\n\nA rád vidím, že se pokladová lopatka vrátila vcelku. Bál jsem se, že ti vybouchne!",
+        "72207e3f624a26118c23": "Říká se, že při zlaté horečce nejvíc zbohatne goblin, který prodává lopaty. Usoudil jsem, že když si vyrobím vlastní, pojistím si tím své šance."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Hvad strandene her mangler i udseende, opvejer de i værdi!\r\n\r\nDe fleste ruiner her er blevet plyndret for alt, men der er et alvorligt godt bytte under sandet. Problemet er, at det hele er spredt, og nagaerne gør en lang eftersøgning lidt upraktisk. Så hvad skal en pige gøre?\r\n\r\nHer kommer Treasure Trowel 3000! Skovlen, der både finder skatte og graver dem op! Min egen opfindelse.\r\n\r\nTag dette vidunder ned til østkysten og bring alt, hvad du finder, tilbage. Så kan vi dele fortjenesten!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hey, slet ikke dårligt, knægt! Selv hvis ingen vil købe dem som artefakter, kan metallet stadig smeltes om og sælges.\n\nGodt at se, at skatteskeen også stadig er hel. Jeg var bange for, at den ville springe i luften på dig!",
+        "72207e3f624a26118c23": "Man siger, at den rigeste goblin under en guldfeber er den, der sælger skovle. Jeg tænkte, at hvis jeg lavede mine egne, kunne jeg sikre mig."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "935bafc40bb9e5e9133db95c7eef8659796e5aeeeba7f3ba00bd8672c15e8d3e"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Was den Stränden hier an Schönheit fehlt, machen sie mit ihrem Wert wieder wett!\r\n\r\nDie meisten Ruinen hier wurden bereits leergeräumt, doch unter dem Sand lässt sich noch fette Beute finden. Das einzige Problem: es ist alles zerstreut und die Naga machen eine lange, ausgiebige Suche eher schwierig. Also, was soll ein Mädel da nur machen?\r\n\r\nIch präsentiere: die Schatzschaufel 3000! Die multifunktionale, schatzfindende Schippe! Eine meiner persönlichen Erfindungen.\r\n\r\nNehmt das Baby mit an die östliche Küste und bringt zurück, was auch immer Ihr dort findet. Wir können uns den Gewinn dann teilen!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hey, gar nicht mal so schlecht, Grünschnabel! Selbst, wenn sich kein Käufer für diese Artefakte findet, lässt sich das Metall noch einschmelzen und verkaufen.\n\nUnd schön zu sehen, dass die Schatzschaufel es auch in einem Stück zurückgeschafft hat. Hatte schon Angst, dass sie Euch um die Ohren fliegt!",
+        "72207e3f624a26118c23": "Es heißt, der reichste Goblin während eines Goldrausches ist der, der Schaufeln verkauft. Ich dachte, wenn ich meine eigene baue, könnte ich auf Nummer sicher gehen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +182,10 @@
     },
     "enUS": {
       "description": "What the beaches here lack in looks, they make up for in value!\r\n\r\nMost of the ruins here have been picked clean, but there's some serious loot under that sand. Problem is, it's all scattered, and the naga make a long search a bit impractical. So, what's a girl to do?\r\n\r\nEnter the Treasure Trowel 3000! The all-in-one treasure detecting shovel! A personal invention of mine.\r\n\r\nTake this baby down to the eastern shore, and bring back whatever you find. Then, we can split the profits!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hey, not bad at all, kid! Even if no one's in the market for these as artifacts, the metal's still good to be melted down and sold.\n\nGlad to see the Treasure Trowel's still in one piece too. I was worried it might blow up on ya!",
+        "72207e3f624a26118c23": "They say the richest goblin in a gold rush is the one selling shovels. I figured if I made my own I could hedge my bets."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +201,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Lo que a las playas de aquí les falta en cuanto a belleza lo compensan con tesoros.\r\n\r\nLa mayoría de las ruinas de la zona han sido saqueadas, pero bajo la arena aún queda buen botín. El problema es que está todo desperdigado, y, con los nagas ahí, es poco práctico ponerse a buscar un rato. ¿Qué hacemos, entonces?\r\n\r\n¡Te presento la Pala de tesoros 3000! ¡Una pala detectatesoros multifunción! Se trata de una invención mía.\r\n\r\nLlévatela a la costa oriental y tráete lo que encuentres. Luego, nos dividiremos los beneficios.",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Oye, ¡nada mal, chaval! Aunque nadie quiera comprarlos como artefactos, el metal aún se puede fundir y vender.\n\nTambién me alegra ver que la Paleta del Tesoro sigue de una pieza. ¡Me preocupaba que te explotara en las manos!",
+        "72207e3f624a26118c23": "Dicen que el goblin más rico durante una fiebre del oro es el que vende palas. Pensé que, si fabricaba las mías, podría cubrirme las espaldas."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -198,6 +290,10 @@
     },
     "esMX": {
       "description": "Lo que les falta a estas playas en términos de belleza, ¡lo compensan en valor!\r\n\r\nLa mayoría de las ruinas de la zona ya fueron saqueadas, pero la arena esconde un botín más que interesante. El problema es que está muy disperso, y los nagas dificultan una búsqueda exhaustiva. Entonces, ¿qué se puede hacer?\r\n\r\n¡Usar la Pala Buscatesoros 3000! ¡Una herramienta multipropósito para descubrir tesoros! Un invento de mi autoría.\r\n\r\nToma esta maravilla tecnológica, ve a la costa este y regresa con todo lo que encuentres. Luego, nos repartiremos las ganancias.",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Oye, ¡nada mal, chico! Aunque nadie quiera comprarlos como artefactos, el metal aún se puede fundir y vender.\n\nTambién me alegra ver que la Paleta del Tesoro sigue de una pieza. ¡Me preocupaba que te explotara en las manos!",
+        "72207e3f624a26118c23": "Dicen que el goblin más rico durante una fiebre del oro es el que vende palas. Pensé que, si fabricaba las mías, podría asegurarme una ganancia."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -213,6 +309,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -237,6 +343,10 @@
     },
     "frFR": {
       "description": "Si les plages des environs manquent de charme, leur richesse fait vite oublier ce petit défaut !\r\n\r\nLa majorité des ruines ont déjà été pillées, mais il y a de véritables trésors enfouis sous le sable. Malheureusement, ils sont éparpillés aux quatre vents, et les Nagas compliquent considérablement les recherches. Alors, comment y trouver son compte ?\r\n\r\nGrâce à la Pelle à trésor 3000 ! La seule pelle avec détecteur de trésor intégré ! Un outil de mon invention.\r\n\r\nAllez vous promener le long de la côte est avec ce petit bijou, et rapportez-moi ce que vous y trouverez. Nous partagerons les gains !",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hé, pas mal du tout, gamin ! Même si personne n’en veut comme artefacts, on peut toujours fondre le métal et le vendre.\n\nContent de voir que la Truelle à trésors est encore entière aussi. J’avais peur qu’elle vous explose entre les mains !",
+        "72207e3f624a26118c23": "On dit que le gobelin qui s'enrichit le plus pendant une ruée vers l'or est celui qui vend les pelles. Je me suis dit qu'en fabriquant les miennes, je mettrais toutes les chances de mon côté."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +362,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -276,6 +396,10 @@
     },
     "hrHR": {
       "description": "Što ovdašnjim plažama nedostaje u izgledu, nadoknađuju vrijednošću!\r\n\r\nVećina ruševina ovdje opljačkana je do kraja, ali pod tim pijeskom ima ozbiljnog plijena. Problem je što je sve razasuto, a nage čine dugu potragu nepraktičnom. Pa što djevojka da radi?\r\n\r\nNa scenu stupa Treasure Trowel 3000! Lopata koja ujedno otkriva blago! Moj osobni izum.\r\n\r\nOdnesi ovu ljepoticu na istočnu obalu i donesi sve što pronađeš. Onda možemo podijeliti dobit!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hej, nije loše, mali! Čak i ako ih nitko ne želi kupiti kao artefakte, metal se još može rastaliti i prodati.\n\nDrago mi je da je i lopatica za blago još u jednom komadu. Bojao sam se da će ti eksplodirati!",
+        "72207e3f624a26118c23": "Kažu da je najbogatiji goblin za vrijeme zlatne groznice onaj koji prodaje lopate. Pomislio sam da ću, ako napravim vlastite, povećati svoje izglede."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -292,6 +416,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "935bafc40bb9e5e9133db95c7eef8659796e5aeeeba7f3ba00bd8672c15e8d3e"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -315,6 +449,10 @@
     },
     "itIT": {
       "description": "Ciò che manca in bellezza alle spiagge di qui è compensato dal loro valore!\r\n\r\nLa maggior parte delle rovine è già stata ripulita, ma sotto quella sabbia c'è un bel bottino. Il problema è che è sparso ovunque e i naga rendono poco praticabile una lunga ricerca. Quindi, che deve fare una ragazza?\r\n\r\nEcco la Paletta del Tesoro 3000! La pala che trova tesori e fa tutto da sola! Una mia invenzione personale.\r\n\r\nPorta questo gioiellino sulla costa orientale e riporta ciò che trovi. Poi divideremo i profitti!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Ehi, niente male, ragazzo! Anche se nessuno li vuole come reperti, il metallo è sempre buono da fondere e rivendere.\n\nE mi fa piacere vedere che il Treasure Trowel è ancora tutto intero. Temevo che ti esplodesse in mano!",
+        "72207e3f624a26118c23": "Si dice che durante una corsa all'oro il goblin più ricco sia quello che vende le pale. Ho pensato che, costruendomene una da sola, avrei coperto entrambe le scommesse."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -331,6 +469,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "935bafc40bb9e5e9133db95c7eef8659796e5aeeeba7f3ba00bd8672c15e8d3e"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -354,6 +504,10 @@
     },
     "koKR": {
       "description": "이 해변은 보기엔 별로지만 비싼 물건이 차고 넘친다고!\r\n\r\n폐허 대부분은 이미 싹 털렸지만, 모래 밑에는 꽤 굵직한 전리품이 묻혀 있어. 문제는 여기저기 흩어져 있는 데다 나가 때문에 오래 뒤지는 게 영 쉽지 않다는 거지. 그렇다고 해서 이 몸이 가만히 있겠느냐?\r\n\r\n보물 모종삽 3000 등장! 보물 탐지와 삽질을 한 번에 해결하는 만능 삽이야! 내가 직접 발명한 물건이지.\r\n\r\n이 녀석을 동쪽 해안으로 가져가서 뭐든 찾는 대로 가져와. 수익은 나눠 갖자고.",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "이야, 제법인데, 꼬마! 유물로 사려는 사람이 없더라도 금속은 녹여서 팔 수 있겠어.\n\n보물 발굴용 삽도 멀쩡해서 다행이야. 네 손에서 폭발할까 봐 걱정했거든!",
+        "72207e3f624a26118c23": "골드러시 때 가장 부자가 되는 고블린은 삽을 파는 고블린이라고 하잖아요. 직접 삽을 만들면 손해 볼 일은 없겠다 싶었죠."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -369,6 +523,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -393,6 +557,10 @@
     },
     "plPL": {
       "description": "Czego tutejszym plażom brakuje w wyglądzie, nadrabiają wartością!\r\n\r\nWiększość ruin doszczętnie obrabowano, ale pod piaskiem leżą prawdziwe skarby. Problem w tym, że są rozrzucone, a nagi utrudniają długie poszukiwania. Co więc ma zrobić dziewczyna?\r\n\r\nOto łopatka do skarbów 3000! Łopata i wykrywacz skarbów w jednym! Mój własny wynalazek.\r\n\r\nZabierz ją na wschodni brzeg i przynieś wszystko, co znajdziesz. Potem podzielimy się zyskiem!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hej, całkiem nieźle, młody! Nawet jeśli nikt nie kupi tego jako artefaktów, metal wciąż można przetopić i sprzedać.\n\nDobrze też widzieć, że kielnia do skarbów jest w jednym kawałku. Bałem się, że ci wybuchnie!",
+        "72207e3f624a26118c23": "Mówią, że podczas gorączki złota najbogatszy jest goblin sprzedający łopaty. Pomyślałem, że jeśli zrobię własne, zabezpieczę się na wszelki wypadek."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -409,6 +577,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "935bafc40bb9e5e9133db95c7eef8659796e5aeeeba7f3ba00bd8672c15e8d3e"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -432,6 +610,10 @@
     },
     "ptBR": {
       "description": "O que as praias daqui têm de feias têm de valiosas!\r\n\r\nJá fizeram uma limpa na maioria das ruínas, mas tem saque dos bons enterrado na areia. O problema é que tá tudo espalhado, e as nagas meio que inviabilizam essa busca, que já é longa por si só. Aí o que que eu faço?\r\n\r\nEis que surge a Cava-tesouros 3000! É uma pá que também detecta tesouros, tudo ao mesmo tempo. Eu mesma que inventei.\r\n\r\nLeva essa belezinha pra praia do leste e traz o que você encontrar. Aí a gente pode dividir o lucro.",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Ei, nada mal, garoto! Mesmo que ninguém queira comprá-los como artefatos, o metal ainda pode ser derretido e vendido.\n\nTambém é bom ver que a Pá de Tesouros ainda está inteira. Fiquei com medo de ela explodir nas suas mãos!",
+        "72207e3f624a26118c23": "Dizem que o goblin mais rico numa corrida do ouro é aquele que vende pás. Achei que, se eu fizesse as minhas, teria mais chances de lucrar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -447,6 +629,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -471,6 +663,10 @@
     },
     "ruRU": {
       "description": "Пляжи тут, может, и не слишком красивые, зато на них можно найти много чего ценного!\r\n\r\nЗдешние руины уже по большей части обчистили, но под песком можно найти нехилую добычу. Проблема в том, что территория слишком большая, и из-за наг отправляться на долгие поиски несколько непрактично. Что же делать, спросишь ты.\r\n\r\nВот тут-то на сцену и выходит мастерок искателя сокровищ 3000! Универсальный инструмент с функцией обнаружения сокровищ! Мое собственное изобретение.\r\n\r\nВозьми эту крошку, отправляйся на восточный берег и принеси все, что найдешь. Прибыль поделим!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Эй, совсем неплохо, малец! Даже если никто не захочет покупать их как артефакты, металл можно переплавить и продать.\n\nРад видеть, что лопатка для сокровищ тоже цела. Я боялся, что она у тебя взорвется!",
+        "72207e3f624a26118c23": "Говорят, во время золотой лихорадки богаче всех становится гоблин, который продает лопаты. Я решил, что, изготовив свои, смогу подстраховаться."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -486,6 +682,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -510,6 +716,10 @@
     },
     "svSE": {
       "description": "Vad stränderna här saknar i utseende tar de igen i värde!\r\n\r\nDe flesta ruinerna här har plockats rena, men det finns riktigt byte under sanden. Problemet är att allt är utspritt och att nagorna gör ett långt sökande lite opraktiskt. Så vad ska en tjej göra?\r\n\r\nHär kommer Treasure Trowel 3000! Den allt-i-ett-skattupptäckande spaden! Min egen uppfinning.\r\n\r\nTa den här skönheten ner till östra stranden och ta tillbaka vad du än hittar. Sedan kan vi dela vinsten!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hörru, inte illa alls, grabben! Även om ingen vill köpa dem som artefakter kan metallen fortfarande smältas ner och säljas.\n\nSkönt att se att skattspaden också är hel. Jag var rädd att den skulle explodera för dig!",
+        "72207e3f624a26118c23": "Det sägs att den rikaste goblinen under en guldrusch är den som säljer spadar. Jag tänkte att om jag tillverkade egna kunde jag gardera mig."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -526,6 +736,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "935bafc40bb9e5e9133db95c7eef8659796e5aeeeba7f3ba00bd8672c15e8d3e"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -549,6 +769,10 @@
     },
     "trTR": {
       "description": "Buradaki sahiller görünüşte eksiklerini değerde kapatıyor!\n\nHarabelerin çoğu tamamen yağmalanmış ama kumun altında ciddi ganimet var. Sorun hepsinin dağınık olması. Nagalar da uzun aramayı biraz kullanışsız kılıyor. Bir kız ne yapmalı?\n\nSahneye Treasure Trowel 3000 giriyor! Hepsi bir arada hazine algılama küreği! Kişisel icadım.\n\nBu bebeği doğu kıyısına götür, ne bulursan getir. Sonra kârı bölüşelim!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Hey, hiç de fena değil, evlat! Kimse bunları eser olarak satın almak istemese bile metal hâlâ eritilip satılabilir.\n\nHazine Malası’nın da sağlam olduğunu görmek güzel. Elinde patlayacak diye korkmuştum!",
+        "72207e3f624a26118c23": "Altına hücum sırasında en zengin goblinin kürek satan kişi olduğunu söylerler. Kendi küreklerimi yaparsam şansımı sağlama alabileceğimi düşündüm."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -565,6 +789,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "935bafc40bb9e5e9133db95c7eef8659796e5aeeeba7f3ba00bd8672c15e8d3e"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -588,6 +822,10 @@
     },
     "ukUA": {
       "description": "Чого тутешнім пляжам бракує в красі, те вони надолужують цінністю!\r\n\r\nБільшість руїн тут уже обібрали дощенту, але під тим піском є серйозна здобич. Проблема в тому, що все розкидано, а через нагів довгі пошуки не дуже зручні. То що ж робити дівчині?\r\n\r\nЗустрічайте: Скарбокоп 3000! Лопатка з вбудованим шукачем скарбів! Мій особистий винахід.\r\n\r\nВіднеси цю крихітку на східний берег і принеси все, що знайдеш. Тоді поділимо прибуток!",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "Гей, зовсім непогано, малий! Навіть якщо ніхто не захоче купувати їх як артефакти, метал можна переплавити й продати.\n\nРадий бачити, що лопатка для скарбів теж ціла. Я боявся, що вона в тебе вибухне!",
+        "72207e3f624a26118c23": "Кажуть, під час золотої лихоманки найбагатшим стає гоблін, який продає лопати. Я вирішив, що виготовлю власні й так підстрахуюся."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -604,6 +842,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "935bafc40bb9e5e9133db95c7eef8659796e5aeeeba7f3ba00bd8672c15e8d3e"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -627,6 +875,10 @@
     },
     "zhCN": {
       "description": "这里的海滩虽然看着破破烂烂，可全都是真金白银！\r\n\r\n这里的大多数废墟早被人搜刮一空了，但沙子底下可还埋着不少狠货。问题是它们太分散了，加上这儿还有纳迦，想踏踏实实挖宝根本不现实。所以，本姑娘该怎么办呢？\r\n\r\n当当当当，寻宝铲3000型！集探测与挖掘功能于一身的寻宝铲！我的私人发明。\r\n\r\n带上这宝贝去东边海岸，把你能找到的好东西全带回来。到时候，咱们利润五五分。",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "嘿，干得不错，小家伙！就算没人把这些当古物买走，金属也能熔掉卖钱。\n\n宝藏铲还完好无损，真让我高兴。我还担心它会在你手里炸掉呢！",
+        "72207e3f624a26118c23": "人们都说，淘金热中最富有的地精是卖铲子的那个。我想，要是自己造铲子，就能多一重保障。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -642,6 +894,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -666,6 +928,10 @@
     },
     "zhTW": {
       "description": "這裡的海灘雖然看起來不怎麼樣，但它們的價值完全可以彌補！\r\n\r\n這裡大部分的遺跡早就被搜刮一空了，但那片沙子底下可藏著不少真正的寶物。問題是，它們分布得太散了，而且那些納迦讓長時間的搜尋變得不太可能。所以，一個弱女子該怎麼辦呢？\r\n\r\n瞧瞧這把寶藏鏝刀3000型！集所有功能於一身的寶藏偵測鏟子！這可是我自己發明的。\r\n\r\n帶著這寶貝去東部海岸，把你挖到的任何東西都帶回來。然後，我們再來平分利潤！",
+      "dialogue": {
+        "68bcac74fb29d98fe795": "嘿，幹得不錯，小傢伙！就算沒人把這些當古物買走，金屬也能熔掉賣錢。\n\n寶藏鏟還完好無損，真讓我高興。我還擔心它會在你手裡炸掉呢！",
+        "72207e3f624a26118c23": "人們都說，淘金熱中最富有的哥布林是賣鏟子的那個。我想，要是自己造鏟子，就能多一重保障。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -681,6 +947,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.68bcac74fb29d98fe795": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.72207e3f624a26118c23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

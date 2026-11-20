@@ -207,9 +207,10 @@ function Addon:UpdateQuestInteraction()
 
     local sections, dialogueKey, missing
     local hasCatalogText = source and self:HasQuestInteractionTranslation(id, quest, context)
-    if source and not (hasCatalogText and self:FormatQuestText(quest.description, id)) then
+    if source then
         sections, dialogueKey, missing = self:GetCatalogDialogueSections(id, context)
-        if (not sections or missing) and self.questInteractionContentProvider then
+        if (not sections or missing) and self.questInteractionContentProvider
+            and not (hasCatalogText and self:FormatQuestText(quest.description, id)) then
             local provided, key = self.questInteractionContentProvider(source, id, context)
             if provided then sections, dialogueKey, missing = provided, key, nil end
         end

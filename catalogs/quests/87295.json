@@ -1,8 +1,30 @@
 {
   "areaId": 4,
+  "dialogueContexts": {
+    "0874b08fa01b83a500e3": {
+      "contributionId": 116346,
+      "lineId": "q:87295:progress",
+      "npcId": 3546,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "533439e166293a9ba5a5": {
+      "contributionId": 116349,
+      "lineId": "q:87295:complete",
+      "npcId": 3546,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Cestou do Nethergarde Keep ti možná padli do oka bazilišci Redstone, kteří se toulají pustinou venku. Jsou to odolní tvorové, dobře přizpůsobení k přežití v Blasted Lands. Jednou z jejich hlavních předností jsou pevné šupiny, které odrážejí žár, chrání před pískem a větrem, a dokonce odrazí i rány zbraní!\n\nJsou to dokonalý materiál na výrobu štítů, a když mi přineseš svazek, dobře ti zaplatím. Nos jen ty v dobrém stavu!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Dneska je ale horko, viď?",
+        "533439e166293a9ba5a5": "Vypadají dokonale! Pro místní vojáky z nich budou výborné štíty.\n\nTady, tohle sis zasloužil."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Du har måske set Redstone-basiliskerne vandre i ødemarken udenfor på vej til Nethergarde Keep. De er seje væsner, godt tilpasset til at overleve i Blasted Lands. En af deres vigtigste egenskaber er deres stærke skæl, som reflekterer varme, beskytter mod sand og vind og endda afbøjer våbenslag!\r\n\r\nDe er et perfekt materiale til skjolde, og hvis du kan bringe mig et bundt, betaler jeg dig godt. Bring kun dem i god stand!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Det er godt nok varmt i dag, ikke?",
+        "533439e166293a9ba5a5": "De ser perfekte ud! De bliver til nogle fine skjolde til de lokale soldater.\n\nHer, det har du fortjent."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "24af2a04ea26f84c1ae4ba98807be923e1d21795ba6214bf7529f039b7829cdd"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Vielleicht sind Euch auf Eurem Weg zu Burg Nethergarde die Rotsteinbasilisken begegnet, die durch die Ödnis streifen. Es sind zähe Kreaturen, hervorragend an das Überleben in den Verwüsteten Landen angepasst. Zu ihren bemerkenswertesten Eigenschaften gehören ihre robusten Schuppen. Sie reflektieren Hitze, schützen vor Sand und Wind und lassen sogar Waffenhiebe abgleiten!\r\n\r\nSie eignen sich hervorragend für die Herstellung von Schilden. Wenn Ihr mir ein Paket davon bringt, werde ich Euch gut entlohnen. Achtet nur darauf, dass sie unbeschädigt sind!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Ganz schön heiß heute, nicht wahr?",
+        "533439e166293a9ba5a5": "Die sehen ausgezeichnet aus! Daraus lassen sich erstklassige Schilde für unsere Soldaten fertigen.\n\nHier, das habt Ihr Euch verdient."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +182,10 @@
     },
     "enUS": {
       "description": "You may have seen the Redstone basilisks wandering the wastes outside while you were on your way to Nethergarde Keep. They're tough creatures, well adapted to survival in the Blasted Lands. One of their key qualities is their sturdy scales, which reflect heat, protect against sand and wind, and even deflect weapon blows!\r\n\r\nThey're a perfect material for making shields, and if you can bring me a bundle, I'll compensate you well. Only bring ones in good condition!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Sure is hot today, isn't it?",
+        "533439e166293a9ba5a5": "These look perfect! They'll make a fine set of shields for the local soldiers.\n\nHere, you've earned this."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +201,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Puede que vieras a los basiliscos rocarroja vagando por los baldíos mientras te dirigías al Castillo de Nethergarde. Son criaturas resistentes y se han adaptado a la perfección para sobrevivir en Las Tierras Devastadas. Entre sus principales cualidades destacan las robustas escamas: evitan el calor, ofrecen protección contra la arena y el viento, ¡y hasta son capaces de desviar los golpes de las armas!\r\n\r\nSon el material perfecto para fabricar escudos. Si me traes un buen montón, te recompensaré generosamente. ¡Tráeme solo las que estén en buen estado!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Hace mucho calor hoy, ¿verdad?",
+        "533439e166293a9ba5a5": "¡Tienen un aspecto perfecto! Con ellos se harán unos escudos excelentes para los soldados de la zona.\n\nToma, te lo has ganado."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -198,6 +290,10 @@
     },
     "esMX": {
       "description": "Quizás hayas visto a los basiliscos Rocarroja deambulando por el páramo mientras te dirigías hacia el Castillo de Nethergarde. Son criaturas fuertes que se adaptaron bien para sobrevivir en Las Tierras Devastadas. Una de las mejores cualidades que poseen son escamas sólidas que reflejan el calor, protegen contra la arena y el viento, e incluso desvían los golpes de las armas.\r\n\r\nEs el material perfecto para fabricar escudos. Si puedes traerme un montón, te recompensaré bien. ¡No traigas las que estén en mal estado!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Hace mucho calor hoy, ¿verdad?",
+        "533439e166293a9ba5a5": "¡Se ven perfectos! Con ellos se harán unos escudos excelentes para los soldados de la zona.\n\nToma, te lo has ganado."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -213,6 +309,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -237,6 +343,10 @@
     },
     "frFR": {
       "description": "Vous avez peut-être aperçu les basilics rougepierres qui errent dans les terres désolées, sur le chemin menant à Rempart-du-Néant. Ce sont de robustes créatures, parfaitement adaptées à la survie dans les terres Foudroyées. L’un de leurs grands atouts, ce sont leurs écailles résistantes, qui réfléchissent la chaleur, protègent du sable et du vent, et dévient même les coups !\r\n\r\nElles feraient un matériau idéal pour fabriquer des boucliers. Si vous m’en rapportez un lot, je vous récompenserai généreusement. Ne m’apportez que celles en bon état !",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Il fait vraiment chaud aujourd’hui, pas vrai ?",
+        "533439e166293a9ba5a5": "Ils sont parfaits ! On pourra en faire de solides boucliers pour les soldats du coin.\n\nTiens, tu l’as bien mérité."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +362,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -276,6 +396,10 @@
     },
     "hrHR": {
       "description": "Možda si na putu do Nethergarde Keepa vidio baziliske Redstone kako lutaju pustarom. To su žilava stvorenja, dobro prilagođena preživljavanju u Blasted Landsu. Jedna od njihovih glavnih odlika jesu čvrste ljuske koje odbijaju toplinu, štite od pijeska i vjetra, pa čak i odbijaju udarce oružja!\r\n\r\nSavršen su materijal za izradu štitova i, ako mi doneseš svežanj, dobro ću te nagraditi. Donesi samo one u dobrom stanju!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Baš je vruće danas, zar ne?",
+        "533439e166293a9ba5a5": "Izgledaju savršeno! Od njih će nastati izvrsni štitovi za lokalne vojnike.\n\nEvo, ovo si zaslužio."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -292,6 +416,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "24af2a04ea26f84c1ae4ba98807be923e1d21795ba6214bf7529f039b7829cdd"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -315,6 +449,10 @@
     },
     "itIT": {
       "description": "Forse hai visto i basilischi Redstone aggirarsi nelle distese desolate mentre venivi alla Fortezza di Guardiafatua. Sono creature robuste, ben adattate a sopravvivere nelle Terre Devastate. Una delle loro qualità principali sono le scaglie resistenti, che riflettono il calore, proteggono dalla sabbia e dal vento e deviano persino i colpi delle armi!\r\n\r\nSono un materiale perfetto per realizzare scudi e, se me ne porti un fascio, ti ricompenserò bene. Porta soltanto quelle in buone condizioni!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Fa proprio caldo oggi, vero?",
+        "533439e166293a9ba5a5": "Queste sembrano perfette! Ne verrà fuori una bella serie di scudi per i soldati del posto.\n\nTieni, te lo sei guadagnato."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -331,6 +469,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "24af2a04ea26f84c1ae4ba98807be923e1d21795ba6214bf7529f039b7829cdd"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -354,6 +504,10 @@
     },
     "koKR": {
       "description": "네더가드 요새로 오는 길에 주변 황무지를 돌아다니는 붉은바위 바실리스크를 보셨을 겁니다. 저주받은 땅의 환경에 잘 적응한 강인한 생명이지요. 특히 튼튼한 비늘이 눈에 띄는 부분입니다. 열기를 반사하고 모래와 바람을 막아 주며 무기 공격까지 튕겨 내지요!\r\n\r\n이 비늘은 방패를 만드는 재료로 안성맞춤입니다. 한 묶음 가져오시면 후하게 사례하겠습니다. 단, 상태가 좋은 것만 가져와 주십시오!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "오늘 정말 덥지 않나요?",
+        "533439e166293a9ba5a5": "완벽해 보여! 이걸로 이곳 병사들에게 훌륭한 방패를 만들어 줄 수 있겠어.\n\n자, 자네가 받을 몫이야."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -369,6 +523,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -393,6 +557,10 @@
     },
     "plPL": {
       "description": "W drodze do Nethergarde Keep może widzisz bazyliszki Redstone wędrujące po pustkowiach. To wytrzymałe stworzenia, dobrze przystosowane do życia w Blasted Lands. Jedną z ich najważniejszych cech są mocne łuski, które odbijają ciepło, chronią przed piaskiem i wiatrem, a nawet odchylają ciosy broni!\r\n\r\nSą idealnym materiałem na tarcze i jeśli przyniesiesz mi ich wiązkę, dobrze cię wynagrodzę. Tylko w dobrym stanie!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Ale dziś gorąco, prawda?",
+        "533439e166293a9ba5a5": "Wyglądają doskonale! Powstaną z nich świetne tarcze dla miejscowych żołnierzy.\n\nProszę, zasłużyłeś na to."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -409,6 +577,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "24af2a04ea26f84c1ae4ba98807be923e1d21795ba6214bf7529f039b7829cdd"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -432,6 +610,10 @@
     },
     "ptBR": {
       "description": "Talvez você tenha visto os basiliscos itarrubra vagando pelos ermos lá fora enquanto vinha para a Bastilha de Etergarde. São criaturas resistentes, bem adaptadas à sobrevivência na Barreira do Inferno. Uma das principais qualidades delas são as escamas robustas, que refletem calor, protegem contra a areia e o vento e até desviam golpes de armas!\r\n\r\nElas são o material perfeito para fazer escudos. Se você me trouxer um fardo, receberá uma boa recompensa. Mas traga só as escamas que estiverem em bom estado!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Está bem quente hoje, não é?",
+        "533439e166293a9ba5a5": "Estão perfeitos! Darão ótimos escudos para os soldados locais.\n\nTome, você mereceu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -447,6 +629,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -471,6 +663,10 @@
     },
     "ruRU": {
       "description": "По пути в крепость Стражей Пустоты ты наверняка видел краснокаменных василисков, бродящих по пустоши. Эти выносливые создания хорошо приспособились к выживанию в Выжженных землях. В первую очередь благодаря прочной чешуе, которая отражает жар, защищает от песка и ветра и даже выдерживает атаки оружием!\r\n\r\nЭто идеальный материал для щитов. Принеси мне побольше таких чешуек, и я тебе щедро заплачу. Но чешуя должна быть в хорошем состоянии!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Сегодня очень жарко, не правда ли?",
+        "533439e166293a9ba5a5": "Выглядят превосходно! Из них получатся отличные щиты для местных солдат.\n\nВот, ты это заслужил."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -486,6 +682,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -510,6 +716,10 @@
     },
     "svSE": {
       "description": "Du kanske såg Redstone-basiliskerna vandra omkring i ödemarken utanför på väg till Nethergarde Keep. De är tåliga varelser, väl anpassade till livet i Blasted Lands. En av deras viktigaste egenskaper är deras robusta fjäll, som reflekterar värme, skyddar mot sand och vind och till och med avvärjer vapenslag!\r\n\r\nDe är ett perfekt material för sköldar, och om du kan ge mig en bunt ska jag betala dig väl. Ta bara med sådana som är i gott skick!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Det är verkligen varmt i dag, eller hur?",
+        "533439e166293a9ba5a5": "De ser perfekta ut! De blir fina sköldar åt soldaterna här omkring.\n\nHär, det här har du förtjänat."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -526,6 +736,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "24af2a04ea26f84c1ae4ba98807be923e1d21795ba6214bf7529f039b7829cdd"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -549,6 +769,10 @@
     },
     "trTR": {
       "description": "Nethergarde Keep'e gelirken dışarıdaki çorak arazide dolaşan Redstone basilisklerini görmüş olabilirsin. Blasted Lands'te hayatta kalmaya iyi uyum sağlamış dayanıklı yaratıklar. Temel niteliklerinden biri sağlam pulları. Isıyı yansıtır, kuma ve rüzgâra karşı korur, silah darbelerini bile saptırırlar!\n\nKalkan yapmak için kusursuz malzeme. Bir demet getirirsen iyi karşılık veririm. Yalnızca iyi durumdakileri getir!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Bugün hava çok sıcak, değil mi?",
+        "533439e166293a9ba5a5": "Kusursuz görünüyorlar! Yerel askerler için harika kalkanlar olacaklar.\n\nAl, bunu hak ettin."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -565,6 +789,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "24af2a04ea26f84c1ae4ba98807be923e1d21795ba6214bf7529f039b7829cdd"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -588,6 +822,10 @@
     },
     "ukUA": {
       "description": "Можливо, дорогою до твердині Порожнечі ти бачив червонокам'яних василісків, що блукають навколишніми пустищами. Це витривалі істоти, добре пристосовані до виживання у Випалених Землях. Одна з їхніх головних особливостей, це міцна луска, що відбиває жар, захищає від піску й вітру та навіть відхиляє удари зброї!\r\n\r\nЦе ідеальний матеріал для щитів, і якщо принесеш мені в'язку, я добре заплачу. Принось лише луску в доброму стані!",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "Сьогодні справді спекотно, чи не так?",
+        "533439e166293a9ba5a5": "Виглядають чудово! З них вийдуть гарні щити для місцевих солдатів.\n\nОсь, ти це заслужив."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -604,6 +842,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "24af2a04ea26f84c1ae4ba98807be923e1d21795ba6214bf7529f039b7829cdd"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -627,6 +875,10 @@
     },
     "zhCN": {
       "description": "在前往守望堡的路上，你或许已经见过那些在荒原上游荡的红石蜥蜴了。这些生灵异常强悍，早已完美适应了诅咒之地的恶劣环境。它们最显著的特征莫过于那身坚如磐石的鳞片——不仅能反射酷热、抵御风沙，甚至连武器的攻击都能弹开！\r\n\r\n这种鳞片是打造盾牌的绝佳材料。要是你能给我弄一捆来，报酬绝对少不了你的。记住，我只要品相完好的！",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "今天真热，不是吗？",
+        "533439e166293a9ba5a5": "看起来完美极了！它们能为当地士兵制成一批精良的盾牌。\n\n拿着，这是你应得的。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -642,6 +894,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -666,6 +928,10 @@
     },
     "zhTW": {
       "description": "你在來守望堡的路上，應該看過在荒地上遊蕩的紅石蜥蜴。牠們是很強韌的生物，極度適應詛咒之地這裡的生存環境。牠們的其中一個關鍵特質是擁有堅硬的鱗片，具備隔熱、防風沙的特性，甚至還能彈開武器的攻擊！\r\n\r\n牠們的鱗片非常適合用來製作盾牌，如果你帶一批鱗片來給我，就能獲得豐厚的報酬。不過我只收狀況良好的鱗片！",
+      "dialogue": {
+        "0874b08fa01b83a500e3": "今天真熱，不是嗎？",
+        "533439e166293a9ba5a5": "看起來完美極了！它們能為當地士兵製成一批精良的盾牌。\n\n拿著，這是你應得的。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -681,6 +947,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0874b08fa01b83a500e3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.533439e166293a9ba5a5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

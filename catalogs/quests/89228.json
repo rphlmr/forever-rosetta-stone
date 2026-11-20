@@ -1,8 +1,30 @@
 {
   "areaId": 16,
+  "dialogueContexts": {
+    "42260bdcd082a7e5d78a": {
+      "contributionId": 138792,
+      "lineId": "q:89228:complete",
+      "npcId": 240482,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "bd583ce86e294966565d": {
+      "contributionId": 138791,
+      "lineId": "q:89228:progress",
+      "npcId": 240482,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Každá pořádná ubytovna musí mít něco k snědku.\n\nTeď je sezóna olihní a můžeš je nachytat u pobřeží tady v Azshaře. Já sám nikdy moc rybář nebyl, ale vařit umím jako ďas!\n\nCo ty na to? Máš chuť na mořský plody?\n\nJestli ti rybaření moc nejde, zkus se s nějakým rybářem skamarádit! Nebo mu za úlovek zaplať a pár si jich kup.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Perfektní, z toho bude skvělé jídlo!",
+        "bd583ce86e294966565d": "Už máš tu oliheň? Jak o ní mluvím, začínám mít hlad."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Enhver rejseloge med respekt for sig selv må have noget at spise.\r\n\r\nBlæksprutter er i sæson, og du kan fiske dem op fra kysterne her i Azshara. Jeg har aldrig selv været den store lystfisker, men jeg er en fremragende kok!\r\n\r\nHvad siger du? Lyst til fisk og skaldyr?\r\n\r\nHvis du ikke er meget for at fiske, så prøv at blive venner med en fisker! Eller betal for deres varer og køb nogle.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Perfekt, dem kan man lave et godt måltid af!",
+        "bd583ce86e294966565d": "Har du fået fat i den blæksprutte endnu? Jeg bliver helt småsulten af at tale om den."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "00676c06674dea3279a52de0a995a83525f0cecbf8b38928e41af0d2b78df060"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Jede Wanderhütte, die was auf sich hält, braucht etwas zu essen.\r\n\r\nTintenfische haben Saison. Ihr könnt sie hier an den Küsten von Azshara fischen. Bin kein großer Angler, aber dafür ein umso besserer Koch!\r\n\r\nWas sagt Ihr? Lust auf Fisch?\r\n\r\nWenn Ihr selbst auch nichts vom Angeln haltet, dann versucht, Euch mit ein paar Anglern anzufreunden! Oder kauft ihnen einen Fang ab.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Klasse, die sind perfekt zum Kochen!",
+        "bd583ce86e294966565d": "Habt Ihr die Kalmare dabei? Je mehr ich darüber rede, desto hungriger werde ich."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -121,6 +183,10 @@
     },
     "enUS": {
       "description": "Any travel lodge worth its salt's gotta have somethin' to eat.\r\n\r\nSquid are in season, and ye can fish 'em up from the coasts here in Azshara. Never was much of an angler myself, but I'm a mean cook!\r\n\r\nWhat do ye say? Feelin' some seafood?\r\n\r\nIf ye aren't much for fishin', try makin' friends with one! Or pay 'em for their goods and buy some.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Perfect, these'll cook up nicely!",
+        "bd583ce86e294966565d": "Got that squid yet? I'm gettin' a bit peckish now that I'm talkin' about it."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -136,6 +202,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Todo albergue debe poder ofrecer algo de comer.\r\n\r\nEs temporada de calamar, que se puede pescar aquí, en las costas de Azshara. Nunca me ha apasionado la pesca, ¡pero soy un gran cocinero!\r\n\r\n¿Qué me dices? ¿Te apetece algo de marisco?\r\n\r\nSi pescar no es lo tuyo, ¡entabla amistad con algún pescador! O págale por sus bienes, lo mismo da.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "¡Perfecto, se cocinarán de maravilla!",
+        "bd583ce86e294966565d": "¿Ya tienes ese calamar? De tanto hablar de él me está entrando hambre."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -197,6 +289,10 @@
     },
     "esMX": {
       "description": "Cualquier alojamiento respetable debe tener algo para comer.\r\n\r\nEs temporada de calamares y es fácil pescarlos en las costas de Azshara. Nunca se me dio muy bien la pesca, ¡pero soy un as en la cocina!\r\n\r\n¿Qué dices? ¿Se te antojan unos frutos de mar?\r\n\r\nSi no te gusta mucho pescar, ¡intenta hacerte amigo de algún pescador! O págale por su trabajo y cómprale algunos.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "¡Perfecto, quedarán deliciosos al cocinarlos!",
+        "bd583ce86e294966565d": "¿Ya tienes ese calamar? De tanto hablar de él me está dando hambre."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -212,6 +308,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -235,6 +341,10 @@
     },
     "frFR": {
       "description": "Ce serait pas vraiment un gîte si on proposait pas de nourriture.\r\n\r\nEn ce moment, c’est la saison du calamar, on peut en pêcher le long des côtes d’Azshara. J’ai jamais été doué pour la pêche, mais je m’y connais en cuisine !\r\n\r\nAlors, un plat de fruits de mer, ça vous dit ?\r\n\r\nSi la pêche n’est pas trop votre truc, essayez de vous lier d’amitié avec un pêcheur ! Ou achetez-lui du poisson.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Parfait, ça va faire un bon petit plat !",
+        "bd583ce86e294966565d": "Tu as trouvé ce calmar ? Rien que d’en parler, ça me donne faim."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -250,6 +360,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -273,6 +393,10 @@
     },
     "hrHR": {
       "description": "Svako putničko konačište koje išta vrijedi mora imati nešto za jelo.\r\n\r\nSezona je lignji i možeš ih uloviti uz ovdašnje obale Azshare. Nikada nisam bio neki ribolovac, ali izvrstan sam kuhar!\r\n\r\nŠto kažeš? Jede li ti se morska hrana?\r\n\r\nAko ne voliš pecati, pokušaj se sprijateljiti s nekim tko voli! Ili mu plati i kupi nešto od ulova.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Savršeno, od ovoga će biti izvrstan obrok!",
+        "bd583ce86e294966565d": "Imaš li već tu lignju? Sad kad pričam o njoj, pomalo sam ogladnio."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -289,6 +413,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "00676c06674dea3279a52de0a995a83525f0cecbf8b38928e41af0d2b78df060"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -312,6 +446,10 @@
     },
     "itIT": {
       "description": "Ogni rifugio per viandanti che si rispetti deve avere qualcosa da mangiare.\r\n\r\nÈ la stagione dei calamari e puoi pescarli lungo le coste qui ad Azshara. Non sono mai stato un gran pescatore, ma sono un cuoco formidabile!\r\n\r\nChe ne dici? Ti va qualcosa di mare?\r\n\r\nSe la pesca non fa per te, prova a fare amicizia con un pescatore! Oppure pagalo e comprane un po'.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Perfetto, verranno benissimo in cucina!",
+        "bd583ce86e294966565d": "Hai già preso quel calamaro? A parlarne mi sta venendo un certo languorino."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -328,6 +466,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "00676c06674dea3279a52de0a995a83525f0cecbf8b38928e41af0d2b78df060"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -351,6 +499,10 @@
     },
     "koKR": {
       "description": "제대로 된 여행자 숙소라면 먹을 것도 있어야 하지 않겠나.\r\n\r\n요즘은 오징어가 제철이야. 아즈샤라 해안에서 낚을 수 있지. 난 낚시는 영 소질이 없지만, 요리 솜씨만큼은 자신 있네!\r\n\r\n어떤가? 해산물 좀 당기지 않나?\r\n\r\n낚시를 할 줄 모른다면 낚시꾼 친구를 사귀어 보게나! 아니면 돈을 주고 사는 것도 괜찮겠지.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "완벽해요, 맛있게 요리할 수 있겠어요!",
+        "bd583ce86e294966565d": "오징어는 구해 왔나? 얘기하다 보니 슬슬 출출해지는군."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -366,6 +518,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -389,6 +551,10 @@
     },
     "plPL": {
       "description": "Każdy szanujący się zajazd musi mieć coś do jedzenia.\r\n\r\nTrwa sezon na kałamarnice, które można wyłowić u wybrzeży Azshary. Sam nigdy nie byłem wielkim wędkarzem, ale świetnie gotuję!\r\n\r\nCo ty na to? Masz ochotę na owoce morza?\r\n\r\nJeśli nie lubisz łowić, zaprzyjaźnij się z wędkarzem! Albo zapłać i kup jego towar.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Doskonale, będzie z tego pyszne danie!",
+        "bd583ce86e294966565d": "Masz już tę kałamarnicę? Od samego gadania o niej robię się głodny."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -405,6 +571,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "00676c06674dea3279a52de0a995a83525f0cecbf8b38928e41af0d2b78df060"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -428,6 +604,10 @@
     },
     "ptBR": {
       "description": "Qualquer pouso de viagem que se preze tem que ter algo pra encher o bucho.\r\n\r\nTá na época de Lula, e tu pode pegar elas nos litorais aqui em Azshara. Eu nunca fui muito bom pescador, mas cozinho como ninguém!\r\n\r\nE então, o que tu me diz? A fim de uns frutos do mar?\r\n\r\nSe tu não for muito da pesca, tenta fazer amizade com alguém que seja! Ou então que venda a mercadoria direto.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Perfeito, vai dar um belo prato!",
+        "bd583ce86e294966565d": "Já pegou aquela lula? Só de falar nela estou ficando com fome."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -443,6 +623,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -466,6 +656,10 @@
     },
     "ruRU": {
       "description": "Каждой походной стоянке нужен источник пропитания.\r\n\r\nСейчас самый сезон для кальмара, так что его можно с избытком наловить у берегов Азшары. Рыбак из меня всегда был никудышный, но готовлю я так, что пальчики оближешь!\r\n\r\nНу как, хочешь подкрепиться морепродуктами?\r\n\r\nЕсли и ты не умеешь рыбачить, попроси друга, который умеет! Или просто купи у кого-нибудь улов.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Отлично, из этого получится славное блюдо!",
+        "bd583ce86e294966565d": "Кальмара уже принес? Пока говорю о нем, аппетит разыгрался."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -481,6 +675,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -504,6 +708,10 @@
     },
     "svSE": {
       "description": "Ett värdshus värt namnet måste ju ha nåt att äta.\r\n\r\nDet är säsong för bläckfisk, och du kan fiska upp dem vid kusterna här i Azshara. Har aldrig varit nån stor fiskare själv, men laga mat kan jag!\r\n\r\nVad säger du? Sugen på havets läckerheter?\r\n\r\nOm du inte gillar att fiska, försök bli vän med en fiskare! Eller betala för varorna och köp några.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Perfekt, det här blir en fin måltid!",
+        "bd583ce86e294966565d": "Har du fått tag på bläckfisken än? Jag blir lite hungrig av att prata om den."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -520,6 +728,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "00676c06674dea3279a52de0a995a83525f0cecbf8b38928e41af0d2b78df060"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -543,6 +761,10 @@
     },
     "trTR": {
       "description": "Adına yaraşır her yolcu hanında yiyecek bir şeyler olmalı.\r\n\r\nKalamarın mevsimi geldi; burada Azshara kıyılarında tutabilirsin. Ben pek oltacı olmadım, ama sıkı aşçıyım!\r\n\r\nNe dersin? Deniz ürünü ister misin?\r\n\r\nBalık tutmayı pek sevmiyorsan bir oltacıyla dost olmayı dene! Ya da malına para verip biraz satın al.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Harika, bunlardan nefis yemek olur!",
+        "bd583ce86e294966565d": "Kalamarı buldun mu? Ondan söz edince biraz acıktım."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -559,6 +781,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "00676c06674dea3279a52de0a995a83525f0cecbf8b38928e41af0d2b78df060"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -582,6 +814,10 @@
     },
     "ukUA": {
       "description": "У кожному путньому туристичному притулку мусить бути щось поїсти.\r\n\r\nЗараз сезон кальмарів, і їх можна наловити біля тутешніх берегів Азшари. Рибалка з мене завжди був нікудишній, зате кухар я чудовий!\r\n\r\nНу що скажеш? Хочеться морепродуктів?\r\n\r\nЯкщо риболовля тобі не до душі, спробуй потоваришувати з рибалкою! Або заплати їм за товар і купи трохи кальмарів.",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "Чудово, з цього вийде смачна страва!",
+        "bd583ce86e294966565d": "Уже маєш того кальмара? Поки говорю про нього, аж зголоднів."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -598,6 +834,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "00676c06674dea3279a52de0a995a83525f0cecbf8b38928e41af0d2b78df060"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -621,6 +867,10 @@
     },
     "zhCN": {
       "description": "像样的旅店总得有些吃的。\r\n\r\n冬鱿鱼正当季，在艾萨拉沿岸就能钓到。我自己不太会钓鱼，厨艺倒是一流！\r\n\r\n怎么样？想吃点海鲜吗？\r\n\r\n要是你不擅长钓鱼，就试着和会钓的人交个朋友！或者花钱买下他们的渔获。",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "太好了，这些一定能做成美味！",
+        "bd583ce86e294966565d": "鱿鱼弄到了吗？说着说着，我都有点饿了。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -636,6 +886,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -659,6 +919,10 @@
     },
     "zhTW": {
       "description": "任何名副其實的旅館都得有點吃的。\r\n\r\n現在正是魷魚的產季，你可以在艾薩拉這裡的海岸釣到牠們。我自己從來不怎麼擅長釣魚，但我可是個厲害的大廚！\r\n\r\n你覺得怎麼樣？想來點海鮮嗎？\r\n\r\n如果你也不擅長釣魚，就去找擅長釣魚的人當朋友！或是乾脆付錢買一些。",
+      "dialogue": {
+        "42260bdcd082a7e5d78a": "太好了，這些一定能做成美味！",
+        "bd583ce86e294966565d": "魷魚弄到了嗎？說著說著，我都有點餓了。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -674,6 +938,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.42260bdcd082a7e5d78a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bd583ce86e294966565d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

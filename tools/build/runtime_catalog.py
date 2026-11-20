@@ -209,6 +209,20 @@ def project_localized_record(kind, entity_id, entity, locale, items, npcs=None):
     elif kind == 'quests':
         localized = {key: original[key] for key in QUEST_FIELDS if key in original
                      and (key == 'objectiveLines' or has_english_text(entity, key))}
+        offer = original.get('dialogue', {}).get('description')
+        if offer is not None:
+            context = entity.get('dialogueContexts', {}).get('description', {})
+            source = entity['locales']['enUS'].get('description')
+            origin = original.get('translationMetadata', {}).get('fields', {}).get('dialogue.description', {}).get('origin')
+            if (locale == 'enUS' or context.get('stage') != 'accept' or context.get('sourceField') != 'description'
+                    or not isinstance(source, str) or not source.strip()
+                    or not isinstance(offer, str) or not offer.strip() or origin not in ('original', 'community', 'ai')):
+                raise ValueError(f'Invalid canonical quest offer: quests/{entity_id}/{locale}')
+            current = localized.get('description')
+            if (context.get('sourceDescriptionSha256') == hashlib.sha256(source.encode()).hexdigest()
+                    and (not current or current.split() == source.split())):
+                localized['description'] = offer
+                has_ai_translation |= origin == 'ai'
         objective_lines, objectives_have_ai = project_objectives(entity, original, locale, items, npcs)
 
         if objective_lines:
@@ -256,6 +270,8 @@ def project_dialogue(kind, entity_id, entity, locale):
     for key, text in sorted(lines.items()):
         origin = metadata.get('dialogue.' + key, {}).get('origin')
         context = contexts.get(key, {})
+        if kind == 'quests' and key == 'description' and context.get('sourceField') == 'description':
+            continue
         if (key not in english or context.get('stage') not in stages or not isinstance(text, str)
                 or not text.strip() or origin not in ('original', 'community', 'ai')):
             raise ValueError(f'Invalid dialogue: {kind}/{entity_id}/{locale}/{key}')

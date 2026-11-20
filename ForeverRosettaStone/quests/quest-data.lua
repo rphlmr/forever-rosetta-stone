@@ -185,15 +185,16 @@ function Addon:FormatQuestText(text, questID, targetLocale, allowSentenceSelecto
 
     local genderSelector = allowSentenceSelectors and "%$[Gg]([^:;$\n]+):([^:;$\n]+);"
         or "%$[Gg]([^:;$\n%.!?]+):([^:;$\n%.!?]+);"
-    local formatted = text:gsub("%$[Nn]%f[^%a]", function() return replace(replacements.name) end)
-        :gsub("%$[Rr]%f[^%a]", function() return replace(replacements.race) end)
-        :gsub("%$[Cc]%f[^%a]", function() return replace(replacements.class) end)
+    -- Client token names are ASCII. The next byte may begin a localized character.
+    local formatted = text:gsub("%$[Nn]%f[^A-Za-z]", function() return replace(replacements.name) end)
+        :gsub("%$[Rr]%f[^A-Za-z]", function() return replace(replacements.race) end)
+        :gsub("%$[Cc]%f[^A-Za-z]", function() return replace(replacements.class) end)
         :gsub(genderSelector, function(male, female)
             if sex == 2 then return male end
             if sex == 3 then return female end
             incomplete = true
         end)
-        :gsub("%$B", "\n"):gsub("%$b%f[^%a]", "\n")
+        :gsub("%$B", "\n"):gsub("%$b%f[^A-Za-z]", "\n")
         :gsub("<([^<>]+)>", function(token)
             -- Lua's locale-sensitive lower() can corrupt UTF-8 bytes.
             local key = token:gsub("[A-Z]", string.lower)

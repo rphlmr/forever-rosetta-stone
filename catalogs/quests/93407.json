@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "a6b6db6928fec4733f0c": {
+      "contributionId": 115614,
+      "lineId": "q:93407:progress",
+      "npcId": 40833,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "aeec57a8f66d30040ae0": {
+      "contributionId": 116902,
+      "lineId": "q:93407:complete",
+      "npcId": 40833,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Musíme tu zlepšit obranu, ale nemáme dost prostředků na stavbu opevnění. Máme však všechny dary přírody.\n\nProhledej les, najdi trnité keře a přines mi jejich semena. Silou přírody si vlastní obranu vypěstujeme.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Bodnutí trnů je malá cena za budoucí bezpečí.",
+        "aeec57a8f66d30040ae0": "Díky těmto semenům si teď můžeme vypěstovat silnější obranu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Vi må forbedre vores forsvar her, og vi mangler ressourcer til at bygge befæstninger. Vi har dog hele naturens rigdom.\r\n\r\nSøg i skoven efter tornebuske og bring deres frø tilbage til mig. Med naturens kraft vil vi dyrke vores eget forsvar.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Tornestik er en lille pris at betale nu for at sikre vores fremtid.",
+        "aeec57a8f66d30040ae0": "Med disse frø kan vi nu dyrke et stærkere forsvar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8fd71b6a37a5849debee3e2fdb998cc3f0abf37848a17f1d3a677a6c609faa21"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Wir müssen unsere Verteidigung hier verbessern, doch es fehlt uns an den Ressourcen, um Befestigungen zu errichten. Wir verfügen jedoch über die gesamte Fülle der Natur.\r\n\r\nSucht im Wald nach Dornenbüschen und bringt mir deren Samen. Mit der Macht der Natur werden wir unsere eigene Verteidigung wachsen lassen.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Die Stiche der Dornen sind jetzt ein kleiner Preis für unsere zukünftige Sicherheit.",
+        "aeec57a8f66d30040ae0": "Mit diesen Samen können wir nun eine stärkere Verteidigung für uns heranziehen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "We need to improve our defenses here, and we lack the resources to construct fortifications. We do, however, have all of the bounty of nature.\r\n\r\nSearch the forest for thorn bushes and bring their seeds back to me. With the power of nature, we will grow our own defenses.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "The sting of the thorns is a small price to pay now, so that we may assure our future security.",
+        "aeec57a8f66d30040ae0": "Now, with these seeds, we can grow a stronger defense for us."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -157,6 +233,10 @@
     },
     "esES": {
       "description": "Debemos mejorar nuestras defensas en este lugar y carecemos de los recursos para construir fortificaciones. No obstante, gozamos de los dones de la naturaleza.\r\n\r\nBusca arbustos espinosos en el bosque y tráeme las semillas. Gracias al poder de la naturaleza, haremos brotar nuestras defensas.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Los pinchazos de las espinas son un pequeño precio que pagar ahora para garantizar nuestra seguridad futura.",
+        "aeec57a8f66d30040ae0": "Ahora, con estas semillas, podemos cultivar una defensa más fuerte."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +252,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -195,6 +285,10 @@
     },
     "esMX": {
       "description": "Debemos mejorar nuestras defensas aquí, pero nos faltan los recursos necesarios para construir fortificaciones. Sin embargo, contamos con todas las riquezas que nos brinda la naturaleza.\r\n\r\nBusca en el bosque arbustos espinosos y tráeme sus semillas. Con el poder de la naturaleza, cultivaremos nuestras propias defensas.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Los pinchazos de las espinas son un pequeño precio que pagar ahora para garantizar nuestra seguridad futura.",
+        "aeec57a8f66d30040ae0": "Ahora, con estas semillas, podemos cultivar una defensa más fuerte."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +304,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -233,6 +337,10 @@
     },
     "frFR": {
       "description": "Nous devons renforcer nos défenses, mais nous ne disposons pas des matériaux nécessaires pour construire des fortifications. Nous pouvons toutefois compter sur les trésors de la nature.\r\n\r\nTrouvez des buissons épineux dans la forêt et rapportez-moi leurs graines. La nature nous aidera à faire croître nos défenses.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Les piqûres des épines sont un maigre prix à payer aujourd’hui pour assurer notre sécurité future.",
+        "aeec57a8f66d30040ae0": "Grâce à ces graines, nous pouvons désormais faire pousser une défense plus solide."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -248,6 +356,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -271,6 +389,10 @@
     },
     "hrHR": {
       "description": "Moramo poboljšati obranu ovdje, a nemamo sredstava za gradnju utvrda. Međutim, imamo sve blagodati prirode.\r\n\r\nPretraži šumu u potrazi za trnovitim grmljem i donesi mi njihovo sjeme. Snagom prirode uzgojit ćemo vlastitu obranu.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Ubodi trnja mala su cijena koju sada plaćamo kako bismo osigurali svoju buduću sigurnost.",
+        "aeec57a8f66d30040ae0": "S ovim sjemenkama sada možemo uzgojiti jaču obranu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -287,6 +409,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8fd71b6a37a5849debee3e2fdb998cc3f0abf37848a17f1d3a677a6c609faa21"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -310,6 +442,10 @@
     },
     "itIT": {
       "description": "Dobbiamo migliorare le nostre difese qui, ma ci mancano le risorse per costruire fortificazioni. Abbiamo però tutta l'abbondanza della natura.\r\n\r\nCerca cespugli spinosi nella foresta e riportami i loro semi. Con il potere della natura faremo crescere le nostre difese.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Le punture delle spine sono un piccolo prezzo da pagare ora per garantire la nostra sicurezza futura.",
+        "aeec57a8f66d30040ae0": "Con questi semi possiamo far crescere una difesa più solida per noi."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -326,6 +462,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8fd71b6a37a5849debee3e2fdb998cc3f0abf37848a17f1d3a677a6c609faa21"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -349,6 +495,10 @@
     },
     "koKR": {
       "description": "이곳의 방어를 강화해야 합니다. 문제는 요새를 지을 자원이 부족하다는 건데, 자연이 베푸는 풍요가 있어서 다행입니다.\r\n\r\n숲에서 가시덤불을 찾아 씨앗을 가져오십시오. 자연의 힘으로 우리만의 방어선을 만들어낼 수 있을 겁니다.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "미래의 안전을 보장할 수 있다면 지금 가시에 찔리는 것쯤은 작은 대가입니다.",
+        "aeec57a8f66d30040ae0": "이제 이 씨앗으로 더 강력한 방어 수단을 길러낼 수 있습니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -364,6 +514,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -387,6 +547,10 @@
     },
     "plPL": {
       "description": "Musimy wzmocnić obronę, a brak nam zasobów do budowy fortyfikacji. Mamy jednak całe bogactwo natury.\r\n\r\nPrzeszukaj las w poszukiwaniu cierniowych krzewów i przynieś mi nasiona. Mocą natury wyhodujemy własną obronę.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Ukłucia cierni to niewielka cena, którą płacimy teraz za nasze przyszłe bezpieczeństwo.",
+        "aeec57a8f66d30040ae0": "Dzięki tym nasionom możemy teraz wyhodować silniejszą obronę."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -403,6 +567,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8fd71b6a37a5849debee3e2fdb998cc3f0abf37848a17f1d3a677a6c609faa21"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -426,6 +600,10 @@
     },
     "ptBR": {
       "description": "Precisamos fortificar nossas defesas aqui e não temos recursos para construir nada. Nós temos, no entanto, toda a fartura da natureza.\r\n\r\nProcure arbustos espinhosos na floresta e traga as sementes deles. Com o poder da natureza, vamos cultivar nossas defesas.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "As picadas dos espinhos são um pequeno preço a pagar agora para garantir nossa segurança no futuro.",
+        "aeec57a8f66d30040ae0": "Agora, com estas sementes, podemos cultivar uma defesa mais forte para nós."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -441,6 +619,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -464,6 +652,10 @@
     },
     "ruRU": {
       "description": "Нам нужно усилить оборону, а ресурсов для постройки укреплений не хватает. Однако у нас есть дары природы.\r\n\r\nПоищи в лесу кустарники терна и принеси мне их семена. Сила природы поможет нам вырастить укрепления.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Уколы шипов сейчас — небольшая плата за нашу безопасность в будущем.",
+        "aeec57a8f66d30040ae0": "Теперь с помощью этих семян мы сможем вырастить более надежную защиту."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -479,6 +671,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -502,6 +704,10 @@
     },
     "svSE": {
       "description": "Vi måste förbättra försvaret här men saknar resurser för befästningar. Däremot har vi naturens hela rikedom.\r\n\r\nSök efter törnbuskar i skogen och ge mig deras frön. Med naturens kraft odlar vi vårt eget försvar.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Tornarnas stick är ett litet pris att betala nu för att trygga vår framtida säkerhet.",
+        "aeec57a8f66d30040ae0": "Med dessa frön kan vi nu odla fram ett starkare försvar."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -518,6 +724,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8fd71b6a37a5849debee3e2fdb998cc3f0abf37848a17f1d3a677a6c609faa21"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -541,6 +757,10 @@
     },
     "trTR": {
       "description": "Burada savunmamızı geliştirmeliyiz, ama tahkimat inşa etmek için kaynaklarımız yok. Yine de doğanın bütün nimetlerine sahibiz.\r\n\r\nOrmanda dikenli çalılar ara ve tohumlarını bana getir. Doğanın gücüyle kendi savunmamızı yetiştireceğiz.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Gelecekte güvende olmak için şimdi dikenlerin acısına katlanmak küçük bir bedel.",
+        "aeec57a8f66d30040ae0": "Artık bu tohumlarla kendimize daha güçlü bir savunma yetiştirebiliriz."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -557,6 +777,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8fd71b6a37a5849debee3e2fdb998cc3f0abf37848a17f1d3a677a6c609faa21"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -580,6 +810,10 @@
     },
     "ukUA": {
       "description": "Нам треба зміцнити тут оборону, а ресурсів для спорудження укріплень бракує. Зате маємо всі дари природи.\r\n\r\nЗнайди в лісі тернові кущі й принеси мені їхнє насіння. За допомогою сили природи ми виростимо власні укріплення.",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "Уколи колючок зараз — невелика плата за нашу майбутню безпеку.",
+        "aeec57a8f66d30040ae0": "Тепер завдяки цьому насінню ми зможемо виростити міцніший захист."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -596,6 +830,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "8fd71b6a37a5849debee3e2fdb998cc3f0abf37848a17f1d3a677a6c609faa21"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -619,6 +863,10 @@
     },
     "zhCN": {
       "description": "我们需要加固这儿的防御，手头却没有建造工事的资源。好在大自然已将丰厚的馈赠赐予了我们。\r\n\r\n去森林里找些荆棘灌木，把种子带回来给我。只要借助自然的力量，我们就能种出属于自己的防御屏障。",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "眼下被荆棘刺痛是微不足道的代价，能换来我们未来的安全。",
+        "aeec57a8f66d30040ae0": "有了这些种子，我们就能培育出更强大的防御。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -634,6 +882,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -657,6 +915,10 @@
     },
     "zhTW": {
       "description": "我們需要加強這裡的防禦，但我們缺乏建造防禦工事的資源。不過，我們擁有大自然給予的所有恩惠。\r\n\r\n去森林裡尋找荊棘灌木，並把它們的種子帶回來給我。透過大自然的力量，我們將能培育出屬於我們自己的防線。",
+      "dialogue": {
+        "a6b6db6928fec4733f0c": "眼下被荊棘刺痛是微不足道的代價，能換來我們未來的安全。",
+        "aeec57a8f66d30040ae0": "有了這些種子，我們就能培育出更強大的防禦。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -672,6 +934,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.a6b6db6928fec4733f0c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.aeec57a8f66d30040ae0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

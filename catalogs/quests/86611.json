@@ -1,8 +1,30 @@
 {
   "areaId": 361,
+  "dialogueContexts": {
+    "9bc0dd3b35e285effcdf": {
+      "contributionId": 145039,
+      "lineId": "q:86611:progress",
+      "npcId": 9465,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "ac4da6daf830fa24857c": {
+      "contributionId": 145050,
+      "lineId": "q:86611:complete",
+      "npcId": 9465,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Tůň páchnoucího slizu rozleptala sochu jelena. Není jasné, jak se sem na dno jezera dostala.\n\nJediný krystal zasazený do medailonu na jelenově krku vydává nezdravý zelený třpyt. Stojí za to ho odnést někomu, kdo by mohl znát historii tohoto monumentu.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Co je to?",
+        "ac4da6daf830fa24857c": "Tento krystal poznávám! Socha Malorna kdysi zdobila jeho svatyni, ale démoni ji nejspíš během války svrhli ze svahu hory.\n\nTo je nešťastné; krystal pohltil felovou energii a nyní v sobě chová neblahou moc. Obávám se, že jej musím zničit.\n\nDěkuji, že jsi mi ho přinesl."
+      },
       "summary": "Odnes Stag Lord's Bauble do Talonbranch Glade někomu, kdo o tom může něco vědět.",
       "title": "Cetka pána jelenů",
       "translationMetadata": {
@@ -12,6 +34,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -30,6 +62,10 @@
     },
     "daDK": {
       "description": "<Bassinet med stinkende slim har tæret på hjortestatuen. Det er uklart, hvordan den havnede her på bunden af søen.\r\n\r\nEn enkelt krystalsten i en medaljon om dens hals har et usundt grønt skær. Det er værd at tage den til en, som måske kender dette monuments historie.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Hvad er det?",
+        "ac4da6daf830fa24857c": "Jeg genkender denne krystal! Statuen af Malorne prydede engang hans helligdom, men dæmonerne må have kastet den ned ad bjerget under krigen.\n\nDet er uheldigt; krystallen har absorberet felenergi og rummer nu en uhellig kraft. Jeg er bange for, at jeg må ødelægge den.\n\nTak, fordi du bragte den til mig."
+      },
       "summary": "Bring Stag Lord's Bauble til en i Talonbranch Glade, som måske kender til den.",
       "title": "Hjorteherrens smykke",
       "translationMetadata": {
@@ -39,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d94af4a19ba64a37a18c641f1d627a2275a4801f4c1c913b8cbd94595ae7aea3"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -57,6 +103,10 @@
     },
     "deDE": {
       "description": "<Die Lache fauligen Schleims hat die Hirschstatue zerfressen. Es ist nicht zu erkennen, wie sie auf den Grund des Sees gekommen ist.\r\n\r\nEin einzelner Kristall in einem Medaillon um den Hals des Hirschs weist einen unguten grünen Schimmer auf. Den solltet Ihr zu jemandem bringen, der sich eventuell mit der Geschichte dieses Denkmals auskennt.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Was ist das?",
+        "ac4da6daf830fa24857c": "Den Kristall erkenne ich! Die Statue von Malorne hat einst diesen Schrein geziert, aber die Dämonen haben sie wohl während des Krieges den Berg hinuntergeworfen.\n\nDas ist ungünstig. Der Kristall hat Teufelsenergie absorbiert und enthält jetzt unheilvolle Macht. Ich muss ihn leider zerstören.\n\nDanke, dass Ihr ihn mir gebracht habt."
+      },
       "summary": "Bringt das Schmuckstück des Hirschlords zu jemandem auf der Nachtlaublichtung, der sich vielleicht damit auskennt.",
       "title": "Schmuckstück des Hirschlords",
       "translationMetadata": {
@@ -65,6 +115,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +144,10 @@
     },
     "enUS": {
       "description": "<The pool of fetid slime has eroded the statue of the stag. It is unclear how it arrived here at the bottom of the lake.\r\n\r\nA single crystal stone set in a medallion around its neck bears an unwholesome green gleam. It is worth taking to someone who might know the history of this monument.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "What is that?",
+        "ac4da6daf830fa24857c": "I recognize this crystal! The statue of Malorne once decorated his shrine, but the demons must have thrown it off the side of the mountain during the war.\n\nThis is unfortunate; the crystal has absorbed fel energy and now it holds a measure of unwholesome power. I am afraid I must destroy it.\n\nThank you for bringing this to me."
+      },
       "summary": "Take the Stag Lord's Bauble to someone in Talonbranch Glade who may know about it.",
       "title": "Stag Lord's Bauble",
       "translationMetadata": {
@@ -90,6 +156,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +185,10 @@
     },
     "esES": {
       "description": "<La poza de babas fétidas ha erosionado la estatua del ciervo. No está claro cómo llegó al fondo del lago.\r\n\r\nUna piedra de cristal, engarzada en un medallón alrededor de su cuello, emite un resplandor verdoso malsano. Merece la pena llevarle esto a alguien que conozca la historia de este monumento>.",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "¿Qué es eso?",
+        "ac4da6daf830fa24857c": "¡Reconozco este cristal! La estatua de Malorne adornaba su santuario, pero los demonios debieron de arrojarla montaña abajo durante la guerra.\n\nEs lamentable; el cristal ha absorbido energía vil y ahora contiene una fuerza malsana. Me temo que debo destruirlo.\n\nGracias por traérmelo."
+      },
       "summary": "Take the Stag Lord's Bauble to someone in Talonbranch Glade who may know about it.",
       "title": "El adorno de señor de los venados",
       "translationMetadata": {
@@ -115,6 +197,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +224,10 @@
     },
     "esMX": {
       "description": "<El charco de baba fétida corroyó la estatua del ciervo. No queda claro cómo terminó en el fondo del lago.\r\n\r\nAlrededor del cuello, ves un medallón con un solo cristal en el centro, que proyecta un destello verde y malsano. Sería buena idea hablar con alguien que sepa la historia de este monumento.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "¿Qué es eso?",
+        "ac4da6daf830fa24857c": "¡Reconozco este cristal! La estatua de Malorne adornaba su santuario, pero los demonios debieron arrojarla montaña abajo durante la guerra.\n\nEs lamentable; el cristal absorbió energía vil y ahora contiene una fuerza malsana. Me temo que debo destruirlo.\n\nGracias por traérmelo."
+      },
       "summary": "Take the Stag Lord's Bauble to someone in Talonbranch Glade who may know about it.",
       "title": "Baratija del Señor de los venados",
       "translationMetadata": {
@@ -140,6 +236,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -157,6 +263,10 @@
     },
     "frFR": {
       "description": "<La flaque de limon fétide a corrodé la statue du cerf. Comment elle a pu atterrir ici, au fond du lac, reste un mystère.\r\n\r\nUne unique pierre cristalline, sertie dans un médaillon passé autour de son cou, luit d’un vert maléfique. Elle mérite d’être apportée à quelqu’un qui connaîtrait l’histoire de ce monument.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Qu’est-ce que c’est ?",
+        "ac4da6daf830fa24857c": "Je reconnais ce cristal ! La statue de Malorne ornait autrefois son sanctuaire, mais les démons ont dû la précipiter du flanc de la montagne pendant la guerre.\n\nC’est fâcheux : le cristal a absorbé de l’énergie gangrenée et renferme désormais un pouvoir néfaste. Je crains de devoir le détruire.\n\nMerci de me l’avoir apporté."
+      },
       "summary": "Apportez le colifichet du seigneur cerf à quelqu’un qui pourrait en savoir plus à son sujet, à la clairière de Griffebranche.",
       "title": "Le colifichet du seigneur cerf",
       "translationMetadata": {
@@ -165,6 +275,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "original",
@@ -182,6 +302,10 @@
     },
     "hrHR": {
       "description": "<Lokva smrdljive sluzi nagrizla je kip jelena. Nije jasno kako je dospio ovamo na dno jezera.\r\n\r\nJedan kristalni kamen u medaljonu oko njegova vrata ima nezdrav zeleni sjaj. Vrijedi ga odnijeti nekome tko bi mogao znati povijest ovog spomenika.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Što je to?",
+        "ac4da6daf830fa24857c": "Prepoznajem ovaj kristal! Malorneov kip nekoć je krasio njegovo svetište, ali demoni su ga zacijelo tijekom rata bacili niz planinu.\n\nTo je nesretno; kristal je upio fel energiju i sada u sebi nosi zlokobnu moć. Bojim se da ga moram uništiti.\n\nHvala što si mi ga donio."
+      },
       "summary": "Odnesi Stag Lord's Bauble nekome u Talonbranch Gladeu tko bi mogao znati nešto o njemu.",
       "title": "Drangulija gospodara jelena",
       "translationMetadata": {
@@ -191,6 +315,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d94af4a19ba64a37a18c641f1d627a2275a4801f4c1c913b8cbd94595ae7aea3"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -209,6 +343,10 @@
     },
     "itIT": {
       "description": "<La pozza di melma fetida ha eroso la statua del cervo. Non è chiaro come sia arrivata qui, sul fondo del lago.\r\n\r\nUn'unica pietra cristallina incastonata in un medaglione al collo emette un malsano bagliore verde. Vale la pena portarla a qualcuno che potrebbe conoscere la storia di questo monumento.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Che cos’è?",
+        "ac4da6daf830fa24857c": "Riconosco questo cristallo! Un tempo ornava la statua di Malorne nel suo santuario, ma durante la guerra i demoni devono averlo gettato giù dal fianco della montagna.\n\nÈ un peccato: il cristallo ha assorbito energia vile, e ora custodisce un potere malsano. Temo di doverlo distruggere.\n\nGrazie per avermelo portato."
+      },
       "summary": "Porta il monile del Signore dei Cervi a qualcuno a Talonbranch Glade che possa saperne qualcosa.",
       "title": "Il monile del signore dei cervi",
       "translationMetadata": {
@@ -218,6 +356,17 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d94af4a19ba64a37a18c641f1d627a2275a4801f4c1c913b8cbd94595ae7aea3"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "summary": {
             "origin": "ai",
@@ -236,6 +385,10 @@
     },
     "koKR": {
       "description": "<악취 나는 진액 웅덩이가 수사슴 조각상을 부식시켰습니다. 이 조각상이 어떻게 호수 밑바닥까지 왔는지는 알 수 없습니다.\r\n\r\n조각상의 목에 걸린 메달에 수정이 박혀 있는데, 불길한 녹색으로 빛납니다. 이 기념물의 내력을 알 법한 사람에게 가져가 보는 게 좋겠습니다.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "그게 뭔가요?",
+        "ac4da6daf830fa24857c": "이 수정은 본 적이 있습니다! 말로른의 조각상이 한때 그의 성소를 장식했지만, 전쟁 중에 악마들이 산 아래로 던져 버린 모양입니다.\n\n안타깝게도 수정이 지옥 에너지를 흡수해 사악한 힘을 품고 있습니다. 아무래도 파괴해야겠습니다.\n\n가져다주셔서 감사합니다."
+      },
       "summary": "사슴 군주의 장신구를 갈퀴가지 숲에서 물건을 알아볼 만한 사람에게 가져가야 합니다.",
       "title": "사슴 군주의 장신구",
       "translationMetadata": {
@@ -244,6 +397,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -261,6 +424,10 @@
     },
     "plPL": {
       "description": "<Kałuża cuchnącego szlamu zniszczyła posąg jelenia. Nie wiadomo, jak znalazł się tutaj, na dnie jeziora.\r\n\r\nPojedynczy kryształ osadzony w medalionie na jego szyi emanuje niezdrowym zielonym blaskiem. Warto zabrać go do kogoś, kto może znać historię tego pomnika.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Co to jest?",
+        "ac4da6daf830fa24857c": "Poznaję ten kryształ! Posąg Malorne’a zdobił niegdyś jego sanktuarium, ale demony musiały zrzucić go ze zbocza góry podczas wojny.\n\nTo niefortunne; kryształ wchłonął spaczoną energię i zawiera teraz złowrogą moc. Obawiam się, że muszę go zniszczyć.\n\nDziękuję, że mi go przynosisz."
+      },
       "summary": "Zabierz błyskotkę Władcy Jeleni do kogoś w Talonbranch Glade, kto może coś o niej wiedzieć.",
       "title": "Błyskotka Władcy Jeleni",
       "translationMetadata": {
@@ -270,6 +437,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d94af4a19ba64a37a18c641f1d627a2275a4801f4c1c913b8cbd94595ae7aea3"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -288,6 +465,10 @@
     },
     "ptBR": {
       "description": "<A poça de visgo fétido corroeu a estátua do cervo. Não está claro como ela veio parar aqui, no fundo do lago.\r\n\r\nUma única pedra de cristal engastada num medalhão em volta do pescoço carrega um brilho verde e macabro. Vale a pena levá-la a alguém que talvez conheça a história deste monumento.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "O que é isso?",
+        "ac4da6daf830fa24857c": "Reconheço este cristal! A estátua de Malorne adornava seu santuário, mas os demônios devem tê-la jogado montanha abaixo durante a guerra.\n\nÉ uma pena; o cristal absorveu energia vil e agora contém um poder nefasto. Receio que deva destruí-lo.\n\nObrigado por trazê-lo até mim."
+      },
       "summary": "Take the Stag Lord's Bauble to someone in Talonbranch Glade who may know about it.",
       "title": "Badulaque do Lorde Cervo",
       "translationMetadata": {
@@ -296,6 +477,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -313,6 +504,10 @@
     },
     "ruRU": {
       "description": "<Погруженная в зловонную слизь статуя оленя обветшала. Непонятно, как она оказалась на дне озера.\r\n\r\nКристалл, вставленный в медальон на шее изваяния, источает зловещее зеленое сияние. Стоит отнести его тому, кто может знать историю этого памятника.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Что это?",
+        "ac4da6daf830fa24857c": "Я узнаю этот кристалл! Статуя Малорна когда-то украшала его святилище, но демоны, должно быть, сбросили ее с горы во время войны.\n\nК несчастью, кристалл впитал энергию Скверны и теперь таит в себе пагубную силу. Боюсь, мне придется его уничтожить.\n\nСпасибо, что принесли его мне."
+      },
       "summary": "Отнесите украшение владыки-оленя на Поляну Когтистых Ветвей и найдите того, кто может что-то о нем знать.",
       "title": "Украшение владыки-оленя",
       "translationMetadata": {
@@ -321,6 +516,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -338,6 +543,10 @@
     },
     "svSE": {
       "description": "<Dammen med stinkande slem har frätt på hjortstatyn. Det är oklart hur den hamnade på sjöns botten.\r\n\r\nEn ensam kristallsten i en medaljong runt halsen lyser osunt grön. Den är värd att ta till någon som kan känna monumentets historia.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Vad är det där?",
+        "ac4da6daf830fa24857c": "Jag känner igen den här kristallen! Statyn av Malorne prydde en gång hans helgedom, men demonerna måste ha kastat ner den från berget under kriget.\n\nDet är olyckligt; kristallen har absorberat felenergi och bär nu på en osund kraft. Jag är rädd att jag måste förstöra den.\n\nTack för att du förde den till mig."
+      },
       "summary": "För hjortherrens prydnad till någon i Talonbranch Glade som kan känna till den.",
       "title": "Hjortherrens smycke",
       "translationMetadata": {
@@ -347,6 +556,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d94af4a19ba64a37a18c641f1d627a2275a4801f4c1c913b8cbd94595ae7aea3"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -365,6 +584,10 @@
     },
     "trTR": {
       "description": "<Kokuşmuş balçık havuzu geyik heykelini aşındırmış. Buraya, gölün dibine nasıl geldiği belirsiz.\r\n\r\nBoynundaki madalyona yerleştirilmiş tek bir kristal taş, sağlıksız yeşil bir parıltı taşıyor. Bu anıtın tarihini bilebilecek birine götürmeye değer.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Bu nedir?",
+        "ac4da6daf830fa24857c": "Bu kristali tanıyorum! Malorne’un heykeli bir zamanlar mabedini süslüyordu, ama iblisler savaş sırasında onu dağın yamacından aşağı atmış olmalı.\n\nNe yazık ki kristal fel enerjisi emmiş ve artık uğursuz bir güç barındırıyor. Korkarım onu yok etmeliyim.\n\nBunu bana getirdiğin için teşekkürler."
+      },
       "summary": "Geyik Lordunun Süsü'nü Talonbranch Glade'de onu tanıyabilecek birine götür.",
       "title": "Geyik Lordunun Süsü",
       "translationMetadata": {
@@ -374,6 +597,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d94af4a19ba64a37a18c641f1d627a2275a4801f4c1c913b8cbd94595ae7aea3"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -392,6 +625,10 @@
     },
     "ukUA": {
       "description": "<Калюжа смердючого слизу роз'їла статую оленя. Незрозуміло, як вона опинилася тут, на дні озера.\r\n\r\nЄдиний кристалічний камінь у медальйоні на її шиї відливає нездоровим зеленим сяйвом. Варто віднести його тому, хто може знати історію цієї пам'ятки.>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "Що це?",
+        "ac4da6daf830fa24857c": "Я впізнаю цей кристал! Статуя Малорна колись прикрашала його святилище, але демони, мабуть, скинули її з гори під час війни.\n\nНа жаль, кристал увібрав енергію скверни й тепер містить згубну силу. Боюся, я мушу його знищити.\n\nДякую, що приніс його мені."
+      },
       "summary": "Віднесіть прикрасу Повелителя Оленів комусь у Talonbranch Glade, хто може щось про неї знати.",
       "title": "Прикраса оленячого владики",
       "translationMetadata": {
@@ -401,6 +638,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "d94af4a19ba64a37a18c641f1d627a2275a4801f4c1c913b8cbd94595ae7aea3"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -419,6 +666,10 @@
     },
     "zhCN": {
       "description": "<恶臭的软泥池已经严重侵蚀了这座雄鹿雕像。真不知道它是怎么流落到湖底的。\r\n\r\n雕像颈部的坠饰上嵌着一颗水晶石，正泛着令人不安的邪异绿光。或许应该把它带给了解这座纪念物历史的人看看。>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "那是什么？",
+        "ac4da6daf830fa24857c": "我认得这块水晶！玛洛恩的雕像曾装饰着他的神殿，但恶魔一定是在战争期间将它从山上扔了下去。\n\n不幸的是，这块水晶吸收了邪能，如今蕴藏着一股邪恶的力量。恐怕我必须摧毁它。\n\n谢谢你把它带给我。"
+      },
       "summary": "把雄鹿领主的小饰品交给刺枝林地里可能了解它来历的人。",
       "title": "雄鹿领主的小饰品",
       "translationMetadata": {
@@ -427,6 +678,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -444,6 +705,10 @@
     },
     "zhTW": {
       "description": "<一池惡臭的爛泥腐蝕了雄鹿雕像。已經無法得知這尊雕像是如何沉到池子裡的。\r\n\r\n它的脖子上戴著一枚鑲有水晶的勳章，水晶還散發著不祥的綠色光芒。看來該把它拿給或許知道這紀念碑歷史的人，然後跟他聊聊了。>",
+      "dialogue": {
+        "9bc0dd3b35e285effcdf": "那是什麼？",
+        "ac4da6daf830fa24857c": "我認得這塊水晶！瑪洛恩的雕像曾裝飾著他的聖所，但惡魔一定是在戰爭期間將它從山上扔了下去。\n\n不幸的是，這塊水晶吸收了魔化能量，如今蘊藏著一股邪惡的力量。恐怕我必須摧毀它。\n\n謝謝你把它帶給我。"
+      },
       "summary": "Take the Stag Lord's Bauble to someone in Talonbranch Glade who may know about it.",
       "title": "雄鹿王的飾物",
       "translationMetadata": {
@@ -452,6 +717,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.9bc0dd3b35e285effcdf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ac4da6daf830fa24857c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

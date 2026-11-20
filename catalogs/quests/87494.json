@@ -1,8 +1,30 @@
 {
   "areaId": 490,
+  "dialogueContexts": {
+    "64420c5cfa2fa965c2a9": {
+      "contributionId": 108317,
+      "lineId": "q:87494:progress",
+      "npcId": 9619,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f5b06978490cf5934cf5": {
+      "contributionId": 108265,
+      "lineId": "q:87494:complete",
+      "npcId": 9619,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Tahle šupina se leskne a duhově třpytí o něco víc než ostatní, jako by v ní byly zapuštěné drobné částečky krystalu.\n\nMožná se v tom vyzná Torwa Pathfinder.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro je příroda ve své nejdivočejší a nejnespoutanější podobě.",
+        "f5b06978490cf5934cf5": "Jak zvláštní šupinu jsi našel!\n\nZdá se, že tvor pozřel tolik krystalového prachu, že začal pronikat do jeho šupin. Nejspíš se krmil poblíž rozbitého krystalu, kde se prach dostal do rostlin a s nimi i do jeho těla.\n\nDomnívám se, že větší dávky by měly značný a viditelný účinek. Toto zvíře mělo štěstí, že ho nepozřelo příliš mnoho.\n\nPřidám ji do své sbírky."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Dette skæl er lidt mere reflekterende og iriserende end de andre, som om det er indlejret med små krystalpartikler.\r\n\r\nTorwa Pathfinder kan måske få noget ud af det.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro er naturen, når den er allermest vild og utæmmet.",
+        "f5b06978490cf5934cf5": "Sikke et mærkeligt skæl, du har fundet!\n\nDet ser ud til, at væsnet har indtaget så meget krystalstøv, at det begyndte at gennemtrænge dets skællag. Det skyldes nok, at det har spist nær en knust krystal, hvor støvet trængte ind i planterne og derefter blev indtaget.\n\nJeg formoder, at større mængder ville have en gennemgribende og synlig virkning. Dette dyr var heldigt ikke at indtage for meget.\n\nJeg føjer det til min samling."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "800a519746eb5a642fde8dc28790c20e3d2c76a224338a716b9add0bf85a2c62"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Diese Schuppe spiegelt und schillert etwas mehr als die anderen, als würden winzige Kristallpartikel darin stecken.\r\n\r\nVielleicht kann sich Torwa Pathfinder einen Reim darauf machen.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Nirgendwo ist die Natur wilder und ungezähmter als in Un'Goro.",
+        "f5b06978490cf5934cf5": "Was für eine seltsame Schuppe Ihr da gefunden habt!\n\nAnscheinend muss die Kreatur so viel Kristallstaub geschluckt haben, dass er begonnen hat, ihre Schuppen zu durchdringen. Das kommt vermutlich daher, dass sie in der Nähe eines zerbrochenen Kristalls nach Nahrung gesucht hat. Dort hat sich der Staub in den Pflanzen abgelagert und wurde so mitgefressen.\n\nIch vermute, dass größere Mengen weitreichende und sichtbare Auswirkungen hätten. Dieses Tier hatte Glück, dass es nicht zu viel davon gefressen hat.\n\nDie Schuppe kommt in meine Sammlung."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -121,6 +183,10 @@
     },
     "enUS": {
       "description": "This scale is slightly more reflective and iridescent than the others, as if it's embedded with tiny particles of crystal.\r\n\r\nTorwa Pathfinder might be able to make something of this.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un'goro is nature at its wildest and most untamed.",
+        "f5b06978490cf5934cf5": "What a strange scale you've found!\n\nIt looks like the creature must have ingested so much crystal dust that it started suffusing its scale layer. This is probably a result of feeding from an area near a broken crystal, where the dust made its way into the plants, and then was ingested.\n\nI suspect that larger doses would have a profound and visible effect. This beast was fortunate enough to avoid ingesting too much.\n\nI'll add this to my collection."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -136,6 +202,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Esta escama es un poco más reflectante e iridiscente que las demás, como si tuviera incrustadas unas diminutas partículas de cristales.\r\n\r\nPuede que Torwa Abrecaminos pueda averiguar algo sobre ella.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "La naturaleza de Un'Goro es lo más salvaje e indómito que hay.",
+        "f5b06978490cf5934cf5": "¡Has encontrado una escama de lo más extraña!\n\nParece que la criatura debió de ingerir tanto polvo de cristal que este empezó a afectar a sus escamas. Probablemente sea consecuencia de haberse alimentado en una zona cercana a un cristal roto. El polvo acabaría por llegar a las plantas y, posteriormente, fue ingerido.\n\nSospecho que unas dosis mayores tendrían un efecto profundo y visible. Esta bestia tuvo suerte de no ingerir demasiado.\n\nAñadiré esto a mi colección."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -197,6 +291,10 @@
     },
     "esMX": {
       "description": "Esta escama es más reflectante e iridiscente que las demás, como si estuviera incrustada con pequeñas partículas de cristal.\r\n\r\nTorwa Abrecaminos podría saber más al respecto.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro es la naturaleza en su estado más salvaje e indómito.",
+        "f5b06978490cf5934cf5": "¡Qué escama tan extraña has encontrado!\n\nParece que la criatura ingirió tanto polvo de cristal que este comenzó a impregnar sus escamas. Probablemente se alimentó cerca de un cristal roto, donde el polvo llegó a las plantas y la criatura lo ingirió al comerlas.\n\nSospecho que dosis mayores tendrían un efecto profundo y visible. Esta bestia tuvo la suerte de no ingerir demasiado.\n\nLa añadiré a mi colección."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -212,6 +310,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -235,6 +343,10 @@
     },
     "frFR": {
       "description": "Cette écaille est légèrement plus réfléchissante et irisée que les autres, comme si elle était incrustée de minuscules particules cristallines.\r\n\r\nTorwa le Guide saura peut-être en tirer quelque chose.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro, c’est la nature dans ce qu’elle a de plus sauvage et indompté.",
+        "f5b06978490cf5934cf5": "Quelle étrange écaille tu as trouvée !\n\nOn dirait que la créature a ingéré tant de poussière de cristal que celle-ci a commencé à imprégner ses écailles. Elle s’est probablement nourrie près d’un cristal brisé : la poussière s’est déposée sur les plantes qu’elle a ensuite mangées.\n\nJe soupçonne que des doses plus importantes auraient un effet profond et visible. Cette bête a eu la chance de ne pas en ingérer trop.\n\nJe vais l’ajouter à ma collection."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -250,6 +362,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -273,6 +395,10 @@
     },
     "hrHR": {
       "description": "Ova ljuska odražava nešto više svjetlosti i prelijeva se više od ostalih, kao da su u nju ugrađene sitne čestice kristala.\r\n\r\nTorwa Pathfinder možda bi mogao nešto zaključiti iz ovoga.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro je priroda u svom najdivljijem i neukroćenom obliku.",
+        "f5b06978490cf5934cf5": "Kakvu si čudnu ljusku pronašao!\n\nČini se da je stvorenje progutalo toliko kristalne prašine da je počela prožimati njegove ljuske. Vjerojatno se hranilo blizu razbijenog kristala, gdje je prašina dospjela u biljke koje je zatim pojelo.\n\nSumnjam da bi veće količine imale snažan i vidljiv učinak. Ova je zvijer imala sreće što nije progutala previše.\n\nDodat ću je svojoj zbirci."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -289,6 +415,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "800a519746eb5a642fde8dc28790c20e3d2c76a224338a716b9add0bf85a2c62"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -312,6 +448,10 @@
     },
     "itIT": {
       "description": "Questa scaglia è leggermente più riflettente e iridescente delle altre, come se contenesse minuscole particelle di cristallo.\r\n\r\nTorwa Pathfinder potrebbe riuscire a capirci qualcosa.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un'goro è la natura nella sua forma più selvaggia e indomita.",
+        "f5b06978490cf5934cf5": "Che strana scaglia hai trovato!\n\nSembra che la creatura abbia ingerito così tanta polvere di cristallo che ha cominciato a impregnarle lo strato di scaglie. Probabilmente si è nutrita in una zona vicina a un cristallo rotto, dove la polvere è finita nelle piante e poi è stata ingerita.\n\nSospetto che dosi più forti avrebbero effetti profondi e visibili. Questa bestia è stata abbastanza fortunata da non ingerirne troppa.\n\nLa aggiungerò alla mia collezione."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -328,6 +468,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "800a519746eb5a642fde8dc28790c20e3d2c76a224338a716b9add0bf85a2c62"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -351,6 +503,10 @@
     },
     "koKR": {
       "description": "이 비늘은 다른 비늘보다 빛을 조금 더 강하게 반사하며 무지갯빛이 감돕니다. 아주 작은 수정 입자가 박혀 있는 것 같습니다.\r\n\r\n토르와 패스파인더라면 이게 어떻게 된 건지 알아낼 수 있을지도 모릅니다.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "운고로는 자연이 가장 거칠고 길들지 않은 모습을 간직한 곳이지.",
+        "f5b06978490cf5934cf5": "참 희한한 비늘을 찾아오셨군요!\n\n이 생물은 수정 가루를 너무 많이 먹어서 가루가 비늘층에 스며들기 시작한 것 같습니다. 아마 깨진 수정 근처에서 먹이를 먹다가 가루가 묻은 식물을 삼켰겠지요.\n\n더 많은 양을 먹었다면 눈에 띄는 심각한 영향이 있었을 겁니다. 이 짐승은 다행히 너무 많이 먹지는 않았군요.\n\n제 수집품에 추가하겠습니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -366,6 +522,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -389,6 +555,10 @@
     },
     "plPL": {
       "description": "Ta łuska odbija nieco więcej światła i mieni się mocniej niż pozostałe, jakby zawierała maleńkie cząsteczki kryształu.\r\n\r\nTorwa Pathfinder może coś z tego wywnioskować.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro to natura w swojej najdzikszej i najbardziej nieokiełznanej postaci.",
+        "f5b06978490cf5934cf5": "Co za dziwną łuskę udało ci się znaleźć!\n\nWygląda na to, że stworzenie połknęło tak dużo kryształowego pyłu, iż zaczął on przenikać jego łuski. Zapewne żerowało w pobliżu rozbitego kryształu, gdzie pył dostał się do roślin, które następnie zjadło.\n\nPodejrzewam, że większe dawki wywołałyby poważny i widoczny efekt. Ta bestia miała szczęście, że nie połknęła go zbyt wiele.\n\nDodam ją do mojej kolekcji."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -405,6 +575,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "800a519746eb5a642fde8dc28790c20e3d2c76a224338a716b9add0bf85a2c62"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -428,6 +608,10 @@
     },
     "ptBR": {
       "description": "Esta escama é ligeiramente mais reflexiva e iridescente que as demais, como se houvesse partículas minúsculas de cristais incrustadas nela.\r\n\r\nTorwa Mateiro talvez saiba o que fazer com isto.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro é a natureza em seu estado mais selvagem e indomável.",
+        "f5b06978490cf5934cf5": "Que escama estranha você encontrou!\n\nParece que a criatura ingeriu tanto pó de cristal que ele começou a impregnar suas escamas. Provavelmente ela se alimentou perto de um cristal quebrado, onde o pó chegou às plantas e foi ingerido com elas.\n\nSuspeito que doses maiores teriam um efeito profundo e visível. Essa fera teve sorte de não ingerir demais.\n\nVou acrescentá-la à minha coleção."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -443,6 +627,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -466,6 +660,10 @@
     },
     "ruRU": {
       "description": "Эта чешуйка отражает свет и переливается чуть сильнее, чем остальные, словно в ней есть вкрапления мельчайших частиц кристаллов.\r\n\r\nЗемлепроходец Торва, возможно, сможет изучить этот предмет.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Ун’Горо – это природа в ее самом диком и необузданном виде.",
+        "f5b06978490cf5934cf5": "Какую странную чешуйку ты нашел!\n\nПохоже, существо проглотило столько кристаллической пыли, что она начала проникать в его чешую. Вероятно, оно кормилось возле разбитого кристалла, где пыль попала на растения, а затем в его организм.\n\nДумаю, большие дозы оказали бы сильное и заметное воздействие. Этому зверю повезло, что он не проглотил слишком много.\n\nДобавлю ее в свою коллекцию."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -481,6 +679,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -506,6 +714,10 @@
     },
     "svSE": {
       "description": "Det här fjället är lite mer speglande och skimrande än de andra, som om små kristallpartiklar sitter inbäddade i det.\r\n\r\nTorwa Pathfinder kanske kan komma fram till något.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro är naturen i sin vildaste och mest otämjda form.",
+        "f5b06978490cf5934cf5": "Vilket märkligt fjäll du har hittat!\n\nDet verkar som om varelsen fick i sig så mycket kristalldamm att det började genomsyra dess fjäll. Den åt troligen nära en krossad kristall, där dammet hamnade i växterna och sedan åts upp.\n\nJag misstänker att större mängder skulle ha en djupgående och synlig effekt. Djuret hade tur som inte fick i sig för mycket.\n\nJag lägger det till min samling."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -522,6 +734,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "800a519746eb5a642fde8dc28790c20e3d2c76a224338a716b9add0bf85a2c62"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -545,6 +767,10 @@
     },
     "trTR": {
       "description": "Bu pul diğerlerinden biraz daha yansıtıcı ve yanardöner; sanki içine küçücük kristal parçacıkları gömülmüş.\n\nTorwa Pathfinder bundan bir anlam çıkarabilir.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Un’Goro, doğanın en vahşi ve dizginlenmemiş hâlidir.",
+        "f5b06978490cf5934cf5": "Ne tuhaf bir pul bulmuşsun!\n\nGörünüşe göre yaratık o kadar çok kristal tozu yutmuş ki toz pullarına işlemeye başlamış. Muhtemelen kırık bir kristalin yakınında beslenmiş; toz bitkilere karışmış, o da bitkileri yemiş.\n\nDaha büyük miktarların ciddi ve görünür bir etkisi olacağından şüpheleniyorum. Bu hayvan çok fazla yutmadığı için şanslıymış.\n\nBunu koleksiyonuma ekleyeceğim."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -561,6 +787,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "800a519746eb5a642fde8dc28790c20e3d2c76a224338a716b9add0bf85a2c62"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -584,6 +820,10 @@
     },
     "ukUA": {
       "description": "Ця луска трохи краще відбиває світло й переливається більше за інші, наче в неї вкраплено крихітні частинки кристала.\r\n\r\nМожливо, Torwa Pathfinder зможе щось про неї сказати.",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "Ун’Ґоро — це природа в її найдикішому й неприборканому вигляді.",
+        "f5b06978490cf5934cf5": "Яку дивну луску ти знайшов!\n\nСхоже, істота проковтнула стільки кристалічного пилу, що він почав проникати в її луску. Ймовірно, вона харчувалася біля розбитого кристала, де пил потрапив на рослини, а потім і до її організму.\n\nГадаю, більші дози мали б сильний і помітний вплив. Цьому звірові пощастило не проковтнути надто багато.\n\nДодам її до своєї колекції."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -600,6 +840,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "800a519746eb5a642fde8dc28790c20e3d2c76a224338a716b9add0bf85a2c62"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -623,6 +873,10 @@
     },
     "zhCN": {
       "description": "这块鳞片比其他的更加反光，闪烁着虹彩般的光泽，仿佛里面镶嵌着细小的水晶颗粒。\r\n\r\n托尔瓦·寻路者或许能看出点名堂。",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "安戈洛的自然最为狂野，未受驯服。",
+        "f5b06978490cf5934cf5": "你找到的鳞片真奇怪！\n\n看来这只生物摄入了大量水晶粉尘，以至于粉尘开始渗入它的鳞片。它大概是在一块破碎水晶附近觅食，粉尘落到植物上，又被它吃了下去。\n\n我猜，更大的剂量会产生明显而深远的影响。这只野兽很幸运，没有摄入太多。\n\n我要把这片鳞片加入我的收藏。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -638,6 +892,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -661,6 +925,10 @@
     },
     "zhTW": {
       "description": "這個鱗片的反射和光澤稍微勝過其他鱗片，彷彿上面鑲嵌著微小的水晶粒子。\r\n\r\n托爾瓦‧尋路者或許能讓這東西派上用場。",
+      "dialogue": {
+        "64420c5cfa2fa965c2a9": "安戈洛的自然最為狂野，未受馴服。",
+        "f5b06978490cf5934cf5": "你找到的鱗片真奇怪！\n\n看來這隻生物攝入了大量水晶粉塵，以至於粉塵開始滲入牠的鱗片。牠大概是在一塊破碎水晶附近覓食，粉塵落到植物上，又被牠吃了下去。\n\n我猜，更大的劑量會產生明顯而深遠的影響。這隻野獸很幸運，沒有攝入太多。\n\n我要把這片鱗片加入我的收藏。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -676,6 +944,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.64420c5cfa2fa965c2a9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f5b06978490cf5934cf5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

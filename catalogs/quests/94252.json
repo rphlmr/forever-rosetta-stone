@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "04b0ed9476e9972dc8e6": {
+      "contributionId": 110881,
+      "lineId": "q:94252:progress",
+      "npcId": 4201,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "18ae9a9961dfa2f82523": {
+      "contributionId": 110878,
+      "lineId": "q:94252:complete",
+      "npcId": 4201,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Red Woolen Boots a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Nazdar!",
+        "18ae9a9961dfa2f82523": "Když jsem pracoval pro Venture Co., musel jsem tyhle boty nosit celý den, každý den. Myslel jsem, že si je ve vlastní chatrči budu moct sundat a udělat si pohodlí, ale vzpomněl jsem si na to, až když jsem všude nanosil bláto.\n\nTyhle boty? Vypadají mnohem pohodlněji. Hned po běhání naboso nejlepší věc!"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Red Woolen Boots",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Red Woolen Boots. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Halløj!",
+        "18ae9a9961dfa2f82523": "Da jeg arbejdede for Venture Co., skulle jeg have de støvler på hele dagen, hver dag. Jeg troede, jeg kunne tage dem af og slappe af i min egen hytte, men jeg kom først i tanke om det, efter at jeg havde slæbt mudder ind overalt.\n\nDe her støvler? De ser meget mere behagelige ud. Det næstbedste efter at løbe barfodet rundt!"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Røde uldstøvler",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Paar roter Wollstiefel und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Hey!",
+        "18ae9a9961dfa2f82523": "Als ich noch für die Venture Company gearbeitet habe, musste ich diese Schuhe jeden Tag den ganzen Tag lang tragen. Ich dachte, ich könnte sie ausziehen und es mir in meiner eigenen Hütte gemütlich machen, aber das ist mir erst eingefallen, nachdem ich überall Schlamm verteilt hatte.\n\nDiese Stiefel sehen deutlich bequemer aus. Nur barfuß laufen ist schöner!"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Rote Wollstiefel",
       "translationMetadata": {
@@ -82,6 +132,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -98,6 +160,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Red Woolen Boots, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Yo!",
+        "18ae9a9961dfa2f82523": "When I worked for the Venture Co, I had to wear these boots all day, every day. I thought I would be able to take these off and get comfortable in my own hut, but I didn't think of it until after I tracked mud everywhere.\n\nThese boots? They look way more comfortable. Second best thing to running around barefoot!"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Red Woolen Boots",
       "translationMetadata": {
@@ -106,6 +172,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -123,6 +201,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa botas de lana roja e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "¡Eh!",
+        "18ae9a9961dfa2f82523": "Cuando trabajaba para Ventura y Cía., tenía que llevar estas botas todo el día, todos los días. Pensé que podría quitármelas y ponerme cómodo en mi propia choza, pero no caí en ello hasta después de haberlo llenado todo de barro.\n\n¿Estas botas? Parecen mucho más cómodas. ¡Lo mejor después de correr descalzo!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: botas de lana roja",
       "translationMetadata": {
@@ -131,6 +213,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -149,6 +241,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa par de botas de lana roja, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "¡Ey!",
+        "18ae9a9961dfa2f82523": "Cuando trabajaba para Ventura y Cía., tenía que usar estas botas todo el día, todos los días. Pensé que podría quitármelas y ponerme cómodo en mi propia choza, pero no se me ocurrió hasta que llené todo de lodo.\n\n¿Estas botas? Se ven mucho más cómodas. ¡Lo mejor después de andar descalzo!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Botas de lana roja",
       "translationMetadata": {
@@ -157,6 +253,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -174,6 +280,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa bottes rouges en laine, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Salut !",
+        "18ae9a9961dfa2f82523": "Quand je travaillais pour la KapitalRisk, je devais porter ces bottes toute la journée, tous les jours. Je pensais pouvoir les enlever et me mettre à l’aise dans ma propre hutte, mais je n’y ai pensé qu’après avoir mis de la boue partout.\n\nCes bottes-là ? Elles ont l’air bien plus confortables. Juste après courir pieds nus, c’est ce qu’il y a de mieux !"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : bottes rouges en laine",
       "translationMetadata": {
@@ -182,6 +292,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -198,11 +318,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Red Woolen Boots i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Bok!",
+        "18ae9a9961dfa2f82523": "Kad sam radio za Venture Co., morao sam nositi ove čizme cijeli dan, svaki dan. Mislio sam da ću ih moći skinuti i raskomotiti se u vlastitoj kolibi, ali sjetio sam se toga tek nakon što sam posvuda unio blato.\n\nOve čizme? Izgledaju puno udobnije. Odmah iza trčanja bosih nogu!"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: crvene vunene čizme",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -224,6 +358,10 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede: Stivali di lana rossa. Riporta anche informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che questo mandato è trasferibile.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Ehi!",
+        "18ae9a9961dfa2f82523": "Quando lavoravo per la Venture Co, dovevo portare questi stivali tutto il giorno, tutti i giorni. Pensavo di potermeli togliere e mettermi comodo nella mia capanna, ma ci ho pensato solo dopo aver sparso fango dappertutto.\n\nQuesti stivali? Sembrano molto più comodi. La cosa migliore dopo andare in giro scalzi!"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Stivali di Lana Rossa",
       "translationMetadata": {
@@ -232,6 +370,18 @@
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "summary": {
             "origin": "ai",
@@ -250,6 +400,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 붉은색 양모 장화 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "안녕!",
+        "18ae9a9961dfa2f82523": "무역회사에서 일할 때는 매일 온종일 이 장화를 신고 있어야 했어. 내 오두막에서는 벗고 편하게 지낼 수 있을 줄 알았는데, 온 바닥에 진흙을 묻히고 나서야 생각이 났지 뭐야.\n\n이 장화 말이야? 훨씬 편해 보이네. 맨발로 뛰어다니는 것 다음으로 좋겠어!"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 붉은색 양모 장화",
       "translationMetadata": {
@@ -258,6 +412,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -274,11 +438,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Red Woolen Boots oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Cześć!",
+        "18ae9a9961dfa2f82523": "Kiedy pracowałem dla Venture Co., musiałem nosić te buty przez cały dzień, każdego dnia. Myślałem, że we własnej chacie będę mógł je zdjąć i poczuć się swobodnie, ale przypomniałem sobie o tym dopiero wtedy, gdy wszędzie naniosłem błota.\n\nTe buty? Wyglądają na dużo wygodniejsze. Tylko bieganie boso jest lepsze!"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: czerwone wełniane buty",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -300,6 +478,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Botas de Lã Vermelhas, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "E aí!",
+        "18ae9a9961dfa2f82523": "Quando eu trabalhava para a Empreendimentos S.A., tinha que usar estas botas o dia inteiro, todos os dias. Achei que poderia tirá-las e ficar à vontade na minha própria cabana, mas só me lembrei disso depois de espalhar lama por todo lado.\n\nEstas botas? Parecem muito mais confortáveis. Só perde para andar descalço!"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Botas de Lã Vermelhas",
       "translationMetadata": {
@@ -308,6 +490,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -325,6 +517,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa пар красных шерстяных сапог, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Привет!",
+        "18ae9a9961dfa2f82523": "Когда я работал на Торговую компанию, мне приходилось носить эти сапоги целыми днями. Я думал, что в собственной хижине смогу снять их и устроиться поудобнее, но вспомнил об этом только после того, как разнес повсюду грязь.\n\nА эти сапоги? Выглядят гораздо удобнее. Лучше только босиком бегать!"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: красные шерстяные сапоги",
       "translationMetadata": {
@@ -333,6 +529,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -351,11 +557,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Red Woolen Boots. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Tjena!",
+        "18ae9a9961dfa2f82523": "När jag jobbade för Venture Co. var jag tvungen att bära de här stövlarna hela dagen, varje dag. Jag trodde att jag skulle kunna ta av dem och göra det bekvämt för mig i min egen hydda, men jag kom inte på det förrän jag hade dragit in lera överallt.\n\nDe här stövlarna? De ser mycket bekvämare ut. Näst bäst efter att springa barfota!"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Röda ullstövlar",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -378,11 +598,25 @@
     },
     "trTR": {
       "description": "<Soluk mürekkeple yazılmış notta Red Woolen Boots isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Selam!",
+        "18ae9a9961dfa2f82523": "Venture Co. için çalışırken bu çizmeleri her gün, bütün gün giymem gerekiyordu. Kendi kulübemde onları çıkarıp rahat edebileceğimi sanmıştım ama bu ancak her yere çamur taşıdıktan sonra aklıma geldi.\n\nBu çizmeler mi? Çok daha rahat görünüyorlar. Yalınayak koşuşturmaktan sonra en iyisi!"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Red Woolen Boots",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -404,11 +638,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Red Woolen Boots і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "Привіт!",
+        "18ae9a9961dfa2f82523": "Коли я працював на Торгову компанію, мені доводилося носити ці чоботи цілими днями. Я думав, що у власній хатині зможу їх зняти й влаштуватися зручніше, але згадав про це лише після того, як розніс усюди багнюку.\n\nА ці чоботи? Виглядають набагато зручнішими. Краще тільки бігати босоніж!"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Червоні вовняні черевики",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -432,6 +680,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa双红色毛纺靴，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "哟！",
+        "18ae9a9961dfa2f82523": "我为风险投资公司工作时，每天都得从早到晚穿着这双靴子。我本以为在自己的小屋里能脱掉靴子，舒服一下，可直到把泥巴踩得到处都是才想起来。\n\n这双靴子？看起来舒服多了。除了光脚跑来跑去，就数它最好！"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：红色毛纺靴",
       "translationMetadata": {
@@ -440,6 +692,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -456,6 +718,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa雙紅色毛紡靴，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "04b0ed9476e9972dc8e6": "唷！",
+        "18ae9a9961dfa2f82523": "我為創投公司工作時，每天都得從早到晚穿著這雙靴子。我本以為在自己的小屋裡能脫掉靴子，舒服一下，可直到把泥巴踩得到處都是才想起來。\n\n這雙靴子？看起來舒服多了。除了光腳跑來跑去，就數它最好！"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：紅色毛紡靴",
       "translationMetadata": {
@@ -464,6 +730,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.04b0ed9476e9972dc8e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.18ae9a9961dfa2f82523": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

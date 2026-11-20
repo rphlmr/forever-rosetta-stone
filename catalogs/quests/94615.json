@@ -1,8 +1,30 @@
 {
   "areaId": 16591,
+  "dialogueContexts": {
+    "960adcdf3f00e9df76cf": {
+      "contributionId": 82698,
+      "lineId": "q:94615:progress",
+      "npcId": 258317,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "e53e626ce056c7f43af7": {
+      "contributionId": 82634,
+      "lineId": "q:94615:complete",
+      "npcId": 258317,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Nemám ponětí, co se stalo s našima koňma. Jednou ráno jsem vstal, že je nakrmím, a byli pryč, jen tak.\n\nŽivot za Farholde je trochu drsnější. Mohlo je dostat cokoli – zvířata, murloci, orkové, co tě napadne.\n\nJestli chceme zúžit seznam podezřelých, měli bychom prohledat okolí stájí a najít nějaký stopy.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Stejně jako starý Demar se nemůžu dočkat, až zjistíme, co se koním stalo. Koneckonců mě živí.",
+        "e53e626ce056c7f43af7": "Já to věděl! Jsou to ti zatracení kojoti!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Jeg aner ikke, hvad der skete med vores heste. Jeg stod op en morgen for at fodre dem, og så var de alle væk, bare sådan.\r\n\r\nLivet uden for Farholde er lidt hårdere. Hvad som helst kan have taget dem, dyr, murlocs, orcer, hvad du vil.\r\n\r\nHvis vi vil indsnævre listen over mistænkte, bør vi lede efter spor omkring staldene.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Jeg er lige så ivrig som gamle Demar efter at finde ud af, hvad der skete med hestene. De er trods alt mit levebrød.",
+        "e53e626ce056c7f43af7": "Jeg vidste det! Det er de forbandede prærieulve!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ca09110b28284aca5f64bd37e4494f68479b2cb3e1e34671b6129c81a19176df"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Ich habe keine Ahnung, was mit unseren Pferden passiert ist. Ich bin eines Tages aufgestanden, um sie zu füttern, und sie waren weg. Einfach so.\r\n\r\nDas Leben außerhalb von Farholde ist rau. Alles Mögliche könnte ihnen zugestoßen sein. Wilde Tiere, Murlocs, Orcs, was Euch noch einfällt.\r\n\r\nWenn wir die Liste der Schuldigen eingrenzen wollen, sollten wir in den Ställen nach Hinweisen suchen.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Ich will ebenso dringend wie der alte Demar wissen, was mit den Pferden passiert ist. Sie sind immerhin mein Lebensunterhalt.",
+        "e53e626ce056c7f43af7": "Ich wusste es! Diese verflixten Kojoten!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -121,6 +183,10 @@
     },
     "enUS": {
       "description": "I've got no idea what happened to our horses. I got up one morning to feed 'em and they were all gone, just like that.\r\n\r\nLife outside Farholde's a bit rougher. Anything could've got 'em--animals, murlocs, orcs, you name it.\r\n\r\nIf we wanna narrow down our list of culprits, we oughta search around the stables for clues.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "I'm itching just as much as ol' Demar to find out what happened to the horses. They're how I make my living, after all.",
+        "e53e626ce056c7f43af7": "I knew it! It's those dang coyotes!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -136,6 +202,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Ni idea de qué les ha pasado a nuestros caballos. Una mañana me levanté para darles de comer, pero se habían esfumado.\r\n\r\nLa vida fuera de Farholde es más complicada. Han podido ser pasto de otros animales, múrlocs, orcos...\r\n\r\nDebemos buscar pistas en los establos para acotar la lista de culpables.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Tengo tantas ganas como el viejo Demar de averiguar qué les pasó a los caballos. Al fin y al cabo, son mi sustento.",
+        "e53e626ce056c7f43af7": "¡Lo sabía! ¡Son esos malditos coyotes!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -199,6 +291,10 @@
     },
     "esMX": {
       "description": "No tengo idea de qué pasó con nuestros caballos. Un día me desperté para alimentarlos y simplemente ya no estaban, no había ninguno.\r\n\r\nLa vida fuera de Farholde es un poco más difícil. Puede haber sido cualquier cosa: animales, múrlocs, orcos, lo que sea.\r\n\r\nSi queremos reducir nuestra lista de sospechosos, hay que buscar pistas por los establos.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Tengo tantas ganas como el viejo Demar de averiguar qué les pasó a los caballos. Al fin y al cabo, son mi sustento.",
+        "e53e626ce056c7f43af7": "¡Lo sabía! ¡Son esos malditos coyotes!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -214,6 +310,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -237,6 +343,10 @@
     },
     "frFR": {
       "description": "J’ai aucune idée de ce qui est arrivé à nos ch’vaux. Je m’suis levé un matin pour les nourrir et ils avaient tous disparu. Juste comme ça.\r\n\r\nLa vie en dehors de Fort-Lointain est un peu plus rude. Ils auraient pu se retrouver la proie de tout un tas de trucs : animaux, Murlocs, Orcs, faites votre choix.\r\n\r\nSi vous voulez réduire la liste de coupables, nous d’vrons chercher des indices autour des écuries.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "J’ai autant hâte que le vieux Demar de découvrir ce qui est arrivé aux chevaux. Après tout, c’est grâce à eux que je gagne ma vie.",
+        "e53e626ce056c7f43af7": "Je le savais ! Ce sont ces fichus coyotes !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +362,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -276,6 +396,10 @@
     },
     "hrHR": {
       "description": "Nemam pojma što se dogodilo našim konjima. Jednog sam jutra ustao da ih nahranim i svi su nestali, samo tako.\r\n\r\nŽivot izvan Farholdea malo je grublji. Moglo ih je odvesti bilo što: životinje, murloci, orkovi, što god hoćeš.\r\n\r\nAko želimo suziti popis krivaca, trebali bismo potražiti tragove oko staja.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Jednako kao i stari Demar jedva čekam saznati što se dogodilo konjima. Ipak od njih živim.",
+        "e53e626ce056c7f43af7": "Znao sam! To su ti prokleti kojoti!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -292,6 +416,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ca09110b28284aca5f64bd37e4494f68479b2cb3e1e34671b6129c81a19176df"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -315,6 +449,10 @@
     },
     "itIT": {
       "description": "Non ho idea di cosa sia successo ai nostri cavalli. Una mattina mi sono alzato per dar loro da mangiare ed erano tutti spariti, così, di colpo.\r\n\r\nLa vita fuori da Farholde è un po' più dura. Potrebbe averli presi qualunque cosa: animali, murloc, orchi, chi più ne ha più ne metta.\r\n\r\nSe vogliamo restringere la lista dei colpevoli, dovremmo cercare indizi intorno alle stalle.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Muoio dalla voglia di scoprire cos'è successo ai cavalli, proprio come il vecchio Demar. Dopotutto, è con loro che mi guadagno da vivere.",
+        "e53e626ce056c7f43af7": "Lo sapevo! Sono quei maledetti coyote!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -331,6 +469,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ca09110b28284aca5f64bd37e4494f68479b2cb3e1e34671b6129c81a19176df"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -354,6 +504,10 @@
     },
     "koKR": {
       "description": "말들에게 무슨 일이 있었는지 전혀 모르겠습니다. 어느 날 아침 먹이를 주러 나갔더니 전부 사라졌어요. 눈 깜짝할 사이에 말입니다.\r\n\r\n파홀드 밖의 삶은 좀 험악하죠. 동물이든 멀록이든 오크든 뭐든 말을 끌고 갔을 수 있습니다.\r\n\r\n범인을 좁혀 보려면 마구간 주변에서 단서를 찾아봐야 합니다.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "말들에게 무슨 일이 생겼는지 나도 늙은 데마르만큼이나 궁금해 죽겠어. 그 녀석들 덕에 먹고사는 거니까.",
+        "e53e626ce056c7f43af7": "그럴 줄 알았어! 그 빌어먹을 코요테들이야!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -369,6 +523,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -394,6 +558,10 @@
     },
     "plPL": {
       "description": "Nie mam pojęcia, co stało się z końmi. Pewnego ranka wstałem je nakarmić i wszystkie zniknęły, tak po prostu.\r\n\r\nŻycie poza Farholde jest trochę trudniejsze. Mogło je zabrać cokolwiek: zwierzęta, murloki, orkowie, co tylko chcesz.\r\n\r\nJeśli chcemy zawęzić listę winowajców, powinniśmy poszukać wskazówek przy stajniach.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Tak samo jak stary Demar nie mogę się doczekać, aż dowiem się, co stało się z końmi. W końcu to dzięki nim zarabiam na życie.",
+        "e53e626ce056c7f43af7": "Wiedziałem! To te przeklęte kojoty!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -410,6 +578,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ca09110b28284aca5f64bd37e4494f68479b2cb3e1e34671b6129c81a19176df"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -433,6 +611,10 @@
     },
     "ptBR": {
       "description": "Eu não faço ideia do que aconteceu com nossos cavalos. Um dia eu acordei, fui alimentar eles e todos tinham sumido. Simples assim.\r\n\r\nA vida fora de Ermoforte é difícil. Qualquer coisa pode ter pegado eles... animais, murlocs, orcs, qualquer coisa mesmo.\r\n\r\nSe quer encurtar a lista de suspeitos, é melhor procurar pistas nos estábulos.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Eu quero descobrir o que aconteceu com os cavalos tanto quanto o velho Demar. Afinal de contas, eles são meu ganha-pão.",
+        "e53e626ce056c7f43af7": "Eu sabia! São aqueles coiotes malditos!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -448,6 +630,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "a05a8331cfcd85faca30ef2f0b397858e954fe0887550575c40dcb6e3c4bea4c"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -471,6 +664,10 @@
     },
     "ruRU": {
       "description": "Ума не приложу, куда подевались наши лошади. Я встал поутру, чтобы их покормить, а они все как сквозь землю провалились.\r\n\r\nЗдесь жизнь посуровей, чем в стенах Фархолда. Их мог сцапать кто угодно: звери, мурлоки, орки...\r\n\r\nЧтобы сузить список подозреваемых, надо поискать зацепки в конюшнях.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Я хочу узнать, что стряслось с лошадьми, не меньше старины Демара. В конце концов, именно на них я зарабатываю на хлеб.",
+        "e53e626ce056c7f43af7": "Так и знал! Это все проклятые койоты!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -486,6 +683,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "923c65b4e9ffb1220a3db189b4971c0b37e435a446032cabab3faf6cf39c98a0"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "923c65b4e9ffb1220a3db189b4971c0b37e435a446032cabab3faf6cf39c98a0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -511,6 +720,10 @@
     },
     "svSE": {
       "description": "Jag vet inte vad som hände hästarna. En morgon steg jag upp för att mata dem och alla var borta, bara så där.\r\n\r\nLivet utanför Farholde är hårdare. Vad som helst kan ha tagit dem: djur, murlocer, orcher.\r\n\r\nFör att begränsa listan på skyldiga borde vi leta ledtrådar runt stallet.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Jag är lika ivrig som gamle Demar att få veta vad som hände med hästarna. Det är ju dem jag försörjer mig på.",
+        "e53e626ce056c7f43af7": "Jag visste det! Det är de där förbaskade prärievargarna!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -527,6 +740,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ca09110b28284aca5f64bd37e4494f68479b2cb3e1e34671b6129c81a19176df"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -550,6 +773,10 @@
     },
     "trTR": {
       "description": "Atlarımıza ne olduğunu hiç bilmiyorum. Bir sabah yem vermek için kalktım, hepsi yok olmuştu, öylece.\r\n\r\nFarholde dışında hayat biraz daha zor. Onları her şey almış olabilir: hayvanlar, murloclar, orklar, aklına ne gelirse.\r\n\r\nSuçlu listemizi daraltmak istiyorsak ahırların çevresinde ipucu aramalıyız.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Atlara ne olduğunu öğrenmek için ben de yaşlı Demar kadar sabırsızlanıyorum. Sonuçta geçimimi onlarla sağlıyorum.",
+        "e53e626ce056c7f43af7": "Biliyordum! O lanet çakalların işi bu!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -566,6 +793,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ca09110b28284aca5f64bd37e4494f68479b2cb3e1e34671b6129c81a19176df"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -589,6 +826,10 @@
     },
     "ukUA": {
       "description": "Гадки не маю, що сталося з нашими кіньми. Якось уранці встав їх годувати, а вони всі зникли, отак просто.\r\n\r\nЗа межами Фарголда життя трохи суворіше. Їх могло забрати що завгодно: звірі, мурлоки, орки, хто хочеш.\r\n\r\nЯкщо хочемо звузити перелік винуватців, варто пошукати зачіпки довкола стаєнь.",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "Мені так само кортить дізнатися, що сталося з кіньми, як і старому Демару. Зрештою, це мій заробіток.",
+        "e53e626ce056c7f43af7": "Я так і знав! Це ті кляті койоти!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -605,6 +846,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ca09110b28284aca5f64bd37e4494f68479b2cb3e1e34671b6129c81a19176df"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -628,6 +879,10 @@
     },
     "zhCN": {
       "description": "我完全不知道我们的马出了什么事。那天早上我起来喂它们，结果它们就这么全不见了。\r\n\r\n法霍德外面的生活要艰难得多。什么东西都有可能抓走它们——野兽、鱼人、兽人，应有尽有。\r\n\r\n如果我们想缩小罪魁祸首的范围，就应该在马厩周围找找线索。",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "我和老德玛尔一样，迫不及待地想弄清楚这些马到底出了什么事。毕竟，我全靠它们过活。",
+        "e53e626ce056c7f43af7": "我就知道！是那些该死的山狗！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -643,6 +898,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -668,6 +935,10 @@
     },
     "zhTW": {
       "description": "我完全不知道我們的馬出了什麼事。有天早上，我準備去餵牠們，卻發現牠們全都憑空消失。\r\n\r\n遠境堡外的生存環境惡劣。導致牠們消失的原因很多：動物、魚人、獸人，多不勝數。\r\n\r\n如果我們想要進一步鎖定嫌犯，就必須搜查獸欄，尋找線索。",
+      "dialogue": {
+        "960adcdf3f00e9df76cf": "我和老德瑪一樣，迫不及待想知道那些馬出了什麼事。畢竟我靠牠們維生。",
+        "e53e626ce056c7f43af7": "我就知道！是那些該死的土狼！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -683,6 +954,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.960adcdf3f00e9df76cf": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e53e626ce056c7f43af7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

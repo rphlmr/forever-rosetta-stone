@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "808e1f4de5403886c9a4": {
+      "contributionId": 144873,
+      "lineId": "q:92960:progress",
+      "npcId": 263406,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "98ba82f4e06da5d56b2f": {
+      "contributionId": 144877,
+      "lineId": "q:92960:complete",
+      "npcId": 263406,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Na východě se pořád drží démoni. Jsou mezi nimi pekelné bestie, které mají na svědomí pustošení našich příbuzných – vysávají jejich sílu a obracejí ji proti našim spojencům.\n\nPronikni do jejich tábora, najdi ty bestie a zabij je. Přines všechny vzorky, které po nich zůstanou.\n\nMožná se z toho něco dozvíme.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Našli jste něco zvláštního?",
+        "98ba82f4e06da5d56b2f": "Fascinující vzorky. Čím blíže jsou u sebe, tím hlasitěji bzučí. Jako by se navzájem přitahovaly. Mísit je s jinými magickými předměty či energiemi by bylo nejspíš nebezpečné, ale možná s nimi dokážeme něco provést samostatně.\n\nPodívejme se na ně blíž."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "En tilbageværende dæmontilstedeværelse findes mod øst. Blandt dem er de helvedesdyr, der har hærget vores artsfæller og suget deres kraft ud for at bruge den mod vores allierede.\r\n\r\nTræng ind i deres lejr, find disse dyr og dræb dem. Hent eventuelle prøver, der er tilbage.\r\n\r\nMåske er der noget, vi kan lære af denne indsats.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Har du fundet noget sært?",
+        "98ba82f4e06da5d56b2f": "Fascinerende prøver. Jo tættere de er på hinanden, desto højere summer de. Det er, som om de tiltrækker hinanden. Det er nok farligt at blande dem med andre magiske genstande eller energier, men måske kan vi bruge dem alene.\n\nLad os se nærmere på dem."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae4373226004cf10abf2bd286a63c166f8a54f5bfd60cf0bcecee80681be73d9"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Im Osten verharren noch immer dämonische Wesen. Darunter sind teuflische Bestien, die unsere Verwandten überfallen und ihnen ihre Macht entziehen, um sie gegen uns zu verwenden.\r\n\r\nDringt in ihr Lager ein, findet die Bestien und tötet sie. Nehmt Proben von ihren Überresten.\r\n\r\nVielleicht können wir durch diese Bemühungen etwas lernen.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Habt Ihr irgendwelche Auffälligkeiten entdeckt?",
+        "98ba82f4e06da5d56b2f": "Faszinierende Exemplare. Je näher sie einander sind, desto lauter summen sie. Als ob sie voneinander angezogen würden. Es ist wahrscheinlich gefährlich, dies mit anderen magischen Objekten oder Energien zu vermischen, aber vielleicht können wir schon mit dieser Kenntnis etwas anfangen.\n\nDas sollten wir uns näher ansehen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +182,10 @@
     },
     "enUS": {
       "description": "A lingering demon presence remains to the east. Among them are the hellish beasts responsible for ravaging our kin, siphoning their power to use it against our allies.\r\n\r\nPenetrate their camp, locate these beasts and slay them. Retrieve any samples that remain.\r\n\r\nPerhaps there is something we can learn from these efforts.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Find anything peculiar?",
+        "98ba82f4e06da5d56b2f": "Fascinating specimens. The closer they are in proximity to one another, the louder they hum. It's as if they're attracted to each other. Probably dangerous to intermingle this with other magical objects or energies, but maybe we can do something with them by themselves.\n\nLet's have a closer look."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +201,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Al este persiste una presencia demoníaca, incluidas las bestias infernales que masacran a los miembros de nuestra especie para arrebatarnos poder y usarlo contra nuestros aliados.\r\n\r\nAdéntrate en su campamento, busca a esas bestias y asesínalas. Recupera las muestras que queden.\r\n\r\nPuede que logremos aprender algo de esto.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "¿Has encontrado algo peculiar?",
+        "98ba82f4e06da5d56b2f": "Unos especímenes fascinantes. Cuanto más cerca están unos de otros, más fuerte zumban. Es como si se atrajeran. Seguramente sería peligroso mezclarlos con otros objetos o energías mágicas, pero quizá podamos hacer algo con ellos por separado.\n\nEchemos un vistazo más de cerca."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -198,6 +290,10 @@
     },
     "esMX": {
       "description": "En el este, aún persiste la presencia de los demonios. Entre ellos se encuentran las bestias infernales responsables de arrasar a los nuestros. Absorben su poder para usarlo contra nuestros aliados.\r\n\r\nInfíltrate en su campamento, ubica a esas bestias y aniquílalas.\r\n\r\nRecupera cualquier muestra que quede. Quizá podamos aprender algo de todo esto.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "¿Encontraste algo peculiar?",
+        "98ba82f4e06da5d56b2f": "Unos especímenes fascinantes. Cuanto más cerca están unos de otros, más fuerte zumban. Es como si se atrajeran. Seguramente sería peligroso mezclarlos con otros objetos o energías mágicas, pero quizá podamos hacer algo con ellos por separado.\n\nVeámoslos más de cerca."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -213,6 +309,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -237,6 +343,10 @@
     },
     "frFR": {
       "description": "Une présence démoniaque subsiste à l’est. En son sein se trouvent les bêtes infernales responsables du massacre de nos semblables, siphonnant leur puissance pour l’utiliser contre nos alliés.\r\n\r\nPénétrez dans leur camp, localisez ces bêtes et tuez-les. Récupérez tout échantillon que vous trouverez.\r\n\r\nNous pourrons peut-être en apprendre quelque chose.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Vous avez trouvé quelque chose d’étrange ?",
+        "98ba82f4e06da5d56b2f": "Des spécimens fascinants. Plus ils sont proches les uns des autres, plus leur bourdonnement est fort. On dirait qu’ils s’attirent. Il serait probablement dangereux de les mêler à d’autres objets ou énergies magiques, mais peut-être pouvons-nous en faire quelque chose seuls.\n\nExaminons-les de plus près."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +362,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -276,6 +396,10 @@
     },
     "hrHR": {
       "description": "Na istoku je ostala prisutnost demona. Među njima su paklene zvijeri odgovorne za pustošenje naše rodbine, koje isisavaju njihovu snagu kako bi je upotrijebile protiv naših saveznika.\r\n\r\nProdri u njihov logor, pronađi te zvijeri i ubij ih. Vrati sve uzorke koji ostanu.\r\n\r\nMožda iz ovoga možemo nešto naučiti.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Jeste li pronašli nešto neobično?",
+        "98ba82f4e06da5d56b2f": "Fascinantni primjerci. Što su bliže jedni drugima, to glasnije zuje. Kao da se međusobno privlače. Vjerojatno bi ih bilo opasno miješati s drugim magičnim predmetima ili energijama, ali možda možemo nešto učiniti samo s njima.\n\nPogledajmo ih pobliže."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -292,6 +416,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae4373226004cf10abf2bd286a63c166f8a54f5bfd60cf0bcecee80681be73d9"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -315,6 +449,10 @@
     },
     "itIT": {
       "description": "Una presenza demoniaca persiste a est. Tra loro ci sono le bestie infernali responsabili di aver devastato i nostri simili, assorbendone il potere per usarlo contro i nostri alleati.\r\n\r\nPenetra nel loro accampamento, trova queste bestie e uccidile. Recupera tutti i campioni rimasti.\r\n\r\nForse potremo imparare qualcosa da questi sforzi.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Avete trovato qualcosa di insolito?",
+        "98ba82f4e06da5d56b2f": "Esemplari affascinanti. Più sono vicini tra loro, più forte ronzano. È come se si attirassero a vicenda. Probabilmente è pericoloso mescolarli con altri oggetti o energie magiche, ma forse da soli possiamo farci qualcosa.\n\nDiamo un'occhiata più da vicino."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -331,6 +469,17 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae4373226004cf10abf2bd286a63c166f8a54f5bfd60cf0bcecee80681be73d9"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -354,6 +503,10 @@
     },
     "koKR": {
       "description": "동쪽에는 아직 악마가 남아 있다. 그중에는 우리 동족을 유린하고, 힘을 흡수해 우리 동맹을 공격하는 데 쓴 지옥의 야수들도 있지.\r\n\r\n놈들의 야영지로 침투해 그 야수들을 찾아 처치하게. 남은 표본이 있다면 회수하도록.\r\n\r\n흔적에서 배울 게 있을지도 모르니 말이야.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "특이한 것을 찾았나요?",
+        "98ba82f4e06da5d56b2f": "흥미로운 표본들이군요. 서로 가까워질수록 더 크게 윙윙거려요. 마치 서로를 끌어당기는 것 같군요. 다른 마법 물건이나 에너지와 섞는 건 위험하겠지만, 이것들만으로 뭔가 할 수 있을지도 모르겠어요.\n\n자세히 살펴보죠."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -369,6 +522,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -393,6 +556,10 @@
     },
     "plPL": {
       "description": "Na wschodzie nadal pozostają demony. Wśród nich są piekielne bestie odpowiedzialne za pustoszenie naszych pobratymców i wysysanie ich mocy, by użyć jej przeciw sojusznikom.\r\n\r\nPrzeniknij do ich obozu, znajdź bestie i je zabij. Odzyskaj wszystkie pozostałe próbki.\r\n\r\nMoże dowiemy się z tego czegoś przydatnego.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Znaleźliście coś osobliwego?",
+        "98ba82f4e06da5d56b2f": "Fascynujące okazy. Im bliżej siebie się znajdują, tym głośniej brzęczą. Jakby się wzajemnie przyciągały. Mieszanie ich z innymi magicznymi przedmiotami lub energiami byłoby zapewne niebezpieczne, ale może uda się coś z nimi zrobić osobno.\n\nPrzyjrzyjmy się im bliżej."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -409,6 +576,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae4373226004cf10abf2bd286a63c166f8a54f5bfd60cf0bcecee80681be73d9"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -432,6 +609,10 @@
     },
     "ptBR": {
       "description": "Uma presença demoníaca teimosa ainda se faz sentir a leste. Ela inclui as feras infernais responsáveis por devastar o nosso povo, sugando seu poder para usar contra nossos aliados.\r\n\r\nPenetre o acampamento delas, localize as feras e mate-as. Recupere as amostras que restarem.\r\n\r\nTalvez esses esforços nos revelem alguma informação importante.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Encontrou algo peculiar?",
+        "98ba82f4e06da5d56b2f": "Espécimes fascinantes. Quanto mais próximos ficam uns dos outros, mais alto zumbem. É como se fossem atraídos uns pelos outros. Provavelmente é perigoso misturá-los com outros objetos ou energias mágicas, mas talvez possamos fazer algo só com eles.\n\nVamos examiná-los mais de perto."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -447,6 +628,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -471,6 +662,10 @@
     },
     "ruRU": {
       "description": "Одно из гнезд демонов еще остается на востоке. Среди них встречаются адские звери, которые истребляют наших сородичей и отбирают у них силу, чтобы обратить ее против наших союзников.\r\n\r\nПроникни в их лагерь, найди этих зверей и убей их. Если соберешь образцы, принеси сюда.\r\n\r\nВозможно, эти эксперименты чему-то нас научат.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Нашли что-нибудь необычное?",
+        "98ba82f4e06da5d56b2f": "Любопытные образцы. Чем ближе они друг к другу, тем громче гудят. Словно их тянет друг к другу. Смешивать их с другими магическими предметами или энергиями, вероятно, опасно, но, возможно, мы сможем что-то сделать с ними самими.\n\nРассмотрим их поближе."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -486,6 +681,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -510,6 +715,10 @@
     },
     "svSE": {
       "description": "En demonisk närvaro dröjer i öster. Bland dem finns helvetesbestarna som härjade våra fränder och sög deras kraft för att använda den mot våra allierade.\r\n\r\nTräng in i lägret, hitta bestarna och dräp dem. Hämta alla prover som finns kvar.\r\n\r\nKanske kan vi lära oss något av detta.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Har du hittat något märkligt?",
+        "98ba82f4e06da5d56b2f": "Fascinerande exemplar. Ju närmare varandra de är, desto högre surrar de. Det är som om de dras till varandra. Det är nog farligt att blanda dem med andra magiska föremål eller energier, men kanske kan vi göra något med dem på egen hand.\n\nLåt oss titta närmare."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -526,6 +735,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae4373226004cf10abf2bd286a63c166f8a54f5bfd60cf0bcecee80681be73d9"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -549,6 +768,10 @@
     },
     "trTR": {
       "description": "Doğuda hâlâ bir iblis varlığı sürüyor. Aralarında soyumuzu parçalamaktan, güçlerini emip müttefiklerimize karşı kullanmaktan sorumlu cehennem yaratıkları var.\r\n\r\nKamplarına sız, bu yaratıkları bulup öldür. Geriye kalan örnekleri al.\r\n\r\nBelki bu çabalardan öğrenebileceğimiz bir şey vardır.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Tuhaf bir şey buldun mu?",
+        "98ba82f4e06da5d56b2f": "Büyüleyici örnekler. Birbirlerine ne kadar yaklaşırlarsa o kadar yüksek sesle vızıldıyorlar. Sanki birbirlerini çekiyorlar. Bunları başka büyülü nesneler veya enerjilerle karıştırmak muhtemelen tehlikelidir, ama belki kendi başlarına onlarla bir şeyler yapabiliriz.\n\nDaha yakından bakalım."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -565,6 +788,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae4373226004cf10abf2bd286a63c166f8a54f5bfd60cf0bcecee80681be73d9"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -588,6 +821,10 @@
     },
     "ukUA": {
       "description": "На сході досі залишаються демони. Серед них є пекельні потвори, винні в плюндруванні наших родичів: вони висмоктують їхню силу, щоб використати її проти наших союзників.\r\n\r\nПроникни в їхній табір, знайди цих потвор і вбий їх. Забери всі зразки, що залишаться.\r\n\r\nМожливо, ці зусилля допоможуть нам чогось навчитися.",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "Знайшли щось незвичайне?",
+        "98ba82f4e06da5d56b2f": "Захопливі зразки. Що ближче вони один до одного, то гучніше гудуть. Наче їх притягує одне до одного. Змішувати їх з іншими магічними предметами чи енергіями, мабуть, небезпечно, але, можливо, ми зможемо щось зробити з ними самими.\n\nРозгляньмо їх ближче."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -604,6 +841,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae4373226004cf10abf2bd286a63c166f8a54f5bfd60cf0bcecee80681be73d9"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -627,6 +874,10 @@
     },
     "zhCN": {
       "description": "东边依然残留着恶魔的踪迹。其中就包括那些残害我们同胞的恶毒野兽，它们吸取我们同胞的力量，反过来对付我们的盟友。\r\n\r\n潜入他们的营地，找到这些野兽并宰了它们。把剩下的样本都带回来。\r\n\r\n也许我们能从这些东西里学到点什么。",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "发现什么异常了吗？",
+        "98ba82f4e06da5d56b2f": "真是迷人的样本。它们彼此越靠近，嗡鸣声就越响，仿佛在互相吸引。把它们与其他魔法物品或能量混合恐怕很危险，但也许单凭它们本身，我们就能做些什么。\n\n让我们仔细看看。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -642,6 +893,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -666,6 +927,10 @@
     },
     "zhTW": {
       "description": "東邊仍有惡魔能量存在，繚繞不散。其中的地獄野獸正是蹂躪我們族人的罪魁禍首，吸取他們的力量，反過來對付我們的盟友。\r\n\r\n攻進他們的營地，找出這些野獸並殺死牠們。取回剩下的所有樣本。\r\n\r\n或許我們可以從中得知一些情報。",
+      "dialogue": {
+        "808e1f4de5403886c9a4": "發現什麼異常了嗎？",
+        "98ba82f4e06da5d56b2f": "真是迷人的樣本。它們彼此越靠近，嗡鳴聲就越響，彷彿在互相吸引。把它們與其他魔法物品或能量混合恐怕很危險，但也許單憑它們本身，我們就能做些什麼。\n\n讓我們仔細看看。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -681,6 +946,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.808e1f4de5403886c9a4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.98ba82f4e06da5d56b2f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

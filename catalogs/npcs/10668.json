@@ -11,6 +11,12 @@
       "scope": "classic-era-and-forever",
       "stage": "gossip",
       "variant": 0
+    },
+    "zephras:32d94721b2b33039e734": {
+      "lineId": "zephras:32d94721b2b33039e734",
+      "scope": "forever",
+      "stage": "option",
+      "variant": 0
     }
   },
   "factionId": 66,
@@ -25,7 +31,8 @@
     "csCZ": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Tělo patří orčí bojovnici.$B$BJe zřejmé, že padla v boji, nejspíš proti místním quilboarům.",
-        "f7e9f4aaafb9f2696def": "Otočíš tělo a na mrtvé orce spatříš stopy čepelí a kouzel. Její zbroj je téměř zničená a vlasy přilepené k obličeji.$B$BPodle Mankrikova popisu nepochybuješ, že jde o jeho ženu.$B$BZpráva ho zarmoutí, ale určitě by měl znát pravdu."
+        "f7e9f4aaafb9f2696def": "Otočíš tělo a na mrtvé orce spatříš stopy čepelí a kouzel. Její zbroj je téměř zničená a vlasy přilepené k obličeji.$B$BPodle Mankrikova popisu nepochybuješ, že jde o jeho ženu.$B$BZpráva ho zarmoutí, ale určitě by měl znát pravdu.",
+        "zephras:32d94721b2b33039e734": "Prohlédnu si tělo důkladněji."
       },
       "name": "Zbitá mrtvola",
       "translationMetadata": {
@@ -36,6 +43,11 @@
             "sourceLocale": "enUS"
           },
           "dialogue.f7e9f4aaafb9f2696def": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -51,7 +63,8 @@
     "daDK": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Liget tilhører en kvindelig orkkriger.$B$BDet er tydeligt, at hun døde i kamp, sandsynligvis mod områdets quilboarer.",
-        "f7e9f4aaafb9f2696def": "Du vender liget og ser mærker efter klinger og besværgelser på den døde ork. Hendes rustning er næsten ødelagt, og håret er klistret til hendes ansigt.$B$BUd fra Mankriks beskrivelse er du ikke i tvivl om, at det var hans kone.$B$BNyheden vil gøre ham ked af det, men han bør kende sandheden."
+        "f7e9f4aaafb9f2696def": "Du vender liget og ser mærker efter klinger og besværgelser på den døde ork. Hendes rustning er næsten ødelagt, og håret er klistret til hendes ansigt.$B$BUd fra Mankriks beskrivelse er du ikke i tvivl om, at det var hans kone.$B$BNyheden vil gøre ham ked af det, men han bør kende sandheden.",
+        "zephras:32d94721b2b33039e734": "Jeg undersøger liget nærmere."
       },
       "name": "Gennembanket lig",
       "translationMetadata": {
@@ -62,6 +75,11 @@
             "sourceLocale": "enUS"
           },
           "dialogue.f7e9f4aaafb9f2696def": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -77,7 +95,8 @@
     "deDE": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Der Leichnam ist der einer Orckriegerin.\n\nEs ist klar, dass sie im Kampf starb, wahrscheinlich gegen die Stacheleber in dieser Gegend.",
-        "f7e9f4aaafb9f2696def": "Ihr dreht den Leichnam um und seht Spuren von Klingen und Zaubern an der verstorbenen Orc-Frau - ihre Rüstung ist fast zerstört, das Haar klebt an ihrem Gesicht.\n\nNach Mankriks Beschreibung habt Ihr keinen Zweifel, dass dies seine Frau ist.\n\nDie Wahrheit wird schmerzlich für ihn sein, aber Ihr seid sicher, dass er sie erfahren sollte."
+        "f7e9f4aaafb9f2696def": "Ihr dreht den Leichnam um und seht Spuren von Klingen und Zaubern an der verstorbenen Orc-Frau - ihre Rüstung ist fast zerstört, das Haar klebt an ihrem Gesicht.\n\nNach Mankriks Beschreibung habt Ihr keinen Zweifel, dass dies seine Frau ist.\n\nDie Wahrheit wird schmerzlich für ihn sein, aber Ihr seid sicher, dass er sie erfahren sollte.",
+        "zephras:32d94721b2b33039e734": "Ich untersuche den Leichnam weiter."
       },
       "name": "Geschlagener Kadaver",
       "translationMetadata": {
@@ -94,6 +113,12 @@
             "sourceLocale": "deDE",
             "sourceSha256": "c1cd1597ee8ef61b8859daf63d724a5ec28d311078335b8014ae4d85c11777ac"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "deDE",
+            "sourceRevision": "70e38cd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -106,7 +131,8 @@
     "enUS": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "The body is that of a female orc warrior.$B$BIt is clear that she died in battle, probably against the quilboar in the area.",
-        "f7e9f4aaafb9f2696def": "You turn the body over and see the marks from blades and spells upon the deceased orc--her armor all but destroyed, her hair matted to her face.$B$BBased on Mankrik's description of her, there is no doubt in your mind that this was his wife.$B$BHe will be upset by the news, but you are sure he should know the truth."
+        "f7e9f4aaafb9f2696def": "You turn the body over and see the marks from blades and spells upon the deceased orc--her armor all but destroyed, her hair matted to her face.$B$BBased on Mankrik's description of her, there is no doubt in your mind that this was his wife.$B$BHe will be upset by the news, but you are sure he should know the truth.",
+        "zephras:32d94721b2b33039e734": "I inspect the body further."
       },
       "name": "Beaten Corpse",
       "translationMetadata": {
@@ -123,6 +149,13 @@
             "sourceLocale": "enUS",
             "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "Zephras",
+            "sourceLocale": "enUS",
+            "sourceRevision": "https://zephras.com/forever/enUS/npc/10668/",
+            "sourceSha256": "b3c5859b24a6ba101173357efe7e0d425ffe5b69389a017942663f301f71a8f4"
+          },
           "name": {
             "origin": "original",
             "source": "egLink",
@@ -136,7 +169,8 @@
     "esES": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "El cuerpo es el de una guerrera orca.\n\nEstá claro que murió en combate, probablemente contra el jabaespín de la zona.",
-        "f7e9f4aaafb9f2696def": "Giras el cuerpo y ves las marcas de espadas y hechizos en el cuerpo de la difunta orca... su armadura está totalmente destruida y su enredado cabello le oculta el rostro.\n\nSegún la descripción de Mankrik no tienes ninguna duda de que es su mujer.\n\nLe dolerán las noticias, pero sabes que debería conocer la verdad."
+        "f7e9f4aaafb9f2696def": "Giras el cuerpo y ves las marcas de espadas y hechizos en el cuerpo de la difunta orca... su armadura está totalmente destruida y su enredado cabello le oculta el rostro.\n\nSegún la descripción de Mankrik no tienes ninguna duda de que es su mujer.\n\nLe dolerán las noticias, pero sabes que debería conocer la verdad.",
+        "zephras:32d94721b2b33039e734": "Voy a seguir inspeccionando el cuerpo."
       },
       "name": "Cadáver apaleado",
       "translationMetadata": {
@@ -152,6 +186,12 @@
             "source": "Spoken",
             "sourceLocale": "esES",
             "sourceSha256": "26a19bd8ae2cfda2339c40d18b2c914713a60b1556928828a6126edfb77c74a3"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "esES",
+            "sourceRevision": "70e38cd"
           },
           "name": {
             "origin": "community",
@@ -165,7 +205,8 @@
     "esMX": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "El cuerpo es el de una guerrera orca.\n\nEstá claro que murió en combate, probablemente contra los jabaespines de la zona.",
-        "f7e9f4aaafb9f2696def": "Giras el cuerpo y ves las marcas de espadas y hechizos en el cuerpo de la difunta orca... su armadura está totalmente destruida y su enredado cabello le oculta el rostro.\n\nSegún la descripción de Mankrik no tienes ninguna duda de que es su mujer.\n\nLe dolerán las noticias, pero sabes que debería conocer la verdad."
+        "f7e9f4aaafb9f2696def": "Giras el cuerpo y ves las marcas de espadas y hechizos en el cuerpo de la difunta orca... su armadura está totalmente destruida y su enredado cabello le oculta el rostro.\n\nSegún la descripción de Mankrik no tienes ninguna duda de que es su mujer.\n\nLe dolerán las noticias, pero sabes que debería conocer la verdad.",
+        "zephras:32d94721b2b33039e734": "Voy a seguir inspeccionando el cuerpo."
       },
       "name": "Cadáver apaleado",
       "translationMetadata": {
@@ -182,6 +223,12 @@
             "sourceLocale": "esMX",
             "sourceSha256": "fc88b390946e0b0ebc3b7bd52d514bbfeb5f6b46eef00095d5cfbf1883d8eae7"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "esMX",
+            "sourceRevision": "70e38cd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -194,7 +241,8 @@
     "frFR": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Le corps est celui d'une guerrière orque.\n\nElle est visiblement morte au combat, sans doute contre les hurans de la région.",
-        "f7e9f4aaafb9f2696def": "Vous retournez le corps et voyez des traces de coups d'épée et de sorts offensifs sur l'orque morte. Son armure est détruite, ses cheveux emmêlés lui font comme une mantille.\n\nD'après la description de Mankrik, c'était à l'évidence sa femme.\n\nIl sera bouleversé par cette nouvelle, mais vous pensez qu'il faut lui dire la vérité."
+        "f7e9f4aaafb9f2696def": "Vous retournez le corps et voyez des traces de coups d'épée et de sorts offensifs sur l'orque morte. Son armure est détruite, ses cheveux emmêlés lui font comme une mantille.\n\nD'après la description de Mankrik, c'était à l'évidence sa femme.\n\nIl sera bouleversé par cette nouvelle, mais vous pensez qu'il faut lui dire la vérité.",
+        "zephras:32d94721b2b33039e734": "Voyons ce corps de plus près."
       },
       "name": "Cadavre battu",
       "translationMetadata": {
@@ -211,6 +259,12 @@
             "sourceLocale": "frFR",
             "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "frFR",
+            "sourceRevision": "70e38cd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -223,7 +277,8 @@
     "hrHR": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Tijelo pripada orkinji ratnici.$B$BJasno je da je poginula u borbi, vjerojatno protiv obližnjih quilboara.",
-        "f7e9f4aaafb9f2696def": "Okrećeš tijelo i vidiš tragove oštrica i čarolija na mrtvoj orkinji. Oklop joj je gotovo uništen, a kosa slijepljena uz lice.$B$BPrema Mankrikovu opisu nema sumnje da je to bila njegova žena.$B$BVijest će ga rastužiti, ali sigurno treba znati istinu."
+        "f7e9f4aaafb9f2696def": "Okrećeš tijelo i vidiš tragove oštrica i čarolija na mrtvoj orkinji. Oklop joj je gotovo uništen, a kosa slijepljena uz lice.$B$BPrema Mankrikovu opisu nema sumnje da je to bila njegova žena.$B$BVijest će ga rastužiti, ali sigurno treba znati istinu.",
+        "zephras:32d94721b2b33039e734": "Pobliže pregledavam tijelo."
       },
       "name": "Izudarano truplo",
       "translationMetadata": {
@@ -234,6 +289,11 @@
             "sourceLocale": "enUS"
           },
           "dialogue.f7e9f4aaafb9f2696def": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -249,7 +309,8 @@
     "itIT": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "È il corpo di un'orchessa guerriera.\n\nÈ chiaro che è morta in battaglia, probabilmente contro i quilboar della zona.",
-        "f7e9f4aaafb9f2696def": "Giri il corpo e vedi i segni di lame e incantesimi sull'orca morta: l'armatura è quasi distrutta e i capelli incollati al viso.$B$BIn base alla descrizione di Mankrik, non hai dubbi che fosse sua moglie.$B$BLa notizia lo sconvolgerà, ma sei certo che debba sapere la verità."
+        "f7e9f4aaafb9f2696def": "Giri il corpo e vedi i segni di lame e incantesimi sull'orca morta: l'armatura è quasi distrutta e i capelli incollati al viso.$B$BIn base alla descrizione di Mankrik, non hai dubbi che fosse sua moglie.$B$BLa notizia lo sconvolgerà, ma sei certo che debba sapere la verità.",
+        "zephras:32d94721b2b33039e734": "Esamino il corpo più attentamente."
       },
       "name": "Cadavere malconcio",
       "translationMetadata": {
@@ -265,6 +326,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
@@ -276,7 +342,8 @@
     "koKR": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "이 시체는 오크 여전사의 것입니다.\n\n전사한 것이 분명한데, 아마도 이 부근의 가시멧돼지와 싸우다 죽었나 봅니다.",
-        "f7e9f4aaafb9f2696def": "몸을 뒤집어보니 칼날과 마법에 의해 공격당한 상처가 선명하게 남아 있습니다. 방어구는 거의 다 산산조각났고 머리카락은 산발이 되어 있습니다.\n\n만크릭에게서 들은 이야기를 떠올려 보니, 이 오크가 그의 아내인 것이 분명합니다.\n\n이 소식을 전해주면 애통해 하고, 분개할 것이 분명하지만, 그에게 진실을 알려주어야 한다는 생각이 듭니다."
+        "f7e9f4aaafb9f2696def": "몸을 뒤집어보니 칼날과 마법에 의해 공격당한 상처가 선명하게 남아 있습니다. 방어구는 거의 다 산산조각났고 머리카락은 산발이 되어 있습니다.\n\n만크릭에게서 들은 이야기를 떠올려 보니, 이 오크가 그의 아내인 것이 분명합니다.\n\n이 소식을 전해주면 애통해 하고, 분개할 것이 분명하지만, 그에게 진실을 알려주어야 한다는 생각이 듭니다.",
+        "zephras:32d94721b2b33039e734": "시체를 자세히 조사합니다."
       },
       "name": "짓이겨진 시체",
       "translationMetadata": {
@@ -293,6 +360,12 @@
             "sourceLocale": "koKR",
             "sourceSha256": "3b8d0be05705235cc715b120061a5364b49c4132f49a5154fc4d85255177d014"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "koKR",
+            "sourceRevision": "70e38cd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -305,7 +378,8 @@
     "plPL": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Ciało należy do orczej wojowniczki.$B$BWidać, że zginęła w walce, prawdopodobnie z miejscowymi quilboarami.",
-        "f7e9f4aaafb9f2696def": "Obracasz ciało i widzisz ślady ostrzy oraz zaklęć na martwej orczycy. Jej zbroja jest niemal zniszczona, a włosy przylegają do twarzy.$B$BZ opisu Mankrika nie masz wątpliwości, że była to jego żona.$B$BWieść go zasmuci, ale powinien poznać prawdę."
+        "f7e9f4aaafb9f2696def": "Obracasz ciało i widzisz ślady ostrzy oraz zaklęć na martwej orczycy. Jej zbroja jest niemal zniszczona, a włosy przylegają do twarzy.$B$BZ opisu Mankrika nie masz wątpliwości, że była to jego żona.$B$BWieść go zasmuci, ale powinien poznać prawdę.",
+        "zephras:32d94721b2b33039e734": "Przyglądam się ciału dokładniej."
       },
       "name": "Pobite zwłoki",
       "translationMetadata": {
@@ -316,6 +390,11 @@
             "sourceLocale": "enUS"
           },
           "dialogue.f7e9f4aaafb9f2696def": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -331,7 +410,8 @@
     "ptBR": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "O corpo é o de uma guerreira orquisa.\n\nNão há duvidas que ela morreu em combate, provavelmente contra um javatusco da área.",
-        "f7e9f4aaafb9f2696def": "Você vira o corpo e vê marcas de lâminas e feitiços – a armadura dela está destruída e o cabelo emaranhado e grudado no rosto.\n\nPela descrição que Mankrik fez da esposa, não lhe restam dúvidas de que esta é ela.\n\nEle ficará desolado com a notícia, mas você acha que ele tem o direito de saber a verdade."
+        "f7e9f4aaafb9f2696def": "Você vira o corpo e vê marcas de lâminas e feitiços – a armadura dela está destruída e o cabelo emaranhado e grudado no rosto.\n\nPela descrição que Mankrik fez da esposa, não lhe restam dúvidas de que esta é ela.\n\nEle ficará desolado com a notícia, mas você acha que ele tem o direito de saber a verdade.",
+        "zephras:32d94721b2b33039e734": "Examino o corpo mais de perto."
       },
       "name": "Cadáver Arrebentado",
       "translationMetadata": {
@@ -348,6 +428,11 @@
             "sourceLocale": "ptBR",
             "sourceSha256": "4499628c4271be05580bea7136b76bd490255ac29eb596a9bcd0e879a7e1bf5d"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -360,7 +445,8 @@
     "ruRU": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Это труп орка-воина.\n\nНесомненно, она погибла в бою. Противником, по всей видимости, был местный иглогрив.",
-        "f7e9f4aaafb9f2696def": "Вы переворачиваете тело орка и ищете на нем следы от оружия и заклинаний. Ее доспехи разбиты в клочья, а лицо скрыто под спутанными волосами.\n\nПо некоторым приметам, которые сообщил вам Манкрик, вы опознаете в убитой его жену.\n\nНесомненно, он будет опечален такими новостями, но вы убеждены, что ему следует знать правду."
+        "f7e9f4aaafb9f2696def": "Вы переворачиваете тело орка и ищете на нем следы от оружия и заклинаний. Ее доспехи разбиты в клочья, а лицо скрыто под спутанными волосами.\n\nПо некоторым приметам, которые сообщил вам Манкрик, вы опознаете в убитой его жену.\n\nНесомненно, он будет опечален такими новостями, но вы убеждены, что ему следует знать правду.",
+        "zephras:32d94721b2b33039e734": "Я продолжу осмотр тела."
       },
       "name": "Обезображенный труп",
       "translationMetadata": {
@@ -377,6 +463,12 @@
             "sourceLocale": "ruRU",
             "sourceSha256": "6c631198f2820ad1638d95d5c2405c11c90019cbf3afeca9541bb2b70432f7ff"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "ruRU",
+            "sourceRevision": "70e38cd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -389,7 +481,8 @@
     "svSE": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Kroppen tillhör en kvinnlig orchkrigare.$B$BDet är tydligt att hon dog i strid, troligen mot områdets quilboarer.",
-        "f7e9f4aaafb9f2696def": "Du vänder på kroppen och ser märken efter klingor och besvärjelser på den döda orchen. Hennes rustning är nästan förstörd och håret klibbar mot ansiktet.$B$BUtifrån Mankriks beskrivning råder inget tvivel om att detta var hans hustru.$B$BNyheten kommer att göra honom upprörd, men du är säker på att han bör få veta sanningen."
+        "f7e9f4aaafb9f2696def": "Du vänder på kroppen och ser märken efter klingor och besvärjelser på den döda orchen. Hennes rustning är nästan förstörd och håret klibbar mot ansiktet.$B$BUtifrån Mankriks beskrivning råder inget tvivel om att detta var hans hustru.$B$BNyheten kommer att göra honom upprörd, men du är säker på att han bör få veta sanningen.",
+        "zephras:32d94721b2b33039e734": "Jag undersöker kroppen närmare."
       },
       "name": "Misshandlat lik",
       "translationMetadata": {
@@ -400,6 +493,11 @@
             "sourceLocale": "enUS"
           },
           "dialogue.f7e9f4aaafb9f2696def": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -415,7 +513,8 @@
     "trTR": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Ceset bir dişi ork savaşçıya ait.$B$BSavaşta, muhtemelen bölgedeki kıl sırtlılara karşı öldüğü açık.",
-        "f7e9f4aaafb9f2696def": "Cesedi çevirince ölü orkun üzerinde kılıç ve büyü izleri görüyorsun. Zırhı neredeyse tamamen parçalanmış, saçları yüzüne yapışmış.$B$BMankrik'in tarifine bakılırsa bunun karısı olduğundan şüphen yok.$B$BHaber onu üzecek, ama gerçeği bilmesi gerektiğinden eminsin."
+        "f7e9f4aaafb9f2696def": "Cesedi çevirince ölü orkun üzerinde kılıç ve büyü izleri görüyorsun. Zırhı neredeyse tamamen parçalanmış, saçları yüzüne yapışmış.$B$BMankrik'in tarifine bakılırsa bunun karısı olduğundan şüphen yok.$B$BHaber onu üzecek, ama gerçeği bilmesi gerektiğinden eminsin.",
+        "zephras:32d94721b2b33039e734": "Cesedi daha yakından inceliyorum."
       },
       "name": "Dövülmüş Ceset",
       "translationMetadata": {
@@ -426,6 +525,11 @@
             "sourceLocale": "enUS"
           },
           "dialogue.f7e9f4aaafb9f2696def": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -441,7 +545,8 @@
     "ukUA": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "Це тіло орчині-воїтельки.$B$BОчевидно, вона загинула в бою, ймовірно, проти місцевих голкошерстів.",
-        "f7e9f4aaafb9f2696def": "Ти перевертаєш тіло й бачиш на загиблій орчині сліди клинків і заклять. Її обладунок майже знищений, волосся злиплося на обличчі.$B$BЗважаючи на опис Манкріка, ти не сумніваєшся, що це була його дружина.$B$BНовина засмутить його, але ти певен, що він має знати правду."
+        "f7e9f4aaafb9f2696def": "Ти перевертаєш тіло й бачиш на загиблій орчині сліди клинків і заклять. Її обладунок майже знищений, волосся злиплося на обличчі.$B$BЗважаючи на опис Манкріка, ти не сумніваєшся, що це була його дружина.$B$BНовина засмутить його, але ти певен, що він має знати правду.",
+        "zephras:32d94721b2b33039e734": "Я оглядаю тіло уважніше."
       },
       "name": "побитий труп",
       "translationMetadata": {
@@ -452,6 +557,11 @@
             "sourceLocale": "enUS"
           },
           "dialogue.f7e9f4aaafb9f2696def": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -468,7 +578,8 @@
     "zhCN": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "这具尸体属于一个女性兽人战士。\n\n很明显她是在战斗中死去的，或许是在对付这片地区的野猪人时死亡的。",
-        "f7e9f4aaafb9f2696def": "你把尸体翻过来然后看到她武器上的标志——她的护甲已经都损毁了，她的头发披散在她的脸上。\n\n根据曼科里克对于她的描述，你可以确定这就是她的妻子。\n\n他一定会为这个消息而感到悲伤，但是你相信他还是希望知道真相的。"
+        "f7e9f4aaafb9f2696def": "你把尸体翻过来然后看到她武器上的标志——她的护甲已经都损毁了，她的头发披散在她的脸上。\n\n根据曼科里克对于她的描述，你可以确定这就是她的妻子。\n\n他一定会为这个消息而感到悲伤，但是你相信他还是希望知道真相的。",
+        "zephras:32d94721b2b33039e734": "我将进一步检查尸体。"
       },
       "name": "血肉模糊的尸体",
       "translationMetadata": {
@@ -485,6 +596,12 @@
             "sourceLocale": "zhCN",
             "sourceSha256": "93fdbbbf1ced545d4289fe2fbdf3bf67307343eca1bd2c3e83d1e0f738d14067"
           },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "zhCN",
+            "sourceRevision": "70e38cd"
+          },
           "name": {
             "origin": "community",
             "source": "questie",
@@ -497,7 +614,8 @@
     "zhTW": {
       "dialogue": {
         "8b3dc768dc8605d0fa34": "這具屍體屬於一個女性獸人戰士。\n\n很明顯她是在戰鬥中死去的，或許是在對付這片地區的野豬人時死亡的。",
-        "f7e9f4aaafb9f2696def": "你把屍體翻過來然後看到她武器上的標誌——她的護甲已經都損毀了，她的頭髮披散在她的臉上。\n\n根據曼寇里克對於她的描述，你可以確定這就是她的妻子。\n\n他一定會為這個消息而感到悲傷，但是你相信他還是希望知道真相的。"
+        "f7e9f4aaafb9f2696def": "你把屍體翻過來然後看到她武器上的標誌——她的護甲已經都損毀了，她的頭髮披散在她的臉上。\n\n根據曼寇里克對於她的描述，你可以確定這就是她的妻子。\n\n他一定會為這個消息而感到悲傷，但是你相信他還是希望知道真相的。",
+        "zephras:32d94721b2b33039e734": "我將進一步檢查屍體。"
       },
       "name": "血肉模糊的屍體",
       "translationMetadata": {
@@ -513,6 +631,12 @@
             "source": "Spoken",
             "sourceLocale": "zhTW",
             "sourceSha256": "aac77a43b35c432bbeaedd449d920069e3caded646da46716a4c290887badc4c"
+          },
+          "dialogue.zephras:32d94721b2b33039e734": {
+            "origin": "community",
+            "source": "VMaNGOS",
+            "sourceLocale": "zhTW",
+            "sourceRevision": "70e38cd"
           },
           "name": {
             "origin": "community",

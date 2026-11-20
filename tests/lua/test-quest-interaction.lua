@@ -503,6 +503,31 @@ check(not table.concat((function()
     local text = {}; for _, section in ipairs(reader.body.lastSections) do text[#text + 1] = section.text end
     return text
 end)(), " "):find("7/8", 1, true), "offer excludes accepted quest progress")
+do
+    local database = ForeverRosettaStoneDB
+    local lookup, locale, sex, guid, questText = database.GetQuestDialogue, GetLocale, UnitSex, UnitGUID, GetQuestText
+    local target = Addon:GetTargetLocale()
+    local source = target == "enUS" and "frFR" or "enUS"
+    GetLocale = function() return source end
+    UnitSex = function() return 2 end
+    UnitGUID = function(unit) return unit == "npc" and "Creature-0-0-0-0-197-1" or nil end
+    GetQuestText = function() return "Native offer variant" end
+    database.GetQuestDialogue = function(_, questID, _, language)
+        if questID == 179 then
+            return { { key = "offer", npcID = 197, stage = "accept",
+                text = language == source and "Native offer variant" or "Translated offer variant" } }
+        end
+    end
+    Addon:UpdateQuestInteraction()
+    check(reader.body.lastSections[2].text == "Translated offer variant",
+        "matching NPC offer takes precedence over the generic quest description")
+    GetQuestText = function() return "A different offer" end
+    Addon:UpdateQuestInteraction()
+    check(reader.body.lastSections[2].text:find("What do we have here", 1, true),
+        "an unmatched offer keeps the translated quest description")
+    database.GetQuestDialogue, GetLocale, UnitSex, UnitGUID, GetQuestText = lookup, locale, sex, guid, questText
+    Addon:UpdateQuestInteraction()
+end
 local _, anchor = reader.frame:GetPoint(1)
 check(anchor == QuestFrame, "quest window owns companion placement")
 check(reader.options:IsShown() and reader.frame.CloseButton:IsShown(), "quest screens offer Options beside the mouse X")
