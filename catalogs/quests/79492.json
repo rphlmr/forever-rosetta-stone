@@ -1,7 +1,29 @@
 {
+  "dialogueContexts": {
+    "445b7ac61e2eeb0b2d18": {
+      "contributionId": 33885,
+      "lineId": "q:79492:progress",
+      "npcId": 216902,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "7212057e7cc43fe09881": {
+      "contributionId": 33888,
+      "lineId": "q:79492:complete",
+      "npcId": 216902,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Stala se KATASTROFA! Unesli soba Metzena!\n\nMetzen je jedním z 8 sobů Greatfather Winter – a majetkem Smokywood Pastures. Dostali jsme ne jeden, ale DVA dopisy s žádostí o výkupné od skupin, které tvrdí, že Metzena mají. Svátky jsou v plném proudu a my nemůžeme odejít od pokladny! Prosím – najdi Metzena a vrať nám ho!\n\nV dopisech s výkupným hledej vodítka a posyp ho tímhle sobím prachem – osvobodí ho z jakýchkoli pout!\n\nProsím, pospěš si!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Stačily poznámky v brašně, kterou jsem ti dal, k nalezení Metzena? Nerad myslím na to, co by mu ti krutí ničemové mohli provést... ale tak přemrštěné výkupné si prostě nemůžeme dovolit!",
+        "7212057e7cc43fe09881": "Dokázal jsi to! Hurá!\n\nMetzen před chvílí přiletěl zpátky do stájí Dědečka Zimy. Ano, Metzen opravdu umí létat! Prach zafungoval jako kouzlo, věděl jsem to. Zachránil jsi Svátek zimního závoje i Smokywood Pastures před pohromou. Děkuji, $N.\n\nPoslyš... za to, cos tu udělal, ti chci dát tohle. Je to NĚCO výjimečného; pokud máš jezdecké zvíře, určitě tě to pobaví. Veselý Zimní závoj!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -18,6 +40,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +75,10 @@
     },
     "daDK": {
       "description": "KATASTROFEN har ramt! Rensdyret Metzen er blevet kidnappet!\n\nMetzen er et af Greatfather Winters otte rensdyr og tilhører Smokywood Pastures. Vi har modtaget ikke ét, men TO løsesumsbreve fra grupper, der hævder at have Metzen. Med højtiden godt i gang er der stramt om møntkassen her! Vil du ikke finde Metzen og bringe ham tilbage til os!\n\nUndersøg løsesumsbrevene for spor og drys dette rensdyrstøv på ham. Det vil befri ham fra alle hans bindinger!\n\nSkynd dig!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Var noterne i tasken, jeg gav dig, nok til at finde Metzen? Jeg tør næsten ikke tænke på, hvad de grusomme bøller kan finde på at gøre ved ham... men vi har ingen mulighed for at betale en så urimelig løsesum!",
+        "7212057e7cc43fe09881": "Du gjorde det! Hurra!\n\nMetzen fløj tilbage til Vinterfars stalde for ganske kort tid siden. Ja, Metzen kan virkelig flyve! Støvet virkede som en drøm; det vidste jeg, det ville. Du har reddet Vinterfesten og Smokywood Pastures fra katastrofen. Tak, $N.\n\nHør... på grund af det, du har gjort her, vil jeg give dig dette. Det er noget HELT særligt; hvis du har et ridedyr, tror jeg, du vil more dig med det. Glædelig Vinterfest!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +95,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "542616683c9d3a1d82b792b9ff167c2077a950cba3b4d5646adfbbcb862b7e39"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +129,10 @@
     },
     "deDE": {
       "description": "Es ist eine KATASTROPHE! Metzen das Rentier wurde entführt!\n\nMetzen ist eines von Altvater Winters acht Rentieren - und Eigentum von Kokelwälder. Wir haben nicht nur einen, sondern ZWEI Erpresserbriefe von Gruppen erhalten. Beide behaupten, Metzen in ihrer Gewalt zu haben. Gerade jetzt zur Festtagszeit haben wir hier ein echtes Problem. Bitte findet Metzen und bringt ihn zurück!\n\nSchaut Euch die Erpresserbriefe an, vielleicht findet Ihr darin ja Hinweise. Streut diesen Rentierstaub über ihn, wenn Ihr ihn findet, er wird ihn aus sämtlichen Fesseln befreien!\n\nBitte, beeilt Euch!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Habt Ihr ihn gefunden? Konntet Ihr den Notizen, die ich Euch mitgegeben habe, genug Informationen entnehmen, um ihn ausfindig zu machen? Mir wird ganz schlecht wenn ich daran denke, was diese fiesen Strolche ihm antun könnten... Ein so hohes Lösegeld können wir uns einfach nicht leisten.",
+        "7212057e7cc43fe09881": "Ihr habt es geschafft! Hurra!\n\nMetzen ist gerade eben erst zurück zu den Ställen von Altvater Winter geflogen. Ja, Metzen kann wirklich fliegen! Der Staub hat ganze Arbeit geleistet, ich wusste, das würde funktionieren. Ihr habt das Winterhauchfest und Kokelwälder vor dem Untergang bewahrt. Danke, $N.\n\nHört mal, weil Ihr das für uns getan habt, möchte ich Euch das hier geben. Das ist etwas GANZ Besonderes. Wenn Ihr ein Reittier habt, werdet Ihr bestimmt eine Menge Spaß damit haben. Frohes Winterhauchfest!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +148,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +182,10 @@
     },
     "enUS": {
       "description": "DISASTER has struck!  Metzen the Reindeer has been kidnapped!\n\nMetzen is one of Greatfather Winter's eight reindeer - and property of Smokywood Pastures.  We've received not one but TWO ransom letters from groups claiming to have Metzen.  With the holiday season well under way, we're strapped to the coin box here!  Please - find Metzen and return him to us!\n\nCheck out the ransom letters for clues, and sprinkle this reindeer dust on him - it will free him from any of his bonds!\n\nPlease, hurry!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N!  Were the notes in the satchel I gave you enough information to locate Metzen?  I hate to think of that those cruel thugs might do to him... but there's no way we can afford to pay such an exorbitant ransom!",
+        "7212057e7cc43fe09881": "You did it!  Huzzah!\n\nMetzen flew back into Greatfather Winter's stables - yes Metzen can really fly - just a little while ago!  The dust worked like a charm; I knew it would.  You've saved the Feast of Winter Veil as well as Smokywood Pastures from disaster.  Thank you, $N.\n\nListen... because of what you've done here, I want you to have this.  It's something VERY special; if you have a mount, I think you'll get a kick out of it.  Happy Winter Veil!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +201,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -157,6 +235,10 @@
     },
     "esES": {
       "description": "¡Qué desastre! ¡Han secuestrado Metzen el reno!\n\nEs uno de los ocho renos del Gran Padre Invierno y propiedad de Pastos de Bosquehumeante. Hemos recibido dos cartas de dos grupos diferentes que se atribuyen el secuestro. ¡Y precisamente ahora, con la fiesta, estamos sin blanca! Por favor, ¡tráenos a Metzen!\n\nBusca pistas en las cartas. Cuando lo encuentres, rocíalo con este polvo de reno, así se liberará de sus ataduras.\n\n¡Date prisa, por favor!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "¡$N! ¿Bastaron las notas de la bolsa que te di para localizar a Metzen? No quiero ni pensar en lo que esos crueles matones podrían hacerle... ¡pero no podemos permitirnos pagar un rescate tan exorbitante!",
+        "7212057e7cc43fe09881": "¡Lo has conseguido! ¡Hurra!\n\nMetzen ha vuelto volando a los establos del Gran Padre Invierno hace apenas un momento. Sí, ¡Metzen puede volar de verdad! El polvo ha funcionado a las mil maravillas; sabía que lo haría. Has salvado el Festival de Invierno y a los Pastos de Bosquehumeante del desastre. Gracias, $N.\n\nEscucha... por lo que has hecho aquí, quiero que te quedes con esto. Es algo MUY especial; si tienes una montura, creo que te divertirás. ¡Feliz Festival de Invierno!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +254,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -195,6 +287,10 @@
     },
     "esMX": {
       "description": "¡Qué TRAGEDIA! ¡Han secuestrado a Metzen el Reno!\n\nMetzen el Reno es uno de los ocho renos del Gran Padre Invierno (y propiedad de Pastos de Bosquehumeante). Hemos recibido no una, sino DOS cartas de rescate de grupos que afirman tener a Metzen. La temporada de fiestas ya está en marcha, ¡y nuestros bolsillos están casi vacíos! Por favor, ¡encuentra a Metzen y tráenoslo de vuelta!\n\nBusca pistas en las cartas de rescate, y échale este polvo de reno, ¡lo liberará de todas sus ataduras!\n\n¡Por favor, apresúrate!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "¡$N! ¿Bastaron las notas de la bolsa que te di para localizar a Metzen? No quiero ni pensar en lo que esos crueles matones podrían hacerle... ¡pero no podemos pagar un rescate tan exorbitante!",
+        "7212057e7cc43fe09881": "¡Lo lograste! ¡Hurra!\n\n¡Metzen regresó volando a los establos del Gran Padre Invierno hace apenas un momento! Sí, ¡Metzen de verdad puede volar! El polvo funcionó de maravilla; sabía que lo haría. Salvaste el Festival de Invierno y a los Pastos de Bosquehumeante del desastre. Gracias, $N.\n\nEscucha... por lo que hiciste aquí, quiero darte esto. Es algo MUY especial; si tienes una montura, creo que te divertirás. ¡Feliz Festival de Invierno!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +306,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -233,6 +339,10 @@
     },
     "frFR": {
       "description": "C’est un DÉSASTRE ! Metzen le renne a été kidnappé !\n\nMetzen est l’un des huit rennes de Grandpère Hiver, et il appartient aux Gourmandises Fumebois. Nous n’avons pas reçu une, mais DEUX demandes de rançon de groupes qui prétendent le détenir. Comme la saison des fêtes bat son plein, nous sommes enchaînés à la caisse enregistreuse ! Je vous en prie, trouvez Metzen et ramenez-le-nous !\n\nLisez attentivement les lettres de rançon pour trouver des indices, et saupoudrez cette poudre de renne sur lui : elle le libéra de toutes ses entraves !\n\nJe vous en supplie, faites vite !",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N ! Les notes dans la sacoche que je vous ai donnée suffisaient-elles à retrouver Metzen ? Je préfère ne pas imaginer ce que ces brutes pourraient lui faire… mais nous ne pouvons pas payer une rançon aussi exorbitante !",
+        "7212057e7cc43fe09881": "Vous avez réussi ! Hourra !\n\nMetzen est rentré en volant aux écuries du Grand-père Hiver il y a quelques instants. Oui, Metzen sait vraiment voler ! La poudre a parfaitement fonctionné, je le savais. Vous avez sauvé le Voile d’hiver et les Gourmandises Fumebois du désastre. Merci, $N.\n\nÉcoutez… pour vous remercier de ce que vous avez fait, je tiens à vous offrir ceci. C’est TRÈS spécial ; si vous avez une monture, je pense que cela vous amusera. Joyeux Voile d’hiver !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -248,6 +358,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -271,6 +391,10 @@
     },
     "hrHR": {
       "description": "Dogodila se KATASTROFA! Sob Metzen je otet!\n\nMetzen je jedan od osam sobova Djeda Zime i vlasništvo Smokywood Pasturesa. Primili smo ne jedno, nego DVA pisma s otkupninom od skupina koje tvrde da drže Metzena. Blagdanska je sezona već u punom jeku i jedva krpamo kraj s krajem! Molim te, pronađi Metzena i vrati nam ga!\n\nPregledaj pisma s otkupninom i potraži tragove pa ga pospi ovim sobovskim prahom. Oslobodit će ga svih okova!\n\nMolim te, požuri!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Jesu li bilješke u torbi koju sam ti dao bile dovoljne da pronađeš Metzena? Ne želim ni pomisliti što bi mu ti okrutni nasilnici mogli učiniti... ali nikako ne možemo platiti tako pretjeranu otkupninu!",
+        "7212057e7cc43fe09881": "Uspio si! Ura!\n\nMetzen je prije samo nekoliko trenutaka doletio natrag u staje Djeda Zime. Da, Metzen zaista može letjeti! Prašina je savršeno djelovala; znao sam da hoće. Spasio si Blagdan zimskog vela i Smokywood Pastures od propasti. Hvala ti, $N.\n\nSlušaj... zbog onoga što si učinio, želim ti dati ovo. To je nešto VRLO posebno; ako imaš jahaću životinju, mislim da će te zabaviti. Sretan Zimski veo!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -287,6 +411,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "542616683c9d3a1d82b792b9ff167c2077a950cba3b4d5646adfbbcb862b7e39"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -311,6 +445,10 @@
     },
     "itIT": {
       "description": "È un DISASTRO! Metzen la Renna è stata rapita!\n\nMetzen è una delle otto renne di Nonno Inverno, nonché proprietà di Smokywood Pastures. Abbiamo ricevuto non una, ma DUE richieste di riscatto da gruppi che affermano di avere Metzen. Con le festività ormai in pieno svolgimento, siamo incatenati alla cassa! Ti prego, trova Metzen e riportacela!\n\nEsamina le richieste di riscatto per trovare indizi e cospargila di questa polvere di renna: la libererà da qualsiasi legame!\n\nTi prego, fa' presto!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Gli appunti nella borsa che ti ho dato bastavano a trovare Metzen? Non voglio pensare a cosa potrebbero fargli quei crudeli delinquenti... ma non possiamo permetterci di pagare un riscatto così esorbitante!",
+        "7212057e7cc43fe09881": "Ce l’hai fatta! Urrà!\n\nMetzen è tornato volando alle stalle di Nonno Inverno proprio poco fa. Sì, Metzen sa volare davvero! La polvere ha funzionato a meraviglia; sapevo che avrebbe funzionato. Hai salvato la Festa del Velo d’Inverno e i Pascoli di Boscoverde dal disastro. Grazie, $N.\n\nAscolta... per quello che hai fatto, voglio darti questo. È qualcosa di MOLTO speciale; se hai una cavalcatura, penso che ti divertirai. Buon Velo d’Inverno!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -327,6 +465,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "542616683c9d3a1d82b792b9ff167c2077a950cba3b4d5646adfbbcb862b7e39"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -350,6 +498,10 @@
     },
     "koKR": {
       "description": "오, 맙소사! 이런 변이 있나! 우리 순록 멧젠이 납치당했다고!\n\n멧젠은 겨울 할아버지의 여덟 마리 순록 중의 하나이자, 굴뚝나무 목장조합의 귀중한 자산이지. 멧젠을 납치해 간 녀석들에게서 몸값을 요구하는 편지를 한 장도 아니고 자그마치 두 장이나 받았네. 사실, 겨울맞이 축제 선물을 준비해야 할 시기라 우리에겐 몸값으로 낼 돈이 없어! 자네가 우리 멧젠을 구해 주게!\n\n멧젠의 편지와 쪽지를 읽어보면 그의 행방에 대한 단서를 찾을 수 있을 거야! 그를 찾으면 이 순록 가루를 뿌리게나. 우리 멧젠을 어떤 구속에서라도 풀어줄 걸세!\n\n어서 서두르라고!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N 님! 제가 드린 가방에 있던 쪽지로 메첸을 찾을 수 있었나요? 그 잔인한 악당들이 녀석에게 무슨 짓을 할지 생각하기도 싫지만... 그렇게 터무니없는 몸값을 치를 형편은 안 됩니다!",
+        "7212057e7cc43fe09881": "해냈군요! 만세!\n\n메젠이 조금 전에 겨울 할아버지의 마구간으로 날아 돌아왔어요. 네, 메젠은 정말로 날 수 있답니다! 가루가 아주 잘 통했어요. 그럴 줄 알았죠. 당신은 겨울맞이 축제와 굴뚝나무 목장을 재앙에서 구했어요. 고마워요, $N.\n\n저기요... 당신이 해 준 일에 대한 보답으로 이걸 드리고 싶어요. 아주 특별한 물건이에요. 탈것이 있다면 분명 재미있을 거예요. 즐거운 겨울맞이 축제 보내세요!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -365,6 +517,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -388,6 +550,10 @@
     },
     "plPL": {
       "description": "KATASTROFA! Renifer Metzen został porwany!\n\nMetzen jest jednym z ośmiu reniferów Dziadka Zimy i własnością Smokywood Pastures. Otrzymaliśmy nie jeden, lecz DWA listy z żądaniem okupu od grup twierdzących, że mają Metzena. W środku sezonu świątecznego nasze fundusze są ograniczone! Proszę, znajdź Metzena i zwróć go nam!\n\nSprawdź listy w poszukiwaniu wskazówek i posyp go tym reniferowym pyłem, uwolni go od wszelkich więzów!\n\nProszę, pospiesz się!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Czy notatki w torbie, którą ci dałem, wystarczyły, by odnaleźć Metzena? Nie chcę myśleć, co te okrutne łotry mogą mu zrobić... ale nie stać nas na zapłacenie tak wygórowanego okupu!",
+        "7212057e7cc43fe09881": "Udało ci się! Hurra!\n\nMetzen przed chwilą przyleciał z powrotem do stajni Dziadka Zimy. Tak, Metzen naprawdę potrafi latać! Pył zadziałał jak należy; wiedziałem, że tak będzie. Uratowano Święto Zimowej Zasłony i Smokywood Pastures przed katastrofą. Dziękuję, $N.\n\nPosłuchaj... za to, co tu zrobiłeś, chcę ci to dać. To coś BARDZO wyjątkowego; jeśli masz wierzchowca, na pewno cię to rozbawi. Wesołego Święta Zimowej Zasłony!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -404,6 +570,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "542616683c9d3a1d82b792b9ff167c2077a950cba3b4d5646adfbbcb862b7e39"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -428,6 +604,10 @@
     },
     "ptBR": {
       "description": "Deu ZICA GERAL! Sequestraram Metzen, a Rena!\n\nMetzen é uma das oito renas do Papai Inverno — e propriedade da Fazenda Bosque Defumado. A gente recebeu não só um, mas DOIS pedidos de resgate de meliantes dizendo que estão com o Metzen. O feriadão já tá batendo aí e do cofre de porquinho só sobrou o toucinho! Por favor, acha o Metzen e traz ele de volta!\n\nDá uma olhada nos pedidos de resgate e vê se acha alguma pista. Taca esse pó de rena no Metzen que ele vai se soltar na hora!\n\nPor favor, vai logo!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! As anotações na bolsa que lhe dei foram suficientes para localizar Metzen? Nem quero pensar no que aqueles brutamontes cruéis podem fazer com ele... mas não temos como pagar um resgate tão exorbitante!",
+        "7212057e7cc43fe09881": "Você conseguiu! Viva!\n\nMetzen voltou voando para os estábulos do Vovô Inverno ainda há pouco. Sim, Metzen realmente sabe voar! O pó funcionou perfeitamente; eu sabia que funcionaria. Você salvou a Festa do Véu de Inverno e os Pastos de Bosque Defumado do desastre. Obrigado, $N.\n\nEscute... pelo que você fez aqui, quero lhe dar isto. É algo MUITO especial; se você tiver uma montaria, acho que vai se divertir. Feliz Véu de Inverno!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -443,6 +623,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -466,6 +656,10 @@
     },
     "ruRU": {
       "description": "БЕДА! Похищен Метцен – северный олень!\n\nМетцен – один из восьми оленей Дедушки Зимы и принадлежит \"Пастбищам Дымного Леса\". Мы получили не одно, а ДВА письма с требованием выкупа от двух шаек, каждая из которых утверждает, что олень у них. Праздники в разгаре, мы не можем бросить дела! Пожалуйста, найди Метцена и верни его нам!\n\nВозьми эти письма с требованием выкупа, – может, найдешь в них подсказку, – а вот этой пылью посыпь северного оленя, и он освободится от любых пут!\n\nПрошу, поспеши!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Хватило ли записок в сумке, которую я вам дал, чтобы найти Метцена? Боюсь даже думать, что эти жестокие головорезы могут с ним сделать... но мы никак не можем заплатить такой непомерный выкуп!",
+        "7212057e7cc43fe09881": "У тебя получилось! Ура!\n\nМетцен только что прилетел обратно в стойла Дедушки Зимы. Да, Метцен и правда умеет летать! Пыль сработала как надо, я так и знал. Ты спас праздник Зимнего Покрова и компанию «Пастбища Дымного Леса» от катастрофы. Спасибо, $N.\n\nПослушай... за то, что ты сделал, я хочу подарить тебе это. Это НЕЧТО особенное; если у тебя есть ездовое животное, тебе наверняка понравится. С праздником Зимнего Покрова!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -481,6 +675,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -504,6 +708,10 @@
     },
     "svSE": {
       "description": "KATASTROFEN har slagit till! Renen Metzen har kidnappats!\n\nMetzen är en av Greatfather Winters åtta renar och tillhör Smokywood Pastures. Vi har fått inte ett utan TVÅ lösenbrev från grupper som påstår sig ha Metzen. Nu när högtiden är i full gång sitter vi fast vid kassaskrinet här! Snälla, hitta Metzen och för honom tillbaka till oss!\n\nLeta efter ledtrådar i lösenbreven och strö detta rendamm på honom, så befrias han från alla sina bojor!\n\nSnälla, skynda dig!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Räckte anteckningarna i väskan jag gav dig för att hitta Metzen? Jag vill inte tänka på vad de grymma skurkarna kan göra med honom... men vi har inte råd att betala en så orimlig lösensumma!",
+        "7212057e7cc43fe09881": "Du klarade det! Hurra!\n\nMetzen flög tillbaka till Farfar Vinters stall för bara en liten stund sedan. Ja, Metzen kan faktiskt flyga! Dammet fungerade perfekt; jag visste att det skulle göra det. Du har räddat Vinterfesten och Smokywood Pastures från katastrofen. Tack, $N.\n\nHör här... för det du har gjort vill jag ge dig detta. Det är något MYCKET speciellt; om du har ett riddjur tror jag att du kommer att ha roligt med det. Glad Vinterfest!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -520,6 +728,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "542616683c9d3a1d82b792b9ff167c2077a950cba3b4d5646adfbbcb862b7e39"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -544,6 +762,10 @@
     },
     "trTR": {
       "description": "FELAKET oldu! Ren geyiği Metzen kaçırıldı!\n\nMetzen, Greatfather Winter'ın sekiz ren geyiğinden biri. Smokywood Pastures'ın malı. Metzen'in kendilerinde olduğunu iddia eden gruplardan bir değil İKİ fidye mektubu aldık. Bayram mevsimi iyice başlamışken para sıkıntımız var! Lütfen, Metzen'i bulup getir!\n\nİpuçları için fidye mektuplarını kontrol et. Üzerine bu ren geyiği tozunu serp. Bütün bağlarından kurtarır!\n\nLütfen acele et!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Sana verdiğim çantadaki notlar Metzen’i bulmana yetti mi? O acımasız haydutların ona neler yapabileceğini düşünmek bile istemiyorum... ama böylesine fahiş bir fidyeyi ödeyemeyiz!",
+        "7212057e7cc43fe09881": "Başardın! Yaşasın!\n\nMetzen kısa bir süre önce uçarak Kış Dede’nin ahırlarına döndü. Evet, Metzen gerçekten uçabiliyor! Toz harikalar yarattı; yarayacağını biliyordum. Kış Şenliği’ni ve Smokywood Pastures’ı felaketten kurtardın. Teşekkürler, $N.\n\nDinle... burada yaptıkların için sana bunu vermek istiyorum. ÇOK özel bir şey; bir bineğin varsa bununla eğleneceğini düşünüyorum. Mutlu Kış Şenlikleri!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -560,6 +782,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "542616683c9d3a1d82b792b9ff167c2077a950cba3b4d5646adfbbcb862b7e39"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -584,6 +816,10 @@
     },
     "ukUA": {
       "description": "КАТАСТРОФА! Метцена-північного оленя викрали!\n\nМетцен — один з восьми північних оленів Дідуся Зими та власність Пасовищ Димного Лісу. Ми отримали не одну, а ДВІ записки з вимогою викупу від злодіїв, які стверджують, що Метцен у них. З розпалом святкового сезону у нас немає грошей! Будь ласка, знайди Метцена та поверни його нам!\n\nПеревір листи з вимогами викупу, щоб знайти підказки, та посип його цим оленячим пилом — він звільнить його від будь-яких пут!\n\nБудь ласка, поквапся!",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N! Чи вистачило нотаток у сумці, яку я тобі дав, щоб знайти Метцена? Не хочу й думати, що ці жорстокі головорізи можуть йому заподіяти... але ми ніяк не можемо сплатити такий непомірний викуп!",
+        "7212057e7cc43fe09881": "Тобі вдалося! Ура!\n\nМетцен щойно прилетів назад до стаєнь Дідуся Зими. Так, Метцен справді вміє літати! Пил подіяв як слід, я так і знав. Ти врятував Свято Зимової Завіси та Smokywood Pastures від лиха. Дякую, $N.\n\nПослухай... за те, що ти зробив, я хочу подарувати тобі це. Це ЩОСЬ особливе; якщо маєш їздову тварину, тобі неодмінно сподобається. Зі святом Зимової Завіси!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -600,6 +836,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "542616683c9d3a1d82b792b9ff167c2077a950cba3b4d5646adfbbcb862b7e39"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -624,6 +870,10 @@
     },
     "zhCN": {
       "description": "出大事啦！驯鹿梅森被绑架了！\n\n冬天爷爷有八头驯鹿，梅森是其中的一头，也是烟林牧场的财产。我们收到了宣称对此次绑架事件负责的组织寄来的勒索信，而且不是一封，是两封！两封，你明白吗？节日即将来临，我们早已经穷得叮当响啦！帮帮忙吧，帮我们找到梅森，把它救回来！\n\n你可以看看这些勒索信里面有什么线索，找到梅森之后，把驯鹿之尘洒在它身上，这样就可以让它摆脱一切束缚！\n\n事不宜迟！",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N！我给你的背包里的笔记，足够让你找到梅森吗？我不敢想象那些残忍的恶棍会对他做什么……可我们实在付不起如此高昂的赎金！",
+        "7212057e7cc43fe09881": "你做到了！万岁！\n\n梅森刚刚飞回了冬天爷爷的马厩。没错，梅森真的会飞！粉末果然很管用，我就知道。你拯救了冬幕节，也让烟林牧场免于灾难。谢谢你，$N。\n\n听着……为了感谢你所做的一切，我想把这个送给你。这是件非常特别的东西；如果你有坐骑，我想你一定会喜欢的。冬幕节快乐！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -639,6 +889,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -662,6 +922,10 @@
     },
     "zhTW": {
       "description": "出大事了！麋鹿梅特森被綁架了！\n\n梅特森是冬天爺爺的八頭麋鹿之一，也是燻木牧場的財產。我們已經收到不只一封，而是兩封聲稱梅特森在他們手中的勒索信。節日即將來臨，我們現在分身乏術！拜託，找到梅特森並把牠帶回來給我們！\n\n你可以從這些勒索信上找尋線索，並且把這個麋鹿粉末灑在牠的身上，這會讓牠擺脫任何拘束他的東西！\n\n拜託了，事不宜遲！",
+      "dialogue": {
+        "445b7ac61e2eeb0b2d18": "$N！我給你的背包裡的筆記，足夠讓你找到梅森嗎？我不敢想像那些殘忍的惡棍會對他做什麼……可我們實在付不起如此高昂的贖金！",
+        "7212057e7cc43fe09881": "你做到了！萬歲！\n\n梅森剛剛飛回了冬天爺爺的獸欄。沒錯，梅森真的會飛！粉末果然很管用，我就知道。你拯救了冬幕節，也讓煙燻林地牧場免於災難。謝謝你，$N。\n\n聽著……為了感謝你所做的一切，我想把這個送給你。這是件非常特別的東西；如果你有坐騎，我想你一定會喜歡的。冬幕節快樂！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -677,6 +941,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.445b7ac61e2eeb0b2d18": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7212057e7cc43fe09881": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

@@ -1,8 +1,30 @@
 {
   "areaId": 16591,
+  "dialogueContexts": {
+    "c86a4cfa30d1c33b7d27": {
+      "contributionId": 82735,
+      "lineId": "q:95562:complete",
+      "npcId": 256831,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "d7948c97b5f8294ed39e": {
+      "contributionId": 82592,
+      "lineId": "q:95562:progress",
+      "npcId": 256831,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Musím se k něčemu přiznat. Lady Amberhall mě sice pro ty vzorky poslala, ale ve skutečnosti to byl můj nápad. Sunnyglade byl můj domov, než mi ho vzala válka, a nemám klid, když vím, že ho pořád poskvrňují zrůdy. Ať už Horda, nebo Twilight's Hammer.\n\nTady nezvítězíme tím, že se od nich budeme učit. Není co se učit. Jsou to bestie, nic víc, a měly by se utratit jako bestie.\n\nMusíme zabít jejich pána na dně téhle jeskyně a skoncovat s tím. Moje paní to jistě pochopí.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Je mrtvý? Zabil/a jsi ty zlobry?\n\nUdělal/a jsi správnou věc, $N. A teď odsud pojďme.",
+        "d7948c97b5f8294ed39e": "Duchové této vesnice volají po pomstě, $N. A my jim ji musíme dopřát."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -24,6 +46,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -56,6 +88,10 @@
     },
     "daDK": {
       "description": "Jeg har en tilståelse. Lady Amberhall sendte mig ganske vist for at samle prøverne, men i sandhed meldte jeg mig frivilligt. Sunnyglade var mit hjem, før krigen tog det fra mig, og jeg kunne ikke finde ro ved at vide, at monstre stadig besudler det. Hvad enten det er Horden eller Twilight.\n\nDer er ingen sejr i at lære af dem her. Der er intet at lære. De er bæster, ganske enkelt, og bør aflives som bæster.\n\nVi må dræbe deres herre i bunden af denne hule og gøre ende på dette. Min herskerinde vil helt sikkert forstå.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Er han død? Dræbte du ogrerne?\n\nDu gjorde det rigtige, $N. Lad os nu komme væk herfra.",
+        "d7948c97b5f8294ed39e": "Denne landsbys spøgelser kræver hævn, $N. Og vi må give dem den."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -77,6 +113,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5b4f481e6236975e468ddf606a26f2adac67bb10a1b7ce7a54ee52b26d335912"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -105,6 +151,10 @@
     },
     "deDE": {
       "description": "Ich muss Euch etwas gestehen. Lady Amberhall schickte mich aus, um diese Proben zu nehmen, aber in Wahrheit habe ich mich freiwillig gemeldet. Sonnengrund war meine Heimat, bevor der Krieg sie mir entriss. Und ich konnte nicht mit dem Wissen ruhen, dass sie immer noch von Monstern besudelt wird, sei es Horde oder Twilight-Hammer.\r\n\r\nEs gibt keinen Sieg, indem man von ihnen lernt. Es gibt nichts zu lernen. Sie sind Bestien, ganz einfach. Und sie sollten erschlagen werden, wie Bestien.\r\n\r\nWir müssen ihren Meister am Grund dieser Höhle töten und all dem ein Ende setzen. Meine Herrin wird es sicher verstehen.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Ist er tot? Ihr habt die Oger getötet?\n\nIhr habt das Richtige getan, $N. Und jetzt lasst uns verschwinden.",
+        "d7948c97b5f8294ed39e": "Die Geister dieses Dorfes verlangen nach Rache, $N. Wir müssen sie ihnen gewähren."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -125,6 +175,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -156,6 +218,10 @@
     },
     "enUS": {
       "description": "I have a confession to make. Lady Amberhall did send me to collect those samples, but in truth I volunteered. Sunnyglade was my home before the war took it from me, and I could not rest knowing monsters still taint it. Be it horde or Twilight.\r\n\r\nThere is no victory here by learning from them. There's nothing to learn. They're beasts, plain and simple, and should be put down like beasts.\r\n\r\nWe must slay their master at the bottom of this cave and bring an end to this. Surely my mistress will understand.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "It's dead? You killed the ogres?\n\nYou've done the right thing, $N. Now let's get out of here.",
+        "d7948c97b5f8294ed39e": "The ghosts of this village cry out for vengeance, $N. And we must give it to them."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -176,6 +242,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -205,6 +283,10 @@
     },
     "esES": {
       "description": "Tengo que confesar algo. La señorita Salámbar me envió a recoger esas muestras, pero la verdad es que me ofrecí voluntaria. Clarosol era mi hogar antes de que nos lo arrebatara la guerra, y no podía estar en paz sabiendo sigue infestada de monstruos, sean de la Horda o del Martillo Crepuscular.\r\n\r\nAquí no hay victoria alguna en aprender de ellos. No hay nada que aprender. Son bestias, simple y llanamente, y deben ser exterminadas como tal.\r\n\r\nDebemos matar a su amo en el fondo de esta cueva y poner fin a todo esto. Seguro que mi señora lo entenderá.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "¿Ha muerto? ¿Has matado a los ogros?\n\nHas hecho lo correcto, $N. Ahora salgamos de aquí.",
+        "d7948c97b5f8294ed39e": "Los fantasmas de esta aldea claman venganza, $N. Y debemos concedérsela."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -225,6 +307,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -256,6 +348,10 @@
     },
     "esMX": {
       "description": "Debo hacer una confesión. Es cierto que Lady Salámbar me envió a recoger esas muestras, pero, en realidad, me ofrecí como voluntaria. Claro Soleado era mi hogar antes de que la guerra me lo arrebatara, y no podré descansar mientras sepa que sigue corrompido por los monstruos. Sean de la Horda o del Martillo.\r\n\r\nNo ganaremos ni aprenderemos nada de su parte aquí. No tienen nada para enseñarnos. Son bestias, lisa y llanamente, y deberíamos sacrificarlas como tales.\r\n\r\nDebemos matar a su amo en el fondo de esta cueva y ponerle un fin a todo esto. Confío en que mi ama sabrá entender.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "¿Está muerto? ¿Mataste a los ogros?\n\nHiciste lo correcto, $N. Ahora salgamos de aquí.",
+        "d7948c97b5f8294ed39e": "Los fantasmas de esta aldea claman venganza, $N. Y debemos concedérsela."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -276,6 +372,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -305,6 +411,10 @@
     },
     "frFR": {
       "description": "J’ai une confession à vous faire. Dame Ambrehall m’a bien envoyée pour récupérer ces échantillons, mais en vérité, c’est moi qui me suis portée volontaire. Clairsoleil était mon foyer avant que la guerre ne me l’arrache, et je ne pouvais pas rester les bras croisés en sachant que les monstres la souillent encore. Qu’ils appartiennent à la Horde ou au Crépuscule.\r\n\r\nOn ne gagnera rien à essayer de les comprendre, car il n’y a rien à comprendre. Ce ne sont que des bêtes, ni plus ni moins, que l’on doit abattre.\r\n\r\nNous devons tuer leur maître qui se cache au fond de cette grotte et mettre un terme à cette folie. Ma maîtresse comprendra mes motivations.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Il est mort ? Vous avez tué les ogres ?\n\nVous avez bien fait, $N. Partons d’ici, maintenant.",
+        "d7948c97b5f8294ed39e": "Les fantômes de ce village réclament vengeance, $N. Et nous devons la leur accorder."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -325,6 +435,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -356,6 +476,10 @@
     },
     "hrHR": {
       "description": "Moram nešto priznati. Lady Amberhall doista me poslala prikupiti te uzorke, ali zapravo sam se dobrovoljno javila. Sunnyglade je bio moj dom prije nego što mi ga je rat oduzeo i nisam mogla mirovati znajući da ga čudovišta još kaljaju. Bila to horda ili Twilight.\r\n\r\nOvdje nema pobjede u učenju od njih. Nema se što naučiti. Oni su zvijeri, jednostavno i jasno, i treba ih usmrtiti kao zvijeri.\r\n\r\nMoramo ubiti njihova gospodara na dnu ove špilje i svemu tome stati na kraj. Moja će gospodarica sigurno razumjeti.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Mrtav je? Ubio si ogre?\n\nIspravno si postupio, $N. A sad odlazimo odavde.",
+        "d7948c97b5f8294ed39e": "Duhovi ovog sela vape za osvetom, $N. I moramo im je pružiti."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -377,6 +501,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5b4f481e6236975e468ddf606a26f2adac67bb10a1b7ce7a54ee52b26d335912"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -407,6 +541,10 @@
     },
     "itIT": {
       "description": "Ho una confessione da farti. Dama Amberhall mi ha mandata a raccogliere quei campioni, ma in realtà mi sono offerta volontaria. Sunnyglade era casa mia prima che la guerra me la portasse via, e non potevo darmi pace sapendo che i mostri la contaminano ancora. Che siano dell'Orda o del Crepuscolo.\r\n\r\nNon c'è alcuna vittoria da ottenere qui imparando da loro. Non c'è niente da imparare. Sono bestie, né più né meno, e vanno abbattute come bestie.\r\n\r\nDobbiamo uccidere il loro padrone in fondo a questa grotta e porre fine a tutto questo. Di certo la mia signora capirà.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "È morto? Hai ucciso gli ogre?\n\nHai fatto la cosa giusta, $N. Ora andiamocene da qui.",
+        "d7948c97b5f8294ed39e": "I fantasmi di questo villaggio chiedono vendetta, $N. E noi dobbiamo concedergliela."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -428,6 +566,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5b4f481e6236975e468ddf606a26f2adac67bb10a1b7ce7a54ee52b26d335912"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -458,6 +606,10 @@
     },
     "koKR": {
       "description": "고백할 게 있습니다. 앰버홀 님이 표본을 가져오라고 보낸 건 맞지만, 사실 제가 자원했어요. 햇살숲은 전쟁에 빼앗기기 전까지 제 고향이었고, 괴물들이 그곳을 더럽히고 있다는 사실을 알고는 가만히 있을 수 없었어요. 호드든 황혼의 망치단이든 다 똑같은 놈들이죠.\r\n\r\n놈들에게서 배워 얻을 승리는 없습니다. 배울 것도 없어요. 그냥 짐승입니다. 그뿐이에요. 짐승은 짐승답게 쓰러뜨려야 합니다.\r\n\r\n이 동굴 깊은 곳에 있는 놈들의 주인을 처치하고 일을 끝내야 합니다. 앰버홀 님도 분명 이해해 주실 거예요.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "죽었나요? 오우거들을 죽였어요?\n\n옳은 일을 하셨어요, $N. 이제 여기서 나가요.",
+        "d7948c97b5f8294ed39e": "이 마을의 유령들이 복수를 부르짖고 있어요, $N. 우리가 그 복수를 이뤄 줘야 해요."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -478,6 +630,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -507,6 +669,10 @@
     },
     "plPL": {
       "description": "Muszę się przyznać. Lady Amberhall rzeczywiście wysłała mnie po próbki, ale zgłosiłam się na ochotnika. Sunnyglade było moim domem, zanim wojna mi je odebrała, i nie mogłam zaznać spokoju, wiedząc, że potwory nadal je plugawią. Czy to Horda, czy Zmierzch.\r\n\r\nNie zwyciężymy, ucząc się od nich. Nie ma czego się nauczyć. Są bestiami, po prostu, i jak bestie należy je uśpić.\r\n\r\nMusimy zabić ich pana na dnie jaskini i to zakończyć. Moja pani na pewno zrozumie.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Nie żyje? Udało ci się zabić ogry?\n\nSłusznie, $N. A teraz wynośmy się stąd.",
+        "d7948c97b5f8294ed39e": "Duchy tej wioski wołają o zemstę, $N. Musimy im ją zapewnić."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -528,6 +694,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5b4f481e6236975e468ddf606a26f2adac67bb10a1b7ce7a54ee52b26d335912"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -558,6 +734,10 @@
     },
     "ptBR": {
       "description": "Tenho uma confissão a fazer. Lady Larambar realmente me enviou para coletar aquelas amostras, mas foi porque eu me ofereci. Solclaro era meu lar antes que a guerra o tomasse de mim, e eu não poderia descansar sabendo que monstros ainda o maculam. Sejam da Horda ou do Crepúsculo.\r\n\r\nNão há por que tentar aprender com eles. Não há nada a aprender. Eles são feras, pura e simplesmente, e devem ser abatidos como feras.\r\n\r\nPrecisamos matar o mestre deles no fundo desta caverna e dar um fim a isso. Tenho certeza de que minha senhora entenderá.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Ele morreu? Você matou os ogros?\n\nVocê fez a coisa certa, $N. Agora vamos sair daqui.",
+        "d7948c97b5f8294ed39e": "Os fantasmas desta vila clamam por vingança, $N. E nós precisamos trazê-la para eles."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -578,6 +758,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "a05a8331cfcd85faca30ef2f0b397858e954fe0887550575c40dcb6e3c4bea4c"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -607,6 +798,10 @@
     },
     "ruRU": {
       "description": "Я должна тебе кое в чем признаться. Госпожа Амберхолл действительно отправила меня за образцами, но на самом деле я вызвалась добровольно. Светогладь была моим домом до того, как ее забрала война. Я не смогу успокоиться, зная, что ее по-прежнему оскверняют чудовища, будь они из Орды или Сумеречного Молота.\r\n\r\nМы не победим, пытаясь почерпнуть у них знания. У них нечему учиться. Они просто звери, только и всего, и их надо убить, как зверей.\r\n\r\nСразим их владыку в глубине пещеры и положим нашествию конец. Уверена, моя госпожа все поймет.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Чудище мертво? И другие огры тоже?\n\nТы сделал благое дело, $N. А теперь уйдем отсюда.",
+        "d7948c97b5f8294ed39e": "Призраки горожан молят об отмщении, $N. Мы должны исполнить их желание."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -627,6 +822,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "923c65b4e9ffb1220a3db189b4971c0b37e435a446032cabab3faf6cf39c98a0"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "923c65b4e9ffb1220a3db189b4971c0b37e435a446032cabab3faf6cf39c98a0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -658,6 +865,10 @@
     },
     "svSE": {
       "description": "Jag har en bekännelse. Lady Amberhall skickade mig visserligen för att samla proverna, men sanningen är att jag anmälde mig frivilligt. Sunnyglade var mitt hem innan kriget tog det ifrån mig, och jag kunde inte finna ro med vetskapen att monster fortfarande besudlar det. Vare sig det är Horden eller Twilight.\r\n\r\nDet finns ingen seger i att lära av dem. Det finns inget att lära. De är bestar, helt enkelt, och borde avlivas som bestar.\r\n\r\nVi måste dräpa deras herre längst ner i grottan och sätta stopp för detta. Min härskarinna kommer säkert att förstå.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Är han död? Dödade du ogerna?\n\nDu gjorde det rätta, $N. Nu tar vi oss härifrån.",
+        "d7948c97b5f8294ed39e": "Den här byns spöken ropar efter hämnd, $N. Och vi måste ge dem den."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -679,6 +890,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5b4f481e6236975e468ddf606a26f2adac67bb10a1b7ce7a54ee52b26d335912"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -709,6 +930,10 @@
     },
     "trTR": {
       "description": "İtiraf etmem gereken bir şey var. Leydi Amberhall beni o örnekleri toplamaya gönderdi ama aslında ben gönüllü oldum. Savaş elimden almadan önce Sunnyglade yurdumdu; canavarların hâlâ kirlettiğini bilerek huzur bulamazdım. Horde olsun, Twilight olsun.\r\n\r\nOnlardan öğrenerek kazanılacak zafer yok. Öğrenecek bir şey yok. Onlar hayvan, hepsi bu; hayvan gibi de öldürülmeliler.\r\n\r\nBu mağaranın dibindeki efendilerini öldürüp buna son vermeliyiz. Hanımım mutlaka anlayacaktır.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Öldü mü? Ogreleri öldürdün mü?\n\nDoğru olanı yaptın, $N. Şimdi buradan gidelim.",
+        "d7948c97b5f8294ed39e": "Bu köyün hayaletleri intikam istiyor, $N. Onlara istediklerini vermeliyiz."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -730,6 +955,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5b4f481e6236975e468ddf606a26f2adac67bb10a1b7ce7a54ee52b26d335912"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -760,6 +995,10 @@
     },
     "ukUA": {
       "description": "Мушу зізнатися. Леді Емберголл справді послала мене збирати зразки, але насправді я сам зголосився. Сонячний Ліс був моїм домом, поки війна його не відібрала, і я не міг спокійно жити, знаючи, що потвори досі його оскверняють. Чи то Орда, чи Сутінковий культ.\r\n\r\nВивченням їх тут не перемогти. Нема чого вивчати. Вони звірі, просто звірі, і знищувати їх треба, як звірів.\r\n\r\nМусимо вбити їхнього господаря на дні печери й покласти цьому край. Моя наставниця напевно зрозуміє.",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "Він мертвий? Ти вбив огрів?\n\nТи правильно вчинив, $N. А тепер забираймося звідси.",
+        "d7948c97b5f8294ed39e": "Привиди цього села волають про помсту, $N. І ми мусимо їм її дати."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -781,6 +1020,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5b4f481e6236975e468ddf606a26f2adac67bb10a1b7ce7a54ee52b26d335912"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -811,6 +1060,10 @@
     },
     "zhCN": {
       "description": "我得坦白一件事。安伯霍尔女士确实派我去收集那些样本，但实际上是我自愿的。在战争夺走它之前，阳光林地曾是我的家，我无法忍受怪物仍然玷污着它。无论是部落还是暮光之锤。\r\n\r\n从他们身上学习并不能带来胜利。这帮畜生没什么好学的。他们就是野兽，纯粹的野兽，就应该像野兽一样被消灭。\r\n\r\n我们必须在洞穴底部消灭他们的主人，彻底终结这一切。我相信我的女主人会理解的。",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "它死了？你杀了那些食人魔？\n\n你做了正确的事，$N。现在我们赶紧离开这里吧。",
+        "d7948c97b5f8294ed39e": "这个村庄的亡魂在呼唤复仇，$N。我们必须让他们安息。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -831,6 +1084,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -862,6 +1127,10 @@
     },
     "zhTW": {
       "description": "我必須坦白一件事。確實是安珀荷女士派我來收集那些樣本，但這其實是我自願的。戰爭奪走我的家園之前，陽光林地是我的家，但只要怪物持續玷污家鄉，我就無法安心。無論是部落或暮光勢力都一樣。\r\n\r\n他們身上沒什麼好學的。這裡沒什麼好學的。他們全是怪物，就這麼簡單，必須像對付怪物一樣擊倒他們。\r\n\r\n我們必須殺死這座洞穴底部的首領，結束這一切。我相信安珀荷女士會理解的。",
+      "dialogue": {
+        "c86a4cfa30d1c33b7d27": "他死了？你殺了那些巨魔？\n\n你做得對，$N。現在我們離開這裡吧。",
+        "d7948c97b5f8294ed39e": "這座村莊的幽靈渴望復仇，$N。我們必須替他們報仇。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -882,6 +1151,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.c86a4cfa30d1c33b7d27": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d7948c97b5f8294ed39e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

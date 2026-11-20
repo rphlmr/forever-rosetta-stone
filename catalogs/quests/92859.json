@@ -1,8 +1,30 @@
 {
   "areaId": 618,
+  "dialogueContexts": {
+    "46b35cc853b37d5ed0ee": {
+      "contributionId": 144958,
+      "lineId": "q:92859:progress",
+      "npcId": 11188,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "fde42fc435ec2470d104": {
+      "contributionId": 144926,
+      "lineId": "q:92859:complete",
+      "npcId": 11188,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Lidi se od konce války snaží dostat na Mount Hyjal, ale je tu jeden velký problém... všichni ti démoni v soutěsce Darkwhisper!\n\nMyslím, že mám řešení. Odvar z místních surovin by mohl tomu, kdo ho vypije, pomoct splynout s okolím Winterspringu, takže tě zdejší tvorové tak snadno neuvidí.\n\nStrašně mě láká tu teorii vyzkoušet, jestli mi doneseš pár drobností!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Jsem nadšená z alchymistických možností, které se tím otevírají!",
+        "fde42fc435ec2470d104": "Dobrá, všechno to smíchám a vy to můžete vyzkoušet!\n\nPamatujte, že to funguje jen ve Winterspringu. A není to dokonalá neviditelnost, takže se nepřibližujte moc blízko!\n\nCože, mysleli jste, že to vyzkouším já? Musím se starat o obchod!\n\nKdyž to vyjde, připíšu vaše jméno drobným písmem! A když ne... no, budu na vás ráda vzpomínat. Hodně štěstí!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -24,6 +46,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -52,6 +84,10 @@
     },
     "daDK": {
       "description": "Folk har forsøgt at komme ind på Mount Hyjal siden krigens afslutning, men der er ét stort problem... alle dæmonerne i Darkwhisper Gorge!\r\n\r\nJeg tror, jeg har løsningen. En blanding af lokalt indsamlede ingredienser kan måske få den, der drikker den, til at falde i ét med omgivelserne i Winterspring, så væsnerne her ikke så let kan se dig.\r\n\r\nJeg vil gerne teste teorien, hvis du har lyst til at bringe mig et par småting!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Jeg er så begejstret for de alkymistiske muligheder, det her giver!",
+        "fde42fc435ec2470d104": "Sådan, jeg blander det hele sammen, og så kan I prøve det!\n\nHusk nu, det virker kun i Winterspring. Og I bliver ikke helt usynlige, så kom ikke for tæt på!\n\nHvad, troede I, at jeg ville prøve det? Jeg har en butik at passe!\n\nHvis det virker, tilføjer jeg jeres navn med småt! Hvis ikke... ja, så vil jeg mindes jer med glæde. Held og lykke!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -73,6 +109,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ad136d1c6859317bf338564f2b9c6b7b6330218698b4f2223f0b40640576d05d"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -101,6 +147,10 @@
     },
     "deDE": {
       "description": "Seit Kriegsende versuchen die Leute, auf den Hyjal zu gelangen, aber es gibt ein großes Problem... nämlich die ganzen Dämonen in der Flüsternden Schlucht!\r\n\r\nIch glaube, ich habe die Lösung. Ein Gebräu aus regionalen Zutaten könnte es dem Anwender ermöglichen, sich so gut in die Umgebung von Winterspring einzufügen, dass die Kreaturen hier einen nicht so leicht erkennen können.\r\n\r\nIch würde diese Theorie gerne überprüfen... wenn Ihr bereit seid, mir ein paar Kleinigkeiten zu bringen!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Ich bin sehr gespannt auf die alchemistischen Möglichkeiten, die sich daraus ergeben!",
+        "fde42fc435ec2470d104": "Also gut, ich mische das alles zusammen und Ihr könnt es dann umrühren!\n\nUnd denkt dran: Das funktioniert nur in Winterspring. Und es gewährt keine perfekte Verborgenheit, also geht nicht zu nah heran!\n\nWas? Ihr dachtet, ich würde es ausprobieren? Ich muss doch den Laden am Laufen halten!\n\nWenn es funktioniert, werde ich Euren Namen dazuschreiben. Und wenn nicht... dann bleibt Ihr mir in guter Erinnerung. Viel Glück!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -121,6 +171,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -151,6 +213,10 @@
     },
     "enUS": {
       "description": "Folks have been trying to get onto Mount Hyjal since the end of the war, but there's one big problem... all the demons in Darkwhisper Gorge!\r\n\r\nI think I have the solution. A concoction made from locally-sourced ingredients might be able to make the drinker blend in with the Winterspring surroundings so that creatures here can't see you as easily.\r\n\r\nI'd love to test this theory, if you're game for bringing me a few small things!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "I'm so excited about the alchemical possibilities that this presents!",
+        "fde42fc435ec2470d104": "All right, I'll mix this all up and you can give it a whirl!\n\nNow remember, this'll only work in Winterspring. And it's not perfect invisibility, so don't get too close!\n\nWhat, you thought I was gonna try it out? I gotta shop to run!\n\nIf it works, I'll add your name to the fine print! If not... well, I'll remember you fondly. Good luck!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +237,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -201,6 +279,10 @@
     },
     "esES": {
       "description": "La gente ha tratado de llegar al Monte Hyjal desde que terminó la guerra, pero hay un gran problema... ¡Todos esos demonios de la Garganta Negro Rumor!\r\n\r\nAunque creo haber encontrado una solución. Un brebaje elaborado con ingredientes locales que podría hacer que quien lo beba se mimetice con el entorno de Cuna del Invierno, de forma que las criaturas no lo perciban tan fácilmente.\r\n\r\nMe encantaría probar esta teoría, pero solo si te animas a traerme unas cuantas cosillas, claro.",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "¡Me entusiasman las posibilidades alquímicas que esto ofrece!",
+        "fde42fc435ec2470d104": "¡Muy bien, lo mezclaré todo y podréis probarlo!\n\nRecordad: solo funciona en Cuna del Invierno. Y no os hará completamente invisibles, ¡así que no os acerquéis demasiado!\n\n¿Qué, pensabais que iba a probarlo yo? ¡Tengo una tienda que atender!\n\nSi funciona, añadiré vuestro nombre a la letra pequeña. Y si no... bueno, os recordaré con cariño. ¡Buena suerte!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -221,6 +303,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -251,6 +343,10 @@
     },
     "esMX": {
       "description": "Desde que terminó la guerra, la gente ha intentado llegar al Monte Hyjal, pero hay un gran problema... ¡todos los demonios de Garganta Negro Rumor!\r\n\r\nCreo tener la solución: un brebaje hecho con ingredientes locales. Si tengo razón, quizá permita a quien lo beba camuflarse con el entorno de Cuna del Invierno, de modo que las criaturas de aquí no adviertan tan fácilmente su presencia.\r\n\r\n¡Me encantaría probar esta teoría! ¿Te animas a traerme unas cositas?",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "¡Me entusiasman las posibilidades alquímicas que esto ofrece!",
+        "fde42fc435ec2470d104": "¡Muy bien, lo mezclaré todo y podrás probarlo!\n\nRecuerda: solo funciona en Cuna del Invierno. Y no te hará completamente invisible, ¡así que no te acerques demasiado!\n\n¿Qué, pensabas que iba a probarlo yo? ¡Tengo una tienda que atender!\n\nSi funciona, agregaré tu nombre a la letra pequeña. Y si no... bueno, te recordaré con cariño. ¡Buena suerte!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -271,6 +367,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -301,6 +407,10 @@
     },
     "frFR": {
       "description": "Depuis la fin de la guerre, beaucoup de gens essaient de se rendre au mont Hyjal, mais les démons qui infestent la gorge du Sombre murmure posent problème.\r\n\r\nJe crois avoir trouvé la solution : une concoction à base d’ingrédients locaux qui pourrait permettre à ceux qui la boivent de se fondre dans le paysage du Berceau-de-l’Hiver afin de ne pas se faire repérer facilement par les monstres.\r\n\r\nJ’adorerais tester cette théorie, si vous acceptez de m’apporter quelques petites choses !",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Les possibilités alchimiques que cela ouvre m’enthousiasment !",
+        "fde42fc435ec2470d104": "Très bien, je mélange tout ça et vous pourrez faire un essai !\n\nN’oubliez pas : ça ne fonctionne qu’au Berceau-de-l’Hiver. Et l’invisibilité n’est pas parfaite, alors ne vous approchez pas trop !\n\nQuoi, vous pensiez que j’allais l’essayer moi-même ? J’ai une boutique à tenir !\n\nSi ça marche, j’ajouterai votre nom en petits caractères ! Sinon… eh bien, je garderai un bon souvenir de vous. Bonne chance !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -321,6 +431,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -351,6 +471,10 @@
     },
     "hrHR": {
       "description": "Ljudi se pokušavaju popeti na Mount Hyjal od kraja rata, ali postoji jedan velik problem... svi demoni u Darkwhisper Gorgeu!\r\n\r\nMislim da imam rješenje. Pripravak od lokalnih sastojaka mogao bi pomoći onome tko ga popije da se stopi s okolinom Winterspringa tako da ga ovdašnja stvorenja ne mogu lako vidjeti.\r\n\r\nVolio bih ispitati tu teoriju, ako si spreman donijeti mi nekoliko sitnica!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Tako sam uzbuđena zbog alkemijskih mogućnosti koje ovo pruža!",
+        "fde42fc435ec2470d104": "Dobro, sve ću to pomiješati, a vi možete isprobati!\n\nSamo zapamtite, djeluje samo u Winterspringu. I ne pruža potpunu nevidljivost, zato se nemojte previše približiti!\n\nŠto, mislili ste da ću ja to isprobati? Moram voditi trgovinu!\n\nAko uspije, dodat ću vaše ime sitnim slovima! Ako ne... pa, rado ću vas se sjećati. Sretno!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -372,6 +496,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ad136d1c6859317bf338564f2b9c6b7b6330218698b4f2223f0b40640576d05d"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -400,6 +534,10 @@
     },
     "itIT": {
       "description": "Hai trovato una versione corrotta e malata di quella che somiglia a una pianta di Fiorcanto. Emana un odore acre ed è evidente che ha bisogno di cure immediate per tornare al suo stato originale.",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Sono così entusiasta delle possibilità alchemiche che questo offre!",
+        "fde42fc435ec2470d104": "D'accordo, mescolerò tutto e tu potrai provarlo!\n\nRicorda, funzionerà solo a Fontefredda. E non rende del tutto invisibili, quindi non avvicinarti troppo!\n\nCome, pensavi che l'avrei provato io? Ho un negozio da mandare avanti!\n\nSe funziona, aggiungerò il tuo nome nelle scritte in piccolo! Altrimenti... beh, ti ricorderò con affetto. Buona fortuna!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -420,6 +558,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -448,6 +596,10 @@
     },
     "koKR": {
       "description": "전쟁이 끝난 뒤로 다들 하이잘 산에 오르려고 애썼지만, 커다란 문제가 하나 있어요. 바로 검은속삭임 협곡의 악마들이죠!\r\n\r\n해결책이 떠올랐어요. 이곳에서 구한 재료로 혼합물을 만들면 마신 사람이 여명의 설원 풍경에 녹아들어 이곳 생명체들의 눈에 잘 띄지 않을지도 몰라요.\r\n\r\n재료 몇 가지만 구해 주실래요? 제 생각이 맞는지 꼭 시험해 보고 싶어요!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "이것이 열어 줄 연금술의 가능성을 생각하니 정말 신나요!",
+        "fde42fc435ec2470d104": "좋아요, 이걸 전부 섞을 테니 한번 시험해 보세요!\n\n기억하세요. 이건 여명의 설원에서만 통합니다. 완벽하게 투명해지는 것도 아니니 너무 가까이 가지 마시고요!\n\n뭐라고요, 제가 시험해 볼 줄 아셨어요? 전 가게를 운영해야 한다고요!\n\n성공하면 주의 사항에 당신 이름을 작게 적어 둘게요! 실패하면... 음, 좋은 기억으로 간직할게요. 행운을 빌어요!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -468,6 +620,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -498,6 +660,10 @@
     },
     "plPL": {
       "description": "Ludzie próbują dostać się na górę Hyjal od końca wojny, ale jest jeden wielki problem... wszystkie demony w Darkwhisper Gorge!\r\n\r\nMyślę, że mam rozwiązanie. Mikstura z miejscowych składników może pomóc pijącemu wtopić się w otoczenie Winterspring, by tutejsze stworzenia nie widziały go tak łatwo.\r\n\r\nChętnie sprawdzę teorię, jeśli zechcesz przynieść mi kilka drobiazgów!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Jestem zachwycona możliwościami alchemicznymi, jakie to stwarza!",
+        "fde42fc435ec2470d104": "Dobrze, wymieszam to wszystko, a wy możecie to wypróbować!\n\nPamiętajcie, to działa tylko w Winterspring. I nie zapewnia pełnej niewidzialności, więc nie podchodźcie zbyt blisko!\n\nCo, myśleliście, że sama to wypróbuję? Muszę prowadzić sklep!\n\nJeśli zadziała, dopiszę wasze imię drobnym drukiem! A jeśli nie... cóż, będę was mile wspominać. Powodzenia!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -519,6 +685,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ad136d1c6859317bf338564f2b9c6b7b6330218698b4f2223f0b40640576d05d"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -547,6 +723,10 @@
     },
     "ptBR": {
       "description": "Muita gente tem tentado subir o Monte Hyjal desde o fim da guerra, mas tem um problemão... Os demônios na Garganta do Sussurro Sombrio!\r\n\r\nAcho que tenho a solução. Uma mistura feita de ingredientes locais pode fazer com que quem a beber se camufle na paisagem de Hibérnia, dificultando que as criaturas vejam você.\r\n\r\nEu adoraria testar essa teoria, se você topar me trazer algumas coisinhas!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Estou tão empolgada com as possibilidades alquímicas que isso oferece!",
+        "fde42fc435ec2470d104": "Certo, vou misturar tudo e você pode experimentar!\n\nLembre-se: isso só funciona em Hibérnia. E a invisibilidade não é perfeita, então não chegue perto demais!\n\nO quê, achou que eu ia testar? Tenho uma loja para cuidar!\n\nSe funcionar, vou acrescentar seu nome nas letras miúdas! Se não... bem, vou me lembrar de você com carinho. Boa sorte!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -567,6 +747,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -597,6 +787,10 @@
     },
     "ruRU": {
       "description": "Разные смельчаки жаждут взойти на гору Хиджал еще с окончания войны, но многих останавливает одна неразрешимая проблема... демоны, которыми кишит Теснина Зловещего Шепота!\r\n\r\nИ, кажется, я нашла выход из положения. Один отвар из местных ингредиентов позволит выпившему его затеряться в местности Зимних Ключей и не попасться на глаза враждебным созданиям.\r\n\r\nЯ бы опробовала это на практике, если ты не прочь принести мне пару мелочей.",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Я так взволнована алхимическими возможностями, которые это открывает!",
+        "fde42fc435ec2470d104": "Ладно, я все смешаю, а вы сможете испытать!\n\nТолько помните: это действует лишь в Зимних Ключах. И невидимость не полная, так что не подходите слишком близко!\n\nЧто, вы думали, я сама стану это пробовать? Мне ведь нужно присматривать за лавкой!\n\nЕсли сработает, я добавлю ваше имя в текст мелким шрифтом! А если нет... что ж, буду вспоминать вас с теплотой. Удачи!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -617,6 +811,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -649,6 +853,10 @@
     },
     "svSE": {
       "description": "Folk har försökt ta sig upp på Mount Hyjal sedan kriget tog slut, men det finns ett stort problem... alla demonerna i Darkwhisper Gorge!\r\n\r\nJag tror att jag har lösningen. En brygd gjord av lokala ingredienser kanske kan få den som dricker den att smälta in i Wintersprings omgivningar så att varelserna här inte ser dig lika lätt.\r\n\r\nJag skulle gärna pröva teorin om du är villig att hämta några småsaker åt mig!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Jag är så uppspelt över de alkemiska möjligheter som det här innebär!",
+        "fde42fc435ec2470d104": "Okej, jag blandar ihop allt så kan ni prova!\n\nKom ihåg att det bara fungerar i Winterspring. Och osynligheten är inte perfekt, så gå inte för nära!\n\nVadå, trodde ni att jag skulle prova det? Jag har en butik att sköta!\n\nOm det fungerar lägger jag till ert namn i det finstilta! Om inte... ja, då kommer jag att minnas er med värme. Lycka till!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -670,6 +878,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ad136d1c6859317bf338564f2b9c6b7b6330218698b4f2223f0b40640576d05d"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -700,6 +918,10 @@
     },
     "trTR": {
       "description": "İnsanlar savaş bittiğinden beri Mount Hyjal'a çıkmaya çalışıyor ama büyük bir sorun var... Darkwhisper Gorge'daki bütün o iblisler!\n\nÇözümü bulduğumu düşünüyorum. Yerel malzemelerden yapılmış bir karışım, içenin Winterspring çevresine uyum sağlamasını sağlayabilir. Böylece buradaki yaratıklar seni o kadar kolay göremez.\n\nBana birkaç küçük şey getirmeye hazırsan bu kuramı sınamayı çok isterim!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Bunun sunduğu simya olanakları beni çok heyecanlandırıyor!",
+        "fde42fc435ec2470d104": "Pekâlâ, hepsini karıştıracağım ve sen de deneyebilirsin!\n\nUnutma, bu yalnızca Winterspring'de işe yarar. Ayrıca kusursuz bir görünmezlik sağlamaz, o yüzden fazla yaklaşma!\n\nNe, bunu benim deneyeceğimi mi sandın? İşletmem gereken bir dükkân var!\n\nİşe yararsa adını küçük yazılara eklerim! Yaramazsa... pekâlâ, seni sevgiyle anacağım. İyi şanslar!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -721,6 +943,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ad136d1c6859317bf338564f2b9c6b7b6330218698b4f2223f0b40640576d05d"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -750,6 +982,10 @@
     },
     "ukUA": {
       "description": "Люди намагаються дістатися на гору Гіджал від кінця війни, але є одна велика проблема... усі ті демони в ущелині Темного Шепоту!\r\n\r\nЗдається, я знаю, що робити. Напій із місцевих складників, можливо, допоможе тому, хто його вип'є, злитися з довкіллям Зимоключа, щоб тутешнім істотам було важче тебе помітити.\r\n\r\nЯ залюбки перевірю цю теорію, якщо ти готовий принести мені кілька дрібничок!",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "Я в захваті від алхімічних можливостей, які це відкриває!",
+        "fde42fc435ec2470d104": "Гаразд, я все змішаю, а ви зможете випробувати!\n\nПам'ятайте, це діє лише у Вінтерспрінґу. І невидимість не цілковита, тож не підходьте надто близько!\n\nЩо, ви думали, я сама це випробую? Мені ж треба крамницею займатися!\n\nЯкщо спрацює, я додам ваше ім'я дрібним шрифтом! А якщо ні... що ж, згадуватиму вас із теплотою. Щасти!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -771,6 +1007,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ad136d1c6859317bf338564f2b9c6b7b6330218698b4f2223f0b40640576d05d"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -799,6 +1045,10 @@
     },
     "zhCN": {
       "description": "战争结束后，许多人都想登上海加尔山，可有个大麻烦……暗语峡谷里到处都是恶魔！\r\n\r\n我想自己找到了解决办法。用当地材料调制一种药剂，或许能让饮用者融入冬泉谷的环境，使这里的生物不那么容易看见你。\r\n\r\n如果你愿意替我找来几样小东西，我很想验证一下这个想法！",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "这带来的炼金术可能性真让我兴奋！",
+        "fde42fc435ec2470d104": "好，我把这些东西混合起来，你就可以试试了！\n\n记住，这只在冬泉谷有效。而且它不能让你完全隐形，所以别靠得太近！\n\n什么，你以为我会自己试？我还得经营店铺呢！\n\n如果管用，我会把你的名字加进小字说明里！如果不管用……嗯，我会怀念你的。祝你好运！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -819,6 +1069,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -849,6 +1109,10 @@
     },
     "zhTW": {
       "description": "自從戰爭結束以來，人們一直試著登上海加爾山，但有一個大問題…那就是暗語峽谷的那些惡魔！\r\n\r\n我應該能解決這個問題。用當地材料製成的藥劑或許可以讓飲用者與冬泉谷的周圍環境融為一體，不會輕易被當地生物發現。\r\n\r\n如果你願意帶一些小東西來給我，我很樂意證實這個理論！",
+      "dialogue": {
+        "46b35cc853b37d5ed0ee": "這帶來的鍊金術可能性真讓我興奮！",
+        "fde42fc435ec2470d104": "好，我把這些東西混合起來，你就可以試試了！\n\n記住，這只在冬泉谷有效。而且它不能讓你完全隱形，所以別靠得太近！\n\n什麼，你以為我會自己試？我還得經營店鋪呢！\n\n如果管用，我會把你的名字加進小字說明裡！如果不管用……嗯，我會懷念你的。祝你好運！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -869,6 +1133,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.46b35cc853b37d5ed0ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fde42fc435ec2470d104": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

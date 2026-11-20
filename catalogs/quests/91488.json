@@ -1,8 +1,30 @@
 {
   "areaId": 16,
+  "dialogueContexts": {
+    "2281710213d294127a92": {
+      "contributionId": 114451,
+      "lineId": "q:91488:progress",
+      "npcId": 3621,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "2d0ab4f8e7f8401cc082": {
+      "contributionId": 114271,
+      "lineId": "q:91488:complete",
+      "npcId": 3621,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Při poslední šarvátce s krvavými elfy mi těžce poničili stan. Už 3 noci jsem napospas živlům.\n\nDá se spravit pár kůžemi z mosshoofů, ale kvůli nedostatku spánku nemám sílu je lovit.\n\nNejsnáz se mosshoofové loví na západ a na jih odtud, ale poslouží kůže z jakéhokoli mosshoofa.",
+      "dialogue": {
+        "2281710213d294127a92": "Už máš ty kůže, $c? Na obloze se stahují dešťové mraky...",
+        "2d0ab4f8e7f8401cc082": "Děkuji, příteli. Bude dobré zase spát se střechou nad hlavou. A ty také, pokud budeš chtít."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +75,10 @@
     },
     "daDK": {
       "description": "Under vores seneste skærmydsel med blodalverne blev mit telt slemt beskadiget. I tre nætter har jeg været overladt til elementernes nåde.\r\n\r\nDet kan repareres med nogle mosshovskind, men mangel på søvn har gjort mig ude af stand til selv at jage dem.\r\n\r\nDe letteste mosshove at jage findes vest og syd herfra, men skindet fra enhver mooshoof kan bruges.",
+      "dialogue": {
+        "2281710213d294127a92": "Har du skindene endnu, $c? Jeg kan se regnskyer samle sig på himlen...",
+        "2d0ab4f8e7f8401cc082": "Tak, ven. Det bliver godt at sove med tag over hovedet igen. Det kan du også, hvis du vil."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +95,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5acc5ff88c233e68c3599e54cbd312cd70e39b10372e56e366700638a0e0f22c"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +128,10 @@
     },
     "deDE": {
       "description": "Während unseres letzten Gefechts mit den Blutelfen wurde mein Zelt arg lädiert. Seit drei Nächten bin ich den Elementen nun schon hilflos ausgeliefert.\r\n\r\nMit ein paar Mooshufbälgen lässt sich das wieder richten, aber der Schlafmangel macht es für mich unmöglich, sie selbst zu jagen.\r\n\r\nMooshufe lassen sich am einfachsten westlich und südlich von hier jagen. Ihr könnt mir aber auch die Bälge anderer Mooshufe bringen.",
+      "dialogue": {
+        "2281710213d294127a92": "Habt Ihr die Felle schon, $c? Am Himmel ziehen Regenwolken auf...",
+        "2d0ab4f8e7f8401cc082": "Danke, Freund. Es wird gut sein, wieder ein Dach über dem Kopf zu haben. Und Ihr könnt das auch, wenn Ihr möchtet."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +147,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +180,10 @@
     },
     "enUS": {
       "description": "During our last skirmish with the blood elves, my tent was badly damaged. For three nights, I have been at the mercy of the elements.\r\n\r\nIt can be repaired with a few mosshoof hides, but a lack of sleep has left me unable to hunt them myself.\r\n\r\nThe easiest mosshooves to hunt are west and south of here, but the hide of any mooshoof will do.",
+      "dialogue": {
+        "2281710213d294127a92": "Do you have those hides yet, $c? I see rain clouds forming in the sky...",
+        "2d0ab4f8e7f8401cc082": "Thank you, friend. It will be good to sleep with a cover over my head again. And for you as well, if you wish."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +199,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -158,6 +234,10 @@
     },
     "esES": {
       "description": "Durante nuestra última escaramuza con los elfos de sangre, mi tienda sufrió graves daños, así que llevo tres noches a merced de los elementos.\r\n\r\nPodría repararla con unos pocos pellejos de Pezuñamusgo, pero la falta de sueño me impide buscarlos yo mismo.\r\n\r\nLos Pezuñamusgo más fáciles de cazar están al oeste y al sur de aquí, y servirá el pellejo de cualquiera.",
+      "dialogue": {
+        "2281710213d294127a92": "¿Ya tienes esas pieles, $c? Veo que se forman nubes de lluvia...",
+        "2d0ab4f8e7f8401cc082": "Gracias, amigo. Será agradable volver a dormir bajo techo. Y tú también puedes hacerlo, si quieres."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -173,6 +253,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -196,6 +286,10 @@
     },
     "esMX": {
       "description": "En nuestra última escaramuza con los elfos de sangre, mi tienda quedó muy dañada. Llevo tres noches a la intemperie.\r\n\r\nSe puede arreglar con unos cuantos pellejos de pezuñamusgo, pero la falta de sueño me dejó sin fuerzas para ir a cazarlos.\r\n\r\nLos pezuñamusgos más fáciles de cazar están al oeste y al sur de aquí, pero cualquier pellejo de este espécimen me servirá.",
+      "dialogue": {
+        "2281710213d294127a92": "¿Ya tienes esas pieles, $c? Veo que se forman nubes de lluvia...",
+        "2d0ab4f8e7f8401cc082": "Gracias, amigo. Será bueno volver a dormir bajo techo. Tú también puedes hacerlo, si quieres."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -211,6 +305,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -234,6 +338,10 @@
     },
     "frFR": {
       "description": "Ma tente a été saccagée lors de notre dernier accrochage avec les Elfes de sang. Voilà trois nuits que je me trouve à la merci des éléments.\r\n\r\nIl me suffirait de quelques peaux de sabot-de-mousse pour la remettre en état… mais avec le manque de sommeil, je suis incapable de chasser.\r\n\r\nLes sabot-de-mousse les plus faciles à chasser se trouvent à l’ouest et au sud, mais n’importe quelle peau cette espèce fera l’affaire.",
+      "dialogue": {
+        "2281710213d294127a92": "Tu as ces peaux, $c ? Je vois des nuages de pluie se former dans le ciel...",
+        "2d0ab4f8e7f8401cc082": "Merci, mon ami. Cela fera du bien de dormir à nouveau sous un toit. Vous le pouvez aussi, si vous le souhaitez."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -249,6 +357,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -272,6 +390,10 @@
     },
     "hrHR": {
       "description": "Tijekom našeg posljednjeg okršaja s krvnim vilenjacima moj je šator teško oštećen. Tri sam noći prepušten na milost i nemilost vremenu.\r\n\r\nMože se popraviti s nekoliko mosshoofovih koža, ali zbog nedostatka sna ne mogu ih sam loviti.\r\n\r\nNajlakši mosshoofovi za lov nalaze se zapadno i južno odavde, ali poslužit će koža bilo kojeg mooshoofa.",
+      "dialogue": {
+        "2281710213d294127a92": "Imaš li već te kože, $c? Vidim kišne oblake na nebu...",
+        "2d0ab4f8e7f8401cc082": "Hvala ti, prijatelju. Bit će lijepo opet spavati pod krovom. I ti možeš, ako želiš."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -288,6 +410,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5acc5ff88c233e68c3599e54cbd312cd70e39b10372e56e366700638a0e0f22c"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -312,6 +444,10 @@
     },
     "itIT": {
       "description": "Durante l'ultima scaramuccia con gli elfi del sangue, la mia tenda è stata gravemente danneggiata. Da tre notti sono in balia degli elementi.\r\n\r\nSi può riparare con qualche pelle di Mosshoof, ma la mancanza di sonno mi impedisce di cacciarli personalmente.\r\n\r\nI Mosshoof più facili da cacciare sono a ovest e a sud di qui, ma la pelle di qualsiasi Mosshoof andrà bene.",
+      "dialogue": {
+        "2281710213d294127a92": "Hai già quelle pelli, $c? Vedo addensarsi nubi di pioggia...",
+        "2d0ab4f8e7f8401cc082": "Grazie, amico. Sarà bello dormire di nuovo con un tetto sopra la testa. E anche per te, se vorrai."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -328,6 +464,17 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5acc5ff88c233e68c3599e54cbd312cd70e39b10372e56e366700638a0e0f22c"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -352,6 +499,10 @@
     },
     "koKR": {
       "description": "지난번 블러드 엘프와 맞붙었을 때 천막이 심하게 손상됐소. 사흘 밤 내내 비바람을 맞으며 지냈지.\r\n\r\n이끼발굽 가죽 몇 장이면 수선할 수 있지만 잠을 통 못 잔 탓에 직접 사냥하러 갈 힘이 없소.\r\n\r\n사냥하기 가장 쉬운 이끼발굽은 여기서 서쪽과 남쪽에 있지만, 아무 이끼발굽 가죽이나 상관없소.",
+      "dialogue": {
+        "2281710213d294127a92": "$c, 가죽은 구해 오셨나요? 하늘에 비구름이 몰려오고 있어요...",
+        "2d0ab4f8e7f8401cc082": "고맙네, 친구. 다시 지붕 아래서 잠을 잘 수 있다니 좋겠군. 자네도 원한다면 함께하게."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -367,6 +518,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -390,6 +551,10 @@
     },
     "plPL": {
       "description": "Podczas ostatniej potyczki z krwawymi elfami mój namiot został poważnie uszkodzony. Od trzech nocy jestem zdany na łaskę żywiołów.\r\n\r\nMożna go naprawić kilkoma skórami mosshoofów, ale brak snu sprawił, że nie mam siły sam na nie polować.\r\n\r\nNajłatwiej polować na mosshoofy na zachód i południe stąd, ale nada się skóra każdego z nich.",
+      "dialogue": {
+        "2281710213d294127a92": "Masz już te skóry, $c? Widzę, że na niebie zbierają się deszczowe chmury...",
+        "2d0ab4f8e7f8401cc082": "Dziękuję, przyjacielu. Dobrze będzie znów spać pod dachem. Ty też możesz, jeśli chcesz."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -406,6 +571,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5acc5ff88c233e68c3599e54cbd312cd70e39b10372e56e366700638a0e0f22c"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -430,6 +605,10 @@
     },
     "ptBR": {
       "description": "Em nossa última luta com os elfos sangrentos, minha barraca foi destruída. Há três noites, estou à mercê das intempéries.\r\n\r\nDá para consertar com uns pelegos de cascomusgo, mas a falta de sono me deixou incapaz de ir caçá-los pessoalmente.\r\n\r\nOs cascomusgos mais fáceis de caçar ficam a oeste e a sul daqui, mas serve pelego de qualquer cascomusgo.",
+      "dialogue": {
+        "2281710213d294127a92": "Já trouxe aqueles couros, $c? Vejo nuvens de chuva se formando no céu...",
+        "2d0ab4f8e7f8401cc082": "Obrigado, amigo. Vai ser bom dormir sob um teto novamente. Você também pode, se quiser."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -445,6 +624,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -468,6 +657,10 @@
     },
     "ruRU": {
       "description": "Во время последней схватки с эльфами крови пострадала моя палатка. Из-за этого я уже три ночи оставался без всякой защиты от погоды.\r\n\r\nПалатку можно починить – для этого нужны шкуры мохоногого оленя, но сам я из-за недосыпа не могу за ними отправиться.\r\n\r\nНа этих оленей проще всего охотиться к западу и югу отсюда, но можешь найти их и в других местах – шкуры у всех одинаковые.",
+      "dialogue": {
+        "2281710213d294127a92": "Шкуры уже у тебя, $c? На небе собираются дождевые тучи...",
+        "2d0ab4f8e7f8401cc082": "Спасибо, друг. Хорошо будет снова спать под крышей. Ты тоже можешь, если хочешь."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -483,6 +676,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -506,6 +709,10 @@
     },
     "svSE": {
       "description": "Under vår senaste skärmytsling med blodsalverna skadades mitt tält svårt. I tre nätter har jag varit utlämnad åt vädrets makter.\r\n\r\nDet kan lagas med några mosshoof-hudar, men sömnbristen har gjort mig oförmögen att jaga dem själv.\r\n\r\nDe mosshooves som är lättast att jaga finns väster och söder om här, men skinnet från vilken mooshoof som helst duger.",
+      "dialogue": {
+        "2281710213d294127a92": "Har du skinnen än, $c? Jag ser regnmoln samlas på himlen...",
+        "2d0ab4f8e7f8401cc082": "Tack, vännen. Det blir skönt att sova under tak igen. Du kan också göra det, om du vill."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -522,6 +729,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5acc5ff88c233e68c3599e54cbd312cd70e39b10372e56e366700638a0e0f22c"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -546,6 +763,10 @@
     },
     "trTR": {
       "description": "Kan elfleriyle son çarpışmamızda çadırım ağır hasar gördü. Üç gecedir doğa koşullarının insafına kaldım.\r\n\r\nBirkaç mosshoof postuyla onarılabilir, ama uykusuzluk yüzünden onları kendim avlayacak durumda değilim.\r\n\r\nAvlaması en kolay mosshooflar buranın batısında ve güneyinde, ama herhangi bir mooshoof'un postu iş görür.",
+      "dialogue": {
+        "2281710213d294127a92": "Postları getirdin mi, $c? Gökyüzünde yağmur bulutları oluşuyor...",
+        "2d0ab4f8e7f8401cc082": "Teşekkürler dostum. Yeniden başımın üstünde bir çatıyla uyumak güzel olacak. İstersen sen de kalabilirsin."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -562,6 +783,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5acc5ff88c233e68c3599e54cbd312cd70e39b10372e56e366700638a0e0f22c"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -586,6 +817,10 @@
     },
     "ukUA": {
       "description": "Під час нашої останньої сутички з ельфами крові мій намет сильно пошкодили. Уже три ночі я беззахисний перед негодою.\r\n\r\nЙого можна полагодити кількома шкурами мохокопитів, але через недосипання я не можу вполювати їх сам.\r\n\r\nНайлегше полювати на мохокопитів на захід і південь звідси, але підійде шкура будь-якого мохокопита.",
+      "dialogue": {
+        "2281710213d294127a92": "Шкури вже у тебе, $c? Бачу, на небі збираються дощові хмари...",
+        "2d0ab4f8e7f8401cc082": "Дякую, друже. Буде добре знову спати під дахом. І ти теж можеш, якщо захочеш."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -602,6 +837,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "5acc5ff88c233e68c3599e54cbd312cd70e39b10372e56e366700638a0e0f22c"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -626,6 +871,10 @@
     },
     "zhCN": {
       "description": "上次与血精灵交战时，我的帐篷损坏得很严重。整整三个晚上，我都只能任凭风吹雨打。\r\n\r\n只要有几张苔蹄鹿皮就能修好，可连续失眠让我根本无力亲自狩猎。\r\n\r\n这里西边和南边的苔蹄鹿最容易猎杀，不过任何苔蹄鹿的皮都可以。",
+      "dialogue": {
+        "2281710213d294127a92": "$c，皮毛带来了吗？天上正聚起雨云……",
+        "2d0ab4f8e7f8401cc082": "谢谢你，朋友。能再次在屋檐下睡觉真好。如果你愿意，也可以留下来。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -641,6 +890,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -664,6 +923,10 @@
     },
     "zhTW": {
       "description": "在我們上一次與血精靈的衝突中，我的帳篷嚴重損毀。這三天三夜以來，我一直任憑風吹雨打。\r\n\r\n只要有幾張苔蹄毛皮就能把它修好，但缺乏睡眠讓我無法親自去狩獵牠們。\r\n\r\n西邊和南邊的苔蹄是最容易獵捕的，不過任何苔蹄的毛皮都可以。",
+      "dialogue": {
+        "2281710213d294127a92": "$c，皮毛帶來了嗎？天上正聚起雨雲……",
+        "2d0ab4f8e7f8401cc082": "謝謝你，朋友。能再次在屋簷下睡覺真好。如果你願意，也可以留下來。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -679,6 +942,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.2281710213d294127a92": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.2d0ab4f8e7f8401cc082": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

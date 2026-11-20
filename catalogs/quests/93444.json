@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "a3bdafed3e761c4a7a6d": {
+      "contributionId": 118485,
+      "lineId": "q:93444:progress",
+      "npcId": 41861,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "a77fd4e8cd46a50317e6": {
+      "contributionId": 118472,
+      "lineId": "q:93444:complete",
+      "npcId": 41861,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Nejzuřivější felová chiméra Hyjalu se jmenuje Ghansurok. Snáší se z výšky a loví zvěř, která se nestihla schovat do nor. A nejen to – kvůli ní jsou lety na hipogryfech na Hyjal a zpátky ještě nervóznější než obvykle!\n\nNejdřív ulov jednoho z nočních šavlozubů, kteří se skrývají ve stínech u vrcholu. Pak maso z padlé kočky polož někam na severní hřeben, kde se chiméry krmí.\n\nNalákej k němu Ghansuroka. Zabij tu bestii a vrať se s jejím srdcem. Marn ho prozkoumá a pomůže tak Hyjal uzdravit.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok je stejně jedovatý jako zuřivý. Nesmíte váhat.",
+        "a77fd4e8cd46a50317e6": "Nebe i kopce teď budou mnohem bezpečnější. Děkuji, $N. Tím jedem jsme trpěli příliš dlouho."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -24,6 +46,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -52,6 +84,10 @@
     },
     "daDK": {
       "description": "Hyjals mest ondskabsfulde felkimære er kendt som Ghansurok. Den kan lide at styrtdykke ned og jage vilde dyr, der er fanget uden for deres huler. Ikke nok med det, den gør hippogryfrejser ind og ud af Hyjal mere stressende end normalt!\r\n\r\nJag først en af de Nightsabers, der gemmer sig i toppens skygger. Læg derefter kød fra den faldne kat et sted på den nordlige højderyg, hvor kimærerne æder.\r\n\r\nLok Ghansurok hen til det. Dræb udyret og vend tilbage med dets hjerte. Marn vil studere det for at hjælpe med at hele Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok er lige så giftig, som den er vild. Du må ikke tøve.",
+        "a77fd4e8cd46a50317e6": "Himlen og bakkerne bliver langt sikrere nu. Tak, $N. Vi har lidt under den gift alt for længe."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -73,6 +109,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cd0b22761b8accd8ff823ecc0eee8e0f57a7d03409bd51a6ed4004d64d3e5915"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -101,6 +147,10 @@
     },
     "deDE": {
       "description": "Die bösartigste Teufelschimäre des Hyjal ist als Ghansurok bekannt. Sie liebt es, herabzustürzen und Jagd auf Wildtiere zu machen, die sich außerhalb ihrer Bauten aufhalten. Nicht nur das - sie macht das Reisen per Hippogryph in den Hyjal hinein und wieder hinaus stressiger als gewöhnlich!\r\n\r\nZuerst müsst Ihr einen der Nachtsäbler zur Strecke bringen, die sich in den Schatten des Gipfels verbergen. Als Nächstes platziert Ihr das Fleisch der gefallenen Raubkatze irgendwo auf dem nördlichen Grat, wo die Schimären fressen.\r\n\r\nLockt Ghansurok dorthin. Tötet die Bestie und kehrt mit ihrem Herzen zurück. Marn wird es studieren, um den Hyjal zu heilen.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok ist ebenso giftig wie wild. Ihr dürft nicht zögern.",
+        "a77fd4e8cd46a50317e6": "Der Himmel und die Hügel werden jetzt viel sicherer sein. Danke, $N. Wir haben viel zu lange unter diesem Gift gelitten."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -121,6 +171,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -151,6 +211,10 @@
     },
     "enUS": {
       "description": "The most vicious fel chimaera of Hyjal is known as Ghansurok. It likes to swoop in and prey on wildlife caught out of their burrows. Not only that, it's making hippogryph travel in and out of Hyjal more stressful than usual!\r\n\r\nFirst, hunt down one of the Nightsabers hiding in the Summit's shadows. Next, place meat from the fallen cat somewhere on the northern ridge where chimaeras feed.\r\n\r\nLure Ghansurok towards it. Slay the beast and return with its heart. Marn will study it to help heal Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok is as noxious as it is ferocious. You must not hesitate.",
+        "a77fd4e8cd46a50317e6": "The skies and hills will be much safer now. Thank you, $N. We've been suffering that poisonous venom for too long."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -171,6 +235,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -200,6 +276,10 @@
     },
     "esES": {
       "description": "La quimera vil más cruel de Hyjal responde al nombre de Ghansurok. Tiene predilección por lanzarse en picado para cazar la fauna que ha salido de sus madrigueras. No solo eso, ¡su presencia complica mucho los viajes en hipogrifo para entrar y salir de Hyjal!\r\n\r\nPara empezar, caza uno de los sables de la noche que se ocultan en las sombras de la cima. Después, coloca carne del felino en algún lugar de la cresta norte, que es el lugar donde se alimentan las quimeras.\r\n\r\nAtrae a Ghansurok hacia ella, mata a la bestia y vuelve con su corazón. Marn lo estudiará para ayudar a sanar Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok es tan venenoso como feroz. No debes dudar.",
+        "a77fd4e8cd46a50317e6": "Los cielos y las colinas serán mucho más seguros ahora. Gracias, $N. Hemos sufrido ese veneno durante demasiado tiempo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -220,6 +300,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -250,6 +340,10 @@
     },
     "esMX": {
       "description": "La quimera vil más despiadada de Hyjal es conocida como Ghansurok. Le gusta lanzarse en picada y cazar a los animales salvajes que se alejan de sus madrigueras. Y no solo eso, ¡sino que está haciendo que los viajes en hipogrifo hacia y desde Hyjal sean más estresantes de lo habitual!\r\n\r\nPrimero, caza uno de los sables de la noche que se ocultan en las sombras de la cima. Luego, coloca la carne del felino abatido en algún lugar de la cresta norte, donde se alimentan las quimeras.\r\n\r\nAtrae a Ghansurok hacia allí. Mata a la bestia y trae su corazón. Marn lo estudiará para ayudar a sanar a Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok es tan venenoso como feroz. No debes dudar.",
+        "a77fd4e8cd46a50317e6": "Los cielos y las colinas serán mucho más seguros ahora. Gracias, $N. Hemos sufrido ese veneno durante demasiado tiempo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -270,6 +364,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -300,6 +404,10 @@
     },
     "frFR": {
       "description": "La plus féroce gangrechimère d’Hyjal a pour nom Ghansurok. Elle aime surprendre les proies qui s’aventurent un peu trop loin de leur terrier. Mais le plus gênant, c’est qu’elle rend les voyages à dos d’hippogriffe extrêmement stressants dans les environs d’Hyjal !\r\n\r\nVous devrez abattre un sabre-de-nuit gardien qui se cache dans les ombres du sommet. Déposez ensuite la viande du félin quelque part sur la crête nord, c’est le terrain de chasse des chimères.\r\n\r\nAttirez Ghansurok vers cet endroit. Tuez la bête et revenez avec son cœur. Marn l’étudiera afin de nous aider à soigner le mont Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok est aussi venimeux que féroce. Vous ne devez pas hésiter.",
+        "a77fd4e8cd46a50317e6": "Le ciel et les collines seront bien plus sûrs désormais. Merci, $N. Nous avons subi ce venin bien trop longtemps."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -320,6 +428,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -350,6 +468,10 @@
     },
     "hrHR": {
       "description": "Najopakija fel-kimera Hyjala poznata je kao Ghansurok. Voli se obrušiti i loviti divlje životinje uhvaćene izvan svojih jazbina. I ne samo to, zbog nje je putovanje hipogrifima u Hyjal i iz njega stresnije nego inače!\r\n\r\nNajprije pronađi jednog Nightsabera koji se skriva u sjenama vrha. Zatim stavi meso pale mačke negdje na sjeverni greben gdje se kimere hrane.\r\n\r\nNamami Ghansuroka prema njemu. Ubij zvijer i vrati se s njezinim srcem. Marn će ga proučiti kako bi pomogao izliječiti Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok je jednako otrovan koliko i svirep. Ne smijete oklijevati.",
+        "a77fd4e8cd46a50317e6": "Nebo i brda sada će biti mnogo sigurniji. Hvala vam, $N. Predugo smo trpjeli taj otrov."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -371,6 +493,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cd0b22761b8accd8ff823ecc0eee8e0f57a7d03409bd51a6ed4004d64d3e5915"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -399,6 +531,10 @@
     },
     "itIT": {
       "description": "Hai trovato una versione corrotta e malata di quella che somiglia a una pianta di Fiorcanto. Emana un odore acre ed è evidente che ha bisogno di cure immediate per tornare al suo stato originale.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok è tanto velenoso quanto feroce. Non devi esitare.",
+        "a77fd4e8cd46a50317e6": "I cieli e le colline saranno molto più sicuri ora. Grazie, $N. Abbiamo sofferto per quel veleno troppo a lungo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -419,6 +555,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -447,6 +593,10 @@
     },
     "koKR": {
       "description": "간수로크는 하이잘에서 가장 흉포한 지옥 키메라입니다. 굴 밖으로 나온 야생동물을 덮쳐 사냥하기를 좋아하죠. 심지어 하이잘을 드나드는 히포그리프 이동을 평소보다 훨씬 더 불안하게 만들고 있습니다!\r\n\r\n먼저 영원의 정상 그림자 속에 숨어 있는 밤호랑이 하나를 사냥하십시오. 그런 다음 밤호랑이 고기를 키메라들이 먹이를 구하는 북쪽 능선 어딘가에 놓으십시오.\r\n\r\n간수로크를 유인하는 겁니다. 야수를 처치한 뒤, 심장을 가져오십시오. 마른이 하이잘을 치유하는 법을 연구하는 데 사용할 겁니다.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "간수로크는 사나운 만큼 유독하지. 망설여서는 안 되네.",
+        "a77fd4e8cd46a50317e6": "이제 하늘과 언덕이 훨씬 안전해지겠군요. 고맙습니다, $N. 우리는 너무 오랫동안 그 독으로 고통받았습니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -467,6 +617,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -497,6 +657,10 @@
     },
     "plPL": {
       "description": "Najbardziej zaciekła spaczona chimera Hyjalu zwie się Ghansurok. Lubi spadać z nieba i polować na dzikie zwierzęta poza norami. Co więcej, sprawia, że podróże hipogryfami na Hyjal i z powrotem są bardziej stresujące niż zwykle!\r\n\r\nNajpierw wytrop jedną z nocnych szabli kryjących się w cieniach Szczytu. Potem umieść mięso zabitego kota gdzieś na północnej grani, gdzie żerują chimery.\r\n\r\nZwab do niego Ghansuroka. Zabij bestię i wróć z jej sercem. Marn je zbada, by pomóc uleczyć Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok jest równie jadowity, co zaciekły. Nie możesz się wahać.",
+        "a77fd4e8cd46a50317e6": "Niebo i wzgórza będą teraz znacznie bezpieczniejsze. Dziękuję, $N. Zbyt długo cierpieliśmy z powodu tego jadu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -518,6 +682,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cd0b22761b8accd8ff823ecc0eee8e0f57a7d03409bd51a6ed4004d64d3e5915"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -546,6 +720,10 @@
     },
     "ptBR": {
       "description": "A quimera vil mais brava de Hyjal leva o nome de Ghansurok. Num rasante súbito, ela captura os bichos na boca das suas tocas. Além disso, tem tornado as viagens de hipogrifo em Hyjal muito mais estressantes do que já são!\r\n\r\nVá caçar um sabre-da-noite à sombra do Pico. Depois, deixe a carcaça do felino no despenhadeiro ao norte, onde as quimeras se alimentam.\r\n\r\nAtraia Ghansurok até a carne, mate a fera e me traga o coração dela. Marn irá estudá-la para ajudar a curar o Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok é tão nocivo quanto feroz. Você não pode hesitar.",
+        "a77fd4e8cd46a50317e6": "Os céus e as colinas estarão muito mais seguros agora. Obrigado, $N. Sofremos com aquele veneno por tempo demais."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -566,6 +744,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -596,6 +784,10 @@
     },
     "ruRU": {
       "description": "Гансурок – самая злобная химера Скверны на всем Хиджале. Он любит охотиться, пикируя на зверей, осмелившихся покинуть нору. Кроме того, пока здесь свирепствует этот зверь, путешествия на гиппогрифах до горы и обратно стали уж очень напряженными!\r\n\r\nВыследи одного из ночных саблезубов, что прячутся в тенях скал, и убей. Затем оставь его тушу на северной гряде, где любит кормиться химера.\r\n\r\nПримани туда Гансурока. Убей зверя и возвращайся с его сердцем. Марн изучит его, чтобы помочь исцелить Хиджал.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Гансурок столь же ядовит, сколь и свиреп. Медлить нельзя.",
+        "a77fd4e8cd46a50317e6": "Теперь небеса и холмы станут куда безопаснее. Спасибо, $N. Мы слишком долго страдали от этого яда."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -616,6 +808,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -646,6 +848,10 @@
     },
     "svSE": {
       "description": "Hyjals grymmaste felkimär kallas Ghansurok. Den gillar att störtdyka och ta vilda djur som fångats utanför sina hålor. Inte nog med det, den gör hippogryffresor in och ut ur Hyjal mer påfrestande än vanligt!\r\n\r\nJaga först upp en av nattsablarna som gömmer sig i toppens skuggor. Lägg sedan kött från det fallna kattdjuret någonstans på den norra höjdryggen där kimärerna äter.\r\n\r\nLocka Ghansurok mot det. Dräp besten och återvänd med dess hjärta. Marn ska studera det för att hjälpa till att läka Hyjal.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok är lika giftig som den är våldsam. Du får inte tveka.",
+        "a77fd4e8cd46a50317e6": "Himlen och kullarna blir mycket säkrare nu. Tack, $N. Vi har lidit av det där giftet alltför länge."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -667,6 +873,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cd0b22761b8accd8ff823ecc0eee8e0f57a7d03409bd51a6ed4004d64d3e5915"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -695,6 +911,10 @@
     },
     "trTR": {
       "description": "Hyjal'ın en vahşi fel kimairası Ghansurok olarak bilinir. Yuvalarının dışında yakaladığı yaban hayvanlarını avlamak için dalış yapmayı sever. Üstelik Hyjal'a hippogryph ile gidip gelmeyi de her zamankinden daha stresli hale getiriyor!\r\n\r\nÖnce Summit'in gölgelerinde saklanan Nightsaber'lardan birini avla. Sonra öldürdüğün kedinin etini, kimairaların beslendiği kuzey sırtında bir yere bırak.\r\n\r\nGhansurok'u oraya çek. Yaratığı öldür ve kalbiyle dön. Marn, Hyjal'ı iyileştirmeye yardımcı olmak için onu inceleyecek.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Ghansurok vahşi olduğu kadar zehirlidir. Tereddüt etmemelisin.",
+        "a77fd4e8cd46a50317e6": "Gökyüzü ve tepeler artık çok daha güvenli olacak. Teşekkürler, $N. O zehir yüzünden çok uzun süre acı çektik."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -716,6 +936,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cd0b22761b8accd8ff823ecc0eee8e0f57a7d03409bd51a6ed4004d64d3e5915"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -744,6 +974,10 @@
     },
     "ukUA": {
       "description": "Найлютіша химера скверни на Гіджалі відома як Ґансурок. Вона полюбляє налітати й полювати на звірів, що опинилися поза своїми норами. До того ж через неї подорожі гіпогрифами до Гіджалу й назад стали ще тривожнішими!\r\n\r\nСпершу вистеж одного з нічних шаблезубів, що ховаються в тінях вершини. Потім поклади м'ясо вбитого кота десь на північному хребті, де живляться химери.\r\n\r\nПримани ним Ґансурока. Убий звіра й повертайся з його серцем. Марн дослідить його, щоб допомогти зцілити Гіджал.",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "Гансурок такий же отруйний, як і лютий. Не можна вагатися.",
+        "a77fd4e8cd46a50317e6": "Тепер небо й пагорби стануть набагато безпечнішими. Дякую, $N. Ми надто довго потерпали від тієї отрути."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -765,6 +999,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cd0b22761b8accd8ff823ecc0eee8e0f57a7d03409bd51a6ed4004d64d3e5915"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -793,6 +1037,10 @@
     },
     "zhCN": {
       "description": "海加尔山最凶残的邪能奇美拉名叫甘苏罗克。它喜欢从天而降，捕食那些跑出洞穴的野生动物。不仅如此，它还让进出海加尔山的角鹰兽航程变得格外危险！\r\n\r\n首先，去追捕一只潜伏在山顶阴影里的夜刃豹。然后，把这只大猫的肉放在北面山脊奇美拉觅食的地方。\r\n\r\n用它引来甘苏罗克。杀死这头野兽并取回它的心脏。马恩会研究这颗心脏，寻找治愈海加尔山的方法。",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "甘苏洛克既凶猛又毒辣。你绝不能犹豫。",
+        "a77fd4e8cd46a50317e6": "如今天空和山丘都会安全得多。谢谢你，$N。我们受那毒液之苦太久了。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -813,6 +1061,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -843,6 +1101,10 @@
     },
     "zhTW": {
       "description": "海加爾山最凶狠的魔化奇美拉就屬剛蘇羅克了。牠會把野生動物從巢穴裡抓出來，然後大快朵頤。不只這樣，牠還讓角鷹獸進出海加爾山時更加心驚膽跳！\r\n\r\n首先，必須獵殺一頭隱藏在山巔陰影處的夜刃豹。接著再把豹肉放在餵食奇美拉的北方山脊。\r\n\r\n把剛蘇羅克引向它。殺死那隻野獸，帶回牠的心臟。瑪恩會研究心臟，幫忙治療海加爾山。",
+      "dialogue": {
+        "a3bdafed3e761c4a7a6d": "甘蘇洛克既兇猛又有毒。你絕不能猶豫。",
+        "a77fd4e8cd46a50317e6": "如今天空和山丘都會安全得多。謝謝你，$N。我們受那毒液之苦太久了。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -863,6 +1125,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.a3bdafed3e761c4a7a6d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a77fd4e8cd46a50317e6": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

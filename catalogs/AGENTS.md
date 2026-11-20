@@ -57,6 +57,11 @@ objective source positions, or duplicate locale identifiers and English labels.
   NPC for greetings and options. Keep `translationMetadata.fields["dialogue.<key>"]` with each
   localized line. The [Spoken source workflow](../datasources/spoken/SOURCE.md) prepares updates
   through resync. A reference candidate must match its full client text at runtime.
+  Canonical offer translations may use `dialogue.description` to supplement a missing or
+  English fallback description. The `description` dialogue context uses stage `accept`,
+  `sourceField: "description"`, and `sourceDescriptionSha256` of the verified English description.
+  Keep the English description in its existing field. The build uses the offer as the locale's
+  description while the English fingerprint matches and no localized description is available.
 - Names: `<kind>/<decimalID>.json` → `locales[locale].name`.
   Kinds are `items`, `npcs`, `areas`, `spells`, `talents`, `factions`, `creaturetypes`, and `classes`.
   Group finder activity names live in `activities/<GroupFinderActivity.ID>.json`, keyed by the

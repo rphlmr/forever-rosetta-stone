@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "71d5cacdee642fd9f234": {
+      "contributionId": 37864,
+      "lineId": "q:94218:complete",
+      "npcId": 4720,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "eabc96db49a61a91f299": {
+      "contributionId": 37863,
+      "lineId": "q:94218:progress",
+      "npcId": 4720,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vzkaz psaný vybledlým inkoustem žádá jeden kus Elixir of Defense a uvádí místo doručení a výši platby. Dole stojí poznámka, že tento přípis lze předat dál.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Ach, ach!! Ten elixír!\n\nAch jo. Moc se omlouvám, že jsem na vás tak vyjel. Jsem napjatý od chvíle, kdy mi řekli, že si jeden z těch goblinů údajně objednal mou vraždu!\n\nDalší ochranku si bohužel nemohu dovolit, takže mi nezbývá než jeden vypít a doufat v nejlepší. Na zdraví!",
+        "eabc96db49a61a91f299": "Jestli jsi TY ten vrah, před kterým mě posádka pořád varuje, měl by sis dobře rozmyslet, než se na MĚ vrhneš, chlapče!"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Elixir of Defense",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "\n\n<Sedlen er skrevet med falmet blæk og anmoder om Elixir of Defense. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Åh, åh!! Eliksiren!\n\nDu godeste. Jeg er så ked af, at jeg overfusede dig. Jeg har været på nåle, siden jeg fik at vide, at en af de gobliner angiveligt har bestilt et mord på mig!\n\nJeg har desværre ikke råd til ekstra vagter, så jeg må drikke en af dem og håbe på det bedste. Skål!",
+        "eabc96db49a61a91f299": "Hvis DU er den snigmorder, som besætningen bliver ved med at advare mig om, så skal du tænke dig godt om, før du angriber MIG, kammerat!"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Forsvarseliksir",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "\r\n\r\n<Die in verblichener Tinte verfasste Notiz verlangt nach oa Elixier der Verteidigung und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Ah!! Das Elixier!\n\nAch, oje. Verzeiht, dass ich Euch angebrüllt habe. Ich bin so angespannt, seit mir berichtet wurde, dass einer dieser Goblins einen Attentäter auf mich angesetzt hat!\n\nLeider kann ich mir keine zusätzlichen Sicherheitskräfte leisten, also bleibt mir nur, eines dieser Elixiere zu trinken und auf das Beste zu hoffen. Prost!",
+        "eabc96db49a61a91f299": "Wenn IHR der Attentäter seid, vor dem man mich warnt, na dann solltet Ihr Euch besser warm anziehen, bevor Ihr MICH herausfordert!"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Elixier der Verteidigung",
       "translationMetadata": {
@@ -82,6 +132,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -100,6 +162,10 @@
     },
     "enUS": {
       "description": "\n\n<Penned in faded ink, the note is requesting oa Elixir of Defense, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Oh, oh!! The elixir!\n\nMy, oh my. I am so sorry to have lashed out at you like that. I've been on edge ever since I was told that one of those goblins has supposedly put out a hit on me!\n\nSadly I cannot afford additional security, so the best I can do is chug one of these and hope for the best. Cheers!",
+        "eabc96db49a61a91f299": "If YOU are the assassin that the crewmen keep warning me about, well, you had better think twice before charging at ME, buster!"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Elixir of Defense",
       "translationMetadata": {
@@ -108,6 +174,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +203,10 @@
     },
     "esES": {
       "description": "\r\n\r\n<Escrita con tinta borrosa, la nota solicita oa elixir de defensa e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "¡Oh, oh! ¡El elixir!\n\nVaya, vaya. Siento mucho haberos gritado así. ¡Estoy muy nervioso desde que me dijeron que uno de esos goblins supuestamente ha encargado mi asesinato!\n\nPor desgracia, no puedo permitirme más seguridad, así que solo me queda beber uno de estos y esperar lo mejor. ¡Salud!",
+        "eabc96db49a61a91f299": "Si TÚ eres el asesino del que no dejan de advertirme los tripulantes, ¡más vale que te lo pienses dos veces antes de lanzarte contra MÍ, amigo!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: elixir de defensa",
       "translationMetadata": {
@@ -133,6 +215,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -151,6 +243,10 @@
     },
     "esMX": {
       "description": "\r\n\r\n<Escrita con tinta desteñida, la nota pide oa elixir de defensa, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "¡Oh, oh! ¡El elixir!\n\nVaya, vaya. Siento mucho haberte gritado así. ¡Estoy muy nervioso desde que me dijeron que uno de esos goblins supuestamente encargó mi asesinato!\n\nPor desgracia, no puedo pagar más seguridad, así que solo me queda beber uno de estos y esperar lo mejor. ¡Salud!",
+        "eabc96db49a61a91f299": "Si TÚ eres el asesino del que la tripulación no deja de advertirme, ¡más vale que lo pienses dos veces antes de lanzarte contra MÍ, amigo!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Elixir de defensa",
       "translationMetadata": {
@@ -159,6 +255,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -176,6 +282,10 @@
     },
     "frFR": {
       "description": "\r\n\r\n<Cette note manuscrite à l’encre délavée réclame oa olélixir:élixirs;  de défense, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Oh, oh !! L’élixir !\n\nOh là là. Je suis vraiment désolé de m’en être pris à vous. Je suis à cran depuis qu’on m’a dit qu’un de ces gobelins aurait mis ma tête à prix !\n\nMalheureusement, je n’ai pas les moyens de renforcer ma sécurité. Alors je n’ai plus qu’à avaler un de ces élixirs et espérer que tout ira bien. Santé !",
+        "eabc96db49a61a91f299": "Si c’est TOI l’assassin dont les membres de l’équipage n’arrêtent pas de me parler, tu ferais mieux d’y réfléchir à deux fois avant de t’en prendre à MOI, mon gars !"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : élixir de défense",
       "translationMetadata": {
@@ -184,6 +294,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -200,11 +320,25 @@
     },
     "hrHR": {
       "description": "\n\n<Bilješka napisana izblijedjelom tintom traži Elixir of Defense i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Oh, oh!! Eliksir!\n\nJao, jao. Jako mi je žao što sam se tako obrušio na vas. Napet sam otkad su mi rekli da je jedan od onih goblina navodno naručio moje ubojstvo!\n\nNažalost, ne mogu si priuštiti dodatne čuvare, pa mi preostaje samo popiti jedan od ovih i nadati se najboljem. Živjeli!",
+        "eabc96db49a61a91f299": "Ako si TI ubojica na kojeg me posada stalno upozorava, dobro razmisli prije nego što nasrneš na MENE, prijatelju!"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: eliksir obrane",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -226,11 +360,25 @@
     },
     "itIT": {
       "description": "\n\n<Scritta con inchiostro sbiadito, la nota richiede oa Elisir della Difesa, insieme alle informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che questa commissione è trasferibile.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Oh, oh!! L’elisir!\n\nMamma mia. Mi dispiace tanto averti aggredito così. Sono nervoso da quando mi hanno detto che uno di quei goblin avrebbe messo una taglia sulla mia testa!\n\nPurtroppo non posso permettermi altre guardie, quindi non mi resta che bere uno di questi e sperare per il meglio. Salute!",
+        "eabc96db49a61a91f299": "Se sei TU l’assassino di cui i membri dell’equipaggio continuano ad avvertirmi, faresti meglio a pensarci due volte prima di attaccare ME, amico!"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Elisir della Difesa",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -252,6 +400,10 @@
     },
     "koKR": {
       "description": "\r\n\r\n<빛바랜 잉크로 쓴 쪽지에는 방어의 비약 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "아, 아!! 비약이군요!\n\n이런, 이런. 그렇게 화를 내서 정말 죄송합니다. 고블린 하나가 제 목숨을 노리고 청부업자를 고용했다는 말을 들은 뒤로 계속 신경이 곤두서 있었거든요!\n\n안타깝게도 경비를 더 고용할 여유가 없어서, 이걸 하나 들이켜고 무사하길 바라는 수밖에요. 건배!",
+        "eabc96db49a61a91f299": "네가 선원들이 계속 경고하던 그 암살자라면, 이 몸에게 덤비기 전에 다시 한번 생각하는 게 좋을 거야, 이봐!"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 방어의 비약",
       "translationMetadata": {
@@ -260,6 +412,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -277,11 +439,25 @@
     },
     "plPL": {
       "description": "\n\n<Notatka napisana wyblakłym atramentem zawiera prośbę o Elixir of Defense oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Och, och!! Eliksir!\n\nOjej, ojej. Bardzo przepraszam, że tak na ciebie naskoczyłem. Jestem kłębkiem nerwów, odkąd powiedziano mi, że jeden z tych goblinów podobno zlecił moje zabójstwo!\n\nNiestety nie stać mnie na dodatkową ochronę, więc mogę tylko wypić jeden z tych eliksirów i mieć nadzieję na najlepsze. Na zdrowie!",
+        "eabc96db49a61a91f299": "Jeśli to TY jesteś zabójcą, przed którym wciąż ostrzega mnie załoga, lepiej zastanów się dwa razy, zanim rzucisz się na MNIE, kolego!"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: eliksir obrony",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -303,6 +479,10 @@
     },
     "ptBR": {
       "description": "\r\n\r\n<Escrito com tinta desbotada, o bilhete solicita oax Elixir de Defesa, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Ah, ah!! O elixir!\n\nNossa, nossa. Sinto muito por ter gritado com você daquele jeito. Estou nervoso desde que me disseram que um daqueles goblins supostamente encomendou a minha morte!\n\nInfelizmente não posso pagar por mais segurança, então só me resta virar um destes e torcer pelo melhor. Saúde!",
+        "eabc96db49a61a91f299": "Se VOCÊ é o assassino sobre quem a tripulação vive me avisando, é melhor pensar duas vezes antes de atacar a MIM, camarada!"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Elixir de Defesa",
       "translationMetadata": {
@@ -311,6 +491,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -328,6 +518,10 @@
     },
     "ruRU": {
       "description": "\r\n\r\n<В записке, написанной выцветшими чернилами, содержится заказ на oa порций эликсира защиты, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Ах, ах!! Эликсир!\n\nОх, простите, что я так на вас набросился. Я сам не свой с тех пор, как мне сказали, будто один из этих гоблинов заказал моё убийство!\n\nК сожалению, я не могу позволить себе дополнительную охрану, так что остаётся только выпить один из этих эликсиров и надеяться на лучшее. За здоровье!",
+        "eabc96db49a61a91f299": "Если это ТЫ тот убийца, о котором меня все время предупреждает команда, лучше дважды подумай, прежде чем бросаться на МЕНЯ, приятель!"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: эликсир защиты",
       "translationMetadata": {
@@ -336,6 +530,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -354,11 +558,25 @@
     },
     "svSE": {
       "description": "\n\n<Lappen är skriven med blekt bläck och efterfrågar Elixir of Defense. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Åh, åh!! Elixiret!\n\nOj, oj. Jag är så ledsen att jag skällde ut dig sådär. Jag har varit på helspänn sedan jag fick höra att en av de där goblinerna tydligen har beställt ett mord på mig!\n\nTyvärr har jag inte råd med fler vakter, så jag får svepa en av de här och hoppas på det bästa. Skål!",
+        "eabc96db49a61a91f299": "Om DU är lönnmördaren som besättningen hela tiden varnar mig för, så gör du bäst i att tänka dig för innan du anfaller MIG, kompis!"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Försvarselixir",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -381,6 +599,10 @@
     },
     "trTR": {
       "description": "\n\n<Solmuş mürekkeple kaleme alınmış not, teslimat yeri ve ödeme bilgileriyle birlikte $2oa adet Elixir of Defense talep ediyor. Notun altında, bu sipariş belgesinin devredilebilir olduğunu belirten bir yazı yer alıyor.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Ah, ah!! İksir!\n\nHay Allah. Size öyle çıkıştığım için çok üzgünüm. O goblinlerden birinin sözde beni öldürtmek için adam tuttuğunu duyduğumdan beri diken üstündeyim!\n\nNe yazık ki ek koruma tutacak param yok, bu yüzden bunlardan birini dikip en iyisini ummaktan başka çarem yok. Şerefe!",
+        "eabc96db49a61a91f299": "Mürettebatın beni sürekli uyardığı suikastçı SENSEN, BANA saldırmadan önce iki kere düşünsen iyi olur, dostum!"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Elixir of Defense",
       "translationMetadata": {
@@ -390,6 +612,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -408,11 +640,25 @@
     },
     "ukUA": {
       "description": "\n\n<У записці, написаній вицвілим чорнилом, просять принести Elixir of Defense і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "Ох, ох!! Еліксир!\n\nОй лишенько. Дуже перепрошую, що так на вас накинувся. Я сам не свій відтоді, як мені сказали, що один із тих гоблінів нібито замовив моє вбивство!\n\nНа жаль, додаткова охорона мені не по кишені, тож залишається тільки випити один із цих еліксирів і сподіватися на краще. Будьмо!",
+        "eabc96db49a61a91f299": "Якщо це ТИ той убивця, про якого мене постійно попереджає команда, краще двічі подумай, перш ніж кидатися на МЕНЕ, друже!"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Еліксир захисту",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -436,6 +682,10 @@
     },
     "zhCN": {
       "description": "\r\n\r\n<字条以褪色的墨水写成，要求提供oa瓶防御药剂，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "哦，哦！！是药剂！\n\n哎呀，哎呀。刚才那样冲你发火真是抱歉。自从听说有个地精雇了杀手要我的命，我就一直提心吊胆！\n\n可惜我雇不起更多护卫，只能灌下一瓶药剂，祈祷自己平安无事。干杯！",
+        "eabc96db49a61a91f299": "如果你就是船员们一直警告我的那个刺客，那么，伙计，向我冲过来之前你最好三思！"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：防御药剂",
       "translationMetadata": {
@@ -444,6 +694,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -461,6 +721,10 @@
     },
     "zhTW": {
       "description": "\r\n\r\n<紙條以褪色的墨水寫成，要求提供oa個防禦藥劑，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "71d5cacdee642fd9f234": "喔，喔！！是藥劑！\n\n哎呀，哎呀。剛才那樣對你發火真是抱歉。自從聽說有個哥布林雇了殺手要我的命，我就一直提心吊膽！\n\n可惜我雇不起更多護衛，只能灌下一瓶藥劑，祈禱自己平安無事。乾杯！",
+        "eabc96db49a61a91f299": "如果你就是船員們一直警告我的那個刺客，那麼，夥計，向我衝過來之前你最好三思！"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：防禦藥劑",
       "translationMetadata": {
@@ -469,6 +733,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.71d5cacdee642fd9f234": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eabc96db49a61a91f299": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

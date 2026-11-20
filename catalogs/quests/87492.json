@@ -1,8 +1,30 @@
 {
   "areaId": 490,
+  "dialogueContexts": {
+    "9a10398ec8aac79f3ff7": {
+      "contributionId": 110207,
+      "lineId": "q:87492:progress",
+      "npcId": 9619,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f4ac9108cc10fdf28fae": {
+      "contributionId": 110210,
+      "lineId": "q:87492:complete",
+      "npcId": 9619,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Možná ti padly do oka neobvyklé krystalické útvary, které jsou rozeseté po celém kráteru. Hornictví sice nerozumím, ale tyhle útvary mi k usazeninám všude kolem nějak nesedí.\n\nMyslím, že mi při sběru kousek odsud padl do oka poškozený krystal. Skrývá snad nějaké tajemství o původu těchhle podivných útvarů? Jestli na něj narazíš, moc by mě zajímalo prozkoumat jeho úlomek.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Dávejte na sebe pozor!",
+        "f4ac9108cc10fdf28fae": "Podívejme se na to!\n\nMá jemné praskliny a odlupují se z něj drobounká zrnka prášku, ale mnohem zajímavější jsou tyhle rýhy. Tenhle krystal se vůbec nepodobá přírodnímu kameni pod zdejší půdou. Tyhle útvary... je na nich něco nepřirozeného. Nevím co, ale vypadá to, jako by něco způsobilo, že tyto krystaly vyrostly po celém kraji.\n\nZnepokojivé. Ale co by to mohlo znamenat?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Du har måske set nogle af de usædvanlige krystalvækster, der ligger spredt i krateret. Jeg er ikke minearbejder, men væksterne synes ikke at passe til jordaflejringerne her omkring.\r\n\r\nJeg tror, jeg fik øje på en beskadiget krystal ikke langt herfra, mens jeg samlede forsyninger. Mon den rummer hemmeligheder om disse mærkelige formationers oprindelse? Hvis du tilfældigvis ser den, vil jeg meget gerne undersøge et prøvestykke.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Pas på derude!",
+        "f4ac9108cc10fdf28fae": "Lad os se på den!\n\nDen har fine revner, og små korn af pulver falder af, men disse striber er mere interessante. Krystallen ligner slet ikke den naturlige sten under jorden her. Disse vækster... der er noget unaturligt ved dem. Jeg ved ikke hvad, men det er, som om noget har fået krystallerne til at vokse over hele området.\n\nForuroligende, men hvad kan det betyde?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "62c8b6645ddb5bc1e9dc7c325c25191f47b63d2008f53d7c77529adf5dfcf7b7"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Vielleicht habt Ihr einige der ungewöhnlichen Kristalle gesehen, die überall in diesem Krater wachsen. Ich verstehe nichts vom Bergbau, aber diese Kristalle scheinen nicht zu den Arten von Bodenablagerung hier überall zu passen.\r\n\r\nAuf der Suche nach Vorräten habe ich einen beschädigten Kristall ganz in der Nähe entdeckt. Ob er wohl irgendwelche Geheimnisse über den Ursprung dieser seltsamen Formationen birgt? Solltet Ihr ihn finden, würde ich liebend gern eine Probe davon untersuchen.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Passt auf Euch auf!",
+        "f4ac9108cc10fdf28fae": "Dann schauen wir uns das mal an!\n\nEr hat feine Risse und es lösen sich winzige Mengen von Staub ab, aber viel interessanter sind diese Rillen. Dieser Kristall ist völlig anders als der Naturstein unter der Erde hier. Diese Kristallformationen... haben etwas Unnatürliches an sich. Ich weiß nicht was, aber es ist, als hätte irgendetwas diese Kristalle überall in der Gegend wachsen lassen.\n\nBeunruhigend, aber was könnte das bedeuten?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -122,6 +184,10 @@
     },
     "enUS": {
       "description": "You may have seen some of the unusual crystal growths that dot this crater. I'm not a miner, but these growths don't seem to fit with the kinds of soil deposits all around here.\r\n\r\nI believe I caught sight of a damaged crystal not far from here while I was foraging. I wonder if it holds any secrets about the origins of these strange formations? If you happen to spot it, I would love to investigate a sample piece.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Be careful out there!",
+        "f4ac9108cc10fdf28fae": "Let's have a look at this!\n\nIt has delicate cracks, and tiny bits of powder coming off, but what's more interesting is these striations. This crystal isn't anything like the natural stone underneath the soil here. These growths... there's something unnatural about them. I don't know what it is, but it's like something caused these crystals to grow all through the region.\n\nDisturbing, but what could it mean?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -137,6 +203,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -161,6 +239,10 @@
     },
     "esES": {
       "description": "Puede que hayas visto algunas de las extrañas formaciones cristalinas que salpican este cráter. No soy minera, pero estas formaciones no parecen propias de los depósitos de tierra que hay por aquí.\r\n\r\nCreo que vi un cristal con daños no muy lejos de aquí mientras recolectaba suministros. ¿Guardará algún secreto relacionado con el origen de estas extrañas formaciones? Si lo encuentras, me encantaría poder investigar uno de sus fragmentos.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "¡Cuidado ahí fuera!",
+        "f4ac9108cc10fdf28fae": "¡Vamos a echarle un vistazo a esto!\n\nPresenta unas grietas delicadas y suelta diminutas cantidades de polvo, pero lo más interesante son estas estrías. Este cristal no se parece en nada a la piedra natural que hay bajo tierra en este lugar. Estas formaciones... tienen algo de antinatural. No sé qué puede ser, pero es como si algo hubiera provocado que estos cristales brotaran por toda la región.\n\nEs inquietante..., pero ¿qué quiere decir?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -176,6 +258,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -200,6 +294,10 @@
     },
     "esMX": {
       "description": "Tal vez hayas visto los crecimientos cristalinos inusuales esparcidos por el cráter. No soy minero, pero estos crecimientos desentonan con el tipo de depósitos que hay por aquí.\r\n\r\nMientras buscaba provisiones, creo haber encontrado un cristal dañado cerca. Me pregunto si guarda algún secreto sobre los orígenes de estas formaciones desconocidas. Si ves alguno, me gustaría que me trajeras una muestra para investigarla.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "¡Ten cuidado ahí fuera!",
+        "f4ac9108cc10fdf28fae": "¡Veamos esto!\n\nTiene grietas delicadas y desprende pequeñas partículas de polvo, pero estas estrías son más interesantes. Este cristal no se parece en nada a la piedra natural que hay bajo el suelo de aquí. Estas formaciones... tienen algo antinatural. No sé qué es, pero parece que algo hizo crecer estos cristales por toda la región.\n\nEs inquietante, pero ¿qué podría significar?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -215,6 +313,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -239,6 +347,10 @@
     },
     "frFR": {
       "description": "Vous avez sans doute remarqué les étranges croissances cristallines qui parsèment ce cratère. Je ne suis pas mineur, mais ces croissances ne me semblent pas à leur place au milieu des dépôts sédimentaires typiques de la région.\r\n\r\nAlors que j’explorais les environs, j’ai aperçu un cristal détérioré non loin d’ici. Je me demande ce qu’il pourrait nous apprendre sur les origines de ces formations… Si vous tombez dessus, j’aimerais beaucoup en étudier un échantillon.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Soyez prudent !",
+        "f4ac9108cc10fdf28fae": "Voyons ça !\n\nIl présente de fines fissures et perd de minuscules grains de poudre, mais ces stries sont bien plus intéressantes. Ce cristal ne ressemble en rien à la pierre naturelle qui se trouve sous le sol, ici. Ces formations… elles ont quelque chose d’anormal. Je ne sais pas quoi, mais c’est comme si quelque chose avait provoqué la croissance de ces cristaux dans toute la région.\n\nC’est troublant, mais qu’est-ce que cela peut bien signifier ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -254,6 +366,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -277,6 +399,10 @@
     },
     "hrHR": {
       "description": "Možda si vidio neke neobične kristalne izrasline razasute po ovom krateru. Nisam rudar, ali čini se da se te izrasline ne uklapaju u vrste naslaga tla posvuda ovdje.\r\n\r\nMislim da sam tijekom potrage za hranom ugledao oštećeni kristal nedaleko odavde. Pitam se krije li kakve tajne o podrijetlu ovih neobičnih tvorevina? Ako ga slučajno ugledaš, rado bih proučio komadić uzorka.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Pazite na sebe!",
+        "f4ac9108cc10fdf28fae": "Pogledajmo ovo!\n\nIma sitne pukotine i s njega otpadaju sićušna zrnca praha, ali ove su brazde zanimljivije. Ovaj kristal nimalo ne nalikuje prirodnom kamenu ispod tla ovdje. Ove izrasline... nešto je neprirodno u njima. Ne znam što, ali kao da je nešto uzrokovalo rast ovih kristala diljem cijelog područja.\n\nUznemirujuće, ali što bi to moglo značiti?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -293,6 +419,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "62c8b6645ddb5bc1e9dc7c325c25191f47b63d2008f53d7c77529adf5dfcf7b7"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -316,6 +452,10 @@
     },
     "itIT": {
       "description": "Forse hai visto alcune delle insolite formazioni cristalline sparse per questo cratere. Non sono un minatore, ma queste formazioni non sembrano compatibili con i tipi di depositi del terreno che si trovano qui intorno.\r\n\r\nCredo di aver visto un cristallo danneggiato non lontano da qui mentre cercavo provviste. Mi chiedo se nasconda qualche segreto sulle origini di queste strane formazioni. Se ti capita di vederlo, mi piacerebbe molto studiarne un campione.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Fa' attenzione là fuori!",
+        "f4ac9108cc10fdf28fae": "Diamo un'occhiata!\n\nHa delle crepe sottili e perde un po' di polvere finissima, ma la cosa più interessante sono queste striature. Questo cristallo non somiglia per niente alla pietra naturale che c'è sotto il terreno qui. Queste formazioni... hanno qualcosa di innaturale. Non so cosa sia, ma è come se qualcosa avesse fatto crescere questi cristalli in tutta la regione.\n\nInquietante, ma cosa potrebbe significare?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -332,6 +472,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "62c8b6645ddb5bc1e9dc7c325c25191f47b63d2008f53d7c77529adf5dfcf7b7"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -355,6 +507,10 @@
     },
     "koKR": {
       "description": "이 분화구 곳곳에 솟아난 특이한 수정 덩어리를 본 적이 있을 것이오. 내가 광부는 아니지만 이곳의 토양에서 생겨날 법한 모습이 아니더군.\r\n\r\n얼마 전 먹을거리를 찾다가 이 근처에서 손상된 수정을 본 것 같소. 이 기묘한 결정체의 기원을 밝혀 줄 비밀이 담겨 있지 않을까 궁금하오. 표본으로 쓸 만한 조각 하나를 찾아서 가져다주면 좋겠소.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "밖에서 조심하세요!",
+        "f4ac9108cc10fdf28fae": "어디 한번 봅시다!\n\n가는 균열이 있고 작은 가루가 떨어져 나오지만, 이 줄무늬가 더 흥미롭군요. 이 수정은 이곳 땅속의 자연석과는 전혀 다릅니다. 이 결정체들은... 어딘가 부자연스러워요. 무엇인지는 모르겠지만, 무언가가 이 지역 곳곳에서 수정이 자라나게 한 것 같습니다.\n\n불안하군요. 대체 무슨 뜻일까요?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -370,6 +526,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -394,6 +560,10 @@
     },
     "plPL": {
       "description": "Może widzisz niezwykłe kryształowe formacje rozsiane po kraterze. Nie jestem górnikiem, ale te wykwity nie pasują do tutejszych złóż gleby.\r\n\r\nChyba dostrzegłem uszkodzony kryształ niedaleko stąd podczas zbierania zapasów. Zastanawiam się, czy kryje jakąś tajemnicę pochodzenia tych dziwnych formacji. Jeśli na niego natrafisz, chętnie zbadam próbkę.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Uważaj na siebie!",
+        "f4ac9108cc10fdf28fae": "Przyjrzyjmy się temu!\n\nMa drobne pęknięcia i odrywają się od niego maleńkie drobinki pyłu, ale ciekawsze są te prążki. Ten kryształ wcale nie przypomina naturalnego kamienia pod tutejszą ziemią. Te narośle... jest w nich coś nienaturalnego. Nie wiem co, ale wygląda na to, że coś sprawiło, iż kryształy wyrosły w całej okolicy.\n\nNiepokojące, ale co to może oznaczać?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -410,6 +580,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "62c8b6645ddb5bc1e9dc7c325c25191f47b63d2008f53d7c77529adf5dfcf7b7"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -433,6 +613,10 @@
     },
     "ptBR": {
       "description": "Talvez você tenha notado alguns dos crescimentos cristalinos incomuns espalhados por esta cratera. Não sou minerador, mas esses crescimentos parecem fora do lugar em relação aos outros tipos de depósitos de solo que há por aqui.\r\n\r\nAcredito ter avistado um cristal danificado não muito longe daqui enquanto forrageava. Será que ele guarda segredos sobre a origem dessas formações estranhas? Se você o encontrar, adoraria investigar uma amostra.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Tome cuidado lá fora!",
+        "f4ac9108cc10fdf28fae": "Vamos dar uma olhada!\n\nHá pequenas rachaduras e minúsculos grãos de pó se desprendendo, mas essas estrias são ainda mais interessantes. Este cristal não se parece em nada com a pedra natural sob o solo daqui. Essas formações... há algo de anormal nelas. Não sei o que é, mas parece que alguma coisa fez esses cristais crescerem por toda a região.\n\nPerturbador, mas o que isso pode significar?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -448,6 +632,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -472,6 +666,10 @@
     },
     "ruRU": {
       "description": "Ты уже, должно быть, видел необычные кристаллические наросты, усеивающие этот кратер. Я не шахтер, но эти наросты, кажется, не соответствуют обычным типам местных почвенных отложений.\r\n\r\nЯ заметил неподалеку поврежденный кристалл, когда осматривал территорию. Интересно, может ли он приоткрыть тайну происхождения этих странных образований? Если найдешь его, я с удовольствием изучу образец.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Будьте осторожны!",
+        "f4ac9108cc10fdf28fae": "Давай-ка взглянем!\n\nНа нем тонкие трещины, и от него отделяются крошечные крупинки пыли, но эти бороздки куда интереснее. Этот кристалл совсем не похож на природный камень под здешней почвой. Эти наросты... в них есть что-то неестественное. Не знаю что, но похоже, будто нечто заставило эти кристаллы вырасти по всему краю.\n\nТревожно, но что бы это могло значить?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -487,6 +685,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -513,6 +721,10 @@
     },
     "svSE": {
       "description": "Du kanske har sett några av de ovanliga kristallformationerna som finns utspridda i kratern. Jag är ingen gruvarbetare, men formationerna verkar inte passa ihop med jordlagren här omkring.\r\n\r\nJag tror att jag fick syn på en skadad kristall inte långt härifrån när jag samlade förnödenheter. Jag undrar om den bär på några hemligheter om de märkliga formationernas ursprung. Om du råkar få syn på den skulle jag gärna undersöka ett prov.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Var försiktig där ute!",
+        "f4ac9108cc10fdf28fae": "Låt oss ta en titt på den!\n\nDen har fina sprickor och små korn av pulver lossnar, men de här strimmorna är mer intressanta. Kristallen liknar inte alls den naturliga stenen under marken här. De här utväxterna... det är något onaturligt med dem. Jag vet inte vad, men det är som om något fick kristallerna att växa i hela området.\n\nOroväckande, men vad kan det betyda?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -529,6 +741,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "62c8b6645ddb5bc1e9dc7c325c25191f47b63d2008f53d7c77529adf5dfcf7b7"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -552,6 +774,10 @@
     },
     "trTR": {
       "description": "Bu kraterin dört bir yanındaki olağandışı kristal oluşumlarından bazılarını görmüş olabilirsin. Madenci değilim ama bu oluşumlar buradaki toprak birikintilerinin türüne uymuyor gibi.\n\nYiyecek ararken buradan pek uzakta olmayan hasarlı bir kristal gördüğümü sanıyorum. Bu tuhaf oluşumların kökenine dair sırlar barındırıyor olabilir mi? Rastlarsan bir örnek parçasını incelemeyi çok isterim.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Dışarıda dikkatli ol!",
+        "f4ac9108cc10fdf28fae": "Şuna bir bakalım!\n\nÜzerinde ince çatlaklar var ve küçük toz parçacıkları dökülüyor, ama şu çizgiler daha da ilginç. Bu kristal, burada toprağın altındaki doğal taşa hiç benzemiyor. Bu oluşumlar... onlarda doğal olmayan bir şey var. Ne olduğunu bilmiyorum ama sanki bir şey bu kristallerin bütün bölgede büyümesine neden olmuş.\n\nRahatsız edici, ama bu ne anlama gelebilir?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -568,6 +794,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "62c8b6645ddb5bc1e9dc7c325c25191f47b63d2008f53d7c77529adf5dfcf7b7"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -591,6 +827,10 @@
     },
     "ukUA": {
       "description": "Можливо, ти бачив незвичайні кристалічні нарости, розкидані по цьому кратеру. Я не гірник, але, схоже, ці нарости не відповідають тутешнім ґрунтовим відкладам.\r\n\r\nЗдається, збираючи їжу, я помітив неподалік пошкоджений кристал. Цікаво, чи приховує він якісь таємниці походження цих дивних утворень? Якщо натрапиш на нього, я залюбки досліджу шматочок зразка.",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "Бережіть себе!",
+        "f4ac9108cc10fdf28fae": "Погляньмо на це!\n\nНа ньому тонкі тріщини, а з поверхні обсипаються крихітні частинки пилу, але ці борозенки набагато цікавіші. Цей кристал зовсім не схожий на природний камінь під тутешнім ґрунтом. Ці нарости... у них є щось неприродне. Не знаю що, але схоже, ніби щось змусило ці кристали вирости по всьому краю.\n\nТривожно, але що б це могло означати?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -607,6 +847,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "62c8b6645ddb5bc1e9dc7c325c25191f47b63d2008f53d7c77529adf5dfcf7b7"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -630,6 +880,10 @@
     },
     "zhCN": {
       "description": "你或许已经见过散布在这座环形山各处的奇特水晶簇了。我虽然不是矿工，但这些晶体怎么看都跟周围的土质格格不入。\r\n\r\n之前出去觅食的时候，我好像在附近瞥见了一块受损的水晶。不知道它是否隐藏着这些奇异晶体起源的秘密？如果你碰巧找到了，我非常希望能拿一块样本来好好研究一番。",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "在外面小心！",
+        "f4ac9108cc10fdf28fae": "让我们看看！\n\n它有细小的裂缝，还会掉下一点粉末，但更有意思的是这些条纹。这块水晶和这里土壤下的天然石头完全不同。这些晶体……有些不自然。我说不清是什么，但似乎有什么东西让这些水晶在整个地区生长起来。\n\n令人不安，可这意味着什么呢？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -645,6 +899,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -669,6 +933,10 @@
     },
     "zhTW": {
       "description": "你或許也看見了，這個環形山到處生長著異常的水晶。我不是礦工，但這些水晶生長物似乎與普遍分布在這裡的土壤沉積物格格不入。\r\n\r\n在採集食物的時候，我應該是在這裡的不遠處看到一個受損的水晶。我在想它說不定能協助我們查明這些奇異生長物的起源。如果你剛好發現它，就幫我取個樣本，我很想調查一下。",
+      "dialogue": {
+        "9a10398ec8aac79f3ff7": "在外面小心！",
+        "f4ac9108cc10fdf28fae": "讓我們看看！\n\n它有細小的裂縫，還會掉下一點粉末，但更有意思的是這些條紋。這塊水晶和這裡土壤下的天然石頭完全不同。這些晶體……有些不自然。我說不清是什麼，但似乎有什麼東西讓這些水晶在整個地區生長起來。\n\n令人不安，可這意味著什麼呢？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -684,6 +952,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.9a10398ec8aac79f3ff7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4ac9108cc10fdf28fae": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

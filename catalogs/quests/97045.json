@@ -1,8 +1,21 @@
 {
   "areaId": 12,
+  "dialogueContexts": {
+    "c9acc564e5d5f8838b19": {
+      "contributionId": 111052,
+      "lineId": "q:97045:complete",
+      "npcId": 384,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Zdravím! Chceš si prohlédnout naše koně?\n\nTihle oři pocházejí jak z původního lordaeronského chovu, tak z našich místních koní. Věrnějšího společníka na cesty nenajdeš.\n\nVybrat si nemusí být snadné, protože jsou všichni výborní a vycvičení tak, aby zůstali klidní i v nebezpečí. Nezapomeň, že ty a tvůj kůň spolu procestujete celý svět. Ať zvolíš kteréhokoli, určitě to bude ten pravý pro tebe.\n\nJdi si koně prohlédnout a vrať se za mnou, až si vybereš.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Výborně, $N! Vidím, že sis vybral, a je to skvělá volba.\n\nJsem hrdá, že ti mohu svěřit jednoho z našich koní. Zdá se, že sis získal jeho náklonnost už teď! Doufám, že se o sebe budete dobře starat.\n\nVrať se, pokud budeš potřebovat nové podkovy! Jsou na účet podniku."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -29,6 +42,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -65,6 +83,9 @@
     },
     "daDK": {
       "description": "Hilsner! Er du her for at undersøge vores heste?\r\n\r\nDisse gangere nedstammer fra både den historiske Lordaeron-stamme og vores egne lokale heste. Du finder ikke en mere standhaftig følgesvend til dine rejser.\r\n\r\nDet kan være svært at vælge en, da de alle er fremragende og trænet til at forblive rolige selv i fare. Glem ikke, at du og din hest skal rejse verden rundt sammen. Jeg er sikker på, at uanset hvad du vælger, vil det passe dig bedst.\r\n\r\nGå hen og undersøg hestene og vend tilbage til mig, når du har valgt.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Fremragende, $N! Jeg kan se, at du har valgt, og sikke et godt valg.\n\nJeg er stolt af at kunne give dig en af vores heste. Den, du har valgt, ser allerede ud til at holde af dig! Jeg håber, at I vil passe godt på hinanden.\n\nKom tilbage, hvis du får brug for nye hestesko! De er på husets regning."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -91,6 +112,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0eb3c783cfc18e81fb64513923c6a50550b62850f11e1f4e6ca91f89130be9d8"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -127,6 +153,9 @@
     },
     "deDE": {
       "description": "Willkommen! Seid Ihr hier, um Euch unsere Pferde anzuschauen?\r\n\r\nDiese Rösser stammen von den historischen Lordaeron wie auch unseren eigenen Tieren ab. Ihr werdet nirgendwo einen treueren Begleiter für Eure Reisen finden.\r\n\r\nDie Wahl mag Euch vielleicht schwer fallen, da sie alle ausgezeichnet und darauf trainiert sind, auch in Gefahr ruhig zu bleiben. Vergesst nicht, gemeinsam mit Eurem Pferd werdet Ihr die Welt bereisen. Wie auch immer Ihr Euch entscheidet, ich bin mir sicher, dass Ihr die beste Wahl für Euch treffen werdet.\r\n\r\nSchaut Euch die Pferde genauer an und kehrt zu mir zurück, wenn Ihr Eure Wahl getroffen habt.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Hervorragend, $N. Ich sehe, Ihr habt eine Wahl getroffen, und eine ausgezeichnete Wahl noch dazu!\n\nIch bin stolz, Euch eines unserer Pferde anvertrauen zu dürfen. Das Ross, für das Ihr Euch entschieden habt, scheint bereits einen Narren an Euch gefressen zu haben! Ich hoffe, Ihr kümmert Euch gut umeinander.\n\nKommt zurück, wenn Ihr jemals neue Hufeisen braucht! Die gehen aufs Haus."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -152,6 +181,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -189,6 +224,9 @@
     },
     "enUS": {
       "description": "Greetings! Are you here to examine our horses?\r\n\r\nThese steeds are descendants from both the historical Lordaeron stock and our own local horses. You won't find a more steadfast companion for your journeys.\r\n\r\nChoosing one may be difficult as they are all excellent and trained to be steady even when in danger. Don't forget, you and your horse will traverse the world together. I'm sure whatever choice you make will suit you best.\r\n\r\nGo examine the horses and return to me when you have made your choice.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Excellent, $N! I can see you've made a choice, and what a fine pick it is.\n\nI'm proud to be able to provide you with one of our horses. I must say the one you have picked seems fond of you already! I hope you will take good care of it, and it of you.\n\nCome back if you ever need new horseshoes! They're on the house."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -214,6 +252,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -249,6 +293,9 @@
     },
     "esES": {
       "description": "¡Saludos! ¿Has venido a examinar nuestros caballos?\r\n\r\nSon descendientes tanto de los antiguos linajes de Lordaeron como de nuestros caballos locales. No encontrarás un compañero más leal para tus aventuras.\r\n\r\nPuede que te resulte complicado elegir uno, ya que todos son excelentes y están entrenados para mantener la calma incluso en situaciones de peligro. No olvides que recorrerás el mundo junto a tu caballo. Seguro que tu elección será la adecuada.\r\n\r\nVe y examina los caballos para ver si alguno es de tu agrado, y vuelve a verme cuando hayas elegido.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "¡Excelente, $N! Veo que has elegido, y qué buena elección.\n\nMe enorgullece poder entregarte uno de nuestros caballos. ¡Parece que el que has elegido ya te ha cogido cariño! Espero que cuidéis bien el uno del otro.\n\n¡Vuelve si alguna vez necesitas herraduras nuevas! Invita la casa."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -274,6 +321,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -309,6 +361,9 @@
     },
     "esMX": {
       "description": "¡Saludos! ¿Has venido a examinar a nuestros caballos?\r\n\r\nEstos corceles descienden del histórico linaje de Lordaeron y también de nuestros propios caballos locales. No encontrarás un compañero más imperturbable para tus viajes.\r\n\r\nElegir uno puede ser difícil, ya que todos son excelentes y los entrenamos para que permanezcan firmes ante el peligro. No lo olvides, tú y tu caballo le darán la vuelta al mundo. Estoy segura de que sea cual sea la decisión que tomes será la correcta.\r\n\r\nVe a examinar a los caballos y vuelve cuando hayas tomado una decisión.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "¡Excelente, $N! Veo que has elegido, y qué buena elección.\n\nMe enorgullece poder entregarte uno de nuestros caballos. ¡Parece que el que elegiste ya te ha tomado cariño! Espero que se cuiden bien mutuamente.\n\n¡Vuelve si alguna vez necesitas herraduras nuevas! Invita la casa."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -334,6 +389,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -369,6 +429,9 @@
     },
     "frFR": {
       "description": "Salutations ! Venez-vous voir nos chevaux ?\r\n\r\nCes destriers descendent à la fois des célèbres lignées de Lordaeron et de nos chevaux locaux. Vous ne trouverez pas de compagnon plus fidèle pour vous accompagner dans vos voyages.\r\n\r\nIl vous sera peut-être difficile d’en choisir un seul : chacun d’entre eux est excellent et a été entraîné à garder son sang-froid, même face au danger. N’oubliez pas que vous sillonnerez le monde aux côtés de votre monture. Quel que soit votre choix, il vous conviendra parfaitement, j’en suis convaincue.\r\n\r\nAllez voir nos chevaux et revenez me faire part de votre décision.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Excellent, $N ! Je vois que vous avez fait votre choix, et quel excellent choix !\n\nJe suis fière de pouvoir vous confier l’un de nos chevaux. Celui que vous avez choisi semble déjà vous apprécier ! J’espère que vous prendrez bien soin l’un de l’autre.\n\nRevenez si vous avez besoin de nouveaux fers ! C’est offert par la maison."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -394,6 +457,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -429,6 +497,9 @@
     },
     "hrHR": {
       "description": "Pozdrav! Jesi li ovdje da pogledaš naše konje?\r\n\r\nOvi konji potječu i od povijesnog lordaronskog soja i od naših lokalnih konja. Nećeš naći postojanijeg pratitelja za svoja putovanja.\r\n\r\nMožda će biti teško odabrati jednog jer su svi izvrsni i obučeni da ostanu mirni čak i u opasnosti. Ne zaboravi, ti i tvoj konj putovat ćete svijetom zajedno. Siguran sam da će ti koji god izbor doneseš najbolje odgovarati.\r\n\r\nIdi pregledaj konje i vrati mi se kad odabereš.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Izvrsno, $N! Vidim da si izabrao, i to vrlo dobro.\n\nPonosna sam što ti mogu povjeriti jednog od naših konja. Čini se da si mu već prirastao srcu! Nadam se da ćete se dobro brinuti jedno o drugome.\n\nVrati se ako ti zatrebaju nove potkove! Kuća časti."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -455,6 +526,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0eb3c783cfc18e81fb64513923c6a50550b62850f11e1f4e6ca91f89130be9d8"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -491,6 +567,9 @@
     },
     "itIT": {
       "description": "Salve! Piacere di fare la tua conoscenza!\n\nVedo che hai con te un buono speciale. Consegnamelo e ti darò una cosa in cambio.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Eccellente, $N! Vedo che hai fatto la tua scelta, ed è davvero ottima.\n\nSono orgogliosa di poterti affidare uno dei nostri cavalli. Sembra che quello che hai scelto si sia già affezionato a te! Spero che vi prenderete cura l’uno dell’altro.\n\nTorna se avrai bisogno di nuovi ferri di cavallo! Offre la casa."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -516,6 +595,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -552,6 +636,9 @@
     },
     "koKR": {
       "description": "안녕하세요! 저희 말들을 살펴보러 오셨나요?\r\n\r\n이 군마들은 유서 깊은 로데론의 혈통과 이 지역 말의 피를 모두 이었습니다. 긴 여정에서 이보다 든든한 동반자는 찾기 어려울 거예요.\r\n\r\n모두 훌륭한 명마이고, 위험 속에서도 평정을 유지하는 훈련을 받아서 고르기가 쉽지는 않을 거예요. 그래도 당신과 말은 함께 온 세상을 여행하게 된다는 걸 잊지 마세요. 어떤 선택을 하든 당신에게 가장 잘 어울릴 거예요.\r\n\r\n말들을 살펴본 뒤 마음을 정하면 돌아오세요.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "훌륭해요, $N! 선택을 마쳤군요. 정말 좋은 선택이에요.\n\n우리 말 중 하나를 맡길 수 있어 자랑스러워요. 고른 말도 벌써 당신을 좋아하는 것 같네요! 서로 잘 돌봐 주길 바라요.\n\n새 편자가 필요하면 언제든 돌아오세요! 공짜로 드릴게요."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -577,6 +664,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -612,6 +704,9 @@
     },
     "plPL": {
       "description": "Witaj! Przychodzisz obejrzeć nasze konie?\r\n\r\nTe rumaki pochodzą zarówno od historycznych koni z Lordaeronu, jak i naszych miejscowych. Nie znajdziesz wierniejszego towarzysza podróży.\r\n\r\nWybór może być trudny, bo wszystkie są doskonałe i wyszkolone, by zachować spokój nawet w niebezpieczeństwie. Pamiętaj, ty i twój koń będziecie razem przemierzać świat. Jestem pewien, że wybierzesz najlepiej dla siebie.\r\n\r\nIdź obejrzeć konie i wróć do mnie, kiedy podejmiesz decyzję.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Doskonale, $N! Widzę, że wybór już za tobą, i to znakomity.\n\nJestem dumna, że mogę powierzyć ci jednego z naszych koni. Wygląda na to, że już cię polubił! Mam nadzieję, że będziecie o siebie dbać.\n\nWróć, jeśli potrzebne ci będą nowe podkowy! Dostaniesz je na koszt firmy."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -638,6 +733,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0eb3c783cfc18e81fb64513923c6a50550b62850f11e1f4e6ca91f89130be9d8"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -674,6 +774,9 @@
     },
     "ptBR": {
       "description": "Saudações! Você está aqui para examinar nossos cavalos?\r\n\r\nEsses corcéis descendem tanto da linhagem de Lordaeron quanto dos nossos cavalos locais. Você não vai achar um companheiro mais confiável para as suas jornadas.\r\n\r\nEscolher um pode ser difícil, já que são todos excelentes e treinados para manter a postura mesmo em face do perigo. Não se esqueça: você e seu cavalo viajarão o mundo juntos. Tenho certeza de que, qualquer que seja sua escolha, será a melhor.\r\n\r\nVá examinar os cavalos e volte aqui quando fizer sua escolha.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Excelente, $N! Vejo que você fez sua escolha, e que ótima escolha!\n\nTenho orgulho de poder confiar um dos nossos cavalos a você. Parece que o escolhido já gosta de você! Espero que cuidem bem um do outro.\n\nVolte se precisar de ferraduras novas! Por conta da casa."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -699,6 +802,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -734,6 +842,9 @@
     },
     "ruRU": {
       "description": "Приветствую! Ты здесь, чтобы осмотреть наших лошадей?\r\n\r\nИх предки – старые породы Лордерона и местные жеребцы. Лучшего спутника для путешествий не найдешь.\r\n\r\nСделать выбор может быть непросто – все лошади у нас отменные и обучены стойко встречать любую опасность. Не забывай – вам вместе предстоит пересечь целый мир. Уверена, какой бы выбор ты ни сделал, он будет правильным.\r\n\r\nОсмотри лошадей и, если какая-нибудь тебя заинтересует, обращайся ко мне.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Превосходно, $N! Вижу, вы сделали выбор, и какой замечательный!\n\nЯ горжусь тем, что могу доверить вам одну из наших лошадей. Кажется, выбранная вами лошадка уже к вам привязалась! Надеюсь, вы будете заботиться друг о друге.\n\nВозвращайтесь, если понадобятся новые подковы! Угощение за счет заведения."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -759,6 +870,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -794,6 +910,9 @@
     },
     "svSE": {
       "description": "Hälsningar! Är du här för att undersöka våra hästar?\n\nDessa springare härstammar både från Lordaerons gamla häststam och våra egna lokala hästar. Du hittar ingen trognare följeslagare på dina resor.\n\nDet kan vara svårt att välja en, eftersom de alla är utmärkta och tränade att hålla sig lugna även i fara. Glöm inte att du och din häst ska färdas genom världen tillsammans. Jag är säker på att vilket val du än gör passar dig bäst.\n\nGå och undersök hästarna och återvänd till mig när du har gjort ditt val.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Utmärkt, $N! Jag ser att du har valt, och vilket fint val det är.\n\nJag är stolt över att få anförtro dig en av våra hästar. Den du valde verkar redan tycka om dig! Jag hoppas att ni tar väl hand om varandra.\n\nKom tillbaka om du behöver nya hästskor! De bjuder vi på."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -820,6 +939,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0eb3c783cfc18e81fb64513923c6a50550b62850f11e1f4e6ca91f89130be9d8"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -856,6 +980,9 @@
     },
     "trTR": {
       "description": "Selamlar! Atlarımızı incelemeye mi geldin?\r\n\r\nBu atlar hem tarihî Lordaeron soyundan hem de kendi yerel atlarımızdan gelir. Yolculukların için daha sadık bir yoldaş bulamazsın.\r\n\r\nHepsi mükemmel olduğundan ve tehlikede bile sakin kalacak şekilde eğitildiğinden seçim yapmak zor olabilir. Unutma, sen ve atın dünyayı birlikte gezeceksiniz. Hangi seçimi yaparsan yap sana en uygun olanı olacağına eminim.\r\n\r\nGit atları incele; seçimini yaptığında bana dön.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Harika, $N! Seçimini yapmışsın ve ne güzel bir seçim.\n\nAtlarımızdan birini sana emanet etmekten gurur duyuyorum. Seçtiğin at senden şimdiden hoşlanmış görünüyor! Umarım birbirinize iyi bakarsınız.\n\nYeni nallara ihtiyacın olursa geri gel! Onlar bizden."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -882,6 +1009,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0eb3c783cfc18e81fb64513923c6a50550b62850f11e1f4e6ca91f89130be9d8"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -918,6 +1050,9 @@
     },
     "ukUA": {
       "description": "Вітаю! Прийшов оглянути коней?\r\n\r\nЦі скакуни походять і від давніх лордеронських, і від наших місцевих коней. Надійнішого супутника в мандрах не знайдеш.\r\n\r\nВибрати може бути важко: усі чудові й навчені залишатися спокійними навіть у небезпеці. Пам'ятай, ви разом мандруватимете світом. Певен, будь-який вибір підійде тобі найкраще.\r\n\r\nОглянь коней і повернися, коли визначишся.",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "Чудово, $N! Бачу, ви зробили вибір, і який же він вдалий!\n\nЯ пишаюся тим, що можу довірити вам одного з наших коней. Здається, обраний кінь уже встиг до вас прив’язатися! Сподіваюся, ви добре дбатимете одне про одного.\n\nПовертайтеся, якщо знадобляться нові підкови! Вони за наш рахунок."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -944,6 +1079,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "0eb3c783cfc18e81fb64513923c6a50550b62850f11e1f4e6ca91f89130be9d8"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -980,6 +1120,9 @@
     },
     "zhCN": {
       "description": "你好！你是来查看马匹的吗？\r\n\r\n这些骏马是历史悠久的洛丹伦纯种马与本地马的后代。在旅途中，你再也找不到比它们更可靠的伙伴了。\r\n\r\n挑选起来可能会有些困难，因为它们个个出类拔萃，受过即使深陷险境也能保持镇定的专门训练。别忘了，你将与你的马一同游历世界。我相信无论作何选择，都将是最适合你的。\r\n\r\n去看看那些马匹，选定后再回来找我。",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "太好了，$N！看来你已经做出了选择，而且选得真不错。\n\n能把我们的一匹马交给你，我感到很自豪。你选的这匹似乎已经喜欢上你了！希望你们能好好照顾彼此。\n\n如果需要新的马蹄铁，随时回来！我们免费提供。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1005,6 +1148,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -1042,6 +1190,9 @@
     },
     "zhTW": {
       "description": "你好！你是來挑選我們的馬匹的嗎？\r\n\r\n這些戰馬同時擁有古老羅德隆與我們當地馬匹的血統。在你的旅途中，你絕對找不到比牠們更忠誠可靠的夥伴了。\r\n\r\n要選出一匹可能有點困難，因為牠們每一匹都很優秀，而且都經過專業訓練，即使面臨危險也能保持冷靜。別忘了，你和你的馬將會一起環遊世界。我相信無論你如何選擇，那都會是最適合你的。\r\n\r\n去看看那些馬匹吧，選好之後再來找我。",
+      "dialogue": {
+        "c9acc564e5d5f8838b19": "太好了，$N！看來你已經做出了選擇，而且選得真不錯。\n\n能把我們的一匹馬交給你，我感到很自豪。你選的這匹似乎已經喜歡上你了！希望你們能好好照顧彼此。\n\n如果需要新的馬蹄鐵，隨時回來！我們免費提供。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -1067,6 +1218,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.c9acc564e5d5f8838b19": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

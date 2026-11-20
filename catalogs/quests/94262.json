@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "585a95e3a5a72e64462c": {
+      "contributionId": 142715,
+      "lineId": "q:94262:progress",
+      "npcId": 262284,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "77ada9142a27dcc8375e": {
+      "contributionId": 142721,
+      "lineId": "q:94262:complete",
+      "npcId": 262284,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Mana Potion a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Nemáme spolu žádné obchody. Běž dál, kámo.",
+        "77ada9142a27dcc8375e": "Beru to zpátky! Lektvary many nejsou zrovna nejzajímavější zásilka, ale pracuji s tím, co seženu.\n\nTady je tvůj podíl. A teď, jak už jsem řekl, jdi dál."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -35,6 +57,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -60,6 +92,10 @@
     },
     "daDK": {
       "description": "\n\n<Sedlen er skrevet med falmet blæk og anmoder om Mana Potion. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Vi har ingen forretninger sammen. Smut videre, ven.",
+        "77ada9142a27dcc8375e": "Jeg tager det i mig igen! Manadrikke er ikke den mest spændende levering, men jeg arbejder med det, jeg kan få.\n\nHer er din andel. Og som jeg sagde før, kom videre."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -72,6 +108,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -98,6 +144,10 @@
     },
     "deDE": {
       "description": "\r\n\r\n<Die in verblichener Tinte verfasste Notiz verlangt nach oa Manatrank und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Wir haben nichts miteinander zu schaffen. Weitergehen, Kumpel.",
+        "77ada9142a27dcc8375e": "Ich nehme alles zurück! Manatränke sind nicht die aufregendste Lieferung, aber ich arbeite mit dem, was ich bekommen kann.\n\nHier ist Euer Anteil. Und nun, wie gesagt, zieht weiter."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -113,6 +163,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -137,6 +197,10 @@
     },
     "enUS": {
       "description": "\n\n<Penned in faded ink, the note is requesting oa Mana Potion, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "We don't have business. Move along, pal.",
+        "77ada9142a27dcc8375e": "I take it back! Mana potions aren't the most exciting delivery to receive, but I work with whatever I can take.\n\nHere's your cut. Now, like I said before, move along."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -152,6 +216,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -175,6 +251,10 @@
     },
     "esES": {
       "description": "\r\n\r\n<Escrita con tinta borrosa, la nota solicita oa poción de maná e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "No tenemos nada que hacer juntos. Circula, colega.",
+        "77ada9142a27dcc8375e": "¡Retiro lo dicho! Las pociones de maná no son la entrega más emocionante, pero trabajo con lo que consigo.\n\nAquí tienes tu parte. Ahora, como dije antes, sigue tu camino."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -190,6 +270,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -212,6 +302,10 @@
     },
     "esMX": {
       "description": "\r\n\r\n<Escrita con tinta desteñida, la nota pide oa poción de maná, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "No tenemos nada que hacer juntos. Sigue tu camino, amigo.",
+        "77ada9142a27dcc8375e": "¡Retiro lo dicho! Las pociones de maná no son la entrega más emocionante, pero trabajo con lo que consigo.\n\nAquí tienes tu parte. Ahora, como dije antes, sigue tu camino."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -227,6 +321,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -250,6 +354,10 @@
     },
     "frFR": {
       "description": "\r\n\r\n<Cette note manuscrite à l’encre délavée réclame oa olpotion:potions;  de mana, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "On n’a rien à faire ensemble. Circule, l’ami.",
+        "77ada9142a27dcc8375e": "Je retire ce que j’ai dit ! Les potions de mana ne sont pas la livraison la plus passionnante, mais je fais avec ce que je peux obtenir.\n\nVoici votre part. Maintenant, comme je l’ai déjà dit, circulez."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -265,6 +373,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -287,6 +405,10 @@
     },
     "hrHR": {
       "description": "\n\n<Bilješka napisana izblijedjelom tintom traži Mana Potion i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Nemamo posla. Produži, prijatelju.",
+        "77ada9142a27dcc8375e": "Povlačim što sam rekao! Napici mane nisu najuzbudljivija pošiljka, ali radim s onim što mogu dobiti.\n\nEvo tvog dijela. A sad, kao što sam rekao, produži."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -299,6 +421,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -325,6 +457,10 @@
     },
     "itIT": {
       "description": "\n\n<Scritta con inchiostro sbiadito, la nota richiede oa Pozione di mana, insieme alle informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che questa commissione è trasferibile.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Non abbiamo affari in sospeso. Circola, amico.",
+        "77ada9142a27dcc8375e": "Mi rimangio tutto! Le pozioni di mana non sono la consegna più emozionante, ma lavoro con quello che riesco a ottenere.\n\nEcco la tua parte. Ora, come ho già detto, circola."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -337,6 +473,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -363,6 +509,10 @@
     },
     "koKR": {
       "description": "\r\n\r\n<빛바랜 잉크로 쓴 쪽지에는 마나 물약 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "우리 사이에 볼일 없어. 어서 가, 친구.",
+        "77ada9142a27dcc8375e": "방금 한 말은 취소야! 마나 물약은 그리 신나는 배달품은 아니지만, 구할 수 있는 건 뭐든 써야지.\n\n여기 네 몫이야. 자, 아까 말했듯이 이제 가 봐."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -378,6 +528,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -400,6 +560,10 @@
     },
     "plPL": {
       "description": "\n\n<Notatka napisana wyblakłym atramentem zawiera prośbę o Mana Potion oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Nie mamy żadnych interesów. Zmykaj, kolego.",
+        "77ada9142a27dcc8375e": "Cofam to! Mikstury many nie są najbardziej ekscytującą dostawą, ale pracuję z tym, co uda mi się zdobyć.\n\nOto twoja część. A teraz, jak już mówiłem, ruszaj dalej."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -412,6 +576,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -438,6 +612,10 @@
     },
     "ptBR": {
       "description": "\r\n\r\n<Escrito com tinta desbotada, o bilhete solicita oax Poção de Mana, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Não temos negócios. Pode ir andando, amigo.",
+        "77ada9142a27dcc8375e": "Retiro o que disse! Poções de mana não são a entrega mais empolgante, mas trabalho com o que consigo.\n\nAqui está sua parte. Agora, como eu disse antes, pode seguir caminho."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -453,6 +631,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -476,6 +664,10 @@
     },
     "ruRU": {
       "description": "\r\n\r\n<В записке, написанной выцветшими чернилами, содержится заказ на oa порций зелья маны, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Нам не о чем говорить. Проходи мимо, приятель.",
+        "77ada9142a27dcc8375e": "Беру свои слова обратно! Зелья маны — не самая захватывающая доставка, но я работаю с тем, что удается достать.\n\nВот ваша доля. А теперь, как я уже сказал, проходите дальше."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -491,6 +683,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -514,6 +716,10 @@
     },
     "svSE": {
       "description": "\n\n<Lappen är skriven med blekt bläck och efterfrågar Mana Potion. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Vi har inga affärer ihop. Gå vidare, kompis.",
+        "77ada9142a27dcc8375e": "Jag tar tillbaka det! Manadrycker är inte den mest spännande leveransen, men jag arbetar med vad jag kan få tag på.\n\nHär är din andel. Och nu, som jag sa tidigare, gå vidare."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -526,6 +732,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -553,6 +769,10 @@
     },
     "trTR": {
       "description": "\n\n<Soluk mürekkeple yazılmış notta Mana Potion isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Bir işimiz yok. Yoluna bak dostum.",
+        "77ada9142a27dcc8375e": "Sözümü geri alıyorum! Mana iksirleri alınabilecek en heyecan verici teslimat değil, ama elime geçenle çalışırım.\n\nİşte payın. Şimdi, daha önce söylediğim gibi, yoluna devam et."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -565,6 +785,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -592,6 +822,10 @@
     },
     "ukUA": {
       "description": "\n\n<У записці, написаній вицвілим чорнилом, просять принести Mana Potion і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "Нам немає про що говорити. Іди собі, друже.",
+        "77ada9142a27dcc8375e": "Беру свої слова назад! Зілля мани — не найцікавіша доставка, але я працюю з тим, що можу дістати.\n\nОсь ваша частка. А тепер, як я вже сказав, рушайте далі."
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -604,6 +838,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -632,6 +876,10 @@
     },
     "zhCN": {
       "description": "\r\n\r\n<字条以褪色的墨水写成，要求提供oa瓶法力药水，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "我们没什么生意可谈。走开，朋友。",
+        "77ada9142a27dcc8375e": "我收回刚才的话！法力药水可不是最令人兴奋的货物，但我有什么就用什么。\n\n这是你那份。现在，像我刚才说的，走吧。"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -647,6 +895,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -672,6 +930,10 @@
     },
     "zhTW": {
       "description": "\r\n\r\n<紙條以褪色的墨水寫成，要求提供oa個法力藥水，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "585a95e3a5a72e64462c": "我們沒什麼生意可談。走開，朋友。",
+        "77ada9142a27dcc8375e": "我收回剛才的話！法力藥水可不是最令人興奮的貨物，但我有什麼就用什麼。\n\n這是你那份。現在，像我剛才說的，走吧。"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -687,6 +949,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.585a95e3a5a72e64462c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.77ada9142a27dcc8375e": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",

@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "ca130e286172bc0b6c4c": {
+      "contributionId": 101959,
+      "lineId": "q:94296:progress",
+      "npcId": 262143,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "efd8547f47ff37890354": {
+      "contributionId": 101975,
+      "lineId": "q:94296:complete",
+      "npcId": 262143,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Wild Leather Shoulders a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Vypadá to, že jsi připraven předat nějaké vybavení.",
+        "efd8547f47ff37890354": "Jak jsem si myslel, měl jsem pravdu.\n\nDěkuji, $c. Stále se vzpamatovávám ze ztrát poté, co mě za temné noci přepadli gnollové. Neboj se, mám plán, jak zajistit, aby mě už nepřekvapili.\n\nTady je tvá odměna."
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Wild Leather Shoulders",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Wild Leather Shoulders. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Det ser ud, som om du er klar til at aflevere noget udstyr.",
+        "efd8547f47ff37890354": "Ganske rigtigt, jeg havde ret.\n\nTak, $c. Jeg er stadig ved at komme mig over mine tab, efter at gnoller overfaldt mig i nattens mulm og mørke. Bare rolig, jeg har planer om at sikre, at de ikke sniger sig ind på mig igen.\n\nHer er din betaling."
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Vilde læderskuldre",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Paar Wildlederschulterstücke und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Ihr seht aus, als wärt Ihr bereit, Ausrüstung abzuliefern.",
+        "efd8547f47ff37890354": "Wie erwartet hatte ich recht.\n\nDanke, $c. Ich erhole mich noch immer von meinen Verlusten, seit Gnolle mich mitten in der Nacht überfallen haben. Keine Sorge, ich habe Pläne, damit sie sich nicht noch einmal an mich heranschleichen.\n\nHier ist Eure Bezahlung."
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Wildlederschulterstücke",
       "translationMetadata": {
@@ -82,6 +132,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -98,6 +158,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Wild Leather Shoulders, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "You look ready to hand over some equipment.",
+        "efd8547f47ff37890354": "Sure enough, I was right.\n\nThank you, $c. I am still recuperating my losses after being ambushed by gnolls in the dark of night. Don't worry, I have plans to ensure they don't sneak up on me again.\n\nHere is your payment."
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Wild Leather Shoulders",
       "translationMetadata": {
@@ -106,6 +170,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -123,6 +199,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa hombreras de cuero salvaje e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Parece que estás listo para entregar algo de equipo.",
+        "efd8547f47ff37890354": "Tal como pensaba, tenía razón.\n\nGracias, $c. Aún me estoy recuperando de mis pérdidas tras sufrir una emboscada de los gnolls en plena noche. No te preocupes, tengo planes para asegurarme de que no vuelvan a sorprenderme.\n\nAquí tienes tu pago."
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: hombreras de cuero salvaje",
       "translationMetadata": {
@@ -131,6 +211,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -147,6 +237,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa par de sobrehombros de cuero salvaje, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Parece que estás listo para entregar algo de equipo.",
+        "efd8547f47ff37890354": "Tal como pensaba, tenía razón.\n\nGracias, $c. Aún me estoy recuperando de mis pérdidas tras sufrir una emboscada de los gnolls en plena noche. No te preocupes, tengo planes para asegurarme de que no vuelvan a sorprenderme.\n\nAquí tienes tu pago."
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Sobrehombros de cuero salvaje",
       "translationMetadata": {
@@ -155,6 +249,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -172,6 +276,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa épaulières en cuir fauve, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "On dirait que vous êtes prêt à livrer de l’équipement.",
+        "efd8547f47ff37890354": "Comme je le pensais, j’avais raison.\n\nMerci, $c. Je me remets encore de mes pertes depuis que des gnolls m’ont tendu une embuscade en pleine nuit. Ne vous inquiétez pas, j’ai prévu de quoi les empêcher de me surprendre à nouveau.\n\nVoici votre paiement."
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : épaulières en cuir sauvage",
       "translationMetadata": {
@@ -180,6 +288,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -196,11 +314,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Wild Leather Shoulders i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Čini se da si spreman predati nešto opreme.",
+        "efd8547f47ff37890354": "Baš kao što sam mislio, bio sam u pravu.\n\nHvala, $c. Još se oporavljam od gubitaka nakon što su me gnollovi napali iz zasjede u gluho doba noći. Ne brini, imam plan kako spriječiti da mi se opet prišuljaju.\n\nEvo tvoje plaće."
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: štitnici za ramena od divlje kože",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -222,11 +354,26 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede oa Spallacci di Cuoio Selvaggio, insieme alle informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che questa commissione è trasferibile.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Hai l'aria di chi è pronto a consegnare dell'equipaggiamento.",
+        "efd8547f47ff37890354": "Come immaginavo, avevo ragione.\n\nGrazie, $c. Mi sto ancora riprendendo dalle perdite subite quando gli gnoll mi hanno teso un’imboscata nel cuore della notte. Non preoccuparti, ho un piano per impedire che mi colgano di nuovo di sorpresa.\n\nEcco il tuo compenso."
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Spallacci di Cuoio Selvaggio",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.efd8547f47ff37890354": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -248,6 +395,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 야생 가죽 어깨보호구 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "장비를 건네줄 준비가 된 것 같군.",
+        "efd8547f47ff37890354": "역시 제 생각이 맞았군요.\n\n고맙습니다, $c. 한밤중에 놀들에게 기습당한 뒤로 아직도 손실을 만회하는 중입니다. 걱정 마세요. 놈들이 다시 몰래 다가오지 못하게 할 계획이 있으니까요.\n\n여기 보수입니다."
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 야생 가죽 어깨보호구",
       "translationMetadata": {
@@ -256,6 +407,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -272,11 +433,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Wild Leather Shoulders oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Wygląda na to, że chcesz przekazać trochę sprzętu.",
+        "efd8547f47ff37890354": "Zgodnie z przewidywaniami, miałem rację.\n\nDziękuję, $c. Wciąż odrabiam straty po tym, jak gnolle urządziły na mnie zasadzkę w środku nocy. Nie martw się, mam plan, który sprawi, że już mnie nie zaskoczą.\n\nOto zapłata."
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: naramienniki z dzikiej skóry",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -298,6 +473,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Omoplatas de Couro Silvestre, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Parece que você está aqui para entregar algum equipamento.",
+        "efd8547f47ff37890354": "Como eu imaginava, eu estava certo.\n\nObrigado, $c. Ainda estou recuperando minhas perdas depois que gnolls me emboscaram no meio da noite. Não se preocupe, tenho planos para garantir que eles não me peguem de surpresa de novo.\n\nAqui está seu pagamento."
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Omoplatas de Couro Silvestre",
       "translationMetadata": {
@@ -306,6 +485,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -323,6 +512,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa пар дикарских кожаных наплечников, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Похоже, ты готов передать снаряжение.",
+        "efd8547f47ff37890354": "Как я и думал, я был прав.\n\nСпасибо, $c. Я все еще восполняю потери после того, как гноллы устроили мне засаду глубокой ночью. Не волнуйтесь, у меня есть план, как не дать им снова подкрасться ко мне.\n\nВот ваша плата."
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: дикарские кожаные наплечники",
       "translationMetadata": {
@@ -331,6 +524,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -348,11 +551,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Wild Leather Shoulders. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Du ser ut att vara redo att lämna över utrustning.",
+        "efd8547f47ff37890354": "Mycket riktigt hade jag rätt.\n\nTack, $c. Jag håller fortfarande på att återhämta mina förluster efter att gnoller överföll mig mitt i natten. Oroa dig inte, jag har planer på att se till att de inte smyger sig på mig igen.\n\nHär är din betalning."
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Axelskydd av viltläder",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -375,6 +592,10 @@
     },
     "trTR": {
       "description": "<Solmuş mürekkeple kaleme alınmış not, teslimat yeri ve ödeme bilgileriyle birlikte $2oa adet Wild Leather Shoulders talep ediyor. Notun altında, bu sipariş belgesinin devredilebilir olduğunu belirten bir yazı yer alıyor.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Görünüşe göre biraz teçhizat teslim etmeye hazırsın.",
+        "efd8547f47ff37890354": "Tahmin ettiğim gibi haklıymışım.\n\nTeşekkürler, $c. Gecenin karanlığında gnoll’ların pususuna düştükten sonra hâlâ kayıplarımı telafi etmeye çalışıyorum. Merak etme, bana tekrar gizlice yaklaşmalarını önleyecek planlarım var.\n\nİşte ödemen."
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Wild Leather Shoulders",
       "translationMetadata": {
@@ -384,6 +605,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -402,11 +633,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Wild Leather Shoulders і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "Схоже, ти готовий передати спорядження.",
+        "efd8547f47ff37890354": "Як я й думав, я мав рацію.\n\nДякую, $c. Я досі надолужую втрати після того, як гноли влаштували мені засідку серед ночі. Не хвилюйтеся, я маю план, як не дати їм знову підкрастися до мене.\n\nОсь ваша платня."
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Наплічники з дикої шкіри",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -430,6 +675,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa对蛮皮护肩，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "看来你准备好交付一些装备了。",
+        "efd8547f47ff37890354": "果然，我说对了。\n\n谢谢你，$c。自从在深夜遭到豺狼人的伏击后，我还在努力弥补损失。别担心，我已经有计划了，绝不会让他们再偷偷靠近我。\n\n这是你的报酬。"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：蛮皮护肩",
       "translationMetadata": {
@@ -438,6 +687,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -455,6 +714,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa對蠻皮護肩，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "ca130e286172bc0b6c4c": "看來你準備好交付一些裝備了。",
+        "efd8547f47ff37890354": "果然，我說對了。\n\n謝謝你，$c。自從在深夜遭到豺狼人的伏擊後，我還在努力彌補損失。別擔心，我已經有計畫了，絕不會讓他們再偷偷靠近我。\n\n這是你的報酬。"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：蠻皮護肩",
       "translationMetadata": {
@@ -463,6 +726,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.ca130e286172bc0b6c4c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.efd8547f47ff37890354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

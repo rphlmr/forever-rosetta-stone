@@ -1,8 +1,21 @@
 {
   "areaId": 16591,
+  "dialogueContexts": {
+    "85569a950f75e94ce293": {
+      "contributionId": 101977,
+      "lineId": "q:96085:complete",
+      "npcId": 262031,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Nečistoty v tomhle vzorku vypadají organicky. Nejde přímo o odpad, ale rozhodně o něco jedovatého.\n\nZvěři moc nerozumím, ale tipuju, že vodu znečišťuje něco proti proudu. Nějaké zvíře, nebo aspoň nějaký tvor.\n\nJdi podél řek co nejdál na sever a zkus zjistit, kdo za tím stojí. Jestli je to zvíře, musí se utratit. Jde o bezpečnost všech tady ve Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Obrovská hnijící želva? A my jsme pili její... Raději nechci myslet na to co.\n\nNení divu, že ti vojáci byli tak nemocní.\n\nBylo to neobvyklé pátrání, ale se vším jste si poradili statečně a se smyslem pro povinnost. Za to vás musím pochválit.\n\nAť už to vědí, nebo ne, všichni ve Farholde vám vděčí za své bezpečí."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +32,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +61,9 @@
     },
     "daDK": {
       "description": "Urenhederne i denne prøve ser organiske ud. Ikke helt affald, men bestemt noget giftigt.\r\n\r\nJeg er ingen ekspert i dyreliv, men jeg vil gætte på, at noget opstrøms forårsager forureningen af vandet. En slags dyr eller i det mindste et væsen.\r\n\r\nFølg floderne så langt nordpå, du kan, og se, om du kan finde årsagen. Hvis det er et dyr, må det aflives. Det er for alles sikkerhed her i Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "En kæmpestor rådnende skildpadde? Og vi drak dens... Jeg vil helst ikke tænke på hvad.\n\nIkke så mærkeligt, at soldaterne var så syge.\n\nDet har været en usædvanlig undersøgelse, men du har håndteret det hele med pligtfølelse og mod. Det må jeg rose dig for.\n\nUanset om de ved det eller ej, skylder alle i Farholde dig deres sikkerhed."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +80,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae67d3431e89e31d84a7e49a5c9194dae054d9ba5bc6166132e972fdb53e1fc8"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +109,9 @@
     },
     "deDE": {
       "description": "Die Unreinheiten in dieser Probe scheinen organischer Natur zu sein. Nicht direkt Abfall, aber definitiv etwas Toxisches.\r\n\r\nIch bin keine Expertin für Wildtiere, aber ich vermute, dass etwas weiter oben im Fluss das Wasser kontaminiert. Eine Art von Tier, oder zumindest eine Kreatur.\r\n\r\nFolgt den Flüssen so weit nach Norden wie möglich und schaut, ob Ihr die Ursache finden könnt. Wenn es ein Tier ist, muss es getötet werden. Es dient der Sicherheit aller hier in Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Eine riesige verwesende Schildkröte? Und wir haben ihre... ich will lieber nicht drüber nachdenken.\n\nKein Wunder, dass diese Soldaten so krank waren.\n\nDas war eine recht ungewöhnliche Untersuchung, aber Ihr seid sie voller Pflichtbewusstsein und Mut angegangen. Das rechne ich Euch hoch an.\n\nOb sie es wissen oder nicht, jeder in Farholde ist Euch zu Dank verpflichtet."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +127,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -123,6 +158,9 @@
     },
     "enUS": {
       "description": "The impurities in this sample look organic in nature. Not quite waste, but certainly something toxic.\r\n\r\nI am no expert on wildlife, but I would guess that there is something upstream causing the water contamination. Some kind of animal, or at least a creature.\r\n\r\nFollow the rivers as far north as you can, and see if you can find what is responsible for this. If it is an animal, it must be put down. It is for the safety of all here in Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "A giant rotting turtle? And we were drinking its... I'd rather not think of what.\n\nNo wonder these soldiers were so ill.\n\nThis has been quite the unusual investigation, but you have handled it all with a sense of duty and bravery. I must commend you for that.\n\nWhether they know it or not, everyone in Farholde owes their safety to you."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -138,6 +176,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -161,6 +205,9 @@
     },
     "esES": {
       "description": "Las impurezas de esta muestra parecen de origen orgánico. No son residuos, pero sí sustancias tóxicas, sin duda.\r\n\r\nNo soy ninguna experta en fauna salvaje, pero diría que hay algo río arriba que está contaminando el agua. Quizá algún tipo de animal o criatura.\r\n\r\nSigue los ríos hacia el norte todo lo que puedas y busca al responsable de esto. Si se trata de un animal, hay que eliminarlo. Es por la seguridad de la gente de Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "¿Una tortuga gigante en descomposición? Y nosotros bebíamos su... Prefiero no pensar en qué.\n\nNo me extraña que esos soldados estuvieran tan enfermos.\n\nHa sido una investigación muy poco común, pero lo has afrontado todo con valentía y sentido del deber. Debo felicitarte por ello.\n\nLo sepan o no, todos en Farholde te deben su seguridad."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -176,6 +223,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -199,6 +251,9 @@
     },
     "esMX": {
       "description": "Las impurezas de esta muestra parecen ser de origen orgánico. No son exactamente desechos, pero sin dudas son algo tóxico.\r\n\r\nNo soy experta en fauna, pero me atrevería a pensar que algo río arriba está provocando la contaminación. Algún tipo de animal, o al menos una criatura.\r\n\r\nSigue los ríos lo más al norte que puedas y fíjate si encuentras la causa de la contaminación. Si es un animal, vas a tener que acabar con él. Es por la seguridad de todos en Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "¿Una tortuga gigante en descomposición? Y nosotros bebíamos su... Prefiero no pensar en qué.\n\nNo me extraña que esos soldados estuvieran tan enfermos.\n\nHa sido una investigación muy inusual, pero enfrentaste todo con valentía y sentido del deber. Debo felicitarte por ello.\n\nLo sepan o no, todos en Farholde te deben su seguridad."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -214,6 +269,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -237,6 +297,9 @@
     },
     "frFR": {
       "description": "Les impuretés trouvées dans l’échantillon semblent organiques. Ce ne sont pas exactement des déjections, mais elles restent néanmoins toxiques.\r\n\r\nBien que mes connaissances de la faune soient limitées, je soupçonne une sorte d’animal ou de créature située en amont des cours d’eau d’être à l’origine de cette contamination.\r\n\r\nRemontez les rivières le plus haut possible et trouvez la cause de la contamination. S’il s’agit d’un animal, vous devrez l’abattre. Ce n’est qu’ainsi que nous garantirons la santé de la population de Fort-Lointain.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Une tortue géante en décomposition ? Et nous buvions son… Je préfère ne pas y penser.\n\nPas étonnant que ces soldats aient été si malades.\n\nCette enquête a été bien inhabituelle, mais vous avez tout affronté avec courage et sens du devoir. Je dois vous en féliciter.\n\nQu’ils le sachent ou non, tous les habitants de Farholde vous doivent leur sécurité."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +315,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -277,6 +345,9 @@
     },
     "hrHR": {
       "description": "Nečistoće u ovom uzorku izgledaju organske prirode. Nije baš otpad, ali svakako je nešto otrovno.\r\n\r\nNisam stručnjak za divlje životinje, ali pretpostavljam da nešto uzvodno uzrokuje zagađenje vode. Nekakva životinja ili barem stvorenje.\r\n\r\nSlijedi rijeke što dalje na sjever i vidi možeš li pronaći što je odgovorno. Ako je životinja, mora je se usmrtiti. To je radi sigurnosti svih ovdje u Farholdeu.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Divovska trula kornjača? A mi smo pili njezin... Radije ne bih razmišljala o tome što.\n\nNije ni čudo što su ti vojnici bili tako bolesni.\n\nOvo je bila prilično neobična istraga, ali svemu ste pristupili hrabro i s osjećajem dužnosti. Moram vas za to pohvaliti.\n\nZnali oni to ili ne, svi u Farholdu duguju vam svoju sigurnost."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -293,6 +364,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae67d3431e89e31d84a7e49a5c9194dae054d9ba5bc6166132e972fdb53e1fc8"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -317,6 +393,9 @@
     },
     "itIT": {
       "description": "Le impurità in questo campione sembrano di natura organica. Non proprio rifiuti, ma certamente qualcosa di tossico.\n\nNon sono un esperto di fauna selvatica, ma immagino che a monte ci sia qualcosa che provoca la contaminazione dell'acqua. Una sorta di animale, o almeno una creatura.\n\nSegui i fiumi il più a nord possibile e cerca di scoprire cosa ne è responsabile. Se si tratta di un animale, dovrà essere abbattuto. È per la sicurezza di tutti qui a Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Una tartaruga gigante in putrefazione? E noi bevevamo la sua... preferisco non pensare a cosa.\n\nNon c'è da stupirsi che questi soldati stessero così male.\n\nÈ stata un'indagine davvero insolita, ma l'hai affrontata con senso del dovere e coraggio. Devo fartene i complimenti.\n\nChe lo sappiano o no, tutti a Farholde devono a te la loro sicurezza."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -333,6 +412,12 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae67d3431e89e31d84a7e49a5c9194dae054d9ba5bc6166132e972fdb53e1fc8"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -357,6 +442,9 @@
     },
     "koKR": {
       "description": "이 표본의 불순물은 유기물에 가깝습니다. 폐기물이라고 하긴 어렵지만 분명 독성이 있는 무언가예요.\r\n\r\n제가 야생동물 전문가는 아니지만, 상류 어딘가의 무언가가 물을 오염시키고 있습니다. 동물, 적어도 살아 있는 존재의 짓일 겁니다.\r\n\r\n강을 따라 최대한 북쪽으로 올라가 원인을 찾아보세요. 동물이라면 처치해야 합니다. 파홀드 모두의 안전이 걸린 일입니다.",
+      "dialogue": {
+        "85569a950f75e94ce293": "썩어 가는 거대한 거북이라고요? 그럼 우리는 그 거북이의... 무엇을 마셨는지 생각하고 싶지도 않군요.\n\n병사들이 그렇게 아팠던 것도 당연하네요.\n\n참으로 특이한 조사였지만, 당신은 모든 일을 책임감과 용기를 가지고 처리했어요. 정말 칭찬해 드리고 싶군요.\n\n알든 모르든, 파홀드의 모두가 당신 덕분에 안전해졌어요."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -372,6 +460,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -395,6 +488,9 @@
     },
     "plPL": {
       "description": "Zanieczyszczenia w tej próbce wyglądają na organiczne. Nie są to odchody, ale z pewnością coś trującego.\r\n\r\nNie znam się na dzikich zwierzętach, ale podejrzewam, że coś w górze rzeki powoduje skażenie wody. Jakieś zwierzę, a przynajmniej stworzenie.\r\n\r\nPodążaj wzdłuż rzek tak daleko na północ, jak zdołasz, i spróbuj znaleźć winowajcę. Jeśli to zwierzę, trzeba je uśmiercić. Chodzi o bezpieczeństwo wszystkich w Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Wielki gnijący żółw? A my piliśmy jego... Wolę nie myśleć co.\n\nNic dziwnego, że ci żołnierze tak ciężko chorowali.\n\nTo było niezwykłe śledztwo, ale wykazaliście się poczuciem obowiązku i odwagą. Muszę was za to pochwalić.\n\nCzy o tym wiedzą, czy nie, wszyscy w Farholde zawdzięczają wam bezpieczeństwo."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -411,6 +507,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae67d3431e89e31d84a7e49a5c9194dae054d9ba5bc6166132e972fdb53e1fc8"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -435,6 +536,9 @@
     },
     "ptBR": {
       "description": "As impurezas dessa amostra parecem ter natureza orgânica. Não são dejetos, mas com certeza são tóxicas.\r\n\r\nEu não sou especialista em fauna, mas aposto que tem alguma coisa rio acima contaminando a água. Algum tipo de animal, ou pelo menos uma criatura.\r\n\r\nSiga o rio em direção ao norte e veja se encontra a origem dessa contaminação. Se for um animal, ele precisa ser abatido. É para a segurança de todos em Ermoforte.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Uma tartaruga gigante apodrecendo? E nós estávamos bebendo seu... Prefiro nem pensar no quê.\n\nNão é de admirar que aqueles soldados estivessem tão doentes.\n\nEsta foi uma investigação bastante incomum, mas você enfrentou tudo com coragem e senso de dever. Devo elogiá-lo por isso.\n\nSaibam eles ou não, todos em Farholde devem sua segurança a você."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -450,6 +554,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -473,6 +582,9 @@
     },
     "ruRU": {
       "description": "Эта мерзость в воде кажется органической. Не нечистоты, но что-то ядовитое.\r\n\r\nЯ, конечно, не специалист по диким животным, но предположу, что какое-то существо выше по течению загрязняет воду.\r\n\r\nСтупай вдоль рек как можно дальше на север и попытайся выяснить, что там творится. Если дело и вправду в каком-то животном, то его надо убить ради безопасности всех обитателей Фархолда.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Огромная гниющая черепаха? И мы пили ее... Нет, лучше о таком даже не думать.\n\nНемудрено, что воины разболелись.\n\nЧто ж, ситуация была очень необычная, но тебе удалось во всем разобраться, проявив при этом отвагу и чувство долга. Я благодарна за это.\n\nВсе в Фархолде в долгу перед тобой – пусть они об этом и не догадываются."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -488,6 +600,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ruRU",
+            "sourceSha256": "923c65b4e9ffb1220a3db189b4971c0b37e435a446032cabab3faf6cf39c98a0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -513,6 +631,9 @@
     },
     "svSE": {
       "description": "Föroreningarna i provet verkar vara organiska till sin natur. Inte riktigt avfall, men definitivt något giftigt.\r\n\r\nJag är ingen expert på djurliv, men jag skulle gissa att något uppströms förorenar vattnet. Något slags djur, eller åtminstone en varelse.\r\n\r\nFölj floderna så långt norrut du kan och se om du kan hitta vad som orsakar detta. Om det är ett djur måste det avlivas. Det är för allas säkerhet här i Farholde.",
+      "dialogue": {
+        "85569a950f75e94ce293": "En jättelik ruttnande sköldpadda? Och vi drack dess... Jag vill helst inte tänka på vad.\n\nInte undra på att soldaterna var så sjuka.\n\nDet här har varit en ovanlig undersökning, men du har hanterat allt med pliktkänsla och mod. Det ska du ha beröm för.\n\nVare sig de vet om det eller inte har alla i Farholde dig att tacka för sin säkerhet."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -529,6 +650,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae67d3431e89e31d84a7e49a5c9194dae054d9ba5bc6166132e972fdb53e1fc8"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -553,6 +679,9 @@
     },
     "trTR": {
       "description": "Bu örnekteki yabancı maddeler organik görünüyor. Tam olarak atık değil ama kesinlikle zehirli bir şey.\n\nYaban hayatı uzmanı değilim ama nehrin yukarısında suyu kirleten bir şey olduğunu tahmin ediyorum. Bir tür hayvan ya da en azından bir yaratık.\n\nNehirleri olabildiğince kuzeye takip et ve sorumluyu bulabilir misin bak. Hayvansa öldürülmeli. Farholde'daki herkesin güvenliği için.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Çürüyen dev bir kaplumbağa mı? Ve biz onun... Neyini içtiğimizi düşünmek bile istemiyorum.\n\nAskerlerin bu kadar hasta olmasına şaşmamalı.\n\nOldukça sıra dışı bir soruşturmaydı ama sen her şeyi görev bilinci ve cesaretle hallettin. Bunun için seni takdir etmeliyim.\n\nFarkında olsalar da olmasalar da Farholde’daki herkes güvenliğini sana borçlu."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -569,6 +698,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae67d3431e89e31d84a7e49a5c9194dae054d9ba5bc6166132e972fdb53e1fc8"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -593,6 +727,9 @@
     },
     "ukUA": {
       "description": "Домішки в цьому зразку виглядають органічними. Не зовсім відходи, але точно щось отруйне.\r\n\r\nЯ не знавець дикої природи, та припускаю, що вище за течією є щось, що забруднює воду. Якась тварина або принаймні істота.\r\n\r\nІди вздовж річок якомога далі на північ і спробуй знайти винуватця. Якщо це тварина, її треба вбити. Заради безпеки всіх у Фарголді.",
+      "dialogue": {
+        "85569a950f75e94ce293": "Величезна гнила черепаха? І ми пили її... Навіть не хочу думати що.\n\nНе дивно, що ті солдати так захворіли.\n\nЦе було досить незвичайне розслідування, але ви впоралися з усім мужньо й віддано своєму обов’язку. Мушу вас за це похвалити.\n\nЗнають вони про це чи ні, усі мешканці Фарголда завдячують вам своєю безпекою."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -609,6 +746,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "ae67d3431e89e31d84a7e49a5c9194dae054d9ba5bc6166132e972fdb53e1fc8"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -633,6 +775,9 @@
     },
     "zhCN": {
       "description": "这个样本里的杂质看起来是有机物。不完全是排泄物，但绝对是有毒的东西。\r\n\r\n我不是野生动物专家，但我猜上游肯定有什么东西导致了水源污染。某种动物，或者至少是某种生物。\r\n\r\n沿着河流尽可能向北走，看看能不能找到罪魁祸首。如果是一只动物，必须把它解决掉。这是为了法霍德所有人的安全。",
+      "dialogue": {
+        "85569a950f75e94ce293": "一只巨大的腐烂海龟？而我们居然在喝它的……我都不敢想那是什么。\n\n难怪这些士兵病得这么重。\n\n这是一次非常不同寻常的调查，但你以责任感和勇气完美地处理了这一切。我必须表扬你。\n\n法霍德的每个人都欠你一条命，不管他们自己清不清楚。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -648,6 +793,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -673,6 +824,9 @@
     },
     "zhTW": {
       "description": "樣本裡的雜質看起來很像有機物。雖然不是廢棄物，但肯定具有某種毒素。\r\n\r\n我不是野生動物的專家，但上游一定有東西造成這樣的污染。應該是某種動物，也有可能是怪物。\r\n\r\n盡你所能沿著河流向北，看看造成污染的究竟是什麼東西。如果是動物的話，一定要把牠除掉。這是為了遠境堡所有人的安危著想。",
+      "dialogue": {
+        "85569a950f75e94ce293": "一隻腐爛的巨龜？而我們喝了牠的……我還是別想那是什麼了。\n\n難怪那些士兵病得這麼重。\n\n這次調查實在不同尋常，但你憑著責任感和勇氣處理了這一切。我必須稱讚你。\n\n無論他們知不知道，法霍德的所有人都要感謝你守護了他們的安全。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -688,6 +842,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.85569a950f75e94ce293": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

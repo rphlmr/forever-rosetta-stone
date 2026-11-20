@@ -9,6 +9,8 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
 
 - Game text and names belong to Blizzard Entertainment. Client table references came through
   [Wago.tools](https://wago.tools/db2), including builds `1.60.1.70862`, `1.60.1.70888` and `1.60.1.70938`.
+- [Spoken](https://spoken.quest/) supplied contributed Forever quest dialogue and matching
+  localized wording. Catalog fields retain the source snapshot, and dialogue contexts retain the contribution ID.
 - [EG Link](https://github.com/JIVESCORP/eg-link-output-wowf) compiles native NPC and item cache text
   and observed book pages used by our import.
   Data from Efficient Games (https://efficient.games), licensed under
@@ -28,11 +30,16 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
 - [VMaNGOS](https://github.com/vmangos/core), [CMaNGOS Classic DB](https://github.com/cmangos/classic-db)
   and [AzerothCore](https://github.com/azerothcore/azerothcore-wotlk) supplied book page references.
   The catalog distinguishes Classic and Wrath reference evidence from observations in Forever.
-- [Zephras](https://zephras.com/forever/enUS/npc/1573/) supplied the English flight option wording for Gryth Thurden.
+- [Zephras](https://zephras.com/) supplied observed Forever NPC dialogue options, including
+  the [flight option for Gryth Thurden](https://zephras.com/forever/enUS/npc/1573/).
+  Matching translations from the VMaNGOS BroadcastText reference retain their own provenance.
 - Additional terminology/context references included [JudgeHype](https://wowclassic.judgehype.com/),
   [Realm First](https://realmfirst.net/), and [ConquestCapped](https://conquestcapped.com/).
 
 ## Community translations
+
+- devteabct78 contributed the Turkish name for Greater Plainstrider in
+  [issue #14](https://github.com/rphlmr/forever-rosetta-stone/issues/14).
 
 - [ClassicUA](https://github.com/greenya/ClassicUA/tree/1770d208ad853d23d61105cf510d53804770d916),
   revisions `d9bf29572a85957fd69085be0cec28262cba0c87` and

@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "66522151dc1c8d865cf9": {
+      "contributionId": 113239,
+      "lineId": "q:94290:progress",
+      "npcId": 5634,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "fac949c90f6c96326d3f": {
+      "contributionId": 113219,
+      "lineId": "q:94290:complete",
+      "npcId": 5634,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Mechanical Repair Kit a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Cože? ...Škyt!",
+        "fac949c90f6c96326d3f": "Co... co je tohle...? Škyt!\n\nNepamatuju ši, že bych ši objednal nějaký... škyt!... opravný cosi.\n\nUch, dobře, přestaňte žvanit, zaplatím, kolik to bude! Škyt!"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Mechanical Repair Kit",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Mechanical Repair Kit. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Hva’? ...Hik!",
+        "fac949c90f6c96326d3f": "Hva... hvad er det her...? Hik!\n\nJeg husker ikke, jeg har bestilt nogen... hik!... hva-det-nu-hedder-reparationssæt.\n\nUrgh, okay, hold op med at plapre, jeg skal nok betale! Hik!"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Mekanisk reparationssæt",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa mechanischen Reparierset und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Hä? ... Hicks!",
+        "fac949c90f6c96326d3f": "Wa... Wasch isch dasch...? Hicks!\n\nIch erinner mich nich' an... Hicks! Wasch wollt Ihr reparieren?\n\nUff, schon gut, labert mich nicht voll, ich zahle ja schon. Hicks!"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Mechanisches Reparierset",
       "translationMetadata": {
@@ -82,6 +132,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -100,6 +162,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Mechanical Repair Kit, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Huh? ...Hiccup!",
+        "fac949c90f6c96326d3f": "Wha--what ish thish...? Hiccup!\n\nI don' remember orderin' any--hiccup!--whatchama-repair-kits.\n\nUrgh, alright stop yapping, I'll pay whatever it is! Hiccup!"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Mechanical Repair Kit",
       "translationMetadata": {
@@ -108,6 +174,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +203,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa kit de reparación mecánico e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "¿Eh? ...¡Hip!",
+        "fac949c90f6c96326d3f": "¿Qué... qué es eshto...? ¡Hip!\n\nNo recuerdo haber pedido ningún... ¡hip!... chisme de reparación.\n\nUf, está bien, dejad de parlotear, ¡pagaré lo que sea! ¡Hip!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: juego de reparación mecánico",
       "translationMetadata": {
@@ -133,6 +215,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -149,6 +241,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa equipo de reparación mecánica, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "¿Eh? ...¡Hip!",
+        "fac949c90f6c96326d3f": "¿Qué... qué es eshto...? ¡Hip!\n\nNo recuerdo haber pedido ningún... ¡hip!... chisme de reparación.\n\nUf, está bien, deja de parlotear, ¡pagaré lo que sea! ¡Hip!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Equipo de reparación mecánica",
       "translationMetadata": {
@@ -157,6 +253,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -174,6 +280,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa oltrousse:trousses;  de réparation mécanique, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Hein ? ... Hips !",
+        "fac949c90f6c96326d3f": "Qu... qu’est-che que ch’est que cha... ? Hip !\n\nJ’me rappelle pas avoir commandé de... hip !... truc-muche de réparation.\n\nBeuh, d’accord, arrêtez de bavasser, je paierai c’que vous voulez ! Hip !"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : trousse de réparation mécanique",
       "translationMetadata": {
@@ -182,6 +292,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -198,11 +318,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Mechanical Repair Kit i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Ha? ...Štuc!",
+        "fac949c90f6c96326d3f": "Š-što je ovo...? Štuc!\n\nNe sjećam se da sam naručio ikakav... štuc!... onaj komplet za popravak.\n\nUf, dobro, prestanite brbljati, platit ću koliko treba! Štuc!"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: mehanički komplet za popravak",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -224,11 +358,25 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede un Kit di riparazione meccanica e riporta informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che la commissione è trasferibile.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Eh? ...Singhiozzo!",
+        "fac949c90f6c96326d3f": "Co... cos’è queshto...? Singhiozzo!\n\nNon ricordo d’aver ordinato nessun... hic!... coso per le riparazioni.\n\nUgh, va bene, smettila di blaterare, pagherò quel che costa! Hic!"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Kit di Riparazione Meccanica",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -250,6 +398,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 기계 수리 장비 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "응? ...딸꾹!",
+        "fac949c90f6c96326d3f": "이, 이게 뭐야...? 딸꾹!\n\n무슨 수리 도구 같은 걸... 딸꾹!... 주문한 기억이 없는데.\n\n으, 알았어. 그만 떠들어, 얼마든 낼 테니까! 딸꾹!"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 기계 수리 장비",
       "translationMetadata": {
@@ -258,6 +410,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -274,11 +436,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Mechanical Repair Kit oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Co? ...Czkawka!",
+        "fac949c90f6c96326d3f": "Co... co to jeszt...? Czkawka!\n\nNie pamiętam, żebym zamawiał jakieś... czk!... ustrojstwo do naprawy.\n\nUch, dobra, przestań gadać, zapłacę, ile trzeba! Czk!"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: mechaniczny zestaw naprawczy",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -300,6 +476,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Kit de Reparos Mecânicos, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Hã? ...Hic!",
+        "fac949c90f6c96326d3f": "O... o que é issho...? Soluço!\n\nNum lembro de ter pedido nenhum... hic!... treco de reparo.\n\nArgh, tá bom, para de tagarelar, eu pago o que for! Hic!"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Kit de Reparos Mecânicos",
       "translationMetadata": {
@@ -308,6 +488,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -325,6 +515,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa автоматических ремонтных наборов, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "А? ...Ик!",
+        "fac949c90f6c96326d3f": "Ч... что это такое...? Ик!\n\nНе помню, чтобы заказывал какие-то... ик!... ремонтные штуковины.\n\nУф, ладно, хватит болтать, заплачу, сколько надо! Ик!"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: автоматический ремонтный набор",
       "translationMetadata": {
@@ -333,6 +527,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -350,11 +554,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Mechanical Repair Kit. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Va? ...Hick!",
+        "fac949c90f6c96326d3f": "Va... vad är det här...? Hick!\n\nJag minns inte att jag beställt några... hick!... reparationsmojänger.\n\nUsch, okej, sluta tjattra, jag betalar vad det än kostar! Hick!"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Mekanisk reparationssats",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -377,6 +595,10 @@
     },
     "trTR": {
       "description": "<Solmuş mürekkeple kaleme alınmış not, teslimat yeri ve ödeme bilgileriyle birlikte $2oa adet Mechanical Repair Kit talep ediyor. Notun altında, bu sipariş belgesinin devredilebilir olduğunu belirten bir yazı yer alıyor.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Ha? ...Hıçk!",
+        "fac949c90f6c96326d3f": "N-ne bu böle...? Hıçkırık!\n\nHerhangi bir... hık!... tamir şeysi sipariş ettiğimi hatırlamıyorum.\n\nÖf, tamam, gevezeliği kes, neyse öderim! Hık!"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Mechanical Repair Kit",
       "translationMetadata": {
@@ -386,6 +608,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -404,11 +636,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Mechanical Repair Kit і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "Га? ...Гик!",
+        "fac949c90f6c96326d3f": "Щ... що це таке...? Гикавка!\n\nНе пам’ятаю, щоб замовляв якісь... гик!... ремонтні штукенції.\n\nУх, гаразд, годі базікати, заплачу скільки треба! Гик!"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Механічний ремкомплект",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -432,6 +678,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa个机械修理包，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "啊？……嗝！",
+        "fac949c90f6c96326d3f": "什、什么东西……？嗝！\n\n我不记得订过什么……嗝！……修理啥来着的工具。\n\n呃，好吧，别唠叨了，多少钱我都付！嗝！"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：机械修理包",
       "translationMetadata": {
@@ -440,6 +690,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -457,6 +717,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa個機械修理包，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "66522151dc1c8d865cf9": "啊？……嗝！",
+        "fac949c90f6c96326d3f": "什、什麼東西……？嗝！\n\n我不記得訂過什麼……嗝！……修理啥來著的工具。\n\n呃，好吧，別嘮叨了，多少錢我都付！嗝！"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：機械修理包",
       "translationMetadata": {
@@ -465,6 +729,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.66522151dc1c8d865cf9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fac949c90f6c96326d3f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

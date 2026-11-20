@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "0d248384d51a1b6d6340": {
+      "contributionId": 145140,
+      "lineId": "q:93827:complete",
+      "npcId": 256660,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "1f540006dc869c653505": {
+      "contributionId": 145044,
+      "lineId": "q:93827:progress",
+      "npcId": 256660,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Horské větry přinášejí temná znamení. Harpyje hnízdí vysoko, kam naše tlapy nechodí. Drahokamy, které nosí, mají velkou moc. Spojené s našimi amulety nás chrání před kletbou a poutají duchy k našim ochranným znamením.\n\nAle výstup je těžký a harpyje útočí drápy i bouří. Jestli máš takovou sílu, jak se o tobě říká, jdi na vysoké útesy, kde ječí vítr. Hnízdiště harpyjí jsou uprostřed Hyjalu, vidíme je létat nad námi, na severovýchodě. Seber amulety těm nebeským čarodějnicím a přines mi je.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Přinášíte drahokamy nebeských čarodějnic. Dobře. Jejich bouře utichne a naše ochrany vydrží.",
+        "1f540006dc869c653505": "Magie harpyjí je syrová a prvotní, mudrci ji mohou utvářet."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Bjergvindene bringer mørke tegn. Harpyer bygger rede højt, hvor vores poter ikke kommer. Ædelstenene, de bærer, rummer stærk kraft. Bundet med vores amuletter beskytter de os mod forbandelser og binder ånderne til vores værn.\r\n\r\nMen opstigningen er svær, og harpyerne angriber med klo og storm. Hvis du er så stærk, som de siger, så gå til de høje klipper, hvor vinden skriger. Harpyernes områder er i det midterste Hyjal; vi ser dem flyve over os mod nordøst. Tag amuletterne fra himmelheksene og bring dem til mig.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Du bringer himmelheksenes ædelsten. Godt. Deres storm vil lægge sig, og vores værn vil holde.",
+        "1f540006dc869c653505": "Harpiernes magi er rå og urkraftig og kan formes af vismænd."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f2171e4c3366316d36538f6ded285a7c23260613a7f93efac3dcb9bac9e5c634"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Die Winde des Berges bringen dunkle Zeichen. Harpyien nisten hoch oben, wohin unsere Tatzen nicht reichen. Die Edelsteine, die sie tragen, bergen große Macht. Verbunden mit unseren Anhängern schützen sie uns vor Flüchen und binden die Geister an unsere Schutzzauber.\r\n\r\nAber der Aufstieg dorthin ist schwer, und die Harpyien wehren sich mit Krallen und Stürmen. Wenn Ihr so stark seid, wie behauptet wird, dann geht zu den hohen Felsspalten, dort, wo der Wind peitscht. Das Harpyiengebiet befindet sich mitten auf dem Hyjal. Wir können sie im Nordosten über uns fliegen sehen. Nehmt die Amulette der Himmelshexen und bringt sie mir.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Ihr bringt die Edelsteine der Himmelshexen. Gut. Ihr Sturm wird versiegen, und unsere Schutzzauber werden halten.",
+        "1f540006dc869c653505": "Harpyienmagie ist roh und urtümlich. Sie kann von Gelehrten geformt werden."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +182,10 @@
     },
     "enUS": {
       "description": "The mountain winds bring dark signs. Harpies nest high where our paws do not go. The gems they wear hold strong power. Bound with our charms, they guard us from curse and bind the spirits to our wards.\r\n\r\nBut the climb is hard, and the harpies strike with claw and storm. If you are strong like they say, go to the high crags where the wind screams. Harpy grounds are in mid land Hyjal, we see them fly above us, in the north east. Take the charms from the sky witches and bring them to me.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "You bring the sky-witch gems. Good. Their storm will fade, and our wards will hold.",
+        "1f540006dc869c653505": "Harpy magic is raw and primal, able to be shaped by sages."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +201,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Los vientos de la montaña traen oscuros augurios. Las arpías anidan en las alturas, donde nuestras patas no llegan. Las gemas que llevan tienen un gran poder. Al unirlas con nuestros talismanes, nos protegen de las maldiciones y vinculan a los espíritus con nuestros resguardos.\r\n\r\nSin embargo, el ascenso es duro, y las arpías atacan con garras y truenos. Si eres tan fuerte como comentan, sube a los altos riscos donde aúlla el viento. Los terrenos de las arpías están en la región central de Hyjal; las vemos sobrevolar en el noreste. Arrebátales los amuletos a esas brujas del cielo y tráemelos.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Traes las gemas de las brujas del cielo. Bien. Su tormenta amainará y nuestras protecciones resistirán.",
+        "1f540006dc869c653505": "La magia de las arpías es pura y primigenia, y los sabios pueden moldearla."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -198,6 +290,10 @@
     },
     "esMX": {
       "description": "Los vientos de la montaña soplan agoreros. Las arpías anidan alto, donde nuestras patas no llegan. Las gemas que llevan tienen un gran poder. Vinculadas a nuestros amuletos, nos protegen de maldiciones y atan a los espíritus a nuestros resguardos.\r\n\r\nPero el ascenso es difícil, y las arpías atacan con garras y tormentas. Si eres tan fuerte como dicen, sube a los altos riscos donde aúlla el viento. La tierra de las arpías se ubica en el centro de Hyjal. Podemos ver cómo nos sobrevuelan en el noreste. Toma los amuletos de esas brujas del cielo y tráemelos.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Traes las gemas de las brujas del cielo. Bien. Su tormenta amainará y nuestras protecciones resistirán.",
+        "1f540006dc869c653505": "La magia de las arpías es pura y primigenia, y los sabios pueden moldearla."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -213,6 +309,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -237,6 +343,10 @@
     },
     "frFR": {
       "description": "Les vents de la montagne sont porteurs de sombres signes. Les Harpies nichent dans les hauteurs, là où nos pattes ne peuvent les atteindre. Les gemmes qu’elles portent détiennent une forte puissance. Unies par nos charmes, elles nous protègent de la malédiction et lient les esprits à nos protections.\r\n\r\nMais l’ascension est difficile et les Harpies nous harcèlent de leurs griffes et de leurs tempêtes. Si vous avez autant de force qu’ils le disent, rendez-vous dans les hautes combes, où le vent hurle. Le territoire des Harpies se trouve à mi-hauteur d’Hyjal, au nord-est. Prenez leurs breloques aux sorcières du ciel et rapportez-les-moi.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Vous apportez les gemmes des sorcières du ciel. Bien. Leur tempête s’apaisera et nos protections tiendront.",
+        "1f540006dc869c653505": "La magie des harpies est brute et primordiale. Les sages peuvent la façonner."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +362,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -276,6 +396,10 @@
     },
     "hrHR": {
       "description": "Planinski vjetrovi donose mračne znakove. Harpije se gnijezde visoko kamo naše šape ne idu. Dragulji koje nose sadrže snažnu moć. Vezani našim amajlijama, štite nas od kletve i vežu duhove za naše zaštite.\r\n\r\nAli uspon je težak, a harpije udaraju kandžama i olujom. Ako si snažan kako kažu, idi na visoke stijene gdje vjetar vrišti. Područje harpija je u središnjem Hyjalu, vidimo ih kako lete iznad nas na sjeveroistoku. Uzmi amajlije od nebeskih vještica i donesi mi ih.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Donosite dragulje nebeskih vještica. Dobro. Njihova će oluja oslabjeti, a naše će zaštite izdržati.",
+        "1f540006dc869c653505": "Magija harpija sirova je i iskonska te je mudraci mogu oblikovati."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -292,6 +416,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f2171e4c3366316d36538f6ded285a7c23260613a7f93efac3dcb9bac9e5c634"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -315,6 +449,10 @@
     },
     "itIT": {
       "description": "Hai trovato una versione corrotta e malata di quella che somiglia a una pianta di Fiorcanto. Emana un odore acre ed è evidente che ha bisogno di cure immediate per tornare al suo stato originale.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Porti le gemme delle streghe del cielo. Bene. La loro tempesta svanirà, e le nostre protezioni reggeranno.",
+        "1f540006dc869c653505": "La magia delle arpie è grezza e primordiale, ma i saggi possono plasmarla."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -330,6 +468,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -352,6 +502,10 @@
     },
     "koKR": {
       "description": "산바람에 불길한 징조가 실려 오는군. 하피들이 우리 발이 닿지 않는 높은 곳에 둥지를 틀고 있다. 놈들이 걸친 보석에는 강한 힘이 깃들어 있지. 우리의 부적과 결속하면 저주를 막고 영혼을 수호물에 붙들 수 있다.\r\n\r\n물론 올라가는 길은 험해. 게다가 하피들이 발톱과 폭풍을 앞세워 덮칠 거다. 소문처럼 강하다면 바람이 비명을 토하는 암반 지대로 가라. 하피의 영역은 하이잘 중앙에 있다. 북동쪽에서 날아다니더군. 하늘 마녀들에게서 부적을 빼앗아 가져오도록.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "하늘 마녀들의 보석을 가져왔군. 좋아. 그들의 폭풍은 잦아들고 우리 수호물은 버틸 걸세.",
+        "1f540006dc869c653505": "하피의 마법은 원시적이고 거칠어서 현자들이 형태를 빚을 수 있습니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -367,6 +521,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -391,6 +555,10 @@
     },
     "plPL": {
       "description": "Górskie wiatry przynoszą mroczne znaki. Harpie gnieżdżą się wysoko, gdzie nasze łapy nie docierają. Klejnoty, które noszą, mają silną moc. Związane z naszymi amuletami chronią nas przed klątwą i przywiązują duchy do naszych osłon.\r\n\r\nAle wspinaczka jest trudna, a harpie atakują szponem i burzą. Jeśli masz tyle siły, ile mówią, idź na wysokie skały, gdzie wiatr wyje. Tereny harpii są w środkowej części Hyjalu, widzimy je lecące nad nami na północnym wschodzie. Zabierz amulety niebiańskim wiedźmom i przynieś mi je.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Przynosisz klejnoty wiedźm niebios. Dobrze. Ich burza ucichnie, a nasze zaklęcia ochronne wytrzymają.",
+        "1f540006dc869c653505": "Magia harpii jest surowa i pierwotna, a mędrcy mogą ją kształtować."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -407,6 +575,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f2171e4c3366316d36538f6ded285a7c23260613a7f93efac3dcb9bac9e5c634"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -430,6 +608,10 @@
     },
     "ptBR": {
       "description": "Os ventos da montanha trazem sinais sombrios. As harpias se aninham bem alto, onde nossas patas não alcançam. As gemas que elas usam carregam um grande poder. Presas a nossos amuletos, elas nos protegem de maldições e vinculam os espíritos a nossas proteções.\r\n\r\nMas a subida é árdua, e as harpias atacam com garras e tempestades. Se você for forte como dizem, vá aos penhascos mais altos onde os ventos gritam. O território das harpias fica na região central de Hyjal. Nós as vemos voando acima de nós, a nordeste. Pegue os amuletos das bruxas do céu e traga-os para mim.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Você traz as gemas das bruxas do céu. Bom. A tempestade delas vai se dissipar, e nossas proteções vão resistir.",
+        "1f540006dc869c653505": "A magia das harpias é bruta e primordial, capaz de ser moldada por sábios."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -445,6 +627,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -469,6 +661,10 @@
     },
     "ruRU": {
       "description": "Горные ветра приносят недобрые предзнаменования. Гарпии гнездятся высоко, там, куда не ступают наши лапы. В самоцветах, которыми они себя украшают, заключена огромная сила. В сочетании с нашими оберегами они защищают нас от проклятий и привязывают духов.\r\n\r\nНо подняться в такую высь нелегко, да и гарпии пускают в дело когти и мощь бури. Если рассказы о твоей силе правдивы, ступай к высоким скалам, где воет ветер. Гнездовья гарпий находятся в центральной части Хиджала – мы видим, как они кружат над нами на северо-востоке. Забери обереги у небесных ведьм и принеси их мне.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Ты принес самоцветы небесных ведьм. Хорошо. Их буря утихнет, а наши обереги выстоят.",
+        "1f540006dc869c653505": "Магия гарпий сырая и первобытная, и мудрецы могут придать ей форму."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -484,6 +680,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -508,6 +714,10 @@
     },
     "svSE": {
       "description": "Bergsvindarna bär mörka tecken. Harpyor bygger bo högt där våra tassar inte går. Ädelstenarna de bär har stark kraft. Bundna till våra amuletter skyddar de oss från förbannelser och binder andarna till våra skydd.\r\n\r\nMen klättringen är svår och harpyorna slår med klo och storm. Om du är stark som de säger, gå till de höga klipporna där vinden skriker. Harpyornas marker finns i mellersta Hyjal, vi ser dem flyga över oss i nordost. Ta amuletterna från himlahäxorna och ge dem till mig.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Du kommer med himmelshäxornas ädelstenar. Bra. Deras storm kommer att avta och våra skydd hålla.",
+        "1f540006dc869c653505": "Harpyornas magi är rå och ursprunglig och kan formas av visa."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -524,6 +734,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f2171e4c3366316d36538f6ded285a7c23260613a7f93efac3dcb9bac9e5c634"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -547,6 +767,10 @@
     },
     "trTR": {
       "description": "Dağ rüzgârları karanlık işaretler getiriyor. Harpiler patilerimizin ulaşmadığı yükseklerde yuva kurar. Taktıkları taşlar güçlü kudret taşır. Bizim tılsımlarımızla bağlanınca lanetten korur, ruhları korumalarımıza bağlarlar.\n\nAma tırmanış zor. Harpiler pençe ve fırtınayla vurur. Dedikleri kadar güçlüysen rüzgârın çığlık attığı yüksek kayalıklara git. Harpi alanları orta Hyjal'da. Kuzeydoğuda üzerimizde uçtuklarını görüyoruz. Gök cadılarından tılsımları alıp bana getir.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Gök cadılarının mücevherlerini getirdin. Güzel. Fırtınaları dinecek ve korumalarımız dayanacak.",
+        "1f540006dc869c653505": "Harpi büyüsü ham ve ilkeldir; bilgeler ona şekil verebilir."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -563,6 +787,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f2171e4c3366316d36538f6ded285a7c23260613a7f93efac3dcb9bac9e5c634"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -586,6 +820,10 @@
     },
     "ukUA": {
       "description": "Гірські вітри несуть темні знамення. Гарпії гніздяться високо, куди наші лапи не ступають. Камені, які вони носять, мають могутню силу. Поєднані з нашими чарами, вони захищають нас від проклять і прив'язують духів до наших оберегів.\r\n\r\nАле підйом важкий, і гарпії б'ють кігтями й бурею. Якщо ти справді такий сильний, як кажуть, іди до високих скель, де верещить вітер. Угіддя гарпій у середній частині Гіджалу, ми бачимо, як вони літають над нами на північному сході. Забери талісмани небесних відьом і принеси мені.",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "Ти приніс самоцвіти небесних відьом. Добре. Їхня буря вщухне, а наші обереги вистоять.",
+        "1f540006dc869c653505": "Магія гарпій сира й первісна, і мудреці можуть надавати їй форми."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -602,6 +840,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "f2171e4c3366316d36538f6ded285a7c23260613a7f93efac3dcb9bac9e5c634"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -625,6 +873,10 @@
     },
     "zhCN": {
       "description": "山风送来了黑暗的征兆。鹰身人把巢穴筑在我们爪子无法触及的高处。她们佩戴的宝石蕴含着强大的力量。若是能与我们的护符结合，就能保护我们免受诅咒，并将灵魂绑定在我们的结界上。\r\n\r\n但是攀登异常艰难，鹰身人也会用利爪和风暴发起攻击。如果你真如传说中那般强大，就去那狂风呼啸的陡峭悬崖吧。鹰身人的地盘位于海加尔山中部的东北方，我们在这里就能看到她们从头顶飞过。从那些天空女巫手中夺取护符，把它们带给我。",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "你带来了天空女巫的宝石。很好。她们的风暴会消退，我们的结界也会支撑下去。",
+        "1f540006dc869c653505": "鹰身人的魔法原始而粗犷，贤者可以塑造它。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -640,6 +892,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -664,6 +926,10 @@
     },
     "zhTW": {
       "description": "山風帶來了黑暗的徵兆。鷹身人在高處築巢，讓我們的利爪無法接觸。她們配戴的寶石蘊含著強大的力量。一旦與我們的符咒結合，便能守護我們免受詛咒，並將魂靈束縛在我們的結界之中。\r\n\r\n但攀登之路異常艱難，那些鷹身人還會用利爪與風暴發動攻擊。如果你真的像傳聞一樣強大，就前往那風聲咆哮的高聳峭壁吧。鷹身人的地盤就在海加爾山中層，我們看見他們在東北方的天空中飛舞。從那些天空女巫身上奪取符咒，並把它們帶回來給我。",
+      "dialogue": {
+        "0d248384d51a1b6d6340": "你帶來了天空女巫的寶石。很好。她們的風暴會消退，我們的結界也會支撐下去。",
+        "1f540006dc869c653505": "鷹身人的魔法原始而粗獷，賢者可以塑造它。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -679,6 +945,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0d248384d51a1b6d6340": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.1f540006dc869c653505": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

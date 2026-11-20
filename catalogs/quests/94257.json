@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "131b77c88b40bae28574": {
+      "contributionId": 128998,
+      "lineId": "q:94257:complete",
+      "npcId": 13717,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "19ca6ec3254aa4174769": {
+      "contributionId": 128999,
+      "lineId": "q:94257:progress",
+      "npcId": 13717,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Lesser Invisibility Potion a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Nejsi první cizinec, který mi pomohl, $N. Už jsem pochopil, že mou chybou je předpokládat to nejhorší o každém, kdo se ke mně přiblíží. Nikdy bych si nepomyslel, že budu chovat takovou zášť ke kentaurům, zatímco spojence najdu mezi těmi, kdo přišli z daleka za pouští.\n\nNepovažuj tuto výměnu za počátek přátelství, ale věz, že na tento skutek nezapomenu.",
+        "19ca6ec3254aa4174769": "Co se mnou může chtít $r mít společného?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -35,6 +57,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "ai",
@@ -60,6 +92,10 @@
     },
     "daDK": {
       "description": "\n\n<Sedlen er skrevet med falmet blæk og anmoder om Lesser Invisibility Potion. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Du er ikke den første fremmede, der har hjulpet mig, $N. Jeg har efterhånden lært, at det er en fejl at antage det værste om enhver, der nærmer sig mig. Jeg havde aldrig forestillet mig, at det ville være kentaurer, jeg nærede et sådant fjendskab til, mens jeg sluttede mig til folk langt hinsides ørkenen.\n\nTag ikke denne handel som begyndelsen på et venskab, men vid, at denne gerning vil blive husket.",
+        "19ca6ec3254aa4174769": "Hvad kan en $r dog have af ærinde hos mig?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -72,6 +108,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -98,6 +144,10 @@
     },
     "deDE": {
       "description": "\r\n\r\n<Die in verblichener Tinte verfasste Notiz verlangt nach oa geringen Unsichtbarkeitstrank und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Ihr seid nicht der erste Fremde, der mir geholfen hat, $N. Mittlerweile habe ich erkannt, dass es ein Fehler ist, von jedem, der sich mir nähert, das Schlimmste anzunehmen. Niemals hätte ich gedacht, dass ich ausgerechnet Zentauren mit solcher Feindseligkeit begegnen würde, während ich mich mit Fremden von weit jenseits der Wüste verbünde.\n\nHaltet diesen Handel nicht für den Beginn einer Freundschaft, aber wisst, dass ich diese Tat nicht vergessen werde.",
+        "19ca6ec3254aa4174769": "Was könnte ein $r wohl von mir wollen?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -113,6 +163,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -135,6 +195,10 @@
     },
     "enUS": {
       "description": "\n\n<Penned in faded ink, the note is requesting oa Lesser Invisibility Potion, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "You are not the first outsider to have assisted me, $N. By now I have come to learn that it is a fault of mine to assume the worst of any that approach me. Never would I have imagined that it would be centaur who I view with such animosity, while others from far beyond the desert would be the ones with whom I ally.\n\nDo not mistake this transaction as the beginnings of a friendship, but know that this deed will be remembered.",
+        "19ca6ec3254aa4174769": "What business could a $r possibly have with me?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -150,6 +214,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -173,6 +249,10 @@
     },
     "esES": {
       "description": "\r\n\r\n<Escrita con tinta borrosa, la nota solicita oa poción de invisibilidad inferior e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "131b77c88b40bae28574": "No eres el primer forastero que me ayuda, $N. He aprendido que es un defecto mío esperar lo peor de cualquiera que se me acerque. Jamás habría imaginado que sentiría tal animosidad hacia los centauros, mientras que mis aliados vendrían de más allá del desierto.\n\nNo confundas este trato con el comienzo de una amistad, pero ten por seguro que recordaré esta acción.",
+        "19ca6ec3254aa4174769": "¿Qué asuntos podría tener un $r conmigo?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -188,6 +268,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -210,6 +300,10 @@
     },
     "esMX": {
       "description": "\r\n\r\n<Escrita con tinta desteñida, la nota pide oa poción de invisibilidad inferior, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "No eres el primer forastero que me ayuda, $N. He aprendido que es un defecto mío esperar lo peor de cualquiera que se me acerque. Jamás habría imaginado que sentiría tal animosidad hacia los centauros, mientras que mis aliados vendrían de más allá del desierto.\n\nNo confundas este trato con el comienzo de una amistad, pero ten por seguro que recordaré esta acción.",
+        "19ca6ec3254aa4174769": "¿Qué asuntos podría tener un $r conmigo?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -225,6 +319,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -248,6 +352,10 @@
     },
     "frFR": {
       "description": "\r\n\r\n<Cette note manuscrite à l’encre délavée réclame oa olpotion:potions;  d’invisibilité inférieure, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Vous n’êtes pas la première personne venue d’ailleurs à m’aider, $N. J’ai fini par comprendre que j’avais tort de supposer le pire de tous ceux qui m’approchent. Jamais je n’aurais imaginé éprouver une telle animosité envers les centaures, tandis que mes alliés viendraient de bien au-delà du désert.\n\nNe prenez pas cet échange pour le début d’une amitié, mais sachez que je me souviendrai de votre geste.",
+        "19ca6ec3254aa4174769": "Qu’est-ce qu’un $r pourrait bien me vouloir ?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -263,6 +371,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -285,6 +403,10 @@
     },
     "hrHR": {
       "description": "\n\n<Bilješka napisana izblijedjelom tintom traži Lesser Invisibility Potion i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Nisi prvi stranac koji mi je pomogao, $N. S vremenom sam shvatio da mi je mana što pretpostavljam najgore o svakome tko mi priđe. Nikada nisam zamišljao da ću osjećati toliku netrpeljivost prema kentaurima, dok ću saveznike naći među onima koji dolaze daleko iza pustinje.\n\nNe smatraj ovu razmjenu početkom prijateljstva, ali znaj da će se ovo djelo pamtiti.",
+        "19ca6ec3254aa4174769": "Kakva posla može imati $r sa mnom?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -297,6 +419,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -323,6 +455,10 @@
     },
     "itIT": {
       "description": "\n\n<Scritta con inchiostro sbiadito, la nota richiede una Pozione inferiore d'invisibilità e riporta informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che la commissione è trasferibile.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Non siete il primo forestiero ad avermi aiutato, $N. Ho imparato che è un mio difetto aspettarmi il peggio da chiunque mi si avvicini. Non avrei mai immaginato di provare tanta ostilità verso i centauri, mentre i miei alleati sarebbero venuti da terre ben oltre il deserto.\n\nNon scambiate questo accordo per l’inizio di un’amicizia, ma sappiate che ricorderò questo gesto.",
+        "19ca6ec3254aa4174769": "Che affari potrebbe mai avere con me un $r?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -335,6 +471,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -361,6 +507,10 @@
     },
     "koKR": {
       "description": "\r\n\r\n<빛바랜 잉크로 쓴 쪽지에는 하급 투명 물약 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "나를 도와준 외지인은 자네가 처음이 아니야, $N. 이제야 내게 다가오는 이들을 무조건 나쁘게 보는 것이 내 잘못임을 알게 되었지. 같은 켄타우로스에게 이토록 적의를 품고, 사막 너머 먼 곳에서 온 이들과 동맹을 맺게 되리라고는 상상도 못 했어.\n\n이 거래가 우정의 시작이라고 착각하지는 마. 하지만 이 일은 기억하겠네.",
+        "19ca6ec3254aa4174769": "$r에게 나와 무슨 볼일이 있지?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -376,6 +526,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -398,6 +558,10 @@
     },
     "plPL": {
       "description": "\n\n<Notatka napisana wyblakłym atramentem zawiera prośbę o Lesser Invisibility Potion oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Nie jesteś pierwszą osobą z zewnątrz, która mi pomogła, $N. Zrozumiałem już, że moją wadą jest zakładanie najgorszego o każdym, kto się do mnie zbliża. Nigdy bym nie przypuszczał, że to centaurów będę darzył taką wrogością, a moimi sojusznikami zostaną przybysze z odległych krain za pustynią.\n\nNie bierz tej wymiany za początek przyjaźni, lecz wiedz, że ten czyn zostanie zapamiętany.",
+        "19ca6ec3254aa4174769": "Jakie sprawy może mieć ze mną $r?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -410,6 +574,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -436,6 +610,10 @@
     },
     "ptBR": {
       "description": "\r\n\r\n<Escrito com tinta desbotada, o bilhete solicita oax Poção Inferior de Invisibilidade, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Você não é a primeira pessoa de fora a me ajudar, $N. Com o tempo, aprendi que é um defeito meu presumir o pior de quem se aproxima. Nunca imaginei que sentiria tanta hostilidade pelos centauros, enquanto meus aliados viriam de muito além do deserto.\n\nNão confunda esta troca com o começo de uma amizade, mas saiba que este feito será lembrado.",
+        "19ca6ec3254aa4174769": "Que negócios um $r poderia ter comigo?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -451,6 +629,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -474,6 +662,10 @@
     },
     "ruRU": {
       "description": "\r\n\r\n<В записке, написанной выцветшими чернилами, содержится заказ на oa порций малого зелья невидимости, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Ты не первый чужак, который мне помог, $N. Со временем я понял, что напрасно жду худшего от каждого, кто ко мне приближается. Никогда бы не подумал, что буду питать такую вражду к кентаврам, а союзников найду среди пришельцев из далеких земель за пустыней.\n\nНе принимай эту сделку за начало дружбы, но знай: я запомню твой поступок.",
+        "19ca6ec3254aa4174769": "Какие дела могут быть у $r со мной?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -489,6 +681,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -512,6 +714,10 @@
     },
     "svSE": {
       "description": "\n\n<Lappen är skriven med blekt bläck och efterfrågar Lesser Invisibility Potion. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Du är inte den första främlingen som har hjälpt mig, $N. Jag har med tiden insett att det är ett fel hos mig att förvänta mig det värsta av alla som närmar sig. Aldrig hade jag trott att det skulle vara kentaurer jag kände sådan fiendskap mot, medan mina allierade kom från långt bortom öknen.\n\nMissta inte denna affär för början på en vänskap, men vet att denna gärning kommer att bli ihågkommen.",
+        "19ca6ec3254aa4174769": "Vad kan en $r tänkas ha för ärende hos mig?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -524,6 +730,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -552,6 +768,10 @@
     },
     "trTR": {
       "description": "\n\n<Soluk mürekkeple yazılmış notta Lesser Invisibility Potion isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Bana yardım eden ilk yabancı sen değilsin, $N. Zamanla, yanıma yaklaşan herkes hakkında en kötüsünü varsaymanın benim kusurum olduğunu öğrendim. Kentauralara böylesine düşmanlık besleyeceğimi, çölün çok ötesinden gelenlerle ise ittifak kuracağımı hiç düşünmezdim.\n\nBu alışverişi bir dostluğun başlangıcı sanma, ama bu iyiliğin unutulmayacağını bil.",
+        "19ca6ec3254aa4174769": "Bir $r benimle ne iş yapabilir ki?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -564,6 +784,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -591,6 +821,10 @@
     },
     "ukUA": {
       "description": "\n\n<У записці, написаній вицвілим чорнилом, просять принести Lesser Invisibility Potion і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "131b77c88b40bae28574": "Ти не перший чужинець, який мені допоміг, $N. З часом я зрозумів, що моя вада — чекати найгіршого від кожного, хто до мене наближається. Ніколи б не подумав, що відчуватиму таку ворожість до кентаврів, а союзників знайду серед прибульців із далеких земель за пустелею.\n\nНе сприймай цю угоду як початок дружби, але знай: цей вчинок я запам’ятаю.",
+        "19ca6ec3254aa4174769": "Які справи можуть бути в $r зі мною?"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -603,6 +837,16 @@
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -631,6 +875,10 @@
     },
     "zhCN": {
       "description": "\r\n\r\n<字条以褪色的墨水写成，要求提供oa瓶次级隐形药水，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "131b77c88b40bae28574": "你不是第一个帮助我的外乡人，$N。我渐渐明白，总是把每个接近我的人往坏处想，是我的过错。我从未想过，我会如此仇视半人马，却与来自沙漠远方的人结盟。\n\n别把这次交易当成友谊的开始，但你要知道，我会记住你的善举。",
+        "19ca6ec3254aa4174769": "一个$r找我能有什么事？"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -646,6 +894,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",
@@ -669,6 +927,10 @@
     },
     "zhTW": {
       "description": "\r\n\r\n<紙條以褪色的墨水寫成，要求提供oa個次級隱形藥水，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "131b77c88b40bae28574": "你不是第一個幫助我的外鄉人，$N。我漸漸明白，總是把每個接近我的人往壞處想，是我的過錯。我從未想過，我會如此仇視半人馬，卻與來自沙漠遠方的人結盟。\n\n別把這次交易當成友誼的開始，但你要知道，我會記住你的善舉。",
+        "19ca6ec3254aa4174769": "一個$r找我能有什麼事？"
+      },
       "objectiveLines": [
         {
           "index": 2,
@@ -684,6 +946,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.131b77c88b40bae28574": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.19ca6ec3254aa4174769": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.2": {
             "origin": "original",

@@ -22,9 +22,9 @@ end
 
 local function Render(template, questID, locale, playerName)
     template = template:gsub("\\n", "\n"):gsub("%$b%$b", "\n\n")
-    if playerName then template = template:gsub("%$[Nn]%f[^%a]", function() return playerName end) end
+    if playerName then template = template:gsub("%$[Nn]%f[^A-Za-z]", function() return playerName end) end
     local text = Addon:FormatQuestText(template, questID, locale, true)
-    if text and not text:find("%$[%a%d]") then return text end
+    if text and not text:find("%$[A-Za-z0-9]") then return text end
 end
 
 function Addon:MatchQuestDialogue(npcID, questID, stage, native)
@@ -46,7 +46,7 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
             local text = Render(entry.text, questID, client)
             if text and Normalize(text) == observed then
                 candidates[entry.key] = {}
-            elseif firstName and entry.text:find("%$[Nn]%f[^%a]") then
+            elseif firstName and entry.text:find("%$[Nn]%f[^A-Za-z]") then
                 text = Render(entry.text, questID, client, firstName)
                 if text and Normalize(text) == observed then candidates[entry.key] = { firstName = firstName } end
             end

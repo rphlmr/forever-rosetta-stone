@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "ae107ce67853d1ec12dc": {
+      "contributionId": 111120,
+      "lineId": "q:92317:progress",
+      "npcId": 256222,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "bb304d36203fc3a71eb4": {
+      "contributionId": 111149,
+      "lineId": "q:92317:complete",
+      "npcId": 256222,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Takže druid poustevník hledá sílu, která by vyvážila ‚život‘ v té jeho magii? Pak je odpovědí přirozeně smrt. S tím jsi na správném místě.\n\nNemrtví, kteří se plazí po celém mém panství, ti jistě neunikli. Pohání je ukradená síla, která je oživuje i po smrti.\n\nPrávě ta ukradená síla je přesně to, co kouzlo, o kterém mluvíš, potřebuje. Zabíjej nemrtvé a prohledávej jejich lebky, dokud nenajdeš Drop of Stolen Life – zhuštěnou kapku ukradeného života. Až ji budeš mít, přines ji Ketharasovi.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Podařilo se ti setkat s Jereman? Doufám, že tě její kousky dovedly spíše k odpovědím než k dalším otázkám.",
+        "bb304d36203fc3a71eb4": "Ach, to je dokonalé. Děkuji ti, $N. Obdivuji, že se ti podařilo setkat s Marrosisem. Často s ním bývá těžké mluvit. Má pravdu; přesně tohle jsme potřebovali.\n\nJakmile tuto Kapku ukradeného života přidáme do našeho kouzla, měla by posílit jeho schopnost vytáhnout ukradenou moc tím, že vyváží esenci života, kterou již máme, a podivné energie hole."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Så eremitdruiden søger en kraft til at balancere 'livet' i sin magi? Så er svaret naturligvis døden. Du er kommet til det rette sted for den slags.\n\nDu har uden tvivl set de udøde kravle overalt i mit domæne. De drives af stjålet kraft, som giver dem liv selv i døden.\n\nDen stjålne kraft er netop, hvad der behøves i den besværgelse, du taler om. Dræb de udøde og gennemsøg deres kranier efter en samlet dråbe stjålet liv. Bring den tilbage til Ketharas, når du har den.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Fik du mødt Jereman? Forhåbentlig førte hendes narrestreger dig til svar frem for flere spørgsmål.",
+        "bb304d36203fc3a71eb4": "Ah, det er perfekt. Tak, $N. Jeg er imponeret over, at du fik et møde med Marrosis. Han kan ofte være svær at tale med. Han har ret; det er præcis, hvad vi havde brug for.\n\nNår denne dråbe stjålet liv føjes til vores besværgelse, burde den styrke dens evne til at trække stjålet kraft ud ved at modvirke både den livsessens, vi allerede har, og stavens mærkelige energier."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "69a4946294779067465f3831d72b6061f7ec075bf4a3d149c45b86f627af376a"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Der einsiedlerische Druide sucht also nach einer Kraft, die als Gegengewicht zum \"Leben\" in seiner Magie dienen kann? Dafür kommt natürlich nur der Tod infrage. Ihr sucht genau am richtigen Ort danach.\r\n\r\nSicher habt Ihr die Untoten bemerkt, die überall in meinem Reich herumkriechen. Sie werden durch gestohlene Kraft genährt, die sie nach dem Tod wiedererweckt.\r\n\r\nDiese gestohlene Kraft ist genau das Richtige für den Zauber, von dem Ihr sprecht. Tötet die Untoten und durchsucht ihre Schädel nach einem verdichteten Tropfen gestohlenen Lebens. Kehrt damit zu Ketharas zurück.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Konntet Ihr Jereman treffen? Hoffentlich haben ihre Streiche Euch zu Antworten statt zu weiteren Fragen geführt.",
+        "bb304d36203fc3a71eb4": "Ah, das ist perfekt. Danke, $N. Ich bin beeindruckt, dass Ihr Marrosis treffen konntet. Es ist oft schwierig, mit ihm zu sprechen. Er hat recht; genau das haben wir gebraucht.\n\nWenn wir diesen Tropfen gestohlenen Lebens unserem Zauber hinzufügen, sollte er dessen Fähigkeit stärken, gestohlene Macht herauszuziehen, indem er die bereits vorhandene Lebensessenz und die seltsamen Energien des Stabs ausgleicht."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -119,6 +179,10 @@
     },
     "enUS": {
       "description": "So, the hermit druid seeks a force to balance the 'life' in this magic of his? Then the answer is death, naturally. You have come to the right place for such a thing.\n\nNo doubt you've seen the undead crawling all over my domain. They are fueled by stolen power that animates them even in death.\n\nThat stolen power is exactly what is needed in this spell you speak of. Kill the undead and search through their skulls for a coalesced Drop of Stolen Life. Return it to Ketharas once you have it.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Were you able to meet with Jereman? Hopefully her mischief has led you to answers instead of more questions.",
+        "bb304d36203fc3a71eb4": "Ah, this is perfect. Thank you, $N. I am impressed you were able to meet with Marrosis. He can often be difficult to converse with. He is correct; this is exactly what we needed.\n\nOnce added to our spell, this Drop of Stolen Life should strengthen its ability to draw out stolen power by acting as a counterbalance to the essence of life we already have and the strange energies of the staff."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +198,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -157,6 +233,10 @@
     },
     "esES": {
       "description": "Conque el druida ermitaño busca algo que equilibre la \"vida\" de esa magia, ¿eh? Pues, como es natural, la respuesta es la muerte. Has venido al lugar adecuado para algo así.\r\n\r\nSeguramente habrás visto a los no-muertos pululando por mis dominios. Los alimenta un poder robado que les permite moverse incluso en la muerte.\r\n\r\nEse poder robado es justo lo que necesitamos para el hechizo del que hablas. Mata a los no-muertos y rebusca en sus cráneos una gota de vida robada coagulada. Cuando la tengas, llévasela a Ketharas.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "¿Pudiste reunirte con Jereman? Espero que sus travesuras te hayan llevado a respuestas en lugar de más preguntas.",
+        "bb304d36203fc3a71eb4": "Ah, es perfecto. Gracias, $N. Me impresiona que hayas conseguido reunirte con Marrosis. A menudo es difícil conversar con él. Tiene razón; esto es exactamente lo que necesitábamos.\n\nUna vez añadida a nuestro hechizo, esta Gota de vida robada debería mejorar su capacidad para extraer el poder robado, al contrarrestar la esencia de vida que ya tenemos y las extrañas energías del bastón."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +252,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -195,6 +285,10 @@
     },
     "esMX": {
       "description": "¿Así que ese druida ermitaño busca una fuerza que equilibre la \"vida\" en esta pequeña magia suya? Pues, naturalmente, la respuesta es la muerte. Has venido al lugar correcto.\r\n\r\nSin duda has visto a los no-muertos que merodean por todo mi dominio. Los mueve un poder robado que los anima incluso en la muerte.\r\n\r\nEse poder robado es exactamente lo que necesita el hechizo del que hablas. Mata a los no-muertos y busca entre sus cráneos una gota de vida robada condensada. Una vez que la tengas, regresa con Ketharas.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "¿Pudiste reunirte con Jereman? Espero que sus travesuras te hayan llevado a respuestas en lugar de más preguntas.",
+        "bb304d36203fc3a71eb4": "Ah, es perfecto. Gracias, $N. Me impresiona que hayas conseguido reunirte con Marrosis. A menudo es difícil conversar con él. Tiene razón; esto es exactamente lo que necesitábamos.\n\nUna vez añadida a nuestro hechizo, esta Gota de vida robada debería mejorar su capacidad para extraer el poder robado, al contrarrestar la esencia de vida que ya tenemos y las extrañas energías del bastón."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +304,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -233,6 +337,10 @@
     },
     "frFR": {
       "description": "Le druide ermite cherche donc une force capable d’équilibrer la « vie » dans sa magie ? Alors, la solution est la mort, bien évidemment. Et vous êtes au bon endroit pour ce genre de choses.\r\n\r\nVous avez sans doute remarqué les morts-vivants qui rôdent dans mon domaine. Ils sont animés par un pouvoir dérobé qui les maintient en vie même après leur mort.\r\n\r\nCe pouvoir est précisément ce dont vous avez besoin pour le sort dont vous parlez. Tuez des morts-vivants et fouillez leur crâne à la recherche d’une goutte de vie volée encore intacte. Une fois que vous l’aurez trouvée, rapportez-la à Ketharas.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Avez-vous pu rencontrer Jereman ? J’espère que ses espiègleries vous ont apporté des réponses plutôt que de nouvelles questions.",
+        "bb304d36203fc3a71eb4": "Ah, c’est parfait. Merci, $N. Je suis impressionné que tu aies réussi à rencontrer Marrosis. Il est souvent difficile de converser avec lui. Il a raison : c’est exactement ce qu’il nous fallait.\n\nUne fois ajoutée à notre sort, cette goutte de vie volée devrait renforcer sa capacité à extraire le pouvoir dérobé, en faisant contrepoids à l’essence de vie que nous possédons déjà et aux étranges énergies du bâton."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -248,6 +356,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -271,6 +389,10 @@
     },
     "hrHR": {
       "description": "Dakle, druid pustinjak traži silu koja će uravnotežiti 'život' u toj njegovoj magiji? Onda je odgovor prirodno smrt. Došao si na pravo mjesto za tako nešto.\n\nNema sumnje da si vidio nemrtve kako gmižu po cijelom mojem području. Pokreće ih ukradena moć koja ih oživljava čak i u smrti.\n\nTa ukradena moć upravo je ono što treba čaroliji o kojoj govoriš. Ubij nemrtve i pretraži njihove lubanje za zgusnutom Drop of Stolen Life. Vrati je Ketharasu kad je dobiješ.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Jesi li uspio upoznati Jereman? Nadam se da su te njezine nepodopštine dovele do odgovora, a ne do novih pitanja.",
+        "bb304d36203fc3a71eb4": "Ah, ovo je savršeno. Hvala ti, $N. Impresioniran sam što si se uspio sastati s Marrosisom. S njim je često teško razgovarati. U pravu je; upravo nam je to trebalo.\n\nKad ovu Kap ukradenog života dodamo u našu čaroliju, trebala bi pojačati njezinu sposobnost izvlačenja ukradene moći tako što će uravnotežiti esenciju života koju već imamo i neobične energije štapa."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -287,6 +409,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "69a4946294779067465f3831d72b6061f7ec075bf4a3d149c45b86f627af376a"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -310,6 +442,10 @@
     },
     "itIT": {
       "description": "Dunque il druido eremita cerca una forza per bilanciare la 'vita' in questa sua magia? Allora la risposta è la morte, naturalmente. Per una cosa del genere sei venuto nel posto giusto.\n\nSenza dubbio hai visto i non morti che infestano il mio dominio. Sono alimentati da un potere rubato che li anima persino nella morte.\n\nQuel potere rubato è esattamente ciò che serve nell'incantesimo di cui parli. Uccidi i non morti e cerca nei loro crani una Goccia di Vita Rubata condensata. Riportala a Ketharas quando l'avrai.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Sei riuscito a incontrare Jereman? Spero che le sue birichinate ti abbiano portato risposte, e non altre domande.",
+        "bb304d36203fc3a71eb4": "Ah, è perfetto. Grazie, $N. Sono impressionato che tu sia riuscito a incontrare Marrosis. Spesso è difficile parlare con lui. Ha ragione; è proprio ciò di cui avevamo bisogno.\n\nUna volta aggiunta al nostro incantesimo, questa Goccia di vita rubata dovrebbe rafforzarne la capacità di estrarre il potere rubato, facendo da contrappeso all’essenza vitale che già possediamo e alle strane energie del bastone."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -326,6 +462,17 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "69a4946294779067465f3831d72b6061f7ec075bf4a3d149c45b86f627af376a"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -349,6 +496,10 @@
     },
     "koKR": {
       "description": "그러니까 그 은둔 드루이드가 자기 마법의 '생명'과 균형을 이룰 힘을 찾는다는 건가? 그렇다면 답은 당연히 죽음이다. 그런 걸 구하러 왔다면 제대로 찾아왔군.\r\n\r\n내 영역을 기어 다니는 언데드들을 분명 보았겠지. 놈들은 훔친 힘으로 죽어서도 계속 움직인다.\r\n\r\n네가 말한 그 주문에 필요한 게 바로 그 도둑맞은 힘이다. 언데드를 처치하고 해골을 뒤져 응축된 빼앗긴 생명의 방울을 찾아라. 그런 다음 케타라스에게 가져가도록.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "제레만을 만났나? 그 아이의 장난이 더 많은 의문이 아니라 답을 가져다주었기를 바라네.",
+        "bb304d36203fc3a71eb4": "아, 완벽하군. 고맙네, $N. 마로시스를 만나는 데 성공하다니 대단하군. 그와는 대화하기가 쉽지 않은 경우가 많거든. 그의 말이 맞네. 이것이 바로 우리에게 필요했던 것이야.\n\n이 빼앗긴 생명의 방울을 주문에 더하면, 이미 가진 생명의 정수와 지팡이의 기묘한 에너지에 균형을 맞춰 빼앗긴 힘을 끌어내는 능력을 강화할 수 있을 걸세."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -364,6 +515,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -387,6 +548,10 @@
     },
     "plPL": {
       "description": "A więc druid pustelnik szuka siły równoważącej „życie” w swojej magii? Odpowiedzią jest oczywiście śmierć. Dobrze trafiasz.\n\nBez wątpienia widzisz nieumarłych pełzających po całej mojej domenie. Napędza ich skradziona moc, która ożywia ich nawet po śmierci.\n\nWłaśnie ta skradziona moc jest potrzebna do zaklęcia, o którym mówisz. Zabij nieumarłych i przeszukaj ich czaszki w poszukiwaniu skrzepłej Kropli Skradzionego Życia. Gdy ją zdobędziesz, zanieś Ketharasowi.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Udało ci się spotkać z Jereman? Mam nadzieję, że jej psoty doprowadziły cię do odpowiedzi, a nie do kolejnych pytań.",
+        "bb304d36203fc3a71eb4": "Ach, to doskonałe. Dziękuję, $N. Jestem pod wrażeniem, że udało ci się spotkać z Marrosisem. Często trudno z nim rozmawiać. Ma rację; właśnie tego potrzebowaliśmy.\n\nGdy dodamy tę Kroplę skradzionego życia do naszego zaklęcia, powinna wzmocnić jego zdolność do wydobywania skradzionej mocy, równoważąc posiadaną już esencję życia i dziwne energie kostura."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -403,6 +568,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "69a4946294779067465f3831d72b6061f7ec075bf4a3d149c45b86f627af376a"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -426,6 +601,10 @@
     },
     "ptBR": {
       "description": "Pois então, o druida eremita está procurando uma força capaz de equilibrar a \"vida\" na magia dele? Nesse caso, a resposta só pode ser a morte. Você veio ao lugar certo, se é isso que procura.\r\n\r\nCom certeza, você viu os mortos-vivos zanzando por todo o meu domínio. O que os move é um poder roubado que os enche de ânimo, até na morte.\r\n\r\nEsse poder roubado é exatamente do que esse feitiço precisa. Mate os mortos-vivos e procure em seus crânios por uma gota de vida roubada coagulada. Quando a encontrar, leve-a para Ketharas.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Você conseguiu encontrar Jereman? Espero que as travessuras dela tenham levado você a respostas, e não a mais perguntas.",
+        "bb304d36203fc3a71eb4": "Ah, perfeito. Obrigado, $N. Estou impressionado por você ter conseguido se encontrar com Marrosis. Muitas vezes é difícil conversar com ele. Ele está certo; era exatamente disso que precisávamos.\n\nQuando adicionada ao nosso feitiço, esta Gota de Vida Roubada deve fortalecer sua capacidade de extrair o poder roubado, equilibrando a essência de vida que já temos e as estranhas energias do cajado."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -441,6 +620,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -464,6 +653,10 @@
     },
     "ruRU": {
       "description": "Итак, друид-отшельник ищет силу, способную уравновесить \"жизнь\" в этих его чарах? Тогда ответ, естественно, – смерть. Ты пришел по адресу.\r\n\r\nТы наверняка видел, как нежить расползается по моим владениям. Ее подпитывает украденная сила, которая поднимает мертвецов даже после смерти.\r\n\r\nИменно этой силы не хватает в вашем заклинании. Убей нежить и извлеки из черепов каплю украденной жизни, а затем возвращайся к Кетарасу.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Тебе удалось встретиться с Джереман? Надеюсь, ее проделки привели тебя к ответам, а не к новым вопросам.",
+        "bb304d36203fc3a71eb4": "Ах, превосходно. Спасибо, $N. Я впечатлен тем, что тебе удалось встретиться с Марросисом. С ним часто бывает трудно разговаривать. Он прав: это именно то, что нам было нужно.\n\nКогда мы добавим эту Каплю украденной жизни в наше заклинание, она должна усилить его способность извлекать украденную силу, уравновесив уже имеющуюся у нас сущность жизни и странную энергию посоха."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -479,6 +672,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -502,6 +705,10 @@
     },
     "svSE": {
       "description": "Så eremitdruiden söker en kraft som balanserar 'livet' i hans magi? Då är svaret naturligtvis döden. Du har kommit till rätt plats för en sådan sak.\n\nDu har utan tvivel sett de odöda krypa över hela mitt område. De drivs av stulen kraft som ger dem liv även i döden.\n\nDen stulna kraften är precis vad som behövs i besvärjelsen du talar om. Döda de odöda och sök igenom deras skallar efter en sammanfogad droppe stulet liv. Lämna den till Ketharas när du har den.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Lyckades du träffa Jereman? Förhoppningsvis ledde hennes upptåg dig till svar snarare än fler frågor.",
+        "bb304d36203fc3a71eb4": "Ah, det här är perfekt. Tack, $N. Jag är imponerad av att du lyckades träffa Marrosis. Han kan ofta vara svår att tala med. Han har rätt; det här var precis vad vi behövde.\n\nNär denna droppe stulet liv läggs till vår besvärjelse bör den stärka dess förmåga att dra ut stulen kraft genom att balansera den livsessens vi redan har och stavens märkliga energier."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -518,6 +725,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "69a4946294779067465f3831d72b6061f7ec075bf4a3d149c45b86f627af376a"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -541,6 +758,10 @@
     },
     "trTR": {
       "description": "Demek münzevi druid, büyüsündeki 'yaşamı' dengeleyecek kuvvet arıyor? Cevap doğal olarak ölüm. Böyle bir şey için doğru yere geldin.\n\nBölgemin her yanındaki yaşayan ölüleri kuşkusuz gördün. Ölümde bile onları hareket ettiren çalınmış güçle besleniyorlar.\n\nSöz ettiğin büyüde tam bu çalınmış güç gerekiyor. Yaşayan ölüleri öldür, kafataslarında yoğunlaşmış bir Çalınmış Yaşam Damlası ara. Aldığında Ketharas'a götür.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Jereman ile görüşebildin mi? Umarım yaramazlıkları seni daha fazla soru yerine cevaplara ulaştırmıştır.",
+        "bb304d36203fc3a71eb4": "Ah, bu mükemmel. Teşekkürler, $N. Marrosis ile görüşebilmiş olmana şaşırdım. Onunla konuşmak çoğu zaman zordur. Haklı; tam da buna ihtiyacımız vardı.\n\nBu Çalınmış Yaşam Damlası büyümüze eklendiğinde, zaten sahip olduğumuz yaşam özünü ve asanın tuhaf enerjilerini dengeleyerek büyünün çalınmış gücü çekip çıkarma yeteneğini güçlendirmeli."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -557,6 +778,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "69a4946294779067465f3831d72b6061f7ec075bf4a3d149c45b86f627af376a"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -580,6 +811,10 @@
     },
     "ukUA": {
       "description": "Отже, друїд-самітник шукає силу, щоб урівноважити «життя» у своїй магії? Тоді відповідь, звісно ж, — смерть. За таким ти прийшов куди треба.\n\nБез сумніву, ти бачив невмерлих, що повзають усіма моїми володіннями. Їх живить украдена сила, яка рухає ними навіть у смерті.\n\nСаме ця вкрадена сила й потрібна для закляття, про яке ти говориш. Убивай невмерлих і шукай у їхніх черепах згущену краплю викраденого життя. Коли дістанеш, віднеси її Ketharas.",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "Тобі вдалося зустрітися з Джереман? Сподіваюся, її витівки привели тебе до відповідей, а не до нових запитань.",
+        "bb304d36203fc3a71eb4": "Ах, чудово. Дякую, $N. Я вражений тим, що тобі вдалося зустрітися з Марросісом. З ним часто буває важко розмовляти. Він має рацію: це саме те, що нам було потрібно.\n\nКоли ми додамо цю Краплю вкраденого життя до нашого закляття, вона має посилити його здатність витягувати вкрадену силу, врівноважуючи вже наявну в нас сутність життя та дивні енергії посоха."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -596,6 +831,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "69a4946294779067465f3831d72b6061f7ec075bf4a3d149c45b86f627af376a"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -619,6 +864,10 @@
     },
     "zhCN": {
       "description": "这么说，那位隐居的德鲁伊想找一种力量，来平衡魔法里的“生命”？那自然得用“死亡”。找这种东西，你可找对地方了。\r\n\r\n你肯定见过在我领地上游荡的那些亡灵。它们早已死去，却靠着窃来的力量继续活动。\r\n\r\n你说的法术缺的，正是这股力量。去消灭那些亡灵，从它们的头骨里找出凝聚成形的失落生命之滴，带给凯萨拉斯。",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "你见到杰雷曼了吗？希望她的恶作剧给你带来的是答案，而不是更多疑问。",
+        "bb304d36203fc3a71eb4": "啊，太完美了。谢谢你，$N。你竟然能见到玛洛希斯，真让我佩服。他常常很难沟通。他说得对，这正是我们需要的。\n\n将这滴被偷走的生命加入我们的法术后，它应该能平衡我们已有的生命精华与法杖中奇异的能量，从而增强法术抽取被窃取力量的能力。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -634,6 +883,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -657,6 +916,10 @@
     },
     "zhTW": {
       "description": "所以這個德魯伊隱士想用他這個魔法來平衡「生命」？那自然就得靠死亡了。這件事你來對地方了。\r\n\r\n你也看到我這裡到處都是不死族。就算他們死了，依舊受到這股遭竊力量的驅使。\r\n\r\n那股被偷竊的力量是你所說的法術中，不可或缺的東西。殺死不死族，然後從他們的顱骨中取得竊取的生命之滴。拿到之後，就帶回去給柯薩拉斯。",
+      "dialogue": {
+        "ae107ce67853d1ec12dc": "你見到傑雷曼了嗎？希望她的惡作劇帶給你的是答案，而不是更多疑問。",
+        "bb304d36203fc3a71eb4": "啊，太完美了。謝謝你，$N。你竟然能見到瑪洛希斯，真讓我佩服。他常常很難溝通。他說得對，這正是我們需要的。\n\n將這滴被偷走的生命加入我們的法術後，它應該能平衡我們已有的生命精華與法杖中奇異的能量，從而增強法術抽取被竊取力量的能力。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -672,6 +935,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.ae107ce67853d1ec12dc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.bb304d36203fc3a71eb4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

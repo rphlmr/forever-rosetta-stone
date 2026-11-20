@@ -211,7 +211,9 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
 
             for locale in entity['locales']:
                 if dialogue_records is not None and entity['locales'][locale].get('dialogue'):
-                    dialogue_records[locale][entity_id] = project_dialogue(kind, entity_id, entity, locale)
+                    dialogue = project_dialogue(kind, entity_id, entity, locale)
+                    if dialogue is not None:
+                        dialogue_records[locale][entity_id] = dialogue
                 localized = project_localized_record(kind, entity_id, entity, locale, combined['items'], combined['npcs'])
 
                 if localized is None:

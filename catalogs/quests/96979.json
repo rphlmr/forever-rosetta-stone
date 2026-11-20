@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "356a380696a8483a6e63": {
+      "contributionId": 145025,
+      "lineId": "q:96979:progress",
+      "npcId": 267109,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f2e54736b1e3328549ba": {
+      "contributionId": 145148,
+      "lineId": "q:96979:complete",
+      "npcId": 267109,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Patřím k druidům z Cenarion Circle a putuju dlouhou cestou k poctě velkého Stromu světa. Výstup se ukázal náročnější, než se mi zdálo, a okřídlení lovci, kteří obcházejí tyhle svahy, nutí k opatrnosti. Tyhle staré ruiny nabízely úkryt, a tak jsem tady.\n\nTohle místo se hodí pro skromnou oběť, ale žádný obřad by se neměl konat bez živé vody. Prosím, naplň mi tykev u vodopádů kousek odsud.\n\nAž se vrátíš, vyprávěj mi o stezce, kterou projdeš, a o všem, co se na ní hýbe.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Musím trávit více času v kopcích. Tento řídký vzduch je pro tělo velmi náročný.",
+        "f2e54736b1e3328549ba": "Cesta je volná, když se budu držet silnice? Harpyje jsou přesně ten druh nepřátel, kterému se snažím vyhnout.\n\nDěkuji vám i za doplnění tykve. Doufám, že jste si u vodopádů také našli chvíli na osvěžení.\n\nPři svých obřadech požehnání použiji tuto vodu k uctění minulosti hory a duchů, kteří o ni pečují."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +75,10 @@
     },
     "daDK": {
       "description": "Jeg er en druide fra Cirklen, der vandrer den lange vej for at ære det store verdenstræ. Jeg fejlbedømte, hvor meget opstigningen ville kræve af mig, og de bevingede jægere, der hjemsøger disse skråninger, har gjort forsigtighed nødvendig. Disse gamle ruiner tilbød ly, og jeg tog imod det.\r\n\r\nDette sted er egnet til et ydmygt offer, men intet ritual bør udføres uden levende vand. Hvis du vil, så fyld min kalabas ved vandfaldene forude. \r\n\r\nNår du vender tilbage, så fortæl mig om den sti, du vandrede, og hvad der rører sig på den.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Jeg må tilbringe mere tid i bakkerne. Den tynde luft kræver meget af kroppen.",
+        "f2e54736b1e3328549ba": "Er vejen sikker, hvis jeg holder mig til stien? Harpyer er netop den slags fjender, jeg forsøger at undgå.\n\nTak, også fordi du fyldte min kalabas. Jeg håber, du tog dig tid til at forfriske dig ved vandfaldene.\n\nNår jeg udfører mine velsignelsesritualer, vil jeg bruge vandet til at ære bjergets fortid og de ånder, der vogter det."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +95,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "166dbe9bcdbdf2b29416bf3a088d8960e7dec3dc674c14f47bbc5c37e0739353"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +129,10 @@
     },
     "deDE": {
       "description": "Ich bin ein Druide des Zirkels und pilgere zum großen Weltenbaum, um ihn zu ehren. Aber ich habe unterschätzt, wie viel mir der Aufstieg abverlangen würde, und die geflügelten Jäger an diesen Hängen zwingen mich zur Vorsicht. Diese alten Ruinen haben mir Zuflucht gewährt, die ich dankbar angenommen habe.\r\n\r\nDieser Ort eignet sich für ein bescheidenes Opfer, aber kein Ritual sollte je ohne lebendiges Wasser durchgeführt werden. Mögt Ihr meine Flasche an den Wasserfällen ein Stück den Weg hinauf füllen?\r\n\r\nBerichtet mir bei Eurer Rückkehr von dem Pfad, den Ihr gegangen seid, und von seinen Gefahren.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Ich sollte mehr Zeit in den Bergen verbringen. Diese dünne Luft verlangt dem Körper viel ab.",
+        "f2e54736b1e3328549ba": "Der Weg hinauf ist sicher, solange ich auf dem Pfad bleibe? Harpyien sind genau die Sorte Gegner, die ich zu meiden versuche.\n\nIch danke Euch, auch für das Füllen meiner Flasche. Ich hoffe, Ihr habt Euch bei den Wasserfällen Zeit für eine Erfrischung genommen.\n\nWenn ich meine Segnungsrituale durchführe, werde ich mit dem Wasser die Vergangenheit des Bergs und die ihn behütenden Geister ehren."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +148,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -121,6 +183,10 @@
     },
     "enUS": {
       "description": "I am a druid of the Circle, walking the long path to honor the great world tree. I misjudged how much the climb would ask of me, and the winged hunters that haunt these slopes have made caution a necessity. These old ruins offered shelter, and I accepted it.\r\n\r\nThis place is suitable for a humble offering, yet no ritual should be given without living water. If you would, fill my gourd at the falls ahead. \r\n\r\nWhen you return, speak to me of the trail you walked, and of what stirs upon it.",
+      "dialogue": {
+        "356a380696a8483a6e63": "I need to spend more time in the hills. This thin air demands much from the body.",
+        "f2e54736b1e3328549ba": "The way ahead is clear if I stay on the road? Harpies are exactly the kind of enemy I'm trying to avoid.\n\nThank you, and for refilling the gourd. I hope you took the time to refresh yourself at the falls while you were there.\n\nWhen I perform my rituals of blessing, I will use this water to honor the mountain's past and its caretaking spirits."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -136,6 +202,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Soy un druida del Círculo y estoy en el largo sendero hacia el gran Árbol del Mundo para honrarlo. Subestimé la exigencia física del ascenso, y los cazadores alados que acechan en estas pendientes me han obligado a ser precavido. Estas viejas ruinas me ofrecieron refugio, y yo acepté.\r\n\r\nEste lugar es idóneo para una humilde ofrenda, pero no debe hacerse ningún ritual sin agua viva. Si no te importa, llena mi calabacino en las cataratas que hay delante. \r\n\r\nCuando vuelvas, háblame del camino que has recorrido y lo que se mueve en él.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Necesito pasar más tiempo en las colinas. Este aire enrarecido exige mucho al cuerpo.",
+        "f2e54736b1e3328549ba": "¿El camino está despejado si sigo la senda? Las arpías son justo el tipo de enemigo que intento evitar.\n\nGracias, también por rellenar la cantimplora. Espero que aprovecharas para refrescarte en las cataratas mientras estabas allí.\n\nCuando celebre mis rituales de bendición, usaré esta agua para honrar el pasado de la montaña y a los espíritus que la cuidan."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -197,6 +289,10 @@
     },
     "esMX": {
       "description": "Soy un druida del Círculo que recorre el extenso camino para honrar al gran Árbol del Mundo. Subestimé el grado de exigencia del ascenso, y los cazadores alados que acechan estas laderas me han obligado a proceder con cautela. Estas ruinas antiguas me ofrecieron refugio, y lo acepté.\r\n\r\nEste lugar es adecuado para una humilde ofrenda, mas ningún ritual debería celebrarse sin agua viviente. ¿Serías tan amable de llenar mi calabaza en la cascada que se encuentra adelante?\r\n\r\nCuando regreses, cuéntame del sendero que recorriste y de lo que acecha en él.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Necesito pasar más tiempo en las colinas. Este aire enrarecido exige mucho del cuerpo.",
+        "f2e54736b1e3328549ba": "¿El camino está despejado si sigo la senda? Las arpías son justo el tipo de enemigo que intento evitar.\n\nGracias, también por llenar la cantimplora. Espero que hayas aprovechado para refrescarte en las cataratas mientras estabas allí.\n\nCuando realice mis rituales de bendición, usaré esta agua para honrar el pasado de la montaña y a los espíritus que la cuidan."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -212,6 +308,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -235,6 +341,10 @@
     },
     "frFR": {
       "description": "Je suis un druide du Cercle, et j’ai fait un long chemin pour honorer le grand Arbre-Monde. Malheureusement, j’ai mal évalué l’effort que cette ascension allait me demander et dû faire preuve de prudence face aux chasseuses ailées qui hantent ces coteaux. Ces vieilles ruines m’ont offert un refuge, que j’ai accepté bien volontiers.\r\n\r\nCet endroit se prête à une humble offrande, mais aucun rituel ne doit être accompli sans eau vivante. Si vous le voulez bien, remplissez ma gourde à la cascade un peu plus loin.\r\n\r\nÀ votre retour, parlez-moi du chemin que vous avez emprunté et de ce qui s’y trame.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Je dois passer plus de temps dans les collines. Cet air raréfié met le corps à rude épreuve.",
+        "f2e54736b1e3328549ba": "La route est dégagée si je reste sur le chemin ? Les harpies sont justement le genre d’ennemies que j’essaie d’éviter.\n\nMerci, et merci aussi d’avoir rempli ma gourde. J’espère que vous avez pris le temps de vous rafraîchir aux cascades pendant que vous y étiez.\n\nLors de mes rituels de bénédiction, j’utiliserai cette eau pour honorer le passé de la montagne et les esprits qui veillent sur elle."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -250,6 +360,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -273,6 +393,10 @@
     },
     "hrHR": {
       "description": "Druid sam Kruga i hodam dugim putem kako bih odao počast velikom svjetskom stablu. Pogrešno sam procijenio koliko će uspon tražiti od mene, a krilati lovci koji opsjedaju ove padine učinili su oprez nužnim. Ove stare ruševine ponudile su zaklon i prihvatio sam ga.\r\n\r\nOvo mjesto prikladno je za skromnu žrtvu, ali nijedan ritual ne bi trebalo izvesti bez žive vode. Ako želiš, napuni moju tikvu na vodopadu ispred nas.\r\n\r\nKad se vratiš, ispričaj mi o stazi kojom si hodao i o onome što se na njoj kreće.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Moram provoditi više vremena u brdima. Ovaj rijetki zrak mnogo traži od tijela.",
+        "f2e54736b1e3328549ba": "Put je siguran ako ostanem na cesti? Harpije su upravo ona vrsta neprijatelja koju pokušavam izbjeći.\n\nHvala vam i što ste napunili moju tikvicu. Nadam se da ste se stigli osvježiti na slapovima dok ste bili tamo.\n\nKad budem izvodio obrede blagoslova, ovom ću vodom odati počast prošlosti planine i duhovima koji se brinu o njoj."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -289,6 +413,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "166dbe9bcdbdf2b29416bf3a088d8960e7dec3dc674c14f47bbc5c37e0739353"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -313,6 +447,10 @@
     },
     "itIT": {
       "description": "Sono un druido del Circolo e percorro il lungo sentiero per onorare il grande Albero del Mondo. Ho sottovalutato quanto mi avrebbe richiesto la salita, e i cacciatori alati che infestano questi pendii hanno reso necessaria la cautela. Queste vecchie rovine mi hanno offerto riparo, e l'ho accettato.\r\n\r\nQuesto luogo è adatto a un'umile offerta, ma nessun rituale dovrebbe essere compiuto senza acqua viva. Se vuoi, riempi la mia zucca alle cascate più avanti. \r\n\r\nQuando torni, parlami del sentiero che hai percorso e di ciò che si muove lungo di esso.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Devo passare più tempo sulle colline. Quest’aria rarefatta mette a dura prova il corpo.",
+        "f2e54736b1e3328549ba": "La strada è sicura se resto sul sentiero? Le arpie sono proprio il genere di nemico che cerco di evitare.\n\nGrazie, anche per aver riempito la borraccia. Spero che tu abbia trovato il tempo di rinfrescarti alle cascate mentre eri lì.\n\nDurante i miei rituali di benedizione userò quest’acqua per onorare il passato della montagna e gli spiriti che la custodiscono."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -329,6 +467,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "166dbe9bcdbdf2b29416bf3a088d8960e7dec3dc674c14f47bbc5c37e0739353"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -353,6 +501,10 @@
     },
     "koKR": {
       "description": "나는 세나리온 의회의 드루이드로서 위대한 세계수에 경의를 표하는 긴 여정을 하고 있네. 이 오르막이 이토록 험할 줄은 미처 몰랐고, 비탈을 배회하는 날개 달린 사냥꾼들 때문에 조심할 수밖에 없었지. 이 오래된 폐허가 피난처가 되어 주기에 호의를 받아들였네.\r\n\r\n이 장소는 소박한 공물을 올리기엔 알맞지만, 살아 있는 물 없이는 어떤 의식도 할 수 없네. 괜찮다면 앞쪽 폭포에 가서 이 조롱박에 물을 채워 주게.\r\n\r\n돌아오면 자네가 걸은 길과 그 길 위에서 꿈틀대는 것에 대해 들려주게.",
+      "dialogue": {
+        "356a380696a8483a6e63": "언덕에서 시간을 더 보내야겠군. 이 희박한 공기는 몸에 부담이 커.",
+        "f2e54736b1e3328549ba": "길을 따라가면 앞길이 안전하다고요? 하피는 제가 피하려는 적의 전형입니다.\n\n고맙습니다. 물통도 채워 주셨군요. 그곳에 계시는 동안 폭포에서 잠시 몸을 식히셨기를 바랍니다.\n\n축복 의식을 치를 때 이 물로 산의 과거와 산을 돌보는 정령들에게 경의를 표하겠습니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -368,6 +520,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -391,6 +553,10 @@
     },
     "plPL": {
       "description": "Jestem druidem Kręgu, który przemierza długą drogę, by uczcić wielkie drzewo świata. Źle oceniłem, jak wiele będzie mnie kosztować wspinaczka, a skrzydlaci łowcy nawiedzający te stoki zmuszają do ostrożności. Te stare ruiny dały mi schronienie i z niego skorzystałem.\r\n\r\nTo miejsce nadaje się na skromną ofiarę, lecz żaden rytuał nie powinien odbyć się bez żywej wody. Jeśli możesz, napełnij moją tykwę przy wodospadzie przed nami. \r\n\r\nKiedy wrócisz, opowiedz mi o przebytej ścieżce i o tym, co się na niej porusza.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Muszę spędzać więcej czasu na wzgórzach. To rozrzedzone powietrze wiele wymaga od ciała.",
+        "f2e54736b1e3328549ba": "Droga jest bezpieczna, jeśli będę się jej trzymać? Harpie to właśnie ten rodzaj wrogów, których staram się unikać.\n\nDziękuję, także za napełnienie tykwy. Mam nadzieję, że udało ci się odświeżyć przy wodospadach.\n\nPodczas rytuałów błogosławieństwa użyję tej wody, by uczcić przeszłość góry i opiekujące się nią duchy."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -407,6 +573,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "166dbe9bcdbdf2b29416bf3a088d8960e7dec3dc674c14f47bbc5c37e0739353"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -431,6 +607,10 @@
     },
     "ptBR": {
       "description": "Sou um druida do Círculo que trilha o longo caminho para honrar a grande árvore do mundo. Julguei mal o que a subida exigiria de mim, e as caçadoras aladas que assombram essas encostas tornaram a cautela uma necessidade. Essas ruínas antigas ofereceram abrigo, e eu aceitei.\r\n\r\nEste lugar é adequado para uma humilde oferenda, mas não se deve realizar ritual sem água viva. Se puder, peço que encha minha cabaça na cachoeira adiante. \r\n\r\nQuando voltar, fale comigo sobre a trilha que você galgou e sobre o que se move ao redor dela.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Preciso passar mais tempo nas colinas. Este ar rarefeito exige muito do corpo.",
+        "f2e54736b1e3328549ba": "O caminho está livre se eu seguir pela estrada? Harpias são exatamente o tipo de inimigo que estou tentando evitar.\n\nObrigado, inclusive por encher minha cabaça. Espero que tenha aproveitado para se refrescar nas quedas-d’água enquanto estava lá.\n\nQuando eu realizar meus rituais de bênção, usarei esta água para honrar o passado da montanha e os espíritos que cuidam dela."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -446,6 +626,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -469,6 +659,10 @@
     },
     "ruRU": {
       "description": "Я друид Круга и иду долгим путем, чтобы почтить великое Древо Жизни. У меня и мысли не было, что восхождение будет настолько трудным, а из-за крылатых охотников, обитающих на этих склонах, приходится продвигаться с особой осторожностью. Эти развалины стали для меня убежищем.\r\n\r\nРуины подходят для скромного подношения, но ни один ритуал не следует проводить без свежей воды. Если не трудно, наполни мою горлянку водой из водопада, что расположен дальше. \r\n\r\nКогда вернешься, расскажешь мне о пройденном пути и о том, что творится на дороге.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Мне нужно проводить больше времени в холмах. Этот разреженный воздух требует от тела многого.",
+        "f2e54736b1e3328549ba": "Путь будет безопасен, если я не стану сходить с дороги? Гарпии — как раз те враги, которых я стараюсь избегать.\n\nБлагодарю вас и за то, что наполнили мою флягу. Надеюсь, вы нашли время освежиться у водопадов.\n\nВо время обрядов благословения я использую эту воду, чтобы почтить прошлое горы и духов, которые ее оберегают."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -484,6 +678,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -507,6 +711,10 @@
     },
     "svSE": {
       "description": "Jag är en druid från cirkeln, på den långa vandringen för att hedra det stora världsträdet. Jag felbedömde hur mycket klättringen skulle kräva av mig, och de bevingade jägarna som hemsöker sluttningarna har gjort försiktighet nödvändig. Dessa gamla ruiner erbjöd skydd, och jag tog emot det.\r\n\r\nPlatsen lämpar sig för ett enkelt offer, men ingen ritual bör utföras utan levande vatten. Om du vill, fyll min kalebass vid fallen längre fram.\r\n\r\nNär du återvänder, berätta för mig om stigen du vandrade och vad som rör sig där.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Jag behöver tillbringa mer tid i kullarna. Den tunna luften kräver mycket av kroppen.",
+        "f2e54736b1e3328549ba": "Är vägen säker om jag håller mig till stigen? Harpyor är precis den sorts fiender jag försöker undvika.\n\nTack, och tack för att du fyllde min kalebass. Jag hoppas att du tog dig tid att svalka dig vid vattenfallen medan du var där.\n\nNär jag utför mina välsignelseritualer ska jag använda vattnet för att hedra bergets förflutna och andarna som vårdar det."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -523,6 +731,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "166dbe9bcdbdf2b29416bf3a088d8960e7dec3dc674c14f47bbc5c37e0739353"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -547,6 +765,10 @@
     },
     "trTR": {
       "description": "Ben Circle'ın bir druidiyim. Büyük dünya ağacını onurlandırmak için uzun yolda yürüyorum. Tırmanışın benden ne kadar isteyeceğini yanlış hesapladım. Bu yamaçlardaki kanatlı avcılar dikkatli olmayı zorunlu kıldı. Bu eski harabeler sığınak sundu, kabul ettim.\n\nBurası mütevazı bir sunuya uygun ama yaşayan su olmadan ayin verilmemeli. Yapabilirsen su kabağımı ilerideki şelalede doldur.\n\nDöndüğünde yürüdüğün patikayı, üzerinde kıpırdayanları anlat.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Tepelerde daha çok zaman geçirmeliyim. Bu seyrek hava bedeni çok zorluyor.",
+        "f2e54736b1e3328549ba": "Yoldan ayrılmazsam önüm açık mı? Harpiler tam da kaçınmaya çalıştığım türden düşmanlar.\n\nTeşekkür ederim, kabağımı doldurduğun için de. Umarım oradayken şelalelerde serinlemeye vakit ayırmışsındır.\n\nKutsama ayinlerimi yaparken bu suyu dağın geçmişini ve ona göz kulak olan ruhları onurlandırmak için kullanacağım."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -563,6 +785,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "166dbe9bcdbdf2b29416bf3a088d8960e7dec3dc674c14f47bbc5c37e0739353"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -587,6 +819,10 @@
     },
     "ukUA": {
       "description": "Я друїд Кола, іду довгим шляхом ушанувати велике світове дерево. Недооцінив, скільки забере підйом, а крилаті мисливці на схилах змушують бути обережним. Старі руїни запропонували прихисток, і я прийняв.\r\n\r\nМісце годиться для скромного підношення, але жоден обряд не обходиться без живої води. Наповниш мій гарбуз біля водоспаду попереду?\r\n\r\nПовернувшись, розкажи про пройдену стежку й те, що на ній ворушиться.",
+      "dialogue": {
+        "356a380696a8483a6e63": "Мені потрібно проводити більше часу на пагорбах. Це розріджене повітря вимагає від тіла багато зусиль.",
+        "f2e54736b1e3328549ba": "Шлях безпечний, якщо я триматимуся дороги? Гарпії — саме ті вороги, яких я намагаюся уникати.\n\nДякую вам і за те, що наповнили мою флягу. Сподіваюся, ви знайшли час освіжитися біля водоспадів.\n\nПід час обрядів благословення я використаю цю воду, щоб вшанувати минуле гори та духів, які її оберігають."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -603,6 +839,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "166dbe9bcdbdf2b29416bf3a088d8960e7dec3dc674c14f47bbc5c37e0739353"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -627,6 +873,10 @@
     },
     "zhCN": {
       "description": "我是塞纳里奥议会的德鲁伊，正踏上漫长的朝圣之路，去向伟大的世界之树致敬。我低估了攀登这座山峰的难度，而那些在斜坡上游荡的带翼猎手让我不得不步步为营。这些古老的石头为我提供了庇护，我接受了这份恩赐。\r\n\r\n这片废墟很适合用来进行一场谦卑的献祭，但任何仪式都离不开活水。如果你愿意的话，请去前面的瀑布帮我把葫芦装满。\r\n\r\n等你回来的时候，跟我说说你走过的路，以及路上都有些什么动静。",
+      "dialogue": {
+        "356a380696a8483a6e63": "我需要多在山里待一段时间。这里稀薄的空气对身体的负担很大。",
+        "f2e54736b1e3328549ba": "只要沿着道路走，前方就安全了？鹰身人正是我想避开的那类敌人。\n\n谢谢你，也谢谢你帮我装满水壶。希望你在那里时，也有时间在瀑布边清凉一下。\n\n举行祝福仪式时，我会用这些水纪念山的过去，以及守护它的灵魂。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -642,6 +892,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -665,6 +925,10 @@
     },
     "zhTW": {
       "description": "我是議會的德魯伊，跋山涉水而來是為了一見偉大的世界之樹。我錯估了攀爬山路的難度，而那些羽翼掠食者也讓我不得不謹慎小心。這些舊廢墟提供了庇護所，我也答應住下了。\r\n\r\n我可以為這個地方賦予祝福，但沒有活水，就無法完成儀式。如果可以的話，還得請你幫我拿著葫蘆，到前面的瀑布裝滿水。\r\n\r\n回來的時候，也別忘了告訴我路況，以及有什麼東西蟄伏於此。",
+      "dialogue": {
+        "356a380696a8483a6e63": "我需要多在山裡待一段時間。這裡稀薄的空氣對身體的負擔很大。",
+        "f2e54736b1e3328549ba": "只要沿著道路走，前方就安全了？鷹身人正是我想避開的那類敵人。\n\n謝謝你，也謝謝你幫我裝滿水壺。希望你在那裡時，也有時間在瀑布邊清涼一下。\n\n舉行祝福儀式時，我會用這些水紀念山的過去，以及守護它的靈魂。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -680,6 +944,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.356a380696a8483a6e63": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f2e54736b1e3328549ba": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

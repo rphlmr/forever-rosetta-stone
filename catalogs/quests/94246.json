@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "4c1bbcb089a0303f7840": {
+      "contributionId": 158239,
+      "lineId": "q:94246:progress",
+      "npcId": 8305,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "f4188d3818105bbdc6e5": {
+      "contributionId": 118904,
+      "lineId": "q:94246:complete",
+      "npcId": 8305,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Red Whelp Gloves a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Copak pro mě máš?",
+        "f4188d3818105bbdc6e5": "Jsou to rukavice z červeného dráčka? Slyšel jsem, že jejich výroba stojí spoustu peněz, ale stojí za každý měďák. Chtěl jsem se vybavit a pár těch malých draků na severovýchodě skolít, ale prý chrlí oheň.\n\nKaždopádně vám je vezmu z rukou a rovnou si je navléknu! Díky, kamaráde!"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Red Whelp Gloves",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Red Whelp Gloves. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Hvad har du til mig?",
+        "f4188d3818105bbdc6e5": "Er det røde drageungerhandsker? Jeg har hørt, at de er dyre at fremstille, men hver en kobbermønt værd. Jeg overvejede at ruste mig til at nedlægge et par af de små drager mod nordøst, men jeg har hørt, at de kan spy ild.\n\nJeg tager dem gerne af dine hænder og tager dem straks på mine egne! Tak, ven!"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Røde drageungehandsker",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Paar Rotwelpenhandschuhe und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Was habt Ihr für mich?",
+        "f4188d3818105bbdc6e5": "Sind das etwa Rotwelpenhandschuhe? Ich habe gehört, die sind sehr teuer in der Herstellung, aber jedes Kupferstück wert. Ich habe darüber nachgedacht, mich entsprechend auszurüsten, um ein paar dieser kleinen Drachen im Nordosten einzuheizen, aber die sollen wohl Feuer spucken können.\n\nWie auch immer, ich nehm sie Euch ab und schlüpf direkt rein! Vielen Dank!"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Rotwelpenhandschuhe",
       "translationMetadata": {
@@ -82,6 +132,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -100,6 +162,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Red Whelp Gloves, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Whatcha got for me?",
+        "f4188d3818105bbdc6e5": "Are these Red Whelp Gloves? I have heard they are very expensive to craft, but worth every copper. I was thinking about gearing up to knock a few of those lil' dragons down up to the northeast, but I've heard they can breathe fire.\n\nAnyway, I will take those off your hands and slide them right onto mine! Thanks, pal!"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Red Whelp Gloves",
       "translationMetadata": {
@@ -108,6 +174,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +203,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa guantes de cría de dragón rojo e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "¿Qué me traes?",
+        "f4188d3818105bbdc6e5": "¿Son estos los guantes de cría roja? Había oído que era muy caro fabricarlos, pero merecían hasta la última pieza de cobre. Tenía intención de ir a por unos cuantos de esos dragoncitos del noreste, pero he oído que escupen fuego.\n\nEn fin, te los quito de las manos y me los quedo. ¡Gracias por todo!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: guantes de cría de dragón rojo",
       "translationMetadata": {
@@ -133,6 +215,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
           },
           "summary": {
             "origin": "community",
@@ -149,6 +243,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa par de guantes de cría roja, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "¿Qué tienes para mí?",
+        "f4188d3818105bbdc6e5": "¿Son guantes de cría roja? He oído que son muy caros de fabricar, pero que valen cada moneda de cobre. Pensaba equiparme para acabar con algunos de esos dragoncitos al noreste, pero dicen que escupen fuego.\n\n¡En fin, te los quito de las manos y me los pongo de inmediato! ¡Gracias, amigo!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Guantes de cría roja",
       "translationMetadata": {
@@ -157,6 +255,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -174,6 +282,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa gants en cuir de dragonnet rouge, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Qu’est-ce que vous m’apportez ?",
+        "f4188d3818105bbdc6e5": "Ce sont des gants de dragonnet rouge ? J’ai entendu dire qu’ils coûtent cher à fabriquer, mais qu’ils valent chaque pièce de cuivre. Je pensais m’équiper pour abattre quelques-uns de ces petits dragons au nord-est, mais il paraît qu’ils crachent du feu.\n\nEnfin, je vais vous en débarrasser et les enfiler tout de suite ! Merci, l’ami !"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : gants en cuir de dragonnet rouge",
       "translationMetadata": {
@@ -182,6 +294,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -200,11 +322,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Red Whelp Gloves i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Što imaš za mene?",
+        "f4188d3818105bbdc6e5": "Jesu li to rukavice od crvenog zmajića? Čuo sam da ih je skupo izraditi, ali da vrijede svakog bakrenjaka. Razmišljao sam da se opremim i sredim nekoliko onih malih zmajeva na sjeveroistoku, ali čuo sam da bljuju vatru.\n\nU svakom slučaju, preuzet ću ih od vas i odmah navući! Hvala, prijatelju!"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: rukavice crvenog zmajčeta",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -226,11 +362,25 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede Rosso: guanti di cucciolo di drago e riporta informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che la commissione è trasferibile.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Che cos’hai per me?",
+        "f4188d3818105bbdc6e5": "Sono guanti di draghetto rosso? Ho sentito che sono costosi da fabbricare, ma valgono ogni moneta di rame. Pensavo di equipaggiarmi per abbattere qualche draghetto a nord-est, ma ho sentito che sputano fuoco.\n\nComunque, te li tolgo dalle mani e me li infilo subito! Grazie, amico!"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Guanti di Draghetto Rosso",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -252,6 +402,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 새끼 붉은용 장갑 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "뭘 가져왔어?",
+        "f4188d3818105bbdc6e5": "붉은 새끼용 장갑인가요? 만드는 데 돈이 많이 들지만 동전 한 닢도 아깝지 않다고 들었어요. 북동쪽의 작은 용 몇 마리를 잡으러 장비를 갖출 생각이었는데, 녀석들이 불을 뿜는다고 하더군요.\n\n아무튼 제가 받아서 바로 낄게요! 고마워요, 친구!"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 새끼 붉은용 장갑",
       "translationMetadata": {
@@ -260,6 +414,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -278,11 +442,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Red Whelp Gloves oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Co tam dla mnie masz?",
+        "f4188d3818105bbdc6e5": "Czy to rękawice z czerwonego smoczątka? Słyszałem, że są drogie w wykonaniu, ale warte każdego miedziaka. Chciałem się wyposażyć i upolować kilka tych małych smoków na północnym wschodzie, ale podobno zieją ogniem.\n\nTak czy inaczej, zdejmę ci je z rąk i zaraz włożę na swoje! Dzięki, przyjacielu!"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: rękawice czerwonego smoczątka",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -304,6 +482,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Luvas de Dragonete Vermelho, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "O que você trouxe pra mim?",
+        "f4188d3818105bbdc6e5": "São Luvas de Dragonete Vermelho? Ouvi dizer que são caras de fabricar, mas valem cada moeda de cobre. Pensei em me equipar para derrubar alguns daqueles dragõezinhos a nordeste, mas ouvi dizer que eles cospem fogo.\n\nEnfim, vou tirá-las das suas mãos e colocá-las nas minhas agora mesmo! Valeu, amigo!"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Luvas de Dragonete Vermelho",
       "translationMetadata": {
@@ -312,6 +494,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -329,6 +521,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa пар перчаток из чешуи красного дракончика, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Что ты мне принёс?",
+        "f4188d3818105bbdc6e5": "Это перчатки из красного дракончика? Слышал, они дорогие в изготовлении, но стоят каждой медной монеты. Я хотел снарядиться и прикончить пару тех маленьких драконов на северо-востоке, но говорят, они дышат огнем.\n\nЛадно, заберу их у вас и сразу надену! Спасибо, приятель!"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: перчатки из чешуи красного дракончика",
       "translationMetadata": {
@@ -337,6 +533,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -356,11 +562,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Red Whelp Gloves. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Vad har du åt mig?",
+        "f4188d3818105bbdc6e5": "Är det handskar av röd drakunge? Jag har hört att de är dyra att tillverka, men värda vartenda kopparmynt. Jag funderade på att utrusta mig och slå ner några av de små drakarna i nordost, men jag har hört att de sprutar eld.\n\nHur som helst tar jag dem gärna ur dina händer och sätter dem direkt på mina! Tack, kompisen!"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Röda drakungehandskar",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -383,11 +603,25 @@
     },
     "trTR": {
       "description": "<Soluk mürekkeple yazılmış notta Red Whelp Gloves isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Benim için ne getirdin?",
+        "f4188d3818105bbdc6e5": "Bunlar Kızıl Yavru Ejder Eldivenleri mi? Yapımlarının çok pahalı olduğunu ama her bakıra değdiğini duydum. Kuzeydoğudaki şu küçük ejderhalardan birkaçını indirmek için hazırlanmayı düşünüyordum ama ateş püskürttüklerini duydum.\n\nNeyse, onları ellerinden alıp hemen kendi ellerime geçireyim! Sağ ol dostum!"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Red Whelp Gloves",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -409,11 +643,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Red Whelp Gloves і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "Що ти мені приніс?",
+        "f4188d3818105bbdc6e5": "Це рукавиці з червоного дракончика? Чув, їх дорого виготовляти, але вони варті кожного мідяка. Я хотів спорядитися й здолати кількох тих маленьких драконів на північному сході, та чув, що вони дихають вогнем.\n\nУ будь-якому разі заберу їх у вас і відразу надягну! Дякую, друже!"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Рукавиці з червоного дракончика",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -437,6 +685,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa双红色雏龙手套，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "你给我带了什么？",
+        "f4188d3818105bbdc6e5": "这是红色雏龙手套？我听说它们制作起来很昂贵，但每一枚铜币都花得值。我本想装备一番，去东北边撂倒几只小龙，但听说它们会喷火。\n\n总之，我就收下它们，马上戴上！谢谢你，朋友！"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：红色雏龙手套",
       "translationMetadata": {
@@ -445,6 +697,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -461,6 +723,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa雙紅色幼龍手套，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "4c1bbcb089a0303f7840": "你給我帶了什麼？",
+        "f4188d3818105bbdc6e5": "這是紅色幼龍手套？我聽說製作它們很昂貴，但每一枚銅幣都花得值得。我本想準備一番，去東北邊放倒幾隻小龍，但聽說牠們會噴火。\n\n總之，我就收下它們，馬上戴上！謝啦，朋友！"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：紅色幼龍手套",
       "translationMetadata": {
@@ -469,6 +735,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.4c1bbcb089a0303f7840": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f4188d3818105bbdc6e5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

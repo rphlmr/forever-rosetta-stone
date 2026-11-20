@@ -1,8 +1,21 @@
 {
   "areaId": 15,
+  "dialogueContexts": {
+    "0e7292b5086ab37077fe": {
+      "contributionId": 110181,
+      "lineId": "q:95196:complete",
+      "npcId": 260271,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Poslouchej. Teď vyjdu těma dveřma za tebou. Ty počkáš, dokud nebudu dočista pryč, a pak se se mnou sejdeš za hřbitovem za městem. Dej bacha, ať tě nikdo nesleduje.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Tak takhle se věci mají, $c. Potřebuju, abys proklouzl/a do té věže a zjistil/a, co půjde. Co ty na to?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +32,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +61,9 @@
     },
     "daDK": {
       "description": "Hør her. Jeg går ud ad døren bag dig. Du venter, til jeg er godt og grundigt væk, og møder mig så bag kirkegården uden for byen. Sørg for, at ingen følger efter dig.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Sådan ligger landet, $c. Jeg har brug for, at du sniger dig ind i tårnet og finder ud af, hvad du kan. Hvad siger du?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +80,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "27e35ae9852ab998c2d9f2ae9f8f26f315909480d72e4e35fa02d21b778bd5c3"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -83,6 +109,9 @@
     },
     "deDE": {
       "description": "Hört zu. Ich geh jetzt zur Tür hinter Euch raus. Ihr wartet dann, bis ich längst außer Sichtweite bin. Und dann treffen wir uns hinter dem Friedhof außerhalb der Stadt. Achtet darauf, dass Euch niemand folgt.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "So steht die Sache, $c. Ihr müsst Euch in den Turm schleichen und herausfinden, was Ihr könnt. Was meint Ihr?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -98,6 +127,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -123,6 +157,9 @@
     },
     "enUS": {
       "description": "Listen up. I'm going to walk out that door behind you. Yer gonna wait until I'm good and gone, and then yer gonna meet me behind the graveyard outside o' town. Ensure yer not followed.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "So that's the score, $c. I need ye to sneak into that tower and find out what ye can. How 'bout it?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -138,6 +175,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -161,6 +204,9 @@
     },
     "esES": {
       "description": "Escúchame bien. Voy a salir por esa puerta que tienes detrás. Vas a esperar hasta que me haya ido del todo y, entonces, vienes a verme detrás del cementerio, justo a las afueras. Asegúrate de que nadie te siga.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Así están las cosas, $c. Necesito que te cueles en esa torre y averigües todo lo que puedas. ¿Qué me dices?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -176,6 +222,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -199,6 +250,9 @@
     },
     "esMX": {
       "description": "Escucha con atención: saldré por la puerta detrás de ti. Espera hasta que me haya ido, y luego ven a reunirte conmigo detrás del cementerio fuera del pueblo. Asegúrate de que nadie te siga.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Así están las cosas, $c. Necesito que te escabullas en esa torre y averigües todo lo que puedas. ¿Qué dices?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -214,6 +268,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -237,6 +296,9 @@
     },
     "frFR": {
       "description": "Écoutez moi bien. Je vais sortir par cette porte derrière vous. Z’allez attendre que j’sois parti pour de bon, puis vous m’retrouverez derrière le cimetière situé à l’extérieur d’la ville. Faites attention à ne pas vous faire suivre.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Voilà où on en est, $c. J’ai besoin que vous vous glissiez dans cette tour et que vous découvriez tout ce que vous pourrez. Ça vous dit ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +314,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -275,6 +342,9 @@
     },
     "hrHR": {
       "description": "Slušaj. Izaći ću kroz ona vrata iza tebe. Pričekat ćeš dok sasvim ne odem, a onda ćemo se naći iza groblja izvan grada. Pobrini se da te nitko ne prati.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Tako stoje stvari, $c. Trebaš se ušuljati u onu kulu i saznati što možeš. Što kažeš?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -291,6 +361,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "27e35ae9852ab998c2d9f2ae9f8f26f315909480d72e4e35fa02d21b778bd5c3"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -315,6 +390,9 @@
     },
     "itIT": {
       "description": "Di nuovo salute, {name}. Oggi più che mai è per me un orgoglio fratello. La tua dedizione ci onora tutti.\n\nÈ giunto il momento che io ti faccia un grande dono. Sappi, però, che per ora te lo concedo senza richiedere nulla in cambio, ma in futuro, a tempo debito, sarà una sfida ancora più grande riservata ai Paladini che sceglieranno di accettare la mia missione.\n\nParla nuovamente con me e ti darò il tuo dono.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Ecco come stanno le cose, $c. Devi intrufolarti in quella torre e scoprire tutto quello che puoi. Che ne dici?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -330,6 +408,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -354,6 +437,9 @@
     },
     "koKR": {
       "description": "잘 듣게. 지금 자네 뒤에 있는 문으로 내가 먼저 나가겠네. 내가 완전히 사라질 때까지 기다렸다가 마을 밖 묘지 뒤편에서 만나세. 절대 미행당하지 말게.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "상황이 이렇소, $c. 저 탑에 몰래 들어가서 알아낼 수 있는 건 뭐든 알아봐 주시오. 어떻소?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -369,6 +455,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -392,6 +483,9 @@
     },
     "plPL": {
       "description": "Słuchaj. Wyjdę drzwiami za tobą. Poczekasz, aż porządnie się oddalę, a potem spotkasz mnie za cmentarzem poza miastem. Upewnij się, że nikt cię nie śledzi.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Tak się sprawy mają, $c. Musisz zakraść się do tej wieży i dowiedzieć się, czego tylko możesz. Co ty na to?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -408,6 +502,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "27e35ae9852ab998c2d9f2ae9f8f26f315909480d72e4e35fa02d21b778bd5c3"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -432,6 +531,9 @@
     },
     "ptBR": {
       "description": "Presta atenção. Eu vou sair por aquela porta atrás de ti. Tu espera até eu sumir de vista, aí me encontra atrás do cemitério, fora da cidade. E cuida pra ninguém te seguir.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Essa é a situação, $c. Preciso que você entre sorrateiramente naquela torre e descubra o que puder. Que tal?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -447,6 +549,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -470,6 +577,9 @@
     },
     "ruRU": {
       "description": "Слушай сюда. Сейчас я встану и выйду в дверь у тебя за спиной. Ты дождешься, пока я уйду, а затем мы встретимся за загородным кладбищем. И убедись, что за тобой нет хвоста.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Вот такие дела, $c. Мне нужно, чтобы ты пробрался в ту башню и разузнал все, что сможешь. Ну как?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -485,6 +595,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -508,6 +623,9 @@
     },
     "svSE": {
       "description": "Lyssna nu. Jag går ut genom dörren bakom dig. Du väntar tills jag är ordentligt borta, sedan möter du mig bakom kyrkogården utanför stan. Se till att ingen följer efter dig.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Så ligger det till, $c. Jag behöver att du smyger in i tornet och tar reda på vad du kan. Vad säger du?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -524,6 +642,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "27e35ae9852ab998c2d9f2ae9f8f26f315909480d72e4e35fa02d21b778bd5c3"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -548,6 +671,9 @@
     },
     "trTR": {
       "description": "İyi dinle. Arkandaki o kapıdan çıkacağım. İyice uzaklaşana kadar bekleyeceksin; sonra kasaba dışındaki mezarlığın arkasında benimle buluşacaksın. Takip edilmediğinden emin ol.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Durum böyle, $c. O kuleye gizlice girip öğrenebildiğin her şeyi öğrenmeni istiyorum. Ne dersin?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -564,6 +690,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "27e35ae9852ab998c2d9f2ae9f8f26f315909480d72e4e35fa02d21b778bd5c3"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -588,6 +719,9 @@
     },
     "ukUA": {
       "description": "Слухай уважно. Я вийду через двері позаду тебе. Ти зачекаєш, поки я піду як слід, а потім зустрінеш мене за цвинтарем за містом. Переконайся, що за тобою не стежать.",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "Отакі справи, $c. Мені потрібно, щоб ти прокрався до тієї вежі й дізнався все, що зможеш. Як тобі таке?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -604,6 +738,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "27e35ae9852ab998c2d9f2ae9f8f26f315909480d72e4e35fa02d21b778bd5c3"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -628,6 +767,9 @@
     },
     "zhCN": {
       "description": "听着。一会儿我会从你身后这扇门走出去。等我走远了，你再去镇外墓地的后头与我会合。务必甩掉任何尾巴。",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "情况就是这样，$c。我要你潜入那座塔，尽可能打探消息。怎么样？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -643,6 +785,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -666,6 +813,9 @@
     },
     "zhTW": {
       "description": "聽好了。我要從你身後的那扇門走出去。你要等我確實走遠了之後，再到鎮外的墓地後面跟我碰頭。確保你沒有被跟蹤。",
+      "dialogue": {
+        "0e7292b5086ab37077fe": "情況就是這樣，$c。我要你潛入那座塔，盡可能打探消息。怎麼樣？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -681,6 +831,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0e7292b5086ab37077fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

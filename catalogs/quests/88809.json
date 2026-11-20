@@ -1,8 +1,30 @@
 {
   "areaId": 16,
+  "dialogueContexts": {
+    "6ea2f560ef00038de2fe": {
+      "contributionId": 110194,
+      "lineId": "q:88809:complete",
+      "npcId": 239822,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "fbf25fa0b5d26e738f2d": {
+      "contributionId": 110166,
+      "lineId": "q:88809:progress",
+      "npcId": 239822,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Před tisíciletími byl Eldarath úchvatný pohled, živé svědectví slávy a moci Kaldorei. To, čemu dnes říkáme Eldarath, je ve srovnání s tím sotva hromada sutin.\n\nPřesto to, co zbylo, stojí za záchranu, už jen kvůli zachování naší historie. Nagy Spitelash musíme vyhnat dřív, než Eldarath úplně vydrancují.\n\nCesta na severovýchod tě dovede přímo do srdce ruin. Jdi tam a získej co nejvíc našich relikvií – a hlavu jejich velitele.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Naše práce v Eldarathu zdaleka nekončí, ale vítězství málokdy přichází jediným úderem. Musíme ve svém úsilí vytrvat.",
+        "fbf25fa0b5d26e738f2d": "Mnozí kaldorei by tuto zemi odepsali a přenechali ruiny nagám, ale já věřím, že za naši historii stojí bojovat."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -43,6 +75,10 @@
     },
     "daDK": {
       "description": "For årtusinder siden var Eldarath et syn at skue; et levende vidnesbyrd om kaldoreis ære og magt. Det, vi kalder Eldarath i dag, er knap en bunke murbrokker til sammenligning.\r\n\r\nAlligevel er det, der er tilbage, værd at redde, om så blot for at bevare vores historie. Spitelash må drives ud, før Eldarath bliver fuldstændig plyndret.\r\n\r\nFølger du vejen mod nordøst, fører den dig lige ind i hjertet af ruinerne. Gå dertil og hent så mange af vores relikvier, du kan, og deres kommandørs hoved.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Vores arbejde i Eldarath er langt fra slut, men sejren kommer sjældent med ét slag. Vi må fortsætte vores indsats.",
+        "fbf25fa0b5d26e738f2d": "Mange kaldorei ville opgive dette land og overlade ruinerne til nagaerne, men jeg mener, at vores historie er værd at kæmpe for."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -59,6 +95,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47d93b738ceaee59b44c1b043430eb3552f27cccabe07fbe9739fe08b978b313"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -82,6 +128,10 @@
     },
     "deDE": {
       "description": "Vor Jahrtausenden war Eldarath eine wahre Augenweide. Ein lebendes Testament des Ruhms und der Macht der Kaldorei. Was wir heute Eldarath nennen, ist im Vergleich kaum mehr als ein Haufen Geröll.\r\n\r\nAber egal, es lohnt sich dennoch, zu retten, was davon übrig ist. Schon allein, um unsere Vergangenheit zu bewahren. Die Grollflossen müssen ausgetrieben werden, bevor Eldarath vollständig leergeplündert wird.\r\n\r\nWenn Ihr der Straße nach Nordosten folgt, werdet Ihr direkt ins Herz der Ruinen geführt. Begebt Euch dorthin und bergt so viele Relikte, wie Ihr könnt - und den Kopf ihrer Kommandantin.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Unsere Arbeit in Eldarath ist noch lange nicht vorbei, doch der Sieg kommt selten auf einen Schlag. Wir müssen unsere Bemühungen aufrechthalten.",
+        "fbf25fa0b5d26e738f2d": "Viele Kaldorei würden diese Lande als verlorene Sache abschreiben und die Ruinen den Naga überlassen, doch ich glaube, dass unsere Geschichte es wert ist, dafür zu kämpfen."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -97,6 +147,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -122,6 +184,10 @@
     },
     "enUS": {
       "description": "Millennia ago, Eldarath was a sight to behold; a living testament to the glory and might of the Kaldorei. What we call Eldarath today is hardly a pile of rubble by comparison.\r\n\r\nNonetheless, what remains is worth salvaging, if only to preserve our history. The Spitelash must be driven out before Eldarath is completely ransacked.\r\n\r\nFollowing the road north east will lead you right into the heart of the ruins. Go there, and retrieve as many of our relics as you can--and their commander's head.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Our work in Eldarath is far from over, but victory rarely comes in one fell swoop. We must keep up our efforts.",
+        "fbf25fa0b5d26e738f2d": "Many Kaldorei would write off this land as a lost cause, and leave the ruins to the naga, but I believe our history is worth fighting for."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -137,6 +203,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -159,6 +237,10 @@
     },
     "esES": {
       "description": "Hace milenios, Eldarath era un lugar absolutamente maravilloso. Una prueba viviente de la gloria y la grandeza de los kaldorei. Ahora es apenas un puñado de escombros en comparación.\r\n\r\nNo obstante, merece la pena salvar lo poco que queda, aunque sea simplemente para preservar nuestra historia. Hemos de expulsar a los Látigo de Ira antes de que saqueen Eldarath por completo.\r\n\r\nSi sigues el camino al noreste, llegarás directamente al corazón de las ruinas. Ve y recupera todas las reliquias que puedas; y trae la cabeza de su comandante también.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Nuestro trabajo en Eldarath dista mucho de haber terminado, pero la victoria rara vez llega de un solo golpe. Debemos mantener nuestros esfuerzos.",
+        "fbf25fa0b5d26e738f2d": "Muchos kaldorei darían esta tierra por perdida y dejarían las ruinas a los naga, pero creo que vale la pena luchar por nuestra historia."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +256,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -197,6 +289,10 @@
     },
     "esMX": {
       "description": "Hace miles de años, Eldarath era una verdadera maravilla y un testimonio de la gloria y el poder de los kaldorei. Hoy en día, Eldarath no es más que una pila de escombros.\r\n\r\nSin embargo, vale la pena salvar lo que queda, aunque sea solo para preservar nuestra historia. Debemos expulsar a los Látigo de Ira antes de que terminen de saquear Eldarath por completo.\r\n\r\nSi sigues el camino hacia el noreste, llegarás al corazón de las ruinas. Ve ahí y recupera tantas de nuestras reliquias como puedas... y no olvides la cabeza de su comandante.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Nuestro trabajo en Eldarath está lejos de terminar, pero la victoria rara vez llega de un solo golpe. Debemos mantener nuestros esfuerzos.",
+        "fbf25fa0b5d26e738f2d": "Muchos kaldorei darían esta tierra por perdida y dejarían las ruinas a los naga, pero creo que vale la pena luchar por nuestra historia."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -212,6 +308,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -234,6 +340,10 @@
     },
     "frFR": {
       "description": "Il y a de cela des millénaires, le paysage d’Eldarath était à couper le souffle : un véritable hommage à la gloire et à la puissance des Kaldorei. Aujourd’hui, il n’en reste qu’un tas de débris, en comparaison.\r\n\r\nCes ruines méritent néanmoins notre protection, ne serait-ce que pour préserver notre histoire. Les Nagas fouette-bile doivent être repoussés avant qu’ils ne ravagent complètement Eldarath.\r\n\r\nRendez-vous au cœur des ruines en suivant la route au nord-est et récupérez autant de nos reliques que possible… ainsi que la tête de leur commandant.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Notre travail à Eldarath est loin d’être terminé, mais la victoire s’obtient rarement d’un seul coup. Nous devons poursuivre nos efforts.",
+        "fbf25fa0b5d26e738f2d": "Beaucoup de kaldorei abandonneraient ces terres et laisseraient les ruines aux nagas, mais je crois que notre histoire mérite qu’on se batte pour elle."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -249,6 +359,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -272,6 +392,10 @@
     },
     "hrHR": {
       "description": "Prije mnogo tisućljeća Eldarath je bio veličanstven prizor, živo svjedočanstvo slave i moći kaldoreija. Ono što danas zovemo Eldarathom jedva je gomila ruševina u usporedbi s time.\r\n\r\nIpak, ono što je ostalo vrijedi spasiti, makar samo radi očuvanja naše povijesti. Spitelashe moramo otjerati prije nego što Eldarath bude potpuno opljačkan.\r\n\r\nCesta prema sjeveroistoku dovest će te ravno u srce ruševina. Idi tamo i vrati što više naših relikvija možeš, kao i glavu njihova zapovjednika.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Naš posao u Eldarathu daleko je od kraja, ali pobjeda rijetko dolazi jednim udarcem. Moramo nastaviti s naporima.",
+        "fbf25fa0b5d26e738f2d": "Mnogi bi kaldorei otpisali ovu zemlju i prepustili ruševine nagama, ali vjerujem da se za našu povijest vrijedi boriti."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -288,6 +412,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47d93b738ceaee59b44c1b043430eb3552f27cccabe07fbe9739fe08b978b313"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -312,6 +446,10 @@
     },
     "itIT": {
       "description": "Millenni fa, Eldarath era uno spettacolo: una testimonianza vivente della gloria e della potenza dei kaldorei. Ciò che oggi chiamiamo Eldarath è a malapena un mucchio di macerie al confronto.\r\n\r\nEppure ciò che resta merita di essere recuperato, anche solo per preservare la nostra storia. Gli Spitelash devono essere scacciati prima che Eldarath venga completamente saccheggiata.\r\n\r\nSeguendo la strada verso nordest arriverai nel cuore delle rovine. Va' lì e recupera quante più reliquie nostre puoi, insieme alla testa del loro comandante.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Il nostro lavoro a Eldarath è tutt'altro che finito, ma la vittoria raramente arriva in un colpo solo. Dobbiamo continuare i nostri sforzi.",
+        "fbf25fa0b5d26e738f2d": "Molti Kaldorei darebbero questa terra per persa e lascerebbero le rovine ai naga, ma io credo che valga la pena combattere per la nostra storia."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -328,6 +466,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47d93b738ceaee59b44c1b043430eb3552f27cccabe07fbe9739fe08b978b313"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -352,6 +502,10 @@
     },
     "koKR": {
       "description": "수천 년 전 엘다라스는 찬란한 도시였습니다. 칼도레이의 영광과 힘을 생생히 보여주는 증거였죠. 지금 우리가 엘다라스라 부르는 곳은 그에 비하면 잔해 더미라 부르기도 민망합니다.\r\n\r\n그래도 남은 유산은 건져야 합니다. 우리의 역사를 지키기 위해서라도요. 엘다라스가 완전히 약탈당하기 전에 원한의꼬리일족을 몰아내는 게 목표입니다.\r\n\r\n북동쪽 길을 따라가면 폐허의 중심부로 곧장 이어집니다. 유물을 최대한 많이 회수해 주세요. 그리고 적 지휘관의 수급도.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "엘다라스에서 해야 할 일은 아직 많이 남았지만, 승리는 한 번에 찾아오는 법이 드뭅니다. 계속 노력해야 합니다.",
+        "fbf25fa0b5d26e738f2d": "많은 칼도레이가 이 땅을 포기하고 폐허를 나가에게 넘기겠지만, 저는 우리의 역사를 위해 싸울 가치가 있다고 믿습니다."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -367,6 +521,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -390,6 +554,10 @@
     },
     "plPL": {
       "description": "Przed tysiącleciami Eldarath było wspaniałym widokiem: żywym świadectwem chwały i potęgi kaldorei. W porównaniu z tym to, co dziś nazywamy Eldarath, jest ledwie stertą gruzu.\r\n\r\nMimo to warto ocalić to, co zostało, choćby dla zachowania naszej historii. Spitelash trzeba wypędzić, zanim Eldarath zostanie doszczętnie splądrowane.\r\n\r\nDroga na północny wschód prowadzi wprost do serca ruin. Idź tam i odzyskaj jak najwięcej naszych reliktów oraz głowę ich dowódcy.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Nasza praca w Eldarath jest daleka od ukończenia, ale zwycięstwo rzadko przychodzi za jednym zamachem. Musimy nie ustawać w wysiłkach.",
+        "fbf25fa0b5d26e738f2d": "Wielu kaldorei spisałoby tę ziemię na straty i zostawiło ruiny nagom, ale wierzę, że warto walczyć o naszą historię."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -406,6 +574,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47d93b738ceaee59b44c1b043430eb3552f27cccabe07fbe9739fe08b978b313"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -430,6 +608,10 @@
     },
     "ptBR": {
       "description": "Há milênios, Eldarath era um lugar lindíssimo, uma prova viva da glória e da força dos kaldorei. Em comparação, o que chamamos hoje de Eldarath não chega a uma pilha de escombros.\r\n\r\nDe todo modo, vale salvar o que resta, nem que seja para preservar nossa história. Precisamos expulsar as Iralisca antes que Eldarath seja completamente saqueada.\r\n\r\nSeguindo a estrada para nordeste, você chega ao coração das ruínas. Vá até lá e recupere o máximo possível de nossas relíquias — e a cabeça do comandante delas.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Nosso trabalho em Eldarath está longe de acabar, mas a vitória raramente vem de uma só vez. Precisamos continuar nos esforçando.",
+        "fbf25fa0b5d26e738f2d": "Muitos kaldorei desistiriam desta terra e deixariam as ruínas para os naga, mas acredito que vale a pena lutar pela nossa história."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -445,6 +627,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -467,6 +659,10 @@
     },
     "ruRU": {
       "description": "Много тысяч лет назад Эльдарат поистине поражал воображение – это было живое свидетельство величия и могущества калдорай. А то, что мы называем Эльдаратом сегодня, в сравнении едва тянет на груду обломков.\r\n\r\nТем не менее, даже эти останки необходимо спасти, хотя бы ради сохранения нашей истории. Бич Злобы нужно изгнать отсюда, прежде чем они полностью разграбят город.\r\n\r\nПо дороге на северо-восток ты доберешься до самого сердца руин. Отправляйся туда, собери как можно больше наших реликвий... и голову вражьего командира.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Наша работа в Элдарате далека от завершения, но победа редко дается одним ударом. Мы должны продолжать наши усилия.",
+        "fbf25fa0b5d26e738f2d": "Многие калдорай сочли бы эти земли безнадежно потерянными и оставили бы руины нагам, но я верю, что за нашу историю стоит бороться."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -482,6 +678,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -504,6 +710,10 @@
     },
     "svSE": {
       "description": "För årtusenden sedan var Eldarath en hänförande syn, ett levande vittnesbörd om Kaldoreis ära och makt. Det vi kallar Eldarath i dag är knappt mer än en hög spillror i jämförelse.\r\n\r\nÄndå är det som återstår värt att rädda, om så bara för att bevara vår historia. Spitelash måste drivas ut innan Eldarath är helt plundrat.\r\n\r\nVägen mot nordost leder dig rakt in i ruinernas hjärta. Gå dit och hämta så många av våra reliker du kan, och deras befälhavares huvud.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Vårt arbete i Eldarath är långt ifrån över, men segern kommer sällan i ett enda slag. Vi måste fortsätta våra ansträngningar.",
+        "fbf25fa0b5d26e738f2d": "Många kaldorei skulle ge upp detta land och lämna ruinerna åt naga, men jag tror att vår historia är värd att kämpa för."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -520,6 +730,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47d93b738ceaee59b44c1b043430eb3552f27cccabe07fbe9739fe08b978b313"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -544,6 +764,10 @@
     },
     "trTR": {
       "description": "Binlerce yıl önce Eldarath görülmeye değerdi; Kaldorei'nin ihtişamının ve kudretinin yaşayan bir kanıtıydı. Bugün Eldarath dediğimiz yer onun yanında bir moloz yığını bile sayılmaz.\r\n\r\nYine de, sırf tarihimizi korumak adına bile olsa, geriye kalanları kurtarmaya değer. Eldarath tamamen yağmalanmadan önce Spitelash kovulmalı.\r\n\r\nKuzeydoğuya giden yolu izlersen harabelerin tam kalbine varırsın. Oraya git, alabildiğin kadar çok kalıntımızı ve komutanlarının başını getir.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Eldarath’taki işimiz bitmekten çok uzak, ama zafer nadiren tek hamlede gelir. Çabalarımızı sürdürmeliyiz.",
+        "fbf25fa0b5d26e738f2d": "Birçok kaldorei bu topraklardan vazgeçip harabeleri nagalara bırakırdı, ama tarihimiz için savaşmaya değer olduğuna inanıyorum."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -560,6 +784,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47d93b738ceaee59b44c1b043430eb3552f27cccabe07fbe9739fe08b978b313"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -584,6 +818,10 @@
     },
     "ukUA": {
       "description": "Тисячоліття тому Елдарат був дивом, живим свідченням слави й могутності калдораїв. Те, що нині зветься Елдаратом, порівняно з ним ледве більше за купу уламків.\r\n\r\nТа рештки варто врятувати хоча б заради збереження нашої історії. Злопугів треба вигнати, перш ніж Елдарат буде остаточно розграбовано.\r\n\r\nДорога на північний схід приведе тебе просто в серце руїн. Іди туди й поверни якомога більше наших реліквій, а також голову їхнього командувача.",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "Наша робота в Елдараті далека від завершення, але перемога рідко приходить одним ударом. Ми повинні продовжувати наші зусилля.",
+        "fbf25fa0b5d26e738f2d": "Багато калдораїв вважали б ці землі втраченими й залишили руїни нагам, але я вірю, що за нашу історію варто боротися."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -600,6 +838,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "47d93b738ceaee59b44c1b043430eb3552f27cccabe07fbe9739fe08b978b313"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -624,6 +872,10 @@
     },
     "zhCN": {
       "description": "几千年前，埃达拉斯曾是一处令人惊叹的奇观，它是卡多雷荣耀与力量的鲜活证明。相比之下，我们今天所看到的埃达拉斯简直形同一堆瓦砾。\r\n\r\n不过，遗留下来的残迹依然值得抢救，哪怕仅仅是为了保存我们的历史。在埃达拉斯被彻底洗劫一空之前，必须把恶鞭赶出去。\r\n\r\n沿着东北方的道路走，就能直达废墟的心脏地带。去那里，尽可能多地找回我们的遗物，再带回他们指挥官的首级。",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "我们在埃达拉斯的工作还远未结束，但胜利很少能一蹴而就。我们必须继续努力。",
+        "fbf25fa0b5d26e738f2d": "许多卡多雷会认为这片土地无可挽回，将废墟拱手让给纳迦，但我相信我们的历史值得为之而战。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -639,6 +891,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -662,6 +924,10 @@
     },
     "zhTW": {
       "description": "幾千年前，埃達拉斯曾是一道壯麗的奇景，它是卡多雷榮耀與力量的證明。相比之下，我們今天所稱的埃達拉斯，不過是一堆斷壁殘垣。\r\n\r\n儘管如此，剩下的東西依然值得去搶救，哪怕只是為了保存我們的歷史。在埃達拉斯被完全洗劫一空之前，必須把惡鞭納迦驅逐出去。\r\n\r\n沿著道路向東北方前行，就會直接進入廢墟的核心地帶。去那裡取回我們的聖物，越多越好，並取得他們指揮官的頭。",
+      "dialogue": {
+        "6ea2f560ef00038de2fe": "我們在埃達拉斯的工作還遠未結束，但勝利很少能一蹴可幾。我們必須繼續努力。",
+        "fbf25fa0b5d26e738f2d": "許多卡多雷會認為這片土地無可挽回，將廢墟拱手讓給納迦，但我相信我們的歷史值得為之而戰。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -677,6 +943,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.6ea2f560ef00038de2fe": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fbf25fa0b5d26e738f2d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

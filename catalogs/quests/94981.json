@@ -1,8 +1,30 @@
 {
   "areaId": 16842,
+  "dialogueContexts": {
+    "234eedaa026205a630d7": {
+      "contributionId": 113218,
+      "lineId": "q:94981:complete",
+      "npcId": 259250,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "c88f0040d52055a09749": {
+      "contributionId": 113195,
+      "lineId": "q:94981:progress",
+      "npcId": 259250,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Forma je dost hrubá, ale se správným materiálem podle ní možná dokážeme vyrobit klíč.\n\nBudu udržovat uhlíky rozžhavené, zatímco ty obstaráš potřebné součásti.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Přesně to jsme potřebovali.",
+        "c88f0040d52055a09749": "Shromáždili jste materiály?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -24,6 +46,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -54,6 +86,10 @@
     },
     "daDK": {
       "description": "Støbeformen er temmelig grov, men vi kan måske lave en nøgle med de rette materialer.\r\n\r\nJeg holder gløderne varme, mens du samler de nødvendige bestanddele.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Lige hvad vi havde brug for.",
+        "c88f0040d52055a09749": "Har du samlet materialerne?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -75,6 +111,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9f4ee80f3ae94251e1a848818c1a73c77f29434375286f24b999e0e33fa87f93"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -103,6 +149,10 @@
     },
     "deDE": {
       "description": "Das ist eine recht grobschlächtige Form, aber mit den richtigen Materialien können wir bestimmt einen Schlüssel damit herstellen.\r\n\r\nIch heize die Glut an, während Ihr die nötigen Komponenten sammelt.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Genau, was wir brauchen.",
+        "c88f0040d52055a09749": "Habt Ihr die Materialien gesammelt?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -123,6 +173,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -154,6 +216,10 @@
     },
     "enUS": {
       "description": "The moulding is rather crude, but we may be able to fashion a key with the right materials.\r\n\r\nI'll keep the embers running hot while you gather the necessary components.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Just what we needed.",
+        "c88f0040d52055a09749": "Have you gathered the materials?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +240,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -203,6 +281,10 @@
     },
     "esES": {
       "description": "La moldura es bastante rudimentaria, pero creo que podremos fabricar una llave con los materiales adecuados.\r\n\r\nMe aseguraré de tener las ascuas vivas para cuando vuelvas con los materiales.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Justo lo que necesitábamos.",
+        "c88f0040d52055a09749": "¿Habéis reunido los materiales?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -223,6 +305,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -252,6 +344,10 @@
     },
     "esMX": {
       "description": "El moldeado es bastante burdo, pero quizás podamos crear una llave con los materiales adecuados.\r\n\r\nSeguiré avivando las brasas mientras tú reúnes los componentes necesarios.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Justo lo que necesitábamos.",
+        "c88f0040d52055a09749": "¿Reuniste los materiales?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -272,6 +368,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -301,6 +407,10 @@
     },
     "frFR": {
       "description": "Le moulage est plutôt grossier, mais avec les bons matériaux, nous devrions pouvoir façonner une clé.\r\n\r\nJe chaufferai les braises pendant que vous rassemblez les composants nécessaires.",
+      "dialogue": {
+        "234eedaa026205a630d7": "C’est exactement ce qu’il nous fallait.",
+        "c88f0040d52055a09749": "Avez-vous rassemblé les matériaux ?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -321,6 +431,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -350,6 +470,10 @@
     },
     "hrHR": {
       "description": "Kalup je prilično grub, ali možda možemo izraditi ključ s pravim materijalima.\r\n\r\nOdržavat ću žar vrućim dok skupljaš potrebne sastojke.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Upravo ono što nam je trebalo.",
+        "c88f0040d52055a09749": "Jeste li prikupili materijale?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -371,6 +495,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9f4ee80f3ae94251e1a848818c1a73c77f29434375286f24b999e0e33fa87f93"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -401,6 +535,10 @@
     },
     "itIT": {
       "description": "Il calco è piuttosto rozzo, ma forse potremo realizzare una chiave con i materiali giusti.\r\n\r\nTerrò calde le braci mentre raccogli i componenti necessari.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Proprio quello che ci serviva.",
+        "c88f0040d52055a09749": "Hai raccolto i materiali?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -422,6 +560,18 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9f4ee80f3ae94251e1a848818c1a73c77f29434375286f24b999e0e33fa87f93"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -452,6 +602,10 @@
     },
     "koKR": {
       "description": "거푸집은 꽤 투박하지만, 재료만 맞으면 열쇠를 만들 수 있을 것 같네.\r\n\r\n자네가 재료를 구해 올 동안 불씨가 식지 않게 해 두겠네.",
+      "dialogue": {
+        "234eedaa026205a630d7": "딱 필요한 것이군.",
+        "c88f0040d52055a09749": "재료는 모으셨습니까?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -472,6 +626,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -501,6 +665,10 @@
     },
     "plPL": {
       "description": "Forma jest dość prymitywna, ale z odpowiednich materiałów może uda się wykonać klucz.\r\n\r\nUtrzymam gorący żar, podczas gdy zbierasz potrzebne składniki.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Właśnie tego potrzebowaliśmy.",
+        "c88f0040d52055a09749": "Czy materiały zostały zebrane?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -522,6 +690,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9f4ee80f3ae94251e1a848818c1a73c77f29434375286f24b999e0e33fa87f93"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -552,6 +730,10 @@
     },
     "ptBR": {
       "description": "O molde é rudimentar, mas talvez consigamos forjar uma chave com os materiais certos.\r\n\r\nVou manter as brasas acesas enquanto você busca os componentes necessários.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Exatamente o que precisávamos.",
+        "c88f0040d52055a09749": "Você reuniu os materiais?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -572,6 +754,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -601,6 +793,10 @@
     },
     "ruRU": {
       "description": "Форма довольно грубая, но мы сможем изготовить ключ, если собрать подходящие материалы.\r\n\r\nЯ буду поддерживать жар, пока ты их ищешь.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Именно то, что нам было нужно.",
+        "c88f0040d52055a09749": "Вы собрали материалы?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -621,6 +817,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -650,6 +856,10 @@
     },
     "svSE": {
       "description": "Formen är ganska grov, men med rätt material kan vi kanske tillverka en nyckel.\r\n\r\nJag håller glöden het medan du samlar de nödvändiga beståndsdelarna.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Precis vad vi behövde.",
+        "c88f0040d52055a09749": "Har du samlat ihop materialen?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -671,6 +881,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9f4ee80f3ae94251e1a848818c1a73c77f29434375286f24b999e0e33fa87f93"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -701,6 +921,10 @@
     },
     "trTR": {
       "description": "Kalıp oldukça kaba ama doğru malzemelerle bir anahtar yapabiliriz.\n\nSen gereken bileşenleri toplarken ben de közleri sıcak tutacağım.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Tam da ihtiyacımız olan şey.",
+        "c88f0040d52055a09749": "Malzemeleri topladın mı?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -722,6 +946,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9f4ee80f3ae94251e1a848818c1a73c77f29434375286f24b999e0e33fa87f93"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -752,6 +986,10 @@
     },
     "ukUA": {
       "description": "Ливарна форма досить груба, але з потрібних матеріалів ми, можливо, зробимо ключ.\r\n\r\nЯ підтримуватиму жар, поки ти збиратимеш необхідні складники.",
+      "dialogue": {
+        "234eedaa026205a630d7": "Саме те, що нам було потрібно.",
+        "c88f0040d52055a09749": "Ви зібрали матеріали?"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -773,6 +1011,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "9f4ee80f3ae94251e1a848818c1a73c77f29434375286f24b999e0e33fa87f93"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -803,6 +1051,10 @@
     },
     "zhCN": {
       "description": "模子糙了点，不过只要料子对，打把钥匙不成问题。\r\n\r\n去把必要的材料找齐，我这边时刻保持炉火烧旺。",
+      "dialogue": {
+        "234eedaa026205a630d7": "正是我们急需的。",
+        "c88f0040d52055a09749": "货都备齐了吗？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -823,6 +1075,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "zhCN",
+            "sourceSha256": "e746962cd326727400341a776883143f717552fdf78b2df56513e2c0dd6ae382"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -852,6 +1116,10 @@
     },
     "zhTW": {
       "description": "這個模具相當粗糙，但只要有適合的材料，我們應該還是能打造出一把鑰匙。\r\n\r\n在你收集必要的材料時，我會讓這些餘燼保持溫度。",
+      "dialogue": {
+        "234eedaa026205a630d7": "正是我們需要的。",
+        "c88f0040d52055a09749": "你收集好材料了嗎？"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -872,6 +1140,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.234eedaa026205a630d7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c88f0040d52055a09749": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

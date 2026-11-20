@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "63cc7ec72ee199136d5c": {
+      "contributionId": 90820,
+      "lineId": "q:94214:progress",
+      "npcId": 3134,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "a2f17ba7e71991b19c4f": {
+      "contributionId": 90810,
+      "lineId": "q:94214:complete",
+      "npcId": 3134,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Shadow Protection Potion a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Hej, pro příště: na goblina s osobním strážcem se neřítí plnou rychlostí! Nikdy nevíš, co se může stát.",
+        "a2f17ba7e71991b19c4f": "Na druhou stranu ti nemůžu mít za zlé, že chceš na takové naléhavé zakázce vydělat.\n\nTady máš, kamaráde. Díky, žes goblinovi obstaral tolik potřebné lektvary ochrany před stíny. VIDĚL jsi, co se tu děje?"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Shadow Protection Potion",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Shadow Protection Potion. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Hey, til en anden gang: Du skal ikke storme i fuld fart mod en goblin med en livvagt! Man ved aldrig, hvad der kan ske.",
+        "a2f17ba7e71991b19c4f": "På den anden side kan jeg ikke bebrejde dig, at du vil tjene på en hasteordre som denne.\n\nVærsgo, ven. Tak, fordi du skaffede en goblin nogle hårdt tiltrængte skyggebeskyttelseseliksirer. Har du SET, hvad der foregår herude?"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Skyggebeskyttelsesdrik",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Schattenschutztrank und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "He da, das nächste Mal solltet Ihr nicht in vollem Galopp auf einen Goblin mit Leibwächter zustürmen! Man weiß nie, was dabei geschieht.",
+        "a2f17ba7e71991b19c4f": "Andererseits, wenn man einen dringenden Auftrag wie diesen übernimmt, möchte man für seine Mühen selbstverständlich entsprechend entlohnt werden, das kann ich Euch nicht übel nehmen.\n\nHier, für Euch. Danke, dass Ihr einem Goblin zu seinen dringend benötigten Schattenschutztränken verholfen habt. Habt Ihr GESEHEN, was hier draußen so alles passiert?"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Schattenschutztrank",
       "translationMetadata": {
@@ -82,6 +132,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -100,6 +162,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Shadow Protection Potion, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Heyo, for future reference, you shouldn't come charging at full-speed toward a goblin with a bodyguard! You never know what might happen.",
+        "a2f17ba7e71991b19c4f": "Then again, when you're fulfilling a rush order like this one, I can't blame you for wanting to capitalize on your gains.\n\nHere you go, pal. Thanks for hooking a goblin up with some much-needed shadow protection potions. Have you SEEN the stuff that goes on out here?"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Shadow Protection Potion",
       "translationMetadata": {
@@ -108,6 +174,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +203,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa poción de protección contra las Sombras e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Oye, un consejito para el futuro, te recomiendo no acercarte a toda velocidad a un goblin con guardaespaldas. Nunca sabes lo que podría ocurrir.",
+        "a2f17ba7e71991b19c4f": "Aunque, claro, si entregas un pedido urgente como este, es lógico que quieras sacar todo el provecho posible.\n\nAquí tienes, colega. Gracias por proporcionar a un goblin estas pociones de Protección contra las Sombras tan necesarias. ¿Tú has visto la de cosas que se cuecen ahí fuera?"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: poción de Protección contra las Sombras",
       "translationMetadata": {
@@ -133,6 +215,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "esES",
+            "sourceSha256": "465e2293e42792a69e2cf0bbb3e72317741bcea167df82a7c4e6a3ec67123b4f"
           },
           "summary": {
             "origin": "community",
@@ -151,6 +245,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa pociones de Protección contra las Sombras, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "¡Oye! Para la próxima, no corras a toda velocidad hacia un goblin que tiene guardaespaldas. Nunca sabes lo que puede pasar.",
+        "a2f17ba7e71991b19c4f": "Por otro lado, si cumples un pedido urgente como este, no puedo culparte por querer sacar provecho.\n\nAquí tienes, amigo. Gracias por conseguirle a un goblin unas pociones de protección contra las Sombras que necesitaba mucho. ¿Has VISTO lo que pasa por aquí?"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Poción de Protección contra las Sombras",
       "translationMetadata": {
@@ -159,6 +257,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -178,6 +286,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa olpotion:potions;  de protection contre l’ombre, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Hé ! Pour la prochaine fois, évitez de foncer à toute vitesse sur un gobelin accompagné d’un garde du corps ! On ne sait jamais ce qui pourrait arriver.",
+        "a2f17ba7e71991b19c4f": "Cela dit, quand on honore une commande aussi urgente, je ne peux pas vous reprocher de vouloir en tirer profit.\n\nTenez, mon ami. Merci d’avoir procuré à un gobelin les potions de protection contre l’Ombre dont il avait tant besoin. Vous avez VU ce qui se passe par ici ?"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : potion de protection contre l’ombre",
       "translationMetadata": {
@@ -186,6 +298,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -204,11 +326,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Shadow Protection Potion i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Hej, za ubuduće, nemoj punom brzinom jurnuti prema goblinu s tjelohraniteljem! Nikad ne znaš što se može dogoditi.",
+        "a2f17ba7e71991b19c4f": "S druge strane, ne mogu ti zamjeriti što želiš zaraditi na ovako hitnoj narudžbi.\n\nIzvoli, prijatelju. Hvala što si jednom goblinu nabavio prijeko potrebne napitke zaštite od sjene. Jesi li VIDIO što se ovdje događa?"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: napitak zaštite od sjene",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -230,11 +366,25 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede una Pozione di Protezione dall’Ombra e riporta informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che la commissione è trasferibile.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Ehi, per il futuro, non dovreste correre a tutta velocità verso un goblin con una guardia del corpo! Non si sa mai cosa potrebbe succedere.",
+        "a2f17ba7e71991b19c4f": "D’altra parte, se evadete un ordine urgente come questo, non posso biasimarvi se volete guadagnarci.\n\nEcco a voi, amico. Grazie per aver procurato a un goblin le pozioni di protezione dall’Ombra di cui aveva tanto bisogno. Avete VISTO cosa succede da queste parti?"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Pozione di Protezione dall'Ombra",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -256,6 +406,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 암흑 보호 물약 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "이봐, 다음부터는 경호원을 데리고 있는 고블린에게 전속력으로 달려들지 마! 무슨 일이 생길지 모른다고.",
+        "a2f17ba7e71991b19c4f": "하긴, 이렇게 급한 주문을 처리하면서 이득을 챙기고 싶은 마음은 이해해.\n\n자, 여기 있어, 친구. 이 고블린에게 꼭 필요한 암흑 보호 물약을 구해 줘서 고마워. 여기서 무슨 일이 벌어지는지 봤어?"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 암흑 보호 물약",
       "translationMetadata": {
@@ -264,6 +418,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -280,11 +444,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Shadow Protection Potion oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Hej, na przyszłość nie szarżuj z pełną prędkością na goblina z ochroniarzem! Nigdy nie wiadomo, co może się stać.",
+        "a2f17ba7e71991b19c4f": "Z drugiej strony, gdy realizujesz tak pilne zamówienie, nie mogę cię winić za chęć zarobku.\n\nProszę, przyjacielu. Dzięki, że zdobywasz dla goblina tak potrzebne mikstury ochrony przed cieniem. WIDZISZ, co się tu wyprawia?"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: mikstura ochrony przed cieniem",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -306,6 +484,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Poção de Proteção contra a Sombra, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Ei, para a próxima: não saia correndo a toda velocidade na direção de um goblin com guarda-costas! Nunca se sabe o que pode acontecer.",
+        "a2f17ba7e71991b19c4f": "Por outro lado, não posso culpar você por querer lucrar com uma encomenda urgente dessas.\n\nAqui está, camarada. Valeu por arrumar para um goblin umas poções de proteção contra sombra de que ele tanto precisava. Você VIU o que acontece por aqui?"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Poção de Proteção contra a Sombra",
       "translationMetadata": {
@@ -314,6 +496,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -331,6 +523,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa порций зелья защиты от темной магии, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Эй, на будущее: не стоит мчаться сломя голову на гоблина с телохранителем! Никогда не знаешь, что может случиться.",
+        "a2f17ba7e71991b19c4f": "С другой стороны, не стану тебя винить за желание заработать на таком срочном заказе.\n\nДержи, дружище. Спасибо, что раздобыл для гоблина столь необходимые зелья защиты от темной магии. Ты ВИДЕЛ, что здесь творится?"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: зелье защиты от темной магии",
       "translationMetadata": {
@@ -339,6 +535,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -358,11 +564,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Shadow Protection Potion. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Hörru, till nästa gång: rusa inte i full fart mot en goblin med livvakt! Man vet aldrig vad som kan hända.",
+        "a2f17ba7e71991b19c4f": "Å andra sidan kan jag inte klandra dig för att du vill tjäna på en sådan här brådskande beställning.\n\nVarsågod, kompisen. Tack för att du fixade skuggskyddsdryckerna som en goblin verkligen behövde. Har du SETT vad som händer här ute?"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Skuggskyddsbrygd",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -385,11 +605,25 @@
     },
     "trTR": {
       "description": "<Soluk mürekkeple yazılmış notta Shadow Protection Potion isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Hey, bir dahaki sefere koruması olan bir gobline doğru son hızla koşmasan iyi edersin! Ne olacağı hiç belli olmaz.",
+        "a2f17ba7e71991b19c4f": "Öte yandan, böyle acil bir siparişi yerine getirirken kazanç sağlamak istemeni yadırgayamam.\n\nAl bakalım dostum. Bir goblinin çok ihtiyaç duyduğu gölge koruma iksirlerini bulduğun için teşekkürler. Buralarda neler olduğunu GÖRDÜN mü?"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Shadow Protection Potion",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -411,11 +645,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Shadow Protection Potion і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "Гей, на майбутнє: не мчи щодуху на гобліна з охоронцем! Ніколи не знаєш, що може статися.",
+        "a2f17ba7e71991b19c4f": "З іншого боку, не можу тебе звинувачувати за бажання заробити на такому терміновому замовленні.\n\nТримай, друже. Дякую, що дістав для гобліна такі потрібні зілля захисту від тіні. Ти БАЧИВ, що тут коїться?"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Зілля тіньового захисту",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -439,6 +687,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa瓶暗影防护药水，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "嘿，记住了，下次别全速冲向一个带着保镖的地精！天知道会发生什么。",
+        "a2f17ba7e71991b19c4f": "不过，完成这样的急单时，想多赚一点也无可厚非。\n\n给你，伙计。谢谢你帮一个地精弄到了急需的暗影防护药水。你看到这里都发生了些什么吗？"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：暗影防护药水",
       "translationMetadata": {
@@ -447,6 +699,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -464,6 +726,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa個暗影防護藥水，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "63cc7ec72ee199136d5c": "嘿，記住了，下次別全速衝向一個帶著保鑣的哥布林！天知道會發生什麼事。",
+        "a2f17ba7e71991b19c4f": "不過，完成這樣的急單時，想多賺一點也無可厚非。\n\n給你，老兄。謝謝你幫一個哥布林弄到了急需的暗影防護藥水。你看到這裡都發生了什麼事嗎？"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：暗影防護藥水",
       "translationMetadata": {
@@ -472,6 +738,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.63cc7ec72ee199136d5c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a2f17ba7e71991b19c4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

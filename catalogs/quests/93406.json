@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "e450427640a0cf69132c": {
+      "contributionId": 118490,
+      "lineId": "q:93406:complete",
+      "npcId": 11118,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "ef65ad7d388b3667c645": {
+      "contributionId": 118474,
+      "lineId": "q:93406:progress",
+      "npcId": 11118,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Takže potřebuješ odnést zpáteční poštu na Mount Hyjal, jo? Je tu malý háček...\n\nVíš, před pár dny tudy někdo prošel a vybrakoval odchozí poštu! Nejspíš v ní hledal peníze. Utekl někam do kopců na sever odsud a už se nevrátil. Nejspíš ho roztrhal yetti nebo tak něco!\n\nKaždopádně, jestli chceš poštu donést zpátky, budeš si pro ni nejdřív muset dojít!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hej, našel jsi všechnu ztracenou poštu!",
+        "ef65ad7d388b3667c645": "Jak pokračuje hledání ztracené pošty? Vsadím se, že ji mají ti yettiové v nedalekých kopcích!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +41,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +74,10 @@
     },
     "daDK": {
       "description": "Så du skal bringe returposten tilbage til Mount Hyjal, hva'? Der er et lille problem ...\r\n\r\nSer du, nogen kom her forbi og plyndrede den udgående post for blot få dage siden! Ledte sikkert efter penge i posten. Stak af ind i bakkerne et sted nord herfra og kom aldrig tilbage. Sikkert revet i stykker af en yeti eller sådan noget!\r\n\r\nNå, men hvis du vil bringe posten tilbage, må du først hente den!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hey, du fandt al den forsvundne post!",
+        "ef65ad7d388b3667c645": "Hvordan går jagten på den forsvundne post? Jeg vil vædde på, at yetierne i bakkerne her i nærheden har den!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +94,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c3a5e6608ed6bfa2b1e65cbd3f62cb902db75151aa677886a940829864f921bc"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +127,10 @@
     },
     "deDE": {
       "description": "Ihr müsst also die Antwortpost zum Hyjal bringen, eh? Da gibt es ein kleines Problem...\r\n\r\nSeht Ihr, vor ein paar Tagen kam jemand hierher und hat die ausgehende Post geplündert! Wahrscheinlich auf der Suche nach Geld. Er ist irgendwohin in die Hügel nördlich von hier geflohen und nie zurückgekehrt. Vermutlich wurde er von einem Yeti oder so zerrissen!\r\n\r\nWie dem auch sei, wenn Ihr die Post zurückbringen wollt, müsst Ihr sie Euch erst einmal holen!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hey, Ihr habt die ganze verschwundene Post gefunden!",
+        "ef65ad7d388b3667c645": "Wie läuft die Suche nach der vermissten Post? Ich wette, die Yetis in den Hügeln hier in der Nähe haben sie!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +146,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -120,6 +180,10 @@
     },
     "enUS": {
       "description": "So you need to bring the return mail back to Mount Hyjal, eh? There's a little problem...\r\n\r\nY'see, someone came through here and ransacked the outgoing mail just a few days ago! Probably looking for money in the mail. Ran off into the hills somewhere north of here and never came back. Probably got torn apart by a yeti or something!\r\n\r\nAnyway, if you wanna bring back the mail, you're gonna have to go get it first!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hey, you got all the missing mail!",
+        "ef65ad7d388b3667c645": "How goes the search for the missing mail? I bet those yetis in the hills near here have it!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +199,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -159,6 +235,10 @@
     },
     "esES": {
       "description": "Tienes que llevar el correo de vuelta al Monte Hyjal, ¿eh? Bueno, hay un problemilla...\r\n\r\nVerás, alguien pasó por aquí y se apropió de él hace apenas unos días. Seguramente buscaba dinero. Huyó a las colinas al norte de aquí y nunca regresó. ¡Seguro que un yeti lo hizo pedazos o algo así!\r\n\r\nEn fin, si quieres entregar el correo, ¡antes tendrás que recuperarlo!",
+      "dialogue": {
+        "e450427640a0cf69132c": "¡Eh, has encontrado todo el correo perdido!",
+        "ef65ad7d388b3667c645": "¿Cómo va la búsqueda del correo perdido? ¡Apuesto a que lo tienen esos yetis de las colinas cercanas!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +254,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -198,6 +288,10 @@
     },
     "esMX": {
       "description": "Así que tienes que llevar el correo de respuesta de vuelta al Monte Hyjal, ¿eh? Solo hay un pequeño problema...\r\n\r\nVerás, alguien pasó por aquí y se robó el correo saliente hace un par de días. Probablemente buscaba dinero en el correo. Se escapó hacia las colinas, al norte de aquí, y nunca regresó. ¡Seguramente se topó con un yeti, o algo así, y murió!\r\n\r\nEn fin, si quieres recuperar el correo, tendrás que ir a buscarlo.",
+      "dialogue": {
+        "e450427640a0cf69132c": "¡Oye, encontraste todo el correo perdido!",
+        "ef65ad7d388b3667c645": "¿Cómo va la búsqueda del correo perdido? ¡Apuesto a que lo tienen esos yetis de las colinas cercanas!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -213,6 +307,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -237,6 +341,10 @@
     },
     "frFR": {
       "description": "Vous devez rapporter le retour postal au mont Hyjal, c’est bien ça ? Il y a un léger hic…\r\n\r\nFigurez-vous qu’il y a quelques jours de ça, un individu a mis cet endroit à sac et volé le courrier en attente ! Il cherchait sûrement de l’argent dans les lettres. Depuis qu’il a filé vers les collines au nord d’ici, personne ne l’a revu. Un yéti ou une autre bête l’a sûrement déchiqueté !\r\n\r\nEn tout cas, si vous voulez rapporter le courrier, il faudra d’abord aller le récupérer !",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hé, vous avez retrouvé tout le courrier disparu !",
+        "ef65ad7d388b3667c645": "Comment avance la recherche du courrier disparu ? Je parie que les yétis dans les collines voisines l’ont pris !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +360,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -276,6 +394,10 @@
     },
     "hrHR": {
       "description": "Dakle, trebaš odnijeti povratnu poštu natrag na Mount Hyjal? Postoji mali problem...\r\n\r\nVidiš, netko je prošao ovuda i opljačkao odlaznu poštu prije samo nekoliko dana! Vjerojatno je tražio novac u pošti. Pobjegao je negdje u brda sjeverno odavde i nikad se nije vratio. Vjerojatno ga je rastrgao jeti ili nešto slično!\r\n\r\nU svakom slučaju, ako želiš vratiti poštu, prvo ćeš je morati pronaći!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hej, pronašao si svu nestalu poštu!",
+        "ef65ad7d388b3667c645": "Kako napreduje potraga za nestalom poštom? Kladim se da je imaju oni jetiji u obližnjim brdima!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -292,6 +414,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c3a5e6608ed6bfa2b1e65cbd3f62cb902db75151aa677886a940829864f921bc"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -315,6 +447,10 @@
     },
     "itIT": {
       "description": "Dunque devi riportare la posta di ritorno al Monte Hyjal, eh? C'è un piccolo problema...\r\n\r\nVedi, pochi giorni fa qualcuno è passato di qui e ha saccheggiato la posta in partenza! Probabilmente cercava denaro nelle lettere. È fuggito sulle colline da qualche parte a nord di qui e non è più tornato. Probabilmente un yeti o qualcosa del genere lo ha fatto a pezzi!\r\n\r\nComunque, se vuoi riportare la posta, dovrai prima andare a prenderla!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Ehi, hai trovato tutta la posta smarrita!",
+        "ef65ad7d388b3667c645": "Come procede la ricerca della posta scomparsa? Scommetto che ce l’hanno quegli yeti sulle colline qui vicino!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -331,6 +467,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c3a5e6608ed6bfa2b1e65cbd3f62cb902db75151aa677886a940829864f921bc"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -354,6 +500,10 @@
     },
     "koKR": {
       "description": "그러니까 답신 우편을 하이잘 산으로 다시 가져가야 한다는 거죠? 실은 작은 문제가 하나 있는데요...\r\n\r\n며칠 전에 누군가 이곳을 지나가면서 발송 우편을 몽땅 뒤졌거든요! 아마 편지에 든 돈을 찾으려던 모양이에요. 북쪽 어딘가 언덕으로 달아난 뒤 돌아오지 않았죠. 설인 같은 놈한테 갈기갈기 찢겼을걸요!\r\n\r\n어쨌든 우편을 돌려보내려면 찾는 게 우선이에요!",
+      "dialogue": {
+        "e450427640a0cf69132c": "이봐, 사라진 우편물을 전부 찾았구나!",
+        "ef65ad7d388b3667c645": "잃어버린 우편물은 찾고 있나요? 분명 근처 언덕에 있는 설인들이 가지고 있을 거예요!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -369,6 +519,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -393,6 +553,10 @@
     },
     "plPL": {
       "description": "A więc musisz zabrać pocztę zwrotną na górę Hyjal? Jest mały problem...\r\n\r\nWidzisz, ktoś przeszedł tędy kilka dni temu i splądrował pocztę wychodzącą! Pewnie szukał w niej pieniędzy. Uciekł gdzieś na wzgórza na północ stąd i nie wrócił. Pewnie rozszarpał go yeti czy coś!\r\n\r\nTak czy inaczej, jeśli chcesz zabrać pocztę, najpierw trzeba ją zdobyć!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hej, udało ci się znaleźć całą zaginioną pocztę!",
+        "ef65ad7d388b3667c645": "Jak idą poszukiwania zaginionej poczty? Założę się, że mają ją yeti z pobliskich wzgórz!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -409,6 +573,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c3a5e6608ed6bfa2b1e65cbd3f62cb902db75151aa677886a940829864f921bc"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -432,6 +606,10 @@
     },
     "ptBR": {
       "description": "Você também precisa levar correspondência pro Monte Hyjal, né? Só tem um probleminha...\r\n\r\nSeguinte: uns dias atrás, alguém invadiu aqui e fez a limpa na correspondência a enviar! Devia estar atrás de dinheiro. A pessoa se escafedeu pra algum lugar lá das colinas a norte daqui e não voltou mais. Certeza que um yeti fez picadinho!\r\n\r\nEnfim: pra levar a correspondência, você vai ter que ir lá buscar!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Ei, você encontrou toda a correspondência perdida!",
+        "ef65ad7d388b3667c645": "Como vai a busca pela correspondência desaparecida? Aposto que os yetis das colinas aqui perto estão com ela!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -447,6 +625,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -471,6 +659,10 @@
     },
     "ruRU": {
       "description": "Значит, тебе нужно забрать почту отсюда и доставить на гору Хиджал? С этим есть проблемка...\r\n\r\nНесколько дней назад кто-то заявился сюда и обчистил хранилище с посылками! Видать, искал деньги. Негодник скрылся где-то в холмах на севере отсюда и так и не вернулся. Может, его сожрали йети или еще кто!\r\n\r\nВ общем, если тебе надо доставить почту, сначала придется ее найти!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Эй, ты нашел всю пропавшую почту!",
+        "ef65ad7d388b3667c645": "Как продвигаются поиски пропавшей почты? Спорю, она у йети в здешних холмах!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -486,6 +678,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -510,6 +712,10 @@
     },
     "svSE": {
       "description": "Så du behöver ta med returposten tillbaka till Mount Hyjal, va? Det finns ett litet problem...\r\n\r\nFörstår du, någon kom förbi här och plundrade den utgående posten för bara några dagar sedan! Letade nog efter pengar i posten. Sprang iväg upp i kullarna någonstans norr om här och kom aldrig tillbaka. Blev nog söndersliten av en yeti eller nåt!\r\n\r\nHur som helst, om du vill ta tillbaka posten måste du först gå och hämta den!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hej, du hittade all den försvunna posten!",
+        "ef65ad7d388b3667c645": "Hur går sökandet efter den försvunna posten? Jag slår vad om att yetierna i kullarna här i närheten har den!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -526,6 +732,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c3a5e6608ed6bfa2b1e65cbd3f62cb902db75151aa677886a940829864f921bc"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -549,6 +765,10 @@
     },
     "trTR": {
       "description": "Demek dönüş postasını Mount Hyjal'a götürmen gerekiyor? Küçük bir sorun var...\n\nAnlayacağın, birkaç gün önce biri buraya gelip giden postayı yağmaladı! Muhtemelen mektuplarda para arıyordu. Buranın kuzeyindeki tepelere bir yere kaçtı, bir daha dönmedi. Muhtemelen bir yeti falan parçaladı!\n\nNeyse, postayı geri götürmek istiyorsan önce gidip alman gerekecek!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Hey, kayıp postaların hepsini buldun!",
+        "ef65ad7d388b3667c645": "Kayıp postayı arama işi nasıl gidiyor? Bahse girerim buralardaki tepelerde yaşayan yetiler onu almıştır!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -565,6 +785,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c3a5e6608ed6bfa2b1e65cbd3f62cb902db75151aa677886a940829864f921bc"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -588,6 +818,10 @@
     },
     "ukUA": {
       "description": "То тобі треба віднести зворотну пошту на гору Гіджал, еге ж? Є маленька проблема...\r\n\r\nРозумієш, кілька днів тому хтось прийшов сюди й перерив вихідну пошту! Певно, шукав у листах гроші. Утік кудись у пагорби на північ звідси й не повернувся. Мабуть, його роздер єті чи ще хтось!\r\n\r\nХай там як, якщо хочеш віднести пошту, спершу доведеться її дістати!",
+      "dialogue": {
+        "e450427640a0cf69132c": "Гей, ти знайшов усю зниклу пошту!",
+        "ef65ad7d388b3667c645": "Як просуваються пошуки зниклої пошти? Б’юся об заклад, вона в єті на тутешніх пагорбах!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -604,6 +838,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "c3a5e6608ed6bfa2b1e65cbd3f62cb902db75151aa677886a940829864f921bc"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -627,6 +871,10 @@
     },
     "zhCN": {
       "description": "这么说，你需要把回信带回海加尔山，对吧？这里有个小麻烦……\r\n\r\n你看，就在几天前，有人经过这里并洗劫了将要寄出的信件！可能是在信里找钱吧。那家伙跑进了北边某处的山丘，就再也没回来。八成是被雪人什么的给撕成碎片了！\r\n\r\n不管怎么说，要是你想把信件带回去，你得先去把它们找回来！",
+      "dialogue": {
+        "e450427640a0cf69132c": "嘿，你找回了所有丢失的邮件！",
+        "ef65ad7d388b3667c645": "失踪的邮件找得怎么样了？我敢打赌，一定是附近山丘上的雪怪拿走了！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -642,6 +890,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -666,6 +924,10 @@
     },
     "zhTW": {
       "description": "所以你需要把回信帶回海加爾山，對吧？只是有個小問題…\r\n\r\n幾天前有人路過這裡，把準備寄出的郵件洗劫了一空！大概是想在郵件裡找錢吧。那傢伙隨後逃進了這裡北邊的山丘裡，就再也沒回來過。大概是被雪人還是什麼東西給撕成碎片了！\r\n\r\n總之，如果你想把那些郵件帶回去，你得先自己去把它們找回來！",
+      "dialogue": {
+        "e450427640a0cf69132c": "嘿，你找回了所有遺失的郵件！",
+        "ef65ad7d388b3667c645": "失蹤的郵件找得怎麼樣了？我敢打賭，一定是附近山丘上的雪怪拿走了！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -681,6 +943,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.e450427640a0cf69132c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ef65ad7d388b3667c645": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

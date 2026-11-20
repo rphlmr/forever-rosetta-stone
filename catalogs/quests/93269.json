@@ -1,8 +1,30 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "0149be3767e9c2cc87bd": {
+      "contributionId": 118509,
+      "lineId": "q:93269:complete",
+      "npcId": 243815,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "86785a2678396bc9da23": {
+      "contributionId": 118494,
+      "lineId": "q:93269:progress",
+      "npcId": 243815,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Teď, když máš všechnu poštu zpátky, můžeš ji vzít s sebou na Mount Hyjal!\n\nTo by neměl být problém, ne?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ach, vracíte se s poštou ze zahraničí! Postarám se, aby se dostala ke správným lidem. Moc vám děkuji.\n\nVšichni jsme tu nahoře tak zaměstnaní problémy, že na všední záležitosti nikomu nezbývá čas!",
+        "86785a2678396bc9da23": "Už jste dokončili cestu?"
+      },
       "summary": "Odnes poštu z Everlooku nahoru k hostinské Sebelii na vrchol Mount Hyjal.",
       "title": "Na vrcholu stanoviště",
       "translationMetadata": {
@@ -12,6 +34,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -30,6 +62,10 @@
     },
     "daDK": {
       "description": "Nu hvor du har fundet al posten, kan du tage det hele med tilbage til Mount Hyjal!\r\n\r\nDet burde ikke være noget problem, vel?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Åh, I er vendt tilbage med post langvejsfra! Jeg sørger for, at den når frem til de rette personer. Mange tak.\n\nVi har alle så travlt med problemerne heroppe, at ingen har tid til de dagligdags detaljer!",
+        "86785a2678396bc9da23": "Har I afsluttet turen?"
+      },
       "summary": "Tag posten fra Everlook op til krovært Sebelia på toppen af Hyjal-bjerget.",
       "title": "På toppen af posten",
       "translationMetadata": {
@@ -39,6 +75,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "209abb8bf1407e4aa25de03728a47f5522b0d21627f129c11e56910d03c8f21c"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -57,6 +103,10 @@
     },
     "deDE": {
       "description": "Nachdem Ihr nun die gesamte Post zurückgeholt habt, könnt Ihr sie allesamt mit zurück zum Hyjal nehmen!\r\n\r\nSollte kein Problem sein, oder?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ah, Ihr seid mit Post aus der Ferne zurückgekehrt! Ich werde dafür sorgen, dass sie die richtigen Leute erreicht. Vielen Dank.\n\nWir sind hier oben alle so sehr mit Problemen beschäftigt, dass niemand Zeit für die alltäglichen Kleinigkeiten hat!",
+        "86785a2678396bc9da23": "Habt Ihr die Reise abgeschlossen?"
+      },
       "summary": "Bringt die Post von Everlook hoch zu Gastwirt Sebelia auf dem Gipfel von Hyjal.",
       "title": "Spitzen-Post",
       "translationMetadata": {
@@ -65,6 +115,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -82,6 +142,10 @@
     },
     "enUS": {
       "description": "Now that you've recovered all the mail, you can take it all back with you to Mount Hyjal!\r\n\r\nShould be no problem, right?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ah, you've returned with mail from abroad! I'll make sure this is distributed to the correct people. Thank you so much.\n\nWe've all been so busy with problems up here that nobody has time for the mundane details!",
+        "86785a2678396bc9da23": "Have you finished the trip?"
+      },
       "summary": "Take mail from Everlook up to Innkeeper Sebelia on the summit of Mount Hyjal.",
       "title": "Top of the Post",
       "translationMetadata": {
@@ -90,6 +154,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -107,6 +183,10 @@
     },
     "esES": {
       "description": "Ahora que has recuperado el correo, ¡ya te lo puedes llevar al Monte Hyjal!\r\n\r\nSeguro que no te supone un problema, ¿verdad?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "¡Ah, habéis vuelto con correo de tierras lejanas! Me aseguraré de que llegue a las personas indicadas. Muchas gracias.\n\n¡Todos estamos tan ocupados con los problemas de aquí arriba que nadie tiene tiempo para los detalles cotidianos!",
+        "86785a2678396bc9da23": "¿Habéis terminado el viaje?"
+      },
       "summary": "Take mail from Everlook up to Innkeeper Sebelia on the summit of Mount Hyjal.",
       "title": "Responder al correo",
       "translationMetadata": {
@@ -115,6 +195,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -132,6 +222,10 @@
     },
     "esMX": {
       "description": "Ahora que ya recuperaste toda la correspondencia, ¡puedes llevarla de regreso al Monte Hyjal!\r\n\r\nNo debería ser un problema, ¿verdad?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "¡Ah, regresaste con correo de tierras lejanas! Me aseguraré de que llegue a las personas indicadas. Muchas gracias.\n\n¡Todos estamos tan ocupados con los problemas de aquí arriba que nadie tiene tiempo para los detalles cotidianos!",
+        "86785a2678396bc9da23": "¿Ya terminaste el viaje?"
+      },
       "summary": "Take mail from Everlook up to Innkeeper Sebelia on the summit of Mount Hyjal.",
       "title": "Llegó el correo",
       "translationMetadata": {
@@ -140,6 +234,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -157,6 +261,10 @@
     },
     "frFR": {
       "description": "Maintenant que vous avez récupéré tout le courrier, vous pouvez le rapporter au mont Hyjal !\r\n\r\nIl n’y a rien de plus simple, n’est-ce pas ?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ah, vous voilà de retour avec du courrier venu de loin ! Je veillerai à ce qu’il parvienne aux bonnes personnes. Merci beaucoup.\n\nNous sommes tous si occupés par les problèmes d’ici que personne n’a le temps de s’occuper des affaires courantes !",
+        "86785a2678396bc9da23": "Avez-vous terminé votre voyage ?"
+      },
       "summary": "Apportez le courrier de Long-Guet à l’aubergiste Sebelia au sommet du mont Hyjal.",
       "title": "Des lettres au sommet",
       "translationMetadata": {
@@ -165,6 +273,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -182,6 +300,10 @@
     },
     "hrHR": {
       "description": "Sad kad si pronašao svu poštu, možeš je svu odnijeti natrag na Mount Hyjal!\r\n\r\nNe bi trebao biti problem, zar ne?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ah, vratili ste se s poštom iz dalekih krajeva! Pobrinut ću se da stigne pravim ljudima. Puno vam hvala.\n\nSvi smo ovdje toliko zaokupljeni problemima da nitko nema vremena za svakodnevne sitnice!",
+        "86785a2678396bc9da23": "Jeste li završili putovanje?"
+      },
       "summary": "Odnesi poštu iz Everlooka gostioničarki Sebeliji na vrhu planine Hyjal.",
       "title": "Vrh postaje",
       "translationMetadata": {
@@ -191,6 +313,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "209abb8bf1407e4aa25de03728a47f5522b0d21627f129c11e56910d03c8f21c"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -209,6 +341,10 @@
     },
     "itIT": {
       "description": "Ora che hai recuperato tutta la posta, puoi riportarla con te al Monte Hyjal!\r\n\r\nNon dovrebbe essere un problema, giusto?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ah, sei tornato con la posta da fuori! Mi assicurerò che arrivi alle persone giuste. Grazie mille.\n\nSiamo tutti così presi dai problemi quassù che nessuno ha tempo per le faccende di tutti i giorni!",
+        "86785a2678396bc9da23": "Hai terminato il viaggio?"
+      },
       "summary": "Porta la posta di Everlook alla Locandiera Sebelia sulla vetta del Monte Hyjal.",
       "title": "La posta in cima",
       "translationMetadata": {
@@ -218,6 +354,17 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "209abb8bf1407e4aa25de03728a47f5522b0d21627f129c11e56910d03c8f21c"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -236,6 +383,10 @@
     },
     "koKR": {
       "description": "우편을 모두 되찾았으니, 그대로 하이잘 산까지 한 번에 가져가시면 돼요!\r\n\r\n문제없겠죠?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "아, 먼 곳에서 온 우편물을 가지고 돌아오셨군요! 알맞은 사람들에게 전달하겠습니다. 정말 고맙습니다.\n\n여기서는 모두가 문제를 해결하느라 바빠서 일상적인 일들을 돌볼 시간이 없답니다!",
+        "86785a2678396bc9da23": "여정을 마치셨나요?"
+      },
       "summary": "눈망루 마을에서 우편을 받아 하이잘 산 정상에 있는 여관주인 세벨리아에게 전달해야 합니다.",
       "title": "우편의 정상",
       "translationMetadata": {
@@ -244,6 +395,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -261,6 +422,10 @@
     },
     "plPL": {
       "description": "Skoro udaje ci się odzyskać całą pocztę, możesz zabrać ją z powrotem na górę Hyjal!\r\n\r\nNie powinno być problemu, prawda?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ach, wracacie z pocztą z dalekich stron! Dopilnuję, by trafiła do właściwych osób. Bardzo dziękuję.\n\nWszyscy jesteśmy tu tak zajęci problemami, że nikt nie ma czasu na codzienne sprawy!",
+        "86785a2678396bc9da23": "Czy podróż dobiegła już końca?"
+      },
       "summary": "Zanieś pocztę z Everlook do karczmarki Sebelii na szczycie Góry Hyjal.",
       "title": "Na szczyt z pocztą",
       "translationMetadata": {
@@ -270,6 +435,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "209abb8bf1407e4aa25de03728a47f5522b0d21627f129c11e56910d03c8f21c"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -288,6 +463,10 @@
     },
     "ptBR": {
       "description": "Agora que a correspondência tá recuperada, você pode levar tudo pro Monte Hyjal sem enrosco, né?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ah, você voltou com correspondência de terras distantes! Vou garantir que ela chegue às pessoas certas. Muito obrigada.\n\nEstamos todos tão ocupados com os problemas aqui em cima que ninguém tem tempo para os detalhes do dia a dia!",
+        "86785a2678396bc9da23": "Você terminou a viagem?"
+      },
       "summary": "Take mail from Everlook up to Innkeeper Sebelia on the summit of Mount Hyjal.",
       "title": "O posto mais alto",
       "translationMetadata": {
@@ -296,6 +475,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -313,6 +502,10 @@
     },
     "ruRU": {
       "description": "Тебе удалось вернуть всю почту – теперь доставь ее на гору Хиджал!\r\n\r\nЛегко и просто, да?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ах, вы вернулись с почтой из дальних краев! Я прослежу, чтобы она попала к нужным людям. Большое спасибо.\n\nМы все здесь так заняты проблемами, что ни у кого нет времени на повседневные мелочи!",
+        "86785a2678396bc9da23": "Вы завершили путешествие?"
+      },
       "summary": "Доставьте почту из Круговзора хозяйке таверны Себелии на вершину горы Хиджал.",
       "title": "Доставка по высшему разряду",
       "translationMetadata": {
@@ -321,6 +514,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -338,6 +541,10 @@
     },
     "svSE": {
       "description": "Nu när du har återfunnit all post kan du ta med dig allt tillbaka till Mount Hyjal!\r\n\r\nDet borde väl inte vara något problem?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Åh, ni har återvänt med post från fjärran! Jag ska se till att den når rätt personer. Tack så mycket.\n\nVi är alla så upptagna med problemen här uppe att ingen har tid med vardagliga detaljer!",
+        "86785a2678396bc9da23": "Har ni avslutat resan?"
+      },
       "summary": "Ta posten från Everlook till värdshusvärden Sebelia på toppen av berget Hyjal.",
       "title": "Post till toppen",
       "translationMetadata": {
@@ -347,6 +554,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "209abb8bf1407e4aa25de03728a47f5522b0d21627f129c11e56910d03c8f21c"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -365,6 +582,10 @@
     },
     "trTR": {
       "description": "Bütün postaları geri aldığına göre hepsini yanında Hyjal Dağı'na götürebilirsin!\n\nSorun olmaz, değil mi?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "Ah, uzak diyarlardan postayla dönmüşsün! Bunların doğru kişilere ulaştığından emin olacağım. Çok teşekkür ederim.\n\nBuradaki sorunlarla hepimiz öyle meşgulüz ki sıradan ayrıntılara kimsenin vakti kalmıyor!",
+        "86785a2678396bc9da23": "Yolculuğu tamamladın mı?"
+      },
       "summary": "Everlook'tan gelen postaları Hyjal Dağı'nın zirvesindeki Hancı Sebelia'ya götür.",
       "title": "Karakolun Tepesi",
       "translationMetadata": {
@@ -374,6 +595,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "209abb8bf1407e4aa25de03728a47f5522b0d21627f129c11e56910d03c8f21c"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -392,6 +623,10 @@
     },
     "ukUA": {
       "description": "Тепер, коли ти повернув усю пошту, можеш забрати її із собою на гору Гіджал!\r\n\r\nЦе ж не проблема, правда?",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "О, ви повернулися з поштою з далеких країв! Я подбаю, щоб вона потрапила до потрібних людей. Щиро дякую.\n\nМи всі тут так зайняті проблемами, що ніхто не має часу на повсякденні дрібниці!",
+        "86785a2678396bc9da23": "Ви завершили подорож?"
+      },
       "summary": "Віднесіть пошту із Завшегляду шинкарці Sebelia на вершині гори Гіджал.",
       "title": "Пошта на вершину",
       "translationMetadata": {
@@ -401,6 +636,16 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "209abb8bf1407e4aa25de03728a47f5522b0d21627f129c11e56910d03c8f21c"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -419,6 +664,10 @@
     },
     "zhCN": {
       "description": "既然你已经找回了所有的信件，就可以将其全部带回海加尔山了！\r\n\r\n应该没问题吧？",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "啊，你带着远方的邮件回来了！我会确保它们送到正确的人手中。非常感谢。\n\n我们都忙着处理这里的问题，没人有时间顾及这些日常琐事！",
+        "86785a2678396bc9da23": "你完成旅程了吗？"
+      },
       "summary": "将信件从永望镇带给海加尔山顶的旅店老板塞贝利亚。",
       "title": "巅峰邮递",
       "translationMetadata": {
@@ -427,6 +676,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -444,6 +703,10 @@
     },
     "zhTW": {
       "description": "既然你已經取回所有郵件，你可以把它們帶回海加爾山了！\r\n\r\n這應該不是什麼問題，對吧？",
+      "dialogue": {
+        "0149be3767e9c2cc87bd": "啊，你帶著遠方的郵件回來了！我會確保它們送到正確的人手中。非常感謝。\n\n我們都忙著處理這裡的問題，沒人有時間顧及這些日常瑣事！",
+        "86785a2678396bc9da23": "你完成旅程了嗎？"
+      },
       "summary": "Take mail from Everlook up to Innkeeper Sebelia on the summit of Mount Hyjal.",
       "title": "巔峰郵遞",
       "translationMetadata": {
@@ -452,6 +715,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.0149be3767e9c2cc87bd": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.86785a2678396bc9da23": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

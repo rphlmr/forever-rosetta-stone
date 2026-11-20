@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "d69cd8a98c537f445a0a": {
+      "contributionId": 111560,
+      "lineId": "q:94249:progress",
+      "npcId": 257316,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    },
+    "fb0bc3ed6a4f8db090b3": {
+      "contributionId": 111546,
+      "lineId": "q:94249:complete",
+      "npcId": 257316,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Azure Silk Hood a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "ÁÁÁÁ! Aha, to jen $r.\n\nAhoj, $r!",
+        "fb0bc3ed6a4f8db090b3": "To kapuce, co já objed-objednal!\n\nJá zapomněl, proč ji chtěl, ale stejně vezmu.\n\nTady, vezmi lesklou minci. Vypadla ze slizové příšery. Spousta a spousta!"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Azure Silk Hood",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Azure Silk Hood. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AAAAH! Nå, det bare $r.\n\nHej, $r!",
+        "fb0bc3ed6a4f8db090b3": "Det hætten, mig bestil-bestilte!\n\nMig glemt hvorfor ville have den, men mig tager den alligevel.\n\nHer, tag skinnende mønt. Den faldt ud af slimmonster. Mange, mange af dem!"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Azurblå silkehætte",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa azurblauen Seidenkapuze und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AAAAH! Oh, nur $r.\n\nHallo, $r!",
+        "fb0bc3ed6a4f8db090b3": "Das is' die Kapuze, die ich bestellt hab!\n\nIch hab vergessen, wieso ich die überhaupt wollte, aber ich nehm sie trotzdem.\n\nHier, nehmt glänzende Münze. Is' aus 'nem Schleimmonster rausgefallen. Ganz viele davon!"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Azurblaue Seidenkapuze",
       "translationMetadata": {
@@ -82,6 +132,17 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -100,6 +161,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Azure Silk Hood, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AHHHH! Oh, it just a $r.\n\nHi $r!",
+        "fb0bc3ed6a4f8db090b3": "It da hood me order-er-ed!\n\nMe forgot why wanted in first place, but me take anyway.\n\nHere, take shiny coin. It fell out of slime monster. Lots and lots of them!"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Azure Silk Hood",
       "translationMetadata": {
@@ -108,6 +173,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -125,6 +202,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa caperuza de seda azur e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "¡AAAH! Ah, solo $r.\n\n¡Hola, $r!",
+        "fb0bc3ed6a4f8db090b3": "¡Esa capucha que yo pedi-pedí!\n\nYo olvidar por qué quería, pero llevar igual.\n\nToma moneda brillante. Caer de monstruo de babosa. ¡Muchas, muchísimas!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: caperuza de seda azur",
       "translationMetadata": {
@@ -133,6 +214,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -151,6 +242,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa caperuza de seda azur, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "¡AAAH! Ah, solo $r.\n\n¡Hola, $r!",
+        "fb0bc3ed6a4f8db090b3": "¡Esa capucha que yo pedi-pedí!\n\nYo olvidar por qué quería, pero llevar igual.\n\nToma moneda brillante. Caer de monstruo de babosa. ¡Muchas, muchísimas!"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Caperuza de seda azur",
       "translationMetadata": {
@@ -159,6 +254,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -176,6 +281,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa olchaperon azur en soie:chaperons azurs en soie;, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AAAAH ! Oh, juste $r.\n\nBonjour, $r !",
+        "fb0bc3ed6a4f8db090b3": "C’est la capuche que moi comman-commandée !\n\nMoi oublié pourquoi moi voulais, mais moi prends quand même.\n\nTiens, prends pièce brillante. Elle tombée du monstre de vase. Beaucoup, beaucoup de pièces !"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : chaperon azur en soie",
       "translationMetadata": {
@@ -184,6 +293,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -202,11 +321,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Azure Silk Hood i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AAAAH! Oh, samo $r.\n\nBok, $r!",
+        "fb0bc3ed6a4f8db090b3": "To kapuljača koju ja naru-naručio!\n\nJa zaboravio zašto htio, ali svejedno uzeti.\n\nEvo, uzmi sjajni novčić. Ispao iz sluzavog čudovišta. Puno, puno njih!"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: azurna svilena kapuljača",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -228,11 +361,25 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede Seta azzurra: cappuccio e riporta informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che la commissione è trasferibile.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AAAAH! Oh, solo $r.\n\nCiao, $r!",
+        "fb0bc3ed6a4f8db090b3": "È cappuccio che io ordi-ordinato!\n\nIo dimenticato perché lo volevo, ma prendo lo stesso.\n\nTieni, prendi moneta luccicante. Caduta da mostro di melma. Tante, tantissime!"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Cappuccio di Seta Azzurra",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -254,6 +401,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 감청색 비단 두건 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "으아아아! 아, 그냥 $r.\n\n안녕, $r!",
+        "fb0bc3ed6a4f8db090b3": "내가 주무, 주문한 두건이다!\n\n왜 갖고 싶었는지 잊어버렸지만 그래도 받겠다.\n\n자, 반짝이는 동전 받아라. 수액괴물에게서 떨어졌다. 아주 아주 많이!"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 감청색 비단 두건",
       "translationMetadata": {
@@ -262,6 +413,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -280,11 +441,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Azure Silk Hood oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AAAAA! Och, to tylko $r.\n\nCześć, $r!",
+        "fb0bc3ed6a4f8db090b3": "To kaptur, który ja zamó-zamówił!\n\nJa zapomniał, czemu chciał, ale i tak wezmę.\n\nMasz, weź błyszczącą monetę. Wypadła ze śluzowego potwora. Dużo, bardzo dużo!"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: lazurowy jedwabny kaptur",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -306,6 +481,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Capuz de Seda Lazúli, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AHHHH! Ah, só um $r.\n\nOi, $r!",
+        "fb0bc3ed6a4f8db090b3": "É o capuz que eu pedir!\n\nEu esquece por que quis, mas eu aceita mesmo assim.\n\nAqui, toma moeda brilhante. Caiu de monstro de visgo. Muitas, muitas dessas!"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Capuz de Seda Lazúli",
       "translationMetadata": {
@@ -314,6 +493,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "a05a8331cfcd85faca30ef2f0b397858e954fe0887550575c40dcb6e3c4bea4c"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "ptBR",
+            "sourceSha256": "a05a8331cfcd85faca30ef2f0b397858e954fe0887550575c40dcb6e3c4bea4c"
           },
           "summary": {
             "origin": "community",
@@ -331,6 +522,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa лазурных шелковых капюшонов, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "АААА! О, всего лишь $r.\n\nПривет, $r!",
+        "fb0bc3ed6a4f8db090b3": "Это капюшон, который я зака-заказал!\n\nЯ забыл, зачем хотел, но все равно возьму.\n\nНа, бери блестящую монету. Выпала из слизистого чудища. Много-много их!"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: лазурный шелковый капюшон",
       "translationMetadata": {
@@ -339,6 +534,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -357,11 +562,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Azure Silk Hood. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AAAAH! Åh, bara $r.\n\nHej, $r!",
+        "fb0bc3ed6a4f8db090b3": "Det huvan jag bestä-beställde!\n\nJag glömt varför ville ha, men tar ändå.\n\nHär, ta glänsande mynt. Föll ur slemmonster. Många, många sådana!"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Azurblå sidenhuva",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -384,11 +603,25 @@
     },
     "trTR": {
       "description": "<Soluk mürekkeple yazılmış notta Azure Silk Hood isteniyor; teslimat yeri ve ödeme hakkında da bilgi veriliyor. Alt kısmında bu sipariş belgesinin devredilebilir olduğu yazıyor.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "AAAAH! Aa, sadece $r.\n\nMerhaba, $r!",
+        "fb0bc3ed6a4f8db090b3": "Bu benim sipariş ver-verdiğim başlık!\n\nNeden istediğimi unuttum ama yine de alırım.\n\nAl, parlak para. Balçık canavarından düştü. Çok çok fazla!"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Azure Silk Hood",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -410,11 +643,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Azure Silk Hood і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "АААА! О, це лише $r.\n\nПривіт, $r!",
+        "fb0bc3ed6a4f8db090b3": "Це каптур, який я замо-замовив!\n\nЯ забув, навіщо хотів, але все одно візьму.\n\nОсь, бери блискучу монету. Випала зі слизького чудовиська. Багато-багато їх!"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Лазуровий шовковий капюшон",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -438,6 +685,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa顶碧蓝丝质头巾，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "啊啊啊啊！哦，只是$r。\n\n你好，$r！",
+        "fb0bc3ed6a4f8db090b3": "这是俺订、订的兜帽！\n\n俺忘了为啥想要，不过还是收下。\n\n给，拿亮闪闪的硬币。它从软泥怪身上掉出来。好多好多呢！"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：碧蓝丝质头巾",
       "translationMetadata": {
@@ -446,6 +697,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -463,6 +724,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa個蒼藍絲質兜帽，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "d69cd8a98c537f445a0a": "啊啊啊啊！喔，只是$r。\n\n你好，$r！",
+        "fb0bc3ed6a4f8db090b3": "這是俺訂、訂的兜帽！\n\n俺忘了為啥想要，不過還是收下。\n\n給，拿亮閃閃的硬幣。它從軟泥怪身上掉出來。好多好多呢！"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：蒼藍絲質兜帽",
       "translationMetadata": {
@@ -471,6 +736,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.d69cd8a98c537f445a0a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb0bc3ed6a4f8db090b3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

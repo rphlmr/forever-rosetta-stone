@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "086168e0e1c8cc5f2680": {
+      "contributionId": 110630,
+      "lineId": "q:94259:complete",
+      "npcId": 10922,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "56440b6cb1ce079292ed": {
+      "contributionId": 110629,
+      "lineId": "q:94259:progress",
+      "npcId": 10922,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Nature Protection Potion a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Tady ve Felwoodu tyto lektvary zoufale potřebujeme. Působí tu sice mnoho zhoubných sil, ale i samotná příroda dokáže při vyprovokování prudce zaútočit.\n\nMám podezření, že naše zásoby nedoplňuješ naposledy, $N. Mnohokrát ti děkuji za pomoc.",
+        "56440b6cb1ce079292ed": "Přišel jsi pomoci Smaragdovému kruhu?"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Nature Protection Potion",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Nature Protection Potion. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Vi har desperat brug for flere af disse eliksirer her i Felwood. Selvom mange fordærvende kræfter er på spil her, kan naturen selv også slå voldsomt fra sig, når den provokeres.\n\nJeg har på fornemmelsen, at det ikke bliver sidste gang, du fylder vores lager op, $N. Mange tak for hjælpen.",
+        "56440b6cb1ce079292ed": "Er du kommet for at hjælpe Smaragdcirklen?"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Naturbeskyttelsesdrik",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Naturschutztrank und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Wir brauchen hier in Teufelswald dringend mehr von diesen Tränken. Zwar sind hier viele verderbende Mächte am Werk, doch auch die Natur selbst kann heftig zurückschlagen, wenn man sie reizt.\n\nIch vermute, das wird nicht das letzte Mal sein, dass Ihr unsere Vorräte auffüllt, $N. Habt vielen Dank für Eure Hilfe.",
+        "56440b6cb1ce079292ed": "Seid Ihr gekommen, um dem Smaragdzirkel zu helfen?"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Naturschutztrank",
       "translationMetadata": {
@@ -82,6 +132,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -98,6 +158,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Nature Protection Potion, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "We are in dire need of more of these potions here in Felwood. Though there are many corruptive forces at play here, nature itself is known to lash out violently when provoked.\n\nI suspect this will not be the last time you replenish our supply, $N. Thank you kindly for your assistance.",
+        "56440b6cb1ce079292ed": "Have you come to aid the Emerald Circle?"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Nature Protection Potion",
       "translationMetadata": {
@@ -106,6 +170,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -123,6 +199,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa poción de protección contra la Naturaleza e incluye detalles sobre la ubicación de entrega y el pago. Al final, hay un texto que indica que esta libranza es transferible>.",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Necesitamos con urgencia más de estas pociones aquí, en Frondavil. Aunque aquí actúan muchas fuerzas corruptoras, la propia naturaleza también puede reaccionar con violencia cuando se la provoca.\n\nSospecho que esta no será la última vez que repongas nuestras reservas, $N. Muchas gracias por tu ayuda.",
+        "56440b6cb1ce079292ed": "¿Has venido a ayudar al Círculo Esmeralda?"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: poción de protección contra la Naturaleza",
       "translationMetadata": {
@@ -131,6 +211,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -149,6 +239,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa pociones de Protección contra la Naturaleza, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Necesitamos con urgencia más de estas pociones aquí, en Frondavil. Aunque aquí actúan muchas fuerzas corruptoras, la propia naturaleza también puede reaccionar con violencia cuando se la provoca.\n\nSospecho que esta no será la última vez que repongas nuestras reservas, $N. Muchas gracias por tu ayuda.",
+        "56440b6cb1ce079292ed": "¿Viniste a ayudar al Círculo Esmeralda?"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: poción de Protección contra la Naturaleza",
       "translationMetadata": {
@@ -157,6 +251,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -174,6 +278,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa olpotion:potions;  de protection contre la nature, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Nous avons grand besoin de ces potions ici, à Gangrebois. Même si de nombreuses forces corruptrices sont à l’œuvre, la nature elle-même peut réagir violemment lorsqu’on la provoque.\n\nJe soupçonne que ce ne sera pas la dernière fois que vous réapprovisionnerez nos stocks, $N. Merci infiniment pour votre aide.",
+        "56440b6cb1ce079292ed": "Es-tu venu aider le Cercle d’Émeraude ?"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : potion de protection contre la nature",
       "translationMetadata": {
@@ -182,6 +290,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -198,11 +316,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Nature Protection Potion i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Ovdje u Felwoodu očajnički trebamo još ovih napitaka. Iako ovdje djeluju mnoge sile koje šire pokvarenost, i sama priroda može silovito uzvratiti kad je se izazove.\n\nSlutim da ovo neće biti posljednji put da obnavljaš naše zalihe, $N. Najljepše hvala na pomoći.",
+        "56440b6cb1ce079292ed": "Jesi li došao pomoći Smaragdnom krugu?"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: napitak zaštite od prirode",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -224,6 +356,10 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede oa Pozione di Protezione dalla Natura, insieme alle informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che questa commissione è trasferibile.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Abbiamo disperatamente bisogno di altre pozioni qui a Vilbosco. Sebbene qui agiscano molte forze corruttrici, anche la natura stessa può reagire con violenza se provocata.\n\nSospetto che non sarà l’ultima volta che rifornirai le nostre scorte, $N. Ti ringrazio di cuore per l’aiuto.",
+        "56440b6cb1ce079292ed": "Sei venuto ad aiutare l'Emerald Circle?"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Pozione di Protezione dalla Natura",
       "translationMetadata": {
@@ -232,6 +368,17 @@
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "summary": {
             "origin": "ai",
@@ -250,6 +397,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 자연 보호 물약 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "이곳 악령의 숲에는 이 물약이 절실히 필요합니다. 이곳에는 타락을 퍼뜨리는 힘이 많지만, 자연 그 자체도 자극을 받으면 격렬하게 반격하곤 하니까요.\n\n우리의 물자를 보충해 주시는 게 이번이 마지막은 아닐 것 같군요, $N. 도와주셔서 정말 감사합니다.",
+        "56440b6cb1ce079292ed": "에메랄드 의회를 도우러 오셨나요?"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 자연 보호 물약",
       "translationMetadata": {
@@ -258,6 +409,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -274,11 +435,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Nature Protection Potion oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Bardzo potrzebujemy tu, w Felwood, więcej takich mikstur. Choć działa tu wiele sił szerzących skażenie, sama natura również potrafi gwałtownie zaatakować, gdy się ją sprowokuje.\n\nPodejrzewam, że to nie ostatni raz, kiedy uzupełniasz nasze zapasy, $N. Serdecznie dziękuję za pomoc.",
+        "56440b6cb1ce079292ed": "Czy przybywasz z pomocą Szmaragdowemu Kręgowi?"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: mikstura ochrony przed naturą",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -300,6 +475,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Poção de Proteção contra a Natureza, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Precisamos urgentemente de mais dessas poções aqui em Selva Maleva. Embora muitas forças corruptoras ajam por aqui, a própria natureza também pode reagir com violência quando provocada.\n\nSuspeito que esta não será a última vez que você reabastecerá nossos estoques, $N. Muito obrigada pela ajuda.",
+        "56440b6cb1ce079292ed": "Você veio ajudar o Círculo Esmeralda?"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Poção de Proteção contra a Natureza",
       "translationMetadata": {
@@ -308,6 +487,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -325,6 +514,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa порций зелья защиты от сил природы, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Здесь, в Оскверненном лесу, нам очень нужны эти зелья. Хотя здесь действует множество сил скверны, сама природа тоже способна яростно ответить, если ее потревожить.\n\nПодозреваю, что ты еще не раз пополнишь наши запасы, $N. Сердечно благодарю за помощь.",
+        "56440b6cb1ce079292ed": "Ты пришел помочь Изумрудному кругу?"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: зелье Природной защиты",
       "translationMetadata": {
@@ -333,6 +526,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -350,11 +553,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Nature Protection Potion. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Vi behöver desperat fler av de här dryckerna här i Felwood. Även om många fördärvande krafter är i rörelse här, kan naturen själv slå tillbaka våldsamt när den provoceras.\n\nJag misstänker att det här inte blir sista gången du fyller på våra förråd, $N. Stort tack för hjälpen.",
+        "56440b6cb1ce079292ed": "Har du kommit för att hjälpa Smaragdcirkeln?"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Naturskyddsbrygd",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -377,6 +594,10 @@
     },
     "trTR": {
       "description": "<Solmuş mürekkeple kaleme alınmış not, teslimat yeri ve ödeme bilgileriyle birlikte $2oa adet Nature Protection Potion talep ediyor. Notun altında, bu sipariş belgesinin devredilebilir olduğunu belirten bir yazı yer alıyor.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Burada, Felwood’da bu iksirlerden daha fazlasına çok ihtiyacımız var. Burada pek çok yozlaştırıcı güç iş başında olsa da doğanın kendisi de kışkırtıldığında şiddetle karşılık verebilir.\n\nSanırım erzakımızı son kez yenilemiyorsun, $N. Yardımın için çok teşekkür ederim.",
+        "56440b6cb1ce079292ed": "Zümrüt Çemberi’ne yardım etmeye mi geldin?"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Nature Protection Potion",
       "translationMetadata": {
@@ -386,6 +607,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -404,11 +635,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Nature Protection Potion і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "Тут, в Оскверненому лісі, нам украй потрібні ці зілля. Хоча тут діє багато сил скверни, сама природа теж може люто відповісти, якщо її потривожити.\n\nПідозрюю, що ти ще не раз поповниш наші запаси, $N. Щиро дякую за допомогу.",
+        "56440b6cb1ce079292ed": "Ти прийшов допомогти Смарагдовому колу?"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Зілля природного захисту",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -432,6 +677,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa瓶自然防护药水，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "我们这里急需更多这样的药水。费伍德森林中虽然有许多腐化之力作祟，但自然本身受到激怒时也会猛烈反击。\n\n我想这不会是你最后一次为我们补充物资，$N。衷心感谢你的帮助。",
+        "56440b6cb1ce079292ed": "你是来帮助翡翠议会的吗？"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：自然防护药水",
       "translationMetadata": {
@@ -440,6 +689,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -457,6 +716,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa個自然防護藥水，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "086168e0e1c8cc5f2680": "我們這裡急需更多這樣的藥水。費伍德森林中雖然有許多腐化之力作祟，但自然本身受到激怒時也會猛烈反擊。\n\n我想這不會是你最後一次為我們補充物資，$N。衷心感謝你的幫助。",
+        "56440b6cb1ce079292ed": "你是來幫助翡翠議會的嗎？"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：自然防護藥水",
       "translationMetadata": {
@@ -465,6 +728,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.086168e0e1c8cc5f2680": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.56440b6cb1ce079292ed": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

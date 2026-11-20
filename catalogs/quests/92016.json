@@ -1,8 +1,21 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "cd71b28eddf54612d576": {
+      "contributionId": 118502,
+      "lineId": "q:92016:complete",
+      "npcId": 264795,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Kořeny Nordrassilu sahají daleko a hluboko, jsou mohutnější než říční břehy a starší než paměť. Taková velikost s sebou nese velký hlad. Ve zdravých časech pijí z rozkladu i z obnovy a čerpají sílu z nekonečného koloběhu přírody.\n\nHyjal je však raněný a jeho půdu zamořil démonický jed.\n\nSestup do nejhlubších hlubin Well of Eternity. Pozorně tam prozkoumej kořeny. Musíme vědět, jestli do sebe nenasály příliš mnoho zkaženosti... nebo jestli Strom světa ještě vydrží.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Pokud se třpyt kořenů nachází tak hluboko ve vodách, znamená to, že kořeny Nordrassilu čerpají z dosud čistých pramenů.\n\nMáme čas zastavit rituály Černotrnů a démonickou magii, která překrucuje samu přírodu, a zajistit tak zdravou korunu stromu pro budoucí generace. Děkujeme ti za pomoc, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +32,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +60,9 @@
     },
     "daDK": {
       "description": "Nordrassils rødder strækker sig langt og dybt, tykkere end flodbredder og ældre end nogen erindring. Så stor en størrelse medfører stor sult. I sunde tider drikker de af både forfald og fornyelse og henter styrke fra naturens kredsløbs endeløse gang.\r\n\r\nMen Hyjal er blevet såret, dets jord besmittet af dæmongift.\r\n\r\nStig ned i de dybeste dybder af Well of Eternity. Studér rødderne dér nøje. Vi må vide, om de har optaget for meget fordærv... eller om verdenstræet endnu kan holde stand.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Hvis der findes rodskær så dybt i vandet, viser det, at Nordrassils rødder drikker dybt fra endnu rene kilder.\n\nVi har tid til at standse Blackthornes ritualer og den dæmoniske magi, der forvrænger selve naturen, og sikre en sund trækrone for kommende generationer. Tak for din hjælp, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +79,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cce4c997f94a17522350c773efd9b2c4001ab843aed104e96bf5a3aad648fdab"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +107,9 @@
     },
     "deDE": {
       "description": "Die Wurzeln von Nordrassil erstrecken sich weit und tief, breiter als Flussufer und älter als jede Erinnerung. Eine solche Größe bringt einen gewaltigen Hunger mit sich. In gesunden Zeiten nähren sie sich gleichermaßen von Verfall und Erneuerung und ziehen ihre Kraft aus dem endlosen Kreislauf der Natur.\r\n\r\nDoch der Hyjal wurde verwundet, sein Boden durch dämonisches Gift besudelt.\r\n\r\nTaucht in die tiefsten Tiefen des Brunnens der Ewigkeit hinab. Wir müssen wissen, ob sie bereits zu viel Verderbnis aufgenommen haben... oder ob der Weltenbaum weiter bestehen kann.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Wenn es so tief im Wasser Wurzelschimmer gibt, zeigt das, dass Nordrassils Wurzeln aus noch reinen Quellen trinken.\n\nWir haben Zeit, die Rituale der Schwarzstachel und die dämonische Magie aufzuhalten, die die Natur selbst verdreht, und so eine gesunde Baumkrone für künftige Generationen zu sichern. Danke für Eure Hilfe, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +125,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -119,6 +153,9 @@
     },
     "enUS": {
       "description": "The roots of Nordrassil stretch far and deep, thicker than riverbanks and older than memory. Such great size carries a great hunger. In healthy times, they drink of decay and renewal alike, drawing strength from the endless turning of the natural cycle.\r\n\r\nBut Hyjal has been wounded, its soil fouled by demonic venom.\r\n\r\nDescend into the deepest depths of the Well of Eternity. Study the roots there closely. We must know whether they have drawn in too much corruption... or if the World Tree may yet endure.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "If there's rootshimmer that deep within the waters, it shows the bottom of Nordrassil drinks deeply from still-pure sources.\n\nWe have time to put a stop to the Blackthorne rituals and demonic magic twisting nature itself, to ensure a healthy canopy for future generations. Thank you for assisting us, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -134,6 +171,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -157,6 +200,9 @@
     },
     "esES": {
       "description": "Las Raíces de Nordrassil son largas y profundas, más gruesas que las riberas de un río y más antiguas que los recuerdos. Un tamaño así conlleva un hambre enorme. En épocas de buena salud, se nutren de la descomposición y de la renovación por igual para extraer la fuerza del eterno ciclo de la naturaleza.\r\n\r\nPero Hyjal tiene una herida y la tierra está contaminada con veneno demoníaco.\r\n\r\nDesciende a las insondables profundidades del Pozo de la Eternidad y observa las raíces de cerca. Debemos saber si han absorbido demasiada corrupción... o si el Árbol del Mundo será capaz de perdurar.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Si hay fulgor de raíces a tanta profundidad, eso demuestra que las raíces de Nordrassil beben de fuentes que aún son puras.\n\nTenemos tiempo de detener los rituales de los Espinanegra y la magia demoníaca que retuerce la propia naturaleza, para asegurar una copa sana a las generaciones futuras. Gracias por ayudarnos, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -172,6 +218,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -195,6 +246,9 @@
     },
     "esMX": {
       "description": "Las raíces de Nordrassil se extienden a lo lejos y a lo profundo, más gruesas que las orillas de los ríos y más antiguas que los recuerdos. Un tamaño tan grande conlleva un gran apetito. En tiempos de bonanza, se alimentan tanto de la descomposición como de la renovación, y sacan fuerzas del ciclo natural e infinito.\r\n\r\nPero Hyjal ha sufrido una gran herida, y su suelo ha sido contaminado por el veneno demoníaco.\r\n\r\nSumérgete en las profundidades más recónditas del Pozo de la Eternidad y observa las raíces de cerca. Debemos saber si han absorbido demasiada corrupción... o si el Árbol del Mundo aún puede resistir.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Si hay brillo de raíz a tanta profundidad, eso demuestra que las raíces de Nordrassil beben de fuentes que aún son puras.\n\nTenemos tiempo de detener los rituales de los Espina Negra y la magia demoníaca que retuerce la propia naturaleza, para asegurar una copa sana a las generaciones futuras. Gracias por ayudarnos, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -210,6 +264,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -233,6 +292,9 @@
     },
     "frFR": {
       "description": "Les racines de Nordrassil sont vastes et profondes, plus étendues que les méandres d’un fleuve et plus anciennes que tout souvenir. Une telle ampleur s’accompagne d’une immense soif. En temps d’abondance, elles se nourrissent à la fois de décomposition et de renouveau, puisant leur force dans le cycle éternel de la nature.\r\n\r\nMais la plaie d’Hyjal est profonde, son sol a été souillé par du venin démoniaque.\r\n\r\nPlongez dans les profondeurs du Puits d’éternité et examinez minutieusement les racines. Nous devons savoir si elles ont absorbé trop de corruption… ou si l’Arbre-Monde a une chance de subsister.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Si l’on trouve du miroitement des racines aussi profondément dans les eaux, c’est que les racines de Nordrassil puisent encore à des sources pures.\n\nNous avons le temps de mettre fin aux rituels des Noire-Épine et à la magie démoniaque qui déforme la nature elle-même, afin de préserver une canopée saine pour les générations futures. Merci de ton aide, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -248,6 +310,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -271,6 +338,9 @@
     },
     "hrHR": {
       "description": "Korijenje Nordrassila proteže se daleko i duboko, deblje od riječnih obala i starije od sjećanja. Tolika veličina nosi veliku glad. U zdravim vremenima ono pije i propadanje i obnovu, crpeći snagu iz beskrajnog okretanja prirodnog ciklusa.\r\n\r\nAli Hyjal je ranjen, njegovo tlo oskvrnuto demonskim otrovom.\r\n\r\nSpusti se u najdublje dubine Well of Eternityja. Pažljivo prouči ondje korijenje. Moramo znati je li upilo previše pokvarenosti... ili Svjetsko stablo još može opstati.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Ako svjetlucanja korijena ima tako duboko u vodi, to pokazuje da Nordrassilovo korijenje pije iz još uvijek čistih izvora.\n\nImamo vremena zaustaviti obrede plemena Blackthorne i demonsku magiju koja izobličuje samu prirodu te osigurati zdravu krošnju budućim naraštajima. Hvala ti na pomoći, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -287,6 +357,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cce4c997f94a17522350c773efd9b2c4001ab843aed104e96bf5a3aad648fdab"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -310,6 +385,9 @@
     },
     "itIT": {
       "description": "Hai trovato una versione corrotta e malata di quella che somiglia a una pianta di Fiorcanto. Emana un odore acre ed è evidente che ha bisogno di cure immediate per tornare al suo stato originale.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Se c’è del bagliore delle radici così in profondità nelle acque, significa che le radici di Nordrassil attingono ancora a sorgenti pure.\n\nAbbiamo tempo di fermare i rituali dei Nerospino e la magia demoniaca che distorce la natura stessa, per garantire una chioma sana alle generazioni future. Grazie per il tuo aiuto, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -325,6 +403,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -348,6 +431,9 @@
     },
     "koKR": {
       "description": "놀드랏실의 뿌리는 멀고 깊게 뻗어 있네. 강둑보다 굵고 무척이나 오래됐지. 그토록 거대한 몸에는 그만한 허기가 따르는 법일세. 건강하던 시절에는 부패와 재생을 함께 들이켜며 끝없는 자연의 순환에서 힘을 끌어냈네.\r\n\r\n다만 하이잘은 상처 입었고 토양은 악마의 독으로 더럽혀졌네.\r\n\r\n영원의 샘의 가장 깊은 곳으로 내려가 뿌리를 자세히 살펴보게. 그 뿌리가 오염을 지나치게 많이 끌어들였는지... 아니면 세계수가 아직 견딜 수 있는지 알아야 하네.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "물속 깊은 곳에 뿌리빛이 있다면 놀드랏실의 뿌리가 아직 오염되지 않은 샘에서 물을 충분히 빨아들이고 있다는 뜻이군.\n\n자연 그 자체를 뒤틀고 있는 검은가시의 의식과 악마의 마법을 저지해 미래 세대에게 건강한 수관을 남겨 줄 시간이 있네. 도와줘서 고맙네, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -363,6 +449,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -386,6 +477,9 @@
     },
     "plPL": {
       "description": "Korzenie Nordrassilu sięgają daleko i głęboko, są grubsze niż brzegi rzek i starsze niż pamięć. Tak wielki rozmiar niesie wielki głód. W zdrowych czasach piją zarówno z rozkładu, jak i odnowy, czerpiąc siłę z niekończącego się obrotu naturalnego cyklu.\r\n\r\nAle Hyjal został zraniony, a jego gleba zatruta demonicznym jadem.\r\n\r\nZejdź w najgłębsze otchłanie Studni Wieczności. Dokładnie zbadaj tam korzenie. Musimy wiedzieć, czy wchłonęły zbyt wiele skażenia... czy Drzewo Świata może jeszcze przetrwać.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Jeśli blask korzeni znajduje się tak głęboko w wodzie, oznacza to, że korzenie Nordrassilu czerpią z wciąż czystych źródeł.\n\nMamy czas, by powstrzymać rytuały Blackthorne i demoniczną magię, która wypacza samą naturę, oraz zapewnić przyszłym pokoleniom zdrową koronę drzewa. Dziękujemy za pomoc, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -402,6 +496,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cce4c997f94a17522350c773efd9b2c4001ab843aed104e96bf5a3aad648fdab"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -425,6 +524,9 @@
     },
     "ptBR": {
       "description": "As raízes de Nordrassil são extensas e profundas, mais robustas do que rios e mais antigas do que a memória. Tamanha grandiosidade traz consigo um enorme apetite. Em épocas saudáveis, elas absorvem igualmente a decomposição e a renovação, nutrindo-se conforme caminha o eterno ciclo da natureza.\r\n\r\nMas o Hyjal foi ferido, seu solo profanado pela peçonha dos demônios.\r\n\r\nDesça às profundezas da Nascente da Eternidade e examine as raízes de perto. Precisamos saber se elas absorveram corrupção demais... ou se a Árvore do Mundo vai sobreviver.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Se há brilho de raiz tão fundo nas águas, isso mostra que as raízes de Nordrassil bebem de fontes ainda puras.\n\nTemos tempo para deter os rituais dos Espinonegro e a magia demoníaca que distorce a própria natureza, garantindo uma copa saudável para as gerações futuras. Obrigado por nos ajudar, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -440,6 +542,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -463,6 +570,9 @@
     },
     "ruRU": {
       "description": "Корни Нордрассила уходят далеко и глубоко, они шире берегов реки и старше самой истории. Чем больше размер, тем сильнее голод. В благополучные времена они питаются энергией как разложения, так и возрождения, черпая силу в бесконечной смене природных циклов.\r\n\r\nНо теперь Хиджал страдает от ран, и его почва отравлена ядом демонов.\r\n\r\nСпустись в самые глубины Источника Вечности и внимательно изучи покоящиеся там корни. Мы должны выяснить, сколько порчи они в себя вобрали... и выдержит ли Древо Жизни.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Если сияние корней встречается так глубоко в водах, значит, корни Нордрассила питаются из пока еще чистых источников.\n\nУ нас есть время остановить ритуалы Черношипых и демоническую магию, искажающую саму природу, чтобы сохранить здоровую крону для будущих поколений. Спасибо за помощь, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -478,6 +588,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -501,6 +616,9 @@
     },
     "svSE": {
       "description": "Nordrassils rötter sträcker sig långt och djupt, tjockare än flodbankar och äldre än minnet. En sådan storlek innebär en stor hunger. I friska tider dricker de av både förfall och förnyelse och hämtar styrka ur naturens ändlösa kretslopp.\r\n\r\nMen Hyjal har sårats, dess jord förorenad av demoniskt gift.\r\n\r\nStig ner i Well of Eternitys allra djupaste djup. Studera rötterna där noga. Vi måste veta om de har dragit till sig för mycket fördärv... eller om världsträdet ännu kan överleva.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Om det finns rotglimmer så djupt i vattnet visar det att Nordrassils rötter dricker ur ännu rena källor.\n\nVi har tid att stoppa Blackthornes ritualer och den demoniska magi som förvrider själva naturen, och säkra en frisk trädkrona för kommande generationer. Tack för din hjälp, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -517,6 +635,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cce4c997f94a17522350c773efd9b2c4001ab843aed104e96bf5a3aad648fdab"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -540,6 +663,9 @@
     },
     "trTR": {
       "description": "Nordrassil'in kökleri uzaklara ve derinlere uzanır; nehir kıyılarından kalın, hafızadan eskidir. Böyle büyük bir boyut büyük bir açlık getirir. Sağlıklı zamanlarda hem çürümeden hem yenilenmeden beslenir, doğal döngünün bitmeyen dönüşünden güç alırlar.\r\n\r\nAma Hyjal yaralandı, toprağı iblis zehriyle kirlendi.\r\n\r\nWell of Eternity'nin en derinlerine in. Oradaki kökleri yakından incele. Fazla yozlaşma çekip çekmediklerini... ya da Dünya Ağacı'nın hâlâ dayanıp dayanamayacağını bilmeliyiz.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Suların bu kadar derininde kök ışıltısı varsa Nordrassil’in kökleri hâlâ temiz kaynaklardan bolca su çekiyor demektir.\n\nGelecek nesillere sağlıklı bir ağaç tacı bırakmak için Blackthorne ayinlerini ve doğanın kendisini çarpıtan şeytani büyüyü durduracak zamanımız var. Yardımın için teşekkürler, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -556,6 +682,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cce4c997f94a17522350c773efd9b2c4001ab843aed104e96bf5a3aad648fdab"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -579,6 +710,9 @@
     },
     "ukUA": {
       "description": "Коріння Нордрассіла тягнеться далеко й глибоко, товще за річкові береги й старше за пам'ять. Така велич несе великий голод. У здорові часи воно п'є і розклад, і відродження, черпаючи силу з нескінченного оберту природного кола.\r\n\r\nАле Гіджал поранений, його ґрунт забруднений демонічною отрутою.\r\n\r\nСпустися в найглибші глибини Колодязя Вічності. Уважно вивчи тамтешнє коріння. Ми мусимо знати, чи не ввібрало воно забагато скверни... чи Світове Дерево ще може вистояти.",
+      "dialogue": {
+        "cd71b28eddf54612d576": "Якщо сяйво коренів є так глибоко у воді, це означає, що коріння Нордрассила п’є з іще чистих джерел.\n\nМи маємо час зупинити ритуали Чорношипих і демонічну магію, що спотворює саму природу, та зберегти здорову крону для майбутніх поколінь. Дякуємо за допомогу, $N."
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -595,6 +729,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "cce4c997f94a17522350c773efd9b2c4001ab843aed104e96bf5a3aad648fdab"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -618,6 +757,9 @@
     },
     "zhCN": {
       "description": "诺达希尔的根须深远绵长，比河堤更粗壮，比岁月的长河更古老。如此庞大的身躯自然伴随着巨大的渴求。在健康的年月里，它们既啜饮腐朽，也汲取新生，从自然循环的无尽轮转中获得力量。\r\n\r\n但海加尔山已经受创，它的土壤被恶魔的毒液所玷污。\r\n\r\n深入永恒之井的最深处，仔细观察那些根须。我们必须查明它们是否吸纳了过多的腐化……或者这株世界之树是否还能继续存活。",
+      "dialogue": {
+        "cd71b28eddf54612d576": "如果这么深的水中还有根须微光，就说明诺达希尔的根须仍在汲取纯净的水源。\n\n我们还有时间阻止黑棘的仪式和扭曲自然本身的恶魔魔法，为后代保住健康的树冠。感谢你的帮助，$N。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -633,6 +775,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",
@@ -656,6 +803,9 @@
     },
     "zhTW": {
       "description": "諾達希爾的樹根延伸得又遠又深，比河岸更粗壯，比記憶更古老。如此龐大的身軀承載著巨大的飢渴。在健康的時期，它們會同時汲取腐朽與新生，從自然循環的無盡運轉中吸取力量。\r\n\r\n但如今的海加爾山傷痕累累，它的土壤被惡魔的毒液所污染。\r\n\r\n深入永恆之井的最深處。仔細觀察那裡的樹根。我們必須知道它們是否吸入了過多的腐化…或者這棵世界之樹能不能撐下去。",
+      "dialogue": {
+        "cd71b28eddf54612d576": "如果這麼深的水中還有根鬚微光，就代表諾達希爾的根鬚仍在汲取純淨的水源。\n\n我們還有時間阻止黑棘的儀式和扭曲自然本身的惡魔魔法，為後代保住健康的樹冠。感謝你的幫助，$N。"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -671,6 +821,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.cd71b28eddf54612d576": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "original",

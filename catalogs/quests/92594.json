@@ -1,8 +1,21 @@
 {
   "areaId": 616,
+  "dialogueContexts": {
+    "6b05f0af31217ac78356": {
+      "contributionId": 109968,
+      "lineId": "q:92594:complete",
+      "npcId": 249235,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "Když už se touláš po hoře, nedá mi to a musím tě poprosit o další malou laskavost...\n\nNeunikly ti ty keře a rostliny nasáklé felem, co zaplevelují svahy dole? Ukázalo se, že docela dobře hoří, což je dobře i špatně. Hodí se k přikládání do malé pece, ale jsou i nebezpečné, když se zamotají do ozubených kol... nebo do tkaniček!\n\nCestou dolů je trochu prořeď a plevel si posbírám, až uschne.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Děkuji, že jste se postarali o ten přerostlý porost. Soudě podle toho, co se vám přichytilo na boty, jste ho také pořádně rozdrtili!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -19,6 +32,11 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -42,6 +60,9 @@
     },
     "daDK": {
       "description": "Mens du rejser rundt på bjerget, kan jeg ikke lade være med at bede om endnu en lille tjeneste...\r\n\r\nSå du alle de felbuske og planter, der ligger spredt på bakkerne dernede? Det viser sig, at de brænder ret godt, hvilket både er godt og skidt. Praktisk som brændsel i en lille ovn, men også en risiko, når de snor sig sammen og sætter tandhjul fast... eller støvlestropper!\r\n\r\nReducer deres antal på vejen ned, så samler jeg selv ukrudtet op, når det er tørret.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Tak, fordi du tog dig af den vilde bevoksning. At dømme efter det, dine støvler har slæbt med sig, fik du den også knust grundigt!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -58,6 +79,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e1bc87cebfd656cf8bb4854462517fd68859b252e9f1262d64629cc7e3d4b808"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -81,6 +107,9 @@
     },
     "deDE": {
       "description": "Ich kann nicht anders, als Euch um einen Gefallen zu bitten, während Ihr durch das Gebirge reist...\r\n\r\nHabt Ihr all diese teuflischen Gebüsche und Pflanzen gesehen, die die unteren Hügel bedecken? Wie sich herausstellt, lassen die sich leicht entzünden, was sowohl gut als auch schlecht ist. Gut, wenn man einen kleinen Ofen befeuern will, schlecht, wenn sich darin die eigene Ausrüstung verfängt... oder die Stiefelriemen!\r\n\r\nStutzt auf dem Weg nach unten einige davon zurecht. Ich sammle den Schnitt dann ein, sobald er getrocknet ist.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Danke, dass Ihr Euch um die Überwucherung gekümmert habt. An Resten an Euren Stiefeln lässt sich ablesen, dass Ihr sie richtig zermalmt habt!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -96,6 +125,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -120,6 +155,9 @@
     },
     "enUS": {
       "description": "While you're traveling around the mountain, I can't resist asking for another small favor...\r\n\r\nDid you see all those fel shrubberies and plants littering the hills down below? It turns out they burn rather well, which is both good, and bad. Handy for feeding into a small furnace, but also a risk when it twists together and binds up gears...or bootstraps!\r\n\r\nThin their numbers on your way down, and I'll pick up the weeds myself once they've dried out.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Thank you for handling that overgrowth. Judging by the hitchhikers your boots picked up, you crushed them well, too!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -135,6 +173,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -159,6 +203,9 @@
     },
     "esES": {
       "description": "Como te dedicas a viajar por la montaña, no puedo resistirme a pedirte otro pequeño favor...\r\n\r\n¿Has visto todos los arbustos viles y plantas que hay por las colinas de más abajo? Pues resulta que arden muy bien, lo que es bueno y malo a la vez. Vienen bien para alimentar un pequeño horno, pero se convierten en un riesgo cuando se enredan y atascan los engranajes... ¡o las correas de las botas!\r\n\r\nReduce su número mientras bajas, y yo recogeré las hierbas cuando se hayan secado.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Gracias por ocuparte de esa maleza. A juzgar por lo que se ha quedado pegado a tus botas, ¡también la has aplastado bien!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -174,6 +221,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -198,6 +250,9 @@
     },
     "esMX": {
       "description": "Debo pedirte otro favorcito mientras caminas por la montaña.\r\n\r\n¿Notaste todos esos arbustos y plantas viles que cubren las colinas de abajo? Parece que se arden rápido, lo cual es bueno y malo al mismo tiempo. Sirven para poner en un horno pequeño, pero también suponen un riesgo cuando se enredan y atascan los engranajes... ¡o las trabillas de las botas!\r\n\r\nDeshazte de algunos cuando bajes, y yo recogeré las malas hierbas una vez que se hayan secado.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Gracias por ocuparte de esa maleza. A juzgar por lo que se ha quedado pegado a tus botas, ¡también la aplastaste bien!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -213,6 +268,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -237,6 +297,9 @@
     },
     "frFR": {
       "description": "Puisque vous voyagez dans la montagne, j’aurais un autre petit service à vous demander…\r\n\r\nAvez-vu vous remarqué les massifs de plantes gangrenées qui jonchent les collines en bas ? Elles brûlent très bien, figurez-vous. C’est à la fois un avantage et un inconvénient. Pratique pour alimenter une petite fournaise, mais dangereux quand elle se prennent dans les mécanismes… ou qu’elles s’accrochent à nos bottes !\r\n\r\nTaillez quelques plantes sur votre chemin, je m’occuperai de ramasser les herbes une fois qu’elles auront séché.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Merci de vous être occupé de cette végétation envahissante. À en juger par ce qui s’est accroché à vos bottes, vous l’avez bien écrasée aussi !"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -252,6 +315,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -275,6 +343,9 @@
     },
     "hrHR": {
       "description": "Dok putuješ planinom, ne mogu odoljeti da te ne zamolim za još jednu malu uslugu...\r\n\r\nJesi li vidio sve ono fel grmlje i biljke po brdima dolje? Ispada da prilično dobro gore, što je i dobro i loše. Korisno za loženje male peći, ali i opasno kad se ispreplete i zaglavi zupčanike... ili remenje na čizmama!\r\n\r\nProrijedi ih na putu dolje, a ja ću sam pokupiti korov kad se osuši.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Hvala vam što ste se pobrinuli za to raslinje. Sudeći po onome što se zalijepilo za vaše čizme, dobro ste ga i zgnječili!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -291,6 +362,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e1bc87cebfd656cf8bb4854462517fd68859b252e9f1262d64629cc7e3d4b808"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -314,6 +390,9 @@
     },
     "itIT": {
       "description": "Hai trovato una versione corrotta e malata di quella che somiglia a una pianta di Fiorcanto. Emana un odore acre ed è evidente che ha bisogno di cure immediate per tornare al suo stato originale.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Grazie per esserti occupato di quella vegetazione. A giudicare dagli autostoppisti che si sono attaccati ai tuoi stivali, le hai anche schiacciate per bene!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -329,6 +408,12 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "itIT"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "itIT",
+            "sourceSha256": "3d985dc311ace22e87504b11e52fcda12d78dfa792450569293ac9a736170351"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -351,6 +436,9 @@
     },
     "koKR": {
       "description": "이왕 산을 돌아다니시는 김에, 작은 부탁을 하나만 더 드리고 싶네요...\r\n\r\n아래쪽 언덕에 널린 지옥 관목과 식물들 보셨죠? 알고 보니 꽤 잘 타더라고요. 편리하기도 하고 위험하기도 해요. 작은 가열로에 넣기엔 좋지만 서로 뒤엉켜 톱니바퀴나 장화끈을 막히게 만들면 위험하죠!\r\n\r\n내려가는 길에 수를 좀 줄여 주세요. 마른 풀은 제가 직접 주울 테니까요.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "무성하게 자란 것들을 처리해 주셔서 고마워요. 장화에 달라붙은 것들을 보니 아주 잘 짓밟아 주셨군요!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -366,6 +454,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -390,6 +483,9 @@
     },
     "plPL": {
       "description": "Gdy wędrujesz po górze, nie mogę się powstrzymać przed kolejną drobną prośbą...\r\n\r\nWidzisz te wszystkie spaczone krzewy i rośliny zaśmiecające wzgórza poniżej? Okazuje się, że palą się całkiem dobrze, co jest zarówno dobre, jak i złe. Przydają się do małego pieca, ale są zagrożeniem, gdy się splatają i blokują koła zębate... albo paski butów!\r\n\r\nPrzetrzeb je w drodze na dół, a sama zbiorę chwasty, gdy wyschną.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Dziękuję za uporanie się z tymi zaroślami. Sądząc po tym, co przyczepiło się do twoich butów, zostały też porządnie zgniecione!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -406,6 +502,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e1bc87cebfd656cf8bb4854462517fd68859b252e9f1262d64629cc7e3d4b808"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -429,6 +530,9 @@
     },
     "ptBR": {
       "description": "Enquanto você tá viajando pela montanha, não posso deixar de pedir mais um favorzinho...\r\n\r\nPercebeu a quantidade de arbustos e plantas vis que recobrem as colinas lá embaixo? Eles calham de ser bastante inflamáveis, o que é bom e ruim ao mesmo tempo. São ótimas pra alimentar uma pequena fornalha, mas um perigo quando se enredam em engrenagens... ou na correia de uma bota!\r\n\r\nAproveite que vai descer para desbastá-las, que eu pego as ervas quando estiverem secas.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Obrigada por cuidar daquela vegetação excessiva. A julgar pelo que ficou grudado nas suas botas, você também a esmagou direitinho!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -444,6 +548,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -468,6 +577,9 @@
     },
     "ruRU": {
       "description": "Пока ты тут странствуешь, не могу не попросить о еще одной небольшой услуге...\r\n\r\nВидел оскверненные кусты и растения, усеивающие склоны холмов? Оказывается, они отлично горят – а это и хорошо, и плохо. Хорошо для растопки небольших печей, но плохо, когда эти растения сплетаются и цепляются за шестеренки... или за ботинки!\r\n\r\nВырви как можно больше, когда будешь идти мимо, а я соберу, когда высохнут.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Спасибо, что разобрались с этими зарослями. Судя по тому, что прилипло к вашим сапогам, вы их еще и как следует растоптали!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -483,6 +595,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -507,6 +624,9 @@
     },
     "svSE": {
       "description": "Medan du reser omkring på berget kan jag inte låta bli att be om ännu en liten tjänst...\r\n\r\nSåg du alla de där felbuskarna och växterna som ligger utspridda på kullarna där nere? Det visar sig att de brinner ganska bra, vilket är både bra och dåligt. Praktiskt att mata en liten ugn med, men också en risk när de tvinnar ihop sig och fastnar i kugghjul... eller stövelöglor!\r\n\r\nMinska deras antal på vägen ner så hämtar jag ogräset själv när det har torkat.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Tack för att du tog hand om den överväxta växtligheten. Att döma av det som fastnat på dina stövlar krossade du den ordentligt också!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -523,6 +643,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e1bc87cebfd656cf8bb4854462517fd68859b252e9f1262d64629cc7e3d4b808"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -546,6 +671,9 @@
     },
     "trTR": {
       "description": "Dağın çevresinde gezerken küçük bir iyilik daha istemeden duramıyorum...\n\nAşağıdaki tepelere dağılmış bütün o fel çalılarını ve bitkilerini gördün mü? Meğer gayet iyi yanıyorlarmış. Bu hem iyi hem kötü. Küçük bir fırını beslemek için yararlı ama birbirine dolanıp dişlileri... ya da çizme bağlarını sıkıştırınca riskli!\n\nAşağı inerken sayılarını azalt. Kuruduklarında otları kendim toplarım.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "O aşırı büyümüş bitkilerle ilgilendiğin için teşekkürler. Çizmelerine yapışanlara bakılırsa onları iyice ezmişsin de!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -562,6 +690,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e1bc87cebfd656cf8bb4854462517fd68859b252e9f1262d64629cc7e3d4b808"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -585,6 +718,9 @@
     },
     "ukUA": {
       "description": "Поки подорожуватимеш горою, не можу втриматися від ще одного маленького прохання...\r\n\r\nБачив усі ті чагарники й рослини Скверни, що вкривають пагорби внизу? Виявляється, вони доволі добре горять, і це водночас добре й погано. Зручно підкидати їх у невелику піч, але небезпечно, коли вони сплітаються й заклинюють шестерні... або ремінці чобіт!\r\n\r\nПроріди їх дорогою вниз, а я сам підберу бур'яни, коли вони висохнуть.",
+      "dialogue": {
+        "6b05f0af31217ac78356": "Дякую, що впоралися з тими заростями. Судячи з того, що прилипло до ваших чобіт, ви їх ще й добряче потоптали!"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -601,6 +737,11 @@
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS",
             "sourceTextSha256": "e1bc87cebfd656cf8bb4854462517fd68859b252e9f1262d64629cc7e3d4b808"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -624,6 +765,9 @@
     },
     "zhCN": {
       "description": "既然你要在山上四处转悠，我忍不住想再请你帮个小忙……\r\n\r\n你看到下方山丘上到处都是的那些被邪能腐化的灌木和植物了吗？事实证明它们非常易燃。这既是好事，也是坏事。用来给小熔炉生火固然方便，但要是它们缠在一起卡住了齿轮……或是缠住了靴子的鞋带，那可就危险了！\r\n\r\n在你下山的时候顺手清理掉一些，等这些杂草风干后，我会亲自去把它们捡回来。",
+      "dialogue": {
+        "6b05f0af31217ac78356": "谢谢你处理那些疯长的植物。看你靴子上沾的东西，你还把它们踩得够碎！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -639,6 +783,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",
@@ -663,6 +812,9 @@
     },
     "zhTW": {
       "description": "當你在山裡四處旅行時，我忍不住想再請你幫個小忙…\r\n\r\n你看到下面山丘上到處都是的那些魔化木槿花和植物了嗎？事實證明它們相當易燃，這既是好事，也是壞事。用來塞進小熔爐很方便，但當它們纏繞在一起、卡住齒輪…或靴帶時，也是個風險！\r\n\r\n在你下山的路上減少它們的數量，等它們乾枯後，我會去把這些雜草撿起來。",
+      "dialogue": {
+        "6b05f0af31217ac78356": "謝謝你處理那些瘋長的植物。看你靴子上沾的東西，你還把它們踩得夠碎！"
+      },
       "objectiveLines": [
         {
           "index": 1,
@@ -678,6 +830,11 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.6b05f0af31217ac78356": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "objectiveLines.1": {
             "origin": "ai",

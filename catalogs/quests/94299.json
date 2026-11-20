@@ -16,9 +16,31 @@
     "sourceFileSha256": "6f5cc3b2ae6a68b6425f5be3fa0d2d8ba5641ed60bc4886734c1e20768d9bcc5",
     "sourceLocale": "enUS"
   },
+  "dialogueContexts": {
+    "07cade9072cb5bae571a": {
+      "contributionId": 156193,
+      "lineId": "q:94299:complete",
+      "npcId": 14628,
+      "scope": "forever",
+      "stage": "complete",
+      "variant": 0
+    },
+    "da3d272b142937e67ca0": {
+      "contributionId": 156192,
+      "lineId": "q:94299:progress",
+      "npcId": 14628,
+      "scope": "forever",
+      "stage": "progress",
+      "variant": 0
+    }
+  },
   "locales": {
     "csCZ": {
       "description": "<Vybledlým inkoustem psaný přípis žádá 1× Nightscape Shoulders a uvádí místo doručení i platbu. Dole stojí, že je přípis převoditelný.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Jo, jasně. Položte to na bednu za mnou, později se o to postarám.\n\nTady máte peníze a teď jděte otravovat někoho jiného.",
+        "da3d272b142937e67ca0": "Cože?"
+      },
       "summary": "Obstarej předměty, které zákazník požaduje, a doruč je na místo vyznačené na mapě. K dokončení obchodu musíš mít tento přípis u sebe.",
       "title": "Přípis řemeslníka: Nightscape Shoulders",
       "translationMetadata": {
@@ -28,6 +50,16 @@
             "source": "czechForever",
             "sourceLocale": "csCZ",
             "sourceRevision": "0.7.3"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -48,11 +80,25 @@
     },
     "daDK": {
       "description": "<Sedlen er skrevet med falmet blæk og anmoder om Nightscape Shoulders. Den indeholder også oplysninger om leveringssted og betaling. Nederst står der, at denne ordre kan overdrages.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Ja, ja. Læg dem bare på en kasse bag mig, så tager jeg mig af dem senere.\n\nHer er dine penge. Gå nu hen og gener en anden.",
+        "da3d272b142937e67ca0": "Øh, hvad?"
+      },
       "summary": "Skaf de genstande, kunden har bedt om, og lever dem til stedet markeret på dit kort. Du skal have denne ordre på dig for at fuldføre handlen.",
       "title": "Håndværkerens anmodning: Nightscape-skulderværn",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -74,6 +120,10 @@
     },
     "deDE": {
       "description": "<Die in verblichener Tinte verfasste Notiz verlangt nach oa Paar Schultern des Nachtschleichers und liefert Informationen über den Lieferort und die Bezahlung. Am unteren Rand erscheint ein Text, der besagt, dass dieses Schreiben übertragbar sei.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Oh, ähm. Legt sie einfach auf die Kiste hinter mir, ich kümmere mich später darum.\n\nHier ist Eure Bezahlung, jetzt geht wem anders auf die Nerven.",
+        "da3d272b142937e67ca0": "Äh, was?"
+      },
       "summary": "Besorgt die vom Kunden angeforderten Gegenstände und liefert sie an die auf Eurer Karte markierte Position. Dieses Schriftstück muss sich in Eurem Besitz befinden, um die Transaktion abzuschließen.",
       "title": "Handwerksverfügung: Schultern des Nachtschleichers",
       "translationMetadata": {
@@ -82,6 +132,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "deDE"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "deDE",
+            "sourceSha256": "f570cdcfed1683e8a970fe4a0977d73494224aa688f6c2a14005e2d068576f1e"
           },
           "summary": {
             "origin": "community",
@@ -98,6 +160,10 @@
     },
     "enUS": {
       "description": "<Penned in faded ink, the note is requesting oa Nightscape Shoulders, along with information about delivery location and payment. At the bottom appears text denoting this writ is transferable.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Uh, huh. Just lay 'em on a crate behind me and I'll deal with them later.\n\nHere's ye' coin, now go bother somebody else.",
+        "da3d272b142937e67ca0": "Eh huh?"
+      },
       "summary": "Acquire the items requested by the customer and deliver them to the location marked on your map. This writ must be in your possession to complete the transaction.",
       "title": "Craftsman's Writ: Nightscape Shoulders",
       "translationMetadata": {
@@ -106,6 +172,18 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "enUS"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "community",
+            "source": "Spoken",
+            "sourceLocale": "enUS",
+            "sourceSha256": "fe911cf99a01a140a7251e1c5f4335b1456789d754a82bb5cac0d10219fb20d0"
           },
           "summary": {
             "origin": "community",
@@ -123,6 +201,10 @@
     },
     "esES": {
       "description": "<Escrita con tinta borrosa, la nota solicita oa hombreras Nochefugaz e incluye detalles sobre la ubicación de entrega y el pago. Al final aparece un texto indicando que esta libranza es transferible>.",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Ajá, sí. Dejadlas en una caja detrás de mí y ya me ocuparé de ellas.\n\nAquí tenéis vuestro dinero. Ahora id a molestar a otro.",
+        "da3d272b142937e67ca0": "¿Eh? ¿Qué?"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y entrégalos en la ubicación marcada en el mapa. Debes tener la libranza para completar la transacción.",
       "title": "Libranza del artesano: hombreras Nochefugaz",
       "translationMetadata": {
@@ -131,6 +213,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esES"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -147,6 +239,10 @@
     },
     "esMX": {
       "description": "<Escrita con tinta desteñida, la nota pide oa par de sobrehombros Nochefugaz, junto con información sobre el lugar de la entrega y el pago. Abajo aparece un texto que indica que esta libranza es transferible.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Ajá, sí. Déjalos en una caja detrás de mí y me ocuparé de ellos después.\n\nAquí tienes tu dinero. Ahora ve a molestar a alguien más.",
+        "da3d272b142937e67ca0": "¿Eh? ¿Qué?"
+      },
       "summary": "Consigue los objetos solicitados por el cliente y llévalos al lugar indicado en el mapa. Debes tener esta libranza en tu poder para completar la transacción.",
       "title": "Libranza del artesano: Sobrehombros Nochefugaz",
       "translationMetadata": {
@@ -155,6 +251,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "esMX"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -172,6 +278,10 @@
     },
     "frFR": {
       "description": "<Cette note manuscrite à l’encre délavée réclame oa épaulières de la nuit, en indiquant le lieu de livraison et le paiement. Tout en bas, un texte précise que ce document est transférable.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Mouais. Posez-les sur une caisse derrière moi, je m’en occuperai plus tard.\n\nVoilà votre argent. Maintenant, allez embêter quelqu’un d’autre.",
+        "da3d272b142937e67ca0": "Hein ? Quoi ?"
+      },
       "summary": "Obtenez les objets demandés par le client et apportez-les à l’endroit indiqué sur votre carte. Ce document doit être en votre possession pour que la transaction soit validée.",
       "title": "Commission d’artisan : épaulières de la nuit",
       "translationMetadata": {
@@ -180,6 +290,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "frFR"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -196,11 +316,25 @@
     },
     "hrHR": {
       "description": "<Bilješka napisana izblijedjelom tintom traži Nightscape Shoulders i sadrži podatke o mjestu dostave i plaćanju. Na dnu piše da je ovaj nalog prenosiv.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Aha, da. Samo ih stavite na sanduk iza mene, kasnije ću se pobrinuti za njih.\n\nEvo vam novca, a sad idite gnjaviti nekog drugog.",
+        "da3d272b142937e67ca0": "Ha? Što?"
+      },
       "summary": "Pribavi predmete koje je kupac zatražio i dostavi ih na mjesto označeno na karti. Ova narudžbenica mora biti kod tebe kako bi se transakcija dovršila.",
       "title": "Obrtnikov nalog: noćni štitnici za ramena",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -222,11 +356,25 @@
     },
     "itIT": {
       "description": "<Scritta con inchiostro sbiadito, la nota richiede oa Spallacci del Paesaggio Notturno, insieme alle informazioni sul luogo di consegna e sul pagamento. In fondo compare un testo che indica che questa commissione è trasferibile.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Ah, sì. Mettili su una cassa dietro di me, me ne occuperò più tardi.\n\nEcco le tue monete, ora va’ a infastidire qualcun altro.",
+        "da3d272b142937e67ca0": "Eh? Cosa?"
+      },
       "summary": "Procurati gli oggetti richiesti dal cliente e consegnali nel luogo segnato sulla mappa. Devi avere con te questo mandato per completare la transazione.",
       "title": "Commessa dell'artigiano: Spallacci della Notte",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -248,6 +396,10 @@
     },
     "koKR": {
       "description": "<빛바랜 잉크로 쓴 쪽지에는 밤하늘 어깨보호구 oa개를 만들어 달라는 의뢰가 적혀 있습니다. 배달 장소와 대금에 관한 정보도 함께 담겨 있습니다. 맨 아래에는 이 의뢰서를 다른 사람에게 넘길 수 있다는 안내도 덧붙어 있습니다.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "어, 그래. 내 뒤에 있는 상자 위에 놓아 둬. 나중에 처리할 테니까.\n\n여기 돈이야. 이제 다른 사람이나 귀찮게 해.",
+        "da3d272b142937e67ca0": "어? 뭐라고?"
+      },
       "summary": "고객이 요청한 물품을 입수한 후, 지도에 표시된 장소로 전달해야 합니다. 이 계약서가 수중에 있어야 거래를 마무리할 수 있습니다.",
       "title": "장인의 계약서: 밤하늘 어깨보호구",
       "translationMetadata": {
@@ -256,6 +408,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -272,11 +434,25 @@
     },
     "plPL": {
       "description": "<Notatka napisana wyblakłym atramentem zawiera prośbę o Nightscape Shoulders oraz informacje o miejscu dostawy i zapłacie. Na dole widnieje informacja, że zlecenie można przekazać innej osobie.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Aha, tak. Połóż je na skrzyni za mną, zajmę się nimi później.\n\nOto twoje pieniądze, a teraz idź zawracać głowę komuś innemu.",
+        "da3d272b142937e67ca0": "Eee, co?"
+      },
       "summary": "Zdobądź przedmioty zamówione przez klienta i dostarcz je do miejsca oznaczonego na mapie. Aby ukończyć transakcję, musisz mieć przy sobie to zlecenie.",
       "title": "Zlecenie rzemieślnika: naramienniki nocnego krajobrazu",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -298,6 +474,10 @@
     },
     "ptBR": {
       "description": "<Escrito com tinta desbotada, o bilhete solicita oax Omoplatas da Escapada Noturna, além de informações sobre o pagamento e o local de entrega. No final, há um texto indicando que este documento é transferível.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Aham. Deixe isso numa caixa atrás de mim que eu cuido depois.\n\nAqui está seu dinheiro. Agora vá incomodar outra pessoa.",
+        "da3d272b142937e67ca0": "Hã? O quê?"
+      },
       "summary": "Adquira os itens solicitados pelo cliente e entregue-os no local indicado no mapa. Você precisa estar com este documento para concluir a transação.",
       "title": "Escritura do Artífice: Omoplatas da Escapada Noturna",
       "translationMetadata": {
@@ -306,6 +486,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ptBR"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -323,6 +513,10 @@
     },
     "ruRU": {
       "description": "<В записке, написанной выцветшими чернилами, содержится заказ на oa пар ночных наплечников, а также сведения о том, куда все нужно доставить, и об оплате. Снизу указано, что этот заказ можно передавать другим.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Ага, да. Положите их на ящик у меня за спиной, я займусь ими позже.\n\nВот ваши деньги, а теперь идите досаждать кому-нибудь другому.",
+        "da3d272b142937e67ca0": "А? Что?"
+      },
       "summary": "Добудьте предметы из заказа и доставьте в место, отмеченное на карте. Чтобы получить плату, нужно иметь при себе это свидетельство.",
       "title": "Задание мастера: ночные наплечники",
       "translationMetadata": {
@@ -331,6 +525,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "ruRU"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -350,11 +554,25 @@
     },
     "svSE": {
       "description": "<Lappen är skriven med blekt bläck och efterfrågar Nightscape Shoulders. Den innehåller också uppgifter om leveransplats och betalning. Längst ned står det att ordern kan överlåtas.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Jaså, ja. Lägg dem på en låda bakom mig så tar jag hand om dem senare.\n\nHär är dina pengar, gå nu och stör någon annan.",
+        "da3d272b142937e67ca0": "Va? Vadå?"
+      },
       "summary": "Skaffa föremålen som kunden har beställt och leverera dem till platsen som är markerad på din karta. Du måste ha den här skrivelsen på dig för att slutföra affären.",
       "title": "Hantverksorder: Nattskymningsaxelskydd",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -377,6 +595,10 @@
     },
     "trTR": {
       "description": "<Solmuş mürekkeple kaleme alınmış not, teslimat yeri ve ödeme bilgileriyle birlikte $2oa adet Nightscape Shoulders talep ediyor. Notun altında, bu sipariş belgesinin devredilebilir olduğunu belirten bir yazı yer alıyor.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Hı hı. Onları arkamdaki bir sandığın üstüne bırak, sonra ilgilenirim.\n\nAl paranı, şimdi git başkasını rahatsız et.",
+        "da3d272b142937e67ca0": "Ha? Ne?"
+      },
       "summary": "Müşterinin talep ettiği eşyaları temin et ve haritanda işaretli konuma teslim et. İşlemi tamamlamak için bu sipariş belgesinin sende olması gerekir.",
       "title": "Zanaatçı Siparişi: Nightscape Shoulders",
       "translationMetadata": {
@@ -386,6 +608,16 @@
             "source": "foreverTR",
             "sourceLocale": "trTR",
             "sourceRevision": "0.1.0-beta.1"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "ai",
@@ -404,11 +636,25 @@
     },
     "ukUA": {
       "description": "<У записці, написаній вицвілим чорнилом, просять принести Nightscape Shoulders і вказують місце доставки та оплату. Унизу зазначено, що це замовлення можна передати іншій особі.>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "Ага, так. Покладіть їх на ящик позаду мене, я подбаю про них пізніше.\n\nОсь ваші гроші, а тепер ідіть набридайте комусь іншому.",
+        "da3d272b142937e67ca0": "Га? Що?"
+      },
       "summary": "Здобудьте предмети, замовлені клієнтом, і доставте їх до місця, позначеного на вашій мапі. Щоб завершити угоду, це замовлення має бути при вас.",
       "title": "Замовлення майстра: Наплечі нічного краєвиду",
       "translationMetadata": {
         "fields": {
           "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
@@ -432,6 +678,10 @@
     },
     "zhCN": {
       "description": "<字条以褪色的墨水写成，要求提供oa对夜色护肩，并注明交货地点与报酬。底部的文字说明，这份文书可以转让。>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "嗯，行。把它们放在我身后的箱子上，我待会儿再处理。\n\n这是你的钱，现在去烦别人吧。",
+        "da3d272b142937e67ca0": "呃，啊？"
+      },
       "summary": "备齐客户要求的物品，并将其送至地图上标记的地点。你必须携带本文书才能完成交易。",
       "title": "工匠文书：夜色护肩",
       "translationMetadata": {
@@ -440,6 +690,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhCN"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",
@@ -457,6 +717,10 @@
     },
     "zhTW": {
       "description": "<紙條以褪色的墨水寫成，要求提供oa對夜景護肩，並附上關於交貨地點和付款的資訊。下方還有一段文字，表示此令狀可以轉讓。>",
+      "dialogue": {
+        "07cade9072cb5bae571a": "嗯，行。把它們放在我身後的箱子上，我待會兒再處理。\n\n這是你的錢，現在去煩別人吧。",
+        "da3d272b142937e67ca0": "呃，啊？"
+      },
       "summary": "取得客戶要求的物品，並到地圖上標記的位置轉交。必須持有令狀才能完成交易。",
       "title": "工匠令狀：夜色護肩",
       "translationMetadata": {
@@ -465,6 +729,16 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "zhTW"
+          },
+          "dialogue.07cade9072cb5bae571a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da3d272b142937e67ca0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           },
           "summary": {
             "origin": "community",

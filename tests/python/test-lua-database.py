@@ -518,6 +518,43 @@ class DatabaseTests(unittest.TestCase):
             self.assertIsNone(api.GetSpellName(api, 2, b'frFR'))
             self.assertEqual(api.GetQuest(api, 1, b'frFR')[b'title'], b'Titre source')
 
+    def test_canonical_offer_replaces_only_english_description_fallback(self):
+        english = 'Bring the letter.'
+        offer = 'Apportez la lettre.'
+        record = {
+            'dialogueContexts': {'description': {
+                'stage': 'accept', 'sourceField': 'description',
+                'sourceDescriptionSha256': hashlib.sha256(english.encode()).hexdigest(),
+            }},
+            'locales': {
+                'enUS': {'title': 'Quest', 'description': english},
+                'frFR': {'title': 'Quête', 'description': english, 'dialogue': {'description': offer},
+                         'translationMetadata': {'fields': {'dialogue.description': {'origin': 'ai'}}}},
+            },
+        }
+        quests = {'schemaVersion': 1, 'locales': ['enUS', 'frFR'], 'catalogs': {'quests': {'1': record}}}
+        names = {'catalogs': {kind: {} for kind in build['KINDS'] if kind != 'quests'}}
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / 'addon/runtime.toc'
+            build['export_database'](create_documents(quests, names), output)
+            _, api, _ = self.create_runtime(read_metadata(output))
+            self.assertEqual(api.GetQuest(api, 1, b'enUS')[b'description'].decode(), english)
+            self.assertEqual(api.GetQuest(api, 1, b'frFR')[b'description'].decode(), offer)
+            self.assertTrue(api.GetQuest(api, 1, b'frFR')[b'hasAITranslation'])
+            self.assertIsNone(api.GetQuestDialogue(api, 1, None, b'frFR'))
+
+        localized = record['locales']['frFR']
+        localized['description'] = 'Remettez la lettre.'
+        projected = runtime_catalog.project_localized_record('quests', 1, record, 'frFR', {})
+        self.assertEqual(projected['description'], localized['description'])
+        self.assertFalse(projected['hasAITranslation'])
+
+        record['locales']['enUS']['description'] = 'Bring both letters.'
+        localized['description'] = record['locales']['enUS']['description']
+        projected = runtime_catalog.project_localized_record('quests', 1, record, 'frFR', {})
+        self.assertEqual(projected['description'], localized['description'])
+        self.assertFalse(projected['hasAITranslation'])
+
     @classmethod
     def setUpClass(cls):
         cls.metadata = read_metadata(ROOT / 'ForeverRosettaStone/ForeverRosettaStone.toc', include_pages=True)
