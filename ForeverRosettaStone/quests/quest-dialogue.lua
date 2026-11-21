@@ -65,7 +65,8 @@ local function UsesPlayerName(text)
 end
 
 function Addon:MatchQuestDialogue(npcID, questID, stage, native)
-    if not ReadableString(native) then return end
+    local readable = ReadableString(native)
+    if not questID and not readable then return end
     local db = ForeverRosettaStoneDB
     local client, target = GetLocale(), self:GetTargetLocale()
     local translations = db:GetQuestDialogue(questID, npcID, target)
@@ -74,7 +75,7 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
     local name = UnitName("player")
     local firstName = ReadableString(name) and name:match("^(%S+)%s+%S")
 
-    if questID and (stage == "progress" or stage == "complete") and (sex == 2 or sex == 3) and native:find("%S") then
+    if questID and (sex == 2 or sex == 3) then
         -- English owns every variant, including variants missing in the source or target locale.
         local english = target == "enUS" and translations or db:GetQuestDialogue(questID, npcID, "enUS")
         local text = AgreedQuestText(english, translations, npcID, questID, stage, sex)
@@ -84,6 +85,7 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
         end
     end
 
+    if not readable then return end
     local source = client == target and translations or db:GetQuestDialogue(questID, npcID, client)
     if not source then return end
     local observed, matches, foreverMatches = Normalize(native), {}, {}
@@ -307,7 +309,8 @@ function Addon:GetCatalogDialogueSections(questID, context)
     local native = nativeText[context]()
     local translated = self:MatchQuestDialogue(npcID, questID, stage, native)
     if translated then
-        return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. native
+        local observed = ReadableString(native) and native or ""
+        return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. observed
     end
     if stage == "gossip" and ReadableString(native) then
         local sections, hasTranslatedRow = self:CreateQuestDialogueSections(nil, context, nil, npcID)

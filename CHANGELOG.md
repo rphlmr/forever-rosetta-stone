@@ -7,7 +7,7 @@
 ### Fixed
 
 - Aligned the Required Items heading and item cards in the translated quest panel.
-- Kept quest progress and turn-in translations visible when the interaction identifies a translation, even if the client wording differs. This restores Guard Parker's turn-in dialogue for A Free Lunch on French clients.
+- Kept quest offer, progress, and turn-in translations visible when the interaction identifies a translation, even if the client wording differs. This restores Guard Parker's turn-in dialogue for A Free Lunch on French clients.
 - Translated the Azeroth Commerce Authority reputation requirement on Reins of the Pack Kodo on French clients.
 
 ## [1.5.0] - 2026-11-21

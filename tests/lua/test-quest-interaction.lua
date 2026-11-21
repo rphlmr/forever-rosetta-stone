@@ -99,9 +99,8 @@ do
         "an unambiguous quest line translates even with no catalog wording for the client language")
     missingSource = false
     check(not Addon:MatchQuestDialogue(198, 179, "progress", "Texte natif")
-        and not Addon:MatchQuestDialogue(197, 179, "complete", "Texte natif")
-        and not Addon:MatchQuestDialogue(197, 179, "progress", ""),
-        "catalog dialogue refuses unmatched NPC, phase and empty client text")
+        and not Addon:MatchQuestDialogue(197, 179, "complete", "Texte natif"),
+        "catalog dialogue refuses unmatched NPC and phase")
     alternate = "Translated progress"
     check(Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte") == "Translated progress",
         "quest variants with identical translations do not need to match the native text")
@@ -570,14 +569,20 @@ do
     local lookup, locale, sex, guid, questText = database.GetQuestDialogue, GetLocale, UnitSex, UnitGUID, GetQuestText
     local target = Addon:GetTargetLocale()
     local source = target == "enUS" and "frFR" or "enUS"
+    local ambiguous
     GetLocale = function() return source end
     UnitSex = function() return 2 end
     UnitGUID = function(unit) return unit == "npc" and "Creature-0-0-0-0-197-1" or nil end
     GetQuestText = function() return "Native offer variant" end
     database.GetQuestDialogue = function(_, questID, _, language)
         if questID == 179 then
-            return { { key = "offer", npcID = 197, stage = "accept",
+            local offers = { { key = "offer", npcID = 197, stage = "accept",
                 text = language == source and "Native offer variant" or "Translated offer variant" } }
+            if ambiguous then
+                offers[2] = { key = "second", npcID = 197, stage = "accept",
+                    text = language == source and "Other native offer" or "Other translated offer" }
+            end
+            return offers
         end
     end
     Addon:UpdateQuestInteraction()
@@ -585,8 +590,16 @@ do
         "matching NPC offer takes precedence over the generic quest description")
     GetQuestText = function() return "A different offer" end
     Addon:UpdateQuestInteraction()
+    check(reader.body.lastSections[2].text == "Translated offer variant",
+        "an unambiguous offer translates independently of the live wording")
+    GetQuestText = function() return nil end
+    Addon:UpdateQuestInteraction()
+    check(reader.body.lastSections[2].text == "Translated offer variant",
+        "an unambiguous offer translates when the live text is unavailable")
+    ambiguous = true
+    Addon:UpdateQuestInteraction()
     check(reader.body.lastSections[2].text:find("What do we have here", 1, true),
-        "an unmatched offer keeps the translated quest description")
+        "an ambiguous offer keeps the translated quest description")
     database.GetQuestDialogue, GetLocale, UnitSex, UnitGUID, GetQuestText = lookup, locale, sex, guid, questText
     Addon:UpdateQuestInteraction()
 end
