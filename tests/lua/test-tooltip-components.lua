@@ -10,7 +10,7 @@ local function show()
     GameTooltip:Show()
     context.flushTimers()
 end
-local function emit(source, data, body)
+local function emit(source, data, body, title)
     source:ClearLines()
     source.processingInfo = source.processingInfo or {}
     source.processingInfo.tooltipData = data
@@ -18,12 +18,13 @@ local function emit(source, data, body)
         or data.type == Enum.TooltipDataType.Toy and Enum.TooltipDataLineType.ItemName
         or data.type == Enum.TooltipDataType.Unit and Enum.TooltipDataLineType.UnitName
         or Enum.TooltipDataLineType.SpellName
-    source:AddLine("Native title")
+    title = title or "Native title"
+    source:AddLine(title)
     for _, callback in ipairs(context.lineCallbacks[lineType] or {}) do
         callback(source, { type = lineType, lineIndex = 1 })
     end
     if body then
-        data.lines = { { type = lineType, lineIndex = 1, leftText = "Native title" } }
+        data.lines = { { type = lineType, lineIndex = 1, leftText = title } }
         for _, row in ipairs(body) do
             if row.rightText then source:AddDoubleLine(row.leftText, row.rightText)
             else source:AddLine(row.leftText) end
@@ -817,6 +818,52 @@ equal(linkedQuest.tip:IsShown(), false, "unknown chat quests hide previous trans
 emit(ItemRefTooltip, { type = Enum.TooltipDataType.Quest, id = { secret = true }, lines = {} })
 equal(linkedQuest.kind, nil, "secret chat quest IDs are ignored")
 ItemRefTooltip:Hide()
+
+do
+    local dataTypes, lineTypes = Enum.TooltipDataType, Enum.TooltipDataLineType
+    local oldObject, oldObjective = dataTypes.Object, lineTypes.QuestObjective
+    local getObjectives = C_QuestLog.GetQuestObjectives
+    dataTypes.Object, lineTypes.QuestObjective = 4, 8
+    local header = "Fournitures de Rochenoire"
+    local nativeProgress = "Fournitures volées : 6/10"
+    local progress = { leftText = nativeProgress, type = lineTypes.QuestObjective, numFulfilled = 6, numRequired = 10 }
+    C_QuestLog.GetQuestObjectives = function(id)
+        if id ~= 98387 then return getObjectives(id) end
+        return {
+            { type = "item", text = "Armes volées : 0/8", numFulfilled = 0, numRequired = 8 },
+            { type = "item", text = nativeProgress, numFulfilled = 6, numRequired = 10 },
+        }
+    end
+    prepare(UIParent, "GetWorldCursor")
+    emit(GameTooltip, { type = dataTypes.Object }, {
+        { type = lineTypes.QuestTitle, id = 98387, leftText = "Barricade rochenoire" }, progress,
+    }, header)
+    show()
+    local spec = Addon.nameTooltips[GameTooltip]
+    equal(spec.kind, "quest", "world objects resolve quest translations from the typed quest title row")
+    equal(spec.tip.lines[1], header, "an unidentified object name remains native")
+    equal(spec.tip.lines[2], "Blackrock Blockade", "the world tooltip uses the quest's English title")
+    equal(spec.tip.lines[3], "Blackrock Supplies: 6/10", "the objective uses the indexed translation and live progress")
+    equal(GameTooltip.lines[3], nativeProgress, "the separate companion preserves the original progress row")
+    Addon:SetTooltipMode("stacked")
+    context.flushTimers()
+    equal(GameTooltip.lines[3], nativeProgress, "stacked quest objective translation leaves the native row intact")
+    equal(table.concat(GameTooltip.lines, "\n"):find("Blackrock Supplies: 6/10", 1, true) ~= nil, true,
+        "the captured stacked mode appends the translated object objective")
+    Addon:SetTooltipMode("separate")
+    progress.leftText = "Fournitures volées : 5/10"
+    emit(GameTooltip, { type = dataTypes.Object }, {
+        { type = lineTypes.QuestTitle, id = 98387, leftText = "Barricade rochenoire" }, progress,
+    }, header)
+    show()
+    equal(spec.tip.lines[3], progress.leftText, "an objective that disagrees with the live quest log remains native")
+    emit(GameTooltip, { type = dataTypes.Object }, { progress }, header)
+    show()
+    equal(spec.kind, nil, "an object without a quest title ID clears the old translation")
+    GameTooltip:Hide()
+    dataTypes.Object, lineTypes.QuestObjective = oldObject, oldObjective
+    C_QuestLog.GetQuestObjectives = getObjectives
+end
 
 local native = CreateFrame("Frame", nil, UIParent)
 native:SetSize(200, 200)

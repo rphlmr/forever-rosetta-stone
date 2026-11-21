@@ -36,13 +36,27 @@ local function TranslateObjective(text, source, target)
     return not missing and result or nil, values
 end
 
--- Unit tooltips carry an explicit quest title ID followed by typed objectives.
+local function MatchLiveObjective(text, objectives)
+    local selected
+    for _, objective in ipairs(objectives or {}) do
+        if canaccessallvalues(objective.native, objective.translated)
+            and type(objective.native) == "string" and type(objective.translated) == "string"
+            and text == Normalize(objective.native) then
+            if selected and selected ~= objective.translated then return end
+            selected = objective.translated
+        end
+    end
+    if selected and Normalize(selected) ~= text then return selected end
+end
+
+-- Unit and world object tooltips carry an explicit quest title ID followed by typed objectives.
 -- Match only templates owned by that quest; objective positions are never inferred.
-function Addon:GetUnitQuestTranslations(lines, locale)
+function Addon:GetUnitQuestTranslations(lines, locale, useLiveObjectives)
     local result, questID = {}, nil
+    local live = {}
     local types = Enum.TooltipDataLineType
     for _, line in ipairs(lines or {}) do
-        if canaccessallvalues(line.type) then
+        if canaccessallvalues(line) and type(line) == "table" and canaccessallvalues(line.type) then
             if types.QuestTitle ~= nil and line.type == types.QuestTitle then
                 questID = canaccessallvalues(line.id) and type(line.id) == "number" and line.id > 0 and line.id or nil
                 local target = questID and ForeverRosettaStoneDB:GetQuest(questID, locale)
@@ -73,6 +87,14 @@ function Addon:GetUnitQuestTranslations(lines, locale)
                             end
                         end
                     end
+                end
+                if useLiveObjectives and questID and not selected and canaccessallvalues(line.leftText)
+                    and type(line.leftText) == "string" then
+                    if live[questID] == nil then
+                        local ok, objectives = pcall(self.GetProgressLines, self, questID)
+                        live[questID] = ok and objectives or false
+                    end
+                    selected = MatchLiveObjective(Normalize(line.leftText), live[questID])
                 end
                 result[line] = {text = not ambiguous and selected or nil,
                     incomplete = ambiguous or not selected, questID = questID}
@@ -153,5 +175,17 @@ Addon:RegisterNameTooltipComponent({
     ResolveData = function(source, data)
         if (source == ItemRefTooltip or source == Addon.debugPreviewSource) and data.type == Enum.TooltipDataType.Quest
             and Addon:IsReadableEntityID(data.id) then return data.id end
+        local objectType = Enum.TooltipDataType.Object
+        if source ~= GameTooltip or objectType == nil or not canaccessallvalues(data.type, data.lines)
+            or data.type ~= objectType or type(data.lines) ~= "table" then return end
+        local titleType = Enum.TooltipDataLineType.QuestTitle
+        if titleType == nil then return end
+        for _, line in ipairs(data.lines) do
+            if canaccessallvalues(line) and type(line) == "table" and canaccessallvalues(line.type)
+                and line.type == titleType and Addon:IsReadableEntityID(line.id)
+                and ForeverRosettaStoneDB:GetQuest(line.id, Addon:GetTargetLocale()) then
+                return line.id
+            end
+        end
     end,
 })
