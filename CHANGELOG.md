@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Updated the Stormshroud Armor three-piece tooltip in all 18 languages. Melee attacks now have a 3% chance to restore 18 energy.
+
+### Translations
+
+- Added translations for 72 new class-set pieces and their set names. Updated item and spell tooltips, including Camper's Lure and the rogue five-piece bonus for Eviscerate and Death Mark.
+- Updated quest summaries and NPC names, including Toron Rockhoof in Mexican Spanish and Traditional Chinese.
+- Added the page for **Skonk's List** and 24 NPC and quest dialogue lines across all 18 languages.
+
 ## [1.3.0] - 2026-11-20
 
 ### Translations

@@ -2,7 +2,7 @@
   "locales": {
     "csCZ": {
       "auraDescription": "Ruší následující utrpěné odhození. Nelze skákat.",
-      "description": "Připoutejte se pavučinou k zemi, čímž zabráníte skákání a zrušíte další odhození během $d.",
+      "description": "Zruší následující odhození utrpěné během $d, ale po dobu trvání brání ve skákání.",
       "name": "Visící nit",
       "translationMetadata": {
         "fields": {
@@ -14,7 +14,8 @@
           "description": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "03c05ef4cd1408e7e7d5220404843f3dd0672521fe4c6fc207aa3504ab85c00a"
           },
           "name": {
             "origin": "community",
@@ -27,7 +28,7 @@
     },
     "daDK": {
       "auraDescription": "Ophæver den næste tilbageslagseffekt, du rammes af. Kan ikke hoppe.",
-      "description": "Spind dig fast til jorden, så du ikke kan hoppe, og ophæv den næste tilbageslagseffekt inden for $d.",
+      "description": "Ophæver den næste tilbageslagseffekt inden for $d, men forhindrer hop, mens effekten er aktiv.",
       "name": "Hængende tråd",
       "translationMetadata": {
         "fields": {
@@ -39,7 +40,8 @@
           "description": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "03c05ef4cd1408e7e7d5220404843f3dd0672521fe4c6fc207aa3504ab85c00a"
           },
           "name": {
             "origin": "ai",
@@ -51,7 +53,7 @@
     },
     "deDE": {
       "auraDescription": "Negiert den nächsten erlittenen Rückstoßeffekt. Kann nicht springen.",
-      "description": "Befestigt Euch am Boden, was das Springen verhindert und den nächsten erlittenen Rückstoßeffekt innerhalb von $d negiert.",
+      "description": "Negiert den nächsten Rückstoßeffekt, der innerhalb von $d erlitten wird, verhindert allerdings das Springen, während dieser Effekt aktiv ist.",
       "name": "Hängender Faden",
       "translationMetadata": {
         "fields": {
@@ -64,7 +66,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "deDE"
           },
           "name": {
@@ -78,7 +80,7 @@
     },
     "enUS": {
       "auraDescription": "Negating the next Knockback effect taken. Unable to jump.",
-      "description": "Web yourself to the ground, preventing jumping and negating the next Knockback effect taken within $d.",
+      "description": "Negates the next Knockback effect taken within $d, but prevents jumping while active.",
       "name": "Hanging Thread",
       "translationMetadata": {
         "fields": {
@@ -90,8 +92,8 @@
           },
           "description": {
             "origin": "original",
-            "source": "wowClient",
-            "sourceBuild": "1.60.1.70862",
+            "source": "wago",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "enUS"
           },
           "name": {
@@ -105,7 +107,7 @@
     },
     "esES": {
       "auraDescription": "Anula el siguiente efecto de repulsión recibido. Incapaz de saltar.",
-      "description": "Te anclas al suelo con una telaraña que impide saltar y anula el siguiente efecto de repulsión recibido en un plazo de $d.",
+      "description": "Anula el siguiente efecto de repulsión recibido en un plazo de $d, pero impide saltar mientras está activa.",
       "name": "Hilo colgante",
       "translationMetadata": {
         "fields": {
@@ -118,7 +120,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "esES"
           },
           "name": {
@@ -132,7 +134,7 @@
     },
     "esMX": {
       "auraDescription": "Anula el próximo efecto de repulsión que recibas. Incapaz de saltar.",
-      "description": "Te fijas al suelo con una telaraña, lo que impide los saltos y anula el siguiente efecto de repulsión que recibas durante $d.",
+      "description": "Anula el próximo efecto de repulsión que recibas en un lapso de $d, pero impide saltar mientras está activo.",
       "name": "Hilo colgante",
       "translationMetadata": {
         "fields": {
@@ -145,7 +147,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "esMX"
           },
           "name": {
@@ -159,7 +161,7 @@
     },
     "frFR": {
       "auraDescription": "Annule le prochain effet de repoussement subi. Incapable de sauter.",
-      "description": "Vous vous ancrez au sol avec de la toile, ce qui empêche les sauts et annule le prochain effet de repoussement subi dans les $d.",
+      "description": "Annule le prochain effet de repoussement subi dans les $d, mais vous empêche de sauter tant que l’effet est actif.",
       "name": "Fil de suspension",
       "translationMetadata": {
         "fields": {
@@ -172,7 +174,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "frFR"
           },
           "name": {
@@ -186,7 +188,7 @@
     },
     "hrHR": {
       "auraDescription": "Poništava sljedeći primljeni učinak odbacivanja. Skakanje nije moguće.",
-      "description": "Pričvrstite se mrežom za tlo, što sprječava skakanje i poništava sljedeći učinak odbacivanja unutar $d.",
+      "description": "Poništava sljedeći učinak odbacivanja primljen unutar $d, ali sprječava skakanje dok je aktivan.",
       "name": "Viseća nit",
       "translationMetadata": {
         "fields": {
@@ -198,7 +200,8 @@
           "description": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "03c05ef4cd1408e7e7d5220404843f3dd0672521fe4c6fc207aa3504ab85c00a"
           },
           "name": {
             "origin": "ai",
@@ -210,7 +213,7 @@
     },
     "itIT": {
       "auraDescription": "Annulla il prossimo effetto di respinta subito. Non puoi saltare.",
-      "description": "Fissati al suolo con una ragnatela, impedendo i salti e annullando il prossimo effetto di respinta subito entro $d.",
+      "description": "Annulla il prossimo effetto di respinta subito entro $d, ma impedisce di saltare mentre è attivo.",
       "name": "Filo pendente",
       "translationMetadata": {
         "fields": {
@@ -223,7 +226,8 @@
           "description": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "03c05ef4cd1408e7e7d5220404843f3dd0672521fe4c6fc207aa3504ab85c00a"
           },
           "name": {
             "origin": "ai",
@@ -235,7 +239,7 @@
     },
     "koKR": {
       "auraDescription": "다음에 받는 밀쳐내기 효과 무효화\r\n도약 불가",
-      "description": "$d 동안 거미줄로 자신을 땅에 고정해 도약을 방지하고 다음 밀쳐내기 효과를 무효화합니다.",
+      "description": "$d 내에 받는 다음 밀쳐내기 효과가 무효화되지만, 활성화된 동안 도약이 불가능합니다.",
       "name": "매달린 실",
       "translationMetadata": {
         "fields": {
@@ -248,7 +252,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "koKR"
           },
           "name": {
@@ -262,7 +266,7 @@
     },
     "plPL": {
       "auraDescription": "Neguje następny efekt odbijania. Nie mogę skakać.",
-      "description": "Przywiąż się do ziemi pajęczyną, zapobiegając skokom i negując następny efekt Knockback otrzymany w ciągu $d.",
+      "description": "Anuluje następny efekt odrzucenia otrzymany w ciągu $d, ale uniemożliwia skakanie, dopóki jest aktywny.",
       "name": "Wisząca nić",
       "translationMetadata": {
         "fields": {
@@ -274,9 +278,9 @@
           },
           "description": {
             "origin": "ai",
-            "source": "polishForever",
-            "sourceLocale": "plPL",
-            "sourceRevision": "9b7f35499cdc8c52ebf4de88f315c18092c16ac8"
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "03c05ef4cd1408e7e7d5220404843f3dd0672521fe4c6fc207aa3504ab85c00a"
           },
           "name": {
             "origin": "ai",
@@ -288,7 +292,7 @@
     },
     "ptBR": {
       "auraDescription": "Anulando o próximo efeito de repulsão sofrido. Não pode saltar.",
-      "description": "Prende-se no chão por uma teia, impedindo saltos e anulando o próximo efeito de repulsão dentro de $d.",
+      "description": "Nega o próximo efeito de Repulsão recebido dentro de $d, mas impede o jogador de pular enquanto ativo.",
       "name": "Fio Pendente",
       "translationMetadata": {
         "fields": {
@@ -301,7 +305,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "ptBR"
           },
           "name": {
@@ -315,7 +319,7 @@
     },
     "ruRU": {
       "auraDescription": "Следующий эффект отбрасывания будет предотвращен. Невозможно прыгать.",
-      "description": "Вас приковывает к земле паутина, лишающая возможности прыгать и предотвращающая следующий эффект отбрасывания. Время действия – $d.",
+      "description": "Нейтрализует следующий эффект отбрасывания в течение $d., но не дает прыгать.",
       "name": "Висящая нить",
       "translationMetadata": {
         "fields": {
@@ -328,7 +332,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "ruRU"
           },
           "name": {
@@ -342,7 +346,7 @@
     },
     "svSE": {
       "auraDescription": "Upphäver nästa tillbakaknuff som drabbar dig. Kan inte hoppa.",
-      "description": "Fäst dig vid marken med ett nät, vilket förhindrar hopp och upphäver nästa tillbakaknuff inom $d.",
+      "description": "Upphäver nästa tillbakaknuff inom $d, men förhindrar hopp medan effekten är aktiv.",
       "name": "Hängande tråd",
       "translationMetadata": {
         "fields": {
@@ -354,7 +358,8 @@
           "description": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "03c05ef4cd1408e7e7d5220404843f3dd0672521fe4c6fc207aa3504ab85c00a"
           },
           "name": {
             "origin": "ai",
@@ -366,7 +371,7 @@
     },
     "trTR": {
       "auraDescription": "Maruz kalınan sonraki geri savurma etkisini etkisiz kılar. Zıplanamaz.",
-      "description": "Kendini ağla yere sabitleyerek zıplamayı engelle ve $d içinde maruz kaldığın sonraki geri savurma etkisini etkisiz kıl.",
+      "description": "$d içinde maruz kalınan sonraki geri savurma etkisini engeller, ancak etkinken zıplamayı önler.",
       "name": "Sarkan İplik",
       "translationMetadata": {
         "fields": {
@@ -378,7 +383,8 @@
           "description": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "03c05ef4cd1408e7e7d5220404843f3dd0672521fe4c6fc207aa3504ab85c00a"
           },
           "name": {
             "origin": "ai",
@@ -390,7 +396,7 @@
     },
     "ukUA": {
       "auraDescription": "Скасовує наступний отриманий ефект відкидання. Стрибати неможливо.",
-      "description": "Прикріпіть себе павутиною до землі, що забороняє стрибати та скасовує наступне відкидання протягом $d.",
+      "description": "Скасовує наступний ефект відкидання, отриманий протягом $d, але не дає стрибати, поки діє.",
       "name": "Павутинна стропа",
       "translationMetadata": {
         "fields": {
@@ -402,7 +408,8 @@
           "description": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "03c05ef4cd1408e7e7d5220404843f3dd0672521fe4c6fc207aa3504ab85c00a"
           },
           "name": {
             "origin": "community",
@@ -415,7 +422,7 @@
     },
     "zhCN": {
       "auraDescription": "抵消下一次受到的击退效果。无法跳跃。",
-      "description": "用蛛网将自己固定在地上，无法跳跃，并抵消在$d内受到的下一次击退效果。",
+      "description": "抵消在$d内受到的下一次击退效果。在此效果生效期间无法跳跃。",
       "name": "悬垂之丝",
       "translationMetadata": {
         "fields": {
@@ -428,7 +435,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "zhCN"
           },
           "name": {
@@ -442,7 +449,7 @@
     },
     "zhTW": {
       "auraDescription": "抵銷下一個受到的擊退效果。無法跳躍。",
-      "description": "用絲網將自己固定在地面，無法跳躍，並抵銷$d內受到的下一個擊退效果。",
+      "description": "消除$d內受到的下一個擊退效果，但作用中時無法跳躍。",
       "name": "懸掛絲線",
       "translationMetadata": {
         "fields": {
@@ -455,7 +462,7 @@
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71037",
             "sourceLocale": "zhTW"
           },
           "name": {
