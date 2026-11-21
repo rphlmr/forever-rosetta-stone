@@ -105,6 +105,10 @@ Il me manque du houblon pour en faire le brassage.]]
 In order for our rich lager to taste
 More like beer and less like stew,
 Hops are needed to make the brew.]], "Thunderbrew progress renders four English verses from the captured French")
+    local turnIn = "Merci, ce repas tombe vraiment à pic ! Ça creuse, de protéger Comté-du-Lac des orcs et des gnolls !"
+    check(Addon:MatchQuestDialogue(464, 129, "complete", turnIn)
+        == "Thanks, I could really use the meal.  Guarding Lakeshire from the orcs and gnolls is tough work!",
+        "Guard Parker's captured French turn-in dialogue resolves to the existing English translation")
     GetLocale, Addon.GetTargetLocale, UnitSex = oldLocale, oldTarget, oldSex
 end
 do

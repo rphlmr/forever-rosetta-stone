@@ -112,6 +112,10 @@ objective source positions, or duplicate locale identifiers and English labels.
   is unique in that same verified build. SkillLine IDs and category IDs are distinct. The
   runtime may compare a typed requirement's text only with those owned IDs' source names;
   never scan all class/skill names. Required numeric ranks stay live, not catalog constants.
+  A generic client error row can carry an item-owned reputation requirement captured in
+  `locales[locale].reputationRequirement`. Preserve its complete native wording and provenance.
+  Bind only the verified faction ID and minimum standing in `tooltipData.requirements.reputation`.
+  The tooltip uses the owned faction name, standing label and client format when the full row matches.
 - Existing item/spell English `description` fields retain the raw client templates and field provenance.
   Spell `auraDescription` is a separate localized field with its own metadata. `$@spellaura` references use this
   field; a cast description must not substitute for an aura description.

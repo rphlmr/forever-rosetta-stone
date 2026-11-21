@@ -56,6 +56,8 @@ def entity_links(kind, entity):
             yield from link(f'tooltipData.{field}.{index}', target, entity_id, 'name')
     if kind == 'items':
         yield from link('tooltipData.limitCategoryID', 'itemlimitcategories', tooltip.get('limitCategoryID'), 'name')
+        reputation = tooltip.get('requirements', {}).get('reputation', {})
+        yield from link('tooltipData.requirements.reputation.factionID', 'factions', reputation.get('factionID'), 'name')
         for index, effect in enumerate(tooltip.get('effects', [])):
             yield from link(f'tooltipData.effects.{index}', 'spells', effect.get('spellID'))
         binding = tooltip.get('descriptionRow', {})

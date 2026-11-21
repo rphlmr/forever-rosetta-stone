@@ -316,6 +316,25 @@ local function TranslateLiteral(text)
     end
 end
 
+local function RenderFormatArguments(target, arguments, locale)
+    local index, firstValue = 0, nil
+    local result = target:gsub("%%([%d%.%$]*)[dscfFg]([^%%]*)", function(format, suffix)
+        index = index + 1
+        local value = arguments[tonumber(format:match("^(%d+)%$")) or index] or ""
+        firstValue = firstValue or value
+        local expanded = suffix:gsub("|4([^;]+);", function(forms)
+            return SelectPlural(forms, PluralAmount(value), locale or "enUS") or "$unsupported-plural"
+        end)
+        return value .. expanded
+    end):gsub("%%%%", "%%")
+    result = result:gsub("|4([^;]+);", function(forms)
+        local amount = firstValue and PluralAmount(firstValue)
+        return SelectPlural(forms, amount, locale or "enUS") or "$unsupported-plural"
+    end)
+    if result:find("$unsupported-plural", 1, true) then return end
+    return result
+end
+
 local function TranslateFormat(text, source, target, translateValue, strict, locale)
     if not Readable(source, "string") then return end
     source, target = CanonicalFormat(source), CanonicalFormat(target)
@@ -357,22 +376,7 @@ local function TranslateFormat(text, source, target, translateValue, strict, loc
         end
         if not arguments[positions[index]] then return end
     end
-    local index, firstValue = 0, nil
-    local result = target:gsub("%%([%d%.%$]*)[dscfFg]([^%%]*)", function(format, suffix)
-        index = index + 1
-        local value = arguments[tonumber(format:match("^(%d+)%$")) or index] or ""
-        firstValue = firstValue or value
-        local expanded = suffix:gsub("|4([^;]+);", function(forms)
-            return SelectPlural(forms, PluralAmount(value), locale or "enUS") or "$unsupported-plural"
-        end)
-        return value .. expanded
-    end):gsub("%%%%", "%%")
-    result = result:gsub("|4([^;]+);", function(forms)
-        local amount = firstValue and PluralAmount(firstValue)
-        return SelectPlural(forms, amount, locale or "enUS") or "$unsupported-plural"
-    end)
-    if result:find("$unsupported-plural", 1, true) then return end
-    return result
+    return RenderFormatArguments(target, arguments, locale)
 end
 
 TranslateCapturedEffect = function(addon, line, locale, key, formats)
@@ -979,6 +983,19 @@ local function TranslateOwnedItemRestriction(addon, line, id, locale)
                 and Normalize(line.leftText) == Normalize(source) then return target end
         end
     elseif IsLineType(line, "ErrorLine") then
+        local reputation = rules.requirements and rules.requirements.reputation
+        if reputation then
+            local source = ForeverRosettaStoneDB:GetItemDetails(id, GetLocale())
+            local captured = source and source.reputationRequirement
+            if Readable(captured, "string") and Normalize(captured) == Normalize(line.leftText) then
+                local faction = ForeverRosettaStoneDB:GetFactionName(reputation.factionID, locale)
+                local standing = addon:GetFactionStandingLabel(reputation.standing, locale)
+                local format = addon:GetClientLabel("ITEM_REQ_REPUTATION", locale)
+                if Readable(faction, "string") and Readable(standing, "string") and Readable(format, "string") then
+                    return RenderFormatArguments(CanonicalFormat(format), { faction, standing }, locale)
+                end
+            end
+        end
         return NamedFormat("ITEM_MIN_SKILL", rules.requiredLockTypes, ForeverRosettaStoneDB.GetLockTypeName)
     end
 end
