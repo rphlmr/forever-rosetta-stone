@@ -85,11 +85,11 @@ local function CreateErrorDialog()
         return panel
     end
     local sidebar = ProfessionPanel()
-    sidebar:SetPoint("TOPLEFT", window, "TOPLEFT", 12, -145)
+    sidebar:SetPoint("TOPLEFT", window, "TOPLEFT", 12, -110)
     sidebar:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 12, 46)
-    sidebar:SetWidth(232)
+    sidebar:SetWidth(300)
     local contentInset = ProfessionPanel()
-    contentInset:SetPoint("TOPLEFT", window, "TOPLEFT", 252, -145)
+    contentInset:SetPoint("TOPLEFT", window, "TOPLEFT", 320, -110)
     contentInset:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -30, 46)
     Addon.errorDialog.sidebar, Addon.errorDialog.contentInset, Addon.errorDialog.shade = sidebar, contentInset, shade
 
@@ -138,8 +138,8 @@ local function CreateErrorDialog()
     Addon.errorDialog.hint = hint
     Addon.errorDialog.window = window
     local selectOutput = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    selectOutput:SetSize(160, 24)
-    selectOutput:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -18, 16)
+    selectOutput:SetSize(180, 26)
+    selectOutput:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -18, 14)
     selectOutput:SetText(Addon:DebugText("copy"))
     selectOutput:SetScript("OnClick", Protect(function()
         edit:SetFocus()
@@ -147,17 +147,43 @@ local function CreateErrorDialog()
     end))
     Addon.errorDialog.selectOutput = selectOutput
 
+    -- Report view: one capture action, the numbered capture list, and its own clear action.
+    local pick = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
+    pick:SetSize(276, 30)
+    pick:SetPoint("TOPLEFT", window, "TOPLEFT", 24, -70)
+    pick:SetText(Addon:DebugText("inspect"))
+    pick:SetScript("OnClick", Protect(function() Addon:MoveDebugPicker("start") end))
+    local captureGossip = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
+    captureGossip:SetSize(220, 30)
+    captureGossip:SetPoint("LEFT", pick, "RIGHT", 10, 0)
+    captureGossip:SetText(Addon:DebugText("captureGossip"))
+    captureGossip:SetScript("OnClick", Protect(function() Addon:CaptureDebugGossip() end))
+    Addon.errorDialog.captureGossip = captureGossip
+    local list = CreateFrame("ScrollFrame", nil, window, "UIPanelScrollFrameTemplate")
+    list:SetPoint("TOPLEFT", window, "TOPLEFT", 22, -142)
+    list:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 22, 88)
+    list:SetWidth(252)
+    local listChild = CreateFrame("Frame", nil, list)
+    listChild:SetSize(252, 1)
+    list:SetScrollChild(listChild)
+    local clearCaptures = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
+    clearCaptures:SetSize(276, 26)
+    clearCaptures:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 24, 54)
+    clearCaptures:SetText(Addon:DebugText("clear"))
+    clearCaptures:SetScript("OnClick", Protect(function() Addon:MoveDebugPicker("clear") end))
+
+    -- Console view: free-form commands and addon-level reports.
     local command = CreateFrame("EditBox", nil, window, "InputBoxTemplate")
     command:SetSize(520, 24)
-    command:SetPoint("TOPLEFT", window, "TOPLEFT", 24, -78)
+    command:SetPoint("TOPLEFT", window, "TOPLEFT", 30, -78)
     command:SetAutoFocus(false)
     command:SetMaxLetters(0)
     command:SetTextColor(1, 1, 1, 1)
     local commandLabel = window:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    commandLabel:SetPoint("BOTTOMLEFT", command, "TOPLEFT", 0, 4)
+    commandLabel:SetPoint("BOTTOMLEFT", command, "TOPLEFT", -6, 4)
     commandLabel:SetText(Addon:DebugText("command"))
     local run = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    run:SetSize(70, 24)
+    run:SetSize(110, 26)
     run:SetPoint("LEFT", command, "RIGHT", 10, 0)
     run:SetText(Addon:DebugText("run"))
     local function Execute()
@@ -167,70 +193,53 @@ local function CreateErrorDialog()
     command:SetScript("OnEnterPressed", Protect(Execute))
     command:SetScript("OnEscapePressed", Protect(function() overlay:Hide() end))
     run:SetScript("OnClick", Protect(Execute))
-    local pick = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    pick:SetSize(150, 24)
-    pick:SetPoint("LEFT", run, "RIGHT", 10, 0)
-    pick:SetText(Addon:DebugText("inspect"))
-    pick:SetScript("OnClick", Protect(function() Addon:MoveDebugPicker("start") end))
     local help = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    help:SetSize(90, 24)
-    help:SetPoint("LEFT", pick, "RIGHT", 10, 0)
+    help:SetSize(110, 26)
+    help:SetPoint("LEFT", run, "RIGHT", 10, 0)
     help:SetText(Addon:DebugText("helpButton"))
     help:SetScript("OnClick", Protect(function()
         command:ClearFocus()
         command:SetText("help")
         Addon:RunDebugCommand("help")
     end))
-
-    local list = CreateFrame("ScrollFrame", nil, window, "UIPanelScrollFrameTemplate")
-    list:SetPoint("TOPLEFT", window, "TOPLEFT", 18, -118)
-    list:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 18, 50)
-    list:SetWidth(210)
-    local listChild = CreateFrame("Frame", nil, list)
-    listChild:SetSize(190, 1)
-    list:SetScrollChild(listChild)
     Addon.errorDialog.commandBox, Addon.errorDialog.run, Addon.errorDialog.pick = command, run, pick
-    Addon.errorDialog.help = help
-    local homeButton = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    homeButton:SetSize(90, 24)
-    homeButton:SetPoint("LEFT", help, "RIGHT", 10, 0)
-    homeButton:SetText(Addon:DebugText("home"))
-    homeButton:SetScript("OnClick", Protect(function() Addon:RunDebugCommand("") end))
-    Addon.errorDialog.homeButton, Addon.errorDialog.commandLabel = homeButton, commandLabel
+    Addon.errorDialog.help, Addon.errorDialog.commandLabel = help, commandLabel
     local addonReport = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    addonReport:SetSize(150, 24)
-    addonReport:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 18, 16)
+    addonReport:SetSize(180, 26)
+    addonReport:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 18, 14)
     addonReport:SetText(Addon:DebugText("addon"))
     addonReport:SetScript("OnClick", Protect(function()
         command:ClearFocus()
         Addon:RunDebugCommand("status")
     end))
-    local clearCaptures = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    clearCaptures:SetSize(150, 24)
-    clearCaptures:SetPoint("TOPRIGHT", window, "TOPRIGHT", -22, -40)
-    clearCaptures:SetText(Addon:DebugText("clear"))
-    clearCaptures:SetScript("OnClick", Protect(function()
-        command:ClearFocus()
-        Addon:RunDebugCommand("clear")
-    end))
     Addon.errorDialog.addonReport, Addon.errorDialog.clearCaptures = addonReport, clearCaptures
     local saveReport = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    saveReport:SetSize(150, 24)
-    saveReport:SetPoint("LEFT", addonReport, "RIGHT", 10, 0)
+    saveReport:SetSize(180, 26)
     saveReport:SetText(Addon:DebugText("save"))
     saveReport:SetScript("OnClick", Protect(function()
         Addon.preferences.debugReport = Addon.errorDialog.report
         hint:SetText(Addon:DebugText("saved"))
+        hint:Show()
     end))
     Addon.errorDialog.saveReport = saveReport
+    -- The reporting guide (steps and GitHub link) stays one button away, even with a capture open.
+    local guide = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
+    guide:SetSize(180, 26)
+    guide:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 18, 14)
+    guide:SetText(Addon:DebugText("help"))
+    guide:SetScript("OnClick", Protect(function()
+        Addon.debugPendingSelection = Addon.errorDialog.selectedEntry
+        Addon:ShowDebugConsole(Addon:GetDebugWelcome(), nil, "report")
+    end))
+    Addon.errorDialog.guide = guide
     local errorLog = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    errorLog:SetSize(150, 24)
-    errorLog:SetPoint("LEFT", saveReport, "RIGHT", 10, 0)
+    errorLog:SetSize(180, 26)
+    errorLog:SetPoint("LEFT", addonReport, "RIGHT", 10, 0)
     errorLog:SetText(Addon:DebugText("errorLog"))
     errorLog:SetScript("OnClick", Protect(function() Addon:ShowErrorDialog(true) end))
     Addon.errorDialog.errorLog = errorLog
     local clearErrorLog = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    clearErrorLog:SetSize(180, 24)
+    clearErrorLog:SetSize(180, 26)
     clearErrorLog:SetPoint("LEFT", saveReport, "RIGHT", 10, 0)
     clearErrorLog:SetText(Addon:DebugText("clearErrorLog"))
     clearErrorLog:SetScript("OnClick", Protect(function()
@@ -239,29 +248,10 @@ local function CreateErrorDialog()
     end))
     clearErrorLog:Hide()
     Addon.errorDialog.clearErrorLog = clearErrorLog
-    local captureBar = CreateFrame("StatusBar", nil, window)
-    captureBar:SetPoint("TOPLEFT", window, "TOPLEFT", 82, -42)
-    captureBar:SetPoint("RIGHT", clearCaptures, "LEFT", -12, 0)
-    captureBar:SetHeight(18)
-    captureBar:SetMinMaxValues(0, 30)
-    captureBar:SetStatusBarTexture([[Interface\TargetingFrame\UI-StatusBar]])
-    captureBar:SetStatusBarColor(0.15, 0.7, 0.85)
-    local barBackground = captureBar:CreateTexture(nil, "BACKGROUND")
-    barBackground:SetPoint("TOPLEFT", captureBar, "TOPLEFT", -2, 3)
-    barBackground:SetPoint("BOTTOMRIGHT", captureBar, "BOTTOMRIGHT", 2, -3)
-    barBackground:SetAtlas("Profession-ProgressBar-BG")
-    local barBorder = captureBar:CreateTexture(nil, "OVERLAY")
-    barBorder:SetPoint("TOPLEFT", captureBar, "TOPLEFT", -2, 3)
-    barBorder:SetAtlas("Profession-ProgressBar-frame", true)
-    barBorder:SetTextureSliceMargins(8, 6, 8, 6)
-    barBorder:SetPoint("RIGHT", captureBar, "RIGHT", 2, 0)
-    local captureCount = captureBar:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    captureCount:SetPoint("CENTER")
-    Addon.errorDialog.captureBar, Addon.errorDialog.captureCount = captureBar, captureCount
     local function ControllerAction(button)
         button.OnSmartNavClick = Protect(function() button:GetScript("OnClick")(button) end)
     end
-    for _, button in ipairs({ close, run, pick, help, homeButton, addonReport, clearCaptures, saveReport,
+    for _, button in ipairs({ close, run, pick, captureGossip, guide, help, addonReport, clearCaptures, saveReport,
         errorLog, clearErrorLog, selectOutput }) do
         ControllerAction(button)
     end
@@ -307,61 +297,16 @@ local function CreateErrorDialog()
     end))
     Addon.errorDialog.list, Addon.errorDialog.listChild = list, listChild
     Addon.errorDialog.pickedButtons = {}
+    Addon.errorDialog.viewReports = {}
 
     local listTitle = sidebar:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    listTitle:SetPoint("TOPLEFT", sidebar, "TOPLEFT", 12, -14)
+    listTitle:SetPoint("TOPLEFT", sidebar, "TOPLEFT", 14, -14)
     local empty = listChild:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     empty:SetPoint("TOPLEFT", listChild, "TOPLEFT", 4, -8)
-    empty:SetWidth(180)
+    empty:SetWidth(240)
     empty:SetJustifyH("LEFT")
     empty:SetText(Addon:DebugText("empty"))
-    local home = CreateFrame("Frame", nil, window)
-    home:SetPoint("TOPLEFT", window, "TOPLEFT", 18, -108)
-    home:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -18, 56)
-    local introduction = home:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-    introduction:SetPoint("TOPLEFT", home, "TOPLEFT", 20, -24)
-    introduction:SetText(Addon:DebugText("title"))
-    local introductionText = home:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-    introductionText:SetPoint("TOPLEFT", introduction, "BOTTOMLEFT", 0, -12)
-    introductionText:SetPoint("RIGHT", home, "RIGHT", -24, 0)
-    introductionText:SetJustifyH("LEFT")
-    introductionText:SetText(Addon:DebugText("pickHint"))
-    Addon.errorDialog.homeCards = {}
-    local function Action(key, description, index, callback)
-        local card = CreateFrame("Frame", nil, home, "BackdropTemplate")
-        card:SetPoint("TOPLEFT", home, "TOPLEFT", 4, -96 - (index - 1) * 116)
-        card:SetSize(940, 108)
-        card:SetBackdrop({
-            bgFile = [[Interface\Tooltips\UI-Tooltip-Background]],
-            edgeFile = [[Interface\Tooltips\UI-Tooltip-Border]],
-            tile = true, tileSize = 16, edgeSize = 16,
-            insets = { left = 4, right = 4, top = 4, bottom = 4 },
-        })
-        card:SetBackdropColor(0.06, 0.045, 0.025, 0.85)
-        card:SetBackdropBorderColor(0.48, 0.34, 0.16, 1)
-        local heading = card:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-        heading:SetPoint("TOPLEFT", card, "TOPLEFT", 24, -22)
-        heading:SetPoint("RIGHT", card, "RIGHT", -290, 0)
-        heading:SetJustifyH("LEFT")
-        heading:SetText(Addon:DebugText(key))
-        local button = CreateFrame("Button", nil, card, "UIPanelButtonTemplate")
-        button:SetPoint("RIGHT", card, "RIGHT", -24, 0)
-        button:SetSize(240, 30)
-        button:SetText(Addon:DebugText(key))
-        button:SetScript("OnClick", Protect(callback))
-        ControllerAction(button)
-        local text = card:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-        text:SetPoint("TOPLEFT", heading, "BOTTOMLEFT", 0, -12)
-        text:SetPoint("RIGHT", card, "RIGHT", -290, 0)
-        text:SetJustifyH("LEFT")
-        text:SetText(Addon:DebugText(description))
-        Addon.errorDialog.homeCards[index] = card
-        return button
-    end
-    Addon.errorDialog.inspectAction = Action("inspect", "inspectHint", 1, function() Addon:MoveDebugPicker("start") end)
-    Addon.errorDialog.reportAction = Action("addon", "addonHint", 2, function() Addon:RunDebugCommand("status") end)
-    Addon.errorDialog.shareAction = Action("help", "shareHint", 3, function() Addon:RunDebugCommand("report") end)
-    Addon.errorDialog.home, Addon.errorDialog.listTitle, Addon.errorDialog.empty = home, listTitle, empty
+    Addon.errorDialog.listTitle, Addon.errorDialog.empty = listTitle, empty
     Addon:CreateDebugDisplay(Addon.errorDialog, Protect)
 
     local stopPanel = CreateFrame("Frame", "ForeverRosettaStoneDebugStop", UIParent)
@@ -402,7 +347,7 @@ local function CreateErrorDialog()
     overlay:SetScript("OnHide", Protect(function()
         if Addon.errorDialog.hidingForPick then return end
         local returnView = Addon.errorDialog.errorReturnView
-        if Addon:IsDebugPicking() then returnView = { report = Addon:GetDebugPickedList() } end
+        if Addon:IsDebugPicking() then returnView = { report = Addon:GetDebugPickedList(), view = "report" } end
         Addon.errorDialog.errorReturnView = nil
         if Addon.MoveDebugPicker then Addon:MoveDebugPicker("close") end
         stop:Hide()
@@ -412,8 +357,8 @@ local function CreateErrorDialog()
             -- Let native OnHide navigation cleanup finish before reusing this window.
             C_Timer.After(0, Protect(function()
                 if overlay:IsShown() then return end
-                if returnView.display then Addon:ShowDebugDisplay()
-                else Addon:ShowDebugConsole(returnView.report) end
+                if returnView.view == "display" then Addon:ShowDebugDisplay()
+                else Addon:ShowDebugConsole(returnView.report, nil, returnView.view) end
             end))
         end
     end))
@@ -457,7 +402,66 @@ function Addon:SyncDebugController()
     end
 end
 
-function Addon:ShowDiagnosticReport(title, report, console, preparingPick)
+-- Each console view owns its controls; the view never depends on which text is displayed.
+local function ApplyDebugLayout(self, dialog, view, title, guide)
+    local width = view == "error" and 660 or math.min(1000, UIParent:GetWidth() - 40)
+    local height = view == "error" and 420 or math.min(620, UIParent:GetHeight() - 40)
+    dialog.window:SetSize(width, height)
+    local report, console, display = view == "report", view == "console", view == "display"
+    local visible = {
+        [dialog.pick] = report, [dialog.captureGossip] = report, [dialog.sidebar] = report, [dialog.list] = report,
+        [dialog.listTitle] = report, [dialog.clearCaptures] = report, [dialog.guide] = report,
+        [dialog.commandBox] = console, [dialog.commandLabel] = console, [dialog.run] = console,
+        [dialog.help] = console, [dialog.addonReport] = console, [dialog.errorLog] = console,
+        [dialog.clearErrorLog] = view == "error" and title == "Error report",
+        [dialog.saveReport] = not display, [dialog.selectOutput] = not display,
+        [dialog.scroll] = not display, [dialog.contentInset] = not display, [dialog.display] = display,
+        [dialog.hint] = report or view == "error",
+        [dialog.capturesTab] = view ~= "error", [dialog.displayToggle] = view ~= "error",
+        [dialog.consoleTab] = view ~= "error",
+    }
+    for frame, shown in pairs(visible) do frame:SetShown(shown) end
+    dialog.capturesTab:SetChecked(report)
+    dialog.displayToggle:SetChecked(display)
+    dialog.consoleTab:SetChecked(console)
+
+    local left, top = view == "report" and 320 or 12, view == "error" and -68 or -110
+    dialog.contentInset:ClearAllPoints()
+    dialog.contentInset:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", left, top)
+    dialog.contentInset:SetPoint("BOTTOMRIGHT", dialog.window, "BOTTOMRIGHT", -30, 46)
+    dialog.scroll:ClearAllPoints()
+    dialog.scroll:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", left + 16, top - 16)
+    dialog.scroll:SetPoint("BOTTOMRIGHT", dialog.window, "BOTTOMRIGHT", -40, 50)
+    local textWidth = width - left - 80
+    dialog.editBox:SetWidth(textWidth)
+    dialog.measure:SetWidth(textWidth - 8)
+    dialog.commandBox:SetWidth(width - 330)
+
+    dialog.saveReport:ClearAllPoints()
+    if view == "error" then dialog.saveReport:SetPoint("BOTTOMLEFT", dialog.window, "BOTTOMLEFT", 18, 14)
+    else dialog.saveReport:SetPoint("RIGHT", dialog.selectOutput, "LEFT", -10, 0) end
+    dialog.hint:ClearAllPoints()
+    if report then
+        dialog.hint:SetPoint("LEFT", dialog.captureGossip, "RIGHT", 18, 0)
+        dialog.hint:SetWidth(width - 590)
+        dialog.hint:SetText(self:DebugText("pickHint"))
+    else
+        dialog.hint:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", 80, -42)
+        dialog.hint:SetWidth(width - 104)
+        dialog.hint:SetText(self:DebugText("reportHint"))
+    end
+    -- The guide is instructions, not evidence: there is nothing to copy or save yet.
+    if guide then
+        dialog.selectOutput:Disable()
+        dialog.saveReport:Disable()
+    else
+        dialog.selectOutput:Enable()
+        dialog.saveReport:Enable()
+    end
+    dialog.title:SetText("Forever Rosetta Stone · " .. (view == "error" and title or self:DebugText("title")))
+end
+
+function Addon:ShowDiagnosticReport(title, report, console, preparingPick, view)
     local ok, reason = pcall(function()
         if not self.errorDialog then CreateErrorDialog() end
 
@@ -465,66 +469,18 @@ function Addon:ShowDiagnosticReport(title, report, console, preparingPick)
         dialog.errorReturnView = nil
         self:MoveDebugPreview("dismiss")
         if self:IsDebugPicking() then self:MoveDebugPicker("close") end
-        dialog.display:Hide()
-        local home = console and report == self:GetDebugWelcome()
-        if home then
-            dialog.consoleTab:SetChecked(true)
-            dialog.capturesTab:SetChecked(false)
+        if console then
+            -- Free-form output never lands on the tooltip tester, which has no text field.
+            view = view or (dialog.view ~= "display" and dialog.view) or (dialog.view and "console") or "report"
+            dialog.view = view
+            if view ~= "display" then dialog.viewReports[view] = report end
         else
-            dialog.consoleTab:SetChecked(false)
-            dialog.capturesTab:SetChecked(true)
+            view = "error"
         end
-        dialog.displayToggle:SetChecked(false)
+        if view == "report" then dialog.selectedEntry = self.debugPendingSelection end
+        self.debugPendingSelection = nil
         dialog.console = console
-        local width = console and math.min(1000, UIParent:GetWidth() - 40) or 660
-        dialog.window:SetSize(width, console and math.min(620, UIParent:GetHeight() - 40) or 420)
-        dialog.commandBox:SetWidth(width - 510)
-        dialog.commandBox:ClearAllPoints()
-        dialog.commandBox:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", 24, -118)
-        dialog.list:ClearAllPoints()
-        dialog.list:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", 24, -180)
-        dialog.list:SetPoint("BOTTOMLEFT", dialog.window, "BOTTOMLEFT", 18, 50)
-        for _, frame in ipairs({ dialog.commandBox, dialog.run, dialog.pick, dialog.help, dialog.list,
-            dialog.homeButton, dialog.commandLabel, dialog.listTitle, dialog.addonReport,
-            dialog.errorLog }) do
-            frame:SetShown(console and not home)
-        end
-        dialog.saveReport:SetShown(not home)
-        dialog.clearErrorLog:SetShown(not console and title == "Error report")
-        dialog.saveReport:ClearAllPoints()
-        if console then dialog.saveReport:SetPoint("LEFT", dialog.addonReport, "RIGHT", 10, 0)
-        else dialog.saveReport:SetPoint("BOTTOMLEFT", dialog.window, "BOTTOMLEFT", 18, 16) end
-        for _, frame in ipairs({ dialog.displayToggle, dialog.consoleTab, dialog.capturesTab,
-            dialog.clearCaptures, dialog.captureBar }) do frame:SetShown(console) end
-        dialog.sidebar:SetShown(console and not home)
-        dialog.contentInset:SetShown(not home)
-        dialog.contentInset:ClearAllPoints()
-        dialog.contentInset:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", console and 252 or 12, console and -145 or -68)
-        dialog.contentInset:SetPoint("BOTTOMRIGHT", dialog.window, "BOTTOMRIGHT", -30, 46)
-        dialog.home:SetShown(home)
-        dialog.hint:SetShown(not console)
-        dialog.selectOutput:SetShown(not home)
-        for index, card in ipairs(dialog.homeCards) do
-            card:ClearAllPoints()
-            card:SetPoint("TOPLEFT", dialog.home, "TOPLEFT", 4, -96 - (index - 1) * 116)
-            card:SetSize(width - 44, 108)
-        end
-        dialog.scroll:SetShown(not home)
-        if home then
-            dialog.selectOutput:Disable()
-            dialog.saveReport:Disable()
-        else
-            dialog.selectOutput:Enable()
-            dialog.saveReport:Enable()
-        end
-        dialog.scroll:ClearAllPoints()
-        dialog.scroll:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", console and 270 or 18, console and -165 or -76)
-        dialog.scroll:SetPoint("BOTTOMRIGHT", dialog.window, "BOTTOMRIGHT", -40, 50)
-        dialog.editBox:SetWidth(console and width - 310 or 598)
-        dialog.measure:SetWidth(console and width - 318 or 590)
-        dialog.title:SetText("Forever Rosetta Stone · " .. (console and self:DebugText("title") or title))
-        dialog.hint:SetWidth(width - 104)
-        dialog.hint:SetText(console and self:DebugText("inspectHint") or self:DebugText("reportHint"))
+        ApplyDebugLayout(self, dialog, view, title, view == "report" and report == self:GetDebugWelcome())
         dialog.report = report
         dialog.measure:SetText(dialog.report)
         dialog.editBox:SetHeight(math.max(300, dialog.measure:GetStringHeight() + 16))
@@ -547,9 +503,64 @@ function Addon:ShowDiagnosticReport(title, report, console, preparingPick)
     end
 end
 
-function Addon:ShowDebugConsole(report, preparingPick)
+function Addon:ShowDebugConsole(report, preparingPick, view)
     if self.InitializeSafetyMonitoring then self:InitializeSafetyMonitoring() end
-    self:ShowDiagnosticReport("Debug console", report, true, preparingPick)
+    self:ShowDiagnosticReport("Debug console", report, true, preparingPick, view)
+end
+
+function Addon:SelectDebugCapture(entry)
+    if self.InitializeSafetyMonitoring then self:InitializeSafetyMonitoring() end
+    local ok, report = pcall(self.GetDebugCaptureReport, self, entry)
+    if not ok then
+        pcall(self.RecordError, self, "debug capture report", report)
+        report = self:GetDebugPickedList()
+    end
+    self.debugPendingSelection = entry
+    self:ShowDebugConsole(report, nil, "report")
+end
+
+-- Reopens a tab with the content it had, so actions never send the player elsewhere.
+function Addon:ShowDebugView(view)
+    local dialog = self.errorDialog
+    view = view or dialog and dialog.view or "report"
+    if view == "display" then return self:ShowDebugDisplay() end
+    if view == "console" then
+        return self:ShowDebugConsole(dialog and dialog.viewReports.console or self:GetCommandHelp(), nil, "console")
+    end
+    local entry = dialog and dialog.selectedEntry
+    local byID = self.debugPicker.byID
+    if entry and byID[entry.kind .. ":" .. entry.id] == entry then return self:SelectDebugCapture(entry) end
+    self:ShowDebugConsole(self:GetDebugWelcome(), nil, "report")
+end
+
+local function DebugNavigation(dialog, entries)
+    local view = dialog.console and dialog.view or "error"
+    local column, rows, edge = {}, {}, nil
+    if view == "report" then
+        column = { dialog.pick, dialog.captureGossip }
+        for index = 1, #entries do column[#column + 1] = dialog.pickedButtons[index] end
+        for _, button in ipairs({ dialog.clearCaptures, dialog.guide, dialog.saveReport, dialog.selectOutput }) do
+            column[#column + 1] = button
+        end
+        rows = { { dialog.pick, dialog.captureGossip }, { dialog.guide, dialog.saveReport, dialog.selectOutput } }
+    elseif view == "console" then
+        column = { dialog.run, dialog.help, dialog.addonReport, dialog.errorLog, dialog.saveReport, dialog.selectOutput }
+        rows = { { dialog.run, dialog.help }, { dialog.addonReport, dialog.errorLog, dialog.saveReport, dialog.selectOutput } }
+    elseif view == "display" then
+        column = { dialog.displayKinds.item, dialog.displayKinds.spell, dialog.displayKinds.quest,
+            dialog.displayKinds.recipe, dialog.displayKinds.comparison, dialog.displayShow, dialog.displayPin,
+            dialog.displayTarget, dialog.displayHide, dialog.displaySeparate, dialog.displayStacked }
+        edge = dialog.displayKinds[dialog.displayKind]
+        rows = { { dialog.displayShow }, { dialog.displayPin, dialog.displayTarget, dialog.displayHide },
+            { dialog.displaySeparate, dialog.displayStacked } }
+    else
+        column = { dialog.saveReport, dialog.clearErrorLog, dialog.selectOutput }
+        rows = { { dialog.saveReport, dialog.clearErrorLog, dialog.selectOutput } }
+    end
+    column[#column + 1] = dialog.close
+    local tab = view == "report" and dialog.capturesTab or view == "console" and dialog.consoleTab
+        or view == "display" and dialog.displayToggle or nil
+    return column, rows, edge, tab
 end
 
 function Addon:RefreshDebugPickedList()
@@ -560,18 +571,19 @@ function Addon:RefreshDebugPickedList()
         local button = dialog.pickedButtons[index]
         if not button then
             button = CreateFrame("Button", nil, dialog.listChild, "UIPanelButtonTemplate")
-            button:SetSize(190, 26)
+            button:SetSize(244, 26)
             button:SetPoint("TOPLEFT", dialog.listChild, "TOPLEFT", 0, -(index - 1) * 28)
             local label = button:GetFontString()
-            label:SetWidth(174)
+            label:SetWidth(228)
             label:SetHeight(18)
+            label:SetJustifyH("LEFT")
             label:SetWordWrap(false)
             dialog.pickedButtons[index] = button
         end
-        button:SetText(self:GetDebugKindLabel(entry.kind) .. " · " .. entry.name)
-        button:SetScript("OnClick", Protect(function()
-            self:ShowDebugConsole(self:GetEntityDebugReport(entry.kind, entry.id))
-        end))
+        -- Capture order is the order shown, so the player can tell the first and latest apart.
+        button:SetText(index .. ". " .. self:GetDebugKindLabel(entry.kind) .. " · " .. entry.name)
+        if entry == dialog.selectedEntry then button:LockHighlight() else button:UnlockHighlight() end
+        button:SetScript("OnClick", Protect(function() self:SelectDebugCapture(entry) end))
         button.OnSmartNavClick = button:GetScript("OnClick")
         button.OnSmartNavSelect = Protect(function()
             if InCombatLockdown() then return end
@@ -583,73 +595,45 @@ function Addon:RefreshDebugPickedList()
     dialog.listChild:SetHeight(math.max(1, #entries * 28))
     dialog.empty:SetShown(#entries == 0)
     dialog.listTitle:SetText(self:DebugText("captures") .. " · " .. #entries .. "/30")
-    dialog.captureBar:SetValue(#entries)
-    dialog.captureCount:SetText(self:DebugText("count", #entries, 30))
+    -- Clear stays in place when the list is empty so controller focus never jumps away.
+    if #entries == 0 then dialog.clearCaptures:Disable() else dialog.clearCaptures:Enable() end
     if not InCombatLockdown() then
-        local navigation = dialog.home:IsShown()
-            and { dialog.inspectAction, dialog.reportAction, dialog.shareAction, dialog.pick, dialog.help,
-                dialog.homeButton, dialog.clearCaptures, dialog.close }
-            or { dialog.addonReport, dialog.pick, dialog.help, dialog.homeButton, dialog.clearCaptures, dialog.saveReport,
-                dialog.selectOutput, dialog.close, dialog.errorLog, dialog.clearErrorLog }
-        if dialog.display:IsShown() then
-            navigation = {}
-            for _, button in ipairs(dialog.displayNavigation) do navigation[#navigation + 1] = button end
-            for _, button in ipairs({ dialog.consoleTab, dialog.close }) do
-                navigation[#navigation + 1] = button
-            end
-        end
-        if not dialog.display:IsShown() and not dialog.home:IsShown() then
-            for index = 1, #entries do navigation[#navigation + 1] = dialog.pickedButtons[index] end
-        end
+        local column, rows, edge, selectedTab = DebugNavigation(dialog, entries)
         local visibleNavigation, seen = {}, {}
-        for _, button in ipairs(navigation) do
-            if button:IsShown() and button ~= dialog.consoleTab and button ~= dialog.capturesTab
-                and button ~= dialog.displayToggle and not seen[button] then
+        for _, button in ipairs(column) do
+            if button and button:IsShown() and not seen[button] then
                 visibleNavigation[#visibleNavigation + 1] = button
                 seen[button] = true
             end
         end
+        -- Every direction is rewritten on each refresh so no override survives from another view.
         for index, button in ipairs(visibleNavigation) do
             local previous = visibleNavigation[index - 1] or visibleNavigation[#visibleNavigation]
             local following = visibleNavigation[index + 1] or visibleNavigation[1]
-            for _, direction in ipairs({ "LEFT", "UP" }) do
-                SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION[direction], previous)
-            end
-            for _, direction in ipairs({ "RIGHT", "DOWN" }) do
-                SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION[direction], following)
+            SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.UP, previous)
+            SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.DOWN, following)
+            SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.LEFT, edge or previous)
+            SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.RIGHT, selectedTab or following)
+        end
+        if edge then
+            for _, button in pairs(dialog.displayKinds) do
+                SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.LEFT, button)
+                SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.RIGHT, dialog.displayShow)
             end
         end
-        local tabs = { dialog.consoleTab, dialog.capturesTab, dialog.displayToggle }
-        local selectedTab = dialog.home:IsShown() and dialog.consoleTab
-            or dialog.display:IsShown() and dialog.displayToggle or dialog.capturesTab
-        for _, button in ipairs(visibleNavigation) do
-            if selectedTab:IsShown() then
-                SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.RIGHT, selectedTab)
-            end
-        end
-        local function LinkRow(buttons, leftEdge)
+        for _, buttons in ipairs(rows) do
             local row = {}
             for _, button in ipairs(buttons) do
-                if button:IsShown() then row[#row + 1] = button end
+                if seen[button] then row[#row + 1] = button end
             end
             for index, button in ipairs(row) do
                 SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.LEFT,
-                    row[index - 1] or leftEdge or button)
+                    row[index - 1] or edge or button)
                 SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.RIGHT,
-                    row[index + 1] or selectedTab:IsShown() and selectedTab or button)
+                    row[index + 1] or selectedTab or button)
             end
         end
-        LinkRow({ dialog.run, dialog.pick, dialog.help, dialog.homeButton })
-        LinkRow({ dialog.addonReport, dialog.saveReport, dialog.errorLog, dialog.clearErrorLog, dialog.selectOutput })
-        if dialog.display:IsShown() then
-            local kindButton = dialog.displayKinds[dialog.displayKind]
-            for _, button in pairs(dialog.displayKinds) do
-                SmartNavigation_AddJumpNavigationOverride(button, SMART_NAV_INPUT_DIRECTION.RIGHT, dialog.displayShow)
-            end
-            LinkRow({ dialog.displayShow, dialog.displayPin }, kindButton)
-            LinkRow({ dialog.displayTarget, dialog.displayHide }, kindButton)
-            LinkRow({ dialog.displaySeparate, dialog.displayStacked }, kindButton)
-        end
+        local tabs = { dialog.capturesTab, dialog.displayToggle, dialog.consoleTab }
         local pageButton = visibleNavigation[1]
         for index, tab in ipairs(tabs) do
             SmartNavigation_AddJumpNavigationOverride(tab, SMART_NAV_INPUT_DIRECTION.UP, tabs[index - 1] or tabs[#tabs])
@@ -711,7 +695,7 @@ function Addon:ShowErrorDialog(returnToDebug)
     local dialog = self.errorDialog
     local returnView = returnToDebug and dialog and dialog.errorReturnView
     if returnToDebug and dialog and dialog.frame:IsShown() and dialog.console then
-        returnView = { report = dialog.report, display = dialog.display:IsShown() }
+        returnView = { report = dialog.report, view = dialog.view }
     end
     -- Addon failures and blocked actions are all in the saved log; it is the single source shown here.
     self:ShowDiagnosticReport("Error report", "Forever Rosetta Stone · State: " .. self.lifecycle

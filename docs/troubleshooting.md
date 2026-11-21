@@ -42,7 +42,11 @@ WoW writes the saved history to disk when reloading or logging out.
 
 ## Capturing an NPC dialogue menu
 
-Keep the NPC dialogue open and run `/frs gossip`. The console captures the NPC name and GUID,
+While **Inspect something** runs, every NPC dialogue you open is added to the capture list,
+including its sub-menus. You can also keep a dialogue open and choose **Capture dialogue** in the
+Captures tab. Each NPC is one numbered entry that keeps every distinct menu.
+
+Alternatively, keep the NPC dialogue open and run `/frs gossip`. The console captures the NPC name and GUID,
 client build and language, greeting text, and every option returned by the client, including its
 IDs and other readable fields. Choose **Select output**, then press **Ctrl+C / Cmd+C** to copy
 the report. **Save report** is also available when using a controller.
@@ -92,14 +96,18 @@ the existing reopen bookmark uses the Forever Rosetta Stone icon and can reopen 
 
 Run `/frs`, or open **Settings → AddOns → Forever Rosetta Stone → Debug & reports**.
 The console uses your current game language, independently of Forever Rosetta Stone's translation language.
-The start screen offers **Inspect something**, **Addon report**, and **How to report**.
-Captured entries appear in the left column; detailed, copyable output appears when selected.
-Choose **Addon report** (or run `/frs status`)
-to get version, language, settings, and captured errors for a bug report. Choose
-**Clear captures** (or run `/frs clear`) to stop picking, remove the hover list, clear the
-command field, delete the saved report, and return to the instructions. This preserves settings and addon errors.
+The window has three side tabs and reopens on the last one you used:
+
+- **Captures**: report a problem. **Inspect something** adds hovered surfaces to the numbered
+  list on the left (1 is the oldest). **Capture dialogue** adds the NPC dialogue that is open.
+  Inspecting also records NPC dialogues as they open. Select an entry to see its copyable report.
+  **Clear captures**, under the list, empties it and deletes the saved report without leaving the tab.
+- **UI components**: test native tooltips (see below).
+- **Console**: type commands, open the **Addon report** (or run `/frs status`) and the **Error log**.
+
+Clearing captures preserves settings and addon errors.
 Use `/frs help`, type `help` in the
-command field, or choose the native **Help** button to reopen the same guide. It covers
+Console command field, or choose the native **Help** button to reopen the same guide. It covers
 settings and language selection, quest controls, entity inspection, picking, reports,
 recovery, and performance capture. Switch to the **UI components** tab or run `/frs display`
 to open native item, spell, quest, or crafting-recipe tooltips. Each type provides a default
@@ -119,12 +127,13 @@ To report a translated surface without knowing its ID:
 2. With a mouse, the console stays visible at 15% opacity in the highest addon UI layer. All of its controls
    and scroll areas become click-through; hover or select native game elements through the window.
 3. Choose the separate **Stop picking** control. The console returns to full opacity.
-4. Select an entry from the hovered list, then choose **Select output** and press **Ctrl+C / Cmd+C**.
+4. The latest capture opens automatically. Select another numbered entry if needed, then choose
+   **Select output** and press **Ctrl+C / Cmd+C**.
 5. Open a [new GitHub issue](https://github.com/rphlmr/forever-rosetta-stone/issues/new)
    and paste the entire output into its description. Fill in the included steps to reproduce,
    expected behavior, and actual behavior fields. Add a screenshot if useful.
 
-For a general addon problem, reproduce it and choose **Addon report**, then follow the same
+For a general addon problem, reproduce it and choose **Addon report** in the Console tab, then follow the same
 copy-and-paste steps. The report contains addon/client versions, language, settings, and
 captured errors. Each addon or entity report includes the GitHub destination and instructions.
 

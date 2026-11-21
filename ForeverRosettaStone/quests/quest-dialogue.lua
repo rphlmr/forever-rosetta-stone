@@ -138,6 +138,7 @@ end
 
 function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, translateOption)
     local sections = {}
+    local hasTranslatedRow = false
     local locale = Addon:GetTargetLocale()
     local greetingStyle, previousBottom, previousGroup
     local function AddRow(title, row, texture, group)
@@ -168,6 +169,7 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
         local quest = Addon:GetQuest(id)
         local title = quest and Render(quest.title, id, locale)
         if title then
+            hasTranslatedRow = true
             local font = context == "progress" and QuestProgressTitleText or QuestInfoTitleHeader
             if iconName then
                 AddRow(title, row, questIconPath .. iconName, group)
@@ -211,7 +213,7 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
         for _, option in ipairs(options) do
             local title, hasTranslation = OptionTitle(npcID, option, locale, translateOption)
             if title then
-                if not hasTranslation then missingOptions = true end
+                if hasTranslation then hasTranslatedRow = true else missingOptions = true end
                 local row = canaccessallvalues(option.orderIndex) and optionRows[option.orderIndex]
                 local icon = option.overrideIconID or option.icon
                 AddRow(title, row, canaccessallvalues(icon) and icon or nil, "option")
@@ -236,27 +238,34 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
             AddTitle(id, 10, rows[id] or _G["QuestTitleButton" .. (activeCount + index)], "AvailableQuestIcon", "available")
         end
     end
-    return sections
+    return sections, hasTranslatedRow
 end
 
+
+function Addon:GetInteractionNpcID()
+    local guid = UnitGUID and UnitGUID("npc")
+    if not ReadableString(guid) then return end
+    local kind, id = guid:match("^([^-]+)%-%d+%-%d+%-%d+%-%d+%-(%d+)%-")
+    local npcID = (kind == "Creature" or kind == "Vehicle") and tonumber(id)
+    return npcID, guid
+end
 
 function Addon:GetCatalogDialogueSections(questID, context)
     local stage = stages[context]
     if not stage then return end
     if stage == "gossip" then questID = nil
     elseif not self:IsReadableEntityID(questID) then return end
-    local guid = UnitGUID and UnitGUID("npc")
-    if not ReadableString(guid) then return end
-    local kind, id = guid:match("^([^-]+)%-%d+%-%d+%-%d+%-%d+%-(%d+)%-")
-    local npcID = (kind == "Creature" or kind == "Vehicle") and tonumber(id)
+    local npcID, guid = self:GetInteractionNpcID()
     if not npcID then return end
     local native = nativeText[context]()
     local translated = self:MatchQuestDialogue(npcID, questID, stage, native)
     if translated then
         return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. native
     end
-    if stage == "gossip" and ReadableString(native)
-        and ForeverRosettaStoneDB:GetQuestDialogue(nil, npcID, "enUS") then
-        return self:CreateQuestDialogueSections(nil, context, nil, npcID), guid .. "\031" .. native, true
+    if stage == "gossip" and ReadableString(native) then
+        local sections, hasTranslatedRow = self:CreateQuestDialogueSections(nil, context, nil, npcID)
+        if hasTranslatedRow or ForeverRosettaStoneDB:GetQuestDialogue(nil, npcID, "enUS") then
+            return sections, guid .. "\031" .. native, true
+        end
     end
 end

@@ -198,7 +198,18 @@ local optionalInputs = { enUS = "Optional ID or link", frFR = "Identifiant ou li
     deDE = "Optionale ID oder Link", esES = "ID o enlace opcional", esMX = "ID o enlace opcional", itIT = "ID o link facoltativo",
     ptBR = "ID ou link opcional", ruRU = "ID или ссылка (необязательно)", koKR = "ID 또는 링크 (선택)", zhCN = "ID 或链接（可选）", zhTW = "ID 或連結（選填）" }
 
+local gossipTexts = {
+    enUS = { "Capture dialogue", "Dialogue" }, frFR = { "Capturer le dialogue", "Dialogue" },
+    deDE = { "Dialog aufnehmen", "Dialog" }, esES = { "Capturar diálogo", "Diálogo" },
+    esMX = { "Capturar diálogo", "Diálogo" }, itIT = { "Acquisisci dialogo", "Dialogo" },
+    ptBR = { "Capturar diálogo", "Diálogo" }, ruRU = { "Записать диалог", "Диалог" },
+    koKR = { "대화 기록", "대화" }, zhCN = { "记录对话", "对话" }, zhTW = { "記錄對話", "對話" },
+}
+
 function Addon:DebugText(key, ...)
+    if key == "captureGossip" or key == "gossip" then
+        return (gossipTexts[GetLocale()] or gossipTexts.enUS)[key == "captureGossip" and 1 or 2]
+    end
     if key == "clearErrorLog" then
         local labels = { enUS = "Clear error log", frFR = "Effacer les erreurs", deDE = "Fehlerlog löschen",
             esES = "Borrar errores", esMX = "Borrar errores", itIT = "Cancella errori", ptBR = "Limpar erros",
@@ -261,6 +272,6 @@ function Addon:GetDebugKindLabel(kind)
     local labels = { item = "item", spell = "spell", talent = "talent", mount = "mount", npc = "npc", pet = "pet",
         quest = "quest", questOffer = "quest", questTracker = "quest", questInteraction = "quest", minimapQuest = "quest",
         map = "map", playerLocation = "playerLocation", area = "area", minimapLocation = "area",
-        mapDropdown = "mapMenu", trackingMenu = "tracking", characterStat = "stat" }
+        mapDropdown = "mapMenu", trackingMenu = "tracking", characterStat = "stat", gossip = "gossip" }
     return self:DebugText(labels[kind] or "other")
 end

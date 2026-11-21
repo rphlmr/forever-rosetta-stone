@@ -97,15 +97,15 @@ end
 
 function Addon:CreateDebugDisplay(dialog, protect)
     local panel = CreateFrame("Frame", nil, dialog.window)
-    panel:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", 18, -145)
+    panel:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", 24, -78)
     panel:SetPoint("BOTTOMRIGHT", dialog.window, "BOTTOMRIGHT", -40, 60)
     panel:Hide()
     dialog.display, dialog.displayKind, dialog.displayKinds = panel, "item", {}
     dialog.displayMode = self.preferences.tooltipMode
-    local function Button(parent, text, x, y, width, callback)
+    local function Button(parent, text, x, y, width, callback, height)
         local button = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
         button:SetPoint("TOPLEFT", parent, "TOPLEFT", x, y)
-        button:SetSize(width, 28)
+        button:SetSize(width, height or 28)
         button:SetText(text)
         button:SetScript("OnClick", protect(callback))
         button.OnSmartNavClick = button:GetScript("OnClick")
@@ -129,36 +129,45 @@ function Addon:CreateDebugDisplay(dialog, protect)
         end))
         return tab
     end
-    local consoleTab = SideTab("home", [[Interface\Icons\INV_Misc_Book_09]], 1)
-    consoleTab:SetScript("OnClick", protect(function() self:RunDebugCommand("") end))
-    consoleTab.OnSmartNavClick = consoleTab:GetScript("OnClick")
-    local capturesTab = SideTab("captures", [[Interface\Icons\INV_Misc_Note_01]], 2)
-    capturesTab:SetScript("OnClick", protect(function() self:RunDebugCommand("list") end))
+    -- Tabs follow the player's goal: report a problem, test a tooltip, then advanced commands.
+    local capturesTab = SideTab("captures", [[Interface\Icons\INV_Misc_Note_01]], 1)
+    capturesTab:SetScript("OnClick", protect(function() self:ShowDebugView("report") end))
     capturesTab.OnSmartNavClick = capturesTab:GetScript("OnClick")
-    dialog.capturesTab = capturesTab
-    local toggle = SideTab("display", [[Interface\Icons\INV_Misc_Spyglass_03]], 3)
+    local toggle = SideTab("display", [[Interface\Icons\INV_Misc_Spyglass_03]], 2)
     toggle:SetScript("OnClick", protect(function() self:ShowDebugDisplay() end))
     toggle.OnSmartNavClick = toggle:GetScript("OnClick")
-    dialog.displayToggle, dialog.consoleTab = toggle, consoleTab
-    for index, kind in ipairs(kinds) do
-        dialog.displayKinds[kind] = Button(panel, self:DebugText(kind), 0, -(index - 1) * 36, 210, function()
-                dialog.displayKind = kind
-                dialog.displayLabel:SetText(self:DebugText(kind) .. " · " .. self:DebugText("displayInput"))
-                dialog.displayInput:SetText(tostring(examples[kind]))
-                dialog.displayStatus:SetText(self:DebugText("displayHint"))
-            end)
+    local consoleTab = SideTab("consoleTab", [[Interface\Icons\INV_Misc_Book_09]], 3)
+    consoleTab:SetScript("OnClick", protect(function() self:ShowDebugView("console") end))
+    consoleTab.OnSmartNavClick = consoleTab:GetScript("OnClick")
+    dialog.capturesTab, dialog.displayToggle, dialog.consoleTab = capturesTab, toggle, consoleTab
+
+    local function Highlight(buttons, selected)
+        for key, button in pairs(buttons) do
+            if key == selected then button:LockHighlight() else button:UnlockHighlight() end
+        end
     end
     local label = panel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     label:SetPoint("TOPLEFT", panel, "TOPLEFT", 242, 0)
-    label:SetText(self:DebugText("item") .. " · " .. self:DebugText("displayInput"))
     dialog.displayLabel = label
     local input = CreateFrame("EditBox", nil, panel, "InputBoxTemplate")
-    input:SetPoint("TOPLEFT", panel, "TOPLEFT", 248, -30)
-    input:SetSize(320, 28)
+    input:SetPoint("TOPLEFT", panel, "TOPLEFT", 248, -26)
+    input:SetSize(330, 28)
     input:SetAutoFocus(false)
-    input:SetText("117")
     input:SetTextColor(1, 1, 1, 1)
     dialog.displayInput = input
+    dialog.SelectDisplayKind = function(kind, keepInput)
+        dialog.displayKind = kind
+        label:SetText(self:DebugText(kind) .. " · " .. self:DebugText("displayInput"))
+        if not keepInput then input:SetText(tostring(examples[kind])) end
+        Highlight(dialog.displayKinds, kind)
+    end
+    for index, kind in ipairs(kinds) do
+        dialog.displayKinds[kind] = Button(panel, self:DebugText(kind), 0, -(index - 1) * 36, 210, function()
+            dialog.SelectDisplayKind(kind)
+            dialog.displayStatus:SetText(self:DebugText("displayHint"))
+            self:RefreshDebugPickedList()
+        end)
+    end
     local function Display(pinned)
         input:ClearFocus()
         self:DisplayDebugTooltip(dialog.displayKind, input:GetText(), pinned)
@@ -166,32 +175,35 @@ function Addon:CreateDebugDisplay(dialog, protect)
     input:SetScript("OnEnterPressed", protect(function() Display(false) end))
     input:SetScript("OnEscapePressed", protect(function() input:ClearFocus() end))
     SmartNavigation_MarkFrameIgnored(input)
-    dialog.displayShow = Button(panel, self:DebugText("displayShow"), 242, -76, 160, function() Display(false) end)
-    dialog.displayPin = Button(panel, self:DebugText("displayPin"), 412, -76, 160, function() Display(true) end)
-    dialog.displayTarget = Button(panel, self:DebugText("displayTarget"), 242, -116, 160,
+    -- One primary action; the others are secondary and grouped on one row.
+    dialog.displayShow = Button(panel, self:DebugText("displayShow"), 242, -66, 520,
+        function() Display(false) end, 34)
+    dialog.displayPin = Button(panel, self:DebugText("displayPin"), 242, -110, 166, function() Display(true) end)
+    dialog.displayTarget = Button(panel, self:DebugText("displayTarget"), 419, -110, 166,
         function() self:DisplayDebugTooltip("target") end)
-    dialog.displayHide = Button(panel, self:DebugText("displayHide"), 412, -116, 160,
+    dialog.displayHide = Button(panel, self:DebugText("displayHide"), 596, -110, 166,
         function() GameTooltip:Hide(); ItemRefTooltip:Hide(); self:HideNameTooltips() end)
+    local modeLabel = panel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    modeLabel:SetPoint("TOPLEFT", panel, "TOPLEFT", 242, -158)
+    modeLabel:SetText(self:DebugText("previewLayout"))
+    local modes = {}
+    local function SelectMode(mode)
+        dialog.displayMode = mode
+        Highlight(modes, mode)
+    end
+    dialog.displaySeparate = Button(panel, self:DebugText("previewSeparate"), 242, -180, 255,
+        function() SelectMode("separate") end)
+    dialog.displayStacked = Button(panel, self:DebugText("previewStacked"), 507, -180, 255,
+        function() SelectMode("stacked") end)
+    modes.separate, modes.stacked = dialog.displaySeparate, dialog.displayStacked
+    dialog.SelectDisplayMode = SelectMode
     local status = panel:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-    status:SetPoint("TOPLEFT", panel, "TOPLEFT", 242, -238)
+    status:SetPoint("TOPLEFT", panel, "TOPLEFT", 242, -230)
     status:SetPoint("RIGHT", panel, "RIGHT", -8, 0)
     status:SetJustifyH("LEFT")
     dialog.displayStatus = status
-    local modeLabel = panel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    modeLabel:SetPoint("TOPLEFT", panel, "TOPLEFT", 242, -202)
-    local function ModeText()
-        modeLabel:SetText(self:DebugText("previewLayout") .. ": "
-            .. self:DebugText(dialog.displayMode == "separate" and "previewSeparate" or "previewStacked"))
-    end
-    dialog.displaySeparate = Button(panel, self:DebugText("previewSeparate"), 242, -156, 160,
-        function() dialog.displayMode = "separate"; ModeText() end)
-    dialog.displayStacked = Button(panel, self:DebugText("previewStacked"), 412, -156, 160,
-        function() dialog.displayMode = "stacked"; ModeText() end)
-    ModeText()
-    dialog.displayNavigation = { dialog.displayKinds.item, dialog.displayKinds.spell,
-        dialog.displayKinds.quest, dialog.displayKinds.recipe, dialog.displayKinds.comparison,
-        dialog.displayShow, dialog.displayPin, dialog.displayTarget, dialog.displayHide,
-        dialog.displaySeparate, dialog.displayStacked }
+    dialog.SelectDisplayKind("item")
+    SelectMode(dialog.displayMode)
 
     local returnPanel = CreateFrame("Frame", "ForeverRosettaStonePreviewReturn", UIParent)
     returnPanel:SetSize(280, 32)
@@ -222,17 +234,10 @@ end
 
 function Addon:ShowDebugDisplay()
     if self.InitializeSafetyMonitoring then self:InitializeSafetyMonitoring() end
-    self:ShowDebugConsole(self:GetDebugWelcome())
+    self:ShowDebugConsole(self:GetDebugWelcome(), nil, "display")
     local dialog = self.errorDialog
-    dialog.home:Hide()
-    dialog.scroll:Hide()
-    dialog.display:Show()
-    for _, frame in ipairs({ dialog.list, dialog.listTitle, dialog.commandBox, dialog.commandLabel, dialog.run,
-        dialog.pick, dialog.help, dialog.homeButton, dialog.addonReport, dialog.clearCaptures,
-        dialog.saveReport, dialog.selectOutput, dialog.errorLog }) do frame:Hide() end
-    dialog.consoleTab:SetChecked(false)
-    dialog.capturesTab:SetChecked(false)
-    dialog.displayToggle:SetChecked(true)
+    dialog.SelectDisplayKind(dialog.displayKind, true)
+    dialog.SelectDisplayMode(dialog.displayMode)
     dialog.displayStatus:SetText(self:DebugText("displayHint"))
     self:RefreshDebugPickedList()
     if dialog.controllerRegistered == dialog.window then

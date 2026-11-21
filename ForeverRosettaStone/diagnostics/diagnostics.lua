@@ -527,6 +527,56 @@ function Addon:CaptureGossipMenu()
     return Snapshot(report)
 end
 
+-- Keeps every distinct menu of one NPC, so sub-menus never replace the root menu.
+local function RecordGossip(self)
+    local snapshot = self:CaptureGossipMenu()
+    if snapshot.menuVisible ~= true then return nil, snapshot end
+    local npc = type(snapshot.npc) == "table" and snapshot.npc or {}
+    local guid = type(npc.guid) == "string" and npc.guid or ""
+    local id = tonumber(guid:match("^%a+%-%d+%-%d+%-%d+%-%d+%-(%d+)")) or tostring(npc.name or "?")
+    local key = "gossip:" .. id
+    local entry = picker.byID[key]
+    if not entry then
+        if #picker.entries >= PICK_LIMIT then picker.full = true; return nil, "limit" end
+        entry = { kind = "gossip", id = id, menus = {}, signatures = {} }
+        picker.entries[#picker.entries + 1] = entry
+        picker.byID[key] = entry
+    end
+    local signature = Format({ text = snapshot.text, options = snapshot.options })
+    if not entry.signatures[signature] then
+        entry.signatures[signature] = true
+        entry.menus[#entry.menus + 1] = snapshot
+    end
+    entry.name = type(npc.name) == "string" and npc.name or tostring(id)
+    entry.time = GetTime()
+    return entry
+end
+
+-- Inspection records dialogues silently; a closed or missing menu must not end the inspection.
+function Addon:RecordDebugGossip()
+    local ok, entry = pcall(RecordGossip, self)
+    if ok and entry then self:RefreshDebugPickedList() end
+end
+
+function Addon:CaptureDebugGossip()
+    local entry, reason = RecordGossip(self)
+    if not entry then
+        self:ShowDebugConsole(reason == "limit" and self:DebugText("limit") .. "\n\n" .. self:GetDebugPickedList()
+            or IssueReport("Forever Rosetta Stone · Gossip menu capture", Format(reason)), nil, "report")
+        return false
+    end
+    if self:IsDebugPicking() then self:RefreshDebugPickedList() else self:SelectDebugCapture(entry) end
+    return true
+end
+
+function Addon:GetDebugCaptureReport(entry)
+    if entry.menus then
+        return IssueReport("Forever Rosetta Stone · " .. self:DebugText("gossip") .. " " .. entry.id,
+            Format({ menuCount = #entry.menus, menus = entry.menus }))
+    end
+    return self:GetEntityDebugReport(entry.kind, entry.id)
+end
+
 function Addon:GetGossipDebugReport()
     return IssueReport("Forever Rosetta Stone · Gossip menu capture", Format(self:CaptureGossipMenu()))
 end
@@ -537,8 +587,12 @@ end
 
 function Addon:GetDebugWelcome()
     return table.concat({
-        "Forever Rosetta Stone · " .. self:DebugText("title"), "", self:DebugText("inspectHint"),
-        self:DebugText("addonHint"), self:DebugText("shareHint"),
+        "Forever Rosetta Stone · " .. self:DebugText("title"), "",
+        "1. " .. self:DebugText("inspect"), "   " .. self:DebugText("inspectHint"), "",
+        "2. " .. self:DebugText("save") .. " / " .. self:DebugText("copy"), "   " .. self:DebugText("reportHint"),
+        "   https://github.com/rphlmr/forever-rosetta-stone/issues/new", "",
+        "3. " .. self:DebugText("help"), "   " .. self:DebugText("shareHint"), "",
+        self:DebugText("consoleTab") .. " · " .. self:DebugText("addon"), "   " .. self:DebugText("addonHint"),
     }, "\n")
 end
 
@@ -569,16 +623,20 @@ function Addon:MoveDebugPicker(event)
         if GameMenuFrame and GameMenuFrame:IsShown() then HideUIPanel(GameMenuFrame) end
     end
     if event == "start" and (not self.errorDialog or not self.errorDialog.console
-        or not self.errorDialog.frame:IsShown()) then self:ShowDebugConsole(self:GetDebugPickedList(), true) end
+        or not self.errorDialog.frame:IsShown()) then self:ShowDebugConsole(self:GetDebugPickedList(), true, "report") end
     picker.state = nextState
-    if event == "start" or event == "clear" then
-        picker.entries, picker.byID, picker.full, picker.captureError = {}, {}, false, nil
-    end
+    -- A new inspection adds to the list; only Clear discards earlier captures.
+    if event == "clear" then picker.entries, picker.byID, picker.full = {}, {}, false end
+    if event == "start" or event == "clear" then picker.captureError = nil end
     self:SetDebugPickerView(nextState == "picking")
     if not picker.unitEvents then
         picker.unitEvents = CreateFrame("Frame")
         picker.unitEvents:SetScript("OnEvent", function(_, unitEvent)
-            self:RecordDebugUnit(unitEvents[unitEvent])
+            if unitEvent ~= "GOSSIP_SHOW" then return self:RecordDebugUnit(unitEvents[unitEvent]) end
+            -- The native gossip frame shows in its own GOSSIP_SHOW handler; read it afterwards.
+            C_Timer.After(0, function()
+                if self:IsDebugPicking() then self:RecordDebugGossip() end
+            end)
         end)
     end
     picker.unitEvents:UnregisterAllEvents()
@@ -587,6 +645,8 @@ function Addon:MoveDebugPicker(event)
             picker.unitEvents:RegisterEvent(unitEvent)
             self:RecordDebugUnit(unit)
         end
+        picker.unitEvents:RegisterEvent("GOSSIP_SHOW")
+        self:RecordDebugGossip()
         if self.errorDialog.display then self.errorDialog.display:Hide() end
         for source, spec in pairs(self.nameTooltips or {}) do
             if not source:IsForbidden() and source:IsShown() and spec.kind and spec.id then
@@ -598,10 +658,15 @@ function Addon:MoveDebugPicker(event)
                 self:GetQuest(self.current.questID))
         end
     end
-    if event == "stop" then self:ShowDebugConsole(self:GetDebugPickedList()) end
+    if event == "stop" then
+        local latest = picker.entries[#picker.entries]
+        if latest then self:SelectDebugCapture(latest)
+        else self:ShowDebugConsole(self:GetDebugWelcome(), nil, "report") end
+    end
     if event == "clear" then
         self.preferences.debugReport = nil
-        self:ShowDebugConsole(self:GetDebugWelcome())
+        if self.errorDialog then self.errorDialog.selectedEntry = nil end
+        self:ShowDebugConsole(self:GetDebugWelcome(), nil, "report")
         self.errorDialog.commandBox:SetText("")
     end
     return true
@@ -785,7 +850,7 @@ function Addon:GetCommandHelp()
         { "inspect", { "/frs item 25", "/frs spell 133", "/frs npc 8956", "/frs questid 783",
             "/frs questdata 783 7", "/frs map 27",
             "/frs debug item 25" } },
-        { "captures", { "/frs pick", "/frs stop", "/frs list", "/frs clear", "/frs gossip" } },
+        { "captures", { "/frs pick", "/frs stop", "/frs list", "/frs clear", "/frs gossip", "/frs capture gossip" } },
         { "display", { "/frs display", "/frs display item 117", "/frs display spell 133",
             "/frs display quest 783", "/frs display recipe 7418", "/frs display comparison",
             "/frs display target", "/frs pin quest 783" } },
@@ -885,10 +950,11 @@ function Addon:RunDebugCommand(command)
     action = action:lower()
     if action == "debug" or action == "/frs" then return self:RunDebugCommand(argument) end
     if action == "gossip" then self:ShowDebugConsole(self:GetGossipDebugReport()); return end
+    if action == "capture" and argument:lower() == "gossip" then self:CaptureDebugGossip(); return end
     if (action == "dump" or action == "/dump") and self.RunAPIProbe then self:RunAPIProbe(argument); return end
     if action == "pick" then self:MoveDebugPicker("start"); return end
     if action == "stop" then self:MoveDebugPicker("stop"); return end
-    if action == "list" then self:ShowDebugConsole(self:GetDebugPickedList()); return end
+    if action == "list" then self:ShowDebugConsole(self:GetDebugPickedList(), nil, "report"); return end
     if action == "clear" then self:MoveDebugPicker("clear"); return end
     if action == "display" or action == "pin" then
         self:ShowDebugDisplay()
@@ -919,23 +985,23 @@ function Addon:RunDebugCommand(command)
         for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
             if locale:lower() == argument then self:SetTargetLocale(locale); return end
         end
-        self:ShowDebugConsole(self:DebugText("invalid") .. ": " .. argument .. "\n\n" .. self:GetCommandHelp())
+        self:ShowDebugConsole(self:DebugText("invalid") .. ": " .. argument .. "\n\n" .. self:GetCommandHelp(), nil, "console")
         return
     elseif action == "status" then
-        self:ShowDebugConsole(IssueReport("Forever Rosetta Stone · " .. self:DebugText("addon"), Format(Snapshot(Environment(), 6))))
+        self:ShowDebugConsole(IssueReport("Forever Rosetta Stone · " .. self:DebugText("addon"), Format(Snapshot(Environment(), 6))), nil, "console")
         return
     elseif action == "report" then
         self:ShowDebugConsole(table.concat({ self:DebugText("help"), "", self:DebugText("shareHint"), "",
             self:DebugText("reportHint"), "https://github.com/rphlmr/forever-rosetta-stone/issues/new", "",
-            self:DebugText("saved") }, "\n"))
+            self:DebugText("saved") }, "\n"), nil, "report")
         return
     elseif action == "" then
-        self:ShowDebugConsole(self:GetDebugWelcome())
+        self:ShowDebugView()
         return
     elseif action == "help" then
-        self:ShowDebugConsole(self:GetCommandHelp())
+        self:ShowDebugConsole(self:GetCommandHelp(), nil, "console")
         return
     end
     self:ShowDebugConsole(self:DebugText("invalid") .. ": " .. tostring(command)
-        .. "\n\n" .. self:GetCommandHelp())
+        .. "\n\n" .. self:GetCommandHelp(), nil, "console")
 end

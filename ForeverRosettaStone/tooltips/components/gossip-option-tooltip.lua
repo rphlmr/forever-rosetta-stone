@@ -56,6 +56,10 @@ function Addon:UpdateGossipOptionTooltip()
         source, option = self:GetTooltipFocus(FindGossipOption, GossipFrame)
     end
     local name = source and source:IsVisible() and self:GetGossipOptionTranslation(option, self:GetTargetLocale())
+    if source and source:IsVisible() and not name then
+        local npcID = self:GetInteractionNpcID()
+        if npcID then name = self:MatchQuestDialogue(npcID, nil, "option", option.name) end
+    end
     if source and self:IsReadableEntityID(option.gossipOptionID) then
         self:RecordDebugSurface(source, "gossipOption", option.gossipOptionID, "gossip", nil, name)
     end

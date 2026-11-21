@@ -15,6 +15,7 @@ class APIOnlyModeTests(unittest.TestCase):
         self.lua.globals().Enabled = enabled
         self.lua.execute(b'''
             date=function() return 'test' end
+            GetLocale=function() return 'enUS' end
             messages={}
             print=function(message) messages[#messages+1]=message end
             SlashCmdList={}

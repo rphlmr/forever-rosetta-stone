@@ -209,6 +209,11 @@ do
         local catalogSections = Addon:GetCatalogDialogueSections(0, "gossip")
         check(catalogSections and catalogSections[1].text == "What do ye need directions to?",
             "the captured Ironforge greeting reuses directions instead of flight dialogue")
+        UnitGUID = function() return "Creature-0-1-0-4-99999999-ABCD" end
+        C_GossipInfo.GetText = function() return "Un accueil inconnu" end
+        local partial, _, missing = Addon:GetCatalogDialogueSections(0, "gossip")
+        check(missing and partial and partial[2].text == ForeverRosettaStoneDB:GetGossipOptionName(auction.gossipOptionID, locale),
+            "known menu options remain available for an NPC without a catalog greeting")
         local savedLocale = Addon.preferences.locale
         Addon.preferences.locale = "frFR"
         GetLocale = function() return "enUS" end

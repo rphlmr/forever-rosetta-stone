@@ -44,3 +44,15 @@ Gryth Thurden's flight option (97329) was captured in French on Forever
 1.60.1.70959. [Zephras](https://zephras.com/forever/enUS/npc/1573/) confirms the
 English label, VMaNGOS BroadcastText 3409 supplies matching reference locales,
 and Brazilian Portuguese uses the English fallback.
+
+The Stormwind Guard (NPC 1423) menu was captured in French on Forever 1.60.1.71037.
+Options 95310–95315 reuse the service names from 95408, 95409, 95412, 95414,
+95415 and 95416 respectively. The bank (95316) uses GlobalString 24710 and the
+transmogrifier (141422) uses 141989. Each option retains the exact captured French
+label. Icon 132053 is shared by all eight options.
+
+Argus (NPC 514) offered trainer option 95665 on Forever 1.60.1.71037. Its
+translations reuse his existing training dialogue (BroadcastText 3266), with
+the French option verified in the capture. His separate blacksmith greeting
+is captured French with provisional translations from French in the other
+17 locales. The eight additional bank labels for 95316 use English as source.
