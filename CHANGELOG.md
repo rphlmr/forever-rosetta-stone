@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [1.5.3] - 2026-11-21
+
+### Fixed
+
+- Translated quest titles and matching live objective progress when hovering quest objects in the world, including Blackrock Supplies.
+
 ## [1.5.2] - 2026-11-21
 
 ### Fixed

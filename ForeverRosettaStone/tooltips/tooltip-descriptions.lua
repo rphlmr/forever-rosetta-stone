@@ -1754,7 +1754,15 @@ function Addon:FillEnglishTooltip(spec)
         spellContexts, inlineTooltips)
     local requirementIncomplete = {}
     if spec.kind == "quest" then
-        for line, text in pairs(self:GetQuestLinkTranslations(spec, locale)) do liveDescriptions[line] = text end
+        if Enum.TooltipDataType.Object ~= nil and spec.data.type == Enum.TooltipDataType.Object then
+            -- The world object's name is separate from the identified quest rows.
+            if nameLine and Readable(nameLine.leftText, "string") then titleText = nameLine.leftText end
+            for line, translation in pairs(self:GetUnitQuestTranslations(lines, locale, true)) do
+                liveDescriptions[line] = translation.text
+            end
+        else
+            for line, text in pairs(self:GetQuestLinkTranslations(spec, locale)) do liveDescriptions[line] = text end
+        end
     elseif (spec.kind == "item" or (spec.kind == "spell" or spec.kind == "talent") and not aura)
         and self.GetSpellRequirementTranslations then
         local requirements
