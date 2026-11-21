@@ -58,8 +58,8 @@ function Addon:CreateQuestInteractionReader()
             body:ScrollTo(0)
             self.contentKey = key
         end
-        self:AlignWithNative(context)
-        self:SyncRewards(context)
+        local nativeTitleLeft = self:AlignWithNative(context)
+        self:SyncRewards(context, nativeTitleLeft)
         self.questID = Addon:IsReadableEntityID(questID) and questID or nil
         self.context = context
         options:SetShown(self.questID ~= nil or greeting)
@@ -216,7 +216,7 @@ function Addon:CreateQuestInteractionReader()
         end
     end
 
-    function reader:SyncRewards(context)
+    function reader:SyncRewards(context, nativeTitleLeft)
         for _, region in pairs(rewardRegions) do region:Hide() end
         body.spacerHeight = 0
         local required = context == "progress"
@@ -237,7 +237,10 @@ function Addon:CreateQuestInteractionReader()
             return
         end
         local scale = source:GetEffectiveScale() / body.child:GetEffectiveScale()
-        local origin = { left = left, top = top, scale = scale, x = 5, y = -body.textHeight, required = required }
+        -- The progress reader already aligns its text to the native title. Mirror the
+        -- requirements relative to that title so the scroll child's inset is applied once.
+        local originLeft = required and nativeTitleLeft or left
+        local origin = { left = originLeft, top = top, scale = scale, x = 5, y = -body.textHeight, required = required }
         Mirror(source, rewardRegions, body.child, origin, function(native, owner, text)
             return TranslateReward(source, native, owner, text)
         end)
@@ -306,6 +309,7 @@ function Addon:CreateQuestInteractionReader()
             bar:SetPoint("TOPLEFT", content, "TOPRIGHT", 8, 9)
             bar:SetPoint("BOTTOMLEFT", content, "BOTTOMRIGHT", 8, -17)
         end
+        return values[5]
     end
 
     function reader:Layout(source, policy, native)

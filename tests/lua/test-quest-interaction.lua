@@ -724,7 +724,8 @@ check(rowTextY == rowIconY and rowTextY == -43 and rowTextX == 24 and rowIconX =
 customReader:ShowSections(783, "reward", dialogue)
 check(not customReader.body.rowIcons[1]:IsShown(), "reusing the body clears old gossip icons")
 check(FindRewardText("170", customReader), "turn-in companion mirrors live XP")
-local previousProgressChild = QuestProgressScrollChildFrame
+local previousProgressChild, previousProgressScroll = QuestProgressScrollChildFrame, QuestProgressScrollFrame
+local previousProgressTitle = QuestProgressTitleText
 local previousRequiredItems = QuestProgressRequiredItemsText
 local previousProgressText = QuestProgressText
 local previousTurnInItems = TURN_IN_ITEMS
@@ -732,10 +733,14 @@ local previousQuestItemInfo = GetQuestItemInfo
 ClientApi.InstallGlobals("frFR", { "TURN_IN_ITEMS" })
 QuestProgressScrollChildFrame = CreateFrame("Frame", nil, QuestFrame)
 QuestProgressScrollChildFrame.left, QuestProgressScrollChildFrame.top = 30, 550
-QuestProgressRequiredItemsText = RewardText(TURN_IN_ITEMS, 30, 460)
+QuestProgressScrollFrame = CreateFrame("Frame", nil, QuestFrame)
+QuestProgressScrollFrame.top = 550
+function QuestProgressScrollFrame:GetScrollChild() return QuestProgressScrollChildFrame end
+QuestProgressTitleText = RewardText("Native progress title", 40, 540)
+QuestProgressRequiredItemsText = RewardText(TURN_IN_ITEMS, 40, 460)
 QuestProgressText = nativeRewards.ItemReceiveText
 local requiredItem = CreateFrame("Button", nil, QuestProgressScrollChildFrame)
-requiredItem.left, requiredItem.top = 30, 438
+requiredItem.left, requiredItem.top = 37, 438
 requiredItem:SetSize(150, 40)
 requiredItem:SetID(1)
 requiredItem.type, requiredItem.objectType = "required", "item"
@@ -750,14 +755,23 @@ end
 function QuestProgressScrollChildFrame:GetRegions() return QuestProgressRequiredItemsText, QuestProgressText end
 function QuestProgressScrollChildFrame:GetChildren() return requiredItem end
 customReader:ShowSections(783, "progress", dialogue)
-check(FindRewardText(Addon:GetClientLabel("TURN_IN_ITEMS", Addon:GetTargetLocale()), customReader),
-    "progress companion mirrors the translated requirements header")
+local requiredHeader = FindRewardText(Addon:GetClientLabel("TURN_IN_ITEMS", Addon:GetTargetLocale()), customReader)
+local progressScale = QuestProgressScrollChildFrame:GetEffectiveScale() / customReader.body.child:GetEffectiveScale()
+check(requiredHeader and select(4, requiredHeader:GetPoint(1)) == select(4, customReader.body.sections[1]:GetPoint(1)),
+    "required items header shares the text inset despite the extra inset of the native scroll child")
+local requiredButton
+for _, child in ipairs({customReader.body.child:GetChildren()}) do
+    if child.rewardSource == requiredItem and child:IsShown() then requiredButton = child end
+end
+check(requiredButton and math.abs(select(4, requiredButton:GetPoint(1)) - (5 - 3 * progressScale)) < 0.01,
+    "required item hover target keeps its native offset from the progress title")
 local requiredName = ForeverRosettaStoneDB:GetItemName(750, Addon:GetTargetLocale())
 check(requiredName and FindRewardText(requiredName, customReader) and FindRewardText("8", customReader),
     "progress companion translates the required item and copies its live count")
 check(not FindRewardText("Native receive", customReader), "progress mirror omits the native dialogue")
 customReader.frame:Hide()
 QuestProgressScrollChildFrame, QuestProgressRequiredItemsText = previousProgressChild, previousRequiredItems
+QuestProgressScrollFrame, QuestProgressTitleText = previousProgressScroll, previousProgressTitle
 QuestProgressText, TURN_IN_ITEMS = previousProgressText, previousTurnInItems
 GetQuestItemInfo = previousQuestItemInfo
 

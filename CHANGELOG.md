@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [1.5.1] - 2026-11-21
+
+### Fixed
+
+- Aligned the Required Items heading and item cards in the translated quest panel.
+
 ## [1.5.0] - 2026-11-21
 
 ### Added
