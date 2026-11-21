@@ -195,8 +195,6 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
     local greetingStyle, previousBottom, previousGroup
     local function AddRow(title, row, texture, group)
         local font, art, icon = RowStyle(row, texture)
-        local native = row and row:GetText()
-        local color = ReadableString(native) and native:match("^|c%x%x%x%x%x%x%x%x")
         local top = row and row.GetTop and row:GetTop()
         local gap = previousGroup and (group == previousGroup and 0 or 15) or 20
         if previousBottom and top and top <= previousBottom then gap = previousBottom - top end
@@ -211,12 +209,12 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
             if art and iconLeft then art.x = iconLeft - introLeft end
         end
         sections[#sections + 1] = {
-            text = color and (color .. title .. "|r") or title,
+            text = title,
             gap = gap, source = font or QuestInfoDescriptionText, icon = art, indent = indent,
             rowHeight = math.max(row and row.GetHeight and row:GetHeight() or 0, art and art.height or 0),
         }
     end
-    local function AddTitle(id, gap, row, iconName, group)
+    local function AddTitle(id, gap, row, iconName, group, header, headerKey)
         if not Addon:IsReadableEntityID(id) then return end
         local quest = Addon:GetQuest(id)
         local title = quest and Render(quest.title, id, locale)
@@ -224,6 +222,17 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
             hasTranslatedRow = true
             local font = context == "progress" and QuestProgressTitleText or QuestInfoTitleHeader
             if iconName then
+                if headerKey and group ~= previousGroup then
+                    local label = Addon:GetClientLabel(headerKey, locale) or _G[headerKey]
+                    if ReadableString(label) and label ~= "" then
+                        local top = header and header:GetTop()
+                        local headerGap = previousBottom and top and math.max(0, previousBottom - top) or 10
+                        sections[#sections + 1] = { text = label, gap = headerGap,
+                            source = header or QuestInfoObjectivesHeader or QuestInfoDescriptionText }
+                        previousBottom = header and header:GetBottom()
+                        previousGroup = group
+                    end
+                end
                 AddRow(title, row, questIconPath .. iconName, group)
                 return
             end
@@ -283,11 +292,13 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
         local activeCount = GetNumActiveQuests()
         for index = 1, activeCount do
             local id = GetActiveQuestID(index)
-            AddTitle(id, 10, rows[id] or _G["QuestTitleButton" .. index], "ActiveQuestIcon", "active")
+            AddTitle(id, 10, rows[id] or _G["QuestTitleButton" .. index], "ActiveQuestIcon", "active",
+                CurrentQuestsText, "CURRENT_QUESTS")
         end
         for index = 1, GetNumAvailableQuests() do
             local id = select(5, GetAvailableQuestInfo(index))
-            AddTitle(id, 10, rows[id] or _G["QuestTitleButton" .. (activeCount + index)], "AvailableQuestIcon", "available")
+            AddTitle(id, 10, rows[id] or _G["QuestTitleButton" .. (activeCount + index)], "AvailableQuestIcon", "available",
+                AvailableQuestsText, "AVAILABLE_QUESTS")
         end
     end
     return sections, hasTranslatedRow

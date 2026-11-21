@@ -166,8 +166,7 @@ function Addon:UpdateRewardTooltips(button)
         end
 
         -- The controller's selected reward counts as hovered in any panel that owns reward tooltips.
-        local current = not button and InputUtil.IsGamepadUIEnabled() and not SmartNavigation:IsCursorHidden()
-            and SmartNavigation:GetCurrentButton()
+        local current = not button and self:GetGamepadTooltipButton()
         local candidate = current and FindRewardButton(current)
         if candidate and IsRewardPanel(self, candidate.rewardPanel or self.panel) then button = candidate end
     end

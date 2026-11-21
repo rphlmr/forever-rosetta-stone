@@ -119,6 +119,27 @@ SmartNavigation:SelectButton(button)
 Addon.input:Fire("OnUpdate", 0.2)
 equal(primary:IsShown(), true, "controller reward selection shows comparison")
 equal(Addon.current.questID, 943, "comparison leaves quest selection unchanged")
+do
+    local isCursorHidden = SmartNavigation.IsCursorHidden
+    local forbidden = CreateFrame("Button")
+    function forbidden:IsForbidden() return true end
+    local cursorReads = 0
+    function SmartNavigation:IsCursorHidden()
+        cursorReads = cursorReads + 1
+        error("native cursor still points to a forbidden frame")
+    end
+    SmartNavigation.currentButton = forbidden
+    Addon:UpdateRewardTooltips()
+    equal(cursorReads, 0, "a forbidden selection never reaches the native cursor getter")
+    equal(primary:IsShown(), false, "losing reward focus clears its comparison")
+    SmartNavigation.currentButton = button
+    Addon:UpdateRewardTooltips()
+    equal(cursorReads, 1, "a stale native cursor safely defers an otherwise readable selection")
+    equal(primary:IsShown(), false, "a failing cursor getter does not leave a comparison open")
+    SmartNavigation.IsCursorHidden = isCursorHidden
+    Addon:UpdateRewardTooltips()
+    equal(primary:IsShown(), true, "controller comparison recovers when the cursor is readable")
+end
 comparison.additionalItems = {{ hyperlink = "item:5627" }}
 comparison.method = Enum.TooltipComparisonMethod.WithBothHands
 Addon:UpdateRewardTooltips()

@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## [1.5.2] - 2026-11-21
+
+### Fixed
+
+- Restored the Current Quests and Available Quests headings in translated NPC greetings. Quest titles no longer inherit the color of the level prefix.
+- Prevented a gamepad focus error after trading from suspending translations.
+
+### Translations
+
+- Added Deputy Feldon's greeting for male and female characters in all 18 supported languages.
+
 ## [1.5.1] - 2026-11-21
 
 ### Fixed
