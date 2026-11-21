@@ -42,7 +42,7 @@ local function Applies(entry, npcID, questID, stage, sex)
         and (not entry.playerSex or entry.playerSex == sex)
 end
 
-local function AgreedQuestText(entries, translations, npcID, questID, stage, sex)
+local function AgreedDialogueText(entries, translations, npcID, questID, stage, sex)
     local candidates = {}
     for _, entry in ipairs(entries or {}) do
         if Applies(entry, npcID, questID, stage, sex) then
@@ -65,8 +65,11 @@ local function UsesPlayerName(text)
 end
 
 function Addon:MatchQuestDialogue(npcID, questID, stage, native)
+    -- An NPC can have several options in a single menu. Those need an option ID
+    -- or a match against the live label, even when only one is in the catalog.
+    local canResolveByContext = questID or stage == "gossip"
     local readable = ReadableString(native)
-    if not questID and not readable then return end
+    if not canResolveByContext and not readable then return end
     local db = ForeverRosettaStoneDB
     local client, target = GetLocale(), self:GetTargetLocale()
     local translations = db:GetQuestDialogue(questID, npcID, target)
@@ -75,10 +78,10 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
     local name = UnitName("player")
     local firstName = ReadableString(name) and name:match("^(%S+)%s+%S")
 
-    if questID and (sex == 2 or sex == 3) then
+    if canResolveByContext and (sex == 2 or sex == 3) then
         -- English owns every variant, including variants missing in the source or target locale.
         local english = target == "enUS" and translations or db:GetQuestDialogue(questID, npcID, "enUS")
-        local text = AgreedQuestText(english, translations, npcID, questID, stage, sex)
+        local text = AgreedDialogueText(english, translations, npcID, questID, stage, sex)
         -- The live text can still identify the first-name form for multi-part names.
         if text and (not firstName or not UsesPlayerName(text)) then
             return Render(text, questID, target)

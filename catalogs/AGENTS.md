@@ -56,9 +56,10 @@ objective source positions, or duplicate locale identifiers and English labels.
   `locales[locale].dialogue`. The owner is the quest for offers, progress and turn-in, and the
   NPC for greetings and options. Keep `translationMetadata.fields["dialogue.<key>"]` with each
   localized line. The [Spoken source workflow](../datasources/spoken/SOURCE.md) prepares updates
-  through resync. For offers, progress and turn-in, quest ID, NPC, stage and player sex can
-  identify a translation when all eligible lines agree in the target locale. NPC dialogue
-  and ambiguous quest lines still require a full client text match.
+  through resync. For quest dialogue and NPC introductions, the quest ID when available,
+  NPC, stage and player sex can identify a translation when all eligible lines agree in
+  the target locale. Use the client text to resolve remaining ambiguity. NPC options
+  prefer the live option ID or a verified shared icon before checking the label.
   Canonical offer translations may use `dialogue.description` to supplement a missing or
   English fallback description. The `description` dialogue context uses stage `accept`,
   `sourceField: "description"`, and `sourceDescriptionSha256` of the verified English description.

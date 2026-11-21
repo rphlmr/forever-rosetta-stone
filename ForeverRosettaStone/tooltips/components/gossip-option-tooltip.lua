@@ -10,8 +10,8 @@ function Addon:GetGossipOptionTranslation(option, locale)
     local name = self:IsReadableEntityID(id) and db:GetGossipOptionName(id, locale)
     if name then return name end
     local icon = option.icon
-    return db:TranslateGossipOptionLabel(option.name, icon, GetLocale(), locale)
-        or db:GetGossipOptionNameByIcon(icon, locale)
+    return db:GetGossipOptionNameByIcon(icon, locale)
+        or db:TranslateGossipOptionLabel(option.name, icon, GetLocale(), locale)
 end
 
 local function FindGossipOption(frame)
@@ -25,16 +25,20 @@ local function FindGossipOption(frame)
             local element = frame.GetElementData and frame:GetElementData()
             local info = ReadableTable(element) and element.info
             local optionID = ReadableTable(info) and info.gossipOptionID
+            local elementOrder = ReadableTable(info) and info.orderIndex
             local order = frame.GetID and frame:GetID()
-            local text = frame.GetText and frame:GetText()
             -- Some client rows expose only a numeric element. Their button ID is
             -- orderIndex, not the option ID or the position in GetOptions().
-            if canaccessallvalues(optionID, order, text) and not frame.questID
+            if canaccessallvalues(optionID, elementOrder, order) and not frame.questID
                 and not (ReadableTable(info) and info.questID) then
+                local text = not optionID and frame.GetText and frame:GetText()
                 for _, option in ipairs(options) do
-                    if ReadableTable(option) and canaccessallvalues(option.gossipOptionID, option.orderIndex, option.name) then
-                        local matches = optionID and optionID == option.gossipOptionID and info.name == option.name
-                        if not optionID and type(order) == "number" and type(text) == "string" then
+                    if ReadableTable(option) then
+                        local matches = optionID and canaccessallvalues(option.gossipOptionID, option.orderIndex)
+                            and optionID == option.gossipOptionID
+                            and (type(elementOrder) ~= "number" or elementOrder == option.orderIndex)
+                        if not optionID and type(order) == "number"
+                            and canaccessallvalues(text, option.orderIndex, option.name) and type(text) == "string" then
                             matches = order == option.orderIndex and text == option.name
                         end
                         if matches then

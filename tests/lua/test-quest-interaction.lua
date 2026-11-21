@@ -162,6 +162,17 @@ do
         and dialogue[3].text == "Mallarına bakmak istiyorum."
         and dialogue[4].text == "Keşfedebileceğim zindanlardan bahseder misin?",
         "Boorand's three visible options are translated in Turkish")
+    UnitGUID = function(unit) return unit == "npc" and "Creature-0-1-0-4-1573-ABCD" end
+    C_GossipInfo.GetText = function() return "An unexpected introduction" end
+    C_GossipInfo.GetOptions = function() return {} end
+    local introduction = "Wildhammer cücelerinin binekleri hızlı olabilir ama Aerie Peak grifonları Büyük Demirhane’nin sıcağına dayanabilir mi? Hiç sanmıyorum!"
+    local vendor = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(vendor and vendor[1].text == introduction,
+        "a single service NPC introduction translates without matching the live text")
+    C_GossipInfo.GetText = function() return nil end
+    vendor = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(vendor and vendor[1].text == introduction,
+        "the service NPC introduction translates when the client returns no text")
     GetLocale, Addon.GetTargetLocale, UnitGUID = getLocale, getTargetLocale, getUnitGUID
     UnitSex = getUnitSex
     C_GossipInfo.GetText, C_GossipInfo.GetOptions, C_GossipInfo.GetActiveQuests = getText, getOptions, getActiveQuests
@@ -322,7 +333,7 @@ do
     option:SetText(flight.name)
     option.left, option.top = 30, 690
     option:SetSize(278, 20)
-    function option:GetElementData() return { info = flight } end
+    function option:GetElementData() return { info = { gossipOptionID = flight.gossipOptionID } } end
     local quest = CreateFrame("Button", nil, nativeViewport)
     quest.questID = 179
     quest.left, quest.top = 30, 665

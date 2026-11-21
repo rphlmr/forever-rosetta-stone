@@ -1,9 +1,10 @@
 # Spoken quest dialogue reference
 
 Use Spoken to locate candidate quest and NPC dialogue for Forever. Prepared records retain its
-provenance. For quest offers, progress and turn-in, the addon uses quest ID, NPC, stage and
-player sex when all eligible lines agree in the target locale. NPC dialogue and ambiguous
-quest lines require a match against the full live client text.
+provenance. For quest dialogue and NPC introductions, the addon uses the quest ID when
+available, NPC, stage and player sex when all eligible lines agree in the target locale.
+It checks the full live client text when the context leaves multiple possible translations.
+NPC options use their live ID or a verified shared icon when possible.
 
 - [Pinned quest corpus](https://github.com/rusty-key/spoken-wow/blob/9dd73894a1a736c3cc69e17c1bb4e8111d06f928/pipelines/quests/corpus/corpus.json.gz)
 - [Public quest catalogue](https://spoken.quest/)
