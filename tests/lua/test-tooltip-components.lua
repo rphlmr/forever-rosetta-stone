@@ -632,6 +632,8 @@ context.setMouseFoci({})
 GossipFrame:Hide()
 
 local previousGossipInfo = C_GossipInfo
+local previousGossipOptionType = GOSSIP_BUTTON_TYPE_OPTION
+GOSSIP_BUTTON_TYPE_OPTION = 3
 local auction = { gossipOptionID = 96916, orderIndex = 0, name = "Hôtel des ventes" }
 local trainer = { gossipOptionID = 96904, orderIndex = 13, name = "Maître de profession" }
 local gossipOptions = { trainer, auction }
@@ -644,18 +646,19 @@ GossipFrame:Show()
 local gossipRow = CreateFrame("Button", nil, GossipFrame)
 gossipRow.left, gossipRow.top = 400, 700
 gossipRow:SetSize(300, 32)
-local gossipElement, gossipOrder, gossipText = { info = auction }, 0, auction.name
+local gossipElement, gossipOrder = { info = auction }, 0
 function gossipRow:GetElementData() return gossipElement end
 function gossipRow:GetID() return gossipOrder end
-function gossipRow:GetText() return gossipText end
+function gossipRow:GetText() error("gossip option resolution must not read the label") end
 context.setMouseFoci({ gossipRow })
 Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "Auction House", "gossip tooltip uses stable option IDs, not API array order")
 equal(Addon.gossipOptionTooltip:GetOwner(), gossipRow, "gossip translation belongs to the native option row")
 gossipElement = 1
 Addon:UpdateGossipOptionTooltip()
-equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "Auction House", "numeric gossip elements resolve the live zero-based orderIndex")
-gossipOrder, gossipText = 13, trainer.name
+equal(Addon.gossipOptionTooltip:IsShown(), false, "an untyped row is not a verified gossip option")
+gossipElement = { buttonType = GOSSIP_BUTTON_TYPE_OPTION }
+gossipOrder = 13
 Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "Profession Trainer", "sparse orderIndex is not used as an array offset")
 context.setMouseFoci({})
@@ -665,9 +668,9 @@ equal(Addon.gossipOptionTooltip:IsShown(), true, "controller-focused gossip opti
 gossipOptions = { auction, trainer }
 Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "Profession Trainer", "reordered live options keep their identity")
-gossipText = "Different option"
+gossipOrder = 99
 Addon:UpdateGossipOptionTooltip()
-equal(Addon.gossipOptionTooltip:IsShown(), false, "recycled numeric rows with different text do not reuse a translation")
+equal(Addon.gossipOptionTooltip:IsShown(), false, "a typed gossip row with an unknown order clears its tooltip")
 gossipElement = { info = { gossipOptionID = 96904, name = "Stale option" } }
 Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "Profession Trainer",
@@ -688,7 +691,8 @@ Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "I need a ride.",
     "an uncataloged flight option gets the shared label by its native icon")
 unknownOption.gossipOptionID = nil
-gossipOrder, gossipText = unknownOption.orderIndex, unknownOption.name
+gossipElement.buttonType = GOSSIP_BUTTON_TYPE_OPTION
+gossipOrder = unknownOption.orderIndex
 Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "I need a ride.",
     "a flight option with no ID still gets the shared label")
@@ -714,6 +718,7 @@ GossipFrame:Hide()
 Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:IsShown(), false, "closing the menu hides the gossip translation")
 C_GossipInfo = previousGossipInfo
+GOSSIP_BUTTON_TYPE_OPTION = previousGossipOptionType
 SmartNavigation.activeFrame, SmartNavigation.currentButton = active, selected
 context.setMouseFoci({})
 

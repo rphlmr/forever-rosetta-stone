@@ -1,8 +1,6 @@
 local _, Addon = ...
 
 local nativeText = {
-    gossip = function() return C_GossipInfo.GetText and C_GossipInfo.GetText() end,
-    greeting = function() return GetGreetingText and GetGreetingText() end,
     detail = function() return GetQuestText and GetQuestText() end,
     progress = function() return GetProgressText and GetProgressText() end,
     reward = function() return GetRewardText and GetRewardText() end,
@@ -65,11 +63,8 @@ local function UsesPlayerName(text)
 end
 
 function Addon:MatchQuestDialogue(npcID, questID, stage, native)
-    -- An NPC can have several options in a single menu. Those need an option ID
-    -- or a match against the live label, even when only one is in the catalog.
-    local canResolveByContext = questID or stage == "gossip"
+    if not questID then return end
     local readable = ReadableString(native)
-    if not canResolveByContext and not readable then return end
     local db = ForeverRosettaStoneDB
     local client, target = GetLocale(), self:GetTargetLocale()
     local translations = db:GetQuestDialogue(questID, npcID, target)
@@ -78,7 +73,7 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
     local name = UnitName("player")
     local firstName = ReadableString(name) and name:match("^(%S+)%s+%S")
 
-    if canResolveByContext and (sex == 2 or sex == 3) then
+    if sex == 2 or sex == 3 then
         -- English owns every variant, including variants missing in the source or target locale.
         local english = target == "enUS" and translations or db:GetQuestDialogue(questID, npcID, "enUS")
         local text = AgreedDialogueText(english, translations, npcID, questID, stage, sex)
@@ -174,21 +169,14 @@ local function VisibleGreetingQuestRows()
     return rows
 end
 
-local function OptionTitle(npcID, option, locale, translateOption)
+local function OptionTitle(option, locale)
     if not canaccessallvalues(option) or type(option) ~= "table" then return end
     local translated = Addon:GetGossipOptionTranslation(option, locale)
     if translated then return translated, true end
-    local name = option.name
-    if not ReadableString(name) or name == "" then return end
-    if translateOption then
-        translated = translateOption(npcID, option)
-        return translated, translated ~= nil and translated ~= name
-    end
-    translated = Addon:MatchQuestDialogue(npcID, nil, "option", name)
-    return translated or name, translated ~= nil
+    if ReadableString(option.name) and option.name ~= "" then return option.name, false end
 end
 
-function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, translateOption)
+function Addon:CreateQuestDialogueSections(translated, context, questID, npcID)
     local sections = {}
     local hasTranslatedRow = false
     local locale = Addon:GetTargetLocale()
@@ -242,9 +230,9 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
 
     if questID then AddTitle(questID, 0) end
     local textStyle = context == "progress" and QuestProgressText or QuestInfoDescriptionText
-    local introduction = { text = translated or Addon:GetMissingTranslationMessage("gossip"),
+    local introduction = { text = translated,
         gap = questID and 5 or 0, source = textStyle }
-    sections[#sections + 1] = introduction
+    if translated then sections[#sections + 1] = introduction end
     if context == "detail" then
         local quest = Addon:GetQuest(questID)
         local summary = quest and quest.summary and Render(quest.summary, questID, locale) or GetObjectiveText()
@@ -272,7 +260,7 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
         end
         local missingOptions
         for _, option in ipairs(options) do
-            local title, hasTranslation = OptionTitle(npcID, option, locale, translateOption)
+            local title, hasTranslation = OptionTitle(option, locale)
             if title then
                 if hasTranslation then hasTranslatedRow = true else missingOptions = true end
                 local row = canaccessallvalues(option.orderIndex) and optionRows[option.orderIndex]
@@ -313,23 +301,145 @@ function Addon:GetInteractionNpcID()
     return npcID, guid
 end
 
+local function GossipOptions()
+    local options = C_GossipInfo and C_GossipInfo.GetOptions and C_GossipInfo.GetOptions()
+    if canaccessallvalues(options) and type(options) == "table" then return options end
+end
+
+local function IsQuestOption(option)
+    local flag = Enum.GossipOptionRecFlags and Enum.GossipOptionRecFlags.QuestLabelPrepend
+    return flag and canaccessallvalues(option.flags) and type(option.flags) == "number"
+        and FlagsUtil.IsSet(option.flags, flag)
+end
+
+function Addon:IsQuestGossipMenu()
+    local _, guid = self:GetInteractionNpcID()
+    local selected = self.selectedNpcGossip
+    if selected and selected.guid == guid and selected.quest then return true end
+    for _, option in ipairs(GossipOptions() or {}) do
+        if canaccessallvalues(option) and type(option) == "table" and IsQuestOption(option) then return true end
+    end
+end
+
+function Addon:RecordNpcGossipSelection(value, byIndex)
+    self.pendingNpcGossip = nil
+    local _, guid = self:GetInteractionNpcID()
+    local options = guid and GossipFrame and GossipFrame:IsShown() and GossipOptions()
+    if not options or not canaccessallvalues(value) or type(value) ~= "number" then return end
+    local selected
+    for _, option in ipairs(options) do
+        if canaccessallvalues(option) and type(option) == "table" then
+            local field = option.gossipOptionID
+            if byIndex then field = option.orderIndex end
+            if canaccessallvalues(field) and field == value then
+                if selected or not self:IsReadableEntityID(option.gossipOptionID) then return end
+                selected = option
+            end
+        end
+    end
+    if selected and (IsQuestOption(selected) or ForeverRosettaStoneDB:GetNpcGossipRoute(selected.gossipOptionID, true)) then
+        self.pendingNpcGossip = { guid = guid, optionID = selected.gossipOptionID, quest = IsQuestOption(selected) }
+    end
+end
+
+function Addon:AdvanceNpcGossip(event)
+    local pending = self.pendingNpcGossip
+    self.pendingNpcGossip, self.selectedNpcGossip = nil, nil
+    if event ~= "GOSSIP_SHOW" or not pending then return end
+    local _, guid = self:GetInteractionNpcID()
+    local options = GossipOptions()
+    if guid == pending.guid and options and (pending.quest or #options == 0) then
+        self.selectedNpcGossip = pending
+    end
+end
+
+function Addon:InstallNpcGossipTracking()
+    self.pendingNpcGossip, self.selectedNpcGossip = nil, nil
+    if self.npcGossipTracking or not C_GossipInfo then return end
+    local frame = CreateFrame("Frame")
+    frame:RegisterEvent("GOSSIP_SHOW")
+    frame:RegisterEvent("GOSSIP_CLOSED")
+    frame:SetScript("OnEvent", function(_, event)
+        if self.lifecycle == "ready" then self:Run("NPC gossip navigation", self.AdvanceNpcGossip, self, event) end
+    end)
+    local function Observe(method, byIndex)
+        if C_GossipInfo[method] then
+            hooksecurefunc(C_GossipInfo, method, function(option)
+                if self.lifecycle == "ready" then
+                    self:Run("NPC gossip selection", self.RecordNpcGossipSelection, self, option, byIndex)
+                end
+            end)
+        end
+    end
+    Observe("SelectOption", false)
+    Observe("SelectOptionByIndex", true)
+    self.npcGossipTracking = frame
+end
+
+local function ResolveNpcGossipRoute(guid, options)
+    local db = ForeverRosettaStoneDB
+    local selected = Addon.selectedNpcGossip
+    if selected and selected.guid == guid and #options == 0 then
+        return db:GetNpcGossipRoute(selected.optionID, true)
+    end
+    local owner, key
+    for _, option in ipairs(options) do
+        if canaccessallvalues(option) and type(option) == "table" then
+            local candidate, line = db:GetNpcGossipRoute(option.gossipOptionID, false)
+            if candidate then
+                if owner and (owner ~= candidate or key ~= line) then return nil, nil, true end
+                owner, key = candidate, line
+            end
+        end
+    end
+    return owner, key
+end
+
+local function NpcGossipText(npcID, guid, context, options)
+    local db = ForeverRosettaStoneDB
+    local owner, key, ambiguous
+    if context == "gossip" and options then
+        owner, key, ambiguous = ResolveNpcGossipRoute(guid, options)
+    end
+    if ambiguous then return end
+    if not owner then
+        local sex = UnitSex("player")
+        for _, row in ipairs(db:GetQuestDialogue(nil, npcID, "enUS") or {}) do
+            if Applies(row, npcID, nil, "gossip", sex) then
+                if key then return end
+                key = row.key
+            end
+        end
+        owner = npcID
+    end
+    if not key then return end
+    local locale = Addon:GetTargetLocale()
+    for _, row in ipairs(db:GetQuestDialogue(nil, owner, locale) or {}) do
+        if row.key == key then return Render(row.text, nil, locale), key end
+    end
+end
+
 function Addon:GetCatalogDialogueSections(questID, context)
     local stage = stages[context]
     if not stage then return end
-    if stage == "gossip" then questID = nil
-    elseif not self:IsReadableEntityID(questID) then return end
     local npcID, guid = self:GetInteractionNpcID()
-    if not npcID then return end
+    if stage == "gossip" then
+        local options = context == "gossip" and GossipOptions()
+        local translated, key
+        if npcID then translated, key = NpcGossipText(npcID, guid, context, options) end
+        if translated then
+            return self:CreateQuestDialogueSections(translated, context, nil, npcID), guid .. ":" .. key
+        end
+        local sections, hasTranslatedRow = self:CreateQuestDialogueSections(nil, context, nil, npcID)
+        if hasTranslatedRow then return sections, guid or context, true end
+        return
+    end
+
+    if not npcID or not self:IsReadableEntityID(questID) then return end
     local native = nativeText[context]()
     local translated = self:MatchQuestDialogue(npcID, questID, stage, native)
     if translated then
         local observed = ReadableString(native) and native or ""
         return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. observed
-    end
-    if stage == "gossip" and ReadableString(native) then
-        local sections, hasTranslatedRow = self:CreateQuestDialogueSections(nil, context, nil, npcID)
-        if hasTranslatedRow or ForeverRosettaStoneDB:GetQuestDialogue(nil, npcID, "enUS") then
-            return sections, guid .. "\031" .. native, true
-        end
     end
 end

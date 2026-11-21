@@ -2,6 +2,17 @@
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-11-22
+
+### Changed
+
+- The companion panel now opens only for quests and quest-related gossip. WoW Forever does not expose an ID for the greeting on screen, so the same NPC and options can lead to different lines. General NPC conversations now stay in the native window to avoid showing the wrong translation.
+- Quest titles remain visible when the greeting cannot be identified.
+
+### Translations
+
+- Added translations in all 18 supported languages for more innkeeper, banker, trainer and merchant dialogue options.
+
 ## [1.5.3] - 2026-11-21
 
 ### Fixed

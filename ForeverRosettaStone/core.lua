@@ -114,6 +114,7 @@ local function Initialize()
     Addon:CreateUI()
     Addon:CreateRewardTooltips()
     Addon:CreateNameTooltips()
+    Addon:InstallNpcGossipTracking()
     Addon.questTrackerTooltip, Addon.questOfferTooltip = nil, nil
     Addon.questTrackerTooltipKey = nil
     Addon:RegisterMapMenuTranslations()

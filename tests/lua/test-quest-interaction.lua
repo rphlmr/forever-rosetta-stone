@@ -28,6 +28,8 @@ local available, active = {}, { { questID = 179 } }
 C_GossipInfo = {
     GetAvailableQuests = function() return available end,
     GetActiveQuests = function() return active end,
+    SelectOption = function() end,
+    SelectOptionByIndex = function() end,
 }
 QuestFrame = CreateFrame("Frame", nil, UIParent)
 QuestFrame:SetSize(338, 496)
@@ -186,6 +188,98 @@ do
         and dialogue[3].text == "Mallarına bakmak istiyorum."
         and dialogue[4].text == "Keşfedebileceğim zindanlardan bahseder misin?",
         "Boorand's three visible options are translated in Turkish")
+    GetLocale = function() return "frFR" end
+    Addon.GetTargetLocale = function() return "enUS" end
+    UnitGUID = function(unit) return unit == "npc" and "Creature-0-37733-0-3383502-6740-8EA63345E2" or nil end
+    C_GossipInfo.GetText = function()
+        return "Bienvenue dans mon auberge, voyageur épuisé. Que puis-je faire pour vous ?"
+    end
+    local innOptions = {
+        { gossipOptionID = 96506, orderIndex = 2, icon = 132052, name = "Faites de cette auberge votre foyer." },
+        { gossipOptionID = 96505, orderIndex = 3, icon = 132060, name = "Permettez-moi de jeter un oeil à vos biens." },
+        { gossipOptionID = 96504, orderIndex = 5, icon = 132053, name = "Parlez-moi des donjons que je pourrais explorer." },
+    }
+    C_GossipInfo.GetOptions = function() return innOptions end
+    local inn = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(inn and #inn == 4 and inn[2].text == "Make this inn your home."
+        and inn[3].text == "Let me browse your goods." and inn[4].text == "Tell me about dungeons I could explore.",
+        "Allison's captured menu translates all three options without a missing-options warning")
+    check(not Addon:GetGossipOptionTranslation({ icon = 132053, name = innOptions[3].name }, "enUS"),
+        "an unbound gossip option keeps its label even when its wording is familiar")
+    C_GossipInfo.GetText = function() return "Souhaitez-vous explorer l'un de ces donjons ?" end
+    C_GossipInfo.GetOptions = function()
+        return {
+            { gossipOptionID = 96727, orderIndex = 2, icon = 132053, name = "Mortemines" },
+            { gossipOptionID = 139088, orderIndex = 1, icon = 132053, name = "Ruines de Lordaeron" },
+            { gossipOptionID = 139084, orderIndex = 0, icon = 132053, name = "La salle des Thanes" },
+        }
+    end
+    local dungeons = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(dungeons and #dungeons == 4 and dungeons[1].text == "Are you interested in exploring one of these dungeons?"
+        and dungeons[2].text == "Deadmines" and dungeons[3].text == "Ruins of Lordaeron"
+        and dungeons[4].text == "Hall of Thanes", "All three options in Allison's dungeon list translate")
+
+    local followUp = { gossipOptionID = 139082, orderIndex = 0, icon = 132053,
+        name = "Pourriez-vous m'en dire davantage sur cet endroit ?" }
+    C_GossipInfo.GetOptions = function() return { followUp } end
+    C_GossipInfo.GetText = function()
+        return "L’ancien royaume de Lordaeron est une région dangereuse. Usez de prudence si vous osez vous aventurer sur les terres désolées des clairières de Tirisfal. S’il le faut, trouvez Fossoyeuse et ses cours supérieures."
+    end
+    local lordaeron = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(lordaeron and #lordaeron == 2 and lordaeron[1].text:find("The old kingdom of Lordaeron is perilous.", 1, true)
+        and lordaeron[2].text == "Can you tell me more about this place?", "Allison's Lordaeron hint and question translate")
+    followUp.gossipOptionID = 95948
+    C_GossipInfo.GetText = function()
+        return "Les Mortemines se trouvent au-dessous de Ruisselune dans le sud de la marche de l'Ouest."
+    end
+    local deadmines = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(deadmines and #deadmines == 2 and deadmines[1].text:find("beneath Moonbrook", 1, true)
+        and deadmines[2].text == lordaeron[2].text, "Allison's Deadmines menu reuses the observed follow-up question")
+
+    followUp.gossipOptionID = 139083
+    C_GossipInfo.GetText = function()
+        return "La salle des Thanes est scellée. Ceux qui n’ont pas audience avec le roi Magni Barbe-de-Bronze doivent obtenir sa confiance et son accord pour s’aventurer dans les profondeurs du Vieux Forgefer."
+    end
+    local thanes = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(thanes and #thanes == 2 and thanes[1].text:find("The Hall of Thanes is sealed off.", 1, true)
+        and thanes[2].text == lordaeron[2].text, "Allison's Hall of Thanes hint and follow-up translate")
+
+    -- The selector reads the known option ID and the next event identifies the terminal screen.
+    Addon:InstallNpcGossipTracking()
+    C_GossipInfo.SelectOptionByIndex(followUp.orderIndex)
+    C_GossipInfo.GetText = function() error("NPC resolution must not read client prose") end
+    C_GossipInfo.GetOptions = function() return {} end
+    Addon.npcGossipTracking:Fire("OnEvent", "GOSSIP_SHOW")
+    local thanesLore = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(thanesLore and #thanesLore == 1 and thanesLore[1].text:find("immense geodes crown the chamber", 1, true),
+        "the selected Hall of Thanes option resolves the next screen without reading its text")
+    Addon.npcGossipTracking:Fire("OnEvent", "GOSSIP_CLOSED")
+    local reopened, _, reopenedMissing = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(not reopened, "closing gossip discards the selected route")
+
+    UnitGUID = function(unit) return unit == "npc" and "Creature-0-1-0-4-999999-ABCD" end
+    local menuOption = { gossipOptionID = 139084, icon = 132053, name = "Changed client label" }
+    local unknownOption = { gossipOptionID = 999999999, icon = 132053, name = "Kraal de Tranchebauge" }
+    C_GossipInfo.GetOptions = function() return { menuOption, unknownOption } end
+    local sharedMenu = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(sharedMenu and #sharedMenu == 4 and sharedMenu[1].text == dungeons[1].text
+        and sharedMenu[3].text == "Hall of Thanes" and sharedMenu[4].text == unknownOption.name,
+        "another NPC reuses known IDs and an unknown ID keeps its native label")
+    C_GossipInfo.GetOptions = function() return { menuOption, followUp } end
+    local _, _, ambiguous = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(ambiguous, "different routes in the same menu leave ambiguous prose native")
+
+    UnitGUID = function(unit) return unit == "npc" and "Creature-0-1-0-4-2455-ABCD" end
+    local bankOption = { gossipOptionID = 95532, icon = 132050, name = "J'aimerais regarder le contenu de mon coffre." }
+    C_GossipInfo.GetOptions = function() return { bankOption } end
+    local bank, _, bankMissing = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(bank and bankMissing and bank[1].text == "I would like to check my deposit box.",
+        "Olivia's verified bank option translates without guessing between her greetings")
+    bankOption.gossipOptionID = 999999999
+    check(not Addon:GetGossipOptionTranslation(bankOption, "enUS"),
+        "an unknown bank option ID does not match by native label")
+    GetLocale = function() return "enUS" end
+    Addon.GetTargetLocale = function() return "trTR" end
     UnitGUID = function(unit) return unit == "npc" and "Creature-0-1-0-4-1573-ABCD" end
     C_GossipInfo.GetText = function() return "An unexpected introduction" end
     C_GossipInfo.GetOptions = function() return {} end
@@ -225,13 +319,11 @@ check(Addon:Transition({ mode = "collapsed", questID = 179 }, "quest.select", 39
     "without auto-open another journal quest keeps the bookmark")
 check(Addon:Transition({ mode = "open", questID = 179 }, "quest.select", 399).mode == "open",
     "an opened journal reader follows the selected quest")
--- NPC greeting prose and gossip options have no owned translation source, and a translated quest
--- title alone does not justify a companion: greetings show neither the reader nor its bookmark.
 Addon:UpdateQuestInteraction()
-check(not (Addon.questInteractionReader and Addon.questInteractionReader.frame:IsShown()),
-    "gossip greeting never opens the reader")
-check(not (Addon.questInteractionBookmark and Addon.questInteractionBookmark:IsShown()),
-    "gossip greeting shows no FRS bookmark")
+check(Addon.questInteractionReader.frame:IsShown()
+    and Addon.questInteractionReader.body.lastSections[1].text == Addon:GetQuest(179).title,
+    "a listed quest has a translated title without a missing greeting notice")
+Addon:SendQuestInteraction({ type = "reset" })
 do
     local nativeViewport = CreateFrame("Frame", nil, GossipFrame)
     nativeViewport.left, nativeViewport.top = GossipFrame:GetLeft() + 8, GossipFrame:GetTop() - 65
@@ -292,17 +384,18 @@ do
             "the captured Ironforge greeting reuses directions instead of flight dialogue")
         UnitGUID = function() return "Creature-0-1-0-4-99999999-ABCD" end
         C_GossipInfo.GetText = function() return "Un accueil inconnu" end
-        local partial, _, missing = Addon:GetCatalogDialogueSections(0, "gossip")
-        check(missing and partial and partial[2].text == ForeverRosettaStoneDB:GetGossipOptionName(auction.gossipOptionID, locale),
-            "known menu options remain available for an NPC without a catalog greeting")
+        local reused = Addon:GetCatalogDialogueSections(0, "gossip")
+        check(reused and reused[1].text == catalogSections[1].text,
+            "another guard can reuse the route associated with the same option IDs")
         local reset = { gossipOptionID = 97311, icon = 132053, name = "Je voudrais oublier mes talents d’héritage ou de classe." }
         local directions = { gossipOptionID = 99999999, icon = 132053, name = "Maître de Classe" }
         GossipFrame.gossipOptions = { reset, directions }
+        C_GossipInfo.GetOptions = function() return GossipFrame.gossipOptions end
         local shared = Addon:GetCatalogDialogueSections(0, "gossip")
-        check(shared and shared[2].text == "I wish to unlearn my class or legacy talents."
-            and shared[3].text == "Class Trainer",
-            "the NPC reader uses shared options even without a known NPC or option ID")
-        check(Addon:GetGossipOptionTranslation(reset, locale) == shared[2].text,
+        check(shared and shared[1].text == "I wish to unlearn my class or legacy talents."
+            and shared[2].text == directions.name,
+            "the NPC reader translates the known reset ID and leaves an unknown option native")
+        check(Addon:GetGossipOptionTranslation(reset, locale) == shared[1].text,
             "Joshua's reset option uses the same lookup as the gossip tooltip")
         GossipFrame.gossipOptions = { auction, bank, trainer, unknown }
         local savedLocale = Addon.preferences.locale
@@ -312,21 +405,35 @@ do
         C_GossipInfo.GetText = function() return "What do ye need directions to?" end
         local guard = Addon:GetCatalogDialogueSections(0, "gossip")
         check(guard and guard[1].text == "Où voulez-vous aller ?",
-            "the Ironforge guard's Forever greeting wins over the identical shared source text")
+            "the Ironforge guard's verified option IDs select the Forever greeting")
         Addon.preferences.locale = savedLocale
         GetLocale = function() return "frFR" end
         UnitGUID = function(unit) if unit == "npc" then return "Creature-0-1-0-4-274781-ABCD" end end
-        C_GossipInfo.GetText = function() return "Native greeting without a matching translation" end
+        local unknownMenu = { { orderIndex = 0 }, { gossipOptionID = 95532, orderIndex = 1 } }
+        C_GossipInfo.GetOptions = function() return unknownMenu end
+        C_GossipInfo.GetText = function() return "Native greeting without a verified route" end
         Addon.preferences.features.questAutoOpen = true
         Addon:UpdateQuestInteraction()
         local reader = Addon.questInteractionReader
-        check(reader.frame:IsShown() and reader.options:GetText() == "Options"
-            and reader.body.lastSections[1].text == Addon:GetMissingTranslationMessage("gossip"),
-            "an owned NPC with a missing greeting offers the fallback and Options")
+        check(not reader.frame:IsShown() and not Addon.questInteractionBookmark:IsShown(),
+            "service gossip hides both reader and bookmark even with owned translations")
+        local flags, util = Enum.GossipOptionRecFlags, FlagsUtil
+        Enum.GossipOptionRecFlags = { QuestLabelPrepend = 4 }
+        FlagsUtil = { IsSet = function(value, flag) return math.floor(value / flag) % 2 == 1 end }
+        unknownMenu[2].flags = 4
+        Addon:UpdateQuestInteraction()
+        check(reader.frame:IsShown(), "a quest-marked gossip opens without a listed quest")
+        C_GossipInfo.SelectOption(95532)
+        unknownMenu[2].flags = 0
+        Addon.npcGossipTracking:Fire("OnEvent", "GOSSIP_SHOW")
+        check(Addon:IsQuestGossipMenu(), "the direct reply to a selected quest option retains its quest context")
+        Addon.npcGossipTracking:Fire("OnEvent", "GOSSIP_CLOSED")
+        check(not Addon:IsQuestGossipMenu(), "reopening the service menu clears the quest context")
+        Enum.GossipOptionRecFlags, FlagsUtil = flags, util
         reader.options:Fire("OnClick")
         reader.options.contextMenu.entries[2].onClick()
         local dialog = Addon.questReport
-        check(dialog.state == "ready" and dialog.record.gossip.options[2].gossipOptionID == bank.gossipOptionID
+        check(dialog.state == "ready" and dialog.record.gossip.options[2].gossipOptionID == 95532
             and dialog.record.gossip.text == C_GossipInfo.GetText(),
             "the dialogue report includes the original text and option IDs")
         dialog.frame:Hide()
@@ -446,9 +553,7 @@ do
     QuestTitleButton1, CurrentQuestsText = originalRow, originalHeading
 end
 Addon:UpdateQuestInteraction()
-check(not (Addon.questInteractionReader and Addon.questInteractionReader.frame:IsShown())
-    and not (Addon.questInteractionBookmark and Addon.questInteractionBookmark:IsShown()),
-    "legacy quest greeting never opens the reader or bookmark")
+check(Addon.questInteractionReader.frame:IsShown(), "legacy quest greetings show their translated quest titles")
 QuestFrameGreetingPanel:Hide()
 
 -- A quest screen with translated text is the companion's vehicle from here on.
