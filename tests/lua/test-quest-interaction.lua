@@ -138,6 +138,30 @@ Hops are needed to make the brew.]], "Thunderbrew progress renders four English 
     GetLocale, Addon.GetTargetLocale, UnitSex = oldLocale, oldTarget, oldSex
 end
 do
+    local getLocale, getTarget, getSex, getGuid, getGreeting =
+        GetLocale, Addon.GetTargetLocale, UnitSex, UnitGUID, GetGreetingText
+    GetLocale = function() return "frFR" end
+    Addon.GetTargetLocale = function() return "enUS" end
+    UnitSex = function() return 2 end
+    UnitGUID = function() return "Creature-0-24074-0-14158044-1070-E19578FC96" end
+    GetGreetingText = function()
+        return "Plus loin, après le pont, vous trouverez la ville de Comté-du-Lac. Mais ne vous attendez pas à y trouver un endroit paisible. Si vous cherchez l’aventure, alors croyez-moi, vous l’avez trouvée !"
+    end
+    local activeCount, availableCount = GetNumActiveQuests, GetNumAvailableQuests
+    GetNumActiveQuests = function() return 0 end
+    GetNumAvailableQuests = function() return 0 end
+    local sections, _, missing = Addon:GetCatalogDialogueSections(nil, "greeting")
+    check(sections and not missing and sections[1].text:find("Lakeshire", 1, true)
+        and sections[1].text:find("lad", 1, true), "Feldon's captured greeting resolves to the English male variant")
+    UnitSex = function() return 3 end
+    local female, _, femaleMissing = Addon:GetCatalogDialogueSections(nil, "greeting")
+    check(female and not femaleMissing and female[1].text:find("Lakeshire", 1, true)
+        and female[1].text:find("lass", 1, true), "Feldon's greeting selects the English female variant")
+    GetLocale, Addon.GetTargetLocale, UnitSex, UnitGUID, GetGreetingText =
+        getLocale, getTarget, getSex, getGuid, getGreeting
+    GetNumActiveQuests, GetNumAvailableQuests = activeCount, availableCount
+end
+do
     local getLocale, getTargetLocale, getUnitGUID = GetLocale, Addon.GetTargetLocale, UnitGUID
     local getUnitSex = UnitSex
     local getText, getOptions, getActiveQuests = C_GossipInfo.GetText, C_GossipInfo.GetOptions, C_GossipInfo.GetActiveQuests
@@ -404,6 +428,23 @@ QuestFrameGreetingPanel:Show()
 GetNumActiveQuests = function() return 1 end
 GetNumAvailableQuests = function() return 0 end
 GetActiveQuestID = function() return 179 end
+do
+    local originalRow, originalHeading = QuestTitleButton1, CurrentQuestsText
+    local row = CreateFrame("Button", nil, QuestFrameGreetingPanel)
+    local heading = QuestFrameGreetingPanel:CreateFontString()
+    local nativeTitle = "|cff40c040[17]|r Native active title"
+    row:SetText(nativeTitle)
+    QuestTitleButton1 = row
+    CurrentQuestsText = heading
+    local sections = Addon:CreateQuestDialogueSections("Translated greeting", "greeting")
+    check(sections[2].text == Addon:GetClientLabel("CURRENT_QUESTS", Addon:GetTargetLocale())
+        and sections[2].source == heading,
+        "translated quest groups show their heading in the target locale with the native heading style")
+    check(sections[3].text == Addon:GetQuest(179).title and sections[3].source == row:GetFontString()
+        and row:GetText() == nativeTitle,
+        "translated quest titles use the native row font without inheriting the level prefix color")
+    QuestTitleButton1, CurrentQuestsText = originalRow, originalHeading
+end
 Addon:UpdateQuestInteraction()
 check(not (Addon.questInteractionReader and Addon.questInteractionReader.frame:IsShown())
     and not (Addon.questInteractionBookmark and Addon.questInteractionBookmark:IsShown()),

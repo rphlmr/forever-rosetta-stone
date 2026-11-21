@@ -855,9 +855,19 @@ function Addon:IsReadableEntityID(id)
     return canaccessallvalues(id) and type(id) == "number" and id > 0 and id % 1 == 0
 end
 
+function Addon:GetGamepadTooltipButton()
+    if not InputUtil.IsGamepadUIEnabled() then return end
+    local selected = SmartNavigation:GetCurrentButton()
+    if not selected or selected:IsForbidden() then return end
+
+    -- The native cursor can still reference a forbidden frame during a focus transition.
+    local ok, hidden = pcall(SmartNavigation.IsCursorHidden, SmartNavigation)
+    if ok and not hidden then return selected end
+end
+
 function Addon:GetTooltipFocus(find, activeFrame)
-    if activeFrame and InputUtil.IsGamepadUIEnabled() and not SmartNavigation:IsCursorHidden() then
-        local selected = SmartNavigation:GetCurrentButton()
+    local selected = activeFrame and self:GetGamepadTooltipButton()
+    if selected then
         local panel = SmartNavigation:GetActiveFrame()
         local frame = selected
         -- Navigation can belong to a parent panel or a nested subpanel. The
