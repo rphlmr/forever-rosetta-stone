@@ -248,14 +248,18 @@ function api:GetAreaName(areaID, locale)
     return GetName("areas", areaID, locale)
 end
 
+local function NormalizeVisibleLabel(text)
+    return text:gsub("\226\128\153", "'"):gsub("\226\128\152", "'")
+        :gsub("\194\160", " "):gsub("\226\128\175", " ")
+        :gsub("[ \t\r\n\v\f]+", " "):gsub("^ +", ""):gsub(" +$", "")
+end
+
 -- Translate an explicitly geographical value such as GetBindLocation's label.
 -- This returns wording only, never a guessed area ID or the player's current zone.
 function api:TranslateLocationLabel(text, sourceLocale, targetLocale)
     if type(text) ~= "string" or text == "" or not IsSupportedLocale(sourceLocale)
         or not IsSupportedLocale(targetLocale) then return end
-    local key = text:gsub("\226\128\153", "'"):gsub("\226\128\152", "'")
-        :gsub("\194\160", " "):gsub("\226\128\175", " ")
-        :gsub("[ \t\r\n\v\f]+", " "):gsub("^ +", ""):gsub(" +$", "")
+    local key = NormalizeVisibleLabel(text)
     local page = GetPage("X-Rosetta-" .. sourceLocale .. "-locationlabels", key)
     if not page then return end
     local position = FindFloor(page[1], key)
@@ -399,6 +403,24 @@ function api:GetGossipOptionNameByIcon(icon, locale)
         or not IsSupportedLocale(locale) then return end
     local ids = GetSharedTextIDs("gossipoptions", tostring(icon))
     if ids and #ids == 1 then return self:GetGossipOptionName(ids[1], locale) end
+end
+
+function api:TranslateGossipOptionLabel(text, icon, sourceLocale, targetLocale)
+    if (canaccessallvalues and not canaccessallvalues(text, icon)) or type(text) ~= "string"
+        or type(icon) ~= "number" or not IsSupportedLocale(sourceLocale)
+        or not IsSupportedLocale(targetLocale) then return end
+    local key = tostring(icon) .. ":" .. NormalizeVisibleLabel(text)
+    local page = GetPage("X-Rosetta-" .. sourceLocale .. "-gossiplabels", key)
+    if not page then return end
+    local position = FindFloor(page[1], key)
+    if position == 0 or page[1][position] ~= key then return end
+    local result
+    for _, optionID in ipairs(page[2][position]) do
+        local translated = self:GetGossipOptionName(optionID, targetLocale)
+        if not translated or (result and result ~= translated) then return end
+        result = translated
+    end
+    return result
 end
 
 function api:GetSharedTextsByUsage(usage, locale)

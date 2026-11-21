@@ -169,6 +169,7 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
         rule_records = {}
         global_keys = set()
         gossip_icons = set()
+        gossip_labels = collections.defaultdict(lambda: collections.defaultdict(list))
 
         for entity_id in ids:
             entity = catalog[str(entity_id)]
@@ -190,6 +191,21 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
                     raise ValueError(f'Gossip option {entity_id} has an invalid or duplicate shared icon')
                 gossip_icons.add(icon)
                 rule_records[entity_id] = {'name': str(icon), 'hasAITranslation': False}
+            if kind == 'gossipoptions' and 'matchIcon' in entity:
+                icon = entity['matchIcon']
+                if type(icon) is not int or icon <= 0:
+                    raise ValueError(f'Gossip option {entity_id} has an invalid match icon')
+                for locale, localized in entity['locales'].items():
+                    field = localized.get('translationMetadata', {}).get('fields', {}).get('name', {})
+                    source = (field.get('source'), field.get('origin'))
+                    if field.get('sourceLocale') != locale or source not in {
+                            ('wowClient', 'original'), ('Zephras', 'community')}:
+                        continue
+                    text = localized.get('name', '')
+                    text = text.replace('’', "'").replace('‘', "'")
+                    key = re.sub(r'[ \t\r\n\v\f\u00a0\u202f]+', ' ', text).strip(' ')
+                    if key:
+                        gossip_labels[locale][f'{icon}:{key}'].append(entity_id)
             if kind == 'itemenchantments' and entity.get('duration', 0) > 0:
                 rule_records[entity_id] = {'name': 'temporary', 'hasAITranslation': False}
             if kind == 'sharedstrings' and 'usage' in entity:
@@ -253,6 +269,11 @@ def export_database(documents, output, dev_debug=False, globalstring_keys=None):
 
         if rule_records:
             write_localized_records(encoder, packs['ForeverRosettaStone_Rules'], kind, 'shared', rule_records)
+        for locale, labels in gossip_labels.items():
+            entries = sorted(labels.items(), key=lambda item: item[0].encode('utf-8'))
+            write_pages(encoder, packs['ForeverRosettaStone_Data_' + locale],
+                        f'X-Rosetta-{locale}-gossiplabels', entries,
+                        lambda page: [[text for text, _ in page], [option_ids for _, option_ids in page]])
         if kind == 'globalstrings':
             # Search by the source key without decoding the complete label inventory at runtime.
             entries = sorted((record['name'], entity_id) for entity_id, record in rule_records.items())

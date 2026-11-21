@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-11-21
+
+### Added
+
+- Translated the option to reset class or legacy talents across trainers that use the same wording.
+- Reused translations for known guard directions across guards, including when their menu option IDs differ.
+
 ## [1.4.0] - 2026-11-21
 
 ### Added

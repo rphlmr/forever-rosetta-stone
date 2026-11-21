@@ -934,7 +934,7 @@ class DatabaseTests(unittest.TestCase):
         captured_ids = {96904, 96905, 96906, 96907, 96908, 96909, 96910, 96911,
                         96912, 96913, 96914, 96915, 96916, 140186, 141988, 141989}
         captured_ids.update(range(95408, 95420))
-        captured_ids.update((97329, 143270))
+        captured_ids.update((97309, 97329, 143270))
         self.assertTrue(captured_ids.issubset({int(key) for key in options}))
         for option_id in captured_ids:
             entity = options[str(option_id)]
@@ -958,6 +958,35 @@ class DatabaseTests(unittest.TestCase):
         self.assertIsNone(api.GetGossipOptionName(api, 0, b'enUS'), 'orderIndex is not the catalog identity')
         self.assertIsNone(api.GetGossipOptionName(api, 999999999, b'enUS'))
         self.assertIsNone(api.GetGossipOptionName(api, 96916, b'xxXX'))
+
+    def test_shared_gossip_option_labels_use_observed_wording_and_matching_icon(self):
+        _, api, _ = self.create_runtime()
+        translate = api.TranslateGossipOptionLabel
+        reset = 'Je voudrais oublier mes talents d’héritage ou de classe.'.encode()
+        english = b'I wish to unlearn my class or legacy talents.'
+        self.assertEqual(translate(api, reset, 132053, b'frFR', b'enUS'), english)
+        self.assertEqual(translate(api, english, 132053, b'enUS', b'frFR'), reset)
+        self.assertEqual(translate(api, 'Hôtel des ventes'.encode(), 132053, b'frFR', b'enUS'), b'Auction House')
+        self.assertEqual(translate(api, "L’auberge".encode(), 132053, b'frFR', b'enUS'), b'The Inn')
+        self.assertIsNone(translate(api, reset, 132058, b'frFR', b'enUS'))
+        self.assertIsNone(translate(api, reset[:-1], 132053, b'frFR', b'enUS'))
+        self.assertIsNone(translate(api, b'Class Trainer', 132053, b'enUS', b'frFR'))
+
+    def test_shared_gossip_option_labels_preserve_ambiguous_text(self):
+        quests = {'schemaVersion': 1, 'locales': ['enUS', 'frFR'], 'catalogs': {'quests': {}}}
+        names = {'catalogs': {kind: {} for kind in build['KINDS'] if kind != 'quests'}}
+        french = {'name': 'Banque', 'translationMetadata': {'fields': {'name': {
+            'source': 'wowClient', 'origin': 'original', 'sourceLocale': 'frFR',
+        }}}}
+        names['catalogs']['gossipoptions'] = {
+            '1': {'matchIcon': 132053, 'locales': {'enUS': {'name': 'Bank'}, 'frFR': french}},
+            '2': {'matchIcon': 132053, 'locales': {'enUS': {'name': 'City Bank'}, 'frFR': french}},
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / 'addon/runtime.toc'
+            build['export_database'](create_documents(quests, names), output)
+            _, api, _ = self.create_runtime(read_metadata(output))
+            self.assertIsNone(api.TranslateGossipOptionLabel(api, b'Banque', 132053, b'frFR', b'enUS'))
 
     def test_book_catalog_bodies_rules_and_ai_flags_are_available_by_id(self):
         _, api, _ = self.create_runtime()
