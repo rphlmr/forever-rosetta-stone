@@ -405,22 +405,16 @@ function api:GetGossipOptionNameByIcon(icon, locale)
     if ids and #ids == 1 then return self:GetGossipOptionName(ids[1], locale) end
 end
 
-function api:TranslateGossipOptionLabel(text, icon, sourceLocale, targetLocale)
-    if (canaccessallvalues and not canaccessallvalues(text, icon)) or type(text) ~= "string"
-        or type(icon) ~= "number" or not IsSupportedLocale(sourceLocale)
-        or not IsSupportedLocale(targetLocale) then return end
-    local key = tostring(icon) .. ":" .. NormalizeVisibleLabel(text)
-    local page = GetPage("X-Rosetta-" .. sourceLocale .. "-gossiplabels", key)
+function api:GetNpcGossipRoute(optionID, selected)
+    if (canaccessallvalues and not canaccessallvalues(optionID)) or type(optionID) ~= "number" then return end
+    local prefix = selected and "X-Rosetta-shared-gossipselected" or "X-Rosetta-shared-gossipvisible"
+    local page = GetPage(prefix, optionID)
     if not page then return end
-    local position = FindFloor(page[1], key)
-    if position == 0 or page[1][position] ~= key then return end
-    local result
-    for _, optionID in ipairs(page[2][position]) do
-        local translated = self:GetGossipOptionName(optionID, targetLocale)
-        if not translated or (result and result ~= translated) then return end
-        result = translated
+    local position = FindFloor(page[1], optionID)
+    if position > 0 and page[1][position] == optionID then
+        local owner = page[2][position]
+        return owner[1], owner[2]
     end
-    return result
 end
 
 function api:GetSharedTextsByUsage(usage, locale)

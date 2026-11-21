@@ -29,13 +29,18 @@ to have captured the original gossip wording in every client language. Missing
 names were translated from the captured French. The guild service is distinct
 from the player guild-leader label, so that GlobalString was not reused.
 
-Runtime lookups first use the captured option ID, then a verified `sharedIcon`
-such as the icon for flight options. As a last resort, a record with
-`matchIcon` can match the icon and complete option label in the client's locale.
-Only observed wording from client captures or Zephras is indexed. Candidates
-must agree in the target locale. Verified guard labels are eligible when the
-live option has the generic direction icon 132053. Unrecognized options keep
-their native text.
+Runtime lookups use the captured option ID or an explicitly verified universal
+service icon (such as the flight option icon). Unrecognized IDs keep their
+native labels.
+
+NPC dialogue routes live on the owning NPC's `dialogueContexts` entry.
+`gossipRoute.visible` lists verified option IDs visible alongside a passage.
+`gossipRoute.selected` lists the options that open a terminal passage. The
+runtime uses a selected ID only on the next gossip screen for the same
+creature, when the client reports no options. Another NPC can reuse a
+route when its client data supplies the same option ID. Ambiguity leaves
+the native dialogue available. Client text is retained for reports and
+translation provenance.
 
 The Ironforge guard menu was captured on Forever 1.60.1.70959 (NPC 274781).
 Twelve options reuse the equivalent destination or service names already in this
@@ -65,3 +70,19 @@ translations reuse his existing training dialogue (BroadcastText 3266), with
 the French option verified in the capture. His separate blacksmith greeting
 is captured French with provisional translations from French in the other
 17 locales. The eight additional bank labels for 95316 use English as source.
+
+Allison's innkeeper menu (NPC 6740, build 1.60.1.71037) supplies the French
+labels and icons for options 96504–96506. The other locales reuse Allison's
+vendor and bind options and Boorand Plainswind's dungeon option. Allison's
+menu and the equivalent Boorand options have their own observed IDs.
+The dungeon submenu reuses activity names 799, 1982 and 1984. The follow-up
+question uses the captured French wording and the English label from
+[Allison's Forever dialogue](https://db.icy-veins.com/wow-forever/npcs/6740).
+
+The three observed dungeon choices and the three follow-up options each use
+their captured IDs. The Lordaeron and Hall of Thanes follow-up IDs also bind
+the corresponding terminal passages on Allison's NPC record.
+
+Olivia Burnside's deposit box option (95532) uses the French label and icon
+captured on Forever 1.60.1.71037 and reuses the other locales from the
+equivalent option on NPC 2456.

@@ -11,7 +11,6 @@ function Addon:GetGossipOptionTranslation(option, locale)
     if name then return name end
     local icon = option.icon
     return db:GetGossipOptionNameByIcon(icon, locale)
-        or db:TranslateGossipOptionLabel(option.name, icon, GetLocale(), locale)
 end
 
 local function FindGossipOption(frame)
@@ -31,15 +30,16 @@ local function FindGossipOption(frame)
             -- orderIndex, not the option ID or the position in GetOptions().
             if canaccessallvalues(optionID, elementOrder, order) and not frame.questID
                 and not (ReadableTable(info) and info.questID) then
-                local text = not optionID and frame.GetText and frame:GetText()
                 for _, option in ipairs(options) do
                     if ReadableTable(option) then
                         local matches = optionID and canaccessallvalues(option.gossipOptionID, option.orderIndex)
                             and optionID == option.gossipOptionID
                             and (type(elementOrder) ~= "number" or elementOrder == option.orderIndex)
                         if not optionID and type(order) == "number"
-                            and canaccessallvalues(text, option.orderIndex, option.name) and type(text) == "string" then
-                            matches = order == option.orderIndex and text == option.name
+                            and ReadableTable(element) and canaccessallvalues(element.buttonType)
+                            and GOSSIP_BUTTON_TYPE_OPTION and element.buttonType == GOSSIP_BUTTON_TYPE_OPTION
+                            and canaccessallvalues(option.orderIndex) then
+                            matches = order == option.orderIndex
                         end
                         if matches then
                             if row then return end
@@ -61,10 +61,6 @@ function Addon:UpdateGossipOptionTooltip()
         source, option = self:GetTooltipFocus(FindGossipOption, GossipFrame)
     end
     local name = source and source:IsVisible() and self:GetGossipOptionTranslation(option, self:GetTargetLocale())
-    if source and source:IsVisible() and not name then
-        local npcID = self:GetInteractionNpcID()
-        if npcID then name = self:MatchQuestDialogue(npcID, nil, "option", option.name) end
-    end
     if source and self:IsReadableEntityID(option.gossipOptionID) then
         self:RecordDebugSurface(source, "gossipOption", option.gossipOptionID, "gossip", nil, name)
     end
