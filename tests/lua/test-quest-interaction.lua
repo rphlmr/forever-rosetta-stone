@@ -71,25 +71,49 @@ local hidden = { mode = "hidden" }
 do
     local db = ForeverRosettaStoneDB
     local lookup, unitSex, locale = db.GetQuestDialogue, UnitSex, GetLocale
+    local getTarget = Addon.GetTargetLocale
     local source = Addon:GetTargetLocale() == "frFR" and "deDE" or "frFR"
+    local alternate, missingSource, missingTarget
     GetLocale = function() return source end
+    Addon.GetTargetLocale = function() return source == "frFR" and "deDE" or "frFR" end
     UnitSex = function() return 3 end
     db.GetQuestDialogue = function(_, questID, _, language)
         if questID ~= 179 then return end
-        return {
+        if language == source and missingSource then return end
+        local rows = {
             { key = "female", npcID = 197, stage = "progress", playerSex = 3,
                 text = language == source and "Texte natif" or "Translated progress" },
             { key = "male", npcID = 197, stage = "progress", playerSex = 2,
                 text = language == source and "Texte natif" or "Other variant" },
         }
+        if alternate and (language == "enUS" or not missingTarget) then
+            rows[#rows + 1] = { key = "alternate", npcID = 197, stage = "progress", playerSex = 3,
+                text = language == source and "Variante native" or alternate }
+        end
+        return rows
     end
-    check(Addon:MatchQuestDialogue(197, 179, "progress", " Texte natif ") == "Translated progress",
-        "catalog dialogue matches the client text and character variant")
+    check(Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte") == "Translated progress",
+        "a quest, NPC, phase and player variant can identify dialogue without matching wording")
+    missingSource = true
+    check(Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte") == "Translated progress",
+        "an unambiguous quest line translates even with no catalog wording for the client language")
+    missingSource = false
     check(not Addon:MatchQuestDialogue(198, 179, "progress", "Texte natif")
         and not Addon:MatchQuestDialogue(197, 179, "complete", "Texte natif")
+        and not Addon:MatchQuestDialogue(197, 179, "progress", ""),
+        "catalog dialogue refuses unmatched NPC, phase and empty client text")
+    alternate = "Translated progress"
+    check(Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte") == "Translated progress",
+        "quest variants with identical translations do not need to match the native text")
+    alternate = "Alternate translation"
+    check(Addon:MatchQuestDialogue(197, 179, "progress", " Variante native ") == "Alternate translation"
         and not Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte"),
-        "catalog dialogue refuses unmatched NPC, phase and wording")
+        "the client text resolves competing quest variants")
+    missingTarget = true
+    check(not Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte"),
+        "canonical quest variants count even when one locale has fewer entries")
     db.GetQuestDialogue, UnitSex, GetLocale = lookup, unitSex, locale
+    Addon.GetTargetLocale = getTarget
 end
 do
     local oldLocale, oldTarget, oldSex = GetLocale, Addon.GetTargetLocale, UnitSex
@@ -109,6 +133,9 @@ Hops are needed to make the brew.]], "Thunderbrew progress renders four English 
     check(Addon:MatchQuestDialogue(464, 129, "complete", turnIn)
         == "Thanks, I could really use the meal.  Guarding Lakeshire from the orcs and gnolls is tough work!",
         "Guard Parker's captured French turn-in dialogue resolves to the existing English translation")
+    check(Addon:MatchQuestDialogue(464, 129, "complete", turnIn:gsub("Comté%-du%-Lac", "Lakeshire"))
+        == "Thanks, I could really use the meal.  Guarding Lakeshire from the orcs and gnolls is tough work!",
+        "changing the native location name does not hide the single known turn-in translation")
     GetLocale, Addon.GetTargetLocale, UnitSex = oldLocale, oldTarget, oldSex
 end
 do
