@@ -29,9 +29,13 @@ to have captured the original gossip wording in every client language. Missing
 names were translated from the captured French. The guild service is distinct
 from the player guild-leader label, so that GlobalString was not reused.
 
-Runtime lookups first use the captured option ID. Records with a unique
-`sharedIcon` also supply a standard label for options with that native icon.
-This applies to the flight option. Unrecognized options keep their native text.
+Runtime lookups first use the captured option ID. A record with `matchIcon`
+can also match the icon and complete option label in the client's locale.
+Only observed wording from client captures or Zephras is indexed. Candidates
+must agree in the target locale. Verified guard labels are eligible when the
+live option has the generic direction icon 132053. Records with a unique
+`sharedIcon` can supply a standard label by icon, as for the flight option.
+Unrecognized options keep their native text.
 
 The Ironforge guard menu was captured on Forever 1.60.1.70959 (NPC 274781).
 Twelve options reuse the equivalent destination or service names already in this
@@ -50,6 +54,11 @@ Options 95310–95315 reuse the service names from 95408, 95409, 95412, 95414,
 95415 and 95416 respectively. The bank (95316) uses GlobalString 24710 and the
 transmogrifier (141422) uses 141989. Each option retains the exact captured French
 label. Icon 132053 is shared by all eight options.
+
+Laurena's talent reset option (97309) and Brother Joshua's equivalent (97311)
+were captured in French on Forever 1.60.1.71037 with the same label and icon.
+The shared option uses that exact French wording and reuses the other locales
+from Brandur Ironhammer's existing talent reset dialogue.
 
 Argus (NPC 514) offered trainer option 95665 on Forever 1.60.1.71037. Its
 translations reuse his existing training dialogue (BroadcastText 3266), with

@@ -230,6 +230,16 @@ do
         local partial, _, missing = Addon:GetCatalogDialogueSections(0, "gossip")
         check(missing and partial and partial[2].text == ForeverRosettaStoneDB:GetGossipOptionName(auction.gossipOptionID, locale),
             "known menu options remain available for an NPC without a catalog greeting")
+        local reset = { gossipOptionID = 97311, icon = 132053, name = "Je voudrais oublier mes talents d’héritage ou de classe." }
+        local directions = { gossipOptionID = 99999999, icon = 132053, name = "Maître de Classe" }
+        GossipFrame.gossipOptions = { reset, directions }
+        local shared = Addon:GetCatalogDialogueSections(0, "gossip")
+        check(shared and shared[2].text == "I wish to unlearn my class or legacy talents."
+            and shared[3].text == "Class Trainer",
+            "the NPC reader uses shared options even without a known NPC or option ID")
+        check(Addon:GetGossipOptionTranslation(reset, locale) == shared[2].text,
+            "Joshua's reset option uses the same lookup as the gossip tooltip")
+        GossipFrame.gossipOptions = { auction, bank, trainer, unknown }
         local savedLocale = Addon.preferences.locale
         Addon.preferences.locale = "frFR"
         GetLocale = function() return "enUS" end

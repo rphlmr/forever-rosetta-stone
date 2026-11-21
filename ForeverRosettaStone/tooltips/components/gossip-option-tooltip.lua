@@ -10,7 +10,8 @@ function Addon:GetGossipOptionTranslation(option, locale)
     local name = self:IsReadableEntityID(id) and db:GetGossipOptionName(id, locale)
     if name then return name end
     local icon = option.icon
-    if canaccessallvalues(icon) then return db:GetGossipOptionNameByIcon(icon, locale) end
+    return db:TranslateGossipOptionLabel(option.name, icon, GetLocale(), locale)
+        or db:GetGossipOptionNameByIcon(icon, locale)
 end
 
 local function FindGossipOption(frame)
