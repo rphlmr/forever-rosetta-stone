@@ -45,7 +45,6 @@ end
 
 Addon:RegisterNameTooltipComponent({
     kind = "characterStat",
-    alwaysFull = true,
     placementProfiles = Addon:CreateTooltipPlacementProfiles({
         name = "characterStat", contexts = { default = {} },
         mouse = { allowSideFallback = true, sideRules = { Addon.TooltipSideRules.right, Addon.TooltipSideRules.screen } },

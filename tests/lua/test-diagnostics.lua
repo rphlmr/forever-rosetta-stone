@@ -139,7 +139,7 @@ equal(#Addon.debugPicker.entries, 0, "hovering outside Pick mode records nothing
 dialog.pick:Fire("OnClick")
 equal(Addon:IsDebugPicking(), true, "Pick starts capture")
 equal(Addon:MoveDebugPicker("start"), false, "repeated start does not clear an active capture")
-equal(dialog.frame:IsShown(), true, "picking preserves the visible console")
+equal(dialog.frame:IsShown(), not InputUtil.IsGamepadUIEnabled(), "only mouse inspection keeps the console visible")
 equal(dialog.frame.alpha, 0.15, "console is translucent while picking")
 for _, frame in ipairs({dialog.frame, dialog.window, dialog.scroll, dialog.editBox, dialog.commandBox,
     dialog.run, dialog.pick, dialog.help, dialog.addonReport, dialog.clearCaptures, dialog.saveReport,
@@ -303,8 +303,8 @@ for id = 1, 31 do
 end
 equal(#Addon.debugPicker.entries, 30, "picker memory is bounded")
 equal(Addon.debugPicker.full, true, "capture truncation is explicit")
-dialog.close:Fire("OnClick")
-equal(Addon:IsDebugPicking(), false, "closing cancels capture")
+Addon:ToggleDebugInspection()
+equal(Addon:IsDebugPicking(), false, "the inspection shortcut stops capture")
 equal(dialog.stopPicking:IsShown(), false, "closing does not leave an invisible picker active")
 Addon:RunDebugCommand("pick")
 Addon:RecordDebugTooltip(GameTooltip, {type=Enum.TooltipDataType.Spell, id=133,
@@ -387,6 +387,7 @@ following:OnSmartNavClick()
 equal(Addon:IsDebugPicking(), true, "gamepad Select starts Pick")
 equal(SmartNavigation:GetActiveFrame() == dialog.window, false, "Pick releases console focus to native panels")
 equal(dialog.controllerRegistered, nil, "inspection does not register a passive popup in the native focus stack")
+equal(dialog.frame:IsShown(), false, "gamepad inspection hides the console while navigating")
 equal(dialog.stopFooter.frame:IsShown(), true, "inspection immediately displays the Back prompt")
 equal(dialog.stopPanel:IsGamePadButtonEnabled(), false, "inspection does not intercept native gamepad bindings")
 equal(dialog.stopPanel:GetScript("OnGamePadButtonDown"), nil, "inspection leaves bag and menu input to the game")
@@ -408,51 +409,16 @@ equal(Addon.debugPicker.byID["npc:853"].name, "Coldridge Mountaineer", "controll
 C_TooltipInfo = previousTooltipInfo
 backDown = true
 dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), false, "B stops inspection without reacquiring UI focus")
-equal(dialog.stopFooter.frame:IsShown(), false, "stopping hides the inspection Back prompt")
-equal(SmartNavigation:GetActiveFrame(), dialog.window, "stopping returns gamepad focus to the console")
-equal(next(Addon.debugPicker.unitEvents.events), nil, "stopping unregisters controller unit capture events")
-dialog.pick:OnSmartNavClick()
-GamepadMode.FrameControlsManager.isUIFocused = false
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), true, "a held B does not immediately cancel a new inspection")
-backDown = false
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-backDown = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), false, "a new B press stops inspection after release")
-backDown = false
-dialog.pick:OnSmartNavClick()
-GamepadMode.FrameControlsManager.isUIFocused = false
-local previousRadial = GamepadRadial
-GamepadRadial = CreateFrame("Frame", nil, UIParent)
-GamepadRadial:Show()
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-GamepadRadial:Hide()
-backDown = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), true, "B closing the radial menu does not stop inspection")
-backDown = false
-GamepadMode.FrameControlsManager.isUIFocused = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-GamepadMode.FrameControlsManager.isUIFocused = false
-backDown = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), false, "native focus bookkeeping cannot prevent B from stopping inspection")
-backDown = false
-dialog.pick:OnSmartNavClick()
-GamepadMode.FrameControlsManager.isUIFocused = false
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-backDown = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), false, "a subsequent world B press stops inspection")
-GamepadRadial = previousRadial
-IsKeyDown = previousIsKeyDown
-dialog.pick:OnSmartNavClick()
-equal(CloseSpecialWindows(), true, "Escape exits inspection")
+equal(Addon:IsDebugPicking(), true, "a short Back press leaves inspection active")
+CloseSpecialWindows()
 flushTimers()
-equal(Addon:IsDebugPicking(), false, "Escape stops capture")
-equal(dialog.frame:IsShown(), true, "Escape returns to the debug tool")
+equal(Addon:IsDebugPicking(), true, "closing native windows keeps the capture session active")
+dialog.stopPanel:Fire("OnUpdate", 0.85)
+equal(Addon:IsDebugPicking(), false, "holding Back stops inspection")
+equal(dialog.frame:IsShown(), true, "stopping returns to the reports window")
+equal(dialog.stopFooter.frame:IsShown(), false, "stopping hides the Back prompt")
+equal(next(Addon.debugPicker.unitEvents.events), nil, "stopping unregisters controller unit capture events")
+IsKeyDown = previousIsKeyDown
 dialog.clearCaptures:OnSmartNavClick()
 equal(Addon.preferences.debugReport, nil, "gamepad Clear captures removes the saved report")
 dialog.selectOutput:OnSmartNavClick()

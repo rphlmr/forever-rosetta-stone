@@ -74,7 +74,7 @@ function Addon:FillNameTooltip(spec, presentation)
     local title = source.TextLeft1 or source.Name
     if title then red, green, blue = title:GetTextColor() end
     if spec.color then red, green, blue = spec.color:GetRGB() end
-    if Addon.preferences.tooltipCoverage == "name" and not component.alwaysFull then
+    if self:GetTooltipCoverage(spec.kind, spec.data) == "name" then
         Addon:SetCompanionTooltipTitle(tip, spec.name, red, green, blue)
     elseif spec.data and component.supportsFullText then
         Addon:FillEnglishTooltip(spec)
@@ -105,7 +105,7 @@ function Addon:RenderTooltipPreview(data)
     self:FillNameTooltip(spec, presentation)
     if not separate then
         self:FillStackedTooltip(source, tip, "preview:" .. self:GetTargetLocale()
-            .. ":" .. self.preferences.tooltipCoverage, presentation)
+            .. ":" .. self:GetTooltipCoverage(spec.kind, spec.data), presentation)
     end
     local side = self.preferences.npcTooltipPosition
     local horizontal = side == "left" or side == "right"
@@ -244,10 +244,10 @@ local function LayoutNameTooltipGroup(self, group)
         for _, source in ipairs(group) do
             local spec = self.nameTooltips[source]
             if not self:IsTooltipBlocked() and not source:IsForbidden() and source:IsVisible()
-                and spec.name and self:IsFeatureEnabled(spec.kind .. "Tooltip") then
+                and spec.name and self:IsFeatureEnabled(self:GetTooltipCategory(spec.kind, spec.data) .. "Tooltip") then
                 local stacked = self.stackedTooltips and self.stackedTooltips[source]
                 local key = table.concat({ spec.kind, spec.id,
-                    self:GetTargetLocale(), self.preferences.tooltipCoverage }, ":")
+                    self:GetTargetLocale(), self:GetTooltipCoverage(spec.kind, spec.data) }, ":")
                 local presentation = self:ResolveStackedPresentation(source, spec.tip, requested)
                 if not stacked or stacked.owner ~= spec.tip or stacked.key ~= key
                     or source:NumLines() ~= stacked.numLines or stacked.presentation ~= presentation
@@ -271,7 +271,7 @@ local function LayoutNameTooltipGroup(self, group)
 
     if (restoreBlocked and not InCombatLockdown())
         or self:IsTooltipBlocked() or group[1]:IsForbidden() or not group[1]:IsVisible() or not primary.kind
-        or not self:IsFeatureEnabled(primary.kind .. "Tooltip") then
+        or not self:IsFeatureEnabled(self:GetTooltipCategory(primary.kind, primary.data) .. "Tooltip") then
         self:TransitionTooltipSources(group, "sources.restore")
         for _, source in ipairs(group) do
             local spec = self.nameTooltips[source]
@@ -453,15 +453,16 @@ function Addon:UpdateNameTooltip(source, kind, id, color, deferLayout)
         self:ClearStackedTooltip(source)
     end
     spec.kind, spec.id, spec.color = kind, id, color
+    local featureID = self:GetTooltipCategory(kind, spec.data) .. "Tooltip"
     if self:IsDebugPicking() then
         local nativeData = spec.data
         if kind == "characterStat" or kind == "pet" or kind == "minimapLocation" then nativeData = nil end
         self:RecordDebugSurface(source, kind, id, componentByKind[kind].GetPlacementContext(source), nativeData,
             { name = componentByKind[kind].GetName(id, self:GetTargetLocale(), source, spec.data),
-                enabled = self:IsFeatureEnabled(kind .. "Tooltip") })
+                enabled = self:IsFeatureEnabled(featureID) })
     end
 
-    if self:IsTooltipBlocked() or not self:IsFeatureEnabled(kind .. "Tooltip") then
+    if self:IsTooltipBlocked() or not self:IsFeatureEnabled(featureID) then
         spec.name = nil
         if spec.tip then spec.tip:Hide() end
         self:LayoutNameTooltipGroup(spec.group)
@@ -492,6 +493,8 @@ function Addon:RefreshNameTooltips()
                 and data.type == Enum.TooltipDataType.UnitAura
             if readable and (not spec.kind or not spec.id or aura) then
                 self:SendTooltipEvent(spec.group, { type = "native.data", source = source, data = data })
+                -- The source is already visible, so no native Show will finish this refresh.
+                self:SendTooltipEvent(spec.group, { type = "native.shown", source = source })
             elseif spec.kind and spec.id then
                 self:ClearStackedTooltip(source)
                 self:UpdateNameTooltip(source, spec.kind, spec.id, spec.color)

@@ -370,7 +370,6 @@ local function CreateErrorDialog()
     stopPanel:SetFrameStrata("TOOLTIP")
     stopPanel:SetFrameLevel(9100)
     stopPanel:Hide()
-    table.insert(UISpecialFrames, stopPanel:GetName())
     local stop = CreateFrame("Button", nil, stopPanel, "UIPanelButtonTemplate")
     stop:SetSize(260, 30)
     stop:SetAllPoints(stopPanel)
@@ -381,27 +380,27 @@ local function CreateErrorDialog()
     stop:SetScript("OnClick", Protect(function() Addon:MoveDebugPicker("stop") end))
     ControllerAction(stop)
     local stopFooter = Addon:CreateGamepadLegend(stopPanel, "ForeverRosettaStoneDebugStopFooter")
-    stopFooter:AddStandardBackPrompt(FRAME_ACTION_CLOSE)
+    stopFooter:AddStandardBackPrompt((HOLD or (GetLocale() == "frFR" and "Maintenir" or "Hold")) .. " · " .. Addon:DebugText("stop"))
     stopFooter:Finalize()
     Addon.errorDialog.stopFooter = stopFooter
     -- A gamepad button listener intercepts native bindings, including opening bags and menus.
-    stopPanel:SetScript("OnUpdate", Protect(function()
+    stopPanel:SetScript("OnUpdate", Protect(function(_, elapsed)
         if not InputUtil.IsGamepadUIEnabled() or not Addon:IsDebugPicking() then return end
-        local down = IsKeyDown(GAMEPAD_FACE_RIGHT)
-        local nativeInput = GamepadRadial and GamepadRadial:IsShown()
-        local pressed = down and not Addon.errorDialog.stopBackDown
-            and not nativeInput and not Addon.errorDialog.stopNativeInput
-        Addon.errorDialog.stopBackDown = down
-        Addon.errorDialog.stopNativeInput = nativeInput
-        if pressed then Addon:MoveDebugPicker("stop") end
-    end))
-    stopPanel:SetScript("OnHide", Protect(function()
-        if Addon:IsDebugPicking() then Addon:MoveDebugPicker("stop") end
+        local dialog = Addon.errorDialog
+        if not IsKeyDown(GAMEPAD_FACE_RIGHT) then
+            dialog.stopHold = 0
+        elseif GamepadRadial and GamepadRadial:IsShown() then
+            dialog.stopHold = nil
+        elseif dialog.stopHold then
+            dialog.stopHold = dialog.stopHold + elapsed
+            if dialog.stopHold >= 0.8 then Addon:MoveDebugPicker("stop") end
+        end
     end))
     stop:Hide()
     Addon.errorDialog.stopPicking = stop
     Addon.errorDialog.stopPanel = stopPanel
     overlay:SetScript("OnHide", Protect(function()
+        if Addon.errorDialog.hidingForPick then return end
         local returnView = Addon.errorDialog.errorReturnView
         if Addon:IsDebugPicking() then returnView = { report = Addon:GetDebugPickedList() } end
         Addon.errorDialog.errorReturnView = nil
@@ -683,8 +682,12 @@ function Addon:SetDebugPickerView(picking)
         end
         Disable(dialog.frame)
         dialog.frame:SetAlpha(0.15)
-        dialog.stopBackDown = IsKeyDown(GAMEPAD_FACE_RIGHT)
-        dialog.stopNativeInput = false
+        dialog.stopHold = nil
+        if InputUtil.IsGamepadUIEnabled() then
+            dialog.hidingForPick = true
+            dialog.frame:Hide()
+            dialog.hidingForPick = nil
+        end
         dialog.stopPicking:Show()
         dialog.stopPanel:Show()
         self:RefreshDebugPickedList()

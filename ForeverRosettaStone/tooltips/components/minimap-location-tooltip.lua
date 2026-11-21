@@ -3,7 +3,6 @@ local _, Addon = ...
 Addon:RegisterNameTooltipComponent({
     kind = "minimapLocation",
     defaultContext = "zoneHeader",
-    alwaysFull = true,
     GetName = function(name, locale)
         local location = ForeverRosettaStoneDB:GetPlayerLocation(locale)
         if not location then return end

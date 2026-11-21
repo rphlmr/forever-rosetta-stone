@@ -156,6 +156,7 @@ end
 
 function Addon:FillTooltipComparison(spec, presentation)
     local source, tip = spec.source, spec.tip
+    local nameOnly = self:GetTooltipCoverage("item") == "name"
     if tip.CompareHeader then
         local header = source.CompareHeader
         local shown = header and header:IsShown()
@@ -163,14 +164,14 @@ function Addon:FillTooltipComparison(spec, presentation)
             and (presentation == "replacement" or presentation == "separate"))
         if shown and header.Label and tip.CompareHeader.Label then
             local text = header.Label:GetText()
-            tip.CompareHeader.Label:SetText(self:TranslateComparisonText(text) or text)
+            tip.CompareHeader.Label:SetText(not nameOnly and self:TranslateComparisonText(text) or text)
             self:CopyQuestTextStyle(tip.CompareHeader.Label, header.Label)
             tip.CompareHeader.Label:SetTextScale(header.Label:GetTextScale())
             tip.CompareHeader:SetWidth(tip.CompareHeader.Label:GetWidth() + 30)
         end
     end
     spec.renderedComparisonLines = nil
-    if spec.kind ~= "item" or self.preferences.tooltipCoverage == "name" then return end
+    if spec.kind ~= "item" or nameOnly then return end
     for index, row in ipairs(GetSummaryLines(source, presentation == "replacement")) do
         if presentation == "replacement" then
             spec.renderedComparisonLines = spec.renderedComparisonLines or {}

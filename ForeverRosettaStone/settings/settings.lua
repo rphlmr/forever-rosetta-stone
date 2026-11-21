@@ -9,7 +9,7 @@ local newSettings = {
 
 Addon.features = {
     { id = "taxiNodeTooltip", name = "Flight map destinations", group = "Locations",
-        description = "Translate flight map destination names using the hovered flight node ID. Prices and route information stay native." },
+        description = "Shows the destination name and “You are here” at the current flight point." },
     { id = "recipeTrackerTooltip", name = "Tracked recipes", group = "Professions",
         description = "Show translated recipe names and live reagent counts when hovering tracked recipes in any profession." },
     { id = "recipeListTooltip", name = "Recipe list", group = "Professions",
@@ -36,12 +36,14 @@ Addon.features = {
         description = "Show translated item tooltips on the same side of the hovered item as the original, including comparisons." },
     { id = "spellTooltip", name = "Spell tooltips", group = "Spells",
         description = "Show translated spell tooltips on the same side of the hovered spell as the original, using live game values." },
+    { id = "auraTooltip", name = "Buffs and debuffs", group = "Spells", defaultFrom = "spellTooltip",
+        description = "Translate active buffs and debuffs, including effect details and remaining time when available." },
     { id = "talentTooltip", name = "Talent tooltips", group = "Talents",
         description = "Show translated talent names and descriptions on the same side of the hovered talent as the original." },
     { id = "npcTooltip", name = "NPC tooltips", group = "NPCs",
         description = "Show translated creature names stacked or in a separate tooltip at your chosen position. Player and custom pet names stay native." },
     { id = "playerTooltip", name = "Player tooltips", group = "Character",
-        description = "Translate player class, race, and level with full-text tooltips enabled. Player names and unavailable translations stay native." },
+        description = "Translate player class, race, and level. Player names and unavailable translations stay native." },
     { id = "gossipOptionTooltip", name = "NPC dialogue options", group = "NPCs",
         description = "Show translated dialogue options when hovering or focusing an NPC menu entry with a known option ID." },
     { id = "questTrackerTooltip", name = "Quest tracker", group = "Quests",
@@ -88,7 +90,11 @@ local featureByID = {}
 for _, feature in ipairs(Addon.features) do featureByID[feature.id] = feature end
 local npcTooltipPositions = { top = true, left = true, right = true, bottom = true }
 local tooltipModes = { stacked = true, separate = true }
-local tooltipCoverages = { name = true, full = true }
+local tooltipNameOptions = {
+    item = true, spell = true, aura = true, talent = true, mount = true, pet = true,
+    appearance = true, npc = true, quest = true, mapQuest = true, questTracker = true, recipeTracker = true, characterStat = true,
+}
+for kind in pairs(tooltipNameOptions) do newSettings[kind .. "Tooltip.name"] = true end
 
 function Addon:LoadPreferences()
     if type(ForeverRosettaStoneSettings) ~= "table" then ForeverRosettaStoneSettings = {} end
@@ -102,7 +108,26 @@ function Addon:LoadPreferences()
     if not tooltipModes[self.preferences.tooltipMode] then self.preferences.tooltipMode = "stacked" end
     if type(self.preferences.translationOnly) ~= "boolean" then self.preferences.translationOnly = false end
     if type(self.preferences.stackedTranslationFirst) ~= "boolean" then self.preferences.stackedTranslationFirst = false end
-    if not tooltipCoverages[self.preferences.tooltipCoverage] then self.preferences.tooltipCoverage = "full" end
+    local legacyNameOnly = self.preferences.tooltipCoverage == "name"
+    local names = self.preferences.tooltipNameOnly
+    if type(names) ~= "table" then
+        names = {}
+        self.preferences.tooltipNameOnly = names
+    end
+    names.taxiNode = nil
+    local questNameOnly = names.quest
+    if type(questNameOnly) ~= "boolean" then questNameOnly = legacyNameOnly end
+    for _, kind in ipairs({ "mapQuest", "questTracker" }) do
+        if type(names[kind]) ~= "boolean" then names[kind] = questNameOnly end
+    end
+    for kind in pairs(tooltipNameOptions) do
+        if type(names[kind]) ~= "boolean" then
+            names[kind] = legacyNameOnly and kind ~= "characterStat"
+        end
+    end
+    -- Player names are never translated. The legacy setting hid the entire player companion.
+    if legacyNameOnly then self.preferences.features.playerTooltip = false end
+    self.preferences.tooltipCoverage = nil
     if type(self.preferences.translationHeader) ~= "boolean" then self.preferences.translationHeader = true end
     if not npcTooltipPositions[self.preferences.npcTooltipPosition] then self.preferences.npcTooltipPosition = "top" end
 
@@ -193,10 +218,23 @@ function Addon:SetTranslationOnly(enabled)
     end
 end
 
-function Addon:SetTooltipCoverage(coverage)
-    assert(tooltipCoverages[coverage], "Unknown tooltip coverage: " .. tostring(coverage))
-    self.preferences.tooltipCoverage = coverage
-    self.tooltipKey, self.questTrackerTooltipKey = nil, nil
+function Addon:GetTooltipCategory(kind, data)
+    local auraType = kind == "spell" and Enum.TooltipDataType.UnitAura
+    if auraType and canaccessallvalues(data) and type(data) == "table"
+        and canaccessallvalues(data.type) and data.type == auraType then
+        return "aura"
+    end
+    return kind
+end
+
+function Addon:GetTooltipCoverage(kind, data)
+    return self.preferences.tooltipNameOnly[self:GetTooltipCategory(kind, data)] and "name" or "full"
+end
+
+function Addon:SetTooltipNameOnly(kind, enabled)
+    assert(tooltipNameOptions[kind], "Unknown tooltip category: " .. tostring(kind))
+    assert(type(enabled) == "boolean", "Tooltip name-only setting must be boolean")
+    self.preferences.tooltipNameOnly[kind] = enabled
     self:RefreshSettingsUI()
     if self.lifecycle == "ready" then
         self:Run("change tooltip coverage", function() self:RefreshFeatures() end)
@@ -247,7 +285,7 @@ function Addon:ResetFeatureSettings()
     self.preferences.tooltipMode = "stacked"
     self.preferences.translationOnly = false
     self.preferences.stackedTranslationFirst = false
-    self.preferences.tooltipCoverage = "full"
+    for kind in pairs(tooltipNameOptions) do self.preferences.tooltipNameOnly[kind] = false end
     self.preferences.translationHeader = true
     self.contentKey, self.tooltipKey = nil, nil
 
@@ -267,6 +305,7 @@ function Addon:RefreshSettingsUI()
         for _, setting in pairs(self.settings or {}) do setting:NotifyUpdate() end
     end
     self:RefreshRadioLists()
+    if self.liveSettings and self.liveSettings:IsShown() then self.liveSettings:Refresh() end
     self:RefreshTooltipPreview()
 end
 
@@ -290,6 +329,140 @@ local function NavigateFromRowStart(list, index, direction, step)
     end
 end
 
+-- Illustrative catalog records used only inside Settings. Look them up in both
+-- languages so the example follows the client's language and the hovered choice.
+local function SpellSample(id, field)
+    return function(db, locale)
+        local details = db:GetSpellDetails(id, locale)
+        local body = details and details[field]
+        return db:GetSpellName(id, locale), body and not body:find("$", 1, true) and body or nil
+    end
+end
+
+local function NameSample(method, id)
+    return function(db, locale) return (db[method](db, id, locale)) end
+end
+
+local function QuestSample(db, locale)
+    local quest = db:GetQuest(783, locale)
+    if quest then return quest.title, quest.summary end
+end
+
+local function ItemSample(db, locale)
+    return db:GetItemName(19019, locale), db:GetGlobalStringByKey("INVTYPE_WEAPON", locale), "ffff8000"
+end
+
+local areaSample = NameSample("GetAreaName", 9)
+local samples = {
+    spellTooltip = SpellSample(1953, "description"), talentTooltip = SpellSample(12043, "description"),
+    auraTooltip = SpellSample(130, "auraDescription"), petTooltip = SpellSample(4055, "description"),
+    mountTooltip = SpellSample(458, "description"), itemTooltip = ItemSample, appearanceTooltip = ItemSample,
+    npcTooltip = function(db, locale) return db:GetNpcName(1247, locale), db:GetNpcSubName(1247, locale) end,
+    characterStatTooltip = function(_, locale)
+        local labels = Addon.characterStatFormats[locale]
+        if labels then return labels.STAT_ARMOR, labels.STAT_ARMOR_TOOLTIP and labels.STAT_ARMOR_TOOLTIP:format(15) end
+    end,
+    recipeTrackerTooltip = function(db, locale)
+        local reagent = db:GetItemName(2996, locale)
+        return db:GetSpellName(7623, locale), reagent and ("- 1 / 3 " .. reagent)
+    end,
+    questTooltip = QuestSample, mapQuestTooltip = QuestSample, questTrackerTooltip = QuestSample,
+    questPanel = QuestSample, rewardComparison = ItemSample,
+    recipeListTooltip = NameSample("GetSpellName", 7623), recipeCategoryTooltip = NameSample("GetProfessionCategoryName", 2426),
+    activityTooltip = NameSample("GetActivityName", 799), gossipOptionTooltip = NameSample("GetGossipOptionName", 95414),
+    bookTooltip = NameSample("GetBookName", 16),
+    bookPanel = function(db, locale)
+        local body = db:GetBookPage(16, locale)
+        return db:GetBookName(16, locale), body and body:match("^[^\r\n]+")
+    end,
+    trackingMenu = NameSample("GetSpellName", 2383),
+    playerTooltip = function(db, locale)
+        local _, _, classID = UnitClass("player")
+        return UnitName("player"), classID and db:GetClassName(classID, locale)
+    end,
+    appearanceSlotTooltip = NameSample("GetGlobalStringByKey", "CHESTSLOT"),
+    taxiNodeTooltip = function(db, locale)
+        local locationHint = db:GetGlobalStringByKey("TAXINODEYOUAREHERE", locale)
+        return db:GetTaxiNodeName(2, locale), locationHint
+    end,
+    locationTooltip = areaSample, mapLocationLabel = areaSample, mapDropdown = areaSample, playerLocation = areaSample,
+    minimapLocationTooltip = function(db, locale) return db:GetAreaName(12, locale), db:GetAreaName(9, locale) end,
+    locale = ItemSample, tooltipPresentation = ItemSample, translationHeader = ItemSample,
+}
+samples.mapContext = samples.minimapLocationTooltip
+samples.questOfferTooltip = function(db, locale) return (QuestSample(db, locale)) end
+samples.minimapQuestTooltip = samples.questOfferTooltip
+samples.npcTooltipPosition = samples.npcTooltip
+
+local function SampleBlock(sample, locale, withDetails)
+    local name, detail, color = sample(ForeverRosettaStoneDB, locale)
+    if not name then return end
+    local title = "|c" .. (color or "ffffffff") .. name .. "|r"
+    return withDetails and detail and (title .. "\n" .. detail) or title
+end
+
+function Addon:GetOptionPreview(id, value)
+    local sample = samples[id]
+    if not sample then return end
+    local locale = id == "locale" and value or Addon:GetTargetLocale()
+    local mode = Addon:GetTooltipPresentation() or "below"
+    if id == "tooltipPresentation" then mode = value end
+    if id == "npcTooltipPosition" then mode = "separate" end
+    local native = SampleBlock(sample, GetLocale(), true)
+    local translated = value ~= "off" and (value ~= false or id == "translationHeader") and SampleBlock(sample, locale, value ~= "name")
+    local header = Addon.preferences.translationHeader
+    if id == "translationHeader" then header = value end
+    if translated and mode ~= "replacement" and header then
+        local caption = locale == Addon:GetTargetLocale() and Addon:GetTooltipTranslationLabel()
+            or ForeverRosettaStoneDB:GetLocales()[locale]
+        translated = caption .. "\n" .. translated
+    end
+    return native, translated, mode
+end
+
+local function OptionHelp(id, value, hint, split)
+    local native, translated, mode = Addon:GetOptionPreview(id, value)
+    if not native and not translated then return hint end
+    local blocks = { hint, "|cffaaaaaa" .. Addon:SettingsText("preview") .. "|r" }
+    if translated and mode == "above" then blocks[#blocks + 1] = translated end
+    if native and (mode ~= "replacement" or not translated) then blocks[#blocks + 1] = native end
+    if split and translated and mode == "separate" then return table.concat(blocks, "\n\n"), translated end
+    if translated and mode ~= "above" then blocks[#blocks + 1] = translated end
+    return table.concat(blocks, "\n\n")
+end
+
+local function ShowOptionHelp(owner, id, label, value, hint)
+    local tip = Addon:GetWidgetTooltip()
+    tip:SetOwner(owner, "ANCHOR_RIGHT")
+    tip:SetText(label, 1, 1, 1)
+    local help, separate = OptionHelp(id, value, hint, true)
+    tip:AddLine(help, nil, nil, nil, true)
+    tip:Show()
+    local companion = tip.optionPreview
+    if separate then
+        if not companion then
+            companion = Addon:CreateCompanionTooltip("ForeverRosettaStoneOptionPreview", tip)
+            tip.optionPreview = companion
+            tip:HookScript("OnHide", function() companion:Hide() end)
+        end
+        local position = id == "npcTooltipPosition" and value or
+            (id == "npcTooltip" and Addon.preferences.npcTooltipPosition) or "bottom"
+        local anchors = { top = {"BOTTOM", "TOP", 0, 4}, bottom = {"TOP", "BOTTOM", 0, -4},
+            left = {"RIGHT", "LEFT", -4, 0}, right = {"LEFT", "RIGHT", 4, 0} }
+        local anchor = anchors[position]
+        companion:SetOwner(tip, "ANCHOR_NONE")
+        companion:ClearAllPoints()
+        companion:SetPoint(anchor[1], tip, anchor[2], anchor[3], anchor[4])
+        companion:ClearLines()
+        for line in (separate .. "\n"):gmatch("(.-)\n") do
+            companion:AddLine(line ~= "" and line or " ", 1, 1, 1, true)
+        end
+        companion:Show()
+    elseif companion then
+        companion:Hide()
+    end
+end
+
 function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isEnabled, columns)
     local list = CreateFrame("Frame", nil, UIParent)
     list:Hide()
@@ -299,6 +472,7 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
     list.label:SetJustifyH("LEFT")
     list.label:SetWordWrap(false)
     list.label:SetText(label)
+    list.hint = hint
     list.buttons = {}
     -- Blizzard menus draw radios with these atlases; older clients keep the classic texture.
     local modernRadio = C_Texture and C_Texture.GetAtlasInfo and C_Texture.GetAtlasInfo(RADIO_ATLAS) ~= nil
@@ -341,10 +515,7 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
         button.OnSmartNavClick = Choose
         button:SetScript("OnEnter", function()
             button:LockHighlight()
-            Addon:GetWidgetTooltip():SetOwner(list, "ANCHOR_RIGHT")
-            Addon:GetWidgetTooltip():SetText(label, 1, 1, 1)
-            Addon:GetWidgetTooltip():AddLine(choice.hint or hint, nil, nil, nil, true)
-            Addon:GetWidgetTooltip():Show()
+            ShowOptionHelp(list, id, choice.label, choice.value, choice.hint or hint)
         end)
         button:SetScript("OnLeave", function()
             button:UnlockHighlight()
@@ -472,12 +643,17 @@ function Addon:CreateSettingsUI()
     local category, layout = Settings.RegisterVerticalLayoutCategory("Forever Rosetta Stone")
     self.settingsCategory = category
     self.settings = {}
+    self.liveSettingsGroups = {}
+    local function Group(label)
+        table.insert(self.liveSettingsGroups, { label = label, rows = {} })
+    end
     local function Register(category, id, name, default, getValue, setValue)
         local valueType = Settings.VarType[type(default) == "boolean" and "Boolean"
             or type(default) == "number" and "Number" or "String"]
         local setting = Settings.RegisterProxySetting(category, "ForeverRosettaStone_" .. id,
             valueType, name, default, getValue, setValue)
         self.settings[id] = setting
+        table.insert(self.liveSettingsGroups[#self.liveSettingsGroups].rows, { id = id, name = name, setting = setting })
         return setting
     end
     -- Native addon dropdown popups taint the client's shared controller focus on opening.
@@ -492,26 +668,46 @@ function Addon:CreateSettingsUI()
     end
     local function Checkbox(category, id, setting, description)
         local initializer = Settings.CreateCheckbox(category, setting, description)
-        if newSettings[id] then
-            -- Use the native row's badge. Release highlights are managed by the addon.
-            initializer.IsNewTagShown = function() return true end
-            initializer.MarkSettingAsSeen = function() end
+        if samples[id] then
+            initializer.GetTooltip = function() return OptionHelp(id, setting:GetValue(), description) end
         end
         return initializer
     end
-    local function Toggle(category, id, name, default, onValue, offValue, getValue, setValue, description)
-        Register(category, id, name, default and onValue or offValue, getValue, setValue)
-        local setting = Register(category, id .. "Enabled", name, default,
-            function() return getValue() == onValue end,
-            function(enabled) setValue(enabled and onValue or offValue) end)
-        return Checkbox(category, id, setting, description)
-    end
     local Text = function(key) return self:SettingsText(key) end
+    local function TooltipChoices(feature, kind, label, description)
+        local function Read()
+            if not self:IsFeatureEnabled(feature.id) then return "off" end
+            return self:GetTooltipCoverage(kind)
+        end
+        local function Apply(mode)
+            assert(mode == "off" or mode == "name" or mode == "full", "Unknown tooltip mode")
+            self.preferences.tooltipNameOnly[kind] = mode == "name"
+            self:SetFeatureEnabled(feature.id, mode ~= "off")
+        end
+        RadioList("ForeverRosettaStoneMode_" .. kind, 3, feature.id, label, description, "full", {
+            { value = "off", label = Text("modeOff"), hint = Text("offHint") },
+            { value = "name", label = Text("modeName"), hint = Text("nameOnlyHint") },
+            { value = "full", label = Text("modeFull"), hint = description },
+        }, Read, Apply)
+    end
     local names, languages = ForeverRosettaStoneDB:GetLocales(), {}
     for locale, name in pairs(names) do
         if locale:sub(1, 2) ~= GetLocale():sub(1, 2) then languages[#languages + 1] = { value = locale, label = name } end
     end
     table.sort(languages, function(a, b) return a.label == b.label and a.value < b.value or a.label < b.label end)
+    Group(Text("translation"))
+    local liveButton = CreateSettingsButtonInitializer(Text("liveSettings"), OPEN or Text("liveSettings"),
+        function() self:OpenLiveSettings() end, Text("liveHint"), true)
+    liveButton.showNew = true
+    layout:AddInitializer(liveButton)
+    layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(self:DebugText("title")))
+    layout:AddInitializer(CreateSettingsButtonInitializer(self:DebugText("inspect"), self:DebugText("inspect"),
+        function() self:ToggleDebugInspection() end, self:DebugText("inspectHint"), true))
+    layout:AddInitializer(CreateSettingsButtonInitializer(self:DebugText("title"), self:SettingsText("openConsole"),
+        function()
+            HideUIPanel(SettingsPanel)
+            self:RunDebugCommand("")
+        end, self:DebugText("inspectHint") .. "\n" .. self:DebugText("reportHint"), true))
     layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(Text("translation")))
     RadioList("ForeverRosettaStoneSettingsLanguageListTemplate", 2, "locale", Text("language"), Text("languageHint"), "enUS", languages,
         function() return self:GetTargetLocale() end,
@@ -533,10 +729,6 @@ function Addon:CreateSettingsUI()
         function(value) self:SetNpcTooltipPosition(value) end,
         function() return self:GetTooltipPresentation() == "separate" end)
     layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(Text("tooltipContent")))
-    Toggle(category, "tooltipCoverage", Text("fullText"), true, "full", "name",
-        function() return self.preferences.tooltipCoverage end,
-        function(value) self:SetTooltipCoverage(value) end,
-        Text("fullTextHint"))
     local header = Register(category, "translationHeader", Text("translationHeader"), true,
         function() return self.preferences.translationHeader end,
         function(value) self:SetTranslationHeader(value) end)
@@ -571,25 +763,38 @@ function Addon:CreateSettingsUI()
     layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(self:SettingsText("preview")))
     layout:AddInitializer(Settings.CreatePanelInitializer("ForeverRosettaStoneSettingsPreviewTemplate", {}))
 
+    local parentFeatures = {
+        questAutoOpen = "questPanel", questGreetingAutoOpen = "questPanel",
+        questProgressAutoOpen = "questPanel", questRewardAutoOpen = "questPanel",
+        rewardComparison = "questPanel", bookAutoOpen = "bookPanel",
+    }
+    self.liveSettingParents = parentFeatures
+    local featureControls = {}
     for _, group in ipairs({ "Quests", "Items", "Spells", "Talents", "NPCs", "Locations", "Collections", "Character", "Professions", "Books" }) do
+        Group(self:SettingsGroupName(group))
         layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(self:SettingsGroupName(group)))
         for _, feature in ipairs(self.features) do
             if feature.group == group then
                 local name, description = self:FeatureText(feature)
-                local setting = Register(category, feature.id, name, true,
-                    function() return self:IsFeatureEnabled(feature.id) end,
-                    function(value) self:SetFeatureEnabled(feature.id, value) end)
-                Checkbox(category, feature.id, setting, description)
+                local kind = feature.id:match("^(.-)Tooltip$")
+                if tooltipNameOptions[kind] then
+                    TooltipChoices(feature, kind, name, description)
+                else
+                    local setting = Register(category, feature.id, name, true,
+                        function() return self:IsFeatureEnabled(feature.id) end,
+                        function(value) self:SetFeatureEnabled(feature.id, value) end)
+                    local control = Checkbox(category, feature.id, setting, description)
+                    featureControls[feature.id] = control
+                    local parent = parentFeatures[feature.id]
+                    if parent then
+                        control:SetParentInitializer(featureControls[parent], function() return self:IsFeatureEnabled(parent) end)
+                        control:AddEvaluateStateCVar(self.settings[parent]:GetVariable())
+                    end
+                end
             end
         end
     end
 
-    layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(self:DebugText("title")))
-    layout:AddInitializer(CreateSettingsButtonInitializer(self:DebugText("title"), self:SettingsText("openConsole"),
-        function()
-            HideUIPanel(SettingsPanel)
-            self:RunDebugCommand("")
-        end, self:DebugText("inspectHint") .. "\n" .. self:DebugText("reportHint"), true))
     Settings.RegisterAddOnCategory(category)
     local settingsList = SettingsPanel:GetSettingsList()
     local defaults = settingsList and settingsList.Header and settingsList.Header.DefaultsButton
@@ -708,6 +913,174 @@ function Addon:ShowSettingsResetDialog()
     end
     self.settingsResetDialog.categoryID = SettingsPanel:GetCurrentCategory():GetID()
     self.settingsResetDialog.frame:Show()
+end
+
+-- This window is outside UIPanelWindows so the native radial can still open game panels.
+function Addon:OpenLiveSettings()
+    if InCombatLockdown() then return end
+    if SettingsPanel:IsShown() then HideUIPanel(SettingsPanel) end
+    if GameMenuFrame and GameMenuFrame:IsShown() then HideUIPanel(GameMenuFrame) end
+    if self.liveSettings then self.liveSettings:Show(); return end
+
+    local window = CreateFrame("Frame", "ForeverRosettaStoneLiveSettings", UIParent, "PortraitFrameTemplateNoCloseButton")
+    self.liveSettings = window
+    window:Hide()
+    window:SetSize(528, 300)
+    window:SetPoint("RIGHT", UIParent, "RIGHT", -16, 0)
+    window:SetFrameStrata("DIALOG")
+    window:SetClampedToScreen(true)
+    window:EnableMouse(true)
+    window:SetMovable(true)
+    window:RegisterForDrag("LeftButton")
+    window:SetScript("OnDragStart", function() window:StartMoving() end)
+    window:SetScript("OnDragStop", function() window:StopMovingOrSizing() end)
+    window:SetTitle("Forever Rosetta Stone")
+    window:SetPortraitToAsset([[Interface\AddOns\ForeverRosettaStone\media\icon]])
+    local function Button(label, width, action, template)
+        local button = CreateFrame("Button", nil, window, template or "UIPanelButtonTemplate")
+        button:SetSize(width, 24)
+        if label then button:SetText(label) end
+        button:SetScript("OnClick", action)
+        button.OnSmartNavClick = action
+        return button
+    end
+    local close = Button(nil, 26, function() window:Hide() end, "UIPanelCloseButton")
+    close:SetPoint("TOPRIGHT", -3, -3)
+    Button(self:DebugText("inspect"), 182, function() self:ToggleDebugInspection() end)
+        :SetPoint("TOPLEFT", 68, -39)
+    Button(self:SettingsText("openConsole"), 182, function() self:RunDebugCommand("") end)
+        :SetPoint("TOPRIGHT", -20, -39)
+    local title = window:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    title:SetPoint("TOP", 0, -80)
+    local page, controls = 1, {}
+    local function Turn(step)
+        page = (page - 1 + step) % #self.liveSettingsGroups + 1
+        window:Refresh()
+    end
+    Button("<", 36, function() Turn(-1) end):SetPoint("TOPLEFT", 26, -75)
+    Button(">", 36, function() Turn(1) end):SetPoint("TOPRIGHT", -20, -75)
+
+    function window:Refresh()
+        local group = Addon.liveSettingsGroups[page]
+        title:SetText(group.label)
+        self:SetHeight(126 + #group.rows * 30)
+        for index, row in ipairs(group.rows) do
+            local button = controls[index]
+            if not button then
+                local function Change(step)
+                    local current = Addon.liveSettingsGroups[page].rows[index]
+                    local list = Addon.radioLists[current.id]
+                    local value = current.setting:GetValue()
+                    if list then
+                        for i, choice in ipairs(list.choices) do
+                            if choice.value == value then
+                                current.setting:SetValue(list.choices[(i - 1 + step) % #list.choices + 1].value)
+                                break
+                            end
+                        end
+                    else
+                        current.setting:SetValue(not value)
+                    end
+                end
+                button = Button("", 180, function() Change(1) end)
+                button.previous = Button("<", 30, function() Change(-1) end)
+                button.previous:SetPoint("RIGHT", button, "LEFT", -4, 0)
+                button.following = Button(">", 30, function() Change(1) end)
+                button.following:SetPoint("LEFT", button, "RIGHT", 4, 0)
+                local function Hover(owner, step)
+                    local row = Addon.liveSettingsGroups[page].rows[index]
+                    local list = Addon.radioLists[row.id]
+                    local value = row.setting:GetValue()
+                    if list then
+                        for i, choice in ipairs(list.choices) do
+                            if choice.value == value then
+                                local hovered = list.choices[(i - 1 + step) % #list.choices + 1]
+                                ShowOptionHelp(owner, row.id, hovered.label, hovered.value, hovered.hint or list.hint)
+                                return
+                            end
+                        end
+                    else
+                        local feature = featureByID[row.id]
+                        local hint = feature and select(2, Addon:FeatureText(feature)) or Addon:SettingsText("translationHeaderHint")
+                        ShowOptionHelp(owner, row.id, row.name, value, hint)
+                    end
+                end
+                for step, control in pairs({ [-1] = button.previous, [0] = button, [1] = button.following }) do
+                    control:SetScript("OnEnter", function(owner) Hover(owner, step) end)
+                    control:SetScript("OnLeave", function() Addon:GetWidgetTooltip():Hide() end)
+                end
+                button.label = window:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+                button.label:SetPoint("LEFT", window, "TOPLEFT", 22, -119 - (index - 1) * 30)
+                button.label:SetPoint("RIGHT", window, "TOPRIGHT", -276, -119 - (index - 1) * 30)
+                button.label:SetJustifyH("LEFT")
+                controls[index] = button
+            end
+            local value = row.setting:GetValue()
+            local list = Addon.radioLists[row.id]
+            local label = value and Addon:SettingsText("liveOn") or Addon:SettingsText("modeOff")
+            if list then
+                for _, choice in ipairs(list.choices) do
+                    if choice.value == value then label = choice.label; break end
+                end
+            end
+            local parent = Addon.liveSettingParents[row.id]
+            local enabled = (not parent or Addon:IsFeatureEnabled(parent))
+                and (not list or not list.isEnabled or list.isEnabled())
+                and (row.id ~= "translationHeader" or not Addon.preferences.translationOnly)
+            button:ClearAllPoints()
+            button:SetWidth(list and 180 or 248)
+            button:SetPoint("TOPRIGHT", list and -54 or -20, -107 - (index - 1) * 30)
+            button.previous:SetShown(list ~= nil)
+            button.following:SetShown(list ~= nil)
+            button.previous:SetEnabled(enabled)
+            button.following:SetEnabled(enabled)
+            button:SetEnabled(enabled)
+            button.label:SetText(row.name)
+            button.label:SetAlpha(enabled and 1 or 0.5)
+            button:SetText(label)
+            button:Show()
+            button.label:Show()
+        end
+        for index = #group.rows + 1, #controls do
+            controls[index]:Hide()
+            controls[index].label:Hide()
+            controls[index].previous:Hide()
+            controls[index].following:Hide()
+        end
+    end
+    local registered = false
+    local function Sync()
+        if InCombatLockdown() then return end
+        local active = window:IsShown() and InputUtil.IsGamepadUIEnabled()
+        if active == registered then return end
+        registered = active
+        if active then GamepadMode.FrameControlsManager:FrameShown(window, false, true)
+        else
+            GamepadMode.FrameControlsManager:FrameHidden(window)
+            SmartNavigation:RemovePanelInfo(window)
+        end
+    end
+    window.FocusGamepad = function() Addon:ClearGamepadTarget(window) end
+    window.SmartNavigationCloseHandler = function() window:Hide(); return true end
+    local arrow = window:CreateTexture(nil, "OVERLAY")
+    arrow:SetSize(26, 26)
+    arrow:SetAtlas("gamepad-largecursor-white")
+    arrow:Hide()
+    window.SmartNavigationOnSelect = function(_, button)
+        arrow:Hide()
+        if button then
+            arrow:ClearAllPoints()
+            arrow:SetPoint("RIGHT", button, "LEFT", 5, 0)
+            arrow:Show()
+        end
+    end
+    window.UnfocusGamepad = function() arrow:Hide() end
+    window:SetScript("OnShow", function() window:Refresh(); Sync() end)
+    window:SetScript("OnHide", function() arrow:Hide(); Sync() end)
+    window:RegisterEvent("PLAYER_REGEN_ENABLED")
+    window:SetScript("OnEvent", Sync)
+    InputUtil.RegisterForInterfaceTransitions(window, Sync)
+    window:Show()
 end
 
 function Addon:OpenSettings()

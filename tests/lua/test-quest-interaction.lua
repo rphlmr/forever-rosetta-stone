@@ -629,8 +629,8 @@ end
 check(spellButton ~= nil, "mirrored spell rewards get a hover target")
 spellButton.left, spellButton.top = 40, 300 -- mock frames resolve only explicit screen rects
 local spellSource, rewardTip = Addon.rewardSpellSource, Addon.rewardTooltips[1]
-local previousCoverage = Addon.preferences.tooltipCoverage
-Addon.preferences.tooltipCoverage = "name"
+local previousCoverage = Addon.preferences.tooltipNameOnly.quest
+Addon.preferences.tooltipNameOnly.quest = true
 spellSource.SetSpellByID = function(tip, id)
     tip.processingInfo = { tooltipData = { type = Enum.TooltipDataType.Spell, id = id, lines = {} } }
     tip:Show()
@@ -669,7 +669,7 @@ Addon:UpdateRewardTooltips()
 check(not rewardTip:IsShown(), "moving gamepad focus away hides the reward tooltip")
 SmartNavigation.activeFrame, SmartNavigation.currentButton = previousActive, previousCurrent
 controls.setGamepad(false)
-Addon.preferences.tooltipCoverage = previousCoverage
+Addon.preferences.tooltipNameOnly.quest = previousCoverage
 check(FindRewardText(Addon:GetQuestLabel("rewards")), "NPC reward mirror translates its native header")
 check(FindRewardText("40"), "NPC reward mirror preserves live XP")
 check(FindRewardText(Addon:GetClientLabel("EXPERIENCE_COLON", Addon:GetTargetLocale())),

@@ -116,7 +116,7 @@ choices do not change your saved settings. Equipment comparisons depend on the c
 To report a translated surface without knowing its ID:
 
 1. Open the relevant native panel, such as bags, talents, quests, or the map, and choose **Inspect something**.
-2. The console stays visible at 15% opacity in the highest addon UI layer. All of its controls
+2. With a mouse, the console stays visible at 15% opacity in the highest addon UI layer. All of its controls
    and scroll areas become click-through; hover or select native game elements through the window.
 3. Choose the separate **Stop picking** control. The console returns to full opacity.
 4. Select an entry from the hovered list, then choose **Select output** and press **Ctrl+C / Cmd+C**.
@@ -130,8 +130,10 @@ captured errors. Each addon or entity report includes the GitHub destination and
 
 In native gamepad mode, use the D-pad to move between actions and captured entries, Select
 to activate, and Back to close. The report scroll area uses native controller scrolling.
-Pick releases console focus so you can navigate the game panels normally; switch to the
-**Stop picking** panel or reopen the console from Settings when finished.
+Choose **Inspect something** directly in the addon settings to return to the game and start capturing.
+In gamepad mode the console hides. Open and close game panels with your usual bindings.
+Tap Back to navigate or hold Back for 0.8 seconds to finish and review the captures.
+You can also assign **Start / stop inspection** under the Forever Rosetta Stone key bindings.
 For Steam Deck users without a keyboard, choose the desired report and **Save report**.
 Log out to write `WTF/Account/<account>/SavedVariables/ForeverRosettaStone.lua`, then copy
 that file as `FRS-debug.txt` and attach the copy to the GitHub issue from desktop mode.

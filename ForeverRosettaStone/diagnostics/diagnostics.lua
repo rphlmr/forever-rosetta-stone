@@ -557,9 +557,17 @@ function Addon:RecordDebugUnit(unit)
     if ok and data then self:RecordDebugTooltip(UIParent, data) end
 end
 
+function Addon:ToggleDebugInspection()
+    self:MoveDebugPicker(self:IsDebugPicking() and "stop" or "start")
+end
+
 function Addon:MoveDebugPicker(event)
     local nextState = transitions[picker.state][event]
     if not nextState then return false end
+    if event == "start" or event == "stop" then
+        if SettingsPanel:IsShown() then HideUIPanel(SettingsPanel) end
+        if GameMenuFrame and GameMenuFrame:IsShown() then HideUIPanel(GameMenuFrame) end
+    end
     if event == "start" and (not self.errorDialog or not self.errorDialog.console
         or not self.errorDialog.frame:IsShown()) then self:ShowDebugConsole(self:GetDebugPickedList(), true) end
     picker.state = nextState
@@ -667,7 +675,7 @@ function Addon:RecordDebugRenderedTooltip(spec)
         lines[index] = { leftText = left and left:GetText(), rightText = right and right:GetText() }
     end
     entry.renderedTranslation = Snapshot({ name = spec.name, lines = lines,
-        tooltipMode = self.preferences.tooltipMode, tooltipCoverage = self.preferences.tooltipCoverage })
+        tooltipMode = self.preferences.tooltipMode, tooltipCoverage = self:GetTooltipCoverage(spec.kind, spec.data) })
     if spec.debugNativeTalentLines then
         entry.nativeLinesAtRender = Snapshot(spec.debugNativeTalentLines)
         spec.debugNativeTalentLines = nil
@@ -706,7 +714,7 @@ function Addon:CaptureDebugTooltip(source, data)
     self:CaptureDebugSurface(source, kind, id, component and component.GetPlacementContext(source), data,
         spec and spec.kind == kind and spec.id == id and { name = spec.name,
             lifecycle = spec.group and spec.group.lifecycle, tooltipMode = self.preferences.tooltipMode,
-            tooltipCoverage = self.preferences.tooltipCoverage } or nil)
+            tooltipCoverage = self:GetTooltipCoverage(spec.kind, data) } or nil)
     local entry = picker.byID[kind .. ":" .. id]
     if entry then entry.resolutionErrors = next(resolutionErrors) and resolutionErrors or nil end
 end
@@ -900,6 +908,7 @@ function Addon:RunDebugCommand(command)
         end
     elseif action == "error" then self:ShowErrorDialog(); return
     elseif action == "bench" and self.BenchmarkCommand then self:BenchmarkCommand(argument); return
+    elseif action == "live" then self:OpenLiveSettings(); return
     elseif action == "settings" then self:OpenSettings(); return
     elseif action == "quest" then
         if self.errorDialog then self.errorDialog.frame:Hide() end

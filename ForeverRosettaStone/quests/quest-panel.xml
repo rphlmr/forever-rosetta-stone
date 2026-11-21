@@ -37,4 +37,47 @@
             </OnShow>
         </Scripts>
     </Frame>
+    <Frame name="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <Size y="30"/>
+        <Scripts><OnShow>ForeverRosettaStone:AttachRadioList(self, self.modeSetting);</OnShow></Scripts>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_item" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="itemTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_spell" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="spellTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_talent" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="talentTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_aura" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="auraTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_mount" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="mountTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_pet" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="petTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_appearance" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="appearanceTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_npc" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="npcTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_quest" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="questTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_mapQuest" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="mapQuestTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_questTracker" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="questTrackerTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_recipeTracker" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="recipeTrackerTooltip" type="string"/></KeyValues>
+    </Frame>
+    <Frame name="ForeverRosettaStoneMode_characterStat" inherits="ForeverRosettaStoneTooltipModeTemplate" virtual="true">
+        <KeyValues><KeyValue key="modeSetting" value="characterStatTooltip" type="string"/></KeyValues>
+    </Frame>
 </Ui>

@@ -16,7 +16,7 @@ function Addon:CreateTooltipComponent(definition)
     assert(type(definition.GetName) == "function", definition.kind .. ".GetName must be a function")
     local component = {}
     for key, value in pairs(definition) do component[key] = value end
-    for _, capability in ipairs({ "supportsFullText", "alwaysFull", "supportsEmbedded" }) do
+    for _, capability in ipairs({ "supportsFullText", "supportsEmbedded" }) do
         assert(definition[capability] == nil or type(definition[capability]) == "boolean",
             component.kind .. "." .. capability .. " must be a boolean")
     end
@@ -35,7 +35,6 @@ function Addon:CreateTooltipComponent(definition)
         end
     end
     component.supportsFullText = definition.supportsFullText == true
-    component.alwaysFull = definition.alwaysFull == true
     component.supportsEmbedded = definition.supportsEmbedded ~= false
     local defaults = {
         ResolveData = NoResult, ResolveOwner = NoResult, FillTooltip = FillTitle,

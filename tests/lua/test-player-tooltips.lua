@@ -8,7 +8,7 @@ local previous = {}
 local keys = { "GetLocale", "UnitGUID", "UnitRace", "UnitClass", "UnitLevel", "UnitSex", "UnitIsPlayer", "UnitFactionGroup", "GetGuildInfo" }
 for _, key in ipairs(keys) do previous[key] = _G[key] end
 local oldGetUnit = GameTooltip.GetUnit
-local oldLocale, oldMode, oldCoverage = Addon:GetTargetLocale(), Addon.preferences.tooltipMode, Addon.preferences.tooltipCoverage
+local oldLocale, oldMode, oldFeature = Addon:GetTargetLocale(), Addon.preferences.tooltipMode, Addon:IsFeatureEnabled("playerTooltip")
 local oldEnabled = Addon:IsFeatureEnabled("playerTooltip")
 local oldNpcEnabled = Addon:IsFeatureEnabled("npcTooltip")
 local guid, raceID, classID, level, sex = "Player-42-ABCDEF", 1, 3, 25, 2
@@ -26,7 +26,7 @@ GetGuildInfo = function() return nativeGuild end
 GameTooltip.GetUnit = function() return "Native", "nameplate4" end
 Addon:SetTargetLocale("frFR")
 Addon:SetTooltipMode("separate")
-Addon:SetTooltipCoverage("full")
+Addon:SetFeatureEnabled("playerTooltip", true)
 Addon:SetFeatureEnabled("playerTooltip", true)
 
 local function show(extraText, guildText)
@@ -98,10 +98,10 @@ tip = show()
 equal(tip.lines[2], "Nivel 25 Humana (Jugador)", "female race variants use UnitSex and owned native text")
 sex = 2
 Addon:SetTargetLocale("frFR")
-Addon:SetTooltipCoverage("name")
+Addon:SetFeatureEnabled("playerTooltip", false)
 tip = show()
-equal(tip:IsShown(), false, "name-only coverage does not duplicate unchanged player names")
-Addon:SetTooltipCoverage("full")
+equal(tip:IsShown(), false, "disabled player translations preserve the original tooltip")
+Addon:SetFeatureEnabled("playerTooltip", true)
 raceID, classID = 99999999, 99999999
 tip = show("Alliance")
 equal(tip.lines[2], "Level 25 Human (Player)", "missing race translation preserves the complete native row")
@@ -127,7 +127,7 @@ equal(tip:IsShown(), false, "unit tooltip setting disables player translation")
 GameTooltip:Hide()
 Addon:SetTargetLocale(oldLocale)
 Addon:SetTooltipMode(oldMode)
-Addon:SetTooltipCoverage(oldCoverage)
+Addon:SetFeatureEnabled("playerTooltip", oldFeature)
 Addon:SetFeatureEnabled("playerTooltip", oldEnabled)
 GameTooltip.GetUnit = oldGetUnit
 for _, key in ipairs(keys) do _G[key] = previous[key] end
