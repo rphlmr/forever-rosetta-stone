@@ -3,6 +3,8 @@ _G.ForeverRosettaStone = Addon
 _G.BINDING_HEADER_FOREVERROSETTASTONE = "Forever Rosetta Stone"
 _G.BINDING_NAME_FOREVERROSETTASTONE_READING = "Open / close quest translation"
 
+_G.BINDING_NAME_FOREVERROSETTASTONE_INSPECT = GetLocale() == "frFR" and "Démarrer / arrêter l’inspection" or "Start / stop inspection"
+
 -- Changing modes requires a reload: installed secure hooks cannot be removed safely.
 function Addon:SetAPIOnly(enabled)
     assert(type(enabled) == "boolean", "API-only mode must be boolean")

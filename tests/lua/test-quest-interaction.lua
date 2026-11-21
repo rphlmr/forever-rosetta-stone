@@ -92,6 +92,22 @@ do
     db.GetQuestDialogue, UnitSex, GetLocale = lookup, unitSex, locale
 end
 do
+    local oldLocale, oldTarget, oldSex = GetLocale, Addon.GetTargetLocale, UnitSex
+    UnitSex = function() return 2 end
+    GetLocale = function() return "frFR" end
+    Addon.GetTargetLocale = function() return "enUS" end
+    local native = [[Allez-donc, mon ami, sans tarder hâtez-vous !
+Pour que notre breuvage, fidèle à mes dosages,
+Tienne plus de la bière que d’un mauvais ragoût,
+Il me manque du houblon pour en faire le brassage.]]
+    local poem = Addon:MatchQuestDialogue(239, 117, "progress", native)
+    check(poem and poem:gsub(" +\n", "\n") == [[Hurry, my friend, move with haste
+In order for our rich lager to taste
+More like beer and less like stew,
+Hops are needed to make the brew.]], "Thunderbrew progress renders four English verses from the captured French")
+    GetLocale, Addon.GetTargetLocale, UnitSex = oldLocale, oldTarget, oldSex
+end
+do
     local getLocale, getTargetLocale, getUnitGUID = GetLocale, Addon.GetTargetLocale, UnitGUID
     local getUnitSex = UnitSex
     local getText, getOptions, getActiveQuests = C_GossipInfo.GetText, C_GossipInfo.GetOptions, C_GossipInfo.GetActiveQuests
@@ -209,6 +225,11 @@ do
         local catalogSections = Addon:GetCatalogDialogueSections(0, "gossip")
         check(catalogSections and catalogSections[1].text == "What do ye need directions to?",
             "the captured Ironforge greeting reuses directions instead of flight dialogue")
+        UnitGUID = function() return "Creature-0-1-0-4-99999999-ABCD" end
+        C_GossipInfo.GetText = function() return "Un accueil inconnu" end
+        local partial, _, missing = Addon:GetCatalogDialogueSections(0, "gossip")
+        check(missing and partial and partial[2].text == ForeverRosettaStoneDB:GetGossipOptionName(auction.gossipOptionID, locale),
+            "known menu options remain available for an NPC without a catalog greeting")
         local savedLocale = Addon.preferences.locale
         Addon.preferences.locale = "frFR"
         GetLocale = function() return "enUS" end
@@ -629,8 +650,8 @@ end
 check(spellButton ~= nil, "mirrored spell rewards get a hover target")
 spellButton.left, spellButton.top = 40, 300 -- mock frames resolve only explicit screen rects
 local spellSource, rewardTip = Addon.rewardSpellSource, Addon.rewardTooltips[1]
-local previousCoverage = Addon.preferences.tooltipCoverage
-Addon.preferences.tooltipCoverage = "name"
+local previousCoverage = Addon.preferences.tooltipNameOnly.quest
+Addon.preferences.tooltipNameOnly.quest = true
 spellSource.SetSpellByID = function(tip, id)
     tip.processingInfo = { tooltipData = { type = Enum.TooltipDataType.Spell, id = id, lines = {} } }
     tip:Show()
@@ -669,7 +690,7 @@ Addon:UpdateRewardTooltips()
 check(not rewardTip:IsShown(), "moving gamepad focus away hides the reward tooltip")
 SmartNavigation.activeFrame, SmartNavigation.currentButton = previousActive, previousCurrent
 controls.setGamepad(false)
-Addon.preferences.tooltipCoverage = previousCoverage
+Addon.preferences.tooltipNameOnly.quest = previousCoverage
 check(FindRewardText(Addon:GetQuestLabel("rewards")), "NPC reward mirror translates its native header")
 check(FindRewardText("40"), "NPC reward mirror preserves live XP")
 check(FindRewardText(Addon:GetClientLabel("EXPERIENCE_COLON", Addon:GetTargetLocale())),

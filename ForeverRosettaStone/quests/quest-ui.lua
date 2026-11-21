@@ -689,7 +689,8 @@ function Addon:ShowTranslationTooltip()
         if difficulty then red, green, blue = difficulty:GetRGB() end
     end
 
-    local key = table.concat({mapPin and "map" or "list", questID, self:GetTargetLocale(),
+    local coverage = self:GetTooltipCoverage(mapPin and "mapQuest" or "quest")
+    local key = table.concat({mapPin and "map" or "list", questID, self:GetTargetLocale(), coverage,
         tostring(readyForTurnIn), progress, red, green, blue}, ":")
 
     if self.tooltipKey ~= key or not tip:IsShown() then
@@ -698,22 +699,16 @@ function Addon:ShowTranslationTooltip()
         self:CopyCompanionTooltipStyle(tip, GameTooltip)
         self:SetCompanionTooltipTitle(tip, title, red, green, blue)
 
-        local turnIn = readyForTurnIn and self:GetQuestTurnInText(questID)
-        if self.preferences.tooltipCoverage ~= "name" and readyForTurnIn then
-            if turnIn then
-                tip:AddLine(" ")
-                tip:AddLine(turnIn, 1, 1, 1, true)
+        if coverage == "full" then
+            local details = readyForTurnIn and self:GetQuestTurnInText(questID)
+            if not readyForTurnIn and not mapPin and quest.summary then
+                details = self:FormatQuestText(quest.summary, questID)
             end
-        elseif self.preferences.tooltipCoverage ~= "name" and not mapPin and quest.summary then
-            local summary = self:FormatQuestText(quest.summary, questID)
-            if summary then
+            if details then
                 tip:AddLine(" ")
-                tip:AddLine(summary, 1, 1, 1, true)
-                tip:AddLine(" ")
+                tip:AddLine(details, 1, 1, 1, true)
+                if not readyForTurnIn then tip:AddLine(" ") end
             end
-        end
-
-        if self.preferences.tooltipCoverage ~= "name" then
             for line in progress:gmatch("[^\n]+") do
                 tip:AddLine("- " .. line, 1, 1, 1, true)
             end
@@ -723,7 +718,7 @@ function Addon:ShowTranslationTooltip()
     end
 
     if self:GetTooltipPresentation(GameTooltip) ~= "separate" then
-        self:FillStackedTooltip(GameTooltip, tip, "quest:" .. key .. ":" .. self.preferences.tooltipCoverage)
+        self:FillStackedTooltip(GameTooltip, tip, "quest:" .. key)
         PlaceHeaderWithQuestTooltip(self)
         return
     end

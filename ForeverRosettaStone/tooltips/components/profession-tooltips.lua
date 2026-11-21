@@ -110,7 +110,7 @@ local function Update(kind, find, activeFrame, tracker)
         else title = RecipeName(id, Addon:GetTargetLocale()) end
     end
     if not title then Hide(kind); return end
-    local rows = tracker and Addon.preferences.tooltipCoverage ~= "name" and TrackerLines(source, id) or {}
+    local rows = tracker and Addon:GetTooltipCoverage("recipeTracker") == "full" and TrackerLines(source, id) or {}
     local native = not GameTooltip:IsForbidden() and GameTooltip:IsShown()
         and find(GameTooltip:GetOwner()) == source
     local key = tostring(id) .. ":" .. tostring(entryKind) .. ":" .. Addon:GetTargetLocale()

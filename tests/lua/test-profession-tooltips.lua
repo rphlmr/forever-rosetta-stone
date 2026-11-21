@@ -42,7 +42,7 @@ local originalItemInfo = C_Item.GetItemInfo
 C_Item.GetItemInfo = function(id) return id == 700003 and "Native reagent" or "Other reagent" end
 Addon:SetTargetLocale("enUS")
 Addon:SetTooltipMode("separate")
-Addon:SetTooltipCoverage("full")
+Addon:SetTooltipNameOnly("recipeTracker", false)
 SettingsPanel:Hide()
 GameMenuFrame:Hide()
 WorldMapFrame:Hide()
@@ -66,10 +66,10 @@ equal(tip.lines[3], "- 2 / 3 Translated reagent", "bag changes refresh quantitie
 block.id = -recipe
 Addon:UpdateRecipeTrackerTooltip()
 equal(tip:IsShown(), true, "recraft IDs are supported")
-Addon:SetTooltipCoverage("name")
+Addon:SetTooltipNameOnly("recipeTracker", true)
 Addon:UpdateRecipeTrackerTooltip()
 equal(#tip.lines, 2, "tracker respects name-only coverage")
-Addon:SetTooltipCoverage("full")
+Addon:SetTooltipNameOnly("recipeTracker", false)
 local row = CreateFrame("Button", nil, ProfessionsFrame)
 row.left, row.top = 500, 800
 row:SetSize(250, 25)

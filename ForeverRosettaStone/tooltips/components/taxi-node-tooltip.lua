@@ -37,7 +37,7 @@ Addon:RegisterNameTooltipComponent({
     FillTooltip = function(tip, source, name, red, green, blue)
         Addon:SetCompanionTooltipTitle(tip, name, red, green, blue)
         local owner = source:GetOwner()
-        if Addon.preferences.tooltipCoverage == "full" and owner and TaxiNodeGetType
+        if owner and TaxiNodeGetType
             and TaxiNodeGetType(owner:GetID()) == "CURRENT" then
             local label = Addon:GetClientLabel("TAXINODEYOUAREHERE", Addon:GetTargetLocale())
             if label then tip:AddLine(label, 1, 1, 1) end

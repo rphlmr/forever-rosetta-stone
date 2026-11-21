@@ -50,7 +50,9 @@ Forever Rosetta Stone provides additional translated content: a quest panel, too
 The original game UI stays available alongside Forever Rosetta Stone's translations.
 
 Tooltip translations appear below the original content by default. Check **Separate tooltip** for a
-companion beside it. **Translate full text** is checked by default; uncheck it to translate names only.
+companion beside it. For tooltips with configurable detail, choose **Off**, **Name only**, or **Full details**.
+Items, spells, auras, and talents can each be configured independently. Open **Live settings**
+from the addon options or type `/frs live` to adjust them alongside your spellbook or talents.
 
 The quest companion supports mouse and native gamepad navigation, with independent scrolling
 for the original and translated panels.

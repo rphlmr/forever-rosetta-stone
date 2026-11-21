@@ -7,28 +7,20 @@ Examples below use a French client with English translations. Choose your own tr
 ## Feature settings
 
 Open **Settings > AddOns > Forever Rosetta Stone**, or use **`/frs settings`**.
-The main page uses WoW's standard settings controls for translation language and tooltip choices,
-labeled in your game client's language. Two-value choices are checkboxes. Translation languages and
-NPC positions are listed inline as radio buttons, so every choice is visible and reachable with a
-controller; native addon dropdowns are avoided because they break controller focus.
-Expand Forever Rosetta Stone in the native category list to find Quests, Items, Spells, Talents,
-NPCs, Locations, Collections, and Character. Each page has individual checkboxes.
-Hover or focus a feature for its description.
+Scroll to a feature group and choose an option directly on its row. Hover a choice
+to preview its effect before applying it. Changes take effect immediately.
 
-**Separate tooltip** is unchecked by default (stacked display). Stacked keeps
-the native content and comparison stats first, followed by a small localized translation label,
-the Forever Rosetta Stone logo, the target-language flag, and the translated block. Separate tooltip keeps the
-side-by-side display and enables **Separate NPC tooltip position**. Saved Inline preferences migrate to Stacked.
-**Translate full text** is checked by default and includes all available translated details; unchecked,
-only the entity name is translated and native details are preserved. Both choices are saved independently.
-A live **Tooltip preview** on the main page uses the same renderers as real tooltips and your current layout,
-coverage, and translation language.
-No reload is needed to change settings.
+Tooltip categories offer **Off**, **Name only**, or **All details** wherever detailed
+translations are available. Choose the tooltip layout separately. **Separate tooltip**
+enables the position selector for NPC translations.
 
-Choose the **Translation language** dropdown, or run **`/frs language frFR`**, replacing `frFR`
+Use **Live settings** to change options alongside the spellbook, talents or another game
+window.
+
+Choose the **Translation language** list, or run **`/frs language frFR`**, replacing `frFR`
 with a catalog locale. English is the default. The choice is account-wide and does not change
 the game client or another addon's language. Some added languages still have large coverage gaps.
-The dropdown excludes the game client's language, including its regional variants.
+The list excludes the game client's language, including its regional variants.
 
 Left-click the minimap icon to open Settings. There is no minimap menu. Dragging the icon moves it
 around the minimap and saves its position. Language changes refresh open translations immediately.

@@ -28,24 +28,31 @@ equal(dialog.window:GetPortrait().width, 54, "logo fills the native portrait wit
 equal(dialog.window:GetPortrait().mask, dialog.window.PortraitContainer.CircleMask,
     "logo uses the native circular clipping mask")
 equal(dialog.background.atlas, "Profession-Background-Template2", "console reuses the native profession background")
-equal(dialog.captureBar.minimum, 0, "capture meter begins at zero")
-equal(dialog.captureBar.maximum, 30, "capture meter matches the picker limit")
-equal(dialog.captureBar.value, #Addon.debugPicker.entries, "capture meter reflects existing captures")
+equal(dialog.listTitle:GetText(), Addon:DebugText("captures") .. " · " .. #Addon.debugPicker.entries .. "/30",
+    "capture count lives in the list header")
 equal(dialog.frame.strata, "TOOLTIP", "console uses the highest addon UI strata")
 equal(dialog.frame.level, 9000, "console leaves headroom below the engine's frame-level ceiling")
 equal(dialog.window:GetFrameLevel() > dialog.frame:GetFrameLevel(), true, "window layers above the mouse-catching overlay")
 equal(dialog.run:GetFrameLevel() > dialog.window:GetFrameLevel(), true, "native buttons layer above the window")
-equal(dialog.home:IsShown(), true, "initial view presents native actions instead of raw text")
-equal(dialog.sidebar:IsShown(), false, "overview gives its introduction and cards the full window")
-equal(dialog.consoleTab:GetChecked(), true, "overview tab is selected on first open")
+local reopenedView = dialog.view
+equal(dialog[reopenedView == "report" and "capturesTab" or reopenedView == "display" and "displayToggle" or "consoleTab"]:GetChecked(),
+    true, "bare /frs reopens the last tab")
 dialog.capturesTab:Fire("OnClick")
-equal(dialog.sidebar:IsShown(), true, "captures tab restores the captured entity list")
-equal(dialog.capturesTab:GetChecked(), true, "captures tab becomes selected")
-dialog.consoleTab:Fire("OnClick")
-equal(dialog.scroll:IsShown(), false, "welcome view hides the diagnostic text field")
-equal(dialog.report, Addon:GetDebugWelcome(), "bare /frs opens the getting-started view")
+equal(dialog.view, "report", "report tab opens the report screen")
+equal(dialog.capturesTab:GetChecked(), true, "report tab becomes selected")
+equal(dialog.sidebar:IsShown(), true, "report screen shows the capture list")
+equal(dialog.pick:IsShown(), true, "report screen offers inspection")
+equal(dialog.commandBox:IsShown(), false, "report screen hides advanced commands")
+equal(dialog.report, Addon:GetDebugWelcome(), "an empty report screen shows the step-by-step guide")
+equal(dialog.saveReport.enabled, false, "the guide has nothing to save")
 equal(dialog.editBox.highlighted, false, "welcome text is readable without a selection overlay")
+dialog.consoleTab:Fire("OnClick")
+equal(dialog.view, "console", "console tab opens the command screen")
+equal(dialog.commandBox:IsShown(), true, "console shows the command field")
+equal(dialog.sidebar:IsShown(), false, "console hides the capture list")
+equal(dialog.consoleTab:GetChecked(), true, "console tab becomes selected")
 dialog.addonReport:Fire("OnClick")
+equal(dialog.view, "console", "addon report stays on the console screen")
 equal(dialog.report:find(Addon:DebugText("addon"), 1, true) ~= nil, true, "Addon report button reopens environment details")
 equal(dialog.report:find("addonVersion", 1, true) ~= nil, true, "addon report contains diagnostic evidence")
 for _, text in ipairs({ "https://github.com/rphlmr/forever-rosetta-stone/issues/new",
@@ -106,6 +113,40 @@ equal(dialog.report:find("optionCount = 0", 1, true) ~= nil, true, "empty open m
 C_GossipInfo.GetOptions = function() error("gossip API unavailable") end
 Addon:RunDebugCommand("gossip")
 equal(dialog.report:find("gossip API unavailable", 1, true) ~= nil, true, "API failures remain copyable evidence")
+C_GossipInfo.GetOptions = function() return { { gossipOptionID = 1, name = "Banque" } } end
+Addon:RunDebugCommand("capture gossip")
+equal(Addon.debugPicker.byID["gossip:68"] ~= nil, true, "Capture dialogue adds the open NPC dialogue to the list")
+equal(dialog.view, "report", "Capture dialogue shows the report screen")
+equal(dialog.selectedEntry, Addon.debugPicker.byID["gossip:68"], "the captured dialogue is selected")
+equal(dialog.report:find("gossipOptionID = 1", 1, true) ~= nil, true, "the dialogue capture keeps its options")
+Addon:RunDebugCommand("capture gossip")
+equal(#Addon.debugPicker.entries, 1, "capturing the same dialogue twice keeps one entry")
+Addon:MoveDebugPicker("clear")
+Addon:MoveDebugPicker("start")
+Addon.debugPicker.unitEvents:Fire("OnEvent", "GOSSIP_SHOW")
+flushTimers()
+equal(Addon.debugPicker.byID["gossip:68"] ~= nil, true, "inspection captures dialogues as they open")
+C_GossipInfo.GetOptions = function() return { { gossipOptionID = 2, name = "Sous-menu" } } end
+Addon.debugPicker.unitEvents:Fire("OnEvent", "GOSSIP_SHOW")
+flushTimers()
+equal(#Addon.debugPicker.byID["gossip:68"].menus, 2, "a sub-menu is kept beside the root menu")
+GossipFrame:Hide()
+Addon.debugPicker.unitEvents:Fire("OnEvent", "GOSSIP_SHOW")
+flushTimers()
+equal(Addon:IsDebugPicking(), true, "a dialogue that closed at once does not end the inspection")
+Addon:MoveDebugPicker("stop")
+Addon:SelectDebugCapture(Addon.debugPicker.byID["gossip:68"])
+equal(dialog.report:find("gossipOptionID = 2", 1, true) ~= nil, true, "the dialogue report lists every menu")
+Addon:MoveDebugPicker("clear")
+GossipFrame:Show()
+Addon:MoveDebugPicker("start")
+equal(Addon.debugPicker.byID["gossip:68"] ~= nil, true, "a dialogue already open is captured when inspection starts")
+Addon:MoveDebugPicker("stop")
+Addon:MoveDebugPicker("clear")
+GossipFrame:Hide()
+Addon:RunDebugCommand("capture gossip")
+equal(#Addon.debugPicker.entries, 0, "a closed dialogue adds nothing")
+equal(dialog.report:find("Open an NPC dialogue", 1, true) ~= nil, true, "a closed dialogue explains what to do")
 GossipFrame, C_GossipInfo, UnitName, UnitGUID = oldGossipFrame, oldGossipInfo, oldUnitName, oldUnitGUID
 dialog.editBox:ClearFocus()
 Addon:RunDebugCommand("item 25")
@@ -139,7 +180,7 @@ equal(#Addon.debugPicker.entries, 0, "hovering outside Pick mode records nothing
 dialog.pick:Fire("OnClick")
 equal(Addon:IsDebugPicking(), true, "Pick starts capture")
 equal(Addon:MoveDebugPicker("start"), false, "repeated start does not clear an active capture")
-equal(dialog.frame:IsShown(), true, "picking preserves the visible console")
+equal(dialog.frame:IsShown(), not InputUtil.IsGamepadUIEnabled(), "only mouse inspection keeps the console visible")
 equal(dialog.frame.alpha, 0.15, "console is translucent while picking")
 for _, frame in ipairs({dialog.frame, dialog.window, dialog.scroll, dialog.editBox, dialog.commandBox,
     dialog.run, dialog.pick, dialog.help, dialog.addonReport, dialog.clearCaptures, dialog.saveReport,
@@ -220,10 +261,21 @@ equal(Addon.debugPicker.captureError, nil, "tooltip capture completes without di
 local capturedCount = #Addon.debugPicker.entries
 equal(capturedCount, afterItem + 1, "a different spell adds a distinct capture")
 equal(dialog.pickedButtons[1]:IsMouseEnabled(), false, "new picker rows remain click-through")
-equal(dialog.pickedButtons[1]:GetFontString():GetWidth(), 174, "capture labels leave space inside their buttons")
+equal(dialog.pickedButtons[1]:GetFontString():GetWidth(), 228, "capture labels leave space inside their buttons")
 equal(dialog.pickedButtons[1]:GetFontString().wordWrap, false, "long capture names stay on one clipped line")
-equal(dialog.captureBar.value, capturedCount, "capture meter follows newly recorded entities")
+equal(dialog.pickedButtons[1]:GetText():sub(1, 3), "1. ", "captures are numbered in capture order")
+equal(dialog.pickedButtons[capturedCount]:GetText():sub(1, #tostring(capturedCount) + 2), capturedCount .. ". ",
+    "the latest capture carries the highest number")
 dialog.stopPicking:Fire("OnClick")
+equal(dialog.view, "report", "stopping returns to the report screen")
+equal(dialog.selectedEntry, Addon.debugPicker.entries[capturedCount], "stopping selects the latest capture")
+equal(dialog.pickedButtons[capturedCount].highlightLocked, true, "the selected capture is highlighted")
+equal(dialog.guide:IsShown(), true, "the reporting guide is always reachable on the report screen")
+dialog.guide:Fire("OnClick")
+equal(dialog.report, Addon:GetDebugWelcome(), "the guide button shows the reporting steps")
+equal(dialog.report:find("issues/new", 1, true) ~= nil, true, "the guide includes the GitHub link")
+equal(dialog.selectedEntry, Addon.debugPicker.entries[capturedCount], "opening the guide keeps the selected capture")
+equal(dialog.pickedButtons[capturedCount].highlightLocked, true, "the selected capture stays highlighted")
 equal(Addon:IsDebugPicking(), false, "Stop ends capture")
 equal(dialog.frame.alpha, 1, "Stop restores opacity")
 equal(dialog.frame:IsMouseEnabled(), true, "Stop restores console interaction")
@@ -303,8 +355,8 @@ for id = 1, 31 do
 end
 equal(#Addon.debugPicker.entries, 30, "picker memory is bounded")
 equal(Addon.debugPicker.full, true, "capture truncation is explicit")
-dialog.close:Fire("OnClick")
-equal(Addon:IsDebugPicking(), false, "closing cancels capture")
+Addon:ToggleDebugInspection()
+equal(Addon:IsDebugPicking(), false, "the inspection shortcut stops capture")
 equal(dialog.stopPicking:IsShown(), false, "closing does not leave an invisible picker active")
 Addon:RunDebugCommand("pick")
 Addon:RecordDebugTooltip(GameTooltip, {type=Enum.TooltipDataType.Spell, id=133,
@@ -315,8 +367,11 @@ equal(dialog.report:find("<restricted>", 1, true) ~= nil, true, "restricted valu
 local errors, blockedActions = Addon.errors, Addon.blockedActions
 dialog.clearCaptures:Fire("OnClick")
 equal(#Addon.debugPicker.entries, 0, "Clear captures removes the hovered list")
-equal(dialog.captureBar.value, 0, "Clear captures resets the live meter")
-equal(dialog.captureCount:GetText(), Addon:DebugText("count", 0, 30), "cleared meter shows zero captures")
+equal(dialog.listTitle:GetText(), Addon:DebugText("captures") .. " · 0/30", "cleared list shows zero captures")
+equal(dialog.view, "report", "Clear captures stays on the report screen")
+equal(dialog.capturesTab:GetChecked(), true, "Clear captures keeps the report tab selected")
+equal(dialog.clearCaptures:IsShown(), true, "Clear stays in place for controller focus")
+equal(dialog.clearCaptures.enabled, false, "Clear is disabled once the list is empty")
 equal(next(Addon.debugPicker.byID), nil, "Clear captures removes tooltip evidence by ID")
 equal(dialog.pickedButtons[1]:IsShown(), false, "Clear captures hides old picker rows")
 equal(dialog.report, Addon:GetDebugWelcome(), "Clear captures replaces the report with instructions")
@@ -342,7 +397,7 @@ equal(GetUIPanel("center"), SettingsPanel, "settings owns the native center pane
 equal(CanOpenPanels(), false, "settings blocks bags and other native panels while open")
 Settings.FindButton(Addon.settingsCategory, Addon:DebugText("title")).callback()
 equal(GetUIPanel("center"), nil, "opening diagnostics releases the native settings panel slot")
-dialog.inspectAction:Fire("OnClick")
+dialog.pick:Fire("OnClick")
 equal(Addon:IsDebugPicking(), true, "inspection starts after leaving settings")
 equal(CanOpenPanels(), true, "native bags and windows can open while inspecting from settings")
 dialog.stopPicking:Fire("OnClick")
@@ -365,28 +420,45 @@ equal(dialog.gamepadFooter.frame:IsShown(), true, "Select and Back legend is vis
 equal(dialog.focusIndicator:IsShown(), false, "console hides its focus arrow until explicit navigation")
 dialog.window:SmartNavigationOnSelect(dialog.capturesTab)
 equal(dialog.focusIndicator.points[1][2], dialog.capturesTab, "focus arrow follows native tab selection")
-equal(dialog.inspectAction.navigationOverrides.right, dialog.consoleTab, "Right reaches tabs directly from the home page")
-equal(dialog.consoleTab.navigationOverrides.down, dialog.capturesTab, "Down moves to the next side tab")
-equal(dialog.capturesTab.navigationOverrides.down, dialog.displayToggle, "Down reaches UI components")
-equal(dialog.displayToggle.navigationOverrides.up, dialog.capturesTab, "Up moves back through side tabs")
-equal(dialog.consoleTab.navigationOverrides.left, dialog.inspectAction, "Left returns to the page")
+equal(dialog.view, "report", "settings reopens the report screen")
+equal(dialog.pick.navigationOverrides.right, dialog.capturesTab, "Right moves from Inspect to the selected tab")
+equal(dialog.capturesTab.navigationOverrides.down, dialog.displayToggle, "Down moves to the tooltip tester tab")
+equal(dialog.displayToggle.navigationOverrides.down, dialog.consoleTab, "Down reaches the console tab")
+equal(dialog.consoleTab.navigationOverrides.up, dialog.displayToggle, "Up moves back through side tabs")
+equal(dialog.capturesTab.navigationOverrides.left, dialog.pick, "Left returns to the page")
+local captureCount = #Addon.debugPicker.entries
+equal(dialog.pick.navigationOverrides.down, captureCount > 0 and dialog.pickedButtons[1] or dialog.clearCaptures,
+    "Down reaches the first numbered capture")
+if captureCount > 0 then
+    equal(dialog.pickedButtons[captureCount].navigationOverrides.down, dialog.clearCaptures, "Down reaches Clear after the list")
+end
+equal(dialog.clearCaptures.navigationOverrides.down, dialog.guide, "Down reaches the reporting guide")
+equal(dialog.guide.navigationOverrides.right, dialog.saveReport, "Right moves from the guide to Save report")
+equal(dialog.saveReport.navigationOverrides.left, dialog.guide, "Left returns to the guide")
+equal(dialog.saveReport.navigationOverrides.right, dialog.selectOutput, "Right moves along the report footer")
+equal(dialog.selectOutput.navigationOverrides.right, dialog.capturesTab, "Right reaches tabs at the end of the row")
+dialog.consoleTab:OnSmartNavClick()
+equal(dialog.view, "console", "gamepad Select opens the console tab")
 dialog.addonReport:OnSmartNavClick()
 equal(dialog.report:find(Addon:DebugText("addon"), 1, true) ~= nil, true, "gamepad Select opens the addon report")
-equal(dialog.addonReport.navigationOverrides.right, dialog.saveReport, "Right reaches Save report before the tabs")
-equal(dialog.saveReport.navigationOverrides.right, dialog.errorLog, "Right reaches Error log within the footer row")
-equal(dialog.errorLog.navigationOverrides.right, dialog.selectOutput, "Right reaches Select output within the footer row")
-equal(dialog.selectOutput.navigationOverrides.right, dialog.capturesTab, "Right reaches tabs at the end of the row")
-equal(dialog.errorLog.navigationOverrides.left, dialog.saveReport, "Left returns through the footer row")
-equal(dialog.run.navigationOverrides.right, dialog.pick, "command actions follow their horizontal row")
-equal(dialog.pick.navigationOverrides.left, dialog.run, "Left reaches Run from Inspect")
+equal(dialog.addonReport.navigationOverrides.right, dialog.errorLog, "Right reaches Error log within the footer row")
+equal(dialog.errorLog.navigationOverrides.right, dialog.saveReport, "Right reaches Save report within the footer row")
+equal(dialog.saveReport.navigationOverrides.right, dialog.selectOutput, "Right reaches Select output within the footer row")
+equal(dialog.selectOutput.navigationOverrides.right, dialog.consoleTab, "Right reaches tabs at the end of the row")
+equal(dialog.errorLog.navigationOverrides.left, dialog.addonReport, "Left returns through the footer row")
+equal(dialog.run.navigationOverrides.right, dialog.help, "command actions follow their horizontal row")
+equal(dialog.help.navigationOverrides.left, dialog.run, "Left reaches Run from Help")
+equal(dialog.pick.navigationOverrides.right, dialog.capturesTab, "Inspect retains its report tab target")
 dialog.saveReport:OnSmartNavClick()
 equal(Addon.preferences.debugReport, dialog.report, "gamepad saves a report without keyboard copying")
-local following = dialog.addonReport.navigationOverrides.down
-equal(following, dialog.pick, "D-pad navigation reaches Pick")
+dialog.capturesTab:OnSmartNavClick()
+equal(dialog.view, "report", "gamepad Select returns to the report tab")
+local following = dialog.pick
 following:OnSmartNavClick()
 equal(Addon:IsDebugPicking(), true, "gamepad Select starts Pick")
 equal(SmartNavigation:GetActiveFrame() == dialog.window, false, "Pick releases console focus to native panels")
 equal(dialog.controllerRegistered, nil, "inspection does not register a passive popup in the native focus stack")
+equal(dialog.frame:IsShown(), false, "gamepad inspection hides the console while navigating")
 equal(dialog.stopFooter.frame:IsShown(), true, "inspection immediately displays the Back prompt")
 equal(dialog.stopPanel:IsGamePadButtonEnabled(), false, "inspection does not intercept native gamepad bindings")
 equal(dialog.stopPanel:GetScript("OnGamePadButtonDown"), nil, "inspection leaves bag and menu input to the game")
@@ -408,51 +480,16 @@ equal(Addon.debugPicker.byID["npc:853"].name, "Coldridge Mountaineer", "controll
 C_TooltipInfo = previousTooltipInfo
 backDown = true
 dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), false, "B stops inspection without reacquiring UI focus")
-equal(dialog.stopFooter.frame:IsShown(), false, "stopping hides the inspection Back prompt")
-equal(SmartNavigation:GetActiveFrame(), dialog.window, "stopping returns gamepad focus to the console")
-equal(next(Addon.debugPicker.unitEvents.events), nil, "stopping unregisters controller unit capture events")
-dialog.pick:OnSmartNavClick()
-GamepadMode.FrameControlsManager.isUIFocused = false
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), true, "a held B does not immediately cancel a new inspection")
-backDown = false
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-backDown = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), false, "a new B press stops inspection after release")
-backDown = false
-dialog.pick:OnSmartNavClick()
-GamepadMode.FrameControlsManager.isUIFocused = false
-local previousRadial = GamepadRadial
-GamepadRadial = CreateFrame("Frame", nil, UIParent)
-GamepadRadial:Show()
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-GamepadRadial:Hide()
-backDown = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), true, "B closing the radial menu does not stop inspection")
-backDown = false
-GamepadMode.FrameControlsManager.isUIFocused = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-GamepadMode.FrameControlsManager.isUIFocused = false
-backDown = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), false, "native focus bookkeeping cannot prevent B from stopping inspection")
-backDown = false
-dialog.pick:OnSmartNavClick()
-GamepadMode.FrameControlsManager.isUIFocused = false
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-backDown = true
-dialog.stopPanel:Fire("OnUpdate", 0.016)
-equal(Addon:IsDebugPicking(), false, "a subsequent world B press stops inspection")
-GamepadRadial = previousRadial
-IsKeyDown = previousIsKeyDown
-dialog.pick:OnSmartNavClick()
-equal(CloseSpecialWindows(), true, "Escape exits inspection")
+equal(Addon:IsDebugPicking(), true, "a short Back press leaves inspection active")
+CloseSpecialWindows()
 flushTimers()
-equal(Addon:IsDebugPicking(), false, "Escape stops capture")
-equal(dialog.frame:IsShown(), true, "Escape returns to the debug tool")
+equal(Addon:IsDebugPicking(), true, "closing native windows keeps the capture session active")
+dialog.stopPanel:Fire("OnUpdate", 0.85)
+equal(Addon:IsDebugPicking(), false, "holding Back stops inspection")
+equal(dialog.frame:IsShown(), true, "stopping returns to the reports window")
+equal(dialog.stopFooter.frame:IsShown(), false, "stopping hides the Back prompt")
+equal(next(Addon.debugPicker.unitEvents.events), nil, "stopping unregisters controller unit capture events")
+IsKeyDown = previousIsKeyDown
 dialog.clearCaptures:OnSmartNavClick()
 equal(Addon.preferences.debugReport, nil, "gamepad Clear captures removes the saved report")
 dialog.selectOutput:OnSmartNavClick()
@@ -489,7 +526,7 @@ dialog.close:Fire("OnClick")
 GamepadMode.FrameControlsManager:FrameHidden(nativePanel)
 nativePanel:Hide()
 InputUtil.IsGamepadUIEnabled = previousGamepad
-Addon:ShowDebugConsole("Debug report before opening the error log")
+Addon:ShowDebugConsole("Debug report before opening the error log", nil, "console")
 local previousDebugReport = dialog.report
 dialog.errorLog:Fire("OnClick")
 equal(dialog.console, nil, "error log replaces the debug view")
@@ -498,6 +535,7 @@ flushTimers()
 equal(dialog.frame:IsShown(), true, "closing the error log returns to the debug tool")
 equal(dialog.console, true, "return restores console mode")
 equal(dialog.report, previousDebugReport, "return preserves the previous debug report")
+equal(dialog.view, "console", "return restores the tab the error log was opened from")
 dialog.errorLog:Fire("OnClick")
 equal(CloseSpecialWindows(), true, "Escape dismisses the error-log view")
 flushTimers()
@@ -555,7 +593,7 @@ equal(Addon.errorLog[1], "saved failure", "valid saved errors survive normalizat
 local previousErrors, previousBlocked = Addon.errors, Addon.blockedActions
 local lifecycle, captures = Addon.lifecycle, Addon.debugPicker.entries
 Addon.errors, Addon.blockedActions = { "session failure" }, { "blocked action" }
-Addon:ShowDebugConsole("Keep the debug view after clearing errors")
+Addon:ShowDebugConsole("Keep the debug view after clearing errors", nil, "console")
 equal(dialog.clearErrorLog:IsShown(), false, "clear errors is confined to the error-log screen")
 dialog.errorLog:OnSmartNavClick()
 equal(dialog.clearErrorLog:IsShown(), true, "error log exposes a clear-all action")
@@ -594,6 +632,6 @@ local savedCombat, savedJumpOverride = InCombatLockdown, SmartNavigation_AddJump
 InCombatLockdown = function() return true end
 SmartNavigation_AddJumpNavigationOverride = function() error("protected navigation must wait until combat ends") end
 Addon:RefreshDebugPickedList()
-equal(dialog.captureBar.value, #Addon.debugPicker.entries, "capture refresh remains available without protected navigation in combat")
+equal(dialog.listTitle:GetText(), Addon:DebugText("captures") .. " · " .. #Addon.debugPicker.entries .. "/30", "capture refresh remains available without protected navigation in combat")
 InCombatLockdown, SmartNavigation_AddJumpNavigationOverride = savedCombat, savedJumpOverride
 return checks

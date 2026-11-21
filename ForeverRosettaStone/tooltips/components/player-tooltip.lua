@@ -29,8 +29,7 @@ Addon:RegisterNameTooltipComponent({
         gamepad = { Prepare = Prepare, sideRules = { function() return Addon.preferences.npcTooltipPosition end } },
     }),
     GetName = function(guid, _, source, data)
-        -- Names are personal text, not catalog translations. There is no name-only player translation.
-        if Addon.preferences.tooltipCoverage == "name" or not Readable(guid, "string")
+        if not Readable(guid, "string")
             or not data or not Readable(data.guid, "string") or data.guid ~= guid
             or not MatchesUnit(source, guid) then return end
         local title = source:GetLeftLine(1)

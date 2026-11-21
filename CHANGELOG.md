@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-11-21
+
+### Added
+
+- Choose how much to translate for each tooltip category. Items, spells, auras and talents each have their own off, name-only and full-detail settings.
+- Preview tooltip settings and open the in-game settings window to try changes alongside the spellbook, talents or bags.
+- Inspection now records NPC conversations and their submenus as you open them. Browse captures, inspect their details and save a report using the gamepad.
+
+### Fixed
+
+- Fixed quest and NPC dialogue that disappeared when a line break touched the next word, a player name had a suffix, or a gender variant used an unsupported format. Corrections cover 273 localized lines, including Grimbooze Thunderbrew’s verses.
+
+- NPC menus show translated quests and options even when the greeting is missing. Hovering a conversation option can now use the NPC’s known dialogue.
+
+### Translations
+
+- Added all eight Stormwind guard directions and Smith Argus’s blacksmith greeting and training option across all 18 supported languages.
+
 ## [1.3.1] - 2026-11-21
 
 ### Fixed

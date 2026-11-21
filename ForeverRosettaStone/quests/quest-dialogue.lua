@@ -20,9 +20,19 @@ local function Normalize(text)
     return normalized:gsub("[A-Z]", string.lower):gsub("%s+", " "):match("^%s*(.-)%s*$")
 end
 
-local function Render(template, questID, locale, playerName)
-    template = template:gsub("\\n", "\n"):gsub("%$b%$b", "\n\n")
-    if playerName then template = template:gsub("%$[Nn]%f[^A-Za-z]", function() return playerName end) end
+local function Render(template, questID, locale, playerName, native)
+    template = template:gsub("\\n", "\n"):gsub("%$[Bb]", "\n")
+    -- Some client selectors include the class or race grammatical qualifier.
+    template = template:gsub("(%$[Gg][^:;$\n]+:[^:;$\n]+):[cr];", "%1;")
+    -- A plural suffix or the next sentence may immediately follow a player token.
+    template = template:gsub("%$([CcRr])s%f[^A-Za-z]", function(token)
+        return (token:lower() == "c" and "{class}" or "{race}") .. "s"
+    end)
+    template = template:gsub("%$[Nn](%u)", native and "{name}%1" or "{name} %1")
+    if playerName then
+        local function Name() return playerName end
+        template = template:gsub("%$[Nn]%f[^A-Za-z]", Name):gsub("{name}", Name)
+    end
     local text = Addon:FormatQuestText(template, questID, locale, true)
     if text and not text:find("%$[A-Za-z0-9]") then return text end
 end
@@ -43,11 +53,11 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
         if entry.stage == stage and (not questID or entry.npcID == npcID)
             and (not entry.playerSex or entry.playerSex == sex) then
             local candidates = entry.scope == "forever" and foreverMatches or matches
-            local text = Render(entry.text, questID, client)
+            local text = Render(entry.text, questID, client, nil, true)
             if text and Normalize(text) == observed then
                 candidates[entry.key] = {}
-            elseif firstName and entry.text:find("%$[Nn]%f[^A-Za-z]") then
-                text = Render(entry.text, questID, client, firstName)
+            elseif firstName and (entry.text:find("%$[Nn]") or entry.text:find("{name}", 1, true)) then
+                text = Render(entry.text, questID, client, firstName, true)
                 if text and Normalize(text) == observed then candidates[entry.key] = { firstName = firstName } end
             end
         end
@@ -138,6 +148,7 @@ end
 
 function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, translateOption)
     local sections = {}
+    local hasTranslatedRow = false
     local locale = Addon:GetTargetLocale()
     local greetingStyle, previousBottom, previousGroup
     local function AddRow(title, row, texture, group)
@@ -168,6 +179,7 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
         local quest = Addon:GetQuest(id)
         local title = quest and Render(quest.title, id, locale)
         if title then
+            hasTranslatedRow = true
             local font = context == "progress" and QuestProgressTitleText or QuestInfoTitleHeader
             if iconName then
                 AddRow(title, row, questIconPath .. iconName, group)
@@ -211,7 +223,7 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
         for _, option in ipairs(options) do
             local title, hasTranslation = OptionTitle(npcID, option, locale, translateOption)
             if title then
-                if not hasTranslation then missingOptions = true end
+                if hasTranslation then hasTranslatedRow = true else missingOptions = true end
                 local row = canaccessallvalues(option.orderIndex) and optionRows[option.orderIndex]
                 local icon = option.overrideIconID or option.icon
                 AddRow(title, row, canaccessallvalues(icon) and icon or nil, "option")
@@ -236,27 +248,34 @@ function Addon:CreateQuestDialogueSections(translated, context, questID, npcID, 
             AddTitle(id, 10, rows[id] or _G["QuestTitleButton" .. (activeCount + index)], "AvailableQuestIcon", "available")
         end
     end
-    return sections
+    return sections, hasTranslatedRow
 end
 
+
+function Addon:GetInteractionNpcID()
+    local guid = UnitGUID and UnitGUID("npc")
+    if not ReadableString(guid) then return end
+    local kind, id = guid:match("^([^-]+)%-%d+%-%d+%-%d+%-%d+%-(%d+)%-")
+    local npcID = (kind == "Creature" or kind == "Vehicle") and tonumber(id)
+    return npcID, guid
+end
 
 function Addon:GetCatalogDialogueSections(questID, context)
     local stage = stages[context]
     if not stage then return end
     if stage == "gossip" then questID = nil
     elseif not self:IsReadableEntityID(questID) then return end
-    local guid = UnitGUID and UnitGUID("npc")
-    if not ReadableString(guid) then return end
-    local kind, id = guid:match("^([^-]+)%-%d+%-%d+%-%d+%-%d+%-(%d+)%-")
-    local npcID = (kind == "Creature" or kind == "Vehicle") and tonumber(id)
+    local npcID, guid = self:GetInteractionNpcID()
     if not npcID then return end
     local native = nativeText[context]()
     local translated = self:MatchQuestDialogue(npcID, questID, stage, native)
     if translated then
         return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. native
     end
-    if stage == "gossip" and ReadableString(native)
-        and ForeverRosettaStoneDB:GetQuestDialogue(nil, npcID, "enUS") then
-        return self:CreateQuestDialogueSections(nil, context, nil, npcID), guid .. "\031" .. native, true
+    if stage == "gossip" and ReadableString(native) then
+        local sections, hasTranslatedRow = self:CreateQuestDialogueSections(nil, context, nil, npcID)
+        if hasTranslatedRow or ForeverRosettaStoneDB:GetQuestDialogue(nil, npcID, "enUS") then
+            return sections, guid .. "\031" .. native, true
+        end
     end
 end

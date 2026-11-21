@@ -145,6 +145,13 @@ emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 17783 }, { { type = 
 show()
 equal(spec.kind, "talent", "full tooltip preserves talent feature routing")
 equal(spec.tip.lines[2], "Passive", "shared talent labels translate without inferring entity prose")
+Addon:SetTooltipNameOnly("talent", true)
+show()
+equal(spec.tip:GetText(), "Fel Concentration", "talent coverage keeps the translated title")
+equal(#spec.tip.lines, 0, "talent coverage omits translated details")
+equal(GameTooltip:GetLeftLine(2):GetText(), SPELL_PASSIVE, "talent coverage preserves native details")
+equal(Addon:GetTooltipCoverage("spell"), "full", "talent coverage does not affect spell tooltips")
+Addon:SetTooltipNameOnly("talent", false)
 do
     local getLocale, getClientLabel = GetLocale, Addon.GetClientLabel
     GetLocale = function() return "enUS" end
@@ -745,11 +752,11 @@ local function refreshQuestLink(id, body)
 end
 local herdBody = { { leftText = questSummary }, { leftText = "" }, { leftText = "Conditions :" },
     { leftText = " - 1 x Croc de Vagash" } }
-Addon.preferences.tooltipCoverage = "name"
+Addon.preferences.tooltipNameOnly.quest = true
 refreshQuestLink(314, herdBody)
 equal(linkedQuest.tip:GetText(), "Protecting the Herd", "name-only quest links keep their translated title")
 equal(#linkedQuest.tip.lines, 0, "name-only quest links add no summary or requirement rows")
-Addon.preferences.tooltipCoverage = "full"
+Addon.preferences.tooltipNameOnly.quest = false
 refreshQuestLink(314, herdBody)
 equal(linkedQuest.tip.lines[2], ForeverRosettaStoneDB:GetQuest(314, "enUS").summary,
     "switching back to full restores the translated quest summary")
@@ -1003,13 +1010,15 @@ function preview.native:SetItemByID(id)
     for _, callback in ipairs(context.callbacks) do callback(self, self:GetPrimaryTooltipData()) end
 end
 for _, coverage in ipairs({ "name", "full" }) do
-    Addon:SetTooltipCoverage(coverage)
+    Addon:SetTooltipNameOnly("spell", coverage == "name")
+    Addon:SetTooltipNameOnly("item", coverage == "name")
     for _, mode in ipairs({ "stacked", "separate" }) do
         Addon:SetTooltipMode(mode)
         prepare()
         emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 133 }, {
             { type = 0, leftText = SPELL_PASSIVE },
         })
+        GameTooltip.TextLeft1:SetTextColor(0.2, 0.7, 0.3)
         show()
         equal(Addon.lifecycle, "ready", "layout and coverage switch without pausing: " .. mode .. coverage)
         if mode == "stacked" then
@@ -1018,6 +1027,9 @@ for _, coverage in ipairs({ "name", "full" }) do
             equal(GameTooltip:GetLeftLine(4):GetText():find("Traduit en anglais", 1, true) ~= nil, true,
                 "stacked header labels the translation in the selected FRS language")
             equal(GameTooltip:GetLeftLine(5):GetText(), "Fireball", "translation follows the header without a blank row")
+            if coverage == "name" then
+                equal(select(2, GameTooltip:GetLeftLine(5):GetTextColor()), 0.7, "stacked name keeps the native title color")
+            end
             equal(VisibleTooltipLines(GameTooltip), coverage == "full" and 6 or 5, "stacked respects translation coverage")
             if coverage == "full" then
                 equal(GameTooltip:GetLeftLine(6):GetText(), "Passive", "shared full details translate")
@@ -1028,6 +1040,9 @@ for _, coverage in ipairs({ "name", "full" }) do
         else
             equal(VisibleTooltipLines(GameTooltip), 2, "separate retains original native rows")
             equal(spec.tip:GetLeftLine(1):GetText(), "Fireball", "separate renders the translated name")
+            if coverage == "name" then
+                equal(select(2, spec.tip:GetLeftLine(1):GetTextColor()), 0.7, "separate name keeps the native title color")
+            end
             equal(spec.tip:NumLines(), coverage == "full" and 2 or 1, "separate respects coverage")
             if coverage == "full" then
                 equal(spec.tip:GetLeftLine(2):GetText(), "Passive", "separate shared details translate")
@@ -1051,7 +1066,8 @@ for _, coverage in ipairs({ "name", "full" }) do
         GameTooltip:Hide()
     end
 end
-Addon:SetTooltipCoverage("full")
+Addon:SetTooltipNameOnly("item", false)
+Addon:SetTooltipNameOnly("spell", false)
 prepare()
 local showModeTooltip = GameTooltip.Show
 function GameTooltip:Show()
@@ -1286,7 +1302,7 @@ equal(GameTooltip:GetLeftLine(6):GetText(), "Dun Morogh", "stacked minimap inclu
 equal(GameTooltip:GetLeftLine(7):GetText(), "Coldridge Valley", "stacked minimap includes the translated subzone")
 Addon:SetTooltipMode("separate")
 C_Map, C_MapExplorationInfo = previousLocationMap, previousExploration
-Addon:SetTooltipCoverage("name")
+Addon:SetTooltipNameOnly("item", true)
 prepare()
 GameTooltip:ClearLines()
 GameTooltip:AddLine("Actuellement équipé")
@@ -1299,7 +1315,7 @@ Addon:UpdateNameTooltip(GameTooltip, "item", 25)
 show()
 equal(GameTooltip:GetLeftLine(1):GetText(), "Actuellement équipé", "Name only does not translate the comparison header")
 equal(spec.tip:GetLeftLine(1):GetText(), "Worn Shortsword", "Name only translates the item after its native header")
-Addon:SetTooltipCoverage("full")
+Addon:SetTooltipNameOnly("item", false)
 Addon:SetTooltipMode("stacked")
 Addon:SetTargetLocale("deDE")
 Addon:OpenSettings()

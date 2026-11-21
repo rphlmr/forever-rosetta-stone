@@ -10,7 +10,7 @@ local oldMap, oldType = GetTaxiMapID, TaxiNodeGetType
 local oldLabel = Addon.GetClientLabel
 Addon.GetClientLabel = function(_, key, language) return ForeverRosettaStoneDB:GetGlobalStringByKey(key, language) end
 local header = Addon.preferences.translationHeader
-local mode, locale, coverage = Addon.preferences.tooltipMode, Addon:GetTargetLocale(), Addon.preferences.tooltipCoverage
+local mode, locale = Addon.preferences.tooltipMode, Addon:GetTargetLocale()
 TaxiFrame = CreateFrame("Frame", nil, UIParent)
 local routeMap = CreateFrame("Frame", nil, TaxiFrame)
 TaxiButton17 = CreateFrame("Button", nil, routeMap)
@@ -24,7 +24,9 @@ GetTaxiMapID = function() return 1415 end
 local status = "CURRENT"
 TaxiNodeGetType = function(slot) equal(slot, 17, "status uses the session slot"); return status end
 Addon:SetTargetLocale("enUS")
-Addon:SetTooltipCoverage("full")
+Addon.preferences.tooltipNameOnly.taxiNode = true
+Addon:LoadPreferences()
+equal(Addon.radioLists.taxiNodeTooltip, nil, "flight destinations have one on/off switch")
 Addon:SetTranslationHeader(true)
 Addon:SetTooltipMode("separate")
 GameTooltip:Hide()
@@ -91,7 +93,6 @@ TaxiFrame, TaxiButton17, C_TaxiMap = oldFrame, oldButton, oldAPI
 GetTaxiMapID, TaxiNodeGetType = oldMap, oldType
 Addon.GetClientLabel = oldLabel
 Addon:SetTargetLocale(locale)
-Addon:SetTooltipCoverage(coverage)
 Addon:SetTranslationHeader(header)
 Addon:SetTooltipMode(mode)
 return checks

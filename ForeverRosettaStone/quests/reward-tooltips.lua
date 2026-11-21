@@ -59,10 +59,11 @@ local function FillTooltip(tip, button, data, header)
         ForeverRosettaStoneDB:GetItemName(data.id, Addon:GetTargetLocale()) or nameLine.leftText,
         GetColor(nameLine.leftColor))
 
+    local fullText = Addon:GetTooltipCoverage("item") == "full"
     for _, line in ipairs(data.lines) do
-        if Addon.preferences.tooltipCoverage ~= "name" and line.type == Enum.TooltipDataLineType.ItemBinding then
+        if fullText and line.type == Enum.TooltipDataLineType.ItemBinding then
             tip:AddLine(TranslateBinding(line.leftText), GetColor(line.leftColor))
-        elseif Addon.preferences.tooltipCoverage ~= "name" and line.type == Enum.TooltipDataLineType.EquipSlot then
+        elseif fullText and line.type == Enum.TooltipDataLineType.EquipSlot then
             local left = line.leftText
 
             if englishLabels and equipLoc and _G[equipLoc] == left then

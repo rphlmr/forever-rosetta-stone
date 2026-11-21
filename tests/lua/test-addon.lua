@@ -144,7 +144,10 @@ end
 function Frame:SetText(text, ...)
     self.text = text
     self.titleColor = {...}
-    if self.kind == "GameTooltip" and self.TextLeft1 then self.TextLeft1:SetText(text) end
+    if self.kind == "GameTooltip" and self.TextLeft1 then
+        self.TextLeft1:SetText(text)
+        if select("#", ...) >= 3 then self.TextLeft1:SetTextColor(...) end
+    end
     if self.accurateLines then self.lines = { text } end
     if self.kind == "EditBox" then self:Fire("OnTextChanged", false) end
 end

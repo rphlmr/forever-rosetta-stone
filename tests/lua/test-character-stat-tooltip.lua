@@ -35,6 +35,11 @@ Check(spec.tip:GetLeftLine(1):GetText() == "|cffffffffHealth 103|r", "title uses
 Check(spec.tip:GetLeftLine(2):GetText() == "Current health.", "description uses the selected target")
 Check(GameTooltip:GetLeftLine(2):GetText() == STAT_HEALTH_TOOLTIP, "original French explanation is preserved")
 Check(select(2, spec.tip:GetLeftLine(2):GetTextColor()) == 0.8, "row colors are preserved")
+Addon:SetTooltipNameOnly("characterStat", true)
+spec = Show("|cffffffffVie 103|r", STAT_HEALTH_TOOLTIP)
+Check(spec.tip:GetText() == "|cffffffffHealth 103|r", "name-only stats retain the translated title and its native value")
+Check(VisibleTooltipLines(spec.tip) == 1, "name-only stats omit the explanation")
+Addon:SetTooltipNameOnly("characterStat", false)
 GameTooltip:Hide()
 Check(not spec.tip:IsShown(), "native hide removes the translated stat tooltip")
 

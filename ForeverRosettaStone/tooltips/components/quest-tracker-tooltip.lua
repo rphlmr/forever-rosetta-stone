@@ -17,10 +17,9 @@ local function HasNativeTooltip(source)
 end
 
 local function FillTooltip(tip, _, title, red, green, blue, spec)
-    local quest = Addon:GetQuest(spec.id)
     if spec.standalone then Addon:SetStandaloneTooltipTitle(tip, title, red, green, blue)
     else Addon:SetCompanionTooltipTitle(tip, title, red, green, blue) end
-    if Addon.preferences.tooltipCoverage == "name" then return end
+    if Addon:GetTooltipCoverage("questTracker") == "name" then return end
     if C_QuestLog.IsComplete(spec.id) then
         local turnIn = Addon:GetQuestTurnInText(spec.id)
         if turnIn then tip:AddLine(turnIn, 1, 1, 1, true) end
@@ -57,7 +56,7 @@ function Addon:UpdateQuestTrackerTooltip()
     local progress = readyForTurnIn and "" or self:GetProgressText(id)
     local native = HasNativeTooltip(source)
     local key = id .. ":" .. self:GetTargetLocale() .. ":" .. tostring(readyForTurnIn) .. ":" .. progress
-        .. ":" .. tostring(native)
+        .. ":" .. tostring(native) .. ":" .. self:GetTooltipCoverage("questTracker")
     if not tip:IsShown() or not tip:IsOwned(source) or self.questTrackerTooltipKey ~= key then
         tip:SetOwner(source, "ANCHOR_NONE")
         tip:ClearLines()
@@ -67,7 +66,7 @@ function Addon:UpdateQuestTrackerTooltip()
     end
 
     if native and self:GetTooltipPresentation(GameTooltip) ~= "separate" then
-        self:FillStackedTooltip(GameTooltip, tip, "tracker:" .. key .. ":" .. self.preferences.tooltipCoverage)
+        self:FillStackedTooltip(GameTooltip, tip, "tracker:" .. key)
         return
     end
     local anchor = native and GameTooltip or source.poiButton or source

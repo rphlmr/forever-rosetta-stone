@@ -42,6 +42,16 @@ Minimap.GetCenter, GetCursorPosition = oldCenter, oldCursor
 Minimap:SetScale(oldScale)
 button:Fire("OnClick", "LeftButton")
 equal(Settings.openedCategory, category:GetID(), "left-click opens settings")
+do
+    local native, translation = Addon:GetOptionPreview("taxiNodeTooltip", true)
+    for _, sample in ipairs({{native, GetLocale()}, {translation, Addon:GetTargetLocale()}}) do
+        local expected = "|cffffffff" .. databaseAPI:GetTaxiNodeName(2, sample[2]) .. "|r\n"
+            .. databaseAPI:GetGlobalStringByKey("TAXINODEYOUAREHERE", sample[2])
+        equal(sample[1]:find(expected, 1, true) ~= nil, true, "taxi sample renders the name and current-location hint")
+    end
+    equal(Addon:GetOptionPreview("appearanceSlotTooltip", true),
+        "|cffffffff" .. databaseAPI:GetGlobalStringByKey("CHESTSLOT", GetLocale()) .. "|r", "slot sample has no ID line")
+end
 equal(Addon.minimapMenu, nil, "minimap menu has been removed")
 SettingsPanel:Hide()
 local nativeWindow = CreateFrame("Frame", nil, UIParent)
@@ -82,15 +92,28 @@ Addon:RefreshTooltipPreview()
 equal(requests, 0, "hidden preview does not request tooltip data before canvas layout")
 preview.native.SetItemByID = setPreviewItem
 equal(settings.tooltipPresentation:GetValue(), Addon:GetTooltipPresentation(), "native display reads saved preference")
-settings.tooltipCoverage:SetValue("name")
-equal(Addon.preferences.tooltipCoverage, "name", "native dropdown applies coverage")
+settings.spellTooltip:SetValue("name")
+equal(Addon:GetTooltipCoverage("spell"), "name", "native checkbox limits spell translations")
+equal(Addon:GetTooltipCoverage("item"), "full", "spell coverage does not affect items")
 Addon:LoadPreferences()
-equal(Addon.preferences.tooltipCoverage, "name", "coverage survives preferences loading")
-equal(pcall(Addon.SetTooltipCoverage, Addon, "unknown"), false, "coverage rejects unknown values")
-Addon.preferences.tooltipCoverage = "unknown"
+equal(Addon:GetTooltipCoverage("spell"), "name", "coverage survives preferences loading")
+equal(pcall(Addon.SetTooltipNameOnly, Addon, "unknown", true), false, "coverage rejects unknown categories")
+Addon.preferences.tooltipNameOnly.spell = "unknown"
 Addon:LoadPreferences()
 Addon:RefreshSettingsUI()
-equal(settings.tooltipCoverage.displayedValue, "full", "native control refreshes repaired preferences")
+equal(settings.spellTooltip.displayedValue, "full", "native control refreshes repaired preferences")
+
+Addon.preferences.tooltipCoverage = "name"
+Addon.preferences.tooltipNameOnly = { spell = false }
+Addon:LoadPreferences()
+equal(Addon.preferences.tooltipCoverage, nil, "legacy global preference is consumed")
+equal(Addon:GetTooltipCoverage("spell"), "full", "migration preserves an explicit category choice")
+equal(Addon:GetTooltipCoverage("item"), "name", "legacy name-only mode migrates to items")
+equal(Addon:GetTooltipCoverage("aura"), "name", "legacy name-only mode migrates to auras")
+equal(Addon:GetTooltipCoverage("quest"), "name", "legacy name-only mode migrates to quests")
+equal(Addon:GetTooltipCoverage("characterStat"), "full", "legacy coverage did not affect character stats")
+equal(Addon:IsFeatureEnabled("playerTooltip"), false, "migration preserves the absence of player translations")
+Addon:ResetFeatureSettings()
 for _, position in ipairs({ "left", "right", "bottom", "top" }) do
     settings.npcTooltipPosition:SetValue(position)
     equal(Addon.preferences.npcTooltipPosition, position, "native NPC dropdown applies position")
@@ -111,7 +134,7 @@ end
 equal(Addon.settingsGroups, nil, "feature groups do not create subcategories")
 for _, feature in ipairs(Addon.features) do
     equal(settings[feature.id].category, category, "every feature lives on the main page")
-    settings[feature.id]:SetValue(false)
+    settings[feature.id]:SetValue(Addon.radioLists[feature.id] and "off" or false)
     equal(Addon:IsFeatureEnabled(feature.id), false, "native checkbox disables only its feature")
     settings[feature.id]:SetValueToDefault()
     equal(Addon:IsFeatureEnabled(feature.id), true, "native Defaults restores feature")
@@ -242,9 +265,11 @@ for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
         "native language page exposes supported translations: " .. locale)
 end
 local modes = Addon.radioLists.tooltipPresentation
+equal(Addon.radioLists.auraTooltip.buttons[2].newBadge ~= nil, true, "name-only mode has a new badge")
 local headerControl
 for _, initializer in ipairs(category.initializers) do
     if initializer.setting == settings.translationHeader then headerControl = initializer end
+
 end
 for index, mode in ipairs({ "below", "above", "separate", "replacement" }) do
     local badge = modes.buttons[index].newBadge
@@ -266,11 +291,11 @@ end
 settings.tooltipPresentation:SetValueToDefault()
 equal(Addon:GetTooltipPresentation(), "below", "native Defaults restores translation below the original")
 settings.tooltipPresentation:SetValue("separate")
-settings.tooltipCoverageEnabled:SetValue(false)
-equal(Addon.preferences.tooltipCoverage, "name", "unchecked full text selects name only")
-settings.tooltipCoverageEnabled:SetValueToDefault()
-equal(Addon.preferences.tooltipCoverage, "full", "coverage checkbox defaults to full text")
-settings.tooltipCoverageEnabled:SetValue(false)
+settings.itemTooltip:SetValue("name")
+equal(Addon:GetTooltipCoverage("item"), "name", "checked coverage selects item names only")
+settings.itemTooltip:SetValueToDefault()
+equal(Addon:GetTooltipCoverage("item"), "full", "coverage checkbox defaults to full text")
+settings.itemTooltip:SetValue("name")
 positionList.buttons[4]:Fire("OnClick")
 equal(Addon.preferences.npcTooltipPosition, "bottom", "position radio selects bottom")
 equal(positionList.buttons[4].text:GetText(), Addon:SettingsText("bottom"), "position labels follow the client language")
@@ -331,14 +356,102 @@ equal(panel:GetParent().cursorAnchor.relativePoint, "LEFT", "preview focus align
 equal(SmartNavigation.scrollFrames[SettingsPanel], SettingsPanel:GetSettingsList().ScrollBox,
     "settings registers its list for native right-stick scrolling")
 equal(panel.smartNavigationIgnored, true, "preview tooltips do not steal focus from their native scroll row")
+do
+    local presentation = Addon:GetTooltipPresentation()
+    Addon:SetTooltipPresentation("below")
+    for _, kind in ipairs({ "item", "spell", "talent", "aura", "npc", "pet", "mount", "appearance",
+        "quest", "questTracker", "mapQuest", "recipeTracker", "characterStat" }) do
+        local list = Addon.radioLists[kind .. "Tooltip"]
+        local original = list.getValue()
+        local blocks = {}
+        for index, button in ipairs(list.buttons) do
+            button:Fire("OnEnter")
+            local tip = Addon:GetWidgetTooltip()
+            local help = tip.lines[#tip.lines]
+            local marker = "|cffaaaaaa" .. Addon:SettingsText("preview") .. "|r"
+            local offset = help:find(marker, 1, true)
+            assert(offset, "missing hover sample for " .. kind)
+            blocks[index] = help:sub(offset)
+            button:Fire("OnLeave")
+        end
+        equal(#blocks[1] < #blocks[2], true, kind .. " adds a translated title in the name preview")
+        equal(#blocks[2] < #blocks[3], true, kind .. " adds translated details in the full preview")
+        equal(list.getValue(), original, kind .. " hover preserves the selected option")
+    end
+    local layout = Addon.radioLists.tooltipPresentation.buttons[3]
+    layout:Fire("OnEnter")
+    local translated = Addon:GetWidgetTooltip().optionPreview
+    equal(translated:IsShown(), true, "separate layout previews a second tooltip")
+    local locale = Addon:GetTargetLocale()
+    local name = databaseAPI:GetItemName(19019, locale)
+    local slot = databaseAPI:GetGlobalStringByKey("INVTYPE_WEAPON", locale)
+    local titleIndex = Addon.preferences.translationHeader and 2 or 1
+    equal(translated:GetLeftLine(titleIndex):GetText(), "|cffff8000" .. name .. "|r", "translated item name occupies its own line")
+    equal(translated:GetLeftLine(titleIndex + 1):GetText(), slot, "separate preview renders the translated equipment slot")
+    layout:Fire("OnLeave")
+    equal(Addon:GetWidgetTooltip().optionPreview:IsShown(), false, "leaving the choice closes its companion")
+    Addon:SetTooltipPresentation(presentation)
+end
 local debugIndex, previewIndex, questsIndex
 for index, initializer in ipairs(category.initializers) do
     if initializer.kind == "button" and initializer.name == Addon:DebugText("title") then debugIndex = index end
-    if initializer.kind == "panel" then previewIndex = index end
+    if initializer.kind == "panel" and not initializer.data.list then previewIndex = index end
     if initializer.kind == "header" and initializer.name == Addon:SettingsGroupName("Quests") then questsIndex = index end
 end
 equal(previewIndex + 1, questsIndex, "preview sits immediately before the Quests section")
-equal(questsIndex < debugIndex, true, "debug console follows the feature sections")
+equal(debugIndex < previewIndex, true, "debug console is accessible before the settings preview")
+do
+    local liveButton = Settings.FindButton(category, Addon:SettingsText("liveSettings"))
+    equal(liveButton.showNew, true, "live settings use the native button badge")
+    equal(liveButton.IsNewTagShown, nil, "the button badge does not mark the sidebar")
+    liveButton.callback()
+    local live = Addon.liveSettings
+    equal(live:IsShown(), true, "detached settings open from the addon category")
+    equal(CanOpenPanels(), true, "detached settings leave the native panel slot available")
+    local spellbook = CreateFrame("Frame", nil, UIParent)
+    ShowUIPanel(spellbook)
+    local function Find(text)
+        for _, button in ipairs({live:GetChildren()}) do
+            if button:GetText() == text then return button end
+        end
+    end
+    equal(Find(Addon:DebugText("inspect")) ~= nil, true, "live settings expose inspection")
+    equal(Find(Addon:SettingsText("openConsole")) ~= nil, true, "live settings expose the console")
+    local mode = Addon:GetTooltipPresentation()
+    local current
+    for _, choice in ipairs(Addon.radioLists.tooltipPresentation.choices) do
+        if choice.value == mode then current = choice.label end
+    end
+    local modeControl = Find(current)
+    modeControl.previous:Fire("OnEnter")
+    local help = Addon:GetWidgetTooltip().lines
+    equal(help[#help]:find(Addon:SettingsText("preview"), 1, true) ~= nil, true, "live arrows preview their choice")
+    equal(Addon:GetTooltipPresentation(), mode, "live arrow hover does not select the choice")
+    modeControl.previous:Fire("OnLeave")
+    modeControl.previous:OnSmartNavClick()
+    equal(Addon:GetTooltipPresentation() ~= mode, true, "previous selects the preceding value")
+    modeControl.following:OnSmartNavClick()
+    equal(Addon:GetTooltipPresentation(), mode, "next returns to the original value")
+    modeControl:OnSmartNavClick()
+    equal(Addon:GetTooltipPresentation() ~= mode, true, "live settings use the native setting's setter")
+    equal(live:IsShown() and spellbook:IsShown(), true, "changing the layout keeps both windows open")
+    Addon:SetTooltipPresentation(mode)
+    for index, group in ipairs(Addon.liveSettingsGroups) do
+        if group.label == Addon:SettingsGroupName("Spells") then break end
+        Find(">"):OnSmartNavClick()
+    end
+    local spellLabel = Addon.radioLists.spellTooltip.label:GetText()
+    for _, button in ipairs({live:GetChildren()}) do
+        if button.label and button.label:GetText() == spellLabel then button:OnSmartNavClick(); break end
+    end
+    equal(Addon:IsFeatureEnabled("spellTooltip"), false, "gamepad selection applies spell changes beside the book")
+    equal(Addon:IsFeatureEnabled("auraTooltip"), true, "live spell settings leave auras enabled")
+    Addon:SetFeatureEnabled("spellTooltip", true)
+    live:SmartNavigationCloseHandler()
+    equal(spellbook:IsShown(), true, "closing live settings leaves the inspected window open")
+    HideUIPanel(spellbook)
+    Addon:OpenSettings()
+end
 local runDebugCommand = Addon.RunDebugCommand
 local openedDebug
 Addon.RunDebugCommand = function(_, command) openedDebug = command end
@@ -347,15 +460,24 @@ equal(openedDebug, "", "settings button opens the debug console")
 equal(SettingsPanel:IsShown(), false, "opening debug closes settings")
 Addon.RunDebugCommand = runDebugCommand
 Addon:OpenSettings()
+GameMenuFrame:Show()
+Settings.FindButton(category, Addon:DebugText("inspect")).callback()
+equal(Addon:IsDebugPicking(), true, "settings starts inspection in one action")
+equal(SettingsPanel:IsShown() or GameMenuFrame:IsShown(), false, "inspection releases settings and the game menu")
+Addon:ToggleDebugInspection()
+Addon:MoveDebugPicker("clear")
+Addon.errorDialog.frame:Hide()
+Addon:OpenSettings()
 equal(Addon.settingsPreviewCategory, nil, "preview has no separate menu")
-for _, id in ipairs({ "locale", "tooltipPresentation", "tooltipCoverageEnabled", "npcTooltipPosition" }) do
+for _, id in ipairs({ "locale", "tooltipPresentation", "itemTooltip", "spellTooltip",
+    "talentTooltip", "auraTooltip", "npcTooltipPosition" }) do
     equal(settings[id].category, category, "tooltip control stays beside the preview: " .. id)
 end
 SettingsPanel:Hide()
 equal(panel:IsVisible(), false, "closing settings hides the main page preview")
 Addon:OpenSettings()
 equal(panel:IsVisible(), true, "returning to default page restores the preview")
-settings.questTooltip:SetValue(false)
+settings.questTooltip:SetValue("off")
 local generation = Addon.generation
 SettingsPanel:Hide()
 SlashCmdList.FOREVERROSETTASTONE("reset")
@@ -363,7 +485,7 @@ equal(Addon.generation, generation + 1, "reset creates a fresh addon generation"
 equal(Addon:IsFeatureEnabled("questTooltip"), false, "reset preserves opt-outs")
 equal(Addon.settingsCategory, category, "reset reuses registered native categories")
 equal(Addon.settings, settings, "native callbacks survive reset")
-settings.questTooltip:SetValue(true)
+settings.questTooltip:SetValue("full")
 equal(Addon:IsFeatureEnabled("questTooltip"), true, "persistent native control uses current runtime")
 local defaults = SettingsPanel:GetSettingsList().Header.DefaultsButton
 local nativeDefaults = defaults:GetScript("OnClick")
@@ -409,7 +531,7 @@ equal(Addon.errorLog, previousLog, "addon-only reset preserves saved error histo
 equal(Addon.preferences.minimapAngle, previousAngle, "addon-only reset preserves minimap position")
 equal(Addon:GetTargetLocale(), "enUS", "reset all restores English")
 equal(Addon.preferences.tooltipMode, "stacked", "reset all restores Stacked")
-equal(Addon.preferences.tooltipCoverage, "full", "reset all restores Full text")
+equal(Addon:GetTooltipCoverage("item"), "full", "reset all restores full item tooltips")
 equal(Addon.preferences.npcTooltipPosition, "top", "reset all restores Top")
 equal(#Settings.categories, 1, "only one native root category is registered")
 Addon:SetTooltipMode("separate")

@@ -7,7 +7,7 @@ local function equal(actual, expected, label)
 end
 Addon:SetTargetLocale("enUS")
 Addon:SetTooltipMode("separate")
-Addon.preferences.tooltipCoverage = "full"
+Addon.preferences.tooltipNameOnly.mount = false
 Enum.TooltipDataLineType.SpellDescription = Enum.TooltipDataLineType.SpellDescription or 29
 local translate = Addon.TranslateLiveSpellDescription
 Addon.TranslateLiveSpellDescription = function(_, id, locale, text)
@@ -32,10 +32,10 @@ end
 local spec = emit("GetMountBySpellID", 458)
 equal(spec.kind, "mount", "mount keeps its independent feature")
 equal(spec.tip.lines[2], "Translated summon 458", "mount body uses the summon spell renderer")
-Addon.preferences.tooltipCoverage = "name"
+Addon.preferences.tooltipNameOnly.mount = true
 spec = emit("GetMountBySpellID", 458)
 equal(#spec.tip.lines, 1, "name-only mode still suppresses mount descriptions")
-Addon.preferences.tooltipCoverage = "full"
+Addon.preferences.tooltipNameOnly.mount = false
 spec = emit("GetCompanionPet", 17707)
 equal(spec.kind, "pet", "companion-pet getter takes precedence over generic spells")
 equal(spec.tip.lines[1], "Summon Panda", "pet summon title uses the owned spell")
