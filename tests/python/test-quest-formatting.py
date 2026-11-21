@@ -84,6 +84,29 @@ class QuestFormattingTests(unittest.TestCase):
                          'Rosetta，你是一名法师。')
         self.assertEqual(self.format('$Notice $b下一段'), '$Notice \n下一段')
 
+    def test_dialogue_renders_adjacent_tokens_and_qualified_gender_forms(self):
+        self.lua.execute("""
+            addon.locale = 'enUS'
+            function UnitName() return 'Rosetta Stone' end
+            sourceText = 'Bonjour {name}ath'
+            targetText = '$gSir:Madam:c;, $nAway$bmore $cs and $rs'
+            ForeverRosettaStoneDB = {
+                GetQuestDialogue = function(_, _, _, locale)
+                    return {{key = 'line', stage = 'gossip', text = locale == 'frFR' and sourceText or targetText}}
+                end,
+            }
+        """)
+        source = (ROOT / 'ForeverRosettaStone/quests/quest-dialogue.lua').read_text()
+        self.lua.execute("assert(loadstring(...))('addon', addon)", source)
+        match = self.addon.MatchQuestDialogue
+        self.assertEqual(match(self.addon, 32, None, 'gossip', 'Bonjour Rosettaath'),
+                         'Madam, Rosetta Away\nmore Mages and Humans')
+        self.lua.execute("function UnitSex() return 2 end")
+        self.assertEqual(match(self.addon, 32, None, 'gossip', 'Bonjour Rosetta Stoneath'),
+                         'Sir, Rosetta Stone Away\nmore Mages and Humans')
+        self.lua.execute("targetText = 'An unresolved $unknown token'")
+        self.assertIsNone(match(self.addon, 32, None, 'gossip', 'Bonjour Rosettaath'))
+
     def test_unmapped_summary_objective_stays_native(self):
         self.lua.execute("""
             addon.locale = 'frFR'

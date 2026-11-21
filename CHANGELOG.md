@@ -12,7 +12,7 @@
 
 ### Fixed
 
-- Fixed missing verse breaks that prevented Grimbooze Thunderbrew’s quest progress dialogue from displaying in English.
+- Fixed quest and NPC dialogue that disappeared when a line break touched the next word, a player name had a suffix, or a gender variant used an unsupported format. Corrections cover 273 localized lines, including Grimbooze Thunderbrew’s verses.
 
 - NPC menus show translated quests and options even when the greeting is missing. Hovering a conversation option can now use the NPC’s known dialogue.
 
