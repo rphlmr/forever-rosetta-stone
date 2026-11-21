@@ -37,26 +37,68 @@ local function Render(template, questID, locale, playerName, native)
     if text and not text:find("%$[A-Za-z0-9]") then return text end
 end
 
+local function Applies(entry, npcID, questID, stage, sex)
+    return entry.stage == stage and (not questID or entry.npcID == npcID)
+        and (not entry.playerSex or entry.playerSex == sex)
+end
+
+local function AgreedDialogueText(entries, translations, npcID, questID, stage, sex)
+    local candidates = {}
+    for _, entry in ipairs(entries or {}) do
+        if Applies(entry, npcID, questID, stage, sex) then
+            candidates[entry.key] = true
+        end
+    end
+    local text
+    for _, entry in ipairs(translations) do
+        if candidates[entry.key] then
+            if text and text ~= entry.text then return end
+            text = entry.text
+            candidates[entry.key] = nil
+        end
+    end
+    if next(candidates) == nil then return text end
+end
+
+local function UsesPlayerName(text)
+    return text:find("%$[Nn]") or text:find("{name}", 1, true)
+end
+
 function Addon:MatchQuestDialogue(npcID, questID, stage, native)
-    if not ReadableString(native) then return end
+    -- An NPC can have several options in a single menu. Those need an option ID
+    -- or a match against the live label, even when only one is in the catalog.
+    local canResolveByContext = questID or stage == "gossip"
+    local readable = ReadableString(native)
+    if not canResolveByContext and not readable then return end
     local db = ForeverRosettaStoneDB
     local client, target = GetLocale(), self:GetTargetLocale()
-    local source = db:GetQuestDialogue(questID, npcID, client)
-    if not source then return end
     local translations = db:GetQuestDialogue(questID, npcID, target)
     if not translations then return end
-    local observed, matches, foreverMatches = Normalize(native), {}, {}
     local sex = UnitSex("player")
     local name = UnitName("player")
     local firstName = ReadableString(name) and name:match("^(%S+)%s+%S")
+
+    if canResolveByContext and (sex == 2 or sex == 3) then
+        -- English owns every variant, including variants missing in the source or target locale.
+        local english = target == "enUS" and translations or db:GetQuestDialogue(questID, npcID, "enUS")
+        local text = AgreedDialogueText(english, translations, npcID, questID, stage, sex)
+        -- The live text can still identify the first-name form for multi-part names.
+        if text and (not firstName or not UsesPlayerName(text)) then
+            return Render(text, questID, target)
+        end
+    end
+
+    if not readable then return end
+    local source = client == target and translations or db:GetQuestDialogue(questID, npcID, client)
+    if not source then return end
+    local observed, matches, foreverMatches = Normalize(native), {}, {}
     for _, entry in ipairs(source) do
-        if entry.stage == stage and (not questID or entry.npcID == npcID)
-            and (not entry.playerSex or entry.playerSex == sex) then
+        if Applies(entry, npcID, questID, stage, sex) then
             local candidates = entry.scope == "forever" and foreverMatches or matches
             local text = Render(entry.text, questID, client, nil, true)
             if text and Normalize(text) == observed then
                 candidates[entry.key] = {}
-            elseif firstName and (entry.text:find("%$[Nn]") or entry.text:find("{name}", 1, true)) then
+            elseif firstName and UsesPlayerName(entry.text) then
                 text = Render(entry.text, questID, client, firstName, true)
                 if text and Normalize(text) == observed then candidates[entry.key] = { firstName = firstName } end
             end
@@ -270,7 +312,8 @@ function Addon:GetCatalogDialogueSections(questID, context)
     local native = nativeText[context]()
     local translated = self:MatchQuestDialogue(npcID, questID, stage, native)
     if translated then
-        return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. native
+        local observed = ReadableString(native) and native or ""
+        return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. observed
     end
     if stage == "gossip" and ReadableString(native) then
         local sections, hasTranslatedRow = self:CreateQuestDialogueSections(nil, context, nil, npcID)

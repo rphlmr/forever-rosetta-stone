@@ -120,6 +120,7 @@
     "frFR": {
       "description": "Vous apprend à invoquer cette monture.",
       "name": "Rênes de kodo de bât",
+      "reputationRequirement": "Requiert une réputation exaltée auprès de l’Administration commerciale d’Azeroth.",
       "translationMetadata": {
         "fields": {
           "description": {
@@ -133,6 +134,13 @@
             "source": "wowClient",
             "sourceBuild": "1.60.1.70862",
             "sourceLocale": "frFR"
+          },
+          "reputationRequirement": {
+            "origin": "original",
+            "source": "clientCapture",
+            "sourceBuild": "1.60.1.71037",
+            "sourceLocale": "frFR",
+            "sourceTextSha256": "c35d889945b901718cc28c349f5f48d5ca30791266d7b3233fc4238e9eded6e8"
           }
         }
       }
@@ -367,7 +375,11 @@
     "quality": 4,
     "requiredLevel": 60,
     "requirements": {
-      "abilitySpellID": 33391
+      "abilitySpellID": 33391,
+      "reputation": {
+        "factionID": 2586,
+        "standing": 8
+      }
     },
     "requirementsSourceMetadata": {
       "source": "wago",

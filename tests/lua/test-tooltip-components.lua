@@ -669,7 +669,11 @@ Addon:UpdateGossipOptionTooltip()
 equal(Addon.gossipOptionTooltip:IsShown(), false, "recycled numeric rows with different text do not reuse a translation")
 gossipElement = { info = { gossipOptionID = 96904, name = "Stale option" } }
 Addon:UpdateGossipOptionTooltip()
-equal(Addon.gossipOptionTooltip:IsShown(), false, "stale structured row data must match the live option")
+equal(Addon.gossipOptionTooltip:GetLeftLine(2):GetText(), "Profession Trainer",
+    "a stable option ID resolves the row without comparing its label")
+gossipElement.info.orderIndex = 0
+Addon:UpdateGossipOptionTooltip()
+equal(Addon.gossipOptionTooltip:IsShown(), false, "a stale structured order must match the live option")
 gossipElement = { info = auction }
 gossipOptions = { trainer }
 Addon:UpdateGossipOptionTooltip()

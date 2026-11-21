@@ -21,6 +21,23 @@ class ItemRequirementTests(LiveValueHarness, unittest.TestCase):
         self.assertEqual(g.requirement(211787,'Compréhension (1) requis'.encode())[0],b'Requires Comprehension (1)')
         self.assertEqual(g.requirement(211787,'Compréhension (17) requis'.encode())[0],b'Requires Comprehension (17)')
 
+    def test_captured_reputation_error_uses_only_the_item_bound_faction_and_rank(self):
+        self.lua.execute(b'''
+            Enum.TooltipDataLineType.ErrorLine = 41
+            assert(loadfile('ForeverRosettaStone/locales/faction-standing-locales.lua'))('addon', addon)
+            reputation=function(id,text,target)
+                return addon:GetLocalizedTooltipLine({type=41,leftText=text},'item',id,target)
+            end
+        ''')
+        native = "Requiert une réputation exaltée auprès de l’Administration commerciale d’Azeroth."
+        translate = self.lua.globals().reputation
+        self.assertEqual(translate(262766, native.encode(), b'enUS')[0],
+                         b'Requires Azeroth Commerce Authority - Exalted')
+        self.assertEqual(translate(262766, native.encode(), b'deDE')[0],
+                         'Benötigt Handelskommission von Azeroth - Ehrfürchtig'.encode())
+        self.assertIsNone(translate(262766, native.replace('exaltée', 'révérée').encode(), b'enUS')[0])
+        self.assertIsNone(translate(211787, native.encode(), b'enUS')[0])
+
     def test_banner_keeps_the_recorded_values_without_static_calculation(self):
         native=('Utiliser : Vous déployez une bannière qui vous permet, ainsi qu’aux membres '
                 'de l’Alliance à proximité, de gagner 14 au score d’Esprit. Effet mutuellement '

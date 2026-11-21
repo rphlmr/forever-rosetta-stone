@@ -29,13 +29,13 @@ to have captured the original gossip wording in every client language. Missing
 names were translated from the captured French. The guild service is distinct
 from the player guild-leader label, so that GlobalString was not reused.
 
-Runtime lookups first use the captured option ID. A record with `matchIcon`
-can also match the icon and complete option label in the client's locale.
+Runtime lookups first use the captured option ID, then a verified `sharedIcon`
+such as the icon for flight options. As a last resort, a record with
+`matchIcon` can match the icon and complete option label in the client's locale.
 Only observed wording from client captures or Zephras is indexed. Candidates
 must agree in the target locale. Verified guard labels are eligible when the
-live option has the generic direction icon 132053. Records with a unique
-`sharedIcon` can supply a standard label by icon, as for the flight option.
-Unrecognized options keep their native text.
+live option has the generic direction icon 132053. Unrecognized options keep
+their native text.
 
 The Ironforge guard menu was captured on Forever 1.60.1.70959 (NPC 274781).
 Twelve options reuse the equivalent destination or service names already in this

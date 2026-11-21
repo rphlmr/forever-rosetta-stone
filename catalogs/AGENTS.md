@@ -56,7 +56,10 @@ objective source positions, or duplicate locale identifiers and English labels.
   `locales[locale].dialogue`. The owner is the quest for offers, progress and turn-in, and the
   NPC for greetings and options. Keep `translationMetadata.fields["dialogue.<key>"]` with each
   localized line. The [Spoken source workflow](../datasources/spoken/SOURCE.md) prepares updates
-  through resync. A reference candidate must match its full client text at runtime.
+  through resync. For quest dialogue and NPC introductions, the quest ID when available,
+  NPC, stage and player sex can identify a translation when all eligible lines agree in
+  the target locale. Use the client text to resolve remaining ambiguity. NPC options
+  prefer the live option ID or a verified shared icon before checking the label.
   Canonical offer translations may use `dialogue.description` to supplement a missing or
   English fallback description. The `description` dialogue context uses stage `accept`,
   `sourceField: "description"`, and `sourceDescriptionSha256` of the verified English description.
@@ -112,6 +115,10 @@ objective source positions, or duplicate locale identifiers and English labels.
   is unique in that same verified build. SkillLine IDs and category IDs are distinct. The
   runtime may compare a typed requirement's text only with those owned IDs' source names;
   never scan all class/skill names. Required numeric ranks stay live, not catalog constants.
+  A generic client error row can carry an item-owned reputation requirement captured in
+  `locales[locale].reputationRequirement`. Preserve its complete native wording and provenance.
+  Bind only the verified faction ID and minimum standing in `tooltipData.requirements.reputation`.
+  The tooltip uses the owned faction name, standing label and client format when the full row matches.
 - Existing item/spell English `description` fields retain the raw client templates and field provenance.
   Spell `auraDescription` is a separate localized field with its own metadata. `$@spellaura` references use this
   field; a cast description must not substitute for an aura description.

@@ -158,6 +158,17 @@ def project_tooltip_details(entity, original, locale):
         if value and has_english_text(entity, field):
             details[field] = value
 
+    if 'reputationRequirement' in original:
+        text = original['reputationRequirement']
+        proof = original.get('translationMetadata', {}).get('fields', {}).get('reputationRequirement', {})
+        if (not tooltip.get('requirements', {}).get('reputation')
+                or not isinstance(text, str) or not text.strip()
+                or proof.get('origin') != 'original' or proof.get('source') != 'clientCapture'
+                or proof.get('sourceLocale') != locale or not proof.get('sourceBuild')
+                or proof.get('sourceTextSha256') != hashlib.sha256(text.encode()).hexdigest()):
+            raise ValueError('Invalid item reputation requirement capture')
+        details['reputationRequirement'] = text
+
     if 'set' in tooltip:
         name = original.get('setName')
 
@@ -320,6 +331,13 @@ def project_tooltip_rules(entity):
     if 'equipmentRequirementType' in tooltip and (type(tooltip['equipmentRequirementType']) is not int
                                                 or tooltip['equipmentRequirementType'] < 0):
         raise ValueError('Invalid equipmentRequirementType')
+    reputation = tooltip.get('requirements', {}).get('reputation')
+    if reputation is not None:
+        if (not isinstance(reputation, dict) or set(reputation) != {'factionID', 'standing'}
+                or type(reputation['factionID']) is not int or reputation['factionID'] <= 0
+                or type(reputation['standing']) is not int or not 1 <= reputation['standing'] <= 8
+                or not any('reputationRequirement' in row for row in entity['locales'].values())):
+            raise ValueError('Invalid item reputation requirement binding')
     if 'descriptionRow' in tooltip:
         binding = tooltip['descriptionRow']
         metadata = tooltip.get('descriptionRowSourceMetadata', {})

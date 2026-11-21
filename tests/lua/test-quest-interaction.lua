@@ -71,25 +71,48 @@ local hidden = { mode = "hidden" }
 do
     local db = ForeverRosettaStoneDB
     local lookup, unitSex, locale = db.GetQuestDialogue, UnitSex, GetLocale
+    local getTarget = Addon.GetTargetLocale
     local source = Addon:GetTargetLocale() == "frFR" and "deDE" or "frFR"
+    local alternate, missingSource, missingTarget
     GetLocale = function() return source end
+    Addon.GetTargetLocale = function() return source == "frFR" and "deDE" or "frFR" end
     UnitSex = function() return 3 end
     db.GetQuestDialogue = function(_, questID, _, language)
         if questID ~= 179 then return end
-        return {
+        if language == source and missingSource then return end
+        local rows = {
             { key = "female", npcID = 197, stage = "progress", playerSex = 3,
                 text = language == source and "Texte natif" or "Translated progress" },
             { key = "male", npcID = 197, stage = "progress", playerSex = 2,
                 text = language == source and "Texte natif" or "Other variant" },
         }
+        if alternate and (language == "enUS" or not missingTarget) then
+            rows[#rows + 1] = { key = "alternate", npcID = 197, stage = "progress", playerSex = 3,
+                text = language == source and "Variante native" or alternate }
+        end
+        return rows
     end
-    check(Addon:MatchQuestDialogue(197, 179, "progress", " Texte natif ") == "Translated progress",
-        "catalog dialogue matches the client text and character variant")
+    check(Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte") == "Translated progress",
+        "a quest, NPC, phase and player variant can identify dialogue without matching wording")
+    missingSource = true
+    check(Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte") == "Translated progress",
+        "an unambiguous quest line translates even with no catalog wording for the client language")
+    missingSource = false
     check(not Addon:MatchQuestDialogue(198, 179, "progress", "Texte natif")
-        and not Addon:MatchQuestDialogue(197, 179, "complete", "Texte natif")
+        and not Addon:MatchQuestDialogue(197, 179, "complete", "Texte natif"),
+        "catalog dialogue refuses unmatched NPC and phase")
+    alternate = "Translated progress"
+    check(Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte") == "Translated progress",
+        "quest variants with identical translations do not need to match the native text")
+    alternate = "Alternate translation"
+    check(Addon:MatchQuestDialogue(197, 179, "progress", " Variante native ") == "Alternate translation"
         and not Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte"),
-        "catalog dialogue refuses unmatched NPC, phase and wording")
+        "the client text resolves competing quest variants")
+    missingTarget = true
+    check(not Addon:MatchQuestDialogue(197, 179, "progress", "Un autre texte"),
+        "canonical quest variants count even when one locale has fewer entries")
     db.GetQuestDialogue, UnitSex, GetLocale = lookup, unitSex, locale
+    Addon.GetTargetLocale = getTarget
 end
 do
     local oldLocale, oldTarget, oldSex = GetLocale, Addon.GetTargetLocale, UnitSex
@@ -105,6 +128,13 @@ Il me manque du houblon pour en faire le brassage.]]
 In order for our rich lager to taste
 More like beer and less like stew,
 Hops are needed to make the brew.]], "Thunderbrew progress renders four English verses from the captured French")
+    local turnIn = "Merci, ce repas tombe vraiment à pic ! Ça creuse, de protéger Comté-du-Lac des orcs et des gnolls !"
+    check(Addon:MatchQuestDialogue(464, 129, "complete", turnIn)
+        == "Thanks, I could really use the meal.  Guarding Lakeshire from the orcs and gnolls is tough work!",
+        "Guard Parker's captured French turn-in dialogue resolves to the existing English translation")
+    check(Addon:MatchQuestDialogue(464, 129, "complete", turnIn:gsub("Comté%-du%-Lac", "Lakeshire"))
+        == "Thanks, I could really use the meal.  Guarding Lakeshire from the orcs and gnolls is tough work!",
+        "changing the native location name does not hide the single known turn-in translation")
     GetLocale, Addon.GetTargetLocale, UnitSex = oldLocale, oldTarget, oldSex
 end
 do
@@ -132,6 +162,17 @@ do
         and dialogue[3].text == "Mallarına bakmak istiyorum."
         and dialogue[4].text == "Keşfedebileceğim zindanlardan bahseder misin?",
         "Boorand's three visible options are translated in Turkish")
+    UnitGUID = function(unit) return unit == "npc" and "Creature-0-1-0-4-1573-ABCD" end
+    C_GossipInfo.GetText = function() return "An unexpected introduction" end
+    C_GossipInfo.GetOptions = function() return {} end
+    local introduction = "Wildhammer cücelerinin binekleri hızlı olabilir ama Aerie Peak grifonları Büyük Demirhane’nin sıcağına dayanabilir mi? Hiç sanmıyorum!"
+    local vendor = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(vendor and vendor[1].text == introduction,
+        "a single service NPC introduction translates without matching the live text")
+    C_GossipInfo.GetText = function() return nil end
+    vendor = Addon:GetCatalogDialogueSections(nil, "gossip")
+    check(vendor and vendor[1].text == introduction,
+        "the service NPC introduction translates when the client returns no text")
     GetLocale, Addon.GetTargetLocale, UnitGUID = getLocale, getTargetLocale, getUnitGUID
     UnitSex = getUnitSex
     C_GossipInfo.GetText, C_GossipInfo.GetOptions, C_GossipInfo.GetActiveQuests = getText, getOptions, getActiveQuests
@@ -292,7 +333,7 @@ do
     option:SetText(flight.name)
     option.left, option.top = 30, 690
     option:SetSize(278, 20)
-    function option:GetElementData() return { info = flight } end
+    function option:GetElementData() return { info = { gossipOptionID = flight.gossipOptionID } } end
     local quest = CreateFrame("Button", nil, nativeViewport)
     quest.questID = 179
     quest.left, quest.top = 30, 665
@@ -539,14 +580,20 @@ do
     local lookup, locale, sex, guid, questText = database.GetQuestDialogue, GetLocale, UnitSex, UnitGUID, GetQuestText
     local target = Addon:GetTargetLocale()
     local source = target == "enUS" and "frFR" or "enUS"
+    local ambiguous
     GetLocale = function() return source end
     UnitSex = function() return 2 end
     UnitGUID = function(unit) return unit == "npc" and "Creature-0-0-0-0-197-1" or nil end
     GetQuestText = function() return "Native offer variant" end
     database.GetQuestDialogue = function(_, questID, _, language)
         if questID == 179 then
-            return { { key = "offer", npcID = 197, stage = "accept",
+            local offers = { { key = "offer", npcID = 197, stage = "accept",
                 text = language == source and "Native offer variant" or "Translated offer variant" } }
+            if ambiguous then
+                offers[2] = { key = "second", npcID = 197, stage = "accept",
+                    text = language == source and "Other native offer" or "Other translated offer" }
+            end
+            return offers
         end
     end
     Addon:UpdateQuestInteraction()
@@ -554,8 +601,16 @@ do
         "matching NPC offer takes precedence over the generic quest description")
     GetQuestText = function() return "A different offer" end
     Addon:UpdateQuestInteraction()
+    check(reader.body.lastSections[2].text == "Translated offer variant",
+        "an unambiguous offer translates independently of the live wording")
+    GetQuestText = function() return nil end
+    Addon:UpdateQuestInteraction()
+    check(reader.body.lastSections[2].text == "Translated offer variant",
+        "an unambiguous offer translates when the live text is unavailable")
+    ambiguous = true
+    Addon:UpdateQuestInteraction()
     check(reader.body.lastSections[2].text:find("What do we have here", 1, true),
-        "an unmatched offer keeps the translated quest description")
+        "an ambiguous offer keeps the translated quest description")
     database.GetQuestDialogue, GetLocale, UnitSex, UnitGUID, GetQuestText = lookup, locale, sex, guid, questText
     Addon:UpdateQuestInteraction()
 end
@@ -724,7 +779,8 @@ check(rowTextY == rowIconY and rowTextY == -43 and rowTextX == 24 and rowIconX =
 customReader:ShowSections(783, "reward", dialogue)
 check(not customReader.body.rowIcons[1]:IsShown(), "reusing the body clears old gossip icons")
 check(FindRewardText("170", customReader), "turn-in companion mirrors live XP")
-local previousProgressChild = QuestProgressScrollChildFrame
+local previousProgressChild, previousProgressScroll = QuestProgressScrollChildFrame, QuestProgressScrollFrame
+local previousProgressTitle = QuestProgressTitleText
 local previousRequiredItems = QuestProgressRequiredItemsText
 local previousProgressText = QuestProgressText
 local previousTurnInItems = TURN_IN_ITEMS
@@ -732,10 +788,14 @@ local previousQuestItemInfo = GetQuestItemInfo
 ClientApi.InstallGlobals("frFR", { "TURN_IN_ITEMS" })
 QuestProgressScrollChildFrame = CreateFrame("Frame", nil, QuestFrame)
 QuestProgressScrollChildFrame.left, QuestProgressScrollChildFrame.top = 30, 550
-QuestProgressRequiredItemsText = RewardText(TURN_IN_ITEMS, 30, 460)
+QuestProgressScrollFrame = CreateFrame("Frame", nil, QuestFrame)
+QuestProgressScrollFrame.top = 550
+function QuestProgressScrollFrame:GetScrollChild() return QuestProgressScrollChildFrame end
+QuestProgressTitleText = RewardText("Native progress title", 40, 540)
+QuestProgressRequiredItemsText = RewardText(TURN_IN_ITEMS, 40, 460)
 QuestProgressText = nativeRewards.ItemReceiveText
 local requiredItem = CreateFrame("Button", nil, QuestProgressScrollChildFrame)
-requiredItem.left, requiredItem.top = 30, 438
+requiredItem.left, requiredItem.top = 37, 438
 requiredItem:SetSize(150, 40)
 requiredItem:SetID(1)
 requiredItem.type, requiredItem.objectType = "required", "item"
@@ -750,14 +810,23 @@ end
 function QuestProgressScrollChildFrame:GetRegions() return QuestProgressRequiredItemsText, QuestProgressText end
 function QuestProgressScrollChildFrame:GetChildren() return requiredItem end
 customReader:ShowSections(783, "progress", dialogue)
-check(FindRewardText(Addon:GetClientLabel("TURN_IN_ITEMS", Addon:GetTargetLocale()), customReader),
-    "progress companion mirrors the translated requirements header")
+local requiredHeader = FindRewardText(Addon:GetClientLabel("TURN_IN_ITEMS", Addon:GetTargetLocale()), customReader)
+local progressScale = QuestProgressScrollChildFrame:GetEffectiveScale() / customReader.body.child:GetEffectiveScale()
+check(requiredHeader and select(4, requiredHeader:GetPoint(1)) == select(4, customReader.body.sections[1]:GetPoint(1)),
+    "required items header shares the text inset despite the extra inset of the native scroll child")
+local requiredButton
+for _, child in ipairs({customReader.body.child:GetChildren()}) do
+    if child.rewardSource == requiredItem and child:IsShown() then requiredButton = child end
+end
+check(requiredButton and math.abs(select(4, requiredButton:GetPoint(1)) - (5 - 3 * progressScale)) < 0.01,
+    "required item hover target keeps its native offset from the progress title")
 local requiredName = ForeverRosettaStoneDB:GetItemName(750, Addon:GetTargetLocale())
 check(requiredName and FindRewardText(requiredName, customReader) and FindRewardText("8", customReader),
     "progress companion translates the required item and copies its live count")
 check(not FindRewardText("Native receive", customReader), "progress mirror omits the native dialogue")
 customReader.frame:Hide()
 QuestProgressScrollChildFrame, QuestProgressRequiredItemsText = previousProgressChild, previousRequiredItems
+QuestProgressScrollFrame, QuestProgressTitleText = previousProgressScroll, previousProgressTitle
 QuestProgressText, TURN_IN_ITEMS = previousProgressText, previousTurnInItems
 GetQuestItemInfo = previousQuestItemInfo
 
