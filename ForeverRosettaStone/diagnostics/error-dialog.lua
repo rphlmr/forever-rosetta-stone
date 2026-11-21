@@ -153,12 +153,6 @@ local function CreateErrorDialog()
     pick:SetPoint("TOPLEFT", window, "TOPLEFT", 24, -70)
     pick:SetText(Addon:DebugText("inspect"))
     pick:SetScript("OnClick", Protect(function() Addon:MoveDebugPicker("start") end))
-    local captureGossip = CreateFrame("Button", nil, window, "UIPanelButtonTemplate")
-    captureGossip:SetSize(220, 30)
-    captureGossip:SetPoint("LEFT", pick, "RIGHT", 10, 0)
-    captureGossip:SetText(Addon:DebugText("captureGossip"))
-    captureGossip:SetScript("OnClick", Protect(function() Addon:CaptureDebugGossip() end))
-    Addon.errorDialog.captureGossip = captureGossip
     local list = CreateFrame("ScrollFrame", nil, window, "UIPanelScrollFrameTemplate")
     list:SetPoint("TOPLEFT", window, "TOPLEFT", 22, -142)
     list:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 22, 88)
@@ -251,7 +245,7 @@ local function CreateErrorDialog()
     local function ControllerAction(button)
         button.OnSmartNavClick = Protect(function() button:GetScript("OnClick")(button) end)
     end
-    for _, button in ipairs({ close, run, pick, captureGossip, guide, help, addonReport, clearCaptures, saveReport,
+    for _, button in ipairs({ close, run, pick, guide, help, addonReport, clearCaptures, saveReport,
         errorLog, clearErrorLog, selectOutput }) do
         ControllerAction(button)
     end
@@ -409,7 +403,7 @@ local function ApplyDebugLayout(self, dialog, view, title, guide)
     dialog.window:SetSize(width, height)
     local report, console, display = view == "report", view == "console", view == "display"
     local visible = {
-        [dialog.pick] = report, [dialog.captureGossip] = report, [dialog.sidebar] = report, [dialog.list] = report,
+        [dialog.pick] = report, [dialog.sidebar] = report, [dialog.list] = report,
         [dialog.listTitle] = report, [dialog.clearCaptures] = report, [dialog.guide] = report,
         [dialog.commandBox] = console, [dialog.commandLabel] = console, [dialog.run] = console,
         [dialog.help] = console, [dialog.addonReport] = console, [dialog.errorLog] = console,
@@ -442,8 +436,8 @@ local function ApplyDebugLayout(self, dialog, view, title, guide)
     else dialog.saveReport:SetPoint("RIGHT", dialog.selectOutput, "LEFT", -10, 0) end
     dialog.hint:ClearAllPoints()
     if report then
-        dialog.hint:SetPoint("LEFT", dialog.captureGossip, "RIGHT", 18, 0)
-        dialog.hint:SetWidth(width - 590)
+        dialog.hint:SetPoint("LEFT", dialog.pick, "RIGHT", 18, 0)
+        dialog.hint:SetWidth(width - 350)
         dialog.hint:SetText(self:DebugText("pickHint"))
     else
         dialog.hint:SetPoint("TOPLEFT", dialog.window, "TOPLEFT", 80, -42)
@@ -537,12 +531,12 @@ local function DebugNavigation(dialog, entries)
     local view = dialog.console and dialog.view or "error"
     local column, rows, edge = {}, {}, nil
     if view == "report" then
-        column = { dialog.pick, dialog.captureGossip }
+        column = { dialog.pick }
         for index = 1, #entries do column[#column + 1] = dialog.pickedButtons[index] end
         for _, button in ipairs({ dialog.clearCaptures, dialog.guide, dialog.saveReport, dialog.selectOutput }) do
             column[#column + 1] = button
         end
-        rows = { { dialog.pick, dialog.captureGossip }, { dialog.guide, dialog.saveReport, dialog.selectOutput } }
+        rows = { { dialog.pick }, { dialog.guide, dialog.saveReport, dialog.selectOutput } }
     elseif view == "console" then
         column = { dialog.run, dialog.help, dialog.addonReport, dialog.errorLog, dialog.saveReport, dialog.selectOutput }
         rows = { { dialog.run, dialog.help }, { dialog.addonReport, dialog.errorLog, dialog.saveReport, dialog.selectOutput } }

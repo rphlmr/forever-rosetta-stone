@@ -8,9 +8,11 @@
 
 - Choose how much to translate for each tooltip category. Items, spells, auras and talents each have their own off, name-only and full-detail settings.
 - Preview tooltip settings and open the in-game settings window to try changes alongside the spellbook, talents or bags.
-- Capture the current NPC conversation from the diagnostics window. Browse captures, inspect their details and save a report using the gamepad.
+- Inspection now records NPC conversations and their submenus as you open them. Browse captures, inspect their details and save a report using the gamepad.
 
 ### Fixed
+
+- Fixed missing verse breaks that prevented Grimbooze Thunderbrew’s quest progress dialogue from displaying in English.
 
 - NPC menus show translated quests and options even when the greeting is missing. Hovering a conversation option can now use the NPC’s known dialogue.
 

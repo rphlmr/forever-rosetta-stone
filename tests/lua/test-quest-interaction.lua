@@ -92,6 +92,22 @@ do
     db.GetQuestDialogue, UnitSex, GetLocale = lookup, unitSex, locale
 end
 do
+    local oldLocale, oldTarget, oldSex = GetLocale, Addon.GetTargetLocale, UnitSex
+    UnitSex = function() return 2 end
+    GetLocale = function() return "frFR" end
+    Addon.GetTargetLocale = function() return "enUS" end
+    local native = [[Allez-donc, mon ami, sans tarder hâtez-vous !
+Pour que notre breuvage, fidèle à mes dosages,
+Tienne plus de la bière que d’un mauvais ragoût,
+Il me manque du houblon pour en faire le brassage.]]
+    local poem = Addon:MatchQuestDialogue(239, 117, "progress", native)
+    check(poem and poem:gsub(" +\n", "\n") == [[Hurry, my friend, move with haste
+In order for our rich lager to taste
+More like beer and less like stew,
+Hops are needed to make the brew.]], "Thunderbrew progress renders four English verses from the captured French")
+    GetLocale, Addon.GetTargetLocale, UnitSex = oldLocale, oldTarget, oldSex
+end
+do
     local getLocale, getTargetLocale, getUnitGUID = GetLocale, Addon.GetTargetLocale, UnitGUID
     local getUnitSex = UnitSex
     local getText, getOptions, getActiveQuests = C_GossipInfo.GetText, C_GossipInfo.GetOptions, C_GossipInfo.GetActiveQuests

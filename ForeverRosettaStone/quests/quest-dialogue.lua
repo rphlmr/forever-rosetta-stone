@@ -21,7 +21,7 @@ local function Normalize(text)
 end
 
 local function Render(template, questID, locale, playerName)
-    template = template:gsub("\\n", "\n"):gsub("%$b%$b", "\n\n")
+    template = template:gsub("\\n", "\n"):gsub("%$b%$b", "\n\n"):gsub("%$b(%u)", "\n%1")
     if playerName then template = template:gsub("%$[Nn]%f[^A-Za-z]", function() return playerName end) end
     local text = Addon:FormatQuestText(template, questID, locale, true)
     if text and not text:find("%$[A-Za-z0-9]") then return text end

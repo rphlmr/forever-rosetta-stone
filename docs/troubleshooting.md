@@ -43,8 +43,8 @@ WoW writes the saved history to disk when reloading or logging out.
 ## Capturing an NPC dialogue menu
 
 While **Inspect something** runs, every NPC dialogue you open is added to the capture list,
-including its sub-menus. You can also keep a dialogue open and choose **Capture dialogue** in the
-Captures tab. Each NPC is one numbered entry that keeps every distinct menu.
+including its sub-menus. Each NPC is one numbered entry that keeps every distinct menu.
+To report the current dialogue directly, use **Options** in its translation panel.
 
 Alternatively, keep the NPC dialogue open and run `/frs gossip`. The console captures the NPC name and GUID,
 client build and language, greeting text, and every option returned by the client, including its
@@ -99,7 +99,7 @@ The console uses your current game language, independently of Forever Rosetta St
 The window has three side tabs and reopens on the last one you used:
 
 - **Captures**: report a problem. **Inspect something** adds hovered surfaces to the numbered
-  list on the left (1 is the oldest). **Capture dialogue** adds the NPC dialogue that is open.
+  list on the left (1 is the oldest).
   Inspecting also records NPC dialogues as they open. Select an entry to see its copyable report.
   **Clear captures**, under the list, empties it and deletes the saved report without leaving the tab.
 - **UI components**: test native tooltips (see below).
