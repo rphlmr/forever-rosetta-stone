@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.3.1] - 2026-11-21
+
 ### Fixed
 
 - Updated the Stormshroud Armor three-piece tooltip in all 18 languages. Melee attacks now have a 3% chance to restore 18 energy.
