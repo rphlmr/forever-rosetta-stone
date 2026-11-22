@@ -20,8 +20,6 @@ Addon.features = {
         description = "Show translated quest text beside map details and NPC quest windows. Map details include a bookmark and controller navigation." },
     { id = "questAutoOpen", name = "Auto-open quest details and offers", group = "Quests",
         description = "Automatically open the translation for map quest details and NPC quest offers. When off, use the bookmark." },
-    { id = "questGreetingAutoOpen", name = "Auto-open NPC greetings", group = "Quests", defaultFrom = "questAutoOpen",
-        description = "Automatically open the translated dialogue when you talk to an NPC. When off, use the bookmark." },
     { id = "questProgressAutoOpen", name = "Auto-open quest progress dialogue", group = "Quests", defaultFrom = "questAutoOpen",
         description = "Automatically open the translation when an NPC asks about an active quest. When off, use the bookmark." },
     { id = "questRewardAutoOpen", name = "Auto-open quest turn-in dialogue", group = "Quests", defaultFrom = "questAutoOpen",
@@ -764,7 +762,7 @@ function Addon:CreateSettingsUI()
     layout:AddInitializer(Settings.CreatePanelInitializer("ForeverRosettaStoneSettingsPreviewTemplate", {}))
 
     local parentFeatures = {
-        questAutoOpen = "questPanel", questGreetingAutoOpen = "questPanel",
+        questAutoOpen = "questPanel",
         questProgressAutoOpen = "questPanel", questRewardAutoOpen = "questPanel",
         rewardComparison = "questPanel", bookAutoOpen = "bookPanel",
     }

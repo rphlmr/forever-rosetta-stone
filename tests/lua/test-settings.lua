@@ -659,11 +659,10 @@ equal(Addon:IsFeatureEnabled("mapContext"), false, "saved opt-out survives repai
 local oldSettings = ForeverRosettaStoneSettings
 ForeverRosettaStoneSettings = { features = { questAutoOpen = false, questRewardAutoOpen = true } }
 Addon:LoadPreferences()
-equal(Addon:IsFeatureEnabled("questGreetingAutoOpen"), false, "new greeting toggle inherits an existing opt-out")
 equal(Addon:IsFeatureEnabled("questProgressAutoOpen"), false, "new progress toggle inherits an existing opt-out")
 equal(Addon:IsFeatureEnabled("questRewardAutoOpen"), true, "existing separate preference takes precedence")
 Addon:SetFeatureEnabled("questAutoOpen", true)
-equal(Addon:IsFeatureEnabled("questGreetingAutoOpen"), false, "the old toggle is independent after initialization")
+equal(Addon:IsFeatureEnabled("questProgressAutoOpen"), false, "the progress toggle is independent after initialization")
 ForeverRosettaStoneSettings = { features = 42 }
 Addon:LoadPreferences()
 equal(Addon:IsFeatureEnabled("questPanel"), true, "invalid saved feature container is repaired")

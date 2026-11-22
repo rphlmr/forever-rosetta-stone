@@ -2,41 +2,16 @@ local _, Addon = ...
 
 local autoOpenSettings = {
     detail = "questAutoOpen",
-    gossip = "questGreetingAutoOpen",
-    greeting = "questGreetingAutoOpen",
     progress = "questProgressAutoOpen",
     reward = "questRewardAutoOpen",
 }
 
 local profiles = Addon:CreateTooltipPlacementProfiles({
     name = "questInteraction",
-    contexts = { gossip = {}, greeting = {}, detail = {}, progress = {}, reward = {} },
+    contexts = { detail = {}, progress = {}, reward = {} },
     mouse = { sideRules = { Addon.TooltipSideRules.screen } },
     gamepad = { sideRules = { Addon.TooltipSideRules.screen } },
 })
-
--- Quests listed by the NPC greeting, in native order: active first, then available.
-local function GetGreetingQuests(context)
-    local quests = {}
-    local function Add(questID)
-        if Addon:IsReadableEntityID(questID) then quests[#quests + 1] = questID end
-    end
-    if context == "gossip" then
-        for _, info in ipairs(C_GossipInfo.GetActiveQuests() or {}) do Add(info.questID) end
-        for _, info in ipairs(C_GossipInfo.GetAvailableQuests() or {}) do Add(info.questID) end
-    elseif context == "greeting" then
-        for index = 1, GetNumActiveQuests() do Add(GetActiveQuestID(index)) end
-        for index = 1, GetNumAvailableQuests() do
-            Add(select(5, GetAvailableQuestInfo(index)))
-        end
-    end
-    return quests
-end
-
-local function ResolveGreeting(source, context)
-    local quests = GetGreetingQuests(context)
-    if #quests > 0 or (context == "gossip" and Addon:IsQuestGossipMenu()) then return source, 0, context, quests end
-end
 
 function Addon:GetQuestInteractionSections(id, quest)
     local sections = {}
@@ -58,10 +33,8 @@ function Addon:GetQuestInteractionSections(id, quest)
 end
 
 -- The parchment texture drawn by the visible native screen.
-function Addon:GetQuestInteractionBackground(source)
-    if source and source == GossipFrame then return source.Background end
-    for _, panel in ipairs({ QuestFrameDetailPanel, QuestFrameProgressPanel, QuestFrameRewardPanel,
-        QuestFrameGreetingPanel }) do
+function Addon:GetQuestInteractionBackground()
+    for _, panel in ipairs({ QuestFrameDetailPanel, QuestFrameProgressPanel, QuestFrameRewardPanel }) do
         if panel and panel:IsVisible() then return panel.Bg end
     end
 end
@@ -83,15 +56,13 @@ function Addon:ResolveQuestInteraction()
             { frame = QuestFrameProgressPanel, context = "progress" },
             { frame = QuestFrameRewardPanel, context = "reward" },
         }) do
-            if screen.frame and screen.frame:IsVisible() then return QuestFrame, GetQuestID(), screen.context end
-        end
-
-        if QuestFrameGreetingPanel and QuestFrameGreetingPanel:IsVisible() then
-            return ResolveGreeting(QuestFrame, "greeting")
+            if screen.frame and screen.frame:IsVisible() then
+                local questID = GetQuestID()
+                if self:IsReadableEntityID(questID) then return QuestFrame, questID, screen.context end
+                return
+            end
         end
     end
-
-    if GossipFrame and GossipFrame:IsVisible() then return ResolveGreeting(GossipFrame, "gossip") end
 end
 
 function Addon:SendQuestInteraction(event)
@@ -187,19 +158,15 @@ function Addon:GetQuestInteractionBookmark()
 end
 
 function Addon:UpdateQuestInteraction()
-    local source, id, context, greetingQuests
+    local source, id, context
 
     if self:IsFeatureEnabled("questPanel") and not self:IsTooltipBlocked()
         and not SettingsPanel:IsShown() and not WorldMapFrame:IsShown() then
-        source, id, context, greetingQuests = self:ResolveQuestInteraction()
+        source, id, context = self:ResolveQuestInteraction()
     end
 
     local quest = self:IsReadableEntityID(id) and self:GetQuest(id)
-    if greetingQuests then
-        for _, questID in ipairs(greetingQuests) do
-            self:RecordDebugSurface(source, "questInteraction", questID, context, nil, self:GetQuest(questID))
-        end
-    elseif source and self:IsReadableEntityID(id) then
+    if source then
         self:RecordDebugSurface(source, "questInteraction", id, context, nil, quest)
     end
 
@@ -239,22 +206,22 @@ function Addon:UpdateQuestInteraction()
     if not self.questInteractionReader then self.questInteractionReader = self:CreateQuestInteractionReader() end
 
     local policy = profiles[context][self:GetTooltipInputMode()]
-    self.questInteractionReader:Layout(source, policy, self:GetQuestInteractionBackground(source))
+    self.questInteractionReader:Layout(source, policy, self:GetQuestInteractionBackground())
     if self.questOfferTooltip and self.questOfferTooltip:IsShown() then self.questOfferTooltip:Hide() end
     if self.gossipOptionTooltip and self.gossipOptionTooltip:IsShown() then self.gossipOptionTooltip:Hide() end
-    self.questInteractionReader:ShowSections(id, context, sections, dialogueKey, missing and not greetingQuests)
+    self.questInteractionReader:ShowSections(id, context, sections, dialogueKey, missing)
 end
 
 Addon:RegisterNameTooltipComponent({
     kind = "questInteraction",
-    defaultContext = "gossip",
+    defaultContext = "detail",
     placementProfiles = profiles,
     supportsFullText = true,
     GetName = function(id, locale)
         local quest = ForeverRosettaStoneDB:GetQuest(id, locale)
         return quest and quest.title
     end,
-    GetPlacementContext = function() return Addon.questInteractionState and Addon.questInteractionState.context or "gossip" end,
+    GetPlacementContext = function() return Addon.questInteractionState and Addon.questInteractionState.context or "detail" end,
     Update = function() Addon:UpdateQuestInteraction() end,
     Hide = function() Addon:SendQuestInteraction({ type = "reset" }) end,
 })
