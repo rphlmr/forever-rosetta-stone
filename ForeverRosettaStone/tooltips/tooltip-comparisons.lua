@@ -78,17 +78,45 @@ local function ReadText(text)
     return canaccessallvalues(text) and type(text) == "string"
 end
 
-local function GetSummaryLines(source, excludeOtherRows)
-    local rows, summary = {}, false
+local function IsSummaryHeading(text)
+    return text == ITEM_DELTA_DESCRIPTION or text == ITEM_DELTA_MULTIPLE_COMPARISON_DESCRIPTION
+end
+
+local function IsSummaryLine(text)
+    return IsSummaryHeading(text) or text:gsub("|c%x%x%x%x%x%x%x%x", ""):match("^%s*[+-]")
+end
+
+local function FindSummaryStart(source)
     for index = 1, source:NumLines() do
         local line = source:GetLeftLine(index)
         local text = line and line:GetText()
-        if ReadText(text) then
-            local heading = text == ITEM_DELTA_DESCRIPTION or text == ITEM_DELTA_MULTIPLE_COMPARISON_DESCRIPTION
-            if heading then summary = true end
-            if summary and (not excludeOtherRows or heading or text:gsub("|c%x%x%x%x%x%x%x%x", ""):match("^%s*[+-]")) then
-                rows[#rows + 1] = { line = line, text = text }
-            end
+        if ReadText(text) and IsSummaryHeading(text) then
+            return index
+        end
+    end
+end
+
+function Addon:HasNewTooltipComparisonRows(source, firstNewLine)
+    local first = FindSummaryStart(source)
+    if not first then return false end
+    if first >= firstNewLine then return true end
+    for index = firstNewLine, source:NumLines() do
+        local line = source:GetLeftLine(index)
+        local text = line and line:GetText()
+        if ReadText(text) and IsSummaryLine(text) then return true end
+    end
+    return false
+end
+
+local function GetSummaryLines(source, excludeOtherRows)
+    local rows = {}
+    local first = FindSummaryStart(source)
+    if not first then return rows end
+    for index = first, source:NumLines() do
+        local line = source:GetLeftLine(index)
+        local text = line and line:GetText()
+        if ReadText(text) and (not excludeOtherRows or IsSummaryLine(text)) then
+            rows[#rows + 1] = { line = line, text = text }
         end
     end
     return rows

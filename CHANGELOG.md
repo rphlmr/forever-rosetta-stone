@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-11-22
+
+### Fixed
+
+- Fixed flickering in stacked item tooltips when another addon adds prices or other details. This applies to both name-only and full translations.
+- Fixed selecting a diagnostic capture after scrolling. The report opens on the right and the capture list keeps its position.
+
 ## [1.7.0] - 2026-11-22
 
 ### Translations

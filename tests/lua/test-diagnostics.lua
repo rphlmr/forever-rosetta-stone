@@ -358,6 +358,26 @@ equal(Addon.debugPicker.full, true, "capture truncation is explicit")
 Addon:ToggleDebugInspection()
 equal(Addon:IsDebugPicking(), false, "the inspection shortcut stops capture")
 equal(dialog.stopPicking:IsShown(), false, "closing does not leave an invisible picker active")
+do
+    local previousHeight = dialog.list:GetHeight()
+    dialog.list:SetHeight(200)
+    dialog.list:UpdateScrollChildRect()
+    dialog.list:SetVerticalScroll(500)
+    local button = dialog.pickedButtons[22]
+    local entry = Addon.debugPicker.entries[22]
+    equal(button:IsMouseEnabled(), true, "scrolled capture row is clickable after inspection")
+    button:OnSmartNavSelect()
+    equal(dialog.list:GetVerticalScroll(), 500, "focusing a visible capture keeps the scrolled position")
+    button:Fire("OnClick")
+    equal(dialog.selectedEntry, entry, "click selects the capture at the scrolled position")
+    equal(dialog.editBox:GetText(), dialog.report, "scrolled selection updates the right pane")
+    equal(dialog.report:find(Addon:GetDebugKindLabel(entry.kind) .. " " .. entry.id, 1, true) ~= nil, true,
+        "right pane shows the selected capture's report")
+    equal(dialog.list:GetVerticalScroll(), 500, "updating the report keeps the capture list in place")
+    dialog.pickedButtons[3]:OnSmartNavSelect()
+    equal(dialog.list:GetVerticalScroll(), 56, "controller focus scrolls up only enough to reveal the row")
+    dialog.list:SetHeight(previousHeight)
+end
 Addon:RunDebugCommand("pick")
 Addon:RecordDebugTooltip(GameTooltip, {type=Enum.TooltipDataType.Spell, id=133,
     lines={{leftText="Spell"}}, restricted={secret=true}})

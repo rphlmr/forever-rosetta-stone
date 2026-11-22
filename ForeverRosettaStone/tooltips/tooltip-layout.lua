@@ -461,7 +461,7 @@ function Addon:ResolveStackedPresentation(source, tip, requested)
     return "below"
 end
 
-function Addon:FillStackedTooltip(source, tip, key, presentation)
+function Addon:FillStackedTooltip(source, tip, key, presentation, nativeShowPending)
     if not source or not tip then return end
     local showHeader = self:ShouldShowTranslationHeader()
     presentation = presentation or self:ResolveStackedPresentation(source, tip, self:GetTooltipPresentation(source))
@@ -553,7 +553,7 @@ function Addon:FillStackedTooltip(source, tip, key, presentation)
     saved.last, saved.numLines = source:NumLines(), source:NumLines()
     self.tooltipRendering = nil
     tip:Hide()
-    if source:IsShown() then RefreshTooltipLayout(source) end
+    if not nativeShowPending and source:IsShown() then RefreshTooltipLayout(source) end
 end
 
 function Addon:SetCompanionTooltipTitle(tip, text, ...)

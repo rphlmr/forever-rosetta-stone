@@ -153,10 +153,13 @@ local function CreateErrorDialog()
     pick:SetPoint("TOPLEFT", window, "TOPLEFT", 24, -70)
     pick:SetText(Addon:DebugText("inspect"))
     pick:SetScript("OnClick", Protect(function() Addon:MoveDebugPicker("start") end))
-    local list = CreateFrame("ScrollFrame", nil, window, "UIPanelScrollFrameTemplate")
+    local list = CreateFrame("EventScrollFrame", nil, window, "ScrollFrameTemplate")
     list:SetPoint("TOPLEFT", window, "TOPLEFT", 22, -142)
     list:SetPoint("BOTTOMLEFT", window, "BOTTOMLEFT", 22, 88)
     list:SetWidth(252)
+    list.ScrollBar:ClearAllPoints()
+    list.ScrollBar:SetPoint("TOPLEFT", list, "TOPRIGHT", 8, 0)
+    list.ScrollBar:SetPoint("BOTTOMLEFT", list, "BOTTOMRIGHT", 8, 0)
     local listChild = CreateFrame("Frame", nil, list)
     listChild:SetSize(252, 1)
     list:SetScrollChild(listChild)
@@ -572,21 +575,40 @@ function Addon:RefreshDebugPickedList()
             label:SetHeight(18)
             label:SetJustifyH("LEFT")
             label:SetWordWrap(false)
+            button:SetScript("OnClick", Protect(function()
+                if button.entry then self:SelectDebugCapture(button.entry) end
+            end))
+            button.OnSmartNavClick = button:GetScript("OnClick")
+            button.OnSmartNavSelect = Protect(function()
+                if InCombatLockdown() then return end
+                local top, bottom = (index - 1) * 28, index * 28
+                local offset, height = dialog.list:GetVerticalScroll(), dialog.list:GetHeight()
+                if top < offset then
+                    dialog.list:SetVerticalScroll(top)
+                elseif bottom > offset + height then
+                    dialog.list:SetVerticalScroll(math.min(bottom - height, dialog.list:GetVerticalScrollRange()))
+                end
+            end)
             dialog.pickedButtons[index] = button
         end
         -- Capture order is the order shown, so the player can tell the first and latest apart.
+        button.entry = entry
         button:SetText(index .. ". " .. self:GetDebugKindLabel(entry.kind) .. " · " .. entry.name)
         if entry == dialog.selectedEntry then button:LockHighlight() else button:UnlockHighlight() end
-        button:SetScript("OnClick", Protect(function() self:SelectDebugCapture(entry) end))
-        button.OnSmartNavClick = button:GetScript("OnClick")
-        button.OnSmartNavSelect = Protect(function()
-            if InCombatLockdown() then return end
-            dialog.list:SetVerticalScroll(math.max(0, (index - 1) * 28 - dialog.list:GetHeight() + 28))
-        end)
         button:Show()
     end
-    for index = #entries + 1, #dialog.pickedButtons do dialog.pickedButtons[index]:Hide() end
-    dialog.listChild:SetHeight(math.max(1, #entries * 28))
+    for index = #entries + 1, #dialog.pickedButtons do
+        local button = dialog.pickedButtons[index]
+        button.entry = nil
+        button:Hide()
+    end
+    local contentHeight = math.max(1, #entries * 28)
+    if dialog.listChild:GetHeight() ~= contentHeight then
+        dialog.listChild:SetHeight(contentHeight)
+        dialog.list:UpdateScrollChildRect()
+    end
+    local offset, range = dialog.list:GetVerticalScroll(), dialog.list:GetVerticalScrollRange()
+    if offset > range then dialog.list:SetVerticalScroll(range) end
     dialog.empty:SetShown(#entries == 0)
     dialog.listTitle:SetText(self:DebugText("captures") .. " · " .. #entries .. "/30")
     -- Clear stays in place when the list is empty so controller focus never jumps away.
