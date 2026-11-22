@@ -302,13 +302,20 @@ local function LayoutNameTooltipGroup(self, group)
     for _, source in ipairs(group) do
         local spec = self.nameTooltips[source]
 
-        if not source:IsForbidden() and source:IsVisible() and source:GetLeft() and source:GetTop() then
-            local rect = self:GetTooltipRect(source)
+        local rect = not source:IsForbidden() and source:IsVisible() and self:GetTooltipRect(source)
+        if rect then
             originals[#originals + 1] = { spec = spec, rect = rect }
             occupied[#occupied + 1] = rect
         elseif spec.tip then
+            self:TransitionTooltipSources(spec.tip, "sources.restore")
             spec.tip:Hide()
         end
+    end
+
+    if #originals == 0 then
+        self:TransitionTooltipSources(group, "sources.restore")
+        self:EndBenchmarkSample(primary.kind .. ".layout", primary.id, started, false, primary.source)
+        return
     end
 
     local policy = self:GetTooltipPlacementPolicy(primary.source)

@@ -735,7 +735,10 @@ function Addon:GetTooltipAnchorContext(source)
     local owner = source.GetOwner and source:GetOwner()
     local placements = spec and (spec.group and spec.group.sourcePlacements or spec.tip and spec.tip.sourcePlacements)
     for _, placement in ipairs(placements or {}) do
-        if placement.source == source and placement.owner == owner then original = placement.rect; break end
+        if placement.source == source and placement.owner == owner then
+            original = original and (placement.rect or original)
+            break
+        end
     end
     local fixedSide
     local anchor = source.GetAnchorType and source:GetAnchorType()
@@ -773,10 +776,12 @@ end
 function Addon:GetTooltipRect(frame)
     if not frame or frame:IsForbidden() then return end
     local left, top = frame:GetLeft(), frame:GetTop()
-    if not left or not top then return end
+    if not canaccessallvalues(left, top) or not left or not top then return end
     local scale = frame:GetEffectiveScale()
-    return { frame = frame, left = left * scale, right = (left + frame:GetWidth()) * scale,
-        top = top * scale, bottom = (top - frame:GetHeight()) * scale }
+    local width, height = frame:GetWidth(), frame:GetHeight()
+    if not canaccessallvalues(scale, width, height) then return end
+    return { frame = frame, left = left * scale, right = (left + width) * scale,
+        top = top * scale, bottom = (top - height) * scale }
 end
 
 -- Automatic companions try the opposite side at an edge without moving the native tooltip.

@@ -553,7 +553,13 @@ TooltipDataProcessor = {
         tooltipCallbacks[#tooltipCallbacks + 1] = callback
     end,
 }
-function canaccessallvalues(value) return type(value) ~= "table" or not value.secret end
+function canaccessallvalues(...)
+    for index = 1, select("#", ...) do
+        local value = select(index, ...)
+        if type(value) == "table" and value.secret then return false end
+    end
+    return true
+end
 EventRegistry = { callbacks = {} }
 function EventRegistry:RegisterCallback(event, callback, owner)
     self.callbacks[event] = self.callbacks[event] or {}
