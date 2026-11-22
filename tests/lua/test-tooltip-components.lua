@@ -1208,8 +1208,77 @@ Addon:SetTooltipMode("stacked")
 emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 999999999 })
 equal(VisibleTooltipLines(GameTooltip), 2, "native rebuild removes old stacked rows before an unknown spell")
 equal(Addon.stackedTooltips[GameTooltip], nil, "native rebuild discards stale stacked rendering state")
+
+local previousDurability = DURABILITY_TEMPLATE
+ClientApi.InstallGlobals("frFR", { "DURABILITY_TEMPLATE" })
+local itemRefTranslation = Addon.nameTooltips[ItemRefTooltip].tip
+local previousItemRefLines = itemRefTranslation.accurateLines
+itemRefTranslation.accurateLines = true
+local function TestEarlyItemTranslation(source, itemID, nativeTitle, translatedTitle, nameOnly)
+    local nativeShow, showCount = source.Show, 0
+    function source:Show()
+        showCount = showCount + 1
+        return nativeShow(self)
+    end
+    local saved
+    for refresh = 1, 2 do
+        showCount = 0
+        emit(source, { type = Enum.TooltipDataType.Item, id = itemID },
+            { { type = 0, leftText = "Durabilité 16 / 16" } }, nativeTitle)
+        equal(showCount, 0, "building the translation leaves native Show to the client")
+        saved = Addon.stackedTooltips[source]
+        equal(saved and source:GetLeftLine(saved.first + 2):GetText(), translatedTitle,
+            "the item name is translated before another add-on can show the tooltip")
+        equal(source:GetLeftLine(saved.last):GetText(), nameOnly and translatedTitle or "Durability 16 / 16",
+            "the early item translation respects the selected coverage")
+        source:AddDoubleLine("Owned:", "1")
+        source:AddDoubleLine("Auction x1:", "1")
+        source:AddDoubleLine("Scanned:", "just now")
+        source:Show() -- An item post-call can show its price rows.
+        source:Show() -- Blizzard shows the tooltip after all post-calls.
+        context.flushTimers()
+        equal(showCount, 2, "FRS does not add a Show on initial display or native rebuild")
+        equal(Addon.stackedTooltips[source], saved, "late addon rows keep the existing translation block")
+        equal(source:GetRightLine(source:NumLines()):GetText(), "just now",
+            "late addon rows preserve both columns")
+    end
+    source.Show = nativeShow
+    Addon:SetTooltipMode("separate")
+    equal(source:GetLeftLine(saved.last):GetText(), "", "mode switch clears the translation")
+    equal(source:GetRightLine(source:NumLines()):GetText(), "just now", "mode switch preserves late addon rows")
+    source:Hide()
+    Addon:SetTooltipMode("stacked")
+end
+for _, nameOnly in ipairs({ true, false }) do
+    Addon:SetTooltipNameOnly("item", nameOnly)
+    prepare(nil, "GetBagItem", { 0, 1 })
+    TestEarlyItemTranslation(GameTooltip, 6256, "Canne à pêche", "Fishing Pole", nameOnly)
+    prepare(nil, "GetInventoryItem", { "player", 7 })
+    TestEarlyItemTranslation(GameTooltip, 2852, "Pantalon en anneaux de cuivre", "Copper Chain Pants", nameOnly)
+    prepare(nil, "GetMerchantItem", { 1 })
+    TestEarlyItemTranslation(GameTooltip, 6256, "Canne à pêche", "Fishing Pole", nameOnly)
+    ItemRefTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+    ItemRefTooltip.processingInfo = { getterName = "GetHyperlink", getterArgs = { "item:2852" } }
+    TestEarlyItemTranslation(ItemRefTooltip, 2852, "Pantalon en anneaux de cuivre", "Copper Chain Pants", nameOnly)
+end
+itemRefTranslation.accurateLines = previousItemRefLines
+DURABILITY_TEMPLATE = previousDurability
+
 local previousArmor, previousDelta = ARMOR, ITEM_DELTA_DESCRIPTION
 ClientApi.InstallGlobals("frFR", {"ARMOR", "ITEM_DELTA_DESCRIPTION"})
+prepare(nil, "GetBagItem", { 0, 1 })
+emit(GameTooltip, { type = Enum.TooltipDataType.Item, id = 6256 }, {}, "Canne à pêche")
+GameTooltip:AddLine(ITEM_DELTA_DESCRIPTION, 1, 0.82, 0, true)
+GameTooltip:AddLine("|cff00ff00+35|r Armure", 1, 1, 1)
+show()
+local bagComparison = RenderedTooltipRows(GameTooltip)
+equal(bagComparison[#bagComparison], "|cff00ff00+35|r Armor",
+    "full bag translation still refreshes for a late native comparison summary")
+local savedBagComparison = Addon.stackedTooltips[GameTooltip]
+GameTooltip:AddDoubleLine("Auction x1:", "1")
+show()
+equal(Addon.stackedTooltips[GameTooltip], savedBagComparison,
+    "late prices do not refresh a full bag translation with an existing comparison")
 prepare()
 emit(GameTooltip, { type = Enum.TooltipDataType.Item, id = 117 }, {})
 show()

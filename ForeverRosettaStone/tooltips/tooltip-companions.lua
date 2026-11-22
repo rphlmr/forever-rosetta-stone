@@ -222,6 +222,10 @@ local function LayoutReplacementComparisons(self, group)
     end
 end
 
+local function StackedKey(self, spec, coverage)
+    return table.concat({ spec.kind, spec.id, self:GetTargetLocale(), coverage }, ":")
+end
+
 local function LayoutNameTooltipGroup(self, group)
     local restoreBlocked = false
     local requested = self:GetTooltipPresentation(group[1])
@@ -246,11 +250,20 @@ local function LayoutNameTooltipGroup(self, group)
             if not self:IsTooltipBlocked() and not source:IsForbidden() and source:IsVisible()
                 and spec.name and self:IsFeatureEnabled(self:GetTooltipCategory(spec.kind, spec.data) .. "Tooltip") then
                 local stacked = self.stackedTooltips and self.stackedTooltips[source]
-                local key = table.concat({ spec.kind, spec.id,
-                    self:GetTargetLocale(), self:GetTooltipCoverage(spec.kind, spec.data) }, ":")
+                local coverage = self:GetTooltipCoverage(spec.kind, spec.data)
+                local key = StackedKey(self, spec, coverage)
                 local presentation = self:ResolveStackedPresentation(source, spec.tip, requested)
+                local numLines = source:NumLines()
+                if stacked and stacked.owner == spec.tip and stacked.key == key
+                    and stacked.presentation == "below" and presentation == "below"
+                    and spec.kind == "item" and numLines > stacked.numLines
+                    and (coverage == "name" or not self:HasNewTooltipComparisonRows(source, stacked.numLines + 1)) then
+                    -- Item details come from native data. Only a live comparison can
+                    -- add translatable rows after this block has already been built.
+                    stacked.numLines = numLines
+                end
                 if not stacked or stacked.owner ~= spec.tip or stacked.key ~= key
-                    or source:NumLines() ~= stacked.numLines or stacked.presentation ~= presentation
+                    or numLines ~= stacked.numLines or stacked.presentation ~= presentation
                     or (stacked.contentDirty and not (spec.tip.hiddenOriginal and spec.tip.hiddenOriginal.fading)) then
                     if stacked then self:ClearStackedTooltip(source) end
                     self:FillNameTooltip(spec, presentation)
@@ -354,7 +367,7 @@ local function ClearSource(self, source)
     spec.kind, spec.id, spec.name, spec.data = nil, nil, nil, nil
 end
 
-local function ResolveData(self, source, data)
+local function ResolveData(self, source, data, nativeShowPending)
     if not canaccessallvalues(data) or type(data) ~= "table" then
         if self.RecordAuraResolution then self:RecordAuraResolution("tooltip-payload-unavailable") end
         ClearSource(self, source)
@@ -378,6 +391,16 @@ local function ResolveData(self, source, data)
             self:UpdateNameTooltip(source, component.kind, id, color, true)
             local spec = self.nameTooltips[source]
             if not spec.name and spec.tip then spec.tip:Hide() end
+            -- Finish the primary item translation before Blizzard and later post-calls show it.
+            -- Comparison tooltips still render after the client appends their stat summary.
+            if nativeShowPending and spec.name and spec.kind == "item" and source == spec.group[1]
+                and canaccessallvalues(info) and type(info) == "table"
+                and canaccessallvalues(info.tooltipData, info.append) and info.tooltipData == data and not info.append
+                and self:GetTooltipPresentation(source) == "below" then
+                self:FillNameTooltip(spec, "below")
+                local coverage = self:GetTooltipCoverage(spec.kind, data)
+                self:FillStackedTooltip(source, spec.tip, StackedKey(self, spec, coverage), "below", true)
+            end
             return
         end
     end
@@ -403,7 +426,7 @@ function Addon:SendTooltipEvent(group, event)
             ClearSource(self, effect.source)
             if event.type == "native.hidden" then self.nameTooltips[effect.source].sharedTextCache = nil end
         elseif effect.type == "resolve.data" then
-            ResolveData(self, effect.source, effect.data)
+            ResolveData(self, effect.source, effect.data, event.nativeShowPending)
         elseif effect.type == "resolve.owner" then
             for _, component in ipairs(components) do
                 local id = component.ResolveOwner(effect.source)
@@ -629,6 +652,6 @@ function Addon:CreateNameTooltips()
         end
         if Addon.lifecycle ~= "ready" or not Addon.nameTooltips[source] or source:IsForbidden() then return end
         Addon:Run("translate tooltip data", Addon.SendTooltipEvent, Addon, Addon.nameTooltips[source].group,
-            { type = "native.data", source = source, data = data })
+            { type = "native.data", source = source, data = data, nativeShowPending = true })
     end)
 end
