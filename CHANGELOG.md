@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [1.8.1] - 2026-11-23
+
+### Fixed
+
+- Fixed an error that paused all translations when WoW restricted access to a tooltip's position.
+
 ## [1.8.0] - 2026-11-22
 
 ### Fixed

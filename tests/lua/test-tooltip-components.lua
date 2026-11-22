@@ -1056,6 +1056,27 @@ GameTooltip:SetOwner(UIParent, "ANCHOR_NONE")
 GameTooltip:Hide()
 Addon.panel:Hide()
 
+do
+    local getLeft = GameTooltip.GetLeft
+    local restricted = { secret = true }
+    for _, mode in ipairs({ "stacked", "separate" }) do
+        Addon:SetTooltipMode(mode)
+        prepare()
+        GameTooltip.GetLeft = function() return restricted end
+        emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 133 })
+        show()
+        equal(Addon.lifecycle, "ready", "secret tooltip coordinate leaves the addon running in " .. mode)
+        equal(GameTooltip.lines[1], "Native title", "secret tooltip coordinate preserves the native title")
+        equal(spec.tip:IsShown(), false, "secret tooltip coordinate leaves no separate companion")
+        GameTooltip.GetLeft = getLeft
+    end
+    prepare()
+    emit(GameTooltip, { type = Enum.TooltipDataType.Spell, id = 133 })
+    show()
+    equal(spec.tip:IsShown(), true, "readable tooltip coordinates still show the companion")
+    GameTooltip:Hide()
+end
+
 spec.tip.accurateLines = true
 local preview = Addon.settingsPanel.TooltipPreview
 Addon:OpenSettings()

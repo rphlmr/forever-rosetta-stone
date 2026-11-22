@@ -121,18 +121,23 @@ Addon.itemComparisonPlacements = Addon:CreateTooltipPlacementProfiles({
 })
 
 local function LayoutGroup(group, originals, restoreBlocked)
+        local geometryAvailable = true
         for _, original in ipairs(originals) do
             if original.spec.tip then Addon:TransitionTooltipSources(original.spec.tip, "sources.restore") end
             local source = original.spec.source
             original.liveRect = Addon:GetTooltipRect(source)
             local anchor = Addon:GetTooltipAnchorContext(source).native
+            if not original.liveRect or not anchor then
+                geometryAvailable = false
+                break
+            end
             local width = original.liveRect.right - original.liveRect.left
             local height = original.liveRect.top - original.liveRect.bottom
             original.rect = { left = anchor.left, right = anchor.left + width, top = anchor.top, bottom = anchor.top - height }
         end
-        local shown = not (restoreBlocked and not group.sourcePlacements)
+        local shown = geometryAvailable and not (restoreBlocked and not group.sourcePlacements)
             and LayoutComparisonTooltipRow(group, originals, "item")
-        if not shown and InCombatLockdown() then
+        if not shown and geometryAvailable and InCombatLockdown() then
             for _, original in ipairs(originals) do original.rect = original.liveRect end
             shown = LayoutCombatComparisonTranslations(originals, "item")
         end
