@@ -296,7 +296,7 @@ do
     C_GossipInfo.GetText, C_GossipInfo.GetOptions, C_GossipInfo.GetActiveQuests = getText, getOptions, getActiveQuests
 end
 check(Addon:TransitionQuestInteraction(hidden, { type = "dismiss" }) == hidden, "hidden refuses dismissal")
-check(Addon:TransitionQuestInteraction(hidden, { type = "present", questID = 179, context = "gossip" }) == hidden,
+check(Addon:TransitionQuestInteraction(hidden, { type = "present", questID = 179, context = "detail" }) == hidden,
     "selection without a native source cannot become visible")
 check(Addon:TransitionQuestInteraction(hidden, { type = "present", source = GossipFrame,
     questID = 179, context = "unknown" }) == hidden, "unknown screen cannot become visible")
@@ -319,11 +319,12 @@ check(Addon:Transition({ mode = "collapsed", questID = 179 }, "quest.select", 39
     "without auto-open another journal quest keeps the bookmark")
 check(Addon:Transition({ mode = "open", questID = 179 }, "quest.select", 399).mode == "open",
     "an opened journal reader follows the selected quest")
+local function CheckNoNpcCompanion(label)
+    local reader, bookmark = Addon.questInteractionReader, Addon.questInteractionBookmark
+    check(not (reader and reader.frame:IsShown()) and not (bookmark and bookmark:IsShown()), label)
+end
 Addon:UpdateQuestInteraction()
-check(Addon.questInteractionReader.frame:IsShown()
-    and Addon.questInteractionReader.body.lastSections[1].text == Addon:GetQuest(179).title,
-    "a listed quest has a translated title without a missing greeting notice")
-Addon:SendQuestInteraction({ type = "reset" })
+CheckNoNpcCompanion("gossip with a listed quest has no translation window or bookmark")
 do
     local nativeViewport = CreateFrame("Frame", nil, GossipFrame)
     nativeViewport.left, nativeViewport.top = GossipFrame:GetLeft() + 8, GossipFrame:GetTop() - 65
@@ -414,30 +415,14 @@ do
         C_GossipInfo.GetText = function() return "Native greeting without a verified route" end
         Addon.preferences.features.questAutoOpen = true
         Addon:UpdateQuestInteraction()
-        local reader = Addon.questInteractionReader
-        check(not reader.frame:IsShown() and not Addon.questInteractionBookmark:IsShown(),
-            "service gossip hides both reader and bookmark even with owned translations")
+        CheckNoNpcCompanion("service gossip has no companion even with owned translations")
         local flags, util = Enum.GossipOptionRecFlags, FlagsUtil
         Enum.GossipOptionRecFlags = { QuestLabelPrepend = 4 }
         FlagsUtil = { IsSet = function(value, flag) return math.floor(value / flag) % 2 == 1 end }
         unknownMenu[2].flags = 4
         Addon:UpdateQuestInteraction()
-        check(reader.frame:IsShown(), "a quest-marked gossip opens without a listed quest")
-        C_GossipInfo.SelectOption(95532)
-        unknownMenu[2].flags = 0
-        Addon.npcGossipTracking:Fire("OnEvent", "GOSSIP_SHOW")
-        check(Addon:IsQuestGossipMenu(), "the direct reply to a selected quest option retains its quest context")
-        Addon.npcGossipTracking:Fire("OnEvent", "GOSSIP_CLOSED")
-        check(not Addon:IsQuestGossipMenu(), "reopening the service menu clears the quest context")
+        CheckNoNpcCompanion("a quest-marked option still belongs to the native gossip menu")
         Enum.GossipOptionRecFlags, FlagsUtil = flags, util
-        reader.options:Fire("OnClick")
-        reader.options.contextMenu.entries[2].onClick()
-        local dialog = Addon.questReport
-        check(dialog.state == "ready" and dialog.record.gossip.options[2].gossipOptionID == 95532
-            and dialog.record.gossip.text == C_GossipInfo.GetText(),
-            "the dialogue report includes the original text and option IDs")
-        dialog.frame:Hide()
-        Addon:SendQuestInteraction({ type = "reset" })
         C_GossipInfo.GetText, GetLocale, UnitGUID = getText, getLocale, unitGUID
         UnitSex, UnitName = unitSex, unitName
 
@@ -451,14 +436,8 @@ do
         GossipFrame.gossipOptions = nil
         C_GossipInfo.GetOptions, active = getOptions, savedActive
     end
-    Addon.questInteractionContentProvider = function(source, id, context)
-        if source == GossipFrame and id == 0 and context == "gossip" then
-            return { { text = "Translated greeting", gap = 0 } }, "first-greeting"
-        end
-    end
-    Addon.preferences.features.questAutoOpen = true
-    local savedOptions = C_GossipInfo.GetOptions
-    local flight = { gossipOptionID = 97329, orderIndex = 0, name = "Je dois voyager.", icon = 132057 }
+    local getOptions = C_GossipInfo.GetOptions
+    local flight = { gossipOptionID = 97329, orderIndex = 0, name = "Je dois voyager." }
     C_GossipInfo.GetOptions = function() return { flight } end
     local option = CreateFrame("Button", nil, nativeViewport)
     option:SetText(flight.name)
@@ -470,63 +449,12 @@ do
     quest.left, quest.top = 30, 665
     quest:SetSize(278, 20)
     controls.setMouseFoci({ option, quest })
-    Addon:UpdateGossipOptionTooltip()
-    Addon:UpdateQuestOfferTooltip()
-    local optionTip, offerTip = Addon.gossipOptionTooltip, Addon.questOfferTooltip
-    check(optionTip:IsShown() and offerTip:IsShown(),
-        "both focused native rows offer tooltips while the translation reader is closed")
-    local optionShow, offerShow = optionTip.Show, offerTip.Show
-    local shows = 0
-    optionTip.Show = function(self) shows = shows + 1; optionShow(self) end
-    offerTip.Show = function(self) shows = shows + 1; offerShow(self) end
     Addon:UpdateTooltipComponents()
-    check(shows == 0 and not optionTip:IsShown() and not offerTip:IsShown(),
-        "automatic reader opening hides both native row tooltips without showing either again")
-    optionTip.Show, offerTip.Show = optionShow, offerShow
-
-    local gossipReader = Addon.questInteractionReader
-    local gossipBookmark = Addon.questInteractionBookmark
-    check(gossipReader.frame:IsShown() and gossipReader.options:IsShown(),
-        "a translated greeting offers the same Options button as the missing greeting")
-    local _, _, _, barX, barY = gossipReader.body.frame.ScrollBar:GetPoint(1)
-    check(barX == 314 and barY == -68, "the shared reader keeps the gossip scrollbar alignment")
-    gossipReader.frame.CloseButton:Fire("OnClick")
-    check(not gossipReader.frame:IsShown() and GossipFrame:IsShown() and gossipBookmark:IsShown(),
-        "the gossip close button collapses to the shared bookmark")
-    Addon:UpdateTooltipComponents()
-    check(gossipBookmark:IsShown() and not gossipReader.frame:IsShown(), "refresh preserves gossip dismissal")
-    check(optionTip:IsShown() and offerTip:IsShown(), "native row tooltips return when the reader is closed")
-    gossipBookmark:Fire("OnClick")
-    check(gossipReader.frame:IsShown() and not optionTip:IsShown() and not offerTip:IsShown(),
-        "opening the bookmark immediately hides both native row tooltips")
-    gossipReader.frame.CloseButton:Fire("OnClick")
-    C_GossipInfo.GetOptions = savedOptions
+    CheckNoNpcCompanion("updating a mixed menu does not open the quest companion")
+    check(Addon.gossipOptionTooltip:IsShown() and Addon.questOfferTooltip:IsShown(),
+        "both focused native rows retain their translation tooltips")
+    C_GossipInfo.GetOptions = getOptions
     controls.setMouseFoci({})
-    controls.setGamepad(true)
-    Addon:UpdateQuestInteraction()
-    local manager = GamepadMode.FrameControlsManager
-    manager:FrameHidden(gossipBookmark.host)
-    manager:FrameShown(gossipBookmark.host, false, true)
-    gossipBookmark:Fire("OnClick")
-    check(gossipReader.frame:IsShown() and manager.focusedFrame == gossipReader.frame,
-        "reopening a greeting hands focus to the shared reader")
-    gossipReader.options.contextMenu = nil
-    gossipReader.options:Fire("OnClick")
-    check(not gossipReader.options.contextMenu and Addon.questReport.state == "ready",
-        "controller Options opens the dialogue report directly")
-    Addon.questReport.frame:Hide()
-    check(manager.focusedFrame == gossipReader.frame, "the dialogue report returns controller focus to the reader")
-    check(gossipReader.frame.SmartNavigationCloseHandler() and gossipBookmark:IsShown() and GossipFrame:IsShown(),
-        "Back on the greeting reader returns to its bookmark")
-    controls.setGamepad(false)
-    Addon.preferences.features.questGreetingAutoOpen = false
-    Addon:SendQuestInteraction({ type = "reset" })
-    Addon:UpdateQuestInteraction()
-    check(not gossipReader.frame:IsShown() and gossipBookmark:IsShown(),
-        "the greeting checkbox independently leaves the starting dialogue on its bookmark")
-    Addon.preferences.features.questGreetingAutoOpen = true
-    Addon.preferences.features.questAutoOpen = false
-    Addon.questInteractionContentProvider = nil
 end
 GossipFrame:Hide()
 QuestFrame:Show()
@@ -553,7 +481,7 @@ do
     QuestTitleButton1, CurrentQuestsText = originalRow, originalHeading
 end
 Addon:UpdateQuestInteraction()
-check(Addon.questInteractionReader.frame:IsShown(), "legacy quest greetings show their translated quest titles")
+CheckNoNpcCompanion("a legacy quest greeting with a listed quest has no companion")
 QuestFrameGreetingPanel:Hide()
 
 -- A quest screen with translated text is the companion's vehicle from here on.
@@ -1008,6 +936,14 @@ local _, nativeBarAnchor, _, nativeBarX, nativeBarY = reader.body.frame.ScrollBa
 check(nativeBarAnchor == reader.frame and nativeBarX == 310 and nativeBarY == -68,
     "our scroll bar sits exactly where the native one does")
 QuestDetailScrollFrame, QuestInfoTitleHeader = previousScroll, previousTitle
+QuestFrameDetailPanel:Hide()
+QuestFrameGreetingPanel:Show()
+Addon:UpdateQuestInteraction()
+CheckNoNpcCompanion("returning from an open quest offer to the NPC greeting clears the companion")
+QuestFrameGreetingPanel:Hide()
+QuestFrameDetailPanel:Show()
+Addon:UpdateQuestInteraction()
+check(reader.frame:IsShown(), "selecting a quest from the native greeting opens its companion again")
 GetQuestID = function() return 0 end
 Addon:UpdateQuestInteraction()
 check(not reader.frame:IsShown(), "invalid native quest ID clears reader instead of reusing map selection")

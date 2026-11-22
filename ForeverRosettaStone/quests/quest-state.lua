@@ -29,11 +29,8 @@ function Addon:TransitionQuestInteraction(current, event)
     end
 
     if event.type == "present" then
-        local contexts = { gossip = true, greeting = true, detail = true, progress = true, reward = true }
-
-        local greeting = (event.context == "gossip" or event.context == "greeting")
-            and event.questID == 0 and type(event.dialogueKey) == "string"
-        if not event.source or not contexts[event.context] or (not greeting and not self:IsReadableEntityID(event.questID)) then
+        local contexts = { detail = true, progress = true, reward = true }
+        if not event.source or not contexts[event.context] or not self:IsReadableEntityID(event.questID) then
             return current
         end
 

@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.6.1] - 2026-11-22
+
+### Changed
+
+- The companion panel opens on quest offer, progress and turn-in screens. NPC greeting menus stay in the native window, even when they list quests.
+- Removed the automatic opening setting for NPC greetings.
+
 ## [1.6.0] - 2026-11-22
 
 ### Changed

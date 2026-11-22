@@ -184,8 +184,19 @@ for _, gamepad in ipairs({ false, true }) do
     captured("questOffer", 179)
     WorldMapFrame:Hide()
     Addon:UpdateQuestInteraction()
+    check(not Addon.debugPicker.byID["questInteraction:179"], "gossip does not capture a quest interaction")
+    local oldQuestFrame, oldDetailPanel, oldQuestID = QuestFrame, QuestFrameDetailPanel, GetQuestID
+    GossipFrame:Hide()
+    QuestFrame = CreateFrame("Frame", nil, UIParent)
+    QuestFrame:SetSize(338, 496)
+    QuestFrame.left, QuestFrame.top = 20, 800
+    QuestFrameDetailPanel = CreateFrame("Frame", nil, QuestFrame)
+    GetQuestID = function() return 179 end
+    Addon:UpdateQuestInteraction()
     captured("questInteraction", 179)
     Addon:SendQuestInteraction({ type = "reset" })
+    QuestFrame:Hide()
+    QuestFrame, QuestFrameDetailPanel, GetQuestID = oldQuestFrame, oldDetailPanel, oldQuestID
     GossipFrame, C_GossipInfo = oldGossip, oldGossipInfo
     check(Addon.debugPicker.captureError == nil, "all capture paths complete without errors")
     Addon:MoveDebugPicker("stop")
