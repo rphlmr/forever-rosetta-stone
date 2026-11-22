@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+## [1.7.0] - 2026-11-22
+
+### Translations
+
+- Added 273 localized dialogue entries across nine languages for 41 existing quests, covering 40 turn-ins and one progress screen.
+
+### Fixed
+
+- Show the correct Human-specific progress and turn-in dialogue for Abominable Creatures.
+
 ## [1.6.1] - 2026-11-22
 
 ### Changed

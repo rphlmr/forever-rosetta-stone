@@ -11,6 +11,8 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
   [Wago.tools](https://wago.tools/db2), including builds `1.60.1.70862`, `1.60.1.70888` and `1.60.1.70938`.
 - [Spoken](https://spoken.quest/) supplied contributed Forever quest dialogue and matching
   localized wording. Catalog fields retain the source snapshot, and dialogue contexts retain the contribution ID.
+- [WoW Forever GG](https://wow-forever.gg/db/quests/95250-abominable-creatures/) supplied the English
+  Human progress and completion dialogue for Abominable Creatures.
 - [EG Link](https://github.com/JIVESCORP/eg-link-output-wowf) compiles native NPC and item cache text
   and observed book pages used by our import.
   Data from Efficient Games (https://efficient.games), licensed under
