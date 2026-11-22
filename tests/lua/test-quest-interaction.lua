@@ -137,6 +137,31 @@ Hops are needed to make the brew.]], "Thunderbrew progress renders four English 
     check(Addon:MatchQuestDialogue(464, 129, "complete", turnIn:gsub("Comté%-du%-Lac", "Lakeshire"))
         == "Thanks, I could really use the meal.  Guarding Lakeshire from the orcs and gnolls is tough work!",
         "changing the native location name does not hide the single known turn-in translation")
+
+    local trumanProgress = "C’est un plaisir de vous voir en un seul morceau ! Comment se déroule la bataille ? Avez-vous vu mon seigneur ?"
+    check(Addon:MatchQuestDialogue(265701, 95250, "progress", trumanProgress)
+        == "Good to see you're still alive and kicking! How fares the battle? Have you seen my lord?",
+        "Captain Truman's captured Human progress selects the Human English branch")
+
+    local trumanReward = [[<Truman fixe la tête de son ancien seigneur avec horreur et dégoût.>
+
+Est-ce que… c’est une mauvaise plaisanterie ? Pourquoi m’apportez-vous la tête de cette monstruosité ?
+
+Hors de ma vue ! J’aurais dû me douter qu’on ne pouvait pas faire confiance à quelqu’un qui s’allie à la vermine de votre espèce. Les véritables fils de Lordaeron reprendront notre patrie. Et lorsque ce jour viendra, nous en éliminerons enfin ces bêtes et tous ceux qui, comme vous, pactisent avec elles !]]
+    local humanReward = Addon:MatchQuestDialogue(265701, 95250, "complete", trumanReward:gsub("\n", "\r\n"))
+    local otherReward = Addon:MatchQuestDialogue(265701, 95250, "complete",
+        trumanReward:gsub("à quelqu’un qui s’allie à la vermine", "à la vermine"))
+    check(humanReward and humanReward:find("someone who allies themselves", 1, true)
+        and otherReward and otherReward:find("a filthy lesser breed like you", 1, true),
+        "Captain Truman's completion resolves to the two distinct English branches")
+    check(not Addon:MatchQuestDialogue(265701, 95250, "complete", "Un texte inconnu"),
+        "unrecognized Captain Truman completion preserves the native text")
+    local blastingPowder = Addon:MatchQuestDialogue(1256, 95213, "complete", "Où avez-vous trouvé ça ?")
+    check(blastingPowder and blastingPowder:find("<The dwarf turns pale", 1, true),
+        "Stolen Blasting Powder describes the questgiver as a dwarf regardless of the player's race")
+    local twistedHatred = Addon:MatchQuestDialogue(3567, 98403, "progress", "Xethorr court-il toujours ?")
+    check(twistedHatred == "<Tallonkai lowers his voice.>\n\nDoes Xethorr still walk freely?",
+        "Twisted Hatred retains the stage direction and spoken line on the progress screen")
     GetLocale, Addon.GetTargetLocale, UnitSex = oldLocale, oldTarget, oldSex
 end
 do
