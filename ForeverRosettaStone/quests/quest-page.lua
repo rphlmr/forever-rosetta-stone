@@ -9,13 +9,16 @@ local function GetRewardName(source)
     local query = source.type == "choice" and GetQuestLogChoiceInfo or GetQuestLogRewardInfo
     local itemID = select(6, query(source:GetID()))
 
-    return ForeverRosettaStoneDB:GetItemName(itemID, Addon:GetTargetLocale()) or source.Name:GetText()
+    local translated = ForeverRosettaStoneDB:GetItemName(itemID, Addon:GetTargetLocale())
+    return translated or source.Name:GetText(), translated ~= nil
 end
 
-function Addon:CopyQuestTextStyle(target, source, ...)
+function Addon:CopyQuestTextStyle(target, source, locale, ...)
     if not target or not source then return end
     local font, size, flags = source:GetFont(...)
-    if font and size then target:SetFont(font, size, flags) end
+    if font and size and not Addon:TryLocalizedFont(target, locale, size, flags) then
+        target:SetFont(font, size, flags)
+    end
     target:SetTextColor(source:GetTextColor(...))
     target:SetShadowColor(source:GetShadowColor(...))
     target:SetShadowOffset(source:GetShadowOffset(...))
@@ -122,8 +125,10 @@ function Addon:CreateNativeQuestBody(parent, contentWidth)
         end
     end
 
-    function body:SetSections(sections)
+    function body:SetSections(sections, locale)
         self.lastSections = sections
+        self.locale = locale
+        local wrapWithoutSpaces = Addon:UsesLocalizedFont(locale)
         local width = self.contentWidth or contentWidth or QUEST_TEMPLATE_MAP_DETAILS.contentWidth
         local leftInset = self.textInsetX or 5
         contents:SetWidth(width + leftInset)
@@ -143,10 +148,11 @@ function Addon:CreateNativeQuestBody(parent, contentWidth)
 
             offset = offset + section.gap
             if section.textType then
-                Addon:CopyQuestTextStyle(text, section.source, section.textType)
+                Addon:CopyQuestTextStyle(text, section.source, locale, section.textType)
             else
-                Addon:CopyQuestTextStyle(text, section.source)
+                Addon:CopyQuestTextStyle(text, section.source, locale)
             end
+            text:SetNonSpaceWrap(wrapWithoutSpaces)
             text:ClearAllPoints()
             local indent = section.indent or 0
             text:SetWidth(math.max(1, width - indent))
@@ -183,7 +189,7 @@ function Addon:CreateNativeQuestBody(parent, contentWidth)
     end
 
     self:SetScript(scroll, "OnSizeChanged", function()
-        if body.lastSections then body:SetSections(body.lastSections) end
+        if body.lastSections then body:SetSections(body.lastSections, body.locale) end
     end)
 
     return body
@@ -294,10 +300,11 @@ function Addon:CreateQuestPage(parent)
         body.spacerHeight = height
         body:UpdateScrollRange()
         AdjustRewards()
-        Addon:CopyQuestTextStyle(label, native.RewardsFrame.Label)
+        local locale = not self.missingQuest and Addon:GetTargetLocale() or nil
+        Addon:CopyQuestTextStyle(label, native.RewardsFrame.Label, locale)
         label:SetText(self.missingQuest and native.RewardsFrame.Label:GetText() or Addon:GetQuestLabel("rewards"))
         label:SetShown(self.missingQuest or native.RewardsFrame.Label:IsShown())
-        Addon:CopyQuestTextStyle(receive, MapQuestInfoRewardsFrame.ItemReceiveText)
+        Addon:CopyQuestTextStyle(receive, MapQuestInfoRewardsFrame.ItemReceiveText, locale)
         receive:SetText(self.missingQuest and REWARD_ITEMS_ONLY or Addon:GetQuestLabel("receive"))
         receive:SetShown(self.missingQuest or MapQuestInfoRewardsFrame.ItemReceiveText:IsShown())
         Addon:CopyQuestTextStyle(choose, MapQuestInfoRewardsFrame.ItemChooseText)
@@ -366,8 +373,9 @@ function Addon:CreateQuestPage(parent)
                 end
 
                 button.NameFrame:SetVertexColor(source.NameFrame:GetVertexColor())
-                button.Name:SetText(GetRewardName(source))
-                Addon:CopyQuestTextStyle(button.Name, source.Name)
+                local name, translated = GetRewardName(source)
+                Addon:CopyQuestTextStyle(button.Name, source.Name, translated and locale or nil)
+                button.Name:SetText(name)
                 if button.Count and source.Count then button.Count:SetText(source.Count:GetText()) end
                 button:Show()
             end
@@ -387,7 +395,7 @@ function Addon:CreateQuestPage(parent)
             beer.Name:SetText(entry.reward)
             beer.Count:SetText("100")
         end
-        body:SetSections(Addon:GetQuestPageSections(entry))
+        body:SetSections(Addon:GetQuestPageSections(entry), entry.missing and GetLocale() or Addon:GetTargetLocale())
         self:RefreshNativeLayout()
     end
 

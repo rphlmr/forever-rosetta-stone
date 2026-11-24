@@ -54,7 +54,7 @@ function Addon:CreateQuestInteractionReader()
         Addon:FitQuestPanelTitle(frame)
 
         if self.contentKey ~= key then
-            body:SetSections(sections)
+            body:SetSections(sections, not missing and Addon:GetTargetLocale() or nil)
             body:ScrollTo(0)
             self.contentKey = key
         end
@@ -69,8 +69,7 @@ function Addon:CreateQuestInteractionReader()
     end
 
     -- Mirror visible native regions (text, icons, art) onto a target without reparenting or
-    -- activating them. Position, font, color and icons stay the client's; only text that has an
-    -- owned translation is replaced by the translate callback.
+    -- activating them. Translate owned text and use a compatible font when needed.
     local function Mirror(owner, cache, target, origin, translate)
         if not owner:IsVisible() or owner:IsForbidden() then return end
         local highlight = owner.GetHighlightTexture and owner:GetHighlightTexture()
@@ -90,11 +89,11 @@ function Addon:CreateQuestInteractionReader()
                 end
                 region:SetAlpha(native:GetAlpha())
                 if kind == "FontString" then
-                    Addon:CopyQuestTextStyle(region, native)
                     region:SetJustifyH(native:GetJustifyH())
                     region:SetJustifyV(native:GetJustifyV())
                     local text = native:GetText()
                     local translated, rewardName = translate(native, owner, text)
+                    Addon:CopyQuestTextStyle(region, native, translated ~= text and Addon:GetTargetLocale() or nil)
                     region:SetText(translated)
                     local width = native:GetWidth() * origin.scale
                     local height = native:GetHeight() * origin.scale

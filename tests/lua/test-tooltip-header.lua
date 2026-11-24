@@ -206,4 +206,26 @@ for index, columns in ipairs({
     Addon:ClearStackedTooltip(native)
     native:Hide()
 end
+do
+    local native = Addon:CreateCompanionTooltip(nil, UIParent)
+    native:AddLine("Native title")
+    local nativeFont = select(1, native:GetLeftLine(1):GetFont())
+    translated:ClearLines()
+    translated:AddDoubleLine("拉斯梅爾之怒", "完成")
+    local originalFont = select(1, translated:GetLeftLine(1):GetFont())
+    local chineseFont = [[Fonts\blei00d.TTF]]
+    Addon:ApplyTooltipTranslationFont(translated, "zhTW")
+    equal(select(1, translated:GetLeftLine(1):GetFont()), chineseFont, "companion renders the target script")
+    equal(select(1, translated:GetRightLine(1):GetFont()), chineseFont, "companion styles the right column too")
+    Addon:FillStackedTooltip(native, translated, "zhTW-tooltip", "below")
+    local line = native:GetLeftLine(native:NumLines())
+    equal(select(1, line:GetFont()), chineseFont, "appended translation carries over the target font")
+    equal(line:CanNonSpaceWrap(), true, "appended translation carries over wrapping")
+    equal(select(1, native:GetLeftLine(1):GetFont()), nativeFont, "native rows retain their original face")
+    Addon:ClearStackedTooltip(native)
+    equal(select(1, line:GetFont()), nativeFont, "appended rows restore their initial font")
+    equal(line:CanNonSpaceWrap(), false, "appended rows restore their initial wrapping")
+    translated:ClearLines()
+    equal(select(1, translated:GetLeftLine(1):GetFont()), originalFont, "reused companions restore their initial font")
+end
 return checks

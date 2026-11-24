@@ -192,8 +192,10 @@ function Addon:FillTooltipComparison(spec, presentation)
             and (presentation == "replacement" or presentation == "separate"))
         if shown and header.Label and tip.CompareHeader.Label then
             local text = header.Label:GetText()
-            tip.CompareHeader.Label:SetText(not nameOnly and self:TranslateComparisonText(text) or text)
-            self:CopyQuestTextStyle(tip.CompareHeader.Label, header.Label)
+            local translated = not nameOnly and self:TranslateComparisonText(text)
+            tip.CompareHeader.Label:SetText(translated or text)
+            self:CopyQuestTextStyle(tip.CompareHeader.Label, header.Label,
+                translated and self:GetTargetLocale() or nil)
             tip.CompareHeader.Label:SetTextScale(header.Label:GetTextScale())
             tip.CompareHeader:SetWidth(tip.CompareHeader.Label:GetWidth() + 30)
         end

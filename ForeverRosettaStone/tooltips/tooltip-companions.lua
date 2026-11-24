@@ -82,6 +82,7 @@ function Addon:FillNameTooltip(spec, presentation)
         component.FillTooltip(tip, source, spec.name, red, green, blue, spec)
     end
     component.AfterFill(spec, presentation or "separate")
+    self:ApplyTooltipTranslationFont(tip, self:GetTargetLocale())
     if presentation == "replacement" then
         Addon:AppendTooltipExtraRows(spec)
     end

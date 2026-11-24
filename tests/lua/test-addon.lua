@@ -176,7 +176,10 @@ function Frame:IsOwned(owner) return self.owner == owner end
 function Frame:IsForbidden() return false end
 function Frame:GetPoint(index) return unpack(self.points[index] or {}) end
 function Frame:GetNumPoints() return #self.points end
-function Frame:ClearLines() self.lines, self.lineColors = {}, {} end
+function Frame:ClearLines()
+    self.lines, self.lineColors = {}, {}
+    if self:GetScript("OnTooltipCleared") then self:Fire("OnTooltipCleared") end
+end
 function Frame:AddLine(text, ...)
     self.lines[#self.lines + 1] = text
     self.lineColors = self.lineColors or {}
@@ -279,7 +282,10 @@ function Frame:GetRightLine(index)
     if not self[key] then self[key] = self:CreateFontString(nil, "ARTWORK") end
     return self[key]
 end
-function Frame:SetFont(path, size, flags) self.font = {path, size, flags} end
+function Frame:SetFont(path, size, flags)
+    self.font = {path, size, flags}
+    return true
+end
 function Frame:SetFontObject(font) self.fontObject, self.font = font, nil end
 function Frame:GetFont()
     if self.font then return unpack(self.font) end
@@ -295,6 +301,8 @@ function Frame:GetJustifyH() return self.justifyH or "LEFT" end
 function Frame:CanWordWrap() return self.wordWrap == true end
 function Frame:SetJustifyV(value) self.justifyV = value end
 function Frame:SetWordWrap(value) self.wordWrap = value end
+function Frame:SetNonSpaceWrap(value) self.nonSpaceWrap = value end
+function Frame:CanNonSpaceWrap() return self.nonSpaceWrap == true end
 function Frame:SetTextColor(...) self.textColor = {...} end
 function Frame:GetTextColor() return unpack(self.textColor or {0, 0, 0, 1}) end
 function Frame:SetShadowColor(...) self.shadowColor = {...} end
@@ -716,6 +724,11 @@ function SettingsPanel:UnfocusContainer()
 end
 function SettingsPanel:SmartNavigationCloseHandler() return self:UnfocusContainer() end
 Settings = { categories = {}, allCategories = {}, VarType = { Boolean = "boolean", String = "string", Number = "number" } }
+SettingsTooltip = CreateFrame("GameTooltip", "SettingsTooltip", UIParent)
+function Settings.InitTooltip(name, text)
+    SettingsTooltip:AddLine(name)
+    SettingsTooltip:AddLine(text)
+end
 SettingsPanel.settingsList = { Header = { DefaultsButton = CreateFrame("Button", nil, SettingsPanel) } }
 SettingsPanel.settingsList.ScrollBox = CreateFrame("Frame", nil, SettingsPanel)
 function SettingsPanel:GetSettingsList() return self.settingsList end
@@ -1221,7 +1234,7 @@ PanelTemplates_TabResize = function(tab) tab:SetWidth(tab:GetText():len() * 7 + 
 PanelTemplates_SelectTab = function(tab) tab.selected = true end
 PanelTemplates_DeselectTab = function(tab) tab.selected = false end
 for _, file in ipairs({
-    "database/database-api", "core/safety", "locales/settings-locales", "settings/settings", "settings/minimap-button", "locales/debug-locales", "diagnostics/error-dialog", "diagnostics/diagnostics", "diagnostics/debug-display", "diagnostics/benchmark", "tooltips/tooltip-layout", "quests/quest-report", "quests/missing-quest",
+    "database/database-api", "core/safety", "core/localized-fonts", "locales/settings-locales", "settings/settings", "settings/minimap-button", "locales/debug-locales", "diagnostics/error-dialog", "diagnostics/diagnostics", "diagnostics/debug-display", "diagnostics/benchmark", "tooltips/tooltip-layout", "quests/quest-report", "quests/missing-quest",
     "quests/quest-data", "quests/quest-dialogue", "database/item-data", "database/npc-tooltip-data", "tooltips/english-tooltip-formats", "quests/quest-state", "quests/quest-page", "quests/quest-interaction-reader", "quests/reward-tooltips", "tooltips/tooltip-state", "tooltips/tooltip-comparisons", "tooltips/tooltip-component", "tooltips/tooltip-companions", "tooltips/spell-live-values", "tooltips/tooltip-descriptions",
     "tooltips/policies/toolkit", "tooltips/policies/item-comparison", "tooltips/policies/item", "tooltips/policies/spell", "tooltips/policies/talent", "tooltips/policies/npc",
     "tooltips/policies/quest-tracker",
@@ -1533,6 +1546,33 @@ equal(select(1, body.sections[5]:GetTextColor()), 0.04)
 equal(select(4, body.sections[5]:GetShadowColor()), 0.6)
 equal(select(1, body.sections[5]:GetShadowOffset()), 2)
 equal(body.sections[5]:GetSpacing(), 1)
+do
+    local locale = Addon.preferences.locale
+    local description = body.sections[5]
+    for target, font in pairs({ zhCN = [[Fonts\ARKai_T.ttf]], zhTW = [[Fonts\blei00d.TTF]],
+        koKR = [[Fonts\2002.TTF]] }) do
+        Addon.preferences.locale = target
+        page:Show(entry)
+        equal(select(1, description:GetFont()), font, target .. " quest font is selected by default")
+        equal(select(2, description:GetFont()), 13, "localized font preserves the native size")
+        equal(select(3, description:GetFont()), "OUTLINE", "localized font preserves the native outline")
+        equal(description.nonSpaceWrap, true, "localized prose wraps without spaces")
+    end
+
+    Addon.preferences.locale = "zhTW"
+    function description:SetFont(path, size, flags)
+        if path == [[Fonts\blei00d.TTF]] then return false end
+        if path == [[Fonts\bKAI00M.TTF]] then error("font unavailable") end
+        return Frame.SetFont(self, path, size, flags)
+    end
+    page:Show(entry)
+    equal(select(1, description:GetFont()), "Fonts/CustomQuest.ttf", "missing localized fonts fall back to the native face")
+    description.SetFont = nil
+    Addon.preferences.locale = locale
+    page:Show(entry)
+    equal(select(1, description:GetFont()), "Fonts/CustomQuest.ttf", "reused text restores the native face")
+    equal(description.nonSpaceWrap, false, "reused text restores regular wrapping")
+end
 local previousShows = shows
 Addon:RefreshSelection()
 equal(shows, previousShows, "refresh does not reset reading position")
@@ -2329,6 +2369,16 @@ equal(select(1, Addon.mapContextLabel.Text:GetTextColor()), 0.2, "map context ma
 equal(select(2, Addon.mapContextLabel.Text:GetTextColor()), 0.7, "map context matches native place-name green")
 equal(select(3, Addon.mapContextLabel.Text:GetTextColor()), 0.3, "map context matches native place-name blue")
 equal(Addon.mapContextLabel.template, nil, "map context has no tooltip template or border")
+do
+    local locale = Addon.preferences.locale
+    Addon.preferences.locale = "zhTW"
+    Addon:ShowMapContext()
+    equal(select(1, Addon.mapContextLabel.Text:GetFont()), [[Fonts\blei00d.TTF]], "map uses the selected translation font")
+    equal(select(2, Addon.mapContextLabel.Text:GetFont()), 16, "localized map text preserves the native size")
+    Addon.preferences.locale = locale
+    Addon:ShowMapContext()
+    equal(select(1, Addon.mapContextLabel.Text:GetFont()), "Fonts/MapSubtitle.ttf", "map restores the native face")
+end
 style = "0"
 WorldMapFrame.SidePanelToggle = CreateFrame("Button", nil, mapCanvas)
 WorldMapFrame.SidePanelToggle:SetSize(32, 32)

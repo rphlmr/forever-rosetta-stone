@@ -62,6 +62,7 @@ function Addon:UpdateQuestTrackerTooltip()
         tip:ClearLines()
         FillTooltip(tip, source, title, 1, 0.82, 0,
             { id = id, standalone = not native })
+        self:ApplyTooltipTranslationFont(tip, self:GetTargetLocale())
         self.questTrackerTooltipKey = key
     end
 
