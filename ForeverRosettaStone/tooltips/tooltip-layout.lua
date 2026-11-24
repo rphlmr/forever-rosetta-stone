@@ -106,6 +106,7 @@ local function StyleTranslationLabel(label, title)
     local font, size, flags = title:GetFont()
     if not font or not size then return end
     label:SetFont(font, size * 0.8, flags)
+    Addon:TryLocalizedFont(label, GetLocale(), size * 0.8, flags)
     label:SetTextScale(title:GetTextScale())
     label:SetTextColor(0.65, 0.65, 0.65)
     label:SetJustifyH("LEFT")
@@ -134,6 +135,7 @@ local function SnapshotLine(line)
     if not line then return end
     return { text = line:GetText(), color = { line:GetTextColor() }, font = { line:GetFont() },
         scale = line:GetTextScale(), justify = line:GetJustifyH(), wrap = line:CanWordWrap(),
+        nonSpaceWrap = line:CanNonSpaceWrap(),
         shadowColor = { line:GetShadowColor() }, shadowOffset = { line:GetShadowOffset() }, spacing = line:GetSpacing() }
 end
 
@@ -144,6 +146,7 @@ local function RestoreLine(line, saved)
     line:SetTextColor(unpack(saved.color))
     line:SetJustifyH(saved.justify)
     line:SetWordWrap(saved.wrap)
+    line:SetNonSpaceWrap(saved.nonSpaceWrap)
     line:SetShadowColor(unpack(saved.shadowColor))
     line:SetShadowOffset(unpack(saved.shadowOffset))
     line:SetSpacing(saved.spacing)
@@ -158,8 +161,8 @@ local function IsBlank(line)
     return canaccessallvalues(text) and (text == nil or text == "")
 end
 
-local function ForEachTranslatedLine(tip, append)
-    for index = 1, tip:NumLines() do
+local function ForEachTranslatedLine(tip, append, firstLine)
+    for index = firstLine or 1, tip:NumLines() do
         local leftLine, rightLine = tip:GetLeftLine(index), tip:GetRightLine(index)
         local left, right = leftLine and leftLine:GetText(), rightLine and rightLine:GetText()
         -- Companion FontStrings may retain restricted client text.
@@ -169,10 +172,45 @@ local function ForEachTranslatedLine(tip, append)
     end
 end
 
+local localizedTooltipFonts = setmetatable({}, { __mode = "k" })
+
+local function RestoreLocalizedTooltipFonts(tip)
+    for line, saved in pairs(localizedTooltipFonts[tip]) do
+        line:SetFont(unpack(saved.font))
+        line:SetNonSpaceWrap(saved.nonSpaceWrap)
+    end
+    localizedTooltipFonts[tip] = {}
+end
+
+function Addon:ApplyTooltipTranslationFont(tip, locale, firstLine)
+    if not self:UsesLocalizedFont(locale) then return end
+    local header = self:GetTooltipTranslationLabel()
+    local function Apply(line, text)
+        if not line or not text or text == "" or text == " " or text == header then return end
+        local font, size, flags = line:GetFont()
+        if not font or not size or not self:TryLocalizedFont(line, locale, size, flags) then return end
+        local saved = localizedTooltipFonts[tip]
+        if not saved then
+            saved = {}
+            localizedTooltipFonts[tip] = saved
+            tip:HookScript("OnTooltipCleared", RestoreLocalizedTooltipFonts)
+        end
+        if not saved[line] then
+            saved[line] = { font = { font, size, flags }, nonSpaceWrap = line:CanNonSpaceWrap() }
+        end
+        line:SetNonSpaceWrap(true)
+    end
+    ForEachTranslatedLine(tip, function(left, right, leftLine, rightLine)
+        Apply(leftLine, left)
+        Apply(rightLine, right)
+    end, firstLine)
+end
+
 local function CopyStackedLineStyle(target, original)
     if target and original then
         Addon:CopyQuestTextStyle(target, original)
         target:SetTextScale(original:GetTextScale())
+        target:SetNonSpaceWrap(original:CanNonSpaceWrap())
     end
 end
 

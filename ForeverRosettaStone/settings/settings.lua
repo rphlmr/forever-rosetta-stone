@@ -431,10 +431,13 @@ end
 
 local function ShowOptionHelp(owner, id, label, value, hint)
     local tip = Addon:GetWidgetTooltip()
+    local locale = id == "locale" and value or Addon:GetTargetLocale()
     tip:SetOwner(owner, "ANCHOR_RIGHT")
+    tip:ClearLines()
     tip:SetText(label, 1, 1, 1)
     local help, separate = OptionHelp(id, value, hint, true)
     tip:AddLine(help, nil, nil, nil, true)
+    Addon:ApplyTooltipTranslationFont(tip, locale)
     tip:Show()
     local companion = tip.optionPreview
     if separate then
@@ -455,6 +458,7 @@ local function ShowOptionHelp(owner, id, label, value, hint)
         for line in (separate .. "\n"):gmatch("(.-)\n") do
             companion:AddLine(line ~= "" and line or " ", 1, 1, 1, true)
         end
+        Addon:ApplyTooltipTranslationFont(companion, locale)
         companion:Show()
     elseif companion then
         companion:Hide()
@@ -503,6 +507,7 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
         end
         button.text:SetJustifyH("LEFT")
         button.text:SetWordWrap(false)
+        if id == "locale" then self:TryLocalizedFont(button.text, choice.value) end
         button.text:SetText(choice.label)
         button:SetHighlightTexture([[Interface\QuestFrame\UI-QuestTitleHighlight]])
         local function Choose()
@@ -642,6 +647,19 @@ function Addon:CreateSettingsUI()
     self.settingsCategory = category
     self.settings = {}
     self.liveSettingsGroups = {}
+    local optionPreviewInitializers = {}
+    if SettingsTooltip and Settings.InitTooltip then
+        hooksecurefunc(Settings, "InitTooltip", function()
+            local locale = self:GetTargetLocale()
+            if not self:UsesLocalizedFont(locale) then return end
+            local owner = SettingsTooltip:GetOwner()
+            local row = owner and (owner.GetElementData and owner or owner:GetParent())
+            local initializer = row and row.GetElementData and row:GetElementData()
+            if initializer and optionPreviewInitializers[initializer] then
+                self:ApplyTooltipTranslationFont(SettingsTooltip, locale, 2)
+            end
+        end)
+    end
     local function Group(label)
         table.insert(self.liveSettingsGroups, { label = label, rows = {} })
     end
@@ -668,6 +686,7 @@ function Addon:CreateSettingsUI()
         local initializer = Settings.CreateCheckbox(category, setting, description)
         if samples[id] then
             initializer.GetTooltip = function() return OptionHelp(id, setting:GetValue(), description) end
+            optionPreviewInitializers[initializer] = true
         end
         return initializer
     end
@@ -1036,6 +1055,15 @@ function Addon:OpenLiveSettings()
             button.label:SetText(row.name)
             button.label:SetAlpha(enabled and 1 or 0.5)
             button:SetText(label)
+            local valueText = button:GetFontString()
+            if button.localizedValueFont then
+                valueText:SetFont(unpack(button.localizedValueFont))
+                button.localizedValueFont = nil
+            end
+            if row.id == "locale" and Addon:UsesLocalizedFont(value) then
+                local font = { valueText:GetFont() }
+                if Addon:TryLocalizedFont(valueText, value, font[2], font[3]) then button.localizedValueFont = font end
+            end
             button:Show()
             button.label:Show()
         end

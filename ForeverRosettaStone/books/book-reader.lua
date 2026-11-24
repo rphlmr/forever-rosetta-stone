@@ -203,8 +203,10 @@ function Addon:CreateBookReader()
         local key = table.concat({ book.firstPage or "", book.pageID or "", book.pageNumber,
             Addon:GetTargetLocale(), book.title or "", book.body }, "\031")
         self.missing = book.missing
+        local locale = not self.missing and Addon:GetTargetLocale() or nil
         frame:SetTitle(self.missing and "Forever Rosetta Stone" or Addon:GetTranslationLanguageLabel())
         Addon:FitQuestPanelTitle(frame)
+        Addon:CopyQuestTextStyle(title, GameFontNormal, locale)
         title:SetText(book.title)
         title:SetShown(book.title ~= nil)
         local pageChanged = self.contentKey ~= key
@@ -218,7 +220,7 @@ function Addon:CreateBookReader()
                 native = QuestInfoDescriptionText
             end
             body:SetSections({ { source = native, textType = textType,
-                text = book.body, gap = 0 } })
+                text = book.body, gap = 0 } }, locale)
             if pageChanged then body:ScrollTo(0) end
             self.contentKey = key
         end

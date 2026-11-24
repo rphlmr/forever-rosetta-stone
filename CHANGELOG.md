@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.9.0] - 2026-11-24
+
+### Fixed
+
+- Fixed missing glyphs in Simplified Chinese, Traditional Chinese, and Korean translations across quest panels, dialogue, books, maps, tooltips, and settings previews. The addon uses WoW's built-in fonts for these languages.
+- Long Chinese and Korean lines now wrap without spaces in quest text, dialogue, and books.
+
 ## [1.8.1] - 2026-11-23
 
 ### Fixed

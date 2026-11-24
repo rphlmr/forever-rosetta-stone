@@ -267,7 +267,7 @@ function Addon:ShowMapContext()
                 context:SetFrameLevel(native:GetFrameLevel() + 1)
                 context:ClearAllPoints()
                 context:SetPoint("BOTTOM", native.Name, "TOP", 0, 8)
-                self:CopyQuestTextStyle(context.Text, native.Description)
+                self:CopyQuestTextStyle(context.Text, native.Description, self:GetTargetLocale())
                 context.Text:SetTextColor(native.Name:GetTextColor())
                 context.Text:SetWidth(WorldMapFrame:GetCanvasContainer():GetWidth()
                     * WorldMapFrame:GetCanvasContainer():GetEffectiveScale() / context:GetEffectiveScale() - 32)
@@ -289,7 +289,7 @@ function Addon:ShowMapContext()
 
     if self:IsFeatureEnabled("playerLocation") and native:IsVisible() and name and sourceText
         and type(playerInfo.name) == "string" and sourceText:find(playerInfo.name, 1, true) then
-        self:CopyQuestTextStyle(suffix.Text, native.Label)
+        self:CopyQuestTextStyle(suffix.Text, native.Label, self:GetTargetLocale())
         suffix.Text:SetTextColor(1, 1, 1)
         suffix.Text:SetText(" - " .. name)
         suffix:Show()
@@ -350,6 +350,7 @@ function Addon:RegisterMapMenuTranslations()
                             self:AnchorCompanionTooltip(tip, row)
                             tip:ClearLines()
                             self:SetStandaloneTooltipTitle(tip, name, 1, 0.82, 0)
+                            self:ApplyTooltipTranslationFont(tip, self:GetTargetLocale())
                         end)
                         self:PlaceCompanionTooltip(self.mapMenuTooltip, row, nil, true)
                     end))
@@ -518,7 +519,7 @@ function Addon:ShowMapLocationLabel()
                 frame:SetAlpha(native:GetAlpha())
                 frame:ClearAllPoints()
                 frame:SetPoint("TOP", anchor, "BOTTOM", 0, -4)
-                self:CopyQuestTextStyle(frame.Text, native.Description)
+                self:CopyQuestTextStyle(frame.Text, native.Description, self:GetTargetLocale())
                 frame.Text:SetTextColor(native.Name:GetTextColor())
                 frame.Text:SetText(name)
                 frame:Show()
@@ -568,6 +569,7 @@ function Addon:ShowLocationTooltip()
     self:AnchorCompanionTooltip(tip, header)
     tip:ClearLines()
     self:SetStandaloneTooltipTitle(tip, name, 1, 0.82, 0)
+    self:ApplyTooltipTranslationFont(tip, self:GetTargetLocale())
     tip:Show()
     self:PlaceCompanionTooltip(tip, header)
     if areaInfo then
@@ -714,6 +716,7 @@ function Addon:ShowTranslationTooltip()
             end
         end
 
+        self:ApplyTooltipTranslationFont(tip, self:GetTargetLocale())
         self.tooltipKey = key
     end
 

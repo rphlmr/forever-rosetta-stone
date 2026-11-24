@@ -19,6 +19,7 @@ class StackedTooltipOwnershipTests(unittest.TestCase):
                 GetTooltipFocus = function() return nil end,
                 RegisterNameTooltipComponent = function() end,
             }
+            assert(loadfile("ForeverRosettaStone/core/localized-fonts.lua"))("addon", addon)
             assert(loadfile("ForeverRosettaStone/tooltips/tooltip-layout.lua"))("addon", addon)
             assert(loadfile("ForeverRosettaStone/tooltips/components/quest-tracker-tooltip.lua"))("addon", addon)
 
@@ -31,12 +32,13 @@ class StackedTooltipOwnershipTests(unittest.TestCase):
                     GetTextScale = function() return 1 end,
                     GetJustifyH = function() return "LEFT" end,
                     CanWordWrap = function() return false end,
+                    CanNonSpaceWrap = function() return false end,
                     GetShadowColor = function() return 0, 0, 0, 1 end,
                     GetShadowOffset = function() return 0, 0 end,
                     GetSpacing = function() return 0 end,
                     SetFont = function() end, SetTextScale = function() end,
                     SetTextColor = function() end, SetJustifyH = function() end,
-                    SetWordWrap = function() end, SetShadowColor = function() end,
+                    SetWordWrap = function() end, SetNonSpaceWrap = function() end, SetShadowColor = function() end,
                     SetShadowOffset = function() end, SetSpacing = function() end,
                 }
             end

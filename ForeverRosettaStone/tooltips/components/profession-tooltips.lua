@@ -126,6 +126,7 @@ local function Update(kind, find, activeFrame, tracker)
         if native then Addon:SetCompanionTooltipTitle(tip, title, 1, 0.82, 0)
         else Addon:SetStandaloneTooltipTitle(tip, title, 1, 0.82, 0) end
         for _, text in ipairs(rows) do tip:AddLine(text, 1, 1, 1, true) end
+        Addon:ApplyTooltipTranslationFont(tip, Addon:GetTargetLocale())
         Addon[kind .. "TooltipKey"] = key
     end
     if native and Addon:GetTooltipPresentation(GameTooltip) ~= "separate" then

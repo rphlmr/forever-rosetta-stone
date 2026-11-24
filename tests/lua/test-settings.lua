@@ -219,11 +219,34 @@ end
 do
     -- Choices start in the native control column (CENTER - 80) so D-pad down reaches the checkboxes below.
     local controlColumn = languageList:GetWidth() / 2 - 80
+    local chineseFont = [[Fonts\blei00d.TTF]]
     for index, button in ipairs(languageList.buttons) do
         local _, _, _, x = button:GetPoint(1)
         equal(index % 2 == 1 and x == controlColumn or x > controlColumn, true,
             "language radio sits in the native control column: " .. button.value)
+        if button.value == "zhTW" then
+            equal(select(1, button.text:GetFont()), chineseFont, "language picker uses the choice's font")
+        end
     end
+    local initializer
+    for _, entry in ipairs(Addon.settingsCategory.initializers) do
+        if entry.setting == settings.translationHeader then initializer = entry; break end
+    end
+    local row = CreateFrame("Frame", nil, SettingsPanel)
+    function row:GetElementData() return initializer end
+    local checkbox = CreateFrame("CheckButton", nil, row)
+    SettingsTooltip:SetOwner(checkbox, "ANCHOR_RIGHT")
+    local locale = Addon.preferences.locale
+    Addon.preferences.locale = "zhTW"
+    Settings.InitTooltip("Preview", "拉斯梅爾之怒")
+    equal(select(1, SettingsTooltip:GetLeftLine(2):GetFont()), chineseFont, "native checkbox preview uses the target font")
+    SettingsTooltip:ClearLines()
+    initializer = {}
+    Settings.InitTooltip("Unrelated setting", "Other text")
+    equal(select(1, SettingsTooltip:GetLeftLine(2):GetFont()) ~= chineseFont, true, "unrelated settings retain their own font")
+    SettingsTooltip:ClearLines()
+    SettingsTooltip:Hide()
+    Addon.preferences.locale = locale
     local _, _, _, positionX = positionList.buttons[1]:GetPoint(1)
     equal(positionX, positionList:GetWidth() / 2 - 80, "position radios share the native control column")
     -- Native rows are navigated from their LEFT edge; first-column choices share that anchor.

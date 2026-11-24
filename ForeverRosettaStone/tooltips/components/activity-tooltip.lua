@@ -37,6 +37,7 @@ Addon:RegisterNameTooltipComponent({
         tip:SetOwner(source, "ANCHOR_NONE")
         tip:ClearLines()
         Addon:SetStandaloneTooltipTitle(tip, name, 1, 0.82, 0)
+        Addon:ApplyTooltipTranslationFont(tip, Addon:GetTargetLocale())
         local policy = Addon:GetTooltipComponent("activity").SelectPlacementPolicy(source)
         Addon:AnchorCompanionTooltip(tip, source, policy.GetSide(source))
         tip:SetClampedToScreen(true)

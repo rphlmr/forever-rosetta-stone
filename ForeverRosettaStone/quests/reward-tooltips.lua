@@ -89,6 +89,7 @@ local function FillTooltip(tip, button, data, header)
         end
     end
 
+    Addon:ApplyTooltipTranslationFont(tip, Addon:GetTargetLocale())
     tip:Show()
     return true
 end
@@ -98,11 +99,8 @@ function Addon:CreateRewardTooltips()
 
     for index = 1, 3 do
         local template = index == 1 and "GameTooltipTemplate" or "ShoppingTooltipTemplate"
-        local tip = self:NewFrame("GameTooltip", "ForeverRosettaStoneRewardTooltip" .. index, UIParent, template)
-        tip:SetFrameStrata("TOOLTIP")
+        local tip = self:CreateCompanionTooltip("ForeverRosettaStoneRewardTooltip" .. index, UIParent, template)
         tip:SetClampedToScreen(false)
-        tip:EnableMouse(false)
-        tip:Hide()
         self.rewardTooltips[index] = tip
     end
 
