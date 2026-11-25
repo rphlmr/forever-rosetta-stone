@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.10.0] - 2026-11-25
+
 ### Added
 
 - Added Lithuanian (Lietuvių) as a translation language and expanded coverage on 80,328 existing catalog entries, including quests, dialogue, items, spells, books, locations, and client labels.
@@ -20,7 +22,7 @@
 
 ### Translations
 
-- Added 8 spells, 2 quests, and 1 item across all 19 supported languages, including A Sealed Crate, Again Into the Great Ossuary, and Seed of Renewal.
+- Added 8 spells, 2 quests, and 1 item, including A Sealed Crate, Again Into the Great Ossuary, and Seed of Renewal. The new entries are available in all 19 supported languages, with English fallback where localized source text is missing.
 - Updated 3,440 existing entries with current quest text, NPC names and titles, item names, and spell tooltips. This includes revised Tranquility, Bloom, Wither, and Shank tooltips, plus updated Czech and Polish quest translations.
 
 ## [1.9.0] - 2026-11-24
