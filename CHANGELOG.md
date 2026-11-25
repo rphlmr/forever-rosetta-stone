@@ -15,7 +15,8 @@
 - Fixed spell tooltips leaving shared rows in the client language for translation languages that use catalog-backed formats.
 - Prevented stacked item tooltips from briefly drawing translations in the wrong place when toggling them with a shortcut.
 - Fixed missing Lithuanian and Czech glyphs and the blank Traditional Chinese language label. Settings previews now use separate fonts for native and translated text.
-- Fixed indexing for searchable settings with custom radio controls.
+- Kept custom radio controls out of WoW's global Settings search to avoid interference with protected settings. They remain available on the addon page.
+- Fixed missing World Map location translations when pointing at an area with the controller reticle.
 
 ## [1.9.0] - 2026-11-24
 

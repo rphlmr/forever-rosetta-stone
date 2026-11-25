@@ -53,6 +53,30 @@ class MapHoverLocationTests(unittest.TestCase):
         self.lua.execute(b"targetLocale='enUS'; names[86]='Lac du Cairn'")
         self.assertEqual(self.resolve(b'Lac du Cairn'), b'Stone Cairn Lake')
 
+    def test_gamepad_mode_uses_the_same_pointer_as_the_native_area_label(self):
+        self.lua.execute(b'''
+            targetLocale, names[86] = 'enUS', 'Lac du Cairn'
+            InputUtil = {IsGamepadUIEnabled=function() return controllerEnabled end}
+            WorldMapFrame.HasGamepadCursorInput=function() return gamepadInput end
+            WorldMapFrame.IsCanvasMouseFocusOrPinFocus=function() return mouseFocus end
+            WorldMapFrame.GetNormalizedGamepadCursorPosition=function() return 0.73,0.606 end
+            C_MapExplorationInfo.GetExploredAreaIDsAtPosition=function(mapID,position)
+                assert(mapID==1429)
+                if position.x==0.73 and position.y==0.606 then return {86} end
+                assert(position.x==cursorX and position.y==cursorY)
+                return {12}
+            end
+        ''')
+        for setup, expected in (
+            (b'controllerEnabled,gamepadInput,mouseFocus=true,true,true', b'Stone Cairn Lake'),
+            (b'gamepadInput,mouseFocus=false,false', b'Stone Cairn Lake'),
+            (b'mouseFocus=true', None),
+            (b'controllerEnabled,mouseFocus=false,false', None),
+        ):
+            with self.subTest(setup=setup):
+                self.lua.execute(setup)
+                self.assertEqual(self.resolve(b'Lac du Cairn'), expected)
+
     def test_duplicate_ids_are_safe_but_distinct_matching_areas_are_ambiguous(self):
         self.lua.execute(b'candidates={86,12,86}')
         self.assertEqual(self.resolve(), b'Lac du Cairn')

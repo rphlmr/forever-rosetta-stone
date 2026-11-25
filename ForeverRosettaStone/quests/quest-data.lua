@@ -72,12 +72,18 @@ end
 function Addon:GetHoveredMapLocationName(nativeName)
     local map = WorldMapFrame
     if not canaccessallvalues(nativeName) or type(nativeName) ~= "string" or nativeName == ""
-        or not map.IsCanvasMouseFocus or not map:IsCanvasMouseFocus()
-        or not map.GetNormalizedCursorPosition then return end
+        or not map.IsCanvasMouseFocus or not map:IsCanvasMouseFocus() then return end
 
     local mapID = map:GetMapID()
     if not self:IsReadableEntityID(mapID) then return end
-    local x, y = map:GetNormalizedCursorPosition()
+    -- Use the same pointer as the native area label, including mixed mouse and gamepad input.
+    local getPosition = map.GetNormalizedCursorPosition
+    if InputUtil and InputUtil.IsGamepadUIEnabled() and map.GetNormalizedGamepadCursorPosition
+        and (map:HasGamepadCursorInput() or not map:IsCanvasMouseFocusOrPinFocus()) then
+        getPosition = map.GetNormalizedGamepadCursorPosition
+    end
+    if not getPosition then return end
+    local x, y = getPosition(map)
     if not canaccessallvalues(x, y) or type(x) ~= "number" or type(y) ~= "number"
         or x ~= x or y ~= y or x < 0 or x > 1 or y < 0 or y > 1 then return end
 

@@ -349,8 +349,9 @@ for _, nativeCategory in ipairs(Settings.allCategories) do
             if initializer.kind == "button" then
                 equal(initializer.search, false, "action buttons avoid addon-authored search tags")
             elseif initializer.kind == "panel" and initializer.data.list then
-                equal(initializer.searchTags[1], settings[initializer.data.list]:GetName():upper(),
-                    "radio panel is searchable by its native setting name")
+                equal(initializer.data.settings, nil, "custom radio panel does not request generated search tags")
+                equal(initializer.searchTags, nil, "custom radio panel stays out of global search")
+                equal(settings[initializer.data.list] ~= nil, true, "custom radio preference remains registered")
             end
         end
     end

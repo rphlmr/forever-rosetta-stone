@@ -776,12 +776,12 @@ function Addon:CreateSettingsUI()
     end
     -- Native addon dropdown popups taint the client's shared controller focus on opening.
     -- Lists use inline radio rows; two-value choices use native checkboxes.
-    -- Let Blizzard's initializer factory build search tags from the setting names.
-    -- Search reads tags and parent initializers directly, so don't write either from addon code.
+    -- The panel factory derives global search tags from data.settings. Keep these custom
+    -- controls out of that index because it reads tags before building protected Blizzard rows.
     local function RadioList(template, columns, id, label, hint, default, choices, getValue, setValue, isEnabled)
-        local setting = Register(category, id, label, default, getValue, setValue)
+        Register(category, id, label, default, getValue, setValue)
         self:CreateRadioList(id, label, hint, choices, getValue, setValue, isEnabled, columns)
-        local initializer = Settings.CreatePanelInitializer(template, { list = id, settings = { setting } })
+        local initializer = Settings.CreatePanelInitializer(template, { list = id })
         layout:AddInitializer(initializer)
         return initializer
     end
