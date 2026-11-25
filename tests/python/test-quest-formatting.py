@@ -180,7 +180,7 @@ class QuestFormattingTests(unittest.TestCase):
             'ruRU': ('Маг', 'Человек'), 'koKR': ('마법사', '인간'),
             'zhCN': ('法师', '人类'), 'zhTW': ('法師', '人類'),
             'csCZ': ('Mágyně', 'Člověk'), 'daDK': ('Magiker', 'Menneske'),
-            'hrHR': ('Maga', 'Čovjek'), 'plPL': ('Magini', 'Człowiek'),
+            'hrHR': ('Maga', 'Čovjek'), 'ltLT': ('Magė', 'Žmogus'), 'plPL': ('Magini', 'Człowiek'),
             'svSE': ('Magiker', 'Människa'), 'trTR': ('Büyücü', 'İnsan'),
             'ukUA': ('Магиня', 'Людина'),
         }
@@ -188,6 +188,24 @@ class QuestFormattingTests(unittest.TestCase):
             with self.subTest(locale=locale):
                 self.addon.locale = locale
                 self.assertEqual(self.format('{class} <race> $N'), f'{class_name} {race_name} Rosetta')
+
+    def test_captured_objective_plural_uses_live_required_count(self):
+        self.lua.execute("""
+            function C_QuestLog.GetQuestObjectives()
+                return { { text = 'Native objective', type = 'monster',
+                    numFulfilled = 0, numRequired = required } }
+            end
+            function addon:GetQuest()
+                return { title = 'Quest', objectiveLines = {
+                    { index = 1, type = 'monster',
+                      text = '{current}/{required} |4personnage tué:personnages tués;' }
+                } }
+            end
+        """)
+        self.addon.locale = 'frFR'
+        for required, expected in ((1, '0/1 personnage tué'), (10, '0/10 personnages tués')):
+            self.lua.globals().required = required
+            self.assertEqual(self.addon.GetProgressText(self.addon, 15), expected)
 
     def test_live_amounts_zero_missing_and_unrelated_tokens(self):
         self.assertEqual(self.format('$1oa/$2oa'), '7/0')

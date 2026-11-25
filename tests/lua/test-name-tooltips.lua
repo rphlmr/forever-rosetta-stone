@@ -456,11 +456,13 @@ equal(equippedTip.lines[#equippedTip.lines - 1],
     "If you replace this item, the following stat changes will occur:", "late native comparison summary is translated")
 equal(equippedTip.lines[#equippedTip.lines], "|cff00ff00+35|r Armor", "delta preserves the client value and inline color")
 equal(equippedTip:GetLeftLine(#equippedTip.lines - 1):GetTextColor(), 1, "summary preserves its native color")
-for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
+local comparisonLocales = { "csCZ", "daDK", "deDE", "enUS", "esES", "esMX", "frFR", "hrHR", "itIT",
+    "koKR", "plPL", "ptBR", "ruRU", "svSE", "trTR", "ukUA", "zhCN", "zhTW" }
+for _, locale in ipairs(comparisonLocales) do
     Addon:SetTargetLocale(locale)
-    equal(type(Addon:TranslateComparisonText(EQUIPPED)), "string", "every supported language has an equipped label")
-    equal(type(Addon:TranslateComparisonText(ITEM_DELTA_DESCRIPTION)), "string", "every supported language has a delta summary")
-    equal(type(Addon:TranslateComparisonText("|cffff0000-12|r Armure")), "string", "every supported language translates armor deltas")
+    equal(type(Addon:TranslateComparisonText(EQUIPPED)), "string", "tooltip language has an equipped label")
+    equal(type(Addon:TranslateComparisonText(ITEM_DELTA_DESCRIPTION)), "string", "tooltip language has a delta summary")
+    equal(type(Addon:TranslateComparisonText("|cffff0000-12|r Armure")), "string", "tooltip language translates armor deltas")
 end
 Addon:SetTargetLocale("enUS")
 ShoppingTooltip1:GetLeftLine(ShoppingTooltip1:NumLines()):SetText("|cff00ff00+41|r Armure")

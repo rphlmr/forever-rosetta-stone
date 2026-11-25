@@ -130,6 +130,12 @@ local playerLabels = {
     csCZ = { "Válečník|Paladin|Lovec|Tulák|Kněz|Šaman|Mág|Černokněžník|Druid", "Člověk|Ork|Trpaslík|Noční elf|Nemrtvý|Tauren|Gnóm|Troll", "Válečnice|Paladinka|Lovkyně|Tulačka|Kněžka|Šamanka|Mágyně|Černokněžnice|Druidka", "Člověk|Orkyně|Trpaslice|Noční elfka|Nemrtvá|Taurenka|Gnómka|Trollka" },
     daDK = { "Kriger|Paladin|Jæger|Slyngel|Præst|Shaman|Magiker|Troldmand|Druide", "Menneske|Ork|Dværg|Natelver|Udød|Tauren|Gnom|Trold" },
     hrHR = { "Ratnik|Paladin|Lovac|Lupež|Svećenik|Šaman|Mag|Vještac|Druid", "Čovjek|Ork|Patuljak|Noćni vilenjak|Nemrtvi|Tauren|Gnom|Trol", "Ratnica|Paladinka|Lovkinja|Lupež|Svećenica|Šamanka|Maga|Vještica|Druidkinja", "Čovjek|Orkinja|Patuljica|Noćna vilenjakinja|Nemrtva|Taurenka|Gnomkinja|Trolkinja" },
+    ltLT = {
+        "Karys|Paladinas|Medžiotojas|Sukčius|Kunigas|Šamanas|Magas|Kerėtojas|Druidas",
+        "Žmogus|Orkas|Nykštukas|Nakties elfas|Nemirėlis|Taurenas|Gnomas|Trolis",
+        "Karė|Paladinė|Medžiotoja|Sukčiuvė|Kunigė|Šamanė|Magė|Kerėtoja|Druidė",
+        "Žmogus|Orkė|Nykštukė|Nakties elfė|Nemirėlė|Taurenė|Gnomė|Trolė",
+    },
     plPL = { "Wojownik|Paladyn|Łowca|Łotrzyk|Kapłan|Szaman|Mag|Czarnoksiężnik|Druid", "Człowiek|Ork|Krasnolud|Nocny elf|Nieumarły|Tauren|Gnom|Troll", "Wojowniczka|Paladynka|Łowczyni|Łotrzyca|Kapłanka|Szamanka|Magini|Czarnoksiężniczka|Druidka", "Człowiek|Orczyca|Krasnoludka|Nocna elfka|Nieumarła|Taurenka|Gnomka|Trollka" },
     svSE = { "Krigare|Paladin|Jägare|Skurk|Präst|Schaman|Magiker|Svartkonstnär|Druid", "Människa|Orc|Dvärg|Nattalv|Odöd|Tauren|Gnom|Troll" },
     trTR = { "Savaşçı|Paladin|Avcı|Haydut|Rahip|Şaman|Büyücü|Falcı|Druid", "İnsan|Ork|Cüce|Gece Elfi|Ölümsüz|Tauren|Cücecik|Trol" },
@@ -267,7 +273,16 @@ function Addon:GetProgressLines(questID)
                 or (text:find("{required}", 1, true) and objective.numRequired == nil) then
                 text = nil
             else
-                text = text:gsub("{current}", tostring(objective.numFulfilled or 0))
+                if text:find("|4", 1, true) then
+                    local locale, required = self:GetTargetLocale(), objective.numRequired
+                    -- The selector immediately after the required count is controlled by that count.
+                    local singular = required == 1 or required == 0 and (locale == "frFR" or locale == "ptBR")
+                    text = text:gsub("({required}%s+)|4([^:;]+):([^:;]+);", function(prefix, one, many)
+                        return prefix .. (singular and one or many)
+                    end)
+                    if text:find("|4", 1, true) then text = nil end
+                end
+                text = text and text:gsub("{current}", tostring(objective.numFulfilled or 0))
                     :gsub("{required}", tostring(objective.numRequired or 0))
                     :gsub("{standing}", function() return standing end)
             end
@@ -308,6 +323,7 @@ local questLabels = {
     svSE = { description = "Beskrivning", rewards = "Belöningar", complete = "Slutfört", receive = "Du får:" },
     daDK = { description = "Beskrivelse", rewards = "Belønninger", complete = "Fuldført", receive = "Du modtager:" },
     hrHR = { description = "Opis", rewards = "Nagrade", complete = "Dovršeno", receive = "Dobit ćeš:" },
+    ltLT = { description = "Aprašymas", rewards = "Atlygiai", complete = "Atlikta", receive = "Gausi:" },
     koKR = { description = "설명", rewards = "보상", complete = "완료", receive = "받을 보상:" },
     zhCN = { description = "描述", rewards = "奖励", complete = "完成", receive = "你将获得：" },
     zhTW = { description = "描述", rewards = "獎勵", complete = "完成", receive = "你將獲得：" },

@@ -1,5 +1,15 @@
 {
   "areaId": 12,
+  "clientObjectiveBindings": {
+    "eventObjectiveLabel": {
+      "englishSha256": "02b5c4c2fb2a59a3457aa15b9a0b8f909f86d8d7ba6ab9d16fa90d135c2f2966",
+      "index": 1,
+      "source": "wowClient",
+      "sourceBuild": "71037",
+      "sourceLocale": "frFR",
+      "type": "event"
+    }
+  },
   "dialogueContexts": {
     "426aa87a5743889de830": {
       "lineId": "q:76:accept",
@@ -355,7 +365,7 @@
         "81a8be8144b617b6db4f": "Salut, $N. Quel est votre compte rendu ? Avez-vous exploré la Mine Veine-de-jaspe ?",
         "8c95ebee095434845328": "Des kobolds à la mine Veine-de-jaspe, dites-vous ? Malédiction ! La situation se dégrade de minute en minute !\n\nMerci de votre rapport, $N. Mais j'aurais préféré que vous apportiez de meilleures nouvelles."
       },
-      "eventObjectiveLabel": "Scout through the Jasperlode Mine",
+      "eventObjectiveLabel": "Explorer la mine Veine-de-jaspe",
       "summary": "Explorer la mine Veine-de-jaspe, puis faites votre rapport au maréchal Dughan de Comté-de-l’Or.",
       "title": "La mine Veine-de-jaspe",
       "translationMetadata": {
@@ -384,9 +394,10 @@
             "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
-            "origin": "community",
-            "source": "questie",
-            "sourceLocale": "enUS"
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "71037",
+            "sourceLocale": "frFR"
           },
           "summary": {
             "origin": "community",
@@ -560,6 +571,57 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "ltLT": {
+      "description": "Tavo dėka žinome, kad Fargodeep kasyklą užplūdo koboldai. Dabar mums reikia žvalgo ištirti tolimesnę Jasperlode kasyklą.\n\nIšžvalgyk Jasperlode ir patikrink, ar ten yra koboldų. Kad pasiektum kasyklą, keliauk keliu į rytus, kol prieisi Tower of Azora. Nuo bokšto trauk į šiaurę ir rasi kasyklą kalnų papėdėje.",
+      "dialogue": {
+        "426aa87a5743889de830": "Tavo dėka žinome, kad Fargodeep kasyklą užplūdo koboldai. Dabar mums reikia žvalgo ištirti tolimesnę Jasperlode kasyklą.$B$BIšžvalgyk Jasperlode ir patikrink, ar ten yra koboldų. Kad pasiektum kasyklą, keliauk keliu į rytus, kol prieisi Tower of Azora. Nuo bokšto trauk į šiaurę ir rasi kasyklą kalnų papėdėje.",
+        "81a8be8144b617b6db4f": "Sveiki, $N. Ką gali pranešti? Ar išžvalgei Jasperlode kasyklą?",
+        "8c95ebee095434845328": "Sakai, Jasperlode kasykloje yra koboldų? Prakeikimas! Padėtis blogėja kas minutę!$B$BAčiū už pranešimą, $N. Tik gaila, kad atnešei blogų žinių."
+      },
+      "eventObjectiveLabel": "Išžvalgyk Jasperlode kasyklą",
+      "summary": "Išžvalgyk Jasperlode kasyklą, tada grįžk ir pranešk Marshal Dughan į Goldshire.",
+      "title": "Jasperlode kasykla",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.426aa87a5743889de830": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81a8be8144b617b6db4f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8c95ebee095434845328": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "02b5c4c2fb2a59a3457aa15b9a0b8f909f86d8d7ba6ab9d16fa90d135c2f2966"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           }
         }
       }

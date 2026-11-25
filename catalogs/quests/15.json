@@ -396,7 +396,7 @@
       "objectiveLines": [
         {
           "index": 1,
-          "text": "{current}/{required} Kobold Workers slain",
+          "text": "Ouvriers kobolds : {current}/{required} |4personnage tué:personnages tués;",
           "type": "monster"
         }
       ],
@@ -430,8 +430,8 @@
           "objectiveLines.1": {
             "origin": "original",
             "source": "wowClient",
-            "sourceBuild": "70938",
-            "sourceLocale": "enUS"
+            "sourceBuild": "71037",
+            "sourceLocale": "frFR"
           },
           "summary": {
             "origin": "community",
@@ -621,6 +621,63 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "ltLT": {
+      "description": "{name}, mano žvalgai praneša, kad koboldų antplūdis didesnis, nei manėme. Grupė koboldų darbininkų įsikūrė prie Echo Ridge Mine šiaurėje.\n\nNukeliauk į kasyklą ir atsikratyk jų. Žinome, kad jų yra bent 10. Nukauk juos, patikrink, ar nėra daugiau, ir grįžk man pranešti.",
+      "dialogue": {
+        "218c3b50cdebdc316dd4": "$N, mano žvalgai praneša, kad koboldų antplūdis didesnis, nei manėme. Grupė koboldų darbininkų įsikūrė prie Echo Ridge Mine šiaurėje.$B$BNukeliauk į kasyklą ir atsikratyk jų. Žinome, kad jų yra bent 10. Nukauk juos, patikrink, ar nėra daugiau, ir grįžk man pranešti.",
+        "a094d0d31463599fb4cc": "Ar buvai kasyklose? Ar gali pranešti, ką sužinojai?",
+        "b7195fc398e8b320ae29": "Man nepatinka girdėti, kad mūsų kasykloje tiek koboldų. Nieko gero iš to nebus. Štai, imk tai kaip atlygį, o kai būsi pasiruošęs, vėl su manimi pasikalbėk. Norėčiau, kad dar kartą grįžtum į kasyklas..."
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "Nukauta Kobold Workers: {current}/{required}",
+          "type": "monster"
+        }
+      ],
+      "summary": "Nukauk 10 Kobold Workers ir grįžk pas maršalą McBride.",
+      "title": "Ištirk Echo Ridge",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.218c3b50cdebdc316dd4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.a094d0d31463599fb4cc": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b7195fc398e8b320ae29": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "e891d647f3045f84ef0f923e8098faac8c619604072127194f8624f1cb3cc0cd"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           }
         }
       }

@@ -20,8 +20,9 @@ class TooltipRoundtripTests(unittest.TestCase):
         assert capture == original, 'Derived cases must not rewrite the original capture'
 
     def test_every_target_translates_the_native_rows_and_reverses_the_derived_output(self):
-        self.assertEqual(len(self.report['scope']['targets']), 17)
-        self.assertEqual(len(self.report['cases']), 85)
+        self.assertIn('ltLT', self.report['scope']['targets'])
+        self.assertEqual(len(self.report['scope']['targets']), 18)
+        self.assertEqual(len(self.report['cases']), 90)
         for case in self.report['cases']:
             with self.subTest(spell=case['id'], target=case['target']):
                 self.assertIn(case['status'], ('passed', 'text_difference_values_preserved'), case)

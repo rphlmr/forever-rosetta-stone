@@ -90,16 +90,20 @@ for _, id in ipairs({ 233, 234 }) do
         deliveryObjective.text = Addon:FormatQuestText(source.summary, id, sourceLocale)
         for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
             targetLocale = locale
-            local translatedQuest = assert(Addon:GetQuest(id))
-            local summary = Addon:FormatQuestText(translatedQuest.summary, id)
+            local translatedQuest = Addon:GetQuest(id)
             local progress = Addon:GetProgressText(id)
-            equal(progress, deliveryObjective.text, "unmapped summary stays native: " .. id .. ":" .. sourceLocale .. ":" .. locale)
-            local sections = Addon:GetQuestPageSections({
-                questID = id, title = translatedQuest.title, objectives = summary,
-                progress = progress, description = translatedQuest.description,
-            })
-            equal(sections[3].text, progress == summary and "" or progress,
-                "quest page omits only an identical summary: " .. id .. ":" .. locale)
+            if translatedQuest then
+                local summary = Addon:FormatQuestText(translatedQuest.summary, id)
+                equal(progress, deliveryObjective.text, "unmapped summary stays native: " .. id .. ":" .. sourceLocale .. ":" .. locale)
+                local sections = Addon:GetQuestPageSections({
+                    questID = id, title = translatedQuest.title, objectives = summary,
+                    progress = progress, description = translatedQuest.description,
+                })
+                equal(sections[3].text, progress == summary and "" or progress,
+                    "quest page omits only an identical summary: " .. id .. ":" .. locale)
+            else
+                equal(progress, "", "quest without translation has no companion progress")
+            end
             equal(deliveryObjective.text, source.summary, "summary reuse never mutates the native objective")
             deliveryCases = deliveryCases + 1
         end

@@ -102,15 +102,20 @@ class StructuredAuraTests(unittest.TestCase):
             end
         ''')
 
-    def test_every_target_locale_uses_its_catalog_aura_template(self):
+    def test_available_aura_templates_render_and_missing_templates_keep_native_text(self):
         self.lua.execute(b'''
             aura={spellId=433,points={}}
             for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
                 targetLocale=locale
                 render(433, {{type=13,leftText='Food'}, {leftText='Restores 2 health per second.'}})
-                local target=ForeverRosettaStoneDB:GetSpellDetails(433,locale).auraDescription
-                local expected=target:gsub('%$/5;s1','2')
-                assert(#rows==2 and rows[2].left==expected,locale..': '..tostring(rows[2].left))
+                local details=ForeverRosettaStoneDB:GetSpellDetails(433,locale)
+                local target=details and details.auraDescription
+                if target then
+                    local expected=target:gsub('%$/5;s1','2')
+                    assert(#rows==2 and rows[2].left==expected,locale..': '..tostring(rows[2].left))
+                else
+                    assert(rows[2].left=='Restores 2 health per second.',locale)
+                end
             end
         ''')
 

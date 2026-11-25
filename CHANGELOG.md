@@ -2,6 +2,16 @@
 
 ## [Unreleased]
 
+### Added
+
+- Added Lithuanian (Lietuvių) as a translation language and expanded coverage on 80,328 existing catalog entries, including quests, dialogue, items, spells, books, locations, and client labels.
+- Enabled translation of quest summaries and client-verified objectives from the maintained English catalog for additional languages.
+
+### Fixed
+
+- Restored localized progress text for two item objectives in the official languages and imported five French quest fields from the game client.
+- Fixed spell tooltips leaving shared rows in the client language for translation languages that use catalog-backed formats.
+
 ## [1.9.0] - 2026-11-24
 
 ### Fixed

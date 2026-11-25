@@ -7,6 +7,7 @@ import re
 from pathlib import Path
 
 from datasources.corpus.translation_corpus import open_corpus, language_flags
+from tools.catalogs.catalog_storage import load_catalog
 from tools.catalogs.official_text import OFFICIAL_LOCALES, TEXT_FIELDS, SOURCE_PROVIDERS
 
 BOOK_FIELDS = {('books', 'name'), ('bookpages', 'description')}
@@ -215,7 +216,45 @@ class OfficialEvidence:
         return (kind, str(entity_id), field, normalize(english)) in self.proofs
 
 
-def ai_block_reason(locale, kind, entity_id, field, english, evidence):
+def is_captured_objective(record, line):
+    origin = metadata(record, 'objectiveLines.' + str(line.get('index')))
+    return (type(line.get('index')) is int and line['index'] > 0
+            and bool(line.get('type'))
+            and origin.get('origin') == 'original' and origin.get('source') == 'wowClient'
+            and origin.get('sourceLocale') == 'enUS' and bool(origin.get('sourceBuild')))
+
+
+def matches_client_objective_binding(quest, field, english, index, objective_type):
+    binding = quest.get('clientObjectiveBindings', {}).get(field, {})
+    return (type(index) is int and index > 0 and type(binding.get('index')) is int
+            and binding['index'] == index and binding.get('type') == objective_type
+            and binding.get('source') == 'wowClient' and bool(binding.get('sourceBuild'))
+            and binding.get('sourceLocale') in OFFICIAL_LOCALES
+            and binding.get('englishSha256') == hashlib.sha256(english.encode()).hexdigest())
+
+
+def verified_catalog_quest_source(quest, field, english):
+    source, origin = english_source(quest, field)
+    if not normalize(source) or source != english or origin.get('sourceLocale') != 'enUS':
+        return False
+    record = quest['locales']['enUS']
+    if field == 'summary':
+        return origin.get('origin') in ('original', 'community') and bool(origin.get('source'))
+    if field.startswith('objectiveLines.'):
+        return any(field == 'objectiveLines.' + str(line.get('index'))
+                   and (is_captured_objective(record, line)
+                        or matches_client_objective_binding(quest, field, english, line['index'], line['type']))
+                   for line in record.get('objectiveLines', []))
+    if field == 'eventObjectiveLabel':
+        if matches_client_objective_binding(quest, field, english, 1, 'event'):
+            return True
+        matches = [line for line in record.get('objectiveLines', [])
+                   if line.get('type') == 'event' and normalize(line.get('text')) == normalize(english)]
+        return len(matches) == 1 and is_captured_objective(record, matches[0])
+    return False
+
+
+def ai_block_reason(locale, kind, entity_id, field, english, evidence, *, quest=None):
     if (kind, field) in BOOK_FIELDS and locale != 'enUS':
         key = (kind, str(entity_id), field, normalize(english))
         if not evidence or key not in evidence.book_english:
@@ -225,12 +264,26 @@ def ai_block_reason(locale, kind, entity_id, field, english, evidence):
         return None
     if locale in OFFICIAL_LOCALES:
         return 'officialLocaleNeverAuthored'
+    if kind == 'quests' and quest is not None:
+        if verified_catalog_quest_source(quest, field, english):
+            return None
+        if field == 'eventObjectiveLabel' or field.startswith('objectiveLines.'):
+            return 'noVerifiedClientObjectiveBinding'
     if not evidence or not evidence.allows(kind, entity_id, field, english):
         return 'noVerifiedOfficialTranslation'
     return None
 
 
-def filter_queue(queue, evidence):
+def pointer_block_reason(job, pointer, evidence, quests):
+    field = pointer['field']
+    if field == 'objectiveLines':
+        field += '.' + str(pointer['index'])
+    quest = quests.get(str(pointer['id'])) if pointer['kind'] == 'quests' else None
+    return ai_block_reason(job['locale'], pointer['kind'], pointer['id'], field, job['source'],
+                           evidence, quest=quest)
+
+
+def filter_queue(queue, evidence, quests=None):
     """Apply the same policy to ordinary, foreign and fallback queue entry points."""
     result = {**queue, 'jobs': [], 'blocked': []}
     result['policyDatabase'] = str(evidence.database) if evidence else None
@@ -239,19 +292,27 @@ def filter_queue(queue, evidence):
         if reuse.get('metadata', {}).get('origin') in ('original', 'community'):
             result['jobs'].append(job)
             continue
-        reasons = {ai_block_reason(job['locale'], pointer['kind'], pointer['id'], pointer['field'],
-                                   job['source'], evidence) for pointer in job['pointers']}
-        reasons.discard(None)
-        if reasons:
+        eligible, blocked, reasons = [], [], set()
+        for pointer in job['pointers']:
+            reason = pointer_block_reason(job, pointer, evidence, quests or {})
+            if reason:
+                blocked.append(pointer)
+                reasons.add(reason)
+            else:
+                eligible.append(pointer)
+        if blocked:
             result['blocked'].append({'jobId': job['jobId'], 'locale': job['locale'],
-                                      'pointers': job['pointers'], 'reasons': sorted(reasons)})
-        else:
-            result['jobs'].append(job)
+                                      'pointers': blocked, 'reasons': sorted(reasons)})
+        if eligible:
+            result['jobs'].append({**job, 'pointers': eligible})
     return result
 
 
 def validate_queue_policy(queue, results, root):
     evidence = OfficialEvidence(queue['policyDatabase'], root) if queue.get('policyDatabase') else None
+    quest_ids = {str(pointer['id']) for job in queue['jobs'] for pointer in job['pointers']
+                 if pointer['kind'] == 'quests'}
+    quests = load_catalog(root, 'quests', {'quests': quest_ids})['catalogs']['quests'] if quest_ids else {}
     submitted = {row['jobId']: row['translation'] for row in results}
     for job in queue['jobs']:
         reuse = job.get('reuse', {})
@@ -259,8 +320,7 @@ def validate_queue_policy(queue, results, root):
                 and submitted.get(job['jobId']) == reuse.get('text')):
             continue
         for pointer in job['pointers']:
-            reason = ai_block_reason(job['locale'], pointer['kind'], pointer['id'], pointer['field'],
-                                     job['source'], evidence)
+            reason = pointer_block_reason(job, pointer, evidence, quests)
             if reason:
                 raise ValueError(reason + ': ' + job['jobId'])
 
@@ -278,6 +338,14 @@ def validate_batch_policy(batch, results, evidence):
                     if text_fields(prior).get(field) == text and metadata(prior, field) == origin:
                         continue
                     english = text_fields(entity['locales'].get('enUS', {})).get(field)
-                    reason = ai_block_reason(locale, kind, entity_id, field, english, evidence)
+                    if kind == 'quests' and field.startswith('objectiveLines.'):
+                        index = int(field.split('.')[1])
+                        source_type = next((line['type'] for line in entity['locales']['enUS'].get('objectiveLines', [])
+                                            if line['index'] == index), None)
+                        target_type = next(line['type'] for line in record['objectiveLines'] if line['index'] == index)
+                        if not source_type or source_type != target_type:
+                            raise ValueError('Objective type differs from English: ' + entity_id + '/' + field)
+                    reason = ai_block_reason(locale, kind, entity_id, field, english, evidence,
+                                             quest=before if kind == 'quests' else None)
                     if reason:
                         raise ValueError(reason + ': ' + kind + '/' + entity_id + '/' + field)

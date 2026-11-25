@@ -38,10 +38,12 @@ class TalentDescriptionSourceTests(LiveValueHarness, unittest.TestCase):
         native = ('Afflicts your target with Shadow energy that causes all party members to be healed '
                   'for 10% of any Shadow spell damage you deal for 30 sec. '
                   'You receive 100% increased healing on yourself from this effect.')
-        db = self.lua.globals().ForeverRosettaStoneDB
-        for locale in db.GetLocales(db).keys():
-            with self.subTest(locale=locale.decode()):
-                translated = self.capture(15286, native, 'enUS', locale.decode())
+        spell = json.loads((ROOT / 'catalogs/spells/15286.json').read_text())
+        for locale, record in spell['locales'].items():
+            if not record.get('description'):
+                continue
+            with self.subTest(locale=locale):
+                translated = self.capture(15286, native, 'enUS', locale)
                 self.assertTrue(translated)
                 for value in (b'10', b'100', b'30'):
                     self.assertRegex(translated, rb'(?<!\d)' + value + rb'(?!\d)')

@@ -35,6 +35,6 @@ def newer_core_source(candidate, current):
 OFFICIAL_LOCALES = frozenset(('enUS', 'deDE', 'esES', 'esMX', 'frFR',
                              'koKR', 'ptBR', 'ruRU', 'zhCN', 'zhTW'))
 # Forever's Italian client exports are English fallback; FRS maintains authored Italian targets.
-ADDITIONAL_LOCALES = ('csCZ', 'daDK', 'hrHR', 'itIT', 'plPL', 'svSE', 'trTR', 'ukUA')
+ADDITIONAL_LOCALES = ('csCZ', 'daDK', 'hrHR', 'itIT', 'ltLT', 'plPL', 'svSE', 'trTR', 'ukUA')
 TEXT_FIELDS = ('name', 'nameFemale', 'nameHorde', 'title', 'summary', 'description', 'auraDescription', 'rank',
                'nameDescription', 'setName', 'eventObjectiveLabel', 'subName', 'equipmentRequirement')
