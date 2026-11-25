@@ -18,6 +18,11 @@
 - Kept custom radio controls out of WoW's global Settings search to avoid interference with protected settings. They remain available on the addon page.
 - Fixed missing World Map location translations when pointing at an area with the controller reticle.
 
+### Translations
+
+- Added 8 spells, 2 quests, and 1 item across all 19 supported languages, including A Sealed Crate, Again Into the Great Ossuary, and Seed of Renewal.
+- Updated 3,440 existing entries with current quest text, NPC names and titles, item names, and spell tooltips. This includes revised Tranquility, Bloom, Wither, and Shank tooltips, plus updated Czech and Polish quest translations.
+
 ## [1.9.0] - 2026-11-24
 
 ### Fixed
