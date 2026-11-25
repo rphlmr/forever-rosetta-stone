@@ -477,6 +477,50 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Dabar, {name}, dalyvausi Darrowshire mūšyje ir išgelbėsi Joseph Redpath.\n\nPadėk šį relikvijų ryšulį Darrowshire miesto aikštėje, ir Darrowshire dvasios pakils. Prisijunk prie jų mūšio ir pasirūpink, kad įvyktų du dalykai: Davil turi išgyventi iki Horgus mirties, o Redpath turi likti gyvas, kol bus sugadintas, ir tada būti nugalėtas.\n\nNugalėjus sugadintąjį Redpath, jo dvasia bus išgelbėta. Pasikalbėk su juo, tada grįžk pas jo dukterį Pamela.",
+      "dialogue": {
+        "3a7d703520d28d8884b7": "Dabar, $N, dalyvausi Darrowshire mūšyje ir išgelbėsi Joseph Redpath.$B$BPadėk šį relikvijų ryšulį Darrowshire miesto aikštėje, ir Darrowshire dvasios pakils. Prisijunk prie jų mūšio ir pasirūpink, kad įvyktų du dalykai: Davil turi išgyventi iki Horgus mirties, o Redpath turi likti gyvas, kol bus sugadintas, ir tada būti nugalėtas.$B$BNugalėjus sugadintąjį Redpath, jo dvasia bus išgelbėta. Pasikalbėk su juo, tada grįžk pas jo dukterį Pamela."
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Priimk Redpath atleidimą",
+          "type": "monster"
+        }
+      ],
+      "summary": "Padėk relikvijų ryšulį Darrowshire miesto aikštėje.\n\nNeleisk Davil Lightfire žūti, kol nežuvo Horgus.\n\nNeleisk kapitonui Redpath žūti, kol nepasirodė sugadintasis Redpath.\n\nNugalėk sugadintąjį Redpath.\n\nPasikalbėk su Joseph Redpath dvasia, kai ji pasirodys miesto aikštėje, tada pasikalbėk su Pamela jos namuose.",
+      "title": "Darrowshire mūšis",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3a7d703520d28d8884b7": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Teraz, {name}, weźmiesz udział w bitwie o Darrowshire i uratujesz Josepha Redpatha.\n\nUmieść ten pakunek relikwii na rynku Darrowshire, a duchy mieszkańców powstaną. Dołącz do bitwy i dopilnuj dwóch rzeczy: Davil musi przeżyć śmierć Horgusa, a Redpath musi przeżyć, by zostać spaczonym, a następnie pokonanym.\n\nPo pokonaniu spaczonego Redpatha jego duch zostanie ocalony. Porozmawiaj z nim, a potem wróć do jego córki Pameli.",
       "dialogue": {
@@ -818,7 +862,7 @@
           "type": "monster"
         }
       ],
-      "summary": "將遺物包裹放在達隆郡的廣場中。\n\n在霍古斯死亡之前，達維必須存活。\n\n在雷德帕斯隊長墮落之前保證他存活。\n\n擊敗墮落的雷德帕斯。\n\n當約瑟夫·雷德帕斯出現在廣場中時，與他的靈魂進行交談，然後回到帕米拉的家中去找帕米拉。",
+      "summary": "將聖物包裹放在達隆郡的廣場中。\n\n在霍古斯死亡之前，達維必須存活。\n\n在雷德帕斯隊長墮落之前保證他存活。\n\n擊敗墮落的雷德帕斯。\n\n當約瑟夫·雷德帕斯出現在廣場中時，與他的靈魂進行交談，然後回到帕米拉的家中去找帕米拉。",
       "title": "達隆郡的戰鬥",
       "translationMetadata": {
         "fields": {
@@ -842,7 +886,8 @@
           "summary": {
             "origin": "community",
             "source": "questie",
-            "sourceLocale": "zhTW"
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4377c981ac368d1593ec92788218e0a689a6a02b"
           },
           "title": {
             "origin": "original",

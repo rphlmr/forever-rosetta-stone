@@ -837,6 +837,82 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Quel'Danil Lodge yra Hinterlands aukštųjų elfų ryšių centras. Jų pasiuntiniai stengiasi užmegzti santykius su kitomis rasėmis ir dalijasi su jomis žiniomis apie Witherbark trolius, gyvenančius pietinėje Hinterlands dalyje. Visi su šiais ryšiais susiję dokumentai saugomi namelyje.\n\nMums nereikia, kad Highvale sudarytų sąjungas su kitais, {name}.\n\nSunaikink Highvale dokumentus. Turime sudeginti jų ryšių linijas... tiesiogine prasme.",
+      "dialogue": {
+        "82ba77366e8ecfec9635": "Puiku, $N. Kol Highvale stengsis atkurti prarastą informaciją, galėsime dar labiau apriboti jų ryšius...",
+        "acaa1aa6a8c70753a62d": "Quel'Danil Lodge yra Hinterlands aukštųjų elfų ryšių centras. Jų pasiuntiniai stengiasi užmegzti santykius su kitomis rasėmis ir dalijasi su jomis žiniomis apie Witherbark trolius, gyvenančius pietinėje Hinterlands dalyje. Visi su šiais ryšiais susiję dokumentai saugomi namelyje.$B$BMums nereikia, kad Highvale sudarytų sąjungas su kitais, $N.$B$BSunaikink Highvale dokumentus. Turime sudeginti jų ryšių linijas... tiesiogine prasme.",
+        "fb89059e492b87043d51": "Svarbiausia, kad Highvale elfai liktų izoliuoti. Ar radai namelį?"
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Sudeginti Highvale įrašus",
+          "type": "object"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Sudeginti Highvale užrašus",
+          "type": "object"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Sudeginti Highvale ataskaitą",
+          "type": "object"
+        }
+      ],
+      "summary": "Oran Snakewrithe Undercity nori, kad nukeliautum į Hinterlands ir sudegintum Highvale įrašus, ataskaitą ir užrašus.",
+      "title": "Ryšių linijos",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.82ba77366e8ecfec9635": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.acaa1aa6a8c70753a62d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.fb89059e492b87043d51": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Quel'Danil Lodge jest ośrodkiem komunikacji wysokich elfów z Hinterlands. Ich ambasadorzy nawiązują relacje z innymi rasami i dzielą się wiedzą o trollach Witherbark zamieszkujących południowe Hinterlands. Wszystkie dokumenty dotyczące tej komunikacji są przechowywane w siedzibie.\n\nNie potrzebujemy sojuszy Highvale z innymi, {name}.\n\nZniszcz ich dokumenty. Musimy spalić ich kanały komunikacji... dosłownie.",
       "dialogue": {
@@ -862,7 +938,7 @@
         }
       ],
       "summary": "Oran Snakewrithe w Undercity chce, by udać się do Hinterlands i spalić rejestry Highvale, raport Highvale oraz notatki Highvale.",
-      "title": "Kanały komunikacji",
+      "title": "Linie łączności",
       "translationMetadata": {
         "fields": {
           "description": {
@@ -908,10 +984,11 @@
             "sourceTextSha256": "b4139c7376aeca03ecbb2ce15df32bf7141fe6375a5f4c6276032391c552c7d8"
           },
           "title": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "54991ce1d8b204ec8066a44e5a5b7fce24f264cce11bc3a85657705b48280d20"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:d13a4d640c32c75a.22",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           }
         }
       }

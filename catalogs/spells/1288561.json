@@ -260,6 +260,30 @@
         }
       }
     },
+    "ltLT": {
+      "auraDescription": "Šarvai sumažinti $s1.\r\nNegalima naudoti slapstymosi ar nematomumo.",
+      "description": "Sumažina priešo šarvus ir atsparumus $s1, trukmė – $d. Kol veikia šis efektas, taikinys negali naudoti slapstymosi ar nematomumo.",
+      "name": "Fėjų ugnis",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "auraDescription": "Pancerz zmniejszony o $s1.\r\nNie można używać skradania ani niewidzialności.",
       "description": "Zmniejsza pancerz wróga i opory o $s1 przez $d. Podczas gdy jest pod wpływem, cel nie może używać ukrycia ani niewidoczności.",
@@ -468,7 +492,16 @@
   },
   "tooltipData": {
     "baseLevel": 0,
-    "durationMs": 15000,
+    "durationMs": 25000,
+    "durationMsSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellDuration": "4787f303fe8487cd67e5f9e8574fdc6fa2a03516dcfaabba23d9944f937223f5",
+        "SpellMisc": "fcda276800fd8cd1f64e8808dc1b8da24880fce992d246694d0dab79953e9135"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,

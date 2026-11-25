@@ -260,6 +260,30 @@
         }
       }
     },
+    "ltLT": {
+      "auraDescription": "Atakų pataikymo tikimybė sumažinta $s2%, kas $t1 sek. patiriama $s1 gamtos žalos.",
+      "description": "Priešą apninka vabzdžiai, sumažindami jo atakų pataikymo tikimybę $s2% ir per $d padarydami $o1 gamtos žalos.",
+      "name": "Masinis vabzdžių spiečius",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "auraDescription": "Szansa na trafienie atakami zmniejszona o $s2% i $s1 obrażeń Natury co $t1 sek.",
       "description": "Rój owadów atakuje wrogi cel, zmniejszając jego szansę na trafienie atakami o $s2% i zadając $o1 obrażeń od natury przez $d.",
@@ -471,12 +495,29 @@
   },
   "tooltipData": {
     "baseLevel": 0,
-    "durationMs": 20000,
+    "durationMs": 21000,
+    "durationMsSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellDuration": "4787f303fe8487cd67e5f9e8574fdc6fa2a03516dcfaabba23d9944f937223f5",
+        "SpellMisc": "fcda276800fd8cd1f64e8808dc1b8da24880fce992d246694d0dab79953e9135"
+      },
+      "sourceLocale": "enUS"
+    },
+    "effectValuesSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellEffect": "7a612a50e224769604d0e57968fd51c70f287e2d20646e0e2e8bf2548b0ebfd9"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,
         "auraType": 3,
-        "basePoints": 12.5,
+        "basePoints": 25.5,
         "bonusCoefficient": 0,
         "effectType": 6,
         "index": 0,
@@ -486,8 +527,8 @@
       {
         "apCoefficient": 0,
         "auraType": 54,
-        "basePoints": -75,
-        "bonusCoefficient": 1,
+        "basePoints": -25,
+        "bonusCoefficient": 0,
         "effectType": 6,
         "index": 1,
         "scalingClass": 0

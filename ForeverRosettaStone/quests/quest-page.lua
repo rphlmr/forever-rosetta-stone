@@ -128,7 +128,7 @@ function Addon:CreateNativeQuestBody(parent, contentWidth)
     function body:SetSections(sections, locale)
         self.lastSections = sections
         self.locale = locale
-        local wrapWithoutSpaces = Addon:UsesLocalizedFont(locale)
+        local wrapWithoutSpaces = Addon:UsesNonSpaceWrap(locale)
         local width = self.contentWidth or contentWidth or QUEST_TEMPLATE_MAP_DETAILS.contentWidth
         local leftInset = self.textInsetX or 5
         contents:SetWidth(width + leftInset)

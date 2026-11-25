@@ -749,7 +749,8 @@ def create_queue(documents, include_excluded_quests=False, evidence=None, root=R
     from tools.catalogs.import_policy import filter_queue
     from tools.build.client_label_scope import scope_globalstring_documents
     documents = scope_globalstring_documents(documents, root)
-    return filter_queue(collect_translation_candidates(documents, include_excluded_quests), evidence)
+    return filter_queue(collect_translation_candidates(documents, include_excluded_quests), evidence,
+                        documents['quests']['catalogs']['quests'])
 
 
 def validate_results(queue, results, documents=None):
@@ -1245,7 +1246,8 @@ def main():
         if args.command == 'foreign-queue':
             queue = create_foreign_queue(documents, args.include_excluded_quests)
             from tools.catalogs.import_policy import filter_queue, OfficialEvidence
-            queue = filter_queue(queue, OfficialEvidence(args.database, args.root) if args.database else None)
+            queue = filter_queue(queue, OfficialEvidence(args.database, args.root) if args.database else None,
+                                 documents['quests']['catalogs']['quests'])
             args.output.write_text(json.dumps(queue, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
             print(f"Created {len(queue['jobs'])} foreign-source jobs; "
                   f"{len(queue['missingSource'])} fields have no source in any language")
@@ -1254,7 +1256,8 @@ def main():
         if args.command == 'fallback-queue':
             queue = create_fallback_queue(documents)
             from tools.catalogs.import_policy import filter_queue, OfficialEvidence
-            queue = filter_queue(queue, OfficialEvidence(args.database, args.root) if args.database else None)
+            queue = filter_queue(queue, OfficialEvidence(args.database, args.root) if args.database else None,
+                                 documents['quests']['catalogs']['quests'])
             args.output.write_text(json.dumps(queue, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
             print(f"Created {len(queue['jobs'])} English-fallback target jobs")
             return

@@ -328,16 +328,22 @@ function Addon:RegisterMapMenuTranslations()
             if owner and owner:IsForbidden() then return end
             if isOwner and not isOwner(owner) then return end
             root:SetTooltipFrame(self.mapMenuTooltip)
+            local currentRow
             root:AddMenuReleasedCallback(self:Wrap("menu closed", function()
+                if self.mapMenuTooltipRow == currentRow then
+                    self.refreshMapMenuTooltip, self.mapMenuTooltipRow = nil, nil
+                end
+                currentRow = nil
                 self.mapMenuTooltip:Hide()
                 self.mapMenuTooltip:SetWindow(nil)
             end))
 
             local function HookElements(parent)
                 for _, description in parent:EnumerateElementDescriptions() do
-                    description:HookOnEnter(self:Wrap("menu hover", function(row)
+                    local function Render(row)
                         self.mapMenuTooltip:Hide()
-                        if row:IsForbidden() or not self:IsFeatureEnabled(feature) or self:IsTooltipBlocked() then return end
+                        if row:IsForbidden() or not row:IsVisible() or not self:IsFeatureEnabled(feature)
+                            or self:IsTooltipBlocked() then return end
 
                         local name = getName(description)
                         local nativeText = MenuUtil.GetElementText(description)
@@ -353,6 +359,18 @@ function Addon:RegisterMapMenuTranslations()
                             self:ApplyTooltipTranslationFont(tip, self:GetTargetLocale())
                         end)
                         self:PlaceCompanionTooltip(self.mapMenuTooltip, row, nil, true)
+                    end
+                    description:HookOnEnter(self:Wrap("menu hover", function(row)
+                        currentRow = row
+                        self.mapMenuTooltipRow = row
+                        self.refreshMapMenuTooltip = function() Render(row) end
+                        Render(row)
+                    end))
+                    description:HookOnLeave(self:Wrap("menu leave", function(row)
+                        if self.mapMenuTooltipRow == row then
+                            self.refreshMapMenuTooltip, self.mapMenuTooltipRow = nil, nil
+                        end
+                        if currentRow == row then currentRow = nil end
                     end))
                     HookElements(description)
                 end
@@ -536,7 +554,7 @@ function Addon:ShowLocationTooltip()
     local questList = QuestMapFrame.QuestsFrame.ScrollFrame
 
     local enabled = self:IsFeatureEnabled("locationTooltip")
-    if (not enabled and not self:IsDebugPicking()) or not questList:IsVisible()
+    if self:IsTooltipHoldHidden() or (not enabled and not self:IsDebugPicking()) or not questList:IsVisible()
         or (GameMenuFrame and GameMenuFrame:IsShown())
         or (self.errorDialog and self.errorDialog.frame:IsShown() and not self:IsDebugPicking()) then
         tip:Hide()
@@ -608,6 +626,13 @@ end
 
 function Addon:ShowTranslationTooltip()
     local tip = self.tooltip
+
+    if self:IsTooltipHoldHidden() then
+        if not GameTooltip:IsForbidden() then self:ClearStackedTooltip(GameTooltip, false, tip) end
+        tip:Hide()
+        self.locationTooltip:Hide()
+        return
+    end
 
     if GameTooltip:IsForbidden() then
         tip:Hide()

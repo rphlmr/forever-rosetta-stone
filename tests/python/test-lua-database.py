@@ -583,14 +583,18 @@ class DatabaseTests(unittest.TestCase):
                     rendered = rendered.replace('{required}', str(observed['numRequired']))
                     self.assertEqual(rendered, observed['text'])
 
-    def test_quest_170_objectives_cover_every_target_language(self):
+    def test_quest_170_objectives_match_catalog_coverage(self):
         _, api, _ = self.create_runtime()
         locales = load_catalog(ROOT, 'quests', ids={})['locales']
+        entity = json.loads((ROOT / 'catalogs/quests/170.json').read_bytes())
 
         for locale in locales:
             with self.subTest(locale=locale):
                 quest = api.GetQuest(api, 170, locale.encode())
                 lines = quest[b'objectiveLines'] if quest else None
+                if not entity['locales'].get(locale, {}).get('objectiveLines'):
+                    self.assertIsNone(lines)
+                    continue
                 self.assertIsNotNone(lines)
                 self.assertEqual({line[b'index'] for line in lines.values()}, {1, 2})
 
@@ -612,9 +616,11 @@ class DatabaseTests(unittest.TestCase):
             for locale in locales:
                 with self.subTest(quest=quest_id, field=observed['field'], target=locale):
                     target = api.GetQuest(api, quest_id, locale.encode())
-                    maintained = entity['locales'][locale][observed['field']]
-                    self.assertEqual(target[field].decode(), maintained)
-                    self.assertEqual(get_tokens(target[field].decode()), get_tokens(maintained))
+                    maintained = entity['locales'].get(locale, {}).get(observed['field'])
+                    actual = target[field] if target else None
+                    self.assertEqual(actual, maintained.encode() if maintained is not None else None)
+                    if maintained is not None:
+                        self.assertEqual(get_tokens(actual.decode()), get_tokens(maintained))
 
     def test_export_keeps_runtime_fields_and_filters_development_quests(self):
         objective = {'index': 1, 'type': 'item', 'objectiveType': 1, 'numRequired': 5,
@@ -927,7 +933,7 @@ class DatabaseTests(unittest.TestCase):
         self.assertIsNone(item_tool[b'requiredToolCategories'])
         self.assertEqual(api.GetItemName(api, 4471, b'frFR').decode(), 'Silex et amadou')
 
-    def test_captured_gossip_options_ship_all_locales_and_honest_ai_flags(self):
+    def test_captured_gossip_options_ship_catalog_names_and_honest_ai_flags(self):
         _, api, _ = self.create_runtime()
         targets = load_catalog(ROOT, 'quests', ids={})['locales']
         options = load_catalog(ROOT, 'gossipoptions')['catalogs']['gossipoptions']
@@ -939,12 +945,15 @@ class DatabaseTests(unittest.TestCase):
         self.assertTrue(captured_ids.issubset({int(key) for key in options}))
         for option_id in captured_ids:
             entity = options[str(option_id)]
-            self.assertTrue(set(targets).issubset(entity['locales']))
             for locale in targets:
                 with self.subTest(option=option_id, locale=locale):
-                    localized = entity['locales'][locale]
+                    localized = entity['locales'].get(locale)
+                    actual = api.GetGossipOptionName(api, option_id, locale.encode())
+                    if localized is None:
+                        self.assertIsNone(actual)
+                        continue
                     self.assertTrue(localized['name'])
-                    self.assertEqual(api.GetGossipOptionName(api, option_id, locale.encode()).decode(), localized['name'])
+                    self.assertEqual(actual.decode(), localized['name'])
                     origin = localized['translationMetadata']['fields']['name']['origin']
                     self.assertEqual(api.IsAITranslated(api, b'gossipoptions', option_id, locale.encode()), origin == 'ai')
         self.assertEqual(api.GetGossipOptionName(api, 96916, b'frFR').decode(), 'Hôtel des ventes')
@@ -972,9 +981,13 @@ class DatabaseTests(unittest.TestCase):
         _, api, _ = self.create_runtime()
         entity = json.loads((ROOT / 'catalogs/bookpages/2097.json').read_text())
         for locale in load_catalog(ROOT, 'quests', ids={})['locales']:
-            self.assertEqual(api.GetBookPage(api, 2097, locale.encode()).decode(),
-                             entity['locales'][locale]['description'])
-            origin = entity['locales'][locale]['translationMetadata']['fields']['description']['origin']
+            localized = entity['locales'].get(locale)
+            actual = api.GetBookPage(api, 2097, locale.encode())
+            if localized is None:
+                self.assertIsNone(actual)
+                continue
+            self.assertEqual(actual.decode(), localized['description'])
+            origin = localized['translationMetadata']['fields']['description']['origin']
             self.assertEqual(api.IsAITranslated(api, b'bookpages', 2097, locale.encode()), origin == 'ai')
         rules = api.GetBookRules(api, 2097)
         self.assertEqual(list(rules[b'pages'].values()), [2097, 2098, 2099, 2100])

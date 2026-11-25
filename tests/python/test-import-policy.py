@@ -87,6 +87,51 @@ class ImportPolicyTests(unittest.TestCase):
         self.assertEqual(queue['jobs'], [])
         self.assertEqual(queue['blocked'][0]['reasons'], ['noVerifiedOfficialTranslation'])
 
+    def test_catalog_quest_queue_requires_verified_source_and_objective_binding(self):
+        summary = 'Scout the ridge.'
+        capture = {'origin': 'original', 'source': 'wowClient', 'sourceLocale': 'enUS',
+                   'sourceBuild': '70938'}
+        english = {
+            'summary': summary, 'eventObjectiveLabel': summary,
+            'objectiveLines': [{'index': 2, 'type': 'event', 'text': summary}],
+            'translationMetadata': {'fields': {
+                'summary': {'origin': 'community', 'source': 'questie', 'sourceLocale': 'enUS'},
+                'eventObjectiveLabel': {'origin': 'community', 'source': 'questie', 'sourceLocale': 'enUS'},
+                'objectiveLines.2': capture,
+            }},
+        }
+        verified = {'locales': {'enUS': english}}
+        unverified = copy.deepcopy(verified)
+        unverified_fields = unverified['locales']['enUS']['translationMetadata']['fields']
+        for field in ('summary', 'objectiveLines.2'):
+            unverified_fields[field]['origin'] = 'ai'
+        doc = {'quests': {'locales': ['enUS', 'frFR', 'ltLT'],
+                          'catalogs': {'quests': {'1': verified, '2': unverified}}}}
+        queue = RESYNC['WORK']['create_queue'](doc)
+        self.assertEqual({job['context'] for job in queue['jobs']},
+                         {'quests.summary', 'quests.objectiveLines', 'quests.eventObjectiveLabel'})
+        for job in queue['jobs']:
+            self.assertEqual(job['locale'], 'ltLT')
+            self.assertEqual([pointer['id'] for pointer in job['pointers']], ['1'])
+        self.assertTrue(any(row['locale'] == 'frFR' and row['reasons'] == ['officialLocaleNeverAuthored']
+                            for row in queue['blocked']))
+        self.assertTrue(any(row['locale'] == 'ltLT' and row['reasons'] == ['noVerifiedClientObjectiveBinding']
+                            and [pointer['id'] for pointer in row['pointers']] == ['2']
+                            for row in queue['blocked']))
+
+        binding = {'index': 2, 'type': 'event', 'source': 'wowClient', 'sourceLocale': 'frFR',
+                   'sourceBuild': '71037', 'englishSha256': hashlib.sha256(summary.encode()).hexdigest()}
+        unverified['clientObjectiveBindings'] = {'objectiveLines.2': binding,
+                                                 'eventObjectiveLabel': {**binding, 'index': 1}}
+        captured = RESYNC['WORK']['create_queue'](doc)
+        pointers = {job['context']: {pointer['id'] for pointer in job['pointers']} for job in captured['jobs']}
+        self.assertEqual(pointers, {'quests.summary': {'1'}, 'quests.objectiveLines': {'1', '2'},
+                                   'quests.eventObjectiveLabel': {'1', '2'}})
+        binding['englishSha256'] = hashlib.sha256(b'Stale wording').hexdigest()
+        stale = RESYNC['WORK']['create_queue'](doc)
+        objectives = next(job for job in stale['jobs'] if job['context'] == 'quests.objectiveLines')
+        self.assertEqual([pointer['id'] for pointer in objectives['pointers']], ['1'])
+
     def test_quest_summary_exception_requires_both_pinned_sources_for_the_same_quest(self):
         summary = 'Return to Deliana.'
         questie = {'kind': 'quests', 'entity_id': '1', 'field': 'summary', 'locale': 'enUS',

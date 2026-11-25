@@ -20,7 +20,7 @@
   },
   "locales": {
     "csCZ": {
-      "description": "Timear a já jsme magicky zkoumali oblast na Kalimdoru známou jako Alcaz Island a téměř s jistotou jsme potvrdili, že je tam někdo, kdo vládne mocnou magií. Ta mágyně dokázala naše sondy rozptýlit, ale než to udělala, podařilo se mi zachytit obraz jakési knihy. Myslím, že to byl deník psaný starobylým dračím písmem.\n\nNevím, co v té knize je, ale chci ji prostudovat. Vydej se prosím do skrytého vězení pod Alcaz Island a přines nám tu knihu.",
+      "description": "Timear a já jsme magicky zkoumali oblast na Kalimdoru známou jako Alcaz Island a téměř s jistotou jsme potvrdili, že je tam někdo, kdo vládne mocnou magií. Ta mágyně dokázala naše sondy rozptýlit, ale než to udělala, podařilo se mi zachytit obraz jakési knihy. Myslím, že to byl deník psaný starobylým dračím písmem.\n\nNevím, co v té knize je, ale chci ji prostudovat. Vydej se do skrytého vězení pod Alcaz Island a přines nám tu knihu.",
       "dialogue": {
         "05bb1b5ca03f389e5362": "Získali jste ten deník?",
         "42fa99fc3a96f6384c37": "Takže mág, kterého jsme odhalili, byl ve skutečnosti černý drak v přestrojení? Nemohu říct, že mě to příliš překvapuje. Draci jsou vždycky lstiví.\n\nTo, že tu teď přede mnou stojíte, naznačuje, že jste byli nuceni draka zabít, že? Já si stěžovat nebudu. Získali jste deník a na světě je o jednoho ničemu méně. Podle mě je to dobrá denní práce.\n\nDěkuji vám, $N."
@@ -38,9 +38,9 @@
         "fields": {
           "description": {
             "origin": "community",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "0985796394c178a24ac8e62603fc278f330b450fddd8620c1cbc853dff2376e1"
+            "source": "czechForever",
+            "sourceLocale": "csCZ",
+            "sourceRevision": "0.8.5"
           },
           "dialogue.05bb1b5ca03f389e5362": {
             "origin": "ai",
@@ -552,6 +552,56 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "ltLT": {
+      "description": "Su Timear stebėjome Kalimdoro vietovę, vadinamą Alcaz sala, ir beveik įsitikinome, kad ten yra galinga magijos naudotoja. Ta magė sugebėjo išsklaidyti mūsų stebėjimo kerus, bet prieš tai man pavyko išvysti kažkokios knygos vaizdą. Manau, tai buvo dienoraštis, parašytas senoviniu drakonų raštu.\r\n\r\nNežinau, kas toje knygoje, bet norėčiau ją išstudijuoti. Norime, kad keliautum į paslėptą kalėjimą po Alcaz sala ir parneštum mums tą knygą.",
+      "dialogue": {
+        "05bb1b5ca03f389e5362": "Ar radai dienoraštį?",
+        "42fa99fc3a96f6384c37": "Vadinasi, mūsų aptikta magė iš tiesų buvo persirengęs juodasis drakonas? Negaliu sakyti, kad labai nustebau. Drakonai visuomet gudrūs.\n\nKadangi dabar stovi čia prieš mane, spėju, teko drakoną nukauti, tiesa? Aš tikrai nesiskųsiu. Parnešei dienoraštį, o pasaulyje vienu piktadariu mažiau. Mano manymu, tai geros dienos darbas.\n\nAčiū, $N."
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Parnešk dienoraštį",
+          "type": "item"
+        }
+      ],
+      "summary": "Parnešk Zarla dienoraštį iš Alcaz kalėjimo gelmių.",
+      "title": "Drakono dienoraštis",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.05bb1b5ca03f389e5362": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.42fa99fc3a96f6384c37": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           }
         }
       }

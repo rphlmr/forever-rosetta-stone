@@ -8,7 +8,8 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
 ## Blizzard and reference databases
 
 - Game text and names belong to Blizzard Entertainment. Client table references came through
-  [Wago.tools](https://wago.tools/db2), including builds `1.60.1.70862`, `1.60.1.70888` and `1.60.1.70938`.
+  [Wago.tools](https://wago.tools/db2), including builds `1.60.1.70862`, `1.60.1.70888`,
+  `1.60.1.70938` and `1.60.1.71091`.
 - [Spoken](https://spoken.quest/) supplied contributed Forever quest dialogue and matching
   localized wording. Catalog fields retain the source snapshot, and dialogue contexts retain the contribution ID.
 - [WoW Forever GG](https://wow-forever.gg/db/quests/95250-abominable-creatures/) supplied the English
@@ -23,6 +24,8 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
   `e19dfdf8528334ea63da0ecc4e291c134c0fc266` and
   `4dbb82440a27856f8dccf57094a5d792cdc7cc9b` and
   `e1652ce62113c152da682baf2d6fb85f1396bcfb`. See `questiedb-license.md` and `gpl-3.0.md`.
+  Revision [`4377c981`](https://github.com/Questie/QuestieDB/commit/4377c981ac368d1593ec92788218e0a689a6a02b)
+  supplied updated Forever names and quest summaries.
   NPC faction-template relationships also use the composed Forever static data from revision
   `48514e5119804c8b88cde800a1d99a8de1f28aef`, joined to Wago's build `1.60.1.70888` FactionTemplate table.
 - [Wowhead Forever](https://www.wowhead.com/forever) and
@@ -48,12 +51,14 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
   `1770d208ad853d23d61105cf510d53804770d916`: Ukrainian text and translation references.
   Retained upstream markings distinguish declared AI text from community text; the upstream
   model was unspecified. See `classicua-copying.txt`.
-- [Czech Forever](https://www.curseforge.com/wow/addons/czechforever/files/9687520),
-  Marek Lušovský, releases `0.8.3` and `0.8.2`, alongside retained text from `0.7.3` and `v0.7.1`: CC BY-NC 3.0.
+- Czech Forever by Marek Lušovský, including
+  [release `0.8.5`](https://www.curseforge.com/wow/addons/czechforever/files/9779672)
+  and retained text from `0.8.3`, `0.8.2`, `0.7.3` and `v0.7.1`. Licensed under CC BY-NC 3.0.
   Text AI usage is unspecified; the AI narration declaration does not establish text authorship.
   See `czechforever-license.txt`.
-- [Forever Translated Polish](https://www.curseforge.com/wow/addons/forever-translated/files/9434472),
-  Copyright (c) 2026 Ceridian, release `1.1.1`: CC BY-NC-SA 4.0.
+- Forever Translated Polish by Ceridian, Copyright (c) 2026, including
+  [release `1.2.1`](https://www.curseforge.com/wow/addons/forever-translated/files/9736971)
+  and retained text from `1.1.1`. Licensed under CC BY-NC-SA 4.0.
   Upstream AI usage was unknown. See `polish-license.txt`.
 - [Världen av Krigskraft](https://www.curseforge.com/wow/addons/varlden-av-krigskraft/files/9125768),
   Ninsew, archive author Pontus, release `0.10.1`: observed MIT declaration.

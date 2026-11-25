@@ -78,7 +78,8 @@ class PilotCases:
             elif target not in OFFICIAL_LOCALES and blank(values.get(target)):
                 if self.policy_evidence is not None and ai_block_reason(
                         target, kind, str(entity_id or identity['id']), field, english,
-                        self.policy_evidence) == 'noVerifiedOfficialTranslation':
+                        self.policy_evidence, quest=entity if kind == 'quests' else None) in (
+                            'noVerifiedOfficialTranslation', 'noVerifiedClientObjectiveBinding'):
                     status, reason = 'allowed_absence', 'blocked_by_translation_policy'
         if status is None:
             return False

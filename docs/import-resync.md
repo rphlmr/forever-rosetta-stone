@@ -53,11 +53,11 @@ queueing authorship. This exception applies only to book/letter fields in the de
 ## Target languages
 
 Official Forever locales are `enUS`, `deDE`, `esES`, `esMX`, `frFR`, `koKR`, `ptBR`, `ruRU`,
-`zhCN` and `zhTW`. Additional locales are `csCZ`, `daDK`, `hrHR`, `itIT`, `plPL`, `svSE`,
+`zhCN` and `zhTW`. Additional locales are `csCZ`, `daDK`, `hrHR`, `itIT`, `ltLT`, `plPL`, `svSE`,
 `trTR` and `ukUA`; Italian belongs to this additional group for Forever. Code owns these
 sets in [`official_text.py`](../tools/catalogs/official_text.py); configured targets live in
 [`catalogs/quests/metadata.json`](../catalogs/quests/metadata.json).
-Quest and NPC dialogue has a [specific exception](#quest-text-and-captured-objectives).
+Quest text and NPC dialogue have [specific exceptions](#quest-text-and-captured-objectives).
 
 | Situation | Official target languages | Additional target languages |
 | --- | --- | --- |
@@ -79,7 +79,8 @@ Never invent English, labels or objective bindings to fill missing source data.
 For the same ID and field, require **at least one verified non-English translation in an
 official client language** from Blizzard, Wago, Questie or EG Link. Its English context must
 match the maintained source. Require nonempty wording, normalized inequality with English,
-accepted flags and non-AI source authorship. A catalog claim alone is not independent evidence.
+accepted flags and non-AI source authorship. The verified catalog quest fields below have
+their own eligibility rules.
 
 For `quests.summary`, a verified Blizzard Forever quest response can instead confirm the
 quest ID. The composed QuestieDB snapshot must provide an unflagged, unambiguous English
@@ -88,7 +89,7 @@ summary. Blizzard confirms the quest identity. QuestieDB remains the source of t
 This exception applies only to additional-language summaries, including when the Blizzard
 web API exposes only the full description.
 
-Eligibility is determined from the verified corpus.
+The upstream-source path determines eligibility from the verified corpus.
 
 [`import_policy.py`](../tools/catalogs/import_policy.py) shares this check between ordinary,
 foreign and fallback queues, batch validation and label tooling. The template pilot uses the
@@ -102,6 +103,17 @@ owned tooltip-key maintenance scope. Unused labels are not coverage backfills; p
 builds still ship every owned GlobalString for dynamic native tooltip lookup.
 
 ## Quest text and captured objectives
+
+For additional target languages, an existing English quest summary with original or community
+English provenance may be translated directly from the maintained catalog. Use the recorded
+build, index and type of an original English `wowClient` objective, or a verified binding in
+`clientObjectiveBindings`. Bindings record the observed client build, locale, index and type
+along with the hash of the verified English field. Verify the English wording against the
+observed objective or an independently identified target for that same row before recording
+the binding. An event label can also use a unique captured English event objective with the
+same wording on the same quest. Keep the captured index, type and placeholders when translating
+indexed objectives.
+These rules apply to missing translations and do not authorize new official-language authorship.
 
 Verified English wording owned by a quest or NPC dialogue entry is sufficient for
 provisional AI translations in any supported target locale. This exception covers only

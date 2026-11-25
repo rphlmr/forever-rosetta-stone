@@ -88,7 +88,7 @@ CheckCollision = function()
 end
 ''')
 
-locales = sorted(database.GetLocales(database))
+locales = sorted(addon.tooltipFormatsByLocale)
 
 for item_id, subclass_id, native in [(147, 1, 'Tissu'), (2654, 3, 'Mailles')]:
     details = database.GetItemDetails(database, item_id, b'enUS')

@@ -729,6 +729,72 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Mano brangioji Natalia dingo.\n\nTiesą sakant, kelias savaites prieš dingimą ji elgėsi keistai. Ne kartą užtikau ją kalbančią su savimi, kai šalia nieko nebuvo. Ji tvirtino, kad viskas gerai ir kad jai būtina leisti tęsti tyrimus.\n\nPaskutinį kartą ji buvo matyta einanti į Bronzebeardo stovyklą pietuose.\n\nMano kareivių vos pakanka turimoms užduotims, {name}. Turiu tavęs paprašyti nueiti į Bronzebeardo stovyklą ir apklausti tuos nykštukus. ",
+      "dialogue": {
+        "73b345d4265f30d259be": "<Vadas Mar’alith susimąstęs nuleidžia galvą.>$B$BNesvarbu, gyva ji ar mirusi, turiu pasielgti teisingai. Privalome ją surasti. Deja, pareiga mane laiko šiame poste. Ar dar kartą man padėsi, $N?",
+        "e7061f84bf7c4017e660": "Mano brangioji Natalia dingo.$B$BTiesą sakant, kelias savaites prieš dingimą ji elgėsi keistai. Ne kartą užtikau ją kalbančią su savimi, kai šalia nieko nebuvo. Ji tvirtino, kad viskas gerai ir kad jai būtina leisti tęsti tyrimus.$B$BPaskutinį kartą ji buvo matyta einanti į Bronzebeardo stovyklą pietuose.$B$BMano kareivių vos pakanka turimoms užduotims, $N. Turiu tavęs paprašyti nueiti į Bronzebeardo stovyklą ir apklausti tuos nykštukus. ",
+        "f227b96bb36ea31ce06c": "Negaišk laiko, $N!"
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Frankal apklaustas",
+          "type": "monster"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Rutgar apklaustas",
+          "type": "monster"
+        }
+      ],
+      "summary": "Vadas Mar’alith Cenariono tvirtovėje Silithuse nori, kad apklaustum Bronzebeardo stovyklos gyventojus. Stovyklą rasi į pietus nuo Cenariono tvirtovės.\n\nSurinkęs reikiamą informaciją, grįžk pas vadą Mar’alith.",
+      "title": "Brangioji Natalia",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.73b345d4265f30d259be": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e7061f84bf7c4017e660": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.f227b96bb36ea31ce06c": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Moja droga Natalia zaginęła.\n\nPrawdę mówiąc, przez kilka tygodni przed zniknięciem zachowywała się dziwnie. Niejednokrotnie przyłapałem ją, jak rozmawiała sama ze sobą, gdy nikogo nie było w pobliżu. Uparcie twierdziła, że wszystko jest w porządku i musi móc kontynuować badania.\n\nOstatnio widziano ją, jak szła do obozu Bronzebearda na południu.\n\nMoi żołnierze są zbyt rozproszeni, {name}. Musisz pójść do obozu Bronzebearda i wypytać krasnoludy.",
       "dialogue": {
@@ -1237,7 +1303,7 @@
           "type": "monster"
         }
       ],
-      "summary": "希利蘇斯塞納裏奧要塞的指揮官瑪爾利斯想要妳詢問銅須營地的矮人。妳可以在塞納裏奧要塞以南找到銅須營地。\n\n壹旦妳收集到有用的信息，就回到指揮官瑪爾利斯那兒。",
+      "summary": "希利蘇斯，指揮官瑪爾利斯要你去詢問銅鬚營地的矮人居住者。你可以在塞納里奧城堡南邊找到銅鬚營地。\n\n當你收集到需要的資訊再回去找指揮官瑪爾利斯。",
       "title": "親愛的娜塔莉雅",
       "translationMetadata": {
         "fields": {
@@ -1279,7 +1345,8 @@
           "summary": {
             "origin": "community",
             "source": "questie",
-            "sourceLocale": "zhTW"
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4377c981ac368d1593ec92788218e0a689a6a02b"
           },
           "title": {
             "origin": "original",

@@ -325,6 +325,36 @@
         }
       }
     },
+    "ltLT": {
+      "auraDescription": "Pažymėtas mirčiai. Po $d patirsi $w1 žalos.",
+      "description": "Baigiamasis veiksmas, pažymintis taikinį ir už kiekvieną kombinacijos tašką kaupiantis dalį jūsų atakų padarytos žalos. Garrote ir Rupture žala kaupiama dvigubai sparčiau. Po $d sukaupta žala padaroma taikiniui, tačiau neviršija ribos, kuri didėja priklausomai nuo atakos galios ir kritinio smūgio tikimybės:\r\n   1 taškas  : sukaupiama ${1*$<ratio>}%, žalos riba ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   2 taškai: sukaupiama ${2*$<ratio>}%, žalos riba ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   3 taškai: sukaupiama ${3*$<ratio>}%, žalos riba ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   4 taškai: sukaupiama ${4*$<ratio>}%, žalos riba ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}\r\n   5 taškai: sukaupiama ${5*$<ratio>}%, žalos riba ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>}",
+      "name": "Mirties žymė",
+      "rank": "2 rangas",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "rank": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "auraDescription": "Naznaczony śmiercią. Otrzymuje $w1 obrażeń po $d.",
       "description": "Cios kończący oznacza cel i gromadzi część obrażeń twoich ataków za każdy punkt kombinacji. Obrażenia «Duszenie» i «Pęknięcie» gromadzą się dwa razy szybciej. Po $d zgromadzone obrażenia zostają zadane do maksimum zwiększanego przez siłę ataku i szansę trafienia krytycznego:\r\n   1 punktów  : ${1*$<ratio>}% zgromadzono, ${((98+(1*158)+1*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń\r\n   2 punktów: ${2*$<ratio>}% zgromadzono, ${((98+(2*158)+2*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń\r\n   3 punktów: ${3*$<ratio>}% zgromadzono, ${((98+(3*158)+3*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń\r\n   4 punktów: ${4*$<ratio>}% zgromadzono, ${((98+(4*158)+4*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń\r\n   5 punktów: ${5*$<ratio>}% zgromadzono, ${((98+(5*158)+5*$<maxAP>*$apm)*($mcrit/100+1))*$<coup>} limit obrażeń",

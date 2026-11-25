@@ -259,6 +259,30 @@
         }
       }
     },
+    "ltLT": {
+      "auraDescription": "Kas $t1 sek. padaroma $1271047s1 šešėlių žalos.\r\nPoveikiui pasibaigus, padaro $1271008s1 šešėlių žalos žaidėjams $1271008A1 jardų atstumu.",
+      "description": "Padaro priešui $s2 šešėlių žalos, o tada kas $1271100t1 sek. padaro papildomai $1271100s1 šešėlių žalos.\r\nPoveikiui pasibaigus, padaro $1270830s1 šešėlių žalos žaidėjams $1270830A1 jardų atstumu.\r\n",
+      "name": "Šešėlių ugnis",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "auraDescription": "Zadaje $1271047s1 obrażeń od cienia co $t1 sek.\r\nPo wygaśnięciu zadaje $1271008s1 obrażeń od cienia graczom w promieniu $1271008A1 jardów.",
       "description": "Zadaje wrogowi $s2 obrażeń od cienia, a następnie dodatkowe $1271100s1 obrażeń od cienia co $1271100t1 sek.\r\nPo wygaśnięciu zadaje $1270830s1 obrażeń od cienia graczom w promieniu $1270830A1 jardów.\r\n",
@@ -468,12 +492,20 @@
   "tooltipData": {
     "baseLevel": 0,
     "durationMs": 20000,
+    "effectValuesSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellEffect": "7a612a50e224769604d0e57968fd51c70f287e2d20646e0e2e8bf2548b0ebfd9"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,
         "auraType": 23,
         "basePoints": 15,
-        "bonusCoefficient": 0.12999999523,
+        "bonusCoefficient": 0,
         "effectType": 6,
         "index": 0,
         "periodMs": 4000,
@@ -484,7 +516,7 @@
         "apCoefficient": 0,
         "auraType": 0,
         "basePoints": 85,
-        "bonusCoefficient": 0.15000000596,
+        "bonusCoefficient": 0,
         "effectType": 2,
         "index": 1,
         "scalingClass": 0,

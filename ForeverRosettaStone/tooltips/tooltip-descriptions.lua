@@ -471,14 +471,10 @@ local function ResolveSharedTooltipText(self, text, locale)
     if not Readable(text, "string") then return end
     if text == "" then return end
     local invariant = not HasTranslatableText(text)
-    local formats = self.tooltipFormatsByLocale and self.tooltipFormatsByLocale[locale]
+    local localeFormats = self.tooltipFormatsByLocale and self.tooltipFormatsByLocale[locale]
         or locale == "enUS" and self.englishTooltipFormats
-    if not formats then return invariant and text or nil end
-    local hasSourceFormat
-    for key in pairs(formats) do
-        if Readable(NativeFormat(key), "string") and NativeFormat(key) ~= "" then hasSourceFormat = true; break end
-    end
-    if not hasSourceFormat then return invariant and text or nil end
+    if not localeFormats and not self.GetClientLabelFormats then return invariant and text or nil end
+    local formats = localeFormats or {}
     local opening, body, closing = text:match("^(|c%x%x%x%x%x%x%x%x)(.-)(|r)$")
     body = body or text
     if self.TranslateClientLabel then
@@ -520,7 +516,7 @@ local function ResolveSharedTooltipText(self, text, locale)
         return cache[value] or nil
     end
     -- Only shared GlobalStrings formats are matched here. Entity prose remains ID-based.
-    local result = TranslateKnownFormats(body, formats, TranslateValue, true, locale)
+    local result = TranslateKnownFormats(body, localeFormats, TranslateValue, true, locale)
     if not result then
         local creatorFormat = self.GetClientLabel and self:GetClientLabel("ITEM_CREATED_BY", locale)
             or formats.ITEM_CREATED_BY
@@ -546,7 +542,7 @@ local function ResolveSharedTooltipText(self, text, locale)
             end
         end
     end
-    if not result and self.GetClientLabelFormats then
+    if not result and localeFormats and self.GetClientLabelFormats then
         result = TranslateKnownFormats(body, self:GetClientLabelFormats(body, locale) or {}, TranslateValue, true, locale)
     end
     if not result and (body:find("\n", 1, true) or body:find("|n", 1, true)) then

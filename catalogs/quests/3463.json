@@ -942,6 +942,92 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Atidžiai klausyk, {name}. Nors keturių bokštų niekada neįmanoma sunaikinti, Atpildo deglu gali juos labai ilgam padegti: ši ugnis nepavaldi jokiai stichijai ar jėgai.\n\nKol jie degs, jokie sargybiniai ar patruliai negalės užimti stebėjimo postų, tad pirmoji jų gynybos linija bus panaikinta.\n\nPrivalai įeiti į kiekvieną bokštą ir jo įtvirtinimų viduje panaudoti Atpildo deglą. Saugokis elitinių Dark Iron sargybinių, {name}.",
+      "dialogue": {
+        "9435b88b5ad99dca2280": "Atidžiai klausyk, $N. Nors keturių bokštų niekada neįmanoma sunaikinti, Atpildo deglu gali juos labai ilgam padegti: ši ugnis nepavaldi jokiai stichijai ar jėgai.$B$BKol jie degs, jokie sargybiniai ar patruliai negalės užimti stebėjimo postų, tad pirmoji jų gynybos linija bus panaikinta.$B$BPrivalai įeiti į kiekvieną bokštą ir jo įtvirtinimų viduje panaudoti Atpildo deglą. Saugokis elitinių Dark Iron sargybinių, $N.",
+        "9de2473c6b4427111c32": "Nuostabu! Argi ne nuostabu, šeimininke? ",
+        "c5cd4a1cce1fcd2084da": "Ar pasiklydai, $N?"
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Vakarų bokštas dega",
+          "type": "object"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Pietų bokštas dega",
+          "type": "object"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Rytų bokštas dega",
+          "type": "object"
+        },
+        {
+          "index": 4,
+          "text": "{current}/{required} Šiaurės bokštas dega",
+          "type": "object"
+        }
+      ],
+      "summary": "Padebk šiaurinį, pietinį, rytinį ir vakarinį sargybos bokštus, kiekvieno pastato viduje panaudodamas Atpildo deglą. \n",
+      "title": "Padegk juos!",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9435b88b5ad99dca2280": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.9de2473c6b4427111c32": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c5cd4a1cce1fcd2084da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.4": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Słuchaj uważnie, {name}. Choć czterech wież nigdy nie można zniszczyć, pochodnia odpłaty pozwoli podpalić je na bardzo długi czas ogniem, którego nie ugasi żaden żywioł ani siła.\n\nDopóki płoną, żaden strażnik ani oddział wartowników nie zajmie posterunków, przez co pierwsza linia obrony przestanie działać.\n\nMusisz wejść do każdej wieży i użyć pochodni odpłaty wewnątrz umocnień. Strzeż się elitarnych wartowników Ciemnego Żelaza, {name}.",
       "dialogue": {
@@ -972,7 +1058,7 @@
         }
       ],
       "summary": "Podpal północną, południową, wschodnią i zachodnią wieżę strażniczą, używając pochodni odpłaty wewnątrz każdego budynku.\n",
-      "title": "Podpal je!",
+      "title": "Niech płoną!",
       "translationMetadata": {
         "fields": {
           "description": {
@@ -1023,10 +1109,11 @@
             "sourceTextSha256": "b22cb746baa5a5eece58e04b79506d04a7e36edebffefcb7a5c736b9a3b19962"
           },
           "title": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "345ed53062912775e238229a5f3b7f34bb4efe892ad90961c062e70ef24859b7"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:837004d980e15da2.16",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           }
         }
       }

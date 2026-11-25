@@ -43,9 +43,9 @@ def plan(root=ROOT):
     from template_pilot_spells import talent_rank_contexts
     selection = read(root / CORPUS / 'selection.json')
     sources = sorted(OFFICIAL_LOCALES)
-    targets = read(root / 'catalogs/quests/metadata.json')['document']['locales']
+    targets = selection['targetLocales']
     if len(targets) != len(set(targets)) or not set(sources) <= set(targets):
-        raise ValueError('Invalid configured locale inventory')
+        raise ValueError('Invalid regression locale inventory')
     scenarios = {}
     for chosen in selection['selections']:
         surface, entity, field = chosen['surface'], chosen['id'], chosen['field']
@@ -73,7 +73,7 @@ def plan(root=ROOT):
 
 def dependencies(root, scenario):
     """Read only selected records and their explicit spell references."""
-    files = {CORPUS / 'selection.json', Path('catalogs/quests/metadata.json'),
+    files = {CORPUS / 'selection.json',
              Path(__file__).relative_to(ROOT), Path('tests/python/live_spell_fixture.py'),
              Path('tests/python/template_pilot_spells.py')}
     if scenario['surface'] == 'talents':

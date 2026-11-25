@@ -259,6 +259,30 @@
         }
       }
     },
+    "ltLT": {
+      "auraDescription": "Po $d padaro $s1 šešėlių žalos.",
+      "description": "Užtraukia taikiniui galingą prakeiksmą, kuris po $d padaro $s1 šešėlių žalos.",
+      "name": "Pražūtis",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "auraDescription": "Zadaje $s1 obrażeń od cienia po $d.",
       "description": "Nakłada na cel potężną klątwę, która po $d zadaje $s1 obrażeń od Cienia.",
@@ -467,11 +491,19 @@
   },
   "tooltipData": {
     "durationMs": 10000,
+    "effectValuesSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellEffect": "7a612a50e224769604d0e57968fd51c70f287e2d20646e0e2e8bf2548b0ebfd9"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,
         "auraType": 3,
-        "basePoints": 100,
+        "basePoints": 130,
         "bonusCoefficient": 0,
         "effectType": 6,
         "index": 0,
@@ -480,7 +512,15 @@
         "variance": 0.15000000596
       }
     ],
-    "maxTargets": 5,
+    "maxTargets": 8,
+    "maxTargetsSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellTargetRestrictions": "1d3152bbc647458981ceed10e922e2b2e00a27f55e5ee63f17f70d5d1b0e6681"
+      },
+      "sourceLocale": "enUS"
+    },
     "rangeMax": 0,
     "rangeMaxByTarget": [
       0,

@@ -220,12 +220,28 @@ do
     -- Choices start in the native control column (CENTER - 80) so D-pad down reaches the checkboxes below.
     local controlColumn = languageList:GetWidth() / 2 - 80
     local chineseFont = [[Fonts\blei00d.TTF]]
+    local originalPresentation = Addon:GetTooltipPresentation()
+    Addon:SetTooltipPresentation("below")
+    local labelFonts = {
+        zhTW = [[Fonts\arheiuhk_bd.TTF]],
+        ltLT = [[Fonts\ARIALN.TTF]],
+        csCZ = [[Fonts\ARIALN.TTF]],
+    }
     for index, button in ipairs(languageList.buttons) do
         local _, _, _, x = button:GetPoint(1)
         equal(index % 2 == 1 and x == controlColumn or x > controlColumn, true,
             "language radio sits in the native control column: " .. button.value)
+        if labelFonts[button.value] then
+            equal(select(1, button.text:GetFont()), labelFonts[button.value], "language picker font: " .. button.value)
+            equal(button.text:GetText(), databaseAPI:GetLocales()[button.value], "language picker label: " .. button.value)
+        end
         if button.value == "zhTW" then
-            equal(select(1, button.text:GetFont()), chineseFont, "language picker uses the choice's font")
+            button:Fire("OnEnter")
+            local tip = Addon:GetWidgetTooltip()
+            equal(select(1, tip:GetLeftLine(2):GetFont()) ~= chineseFont, true, "help keeps its client font")
+            equal(select(1, tip:GetLeftLine(6):GetFont()) ~= chineseFont, true, "native item sample keeps its client font")
+            equal(select(1, tip:GetLeftLine(tip:NumLines()):GetFont()), chineseFont, "translated sample uses the target font")
+            button:Fire("OnLeave")
         end
     end
     local initializer
@@ -239,7 +255,9 @@ do
     local locale = Addon.preferences.locale
     Addon.preferences.locale = "zhTW"
     Settings.InitTooltip("Preview", "拉斯梅爾之怒")
-    equal(select(1, SettingsTooltip:GetLeftLine(2):GetFont()), chineseFont, "native checkbox preview uses the target font")
+    equal(select(1, SettingsTooltip:GetLeftLine(2):GetFont()) ~= chineseFont, true, "native checkbox help keeps the client font")
+    equal(select(1, SettingsTooltip:GetLeftLine(SettingsTooltip:NumLines()):GetFont()), chineseFont,
+        "only the translated checkbox sample uses the target font")
     SettingsTooltip:ClearLines()
     initializer = {}
     Settings.InitTooltip("Unrelated setting", "Other text")
@@ -247,6 +265,7 @@ do
     SettingsTooltip:ClearLines()
     SettingsTooltip:Hide()
     Addon.preferences.locale = locale
+    Addon:SetTooltipPresentation(originalPresentation)
     local _, _, _, positionX = positionList.buttons[1]:GetPoint(1)
     equal(positionX, positionList:GetWidth() / 2 - 80, "position radios share the native control column")
     -- Native rows are navigated from their LEFT edge; first-column choices share that anchor.
@@ -326,7 +345,26 @@ for _, nativeCategory in ipairs(Settings.allCategories) do
     if nativeCategory:GetID():find(category:GetID(), 1, true) == 1 then
         for _, initializer in ipairs(nativeCategory.initializers) do
             equal(initializer.kind == "dropdown", false, "addon choices avoid the unsafe native popup transition")
+            equal(initializer.parentInitializer, nil, "native search does not read addon-authored parent links")
+            if initializer.kind == "button" then
+                equal(initializer.search, false, "action buttons avoid addon-authored search tags")
+            elseif initializer.kind == "panel" and initializer.data.list then
+                equal(initializer.data.settings, nil, "custom radio panel does not request generated search tags")
+                equal(initializer.searchTags, nil, "custom radio panel stays out of global search")
+                equal(settings[initializer.data.list] ~= nil, true, "custom radio preference remains registered")
+            end
         end
+    end
+end
+for _, initializer in ipairs(category.initializers) do
+    if initializer.setting == settings.questAutoOpen then
+        equal(initializer.indented, true, "dependent checkbox stays indented")
+        local enabled = settings.questPanel:GetValue()
+        settings.questPanel:SetValue(false)
+        equal(initializer.displayedEnabled, false, "dependent checkbox disables with its parent")
+        settings.questPanel:SetValue(true)
+        equal(initializer.displayedEnabled, true, "dependent checkbox enables with its parent")
+        settings.questPanel:SetValue(enabled)
     end
 end
 settings.locale:SetValue("deDE")
@@ -390,7 +428,7 @@ do
         for index, button in ipairs(list.buttons) do
             button:Fire("OnEnter")
             local tip = Addon:GetWidgetTooltip()
-            local help = tip.lines[#tip.lines]
+            local help = table.concat(tip.lines, "\n")
             local marker = "|cffaaaaaa" .. Addon:SettingsText("preview") .. "|r"
             local offset = help:find(marker, 1, true)
             assert(offset, "missing hover sample for " .. kind)
@@ -448,7 +486,7 @@ do
     local modeControl = Find(current)
     modeControl.previous:Fire("OnEnter")
     local help = Addon:GetWidgetTooltip().lines
-    equal(help[#help]:find(Addon:SettingsText("preview"), 1, true) ~= nil, true, "live arrows preview their choice")
+    equal(table.concat(help, "\n"):find(Addon:SettingsText("preview"), 1, true) ~= nil, true, "live arrows preview their choice")
     equal(Addon:GetTooltipPresentation(), mode, "live arrow hover does not select the choice")
     modeControl.previous:Fire("OnLeave")
     modeControl.previous:OnSmartNavClick()
@@ -568,6 +606,114 @@ GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
 GameTooltip:Show()
 Addon:ShowTranslationTooltip()
 equal(Addon.tooltip:IsShown(), true, "enabled quest-list companion appears")
+do
+    local previousIsKeyDown, held = IsKeyDown, {}
+    IsKeyDown = function(key) return held[key] == true end
+    equal(Addon.settings.tooltipHold:GetValue(), false, "hold mode is opt-in")
+    equal(Addon.preferences.tooltipHoldKey, "SHIFT", "Shift is assigned by default")
+    Addon:OpenSettings()
+    local keyboard = Settings.FindButton(category, Addon:SettingsText("tooltipHoldKey"))
+    local controller = Settings.FindButton(category, Addon:SettingsText("tooltipHoldGamepad"))
+    equal(keyboard.showNew, true, "the keyboard assignment has a New badge")
+    equal(controller.showNew, true, "the controller assignment has a New badge")
+    for _, initializer in ipairs(category.initializers) do
+        if initializer.setting == Addon.settings.tooltipHold then
+            equal(initializer:IsNewTagShown(), true, "the hold checkbox has a New badge")
+        end
+    end
+    equal(keyboard.text(), "SHIFT", "the settings row shows the current keyboard binding")
+    local scrollBox = SettingsPanel:GetSettingsList().ScrollBox
+    local previousForEachFrame = scrollBox.ForEachFrame
+    local keyboardRow = { Button = CreateFrame("Button", nil, scrollBox) }
+    local controllerRow = { Button = CreateFrame("Button", nil, scrollBox) }
+    function scrollBox:ForEachFrame(callback)
+        callback(keyboardRow, keyboard)
+        callback(controllerRow, controller)
+    end
+    keyboard.callback()
+    local dialog = Addon.tooltipHoldBindingDialog
+    equal(dialog.template, nil, "the popup does not inherit the full-parent border anchors")
+    equal(dialog.border.allPointsTarget, dialog, "only the border fills the popup")
+    equal(dialog.border:GetFrameLevel() < dialog:GetFrameLevel(), true, "the opaque border sits behind the label")
+    equal(select(2, dialog:GetPoint(1)), SettingsPanel, "the compact popup is anchored to Settings")
+    equal(dialog:GetWidth(), 400, "the editor has a compact fixed width")
+    equal(dialog:GetHeight(), 96, "the editor fits its label and action row")
+    equal(dialog.keyboardEnabled, false, "opening the editor does not start capture")
+    dialog.assign:Fire("OnClick")
+    equal(dialog:GetHeight(), 128, "capture adds only the space needed for the prompt")
+    dialog:Fire("OnKeyDown", "LCTRL")
+    dialog:Fire("OnKeyDown", "F8")
+    dialog:Fire("OnKeyDown", "F8")
+    equal(Addon.preferences.tooltipHoldKey, "SHIFT", "the chord is saved on release")
+    dialog:Fire("OnKeyUp", "F8")
+    equal(Addon.preferences.tooltipHoldKey, "CTRL F8", "keyboard chord is saved without repeated keys")
+    equal(keyboard.text(), "CTRL + F8", "the settings row shows the full shortcut")
+    equal(keyboardRow.Button:GetText(), "CTRL + F8", "the visible keyboard button updates without reopening Settings")
+    equal(dialog.label:GetText():find("CTRL + F8", 1, true) ~= nil, true, "the editor displays the assignment")
+    equal(dialog.keyboardEnabled, false, "binding capture releases keyboard input")
+    dialog.unbind:Fire("OnClick")
+    Addon:LoadPreferences()
+    equal(keyboard.text(), Addon:SettingsText("tooltipHoldUnassigned"), "keyboard unbind survives preference loading")
+    dialog.reset:Fire("OnClick")
+    equal(keyboard.text(), "SHIFT", "keyboard reset restores Shift")
+    dialog.assign:Fire("OnClick")
+    dialog:Fire("OnKeyDown", "LCTRL")
+    dialog:Fire("OnKeyDown", "F8")
+    dialog:Fire("OnKeyUp", "F8")
+    controller.callback()
+    dialog.assign:Fire("OnClick")
+    dialog:Fire("OnGamePadButtonDown", "PADRSTICK")
+    dialog:Fire("OnGamePadButtonDown", "PADLSHOULDER")
+    dialog:Fire("OnGamePadButtonUp", "PADRSTICK")
+    equal(Addon.preferences.tooltipHoldGamepad, "PADRSTICK PADLSHOULDER", "controller chord is assigned separately")
+    equal(dialog.gamepadEnabled, false, "binding capture releases gamepad input")
+    equal(controller.text(), "R3 + LB", "the controller row shows both inputs")
+    equal(controllerRow.Button:GetText(), controller.text(), "the visible controller button updates without reopening Settings")
+    dialog.reset:Fire("OnClick")
+    equal(controller.text(), Addon:SettingsText("tooltipHoldUnassigned"), "controller reset clears its assignment")
+    dialog.assign:Fire("OnClick")
+    dialog:Fire("OnGamePadButtonDown", "PADRSTICK")
+    dialog:Fire("OnGamePadButtonDown", "PADLSHOULDER")
+    dialog:Fire("OnGamePadButtonUp", "PADRSTICK")
+    keyboard.callback()
+    dialog.assign:Fire("OnClick")
+    dialog:Fire("OnKeyDown", "F9")
+    dialog:Fire("OnKeyDown", "ESCAPE")
+    equal(Addon.preferences.tooltipHoldKey, "CTRL F8", "Escape cancels reassignment")
+    scrollBox.ForEachFrame = previousForEachFrame
+    SettingsPanel:Hide()
+
+    Addon.settings.tooltipHold:SetValue(true)
+    equal(Addon.tooltip:IsShown(), false, "enabling hold mode hides an already open translation")
+    equal(GameTooltip:IsShown(), true, "the native tooltip stays visible")
+    held.F8 = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.tooltip:IsShown(), false, "one key from the keyboard chord does not reveal the tooltip")
+    held.CTRL = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.tooltip:IsShown(), true, "keyboard reveals the already open tooltip")
+    held.PADRSTICK = true
+    held.PADLSHOULDER = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    held.F8 = false
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.tooltip:IsShown(), true, "the gamepad keeps the tooltip translated when the keyboard is released")
+    held.PADRSTICK = false
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.tooltip:IsShown(), false, "releasing both inputs hides the translation")
+    held.PADRSTICK = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.tooltip:IsShown(), true, "the gamepad reveals the tooltip by itself")
+    held.PADLSHOULDER = false
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.tooltip:IsShown(), false, "one remaining controller button is insufficient")
+    Addon.settings.tooltipHold:SetValue(false)
+    held.PADRSTICK = false
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.tooltip:IsShown(), true, "disabled hold mode ignores release")
+    Addon.preferences.tooltipHoldKey, Addon.preferences.tooltipHoldGamepad = "SHIFT", ""
+    IsKeyDown = previousIsKeyDown
+end
 Addon:OpenSettings()
 equal(Addon.tooltip:IsShown(), true, "opening settings preserves map/quest hover companions")
 Addon.input:Fire("OnUpdate", 0.2)

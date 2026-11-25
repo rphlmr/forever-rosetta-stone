@@ -274,7 +274,8 @@ def queue(root, directory, output=None):
             if selected:
                 jobs.append({**job, 'pointers': selected})
         candidates['jobs'] = jobs
-    result = filter_queue(candidates, OfficialEvidence(manifest['database'], root))
+    result = filter_queue(candidates, OfficialEvidence(manifest['database'], root),
+                          documents['quests']['catalogs']['quests'])
     (directory / 'translation-queue.json').write_text(dump_json(result))
     return {'eligibleJobs': len(result['jobs']), 'blockedJobs': len(result['blocked'])}
 

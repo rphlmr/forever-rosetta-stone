@@ -1,5 +1,15 @@
 {
   "areaId": 12,
+  "clientObjectiveBindings": {
+    "eventObjectiveLabel": {
+      "englishSha256": "431f1229b4f02eeed814ddcd20afd83252695d3f60847194346e7a4e82b6d71c",
+      "index": 1,
+      "source": "wowClient",
+      "sourceBuild": "71037",
+      "sourceLocale": "frFR",
+      "type": "event"
+    }
+  },
   "dialogueContexts": {
     "3487698ba84c0ba83e1d": {
       "lineId": "q:62:accept",
@@ -355,7 +365,7 @@
         "81b0871efd262a09d595": "Ce sont de mauvaises nouvelles. Quoi d'autre, des dragons ? Nous devons intensifier les patrouilles près de cette mine. Merci de vos efforts, $N. Attendez une minute. . . J'ai peut-être une autre mission pour vous. ",
         "8570f7eb103b5f4dfd43": "Qu'avez-vous à signaler, $N ?  Avez-vous visité la mine de Fargodeep ?"
       },
-      "eventObjectiveLabel": "Scout through the Fargodeep Mine",
+      "eventObjectiveLabel": "Aller explorer la mine de Fargodeep",
       "summary": "Explorer la mine de Fargodeep, puis revenir voir le maréchal Dughan de Comté-de-l’Or.",
       "title": "La mine de Fargodeep",
       "translationMetadata": {
@@ -384,9 +394,10 @@
             "sourceSha256": "c4e067459948eab40a43d8b6c28acaea77bf01eac085e389dce1fa5d57e9f8fd"
           },
           "eventObjectiveLabel": {
-            "origin": "community",
-            "source": "questie",
-            "sourceLocale": "enUS"
+            "origin": "original",
+            "source": "wowClient",
+            "sourceBuild": "71037",
+            "sourceLocale": "frFR"
           },
           "summary": {
             "origin": "community",
@@ -559,6 +570,57 @@
             "origin": "original",
             "source": "blizzard",
             "sourceLocale": "koKR"
+          }
+        }
+      }
+    },
+    "ltLT": {
+      "description": "Northshire kasykla ne vienintelė turi bėdų! Gavau pranešimų, kad Fargodeep kasykla Elwynn taip pat tapo koboldų prieglobsčiu.\n\nIšžvalgyk kasyklą ir patvirtink šiuos pranešimus, tada grįžk pas mane. Kasykla yra beveik tiesiai į pietus nuo Goldshire, tarp Stonefield ir Maclure sodybų.",
+      "dialogue": {
+        "3487698ba84c0ba83e1d": "Northshire kasykla ne vienintelė turi bėdų! Gavau pranešimų, kad Fargodeep kasykla Elwynn taip pat tapo koboldų prieglobsčiu.$B$BIšžvalgyk kasyklą ir patvirtink šiuos pranešimus, tada grįžk pas mane. Kasykla yra beveik tiesiai į pietus nuo Goldshire, tarp Stonefield ir Maclure sodybų.",
+        "81b0871efd262a09d595": "Tai blogos žinios. Kas toliau, drakonai?!? Turėsime sustiprinti patrulius prie tos kasyklos. Ačiū už pastangas, $N. Ir luktelk... galbūt turiu tau dar vieną užduotį.",
+        "8570f7eb103b5f4dfd43": "Ką gali pranešti, $N? Ar jau buvai Fargodeep kasykloje?"
+      },
+      "eventObjectiveLabel": "Išžvalgyk Fargodeep kasyklą",
+      "summary": "Išžvalgyk Fargodeep kasyklą, tada grįžk pas Marshal Dughan į Goldshire.",
+      "title": "Fargodeep kasykla",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3487698ba84c0ba83e1d": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.81b0871efd262a09d595": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.8570f7eb103b5f4dfd43": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "eventObjectiveLabel": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceTextSha256": "431f1229b4f02eeed814ddcd20afd83252695d3f60847194346e7a4e82b6d71c"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
           }
         }
       }

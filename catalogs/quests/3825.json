@@ -552,6 +552,56 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Liko vienas paskutinis darbas, kareivi.\n\nLeidau sau užmauti Gor'tesh galvą ant kuolo. Dabar tau tereikia nunešti šią galvą į Dreadmaul uolos viršūnę ir įsmeigti kuolą į žemę. Tada stebėk, kaip tie bailūs ograi bėga gelbėdami savo kailį! Pasismaginęs grįžk pas mane, ir aš tau atlyginsiu už visą sunkų darbą.\n\n<Atrodo, kad Oralius praranda ryšį su tikrove.>",
+      "dialogue": {
+        "589a671c89cf7c65f95a": "Na? Ar nutapei kokių nors šio įvykio paveikslų?",
+        "c2859d8e634edd004d95": "Puikus darbas, kareivi! Tiesiog nuostabu! O, už tai gausiu narsos medalį, tai yra, tau bus dosniai atlyginta!\n"
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Gor'tesh galva įsmeigta",
+          "type": "object"
+        }
+      ],
+      "summary": "Nunešk nukirstą Gor'tesh galvą į Dreadmaul uolos viršūnę. Surask minkštos žemės kauburėlį kuolui įsmeigti.",
+      "title": "Ogro galva ant kuolo = šventė",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.589a671c89cf7c65f95a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c2859d8e634edd004d95": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Została ci ostatnia rzecz, żołnierzu.\n\nPozwoliłem sobie nabić głowę Gor'tesha na pikę. Teraz wystarczy zanieść ją na szczyt Dreadmaul Rock i wbić w ziemię. Potem patrz, jak tchórzliwe ogry uciekają, gdzie pieprz rośnie! Gdy skończysz zabawę, wróć, a wynagrodzę całą twoją ciężką pracę.\n\n<Oralius zdaje się tracić kontakt z rzeczywistością.>",
       "dialogue": {
@@ -938,7 +988,7 @@
           "type": "object"
         }
       ],
-      "summary": "把戈泰什的頭顱放在巨槌石的山頂上。找壹塊軟土堆把串著頭顱的長矛插上去就可以了。",
+      "summary": "把戈泰什的頭顱放在巨槌石的山頂上。找一塊軟土堆把串著頭顱的長矛插上去就可以了。",
       "title": "梟首示眾",
       "translationMetadata": {
         "fields": {
@@ -968,7 +1018,8 @@
           "summary": {
             "origin": "community",
             "source": "questie",
-            "sourceLocale": "zhTW"
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4377c981ac368d1593ec92788218e0a689a6a02b"
           },
           "title": {
             "origin": "original",

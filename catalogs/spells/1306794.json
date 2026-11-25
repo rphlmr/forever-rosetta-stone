@@ -193,6 +193,24 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Elune pripildo medžiotoją įniršio: padaroma $s1 magijos žalos priešams $a jardų atstumu ir $1306811s1 magijos žalos kas $t2 sek.",
+      "name": "Mėnulio įniršis",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Elune napełnia Łowczynię gniewem, zadając $s1 obrażeń od magii tajemnej wrogom w promieniu $a jardów oraz $1306811s1 obrażeń od magii tajemnej co $t2 sek.",
       "name": "Księżycowy gniew",
@@ -349,6 +367,14 @@
   },
   "tooltipData": {
     "durationMs": 15000,
+    "effectValuesSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellEffect": "7a612a50e224769604d0e57968fd51c70f287e2d20646e0e2e8bf2548b0ebfd9"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,
@@ -367,7 +393,7 @@
         "bonusCoefficient": 0,
         "effectType": 6,
         "index": 1,
-        "periodMs": 3000,
+        "periodMs": 1000,
         "scalingClass": 0
       },
       {

@@ -835,6 +835,82 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Dabar, {name}, medžioklė tampa rimtesnė. Turi nugalėti savo grobį ir surasti kelią į jo guolį.\n\nMedžiok pietuose gyvenančius Sunscale raptorius. Nukauk juos ir paimk jų plunksnas. Padėk plunksnas ant Scytheclaw lizdų į pietvakarius nuo Stagnant Oasis. Parodyk jų gentainiams, kad jų nebijai!",
+      "dialogue": {
+        "c6a60e2d540e862ff3da": "Ar aplankei lizdus, $N?",
+        "e8bea6c24d0e3004aa08": "Dabar, $N, medžioklė tampa rimtesnė. Turi nugalėti savo grobį ir surasti kelią į jo guolį.$B$BMedžiok pietuose gyvenančius Sunscale raptorius. Nukauk juos ir paimk jų plunksnas. Padėk plunksnas ant Scytheclaw lizdų į pietvakarius nuo Stagnant Oasis. Parodyk jų gentainiams, kad jų nebijai!",
+        "eef9759eea12f239c6d8": "Taigi aplankei lizdus ir padėjai juose savo grobio plunksnas. Tam, be abejonės, reikėjo nemažai drąsos.$B$BAr jautiesi šiek tiek tvirčiau, $N? Nes dabar atrodai stipriau nei pirmą kartą čia atvykęs. Panašu, kad Barrens atlieka savo darbą."
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Aplankyk mėlynąjį raptoriaus lizdą",
+          "type": "object"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} Aplankyk geltonąjį raptoriaus lizdą",
+          "type": "object"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} Aplankyk raudonąjį raptoriaus lizdą",
+          "type": "object"
+        }
+      ],
+      "summary": "Nukauk Sunscale raptorius ir surink jų plunksnas. Panaudok plunksnas ant 3 Scytheclaw lizdų. Grįžk pas Sergra Darkthorn į Crossroads.",
+      "title": "Įtūžę Scytheclaw",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c6a60e2d540e862ff3da": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e8bea6c24d0e3004aa08": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.eef9759eea12f239c6d8": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Teraz, {name}, łowy stają się poważniejsze. Musisz pokonać zdobycz, a potem odnaleźć jej legowisko.\n\nPoluj na raptory Sunscale na południu. Zabij je i zdejmij noszone przez nie pióra. Umieść pióra na gniazdach Scytheclaw na południowy zachód od Stagnant Oasis. Pokaż ich pobratymcom, że się ich nie boisz!",
       "dialogue": {
@@ -859,8 +935,8 @@
           "type": "object"
         }
       ],
-      "summary": "Zabij raptory Sunscale i zbierz ich pióra. Użyj piór na 3 gniazdach Scytheclaw. Wróć do Sergry Darkthorn w Crossroads.",
-      "title": "Rozgniewane raptory Scytheclaw",
+      "summary": "Zabijaj raptory Sunscale i zbieraj ich pióra. Użyj piór przy 3 gniazdach kososzponów. Wróć do Sergry Darkthorn w Crossroads.",
+      "title": "Rozwścieczone kososzpony",
       "translationMetadata": {
         "fields": {
           "description": {
@@ -900,16 +976,18 @@
             "sourceLocale": "enUS"
           },
           "summary": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "68cb01a9a02aa0b0806d5b098aacc496d81db57d67fe461929c498305bd60cce"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:2ed1d305560e045b.139",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           },
           "title": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "ad8df88912b766a52bf6ac14c82cd5197ab0220b27d9f94a9ed00d9aee07d248"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:bb6c8830e494421c.21",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           }
         }
       }

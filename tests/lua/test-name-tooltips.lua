@@ -63,6 +63,62 @@ equal(tip.points[1][1], "TOPLEFT", "translation sits right of the native tooltip
 equal(tip.points[1][3], "TOPRIGHT", "translation joins the native tooltip's right edge")
 equal(select(2, tip:GetLeftLine(1):GetFont()), 14, "translated title matches the native title font")
 
+do
+    local previousIsKeyDown, held = IsKeyDown, false
+    IsKeyDown = function(key) return key == "F8" and held end
+    Addon.preferences.tooltipHoldKey = "F8"
+    Addon:SetTooltipPresentation("replacement")
+    equal(GameTooltip:GetAlpha(), 0, "replacement initially masks the native tooltip")
+    Addon:SetTooltipHold(true)
+    equal(GameTooltip:GetAlpha(), 1, "hold mode restores the native tooltip at rest")
+    equal(tip:IsShown(), false, "hold mode hides the replacement at rest")
+    held = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(GameTooltip:GetAlpha(), 0, "holding masks the native tooltip again")
+    equal(tip:IsShown(), true, "holding reveals the replacement without rehovering")
+    held = false
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(GameTooltip:GetAlpha(), 1, "releasing restores the native tooltip immediately")
+    Addon:SetTooltipHold(false)
+
+    Addon:SetTooltipPresentation("below")
+    Addon:SetTooltipHold(true)
+    local owner = CreateFrame("Button", nil, UIParent)
+    function owner:UpdateTooltip()
+        tooltipData(GameTooltip, Enum.TooltipDataType.Item, 5626)
+        GameTooltip:AddLine("Addon footer")
+        GameTooltip:Show()
+    end
+    GameTooltip:SetOwner(owner, "ANCHOR_CURSOR")
+    owner:UpdateTooltip()
+    held = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(VisibleTooltipLines(GameTooltip), 3, "hold does not append translation to the stale item layout")
+    owner:UpdateTooltip()
+    local stacked = Addon.stackedTooltips[GameTooltip]
+    equal(GameTooltip:GetLeftLine(stacked.last + 1):GetText(), "Addon footer",
+        "translation appears in its final position during the native rebuild")
+    flushTimers()
+    equal(Addon.stackedTooltips[GameTooltip], stacked, "the fallback cannot redraw an item rebuilt by the client")
+    held = false
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.stackedTooltips[GameTooltip], stacked, "release does not leave blank lines in the stale layout")
+    owner:UpdateTooltip()
+    equal(VisibleTooltipLines(GameTooltip), 3, "the native rebuild removes translated rows in one pass")
+    held = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    flushTimers()
+    equal(Addon.stackedTooltips[GameTooltip] ~= nil, true, "the fallback reveals an item if its owner does not rebuild")
+
+    Addon:SetTooltipHold(false)
+    Addon:SetTooltipPresentation("separate")
+    prepare(GameTooltip)
+    tooltipData(GameTooltip, Enum.TooltipDataType.Item, 5626)
+    tip = show(GameTooltip)
+    Addon.preferences.tooltipHoldKey = "SHIFT"
+    IsKeyDown = previousIsKeyDown
+end
+
 GameTooltip.default = 1
 GameTooltip:SetOwner(UIParent, "ANCHOR_NONE")
 GameTooltip.left = 1600
@@ -456,11 +512,13 @@ equal(equippedTip.lines[#equippedTip.lines - 1],
     "If you replace this item, the following stat changes will occur:", "late native comparison summary is translated")
 equal(equippedTip.lines[#equippedTip.lines], "|cff00ff00+35|r Armor", "delta preserves the client value and inline color")
 equal(equippedTip:GetLeftLine(#equippedTip.lines - 1):GetTextColor(), 1, "summary preserves its native color")
-for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
+local comparisonLocales = { "csCZ", "daDK", "deDE", "enUS", "esES", "esMX", "frFR", "hrHR", "itIT",
+    "koKR", "plPL", "ptBR", "ruRU", "svSE", "trTR", "ukUA", "zhCN", "zhTW" }
+for _, locale in ipairs(comparisonLocales) do
     Addon:SetTargetLocale(locale)
-    equal(type(Addon:TranslateComparisonText(EQUIPPED)), "string", "every supported language has an equipped label")
-    equal(type(Addon:TranslateComparisonText(ITEM_DELTA_DESCRIPTION)), "string", "every supported language has a delta summary")
-    equal(type(Addon:TranslateComparisonText("|cffff0000-12|r Armure")), "string", "every supported language translates armor deltas")
+    equal(type(Addon:TranslateComparisonText(EQUIPPED)), "string", "tooltip language has an equipped label")
+    equal(type(Addon:TranslateComparisonText(ITEM_DELTA_DESCRIPTION)), "string", "tooltip language has a delta summary")
+    equal(type(Addon:TranslateComparisonText("|cffff0000-12|r Armure")), "string", "tooltip language translates armor deltas")
 end
 Addon:SetTargetLocale("enUS")
 ShoppingTooltip1:GetLeftLine(ShoppingTooltip1:NumLines()):SetText("|cff00ff00+41|r Armure")

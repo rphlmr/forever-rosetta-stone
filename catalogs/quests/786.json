@@ -837,6 +837,82 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Kalbėk tyliau, {class}. Kolkar kentaurai įsikūrę vakaruose, Kolkar uoloje, iškart už kalnagūbrio.\n\nPraėjusią naktį, kol jie plėšikavo, įsėlinau į jų kaimą ir sužinojau, kad tie purvini žvėrys planuoja trijų etapų Durotar trolių ir orkų puolimą.\n\nNegalime leisti jiems įgyvendinti šio antpuolio. Galbūt tau užteks jėgų įsiskverbti į Kolkar uolą ir sunaikinti jų puolimo planus.\n\nPaskutinį kartą mačiau, kad jie buvo išdalyti trims jų vadams.",
+      "dialogue": {
+        "55e93b7a556d5767d918": "Jei Kolkar kentaurai būtų užpuolę, Orda tikrai būtų laimėjusi. Tačiau užkirtę kelią antpuoliui apsaugojome savo galingus karius nuo bereikalingo kraujo praliejimo.$b$bIr kaip Tanaris dykumoje tikrai yra smėlio, taip ir mes žinome, kad iki šių sunkių laikų pabaigos dar bus pralieta kraujo.$b$bGerai pasitarnavai savo tautai, $c.",
+        "b44372de61942024abab": "Kalbėk tyliau, $c. Kolkar kentaurai įsikūrę vakaruose, Kolkar uoloje, iškart už kalnagūbrio.$b$bPraėjusią naktį, kol jie plėšikavo, įsėlinau į jų kaimą ir sužinojau, kad tie purvini žvėrys planuoja trijų etapų Durotar trolių ir orkų puolimą.$b$bNegalime leisti jiems įgyvendinti šio antpuolio. Galbūt tau užteks jėgų įsiskverbti į Kolkar uolą ir sunaikinti jų puolimo planus.$b$bPaskutinį kartą mačiau, kad jie buvo išdalyti trims jų vadams.",
+        "d82470eabafc99fa9636": "Kentaurai nuolat kelia rūpesčių Ordai. Negalime pakęsti jų ketinimų apgulti mūsų tėvynę."
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} puolimo planas: Išbandymų slėnis sunaikintas",
+          "type": "object"
+        },
+        {
+          "index": 2,
+          "text": "{current}/{required} puolimo planas: Sen'jin kaimas sunaikintas",
+          "type": "object"
+        },
+        {
+          "index": 3,
+          "text": "{current}/{required} puolimo planas: Orgrimmar sunaikintas",
+          "type": "object"
+        }
+      ],
+      "summary": "Lar Prowltusk prie Sen'jin kaimo nori, kad sunaikintum 3 puolimo planų rinkinius Kolkar uoloje.",
+      "title": "Kolkar agresijos sustabdymas",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.55e93b7a556d5767d918": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b44372de61942024abab": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d82470eabafc99fa9636": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Ciszej, {class}. Centaury Kolkar są tuż za grzbietem na zachodzie, w Kolkar Crag.\n\nZeszłej nocy, kiedy wyruszyły na najazd, zakradłem się do ich wioski i odkryłem, że te parszywe bestie planują trójstopniowy atak na trolle i orków Durotaru.\n\nNie możemy dopuścić do ich inwazji. Może zdołasz zebrać siły potrzebne do przeniknięcia do Kolkar Crag i zniszczenia planów ataku.\n\nOstatnio widziałem, że rozdzielili je między trzech swoich przywódców.",
       "dialogue": {
@@ -861,8 +937,8 @@
           "type": "object"
         }
       ],
-      "summary": "Lar Prowltusk pod wioską Sen'jin chce, abyś zniszczył 3 zestawy planów ataku znajdujące się w Kolkar Crag.",
-      "title": "Powstrzymać agresję Kolkarów",
+      "summary": "Lar Prowltusk spod Sen'jin Village prosi cię o zniszczenie 3 kompletów planów ataku przechowywanych w Kolkar Crag.",
+      "title": "Powstrzymać agresję centaurów Kolkar",
       "translationMetadata": {
         "fields": {
           "description": {
@@ -902,16 +978,18 @@
             "sourceLocale": "enUS"
           },
           "summary": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "281b37d28557aa170da65dcfe4a795822898934ab84479698863624610977e27"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:d3f7e56ccbb9b82b.113",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           },
           "title": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "58e7a920cf0dfc21f3e3ffb1a23bce5775007c3b57c16de2f826c361a49fbb30"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:dee67efad52cad2e.27",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           }
         }
       }

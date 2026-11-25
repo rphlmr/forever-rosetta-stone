@@ -207,6 +207,7 @@ function Frame:UpdateScrollChildRect() self:Fire("OnScrollRangeChanged", 0, self
 function Frame:SetClipsChildren(value) self.clipsChildren = value end
 function Frame:IsMaximized() return self.maximized end
 function Frame:EnableGamePadButton(enabled) self.gamepadEnabled = enabled end
+function Frame:EnableKeyboard(enabled) self.keyboardEnabled = enabled end
 function Frame:IsGamePadButtonEnabled() return self.gamepadEnabled == true end
 function Frame:SetNormalTexture(texture) self.normal = self:CreateTexture(); self.normal:SetTexture(texture) end
 function Frame:GetNormalTexture() return self.normal end
@@ -644,7 +645,9 @@ local function createMapMenu(owner, names, tag, data)
             end
         end
         function element:Enter(row) if self.onEnter then self.onEnter(row) end end
+        function element:HookOnLeave(callback) self.onLeave = callback end
         function element:Leave(row)
+            if self.onLeave then self.onLeave(row) end
             if root.tooltip and root.tooltip:GetOwner() == row then
                 root.tooltip:Hide()
                 root.tooltip:SetWindow(nil)
@@ -760,6 +763,7 @@ function Settings.RegisterCanvasLayoutSubcategory(parent, panel, name)
 end
 function Settings.RegisterProxySetting(category, variable, valueType, name, default, getter, setter)
     local setting = { variable = variable, name = name, default = default, category = category }
+    function setting:GetName() return self.name end
     function setting:GetVariable() return self.variable end
     function setting:GetValue() return getter() end
     function setting:IsLocked() return self.locked end
@@ -797,6 +801,7 @@ function Settings.CreateControlTextContainer()
 end
 function Settings.CreateCheckbox(category, setting, tooltip)
     local initializer = { kind = "checkbox", setting = setting, tooltip = tooltip }
+    function initializer:Indent() self.indented = true end
     function initializer:SetParentInitializer(parent, predicate)
         self.parentInitializer, self.modifyPredicate = parent, predicate
         self.displayedEnabled = predicate()
@@ -833,7 +838,15 @@ function Settings.CreateSlider(category, setting, options, tooltip)
 end
 function CreateSettingsListSectionHeaderInitializer(name) return { kind = "header", name = name } end
 function Settings.CreatePanelInitializer(template, data)
-    return { kind = "panel", template = template, data = data }
+    local initializer = { kind = "panel", template = template, data = data }
+    if data.settings then
+        initializer.searchTags = {}
+        for _, setting in ipairs(data.settings) do
+            table.insert(initializer.searchTags, setting:GetName():upper())
+        end
+    end
+    function initializer:AddSearchTags() error("Addon code must not add search tags to native panels") end
+    return initializer
 end
 function CreateSettingsButtonInitializer(name, text, callback, tooltip, search)
     local initializer = { kind = "button", name = name, text = text, callback = callback, tooltip = tooltip, search = search }
@@ -2460,6 +2473,24 @@ do
     equal(Addon.mapMenuTooltip:GetLeftLine(2):GetText(), "Hillsbrad Foothills", "menu translates the resolved map ID")
     menu.elements[2]:Enter(row)
     equal(Addon.mapMenuTooltip:GetLeftLine(2):GetText(), "Wetlands", "selection updates the translated location")
+    local previousIsKeyDown, held = IsKeyDown, false
+    IsKeyDown = function(key) return key == "F8" and held end
+    Addon.preferences.tooltipHoldKey = "F8"
+    Addon:SetTooltipHold(true)
+    equal(Addon.mapMenuTooltip:IsShown(), false, "hold mode hides the focused menu tooltip")
+    held = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.mapMenuTooltip:GetLeftLine(2):GetText(), "Wetlands", "holding reveals translation without moving menu focus")
+    equal(Addon.mapMenuTooltip:IsShown(), true, "the current menu tooltip appears")
+    menu.elements[2]:Leave(row)
+    held = false
+    Addon.input:Fire("OnUpdate", 0.01)
+    held = true
+    Addon.input:Fire("OnUpdate", 0.01)
+    equal(Addon.mapMenuTooltip:IsShown(), false, "an unfocused row is not revived by holding the key")
+    Addon:SetTooltipHold(false)
+    Addon.preferences.tooltipHoldKey = "SHIFT"
+    IsKeyDown = previousIsKeyDown
     equal(SmartNavigation:GetCurrentButton(), focus, "map translation preserves controller focus")
     Addon:SetFeatureEnabled("mapDropdown", false)
     menu.elements[1]:Enter(row)

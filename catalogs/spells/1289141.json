@@ -260,6 +260,30 @@
         }
       }
     },
+    "ltLT": {
+      "auraDescription": "Kas $t2 sek. dėl kraujavimo patiriama $s2 žalos.\r\nJudėjimo greitis sumažintas $s1%.",
+      "description": "Sumažina priešo judėjimo greitį $s1% $d ir kas $t2 sek. padaro $s2 fizinės žalos.",
+      "name": "Plėšimas",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "auraDescription": "Krwawienie zadaje $s2 obrażeń co $t2 sek.\r\nPrędkość ruchu zmniejszona o $s1%.",
       "description": "Zmniejsza an enemy's movement speed o $s1.% for $d and deals $s2 Physical damage every $t2 sec.",
@@ -471,6 +495,14 @@
   "tooltipData": {
     "baseLevel": 0,
     "durationMs": 21000,
+    "effectValuesSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellEffect": "7a612a50e224769604d0e57968fd51c70f287e2d20646e0e2e8bf2548b0ebfd9"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,
@@ -479,18 +511,19 @@
         "bonusCoefficient": 0,
         "effectType": 6,
         "index": 0,
-        "perLevel": -1,
+        "perLevel": 0,
         "scalingClass": 0
       },
       {
         "apCoefficient": 0,
         "auraType": 3,
-        "basePoints": 8,
+        "basePoints": 10,
         "bonusCoefficient": 0,
         "effectType": 6,
         "index": 1,
         "periodMs": 3000,
-        "scalingClass": 0
+        "scalingClass": 0,
+        "variance": 0.05000000075
       }
     ],
     "maxLevel": 0,

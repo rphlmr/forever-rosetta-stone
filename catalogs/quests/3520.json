@@ -626,6 +626,62 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Ieškau Feralas slėnių klyksnių dvasių. Jie yra labai, labai seno dievo giminaičiai, ir jų dvasios su juo susijusios.\n\nPaimk šią erškėčio lazdelę ir keliauk į Feralas. Surask ir nugalėk slėnių klyksnius pietinėje ir centrinėje Feralas dalyse, tada pamojuok mano erškėčiu virš jų kūnų. Taip prisiviliosi jų dvasias. Paliesk dvasias ir surink jų esenciją.\n\nGrįžk pas mane su mano erškėčiu ir surinkta esencija, ir papasakosiu daugiau apie senąjį dievą, kurį minėjau.",
+      "dialogue": {
+        "3ec870d49f0247d95625": "Gerai padirbėta, $N.  Galbūt dabar laikas atskleisti daugiau...$B$BTroliai turi senovinę pranašystę, kad miręs dievas Hakkar, Sielų Lupikas, vieną dieną sugrįš į šį pasaulį.  Vieni sako, kad Hakkar atėjimas atneš troliams džiaugsmą ir šlovę, o kiti tiki, kad jo prisikėlimas žymi visko pabaigą.$B$BAš šiuo mitu netikiu, bet žinau, kad Hakkar esencija turi didžiulę galią, ir ši galia neturi patekti į rankas tų, kurie ja piktnaudžiautų...",
+        "c7e7147ca4e60d4373ee": "Ar surinkai klyksnių dvasių esenciją, $N?",
+        "d5983e8f3a99508f7407": "Ieškau Feralas slėnių klyksnių dvasių. Jie yra labai, labai seno dievo giminaičiai, ir jų dvasios su juo susijusios.$B$BPaimk šią erškėčio lazdelę ir keliauk į Feralas. Surask ir nugalėk slėnių klyksnius pietinėje ir centrinėje Feralas dalyse, tada pamojuok mano erškėčiu virš jų kūnų. Taip prisiviliosi jų dvasias. Paliesk dvasias ir surink jų esenciją.$B$BGrįžk pas mane su mano erškėčiu ir surinkta esencija, ir papasakosiu daugiau apie senąjį dievą, kurį minėjau."
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "Surinkta klyksnių dvasių: {current}/{required}",
+          "type": "monster"
+        }
+      ],
+      "summary": "Sugauk 3 klyksnių dvasias Feralas, tada grįžk pas Yeh'kinya į Steamwheedle Port.",
+      "title": "Klyksnių dvasios",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.3ec870d49f0247d95625": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.c7e7147ca4e60d4373ee": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.d5983e8f3a99508f7407": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Szukam duchów dolinnych skrzekaczy z Feralas. To kuzyni starego, bardzo starego boga, a ich duchy są z nim związane.\n\nWeź tę różdżkę z jeżyn i udaj się do Feralas. Znajdź i pokonaj dolinne skrzekacze w południowej i środkowej części krainy, a potem pomachaj różdżką nad ich ciałami. Zachęci to ducha do ujawnienia się. Dotknij go i zbierz esencję.\n\nWróć z różdżką i zebraną esencją, a opowiem więcej o starym bogu, którego wspomniałem.",
       "dialogue": {
@@ -640,8 +696,8 @@
           "type": "monster"
         }
       ],
-      "summary": "Schwytaj duchy 3 skrzekaczy w Feralas, a następnie wróć do Yeh'kinyi w Steamwheedle Port.",
-      "title": "Duchy skrzekaczy",
+      "summary": "Schwytaj duchy 3 skrzekunów w Feralas, a potem wróć do Yeh'kinyi w Steamwheedle Port.",
+      "title": "Duchy skrzekunów",
       "translationMetadata": {
         "fields": {
           "description": {
@@ -671,16 +727,18 @@
             "sourceLocale": "enUS"
           },
           "summary": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "3a62e9687997d3ef77aeebc6af5c7e047a59ce5d0ac299be951d38ce1a89d45e"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:ee500bf374f96edf.94",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           },
           "title": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "d41587b13299d900c20212bf52810e2105731020e060690b094e02bfb078b480"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:8a201ee77126fcdb.17",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           }
         }
       }

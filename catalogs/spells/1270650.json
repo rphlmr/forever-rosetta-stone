@@ -259,6 +259,30 @@
         }
       }
     },
+    "ltLT": {
+      "auraDescription": "Kas $t1 sek. patiriama $1271100s1 Arcane žalos.\r\nPoveikiui pasibaigus, žaidėjams $1270830A1 jardų atstumu padaroma $1270830s1 Arcane žalos.",
+      "description": "Priešui padaroma $s2 Arcane žalos, tada kas $1271100t1 sek. padaroma dar $1271100s1 žalos.\r\nPoveikiui pasibaigus, žaidėjams $1270830A1 jardų atstumu padaroma $1270830s1 Arcane žalos.",
+      "name": "Mėnulio ugnis",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "auraDescription": "Zadaje $1271100s1 obrażeń od magii tajemnej co $t1 sek.\r\nPo wygaśnięciu zadaje $1270830s1 obrażeń od magii tajemnej graczom w promieniu $1270830A1 jardów.",
       "description": "Zadaje wrogowi $s2 obrażeń tajemnych, a następnie dodatkowe $1271100s1 obrażeń co $1271100t1 sek.\r\nPo wygaśnięciu zadaje $1270830s1 obrażeń tajemnych graczom w promieniu $1270830A1 jardów.",
@@ -468,12 +492,20 @@
   "tooltipData": {
     "baseLevel": 0,
     "durationMs": 20000,
+    "effectValuesSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellEffect": "7a612a50e224769604d0e57968fd51c70f287e2d20646e0e2e8bf2548b0ebfd9"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,
         "auraType": 23,
         "basePoints": 15,
-        "bonusCoefficient": 0.12999999523,
+        "bonusCoefficient": 0,
         "effectType": 6,
         "index": 0,
         "periodMs": 4000,

@@ -624,6 +624,62 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Šaukėjas Araj valdo Andorhal iš sugriauto miesto širdies.  Žinome, kad jis vadovavo Scholomance, kol pasisavino miestą.  Kad užbaigtume raktą, mums reikės jo antspaudo, vadinamo skarabėju, kurį pritvirtinsime prie rakto galvutės.\n\nNusigauk į Andorhal širdį ir nutrauk jo valdžią miestui, dabar, kai jis išviliotas į atvirumą.  Kai jį sunaikinsi, paimk jo skarabėjų iš nukritusios filakterijos!\n\nRaktas į Scholomance tavęs laukia, {name}!",
+      "dialogue": {
+        "7e753baecaf0d902fac5": "Taip, štai jis!  Aš... dar kartą esu be galo nustebintas tavo sumanumo ir drąsos.  Sunku net suvokti, kiek daug esi pasirengęs padaryti, kad pasiektum pergalę.$B$BLeisk man dabar prisidėti savo mažu darbu.  Paruošiau specialų tirpalą, kuris turėtų padėti pritvirtinti skarabėjų prie rakto galvutės ir suteikti jam galią atrakinti užrakintas Scholomance duris.$B$BTai turėtų užtrukti vos akimirką...",
+        "cd935e8b50219579ee06": "Nueitas ilgas kelias, $N. Tik sunaikinę šaukėjo Araj fizinį pavidalą galėsime užbaigti raktą.  Bet kokia kaina gauk Araj skarabėjų ir atnešk jį man: pritvirtinsiu jį prie rakto galvutės.",
+        "e57b182099bd2b4de9a0": "Šaukėjas Araj valdo Andorhal iš paslėptos vietos.  Žinome, kad jis vadovavo Scholomance, kol pasisavino miestą.  Kad užbaigtume raktą, mums reikės jo antspaudo, vadinamo skarabėju, kurį pritvirtinsime prie rakto galvutės.$B$BMieste yra keturi šaukimo kristalai, po vieną kiekviename bokšte, kurį anksčiau mums pažymėjai.  Sunaikink visus keturis kristalus ir nutrauk jo valdžią miestui, išviliodamas jį į atvirumą.  Kai jį sunaikinsi, paimk jo skarabėjų iš nukritusios filakterijos!"
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Araj skarabėjus",
+          "type": "item"
+        }
+      ],
+      "summary": "Sunaikink šaukėją Araj ir nunešk Araj skarabėjų vaistininkui Dithers į Bulwark, Vakarų maro žemėse.",
+      "title": "Araj skarabėjus",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7e753baecaf0d902fac5": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.cd935e8b50219579ee06": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.e57b182099bd2b4de9a0": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Araj Przywoływacz włada Andorhal z serca zrujnowanego miasta. Wiemy, że dawniej przewodził Scholomance, zanim przejął miasto. Aby ukończyć klucz, potrzebujemy jego sygnetu zwanego skarabeuszem, osadzonego jako główka klucza.\n\nPrzedostań się do serca Andorhal i złam jego władzę nad miastem, teraz gdy wyszedł z ukrycia. Po zgładzeniu go zabierz skarabeusza z jego upadłego filakterium!\n\nKlucz do Scholomance czeka, {name}!",
       "dialogue": {
@@ -1055,7 +1111,7 @@
           "type": "item"
         }
       ],
-      "summary": "殺掉召喚者阿拉基，並將阿拉基的聖甲蟲交給西瘟疫之地亡靈壁壘的藥劑師迪瑟斯。",
+      "summary": "摧毀安多哈爾的4顆天災召喚水晶來召喚阿拉基。殺掉召喚者阿拉基，並將阿拉基的聖甲蟲交給西瘟疫之地亡靈壁壘的藥劑師迪瑟斯。",
       "title": "阿拉基的聖甲蟲",
       "translationMetadata": {
         "fields": {
@@ -1091,7 +1147,8 @@
           "summary": {
             "origin": "community",
             "source": "questie",
-            "sourceLocale": "zhTW"
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4377c981ac368d1593ec92788218e0a689a6a02b"
           },
           "title": {
             "origin": "original",

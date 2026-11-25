@@ -1,18 +1,32 @@
 local _, Addon = ...
 
 -- Blizzard's CJK faces are available separately from the client's active UI locale.
-local fonts = {
+local eastAsianFonts = {
     zhCN = { [[Fonts\ARKai_T.ttf]], [[Fonts\ARKai_C.ttf]] },
     zhTW = { [[Fonts\blei00d.TTF]], [[Fonts\bKAI00M.TTF]] },
     koKR = { [[Fonts\2002.TTF]], [[Fonts\K_Pagetext.TTF]] },
+}
+local latinExtended = { [[Fonts\ARIALN.TTF]] }
+local fonts = {
+    csCZ = latinExtended,
+    ltLT = latinExtended,
+    zhCN = eastAsianFonts.zhCN,
+    zhTW = eastAsianFonts.zhTW,
+    koKR = eastAsianFonts.koKR,
+}
+local labelFonts = {
+    zhTW = { [[Fonts\arheiuhk_bd.TTF]], unpack(eastAsianFonts.zhTW) },
 }
 
 function Addon:UsesLocalizedFont(locale)
     return fonts[locale] ~= nil
 end
 
-function Addon:TryLocalizedFont(target, locale, size, flags)
-    local candidates = fonts[locale]
+function Addon:UsesNonSpaceWrap(locale)
+    return eastAsianFonts[locale] ~= nil
+end
+
+local function TryFont(target, candidates, size, flags)
     if not target or not candidates then return false end
     if not size then
         local font
@@ -24,4 +38,12 @@ function Addon:TryLocalizedFont(target, locale, size, flags)
         if ok and applied then return true end
     end
     return false
+end
+
+function Addon:TryLocalizedFont(target, locale, size, flags)
+    return TryFont(target, fonts[locale], size, flags)
+end
+
+function Addon:TryLanguageLabelFont(target, locale)
+    return TryFont(target, labelFonts[locale] or fonts[locale])
 end

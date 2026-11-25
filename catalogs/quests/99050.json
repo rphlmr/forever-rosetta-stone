@@ -754,6 +754,72 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Man reikės tavo pagalbos surenkant ingredientus, kuriais galėčiau pakankamai ilgam sustabdyti ligą, kad Eralya spėtų čia sugrįžti tolesniam gydymui.\r\n\r\nLaimei, mūsų gyvieji namai vis dar dosnūs ir aprūpins mus, kai to reikia.\r\n\r\nSvarbiausias ingredientas yra rasotųjų botagėlių lapai. Jų rasi prie Al'Ameth ežero tiesiai į pietus nuo čia arba prie Wellspring ežero ir jo upės šiaurės vakaruose.\r\n\r\nBe to, man reikės tuščio buteliuko ir šaltinio vandens. Abiejų gali nusipirkti čia, miestelyje, arba išmainyti.",
+      "dialogue": {
+        "82c49e2e54977db498db": "Ačiū už pagalbą. Prašau, priimk tai buteliuko ir vandens išlaidoms padengti.\n\nO dabar pagaminsiu tepalą. Tai turėtų užtrukti tik akimirką.",
+        "ad1ca169d8b721b64605": "Ar turi ingredientus? Bijau, kad Eralya liko nedaug laiko.",
+        "b0ed2f2f9d935d0de882": "Man reikės tavo pagalbos surenkant ingredientus, kuriais galėčiau pakankamai ilgam sustabdyti ligą, kad Eralya spėtų čia sugrįžti tolesniam gydymui.\n\nLaimei, mūsų gyvieji namai vis dar dosnūs ir aprūpins mus, kai to reikia.\n\nSvarbiausias ingredientas yra rasotųjų botagėlių lapai. Jų rasi prie Al'Ameth ežero tiesiai į pietus nuo čia arba prie Wellspring ežero ir jo upės šiaurės vakaruose.\n\nBe to, man reikės tuščio buteliuko ir šaltinio vandens. Abiejų gali nusipirkti čia, miestelyje, arba išmainyti."
+      },
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "Tuščias buteliukas: {current}/{required}",
+          "type": "item"
+        },
+        {
+          "index": 3,
+          "text": "Gaivus šaltinio vanduo: {current}/{required}",
+          "type": "item"
+        }
+      ],
+      "summary": "Surink 6 rasotųjų botagėlių lapus, tuščią buteliuką ir gaivaus šaltinio vandens Byancie Dolanaar miestelyje.",
+      "title": "Didysis medis aprūpina",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.82c49e2e54977db498db": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.ad1ca169d8b721b64605": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.b0ed2f2f9d935d0de882": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.3": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Potrzebuję pomocy w zdobyciu składników, które powstrzymają chorobę na tyle długo, by Eralya mogła wrócić na dalsze leczenie.\r\n\r\nNa szczęście nasz żywy dom wciąż jest hojny i zapewni nam to, czego potrzebujemy.\r\n\r\nGłównym składnikiem są wilgotne liście chłostaków. Znajdziesz je wokół jeziora Al'Ameth bezpośrednio na południe stąd albo jeziora Wellspring i jego rzeki na północnym zachodzie.\r\n\r\nPotrzebuję też pustej fiolki i wody źródlanej. Obie rzeczy można kupić lub wymienić w mieście.",
       "dialogue": {
@@ -774,7 +840,7 @@
         }
       ],
       "summary": "Zbierz 6 Wilgotnych Liści Chłoszczaka, Pustą Fiolkę i Orzeźwiającą Wodę Źródlaną dla Byancie w Dolanaar.",
-      "title": "Wielkie Drzewo zapewnia",
+      "title": "Dary wielkiego drzewa",
       "translationMetadata": {
         "fields": {
           "description": {
@@ -816,10 +882,11 @@
             "sourceTextSha256": "a777f03826cf3544754ffdb9008615162d2a3437034d5a4d617f6c65ab8edd0a"
           },
           "title": {
-            "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS",
-            "sourceTextSha256": "1df8806784317ae6ad73eb4d3bd923f031d72f0c411ee0d6ed4d298b11f32f02"
+            "origin": "community",
+            "source": "foreverTranslatedPolish",
+            "sourceFingerprint": "f1:96e45f719c2968c0.23",
+            "sourceLocale": "plPL",
+            "sourceRevision": "1.2.1"
           }
         }
       }

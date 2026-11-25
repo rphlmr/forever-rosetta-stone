@@ -629,6 +629,62 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Dabar atliksime ritualą. \r\n\r\nPadėsiu medžiagas ant aukuro ir pakviesiu liepsnos dvasias. Jei auka bus priimta, jos pasirodys ir įžiebs Amžinąją liepsną. Tuomet ištiesi savo deglą ir pasigausi liepsną.\r\n\r\nNunešk degantį deglą į Valanaar ir įdėk jį į Amžinųjų liepsnų aukurą. Turi paskubėti, nes Firelands liepsnos čia, Skywall, greitai išsisklaido.",
+      "dialogue": {
+        "74b8ed3e99e5cdcac728": "Šauniai padirbėjai, kad atkeliavai taip toli. Tu teiki garbę vėjų formuotojams, $n.",
+        "7ec605bffc9345ee480f": "Atlikta. Amžinoji liepsna ir vėl dega.\n\nTavo išbandymas baigtas. Džiaugiuosi galėdamas įteikti tau Ugnies totemą. Kelionėse išmintingai naudok šį galios simbolį, $n.\n\nTik atmink: stichijų pasaulio galia tarnauja tiems, kurie ją gerbia, ir praryja tuos, kurie jos negerbia. Toks yra mūsų kelias.",
+        "da539dd7f9e3ad64601f": "Dabar atliksime ritualą.\n\nPadėsiu medžiagas ant aukuro ir pakviesiu liepsnos dvasias. Jei auka bus priimta, jos pasirodys ir įžiebs Amžinąją liepsną. Tuomet ištiesi savo deglą ir pasigausi liepsną.\n\nNunešk degantį deglą į Valanaar ir įdėk jį į Amžinųjų liepsnų aukurą. Turi paskubėti, nes Firelands liepsnos čia, Skywall, greitai išsisklaido."
+      },
+      "objectiveLines": [
+        {
+          "index": 1,
+          "text": "{current}/{required} Atlik ritualą su Olariaan",
+          "type": "monster"
+        }
+      ],
+      "summary": "Palauk, kol Olariaan pradės ritualą prie Aukojimo aukuro, ir vykdyk jo nurodymus.\n\nPrivalai nugabenti Amžinąją liepsną į Valanaar, kol nesibaigė laikas.",
+      "title": "Ugnies šauksmas",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.74b8ed3e99e5cdcac728": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.7ec605bffc9345ee480f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.da539dd7f9e3ad64601f": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.1": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Teraz przeprowadzimy rytuał. \r\n\r\nUmieszczę materiały na ołtarzu i przywołam duchy płomienia. Jeśli ofiara zostanie przyjęta, pojawią się i zapalą Wieczny Płomień. Wtedy wyciągniesz pochodnię i pochwycisz płomień.\r\n\r\nZanieś zapaloną pochodnię do Valanaar i umieść ją w Palenisku Wiecznych Płomieni. Musisz się spieszyć, bo płomienie Ognistych Ziem szybko gasną tutaj, w Skywall.",
       "dialogue": {
@@ -1010,7 +1066,7 @@
           "type": "monster"
         }
       ],
-      "summary": "Wait for Olariaan to begin the ritual at the Brazier of Offering and follow his instructions.\n\nYou must deliver the Eternal Flame to Valanaar before the timer runs out.",
+      "summary": "在祭祀火盆旁等待奥拉里安开始仪式，并遵循他的指示。\n\n你必须在计时结束前将永恒之火送到瓦拉纳尔。",
       "title": "火焰的召唤",
       "translationMetadata": {
         "fields": {
@@ -1043,7 +1099,8 @@
           "summary": {
             "origin": "community",
             "source": "questie",
-            "sourceLocale": "enUS"
+            "sourceLocale": "zhCN",
+            "sourceRevision": "4377c981ac368d1593ec92788218e0a689a6a02b"
           },
           "title": {
             "origin": "original",

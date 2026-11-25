@@ -640,6 +640,62 @@
         }
       }
     },
+    "ltLT": {
+      "description": "Bet koks kraštutinumas kelia pavojų mūsų pasauliui, {name}. Paimkime, pavyzdžiui, Scarlet Crusade. Ar manai, kad jų aklas fanatizmas tarnauja didesniam gėriui? Kiek nekaltųjų jie sunaikino Šviesos vardu?\n\nVisi jie šventvagiai!\n\nTačiau vienas mane ypač domina: Stratholme archyvaras Galford, saugantis vertingiausius kryžiaus žygio dokumentus. Sunaikink jį ir sudegink jo archyvus! Jei pavyks, grįžk pas mane atsiimti atlygio.",
+      "dialogue": {
+        "397882f46231a7ddf52a": "Prisimink, $N: turime būti pakantūs, bet tvirti savo įsitikinimuose!",
+        "5a7844b3e9a0569cc354": "Bet koks kraštutinumas kelia pavojų mūsų pasauliui, $N. Paimkime, pavyzdžiui, Scarlet Crusade. Ar manai, kad jų aklas fanatizmas tarnauja didesniam gėriui? Kiek nekaltųjų jie sunaikino Šviesos vardu?$B$BVisi jie šventvagiai!$B$BTačiau vienas mane ypač domina: Stratholme archyvaras Galford, saugantis vertingiausius kryžiaus žygio dokumentus. Sunaikink jį ir sudegink jo archyvus! Jei pavyks, grįžk pas mane atsiimti atlygio.",
+        "789815c85a06b5f19bb9": "Puiku, $N! Prarastos per daugelį metų sukauptos žinios! Scarlet Crusade ateinančiomis savaitėmis tikrai pajus šį smūgį."
+      },
+      "objectiveLines": [
+        {
+          "index": 2,
+          "text": "{current}/{required} archyvas sudegintas",
+          "type": "object"
+        }
+      ],
+      "summary": "Keliauk į Stratholme ir surask Scarlet Crusade archyvarą Galford. Sunaikink jį ir sudegink Scarlet Archive.",
+      "title": "Archyvaras",
+      "translationMetadata": {
+        "fields": {
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.397882f46231a7ddf52a": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.5a7844b3e9a0569cc354": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "dialogue.789815c85a06b5f19bb9": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "objectiveLines.2": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "summary": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "title": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "description": "Wszystko doprowadzone do skrajności jest niebezpieczne dla naszego świata, {name}. Weźmy na przykład Szkarłatną Krucjatę. Czy wierzysz, że jej ślepa gorliwość służy większemu dobru? Ilu niewinnych zgładzili w imię Światła?\n\nBluźniercy, wszyscy co do jednego!\n\nInteresuje mnie jednak szczególnie jeden z nich: archiwista Galford ze Stratholme, człowiek strzegący najcenniejszych dokumentów Krucjaty. Zgładź go i spal jego archiwa! Jeśli ci się uda, wróć po nagrodę.",
       "dialogue": {
@@ -1072,7 +1128,7 @@
           "type": "object"
         }
       ],
-      "summary": "在斯坦索姆城中找到血色十字軍的檔案管理員加爾福特，殺掉他，然後燒毀血色十字軍檔案。",
+      "summary": "在斯坦索姆城中找到血色十字軍的文件管理員加爾福特，殺掉他，然後燒毀血色十字軍文獻。",
       "title": "文獻管理員",
       "translationMetadata": {
         "fields": {
@@ -1108,7 +1164,8 @@
           "summary": {
             "origin": "community",
             "source": "questie",
-            "sourceLocale": "zhTW"
+            "sourceLocale": "zhTW",
+            "sourceRevision": "4377c981ac368d1593ec92788218e0a689a6a02b"
           },
           "title": {
             "origin": "original",

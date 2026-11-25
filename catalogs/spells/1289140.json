@@ -259,6 +259,30 @@
         }
       }
     },
+    "ltLT": {
+      "auraDescription": "Kraujuojama, kas $t2 sek. patiriant $s2 žalos.",
+      "description": "Sudraskote taikinį, padarydami $s1 žalos ir dar $o2 žalos per $d.",
+      "name": "Draskymas",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
     "plPL": {
       "auraDescription": "Krwawienie zadaje $s2 obrażeń co $t2 sek.",
       "description": "Rozszarpuje cel, zadając $s1 obrażeń oraz dodatkowe $o2 obrażeń w ciągu $d.",
@@ -469,16 +493,24 @@
   "tooltipData": {
     "baseLevel": 0,
     "durationMs": 6000,
+    "effectValuesSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellEffect": "7a612a50e224769604d0e57968fd51c70f287e2d20646e0e2e8bf2548b0ebfd9"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,
         "auraType": 0,
-        "basePoints": 15,
+        "basePoints": 12,
         "bonusCoefficient": 0,
         "effectType": 2,
         "index": 0,
         "scalingClass": 0,
-        "variance": 0.40000000596
+        "variance": 0.05000000075
       },
       {
         "apCoefficient": 0,

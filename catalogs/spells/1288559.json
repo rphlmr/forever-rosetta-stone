@@ -1,15 +1,16 @@
 {
   "locales": {
     "csCZ": {
-      "auraDescription": "$s1 přírodního poškození každých $t1 s. Pokud není rozptýleno, cíl je na $1290041d znehybněn.",
-      "description": "Nakazí cíl jedem, který zakoření po $d. Když kvetení skončí, znehybní cíl a způsobí silné přírodní poškození během $d.",
+      "auraDescription": "Každých $t1 s způsobuje $s1 přírodního poškození.",
+      "description": "Nakazí cíl jedem, který způsobuje $s1 přírodního poškození každých $t1 s po dobu $d.",
       "name": "Květ",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceRecord": "spells/8806"
           },
           "description": {
             "origin": "ai",
@@ -26,15 +27,16 @@
       }
     },
     "daDK": {
-      "auraDescription": "$s1 naturskade hvert $t1. sek. Hvis effekten ikke fjernes, fastlåses målet i $1290041d.",
-      "description": "Påfører målet en gift, der slår rod efter $d. Når Blomstring udløber, fastholder den målet og påfører voldsom naturskade over $d.",
+      "auraDescription": "Påfører $s1 naturskade hvert $t1 sek.",
+      "description": "Påfører målet en gift, der giver $s1 naturskade hvert $t1 sek. i $d.",
       "name": "Blomstring",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceRecord": "spells/8806"
           },
           "description": {
             "origin": "ai",
@@ -50,21 +52,21 @@
       }
     },
     "deDE": {
-      "auraDescription": "Verursacht alle $t1 Sek. $s1 Naturschaden. Wird der Effekt nicht gebannt, wird das Ziel für $1290041d an Ort und Stelle bewegungsunfähig gemacht.",
-      "description": "Belegt das Ziel mit einem Gift, das nach $d Wurzeln schlägt. Wenn 'Blüte' ausläuft, wird das Ziel an Ort und Stelle bewegungsunfähig gemacht und erleidet im Verlauf von $d heftigen Naturschaden.",
+      "auraDescription": "Verursacht alle $t1 Sek. $s1 Naturschaden.",
+      "description": "Belegt das Ziel mit einem Gift, das $d lang alle $t1 Sek. $s1 Naturschaden verursacht.",
       "name": "Blüte",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "deDE"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "deDE"
           },
           "name": {
@@ -77,21 +79,21 @@
       }
     },
     "enUS": {
-      "auraDescription": "$s1 Nature damage every $t1 sec. If not dispelled, the target is rooted in place for $1290041d.",
-      "description": "Afflicts the target with a poison that takes root after $d. When Bloom expires it roots the target in place, dealing intense Nature damage over $d.",
+      "auraDescription": "$s1 Nature damage inflicted every $t1 sec.",
+      "description": "Afflicts the target with a poison that inflicts $s1 Nature damage every $t1 sec for $d.",
       "name": "Bloom",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "enUS"
           },
           "description": {
             "origin": "original",
-            "source": "wowClient",
-            "sourceBuild": "1.60.1.70862",
+            "source": "wago",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "enUS"
           },
           "name": {
@@ -104,21 +106,21 @@
       }
     },
     "esES": {
-      "auraDescription": "$s1 p. de daño de Naturaleza cada $t1 s. Si no se disipa, el objetivo queda enraizado en el sitio durante $1290041d.",
-      "description": "Aflige al objetivo con un veneno que surte efecto tras $d. Cuando Flor se agota, enraíza al objetivo en el sitio y le inflige un potente daño de Naturaleza durante $d.",
+      "auraDescription": "$s1 p. de daño de Naturaleza infligidos cada $t1 s.",
+      "description": "Aflige al objetivo con un veneno que le inflige $s1 p. de daño de Naturaleza cada $t1 s durante $d.",
       "name": "Floración",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "esES"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "esES"
           },
           "name": {
@@ -131,21 +133,21 @@
       }
     },
     "esMX": {
-      "auraDescription": "Inflige $s1 p. de daño de Naturaleza cada $t1 s. Si no se disipa, enraíza al objetivo en el sitio durante $1290041d.",
-      "description": "Aflige al objetivo con un veneno que se arraiga después de $d. Cuando Florecer expira, enraíza al objetivo en el sitio e inflige un gran daño de Naturaleza durante $d.",
+      "auraDescription": "Inflige $s1 p. de daño de Naturaleza cada $t1 s.",
+      "description": "Inocula al objetivo con un veneno que inflige $s1 p. de daño de Naturaleza cada $t1 s durante $d.",
       "name": "Florecer",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "esMX"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "esMX"
           },
           "name": {
@@ -158,21 +160,21 @@
       }
     },
     "frFR": {
-      "auraDescription": "$s1 $lpoint:points; de dégâts de nature infligés toutes les $t1 s. Si l’effet n’est pas dissipé, la cible est immobilisée pendant $1290041d.",
-      "description": "Inflige à la cible un poison qui l’immobilise au bout de $d. Lorsque Floraison expire, la cible est immobilisée et subit d’importants dégâts de nature pendant $d.",
+      "auraDescription": "$s1 $lpoint de dégâts de nature infligé:points de dégâts de nature infligés; toutes les $t1 s.",
+      "description": "Empoisonne la cible et lui inflige $s1 $lpoint:points; de dégâts de nature toutes les $t1 s pendant $d.",
       "name": "Floraison",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "frFR"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "frFR"
           },
           "name": {
@@ -185,15 +187,16 @@
       }
     },
     "hrHR": {
-      "auraDescription": "$s1 štete prirode svakih $t1 sek. Ako se ne rasprši, meta je ukorijenjena na mjestu tijekom $1290041d.",
-      "description": "Pogađa cilj otrovom koji se ukorjenjuje nakon $d. Kada Cvjetanje istekne, ukorjenjuje cilj na mjestu i nanosi snažnu prirodnu štetu tijekom $d.",
+      "auraDescription": "Nanosi $s1 štete prirode svakih $t1 sek.",
+      "description": "Pogađa metu otrovom koji nanosi $s1 prirodne štete svakih $t1 sek. tijekom $d.",
       "name": "Cvjetanje",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceRecord": "spells/8806"
           },
           "description": {
             "origin": "ai",
@@ -209,15 +212,16 @@
       }
     },
     "itIT": {
-      "auraDescription": "$s1 danni da natura ogni $t1 sec. Se non viene dissolto, il bersaglio resta immobilizzato per $1290041d.",
-      "description": "Infligge al bersaglio un veleno che attecchisce dopo $d. Quando la fioritura termina, immobilizza il bersaglio e infligge ingenti danni da natura in $d.",
+      "auraDescription": "Infligge $s1 danni da natura ogni $t1 sec.",
+      "description": "Infligge al bersaglio un veleno che causa $s1 danni da natura ogni $t1 s per $d.",
       "name": "Fioritura",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceRecord": "spells/8806"
           },
           "description": {
             "origin": "ai",
@@ -233,21 +237,21 @@
       }
     },
     "koKR": {
-      "auraDescription": "$t1초마다 $s1의 자연 피해\r\n무효화하지 않으면 대상이 $1290041d 동안 이동 불가 상태가 됨",
-      "description": "대상에게 $d초 후 뿌리를 내리는 독을 주입합니다. 피워내기 효과가 만료되면 대상을 제자리에서 이동 불가 상태로 만들고 $d에 걸쳐 막대한 자연 피해를 입힙니다.",
+      "auraDescription": "$t1초마다 $s1의 자연 피해",
+      "description": "대상에게 독을 주입합니다. 독은 $d 동안 $t1초마다 $s1의 자연 피해를 입힙니다.",
       "name": "피워내기",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "koKR"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "koKR"
           },
           "name": {
@@ -259,16 +263,43 @@
         }
       }
     },
-    "plPL": {
-      "auraDescription": "$s1 obrażeń od natury co $t1 sek. Jeśli efekt nie zostanie rozproszony, cel zostaje unieruchomiony na $1290041d.",
-      "description": "Zatruwa cel trucizną, która zakorzenia się po $d. Gdy kwitnienie dobiega końca, unieruchamia cel i zadaje silne obrażenia od natury przez $d.",
-      "name": "Rozkwit",
+    "ltLT": {
+      "auraDescription": "Kas $t1 sek. padaroma $s1 gamtos žalos.",
+      "description": "Apnuodija taikinį nuodais, kurie kas $t1 sek. padaro $s1 gamtos žalos. Trunka $d.",
+      "name": "Žydėjimas",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS",
+            "sourceRecord": "spells/8806"
+          },
+          "description": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
             "sourceLocale": "enUS"
+          },
+          "name": {
+            "origin": "ai",
+            "source": "ForeverRosettaStoneAI",
+            "sourceLocale": "enUS"
+          }
+        }
+      }
+    },
+    "plPL": {
+      "auraDescription": "$s1 obrażeń Natury zadanych co $t1 sek.",
+      "description": "Zatruwa cel trucizną, która zadaje $s1 obrażeń od natury co $t1 sek. przez $d.",
+      "name": "Rozkwit",
+      "translationMetadata": {
+        "fields": {
+          "auraDescription": {
+            "origin": "ai",
+            "source": "polishForever",
+            "sourceLocale": "plPL",
+            "sourceRecord": "spells/8806",
+            "sourceRevision": "9b7f35499cdc8c52ebf4de88f315c18092c16ac8"
           },
           "description": {
             "origin": "ai",
@@ -284,21 +315,21 @@
       }
     },
     "ptBR": {
-      "auraDescription": "$s1 de dano de Natureza a cada $t1 s. Caso o efeito não seja dissipado, o alvo é enraizado no lugar por $1290041d.",
-      "description": "Assola o alvo com um veneno que age após $d. Quando a Florada expira, enraíza o alvo no lugar, causando dano de Natureza intenso ao longo de $d.",
+      "auraDescription": "$s1 de dano de Natureza causado a cada $t1 s.",
+      "description": "Assola o alvo com um veneno que causa $s1 de dano de Natureza a cada $t1 s por $d.",
       "name": "Florir",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "ptBR"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "ptBR"
           },
           "name": {
@@ -311,21 +342,21 @@
       }
     },
     "ruRU": {
-      "auraDescription": "$s1 ед. урона от сил природы раз в $t1 сек. Если эффект не снять, цель будет обездвижена на $1290041d.",
-      "description": "Поражает цель ядом, начинающим действовать через $d. По истечении времени действия \"Цветение\" обездвиживает цель, нанося существенный урон от сил природы в течение $d.",
+      "auraDescription": "$s1 ед. урона от сил природы раз в $t1 сек.",
+      "description": "Отравляет цель ядом, наносящим $s1 ед. урона от сил природы раз в $t1 сек. в течение $d.",
       "name": "Цветение",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "ruRU"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "ruRU"
           },
           "name": {
@@ -338,15 +369,17 @@
       }
     },
     "svSE": {
-      "auraDescription": "$s1 naturskada var $t1:e sek. Om effekten inte skingras hålls målet fast på plats i $1290041d.",
-      "description": "Drabbar målet med ett gift som slår rot efter $d. När Blomning upphör håller den fast målet och orsakar kraftig naturskada under $d.",
+      "auraDescription": "$s1 naturskada var $t1:e sek.",
+      "description": "Drabbar målet med ett gift som orsakar $s1 naturskada var $t1:e sekund i $d.",
       "name": "Blomma",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "ai",
-            "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "source": "varldenAvKrigskraft",
+            "sourceLocale": "svSE",
+            "sourceRecord": "spells/8806",
+            "sourceRevision": "0.10.1"
           },
           "description": {
             "origin": "ai",
@@ -363,15 +396,16 @@
       }
     },
     "trTR": {
-      "auraDescription": "Her $t1 saniyede $s1 Doğa hasarı. Etki dağıtılmazsa hedef $1290041d boyunca olduğu yerde köklenir.",
-      "description": "Hedefe $d sonra kök salan bir zehir bulaştırır. Çiçeklenme sona erdiğinde hedefi yerinde kökler ve $d boyunca yoğun Doğa hasarı verir.",
+      "auraDescription": "Her $t1 saniyede $s1 doğa hasarı verir.",
+      "description": "Hedefe $d boyunca her $t1 saniyede $s1 Doğa hasarı veren bir zehir bulaştırır.",
       "name": "Çiçeklenme",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceRecord": "spells/8806"
           },
           "description": {
             "origin": "ai",
@@ -387,15 +421,16 @@
       }
     },
     "ukUA": {
-      "auraDescription": "$s1 шкоди від сил природи кожні $t1 с. Якщо ефект не розвіяти, ціль буде знерухомлена на $1290041d.",
-      "description": "Заражає ціль отрутою, яка вкорінюється через $d. Коли цвітіння закінчується, воно знерухомлює ціль і завдає сильної шкоди природою протягом $d.",
+      "auraDescription": "Завдає $s1 шкоди природою кожні $t1 с.",
+      "description": "Отруює ціль отрутою, що завдає $s1 шкоди природою кожні $t1 с протягом $d.",
       "name": "Цвітіння",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "ai",
             "source": "ForeverRosettaStoneAI",
-            "sourceLocale": "enUS"
+            "sourceLocale": "enUS",
+            "sourceRecord": "spells/8806"
           },
           "description": {
             "origin": "ai",
@@ -411,21 +446,21 @@
       }
     },
     "zhCN": {
-      "auraDescription": "每$t1秒造成$s1点自然伤害。如果没有被驱散，则目标会被定身，持续$1290041d。",
-      "description": "对目标施加一种毒药，该毒药将在$d后绽放。绽放效果结束时，将目标定身，并在$d内造成大量自然伤害。",
+      "auraDescription": "每$t1秒造成$s1点自然伤害。",
+      "description": "使目标中毒，每$t1秒造成$s1点自然伤害，持续$d。",
       "name": "绽放",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "zhCN"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "zhCN"
           },
           "name": {
@@ -438,21 +473,21 @@
       }
     },
     "zhTW": {
-      "auraDescription": "每$t1秒造成$s1點自然傷害。若未被驅散，目標會被定身在原地，持續$1290041d。",
-      "description": "對目標施毒，在$d後生根。綻放結束後會使目標定身在原地，在$d內造成大量自然傷害。",
+      "auraDescription": "每$t1秒造成$s1點自然傷害。",
+      "description": "對目標施加劇毒，每$t1秒會造成$s1點自然傷害，持續$d。",
       "name": "綻放",
       "translationMetadata": {
         "fields": {
           "auraDescription": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "zhTW"
           },
           "description": {
             "origin": "original",
             "source": "wago",
-            "sourceBuild": "1.60.1.70938",
+            "sourceBuild": "1.60.1.71091",
             "sourceLocale": "zhTW"
           },
           "name": {
@@ -466,12 +501,29 @@
     }
   },
   "tooltipData": {
-    "durationMs": 10000,
+    "durationMs": 30000,
+    "durationMsSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellDuration": "4787f303fe8487cd67e5f9e8574fdc6fa2a03516dcfaabba23d9944f937223f5",
+        "SpellMisc": "fcda276800fd8cd1f64e8808dc1b8da24880fce992d246694d0dab79953e9135"
+      },
+      "sourceLocale": "enUS"
+    },
+    "effectValuesSourceMetadata": {
+      "source": "wowClient",
+      "sourceBuild": "1.60.1.71091",
+      "sourceFileSha256": {
+        "SpellEffect": "7a612a50e224769604d0e57968fd51c70f287e2d20646e0e2e8bf2548b0ebfd9"
+      },
+      "sourceLocale": "enUS"
+    },
     "effects": [
       {
         "apCoefficient": 0,
         "auraType": 3,
-        "basePoints": 150,
+        "basePoints": 20,
         "bonusCoefficient": 0,
         "effectType": 6,
         "index": 0,
