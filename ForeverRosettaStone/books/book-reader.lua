@@ -336,7 +336,7 @@ end
 
 function Addon:UpdateBookReader()
     local book, missing
-    if self:IsFeatureEnabled("bookPanel") and not self:IsTooltipBlocked()
+    if self:IsFeatureEnabled("bookPanel") and not self:IsTooltipBlocked(true)
         and not SettingsPanel:IsShown() and not WorldMapFrame:IsShown() then
         book, missing = self:GetOpenBook()
     end

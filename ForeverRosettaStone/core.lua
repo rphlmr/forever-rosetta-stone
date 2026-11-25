@@ -104,6 +104,8 @@ local function Initialize()
     end
     Addon.tooltipRendering = nil
     Addon:LoadPreferences()
+    Addon.tooltipHoldVisible = not Addon.preferences.tooltipHold
+    Addon.refreshMapMenuTooltip, Addon.mapMenuTooltipRow = nil, nil
     if ForeverRosettaStoneDB.InitializeLookups then ForeverRosettaStoneDB:InitializeLookups() end
     if Addon.InitializeTooltipLabels then Addon:InitializeTooltipLabels() end
     Addon.current = Addon:CreateQuestState()
@@ -176,6 +178,7 @@ local function Initialize()
     input:SetScript("OnUpdate", function(_, deltaSeconds)
         if inputGeneration ~= Addon.generation or Addon.lifecycle == "suspended" then return end
 
+        if Addon.preferences.tooltipHold then Addon:UpdateTooltipHold() end
         elapsedSeconds = elapsedSeconds + deltaSeconds
 
         if elapsedSeconds < 0.1 then return end

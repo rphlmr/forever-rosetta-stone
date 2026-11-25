@@ -21,10 +21,10 @@ function Addon:GetTooltipComponents()
     return result
 end
 
-function Addon:UpdateTooltipComponents()
+function Addon:UpdateTooltipComponents(tooltipsOnly)
     -- Resolve the NPC reader first so its row tooltips never show on the opening frame.
     local interaction = componentByKind.questInteraction
-    if interaction then interaction.Update() end
+    if interaction and not tooltipsOnly then interaction.Update() end
     for _, component in ipairs(components) do
         if component ~= interaction then component.Update() end
     end
@@ -420,6 +420,14 @@ end
 function Addon:SendTooltipEvent(group, event)
     if not group or not group[1] then return end
     if self.tooltipRendering and event.type ~= "reset" then return end
+    if group.holdRefresh then
+        if event.type == "reset"
+            or (event.source == group[1] and (event.type == "native.data" or event.type == "native.hidden")) then
+            group.holdRefresh = nil
+        elseif event.type == "layout.now" or event.type == "layout.request" or event.type == "layout.tick" then
+            return
+        end
+    end
     local visible = GetGroupVisibility(group)
     group.lifecycle = group.lifecycle or self:CreateTooltipLifecycle(group[1], visible)
     event.visible = visible
@@ -511,26 +519,56 @@ function Addon:UpdateNameTooltip(source, kind, id, color, deferLayout)
     self:EndBenchmarkSample(kind .. ".tooltip", id, started, name ~= nil, source)
 end
 
-function Addon:RefreshNameTooltips()
-    if not self.nameTooltips then return end
+local function RefreshNameTooltip(self, source, spec)
+    if source:IsForbidden() then return end
+    -- An aura first shown with restricted identity has no cached kind/ID to refresh.
+    -- Resolve current native data again when it becomes readable after combat.
+    local data = source:IsVisible() and source.GetPrimaryTooltipData and source:GetPrimaryTooltipData()
+    local readable = canaccessallvalues(data) and type(data) == "table"
+    local aura = readable and canaccessallvalues(data.type) and Enum.TooltipDataType.UnitAura
+        and data.type == Enum.TooltipDataType.UnitAura
+    if readable and (not spec.kind or not spec.id or aura) then
+        self:SendTooltipEvent(spec.group, { type = "native.data", source = source, data = data })
+        -- The source is already visible, so no native Show will finish this refresh.
+        self:SendTooltipEvent(spec.group, { type = "native.shown", source = source })
+    elseif spec.kind and spec.id then
+        self:ClearStackedTooltip(source)
+        self:UpdateNameTooltip(source, spec.kind, spec.id, spec.color)
+    end
+end
 
-    for source, spec in pairs(self.nameTooltips) do
-        if not source:IsForbidden() then
-            -- An aura first shown with restricted identity has no cached kind/ID to refresh.
-            -- Resolve current native data again when it becomes readable after combat.
-            local data = source:IsVisible() and source.GetPrimaryTooltipData and source:GetPrimaryTooltipData()
-            local readable = canaccessallvalues(data) and type(data) == "table"
-            local aura = readable and canaccessallvalues(data.type) and Enum.TooltipDataType.UnitAura
-                and data.type == Enum.TooltipDataType.UnitAura
-            if readable and (not spec.kind or not spec.id or aura) then
-                self:SendTooltipEvent(spec.group, { type = "native.data", source = source, data = data })
-                -- The source is already visible, so no native Show will finish this refresh.
-                self:SendTooltipEvent(spec.group, { type = "native.shown", source = source })
-            elseif spec.kind and spec.id then
-                self:ClearStackedTooltip(source)
-                self:UpdateNameTooltip(source, spec.kind, spec.id, spec.color)
+local function WaitForNativeItemRefresh(self, group)
+    local source = group[1]
+    local spec = self.nameTooltips[source]
+    if spec.kind ~= "item" or source:IsForbidden() or not source:IsVisible()
+        or self:GetTooltipPresentation(source) ~= "below" then return false end
+    local owner = source:GetOwner()
+    if not owner or owner:IsForbidden() or not owner.UpdateTooltip then return false end
+
+    -- The owner rebuilds the tooltip on its next native update. Appending to the old
+    -- rows first would draw the translation at a different position until that rebuild.
+    local ticket = {}
+    group.holdRefresh = ticket
+    C_Timer.After(TOOLTIP_UPDATE_TIME or 0.2, function()
+        if self.nameTooltips[source] ~= spec or group.holdRefresh ~= ticket then return end
+        group.holdRefresh = nil
+        self:Run("refresh held item tooltip", function()
+            for _, candidate in ipairs(group) do
+                RefreshNameTooltip(self, candidate, self.nameTooltips[candidate])
             end
+        end)
+    end)
+    return true
+end
+
+function Addon:RefreshNameTooltips(holdChanged)
+    if not self.nameTooltips then return end
+    local waiting = holdChanged and {}
+    for source, spec in pairs(self.nameTooltips) do
+        if waiting and waiting[spec.group] == nil then
+            waiting[spec.group] = WaitForNativeItemRefresh(self, spec.group)
         end
+        if not waiting or not waiting[spec.group] then RefreshNameTooltip(self, source, spec) end
     end
 end
 

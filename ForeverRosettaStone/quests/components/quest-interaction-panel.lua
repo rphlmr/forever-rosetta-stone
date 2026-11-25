@@ -160,7 +160,7 @@ end
 function Addon:UpdateQuestInteraction()
     local source, id, context
 
-    if self:IsFeatureEnabled("questPanel") and not self:IsTooltipBlocked()
+    if self:IsFeatureEnabled("questPanel") and not self:IsTooltipBlocked(true)
         and not SettingsPanel:IsShown() and not WorldMapFrame:IsShown() then
         source, id, context = self:ResolveQuestInteraction()
     end

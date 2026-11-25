@@ -14,6 +14,16 @@ Tooltip categories offer **Off**, **Name only**, or **All details** wherever det
 translations are available. Choose the tooltip layout separately. **Separate tooltip**
 enables the position selector for NPC translations.
 
+Under **Tooltip content**, enable **Show translations while held** to reveal tooltip
+translations only while holding a shortcut. **Hold to translate (keyboard)** starts
+with **Shift**, and the controller shortcut starts unassigned. Open either row,
+choose **Assign**, hold the desired inputs together, then release. Either shortcut
+can reveal the translation. The same dialog lets you clear or reset the assignment.
+
+On Xbox controllers, try the **Share** (capture) button if WoW detects it and it is
+free on your setup. A button that is already bound in WoW can still trigger its
+game action, such as ping on the right stick.
+
 Use **Live settings** to change options alongside the spellbook, talents or another game
 window.
 

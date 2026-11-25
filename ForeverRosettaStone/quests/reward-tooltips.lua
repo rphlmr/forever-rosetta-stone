@@ -150,6 +150,7 @@ end
 
 function Addon:UpdateRewardTooltips(button)
     if not self:IsFeatureEnabled("rewardComparison")
+        or self:IsTooltipHoldHidden()
         or (GameMenuFrame and GameMenuFrame:IsShown())
         or (self.errorDialog and self.errorDialog.frame:IsShown() and not self:IsDebugPicking()) then
         self:HideRewardTooltips()

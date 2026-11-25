@@ -6,11 +6,16 @@
 
 - Added Lithuanian (Lietuvių) as a translation language and expanded coverage on 80,328 existing catalog entries, including quests, dialogue, items, spells, books, locations, and client labels.
 - Enabled translation of quest summaries and client-verified objectives from the maintained English catalog for additional languages.
+- Added an optional hold-to-translate mode for tooltips. Assign a key, button, or combination separately for keyboard and controller, and view, clear, or reset either shortcut in Settings. The mode is off by default.
+  On Xbox controllers, try the **Share** (capture) button if WoW detects it and it is free on your setup.
 
 ### Fixed
 
 - Restored localized progress text for two item objectives in the official languages and imported five French quest fields from the game client.
 - Fixed spell tooltips leaving shared rows in the client language for translation languages that use catalog-backed formats.
+- Prevented stacked item tooltips from briefly drawing translations in the wrong place when toggling them with a shortcut.
+- Fixed missing Lithuanian and Czech glyphs and the blank Traditional Chinese language label. Settings previews now use separate fonts for native and translated text.
+- Fixed indexing for searchable settings with custom radio controls.
 
 ## [1.9.0] - 2026-11-24
 

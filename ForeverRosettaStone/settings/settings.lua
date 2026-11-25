@@ -5,6 +5,9 @@ local _, Addon = ...
 local newSettings = {
     ["tooltipPresentation.above"] = true,
     ["tooltipPresentation.replacement"] = true,
+    tooltipHold = true,
+    tooltipHoldKey = true,
+    tooltipHoldGamepad = true,
 }
 
 Addon.features = {
@@ -88,6 +91,17 @@ local featureByID = {}
 for _, feature in ipairs(Addon.features) do featureByID[feature.id] = feature end
 local npcTooltipPositions = { top = true, left = true, right = true, bottom = true }
 local tooltipModes = { stacked = true, separate = true }
+local defaultTooltipHoldKey = "SHIFT"
+local modifierKeys = {
+    SHIFT = "SHIFT", CTRL = "CTRL", ALT = "ALT", META = "META",
+    LSHIFT = "SHIFT", RSHIFT = "SHIFT", LCTRL = "CTRL", RCTRL = "CTRL",
+    LALT = "ALT", RALT = "ALT", LMETA = "META", RMETA = "META",
+}
+local modifierState = { SHIFT = IsShiftKeyDown, CTRL = IsControlKeyDown, ALT = IsAltKeyDown, META = IsMetaKeyDown }
+local gamepadButtonNames = {
+    PADLSTICK = "L3", PADRSTICK = "R3",
+    PADLSHOULDER = "LB", PADRSHOULDER = "RB", PADLTRIGGER = "LT", PADRTRIGGER = "RT",
+}
 local tooltipNameOptions = {
     item = true, spell = true, aura = true, talent = true, mount = true, pet = true,
     appearance = true, npc = true, quest = true, mapQuest = true, questTracker = true, recipeTracker = true, characterStat = true,
@@ -104,6 +118,11 @@ function Addon:LoadPreferences()
     if type(angle) ~= "number" or angle ~= angle or math.abs(angle) == math.huge then angle = 135 end
     self.preferences.minimapAngle = angle % 360
     if not tooltipModes[self.preferences.tooltipMode] then self.preferences.tooltipMode = "stacked" end
+    self.preferences.tooltipHold = self.preferences.tooltipHold == true
+    if type(self.preferences.tooltipHoldKey) ~= "string" then
+        self.preferences.tooltipHoldKey = defaultTooltipHoldKey
+    end
+    if type(self.preferences.tooltipHoldGamepad) ~= "string" then self.preferences.tooltipHoldGamepad = "" end
     if type(self.preferences.translationOnly) ~= "boolean" then self.preferences.translationOnly = false end
     if type(self.preferences.stackedTranslationFirst) ~= "boolean" then self.preferences.stackedTranslationFirst = false end
     local legacyNameOnly = self.preferences.tooltipCoverage == "name"
@@ -164,6 +183,60 @@ end
 
 function Addon:IsFeatureEnabled(id)
     return self.preferences.features[id]
+end
+
+local function IsHoldInputDown(key, gamepad)
+    if gamepad then return IsKeyDown(key) == true end
+    local isDown = modifierState[key]
+    if isDown then return isDown() end
+    return IsKeyDown(key, true) == true
+end
+
+local function IsHoldBindingDown(binding, gamepad)
+    if binding == "" then return false end
+    if not binding:find(" ", 1, true) then return IsHoldInputDown(binding, gamepad) end
+    for key in binding:gmatch("%S+") do
+        if not IsHoldInputDown(key, gamepad) then return false end
+    end
+    return true
+end
+
+function Addon:IsTooltipHoldHidden()
+    return self.preferences and self.preferences.tooltipHold and not self.tooltipHoldVisible
+end
+
+function Addon:UpdateTooltipHold()
+    local visible = not self.preferences.tooltipHold or IsHoldBindingDown(self.preferences.tooltipHoldKey, false)
+        or IsHoldBindingDown(self.preferences.tooltipHoldGamepad, true)
+    if self.tooltipHoldVisible == visible then return end
+    self.tooltipHoldVisible = visible
+    self:Run("refresh tooltip visibility", function()
+        self:RefreshNameTooltips(true)
+        self:ShowTranslationTooltip()
+        self:UpdateRewardTooltips()
+        self:UpdateTooltipComponents(true)
+        if self.refreshMapMenuTooltip then self.refreshMapMenuTooltip() end
+    end)
+end
+
+function Addon:SetTooltipHold(enabled)
+    self.preferences.tooltipHold = enabled
+    self:UpdateTooltipHold()
+    self:RefreshSettingsUI()
+end
+
+local function HoldInputText(key)
+    local text = GetBindingText and GetBindingText(key)
+    if text and text ~= "" and text ~= key then return text end
+    return gamepadButtonNames[key] or key
+end
+
+function Addon:GetTooltipHoldBindingText(field)
+    local binding = self.preferences[field]
+    if binding == "" then return self:SettingsText("tooltipHoldUnassigned") end
+    local keys = {}
+    for key in binding:gmatch("%S+") do keys[#keys + 1] = HoldInputText(key) end
+    return table.concat(keys, " + ")
 end
 
 function Addon:SetTooltipPresentation(mode)
@@ -285,6 +358,10 @@ function Addon:ResetFeatureSettings()
     self.preferences.stackedTranslationFirst = false
     for kind in pairs(tooltipNameOptions) do self.preferences.tooltipNameOnly[kind] = false end
     self.preferences.translationHeader = true
+    self.preferences.tooltipHold = false
+    self.preferences.tooltipHoldKey = defaultTooltipHoldKey
+    self.preferences.tooltipHoldGamepad = ""
+    self.tooltipHoldVisible = true
     self.contentKey, self.tooltipKey = nil, nil
 
     self:RefreshSettingsUI()
@@ -301,6 +378,14 @@ function Addon:RefreshSettingsUI()
     -- Native Settings notifies controls after its proxy setter returns and unlocks.
     if not nativeChange then
         for _, setting in pairs(self.settings or {}) do setting:NotifyUpdate() end
+    end
+    local list = self.settingsCategory and SettingsPanel:IsShown() and SettingsPanel:GetSettingsList()
+    local scrollBox = list and list.ScrollBox
+    if scrollBox and scrollBox.ForEachFrame then
+        scrollBox:ForEachFrame(function(row, initializer)
+            local field = initializer and initializer.tooltipHoldBinding
+            if field and row.Button then row.Button:SetText(self:GetTooltipHoldBindingText(field)) end
+        end)
     end
     self:RefreshRadioLists()
     if self.liveSettings and self.liveSettings:IsShown() then self.liveSettings:Refresh() end
@@ -418,15 +503,26 @@ function Addon:GetOptionPreview(id, value)
     return native, translated, mode
 end
 
-local function OptionHelp(id, value, hint, split)
+local function OptionHelpBlocks(id, value, hint, split)
     local native, translated, mode = Addon:GetOptionPreview(id, value)
-    if not native and not translated then return hint end
-    local blocks = { hint, "|cffaaaaaa" .. Addon:SettingsText("preview") .. "|r" }
-    if translated and mode == "above" then blocks[#blocks + 1] = translated end
-    if native and (mode ~= "replacement" or not translated) then blocks[#blocks + 1] = native end
-    if split and translated and mode == "separate" then return table.concat(blocks, "\n\n"), translated end
-    if translated and mode ~= "above" then blocks[#blocks + 1] = translated end
-    return table.concat(blocks, "\n\n")
+    local blocks = { { text = hint } }
+    if not native and not translated then return blocks end
+    local locale = id == "locale" and value or Addon:GetTargetLocale()
+    local translation = translated and { text = translated, locale = locale }
+    blocks[2] = { text = "|cffaaaaaa" .. Addon:SettingsText("preview") .. "|r" }
+    if translation and mode == "above" then blocks[#blocks + 1] = translation end
+    if native and (mode ~= "replacement" or not translated) then blocks[#blocks + 1] = { text = native } end
+    if split and translation and mode == "separate" then return blocks, translated end
+    if translation and mode ~= "above" then blocks[#blocks + 1] = translation end
+    return blocks
+end
+
+local function AddOptionHelpLines(tip, blocks)
+    for index, block in ipairs(blocks) do
+        if index > 1 then tip:AddLine(" ") end
+        tip:AddLine(block.text, nil, nil, nil, true)
+        if block.locale then Addon:ApplyTooltipTranslationFont(tip, block.locale, tip:NumLines()) end
+    end
 end
 
 local function ShowOptionHelp(owner, id, label, value, hint)
@@ -435,9 +531,9 @@ local function ShowOptionHelp(owner, id, label, value, hint)
     tip:SetOwner(owner, "ANCHOR_RIGHT")
     tip:ClearLines()
     tip:SetText(label, 1, 1, 1)
-    local help, separate = OptionHelp(id, value, hint, true)
-    tip:AddLine(help, nil, nil, nil, true)
-    Addon:ApplyTooltipTranslationFont(tip, locale)
+    if id == "locale" then Addon:ApplyTooltipTranslationFont(tip, locale) end
+    local blocks, separate = OptionHelpBlocks(id, value, hint, true)
+    AddOptionHelpLines(tip, blocks)
     tip:Show()
     local companion = tip.optionPreview
     if separate then
@@ -507,8 +603,11 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
         end
         button.text:SetJustifyH("LEFT")
         button.text:SetWordWrap(false)
-        if id == "locale" then self:TryLocalizedFont(button.text, choice.value) end
-        button.text:SetText(choice.label)
+        local displayLabel = choice.label
+        if id == "locale" and not self:TryLanguageLabelFont(button.text, choice.value) and choice.value == "zhTW" then
+            displayLabel = "Traditional Chinese"
+        end
+        button.text:SetText(displayLabel)
         button:SetHighlightTexture([[Interface\QuestFrame\UI-QuestTitleHighlight]])
         local function Choose()
             if isEnabled and not isEnabled() then return end
@@ -649,14 +748,17 @@ function Addon:CreateSettingsUI()
     self.liveSettingsGroups = {}
     local optionPreviewInitializers = {}
     if SettingsTooltip and Settings.InitTooltip then
-        hooksecurefunc(Settings, "InitTooltip", function()
+        hooksecurefunc(Settings, "InitTooltip", function(title)
             local locale = self:GetTargetLocale()
             if not self:UsesLocalizedFont(locale) then return end
             local owner = SettingsTooltip:GetOwner()
             local row = owner and (owner.GetElementData and owner or owner:GetParent())
             local initializer = row and row.GetElementData and row:GetElementData()
-            if initializer and optionPreviewInitializers[initializer] then
-                self:ApplyTooltipTranslationFont(SettingsTooltip, locale, 2)
+            local getBlocks = optionPreviewInitializers[initializer]
+            if getBlocks then
+                SettingsTooltip:ClearLines()
+                SettingsTooltip:SetText(title, 1, 1, 1)
+                AddOptionHelpLines(SettingsTooltip, getBlocks())
             end
         end)
     end
@@ -674,19 +776,29 @@ function Addon:CreateSettingsUI()
     end
     -- Native addon dropdown popups taint the client's shared controller focus on opening.
     -- Lists use inline radio rows; two-value choices use native checkboxes.
+    -- Let Blizzard's initializer factory build search tags from the setting names.
+    -- Search reads tags and parent initializers directly, so don't write either from addon code.
     local function RadioList(template, columns, id, label, hint, default, choices, getValue, setValue, isEnabled)
-        Register(category, id, label, default, getValue, setValue)
+        local setting = Register(category, id, label, default, getValue, setValue)
         self:CreateRadioList(id, label, hint, choices, getValue, setValue, isEnabled, columns)
-        local initializer = Settings.CreatePanelInitializer(template, { list = id })
-        if initializer.AddSearchTags then initializer:AddSearchTags(label) end
+        local initializer = Settings.CreatePanelInitializer(template, { list = id, settings = { setting } })
         layout:AddInitializer(initializer)
         return initializer
     end
     local function Checkbox(category, id, setting, description)
         local initializer = Settings.CreateCheckbox(category, setting, description)
+        if newSettings[id] then
+            initializer.IsNewTagShown = function() return true end
+            initializer.MarkSettingAsSeen = function() end
+        end
         if samples[id] then
-            initializer.GetTooltip = function() return OptionHelp(id, setting:GetValue(), description) end
-            optionPreviewInitializers[initializer] = true
+            local function GetBlocks() return OptionHelpBlocks(id, setting:GetValue(), description) end
+            initializer.GetTooltip = function()
+                local text = {}
+                for _, block in ipairs(GetBlocks()) do text[#text + 1] = block.text end
+                return table.concat(text, "\n\n")
+            end
+            optionPreviewInitializers[initializer] = GetBlocks
         end
         return initializer
     end
@@ -714,17 +826,17 @@ function Addon:CreateSettingsUI()
     table.sort(languages, function(a, b) return a.label == b.label and a.value < b.value or a.label < b.label end)
     Group(Text("translation"))
     local liveButton = CreateSettingsButtonInitializer(Text("liveSettings"), OPEN or Text("liveSettings"),
-        function() self:OpenLiveSettings() end, Text("liveHint"), true)
+        function() self:OpenLiveSettings() end, Text("liveHint"), false)
     liveButton.showNew = true
     layout:AddInitializer(liveButton)
     layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(self:DebugText("title")))
     layout:AddInitializer(CreateSettingsButtonInitializer(self:DebugText("inspect"), self:DebugText("inspect"),
-        function() self:ToggleDebugInspection() end, self:DebugText("inspectHint"), true))
+        function() self:ToggleDebugInspection() end, self:DebugText("inspectHint"), false))
     layout:AddInitializer(CreateSettingsButtonInitializer(self:DebugText("title"), self:SettingsText("openConsole"),
         function()
             HideUIPanel(SettingsPanel)
             self:RunDebugCommand("")
-        end, self:DebugText("inspectHint") .. "\n" .. self:DebugText("reportHint"), true))
+        end, self:DebugText("inspectHint") .. "\n" .. self:DebugText("reportHint"), false))
     layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(Text("translation")))
     RadioList("ForeverRosettaStoneSettingsLanguageListTemplate", 2, "locale", Text("language"), Text("languageHint"), "enUS", languages,
         function() return self:GetTargetLocale() end,
@@ -746,6 +858,29 @@ function Addon:CreateSettingsUI()
         function(value) self:SetNpcTooltipPosition(value) end,
         function() return self:GetTooltipPresentation() == "separate" end)
     layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(Text("tooltipContent")))
+    local hold = Register(category, "tooltipHold", Text("tooltipHold"), false,
+        function() return self.preferences.tooltipHold end,
+        function(value) self:SetTooltipHold(value) end)
+    Checkbox(category, "tooltipHold", hold, Text("tooltipHoldHint"))
+    for _, binding in ipairs({
+        { field = "tooltipHoldKey", label = "tooltipHoldKey", prompt = "tooltipHoldKeyPrompt" },
+        { field = "tooltipHoldGamepad", label = "tooltipHoldGamepad", prompt = "tooltipHoldGamepadPrompt" },
+    }) do
+        local initializer = CreateSettingsButtonInitializer(Text(binding.label),
+            function() return self:GetTooltipHoldBindingText(binding.field) end,
+            function()
+                self:Run("assign tooltip hold input", function()
+                    self:ShowTooltipHoldBindingDialog(binding.field, binding.prompt)
+                end)
+            end,
+            Text("tooltipHoldAssign"), false)
+        initializer.tooltipHoldBinding = binding.field
+        initializer.showNew = newSettings[binding.field]
+        initializer.GetTooltip = function()
+            return Text(binding.prompt)
+        end
+        layout:AddInitializer(initializer)
+    end
     local header = Register(category, "translationHeader", Text("translationHeader"), true,
         function() return self.preferences.translationHeader end,
         function(value) self:SetTranslationHeader(value) end)
@@ -786,7 +921,6 @@ function Addon:CreateSettingsUI()
         rewardComparison = "questPanel", bookAutoOpen = "bookPanel",
     }
     self.liveSettingParents = parentFeatures
-    local featureControls = {}
     for _, group in ipairs({ "Quests", "Items", "Spells", "Talents", "NPCs", "Locations", "Collections", "Character", "Professions", "Books" }) do
         Group(self:SettingsGroupName(group))
         layout:AddInitializer(CreateSettingsListSectionHeaderInitializer(self:SettingsGroupName(group)))
@@ -801,10 +935,10 @@ function Addon:CreateSettingsUI()
                         function() return self:IsFeatureEnabled(feature.id) end,
                         function(value) self:SetFeatureEnabled(feature.id, value) end)
                     local control = Checkbox(category, feature.id, setting, description)
-                    featureControls[feature.id] = control
                     local parent = parentFeatures[feature.id]
                     if parent then
-                        control:SetParentInitializer(featureControls[parent], function() return self:IsFeatureEnabled(parent) end)
+                        control:Indent()
+                        control:AddModifyPredicate(function() return self:IsFeatureEnabled(parent) end)
                         control:AddEvaluateStateCVar(self.settings[parent]:GetVariable())
                     end
                 end
@@ -847,6 +981,125 @@ function Addon:CreateSettingsUI()
         SyncControllerScroll()
     end)
     self:RefreshSettingsUI()
+end
+
+function Addon:ShowTooltipHoldBindingDialog(field, prompt)
+    if not self.tooltipHoldBindingDialog then
+        local dialog = CreateFrame("Frame", nil, SettingsPanel)
+        dialog:Hide()
+        dialog:SetFrameStrata("DIALOG")
+        dialog:SetFrameLevel(SettingsPanel:GetFrameLevel() + 2)
+        dialog:SetPoint("CENTER", SettingsPanel, "CENTER")
+        dialog:SetSize(400, 96)
+        dialog:EnableMouse(true)
+        dialog.border = CreateFrame("Frame", nil, dialog, "DialogBorderOpaqueTemplate")
+        dialog.border:SetAllPoints(dialog)
+        dialog.border:SetFrameLevel(dialog:GetFrameLevel() - 1)
+        local label = dialog:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+        label:SetPoint("TOPLEFT", 16, -12)
+        label:SetPoint("TOPRIGHT", -16, -12)
+        label:SetWordWrap(true)
+        dialog.label = label
+        local buttons = {}
+        local keys, pressed, names = {}, {}, {}
+        local function Button(text, offset, action)
+            local button = CreateFrame("Button", nil, dialog, "UIPanelButtonTemplate")
+            button:SetSize(88, 22)
+            button:SetPoint("BOTTOMLEFT", offset, 12)
+            button:SetText(text)
+            button:SetScript("OnClick", action)
+            button.OnSmartNavClick = action
+            table.insert(buttons, button)
+            return button
+        end
+        local function RenderLabel()
+            local text = self:SettingsText(dialog.field) .. "\n" .. self:GetTooltipHoldBindingText(dialog.field)
+            if dialog.capturing then
+                text = text .. "\n" .. self:SettingsText(dialog.prompt)
+                if #names > 0 then text = text .. "\n" .. table.concat(names, " + ") end
+            end
+            label:SetText(text)
+        end
+        local function SetCapture(capturing)
+            keys, pressed, names = {}, {}, {}
+            dialog.capturing = capturing
+            dialog:EnableKeyboard(capturing)
+            dialog:EnableGamePadButton(capturing and dialog.field == "tooltipHoldGamepad")
+            dialog:SetHeight(capturing and 128 or 96)
+            RenderLabel()
+            for index = 1, 3 do buttons[index]:SetEnabled(not capturing) end
+            buttons[2]:SetEnabled(not capturing and self.preferences[dialog.field] ~= "")
+            local default = dialog.field == "tooltipHoldKey" and defaultTooltipHoldKey or ""
+            buttons[3]:SetEnabled(not capturing and self.preferences[dialog.field] ~= default)
+        end
+        local function Assign(key)
+            self.preferences[dialog.field] = key
+            self:UpdateTooltipHold()
+            self:RefreshSettingsUI()
+            SetCapture(false)
+        end
+        local function Cancel()
+            if dialog.capturing then SetCapture(false) else dialog:Hide() end
+            return true
+        end
+        local function CaptureDown(key)
+            if pressed[key] then return end
+            pressed[key] = true
+            keys[#keys + 1] = key
+            names[#names + 1] = HoldInputText(key)
+            RenderLabel()
+        end
+        local function CaptureUp(key)
+            if pressed[key] then Assign(table.concat(keys, " ")) end
+        end
+        dialog.assign = Button(self:SettingsText("tooltipHoldAssign"), 12, function() SetCapture(true) end)
+        dialog.unbind = Button(UNBIND or REMOVE or "Unbind", 108, function() Assign("") end)
+        dialog.reset = Button(DEFAULTS or "Default", 204, function()
+            Assign(dialog.field == "tooltipHoldKey" and defaultTooltipHoldKey or "")
+        end)
+        dialog.cancel = Button(CANCEL, 300, Cancel)
+        dialog.SmartNavigationCloseHandler = Cancel
+        dialog.FocusGamepad = function() self:ClearGamepadTarget(dialog) end
+        for index = 1, #buttons - 1 do
+            SmartNavigation_AddBidirectionalJumpNavigationOverride(buttons[index], SMART_NAV_INPUT_DIRECTION.RIGHT, buttons[index + 1])
+        end
+        dialog:SetScript("OnHide", function()
+            dialog:EnableKeyboard(false)
+            dialog:EnableGamePadButton(false)
+            dialog.capturing = false
+            if dialog.gamepadManaged then
+                dialog.gamepadManaged = nil
+                GamepadMode.FrameControlsManager:FrameHidden(dialog)
+                SmartNavigation:RemovePanelInfo(dialog)
+            end
+        end)
+        SettingsPanel:HookScript("OnHide", function() dialog:Hide() end)
+        dialog:SetScript("OnKeyDown", function(_, key)
+            if not dialog.capturing then return end
+            if key == "ESCAPE" then Cancel()
+            elseif dialog.field == "tooltipHoldKey" then CaptureDown(modifierKeys[key] or key)
+            elseif key == "BACKSPACE" or key == "DELETE" then Assign("") end
+        end)
+        dialog:SetScript("OnKeyUp", function(_, key)
+            if dialog.capturing and dialog.field == "tooltipHoldKey" then CaptureUp(modifierKeys[key] or key) end
+        end)
+        dialog:SetScript("OnGamePadButtonDown", function(_, button)
+            if dialog.capturing and dialog.field == "tooltipHoldGamepad" then CaptureDown(button) end
+        end)
+        dialog:SetScript("OnGamePadButtonUp", function(_, button)
+            if dialog.capturing and dialog.field == "tooltipHoldGamepad" then CaptureUp(button) end
+        end)
+        dialog.RefreshBinding = SetCapture
+        self.tooltipHoldBindingDialog = dialog
+    end
+    local dialog = self.tooltipHoldBindingDialog
+    dialog.field, dialog.prompt = field, prompt
+    dialog.RefreshBinding(false)
+    dialog:Show()
+    if InputUtil.IsGamepadUIEnabled() and not dialog.gamepadManaged then
+        dialog.gamepadManaged = true
+        GamepadMode.FrameControlsManager:FrameShown(dialog)
+    end
 end
 
 function Addon:ShowSettingsResetDialog()
@@ -1018,7 +1271,8 @@ function Addon:OpenLiveSettings()
                         end
                     else
                         local feature = featureByID[row.id]
-                        local hint = feature and select(2, Addon:FeatureText(feature)) or Addon:SettingsText("translationHeaderHint")
+                        local hint = feature and select(2, Addon:FeatureText(feature))
+                            or Addon:SettingsText(row.id == "tooltipHold" and "tooltipHoldHint" or "translationHeaderHint")
                         ShowOptionHelp(owner, row.id, row.name, value, hint)
                     end
                 end
@@ -1062,7 +1316,7 @@ function Addon:OpenLiveSettings()
             end
             if row.id == "locale" and Addon:UsesLocalizedFont(value) then
                 local font = { valueText:GetFont() }
-                if Addon:TryLocalizedFont(valueText, value, font[2], font[3]) then button.localizedValueFont = font end
+                if Addon:TryLanguageLabelFont(valueText, value) then button.localizedValueFont = font end
             end
             button:Show()
             button.label:Show()

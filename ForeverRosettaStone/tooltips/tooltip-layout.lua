@@ -198,7 +198,7 @@ function Addon:ApplyTooltipTranslationFont(tip, locale, firstLine)
         if not saved[line] then
             saved[line] = { font = { font, size, flags }, nonSpaceWrap = line:CanNonSpaceWrap() }
         end
-        line:SetNonSpaceWrap(true)
+        if self:UsesNonSpaceWrap(locale) then line:SetNonSpaceWrap(true) end
     end
     ForEachTranslatedLine(tip, function(left, right, leftLine, rightLine)
         Apply(leftLine, left)
@@ -668,8 +668,9 @@ function Addon:GetTooltipGap(frame)
     return self.TOOLTIP_GAP * UIParent:GetEffectiveScale() / frame:GetEffectiveScale()
 end
 
-function Addon:IsTooltipBlocked()
+function Addon:IsTooltipBlocked(ignoreHold)
     return self.lifecycle ~= "ready"
+        or (not ignoreHold and self:IsTooltipHoldHidden())
         or (GameMenuFrame and GameMenuFrame:IsShown())
         or (self.errorDialog and self.errorDialog.frame:IsShown() and not self:IsDebugPicking())
 end
