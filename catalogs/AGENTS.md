@@ -101,8 +101,8 @@ objective source positions, or duplicate locale identifiers and English labels.
 - Missing source text remains absent. Official target languages may use the maintained English
   source as an explicit fallback, with its real source-language provenance. Do not guess labels.
 - Follow [the import/resync policy](../docs/import-resync.md) for source priority,
-  target-language decisions and the reviewed prepare/apply/verify pipeline. Never author AI
-  for official target languages outside the book/letter and quest/NPC dialogue exceptions.
+  target-language decisions and the reviewed prepare/apply/verify pipeline. Provisional AI
+  translations require verified official-language evidence from the newest applicable build.
   Preserve accepted translations, including captured quest objectives; missing new-job evidence must not remove them.
 - Preserve exact sourced wording and provenance, including legitimate names equal to English.
   For cities and continents, prefer official AreaTable/UiMap names. Never rewrite one
@@ -208,7 +208,7 @@ quest prose, objectives, tooltip facts, or relationships to make a record look c
 ### 2. Choose the wording and origin
 
 Prefer verified native text, then existing translations with the same source meaning and
-context. Follow the [source evidence rules](../docs/import-resync.md#eligibility-for-new-additional-language-ai-translations)
+context. Follow the [source evidence rules](../docs/import-resync.md#eligibility-for-provisional-ai-translations)
 and the specific [book and letter exception](../docs/import-resync.md#book-identities-and-existing-source-text).
 Check relevant entity names and Warcraft terminology before
 authoring. For targeted reuse, search the relevant catalog kind; do not print the full corpus.
@@ -363,7 +363,7 @@ Prefer verified official text for official languages, or applicable community te
 languages. Preserve explicit manual fixes and review conflicts with fresh evidence. Preserve
 unaffected valid translations; when source meaning changes, check every supported language.
 Reuse accepted matching wording,
-then author only eligible additional-language gaps from English with AI origin. Preserve declared AI origin
+then author eligible gaps in any target language from the latest verified official source with AI origin. Preserve declared AI origin
 when using community sources that contain AI text. Leave fields without source evidence absent.
 
 Cleanup covers demonstrated text/language errors and corresponding provenance within scope.

@@ -25,7 +25,8 @@ def normalized(text):
 
 def source_key(row, audit=False):
     if audit:
-        return ("creature", row["npcID"], row["questID"] or 0, row["stage"], row["lineID"], row["variant"])
+        speaker = ("gameobject", row["objectID"]) if "objectID" in row else ("creature", row["npcID"])
+        return (*speaker, row["questID"] or 0, row["stage"], row["lineID"], row["variant"])
     return (row["npcType"], row["npcId"], row["questId"] or 0, row["source"], row["lineId"], row["variant"])
 
 
@@ -105,11 +106,14 @@ def prepare(root, audit_path, snapshots, output, locales=None):
         for row in entries:
             raw_key = (*source_key(row, audit=True), row.get("playerSex"), row["enUS"], row["frFR"])
             key = sha256(dump_json(raw_key).encode())[:20]
-            npc_id, sex = row["npcID"], row.get("playerSex")
+            sex = row.get("playerSex")
             context = {"stage": row["stage"], "lineId": row["lineID"], "variant": row["variant"],
                        "scope": row.get("scope", "vanilla-reference")}
             if kind == "quests":
-                context["npcId"] = npc_id
+                if "objectID" in row:
+                    context["objectId"] = row["objectID"]
+                else:
+                    context["npcId"] = row["npcID"]
             if sex is not None:
                 context["playerSex"] = sex
             if row.get("contributionID") is not None:

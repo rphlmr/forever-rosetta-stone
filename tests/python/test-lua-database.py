@@ -480,6 +480,28 @@ class DatabaseTests(unittest.TestCase):
         })
         self.assertEqual(entity, before)
 
+    def test_spell_hotfix_keeps_stale_source_text_out_of_runtime(self):
+        previous = 'Old effect $s1'
+        proof = {'origin': 'original', 'source': 'fixture',
+                 'canonicalEnglishSha256': hashlib.sha256(previous.encode()).hexdigest()}
+        localized = {'name': 'Sort', 'description': 'Ancien effet $s1',
+                     'translationMetadata': {'fields': {
+                         'name': {'origin': 'original', 'source': 'fixture'}, 'description': proof,
+                     }}}
+        entity = {'locales': {'enUS': {'name': 'Spell', 'description': previous}, 'frFR': localized}}
+
+        project = runtime_catalog.project_localized_record
+        self.assertEqual(project('spells', '1', entity, 'frFR', {})['details']['description'], localized['description'])
+        entity['locales']['enUS']['description'] = 'New effect $s2'
+        self.assertEqual(project('spells', '1', entity, 'frFR', {})['name'], 'Sort')
+        self.assertNotIn('details', project('spells', '1', entity, 'frFR', {}))
+        self.assertIsNone(runtime_catalog.get_tooltip_source_text(entity, 'frFR', 'description'))
+        self.assertEqual(localized['description'], 'Ancien effet $s1')
+
+        localized['description'] = 'Nouvel effet $s2'
+        localized['translationMetadata']['fields']['description'] = {'origin': 'original', 'source': 'fixture'}
+        self.assertEqual(project('spells', '1', entity, 'frFR', {})['details']['description'], localized['description'])
+
     def test_foreign_source_english_translation_is_target_text_only(self):
         metadata = {'origin': 'ai', 'source': 'ForeverRosettaStoneAI', 'sourceLocale': 'zhTW'}
         original = {'name': 'Ingredient', 'description': 'Ingredient for poisons.', 'rank': 'Rank 1',

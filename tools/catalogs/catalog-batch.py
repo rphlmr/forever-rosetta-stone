@@ -14,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from tools.catalogs.catalog_storage import (KINDS, canonical_locales, dump_json, get_catalog_name,
                              get_entity_path, load_catalog, read_json)
-from tools.build.runtime_catalog import get_has_ai_translation, get_tooltip_source_text
+from tools.build.runtime_catalog import get_has_ai_translation, get_tooltip_source_text, matches_canonical_english
 from tools.catalogs.official_text import OFFICIAL_LOCALES, TEXT_FIELDS
 from tools.catalogs.english_scope import has_english_text
 
@@ -165,10 +165,15 @@ def validate_record(kind, entity_id, before, after, locales):
                     and not has_english_text(after, field):
                 raise ValueError('Text without an English source is outside catalog scope: ' + field)
 
-            prior_origin = prior_locales.get(locale, {}).get('translationMetadata', {}).get('fields', {}).get(field, {}).get('origin')
-            if prior_origin == 'original' and origin != 'original':
+            prior = prior_locales.get(locale, {}).get('translationMetadata', {}).get('fields', {}).get(field, {})
+            prior_origin = prior.get('origin')
+            current_source = (before_fields.get('enUS', {}).get(field), before_fields.get(locale, {}).get(field))
+            was_english_fallback = (locale != 'enUS' and prior.get('sourceLocale') == 'enUS'
+                                    and current_source[0] == current_source[1])
+            protected = matches_canonical_english(after, field, prior) and not was_english_fallback
+            if protected and prior_origin == 'original' and origin != 'original':
                 raise ValueError('Official wording must not be replaced by an authored translation: ' + field)
-            if prior_origin == 'community' and origin == 'ai':
+            if protected and prior_origin == 'community' and origin == 'ai':
                 raise ValueError('Community source wording must not be replaced by an authored translation: ' + field)
             if unchanged or origin != 'ai':
                 continue

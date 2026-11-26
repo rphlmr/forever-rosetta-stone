@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## [1.10.1] - 2026-11-26
+
+### Fixed
+
+- Fixed missing dialogue when checking progress or turning in A Watchful Eye at the Old Lion Statue. Both screens are now available in all 19 supported languages.
+- Updated the reference durations of Oath of Light and Scarlet Illusion to one hour and refreshed Reinforce spell data.
+- Updated Totem of the Maelstrom's name in 18 languages following the November 25 hotfix.
+- Updated six Balance Druid tooltips with native English and French text from the November 25 hotfix and provisional translations for the other 17 supported languages.
+
 ## [1.10.0] - 2026-11-25
 
 ### Added

@@ -16,7 +16,9 @@ revision and full search snapshots for each locale and client filter under ignor
 `datasources/imports/`. The pilot audit records their hashes and counts distinct lines by
 stage, separating localized text from English fallbacks.
 
-Join observations by NPC type and ID, quest ID where present, stage, line ID and variant.
+Join observations by speaker type and ID, quest ID where present, stage, line ID and variant.
+For a quest started or completed through a game object, use `objectID` in the
+reviewed audit. The catalog stores `objectId` and the addon matches a GameObject GUID.
 Verify the live text and player-dependent variant on the same screen. A localized row in the
 combined Classic Era and Forever view does not establish Forever provenance, and scripted
 follow-up lines are chat dialogue. A gossip match alone does not indicate whether it appears

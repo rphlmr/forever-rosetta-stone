@@ -79,7 +79,7 @@ class PilotCases:
                 if self.policy_evidence is not None and ai_block_reason(
                         target, kind, str(entity_id or identity['id']), field, english,
                         self.policy_evidence, quest=entity if kind == 'quests' else None) in (
-                            'noVerifiedOfficialTranslation', 'noVerifiedClientObjectiveBinding'):
+                            'noVerifiedOfficialSource', 'noVerifiedClientObjectiveBinding'):
                     status, reason = 'allowed_absence', 'blocked_by_translation_policy'
         if status is None:
             return False

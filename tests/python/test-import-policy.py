@@ -75,17 +75,32 @@ class ImportPolicyTests(unittest.TestCase):
         self.assertEqual({job['locale'] for job in queue['jobs']}, {'itIT'})
         self.assertEqual({row['locale'] for row in queue['blocked']}, {'frFR'})
 
-    def test_official_languages_never_receive_ai_jobs(self):
+    def test_official_target_can_receive_ai_when_its_native_source_is_missing(self):
         self.add()
-        for locale in ('enUS', 'frFR', 'deDE'):
-            queue = filter_queue(self.queue(locale), self.evidence())
-            self.assertEqual(queue['jobs'], [])
-            self.assertEqual(queue['blocked'][0]['reasons'], ['officialLocaleNeverAuthored'])
+        evidence = self.evidence()
+        self.assertEqual(len(filter_queue(self.queue('deDE'), evidence)['jobs']), 1)
+        self.assertEqual(filter_queue(self.queue('frFR'), evidence)['blocked'][0]['reasons'],
+                         ['applicableOfficialSourceAvailable'])
+        self.assertEqual(filter_queue(self.queue('enUS'), evidence)['blocked'][0]['reasons'],
+                         ['canonicalEnglishNeverAuthored'])
+
+    def test_english_alone_uses_newest_build_and_prefers_same_build_hotfix(self):
+        self.add(locale='enUS', text='Deals $s1 damage.', provenance={'sourceBuild': '1.60.1.70999'})
+        self.add(locale='enUS', text='Deals $s2 damage.', english='Deals $s2 damage.',
+                 provenance={'sourceBuild': '1.60.1.71000'})
+        evidence = self.evidence()
+        self.assertFalse(evidence.allows('spells', '1', 'description', 'Deals $s1 damage.'))
+        self.assertIsNone(ai_block_reason('frFR', 'spells', '1', 'description', 'Deals $s2 damage.', evidence))
+        self.add(locale='enUS', text='Deals $s3 damage.', english='Deals $s3 damage.', source='egLink',
+                 provenance={'sourceBuild': '1.60.1.71000'})
+        evidence = self.evidence()
+        self.assertFalse(evidence.allows('spells', '1', 'description', 'Deals $s2 damage.'))
+        self.assertTrue(evidence.allows('spells', '1', 'description', 'Deals $s3 damage.'))
 
     def test_no_evidence_blocks_additional_language(self):
         queue = filter_queue(self.queue(), None)
         self.assertEqual(queue['jobs'], [])
-        self.assertEqual(queue['blocked'][0]['reasons'], ['noVerifiedOfficialTranslation'])
+        self.assertEqual(queue['blocked'][0]['reasons'], ['noVerifiedOfficialSource'])
 
     def test_catalog_quest_queue_requires_verified_source_and_objective_binding(self):
         summary = 'Scout the ridge.'
@@ -111,10 +126,9 @@ class ImportPolicyTests(unittest.TestCase):
         self.assertEqual({job['context'] for job in queue['jobs']},
                          {'quests.summary', 'quests.objectiveLines', 'quests.eventObjectiveLabel'})
         for job in queue['jobs']:
-            self.assertEqual(job['locale'], 'ltLT')
+            self.assertIn(job['locale'], {'frFR', 'ltLT'})
             self.assertEqual([pointer['id'] for pointer in job['pointers']], ['1'])
-        self.assertTrue(any(row['locale'] == 'frFR' and row['reasons'] == ['officialLocaleNeverAuthored']
-                            for row in queue['blocked']))
+        self.assertEqual({job['locale'] for job in queue['jobs']}, {'frFR', 'ltLT'})
         self.assertTrue(any(row['locale'] == 'ltLT' and row['reasons'] == ['noVerifiedClientObjectiveBinding']
                             and [pointer['id'] for pointer in row['pointers']] == ['2']
                             for row in queue['blocked']))
@@ -155,8 +169,7 @@ class ImportPolicyTests(unittest.TestCase):
         self.add(**questie)
         evidence = self.evidence()
         self.assertIsNone(ai_block_reason('itIT', 'quests', '1', 'summary', summary, evidence))
-        self.assertEqual(ai_block_reason('frFR', 'quests', '1', 'summary', summary, evidence),
-                         'officialLocaleNeverAuthored')
+        self.assertIsNone(ai_block_reason('frFR', 'quests', '1', 'summary', summary, evidence))
         self.assertFalse(evidence.allows('quests', '1', 'description', summary))
         self.assertFalse(evidence.allows('quests', '1', 'summary', 'Return to Mokvar.'))
 
@@ -270,7 +283,7 @@ class ImportPolicyTests(unittest.TestCase):
         filtered = filter_queue(queue, None)
         self.assertEqual(len(filtered['jobs']), 1)
         validate_queue_policy(filtered, [{'jobId': 'job', 'translation': 'Inflige $s1 dégâts.'}], self.root)
-        with self.assertRaisesRegex(ValueError, 'officialLocaleNeverAuthored'):
+        with self.assertRaisesRegex(ValueError, 'noVerifiedOfficialSource'):
             validate_queue_policy(filtered, [{'jobId': 'job', 'translation': 'Rewritten $s1'}], self.root)
 
     def test_saved_queue_revalidates_proof_instead_of_trusting_a_boolean(self):
@@ -279,7 +292,7 @@ class ImportPolicyTests(unittest.TestCase):
         validate_queue_policy(queue, [{'jobId': 'job', 'translation': 'Infligge $s1 danni.'}], self.root)
         self.db.execute('DELETE FROM records')
         self.db.commit()
-        with self.assertRaisesRegex(ValueError, 'noVerifiedOfficialTranslation'):
+        with self.assertRaisesRegex(ValueError, 'noVerifiedOfficialSource'):
             validate_queue_policy(queue, [{'jobId': 'job', 'translation': 'Infligge $s1 danni.'}], self.root)
 
     def test_batch_cannot_bypass_policy_but_preserves_unchanged_authored_fields(self):
@@ -288,11 +301,11 @@ class ImportPolicyTests(unittest.TestCase):
         validate_batch_policy(batch, {'spells': {'1': before}}, None)
         after = copy.deepcopy(before)
         after['locales']['frFR']['description'] = 'Nouveau $s1'
-        with self.assertRaisesRegex(ValueError, 'officialLocaleNeverAuthored'):
+        with self.assertRaisesRegex(ValueError, 'noVerifiedOfficialSource'):
             validate_batch_policy(batch, {'spells': {'1': after}}, None)
         after = copy.deepcopy(before)
         after['locales']['itIT'] = record('Infligge $s1 danni.', 'ai')
-        with self.assertRaisesRegex(ValueError, 'noVerifiedOfficialTranslation'):
+        with self.assertRaisesRegex(ValueError, 'noVerifiedOfficialSource'):
             validate_batch_policy(batch, {'spells': {'1': after}}, None)
         self.add()
         validate_batch_policy(batch, {'spells': {'1': after}}, self.evidence())
@@ -309,19 +322,17 @@ class ImportPolicyTests(unittest.TestCase):
         after, _ = FILL['update_entity'](after, rows[:1])
         self.assertEqual(after['locales']['frFR']['description'], 'Inflige $s1 dégâts.')
 
-    def test_ai_official_target_uses_english_but_extra_language_is_preserved(self):
+    def test_existing_ai_on_both_target_groups_survives_english_fallback(self):
         before = {'locales': {'enUS': record('Deals $s1 damage.'),
                              'frFR': record('Traduction $s1', 'ai'), 'itIT': record('Traduzione $s1', 'ai')}}
         after, counts, unresolved = RESYNC['reconcile_official_targets'](before, {'description'}, ['enUS', 'frFR', 'itIT'])
-        self.assertEqual(after['locales']['frFR'], before['locales']['enUS'])
-        self.assertEqual(after['locales']['itIT'], before['locales']['itIT'])
-        self.assertEqual(counts['officialEnglishFallback'], 1)
+        self.assertEqual(after, before)
+        self.assertFalse(counts)
         self.assertFalse(unresolved)
         self.assertEqual(RESYNC['reconcile_official_targets'](after, set(), ['enUS', 'frFR'])[0], after)
 
     def test_english_authorship_provenance_is_not_falsely_promoted(self):
-        before = {'locales': {'enUS': record('Owned English source.', 'ai'),
-                             'frFR': record('Traduction IA.', 'ai')}}
+        before = {'locales': {'enUS': record('Owned English source.', 'ai')}}
         after, counts, _ = RESYNC['reconcile_official_targets'](before, {'description'}, ['enUS', 'frFR'])
         self.assertEqual(after['locales']['frFR'], before['locales']['enUS'])
         self.assertEqual(counts['fallbackRetainsEnglishSourceAIProvenance'], 1)
@@ -461,7 +472,7 @@ class ImportPolicyTests(unittest.TestCase):
         self.assertEqual(summary['changedFiles'], 0)
         self.assertEqual(path.read_bytes(), before)
 
-    def test_source_update_keeps_existing_extra_languages_without_new_job_evidence(self):
+    def test_english_only_update_preserves_existing_translations(self):
         self.add(text='Deals $s1 damage.', locale='enUS', kind='quests')
         self.db.execute('INSERT INTO settings VALUES(?,?)', ('fingerprint', json.dumps('pinned-fixture')))
         self.db.commit()
@@ -486,8 +497,8 @@ class ImportPolicyTests(unittest.TestCase):
         RESYNC['apply'](self.root, output)
         after = json.loads(path.read_text())
         self.assertEqual(after['locales']['itIT'], authored)
-        self.assertEqual(after['locales']['frFR']['description'], 'Deals $s1 damage.')
-        self.assertFalse(self.evidence().allows('quests', '1', 'description', 'Deals $s1 damage.'))
+        self.assertEqual(after['locales']['frFR']['description'], 'Ancien $s1')
+        self.assertTrue(self.evidence().allows('quests', '1', 'description', 'Deals $s1 damage.'))
 
     def test_repaired_english_context_replaces_explicit_official_language_fallback(self):
         self.add(source='questie', origin='community')
