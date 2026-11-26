@@ -8,7 +8,7 @@ from pathlib import Path
 
 from datasources.corpus.translation_corpus import open_corpus, language_flags
 from tools.catalogs.catalog_storage import load_catalog
-from tools.catalogs.official_text import OFFICIAL_LOCALES, TEXT_FIELDS, SOURCE_PROVIDERS
+from tools.catalogs.official_text import OFFICIAL_LOCALES, TEXT_FIELDS, SOURCE_PROVIDERS, source_build
 
 BOOK_FIELDS = {('books', 'name'), ('bookpages', 'description')}
 
@@ -74,12 +74,14 @@ def verify_sources(database, root):
 
 
 class OfficialEvidence:
-    """Index verified evidence for authoring additional-language translations."""
+    """Index the latest verified official-language source for each field."""
 
     def __init__(self, database, root):
         self.database = verify_sources(database, root)
         self.root = Path(root).resolve()
         self.proofs = {}
+        self.localized_proofs = set()
+        self.source_contexts = {}
         self.item_sets = {}
         self.entities = {}
         self.extra_inputs = {}
@@ -132,14 +134,17 @@ class OfficialEvidence:
                 english = translations.get('enUS')
                 if not normalize(english):
                     continue
-                proof = any(locale != 'enUS' and normalize(text) and normalize(text) != normalize(english)
-                            and not language_flags(locale, text, english, translations)
-                            for locale, text in translations.items())
+                proof = not language_flags('enUS', english, english, translations)
+                for locale, text in translations.items():
+                    if (locale != 'enUS' and normalize(text) and normalize(text) != normalize(english)
+                            and not language_flags(locale, text, english, translations)):
+                        self.localized_proofs.add(('items', entity_id, 'setName', normalize(english), locale))
                 self.item_sets[entity_id] = (english, {'origin': 'original', 'source': 'wago',
                     'sourceLocale': 'enUS', 'sourceBuild': build}, proof)
-            for row in db.execute("SELECT kind,entity_id,locale,field,text,english,provenance,flags "
+            verified = {}
+            for row in db.execute("SELECT kind,entity_id,locale,field,text,english,origin,provenance "
                                   "FROM records WHERE evidence='sourceSnapshot' AND origin IN ('original','community') "
-                                  "AND locale!='enUS' AND flags='[]'"):
+                                  "AND flags='[]' AND source_path IN (SELECT path FROM inputs WHERE path NOT LIKE 'catalogs/%')"):
                 provenance = json.loads(row['provenance'])
                 provider = provenance.get('source')
                 version = (provenance.get('sourceBuild') or provenance.get('sourceNamespace')
@@ -150,14 +155,27 @@ class OfficialEvidence:
                     and provenance.get('assetID')
                     and provenance.get('englishSha256') == hashlib.sha256((row['english'] or '').encode()).hexdigest()
                     and (row['kind'] != 'bookpages' or provenance.get('sourceRecord') == int(row['entity_id'])))
-                if (row['locale'] not in OFFICIAL_LOCALES or
+                locale = row['locale']
+                text, english = normalize(row['text']), normalize(row['english'])
+                if (locale not in OFFICIAL_LOCALES or provenance.get('sourceLocale') != locale or
                         (provenance.get('source') not in SOURCE_PROVIDERS and not vmangos_book)
-                        or not version
-                        or not normalize(row['english']) or not normalize(row['text'])
-                        or normalize(row['text']) == normalize(row['english'])):
+                        or not version or not text or not english
+                        or (locale == 'enUS' and (text != english or row['origin'] != 'original'))
+                        or (locale != 'enUS' and text == english)):
                     continue
-                key = (row['kind'], row['entity_id'], row['field'], normalize(row['english']))
-                self.proofs.setdefault(key, {'locale': row['locale'], **provenance})
+                identity = (row['kind'], row['entity_id'], row['field'])
+                rank = (source_build(provenance) or (), provider == 'egLink')
+                if identity not in verified or rank > verified[identity][0]:
+                    verified[identity] = (rank, {})
+                if rank == verified[identity][0]:
+                    verified[identity][1].setdefault(english, provenance)
+                if locale != 'enUS':
+                    self.localized_proofs.add((*identity, english, locale))
+            for identity, (_, contexts) in verified.items():
+                self.source_contexts[identity] = frozenset(contexts)
+                if len(contexts) == 1:
+                    english, provenance = next(iter(contexts.items()))
+                    self.proofs[(*identity, english)] = provenance
             self._index_quest_summary_proofs(db)
         finally:
             db.close()
@@ -213,7 +231,14 @@ class OfficialEvidence:
             source = self.item_set_source(entity)
             owned = entity.get('tooltipData', {}).get('set', {}).get('name')
             return bool(source and source[2] and normalize(english if english is not None else owned) == normalize(source[0]))
-        return (kind, str(entity_id), field, normalize(english)) in self.proofs
+        identity = (kind, str(entity_id), field)
+        context = normalize(english)
+        return self.source_contexts.get(identity, {context}) == {context} and (*identity, context) in self.proofs
+
+    def has_localized_source(self, kind, entity_id, field, english, locale):
+        field = field.removeprefix('tooltip.')
+        field = 'setName' if field == 'set.name' else field
+        return (kind, str(entity_id), field, normalize(english), locale) in self.localized_proofs
 
 
 def is_captured_objective(record, line):
@@ -262,15 +287,17 @@ def ai_block_reason(locale, kind, entity_id, field, english, evidence, *, quest=
         if (*key, locale) in evidence.book_translations:
             return 'applicableBookSourceAvailable'
         return None
-    if locale in OFFICIAL_LOCALES:
-        return 'officialLocaleNeverAuthored'
+    if locale == 'enUS':
+        return 'canonicalEnglishNeverAuthored'
+    if evidence and evidence.has_localized_source(kind, entity_id, field, english, locale):
+        return 'applicableOfficialSourceAvailable'
     if kind == 'quests' and quest is not None:
         if verified_catalog_quest_source(quest, field, english):
             return None
         if field == 'eventObjectiveLabel' or field.startswith('objectiveLines.'):
             return 'noVerifiedClientObjectiveBinding'
     if not evidence or not evidence.allows(kind, entity_id, field, english):
-        return 'noVerifiedOfficialTranslation'
+        return 'noVerifiedOfficialSource'
     return None
 
 

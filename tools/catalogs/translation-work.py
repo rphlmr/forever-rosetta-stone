@@ -567,6 +567,10 @@ def get_owned_target(entity, locale, field):
 def needs_target_translation(job, pointer, entity):
     target = get_target(entity, job['locale'], pointer['field'], pointer.get('index'))
 
+    if pointer.get('ownedEnglishFallback'):
+        return target == job['source'] and pointer.get('existingMetadata') == get_metadata(
+            entity, job['locale'], pointer['field'], pointer.get('index'))
+
     if pointer.get('nativeFallback'):
         return target == job['source'] and not get_owned_target(entity, job['locale'], pointer['field'])
 
@@ -715,8 +719,15 @@ def collect_translation_candidates(documents, include_excluded_quests=False):
                         target = get_target(entity, locale, field, index)
                         key = (locale, context, english)
 
+                        metadata = get_metadata(entity, locale, field, index)
+                        if (target == english and metadata and metadata.get('sourceLocale') == 'enUS'
+                                and index is None and get_owned_target(entity, locale, field) == english):
+                            groups.setdefault(key, []).append({
+                                **pointer, 'ownedEnglishFallback': True, 'existingMetadata': metadata,
+                            })
+                            continue
+
                         if target or kind == 'globalstrings' and isinstance(target, str):
-                            metadata = get_metadata(entity, locale, field, index)
 
                             if metadata and matching_tokens(context, english, target):
                                 reusable[key].setdefault(target, metadata)
@@ -807,11 +818,12 @@ def validate_results(queue, results, documents=None):
                 target = get_target(entity, job['locale'], pointer['field'], pointer.get('index'))
                 replace_native_fallback = pointer.get('nativeFallback') and target == source \
                     and not get_owned_target(entity, job['locale'], pointer['field'])
-                replace_owned_english = pointer.get('ownedEnglishFallback') and pointer['kind'] == 'quests' \
-                    and pointer['field'] in ('title', 'summary', 'description') \
+                replace_owned_english = pointer.get('ownedEnglishFallback') and pointer.get('index') is None \
                     and job['locale'] != 'enUS' and target == source \
                     and get_owned_target(entity, job['locale'], pointer['field']) == source \
                     and isinstance(pointer.get('existingMetadata'), dict) \
+                    and (pointer['existingMetadata'].get('sourceLocale') == 'enUS'
+                         or pointer['kind'] == 'quests' and pointer['field'] in ('title', 'summary', 'description')) \
                     and pointer.get('existingMetadata') == get_metadata(entity, job['locale'], pointer['field'], None)
 
                 if pointer.get('ownedEnglishFallback') and (not replace_owned_english or translation == source):

@@ -285,6 +285,7 @@ GetLocale = savedGetLocale
 check(component.GetName(2097, "enUS") == "Civil War in the Plaguelands", "the book tooltip names the translated title")
 
 for key, value in pairs(saved) do _G[key] = value end
+UnitGUID = saved.UnitGUID
 ItemTextGetText = saved.ItemTextGetText
 for id, value in pairs(features) do Addon.preferences.features[id] = value end
 Addon:SendBookReader({ type = "reset" })

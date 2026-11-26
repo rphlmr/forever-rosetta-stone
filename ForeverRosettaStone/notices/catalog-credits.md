@@ -14,7 +14,7 @@ license texts remain in this directory. See also [THIRD-PARTY.md](../THIRD-PARTY
   localized wording. Catalog fields retain the source snapshot, and dialogue contexts retain the contribution ID.
 - [WoW Forever GG](https://wow-forever.gg/db/quests/95250-abominable-creatures/) supplied the English
   Human progress and completion dialogue for Abominable Creatures.
-- [EG Link](https://github.com/JIVESCORP/eg-link-output-wowf) compiles native NPC and item cache text
+- [EG Link](https://github.com/JIVESCORP/eg-link-output-wowf) compiles native NPC, item and spell cache text
   and observed book pages used by our import.
   Data from Efficient Games (https://efficient.games), licensed under
   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Retained source snapshots identify

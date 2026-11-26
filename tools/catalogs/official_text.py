@@ -28,8 +28,10 @@ def preferred_source_rows(rows):
 def newer_core_source(candidate, current):
     """Require explicit comparable builds from both trusted providers."""
     candidate_build, current_build = source_build(candidate), source_build(current)
-    return bool(candidate.get('source') in SOURCE_PROVIDERS and current.get('source') in SOURCE_PROVIDERS
-                and candidate_build and current_build and candidate_build > current_build)
+    if (candidate.get('source') not in SOURCE_PROVIDERS or current.get('source') not in SOURCE_PROVIDERS
+            or not candidate_build or not current_build):
+        return False
+    return (candidate_build, candidate.get('source') == 'egLink') > (current_build, current.get('source') == 'egLink')
 
 
 OFFICIAL_LOCALES = frozenset(('enUS', 'deDE', 'esES', 'esMX', 'frFR',

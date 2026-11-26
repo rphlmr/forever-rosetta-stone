@@ -45,9 +45,11 @@ def reconcile_official_targets(entity, affected_fields, locales):
         record = result['locales'].get(locale, {})
         current = text_fields(record)
         for field in sorted(affected_fields):
-            is_ai = metadata(record, field).get('origin') == 'ai'
-            missing = field in affected_fields and field not in current
-            if not is_ai and not missing:
+            origin = metadata(record, field).get('origin')
+            missing = field not in current or (current[field] == '' and origin == 'ai')
+            if not missing:
+                if origin == 'ai' and english_source(entity, field)[0] is None:
+                    unresolved.append({'locale': locale, 'field': field, 'reason': 'missingOwnedEnglishSource'})
                 continue
             source, source_metadata = english_source(entity, field)
             if missing and field not in english_fields and source is None:

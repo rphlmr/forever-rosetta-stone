@@ -2,9 +2,10 @@
 
 The authoritative import/update/resync policy and workflow is
 [`docs/import-resync.md`](docs/import-resync.md). Read it before source-driven changes.
-Author AI translations for official targets only under the book/letter and quest/NPC
-dialogue exceptions in the import policy. Preserve captured quest objectives and
-accepted translations when new-job evidence is absent.
+Use the newest verified applicable game build for each field. One verified source
+in an official client language, including English, can support provisional AI
+translations for missing targets. Prefer applicable sourced wording and preserve
+captured quest objectives and accepted translations when new-job evidence is absent.
 
 See [`tools/README.md`](tools/README.md) for the retained Python tools and their actual
 callers. Generated database addons live in `ForeverRosettaStone_Data/<locale>/` and shared

@@ -125,13 +125,21 @@ def project_objectives(quest, original, locale, items, npcs=None):
     return sorted(lines, key=lambda line: line['index']), has_ai_translation
 
 
+def matches_canonical_english(entity, field, metadata):
+    fingerprint = metadata.get('canonicalEnglishSha256')
+    if fingerprint is None:
+        return True
+    source = entity['locales'].get('enUS', {}).get(field)
+    return isinstance(source, str) and hashlib.sha256(source.encode()).hexdigest() == fingerprint
+
+
 def get_tooltip_source_text(entity, locale, field):
     """Read non-AI catalog evidence for offline translation tooling."""
     localized = entity['locales'].get(locale, {})
     key = 'setName' if field == 'set.name' else field
     metadata = localized.get('translationMetadata', {}).get('fields', {}).get(key, {})
 
-    if metadata.get('origin') == 'ai':
+    if metadata.get('origin') == 'ai' or not matches_canonical_english(entity, key, metadata):
         return None
 
     value = localized.get(key)
@@ -213,6 +221,13 @@ def project_localized_record(kind, entity_id, entity, locale, items, npcs=None):
     if kind != 'globalstrings' and not has_english_text(entity, identity_field(kind)):
         return None
     original = entity['locales'][locale]
+    if kind in ('spells', 'talents') and locale != 'enUS':
+        metadata = original.get('translationMetadata', {}).get('fields', {})
+        outdated = {field for field, proof in metadata.items()
+                    if field in original and not matches_canonical_english(entity, field, proof)}
+        if outdated:
+            # Keep the owned translations available for review without rendering obsolete text.
+            original = {field: value for field, value in original.items() if field not in outdated}
     has_ai_translation = get_has_ai_translation(kind, entity_id, locale, original)
 
     if kind == 'bookpages':
@@ -286,9 +301,11 @@ def project_dialogue(kind, entity_id, entity, locale):
         if (key not in english or context.get('stage') not in stages or not isinstance(text, str)
                 or not text.strip() or origin not in ('original', 'community', 'ai')):
             raise ValueError(f'Invalid dialogue: {kind}/{entity_id}/{locale}/{key}')
-        npc_id, sex = context.get('npcId'), context.get('playerSex')
-        if kind == 'quests' and (type(npc_id) is not int or npc_id <= 0):
-            raise ValueError(f'Invalid dialogue NPC: quests/{entity_id}/{key}')
+        npc_id, object_id, sex = context.get('npcId'), context.get('objectId'), context.get('playerSex')
+        if kind == 'quests':
+            speakers = [value for value in (npc_id, object_id) if value is not None]
+            if len(speakers) != 1 or type(speakers[0]) is not int or speakers[0] <= 0:
+                raise ValueError(f'Invalid dialogue speaker: quests/{entity_id}/{key}')
         if sex not in (None, 2, 3):
             raise ValueError(f'Invalid dialogue player sex: {kind}/{entity_id}/{key}')
         row = {'key': key, 'stage': context['stage'], 'text': text}
@@ -296,6 +313,8 @@ def project_dialogue(kind, entity_id, entity, locale):
             row['scope'] = 'forever'
         if npc_id is not None:
             row['npcID'] = npc_id
+        if object_id is not None:
+            row['objectID'] = object_id
         if sex is not None:
             row['playerSex'] = sex
         dialogue.append(row)

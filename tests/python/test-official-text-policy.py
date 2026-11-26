@@ -56,7 +56,7 @@ class OfficialTextPolicyTests(unittest.TestCase):
         queue = work['create_queue'](documents)
         self.assertEqual(queue['jobs'], [])
         self.assertEqual(len(queue['blocked']), 1)
-        self.assertEqual(queue['blocked'][0]['reasons'], ['noVerifiedOfficialTranslation'])
+        self.assertEqual(queue['blocked'][0]['reasons'], ['noVerifiedOfficialSource'])
 
     def test_batches_cannot_overtranslate_existing_official_text(self):
         before = self.entity()

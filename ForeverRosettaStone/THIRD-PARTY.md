@@ -103,7 +103,7 @@ is retained in the source catalogs. The runtime API exposes only an aggregate AI
   CC BY 4.0 translation data. The supplied notice, including its AI translation declaration,
   is retained in `notices/polishforever-data-license.txt`.
 - EG Link: Efficient Games (https://efficient.games), https://github.com/JIVESCORP/eg-link-output-wowf;
-  CC BY 4.0 compilation credit for the native NPC/item cache text used by our import.
+  CC BY 4.0 compilation credit for the native NPC, item and spell cache text used by our import.
   Underlying game text remains Blizzard Entertainment's content.
 - WoWForeverIT: Copyright (c) 2026 polletto and WoWForeverIT contributors;
   https://github.com/polletto/WoWForeverIT. The complete MIT notice and upstream third-party

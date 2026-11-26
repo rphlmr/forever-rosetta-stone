@@ -62,31 +62,35 @@ Quest text and NPC dialogue have [specific exceptions](#quest-text-and-captured-
 | Situation | Official target languages | Additional target languages |
 | --- | --- | --- |
 | Applicable localized source exists | Use its exact text and provenance | Use its exact text and provenance |
-| No localized source exists | Use available canonical English with its real provenance | Preserve the existing accepted translation |
-| New authored text is needed | Only book/letter and quest/NPC dialogue fields under their dedicated policies | Translate from English only if the applicable eligibility rule passes |
+| No localized source exists | Preserve an applicable translation or use canonical English with its real provenance | Preserve the existing accepted translation |
+| New authored text is needed | A verified official source can support a provisional translation | Apply the same source evidence rule |
 | Eligibility evidence is missing | Use source text; report unresolved source gaps | Keep existing translations; block new AI jobs |
 
-Earlier AI translations in official languages yield to available source text, including
-English fallback. Existing additional-language translations are **not retroactively removed**
+Provisional AI translations yield to applicable localized source text and are retained while
+the only alternative is an English fallback. Existing translations are **not retroactively removed**
 because a new-job eligibility check fails. A changed English meaning requires review.
 On a later resync, applicable non-AI source wording for the same locale and field replaces
 an AI translation when its English context and placeholders match.
 When English itself retains AI authorship, copying it must retain that provenance honestly.
 Never invent English, labels or objective bindings to fill missing source data.
 
-## Eligibility for new additional-language AI translations
+## Eligibility for provisional AI translations
 
-For the same ID and field, require **at least one verified non-English translation in an
-official client language** from Blizzard, Wago, Questie or EG Link. Its English context must
-match the maintained source. Require nonempty wording, normalized inequality with English,
-accepted flags and non-AI source authorship. The verified catalog quest fields below have
-their own eligibility rules.
+For the same ID and field, require at least one verified source in an official client
+language from the newest applicable game build in the available evidence. English alone is
+sufficient when the source is native, nonempty and matches the maintained English field.
+Non-English evidence must be applicable to the current English context. Compare builds
+numerically. A Git revision, timestamp or collection date does not outrank a game build.
+Prefer verified server hotfix evidence when it differs from the same-build export.
+Hold conflicts that remain unresolved. Exclude flagged and AI-authored source evidence.
+Use an applicable localized source before authoring for that locale. The verified quest
+fields below have their own evidence rules.
 
 For `quests.summary`, a verified Blizzard Forever quest response can instead confirm the
 quest ID. The composed QuestieDB snapshot must provide an unflagged, unambiguous English
 summary for that ID at a pinned revision, and its wording must match the maintained English
 summary. Blizzard confirms the quest identity. QuestieDB remains the source of the summary.
-This exception applies only to additional-language summaries, including when the Blizzard
+This exception applies only to quest summaries, including when the Blizzard
 web API exposes only the full description.
 
 The upstream-source path determines eligibility from the verified corpus.
@@ -104,7 +108,7 @@ builds still ship every owned GlobalString for dynamic native tooltip lookup.
 
 ## Quest text and captured objectives
 
-For additional target languages, an existing English quest summary with original or community
+An existing English quest summary with original or community
 English provenance may be translated directly from the maintained catalog. Use the recorded
 build, index and type of an original English `wowClient` objective, or a verified binding in
 `clientObjectiveBindings`. Bindings record the observed client build, locale, index and type
@@ -113,7 +117,7 @@ observed objective or an independently identified target for that same row befor
 the binding. An event label can also use a unique captured English event objective with the
 same wording on the same quest. Keep the captured index, type and placeholders when translating
 indexed objectives.
-These rules apply to missing translations and do not authorize new official-language authorship.
+These rules apply to missing translations in all supported target locales.
 
 Verified English wording owned by a quest or NPC dialogue entry is sufficient for
 provisional AI translations in any supported target locale. This exception covers only
@@ -265,7 +269,7 @@ and all tracked catalogs, tools, fixtures and generated shipping addons.
 | Contract | Tests |
 | --- | --- |
 | Builds, native/community/fallback priority, exact provenance, context and placeholders | `tests/python/test-fill-official-text.py`, `test-official-text-policy.py` |
-| All four providers, official AI prohibition, new-job proof, accepted translations and captured objectives | `tests/python/test-import-policy.py` |
+| All four providers, newest-build authoring evidence, accepted translations and captured objectives | `tests/python/test-import-policy.py` |
 | First import without history, incremental scope, newer providers, manual fixes, repaired English pairs and preflight conflicts | `tests/python/test-import-policy.py` |
 | Questie English pairing, paragraph preservation and ambiguous summaries | `tests/python/test-translation-corpus.py` |
 | Pilot classification through verified shared policy, independently checked rendering | `tests/python/test-template-pilot-policy.py`, `test-template-pilot-harness.py` |

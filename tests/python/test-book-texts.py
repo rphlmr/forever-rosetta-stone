@@ -121,7 +121,7 @@ class BookTextTests(unittest.TestCase):
         self.assertIsNone(ai_block_reason('deDE', 'bookpages', 101, 'description', english, evidence))
         self.assertIsNone(ai_block_reason('daDK', 'bookpages', 101, 'description', english, evidence))
         self.assertEqual(ai_block_reason('deDE', 'bookpages', 101, 'description', 'Different', evidence), 'noVerifiedEnglishBookText')
-        self.assertEqual(ai_block_reason('deDE', 'quests', 101, 'description', english, evidence), 'officialLocaleNeverAuthored')
+        self.assertEqual(ai_block_reason('deDE', 'quests', 101, 'description', english, evidence), 'noVerifiedOfficialSource')
 
     def test_matching_sourced_translation_replaces_ai(self):
         output = self.imports / 'first'

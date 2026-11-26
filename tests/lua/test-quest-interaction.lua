@@ -117,6 +117,50 @@ do
     Addon.GetTargetLocale = getTarget
 end
 do
+    local getLocale, getTarget, unitGUID, unitName, unitSex = GetLocale, Addon.GetTargetLocale, UnitGUID, UnitName, UnitSex
+    local progressText, rewardText = GetProgressText, GetRewardText
+    local guid = "GameObject-0-1-0-4-31-ABCD"
+    GetLocale = function() return "frFR" end
+    Addon.GetTargetLocale = function() return "enUS" end
+    UnitGUID = function(unit) if unit == "npc" then return guid end end
+    UnitName = function() return "Rafen" end
+    UnitSex = function() return 2 end
+    GetProgressText = function()
+        return "Cette Statue de lion est là depuis des décennies, et garde un œil sur l'infâme Tour d'Ilgalar.\n\n"
+            .. "Il y a une cavité à la base de statue, où l'on peut placer une gemme ou un glyphe..."
+    end
+    GetRewardText = function()
+        return "Vous placez le Glyphe d'Azora dans la cavité. Il s'y adapte parfaitement... et vous entendez la voix désincarnée de Theocritus :\n\n"
+            .. "Vous avez toute ma gratitude, jeune Rafen. Vous pourrez maintenant me parler par l'intermédiaire de ce glyphe, j'aurai peut-être d'autres missions à vous donner... une fois que j'aurai sondé les pensées de mon rival."
+    end
+    local progress = Addon:GetCatalogDialogueSections(94, "progress")
+    local reward = Addon:GetCatalogDialogueSections(94, "reward")
+    check(progress and progress[2].text:find("This Lion Statue", 1, true),
+        "quest objects can translate the progress screen")
+    check(reward and reward[2].text:find("young Rafen.", 1, true),
+        "quest objects can translate the reward screen with the player name")
+    for locale in pairs(ForeverRosettaStoneDB:GetLocales()) do
+        Addon.GetTargetLocale = function() return locale end
+        progress = Addon:GetCatalogDialogueSections(94, "progress")
+        reward = Addon:GetCatalogDialogueSections(94, "reward")
+        check(progress and progress[2] and reward and reward[2]
+            and reward[2].text:find("Rafen", 1, true),
+            "both quest object dialogue stages render in " .. locale)
+    end
+    Addon.GetTargetLocale = function() return "enUS" end
+    guid = "Creature-0-1-0-4-31-ABCD"
+    check(not Addon:GetCatalogDialogueSections(94, "progress"),
+        "a creature cannot match a quest object with the same entry ID")
+    guid = "GameObject-0-1-0-4-32-ABCD"
+    check(not Addon:GetCatalogDialogueSections(94, "reward"),
+        "quest objects must match the catalog object's entry ID")
+    guid = nil
+    check(not Addon:GetCatalogDialogueSections(94, "reward"),
+        "an interaction without a readable speaker keeps the native quest text")
+    GetLocale, Addon.GetTargetLocale, UnitGUID, UnitName, UnitSex = getLocale, getTarget, unitGUID, unitName, unitSex
+    GetProgressText, GetRewardText = progressText, rewardText
+end
+do
     local oldLocale, oldTarget, oldSex = GetLocale, Addon.GetTargetLocale, UnitSex
     UnitSex = function() return 2 end
     GetLocale = function() return "frFR" end

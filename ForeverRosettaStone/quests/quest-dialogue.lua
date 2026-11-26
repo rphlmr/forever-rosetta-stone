@@ -35,15 +35,16 @@ local function Render(template, questID, locale, playerName, native)
     if text and not text:find("%$[A-Za-z0-9]") then return text end
 end
 
-local function Applies(entry, npcID, questID, stage, sex)
-    return entry.stage == stage and (not questID or entry.npcID == npcID)
+local function Applies(entry, npcID, questID, stage, sex, objectID)
+    return entry.stage == stage and (not questID
+        or (npcID and entry.npcID == npcID) or (objectID and entry.objectID == objectID))
         and (not entry.playerSex or entry.playerSex == sex)
 end
 
-local function AgreedDialogueText(entries, translations, npcID, questID, stage, sex)
+local function AgreedDialogueText(entries, translations, npcID, questID, stage, sex, objectID)
     local candidates = {}
     for _, entry in ipairs(entries or {}) do
-        if Applies(entry, npcID, questID, stage, sex) then
+        if Applies(entry, npcID, questID, stage, sex, objectID) then
             candidates[entry.key] = true
         end
     end
@@ -62,7 +63,7 @@ local function UsesPlayerName(text)
     return text:find("%$[Nn]") or text:find("{name}", 1, true)
 end
 
-function Addon:MatchQuestDialogue(npcID, questID, stage, native)
+function Addon:MatchQuestDialogue(npcID, questID, stage, native, objectID)
     if not questID then return end
     local readable = ReadableString(native)
     local db = ForeverRosettaStoneDB
@@ -76,7 +77,7 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
     if sex == 2 or sex == 3 then
         -- English owns every variant, including variants missing in the source or target locale.
         local english = target == "enUS" and translations or db:GetQuestDialogue(questID, npcID, "enUS")
-        local text = AgreedDialogueText(english, translations, npcID, questID, stage, sex)
+        local text = AgreedDialogueText(english, translations, npcID, questID, stage, sex, objectID)
         -- The live text can still identify the first-name form for multi-part names.
         if text and (not firstName or not UsesPlayerName(text)) then
             return Render(text, questID, target)
@@ -88,7 +89,7 @@ function Addon:MatchQuestDialogue(npcID, questID, stage, native)
     if not source then return end
     local observed, matches, foreverMatches = Normalize(native), {}, {}
     for _, entry in ipairs(source) do
-        if Applies(entry, npcID, questID, stage, sex) then
+        if Applies(entry, npcID, questID, stage, sex, objectID) then
             local candidates = entry.scope == "forever" and foreverMatches or matches
             local text = Render(entry.text, questID, client, nil, true)
             if text and Normalize(text) == observed then
@@ -435,9 +436,11 @@ function Addon:GetCatalogDialogueSections(questID, context)
         return
     end
 
-    if not npcID or not self:IsReadableEntityID(questID) then return end
+    if not self:IsReadableEntityID(questID) then return end
+    local objectID = not npcID and self:GetGameObjectID(guid)
+    if not npcID and not objectID then return end
     local native = nativeText[context]()
-    local translated = self:MatchQuestDialogue(npcID, questID, stage, native)
+    local translated = self:MatchQuestDialogue(npcID, questID, stage, native, objectID)
     if translated then
         local observed = ReadableString(native) and native or ""
         return self:CreateQuestDialogueSections(translated, context, questID, npcID), guid .. "\031" .. observed

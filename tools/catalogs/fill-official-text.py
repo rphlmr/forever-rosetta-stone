@@ -76,7 +76,9 @@ def update_entity(entity, candidates, update_english=False):
             counts['unresolvedSourceTemplate'] += 1
             continue
 
-        if field not in ('name', 'title') and locale != 'enUS' and english.get(field) \
+        prior = result['locales'].get(locale, {}).get('translationMetadata', {}).get('fields', {}).get(field, {})
+        needs_context = field not in ('name', 'title') or prior.get('canonicalEnglishSha256')
+        if needs_context and locale != 'enUS' and english.get(field) \
                 and comparable_text(row['english']) != comparable_text(english[field]):
             counts['sourceContextMismatch'] += 1
             continue
@@ -113,7 +115,7 @@ def update_entity(entity, candidates, update_english=False):
         current_is_english = comparable_text(current) == comparable_text(english.get(field))
         candidate_is_english = locale != 'enUS' and comparable_text(text) == comparable_text(english.get(field))
         if (candidate_is_english and current and not current_is_english
-                and (metadata.get('origin') in ('original', 'community') or locale not in OFFICIAL_LOCALES)
+                and (metadata.get('origin') in ('original', 'community', 'ai') or locale not in OFFICIAL_LOCALES)
                 and (locale not in OFFICIAL_LOCALES or not unowned_summary)):
             counts['preservedLocalizedSource'] += 1
             continue
