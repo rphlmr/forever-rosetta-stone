@@ -136,3 +136,9 @@ asset ID/name, source locale, scope and hashes. VMaNGOS-derived wording remains 
 reference; it is not represented as a verified Forever client capture. Existing ClassicUA,
 Czech Forever, PolishForever, ForeverTR and Efficient Games credits also apply to reused book
 text with their retained origin and notices.
+
+## Font
+
+Noto Sans Regular v2.015 is distributed under the SIL Open Font License 1.1.
+[Upstream release](https://github.com/notofonts/latin-greek-cyrillic/releases/tag/NotoSans-v2.015).
+The unmodified font and its license are in `media/fonts/`.

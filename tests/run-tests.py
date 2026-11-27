@@ -132,6 +132,11 @@ for entry in toc.read_text().splitlines():
 
 panel_xml = ET.parse(toc.parent / "quests/quest-panel.xml")
 namespace = {"ui": "http://www.blizzard.com/wow/ui/"}
+label_fonts = ET.parse(toc.parent / "settings/fonts.xml")
+label_font = label_fonts.find("ui:Font[@name='ForeverRosettaStoneExtendedLatinLabelFont']", namespace)
+assert label_font is not None and float(label_font.get("height", "0")) > 0, "WoW requires an explicit font height"
+font_path = label_font.attrib["font"].replace("\\", "/").removeprefix("Interface/AddOns/")
+assert (root / font_path).is_file(), f"Missing label font asset: {font_path}"
 panel_template = panel_xml.find("ui:Frame", namespace)
 assert panel_template.attrib["inherits"] == "PortraitFrameTemplateNoCloseButton"
 layout = panel_template.find("ui:KeyValues/ui:KeyValue[@key='layoutType']", namespace)

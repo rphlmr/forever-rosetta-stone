@@ -151,10 +151,10 @@ local languageList, positionList = Addon.radioLists.locale, Addon.radioLists.npc
 equal(languageList:IsVisible(), true, "language choices are listed inline on the main page")
 local available = {}
 for _, button in ipairs(languageList.buttons) do
+    equal(button.text:GetText(), databaseAPI:GetLocales()[button.value], "language radio shows its native name before selection")
     button:Fire("OnClick")
     available[button.value] = true
     equal(Addon:GetTargetLocale(), button.value, "language radio applies its language: " .. button.value)
-    equal(button.text:GetText(), ForeverRosettaStoneDB:GetLocales()[button.value], "language radio shows its name")
     equal(button.selected, true, "chosen language radio is selected")
     local selectedCount = 0
     for _, other in ipairs(languageList.buttons) do
@@ -220,30 +220,46 @@ do
     -- Choices start in the native control column (CENTER - 80) so D-pad down reaches the checkboxes below.
     local controlColumn = languageList:GetWidth() / 2 - 80
     local chineseFont = [[Fonts\blei00d.TTF]]
+    local notoSans = [[Interface\AddOns\ForeverRosettaStone\media\fonts\NotoSans-Regular.ttf]]
     local originalPresentation = Addon:GetTooltipPresentation()
     Addon:SetTooltipPresentation("below")
     local labelFonts = {
-        zhTW = [[Fonts\arheiuhk_bd.TTF]],
-        ltLT = [[Fonts\ARIALN.TTF]],
-        csCZ = [[Fonts\ARIALN.TTF]],
+        zhCN = [[Fonts\ARKai_T.ttf]],
+        zhTW = chineseFont,
+        koKR = [[Fonts\2002.TTF]],
     }
+    local tip = Addon:GetWidgetTooltip()
+    local accurateLines = tip.accurateLines
+    tip.accurateLines = true
+    local title = tip:GetLeftLine(1)
     for index, button in ipairs(languageList.buttons) do
         local _, _, _, x = button:GetPoint(1)
         equal(index % 2 == 1 and x == controlColumn or x > controlColumn, true,
             "language radio sits in the native control column: " .. button.value)
-        if labelFonts[button.value] then
-            equal(select(1, button.text:GetFont()), labelFonts[button.value], "language picker font: " .. button.value)
-            equal(button.text:GetText(), databaseAPI:GetLocales()[button.value], "language picker label: " .. button.value)
+        local font = labelFonts[button.value] or notoSans
+        local nativeLabel = databaseAPI:GetLocales()[button.value]
+        equal(button.text:GetText(), nativeLabel, "radio displays the original language name")
+        local alphabet = ({ zhTW = "traditionalchinese", zhCN = "simplifiedchinese", koKR = "korean",
+            ruRU = "russian", ukUA = "russian" })[button.value] or "roman"
+        if button.value == "csCZ" or button.value == "ltLT" then
+            equal(button.text.fontObject, ForeverRosettaStoneExtendedLatinLabelFont,
+                "extended Latin labels inherit the shared font object before the panel opens")
+            equal(select(1, button.text:GetFont()), notoSans, "radio uses extended Latin glyphs: " .. nativeLabel)
+        else
+            equal(button.text.fontObject, GameFontHighlight:GetFontObjectForAlphabet(alphabet),
+                "radio inherits the matching Blizzard font family member: " .. button.value)
         end
-        if button.value == "zhTW" then
-            button:Fire("OnEnter")
-            local tip = Addon:GetWidgetTooltip()
-            equal(select(1, tip:GetLeftLine(2):GetFont()) ~= chineseFont, true, "help keeps its client font")
-            equal(select(1, tip:GetLeftLine(6):GetFont()) ~= chineseFont, true, "native item sample keeps its client font")
-            equal(select(1, tip:GetLeftLine(tip:NumLines()):GetFont()), chineseFont, "translated sample uses the target font")
-            button:Fire("OnLeave")
+        button:Fire("OnEnter")
+        equal(title:GetText(), nativeLabel, "language preview keeps the native label: " .. button.value)
+        equal(select(1, title:GetFont()), font, "language preview title uses the target font: " .. button.value)
+        equal(select(1, tip:GetLeftLine(2):GetFont()) ~= notoSans, true, "help keeps its client font")
+        equal(select(1, tip:GetLeftLine(6):GetFont()), notoSans, "French sample uses the font with accented Latin glyphs")
+        if select(2, Addon:GetOptionPreview("locale", button.value)) then
+            equal(select(1, tip:GetLeftLine(tip:NumLines()):GetFont()), font, "translated sample uses the target font")
         end
+        button:Fire("OnLeave")
     end
+    tip.accurateLines = accurateLines
     local initializer
     for _, entry in ipairs(Addon.settingsCategory.initializers) do
         if entry.setting == settings.translationHeader then initializer = entry; break end
