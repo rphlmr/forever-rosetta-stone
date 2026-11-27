@@ -395,6 +395,26 @@ end
 -- Inline radio lists show every choice at once without a popup, so controller focus stays native.
 local RADIO_TEXTURE = [[Interface\Buttons\UI-RadioButton]]
 local RADIO_ATLAS, RADIO_SELECTED_ATLAS = "common-dropdown-tickradial", "common-dropdown-icon-radialtick-yellow"
+local labelAlphabets = {
+    zhCN = "simplifiedchinese", zhTW = "traditionalchinese", koKR = "korean",
+    ruRU = "russian", ukUA = "russian",
+}
+
+local function SetLanguageLabelFont(text, locale, family)
+    local alphabet = labelAlphabets[locale]
+    if not alphabet and Addon:UsesLocalizedFont(locale) then
+        text:SetFontObject(ForeverRosettaStoneExtendedLatinLabelFont)
+        return
+    end
+    alphabet = alphabet or "roman"
+    local member = family and family.GetFontObjectForAlphabet and family:GetFontObjectForAlphabet(alphabet)
+    if member then
+        text:SetFontObject(member)
+    elseif labelAlphabets[locale] then
+        Addon:TryLocalizedFont(text, locale)
+    end
+end
+
 -- Native rows put labels at the indent and controls at CENTER - 80; choices share that column.
 -- SmartNavigation locates each native control at its row's LEFT edge (SetSmartNavCursorAnchor), so
 -- the first choice of every grid row uses the same anchor and D-pad up/down flows through native rows.
@@ -511,7 +531,9 @@ local function OptionHelpBlocks(id, value, hint, split)
     local translation = translated and { text = translated, locale = locale }
     blocks[2] = { text = "|cffaaaaaa" .. Addon:SettingsText("preview") .. "|r" }
     if translation and mode == "above" then blocks[#blocks + 1] = translation end
-    if native and (mode ~= "replacement" or not translated) then blocks[#blocks + 1] = { text = native } end
+    if native and (mode ~= "replacement" or not translated) then
+        blocks[#blocks + 1] = { text = native, locale = GetLocale() }
+    end
     if split and translation and mode == "separate" then return blocks, translated end
     if translation and mode ~= "above" then blocks[#blocks + 1] = translation end
     return blocks
@@ -520,8 +542,10 @@ end
 local function AddOptionHelpLines(tip, blocks)
     for index, block in ipairs(blocks) do
         if index > 1 then tip:AddLine(" ") end
-        tip:AddLine(block.text, nil, nil, nil, true)
-        if block.locale then Addon:ApplyTooltipTranslationFont(tip, block.locale, tip:NumLines()) end
+        for line in (block.text .. "\n"):gmatch("(.-)\n") do
+            tip:AddLine(line ~= "" and line or " ", nil, nil, nil, true)
+            if block.locale then Addon:ApplyTooltipTranslationFont(tip, block.locale, tip:NumLines(), true) end
+        end
     end
 end
 
@@ -531,7 +555,7 @@ local function ShowOptionHelp(owner, id, label, value, hint)
     tip:SetOwner(owner, "ANCHOR_RIGHT")
     tip:ClearLines()
     tip:SetText(label, 1, 1, 1)
-    if id == "locale" then Addon:ApplyTooltipTranslationFont(tip, locale) end
+    if id == "locale" then Addon:ApplyTooltipTranslationFont(tip, locale, 1, true) end
     local blocks, separate = OptionHelpBlocks(id, value, hint, true)
     AddOptionHelpLines(tip, blocks)
     tip:Show()
@@ -554,7 +578,7 @@ local function ShowOptionHelp(owner, id, label, value, hint)
         for line in (separate .. "\n"):gmatch("(.-)\n") do
             companion:AddLine(line ~= "" and line or " ", 1, 1, 1, true)
         end
-        Addon:ApplyTooltipTranslationFont(companion, locale)
+        Addon:ApplyTooltipTranslationFont(companion, locale, nil, true)
         companion:Show()
     elseif companion then
         companion:Hide()
@@ -603,11 +627,8 @@ function Addon:CreateRadioList(id, label, hint, choices, getValue, setValue, isE
         end
         button.text:SetJustifyH("LEFT")
         button.text:SetWordWrap(false)
-        local displayLabel = choice.label
-        if id == "locale" and not self:TryLanguageLabelFont(button.text, choice.value) and choice.value == "zhTW" then
-            displayLabel = "Traditional Chinese"
-        end
-        button.text:SetText(displayLabel)
+        if id == "locale" then SetLanguageLabelFont(button.text, choice.value, GameFontHighlight) end
+        button.text:SetText(choice.label)
         button:SetHighlightTexture([[Interface\QuestFrame\UI-QuestTitleHighlight]])
         local function Choose()
             if isEnabled and not isEnabled() then return end
@@ -1308,16 +1329,16 @@ function Addon:OpenLiveSettings()
             button:SetEnabled(enabled)
             button.label:SetText(row.name)
             button.label:SetAlpha(enabled and 1 or 0.5)
-            button:SetText(label)
             local valueText = button:GetFontString()
-            if button.localizedValueFont then
-                valueText:SetFont(unpack(button.localizedValueFont))
-                button.localizedValueFont = nil
+            if button.valueFontObject then
+                valueText:SetFontObject(button.valueFontObject)
+                button.valueFontObject = nil
             end
-            if row.id == "locale" and Addon:UsesLocalizedFont(value) then
-                local font = { valueText:GetFont() }
-                if Addon:TryLanguageLabelFont(valueText, value) then button.localizedValueFont = font end
+            if row.id == "locale" then
+                button.valueFontObject = valueText:GetFontObject()
+                SetLanguageLabelFont(valueText, value, button.valueFontObject)
             end
+            button:SetText(label)
             button:Show()
             button.label:Show()
         end

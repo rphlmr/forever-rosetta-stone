@@ -26,7 +26,7 @@ function Addon:CopyQuestTextStyle(target, source, locale, ...)
 end
 
 -- The target's parent mirrors the native details frame. Bottom anchoring preserves rewards height.
-function Addon:CopyQuestFrameLayout(target, source, anchor)
+function Addon:CopyQuestFrameLayout(target, source, anchor, bottomLimit)
     if not target or not source or not QuestMapFrame or not QuestMapFrame.DetailsFrame then return end
     local details = QuestMapFrame.DetailsFrame
     local point = anchor or "TOPLEFT"
@@ -41,16 +41,21 @@ function Addon:CopyQuestFrameLayout(target, source, anchor)
 
     local sourceScale, targetScale = source:GetEffectiveScale(), target:GetEffectiveScale()
     local detailsScale = details:GetEffectiveScale()
+    local y = (edge * sourceScale - detailsTop * detailsScale) / targetScale
+    local height = source:GetHeight() * sourceScale / targetScale
+    if bottomLimit and point == "BOTTOMLEFT" then y = math.max(y, bottomLimit) end
+    if bottomLimit and point == "TOPLEFT" then height = math.max(1, math.min(height, y - bottomLimit)) end
     target:ClearAllPoints()
     target:SetPoint(point, target:GetParent(), "TOPLEFT",
         (left * sourceScale - detailsLeft * detailsScale) / targetScale,
-        (edge * sourceScale - detailsTop * detailsScale) / targetScale)
+        y)
     target:SetWidth(source:GetWidth() * sourceScale / targetScale)
 
-    if point == "TOPLEFT" then target:SetHeight(source:GetHeight() * sourceScale / targetScale) end
+    if point == "TOPLEFT" then target:SetHeight(height) end
+    return true
 end
 
-function Addon:AlignQuestScrollBar(target, native, panel, source)
+function Addon:AlignQuestScrollBar(target, native, panel, source, bottomLimit)
     local left, top = native and native:GetLeft(), native and native:GetTop()
     local bottom = native and native:GetBottom()
     local sourceLeft, sourceTop = source:GetLeft(), source:GetTop()
@@ -59,8 +64,11 @@ function Addon:AlignQuestScrollBar(target, native, panel, source)
     local x = (left - sourceLeft) * scale
     target:ClearAllPoints()
     target:SetWidth(native:GetWidth() * scale)
-    target:SetPoint("TOPLEFT", panel, "TOPLEFT", x, (top - sourceTop) * scale)
-    target:SetPoint("BOTTOMLEFT", panel, "TOPLEFT", x, (bottom - sourceTop) * scale)
+    local topOffset = (top - sourceTop) * scale
+    local bottomOffset = (bottom - sourceTop) * scale
+    if bottomLimit then bottomOffset = math.min(topOffset - 1, math.max(bottomOffset, bottomLimit)) end
+    target:SetPoint("TOPLEFT", panel, "TOPLEFT", x, topOffset)
+    target:SetPoint("BOTTOMLEFT", panel, "TOPLEFT", x, bottomOffset)
     return true
 end
 
@@ -276,6 +284,21 @@ function Addon:CreateQuestPage(parent)
 
     function page:RefreshNativeLayout()
         local details = QuestMapFrame.DetailsFrame
+        local native = details.RewardsFrameContainer
+        local shown = self.missingQuest or (native:IsShown() and MapQuestInfoRewardsFrame:IsShown())
+        local limit = self.bottomLimit
+        local nativeBottom, detailsTop = native:GetBottom(), details:GetTop()
+        local nativeScale = native:GetEffectiveScale()
+        local frameScale = frame:GetEffectiveScale()
+        local rewardsOverflow = shown and limit and nativeBottom and detailsTop
+            and (nativeBottom * nativeScale - detailsTop * details:GetEffectiveScale()) / frameScale < limit
+        local viewportLimit
+        local scroll = details.ScrollFrame
+        local scrollBottom = scroll:GetBottom()
+        if rewardsOverflow and scrollBottom then
+            local gap = (scrollBottom * scroll:GetEffectiveScale() - nativeBottom * nativeScale) / frameScale
+            viewportLimit = limit + math.max(0, gap)
+        end
         background:SetAtlas(QuestTextContrast.GetDefaultDetailsBackgroundAtlas())
 
         QuestLogQuestDetailsMixin.AdjustBackgroundTexture(details, background)
@@ -284,19 +307,18 @@ function Addon:CreateQuestPage(parent)
             if atlas then background:SetAtlas(atlas) else background:SetTexture(details.Bg:GetTexture()) end
             background:SetTexCoord(details.Bg:GetTexCoord())
             background:SetSize(details.Bg:GetSize())
-            Addon:CopyQuestFrameLayout(background, details.Bg)
+            Addon:CopyQuestFrameLayout(background, details.Bg, nil, rewardsOverflow and limit or nil)
         end
 
-        local native = details.RewardsFrameContainer
-        local shown = self.missingQuest or (native:IsShown() and MapQuestInfoRewardsFrame:IsShown())
         rewards:SetShown(shown)
         local rewardHeight = self.missingQuest and 124 or native.RewardsFrame:GetHeight()
         local height = shown and rewardHeight or 0
         rewardContents:SetHeight(rewardHeight)
-        body.frame:SetSize(details.ScrollFrame:GetSize())
-        Addon:CopyQuestFrameLayout(body.frame, details.ScrollFrame)
-        Addon:AlignQuestScrollBar(body.frame.ScrollBar, details.ScrollFrame.ScrollBar, frame, details)
-        Addon:CopyQuestFrameLayout(rewards, native, "BOTTOMLEFT")
+        if not Addon:CopyQuestFrameLayout(body.frame, scroll, nil, viewportLimit) then
+            body.frame:SetSize(scroll:GetSize())
+        end
+        Addon:AlignQuestScrollBar(body.frame.ScrollBar, scroll.ScrollBar, frame, details, viewportLimit)
+        Addon:CopyQuestFrameLayout(rewards, native, "BOTTOMLEFT", limit)
         body.spacerHeight = height
         body:UpdateScrollRange()
         AdjustRewards()

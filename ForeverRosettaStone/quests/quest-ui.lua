@@ -438,12 +438,14 @@ function Addon:Layout()
     self.panel:ClearAllPoints()
     self.panel:SetPoint("TOPLEFT", beside, "TOPRIGHT", offsetX, offsetY)
 
+    local contentTop = (nativeTop * details:GetEffectiveScale() - shellTop) / panelScale
+    local shellHeight = (mapBounds.top - mapBounds.bottom) / panelScale - SHELL_BORDER.top + shellLayout.BottomRightCorner.y
     self.panel.Content:SetSize(details:GetSize())
     self.panel.Content:ClearAllPoints()
     self.panel.Content:SetPoint("TOPLEFT", self.panel, "TOPLEFT", SHELL_INSETS.left,
-        (nativeTop * details:GetEffectiveScale() - shellTop) / panelScale)
-    self.panel:SetSize(details:GetWidth() + SHELL_INSETS.left + SHELL_INSETS.right,
-        (mapBounds.top - mapBounds.bottom) / panelScale - SHELL_BORDER.top + shellLayout.BottomRightCorner.y)
+        contentTop)
+    self.panel:SetSize(details:GetWidth() + SHELL_INSETS.left + SHELL_INSETS.right, shellHeight)
+    self.page.bottomLimit = shellLayout.BottomRightCorner.y - shellHeight + SHELL_INSETS.bottom - contentTop
     self:FitQuestPanelTitle(self.panel)
 
     if details.BorderFrame then self:CopyQuestFrameLayout(self.panel.BorderFrame, details.BorderFrame) end

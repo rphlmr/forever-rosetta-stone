@@ -182,13 +182,14 @@ local function RestoreLocalizedTooltipFonts(tip)
     localizedTooltipFonts[tip] = {}
 end
 
-function Addon:ApplyTooltipTranslationFont(tip, locale, firstLine)
-    if not self:UsesLocalizedFont(locale) then return end
+function Addon:ApplyTooltipTranslationFont(tip, locale, firstLine, forSettings)
+    if not forSettings and not self:UsesLocalizedFont(locale) then return end
     local header = self:GetTooltipTranslationLabel()
+    local tryFont = forSettings and self.TrySettingsFont or self.TryLocalizedFont
     local function Apply(line, text)
         if not line or not text or text == "" or text == " " or text == header then return end
         local font, size, flags = line:GetFont()
-        if not font or not size or not self:TryLocalizedFont(line, locale, size, flags) then return end
+        if not font or not size or not tryFont(self, line, locale, size, flags) then return end
         local saved = localizedTooltipFonts[tip]
         if not saved then
             saved = {}

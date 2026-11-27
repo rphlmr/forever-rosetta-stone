@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.10.2] - 2026-11-27
+
+### Fixed
+
+- Fixed missing language names and unreadable characters in the language picker and its tooltip previews.
+- Kept translated quest rewards inside the companion panel when an addon resizes the world map.
+
 ## [1.10.1] - 2026-11-26
 
 ### Fixed

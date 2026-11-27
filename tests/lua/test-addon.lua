@@ -288,6 +288,15 @@ function Frame:SetFont(path, size, flags)
     return true
 end
 function Frame:SetFontObject(font) self.fontObject, self.font = font, nil end
+function Frame:GetFontObject() return self.fontObject or GameFontHighlight end
+GameFontHighlight = { members = {}, GetFont = function() return "Fonts/FRIZQT__.TTF", 14, "" end }
+ForeverRosettaStoneExtendedLatinLabelFont = { GetFont = function()
+    return [[Interface\AddOns\ForeverRosettaStone\media\fonts\NotoSans-Regular.ttf]], 14, ""
+end }
+function GameFontHighlight:GetFontObjectForAlphabet(alphabet)
+    self.members[alphabet] = self.members[alphabet] or { GetFont = self.GetFont }
+    return self.members[alphabet]
+end
 function Frame:GetFont()
     if self.font then return unpack(self.font) end
     local fontObject = type(self.fontObject) == "string" and _G[self.fontObject] or self.fontObject
@@ -1505,6 +1514,23 @@ equal(body.frame:GetHeight(), viewportHeight, "revealing rewards does not resize
 equal(page.rewards:GetHeight(), 124, "French reward reveal cannot resize English rewards")
 equal(body.frame:GetHeight(), QuestMapFrame.DetailsFrame.ScrollFrame:GetHeight(),
     "English scroll viewport follows native full height")
+do
+    local nativeScroll = QuestMapFrame.DetailsFrame.ScrollFrame
+    local nativeHeight, nativeBottom = nativeScroll:GetHeight(), nativeRewards.bottom
+    local _, _, _, _, normalOffset = page.rewards:GetPoint(1)
+    nativeScroll:SetHeight(525)
+    nativeRewards.bottom = 150
+    page:RefreshNativeLayout()
+    equal(select(5, page.rewards:GetPoint(1)), page.bottomLimit, "overflowing rewards sit inside the translated shell")
+    equal(body.frame:GetHeight() < nativeScroll:GetHeight(), true, "overflow shortens the translated viewport")
+    equal(nativeScroll:GetHeight(), 525, "overflow handling leaves the native viewport intact")
+    equal(nativeRewards.bottom, 150, "overflow handling leaves the native rewards in place")
+    nativeScroll:SetHeight(nativeHeight)
+    nativeRewards.bottom = nativeBottom
+    page:RefreshNativeLayout()
+    equal(select(5, page.rewards:GetPoint(1)), normalOffset, "restoring the map restores the native rewards anchor")
+    equal(body.frame:GetHeight(), nativeHeight, "restoring the map restores the native viewport height")
+end
 equal(body.child:GetHeight(), body.textHeight + 200, "native rewards spacer participates in scrolling")
 equal(page.rewards:GetParent() == body.child, false, "rewards stay outside scrolling text")
 rewardRows = 1

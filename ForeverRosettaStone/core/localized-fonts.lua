@@ -6,16 +6,16 @@ local eastAsianFonts = {
     zhTW = { [[Fonts\blei00d.TTF]], [[Fonts\bKAI00M.TTF]] },
     koKR = { [[Fonts\2002.TTF]], [[Fonts\K_Pagetext.TTF]] },
 }
-local latinExtended = { [[Fonts\ARIALN.TTF]] }
+local latinExtended = { [[Interface\AddOns\ForeverRosettaStone\media\fonts\NotoSans-Regular.ttf]], [[Fonts\ARIALN.TTF]] }
+local cyrillic = { latinExtended[1], [[Fonts\FRIZQT___CYR.TTF]] }
 local fonts = {
     csCZ = latinExtended,
     ltLT = latinExtended,
+    ruRU = cyrillic,
+    ukUA = cyrillic,
     zhCN = eastAsianFonts.zhCN,
     zhTW = eastAsianFonts.zhTW,
     koKR = eastAsianFonts.koKR,
-}
-local labelFonts = {
-    zhTW = { [[Fonts\arheiuhk_bd.TTF]], unpack(eastAsianFonts.zhTW) },
 }
 
 function Addon:UsesLocalizedFont(locale)
@@ -44,6 +44,6 @@ function Addon:TryLocalizedFont(target, locale, size, flags)
     return TryFont(target, fonts[locale], size, flags)
 end
 
-function Addon:TryLanguageLabelFont(target, locale)
-    return TryFont(target, labelFonts[locale] or fonts[locale])
+function Addon:TrySettingsFont(target, locale, size, flags)
+    return TryFont(target, fonts[locale] or latinExtended, size, flags)
 end
