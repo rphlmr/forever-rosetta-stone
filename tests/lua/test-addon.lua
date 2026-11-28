@@ -617,7 +617,9 @@ MenuUtil = {
         function root:CreateTitle(label) self.entries[#self.entries + 1] = { kind = "title", label = label } end
         function root:CreateDivider() self.entries[#self.entries + 1] = { kind = "divider" } end
         function root:CreateButton(label, click)
-            self.entries[#self.entries + 1] = { kind = "button", label = label, onClick = click }
+            local entry = { kind = "button", label = label, onClick = click, SetEnabled = Frame.SetEnabled }
+            self.entries[#self.entries + 1] = entry
+            return entry
         end
         function root:CreateRadio(label, selected, click)
             self.entries[#self.entries + 1] = { kind = "radio", label = label, isSelected = selected, onClick = click }
@@ -1454,6 +1456,7 @@ near(mapBorder:GetTop() + Addon.panel.points[1][5] - Addon.panel:GetHeight()
     + panelLayout.BottomRightCorner.y, mapBorder.NineSlice.BottomRightCorner:GetBottom(),
     "visible shell bottom aligns with the native map border")
 near(Addon.panel.points[1][4], -14, "native border sits against the quest panel")
+assert(loadfile("tests/lua/test-leatrix-quest-map.lua"))(Addon, equal, near)
 local mapNineSlice = mapBorder.NineSlice
 mapBorder.NineSlice = nil
 Addon:Layout()
