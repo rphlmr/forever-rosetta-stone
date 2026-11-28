@@ -72,7 +72,8 @@ function Addon:CreateMinimapButton()
     button.icon = icon
     icon:SetTexture([[Interface\AddOns\ForeverRosettaStone\media\icon]])
     icon:SetSize(22, 22)
-    icon:SetPoint("CENTER", 0, 0)
+    -- Center the visible glyphs inside the tracking ring.
+    icon:SetPoint("CENTER", 1, 1)
     local border = button:CreateTexture(nil, "OVERLAY")
     border:SetTexture([[Interface\Minimap\MiniMap-TrackingBorder]])
     border:SetSize(54, 54)
