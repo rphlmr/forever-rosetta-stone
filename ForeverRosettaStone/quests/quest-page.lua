@@ -292,7 +292,7 @@ function Addon:CreateQuestPage(parent)
         local frameScale = frame:GetEffectiveScale()
         local rewardsOverflow = shown and limit and nativeBottom and detailsTop
             and (nativeBottom * nativeScale - detailsTop * details:GetEffectiveScale()) / frameScale < limit
-        local viewportLimit
+        local viewportLimit = limit
         local scroll = details.ScrollFrame
         local scrollBottom = scroll:GetBottom()
         if rewardsOverflow and scrollBottom then
@@ -307,7 +307,7 @@ function Addon:CreateQuestPage(parent)
             if atlas then background:SetAtlas(atlas) else background:SetTexture(details.Bg:GetTexture()) end
             background:SetTexCoord(details.Bg:GetTexCoord())
             background:SetSize(details.Bg:GetSize())
-            Addon:CopyQuestFrameLayout(background, details.Bg, nil, rewardsOverflow and limit or nil)
+            Addon:CopyQuestFrameLayout(background, details.Bg, nil, limit)
         end
 
         rewards:SetShown(shown)
