@@ -809,8 +809,10 @@ function Addon:CreateSettingsUI()
     local function Checkbox(category, id, setting, description)
         local initializer = Settings.CreateCheckbox(category, setting, description)
         if newSettings[id] then
-            initializer.IsNewTagShown = function() return true end
-            initializer.MarkSettingAsSeen = function() end
+            -- IsNewTagShown also marks the sidebar category. Highlight only the checkbox row.
+            hooksecurefunc(initializer, "InitFrame", function(_, row)
+                row.NewFeature:Show()
+            end)
         end
         if samples[id] then
             local function GetBlocks() return OptionHelpBlocks(id, setting:GetValue(), description) end

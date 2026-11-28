@@ -810,6 +810,8 @@ function Settings.CreateControlTextContainer()
 end
 function Settings.CreateCheckbox(category, setting, tooltip)
     local initializer = { kind = "checkbox", setting = setting, tooltip = tooltip }
+    function initializer:IsNewTagShown() return false end
+    function initializer:InitFrame(row) row.NewFeature:SetShown(self:IsNewTagShown()) end
     function initializer:Indent() self.indented = true end
     function initializer:SetParentInitializer(parent, predicate)
         self.parentInitializer, self.modifyPredicate = parent, predicate
