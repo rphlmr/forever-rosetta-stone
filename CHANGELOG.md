@@ -2,11 +2,15 @@
 
 ## [Unreleased]
 
+## [1.10.3] - 2026-11-28
+
 ### Fixed
 
 - Aligned the translated quest panel with the simple map layout used by Leatrix Maps and removed the empty row beneath rewards. The parchment and scroll area now fit inside the panel even on quests without rewards.
 - Moved the translation to the left of the quest details when it would otherwise cover the native quest controls at the right edge of the screen.
 - Made Share and Abandon available in the translated panel’s Options menu when the native buttons fall below the map. Mouse users get the usual sharing restrictions and abandon confirmation.
+- Centered the addon icon inside its minimap button.
+- Removed the “New” badge beside Forever Rosetta Stone in the AddOns list. New options are still highlighted inside the settings panel.
 
 ## [1.10.2] - 2026-11-27
 
