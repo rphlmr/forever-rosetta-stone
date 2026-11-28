@@ -25,8 +25,12 @@ for _, record in pairs(spellText) do
     for _, localized in pairs(record) do localized.originalFields = {description = true} end
 end
 local itemRules = { [1] = { effects = { { triggerType = 0, spellID = 42 } } } }
+-- Embedded item lookup uses createdItemIDs. Description values must come from the native rows.
+local spellRules = setmetatable({ createdItemIDs = {} }, {
+    __index = function(_, field) error("Unexpected static spell rule lookup: " .. tostring(field)) end,
+})
 ForeverRosettaStoneDB = {
-    GetSpellRules = function() error("Descriptions must not read static spell rules") end,
+    GetSpellRules = function() return spellRules end,
     GetSpellDetails = function(_, id, locale) return spellText[id] and spellText[id][locale] end,
     GetSpellName = function(_, id, locale)
         local names = { [668] = { enUS = "Common", frFR = "Commun" }, [672] = { enUS = "Dwarven", frFR = "Nain" } }
