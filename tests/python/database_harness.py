@@ -3,6 +3,7 @@
 import base64
 import hashlib
 import json
+import os
 import re
 import zlib
 import sys
@@ -12,6 +13,21 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from tools.build.database_packs import pack_directory
+
+
+def catalog_record_ids(root, kind):
+    """List existing entity files without opening their JSON."""
+    # Both the Lua fixtures and spell shards only need names to determine their scope.
+    with os.scandir(root / 'catalogs' / kind) as entries:
+        return sorted(int(entry.name[:-5]) for entry in entries
+                      if re.fullmatch(r'[1-9][0-9]*\.json', entry.name) and entry.is_file())
+
+
+def install_globalstring_ids(lua, root=ROOT):
+    """Supply the Lua fixtures with the current catalog's existing record IDs."""
+    ids = catalog_record_ids(root, 'globalstrings')
+    lua.globals()[b'FRS_TestGlobalStringIDs'] = lua.table_from(ids)
+    return lua
 
 
 class DatabaseMetadata(dict):

@@ -64,6 +64,8 @@ class ClientLabelTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.fixture = json.loads((ROOT / 'tests/fixtures/client-label-source-inventory.json').read_text())
+        # Both inventory assertions can reuse the same read-only source snapshot.
+        cls.entities = load_catalog(ROOT, 'globalstrings')['catalogs']['globalstrings']
         cls.lua = LuaRuntime(encoding=None)
         cls.lua.execute(b'''
             canaccessallvalues = function() return true end
@@ -84,7 +86,7 @@ class ClientLabelTests(unittest.TestCase):
         cls.lua.execute((ROOT / 'ForeverRosettaStone/tooltips/tooltip-descriptions.lua').read_bytes(), b'addon', cls.addon)
 
     def test_every_official_source_text_is_imported_without_loss(self):
-        entities = load_catalog(ROOT, 'globalstrings')['catalogs']['globalstrings']
+        entities = self.entities
         keys = {r['key'] for r in entities.values()}
         for locale, evidence in self.fixture['official'].items():
             values = self.addon.GetClientLabels(self.addon, locale.encode())
@@ -98,8 +100,7 @@ class ClientLabelTests(unittest.TestCase):
     def test_every_owned_globalstring_key_is_exported_from_the_json_catalog(self):
         api = self.lua.globals().ForeverRosettaStoneDB
         keys = sorted(key.decode() for key in api.GetGlobalStringKeys(api).keys())
-        entities = load_catalog(ROOT, 'globalstrings')['catalogs']['globalstrings']
-        self.assertEqual(set(keys), {r['key'] for r in entities.values()})
+        self.assertEqual(set(keys), {r['key'] for r in self.entities.values()})
         self.assertIn('WARDROBE_TOOLTIP_TRANSMOGRIFIER', keys)
         self.assertIn('LARGE_NUMBER_SEPERATOR', keys)
         self.assertFalse((ROOT / 'ForeverRosettaStone/locales/client-labels').exists())

@@ -1,11 +1,29 @@
 """Measure ID-selected spell templates against independent displayed-value fixtures."""
+import re
 import sys
 from id_only_matrix_harness import ROOT, CaseReporter, IdOnlyHarness, NATIVE_TEXT, PROFILES, required_locales
 from live_spell_fixture import FixtureUnavailable, make_fixture
 sys.path.insert(0, str(ROOT))
-from tools.catalogs.catalog_storage import load_catalog
+from tools.catalogs.catalog_storage import load_catalog, load_entity
 
 FIELDS = ('description', 'auraDescription', 'rank', 'nameDescription')
+
+
+class ScopedSpellRecords:
+    """Load requested spells and resolve fixture references through the same cache."""
+
+    def __init__(self, root):
+        self.root = root
+        self.records = {}
+
+    def get(self, spell_id, default=None):
+        if not re.fullmatch(r'[1-9][0-9]*', spell_id):
+            return default
+        # Cache absent references as well: the same template can be checked in many locales.
+        if spell_id not in self.records:
+            self.records[spell_id] = load_entity(self.root, 'spells', spell_id)
+        record = self.records[spell_id]
+        return default if record is None else record
 
 
 def target_field(spell, locale, field):
@@ -35,8 +53,17 @@ def create_description_renderer(harness):
 
 
 def run_matrix(locales=None, ids=None, profiles=None, root=ROOT):
-    spells = load_catalog(root, 'spells')['catalogs']['spells']
-    selected = spells if ids is None else {str(value): spells[str(value)] for value in ids if str(value) in spells}
+    # Full coverage still enumerates the catalog; scoped checks resolve only selected IDs and references.
+    if ids is None:
+        spells = selected = load_catalog(root, 'spells')['catalogs']['spells']
+    else:
+        spells = ScopedSpellRecords(root)
+        selected = {}
+        for value in ids:
+            spell_id = str(value)
+            record = spells.get(spell_id)
+            if record is not None:
+                selected[spell_id] = record
     locales = list(required_locales(root) if locales is None else locales)
     profiles = list(PROFILES if profiles is None else profiles)
     harness, reporter = IdOnlyHarness(root=root), CaseReporter('spells', locales, profiles)

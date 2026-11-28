@@ -167,27 +167,23 @@ local function DecodeJson(text)
     return Value()
 end
 
-local catalogGlobals
+local globalStringIndex = "tests.lua.support.client-api-fixture.globalstrings"
 -- Owned GlobalStrings by key, read from catalogs/globalstrings (the source of the data packs).
 local function CatalogGlobalStrings()
+    local catalogGlobals = package.loaded[globalStringIndex]
     if catalogGlobals then return catalogGlobals end
     catalogGlobals = {}
-    -- Lua has no directory listing here: probe numeric record files until a long gap of
-    -- absent IDs, then index raw records by key and decode only the ones a test asks for.
-    local id, misses = 0, 0
-    while misses < 20000 do
-        id = id + 1
-        local file = io.open("catalogs/globalstrings/" .. id .. ".json", "rb")
-        if file then
-            local text = file:read("*a")
-            file:close()
-            misses = 0
-            local key = text:match('"key"%s*:%s*"([^"]+)"')
-            if key then catalogGlobals[key] = text end
-        else
-            misses = misses + 1
-        end
+    -- Python lists the files once so Lua never probes gaps in the catalog IDs.
+    local ids = assert(FRS_TestGlobalStringIDs, "Python test runner must install catalog GlobalStrings IDs")
+    for _, id in ipairs(ids) do
+        local file = assert(io.open("catalogs/globalstrings/" .. id .. ".json", "rb"))
+        local text = file:read("*a")
+        file:close()
+        local key = text:match('"key"%s*:%s*"([^"]+)"')
+        if key then catalogGlobals[key] = text end
     end
+    -- Reuse the index even when independent test scripts load this helper again.
+    package.loaded[globalStringIndex] = catalogGlobals
     return catalogGlobals
 end
 

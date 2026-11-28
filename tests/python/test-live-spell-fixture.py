@@ -1,6 +1,6 @@
 """Prove matrix expectations are independent displayed values, with honest gaps."""
 import unittest
-from unittest.mock import patch
+from unittest.mock import call, patch
 from live_spell_fixture import FixtureUnavailable, make_fixture
 
 
@@ -80,11 +80,31 @@ class LiveSpellFixtureTests(unittest.TestCase):
         def corrupt(harness):
             original(harness)
             return lambda *args: (b'Wrong output',None,False)
-        with patch.object(matrix,'create_description_renderer',side_effect=corrupt):
+        # A single-ID regression must never fall back to loading the entire spell catalog.
+        with (patch.object(matrix,'create_description_renderer',side_effect=corrupt),
+              patch.object(matrix, 'load_catalog', side_effect=AssertionError('Unexpected whole spell catalog load'))):
             report=matrix.run_matrix(locales=['enUS'],ids=[970],profiles=['baseline'])
         failures=[row for row in report['failures'] if row['field']=='description']
         self.assertTrue(failures)
         self.assertEqual(failures[0]['reason'],'mismatch')
+
+    def test_scoped_fixtures_load_only_requested_and_referenced_spells(self):
+        import id_only_spell_matrix as matrix
+
+        # Exercise a nested reference and make sure repeated missing lookups are cached.
+        entries = {
+            '1': record('$@spelldesc2', '$@spelldesc2'),
+            '2': record('Try $@spellname3.', 'Essayez $@spellname3.'),
+            '3': record('unused', 'inutilisé'),
+        }
+        with patch.object(matrix, 'load_entity', side_effect=lambda root, kind, key: entries.get(key)) as load:
+            spells = matrix.ScopedSpellRecords(matrix.ROOT)
+            self.assertIs(spells.get('1'), entries['1'])
+            self.assertEqual(make_fixture(spells, 1, 'frFR', source='enUS')['expected'], 'Essayez Spell.')
+            self.assertIsNone(spells.get('4'))
+            self.assertEqual(spells.get('4', {}), {})
+            self.assertIsNone(spells.get('01'))
+        self.assertEqual(load.call_args_list, [call(matrix.ROOT, 'spells', key) for key in ('1', '2', '3', '4')])
 
 
 if __name__=='__main__': unittest.main()

@@ -10,7 +10,7 @@ import unittest
 from lupa.lua51 import LuaRuntime
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / 'python'))
-from database_harness import install_metadata, read_metadata
+from database_harness import install_globalstring_ids, install_metadata, read_metadata
 
 
 root = Path(__file__).resolve().parents[1]
@@ -143,12 +143,16 @@ layout = panel_template.find("ui:KeyValues/ui:KeyValue[@key='layoutType']", name
 assert layout.attrib["value"] == "ButtonFrameTemplateNoPortrait", "Panel must have no corner portrait"
 assert toc.read_text().index("quests/quest-panel.xml") < toc.read_text().index("quests/quest-ui.lua")
 
+# Supply the real GlobalStrings IDs before the addon harness starts opening catalog files.
+install_globalstring_ids(lua)
 install_metadata(lua, read_metadata(toc))
 lua.execute((root / "tests/lua/test-addon.lua").read_bytes())
 LuaRuntime(encoding=None).execute((root / "tests/lua/test-tooltip-hook-boundaries.lua").read_bytes())
 LuaRuntime(encoding=None).execute((root / "tests/lua/test-tooltip-state.lua").read_bytes())
 LuaRuntime(encoding=None).execute((root / "tests/lua/test-dev-debug.lua").read_bytes())
-LuaRuntime(encoding=None).execute((root / "tests/lua/test-tooltip-descriptions.lua").read_bytes())
+# This fixture uses a separate Lua runtime, so it needs its own ID list.
+description_lua = install_globalstring_ids(LuaRuntime(encoding=None))
+description_lua.execute((root / "tests/lua/test-tooltip-descriptions.lua").read_bytes())
 live_spell_checks = runpy.run_path(str(root / "tests/python/test-spell-live-values.py"))
 live_spell_suite = unittest.defaultTestLoader.loadTestsFromTestCase(live_spell_checks["SpellLiveValueTests"])
 assert unittest.TextTestRunner().run(live_spell_suite).wasSuccessful(), "Live spell, talent and aura values failed"
