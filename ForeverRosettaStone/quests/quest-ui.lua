@@ -35,9 +35,8 @@ local function GetPanelBounds(frame)
     local left, top = topLeft:GetLeft(), topLeft:GetTop()
     local right, bottom = bottomRight:GetRight(), bottomRight:GetBottom()
 
-    if not (left and top and right and bottom) then return end
-
     local scale = frame:GetEffectiveScale()
+    if not canaccessallvalues(left, top, right, bottom, scale) or not (left and top and right and bottom) then return end
 
     return { left = left * scale, right = right * scale, top = top * scale, bottom = bottom * scale }
 end
@@ -84,15 +83,52 @@ function Addon:CreateQuestBookmark(parent, name, onClick)
     return button
 end
 
-local function GetMapEdge()
+-- Leatrix's simple map anchors the native close button to a title bar spanning
+-- the canvas and quest log. The hidden Blizzard border keeps its old size.
+local function GetSimpleMapEdge(playerLocationLabel)
+    local border, canvas = WorldMapFrame.BorderFrame, WorldMapFrame.ScrollContainer
+    if not canvas or not border or not border.CloseButton or WorldMapFrame.NavBar:IsShown() then return end
+
+    local _, title = border.CloseButton:GetPoint(1)
+    if not title or not title:IsVisible() or title:GetParent() ~= WorldMapFrame then return end
+    local point, relative, relativePoint = title:GetPoint(1)
+    if point ~= "BOTTOMLEFT" or relative ~= canvas or relativePoint ~= "TOPLEFT" then return end
+
+    local bottomFrame = canvas
+    local footer = playerLocationLabel and playerLocationLabel:GetParent():GetParent()
+    if footer and footer:IsVisible() then
+        local anchor, owner, corner = footer:GetPoint(1)
+        if anchor == "TOPLEFT" and owner == canvas and corner == "BOTTOMLEFT" then bottomFrame = footer end
+    end
+    local bounds = GetPanelBounds(title)
+    local bottom, scale = bottomFrame:GetBottom(), bottomFrame:GetEffectiveScale()
+    if not bounds or not canaccessallvalues(bottom, scale) or not bottom then return end
+    bounds.bottom = bottom * scale
+    if bounds.top > bounds.bottom then return title, bounds end
+end
+
+local function GetMapEdge(playerLocationLabel)
+    local title, bounds = GetSimpleMapEdge(playerLocationLabel)
+    if title then return title, bounds end
     local border = WorldMapFrame.BorderFrame
     local mini = WorldMapFrame.MiniBorderFrame
-
     if border and border:IsShown() and not (mini and mini:IsShown()) then
         return border
     end
 
     return mini or border or WorldMapFrame
+end
+
+function Addon:HasClippedQuestActions()
+    local button = QuestMapFrame.DetailsFrame.AbandonButton
+    local bottom = button and button:GetBottom()
+    if not canaccessallvalues(bottom) or not bottom then return false end
+    local edge, simpleMapBounds = GetMapEdge(self.playerLocationLabel)
+    local boundary = simpleMapBounds and WorldMapFrame.ScrollContainer or edge
+    local mapBottom, scale = boundary:GetBottom(), boundary:GetEffectiveScale()
+    if not canaccessallvalues(mapBottom, scale) or not mapBottom then return false end
+    local center = (bottom + button:GetHeight() / 2) * button:GetEffectiveScale()
+    return center < math.max(0, mapBottom * scale)
 end
 
 -- Shared by the journal panel and the NPC interaction reader: translation label with the FRS logo.
@@ -395,7 +431,7 @@ function Addon:RegisterMapMenuTranslations()
 end
 
 function Addon:Layout()
-    local edge = GetMapEdge()
+    local edge, simpleMapBounds = GetMapEdge(self.playerLocationLabel)
     local details = QuestMapFrame.DetailsFrame
     for _, frame in ipairs({ self.panel, self.toggle }) do
         frame:SetScale(details:GetEffectiveScale() / frame:GetParent():GetEffectiveScale())
@@ -420,35 +456,56 @@ function Addon:Layout()
     self.panel:SetFrameLevel(panelLevel)
     self.panel:SetFrameLevelsFromBaseLevel(panelLevel)
     self.toggle:SetFrameLevel(details:GetFrameLevel() + 1)
-    local mapBounds, besideBounds = GetPanelBounds(edge), GetPanelBounds(beside)
+    local mapBounds = simpleMapBounds or GetPanelBounds(edge)
+    local besideBounds = beside == edge and mapBounds or GetPanelBounds(beside)
     local nativeTop = details:GetTop()
 
     if not (mapBounds and besideBounds and nativeTop) then return end
 
     local panelScale = self.panel:GetEffectiveScale()
     local shellLayout = NineSliceUtil.GetLayout(self.panel.layoutType)
-    local gap = beside == edge and PANEL_GAP
+    local gap = beside == edge and (simpleMapBounds and 0 or PANEL_GAP)
         or (besideBounds.left - mapBounds.right) / panelScale
     local shellTop = mapBounds.top - SHELL_BORDER.top * panelScale
     local border = beside.NineSlice
-    local mapPadding = beside == edge and not (border and border.BottomRightCorner) and MAP_BORDER_CLEAR or 0
+    local mapPadding = beside == edge and not simpleMapBounds and not (border and border.BottomRightCorner)
+        and MAP_BORDER_CLEAR or 0
     local offsetX = (besideBounds.right - beside:GetRight() * beside:GetEffectiveScale()) / panelScale
         + gap + SHELL_BORDER.left - mapPadding
     local offsetY = (shellTop - beside:GetTop() * beside:GetEffectiveScale()) / panelScale
     self.panel:ClearAllPoints()
-    self.panel:SetPoint("TOPLEFT", beside, "TOPRIGHT", offsetX, offsetY)
+    local panelWidth = details:GetWidth() + SHELL_INSETS.left + SHELL_INSETS.right
+    local screenRight = UIParent:GetWidth() * UIParent:GetEffectiveScale()
+    if simpleMapBounds and besideBounds.right + (gap + SHELL_BORDER.left + panelWidth) * panelScale > screenRight then
+        -- Screen clamping on the right would push the reader over the native quest controls.
+        self.panel:SetPoint("TOPRIGHT", details, "TOPLEFT", -SHELL_INSETS.left,
+            (shellTop - nativeTop * details:GetEffectiveScale()) / panelScale)
+    else
+        self.panel:SetPoint("TOPLEFT", beside, "TOPRIGHT", offsetX, offsetY)
+    end
 
     local contentTop = (nativeTop * details:GetEffectiveScale() - shellTop) / panelScale
-    local shellHeight = (mapBounds.top - mapBounds.bottom) / panelScale - SHELL_BORDER.top + shellLayout.BottomRightCorner.y
+    local shellBottom = mapBounds.bottom
+    if simpleMapBounds and details.BorderFrame and details.BorderFrame:IsVisible() then
+        -- The native quest border ends above the action buttons, which the reader doesn't draw.
+        local rimBottom, rimScale = details.BorderFrame:GetBottom(), details.BorderFrame:GetEffectiveScale()
+        if canaccessallvalues(rimBottom, rimScale) and rimBottom
+            and rimBottom * rimScale < nativeTop * details:GetEffectiveScale() then
+            shellBottom = math.max(shellBottom, rimBottom * rimScale - SHELL_INSETS.bottom * panelScale)
+        end
+    end
+    local shellHeight = (shellTop - shellBottom) / panelScale + shellLayout.BottomRightCorner.y
     self.panel.Content:SetSize(details:GetSize())
     self.panel.Content:ClearAllPoints()
     self.panel.Content:SetPoint("TOPLEFT", self.panel, "TOPLEFT", SHELL_INSETS.left,
         contentTop)
-    self.panel:SetSize(details:GetWidth() + SHELL_INSETS.left + SHELL_INSETS.right, shellHeight)
+    self.panel:SetSize(panelWidth, shellHeight)
     self.page.bottomLimit = shellLayout.BottomRightCorner.y - shellHeight + SHELL_INSETS.bottom - contentTop
     self:FitQuestPanelTitle(self.panel)
 
-    if details.BorderFrame then self:CopyQuestFrameLayout(self.panel.BorderFrame, details.BorderFrame) end
+    if details.BorderFrame then
+        self:CopyQuestFrameLayout(self.panel.BorderFrame, details.BorderFrame, nil, self.page.bottomLimit)
+    end
 
     local loreToggle = _G.SpokenPlacesPanelToggle
     self.toggle:ClearAllPoints()

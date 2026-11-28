@@ -16,12 +16,12 @@ function Addon:CanOpenQuestOptions()
     return self.panel:IsVisible() and self.current.mode ~= "unavailable" and self:CanReportQuest(self.current.questID)
 end
 
-function Addon:ShowTranslationOptions(owner, label, action)
+function Addon:ShowTranslationOptions(owner, label, action, addMenuEntries)
     if self.lifecycle ~= "ready" or InCombatLockdown()
         or (self.questReport and self.questReport.frame:IsShown()) then return end
     -- A context menu opened by addon code taints the controller manager: its MenuProxy close
     -- callback unsuspends focus from our call stack and blocks every later native action. The
-    -- controller therefore goes straight to the menu's only action, through the secure report popup.
+    -- controller therefore opens the report directly. Blizzard owns the gamepad quest actions.
     if InputUtil.IsGamepadUIEnabled() then
         action()
         return
@@ -29,20 +29,41 @@ function Addon:ShowTranslationOptions(owner, label, action)
     MenuUtil.CreateContextMenu(owner, function(_, root)
         root:CreateTitle("Forever Rosetta Stone")
         root:CreateButton(label, action)
+        if addMenuEntries then addMenuEntries(root) end
     end)
+end
+
+-- A map skin can leave Blizzard's entire button row below the map. Keep the
+-- native eligibility checks and abandon confirmation when offering those actions here.
+local function AddClippedQuestActions(root, questID)
+    if not Addon:HasClippedQuestActions() then return end
+    local details = QuestMapFrame.DetailsFrame
+    local function AddAction(button, action)
+        if not button or not button:IsVisible() then return end
+        local entry = root:CreateButton(button:GetText(), function()
+            local displayed = details.questID or C_QuestLog.GetSelectedQuest()
+            if Addon:CanOpenQuestOptions() and displayed == questID and Addon.current.questID == questID
+                and button:IsVisible() and button:IsEnabled() then action(questID) end
+        end)
+        entry:SetEnabled(button:IsEnabled())
+    end
+    AddAction(details.ShareButton, QuestMapQuestOptions_ShareQuest)
+    AddAction(details.AbandonButton, QuestMapQuestOptions_AbandonQuest)
 end
 
 -- Without an explicit quest ID the menu belongs to the journal panel's displayed quest.
 function Addon:ShowQuestOptions(owner, questID, interaction)
+    local addMenuEntries
     if questID == nil then
         if not self:CanOpenQuestOptions() then return end
         questID = self.current.questID
+        addMenuEntries = function(root) AddClippedQuestActions(root, questID) end
     elseif not self:CanReportQuest(questID) then
         return
     end
     self:ShowTranslationOptions(owner or self.panel, self:SettingsText("questBugged"), function()
         self:ShowQuestReport(questID, interaction)
-    end)
+    end, addMenuEntries)
 end
 
 local function Read(record, name, callback, ...)

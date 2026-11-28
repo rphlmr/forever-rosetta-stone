@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### Fixed
+
+- Aligned the translated quest panel with the simple map layout used by Leatrix Maps and removed the empty row beneath rewards. The parchment and scroll area now fit inside the panel even on quests without rewards.
+- Moved the translation to the left of the quest details when it would otherwise cover the native quest controls at the right edge of the screen.
+- Made Share and Abandon available in the translated panel’s Options menu when the native buttons fall below the map. Mouse users get the usual sharing restrictions and abandon confirmation.
+
 ## [1.10.2] - 2026-11-27
 
 ### Fixed
