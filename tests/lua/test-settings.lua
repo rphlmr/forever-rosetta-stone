@@ -632,11 +632,21 @@ do
     local controller = Settings.FindButton(category, Addon:SettingsText("tooltipHoldGamepad"))
     equal(keyboard.showNew, true, "the keyboard assignment has a New badge")
     equal(controller.showNew, true, "the controller assignment has a New badge")
+    local holdRow, headerRow
     for _, initializer in ipairs(category.initializers) do
+        assert(not (initializer.IsNewTagShown and initializer:IsNewTagShown()),
+            "the addon category should have no New badge in the sidebar")
         if initializer.setting == Addon.settings.tooltipHold then
-            equal(initializer:IsNewTagShown(), true, "the hold checkbox has a New badge")
+            holdRow = initializer
+        elseif initializer.setting == Addon.settings.translationHeader then
+            headerRow = initializer
         end
     end
+    local row = { NewFeature = CreateFrame("Frame") }
+    holdRow:InitFrame(row)
+    equal(row.NewFeature:IsShown(), true, "the hold checkbox has a New badge")
+    headerRow:InitFrame(row)
+    equal(row.NewFeature:IsShown(), false, "a recycled checkbox clears the previous badge")
     equal(keyboard.text(), "SHIFT", "the settings row shows the current keyboard binding")
     local scrollBox = SettingsPanel:GetSettingsList().ScrollBox
     local previousForEachFrame = scrollBox.ForEachFrame
