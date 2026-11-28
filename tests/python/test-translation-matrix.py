@@ -268,8 +268,11 @@ def main(partial=False):
                 print(f'Missing fresh report: {report}', flush=True)
         results.append(result)
 
-    lua_runner = ('from pathlib import Path; from lupa.lua51 import LuaRuntime; '
-                  'import sys; LuaRuntime(encoding=None).execute(Path(sys.argv[1]).read_bytes())')
+    # Standalone Lua stages need the same file inventory as the core test runner.
+    lua_runner = ('from pathlib import Path; from lupa.lua51 import LuaRuntime; import sys; '
+                  'path = Path(sys.argv[1]); sys.path.insert(0, str(path.parent.parent / "python")); '
+                  'from database_harness import install_globalstring_ids; '
+                  'install_globalstring_ids(LuaRuntime(encoding=None)).execute(path.read_bytes())')
     for label, filename in LUA_STAGES:
         print(f'\nRunning {label}: {filename}', flush=True)
         started = time.monotonic()

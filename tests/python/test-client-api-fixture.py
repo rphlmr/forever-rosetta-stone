@@ -8,8 +8,8 @@ import unittest
 from pathlib import Path
 
 from lupa.lua51 import LuaRuntime
+from database_harness import ROOT, install_globalstring_ids
 
-ROOT = Path(__file__).resolve().parents[2]
 IMPORTER = ROOT / 'tools/source-scan/import_client_api_fixture.py'
 
 
@@ -262,10 +262,21 @@ class ClientApiFixtureTests(unittest.TestCase):
 
     def test_catalog_globals_match_the_client_rendering(self):
         count = sum(1 for path in (ROOT / 'catalogs/globalstrings').glob('*.json') if path.stem.isdigit())
-        lua = LuaRuntime()
-        lua.execute('''
+        lua = install_globalstring_ids(LuaRuntime())
+        indexed, opened = lua.execute('''
+            -- Count only catalog opens and fail if the loader probes a gap.
+            local existing, opened = {}, 0
+            for _, id in ipairs(FRS_TestGlobalStringIDs) do existing[id] = true end
+            local open = io.open
+            io.open = function(path, mode)
+                local id = tonumber(path:match("^catalogs/globalstrings/(%d+)%.json$"))
+                if id then
+                    assert(existing[id], "Unexpected GlobalString file probe " .. path)
+                    opened = opened + 1
+                end
+                return open(path, mode)
+            end
             local F = assert(loadfile("tests/lua/support/client-api-fixture.lua"))()
-            local count = ...
             assert(F.CatalogGlobal("SPELL_PASSIVE", "frFR") == "Passive")
             assert(F.CatalogGlobal("SPELL_TOTEMS", "frFR"):sub(-1) == " ", "The export \\\\32 renders as a space")
             assert(F.CatalogGlobal("NOT_A_REAL_KEY", "frFR") == nil)
@@ -273,12 +284,11 @@ class ClientApiFixtureTests(unittest.TestCase):
             assert(not ok, "Missing catalog values are errors, never silent")
             local target = F.InstallGlobals("frFR", {"CORPSE"}, {})
             assert(target.CORPSE == "Cadavre")
-        ''', count)
-        indexed = lua.execute('''
-            local F = assert(loadfile("tests/lua/support/client-api-fixture.lua"))()
-            return F.CatalogGlobalCount()
+            local reloaded = assert(loadfile("tests/lua/support/client-api-fixture.lua"))()
+            return reloaded.CatalogGlobalCount(), opened
         ''')
         self.assertEqual(indexed, count, 'Every catalog record is indexed')
+        self.assertEqual(opened, count, 'The runtime opens each existing GlobalString only once')
 
     def test_fixture_limit_keeps_explicit_test_ids(self):
         keep = importer.explicit_ids(ROOT / 'tools/source-scan/rosetta-tooltip-check/cases.lua')
